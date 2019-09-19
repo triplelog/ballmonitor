@@ -6,7 +6,7 @@ class BoxScore extends HTMLElement {
     
 	
 	var _this = this;
-	var url = 'http://tabdn.com/box/ATL197309260batterbox.csv';
+	var url = 'box/ATL197309260batterbox.csv';
 	var jsonFile = new XMLHttpRequest();
     jsonFile.open("GET",url,true);
     jsonFile.send();
