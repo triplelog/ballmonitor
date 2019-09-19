@@ -13,7 +13,7 @@ class BoxScore extends HTMLElement {
 
     jsonFile.onreadystatechange = function() {
         if (jsonFile.readyState== 4 && jsonFile.status == 200) {
-            document.getElementById("id-of-element").innerHTML = jsonFile.responseText;
+            offbox(Papa.parse(jsonFile.responseText));
         }
      }
 	let template = document.getElementById('boxscore');
@@ -105,27 +105,25 @@ class BoxScore extends HTMLElement {
 		th.textContent = x;
 		theadh.appendChild(th);
 	});
-	for (var i=0;i<batterarray[0].length;i++){
+	for (var i=0;i<batterarray.length;i++){
 		var tr = document.createElement('tr');
-			batterarray[0][i].forEach( x => {
-				var td = document.createElement('td');
-				td.textContent = x;
-				tr.appendChild(td);
-			});
-		tr.id = 'offbox_A-'+i;
+		
+		
+		[4,5,6,7,8,9,10].forEach( x => {
+			var td = document.createElement('td');
+			td.textContent = batterarray[i][x];
+			tr.appendChild(td);
+		});
 		tr.addEventListener('click', e => {alert(e.target.parentNode.id);});
-		tbodya.appendChild(tr);
-	}
-  	for (var i=0;i<batterarray[1].length;i++){
-		var tr = document.createElement('tr');
-			batterarray[1][i].forEach( x => {
-				var td = document.createElement('td');
-				td.textContent = x;
-				tr.appendChild(td);
-			});
-		tr.id = 'offbox_H-'+i;
-		tr.addEventListener('click', e => {alert(e.target.parentNode.id);});
-		tbodyh.appendChild(tr);
+		
+		if (batterarray[i][1]==0) {
+			tr.id = 'offbox_A-'+i;
+			tbodya.appendChild(tr);
+		}
+		else {
+			tr.id = 'offbox_H-'+i;
+			tbodyh.appendChild(tr);
+		}
 	}
   }
   
