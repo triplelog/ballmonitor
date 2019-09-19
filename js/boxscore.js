@@ -110,7 +110,7 @@ class BoxScore extends HTMLElement {
 		var tr = document.createElement('tr');
 		
 		
-		[4,5,6,7,8,9,10].forEach( x => {
+		[0,4,5,6,7,8,9,10].forEach( x => {
 			var td = document.createElement('td');
 			td.textContent = batterarray[i][x];
 			tr.appendChild(td);
