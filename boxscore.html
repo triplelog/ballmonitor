@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Ball Monitor</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+
+  <link href="css/boxscore.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    
+
+</head>
+
+<body id="page-top">
+
+  <!-- Page Wrapper -->
+  <div id="wrapper">
+
+    <!-- Content Wrapper -->
+    <div id="content-wrapper" class="d-flex flex-column">
+
+      <!-- Main Content -->
+      <div id="content">
+
+        <!-- Begin Page Content -->
+        <div class="container-fluid">
+			<div class="row">
+				<div class="col col-lg-2" id="left-sidebar">
+			  		<div id="id-of-element"></div>
+				</div>
+				<template class="container-fluid col col-lg-8" id="boxscore">
+					  <div class="row justify-content-md-center">
+						<div class="col col-lg-4" id="away-info">
+					  
+						</div>
+						<div class="col col-lg-4" id="linescore-location">
+							<table>
+								<thead>
+									<tr>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+									</tr>
+									<tr>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<div class="col col-lg-4" id="home-info">
+					  
+						</div>
+					  </div>
+
+					  <div class="row">
+						<div class="col col-lg-6 batstats" id="awayoff-location">
+							<table>
+								<thead>
+									<tr>
+									</tr>
+								</thead>
+								<tbody>
+								</tbody>
+								<tfoot>
+									<tr>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+						<div class="col col-lg-6 batstats" id="homeoff-location">
+							<table>
+								<thead>
+									<tr>
+									</tr>
+								</thead>
+								<tbody>
+								</tbody>
+								<tfoot>
+									<tr>
+									</tr>
+								</tfoot>
+							</table>
+						</div>
+					  </div>
+
+					  <div class="row">
+						<div class="col col-lg-6 pitchstats" id="awaypitcher-location">
+						</div>
+						<div class="col col-lg-6 pitchstats" id="homepitcher-location">
+						</div>
+					  </div>
+				</template>
+				<box-score></box-score>
+				<div class="col col-lg-2" id="right-sidebar">
+			  
+				</div>
+			
+			</div>
+		</div>
+
+      </div>
+      <!-- End of Main Content -->
+	  <div id="linescorePBP" style="display: none;">
+	  	
+	  </div>
+	  <script src="js/boxscore.js"></script>
+
+    </div>
+    <!-- End of Content Wrapper -->
+
+  </div>
+  <!-- End of Page Wrapper -->
+
+  
+
+
+</body>
+
+</html>

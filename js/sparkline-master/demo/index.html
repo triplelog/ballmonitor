@@ -1,0 +1,320 @@
+<!doctype html>
+<head>
+  <title>Sparkline demo page</title>
+  <style>
+
+  body{
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  .sparkline canvas{
+    vertical-align: text-bottom;
+  }
+  span{
+    background: white;
+  }
+
+
+  td{
+    text-align: center;
+  }
+  .today{
+    color: red;
+    font-weight: bold;
+  }
+  .minimum{
+    color: blue;
+    font-weight: bold;
+  }
+  .maximum{
+    color: green;
+    font-weight: bold;
+  }
+  .average{
+    font-weight: bold;
+  }
+  </style>
+</head>
+<body>
+
+<h2>Sparkline Demo page</h2>
+
+  <div>
+    Here is a sparkline: <span id="sparkline-1" class="sparkline"></span><br>
+    <span>Here is another sparkline: </span><span id="sparkline-2" class="sparkline"></span><br>
+    <span>Move your mouse: </span><span id="sparkline-3" class="sparkline"></span><br>
+    <span>This is a sparkline with only one value: </span><span id="sparkline-4" class="sparkline"></span><br>
+    <span>This is a sparkline with no values: </span><span id="sparkline-5" class="sparkline"></span><br>
+    <span>This is a sparkline with all same values: </span><span id="sparkline-5b" class="sparkline"></span><br>
+    <span>Look at this one, it has tooltip on hover: </span><span id="sparkline-6" class="sparkline"></span><br>
+    <span>And this one, with a custom height: </span><span id="sparkline-7" class="sparkline"></span><br>
+    <span>This one has a fixed range, and tends to low values: </span><span id="sparkline-8" class="sparkline"></span><br>
+    <span>This one has a fixed range, and tends to high values: </span><span id="sparkline-9" class="sparkline"></span><br>
+    <span>Show the first value: </span><span id="sparkline-10" class="sparkline"></span>
+  </div>
+  <br>
+  <br>
+  <table>
+    <thead>
+      <tr>
+        <th>Name
+        <th>Last week
+        <th>This week
+        <th>Today
+        <th>Minimum
+        <th>Average
+        <th>Maximum
+      </tr>
+    </thead>
+    <tbody id="currencies">
+    </tbody>
+  </table>
+
+
+
+<script src="sparkline.js"></script>
+<script>
+
+(function simple(){
+  Sparkline.draw(document.getElementById("sparkline-1"), [10, 1, 2, 3, 4, 0, 7, 3, 8, 4, 9, 5, 10, 6]);
+})();
+
+
+(function standard(){
+
+  var elm = document.getElementById("sparkline-2");
+
+  var sparkline = new Sparkline(elm, {
+    lineColor: "#666",
+    startColor: "orange",
+    endColor: "blue",
+    maxColor: "red",
+    minColor: "green",
+    //dotRadius: 3,
+    width: 300
+  });
+
+  var arr = [];
+  for(var i=0; i<150; i++){
+    arr[i] = Math.random() - Math.sin(i/50*Math.PI);
+  }
+
+  sparkline.draw(arr);
+
+})();
+
+(function dynamic(){
+  var elm = document.getElementById("sparkline-3");
+
+  var sparkline = new Sparkline(elm);
+
+  var prevX;
+  var prevY;
+  var positions = [];
+
+  sparkline.draw(positions);
+
+  document.addEventListener("mousemove", function(event){
+
+    prevX = prevX || event.clientX;
+    prevY = prevY || event.clientY;
+
+    var dx = event.clientX - prevX;
+    var dy = event.clientY - prevY;
+
+    prevX = event.clientX;
+    prevY = event.clientY;
+
+    positions.push(Math.sqrt(dx*dx + dy*dy));
+    if(positions.length > 100){
+      positions.shift();
+    }
+
+    sparkline.draw(positions);
+  }, false);
+})();
+
+
+(function oneValueOnly(){
+  Sparkline.draw(document.getElementById("sparkline-4"), [7]);
+})();
+
+(function noValuesAtAll(){
+  Sparkline.draw(document.getElementById("sparkline-5"), []);
+})();
+
+(function allSameValues(){
+  Sparkline.draw(document.getElementById("sparkline-5b"), [0, 0, 0, 0, 0, 0, 0, 0], {minMaxValue: 10, minValue: 0});
+})();
+
+
+
+(function tooltip(){
+
+  var elm = document.getElementById("sparkline-6");
+
+  var sparkline = new Sparkline(elm, {
+    lineColor: "#666",
+    maxColor: "green",
+    minColor: "red",
+    //dotRadius: 3,
+    width: 100,
+    tooltip: function(value, index, collection){
+        return'1/'+(index+1)+' = '+value.toFixed(4);
+    }
+  });
+
+  var arr = [];
+  for(var i=0; i<50; i++){
+    arr.push(1/(i+1));
+  }
+
+  sparkline.draw(arr);
+
+})();
+
+(function customHeight(){
+
+  var elm = document.getElementById("sparkline-7");
+
+  var sparkline = new Sparkline(elm, {
+    lineColor: "#666",
+    maxColor: "green",
+    minColor: "red",
+    //dotRadius: 3,
+    width: 100,
+    height: 30
+  });
+
+  var arr = [];
+  for(var i=0; i<50; i++){
+    arr.push(1/(i+1));
+  }
+
+  sparkline.draw(arr);
+
+})();
+
+(function percentages(){
+
+  var elm = document.getElementById("sparkline-8");
+
+  var sparkline = new Sparkline(elm, {
+    lineColor: "#666",
+    //dotRadius: 3,
+    width: 100,
+    minValue: 0,
+    maxValue: 100,
+    tooltip: function(value){
+      return value.toFixed(0)+'%';
+    },
+    bottomLine: {
+      color: 'red'
+    }
+  });
+
+  var arr = [];
+  for(var i=0; i<10; i++){
+    arr.push(Math.random()*30);
+  }
+  arr.push(80);
+  arr.push(79);
+  for(var i=0; i<10; i++){
+    arr.push(Math.random()*30);
+  }
+
+  sparkline.draw(arr);
+
+})();
+
+(function experienceIndex(){
+
+  var elm = document.getElementById("sparkline-9");
+
+  var sparkline = new Sparkline(elm, {
+    lineColor: "#666",
+    //dotRadius: 3,
+    width: 100,
+    minValue: 0,
+    maxValue: 100,
+    tooltip: function(value){
+      return value.toFixed(0)+'%';
+    },
+    topLine: {
+      color: 'red'
+    }
+  });
+
+  var arr = [];
+  for(var i=0; i<10; i++){
+    arr.push(80+Math.random()*10);
+  }
+
+  sparkline.draw(arr);
+
+})();
+
+(function showStart(){
+
+  var elm = document.getElementById("sparkline-10");
+
+  var sparkline = new Sparkline(elm, {
+    lineColor: "#666",
+    //dotRadius: 3,
+    startColor: 'blue',
+    endColor: 'transparent',
+    width: 100,
+    tooltip: function(value){
+      return value.toFixed(0)+'%';
+    },
+    startLine: {
+      color: 'blue'
+    },
+    fillBelow: false
+  });
+
+  var arr = [];
+  for(var i=0; i<50; i++){
+    arr[i] = Math.random() - Math.cos(i/50*Math.PI);
+  }
+
+  console.log(arr);
+
+  sparkline.draw(arr);
+
+})();
+
+(function generate(){
+
+  var currencies = ["USD", "GBP", "EUR", "YEN", "NOK", "BTC"];
+
+  for(index in currencies){
+
+    var arr = [];
+    var max = Math.random()*50;
+    var min = Math.random()*100+50;
+    for(var i=0; i<100; i++){
+      arr[i] = ((Math.random() - Math.sin(min+i/50*Math.PI))*max + min).toFixed(1)*1;
+    }
+
+    var name = currencies[index];
+    var minimum = Math.min.apply(Math, arr);
+    var maximum = Math.max.apply(Math, arr);
+    var average = (arr.reduce(function(a, b){return a+b;}, 0)/arr.length).toFixed(1);
+
+
+    var row = document.createElement("tr");
+    row.innerHTML = "<td>"+name+"</td><td>"+arr[0]+"</td><td><span class='sparkline'></span></td><td class='today'>"+arr[arr.length-1]+"</td><td class='minimum'>"+minimum+"</td><td class='average'>"+average+"</td><td class='maximum'>"+maximum+"</td>";
+
+    var sparkline = new Sparkline(row.querySelector("span.sparkline"), {startColor:"red", minColor:"blue", maxColor:"green", width:200, lineColor:"#666", maxLine: {color:'green', direction: 'right'}});
+
+    document.getElementById("currencies").appendChild(row);
+
+    sparkline.draw(arr);
+  }
+
+})();
+
+</script>
+</body>
