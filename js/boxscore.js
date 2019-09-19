@@ -13,7 +13,7 @@ class BoxScore extends HTMLElement {
 
     jsonFile.onreadystatechange = function() {
         if (jsonFile.readyState== 4 && jsonFile.status == 200) {
-            offbox(Papa.parse(jsonFile.responseText));
+            this.offbox(Papa.parse(jsonFile.responseText));
         }
      }
 	let template = document.getElementById('boxscore');
@@ -22,7 +22,7 @@ class BoxScore extends HTMLElement {
     const shadowRoot = this.attachShadow({mode: 'open'}).appendChild(templateContent.cloneNode(true));
     
     this.linescore([['A',0,0,0,0,0],['B',1,0,1,0,0]]);
-    this.offbox([[['Name1',0,0,0,0,0,0,0],['Name2',0,0,0,0,0,0,0]],[['Name3',0,0,0,0,0,0,0],['Name4',0,0,0,0,0,0,0]]]);
+    //this.offbox([[['Name1',0,0,0,0,0,0,0],['Name2',0,0,0,0,0,0,0]],[['Name3',0,0,0,0,0,0,0],['Name4',0,0,0,0,0,0,0]]]);
     /*
     this.ws = new WebSocket('ws://155.138.201.160:8080');
     
