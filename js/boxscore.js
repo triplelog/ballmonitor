@@ -105,7 +105,8 @@ class BoxScore extends HTMLElement {
 		th.textContent = x;
 		theadh.appendChild(th);
 	});
-	for (var i=0;i<batterarray.length;i++){
+	console.log(batterarray);
+	for (var i=1;i<batterarray.length;i++){
 		var tr = document.createElement('tr');
 		
 		
