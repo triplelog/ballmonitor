@@ -13,7 +13,7 @@ class BoxScore extends HTMLElement {
 
     jsonFile.onreadystatechange = function() {
         if (jsonFile.readyState== 4 && jsonFile.status == 200) {
-            this.offbox(Papa.parse(jsonFile.responseText));
+            _this.offbox(Papa.parse(jsonFile.responseText));
         }
      }
 	let template = document.getElementById('boxscore');
