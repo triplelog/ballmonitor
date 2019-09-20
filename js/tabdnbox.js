@@ -269,13 +269,26 @@ class TabDNBox extends HTMLElement {
   }
   
   addData(retmess) {
+  	var boxes = document.querySelectorAll('box-score');
+  	var i = 0;
   	for (var ii=0;ii*2 + 1<retmess[0].length;ii++) {
   		this.colInfo[parseInt(retmess[0][ii*2 + 1])]=retmess[0][ii*2];
   	}
-  	console.log(retmess[1][2]);
-  	var box = document.querySelector('box-score');
-  	box.setAttribute("src",retmess[1][2]);
-  	box.chgsrc();
+  	for (var ii=1;ii<retmess.length;ii++) {
+  		if (boxes.length > ii - 1){
+  			boxes[ii-1].setAttribute("src",retmess[ii][2]);
+  			boxes[ii-1].chgsrc();
+  		}
+  		else {
+  			var box = document.createElement('box-score');
+  			box.setAttribute("src",retmess[ii][2]);
+  			box.chgsrc();
+  			this.parentNode.appendChild(box);
+  		}
+  	}
+
+  	
+  	
   	
   	/*
   	var table = this.shadowRoot.querySelector('table');
