@@ -43,6 +43,13 @@
 			  		<div id="id-of-element"></div>
 				</div>
 				<template class="container-fluid col col-lg-8" id="boxscore">
+					<style>
+						#awayoff-location, #homeoff-location {
+							flex: 1;
+						}
+						.tr1 {background: white;}
+						.tr2 {background: gray;}
+					</style>
 					  <div class="row justify-content-md-center">
 						<div class="col col-lg-4" id="away-info">
 					  
@@ -66,8 +73,8 @@
 						</div>
 					  </div>
 
-					  <div class="row">
-						<div class="col col-lg-6 batstats" id="awayoff-location">
+					  <div style="display: flex;">
+						<div id="awayoff-location">
 							<table>
 								<thead>
 									<tr>
@@ -81,7 +88,7 @@
 								</tfoot>
 							</table>
 						</div>
-						<div class="col col-lg-6 batstats" id="homeoff-location">
+						<div id="homeoff-location">
 							<table>
 								<thead>
 									<tr>
