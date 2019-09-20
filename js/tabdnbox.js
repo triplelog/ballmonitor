@@ -273,6 +273,7 @@ class TabDNBox extends HTMLElement {
   	box.setAttribute("src",retmess[1][2]);
   	box.chgsrc();
   	
+  	/*
   	var table = this.shadowRoot.querySelector('table');
     table.style.maxWidth = (this.parentNode.clientWidth-20)+"px";
     table.style.maxHeight = (this.parentNode.clientHeight-40)+"px";
@@ -367,7 +368,7 @@ class TabDNBox extends HTMLElement {
 			}
 		}
 	}
-	
+	*/
   }
   
   addFoot(retmess) {
