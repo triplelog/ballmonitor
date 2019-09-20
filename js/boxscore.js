@@ -124,12 +124,13 @@ class BoxScore extends HTMLElement {
 		if (currentOrder != batterarray[i][2]) {
 			currentOrder = batterarray[i][2];
 			currentClass = 3 - currentClass;
-			tr.style.borderTop = "1px solid black";
+			tr.classList.add("tr1");
 		}
 		else {
-			batterarray[i][0]=' '+batterarray[i][0];
+			batterarray[i][0]='_'+batterarray[i][0];
+			tr.classList.add("tr2");
 		}
-		tr.classList.add("tr"+currentClass);
+		
 		[0,4,5,6,7,8,9,10].forEach( x => {
 			var td = document.createElement('td');
 			td.textContent = batterarray[i][x];
@@ -175,11 +176,12 @@ class BoxScore extends HTMLElement {
 		if (currentOrder != pitcherarray[i][2]) {
 			currentOrder = pitcherarray[i][2];
 			currentClass = 3 - currentClass;
+			tr.classList.add("tr1");
 		}
 		else {
-			pitcherarray[i][0]=' '+pitcherarray[i][0];
+			pitcherarray[i][0]='\t'+pitcherarray[i][0];
+			tr.classList.add("tr2");
 		}
-		tr.classList.add("tr"+currentClass);
 		[0,4,5,6,7,8,9,10].forEach( x => {
 			var td = document.createElement('td');
 			td.textContent = pitcherarray[i][x];
