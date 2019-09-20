@@ -26,12 +26,25 @@ class BoxScore extends HTMLElement {
             _this.pitchbox(Papa.parse(jsonFile2.responseText).data);
         }
      }
+    var url3 = 'box/ATL197309260plays.csv';
+	var jsonFile3 = new XMLHttpRequest();
+    jsonFile3.open("GET",url3,true);
+    jsonFile3.send();
+
+    jsonFile3.onreadystatechange = function() {
+        if (jsonFile3.readyState== 4 && jsonFile3.status == 200) {
+            _this.linescore(Papa.parse(jsonFile3.responseText).data);
+        }
+     }
+     
+     
+     
 	let template = document.getElementById('boxscore');
     let templateContent = template.content;
 
     const shadowRoot = this.attachShadow({mode: 'open'}).appendChild(templateContent.cloneNode(true));
     
-    this.linescore([['A',0,0,0,0,0],['B',1,0,1,0,0]]);
+    //this.linescore([['A',0,0,0,0,0],['B',1,0,1,0,0]]);
     //this.offbox([[['Name1',0,0,0,0,0,0,0],['Name2',0,0,0,0,0,0,0]],[['Name3',0,0,0,0,0,0,0],['Name4',0,0,0,0,0,0,0]]]);
     /*
     this.ws = new WebSocket('ws://155.138.201.160:8080');
@@ -50,7 +63,7 @@ class BoxScore extends HTMLElement {
 
   }
   
-  linescore(linescorearray) {
+  linescore(linescoreRaw) {
   	var linescore = this.shadowRoot.querySelector('#linescore-location');
   	var thead = linescore.querySelector('thead').querySelector('tr');
   	var row1 = linescore.querySelector('tbody').querySelectorAll('tr')[0];
@@ -58,6 +71,41 @@ class BoxScore extends HTMLElement {
   	thead.innerHTML = '';
   	row1.innerHTML = '';
   	row2.innerHTML = '';
+  	
+  	var awayteam = "Away";
+  	var hometeam = "Home";
+  	var pbpLength = linescoreRaw.length;
+	  var linescorearray = [[awayteam],[hometeam]];
+	  var currentTeam = '1';
+	  var halfRuns = 0;
+	  var halfIndex = -1;
+	  var currentouts = 0;
+	  for (var i=1;i<pbpLength;i++) {
+		  if (linescoreRaw[i].team == '0' && currentTeam == '1') {
+			halfRuns = 0;
+			halfIndex += 1;
+			linescorearray[0].push(0);
+			currentouts = 0;
+		  }
+		  else if (linescoreRaw[i].team == '1' && currentTeam == '0') {
+			halfRuns = 0;
+			halfIndex += 1;
+			linescorearray[1].push(0);
+			currentouts = 0;
+		  }
+		  if (parseInt(linescoreRaw[i].play_runs) > 0) {
+			halfRuns += parseInt(linescoreRaw[i].play_runs);
+			linescorearray[halfIndex%2][parseInt(halfIndex/2)+1].value = halfRuns;
+		  }
+		  
+	  	  if (parseInt(linescoreRaw[i].play_outs) > 0) {
+			currentouts += parseInt(linescoreRaw[i].play_outs);
+		  }
+	  
+		  currentTeam = linescoreRaw[i].team;
+	  }
+	  
+	  
   	var th = document.createElement('th');
   	th.textContent = 'Team';
   	thead.appendChild(th);
