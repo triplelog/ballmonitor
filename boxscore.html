@@ -15,180 +15,150 @@
   <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-
-  <link href="css/boxscore.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
-  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css">
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>-->
 
     
 
 </head>
 
-<body id="page-top">
-
-  <!-- Page Wrapper -->
-  <div id="wrapper">
-
-    <!-- Content Wrapper -->
-    <div id="content-wrapper" class="d-flex flex-column">
-
-      <!-- Main Content -->
-      <div id="content">
-
-        <!-- Begin Page Content -->
-        <div class="container-fluid">
-			<div class="row">
-				<div class="col col-lg-2" id="left-sidebar">
-			  		<div id="id-of-element"></div>
-				</div>
-				<template id="boxscore">
-					<style>
-						#awayoff-location, #homeoff-location, #awaypitcher-location, #homepitcher-location {
-							flex: 1;
-							padding: 5px;
-							font-size: .8rem;
-							line-height: .8rem;
-							margin-left:auto; 
-    						margin-right:auto;
-						}
-						#awayoff-location{
-							border-style: solid; border-width: 0px 1px 0px 0px;
-							
-						}
-						#away-info, #home-info {
-							flex: 1 0 25%;
-						}
-						#linescore-location {
-							flex: 2 0 50%;
-						}
-						#linescore-location table{
-							margin-left:auto; 
-    						margin-right:auto;
-						}
-						#container {
-							width: 500px;
-						}
-						.tr1 td {border-style: dashed; border-width: 1px 0px 0px 0px;}
-						.tr2 td {border-style: dashed; border-width: 0px 0px 0px 0px;}
-					</style>
-					<div id="container">
-					  <div style="display: flex;">
-						<div id="away-info">
-				  			Away team name
-						</div>
-						<div id="linescore-location">
-							<table>
-								<thead>
-									<tr>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-									</tr>
-									<tr>
-									</tr>
-								</tbody>
-							</table>
-						</div>
-						<div id="home-info">
-				  			Home team name
-						</div>
-					  </div>
-
-					  <div style="display: flex;">
-						<div id="awayoff-location">
-							<table>
-								<thead>
-									<tr>
-									</tr>
-								</thead>
-								<tbody>
-								</tbody>
-								<tfoot>
-									<tr>
-									</tr>
-								</tfoot>
-							</table>
-							<hr>
-							<div id="away-extra">
-							</div>
-						</div>
-						<div id="homeoff-location">
-							<table>
-								<thead>
-									<tr>
-									</tr>
-								</thead>
-								<tbody>
-								</tbody>
-								<tfoot>
-									<tr>
-									</tr>
-								</tfoot>
-							</table>
-							<hr>
-							<div id="home-extra">
-							</div>
-						</div>
-					  </div>
-
-					  <div style="display: flex;">
-						<div id="awaypitcher-location">
-							<table>
-								<thead>
-									<tr>
-									</tr>
-								</thead>
-								<tbody>
-								</tbody>
-								<tfoot>
-									<tr>
-									</tr>
-								</tfoot>
-							</table>
-						</div>
-						<div id="homepitcher-location">
-							<table>
-								<thead>
-									<tr>
-									</tr>
-								</thead>
-								<tbody>
-								</tbody>
-								<tfoot>
-									<tr>
-									</tr>
-								</tfoot>
-							</table>
-						</div>
-					  </div>
-					</div>
-				</template>
-				<box-score></box-score>
-				<div class="col col-lg-2" id="right-sidebar">
-			  
-				</div>
-			
+<body>
+	<header style="background: rgb(245, 238, 236);">
+	  <a href="index.html" class="logo"><img src="img/logo.png" style="max-width: 150px; vertical-align:middle;"/></a>
+	  <a href="player.html" class="button" style="background: rgb(245, 238, 236);">Players</a>
+	  <a href="team.html" class="button" style="background: rgb(245, 238, 236);">Teams</a>
+	  <a href="league.html" class="button" style="background: rgb(245, 238, 236);">Leagues</a>
+	  <a href="boxscore.html" class="button" style="background: rgb(245, 238, 236);">Box Scores</a>
+	</header>
+	<tabdn-box style="display: inline-block;" src="xl09p" autoload="true"></tabdn-box>
+	<template id="boxscore">
+		<style>
+			#awayoff-location, #homeoff-location, #awaypitcher-location, #homepitcher-location {
+				flex: 1;
+				padding: 5px;
+				font-size: .8rem;
+				line-height: .8rem;
+				margin-left:auto; 
+				margin-right:auto;
+			}
+			#awayoff-location{
+				border-style: solid; border-width: 0px 1px 0px 0px;
+				
+			}
+			#away-info, #home-info {
+				flex: 1 0 25%;
+			}
+			#linescore-location {
+				flex: 2 0 50%;
+			}
+			#linescore-location table{
+				margin-left:auto; 
+				margin-right:auto;
+			}
+			#container {
+				width: 500px;
+			}
+			.tr1 td {border-style: dashed; border-width: 1px 0px 0px 0px;}
+			.tr2 td {border-style: dashed; border-width: 0px 0px 0px 0px;}
+		</style>
+		<div id="container">
+		  <div style="display: flex;">
+			<div id="away-info">
+				Away team name
 			</div>
-		</div>
+			<div id="linescore-location">
+				<table>
+					<thead>
+						<tr>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+						</tr>
+						<tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div id="home-info">
+				Home team name
+			</div>
+		  </div>
 
-      </div>
-      <!-- End of Main Content -->
-	  <div id="linescorePBP" style="display: none;">
-	  	
-	  </div>
+		  <div style="display: flex;">
+			<div id="awayoff-location">
+				<table>
+					<thead>
+						<tr>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+					<tfoot>
+						<tr>
+						</tr>
+					</tfoot>
+				</table>
+				<hr>
+				<div id="away-extra">
+				</div>
+			</div>
+			<div id="homeoff-location">
+				<table>
+					<thead>
+						<tr>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+					<tfoot>
+						<tr>
+						</tr>
+					</tfoot>
+				</table>
+				<hr>
+				<div id="home-extra">
+				</div>
+			</div>
+		  </div>
+
+		  <div style="display: flex;">
+			<div id="awaypitcher-location">
+				<table>
+					<thead>
+						<tr>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+					<tfoot>
+						<tr>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+			<div id="homepitcher-location">
+				<table>
+					<thead>
+						<tr>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+					<tfoot>
+						<tr>
+						</tr>
+					</tfoot>
+				</table>
+			</div>
+		  </div>
+		</div>
+	</template>
+	<box-score></box-score>
+			
 	  <script src="js/papaparse.min.js"></script>
 	  <script src="js/boxscore.js"></script>
 	  
-
-    </div>
-    <!-- End of Content Wrapper -->
-
-  </div>
-  <!-- End of Page Wrapper -->
-
-  
 
 
 </body>
