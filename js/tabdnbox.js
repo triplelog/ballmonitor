@@ -269,6 +269,9 @@ class TabDNBox extends HTMLElement {
   }
   
   addData(retmess) {
+  	var box = document.createElement('box-score');
+  	box.src = "ATL200004030";
+  	this.parentNode.appendChild(box);
   	/*
   	var table = this.shadowRoot.querySelector('table');
     table.style.maxWidth = (this.parentNode.clientWidth-20)+"px";

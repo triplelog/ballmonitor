@@ -140,6 +140,7 @@ class BoxScore extends HTMLElement {
 				  }
 				  currentTeam = linescoreRaw[i][15];
 			  }
+			  if (linescorearray[1].length < linescorearray[0].length) {linescorearray[1].push('x');}
 			  linescorearray[0].push(totals[0][0]);
 			  linescorearray[1].push(totals[1][0]);
 			  linescorearray[0].push(totals[0][1]);

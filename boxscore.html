@@ -23,14 +23,6 @@
 </head>
 
 <body>
-	<header style="background: rgb(245, 238, 236);">
-	  <a href="index.html" class="logo"><img src="img/logo.png" style="max-width: 150px; vertical-align:middle;"/></a>
-	  <a href="player.html" class="button" style="background: rgb(245, 238, 236);">Players</a>
-	  <a href="team.html" class="button" style="background: rgb(245, 238, 236);">Teams</a>
-	  <a href="league.html" class="button" style="background: rgb(245, 238, 236);">Leagues</a>
-	  <a href="boxscore.html" class="button" style="background: rgb(245, 238, 236);">Box Scores</a>
-	</header>
-	<tabdn-box style="display: inline-block;" src="xl09p" autoload="true"></tabdn-box>
 	<template id="boxscore">
 		<style>
 			#awayoff-location, #homeoff-location, #awaypitcher-location, #homepitcher-location {
@@ -154,7 +146,17 @@
 		  </div>
 		</div>
 	</template>
-	<box-score src="ATL200004030"></box-score>
+	<header style="background: rgb(245, 238, 236);">
+	  <a href="index.html" class="logo"><img src="img/logo.png" style="max-width: 150px; vertical-align:middle;"/></a>
+	  <a href="player.html" class="button" style="background: rgb(245, 238, 236);">Players</a>
+	  <a href="team.html" class="button" style="background: rgb(245, 238, 236);">Teams</a>
+	  <a href="league.html" class="button" style="background: rgb(245, 238, 236);">Leagues</a>
+	  <a href="boxscore.html" class="button" style="background: rgb(245, 238, 236);">Box Scores</a>
+	</header>
+	<div id="content">
+		<tabdn-box style="display: inline-block;" src="xl09p" autoload="true"></tabdn-box>
+		<!--<box-score src="ATL200004030"></box-score>-->
+	</div>
 			
 	  <script src="js/papaparse.min.js"></script>
 	  <script src="js/boxscore.js"></script>
