@@ -7,6 +7,10 @@ class BoxScore extends HTMLElement {
 	
 	var _this = this;
 	this.chgsrc();
+	let template = document.getElementById('boxscore');
+    let templateContent = template.content;
+
+    const shadowRoot = this.attachShadow({mode: 'open'}).appendChild(templateContent.cloneNode(true));
 
 	
 
@@ -50,10 +54,7 @@ class BoxScore extends HTMLElement {
      
      
      
-	let template = document.getElementById('boxscore');
-    let templateContent = template.content;
-
-    const shadowRoot = this.attachShadow({mode: 'open'}).appendChild(templateContent.cloneNode(true));
+	
   }
   
   linescore(gameinfo) {
