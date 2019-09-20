@@ -276,12 +276,12 @@ class TabDNBox extends HTMLElement {
   	}
   	for (var ii=1;ii<retmess.length;ii++) {
   		if (boxes.length > ii - 1){
-  			boxes[ii-1].setAttribute("src",retmess[ii][2]);
+  			boxes[ii-1].setAttribute("src",retmess[ii][1]);
   			boxes[ii-1].chgsrc();
   		}
   		else {
   			var box = document.createElement('box-score');
-  			box.setAttribute("src",retmess[ii][2]);
+  			box.setAttribute("src",retmess[ii][1]);
   			box.chgsrc();
   			this.parentNode.appendChild(box);
   		}
