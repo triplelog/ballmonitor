@@ -18,7 +18,7 @@ class BoxScore extends HTMLElement {
      }
     var url2 = 'box/ATL197309260pitcherbox.csv';
 	var jsonFile2 = new XMLHttpRequest();
-    jsonFile2.open("GET",url,true);
+    jsonFile2.open("GET",url2,true);
     jsonFile2.send();
 
     jsonFile2.onreadystatechange = function() {
