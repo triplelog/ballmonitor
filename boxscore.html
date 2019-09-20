@@ -42,19 +42,25 @@
 				<div class="col col-lg-2" id="left-sidebar">
 			  		<div id="id-of-element"></div>
 				</div>
-				<template class="container-fluid col col-lg-8" id="boxscore">
+				<template style="width: 400px;" id="boxscore">
 					<style>
 						#awayoff-location, #homeoff-location, #awaypitcher-location, #homepitcher-location {
 							flex: 1;
 						}
+						#away-info, #home-info {
+							flex: 1;
+						}
+						#linescore-location {
+							flex: 2;
+						}
 						.tr1 td {border-style: dashed; border-width: 1px 0px 0px 0px;}
 						.tr2 td {border-style: dashed; border-width: 0px 0px 0px 0px;}
 					</style>
-					  <div class="row justify-content-md-center">
-						<div class="col col-lg-4" id="away-info">
-					  
+					  <div style="display: flex;">
+						<div id="away-info">
+				  			Away team name
 						</div>
-						<div class="col col-lg-4" id="linescore-location">
+						<div id="linescore-location">
 							<table>
 								<thead>
 									<tr>
@@ -68,8 +74,8 @@
 								</tbody>
 							</table>
 						</div>
-						<div class="col col-lg-4" id="home-info">
-					  
+						<div id="home-info">
+				  			Home team name
 						</div>
 					  </div>
 
