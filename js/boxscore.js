@@ -76,33 +76,34 @@ class BoxScore extends HTMLElement {
   	var hometeam = "Home";
   	var pbpLength = linescoreRaw.length;
 	  var linescorearray = [[awayteam],[hometeam]];
+	  console.log(linescorearray);
 	  var currentTeam = '1';
 	  var halfRuns = 0;
 	  var halfIndex = -1;
 	  var currentouts = 0;
 	  for (var i=1;i<pbpLength;i++) {
-		  if (linescoreRaw[i].team == '0' && currentTeam == '1') {
+		  if (linescoreRaw[i][15] == '0' && currentTeam == '1') {
 			halfRuns = 0;
 			halfIndex += 1;
 			linescorearray[0].push(0);
 			currentouts = 0;
 		  }
-		  else if (linescoreRaw[i].team == '1' && currentTeam == '0') {
+		  else if (linescoreRaw[i][15] == '1' && currentTeam == '0') {
 			halfRuns = 0;
 			halfIndex += 1;
 			linescorearray[1].push(0);
 			currentouts = 0;
 		  }
-		  if (parseInt(linescoreRaw[i].play_runs) > 0) {
-			halfRuns += parseInt(linescoreRaw[i].play_runs);
+		  if (parseInt(linescoreRaw[i][12]) > 0) {
+			halfRuns += parseInt(linescoreRaw[i][12]);
 			linescorearray[halfIndex%2][parseInt(halfIndex/2)+1].value = halfRuns;
 		  }
 		  
-	  	  if (parseInt(linescoreRaw[i].play_outs) > 0) {
-			currentouts += parseInt(linescoreRaw[i].play_outs);
+	  	  if (parseInt(linescoreRaw[i][11]) > 0) {
+			currentouts += parseInt(linescoreRaw[i][11]);
 		  }
 	  
-		  currentTeam = linescoreRaw[i].team;
+		  currentTeam = linescoreRaw[i][15];
 	  }
 	  
 	  
