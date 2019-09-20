@@ -948,7 +948,7 @@ function postfixify(input_str,colInfo) {
 				}
 			}
 			if (!isColumn){
-				if ( (firstpart[i].match(/./g) || []).length > 1) {firstpart[i] = firstpart[i].replace(/./g,'/');
+				if ( (firstpart[i].match(/./g) || []).length > 1) {firstpart[i] = firstpart[i].replace(/./g,'/')};
 			}
 		}
 		else {
