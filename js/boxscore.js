@@ -23,7 +23,7 @@ class BoxScore extends HTMLElement {
 
     jsonFile2.onreadystatechange = function() {
         if (jsonFile2.readyState== 4 && jsonFile2.status == 200) {
-            _this.pitchbox(Papa.parse(jsonFile.responseText).data);
+            _this.pitchbox(Papa.parse(jsonFile2.responseText).data);
         }
      }
 	let template = document.getElementById('boxscore');
@@ -124,9 +124,10 @@ class BoxScore extends HTMLElement {
 		if (currentOrder != batterarray[i][2]) {
 			currentOrder = batterarray[i][2];
 			currentClass = 3 - currentClass;
+			tr.style.borderTop = "1px solid black";
 		}
 		else {
-			batterarray[i][0]='>'+batterarray[i][0];
+			batterarray[i][0]=' '+batterarray[i][0];
 		}
 		tr.classList.add("tr"+currentClass);
 		[0,4,5,6,7,8,9,10].forEach( x => {
@@ -176,7 +177,7 @@ class BoxScore extends HTMLElement {
 			currentClass = 3 - currentClass;
 		}
 		else {
-			pitcherarray[i][0]='>'+pitcherarray[i][0];
+			pitcherarray[i][0]=' '+pitcherarray[i][0];
 		}
 		tr.classList.add("tr"+currentClass);
 		[0,4,5,6,7,8,9,10].forEach( x => {
