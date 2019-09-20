@@ -127,7 +127,7 @@ class BoxScore extends HTMLElement {
 			tr.classList.add("tr1");
 		}
 		else {
-			batterarray[i][0]='&nbsp;'+batterarray[i][0];
+			batterarray[i][0]='\u00A0'+batterarray[i][0];
 			tr.classList.add("tr2");
 		}
 		
@@ -179,7 +179,7 @@ class BoxScore extends HTMLElement {
 			tr.classList.add("tr1");
 		}
 		else {
-			pitcherarray[i][0]='&nbsp;'+pitcherarray[i][0];
+			pitcherarray[i][0]='\u00A0'+pitcherarray[i][0];
 			tr.classList.add("tr2");
 		}
 		[0,4,5,6,7,8,9,10].forEach( x => {
