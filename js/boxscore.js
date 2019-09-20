@@ -6,8 +6,16 @@ class BoxScore extends HTMLElement {
     
 	
 	var _this = this;
-	this.gameid = this.getAttribute('src');
-	var url = 'box/2000ATL/'+this.gameid+'batterbox.csv';
+	this.chgsrc();
+
+	
+
+  }
+  
+  chgsrc() {
+    this.gameid = this.getAttribute('src');
+    if (this.gameid == null) {return 0;}
+  	var url = 'box/2000ATL/'+this.gameid+'batterbox.csv';
 	var jsonFile = new XMLHttpRequest();
     jsonFile.open("GET",url,true);
     jsonFile.send();
@@ -45,24 +53,6 @@ class BoxScore extends HTMLElement {
     let templateContent = template.content;
 
     const shadowRoot = this.attachShadow({mode: 'open'}).appendChild(templateContent.cloneNode(true));
-    
-    //this.linescore([['A',0,0,0,0,0],['B',1,0,1,0,0]]);
-    //this.offbox([[['Name1',0,0,0,0,0,0,0],['Name2',0,0,0,0,0,0,0]],[['Name3',0,0,0,0,0,0,0],['Name4',0,0,0,0,0,0,0]]]);
-    /*
-    this.ws = new WebSocket('ws://155.138.201.160:8080');
-    
-    
-	this.ws.onmessage = function(evt){
-		
-	};
-	
-	
-	this.ws.onopen = function(){
-		
-	};
-	*/
-	
-
   }
   
   linescore(gameinfo) {
