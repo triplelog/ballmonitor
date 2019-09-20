@@ -16,6 +16,16 @@ class BoxScore extends HTMLElement {
             _this.offbox(Papa.parse(jsonFile.responseText).data);
         }
      }
+    var url2 = 'box/ATL197309260pitcherbox.csv';
+	var jsonFile2 = new XMLHttpRequest();
+    jsonFile2.open("GET",url,true);
+    jsonFile2.send();
+
+    jsonFile2.onreadystatechange = function() {
+        if (jsonFile2.readyState== 4 && jsonFile2.status == 200) {
+            _this.pitchbox(Papa.parse(jsonFile.responseText).data);
+        }
+     }
 	let template = document.getElementById('boxscore');
     let templateContent = template.content;
 
@@ -115,6 +125,9 @@ class BoxScore extends HTMLElement {
 			currentOrder = batterarray[i][2];
 			currentClass = 3 - currentClass;
 		}
+		else {
+			batterarray[i][0]='>'+batterarray[i][0];
+		}
 		tr.classList.add("tr"+currentClass);
 		[0,4,5,6,7,8,9,10].forEach( x => {
 			var td = document.createElement('td');
@@ -124,6 +137,56 @@ class BoxScore extends HTMLElement {
 		tr.addEventListener('click', e => {alert(e.target.parentNode.id);});
 		
 		if (batterarray[i][1]==0) {
+			tr.id = 'offbox_A-'+i;
+			tbodya.appendChild(tr);
+		}
+		else {
+			tr.id = 'offbox_H-'+i;
+			tbodyh.appendChild(tr);
+		}
+	}
+  }
+  pitchbox(pitcherarray) {
+  	var offboxa = this.shadowRoot.querySelector('#awaypitcher-location');
+  	var theada = offboxa.querySelector('thead').querySelector('tr');
+  	var tbodya = offboxa.querySelector('tbody');
+  	var offboxh = this.shadowRoot.querySelector('#homepitcher-location');
+  	var theadh = offboxh.querySelector('thead').querySelector('tr');
+  	var tbodyh = offboxh.querySelector('tbody');
+  	theada.innerHTML = '';
+  	tbodya.innerHTML = '';
+  	theadh.innerHTML = '';
+  	tbodyh.innerHTML = '';
+  	['Name','PA','AB','H','BB','R','RBI','K'].forEach(x => {
+  		var th = document.createElement('th');
+		th.textContent = x;
+		theada.appendChild(th);
+		th = document.createElement('th');
+		th.textContent = x;
+		theadh.appendChild(th);
+	});
+	console.log(pitcherarray);
+	
+	var currentOrder = 0;
+	var currentClass = 1;
+	for (var i=1;i<pitcherarray.length;i++){
+		var tr = document.createElement('tr');
+		if (currentOrder != pitcherarray[i][2]) {
+			currentOrder = pitcherarray[i][2];
+			currentClass = 3 - currentClass;
+		}
+		else {
+			pitcherarray[i][0]='>'+pitcherarray[i][0];
+		}
+		tr.classList.add("tr"+currentClass);
+		[0,4,5,6,7,8,9,10].forEach( x => {
+			var td = document.createElement('td');
+			td.textContent = pitcherarray[i][x];
+			tr.appendChild(td);
+		});
+		tr.addEventListener('click', e => {alert(e.target.parentNode.id);});
+		
+		if (pitcherarray[i][1]==0) {
 			tr.id = 'offbox_A-'+i;
 			tbodya.appendChild(tr);
 		}

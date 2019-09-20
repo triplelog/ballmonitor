@@ -44,11 +44,11 @@
 				</div>
 				<template class="container-fluid col col-lg-8" id="boxscore">
 					<style>
-						#awayoff-location, #homeoff-location {
+						#awayoff-location, #homeoff-location, #awaypitcher-location, #homepitcher-location {
 							flex: 1;
 						}
 						.tr1 {background: white;}
-						.tr2 {background: gray;}
+						.tr2 {background: rgb(220,220,220);}
 					</style>
 					  <div class="row justify-content-md-center">
 						<div class="col col-lg-4" id="away-info">
@@ -104,10 +104,34 @@
 						</div>
 					  </div>
 
-					  <div class="row">
-						<div class="col col-lg-6 pitchstats" id="awaypitcher-location">
+					  <div style="display: flex;">
+						<div id="awaypitcher-location">
+							<table>
+								<thead>
+									<tr>
+									</tr>
+								</thead>
+								<tbody>
+								</tbody>
+								<tfoot>
+									<tr>
+									</tr>
+								</tfoot>
+							</table>
 						</div>
-						<div class="col col-lg-6 pitchstats" id="homepitcher-location">
+						<div id="homepitcher-location">
+							<table>
+								<thead>
+									<tr>
+									</tr>
+								</thead>
+								<tbody>
+								</tbody>
+								<tfoot>
+									<tr>
+									</tr>
+								</tfoot>
+							</table>
 						</div>
 					  </div>
 				</template>
