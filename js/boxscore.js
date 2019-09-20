@@ -127,8 +127,8 @@ class BoxScore extends HTMLElement {
 				  }
 				  else if (linescoreRaw[i][13] && linescoreRaw[i][13].indexOf('homers') > -1) {
 					totals[halfIndex%2][1] += 1;
-					if (halfIndex%2 == 0){_this.shadowRoot.querySelector('#away-extra').textContent += 'HR: '+linescoreRaw[i][13];}
-					else if (halfIndex%2 == 1){_this.shadowRoot.querySelector('#home-extra').textContent += 'HR: '+linescoreRaw[i][13];}
+					if (halfIndex%2 == 0){_this.shadowRoot.querySelector('#away-extra').innerHTML += 'HR: '+linescoreRaw[i][14]+' ('+(linescoreRaw[i][12]-1)+' on)<br>';}
+					else if (halfIndex%2 == 1){_this.shadowRoot.querySelector('#home-extra').innerHTML += 'HR: '+linescoreRaw[i][14]+' ('+(linescoreRaw[i][12]-1)+' on)<br>';}
 				  }
 				  else if (linescoreRaw[i][13] && linescoreRaw[i][13].indexOf('error') > -1) {
 					totals[1 - (halfIndex%2)][2] += 1;
