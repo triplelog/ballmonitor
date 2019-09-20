@@ -13,6 +13,7 @@ class BoxScore extends HTMLElement {
   }
   
   chgsrc() {
+  	var _this = this;
     this.gameid = this.getAttribute('src');
     if (this.gameid == null) {return 0;}
   	var url = 'box/2000ATL/'+this.gameid+'batterbox.csv';
