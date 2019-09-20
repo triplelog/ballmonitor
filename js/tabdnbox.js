@@ -269,6 +269,9 @@ class TabDNBox extends HTMLElement {
   }
   
   addData(retmess) {
+  	for (var ii=0;ii*2 + 1<retmess[0].length;ii++) {
+  		this.colInfo[parseInt(retmess[0][ii*2 + 1])]=retmess[0][ii*2];
+  	}
   	var box = document.querySelector('box-score');
   	box.setAttribute("src",retmess[1][2]);
   	box.chgsrc();
