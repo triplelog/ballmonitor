@@ -100,19 +100,19 @@ class BoxScore extends HTMLElement {
 			linescorearray[halfIndex%2][parseInt(halfIndex/2)+1] = halfRuns;
 			totals[halfIndex%2][0] += parseInt(linescoreRaw[i][12]);
 		  }
-		  if (linescoreRaw[i][13].indexOf('singles') > -1) {
+		  if (linescoreRaw[i][13] && linescoreRaw[i][13].indexOf('singles') > -1) {
 		  	totals[halfIndex%2][1] += 1;
 		  }
-		  else if (linescoreRaw[i][13].indexOf('doubles') > -1) {
+		  else if (linescoreRaw[i][13] && linescoreRaw[i][13].indexOf('doubles') > -1) {
 		  	totals[halfIndex%2][1] += 1;
 		  }
-		  else if (linescoreRaw[i][13].indexOf('triples') > -1) {
+		  else if (linescoreRaw[i][13] && linescoreRaw[i][13].indexOf('triples') > -1) {
 		  	totals[halfIndex%2][1] += 1;
 		  }
-		  else if (linescoreRaw[i][13].indexOf('homers') > -1) {
+		  else if (linescoreRaw[i][13] && linescoreRaw[i][13].indexOf('homers') > -1) {
 		  	totals[halfIndex%2][1] += 1;
 		  }
-		  else if (linescoreRaw[i][13].indexOf('error') > -1) {
+		  else if (linescoreRaw[i][13] && linescoreRaw[i][13].indexOf('error') > -1) {
 		  	totals[1 - (halfIndex%2)][2] += 1;
 		  }
 		  
