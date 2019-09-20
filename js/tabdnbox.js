@@ -718,13 +718,12 @@ class TabDNBox extends HTMLElement {
   cellClick(e,x) {
   	if (this.comparisonMode == '>' || this.comparisonMode == '<' || this.comparisonMode == '='){
   		var cell = e.target.id;
-  		var val = parseInt(this.shadowRoot.querySelector('#'+cell).textContent);
+  		var val = this.shadowRoot.querySelector('#'+cell).textContent;
   		var col = parseInt(cell.split('-')[2]);
   		var thead = this.shadowRoot.querySelector('thead');
 		const headrow = thead.querySelector('tr');
 		const headers = headrow.querySelectorAll('th');
 		var colName = headers[col].querySelector('button').textContent;
-  		console.log(val,colName);
   		if (this.shadowRoot.querySelector("#filterFormula").value != ""){
   			this.shadowRoot.querySelector("#filterFormula").value += 'AND';
   		}
@@ -797,7 +796,7 @@ function makePost(infixexpr) {
 	temptoken = ''
 	for (var i=0;i<infixexpr.length;i++){
 		var ie = infixexpr[i];
-		if ("-0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_".indexOf(ie) > -1){
+		if ("-0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ_.".indexOf(ie) > -1){
 			temptoken += ie
 		}
 		else{
@@ -911,6 +910,11 @@ function replaceNegatives(istr){
 	return istr
 }
 
+function replaceDates(istr){
+	istr.replace(/\//g,'.');
+	return istr;
+}
+
 function postfixify(input_str,colInfo) {
 	input_str = input_str.toUpperCase();
 	input_str = input_str.replace(/AND/g,'&');
@@ -925,8 +929,9 @@ function postfixify(input_str,colInfo) {
 	input_str = input_str.replace(/!=/g,'!');
 	input_str = input_str.replace(/\+-/g,'-');
 	input_str = input_str.replace(/--/g,'+');
-	input_str = replaceDecimals(input_str);
+	//input_str = replaceDecimals(input_str);
 	input_str = replaceNegatives(input_str);
+	input_str = replaceDates(input_str);
 	var twoparts = makePost(input_str);
 	//Convert column names
 	console.log(twoparts[0]);
@@ -934,15 +939,20 @@ function postfixify(input_str,colInfo) {
 	var firstpart = twoparts[0].split(",");
 	for (var i=0;i<firstpart.length;i++){
 		if (parseInt(firstpart[i]).toString() != firstpart[i]){
+			var isColumn = false;
 			for (var ii in colInfo) {
 				if (colInfo[ii].toUpperCase() == firstpart[i]) {
 					firstpart[i] = 'c'+ii;
+					isColumn = true;
 					break;
 				}
 			}
+			if (!isColumn){
+				if ( (firstpart[i].match(/./g) || []).length > 1) {firstpart[i] = firstpart[i].replace(/./g,'/');
+			}
 		}
 		else {
-			firstpart[i] = firstpart[i]+'.1.I';
+			firstpart[i] = firstpart[i];
 		}
 	}
 	var fullstr = firstpart.join("_")+'@'+twoparts[1];
