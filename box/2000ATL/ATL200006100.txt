@@ -1,0 +1,153 @@
+version,2
+info,visteam,BOS
+info,hometeam,ATL
+info,site,ATL02
+info,date,2000/06/10
+info,number,0
+info,starttime,7:10PM
+info,daynight,night
+info,usedh,false
+info,umphome,iassd901
+info,ump1b,hirsm901
+info,ump2b,bellw901
+info,ump3b,onorb901
+info,pitches,pitches
+info,temp,80
+info,winddir,rtol
+info,windspeed,3
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,159
+info,attendance,49420
+info,wp,mulht001
+info,lp,schop001
+info,save,
+start,offej001,"Jose Offerman",0,1,4
+start,lewid001,"Darren Lewis",0,2,9
+start,garcn001,"Nomar Garciaparra",0,3,6
+start,stanm002,"Mike Stanley",0,4,3
+start,everc001,"Carl Everett",0,5,8
+start,varij001,"Jason Varitek",0,6,2
+start,oleat001,"Troy O'Leary",0,7,7
+start,veraw001,"Wilton Veras",0,8,5
+start,schop001,"Pete Schourek",0,9,1
+start,veraq001,"Quilvio Veras",1,1,4
+start,jonea002,"Andruw Jones",1,2,8
+start,jonec004,"Chipper Jones",1,3,5
+start,galaa001,"Andres Galarraga",1,4,3
+start,jordb001,"Brian Jordan",1,5,9
+start,lopej001,"Javy Lopez",1,6,2
+start,sandr002,"Reggie Sanders",1,7,7
+start,weisw001,"Walt Weiss",1,8,6
+start,mulht001,"Terry Mulholland",1,9,1
+play,1,0,offej001,10,BX,S9
+play,1,0,lewid001,00,X,13/SH.1-2
+play,1,0,garcn001,00,X,43/G.2-3
+play,1,0,stanm002,12,CSFBX,63/G
+play,1,1,veraq001,10,BX,63/G
+play,1,1,jonea002,02,FFX,3/FL
+play,1,1,jonec004,32,CCFBBBB,W
+play,1,1,galaa001,00,X,7/F7
+play,2,0,everc001,11,CBX,6/P6
+play,2,0,varij001,12,CCBX,4/L4
+play,2,0,oleat001,31,BBFBX,3/G
+play,2,1,jordb001,12,CBSX,63/G
+play,2,1,lopej001,11,CBX,13/G
+play,2,1,sandr002,21,FBBX,D7
+play,2,1,weisw001,12,BFCS,K
+play,3,0,veraw001,00,X,8/F8
+play,3,0,schop001,02,CCS,K
+play,3,0,offej001,12,CFBS,K
+play,3,1,mulht001,00,X,D9/9S
+play,3,1,veraq001,11,CBX,63/G
+play,3,1,jonea002,00,X,D9/89D.2-H;BX3(945)
+play,3,1,jonec004,00,X,63/G
+play,4,0,lewid001,20,BBX,1/L1
+play,4,0,garcn001,32,BBBCSFX,S7
+play,4,0,stanm002,00,X,64(1)3/GDP
+play,4,1,galaa001,20,BBX,HR/8
+play,4,1,jordb001,22,FFBFBX,S8
+play,4,1,lopej001,00,X,S/78.1-2
+play,4,1,sandr002,22,CFBBX,7/F7.2-3
+play,4,1,weisw001,12,BFCX,T/78D.3-H;1-H
+play,4,1,mulht001,12,SFBS,K
+play,4,1,veraq001,30,BBBB,W
+play,4,1,jonea002,00,,NP
+sub,waket001,"Tim Wakefield",0,9,1
+play,4,1,jonea002,00,,NP
+sub,furcr001,"Rafael Furcal",1,8,12
+play,4,1,jonea002,10,BB,SB2
+play,4,1,jonea002,10,BB,PB.3-H(UR);2-3
+play,4,1,jonea002,20,BBX,4/P4
+play,5,0,everc001,00,,NP
+sub,furcr001,"Rafael Furcal",1,8,6
+play,5,0,everc001,11,CBX,S7/7S
+play,5,0,varij001,22,BBFFFS,K
+play,5,0,oleat001,22,CBFBFX,8/P8
+play,5,0,veraw001,00,X,9/L9
+play,5,1,jonec004,31,CBBBB,W
+play,5,1,galaa001,11,CBX,64(1)3/GDP
+play,5,1,jordb001,12,SBFC,K/C
+play,6,0,waket001,00,,NP
+sub,alexm001,"Manny Alexander",0,9,11
+play,6,0,alexm001,00,,NP
+sub,ligtk001,"Kerry Ligtenberg",1,9,1
+play,6,0,alexm001,12,BCCX,5/P5
+play,6,0,offej001,00,X,S9/9S
+play,6,0,lewid001,22,CBFBS,K
+play,6,0,garcn001,00,X,8/F8
+play,6,1,lopej001,00,,NP
+sub,stanr001,"Rob Stanifer",0,9,1
+play,6,1,lopej001,01,CX,53/G
+play,6,1,sandr002,00,X,7/L7
+play,6,1,furcr001,11,BFX,7/F7
+play,7,0,stanm002,12,BCSFFS,K
+play,7,0,everc001,22,BCBCX,E6/G
+play,7,0,varij001,10,BX,46(1)3/GDP
+play,7,1,ligtk001,00,,NP
+sub,joynw001,"Wally Joyner",1,9,11
+play,7,1,joynw001,21,BBFX,43/G
+play,7,1,veraq001,01,FX,8/L8
+play,7,1,jonea002,22,BBFSX,63/G
+play,8,0,oleat001,00,,NP
+sub,seanr001,"Rudy Seanez",1,9,1
+play,8,0,oleat001,32,BBCFBB,W
+play,8,0,veraw001,00,,NP
+sub,nixot001,"Trot Nixon",0,8,11
+play,8,0,nixot001,12,CFBS,K
+play,8,0,stanr001,00,,NP
+sub,hatts001,"Scott Hatteberg",0,9,11
+play,8,0,hatts001,02,CSFFX,7/F7
+play,8,0,offej001,11,CBX,S9.1-2
+play,8,0,lewid001,00,,NP
+sub,daubb001,"Brian Daubach",0,2,11
+play,8,0,daubb001,12,CFFBS,K
+play,8,1,jonec004,00,,NP
+sub,nixot001,"Trot Nixon",0,8,9
+play,8,1,jonec004,00,,NP
+sub,sadld001,"Donnie Sadler",0,9,5
+play,8,1,jonec004,00,,NP
+sub,cormr001,"Rheal Cormier",0,2,1
+play,8,1,jonec004,11,BCX,D/78D
+play,8,1,galaa001,12,CBFX,S7.2-3
+play,8,1,jordb001,12,BFFX,7/SF.3-H;1-2
+play,8,1,lopej001,32,SBBFBS,K
+play,8,1,sandr002,32,SFBBFBX,53/G
+play,9,0,garcn001,00,,NP
+sub,wengd001,"Don Wengert",1,9,1
+play,9,0,garcn001,31,BBCBB,W
+play,9,0,stanm002,32,BCFBBFB,W.1-2
+play,9,0,everc001,00,,NP
+sub,remlm001,"Mike Remlinger",1,9,1
+play,9,0,everc001,12,BCSS,K
+play,9,0,varij001,11,BSX,6(1)3/GDP
+data,er,schop001,4
+data,er,waket001,0
+data,er,stanr001,0
+data,er,cormr001,1
+data,er,mulht001,0
+data,er,ligtk001,0
+data,er,seanr001,0
+data,er,wengd001,0
+data,er,remlm001,0

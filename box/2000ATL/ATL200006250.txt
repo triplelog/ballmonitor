@@ -1,0 +1,157 @@
+version,2
+info,visteam,MIL
+info,hometeam,ATL
+info,site,ATL02
+info,date,2000/06/25
+info,number,0
+info,starttime,1:10PM
+info,daynight,day
+info,usedh,false
+info,umphome,roe-r901
+info,ump1b,rungb901
+info,ump2b,rapue901
+info,ump3b,shulj901
+info,pitches,pitches
+info,temp,90
+info,winddir,ltor
+info,windspeed,12
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,180
+info,attendance,40268
+info,wp,rockj001
+info,lp,leskc001
+info,save,
+start,bellr002,"Ron Belliard",0,1,4
+start,grism001,"Marquis Grissom",0,2,8
+start,jenkg001,"Geoff Jenkins",0,3,7
+start,burnj001,"Jeromy Burnitz",0,4,9
+start,hayec001,"Charlie Hayes",0,5,5
+start,houst001,"Tyler Houston",0,6,3
+start,hernj001,"Jose Hernandez",0,7,6
+start,blanh001,"Henry Blanco",0,8,2
+start,levra001,"Allen Levrault",0,9,1
+start,veraq001,"Quilvio Veras",1,1,4
+start,jonea002,"Andruw Jones",1,2,8
+start,jonec004,"Chipper Jones",1,3,5
+start,joynw001,"Wally Joyner",1,4,3
+start,jordb001,"Brian Jordan",1,5,9
+start,bonib001,"Bobby Bonilla",1,6,7
+start,lopej001,"Javy Lopez",1,7,2
+start,weisw001,"Walt Weiss",1,8,6
+start,millk004,"Kevin Millwood",1,9,1
+play,1,0,bellr002,11,FBX,63/G
+play,1,0,grism001,22,CBBSS,K
+play,1,0,jenkg001,12,CSBS,K
+play,1,1,veraq001,32,BBBCCFB,W
+play,1,1,jonea002,10,BC,SB2
+play,1,1,jonea002,32,BCSFFBFBX,S7.2-H
+play,1,1,jonec004,31,CBBBX,S9.1-3
+play,1,1,joynw001,31,BBFBB,W.1-2
+play,1,1,jordb001,21,BBSX,S8.3-H;2-H;1-2
+play,1,1,bonib001,00,X,9/F9S
+play,1,1,lopej001,00,X,64(1)3/GDP.2-3
+play,2,0,burnj001,12,FFBC,K/C
+play,2,0,hayec001,12,BSCX,S7
+play,2,0,houst001,10,BX,HR/8.1-H
+play,2,0,hernj001,22,SBSBX,9/F9D
+play,2,0,blanh001,12,BCCS,K
+play,2,1,weisw001,32,CBBBCFB,W
+play,2,1,millk004,02,FCS,K
+play,2,1,veraq001,10,BX,64(1)3/GDP
+play,3,0,levra001,32,BCFBBC,K/C
+play,3,0,bellr002,12,BFCS,K
+play,3,0,grism001,32,CCBBBS,K
+play,3,1,jonea002,12,FSBS,K
+play,3,1,jonec004,00,X,9/L9
+play,3,1,joynw001,00,X,8/F8
+play,4,0,jenkg001,22,FSBFBX,43/G
+play,4,0,burnj001,32,SBFBBX,S8
+play,4,0,hayec001,10,BX,64(1)3/GDP
+play,4,1,jordb001,00,X,5/L5
+play,4,1,bonib001,22,BBFCX,9/F9
+play,4,1,lopej001,10,BX,8/F8D
+play,5,0,houst001,01,CX,S7
+play,5,0,hernj001,12,CFFBX,54(1)/FO
+play,5,0,blanh001,12,SFBS,K
+play,5,0,levra001,12,CCBS,K
+play,5,1,weisw001,32,BCBBCB,W
+play,5,1,millk004,00,X,53/SH.1-2
+play,5,1,veraq001,12,SFB+2,PO2(E2).2-3
+play,5,1,veraq001,32,SFB+2BFBX,8/SF.3-H(UR)
+play,5,1,jonea002,01,CX,53/G
+play,6,0,bellr002,02,CSS,K
+play,6,0,grism001,00,X,8/F8
+play,6,0,jenkg001,12,CBCC,K/C
+play,6,1,jonec004,00,,NP
+sub,hayec001,"Charlie Hayes",0,5,3
+play,6,1,jonec004,00,,NP
+sub,lopel002,"Luis Lopez",0,6,6
+play,6,1,jonec004,00,,NP
+sub,hernj001,"Jose Hernandez",0,7,5
+play,6,1,jonec004,00,X,S8
+play,6,1,joynw001,22,BBCCS,K
+play,6,1,jordb001,12,FFBFS,K
+play,6,1,bonib001,10,BX,8/F8D
+play,7,0,burnj001,00,,NP
+sub,hubbt001,"Trenidad Hubbard",1,6,7
+play,7,0,burnj001,32,CBFBBFFX,7/F7D
+play,7,0,hayec001,10,BX,9/F9S
+play,7,0,lopel002,21,BBSX,S9
+play,7,0,hernj001,32,FBBBSS,K
+play,7,1,lopej001,32,BFSBFFFBB,W
+play,7,1,weisw001,00,,NP
+sub,acevj001,"Juan Acevedo",0,9,1
+play,7,1,weisw001,00,X,46(1)/FO
+play,7,1,millk004,02,LLX,56(1)3/GDP
+play,8,0,blanh001,00,,NP
+sub,sweem001,"Mark Sweeney",0,8,11
+play,8,0,sweem001,12,SSBC,K/C
+play,8,0,acevj001,00,,NP
+sub,casar001,"Raul Casanova",0,9,11
+play,8,0,casar001,21,BSBX,D9
+play,8,0,bellr002,01,FX,9/F9
+play,8,0,grism001,12,SBSX,HR/7.2-H
+play,8,0,jenkg001,01,CX,D9
+play,8,0,burnj001,00,,NP
+sub,rockj001,"John Rocker",1,9,1
+play,8,0,burnj001,22,BSBCC,K/C
+play,8,1,veraq001,00,,NP
+sub,casar001,"Raul Casanova",0,9,2
+play,8,1,veraq001,00,,NP
+sub,weatd001,"David Weathers",0,8,1
+play,8,1,veraq001,00,X,7/F7
+play,8,1,jonea002,11,FBX,63/G
+play,8,1,jonec004,30,BBBB,W
+play,8,1,joynw001,30,BBBB,W.1-2
+play,8,1,jordb001,31,BSBBB,W.2-3;1-2
+play,8,1,hubbt001,00,,NP
+sub,galaa001,"Andres Galarraga",1,6,11
+play,8,1,galaa001,21,BBCX,54(1)/FO
+play,9,0,hayec001,00,,NP
+sub,sandr002,"Reggie Sanders",1,6,7
+play,9,0,hayec001,30,BBBB,W
+play,9,0,lopel002,00,X,13/SH.1-2
+play,9,0,hernj001,02,CSC,K/C
+play,9,0,weatd001,00,,NP
+sub,moutj001,"James Mouton",0,8,11
+play,9,0,moutj001,00,B,SB3
+play,9,0,moutj001,31,BBBCB,W
+play,9,0,casar001,02,CCX,8/F8
+play,9,1,lopej001,00,,NP
+sub,leskc001,"Curtis Leskanic",0,8,1
+play,9,1,lopej001,22,BSSBX,63/G
+play,9,1,weisw001,30,BBBB,W
+play,9,1,rockj001,00,,NP
+sub,lockk001,"Keith Lockhart",1,9,11
+play,9,1,lockk001,12,BSSS,K
+play,9,1,veraq001,30,BBBB,W.1-2
+play,9,1,jonea002,31,BBBCB,W.2-3;1-2
+play,9,1,jonec004,31,BBCBB,W.3-H;2-3;1-2
+data,er,levra001,3
+data,er,acevj001,0
+data,er,weatd001,0
+data,er,leskc001,1
+data,er,millk004,4
+data,er,rockj001,0

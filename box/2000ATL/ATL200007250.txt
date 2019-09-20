@@ -1,0 +1,162 @@
+version,2
+info,visteam,FLO
+info,hometeam,ATL
+info,site,ATL02
+info,date,2000/07/25
+info,number,0
+info,starttime,7:40PM
+info,daynight,night
+info,usedh,false
+info,umphome,schrp901
+info,ump1b,mcclt901
+info,ump2b,craft901
+info,ump3b,cuzzp901
+info,pitches,pitches
+info,temp,75
+info,winddir,rtol
+info,windspeed,13
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,183
+info,attendance,41990
+info,wp,glavt001
+info,lp,dempr002
+info,save,ligtk001
+start,castl001,"Luis Castillo",0,1,4
+start,gonza002,"Alex Gonzalez",0,2,6
+start,floyc001,"Cliff Floyd",0,3,7
+start,wilsp002,"Preston Wilson",0,4,8
+start,lowem001,"Mike Lowell",0,5,5
+start,lee-d002,"Derrek Lee",0,6,3
+start,smitm004,"Mark Smith",0,7,9
+start,redmm001,"Mike Redmond",0,8,2
+start,dempr002,"Ryan Dempster",0,9,1
+start,furcr001,"Rafael Furcal",1,1,6
+start,jonea002,"Andruw Jones",1,2,8
+start,jonec004,"Chipper Jones",1,3,5
+start,jordb001,"Brian Jordan",1,4,9
+start,joynw001,"Wally Joyner",1,5,3
+start,lopej001,"Javy Lopez",1,6,2
+start,bonib001,"Bobby Bonilla",1,7,7
+start,lockk001,"Keith Lockhart",1,8,4
+start,glavt001,"Tom Glavine",1,9,1
+play,1,0,castl001,00,X,S9
+play,1,0,gonza002,21,CBBX,S7.1-2
+play,1,0,floyc001,22,BFFBX,S8/8S.2-H;1-2
+play,1,0,wilsp002,12,SFBS,K
+play,1,0,lowem001,32,CBBFFBFX,S9.2-H;1-3
+play,1,0,lee-d002,12,SBSC,K/C
+play,1,0,smitm004,00,X,8/F8
+play,1,1,furcr001,01,CX,S6/BG6
+play,1,1,jonea002,01,F1,PO1(E1).1-2
+play,1,1,jonea002,11,F1BX,E6/TH.2-3
+play,1,1,jonec004,22,FBBFX,D/78.3-H;1-H(UR)
+play,1,1,jordb001,01,FX,53/G
+play,1,1,joynw001,31,BSBBB,W
+play,1,1,lopej001,11,BFB,CS3(25)
+play,1,1,lopej001,22,BFBFX,53/G
+play,2,0,redmm001,10,BX,S9
+play,2,0,dempr002,00,X,14/SH.1-2
+play,2,0,castl001,02,CCC,K/C
+play,2,0,gonza002,11,BFX,S/89S.2-H
+play,2,0,floyc001,00,X,9/L9
+play,2,1,bonib001,31,CBBBB,W
+play,2,1,lockk001,32,BBBCFX,9(B)3(1)/LDP
+play,2,1,glavt001,10,BX,43/G
+play,3,0,wilsp002,32,SSBBBX,S7/7S
+play,3,0,lowem001,21,CBB1,POCS2(136)
+play,3,0,lowem001,32,CBB1FBX,63/G
+play,3,0,lee-d002,32,BFBCBFS,K
+play,3,1,furcr001,30,BBBB,W
+play,3,1,jonea002,21,FBBX,9/F9
+play,3,1,jonec004,00,X,8/F8S
+play,3,1,jordb001,00,B,SB2.1-H(E2/TH2)(E8/TH3)(UR)
+play,3,1,jordb001,12,BSCX,43/G
+play,4,0,smitm004,22,CBFBFX,43/G
+play,4,0,redmm001,12,CFFBC,K/C
+play,4,0,dempr002,22,CSBBS,K
+play,4,1,joynw001,10,BX,9/L9
+play,4,1,lopej001,22,SFBBX,53/G
+play,4,1,bonib001,11,SBX,31/G
+play,5,0,castl001,22,BFBCX,43/G
+play,5,0,gonza002,12,CBSX,3/FL
+play,5,0,floyc001,11,CBX,5/P5
+play,5,1,lockk001,12,BCSX,4/P4
+play,5,1,glavt001,01,FX,43/G
+play,5,1,furcr001,22,CBFBFC,K/C
+play,6,0,wilsp002,11,BCX,S9
+play,6,0,lowem001,00,X,S7.1-2
+play,6,0,lee-d002,20,BBX,S9.2-3;1-2
+play,6,0,smitm004,31,BCBBX,12(3)/FO.2-3;1-2
+play,6,0,redmm001,00,X,12(3)3/GDP
+play,6,1,jonea002,12,SFBX,S8
+play,6,1,jonec004,21,BBSX,8/F8D
+play,6,1,jordb001,32,BFBFFBB,W.1-2
+play,6,1,joynw001,22,BFCBX,8/F8.2-3
+play,6,1,lopej001,00,X,HR/7.3-H;1-H
+play,6,1,bonib001,21,BBFX,6/P6
+play,7,0,dempr002,00,,NP
+sub,hubbt001,"Trenidad Hubbard",1,7,7
+play,7,0,dempr002,00,,NP
+sub,bergd002,"Dave Berg",0,9,11
+play,7,0,bergd002,11,BFX,S9
+play,7,0,castl001,10,BX,53/G.1-2
+play,7,0,gonza002,22,BCSBX,9/F9
+play,7,0,floyc001,00,,NP
+sub,remlm001,"Mike Remlinger",1,9,1
+play,7,0,floyc001,12,CBFX,S9.2-H
+play,7,0,wilsp002,11,BFB,WP.1-2
+play,7,0,wilsp002,31,BFBBB,W
+play,7,0,lowem001,22,BCBFX,8/F8
+play,7,1,lockk001,00,,NP
+sub,loopb001,"Braden Looper",0,9,1
+play,7,1,lockk001,00,X,S8/8S
+play,7,1,remlm001,31,BBBCB,W.1-2
+play,7,1,furcr001,00,X,54/SH.2-3;1-2
+play,7,1,jonea002,11,BCX,4/L4
+play,7,1,jonec004,30,IIII,IW
+play,7,1,jordb001,22,FBBSFX,31/G
+play,8,0,lee-d002,31,BBBCB,W
+play,8,0,smitm004,22,BBFFX,8/F8
+play,8,0,redmm001,00,,NP
+sub,kamis001,"Scott Kamieniecki",1,9,1
+play,8,0,redmm001,00,,NP
+sub,kotsm001,"Mark Kotsay",0,8,11
+play,8,0,kotsm001,10,BX,8/L8
+play,8,0,loopb001,00,,NP
+sub,millk005,"Kevin Millar",0,9,11
+play,8,0,millk005,32,BCBCBB,W.1-2
+play,8,0,castl001,00,,NP
+sub,sancj001,"Jesus Sanchez",0,9,12
+play,8,0,castl001,12,CCBX,S.2-3;1-2
+play,8,0,gonza002,12,CSBX,7/F7
+play,8,1,joynw001,00,,NP
+sub,castr002,"Ramon Castro",0,8,2
+play,8,1,joynw001,00,,NP
+sub,alfoa001,"Antonio Alfonseca",0,9,1
+play,8,1,joynw001,01,FX,13/G
+play,8,1,lopej001,20,BBX,S7
+play,8,1,hubbt001,32,BCBCBX,E5/G.1-2
+play,8,1,lockk001,00,X,13/G.2-3;1-2
+play,8,1,kamis001,00,,NP
+sub,siscs001,"Steve Sisco",1,9,11
+play,8,1,siscs001,22,BSSBS,K
+play,9,0,floyc001,00,,NP
+sub,hubbt001,"Trenidad Hubbard",1,7,9
+play,9,0,floyc001,00,,NP
+sub,siscs001,"Steve Sisco",1,9,7
+play,9,0,floyc001,00,,NP
+sub,ligtk001,"Kerry Ligtenberg",1,4,1
+play,9,0,floyc001,12,CBCX,HR/9
+play,9,0,wilsp002,00,X,9/F9D
+play,9,0,lowem001,00,X,4/P4
+play,9,0,lee-d002,10,BX,T8/8D
+play,9,0,smitm004,12,FFBS,K
+data,er,dempr002,4
+data,er,loopb001,0
+data,er,alfoa001,0
+data,er,glavt001,4
+data,er,remlm001,0
+data,er,kamis001,0
+data,er,ligtk001,1

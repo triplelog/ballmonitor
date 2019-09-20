@@ -1,0 +1,152 @@
+version,2
+info,visteam,NYN
+info,hometeam,ATL
+info,site,ATL02
+info,date,2000/09/18
+info,number,0
+info,starttime,7:40PM
+info,daynight,night
+info,usedh,false
+info,umphome,welkb901
+info,ump1b,wintm901
+info,ump2b,froeb901
+info,ump3b,vanvm901
+info,pitches,pitches
+info,temp,66
+info,winddir,rtol
+info,windspeed,3
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,166
+info,attendance,41937
+info,wp,maddg002
+info,lp,hampm001
+info,save,rockj001
+start,agbab001,"Benny Agbayani",0,1,7
+start,belld001,"Derek Bell",0,2,9
+start,alfoe001,"Edgardo Alfonzo",0,3,4
+start,piazm001,"Mike Piazza",0,4,2
+start,ventr001,"Robin Ventura",0,5,5
+start,zeilt001,"Todd Zeile",0,6,3
+start,paytj001,"Jay Payton",0,7,8
+start,bordm001,"Mike Bordick",0,8,6
+start,hampm001,"Mike Hampton",0,9,1
+start,furcr001,"Rafael Furcal",1,1,4
+start,jonea002,"Andruw Jones",1,2,8
+start,jonec004,"Chipper Jones",1,3,5
+start,jordb001,"Brian Jordan",1,4,9
+start,galaa001,"Andres Galarraga",1,5,3
+start,sandr002,"Reggie Sanders",1,6,7
+start,weisw001,"Walt Weiss",1,7,6
+start,bakop001,"Paul Bako",1,8,2
+start,maddg002,"Greg Maddux",1,9,1
+play,1,0,agbab001,01,CX,9/F9
+play,1,0,belld001,00,X,9/F9
+play,1,0,alfoe001,10,BX,43/G
+play,1,1,furcr001,21,BBCX,13/G
+play,1,1,jonea002,11,CBX,43/G
+play,1,1,jonec004,32,BBFBFB,W
+play,1,1,jordb001,11,BSX,8/F8
+play,2,0,piazm001,32,CBFBFFBX,8/F8
+play,2,0,ventr001,20,BBX,31/G
+play,2,0,zeilt001,31,BBCBX,63/G
+play,2,1,galaa001,30,BBBX,D9/9D
+play,2,1,sandr002,00,X,63/G.2-3
+play,2,1,weisw001,00,X,E1/THH/SH.3-H;B-2
+play,2,1,bakop001,22,CBFBC,K/C
+play,2,1,maddg002,12,BSSS,K
+play,3,0,paytj001,00,X,43/G
+play,3,0,bordm001,31,CBBBX,S8
+play,3,0,hampm001,10,BX,14/SH.1-2
+play,3,0,agbab001,12,CFBX,63/G
+play,3,1,furcr001,31,BCBBB,W
+play,3,1,jonea002,00,X,S7/7S.1-2
+play,3,1,jonec004,12,CBFFX,S8.2-H;1-2
+play,3,1,jordb001,00,X,S8.2-H;1-3
+play,3,1,galaa001,00,X,13/G.1-2
+play,3,1,sandr002,30,IIII,IW
+play,3,1,weisw001,20,BBX,43/G.3-H;2-3;1-2
+play,3,1,bakop001,20,BBX,3/G
+play,4,0,belld001,32,CBSBBFX,S7
+play,4,0,alfoe001,10,BC,SB2
+play,4,0,alfoe001,11,BCX,9/F9S
+play,4,0,piazm001,00,X,31/G.2-3
+play,4,0,ventr001,10,BX,5/FL
+play,4,1,maddg002,22,BSCBX,13/G
+play,4,1,furcr001,10,BX,13/G
+play,4,1,jonea002,00,X,8/F8
+play,5,0,zeilt001,01,CX,13/G
+play,5,0,paytj001,01,CX,S7
+play,5,0,bordm001,00,X,8/F8
+play,5,0,hampm001,02,CFS,K
+play,5,1,jonec004,31,BFBBX,S8
+play,5,1,jordb001,31,CBBB1,POCS2(13)
+play,5,1,jordb001,31,CBBB1B,W
+play,5,1,galaa001,20,BBX,D/78.1-H
+play,5,1,sandr002,30,IIII,IW
+play,5,1,weisw001,01,FX,4(B)3(1)/LDP
+play,6,0,agbab001,12,CFBX,6/P6
+play,6,0,belld001,01,CH,HP
+play,6,0,alfoe001,02,CFX,8/F8
+play,6,0,piazm001,11,BFX,64(1)/FO
+play,6,1,bakop001,22,CFBBS,K
+play,6,1,maddg002,21,BCBX,63/G
+play,6,1,furcr001,12,CBSS,K
+play,7,0,ventr001,02,CCX,S9
+play,7,0,zeilt001,21,BCBX,9/F9
+play,7,0,paytj001,02,CCX,9/F9
+play,7,0,bordm001,01,CX,S9/9S.1-3
+play,7,0,hampm001,00,,NP
+sub,hamid001,"Darryl Hamilton",0,9,11
+play,7,0,hamid001,12,CBSFC,K/C
+play,7,1,jonea002,00,,NP
+sub,mahop001,"Pat Mahomes",0,9,1
+play,7,1,jonea002,20,BBX,9/F9
+play,7,1,jonec004,22,CSBBFX,7/F7
+play,7,1,jordb001,10,BX,HR/8
+play,7,1,galaa001,21,BSBX,9/F9
+play,8,0,agbab001,00,,NP
+sub,ligtk001,"Kerry Ligtenberg",1,9,1
+play,8,0,agbab001,22,SSBBS,K
+play,8,0,belld001,00,X,HR/7
+play,8,0,alfoe001,32,BBCFFBB,W
+play,8,0,piazm001,01,CX,D7.1-3
+play,8,0,ventr001,00,,NP
+sub,remlm001,"Mike Remlinger",1,9,1
+play,8,0,ventr001,01,CX,S8.3-H;2-H
+play,8,0,zeilt001,30,BBBB,W.1-2
+play,8,0,paytj001,21,BBCX,7/F7
+play,8,0,bordm001,00,,NP
+sub,tramb001,"Bubba Trammell",0,8,11
+play,8,0,tramb001,00,,NP
+sub,rockj001,"John Rocker",1,5,1
+play,8,0,tramb001,00,,NP
+sub,joynw001,"Wally Joyner",1,9,3
+play,8,0,tramb001,10,BX,6/P6
+play,8,1,sandr002,00,,NP
+sub,velaj001,"Jorge Velandia",0,8,6
+play,8,1,sandr002,00,,NP
+sub,wendt001,"Turk Wendell",0,9,1
+play,8,1,sandr002,12,CBFX,53/G
+play,8,1,weisw001,00,,NP
+sub,lockk001,"Keith Lockhart",1,7,11
+play,8,1,lockk001,12,CFBS,K
+play,8,1,bakop001,12,FCBX,13/G
+play,9,0,wendt001,00,,NP
+sub,furcr001,"Rafael Furcal",1,1,6
+play,9,0,wendt001,00,,NP
+sub,lockk001,"Keith Lockhart",1,7,4
+play,9,0,wendt001,00,,NP
+sub,mcewj001,"Joe McEwing",0,9,11
+play,9,0,mcewj001,32,BBBCCX,8/F8
+play,9,0,agbab001,22,BBCSC,K/C
+play,9,0,belld001,11,CBX,S7
+play,9,0,alfoe001,31,CBBBX,3/FL
+data,er,hampm001,5
+data,er,mahop001,1
+data,er,wendt001,0
+data,er,maddg002,0
+data,er,ligtk001,3
+data,er,remlm001,0
+data,er,rockj001,0
