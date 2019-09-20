@@ -91,6 +91,8 @@ class BoxScore extends HTMLElement {
 			  var halfIndex = -1;
 			  var currentouts = 0;
 			  var totals = [[0,0,0],[0,0,0]]
+			  _this.shadowRoot.querySelector('#away-extra').innerHTML = '';
+			  _this.shadowRoot.querySelector('#home-extra').innerHTML = '';
 			  for (var i=1;i<pbpLength;i++) {
 				  if (linescoreRaw[i][15] == '0' && currentTeam == '1') {
 					halfRuns = 0;
