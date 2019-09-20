@@ -81,6 +81,7 @@ class BoxScore extends HTMLElement {
 	  var halfRuns = 0;
 	  var halfIndex = -1;
 	  var currentouts = 0;
+	  var totals = [[0,0,0],[0,0,0]]
 	  for (var i=1;i<pbpLength;i++) {
 		  if (linescoreRaw[i][15] == '0' && currentTeam == '1') {
 			halfRuns = 0;
@@ -97,14 +98,35 @@ class BoxScore extends HTMLElement {
 		  if (parseInt(linescoreRaw[i][12]) > 0) {
 			halfRuns += parseInt(linescoreRaw[i][12]);
 			linescorearray[halfIndex%2][parseInt(halfIndex/2)+1] = halfRuns;
+			totals[halfIndex%2][0] += parseInt(linescoreRaw[i][12]);
+		  }
+		  if (linescoreRaw[i][13].indexOf('singles') > -1) {
+		  	totals[halfIndex%2][1] += 1;
+		  }
+		  else if (linescoreRaw[i][13].indexOf('doubles') > -1) {
+		  	totals[halfIndex%2][1] += 1;
+		  }
+		  else if (linescoreRaw[i][13].indexOf('triples') > -1) {
+		  	totals[halfIndex%2][1] += 1;
+		  }
+		  else if (linescoreRaw[i][13].indexOf('homers') > -1) {
+		  	totals[halfIndex%2][1] += 1;
+		  }
+		  else if (linescoreRaw[i][13].indexOf('error') > -1) {
+		  	totals[1 - (halfIndex%2)][2] += 1;
 		  }
 		  
 	  	  if (parseInt(linescoreRaw[i][11]) > 0) {
 			currentouts += parseInt(linescoreRaw[i][11]);
 		  }
-	  
 		  currentTeam = linescoreRaw[i][15];
 	  }
+	  linescorearray[0].push(totals[0][0]);
+	  linescorearray[1].push(totals[1][0]);
+	  linescorearray[0].push(totals[0][1]);
+	  linescorearray[1].push(totals[1][1]);
+	  linescorearray[0].push(totals[0][2]);
+	  linescorearray[1].push(totals[1][2]);
 	  
 	  
   	var th = document.createElement('th');
