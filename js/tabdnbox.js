@@ -652,7 +652,7 @@ class TabDNBox extends HTMLElement {
 	else if (pivotSortR.substring(0,5)=="MEAN("){pivotSort = [pivotSortR.substring(5,pivotSortR.length-1),'a'];}
 	else if (pivotSortR.substring(0,6)=="FIRST("){pivotSort = [pivotSortR.substring(6,pivotSortR.length-1),'f'];}
 	else if (pivotSortR.substring(0,5)=="LAST("){pivotSort = [pivotSortR.substring(5,pivotSortR.length-1),'l'];}
-	else if (pivotSortR.substring(0,8)=="COUNTIF("){pivotSort = [pivotSortR.substring(8,pivotSortR.length-1),'c'];}
+	else if (pivotSortR.substring(0,8)=="COUNTIF("){pivotSort = [postfixify(pivotSortR.substring(8,pivotSortR.length-1),this.colInfo),'c'];}
 	else{pivotSort = [pivotSortR,'s'];}
 	for (var i=0;i<pivotColumnsR.length;i++){
 		if (pivotColumnsR[i].substring(0,4)=="SUM("){pivotColumns.push([pivotColumnsR[i].substring(4,pivotColumnsR[i].length-1),'s']);}
@@ -661,7 +661,7 @@ class TabDNBox extends HTMLElement {
 		else if (pivotColumnsR[i].substring(0,5)=="MEAN("){pivotColumns.push([pivotColumnsR[i].substring(5,pivotColumnsR[i].length-1),'a']);}
 		else if (pivotColumnsR[i].substring(0,6)=="FIRST("){pivotColumns.push([pivotColumnsR[i].substring(6,pivotColumnsR[i].length-1),'f']);}
 		else if (pivotColumnsR[i].substring(0,5)=="LAST("){pivotColumns.push([pivotColumnsR[i].substring(5,pivotColumnsR[i].length-1),'l']);}
-		else if (pivotColumnsR[i].substring(0,8)=="COUNTIF("){pivotColumns.push([pivotColumnsR[i].substring(8,pivotColumnsR[i].length-1),'c']);}
+		else if (pivotColumnsR[i].substring(0,8)=="COUNTIF("){pivotColumns.push([postfixify(pivotColumnsR[i].substring(8,pivotColumnsR[i].length-1),this.colInfo),'c']);}
 		else{pivotColumns.push([pivotColumnsR[i],'s']);}
 	}
 	console.log(pivotColumns);
@@ -670,12 +670,15 @@ class TabDNBox extends HTMLElement {
 	var colIDs = [];
 	for (var ii in this.colInfo) {
 		if (this.colInfo[ii].toUpperCase() == pivotCol) {pivotID = ii;}
-		if (this.colInfo[ii].toUpperCase() == pivotSort[0]) {sortID = pivotSort[1]+ii;}
+		if (pivotSort[1] != 'c' && this.colInfo[ii].toUpperCase() == pivotSort[0]) {sortID = pivotSort[1]+ii;}
 		for (var i=0;i<pivotColumns.length;i++) {
-			if (this.colInfo[ii].toUpperCase() == pivotColumns[i][0]) {colIDs.push(pivotColumns[i][1]+ii);}
+			if (pivotColumns[i][1] != 'c' && this.colInfo[ii].toUpperCase() == pivotColumns[i][0]) {colIDs.push(pivotColumns[i][1]+ii);}
 		}
 	}
-	if (pivotSort[1] == 'c'){sortID = pivotSort[0].replace('C','c');}
+	if (pivotSort[1] == 'c'){sortID = pivotSort[0];}
+	for (var i=0;i<pivotColumns.length;i++) {
+		if (pivotColumns[i][1] == 'c') {colIDs.push(pivotColumns[i][0]);}
+	}
 	if (pivotID < 0){return 0;}
 	
 	if (this.usecache){
