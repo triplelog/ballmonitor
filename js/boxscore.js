@@ -80,7 +80,7 @@ class BoxScore extends HTMLElement {
     jsonFile.onreadystatechange = function() {
         if (jsonFile.readyState== 4 && jsonFile.status == 200) {
             var linescoreRaw = Papa.parse(jsonFile.responseText).data;
-            var linescore = this.shadowRoot.querySelector('#linescore-location');
+            var linescore = _this.shadowRoot.querySelector('#linescore-location');
 			var thead = linescore.querySelector('thead').querySelector('tr');
 			var row1 = linescore.querySelector('tbody').querySelectorAll('tr')[0];
 			var row2 = linescore.querySelector('tbody').querySelectorAll('tr')[1];
