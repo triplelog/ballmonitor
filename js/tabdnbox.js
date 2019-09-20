@@ -675,9 +675,9 @@ class TabDNBox extends HTMLElement {
 			if (pivotColumns[i][1] != 'c' && this.colInfo[ii].toUpperCase() == pivotColumns[i][0]) {colIDs.push(pivotColumns[i][1]+ii);}
 		}
 	}
-	if (pivotSort[1] == 'c'){sortID = pivotSort[0];}
+	if (pivotSort[1] == 'c'){sortID = pivotSort[0].replace('@','|');}
 	for (var i=0;i<pivotColumns.length;i++) {
-		if (pivotColumns[i][1] == 'c') {colIDs.push(pivotColumns[i][0]);}
+		if (pivotColumns[i][1] == 'c') {colIDs.push(pivotColumns[i][0].replace('@','|'));}
 	}
 	if (pivotID < 0){return 0;}
 	
