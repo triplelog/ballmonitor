@@ -1,0 +1,147 @@
+version,2
+info,visteam,PIT
+info,hometeam,MON
+info,site,MON02
+info,date,2000/06/20
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,hudsm901
+info,ump1b,cedeg901
+info,ump2b,welkt901
+info,ump3b,scotd901
+info,pitches,pitches
+info,temp,72
+info,winddir,fromcf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,167
+info,attendance,8056
+info,wp,bensk001
+info,lp,johnm002
+info,save,willm005
+start,morrw001,"Warren Morris",0,1,4
+start,kendj001,"Jason Kendall",0,2,2
+start,cordw001,"Wil Cordero",0,3,7
+start,gileb002,"Brian Giles",0,4,8
+start,younk001,"Kevin Young",0,5,3
+start,vandj001,"John Vander Wal",0,6,9
+start,ramia001,"Aramis Ramirez",0,7,5
+start,mearp001,"Pat Meares",0,8,6
+start,bensk001,"Kris Benson",0,9,1
+start,bergp001,"Peter Bergeron",1,1,8
+start,guerw001,"Wilton Guerrero",1,2,7
+start,vidrj001,"Jose Vidro",1,3,4
+start,guerv001,"Vladimir Guerrero",1,4,9
+start,stevl001,"Lee Stevens",1,5,3
+start,barrm003,"Michael Barrett",1,6,5
+start,widgc001,"Chris Widger",1,7,2
+start,cabro001,"Orlando Cabrera",1,8,6
+start,johnm002,"Mike Johnson",1,9,1
+play,1,0,morrw001,00,X,9/F9D
+play,1,0,kendj001,11,CBX,HR/8
+play,1,0,cordw001,22,CCBBS,K
+play,1,0,gileb002,00,X,9/F9D
+play,1,1,bergp001,10,BX,53/G
+play,1,1,guerw001,11,BCX,S8
+play,1,1,vidrj001,10,BB,SB2
+play,1,1,vidrj001,20,BBX,53/G
+play,1,1,guerv001,01,CX,43/G
+play,2,0,younk001,30,BBBB,W
+play,2,0,vandj001,22,BBCCX,6/P6
+play,2,0,ramia001,01,FX,8/F8
+play,2,0,mearp001,32,BBBCSFS,K
+play,2,1,stevl001,00,X,6/L6
+play,2,1,barrm003,01,CX,13/G
+play,2,1,widgc001,01,FX,63/G
+play,3,0,bensk001,12,CCBS,K
+play,3,0,morrw001,22,CBFBX,3/G
+play,3,0,kendj001,32,BBFSBB,W
+play,3,0,cordw001,10,BC,SB2.1-3(E2/TH2)
+play,3,0,cordw001,22,BCBSS,K
+play,3,1,cabro001,32,BBBCFB,W
+play,3,1,johnm002,12,LBSC,K/C
+play,3,1,bergp001,10,BX,3/G.1-2
+play,3,1,guerw001,12,BFFFX,23/G
+play,4,0,gileb002,01,CH,HP
+play,4,0,younk001,11,CBX,64(1)3/GDP
+play,4,0,vandj001,12,CBSC,K/C
+play,4,1,vidrj001,22,LBSFBX,HR/9
+play,4,1,guerv001,32,FBBBFX,D/89D
+play,4,1,stevl001,00,X,7/F7
+play,4,1,barrm003,12,BCSS,K
+play,4,1,widgc001,22,CSBBS,K
+play,5,0,ramia001,22,BBFCFX,D7
+play,5,0,mearp001,01,CX,53/G
+play,5,0,bensk001,02,CSS,K
+play,5,0,morrw001,00,X,S8/8S.2-H
+play,5,0,kendj001,21,BCBX,43/G
+play,5,1,cabro001,10,BX,53/G
+play,5,1,johnm002,21,BSBX,13/G
+play,5,1,bergp001,32,CFBBFFBFFS,K
+play,6,0,cordw001,31,BBCBB,W
+play,6,0,gileb002,12,CCBX,36(1)/FO
+play,6,0,younk001,32,BCBSBX,3/P3
+play,6,0,vandj001,01,CX,43/G
+play,6,1,guerw001,32,CBFBBX,7/F7
+play,6,1,vidrj001,20,BBX,D7/7D
+play,6,1,guerv001,01,FX,53/G
+play,6,1,stevl001,30,IIII,IW
+play,6,1,barrm003,10,BX,63/G
+play,7,0,ramia001,00,,NP
+sub,liraf001,"Felipe Lira",1,9,1
+play,7,0,ramia001,11,CBX,S9/9S
+play,7,0,mearp001,01,CX,54(1)/FO
+play,7,0,bensk001,12,BSLX,26(1)/FO
+play,7,0,morrw001,32,CBBBFB,W.1-2
+play,7,0,kendj001,30,BBBB,W.2-3;1-2
+play,7,0,cordw001,00,,NP
+sub,santj001,"Julio Santana",1,9,1
+play,7,0,cordw001,02,CFX,8/F8
+play,7,1,widgc001,21,SBBX,S8
+play,7,1,cabro001,01,LX,E6/G.1-3
+play,7,1,santj001,00,,NP
+sub,blumg001,"Geoff Blum",1,9,11
+play,7,1,blumg001,22,BBCFFFH,HP.1-2
+play,7,1,bergp001,01,FX,6/P6
+play,7,1,guerw001,00,X,5(2)3/GDP
+play,8,0,gileb002,00,,NP
+sub,telfa001,"Anthony Telford",1,9,1
+play,8,0,gileb002,02,FCX,43/G
+play,8,0,younk001,31,BFBBX,8/F8D
+play,8,0,vandj001,10,BX,5/FL
+play,8,1,vidrj001,32,BBFBFX,43/G
+play,8,1,guerv001,02,CFX,T/78D
+play,8,1,stevl001,00,,NP
+sub,chrij002,"Jason Christiansen",0,9,1
+play,8,1,stevl001,02,SSS,K
+play,8,1,barrm003,00,,NP
+sub,avenb001,"Bruce Aven",0,9,9
+play,8,1,barrm003,00,,NP
+sub,wilkm001,"Marc Wilkins",0,6,1
+play,8,1,barrm003,00,,NP
+sub,schnb001,"Brian Schneider",1,6,11
+play,8,1,schnb001,20,BBX,7/F7
+play,9,0,ramia001,00,,NP
+sub,mordm001,"Mike Mordecai",1,6,5
+play,9,0,ramia001,01,FX,8/F8S
+play,9,0,mearp001,00,X,8/F8
+play,9,0,avenb001,12,CFFBC,K/C
+play,9,1,widgc001,00,,NP
+sub,willm005,"Mike Williams",0,6,1
+play,9,1,widgc001,32,CFFFFBFFBFFBX,8/F8
+play,9,1,cabro001,02,SFX,8/F8
+play,9,1,telfa001,00,,NP
+sub,jonet004,"Terry Jones",1,9,11
+play,9,1,jonet004,12,BSSFX,63/G
+data,er,bensk001,1
+data,er,chrij002,0
+data,er,wilkm001,0
+data,er,willm005,0
+data,er,johnm002,2
+data,er,liraf001,0
+data,er,santj001,0
+data,er,telfa001,0

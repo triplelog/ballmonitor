@@ -1,0 +1,138 @@
+version,2
+info,visteam,ATL
+info,hometeam,CHN
+info,site,CHI11
+info,date,2000/04/10
+info,number,0
+info,starttime,1:20PM
+info,daynight,day
+info,usedh,false
+info,umphome,younl901
+info,ump1b,bonig901
+info,ump2b,katzt901
+info,ump3b,mealj901
+info,pitches,pitches
+info,temp,45
+info,winddir,fromrf
+info,windspeed,12
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,148
+info,attendance,38655
+info,wp,guthm001
+info,lp,ligtk001
+info,save,
+start,veraq001,"Quilvio Veras",0,1,4
+start,sandr002,"Reggie Sanders",0,2,9
+start,jonec004,"Chipper Jones",0,3,5
+start,galaa001,"Andres Galarraga",0,4,3
+start,bonib001,"Bobby Bonilla",0,5,7
+start,lopej001,"Javy Lopez",0,6,2
+start,jonea002,"Andruw Jones",0,7,8
+start,weisw001,"Walt Weiss",0,8,6
+start,millk004,"Kevin Millwood",0,9,1
+start,youne001,"Eric Young",1,1,4
+start,gutir001,"Ricky Gutierrez",1,2,6
+start,sosas001,"Sammy Sosa",1,3,9
+start,gracm001,"Mark Grace",1,4,3
+start,rodrh001,"Henry Rodriguez",1,5,7
+start,andrs001,"Shane Andrews",1,6,5
+start,bufod001,"Damon Buford",1,7,8
+start,giraj001,"Joe Girardi",1,8,2
+start,liebj001,"Jon Lieber",1,9,1
+play,1,0,veraq001,01,CX,63/G
+play,1,0,sandr002,10,BX,8/F8S
+play,1,0,jonec004,21,BFBX,HR/78
+play,1,0,galaa001,11,SBX,63/G
+play,1,1,youne001,12,BCFFX,8/F8
+play,1,1,gutir001,22,BFBFFFS,K23
+play,1,1,sosas001,32,CBSBBFX,8/F8S
+play,2,0,bonib001,00,X,5/FL
+play,2,0,lopej001,22,FBBCS,K
+play,2,0,jonea002,02,SFX,13/G
+play,2,1,gracm001,01,CX,S8
+play,2,1,rodrh001,00,X,7/F7S
+play,2,1,andrs001,11,FBB,CS2(26)
+play,2,1,andrs001,32,FBBBFFFX,53/G
+play,3,0,weisw001,00,X,43/G
+play,3,0,millk004,02,SCS,K
+play,3,0,veraq001,21,BBCX,53/G
+play,3,1,bufod001,11,CBX,31/G
+play,3,1,giraj001,00,X,63/G
+play,3,1,liebj001,02,CFC,K/C
+play,4,0,sandr002,10,BX,D7/7D
+play,4,0,jonec004,00,X,2/FL
+play,4,0,galaa001,00,X,HR/7.2-H
+play,4,0,bonib001,00,X,8/F8S
+play,4,0,lopej001,00,X,43/G
+play,4,1,youne001,32,BBBCCS,K
+play,4,1,gutir001,12,CSBS,K23
+play,4,1,sosas001,01,SX,S
+play,4,1,gracm001,11,BCX,43/G
+play,5,0,jonea002,11,FBX,S
+play,5,0,weisw001,21,CBBX,46(1)/FO
+play,5,0,millk004,00,X,14/SH.1-2
+play,5,0,veraq001,00,X,43/G
+play,5,1,rodrh001,32,BSBFBX,9/F9D
+play,5,1,andrs001,12,BFCX,53/G
+play,5,1,bufod001,02,CFS,K
+play,6,0,sandr002,22,CBFFBS,K
+play,6,0,jonec004,21,BBCX,43/G
+play,6,0,galaa001,02,CCX,D7/7S
+play,6,0,bonib001,20,BBX,3/L3
+play,6,1,giraj001,00,,NP
+sub,hubbt001,"Trenidad Hubbard",0,5,7
+play,6,1,giraj001,21,FBBX,8/F8S
+play,6,1,liebj001,32,BBCBCX,S8
+play,6,1,youne001,02,CLX,S7/7S.1-2
+play,6,1,gutir001,32,BBCFBX,S8.2-3;1-2
+play,6,1,sosas001,32,BFBBFX,46(1)3/GDP
+play,7,0,lopej001,00,X,S9
+play,7,0,jonea002,11,BFX,54(1)/FO
+play,7,0,weisw001,10,BX,S7.1-3
+play,7,0,millk004,00,X,34/SH.1-2
+play,7,0,veraq001,21,BBFX,63/G
+play,7,1,gracm001,32,BCBBCX,3/G
+play,7,1,rodrh001,10,BX,8/F8
+play,7,1,andrs001,32,BFSBBB,W
+play,7,1,bufod001,01,CX,S.1-2
+play,7,1,giraj001,22,BCBCS,K
+play,8,0,sandr002,02,CCX,5/P5
+play,8,0,jonec004,22,BBCCFX,43/G
+play,8,0,galaa001,02,FFS,K
+play,8,1,liebj001,00,,NP
+sub,remlm001,"Mike Remlinger",0,9,1
+play,8,1,liebj001,00,,NP
+sub,browr001,"Roosevelt Brown",1,9,11
+play,8,1,browr001,00,,NP
+sub,nievj002,"Jose Nieves",1,9,11
+play,8,1,nievj002,12,CFBX,13/G
+play,8,1,youne001,00,X,S5/BG5
+play,8,1,gutir001,22,CBCBX,64(1)/FO
+play,8,1,sosas001,22,CBBSS,K
+play,9,0,hubbt001,00,,NP
+sub,guthm001,"Mark Guthrie",1,9,1
+play,9,0,hubbt001,22,CBSBX,63/G
+play,9,0,lopej001,10,BX,8/F8
+play,9,0,jonea002,11,BFX,53/G
+play,9,1,gracm001,30,BBBB,W
+play,9,1,rodrh001,00,,NP
+sub,hillg001,"Glenallen Hill",1,5,11
+play,9,1,hillg001,00,,NP
+sub,ligtk001,"Kerry Ligtenberg",0,9,1
+play,9,1,hillg001,31,BFBBB,W.1-2
+play,9,1,andrs001,12,FSBFX,HR/7.2-H;1-H
+play,9,1,bufod001,11,BFX,S/78
+play,9,1,giraj001,00,,NP
+sub,rivel002,"Luis Rivera",0,9,1
+play,9,1,giraj001,21,BBCX,34/SH.1-2
+play,9,1,guthm001,00,,NP
+sub,reedj001,"Jeff Reed",1,9,11
+play,9,1,reedj001,22,BBSSX,S7.2-H
+data,er,millk004,0
+data,er,remlm001,1
+data,er,ligtk001,3
+data,er,rivel002,0
+data,er,liebj001,3
+data,er,guthm001,0

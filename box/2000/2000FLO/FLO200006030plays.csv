@@ -1,0 +1,69 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,10,1,stews002,,,,0,2,BX,dempr002,0,0,stews002 singles. ,stews002,0,
+,21,1,stews002,,,,1,6,BBCX,dempr002,1,0,,grebc001,0,F
+,01,1,,stews002,,mondr002,2,8,CB,dempr002,0,0,stews002 steals 2B. ,mondr002,0,
+,11,1,,stews002,,,3,11,CBX,dempr002,1,0,mondr002 grounds out. ,mondr002,0,G
+,12,1,,stews002,,,4,15,CBFS,dempr002,1,0,delgc001 strikes out. ,delgc001,0,
+,11,1,castl001,,,,5,3,BCX,carpc002,0,0,castl001 singles. ,castl001,1,G
+,10,1,,,,,6,5,BX,carpc002,2,0,Double Play. ,kotsm001,1,
+,31,1,floyc001,,,,7,10,BBBCB,carpc002,0,0,floyc001 walks. ,floyc001,1,
+,22,1,floyc001,,,,8,15,BCBSX,carpc002,1,0,wilsp002 grounds out. ,wilsp002,1,G
+,21,2,,,,,9,19,BFBX,dempr002,1,0,,fletd001,0,F
+,20,2,,,,,10,22,BBX,dempr002,0,1,cruzj004 homers. ,cruzj004,0,
+,22,2,,,,,11,27,FBCBX,dempr002,1,0,,gonza001,0,F
+,00,2,woodc001,,,,12,28,X,dempr002,0,0,woodc001 reaches on error. ,woodc001,0,
+,02,2,woodc001,,,,13,31,SSS,dempr002,1,0,carpc002 strikes out. ,carpc002,0,
+,12,2,,,,,14,19,CBCX,carpc002,1,0,,lowem001,1,L
+,00,2,,,,,15,20,X,carpc002,1,0,,millk005,1,F
+,22,2,,,,,16,25,BCCBX,carpc002,1,0,,bergd002,1,F
+,12,3,,,,,17,35,CFBX,dempr002,1,0,stews002 grounds out. ,stews002,0,G
+,12,3,,,,,18,39,CFBC,dempr002,1,0,grebc001 strikes out. ,grebc001,0,
+,31,3,,,,,19,44,SBBBX,dempr002,1,0,,mondr002,0,F
+,02,3,,,,,20,28,CCX,carpc002,1,0,redmm001 grounds out. ,redmm001,1,G
+,12,3,,,,,21,33,FBSFX,carpc002,1,0,,dempr002,1,
+,21,3,castl001,,,,22,37,BBCX,carpc002,0,0,castl001 singles. ,castl001,1,
+,12,3,castl001,,,,23,41,BCFS,carpc002,1,0,kotsm001 strikes out. ,kotsm001,1,
+,00,4,,,,,24,45,X,dempr002,1,0,,delgc001,0,F
+,11,4,,,,,25,48,CBX,dempr002,1,0,,fletd001,0,F
+,21,4,cruzj004,,,,26,52,BCBX,dempr002,0,0,cruzj004 singles. ,cruzj004,0,
+,12,4,cruzj004,,,,27,56,BFFS,dempr002,1,0,gonza001 strikes out. ,gonza001,0,
+,21,4,,,,,28,45,BBCX,carpc002,1,0,,floyc001,1,F
+,01,4,,,,,29,47,FX,carpc002,1,0,,wilsp002,1,L
+,12,4,,,,,30,51,BCFC,carpc002,1,0,lowem001 strikes out. ,lowem001,1,
+,22,5,,,,,31,62,BFBSFX,dempr002,1,0,,woodc001,0,F
+,11,5,,,,,32,65,SBX,dempr002,1,0,carpc002 grounds out. ,carpc002,0,G
+,32,5,,,,,33,71,SBCBBC,dempr002,1,0,stews002 strikes out. ,stews002,0,
+,32,5,millk005,,,,34,58,BBSBFFB,carpc002,0,0,millk005 walks. ,millk005,1,
+millk005 to 2B. ,32,5,bergd002,millk005,,,35,65,BBCFBFB,carpc002,0,0,bergd002 walks. ,bergd002,1,
+millk005 to 3B. bergd002 to 2B. ,10,5,redmm001,bergd002,millk005,,36,67,BX,carpc002,0,0,redmm001 singles. ,redmm001,1,
+bergd002 to 3B. redmm001 to 2B. millk005 out. ,11,5,dempr002,redmm001,bergd002,,37,70,BFX,carpc002,1,0,dempr002 reaches on fielder's choice. ,dempr002,1,
+redmm001 to 3B. dempr002 to 2B. bergd002 out. ,12,5,castl001,dempr002,redmm001,,38,74,BFFX,carpc002,1,0,castl001 reaches on fielder's choice. ,castl001,1,
+castl001 out. ,12,5,kotsm001,dempr002,redmm001,,39,79,FCBFX,carpc002,1,0,kotsm001 reaches on fielder's choice. ,kotsm001,1,
+,22,6,,grebc001,,,40,79,BBCFFFFX,dempr002,0,0,grebc001 doubles. ,grebc001,0,
+,10,6,,grebc001,,,41,81,BX,dempr002,1,0,,mondr002,0,P
+grebc001 to 3B. ,10,6,,,grebc001,,42,83,BX,dempr002,1,0,delgc001 grounds out. ,delgc001,0,G
+,22,6,,,grebc001,,43,88,BBCFX,dempr002,1,0,,fletd001,0,P
+,32,6,,,,,44,86,BFBCFBX,carpc002,1,0,floyc001 grounds out. ,floyc001,1,G
+,31,6,wilsp002,,,,45,91,CBBBX,carpc002,0,0,wilsp002 singles. ,wilsp002,1,
+,10,6,wilsp002,,,,46,93,BX,carpc002,1,0,,lowem001,1,F
+wilsp002 to 2B. ,32,6,millk005,wilsp002,,,47,100,BBBCFFB,carpc002,0,0,millk005 walks. ,millk005,1,
+wilsp002 to 3B. millk005 out. ,11,6,bergd002,,wilsp002,,48,103,BCX,carpc002,1,0,bergd002 reaches on fielder's choice. ,bergd002,1,
+,00,7,,,,,49,89,X,dempr002,1,0,cruzj004 grounds out. ,cruzj004,0,G
+,12,7,,,,,50,93,BCFX,dempr002,1,0,gonza001 grounds out. ,gonza001,0,G
+,10,7,,,,,51,95,BX,dempr002,1,0,,woodc001,0,P
+,32,7,,,,,52,109,CBBFBX,carpc002,1,0,,redmm001,1,F
+,12,7,,,,,54,113,SSBS,carpc002,1,0,browb003 strikes out. ,browb003,1,
+,11,7,,castl001,,,55,116,CBX,carpc002,0,0,castl001 doubles. ,castl001,1,
+,22,7,,castl001,,,56,121,FBFBX,carpc002,1,0,,kotsm001,1,F
+,00,8,,,,,59,1,X,loopb001,1,0,greet003 grounds out. ,greet003,0,G
+,11,8,,,,,60,4,BFX,loopb001,1,0,,stews002,0,P
+,11,8,,,,,61,7,CBX,loopb001,1,0,grebc001 grounds out. ,grebc001,0,G
+,00,8,,,,,63,1,X,kochb001,1,0,,floyc001,1,F
+,12,8,,,,,64,6,CSBFC,kochb001,1,0,wilsp002 strikes out. ,wilsp002,1,
+,31,8,,,,,65,11,SBBBX,kochb001,0,1,lowem001 homers. ,lowem001,1,
+,00,8,,,,,66,12,X,kochb001,0,1,millk005 homers. ,millk005,1,
+,02,8,,,,,67,15,CCC,kochb001,1,0,bergd002 strikes out. ,bergd002,1,
+,32,9,,,,,70,6,BBSSBS,alfoa001,1,0,mondr002 strikes out. ,mondr002,0,
+,00,9,,,,,71,7,X,alfoa001,1,0,,delgc001,0,F
+,32,9,fletd001,,,,72,14,CBBBSFX,alfoa001,0,0,fletd001 singles. ,fletd001,0,
+,02,9,wised001,,,,74,17,FCS,alfoa001,1,0,cruzj004 strikes out. ,cruzj004,0,

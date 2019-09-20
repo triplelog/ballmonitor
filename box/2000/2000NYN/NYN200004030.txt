@@ -1,0 +1,123 @@
+version,2
+info,visteam,SDN
+info,hometeam,NYN
+info,site,NYC17
+info,date,2000/04/03
+info,number,0
+info,starttime,1:10PM
+info,daynight,day
+info,usedh,false
+info,umphome,hirsm901
+info,ump1b,bellw901
+info,ump2b,onorb901
+info,ump3b,iassd901
+info,pitches,pitches
+info,temp,61
+info,winddir,rtol
+info,windspeed,4
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,144
+info,attendance,52308
+info,wp,leita001
+info,lp,walld002
+info,save,benia001
+start,marta001,"Al Martin",0,1,7
+start,jackd003,"Damian Jackson",0,2,6
+start,gwynt001,"Tony Gwynn",0,3,9
+start,nevip001,"Phil Nevin",0,4,5
+start,klesr001,"Ryan Klesko",0,5,3
+start,boonb002,"Bret Boone",0,6,4
+start,river002,"Ruben Rivera",0,7,8
+start,hernc001,"Carlos A. Hernandez",0,8,2
+start,hitcs001,"Sterling Hitchcock",0,9,1
+start,hendr001,"Rickey Henderson",1,1,7
+start,belld001,"Derek Bell",1,2,9
+start,alfoe001,"Edgardo Alfonzo",1,3,4
+start,piazm001,"Mike Piazza",1,4,2
+start,zeilt001,"Todd Zeile",1,5,3
+start,ventr001,"Robin Ventura",1,6,5
+start,moram002,"Melvin Mora",1,7,8
+start,ordor001,"Rey Ordonez",1,8,6
+start,leita001,"Al Leiter",1,9,1
+play,1,0,marta001,32,CCBBBX,7/F7S
+play,1,0,jackd003,22,CFBFBC,K/C
+play,1,0,gwynt001,01,FX,7/L7
+play,1,1,hendr001,22,BCCFBC,K/C
+play,1,1,belld001,31,CBBBB,W
+play,1,1,alfoe001,11,CBX,6/P6
+play,1,1,piazm001,10,BX,9/F9D
+play,2,0,nevip001,20,BBX,HR/78
+play,2,0,klesr001,21,BBFX,3/G
+play,2,0,boonb002,01,CX,6/P6
+play,2,0,river002,11,BFX,E4/G
+play,2,0,hernc001,00,X,53/G
+play,2,1,zeilt001,12,CFBX,D7
+play,2,1,ventr001,10,BX,8/L8
+play,2,1,moram002,12,CCBX,8/F8S
+play,2,1,ordor001,22,CBBFX,8/F8
+play,3,0,hitcs001,22,BCFBX,43/G
+play,3,0,marta001,02,SFS,K
+play,3,0,jackd003,21,BFBX,7/L7
+play,3,1,leita001,22,BCBSFS,K
+play,3,1,hendr001,32,CBBFBX,53/G
+play,3,1,belld001,21,BCBX,6/L6
+play,4,0,gwynt001,00,H,HP
+play,4,0,nevip001,11,CBX,S7.1-2
+play,4,0,klesr001,12,BCSS,K
+play,4,0,boonb002,32,BBBCFX,7/F7
+play,4,0,river002,00,X,63/G
+play,4,1,alfoe001,21,BCBX,9/F9
+play,4,1,piazm001,32,BCBBCS,K
+play,4,1,zeilt001,32,CBBCBS,K
+play,5,0,hernc001,01,CX,S7/7S
+play,5,0,hitcs001,02,CSFX,13/SH.1-2
+play,5,0,marta001,21,BFBX,43/G.2-3
+play,5,0,jackd003,02,CFS,K
+play,5,1,ventr001,11,BFX,S8/8S
+play,5,1,moram002,32,BCCFFBBX,64(1)3/GDP
+play,5,1,ordor001,00,X,63/G
+play,6,0,gwynt001,00,X,6/P6
+play,6,0,nevip001,10,BX,S/78
+play,6,0,klesr001,22,FBFBFFX,7/F7S
+play,6,0,boonb002,22,FFBBFS,K
+play,6,1,leita001,21,BCBX,8/F8S
+play,6,1,hendr001,10,BX,53/G
+play,6,1,belld001,20,BBX,63/G
+play,7,0,river002,10,BX,53/G
+play,7,0,hernc001,30,BBBX,S7/7S
+play,7,0,hitcs001,10,BB,CS2(26)
+play,7,0,hitcs001,22,BBCFFFC,K/C
+play,7,1,alfoe001,31,BBFBB,W
+play,7,1,piazm001,10,BX,S/78.1-3
+play,7,1,zeilt001,21,CBBX,9/SF.3-H
+play,7,1,ventr001,12,FCBFH,HP.1-2
+play,7,1,moram002,00,,NP
+sub,hamid001,"Darryl Hamilton",1,7,11
+play,7,1,hamid001,00,,NP
+sub,walld002,"Donne Wall",0,9,1
+play,7,1,hamid001,02,SCS,K
+play,7,1,ordor001,32,BBFBCS,K
+play,8,0,marta001,00,,NP
+sub,hamid001,"Darryl Hamilton",1,7,8
+play,8,0,marta001,00,X,5/FL
+play,8,0,jackd003,12,CFBS,K
+play,8,0,gwynt001,02,CFX,8/L8
+play,8,1,leita001,00,,NP
+sub,nunnj001,"Jon Nunnally",1,9,11
+play,8,1,nunnj001,12,BCSX,6/P6
+play,8,1,hendr001,32,FBBCBFFC,K/C
+play,8,1,belld001,00,X,HR/7
+play,8,1,alfoe001,01,FX,7/F7
+play,9,0,nevip001,00,,NP
+sub,nunnj001,"Jon Nunnally",1,9,7
+play,9,0,nevip001,00,,NP
+sub,benia001,"Armando Benitez",1,1,1
+play,9,0,nevip001,00,X,3/P3
+play,9,0,klesr001,22,BBFFC,K/C
+play,9,0,boonb002,00,X,63/G
+data,er,hitcs001,1
+data,er,walld002,1
+data,er,leita001,1
+data,er,benia001,0

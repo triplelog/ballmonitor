@@ -1,0 +1,151 @@
+version,2
+info,visteam,BAL
+info,hometeam,TEX
+info,site,ARL02
+info,date,2000/09/12
+info,number,2
+info,starttime,9:35PM
+info,daynight,night
+info,usedh,true
+info,umphome,marqa901
+info,ump1b,lampi901
+info,ump2b,brinj901
+info,ump3b,nelsj901
+info,pitches,pitches
+info,temp,76
+info,winddir,ltor
+info,windspeed,3
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,146
+info,attendance,24221
+info,wp,rogek001
+info,lp,spurj001
+info,save,wettj001
+start,andeb001,"Brady Anderson",0,1,10
+start,moram002,"Melvin Mora",0,2,6
+start,deshd001,"Delino DeShields",0,3,7
+start,fordb001,"Brook Fordyce",0,4,2
+start,lewim001,"Mark Lewis",0,5,5
+start,hairj002,"Jerry Hairston",0,6,4
+start,minor001,"Ryan Minor",0,7,3
+start,matol001,"Luis Matos",0,8,9
+start,kingg001,"Eugene Kingsale",0,9,8
+start,spurj001,"Jay Spurgeon",0,0,1
+start,alicl001,"Luis Alicea",1,1,4
+start,cataf001,"Frank Catalanotto",1,2,3
+start,greer001,"Rusty Greer",1,3,7
+start,palmr001,"Rafael Palmeiro",1,4,10
+start,leder001,"Ricky Ledee",1,5,8
+start,valdp001,"Pedro Valdes",1,6,9
+start,lambm001,"Mike Lamb",1,7,5
+start,knorr001,"Randy Knorr",1,8,2
+start,drank001,"Kelly Dransfeldt",1,9,6
+start,rogek001,"Kenny Rogers",1,0,1
+play,1,0,andeb001,32,FFBBFBS,K
+play,1,0,moram002,10,BX,E1/G
+play,1,0,deshd001,10,B1,POCS2(13)
+play,1,0,deshd001,22,B1CBSX,7/F7S
+play,1,1,alicl001,31,CBBBX,9/F9D
+play,1,1,cataf001,22,BCBFS,K
+play,1,1,greer001,31,BBBCB,W
+play,1,1,palmr001,30,BBBB,W.1-2
+play,1,1,leder001,00,X,S7.2-H;1-2
+play,1,1,valdp001,01,FX,HR/89.2-H;1-H
+play,1,1,lambm001,31,BFBBX,9/L9
+play,2,0,fordb001,00,X,S7
+play,2,0,lewim001,12,FFBC,K/C
+play,2,0,hairj002,11,BSX,64(1)/FO.B-2(E4/TH1)
+play,2,0,minor001,31,BFBBX,3/G
+play,2,1,knorr001,00,X,53/G
+play,2,1,drank001,00,X,63/G
+play,2,1,alicl001,10,BX,43/G
+play,3,0,matol001,02,FSX,43/G
+play,3,0,kingg001,10,BX,S/78
+play,3,0,andeb001,01,CX,D7.1-3
+play,3,0,moram002,20,BBX,4/P4
+play,3,0,deshd001,10,BX,S9.3-H;2-H
+play,3,0,fordb001,00,H,HP.1-2
+play,3,0,lewim001,01,CX,6/L6
+play,3,1,cataf001,30,BBBB,W
+play,3,1,greer001,32,CBSBBX,43/G.1-2
+play,3,1,palmr001,11,BCX,4/P4
+play,3,1,leder001,00,X,S9/9S.2-H;BX2(9364)
+play,4,0,hairj002,21,CBBX,1/L1
+play,4,0,minor001,12,BSCX,53/G
+play,4,0,matol001,21,BCBX,S8/8S
+play,4,0,kingg001,02,CCC,K/C
+play,4,1,valdp001,01,CX,7/F7
+play,4,1,lambm001,21,BSBX,E1/G
+play,4,1,knorr001,11,CBB,WP.1-2
+play,4,1,knorr001,22,CBBFX,4/P4
+play,4,1,drank001,22,CBCBX,2/FL
+play,5,0,andeb001,32,BCBCBB,W
+play,5,0,moram002,11,LBX,16(1)3/GDP
+play,5,0,deshd001,12,BSCFS,K
+play,5,1,alicl001,12,CSBX,HR/9
+play,5,1,cataf001,32,SBSFBFBB,W
+play,5,1,greer001,31,BBCBB,W.1-2
+play,5,1,palmr001,00,,NP
+sub,mcelc001,"Chuck McElroy",0,0,1
+play,5,1,palmr001,10,BX,8/F8
+play,5,1,leder001,12,CBSX,46(1)3/GDP
+play,6,0,fordb001,00,X,7/F7D
+play,6,0,lewim001,22,BBFSS,K
+play,6,0,hairj002,21,BBFX,8/F8
+play,6,1,valdp001,00,X,7/F7
+play,6,1,lambm001,10,BX,63/G
+play,6,1,knorr001,02,FFX,43/G
+play,7,0,minor001,00,X,9/F9
+play,7,0,matol001,31,CBBBX,8/F8
+play,7,0,kingg001,02,CFS,K
+play,7,1,drank001,00,,NP
+sub,ryanb001,"B.J. Ryan",0,0,1
+play,7,1,drank001,10,BX,7/F7
+play,7,1,alicl001,21,BBFX,43/G
+play,7,1,cataf001,21,BCBX,6/P6
+play,8,0,andeb001,01,CX,D9
+play,8,0,moram002,32,BCCBBX,S7/7S.2-3
+play,8,0,deshd001,00,,NP
+sub,zimmj001,"Jeff Zimmerman",1,0,1
+play,8,0,deshd001,20,BBX,7/SF.3-H;1-2
+play,8,0,fordb001,12,BCFC,K/C
+play,8,0,lewim001,12,CFBS,K
+play,8,1,greer001,00,,NP
+sub,groob001,"Buddy Groom",0,0,1
+play,8,1,greer001,12,BCSS,K
+play,8,1,palmr001,11,CBX,S8/8S
+play,8,1,leder001,12,CBFS,K
+play,8,1,valdp001,00,,NP
+sub,kaplg001,"Gabe Kapler",1,6,11
+play,8,1,kaplg001,10,BX,64(1)/FO
+play,9,0,hairj002,00,,NP
+sub,leder001,"Ricky Ledee",1,5,7
+play,9,0,hairj002,00,,NP
+sub,kaplg001,"Gabe Kapler",1,6,9
+play,9,0,hairj002,00,,NP
+sub,grees002,"Scarborough Green",1,3,8
+play,9,0,hairj002,00,,NP
+sub,wettj001,"John Wetteland",1,0,1
+play,9,0,hairj002,32,BCFFBFFBB,W
+play,9,0,minor001,00,,NP
+sub,richc001,"Chris Richard",0,7,11
+play,9,0,richc001,31,BCBBB,W.1-2
+play,9,0,matol001,00,,NP
+sub,garck002,"Karim Garcia",0,8,11
+play,9,0,garck002,02,SSFX,43/G.2-3;1-2
+play,9,0,kingg001,00,,NP
+sub,myerg001,"Greg Myers",0,9,11
+play,9,0,myerg001,21,BBSX,D/78.3-H;2-H
+play,9,0,andeb001,00,,NP
+sub,hubbt001,"Trenidad Hubbard",0,9,12
+play,9,0,andeb001,11,CBX,53/G
+play,9,0,moram002,22,BCFBFS,K
+data,er,spurj001,6
+data,er,mcelc001,0
+data,er,ryanb001,0
+data,er,groob001,0
+data,er,rogek001,3
+data,er,zimmj001,0
+data,er,wettj001,2

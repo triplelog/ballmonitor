@@ -1,0 +1,133 @@
+version,2
+info,visteam,NYA
+info,hometeam,SEA
+info,date,2000/10/14
+info,site,SEA03
+info,number,0
+info,starttime,0:00PM
+info,daynight,night
+info,usedh,true
+info,umphome,bellw901
+info,ump1b,davig901
+info,ump2b,hirsj901
+info,ump3b,herna901
+info,umplf,culbf901
+info,umprf,hirsm901
+info,inputter,"DWS"
+info,howscored,park
+info,pitches,pitches
+info,temp,56
+info,winddir,rtol
+info,windspeed,3
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,179
+info,attendance,47803
+info,wp,clemr001
+info,lp,abbop001
+info,save,
+start,knobc001,"Chuck Knoblauch",0,1,10
+start,jeted001,"Derek Jeter",0,2,6
+start,justd001,"David Justice",0,3,7
+start,willb002,"Bernie Williams",0,4,8
+start,martt002,"Tino Martinez",0,5,3
+start,posaj001,"Jorge Posada",0,6,2
+start,oneip001,"Paul O'Neill",0,7,9
+start,sojol001,"Luis Sojo",0,8,4
+start,bross001,"Scott Brosius",0,9,5
+start,clemr001,"Roger Clemens",0,0,1
+start,javis001,"Stan Javier",1,1,9
+start,marta001,"Al Martin",1,2,7
+start,rodra001,"Alex Rodriguez",1,3,6
+start,marte001,"Edgar Martinez",1,4,10
+start,olerj001,"John Olerud",1,5,3
+start,camem001,"Mike Cameron",1,6,8
+start,guilc001,"Carlos Guillen",1,7,5
+start,belld002,"David Bell",1,8,4
+start,wilsd001,"Dan Wilson",1,9,2
+start,abbop001,"Paul Abbott",1,0,1
+play,1,0,knobc001,22,CFBFFBFFS,K
+play,1,0,jeted001,11,BFX,4/L4
+play,1,0,justd001,30,BBBB,W
+play,1,0,willb002,22,CCBBFX,43/G
+play,1,1,javis001,22,BBCCFFS,K
+play,1,1,marta001,12,BFSS,K
+play,1,1,rodra001,32,BBBFFB,W
+play,1,1,marte001,00,X,3/FL
+play,2,0,martt002,22,BFBCS,K
+play,2,0,posaj001,31,BBBCB,W
+play,2,0,oneip001,31,BBBCX,S7/7S.1-3
+play,2,0,sojol001,01,FX,6/P6
+play,2,0,bross001,20,BBX,7/F7S
+play,2,1,olerj001,32,BCBFBX,4/L4
+play,2,1,camem001,22,BBFSX,9/F9S
+play,2,1,guilc001,22,BSBFC,K/C
+play,3,0,knobc001,10,BX,8/F8
+play,3,0,jeted001,22,CBFBX,53/G
+play,3,0,justd001,10,BX,8/F8
+play,3,1,belld002,22,BBCFX,63/G
+play,3,1,wilsd001,12,BFSS,K
+play,3,1,javis001,32,BCBBFX,7/F7
+play,4,0,willb002,10,BX,9/F9D
+play,4,0,martt002,00,X,7/F7
+play,4,0,posaj001,22,CBBFFX,4/P4
+play,4,1,marta001,12,SFBX,3/G#
+play,4,1,rodra001,12,CSBS,K
+play,4,1,marte001,20,BBX,63/G
+play,5,0,oneip001,12,CBFFS,K
+play,5,0,sojol001,11,CBX,8/F78XD
+play,5,0,bross001,01,CX,S9
+play,5,0,knobc001,31,BBBCB,W.1-2
+play,5,0,jeted001,10,BX,HR/8.2-H;1-H
+play,5,0,justd001,11,BCX,13/G
+play,5,1,olerj001,01,FX,31/G3
+play,5,1,camem001,22,CBBCFS,K
+play,5,1,guilc001,32,SBFBBX,5/P15
+play,6,0,willb002,00,,NP
+sub,ramsr001,"Robert Ramsay",1,0,1
+play,6,0,willb002,10,BX,S9/L89S
+play,6,0,martt002,02,CFS,K
+play,6,0,posaj001,11,CBB,SB2
+play,6,0,posaj001,21,CBBX,8/F8
+play,6,0,oneip001,10,BX,7/F7S
+play,6,1,belld002,32,BCFFBFFBFX,6/P6
+play,6,1,wilsd001,12,BFSS,K
+play,6,1,javis001,12,BCSC,K/C
+play,7,0,sojol001,00,,NP
+sub,mesaj001,"Jose Mesa",1,0,1
+play,7,0,sojol001,21,FBBX,9/L9
+play,7,0,bross001,00,X,43/G
+play,7,0,knobc001,12,BSCX,7/F7
+play,7,1,marta001,10,BX,D9/L3D
+play,7,1,rodra001,12,BCCS,K
+play,7,1,marte001,02,FSC,K/C
+play,7,1,olerj001,32,BFSBBB,W
+play,7,1,camem001,32,FCBBBC,K/C
+play,8,0,jeted001,32,BBCFFBB,W
+play,8,0,justd001,01,CX,HR/8.1-H
+play,8,0,willb002,12,CCFBX,53/G
+play,8,0,martt002,21,BCBX,7/F7
+play,8,0,posaj001,12,CBCX,6/L6
+play,8,1,guilc001,00,,NP
+sub,bellc001,"Clay Bellinger",0,3,7
+play,8,1,guilc001,32,BBCBCS,K
+play,8,1,belld002,11,SBX,7/F7
+play,8,1,wilsd001,00,,NP
+sub,ibanr001,"Raul Ibanez",1,9,11
+play,8,1,ibanr001,12,CSBS,K
+play,9,0,oneip001,00,,NP
+sub,olivj001,"Joe Oliver",1,9,2
+play,9,0,oneip001,00,,NP
+sub,panij001,"Jose Paniagua",1,0,1
+play,9,0,oneip001,11,BCX,6/P6
+play,9,0,sojol001,22,BFSFBX,7/F7
+play,9,0,bross001,11,BFX,8/F8
+play,9,1,javis001,02,FFS,K
+play,9,1,marta001,22,FCBFFBS,K
+play,9,1,rodra001,10,BX,63/G
+data,er,clemr001,0
+data,er,abbop001,3
+data,er,ramsr001,0
+data,er,mesaj001,2
+data,er,panij001,0

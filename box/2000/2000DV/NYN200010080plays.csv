@@ -1,0 +1,69 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,12,1,,,,,0,4,FFBX,joneb003,1,0,,benam001,0,F
+,32,1,,,,,1,10,BBCBCX,joneb003,1,0,muelb001 grounds out. ,muelb001,0,G
+,22,1,,,,,2,15,BCBFS,joneb003,1,0,bondb001 strikes out. ,bondb001,0,
+,02,1,,,,,3,4,CFFC,gardm001,1,0,peret004 strikes out. ,peret004,1,
+,01,1,,,,,4,6,CX,gardm001,1,0,,alfoe001,1,F
+,32,1,piazm001,,,,5,12,CFBBBB,gardm001,0,0,piazm001 walks. ,piazm001,1,
+piazm001 scores. ,00,1,,,,,6,13,X,gardm001,0,2,ventr001 homers. ,ventr001,1,
+,10,1,,,,,7,15,BX,gardm001,1,0,,agbab001,1,
+,01,2,,,,,8,17,CX,joneb003,1,0,kentj001 grounds out. ,kentj001,0,G
+,32,2,,,,,9,23,BFBBFX,joneb003,1,0,burke001 grounds out. ,burke001,0,G
+,31,2,,,,,10,28,CBBBX,joneb003,1,0,,snowj001,0,L
+,11,2,,,,,11,18,CBX,gardm001,1,0,paytj001 grounds out. ,paytj001,1,G
+,00,2,,,,,12,19,X,gardm001,1,0,zeilt001 grounds out. ,zeilt001,1,G
+,20,2,,,,,13,22,BBX,gardm001,1,0,bordm001 grounds out. ,bordm001,1,G
+,22,3,,,,,14,34,BFBFFX,joneb003,1,0,,aurir001,0,P
+,12,3,,,,,15,38,CBCC,joneb003,1,0,mirad001 strikes out. ,mirad001,0,
+,12,3,,,,,16,42,FBCS,joneb003,1,0,gardm001 strikes out. ,gardm001,0,
+,12,3,,,,,17,26,BCSC,gardm001,1,0,joneb003 strikes out. ,joneb003,1,
+,00,3,,,,,18,27,X,gardm001,1,0,,peret004,1,
+,12,3,,,,,19,31,CSBS,gardm001,1,0,alfoe001 strikes out. ,alfoe001,1,
+,00,4,,,,,20,43,X,joneb003,1,0,,benam001,0,G
+,32,4,,,,,21,50,BCBBCFX,joneb003,1,0,,muelb001,0,G
+,22,4,,,,,22,55,BSBCC,joneb003,1,0,bondb001 strikes out. ,bondb001,0,
+,12,4,,,,,23,35,CSBX,gardm001,1,0,,piazm001,1,F
+,30,4,ventr001,,,,24,39,BBBB,gardm001,0,0,ventr001 walks. ,ventr001,1,
+ventr001 to 2B. ,12,4,agbab001,ventr001,,,25,43,CFBX,gardm001,0,0,agbab001 singles. ,agbab001,1,
+,22,4,agbab001,ventr001,,,26,49,CBSFBC,gardm001,1,0,paytj001 strikes out. ,paytj001,1,
+,01,4,agbab001,ventr001,,,27,51,CX,gardm001,1,0,,zeilt001,1,G
+,12,5,,kentj001,,,28,59,BFFX,joneb003,0,0,kentj001 doubles. ,kentj001,0,
+kentj001 to 3B. ,01,5,,,kentj001,,29,61,CX,joneb003,1,0,,burke001,0,F
+,31,5,snowj001,,kentj001,,30,66,BBBCB,joneb003,0,0,snowj001 walks. ,snowj001,0,
+,12,5,snowj001,,kentj001,,31,71,SCBFX,joneb003,1,0,,aurir001,0,F
+snowj001 to 2B. ,31,5,mirad001,snowj001,kentj001,,32,76,BBBCB,joneb003,0,0,mirad001 walks. ,mirad001,0,
+,11,5,mirad001,snowj001,kentj001,,33,79,SBX,joneb003,1,0,,gardm001,0,P
+,01,5,,,,,34,53,CX,gardm001,1,0,,bordm001,1,G
+joneb003 to 1B. ,02,5,joneb003,,,,35,57,SFFS,gardm001,0,0,joneb003 strikes out. Wild Pitch. ,joneb003,1,
+joneb003 to 3B. ,32,5,,peret004,joneb003,,36,63,BBBCCX,gardm001,0,0,peret004 doubles. ,peret004,1,
+joneb003 scores. peret004 scores. ,32,5,,alfoe001,,,37,71,BBFFBFFX,gardm001,0,2,alfoe001 doubles. ,alfoe001,1,
+,11,5,,alfoe001,,,39,3,BFX,henrd002,1,0,,piazm001,1,F
+,30,5,ventr001,alfoe001,,,40,7,IIII,henrd002,0,0,ventr001 intentionally walks. ,ventr001,1,
+,02,5,ventr001,alfoe001,,,41,10,CSX,henrd002,1,0,,agbab001,1,L
+,02,6,,,,,42,82,CSC,joneb003,1,0,benam001 strikes out. ,benam001,0,
+,11,6,,,,,43,85,CBX,joneb003,1,0,,muelb001,0,F
+,22,6,,,,,44,91,CFBFBX,joneb003,1,0,,bondb001,0,F
+,00,6,paytj001,,,,45,11,X,henrd002,0,0,paytj001 singles. ,paytj001,1,
+,12,6,,,,zeilt001,46,18,SFBFFFP,henrd002,1,0,paytj001 caught stealing. ,zeilt001,1,
+,32,6,zeilt001,,,,47,27,SFBFFFPBB,henrd002,0,0,zeilt001 walks. ,zeilt001,1,
+,32,6,zeilt001,,,,48,35,BCBFBFFX,henrd002,1,0,,bordm001,1,F
+,32,6,zeilt001,,,,49,41,BBCBCX,henrd002,1,0,joneb003 grounds out. ,joneb003,1,G
+,00,7,,,,,50,92,X,joneb003,1,0,kentj001 grounds out. ,kentj001,0,G
+,22,7,,,,,51,97,FBBSX,joneb003,1,0,,burke001,0,F
+,01,7,,,,,52,99,CX,joneb003,1,0,snowj001 grounds out. ,snowj001,0,G
+,00,7,peret004,,,,54,1,X,embra001,0,0,peret004 reaches on error. ,peret004,1,
+,00,7,peret004,,,,55,2,X,embra001,1,0,,alfoe001,1,F
+,11,7,peret004,,,,56,5,BFX,embra001,1,0,,piazm001,1,L
+,00,7,,peret004,,ventr001,57,6,B,embra001,0,0,peret004 steals 2B. ,ventr001,1,
+,20,7,,peret004,,,58,9,BBX,embra001,1,0,ventr001 grounds out. ,ventr001,1,G
+,11,8,,,,,59,102,BCX,joneb003,1,0,,aurir001,0,F
+,10,8,,,,,61,104,BX,joneb003,1,0,,cresf001,0,F
+,22,8,,,,,63,109,BBFFX,joneb003,1,0,,davir002,0,P
+,11,8,,agbab001,,,66,3,CBX,deltm001,0,0,agbab001 doubles. ,agbab001,1,
+,10,8,,mcewj001,,,68,5,BX,deltm001,1,0,,paytj001,1,F
+,12,8,,mcewj001,,,69,9,CBCS,deltm001,1,0,zeilt001 strikes out. ,zeilt001,1,
+,00,8,bordm001,mcewj001,,,70,10,H,deltm001,0,0,bordm001 hit by pitch. ,bordm001,1,
+,12,8,bordm001,mcewj001,,,71,14,FBFS,deltm001,1,0,joneb003 strikes out. ,joneb003,1,
+,22,9,,,,,73,114,CFBBX,joneb003,1,0,benam001 grounds out. ,benam001,0,G
+,00,9,,,,,74,115,X,joneb003,1,0,,muelb001,0,G
+,00,9,,,,,75,116,X,joneb003,1,0,,bondb001,0,L

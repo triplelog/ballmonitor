@@ -1,0 +1,177 @@
+version,2
+info,visteam,PIT
+info,hometeam,MIL
+info,site,MIL05
+info,date,2000/09/21
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,diazl901
+info,ump1b,coope901
+info,ump2b,kellj901
+info,ump3b,reilm901
+info,pitches,pitches
+info,temp,55
+info,winddir,ltor
+info,windspeed,8
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,172
+info,attendance,14688
+info,wp,rigdp001
+info,lp,andej002
+info,save,
+start,browa001,"Adrian Brown",0,1,8
+start,kendj001,"Jason Kendall",0,2,2
+start,gileb002,"Brian Giles",0,3,7
+start,vandj001,"John Vander Wal",0,4,9
+start,younk001,"Kevin Young",0,5,3
+start,morrw001,"Warren Morris",0,6,4
+start,benjm001,"Mike Benjamin",0,7,5
+start,mearp001,"Pat Meares",0,8,6
+start,andej002,"Jimmy Anderson",0,9,1
+start,grism001,"Marquis Grissom",1,1,8
+start,lorem001,"Mark Loretta",1,2,6
+start,jenkg001,"Geoff Jenkins",1,3,7
+start,sexsr001,"Richie Sexson",1,4,3
+start,burnj001,"Jeromy Burnitz",1,5,9
+start,hernj001,"Jose Hernandez",1,6,5
+start,bellr002,"Ron Belliard",1,7,4
+start,browk004,"Kevin L. Brown",1,8,2
+start,rigdp001,"Paul Rigdon",1,9,1
+play,1,0,browa001,22,CFBBS,K
+play,1,0,kendj001,11,CBX,S7
+play,1,0,gileb002,22,CBFBX,S9.1-2
+play,1,0,vandj001,31,BCBBB,W.2-3;1-2
+play,1,0,younk001,20,BBX,7/SF.3-H
+play,1,0,morrw001,11,FBX,7/F7
+play,1,1,grism001,21,CBBX,S7
+play,1,1,lorem001,12,CBCX,46(1)/FO
+play,1,1,jenkg001,10,BX,46(1)3/GDP
+play,2,0,benjm001,22,BCFBX,63/G
+play,2,0,mearp001,32,CBBSBX,63/G
+play,2,0,andej002,02,SFS,K
+play,2,1,sexsr001,22,BSFBX,9/F9
+play,2,1,burnj001,00,X,HR/89
+play,2,1,hernj001,30,BBBB,W
+play,2,1,bellr002,12,CBFX,53/G.1-2
+play,2,1,browk004,01,SX,D9.2-H
+play,2,1,rigdp001,10,BX,63/G
+play,3,0,browa001,00,X,43/G
+play,3,0,kendj001,32,BBBCFFX,63/G
+play,3,0,gileb002,31,BBSBB,W
+play,3,0,vandj001,21,BSBX,6/P6
+play,3,1,grism001,00,X,S8/8S
+play,3,1,lorem001,10,BX,S9.1-3
+play,3,1,jenkg001,11,CBX,D7.3-H;1-3
+play,3,1,sexsr001,21,BBSX,S9/9S.3-H;2-H
+play,3,1,burnj001,01,SX,S.1-2
+play,3,1,hernj001,00,X,9/F9.2-3
+play,3,1,bellr002,00,,NP
+sub,skrmm001,"Matt Skrmetta",0,9,1
+play,3,1,bellr002,01,FS,CS2(24)
+play,3,1,bellr002,12,FSBS,K
+play,4,0,younk001,22,CBBSC,K/C
+play,4,0,morrw001,11,BSX,S7
+play,4,0,benjm001,22,BBSLS,K
+play,4,0,mearp001,32,BFBBFX,S7.1-2
+play,4,0,skrmm001,00,,NP
+sub,herna001,"Alex Hernandez",0,9,11
+play,4,0,herna001,01,FX,9/F9
+play,4,1,browk004,00,,NP
+sub,oconb001,"Brian O'Connor",0,9,1
+play,4,1,browk004,00,X,E4/G
+play,4,1,rigdp001,00,X,FC2/SH.1-2;B-1#
+play,4,1,grism001,30,BBBB,W.2-3;1-2
+play,4,1,lorem001,00,X,64(1)/FO.3-H(UR);2-3
+com,"ej,younk001,P,coope901,Call at 1B"
+com,"Kevin Young ejected by 1B umpire Eric Cooper"
+play,4,1,jenkg001,00,,NP
+sub,vandj001,"John Vander Wal",0,4,3
+play,4,1,jenkg001,00,,NP
+sub,browe001,"Emil Brown",0,5,9
+play,4,1,jenkg001,00,X,5/FL
+play,4,1,sexsr001,12,CBSB,WP.3-H(UR);1-2
+play,4,1,sexsr001,32,CBSBFBB,W
+play,4,1,burnj001,11,CBB,WP.2-3;1-2
+play,4,1,burnj001,32,CBBFBB,W
+play,4,1,hernj001,02,CFX,9/F9D
+play,5,0,browa001,32,BBCBCX,1/L1
+play,5,0,kendj001,02,CSX,9/F9
+play,5,0,gileb002,21,BCBX,13/G
+play,5,1,bellr002,32,BBBCCX,8/F8
+play,5,1,browk004,32,BBFBFX,E5/G
+play,5,1,rigdp001,00,B,WP.1-2
+play,5,1,rigdp001,22,BCBFX,43/G.2-3
+play,5,1,grism001,10,BX,HR/7.3-H(UR);B-H(UR)
+play,5,1,lorem001,11,BCX,S9
+play,5,1,jenkg001,00,,NP
+sub,lopel002,"Luis Lopez",1,2,12
+play,5,1,jenkg001,12,CSBFX,6/P6
+play,6,0,vandj001,00,,NP
+sub,lopel002,"Luis Lopez",1,2,6
+play,6,0,vandj001,12,BCFX,HR/9
+play,6,0,browe001,22,BFCFBX,63/G
+play,6,0,morrw001,22,FBFBFX,8/F8
+play,6,0,benjm001,10,BX,53/G
+play,6,1,sexsr001,01,SX,63/G
+play,6,1,burnj001,02,CFH,HP
+play,6,1,hernj001,31,BFBBX,9/F9S
+play,6,1,bellr002,31,BCBBB,W.1-2
+play,6,1,browk004,32,BBFSBFX,8/F8
+play,7,0,mearp001,00,,NP
+sub,lopel002,"Luis Lopez",1,2,4
+play,7,0,mearp001,00,,NP
+sub,hernj001,"Jose Hernandez",1,6,6
+play,7,0,mearp001,00,,NP
+sub,houst001,"Tyler Houston",1,7,5
+play,7,0,mearp001,11,FBX,63/G
+play,7,0,oconb001,00,,NP
+sub,hyzda001,"Adam Hyzdu",0,9,11
+play,7,0,hyzda001,10,BX,7/F7
+play,7,0,browa001,10,BX,53/G
+play,7,1,rigdp001,00,,NP
+sub,browe001,"Emil Brown",0,5,8
+play,7,1,rigdp001,00,,NP
+sub,osikk001,"Keith Osik",0,2,2
+play,7,1,rigdp001,00,,NP
+sub,hyzda001,"Adam Hyzdu",0,9,9
+play,7,1,rigdp001,00,,NP
+sub,wallj001,"Jeff Wallace",0,1,1
+play,7,1,rigdp001,00,,NP
+sub,echea001,"Angel Echevarria",1,9,11
+play,7,1,echea001,22,BSSBS,K
+play,7,1,grism001,10,BX,S7
+play,7,1,lopel002,11,BSX,S8.1-2
+play,7,1,jenkg001,21,BCBX,HR/8.2-H;1-H
+play,7,1,sexsr001,02,SFX,9/F9D
+play,7,1,burnj001,22,BCCBS,K
+play,8,0,osikk001,00,,NP
+sub,echea001,"Angel Echevarria",1,9,3
+play,8,0,osikk001,00,,NP
+sub,colll001,"Lou Collier",1,3,7
+play,8,0,osikk001,00,,NP
+sub,delov001,"Valerio De Los Santos",1,4,1
+play,8,0,osikk001,31,BBBCB,W
+play,8,0,gileb002,21,BCBX,3/FL
+play,8,0,vandj001,22,CBBFX,46(1)3/GDP
+play,8,1,hernj001,00,,NP
+sub,wehnj001,"John Wehner",0,3,7
+play,8,1,hernj001,10,BX,9/F9D
+play,8,1,houst001,21,BSBX,43/G
+play,8,1,browk004,01,SX,D7
+play,8,1,echea001,32,FBBFBFX,3/P3
+play,9,0,browe001,00,,NP
+sub,buddm001,"Mike Buddie",1,4,1
+play,9,0,browe001,00,X,53/G
+play,9,0,morrw001,12,BCFX,43/G
+play,9,0,benjm001,21,BBCX,4/P4
+data,er,andej002,5
+data,er,skrmm001,0
+data,er,oconb001,0
+data,er,wallj001,3
+data,er,rigdp001,2
+data,er,delov001,0
+data,er,buddm001,0

@@ -1,0 +1,172 @@
+version,2
+info,visteam,NYA
+info,hometeam,TEX
+info,site,ARL02
+info,date,2000/04/17
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,kellj901
+info,ump1b,coope901
+info,ump2b,diazl901
+info,ump3b,reilm901
+info,pitches,pitches
+info,temp,72
+info,winddir,fromlf
+info,windspeed,6
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,232
+info,attendance,38166
+info,wp,rivem002
+info,lp,crabt001
+info,save,erdot001
+start,knobc001,"Chuck Knoblauch",0,1,4
+start,jeted001,"Derek Jeter",0,2,6
+start,oneip001,"Paul O'Neill",0,3,9
+start,willb002,"Bernie Williams",0,4,8
+start,martt002,"Tino Martinez",0,5,3
+start,spens001,"Shane Spencer",0,6,10
+start,posaj001,"Jorge Posada",0,7,2
+start,kellb002,"Roberto Kelly",0,8,7
+start,bellc001,"Clay Bellinger",0,9,5
+start,coned001,"David Cone",0,0,1
+start,clayr001,"Royce Clayton",1,1,6
+start,curtc001,"Chad Curtis",1,2,7
+start,rodri001,"Ivan Rodriguez",1,3,2
+start,palmr001,"Rafael Palmeiro",1,4,3
+start,segud001,"David Segui",1,5,10
+start,mater001,"Ruben Mateo",1,6,8
+start,kaplg001,"Gabe Kapler",1,7,9
+start,alicl001,"Luis Alicea",1,8,4
+start,evant001,"Tom Evans",1,9,5
+start,olivd001,"Darren Oliver",1,0,1
+play,1,0,knobc001,21,BBCX,9/F9
+play,1,0,jeted001,22,CFBBFX,9/L9
+play,1,0,oneip001,01,FX,8/F8S
+play,1,1,clayr001,31,BBBCX,9/F9
+play,1,1,curtc001,00,X,S8
+play,1,1,rodri001,01,S1,PO1(E1).1-2
+play,1,1,rodri001,01,S1X,63/G.2-3
+play,1,1,palmr001,12,BCFX,43/G
+play,2,0,willb002,31,BBFBB,W
+play,2,0,martt002,11,BCS,SB2
+play,2,0,martt002,22,BCSBX,E6/G
+play,2,0,spens001,21,BFBX,7/F7S
+play,2,0,posaj001,00,X,46(1)3/GDP.2-3
+play,2,1,segud001,32,BCBFBX,8/F8D
+play,2,1,mater001,22,BSCBX,8/F8
+play,2,1,kaplg001,22,BCBFC,K/C
+play,3,0,kellb002,22,CBBFFS,K
+play,3,0,bellc001,22,BFFFFBFC,K/C
+play,3,0,knobc001,22,BCFBX,7/F7S
+play,3,1,alicl001,12,BFFS,K
+play,3,1,evant001,20,BBX,D/78
+play,3,1,clayr001,32,BSFFBFBB,W
+play,3,1,curtc001,11,CBX,D/89D.2-H;1-3
+play,3,1,rodri001,00,X,9/F9S
+play,3,1,palmr001,12,CCBH,HP
+play,3,1,segud001,22,BSFBX,S.3-H;2-3;1-2
+play,3,1,mater001,32,BBFSBC,K/C
+play,4,0,jeted001,02,FFC,K/C
+play,4,0,oneip001,20,BBX,43/G
+play,4,0,willb002,22,BBCFX,43/G
+play,4,1,kaplg001,10,BX,8/L8
+play,4,1,alicl001,22,SCBBFX,9/F9
+play,4,1,evant001,32,CBBCFBB,W
+play,4,1,clayr001,01,FB,CS2(24)
+play,5,0,martt002,10,BX,43/G
+play,5,0,spens001,01,FX,13/G
+play,5,0,posaj001,10,BX,63/G
+play,5,1,clayr001,00,X,4/L4
+play,5,1,curtc001,32,BBBCCX,S7/7S
+play,5,1,rodri001,02,FSB,SB2
+play,5,1,rodri001,32,FSBBBX,8(B)4(2)/LDP
+play,6,0,kellb002,10,BX,63/G
+play,6,0,bellc001,11,CBX,63/G
+play,6,0,knobc001,22,CBBCC,K/C
+play,6,1,palmr001,32,CFBBBX,7/F7S
+play,6,1,segud001,11,BCX,3/G#
+play,6,1,mater001,32,CSBBBX,5/FL
+play,7,0,jeted001,00,X,43/G
+play,7,0,oneip001,00,X,S7
+play,7,0,willb002,20,BBX,HR/7.1-H
+play,7,0,martt002,02,CSS,K
+play,7,0,spens001,22,BFFFBFX,9/F9
+play,7,1,kaplg001,32,BCFBFBB,W
+play,7,1,alicl001,00,X,53/SH.1-2#
+play,7,1,evant001,12,BFFB,WP.2-3
+play,7,1,evant001,32,BFFBBX,FC1.3XH(162);B-1
+play,7,1,clayr001,12,CCBX,46(1)/FO
+play,8,0,posaj001,11,CBX,3/P3
+play,8,0,kellb002,01,CX,3/P3
+play,8,0,bellc001,12,FFBC,K/C
+play,8,1,curtc001,00,,NP
+sub,nelsj001,"Jeff Nelson",0,0,1
+play,8,1,curtc001,22,BBCCS,K
+play,8,1,rodri001,22,BSBFS,K
+play,8,1,palmr001,00,,NP
+sub,stanm003,"Mike Stanton",0,0,1
+play,8,1,palmr001,21,BBSX,HR/9
+play,8,1,segud001,32,BBFFBX,7/F7
+play,9,0,knobc001,00,,NP
+sub,wettj001,"John Wetteland",1,0,1
+play,9,0,knobc001,11,BFX,S7
+play,9,0,jeted001,22,BSSBC,K/C
+play,9,0,oneip001,21,BCBX,S8.1-2
+play,9,0,willb002,12,BCFS,K
+play,9,0,martt002,12,BCFFX,S9.2-H;1-3
+play,9,0,spens001,00,,NP
+sub,leder001,"Ricky Ledee",0,6,11
+play,9,0,leder001,00,X,9/F9S
+play,9,1,mater001,00,,NP
+sub,rivem002,"Mariano Rivera",0,0,1
+play,9,1,mater001,32,CBBFBC,K/C
+play,9,1,kaplg001,02,SFX,4/F4
+play,9,1,alicl001,02,CFX,S7
+play,9,1,evant001,00,,NP
+sub,cataf001,"Frank Catalanotto",1,9,11
+play,9,1,cataf001,00,X,13/G
+play,10,0,posaj001,00,,NP
+sub,shels001,"Scott Sheldon",1,9,5
+play,10,0,posaj001,00,,NP
+sub,crabt001,"Tim Crabtree",1,0,1
+play,10,0,posaj001,00,X,HR/8
+play,10,0,kellb002,12,BFFX,8/F8
+play,10,0,bellc001,11,BCX,53/G
+play,10,0,knobc001,10,BX,53/G
+play,10,1,clayr001,12,FBFX,S8
+play,10,1,curtc001,00,X,13/SH.1-2#
+play,10,1,rodri001,32,SSBBFFBFX,S8.2-H
+play,10,1,palmr001,02,FFFFFX,3(B)6(1)/GDP
+play,11,0,jeted001,22,BFFBX,S7/7S
+play,11,0,oneip001,00,,NP
+sub,venam002,"Mike Venafro",1,0,1
+play,11,0,oneip001,32,FBFBFFBB,W.1-2
+play,11,0,willb002,00,X,8/L8.2-3
+play,11,0,martt002,21,BBCX,S9.3-H;1-3
+play,11,0,leder001,32,CBFBBS,K+CSH(25)/DP
+play,11,1,segud001,00,,NP
+sub,watsa001,"Allen Watson",0,0,1
+play,11,1,segud001,00,X,S8
+play,11,1,mater001,00,,NP
+sub,mcdoj002,"Jason McDonald",1,5,12
+play,11,1,mater001,22,BBCSFFX,S7/7S.1-2
+play,11,1,kaplg001,31,BBCBX,FC2/TH3/SH.2-3;1-2;B-1
+play,11,1,alicl001,00,,NP
+sub,erdot001,"Todd Erdos",0,0,1
+play,11,1,alicl001,11,BSX,2(3)2/BG/GDP.2-3;1-2
+com,"odd play, disputed, but this is correct, Alicea not run"
+play,11,1,shels001,00,X,53/G
+data,er,coned001,2
+data,er,nelsj001,0
+data,er,stanm003,1
+data,er,rivem002,1
+data,er,watsa001,0
+data,er,erdot001,0
+data,er,olivd001,2
+data,er,wettj001,1
+data,er,crabt001,2
+data,er,venam002,0

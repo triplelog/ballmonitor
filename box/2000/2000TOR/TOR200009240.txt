@@ -1,0 +1,129 @@
+version,2
+info,visteam,TBA
+info,hometeam,TOR
+info,site,TOR02
+info,date,2000/09/24
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,guccc901
+info,ump1b,davig901
+info,ump2b,emmep901
+info,ump3b,riekr901
+info,pitches,pitches
+info,temp,72
+info,winddir,fromrf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,164
+info,attendance,28172
+info,wp,harpt002
+info,lp,tracs001
+info,save,
+start,tynej001,"Jason Tyner",0,1,8
+start,guilo001,"Ozzie Guillen",0,2,6
+start,cox-s001,"Steve Cox",0,3,3
+start,mcgrf001,"Fred McGriff",0,4,10
+start,timmo001,"Ozzie Timmons",0,5,7
+start,huffa001,"Aubrey Huff",0,6,5
+start,flahj001,"John Flaherty",0,7,2
+start,smitr003,"Bobby Smith",0,8,4
+start,guilj001,"Jose Guillen",0,9,9
+start,harpt002,"Travis Harper",0,0,1
+start,stews002,"Shannon Stewart",1,1,7
+start,gonza001,"Alex S. Gonzalez",1,2,6
+start,martd002,"Dave Martinez",1,3,9
+start,delgc001,"Carlos Delgado",1,4,3
+start,fullb001,"Brad Fullmer",1,5,10
+start,batit001,"Tony Batista",1,6,5
+start,fletd001,"Darrin Fletcher",1,7,2
+start,cruzj004,"Jose Cruz",1,8,8
+start,moram001,"Mickey Morandini",1,9,4
+start,tracs001,"Steve Trachsel",1,0,1
+play,1,0,tynej001,00,X,S5/BG5
+play,1,0,guilo001,10,BS,SB2
+play,1,0,guilo001,12,BSLX,53/G
+play,1,0,cox-s001,22,BSBCC,K/C
+play,1,0,mcgrf001,32,BBBFFB,W
+play,1,0,timmo001,22,CSBBS,K
+play,1,1,stews002,02,CFC,K/C
+play,1,1,gonza001,32,BFBBFX,8/F8D
+play,1,1,martd002,22,BSFBFX,43/G
+play,2,0,huffa001,22,BBFFX,13/G
+play,2,0,flahj001,22,BBFSX,8/F8
+play,2,0,smitr003,01,SX,63/G
+play,2,1,delgc001,32,BCBSBX,43/G
+play,2,1,fullb001,32,BFBBFFX,8/F8
+play,2,1,batit001,10,BX,8/F8
+play,3,0,guilj001,12,CSBX,S8
+play,3,0,tynej001,00,X,13/SH.1-2
+play,3,0,guilo001,11,FBX,9/F9D.2-3
+play,3,0,cox-s001,00,X,7/F7
+play,3,1,fletd001,00,X,S9
+play,3,1,cruzj004,01,SX,8/F8
+play,3,1,moram001,31,CBBBX,7/F7
+play,3,1,stews002,01,FX,13/G
+play,4,0,mcgrf001,30,BBBX,S8
+play,4,0,timmo001,02,FCFFX,64(1)3/GDP
+play,4,0,huffa001,32,BBBFFX,S9
+play,4,0,flahj001,22,SBBFX,8/F8
+play,4,1,gonza001,11,SBX,E4/G
+play,4,1,martd002,22,CBBFFX,5/P5
+play,4,1,delgc001,01,FB,WP.1-2
+play,4,1,delgc001,32,FBFBBB,W
+play,4,1,fullb001,10,BX,8/F8S
+play,4,1,batit001,22,FBBFX,4/P4
+play,5,0,smitr003,21,CBBX,7/F7D
+play,5,0,guilj001,21,CBBX,7/F7D
+play,5,0,tynej001,01,CX,6/L6
+play,5,1,fletd001,32,BBBCSFX,3/G
+play,5,1,cruzj004,22,SBBSX,6/P6
+play,5,1,moram001,00,X,9/F9D
+play,6,0,guilo001,00,X,S9
+play,6,0,cox-s001,22,BSFBX,S9.1-3
+play,6,0,mcgrf001,00,X,S9.3-H;1-3
+play,6,0,timmo001,12,SFBFS,K
+play,6,0,huffa001,00,X,46(1)/FO.3-H
+play,6,0,flahj001,00,X,7/F7S
+play,6,1,stews002,02,CFX,63/G
+play,6,1,gonza001,10,BX,63/G
+play,6,1,martd002,12,BFSFX,5/FL
+play,7,0,smitr003,02,SFS,K
+play,7,0,guilj001,10,BX,D8/8D
+play,7,0,tynej001,32,SBSBBB,W
+play,7,0,guilo001,10,BX,7/F7
+play,7,0,cox-s001,10,BX,8/F8
+play,7,1,delgc001,22,BBFFS,K
+play,7,1,fullb001,11,BFX,63/G
+play,7,1,batit001,32,BFFFBBX,D/78
+play,7,1,fletd001,02,FCX,43/G
+play,8,0,mcgrf001,00,,NP
+sub,escok001,"Kelvim Escobar",1,0,1
+play,8,0,mcgrf001,11,FBX,S9
+play,8,0,timmo001,00,X,8/F8
+play,8,0,huffa001,00,X,S7.1-2
+play,8,0,flahj001,00,,NP
+sub,johnr006,"Russ Johnson",0,6,12
+play,8,0,flahj001,11,FBX,HR/7.2-H;1-H
+play,8,0,smitr003,02,FFC,K/C
+play,8,0,guilj001,10,BX,2/FL
+play,8,1,cruzj004,00,,NP
+sub,johnr006,"Russ Johnson",0,6,5
+play,8,1,cruzj004,00,X,6/FL
+play,8,1,moram001,12,CFBX,5/P5
+play,8,1,stews002,11,CBX,7/F7
+play,9,0,tynej001,32,CBFBBFFX,S8
+play,9,0,guilo001,02,FCX,9/F9
+play,9,0,cox-s001,00,X,8/F8D
+play,9,0,mcgrf001,32,BBBCSB,W.1-2
+play,9,0,timmo001,01,CX,S7.2-H;1-3
+play,9,0,johnr006,32,BCFBFBFX,9/F9S
+play,9,1,gonza001,12,CCBX,53/G
+play,9,1,martd002,22,FCBBFS,K
+play,9,1,delgc001,22,FBFBFX,43/G
+data,er,harpt002,0
+data,er,tracs001,2
+data,er,escok001,4

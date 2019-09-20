@@ -1,0 +1,157 @@
+version,2
+info,visteam,SDN
+info,hometeam,SFN
+info,site,SFO03
+info,date,2000/07/19
+info,number,0
+info,starttime,7:15PM
+info,daynight,night
+info,usedh,false
+info,umphome,clara901
+info,ump1b,buckc901
+info,ump2b,reedr901
+info,ump3b,wendh902
+info,pitches,pitches
+info,temp,62
+info,winddir,torf
+info,windspeed,22
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,194
+info,attendance,40930
+info,wp,walld002
+info,lp,embra001
+info,save,
+start,owene001,"Eric Owens",0,1,9
+start,marta001,"Al Martin",0,2,7
+start,klesr001,"Ryan Klesko",0,3,3
+start,nevip001,"Phil Nevin",0,4,5
+start,boonb002,"Bret Boone",0,5,4
+start,gonzw001,"Wiki Gonzalez",0,6,2
+start,river002,"Ruben Rivera",0,7,8
+start,jackd003,"Damian Jackson",0,8,6
+start,meadb001,"Brian Meadows",0,9,1
+start,benam001,"Marvin Benard",1,1,8
+start,muelb001,"Bill Mueller",1,2,5
+start,bondb001,"Barry Bonds",1,3,7
+start,kentj001,"Jeff Kent",1,4,4
+start,snowj001,"J.T. Snow",1,5,3
+start,aurir001,"Rich Aurilia",1,6,6
+start,riosa001,"Armando Rios",1,7,9
+start,mirad001,"Doug Mirabelli",1,8,2
+start,gardm001,"Mark Gardner",1,9,1
+play,1,0,owene001,11,BCX,S9/9S
+play,1,0,marta001,11,FBX,S9/9D.1-3
+play,1,0,klesr001,22,FBBCX,S/78.3-H;1-3
+play,1,0,nevip001,22,BSCFBX,S8/8D.3-H;1-2
+play,1,0,boonb002,12,FCBX,7/F7S
+play,1,0,gonzw001,02,CCX,31/G.2-3;1-2
+play,1,0,river002,22,FBCBS,K
+play,1,1,benam001,02,CFX,143/G
+play,1,1,muelb001,22,FBBFX,9/F9D
+play,1,1,bondb001,01,CX,6/P6
+play,2,0,jackd003,21,CBBX,8/F8
+play,2,0,meadb001,01,CX,3/G
+play,2,0,owene001,10,BX,S
+play,2,0,marta001,22,CSBBX,S9/9S.1-3
+play,2,0,klesr001,21,CBBX,S7.3-H;1-2
+play,2,0,nevip001,32,FBBBCS,K
+play,2,1,kentj001,22,BCSBFX,4/P4
+play,2,1,snowj001,01,CX,S7
+play,2,1,aurir001,21,BBCX,64(1)3/GDP
+play,3,0,boonb002,11,BCX,S9
+play,3,0,gonzw001,00,X,D9/9D.1-3
+play,3,0,river002,11,FB+3,PO3(25)
+play,3,0,river002,22,FB+3CFBX,9(B)5(2)/FDP
+play,3,1,riosa001,00,X,31/G
+play,3,1,mirad001,22,CSBBFC,K/C
+play,3,1,gardm001,01,FX,13/G
+play,4,0,jackd003,02,CFX,63/G
+play,4,0,meadb001,02,FCFS,K
+play,4,0,owene001,32,CBBBCX,63/G
+play,4,1,benam001,12,CFBX,S8
+play,4,1,muelb001,31,BBFBB,W.1-2
+play,4,1,bondb001,00,X,HR/9.2-H;1-H
+play,4,1,kentj001,00,X,D7
+play,4,1,snowj001,12,BFFFX,6/L6
+play,4,1,aurir001,12,CFFBX,S.2-2
+play,4,1,riosa001,21,BFBX,36(1)1/GDP
+play,5,0,marta001,00,X,3/G
+play,5,0,klesr001,02,FCC,K/C
+play,5,0,nevip001,12,CFBX,S9
+play,5,0,boonb002,02,FFX,8/F8
+play,5,1,mirad001,00,X,53/G
+play,5,1,gardm001,01,FX,43/G
+play,5,1,benam001,12,CFFFBX,43/G
+play,6,0,gonzw001,01,CX,53/G
+play,6,0,river002,00,X,53/G
+play,6,0,jackd003,12,CFBX,7/F7S
+play,6,1,muelb001,22,CBFBFX,3/G
+play,6,1,bondb001,10,BX,D8/8D
+play,6,1,kentj001,10,BX,8/F8.2-3
+play,6,1,snowj001,32,BBBCFB,W
+play,6,1,aurir001,10,BX,8/F8
+play,7,0,meadb001,12,CBCFX,53/G
+play,7,0,owene001,02,CFX,3/G
+play,7,0,marta001,00,X,5/FL
+play,7,1,riosa001,12,CFBFC,K/C
+play,7,1,mirad001,01,CX,53/G
+play,7,1,gardm001,00,,NP
+sub,burke001,"Ellis Burks",1,9,11
+play,7,1,burke001,31,CBBBX,D7
+play,7,1,benam001,00,,NP
+sub,estes001,"Shawn Estes",1,9,12
+play,7,1,benam001,32,BBBCCFS,K
+play,8,0,klesr001,00,,NP
+sub,rodrf002,"Felix Rodriguez",1,9,1
+play,8,0,klesr001,32,BSSBFBFX,43/G
+play,8,0,nevip001,01,CX,43/G
+play,8,0,boonb002,32,CBBBSFB,W
+play,8,0,gonzw001,32,BFBBFX,8/F8
+play,8,1,muelb001,11,CBX,7/F7
+play,8,1,bondb001,31,BBBFX,63/G
+play,8,1,kentj001,01,SX,9/F9
+play,9,0,river002,12,BFSS,K
+play,9,0,jackd003,02,CFS,K
+play,9,0,meadb001,00,,NP
+sub,magad001,"Dave Magadan",0,9,11
+play,9,0,magad001,32,BCFBBS,K
+play,9,1,snowj001,00,,NP
+sub,walld002,"Donne Wall",0,9,1
+play,9,1,snowj001,10,BX,7/F7D
+play,9,1,aurir001,10,BX,S7
+play,9,1,riosa001,20,BBX,S9.1-2
+play,9,1,mirad001,00,,NP
+sub,cresf001,"Felipe Crespo",1,8,11
+play,9,1,cresf001,01,SX,43/G.2-3;1-2
+play,9,1,rodrf002,00,,NP
+sub,estab001,"Bobby Estalella",1,9,11
+play,9,1,estab001,12,CSBX,53/G
+play,10,0,owene001,00,,NP
+sub,estab001,"Bobby Estalella",1,9,2
+play,10,0,owene001,00,,NP
+sub,embra001,"Alan Embree",1,8,1
+play,10,0,owene001,11,FBX,D9
+play,10,0,marta001,00,,NP
+sub,nichk001,"Kevin Nicholson",0,2,11
+play,10,0,nichk001,00,X,34/SH.2-3
+play,10,0,klesr001,21,BFBX,S9.3-H
+play,10,0,nevip001,02,FFX,S9.1-2
+play,10,0,boonb002,00,,NP
+sub,nen-r001,"Robb Nen",1,8,1
+play,10,0,boonb002,22,BBCFS,K.2-3;1-2(WP)
+play,10,0,gonzw001,20,BBX,8/F8
+play,10,1,benam001,00,,NP
+sub,nichk001,"Kevin Nicholson",0,2,6
+play,10,1,benam001,00,,NP
+sub,jackd003,"Damian Jackson",0,8,7
+play,10,1,benam001,01,CX,S9
+play,10,1,muelb001,22,BFBFFX,4(1)3/GDP
+play,10,1,bondb001,10,BX,8/F8D
+data,er,meadb001,3
+data,er,walld002,0
+data,er,gardm001,3
+data,er,rodrf002,0
+data,er,embra001,1
+data,er,nen-r001,0

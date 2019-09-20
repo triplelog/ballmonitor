@@ -1,0 +1,153 @@
+version,2
+info,visteam,ANA
+info,hometeam,NYA
+info,site,NYC16
+info,date,2000/08/17
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,hudsm901
+info,ump1b,cedeg901
+info,ump2b,welkt901
+info,ump3b,scotd901
+info,pitches,pitches
+info,temp,73
+info,winddir,tolf
+info,windspeed,7
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,187
+info,attendance,35180
+info,wp,neagd001
+info,lp,merck001
+info,save,
+start,erstd001,"Darin Erstad",0,1,8
+start,glaut001,"Troy Glaus",0,2,5
+start,salmt001,"Tim Salmon",0,3,10
+start,vaugm001,"Mo Vaughn",0,4,3
+start,gantr001,"Ron Gant",0,5,7
+start,andeg001,"Garret Anderson",0,6,9
+start,molib001,"Ben Molina",0,7,2
+start,kenna001,"Adam Kennedy",0,8,4
+start,gil-b001,"Benji Gil",0,9,6
+start,merck001,"Kent Mercker",0,0,1
+start,jeted001,"Derek Jeter",1,1,6
+start,posaj001,"Jorge Posada",1,2,2
+start,willb002,"Bernie Williams",1,3,8
+start,cansj001,"Jose Canseco",1,4,10
+start,justd001,"David Justice",1,5,9
+start,hillg001,"Glenallen Hill",1,6,7
+start,martt002,"Tino Martinez",1,7,3
+start,sojol001,"Luis Sojo",1,8,4
+start,bross001,"Scott Brosius",1,9,5
+start,neagd001,"Denny Neagle",1,0,1
+play,1,0,erstd001,22,CBBFS,K
+play,1,0,glaut001,32,CBBBCX,S8
+play,1,0,salmt001,10,BX,9/F9S
+play,1,0,vaugm001,10,BX,S/78.1-2
+play,1,0,gantr001,21,BBFX,13/G
+play,1,1,jeted001,22,BSBFFX,9/F9
+play,1,1,posaj001,12,BFFC,K/C
+play,1,1,willb002,32,CBBFBX,13/G
+play,2,0,andeg001,01,CX,9/F9
+play,2,0,molib001,21,SBBX,D7
+play,2,0,kenna001,01,CH,HP
+play,2,0,gil-b001,10,BX,S5/BG5.2-3;1-2
+play,2,0,erstd001,01,CX,9(B)23(1)/FDP
+com,"$Molina came halfway home, then stopped, causing"
+com,"domino-like backup of runners with Gil being tagged out"
+com,"in rundown; good play by Posada running at him before"
+com,"throwing to Martinez"
+play,2,1,cansj001,22,CBBCFC,K/C
+play,2,1,justd001,02,FFS,K
+play,2,1,hillg001,11,CBX,HR/8XD
+com,"$Hill 15th player to homer into the CF batter's background"
+play,2,1,martt002,32,CBCFBBB,W
+play,2,1,sojol001,32,BCFBFBX,4/P4
+play,3,0,glaut001,22,BFFBX,53/G
+play,3,0,salmt001,20,BBX,53/G
+play,3,0,vaugm001,20,BBX,8/F8
+play,3,1,bross001,22,CFBFBX,7/F7
+play,3,1,jeted001,00,X,D9
+play,3,1,posaj001,01,CX,S8.2-3
+play,3,1,willb002,00,X,8/SF.3-H
+play,3,1,cansj001,12,SCBS,K
+play,4,0,gantr001,32,CFBBBC,K/C
+play,4,0,andeg001,01,FX,13/G
+play,4,0,molib001,01,FX,D7
+play,4,0,kenna001,01,SX,5/L5
+play,4,1,justd001,12,CBFX,5/P5
+play,4,1,hillg001,11,BCX,3/P3
+play,4,1,martt002,02,SSX,8/F8
+play,5,0,gil-b001,32,CBFBFBB,W
+play,5,0,erstd001,11,BFX,7/F7
+play,5,0,glaut001,22,BCBSX,4/P4
+play,5,0,salmt001,32,CSBBBFS,K
+play,5,1,sojol001,32,BFBBFFX,9/F9S
+play,5,1,bross001,00,X,4/P4
+play,5,1,jeted001,31,BBBCB,W
+play,5,1,posaj001,10,B1,PO1(E1).1-2
+com,"$throw into fifth row of stands"
+play,5,1,posaj001,31,B1BBCB,W
+play,5,1,willb002,21,BBCX,46(1)/FO.2-3
+play,6,0,vaugm001,22,CFBBFFX,D/78D
+play,6,0,gantr001,01,CX,63/G
+play,6,0,andeg001,12,BFFX,8/F8
+play,6,0,molib001,02,FFX,43/G
+play,6,1,cansj001,00,,NP
+sub,alvaj002,"Juan Alvarez",0,0,1
+play,6,1,cansj001,30,BBBB,W
+play,6,1,justd001,21,BFBX,HR/9.1-H
+play,6,1,hillg001,01,CX,53/G
+play,6,1,martt002,22,CFBBC,K/C
+play,6,1,sojol001,00,,NP
+sub,weave001,"Eric Weaver",0,0,1
+play,6,1,sojol001,10,BX,HR/7
+play,6,1,bross001,11,CBX,2/FL
+play,7,0,kenna001,00,,NP
+sub,bellc001,"Clay Bellinger",1,6,7
+play,7,0,kenna001,00,X,3/G
+play,7,0,gil-b001,01,CX,S8
+play,7,0,erstd001,32,BBCBCX,S/78.1-3
+play,7,0,glaut001,12,FBFFX,S5/G5L.3-3;1X3(54)#
+com,"$great stop by Brosius, Gil held 3B, Erstad"
+com,"rounded second too far and Yankees ran him down"
+play,7,0,salmt001,00,,NP
+sub,stanm003,"Mike Stanton",1,0,1
+play,7,0,salmt001,02,FFS,K
+play,7,1,jeted001,32,BFFBBFB,W
+play,7,1,posaj001,32,BBSBCX,S8.1-3
+play,7,1,willb002,00,,NP
+sub,turnd001,"Derrick Turnbow",0,0,1
+play,7,1,willb002,11,FBX,3/G.1-2
+play,7,1,cansj001,32,BSSBBB,W
+play,7,1,justd001,00,,NP
+sub,polol001,"Luis Polonia",1,4,12
+play,7,1,justd001,12,SBSFX,7/SF.3-H
+play,7,1,bellc001,11,BCX,9/F9
+play,8,0,vaugm001,12,FBCFS,K
+play,8,0,gantr001,02,FFX,7/F7D
+play,8,0,andeg001,00,X,1/G
+play,8,1,martt002,22,CCBBFS,K
+play,8,1,sojol001,31,BBCBX,53/G
+play,8,1,bross001,30,BBBB,W
+play,8,1,jeted001,32,BCBSBB,W.1-2
+play,8,1,posaj001,12,CBCC,K/C
+play,9,0,molib001,00,,NP
+sub,grimj001,"Jason Grimsley",1,0,1
+play,9,0,molib001,01,CX,53/G
+play,9,0,kenna001,31,BCBBX,43/G
+play,9,0,gil-b001,00,,NP
+sub,spies001,"Scott Spiezio",0,9,11
+play,9,0,spies001,00,X,HR/9
+play,9,0,erstd001,01,CX,D9
+play,9,0,glaut001,12,CFBC,K/C
+data,er,merck001,2
+data,er,alvaj002,2
+data,er,weave001,2
+data,er,turnd001,0
+data,er,neagd001,0
+data,er,stanm003,0
+data,er,grimj001,1

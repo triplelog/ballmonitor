@@ -1,0 +1,138 @@
+version,2
+info,visteam,CIN
+info,hometeam,HOU
+info,site,HOU03
+info,date,2000/07/19
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,welkb901
+info,ump1b,culbf901
+info,ump2b,froeb901
+info,ump3b,drakr901
+info,pitches,pitches
+info,temp,72
+info,winddir,unknown
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,154
+info,attendance,41484
+info,wp,harnp001
+info,lp,holtc001
+info,save,
+start,stync001,"Chris Stynes",0,1,5
+start,larkb001,"Barry Larkin",0,2,6
+start,grifk002,"Ken Griffey",0,3,8
+start,bichd001,"Dante Bichette",0,4,9
+start,cases001,"Sean Casey",0,5,3
+start,yound001,"Dmitri Young",0,6,7
+start,taube001,"Eddie Taubensee",0,7,2
+start,castj004,"Juan Castro",0,8,4
+start,harnp001,"Pete Harnisch",0,9,1
+start,lugoj001,"Julio Lugo",1,1,6
+start,biggc001,"Craig Biggio",1,2,4
+start,bagwj001,"Jeff Bagwell",1,3,3
+start,berkl001,"Lance Berkman",1,4,9
+start,aloum001,"Moises Alou",1,5,7
+start,hidar001,"Richard Hidalgo",1,6,8
+start,melum001,"Mitch Meluskey",1,7,2
+start,trubc001,"Chris Truby",1,8,5
+start,holtc001,"Chris Holt",1,9,1
+play,1,0,stync001,22,CBFBFS,K
+play,1,0,larkb001,10,BX,63/G
+play,1,0,grifk002,32,BBFBFFFFB,W
+play,1,0,bichd001,22,CCBFBS,K
+play,1,1,lugoj001,12,CBFFX,4/L4
+play,1,1,biggc001,10,BX,D7/7D
+play,1,1,bagwj001,12,CBFX,53/G
+play,1,1,berkl001,32,BCFFBBB,W
+play,1,1,aloum001,12,BFSB,WP.2-3
+play,1,1,aloum001,22,BFSBX,6/P6
+play,2,0,cases001,22,BBFFS,K
+play,2,0,yound001,22,FBSBX,43/G
+play,2,0,taube001,32,CBBCBX,8/F8
+play,2,1,hidar001,20,BBX,6/P6
+play,2,1,melum001,00,X,43/G
+play,2,1,trubc001,02,CSS,K
+play,3,0,castj004,01,FX,9/F9
+play,3,0,harnp001,12,CBSC,K/C
+play,3,0,stync001,12,SCBS,K
+play,3,1,holtc001,00,X,9/FL
+play,3,1,lugoj001,00,X,3/BG
+play,3,1,biggc001,12,CFFBS,K
+play,4,0,larkb001,10,BX,7/F7
+play,4,0,grifk002,21,BCBX,43/G
+play,4,0,bichd001,22,FBFBFFX,D7/7D
+play,4,0,cases001,30,BBBB,W
+play,4,0,yound001,00,X,7/L7
+play,4,1,bagwj001,22,CSFBBX,8/F8D
+play,4,1,berkl001,01,FX,43/G
+play,4,1,aloum001,02,FCX,8/F8D
+play,5,0,taube001,00,X,6/FL
+play,5,0,castj004,22,CBBFX,6/P6
+play,5,0,harnp001,00,X,13/G
+play,5,1,hidar001,12,SBFX,7/L7
+play,5,1,melum001,20,BBX,7/F7
+play,5,1,trubc001,11,SBX,4/P4
+play,6,0,stync001,21,CBBX,53/G
+play,6,0,larkb001,11,BFX,HR/7
+play,6,0,grifk002,10,BX,S8
+play,6,0,bichd001,00,H,HP.1-2
+play,6,0,cases001,00,X,S9/9S.2-3;1-2
+play,6,0,yound001,00,X,S9.3-H;2-3;1-2
+play,6,0,taube001,00,X,32(3)/FO.2-3;1-2
+play,6,0,castj004,32,CBBFBFB,W.3-H;2-3;1-2
+play,6,0,harnp001,10,BX,63/G
+play,6,1,holtc001,01,CX,43/G
+play,6,1,lugoj001,02,FCX,S8
+play,6,1,biggc001,01,FX,7/F7
+play,6,1,bagwj001,01,SB,SB2
+play,6,1,bagwj001,22,SBBFC,K/C
+play,7,0,stync001,00,X,63/G
+play,7,0,larkb001,12,CBSX,T9
+play,7,0,grifk002,12,BFCX,8/SF.3-H
+play,7,0,bichd001,20,BBX,E5/G
+play,7,0,cases001,00,B,CS2(26)
+play,7,1,berkl001,00,X,3/G
+play,7,1,aloum001,12,BFFFFX,13/G
+play,7,1,hidar001,11,BCX,9/F9S
+com,"$the roof was opened"
+play,8,0,cases001,00,H,HP
+play,8,0,yound001,00,X,7/F7
+play,8,0,taube001,20,BBX,5/FL
+play,8,0,castj004,01,FX,S9.1-2
+play,8,0,harnp001,12,BFSS,K
+play,8,1,melum001,02,SFC,K/C
+play,8,1,trubc001,00,,NP
+sub,spieb001,"Bill Spiers",1,8,11
+play,8,1,spieb001,10,BX,S9
+play,8,1,holtc001,00,,NP
+sub,wardd002,"Daryle Ward",1,9,11
+play,8,1,wardd002,01,CX,8/F8S
+play,8,1,lugoj001,31,FBBBB,W.1-2
+play,8,1,biggc001,00,X,4/P4
+play,9,0,stync001,00,,NP
+sub,spieb001,"Bill Spiers",1,8,5
+play,9,0,stync001,00,,NP
+sub,henrd002,"Doug Henry",1,9,1
+play,9,0,stync001,32,CBFBBB,W
+play,9,0,larkb001,10,BX,6/P6
+play,9,0,grifk002,22,SBBCX,8/F8S
+play,9,0,bichd001,32,CBBSBB,W.1-2
+play,9,0,cases001,00,,NP
+sub,perey001,"Yorkis Perez",1,9,1
+play,9,0,cases001,00,X,8/F8
+play,9,1,bagwj001,00,,NP
+sub,tuckm001,"Michael Tucker",0,4,9
+play,9,1,bagwj001,00,,NP
+sub,ochoa001,"Alex Ochoa",0,6,7
+play,9,1,bagwj001,32,BFFFBBFFX,6/P6
+play,9,1,berkl001,01,FX,S9
+play,9,1,aloum001,00,X,46(1)3/GDP
+data,er,harnp001,0
+data,er,holtc001,4
+data,er,henrd002,0
+data,er,perey001,0

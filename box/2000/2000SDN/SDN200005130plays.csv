@@ -1,0 +1,82 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,12,1,,,,,0,4,CBFS,spens002,1,0,womat001 strikes out. ,womat001,0,
+,10,1,bellj001,,,,1,6,BX,spens002,0,0,bellj001 singles. ,bellj001,0,
+,10,1,,,,,2,8,BX,spens002,2,0,Double Play. ,gonzl001,0,
+,32,1,,,,,3,7,BCBCBFX,stott001,1,0,,owene001,1,L
+,02,1,,,,,4,10,CSS,stott001,1,0,marta001 strikes out. ,marta001,1,
+,00,1,,,,,5,11,X,stott001,1,0,,klesr001,1,P
+,32,2,,,,,6,14,BFSBBX,spens002,1,0,,durae001,0,
+,32,2,,,,,7,20,CCBBBS,spens002,1,0,finls001 strikes out. ,finls001,0,
+,32,2,lee-t002,,,,8,27,BCBSFBB,spens002,0,0,lee-t002 walks. ,lee-t002,0,
+,01,2,,lee-t002,,stink001,9,29,CS,spens002,0,0,lee-t002 steals 2B. ,stink001,0,
+,02,2,,lee-t002,,,10,32,CSX,spens002,1,0,,stink001,0,P
+,12,2,,,,,11,16,BCFFS,stott001,1,0,nevip001 strikes out. ,nevip001,1,
+,12,2,,,,,12,20,CBSS,stott001,1,0,boonb002 strikes out. ,boonb002,1,
+,01,2,hernc001,,,,13,22,CX,stott001,0,0,hernc001 singles. ,hernc001,1,
+,01,2,hernc001,,,,14,24,CX,stott001,1,0,jackd003 grounds out. ,jackd003,1,G
+,00,3,,,,,15,33,X,spens002,1,0,fox-a001 grounds out. ,fox-a001,0,G
+,11,3,,,,,16,36,SBX,spens002,1,0,stott001 grounds out. ,stott001,0,G
+,11,3,,womat001,,,17,39,BCX,spens002,0,0,womat001 doubles. ,womat001,0,
+womat001 scores. ,32,3,,,,,18,46,BBCBSFX,spens002,0,2,bellj001 homers. ,bellj001,0,
+,02,3,,,,,19,50,CFFS,spens002,1,0,gonzl001 strikes out. ,gonzl001,0,
+,22,3,,,,,20,29,BCFBS,stott001,1,0,river002 strikes out. ,river002,1,
+,00,3,spens002,,,,21,30,X,stott001,0,0,spens002 singles. ,spens002,1,
+,12,3,spens002,,,,22,34,CBCS,stott001,1,0,owene001 strikes out. ,owene001,1,
+spens002 to 2B. ,30,3,marta001,spens002,,,23,38,BBBB,stott001,0,0,marta001 walks. ,marta001,1,
+spens002 to 3B. marta001 to 2B. ,10,3,klesr001,marta001,spens002,,24,40,BX,stott001,0,0,klesr001 singles. ,klesr001,1,
+,12,3,klesr001,marta001,spens002,,25,44,SBSS,stott001,1,0,nevip001 strikes out. ,nevip001,1,
+,22,4,,,,,26,56,BCBCFC,spens002,1,0,durae001 strikes out. ,durae001,0,
+,00,4,,,,,27,57,X,spens002,1,0,,finls001,0,F
+,11,4,,lee-t002,,,28,60,CBX,spens002,0,0,lee-t002 doubles. ,lee-t002,0,
+lee-t002 scores. stink001 to 2B. ,02,4,,stink001,,,29,63,SFX,spens002,0,1,stink001 reaches on error. ,stink001,0,F
+,02,4,,stink001,,,30,66,CFS,spens002,1,0,fox-a001 strikes out. ,fox-a001,0,
+,11,4,,,,,31,47,FBX,stott001,1,0,boonb002 grounds out. ,boonb002,1,G
+hernc001 to 2B. ,00,4,,hernc001,,,32,48,X,stott001,0,0,hernc001 reaches on error. ,hernc001,1,F
+,02,4,,hernc001,,,33,51,CSS,stott001,1,0,jackd003 strikes out. ,jackd003,1,
+,32,4,river002,hernc001,,,34,57,BBFBFB,stott001,0,0,river002 walks. ,river002,1,
+hernc001 scores. river002 to 3B. ,32,4,spens002,,river002,,35,63,CBBBCX,stott001,0,1,spens002 singles. ,spens002,1,
+spens002 out. ,00,4,owene001,,river002,,36,64,X,stott001,1,0,owene001 reaches on fielder's choice. ,owene001,1,
+,12,5,,,,,37,70,CCBS,spens002,1,0,stott001 strikes out. ,stott001,0,
+,12,5,,,,,38,75,CBFFX,spens002,1,0,womat001 grounds out. ,womat001,0,G
+,31,5,bellj001,,,,39,80,CBBBB,spens002,0,0,bellj001 walks. ,bellj001,0,
+,01,5,bellj001,,,,40,82,FX,spens002,1,0,,gonzl001,0,F
+,22,5,,,,,41,69,SFBBX,stott001,1,0,marta001 grounds out. ,marta001,1,G
+,32,5,,,,,42,76,FBSBBFS,stott001,1,0,klesr001 strikes out. ,klesr001,1,
+,00,5,,,,,43,77,X,stott001,1,0,,nevip001,1,F
+,20,6,,,,,44,85,BBX,spens002,1,0,,durae001,0,F
+,20,6,,finls001,,,45,88,BBX,spens002,0,0,finls001 doubles. ,finls001,0,
+,32,6,,finls001,,,46,94,BFBBCS,spens002,1,0,lee-t002 strikes out. ,lee-t002,0,
+,01,6,,,finls001,stink001,47,96,FB,spens002,0,0,finls001 steals 3B. ,stink001,0,
+,32,6,,,finls001,,48,102,FBBBCS,spens002,1,0,stink001 strikes out. ,stink001,0,
+,12,6,,,,,49,82,CCFBX,stott001,1,0,boonb002 grounds out. ,boonb002,1,G
+,22,6,hernc001,,,,50,87,BBSFX,stott001,0,0,hernc001 singles. ,hernc001,1,
+hernc001 to 2B. ,31,6,jackd003,hernc001,,,51,92,BBBCB,stott001,0,0,jackd003 walks. ,jackd003,1,
+,11,6,,hernc001,,,52,95,CBX,stott001,2,0,Double Play. ,river002,1,
+,32,7,,,,,53,108,FBFBBX,spens002,1,0,fox-a001 grounds out. ,fox-a001,0,G
+,02,7,,,,,54,111,FCS,spens002,1,0,stott001 strikes out. ,stott001,0,
+,02,7,,,,,55,114,CSX,spens002,1,0,womat001 grounds out. ,womat001,0,G
+,22,7,,,,,58,5,CBFBX,swing001,1,0,,magad001,1,F
+,22,7,owene001,,,,59,10,BCBFX,swing001,0,0,owene001 singles. ,owene001,1,
+owene001 out. ,10,7,sprae001,,,,62,2,BX,morgm001,1,0,sprae001 reaches on fielder's choice. ,sprae001,1,
+sprae001 to 2B. ,00,7,klesr001,sprae001,,,63,3,X,morgm001,0,0,klesr001 singles. ,klesr001,1,
+sprae001 out. ,22,7,klesr001,,,nevip001,64,8,BCFBB,morgm001,1,0,,nevip001,1,
+,32,8,bellj001,,,,68,6,CBBSBB,walkk001,0,0,bellj001 walks. ,bellj001,0,
+bellj001 to 2B. ,10,8,gonzl001,bellj001,,,69,8,BX,walkk001,0,0,gonzl001 singles. ,gonzl001,0,
+bellj001 scores. gonzl001 to 2B. ,10,8,colbg001,gonzl001,,,71,10,BX,walkk001,0,1,colbg001 singles. ,colbg001,0,
+gonzl001 to 3B. ,31,8,,,gonzl001,,72,15,CBBBX,walkk001,2,0,Double Play. ,finls001,0,
+gonzl001 scores. ,10,8,,,,lee-t002,73,17,BB,walkk001,0,1,Passed Ball. ,lee-t002,0,
+,21,8,,,,,74,21,BBCX,walkk001,1,0,lee-t002 grounds out. ,lee-t002,0,G
+,12,8,,,,,76,12,BCSS,morgm001,1,0,nevip001 strikes out. ,nevip001,1,
+,32,8,boonb002,,,,77,18,BCBBFB,morgm001,0,0,boonb002 walks. ,boonb002,1,
+boonb002 out. ,31,8,hernc001,,,,78,23,BBBCX,morgm001,1,0,hernc001 reaches on fielder's choice. ,hernc001,1,
+,10,8,hernc001,,,,79,25,BX,morgm001,1,0,,jackd003,1,
+,10,9,,,,,81,2,BX,whitm002,1,0,stink001 grounds out. ,stink001,0,G
+,00,9,,fox-a001,,,82,3,X,whitm002,0,0,fox-a001 doubles. ,fox-a001,0,
+,02,9,,fox-a001,,,83,6,CCS,whitm002,1,0,morgm001 strikes out. ,morgm001,0,
+fox-a001 scores. ,22,9,womat001,,,,84,12,BSFBFX,whitm002,0,1,womat001 singles. ,womat001,0,
+,12,9,womat001,,,,85,16,CBCX,whitm002,1,0,,bellj001,0,F
+,01,9,,,,,86,27,CX,morgm001,0,1,river002 homers. ,river002,1,
+,11,9,,,,,88,30,BFX,morgm001,1,0,dehak001 grounds out. ,dehak001,1,G
+,01,9,owene001,,,,89,32,CX,morgm001,0,0,owene001 singles. ,owene001,1,
+owene001 to 2B. ,01,9,,owene001,,,90,34,CX,morgm001,1,0,sprae001 grounds out. ,sprae001,1,G
+,32,9,,owene001,,,91,40,BBBCCX,morgm001,1,0,,klesr001,1,F

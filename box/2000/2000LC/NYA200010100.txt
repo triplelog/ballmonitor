@@ -1,0 +1,157 @@
+version,2
+info,visteam,SEA
+info,hometeam,NYA
+info,date,2000/10/10
+info,site,NYC16
+info,number,0
+info,starttime,0:00PM
+info,daynight,night
+info,usedh,true
+info,umphome,hirsj901
+info,ump1b,herna901
+info,ump2b,bellw901
+info,ump3b,hirsm901
+info,umplf,davig901
+info,umprf,marsr901
+info,inputter,"DWS"
+info,howscored,park
+info,pitches,pitches
+info,temp,47
+info,winddir,rtol
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,225
+info,attendance,54481
+info,wp,garcf002
+info,lp,neagd001
+info,save,sasak001
+start,hendr001,"Rickey Henderson",0,1,7
+start,camem001,"Mike Cameron",0,2,8
+start,rodra001,"Alex Rodriguez",0,3,6
+start,marte001,"Edgar Martinez",0,4,10
+start,olerj001,"John Olerud",0,5,3
+start,buhnj001,"Jay Buhner",0,6,9
+start,olivj001,"Joe Oliver",0,7,2
+start,belld002,"David Bell",0,8,5
+start,mclem001,"Mark McLemore",0,9,4
+start,garcf002,"Freddy An. Garcia",0,0,1
+start,knobc001,"Chuck Knoblauch",1,1,10
+start,jeted001,"Derek Jeter",1,2,6
+start,oneip001,"Paul O'Neill",1,3,9
+start,willb002,"Bernie Williams",1,4,8
+start,justd001,"David Justice",1,5,7
+start,martt002,"Tino Martinez",1,6,3
+start,posaj001,"Jorge Posada",1,7,2
+start,sojol001,"Luis Sojo",1,8,4
+start,bross001,"Scott Brosius",1,9,5
+start,neagd001,"Denny Neagle",1,0,1
+play,1,0,hendr001,31,BBBCB,W
+play,1,0,camem001,32,CBFBBS,K+CS2(243)/DP
+play,1,0,rodra001,32,BBBCFB,W
+play,1,0,marte001,31,BBBCX,8/F8
+play,1,1,knobc001,32,BCBBCFX,43/G
+play,1,1,jeted001,02,CFS,K
+play,1,1,oneip001,11,BCX,8/F8
+play,2,0,olerj001,01,CX,9/L9
+play,2,0,buhnj001,32,SBBBFB,W
+play,2,0,olivj001,01,CX,13/G.1-2
+play,2,0,belld002,12,CBCX,6/P6
+play,2,1,willb002,20,BBX,8/F8
+play,2,1,justd001,22,BCCBS,K
+play,2,1,martt002,22,BCSBS,K
+play,3,0,mclem001,32,CBBBCFX,8/F8
+play,3,0,hendr001,22,BBCFS,K
+play,3,0,camem001,10,BX,E5/G
+play,3,0,rodra001,12,CBCX,3/P3
+play,3,1,posaj001,02,CCH,HP
+play,3,1,sojol001,11,BFX,S9/G34.1-2
+play,3,1,bross001,21,BLBX,146(1)3/GDP.2-3
+play,3,1,knobc001,00,X,53/G
+play,4,0,marte001,12,CCBX,7/F7
+play,4,0,olerj001,22,BCFFBS,K
+play,4,0,buhnj001,32,SBBBCX,4/P34D
+play,4,1,jeted001,12,FBSS,K
+play,4,1,oneip001,12,SSBX,43/G
+play,4,1,willb002,32,BSSBBS,K
+play,5,0,olivj001,32,CSFBBBFX,8/F8LXD
+play,5,0,belld002,32,BBBCCX,7/F7
+play,5,0,mclem001,01,FX,DGR/7L/FINT
+com,"$fan interference"
+play,5,0,hendr001,22,BBCFX,S9/G34.2-H
+play,5,0,camem001,32,BBBCSFFX,4/P4D
+play,5,1,justd001,00,X,31/G3L
+play,5,1,martt002,32,BFBBFX,8/F8LXD
+play,5,1,posaj001,31,CBBBB,W
+play,5,1,sojol001,12,CBSX,S8/L78.1-3
+play,5,1,bross001,11,C*BX,53/G56S
+play,6,0,rodra001,32,BBBCFX,HR/7L
+com,"$the ball struck the LF pole"
+play,6,0,marte001,12,CBSFX,43/G4M
+play,6,0,olerj001,10,BX,43/G
+play,6,0,buhnj001,00,,NP
+sub,nelsj001,"Jeff Nelson",1,0,1
+play,6,0,buhnj001,32,BCSBFBFC,K/C
+play,6,1,knobc001,00,,NP
+sub,ibanr001,"Raul Ibanez",0,1,7
+play,6,1,knobc001,12,CBFX,DGR/7L/FINT
+com,"$fan interference"
+play,6,1,jeted001,32,FSBBBB,W
+play,6,1,oneip001,12,CBFS,K
+play,6,1,willb002,12,BCSS,K
+play,6,1,justd001,20,BBX,8/F8RXDW
+play,7,0,olivj001,22,BFBFFFS,K
+play,7,0,belld002,12,CSBX,S/89
+play,7,0,mclem001,11,CB>X,64(1)/FO/G6M
+play,7,0,ibanr001,32,1111BFBCB>F>F>X,2/P2RF
+play,7,1,martt002,32,BBFFFBX,3/G
+play,7,1,posaj001,22,BFBFS,K
+play,7,1,sojol001,00,,NP
+sub,panij001,"Jose Paniagua",0,0,1
+play,7,1,sojol001,12,BFSFFFS,K
+play,8,0,camem001,22,CBFFBS,K
+play,8,0,rodra001,22,BCFBS,K
+play,8,0,marte001,32,BCBBFX,4/P4D
+play,8,1,bross001,22,BBCFC,K/C
+play,8,1,knobc001,01,CX,S7/G56
+play,8,1,jeted001,12,C*BFS,K
+play,8,1,oneip001,00,,NP
+sub,rhoda001,"Arthur Rhodes",0,0,1
+play,8,1,oneip001,00,,NP
+sub,hillg001,"Glenallen Hill",1,3,11
+play,8,1,hillg001,12,SSBFC,K/C
+play,9,0,olerj001,00,,NP
+sub,justd001,"David Justice",1,5,9
+play,9,0,olerj001,00,,NP
+sub,bellc001,"Clay Bellinger",1,3,7
+play,9,0,olerj001,00,,NP
+sub,choar001,"Randy Choate",1,0,1
+play,9,0,olerj001,22,SCBFBC,K/C
+play,9,0,buhnj001,00,,NP
+sub,grimj001,"Jason Grimsley",1,0,1
+play,9,0,buhnj001,02,CCS,K
+play,9,0,olivj001,31,BBSBB,W
+play,9,0,belld002,12,CCBX,S8/G6M.1-2
+play,9,0,mclem001,00,X,46(1)/FO.2-3
+play,9,1,willb002,00,,NP
+sub,sasak001,"Kazuhiro Sasaki",0,0,1
+play,9,1,willb002,00,,NP
+sub,ibanr001,"Raul Ibanez",0,1,9
+play,9,1,willb002,00,,NP
+sub,gipsc001,"Charles Gipson",0,6,7
+play,9,1,willb002,32,BSBCFBX,S7/L78S
+play,9,1,justd001,12,CBSS,K
+play,9,1,martt002,12,CBSFX,S8/L6M.1-2
+play,9,1,posaj001,00,,NP
+sub,vizcj001,"Jose Vizcaino",1,6,12
+play,9,1,posaj001,12,C*BFFX,9/F9
+play,9,1,sojol001,12,BSFFFX,8/F8
+data,er,garcf002,0
+data,er,panij001,0
+data,er,rhoda001,0
+data,er,sasak001,0
+data,er,neagd001,2
+data,er,nelsj001,0
+data,er,choar001,0
+data,er,grimj001,0

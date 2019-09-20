@@ -1,0 +1,154 @@
+version,2
+info,visteam,PIT
+info,hometeam,COL
+info,site,DEN02
+info,date,2000/08/08
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,schrp901
+info,ump1b,mcclt901
+info,ump2b,rapue901
+info,ump3b,cuzzp901
+info,pitches,pitches
+info,temp,90
+info,winddir,rtol
+info,windspeed,6
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,178
+info,attendance,38535
+info,wp,roseb002
+info,lp,silvj001
+info,save,
+start,browa001,"Adrian Brown",0,1,8
+start,kendj001,"Jason Kendall",0,2,2
+start,gileb002,"Brian Giles",0,3,7
+start,younk001,"Kevin Young",0,4,3
+start,wilse001,"Enrique Wilson",0,5,5
+start,morrw001,"Warren Morris",0,6,4
+start,browe001,"Emil Brown",0,7,9
+start,mearp001,"Pat Meares",0,8,6
+start,silvj001,"Jose Silva",0,9,1
+start,pierj002,"Juan Pierre",1,1,8
+start,peren001,"Neifi Perez",1,2,6
+start,walkl001,"Larry Walker",1,3,9
+start,hammj001,"Jeffrey Hammonds",1,4,7
+start,heltt001,"Todd Helton",1,5,3
+start,cirij001,"Jeff Cirillo",1,6,5
+start,walkt002,"Todd Walker",1,7,4
+start,maynb001,"Brent Mayne",1,8,2
+start,roseb002,"Brian Rose",1,9,1
+play,1,0,browa001,21,BCBX,7/F7
+play,1,0,kendj001,20,BBX,4/P4
+play,1,0,gileb002,31,BCBBB,W
+play,1,0,younk001,12,CBFX,13/G
+play,1,1,pierj002,01,CX,S
+play,1,1,peren001,10,BX,4(1)3/GDP
+play,1,1,walkl001,22,CFBBX,43/G
+play,2,0,wilse001,10,BX,163/G
+play,2,0,morrw001,02,CCC,K/C
+play,2,0,browe001,10,BX,D9
+play,2,0,mearp001,30,IIII,IW
+play,2,0,silvj001,22,BBCFX,7/F7
+play,2,1,hammj001,01,CX,S
+play,2,1,heltt001,00,X,7/F7
+play,2,1,cirij001,12,BFFX,54(1)/FO
+play,2,1,walkt002,10,BX,S8.1-2
+play,2,1,maynb001,20,BBX,S8/8S.2-H;1-2
+play,2,1,roseb002,12,FCBC,K/C
+play,3,0,browa001,10,BX,43/G
+play,3,0,kendj001,22,BCFFBX,53/G
+play,3,0,gileb002,11,FBX,6/L6
+play,3,1,pierj002,11,CBX,43/G
+play,3,1,peren001,10,BX,T/89D
+play,3,1,walkl001,00,X,9(B)2(3)/FDP
+play,4,0,younk001,22,CBBFX,4/P4
+play,4,0,wilse001,12,FBSX,S9
+play,4,0,morrw001,10,BX,S9/9S.1-2
+play,4,0,browe001,31,BBFBB,W.2-3;1-2
+play,4,0,mearp001,12,CFBS,K
+play,4,0,silvj001,10,BX,9/F9
+play,4,1,hammj001,12,SBSX,S7
+play,4,1,heltt001,12,CBCFB,SB2
+play,4,1,heltt001,22,CBCFBX,S8.2-3
+play,4,1,cirij001,02,CFX,S8.3-H;1-2
+play,4,1,walkt002,20,BBX,64(1)3/GDP.2-3
+play,4,1,maynb001,30,IIII,IW
+play,4,1,roseb002,00,X,64(1)/FO
+play,5,0,browa001,01,CX,S8
+play,5,0,kendj001,01,CX,9/F9S
+play,5,0,gileb002,22,BCFFFBFFX,6/P6
+play,5,0,younk001,12,CSBX,S/78.1-2
+play,5,0,wilse001,21,BBCX,S.2-3;1-2
+play,5,0,morrw001,22,BFBSFFX,9/F9
+play,5,1,pierj002,21,BBFX,D7/7S
+play,5,1,peren001,10,BX,S5/BG5.2-3
+play,5,1,walkl001,31,FBBBX,64(1)3/GDP.3-H
+play,5,1,hammj001,12,BFFX,S9
+play,5,1,heltt001,22,BBCFX,S9/9S.1-3
+play,5,1,cirij001,00,,NP
+sub,wilkm001,"Marc Wilkins",0,9,1
+play,5,1,cirij001,21,BBCX,64(1)/FO
+play,6,0,browe001,31,FBBBX,S8
+play,6,0,mearp001,00,,NP
+sub,housc001,"Craig House",1,9,1
+play,6,0,mearp001,31,BBBCB,W.1-2
+play,6,0,wilkm001,00,,NP
+sub,ramia002,"Alex Ramirez",0,9,11
+play,6,0,ramia002,10,BX,64(1)3/GDP.2-3
+play,6,0,browa001,32,CSBFBFBB,W
+play,6,0,kendj001,00,H,HP.1-2
+play,6,0,gileb002,00,,NP
+sub,myerm001,"Mike Myers",1,9,1
+play,6,0,gileb002,32,BCFFBBFFC,K/C
+play,6,1,walkt002,00,,NP
+sub,cordf001,"Francisco Cordova",0,9,1
+play,6,1,walkt002,32,SBFBBB,W
+play,6,1,maynb001,00,X,96(1)/FO
+play,6,1,myerm001,00,,NP
+sub,fryej001,"Jeff Frye",1,9,11
+play,6,1,fryej001,10,BX,64(1)/FO
+play,6,1,pierj002,10,BX,6/P6
+play,7,0,younk001,00,,NP
+sub,choub001,"Bobby Chouinard",1,9,1
+play,7,0,younk001,11,CBX,6/P6
+play,7,0,wilse001,22,BFCBX,7/F7
+play,7,0,morrw001,00,X,43/G
+play,7,1,peren001,12,FSFBX,S9/9S
+play,7,1,walkl001,00,X,T/78.1-H
+play,7,1,hammj001,32,SFBBBFFB,W
+play,7,1,heltt001,10,BX,63/G.1-2
+play,7,1,cirij001,00,X,D7/7S.3-H;2-H
+play,7,1,walkt002,10,BX,7/F7
+play,7,1,maynb001,30,IIII,IW
+play,7,1,choub001,22,BCSBFC,K/C
+play,8,0,browe001,00,X,3/G
+play,8,0,mearp001,10,BX,S7
+play,8,0,cordf001,00,,NP
+sub,vandj001,"John Vander Wal",0,9,11
+play,8,0,vandj001,22,FBCFBFX,8/F8
+play,8,0,browa001,00,X,S7.1-2
+play,8,0,kendj001,00,X,S8.2-H;1-2
+play,8,0,gileb002,21,BBFX,43/G
+play,8,1,pierj002,00,,NP
+sub,manzj001,"Josias Manzanillo",0,9,1
+play,8,1,pierj002,00,X,43/G
+play,8,1,peren001,10,BX,7/F7
+play,8,1,walkl001,32,BBFFBFFC,K/C
+play,9,0,younk001,00,,NP
+sub,jimej001,"Jose Jimenez",1,9,1
+play,9,0,younk001,11,SBX,53/G
+play,9,0,wilse001,10,BX,7/F7
+play,9,0,morrw001,21,BBCX,43/G
+data,er,silvj001,3
+data,er,wilkm001,0
+data,er,cordf001,3
+data,er,manzj001,0
+data,er,roseb002,0
+data,er,housc001,0
+data,er,myerm001,0
+data,er,choub001,1
+data,er,jimej001,0

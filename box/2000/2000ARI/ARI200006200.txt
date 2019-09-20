@@ -1,0 +1,146 @@
+version,2
+info,visteam,SDN
+info,hometeam,ARI
+info,site,PHO01
+info,date,2000/06/20
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,eddid901
+info,ump1b,relic901
+info,ump2b,carlm901
+info,ump3b,demud901
+info,pitches,pitches
+info,temp,82
+info,winddir,rtol
+info,windspeed,17
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,150
+info,attendance,30011
+info,wp,tollb001
+info,lp,stott001
+info,save,hofft001
+start,owene001,"Eric Owens",0,1,9
+start,marta001,"Al Martin",0,2,7
+start,klesr001,"Ryan Klesko",0,3,3
+start,nevip001,"Phil Nevin",0,4,5
+start,hernc001,"Carlos A. Hernandez",0,5,2
+start,boonb002,"Bret Boone",0,6,4
+start,river002,"Ruben Rivera",0,7,8
+start,jackd003,"Damian Jackson",0,8,6
+start,tollb001,"Brian Tollberg",0,9,1
+start,womat001,"Tony Womack",1,1,6
+start,bellj001,"Jay Bell",1,2,4
+start,gonzl001,"Luis Gonzalez",1,3,7
+start,willm003,"Matt D. Williams",1,4,5
+start,finls001,"Steve Finley",1,5,8
+start,colbg001,"Greg Colbrunn",1,6,3
+start,lee-t002,"Travis Lee",1,7,9
+start,stink001,"Kelly Stinnett",1,8,2
+start,stott001,"Todd Stottlemyre",1,9,1
+play,1,0,owene001,11,BCX,63/G
+com,"Debut game for Brian Tollberg"
+play,1,0,marta001,11,CBX,6/L6
+play,1,0,klesr001,32,FBBBCX,S7/7S
+play,1,0,nevip001,11,BCX,3/FL
+play,1,1,womat001,02,CFX,53/G
+play,1,1,bellj001,11,BCX,43/G
+play,1,1,gonzl001,31,BBBCB,W
+play,1,1,willm003,02,FSX,64(1)/FO
+play,2,0,hernc001,02,SCX,43/G
+play,2,0,boonb002,01,CX,53/G
+play,2,0,river002,22,BFBFS,K
+play,2,1,finls001,31,BBBCX,8/F8
+play,2,1,colbg001,01,CX,63/G
+play,2,1,lee-t002,22,FCBBC,K/C
+play,3,0,jackd003,01,CX,S9/9S
+play,3,0,tollb001,01,L1,PO1(13)
+play,3,0,tollb001,02,L1SS,K
+play,3,0,owene001,02,CFS,K
+play,3,1,stink001,22,BCSBFC,K/C
+play,3,1,stott001,12,BFCC,K/C
+play,3,1,womat001,11,CBX,7/F7S
+play,4,0,marta001,12,FSBS,K
+play,4,0,klesr001,21,BCBX,HR/9
+play,4,0,nevip001,02,CSS,K
+play,4,0,hernc001,10,BX,63/G
+play,4,1,bellj001,22,BFBCS,K
+play,4,1,gonzl001,32,FBCBBX,8/F8D
+play,4,1,willm003,32,BCBFBB,W
+play,4,1,finls001,00,X,S8.1-2
+play,4,1,colbg001,00,X,54(1)/FO.2-3
+play,5,0,boonb002,22,CCBBX,S7
+play,5,0,river002,21,SBBC,SB2.1-3(E2/TH2)
+play,5,0,river002,22,SBBCX,9/SF.3-H(UR)
+play,5,0,jackd003,02,CFS,K
+play,5,0,tollb001,12,FBSS,K
+play,5,1,lee-t002,31,BBCBB,W
+play,5,1,stink001,12,CBFFS,K
+play,5,1,stott001,01,CX,53/SH.1-2
+play,5,1,womat001,11,BFX,E4/G.2-H(UR)
+play,5,1,bellj001,02,FCC,K/C
+com,"ej,bellj001,P,eddid901,Balls and strikes"
+com,"Jay Bell ejected by HP umpire Doug Eddings"
+play,6,0,owene001,00,,NP
+sub,counc001,"Craig Counsell",1,2,4
+play,6,0,owene001,00,X,63/G
+play,6,0,marta001,01,CX,4/P4
+play,6,0,klesr001,02,SFX,HR/9
+play,6,0,nevip001,11,BSX,63/G
+play,6,1,gonzl001,21,CBBX,9/F9
+play,6,1,willm003,01,FX,53/G
+play,6,1,finls001,11,CBX,6/P6
+play,7,0,hernc001,11,BSX,53/G
+play,7,0,boonb002,12,SBFS,K
+play,7,0,river002,12,BSSS,K
+play,7,1,colbg001,20,BBX,2/FL
+play,7,1,lee-t002,02,FFFC,K/C
+play,7,1,stink001,01,CX,63/G
+play,8,0,jackd003,00,X,S7
+play,8,0,tollb001,00,,NP
+sub,magad001,"Dave Magadan",0,9,11
+play,8,0,magad001,22,BBCFS,K
+play,8,0,owene001,10,BB,SB2
+play,8,0,owene001,32,BBFFBX,43/G.2-3
+play,8,0,marta001,00,,NP
+sub,plesd001,"Dan Plesac",1,9,1
+play,8,0,marta001,00,,NP
+sub,sprae001,"Ed Sprague",0,2,11
+play,8,0,sprae001,30,IIII,IW
+play,8,0,klesr001,00,,NP
+sub,dehak001,"Kory DeHaan",0,2,12
+play,8,0,klesr001,12,BSCB,SB2
+play,8,0,klesr001,32,BSCBBS,K
+play,8,1,plesd001,00,,NP
+sub,dehak001,"Kory DeHaan",0,2,9
+play,8,1,plesd001,00,,NP
+sub,owene001,"Eric Owens",0,1,7
+play,8,1,plesd001,00,,NP
+sub,walkk001,"Kevin Walker",0,9,1
+play,8,1,plesd001,00,,NP
+sub,bautd001,"Danny Bautista",1,9,11
+play,8,1,bautd001,11,BFX,5/FL
+play,8,1,womat001,32,CSBFFBBX,43/G
+play,8,1,counc001,32,BBCBCX,7/F7
+play,9,0,nevip001,00,,NP
+sub,mantm001,"Matt Mantei",1,9,1
+play,9,0,nevip001,00,X,D9/9D
+play,9,0,hernc001,22,SBBFC,K/C
+play,9,0,boonb002,02,SSC,K/C
+play,9,0,river002,31,BSBBX,4/P4
+play,9,1,gonzl001,00,,NP
+sub,hofft001,"Trevor Hoffman",0,9,1
+play,9,1,gonzl001,21,CBBX,D9
+play,9,1,willm003,32,BFSFBBS,K
+play,9,1,finls001,31,BBCBB,W
+play,9,1,colbg001,00,X,3/FL
+play,9,1,lee-t002,22,CBSFBC,K/C
+data,er,tollb001,0
+data,er,walkk001,0
+data,er,hofft001,0
+data,er,stott001,2
+data,er,plesd001,0
+data,er,mantm001,0

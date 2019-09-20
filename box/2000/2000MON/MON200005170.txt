@@ -1,0 +1,159 @@
+version,2
+info,visteam,ARI
+info,hometeam,MON
+info,site,MON02
+info,date,2000/05/17
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,barrt901
+info,ump1b,laynj901
+info,ump2b,monte901
+info,ump3b,randt901
+info,pitches,pitches
+info,temp,72
+info,winddir,unknown
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,146
+info,attendance,8766
+info,wp,pavac001
+info,lp,reyna001
+info,save,
+start,womat001,"Tony Womack",0,1,6
+start,bellj001,"Jay Bell",0,2,4
+start,gonzl001,"Luis Gonzalez",0,3,7
+start,durae001,"Erubiel Durazo",0,4,3
+start,finls001,"Steve Finley",0,5,8
+start,lee-t002,"Travis Lee",0,6,9
+start,milld002,"Damian Miller",0,7,2
+start,fox-a001,"Andy Fox",0,8,5
+start,reyna001,"Armando Reynoso",0,9,1
+start,bergp001,"Peter Bergeron",1,1,8
+start,vidrj001,"Jose Vidro",1,2,4
+start,whitr001,"Rondell White",1,3,7
+start,guerv001,"Vladimir Guerrero",1,4,9
+start,stevl001,"Lee Stevens",1,5,3
+start,traca001,"Andy Tracy",1,6,5
+start,widgc001,"Chris Widger",1,7,2
+start,cabro001,"Orlando Cabrera",1,8,6
+start,pavac001,"Carl Pavano",1,9,1
+play,1,0,womat001,11,CBX,3/G
+play,1,0,bellj001,32,BBBCCX,13/G
+play,1,0,gonzl001,10,BX,S/78
+play,1,0,durae001,00,X,63/G
+play,1,1,bergp001,00,X,S7
+play,1,1,vidrj001,02,CFX,D9.1-H
+play,1,1,whitr001,00,X,S7/7S.2-H
+play,1,1,guerv001,22,CFBBX,D7.1-3
+play,1,1,stevl001,10,BX,43/G.3-H;2-3
+play,1,1,traca001,10,BX,9/F9S
+play,1,1,widgc001,22,BBCSC,K/C
+play,2,0,finls001,11,CBX,HR/8
+play,2,0,lee-t002,12,CFBS,K
+play,2,0,milld002,12,BFFX,53/G
+play,2,0,fox-a001,11,BSX,S7/7S
+play,2,0,reyna001,22,CBCBS,K
+play,2,1,cabro001,11,CBX,D7/7S
+play,2,1,pavac001,00,X,34/SH.2-3
+play,2,1,bergp001,00,X,7/F7
+play,2,1,vidrj001,21,CBBX,D/78.3-H
+play,2,1,whitr001,10,BX,3/FL
+play,3,0,womat001,12,CFBX,63/G
+play,3,0,bellj001,00,X,53/G
+play,3,0,gonzl001,22,BFCFBS,K
+play,3,1,guerv001,32,FBBFBX,HR/7
+play,3,1,stevl001,32,BSSBBX,3/G
+play,3,1,traca001,10,BX,4/P4
+play,3,1,widgc001,10,BX,3/FL
+play,4,0,durae001,22,CBBFS,K
+play,4,0,finls001,32,CBBFBB,W
+play,4,0,lee-t002,00,X,7/F7
+play,4,0,milld002,12,CCBS,K
+play,4,1,cabro001,12,CBSX,31/G
+play,4,1,pavac001,10,BX,9/F9
+play,4,1,bergp001,10,BX,HR/9
+play,4,1,vidrj001,21,BCBX,D7/7S
+play,4,1,whitr001,11,BCX,D9.2-H
+play,4,1,guerv001,30,IIII,IW
+play,4,1,stevl001,00,,NP
+sub,plesd001,"Dan Plesac",0,6,1
+play,4,1,stevl001,00,,NP
+sub,harrl001,"Lenny Harris",0,9,9
+play,4,1,stevl001,02,CCX,63/G
+play,5,0,fox-a001,22,BCFBFX,1/P1
+play,5,0,harrl001,01,CX,8/F8D
+play,5,0,womat001,02,FFFFX,13/G
+play,5,1,traca001,10,BX,S8
+play,5,1,widgc001,32,BSFBBB,W.1-2
+play,5,1,cabro001,01,CX,S89/89S.2-H(E8/TH);1-H(UR)(NR);B-3
+play,5,1,pavac001,12,FFBFX,53/G
+play,5,1,bergp001,12,CBFB,WP.3-H(UR)
+play,5,1,bergp001,22,CBFBS,K
+play,5,1,vidrj001,30,BBBB,W
+play,5,1,whitr001,00,,NP
+sub,sprir001,"Russ Springer",0,6,1
+play,5,1,whitr001,02,FCS,K
+play,6,0,bellj001,32,FFBFBBS,K
+play,6,0,gonzl001,01,CX,3/G
+play,6,0,durae001,01,CX,3/G
+play,6,1,guerv001,11,SBX,8/F8D
+play,6,1,stevl001,20,BBX,6/P6
+play,6,1,traca001,22,SFBBFC,K/C
+play,7,0,finls001,22,FBCBFFC,K/C
+play,7,0,sprir001,00,,NP
+sub,friah001,"Hanley Frias",0,6,11
+play,7,0,friah001,32,CBFBBX,63/G
+play,7,0,milld002,22,BBFFS,K
+play,7,1,widgc001,00,,NP
+sub,friah001,"Hanley Frias",0,6,5
+play,7,1,widgc001,00,,NP
+sub,fox-a001,"Andy Fox",0,8,8
+play,7,1,widgc001,00,,NP
+sub,padiv001,"Vicente Padilla",0,5,1
+play,7,1,widgc001,31,FBBBX,3/FL
+play,7,1,cabro001,10,BX,43/G
+play,7,1,pavac001,11,CBX,S9
+play,7,1,bergp001,12,CBSFX,54(1)/FO
+play,8,0,fox-a001,12,FFBX,6/P6
+play,8,0,harrl001,01,FX,63/G
+play,8,0,womat001,12,SFBX,HR/9
+play,8,0,bellj001,22,BCFBFX,13/G
+play,8,1,vidrj001,00,,NP
+sub,friah001,"Hanley Frias",0,6,4
+play,8,1,vidrj001,00,,NP
+sub,klasd001,"Danny Klassen",0,2,5
+play,8,1,vidrj001,12,CCBX,31/G
+play,8,1,whitr001,32,BCBBFS,K
+play,8,1,guerv001,12,CFFBX,D9
+play,8,1,stevl001,00,,NP
+sub,guerw001,"Wilton Guerrero",1,4,12
+play,8,1,stevl001,02,FSFFFS,K
+play,9,0,gonzl001,00,,NP
+sub,jonet004,"Terry Jones",1,3,7
+play,9,0,gonzl001,00,,NP
+sub,guerw001,"Wilton Guerrero",1,4,9
+play,9,0,gonzl001,00,,NP
+sub,mordm001,"Mike Mordecai",1,6,5
+play,9,0,gonzl001,00,,NP
+sub,blanm001,"Matt Blank",1,9,1
+play,9,0,gonzl001,00,,NP
+sub,gilkb001,"Bernard Gilkey",0,3,11
+play,9,0,gilkb001,02,CFX,8/F8
+play,9,0,durae001,00,,NP
+sub,colbg001,"Greg Colbrunn",0,4,11
+play,9,0,colbg001,20,BBX,S7
+play,9,0,padiv001,00,,NP
+sub,stink001,"Kelly Stinnett",0,5,11
+play,9,0,stink001,11,BSX,S9.1-2
+play,9,0,friah001,10,BX,8/F8
+play,9,0,milld002,00,X,9/F9
+data,er,reyna001,7
+data,er,plesd001,1
+data,er,sprir001,0
+data,er,padiv001,0
+data,er,pavac001,2
+data,er,blanm001,0

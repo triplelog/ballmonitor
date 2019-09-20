@@ -1,0 +1,74 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,02,1,,,,,0,4,CFFX,perec001,1,0,murrc001 grounds out. ,murrc001,0,G
+,01,1,,,,,1,6,CX,perec001,1,0,davir002 grounds out. ,davir002,0,G
+,11,1,,,,,2,9,BFX,perec001,1,0,,bondb001,0,F
+,01,1,lodup001,,,,3,2,CX,estes001,0,0,lodup001 singles. ,lodup001,1,
+,00,1,,,,,4,3,X,estes001,2,0,Double Play. ,grudm001,1,
+,10,1,,,,,5,5,BX,estes001,1,0,,grees001,1,F
+,01,2,kentj001,,,,6,11,CX,perec001,0,0,kentj001 reaches on error. ,kentj001,0,
+,21,2,kentj001,,,,7,15,FBBX,perec001,1,0,,burke001,0,F
+kentj001 to 3B. ,01,2,aurir001,,kentj001,,8,17,CX,perec001,0,0,aurir001 singles. ,aurir001,0,
+,00,2,,,kentj001,,9,18,X,perec001,2,0,Double Play. ,snowj001,0,
+,10,2,,shefg001,,,10,7,BX,estes001,0,0,shefg001 doubles. ,shefg001,1,
+,30,2,karre001,shefg001,,,11,11,BBBB,estes001,0,0,karre001 walks. ,karre001,1,
+shefg001 to 3B. karre001 to 2B. ,32,2,belta001,karre001,shefg001,,12,17,CBFBBB,estes001,0,0,belta001 walks. ,belta001,1,
+shefg001 scores. ,31,2,belta001,karre001,,,13,22,BBBCX,estes001,1,1,hollt001 hits sacrifice fly. ,hollt001,1,
+,22,2,belta001,karre001,,,14,27,FCBBS,estes001,1,0,elstk001 strikes out. ,elstk001,1,
+karre001 scores. belta001 scores. ,22,2,,,perec001,,15,32,BBCSX,estes001,0,2,perec001 triples. ,perec001,1,
+,01,2,,,perec001,,16,34,CX,estes001,1,0,lodup001 grounds out. ,lodup001,1,G
+,10,3,,,,,17,20,BX,perec001,1,0,estab001 grounds out. ,estab001,0,G
+,01,3,estes001,,,,18,22,SX,perec001,0,0,estes001 singles. ,estes001,0,
+estes001 out. ,11,3,murrc001,,,,19,25,BFX,perec001,1,0,murrc001 reaches on fielder's choice. ,murrc001,0,
+,10,3,,,,davir002,20,27,B1,perec001,1,0,murrc001 picked off. ,davir002,0,
+,32,3,grudm001,,,,21,41,FSBFBBB,estes001,0,0,grudm001 walks. ,grudm001,1,
+,01,3,grudm001,,,,22,43,CX,estes001,1,0,,grees001,1,F
+grudm001 out. ,12,3,shefg001,,,,23,48,CBSFX,estes001,1,0,shefg001 reaches on fielder's choice. ,shefg001,1,
+shefg001 to 2B. ,00,3,karre001,shefg001,,,24,49,X,estes001,0,0,karre001 singles. ,karre001,1,
+,12,3,karre001,shefg001,,,25,54,CSFBS,estes001,1,0,belta001 strikes out. ,belta001,1,
+,00,4,,,,,26,28,X,perec001,1,0,,davir002,0,F
+,10,4,,,,,27,30,BX,perec001,1,0,bondb001 grounds out. ,bondb001,0,G
+,21,4,kentj001,,,,28,34,BBCX,perec001,0,0,kentj001 singles. ,kentj001,0,
+,10,4,kentj001,,,,29,36,BX,perec001,1,0,,burke001,0,P
+,12,4,,,,,30,58,BCFX,estes001,1,0,,hollt001,1,F
+,00,4,,,,,31,59,X,estes001,1,0,,elstk001,1,F
+,22,4,,,,,32,64,FBFBX,estes001,1,0,perec001 grounds out. ,perec001,1,G
+,01,5,,,,,33,38,CX,perec001,1,0,,aurir001,0,F
+,02,5,snowj001,,,,34,42,CFFX,perec001,0,0,snowj001 singles. ,snowj001,0,
+,00,5,snowj001,,,,35,43,X,perec001,1,0,,estab001,0,P
+,02,5,snowj001,,,,36,46,FCS,perec001,1,0,estes001 strikes out. ,estes001,0,
+,11,5,,,,,37,67,BCX,estes001,1,0,,lodup001,1,F
+,32,5,,,,,38,73,CBBBFX,estes001,1,0,grudm001 grounds out. ,grudm001,1,G
+,11,5,,,,,39,76,BCX,estes001,1,0,grees001 grounds out. ,grees001,1,G
+,00,6,murrc001,,,,40,47,X,perec001,0,0,murrc001 singles. ,murrc001,0,G
+murrc001 to 3B. ,32,6,davir002,,murrc001,,41,54,CBSFBBX,perec001,0,0,davir002 singles. ,davir002,0,
+murrc001 scores. ,11,6,davir002,,,,42,57,BCX,perec001,1,1,bondb001 hits sacrifice fly. ,bondb001,0,
+,32,6,davir002,,,,43,64,BFFFBBX,perec001,1,0,,kentj001,0,F
+davir002 to 2B. ,12,6,burke001,davir002,,,44,68,SFBX,perec001,0,0,burke001 singles. ,burke001,0,
+davir002 scores. burke001 to 3B. ,01,6,,aurir001,burke001,,45,70,CX,perec001,0,1,aurir001 doubles. ,aurir001,0,
+burke001 scores. aurir001 scores. ,11,6,snowj001,,,,46,73,FBX,perec001,0,2,snowj001 singles. ,snowj001,0,
+,10,6,snowj001,,,,47,75,BX,perec001,1,0,,estab001,0,F
+,31,6,,shefg001,,,48,81,BCBBX,estes001,0,0,shefg001 doubles. ,shefg001,1,
+,02,6,,shefg001,,,49,85,CFFS,estes001,1,0,karre001 strikes out. ,karre001,1,
+shefg001 to 3B. ,00,6,,,shefg001,,50,86,X,estes001,1,0,belta001 grounds out. ,belta001,1,G
+,11,6,,,shefg001,,51,89,BCX,estes001,1,0,hollt001 grounds out. ,hollt001,1,G
+,12,7,,,,,52,80,CFBFS,perec001,1,0,estes001 strikes out. ,estes001,0,
+,22,7,,,,,53,85,BBFFX,perec001,1,0,,murrc001,0,F
+,10,7,,,,,54,87,BX,perec001,1,0,,davir002,0,L
+,31,7,,,,,55,94,CBBBX,estes001,1,0,,elstk001,1,P
+,12,7,,,,,57,98,BCFS,estes001,1,0,leyrj001 strikes out. ,leyrj001,1,
+,21,7,,,,,58,102,LBBX,estes001,1,0,lodup001 grounds out. ,lodup001,1,G
+,11,8,,,,,60,3,CBX,hergm001,0,1,bondb001 homers. ,bondb001,0,
+,31,8,kentj001,,,,61,8,BSBBB,hergm001,0,0,kentj001 walks. ,kentj001,0,
+,10,8,,,,burke001,62,10,BS,hergm001,1,0,kentj001 caught stealing. ,burke001,0,
+,11,8,,,,,63,13,BSX,hergm001,1,0,burke001 grounds out. ,burke001,0,G
+,10,8,aurir001,,,,64,15,BX,hergm001,0,0,aurir001 singles. ,aurir001,0,
+,32,8,aurir001,,,,65,23,CSFBBBFS,hergm001,1,0,snowj001 strikes out. ,snowj001,0,
+,30,8,grudm001,,,,66,106,BBBB,estes001,0,0,grudm001 walks. ,grudm001,1,
+grudm001 to 3B. ,11,8,grees001,,grudm001,,67,109,FBX,estes001,0,0,grees001 singles. ,grees001,1,
+,11,8,grees001,,grudm001,,69,3,BSX,rodrf002,1,0,,shefg001,1,P
+grudm001 scores. grees001 scores. ,31,8,,,,,70,8,BBBCX,rodrf002,0,3,karre001 homers. ,karre001,1,
+,10,8,,,,,71,10,BX,rodrf002,1,0,,belta001,1,F
+,02,8,,,,,72,14,SSFS,rodrf002,1,0,hollt001 strikes out. ,hollt001,1,
+,12,9,,,,,76,5,BCSFS,shawj001,1,0,benam001 strikes out. ,benam001,0,
+,11,9,,,,,78,8,BFX,shawj001,1,0,riosa001 grounds out. ,riosa001,0,G
+,32,9,,,,,80,14,SCBBBS,shawj001,1,0,cresf001 strikes out. ,cresf001,0,

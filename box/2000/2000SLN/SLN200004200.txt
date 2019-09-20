@@ -1,0 +1,192 @@
+version,2
+info,visteam,SDN
+info,hometeam,SLN
+info,site,STL09
+info,date,2000/04/20
+info,number,0
+info,starttime,7:10PM
+info,daynight,night
+info,usedh,false
+info,umphome,younl901
+info,ump1b,bonig901
+info,ump2b,katzt901
+info,ump3b,mealj901
+info,pitches,pitches
+info,temp,52
+info,winddir,rtol
+info,windspeed,22
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,210
+info,attendance,32510
+info,wp,ankir001
+info,lp,boehb001
+info,save,
+start,marta001,"Al Martin",0,1,7
+start,jackd003,"Damian Jackson",0,2,6
+start,owene001,"Eric Owens",0,3,8
+start,nevip001,"Phil Nevin",0,4,5
+start,sprae001,"Ed Sprague",0,5,3
+start,boonb002,"Bret Boone",0,6,4
+start,gonzw001,"Wiki Gonzalez",0,7,2
+start,roskj001,"John Roskos",0,8,9
+start,boehb001,"Brian Boehringer",0,9,1
+start,vinaf001,"Fernando Vina",1,1,4
+start,rente001,"Edgar Renteria",1,2,6
+start,edmoj001,"Jim Edmonds",1,3,8
+start,mcgwm001,"Mark McGwire",1,4,3
+start,lankr001,"Ray Lankford",1,5,7
+start,tatif001,"Fernando Tatis",1,6,5
+start,drewj001,"J.D. Drew",1,7,9
+start,marre001,"Eli Marrero",1,8,2
+start,ankir001,"Rick Ankiel",1,9,1
+play,1,0,marta001,02,CCS,K
+play,1,0,jackd003,32,SBCFFBBB,W
+play,1,0,owene001,32,BBCFFFBB,W.1-2
+play,1,0,nevip001,32,CBBSBFFB,W.2-3;1-2
+play,1,0,sprae001,12,CBCS,K
+play,1,0,boonb002,31,BBBCX,2/FL
+play,1,1,vinaf001,01,CX,E4/G
+play,1,1,rente001,11,CBX,3/FL
+play,1,1,edmoj001,32,FBBBCB,W.1-2
+play,1,1,mcgwm001,31,BSBBB,W.2-3;1-2
+play,1,1,lankr001,32,BBSFBB,W.3-H(UR);2-3;1-2
+play,1,1,tatif001,32,BSBBFB,W.3-H;2-3;1-2
+play,1,1,drewj001,12,CCFBC,K/C
+play,1,1,marre001,10,BX,HR/7.3-H(UR);2-H(UR);1-H(UR);B-H(UR)
+play,1,1,ankir001,32,BFBBFX,S/78
+play,1,1,vinaf001,11,BCX,3/G#
+play,2,0,gonzw001,20,BBX,S8
+play,2,0,roskj001,22,BFSBFFS,K
+play,2,0,boehb001,22,CSBBX,64(1)3/GDP
+play,2,1,rente001,00,X,4/P4
+play,2,1,edmoj001,22,CBBFC,K/C
+play,2,1,mcgwm001,02,FFX,6/F6
+play,3,0,marta001,00,X,3/G
+play,3,0,jackd003,22,BCCBX,8/F8
+play,3,0,owene001,31,BBCBB,W
+play,3,0,nevip001,22,BFCFBC,K/C
+com,"ej,bochb002,M,younl901,Balls and strikes"
+com,"ej,nevip001,P,younl901,Balls and strikes"
+com,"$after going to 3B for the bottom of the inning, Phil Nevin yelled"
+com,"at HP umpire Larry Young and was ejected by Young; Nevin threw his"
+com,"glove and hat in the air as he left the field and then tookoff his"
+com,"jersey and dropped it in foul territory. Padre manager Bochy also"
+com,"ejected"
+play,3,1,lankr001,00,,NP
+sub,newhd001,"David Newhan",0,4,5
+play,3,1,lankr001,22,CCBBX,S8
+play,3,1,tatif001,32,FBBCBS,K+CS2(24)/DP
+play,3,1,drewj001,31,BBBCB,W
+play,3,1,marre001,21,BFBX,8/F8
+play,4,0,sprae001,12,BFCX,53/G
+play,4,0,boonb002,31,BBFBX,9/F9
+play,4,0,gonzw001,31,BBSBB,W
+play,4,0,roskj001,01,SX,8/F8
+play,4,1,ankir001,10,BX,S8
+play,4,1,vinaf001,01,CX,S9/9S.1-2
+play,4,1,rente001,00,,NP
+sub,palav001,"Vicente Palacios",0,6,1
+play,4,1,rente001,00,,NP
+sub,gomec001,"Chris Gomez",0,9,4
+play,4,1,rente001,32,BFBCBX,43/G.2-3;1-2
+play,4,1,edmoj001,02,CCS,K
+play,4,1,mcgwm001,30,IIII,IW
+play,4,1,lankr001,11,BSX,S9.3-H;2-H;1-2
+play,4,1,tatif001,00,X,D7.2-H;1-H
+play,4,1,drewj001,32,CBBCBS,K
+play,5,0,gomec001,11,CBX,43/G
+play,5,0,marta001,10,BX,S
+play,5,0,jackd003,30,BBBB,W.1-2
+play,5,0,owene001,02,CFFB,PB.2-3;1-2
+play,5,0,owene001,12,CFFBX,13/G
+play,5,0,newhd001,32,BBSFBB,W
+play,5,0,sprae001,22,BSBCFX,64(1)/FO
+play,5,1,marre001,22,FBBFX,HR/7
+play,5,1,ankir001,00,X,HR/7
+play,5,1,vinaf001,02,CCX,63/G
+play,5,1,rente001,12,CFBFS,K
+play,5,1,edmoj001,00,X,S9/9S
+play,5,1,mcgwm001,22,BCBSX,E3/G.1-2
+play,5,1,lankr001,00,,NP
+sub,paquc001,"Craig Paquette",1,4,12
+play,5,1,lankr001,32,BBCFBB,W.2-3;1-2
+play,5,1,tatif001,00,,NP
+sub,walkk001,"Kevin Walker",0,5,1
+play,5,1,tatif001,00,,NP
+sub,roskj001,"John Roskos",0,8,3
+play,5,1,tatif001,00,,NP
+sub,darrm001,"Mike Darr",0,6,9
+play,5,1,tatif001,31,CBBBB,W.3-H(UR);2-3;1-2
+play,5,1,drewj001,11,BCX,S.3-H(UR);2-3;1-2
+play,5,1,marre001,11,CBX,31/G
+play,6,0,darrm001,00,,NP
+sub,polap001,"Placido Polanco",1,2,6
+play,6,0,darrm001,00,,NP
+sub,mathm001,"Mike Matheny",1,3,3
+play,6,0,darrm001,00,,NP
+sub,drewj001,"J.D. Drew",1,7,8
+play,6,0,darrm001,00,,NP
+sub,paquc001,"Craig Paquette",1,4,5
+play,6,0,darrm001,00,,NP
+sub,howat001,"Thomas Howard",1,9,9
+play,6,0,darrm001,00,,NP
+sub,stecg001,"Gene Stechschulte",1,6,1
+play,6,0,darrm001,22,CBFBC,K/C
+com,"Debut game for Gene Stechschulte"
+play,6,0,gonzw001,30,BBBB,W
+play,6,0,roskj001,00,X,D/78.1-3
+play,6,0,gomec001,32,BBCFBX,53/G.3-H
+play,6,0,marta001,32,BFBBFX,53/G
+play,6,1,howat001,10,BX,4/P4
+play,6,1,vinaf001,01,CX,S9
+play,6,1,polap001,22,FFBBX,54(1)/FO
+play,6,1,mathm001,02,CSB,WP.1-2
+play,6,1,mathm001,32,CSBBBB,W
+play,6,1,paquc001,22,BFSBC,K/C
+play,7,0,jackd003,00,,NP
+sub,mohlm001,"Mike Mohler",1,6,1
+play,7,0,jackd003,21,CBBX,4/P4
+play,7,0,owene001,11,SBX,4/P4
+play,7,0,newhd001,31,BFBBB,W
+play,7,0,walkk001,21,BBFX,S8/8S.1-2
+play,7,0,darrm001,11,BFX,64(1)/FO.2-3
+play,7,1,lankr001,00,,NP
+sub,cunnw001,"Will Cunnane",0,5,1
+play,7,1,lankr001,32,BBBCFB,W
+play,7,1,mohlm001,00,X,S9.1-2
+play,7,1,drewj001,12,CFBS,K
+play,7,1,marre001,12,BCFFX,9/L9
+play,7,1,howat001,32,BFSBBFS,K
+play,8,0,gonzw001,00,,NP
+sub,waind001,"David Wainhouse",1,6,1
+play,8,0,gonzw001,00,X,7/L7
+play,8,0,roskj001,22,BCFBS,K
+play,8,0,gomec001,12,CCBX,S8/8S
+play,8,0,marta001,32,BSSBBX,S8.1-3
+play,8,0,jackd003,32,BSBFFFBX,7/F7S
+play,8,1,vinaf001,00,,NP
+sub,whism001,"Matt Whisenant",0,5,1
+play,8,1,vinaf001,22,CBFBC,K/C
+play,8,1,polap001,32,SBBBCX,9/F9
+play,8,1,mathm001,32,CCBBFBX,S
+play,8,1,paquc001,00,B,WP.1-2
+play,8,1,paquc001,21,BSBX,9/F9
+play,9,0,owene001,00,,NP
+sub,jamem001,"Mike James",1,6,1
+play,9,0,owene001,00,X,3/P3
+play,9,0,newhd001,00,X,8/F8
+play,9,0,whism001,00,,NP
+sub,klesr001,"Ryan Klesko",0,5,11
+play,9,0,klesr001,00,X,43/G
+data,er,boehb001,3
+data,er,palav001,4
+data,er,walkk001,0
+data,er,cunnw001,0
+data,er,whism001,0
+data,er,ankir001,0
+data,er,stecg001,1
+data,er,mohlm001,0
+data,er,waind001,0
+data,er,jamem001,0

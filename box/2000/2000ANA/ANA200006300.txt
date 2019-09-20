@@ -1,0 +1,120 @@
+version,2
+info,visteam,OAK
+info,hometeam,ANA
+info,site,ANA01
+info,date,2000/06/30
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,onorb901
+info,ump1b,iassd901
+info,ump2b,hirsm901
+info,ump3b,bellw901
+info,pitches,pitches
+info,oscorer,munse701
+info,temp,74
+info,winddir,ltor
+info,windspeed,6
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,149
+info,attendance,28765
+info,wp,coopb001
+info,lp,muldm001
+info,save,
+start,longt002,"Terrence Long",0,1,8
+start,velar001,"Randy Velarde",0,2,4
+start,giamj001,"Jason Giambi",0,3,3
+start,grieb001,"Ben Grieve",0,4,7
+start,tejam001,"Miguel Tejada",0,5,6
+start,staim001,"Matt Stairs",0,6,9
+start,jahaj001,"John Jaha",0,7,10
+start,chave001,"Eric Chavez",0,8,5
+start,hernr002,"Ramon Hernandez",0,9,2
+start,muldm001,"Mark Mulder",0,0,1
+start,erstd001,"Darin Erstad",1,1,7
+start,gil-b001,"Benji Gil",1,2,6
+start,vaugm001,"Mo Vaughn",1,3,3
+start,salmt001,"Tim Salmon",1,4,9
+start,andeg001,"Garret Anderson",1,5,8
+start,glaut001,"Troy Glaus",1,6,5
+start,molib001,"Ben Molina",1,7,2
+start,spies001,"Scott Spiezio",1,8,10
+start,kenna001,"Adam Kennedy",1,9,4
+start,coopb001,"Brian Cooper",1,0,1
+play,1,0,longt002,11,BCX,43/G
+play,1,0,velar001,01,CX,43/G
+play,1,0,giamj001,21,CBBX,S9/9S
+play,1,0,grieb001,22,CBFFBX,43/G
+play,1,1,erstd001,11,BCX,S7
+play,1,1,gil-b001,10,BB,SB2
+play,1,1,gil-b001,20,BBX,3/SH.2-3
+play,1,1,vaugm001,31,BBBFB,W
+play,1,1,salmt001,01,FX,7/SF.3-H
+play,1,1,andeg001,00,X,D7/7D.1-3
+play,1,1,glaut001,30,IIII,IW
+play,1,1,molib001,00,X,8/F8
+play,2,0,tejam001,02,CFFX,9/F9
+play,2,0,staim001,22,CCBBX,31/G
+play,2,0,jahaj001,01,FX,63/G
+play,2,1,spies001,02,SFX,53/G
+play,2,1,kenna001,22,BFBFX,S
+play,2,1,erstd001,10,BX,46(1)/FO
+play,2,1,gil-b001,01,CX,S7.1-3
+play,2,1,vaugm001,21,CBBX,S8.3-H;1-3
+play,2,1,salmt001,00,X,43/G
+play,3,0,chave001,32,BBSBSFFFX,1/G
+play,3,0,hernr002,10,BX,6/P6
+play,3,0,longt002,12,CBCS,K
+play,3,1,andeg001,01,FX,8/F8
+play,3,1,glaut001,32,BFBSBX,63/G
+play,3,1,molib001,00,X,4/P4
+play,4,0,velar001,22,CFBBFX,8/F8D
+play,4,0,giamj001,10,BX,5/FL
+play,4,0,grieb001,31,BBBCX,7/F7
+play,4,1,spies001,22,SCBBX,63/G
+play,4,1,kenna001,22,FBFBX,63/G
+play,4,1,erstd001,00,X,8/F8
+play,5,0,tejam001,31,BFBBX,43/G
+play,5,0,staim001,21,BBCX,S9/9S
+play,5,0,jahaj001,12,CCBS,K
+play,5,0,chave001,11,CBX,53/G
+play,5,1,gil-b001,01,LX,7/F7
+play,5,1,vaugm001,00,X,43/G
+play,5,1,salmt001,01,CX,7/F7
+play,6,0,hernr002,02,SCX,53/G
+play,6,0,longt002,32,CBSBBB,W
+play,6,0,velar001,12,CBCX,9(B)3(1)/LDP
+play,6,1,andeg001,00,X,HR/9
+play,6,1,glaut001,21,BFBX,63/G
+play,6,1,molib001,22,FCBFFFBFX,HR/7
+play,6,1,spies001,00,X,S9/9S
+play,6,1,kenna001,11,FBB,CS2(2634)
+play,6,1,kenna001,21,FBBX,D9
+play,6,1,erstd001,11,BFX,S8.2-H
+play,6,1,gil-b001,00,,NP
+sub,matht002,"T.J. Mathews",0,0,1
+play,6,1,gil-b001,11,BCX,HR/78.1-H
+play,6,1,vaugm001,12,BCSC,K/C
+play,7,0,giamj001,12,BSCFFFFS,K
+play,7,0,grieb001,22,CCFBBFX,7/F7S
+play,7,0,tejam001,21,CBBX,63/G
+play,7,1,salmt001,02,CFX,D7/7D
+play,7,1,andeg001,02,SFX,7/F7
+play,7,1,glaut001,32,FSBBBS,K
+play,7,1,molib001,01,FX,7/F7
+play,8,0,staim001,32,BFBCBX,13/G
+play,8,0,jahaj001,22,CCBBX,S
+play,8,0,chave001,00,X,16(1)3/GDP
+play,8,1,spies001,00,X,43/G
+play,8,1,kenna001,22,BCCFBFX,3/G
+play,8,1,erstd001,32,CFBBBFB,W
+play,8,1,gil-b001,12,BSFS,K
+play,9,0,hernr002,02,FCC,K/C
+play,9,0,longt002,10,BX,7/L7
+play,9,0,velar001,31,BBBCX,53/G
+data,er,muldm001,6
+data,er,matht002,1
+data,er,coopb001,0

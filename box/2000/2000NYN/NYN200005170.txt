@@ -1,0 +1,135 @@
+version,2
+info,visteam,COL
+info,hometeam,NYN
+info,site,NYC17
+info,date,2000/05/17
+info,number,0
+info,starttime,7:10PM
+info,daynight,night
+info,usedh,false
+info,umphome,rungb901
+info,ump1b,shulj901
+info,ump2b,millb901
+info,ump3b,rapue901
+info,pitches,pitches
+info,temp,65
+info,winddir,tolf
+info,windspeed,4
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,177
+info,attendance,23665
+info,wp,leita001
+info,lp,arror001
+info,save,franj001
+start,huntb002,"Brian L. Hunter",0,1,8
+start,lansm001,"Mike Lansing",0,2,4
+start,cirij001,"Jeff Cirillo",0,3,5
+start,hammj001,"Jeffrey Hammonds",0,4,9
+start,shumt001,"Terry Shumpert",0,5,7
+start,ledea001,"Aaron Ledesma",0,6,3
+start,servs002,"Scott Servais",0,7,2
+start,peren001,"Neifi Perez",0,8,6
+start,arror001,"Rolando Arrojo",0,9,1
+start,mcewj001,"Joe McEwing",1,1,8
+start,belld001,"Derek Bell",1,2,9
+start,alfoe001,"Edgardo Alfonzo",1,3,4
+start,piazm001,"Mike Piazza",1,4,2
+start,ventr001,"Robin Ventura",1,5,5
+start,zeilt001,"Todd Zeile",1,6,3
+start,agbab001,"Benny Agbayani",1,7,7
+start,ordor001,"Rey Ordonez",1,8,6
+start,leita001,"Al Leiter",1,9,1
+play,1,0,huntb002,22,BCFBX,63/G
+play,1,0,lansm001,12,CBFS,K
+play,1,0,cirij001,01,CX,9/L9
+play,1,1,mcewj001,12,CBFS,K
+play,1,1,belld001,20,BBX,8/F8
+play,1,1,alfoe001,32,CBFBFFBC,K/C
+play,2,0,hammj001,22,BSBFS,K
+play,2,0,shumt001,12,CFBS,K
+play,2,0,ledea001,22,BBFFFX,S
+play,2,0,servs002,32,BBFBFB,W.1-2
+play,2,0,peren001,00,X,2/FL
+play,2,1,piazm001,10,BX,53/G
+play,2,1,ventr001,10,BX,3/L3
+play,2,1,zeilt001,02,CCC,K/C
+play,3,0,arror001,02,CSS,K
+play,3,0,huntb002,32,CLBBBFB,W
+play,3,0,lansm001,00,X,36(1)/FO
+play,3,0,cirij001,00,C,SB2
+play,3,0,cirij001,12,CFBX,D7/7D.2-H
+play,3,0,hammj001,20,BBX,S7.2-H;B-2(THH)
+play,3,0,shumt001,01,CX,63/G
+play,3,1,agbab001,32,CSBBBFX,S9/9S
+play,3,1,ordor001,00,X,S9.1-3
+play,3,1,leita001,22,LSBBL,K/BF
+play,3,1,mcewj001,11,FBX,S9/9S.3-H;1-3
+play,3,1,belld001,30,BBBB,W.1-2
+play,3,1,alfoe001,12,BSCS,K
+play,3,1,piazm001,32,BBBCFX,9/F9
+play,4,0,ledea001,00,X,8/F8
+play,4,0,servs002,01,CX,43/G
+play,4,0,peren001,10,BX,7/F7
+play,4,1,ventr001,11,CBX,3/L3
+play,4,1,zeilt001,32,BCFBBB,W
+play,4,1,agbab001,11,BCX,9/F9
+play,4,1,ordor001,10,BX,S7.1-2
+play,4,1,leita001,22,BBCSS,K
+play,5,0,arror001,00,X,53/G
+play,5,0,huntb002,02,CCS,K
+play,5,0,lansm001,01,FX,4/P4
+play,5,1,mcewj001,00,X,2/FL
+play,5,1,belld001,11,BCX,43/G
+play,5,1,alfoe001,30,BBBB,W
+play,5,1,piazm001,00,X,S.1-2
+play,5,1,ventr001,32,BBFFBX,D9.2-H;1-H
+play,5,1,zeilt001,12,BCCX,3/G
+play,6,0,cirij001,31,BBBCX,8/F8
+play,6,0,hammj001,22,BBFSX,S7
+play,6,0,shumt001,10,BX,36(1)/FO
+play,6,0,ledea001,01,FN,BK.1-2
+play,6,0,ledea001,12,FBCC,K/C
+play,6,1,agbab001,32,CBBBCX,8/F8
+play,6,1,ordor001,00,X,9/F9D
+play,6,1,leita001,32,BBBCSB,W
+play,6,1,mcewj001,12,BFFFFFH,HP.1-2
+play,6,1,belld001,32,SBSBBB,W.2-3;1-2
+play,6,1,alfoe001,02,CCX,31/G
+play,7,0,servs002,00,,NP
+sub,mcewj001,"Joe McEwing",1,1,7
+play,7,0,servs002,00,,NP
+sub,paytj001,"Jay Payton",1,7,8
+play,7,0,servs002,32,CBCBBX,9/F9
+play,7,0,peren001,02,CCC,K/C
+play,7,0,arror001,00,,NP
+sub,bragd001,"Darren Bragg",0,9,11
+play,7,0,bragd001,12,SBSC,K/C
+play,7,1,piazm001,00,,NP
+sub,dejem001,"Mike DeJean",0,9,1
+play,7,1,piazm001,22,CFBFBX,53/G
+play,7,1,ventr001,00,X,S9/9S
+play,7,1,zeilt001,11,SBX,43/G.1-2
+play,7,1,paytj001,31,BBFBB,W
+play,7,1,ordor001,11,CBX,8/F8
+play,8,0,huntb002,12,CBCS,K
+play,8,0,lansm001,32,CBFBBFX,S8/8S
+play,8,0,cirij001,20,BBX,9/F9
+play,8,0,hammj001,30,BBBX,7/F7
+play,8,1,leita001,00,,NP
+sub,nunnj001,"Jon Nunnally",1,9,11
+play,8,1,nunnj001,32,BBBCCX,D9/9S
+play,8,1,mcewj001,00,X,34/SH.2-3
+play,8,1,belld001,02,FSX,S7/7S.3-H
+play,8,1,alfoe001,10,BX,S8.1-3
+play,8,1,piazm001,10,BX,64(1)3/GDP
+play,9,0,shumt001,00,,NP
+sub,franj001,"John Franco",1,9,1
+play,9,0,shumt001,01,CX,53/G
+play,9,0,ledea001,22,CBBSFX,8/F8
+play,9,0,servs002,12,BCSS,K
+data,er,arror001,3
+data,er,dejem001,1
+data,er,leita001,2
+data,er,franj001,0

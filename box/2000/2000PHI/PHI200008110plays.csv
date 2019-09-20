@@ -1,0 +1,84 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,32,1,,,,,0,6,BFBBFC,chenb001,1,0,lugoj001 strikes out. ,lugoj001,0,
+,32,1,,,,,1,14,SSBFFBBX,chenb001,1,0,,bogat001,0,F
+,32,1,bagwj001,,,,2,22,FBSFFBBB,chenb001,0,0,bagwj001 walks. ,bagwj001,0,
+,12,1,bagwj001,,,,3,26,SFBX,chenb001,1,0,,hidar001,0,P
+,11,1,,,,,4,3,BFX,elars001,1,0,,gland001,1,L
+,21,1,,,,,5,7,BBCX,elars001,1,0,,andem003,1,F
+,22,1,,,,,6,12,CSBBS,elars001,1,0,abreb001 strikes out. ,abreb001,1,
+,20,2,,,,,7,29,BBX,chenb001,1,0,aloum001 grounds out. ,aloum001,0,G
+,32,2,berkl001,,,,8,37,FBSBFFBB,chenb001,0,0,berkl001 walks. ,berkl001,0,
+,00,2,berkl001,,,,9,38,X,chenb001,1,0,,trubc001,0,F
+,22,2,berkl001,,,,10,43,CBSBS,chenb001,1,0,euset001 strikes out. ,euset001,0,
+,12,2,liebm001,,,,11,18,BCFFFX,elars001,0,0,liebm001 singles. ,liebm001,1,
+liebm001 to 2B. ,11,2,lee-t002,liebm001,,,12,21,BFX,elars001,0,0,lee-t002 singles. ,lee-t002,1,
+,32,2,lee-t002,liebm001,,,13,27,BSBBSS,elars001,1,0,burrp001 strikes out. ,burrp001,1,
+,12,2,lee-t002,liebm001,,,14,31,BFSX,elars001,1,0,,jordk001,1,F
+,02,2,lee-t002,liebm001,,,15,36,CFFFS,elars001,1,0,peret003 strikes out. ,peret003,1,
+,12,3,,,,,16,47,CCBS,chenb001,1,0,elars001 strikes out. ,elars001,0,
+,00,3,,,,,17,48,X,chenb001,1,0,,lugoj001,0,F
+,32,3,bogat001,,,,18,54,BBSBFB,chenb001,0,0,bogat001 walks. ,bogat001,0,
+bogat001 out. ,00,3,bagwj001,,,,19,55,X,chenb001,1,0,bagwj001 reaches on fielder's choice. ,bagwj001,0,
+,01,3,chenb001,,,,20,38,CX,elars001,0,0,chenb001 singles. ,chenb001,1,
+,32,3,chenb001,,,,21,45,BBCBFFX,elars001,1,0,,gland001,1,
+chenb001 to 2B. ,21,3,andem003,chenb001,,,22,49,SBBX,elars001,0,0,andem003 singles. ,andem003,1,
+chenb001 to 3B. andem003 to 2B. ,30,3,abreb001,andem003,chenb001,,23,53,BBBB,elars001,0,0,abreb001 walks. ,abreb001,1,
+,32,3,abreb001,andem003,chenb001,,24,60,CBCBBFS,elars001,1,0,liebm001 strikes out. ,liebm001,1,
+,01,3,abreb001,andem003,chenb001,,25,62,CX,elars001,1,0,lee-t002 grounds out. ,lee-t002,1,G
+,01,4,,,,,26,57,CX,chenb001,1,0,hidar001 grounds out. ,hidar001,0,G
+,11,4,aloum001,,,,27,60,CBX,chenb001,0,0,aloum001 singles. ,aloum001,0,
+,02,4,aloum001,,,,28,63,CSS,chenb001,1,0,berkl001 strikes out. ,berkl001,0,
+,00,4,aloum001,,,,29,64,X,chenb001,1,0,,trubc001,0,P
+,22,4,,,,,30,67,CFBBS,elars001,1,0,burrp001 strikes out. ,burrp001,1,
+,01,4,,,,,31,69,CX,elars001,0,1,jordk001 homers. ,jordk001,1,
+,02,4,,,,,32,73,SFFS,elars001,1,0,peret003 strikes out. ,peret003,1,
+,12,4,,,,,33,78,CFBFS,elars001,1,0,chenb001 strikes out. ,chenb001,1,
+,10,5,,euset001,,,34,66,BX,chenb001,0,0,euset001 doubles. ,euset001,0,
+euset001 to 3B. ,00,5,,,euset001,,35,67,X,chenb001,1,0,Sacrifice bunt by elars001.,elars001,0,
+,00,5,,,euset001,,36,68,X,chenb001,1,0,,lugoj001,0,F
+,00,5,,,euset001,,37,69,X,chenb001,1,0,,bogat001,0,F
+,00,5,,,,,38,79,X,elars001,1,0,,gland001,1,P
+,22,5,,andem003,,,39,84,BBFFX,elars001,0,0,andem003 doubles. ,andem003,1,
+,32,5,abreb001,andem003,,,40,92,SBFFBBFB,elars001,0,0,abreb001 walks. ,abreb001,1,
+,12,5,abreb001,andem003,,,41,96,SSBX,elars001,1,0,,liebm001,1,F
+,12,5,abreb001,andem003,,,42,100,BFCC,elars001,1,0,lee-t002 strikes out. ,lee-t002,1,
+,12,6,,bagwj001,,,43,73,BFFX,chenb001,0,0,bagwj001 doubles. ,bagwj001,0,
+bagwj001 out. ,01,6,,,,,44,75,CX,chenb001,2,0,,hidar001,0,
+,20,6,,,,,45,78,BBX,chenb001,0,1,aloum001 homers. ,aloum001,0,
+,21,6,,,,,46,82,CBBX,chenb001,1,0,,berkl001,0,
+,32,6,burrp001,,,,47,106,BBCBSB,elars001,0,0,burrp001 walks. ,burrp001,1,
+burrp001 to 3B. ,02,6,,jordk001,burrp001,,48,109,CFX,elars001,0,0,jordk001 doubles. ,jordk001,1,
+burrp001 scores. jordk001 to 3B. ,02,6,,,jordk001,,49,113,FFFX,elars001,1,1,peret003 grounds out. ,peret003,1,G
+,02,6,,,jordk001,,50,116,FCS,elars001,1,0,chenb001 strikes out. ,chenb001,1,
+,21,6,,,jordk001,,51,120,BBCX,elars001,1,0,,gland001,1,P
+,32,7,,,,,52,88,FBBFBX,chenb001,1,0,,trubc001,0,P
+,32,7,euset001,,,,53,94,FBBCBB,chenb001,0,0,euset001 walks. ,euset001,0,
+,22,7,euset001,,,,55,99,CBBFX,chenb001,1,0,,miesm001,0,P
+euset001 to 2B. ,10,7,lugoj001,euset001,,,56,101,BX,chenb001,0,0,lugoj001 singles. ,lugoj001,0,
+,00,7,lugoj001,euset001,,,57,102,X,chenb001,1,0,,bogat001,0,F
+,02,7,,,,,59,3,CCX,valdm001,1,0,andem003 grounds out. ,andem003,1,G
+,32,7,abreb001,,,,60,9,BBBCSB,valdm001,0,0,abreb001 walks. ,abreb001,1,
+,00,7,,abreb001,,liebm001,61,10,B,valdm001,0,0,abreb001 steals 2B. ,liebm001,1,
+,22,7,,abreb001,,,62,15,BBFCX,valdm001,1,0,,liebm001,1,P
+,11,7,,abreb001,,,63,18,SBX,valdm001,1,0,,lee-t002,1,F
+,10,8,,,,,64,104,BX,chenb001,1,0,,bagwj001,0,F
+,00,8,hidar001,,,,65,105,X,chenb001,0,0,hidar001 singles. ,hidar001,0,
+hidar001 to 2B. ,12,8,aloum001,hidar001,,,67,5,CSFBX,padiv001,0,0,aloum001 singles. ,aloum001,0,
+hidar001 scores. aloum001 to 3B. ,00,8,,berkl001,aloum001,,68,6,X,padiv001,0,1,berkl001 doubles. ,berkl001,0,
+,30,8,spieb001,berkl001,aloum001,,70,10,IIII,padiv001,0,0,spieb001 intentionally walks. ,spieb001,0,
+,11,8,,berkl001,aloum001,,71,13,SBX,padiv001,2,0,Double Play. ,euset001,0,
+,22,8,,,,,73,23,CBBCX,valdm001,1,0,,burrp001,1,F
+,10,8,,,,,74,25,BX,valdm001,1,0,jordk001 grounds out. ,jordk001,1,G
+,12,8,,,,,75,29,CBSS,valdm001,1,0,peret003 strikes out. ,peret003,1,
+,02,9,wardd002,,,,77,16,CSX,padiv001,0,0,wardd002 singles. ,wardd002,0,
+barkg001 to 2B. ,02,9,lugoj001,barkg001,,,79,19,LLX,padiv001,0,0,lugoj001 singles. ,lugoj001,0,
+barkg001 to 3B. lugoj001 to 2B. ,01,9,bogat001,lugoj001,barkg001,,80,21,LX,padiv001,0,0,bogat001 reaches on error. ,bogat001,0,
+barkg001 scores. lugoj001 to 3B. bogat001 to 2B. ,32,9,bagwj001,bogat001,lugoj001,,81,27,BSCBBH,padiv001,0,1,bagwj001 hit by pitch. ,bagwj001,0,
+,01,9,bagwj001,bogat001,lugoj001,,83,2,SX,gomew001,1,0,,hidar001,0,
+,12,9,bagwj001,bogat001,lugoj001,,84,7,SFBFS,gomew001,1,0,aloum001 strikes out. ,aloum001,0,
+lugoj001 scores. bogat001 scores. bagwj001 scores. ,00,9,,berkl001,,,85,8,X,gomew001,0,3,berkl001 doubles. ,berkl001,0,
+berkl001 scores. ,00,9,spieb001,,,,86,9,X,gomew001,0,1,spieb001 singles. ,spieb001,0,
+spieb001 out. ,01,9,euset001,,,,87,11,SX,gomew001,1,0,euset001 reaches on fielder's choice. ,euset001,0,
+,12,9,,,,,92,4,BCCS,doteo001,1,0,duceb001 strikes out. ,duceb001,1,
+,01,9,,,,,93,6,CX,doteo001,1,0,,gland001,1,
+,21,9,,,,,94,10,CBBX,doteo001,1,0,,andem003,1,F

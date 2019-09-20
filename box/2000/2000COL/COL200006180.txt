@@ -1,0 +1,187 @@
+version,2
+info,visteam,ARI
+info,hometeam,COL
+info,site,DEN02
+info,date,2000/06/18
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,false
+info,umphome,culbf901
+info,ump1b,wintm901
+info,ump2b,monte901
+info,ump3b,welkb901
+info,pitches,pitches
+info,temp,73
+info,winddir,ltor
+info,windspeed,2
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,185
+info,attendance,48117
+info,wp,yoshm001
+info,lp,reyna001
+info,save,
+start,womat001,"Tony Womack",0,1,6
+start,bellj001,"Jay Bell",0,2,4
+start,gonzl001,"Luis Gonzalez",0,3,7
+start,willm003,"Matt D. Williams",0,4,5
+start,finls001,"Steve Finley",0,5,8
+start,colbg001,"Greg Colbrunn",0,6,3
+start,lee-t002,"Travis Lee",0,7,9
+start,stink001,"Kelly Stinnett",0,8,2
+start,reyna001,"Armando Reynoso",0,9,1
+start,goodt001,"Tom Goodwin",1,1,8
+start,lansm001,"Mike Lansing",1,2,4
+start,walkl001,"Larry Walker",1,3,7
+start,cirij001,"Jeff Cirillo",1,4,5
+start,heltt001,"Todd Helton",1,5,3
+start,hammj001,"Jeffrey Hammonds",1,6,9
+start,maynb001,"Brent Mayne",1,7,2
+start,peren001,"Neifi Perez",1,8,6
+start,yoshm001,"Masato Yoshii",1,9,1
+play,1,0,womat001,01,CX,7/F7
+play,1,0,bellj001,22,CBFBX,8/F8
+play,1,0,gonzl001,21,FBBX,D/78
+play,1,0,willm003,12,FFBFX,7/F7D
+play,1,1,goodt001,11,FBX,S8
+play,1,1,lansm001,12,FCBX,T9/9D.1-H
+play,1,1,walkl001,00,X,63/G.3-H
+play,1,1,cirij001,11,BFX,S/78
+play,1,1,heltt001,00,B,WP.1-2
+play,1,1,heltt001,12,BCCX,5/P5
+play,1,1,hammj001,00,X,53/G
+play,2,0,finls001,12,BSFX,9/L9
+play,2,0,colbg001,10,BX,HR/7
+play,2,0,lee-t002,12,BFFX,31/G
+play,2,0,stink001,02,FFC,K/C
+play,2,1,maynb001,22,CBFFFFBX,S9
+play,2,1,peren001,11,BFX,D9.1-3
+play,2,1,yoshm001,12,FBFS,K
+play,2,1,goodt001,20,BBX,63/G.3-H;2-3
+play,2,1,lansm001,01,CX,HR/9.3-H
+play,2,1,walkl001,11,SBX,5/P5
+play,3,0,reyna001,32,BBBCCFS,K
+play,3,0,womat001,12,CBFX,9/FL
+play,3,0,bellj001,10,BX,8/L8
+play,3,1,cirij001,22,BCBSFFX,S7/7S
+play,3,1,heltt001,22,BBFFX,S8.1-2
+play,3,1,hammj001,22,CCBBX,S7/7S.2-H;1-2
+play,3,1,maynb001,10,BX,D9.2-H;1-H
+play,3,1,peren001,00,,NP
+sub,daalo001,"Omar Daal",0,9,1
+play,3,1,peren001,00,X,S9.2-H
+play,3,1,yoshm001,02,LLX,16(1)/FO.B-2(E6/TH1)
+play,3,1,goodt001,31,CBBBB,W
+play,3,1,lansm001,22,BCBFX,D7/7S.2-H;1-H
+play,3,1,walkl001,00,X,S9.2-H
+play,3,1,cirij001,32,BCBBFX,HR/7.1-H
+play,3,1,heltt001,32,BBSBCX,7/F7
+play,3,1,hammj001,01,CX,53/G
+play,4,0,gonzl001,10,BX,S8/8S
+play,4,0,willm003,01,CX,54(1)3/GDP
+play,4,0,finls001,00,X,5/FL
+play,4,1,maynb001,12,CBCX,HR/9
+play,4,1,peren001,01,CX,3/P3
+play,4,1,yoshm001,22,BCSFBX,D7/7D
+play,4,1,goodt001,10,BX,S8.2-H
+play,4,1,lansm001,00,,NP
+sub,sprir001,"Russ Springer",0,4,1
+play,4,1,lansm001,00,,NP
+sub,counc001,"Craig Counsell",0,9,5
+play,4,1,lansm001,12,BFCX,S9.1-2
+play,4,1,walkl001,22,BCFBX,7/F7
+play,4,1,cirij001,11,CBX,S9/9S.2-H;1-3
+play,4,1,heltt001,32,FBBFFFFBFX,4/P4
+play,5,0,colbg001,22,CBBFFX,D7
+play,5,0,lee-t002,32,BCCFFFBBX,43/G.2-3
+play,5,0,stink001,11,BFX,S7.3-H
+play,5,0,counc001,21,BBFX,46(1)3/GDP
+play,5,1,hammj001,32,BBBCSS,K
+play,5,1,maynb001,22,BCBFFX,D9
+play,5,1,peren001,01,FX,8/F8
+play,5,1,yoshm001,02,FFC,K/C
+play,6,0,womat001,02,FSX,8/F8
+play,6,0,bellj001,10,BX,D7/7D
+play,6,0,gonzl001,20,BBX,8/F8D.2-3
+play,6,0,sprir001,00,,NP
+sub,gilkb001,"Bernard Gilkey",0,4,11
+play,6,0,gilkb001,00,X,4/P4
+play,6,1,goodt001,00,,NP
+sub,gilkb001,"Bernard Gilkey",0,4,7
+play,6,1,goodt001,00,,NP
+sub,plesd001,"Dan Plesac",0,3,1
+play,6,1,goodt001,10,BX,S8
+play,6,1,lansm001,02,CFFS,K
+play,6,1,walkl001,00,,NP
+sub,shumt001,"Terry Shumpert",1,3,11
+play,6,1,shumt001,22,BCFBB,WP.1-2
+play,6,1,shumt001,32,BCFBBFB,W
+play,6,1,cirij001,22,BCFFBX,S7/7S.2-H;1-3
+play,6,1,heltt001,00,,NP
+sub,melha001,"Adam Melhuse",1,5,11
+play,6,1,melha001,32,CBFBFBFFS,K
+play,6,1,hammj001,02,FSS,K
+play,7,0,finls001,00,,NP
+sub,shumt001,"Terry Shumpert",1,3,7
+play,7,0,finls001,00,,NP
+sub,melha001,"Adam Melhuse",1,5,3
+play,7,0,finls001,20,BBX,S8.B-2(E8)
+play,7,0,colbg001,00,X,8/F8.2-3
+play,7,0,lee-t002,11,FBX,6/P6
+play,7,0,stink001,00,X,63/G
+play,7,1,maynb001,00,,NP
+sub,bautd001,"Danny Bautista",0,3,8
+play,7,1,maynb001,00,,NP
+sub,swing001,"Greg Swindell",0,5,1
+play,7,1,maynb001,02,FSS,K
+play,7,1,peren001,12,BCFS,K23
+play,7,1,yoshm001,00,,NP
+sub,huntb002,"Brian L. Hunter",1,9,11
+play,7,1,huntb002,22,BFBFFX,13/G
+play,8,0,counc001,00,,NP
+sub,huntb002,"Brian L. Hunter",1,9,9
+play,8,0,counc001,00,,NP
+sub,myerm001,"Mike Myers",1,6,1
+play,8,0,counc001,12,BFCS,K
+play,8,0,womat001,00,,NP
+sub,milld002,"Damian Miller",0,1,11
+play,8,0,milld002,12,SSBX,9/F9
+play,8,0,bellj001,30,BBBB,W
+play,8,0,bautd001,02,CCX,8/F8
+play,8,1,goodt001,00,,NP
+sub,milld002,"Damian Miller",0,1,3
+play,8,1,goodt001,00,,NP
+sub,colbg001,"Greg Colbrunn",0,6,5
+play,8,1,goodt001,00,,NP
+sub,friah001,"Hanley Frias",0,5,4
+play,8,1,goodt001,00,,NP
+sub,counc001,"Craig Counsell",0,9,6
+play,8,1,goodt001,00,,NP
+sub,kim-b001,"Byung-Hyun Kim",0,2,1
+play,8,1,goodt001,32,BBBCFX,9/L9
+play,8,1,lansm001,00,,NP
+sub,bragd001,"Darren Bragg",1,2,11
+play,8,1,bragd001,22,CBBFS,K
+play,8,1,shumt001,31,BSBBX,HR/7
+play,8,1,cirij001,00,X,6/L6
+play,9,0,gilkb001,00,,NP
+sub,bragd001,"Darren Bragg",1,2,7
+play,9,0,gilkb001,00,,NP
+sub,shumt001,"Terry Shumpert",1,3,4
+play,9,0,gilkb001,00,,NP
+sub,jimej001,"Jose Jimenez",1,6,1
+play,9,0,gilkb001,10,BX,7/F7
+play,9,0,friah001,22,FFBBX,31/G
+play,9,0,colbg001,12,BFCX,S8
+play,9,0,lee-t002,21,BSBX,2/FL
+data,er,reyna001,9
+data,er,daalo001,8
+data,er,sprir001,0
+data,er,plesd001,1
+data,er,swing001,0
+data,er,kim-b001,1
+data,er,yoshm001,2
+data,er,myerm001,0
+data,er,jimej001,0

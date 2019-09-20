@@ -1,0 +1,168 @@
+version,2
+info,visteam,FLO
+info,hometeam,HOU
+info,site,HOU03
+info,date,2000/09/05
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,reynj901
+info,ump1b,vanvm901
+info,ump2b,willc901
+info,ump3b,wolfj901
+info,pitches,pitches
+info,temp,72
+info,winddir,fromlf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,178
+info,attendance,27408
+info,wp,mcknt001
+info,lp,cornr001
+info,save,
+start,castl001,"Luis Castillo",0,1,4
+start,kotsm001,"Mark Kotsay",0,2,8
+start,floyc001,"Cliff Floyd",0,3,7
+start,lowem001,"Mike Lowell",0,4,5
+start,rodrh001,"Henry Rodriguez",0,5,9
+start,millk005,"Kevin Millar",0,6,3
+start,gonza002,"Alex Gonzalez",0,7,6
+start,castr002,"Ramon Castro",0,8,2
+start,cornr001,"Reid Cornelius",0,9,1
+start,lugoj001,"Julio Lugo",1,1,4
+start,spieb001,"Bill Spiers",1,2,5
+start,bagwj001,"Jeff Bagwell",1,3,3
+start,berkl001,"Lance Berkman",1,4,7
+start,aloum001,"Moises Alou",1,5,9
+start,hidar001,"Richard Hidalgo",1,6,8
+start,melum001,"Mitch Meluskey",1,7,2
+start,bogat001,"Tim Bogar",1,8,6
+start,mcknt001,"Tony McKnight",1,9,1
+play,1,0,castl001,21,BBCX,S8
+play,1,0,kotsm001,00,X,7/F7D
+play,1,0,floyc001,00,B,SB2
+play,1,0,floyc001,30,BBBB,W
+play,1,0,lowem001,00,X,7/F7S
+play,1,0,rodrh001,32,BBBCSX,9/F9
+play,1,1,lugoj001,21,BCBX,3/BG
+play,1,1,spieb001,30,BBBB,W
+play,1,1,bagwj001,00,X,S9.1-3
+play,1,1,berkl001,30,BBBB,W.1-2
+play,1,1,aloum001,22,BBFSX,S8.3-H;2-3;1-2
+play,1,1,hidar001,11,BFX,S7/7S.3-H;2-H;1-2
+play,1,1,melum001,00,X,36(1)1/GDP
+play,2,0,millk005,00,X,53/G
+play,2,0,gonza002,01,CX,S9
+play,2,0,castr002,21,BFBX,7/F7
+play,2,0,cornr001,02,SSS,K23
+play,2,1,bogat001,00,X,8/F8
+play,2,1,mcknt001,12,FFBX,43/G
+play,2,1,lugoj001,10,BX,HR/7
+play,2,1,spieb001,11,CBX,7/F7
+play,3,0,castl001,00,X,13/G
+play,3,0,kotsm001,11,BFX,43/G
+play,3,0,floyc001,11,FBX,S8/8S
+play,3,0,lowem001,00,C,SB2
+play,3,0,lowem001,22,CFBFBH,HP
+play,3,0,rodrh001,12,BCSX,8/F8
+play,3,1,bagwj001,32,BFBBFX,63/G
+play,3,1,berkl001,11,CBX,43/G
+play,3,1,aloum001,10,BX,53/G
+play,4,0,millk005,12,BFFX,63/G
+play,4,0,gonza002,22,BFBCS,K
+play,4,0,castr002,02,CFX,63/G
+play,4,1,hidar001,00,X,D7/7D
+play,4,1,melum001,31,BCBBX,S9.2-3
+play,4,1,bogat001,01,FX,S9/9S.3-H;1-2
+play,4,1,mcknt001,11,BLX,15(2)/FO.1-2
+play,4,1,lugoj001,10,BX,S7.2-H;1-2
+play,4,1,spieb001,00,,NP
+sub,stroj001,"Joe Strong",0,9,1
+play,4,1,spieb001,22,FBBSFX,T/89.2-H;1-H
+play,4,1,bagwj001,22,BCBFS,K
+play,4,1,berkl001,01,FX,43/G
+play,5,0,stroj001,00,,NP
+sub,smitm004,"Mark Smith",0,9,11
+play,5,0,smitm004,10,BX,3/P3
+play,5,0,castl001,01,CX,S
+play,5,0,kotsm001,10,BB,SB2
+play,5,0,kotsm001,20,BBX,D/89.2-H
+play,5,0,floyc001,00,X,E3/G.2-H(UR)
+play,5,0,lowem001,10,BC,SB2.1-3(E2/TH2)
+play,5,0,lowem001,22,BCBFFFFFS,K
+play,5,0,rodrh001,32,BBBCFB,W
+play,5,0,millk005,12,BFFX,5/P5
+play,5,1,aloum001,00,,NP
+sub,aybam001,"Manny Aybar",0,9,1
+play,5,1,aloum001,00,X,6/P6
+play,5,1,hidar001,32,BBFFBFX,143/G
+play,5,1,melum001,32,BCBBCB,W
+play,5,1,bogat001,21,SBBX,6/P6
+play,6,0,gonza002,00,,NP
+sub,slusj001,"Joe Slusarski",1,9,1
+play,6,0,gonza002,00,X,53/G
+play,6,0,castr002,02,FSX,63/G
+play,6,0,aybam001,00,,NP
+sub,wilsp002,"Preston Wilson",0,9,11
+play,6,0,wilsp002,12,BFCFS,K
+play,6,1,slusj001,00,,NP
+sub,boner001,"Ricky Bones",0,9,1
+play,6,1,slusj001,12,FBCC,K/C
+play,6,1,lugoj001,31,BBBCX,S8/8S
+play,6,1,spieb001,11,BCX,S9/9S.1-2
+play,6,1,bagwj001,21,BBCX,S8.2-H;1-2
+play,6,1,berkl001,22,SBCFBX,31/G.2-3;1-2
+play,6,1,aloum001,32,BBBCCX,43/G
+play,7,0,castl001,32,CBSFFFBFBS,K
+play,7,0,kotsm001,12,FSBX,S9
+play,7,0,floyc001,11,FBS,WP.1-2
+play,7,0,floyc001,12,FBSS,K
+play,7,0,lowem001,01,CX,HR/78.2-H
+play,7,0,rodrh001,11,CBX,S9.BX2(96)
+play,7,1,hidar001,00,,NP
+sub,millk005,"Kevin Millar",0,6,7
+play,7,1,hidar001,00,,NP
+sub,rolin001,"Nathan Rolison",0,9,3
+play,7,1,hidar001,00,,NP
+sub,darev001,"Vic Darensbourg",0,3,1
+play,7,1,hidar001,01,CX,9/F9
+com,"Debut game for Nathan Rolison"
+play,7,1,melum001,30,BBBB,W
+play,7,1,bogat001,11,BSX,S9.1-2
+play,7,1,slusj001,00,,NP
+sub,charf001,"Frank Charles",1,9,11
+play,7,1,charf001,02,FFS,K
+com,"Debut game for Frank Charles"
+play,7,1,lugoj001,02,FSS,K
+com,"$the roof was opened"
+play,8,0,millk005,00,,NP
+sub,valdm001,"Marc Valdes",1,9,1
+play,8,0,millk005,20,BBX,HR/7
+play,8,0,gonza002,10,BX,63/G
+play,8,0,castr002,22,BBFSFS,K
+play,8,0,rolin001,12,SBSC,K/C
+play,8,1,spieb001,00,X,S/78
+play,8,1,bagwj001,11,FBX,S7/7S.1-2
+play,8,1,berkl001,12,FSBFS,K
+play,8,1,aloum001,00,X,9/F9
+play,8,1,hidar001,00,X,9/F9D
+play,9,0,castl001,00,,NP
+sub,barkg001,"Glen Barker",1,4,8
+play,9,0,castl001,00,,NP
+sub,hidar001,"Richard Hidalgo",1,6,7
+play,9,0,castl001,12,CFBFX,53/G
+play,9,0,kotsm001,00,X,13/G
+play,9,0,darev001,00,,NP
+sub,lee-d002,"Derrek Lee",0,3,11
+play,9,0,lee-d002,32,BBFFBX,7/F7
+data,er,cornr001,8
+data,er,stroj001,0
+data,er,aybam001,0
+data,er,boner001,1
+data,er,darev001,0
+data,er,mcknt001,1
+data,er,slusj001,2
+data,er,valdm001,1

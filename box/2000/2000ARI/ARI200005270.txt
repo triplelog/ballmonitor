@@ -1,0 +1,158 @@
+version,2
+info,visteam,MIL
+info,hometeam,ARI
+info,site,PHO01
+info,date,2000/05/27
+info,number,0
+info,starttime,1:35PM
+info,daynight,day
+info,usedh,false
+info,umphome,iassd901
+info,ump1b,hirsm901
+info,ump2b,bellw901
+info,ump3b,onorb901
+info,pitches,pitches
+info,temp,72
+info,winddir,tocf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,204
+info,attendance,35163
+info,wp,reyna001
+info,lp,acevj001
+info,save,kim-b001
+start,bellr002,"Ron Belliard",0,1,4
+start,lorem001,"Mark Loretta",0,2,6
+start,burnj001,"Jeromy Burnitz",0,3,9
+start,sweem001,"Mark Sweeney",0,4,7
+start,hernj001,"Jose Hernandez",0,5,5
+start,grism001,"Marquis Grissom",0,6,8
+start,barkk001,"Kevin Barker",0,7,3
+start,blanh001,"Henry Blanco",0,8,2
+start,berej002,"Jason Bere",0,9,1
+start,womat001,"Tony Womack",1,1,6
+start,bellj001,"Jay Bell",1,2,4
+start,gonzl001,"Luis Gonzalez",1,3,7
+start,durae001,"Erubiel Durazo",1,4,3
+start,finls001,"Steve Finley",1,5,8
+start,wardt001,"Turner Ward",1,6,9
+start,fox-a001,"Andy Fox",1,7,5
+start,milld002,"Damian Miller",1,8,2
+start,reyna001,"Armando Reynoso",1,9,1
+play,1,0,bellr002,22,BCSBX,E5/TH1.B-2
+play,1,0,lorem001,01,CX,13/SH.2-3
+play,1,0,burnj001,21,FBBX,8/SF.3-H(UR)
+play,1,0,sweem001,21,CBBX,D9
+play,1,0,hernj001,31,BBFBB,W
+play,1,0,grism001,22,FFBBFX,64(1)/FO.2-3
+play,1,1,womat001,21,BBCX,S7
+play,1,1,bellj001,22,BCFBX,9/F9
+play,1,1,gonzl001,30,BBBB,W.1-2
+play,1,1,durae001,30,BBBB,W.2-3;1-2
+play,1,1,finls001,00,X,3/G.3-H;2-3;1-2
+play,1,1,wardt001,02,CSS,K
+play,2,0,barkk001,00,X,43/G
+play,2,0,blanh001,01,CX,63/G
+play,2,0,berej002,12,BCCS,K
+play,2,1,fox-a001,22,BBCSX,31/G
+play,2,1,milld002,22,SBCBFFX,S7
+play,2,1,reyna001,21,BLBX,S5/BG5.1-2
+play,2,1,womat001,02,SFX,46(1)3/GDP
+play,3,0,bellr002,32,BBCBCX,63/G
+play,3,0,lorem001,21,BBCX,S8
+play,3,0,burnj001,30,BBBX,7/F7
+play,3,0,sweem001,32,SBBBSC,K/C
+play,3,1,bellj001,31,BBCBX,7/F7
+play,3,1,gonzl001,00,X,3/G
+play,3,1,durae001,22,FBCBS,K
+play,4,0,hernj001,32,CBBBFFX,8/F8
+play,4,0,grism001,10,BX,8/F8D
+play,4,0,barkk001,00,X,7/F7
+play,4,1,finls001,31,BCBBB,W
+play,4,1,wardt001,00,X,54(1)/FO
+play,4,1,fox-a001,10,BX,S8.1-3
+play,4,1,milld002,30,BBBB,W.1-2
+play,4,1,reyna001,02,CSS,K
+play,4,1,womat001,32,BBBCSX,43/G
+play,5,0,blanh001,00,X,7/F7
+play,5,0,berej002,12,CBCX,T9
+play,5,0,bellr002,31,BBBCB,W
+play,5,0,lorem001,10,BX,S7.3-H;1-2
+play,5,0,burnj001,12,FFBX,9/F9D.2-3
+play,5,0,sweem001,12,CBSX,D7.3-H;1-3
+play,5,0,hernj001,12,SBFX,4/P4
+play,5,1,bellj001,22,FFBBX,4/P4
+play,5,1,gonzl001,11,CBX,7/F7
+play,5,1,durae001,10,BX,S8
+play,5,1,finls001,12,CFBFFFX,HR/8.1-H
+play,5,1,wardt001,11,CBX,S
+play,5,1,fox-a001,00,,NP
+sub,acevj001,"Juan Acevedo",0,9,1
+play,5,1,fox-a001,12,CFBX,S9.1-3
+play,5,1,milld002,12,CBFS,K
+play,6,0,grism001,00,X,S
+play,6,0,barkk001,11,CBX,36(1)/FO
+play,6,0,blanh001,21,BBCX,64(1)3/GDP
+play,6,1,reyna001,00,,NP
+sub,gilkb001,"Bernard Gilkey",1,9,11
+play,6,1,gilkb001,20,BBX,9/F9
+play,6,1,womat001,21,BFBX,D/78
+play,6,1,bellj001,02,CCX,S8.2-H
+play,6,1,gonzl001,00,,NP
+sub,delov001,"Valerio De Los Santos",0,7,1
+play,6,1,gonzl001,00,,NP
+sub,hayec001,"Charlie Hayes",0,9,3
+play,6,1,gonzl001,31,BSBBB,W.1-2
+play,6,1,durae001,00,,NP
+sub,colbg001,"Greg Colbrunn",1,4,11
+play,6,1,colbg001,02,FFS,K
+play,6,1,finls001,10,BX,9/F9S
+play,7,0,hayec001,00,,NP
+sub,colbg001,"Greg Colbrunn",1,4,3
+play,7,0,hayec001,00,,NP
+sub,morgm001,"Mike Morgan",1,9,1
+play,7,0,hayec001,10,BX,63/G
+play,7,0,bellr002,31,CBBBB,W
+play,7,0,lorem001,31,BBBCX,64(1)3/GDP
+play,7,1,wardt001,11,FBX,S/78
+play,7,1,fox-a001,10,BX,S7.1-2
+play,7,1,milld002,00,,BK.2-3;1-2
+play,7,1,milld002,12,BSFC,K/C
+play,7,1,morgm001,00,,NP
+sub,friah001,"Hanley Frias",1,9,11
+play,7,1,friah001,32,SBBBCFFFFX,S7.3-H;2-H;B-2(THH)
+play,7,1,womat001,02,FFFX,7/F7
+play,7,1,bellj001,00,,NP
+sub,weatd001,"David Weathers",0,7,1
+play,7,1,bellj001,32,BCBBCX,3/FL
+play,8,0,burnj001,00,,NP
+sub,plesd001,"Dan Plesac",1,9,1
+play,8,0,burnj001,00,X,3/P3
+play,8,0,sweem001,00,,NP
+sub,moutj001,"James Mouton",0,4,11
+play,8,0,moutj001,00,,NP
+sub,kim-b001,"Byung-Hyun Kim",1,9,1
+play,8,0,moutj001,12,FFBC,K/C
+play,8,0,hernj001,22,BCBSX,8/F8
+play,8,1,gonzl001,00,,NP
+sub,moutj001,"James Mouton",0,4,7
+play,8,1,gonzl001,00,X,HR/7
+play,8,1,colbg001,32,CBBSBFH,HP
+play,8,1,finls001,01,CX,5/P5
+play,8,1,wardt001,22,BBFCFX,9/F9
+play,8,1,fox-a001,01,CX,43/G
+play,9,0,grism001,22,BBCFC,K/C
+play,9,0,weatd001,00,,NP
+sub,lopel002,"Luis Lopez",0,7,11
+play,9,0,lopel002,02,CSFS,K23
+play,9,0,blanh001,00,X,6/L6
+data,er,berej002,3
+data,er,acevj001,1
+data,er,delov001,2
+data,er,weatd001,1
+data,er,reyna001,2
+data,er,morgm001,0
+data,er,plesd001,0
+data,er,kim-b001,0

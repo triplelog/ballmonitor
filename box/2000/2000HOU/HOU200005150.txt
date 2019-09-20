@@ -1,0 +1,140 @@
+version,2
+info,visteam,CIN
+info,hometeam,HOU
+info,site,HOU03
+info,date,2000/05/15
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,buckc901
+info,ump1b,wendh902
+info,ump2b,clara901
+info,ump3b,vanvm901
+info,pitches,pitches
+info,temp,81
+info,winddir,tolf
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,166
+info,attendance,41710
+info,wp,villr001
+info,lp,limaj001
+info,save,gravd001
+start,reesp001,"Pokey Reese",0,1,4
+start,yound001,"Dmitri Young",0,2,7
+start,grifk002,"Ken Griffey",0,3,8
+start,cases001,"Sean Casey",0,4,3
+start,bichd001,"Dante Bichette",0,5,9
+start,taube001,"Eddie Taubensee",0,6,2
+start,boona001,"Aaron Boone",0,7,5
+start,castj004,"Juan Castro",0,8,6
+start,villr001,"Ron Villone",0,9,1
+start,ceder001,"Roger Cedeno",1,1,9
+start,biggc001,"Craig Biggio",1,2,4
+start,bagwj001,"Jeff Bagwell",1,3,3
+start,camik001,"Ken Caminiti",1,4,5
+start,aloum001,"Moises Alou",1,5,7
+start,hidar001,"Richard Hidalgo",1,6,8
+start,johnr006,"Russ Johnson",1,7,6
+start,euset001,"Tony Eusebio",1,8,2
+start,limaj001,"Jose Lima",1,9,1
+play,1,0,reesp001,22,CCBBC,K/C
+play,1,0,yound001,22,BCSFFFBX,43/G
+play,1,0,grifk002,22,BBCSX,D9
+play,1,0,cases001,01,CX,7/F7
+play,1,1,ceder001,20,BBX,9/F9D
+play,1,1,biggc001,10,BX,9/F9
+play,1,1,bagwj001,32,BCBSFFBFB,W
+play,1,1,camik001,30,BBBX,S/78.1-2
+play,1,1,aloum001,22,SFBBX,53/G
+play,2,0,bichd001,20,BBX,4/P4
+play,2,0,taube001,12,CFBFX,9/F9S
+play,2,0,boona001,22,CFBBS,K
+play,2,1,hidar001,01,CH,HP
+play,2,1,johnr006,22,FBBFFFX,64(1)3/GDP
+play,2,1,euset001,31,BCBBB,W
+play,2,1,limaj001,00,X,4/L4
+play,3,0,castj004,01,CX,13/G
+play,3,0,villr001,11,BSX,3/G
+play,3,0,reesp001,22,CCFBFBS,K
+play,3,1,ceder001,12,BCFS,K
+play,3,1,biggc001,12,CSFBX,43/G
+play,3,1,bagwj001,00,X,143/G
+play,4,0,yound001,21,BFBX,S9
+play,4,0,grifk002,32,CBBFBX,9/FL
+play,4,0,cases001,32,BBFBSX,S9.1-3
+play,4,0,bichd001,02,SSX,64(1)3/GDP
+play,4,1,camik001,00,X,8/F8
+play,4,1,aloum001,20,BBX,9/F9
+play,4,1,hidar001,12,CFBX,5/P5
+play,5,0,taube001,22,BSFFBX,63/G
+play,5,0,boona001,11,FBX,4/L4
+play,5,0,castj004,01,FX,4/P4
+play,5,1,johnr006,21,BFBX,8/F8
+play,5,1,euset001,32,FFBBBFB,W
+play,5,1,limaj001,00,X,14/SH.1-2
+play,5,1,ceder001,31,BCBBX,8/F8
+play,6,0,villr001,10,BX,6/P6
+play,6,0,reesp001,01,SX,S7/7D
+play,6,0,yound001,11,BFX,43/G.1-2
+play,6,0,grifk002,11,BCX,7/F7
+play,6,1,biggc001,32,BCBFBX,53/G
+play,6,1,bagwj001,31,BCBBB,W
+play,6,1,camik001,12,FBFC,K+SB2/C
+play,6,1,aloum001,32,BFBBFB,W
+play,6,1,hidar001,12,BFCFC,K/C
+play,7,0,cases001,32,FBBCBX,8/F8
+play,7,0,bichd001,11,BSX,5/FL
+play,7,0,taube001,10,BX,S9
+play,7,0,boona001,22,BBSSX,HR/9.1-H
+play,7,0,castj004,00,X,63/G
+play,7,1,johnr006,00,X,3/L3
+play,7,1,euset001,20,BBX,HR/78
+play,7,1,limaj001,00,,NP
+sub,miesm001,"Matt Mieske",1,9,11
+play,7,1,miesm001,11,CBX,7/F7
+play,7,1,ceder001,12,BFSX,53/G
+play,8,0,villr001,00,,NP
+sub,morrh001,"Hal Morris",0,9,11
+play,8,0,morrh001,00,,NP
+sub,cabrj001,"Jose Cabrera",1,9,1
+play,8,0,morrh001,11,BSX,43/G
+play,8,0,reesp001,31,BBCBX,2/FL
+play,8,0,yound001,11,CBX,S9
+play,8,0,grifk002,22,CBSFBFX,HR/7.1-H
+play,8,0,cases001,21,BBCX,8/F8
+play,8,1,biggc001,00,,NP
+sub,ochoa001,"Alex Ochoa",0,9,7
+play,8,1,biggc001,00,,NP
+sub,gravd001,"Danny Graves",0,2,1
+play,8,1,biggc001,01,SH,HP
+play,8,1,bagwj001,12,CSBX,D/89D.1-H
+play,8,1,camik001,10,BX,7/F7D
+play,8,1,aloum001,32,SBFBBX,53/G
+play,8,1,hidar001,10,BX,63/G
+play,9,0,bichd001,00,,NP
+sub,slusj001,"Joe Slusarski",1,9,1
+play,9,0,bichd001,31,BBBCX,3/G
+play,9,0,taube001,01,CX,S8
+play,9,0,boona001,00,X,2/FL
+play,9,0,castj004,20,BBX,6/P6
+play,9,1,johnr006,00,,NP
+sub,tuckm001,"Michael Tucker",0,5,9
+play,9,1,johnr006,00,,NP
+sub,spieb001,"Bill Spiers",1,7,11
+play,9,1,spieb001,12,CSBX,53/G
+play,9,1,euset001,00,,NP
+sub,melum001,"Mitch Meluskey",1,8,11
+play,9,1,melum001,11,BCX,8/F8
+play,9,1,slusj001,00,,NP
+sub,wardd002,"Daryle Ward",1,9,11
+play,9,1,wardd002,22,FFBBX,HR/9
+play,9,1,ceder001,21,BCBX,7/F7
+data,er,villr001,1
+data,er,gravd001,2
+data,er,limaj001,2
+data,er,cabrj001,2
+data,er,slusj001,0

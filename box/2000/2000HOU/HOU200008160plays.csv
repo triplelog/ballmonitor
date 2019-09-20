@@ -1,0 +1,84 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,01,1,,,,,0,2,CX,elars001,1,0,,browa001,0,P
+,11,1,,,,,1,5,BFX,elars001,1,0,kendj001 grounds out. ,kendj001,0,G
+,22,1,,,,,2,10,BBFCX,elars001,1,0,,gileb002,0,F
+,32,1,,,,,3,8,BCFBBFFS,serad001,1,0,lugoj001 strikes out. ,lugoj001,1,
+,00,1,,,,,4,9,X,serad001,1,0,bogat001 grounds out. ,bogat001,1,G
+,31,1,,,,,5,14,BBCBX,serad001,1,0,,bagwj001,1,F
+,32,2,,,,,6,16,CBFBBX,elars001,1,0,younk001 grounds out. ,younk001,0,G
+,32,2,,,,,7,22,BFBSBX,elars001,1,0,,vandj001,0,P
+,10,2,,,,,8,24,BX,elars001,1,0,wilse001 grounds out. ,wilse001,0,G
+,21,2,,,,,9,18,BCBX,serad001,1,0,hidar001 grounds out. ,hidar001,1,G
+,10,2,,,,,10,20,BX,serad001,1,0,,aloum001,1,L
+,00,2,,,,,11,21,X,serad001,0,1,berkl001 homers. ,berkl001,1,
+,22,2,,,,,12,26,BSBFS,serad001,1,0,trubc001 strikes out. ,trubc001,1,
+,01,3,,,,,13,26,CX,elars001,1,0,morrw001 grounds out. ,morrw001,0,G
+,12,3,mearp001,,,,14,30,BFCX,elars001,0,0,mearp001 singles. ,mearp001,0,
+,00,3,,,,,15,31,X,elars001,2,0,Double Play. ,serad001,0,G
+,10,3,,,,,16,28,BX,serad001,1,0,chavr001 grounds out. ,chavr001,1,G
+,11,3,,,,,17,31,FBX,serad001,1,0,,elars001,1,
+,21,3,,,,,18,35,BBFX,serad001,1,0,lugoj001 grounds out. ,lugoj001,1,G
+,21,4,,,,,19,35,CBBX,elars001,1,0,browa001 grounds out. ,browa001,0,G
+,11,4,kendj001,,,,20,38,CBX,elars001,0,0,kendj001 singles. ,kendj001,0,
+kendj001 scores. ,12,4,,,,,21,42,FBFX,elars001,0,2,gileb002 homers. ,gileb002,0,
+,02,4,,,,,22,45,CCX,elars001,1,0,,younk001,0,F
+,21,4,vandj001,,,,23,49,BCBX,elars001,0,0,vandj001 singles. ,vandj001,0,
+,11,4,vandj001,,,,24,52,CBX,elars001,1,0,,wilse001,0,P
+,11,4,,,,,25,38,BFX,serad001,1,0,,bogat001,1,F
+,32,4,,,,,26,44,BFBBSX,serad001,0,1,bagwj001 homers. ,bagwj001,1,
+,00,4,,hidar001,,,27,45,X,serad001,0,0,hidar001 doubles. ,hidar001,1,
+hidar001 to 3B. ,11,4,,,hidar001,,28,48,CBX,serad001,1,0,aloum001 grounds out. ,aloum001,1,G
+,32,4,berkl001,,hidar001,,29,56,BCBFFFBB,serad001,0,0,berkl001 walks. ,berkl001,1,
+hidar001 scores. berkl001 scores. ,00,4,,,,,30,57,X,serad001,0,3,trubc001 homers. ,trubc001,1,
+,00,4,,,,,31,58,X,serad001,1,0,chavr001 grounds out. ,chavr001,1,G
+,22,5,,,,,32,57,CBFBS,elars001,1,0,morrw001 strikes out. ,morrw001,0,
+,00,5,,,,,33,58,X,elars001,1,0,mearp001 grounds out. ,mearp001,0,G
+,00,5,,,,,34,59,X,elars001,1,0,,serad001,0,P
+,12,5,,,,,35,62,SBCX,serad001,1,0,elars001 grounds out. ,elars001,1,G
+,21,5,lugoj001,,,,36,66,BBFX,serad001,0,0,lugoj001 singles. ,lugoj001,1,G
+lugoj001 scores. ,32,5,,,,,37,74,FBCBFFBX,serad001,0,2,bogat001 homers. ,bogat001,1,
+,32,5,bagwj001,,,,39,7,CFBBBFB,arrob001,0,0,bagwj001 walks. ,bagwj001,1,
+,02,5,bagwj001,,,,40,11,FCFS,arrob001,1,0,hidar001 strikes out. ,hidar001,1,
+bagwj001 scores. ,21,5,,,,,41,15,BBFX,arrob001,0,2,aloum001 homers. ,aloum001,1,
+,32,5,berkl001,,,,42,21,FFBBBB,arrob001,0,0,berkl001 walks. ,berkl001,1,
+,02,5,berkl001,,,,43,24,CFS,arrob001,1,0,trubc001 strikes out. ,trubc001,1,
+,12,6,browa001,,,,44,63,FCBX,elars001,0,0,browa001 singles. ,browa001,0,
+browa001 out. ,12,6,kendj001,,,,45,67,FFBX,elars001,1,0,kendj001 reaches on fielder's choice. ,kendj001,0,
+,21,6,kendj001,,,,46,71,BCBX,elars001,1,0,,gileb002,0,
+kendj001 to 3B. younk001 to 2B. ,12,6,,younk001,kendj001,,47,75,FFBX,elars001,0,0,younk001 reaches on error. ,younk001,0,G
+,10,6,,younk001,kendj001,,48,77,BX,elars001,1,0,vandj001 grounds out. ,vandj001,0,G
+,00,6,,,,,49,25,X,arrob001,1,0,chavr001 grounds out. ,chavr001,1,G
+,00,6,,elars001,,,50,26,X,arrob001,0,0,elars001 doubles. ,elars001,1,
+elars001 scores. ,20,6,,,,,51,29,BBX,arrob001,0,2,lugoj001 homers. ,lugoj001,1,
+,12,6,,,,,52,33,CCBS,arrob001,1,0,bogat001 strikes out. ,bogat001,1,
+,12,6,,,,,53,38,SBFFX,arrob001,1,0,bagwj001 grounds out. ,bagwj001,1,G
+,32,7,,,,,54,84,BBFBFFX,elars001,1,0,wilse001 grounds out. ,wilse001,0,G
+,31,7,morrw001,,,,55,89,BFBBB,elars001,0,0,morrw001 walks. ,morrw001,0,
+,02,7,morrw001,,,,56,92,CSS,elars001,1,0,mearp001 strikes out. ,mearp001,0,
+,12,7,morrw001,,,,58,96,BCCS,elars001,1,0,browe001 strikes out. ,browe001,0,
+,21,7,,,,,61,4,BSBX,wilkm001,1,0,,hidar001,1,P
+,31,7,aloum001,,,,62,9,BBBCB,wilkm001,0,0,aloum001 walks. ,aloum001,1,
+,22,7,barkg001,,,,64,15,CBBSFS,wilkm001,1,0,berkl001 strikes out. ,berkl001,1,
+barkg001 to 2B. ,12,7,trubc001,barkg001,,,65,19,BFSH,wilkm001,0,0,trubc001 hit by pitch. ,trubc001,1,
+,22,7,trubc001,barkg001,,,66,24,SBBCS,wilkm001,1,0,chavr001 strikes out. ,chavr001,1,
+,00,8,,browa001,,,70,97,X,elars001,0,0,browa001 doubles. ,browa001,0,
+browa001 to 3B. ,02,8,kendj001,,browa001,,71,100,CCX,elars001,0,0,kendj001 singles. ,kendj001,0,
+,00,8,kendj001,,browa001,,73,101,X,elars001,1,0,,osikk001,0,F
+browa001 scores. kendj001 to 2B. ,22,8,younk001,kendj001,,,74,106,BSBSX,elars001,0,1,younk001 singles. ,younk001,0,
+kendj001 to 3B. younk001 to 2B. ,30,8,vandj001,younk001,kendj001,,75,110,BBBB,elars001,0,0,vandj001 walks. ,vandj001,0,
+kendj001 scores. younk001 to 3B. vandj001 to 2B. ,31,8,wilse001,vandj001,younk001,,76,115,BBFBB,elars001,0,1,wilse001 walks. ,wilse001,0,
+younk001 scores. vandj001 to 3B. wilse001 to 2B. ,10,8,,wilse001,vandj001,,79,2,BX,valdm001,1,1,morrw001 grounds out. ,morrw001,0,G
+,22,8,,wilse001,vandj001,,80,7,CBBSX,valdm001,1,0,mearp001 grounds out. ,mearp001,0,G
+,12,8,,,,,83,5,SBSFS,willm005,1,0,cromt001 strikes out. ,cromt001,1,
+,02,8,,,,,84,8,CSS,willm005,1,0,lugoj001 strikes out. ,lugoj001,1,
+,22,8,,,,,85,13,CBBSC,willm005,1,0,bogat001 strikes out. ,bogat001,1,
+,12,9,browe001,,,,86,11,SBFH,valdm001,0,0,browe001 hit by pitch. ,browe001,0,
+browe001 to 2B. ,11,9,browa001,browe001,,,87,14,BCX,valdm001,0,0,browa001 singles. ,browa001,0,
+browe001 to 3B. browa001 to 2B. ,22,9,kendj001,browa001,browe001,,88,21,BCBFFFX,valdm001,0,0,kendj001 reaches on error. ,kendj001,0,G
+browe001 scores. browa001 scores. kendj001 to 3B. ,00,9,,osikk001,kendj001,,89,22,X,valdm001,0,2,osikk001 doubles. ,osikk001,0,
+kendj001 scores. osikk001 scores. ,32,9,,,,,92,8,CBSBBFFX,doteo001,0,3,ramia002 homers. ,ramia002,0,
+,20,9,vandj001,,,,93,11,BBX,doteo001,0,0,vandj001 singles. ,vandj001,0,
+vandj001 to 2B. ,00,9,,vandj001,,wilse001,94,12,B,doteo001,0,0,Wild Pitch. ,wilse001,0,
+,11,9,,vandj001,,,95,15,BSX,doteo001,1,0,wilse001 grounds out. ,wilse001,0,G
+,12,9,,vandj001,,,96,20,SFBFS,doteo001,1,0,morrw001 strikes out. ,morrw001,0,
+,02,9,,vandj001,,,97,23,CSX,doteo001,1,0,,mearp001,0,F

@@ -1,0 +1,136 @@
+version,2
+info,visteam,ATL
+info,hometeam,CIN
+info,site,CIN08
+info,date,2000/08/09
+info,number,0
+info,starttime,7:35PM
+info,daynight,night
+info,usedh,false
+info,umphome,fostm901
+info,ump1b,vanvm901
+info,ump2b,marsr901
+info,ump3b,herna901
+info,pitches,pitches
+info,temp,72
+info,winddir,torf
+info,windspeed,6
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,142
+info,attendance,31098
+info,wp,harnp001
+info,lp,glavt001
+info,save,
+start,furcr001,"Rafael Furcal",0,1,4
+start,jonea002,"Andruw Jones",0,2,8
+start,jonec004,"Chipper Jones",0,3,5
+start,joynw001,"Wally Joyner",0,4,3
+start,surhb001,"B.J. Surhoff",0,5,7
+start,bonib001,"Bobby Bonilla",0,6,9
+start,bakop001,"Paul Bako",0,7,2
+start,weisw001,"Walt Weiss",0,8,6
+start,glavt001,"Tom Glavine",0,9,1
+start,stync001,"Chris Stynes",1,1,5
+start,castj004,"Juan Castro",1,2,6
+start,grifk002,"Ken Griffey",1,3,8
+start,bichd001,"Dante Bichette",1,4,9
+start,yound001,"Dmitri Young",1,5,3
+start,ochoa001,"Alex Ochoa",1,6,7
+start,reesp001,"Pokey Reese",1,7,4
+start,laruj001,"Jason LaRue",1,8,2
+start,harnp001,"Pete Harnisch",1,9,1
+play,1,0,furcr001,01,CX,43/G
+play,1,0,jonea002,12,CBFX,8/F8
+play,1,0,jonec004,20,BBX,4/P4
+play,1,1,stync001,31,BBBCB,W
+play,1,1,castj004,11,CBX,63/G.1-2
+play,1,1,grifk002,21,CBBX,S7.2-H;B-2(E5/TH)
+play,1,1,bichd001,00,X,9/F9.2-3
+play,1,1,yound001,30,BBBB,W
+play,1,1,ochoa001,01,CX,S8.3-H;1-2
+play,1,1,reesp001,12,CCBX,13/G
+play,2,0,joynw001,21,CBBX,S9/9S
+play,2,0,surhb001,01,CX,7/F7
+play,2,0,bonib001,20,BBX,S9.1-3
+play,2,0,bakop001,02,FSFX,46(1)/FO.3-H
+play,2,0,weisw001,21,BCBX,43/G
+play,2,1,laruj001,02,FFX,7/F7
+play,2,1,harnp001,22,BSFBX,5/F5
+play,2,1,stync001,10,BX,43/G
+play,3,0,glavt001,12,FBFX,S7
+play,3,0,furcr001,00,X,S3/BG3.1-2
+play,3,0,jonea002,00,X,9/F9
+play,3,0,jonec004,20,BBX,31/G.2-3;1-2
+play,3,0,joynw001,00,X,S/78.3-H;2-H
+play,3,0,surhb001,10,BX,S9/9S.1-3
+play,3,0,bonib001,32,SFBBFBX,T9.3-H;1-H
+play,3,0,bakop001,01,FS,WP.3-H
+play,3,0,bakop001,12,FSBX,43/G
+play,3,1,castj004,12,CBFX,43/G
+play,3,1,grifk002,32,CBFBBX,HR/9
+play,3,1,bichd001,21,BFBX,8/F8
+play,3,1,yound001,00,X,53/G
+play,4,0,weisw001,22,FBBFX,43/G
+play,4,0,glavt001,11,BCX,63/G
+play,4,0,furcr001,12,CBFX,3/G
+play,4,1,ochoa001,21,BBCX,D/78
+play,4,1,reesp001,01,CX,S9.2-3
+play,4,1,laruj001,11,CBX,S.3-H;1-2
+play,4,1,harnp001,01,LX,14/SH.2-3;1-2
+play,4,1,stync001,21,BSBX,53/G.3-H
+play,4,1,castj004,00,X,53/G
+play,5,0,jonea002,12,FBFFX,63/G
+play,5,0,jonec004,00,X,31/G
+play,5,0,joynw001,11,BCX,31/G
+play,5,1,grifk002,01,SX,S9/9S
+play,5,1,bichd001,20,BBX,S8.1-3
+play,5,1,yound001,10,BX,D9/9D.3-H;1-3
+play,5,1,ochoa001,00,,NP
+sub,belis001,"Stan Belinda",0,9,1
+play,5,1,ochoa001,00,X,T8.3-H;2-H
+play,5,1,reesp001,31,BSBBX,53/G
+play,5,1,laruj001,02,SSC,K/C
+play,5,1,harnp001,22,BFBSX,HR/8.3-H
+play,5,1,stync001,12,BCSX,9/F9
+play,6,0,surhb001,12,BCFX,S9
+play,6,0,bonib001,12,CBFX,7/F7S
+play,6,0,bakop001,31,BBBCB,W.1-2
+play,6,0,weisw001,01,CX,4/P4
+play,6,0,belis001,00,,NP
+sub,lockk001,"Keith Lockhart",0,9,11
+play,6,0,lockk001,21,CBBX,7/F7
+play,6,1,castj004,00,,NP
+sub,mulht001,"Terry Mulholland",0,9,1
+play,6,1,castj004,00,X,S8
+play,6,1,grifk002,32,FFBFBFBFC,K+CS2(25)/DP/C
+com,"multiple sources confirm odd-looking fielding on DP"
+play,6,1,bichd001,10,BX,8/F8D
+play,7,0,furcr001,10,BX,43/G
+play,7,0,jonea002,12,FBSX,63/G
+play,7,0,jonec004,10,BX,T7
+play,7,0,joynw001,22,CFBBX,43/G
+play,7,1,yound001,10,BX,3/G
+play,7,1,ochoa001,00,X,6/L6
+play,7,1,reesp001,01,CX,53/G
+play,8,0,surhb001,01,CX,8/F8
+play,8,0,bonib001,02,SCS,K23
+play,8,0,bakop001,11,FBX,8/F8S
+play,8,1,laruj001,00,,NP
+sub,lombg001,"George Lombard",0,9,9
+play,8,1,laruj001,00,,NP
+sub,burkj001,"John Burkett",0,6,1
+play,8,1,laruj001,10,BX,63/G
+play,8,1,harnp001,12,CBFS,K23
+play,8,1,stync001,21,CBBX,63/G
+play,9,0,weisw001,00,,NP
+sub,tuckm001,"Michael Tucker",1,4,9
+play,9,0,weisw001,01,CX,6/P6
+play,9,0,lombg001,22,CSBBFS,K
+play,9,0,furcr001,22,CSBBFS,K
+data,er,glavt001,8
+data,er,belis001,2
+data,er,mulht001,0
+data,er,burkj001,0
+data,er,harnp001,6

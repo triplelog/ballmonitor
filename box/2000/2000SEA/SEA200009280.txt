@@ -1,0 +1,170 @@
+version,2
+info,visteam,TEX
+info,hometeam,SEA
+info,site,SEA03
+info,date,2000/09/28
+info,number,0
+info,starttime,3:35PM
+info,daynight,day
+info,usedh,true
+info,umphome,reilm901
+info,ump1b,diazl901
+info,ump2b,kellj901
+info,ump3b,higgs901
+info,pitches,pitches
+info,temp,63
+info,winddir,ltor
+info,windspeed,8
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,205
+info,attendance,43264
+info,wp,hellr001
+info,lp,tomkb001
+info,save,
+start,grees002,"Scarborough Green",0,1,8
+start,clayr001,"Royce Clayton",0,2,6
+start,palmr001,"Rafael Palmeiro",0,3,3
+start,curtc001,"Chad Curtis",0,4,7
+start,leder001,"Ricky Ledee",0,5,9
+start,sierr001,"Ruben Sierra",0,6,10
+start,shels001,"Scott Sheldon",0,7,4
+start,lambm001,"Mike Lamb",0,8,5
+start,knorr001,"Randy Knorr",0,9,2
+start,hellr001,"Rick Helling",0,0,1
+start,camem001,"Mike Cameron",1,1,8
+start,javis001,"Stan Javier",1,2,9
+start,rodra001,"Alex Rodriguez",1,3,6
+start,marte001,"Edgar Martinez",1,4,10
+start,olerj001,"John Olerud",1,5,3
+start,marta001,"Al Martin",1,6,7
+start,belld002,"David Bell",1,7,5
+start,olivj001,"Joe Oliver",1,8,2
+start,mclem001,"Mark McLemore",1,9,4
+start,moyej001,"Jamie Moyer",1,0,1
+play,1,0,grees002,22,BCSBFX,S9
+play,1,0,clayr001,01,SB,SB2
+play,1,0,clayr001,11,SBX,E1/SH.2-3
+play,1,0,palmr001,10,BX,9/SF.3-H
+play,1,0,curtc001,11,BFX,64(1)3/GDP
+play,1,1,camem001,10,BX,9/F9
+play,1,1,javis001,32,FBBFBX,43/G
+play,1,1,rodra001,22,BCSBFX,3/P3
+play,2,0,leder001,11,BCX,D9
+play,2,0,sierr001,02,SSX,S7.2-3
+play,2,0,shels001,32,CSBBBX,6(1)3/GDP.3-H
+play,2,0,lambm001,12,BCCFX,S8
+play,2,0,knorr001,00,X,D8/8D.1-3
+play,2,0,grees002,12,CBFX,S8/8S.3-H;2-H;B-2(THH)
+play,2,0,clayr001,00,,NP
+sub,tomkb001,"Brett Tomko",1,0,1
+play,2,0,clayr001,22,BBSSFFFB,SB3
+play,2,0,clayr001,32,BBSSFFFBFFS,K
+play,2,1,marte001,21,CBBX,S8
+play,2,1,olerj001,10,BX,8/F8
+play,2,1,marta001,20,BBX,3/G.1-2
+play,2,1,belld002,32,CBBBCX,7/F7D
+play,3,0,palmr001,22,FBBCX,D9
+play,3,0,curtc001,01,CX,9/F9D.2-3
+play,3,0,leder001,01,CX,43/G
+play,3,0,sierr001,11,CBX,8/F8
+play,3,1,olivj001,31,BBFBB,W
+play,3,1,mclem001,12,CBFS,K
+play,3,1,camem001,32,BSBCBFFB,W.1-2
+play,3,1,javis001,01,FX,D7.2-H;1-3
+play,3,1,rodra001,10,BX,D8/8D.3-H;2-H
+play,3,1,marte001,32,CBBCBX,HR/8.2-H
+play,3,1,olerj001,21,BCBX,9/F9D
+play,3,1,marta001,32,BBBCFC,K/C
+play,4,0,shels001,10,BX,63/G
+play,4,0,lambm001,02,FCX,7/F7
+play,4,0,knorr001,10,BX,31/G
+play,4,1,belld002,22,BFBFFX,5/L5
+play,4,1,olivj001,12,CCBFX,7/F7
+play,4,1,mclem001,02,CCC,K/C
+play,5,0,grees002,31,CBBBB,W
+play,5,0,clayr001,11,BFB,SB2
+play,5,0,clayr001,22,BFBFX,23/G.2-3
+play,5,0,palmr001,30,IIII,IW
+play,5,0,curtc001,22,BCCBFX,S9.3-H;1-2
+play,5,0,leder001,00,,NP
+sub,mesaj001,"Jose Mesa",1,0,1
+play,5,0,leder001,22,BBSFFX,36(1)/FO.2-3
+play,5,0,sierr001,00,X,S8.3-H;1-3
+play,5,0,shels001,02,CSS,K
+play,5,1,camem001,31,BFBBX,7/F7
+play,5,1,javis001,21,BFBX,8/F8
+play,5,1,rodra001,31,CBBBB,W
+play,5,1,marte001,00,B,SB2
+play,5,1,marte001,10,BX,4/P4
+play,6,0,lambm001,00,X,S8
+play,6,0,knorr001,02,LSX,163/G.1-2
+play,6,0,grees002,22,BFBFX,S.2-3
+play,6,0,clayr001,22,CCBFBB,SB2
+play,6,0,clayr001,32,CCBFBBB,W
+play,6,0,palmr001,00,X,9/SF.3-H;2-3
+play,6,0,curtc001,21,BCBB,SB2
+play,6,0,curtc001,32,BCBBCB,W
+play,6,0,leder001,00,,NP
+sub,panij001,"Jose Paniagua",1,0,1
+play,6,0,leder001,00,X,D/89.3-H;2-H;1-H
+play,6,0,sierr001,32,BCBCBB,W
+play,6,0,shels001,32,BBBCSFX,5/P5
+play,6,1,olerj001,22,CBBFX,HR/9
+play,6,1,marta001,21,BCBX,7/F7
+play,6,1,belld002,22,CBCBX,8/F8
+play,6,1,olivj001,11,BFX,43/G
+play,7,0,lambm001,00,,NP
+sub,hodgk001,"Kevin Hodges",1,0,1
+play,7,0,lambm001,21,BFBX,53/G
+play,7,0,knorr001,00,X,53/G
+play,7,0,grees002,31,BBCBB,W
+play,7,0,clayr001,11,BCB,SB2
+play,7,0,clayr001,22,BCBCX,43/G
+play,7,1,mclem001,00,,NP
+sub,zimmj001,"Jeff Zimmerman",0,0,1
+play,7,1,mclem001,21,BCBX,8/F8
+play,7,1,camem001,11,BCX,9/F9
+play,7,1,javis001,21,CBBX,T/78
+play,7,1,rodra001,32,BBCBCX,43/G
+play,8,0,palmr001,12,CFBX,S9
+play,8,0,curtc001,10,BX,S.1-2
+play,8,0,leder001,00,,NP
+sub,rodrf001,"Frankie Rodriguez",1,0,1
+play,8,0,leder001,11,BCX,8/F8.2-3
+play,8,0,sierr001,21,BBFX,HR/9.3-H;1-H
+play,8,0,shels001,12,BSSX,53/G
+play,8,0,lambm001,10,BX,31/G
+play,8,1,marte001,12,CSBX,S9
+play,8,1,olerj001,02,CFFS,K
+play,8,1,marta001,30,BBBB,W.1-2
+play,8,1,belld002,22,FCBBFFX,S9.2-3;1-2
+play,8,1,olivj001,00,,NP
+sub,guilc001,"Carlos Guillen",1,8,11
+play,8,1,guilc001,00,,NP
+sub,crabt001,"Tim Crabtree",0,0,1
+play,8,1,guilc001,02,CFFS,K
+play,8,1,mclem001,22,CBBCS,K
+play,9,0,knorr001,00,,NP
+sub,guilc001,"Carlos Guillen",1,8,6
+play,9,0,knorr001,00,,NP
+sub,widgc001,"Chris Widger",1,3,2
+play,9,0,knorr001,11,BCX,53/G
+play,9,0,grees002,12,BCCX,43/G
+play,9,0,clayr001,02,FSX,53/G
+play,9,1,camem001,11,CBX,S8
+play,9,1,javis001,10,BX,43/G.1-2
+play,9,1,widgc001,01,CX,53/G.2-3
+play,9,1,marte001,00,,NP
+sub,ibanr001,"Raul Ibanez",1,4,11
+play,9,1,ibanr001,10,BX,43/G
+data,er,hellr001,6
+data,er,zimmj001,0
+data,er,crabt001,0
+data,er,moyej001,4
+data,er,tomkb001,2
+data,er,mesaj001,4
+data,er,panij001,0
+data,er,hodgk001,2
+data,er,rodrf001,1

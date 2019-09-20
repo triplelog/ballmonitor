@@ -1,0 +1,86 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,21,1,,,,,0,4,CBBX,rekab001,1,0,,damoj001,0,F
+,32,1,,,,,1,10,BFFBBS,rekab001,1,0,sancr001 strikes out. ,sancr001,0,
+,32,1,,,,,2,16,BCBSBX,rekab001,1,0,,sweem002,0,F
+,12,1,,,,,3,4,LBFX,reicd001,1,0,,willg001,1,P
+,32,1,,,,,4,10,CBFBBS,reicd001,1,0,tynej001 strikes out. ,tynej001,1,
+,11,1,,,,,5,13,SBX,reicd001,1,0,cox-s001 grounds out. ,cox-s001,1,G
+,12,2,,,,,6,20,BCSS,rekab001,1,0,dye-j001 strikes out. ,dye-j001,0,
+,32,2,quinm001,,,,7,27,SBFBFBB,rekab001,0,0,quinm001 walks. ,quinm001,0,
+,01,2,quinm001,,,,8,29,CX,rekab001,1,0,,randj002,0,F
+,10,2,quinm001,,,,9,31,BX,rekab001,1,0,,dunwt001,0,F
+,10,2,,,,,10,15,BX,reicd001,1,0,mcgrf001 grounds out. ,mcgrf001,1,G
+,32,2,vaugg001,,,,11,21,FBBBSB,reicd001,0,0,vaugg001 walks. ,vaugg001,1,
+vaugg001 to 2B. ,31,2,huffa001,vaugg001,,,12,26,BBBCB,reicd001,0,0,huffa001 walks. ,huffa001,1,
+vaugg001 to 3B. huffa001 to 2B. ,10,2,,huffa001,vaugg001,smitr003,13,28,BB,reicd001,0,0,Wild Pitch. ,smitr003,1,
+vaugg001 scores. huffa001 to 3B. ,20,2,,,huffa001,,14,31,BBX,reicd001,1,1,smitr003 grounds out. ,smitr003,1,G
+,32,2,,,huffa001,,15,38,BBBCCFX,reicd001,1,0,difem001 grounds out. ,difem001,1,G
+,12,3,zaung001,,,,16,36,CBCFH,rekab001,0,0,zaung001 hit by pitch. ,zaung001,0,
+,00,3,zaung001,,,,17,37,X,rekab001,1,0,,delgw001,0,F
+zaung001 to 2B. ,12,3,,zaung001,,,18,42,CBSFX,rekab001,1,0,damoj001 grounds out. ,damoj001,0,G
+,31,3,,zaung001,,,19,47,BFBBX,rekab001,1,0,,sancr001,0,F
+,02,3,martf001,,,,20,41,FFH,reicd001,0,0,martf001 hit by pitch. ,martf001,1,
+martf001 to 2B. ,00,3,willg001,martf001,,,21,42,X,reicd001,0,0,willg001 singles. ,willg001,1,G
+martf001 to 3B. willg001 to 2B. ,00,3,,willg001,martf001,tynej001,23,43,B,reicd001,0,0,Wild Pitch. ,tynej001,1,
+,10,3,,willg001,martf001,,24,45,BX,reicd001,1,0,tynej001 grounds out. ,tynej001,1,G
+martf001 scores. willg001 to 3B. ,21,3,cox-s001,,willg001,,25,49,CBBX,reicd001,0,1,cox-s001 singles. ,cox-s001,1,
+,01,3,,,willg001,,26,51,SX,reicd001,2,0,Double Play. ,mcgrf001,1,
+,32,4,,,,,27,53,CBSBBS,rekab001,1,0,sweem002 strikes out. ,sweem002,0,
+,22,4,dye-j001,,,,28,58,BSCBX,rekab001,0,0,dye-j001 singles. ,dye-j001,0,
+dye-j001 out. ,02,4,quinm001,,,,29,61,CSX,rekab001,1,0,quinm001 reaches on fielder's choice. ,quinm001,0,
+quinm001 to 2B. ,10,4,randj002,quinm001,,,30,63,BX,rekab001,0,0,randj002 singles. ,randj002,0,
+quinm001 scores. randj002 to 2B. ,00,4,dunwt001,randj002,,,31,64,X,rekab001,0,1,dunwt001 singles. ,dunwt001,0,
+,32,4,dunwt001,randj002,,,32,71,CBFFBBX,rekab001,1,0,fabrj001 grounds out. ,fabrj001,0,G
+,02,4,vaugg001,,,,33,54,FFX,reicd001,0,0,vaugg001 singles. ,vaugg001,1,
+,00,4,,,,,34,55,X,reicd001,2,0,Double Play. ,huffa001,1,
+,31,4,smitr003,,,,35,60,BBBCB,reicd001,0,0,smitr003 walks. ,smitr003,1,
+smitr003 scores. ,22,4,,difem001,,,36,65,FBBFX,reicd001,0,1,difem001 doubles. ,difem001,1,
+difem001 scores. ,20,4,,martf001,,,37,68,BBX,reicd001,0,1,martf001 doubles. ,martf001,1,
+,31,4,willg001,martf001,,,38,73,BBBCB,reicd001,0,0,willg001 walks. ,willg001,1,
+martf001 to 3B. willg001 out. ,10,4,tynej001,,martf001,,39,75,BX,reicd001,1,0,tynej001 reaches on fielder's choice. ,tynej001,1,
+,30,5,delgw001,,,,40,75,BBBB,rekab001,0,0,delgw001 walks. ,delgw001,0,
+delgw001 to 3B. ,12,5,,damoj001,delgw001,,41,79,BCFX,rekab001,0,0,damoj001 doubles. ,damoj001,0,
+delgw001 scores. damoj001 to 3B. ,00,5,,,damoj001,,42,80,X,rekab001,1,1,sancr001 grounds out. ,sancr001,0,G
+,00,5,,,damoj001,,43,81,X,rekab001,1,0,sweem002 grounds out. ,sweem002,0,G
+damoj001 scores. ,22,5,,,,dye-j001,44,86,CBBCB,rekab001,0,1,Wild Pitch. ,dye-j001,0,
+,32,5,dye-j001,,,,45,92,CBBCBB,rekab001,0,0,dye-j001 walks. ,dye-j001,0,
+,11,5,dye-j001,,,,46,95,BFX,rekab001,1,0,quinm001 grounds out. ,quinm001,0,G
+,00,5,,,,,47,76,X,reicd001,1,0,cox-s001 grounds out. ,cox-s001,1,G
+,30,5,,,,,48,80,BBBX,reicd001,1,0,mcgrf001 grounds out. ,mcgrf001,1,G
+,30,5,,,,,49,84,BBBX,reicd001,0,1,vaugg001 homers. ,vaugg001,1,
+,02,5,,,,,50,88,CFFX,reicd001,1,0,huffa001 grounds out. ,huffa001,1,G
+,01,6,randj002,,,,52,2,FX,endet001,0,0,randj002 singles. ,randj002,0,
+randj002 to 2B. ,01,6,dunwt001,randj002,,,53,4,LX,endet001,0,0,dunwt001 hits into a fielder's choice. ,dunwt001,0,
+randj002 to 3B. dunwt001 to 2B. ,21,6,,dunwt001,randj002,,54,8,LBBX,endet001,1,0,Sacrifice bunt by fabrj001.,fabrj001,0,
+randj002 scores. dunwt001 scores. ,21,6,delgw001,,,,55,12,BBFX,endet001,0,2,delgw001 singles. ,delgw001,0,
+delgw001 to 2B. ,10,6,damoj001,delgw001,,,57,2,BX,fiort001,0,0,damoj001 reaches on error. ,damoj001,0,G
+,21,6,,delgw001,,,58,6,BFBX,fiort001,2,0,Double Play. ,sancr001,0,
+,02,6,,,,,60,3,FCC,santj002,1,0,smitr003 strikes out. ,smitr003,1,
+,31,6,,,,,61,8,BSBBX,santj002,1,0,difem001 grounds out. ,difem001,1,G
+,00,6,,,,,62,9,X,santj002,1,0,,martf001,1,G
+,00,7,,,,,63,7,X,fiort001,1,0,sweem002 grounds out. ,sweem002,0,G
+,32,7,dye-j001,,,,64,13,BBBCFB,fiort001,0,0,dye-j001 walks. ,dye-j001,0,
+,00,7,,,,,65,14,X,fiort001,2,0,Double Play. ,quinm001,0,
+,22,7,willg001,,,,66,15,BSBCFX,santj002,0,0,willg001 singles. ,willg001,1,
+willg001 out. ,00,7,tynej001,,,,67,16,X,santj002,1,0,tynej001 reaches on fielder's choice. ,tynej001,1,
+,11,7,,tynej001,,cox-s001,68,19,CBB,santj002,0,0,tynej001 steals 2B. ,cox-s001,1,
+,21,7,,tynej001,,,69,23,CBBX,santj002,1,0,cox-s001 grounds out. ,cox-s001,1,G
+,12,7,,tynej001,,,70,27,CFBS,santj002,1,0,mcgrf001 strikes out. ,mcgrf001,1,
+,10,8,,,,,71,16,BX,fiort001,1,0,randj002 grounds out. ,randj002,0,G
+,00,8,,,,,72,17,X,fiort001,1,0,dunwt001 grounds out. ,dunwt001,0,G
+,10,8,,,,,73,19,BX,fiort001,1,0,fabrj001 grounds out. ,fabrj001,0,G
+,31,8,vaugg001,,,,74,32,BCBBX,santj002,0,0,vaugg001 singles. ,vaugg001,1,
+vaugg001 to 2B. ,00,8,,vaugg001,,,75,33,X,santj002,1,0,huffa001 grounds out. ,huffa001,1,G
+vaugg001 to 3B. ,02,8,,,vaugg001,,76,36,SSX,santj002,1,0,smitr003 grounds out. ,smitr003,1,G
+,11,8,,,vaugg001,,77,39,BFX,santj002,1,0,,difem001,1,L
+,32,9,,delgw001,,,79,11,CCFBBBFFFFX,hernr001,0,0,delgw001 doubles. ,delgw001,0,
+delgw001 to 3B. ,10,9,,,delgw001,damoj001,80,13,B+2,hernr001,0,0,Pickoff error. ,damoj001,0,
+,12,9,,,delgw001,,81,18,B+2CSX,hernr001,1,0,damoj001 grounds out. ,damoj001,0,G
+delgw001 scores. mccad001 to 3B. ,30,9,,,mccad001,,83,22,BBBX,hernr001,0,1,mccad001 reaches on error. ,mccad001,0,
+feblc001 scores. ,01,9,,,,,85,24,SX,hernr001,1,1,sweem002 hits sacrifice fly. ,sweem002,0,
+,31,9,dye-j001,,,,86,29,SBBBB,hernr001,0,0,dye-j001 walks. ,dye-j001,0,
+dye-j001 to 2B. ,01,9,quinm001,dye-j001,,,87,31,SX,hernr001,0,0,quinm001 singles. ,quinm001,0,
+,11,9,quinm001,dye-j001,,,88,34,BCX,hernr001,1,0,,randj002,0,F
+,12,9,,,,,92,5,CCBFX,bottr001,1,0,martf001 grounds out. ,martf001,1,G
+,11,9,willg001,,,,93,8,BFX,bottr001,0,0,willg001 reaches on error. ,willg001,1,G
+,22,9,,,,,94,13,FCBBX,bottr001,2,0,Double Play. ,tynej001,1,

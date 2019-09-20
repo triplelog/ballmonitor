@@ -1,0 +1,76 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,12,1,,,,,0,4,CCBS,parkc002,1,0,goodt001 strikes out. ,goodt001,0,
+,22,1,,,,,1,10,FBBFFS,parkc002,1,0,lansm001 strikes out. ,lansm001,0,
+,20,1,,,,,2,13,BBX,parkc002,1,0,,walkl001,0,F
+,10,1,hollt001,,,,3,2,BX,yoshm001,0,0,hollt001 singles. ,hollt001,1,
+,21,1,,,,,4,6,BBCX,yoshm001,2,0,Double Play. ,grudm001,1,
+,00,1,,,,,5,7,X,yoshm001,0,1,shefg001 homers. ,shefg001,1,
+,22,1,,,,,6,13,CFBBFX,yoshm001,1,0,grees001 grounds out. ,grees001,1,G
+,32,2,,,,,7,20,BBBCFFS,parkc002,1,0,heltt001 strikes out. ,heltt001,0,
+,32,2,hammj001,,,,8,28,BCBSBFFB,parkc002,0,0,hammj001 walks. ,hammj001,0,
+,20,2,,,,,9,31,BBX,parkc002,2,0,Double Play. ,maynb001,0,
+,20,2,,,,,10,16,BBX,yoshm001,1,0,,karre001,1,F
+,12,2,,,,,11,21,BFFFX,yoshm001,1,0,,belta001,1,F
+,10,2,,,,,12,23,BX,yoshm001,1,0,,kreuc001,1,F
+,32,3,,,,,13,37,BCBFBX,parkc002,1,0,shumt001 grounds out. ,shumt001,0,G
+,22,3,,,,,14,44,CBSFFBX,parkc002,1,0,peren001 grounds out. ,peren001,0,G
+,32,3,yoshm001,,,,15,50,BBCSBB,parkc002,0,0,yoshm001 walks. ,yoshm001,0,
+,01,3,yoshm001,,,,16,52,SX,parkc002,1,0,goodt001 grounds out. ,goodt001,0,G
+,00,3,,,,,17,24,X,yoshm001,1,0,coraa001 grounds out. ,coraa001,1,G
+,22,3,,,,,18,31,BSFBFFS,yoshm001,1,0,parkc002 strikes out. ,parkc002,1,
+,21,3,,,,,19,35,BFBX,yoshm001,1,0,,hollt001,1,F
+,00,4,,,,,20,53,X,parkc002,1,0,lansm001 grounds out. ,lansm001,0,G
+,32,4,walkl001,,,,21,59,FBBFBB,parkc002,0,0,walkl001 walks. ,walkl001,0,
+walkl001 to 2B. ,12,4,heltt001,walkl001,,,22,64,BSCFX,parkc002,0,0,heltt001 singles. ,heltt001,0,
+walkl001 scores. heltt001 to 3B. ,00,4,,hammj001,heltt001,,23,65,X,parkc002,0,1,hammj001 doubles. ,hammj001,0,
+,11,4,,hammj001,heltt001,,24,68,BSX,parkc002,1,0,,maynb001,0,P
+,02,4,,hammj001,heltt001,,25,71,SSS,parkc002,1,0,shumt001 strikes out. ,shumt001,0,
+,10,4,,,,,26,37,BX,yoshm001,1,0,,grudm001,1,F
+,32,4,,,,,27,43,BBBCFX,yoshm001,1,0,,shefg001,1,F
+,30,4,grees001,,,,28,47,BBBB,yoshm001,0,0,grees001 walks. ,grees001,1,
+,12,4,,grees001,,karre001,29,51,SCBB,yoshm001,0,0,grees001 steals 2B. ,karre001,1,
+,22,4,,grees001,,,30,56,SCBBX,yoshm001,1,0,,karre001,1,F
+,00,5,peren001,,,,31,72,X,parkc002,0,0,peren001 singles. ,peren001,0,
+peren001 to 2B. ,12,5,yoshm001,peren001,,,32,76,FBSX,parkc002,0,0,yoshm001 reaches on error. ,yoshm001,0,
+peren001 to 3B. yoshm001 to 2B. ,31,5,goodt001,yoshm001,peren001,,33,81,BBBCB,parkc002,0,0,goodt001 walks. ,goodt001,0,
+,11,5,goodt001,yoshm001,peren001,,34,84,BCX,parkc002,1,0,,lansm001,0,F
+,02,5,goodt001,yoshm001,peren001,,35,87,CFS,parkc002,1,0,walkl001 strikes out. ,walkl001,0,
+,22,5,goodt001,yoshm001,peren001,,36,92,BFFBX,parkc002,1,0,,heltt001,0,F
+,21,5,,belta001,,,37,60,BBCX,yoshm001,0,0,belta001 doubles. ,belta001,1,
+,10,5,,,,,38,62,BX,yoshm001,2,0,Double Play. ,kreuc001,1,
+,12,5,coraa001,,,,39,66,BCFX,yoshm001,0,0,coraa001 singles. ,coraa001,1,
+coraa001 to 3B. parkc002 to 2B. ,00,5,,parkc002,coraa001,,40,67,X,yoshm001,0,0,parkc002 singles. ,parkc002,1,
+,10,5,,parkc002,coraa001,,41,69,BX,yoshm001,1,0,,hollt001,1,F
+,32,6,hammj001,,,,42,98,BSBSBH,parkc002,0,0,hammj001 hit by pitch. ,hammj001,0,
+hammj001 scores. ,11,6,,,,,43,101,BSX,parkc002,0,2,maynb001 homers. ,maynb001,0,
+,30,6,shumt001,,,,44,105,BBBB,parkc002,0,0,shumt001 walks. ,shumt001,0,
+,01,6,shumt001,,,,45,107,FX,parkc002,1,0,,peren001,0,F
+shumt001 to 2B. ,00,6,,shumt001,,,46,108,X,parkc002,1,0,Sacrifice bunt by yoshm001.,yoshm001,0,
+,22,6,,shumt001,,,47,113,BFCBS,parkc002,1,0,goodt001 strikes out. ,goodt001,0,
+,12,6,grudm001,,,,48,73,CBFX,yoshm001,0,0,grudm001 singles. ,grudm001,1,
+grudm001 to 2B. ,32,6,shefg001,grudm001,,,49,84,CBFFFFBFFBB,yoshm001,0,0,shefg001 walks. ,shefg001,1,
+grudm001 scores. shefg001 scores. ,20,6,,,,,50,87,BBX,yoshm001,0,3,grees001 homers. ,grees001,1,
+,31,6,,,,,51,92,BBFBX,yoshm001,1,0,,karre001,1,F
+,02,6,,,,,52,95,CFX,yoshm001,1,0,belta001 grounds out. ,belta001,1,G
+,22,6,,,,,53,100,CBCBX,yoshm001,1,0,kreuc001 grounds out. ,kreuc001,1,G
+,10,7,,,,,56,2,BX,adamt001,1,0,,lansm001,0,F
+,12,7,,,,,57,6,CBCX,adamt001,1,0,walkl001 grounds out. ,walkl001,0,G
+,12,7,,,,,58,10,CBCX,adamt001,1,0,heltt001 grounds out. ,heltt001,0,G
+,11,7,,,,,60,3,BCX,choub001,1,0,coraa001 grounds out. ,coraa001,1,G
+,30,7,lodup001,,,,61,7,BBBB,choub001,0,0,lodup001 walks. ,lodup001,1,
+,32,7,,,,,62,13,BBCBFS,choub001,2,0,hollt001 strikes out. lodup001 caught stealing. ,hollt001,1,
+,32,8,hammj001,,,,63,18,BBSFBFFX,adamt001,0,0,hammj001 singles. ,hammj001,0,
+hammj001 out. ,01,8,maynb001,,,,64,20,FX,adamt001,1,0,maynb001 reaches on fielder's choice. ,maynb001,0,
+,02,8,petrb001,,,,66,24,CFFX,adamt001,1,0,,shumt001,0,F
+,01,8,petrb001,,,,67,26,CX,adamt001,1,0,peren001 grounds out. ,peren001,0,G
+,22,8,,,,,69,18,FBBFX,choub001,1,0,grudm001 grounds out. ,grudm001,1,G
+,21,8,shefg001,,,,70,22,BBFX,choub001,0,0,shefg001 singles. ,shefg001,1,
+shefg001 to 3B. ,01,8,,grees001,shefg001,,72,2,CX,myerm001,0,0,grees001 doubles. ,grees001,1,
+,30,8,karre001,grees001,shefg001,,75,4,IIII,dejem001,0,0,karre001 intentionally walks. ,karre001,1,
+,21,8,karre001,grees001,shefg001,,76,8,BBCX,dejem001,1,0,,belta001,1,P
+shefg001 scores. grees001 scores. karre001 to 2B. ,10,8,leyrj001,karre001,,,80,2,BX,whitg001,0,2,leyrj001 singles. ,leyrj001,1,
+karre001 to 3B. leyrj001 to 2B. ,12,8,,leyrj001,karre001,coraa001,81,6,SBCB,whitg001,0,0,Wild Pitch. ,coraa001,1,
+,32,8,,leyrj001,karre001,,82,13,SBCBBFX,whitg001,1,0,coraa001 grounds out. ,coraa001,1,G
+,21,9,,,,,84,4,CBBX,fettm001,1,0,,cirij001,0,F
+,31,9,goodt001,,,,85,9,SBBBB,fettm001,0,0,goodt001 walks. ,goodt001,0,
+,22,9,,,,,86,14,CBBFX,fettm001,2,0,Double Play. ,lansm001,0,

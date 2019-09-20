@@ -1,0 +1,154 @@
+version,2
+info,visteam,MIL
+info,hometeam,SFN
+info,site,SFO03
+info,date,2000/08/07
+info,number,0
+info,starttime,7:15PM
+info,daynight,night
+info,usedh,false
+info,umphome,wintm901
+info,ump1b,welkb901
+info,ump2b,culbf901
+info,ump3b,froeb901
+info,pitches,pitches
+info,temp,58
+info,winddir,rtol
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,172
+info,attendance,40930
+info,wp,hernl003
+info,lp,snydj001
+info,save,
+start,bellr002,"Ron Belliard",0,1,4
+start,grism001,"Marquis Grissom",0,2,8
+start,jenkg001,"Geoff Jenkins",0,3,7
+start,sexsr001,"Richie Sexson",0,4,3
+start,burnj001,"Jeromy Burnitz",0,5,9
+start,hernj001,"Jose Hernandez",0,6,6
+start,houst001,"Tyler Houston",0,7,5
+start,blanh001,"Henry Blanco",0,8,2
+start,snydj001,"John Snyder",0,9,1
+start,benam001,"Marvin Benard",1,1,8
+start,muelb001,"Bill Mueller",1,2,5
+start,bondb001,"Barry Bonds",1,3,7
+start,kentj001,"Jeff Kent",1,4,4
+start,snowj001,"J.T. Snow",1,5,3
+start,burke001,"Ellis Burks",1,6,9
+start,aurir001,"Rich Aurilia",1,7,6
+start,estab001,"Bobby Estalella",1,8,2
+start,hernl003,"Livan Hernandez",1,9,1
+play,1,0,bellr002,12,BCCS,K
+play,1,0,grism001,12,FCBS,K
+play,1,0,jenkg001,11,BSH,HP
+play,1,0,sexsr001,22,SFBBX,9/F9
+play,1,1,benam001,32,CBBSBX,43/G
+play,1,1,muelb001,12,FBCC,K/C
+play,1,1,bondb001,00,X,9/L9
+play,2,0,burnj001,22,CFBFBX,8/F8
+play,2,0,hernj001,21,CBBX,63/G
+play,2,0,houst001,32,FBFFBBS,K
+play,2,1,kentj001,32,BCBBSFB,W
+play,2,1,snowj001,31,BBFBX,7/F7
+play,2,1,burke001,32,BBBCFB,W.1-2
+play,2,1,aurir001,22,BCCBX,D9/9LS.2-H;1-3
+play,2,1,estab001,32,BSFBBFB,W
+play,2,1,hernl003,02,FFX,S9.3-H;2-H;1-3
+play,2,1,benam001,12,CBSX,46(1)3/GDP
+play,3,0,blanh001,00,X,S8
+play,3,0,snydj001,00,X,24/SH.1-2
+play,3,0,bellr002,01,CX,53/G
+play,3,0,grism001,10,BX,53/G
+play,3,1,muelb001,00,X,7/F7
+play,3,1,bondb001,10,BX,S9/9S
+play,3,1,kentj001,22,CBCBX,D7.1-3
+play,3,1,snowj001,30,IIII,IW
+play,3,1,burke001,00,X,8/SF.3-H
+play,3,1,aurir001,11,CBX,54(1)/FO.2-3
+play,4,0,jenkg001,32,BBBCSFFFS,K
+play,4,0,sexsr001,31,BSBBB,W
+play,4,0,burnj001,10,BX,36(1)/FO
+play,4,0,hernj001,20,BBX,53/G
+play,4,1,estab001,32,BCBFBB,W
+play,4,1,hernl003,01,LX,34/SH.1-2
+play,4,1,benam001,22,BCFBX,D/78.2-H
+play,4,1,muelb001,31,CBBBX,3/L3
+play,4,1,bondb001,30,IIII,IW
+play,4,1,kentj001,00,X,9/F9
+play,5,0,houst001,11,BFX,9/F9
+play,5,0,blanh001,12,CBFC,K/C
+play,5,0,snydj001,00,,NP
+sub,echea001,"Angel Echevarria",0,9,11
+play,5,0,echea001,32,BBCSBS,K
+play,5,1,snowj001,00,,NP
+sub,roqur001,"Rafael Roque",0,9,1
+play,5,1,snowj001,02,CCX,3/G
+play,5,1,burke001,22,CFFBBC,K/C
+play,5,1,aurir001,31,SBBBB,W
+play,5,1,estab001,32,BCCBFBC,K/C
+play,6,0,bellr002,12,FBCX,31/G
+play,6,0,grism001,00,X,S7
+play,6,0,jenkg001,21,BBSX,46(1)3/GDP
+play,6,1,hernl003,00,X,S8
+play,6,1,benam001,02,LLFX,36(1)/FO
+play,6,1,muelb001,00,C,SB2
+play,6,1,muelb001,01,CX,43/G.2-3
+play,6,1,bondb001,32,CFBBBX,D9.3-H
+play,6,1,kentj001,30,IIII,IW
+play,6,1,snowj001,12,BCCS,K
+play,7,0,sexsr001,00,X,6/L6
+play,7,0,burnj001,11,BCX,S8
+play,7,0,hernj001,02,CFFC,K/C
+play,7,0,houst001,22,BCBFX,D9.1-3
+play,7,0,blanh001,22,BBCFX,53/G
+play,7,1,burke001,31,BBBCB,W
+play,7,1,aurir001,01,FX,HR/7.1-H
+play,7,1,estab001,31,BFBBB,W
+play,7,1,hernl003,00,X,8/L8
+play,7,1,benam001,31,BBCBB,W.1-2
+play,7,1,muelb001,12,BCCX,54(1)3/GDP
+play,8,0,roqur001,00,,NP
+sub,cresf001,"Felipe Crespo",1,3,7
+play,8,0,roqur001,00,,NP
+sub,martr003,"Ramon E. Martinez",1,4,4
+play,8,0,roqur001,00,,NP
+sub,riosa001,"Armando Rios",1,6,9
+play,8,0,roqur001,00,,NP
+sub,moutj001,"James Mouton",0,9,11
+play,8,0,moutj001,00,X,63/G
+play,8,0,bellr002,32,BCFBBX,S7/7S
+play,8,0,grism001,11,CBX,S7.1-2
+play,8,0,jenkg001,12,BFFX,13/G.2-3;1-2
+play,8,0,sexsr001,12,FFBX,63/G
+play,8,1,cresf001,00,,NP
+sub,davik001,"Kane Davis",0,9,1
+play,8,1,cresf001,32,BBSSBB,W
+play,8,1,martr003,10,BX,7/FL
+play,8,1,snowj001,00,,NP
+sub,murrc001,"Calvin Murray",1,5,11
+play,8,1,murrc001,32,BFBBCB,W.1-2
+play,8,1,riosa001,10,BX,64(1)3/GDP
+play,9,0,burnj001,00,,NP
+sub,benam001,"Marvin Benard",1,1,7
+play,9,0,burnj001,00,,NP
+sub,cresf001,"Felipe Crespo",1,3,3
+play,9,0,burnj001,00,,NP
+sub,murrc001,"Calvin Murray",1,5,8
+play,9,0,burnj001,32,BBCBFX,6/P6
+play,9,0,hernj001,01,FX,S7/7S
+play,9,0,houst001,12,BFFX,S8.1-2
+play,9,0,blanh001,22,BCBFFX,D7.2-H;1-3
+play,9,0,davik001,00,,NP
+sub,embra001,"Alan Embree",1,9,1
+play,9,0,davik001,00,,NP
+sub,casar001,"Raul Casanova",0,9,11
+play,9,0,casar001,12,BSCS,K
+play,9,0,bellr002,21,BCBX,9/F9
+data,er,snydj001,5
+data,er,roqur001,3
+data,er,davik001,0
+data,er,hernl003,1
+data,er,embra001,0

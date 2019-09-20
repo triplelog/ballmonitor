@@ -1,0 +1,68 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,22,1,,,,,0,9,CFBFFBFFS,abbop001,1,0,knobc001 strikes out. ,knobc001,0,
+,11,1,,,,,1,12,BFX,abbop001,1,0,,jeted001,0,L
+,30,1,justd001,,,,2,16,BBBB,abbop001,0,0,justd001 walks. ,justd001,0,
+,22,1,justd001,,,,3,22,CCBBFX,abbop001,1,0,willb002 grounds out. ,willb002,0,G
+,22,1,,,,,4,7,BBCCFFS,clemr001,1,0,javis001 strikes out. ,javis001,1,
+,12,1,,,,,5,11,BFSS,clemr001,1,0,marta001 strikes out. ,marta001,1,
+,32,1,rodra001,,,,6,17,BBBFFB,clemr001,0,0,rodra001 walks. ,rodra001,1,
+,00,1,rodra001,,,,7,18,X,clemr001,1,0,,marte001,1,
+,22,2,,,,,8,27,BFBCS,abbop001,1,0,martt002 strikes out. ,martt002,0,
+,31,2,posaj001,,,,9,32,BBBCB,abbop001,0,0,posaj001 walks. ,posaj001,0,
+posaj001 to 3B. ,31,2,oneip001,,posaj001,,10,37,BBBCX,abbop001,0,0,oneip001 singles. ,oneip001,0,
+,01,2,oneip001,,posaj001,,11,39,FX,abbop001,1,0,,sojol001,0,P
+,20,2,oneip001,,posaj001,,12,42,BBX,abbop001,1,0,,bross001,0,F
+,32,2,,,,,13,24,BCBFBX,clemr001,1,0,,olerj001,1,L
+,22,2,,,,,14,29,BBFSX,clemr001,1,0,,camem001,1,F
+,22,2,,,,,15,34,BSBFC,clemr001,1,0,guilc001 strikes out. ,guilc001,1,
+,10,3,,,,,16,44,BX,abbop001,1,0,,knobc001,0,F
+,22,3,,,,,17,49,CBFBX,abbop001,1,0,jeted001 grounds out. ,jeted001,0,G
+,10,3,,,,,18,51,BX,abbop001,1,0,,justd001,0,F
+,22,3,,,,,19,39,BBCFX,clemr001,1,0,belld002 grounds out. ,belld002,1,G
+,12,3,,,,,20,43,BFSS,clemr001,1,0,wilsd001 strikes out. ,wilsd001,1,
+,32,3,,,,,21,49,BCBBFX,clemr001,1,0,,javis001,1,F
+,10,4,,,,,22,53,BX,abbop001,1,0,,willb002,0,F
+,00,4,,,,,23,54,X,abbop001,1,0,,martt002,0,F
+,22,4,,,,,24,60,CBBFFX,abbop001,1,0,,posaj001,0,P
+,12,4,,,,,25,53,SFBX,clemr001,1,0,marta001 grounds out. ,marta001,1,G
+,12,4,,,,,26,57,CSBS,clemr001,1,0,rodra001 strikes out. ,rodra001,1,
+,20,4,,,,,27,60,BBX,clemr001,1,0,marte001 grounds out. ,marte001,1,G
+,12,5,,,,,28,65,CBFFS,abbop001,1,0,oneip001 strikes out. ,oneip001,0,
+,11,5,,,,,29,68,CBX,abbop001,1,0,,sojol001,0,F
+,01,5,bross001,,,,30,70,CX,abbop001,0,0,bross001 singles. ,bross001,0,
+bross001 to 2B. ,31,5,knobc001,bross001,,,31,75,BBBCB,abbop001,0,0,knobc001 walks. ,knobc001,0,
+bross001 scores. knobc001 scores. ,10,5,,,,,32,77,BX,abbop001,0,3,jeted001 homers. ,jeted001,0,
+,11,5,,,,,33,80,BCX,abbop001,1,0,justd001 grounds out. ,justd001,0,G
+,01,5,,,,,34,62,FX,clemr001,1,0,,olerj001,1,G
+,22,5,,,,,35,68,CBBCFS,clemr001,1,0,camem001 strikes out. ,camem001,1,
+,32,5,,,,,36,74,SBFBBX,clemr001,1,0,,guilc001,1,P
+,10,6,willb002,,,,38,2,BX,ramsr001,0,0,willb002 singles. ,willb002,0,L
+,02,6,willb002,,,,39,5,CFS,ramsr001,1,0,martt002 strikes out. ,martt002,0,
+,11,6,,willb002,,posaj001,40,8,CBB,ramsr001,0,0,willb002 steals 2B. ,posaj001,0,
+,21,6,,willb002,,,41,12,CBBX,ramsr001,1,0,,posaj001,0,F
+,10,6,,willb002,,,42,14,BX,ramsr001,1,0,,oneip001,0,F
+,32,6,,,,,43,84,BCFFBFFBFX,clemr001,1,0,,belld002,1,P
+,12,6,,,,,44,88,BFSS,clemr001,1,0,wilsd001 strikes out. ,wilsd001,1,
+,12,6,,,,,45,92,BCSC,clemr001,1,0,javis001 strikes out. ,javis001,1,
+,21,7,,,,,47,4,FBBX,mesaj001,1,0,,sojol001,0,L
+,00,7,,,,,48,5,X,mesaj001,1,0,bross001 grounds out. ,bross001,0,G
+,12,7,,,,,49,9,BSCX,mesaj001,1,0,,knobc001,0,F
+,10,7,,marta001,,,50,94,BX,clemr001,0,0,marta001 doubles. ,marta001,1,L
+,12,7,,marta001,,,51,98,BCCS,clemr001,1,0,rodra001 strikes out. ,rodra001,1,
+,02,7,,marta001,,,52,101,FSC,clemr001,1,0,marte001 strikes out. ,marte001,1,
+,32,7,olerj001,marta001,,,53,107,BFSBBB,clemr001,0,0,olerj001 walks. ,olerj001,1,
+,32,7,olerj001,marta001,,,54,113,FCBBBC,clemr001,1,0,camem001 strikes out. ,camem001,1,
+,32,8,jeted001,,,,55,16,BBCFFBB,mesaj001,0,0,jeted001 walks. ,jeted001,0,
+jeted001 scores. ,01,8,,,,,56,18,CX,mesaj001,0,2,justd001 homers. ,justd001,0,
+,12,8,,,,,57,23,CCFBX,mesaj001,1,0,willb002 grounds out. ,willb002,0,G
+,21,8,,,,,58,27,BCBX,mesaj001,1,0,,martt002,0,F
+,12,8,,,,,59,31,CBCX,mesaj001,1,0,,posaj001,0,L
+,32,8,,,,,61,119,BBCBCS,clemr001,1,0,guilc001 strikes out. ,guilc001,1,
+,11,8,,,,,62,122,SBX,clemr001,1,0,,belld002,1,F
+,12,8,,,,,64,126,CSBS,clemr001,1,0,ibanr001 strikes out. ,ibanr001,1,
+,11,9,,,,,67,3,BCX,panij001,1,0,,oneip001,0,P
+,22,9,,,,,68,9,BFSFBX,panij001,1,0,,sojol001,0,F
+,11,9,,,,,69,12,BFX,panij001,1,0,,bross001,0,F
+,02,9,,,,,70,129,FFS,clemr001,1,0,javis001 strikes out. ,javis001,1,
+,22,9,,,,,71,136,FCBFFBS,clemr001,1,0,marta001 strikes out. ,marta001,1,
+,10,9,,,,,72,138,BX,clemr001,1,0,rodra001 grounds out. ,rodra001,1,G

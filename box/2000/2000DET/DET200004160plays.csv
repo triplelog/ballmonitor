@@ -1,0 +1,86 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,12,1,,,,,0,5,CCBFX,moehb001,1,0,willg001 grounds out. ,willg001,0,G
+,10,1,,,,,1,7,BX,moehb001,1,0,martd002 grounds out. ,martd002,0,G
+,11,1,cansj001,,,,2,10,FBX,moehb001,0,0,cansj001 reaches on error. ,cansj001,0,
+,22,1,cansj001,,,,3,15,CSBBX,moehb001,1,0,,mcgrf001,0,F
+,02,1,,,,,4,3,CFX,yan-e001,1,0,jeffg001 grounds out. ,jeffg001,1,G
+,01,1,,,,,5,5,CX,yan-e001,1,0,,ausmb001,1,
+,21,1,,,,,6,9,CBBX,yan-e001,1,0,,fickr001,1,F
+,12,2,,,,,7,19,CBSC,moehb001,1,0,vaugg001 strikes out. ,vaugg001,0,
+,21,2,,,,,8,23,BBFX,moehb001,1,0,,castv001,0,P
+,01,2,,,,,9,25,CX,moehb001,1,0,,difem001,0,
+,01,2,,gonzj002,,,10,11,CX,yan-e001,0,0,gonzj002 doubles. ,gonzj002,1,
+,31,2,higgb001,gonzj002,,,11,16,BBBCB,yan-e001,0,0,higgb001 walks. ,higgb001,1,
+gonzj002 to 3B. higgb001 to 2B. ,10,2,palmd002,higgb001,gonzj002,,12,18,BX,yan-e001,0,0,palmd002 singles. ,palmd002,1,
+gonzj002 scores. higgb001 scores. palmd002 to 2B. ,01,2,encaj001,palmd002,,,13,20,FX,yan-e001,0,2,encaj001 singles. ,encaj001,1,
+palmd002 to 3B. encaj001 to 2B. ,21,2,,encaj001,palmd002,garck002,14,24,SBBS,yan-e001,0,0,Balk. ,garck002,1,
+,22,2,,encaj001,palmd002,,15,30,SBBSFS,yan-e001,1,0,garck002 strikes out. ,garck002,1,
+palmd002 scores. ,22,2,,encaj001,,,16,36,BBCFFX,yan-e001,1,1,cruzd001 hits sacrifice fly. ,cruzd001,1,
+,11,2,,encaj001,,,17,39,CBX,yan-e001,1,0,,jeffg001,1,F
+,32,3,stock001,,,,18,32,FFBBBFB,moehb001,0,0,stock001 walks. ,stock001,0,
+stock001 to 2B. ,10,3,cairm001,stock001,,,19,34,BX,moehb001,0,0,cairm001 singles. ,cairm001,0,
+stock001 to 3B. cairm001 to 2B. ,12,3,willg001,cairm001,stock001,,20,40,CBFFFX,moehb001,0,0,willg001 singles. ,willg001,0,
+stock001 scores. cairm001 to 3B. willg001 out. ,00,3,martd002,,cairm001,,21,41,X,moehb001,1,1,martd002 reaches on fielder's choice. ,martd002,0,G
+,12,3,,,cairm001,,22,45,CCBX,moehb001,2,0,Double Play. ,cansj001,0,
+,11,3,,,,,23,42,CBX,yan-e001,1,0,,ausmb001,1,F
+,32,3,,fickr001,,,24,49,BBCBCFX,yan-e001,0,0,fickr001 doubles. ,fickr001,1,
+,31,3,gonzj002,fickr001,,,25,54,BBBCB,yan-e001,0,0,gonzj002 walks. ,gonzj002,1,
+,32,3,gonzj002,fickr001,,,26,61,CCBBFBX,yan-e001,1,0,,higgb001,1,L
+fickr001 scores. gonzj002 scores. ,02,3,,,,,27,64,FFX,yan-e001,0,3,palmd002 homers. ,palmd002,1,
+,11,3,,,,,28,67,CBX,yan-e001,1,0,encaj001 grounds out. ,encaj001,1,G
+,00,4,,,,,29,46,X,moehb001,1,0,,mcgrf001,0,F
+,00,4,vaugg001,,,,30,47,X,moehb001,0,0,vaugg001 singles. ,vaugg001,0,
+vaugg001 to 2B. ,12,4,castv001,vaugg001,,,31,52,FBFFX,moehb001,0,0,castv001 singles. ,castv001,0,
+vaugg001 to 3B. castv001 out. ,00,4,difem001,,vaugg001,,32,53,X,moehb001,1,0,difem001 reaches on fielder's choice. ,difem001,0,
+,32,4,difem001,,vaugg001,,33,59,FBCBBS,moehb001,1,0,stock001 strikes out. ,stock001,0,
+,11,4,,,,,34,70,BFX,yan-e001,1,0,garck002 grounds out. ,garck002,1,G
+,22,4,,,,,35,75,FBFBX,yan-e001,1,0,,cruzd001,1,F
+,21,4,,jeffg001,,,36,79,CBBX,yan-e001,0,0,jeffg001 doubles. ,jeffg001,1,
+,22,4,,jeffg001,,,37,87,CBFFFBFS,yan-e001,1,0,ausmb001 strikes out. ,ausmb001,1,
+,10,5,,,,,38,61,BX,moehb001,1,0,cairm001 grounds out. ,cairm001,0,G
+,12,5,willg001,,,,39,65,SBCX,moehb001,0,0,willg001 singles. ,willg001,0,
+,22,5,,,,,40,70,BCBFX,moehb001,2,0,Double Play. ,martd002,0,
+,31,5,fickr001,,,,41,92,BBCBB,yan-e001,0,0,fickr001 walks. ,fickr001,1,
+,10,5,,,,,42,94,BX,yan-e001,2,0,Double Play. ,gonzj002,1,
+,32,5,higgb001,,,,43,100,BBCBSB,yan-e001,0,0,higgb001 walks. ,higgb001,1,
+,32,5,higgb001,,,,44,106,CSBBBS,yan-e001,1,0,palmd002 strikes out. ,palmd002,1,
+,00,6,,,,,45,71,X,moehb001,1,0,cansj001 grounds out. ,cansj001,0,G
+,00,6,,,,,46,72,X,moehb001,1,0,,mcgrf001,0,F
+,11,6,,vaugg001,,,47,75,BFX,moehb001,0,0,vaugg001 doubles. ,vaugg001,0,
+,11,6,,vaugg001,,,48,78,SBX,moehb001,1,0,castv001 grounds out. ,castv001,0,G
+,10,6,,encaj001,,,49,108,BX,yan-e001,0,0,encaj001 doubles. ,encaj001,1,
+,32,6,,encaj001,,,52,6,CFBBBX,morrj004,1,0,magew001 grounds out. ,magew001,1,G
+,00,6,,encaj001,,,53,7,X,morrj004,1,0,cruzd001 grounds out. ,cruzd001,1,G
+,02,6,,encaj001,,,54,11,CSFX,morrj004,1,0,,jeffg001,1,P
+,01,7,difem001,,,,56,80,CX,moehb001,0,0,difem001 singles. ,difem001,0,
+difem001 to 2B. ,20,7,stock001,difem001,,,57,83,BBX,moehb001,0,0,stock001 singles. ,stock001,0,
+,10,7,stock001,difem001,,,58,85,BX,moehb001,1,0,,cairm001,0,
+difem001 scores. stock001 scores. ,10,7,,,,,59,87,BX,moehb001,0,3,willg001 homers. ,willg001,0,
+,10,7,martd002,,,,60,89,BX,moehb001,0,0,martd002 singles. ,martd002,0,
+martd002 to 2B. ,01,7,cansj001,martd002,,,62,2,CX,brocd001,0,0,cansj001 singles. ,cansj001,0,
+,00,7,cansj001,martd002,,,63,3,X,brocd001,1,0,,mcgrf001,0,F
+martd002 to 3B. cansj001 to 2B. ,32,7,vaugg001,cansj001,martd002,,64,9,BFBSBB,brocd001,0,0,vaugg001 walks. ,vaugg001,0,
+,12,7,vaugg001,cansj001,martd002,,65,14,SBFFS,brocd001,1,0,castv001 strikes out. ,castv001,0,
+,00,7,,,,,67,1,X,lopea002,1,0,,ausmb001,1,L
+,32,7,,,,,68,9,FBCFFBBX,lopea002,1,0,fickr001 grounds out. ,fickr001,1,G
+,32,7,,,,,69,16,BBCSBFC,lopea002,1,0,gonzj002 strikes out. ,gonzj002,1,
+,11,8,,,,,71,17,BCX,brocd001,1,0,,difem001,0,P
+,00,8,,,,,72,18,X,brocd001,1,0,,stock001,0,F
+,10,8,,,,,73,20,BX,brocd001,1,0,cairm001 grounds out. ,cairm001,0,G
+,30,8,higgb001,,,,74,20,BBBB,lopea002,0,0,higgb001 walks. ,higgb001,1,
+,22,8,,higgb001,,palmd002,75,26,CFBFBB,lopea002,0,0,higgb001 steals 2B. ,palmd002,1,
+higgb001 to 3B. ,32,8,,,higgb001,,76,33,CFBFBBX,lopea002,1,0,palmd002 grounds out. ,palmd002,1,G
+,22,8,,,higgb001,,77,38,CBCBX,lopea002,1,0,encaj001 grounds out. ,encaj001,1,G
+,11,8,,,higgb001,,79,3,SBX,hernr001,1,0,,magew001,1,F
+,10,9,,,,,81,2,BX,jonet003,1,0,willg001 grounds out. ,willg001,0,G
+,22,9,martd002,,,,82,7,BFBFX,jonet003,0,0,martd002 singles. ,martd002,0,
+,22,9,martd002,,,,83,12,BSBCX,jonet003,1,0,,cansj001,0,F
+martd002 to 2B. ,01,9,mcgrf001,martd002,,,84,14,FX,jonet003,0,0,mcgrf001 singles. ,mcgrf001,0,
+martd002 to 3B. graft001 to 2B. ,00,9,vaugg001,graft001,martd002,,86,15,X,jonet003,0,0,vaugg001 singles. ,vaugg001,0,
+martd002 scores. graft001 scores. vaugg001 to 3B. ,00,9,castv001,,vaugg001,,87,16,X,jonet003,0,2,castv001 singles. ,castv001,0,
+vaugg001 scores. castv001 to 3B. ,12,9,difem001,,castv001,,88,22,SBFFFX,jonet003,0,1,difem001 singles. ,difem001,0,
+,00,9,difem001,,castv001,,89,23,X,jonet003,1,0,,stock001,0,F
+,00,9,cruzd001,,,,91,4,X,hernr001,0,0,cruzd001 singles. ,cruzd001,1,
+polol001 to 2B. ,00,9,,polol001,,,93,5,X,hernr001,1,0,Sacrifice bunt by halts001.,halts001,1,
+,11,9,,polol001,,,94,8,FBX,hernr001,1,0,,ausmb001,1,F
+,22,9,,polol001,,,95,13,CBFBX,hernr001,1,0,,fickr001,1,F

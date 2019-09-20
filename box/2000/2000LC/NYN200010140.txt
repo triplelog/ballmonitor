@@ -1,0 +1,165 @@
+version,2
+info,visteam,SLN
+info,hometeam,NYN
+info,date,2000/10/14
+info,site,NYC17
+info,number,0
+info,starttime,4:21PM
+info,daynight,day
+info,usedh,false
+info,umphome,rapue901
+info,ump1b,scotd901
+info,ump2b,demud901
+info,ump3b,ripps901
+info,umplf,froeb901
+info,umprf,tscht901
+info,inputter,"DWS"
+info,howscored,park
+info,pitches,pitches
+info,temp,76
+info,winddir,fromlf
+info,windspeed,6
+info,fieldcond,dry
+info,precip,none
+info,sky,sunny
+info,timeofgame,203
+info,attendance,55693
+info,wp,benea001
+info,lp,reedr002
+info,save,
+start,vinaf001,"Fernando Vina",0,1,4
+start,rente001,"Edgar Renteria",0,2,6
+start,edmoj001,"Jim Edmonds",0,3,8
+start,clarw001,"Will Clark",0,4,3
+start,lankr001,"Ray Lankford",0,5,7
+start,tatif001,"Fernando Tatis",0,6,5
+start,drewj001,"J.D. Drew",0,7,9
+start,hernc001,"Carlos A. Hernandez",0,8,2
+start,benea001,"Andy Benes",0,9,1
+start,peret004,"Timoniel Perez",1,1,9
+start,alfoe001,"Edgardo Alfonzo",1,2,4
+start,piazm001,"Mike Piazza",1,3,2
+start,ventr001,"Robin Ventura",1,4,5
+start,zeilt001,"Todd Zeile",1,5,3
+start,agbab001,"Benny Agbayani",1,6,7
+start,paytj001,"Jay Payton",1,7,8
+start,bordm001,"Mike Bordick",1,8,6
+start,reedr002,"Rick Reed",1,9,1
+play,1,0,vinaf001,11,BCX,S7/L7S
+play,1,0,rente001,00,11X,E5/BG5S/SH.1-2
+play,1,0,edmoj001,11,CBX,D7/L7LS.2-H;1-H(UR)
+play,1,0,clarw001,00,X,S9/G34.2-3
+play,1,0,lankr001,22,BSFBC,K/C
+play,1,0,tatif001,32,FCBBBS,K
+play,1,0,drewj001,12,CBCC,K/C
+play,1,1,peret004,12,CBLX,S8/G6M
+play,1,1,alfoe001,00,11>X,S9/L9S.1-3
+play,1,1,piazm001,22,BFFBX,54(1)3/G5/GDP.3-H
+play,1,1,ventr001,01,CX,1/L1
+play,2,0,hernc001,00,X,9/F89D
+play,2,0,benea001,02,CCC,K/C
+play,2,0,vinaf001,11,CBX,6/F8LS
+play,2,1,zeilt001,32,CCBBBS,K
+play,2,1,agbab001,20,BBX,7/L7S
+play,2,1,paytj001,31,BBBFB,W
+play,2,1,bordm001,22,C1S11B1PX,3/G23
+play,3,0,rente001,21,BBCX,S7/G6
+play,3,0,edmoj001,00,1X,7/F7LDW
+play,3,0,clarw001,31,1SBBB>B,W.1-2
+play,3,0,lankr001,32,BCFBBX,S/L89M.2-H;1-3
+play,3,0,tatif001,01,CX,9/SF/L9M/R3.3-H
+play,3,0,drewj001,12,1FBCF1X,2/P2LF
+play,3,1,reedr002,32,CBBFBX,7/F7M
+play,3,1,peret004,21,BCBX,8/F8LS
+play,3,1,alfoe001,02,FCX,S7/G56
+play,3,1,piazm001,12,CBFFX,4/P6MS
+play,4,0,hernc001,10,BX,8/F8LM
+play,4,0,benea001,12,BCFFFX,S7/G6
+play,4,0,vinaf001,10,BX,S7/L78S.1-2
+play,4,0,rente001,10,BX,S7/L78M.2-H;1-2
+play,4,0,edmoj001,00,,NP
+sub,ruscg001,"Glendon Rusch",1,9,1
+play,4,0,edmoj001,02,CFC,K/C
+play,4,0,clarw001,11,FBH,HP.2-3;1-2
+play,4,0,lankr001,00,,NP
+sub,mcgwm001,"Mark McGwire",0,5,11
+play,4,0,mcgwm001,11,BFX,7/F7D
+play,4,1,ventr001,00,,NP
+sub,paquc001,"Craig Paquette",0,5,7
+play,4,1,ventr001,31,BBCBB,W
+play,4,1,zeilt001,11,CBX,S9/G34.1-2
+play,4,1,agbab001,21,BBCX,S8/G4M/R2.2-3;1-2
+play,4,1,paytj001,00,X,43(B)3(1)/GDP.3-H;2-3
+com,"$Fernando Vina ran Benny Agbayani back toward 1B and threw to"
+com,"Will Clark, who stepped on the bag and tagged Agbayani"
+play,4,1,bordm001,30,BBBB,W
+play,4,1,ruscg001,00,,NP
+sub,hamid001,"Darryl Hamilton",1,9,11
+play,4,1,hamid001,20,BBX,8/L8LS
+play,5,0,tatif001,00,,NP
+sub,whitr002,"Rick White",1,9,1
+play,5,0,tatif001,00,X,D7/F7DW
+play,5,0,drewj001,02,LSX,S9/L9S.2-3
+play,5,0,hernc001,01,1CX,S7/G6.3-H;1-2
+play,5,0,benea001,10,BX,54/SH/BG25.2-3;1-2
+com,"$infield in"
+play,5,0,vinaf001,12,BCSX,FC4/G4MS/R2.3-H;2-3;B-1
+play,5,0,rente001,32,P1SBS*B>X,63/G6.3-H;1-2
+play,5,0,edmoj001,12,FBSX,9/F9S
+play,5,1,peret004,00,X,7/L7M
+play,5,1,alfoe001,01,CX,4/P34D
+play,5,1,piazm001,32,BBCFBX,63/G6
+play,6,0,clarw001,02,CFX,S9/L9S
+play,6,0,paquc001,20,BB>X,43/G4M.1-2
+play,6,0,tatif001,31,BBFBB,W
+play,6,0,drewj001,22,FBBSFX,S9/L9S.2XH(92);1-3
+play,6,0,hernc001,01,CX,63/G6
+play,6,1,ventr001,11,BCX,9/L9M
+play,6,1,zeilt001,12,CBCS,K
+play,6,1,agbab001,00,X,8/F8RS
+play,7,0,benea001,02,CCS,K
+play,7,0,vinaf001,01,FX,63/G6
+play,7,0,rente001,11,BCX,63/G6
+play,7,1,paytj001,22,CBBFC,K/C
+play,7,1,bordm001,22,FBBFFC,K/C
+play,7,1,whitr002,00,,NP
+sub,harrl001,"Lenny Harris",1,9,11
+play,7,1,harrl001,22,CBSFBC,K/C
+play,8,0,edmoj001,00,,NP
+sub,cookd001,"Dennis Cook",1,9,1
+play,8,0,edmoj001,02,CCS,K
+play,8,0,clarw001,32,SBBCBFFFS,K
+play,8,0,paquc001,11,SBX,S7/L7S
+play,8,0,tatif001,12,CBSFX,53/G5
+play,8,1,peret004,22,BCFBX,3/G3L
+play,8,1,alfoe001,00,X,8/F8RXD
+play,8,1,piazm001,21,SBBX,S8/G6M
+play,8,1,ventr001,10,BX,3/G3L
+play,9,0,drewj001,00,,NP
+sub,wendt001,"Turk Wendell",1,9,1
+play,9,0,drewj001,22,BSSBFT,K
+play,9,0,hernc001,01,CX,5/P25F
+play,9,0,benea001,00,,NP
+sub,wilkr001,"Rick Wilkins",0,9,11
+play,9,0,wilkr001,02,FFX,6/F7S
+play,9,1,zeilt001,00,,NP
+sub,jamem001,"Mike James",0,9,1
+play,9,1,zeilt001,02,CFFX,S6/G56D
+play,9,1,agbab001,30,BBBB,W.1-2
+play,9,1,paytj001,00,,NP
+sub,vered001,"Dave Veres",0,9,1
+play,9,1,paytj001,12,BCFC,K/C
+play,9,1,bordm001,00,,NP
+sub,franm001,"Matt Franco",1,8,11
+play,9,1,franm001,12,CCBC,K/C
+play,9,1,wendt001,00,,NP
+sub,tramb001,"Bubba Trammell",1,9,11
+play,9,1,tramb001,22,CSBBC,K/C
+data,er,benea001,2
+data,er,jamem001,0
+data,er,vered001,0
+data,er,reedr002,4
+data,er,ruscg001,0
+data,er,whitr002,3
+data,er,cookd001,0
+data,er,wendt001,0

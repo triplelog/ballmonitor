@@ -1,0 +1,143 @@
+version,2
+info,visteam,BAL
+info,hometeam,MON
+info,site,MON02
+info,date,2000/06/02
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,wegnm901
+info,ump1b,vanvm901
+info,ump2b,willc901
+info,ump3b,reynj901
+info,pitches,pitches
+info,temp,72
+info,winddir,fromrf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,159
+info,attendance,12654
+info,wp,pavac001
+info,lp,johnj007
+info,save,klins002
+start,andeb001,"Brady Anderson",0,1,8
+start,bordm001,"Mike Bordick",0,2,6
+start,deshd001,"Delino DeShields",0,3,4
+start,bellj002,"Albert Belle",0,4,9
+start,clarw001,"Will Clark",0,5,3
+start,ripkc001,"Cal Ripken",0,6,5
+start,surhb001,"B.J. Surhoff",0,7,7
+start,johnc002,"Charles Johnson",0,8,2
+start,johnj007,"Jason Johnson",0,9,1
+start,bergp001,"Peter Bergeron",1,1,8
+start,vidrj001,"Jose Vidro",1,2,4
+start,whitr001,"Rondell White",1,3,7
+start,guerv001,"Vladimir Guerrero",1,4,9
+start,stevl001,"Lee Stevens",1,5,3
+start,mordm001,"Mike Mordecai",1,6,5
+start,schnb001,"Brian Schneider",1,7,2
+start,cabro001,"Orlando Cabrera",1,8,6
+start,pavac001,"Carl Pavano",1,9,1
+play,1,0,andeb001,00,X,63/G
+play,1,0,bordm001,11,BCX,13/G
+play,1,0,deshd001,22,CBSBS,K
+play,1,1,bergp001,12,CBFX,8/F8S
+play,1,1,vidrj001,22,CBBSS,K
+play,1,1,whitr001,01,CX,143/G
+play,2,0,bellj002,11,CBX,S9/9S
+play,2,0,clarw001,00,X,8/F8
+play,2,0,ripkc001,12,CBSB,PB.1-2
+play,2,0,ripkc001,22,CBSBS,K
+play,2,0,surhb001,31,BCBBX,7/F7
+play,2,1,guerv001,00,X,63/G
+play,2,1,stevl001,22,CBFBFX,HR/9
+play,2,1,mordm001,32,FBFBBFFFFFX,D/78
+play,2,1,schnb001,20,BBB,WP.2-3
+play,2,1,schnb001,32,BBBCFX,S8.3-H
+play,2,1,cabro001,11,BCX,64(1)3/GDP
+play,3,0,johnc002,01,CX,9/F9
+play,3,0,johnj007,02,CFX,63/G
+play,3,0,andeb001,12,CFBS,K
+play,3,1,pavac001,01,CX,D9
+play,3,1,bergp001,22,BFLFBX,9/F9D.2-3
+play,3,1,vidrj001,12,SSFBX,6/P6
+play,3,1,whitr001,22,BCCBS,K
+play,4,0,bordm001,00,X,D7
+play,4,0,deshd001,11,FBX,3/G.2-3
+play,4,0,bellj002,31,BFBBB,W
+play,4,0,clarw001,00,B,CS2(26)
+play,4,0,clarw001,21,BBFX,5/P5
+play,4,1,guerv001,01,CX,53/G
+play,4,1,stevl001,00,X,HR/8
+play,4,1,mordm001,02,FCC,K/C
+play,4,1,schnb001,02,CFS,K
+play,5,0,ripkc001,12,CFBX,6/P6
+play,5,0,surhb001,32,FSBFBFFBB,W
+play,5,0,johnc002,31,BBFBB,W.1-2
+play,5,0,johnj007,00,X,3/SH.2-3;1-2
+play,5,0,andeb001,32,BBCFBX,S1.3-H(E1)(UR);2-3
+play,5,0,bordm001,02,CFS,K
+play,5,1,cabro001,32,CCBBBX,63/G
+play,5,1,pavac001,02,SFS,K
+play,5,1,bergp001,21,BBFX,S9/9S
+play,5,1,vidrj001,12,BFCX,43/G
+play,6,0,deshd001,22,BBFCX,8/F8
+play,6,0,bellj002,01,SX,HR/78
+play,6,0,clarw001,12,BCFX,63/G
+play,6,0,ripkc001,01,SX,S9
+play,6,0,surhb001,10,BX,8/F8
+play,6,1,whitr001,30,BBBB,W
+play,6,1,guerv001,02,SFS,K
+play,6,1,stevl001,01,CS,SB2
+play,6,1,stevl001,02,CSFX,3/G.2-3
+play,6,1,mordm001,30,BBBB,W
+play,6,1,schnb001,00,,NP
+sub,ryanb001,"B.J. Ryan",0,7,1
+play,6,1,schnb001,00,,NP
+sub,conij001,"Jeff Conine",0,9,7
+play,6,1,schnb001,12,CBCB,SB2
+play,6,1,schnb001,22,CBCBX,S8.3-H;2-H
+play,6,1,cabro001,01,CB,CS2(24)
+play,7,0,johnc002,00,X,9/F9
+play,7,0,conij001,20,BBX,8/F8
+play,7,0,andeb001,10,BX,D7
+play,7,0,bordm001,00,X,S.2-3
+play,7,0,deshd001,22,BBFFX,7/F7
+play,7,1,cabro001,00,,NP
+sub,reyea001,"Al Reyes",0,7,1
+play,7,1,cabro001,11,BFX,23/G
+play,7,1,pavac001,01,SX,7/F7
+play,7,1,bergp001,11,CBX,S
+play,7,1,vidrj001,00,X,7/F7
+play,8,0,bellj002,00,X,9/F9
+play,8,0,clarw001,11,SBX,S9
+play,8,0,ripkc001,31,FBBBX,7/F7
+play,8,0,reyea001,00,,NP
+sub,bainh001,"Harold Baines",0,7,11
+play,8,0,bainh001,10,BX,46(1)/FO
+play,8,1,whitr001,00,,NP
+sub,mcelc001,"Chuck McElroy",0,7,1
+play,8,1,whitr001,10,BX,S8
+play,8,1,guerv001,00,X,3/P3
+play,8,1,stevl001,12,BFCS,K
+play,8,1,mordm001,02,CFB,SB2
+play,8,1,mordm001,12,CFBC,K/C
+play,9,0,johnc002,00,,NP
+sub,motag001,"Guillermo Mota",1,9,1
+play,9,0,johnc002,30,BBBB,W
+play,9,0,conij001,00,,NP
+sub,klins002,"Steve Kline",1,9,1
+play,9,0,conij001,00,X,3/G.1-2
+play,9,0,andeb001,12,SCBX,8/F8
+play,9,0,bordm001,12,CFBX,S9.2-H
+play,9,0,deshd001,02,CSC,K/C
+data,er,johnj007,5
+data,er,ryanb001,0
+data,er,reyea001,0
+data,er,mcelc001,0
+data,er,pavac001,1
+data,er,motag001,1
+data,er,klins002,0

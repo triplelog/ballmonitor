@@ -1,0 +1,143 @@
+version,2
+info,visteam,HOU
+info,hometeam,CLE
+info,site,CLE08
+info,date,2000/07/16
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,mckej901
+info,ump1b,danlk901
+info,ump2b,lampi901
+info,ump3b,morrd901
+info,pitches,pitches
+info,temp,70
+info,winddir,ltor
+info,windspeed,9
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,187
+info,attendance,43031
+info,wp,elars001
+info,lp,colob001
+info,save,
+start,spieb001,"Bill Spiers",0,1,5
+start,biggc001,"Craig Biggio",0,2,4
+start,bagwj001,"Jeff Bagwell",0,3,3
+start,berkl001,"Lance Berkman",0,4,9
+start,aloum001,"Moises Alou",0,5,10
+start,hidar001,"Richard Hidalgo",0,6,8
+start,melum001,"Mitch Meluskey",0,7,2
+start,wardd002,"Daryle Ward",0,8,7
+start,bogat001,"Tim Bogar",0,9,6
+start,elars001,"Scott Elarton",0,0,1
+start,alomr001,"Roberto Alomar",1,1,4
+start,vizqo001,"Omar Vizquel",1,2,6
+start,leder001,"Ricky Ledee",1,3,7
+start,ramim002,"Manny Ramirez",1,4,10
+start,thomj002,"Jim Thome",1,5,3
+start,frymt001,"Travis Fryman",1,6,5
+start,branr001,"Russell Branyan",1,7,9
+start,loftk001,"Kenny Lofton",1,8,8
+start,aloms001,"Sandy Alomar",1,9,2
+start,colob001,"Bartolo Colon",1,0,1
+play,1,0,spieb001,00,X,3/G
+play,1,0,biggc001,32,BCCFBBX,HR/9
+play,1,0,bagwj001,32,SCFFBBBB,W
+play,1,0,berkl001,11,SBX,64(1)/FO
+play,1,0,aloum001,10,BX,54(1)/FO
+play,1,1,alomr001,22,BCBFX,13/G
+play,1,1,vizqo001,30,BBBB,W
+play,1,1,leder001,12,FBSFX,8/F8
+play,1,1,ramim002,20,BBX,S7.1-2
+play,1,1,thomj002,00,B,WP.2-3;1-2
+play,1,1,thomj002,10,BX,9/L9
+play,2,0,hidar001,22,CBFBH,HP
+play,2,0,melum001,31,BBSBB,W.1-2
+play,2,0,wardd002,00,X,46(1)3/GDP.2-3
+play,2,0,bogat001,02,SFX,63/G
+play,2,1,frymt001,10,BX,7/F7D
+play,2,1,branr001,22,BSBSS,K
+play,2,1,loftk001,22,BBCCX,S
+play,2,1,aloms001,21,CBBX,9/F9
+play,3,0,spieb001,32,BFBBCX,S7
+play,3,0,biggc001,00,X,8/F8D
+play,3,0,bagwj001,21,BCBX,53/G.1-2
+play,3,0,berkl001,00,X,4/L4
+play,3,1,alomr001,22,BCBFFFS,K
+play,3,1,vizqo001,32,BBCSBFFC,K/C
+play,3,1,leder001,32,CBFBFFBX,9/F9
+play,4,0,aloum001,11,BCX,7/F7
+play,4,0,hidar001,12,FBFFC,K/C
+play,4,0,melum001,32,CFBBBFB,W
+play,4,0,wardd002,10,BX,13/G
+play,4,1,ramim002,32,CBCBFBX,2/FL
+play,4,1,thomj002,31,BBFBB,W
+play,4,1,frymt001,00,X,16(1)3/GDP
+play,5,0,bogat001,22,BCCBFFFS,K
+play,5,0,spieb001,12,CBCX,S8/8S
+play,5,0,biggc001,10,BX,3/G.1-2
+play,5,0,bagwj001,10,BX,S8.2-H
+play,5,0,berkl001,31,FBBBX,43/G
+play,5,1,branr001,11,BFX,HR/9
+play,5,1,loftk001,31,BBSBB,W
+play,5,1,aloms001,00,X,5/FL
+play,5,1,alomr001,00,X,63/G.1-2
+play,5,1,vizqo001,12,CBFX,8/L8
+play,6,0,aloum001,31,BBBCB,W
+play,6,0,hidar001,00,X,64(1)3/GDP
+play,6,0,melum001,32,CBSBBS,K
+play,6,1,leder001,00,X,63/G
+play,6,1,ramim002,10,BX,S7
+play,6,1,thomj002,02,CSC,K/C
+play,6,1,frymt001,01,CX,8/F8S
+play,7,0,wardd002,10,BX,HR/9
+play,7,0,bogat001,02,FFFFX,2/FL
+play,7,0,spieb001,10,BX,S8
+play,7,0,biggc001,10,BX,E5/TH.1-2
+play,7,0,bagwj001,22,CBFBC,K/C
+play,7,0,berkl001,32,CBBCBB,W.2-3;1-2
+play,7,0,aloum001,11,BFX,S9.3-H(UR);2-H(UR);1-3(E9)
+play,7,0,hidar001,00,,NP
+sub,speij001,"Justin Speier",1,0,1
+play,7,0,hidar001,32,BFBBFB,W.1-2
+play,7,0,melum001,02,FSC,K/C
+play,7,1,branr001,22,BFFBFS,K
+play,7,1,loftk001,31,CBBBB,W
+play,7,1,aloms001,12,BFFFS,K
+play,7,1,alomr001,00,X,S4/BG4.1-2
+play,7,1,vizqo001,32,FFFBBBS,K
+play,8,0,wardd002,01,CX,S8/8S
+play,8,0,bogat001,00,,NP
+sub,barkg001,"Glen Barker",0,8,12
+play,8,0,bogat001,00,1,PO1(13)
+play,8,0,bogat001,22,1FBBFX,8/F8
+play,8,0,spieb001,32,CBBFBC,K/C
+play,8,1,leder001,00,,NP
+sub,hidar001,"Richard Hidalgo",0,6,7
+play,8,1,leder001,00,,NP
+sub,barkg001,"Glen Barker",0,8,8
+play,8,1,leder001,12,CBSS,K
+play,8,1,ramim002,22,BFBFX,8/F8
+play,8,1,thomj002,12,BSSFX,S9
+play,8,1,frymt001,11,BSX,7/F7D
+play,9,0,biggc001,00,,NP
+sub,reeds001,"Steve Reed",1,0,1
+play,9,0,biggc001,22,CBCBX,S8
+play,9,0,bagwj001,12,CFBFB,WP.1-2
+play,9,0,bagwj001,32,CFBFBBS,K
+play,9,0,berkl001,20,BBX,8/F8.2-3
+play,9,0,aloum001,22,FSBBS,K
+play,9,1,branr001,00,,NP
+sub,doteo001,"Octavio Dotel",0,0,1
+play,9,1,branr001,22,SBBSX,9/F9S
+play,9,1,loftk001,11,CBX,7/F7
+play,9,1,aloms001,10,BX,S7/7S
+play,9,1,alomr001,32,SSFBBBX,8/F8
+data,er,elars001,1
+data,er,doteo001,0
+data,er,colob001,3
+data,er,speij001,0
+data,er,reeds001,0

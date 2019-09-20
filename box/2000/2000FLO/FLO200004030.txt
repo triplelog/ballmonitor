@@ -1,0 +1,142 @@
+version,2
+info,visteam,SFN
+info,hometeam,FLO
+info,site,MIA01
+info,date,2000/04/03
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,demud901
+info,ump1b,relic901
+info,ump2b,eddid901
+info,ump3b,carlm901
+info,pitches,pitches
+info,temp,78
+info,winddir,tocf
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,166
+info,attendance,35101
+info,wp,ferna001
+info,lp,hernl003
+info,save,alfoa001
+start,benam001,"Marvin Benard",0,1,8
+start,muelb001,"Bill Mueller",0,2,5
+start,bondb001,"Barry Bonds",0,3,7
+start,kentj001,"Jeff Kent",0,4,4
+start,snowj001,"J.T. Snow",0,5,3
+start,burke001,"Ellis Burks",0,6,9
+start,aurir001,"Rich Aurilia",0,7,6
+start,estab001,"Bobby Estalella",0,8,2
+start,hernl003,"Livan Hernandez",0,9,1
+start,castl001,"Luis Castillo",1,1,4
+start,gonza002,"Alex Gonzalez",1,2,6
+start,floyc001,"Cliff Floyd",1,3,7
+start,wilsp002,"Preston Wilson",1,4,8
+start,lowem001,"Mike Lowell",1,5,5
+start,millk005,"Kevin Millar",1,6,3
+start,browb003,"Brant Brown",1,7,9
+start,redmm001,"Mike Redmond",1,8,2
+start,ferna001,"Alex Fernandez",1,9,1
+play,1,0,benam001,21,BBCX,8/F8
+play,1,0,muelb001,02,CCC,K/C
+play,1,0,bondb001,02,FSFX,6/P6
+play,1,1,castl001,22,CBBFX,43/G
+play,1,1,gonza002,32,CBBFBX,53/G
+play,1,1,floyc001,20,BBX,D/78D
+play,1,1,wilsp002,01,CX,D8/8S.2-H
+play,1,1,lowem001,22,BCFFFBX,D8.2-H
+play,1,1,millk005,12,CBFFS,K
+play,2,0,kentj001,11,SBX,D/78
+play,2,0,snowj001,22,CBBSFX,FC6.2X3(65);B-1
+play,2,0,burke001,10,BX,54(1)3/GDP
+play,2,1,browb003,21,BBCX,13/G
+play,2,1,redmm001,12,CBSFH,HP
+play,2,1,ferna001,22,BSCBX,64(1)3/GDP
+play,3,0,aurir001,22,CBFFFBS,K
+play,3,0,estab001,12,CFBFX,6/L6
+play,3,0,hernl003,00,X,S9
+play,3,0,benam001,10,BX,S7.1-2
+play,3,0,muelb001,01,CX,T/89D.2-H;1-H
+play,3,0,bondb001,31,CBBBX,63/G
+play,3,1,castl001,00,X,S8/8S
+play,3,1,gonza002,01,CX,7/F7
+play,3,1,floyc001,12,BCSX,3/P3
+play,3,1,wilsp002,10,BX,7/F7
+play,4,0,kentj001,00,X,T9
+play,4,0,snowj001,11,CBX,43/G.3-H
+play,4,0,burke001,22,BFBFS,K
+play,4,0,aurir001,00,X,13/G
+play,4,1,lowem001,01,CX,9/F9
+play,4,1,millk005,11,BCX,8/F8
+play,4,1,browb003,11,CBX,9/F9
+play,5,0,estab001,22,BFFBX,43/G
+play,5,0,hernl003,20,BBX,43/G
+play,5,0,benam001,12,CBSX,S
+play,5,0,muelb001,00,X,43/G
+play,5,1,redmm001,01,SX,S8/8S
+play,5,1,ferna001,22,SBLBS,K
+play,5,1,castl001,22,CBCBX,6/L6
+play,5,1,gonza002,00,X,E6/G.1-2
+play,5,1,floyc001,32,BSBBCB,W.2-3;1-2
+play,5,1,wilsp002,11,CBX,S7.3-H(UR);2-H(E7)(UR);1-2
+play,5,1,lowem001,12,BCFFX,8/F8
+play,6,0,bondb001,21,BBFX,D7/7D
+play,6,0,kentj001,22,CFBBS,K
+play,6,0,snowj001,00,X,53/G
+play,6,0,burke001,30,BBBB,W
+play,6,0,aurir001,32,BSFBBC,K/C
+play,6,1,millk005,00,X,S8
+play,6,1,browb003,00,,NP
+sub,lee-d002,"Derrek Lee",1,6,12
+play,6,1,browb003,12,CBFS,K
+play,6,1,redmm001,00,X,S9.1-3
+play,6,1,ferna001,32,BBSSBX,S9/9S.3-H;1-2
+play,6,1,castl001,32,CBBBSC,K/C
+play,6,1,gonza002,22,BCBSC,K/C
+play,7,0,estab001,00,,NP
+sub,lee-d002,"Derrek Lee",1,6,3
+play,7,0,estab001,00,,NP
+sub,kotsm001,"Mark Kotsay",1,7,9
+play,7,0,estab001,01,CX,S7
+play,7,0,hernl003,00,,NP
+sub,riosa001,"Armando Rios",0,9,11
+play,7,0,riosa001,11,FBX,46(1)3/GDP
+play,7,0,benam001,01,CX,43/G
+play,7,1,floyc001,00,,NP
+sub,webeb001,"Ben Weber",0,9,1
+play,7,1,floyc001,10,BX,8/F8D
+com,"Debut game for Ben Weber"
+play,7,1,wilsp002,12,CSBX,53/G
+play,7,1,lowem001,10,BX,9/F9
+play,8,0,muelb001,00,,NP
+sub,bautd001,"Danny Bautista",1,9,7
+play,8,0,muelb001,00,,NP
+sub,miced001,"Dan Miceli",1,3,1
+play,8,0,muelb001,21,BBCX,63/G
+play,8,0,bondb001,22,CBBFFFS,K
+play,8,0,kentj001,32,BFBBSC,K/C
+play,8,1,lee-d002,22,FBFFFBFX,S7/7S
+play,8,1,kotsm001,00,X,S9/9S.1-3
+play,8,1,redmm001,02,SFS,K
+play,8,1,bautd001,12,BFFX,S7/7S.3-H;1-2
+play,8,1,castl001,32,BCBBCX,54(1)/FO.2-3
+play,8,1,gonza002,00,B,SB2
+play,8,1,gonza002,12,BFFS,K
+play,9,0,snowj001,00,,NP
+sub,alfoa001,"Antonio Alfonseca",1,3,1
+play,9,0,snowj001,12,BSSS,K
+play,9,0,burke001,21,BSBX,HR/7
+play,9,0,aurir001,01,FX,S7/7S
+play,9,0,estab001,01,FX,13/G.1-2
+play,9,0,webeb001,00,,NP
+sub,cresf001,"Felipe Crespo",0,9,11
+play,9,0,cresf001,00,X,7/F7
+data,er,hernl003,3
+data,er,webeb001,1
+data,er,ferna001,3
+data,er,miced001,0
+data,er,alfoa001,1

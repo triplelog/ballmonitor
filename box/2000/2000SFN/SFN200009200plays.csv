@@ -1,0 +1,69 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,12,1,,,,,0,4,CBFS,ortir001,1,0,huntb002 strikes out. ,huntb002,0,
+,22,1,,,,,1,9,CCBBX,ortir001,1,0,reesp001 grounds out. ,reesp001,0,G
+,10,1,,,,,2,11,BX,ortir001,1,0,yound001 grounds out. ,yound001,0,G
+,12,1,,,,,3,4,CBLS,parrs001,1,0,benam001 strikes out. ,benam001,1,
+,22,1,,,,,4,10,CCBFBX,parrs001,1,0,muelb001 grounds out. ,muelb001,1,G
+,10,1,,,,,5,12,BX,parrs001,1,0,bondb001 grounds out. ,bondb001,1,G
+,12,2,,,,,6,20,FFBFFFFFC,ortir001,1,0,ochoa001 strikes out. ,ochoa001,0,
+,31,2,tuckm001,,,,7,25,BBCBB,ortir001,0,0,tuckm001 walks. ,tuckm001,0,
+,02,2,tuckm001,,,,8,30,CCFFC,ortir001,1,0,sextc001 strikes out. ,sextc001,0,
+,00,2,,,,castj004,9,31,B,ortir001,1,0,tuckm001 caught stealing. ,castj004,0,
+,00,2,,,kentj001,,10,13,X,parrs001,0,0,kentj001 triples. ,kentj001,1,
+kentj001 scores. ,02,2,,,,,11,17,CFFX,parrs001,1,1,snowj001 grounds out. ,snowj001,1,G
+,12,2,,,,,12,22,CBFFX,parrs001,1,0,burke001 grounds out. ,burke001,1,G
+,22,2,aurir001,,,,13,28,CBBCFX,parrs001,0,0,aurir001 singles. ,aurir001,1,
+,10,2,aurir001,,,,14,30,BX,parrs001,1,0,,estab001,1,F
+,00,3,,,,,15,32,X,ortir001,1,0,castj004 grounds out. ,castj004,0,G
+,12,3,,,,,16,36,BSSC,ortir001,1,0,laruj001 strikes out. ,laruj001,0,
+,12,3,,,,,17,40,CSBS,ortir001,1,0,parrs001 strikes out. ,parrs001,0,
+,21,3,,,,,18,34,BCBX,parrs001,1,0,,ortir001,1,F
+,01,3,benam001,,,,19,36,CX,parrs001,0,0,benam001 singles. ,benam001,1,
+benam001 to 2B. ,10,3,,benam001,,muelb001,20,38,B+1,parrs001,0,0,Pickoff error. ,muelb001,1,
+,10,3,,benam001,,,21,41,B+1X,parrs001,1,0,,muelb001,1,
+,31,3,bondb001,benam001,,,22,46,BFBBI,parrs001,0,0,bondb001 intentionally walks. ,bondb001,1,
+benam001 to 3B. bondb001 to 2B. ,31,3,kentj001,bondb001,benam001,,23,51,CBBBB,parrs001,0,0,kentj001 walks. ,kentj001,1,
+benam001 scores. bondb001 scores. kentj001 to 3B. ,12,3,,snowj001,kentj001,,24,55,CFBX,parrs001,0,2,snowj001 doubles. ,snowj001,1,
+,10,3,,snowj001,kentj001,,25,57,BX,parrs001,1,0,,burke001,1,F
+,02,4,,,,,26,43,CCX,ortir001,1,0,huntb002 grounds out. ,huntb002,0,G
+,02,4,,,,,27,46,SSS,ortir001,1,0,reesp001 strikes out. ,reesp001,0,
+,00,4,,,,,28,47,X,ortir001,1,0,yound001 grounds out. ,yound001,0,G
+,11,4,,,,,29,60,CBX,parrs001,1,0,aurir001 grounds out. ,aurir001,1,G
+,12,4,,,,,30,64,BFSS,parrs001,1,0,estab001 strikes out. ,estab001,1,
+,32,4,ortir001,,,,31,70,BCBFBB,parrs001,0,0,ortir001 walks. ,ortir001,1,
+,31,4,ortir001,,,,32,75,BBBCX,parrs001,1,0,,benam001,1,F
+,20,5,,,,,33,50,BBX,ortir001,1,0,ochoa001 grounds out. ,ochoa001,0,G
+,10,5,,,,,34,52,BX,ortir001,1,0,tuckm001 grounds out. ,tuckm001,0,G
+,32,5,,,,,35,59,CBBFBFX,ortir001,1,0,sextc001 grounds out. ,sextc001,0,G
+,10,5,,,,,36,77,BX,parrs001,1,0,,muelb001,1,
+,01,5,,,,,37,79,FX,parrs001,0,1,bondb001 homers. ,bondb001,1,
+,20,5,,,,,38,82,BBX,parrs001,1,0,,kentj001,1,L
+,02,5,,,,,39,85,CCX,parrs001,1,0,,snowj001,1,F
+,11,6,,,,,40,62,CBX,ortir001,1,0,castj004 grounds out. ,castj004,0,G
+,31,6,,,,,41,67,BBBCX,ortir001,1,0,,laruj001,0,P
+,22,6,,,,,43,72,BBFSS,ortir001,1,0,clarb003 strikes out. ,clarb003,0,
+,00,6,,,,,45,1,X,sulls001,1,0,,burke001,1,
+,10,6,,,,,46,3,BX,sulls001,1,0,aurir001 grounds out. ,aurir001,1,G
+,12,6,,,,,47,9,CSBFFS,sulls001,1,0,estab001 strikes out. ,estab001,1,
+,00,7,huntb002,,,,48,73,X,ortir001,0,0,huntb002 singles. ,huntb002,0,G
+huntb002 to 2B. ,32,7,reesp001,huntb002,,,49,79,BBBCFH,ortir001,0,0,reesp001 hit by pitch. ,reesp001,0,
+huntb002 to 3B. bellm003 to 2B. ,22,7,,bellm003,huntb002,,51,84,BSSBS,ortir001,1,0,yound001 strikes out. ,yound001,0,
+,02,7,,bellm003,huntb002,,52,87,CCX,ortir001,1,0,,ochoa001,0,L
+huntb002 scores. bellm003 scores. ,31,7,,tuckm001,,,53,92,BBSBX,ortir001,0,2,tuckm001 doubles. ,tuckm001,0,
+,32,7,sextc001,tuckm001,,,54,98,CBBBCB,ortir001,0,0,sextc001 walks. ,sextc001,0,
+,22,7,,sextc001,tuckm001,castj004,56,7,CBSFBFB,henrd002,0,0,tuckm001 steals 3B. sextc001 steals 2B. ,castj004,0,
+,32,7,,sextc001,tuckm001,,57,15,CBSFBFBX,henrd002,1,0,castj004 grounds out. ,castj004,0,G
+,12,7,,,,,61,13,FCBX,sulls001,1,0,,davir002,1,F
+,11,7,,,,,62,16,CBX,sulls001,1,0,,benam001,1,F
+,12,7,,,,,63,20,FBSX,sulls001,1,0,,muelb001,1,F
+,22,8,,,,,66,5,CBBFC,rodrf002,1,0,santb001 strikes out. ,santb001,0,
+,12,8,,,,,68,9,BSSS,rodrf002,1,0,cromd001 strikes out. ,cromd001,0,
+,11,8,huntb002,,,,69,12,BCX,rodrf002,0,0,huntb002 singles. ,huntb002,0,
+,32,8,huntb002,,,,71,18,BCBBSS,rodrf002,1,0,grifk002 strikes out. ,grifk002,0,
+,22,8,,,,,78,5,SBBFS,reyed001,1,0,bondb001 strikes out. ,bondb001,1,
+,11,8,,,,,80,3,BSX,riedj001,1,0,,kentj001,1,F
+,12,8,,,,,81,7,CBCS,riedj001,1,0,snowj001 strikes out. ,snowj001,1,
+,22,9,yound001,,,,83,6,BFBCFX,nen-r001,0,0,yound001 singles. ,yound001,0,
+,12,9,yound001,,,,84,10,FSBS,nen-r001,1,0,ochoa001 strikes out. ,ochoa001,0,
+,12,9,yound001,,,,85,14,FFBS,nen-r001,1,0,tuckm001 strikes out. ,tuckm001,0,
+,02,9,yound001,,,,87,17,SSS,nen-r001,1,0,cases001 strikes out. ,cases001,0,

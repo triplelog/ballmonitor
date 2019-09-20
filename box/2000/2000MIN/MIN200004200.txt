@@ -1,0 +1,145 @@
+version,2
+info,visteam,KCA
+info,hometeam,MIN
+info,site,MIN03
+info,date,2000/04/20
+info,number,0
+info,starttime,12:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,lampi901
+info,ump1b,bellw901
+info,ump2b,onorb901
+info,ump3b,iassd901
+info,pitches,pitches
+info,temp,72
+info,winddir,ltor
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,183
+info,attendance,9213
+info,wp,bergs001
+info,lp,rosaj001
+info,save,wellb002
+start,damoj001,"Johnny Damon",0,1,7
+start,feblc001,"Carlos Febles",0,2,4
+start,beltc001,"Carlos Beltran",0,3,8
+start,dye-j001,"Jermaine Dye",0,4,9
+start,sweem002,"Mike Sweeney",0,5,3
+start,randj002,"Joe Randa",0,6,5
+start,quinm001,"Mark Quinn",0,7,10
+start,fabrj001,"Jorge Fabregas",0,8,2
+start,sancr001,"Rey Sanchez",0,9,6
+start,rosaj001,"Jose Rosado",0,0,1
+start,guzmc001,"Cristian Guzman",1,1,6
+start,hockd001,"Denny Hocking",1,2,5
+start,lawtm002,"Matt Lawton",1,3,7
+start,coomr001,"Ron Coomer",1,4,3
+start,huskb001,"Butch Huskey",1,5,9
+start,lecrm001,"Matt LeCroy",1,6,2
+start,ortid001,"David Ortiz",1,7,10
+start,huntt001,"Torii Hunter",1,8,8
+start,maxwj001,"Jason Maxwell",1,9,4
+start,bergs001,"Sean Bergman",1,0,1
+play,1,0,damoj001,12,CBFX,63/G
+play,1,0,feblc001,32,BBSBCC,K/C
+play,1,0,beltc001,22,FFBBX,3/G
+play,1,1,guzmc001,32,BFBBFX,9/F9
+play,1,1,hockd001,22,BCBCX,S7
+play,1,1,lawtm002,12,CBCX,S/89S.1-3
+play,1,1,coomr001,22,BBFCFFFX,54(1)3/GDP
+play,2,0,dye-j001,31,CBBBX,43/G
+play,2,0,sweem002,02,CFFX,3/FL
+play,2,0,randj002,12,CBFS,K
+play,2,1,huskb001,32,BBBCFFX,S8
+play,2,1,lecrm001,22,FFBFBFS,K
+play,2,1,ortid001,22,FBBFFX,D9.1-H
+play,2,1,huntt001,01,CX,9/FL.2-3
+play,2,1,maxwj001,00,X,D8.3-H
+play,2,1,guzmc001,12,CSFBX,9/F9
+play,3,0,quinm001,00,X,63/G
+play,3,0,fabrj001,10,BX,43/G
+play,3,0,sancr001,20,BBX,D7
+play,3,0,damoj001,32,BBBCFB,W
+play,3,0,feblc001,32,FCBBBX,S9.2-H;1-3
+play,3,0,beltc001,21,BBFX,S8/8S.3-H;1-H(E8)(UR);BXH(9425)
+play,3,1,hockd001,21,BCBX,HR/7
+play,3,1,lawtm002,32,BCBBSC,K/C
+play,3,1,coomr001,12,SFBS,K
+play,3,1,huskb001,32,BBCBSFFX,D/78D
+play,3,1,lecrm001,01,CX,8/F8
+play,4,0,dye-j001,21,FBBX,S
+play,4,0,sweem002,21,BCBX,9/F9
+play,4,0,randj002,22,BSBSS,K
+play,4,0,quinm001,00,X,S9.1-2
+play,4,0,fabrj001,01,CX,7/F7
+play,4,1,ortid001,31,CBBBX,D/78
+play,4,1,huntt001,01,CX,9/F9
+play,4,1,maxwj001,10,BX,4/P4
+play,4,1,guzmc001,11,CBX,3/L3
+play,5,0,sancr001,22,BSFFBX,53/G
+play,5,0,damoj001,10,BX,S8
+play,5,0,feblc001,00,B,SB2
+play,5,0,feblc001,30,BBBH,HP
+play,5,0,beltc001,10,BX,16(1)3/GDP
+play,5,1,hockd001,32,BCFBFBFB,W
+play,5,1,lawtm002,11,CBB,SB2.1-3(E6)
+play,5,1,lawtm002,31,CBBBB,W
+play,5,1,coomr001,12,FFBX,D/78.3-H;1-H
+play,5,1,huskb001,00,,NP
+sub,fussc001,"Chris Fussell",0,0,1
+play,5,1,huskb001,22,BCBFX,8/L8.2-3
+play,5,1,lecrm001,02,FFFX,9/SF.3-H
+play,5,1,ortid001,32,BFBCBB,W
+play,5,1,huntt001,00,X,8/L8
+play,6,0,dye-j001,22,CCFBFBX,HR/7
+play,6,0,sweem002,00,,NP
+sub,hawkl001,"LaTroy Hawkins",1,0,1
+play,6,0,sweem002,01,CX,43/G
+play,6,0,randj002,00,X,3/G
+play,6,0,quinm001,11,CBX,43/G
+play,6,1,maxwj001,20,BBX,HR/78
+play,6,1,guzmc001,02,SFC,K/C
+play,6,1,hockd001,00,X,9/F9
+play,6,1,lawtm002,30,BBBX,HR/7
+play,6,1,coomr001,10,BX,63/G
+play,7,0,fabrj001,10,BX,8/F8
+play,7,0,sancr001,11,BFX,D9
+play,7,0,damoj001,21,FBBX,S9.2-H
+play,7,0,feblc001,20,BBX,S7.1-2
+play,7,0,beltc001,31,BFBBX,S8/8S.2-H;1-2
+play,7,0,dye-j001,00,,NP
+sub,wellb002,"Bob Wells",1,0,1
+play,7,0,dye-j001,12,CCBB,WP.2-3
+play,7,0,dye-j001,32,CCBBBFS,K
+play,7,0,sweem002,32,FFFBBBB,W.1-2
+play,7,0,randj002,00,X,3/FL
+play,7,1,huskb001,12,CCBFX,HR/7
+play,7,1,lecrm001,32,BFBBFS,K
+play,7,1,ortid001,01,CX,8/L8
+play,7,1,huntt001,22,CFBBFS,K
+play,8,0,quinm001,00,,NP
+sub,lawtm002,"Matt Lawton",1,3,9
+play,8,0,quinm001,00,,NP
+sub,jonej003,"Jacque Jones",1,5,7
+play,8,0,quinm001,01,CX,HR/78
+play,8,0,fabrj001,01,CX,43/G
+play,8,0,sancr001,00,X,9/F9D
+play,8,0,damoj001,12,CBCC,K/C
+play,8,1,maxwj001,00,,NP
+sub,bottr001,"Ricky Bottalico",0,0,1
+play,8,1,maxwj001,12,CBFC,K/C
+play,8,1,guzmc001,00,X,D7
+play,8,1,hockd001,22,BCCFBFFX,63/G.2-3
+play,8,1,lawtm002,12,FFBS,K
+play,9,0,feblc001,11,BCX,8/L8
+play,9,0,beltc001,32,CFBBBFFFFC,K/C
+play,9,0,dye-j001,12,CBFS,K
+data,er,rosaj001,6
+data,er,fussc001,3
+data,er,bottr001,0
+data,er,bergs001,3
+data,er,hawkl001,2
+data,er,wellb002,1

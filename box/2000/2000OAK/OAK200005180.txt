@@ -1,0 +1,151 @@
+version,2
+info,visteam,MIN
+info,hometeam,OAK
+info,site,OAK01
+info,date,2000/05/18
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,schrp901
+info,ump1b,cuzzp901
+info,ump2b,craft901
+info,ump3b,lampi901
+info,pitches,pitches
+info,temp,64
+info,winddir,torf
+info,windspeed,13
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,175
+info,attendance,8746
+info,wp,redmm002
+info,lp,vizcl001
+info,save,
+start,jonej003,"Jacque Jones",0,1,7
+start,hockd001,"Denny Hocking",0,2,6
+start,lawtm002,"Matt Lawton",0,3,9
+start,coomr001,"Ron Coomer",0,4,3
+start,ortid001,"David Ortiz",0,5,10
+start,lecrm001,"Matt LeCroy",0,6,2
+start,koskc001,"Corey Koskie",0,7,5
+start,huntt001,"Torii Hunter",0,8,8
+start,canij001,"Jay Canizaro",0,9,4
+start,redmm002,"Mark Redman",0,0,1
+start,longt002,"Terrence Long",1,1,8
+start,velar001,"Randy Velarde",1,2,4
+start,giamj001,"Jason Giambi",1,3,3
+start,saeno001,"Olmedo Saenz",1,4,10
+start,grieb001,"Ben Grieve",1,5,7
+start,tejam001,"Miguel Tejada",1,6,6
+start,giamj002,"Jeremy Giambi",1,7,9
+start,chave001,"Eric Chavez",1,8,5
+start,fasas001,"Sal Fasano",1,9,2
+start,appik001,"Kevin Appier",1,0,1
+play,1,0,jonej003,10,BX,S/78
+play,1,0,hockd001,11,CBX,D7.1-3
+play,1,0,lawtm002,22,CBBCFX,43/G.3-H;2-3
+play,1,0,coomr001,22,CCBBFX,2/FL
+play,1,0,ortid001,12,CFBX,E5/G.3-H(UR)(NR)
+play,1,0,lecrm001,01,FX,S8.1-2
+play,1,0,koskc001,21,BFBX,S9.2-H(UR);1-3;B-2(E8)
+play,1,0,huntt001,02,CSS,K
+play,1,1,longt002,21,BBCX,6/P6
+play,1,1,velar001,31,BBBCX,9/F9
+play,1,1,giamj001,02,CFX,43/G
+play,2,0,canij001,00,X,S8
+play,2,0,jonej003,02,FFX,E3/TH.1-3
+play,2,0,hockd001,00,X,D7.3-H(UR);1-3
+play,2,0,lawtm002,32,BFSBBS,K
+play,2,0,coomr001,30,IIII,IW
+play,2,0,ortid001,12,CFBX,2/FL
+play,2,0,lecrm001,11,BFX,53/G
+play,2,1,saeno001,01,CX,53/G
+play,2,1,grieb001,00,X,63/G
+play,2,1,tejam001,22,CBBFX,9/F9
+play,3,0,koskc001,21,BBCX,D7
+play,3,0,huntt001,01,SX,6/P6
+play,3,0,canij001,12,CFBX,53/G.2-3
+play,3,0,jonej003,10,BX,S9/9S.3-H
+play,3,0,hockd001,01,CX,S9.1-2
+play,3,0,lawtm002,20,BBX,4/L4
+play,3,1,giamj002,32,CBFBFBFFX,S7
+play,3,1,chave001,10,BX,9/F9
+play,3,1,fasas001,02,SSFX,5/P5
+play,3,1,longt002,10,BX,D/89D.1-H
+play,3,1,velar001,11,CBX,HR/78.2-H
+play,3,1,giamj001,22,CFBBS,K
+play,4,0,coomr001,00,,NP
+sub,vizcl001,"Luis Vizcaino",1,0,1
+play,4,0,coomr001,10,BX,S7.BX2(74)
+play,4,0,ortid001,02,SSFFS,K
+play,4,0,lecrm001,01,CX,8/F8
+play,4,1,saeno001,11,BFX,S7
+play,4,1,grieb001,02,CCFS,K
+play,4,1,tejam001,32,BBBCFFX,HR/7.1-H
+play,4,1,giamj002,20,BBX,7/FL
+play,4,1,chave001,22,BBFFC,K/C
+play,5,0,koskc001,10,BX,7/F7
+play,5,0,huntt001,22,CSBFBX,4/P4
+play,5,0,canij001,00,X,53/G
+play,5,1,fasas001,31,BBBCX,5/FL
+play,5,1,longt002,12,BCFX,43/G
+play,5,1,velar001,11,BCX,63/G
+play,6,0,jonej003,10,BX,S9/9S
+play,6,0,hockd001,12,CSBFX,S7/7S.1-2
+play,6,0,lawtm002,00,,NP
+sub,magnm001,"Mike Magnante",1,0,1
+play,6,0,lawtm002,11,BCX,13/G.2-3;1-2
+play,6,0,coomr001,30,IIII,IW
+play,6,0,ortid001,00,,NP
+sub,huskb001,"Butch Huskey",0,5,11
+play,6,0,huskb001,10,BX,54(1)/FO.3-H;2-3
+play,6,0,lecrm001,31,SBBBX,4/L4
+play,6,1,giamj001,01,CX,7/F7
+play,6,1,saeno001,01,CX,63/G
+play,6,1,grieb001,21,CBBX,43/G
+play,7,0,koskc001,02,CSS,K
+play,7,0,huntt001,31,BSBBX,S8/8S
+play,7,0,canij001,00,X,S9.1-H(E9);B-3
+play,7,0,jonej003,00,,NP
+sub,sauvr001,"Rich Sauveur",1,0,1
+play,7,0,jonej003,02,SFFFX,S9.3-H
+play,7,0,hockd001,20,BBX,HR/78.1-H
+play,7,0,lawtm002,00,X,S/78
+play,7,0,coomr001,10,BX,64(1)3/GDP
+play,7,1,tejam001,00,,NP
+sub,millt001,"Travis Miller",0,0,1
+play,7,1,tejam001,00,X,13/BG
+play,7,1,giamj002,22,FCBBS,K
+play,7,1,chave001,12,SFBX,13/G
+play,8,0,huskb001,21,BSBX,63/G
+play,8,0,lecrm001,00,X,63/G
+play,8,0,koskc001,20,BBX,43/G
+play,8,1,fasas001,00,,NP
+sub,hernr002,"Ramon Hernandez",1,9,11
+play,8,1,hernr002,00,X,63/G
+play,8,1,longt002,32,CBBFBX,43/G
+play,8,1,velar001,12,BCCFX,7/L7
+play,9,0,huntt001,00,,NP
+sub,hernr002,"Ramon Hernandez",1,9,2
+play,9,0,huntt001,11,CBX,43/G
+play,9,0,canij001,20,BBX,S7/7S
+play,9,0,jonej003,12,BFFX,9/L9
+play,9,0,hockd001,32,CBFFBBS,K
+play,9,1,giamj001,22,BFBFX,S8
+play,9,1,saeno001,00,X,S7/7S.1-2
+play,9,1,grieb001,21,BBFX,8/F8D
+play,9,1,tejam001,00,,NP
+sub,wellb002,"Bob Wells",0,0,1
+play,9,1,tejam001,00,,NP
+sub,staim001,"Matt Stairs",1,6,11
+play,9,1,staim001,00,X,9/F9.2-3
+play,9,1,giamj002,10,BX,6/L6
+data,er,redmm002,5
+data,er,millt001,0
+data,er,wellb002,0
+data,er,appik001,2
+data,er,vizcl001,1
+data,er,magnm001,2
+data,er,sauvr001,2

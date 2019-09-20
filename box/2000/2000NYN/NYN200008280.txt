@@ -1,0 +1,135 @@
+version,2
+info,visteam,HOU
+info,hometeam,NYN
+info,site,NYC17
+info,date,2000/08/28
+info,number,0
+info,starttime,7:10PM
+info,daynight,night
+info,usedh,false
+info,umphome,hollm901
+info,ump1b,onorb901
+info,ump2b,hirsm901
+info,ump3b,iassd901
+info,pitches,pitches
+info,temp,75
+info,winddir,tolf
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,142
+info,attendance,28472
+info,wp,ruscg001
+info,lp,poweb001
+info,save,wendt001
+start,ceder001,"Roger Cedeno",0,1,7
+start,lugoj001,"Julio Lugo",0,2,4
+start,bagwj001,"Jeff Bagwell",0,3,3
+start,hidar001,"Richard Hidalgo",0,4,8
+start,aloum001,"Moises Alou",0,5,9
+start,euset001,"Tony Eusebio",0,6,2
+start,trubc001,"Chris Truby",0,7,5
+start,bogat001,"Tim Bogar",0,8,6
+start,poweb001,"Brian Powell",0,9,1
+start,agbab001,"Benny Agbayani",1,1,7
+start,belld001,"Derek Bell",1,2,9
+start,alfoe001,"Edgardo Alfonzo",1,3,4
+start,ventr001,"Robin Ventura",1,4,5
+start,zeilt001,"Todd Zeile",1,5,3
+start,paytj001,"Jay Payton",1,6,8
+start,bordm001,"Mike Bordick",1,7,6
+start,pratt001,"Todd Pratt",1,8,2
+start,ruscg001,"Glendon Rusch",1,9,1
+play,1,0,ceder001,21,CBBX,HR/7
+play,1,0,lugoj001,31,BBBCB,W
+play,1,0,bagwj001,32,CBCBBX,86(1)/FO
+play,1,0,hidar001,21,BCBX,43/G.1-2
+play,1,0,aloum001,31,BBBCX,9/F9
+play,1,1,agbab001,10,BX,S8
+play,1,1,belld001,00,X,S/89.1-3
+play,1,1,alfoe001,10,BX,HR/78.3-H;1-H
+play,1,1,ventr001,32,CFBBBX,43/G
+play,1,1,zeilt001,32,BCCBBB,W
+play,1,1,paytj001,10,BX,64(1)3/GDP
+play,2,0,euset001,21,CBBX,D8
+play,2,0,trubc001,22,BBSFS,K
+play,2,0,bogat001,11,BCX,S.2-2
+play,2,0,poweb001,12,CFBS,K
+play,2,0,ceder001,32,CBFFBBB,W.2-3;1-2
+play,2,0,lugoj001,11,CBX,8/F8
+play,2,1,bordm001,11,BCX,S7/7S
+play,2,1,pratt001,32,BSBFBB,W.1-3(E2)
+play,2,1,ruscg001,00,X,14/SH.1-2
+play,2,1,agbab001,30,BBBB,W
+play,2,1,belld001,00,X,3/FL
+play,2,1,alfoe001,21,BBFX,3/P3
+play,3,0,bagwj001,12,CSBX,53/G
+play,3,0,hidar001,11,BCX,HR/89
+play,3,0,aloum001,02,FFC,K/C
+play,3,0,euset001,20,BBX,43/G
+play,3,1,ventr001,20,BBX,31/G
+play,3,1,zeilt001,20,BBX,9/L9
+play,3,1,paytj001,11,CBX,S7/7S
+play,3,1,bordm001,21,BBCX,54(1)/FO
+play,4,0,trubc001,10,BX,T/89D
+play,4,0,bogat001,12,CFBS,K
+play,4,0,poweb001,12,BCSS,K
+play,4,0,ceder001,32,BBCBFFB,W
+play,4,0,lugoj001,01,FX,43/G
+play,4,1,pratt001,31,BFBBB,W
+play,4,1,ruscg001,00,X,34/SH.1-2
+play,4,1,agbab001,00,X,9/F9
+play,4,1,belld001,31,CBBBB,W
+play,4,1,alfoe001,30,BBBB,W.2-3;1-2
+play,4,1,ventr001,10,BX,31/G
+play,5,0,bagwj001,02,CSX,S7
+play,5,0,hidar001,22,CBBCFX,6/P6
+play,5,0,aloum001,11,BCX,64(1)3/GDP
+play,5,1,zeilt001,12,CSBX,6/L6
+play,5,1,paytj001,01,SX,4/P4
+play,5,1,bordm001,12,CBFFFX,8/F8
+play,6,0,euset001,22,CCBBFS,K
+play,6,0,trubc001,00,X,D7
+play,6,0,bogat001,32,BCBFBFC,K/C
+play,6,0,poweb001,00,,NP
+sub,berkl001,"Lance Berkman",0,9,11
+play,6,0,berkl001,00,X,63/G
+play,6,1,pratt001,00,,NP
+sub,cabrj001,"Jose Cabrera",0,9,1
+play,6,1,pratt001,00,X,43/G
+play,6,1,ruscg001,02,CFS,K
+play,6,1,agbab001,11,CBX,63/G
+play,7,0,ceder001,11,BCX,63/G
+play,7,0,lugoj001,20,BBX,7/F7
+play,7,0,bagwj001,01,CX,9/FL
+play,7,1,belld001,00,X,63/G
+play,7,1,alfoe001,22,CSBBX,7/F7
+play,7,1,ventr001,01,CX,8/F8
+play,8,0,hidar001,00,,NP
+sub,wendt001,"Turk Wendell",1,9,1
+play,8,0,hidar001,02,CFX,6/P6
+play,8,0,aloum001,10,BX,4/P4
+play,8,0,euset001,01,CX,S9
+play,8,0,trubc001,00,,NP
+sub,barkg001,"Glen Barker",0,6,12
+play,8,0,trubc001,00,B,SB2
+play,8,0,trubc001,12,BFCX,8/F8
+play,8,1,zeilt001,00,,NP
+sub,melum001,"Mitch Meluskey",0,6,2
+play,8,1,zeilt001,22,CCBBX,8/F8
+play,8,1,paytj001,01,FX,D9/9D
+play,8,1,bordm001,00,X,3/G.2-3
+play,8,1,pratt001,01,FN,BK.3-H
+play,8,1,pratt001,32,FFBBBX,9/F9
+play,9,0,bogat001,00,,NP
+sub,spieb001,"Bill Spiers",0,8,11
+play,9,0,spieb001,10,BX,31/G
+play,9,0,cabrj001,00,,NP
+sub,wardd002,"Daryle Ward",0,9,11
+play,9,0,wardd002,01,CX,63/G
+play,9,0,ceder001,00,X,63/G
+data,er,poweb001,3
+data,er,cabrj001,1
+data,er,ruscg001,2
+data,er,wendt001,0

@@ -1,0 +1,74 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,22,1,,,,,0,5,CBBSX,parkc002,1,0,,abreb001,0,F
+,02,1,,,,,1,9,CSFS,parkc002,1,0,gland001 strikes out. ,gland001,0,
+,00,1,roles001,,,,2,10,X,parkc002,0,0,roles001 singles. ,roles001,0,
+,32,1,roles001,,,,3,19,BCBSBFFFX,parkc002,1,0,,liebm001,0,F
+,30,1,goodt001,,,,4,4,BBBB,persr001,0,0,goodt001 walks. ,goodt001,1,
+,11,1,,goodt001,,grudm001,5,7,CBB,persr001,0,0,goodt001 steals 2B. ,grudm001,1,
+,31,1,grudm001,goodt001,,,6,12,CBBBB,persr001,0,0,grudm001 walks. ,grudm001,1,
+goodt001 scores. grudm001 to 3B. ,32,1,shefg001,,grudm001,,7,18,BBBCFX,persr001,0,1,shefg001 singles. ,shefg001,1,
+,12,1,shefg001,,grudm001,,8,22,SBSS,persr001,1,0,grees001 strikes out. ,grees001,1,
+,12,1,,,grudm001,,9,26,SBSX,persr001,2,0,Double Play. ,karre001,1,
+,22,2,,,,,10,24,FCBBX,parkc002,1,0,lee-t002 grounds out. ,lee-t002,0,G
+,12,2,,,,,11,28,BCFS,parkc002,1,0,burrp001 strikes out. ,burrp001,0,
+,31,2,andem003,,,,12,33,BBBCB,parkc002,0,0,andem003 walks. ,andem003,0,
+,12,2,andem003,,,,13,37,BCFS,parkc002,1,0,peret003 strikes out. ,peret003,0,
+,22,2,,,,,14,31,BCBCX,persr001,1,0,belta001 grounds out. ,belta001,1,G
+,00,2,,,,,15,32,X,persr001,1,0,,kreuc001,1,F
+,22,2,,,,,16,39,BCSFBFS,persr001,1,0,coraa001 strikes out. ,coraa001,1,
+,12,3,,,,,17,41,CFBX,parkc002,1,0,persr001 grounds out. ,persr001,0,G
+,31,3,abreb001,,,,18,46,BBBCB,parkc002,0,0,abreb001 walks. ,abreb001,0,
+,01,3,,,,,19,48,SX,parkc002,2,0,Double Play. ,gland001,0,
+,12,3,,,,,20,43,BFFS,persr001,1,0,parkc002 strikes out. ,parkc002,1,
+,22,3,,,,,21,48,FBCBS,persr001,1,0,goodt001 strikes out. ,goodt001,1,
+,02,3,,,,,22,51,CFX,persr001,1,0,,grudm001,1,
+,01,4,,,,,23,50,CX,parkc002,1,0,roles001 grounds out. ,roles001,0,G
+,11,4,,,,,24,53,BSX,parkc002,1,0,liebm001 grounds out. ,liebm001,0,G
+,10,4,,,,,25,55,BX,parkc002,1,0,,lee-t002,0,F
+,12,4,,,,,26,56,BSFFX,persr001,1,0,shefg001 grounds out. ,shefg001,1,G
+,12,4,,,,,27,60,FBCS,persr001,1,0,grees001 strikes out. ,grees001,1,
+,20,4,,,,,28,63,BBX,persr001,1,0,,karre001,1,
+,31,5,burrp001,,,,29,60,BCBBB,parkc002,0,0,burrp001 walks. ,burrp001,0,
+burrp001 to 2B. ,32,5,andem003,burrp001,,,30,69,CBBFFFFBB,parkc002,0,0,andem003 walks. ,andem003,0,
+burrp001 to 3B. ,12,5,,,burrp001,,31,73,BFFX,parkc002,2,0,Double Play. ,peret003,0,
+,32,5,,,burrp001,,32,81,BSBBFFFS,parkc002,1,0,persr001 strikes out. ,persr001,0,
+,22,5,,,,,33,69,CBBFFX,persr001,0,1,belta001 homers. ,belta001,1,
+,32,5,kreuc001,,,,34,76,CFBBFBB,persr001,0,0,kreuc001 walks. ,kreuc001,1,
+,02,5,kreuc001,,,,35,80,FCFS,persr001,1,0,coraa001 strikes out. ,coraa001,1,
+,22,5,kreuc001,,,,36,85,BLLBL,persr001,1,0,parkc002 strikes out. ,parkc002,1,F
+kreuc001 to 2B. ,10,5,goodt001,kreuc001,,,37,87,BX,persr001,0,0,goodt001 singles. ,goodt001,1,
+kreuc001 scores. goodt001 to 3B. ,22,5,grudm001,,goodt001,,38,92,CFBBX,persr001,0,1,grudm001 singles. ,grudm001,1,
+,20,5,grudm001,,goodt001,,39,95,BBX,persr001,1,0,,shefg001,1,F
+,11,6,,,,,40,84,CBX,parkc002,1,0,abreb001 grounds out. ,abreb001,0,G
+,31,6,,,,,41,89,BCBBX,parkc002,1,0,,gland001,0,F
+,21,6,,,,,42,93,BBCX,parkc002,1,0,,roles001,0,F
+,31,6,,,,,43,100,BBBFX,persr001,0,1,grees001 homers. ,grees001,1,
+,22,6,,,,,44,106,SBSBFX,persr001,1,0,,karre001,1,F
+,32,6,,,,,45,112,BBBCFX,persr001,1,0,,belta001,1,F
+,31,6,kreuc001,,,,46,117,BSBBB,persr001,0,0,kreuc001 walks. ,kreuc001,1,
+,02,6,kreuc001,,,,47,120,SSS,persr001,1,0,coraa001 strikes out. ,coraa001,1,
+,30,7,liebm001,,,,48,97,BBBB,parkc002,0,0,liebm001 walks. ,liebm001,0,
+,22,7,liebm001,,,,49,102,BBCFX,parkc002,1,0,,lee-t002,0,P
+,02,7,liebm001,,,,50,105,CCS,parkc002,1,0,burrp001 strikes out. ,burrp001,0,
+,10,7,liebm001,,,,51,107,BX,parkc002,1,0,andem003 grounds out. ,andem003,0,G
+,01,7,parkc002,,,,53,2,FX,polic001,0,0,parkc002 singles. ,parkc002,1,
+,02,7,parkc002,,,,54,5,SFS,polic001,1,0,goodt001 strikes out. ,goodt001,1,
+parkc002 to 2B. ,32,7,grudm001,parkc002,,,55,12,CBBFFBX,polic001,0,0,grudm001 singles. ,grudm001,1,
+parkc002 scores. grudm001 to 3B. ,21,7,shefg001,,grudm001,,56,16,BFBX,polic001,0,1,shefg001 singles. ,shefg001,1,
+grudm001 scores. shefg001 to 2B. ,32,7,,shefg001,,,57,22,BSBSBX,polic001,1,1,grees001 grounds out. ,grees001,1,G
+shefg001 out. ,32,7,karre001,,,,58,28,SBBBFX,polic001,1,0,karre001 singles. ,karre001,1,
+,12,8,peret003,,,,59,112,FBCFX,parkc002,0,0,peret003 singles. ,peret003,0,
+,21,8,,,,,61,116,BBCX,parkc002,2,0,Double Play. ,duceb001,0,
+,32,8,abreb001,,,,62,123,BCBFBFB,parkc002,0,0,abreb001 walks. ,abreb001,0,
+abreb001 to 2B. ,30,8,gland001,abreb001,,,63,127,BBBB,parkc002,0,0,gland001 walks. ,gland001,0,
+,12,8,gland001,abreb001,,,64,131,CCBS,parkc002,1,0,roles001 strikes out. ,roles001,0,
+,01,8,,,,,68,2,CX,boydj001,1,0,,belta001,1,F
+,12,8,,,,,69,6,CCBC,boydj001,1,0,kreuc001 strikes out. ,kreuc001,1,
+,00,8,,,,,70,7,X,boydj001,1,0,coraa001 grounds out. ,coraa001,1,G
+,31,9,liebm001,,,,73,5,BCBBX,adamt001,0,0,liebm001 singles. ,liebm001,0,
+liebm001 to 3B. ,22,9,lee-t002,,liebm001,,74,11,BBCCFX,adamt001,0,0,lee-t002 singles. ,lee-t002,0,
+lee-t002 to 2B. ,02,9,,lee-t002,liebm001,,75,15,CFFX,adamt001,1,0,burrp001 grounds out. ,burrp001,0,G
+liebm001 scores. ,11,9,andem003,lee-t002,,,76,18,BCX,adamt001,0,1,andem003 reaches on error. ,andem003,0,G
+,02,9,andem003,lee-t002,,,77,21,CSS,adamt001,1,0,peret003 strikes out. ,peret003,0,
+lee-t002 to 3B. andem003 to 2B. ,32,9,duceb001,andem003,lee-t002,,78,28,BCCBBFB,adamt001,0,0,duceb001 walks. ,duceb001,0,
+,21,9,duceb001,andem003,lee-t002,,80,4,BBCX,shawj001,1,0,,jordk001,0,F

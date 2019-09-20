@@ -1,0 +1,167 @@
+version,2
+info,visteam,BOS
+info,hometeam,KCA
+info,site,KAN06
+info,date,2000/08/27
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,spiep901
+info,ump1b,timmt901
+info,ump2b,morrd901
+info,ump3b,fleta901
+info,pitches,pitches
+info,temp,90
+info,winddir,fromlf
+info,windspeed,3
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,185
+info,attendance,17037
+info,wp,reicd001
+info,lp,waket001
+info,save,
+start,offej001,"Jose Offerman",0,1,10
+start,lewid001,"Darren Lewis",0,2,8
+start,daubb001,"Brian Daubach",0,3,3
+start,garcn001,"Nomar Garciaparra",0,4,6
+start,oleat001,"Troy O'Leary",0,5,7
+start,hatts001,"Scott Hatteberg",0,6,2
+start,merll001,"Lou Merloni",0,7,5
+start,nixot001,"Trot Nixon",0,8,9
+start,lansm001,"Mike Lansing",0,9,4
+start,waket001,"Tim Wakefield",0,0,1
+start,damoj001,"Johnny Damon",1,1,8
+start,sancr001,"Rey Sanchez",1,2,6
+start,sweem002,"Mike Sweeney",1,3,10
+start,dye-j001,"Jermaine Dye",1,4,9
+start,quinm001,"Mark Quinn",1,5,7
+start,mccad001,"David McCarty",1,6,3
+start,ortih001,"Hector Ortiz",1,7,2
+start,delgw001,"Wilson Delgado",1,8,4
+start,reboj001,"Jeff Reboulet",1,9,5
+start,reicd001,"Dan Reichert",1,0,1
+play,1,0,offej001,12,CSFBFS,K
+play,1,0,lewid001,12,BCFC,K/C
+play,1,0,daubb001,10,BX,D/89
+play,1,0,garcn001,01,FX,E5/TH
+play,1,0,oleat001,00,X,7/F7
+play,1,1,damoj001,01,FX,43/G
+play,1,1,sancr001,00,X,31/G
+play,1,1,sweem002,01,SX,53/G
+play,2,0,hatts001,21,BBFX,D8/8D
+play,2,0,merll001,00,X,23/SH.2-3
+play,2,0,nixot001,11,FBX,6/L6
+play,2,0,lansm001,30,BBBB,W
+play,2,0,offej001,22,BBCFFX,43/G
+play,2,1,dye-j001,32,BBCBCX,53/G
+play,2,1,quinm001,30,BBBB,W
+play,2,1,mccad001,22,CBBFB,SB2
+play,2,1,mccad001,32,CBBFBB,W
+play,2,1,ortih001,20,BBX,S7/7S.2-3;1-2
+play,2,1,delgw001,12,CFBFX,S7.3-H;2-3;1-2
+play,2,1,reboj001,32,BBCFBX,E2/G.3-H(NR);2-3;1-2
+play,2,1,damoj001,00,X,8/SF.3-H(UR)
+play,2,1,sancr001,02,CFS,K
+play,3,0,lewid001,32,BBCFBS,K
+play,3,0,daubb001,12,CCBS,K
+play,3,0,garcn001,11,CBX,9/F9
+play,3,1,sweem002,31,BBBCB,W
+play,3,1,dye-j001,12,BCFFFX,HR/7.1-H
+play,3,1,quinm001,01,CX,7/F7S
+play,3,1,mccad001,02,CFFS,K
+play,3,1,ortih001,22,BCFBX,5/L5
+play,4,0,oleat001,20,BBX,D8/8D
+play,4,0,hatts001,10,BX,8/F8D.2-3
+play,4,0,merll001,12,BSSX,8/SF.3-H
+play,4,0,nixot001,02,CFFX,8/F8D
+play,4,1,delgw001,22,BFFBX,3/G
+play,4,1,reboj001,22,BFBCS,K
+play,4,1,damoj001,22,BBSFC,K/C
+play,5,0,lansm001,00,X,8/F8
+play,5,0,offej001,01,CX,43/G
+play,5,0,lewid001,10,BX,8/F8
+play,5,1,sancr001,00,X,S8
+play,5,1,sweem002,00,B,SB2
+play,5,1,sweem002,10,BX,S8.2-H
+play,5,1,dye-j001,10,BC,SB2
+play,5,1,dye-j001,11,BCX,S7.2-3
+play,5,1,quinm001,12,BCCFX,5/FL.3-H(E3/TH2)(UR);1-2
+com,"looks like a rundown - assist to third baseman?"
+play,5,1,mccad001,00,X,HR/7.2-H
+play,5,1,ortih001,20,BBX,4/P4
+play,5,1,delgw001,11,CBX,S7
+play,5,1,reboj001,32,BBBCFFS,K
+play,6,0,daubb001,32,BBBCSX,D/89
+play,6,0,garcn001,01,FX,S7.2-3
+play,6,0,oleat001,12,BFFFS,K
+play,6,0,hatts001,32,BBFFFBB,W.1-2
+play,6,0,merll001,12,BFCX,9/SF.3-H;2-3
+play,6,0,nixot001,20,BBX,S9.3-H;1-2
+play,6,0,lansm001,00,,NP
+sub,santj002,"Jose Santiago",1,0,1
+play,6,0,lansm001,22,CBBSX,31/G
+play,6,1,damoj001,00,,NP
+sub,florb001,"Bryce Florie",0,0,1
+play,6,1,damoj001,10,BX,S9
+play,6,1,sancr001,30,BBBB,W.1-2
+play,6,1,sweem002,32,BSSBBFFB,W.2-3;1-2
+play,6,1,dye-j001,00,X,9/SF.3-H;2-3
+play,6,1,quinm001,12,CSBX,36(1)/FO.3-H
+play,6,1,mccad001,22,CBCBX,2/FL
+play,7,0,offej001,31,BBBCX,43/G
+play,7,0,lewid001,12,FBFX,63/G
+play,7,0,daubb001,11,FBX,43/G
+play,7,1,ortih001,00,,NP
+sub,brogr001,"Rico Brogna",0,3,3
+play,7,1,ortih001,00,,NP
+sub,alexm001,"Manny Alexander",0,4,6
+play,7,1,ortih001,00,,NP
+sub,gilkb001,"Bernard Gilkey",0,5,7
+play,7,1,ortih001,00,,NP
+sub,cormr001,"Rheal Cormier",0,0,1
+play,7,1,ortih001,11,CBX,53/G
+play,7,1,delgw001,32,BFBFBX,E5/G
+play,7,1,reboj001,12,CFBC,K/C
+play,7,1,damoj001,01,CX,S.1-2
+play,7,1,sancr001,00,,NP
+sub,ordal001,"Luis Ordaz",1,2,11
+play,7,1,ordal001,00,X,5(2)/FO.1-2
+play,8,0,alexm001,00,,NP
+sub,ordal001,"Luis Ordaz",1,2,6
+play,8,0,alexm001,00,,NP
+sub,fussc001,"Chris Fussell",1,0,1
+play,8,0,alexm001,01,FX,8/F8D
+play,8,0,gilkb001,01,CX,S9
+play,8,0,hatts001,20,BBX,S9/9S.1-2
+play,8,0,merll001,10,BX,D9.2-H;1-3
+play,8,0,nixot001,00,X,9/SF.3-H
+play,8,0,lansm001,00,X,S8.2-H
+play,8,0,offej001,32,BBCSBFX,S8/78.1-H(E8)(UR);B-2
+play,8,0,lewid001,00,,NP
+sub,bottr001,"Ricky Bottalico",1,0,1
+play,8,0,lewid001,00,,NP
+sub,everc001,"Carl Everett",0,2,11
+play,8,0,everc001,31,FBBBB,W
+play,8,0,brogr001,21,CBBX,46(1)/FO.2-3
+play,8,1,sweem002,00,,NP
+sub,everc001,"Carl Everett",0,2,8
+play,8,1,sweem002,00,,NP
+sub,beckr001,"Rod Beck",0,0,1
+play,8,1,sweem002,22,CBBCH,HP
+play,8,1,dye-j001,22,FFBBS,K
+play,8,1,quinm001,10,BX,9/F9S
+play,8,1,mccad001,02,FSC,K/C
+play,9,0,alexm001,31,BBCBB,W
+play,9,0,gilkb001,22,BCFBC,K/C
+play,9,0,hatts001,11,CBX,36(1)1/GDP
+data,er,waket001,7
+data,er,florb001,2
+data,er,cormr001,0
+data,er,beckr001,0
+data,er,reicd001,3
+data,er,santj002,0
+data,er,fussc001,3
+data,er,bottr001,0

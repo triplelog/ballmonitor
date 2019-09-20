@@ -1,0 +1,85 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,02,1,,,,,0,3,CFS,sikob001,1,0,damoj001 strikes out. ,damoj001,0,
+,10,1,,,,,1,5,BX,sikob001,1,0,sancr001 grounds out. ,sancr001,0,G
+,20,1,,,,,2,8,BBX,sikob001,1,0,,sweem002,0,F
+,32,1,,,,,3,7,CBFBBFX,meadb001,1,0,,cataf001,1,
+,01,1,clayr001,,,,4,9,CX,meadb001,0,0,clayr001 singles. ,clayr001,1,
+clayr001 to 3B. ,01,1,palmr001,,clayr001,,5,11,CX,meadb001,0,0,palmr001 singles. ,palmr001,1,
+,11,1,palmr001,,clayr001,,6,14,BFX,meadb001,1,0,,kaplg001,1,P
+,11,1,palmr001,,clayr001,,7,17,BCX,meadb001,1,0,,leder001,1,L
+,02,2,,,,,8,12,CFFS,sikob001,1,0,dye-j001 strikes out. ,dye-j001,0,
+,22,2,,,,,9,19,CFFBFBS,sikob001,1,0,randj002 strikes out. ,randj002,0,
+,22,2,quinm001,,,,10,26,FCFFBBX,sikob001,0,0,quinm001 singles. ,quinm001,0,
+,32,2,quinm001,,,,11,34,FCFBBFBS,sikob001,1,0,browd002 strikes out. ,browd002,0,
+,20,2,,,,,12,20,BBX,meadb001,1,0,,sierr001,1,F
+,12,2,,,,,13,24,SFBX,meadb001,1,0,lambm001 grounds out. ,lambm001,1,G
+,12,2,,,,,14,28,BFCX,meadb001,1,0,waszb001 grounds out. ,waszb001,1,G
+,32,3,,,,,15,41,BCBFFBX,sikob001,0,1,zaung001 homers. ,zaung001,0,
+,00,3,,,,,16,42,X,sikob001,1,0,delgw001 grounds out. ,delgw001,0,G
+,10,3,,,,,17,44,BX,sikob001,1,0,,damoj001,0,F
+,12,3,sancr001,,,,18,48,CFBX,sikob001,0,0,sancr001 singles. ,sancr001,0,
+sancr001 out. ,01,3,sweem002,,,,19,50,SX,sikob001,1,0,sweem002 reaches on fielder's choice. ,sweem002,0,
+,02,3,,,,,20,32,CCFX,meadb001,1,0,,grees002,1,F
+,00,3,,,,,21,33,X,meadb001,1,0,,cataf001,1,L
+,12,3,clayr001,,,,22,37,CFBX,meadb001,0,0,clayr001 singles. ,clayr001,1,
+,00,3,clayr001,,,,23,38,X,meadb001,1,0,palmr001 grounds out. ,palmr001,1,G
+,00,4,,,,,24,51,X,sikob001,0,1,dye-j001 homers. ,dye-j001,0,
+,32,4,randj002,,,,25,59,BFBCFBFB,sikob001,0,0,randj002 walks. ,randj002,0,
+randj002 to 2B. ,00,4,,randj002,,,26,60,X,sikob001,1,0,quinm001 grounds out. ,quinm001,0,G
+,22,4,,randj002,,,27,65,FBBFS,sikob001,1,0,browd002 strikes out. ,browd002,0,
+,02,4,,randj002,,,28,68,CCX,sikob001,1,0,,zaung001,0,F
+,01,4,,,,,29,40,CX,meadb001,1,0,,kaplg001,1,F
+,00,4,,,,,30,41,X,meadb001,1,0,,leder001,1,F
+,02,4,,,,,31,44,CFX,meadb001,1,0,sierr001 grounds out. ,sierr001,1,G
+,31,5,delgw001,,,,32,73,BBBCB,sikob001,0,0,delgw001 walks. ,delgw001,0,
+delgw001 to 2B. ,01,5,,delgw001,,,33,75,FX,sikob001,1,0,damoj001 grounds out. ,damoj001,0,G
+delgw001 to 3B. ,11,5,,,delgw001,,34,78,CBX,sikob001,1,0,sancr001 grounds out. ,sancr001,0,G
+,22,5,,,delgw001,,35,83,BCBFS,sikob001,1,0,sweem002 strikes out. ,sweem002,0,
+,00,5,,,,,36,45,X,meadb001,1,0,,lambm001,1,F
+,11,5,,,,,37,48,CBX,meadb001,1,0,waszb001 grounds out. ,waszb001,1,G
+,22,5,,,,,38,54,FBFFBX,meadb001,1,0,,grees002,1,F
+,32,6,dye-j001,,,,39,89,FBBCBB,sikob001,0,0,dye-j001 walks. ,dye-j001,0,
+dye-j001 to 2B. ,32,6,randj002,dye-j001,,,40,95,BBBCFX,sikob001,0,0,randj002 singles. ,randj002,0,
+dye-j001 to 3B. ,11,6,randj002,,dye-j001,,42,3,BFX,johnj008,1,0,,quinm001,0,F
+randj002 to 2B. ,31,6,browd002,randj002,dye-j001,,43,8,BBFBB,johnj008,0,0,browd002 walks. ,browd002,0,
+dye-j001 scores. randj002 to 3B. browd002 to 2B. ,11,6,,browd002,randj002,zaung001,44,11,FBB,johnj008,0,1,Wild Pitch. ,zaung001,0,
+randj002 scores. browd002 to 3B. ,32,6,zaung001,,browd002,,45,17,FBBBFX,johnj008,0,1,zaung001 reaches on error. ,zaung001,0,G
+browd002 scores. zaung001 to 2B. ,00,6,delgw001,zaung001,,,46,18,X,johnj008,0,1,delgw001 singles. ,delgw001,0,
+,01,6,delgw001,zaung001,,,47,20,CX,johnj008,1,0,,damoj001,0,F
+,01,6,delgw001,zaung001,,,48,22,CX,johnj008,1,0,,sancr001,0,F
+,11,6,cataf001,,,,49,57,BFX,meadb001,0,0,cataf001 singles. ,cataf001,1,
+cataf001 to 2B. ,20,6,,cataf001,,,50,60,BBX,meadb001,1,0,,clayr001,1,F
+cataf001 scores. ,22,6,,palmr001,,,51,65,SBCBX,meadb001,0,1,palmr001 doubles. ,palmr001,1,
+,00,6,,palmr001,,,52,66,X,meadb001,1,0,,kaplg001,1,F
+,22,6,,palmr001,,,53,71,BCFBX,meadb001,1,0,leder001 grounds out. ,leder001,1,G
+,32,7,sweem002,,,,54,29,FBFFBBH,johnj008,0,0,sweem002 hit by pitch. ,sweem002,0,
+sweem002 to 2B. ,31,7,dye-j001,sweem002,,,55,34,BSBBB,johnj008,0,0,dye-j001 walks. ,dye-j001,0,
+sweem002 scores. dye-j001 to 3B. ,00,7,randj002,,dye-j001,,56,35,X,johnj008,0,1,randj002 singles. ,randj002,0,
+dye-j001 scores. randj002 to 2B. ,22,7,quinm001,randj002,,,57,40,BBFCX,johnj008,0,1,quinm001 singles. ,quinm001,0,
+,00,7,quinm001,randj002,,,59,1,X,cordf002,1,0,,browd002,0,F
+randj002 to 3B. quinm001 to 2B. ,30,7,zaung001,quinm001,randj002,,60,5,BBBB,cordf002,0,0,zaung001 walks. ,zaung001,0,
+randj002 scores. quinm001 to 3B. ,01,7,zaung001,,quinm001,,61,7,CX,cordf002,1,1,delgw001 hits sacrifice fly. ,delgw001,0,
+,11,7,zaung001,,quinm001,,62,10,BCX,cordf002,1,0,damoj001 grounds out. ,damoj001,0,G
+,32,7,,,,,63,77,BCFBBS,meadb001,1,0,sierr001 strikes out. ,sierr001,1,
+,22,7,,,,,64,86,BSFBFFFFX,meadb001,1,0,,lambm001,1,L
+,00,7,,,,,65,87,X,meadb001,1,0,waszb001 grounds out. ,waszb001,1,G
+,11,8,,,,,66,13,FBX,cordf002,1,0,sancr001 grounds out. ,sancr001,0,G
+,30,8,,,,,67,17,BBBX,cordf002,1,0,sweem002 grounds out. ,sweem002,0,G
+,12,8,,,,,68,21,CBCX,cordf002,1,0,dye-j001 grounds out. ,dye-j001,0,G
+,00,8,,,,,69,88,X,meadb001,1,0,grees002 grounds out. ,grees002,1,G
+,10,8,cataf001,,,,70,90,BX,meadb001,0,0,cataf001 singles. ,cataf001,1,
+cataf001 to 3B. ,10,8,,clayr001,cataf001,,71,92,BX,meadb001,0,0,clayr001 doubles. ,clayr001,1,
+,21,8,,clayr001,cataf001,,72,96,FBBX,meadb001,1,0,,palmr001,1,P
+cataf001 scores. clayr001 scores. ,12,8,,,,,73,100,BFFX,meadb001,0,3,kaplg001 homers. ,kaplg001,1,
+,10,8,,,leder001,,75,2,BX,bottr001,0,0,leder001 triples. ,leder001,1,
+leder001 scores. ,10,8,,,,sierr001,76,4,BB,bottr001,0,1,Wild Pitch. ,sierr001,1,
+,32,8,,,,,77,10,BBFFBX,bottr001,1,0,,sierr001,1,F
+,01,9,,,,,78,23,CX,cordf002,1,0,,randj002,0,F
+,00,9,,,,,79,24,X,cordf002,1,0,quinm001 grounds out. ,quinm001,0,G
+,32,9,browd002,,,,80,31,BCBSBFB,cordf002,0,0,browd002 walks. ,browd002,0,
+,11,9,browd002,,,,81,34,BFX,cordf002,1,0,zaung001 grounds out. ,zaung001,0,G
+,10,9,,,,,82,12,BX,bottr001,1,0,,lambm001,1,P
+,12,9,,,,,84,16,CCBX,bottr001,1,0,valdp001 grounds out. ,valdp001,1,G
+,00,9,grees002,,,,85,17,X,bottr001,0,0,grees002 singles. ,grees002,1,
+grees002 to 2B. ,02,9,,grees002,,cataf001,86,20,CFB,bottr001,0,0,grees002 to 2B on defensive indifference. ,cataf001,1,
+,32,9,,grees002,,,87,26,CFBBBS,bottr001,1,0,cataf001 strikes out. ,cataf001,1,

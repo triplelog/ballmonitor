@@ -1,0 +1,161 @@
+version,2
+info,visteam,HOU
+info,hometeam,SDN
+info,site,SAN01
+info,date,2000/04/14
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,laynj901
+info,ump1b,monte901
+info,ump2b,randt901
+info,ump3b,barrt901
+info,pitches,pitches
+info,temp,66
+info,winddir,tocf
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,182
+info,attendance,30951
+info,wp,reyns001
+info,lp,boehb001
+info,save,
+start,biggc001,"Craig Biggio",0,1,4
+start,ceder001,"Roger Cedeno",0,2,8
+start,bagwj001,"Jeff Bagwell",0,3,3
+start,hidar001,"Richard Hidalgo",0,4,7
+start,aloum001,"Moises Alou",0,5,9
+start,spieb001,"Bill Spiers",0,6,5
+start,euset001,"Tony Eusebio",0,7,2
+start,bogat001,"Tim Bogar",0,8,6
+start,reyns001,"Shane Reynolds",0,9,1
+start,marta001,"Al Martin",1,1,7
+start,jackd003,"Damian Jackson",1,2,6
+start,klesr001,"Ryan Klesko",1,3,3
+start,nevip001,"Phil Nevin",1,4,5
+start,owene001,"Eric Owens",1,5,8
+start,boonb002,"Bret Boone",1,6,4
+start,newhd001,"David Newhan",1,7,9
+start,davib003,"Ben Davis",1,8,2
+start,boehb001,"Brian Boehringer",1,9,1
+play,1,0,biggc001,22,BCCBX,S
+play,1,0,ceder001,00,X,46(1)/FO
+play,1,0,bagwj001,00,X,7/F7
+play,1,0,hidar001,10,BB,CS2(26)
+play,1,1,marta001,12,FFBX,43/G
+play,1,1,jackd003,32,CCBFBBFFFX,S
+play,1,1,klesr001,01,FB,CS2(26)
+play,1,1,klesr001,11,FBX,S8/8S
+play,1,1,nevip001,00,X,S8.1-2
+play,1,1,owene001,11,CBB,WP.2-3
+play,1,1,owene001,21,CBBX,S7/7S.3-H;1-2
+play,1,1,boonb002,01,CX,46(1)/FO.2-3
+play,2,0,hidar001,02,CSX,2/FL
+play,2,0,aloum001,32,CBBCBFX,HR/8
+play,2,0,spieb001,32,BCBCFBB,W
+play,2,0,euset001,10,BX,S7.1-3
+play,2,0,bogat001,01,CX,9/SF.3-H
+play,2,0,reyns001,22,BSFBFFX,6(1)/FO/G
+play,2,1,newhd001,00,X,43/G
+play,2,1,davib003,12,CBSC,K/C
+play,2,1,boehb001,02,CSX,43/G
+play,3,0,biggc001,02,FSX,3/FL
+play,3,0,ceder001,10,BX,8/L8
+play,3,0,bagwj001,32,BBBCFB,W
+play,3,0,hidar001,00,X,S9.1-2
+play,3,0,aloum001,32,CBBBSS,K
+play,3,1,marta001,11,FBX,8/F8
+play,3,1,jackd003,31,CBBBX,D7
+play,3,1,klesr001,10,BX,43/G.2-3
+play,3,1,nevip001,21,BBCX,43/G
+play,4,0,spieb001,22,CBCBX,63/G
+play,4,0,euset001,02,FSX,8/F8
+play,4,0,bogat001,32,CFBFFBBX,53/G
+play,4,1,owene001,31,BBCBX,63/G
+play,4,1,boonb002,01,CX,S.B-2(E6/TH1)
+play,4,1,newhd001,32,CBCFBBFB,W
+play,4,1,davib003,22,CBFBC,K/C
+play,4,1,boehb001,10,BX,D9.2-H;1-H
+play,4,1,marta001,32,CSFBBBS,K
+play,5,0,reyns001,00,X,HR/78
+play,5,0,biggc001,11,BFX,S7
+play,5,0,ceder001,12,CCBX,S.1-2
+play,5,0,bagwj001,10,BX,64(1)3/GDP.2-3
+play,5,0,hidar001,11,BCX,43/G
+play,5,1,jackd003,02,FSX,S7
+play,5,1,klesr001,10,BX,64(1)3/GDP
+play,5,1,nevip001,21,BBSX,S8
+play,5,1,owene001,00,X,S8/8S.1-2
+play,5,1,boonb002,21,SBBX,4/L4
+play,6,0,aloum001,31,BBCBX,S7/7S
+play,6,0,spieb001,00,,NP
+sub,cunnw001,"Will Cunnane",1,9,1
+play,6,0,spieb001,10,BX,D/89D.1-H
+play,6,0,euset001,10,BX,S9/9S.2-H
+play,6,0,bogat001,11,BCX,8/F8
+play,6,0,reyns001,02,LLC,K/C
+play,6,0,biggc001,31,BBCBB,W.1-2
+play,6,0,ceder001,00,,NP
+sub,walkk001,"Kevin Walker",1,9,1
+play,6,0,ceder001,30,BBBB,W.2-3;1-2
+com,"Debut game for Kevin Walker"
+play,6,0,bagwj001,22,BFCBX,HR/9.3-H;2-H;1-H
+play,6,0,hidar001,32,FBSFBBX,7/FL
+play,6,1,newhd001,00,,NP
+sub,barkg001,"Glen Barker",0,5,9
+play,6,1,newhd001,00,,NP
+sub,cabrj001,"Jose Cabrera",0,9,1
+play,6,1,newhd001,10,BX,D8/8D
+play,6,1,davib003,12,BFFX,8/F8.2-3
+play,6,1,walkk001,00,,NP
+sub,roskj001,"John Roskos",1,9,11
+play,6,1,roskj001,00,X,63/G.3-H
+play,6,1,marta001,00,X,T9
+play,6,1,jackd003,32,CBSBBX,8/F8
+play,7,0,barkg001,00,,NP
+sub,walld002,"Donne Wall",1,9,1
+play,7,0,barkg001,02,SCX,63/G
+play,7,0,spieb001,32,BCBFBX,43/G
+play,7,0,euset001,22,CBSFBX,53/G
+play,7,1,klesr001,11,FBX,7/F7S
+play,7,1,nevip001,32,BBBCFFX,53/G
+play,7,1,owene001,00,X,43/G
+play,8,0,bogat001,01,FX,63/G
+play,8,0,cabrj001,00,,NP
+sub,miesm001,"Matt Mieske",0,9,11
+play,8,0,miesm001,30,BBBB,W
+play,8,0,biggc001,00,X,64(1)3/GDP
+play,8,1,boonb002,00,,NP
+sub,henrd002,"Doug Henry",0,9,1
+play,8,1,boonb002,01,CX,2/FL
+play,8,1,newhd001,12,FBSS,K
+play,8,1,davib003,01,FX,S8/8S
+play,8,1,walld002,00,,NP
+sub,sprae001,"Ed Sprague",1,9,11
+play,8,1,sprae001,10,BX,53/G
+play,9,0,ceder001,00,,NP
+sub,whism001,"Matt Whisenant",1,9,1
+play,9,0,ceder001,32,CBBFBFFB,W
+play,9,0,bagwj001,22,FCBFBS,K
+play,9,0,hidar001,10,BX,E4/TH.1-2
+play,9,0,barkg001,32,FBCBBFB,W.2-3;1-2
+play,9,0,spieb001,22,BBCCX,65(2)/FO.3-H(UR);1-2
+play,9,0,euset001,32,BBFFFFBFB,W.2-3;1-2
+play,9,0,bogat001,21,BCBX,64(1)/FO
+play,9,1,marta001,00,,NP
+sub,maddm002,"Mike Maddux",0,9,1
+play,9,1,marta001,01,SX,8/F8S
+play,9,1,jackd003,12,CBSS,K
+play,9,1,klesr001,12,CFBX,8/F8
+data,er,reyns001,3
+data,er,cabrj001,1
+data,er,henrd002,0
+data,er,maddm002,0
+data,er,boehb001,4
+data,er,cunnw001,3
+data,er,walkk001,2
+data,er,walld002,0
+data,er,whism001,0

@@ -1,0 +1,70 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,11,1,,,,,0,3,CBX,witaj001,1,0,grism001 grounds out. ,grism001,0,G
+,32,1,,,,,1,9,BBCFBX,witaj001,1,0,,lorem001,0,P
+,12,1,,,,,2,13,BSFC,witaj001,1,0,jenkg001 strikes out. ,jenkg001,0,
+,12,1,,,,,3,4,CSBX,rigdp001,1,0,jackd003 grounds out. ,jackd003,1,G
+,31,1,relad001,,,,4,9,BBBCB,rigdp001,0,0,relad001 walks. ,relad001,1,
+,22,1,,,,,5,14,BCSBX,rigdp001,2,0,Double Play. ,klesr001,1,
+,32,2,,,,,6,19,BFCBBS,witaj001,1,0,sexsr001 strikes out. ,sexsr001,0,
+,12,2,,,,,7,24,CFBFS,witaj001,1,0,burnj001 strikes out. ,burnj001,0,
+,20,2,houst001,,,,8,27,BBX,witaj001,0,0,houst001 singles. ,houst001,0,
+,32,2,houst001,,,,9,33,FBBBFX,witaj001,1,0,,bellr002,0,P
+,02,2,,,,,10,18,FFFS,rigdp001,1,0,nevip001 strikes out. ,nevip001,1,
+,32,2,,,,,11,24,BBBCSX,rigdp001,1,0,mabrj001 grounds out. ,mabrj001,1,G
+,22,2,,,,,12,29,CBCBX,rigdp001,1,0,,darrm001,1,F
+,32,3,casar001,,,,13,39,BBFFBB,witaj001,0,0,casar001 walks. ,casar001,0,
+casar001 to 2B. ,02,3,,casar001,,,14,42,SLX,witaj001,1,0,Sacrifice bunt by rigdp001.,rigdp001,0,
+,32,3,,casar001,,,15,50,BBBCFFFS,witaj001,1,0,grism001 strikes out. ,grism001,0,
+,10,3,,casar001,,,16,52,BX,witaj001,1,0,lorem001 grounds out. ,lorem001,0,G
+,32,3,,,,,17,37,FBBFFBFS,rigdp001,1,0,river002 strikes out. ,river002,1,
+,22,3,davib003,,,,18,42,CFBBX,rigdp001,0,0,davib003 singles. ,davib003,1,
+,01,3,davib003,,,,19,44,LX,rigdp001,1,0,,witaj001,1,P
+,01,3,davib003,,,,20,46,CX,rigdp001,1,0,,jackd003,1,P
+,00,4,,,,,21,53,X,witaj001,1,0,jenkg001 grounds out. ,jenkg001,0,G
+,32,4,sexsr001,,,,22,59,BBCBSX,witaj001,0,0,sexsr001 singles. ,sexsr001,0,
+sexsr001 to 3B. burnj001 to 2B. ,00,4,,burnj001,sexsr001,,23,60,X,witaj001,0,0,burnj001 reaches on error. ,burnj001,0,G
+,30,4,houst001,burnj001,sexsr001,,24,64,IIII,witaj001,0,0,houst001 intentionally walks. ,houst001,0,
+sexsr001 scores. burnj001 to 3B. houst001 out. ,02,4,bellr002,,burnj001,,25,67,FFX,witaj001,1,1,bellr002 reaches on fielder's choice. ,bellr002,0,
+,00,4,bellr002,,burnj001,,26,68,X,witaj001,1,0,casar001 grounds out. ,casar001,0,G
+,11,4,relad001,,,,27,49,FBX,rigdp001,0,0,relad001 singles. ,relad001,1,
+relad001 scores. ,00,4,,,,,28,50,X,rigdp001,0,2,klesr001 homers. ,klesr001,1,
+,32,4,,,,,29,60,CBBSFBFFFX,rigdp001,0,1,nevip001 homers. ,nevip001,1,
+,32,4,,,,,30,67,BBSFFBX,rigdp001,1,0,mabrj001 grounds out. ,mabrj001,1,G
+,00,4,,,,,31,68,X,rigdp001,1,0,,darrm001,1,F
+,32,4,river002,,,,32,75,BSBBFFB,rigdp001,0,0,river002 walks. ,river002,1,
+river002 to 2B. ,30,4,davib003,river002,,,33,79,BBBB,rigdp001,0,0,davib003 walks. ,davib003,1,
+,12,4,davib003,river002,,,34,83,FBSS,rigdp001,1,0,witaj001 strikes out. ,witaj001,1,
+,31,5,rigdp001,,,,35,73,BBBCB,witaj001,0,0,rigdp001 walks. ,rigdp001,0,
+,02,5,rigdp001,,,,36,76,FCS,witaj001,1,0,grism001 strikes out. ,grism001,0,
+,01,5,rigdp001,,,,37,78,CX,witaj001,1,0,,lorem001,0,P
+,02,5,rigdp001,,,,38,81,CFC,witaj001,1,0,jenkg001 strikes out. ,jenkg001,0,
+,21,5,,,,,39,87,BBCX,rigdp001,1,0,,jackd003,1,F
+,32,5,,,,,40,101,CBBCFFFBFFFFFX,rigdp001,1,0,,relad001,1,F
+,12,5,,,,,41,107,FBFFFS,rigdp001,1,0,klesr001 strikes out. ,klesr001,1,
+,32,6,,,,,42,87,BFFBBS,witaj001,1,0,sexsr001 strikes out. ,sexsr001,0,
+,31,6,burnj001,,,,43,92,BBBCB,witaj001,0,0,burnj001 walks. ,burnj001,0,
+,10,6,burnj001,,,,44,94,BX,witaj001,1,0,,houst001,0,F
+burnj001 to 2B. ,01,6,bellr002,burnj001,,,45,96,FX,witaj001,0,0,bellr002 singles. ,bellr002,0,
+,12,6,bellr002,burnj001,,,46,100,FFBC,witaj001,1,0,casar001 strikes out. ,casar001,0,
+,31,6,nevip001,,,,47,112,FBBBB,rigdp001,0,0,nevip001 walks. ,nevip001,1,
+,02,6,nevip001,,,,48,115,CFX,rigdp001,1,0,,mabrj001,1,F
+,00,6,nevip001,,,,49,116,X,rigdp001,1,0,,darrm001,1,F
+,32,6,nevip001,,,,50,122,BBBSFX,rigdp001,1,0,river002 grounds out. ,river002,1,G
+,22,7,,,,,54,105,BFCBS,witaj001,1,0,sweem001 strikes out. ,sweem001,0,
+,31,7,,,,,55,110,CBBBX,witaj001,1,0,grism001 grounds out. ,grism001,0,G
+,22,7,,,,,56,115,CSBBX,witaj001,1,0,,lorem001,0,F
+,32,7,,,,,58,6,BCFBBX,stule001,1,0,davib003 grounds out. ,davib003,1,G
+,10,7,witaj001,,,,59,8,BX,stule001,0,0,witaj001 singles. ,witaj001,1,
+,00,7,,,,,60,9,X,stule001,2,0,Double Play. ,jackd003,1,
+,00,8,,,,,61,116,X,witaj001,1,0,jenkg001 grounds out. ,jenkg001,0,G
+,12,8,,,,,62,120,FFBS,witaj001,1,0,sexsr001 strikes out. ,sexsr001,0,
+,32,8,burnj001,,,,63,128,CCBBFFBB,witaj001,0,0,burnj001 walks. ,burnj001,0,
+,10,8,burnj001,,,,66,2,BX,walkk001,1,0,hayec001 grounds out. ,hayec001,0,G
+,31,8,relad001,,,,68,14,CBBBB,stule001,0,0,relad001 walks. ,relad001,1,
+relad001 out. ,00,8,klesr001,,,,69,15,X,stule001,1,0,klesr001 reaches on fielder's choice. ,klesr001,1,
+,11,8,,klesr001,,nevip001,70,18,FBS,stule001,0,0,klesr001 steals 2B. ,nevip001,1,
+,12,8,,klesr001,,,71,22,FBSX,stule001,1,0,nevip001 grounds out. ,nevip001,1,G
+,02,8,,klesr001,,,72,25,SSX,stule001,1,0,,dehak001,1,P
+,12,9,,,,,74,4,CBFS,hofft001,1,0,bellr002 strikes out. ,bellr002,0,
+,02,9,,,,,75,7,CFC,hofft001,1,0,casar001 strikes out. ,casar001,0,
+,21,9,,,,,77,11,BBFX,hofft001,1,0,,echea001,0,F

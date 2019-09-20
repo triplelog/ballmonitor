@@ -1,0 +1,193 @@
+version,2
+info,visteam,DET
+info,hometeam,MIN
+info,site,MIN03
+info,date,2000/05/05
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,kulpr901
+info,ump1b,herna901
+info,ump2b,timmt901
+info,ump3b,fostm901
+info,pitches,pitches
+info,temp,72
+info,winddir,unknown
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,224
+info,attendance,11500
+info,wp,pattd001
+info,lp,carrh001
+info,save,jonet003
+start,polol001,"Luis Polonia",0,1,9
+start,ausmb001,"Brad Ausmus",0,2,2
+start,encaj001,"Juan Encarnacion",0,3,8
+start,gonzj002,"Juan Gonzalez",0,4,10
+start,higgb001,"Bobby Higginson",0,5,7
+start,easld001,"Damion Easley",0,6,4
+start,jeffg001,"Gregg Jefferies",0,7,5
+start,clart002,"Tony Clark",0,8,3
+start,cruzd001,"Deivi Cruz",0,9,6
+start,nomoh001,"Hideo Nomo",0,0,1
+start,guzmc001,"Cristian Guzman",1,1,6
+start,canij001,"Jay Canizaro",1,2,4
+start,lawtm002,"Matt Lawton",1,3,9
+start,coomr001,"Ron Coomer",1,4,3
+start,cummm001,"Midre Cummings",1,5,10
+start,koskc001,"Corey Koskie",1,6,5
+start,lecrm001,"Matt LeCroy",1,7,2
+start,jonej003,"Jacque Jones",1,8,7
+start,huntt001,"Torii Hunter",1,9,8
+start,bergs001,"Sean Bergman",1,0,1
+play,1,0,polol001,12,BFFX,7/F7
+play,1,0,ausmb001,31,BBBCX,3/FL
+play,1,0,encaj001,11,CBX,43/G
+play,1,1,guzmc001,01,CX,63/G
+play,1,1,canij001,20,BBX,D9/9D
+play,1,1,lawtm002,32,BCBBFB,W
+play,1,1,coomr001,02,CCX,S9.2-H;1-3
+play,1,1,cummm001,12,SFBX,46(1)3/GDP
+play,2,0,gonzj002,01,CX,7/F7
+play,2,0,higgb001,21,CBBX,8/F8D
+play,2,0,easld001,31,BFBBB,W
+play,2,0,jeffg001,32,CBFBBS,K
+play,2,1,koskc001,00,X,7/L7
+play,2,1,lecrm001,11,BFX,HR/7
+play,2,1,jonej003,11,BCX,3/P3
+play,2,1,huntt001,02,SFC,K/C
+play,3,0,clart002,30,BBBB,W
+play,3,0,cruzd001,21,BBCX,8/F8
+play,3,0,polol001,11,SBX,S9/9S.1-2
+play,3,0,ausmb001,21,BBSX,9/F9
+play,3,0,encaj001,10,BX,64(1)/FO.2-3
+play,3,1,guzmc001,12,BFSX,S7
+play,3,1,canij001,11,FBX,64(1)/FO
+play,3,1,lawtm002,11,BFX,7/F7
+play,3,1,coomr001,11,BFB,WP.1-2
+play,3,1,coomr001,21,BFBX,S/78.2-H
+play,3,1,cummm001,02,CSX,5/FL
+play,4,0,gonzj002,00,X,E5/TH1
+play,4,0,higgb001,11,BFX,HR/9.1-H(UR)
+play,4,0,easld001,30,BBBB,W
+play,4,0,jeffg001,01,CX,S9.1-2
+play,4,0,clart002,21,BBSX,7/FDP.2X3(75);1-2
+play,4,0,cruzd001,01,CX,63/G
+play,4,1,koskc001,00,X,D9
+play,4,1,lecrm001,01,CB,WP.2-3
+play,4,1,lecrm001,21,CBBX,43/G.3-H
+play,4,1,jonej003,12,CSBX,31/G
+play,4,1,huntt001,00,X,53/G
+play,5,0,polol001,21,CBBX,S8
+play,5,0,ausmb001,01,FC,SB2
+play,5,0,ausmb001,02,FCX,3/L3
+play,5,0,encaj001,00,X,43/G.2-3
+play,5,0,gonzj002,10,BX,8/F8D
+play,5,1,guzmc001,30,BBBB,W
+play,5,1,canij001,01,FB,CS2(24)
+play,5,1,canij001,12,FBCS,K23
+play,5,1,lawtm002,31,BBFBB,W
+play,5,1,coomr001,00,X,13/G
+play,6,0,higgb001,32,BBBCFB,W
+play,6,0,easld001,11,BCB,SB2
+play,6,0,easld001,22,BCBFX,63/G.2-3
+play,6,0,jeffg001,12,BCSX,8/SF.3-H
+play,6,0,clart002,11,BFX,S8/8S
+play,6,0,cruzd001,00,,NP
+sub,carrh001,"Hector Carrasco",1,0,1
+play,6,0,cruzd001,00,X,S7.1-2
+play,6,0,polol001,01,CX,D/78.2-H;1-3
+play,6,0,ausmb001,22,BBCFX,53/G
+play,6,1,cummm001,12,CCBH,HP
+play,6,1,koskc001,31,BCBBB,W.1-2
+play,6,1,lecrm001,12,FFBS,K
+play,6,1,jonej003,01,CX,HR/8.2-H;1-H
+play,6,1,huntt001,00,,NP
+sub,pattd001,"Danny Patterson",0,0,1
+play,6,1,huntt001,12,BSFFFS,K
+play,6,1,guzmc001,10,BX,S8
+play,6,1,canij001,00,X,163/G
+play,7,0,encaj001,02,FFX,S8/8S
+play,7,0,gonzj002,21,BBFX,S7.1-2
+play,7,0,higgb001,02,CCX,C/E2.2-3;1-2
+play,7,0,easld001,12,CSBS,K
+play,7,0,jeffg001,22,BSSBFFX,3/G.3-H;2-3;1-2
+play,7,0,clart002,32,BBSFBB,W
+play,7,0,cruzd001,10,BB,WP.3-H;2-3
+play,7,0,cruzd001,00,,NP
+sub,millt001,"Travis Miller",1,0,1
+play,7,0,cruzd001,22,BBCSFX,S9.3-H(UR);1-3
+play,7,0,polol001,00,,NP
+sub,magew001,"Wendell Magee",0,1,11
+play,7,0,magew001,32,BBCSBFFX,S8.3-H;1-3
+play,7,0,ausmb001,32,BBBCFX,S8.3-H;1-3
+play,7,0,encaj001,20,BBX,8/F8
+play,7,1,lawtm002,00,,NP
+sub,magew001,"Wendell Magee",0,1,9
+play,7,1,lawtm002,00,,NP
+sub,halts001,"Shane Halter",0,7,5
+play,7,1,lawtm002,31,FBBBX,D/78
+play,7,1,coomr001,21,CBBX,S9.2-3
+play,7,1,cummm001,00,,NP
+sub,poolj001,"Jim Poole",0,0,1
+play,7,1,cummm001,00,,NP
+sub,huskb001,"Butch Huskey",1,5,11
+play,7,1,huskb001,01,CX,46(1)/FO.3-H
+play,7,1,koskc001,00,X,7/F7
+play,7,1,lecrm001,00,,NP
+sub,andem002,"Matt Anderson",0,0,1
+play,7,1,lecrm001,00,,NP
+sub,ortid001,"David Ortiz",1,7,11
+play,7,1,ortid001,30,BBBB,W.1-2
+play,7,1,jonej003,12,CSFBS,K
+play,8,0,gonzj002,00,,NP
+sub,jensm001,"Marcus Jensen",1,7,2
+play,8,0,gonzj002,00,,NP
+sub,santj003,"Johan Santana",1,0,1
+play,8,0,gonzj002,31,CBBBX,D9/9D
+play,8,0,higgb001,00,X,1/G.2-3
+play,8,0,easld001,32,BCFBBFB,W
+play,8,0,halts001,00,X,9/F9.1-2
+play,8,0,clart002,00,,NP
+sub,fickr001,"Robert Fick",0,8,11
+play,8,0,fickr001,30,BBBB,W
+play,8,0,cruzd001,32,SBBFBX,2/FL
+play,8,1,huntt001,00,,NP
+sub,fickr001,"Robert Fick",0,8,3
+play,8,1,huntt001,00,,NP
+sub,macij001,"Jose Macias",0,6,4
+play,8,1,huntt001,00,,NP
+sub,brocd001,"Doug Brocail",0,0,1
+play,8,1,huntt001,00,,NP
+sub,hockd001,"Denny Hocking",1,9,11
+play,8,1,hockd001,31,BBBCX,53/G
+play,8,1,guzmc001,00,X,T/89D
+play,8,1,canij001,32,BSSFBBS,K
+play,8,1,lawtm002,01,CX,3/G
+play,9,0,magew001,00,,NP
+sub,hockd001,"Denny Hocking",1,9,8
+play,9,0,magew001,12,CBCS,K
+play,9,0,ausmb001,32,CSBBBB,W
+play,9,0,encaj001,12,SSBS,K
+play,9,0,gonzj002,22,SFBFBX,D9/9D.1-H
+play,9,0,higgb001,11,BFB,WP.2-3
+play,9,0,higgb001,31,BFBBB,W
+play,9,0,macij001,32,SBSBBFFX,9/F9
+play,9,1,coomr001,00,,NP
+sub,jonet003,"Todd Jones",0,0,1
+play,9,1,coomr001,32,FBFBBX,53/G
+play,9,1,huskb001,22,BCFBX,31/G
+play,9,1,koskc001,22,BCBCS,K
+data,er,nomoh001,7
+data,er,pattd001,1
+data,er,poolj001,0
+data,er,andem002,0
+data,er,brocd001,0
+data,er,jonet003,0
+data,er,bergs001,3
+data,er,carrh001,3
+data,er,millt001,1
+data,er,santj003,1

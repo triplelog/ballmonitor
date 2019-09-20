@@ -1,0 +1,150 @@
+version,2
+info,visteam,MIN
+info,hometeam,HOU
+info,site,HOU03
+info,date,2000/06/05
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,rapue901
+info,ump1b,shulj901
+info,ump2b,millb901
+info,ump3b,rungb901
+info,pitches,pitches
+info,temp,72
+info,winddir,torf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,169
+info,attendance,35577
+info,wp,elars001
+info,lp,radkb001
+info,save,
+start,canij001,"Jay Canizaro",0,1,4
+start,guzmc001,"Cristian Guzman",0,2,6
+start,lawtm002,"Matt Lawton",0,3,7
+start,coomr001,"Ron Coomer",0,4,3
+start,koskc001,"Corey Koskie",0,5,5
+start,huskb001,"Butch Huskey",0,6,9
+start,jonej003,"Jacque Jones",0,7,8
+start,lecrm001,"Matt LeCroy",0,8,2
+start,radkb001,"Brad Radke",0,9,1
+start,spieb001,"Bill Spiers",1,1,6
+start,biggc001,"Craig Biggio",1,2,4
+start,bagwj001,"Jeff Bagwell",1,3,3
+start,camik001,"Ken Caminiti",1,4,5
+start,hidar001,"Richard Hidalgo",1,5,8
+start,berkl001,"Lance Berkman",1,6,9
+start,wardd002,"Daryle Ward",1,7,7
+start,melum001,"Mitch Meluskey",1,8,2
+start,elars001,"Scott Elarton",1,9,1
+play,1,0,canij001,10,BX,7/F7
+play,1,0,guzmc001,12,CCFBX,53/G
+play,1,0,lawtm002,10,BX,8/F8
+play,1,1,spieb001,22,CBSBFX,3/FL
+play,1,1,biggc001,11,CBX,E1/G
+play,1,1,bagwj001,10,BX,63/G.1-2
+play,1,1,camik001,32,BBSSFBX,9/F9
+play,2,0,coomr001,10,BX,D9
+play,2,0,koskc001,22,CBBFX,S.2-3
+play,2,0,huskb001,32,BFBBFX,43/G.3-H;1-2
+play,2,0,jonej003,10,BX,8/F8
+play,2,0,lecrm001,31,CBBBB,W
+play,2,0,radkb001,12,CSBS,K
+play,2,1,hidar001,02,CFX,D7
+play,2,1,berkl001,32,BSCFFBFFFBX,9/F9
+play,2,1,wardd002,11,BCX,8/F8S
+play,2,1,melum001,02,CCS,K
+com,"$the roof was opened"
+play,3,0,canij001,02,CCFX,8/L8
+play,3,0,guzmc001,31,BBCBX,5/FL
+play,3,0,lawtm002,12,FFFBX,S7
+play,3,0,coomr001,12,CBFS,K
+play,3,1,elars001,10,BX,S8
+play,3,1,spieb001,11,BSX,16(1)3/GDP
+play,3,1,biggc001,22,BBCCX,9/F9D
+play,4,0,koskc001,01,FX,63/G
+play,4,0,huskb001,32,SBSBBB,W
+play,4,0,jonej003,01,FX,46(1)3/GDP
+play,4,1,bagwj001,32,FCBBBS,K
+play,4,1,camik001,11,BCX,S8
+play,4,1,hidar001,10,BX,64(1)3/GDP
+play,5,0,lecrm001,00,X,HR/78
+play,5,0,radkb001,12,SSBC,K/C
+play,5,0,canij001,11,CBX,S7/7S
+play,5,0,guzmc001,00,X,S9/9S.1-2
+play,5,0,lawtm002,32,CCBBBS,K+CS3(25)/DP
+play,5,1,berkl001,32,BBBCCFX,D9
+play,5,1,wardd002,01,FX,HR/8.2-H
+play,5,1,melum001,11,FBX,31/G
+play,5,1,elars001,21,FBBX,8/F8
+play,5,1,spieb001,20,BBX,7/F7
+play,6,0,coomr001,12,BFFC,K/C
+play,6,0,koskc001,01,CX,S9
+play,6,0,huskb001,00,X,64(1)3/GDP
+play,6,1,biggc001,22,BFBSX,S8
+play,6,1,bagwj001,12,BCFFX,HR/9.1-H
+play,6,1,camik001,32,BFBBFS,K
+play,6,1,hidar001,12,CCBFFX,8/F8D
+play,6,1,berkl001,01,FX,3/G
+play,7,0,jonej003,22,FCFBBX,D7
+play,7,0,lecrm001,10,BX,3/FL
+play,7,0,radkb001,00,,NP
+sub,ortid001,"David Ortiz",0,9,11
+play,7,0,ortid001,32,BBBSCFS,K
+play,7,0,canij001,11,BSX,43/G
+play,7,1,wardd002,00,,NP
+sub,millt001,"Travis Miller",0,9,1
+play,7,1,wardd002,01,SX,9/F9
+play,7,1,melum001,01,CX,S8
+play,7,1,elars001,00,,NP
+sub,miesm001,"Matt Mieske",1,9,11
+play,7,1,miesm001,00,X,9/F9.1-2
+play,7,1,spieb001,21,BCBX,43/G
+play,8,0,guzmc001,00,,NP
+sub,barkg001,"Glen Barker",1,9,9
+play,8,0,guzmc001,00,,NP
+sub,berkl001,"Lance Berkman",1,6,7
+play,8,0,guzmc001,00,,NP
+sub,powej001,"Jay Powell",1,7,1
+play,8,0,guzmc001,02,CSS,K
+play,8,0,lawtm002,00,X,43/G
+play,8,0,coomr001,12,CCBC,K/C
+play,8,1,biggc001,00,,NP
+sub,carrh001,"Hector Carrasco",0,9,1
+play,8,1,biggc001,11,CBX,E6/TH1
+play,8,1,bagwj001,10,BB,WP.1-2
+play,8,1,bagwj001,31,BBBCB,W
+play,8,1,camik001,00,X,S9.2-3;1-2
+play,8,1,hidar001,00,X,9/SF.3-H(UR);2-3;1-2
+play,8,1,berkl001,12,SBFX,D9.3-H;2-H
+play,8,1,powej001,00,,NP
+sub,lugoj001,"Julio Lugo",1,7,11
+play,8,1,lugoj001,12,BFCFX,D7.2-H
+play,8,1,melum001,01,SX,9/F9
+play,8,1,barkg001,00,H,HP
+play,8,1,spieb001,00,X,43/G
+play,9,0,koskc001,00,,NP
+sub,bogat001,"Tim Bogar",1,4,6
+play,9,0,koskc001,00,,NP
+sub,spieb001,"Bill Spiers",1,1,5
+play,9,0,koskc001,00,,NP
+sub,hockd001,"Denny Hocking",0,5,11
+play,9,0,hockd001,00,,NP
+sub,wagnb001,"Billy Wagner",1,7,1
+play,9,0,hockd001,32,BBCCBFB,W
+play,9,0,huskb001,02,CSB,WP.1-2
+play,9,0,huskb001,12,CSBX,8/F8.2-3
+play,9,0,jonej003,00,,NP
+sub,maxwj001,"Jason Maxwell",0,7,11
+play,9,0,maxwj001,02,SCS,K
+play,9,0,lecrm001,32,BBFSFBFX,8/F8
+data,er,radkb001,4
+data,er,millt001,0
+data,er,carrh001,3
+data,er,elars001,2
+data,er,powej001,0
+data,er,wagnb001,0

@@ -1,0 +1,125 @@
+version,2
+info,visteam,CLE
+info,hometeam,MIN
+info,site,MIN03
+info,date,2000/07/21
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,reedr901
+info,ump1b,wendh902
+info,ump2b,clara901
+info,ump3b,buckc901
+info,pitches,pitches
+info,temp,72
+info,winddir,tolf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,164
+info,attendance,19231
+info,wp,redmm002
+info,lp,colob001
+info,save,hawkl001
+start,loftk001,"Kenny Lofton",0,1,8
+start,vizqo001,"Omar Vizquel",0,2,6
+start,thomj002,"Jim Thome",0,3,3
+start,ramim002,"Manny Ramirez",0,4,10
+start,frymt001,"Travis Fryman",0,5,5
+start,sexsr001,"Richie Sexson",0,6,7
+start,ramia002,"Alex Ramirez",0,7,9
+start,diaze002,"Einar Diaz",0,8,2
+start,cabrj002,"Jolbert Cabrera",0,9,4
+start,colob001,"Bartolo Colon",0,0,1
+start,guzmc001,"Cristian Guzman",1,1,6
+start,hockd001,"Denny Hocking",1,2,4
+start,lawtm002,"Matt Lawton",1,3,7
+start,coomr001,"Ron Coomer",1,4,3
+start,ortid001,"David Ortiz",1,5,10
+start,koskc001,"Corey Koskie",1,6,5
+start,allec001,"Chad Allen",1,7,9
+start,jonej003,"Jacque Jones",1,8,8
+start,moelc001,"Chad Moeller",1,9,2
+start,redmm002,"Mark Redman",1,0,1
+com,"$Mgr Tom Kelly away with sick father and Coach Ron Gardenhire"
+com,"in charge;"
+com,"Roberto Alomar out with a sore left ankle"
+play,1,0,loftk001,12,CCBFC,K/C
+play,1,0,vizqo001,01,CX,S8
+play,1,0,thomj002,10,BX,7/F7
+play,1,0,ramim002,22,CBCFBC,K/C
+play,1,1,guzmc001,02,FCX,3/G
+play,1,1,hockd001,31,BCBBB,W
+play,1,1,lawtm002,30,BBBX,S9.1-2
+play,1,1,coomr001,01,CX,64(1)3/GDP
+play,2,0,frymt001,00,X,S7
+play,2,0,sexsr001,02,CSC,K/C
+play,2,0,ramia002,12,BSFX,6/P6
+play,2,0,diaze002,00,X,9/F9
+play,2,1,ortid001,12,CBCX,31/G
+play,2,1,koskc001,12,BSCS,K
+play,2,1,allec001,20,BBX,63/G
+play,3,0,cabrj002,10,BX,D7
+play,3,0,loftk001,11,BLX,13/SH.2-3
+play,3,0,vizqo001,12,CBFS,K
+play,3,0,thomj002,12,SBCS,K
+play,3,1,jonej003,32,CBBBCB,W
+play,3,1,moelc001,22,BFSFBX,4(B)3(1)/LDP
+play,3,1,guzmc001,01,CX,S8
+play,3,1,hockd001,21,BCBX,7/F7
+play,4,0,ramim002,20,BBX,8/F8
+play,4,0,frymt001,00,X,S8
+play,4,0,sexsr001,11,BFX,8/F8
+play,4,0,ramia002,22,BSSBX,6/P6
+play,4,1,lawtm002,22,BSBCX,D9
+play,4,1,coomr001,20,BBX,3/G.2-3
+play,4,1,ortid001,21,BCBX,S7.3-H
+play,4,1,koskc001,30,BBBX,5/FL
+play,4,1,allec001,12,CCBC,K/C
+play,5,0,diaze002,12,CBCX,8/F8D
+play,5,0,cabrj002,02,CCX,53/G
+play,5,0,loftk001,22,CBBCX,7/F7S
+play,5,1,jonej003,22,BCBCX,43/G
+play,5,1,moelc001,31,BBBCB,W
+play,5,1,guzmc001,10,BX,8/F8
+play,5,1,hockd001,10,BX,S9.1-2
+play,5,1,lawtm002,00,X,43/G
+play,6,0,vizqo001,22,FBCFBX,63/G
+play,6,0,thomj002,00,X,S8
+play,6,0,ramim002,00,X,8/F8D
+play,6,0,frymt001,21,BFBX,9/F9
+play,6,1,coomr001,22,BBCFS,K
+play,6,1,ortid001,21,CBBX,S/78
+play,6,1,koskc001,10,BX,D9.1-H;B-3(THH)
+play,6,1,allec001,00,X,3/L3
+play,6,1,jonej003,30,IIII,IW
+play,6,1,moelc001,21,BBFX,9/L9
+play,7,0,sexsr001,31,BSBBB,W
+play,7,0,ramia002,01,SX,4/P4
+play,7,0,diaze002,21,BCBX,6(1)3/GDP
+play,7,1,guzmc001,10,BX,7/F7D
+play,7,1,hockd001,22,BFCFBX,3/G
+play,7,1,lawtm002,22,FBBFX,4/P4
+play,8,0,cabrj002,00,X,8/F8
+play,8,0,loftk001,21,BSBX,8/F8
+play,8,0,vizqo001,00,X,9/F9
+play,8,1,coomr001,10,BX,S
+play,8,1,ortid001,00,X,7/F7
+play,8,1,koskc001,32,CCBBBFB,W.1-2
+play,8,1,allec001,02,FCC,K/C
+play,8,1,jonej003,12,CBSX,63/G
+play,9,0,thomj002,02,CSC,K/C
+play,9,0,ramim002,22,FFBBX,HR/8
+play,9,0,frymt001,00,,NP
+sub,hawkl001,"LaTroy Hawkins",1,0,1
+play,9,0,frymt001,01,CX,S8
+play,9,0,sexsr001,32,SFBBBX,D9.1-3
+play,9,0,ramia002,10,BX,FC6.3XH(62);B-1#
+play,9,0,diaze002,00,,NP
+sub,branr001,"Russell Branyan",0,8,11
+play,9,0,branr001,22,SBBFS,K
+data,er,colob001,2
+data,er,redmm002,1
+data,er,hawkl001,0

@@ -1,0 +1,170 @@
+version,2
+info,visteam,KCA
+info,hometeam,BOS
+info,site,BOS07
+info,date,2000/06/01
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,crawj901
+info,ump1b,dimum901
+info,ump2b,gormb901
+info,ump3b,everm901
+info,pitches,pitches
+info,temp,89
+info,winddir,ltor
+info,windspeed,13
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,212
+info,attendance,32661
+info,wp,santj002
+info,lp,lowed001
+info,save,reicd001
+start,damoj001,"Johnny Damon",0,1,7
+start,reboj001,"Jeff Reboulet",0,2,4
+start,sweem002,"Mike Sweeney",0,3,10
+start,dye-j001,"Jermaine Dye",0,4,9
+start,beltc001,"Carlos Beltran",0,5,8
+start,randj002,"Joe Randa",0,6,5
+start,mccad001,"David McCarty",0,7,3
+start,zaung001,"Gregg Zaun",0,8,2
+start,sancr001,"Rey Sanchez",0,9,6
+start,fussc001,"Chris Fussell",0,0,1
+start,fryej001,"Jeff Frye",1,1,4
+start,nixot001,"Trot Nixon",1,2,9
+start,daubb001,"Brian Daubach",1,3,3
+start,garcn001,"Nomar Garciaparra",1,4,6
+start,everc001,"Carl Everett",1,5,8
+start,stanm002,"Mike Stanley",1,6,10
+start,oleat001,"Troy O'Leary",1,7,7
+start,varij001,"Jason Varitek",1,8,2
+start,veraw001,"Wilton Veras",1,9,5
+start,martr002,"Ramon Martinez",1,0,1
+play,1,0,damoj001,21,BCBX,8/F8
+play,1,0,reboj001,12,BSCC,K/C
+play,1,0,sweem002,32,CBFFBBX,D7/7D
+play,1,0,dye-j001,12,CBFS,K
+play,1,1,fryej001,22,BBCFX,63/G
+play,1,1,nixot001,10,BX,7/F7
+play,1,1,daubb001,10,BX,43/G
+play,2,0,beltc001,00,X,43/G
+play,2,0,randj002,01,CX,E6/TH1.B-2
+play,2,0,mccad001,32,BSBCFBFX,S7/7S.2-3
+play,2,0,zaung001,12,CBFS,K
+play,2,0,sancr001,02,CSB,CSH(262)
+play,2,1,garcn001,12,CFBX,63/G
+play,2,1,everc001,02,FSS,K
+play,2,1,stanm002,01,CX,53/G
+play,3,0,sancr001,10,BX,E5/G
+play,3,0,damoj001,01,CX,S7/7S.1-2
+play,3,0,reboj001,00,X,53/SH.2-3;1-2
+play,3,0,sweem002,12,BFFX,53/G.3-H(UR);2-3
+play,3,0,dye-j001,22,BCSBX,3/FL
+play,3,1,oleat001,22,BCCBX,S7
+play,3,1,varij001,00,B,PB.1-2
+play,3,1,varij001,10,BX,S8.2-3
+play,3,1,veraw001,00,X,8/SF.3-H;1-2
+play,3,1,fryej001,32,BCBCBX,S8.2-3
+play,3,1,nixot001,10,BX,36(1)/FO.3-H
+play,3,1,daubb001,30,BBBB,W.1-2
+play,3,1,garcn001,31,BBBCB,W.2-3;1-2
+play,3,1,everc001,11,BFX,HR/9.3-H;2-H;1-H
+play,3,1,stanm002,11,BFX,53/G
+play,4,0,beltc001,00,X,S9/9S
+play,4,0,randj002,01,CX,S9/9S.1-3
+play,4,0,mccad001,22,CBBFFX,64(1)3/GDP.3-H
+play,4,0,zaung001,12,CBFX,63/G
+play,4,1,oleat001,00,X,5/P5
+play,4,1,varij001,30,BBBB,W
+play,4,1,veraw001,02,CCX,S8.1-2
+play,4,1,fryej001,12,BCFC,K/C
+play,4,1,nixot001,20,BBX,8/F8D
+play,5,0,sancr001,32,CFBBBS,K
+play,5,0,damoj001,02,FSFX,S
+play,5,0,reboj001,00,B,CS2(26)
+play,5,0,reboj001,31,BSBBB,W
+play,5,0,sweem002,10,BX,S7.1-2
+play,5,0,dye-j001,10,BX,8/L8
+play,5,1,daubb001,30,BBBB,W
+play,5,1,garcn001,21,FBBX,HR/7.1-H
+play,5,1,everc001,20,BBX,5/FL
+play,5,1,stanm002,12,BFFS,K
+play,5,1,oleat001,10,BX,9/F9D
+play,6,0,beltc001,11,CBX,S8
+play,6,0,randj002,32,BFFBBFX,S9/9S.1-2
+play,6,0,mccad001,00,,NP
+sub,garcr001,"Rich Garces",1,0,1
+play,6,0,mccad001,10,BX,S7/7S.2-3;1-2
+play,6,0,zaung001,00,X,S8.3-H;2-3;1-2
+play,6,0,sancr001,00,,NP
+sub,quinm001,"Mark Quinn",0,9,11
+play,6,0,quinm001,12,BCSS,K
+play,6,0,damoj001,11,FBX,S9.3-H;2-3;1-2
+play,6,0,reboj001,00,,NP
+sub,cormr001,"Rheal Cormier",1,0,1
+play,6,0,reboj001,11,CBX,D7.3-H;2-H;1-3
+play,6,0,sweem002,10,BX,63/G.3-H
+play,6,0,dye-j001,11,FBX,E5/G.2-H(UR)
+play,6,0,beltc001,00,X,S8.1-H(E8/TH)(UR);B-2(TH)
+play,6,0,randj002,30,BBBB,W
+play,6,0,mccad001,00,X,S8.2-H(UR);1-2
+play,6,0,zaung001,00,,NP
+sub,waket001,"Tim Wakefield",1,0,1
+play,6,0,zaung001,01,CX,S9.2-H(UR);1-3;BX2(9463)
+play,6,1,varij001,00,,NP
+sub,ordal001,"Luis Ordaz",0,9,6
+play,6,1,varij001,00,,NP
+sub,bottr001,"Ricky Bottalico",0,0,1
+play,6,1,varij001,22,CBBFX,T9
+play,6,1,veraw001,01,CX,8/SF.3-H
+play,6,1,fryej001,31,CBBBB,W
+play,6,1,nixot001,21,BFBX,8/F8
+play,6,1,daubb001,32,SSBBFFBFFB,W.1-2
+play,6,1,garcn001,32,BBFFBFX,D7.2-H;1-H
+play,6,1,everc001,00,,NP
+sub,santj002,"Jose Santiago",0,0,1
+play,6,1,everc001,00,X,S.2-3
+play,6,1,stanm002,31,BCBBB,W.1-2
+play,6,1,oleat001,00,X,31/G
+play,7,0,ordal001,22,BCSFBS,K
+play,7,0,damoj001,22,CBFFFFBX,7/F7
+play,7,0,reboj001,32,BBCCBS,K
+play,7,1,varij001,00,X,43/G
+play,7,1,veraw001,22,CBBFFFX,53/G
+play,7,1,fryej001,32,BBFFBX,S7/7S
+play,7,1,nixot001,10,BX,D9.1XH(942)
+play,8,0,sweem002,00,,NP
+sub,lowed001,"Derek Lowe",1,0,1
+play,8,0,sweem002,00,X,S7
+play,8,0,dye-j001,32,BBBCFX,9/F9
+play,8,0,beltc001,01,CX,64(1)/FO
+play,8,0,randj002,01,CX,S7/7S.1-2
+play,8,0,mccad001,32,CSBBBX,T9.2-H;1-H
+play,8,0,zaung001,22,CBFBFX,8/F8
+play,8,1,daubb001,00,,NP
+sub,reicd001,"Dan Reichert",0,0,1
+play,8,1,daubb001,00,X,7/F7
+play,8,1,garcn001,12,CCBFX,S9/9S
+play,8,1,everc001,11,BFX,36(1)3/GDP
+play,9,0,ordal001,00,,NP
+sub,wasdj001,"John Wasdin",1,0,1
+play,9,0,ordal001,11,CBX,9/F9
+play,9,0,damoj001,22,FSBBS,K
+play,9,0,reboj001,00,X,43/G
+play,9,1,stanm002,10,BX,8/F8
+play,9,1,oleat001,30,BBBB,W
+play,9,1,varij001,22,BBCSS,K
+play,9,1,veraw001,00,X,1/G
+data,er,fussc001,8
+data,er,bottr001,3
+data,er,santj002,0
+data,er,reicd001,0
+data,er,martr002,3
+data,er,garcr001,3
+data,er,cormr001,0
+data,er,waket001,0
+data,er,lowed001,2
+data,er,wasdj001,0

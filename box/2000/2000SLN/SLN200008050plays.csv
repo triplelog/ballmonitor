@@ -1,0 +1,76 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,02,1,,,,,0,3,CCC,stepg001,1,0,furcr001 strikes out. ,furcr001,0,
+,00,1,,,,,1,4,X,stepg001,1,0,,jonea002,0,F
+,22,1,,,,,2,9,BBSFS,stepg001,1,0,surhb001 strikes out. ,surhb001,0,
+,01,1,vinaf001,,,,3,2,CX,burkj001,0,0,vinaf001 singles. ,vinaf001,1,
+,01,1,,vinaf001,,rente001,4,4,CB,burkj001,0,0,vinaf001 steals 2B. ,rente001,1,
+vinaf001 to 3B. ,11,1,,,vinaf001,,5,7,CBX,burkj001,1,0,Sacrifice bunt by rente001.,rente001,1,
+vinaf001 scores. ,32,1,,edmoj001,,,6,13,BBSBFX,burkj001,0,1,edmoj001 doubles. ,edmoj001,1,
+edmoj001 scores. ,00,1,,,,,7,14,X,burkj001,0,2,clarw001 homers. ,clarw001,1,
+,00,1,lankr001,,,,8,15,X,burkj001,0,0,lankr001 singles. ,lankr001,1,
+,22,1,,,,tatif001,9,20,BCCBB,burkj001,1,0,lankr001 caught stealing. ,tatif001,1,
+,32,1,tatif001,,,,10,26,BCCBBB,burkj001,0,0,tatif001 walks. ,tatif001,1,
+tatif001 to 2B. ,31,1,drewj001,tatif001,,,11,31,BFBBB,burkj001,0,0,drewj001 walks. ,drewj001,1,
+,02,1,drewj001,tatif001,,,12,34,FCS,burkj001,1,0,mathm001 strikes out. ,mathm001,1,
+,00,2,,,,,13,10,X,stepg001,1,0,jordb001 grounds out. ,jordb001,0,G
+,22,2,,,,,14,15,CBBSC,stepg001,1,0,galaa001 strikes out. ,galaa001,0,
+,00,2,,,,,15,16,X,stepg001,1,0,lopej001 grounds out. ,lopej001,0,G
+,11,2,,,,,16,37,CBX,burkj001,1,0,stepg001 grounds out. ,stepg001,1,G
+,11,2,vinaf001,,,,17,40,BCH,burkj001,0,0,vinaf001 hit by pitch. ,vinaf001,1,
+vinaf001 to 2B. ,32,2,,vinaf001,,rente001,18,46,BFBBF1,burkj001,0,0,Pickoff error. ,rente001,1,
+,32,2,,vinaf001,,,19,53,BFBBF1X,burkj001,1,0,,rente001,1,F
+,21,2,,vinaf001,,,20,57,FBBX,burkj001,1,0,edmoj001 grounds out. ,edmoj001,1,G
+,31,3,,,,,21,21,BBBCX,stepg001,1,0,,siscs001,0,L
+,12,3,,,,,22,25,CFBX,stepg001,1,0,weisw001 grounds out. ,weisw001,0,G
+,11,3,,burkj001,,,23,28,CBX,stepg001,0,0,burkj001 doubles. ,burkj001,0,
+,32,3,,burkj001,,,24,34,BFBBCX,stepg001,1,0,furcr001 grounds out. ,furcr001,0,G
+,30,3,clarw001,,,,25,61,BBBB,burkj001,0,0,clarw001 walks. ,clarw001,1,
+,22,3,clarw001,,,,26,66,CBFBC,burkj001,1,0,lankr001 strikes out. ,lankr001,1,
+clarw001 to 2B. ,22,3,tatif001,clarw001,,,27,71,BCSBX,burkj001,0,0,tatif001 singles. ,tatif001,1,
+clarw001 scores. tatif001 out. ,10,3,drewj001,,,,28,73,BX,burkj001,1,1,drewj001 singles. ,drewj001,1,
+drewj001 to 3B. ,32,3,mathm001,,drewj001,,29,80,BCFFBBX,burkj001,0,0,mathm001 singles. ,mathm001,1,
+drewj001 scores. mathm001 to 2B. ,10,3,,mathm001,,stepg001,30,82,BB,burkj001,0,1,Wild Pitch. ,stepg001,1,
+,21,3,,mathm001,,,31,86,BBCX,burkj001,1,0,stepg001 grounds out. ,stepg001,1,G
+,00,4,,,,,32,35,X,stepg001,1,0,,jonea002,0,F
+,22,4,,,,,33,40,BBFFX,stepg001,1,0,,surhb001,0,F
+,01,4,,,,,34,42,CX,stepg001,1,0,,jordb001,0,F
+,00,4,,,,,35,87,X,burkj001,1,0,,vinaf001,1,L
+,10,4,,,,,36,89,BX,burkj001,1,0,,rente001,1,F
+,31,4,edmoj001,,,,37,94,BBCBB,burkj001,0,0,edmoj001 walks. ,edmoj001,1,
+edmoj001 to 2B. ,30,4,clarw001,edmoj001,,,38,98,BBBB,burkj001,0,0,clarw001 walks. ,clarw001,1,
+,22,4,clarw001,edmoj001,,,40,5,CFBBX,mulht001,1,0,lankr001 grounds out. ,lankr001,1,G
+,11,5,,,,,41,45,CBX,stepg001,1,0,galaa001 grounds out. ,galaa001,0,G
+,11,5,lopej001,,,,42,48,CBX,stepg001,0,0,lopej001 singles. ,lopej001,0,
+,10,5,,,,,43,50,BX,stepg001,2,0,Double Play. ,siscs001,0,
+,02,5,,,,,44,9,CFFS,mulht001,1,0,tatif001 strikes out. ,tatif001,1,
+,32,5,drewj001,,,,45,16,BFCBBFB,mulht001,0,0,drewj001 walks. ,drewj001,1,
+,00,5,drewj001,,,,46,17,X,mulht001,1,0,,mathm001,1,L
+,11,5,drewj001,,,,47,20,FBX,mulht001,1,0,stepg001 grounds out. ,stepg001,1,G
+,32,6,weisw001,,,,48,56,BCBBCX,stepg001,0,0,weisw001 singles. ,weisw001,0,
+,12,6,weisw001,,,,50,60,SFBC,stepg001,1,0,lombg001 strikes out. ,lombg001,0,
+weisw001 out. ,01,6,furcr001,,,,51,62,LX,stepg001,1,0,furcr001 reaches on fielder's choice. ,furcr001,0,
+furcr001 out. ,22,6,jonea002,,,,52,69,BFBFFFX,stepg001,1,0,jonea002 reaches on fielder's choice. ,jonea002,0,
+,32,6,,,,,54,7,BBCBCFX,belis001,1,0,vinaf001 grounds out. ,vinaf001,1,G
+,21,6,rente001,,,,55,11,BBFX,belis001,0,0,rente001 singles. ,rente001,1,
+,12,6,rente001,,,,56,15,FSBX,belis001,1,0,,edmoj001,1,P
+,02,6,rente001,,,,57,18,SSC,belis001,1,0,clarw001 strikes out. ,clarw001,1,
+,32,7,surhb001,,,,58,75,FBBFBX,stepg001,0,0,surhb001 singles. ,surhb001,0,
+,00,7,,,,,59,76,X,stepg001,2,0,Double Play. ,jordb001,0,
+,20,7,,,,,60,79,BBX,stepg001,1,0,,galaa001,0,F
+,22,7,,,,,61,24,BBCSFS,belis001,1,0,lankr001 strikes out. ,lankr001,1,
+,20,7,,,,,62,27,BBX,belis001,1,0,,tatif001,1,F
+,32,7,,,,,63,33,BBBCFX,belis001,1,0,,drewj001,1,F
+,10,8,,,,,65,81,BX,stepg001,1,0,,lopej001,0,L
+,11,8,siscs001,,,,66,84,CBX,stepg001,0,0,siscs001 singles. ,siscs001,0,
+siscs001 to 2B. ,01,8,,siscs001,,weisw001,67,86,FB,stepg001,0,0,Wild Pitch. ,weisw001,0,
+,32,8,,siscs001,,,68,92,FBCBBS,stepg001,1,0,weisw001 strikes out. ,weisw001,0,
+,32,8,,,,joynw001,70,98,FFBBB2,stepg001,1,0,siscs001 picked off. ,joynw001,0,
+,30,8,mathm001,,,,72,4,BBBB,rockj001,0,0,mathm001 walks. ,mathm001,1,
+mathm001 out. ,00,8,stepg001,,,,73,5,X,rockj001,1,0,stepg001 reaches on fielder's choice. ,stepg001,1,
+stepg001 to 2B. ,31,8,vinaf001,stepg001,,,74,10,BCBBB,rockj001,0,0,vinaf001 walks. ,vinaf001,1,
+,12,8,vinaf001,stepg001,,,75,14,CBFX,rockj001,1,0,,rente001,1,F
+,02,8,vinaf001,stepg001,,,76,17,CFS,rockj001,1,0,edmoj001 strikes out. ,edmoj001,1,
+,10,9,,,,,78,100,BX,stepg001,1,0,bonib001 grounds out. ,bonib001,0,G
+,30,9,furcr001,,,,79,104,BBBB,stepg001,0,0,furcr001 walks. ,furcr001,0,
+,12,9,furcr001,,,,80,109,SBFFX,stepg001,1,0,,jonea002,0,F
+,10,9,furcr001,,,,81,111,BX,stepg001,1,0,,surhb001,0,F

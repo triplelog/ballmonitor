@@ -1,0 +1,166 @@
+version,2
+info,visteam,BOS
+info,hometeam,SEA
+info,site,SEA03
+info,date,2000/07/31
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,buckc901
+info,ump1b,reedr901
+info,ump2b,wendh902
+info,ump3b,clara901
+info,pitches,pitches
+info,temp,81
+info,winddir,ltor
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,204
+info,attendance,36993
+info,wp,garcr001
+info,lp,mesaj001
+info,save,pichh001
+start,nixot001,"Trot Nixon",0,1,8
+start,varij001,"Jason Varitek",0,2,2
+start,daubb001,"Brian Daubach",0,3,3
+start,garcn001,"Nomar Garciaparra",0,4,6
+start,oleat001,"Troy O'Leary",0,5,7
+start,gilkb001,"Bernard Gilkey",0,6,9
+start,hatts001,"Scott Hatteberg",0,7,10
+start,sprae001,"Ed Sprague",0,8,5
+start,lansm001,"Mike Lansing",0,9,4
+start,martr002,"Ramon Martinez",0,0,1
+start,hendr001,"Rickey Henderson",1,1,7
+start,mclem001,"Mark McLemore",1,2,4
+start,rodra001,"Alex Rodriguez",1,3,6
+start,marte001,"Edgar Martinez",1,4,10
+start,olerj001,"John Olerud",1,5,3
+start,buhnj001,"Jay Buhner",1,6,9
+start,camem001,"Mike Cameron",1,7,8
+start,wilsd001,"Dan Wilson",1,8,2
+start,belld002,"David Bell",1,9,5
+start,abbop001,"Paul Abbott",1,0,1
+com,"$Carl Everett on game 7 of 10 game suspension"
+play,1,0,nixot001,12,CBCX,63/G
+play,1,0,varij001,01,CX,8/F8
+play,1,0,daubb001,12,CFFBFX,31/G
+play,1,1,hendr001,32,BBBCCFFFB,W
+play,1,1,mclem001,10,BC,SB2
+play,1,1,mclem001,22,BCBCX,5/FL
+play,1,1,rodra001,31,BBCBB,W
+play,1,1,marte001,10,BB,SB3;SB2
+play,1,1,marte001,30,BBBB,W
+play,1,1,olerj001,02,CFC,K/C
+play,1,1,buhnj001,32,BBSFBFX,HR/78.3-H;2-H;1-H
+play,1,1,camem001,30,BBBB,W
+play,1,1,wilsd001,10,BB,SB2
+play,1,1,wilsd001,32,BBFBFFX,53/G
+play,2,0,garcn001,20,BBX,HR/7
+play,2,0,oleat001,32,BBBCFB,W
+play,2,0,gilkb001,01,CX,S7/7S.1-2
+play,2,0,hatts001,32,BBFFFFBFX,E5/G.2-H(UR);1-3
+play,2,0,sprae001,22,FBSFBX,6/P6
+play,2,0,lansm001,22,SBCBFFX,7/SF.3-H(UR)
+play,2,0,nixot001,30,BBBB,W.1-2
+play,2,0,varij001,11,SBX,S.2-3;1-2
+play,2,0,daubb001,10,BX,7/F7
+play,2,1,belld002,30,BBBB,W
+play,2,1,hendr001,00,,NP
+sub,florb001,"Bryce Florie",0,0,1
+play,2,1,hendr001,32,BCCBBX,S7/7S.1-2
+play,2,1,mclem001,00,X,14/SH.2-3;1-2
+play,2,1,rodra001,21,BBFX,63/G.3-H
+play,2,1,marte001,11,CBX,8/L8
+play,3,0,garcn001,32,BFBFBFB,W
+play,3,0,oleat001,12,FBFS,K
+play,3,0,gilkb001,21,BBFX,3/FL
+play,3,0,hatts001,31,BBBCX,6(1)/FO/G
+play,3,1,olerj001,10,BX,31/G
+play,3,1,buhnj001,21,BSBX,8/F8D
+play,3,1,camem001,21,BCBX,3/G
+play,4,0,sprae001,11,BCX,63/G
+play,4,0,lansm001,10,BX,8/F8
+play,4,0,nixot001,31,BBCBX,S8
+play,4,0,varij001,22,FFBBX,43/G
+play,4,1,wilsd001,32,BBCFFBB,W
+play,4,1,belld002,00,X,13/SH.1-2
+play,4,1,hendr001,01,CX,3/L3
+play,4,1,mclem001,32,CBCBBS,K
+play,5,0,daubb001,10,BX,43/G
+play,5,0,garcn001,12,BFFX,7/F7
+play,5,0,oleat001,31,BBCBB,W
+play,5,0,gilkb001,21,BBSX,8/F8
+play,5,1,rodra001,00,,NP
+sub,beckr001,"Rod Beck",0,0,1
+play,5,1,rodra001,22,CBBCX,6/P6
+play,5,1,marte001,02,CCS,K
+play,5,1,olerj001,00,X,3/G
+play,6,0,hatts001,22,CBBFFX,D9
+play,6,0,sprae001,00,X,8/F8
+play,6,0,lansm001,10,BX,S/78.2-H
+play,6,0,nixot001,00,,NP
+sub,rhoda001,"Arthur Rhodes",1,0,1
+play,6,0,nixot001,32,BSBSBFS,K
+play,6,0,varij001,22,SFFBBFFFFFFC,K/C
+play,6,1,buhnj001,00,X,4/P4
+play,6,1,camem001,32,BCCBFBB,W
+play,6,1,wilsd001,10,BB,CS2(24)
+play,6,1,wilsd001,22,BBFCC,K/C
+play,7,0,daubb001,11,CBX,53/G
+play,7,0,garcn001,32,FFBBBX,8/F8
+play,7,0,oleat001,02,FSC,K/C
+play,7,1,belld002,00,,NP
+sub,garcr001,"Rich Garces",0,0,1
+play,7,1,belld002,31,BBCBX,31/G
+play,7,1,hendr001,22,BBCCFX,S7
+play,7,1,mclem001,01,CX,7/F7
+play,7,1,rodra001,00,C,SB2
+play,7,1,rodra001,12,CFBFX,13/G
+play,8,0,gilkb001,00,,NP
+sub,mesaj001,"Jose Mesa",1,0,1
+play,8,0,gilkb001,21,BBCX,8/F8D
+play,8,0,hatts001,01,FX,S8
+play,8,0,sprae001,00,,NP
+sub,lewid001,"Darren Lewis",0,7,12
+play,8,0,sprae001,10,BX,8/F8
+play,8,0,lansm001,22,FBSBX,S/89S.1-3
+play,8,0,nixot001,00,,NP
+sub,sasak001,"Kazuhiro Sasaki",1,0,1
+play,8,0,nixot001,20,BBX,S9.3-H;1-3
+play,8,0,varij001,01,CX,HR/9.3-H;1-H
+play,8,0,daubb001,01,CX,9/F9
+play,8,1,marte001,00,,NP
+sub,lewid001,"Darren Lewis",0,7,8
+play,8,1,marte001,00,,NP
+sub,nixot001,"Trot Nixon",0,1,9
+play,8,1,marte001,00,,NP
+sub,pichh001,"Hipolito Pichardo",0,6,1
+play,8,1,marte001,12,BCFX,43/G
+play,8,1,olerj001,22,BCBCX,43/G
+play,8,1,buhnj001,12,BFSS,K
+play,9,0,garcn001,00,,NP
+sub,panij001,"Jose Paniagua",1,0,1
+play,9,0,garcn001,01,FX,S8
+play,9,0,oleat001,12,BCFX,43/G.1-2
+play,9,0,pichh001,22,BCCBC,K/C
+play,9,0,lewid001,22,FBBCX,9/F9
+play,9,1,camem001,00,X,63/G
+play,9,1,wilsd001,00,,NP
+sub,javis001,"Stan Javier",1,8,11
+play,9,1,javis001,01,CX,31/G
+play,9,1,belld002,00,,NP
+sub,ibanr001,"Raul Ibanez",1,9,11
+play,9,1,ibanr001,32,BBCFBX,8/F8
+data,er,martr002,5
+data,er,florb001,0
+data,er,beckr001,0
+data,er,garcr001,0
+data,er,pichh001,0
+data,er,abbop001,2
+data,er,rhoda001,0
+data,er,mesaj001,2
+data,er,sasak001,2
+data,er,panij001,0

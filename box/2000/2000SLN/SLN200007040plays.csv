@@ -1,0 +1,92 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,22,1,,,,,0,5,FBBFS,benea001,1,0,tuckm001 strikes out. ,tuckm001,0,
+,01,1,larkb001,,,,1,7,CX,benea001,0,0,larkb001 singles. ,larkb001,0,
+,02,1,larkb001,,,,2,10,CFX,benea001,1,0,,grifk002,0,F
+,31,1,,larkb001,,bichd001,3,15,CBBBS,benea001,0,0,larkb001 steals 2B. ,bichd001,0,
+larkb001 to 3B. ,32,1,bichd001,,larkb001,,4,23,CBBBSFFX,benea001,0,0,bichd001 reaches on error. ,bichd001,0,G
+bichd001 out. ,10,1,boona001,,larkb001,,5,25,BX,benea001,1,0,boona001 reaches on fielder's choice. ,boona001,0,
+,22,1,,,,,6,8,CBFBFFFX,villr001,1,0,,rente001,1,F
+,12,1,dunss001,,,,7,14,CBFFFX,villr001,0,0,dunss001 reaches on error. ,dunss001,1,G
+dunss001 to 2B. ,00,1,,dunss001,,edmoj001,8,15,B,villr001,0,0,Wild Pitch. ,edmoj001,1,
+dunss001 scores. ,31,1,,,,,9,20,BSBBX,villr001,0,2,edmoj001 homers. ,edmoj001,1,
+,12,1,,,,,10,24,CBSX,villr001,1,0,,mcgwm001,1,P
+,31,1,davie001,,,,11,29,FBBBB,villr001,0,0,davie001 walks. ,davie001,1,
+davie001 to 2B. ,21,1,tatif001,davie001,,,12,33,BFBX,villr001,0,0,tatif001 singles. ,tatif001,1,
+davie001 to 3B. tatif001 to 2B. ,00,1,paquc001,tatif001,davie001,,13,34,X,villr001,0,0,paquc001 singles. ,paquc001,1,
+davie001 scores. tatif001 scores. paquc001 to 2B. ,10,1,mathm001,paquc001,,,14,36,BX,villr001,0,2,mathm001 singles. ,mathm001,1,
+paquc001 to 3B. mathm001 to 2B. ,32,1,benea001,mathm001,paquc001,,15,44,SBFBBFFB,villr001,0,0,benea001 walks. ,benea001,1,
+paquc001 scores. mathm001 scores. benea001 to 3B. ,12,1,,rente001,benea001,,16,48,BCFX,villr001,0,2,rente001 doubles. ,rente001,1,
+,12,1,,rente001,benea001,,18,4,BFSX,wills002,1,0,dunss001 grounds out. ,dunss001,1,G
+,21,2,cases001,,,,19,29,BFBX,benea001,0,0,cases001 singles. ,cases001,0,
+,22,2,cases001,,,,20,34,BFCBC,benea001,1,0,taube001 strikes out. ,taube001,0,
+,21,2,cases001,,,,21,38,BSBX,benea001,1,0,,reesp001,0,
+cases001 to 2B. ,32,2,wills002,cases001,,,22,45,CBCFBBB,benea001,0,0,wills002 walks. ,wills002,0,
+,12,2,wills002,cases001,,,23,49,FBFX,benea001,1,0,,tuckm001,0,P
+,31,2,edmoj001,,,,24,9,CBBBB,wills002,0,0,edmoj001 walks. ,edmoj001,1,
+,10,2,,edmoj001,,mcgwm001,25,11,BB,wills002,0,0,edmoj001 steals 2B. ,mcgwm001,1,
+edmoj001 scores. ,20,2,,mcgwm001,,,26,14,BBX,wills002,0,1,mcgwm001 doubles. ,mcgwm001,1,
+,12,2,,mcgwm001,,,27,18,BSSC,wills002,1,0,davie001 strikes out. ,davie001,1,
+,32,2,tatif001,mcgwm001,,,28,25,CBBSBFB,wills002,0,0,tatif001 walks. ,tatif001,1,
+,12,2,tatif001,mcgwm001,,,29,29,FBSS,wills002,1,0,paquc001 strikes out. ,paquc001,1,
+mcgwm001 to 3B. tatif001 out. ,12,2,mathm001,,mcgwm001,,30,33,CCBX,wills002,1,0,mathm001 reaches on fielder's choice. ,mathm001,1,
+,02,3,,,,,31,52,CFS,benea001,1,0,larkb001 strikes out. ,larkb001,0,
+,32,3,grifk002,,,,32,58,CBSBBB,benea001,0,0,grifk002 walks. ,grifk002,0,
+grifk002 to 3B. ,00,3,bichd001,,grifk002,,33,59,X,benea001,0,0,bichd001 singles. ,bichd001,0,
+grifk002 scores. ,21,3,bichd001,,,,34,63,FBBX,benea001,1,1,boona001 hits sacrifice fly. ,boona001,0,
+bichd001 to 3B. ,10,3,cases001,,bichd001,,35,65,BX,benea001,0,0,cases001 singles. ,cases001,0,
+bichd001 scores. cases001 to 3B. ,22,3,taube001,,cases001,,36,70,FBFBX,benea001,0,1,taube001 singles. ,taube001,0,
+,12,3,taube001,,cases001,,37,74,FBSC,benea001,1,0,reesp001 strikes out. ,reesp001,0,
+,12,3,,,,,38,37,CCBS,wills002,1,0,benea001 strikes out. ,benea001,1,
+,30,3,rente001,,,,39,41,BBBB,wills002,0,0,rente001 walks. ,rente001,1,
+,01,3,,rente001,,dunss001,40,43,CB,wills002,0,0,rente001 steals 2B. ,dunss001,1,
+rente001 scores. ,11,3,,,dunss001,,41,46,CBX,wills002,0,1,dunss001 triples. ,dunss001,1,
+dunss001 scores. ,11,3,,,,,42,49,FBX,wills002,0,2,edmoj001 homers. ,edmoj001,1,
+,00,3,,,,,43,50,X,wills002,1,0,,mcgwm001,1,F
+,01,3,,,,,44,52,CX,wills002,1,0,,davie001,1,L
+,12,4,,,,,45,78,SCBS,benea001,1,0,wills002 strikes out. ,wills002,0,
+,32,4,,,,,46,85,CBFFBBC,benea001,1,0,tuckm001 strikes out. ,tuckm001,0,
+,11,4,,,,,47,88,CBX,benea001,1,0,,larkb001,0,F
+,31,4,tatif001,,,,48,57,BSBBB,wills002,0,0,tatif001 walks. ,tatif001,1,
+,22,4,tatif001,,,,49,63,BCSBFC,wills002,1,0,paquc001 strikes out. ,paquc001,1,
+tatif001 to 3B. ,32,4,,mathm001,tatif001,,50,70,SFBBFBX,wills002,0,0,mathm001 doubles. ,mathm001,1,
+,12,4,,mathm001,tatif001,,51,74,CBSS,wills002,1,0,benea001 strikes out. ,benea001,1,
+,00,4,,mathm001,tatif001,,52,75,X,wills002,1,0,,rente001,1,F
+,22,5,,,,,53,94,SBBFFS,benea001,1,0,grifk002 strikes out. ,grifk002,0,
+,11,5,,,,,54,97,SBX,benea001,1,0,,bichd001,0,F
+,31,5,boona001,,,,55,102,FBBBX,benea001,0,0,boona001 singles. ,boona001,0,
+,32,5,boona001,,,,56,108,FFBBBX,benea001,1,0,,cases001,0,F
+,11,5,,,,,59,3,CBX,larka001,1,0,dunss001 grounds out. ,dunss001,1,G
+,11,5,,,,,60,6,SBX,larka001,1,0,,edmoj001,1,F
+,01,5,mcgwm001,,,,61,8,CX,larka001,0,0,mcgwm001 singles. ,mcgwm001,1,
+mcgwm001 out. ,00,5,davie001,,,,62,9,X,larka001,1,0,davie001 reaches on fielder's choice. ,davie001,1,
+,12,6,,,,,63,113,CBFFX,benea001,1,0,,taube001,0,F
+,22,6,,,,,64,118,FBBSC,benea001,1,0,reesp001 strikes out. ,reesp001,0,
+,22,6,,,,,65,123,CFBBX,benea001,1,0,,stync001,0,F
+,31,6,tatif001,,,,67,14,BCBBB,larka001,0,0,tatif001 walks. ,tatif001,1,
+tatif001 to 3B. ,02,6,,paquc001,tatif001,,68,17,SSX,larka001,0,0,paquc001 doubles. ,paquc001,1,
+tatif001 scores. paquc001 to 3B. ,21,6,mathm001,,paquc001,,69,21,BBSX,larka001,0,1,mathm001 singles. ,mathm001,1,
+mathm001 to 2B. ,30,6,drewj001,mathm001,paquc001,,71,25,BBBB,larka001,0,0,drewj001 walks. ,drewj001,1,
+paquc001 scores. mathm001 to 3B. drewj001 to 2B. ,30,6,rente001,drewj001,mathm001,,72,29,BBBB,larka001,0,1,rente001 walks. ,rente001,1,
+,02,6,rente001,drewj001,mathm001,,73,33,CSFS,larka001,1,0,dunss001 strikes out. ,dunss001,1,
+,12,6,rente001,drewj001,mathm001,,74,37,FBCS,larka001,1,0,edmoj001 strikes out. ,edmoj001,1,
+mathm001 scores. drewj001 to 3B. rente001 to 2B. ,31,6,mcgwm001,rente001,drewj001,,75,42,BBFBB,larka001,0,1,mcgwm001 walks. ,mcgwm001,1,
+,02,6,mcgwm001,rente001,drewj001,,76,45,CSX,larka001,1,0,davie001 grounds out. ,davie001,1,G
+,11,7,,,,,79,3,FBX,thomm002,0,1,tuckm001 homers. ,tuckm001,0,
+,10,7,,,,,80,5,BX,thomm002,1,0,,castj004,0,L
+,00,7,,,,,81,6,X,thomm002,1,0,,grifk002,0,F
+,32,7,,,,,82,17,CCBFBFBFFFS,thomm002,1,0,bichd001 strikes out. ,bichd001,0,
+,21,7,,,,,87,49,FBBX,larka001,1,0,,howat001,1,F
+,32,7,,,,,88,56,SCBBFBS,larka001,1,0,paquc001 strikes out. ,paquc001,1,
+,12,7,,,,,89,60,BCSC,larka001,1,0,mathm001 strikes out. ,mathm001,1,
+,12,8,,,,,94,5,CSFBS,mattm001,1,0,larka001 strikes out. ,larka001,0,
+,22,8,,,,,95,10,CSBBS,mattm001,1,0,cases001 strikes out. ,cases001,0,
+,00,8,,,,,96,11,X,mattm001,1,0,taube001 grounds out. ,taube001,0,G
+,12,8,,,,,97,66,BFSFFX,larka001,1,0,drewj001 grounds out. ,drewj001,1,G
+,22,8,,,,,99,72,CFFBBX,larka001,0,1,mcdok001 homers. ,mcdok001,1,
+,11,8,,,,,100,75,SBX,larka001,1,0,dunss001 grounds out. ,dunss001,1,G
+,12,8,,,,,102,82,BFFFFFS,larka001,1,0,ankir001 strikes out. ,ankir001,1,
+,22,9,,,,,110,16,BFCBX,mattm001,1,0,,reesp001,0,F
+,12,9,,,,,111,24,BFFFFFFX,mattm001,1,0,stync001 grounds out. ,stync001,0,G
+,32,9,,tuckm001,,,112,31,FBSBFBX,mattm001,0,0,tuckm001 doubles. ,tuckm001,0,
+tuckm001 to 3B. ,22,9,castj004,,tuckm001,,113,41,FFBFFFFBFX,mattm001,0,0,castj004 singles. ,castj004,0,
+,02,9,castj004,,tuckm001,,114,44,SFC,mattm001,1,0,morrh001 strikes out. ,morrh001,0,

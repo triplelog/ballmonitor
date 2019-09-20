@@ -1,0 +1,160 @@
+version,2
+info,visteam,OAK
+info,hometeam,KCA
+info,site,KAN06
+info,date,2000/06/16
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,lampi901
+info,ump1b,hirsj901
+info,ump2b,reynj901
+info,ump3b,wegnm901
+info,pitches,pitches
+info,temp,70
+info,winddir,ltor
+info,windspeed,8
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,207
+info,attendance,19569
+info,wp,joned001
+info,lp,reicd001
+info,save,tam-j001
+start,longt002,"Terrence Long",0,1,8
+start,velar001,"Randy Velarde",0,2,4
+start,giamj001,"Jason Giambi",0,3,3
+start,grieb001,"Ben Grieve",0,4,7
+start,staim001,"Matt Stairs",0,5,9
+start,jahaj001,"John Jaha",0,6,10
+start,chave001,"Eric Chavez",0,7,5
+start,tejam001,"Miguel Tejada",0,8,6
+start,fasas001,"Sal Fasano",0,9,2
+start,olivo001,"Omar Olivares",0,0,1
+start,damoj001,"Johnny Damon",1,1,7
+start,reboj001,"Jeff Reboulet",1,2,4
+start,sweem002,"Mike Sweeney",1,3,3
+start,dye-j001,"Jermaine Dye",1,4,9
+start,randj002,"Joe Randa",1,5,5
+start,beltc001,"Carlos Beltran",1,6,8
+start,dunwt001,"Todd Dunwoody",1,7,10
+start,zaung001,"Gregg Zaun",1,8,2
+start,sancr001,"Rey Sanchez",1,9,6
+start,suzum001,"Mac Suzuki",1,0,1
+play,1,0,longt002,30,BBBB,W
+play,1,0,velar001,31,BBBCB,W.1-2
+play,1,0,giamj001,31,BBCBB,W.2-3;1-2
+play,1,0,grieb001,02,CFFFX,46(1)3/GDP.3-H;2-3
+play,1,0,staim001,20,BBX,9/F9D
+play,1,1,damoj001,32,CBBFFBB,W
+play,1,1,reboj001,00,C,SB2.1-3(E2/TH2)
+play,1,1,reboj001,00,,NP
+sub,servs001,"Scott Service",0,0,1
+play,1,1,reboj001,32,CCFFBBBX,9/F9
+play,1,1,sweem002,32,BCFBBC,K/C
+play,1,1,dye-j001,31,BBCBB,W
+play,1,1,randj002,22,BCBFFS,K
+play,2,0,jahaj001,30,BBBB,W
+play,2,0,chave001,32,BCBBFX,8/F8
+play,2,0,tejam001,01,CX,8/F8
+play,2,0,fasas001,12,BCSX,63/G
+play,2,1,beltc001,02,CFX,43/G
+play,2,1,dunwt001,31,BSBBX,S
+play,2,1,zaung001,02,CSX,13/G.1-2
+play,2,1,sancr001,12,CBCX,53/G
+play,3,0,longt002,30,BBBB,W
+play,3,0,velar001,22,CFBBFS,K
+play,3,0,giamj001,01,CB,SB2
+play,3,0,giamj001,32,CBBFBS,K
+play,3,0,grieb001,31,BBBCX,3/G
+play,3,1,damoj001,12,BCSX,43/G
+play,3,1,reboj001,00,X,63/G
+play,3,1,sweem002,01,CX,53/G
+play,4,0,staim001,31,BCBBB,W
+play,4,0,jahaj001,12,CCBX,8/F8S
+play,4,0,chave001,12,CCBB,SB2
+play,4,0,chave001,22,CCBBFFX,53/G
+play,4,0,tejam001,22,CBFBS,K
+play,4,1,dye-j001,10,BX,9/F9S
+play,4,1,randj002,00,X,E6/TH1.B-2
+play,4,1,beltc001,32,BBBCFB,W
+play,4,1,dunwt001,00,,NP
+sub,joned001,"Doug Jones",0,0,1
+play,4,1,dunwt001,02,CCX,S7.2-3;1-2
+play,4,1,zaung001,01,CX,36(1)/FO.3-H(UR);2-3
+play,4,1,sancr001,00,X,S9.3-H(UR);1-3
+play,4,1,damoj001,32,BBCBCFX,9/F9
+play,5,0,fasas001,02,CSX,S8/8S
+play,5,0,longt002,01,CX,7/L7
+play,5,0,velar001,02,CCS,K
+play,5,0,giamj001,31,CBBBB,W.1-2
+play,5,0,grieb001,32,BBBCFX,43/G
+play,5,1,reboj001,11,CBX,43/G
+play,5,1,sweem002,02,CFX,4/P4
+play,5,1,dye-j001,02,FFFFFS,K
+play,6,0,staim001,00,,NP
+sub,reicd001,"Dan Reichert",1,0,1
+play,6,0,staim001,10,BX,8/F8D
+play,6,0,jahaj001,12,CSBFX,S9
+play,6,0,chave001,11,BCX,6(1)3/GDP
+play,6,1,randj002,12,CCBX,S9
+play,6,1,beltc001,22,BFBFFX,5/FL
+play,6,1,dunwt001,00,X,D9.1XH(962)
+play,6,1,zaung001,31,CBBBI,IW
+play,6,1,sancr001,22,CBBFS,K
+play,7,0,tejam001,12,CBFX,S7/7S
+play,7,0,fasas001,00,,NP
+sub,giamj002,"Jeremy Giambi",0,9,11
+play,7,0,giamj002,00,X,S7.1-2
+play,7,0,longt002,12,CBLX,S7.2-H;1-2
+play,7,0,velar001,12,CBLX,64(1)3/GDP.2-3
+play,7,0,giamj001,30,IIII,IW
+play,7,0,grieb001,11,FBX,HR/9.3-H;1-H
+play,7,0,staim001,22,BFBFS,K
+play,7,1,damoj001,00,,NP
+sub,hernr002,"Ramon Hernandez",0,9,2
+play,7,1,damoj001,00,,NP
+sub,chrir001,"Ryan Christenson",0,4,7
+play,7,1,damoj001,00,,NP
+sub,tam-j001,"Jeff Tam",0,0,1
+play,7,1,damoj001,01,CX,HR/9
+play,7,1,reboj001,02,CCX,43/G
+play,7,1,sweem002,12,CFBX,63/G
+play,7,1,dye-j001,12,BCSS,K
+play,8,0,jahaj001,00,,NP
+sub,murrd002,"Dan Murray",1,0,1
+play,8,0,jahaj001,22,CCBBX,43/G
+play,8,0,chave001,32,BFBBFX,HR/9
+play,8,0,tejam001,22,BFBSFX,HR/9
+play,8,0,hernr002,21,CBBX,HR/9
+play,8,0,longt002,01,CX,43/G
+play,8,0,velar001,21,CBBX,S8/8S
+play,8,0,giamj001,00,,NP
+sub,spraj001,"Jerry Spradlin",1,0,1
+play,8,0,giamj001,02,CCX,S/78.1-3
+play,8,0,chrir001,12,CCBX,8/F8S
+play,8,1,randj002,22,BBCFX,43/G
+play,8,1,beltc001,21,BBCX,S9
+play,8,1,dunwt001,00,X,S8.1-2
+play,8,1,zaung001,31,BBCBX,8/F8
+play,8,1,sancr001,00,,NP
+sub,poses001,"Scott Pose",1,9,11
+play,8,1,poses001,00,X,46(1)/FO.2-3
+play,9,0,staim001,00,,NP
+sub,ordal001,"Luis Ordaz",1,9,6
+play,9,0,staim001,12,FBFX,3/G
+play,9,0,jahaj001,32,CCBBBB,W
+play,9,0,chave001,22,BCSBFFX,46(1)3/GDP
+play,9,1,damoj001,31,BCBBB,W
+play,9,1,reboj001,21,BCBX,6(1)3/GDP
+play,9,1,sweem002,00,X,7/L7
+data,er,olivo001,0
+data,er,servs001,0
+data,er,joned001,0
+data,er,tam-j001,1
+data,er,suzum001,1
+data,er,reicd001,4
+data,er,murrd002,3
+data,er,spraj001,0

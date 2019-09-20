@@ -1,0 +1,187 @@
+version,2
+info,visteam,NYN
+info,hometeam,SLN
+info,site,STL09
+info,date,2000/05/27
+info,number,0
+info,starttime,7:10PM
+info,daynight,night
+info,usedh,false
+info,umphome,coope901
+info,ump1b,diazl901
+info,ump2b,reilm901
+info,ump3b,kellj901
+info,pitches,pitches
+info,temp,77
+info,winddir,rtol
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,233
+info,attendance,48690
+info,wp,cookd001
+info,lp,vered001
+info,save,
+start,belld001,"Derek Bell",0,1,9
+start,mcewj001,"Joe McEwing",0,2,8
+start,alfoe001,"Edgardo Alfonzo",0,3,4
+start,piazm001,"Mike Piazza",0,4,2
+start,ventr001,"Robin Ventura",0,5,5
+start,zeilt001,"Todd Zeile",0,6,3
+start,agbab001,"Benny Agbayani",0,7,7
+start,ordor001,"Rey Ordonez",0,8,6
+start,reedr002,"Rick Reed",0,9,1
+start,vinaf001,"Fernando Vina",1,1,4
+start,rente001,"Edgar Renteria",1,2,6
+start,edmoj001,"Jim Edmonds",1,3,8
+start,mcgwm001,"Mark McGwire",1,4,3
+start,lankr001,"Ray Lankford",1,5,7
+start,paquc001,"Craig Paquette",1,6,5
+start,drewj001,"J.D. Drew",1,7,9
+start,marre001,"Eli Marrero",1,8,2
+start,benea001,"Andy Benes",1,9,1
+com,"36 minute rain delay in the sixth"
+play,1,0,belld001,00,X,S7
+play,1,0,mcewj001,00,X,13/SH.1-2
+play,1,0,alfoe001,11,BCX,D7.2-H
+play,1,0,piazm001,32,BCCBBB,W
+play,1,0,ventr001,02,FFX,HR/78.2-H;1-H
+play,1,0,zeilt001,00,X,HR/7
+play,1,0,agbab001,10,BX,S8
+play,1,0,ordor001,10,BX,43/G.1-2
+play,1,0,reedr002,12,CSBS,K
+play,1,1,vinaf001,32,CBBBCB,W
+play,1,1,rente001,00,X,9/L9
+play,1,1,edmoj001,11,CBX,5/FL
+play,1,1,mcgwm001,00,X,S8.1-2
+play,1,1,lankr001,32,FBBSBFF,BK.2-3;1-2
+play,1,1,lankr001,32,FBBSBFFFX,D9.3-H;2-H
+play,1,1,paquc001,02,CFX,S7/7S.2-H
+play,1,1,drewj001,32,CCBFBFFFBS,K
+play,2,0,belld001,12,CBCS,K
+play,2,0,mcewj001,11,CBX,D7
+play,2,0,alfoe001,12,CCBX,S7/7S.2-3
+play,2,0,piazm001,32,BSBBFB,W.1-2
+play,2,0,ventr001,22,CCBBC,K/C
+play,2,0,zeilt001,11,CBX,8/L8
+play,2,1,marre001,00,X,S5/BG5
+play,2,1,benea001,00,X,64(1)3/GDP
+play,2,1,vinaf001,32,BFBBCX,S9
+play,2,1,rente001,01,CX,4/L4
+play,3,0,agbab001,10,BX,S9
+play,3,0,ordor001,31,CBBBX,2/FL
+play,3,0,reedr002,00,X,13/SH.1-2
+play,3,0,belld001,32,BSBFBX,63/G
+play,3,1,edmoj001,31,BBCBB,W
+play,3,1,mcgwm001,11,BFX,3/FL
+play,3,1,lankr001,11,CBX,HR/8.1-H
+play,3,1,paquc001,02,CFX,63/G
+play,3,1,drewj001,02,CFX,S7
+play,3,1,marre001,31,BBBCB,W.1-2
+play,3,1,benea001,02,CCS,K
+play,4,0,mcewj001,21,BBCX,63/G
+play,4,0,alfoe001,00,X,9/F9D
+play,4,0,piazm001,01,CX,HR/9
+play,4,0,ventr001,00,X,D9
+play,4,0,zeilt001,32,BCBBCFX,8/F8
+play,4,1,vinaf001,00,,NP
+sub,rodrr004,"Rich Rodriguez",0,9,1
+play,4,1,vinaf001,31,BBCBB,W
+play,4,1,rente001,01,CX,S8.1-2
+play,4,1,edmoj001,32,BCFBBB,W.2-3;1-2
+play,4,1,mcgwm001,00,,NP
+sub,mahop001,"Pat Mahomes",0,9,1
+play,4,1,mcgwm001,22,FCBBB,WP.3-H;2-3;1-2
+play,4,1,mcgwm001,32,FCBBBFFB,W
+play,4,1,lankr001,11,FBX,7/SF.3-H
+play,4,1,paquc001,12,SBSS,K
+play,4,1,drewj001,22,BBFFX,1/L1
+play,5,0,agbab001,22,CCBBFX,53/G
+play,5,0,ordor001,10,BX,S7
+play,5,0,mahop001,01,FX,13/SH.1-2
+play,5,0,belld001,11,BCX,8/F8S
+play,5,1,marre001,02,CFS,K
+play,5,1,benea001,10,BX,53/G
+play,5,1,vinaf001,30,BBBB,W
+play,5,1,rente001,00,1,PO1(13)
+play,6,0,mcewj001,00,,NP
+sub,thomm002,"Mark Thompson",1,9,1
+play,6,0,mcewj001,12,CFBX,8/F8
+play,6,0,alfoe001,20,BBX,4/P4
+play,6,0,piazm001,32,CFBBBB,W
+play,6,0,ventr001,10,BX,46(1)/FO
+play,6,1,rente001,32,CBSBBB,W
+play,6,1,edmoj001,11,FBC,SB2
+play,6,1,edmoj001,32,FBCBFBC,K/C
+play,6,1,mcgwm001,00,X,S7.2-H
+play,6,1,lankr001,32,BSSBBB,W.1-2
+play,6,1,paquc001,00,,NP
+sub,cookd001,"Dennis Cook",0,5,1
+play,6,1,paquc001,00,,NP
+sub,franm001,"Matt Franco",0,9,5
+play,6,1,paquc001,11,BSX,16(1)3/GDP
+play,7,0,zeilt001,01,CX,63/G
+play,7,0,agbab001,10,BX,S8
+play,7,0,ordor001,11,BCX,9/F9
+play,7,0,franm001,31,BBCBB,W.1-2
+play,7,0,belld001,22,SCBFFBFS,K
+play,7,1,drewj001,21,BFBX,S8
+play,7,1,marre001,00,1,POCS2(136)
+play,7,1,marre001,10,1BX,5/FL
+play,7,1,thomm002,00,,NP
+sub,dunss001,"Shawon Dunston",1,9,11
+play,7,1,dunss001,12,FFBFC,K/C
+play,8,0,mcewj001,00,,NP
+sub,nunnj001,"Jon Nunnally",0,2,11
+play,8,0,nunnj001,00,,NP
+sub,sloch001,"Heathcliff Slocumb",1,9,1
+play,8,0,nunnj001,31,BBBCB,W
+play,8,0,alfoe001,32,CBFBBX,E5/G.1-2
+play,8,0,piazm001,00,,NP
+sub,vered001,"Dave Veres",1,9,1
+play,8,0,piazm001,30,BBBB,W.2-3;1-2
+play,8,0,cookd001,00,,NP
+sub,johnm001,"Mark P. Johnson",0,5,11
+play,8,0,johnm001,32,BCSBFBFC,K/C
+play,8,0,zeilt001,11,CBX,HR/7.3-H;2-H(UR);1-H
+play,8,0,agbab001,00,X,43/G
+play,8,0,ordor001,02,CFX,53/G
+play,8,1,vinaf001,00,,NP
+sub,nunnj001,"Jon Nunnally",0,2,7
+play,8,1,vinaf001,00,,NP
+sub,paytj001,"Jay Payton",0,5,8
+play,8,1,vinaf001,00,,NP
+sub,wendt001,"Turk Wendell",0,7,1
+play,8,1,vinaf001,11,BCX,43/G
+play,8,1,rente001,12,BCFX,53/G
+play,8,1,edmoj001,22,CCBFBFX,S8
+play,8,1,mcgwm001,22,SBFBS,K
+play,9,0,franm001,00,,NP
+sub,rodrj001,"Jose Rodriguez",1,9,1
+play,9,0,franm001,20,BBX,43/G
+play,9,0,belld001,12,SFBX,E5/G
+play,9,0,nunnj001,32,BSCBFBB,W.1-2
+play,9,0,alfoe001,01,CX,S7.2-3;1-2
+play,9,0,piazm001,00,,NP
+sub,holmd001,"Darren Holmes",1,9,1
+play,9,0,piazm001,00,X,S8.3-H(UR);2-3;1-2
+play,9,0,paytj001,10,BX,8/SF.3-H(UR)
+play,9,0,zeilt001,32,CBBBCS,K
+play,9,1,lankr001,00,,NP
+sub,franj001,"John Franco",0,7,1
+play,9,1,lankr001,12,CBCC,K/C
+play,9,1,paquc001,32,BBCFBFS,K
+play,9,1,drewj001,32,CSBBBS,K
+data,er,reedr002,5
+data,er,rodrr004,2
+data,er,mahop001,1
+data,er,cookd001,0
+data,er,wendt001,0
+data,er,franj001,0
+data,er,benea001,6
+data,er,thomm002,0
+data,er,sloch001,1
+data,er,vered001,2
+data,er,rodrj001,0
+data,er,holmd001,0

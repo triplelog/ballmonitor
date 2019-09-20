@@ -1,0 +1,128 @@
+version,2
+info,visteam,NYA
+info,hometeam,SEA
+info,site,SEA03
+info,date,2000/04/09
+info,number,0
+info,starttime,1:35PM
+info,daynight,day
+info,usedh,true
+info,umphome,laynj901
+info,ump1b,barrt901
+info,ump2b,randt901
+info,ump3b,monte901
+info,pitches,pitches
+info,temp,54
+info,winddir,rtol
+info,windspeed,7
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,160
+info,attendance,45488
+info,wp,moyej001
+info,lp,clemr001
+info,save,
+start,knobc001,"Chuck Knoblauch",0,1,4
+start,jeted001,"Derek Jeter",0,2,6
+start,oneip001,"Paul O'Neill",0,3,9
+start,willb002,"Bernie Williams",0,4,8
+start,martt002,"Tino Martinez",0,5,3
+start,posaj001,"Jorge Posada",0,6,2
+start,leyrj001,"Jim Leyritz",0,7,10
+start,kellb002,"Roberto Kelly",0,8,7
+start,soria001,"Alfonso Soriano",0,9,5
+start,clemr001,"Roger Clemens",0,0,1
+start,mclem001,"Mark McLemore",1,1,7
+start,camem001,"Mike Cameron",1,2,8
+start,rodra001,"Alex Rodriguez",1,3,6
+start,olerj001,"John Olerud",1,4,3
+start,marte001,"Edgar Martinez",1,5,10
+start,buhnj001,"Jay Buhner",1,6,9
+start,belld002,"David Bell",1,7,4
+start,wilsd001,"Dan Wilson",1,8,2
+start,guilc001,"Carlos Guillen",1,9,5
+start,moyej001,"Jamie Moyer",1,0,1
+play,1,0,knobc001,01,FX,43/G
+play,1,0,jeted001,22,BCFFBX,4/P4
+play,1,0,oneip001,32,SBCBBX,8/F8
+play,1,1,mclem001,31,BBBCX,63/G
+play,1,1,camem001,02,CCS,K
+play,1,1,rodra001,22,BBSCS,K
+play,2,0,willb002,22,BFCBS,K
+play,2,0,martt002,01,CX,13/G
+play,2,0,posaj001,01,CX,3/FL
+play,2,1,olerj001,31,BBCBB,W
+play,2,1,marte001,00,X,9/FL
+play,2,1,buhnj001,32,FBFBFBS,K
+play,2,1,belld002,00,X,7/L7
+play,3,0,leyrj001,02,CCX,8/F8
+play,3,0,kellb002,12,BFCX,53/G
+play,3,0,soria001,22,CCBBS,K
+play,3,1,wilsd001,10,BX,9/F9
+play,3,1,guilc001,31,BCBBB,W
+play,3,1,mclem001,32,BBCCBFX,FC6.1-3(E6/TH2);B-1
+play,3,1,camem001,10,BS,SB2
+play,3,1,camem001,32,BSBSBFX,S.3-H(UR);2-2
+play,3,1,rodra001,32,CBBSBFC,K+CS3(25)/DP/C
+play,4,0,knobc001,01,CX,D7
+play,4,0,jeted001,00,X,D7.2-H
+play,4,0,oneip001,21,CBBX,43/G.2-3
+play,4,0,willb002,10,BX,7/SF.3-H
+play,4,0,martt002,11,CBX,31/G
+play,4,1,olerj001,32,BFCBBFX,7/F7
+play,4,1,marte001,32,BBBCFX,13/G
+play,4,1,buhnj001,21,BCBX,D8
+play,4,1,belld002,11,BFX,6/L6
+play,5,0,posaj001,11,BSX,63/G
+play,5,0,leyrj001,22,SSBBX,53/G
+play,5,0,kellb002,12,CBFX,63/G
+play,5,1,wilsd001,12,CFBFX,S8
+play,5,1,guilc001,01,LX,E2/TH/SH.1-2
+play,5,1,mclem001,32,BCBLBB,W.2-3;1-2
+play,5,1,camem001,22,CFBBX,S9/9S.3-H;2-3;1-2
+play,5,1,rodra001,10,BX,43/G.3-H(UR);2-3;1-2
+play,5,1,olerj001,10,BX,7/SF.3-H(UR)
+play,5,1,marte001,11,CBX,S7.2-H(UR)
+play,5,1,buhnj001,32,BBFCBFFFX,HR/9.1-H(UR);B-H(UR)
+play,5,1,belld002,10,BX,5/FL
+play,6,0,soria001,01,CX,HR/7
+play,6,0,knobc001,11,BCX,9/F9
+play,6,0,jeted001,01,CX,8/F8
+play,6,0,oneip001,22,CBBCX,143/G
+play,6,1,wilsd001,02,CFX,S5
+com,"originally scored E5"
+play,6,1,guilc001,00,X,5/BP5
+play,6,1,mclem001,31,BBBCX,4(B)3(1)/LDP
+play,7,0,willb002,10,BX,5/L5
+play,7,0,martt002,02,CFC,K/C
+play,7,0,posaj001,10,BX,7/F7
+play,7,1,camem001,00,,NP
+sub,erdot001,"Todd Erdos",0,0,1
+play,7,1,camem001,30,BBBB,W
+play,7,1,rodra001,00,X,D9.1-H
+play,7,1,olerj001,01,CX,9/L9.2-3
+play,7,1,marte001,20,BBX,S7/7S.3-H
+play,7,1,buhnj001,31,BBSBX,64(1)3/GDP
+play,8,0,leyrj001,00,,NP
+sub,gipsc001,"Charles Gipson",1,6,9
+play,8,0,leyrj001,10,BX,2/FL
+play,8,0,kellb002,22,CBBFFS,K
+play,8,0,soria001,32,BFFBBX,7/L7
+play,8,1,belld002,00,,NP
+sub,watsa001,"Allen Watson",0,0,1
+play,8,1,belld002,30,BBBB,W
+play,8,1,wilsd001,30,BBBB,W.1-2
+play,8,1,guilc001,22,BBCSS,K
+play,8,1,mclem001,21,BCBX,9/F9
+play,8,1,camem001,22,BSSBC,K/C
+play,9,0,knobc001,00,,NP
+sub,panij001,"Jose Paniagua",1,0,1
+play,9,0,knobc001,22,CCBBFX,9/F9
+play,9,0,jeted001,32,SBBFFBFS,K
+play,9,0,oneip001,21,CBBX,43/G
+data,er,clemr001,1
+data,er,erdot001,2
+data,er,watsa001,0
+data,er,moyej001,3
+data,er,panij001,0

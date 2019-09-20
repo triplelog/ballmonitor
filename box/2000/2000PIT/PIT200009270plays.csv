@@ -1,0 +1,81 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,31,1,lugoj001,,,,0,5,BBBCB,andej002,0,0,lugoj001 walks. ,lugoj001,0,
+lugoj001 to 2B. ,32,1,bogat001,lugoj001,,,1,11,CBBFBB,andej002,0,0,bogat001 walks. ,bogat001,0,
+,10,1,,bogat001,lugoj001,bagwj001,2,13,BB,andej002,0,0,lugoj001 steals 3B. bogat001 steals 2B. ,bagwj001,0,
+lugoj001 scores. bogat001 out. bagwj001 to 2B. ,21,1,,bagwj001,,,3,17,BBFX,andej002,1,1,bagwj001 hits into a fielder's choice. ,bagwj001,0,
+bagwj001 scores. ,00,1,,hidar001,,,4,18,X,andej002,0,1,hidar001 doubles. ,hidar001,0,
+,32,1,aloum001,hidar001,,,5,24,FBBFBB,andej002,0,0,aloum001 walks. ,aloum001,0,
+hidar001 to 3B. ,00,1,aloum001,,hidar001,,6,25,X,andej002,1,0,,berkl001,0,F
+,22,1,aloum001,,hidar001,,7,31,BBFSFS,andej002,1,0,melum001 strikes out. ,melum001,0,
+,10,1,,,,,8,2,BX,mcknt001,1,0,,browa001,1,P
+,22,1,,,,,9,7,BCBFS,mcknt001,1,0,kendj001 strikes out. ,kendj001,1,
+,10,1,,,,,10,9,BX,mcknt001,1,0,gileb002 grounds out. ,gileb002,1,G
+,31,2,trubc001,,,,11,36,BSBBB,andej002,0,0,trubc001 walks. ,trubc001,0,
+trubc001 to 2B. ,12,2,,trubc001,,,12,40,CLBX,andej002,1,0,Sacrifice bunt by mcknt001.,mcknt001,0,
+,00,2,,,,lugoj001,13,41,C,andej002,1,0,trubc001 caught stealing. ,lugoj001,0,
+,12,2,,,,,14,45,CBCX,andej002,1,0,lugoj001 grounds out. ,lugoj001,0,G
+,31,2,,,,,15,14,BBBCX,mcknt001,0,1,vandj001 homers. ,vandj001,1,
+,22,2,,,,,16,20,BCBFFS,mcknt001,1,0,younk001 strikes out. ,younk001,1,
+,02,2,,,,,17,23,CCS,mcknt001,1,0,morrw001 strikes out. ,morrw001,1,
+,00,2,,,,,18,24,X,mcknt001,1,0,benjm001 grounds out. ,benjm001,1,G
+,00,3,,,,,19,46,X,andej002,0,1,bogat001 homers. ,bogat001,0,
+,32,3,,,,,20,53,FBSBFBX,andej002,1,0,,bagwj001,0,F
+,00,3,,,,,21,54,X,andej002,1,0,hidar001 grounds out. ,hidar001,0,G
+,12,3,,,,,22,60,FBSFFX,andej002,1,0,aloum001 grounds out. ,aloum001,0,G
+,02,3,mearp001,,,,23,27,CCX,mcknt001,0,0,mearp001 singles. ,mearp001,1,
+mearp001 to 2B. andej002 to 1B. ,11,3,andej002,mearp001,,,24,30,BLX,mcknt001,0,0,andej002 hits into a fielder's choice. ,andej002,1,
+mearp001 to 3B. andej002 to 2B. ,02,3,,andej002,mearp001,,25,33,LFX,mcknt001,1,0,browa001 grounds out. ,browa001,1,G
+,00,3,,andej002,mearp001,,26,34,X,mcknt001,1,0,kendj001 grounds out. ,kendj001,1,G
+,01,3,,andej002,mearp001,,27,36,CX,mcknt001,1,0,,gileb002,1,L
+,12,4,,,,,28,64,SBCS,andej002,1,0,berkl001 strikes out. ,berkl001,0,
+,00,4,,,,,29,65,X,andej002,1,0,melum001 grounds out. ,melum001,0,G
+,20,4,trubc001,,,,30,68,BBX,andej002,0,0,trubc001 singles. ,trubc001,0,
+trubc001 out. ,00,4,mcknt001,,,,31,69,X,andej002,1,0,mcknt001 reaches on fielder's choice. ,mcknt001,0,
+,10,4,,,,,32,38,BX,mcknt001,1,0,,vandj001,1,F
+,00,4,younk001,,,,33,39,X,mcknt001,0,0,younk001 singles. ,younk001,1,
+,02,4,younk001,,,,34,42,FCS,mcknt001,1,0,morrw001 strikes out. ,morrw001,1,
+,11,4,younk001,,,,35,45,SBX,mcknt001,1,0,,benjm001,1,F
+,22,5,lugoj001,,,,36,74,SBBFX,andej002,0,0,lugoj001 singles. ,lugoj001,0,
+lugoj001 to 2B. ,21,5,bogat001,lugoj001,,,37,78,BFBX,andej002,0,0,bogat001 singles. ,bogat001,0,
+lugoj001 scores. bogat001 scores. ,10,5,,,,,38,80,BX,andej002,0,3,bagwj001 homers. ,bagwj001,0,
+,30,5,hidar001,,,,39,84,BBBB,andej002,0,0,hidar001 walks. ,hidar001,0,
+,21,5,,,,,40,88,BBCX,andej002,2,0,Double Play. ,aloum001,0,
+,02,5,,,,,41,91,FFS,andej002,1,0,berkl001 strikes out. ,berkl001,0,
+,00,5,mearp001,,,,42,46,X,mcknt001,0,0,mearp001 reaches on error. ,mearp001,1,G
+,12,5,mearp001,,,,44,50,FBSC,mcknt001,1,0,ramia002 strikes out. ,ramia002,1,
+mearp001 out. ,10,5,browa001,,,,45,52,BX,mcknt001,1,0,browa001 reaches on fielder's choice. ,browa001,1,
+browa001 to 2B. ,21,5,kendj001,browa001,,,46,56,BBSX,mcknt001,0,0,kendj001 singles. ,kendj001,1,
+,32,5,kendj001,browa001,,,47,62,BBCFBX,mcknt001,1,0,gileb002 grounds out. ,gileb002,1,G
+,32,6,,,,,49,6,BBCBFS,skrmm001,1,0,melum001 strikes out. ,melum001,0,
+,22,6,,,,,50,12,CSBBFS,skrmm001,1,0,trubc001 strikes out. ,trubc001,0,
+,10,6,,,,,51,14,BX,skrmm001,1,0,mcknt001 grounds out. ,mcknt001,0,G
+,21,6,,,,,52,66,CBBX,mcknt001,1,0,,vandj001,1,F
+,00,6,,,,,53,67,X,mcknt001,1,0,,younk001,1,F
+,10,6,,,,,54,69,BX,mcknt001,1,0,morrw001 grounds out. ,morrw001,1,G
+,21,7,,,,,55,18,BBSX,skrmm001,1,0,,lugoj001,0,F
+,32,7,,,,,56,24,BFSBBC,skrmm001,1,0,bogat001 strikes out. ,bogat001,0,
+,31,7,,,,,57,29,CBBBX,skrmm001,1,0,,bagwj001,0,F
+,00,7,,,,,58,70,X,mcknt001,1,0,,benjm001,1,F
+,11,7,,,,,59,73,CBX,mcknt001,1,0,,mearp001,1,F
+,21,7,,,,,61,77,CBBX,mcknt001,1,0,wehnj001 grounds out. ,wehnj001,1,G
+,01,8,hidar001,,,,63,2,CH,wallj001,0,0,hidar001 hit by pitch. ,hidar001,0,
+hidar001 to 2B. ,32,8,aloum001,hidar001,,,64,8,BBBCFB,wallj001,0,0,aloum001 walks. ,aloum001,0,
+hidar001 to 3B. aloum001 to 2B. ,32,8,berkl001,aloum001,hidar001,,65,15,BFBSFBB,wallj001,0,0,berkl001 walks. ,berkl001,0,
+hidar001 scores. aloum001 scores. barkg001 to 3B. ,00,8,,melum001,barkg001,,67,16,X,wallj001,0,2,melum001 doubles. ,melum001,0,
+barkg001 scores. melum001 to 3B. ,21,8,trubc001,,melum001,,68,20,CBBX,wallj001,0,1,trubc001 singles. ,trubc001,0,
+,22,8,trubc001,,melum001,,70,5,BSBSS,oconb001,1,0,mcknt001 strikes out. ,mcknt001,0,
+,12,8,trubc001,,melum001,,71,9,FBCS,oconb001,1,0,lugoj001 strikes out. ,lugoj001,0,
+,00,8,trubc001,,melum001,,72,10,X,oconb001,1,0,bogat001 grounds out. ,bogat001,0,G
+,12,8,,,,,75,81,BCCX,mcknt001,1,0,browa001 grounds out. ,browa001,1,G
+,10,8,,,,,76,83,BX,mcknt001,1,0,,kendj001,1,F
+,00,8,,,,,77,84,X,mcknt001,1,0,,gileb002,1,
+,00,9,ensbm001,,,,81,11,X,oconb001,0,0,ensbm001 singles. ,ensbm001,0,
+ensbm001 out. hidar001 to 3B. ,00,9,,,hidar001,,82,12,X,oconb001,1,0,hidar001 doubles. ,hidar001,0,
+,11,9,,,hidar001,,83,15,CBX,oconb001,1,0,,aloum001,0,F
+hidar001 scores. ,10,9,,,,barkg001,84,17,BB,oconb001,0,1,Wild Pitch. ,barkg001,0,
+,20,9,,,,,85,20,BBX,oconb001,1,0,barkg001 grounds out. ,barkg001,0,G
+hyzda001 to 1B. ,22,9,hyzda001,,,,88,89,BBSFS,mcknt001,0,0,hyzda001 strikes out. Wild Pitch. ,hyzda001,1,
+,00,9,hyzda001,,,,89,90,X,mcknt001,1,0,,younk001,1,F
+hyzda001 out. ,12,9,morrw001,,,,90,94,SCBX,mcknt001,1,0,morrw001 reaches on fielder's choice. ,morrw001,1,
+morrw001 to 2B. ,30,9,benjm001,morrw001,,,91,98,BBBB,mcknt001,0,0,benjm001 walks. ,benjm001,1,
+,02,9,benjm001,morrw001,,,92,101,FFS,mcknt001,1,0,mearp001 strikes out. ,mearp001,1,

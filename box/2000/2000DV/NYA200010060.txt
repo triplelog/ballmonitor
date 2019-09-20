@@ -1,0 +1,127 @@
+version,2
+info,visteam,OAK
+info,hometeam,NYA
+info,date,2000/10/06
+info,site,NYC16
+info,number,0
+info,starttime,0:00PM
+info,daynight,night
+info,usedh,true
+info,umphome,reilm901
+info,ump1b,wintm901
+info,ump2b,reedr901
+info,ump3b,eddid901
+info,umplf,relic901
+info,umprf,danlk901
+info,inputter,"DWS"
+info,howscored,park
+info,pitches,pitches
+info,temp,66
+info,winddir,ltor
+info,windspeed,13
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,192
+info,attendance,56606
+info,wp,herno001
+info,lp,hudst001
+info,save,rivem002
+start,longt002,"Terrence Long",0,1,8
+start,velar001,"Randy Velarde",0,2,4
+start,giamj001,"Jason Giambi",0,3,3
+start,chave001,"Eric Chavez",0,4,5
+start,tejam001,"Miguel Tejada",0,5,6
+start,staim001,"Matt Stairs",0,6,9
+start,grieb001,"Ben Grieve",0,7,7
+start,giamj002,"Jeremy Giambi",0,8,10
+start,hernr002,"Ramon Hernandez",0,9,2
+start,hudst001,"Tim Hudson",0,0,1
+start,jeted001,"Derek Jeter",1,1,6
+start,posaj001,"Jorge Posada",1,2,2
+start,justd001,"David Justice",1,3,7
+start,willb002,"Bernie Williams",1,4,8
+start,martt002,"Tino Martinez",1,5,3
+start,oneip001,"Paul O'Neill",1,6,9
+start,hillg001,"Glenallen Hill",1,7,10
+start,sojol001,"Luis Sojo",1,8,4
+start,bross001,"Scott Brosius",1,9,5
+start,herno001,"Orlando Hernandez",1,0,1
+play,1,0,longt002,12,CBCFFX,3/G3
+play,1,0,velar001,22,BCBFX,9/L9
+play,1,0,giamj001,22,BFBFX,43/G
+play,1,1,jeted001,11,CBX,53/G
+play,1,1,posaj001,02,CSS,K
+play,1,1,justd001,32,SBSBBX,9/F9D
+play,2,0,chave001,21,CBBX,7/F7LS
+play,2,0,tejam001,31,CBBBB,W
+play,2,0,staim001,12,BSFFX,4/FL
+play,2,0,grieb001,32,BBSBCB,W.1-2
+play,2,0,giamj002,22,BCFBX,S9.2-H;1-3
+play,2,0,hernr002,02,FFS,K23
+play,2,1,willb002,21,CBBX,D/78
+play,2,1,martt002,12,FBFS,K
+play,2,1,oneip001,02,SFX,S6/G6S.2-3
+play,2,1,hillg001,11,BSX,FC1.3-H;1-2;B-1
+play,2,1,sojol001,01,CX,8/F8
+play,2,1,bross001,30,BBBB,W.2-3;1-2
+play,2,1,jeted001,11,CBX,S.3-H;2-3;1-2
+play,2,1,posaj001,02,SFC,K/C
+play,3,0,longt002,01,CX,S7
+play,3,0,velar001,21,BBCX,9/F9
+play,3,0,giamj001,32,BFFBBB,W.1-2
+play,3,0,chave001,11,CBX,2/FL
+play,3,0,tejam001,32,CBBFBX,5/FL
+play,3,1,justd001,21,CBBX,S8/G4M
+play,3,1,willb002,00,X,9/F9D
+play,3,1,martt002,10,BX,E4/TH.1-2
+play,3,1,oneip001,22,CFBBS,K
+play,3,1,hillg001,22,SFBBX,64(1)/FO.2-3
+play,4,0,staim001,12,BCCFX,2/FL
+play,4,0,grieb001,31,BBCBB,W
+play,4,0,giamj002,32,BCFBBX,7/F78XDW
+play,4,0,hernr002,12,BSFS,K
+play,4,1,sojol001,30,BBBB,W
+play,4,1,bross001,01,LX,E2/TH2.1-3
+play,4,1,jeted001,20,BBX,64(1)/FO.3-H(UR)
+play,4,1,posaj001,22,FBSBB,CS2(26)
+play,4,1,posaj001,32,FBSBBFX,8/F8
+play,5,0,longt002,21,BBCX,HR/9
+play,5,0,velar001,32,BSFBFFBFFFX,9/L9
+play,5,0,giamj001,32,CBSBBFB,W
+play,5,0,chave001,00,X,64(1)3/GDP
+play,5,1,justd001,12,BSFX,43/G
+play,5,1,willb002,22,CBBSX,13/G
+play,5,1,martt002,30,BBBB,W
+play,5,1,oneip001,02,SCX,8/F8
+play,6,0,tejam001,00,X,8/F8
+play,6,0,staim001,12,CFBS,K
+play,6,0,grieb001,31,CBBBX,7/F7D
+play,6,1,hillg001,11,BFX,63/G
+play,6,1,sojol001,20,BBX,6/L6
+play,6,1,bross001,11,BFX,9/L9
+play,7,0,giamj002,12,BCFS,K
+play,7,0,hernr002,01,FX,S7
+play,7,0,longt002,22,CFFBBX,46(1)3/GDP
+play,7,1,jeted001,10,BX,43/G
+play,7,1,posaj001,00,X,43/G
+play,7,1,justd001,02,FCS,K
+play,8,0,velar001,00,,NP
+sub,rivem002,"Mariano Rivera",1,0,1
+play,8,0,velar001,21,BCBX,5/L5
+play,8,0,giamj001,11,CBX,63/G
+play,8,0,chave001,02,SCS,K
+play,8,1,willb002,22,CBBCX,5/L5
+play,8,1,martt002,00,X,S9
+play,8,1,oneip001,22,BFBFX,53/G.1-2
+play,8,1,hillg001,32,BSSBBB,W
+play,8,1,sojol001,00,,NP
+sub,knobc001,"Chuck Knoblauch",1,7,12
+play,8,1,sojol001,11,FBX,S8.2-H;1-3;BX2(864)
+play,9,0,tejam001,11,CBX,8/F8
+play,9,0,staim001,00,X,6/P6
+play,9,0,grieb001,21,BBFX,E3/G4
+play,9,0,giamj002,22,BFFBX,3/G3L
+data,er,hudst001,3
+data,er,herno001,2
+data,er,rivem002,0

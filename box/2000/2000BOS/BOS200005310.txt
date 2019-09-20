@@ -1,0 +1,178 @@
+version,2
+info,visteam,KCA
+info,hometeam,BOS
+info,site,BOS07
+info,date,2000/05/31
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,everm901
+info,ump1b,crawj901
+info,ump2b,dimum901
+info,ump3b,gormb901
+info,pitches,pitches
+info,temp,72
+info,winddir,fromrf
+info,windspeed,6
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,215
+info,attendance,32503
+info,wp,suzum001
+info,lp,schop001
+info,save,spraj001
+start,damoj001,"Johnny Damon",0,1,7
+start,feblc001,"Carlos Febles",0,2,4
+start,sweem002,"Mike Sweeney",0,3,3
+start,dye-j001,"Jermaine Dye",0,4,9
+start,beltc001,"Carlos Beltran",0,5,8
+start,randj002,"Joe Randa",0,6,5
+start,mccad001,"David McCarty",0,7,10
+start,zaung001,"Gregg Zaun",0,8,2
+start,sancr001,"Rey Sanchez",0,9,6
+start,suzum001,"Mac Suzuki",0,0,1
+start,fryej001,"Jeff Frye",1,1,4
+start,nixot001,"Trot Nixon",1,2,9
+start,daubb001,"Brian Daubach",1,3,10
+start,garcn001,"Nomar Garciaparra",1,4,6
+start,everc001,"Carl Everett",1,5,8
+start,oleat001,"Troy O'Leary",1,6,7
+start,stanm002,"Mike Stanley",1,7,3
+start,hatts001,"Scott Hatteberg",1,8,2
+start,veraw001,"Wilton Veras",1,9,5
+start,schop001,"Pete Schourek",1,0,1
+play,1,0,damoj001,02,CSFX,63/G
+play,1,0,feblc001,21,BBCX,53/G
+play,1,0,sweem002,21,CBBX,S8
+play,1,0,dye-j001,22,CBFBX,3/P3
+play,1,1,fryej001,21,CBBX,8/L8
+play,1,1,nixot001,20,BBX,S7
+play,1,1,daubb001,10,BX,7/F7
+play,1,1,garcn001,22,FBFBX,S.1-2
+play,1,1,everc001,20,BBX,7/F7
+play,2,0,beltc001,02,CSX,53/G
+play,2,0,randj002,32,BCBFFBFFX,9/F9
+play,2,0,mccad001,30,BBBX,HR/7
+play,2,0,zaung001,32,BCBFBB,W
+play,2,0,sancr001,32,BBSCFFBFFFB,W.1-2
+play,2,0,damoj001,12,BSFB,SB3
+play,2,0,damoj001,22,BSFBX,D9/9LD.3-H;1-H;B-3(THH)
+com,"ej,willj107,M,crawj901,Fan interference non-call"
+com,"$the ball stopped suddenly as if touch by a fan; 1B"
+com,"umpire Jerry Crawford ruled no fan interference;"
+com,"Red Sox manager Jimy Williams ejected by Crawford"
+play,2,0,feblc001,22,CBSBB,WP.3-H
+play,2,0,feblc001,32,CBSBBFX,43/G
+play,2,1,oleat001,12,BFCX,43/G
+play,2,1,stanm002,21,BCBX,7/F7S
+play,2,1,hatts001,02,CCX,D/78D
+play,2,1,veraw001,11,BFX,8/F8S
+play,3,0,sweem002,12,CFBS,K
+play,3,0,dye-j001,00,X,3/G
+play,3,0,beltc001,02,FCX,S9
+play,3,0,randj002,11,BFX,7/F7
+play,3,1,fryej001,31,CBBBB,W
+play,3,1,nixot001,11,BFX,3/G.1-2
+play,3,1,daubb001,22,FBSBS,K
+play,3,1,garcn001,22,BFBFS,K
+play,4,0,mccad001,01,CX,9/F9
+play,4,0,zaung001,10,BX,8/F8
+play,4,0,sancr001,22,FBCBX,63/G
+play,4,1,everc001,22,BCSBFX,HR/7
+play,4,1,oleat001,00,X,S8
+play,4,1,stanm002,30,BBBB,W.1-2
+play,4,1,hatts001,12,CBCS,K
+play,4,1,veraw001,12,FBCS,K
+play,4,1,fryej001,32,BBBCCX,S9.2-H;1-3
+play,4,1,nixot001,30,BBBB,W.1-2
+play,4,1,daubb001,12,CSBS,K
+play,5,0,damoj001,20,BBX,S9/9S
+play,5,0,feblc001,01,CX,9/F9
+play,5,0,sweem002,21,BFBB,SB2
+play,5,0,sweem002,32,BFBBFFFX,D7/7D.2-H
+play,5,0,dye-j001,00,,NP
+sub,pichh001,"Hipolito Pichardo",1,0,1
+play,5,0,dye-j001,21,CBBX,S8.2-H
+play,5,0,beltc001,10,BX,S7.1-3
+play,5,0,randj002,31,BBBCB,W.1-2
+play,5,0,mccad001,00,,NP
+sub,waket001,"Tim Wakefield",1,0,1
+play,5,0,mccad001,00,B,PB.3-H;2-3;1-2
+play,5,0,mccad001,12,BCFX,53/G.3-H(UR)
+play,5,0,zaung001,02,CFFX,7/F7
+play,5,1,garcn001,00,X,9/F9D
+play,5,1,everc001,22,BCCBS,K
+play,5,1,oleat001,30,BBBB,W
+play,5,1,stanm002,00,X,53/G
+play,6,0,sancr001,00,X,63/G
+play,6,0,damoj001,02,CCFX,T8/8D
+play,6,0,feblc001,11,BSX,6/L6
+play,6,0,sweem002,10,BX,S7.3-H
+play,6,0,dye-j001,00,X,S9.1-3
+play,6,0,beltc001,22,FBSFFFBC,K/C
+play,6,1,hatts001,32,CSBBBX,31/G
+play,6,1,veraw001,10,BX,1/L1
+play,6,1,fryej001,21,CBBX,D7/7D
+play,6,1,nixot001,10,BX,43/G
+play,7,0,randj002,22,BSBFX,S8
+play,7,0,mccad001,00,X,6/L6
+play,7,0,zaung001,32,BBCFBB,W.1-2
+play,7,0,sancr001,00,X,64(1)/FO.2-3
+play,7,0,damoj001,02,FFS,K
+play,7,1,daubb001,02,CFX,43/G
+play,7,1,garcn001,00,X,13/G
+play,7,1,everc001,22,CBBFS,K
+play,8,0,feblc001,00,,NP
+sub,wasdj001,"John Wasdin",1,0,1
+play,8,0,feblc001,00,,NP
+sub,sheea001,"Andy Sheets",1,4,6
+play,8,0,feblc001,00,,NP
+sub,sadld001,"Donnie Sadler",1,5,8
+play,8,0,feblc001,00,X,9/F9
+play,8,0,sweem002,00,X,S/78
+play,8,0,dye-j001,31,BFBBX,D7/7D.1-3
+play,8,0,beltc001,12,CFBS,K
+play,8,0,randj002,00,X,43/G
+play,8,1,oleat001,00,,NP
+sub,bottr001,"Ricky Bottalico",0,0,1
+play,8,1,oleat001,02,SCS,K23
+play,8,1,stanm002,21,BFBX,D7/7D
+play,8,1,hatts001,32,CBFBFBX,S9.2-3
+play,8,1,veraw001,22,BBFSX,S.1-2;3-H(E1/TH)
+play,8,1,fryej001,31,CBBBB,W.2-3;1-2
+play,8,1,nixot001,11,BFH,HP.3-H;2-3;1-2
+play,8,1,daubb001,00,,NP
+sub,santj002,"Jose Santiago",0,0,1
+play,8,1,daubb001,22,CBFBFX,D9.3-H;2-H;1-3
+play,8,1,sheea001,00,,NP
+sub,varij001,"Jason Varitek",1,4,11
+play,8,1,varij001,11,BFX,43/G.3-H;2-3
+play,8,1,sadld001,00,H,HP
+play,8,1,oleat001,00,,NP
+sub,spraj001,"Jerry Spradlin",0,0,1
+play,8,1,oleat001,00,C,SB2
+play,8,1,oleat001,11,CBX,3/G
+play,9,0,mccad001,00,,NP
+sub,sadld001,"Donnie Sadler",1,5,6
+play,9,0,mccad001,00,,NP
+sub,lewid001,"Darren Lewis",1,4,8
+play,9,0,mccad001,00,,NP
+sub,lowed001,"Derek Lowe",1,0,1
+play,9,0,mccad001,22,BCSBFX,4/P4
+play,9,0,zaung001,12,BCFC,K/C
+play,9,0,sancr001,11,CBX,63/G
+play,9,1,stanm002,02,FFS,K
+play,9,1,hatts001,22,BSCBFX,D/89D
+play,9,1,veraw001,01,FX,7/F7
+play,9,1,fryej001,11,BCX,43/G
+data,er,suzum001,2
+data,er,bottr001,5
+data,er,santj002,0
+data,er,spraj001,0
+data,er,schop001,6
+data,er,pichh001,1
+data,er,waket001,1
+data,er,wasdj001,0
+data,er,lowed001,0

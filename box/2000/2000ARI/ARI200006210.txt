@@ -1,0 +1,174 @@
+version,2
+info,visteam,SDN
+info,hometeam,ARI
+info,site,PHO01
+info,date,2000/06/21
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,relic901
+info,ump1b,carlm901
+info,ump2b,demud901
+info,ump3b,eddid901
+info,pitches,pitches
+info,temp,72
+info,winddir,torf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,189
+info,attendance,33003
+info,wp,morgm001
+info,lp,reyec001
+info,save,
+start,owene001,"Eric Owens",0,1,9
+start,river002,"Ruben Rivera",0,2,8
+start,sprae001,"Ed Sprague",0,3,3
+start,nevip001,"Phil Nevin",0,4,5
+start,hernc001,"Carlos A. Hernandez",0,5,2
+start,boonb002,"Bret Boone",0,6,4
+start,jackd003,"Damian Jackson",0,7,7
+start,gomec001,"Chris Gomez",0,8,6
+start,meadb001,"Brian Meadows",0,9,1
+start,womat001,"Tony Womack",1,1,6
+start,counc001,"Craig Counsell",1,2,5
+start,gonzl001,"Luis Gonzalez",1,3,7
+start,finls001,"Steve Finley",1,4,8
+start,colbg001,"Greg Colbrunn",1,5,3
+start,lee-t002,"Travis Lee",1,6,9
+start,milld002,"Damian Miller",1,7,2
+start,friah001,"Hanley Frias",1,8,4
+start,daalo001,"Omar Daal",1,9,1
+play,1,0,owene001,00,X,S8
+play,1,0,river002,32,BCBCBB,W.1-2
+play,1,0,sprae001,22,BCFBC,K/C
+play,1,0,nevip001,30,BBBB,W.2-3;1-2
+play,1,0,hernc001,11,CBH,HP.3-H;2-3;1-2
+play,1,0,boonb002,32,BSBCBFX,8/SF.3-H;2-3
+play,1,0,jackd003,32,BBCSBX,63/G
+play,1,1,womat001,01,CX,T9
+play,1,1,counc001,31,BBCBX,5/P5
+play,1,1,gonzl001,10,BX,S8.3-H
+play,1,1,finls001,00,X,S9.1-3
+play,1,1,colbg001,10,BX,E5/THH.3-H(NR)(UR);1-2
+play,1,1,lee-t002,32,BFFBBX,S9.2-H;1-3
+play,1,1,milld002,20,BBX,7/F7S
+play,1,1,friah001,22,BFBCS,K
+play,2,0,gomec001,11,BCX,8/F8
+play,2,0,meadb001,01,FX,63/G
+play,2,0,owene001,22,CBBFH,HP
+play,2,0,river002,32,BCBSBX,3/P3
+play,2,1,daalo001,00,X,43/G
+play,2,1,womat001,11,BCX,T/89D
+play,2,1,counc001,11,BFX,63/G
+play,2,1,gonzl001,01,CX,13/G
+play,3,0,sprae001,20,BBX,D7
+play,3,0,nevip001,00,X,9/F9.2-3
+play,3,0,hernc001,21,BBCX,3/G
+play,3,0,boonb002,10,BX,2/FL
+play,3,1,finls001,32,CFBFBFFBB,W
+play,3,1,colbg001,00,H,HP.1-2
+play,3,1,lee-t002,22,CSFBBX,S9/9S.2-H;1-3
+play,3,1,milld002,30,BBBB,W.1-2
+play,3,1,friah001,00,,NP
+sub,kolbb001,"Brandon Kolb",0,9,1
+play,3,1,friah001,00,X,32(3)3/GDP.2-3;1-2
+play,3,1,daalo001,12,FSBX,S7/7S.3-H;2-H
+play,3,1,womat001,00,X,46(1)/FO
+play,4,0,jackd003,00,X,8/F8
+play,4,0,gomec001,10,BX,8/F8D
+play,4,0,kolbb001,01,CX,E6/TH1
+play,4,0,owene001,10,BX,HR/7.1-H(UR);B-H(UR)
+play,4,0,river002,22,CBFBC,K/C
+play,4,1,counc001,30,BBBB,W
+play,4,1,gonzl001,01,CX,E3/TH.1-3
+play,4,1,finls001,02,FFFS,K
+play,4,1,colbg001,00,X,4(B)3(1)/LDP
+play,5,0,sprae001,32,CBBBFB,W
+play,5,0,nevip001,32,BBFSBX,D/89D.1-H
+play,5,0,hernc001,00,,NP
+sub,morgm001,"Mike Morgan",1,5,1
+play,5,0,hernc001,00,,NP
+sub,lee-t002,"Travis Lee",1,6,3
+play,5,0,hernc001,00,,NP
+sub,bautd001,"Danny Bautista",1,9,9
+play,5,0,hernc001,11,CBX,3/G.2-3
+play,5,0,boonb002,00,X,S9.3-H
+play,5,0,jackd003,01,CX,16(1)3/GDP
+play,5,1,lee-t002,30,BBBB,W
+play,5,1,milld002,00,,NP
+sub,reyec001,"Carlos Reyes",0,7,1
+play,5,1,milld002,00,,NP
+sub,marta001,"Al Martin",0,9,7
+play,5,1,milld002,20,BBX,64(1)3/GDP
+play,5,1,friah001,30,BBBB,W
+play,5,1,bautd001,01,CX,S7.1-2
+play,5,1,womat001,10,BX,S8.2-H;1-3
+play,5,1,counc001,10,BB,SB2
+play,5,1,counc001,32,BBCBFFX,53/G
+play,6,0,gomec001,21,CBBX,8/F8S
+play,6,0,marta001,10,BX,T/78D
+play,6,0,owene001,31,BFBBB,W
+play,6,0,river002,20,BBC,CS2(24)
+play,6,0,river002,21,BBCX,63/G
+play,6,1,gonzl001,32,BFBCBB,W
+play,6,1,finls001,00,X,S9.1-2
+play,6,1,morgm001,00,,NP
+sub,almac001,"Carlos Almanzar",0,7,1
+play,6,1,morgm001,12,LCBL,K/BF
+play,6,1,lee-t002,00,X,S9.2-H;1-3
+play,6,1,milld002,21,FBBX,S7/7S.3-H;1-2
+play,6,1,friah001,30,BBBB,W.2-3;1-2
+play,6,1,bautd001,00,X,64(1)/FO.3-H;2-3
+play,6,1,womat001,22,BFCBX,7/F7
+play,7,0,sprae001,21,BCBX,9/F9
+play,7,0,nevip001,12,CBFFS,K
+play,7,0,hernc001,22,FFBBFFX,43/G
+play,7,1,counc001,31,BBCBB,W
+play,7,1,gonzl001,01,FX,7/F7
+play,7,1,finls001,30,BBBB,W.1-2
+play,7,1,morgm001,00,,NP
+sub,whitm002,"Matt Whiteside",0,5,1
+play,7,1,morgm001,00,,NP
+sub,gonzw001,"Wiki Gonzalez",0,7,2
+play,7,1,morgm001,00,,NP
+sub,gilkb001,"Bernard Gilkey",1,5,11
+play,7,1,gilkb001,20,BBX,S7.2XH(72);1-3
+play,7,1,lee-t002,01,SX,46(1)/FO
+play,8,0,boonb002,00,,NP
+sub,padiv001,"Vicente Padilla",1,5,1
+play,8,0,boonb002,10,BX,9/F9
+play,8,0,gonzw001,12,CBSC,K/C
+play,8,0,gomec001,22,CCBBX,S8
+play,8,0,marta001,01,CX,3/G
+play,8,1,milld002,01,CX,HR/7
+play,8,1,friah001,20,BBX,8/F8
+play,8,1,bautd001,00,X,53/G
+play,8,1,womat001,11,FBX,S6/G
+play,8,1,counc001,21,CBBX,S4/G.1-2
+com,"both of the above singles originally scored as E"
+play,8,1,gonzl001,12,SBFS,K
+play,9,0,owene001,00,,NP
+sub,kim-b001,"Byung-Hyun Kim",1,5,1
+play,9,0,owene001,00,X,E3/G
+play,9,0,river002,00,,NP
+sub,magad001,"Dave Magadan",0,2,11
+play,9,0,magad001,32,BCCFBBS,K
+play,9,0,sprae001,00,,NP
+sub,klesr001,"Ryan Klesko",0,3,11
+play,9,0,klesr001,01,FX,HR/7.1-H(UR)
+play,9,0,nevip001,22,BBCCS,K
+play,9,0,whitm002,00,,NP
+sub,dehak001,"Kory DeHaan",0,5,11
+play,9,0,dehak001,22,CFBBFS,K
+data,er,meadb001,5
+data,er,kolbb001,0
+data,er,reyec001,3
+data,er,almac001,1
+data,er,whitm002,1
+data,er,daalo001,4
+data,er,morgm001,0
+data,er,padiv001,0
+data,er,kim-b001,1

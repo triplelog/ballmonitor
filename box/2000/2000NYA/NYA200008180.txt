@@ -1,0 +1,177 @@
+version,2
+info,visteam,ANA
+info,hometeam,NYA
+info,site,NYC16
+info,date,2000/08/18
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,cedeg901
+info,ump1b,welkt901
+info,ump2b,scotd901
+info,ump3b,hudsm901
+info,pitches,pitches
+info,temp,64
+info,winddir,ltor
+info,windspeed,6
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,251
+info,attendance,37503
+info,wp,hases001
+info,lp,stanm003
+info,save,
+start,erstd001,"Darin Erstad",0,1,7
+start,palmo001,"Orlando Palmeiro",0,2,9
+start,vaugm001,"Mo Vaughn",0,3,3
+start,salmt001,"Tim Salmon",0,4,10
+start,andeg001,"Garret Anderson",0,5,8
+start,glaut001,"Troy Glaus",0,6,5
+start,molib001,"Ben Molina",0,7,2
+start,kenna001,"Adam Kennedy",0,8,4
+start,stock001,"Kevin Stocker",0,9,6
+start,ortir002,"Ramon Ortiz",0,0,1
+start,jeted001,"Derek Jeter",1,1,6
+start,posaj001,"Jorge Posada",1,2,2
+start,oneip001,"Paul O'Neill",1,3,9
+start,willb002,"Bernie Williams",1,4,8
+start,justd001,"David Justice",1,5,7
+start,martt002,"Tino Martinez",1,6,3
+start,hillg001,"Glenallen Hill",1,7,10
+start,sojol001,"Luis Sojo",1,8,5
+start,vizcj001,"Jose Vizcaino",1,9,4
+start,clemr001,"Roger Clemens",1,0,1
+play,1,0,erstd001,22,CBBCFFX,S8
+play,1,0,palmo001,01,CX,S7/7S.1-3
+play,1,0,vaugm001,01,CX,46(1)3/GDP.3-H
+play,1,0,salmt001,02,CSX,9/F9
+play,1,1,jeted001,32,BBFSFBB,W
+play,1,1,posaj001,00,X,43/G.1-2
+play,1,1,oneip001,02,CFFX,S8.2-H
+play,1,1,willb002,01,CX,8/F8
+play,1,1,justd001,20,BBX,3/G
+play,2,0,andeg001,11,BCX,43/G
+play,2,0,glaut001,12,CCBX,S8
+play,2,0,molib001,02,SFX,5/P5
+play,2,0,kenna001,00,X,8/F8
+play,2,1,martt002,31,BFBBB,W
+play,2,1,hillg001,12,BSFX,8/F8
+play,2,1,sojol001,01,SX,46(1)/FO
+play,2,1,vizcj001,12,BFCX,S7.1-2
+play,2,1,jeted001,00,,BK.2-3;1-2
+play,2,1,jeted001,22,BFBSFX,S8.3-H;2-H
+play,2,1,posaj001,11,CBX,S9.1-2
+play,2,1,oneip001,10,BB,CS2(26)
+play,3,0,stock001,22,BSFBC,K/C
+play,3,0,erstd001,31,BBBCB,W
+play,3,0,palmo001,32,BBBCCX,63/G.1-2
+play,3,0,vaugm001,00,X,7/F7
+play,3,1,oneip001,11,BCX,3/G
+play,3,1,willb002,00,X,53/G
+play,3,1,justd001,11,CBX,E4/TH
+play,3,1,martt002,22,FBBCX,46(1)/FO
+play,4,0,salmt001,01,FX,HR/78
+play,4,0,andeg001,22,BCBCS,K
+play,4,0,glaut001,01,CX,7/F7
+play,4,0,molib001,11,BCX,9/F9D
+play,4,1,hillg001,11,SBX,HR/7
+play,4,1,sojol001,21,FBBX,S7
+play,4,1,vizcj001,10,BX,S2/BG2.1-2
+play,4,1,jeted001,21,BBFX,S9.2-H(TH3)(NR);1X3(9345);B-2
+play,4,1,posaj001,21,BCBX,8/F8.2-3
+play,4,1,oneip001,22,BBCCC,K/C
+play,5,0,kenna001,22,CBBFX,S9
+play,5,0,stock001,32,FBFBBFX,S9.1-3
+play,5,0,erstd001,01,FX,36(1)/FO.3-H
+play,5,0,palmo001,21,BCBX,4(1)3/GDP
+play,5,1,willb002,12,BFSS,K
+play,5,1,justd001,21,BFBX,3/G
+play,5,1,martt002,31,BBBCX,S7/7S
+play,5,1,hillg001,10,BX,HR/9.1-H
+play,5,1,sojol001,02,CSC,K/C
+play,6,0,vaugm001,11,FBX,S9
+play,6,0,salmt001,32,BBBCFFB,W.1-2
+play,6,0,andeg001,12,FCBC,K/C
+play,6,0,glaut001,20,BBB,PB.2-3;1-2
+play,6,0,glaut001,31,BBBCB,W
+play,6,0,molib001,01,SX,7/F7S
+play,6,0,kenna001,12,CCFFBX,6/L6
+play,6,1,vizcj001,00,X,7/F7
+play,6,1,jeted001,12,BFFC,K/C
+play,6,1,posaj001,00,X,S9/9D
+play,6,1,oneip001,00,,NP
+sub,alvaj002,"Juan Alvarez",0,0,1
+play,6,1,oneip001,01,CX,D/89D.1-H
+play,6,1,willb002,30,IIII,IW
+play,6,1,justd001,12,BCSX,31/G
+play,7,0,stock001,12,CSBX,63/G
+play,7,0,erstd001,12,CFBFC,K/C
+play,7,0,palmo001,01,FX,3/G
+play,7,1,martt002,22,BBCFX,8/F8
+play,7,1,hillg001,00,,NP
+sub,potel001,"Lou Pote",0,0,1
+play,7,1,hillg001,12,BCSFC,K/C
+play,7,1,sojol001,12,BCCFX,43/G
+play,8,0,vaugm001,00,X,7/F7S
+play,8,0,salmt001,00,X,9/L9
+play,8,0,andeg001,12,CBFX,43/G
+play,8,1,vizcj001,12,BCCFC,K/C
+play,8,1,jeted001,32,BCBBCS,K
+play,8,1,posaj001,32,CBSBFBFS,K
+play,9,0,glaut001,11,CBX,S8
+play,9,0,molib001,11,FBX,S9.1-2
+play,9,0,kenna001,00,,NP
+sub,nelsj001,"Jeff Nelson",1,0,1
+play,9,0,kenna001,01,CX,8/F8
+play,9,0,stock001,31,BBFBB,W.2-3;1-2
+play,9,0,erstd001,00,,NP
+sub,rivem002,"Mariano Rivera",1,0,1
+play,9,0,erstd001,02,CCX,5(2)/FO.3-H;1-2
+play,9,0,palmo001,02,CFX,D9.2-H;1-3
+play,9,0,vaugm001,01,FX,HR/9.3-H;2-H
+play,9,0,salmt001,12,SBFC,K/C
+play,9,1,oneip001,00,,NP
+sub,hases001,"Shigetoshi Hasegawa",0,0,1
+play,9,1,oneip001,32,BCCBBX,8/F8
+play,9,1,willb002,22,CCBFBX,63/G
+play,9,1,justd001,31,BBCBB,W
+play,9,1,martt002,00,X,9/F9
+play,10,0,andeg001,12,CBFS,K23
+play,10,0,glaut001,32,BFBBFX,8/F8D
+play,10,0,molib001,32,SFBFBBX,S8
+play,10,0,kenna001,22,FBFFFFBX,13/G
+play,10,1,hillg001,00,X,S
+play,10,1,sojol001,00,,NP
+sub,polol001,"Luis Polonia",1,7,12
+play,10,1,sojol001,01,LX,14/SH.1-2
+play,10,1,vizcj001,00,,NP
+sub,cansj001,"Jose Canseco",1,9,11
+play,10,1,cansj001,01,CX,8/F8.2-3
+play,10,1,jeted001,30,IIII,IW
+play,10,1,posaj001,01,FB,DI.1-2
+play,10,1,posaj001,22,FBCBX,7/F7
+play,11,0,stock001,00,,NP
+sub,sojol001,"Luis Sojo",1,8,4
+play,11,0,stock001,00,,NP
+sub,bross001,"Scott Brosius",1,9,5
+play,11,0,stock001,00,,NP
+sub,stanm003,"Mike Stanton",1,0,1
+play,11,0,stock001,00,X,13/BG
+play,11,0,erstd001,10,BX,HR/9
+play,11,0,palmo001,22,CCBFBFX,S
+play,11,0,vaugm001,02,CFC,K/C
+play,11,0,salmt001,32,SBFFBBX,S8/8S.1-3
+play,11,0,andeg001,01,CX,3/G
+play,11,1,oneip001,22,BCSFBX,8/F8
+play,11,1,willb002,10,BX,143/G
+play,11,1,justd001,10,BX,8/F8D
+data,er,ortir002,8
+data,er,alvaj002,0
+data,er,potel001,0
+data,er,hases001,0
+data,er,clemr001,5
+data,er,nelsj001,1
+data,er,rivem002,2
+data,er,stanm003,1

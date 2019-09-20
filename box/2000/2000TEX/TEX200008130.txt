@@ -1,0 +1,137 @@
+version,2
+info,visteam,BOS
+info,hometeam,TEX
+info,site,ARL02
+info,date,2000/08/13
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,herna901
+info,ump1b,fostm901
+info,ump2b,vanvm901
+info,ump3b,marsr901
+info,pitches,pitches
+info,temp,100
+info,winddir,fromlf
+info,windspeed,12
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,161
+info,attendance,28927
+info,wp,ohkat001
+info,lp,rogek001
+info,save,lowed001
+start,lewid001,"Darren Lewis",0,1,9
+start,sprae001,"Ed Sprague",0,2,5
+start,everc001,"Carl Everett",0,3,8
+start,garcn001,"Nomar Garciaparra",0,4,6
+start,oleat001,"Troy O'Leary",0,5,7
+start,varij001,"Jason Varitek",0,6,2
+start,gilkb001,"Bernard Gilkey",0,7,10
+start,daubb001,"Brian Daubach",0,8,3
+start,lansm001,"Mike Lansing",0,9,4
+start,ohkat001,"Tomo Ohka",0,0,1
+start,alicl001,"Luis Alicea",1,1,4
+start,cataf001,"Frank Catalanotto",1,2,10
+start,greer001,"Rusty Greer",1,3,7
+start,palmr001,"Rafael Palmeiro",1,4,3
+start,kaplg001,"Gabe Kapler",1,5,8
+start,leder001,"Ricky Ledee",1,6,9
+start,haseb001,"Bill Haselman",1,7,2
+start,lambm001,"Mike Lamb",1,8,5
+start,clayr001,"Royce Clayton",1,9,6
+start,rogek001,"Kenny Rogers",1,0,1
+play,1,0,lewid001,22,CBBCX,53/G
+play,1,0,sprae001,12,CCBX,S/78
+play,1,0,everc001,22,SSBBFFX,9/F9
+play,1,0,garcn001,32,BBCBFX,5/P5
+play,1,1,alicl001,20,BBX,7/F7
+play,1,1,cataf001,21,BBCX,D/78
+play,1,1,greer001,02,SSC,K/C
+play,1,1,palmr001,10,BX,8/F8
+play,2,0,oleat001,12,CBFS,K
+play,2,0,varij001,22,CFBBS,K
+play,2,0,gilkb001,10,BX,53/G
+play,2,1,kaplg001,12,BFFX,8/F8
+play,2,1,leder001,32,CBCBFBB,W
+play,2,1,haseb001,10,BX,4/P4
+play,2,1,lambm001,02,CFB,CS2(26)
+play,3,0,daubb001,22,BBFFS,K
+play,3,0,lansm001,21,CBBX,S
+play,3,0,lewid001,31,BBBCB,W.1-2
+play,3,0,sprae001,10,BX,S7.2-3;1-2
+play,3,0,everc001,01,FX,6/L6
+play,3,0,garcn001,12,FSBX,S7.3-H;2-H;1-2
+play,3,0,oleat001,10,BH,HP.2-3;1-2
+play,3,0,varij001,00,X,S8.3-H;2-H;1-2
+play,3,0,gilkb001,01,FX,64(1)/FO.2-3
+play,3,1,lambm001,32,BBBCFS,K
+play,3,1,clayr001,32,BCBFBS,K
+play,3,1,alicl001,10,BX,8/F8
+play,4,0,daubb001,00,X,63/G
+play,4,0,lansm001,22,CBSBFFX,63/G
+play,4,0,lewid001,12,LCBX,53/G
+play,4,1,cataf001,32,CBBBCX,S7
+play,4,1,greer001,01,CX,D9.1-3
+play,4,1,palmr001,31,BSBBB,W
+play,4,1,kaplg001,10,BX,8/SF.3-H;2-3(E2)
+play,4,1,leder001,01,FX,S8.3-H;1-2
+play,4,1,haseb001,32,BBSBFC,K/C
+play,4,1,lambm001,10,BX,8/F8
+play,5,0,sprae001,00,X,E5/G
+play,5,0,everc001,12,SFBX,7/F7
+play,5,0,garcn001,00,X,S8.1-2
+play,5,0,oleat001,32,BCBSBX,8/F8.2-3
+play,5,0,varij001,11,FBX,43/G
+play,5,1,clayr001,00,X,5/L5
+play,5,1,alicl001,10,BX,6/P6
+play,5,1,cataf001,11,BCX,7/F7
+play,6,0,gilkb001,22,CCBBX,S7
+play,6,0,daubb001,01,FX,46(1)3/GDP
+play,6,0,lansm001,12,BCCC,K/C
+play,6,1,greer001,32,CBBSBC,K/C
+play,6,1,palmr001,10,BX,9/F9
+play,6,1,kaplg001,11,BFX,S7
+play,6,1,leder001,32,BBBCSFFB,W.1-2
+play,6,1,haseb001,32,FSBBBB,W.2-3;1-2
+play,6,1,lambm001,00,,NP
+sub,garcr001,"Rich Garces",0,0,1
+play,6,1,lambm001,11,BCX,5/FL
+play,7,0,lewid001,32,BBBCCX,7/L7
+play,7,0,sprae001,00,X,8/F8
+play,7,0,everc001,22,CFBBS,K
+play,7,1,clayr001,11,FBX,63/G
+play,7,1,alicl001,02,CFC,K/C
+play,7,1,cataf001,21,BBCX,5/P5
+play,8,0,garcn001,02,FFFX,8/F8
+play,8,0,oleat001,21,BFBX,13/G
+play,8,0,varij001,00,X,63/G
+play,8,1,greer001,10,BX,8/F8
+play,8,1,palmr001,12,CCBC,K/C
+play,8,1,kaplg001,00,X,9/F9D
+play,9,0,gilkb001,00,,NP
+sub,crabt001,"Tim Crabtree",1,0,1
+play,9,0,gilkb001,00,,NP
+sub,nixot001,"Trot Nixon",0,7,11
+play,9,0,nixot001,32,CBCFBFFBX,43/G
+play,9,0,daubb001,21,FBBX,31/G
+play,9,0,lansm001,12,BCFC,K/C
+play,9,1,leder001,00,,NP
+sub,brogr001,"Rico Brogna",0,8,3
+play,9,1,leder001,00,,NP
+sub,alexm001,"Manny Alexander",0,2,5
+play,9,1,leder001,00,,NP
+sub,lowed001,"Derek Lowe",0,0,1
+play,9,1,leder001,21,CBBX,43/G
+play,9,1,haseb001,00,,NP
+sub,valdp001,"Pedro Valdes",1,7,11
+play,9,1,valdp001,12,BCFX,63/G
+play,9,1,lambm001,00,X,S8
+play,9,1,clayr001,02,FFS,K
+data,er,ohkat001,2
+data,er,garcr001,0
+data,er,lowed001,0
+data,er,rogek001,4
+data,er,crabt001,0

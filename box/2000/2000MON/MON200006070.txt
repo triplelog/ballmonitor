@@ -1,0 +1,142 @@
+version,2
+info,visteam,NYA
+info,hometeam,MON
+info,site,MON02
+info,date,2000/06/07
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,davig901
+info,ump1b,joycj901
+info,ump2b,riekr901
+info,ump3b,emmep901
+info,pitches,pitches
+info,temp,72
+info,winddir,fromlf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,176
+info,attendance,25381
+info,wp,herno001
+info,lp,pavac001
+info,save,
+start,leder001,"Ricky Ledee",0,1,7
+start,jeted001,"Derek Jeter",0,2,6
+start,oneip001,"Paul O'Neill",0,3,9
+start,willb002,"Bernie Williams",0,4,8
+start,martt002,"Tino Martinez",0,5,3
+start,posaj001,"Jorge Posada",0,6,2
+start,bross001,"Scott Brosius",0,7,5
+start,bellc001,"Clay Bellinger",0,8,4
+start,herno001,"Orlando Hernandez",0,9,1
+start,bergp001,"Peter Bergeron",1,1,8
+start,vidrj001,"Jose Vidro",1,2,4
+start,whitr001,"Rondell White",1,3,7
+start,guerv001,"Vladimir Guerrero",1,4,9
+start,stevl001,"Lee Stevens",1,5,3
+start,blumg001,"Geoff Blum",1,6,6
+start,mordm001,"Mike Mordecai",1,7,5
+start,obric001,"Charlie O'Brien",1,8,2
+start,pavac001,"Carl Pavano",1,9,1
+play,1,0,leder001,02,CCX,S7
+play,1,0,jeted001,10,BX,53/G.1-2
+play,1,0,oneip001,32,SFBBBS,K
+play,1,0,willb002,01,FX,43/G
+play,1,1,bergp001,11,BFX,43/G
+play,1,1,vidrj001,22,CBBFX,53/G
+play,1,1,whitr001,32,BBCBFFB,W
+play,1,1,guerv001,00,X,HR/8.1-H
+play,1,1,stevl001,30,BBBB,W
+play,1,1,blumg001,11,FBX,43/G
+play,2,0,martt002,21,CBBX,31/G
+play,2,0,posaj001,32,BBSCBX,7/L7
+play,2,0,bross001,11,CBX,63/G
+play,2,1,mordm001,01,CX,63/G
+play,2,1,obric001,12,BCSFX,7/F7
+play,2,1,pavac001,10,BX,63/G
+play,3,0,bellc001,12,CSFBFH,HP
+play,3,0,herno001,11,BCS,SB2
+play,3,0,herno001,12,BCSX,23/SH.2-3#
+play,3,0,leder001,11,BFX,S.3-H
+play,3,0,jeted001,00,C,SB2
+play,3,0,jeted001,22,CBFFBX,63/G.2-3
+play,3,0,oneip001,00,X,4/L4
+play,3,1,bergp001,22,BBFFFFX,7/F7D
+play,3,1,vidrj001,12,BFCS,K
+play,3,1,whitr001,22,BBFFS,K
+play,4,0,willb002,21,BBFX,S9
+play,4,0,martt002,31,CBBBX,8/F8D
+play,4,0,posaj001,21,CBBB,SB2
+play,4,0,posaj001,32,CBBBFB,W
+play,4,0,bross001,01,FX,7/F7
+play,4,0,bellc001,12,CFBS,K23
+play,4,1,guerv001,10,BX,43/G
+play,4,1,stevl001,32,SBBBSB,W
+play,4,1,blumg001,11,BCX,7/F7
+play,4,1,mordm001,12,BFSX,6(1)/FO/G
+play,5,0,herno001,00,X,43/G
+play,5,0,leder001,31,BBCBX,E6/TH1
+play,5,0,jeted001,00,X,S9/9S.1-3
+play,5,0,oneip001,00,X,S7/7S.3-H(UR);1-3
+play,5,0,willb002,01,SS,SB2
+play,5,0,willb002,02,SSX,S9/9S.3-H;2-H
+play,5,0,martt002,01,FX,T/78D.1-H
+play,5,0,posaj001,00,,NP
+sub,johnm002,"Mike Johnson",1,7,1
+play,5,0,posaj001,00,,NP
+sub,coqut001,"Trace Coquillette",1,9,5
+play,5,0,posaj001,10,BX,HR/7.3-H
+play,5,0,bross001,21,CBBX,9/F9S
+play,5,0,bellc001,02,CSS,K
+play,5,1,obric001,02,CFC,K/C
+play,5,1,coqut001,12,CBSC,K/C
+play,5,1,bergp001,01,CX,43/G
+play,6,0,herno001,10,BX,9/F9
+play,6,0,leder001,22,BCBSS,K
+play,6,0,jeted001,00,X,53/G
+play,6,1,vidrj001,11,BCX,S9/9S
+play,6,1,whitr001,10,BX,8/F8
+play,6,1,guerv001,22,BBFSFFX,3/G.1-2
+play,6,1,stevl001,22,BBFSFX,6/P6
+play,7,0,oneip001,00,X,S7
+play,7,0,willb002,21,BBFX,46(1)/FO
+play,7,0,martt002,12,CBFB,SB2
+play,7,0,martt002,22,CBFBFX,7/F7
+play,7,0,posaj001,32,CBCFBBFB,W
+play,7,0,bross001,00,X,7/F7
+play,7,1,blumg001,00,X,7/L7
+play,7,1,johnm002,00,,NP
+sub,guerw001,"Wilton Guerrero",1,7,11
+play,7,1,guerw001,00,X,43/G
+play,7,1,obric001,22,BCFBX,53/G
+play,8,0,bellc001,00,,NP
+sub,schnb001,"Brian Schneider",1,7,2
+play,8,0,bellc001,00,,NP
+sub,skrmm001,"Matt Skrmetta",1,8,1
+play,8,0,bellc001,12,BCFX,7/L7
+play,8,0,herno001,02,CFFS,K
+play,8,0,leder001,32,BBCBCB,W
+play,8,0,jeted001,22,BCBFX,6/L6
+play,8,1,coqut001,12,CSBS,K
+play,8,1,bergp001,22,FBBFX,43/G
+play,8,1,vidrj001,11,BCX,S9
+play,8,1,whitr001,10,BX,S9.1-3
+play,8,1,guerv001,02,SSX,13/G
+play,9,0,oneip001,01,FX,63/G
+play,9,0,willb002,32,CBFBBFFX,7/FL
+play,9,0,martt002,22,CBFBFFX,6/P6
+play,9,1,stevl001,00,,NP
+sub,spens001,"Shane Spencer",0,9,9
+play,9,1,stevl001,00,,NP
+sub,watsa001,"Allen Watson",0,3,1
+play,9,1,stevl001,31,BBBSX,3/G
+play,9,1,blumg001,11,BSX,43/G
+play,9,1,schnb001,22,FBFBX,3/G
+data,er,herno001,2
+data,er,watsa001,0
+data,er,pavac001,5
+data,er,johnm002,1
+data,er,skrmm001,0

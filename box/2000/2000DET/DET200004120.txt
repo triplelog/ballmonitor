@@ -1,0 +1,135 @@
+version,2
+info,visteam,SEA
+info,hometeam,DET
+info,site,DET05
+info,date,2000/04/12
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,wegnm901
+info,ump1b,reynj901
+info,ump2b,willc901
+info,ump3b,reedr901
+info,pitches,pitches
+info,temp,44
+info,winddir,torf
+info,windspeed,8
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,144
+info,attendance,21405
+info,wp,selea001
+info,lp,mlicd001
+info,save,
+start,mclem001,"Mark McLemore",0,1,7
+start,belld002,"David Bell",0,2,4
+start,rodra001,"Alex Rodriguez",0,3,6
+start,olerj001,"John Olerud",0,4,3
+start,marte001,"Edgar Martinez",0,5,10
+start,buhnj001,"Jay Buhner",0,6,9
+start,guilc001,"Carlos Guillen",0,7,5
+start,wilsd001,"Dan Wilson",0,8,2
+start,camem001,"Mike Cameron",0,9,8
+start,selea001,"Aaron Sele",0,0,1
+start,polol001,"Luis Polonia",1,1,10
+start,jeffg001,"Gregg Jefferies",1,2,4
+start,higgb001,"Bobby Higginson",1,3,7
+start,clart002,"Tony Clark",1,4,3
+start,ausmb001,"Brad Ausmus",1,5,2
+start,palmd002,"Dean Palmer",1,6,5
+start,encaj001,"Juan Encarnacion",1,7,8
+start,garck002,"Karim Garcia",1,8,9
+start,cruzd001,"Deivi Cruz",1,9,6
+start,mlicd001,"Dave Mlicki",1,0,1
+play,1,0,mclem001,12,FFFBX,S9
+play,1,0,belld002,20,BBX,5/FL
+play,1,0,rodra001,22,BBSFX,S/78S.1-2
+play,1,0,olerj001,12,BFCX,D9.2-H;1-3
+play,1,0,marte001,01,SX,63/G.3-H;2-3
+play,1,0,buhnj001,12,SBCFS,K
+play,1,1,polol001,10,BX,9/L9
+play,1,1,jeffg001,01,CX,43/G
+play,1,1,higgb001,12,CSBX,5/P5
+play,2,0,guilc001,02,FFFS,K
+play,2,0,wilsd001,12,CBFX,D9
+play,2,0,camem001,01,CX,E6/G.2-3
+play,2,0,mclem001,00,X,46(1)3/GDP
+play,2,1,clart002,00,X,43/G
+play,2,1,ausmb001,21,BCBX,63/G
+play,2,1,palmd002,11,CBX,E6/G
+play,2,1,encaj001,01,CX,8/F8
+play,3,0,belld002,11,CBX,63/G
+play,3,0,rodra001,22,FBBFX,63/G
+play,3,0,olerj001,12,BCCX,3/G
+play,3,1,garck002,00,X,S8
+play,3,1,cruzd001,22,CCBFBX,64(1)3/GDP
+play,3,1,polol001,32,BBCBLFFX,31/G
+play,4,0,marte001,02,CCC,K/C
+play,4,0,buhnj001,11,CBX,8/F8
+play,4,0,guilc001,10,BX,43/G
+play,4,1,jeffg001,32,CBBBFX,63/G
+play,4,1,higgb001,12,CBFX,7/F7
+play,4,1,clart002,11,CBX,8/F8
+play,5,0,wilsd001,31,BBBCX,8/F8
+play,5,0,camem001,22,FBBCS,K
+play,5,0,mclem001,21,CBBX,S9
+play,5,0,belld002,01,CS,SB2
+play,5,0,belld002,12,CSFBFX,63/G
+play,5,1,ausmb001,00,,NP
+sub,mclem001,"Mark McLemore",0,1,4
+play,5,1,ausmb001,00,,NP
+sub,belld002,"David Bell",0,2,5
+play,5,1,ausmb001,00,,NP
+sub,ibanr001,"Raul Ibanez",0,7,7
+play,5,1,ausmb001,10,BX,43/G
+play,5,1,palmd002,00,X,9/F9
+play,5,1,encaj001,02,CCX,43/G
+play,6,0,rodra001,10,BX,S7
+play,6,0,olerj001,21,BBCB,WP.1-2
+play,6,0,olerj001,31,BBCBB,W
+play,6,0,marte001,32,BCCFBBX,13/G.2-3;1-2
+play,6,0,buhnj001,10,BX,8/F8S
+play,6,0,ibanr001,12,FBCX,S9/9S.3-H;2-H
+play,6,0,wilsd001,01,FX,4/P4
+play,6,1,garck002,10,BX,8/F8
+play,6,1,cruzd001,11,CBX,63/G
+play,6,1,polol001,32,BBCBLB,W
+play,6,1,jeffg001,31,BBBCX,9/F9
+play,7,0,camem001,00,,NP
+sub,andem002,"Matt Anderson",1,0,1
+play,7,0,camem001,02,CCS,K
+play,7,0,mclem001,02,CCS,K
+play,7,0,belld002,02,SCX,53/G
+play,7,1,higgb001,12,CBCX,S7/7S
+play,7,1,clart002,20,BBX,64(1)3/GDP
+play,7,1,ausmb001,00,X,9/F9
+play,8,0,rodra001,20,BBX,3/P3
+play,8,0,olerj001,11,CBX,S
+play,8,0,marte001,32,BSBFBX,S7.1-2
+play,8,0,buhnj001,01,CX,3/P3
+play,8,0,ibanr001,00,,NP
+sub,poolj001,"Jim Poole",1,0,1
+play,8,0,ibanr001,00,X,8/F8
+play,8,1,palmd002,00,,NP
+sub,gipsc001,"Charles Gipson",0,6,9
+play,8,1,palmd002,02,CSC,K/C
+play,8,1,encaj001,01,CX,43/G
+play,8,1,garck002,00,X,S9
+play,8,1,cruzd001,01,CX,64(1)/FO
+play,9,0,wilsd001,00,,NP
+sub,johnm004,"Mark J. Johnson",1,0,1
+play,9,0,wilsd001,32,BBBCFB,W
+play,9,0,camem001,10,BX,34/SH.1-2
+play,9,0,mclem001,01,CX,9/F9
+play,9,0,belld002,22,BSBSFS,K
+play,9,1,polol001,02,CFF,FLE2
+play,9,1,polol001,22,CFFBBX,8/F8
+play,9,1,jeffg001,11,CBX,7/F7
+play,9,1,higgb001,32,CBBBFX,2/FL
+data,er,selea001,0
+data,er,mlicd001,4
+data,er,andem002,0
+data,er,poolj001,0
+data,er,johnm004,0

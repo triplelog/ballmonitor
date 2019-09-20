@@ -1,0 +1,136 @@
+version,2
+info,visteam,ANA
+info,hometeam,SEA
+info,site,SEA03
+info,date,2000/05/06
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,wegnm901
+info,ump1b,reynj901
+info,ump2b,willc901
+info,ump3b,hirsj901
+info,pitches,pitches
+info,temp,55
+info,winddir,ltor
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,170
+info,attendance,43427
+info,wp,sasak001
+info,lp,holtm001
+info,save,
+start,erstd001,"Darin Erstad",0,1,7
+start,kenna001,"Adam Kennedy",0,2,4
+start,vaugm001,"Mo Vaughn",0,3,3
+start,salmt001,"Tim Salmon",0,4,9
+start,andeg001,"Garret Anderson",0,5,8
+start,glaut001,"Troy Glaus",0,6,5
+start,spies001,"Scott Spiezio",0,7,10
+start,molib001,"Ben Molina",0,8,2
+start,gil-b001,"Benji Gil",0,9,6
+start,merck001,"Kent Mercker",0,0,1
+start,camem001,"Mike Cameron",1,1,8
+start,javis001,"Stan Javier",1,2,7
+start,rodra001,"Alex Rodriguez",1,3,6
+start,marte001,"Edgar Martinez",1,4,10
+start,olerj001,"John Olerud",1,5,3
+start,buhnj001,"Jay Buhner",1,6,9
+start,belld002,"David Bell",1,7,5
+start,wilsd001,"Dan Wilson",1,8,2
+start,mclem001,"Mark McLemore",1,9,4
+start,mechg001,"Gil Meche",1,0,1
+play,1,0,erstd001,01,CX,63/G
+play,1,0,kenna001,01,SX,7/F7
+play,1,0,vaugm001,22,BFBFFX,9/F9
+play,1,1,camem001,22,CCFBBX,8/F8
+play,1,1,javis001,12,BCCS,K
+play,1,1,rodra001,32,CBBCBX,9/F9
+play,2,0,salmt001,32,BBSBFX,S8
+play,2,0,andeg001,12,FBSFFX,46(1)/FO
+play,2,0,glaut001,32,BBSSBS,K+CS2(26)/DP
+play,2,1,marte001,01,CX,63/G
+play,2,1,olerj001,02,FCC,K/C
+play,2,1,buhnj001,22,BCSBX,8/F8
+play,3,0,spies001,00,X,6/P6
+play,3,0,molib001,30,BBBB,W
+play,3,0,gil-b001,12,CSBS,K
+play,3,0,erstd001,21,CBBX,43/G
+play,3,1,belld002,01,CX,4/P4
+play,3,1,wilsd001,01,CX,7/L7
+play,3,1,mclem001,20,BBX,S7
+play,3,1,camem001,10,BX,9/F9
+play,4,0,kenna001,12,CFBX,31/G
+play,4,0,vaugm001,32,BCBBSFFFFFFS,K
+play,4,0,salmt001,31,CBBBB,W
+play,4,0,andeg001,31,BFBBX,S9.1-3
+play,4,0,glaut001,22,BBCCX,4/P4
+play,4,1,javis001,32,CSBBBS,K
+play,4,1,rodra001,31,FBBBX,S8
+play,4,1,marte001,00,X,S9/9S.1-3
+play,4,1,olerj001,32,CFBBBS,K
+play,4,1,buhnj001,21,BCBX,64(1)/FO
+play,5,0,spies001,22,BSBFS,K
+play,5,0,molib001,00,X,4/P4
+play,5,0,gil-b001,22,BCSBX,9/F9
+play,5,1,belld002,32,BBBCFC,K/C
+play,5,1,wilsd001,22,CCBBX,7/F7
+play,5,1,mclem001,31,BCBBB,W
+play,5,1,camem001,02,CSX,4/L4
+play,6,0,erstd001,12,CFFBX,13/G
+play,6,0,kenna001,01,LX,43/G
+play,6,0,vaugm001,30,BBBB,W
+play,6,0,salmt001,32,BBFFBB,W.1-2
+play,6,0,andeg001,01,CX,5/FL
+play,6,1,javis001,00,,NP
+sub,levia001,"Al Levine",0,0,1
+play,6,1,javis001,32,CBFBBC,K/C
+play,6,1,rodra001,22,BCSBC,K/C
+play,6,1,marte001,00,X,8/F8D
+play,7,0,glaut001,22,CBCBFS,K
+play,7,0,spies001,01,FX,5/L5
+play,7,0,molib001,12,BCSX,63/G
+play,7,1,olerj001,32,BCBFBX,43/G
+play,7,1,buhnj001,12,CFFBX,53/G
+play,7,1,belld002,30,BBBB,W
+play,7,1,wilsd001,32,BBCFFFFBX,S9.1-3
+play,7,1,mclem001,22,BCSFBX,4(1)/FO/G
+play,8,0,gil-b001,00,,NP
+sub,rhoda001,"Arthur Rhodes",1,0,1
+play,8,0,gil-b001,32,BBBCCFB,W
+play,8,0,erstd001,22,LLBBFFX,64(1)3/GDP
+play,8,0,kenna001,12,SSBX,63/G
+play,8,1,camem001,10,BX,7/F7
+play,8,1,javis001,00,X,63/G
+play,8,1,rodra001,22,BCFFFBX,D9
+play,8,1,marte001,30,IIII,IW
+play,8,1,olerj001,00,,NP
+sub,holtm001,"Mike Holtz",0,0,1
+play,8,1,olerj001,11,CBH,HP.2-3;1-2
+play,8,1,buhnj001,20,BBX,64(1)/FO
+play,9,0,vaugm001,00,,NP
+sub,sasak001,"Kazuhiro Sasaki",1,0,1
+play,9,0,vaugm001,32,BBCSBB,W
+play,9,0,salmt001,00,,NP
+sub,cleme001,"Edgard Clemente",0,3,12
+play,9,0,salmt001,31,BFBBB,W.1-2
+play,9,0,andeg001,01,FX,64(1)3/GDP.2-3
+play,9,0,glaut001,22,SSFBBC,K/C
+play,9,1,belld002,00,,NP
+sub,erstd001,"Darin Erstad",0,1,3
+play,9,1,belld002,00,,NP
+sub,cleme001,"Edgard Clemente",0,3,7
+play,9,1,belld002,22,BCCFBX,S7
+play,9,1,wilsd001,00,,NP
+sub,gipsc001,"Charles Gipson",1,7,12
+play,9,1,wilsd001,01,CX,14/SH.1-2
+play,9,1,mclem001,22,BBCCX,S8.2-H
+data,er,merck001,0
+data,er,levia001,0
+data,er,holtm001,1
+data,er,mechg001,0
+data,er,rhoda001,0
+data,er,sasak001,0

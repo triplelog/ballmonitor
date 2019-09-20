@@ -1,0 +1,134 @@
+version,2
+info,visteam,BOS
+info,hometeam,OAK
+info,site,OAK01
+info,date,2000/07/28
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,millb901
+info,ump1b,mealj901
+info,ump2b,younl901
+info,ump3b,drakr901
+info,pitches,pitches
+info,temp,65
+info,winddir,tolf
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,150
+info,attendance,28072
+info,wp,martp001
+info,lp,muldm001
+info,save,lowed001
+start,lewid001,"Darren Lewis",0,1,8
+start,offej001,"Jose Offerman",0,2,4
+start,daubb001,"Brian Daubach",0,3,3
+start,garcn001,"Nomar Garciaparra",0,4,6
+start,oleat001,"Troy O'Leary",0,5,7
+start,gilkb001,"Bernard Gilkey",0,6,9
+start,varij001,"Jason Varitek",0,7,2
+start,hatts001,"Scott Hatteberg",0,8,10
+start,sprae001,"Ed Sprague",0,9,5
+start,martp001,"Pedro Martinez",0,0,1
+start,longt002,"Terrence Long",1,1,8
+start,velar001,"Randy Velarde",1,2,4
+start,giamj001,"Jason Giambi",1,3,3
+start,saeno001,"Olmedo Saenz",1,4,10
+start,grieb001,"Ben Grieve",1,5,7
+start,tejam001,"Miguel Tejada",1,6,6
+start,chave001,"Eric Chavez",1,7,5
+start,giamj002,"Jeremy Giambi",1,8,9
+start,hernr002,"Ramon Hernandez",1,9,2
+start,muldm001,"Mark Mulder",1,0,1
+com,"$Carl Everett on game 4 of 10 game suspension"
+play,1,0,lewid001,22,CCBBX,5/L5
+play,1,0,offej001,21,BFBX,63/G
+play,1,0,daubb001,21,BCBX,31/G
+play,1,1,longt002,31,BCBBX,HR/9
+play,1,1,velar001,12,CCBX,63/G
+play,1,1,giamj001,32,CBBBCFS,K
+play,1,1,saeno001,02,CCX,63/G
+play,2,0,garcn001,00,X,S7/7S
+play,2,0,oleat001,11,FBX,8/F8
+play,2,0,gilkb001,11,BSX,64(1)3/GDP
+play,2,1,grieb001,22,FBFBS,K
+play,2,1,tejam001,32,BSBFBFFS,K
+play,2,1,chave001,31,BBBCX,3/G
+play,3,0,varij001,11,FBX,E5/TH1
+play,3,0,hatts001,12,BSSS,K
+play,3,0,sprae001,20,BBX,HR/78.1-H(UR)
+play,3,0,lewid001,20,BBX,9/F9
+play,3,0,offej001,02,CCX,3/G
+play,3,1,giamj002,12,CSBS,K
+play,3,1,hernr002,21,BBCX,S
+play,3,1,longt002,12,CBCX,43/G.1-2
+play,3,1,velar001,12,CBSS,K
+play,4,0,daubb001,30,BBBB,W
+play,4,0,garcn001,12,CFBX,HR/7.1-H
+play,4,0,oleat001,00,X,3/G
+play,4,0,gilkb001,11,FBX,S8
+play,4,0,varij001,02,FCFFS,K
+play,4,0,hatts001,31,BBBCB,W.1-2
+play,4,0,sprae001,10,BX,64(1)/FO.2-3
+play,4,1,giamj001,11,CBX,8/F8
+play,4,1,saeno001,11,CBX,43/G
+play,4,1,grieb001,22,CBBCS,K
+play,5,0,lewid001,00,X,S7/7S
+play,5,0,offej001,11,BFX,64(1)3/GDP
+play,5,0,daubb001,22,CCBBX,8/F8
+play,5,1,tejam001,02,FFFS,K
+play,5,1,chave001,22,BBFCX,5/FL
+play,5,1,giamj002,12,CFBS,K
+play,6,0,garcn001,32,BBCSFBFX,S8
+play,6,0,oleat001,32,BSBBCX,5/FL
+play,6,0,gilkb001,31,BBCBB,W.1-2
+play,6,0,varij001,01,FX,64(1)3/GDP
+play,6,1,hernr002,02,CFX,9/F9D
+play,6,1,longt002,00,X,9/F9
+play,6,1,velar001,22,CFBBX,S8
+play,6,1,giamj001,02,CSS,K
+play,7,0,hatts001,10,BX,3/G
+play,7,0,sprae001,00,X,53/G
+play,7,0,lewid001,12,CFBX,53/G
+play,7,1,saeno001,01,CX,S8
+play,7,1,grieb001,22,CBFBX,36(1)/FO
+play,7,1,tejam001,32,BBBCSB,W.1-2
+play,7,1,chave001,12,BCFS,K
+play,7,1,giamj002,02,FCS,K
+play,8,0,offej001,22,CCBBFC,K/C
+play,8,0,daubb001,10,BX,63/G
+play,8,0,garcn001,21,BBCX,63/G
+play,8,1,hernr002,00,,NP
+sub,garcr001,"Rich Garces",0,0,1
+play,8,1,hernr002,22,BBCFX,9/F9
+play,8,1,longt002,32,CBBCBX,31/G
+play,8,1,velar001,00,X,43/G
+play,9,0,oleat001,00,,NP
+sub,priea001,"Ariel Prieto",1,0,1
+play,9,0,oleat001,02,CFFS,K
+play,9,0,gilkb001,00,,NP
+sub,nixot001,"Trot Nixon",0,6,11
+play,9,0,nixot001,31,BBCBX,D/78
+play,9,0,varij001,32,FBFBFBX,5/FL
+play,9,0,hatts001,22,BCFFBS,K
+play,9,1,giamj001,00,,NP
+sub,offej001,"Jose Offerman",0,2,3
+play,9,1,giamj001,00,,NP
+sub,alexm001,"Manny Alexander",0,3,4
+play,9,1,giamj001,00,,NP
+sub,nixot001,"Trot Nixon",0,6,9
+play,9,1,giamj001,00,,NP
+sub,lowed001,"Derek Lowe",0,0,1
+play,9,1,giamj001,02,CCX,63/G
+play,9,1,saeno001,01,CX,3/FL
+play,9,1,grieb001,01,CX,S9
+play,9,1,tejam001,01,CB,WP.1-2
+play,9,1,tejam001,11,CBX,7/F7
+data,er,martp001,1
+data,er,garcr001,0
+data,er,lowed001,0
+data,er,muldm001,3
+data,er,priea001,0

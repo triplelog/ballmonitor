@@ -1,0 +1,137 @@
+version,2
+info,visteam,ANA
+info,hometeam,BAL
+info,site,BAL12
+info,date,2000/06/17
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,danlk901
+info,ump1b,katzt901
+info,ump2b,morrd901
+info,ump3b,fichm901
+info,pitches,pitches
+info,temp,81
+info,winddir,rtol
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,191
+info,attendance,45758
+info,wp,belct001
+info,lp,johnj007
+info,save,
+start,erstd001,"Darin Erstad",0,1,7
+start,stock001,"Kevin Stocker",0,2,6
+start,vaugm001,"Mo Vaughn",0,3,3
+start,salmt001,"Tim Salmon",0,4,9
+start,andeg001,"Garret Anderson",0,5,8
+start,glaut001,"Troy Glaus",0,6,5
+start,molib001,"Ben Molina",0,7,2
+start,kenna001,"Adam Kennedy",0,8,4
+start,palmo001,"Orlando Palmeiro",0,9,10
+start,belct001,"Tim Belcher",0,0,1
+start,andeb001,"Brady Anderson",1,1,8
+start,bordm001,"Mike Bordick",1,2,6
+start,deshd001,"Delino DeShields",1,3,4
+start,bellj002,"Albert Belle",1,4,9
+start,surhb001,"B.J. Surhoff",1,5,7
+start,ripkc001,"Cal Ripken",1,6,5
+start,clarw001,"Will Clark",1,7,3
+start,bainh001,"Harold Baines",1,8,10
+start,myerg001,"Greg Myers",1,9,2
+start,johnj007,"Jason Johnson",1,0,1
+play,1,0,erstd001,11,CBX,3/G
+play,1,0,stock001,22,FCBFFFBFS,K
+play,1,0,vaugm001,01,CX,63/G
+play,1,1,andeb001,32,CSBFBBFB,W
+play,1,1,bordm001,31,BBBCB,W.1-2
+play,1,1,deshd001,12,BCCS,K
+play,1,1,bellj002,12,CBSFX,46(1)3/GDP.2-3
+play,2,0,salmt001,21,BCBX,S
+play,2,0,andeg001,21,CBBX,9/L9
+play,2,0,glaut001,00,X,HR/7.1-H
+play,2,0,molib001,01,FX,5/L5
+play,2,0,kenna001,00,X,6/P6
+play,2,1,surhb001,32,BBCBCB,W
+play,2,1,ripkc001,01,CX,9/F9
+play,2,1,clarw001,32,BCFFBBX,D9/9D.1-3
+play,2,1,bainh001,32,CBBBCFB,W
+play,2,1,myerg001,22,BCBCFS,K
+play,2,1,andeb001,32,BCFFBBFC,K/C
+play,3,0,palmo001,12,CCBFFFFH,HP
+play,3,0,erstd001,02,CSFFC,K/C
+play,3,0,stock001,11,SBX,S7/7S.1-2
+play,3,0,vaugm001,11,BSX,5/FL
+play,3,0,salmt001,10,BX,S7.2-H;1-3;B-2(TH)
+play,3,0,andeg001,01,FX,HR/9.3-H;2-H
+play,3,0,glaut001,11,BCX,7/F7
+play,3,1,bordm001,32,CBBBFX,13/G
+play,3,1,deshd001,11,CBX,D9/9D
+play,3,1,bellj002,00,X,8/F8
+play,3,1,surhb001,20,BBX,31/G
+play,4,0,molib001,10,BX,7/F7
+play,4,0,kenna001,11,LBX,31/G
+play,4,0,palmo001,02,CSFX,53/G
+play,4,1,ripkc001,32,CBBBFB,W
+play,4,1,clarw001,11,CBX,8/F8D
+play,4,1,bainh001,11,CBX,46(1)3/GDP
+play,5,0,erstd001,12,CBSFX,13/G
+play,5,0,stock001,32,BFFBBX,43/G
+play,5,0,vaugm001,00,X,9/F9
+play,5,1,myerg001,00,X,D/89D
+play,5,1,andeb001,00,X,3/G.2-3
+play,5,1,bordm001,00,X,4/P4
+play,5,1,deshd001,12,FBFX,6/P6
+play,6,0,salmt001,22,CFBBFFC,K/C
+play,6,0,andeg001,32,BFBFFBFFFX,43/G
+play,6,0,glaut001,11,FBX,53/G
+play,6,1,bellj002,21,BFBX,HR/8
+play,6,1,surhb001,21,BFBX,S9
+play,6,1,ripkc001,10,BX,8/F8
+play,6,1,clarw001,00,,NP
+sub,holtm001,"Mike Holtz",0,0,1
+play,6,1,clarw001,20,BBX,7/F7
+play,6,1,bainh001,32,SCBBBFS,K
+play,7,0,molib001,11,CBX,7/F7D
+play,7,0,kenna001,21,BBFX,S8
+play,7,0,palmo001,30,BBBB,W.1-2
+play,7,0,erstd001,22,FFBFBX,S8.2-H;1-2
+play,7,0,stock001,10,BX,3(B)6(2)/LDP
+play,7,1,myerg001,32,CBBCBS,K
+play,7,1,andeb001,21,FBBX,9/L9
+play,7,1,bordm001,11,CBX,S7
+play,7,1,deshd001,31,BBSBB,W.1-2
+play,7,1,bellj002,00,,NP
+sub,levia001,"Al Levine",0,0,1
+play,7,1,bellj002,22,CBBFX,S7.2-H;1-2
+play,7,1,surhb001,11,BCX,S7/7S.2-H;1-2
+play,7,1,ripkc001,31,BBBCB,W.2-3;1-2
+play,7,1,clarw001,00,X,46(1)/FO
+play,8,0,vaugm001,00,,NP
+sub,tromm001,"Mike Trombley",1,0,1
+play,8,0,vaugm001,00,X,HR/7
+play,8,0,salmt001,00,X,63/G
+play,8,0,andeg001,12,BFFFX,43/G
+play,8,0,glaut001,12,BSSX,53/G
+play,8,1,bainh001,00,X,S8
+play,8,1,myerg001,11,BCX,64(1)3/GDP
+play,8,1,andeb001,21,CBBX,1/G
+play,9,0,molib001,00,,NP
+sub,molig001,"Gabe Molina",1,0,1
+play,9,0,molib001,02,CFX,E5/TH
+play,9,0,kenna001,00,X,S9.1-2
+play,9,0,palmo001,00,X,7/F7S
+play,9,0,erstd001,12,BCCFFS,K
+play,9,0,stock001,02,FFS,K
+play,9,1,bordm001,21,CBBX,S9
+play,9,1,deshd001,22,FBBFX,7/L7
+play,9,1,bellj002,10,BX,6(1)3/GDP
+data,er,belct001,1
+data,er,holtm001,2
+data,er,levia001,0
+data,er,johnj007,7
+data,er,tromm001,1
+data,er,molig001,0

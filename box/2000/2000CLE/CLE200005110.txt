@@ -1,0 +1,160 @@
+version,2
+info,visteam,KCA
+info,hometeam,CLE
+info,site,CLE08
+info,date,2000/05/11
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,hudsm901
+info,ump1b,welkt901
+info,ump2b,cedeg901
+info,ump3b,fichm901
+info,pitches,pitches
+info,temp,63
+info,winddir,rtol
+info,windspeed,7
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,168
+info,attendance,41905
+info,wp,wrigj002
+info,lp,durbc001
+info,save,
+start,damoj001,"Johnny Damon",0,1,7
+start,feblc001,"Carlos Febles",0,2,4
+start,sweem002,"Mike Sweeney",0,3,3
+start,dye-j001,"Jermaine Dye",0,4,9
+start,beltc001,"Carlos Beltran",0,5,8
+start,randj002,"Joe Randa",0,6,5
+start,quinm001,"Mark Quinn",0,7,10
+start,fabrj001,"Jorge Fabregas",0,8,2
+start,sancr001,"Rey Sanchez",0,9,6
+start,durbc001,"Chad Durbin",0,0,1
+start,alomr001,"Roberto Alomar",1,1,4
+start,vizqo001,"Omar Vizquel",1,2,6
+start,justd001,"David Justice",1,3,7
+start,ramim002,"Manny Ramirez",1,4,9
+start,thomj002,"Jim Thome",1,5,10
+start,sexsr001,"Richie Sexson",1,6,3
+start,frymt001,"Travis Fryman",1,7,5
+start,aloms001,"Sandy Alomar",1,8,2
+start,cabrj002,"Jolbert Cabrera",1,9,8
+start,wrigj002,"Jaret Wright",1,0,1
+play,1,0,damoj001,11,CBX,S8
+play,1,0,feblc001,12,BFCFX,2/FL
+play,1,0,sweem002,11,BFB,WP.1-2
+play,1,0,sweem002,21,BFBX,S7.2-3
+play,1,0,dye-j001,02,CFC,K/C
+play,1,0,beltc001,20,BBX,9/F9
+play,1,1,alomr001,21,CBBX,S7/7S
+play,1,1,vizqo001,01,CX,S8.1-2
+play,1,1,justd001,20,BBX,S9.2-3;1-2
+play,1,1,ramim002,01,CX,HR/7.3-H;2-H;1-H
+play,1,1,thomj002,21,BFBX,43/G
+play,1,1,sexsr001,12,CFFBS,K
+play,1,1,frymt001,11,BFX,13/G
+play,2,0,randj002,12,BCFFX,4/P4
+play,2,0,quinm001,22,BFCBC,K/C
+play,2,0,fabrj001,11,BFX,7/F7
+play,2,1,aloms001,02,CCX,D7
+play,2,1,cabrj002,00,X,S2/BG2.2-3
+play,2,1,alomr001,31,BBBCX,S9.3-H;1-2
+play,2,1,vizqo001,00,X,S5/BG5.2-3;1-2
+play,2,1,justd001,02,CCC,K/C
+play,2,1,ramim002,10,B+1,PO1(E2).3-H;2-H;1-3
+play,2,1,ramim002,31,B+1BCBB,W
+play,2,1,thomj002,00,X,S8.3-H;1-2
+play,2,1,sexsr001,00,,NP
+sub,rakej001,"Jason Rakers",0,0,1
+play,2,1,sexsr001,02,CFX,S8/8S.2-H;1-2
+play,2,1,frymt001,12,CSBC,K/C
+play,2,1,aloms001,22,FBFBX,64(1)/FO
+play,3,0,sancr001,20,BBX,43/G
+play,3,0,damoj001,01,CX,31/G
+play,3,0,feblc001,32,BFBBSX,6/P6
+play,3,1,cabrj002,01,FX,9/F9
+play,3,1,alomr001,12,FFBX,43/G
+play,3,1,vizqo001,21,BCBX,8/F8
+play,4,0,sweem002,20,BBX,S
+play,4,0,dye-j001,01,CX,4/P4
+play,4,0,beltc001,10,BX,7/F7
+play,4,0,randj002,00,X,54(1)/FO
+play,4,1,justd001,11,BCX,HR/9
+play,4,1,ramim002,02,CCS,K
+play,4,1,thomj002,00,X,HR/78
+play,4,1,sexsr001,22,SBBSFC,K/C
+play,4,1,frymt001,21,BCBX,53/G
+play,5,0,quinm001,21,BCBX,63/G
+play,5,0,fabrj001,00,X,S8/8S
+play,5,0,sancr001,00,X,63/G.1-2
+play,5,0,damoj001,00,X,13/G
+play,5,1,aloms001,00,X,S8/8S
+play,5,1,cabrj002,11,BSX,S8.1-2
+play,5,1,alomr001,11,BCX,64(1)3/GDP.2-3
+play,5,1,vizqo001,21,BCBX,2/FL
+play,6,0,feblc001,12,CCBS,K
+play,6,0,sweem002,32,CBSBFFBFB,W
+play,6,0,dye-j001,00,X,64(1)3/GDP
+play,6,1,justd001,00,,NP
+sub,reicd001,"Dan Reichert",0,0,1
+play,6,1,justd001,10,BX,S9
+play,6,1,ramim002,31,FBBBX,HR/9.1-H
+play,6,1,thomj002,22,CBSBX,3/G
+play,6,1,sexsr001,22,BSSBS,K
+play,6,1,frymt001,31,CBBBB,W
+play,6,1,aloms001,21,BBCX,S9.1-2
+play,6,1,cabrj002,12,SSFFBX,S7.2-H;1-2
+play,6,1,alomr001,30,BBBB,W.2-3;1-2
+play,6,1,vizqo001,22,BCBCX,S8.3-H;2-H;1-3
+play,6,1,justd001,00,,NP
+sub,witaj001,"Jay Witasick",0,0,1
+play,6,1,justd001,00,X,7/F7
+play,7,0,beltc001,00,,NP
+sub,ramia002,"Alex Ramirez",1,4,9
+play,7,0,beltc001,32,BBBCFX,13/G
+play,7,0,randj002,00,,NP
+sub,reboj001,"Jeff Reboulet",0,6,11
+play,7,0,reboj001,21,BCBX,5/P5
+play,7,0,quinm001,30,BBBB,W
+play,7,0,fabrj001,32,BBSSFBX,3/G
+play,7,1,ramia002,00,,NP
+sub,ordal001,"Luis Ordaz",0,2,4
+play,7,1,ramia002,00,,NP
+sub,reboj001,"Jeff Reboulet",0,6,5
+play,7,1,ramia002,00,,NP
+sub,poses001,"Scott Pose",0,4,9
+play,7,1,ramia002,00,,NP
+sub,mccad001,"David McCarty",0,1,7
+play,7,1,ramia002,12,FFBX,53/G
+play,7,1,thomj002,21,CBBX,D9
+play,7,1,sexsr001,02,CCX,23/G
+play,7,1,frymt001,10,BX,63/G
+play,8,0,sancr001,00,,NP
+sub,cabrj002,"Jolbert Cabrera",1,9,4
+play,8,0,sancr001,00,,NP
+sub,whitm001,"Mark Whiten",1,1,8
+play,8,0,sancr001,10,BX,63/G
+play,8,0,mccad001,32,CBBFBS,K
+play,8,0,ordal001,00,,NP
+sub,reeds001,"Steve Reed",1,0,1
+play,8,0,ordal001,12,CCBX,S8/8S
+play,8,0,sweem002,22,CBFBX,13/G
+play,8,1,aloms001,00,,NP
+sub,bottr001,"Ricky Bottalico",0,0,1
+play,8,1,aloms001,32,CCBFBFBX,S
+play,8,1,cabrj002,00,X,S7.1-2
+play,8,1,whitm001,00,X,16(1)/FO.2-3
+play,8,1,vizqo001,11,CBX,7/FDP.3XH(72)
+play,9,0,poses001,10,BX,7/F7
+play,9,0,beltc001,00,X,8/L8
+play,9,0,reboj001,02,SFS,K
+data,er,durbc001,9
+data,er,rakej001,2
+data,er,reicd001,5
+data,er,witaj001,0
+data,er,bottr001,0
+data,er,wrigj002,0
+data,er,reeds001,0

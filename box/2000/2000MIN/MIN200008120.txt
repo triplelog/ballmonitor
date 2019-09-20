@@ -1,0 +1,155 @@
+version,2
+info,visteam,TOR
+info,hometeam,MIN
+info,site,MIN03
+info,date,2000/08/12
+info,number,0
+info,starttime,6:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,demud901
+info,ump1b,eddid901
+info,ump2b,relic901
+info,ump3b,carlm901
+info,pitches,pitches
+info,temp,72
+info,winddir,tolf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,183
+info,attendance,30161
+info,wp,redmm002
+info,lp,loaie001
+info,save,hawkl001
+start,stews002,"Shannon Stewart",0,1,7
+start,gonza001,"Alex S. Gonzalez",0,2,6
+start,cruzj004,"Jose Cruz",0,3,8
+start,delgc001,"Carlos Delgado",0,4,3
+start,batit001,"Tony Batista",0,5,5
+start,greet003,"Todd Greene",0,6,10
+start,martd002,"Dave Martinez",0,7,9
+start,grebc001,"Craig Grebeck",0,8,4
+start,casta001,"Alberto Castillo",0,9,2
+start,loaie001,"Esteban Loaiza",0,0,1
+start,guzmc001,"Cristian Guzman",1,1,6
+start,canij001,"Jay Canizaro",1,2,4
+start,lawtm002,"Matt Lawton",1,3,9
+start,coomr001,"Ron Coomer",1,4,3
+start,ortid001,"David Ortiz",1,5,10
+start,koskc001,"Corey Koskie",1,6,5
+start,huntt001,"Torii Hunter",1,7,8
+start,jonej003,"Jacque Jones",1,8,7
+start,moelc001,"Chad Moeller",1,9,2
+start,redmm002,"Mark Redman",1,0,1
+play,1,0,stews002,32,CBFBFBX,5/L5
+play,1,0,gonza001,21,BCBX,8/F8D
+play,1,0,cruzj004,01,CX,8/F8
+play,1,1,guzmc001,22,BFBCC,K/C
+play,1,1,canij001,01,FX,E6/TH1
+play,1,1,lawtm002,32,BSSBBX,D9.1-H(UR)
+play,1,1,coomr001,22,BFBFFX,FC1.2X3(15);B-2#
+play,1,1,ortid001,11,BCX,S7.2-H(UR)
+play,1,1,koskc001,11,FBX,43/G
+play,2,0,delgc001,00,,NP
+sub,ardod001,"Daniel Ardoin",1,9,2
+com,"$Moeller left with torn knee ligament"
+play,2,0,delgc001,32,CBBBFB,W
+play,2,0,batit001,00,X,7/F7D
+play,2,0,greet003,10,BX,S8/8S.1-2
+play,2,0,martd002,22,FBBSX,S9/9S.2-3;1-2
+play,2,0,grebc001,00,X,S7.3-H;2-3;1-2
+play,2,0,casta001,22,SBBFC,K/C
+play,2,0,stews002,22,SFBBX,8/F8
+play,2,1,huntt001,10,BX,S8
+play,2,1,jonej003,21,SBBX,46(1)/FO
+play,2,1,ardod001,00,X,9/F9
+play,2,1,guzmc001,00,X,S7.1-3
+play,2,1,canij001,21,BBFX,S7.3-H;1-2
+play,2,1,lawtm002,32,BBCCBFB,W.2-3;1-2
+play,2,1,coomr001,02,FSC,K/C
+play,3,0,gonza001,22,BCBSC,K/C
+play,3,0,cruzj004,32,CBBCBX,8/F8
+play,3,0,delgc001,12,BCSX,63/G
+play,3,1,ortid001,12,BFFFFX,D7
+play,3,1,koskc001,21,BFBX,43/G.2-3
+play,3,1,huntt001,02,FSFX,HR/9.3-H
+play,3,1,jonej003,00,X,3/G
+play,3,1,ardod001,32,BCBBSFB,W
+play,3,1,guzmc001,00,X,S9/9S.1X3(965)
+play,4,0,batit001,10,BX,E8/F.B-2
+play,4,0,greet003,00,X,63/G
+play,4,0,martd002,12,CCFBS,K
+play,4,0,grebc001,12,BCCX,S8.2XH(82)
+play,4,1,canij001,02,CCFS,K
+play,4,1,lawtm002,00,X,S
+play,4,1,coomr001,11,BCX,54(1)/FO
+play,4,1,ortid001,02,CSX,7/F7
+play,5,0,casta001,10,BX,3/G
+play,5,0,stews002,21,BFBX,S8
+play,5,0,gonza001,22,BFBFFFX,63/G.1-2
+play,5,0,cruzj004,31,BCBBX,53/G
+play,5,1,koskc001,32,CSBBBB,W
+play,5,1,huntt001,11,CBX,S7.1-2
+play,5,1,jonej003,31,BBBFX,46(1)3/GDP.2-3
+play,5,1,ardod001,02,FSFFFC,K/C
+play,6,0,delgc001,10,BX,8/F8D
+play,6,0,batit001,20,BBX,S7
+play,6,0,greet003,22,FFBBX,43/G.1-2
+play,6,0,martd002,01,SX,9/L9
+play,6,1,guzmc001,22,FBSBS,K
+play,6,1,canij001,00,X,4/P4
+play,6,1,lawtm002,22,CBSBFFX,63/G
+play,7,0,grebc001,00,,NP
+sub,maysj001,"Joe Mays",1,0,1
+play,7,0,grebc001,11,CBX,D7/7D
+play,7,0,casta001,02,FCS,K
+play,7,0,stews002,12,CFBFX,S7.2-H
+play,7,0,gonza001,20,BBX,6/P6
+play,7,0,cruzj004,00,X,8/F8
+play,7,1,coomr001,00,,NP
+sub,guthm001,"Mark Guthrie",0,0,1
+play,7,1,coomr001,02,CSX,53/G
+play,7,1,ortid001,10,BX,S9/9S
+play,7,1,koskc001,00,X,S7/7S.1-2
+play,7,1,huntt001,22,CFBBFS,K
+play,7,1,jonej003,02,CSX,13/G
+play,8,0,delgc001,00,,NP
+sub,millt001,"Travis Miller",1,0,1
+play,8,0,delgc001,31,FBBBB,W
+play,8,0,batit001,00,,NP
+sub,hawkl001,"LaTroy Hawkins",1,0,1
+play,8,0,batit001,10,BX,S.1-2
+play,8,0,greet003,00,,NP
+sub,fullb001,"Brad Fullmer",0,6,11
+play,8,0,fullb001,02,CFFX,46(1)3/GDP.2-3
+play,8,0,martd002,32,BCBBFS,K
+play,8,1,ardod001,00,,NP
+sub,frasj001,"John Frascatore",0,0,1
+play,8,1,ardod001,30,BBBB,W
+play,8,1,guzmc001,12,CCBFX,64(1)/FO.B-2(E4/TH1)
+play,8,1,canij001,32,CBBFBX,43/G.2-3
+play,8,1,lawtm002,32,BFCBBB,W
+play,8,1,coomr001,00,,NP
+sub,hockd001,"Denny Hocking",1,3,12
+play,8,1,coomr001,00,X,S7.3-H;1-3;B-2(E7/TH)
+play,8,1,ortid001,00,X,31/G
+play,9,0,grebc001,00,,NP
+sub,hockd001,"Denny Hocking",1,3,9
+play,9,0,grebc001,22,CBBCS,K
+play,9,0,casta001,00,,NP
+sub,fletd001,"Darrin Fletcher",0,9,11
+play,9,0,fletd001,22,SFBBS,K
+play,9,0,stews002,30,BBBB,W
+play,9,0,gonza001,02,FFB,DI.1-2
+play,9,0,gonza001,12,FFBX,S8/8S.2-H
+play,9,0,cruzj004,00,B,DI.1-2
+play,9,0,cruzj004,22,BSBSC,K/C
+data,er,loaie001,3
+data,er,guthm001,0
+data,er,frasj001,1
+data,er,redmm002,1
+data,er,maysj001,1
+data,er,millt001,0
+data,er,hawkl001,1

@@ -1,0 +1,165 @@
+version,2
+info,visteam,DET
+info,hometeam,BOS
+info,site,BOS07
+info,date,2000/05/21
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,willc901
+info,ump1b,reynj901
+info,ump2b,wegnm901
+info,ump3b,fichm901
+info,pitches,pitches
+info,temp,53
+info,winddir,fromcf
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,214
+info,attendance,31893
+info,wp,nomoh001
+info,lp,martr002
+info,save,jonet003
+start,jeffg001,"Gregg Jefferies",0,1,3
+start,ausmb001,"Brad Ausmus",0,2,2
+start,beckr002,"Rich Becker",0,3,8
+start,gonzj002,"Juan Gonzalez",0,4,9
+start,higgb001,"Bobby Higginson",0,5,7
+start,palmd002,"Dean Palmer",0,6,5
+start,fickr001,"Robert Fick",0,7,10
+start,macij001,"Jose Macias",0,8,4
+start,cruzd001,"Deivi Cruz",0,9,6
+start,nomoh001,"Hideo Nomo",0,0,1
+start,offej001,"Jose Offerman",1,1,4
+start,nixot001,"Trot Nixon",1,2,9
+start,daubb001,"Brian Daubach",1,3,10
+start,stanm002,"Mike Stanley",1,4,3
+start,everc001,"Carl Everett",1,5,8
+start,oleat001,"Troy O'Leary",1,6,7
+start,varij001,"Jason Varitek",1,7,2
+start,valej002,"John Valentin",1,8,5
+start,sadld001,"Donnie Sadler",1,9,6
+start,martr002,"Ramon Martinez",1,0,1
+play,1,0,jeffg001,21,CBBX,HR/9
+play,1,0,ausmb001,22,CBBCX,63/G
+play,1,0,beckr002,32,CBSBFBB,W
+play,1,0,gonzj002,22,BCFBS,K
+play,1,0,higgb001,21,BCBX,9/F9S
+play,1,1,offej001,01,FX,43/G
+play,1,1,nixot001,21,CBBX,31/G
+play,1,1,daubb001,01,CX,9/F9D
+play,2,0,palmd002,30,BBBX,D9
+play,2,0,fickr001,02,CFX,43/G.2-3
+play,2,0,macij001,01,SX,S7.3-H
+play,2,0,cruzd001,22,CBBFX,9/F9
+play,2,0,jeffg001,11,CBX,43/G
+play,2,1,stanm002,32,CBSBBB,W
+play,2,1,everc001,32,BCFBFFBFFS,K
+play,2,1,oleat001,11,CBX,9/F9D
+play,2,1,varij001,12,CBSS,K
+play,3,0,ausmb001,01,CX,S6.B-2(E6/TH1)
+play,3,0,beckr002,01,CX,S9.2-3
+play,3,0,gonzj002,02,FCX,D9.3-H;1-3
+play,3,0,higgb001,30,BBBI,IW
+play,3,0,palmd002,00,X,54(1)/FO.3-H;2-3
+play,3,0,fickr001,30,BBBB,W.1-2
+play,3,0,macij001,00,,NP
+sub,wasdj001,"John Wasdin",1,0,1
+play,3,0,macij001,10,BX,S.3-H;2-3;1-2
+play,3,0,cruzd001,01,SX,7/SF.3-H
+play,3,0,jeffg001,32,BBCCFBX,S7.2-H;1-3
+play,3,0,ausmb001,31,BCBBX,4/P4
+play,3,1,valej002,01,CX,S7
+play,3,1,sadld001,22,BCSFBS,K
+play,3,1,offej001,32,SCBBBFX,7/F7
+play,3,1,nixot001,02,CSX,S8.1-2
+play,3,1,daubb001,32,BFBFBFC,K/C
+play,4,0,beckr002,00,X,D7
+play,4,0,gonzj002,32,BBBCSS,K
+play,4,0,higgb001,32,CBBSBC,K/C
+play,4,0,palmd002,22,BCCBFS,K
+play,4,1,stanm002,31,CBBBX,7/F7D
+play,4,1,everc001,11,FBX,9/F9
+play,4,1,oleat001,32,CBSBBX,7/F7
+play,5,0,fickr001,10,BX,4/P4
+play,5,0,macij001,00,X,1/P1
+play,5,0,cruzd001,20,BBX,4/L4
+play,5,1,varij001,31,BBBCB,W
+play,5,1,valej002,32,BCFBBFC,K/C
+play,5,1,sadld001,22,BCBFX,S9.1-2
+play,5,1,offej001,22,BBFFFS,K
+play,5,1,nixot001,20,BBX,7/F7S
+play,6,0,jeffg001,00,,NP
+sub,cormr001,"Rheal Cormier",1,0,1
+play,6,0,jeffg001,01,CX,9/F9
+play,6,0,ausmb001,32,CBBBCX,S8
+play,6,0,beckr002,22,CBCBX,7/F7
+play,6,0,gonzj002,11,BFX,64(1)/FO
+play,6,1,daubb001,10,BX,8/F8
+play,6,1,stanm002,10,BX,HR/7D
+play,6,1,everc001,31,BBBCX,S9
+play,6,1,oleat001,00,,NP
+sub,blaiw001,"Willie Blair",0,0,1
+play,6,1,oleat001,21,BFBX,S8.1-2
+play,6,1,varij001,11,BFX,3/P3
+play,6,1,valej002,21,BBCX,64(1)/FO.2-3
+play,7,0,higgb001,12,CBCFX,9/F9
+play,7,0,palmd002,32,FBBFBS,K
+play,7,0,fickr001,20,BBX,9/F9D
+play,7,1,sadld001,01,CX,S9
+play,7,1,offej001,00,X,S5/BG5.1-2
+play,7,1,nixot001,00,,NP
+sub,mcdia001,"Allen McDill",0,0,1
+play,7,1,nixot001,00,,NP
+sub,fryej001,"Jeff Frye",1,2,11
+play,7,1,fryej001,32,BBCBCX,S7.2-3;1-2
+play,7,1,daubb001,00,X,5/FL
+play,7,1,stanm002,00,,NP
+sub,andem002,"Matt Anderson",0,0,1
+play,7,1,stanm002,31,BBBCB,W.3-H;2-3;1-2
+play,7,1,everc001,32,SCBFBFBB,W.3-H;2-3;1-2
+play,7,1,oleat001,00,X,8/SF.3-H;2-3
+play,7,1,varij001,32,CFBBFFBS,K
+play,8,0,macij001,00,,NP
+sub,fryej001,"Jeff Frye",1,2,9
+play,8,0,macij001,00,,NP
+sub,garcr001,"Rich Garces",1,0,1
+play,8,0,macij001,12,CBFC,K/C
+play,8,0,cruzd001,12,BCFFS,K
+play,8,0,jeffg001,32,BBBCCX,9/F9
+play,8,1,valej002,00,,NP
+sub,pattd001,"Danny Patterson",0,0,1
+play,8,1,valej002,22,BFCBX,S8
+play,8,1,sadld001,11,CBX,S8.1-2
+play,8,1,offej001,00,,NP
+sub,brocd001,"Doug Brocail",0,0,1
+play,8,1,offej001,12,BSSS,K
+play,8,1,fryej001,22,CSBBFX,D7.2-H;1-3
+play,8,1,daubb001,32,BSSBBS,K
+play,8,1,stanm002,32,BCBCBFFFFC,K/C
+play,9,0,ausmb001,00,,NP
+sub,lowed001,"Derek Lowe",1,0,1
+play,9,0,ausmb001,00,X,4/P4
+play,9,0,beckr002,21,BCBX,6/P6
+play,9,0,gonzj002,22,CCFBBFX,D/78
+play,9,0,higgb001,02,CFC,K/C
+play,9,1,everc001,00,,NP
+sub,jonet003,"Todd Jones",0,0,1
+play,9,1,everc001,22,FBBCS,K
+play,9,1,oleat001,00,X,63/G
+play,9,1,varij001,22,BCBSFS,K
+data,er,nomoh001,1
+data,er,blaiw001,2
+data,er,mcdia001,1
+data,er,andem002,0
+data,er,pattd001,1
+data,er,brocd001,0
+data,er,jonet003,0
+data,er,martr002,7
+data,er,wasdj001,0
+data,er,cormr001,0
+data,er,garcr001,0
+data,er,lowed001,0

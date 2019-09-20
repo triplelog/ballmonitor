@@ -1,0 +1,148 @@
+version,2
+info,visteam,ATL
+info,hometeam,PHI
+info,site,PHI12
+info,date,2000/06/17
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,vanvm901
+info,ump1b,reilm901
+info,ump2b,kellj901
+info,ump3b,coope901
+info,pitches,pitches
+info,temp,86
+info,winddir,rtol
+info,windspeed,9
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,161
+info,attendance,37292
+info,wp,polic001
+info,lp,mulht001
+info,save,
+start,veraq001,"Quilvio Veras",0,1,4
+start,jonea002,"Andruw Jones",0,2,8
+start,jonec004,"Chipper Jones",0,3,5
+start,galaa001,"Andres Galarraga",0,4,3
+start,jordb001,"Brian Jordan",0,5,9
+start,lopej001,"Javy Lopez",0,6,2
+start,sandr002,"Reggie Sanders",0,7,7
+start,derom001,"Mark DeRosa",0,8,6
+start,mulht001,"Terry Mulholland",0,9,1
+start,gland001,"Doug Glanville",1,1,8
+start,gantr001,"Ron Gant",1,2,7
+start,abreb001,"Bobby Abreu",1,3,9
+start,roles001,"Scott Rolen",1,4,5
+start,burrp001,"Pat Burrell",1,5,3
+start,jordk001,"Kevin Jordan",1,6,4
+start,ariaa001,"Alex Arias",1,7,6
+start,print001,"Tom Prince",1,8,2
+start,polic001,"Cliff Politte",1,9,1
+play,1,0,veraq001,22,CFBBFS,K
+play,1,0,jonea002,02,SCC,K/C
+play,1,0,jonec004,30,BBBB,W
+play,1,0,galaa001,12,BFFS,K
+play,1,1,gland001,02,CSX,43/G
+play,1,1,gantr001,01,SX,D9
+play,1,1,abreb001,32,BBBCFX,S.2-3
+play,1,1,roles001,10,BX,S9/9S.3-H;1-2
+play,1,1,burrp001,12,FCBX,S9/9S.2-H;1-2
+play,1,1,jordk001,32,CBBBFX,D/78.2-H;1-3
+play,1,1,ariaa001,30,IIII,IW
+play,1,1,print001,00,X,64(1)3/GDP
+play,2,0,jordb001,32,FBBBSFS,K
+play,2,0,lopej001,12,CFBX,53/G
+play,2,0,sandr002,20,BBX,HR/7
+play,2,0,derom001,11,BCX,43/G
+play,2,1,polic001,32,BBCBFB,W
+play,2,1,gland001,12,BLFC,K/C
+play,2,1,gantr001,22,CFBBX,64(1)3/GDP
+play,3,0,mulht001,32,FBFFBFBX,13/G
+play,3,0,veraq001,12,FBFX,4/L4
+play,3,0,jonea002,31,BBFBX,HR/78
+play,3,0,jonec004,00,X,S8
+play,3,0,galaa001,32,FSBBBS,K
+play,3,1,abreb001,10,BX,S8
+play,3,1,roles001,21,CBBX,S8.1-2
+play,3,1,burrp001,10,BX,8/F8
+play,3,1,jordk001,10,BX,9/L9
+play,3,1,ariaa001,01,CX,D7.2-H;1-H
+play,3,1,print001,01,CX,7/F7
+play,4,0,jordb001,21,BFBX,53/G
+play,4,0,lopej001,12,SBFX,63/G
+play,4,0,sandr002,11,BCX,53/G
+play,4,1,polic001,22,CSBBS,K
+play,4,1,gland001,01,FX,6/L6
+play,4,1,gantr001,00,X,53/G
+play,5,0,derom001,22,SBBFX,3/P3
+play,5,0,mulht001,01,CX,31/G
+play,5,0,veraq001,11,FBX,S9/9S
+play,5,0,jonea002,10,BX,D7/7S.1-3
+play,5,0,jonec004,12,BFSS,K
+play,5,1,abreb001,20,BBX,D8
+play,5,1,roles001,12,FBCX,53/G
+play,5,1,burrp001,22,SBSBS,K
+play,5,1,jordk001,02,CCFFFFFS,K
+play,6,0,galaa001,12,FBFFFS,K
+play,6,0,jordb001,10,BX,7/F7
+play,6,0,lopej001,20,BBX,D7
+play,6,0,sandr002,22,CCBFBB,WP.2-3
+play,6,0,sandr002,32,CCBFBBX,3/P3
+play,6,1,ariaa001,12,CBCX,HR/7
+play,6,1,print001,00,X,S7/7S
+play,6,1,polic001,00,,NP
+sub,sefck001,"Kevin Sefcik",1,9,11
+play,6,1,sefck001,12,LLFBX,43/G.1-2
+play,6,1,gland001,01,CX,D7.2-H;BX3(75)
+play,6,1,gantr001,21,SBBX,D/78D
+play,6,1,abreb001,32,BBBCSX,9/F9D
+play,7,0,derom001,00,,NP
+sub,lockk001,"Keith Lockhart",0,8,11
+play,7,0,lockk001,00,,NP
+sub,brocc001,"Chris Brock",1,9,1
+play,7,0,lockk001,32,BBBCSB,W
+play,7,0,mulht001,00,,NP
+sub,joynw001,"Wally Joyner",0,9,11
+play,7,0,joynw001,21,BFBX,46(1)/FO
+play,7,0,veraq001,11,CBX,46(1)/FO
+play,7,0,jonea002,01,FX,64(1)/FO
+play,7,1,roles001,00,,NP
+sub,jonec004,"Chipper Jones",0,3,6
+play,7,1,roles001,00,,NP
+sub,lockk001,"Keith Lockhart",0,8,5
+play,7,1,roles001,00,,NP
+sub,wengd001,"Don Wengert",0,9,1
+play,7,1,roles001,11,CBX,63/G
+play,7,1,burrp001,21,CBBX,8/L8
+play,7,1,jordk001,21,BBFX,63/G
+play,8,0,jonec004,01,CX,HR/7
+play,8,0,galaa001,22,SCBBC,K/C
+play,8,0,jordb001,32,CBBSFBS,K
+play,8,0,lopej001,31,BBBCB,W
+play,8,0,sandr002,00,X,43/G
+play,8,1,ariaa001,32,BCBBCB,W
+play,8,1,print001,11,FBX,S1/BG1.1-2
+play,8,1,brocc001,00,,NP
+sub,duceb001,"Rob Ducey",1,9,11
+play,8,1,duceb001,10,BX,7/F7S
+play,8,1,gland001,22,BBFSX,S9.2-3;1-2
+play,8,1,gantr001,00,X,3/P3
+play,8,1,abreb001,32,CBBBCFX,S8.3-H;2-H;1-3
+play,8,1,roles001,21,FBBX,7/F7
+play,9,0,lockk001,00,,NP
+sub,hubbt001,"Trenidad Hubbard",0,8,11
+play,9,0,hubbt001,00,,NP
+sub,holzm001,"Mark Holzemer",1,9,1
+play,9,0,hubbt001,12,FFBS,K
+play,9,0,wengd001,00,,NP
+sub,bonib001,"Bobby Bonilla",0,9,11
+play,9,0,bonib001,22,BFBSC,K/C
+play,9,0,veraq001,00,X,9/F9
+data,er,mulht001,7
+data,er,wengd001,2
+data,er,polic001,2
+data,er,brocc001,1
+data,er,holzm001,0

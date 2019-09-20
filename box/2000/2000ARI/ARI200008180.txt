@@ -1,0 +1,162 @@
+version,2
+info,visteam,CHN
+info,hometeam,ARI
+info,site,PHO01
+info,date,2000/08/18
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,schrp901
+info,ump1b,mcclt901
+info,ump2b,rapue901
+info,ump3b,cuzzp901
+info,pitches,pitches
+info,temp,72
+info,winddir,ltor
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,155
+info,attendance,44440
+info,wp,schic002
+info,lp,quevr001
+info,save,
+start,youne001,"Eric Young",0,1,4
+start,gutir001,"Ricky Gutierrez",0,2,6
+start,sosas001,"Sammy Sosa",0,3,9
+start,gracm001,"Mark Grace",0,4,3
+start,whitr001,"Rondell White",0,5,7
+start,reedj001,"Jeff Reed",0,6,2
+start,bufod001,"Damon Buford",0,7,8
+start,husoj001,"Jeff Huson",0,8,5
+start,quevr001,"Ruben Quevedo",0,9,1
+start,womat001,"Tony Womack",1,1,6
+start,bellj001,"Jay Bell",1,2,4
+start,gonzl001,"Luis Gonzalez",1,3,7
+start,willm003,"Matt D. Williams",1,4,5
+start,finls001,"Steve Finley",1,5,8
+start,colbg001,"Greg Colbrunn",1,6,3
+start,milld002,"Damian Miller",1,7,2
+start,bautd001,"Danny Bautista",1,8,9
+start,schic002,"Curt Schilling",1,9,1
+play,1,0,youne001,11,CBX,53/G
+play,1,0,gutir001,02,FCS,K
+play,1,0,sosas001,22,BBFSS,K
+play,1,1,womat001,22,BCBFFFS,K
+play,1,1,bellj001,12,CFBC,K/C
+play,1,1,gonzl001,22,BFBFX,63/G
+play,2,0,gracm001,22,BCFBFFFFX,31/G
+play,2,0,whitr001,12,CFBS,K
+play,2,0,reedj001,01,CX,7/F7S
+play,2,1,willm003,32,BBSFBB,W
+play,2,1,finls001,32,CBBFFFFBFFX,HR/9.1-H
+play,2,1,colbg001,11,BFX,HR/7
+play,2,1,milld002,00,X,8/F8
+play,2,1,bautd001,12,CBSX,S
+play,2,1,schic002,10,BX,S9.1-3
+play,2,1,womat001,00,X,HR/9.3-H;1-H
+play,2,1,bellj001,22,BCBCX,43/G
+play,2,1,gonzl001,11,BCX,6/P6
+play,3,0,bufod001,02,CFFS,K
+play,3,0,husoj001,22,BFFBFX,53/G
+play,3,0,quevr001,00,X,S9
+play,3,0,youne001,01,CX,S7.1-2
+play,3,0,gutir001,02,CSC,K/C
+play,3,1,willm003,32,CCFFFBFBFFFBB,W
+play,3,1,finls001,22,BBFFFFFX,7/L7
+play,3,1,colbg001,10,BX,S8.1-3
+play,3,1,milld002,32,FSBBBB,W.1-2
+play,3,1,bautd001,00,X,T8.3-H;2-H;1-H
+play,3,1,schic002,22,SSBBX,FC6.3-3;B-1
+play,3,1,womat001,02,FFFS,K
+play,3,1,bellj001,00,X,8/F8
+play,4,0,sosas001,00,X,HR/8
+play,4,0,gracm001,01,FX,3/L3
+play,4,0,whitr001,00,X,53/G
+play,4,0,reedj001,02,FCFC,K/C
+play,4,1,gonzl001,00,,NP
+sub,farnk001,"Kyle Farnsworth",0,9,1
+play,4,1,gonzl001,02,CFX,E6/TH1
+play,4,1,willm003,00,X,4/P4
+play,4,1,finls001,22,CSBFBX,43/G.1-2
+play,4,1,colbg001,21,BBSX,S7.2-H(UR)
+play,4,1,milld002,00,X,9/F9
+play,5,0,bufod001,20,BBX,9/F9
+play,5,0,husoj001,12,FFBX,3/G
+play,5,0,farnk001,00,X,D9/9D
+play,5,0,youne001,00,X,3/L3
+play,5,1,bautd001,01,CX,9/F9
+play,5,1,schic002,12,FBFS,K
+play,5,1,womat001,02,CFS,K
+play,6,0,gutir001,02,FFX,53/G
+play,6,0,sosas001,00,X,S8/8S
+play,6,0,gracm001,02,CCX,6/P6
+play,6,0,whitr001,10,BX,54(1)/FO
+play,6,1,bellj001,00,,NP
+sub,husoj001,"Jeff Huson",0,8,6
+play,6,1,bellj001,00,,NP
+sub,meyec001,"Chad Meyers",0,2,5
+play,6,1,bellj001,21,BCBX,S
+play,6,1,gonzl001,12,BSFX,S9.1-2
+play,6,1,willm003,32,BFFBBB,W.2-3;1-2
+play,6,1,finls001,00,X,7/F7S
+play,6,1,colbg001,32,BFFFBFBX,9/SF.3-H;2-3
+play,6,1,milld002,12,CFBS,K
+play,7,0,reedj001,12,BFSFS,K
+play,7,0,bufod001,02,CSX,4/P4
+play,7,0,husoj001,12,BFFX,3/G
+play,7,1,bautd001,00,,NP
+sub,browb003,"Brant Brown",0,4,3
+play,7,1,bautd001,00,,NP
+sub,mattg002,"Gary Jr. Matthews",0,9,7
+play,7,1,bautd001,00,,NP
+sub,rains001,"Steve Rain",0,5,1
+play,7,1,bautd001,22,CBFFBFS,K
+play,7,1,schic002,00,X,8/F8
+play,7,1,womat001,10,BX,S9
+play,7,1,bellj001,00,,NP
+sub,friah001,"Hanley Frias",1,1,12
+play,7,1,bellj001,20,BBX,53/G
+play,8,0,mattg002,00,,NP
+sub,friah001,"Hanley Frias",1,1,6
+play,8,0,mattg002,00,X,6/P6
+play,8,0,youne001,21,BBFX,8/F8
+play,8,0,meyec001,12,FFBC,K/C
+play,8,1,gonzl001,00,,NP
+sub,meyec001,"Chad Meyers",0,2,4
+play,8,1,gonzl001,00,,NP
+sub,greew001,"Willie Greene",0,1,5
+play,8,1,gonzl001,00,,NP
+sub,counc001,"Craig Counsell",1,3,11
+play,8,1,counc001,00,X,7/F7
+play,8,1,willm003,00,,NP
+sub,contj001,"Jason Conti",1,4,11
+play,8,1,contj001,22,CBCBS,K
+play,8,1,finls001,00,,NP
+sub,delld001,"David Dellucci",1,5,11
+play,8,1,delld001,12,BSCX,S8
+play,8,1,colbg001,00,,NP
+sub,durae001,"Erubiel Durazo",1,6,11
+play,8,1,durae001,22,BCBSC,K/C
+play,9,0,sosas001,00,,NP
+sub,contj001,"Jason Conti",1,4,9
+play,9,0,sosas001,00,,NP
+sub,counc001,"Craig Counsell",1,3,5
+play,9,0,sosas001,00,,NP
+sub,durae001,"Erubiel Durazo",1,6,3
+play,9,0,sosas001,00,,NP
+sub,delld001,"David Dellucci",1,5,7
+play,9,0,sosas001,00,,NP
+sub,bautd001,"Danny Bautista",1,8,8
+play,9,0,sosas001,00,X,HR/7
+play,9,0,browb003,22,BBCSS,K
+play,9,0,rains001,00,,NP
+sub,nievj002,"Jose Nieves",0,5,11
+play,9,0,nievj002,01,CX,9/F9
+play,9,0,reedj001,22,FBBFS,K
+data,er,quevr001,9
+data,er,farnk001,1
+data,er,rains001,0
+data,er,schic002,2

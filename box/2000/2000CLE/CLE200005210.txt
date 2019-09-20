@@ -1,0 +1,136 @@
+version,2
+info,visteam,NYA
+info,hometeam,CLE
+info,site,CLE08
+info,date,2000/05/21
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,younl901
+info,ump1b,bonig901
+info,ump2b,katzt901
+info,ump3b,mealj901
+info,pitches,pitches
+info,temp,55
+info,winddir,fromcf
+info,windspeed,8
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,171
+info,attendance,42587
+info,wp,rigdp001
+info,lp,herno001
+info,save,
+start,knobc001,"Chuck Knoblauch",0,1,4
+start,willb002,"Bernie Williams",0,2,8
+start,oneip001,"Paul O'Neill",0,3,9
+start,martt002,"Tino Martinez",0,4,3
+start,posaj001,"Jorge Posada",0,5,2
+start,leder001,"Ricky Ledee",0,6,7
+start,leyrj001,"Jim Leyritz",0,7,10
+start,bross001,"Scott Brosius",0,8,5
+start,soria001,"Alfonso Soriano",0,9,6
+start,herno001,"Orlando Hernandez",0,0,1
+start,loftk001,"Kenny Lofton",1,1,8
+start,vizqo001,"Omar Vizquel",1,2,6
+start,alomr001,"Roberto Alomar",1,3,4
+start,ramim002,"Manny Ramirez",1,4,9
+start,thomj002,"Jim Thome",1,5,3
+start,frymt001,"Travis Fryman",1,6,5
+start,sexsr001,"Richie Sexson",1,7,7
+start,wilse001,"Enrique Wilson",1,8,10
+start,diaze002,"Einar Diaz",1,9,2
+start,rigdp001,"Paul Rigdon",1,0,1
+play,1,0,knobc001,22,CFBFBX,53/G
+com,"Debut game for Paul Rigdon"
+play,1,0,willb002,32,FBSBBX,43/G
+play,1,0,oneip001,31,BCBBB,W
+play,1,0,martt002,01,CX,43/G
+play,1,1,loftk001,11,CBX,S9/9S
+play,1,1,vizqo001,10,BC,CS2(24)
+play,1,1,vizqo001,11,BCX,E6/G
+play,1,1,alomr001,00,X,D9/9S.1-3
+play,1,1,ramim002,11,BSH,HP
+play,1,1,thomj002,11,FBX,9/SF.3-H(UR)
+play,1,1,frymt001,32,CBBBFC,K/C
+play,2,0,posaj001,32,CBCBBB,W
+play,2,0,leder001,12,CBSX,46(1)3/GDP
+play,2,0,leyrj001,32,CCBFFBBX,63/G
+play,2,1,sexsr001,12,BFSFS,K
+play,2,1,wilse001,10,BX,HR9/IPHR
+com,"IPHR"
+play,2,1,diaze002,10,BX,7/F7
+play,2,1,loftk001,31,BBCBX,43/G
+play,3,0,bross001,00,X,53/G
+play,3,0,soria001,01,CX,8/F8
+play,3,0,knobc001,11,CBX,S9
+play,3,0,willb002,11,BFX,53/G
+play,3,1,vizqo001,02,CFX,7/L7
+play,3,1,alomr001,32,BBBCCB,W
+play,3,1,ramim002,12,BCFS,K
+play,3,1,thomj002,01,CB,SB2
+play,3,1,thomj002,21,CBBX,HR/7.2-H
+play,3,1,frymt001,22,FBBFS,K
+play,4,0,oneip001,00,X,13/G
+play,4,0,martt002,02,FFC,K/C
+play,4,0,posaj001,12,CFBS,K
+play,4,1,sexsr001,00,X,9/F9
+play,4,1,wilse001,01,CX,S7
+play,4,1,diaze002,01,SX,S7.1-2
+play,4,1,loftk001,00,X,9/L9
+play,4,1,vizqo001,21,CBBX,3/G
+play,5,0,leder001,10,BX,43/G
+play,5,0,leyrj001,11,BCX,53/G
+play,5,0,bross001,32,CBBFBB,W
+play,5,0,soria001,12,BFFX,2/FL
+play,5,1,alomr001,22,BCCFFBX,8/F8
+play,5,1,ramim002,22,CFBBX,6/P6
+play,5,1,thomj002,21,BFBX,9/F9D
+play,6,0,knobc001,21,BCBX,9/F9S
+play,6,0,willb002,31,SBBBX,8/L8
+play,6,0,oneip001,12,CFBX,13/G
+play,6,1,frymt001,00,X,D7
+play,6,1,sexsr001,22,SBFBS,K
+play,6,1,wilse001,32,CBCBBFB,W
+play,6,1,diaze002,11,CBX,53/G.2-3;1-2
+play,6,1,loftk001,30,BBBB,W
+play,6,1,vizqo001,22,BFFBX,53/G
+play,7,0,martt002,10,BX,8/F8
+play,7,0,posaj001,00,X,D9
+play,7,0,leder001,32,SBSBBB,W
+play,7,0,leyrj001,00,X,64(1)3/GDP
+play,7,1,alomr001,22,CCBBFX,S8
+play,7,1,ramim002,10,BX,HR/7.1-H
+play,7,1,thomj002,00,,NP
+sub,grimj001,"Jason Grimsley",0,0,1
+play,7,1,thomj002,02,FCS,K
+play,7,1,frymt001,32,BCSBBFFFB,W
+play,7,1,sexsr001,01,CB,WP.1-2
+play,7,1,sexsr001,11,CBX,S.2-2
+play,7,1,wilse001,22,CBFBS,K
+play,7,1,diaze002,10,BX,4/P4
+play,8,0,bross001,00,,NP
+sub,reeds001,"Steve Reed",1,0,1
+play,8,0,bross001,22,CCBBX,8/F8
+play,8,0,soria001,02,CSS,K
+play,8,0,knobc001,00,,NP
+sub,delgw001,"Wilson Delgado",0,1,11
+play,8,0,delgw001,21,BFBX,3/G
+play,8,1,loftk001,00,,NP
+sub,delgw001,"Wilson Delgado",0,1,4
+play,8,1,loftk001,20,BBX,S
+play,8,1,vizqo001,12,BFSX,8/F8
+play,8,1,alomr001,10,BX,1(B)3(1)/LDP
+play,9,0,willb002,00,,NP
+sub,watsm001,"Mark Watson",1,0,1
+play,9,0,willb002,32,BBBCFFX,S7
+play,9,0,oneip001,32,BFFBBX,S8.1-3(E8)
+play,9,0,martt002,20,BBX,46(1)3/GDP.3-H(UR)
+play,9,0,posaj001,12,FSBX,8/F8
+data,er,herno001,5
+data,er,grimj001,0
+data,er,rigdp001,0
+data,er,reeds001,0
+data,er,watsm001,0

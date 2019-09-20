@@ -1,0 +1,172 @@
+version,2
+info,visteam,SLN
+info,hometeam,PIT
+info,site,PIT07
+info,date,2000/09/12
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,bellw901
+info,ump1b,onorb901
+info,ump2b,hirsm901
+info,ump3b,iassd901
+info,howscored,park
+info,pitches,pitches
+info,temp,82
+info,winddir,rtol
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,174
+info,attendance,15824
+info,wp,kiled001
+info,lp,serad001
+info,save,
+start,mcgwm001,"Mark McGwire",0,1,7
+start,polap001,"Placido Polanco",0,2,4
+start,davie001,"Eric Davis",0,3,9
+start,tatif001,"Fernando Tatis",0,4,5
+start,peree001,"Eduardo Perez",0,5,3
+start,dunss001,"Shawon Dunston",0,6,8
+start,rente001,"Edgar Renteria",0,7,6
+start,mathm001,"Mike Matheny",0,8,2
+start,kiled001,"Darryl Kile",0,9,1
+start,browa001,"Adrian Brown",1,1,8
+start,kendj001,"Jason Kendall",1,2,2
+start,gileb002,"Brian Giles",1,3,7
+start,vandj001,"John Vander Wal",1,4,3
+start,wilse001,"Enrique Wilson",1,5,5
+start,morrw001,"Warren Morris",1,6,4
+start,ramia002,"Alex Ramirez",1,7,9
+start,mearp001,"Pat Meares",1,8,6
+start,serad001,"Dan Serafini",1,9,1
+com,"1:44 rain delay in third"
+play,1,0,mcgwm001,02,SFX,63/G
+play,1,0,polap001,11,BFX,S9/9S
+play,1,0,davie001,22,BFBSS,K
+play,1,0,tatif001,10,BX,D7/7S.1-H
+play,1,0,peree001,00,X,6/P6
+play,1,1,browa001,00,,NP
+sub,paquc001,"Craig Paquette",0,1,7
+play,1,1,browa001,22,BCFBFFX,1/L1
+play,1,1,kendj001,10,BX,4/P4
+play,1,1,gileb002,12,CSBX,S
+play,1,1,vandj001,31,CBBBB,W.1-2
+play,1,1,wilse001,32,BBCSBB,W.2-3;1-2
+play,1,1,morrw001,12,CFFBS,K
+play,2,0,dunss001,01,CX,D7/7S
+play,2,0,rente001,10,BX,D9.2-H
+play,2,0,mathm001,21,BSBX,S9.2-H
+play,2,0,kiled001,11,BCX,14/SH.1-2
+play,2,0,paquc001,00,X,D7/7D.2-H
+play,2,0,polap001,10,BX,53/G
+play,2,0,davie001,21,BCBX,43/G
+play,2,1,ramia002,00,X,D/78
+play,2,1,mearp001,30,BBBB,W
+play,2,1,serad001,01,S+2,PO2(26)
+play,2,1,serad001,12,S+2SBX,43/G.1-2
+play,2,1,browa001,22,BBSFX,7/F7
+play,3,0,tatif001,11,FBX,63/G
+play,3,0,peree001,20,BBX,S8
+play,3,0,dunss001,01,CX,36(1)/FO
+play,3,0,rente001,00,B,WP.1-2
+play,3,0,rente001,20,BBX,E5/G.2-3
+play,3,0,mathm001,02,CFS,K
+play,3,1,kendj001,12,FFFBFFX,D7
+play,3,1,gileb002,00,X,7/F7D
+play,3,1,vandj001,10,BB,WP.2-3
+play,3,1,vandj001,32,BBCSBX,8/F8S
+play,3,1,wilse001,12,BCSFFX,43/G
+play,4,0,kiled001,10,BX,6/P6
+play,4,0,paquc001,22,CFBBFX,4/L4
+play,4,0,polap001,21,BBCX,8/F8
+play,4,1,morrw001,12,BCFX,31/G
+play,4,1,ramia002,02,FSS,K
+play,4,1,mearp001,00,X,43/G
+play,5,0,davie001,00,X,53/G
+play,5,0,tatif001,20,BBX,HR/7
+play,5,0,peree001,02,CSFX,7/F7
+play,5,0,dunss001,11,FBX,S8
+play,5,0,rente001,12,FFFBFFX,9/F9
+play,5,1,serad001,00,,NP
+sub,browe001,"Emil Brown",1,9,11
+play,5,1,browe001,32,FCBBBS,K
+play,5,1,browa001,22,BCSBC,K/C
+play,5,1,kendj001,11,BCX,D7/7S
+play,5,1,gileb002,10,BX,13/G
+play,6,0,mathm001,00,,NP
+sub,skrmm001,"Matt Skrmetta",1,9,1
+play,6,0,mathm001,11,CBX,HR/78
+play,6,0,kiled001,21,BCBX,9/F9
+play,6,0,paquc001,02,CSS,K
+play,6,0,polap001,21,CBBX,8/F8
+play,6,1,vandj001,12,CFFBFX,D/89
+play,6,1,wilse001,12,BCCX,E6/G
+play,6,1,morrw001,11,BSX,7/F7
+play,6,1,ramia002,01,CX,64(1)/FO.2-H(E4/TH1)(UR)
+play,6,1,mearp001,12,CCBFFS,K
+play,7,0,davie001,00,X,S7
+play,7,0,tatif001,00,X,S8.1-2
+play,7,0,peree001,00,X,1/SH.2-3;1-2
+play,7,0,dunss001,10,BX,S7/7S.3-H;2-3
+play,7,0,rente001,00,X,E5/TH.3-H;1-H;B-3
+play,7,0,mathm001,20,BBX,D/89.3-H(UR)
+play,7,0,kiled001,00,,NP
+sub,loisr001,"Rich Loiselle",1,7,1
+play,7,0,kiled001,00,,NP
+sub,hyzda001,"Adam Hyzdu",1,9,9
+play,7,0,kiled001,00,,NP
+sub,howat001,"Thomas Howard",0,9,11
+play,7,0,howat001,11,CBX,4/L4
+play,7,0,paquc001,22,CSBBX,S/89.2-H(UR);B-2(E8)
+play,7,0,polap001,31,BBBCX,63/G
+play,7,1,hyzda001,00,,NP
+sub,satul001,"Luis Saturria",0,3,9
+play,7,1,hyzda001,00,,NP
+sub,stecg001,"Gene Stechschulte",0,9,1
+play,7,1,hyzda001,11,FBX,43/G
+play,7,1,browa001,32,FBBCBX,S/78
+play,7,1,kendj001,00,,NP
+sub,osikk001,"Keith Osik",1,2,11
+play,7,1,osikk001,10,BX,53/G.1-2
+play,7,1,gileb002,30,BBBB,W
+play,7,1,vandj001,01,CX,4(1)/FO/G.2-3
+play,8,0,satul001,00,,NP
+sub,herna001,"Alex Hernandez",1,3,7
+play,8,0,satul001,00,,NP
+sub,osikk001,"Keith Osik",1,2,2
+play,8,0,satul001,02,SSC,K/C
+play,8,0,tatif001,12,SBFFX,43/G
+play,8,0,peree001,12,BCSX,S9
+play,8,0,dunss001,12,CBFS,K
+play,8,1,wilse001,00,,NP
+sub,benea002,"Alan Benes",0,5,1
+play,8,1,wilse001,00,,NP
+sub,mathm001,"Mike Matheny",0,8,3
+play,8,1,wilse001,00,,NP
+sub,marre001,"Eli Marrero",0,9,2
+play,8,1,wilse001,32,BCFBFBS,K
+play,8,1,morrw001,12,CFFFBS,K
+play,8,1,loisr001,00,,NP
+sub,wehnj001,"John Wehner",1,7,11
+play,8,1,wehnj001,21,BCBX,9/F9
+play,9,0,rente001,00,,NP
+sub,wehnj001,"John Wehner",1,7,5
+play,9,0,rente001,00,,NP
+sub,willm005,"Mike Williams",1,5,1
+play,9,0,rente001,22,BCFBFX,9/F9
+play,9,0,mathm001,02,CSS,K
+play,9,0,marre001,10,BX,63/G
+play,9,1,mearp001,10,BX,8/F8
+play,9,1,hyzda001,32,BCCFBFFBFFC,K/C
+play,9,1,browa001,21,BBCX,S8
+play,9,1,osikk001,32,SBCBBX,63/G
+data,er,kiled001,0
+data,er,stecg001,0
+data,er,benea002,0
+data,er,serad001,5
+data,er,skrmm001,4
+data,er,loisr001,0
+data,er,willm005,0

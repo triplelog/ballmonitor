@@ -1,0 +1,154 @@
+version,2
+info,visteam,BOS
+info,hometeam,BAL
+info,site,BAL12
+info,date,2000/07/20
+info,number,2
+info,starttime,7:35PM
+info,daynight,night
+info,usedh,true
+info,umphome,barkl901
+info,ump1b,morrd901
+info,ump2b,hirsj901
+info,ump3b,welkt901
+info,pitches,pitches
+info,temp,82
+info,winddir,tocf
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,194
+info,attendance,46167
+info,wp,erics001
+info,lp,schop001
+info,save,
+start,gilkb001,"Bernard Gilkey",0,1,9
+start,daubb001,"Brian Daubach",0,2,3
+start,everc001,"Carl Everett",0,3,8
+start,garcn001,"Nomar Garciaparra",0,4,6
+start,oleat001,"Troy O'Leary",0,5,7
+start,burkm001,"Morgan Burkhart",0,6,10
+start,hatts001,"Scott Hatteberg",0,7,2
+start,sprae001,"Ed Sprague",0,8,5
+start,alexm001,"Manny Alexander",0,9,4
+start,schop001,"Pete Schourek",0,0,1
+start,andeb001,"Brady Anderson",1,1,9
+start,bordm001,"Mike Bordick",1,2,6
+start,clarw001,"Will Clark",1,3,3
+start,bellj002,"Albert Belle",1,4,10
+start,conij001,"Jeff Conine",1,5,5
+start,surhb001,"B.J. Surhoff",1,6,7
+start,johnc002,"Charles Johnson",1,7,2
+start,lewim001,"Mark Lewis",1,8,4
+start,matol001,"Luis Matos",1,9,8
+start,erics001,"Scott Erickson",1,0,1
+play,1,0,gilkb001,10,BX,9/F9
+play,1,0,daubb001,32,BBCSBX,43/G
+play,1,0,everc001,32,BBFBFFB,W
+play,1,0,garcn001,00,X,8/F8
+play,1,1,andeb001,10,BX,S9/9S
+play,1,1,bordm001,11,BCX,S5/BG5.1-2
+play,1,1,clarw001,12,BSCX,64(1)3/GDP.2-3
+play,1,1,bellj002,22,BFFFBX,S8.3-H
+play,1,1,conij001,30,BBBB,W.1-2
+play,1,1,surhb001,31,BBBCB,W.2-3;1-2
+play,1,1,johnc002,31,BBFBB,W.3-H;2-3;1-2
+play,1,1,lewim001,02,CFFX,4/P4
+play,2,0,oleat001,32,CFBBBFB,W
+com,"SS ADDS BADJS FOR BURKHART 12/19/00"
+badj,burkm001,R
+play,2,0,burkm001,00,.H,HP.1-2
+play,2,0,hatts001,20,BBX,HR/9.2-H;1-H
+play,2,0,sprae001,10,BX,63/G
+play,2,0,alexm001,20,BBX,63/G
+play,2,0,gilkb001,11,CBX,63/G
+play,2,1,matol001,32,BBBCFFB,W
+play,2,1,andeb001,02,LCX,8/F8
+play,2,1,bordm001,12,SBFS,K
+play,2,1,clarw001,32,CSBFBBS,K
+play,3,0,daubb001,11,BSX,S7
+play,3,0,everc001,31,BBBCB,W.1-2
+play,3,0,garcn001,00,X,9/F9.2-3
+play,3,0,oleat001,22,FBBFS,K
+badj,burkm001,R
+play,3,0,burkm001,22,CBBFS,K
+play,3,1,bellj002,10,BX,S9
+play,3,1,conij001,10,BX,S7.1-2
+play,3,1,surhb001,01,SX,36(1)/FO.2-3
+play,3,1,johnc002,20,BB,NP
+sub,wasdj001,"John Wasdin",0,0,1
+play,3,1,johnc002,32,BBSBFB,W.1-2
+play,3,1,lewim001,00,X,D/78.3-H;2-H;1-H
+play,3,1,matol001,20,BBB,SB3
+play,3,1,matol001,31,BBBCX,9/SF.3-H
+play,3,1,andeb001,22,CBFBX,S9
+play,3,1,bordm001,10,BC,SB2
+play,3,1,bordm001,22,BCBFX,4/P4
+play,4,0,hatts001,22,CCBBS,K
+play,4,0,sprae001,21,BFBX,63/G
+play,4,0,alexm001,11,CBX,53/G
+play,4,1,clarw001,22,SBBFX,HR/9
+play,4,1,bellj002,02,FCX,9/F9D
+play,4,1,conij001,22,SCBBS,K
+play,4,1,surhb001,11,CBX,S7
+play,4,1,johnc002,11,BFX,8/F8
+play,5,0,gilkb001,32,CBBBFB,W
+play,5,0,daubb001,20,BBX,7/F7D
+play,5,0,everc001,12,CBFX,7/F7D
+play,5,0,garcn001,01,CX,53/G
+play,5,1,lewim001,32,BBFBFFX,63/G
+play,5,1,matol001,00,X,7/F7
+play,5,1,andeb001,11,CBX,8/F8
+play,6,0,oleat001,31,FBBBB,W
+badj,burkm001,R
+play,6,0,burkm001,31,BBBCB,W.1-2
+play,6,0,hatts001,11,CBX,3/G.2-3;1-2
+play,6,0,sprae001,00,X,S7/7S.3-H;2-3
+play,6,0,alexm001,00,,NP
+sub,milla001,"Alan Mills",1,0,1
+play,6,0,alexm001,02,SSS,K
+play,6,0,gilkb001,30,BBBB,W.1-2
+play,6,0,daubb001,22,CBBSS,K
+play,6,1,bordm001,00,,NP
+sub,florb001,"Bryce Florie",0,0,1
+play,6,1,bordm001,11,BCX,43/G
+play,6,1,clarw001,01,CX,S7/7S
+play,6,1,bellj002,00,X,S.1-2
+play,6,1,conij001,20,BBX,53/G.2-3;1-2
+play,6,1,surhb001,30,IIII,IW
+play,6,1,johnc002,32,BBCBSX,53/G
+play,7,0,everc001,12,CSBC,K/C
+play,7,0,garcn001,12,FFFBX,63/G
+play,7,0,oleat001,00,X,S8
+badj,burkm001,R
+play,7,0,burkm001,01,SH,HP.1-2
+play,7,0,hatts001,11,BFX,E1/TH.2-3;1-2
+play,7,0,sprae001,11,BSX,64(1)/FO
+play,7,1,lewim001,11,BCX,S
+play,7,1,matol001,10,BX,13/SH.1-2
+play,7,1,andeb001,32,BCBSBC,K/C
+play,7,1,bordm001,32,BCBBCFX,HR/7.2-H
+play,7,1,clarw001,31,BBBCX,9/F9
+play,8,0,alexm001,00,,NP
+sub,groob001,"Buddy Groom",1,0,1
+play,8,0,alexm001,12,BCSS,K
+play,8,0,gilkb001,22,SBCFBS,K
+play,8,0,daubb001,02,CFS,K
+play,8,1,bellj002,32,CBFBFBFB,W
+play,8,1,conij001,10,BX,54(1)/FO
+play,8,1,surhb001,10,BX,S8.1-2
+play,8,1,johnc002,21,BBFX,8/F8
+play,8,1,lewim001,22,CBCBFFS,K
+play,9,0,everc001,00,,NP
+sub,timlm001,"Mike Timlin",1,0,1
+play,9,0,everc001,11,BCX,43/G
+play,9,0,garcn001,02,SFX,7/F7
+play,9,0,oleat001,32,CBCBFBX,7/F7
+data,er,schop001,5
+data,er,wasdj001,2
+data,er,florb001,2
+data,er,erics001,4
+data,er,milla001,0
+data,er,groob001,0
+data,er,timlm001,0

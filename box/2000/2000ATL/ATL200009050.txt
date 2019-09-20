@@ -1,0 +1,139 @@
+version,2
+info,visteam,ARI
+info,hometeam,ATL
+info,site,ATL02
+info,date,2000/09/05
+info,number,0
+info,starttime,7:40PM
+info,daynight,night
+info,usedh,false
+info,umphome,reilm901
+info,ump1b,diazl901
+info,ump2b,hirsj901
+info,ump3b,coope901
+info,pitches,pitches
+info,temp,75
+info,winddir,rtol
+info,windspeed,12
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,179
+info,attendance,29722
+info,wp,glavt001
+info,lp,johnr005
+info,save,rockj001
+start,womat001,"Tony Womack",0,1,6
+start,bellj001,"Jay Bell",0,2,4
+start,gonzl001,"Luis Gonzalez",0,3,7
+start,colbg001,"Greg Colbrunn",0,4,3
+start,finls001,"Steve Finley",0,5,8
+start,willm003,"Matt D. Williams",0,6,5
+start,bautd001,"Danny Bautista",0,7,9
+start,milld002,"Damian Miller",0,8,2
+start,johnr005,"Randy Johnson",0,9,1
+start,furcr001,"Rafael Furcal",1,1,4
+start,jonea002,"Andruw Jones",1,2,8
+start,jonec004,"Chipper Jones",1,3,5
+start,galaa001,"Andres Galarraga",1,4,3
+start,lopej001,"Javy Lopez",1,5,2
+start,jordb001,"Brian Jordan",1,6,9
+start,sandr002,"Reggie Sanders",1,7,7
+start,weisw001,"Walt Weiss",1,8,6
+start,glavt001,"Tom Glavine",1,9,1
+play,1,0,womat001,32,BBCCFBFFX,S7/7S
+play,1,0,bellj001,01,CB,SB2.1-3(E3/TH2)
+play,1,0,bellj001,12,CBCS,K
+play,1,0,gonzl001,32,CBBFFFBX,7/SF.3-H(UR)
+play,1,0,colbg001,01,FX,E6/TH1
+play,1,0,finls001,32,BBCCBX,S.1-2
+play,1,0,willm003,32,CFBBBFFS,K
+play,1,1,furcr001,12,BCCS,K23
+play,1,1,jonea002,00,X,S/78
+play,1,1,jonec004,00,B,SB2.1-3(E2/TH2)
+play,1,1,jonec004,32,BBFCBFX,HR/9.3-H
+play,1,1,galaa001,12,FBCC,K/C
+play,1,1,lopej001,22,BFSBFS,K
+play,2,0,bautd001,11,BSX,3/P3
+play,2,0,milld002,10,BX,9/F9
+play,2,0,johnr005,22,BBSSFS,K
+play,2,1,jordb001,00,X,E5/G
+play,2,1,sandr002,10,BC,CS2(24)
+play,2,1,sandr002,22,BCBCS,K
+play,2,1,weisw001,12,BSFX,S7
+play,2,1,glavt001,02,FSX,E4/G.1-2
+play,2,1,furcr001,02,CCS,K
+play,3,0,womat001,12,CBSX,63/G
+play,3,0,bellj001,12,FBSX,3/G
+play,3,0,gonzl001,21,CBBX,8/F8S
+play,3,1,jonea002,01,FX,S7
+play,3,1,jonec004,01,FB,SB2
+play,3,1,jonec004,12,FBFFC,K/C
+play,3,1,galaa001,22,BFBFS,K
+play,3,1,lopej001,01,CX,53/G
+play,4,0,colbg001,20,BBX,HR/9
+play,4,0,finls001,12,BCCX,S9/9S
+play,4,0,willm003,20,BB1,POCS2(136)
+play,4,0,willm003,22,BB1CFFS,K
+play,4,0,bautd001,21,BCBX,9/F9
+play,4,1,jordb001,12,CFBS,K
+play,4,1,sandr002,32,FBBBCS,K
+play,4,1,weisw001,01,CX,43/G
+play,5,0,milld002,21,BFBX,63/G
+play,5,0,johnr005,12,SSBS,K
+play,5,0,womat001,11,BFX,43/G
+play,5,1,glavt001,32,BBBCCFB,W
+play,5,1,furcr001,10,BX,14/SH.1-2
+play,5,1,jonea002,01,CX,53/G
+play,5,1,jonec004,02,FCX,HR/7.2-H
+play,5,1,galaa001,01,FX,HR/9
+play,5,1,lopej001,11,BCX,8/F8
+play,6,0,bellj001,00,X,S/78
+play,6,0,gonzl001,11,BCX,7/L7
+play,6,0,colbg001,31,BBBCX,4/P4
+play,6,0,finls001,12,BFCFFX,46(1)/FO
+play,6,1,jordb001,31,BBSBB,W
+play,6,1,sandr002,22,SSBBS,K
+play,6,1,weisw001,12,SFBC,K/C
+play,6,1,glavt001,30,BBBB,W.1-2
+play,6,1,furcr001,12,BSFX,3/G
+play,7,0,willm003,20,BBX,13/G
+play,7,0,bautd001,02,FCX,6/L6
+play,7,0,milld002,11,FBX,63/G
+play,7,1,jonea002,00,,NP
+sub,morgm001,"Mike Morgan",0,9,1
+play,7,1,jonea002,11,BFF,FLE7
+play,7,1,jonea002,12,BFFX,63/G
+play,7,1,jonec004,02,CFX,8/F8
+play,7,1,galaa001,12,CCBC,K/C
+play,8,0,morgm001,00,,NP
+sub,remlm001,"Mike Remlinger",1,9,1
+play,8,0,morgm001,00,,NP
+sub,miesm001,"Matt Mieske",0,9,11
+play,8,0,miesm001,32,FBBFBS,K
+play,8,0,womat001,00,X,43/G
+play,8,0,bellj001,31,BBBCX,S7/7D
+play,8,0,gonzl001,32,BBCBFB,W.1-2
+play,8,0,colbg001,00,,NP
+sub,rockj001,"John Rocker",1,4,1
+play,8,0,colbg001,00,,NP
+sub,joynw001,"Wally Joyner",1,9,3
+play,8,0,colbg001,12,CFFFFFFBX,13/G
+play,8,1,lopej001,00,,NP
+sub,sprir001,"Russ Springer",0,9,1
+play,8,1,lopej001,01,SX,7/F7
+play,8,1,jordb001,22,BSBSS,K
+play,8,1,sandr002,12,BSSS,K
+play,9,0,finls001,22,CCBBC,K/C
+play,9,0,willm003,02,CFX,S9/9S
+play,9,0,bautd001,12,CFBX,E4/G.1-2
+play,9,0,milld002,32,BBCFBS,K
+play,9,0,sprir001,00,,NP
+sub,cabra001,"Alex Cabrera",0,9,11
+play,9,0,cabra001,12,BCSS,K
+data,er,johnr005,5
+data,er,morgm001,0
+data,er,sprir001,0
+data,er,glavt001,1
+data,er,remlm001,0
+data,er,rockj001,0

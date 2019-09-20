@@ -1,0 +1,141 @@
+version,2
+info,visteam,CHN
+info,hometeam,FLO
+info,site,MIA01
+info,date,2000/06/23
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,kellj901
+info,ump1b,diazl901
+info,ump2b,coope901
+info,ump3b,vanvm901
+info,pitches,pitches
+info,temp,88
+info,winddir,fromrf
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,154
+info,attendance,24144
+info,wp,pennb002
+info,lp,liebj001
+info,save,
+start,youne001,"Eric Young",0,1,4
+start,gutir001,"Ricky Gutierrez",0,2,6
+start,sosas001,"Sammy Sosa",0,3,9
+start,gracm001,"Mark Grace",0,4,3
+start,greew001,"Willie Greene",0,5,5
+start,rodrh001,"Henry Rodriguez",0,6,7
+start,bufod001,"Damon Buford",0,7,8
+start,giraj001,"Joe Girardi",0,8,2
+start,liebj001,"Jon Lieber",0,9,1
+start,castl001,"Luis Castillo",1,1,4
+start,kotsm001,"Mark Kotsay",1,2,9
+start,floyc001,"Cliff Floyd",1,3,7
+start,wilsp002,"Preston Wilson",1,4,8
+start,lowem001,"Mike Lowell",1,5,5
+start,lee-d002,"Derrek Lee",1,6,3
+start,gonza002,"Alex Gonzalez",1,7,6
+start,bakop001,"Paul Bako",1,8,2
+start,pennb002,"Brad Penny",1,9,1
+play,1,0,youne001,30,BBBB,W
+play,1,0,gutir001,22,BBCSFFFX,S9.1-2
+play,1,0,sosas001,12,BFFX,64(1)3/GDP.2-3
+play,1,0,gracm001,31,BBBCB,W
+play,1,0,greew001,32,CSBBBB,W.1-2
+play,1,0,rodrh001,10,BX,8/F8
+play,1,1,castl001,31,BBCBX,S/78
+play,1,1,kotsm001,00,X,D7/7D.1-H
+play,1,1,floyc001,32,BCSFBBFX,FC1.2X3(15);B-2#
+play,1,1,wilsp002,32,SBBSBX,31/G.2-3
+play,1,1,lowem001,02,FFS,K
+play,2,0,bufod001,02,CCX,63/G
+play,2,0,giraj001,32,CBBFBFX,S7/7S
+play,2,0,liebj001,22,BCFBL,K/BF
+play,2,0,youne001,21,BCBX,43/G
+play,2,1,lee-d002,22,FBFBC,K/C
+play,2,1,gonza002,02,CFX,53/G
+play,2,1,bakop001,02,SCFS,K
+play,3,0,gutir001,10,BX,9/F9D
+play,3,0,sosas001,00,X,43/G
+play,3,0,gracm001,12,CBFFX,43/G
+play,3,1,pennb002,02,SSS,K
+play,3,1,castl001,21,BFBX,S
+play,3,1,kotsm001,00,B,SB2
+play,3,1,kotsm001,11,BCX,43/G.2-3
+play,3,1,floyc001,32,BBCFBB,W
+play,3,1,wilsp002,12,BFFB,SB2
+play,3,1,wilsp002,32,BFFBFFBX,8/F8
+play,4,0,greew001,21,BFBX,5/P5
+play,4,0,rodrh001,21,BBSX,31/G
+play,4,0,bufod001,10,BX,S9
+play,4,0,giraj001,10,BX,S/78.1-2
+play,4,0,liebj001,12,CCBS,K
+play,4,1,lowem001,12,BFFS,K
+play,4,1,lee-d002,30,BBBX,8/F8
+play,4,1,gonza002,00,X,S9/9S
+play,4,1,bakop001,00,X,7/F7
+play,5,0,youne001,11,CBX,8/F8
+play,5,0,gutir001,01,SX,63/G
+play,5,0,sosas001,22,BFBCX,S8
+play,5,0,gracm001,32,BBFFFFFBB,W.1-2
+play,5,0,greew001,12,FBFS,K
+play,5,1,pennb002,00,X,9/F9S
+play,5,1,castl001,00,X,S8/8S
+play,5,1,kotsm001,30,BBBB,W.1-2
+play,5,1,floyc001,00,X,S9/9S.2-H;1-3
+play,5,1,wilsp002,11,FBX,9/SF.3-H
+play,5,1,lowem001,31,FBBBX,HR/7.1-H
+play,5,1,lee-d002,30,BBBB,W
+play,5,1,gonza002,00,X,S8/8S.1-2
+play,5,1,bakop001,01,SX,43/G
+play,6,0,rodrh001,01,FX,7/F7
+play,6,0,bufod001,10,BX,HR/7
+play,6,0,giraj001,22,FBBFX,S7
+play,6,0,liebj001,10,BX,34/SH.1-2
+play,6,0,youne001,22,BFBCC,K/C
+play,6,1,pennb002,00,,NP
+sub,millk005,"Kevin Millar",1,9,11
+play,6,1,millk005,32,BBBCFX,S7
+play,6,1,castl001,22,BBFCX,S8/8S.1-2
+play,6,1,kotsm001,00,X,S/78D.2-3;1X2(4)#
+play,6,1,floyc001,01,CX,63/G.3-H;1-2
+play,6,1,wilsp002,01,FX,8/F8
+play,7,0,gutir001,00,,NP
+sub,loopb001,"Braden Looper",1,9,1
+play,7,0,gutir001,12,BCCX,5/L5
+play,7,0,sosas001,10,BX,63/G
+play,7,0,gracm001,31,BBBCX,D9
+play,7,0,greew001,22,CBCBS,K
+play,7,1,lowem001,31,BCBBB,W
+play,7,1,lee-d002,10,BX,S7.1-2
+play,7,1,gonza002,12,BFSX,8/F8
+play,7,1,bakop001,12,BSSS,K
+play,7,1,loopb001,00,,NP
+sub,smitm004,"Mark Smith",1,9,11
+play,7,1,smitm004,11,BSX,64(1)/FO.2-3
+play,8,0,rodrh001,00,,NP
+sub,boner001,"Ricky Bones",1,9,1
+play,8,0,rodrh001,10,BX,43/G
+play,8,0,bufod001,21,BBCX,63/G
+play,8,0,giraj001,11,CBX,63/G
+play,8,1,castl001,00,,NP
+sub,nievj002,"Jose Nieves",0,2,6
+play,8,1,castl001,00,,NP
+sub,mattg002,"Gary Jr. Matthews",0,9,7
+play,8,1,castl001,00,,NP
+sub,heref001,"Felix Heredia",0,6,1
+play,8,1,castl001,12,BFFFX,3/G
+play,8,1,kotsm001,00,X,3/G#
+play,8,1,floyc001,00,X,7/F7
+play,9,0,mattg002,31,CBBBX,7/F7
+play,9,0,youne001,32,BBBCCX,43/G
+play,9,0,nievj002,02,CSS,K
+data,er,liebj001,6
+data,er,heref001,0
+data,er,pennb002,1
+data,er,loopb001,0
+data,er,boner001,0

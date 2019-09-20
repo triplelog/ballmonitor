@@ -1,0 +1,82 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,11,1,,,,,0,3,CBX,tracs001,1,0,,erstd001,0,P
+,32,1,palmo001,,,,1,9,CBBBCX,tracs001,0,0,palmo001 singles. ,palmo001,0,
+palmo001 to 2B. ,11,1,vaugm001,palmo001,,,2,12,BCX,tracs001,0,0,vaugm001 singles. ,vaugm001,0,
+palmo001 to 3B. vaugm001 to 2B. ,31,1,salmt001,vaugm001,palmo001,,3,17,BFBBB,tracs001,0,0,salmt001 walks. ,salmt001,0,
+,02,1,,vaugm001,palmo001,,4,20,SSX,tracs001,2,0,Double Play. ,andeg001,0,
+,30,1,stews002,,,,5,4,BBBB,schos001,0,0,stews002 walks. ,stews002,1,
+stews002 to 2B. ,30,1,gonza001,stews002,,,6,8,BBBB,schos001,0,0,gonza001 walks. ,gonza001,1,
+stews002 to 3B. gonza001 out. ,21,1,martd002,,stews002,,7,12,BCBX,schos001,1,0,martd002 reaches on fielder's choice. ,martd002,1,
+,11,1,martd002,,stews002,delgc001,8,15,BSF,schos001,0,0,,delgc001,1,
+stews002 scores. martd002 to 2B. ,22,1,delgc001,martd002,,,9,21,BSFFBX,schos001,0,1,delgc001 singles. ,delgc001,1,
+martd002 scores. delgc001 to 3B. ,10,1,,batit001,delgc001,,10,23,BX,schos001,0,1,batit001 doubles. ,batit001,1,
+,32,1,,batit001,delgc001,,11,29,BFBFBS,schos001,1,0,greet003 strikes out. ,greet003,1,
+,10,1,,batit001,delgc001,,12,31,BX,schos001,1,0,,cruzj004,1,F
+,22,2,,,,,13,25,FBBCX,tracs001,0,1,glaut001 homers. ,glaut001,0,
+,02,2,,,,,14,28,CFX,tracs001,1,0,kenna001 grounds out. ,kenna001,0,G
+,12,2,,,,,15,32,CBFX,tracs001,1,0,walbm001 grounds out. ,walbm001,0,G
+,00,2,,stock001,,,16,33,X,tracs001,0,0,stock001 doubles. ,stock001,0,
+,10,2,,stock001,,,17,35,BX,tracs001,1,0,erstd001 grounds out. ,erstd001,0,G
+,02,2,,,,,18,34,CFC,schos001,1,0,fletd001 strikes out. ,fletd001,1,
+,11,2,grebc001,,,,19,37,BSX,schos001,0,0,grebc001 reaches on error. ,grebc001,1,G
+,20,2,grebc001,,,,20,40,BBX,schos001,1,0,,stews002,1,F
+grebc001 to 2B. ,02,2,gonza001,grebc001,,,21,43,FCX,schos001,0,0,gonza001 singles. ,gonza001,1,
+grebc001 to 3B. gonza001 to 2B. ,31,2,martd002,gonza001,grebc001,,22,48,BBFBB,schos001,0,0,martd002 walks. ,martd002,1,
+,21,2,martd002,gonza001,grebc001,,23,52,CBBX,schos001,1,0,,delgc001,1,F
+,12,3,,,,,24,40,CBCFX,tracs001,1,0,,palmo001,0,F
+,22,3,,,,,25,45,CBFBX,tracs001,1,0,vaugm001 grounds out. ,vaugm001,0,G
+,11,3,,,,,26,48,CBX,tracs001,1,0,,salmt001,0,F
+,00,3,,,,,27,53,X,schos001,1,0,batit001 grounds out. ,batit001,1,G
+,11,3,,,,,28,56,BFX,schos001,1,0,,greet003,1,F
+,10,3,,,,,29,58,BX,schos001,0,1,cruzj004 homers. ,cruzj004,1,
+,00,3,,,,,30,59,X,schos001,1,0,fletd001 grounds out. ,fletd001,1,G
+,12,4,,,,,31,52,SBFC,tracs001,1,0,andeg001 strikes out. ,andeg001,0,
+,01,4,,,,,32,54,CX,tracs001,1,0,,glaut001,0,P
+,31,4,,,,,33,59,FBBBX,tracs001,1,0,,kenna001,0,F
+,10,4,,,,,34,61,BX,schos001,1,0,,grebc001,1,
+,12,4,,,,,35,65,CBCS,schos001,1,0,stews002 strikes out. ,stews002,1,
+,12,4,,,,,36,69,CSBS,schos001,1,0,gonza001 strikes out. ,gonza001,1,
+,12,5,,,,,37,63,FSBX,tracs001,1,0,walbm001 grounds out. ,walbm001,0,G
+,12,5,,,,,38,69,CFFFBC,tracs001,1,0,stock001 strikes out. ,stock001,0,
+,32,5,,,,,39,75,BBBCFX,tracs001,0,1,erstd001 homers. ,erstd001,0,
+,32,5,,,,,40,81,CBBBCX,tracs001,1,0,,palmo001,0,F
+,12,5,,,,,41,74,FBCFX,schos001,1,0,,martd002,1,F
+,11,5,,,,,42,77,BCX,schos001,1,0,,delgc001,1,F
+,32,5,batit001,,,,43,86,CBFBFBFFB,schos001,0,0,batit001 walks. ,batit001,1,
+batit001 out. ,00,5,greet003,,,,44,87,X,schos001,1,0,greet003 reaches on fielder's choice. ,greet003,1,
+,22,6,,,,,45,86,BSSBS,tracs001,1,0,vaugm001 strikes out. ,vaugm001,0,
+,31,6,salmt001,,,,46,91,BBBCB,tracs001,0,0,salmt001 walks. ,salmt001,0,
+salmt001 to 3B. ,32,6,andeg001,,salmt001,,47,97,FBBFBX,tracs001,0,0,andeg001 singles. ,andeg001,0,
+salmt001 scores. andeg001 to 3B. ,12,6,glaut001,,andeg001,,48,103,BCFFFX,tracs001,0,1,glaut001 singles. ,glaut001,0,
+andeg001 scores. ,02,6,glaut001,,,,50,3,FFX,borbp001,1,1,kenna001 hits sacrifice fly. ,kenna001,0,
+,10,6,glaut001,,,,51,5,BX,borbp001,1,0,,walbm001,0,
+,00,6,,,,,52,88,X,schos001,1,0,cruzj004 grounds out. ,cruzj004,1,G
+,21,6,,,,,53,92,BBSX,schos001,1,0,,fletd001,1,
+,21,6,,,,,54,96,BBCX,schos001,1,0,grebc001 grounds out. ,grebc001,1,G
+,22,7,stock001,,,,55,12,CCFBBFX,borbp001,0,0,stock001 singles. ,stock001,0,
+stock001 to 2B. ,00,7,,stock001,,,56,13,X,borbp001,1,0,Sacrifice bunt by erstd001.,erstd001,0,
+,32,7,,stock001,,,59,6,BBCBSX,frasj001,1,0,,gantr001,0,P
+,30,7,vaugm001,stock001,,,60,10,IIII,frasj001,0,0,vaugm001 intentionally walks. ,vaugm001,0,
+stock001 scores. vaugm001 to 2B. ,10,7,spies001,vaugm001,,,63,2,BX,guthm001,0,1,spies001 singles. ,spies001,0,
+,00,7,spies001,vaugm001,,,64,3,X,guthm001,1,0,,andeg001,0,F
+,12,7,stews002,,,,68,100,CBFX,schos001,0,0,stews002 singles. ,stews002,1,
+stews002 to 2B. ,00,7,,stews002,,,69,101,X,schos001,1,0,gonza001 grounds out. ,gonza001,1,G
+stews002 to 3B. ,22,7,martd002,,stews002,,70,106,BFBFX,schos001,0,0,martd002 singles. ,martd002,1,
+stews002 scores. martd002 to 2B. ,01,7,,martd002,,,71,108,SX,schos001,1,1,delgc001 grounds out. ,delgc001,1,G
+martd002 scores. ,20,7,,,,,73,3,BBX,petkm001,0,2,batit001 homers. ,batit001,1,
+,12,7,,,,,74,7,BSSX,petkm001,1,0,,greet003,1,
+,12,8,,,,,75,7,BCFC,guthm001,1,0,glaut001 strikes out. ,glaut001,0,
+,20,8,kenna001,,,,76,10,BBX,guthm001,0,0,kenna001 singles. ,kenna001,0,
+,02,8,,kenna001,,,77,13,SSS,guthm001,1,0,walbm001 strikes out. kenna001 steals 2B. ,walbm001,0,
+kenna001 scores. stock001 to 2B. ,10,8,,stock001,,,78,15,BX,guthm001,0,1,stock001 singles. ,stock001,0,
+,11,8,,stock001,,,79,18,FBX,guthm001,1,0,erstd001 grounds out. ,erstd001,0,G
+,30,8,cruzj004,,,,81,4,BBBB,potel001,0,0,cruzj004 walks. ,cruzj004,1,
+cruzj004 to 2B. ,00,8,moram001,cruzj004,,,83,5,X,potel001,0,0,moram001 singles. ,moram001,1,G
+,01,8,moram001,cruzj004,,,84,7,SX,potel001,1,0,,grebc001,1,P
+,01,8,,cruzj004,,,85,9,SX,potel001,2,0,Double Play. ,stews002,1,
+,21,9,,,,,89,4,BFBX,kochb001,1,0,,gantr001,0,
+,32,9,,,,,90,12,BCSBFBFS,kochb001,1,0,vaugm001 strikes out. ,vaugm001,0,
+,02,9,,,,,91,15,FSS,kochb001,1,0,spies001 strikes out. ,spies001,0,
+,11,9,,,,,92,12,BCX,potel001,1,0,gonza001 grounds out. ,gonza001,1,G
+,11,9,martd002,,,,93,15,BSX,potel001,0,0,martd002 singles. ,martd002,1,
+martd002 scores. ,32,9,,,,,94,21,BCFBBX,potel001,0,2,delgc001 homers. ,delgc001,1,

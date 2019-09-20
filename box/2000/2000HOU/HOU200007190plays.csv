@@ -1,0 +1,77 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,22,1,,,,,0,6,CBFBFS,holtc001,1,0,stync001 strikes out. ,stync001,0,
+,10,1,,,,,1,8,BX,holtc001,1,0,larkb001 grounds out. ,larkb001,0,G
+,32,1,grifk002,,,,2,17,BBFBFFFFB,holtc001,0,0,grifk002 walks. ,grifk002,0,
+,22,1,grifk002,,,,3,23,CCBFBS,holtc001,1,0,bichd001 strikes out. ,bichd001,0,
+,12,1,,,,,4,5,CBFFX,harnp001,1,0,,lugoj001,1,L
+,10,1,,biggc001,,,5,7,BX,harnp001,0,0,biggc001 doubles. ,biggc001,1,
+,12,1,,biggc001,,,6,11,CBFX,harnp001,1,0,bagwj001 grounds out. ,bagwj001,1,G
+,32,1,berkl001,biggc001,,,7,18,BCFFBBB,harnp001,0,0,berkl001 walks. ,berkl001,1,
+biggc001 to 3B. ,12,1,berkl001,,biggc001,aloum001,8,22,BFSB,harnp001,0,0,Wild Pitch. ,aloum001,1,
+,22,1,berkl001,,biggc001,,9,27,BFSBX,harnp001,1,0,,aloum001,1,P
+,22,2,,,,,10,28,BBFFS,holtc001,1,0,cases001 strikes out. ,cases001,0,
+,22,2,,,,,11,33,FBSBX,holtc001,1,0,yound001 grounds out. ,yound001,0,G
+,32,2,,,,,12,39,CBBCBX,holtc001,1,0,,taube001,0,F
+,20,2,,,,,13,30,BBX,harnp001,1,0,,hidar001,1,P
+,00,2,,,,,14,31,X,harnp001,1,0,melum001 grounds out. ,melum001,1,G
+,02,2,,,,,15,34,CSS,harnp001,1,0,trubc001 strikes out. ,trubc001,1,
+,01,3,,,,,16,41,FX,holtc001,1,0,,castj004,0,F
+,12,3,,,,,17,45,CBSC,holtc001,1,0,harnp001 strikes out. ,harnp001,0,
+,12,3,,,,,18,49,SCBS,holtc001,1,0,stync001 strikes out. ,stync001,0,
+,00,3,,,,,19,35,X,harnp001,1,0,,holtc001,1,
+,00,3,,,,,20,36,X,harnp001,1,0,,lugoj001,1,G
+,12,3,,,,,21,41,CFFBS,harnp001,1,0,biggc001 strikes out. ,biggc001,1,
+,10,4,,,,,22,51,BX,holtc001,1,0,,larkb001,0,F
+,21,4,,,,,23,55,BCBX,holtc001,1,0,grifk002 grounds out. ,grifk002,0,G
+,22,4,,bichd001,,,24,62,FBFBFFX,holtc001,0,0,bichd001 doubles. ,bichd001,0,
+,30,4,cases001,bichd001,,,25,66,BBBB,holtc001,0,0,cases001 walks. ,cases001,0,
+,00,4,cases001,bichd001,,,26,67,X,holtc001,1,0,,yound001,0,L
+,22,4,,,,,27,47,CSFBBX,harnp001,1,0,,bagwj001,1,F
+,01,4,,,,,28,49,FX,harnp001,1,0,berkl001 grounds out. ,berkl001,1,G
+,02,4,,,,,29,52,FCX,harnp001,1,0,,aloum001,1,F
+,00,5,,,,,30,68,X,holtc001,1,0,,taube001,0,
+,22,5,,,,,31,73,CBBFX,holtc001,1,0,,castj004,0,P
+,00,5,,,,,32,74,X,holtc001,1,0,harnp001 grounds out. ,harnp001,0,G
+,12,5,,,,,33,56,SBFX,harnp001,1,0,,hidar001,1,L
+,20,5,,,,,34,59,BBX,harnp001,1,0,,melum001,1,F
+,11,5,,,,,35,62,SBX,harnp001,1,0,,trubc001,1,P
+,21,6,,,,,36,78,CBBX,holtc001,1,0,stync001 grounds out. ,stync001,0,G
+,11,6,,,,,37,81,BFX,holtc001,0,1,larkb001 homers. ,larkb001,0,
+,10,6,grifk002,,,,38,83,BX,holtc001,0,0,grifk002 singles. ,grifk002,0,
+grifk002 to 2B. ,00,6,bichd001,grifk002,,,39,84,H,holtc001,0,0,bichd001 hit by pitch. ,bichd001,0,
+grifk002 to 3B. bichd001 to 2B. ,00,6,cases001,bichd001,grifk002,,40,85,X,holtc001,0,0,cases001 singles. ,cases001,0,
+grifk002 scores. bichd001 to 3B. cases001 to 2B. ,00,6,yound001,cases001,bichd001,,41,86,X,holtc001,0,1,yound001 singles. ,yound001,0,
+cases001 to 3B. yound001 to 2B. bichd001 out. ,00,6,taube001,yound001,cases001,,42,87,X,holtc001,1,0,taube001 reaches on fielder's choice. ,taube001,0,
+cases001 scores. yound001 to 3B. taube001 to 2B. ,32,6,castj004,taube001,yound001,,43,94,CBBFBFB,holtc001,0,1,castj004 walks. ,castj004,0,
+,10,6,castj004,taube001,yound001,,44,96,BX,holtc001,1,0,harnp001 grounds out. ,harnp001,0,G
+,01,6,,,,,45,64,CX,harnp001,1,0,holtc001 grounds out. ,holtc001,1,G
+,02,6,lugoj001,,,,46,67,FCX,harnp001,0,0,lugoj001 singles. ,lugoj001,1,
+,01,6,lugoj001,,,,47,69,FX,harnp001,1,0,,biggc001,1,F
+,01,6,,lugoj001,,bagwj001,48,71,SB,harnp001,0,0,lugoj001 steals 2B. ,bagwj001,1,
+,22,6,,lugoj001,,,49,76,SBBFC,harnp001,1,0,bagwj001 strikes out. ,bagwj001,1,
+,00,7,,,,,50,97,X,holtc001,1,0,stync001 grounds out. ,stync001,0,G
+,12,7,,,larkb001,,51,101,CBSX,holtc001,0,0,larkb001 triples. ,larkb001,0,
+larkb001 scores. ,12,7,,,,,52,105,BFCX,holtc001,1,1,grifk002 hits sacrifice fly. ,grifk002,0,
+,20,7,bichd001,,,,53,108,BBX,holtc001,0,0,bichd001 reaches on error. ,bichd001,0,G
+,00,7,,,,cases001,54,109,B,holtc001,1,0,bichd001 caught stealing. ,cases001,0,
+,00,7,,,,,55,77,X,harnp001,1,0,berkl001 grounds out. ,berkl001,1,G
+,12,7,,,,,56,83,BFFFFX,harnp001,1,0,aloum001 grounds out. ,aloum001,1,G
+,11,7,,,,,57,86,BCX,harnp001,1,0,,hidar001,1,F
+,00,8,cases001,,,,58,110,H,holtc001,0,0,cases001 hit by pitch. ,cases001,0,
+,00,8,cases001,,,,59,111,X,holtc001,1,0,,yound001,0,F
+,20,8,cases001,,,,60,114,BBX,holtc001,1,0,,taube001,0,
+cases001 to 2B. ,01,8,castj004,cases001,,,61,116,FX,holtc001,0,0,castj004 singles. ,castj004,0,
+,12,8,castj004,cases001,,,62,120,BFSS,holtc001,1,0,harnp001 strikes out. ,harnp001,0,
+,02,8,,,,,63,89,SFC,harnp001,1,0,melum001 strikes out. ,melum001,1,
+,10,8,spieb001,,,,65,91,BX,harnp001,0,0,spieb001 singles. ,spieb001,1,
+,01,8,spieb001,,,,67,93,CX,harnp001,1,0,,wardd002,1,F
+spieb001 to 2B. ,31,8,lugoj001,spieb001,,,68,98,FBBBB,harnp001,0,0,lugoj001 walks. ,lugoj001,1,
+,00,8,lugoj001,spieb001,,,69,99,X,harnp001,1,0,,biggc001,1,P
+,32,9,stync001,,,,72,6,CBFBBB,henrd002,0,0,stync001 walks. ,stync001,0,
+,10,9,stync001,,,,73,8,BX,henrd002,1,0,,larkb001,0,P
+,22,9,stync001,,,,74,13,SBBCX,henrd002,1,0,,grifk002,0,F
+stync001 to 2B. ,32,9,bichd001,stync001,,,75,19,CBBSBB,henrd002,0,0,bichd001 walks. ,bichd001,0,
+,00,9,bichd001,stync001,,,77,1,X,perey001,1,0,,cases001,0,F
+,32,9,,,,,80,108,BFFFBBFFX,harnp001,1,0,,bagwj001,1,P
+,01,9,berkl001,,,,81,110,FX,harnp001,0,0,berkl001 singles. ,berkl001,1,
+,00,9,,,,,82,111,X,harnp001,2,0,Double Play. ,aloum001,1,

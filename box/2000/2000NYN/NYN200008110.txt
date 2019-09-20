@@ -1,0 +1,143 @@
+version,2
+info,visteam,SFN
+info,hometeam,NYN
+info,site,NYC17
+info,date,2000/08/11
+info,number,0
+info,starttime,7:10PM
+info,daynight,night
+info,usedh,false
+info,umphome,willc901
+info,ump1b,wegnm901
+info,ump2b,reynj901
+info,ump3b,higgs901
+info,pitches,pitches
+info,temp,67
+info,winddir,fromlf
+info,windspeed,6
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,161
+info,attendance,33944
+info,wp,ruscg001
+info,lp,gardm001
+info,save,benia001
+start,murrc001,"Calvin Murray",0,1,8
+start,davir002,"Russ Davis",0,2,5
+start,bondb001,"Barry Bonds",0,3,7
+start,kentj001,"Jeff Kent",0,4,4
+start,burke001,"Ellis Burks",0,5,9
+start,aurir001,"Rich Aurilia",0,6,6
+start,snowj001,"J.T. Snow",0,7,3
+start,mirad001,"Doug Mirabelli",0,8,2
+start,gardm001,"Mark Gardner",0,9,1
+start,hamid001,"Darryl Hamilton",1,1,7
+start,belld001,"Derek Bell",1,2,9
+start,alfoe001,"Edgardo Alfonzo",1,3,4
+start,piazm001,"Mike Piazza",1,4,2
+start,ventr001,"Robin Ventura",1,5,5
+start,zeilt001,"Todd Zeile",1,6,3
+start,paytj001,"Jay Payton",1,7,8
+start,bordm001,"Mike Bordick",1,8,6
+start,ruscg001,"Glendon Rusch",1,9,1
+play,1,0,murrc001,21,CBBX,63/G
+play,1,0,davir002,22,CBSBS,K
+play,1,0,bondb001,32,BFBBFX,8/F8D
+play,1,1,hamid001,12,CBCFX,9/F9
+play,1,1,belld001,01,FX,3/FL
+play,1,1,alfoe001,00,X,7/F7
+play,2,0,kentj001,00,X,D7
+play,2,0,burke001,11,FBX,63/G
+play,2,0,aurir001,22,BFFBX,8/F8
+play,2,0,snowj001,31,BBBCB,W
+play,2,0,mirad001,31,CBBBB,W.2-3;1-2
+play,2,0,gardm001,00,X,8/F8
+play,2,1,piazm001,02,CFX,4/P4
+play,2,1,ventr001,12,BFFS,K
+play,2,1,zeilt001,01,CX,9/F9S
+play,3,0,murrc001,21,CBBX,9/FL
+play,3,0,davir002,21,FBBX,S9
+play,3,0,bondb001,12,CBCC,K/C
+play,3,0,kentj001,32,CCBBFBB,W.1-2
+play,3,0,burke001,32,CBBSBFX,S.2-3;1-2
+play,3,0,aurir001,12,BFFC,K/C
+play,3,1,paytj001,02,CFX,S
+play,3,1,bordm001,01,FX,4(B)3(1)/LDP
+play,3,1,ruscg001,12,FBCS,K
+play,4,0,snowj001,02,CSC,K/C
+play,4,0,mirad001,32,CBBBSS,K
+play,4,0,gardm001,22,BCCBFX,8/F8
+play,4,1,hamid001,01,CX,D7
+play,4,1,belld001,32,BCSFBBC,K/C
+play,4,1,alfoe001,11,FBX,9/F9.2-3
+play,4,1,piazm001,10,BX,HR/78.3-H
+play,4,1,ventr001,12,BCCFFX,43/G
+play,5,0,murrc001,00,X,S5/BG5
+play,5,0,davir002,32,BSSBBX,43/G.1-2
+play,5,0,bondb001,12,CFBFFX,13/G.2-3
+play,5,0,kentj001,32,BBBCFB,W
+play,5,0,burke001,00,X,S9.3-H;1-3
+play,5,0,aurir001,11,FBX,53/G
+play,5,1,zeilt001,01,SX,S7
+play,5,1,paytj001,02,SFB,PB.1-2
+play,5,1,paytj001,12,SFBX,7/F7
+play,5,1,bordm001,12,BCSS,K
+play,5,1,ruscg001,00,,NP
+sub,tramb001,"Bubba Trammell",1,9,11
+play,5,1,tramb001,32,BBBCFS,K
+play,6,0,snowj001,00,,NP
+sub,whitr002,"Rick White",1,9,1
+play,6,0,snowj001,11,BFX,7/F7
+play,6,0,mirad001,10,BX,53/G
+play,6,0,gardm001,22,BBCSC,K/C
+play,6,1,hamid001,01,FX,S9
+play,6,1,belld001,12,FSBC,K/C
+play,6,1,alfoe001,11,BCX,HR/78.1-H
+play,6,1,piazm001,00,,NP
+sub,henrd002,"Doug Henry",0,9,1
+play,6,1,piazm001,01,CX,13/G
+play,6,1,ventr001,30,BBBB,W
+play,6,1,zeilt001,01,CX,63/G
+play,7,0,murrc001,00,,NP
+sub,benam001,"Marvin Benard",0,1,11
+play,7,0,benam001,11,BSX,3/G
+play,7,0,davir002,00,,NP
+sub,muelb001,"Bill Mueller",0,2,11
+play,7,0,muelb001,00,X,43/G
+play,7,0,bondb001,10,BX,43/G
+play,7,1,paytj001,00,,NP
+sub,benam001,"Marvin Benard",0,1,8
+play,7,1,paytj001,00,,NP
+sub,muelb001,"Bill Mueller",0,2,5
+play,7,1,paytj001,01,FH,HP
+play,7,1,bordm001,10,BX,3/FL
+play,7,1,whitr002,00,,NP
+sub,agbab001,"Benny Agbayani",1,9,11
+play,7,1,agbab001,01,CX,9/F9
+play,7,1,hamid001,22,BCBFX,8/F8
+play,8,0,kentj001,00,,NP
+sub,franj001,"John Franco",1,9,1
+play,8,0,kentj001,10,BX,7/F7
+play,8,0,burke001,32,BBCBFB,W
+play,8,0,aurir001,01,CX,54(1)/FO
+play,8,0,snowj001,21,BCBX,43/G
+play,8,1,belld001,10,BX,7/L7
+play,8,1,alfoe001,01,CX,S7/7S
+play,8,1,piazm001,32,SBFBFFBFFX,63/G.1-2
+play,8,1,ventr001,12,BCCS,K
+play,9,0,mirad001,00,,NP
+sub,cresf001,"Felipe Crespo",0,8,11
+play,9,0,cresf001,00,,NP
+sub,benia001,"Armando Benitez",1,9,1
+play,9,0,cresf001,22,BBCFS,K
+play,9,0,henrd002,00,,NP
+sub,riosa001,"Armando Rios",0,9,11
+play,9,0,riosa001,22,FBBFC,K/C
+play,9,0,benam001,00,X,8/F8
+data,er,gardm001,4
+data,er,henrd002,0
+data,er,ruscg001,1
+data,er,whitr002,0
+data,er,franj001,0
+data,er,benia001,0

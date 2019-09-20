@@ -1,0 +1,169 @@
+version,2
+info,visteam,DET
+info,hometeam,TEX
+info,site,ARL02
+info,date,2000/07/30
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,wintm901
+info,ump1b,welkb901
+info,ump2b,culbf901
+info,ump3b,fleta901
+info,pitches,pitches
+info,temp,90
+info,winddir,ltor
+info,windspeed,8
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,190
+info,attendance,40167
+info,wp,blaiw001
+info,lp,olivd001
+info,save,jonet003
+start,easld001,"Damion Easley",0,1,4
+start,ausmb001,"Brad Ausmus",0,2,2
+start,higgb001,"Bobby Higginson",0,3,7
+start,gonzj002,"Juan Gonzalez",0,4,9
+start,palmd002,"Dean Palmer",0,5,10
+start,magew001,"Wendell Magee",0,6,8
+start,cruzd001,"Deivi Cruz",0,7,6
+start,morrh001,"Hal Morris",0,8,3
+start,halts001,"Shane Halter",0,9,5
+start,blaiw001,"Willie Blair",0,0,1
+start,alicl001,"Luis Alicea",1,1,4
+start,cataf001,"Frank Catalanotto",1,2,10
+start,greer001,"Rusty Greer",1,3,7
+start,palmr001,"Rafael Palmeiro",1,4,3
+start,kaplg001,"Gabe Kapler",1,5,8
+start,leder001,"Ricky Ledee",1,6,9
+start,haseb001,"Bill Haselman",1,7,2
+start,lambm001,"Mike Lamb",1,8,5
+start,clayr001,"Royce Clayton",1,9,6
+start,olivd001,"Darren Oliver",1,0,1
+play,1,0,easld001,10,BX,5/P5
+play,1,0,ausmb001,00,X,63/G
+play,1,0,higgb001,10,BX,D9
+play,1,0,gonzj002,10,BX,S7.2-H
+play,1,0,palmd002,20,BBX,HR/8.1-H
+play,1,0,magew001,00,X,S5/BG5
+play,1,0,cruzd001,02,CFX,S8.1-2
+play,1,0,morrh001,32,CBBFBB,W.2-3;1-2
+play,1,0,halts001,12,CFBX,T7/7D.3-H;2-H;1-H
+play,1,0,easld001,00,X,2/FL
+play,1,1,alicl001,10,BX,8/L8
+play,1,1,cataf001,32,CBBBCFFX,9/F9
+play,1,1,greer001,31,FBBBB,W
+play,1,1,palmr001,22,FCFBFFBFX,43/G
+play,2,0,ausmb001,22,CBBFX,53/G
+play,2,0,higgb001,02,FFC,K/C
+play,2,0,gonzj002,20,BBX,D8/8D
+play,2,0,palmd002,00,X,S7/7S.2-H
+play,2,0,magew001,32,BSBSFBX,9/F9S
+play,2,1,kaplg001,00,X,D/78
+play,2,1,leder001,01,SX,3/G.2-3
+play,2,1,haseb001,00,X,D/78.3-H
+play,2,1,lambm001,32,CBFBBX,S7/7S.2-3
+play,2,1,clayr001,21,CBBX,S7.3-H;1-2
+play,2,1,alicl001,12,CFBX,5/FL
+play,2,1,cataf001,00,X,9/F9
+play,3,0,cruzd001,00,,NP
+sub,perim001,"Matt Perisho",1,0,1
+play,3,0,cruzd001,00,X,2/FL
+play,3,0,morrh001,31,BBCBB,W
+play,3,0,halts001,22,BBCCFX,S8.1-2
+play,3,0,easld001,12,BSCFS,K
+play,3,0,ausmb001,12,CFBX,8/F8D
+play,3,1,greer001,32,BCSBBFX,8/F8
+play,3,1,palmr001,22,CBSFFBFC,K/C
+play,3,1,kaplg001,01,CX,9/F9S
+play,4,0,higgb001,01,CH,HP
+play,4,0,gonzj002,11,BFX,9/F9
+play,4,0,palmd002,21,BFBX,8(B)3(1)/LDP
+play,4,1,leder001,32,CBBBCB,W
+play,4,1,haseb001,00,X,8/F8S
+play,4,1,lambm001,00,X,S9/9S.1-2
+play,4,1,clayr001,00,X,S8/8S.2-H;1-2
+play,4,1,alicl001,01,SX,8/F8
+play,4,1,cataf001,30,BBBB,W.2-3;1-2
+play,4,1,greer001,22,CFFBBS,K
+play,5,0,magew001,12,SFFBX,7/L7
+play,5,0,cruzd001,12,BCFS,K
+play,5,0,morrh001,12,BCCFFC,K/C
+play,5,1,palmr001,10,BX,8/F8
+play,5,1,kaplg001,11,FBX,7/F7
+play,5,1,leder001,22,FBCBFX,1/G
+play,6,0,halts001,12,BCFFX,9/F9S
+play,6,0,easld001,01,CX,53/G
+play,6,0,ausmb001,11,BCX,3/L3
+play,6,1,haseb001,32,BBCBFX,S8/8S
+play,6,1,lambm001,00,,NP
+sub,nitkc001,"C.J. Nitkowski",0,0,1
+play,6,1,lambm001,32,CBFBFBFX,D7.1-3
+play,6,1,clayr001,00,X,13/G
+play,6,1,alicl001,10,BX,8/SF.3-H
+play,6,1,cataf001,00,,NP
+sub,curtc001,"Chad Curtis",1,2,11
+play,6,1,curtc001,21,BCBX,S8.2-H
+play,6,1,greer001,01,SX,9/L9
+play,7,0,higgb001,12,CBFC,K/C
+play,7,0,gonzj002,02,CCX,S7/7S
+play,7,0,palmd002,00,,NP
+sub,zimmj001,"Jeff Zimmerman",1,0,1
+play,7,0,palmd002,20,BBX,D7.1-H
+play,7,0,magew001,00,,NP
+sub,beckr002,"Rich Becker",0,6,11
+play,7,0,beckr002,00,C,BK.2-3
+play,7,0,beckr002,12,CSBC,K/C
+play,7,0,cruzd001,01,CH,HP
+play,7,0,morrh001,02,CCX,13/G
+play,7,1,palmr001,00,,NP
+sub,beckr002,"Rich Becker",0,6,8
+play,7,1,palmr001,02,CFS,K
+play,7,1,kaplg001,00,X,7/F7S
+play,7,1,leder001,30,BBBB,W
+play,7,1,haseb001,30,BBBB,W.1-2
+play,7,1,lambm001,32,BBBCFX,43/G
+play,8,0,halts001,02,CFX,9/F9D
+play,8,0,easld001,22,SBCFBS,K
+play,8,0,ausmb001,12,CBCFC,K/C
+play,8,1,clayr001,00,,NP
+sub,brocd001,"Doug Brocail",0,0,1
+play,8,1,clayr001,22,BBFFFFFX,63/G
+play,8,1,alicl001,21,BBCX,D7
+play,8,1,curtc001,02,CFFS,K
+play,8,1,greer001,32,CBCBBS,K
+play,9,0,higgb001,00,,NP
+sub,wettj001,"John Wetteland",1,0,1
+play,9,0,higgb001,02,CCC,K/C
+com,"ej,higgb001,P,wintm901,Balls and strikes"
+com,"BObby Higginson ejected by HP umpire Mike Winters"
+play,9,0,gonzj002,20,BBX,8/F8D
+play,9,0,palmd002,32,BBSSBB,W
+play,9,0,beckr002,02,CFB,SB2
+play,9,0,beckr002,32,CFBBBB,W
+play,9,0,cruzd001,12,CBFFS,K
+play,9,1,palmr001,00,,NP
+sub,encaj001,"Juan Encarnacion",0,3,8
+play,9,1,palmr001,00,,NP
+sub,beckr002,"Rich Becker",0,6,7
+play,9,1,palmr001,00,,NP
+sub,jonet003,"Todd Jones",0,0,1
+play,9,1,palmr001,32,CCBBBB,W
+play,9,1,kaplg001,12,CFBX,3/P3
+play,9,1,leder001,10,BX,S7.1-2
+play,9,1,haseb001,10,BX,S7/7S.2-H;1-3
+play,9,1,lambm001,00,,NP
+sub,grees002,"Scarborough Green",1,7,12
+play,9,1,lambm001,02,CCX,63/G.3-H;1-2
+play,9,1,clayr001,10,BX,3/P3
+data,er,blaiw001,4
+data,er,nitkc001,1
+data,er,brocd001,0
+data,er,jonet003,2
+data,er,olivd001,7
+data,er,perim001,1
+data,er,zimmj001,0
+data,er,wettj001,0

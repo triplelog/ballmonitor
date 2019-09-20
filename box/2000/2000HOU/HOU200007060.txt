@@ -1,0 +1,125 @@
+version,2
+info,visteam,ARI
+info,hometeam,HOU
+info,site,HOU03
+info,date,2000/07/06
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,barrt901
+info,ump1b,randt901
+info,ump2b,monte901
+info,ump3b,laynj901
+info,pitches,pitches
+info,temp,72
+info,winddir,unknown
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,148
+info,attendance,36471
+info,wp,guzmg001
+info,lp,holtc001
+info,save,mantm001
+start,womat001,"Tony Womack",0,1,6
+start,bellj001,"Jay Bell",0,2,4
+start,gonzl001,"Luis Gonzalez",0,3,7
+start,finls001,"Steve Finley",0,4,8
+start,lee-t002,"Travis Lee",0,5,3
+start,contj001,"Jason Conti",0,6,9
+start,milld002,"Damian Miller",0,7,2
+start,klasd001,"Danny Klassen",0,8,5
+start,guzmg001,"Geraldo Guzman",0,9,1
+start,spieb001,"Bill Spiers",1,1,6
+start,biggc001,"Craig Biggio",1,2,4
+start,bagwj001,"Jeff Bagwell",1,3,3
+start,berkl001,"Lance Berkman",1,4,9
+start,aloum001,"Moises Alou",1,5,7
+start,hidar001,"Richard Hidalgo",1,6,8
+start,trubc001,"Chris Truby",1,7,5
+start,euset001,"Tony Eusebio",1,8,2
+start,holtc001,"Chris Holt",1,9,1
+play,1,0,womat001,01,CX,S7
+com,"Debut game for Geraldo Guzman"
+play,1,0,bellj001,22,CBBSFS,K
+play,1,0,gonzl001,10,BX,S8.1-3(E8)
+play,1,0,finls001,30,BBBX,7/SF.3-H(UR);1-2
+play,1,0,lee-t002,22,CBBFFC,K/C
+play,1,1,spieb001,01,CX,S8
+play,1,1,biggc001,00,X,64(1)3/GDP
+play,1,1,bagwj001,20,BBX,S9
+play,1,1,berkl001,01,CX,9/F9
+play,2,0,contj001,21,BBFX,S7
+play,2,0,milld002,22,BFBSC,K/C
+play,2,0,klasd001,32,BBFCBB,W.1-2
+play,2,0,guzmg001,22,BLSBS,K
+play,2,0,womat001,11,BFX,3/G
+play,2,1,aloum001,12,CSBFS,K
+play,2,1,hidar001,21,BFBX,9/F9
+play,2,1,trubc001,02,CFX,7/F7
+play,3,0,bellj001,11,BCX,9/F9D
+play,3,0,gonzl001,22,BFBCS,K
+play,3,0,finls001,22,CBBFFX,43/G
+play,3,1,euset001,00,X,9/F9
+play,3,1,holtc001,01,CX,9/F9
+play,3,1,spieb001,11,CBX,5/FL
+play,4,0,lee-t002,12,CBFX,63/G
+play,4,0,contj001,21,BBFX,T/89D
+play,4,0,milld002,02,CCX,9/SF.3-H
+play,4,0,klasd001,11,SBX,43/G
+play,4,1,biggc001,11,BFX,4/P4
+play,4,1,bagwj001,21,CBBX,53/G
+play,4,1,berkl001,20,BBX,7/F7
+play,5,0,guzmg001,11,SBX,63/G
+play,5,0,womat001,01,CX,8/F8
+play,5,0,bellj001,22,SBFBX,63/G
+play,5,1,aloum001,00,X,S9/9S
+play,5,1,hidar001,21,BBCX,S/89S.1-3
+play,5,1,trubc001,32,BBSFFFBFX,64(1)3/GDP.3-H
+play,5,1,euset001,12,FBCX,8/F8
+play,6,0,gonzl001,10,BX,3/G
+play,6,0,finls001,22,BCBFX,3/L3
+play,6,0,lee-t002,32,CBBFBFFFC,K/C
+play,6,1,holtc001,01,SX,63/G
+play,6,1,spieb001,10,BX,5/FL
+play,6,1,biggc001,22,FBSFBX,13/G
+play,7,0,contj001,32,BFBSBFFX,31/G
+play,7,0,milld002,22,BFCBX,9/F9
+play,7,0,klasd001,32,BSBBFFX,8/L8
+play,7,1,bagwj001,02,FFS,K
+play,7,1,berkl001,32,FSFBBBX,3/G
+play,7,1,aloum001,02,CFS,K
+play,8,0,guzmg001,12,CBCS,K
+play,8,0,womat001,12,BFSFFX,63/G
+play,8,0,bellj001,00,X,7/F7
+play,8,1,hidar001,32,CFFBBBB,W
+play,8,1,trubc001,00,X,3/SH.1-2
+play,8,1,euset001,20,BBX,9/F9
+play,8,1,holtc001,00,,NP
+sub,melum001,"Mitch Meluskey",1,9,11
+play,8,1,melum001,31,BCBBX,8/F8XDW
+com,"$Finley crashed into wall, hurt back and left game"
+play,9,0,gonzl001,00,,NP
+sub,doteo001,"Octavio Dotel",1,9,1
+play,9,0,gonzl001,22,BCSBFS,K
+play,9,0,finls001,00,,NP
+sub,bautd001,"Danny Bautista",0,4,11
+play,9,0,bautd001,00,X,31/G
+play,9,0,lee-t002,11,FBX,43/G
+play,9,1,spieb001,00,,NP
+sub,bautd001,"Danny Bautista",0,4,8
+play,9,1,spieb001,00,,NP
+sub,mantm001,"Matt Mantei",0,9,1
+play,9,1,spieb001,30,BBBB,W
+play,9,1,biggc001,00,,NP
+sub,barkg001,"Glen Barker",1,1,12
+play,9,1,biggc001,20,BBC,SB2
+play,9,1,biggc001,31,BBCBB,W
+play,9,1,bagwj001,12,BCCS,K
+play,9,1,berkl001,10,BX,64(1)3/GDP
+data,er,guzmg001,1
+data,er,mantm001,0
+data,er,holtc001,1
+data,er,doteo001,0

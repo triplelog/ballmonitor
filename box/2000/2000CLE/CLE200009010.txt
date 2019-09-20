@@ -1,0 +1,151 @@
+version,2
+info,visteam,BAL
+info,hometeam,CLE
+info,site,CLE08
+info,date,2000/09/01
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,rungb901
+info,ump1b,lampi901
+info,ump2b,roe-r901
+info,ump3b,shulj901
+info,pitches,pitches
+info,temp,80
+info,winddir,fromcf
+info,windspeed,6
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,158
+info,attendance,42647
+info,wp,finlc001
+info,lp,ponss001
+info,save,wickb001
+start,andeb001,"Brady Anderson",0,1,8
+start,moram002,"Melvin Mora",0,2,6
+start,deshd001,"Delino DeShields",0,3,7
+start,bellj002,"Albert Belle",0,4,9
+start,conij001,"Jeff Conine",0,5,3
+start,ripkc001,"Cal Ripken",0,6,10
+start,fordb001,"Brook Fordyce",0,7,2
+start,lewim001,"Mark Lewis",0,8,5
+start,hairj002,"Jerry Hairston",0,9,4
+start,ponss001,"Sidney Ponson",0,0,1
+start,loftk001,"Kenny Lofton",1,1,8
+start,vizqo001,"Omar Vizquel",1,2,6
+start,alomr001,"Roberto Alomar",1,3,4
+start,ramim002,"Manny Ramirez",1,4,9
+start,thomj002,"Jim Thome",1,5,3
+start,segud001,"David Segui",1,6,10
+start,frymt001,"Travis Fryman",1,7,5
+start,cordw001,"Wil Cordero",1,8,7
+start,aloms001,"Sandy Alomar",1,9,2
+start,finlc001,"Chuck Finley",1,0,1
+play,1,0,andeb001,20,BBX,8/F8
+play,1,0,moram002,21,BBLX,8/F8D
+play,1,0,deshd001,20,BBX,6/P6
+play,1,1,loftk001,12,BFFX,D7
+play,1,1,vizqo001,11,BLB,SB3
+play,1,1,vizqo001,21,BLBX,63/G.3-H
+play,1,1,alomr001,21,CBBX,43/G
+play,1,1,ramim002,30,BBBB,W
+play,1,1,thomj002,12,CBSFB,PB.1-3
+play,1,1,thomj002,32,CBSFBBFB,W
+play,1,1,segud001,00,X,43/G
+play,2,0,bellj002,10,BX,8/F8D
+play,2,0,conij001,11,BCX,8/F8
+play,2,0,ripkc001,10,BX,S8
+play,2,0,fordb001,12,CFBFX,9/F9
+play,2,1,frymt001,20,BBX,S8
+play,2,1,cordw001,21,BBSX,S7/7S.1-2
+play,2,1,aloms001,10,BX,64(2)4(1)3(B)/TP
+com,"ej,manuc101,M,shulj901,Infield fly non-call"
+com,"$Sandy Alomar hit a popup to shallow"
+com,"LF that should have been an out under the infield fly"
+com,"rule; SS Melvin Mora settled under the ball, but let it fall"
+com,"in front of him; he picked up the ball and threw to 2B"
+com,"Jerry Hairston, who tagged Travis Fryman and stepped on the bag;"
+com,"Hairston threw to 1B and Alomar was called out because"
+com,"he jogged off the field thinking the infield fly rule"
+com,"had been applied; crew chief John Shulock claimed that Mora"
+com,"missed the ball and did not drop it intentionally"
+com,"(which is not part of the rule); Indians Manager Charlie Manuel ejected"
+com,"by Shulock"
+play,3,0,lewim001,12,SBSX,S7
+play,3,0,hairj002,01,CX,13/SH.1-2
+play,3,0,andeb001,31,CBBBX,S7/7S.2-3
+play,3,0,moram002,11,CBX,54(1)3/GDP
+play,3,1,loftk001,00,X,S8
+play,3,1,vizqo001,20,BBX,6/P6
+play,3,1,alomr001,12,CBLS,K
+play,3,1,ramim002,12,CFBS,K
+play,4,0,deshd001,01,CX,S7
+play,4,0,bellj002,01,FC,CS2(24)
+play,4,0,bellj002,12,FCBS,K
+play,4,0,conij001,21,BBCX,8/F8D
+play,4,1,thomj002,32,BSBBFB,W
+play,4,1,segud001,32,BFBFBX,S9.1-2
+play,4,1,frymt001,22,BCFBX,64(1)/FO.2-3
+play,4,1,cordw001,22,SSBBX,S9/9S.3-H;1-3
+play,4,1,aloms001,01,FX,64(1)3/GDP
+play,5,0,ripkc001,10,BX,8/F8
+play,5,0,fordb001,31,BFBBX,HR/8
+play,5,0,lewim001,32,CBBFBB,W
+play,5,0,hairj002,22,BBCFFX,46(1)3/GDP
+play,5,1,loftk001,10,BX,13/BG
+play,5,1,vizqo001,31,BBBCB,W
+play,5,1,alomr001,22,BBCFFFX,S9.1-2
+play,5,1,ramim002,01,CX,8/F8D.2-3;1-2
+play,5,1,thomj002,22,BSSBX,S9.3-H;2-H
+play,5,1,segud001,01,CX,13/G
+play,6,0,andeb001,00,X,D/89D
+play,6,0,moram002,22,BSBCX,8/F8D
+play,6,0,deshd001,00,X,S7.2-H;BX2(754)
+play,6,0,bellj002,12,BFCX,53/G
+play,6,1,frymt001,12,SFBX,31/G
+play,6,1,cordw001,11,BFX,S8
+play,6,1,aloms001,21,BBFX,9/F9
+play,6,1,loftk001,10,BX,43/G
+play,7,0,conij001,32,FBBFBFX,9/F9
+play,7,0,ripkc001,10,BX,7/F7D
+play,7,0,fordb001,12,CBFX,3/P3
+play,7,1,vizqo001,32,BBCCFBX,63/G
+play,7,1,alomr001,31,BBBCB,W
+play,7,1,ramim002,01,CB,PB.1-2
+play,7,1,ramim002,21,CBBX,S9.2-3
+play,7,1,thomj002,00,,NP
+sub,mcelc001,"Chuck McElroy",0,0,1
+play,7,1,thomj002,00,,NP
+sub,cabrj002,"Jolbert Cabrera",1,4,12
+play,7,1,thomj002,02,CSS,K
+play,7,1,segud001,22,BCSFFBX,D9.3-H;1XH(942)
+play,8,0,lewim001,00,,NP
+sub,cabrj002,"Jolbert Cabrera",1,4,9
+play,8,0,lewim001,00,,NP
+sub,shuep001,"Paul Shuey",1,0,1
+play,8,0,lewim001,00,X,53/G
+play,8,0,hairj002,32,CBSBBX,8/L8
+play,8,0,andeb001,32,CBBBFX,3/G
+play,8,1,frymt001,00,,NP
+sub,richc001,"Chris Richard",0,2,3
+play,8,1,frymt001,00,,NP
+sub,conij001,"Jeff Conine",0,5,5
+play,8,1,frymt001,00,,NP
+sub,lewim001,"Mark Lewis",0,8,6
+play,8,1,frymt001,01,FX,9/F9
+play,8,1,cordw001,22,BSFBFX,9/F9
+play,8,1,aloms001,10,BX,7/FL
+play,9,0,richc001,00,,NP
+sub,robed001,"Dave Roberts",1,8,7
+play,9,0,richc001,00,,NP
+sub,wickb001,"Bob Wickman",1,0,1
+play,9,0,richc001,01,CX,43/G
+play,9,0,deshd001,22,CBCBX,63/G
+play,9,0,bellj002,22,FBFFFBX,63/G
+data,er,ponss001,5
+data,er,mcelc001,0
+data,er,finlc001,2
+data,er,shuep001,0
+data,er,wickb001,0

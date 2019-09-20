@@ -1,0 +1,144 @@
+version,2
+info,visteam,KCA
+info,hometeam,CHA
+info,site,CHI12
+info,date,2000/09/30
+info,number,0
+info,starttime,6:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,buckc901
+info,ump1b,reedr901
+info,ump2b,wendh902
+info,ump3b,clara901
+info,pitches,pitches
+info,temp,77
+info,winddir,fromrf
+info,windspeed,9
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,163
+info,attendance,29692
+info,wp,wellk001
+info,lp,steib002
+info,save,
+start,damoj001,"Johnny Damon",0,1,8
+start,sancr001,"Rey Sanchez",0,2,6
+start,sweem002,"Mike Sweeney",0,3,3
+start,dye-j001,"Jermaine Dye",0,4,10
+start,randj002,"Joe Randa",0,5,5
+start,beltc001,"Carlos Beltran",0,6,9
+start,quinm001,"Mark Quinn",0,7,7
+start,zaung001,"Gregg Zaun",0,8,2
+start,feblc001,"Carlos Febles",0,9,4
+start,steib002,"Blake Stein",0,0,1
+start,durhr001,"Ray Durham",1,1,4
+start,valej003,"Jose Valentin",1,2,6
+start,thomf001,"Frank Thomas",1,3,10
+start,ordom001,"Magglio Ordonez",1,4,9
+start,lee-c001,"Carlos Lee",1,5,7
+start,konep001,"Paul Konerko",1,6,3
+start,abboj002,"Jeff Abbott",1,7,8
+start,credj001,"Joe Crede",1,8,5
+start,paulj001,"Josh Paul",1,9,2
+start,wellk001,"Kip Wells",1,0,1
+play,1,0,damoj001,12,CBFX,43/G
+play,1,0,sancr001,21,BBCX,8/F8
+play,1,0,sweem002,32,BBBCCX,S8/8S
+play,1,0,dye-j001,10,BB,WP.1-2
+play,1,0,dye-j001,31,BBCBB,W
+play,1,0,randj002,32,BBFBFFX,S7.2-H;1-2
+play,1,0,beltc001,20,BBX,5/L5
+play,1,1,durhr001,31,BFBBX,43/G
+play,1,1,valej003,02,FFC,K/C
+play,1,1,thomf001,32,BBCBSX,9/F9
+play,2,0,quinm001,01,FX,53/G
+play,2,0,zaung001,10,BX,D9.BX3(945)
+play,2,0,feblc001,22,CSBBC,K/C
+play,2,1,ordom001,10,BX,43/G
+play,2,1,lee-c001,32,BFBCFFBB,W
+play,2,1,konep001,00,C,SB2.1-3(E2/TH2)
+play,2,1,konep001,12,CSBX,1/L1
+play,2,1,abboj002,31,BBFBB,W
+play,2,1,credj001,00,X,D9/9D.3-H;1-H
+play,2,1,paulj001,31,BBBCX,43/G
+play,3,0,damoj001,01,CX,4/P4
+play,3,0,sancr001,10,BX,S8
+play,3,0,sweem002,11,FBX,E6/G.1-2
+play,3,0,dye-j001,11,CBX,63/G.2-3;1-2
+play,3,0,randj002,22,FBSBX,7/L7
+play,3,1,durhr001,32,BFCBFBB,W
+play,3,1,valej003,11,BCB,CS2(26)
+play,3,1,valej003,32,BCBFFBX,HR/9
+play,3,1,thomf001,11,CBX,S7
+play,3,1,ordom001,22,BFFBFS,K
+play,3,1,lee-c001,11,CBX,6/P6
+play,4,0,beltc001,22,BFBFX,63/G
+play,4,0,quinm001,01,FX,8/F8
+play,4,0,zaung001,21,BCBX,8/F8
+play,4,1,konep001,31,BCBBX,HR/7
+play,4,1,abboj002,02,CFX,63/G
+play,4,1,credj001,02,SSS,K
+play,4,1,paulj001,00,X,63/G
+play,5,0,feblc001,11,CBH,HP
+play,5,0,damoj001,00,X,2/FL
+play,5,0,sancr001,31,BBBCX,S.1-2
+play,5,0,sweem002,11,BFX,6/P6
+play,5,0,dye-j001,11,CBX,64(1)/FO.2-3
+play,5,1,durhr001,02,CFX,S9
+play,5,1,valej003,01,CX,6/P6
+play,5,1,thomf001,32,BCBFFBB,W.1-2
+play,5,1,ordom001,11,BSX,8/L8
+play,5,1,lee-c001,12,FBFS,K
+play,6,0,randj002,00,,NP
+sub,garlj001,"Jon Garland",1,0,1
+play,6,0,randj002,00,X,7/F7
+play,6,0,beltc001,02,CFS,K
+play,6,0,quinm001,20,BBX,S8
+play,6,0,zaung001,11,BCB,WP.1-2
+play,6,0,zaung001,22,BCBFFFS,K
+play,6,1,konep001,00,,NP
+sub,murrd002,"Dan Murray",0,0,1
+play,6,1,konep001,30,BBBB,W
+play,6,1,abboj002,12,LBSS,K
+play,6,1,credj001,00,X,7/F7D
+play,6,1,paulj001,12,SFBX,S8.1-2
+play,6,1,durhr001,10,BX,S9.2-H;1-3
+play,6,1,valej003,00,X,3/G
+play,7,0,feblc001,00,,NP
+sub,delgw001,"Wilson Delgado",0,9,11
+play,7,0,delgw001,02,CCX,7/F7
+play,7,0,damoj001,32,CBBBFX,5/P5
+play,7,0,sancr001,02,FCX,63/G
+play,7,1,thomf001,00,,NP
+sub,delgw001,"Wilson Delgado",0,9,4
+play,7,1,thomf001,31,BCBBX,53/G
+play,7,1,ordom001,22,BCCBX,13/G
+play,7,1,lee-c001,12,CFBX,43/G
+play,8,0,sweem002,00,X,9/F9
+play,8,0,dye-j001,12,BCCS,K
+play,8,0,randj002,02,CSS,K
+play,8,1,konep001,00,,NP
+sub,mulls002,"Scott Mullen",0,0,1
+play,8,1,konep001,01,FX,S
+play,8,1,abboj002,11,FBX,7/F7
+play,8,1,credj001,22,BBFSX,S8.1-2
+play,8,1,paulj001,10,BX,D/78.2-H;1-H
+play,8,1,durhr001,00,X,53/G
+play,8,1,valej003,00,X,HR/7.2-H
+play,8,1,thomf001,32,CCBBFBB,W
+play,8,1,ordom001,32,BFBFBX,43/G
+play,9,0,beltc001,00,,NP
+sub,chrim002,"McKay Christensen",1,7,8
+play,9,0,beltc001,00,,NP
+sub,simab001,"Bill Simas",1,0,1
+play,9,0,beltc001,11,CBX,3/FL
+play,9,0,quinm001,12,BSFX,3/FL
+play,9,0,zaung001,12,CBFX,7/F7
+data,er,steib002,4
+data,er,murrd002,1
+data,er,mulls002,4
+data,er,wellk001,1
+data,er,garlj001,0
+data,er,simab001,0

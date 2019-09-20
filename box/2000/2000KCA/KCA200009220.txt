@@ -1,0 +1,147 @@
+version,2
+info,visteam,CLE
+info,hometeam,KCA
+info,site,KAN06
+info,date,2000/09/22
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,marqa901
+info,ump1b,brinj901
+info,ump2b,cousd901
+info,ump3b,hollm901
+info,pitches,pitches
+info,temp,76
+info,winddir,torf
+info,windspeed,8
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,178
+info,attendance,15036
+info,wp,bottr001
+info,lp,karss001
+info,save,
+start,loftk001,"Kenny Lofton",0,1,8
+start,vizqo001,"Omar Vizquel",0,2,6
+start,alomr001,"Roberto Alomar",0,3,4
+start,ramim002,"Manny Ramirez",0,4,9
+start,thomj002,"Jim Thome",0,5,10
+start,segud001,"David Segui",0,6,3
+start,frymt001,"Travis Fryman",0,7,5
+start,branr001,"Russell Branyan",0,8,7
+start,aloms001,"Sandy Alomar",0,9,2
+start,browj003,"Jim Brower",0,0,1
+start,damoj001,"Johnny Damon",1,1,10
+start,sancr001,"Rey Sanchez",1,2,6
+start,sweem002,"Mike Sweeney",1,3,3
+start,dye-j001,"Jermaine Dye",1,4,9
+start,randj002,"Joe Randa",1,5,5
+start,beltc001,"Carlos Beltran",1,6,8
+start,quinm001,"Mark Quinn",1,7,7
+start,zaung001,"Gregg Zaun",1,8,2
+start,feblc001,"Carlos Febles",1,9,4
+start,meadb001,"Brian Meadows",1,0,1
+com,"1:50 rain delay in the third"
+play,1,0,loftk001,12,BFCFS,K
+play,1,0,vizqo001,02,CCFX,S
+play,1,0,alomr001,00,X,S7/7S.1-2
+play,1,0,ramim002,12,BFCC,K/C
+play,1,0,thomj002,30,BBBB,W.2-3;1-2
+play,1,0,segud001,22,BCCBFX,53/G
+play,1,1,damoj001,22,CSBFBFX,2/FL
+play,1,1,sancr001,10,BX,S8
+play,1,1,sweem002,11,BFX,8/F8
+play,1,1,dye-j001,01,CX,S9/9S.1-3
+play,1,1,randj002,22,BBCSFX,8/F8D
+play,2,0,frymt001,00,X,T9/9D
+play,2,0,branr001,10,BX,5/P5
+play,2,0,aloms001,10,BX,D9.3-H
+play,2,0,loftk001,00,X,7/F7
+play,2,0,vizqo001,11,CBX,S7.2-H;B-2(THH)
+play,2,0,alomr001,21,BCBX,7/F7
+play,2,1,beltc001,12,FBCX,4/P4
+play,2,1,quinm001,11,BCX,D7
+play,2,1,zaung001,32,BSBFBX,31/G.2-3
+play,2,1,feblc001,32,CBBCFBX,S8.3-H
+play,2,1,damoj001,00,X,D9.1XH(942)
+play,3,0,ramim002,30,BBBB,W
+play,3,0,thomj002,11,BCX,7(B)4(1)/FDP
+play,3,0,segud001,12,FFFBX,D7/7D
+play,3,0,frymt001,12,CSBFX,8/F8
+play,3,1,sancr001,02,FFX,S7/7S
+play,3,1,sweem002,01,SX,13/G.1-2
+play,3,1,dye-j001,00,C,CS3(25)
+play,3,1,dye-j001,22,CBBSC,K/C
+play,4,0,branr001,00,,NP
+sub,murrd002,"Dan Murray",1,0,1
+play,4,0,branr001,31,BBSBB,W
+play,4,0,aloms001,31,BBBCX,8/F8D
+play,4,0,loftk001,22,BFBFX,7/L7
+play,4,0,vizqo001,32,BBFFFFBB,W.1-2
+play,4,0,alomr001,01,SX,8/F8
+play,4,1,randj002,31,BCBBX,D/89D
+play,4,1,beltc001,11,BCX,7/F7
+play,4,1,quinm001,00,X,S9.2-H
+play,4,1,zaung001,00,B,WP.1-2
+play,4,1,zaung001,21,BCBX,9/F9.2-3
+play,4,1,feblc001,31,BBBCX,31/G
+play,5,0,ramim002,32,BBFBFFFX,S7
+play,5,0,thomj002,00,X,36(1)/FO
+play,5,0,segud001,00,X,S9.1-2
+play,5,0,frymt001,00,X,5(2)3/GDP
+play,5,1,damoj001,00,,NP
+sub,nichc002,"Chris Nichting",0,0,1
+play,5,1,damoj001,01,CX,3/L3
+play,5,1,sancr001,22,CBBFFX,43/G
+play,5,1,sweem002,10,BX,53/G
+play,6,0,branr001,12,CSBFFX,31/G
+play,6,0,aloms001,12,BCSX,3/G
+play,6,0,loftk001,01,CX,31/G
+play,6,1,dye-j001,12,CSFFBX,4/L4
+play,6,1,randj002,10,BH,HP
+play,6,1,beltc001,10,BX,8/F8
+play,6,1,quinm001,31,BBBCS,SB2
+play,6,1,quinm001,32,BBBCSFB,W
+play,6,1,zaung001,20,BBH,HP.2-3;1-2
+play,6,1,feblc001,00,,NP
+sub,reeds001,"Steve Reed",0,0,1
+play,6,1,feblc001,02,CCX,64(1)/FO
+play,7,0,vizqo001,12,CBFX,S9/9S
+play,7,0,alomr001,10,BX,64(1)/FO
+play,7,0,ramim002,10,BX,D/78D.1-3
+play,7,0,thomj002,00,,NP
+sub,spolp001,"Paul Spoljaric",1,0,1
+play,7,0,thomj002,32,BBBFSX,13/G
+play,7,0,segud001,02,CSS,K
+play,7,1,damoj001,10,BX,3/G
+play,7,1,sancr001,21,FBBX,43/G
+play,7,1,sweem002,32,BFBFBB,W
+play,7,1,dye-j001,10,BX,S7.1-2
+play,7,1,randj002,00,,NP
+sub,karss001,"Steve Karsay",0,0,1
+play,7,1,randj002,32,CFBFBBX,8/F8
+play,8,0,frymt001,00,,NP
+sub,bottr001,"Ricky Bottalico",1,0,1
+play,8,0,frymt001,22,BFBFX,8/F8
+play,8,0,branr001,12,BCSC,K/C
+play,8,0,aloms001,01,CX,63/G
+play,8,1,beltc001,00,,NP
+sub,cabrj002,"Jolbert Cabrera",0,8,7
+play,8,1,beltc001,22,FSBBX,7/F7
+play,8,1,quinm001,31,BBBCX,63/G
+play,8,1,zaung001,01,FX,HR/89
+play,8,1,feblc001,12,CCBX,43/G
+play,9,0,loftk001,32,BCBFBX,6/P6
+play,9,0,vizqo001,30,BBBB,W
+play,9,0,alomr001,12,CFBS,K
+play,9,0,ramim002,12,CCBC,K/C
+data,er,browj003,2
+data,er,nichc002,0
+data,er,reeds001,0
+data,er,karss001,1
+data,er,meadb001,2
+data,er,murrd002,0
+data,er,spolp001,0
+data,er,bottr001,0

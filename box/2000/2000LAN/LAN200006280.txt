@@ -1,0 +1,144 @@
+version,2
+info,visteam,SDN
+info,hometeam,LAN
+info,site,LOS03
+info,date,2000/06/28
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,davig901
+info,ump1b,guccc901
+info,ump2b,riekr901
+info,ump3b,emmep901
+info,pitches,pitches
+info,temp,76
+info,winddir,ltor
+info,windspeed,14
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,181
+info,attendance,32351
+info,wp,adamt001
+info,lp,monts001
+info,save,
+start,owene001,"Eric Owens",0,1,9
+start,marta001,"Al Martin",0,2,7
+start,klesr001,"Ryan Klesko",0,3,3
+start,nevip001,"Phil Nevin",0,4,5
+start,boonb002,"Bret Boone",0,5,4
+start,hernc001,"Carlos A. Hernandez",0,6,2
+start,river002,"Ruben Rivera",0,7,8
+start,nichk001,"Kevin Nicholson",0,8,6
+start,eatoa001,"Adam Eaton",0,9,1
+start,hollt001,"Todd Hollandsworth",1,1,8
+start,grudm001,"Mark Grudzielanek",1,2,4
+start,shefg001,"Gary Sheffield",1,3,7
+start,grees001,"Shawn Green",1,4,9
+start,karre001,"Eric Karros",1,5,3
+start,belta001,"Adrian Beltre",1,6,5
+start,kreuc001,"Chad Kreuter",1,7,2
+start,coraa001,"Alex Cora",1,8,6
+start,parkc002,"Chan Ho Park",1,9,1
+play,1,0,owene001,00,X,S9/9S
+play,1,0,marta001,10,BX,36(1)/FO
+play,1,0,klesr001,01,CX,D9/9S.1-3
+play,1,0,nevip001,01,CX,S8.3-H;2-H
+play,1,0,boonb002,32,BSBBSB,W.1-2
+play,1,0,hernc001,00,X,54(1)/FO.2-3
+play,1,0,river002,00,X,4/P4
+play,1,1,hollt001,21,BFBX,43/G
+play,1,1,grudm001,22,CCBBFX,43/G
+play,1,1,shefg001,11,CBX,63/G
+play,2,0,nichk001,12,BCSC,K/C
+play,2,0,eatoa001,22,SSBBS,K
+play,2,0,owene001,01,CX,E4/G
+play,2,0,marta001,32,BSBSBX,43/G
+play,2,1,grees001,02,CSC,K/C
+play,2,1,karre001,12,BSCS,K
+play,2,1,belta001,22,CBSBS,K
+play,3,0,klesr001,30,BBBB,W
+play,3,0,nevip001,22,SBBFS,K
+play,3,0,boonb002,22,BCSBS,K
+play,3,0,hernc001,12,BCFX,9/F9S
+play,3,1,kreuc001,00,X,S8
+play,3,1,coraa001,32,BCBBFS,K+SB2
+play,3,1,parkc002,10,BX,9/F9
+play,3,1,hollt001,32,BBCCFFBX,HR/8.2-H
+play,3,1,grudm001,02,FCFX,13/G
+play,4,0,river002,30,BBBB,W
+play,4,0,nichk001,22,BBCFS,K
+play,4,0,eatoa001,22,LBCBB,CS2(26)
+play,4,0,eatoa001,32,LBCBBB,W
+play,4,0,owene001,11,BSX,43/G
+play,4,1,shefg001,12,BFFX,8/F8
+play,4,1,grees001,32,CBBBSB,W
+play,4,1,karre001,21,BFBX,HR/8.1-H
+play,4,1,belta001,22,BCFBX,S9/9S
+play,4,1,kreuc001,32,BBSFBFX,14(1)3/GDP
+play,5,0,marta001,21,BFBX,S8/8S
+play,5,0,klesr001,10,BX,S9.1-3
+play,5,0,nevip001,12,CBSS,K
+play,5,0,boonb002,30,BBBX,9/SF.3-H
+play,5,0,hernc001,10,BX,13/G
+play,5,1,coraa001,32,BBBCFFS,K
+play,5,1,parkc002,20,BBX,3/FL
+play,5,1,hollt001,30,BBBB,W
+play,5,1,grudm001,32,CBBBFX,S8.1-3
+play,5,1,shefg001,11,BSX,9/F9
+play,6,0,river002,00,X,7/F7D
+play,6,0,nichk001,22,CCBFBS,K
+play,6,0,eatoa001,01,FH,HP
+play,6,0,owene001,32,CBBBCB,W.1-2
+play,6,0,marta001,10,BX,S8.2-H;1-2
+play,6,0,klesr001,01,SX,43/G
+play,6,1,grees001,12,FBSX,5/P5
+play,6,1,karre001,11,BCX,7/F7D
+play,6,1,belta001,31,CBBBB,W
+play,6,1,kreuc001,21,BSBB,SB2.1-3(E2/TH2)
+play,6,1,kreuc001,31,BSBBB,W
+play,6,1,coraa001,12,CSBX,9/F9
+play,7,0,nevip001,12,FSBFX,13/G
+play,7,0,boonb002,21,BSBX,43/G
+play,7,0,hernc001,32,CBBCBB,W
+play,7,0,river002,32,CBSFBBC,K/C
+play,7,1,parkc002,00,,NP
+sub,santf001,"F.P. Santangelo",1,9,11
+play,7,1,santf001,00,X,43/G
+play,7,1,hollt001,02,CSX,3/G#
+play,7,1,grudm001,00,X,5/P5
+play,8,0,nichk001,00,,NP
+sub,adamt001,"Terry Adams",1,9,1
+play,8,0,nichk001,22,BFBSS,K
+play,8,0,eatoa001,00,,NP
+sub,magad001,"Dave Magadan",0,9,11
+play,8,0,magad001,22,BCBFX,53/G
+play,8,0,owene001,22,BFFBX,13/G
+play,8,1,shefg001,00,,NP
+sub,monts001,"Steve L. Montgomery",0,9,1
+play,8,1,shefg001,11,CBX,4/P4
+play,8,1,grees001,21,SBBX,6/P6
+play,8,1,karre001,00,X,8/F8
+play,9,0,marta001,20,BBX,43/G
+play,9,0,klesr001,21,CBBX,63/G
+play,9,0,nevip001,22,CSBBX,63/G
+play,9,1,belta001,01,CX,9/F9S
+play,9,1,kreuc001,30,BBBB,W
+play,9,1,coraa001,00,,NP
+sub,gilbs001,"Shawn Gilbert",1,7,12
+play,9,1,coraa001,10,BX,S9.1-2
+play,9,1,adamt001,00,,NP
+sub,hundt001,"Todd Hundley",1,9,11
+play,9,1,hundt001,00,,NP
+sub,walkk001,"Kevin Walker",0,9,1
+play,9,1,hundt001,31,CBBBX,8/F8
+play,9,1,hollt001,00,,NP
+sub,leyrj001,"Jim Leyritz",1,1,11
+play,9,1,leyrj001,12,SBCX,S7/F7LD.2-H;1-3
+com,"showed as DGR on Sports Center - not touch 2nd?"
+data,er,eatoa001,4
+data,er,monts001,1
+data,er,walkk001,0
+data,er,parkc002,4
+data,er,adamt001,0

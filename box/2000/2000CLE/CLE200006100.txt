@@ -1,0 +1,139 @@
+version,2
+info,visteam,CIN
+info,hometeam,CLE
+info,site,CLE08
+info,date,2000/06/10
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,cuzzp901
+info,ump1b,mcclt901
+info,ump2b,craft901
+info,ump3b,schrp901
+info,pitches,pitches
+info,temp,85
+info,winddir,torf
+info,windspeed,12
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,182
+info,attendance,43084
+info,wp,burbd001
+info,lp,parrs001
+info,save,karss001
+start,reesp001,"Pokey Reese",0,1,4
+start,larkb001,"Barry Larkin",0,2,6
+start,grifk002,"Ken Griffey",0,3,8
+start,bichd001,"Dante Bichette",0,4,9
+start,yound001,"Dmitri Young",0,5,10
+start,cases001,"Sean Casey",0,6,3
+start,tuckm001,"Michael Tucker",0,7,7
+start,boona001,"Aaron Boone",0,8,5
+start,santb001,"Benito Santiago",0,9,2
+start,parrs001,"Steve Parris",0,0,1
+start,loftk001,"Kenny Lofton",1,1,8
+start,vizqo001,"Omar Vizquel",1,2,6
+start,alomr001,"Roberto Alomar",1,3,4
+start,justd001,"David Justice",1,4,9
+start,thomj002,"Jim Thome",1,5,3
+start,frymt001,"Travis Fryman",1,6,5
+start,branr001,"Russell Branyan",1,7,10
+start,sexsr001,"Richie Sexson",1,8,7
+start,diaze002,"Einar Diaz",1,9,2
+start,burbd001,"Dave Burba",1,0,1
+play,1,0,reesp001,21,BBCX,S8
+play,1,0,larkb001,21,BCBX,16(1)/FO
+play,1,0,grifk002,01,CX,HR/9.1-H
+play,1,0,bichd001,00,X,5/P5
+play,1,0,yound001,22,BSBFFX,3/G
+play,1,1,loftk001,11,BCX,3/L3
+play,1,1,vizqo001,22,BBCCX,D9/9S
+play,1,1,alomr001,22,CCBFBS,K23
+play,1,1,justd001,01,CX,6/L6
+play,2,0,cases001,11,CBX,7/FL
+play,2,0,tuckm001,01,CX,S5/BG5
+play,2,0,boona001,10,BC,SB2
+play,2,0,boona001,21,BCBX,6/L6
+play,2,0,santb001,12,BFCX,63/G
+play,2,1,thomj002,21,BBSX,D8/8S
+play,2,1,frymt001,02,FCX,63/G
+play,2,1,branr001,31,CBBBB,W
+play,2,1,sexsr001,01,CX,S.2-3;1-2
+play,2,1,diaze002,01,CH,HP.3-H;2-3;1-2
+play,2,1,loftk001,20,BBX,S.3-H;2-3;1-2
+play,2,1,vizqo001,00,X,46(1)3/GDP
+play,3,0,reesp001,22,CBSBFX,63/G
+play,3,0,larkb001,11,CBX,53/G
+play,3,0,grifk002,31,BCBBB,W
+play,3,0,bichd001,01,CX,64(1)/FO
+play,3,1,alomr001,00,X,6/P6
+play,3,1,justd001,32,BBCSFBFX,31/G
+play,3,1,thomj002,12,CCBS,K
+play,4,0,yound001,32,BFBBFFFS,K
+play,4,0,cases001,11,BFX,S8
+play,4,0,tuckm001,12,BSFX,HR/9.1-H
+play,4,0,boona001,01,CX,13/BG
+play,4,0,santb001,12,FFFBFS,K
+play,4,1,frymt001,32,CBBFFBX,HR/7
+play,4,1,branr001,02,SCX,7/F7
+play,4,1,sexsr001,21,BFBX,S7
+play,4,1,diaze002,12,BCFS,K
+play,4,1,loftk001,32,CBBCBFX,8/F8
+play,5,0,reesp001,31,BCBBB,W
+play,5,0,larkb001,11,CBB,SB2
+play,5,0,larkb001,22,CBBFFFFX,7/F7D.2-3
+play,5,0,grifk002,30,IIII,IW
+play,5,0,bichd001,21,BFBX,7/SF.3-H
+play,5,0,yound001,12,CBFX,43/G
+play,5,1,vizqo001,10,BX,S5/BG5
+play,5,1,alomr001,10,BX,53/SH.1-2
+play,5,1,justd001,32,BBBFFFFS,K
+play,5,1,thomj002,12,CSBC,K/C
+play,6,0,cases001,22,BFBCX,63/G
+play,6,0,tuckm001,00,X,9/F9
+play,6,0,boona001,11,BSX,D9
+play,6,0,santb001,32,BCSBBX,63/G
+play,6,1,frymt001,31,BSBBX,HR/8
+play,6,1,branr001,00,X,HR/7
+play,6,1,sexsr001,22,BSFBX,7/F7D
+play,6,1,diaze002,22,CFBBFX,8/F8
+play,6,1,loftk001,32,BBBCLFX,HR/78
+play,6,1,vizqo001,11,CBX,63/G
+play,7,0,reesp001,00,,NP
+sub,kamis001,"Scott Kamieniecki",1,0,1
+play,7,0,reesp001,01,CX,63/G
+play,7,0,larkb001,12,CBCX,S9
+play,7,0,grifk002,22,CFBFBX,S9.1-3;BX2(96)
+play,7,0,bichd001,12,CSBX,31/G
+play,7,1,alomr001,00,,NP
+sub,sulls001,"Scott Sullivan",0,0,1
+play,7,1,alomr001,00,X,S9
+play,7,1,justd001,00,C,SB2
+play,7,1,justd001,12,CSBX,8/F8
+play,7,1,thomj002,22,BCCBS,K
+play,7,1,frymt001,10,BX,S7.2XH(72)
+play,8,0,yound001,22,BBCCS,K
+play,8,0,cases001,31,BBCBB,W
+play,8,0,tuckm001,12,CBSC,K/C
+play,8,0,boona001,11,CBX,7/F7S
+play,8,1,branr001,22,FBBFS,K
+play,8,1,sexsr001,00,H,HP
+play,8,1,diaze002,01,FB,WP.1-2
+play,8,1,diaze002,12,FBSS,K
+play,8,1,loftk001,21,BBCX,8/F8
+play,9,0,santb001,00,,NP
+sub,cabrj002,"Jolbert Cabrera",1,8,7
+play,9,0,santb001,00,,NP
+sub,karss001,"Steve Karsay",1,0,1
+play,9,0,santb001,00,,NP
+sub,cromd001,"David Cromer",0,9,11
+play,9,0,cromd001,12,SBFFC,K/C
+play,9,0,reesp001,11,CBX,43/G
+play,9,0,larkb001,00,X,9/F9
+data,er,parrs001,6
+data,er,sulls001,0
+data,er,burbd001,5
+data,er,kamis001,0
+data,er,karss001,0

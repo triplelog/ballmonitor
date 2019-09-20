@@ -1,0 +1,153 @@
+version,2
+info,visteam,BAL
+info,hometeam,DET
+info,site,DET05
+info,date,2000/08/07
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,ripps901
+info,ump1b,gibsg901
+info,ump2b,drakr901
+info,ump3b,meric901
+info,pitches,pitches
+info,temp,83
+info,winddir,tolf
+info,windspeed,18
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,177
+info,attendance,27392
+info,wp,groob001
+info,lp,brocd001
+info,save,kohlr001
+start,andeb001,"Brady Anderson",0,1,7
+start,moram002,"Melvin Mora",0,2,6
+start,deshd001,"Delino DeShields",0,3,4
+start,bellj002,"Albert Belle",0,4,9
+start,conij001,"Jeff Conine",0,5,10
+start,richc001,"Chris Richard",0,6,3
+start,fordb001,"Brook Fordyce",0,7,2
+start,coffi001,"Ivanon Coffie",0,8,5
+start,matol001,"Luis Matos",0,9,8
+start,parrj003,"John Parrish",0,0,1
+start,easld001,"Damion Easley",1,1,4
+start,ausmb001,"Brad Ausmus",1,2,2
+start,higgb001,"Bobby Higginson",1,3,10
+start,gonzj002,"Juan Gonzalez",1,4,9
+start,palmd002,"Dean Palmer",1,5,5
+start,magew001,"Wendell Magee",1,6,7
+start,encaj001,"Juan Encarnacion",1,7,8
+start,cruzd001,"Deivi Cruz",1,8,6
+start,morrh001,"Hal Morris",1,9,3
+start,berna001,"Adam Bernero",1,0,1
+play,1,0,andeb001,31,CBBBB,W
+play,1,0,moram002,01,CX,8/F8
+play,1,0,deshd001,12,BSCX,7/F7
+play,1,0,bellj002,01,CX,43/G
+play,1,1,easld001,32,CBFBBX,S/78
+play,1,1,ausmb001,31,BBCBB,W.1-2
+play,1,1,higgb001,11,BSN,POCS3(1)/NDP.1X2(16)
+play,1,1,higgb001,31,BSNBBB,W
+play,1,1,gonzj002,11,CBX,7/F7
+play,2,0,conij001,21,BBSX,9/F9S
+play,2,0,richc001,22,BSFBX,13/G
+play,2,0,fordb001,10,BX,S9
+play,2,0,coffi001,12,BCSX,43/G
+play,2,1,palmd002,20,BBX,D/78D
+play,2,1,magew001,21,BCBX,7/F7
+play,2,1,encaj001,11,CBX,8/F8
+play,2,1,cruzd001,32,FSBBBX,9/F9
+play,3,0,matol001,12,BCSS,K
+play,3,0,andeb001,32,BFBBCFB,W
+play,3,0,moram002,11,CBX,D7.1-3
+play,3,0,deshd001,10,BX,S8.3-H;2XH(82)
+play,3,0,bellj002,10,BX,8/F8
+play,3,1,morrh001,30,BBBB,W
+play,3,1,easld001,21,BBCX,S9.1-3
+play,3,1,ausmb001,12,BCFX,64(1)/FO.3-H
+play,3,1,higgb001,21,CBBX,9/F9D
+play,3,1,gonzj002,11,FBX,8/F8
+play,4,0,conij001,11,CBX,T7
+play,4,0,richc001,11,FBX,43/G
+play,4,0,fordb001,01,FX,E8/SF.3-H;B-2
+play,4,0,coffi001,21,BBSX,13/DP.2X3(35)
+play,4,1,palmd002,21,BBCX,53/G
+play,4,1,magew001,11,BFX,4/P4
+play,4,1,encaj001,32,CBBCBS,K
+play,5,0,matol001,00,X,1/L1
+play,5,0,andeb001,22,BFCBX,HR/9
+play,5,0,moram002,21,BBCX,63/G
+play,5,0,deshd001,00,X,3/G
+play,5,1,cruzd001,02,SFX,63/G
+play,5,1,morrh001,22,BCBFFX,S7
+play,5,1,easld001,11,BCX,6/FL
+play,5,1,ausmb001,00,X,S8.1-2
+play,5,1,higgb001,32,BSBBSFB,W.2-3;1-2
+play,5,1,gonzj002,22,BFFBS,K
+play,6,0,bellj002,00,X,3/G
+play,6,0,conij001,21,CBBX,7/F7
+play,6,0,richc001,32,BBFBCS,K
+play,6,1,palmd002,01,CX,HR/78
+play,6,1,magew001,10,BX,S7
+play,6,1,encaj001,00,X,3/P3
+play,6,1,cruzd001,10,BX,D7/7S.1-3
+play,6,1,morrh001,32,BBSFBB,W
+play,6,1,easld001,00,,NP
+sub,tromm001,"Mike Trombley",0,0,1
+play,6,1,easld001,10,BX,52(3)/FO.2-3;1-2
+play,6,1,ausmb001,01,SX,53/G
+play,7,0,fordb001,22,FBCBX,6/P6
+play,7,0,coffi001,22,BCCBX,63/G
+play,7,0,matol001,02,CSX,S7
+play,7,0,andeb001,32,CBFBBB,W.1-2
+play,7,0,moram002,00,,NP
+sub,pattd001,"Danny Patterson",1,0,1
+play,7,0,moram002,01,CX,13/G
+play,7,1,higgb001,00,X,S9
+play,7,1,gonzj002,02,CFS,K
+play,7,1,palmd002,32,FFBBBB,W.1-2
+play,7,1,magew001,00,,NP
+sub,mcmib001,"Billy McMillon",1,6,11
+play,7,1,mcmib001,10,BX,D9.2-H;1-3
+play,7,1,encaj001,10,BX,53/G
+play,7,1,cruzd001,01,FX,6/P6
+play,8,0,deshd001,00,,NP
+sub,mcmib001,"Billy McMillon",1,6,7
+play,8,0,deshd001,11,BCX,8/F8
+play,8,0,bellj002,10,BX,63/G
+play,8,0,conij001,12,CBSX,53/G
+play,8,1,morrh001,31,BBBCX,S
+play,8,1,easld001,00,,NP
+sub,halts001,"Shane Halter",1,9,12
+play,8,1,easld001,00,X,3/SH.1-2
+play,8,1,ausmb001,21,BSBX,6/P6
+play,8,1,higgb001,00,,NP
+sub,groob001,"Buddy Groom",0,0,1
+play,8,1,higgb001,02,FFS,K
+play,9,0,richc001,00,,NP
+sub,palmd002,"Dean Palmer",1,5,3
+play,9,0,richc001,00,,NP
+sub,halts001,"Shane Halter",1,9,5
+play,9,0,richc001,00,,NP
+sub,brocd001,"Doug Brocail",1,0,1
+play,9,0,richc001,00,X,D7/7D
+play,9,0,fordb001,00,X,43/G.2-3
+play,9,0,coffi001,01,FX,8/SF.3-H
+play,9,0,matol001,32,CBBFBS,K
+play,9,1,gonzj002,00,,NP
+sub,hubbt001,"Trenidad Hubbard",0,4,9
+play,9,1,gonzj002,00,,NP
+sub,kohlr001,"Ryan Kohlmeier",0,0,1
+play,9,1,gonzj002,10,BX,63/G
+play,9,1,palmd002,02,CCS,K
+play,9,1,mcmib001,32,FBFFBBX,43/G
+data,er,parrj003,2
+data,er,tromm001,1
+data,er,groob001,0
+data,er,kohlr001,0
+data,er,berna001,3
+data,er,pattd001,0
+data,er,brocd001,1

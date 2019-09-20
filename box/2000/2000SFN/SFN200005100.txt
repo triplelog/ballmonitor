@@ -1,0 +1,136 @@
+version,2
+info,visteam,SLN
+info,hometeam,SFN
+info,site,SFO03
+info,date,2000/05/10
+info,number,0
+info,starttime,12:35PM
+info,daynight,day
+info,usedh,false
+info,umphome,davig901
+info,ump1b,joycj901
+info,ump2b,riekr901
+info,ump3b,emmep901
+info,pitches,pitches
+info,temp,59
+info,winddir,torf
+info,windspeed,21
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,159
+info,attendance,40930
+info,wp,rodrf002
+info,lp,sloch001
+info,save,nen-r001
+start,vinaf001,"Fernando Vina",0,1,4
+start,rente001,"Edgar Renteria",0,2,6
+start,edmoj001,"Jim Edmonds",0,3,8
+start,mcgwm001,"Mark McGwire",0,4,3
+start,davie001,"Eric Davis",0,5,9
+start,dunss001,"Shawon Dunston",0,6,7
+start,paquc001,"Craig Paquette",0,7,5
+start,mathm001,"Mike Matheny",0,8,2
+start,benea001,"Andy Benes",0,9,1
+start,murrc001,"Calvin Murray",1,1,8
+start,muelb001,"Bill Mueller",1,2,5
+start,bondb001,"Barry Bonds",1,3,7
+start,kentj001,"Jeff Kent",1,4,4
+start,snowj001,"J.T. Snow",1,5,3
+start,aurir001,"Rich Aurilia",1,6,6
+start,riosa001,"Armando Rios",1,7,9
+start,mirad001,"Doug Mirabelli",1,8,2
+start,ruetk001,"Kirk Rueter",1,9,1
+play,1,0,vinaf001,11,SBH,HP
+play,1,0,rente001,20,BBX,S.1-2
+play,1,0,edmoj001,22,BCBCX,D/78.2-H;1-3
+play,1,0,mcgwm001,30,IIII,IW
+play,1,0,davie001,10,BX,5(2)/FO.3-H;1-2
+play,1,0,dunss001,22,CFBBX,16(1)3/GDP
+play,1,1,murrc001,22,CBBFS,K
+play,1,1,muelb001,22,BFBFFX,8/F8
+play,1,1,bondb001,32,BSBBFFFC,K/C
+play,2,0,paquc001,21,BBFX,5/L5
+play,2,0,mathm001,21,CBBX,S8/8S
+play,2,0,benea001,12,BLLX,13/SH.1-2
+play,2,0,vinaf001,32,BBCBSFS,K
+play,2,1,kentj001,01,CX,53/G
+play,2,1,snowj001,12,CCBS,K
+play,2,1,aurir001,32,CBBBFB,W
+play,2,1,riosa001,11,CBX,S7.1-2
+play,2,1,mirad001,10,BX,S9/9S.2-H;1-3
+play,2,1,ruetk001,00,X,8/F8S
+play,3,0,rente001,12,BCFX,63/G
+play,3,0,edmoj001,22,CBFFBX,7/F7
+play,3,0,mcgwm001,30,BBBB,W
+play,3,0,davie001,12,CSBX,54(1)/FO
+play,3,1,murrc001,32,BBBCCX,7/F7S
+play,3,1,muelb001,00,X,3/G
+play,3,1,bondb001,21,CBBX,HR/9
+play,3,1,kentj001,32,BBBCFC,K/C
+play,4,0,dunss001,10,BX,7/F7
+play,4,0,paquc001,31,BBBCX,63/G
+play,4,0,mathm001,22,BBCFFFC,K/C
+play,4,1,snowj001,21,BBFX,E8/F
+play,4,1,aurir001,11,BCX,16(1)/FO
+play,4,1,riosa001,12,CBSFX,64(1)3/GDP
+play,5,0,benea001,12,FFBX,63/G
+play,5,0,vinaf001,22,BCFBX,4/L4
+play,5,0,rente001,11,FBX,HR/7
+play,5,0,edmoj001,22,BBCCFX,S7
+play,5,0,mcgwm001,22,BBCSX,8/F8S
+play,5,1,mirad001,00,X,9/F9
+play,5,1,ruetk001,01,CX,43/G
+play,5,1,murrc001,32,CSBBBX,S7
+play,5,1,muelb001,22,FBFBFX,S7.1-H
+play,5,1,bondb001,31,BBCBB,W.1-2
+play,5,1,kentj001,22,BSBFX,8/F8D
+play,6,0,davie001,10,BX,S7
+play,6,0,dunss001,12,CBSS,K
+play,6,0,paquc001,20,BBX,64(1)3/GDP
+play,6,1,snowj001,22,SBBSX,S8/8S
+play,6,1,aurir001,22,FBFBS,K
+play,6,1,riosa001,02,FFX,8/F8
+play,6,1,mirad001,00,X,54(1)/FO
+play,7,0,mathm001,00,X,9/F9
+play,7,0,benea001,12,BFSX,13/G
+play,7,0,vinaf001,00,X,6/L6
+play,7,1,ruetk001,00,,NP
+sub,davir002,"Russ Davis",1,9,11
+play,7,1,davir002,22,CFBBFX,8/L8
+play,7,1,murrc001,21,BCBX,8/F8
+play,7,1,muelb001,01,CX,3/G
+play,8,0,rente001,00,,NP
+sub,rodrf002,"Felix Rodriguez",1,9,1
+play,8,0,rente001,22,CFBBFC,K/C
+play,8,0,edmoj001,32,BSBSFBFC,K/C
+play,8,0,mcgwm001,30,BBBI,IW
+play,8,0,davie001,12,CBFX,8/L8
+play,8,1,bondb001,00,,NP
+sub,sloch001,"Heathcliff Slocumb",0,9,1
+play,8,1,bondb001,21,CBBX,HR/9
+play,8,1,kentj001,22,CCBFBX,3/P3
+play,8,1,snowj001,10,BX,43/G
+play,8,1,aurir001,10,BX,3/FL
+play,9,0,dunss001,00,,NP
+sub,nen-r001,"Robb Nen",1,9,1
+play,9,0,dunss001,00,,NP
+sub,drewj001,"J.D. Drew",0,6,11
+play,9,0,drewj001,22,BCSBFC,K/C
+play,9,0,paquc001,00,,NP
+sub,lankr001,"Ray Lankford",0,7,11
+play,9,0,lankr001,10,BX,3/G
+play,9,0,mathm001,00,,NP
+sub,howat001,"Thomas Howard",0,8,11
+play,9,0,howat001,32,BBFBFX,S
+play,9,0,sloch001,00,,NP
+sub,suttl001,"Larry Sutton",0,9,11
+play,9,0,suttl001,00,,NP
+sub,marre001,"Eli Marrero",0,8,12
+play,9,0,suttl001,01,CS,SB2
+play,9,0,suttl001,02,CSFS,K
+data,er,benea001,3
+data,er,sloch001,1
+data,er,ruetk001,3
+data,er,rodrf002,0
+data,er,nen-r001,0

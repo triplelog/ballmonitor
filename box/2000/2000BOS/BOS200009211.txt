@@ -1,0 +1,193 @@
+version,2
+info,visteam,CLE
+info,hometeam,BOS
+info,site,BOS07
+info,date,2000/09/21
+info,number,1
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,davig901
+info,ump1b,barkl901
+info,ump2b,emmep901
+info,ump3b,guccc901
+info,pitches,pitches
+info,temp,73
+info,winddir,tolf
+info,windspeed,3
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,244
+info,attendance,31404
+info,wp,ontis001
+info,lp,speij001
+info,save,lowed001
+start,loftk001,"Kenny Lofton",0,1,8
+start,vizqo001,"Omar Vizquel",0,2,6
+start,alomr001,"Roberto Alomar",0,3,4
+start,ramim002,"Manny Ramirez",0,4,9
+start,thomj002,"Jim Thome",0,5,10
+start,segud001,"David Segui",0,6,3
+start,frymt001,"Travis Fryman",0,7,5
+start,robed001,"Dave Roberts",0,8,7
+start,diaze002,"Einar Diaz",0,9,2
+start,berej002,"Jason Bere",0,0,1
+start,nixot001,"Trot Nixon",1,1,9
+start,offej001,"Jose Offerman",1,2,4
+start,bichd001,"Dante Bichette",1,3,10
+start,garcn001,"Nomar Garciaparra",1,4,6
+start,oleat001,"Troy O'Leary",1,5,7
+start,daubb001,"Brian Daubach",1,6,3
+start,merll001,"Lou Merloni",1,7,5
+start,varij001,"Jason Varitek",1,8,2
+start,lewid001,"Darren Lewis",1,9,8
+start,arror001,"Rolando Arrojo",1,0,1
+play,1,0,loftk001,22,CBFBS,K
+play,1,0,vizqo001,21,BCBX,43/G
+play,1,0,alomr001,32,BCSBBFB,W
+play,1,0,ramim002,32,BBBCCB,W.1-2
+play,1,0,thomj002,01,CB,SB3
+play,1,0,thomj002,32,CBCFBBB,W.1-2
+play,1,0,segud001,21,CBBX,D7.3-H;2-H;1-3
+play,1,0,frymt001,22,CBCBX,D7/7D.3-H;2-H
+play,1,0,robed001,30,BBBB,W
+play,1,0,diaze002,11,BCB,SB3;SB2
+play,1,0,diaze002,32,BCBBFX,S7.3-H;2-H;B-2(THH)
+play,1,0,loftk001,00,,NP
+sub,ontis001,"Steve Ontiveros",1,0,1
+play,1,0,loftk001,10,BX,S9.2-H
+play,1,0,vizqo001,10,BX,9/F9
+play,1,1,nixot001,11,CBX,8/F8
+play,1,1,offej001,32,CBBBCFFB,W
+play,1,1,bichd001,02,CFX,S9.1-3
+play,1,1,garcn001,01,FX,8/SF.3-H
+play,1,1,oleat001,31,BBCBX,D/78.1-H
+play,1,1,daubb001,12,BCSX,9/F9
+play,2,0,alomr001,21,BBCX,7/F7
+play,2,0,ramim002,02,CCX,8/F8
+play,2,0,thomj002,32,CBBFBB,W
+play,2,0,segud001,21,BCBX,63/G
+play,2,1,merll001,10,BX,4/P4
+play,2,1,varij001,12,CFBX,5/P5
+play,2,1,lewid001,10,BX,8/F8
+play,3,0,frymt001,32,BCBFFBX,7/F7
+play,3,0,robed001,11,BSX,S
+play,3,0,diaze002,11,BCX,54(1)/FO
+play,3,0,loftk001,00,X,43/G
+play,3,1,nixot001,01,CX,HR/89
+play,3,1,offej001,32,CSFBBBFB,W
+play,3,1,bichd001,30,BBBB,W.1-2
+play,3,1,garcn001,31,FBBBX,S7/7D.2-H;1-2
+play,3,1,oleat001,00,,NP
+sub,cairc001,"Cameron Cairncross",0,0,1
+play,3,1,oleat001,21,BCBX,HR/9.2-H;1-H
+play,3,1,daubb001,22,BCSBX,6/P6
+play,3,1,merll001,00,,NP
+sub,speij001,"Justin Speier",0,0,1
+play,3,1,merll001,31,BBBCX,S/89
+play,3,1,varij001,12,CBCS,K
+play,3,1,lewid001,22,CFBBX,S9.1-2
+play,3,1,nixot001,31,CBBBB,W.2-3;1-2
+play,3,1,offej001,31,BBBCB,W.3-H;2-3;1-2
+play,3,1,bichd001,00,,NP
+sub,brewj001,"Jamie Brewington",0,0,1
+play,3,1,bichd001,12,CSBS,K23
+play,4,0,vizqo001,00,,NP
+sub,penaj003,"Jesus Pena",1,0,1
+play,4,0,vizqo001,32,BBCCBX,7/F7
+play,4,0,alomr001,21,FBBX,D9/9D
+play,4,0,ramim002,30,BBBB,W+SB3
+play,4,0,thomj002,30,BBBB,W.1-2
+play,4,0,segud001,11,CBX,64(1)3/GDP
+play,4,1,garcn001,10,BX,S/78
+play,4,1,oleat001,21,BBCX,64(1)/FO
+play,4,1,daubb001,11,BFX,3(B)3(1)/LDP
+play,5,0,frymt001,00,,NP
+sub,pichh001,"Hipolito Pichardo",1,0,1
+play,5,0,frymt001,22,CFBBX,S9
+play,5,0,robed001,12,FLFFFBFFX,46(1)/FO
+play,5,0,diaze002,10,BX,S8/8S.1X2(4)#
+play,5,0,loftk001,00,1,PO1(E1).1-3
+play,5,0,loftk001,32,1CBBCBX,63/G
+play,5,1,merll001,22,CFBBFC,K/C
+play,5,1,varij001,11,FBX,43/G
+play,5,1,lewid001,01,FH,HP
+play,5,1,nixot001,31,BBCBX,D9.1-H
+play,5,1,offej001,32,BBCCBX,7/F7
+play,6,0,vizqo001,00,,NP
+sub,fassj001,"Jeff Fassero",1,0,1
+play,6,0,vizqo001,02,CSFFX,E5/G
+play,6,0,alomr001,12,BCSFS,K
+play,6,0,ramim002,31,CBBBB,W.1-2
+play,6,0,thomj002,11,CBX,S8.2-3;1-2
+play,6,0,segud001,32,BSBSBS,K
+play,6,0,frymt001,00,X,54(1)/FO
+play,6,1,bichd001,31,BBFBX,9/F9
+play,6,1,garcn001,00,X,S
+play,6,1,oleat001,00,,NP
+sub,martt003,"Tom Martin",0,0,1
+play,6,1,oleat001,12,CBSX,8/F8
+play,6,1,daubb001,22,BBSSS,K
+play,7,0,robed001,00,,NP
+sub,cabrj002,"Jolbert Cabrera",0,8,11
+play,7,0,cabrj002,02,CFX,7/F7
+play,7,0,diaze002,32,CBBCFBFX,4/P4
+play,7,0,loftk001,10,BX,53/G
+com,"ej,manuc101,M,barkl901,Call at 1B"
+com,"Indians Manager Charlie Manuel ejected by 1B umpire Lance Barksdale"
+play,7,1,merll001,00,,NP
+sub,cabrj002,"Jolbert Cabrera",0,8,7
+play,7,1,merll001,10,BX,4/L4
+play,7,1,varij001,12,CBFFX,S9
+play,7,1,lewid001,12,CBFFX,6/P6
+play,7,1,nixot001,12,CBCX,43/G
+play,8,0,vizqo001,00,,NP
+sub,alexm001,"Manny Alexander",1,7,5
+play,8,0,vizqo001,00,,NP
+sub,beckr001,"Rod Beck",1,0,1
+play,8,0,vizqo001,11,BCX,S9
+play,8,0,alomr001,11,BCX,54(1)/FO
+play,8,0,ramim002,22,BCCBB,SB2
+play,8,0,ramim002,32,BCCBBC,K/C
+play,8,0,thomj002,00,,DI.2-3
+play,8,0,thomj002,31,BBSBB,W
+play,8,0,segud001,32,BBCBCX,S9.3-H;1-3
+play,8,0,frymt001,22,BFBSS,K
+play,8,1,offej001,00,,NP
+sub,reeds001,"Steve Reed",0,0,1
+play,8,1,offej001,10,BX,S9
+play,8,1,bichd001,00,,NP
+sub,sadld001,"Donnie Sadler",1,2,12
+play,8,1,bichd001,11,BCB,CS2(24)
+play,8,1,bichd001,21,BCBX,7/F7
+play,8,1,garcn001,11,BSX,53/G
+play,9,0,cabrj002,00,,NP
+sub,sadld001,"Donnie Sadler",1,2,4
+play,9,0,cabrj002,00,,NP
+sub,brogr001,"Rico Brogna",1,6,3
+play,9,0,cabrj002,00,,NP
+sub,selbb001,"Bill Selby",0,8,11
+play,9,0,selbb001,00,,NP
+sub,lowed001,"Derek Lowe",1,0,1
+play,9,0,selbb001,21,CBBX,7/F7
+play,9,0,diaze002,00,,NP
+sub,branr001,"Russell Branyan",0,9,11
+play,9,0,branr001,22,BFFBS,K
+play,9,0,loftk001,01,CX,S9
+play,9,0,vizqo001,10,BC,SB2
+play,9,0,vizqo001,31,BCBBB,W
+play,9,0,alomr001,32,BCBBFS,K
+data,er,berej002,6
+data,er,cairc001,1
+data,er,speij001,1
+data,er,brewj001,1
+data,er,martt003,0
+data,er,reeds001,0
+data,er,arror001,7
+data,er,ontis001,0
+data,er,penaj003,0
+data,er,pichh001,0
+data,er,fassj001,0
+data,er,beckr001,1
+data,er,lowed001,0

@@ -1,0 +1,131 @@
+version,2
+info,visteam,ARI
+info,hometeam,MON
+info,site,MON02
+info,date,2000/08/30
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,younl901
+info,ump1b,katzt901
+info,ump2b,millb901
+info,ump3b,hodgm901
+info,pitches,pitches
+info,temp,72
+info,winddir,unknown
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,154
+info,attendance,7650
+info,wp,johnr005
+info,lp,liraf001
+info,save,
+start,womat001,"Tony Womack",0,1,6
+start,bautd001,"Danny Bautista",0,2,9
+start,gonzl001,"Luis Gonzalez",0,3,7
+start,colbg001,"Greg Colbrunn",0,4,3
+start,finls001,"Steve Finley",0,5,8
+start,bellj001,"Jay Bell",0,6,4
+start,counc001,"Craig Counsell",0,7,5
+start,milld002,"Damian Miller",0,8,2
+start,johnr005,"Randy Johnson",0,9,1
+start,guerw001,"Wilton Guerrero",1,1,7
+start,bradm001,"Milton Bradley",1,2,8
+start,vidrj001,"Jose Vidro",1,3,4
+start,guerv001,"Vladimir Guerrero",1,4,9
+start,blumg001,"Geoff Blum",1,5,5
+start,seguf001,"Fernando Seguignol",1,6,3
+start,cabro001,"Orlando Cabrera",1,7,6
+start,barrm003,"Michael Barrett",1,8,2
+start,liraf001,"Felipe Lira",1,9,1
+play,1,0,womat001,12,BFLH,HP
+play,1,0,bautd001,01,SX,T/89.1-H
+play,1,0,gonzl001,21,BCBX,7/SF.3-H
+play,1,0,colbg001,20,BBX,S7/7S
+play,1,0,finls001,01,CX,HR/8.1-H
+play,1,0,bellj001,12,CBFS,K
+play,1,0,counc001,32,CBCBFBX,S7
+play,1,0,milld002,12,FSBX,6/P6
+play,1,1,guerw001,32,CBBBCS,K
+play,1,1,bradm001,02,CFS,K
+play,1,1,vidrj001,22,BFFBFX,9/F9
+play,2,0,johnr005,32,BFSFBFBX,9/F9S
+play,2,0,womat001,11,CBX,S/78
+play,2,0,bautd001,11,CBX,16(1)3/GDP
+play,2,1,guerv001,22,BFBCFS,K
+play,2,1,blumg001,22,BBSCFS,K
+play,2,1,seguf001,21,CBBX,9/F9
+play,3,0,gonzl001,32,CBBCBFX,HR/8
+play,3,0,colbg001,31,BBFBB,W
+play,3,0,finls001,12,BCCS,K
+play,3,0,bellj001,00,X,S7.1-2
+play,3,0,counc001,00,,NP
+sub,johnm002,"Mike Johnson",1,9,1
+play,3,0,counc001,10,BX,8/F8
+play,3,0,milld002,10,BX,63/G
+play,3,1,cabro001,00,X,8/F8
+play,3,1,barrm003,22,CBSFBS,K
+play,3,1,johnm002,22,CBBSFX,S7
+play,3,1,guerw001,12,FFBX,S8/8S.1-2
+play,3,1,bradm001,22,BBSCFC,K/C
+play,4,0,johnr005,32,BFBFBFX,63/G
+play,4,0,womat001,12,CFFFBX,43/G
+play,4,0,bautd001,12,FBCS,K
+play,4,1,vidrj001,00,X,D7/7S
+play,4,1,guerv001,21,SBBX,S.2-3;B-2(E6/TH)
+play,4,1,blumg001,22,BCBFFS,K
+play,4,1,seguf001,12,CSFBS,K
+play,4,1,cabro001,20,BBX,8/F8
+play,5,0,gonzl001,11,CBX,7/F7
+play,5,0,colbg001,01,SX,9/F9
+play,5,0,finls001,12,CSBX,HR/89
+play,5,0,bellj001,32,CBFBBX,8/F8
+play,5,1,barrm003,10,BX,2/FL
+play,5,1,johnm002,00,,NP
+sub,jonet004,"Terry Jones",1,9,11
+play,5,1,jonet004,12,FBFC,K/C
+play,5,1,guerw001,12,BFFX,53/G
+play,6,0,counc001,00,,NP
+sub,forss001,"Scott Forster",1,9,1
+play,6,0,counc001,01,CX,T/78
+play,6,0,milld002,11,BFX,7/SF.3-H
+play,6,0,johnr005,12,SCBC,K/C
+play,6,0,womat001,01,CX,43/G
+play,6,1,bradm001,02,FSFS,K
+play,6,1,vidrj001,10,BX,43/G
+play,6,1,guerv001,01,FX,9/F9
+play,7,0,bautd001,11,BCX,63/G
+play,7,0,gonzl001,02,SCX,43/G
+play,7,0,colbg001,11,BSX,S/78
+play,7,0,finls001,31,BFBBB,W.1-2
+play,7,0,bellj001,12,CBSS,K
+play,7,1,blumg001,21,CBBX,9/F9
+play,7,1,seguf001,00,X,S7/7S
+play,7,1,cabro001,22,CBFBX,46(1)3/GDP
+play,8,0,counc001,00,,NP
+sub,mordm001,"Mike Mordecai",1,9,6
+play,8,0,counc001,00,,NP
+sub,santj001,"Julio Santana",1,7,1
+play,8,0,counc001,10,BH,HP
+play,8,0,milld002,00,X,64(1)3/GDP
+play,8,0,johnr005,12,BFFS,K
+play,8,1,barrm003,22,BBCFFX,53/G
+play,8,1,mordm001,01,FX,9/F9S
+play,8,1,guerw001,01,CX,63/G
+play,9,0,womat001,00,,NP
+sub,klins002,"Steve Kline",1,7,1
+play,9,0,womat001,12,CFFFBS,K
+play,9,0,bautd001,00,X,43/G
+play,9,0,gonzl001,32,BSBBCX,9/F9
+play,9,1,bradm001,12,CBSFFX,53/G
+play,9,1,vidrj001,02,FSX,53/G
+play,9,1,guerv001,12,BSSX,4/P4
+data,er,johnr005,0
+data,er,liraf001,5
+data,er,johnm002,1
+data,er,forss001,1
+data,er,santj001,0
+data,er,klins002,0

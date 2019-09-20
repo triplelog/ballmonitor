@@ -1,0 +1,135 @@
+version,2
+info,visteam,SLN
+info,hometeam,LAN
+info,site,LOS03
+info,date,2000/06/18
+info,number,0
+info,starttime,5:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,carlm901
+info,ump1b,demud901
+info,ump2b,eddid901
+info,ump3b,relic901
+info,pitches,pitches
+info,temp,76
+info,winddir,ltor
+info,windspeed,12
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,165
+info,attendance,50713
+info,wp,parkc002
+info,lp,kiled001
+info,save,shawj001
+start,polap001,"Placido Polanco",0,1,4
+start,dunss001,"Shawon Dunston",0,2,6
+start,edmoj001,"Jim Edmonds",0,3,8
+start,mcgwm001,"Mark McGwire",0,4,3
+start,lankr001,"Ray Lankford",0,5,7
+start,drewj001,"J.D. Drew",0,6,9
+start,paquc001,"Craig Paquette",0,7,5
+start,marre001,"Eli Marrero",0,8,2
+start,kiled001,"Darryl Kile",0,9,1
+start,hollt001,"Todd Hollandsworth",1,1,8
+start,grudm001,"Mark Grudzielanek",1,2,4
+start,shefg001,"Gary Sheffield",1,3,7
+start,grees001,"Shawn Green",1,4,9
+start,karre001,"Eric Karros",1,5,3
+start,belta001,"Adrian Beltre",1,6,5
+start,kreuc001,"Chad Kreuter",1,7,2
+start,coraa001,"Alex Cora",1,8,6
+start,parkc002,"Chan Ho Park",1,9,1
+play,1,0,polap001,10,BX,7/F7
+play,1,0,dunss001,10,BX,S7
+play,1,0,edmoj001,12,CCBS,K
+play,1,0,mcgwm001,31,BFBBX,HR/89.1-H
+play,1,0,lankr001,10,BX,8/F8
+play,1,1,hollt001,12,BCSX,6/P6
+play,1,1,grudm001,32,CCBBBC,K/C
+play,1,1,shefg001,02,CCX,D9/L3L
+play,1,1,grees001,32,BBBCFS,K
+play,2,0,drewj001,22,CBBFFC,K/C
+play,2,0,paquc001,32,BSFBBH,HP
+play,2,0,marre001,32,BBBCFX,S7/7S.1-2
+play,2,0,kiled001,12,BCSC,K/C
+play,2,0,polap001,01,CX,43/G
+play,2,1,karre001,22,CFBBX,HR/7
+play,2,1,belta001,02,CCFX,53/G
+play,2,1,kreuc001,11,SBX,43/G
+play,2,1,coraa001,12,CFBX,3/L3
+play,3,0,dunss001,10,BX,D7/7D.BX3(75)
+play,3,0,edmoj001,00,X,7/F7
+play,3,0,mcgwm001,10,BX,63/G
+play,3,1,parkc002,02,CFX,S7
+play,3,1,hollt001,10,BX,64(1)/FO
+play,3,1,grudm001,01,FX,S9.1-H(E9/TH);B-3
+play,3,1,shefg001,00,X,9/SF.3-H
+play,3,1,grees001,32,BCBFFFBFX,S/89S
+play,3,1,karre001,31,BSBBB,W.1-2
+play,3,1,belta001,12,FFBX,HR/7.2-H;1-H
+play,3,1,kreuc001,22,BBCCFX,43/G
+play,4,0,lankr001,10,BX,31/G
+play,4,0,drewj001,12,FCBS,K
+play,4,0,paquc001,12,CFBS,K
+play,4,1,coraa001,00,X,43/G
+play,4,1,parkc002,12,SBSFS,K
+play,4,1,hollt001,02,FFX,9/F9
+play,5,0,marre001,02,CCFFS,K
+play,5,0,kiled001,21,FBBX,D/78D
+play,5,0,polap001,02,FFS,K
+play,5,0,dunss001,11,SBX,63/G
+play,5,1,grudm001,12,CBFS,K
+play,5,1,shefg001,01,CX,7/F7
+play,5,1,grees001,00,X,3/G
+play,6,0,edmoj001,12,BCSX,31/G
+play,6,0,mcgwm001,22,CBBSS,K
+play,6,0,lankr001,00,X,31/G
+play,6,1,karre001,22,BCCBC,K/C
+play,6,1,belta001,02,CSFFC,K/C
+play,6,1,kreuc001,30,BBBB,W
+play,6,1,coraa001,31,BFBBB,W.1-2
+play,6,1,parkc002,22,FBFFFFBFX,5/L5
+play,7,0,drewj001,32,CSBBFBC,K/C
+play,7,0,paquc001,01,FX,D7
+play,7,0,marre001,02,SFX,S8/8S.2-H
+play,7,0,kiled001,00,,NP
+sub,howat001,"Thomas Howard",0,9,11
+play,7,0,howat001,21,FBBX,7/F7
+play,7,0,polap001,31,BFBBX,9/L9
+play,7,1,hollt001,00,,NP
+sub,sloch001,"Heathcliff Slocumb",0,9,1
+play,7,1,hollt001,12,CCBX,S/78
+play,7,1,grudm001,12,BFLFC,K/C
+play,7,1,shefg001,11,BS+1,PO1(23)
+play,7,1,shefg001,11,BS+1X,8/F8
+play,8,0,dunss001,00,,NP
+sub,fettm001,"Mike Fetters",1,9,1
+play,8,0,dunss001,02,CFS,K
+play,8,0,edmoj001,30,BBBB,W
+play,8,0,mcgwm001,12,BCSC,K/C
+play,8,0,lankr001,00,,SB2
+play,8,0,lankr001,22,BBCFX,31/G
+play,8,1,grees001,10,BX,S9
+play,8,1,karre001,02,SCC,K/C
+play,8,1,belta001,01,CX,54(1)/FO
+play,8,1,kreuc001,31,BBCBB,W.1-2
+play,8,1,coraa001,00,,NP
+sub,mattm001,"Mike Matthews",0,5,1
+play,8,1,coraa001,00,,NP
+sub,drewj001,"J.D. Drew",0,6,7
+play,8,1,coraa001,00,,NP
+sub,davie001,"Eric Davis",0,9,9
+play,8,1,coraa001,11,BFX,64(1)/FO.2-3
+play,9,0,drewj001,00,,NP
+sub,shawj001,"Jeff Shaw",1,9,1
+play,9,0,drewj001,32,CBCBFFFBX,3/G
+play,9,0,paquc001,32,BFBSFBFS,K
+play,9,0,marre001,02,CLS,K
+data,er,kiled001,6
+data,er,sloch001,0
+data,er,mattm001,0
+data,er,parkc002,3
+data,er,fettm001,0
+data,er,shawj001,0

@@ -1,0 +1,150 @@
+version,2
+info,visteam,TEX
+info,hometeam,CLE
+info,site,CLE08
+info,date,2000/04/15
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,younl901
+info,ump1b,bonig901
+info,ump2b,katzt901
+info,ump3b,mealj901
+info,pitches,pitches
+info,temp,71
+info,winddir,torf
+info,windspeed,6
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,183
+info,attendance,40543
+info,wp,clarm002
+info,lp,colob001
+info,save,wettj001
+start,clayr001,"Royce Clayton",0,1,6
+start,curtc001,"Chad Curtis",0,2,7
+start,rodri001,"Ivan Rodriguez",0,3,2
+start,palmr001,"Rafael Palmeiro",0,4,3
+start,segud001,"David Segui",0,5,10
+start,mater001,"Ruben Mateo",0,6,8
+start,kaplg001,"Gabe Kapler",0,7,9
+start,alicl001,"Luis Alicea",0,8,4
+start,evant001,"Tom Evans",0,9,5
+start,clarm002,"Mark Clark",0,0,1
+start,cruzj003,"Jacob Cruz",1,1,8
+start,vizqo001,"Omar Vizquel",1,2,6
+start,alomr001,"Roberto Alomar",1,3,4
+start,ramim002,"Manny Ramirez",1,4,9
+start,thomj002,"Jim Thome",1,5,10
+start,sexsr001,"Richie Sexson",1,6,3
+start,justd001,"David Justice",1,7,7
+start,frymt001,"Travis Fryman",1,8,5
+start,aloms001,"Sandy Alomar",1,9,2
+start,colob001,"Bartolo Colon",1,0,1
+play,1,0,clayr001,22,CBFBC,K/C
+play,1,0,curtc001,31,BFBBB,W
+play,1,0,rodri001,00,X,D9/9D.1-H;B-3(E4/TH)
+play,1,0,palmr001,31,BSBBB,W
+play,1,0,segud001,01,CX,S7.3-H;1-2
+play,1,0,mater001,22,CBSBX,43/G.2-3;1-2
+play,1,0,kaplg001,12,CCBX,S9.3-H;2-H
+play,1,0,alicl001,32,BBCBFFX,T9.1-H
+play,1,0,evant001,12,CCBS,K
+play,1,1,cruzj003,01,CX,7/F7
+play,1,1,vizqo001,22,CBBFX,9/F9
+play,1,1,alomr001,11,LBX,63/G
+play,2,0,clayr001,00,X,53/G
+play,2,0,curtc001,22,FFBFBX,S
+play,2,0,rodri001,11,BFX,8/F8
+play,2,0,palmr001,32,CSBFBBC,K/C
+play,2,1,ramim002,12,CFBC,K/C
+play,2,1,thomj002,10,BX,43/G
+play,2,1,sexsr001,21,BBFX,53/G
+play,3,0,segud001,12,SBCX,D9
+play,3,0,mater001,11,BFX,3/FL
+play,3,0,kaplg001,12,SCFBX,7/L7
+play,3,0,alicl001,22,BCBCX,8/F8
+play,3,1,justd001,22,CBBSX,9/L9
+play,3,1,frymt001,02,CFS,K
+play,3,1,aloms001,10,BX,53/G
+play,4,0,evant001,11,FBX,S7
+play,4,0,clayr001,10,BX,S7.1-2
+play,4,0,curtc001,10,BX,15(2)/FO.1-2
+play,4,0,rodri001,12,BSFX,S9.2-H;1-3
+play,4,0,palmr001,00,,NP
+sub,martt003,"Tom Martin",1,0,1
+play,4,0,palmr001,31,FBBBB,W.1-2
+play,4,0,segud001,00,X,9/F9
+play,4,0,mater001,10,BX,63/G
+play,4,1,cruzj003,00,X,4/L4
+play,4,1,vizqo001,22,CBCBX,63/G
+play,4,1,alomr001,32,BBCCBB,W
+play,4,1,ramim002,10,BX,S7.1-2
+play,4,1,thomj002,02,CFS,K
+play,5,0,kaplg001,11,BSX,1/L1
+play,5,0,alicl001,10,BX,43/G
+play,5,0,evant001,22,BFBSS,K
+play,5,1,sexsr001,10,BX,6/L6
+play,5,1,justd001,22,BCBFC,K/C
+play,5,1,frymt001,32,BFBBCFB,W
+play,5,1,aloms001,10,BX,5/P5
+play,6,0,clayr001,22,BCBFX,9/F9
+play,6,0,curtc001,20,BBX,53/G
+play,6,0,rodri001,20,BBX,S9
+play,6,0,palmr001,00,,NP
+sub,rincr001,"Ricardo Rincon",1,0,1
+play,6,0,palmr001,21,BSBX,13/G
+play,6,1,cruzj003,00,X,63/G
+play,6,1,vizqo001,32,BBCFBX,S7
+play,6,1,alomr001,32,BBBCLB,W.1-2
+play,6,1,ramim002,00,X,S7.2-H;1-2
+play,6,1,thomj002,00,X,HR/7.2-H;1-H
+play,6,1,sexsr001,00,,NP
+sub,cordf002,"Francisco Cordero",0,0,1
+play,6,1,sexsr001,10,BX,53/G
+play,6,1,justd001,10,BX,D9
+play,6,1,frymt001,32,BFSBBFS,K
+play,7,0,segud001,10,BX,63/G
+play,7,0,mater001,00,,NP
+sub,reeds001,"Steve Reed",1,0,1
+play,7,0,mater001,22,CBSBX,S
+play,7,0,kaplg001,12,SBSS,K+SB2.1-3(E2/TH2)
+play,7,0,alicl001,30,IIII,IW
+play,7,0,evant001,10,BX,7/F7
+play,7,1,aloms001,00,,NP
+sub,crabt001,"Tim Crabtree",0,0,1
+play,7,1,aloms001,11,BFX,63/G
+play,7,1,cruzj003,12,BCCS,K
+play,7,1,vizqo001,12,CFBX,13/G
+play,8,0,clayr001,00,,NP
+sub,karss001,"Steve Karsay",1,0,1
+play,8,0,clayr001,22,BBCFS,K
+play,8,0,curtc001,20,BBX,4/FL
+play,8,0,rodri001,02,FCFS,K
+play,8,1,alomr001,21,BBCX,63/G
+play,8,1,ramim002,32,BBFBFX,63/G
+play,8,1,thomj002,12,FBSS,K
+play,9,0,palmr001,00,,NP
+sub,shuep001,"Paul Shuey",1,0,1
+play,9,0,palmr001,12,SBCC,K/C
+play,9,0,segud001,00,X,63/G
+play,9,0,mater001,32,BFBSBB,W
+play,9,0,kaplg001,31,CBBBX,3/FL
+play,9,1,sexsr001,00,,NP
+sub,wettj001,"John Wetteland",0,0,1
+play,9,1,sexsr001,22,SBBSX,D7/7D
+play,9,1,justd001,10,BX,43/G.2-3
+play,9,1,frymt001,02,CFS,K
+play,9,1,aloms001,21,BFBX,9/F9
+data,er,clarm002,4
+data,er,cordf002,0
+data,er,crabt001,0
+data,er,wettj001,0
+data,er,colob001,6
+data,er,martt003,0
+data,er,rincr001,0
+data,er,reeds001,0
+data,er,karss001,0
+data,er,shuep001,0

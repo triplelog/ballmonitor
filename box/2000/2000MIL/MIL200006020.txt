@@ -1,0 +1,180 @@
+version,2
+info,visteam,COL
+info,hometeam,MIL
+info,site,MIL05
+info,date,2000/06/02
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,demud901
+info,ump1b,eddid901
+info,ump2b,relic901
+info,ump3b,carlm901
+info,pitches,pitches
+info,temp,58
+info,winddir,tolf
+info,windspeed,7
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,228
+info,attendance,14110
+info,wp,arror001
+info,lp,berej002
+info,save,myerm001
+start,goodt001,"Tom Goodwin",0,1,8
+start,lansm001,"Mike Lansing",0,2,4
+start,cirij001,"Jeff Cirillo",0,3,5
+start,heltt001,"Todd Helton",0,4,3
+start,hammj001,"Jeffrey Hammonds",0,5,7
+start,maynb001,"Brent Mayne",0,6,2
+start,huntb002,"Brian L. Hunter",0,7,9
+start,peren001,"Neifi Perez",0,8,6
+start,arror001,"Rolando Arrojo",0,9,1
+start,bellr002,"Ron Belliard",1,1,4
+start,lorem001,"Mark Loretta",1,2,6
+start,burnj001,"Jeromy Burnitz",1,3,9
+start,jenkg001,"Geoff Jenkins",1,4,7
+start,hayec001,"Charlie Hayes",1,5,3
+start,hernj001,"Jose Hernandez",1,6,5
+start,grism001,"Marquis Grissom",1,7,8
+start,houst001,"Tyler Houston",1,8,2
+start,berej002,"Jason Bere",1,9,1
+play,1,0,goodt001,31,BCBBB,W
+play,1,0,lansm001,01,CX,8/F8
+play,1,0,cirij001,10,BB,SB2
+play,1,0,cirij001,20,BBB,PB.2-3
+play,1,0,cirij001,32,BBBCSB,W
+play,1,0,heltt001,32,CBFBFBB,W.1-2
+play,1,0,hammj001,12,CBFFS,K
+play,1,0,maynb001,32,FFBFFBFFFFFBFFS,K
+play,1,1,bellr002,22,BCSBX,T7/7D
+play,1,1,lorem001,22,CBFBFFFFC,K/C
+play,1,1,burnj001,32,SCBBBFX,63/G.3-H
+play,1,1,jenkg001,32,BFFBBX,3/G
+play,2,0,huntb002,11,BCX,4/P4
+play,2,0,peren001,00,,NP
+sub,lopel002,"Luis Lopez",1,2,6
+play,2,0,peren001,32,BFSBBX,7/F7
+play,2,0,arror001,32,FBBFBX,7/F7
+play,2,1,hayec001,32,BFCBBC,K/C
+play,2,1,hernj001,22,BCBCX,E4/G
+play,2,1,grism001,20,BBX,E5/TH.1XH(2);B-2#
+play,2,1,houst001,30,IIII,IW
+play,2,1,berej002,10,BX,6(1)/FO/G.2-3
+play,3,0,goodt001,32,BCBCBX,9/F9
+play,3,0,lansm001,22,SCBBX,S9
+play,3,0,cirij001,10,BX,S5/BG5.1-2
+play,3,0,heltt001,21,CBBX,E6/G.2-3;1-2
+play,3,0,hammj001,20,BBX,4/P4
+play,3,0,maynb001,22,BCFBS,K
+play,3,1,bellr002,32,BCBBCX,S/78
+play,3,1,lopel002,00,X,43/G.1-2
+play,3,1,burnj001,30,BBBB,W
+play,3,1,jenkg001,12,SBFX,S8/8S.2-H;1-3
+play,3,1,hayec001,12,BCFX,9/SF.3-H
+play,3,1,hernj001,12,BFCFFS,K
+play,4,0,huntb002,32,BBCCBX,8/F8
+play,4,0,peren001,12,CCFBX,S8/8S
+play,4,0,arror001,01,LX,14/SH.1-2
+play,4,0,goodt001,32,BCFFBBFFB,W
+play,4,0,lansm001,30,BBBB,W.2-3;1-2
+play,4,0,cirij001,30,BBBB,W.3-H;2-3;1-2
+play,4,0,heltt001,00,,NP
+sub,woods001,"Steve Woodard",1,9,1
+play,4,0,heltt001,21,BCBX,D7.3-H;2-H;1-3
+play,4,0,hammj001,02,CCFX,E6/G.3-H(UR)(NR);2-3
+play,4,0,maynb001,01,CB,WP.1-2
+play,4,0,maynb001,31,CBBII,IW
+play,4,0,huntb002,02,CFX,S7/7S.3-H(UR);2-H(UR);1-3
+play,4,0,peren001,00,X,S9.3-H(UR);1-2
+play,4,0,arror001,01,FX,63/G
+play,4,1,grism001,21,CBBX,13/G
+play,4,1,houst001,21,BSBX,8/F8S
+play,4,1,woods001,11,BCX,43/G
+play,5,0,goodt001,32,CBFBBX,63/G
+play,5,0,lansm001,11,CBX,63/G
+play,5,0,cirij001,11,CBX,S
+play,5,0,heltt001,00,X,D9.1-H
+play,5,0,hammj001,02,SFX,63/G
+play,5,1,bellr002,00,X,D9
+play,5,1,lopel002,00,X,31/G.2-3
+play,5,1,burnj001,22,FSBBFX,S7.3-H
+play,5,1,jenkg001,11,FBX,D9.1-H
+play,5,1,hayec001,32,SBCBBFB,W
+play,5,1,hernj001,01,FX,D9.2-H;1-3
+play,5,1,grism001,22,CBBFFX,1/L1
+play,5,1,houst001,22,FBSBX,7/F7S
+play,6,0,maynb001,22,BCBFFFX,8/F8
+play,6,0,huntb002,01,LX,D7
+play,6,0,peren001,12,BFLFX,7/F7
+play,6,0,arror001,00,,NP
+sub,carpb001,"Bubba Carpenter",0,9,11
+play,6,0,carpb001,32,BSBSFBS,K
+play,6,1,woods001,00,,NP
+sub,berrs001,"Sean Berry",1,9,11
+play,6,1,berrs001,00,,NP
+sub,belis001,"Stan Belinda",0,9,1
+play,6,1,berrs001,12,CBSX,2/FL
+play,6,1,bellr002,21,BBCX,S7
+play,6,1,lopel002,12,SSBS,K
+play,6,1,burnj001,00,,NP
+sub,bohab001,"Brian Bohanon",0,9,1
+play,6,1,burnj001,31,CBBBB,W.1-2
+play,6,1,jenkg001,22,BFSBS,K
+play,7,0,goodt001,00,,NP
+sub,leskc001,"Curtis Leskanic",1,9,1
+play,7,0,goodt001,10,BX,S7/7S
+play,7,0,lansm001,20,BBC,CS2(24)
+play,7,0,lansm001,21,BBCX,6/P6
+play,7,0,cirij001,02,CFS,K
+play,7,1,hayec001,00,,NP
+sub,hammj001,"Jeffrey Hammonds",0,5,9
+play,7,1,hayec001,00,,NP
+sub,huntb002,"Brian L. Hunter",0,7,7
+play,7,1,hayec001,00,,NP
+sub,dejem001,"Mike DeJean",0,9,1
+play,7,1,hayec001,00,X,63/G
+play,7,1,hernj001,01,CX,43/G
+play,7,1,grism001,12,BFFFX,53/G
+play,8,0,heltt001,01,CX,13/G
+play,8,0,hammj001,02,FCX,S9
+play,8,0,maynb001,00,X,D7.1XH(72)
+play,8,0,huntb002,30,BBBB,W
+play,8,0,peren001,12,CFBX,43/G
+play,8,1,houst001,00,,NP
+sub,whitg001,"Gabe White",0,9,1
+play,8,1,houst001,11,BCX,S9
+play,8,1,leskc001,00,,NP
+sub,moutj001,"James Mouton",1,9,11
+play,8,1,moutj001,12,BCSFS,K
+play,8,1,bellr002,22,BCBCFX,46(1)3/GDP
+play,9,0,whitg001,00,,NP
+sub,shumt001,"Terry Shumpert",0,9,11
+play,9,0,shumt001,00,,NP
+sub,delov001,"Valerio De Los Santos",1,9,1
+play,9,0,shumt001,12,CBSX,13/G
+play,9,0,goodt001,31,CBBBB,W
+play,9,0,lansm001,31,BBBCX,4/P4
+play,9,0,cirij001,00,,NP
+sub,weatd001,"David Weathers",1,9,1
+play,9,0,cirij001,00,B,SB2
+play,9,0,cirij001,32,BBCFBFB,W
+play,9,0,heltt001,12,BCCX,8/F8
+play,9,1,lopel002,00,,NP
+sub,myerm001,"Mike Myers",0,9,1
+play,9,1,lopel002,32,BCFBBX,63/G
+play,9,1,burnj001,32,CBBCBS,K
+play,9,1,jenkg001,02,SFC,K/C
+data,er,arror001,6
+data,er,belis001,0
+data,er,bohab001,0
+data,er,dejem001,0
+data,er,whitg001,0
+data,er,myerm001,0
+data,er,berej002,3
+data,er,woods001,1
+data,er,leskc001,0
+data,er,delov001,0
+data,er,weatd001,0

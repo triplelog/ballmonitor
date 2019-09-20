@@ -1,0 +1,155 @@
+version,2
+info,visteam,NYN
+info,hometeam,SLN
+info,site,STL09
+info,date,2000/05/26
+info,number,0
+info,starttime,7:10PM
+info,daynight,night
+info,usedh,false
+info,umphome,kellj901
+info,ump1b,coope901
+info,ump2b,diazl901
+info,ump3b,reilm901
+info,pitches,pitches
+info,temp,70
+info,winddir,fromcf
+info,windspeed,13
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,197
+info,attendance,40028
+info,wp,hampm001
+info,lp,thomm002
+info,save,benia001
+start,mcewj001,"Joe McEwing",0,1,8
+start,belld001,"Derek Bell",0,2,9
+start,alfoe001,"Edgardo Alfonzo",0,3,4
+start,piazm001,"Mike Piazza",0,4,2
+start,ventr001,"Robin Ventura",0,5,5
+start,zeilt001,"Todd Zeile",0,6,3
+start,agbab001,"Benny Agbayani",0,7,7
+start,ordor001,"Rey Ordonez",0,8,6
+start,hampm001,"Mike Hampton",0,9,1
+start,vinaf001,"Fernando Vina",1,1,4
+start,rente001,"Edgar Renteria",1,2,6
+start,edmoj001,"Jim Edmonds",1,3,8
+start,mcgwm001,"Mark McGwire",1,4,3
+start,davie001,"Eric Davis",1,5,9
+start,paquc001,"Craig Paquette",1,6,7
+start,mathm001,"Mike Matheny",1,7,2
+start,polap001,"Placido Polanco",1,8,5
+start,hentp001,"Pat Hentgen",1,9,1
+play,1,0,mcewj001,10,BX,4/P4
+play,1,0,belld001,12,CBCX,63/G
+play,1,0,alfoe001,10,BX,D7/7D
+play,1,0,piazm001,30,BBBB,W
+play,1,0,ventr001,31,CBBBB,W.2-3;1-2
+play,1,0,zeilt001,31,BCBBB,W.3-H;2-3;1-2
+play,1,0,agbab001,02,CCC,K/C
+play,1,1,vinaf001,11,BCX,7/F7
+play,1,1,rente001,01,CX,D7/7S
+play,1,1,edmoj001,00,B,WP.2-3
+play,1,1,edmoj001,31,BCBBB,W
+play,1,1,mcgwm001,32,SSBFFBBB,W.1-2
+play,1,1,davie001,21,BBSX,64(1)3/GDP
+play,2,0,ordor001,10,BX,6/P6
+play,2,0,hampm001,01,FX,S7/7S
+play,2,0,mcewj001,12,CFFFBS,K
+play,2,0,belld001,12,BSFC,K/C
+play,2,1,paquc001,11,BFX,63/G
+play,2,1,mathm001,00,X,8/F8
+play,2,1,polap001,01,CX,S7/7S
+play,2,1,hentp001,32,BCBSBFX,S8/8S.1-2
+play,2,1,vinaf001,00,X,S.2-3;1-2
+play,2,1,rente001,22,CBSBS,K
+play,3,0,alfoe001,00,X,8/F8
+play,3,0,piazm001,32,CBBBFX,2/FL
+play,3,0,ventr001,31,BCBBB,W
+play,3,0,zeilt001,11,BCX,7/F7D
+play,3,1,edmoj001,12,CFBS,K
+play,3,1,mcgwm001,22,BFSBC,K/C
+play,3,1,davie001,22,CCBBX,S8/8S
+play,3,1,paquc001,00,X,8/F8
+play,4,0,agbab001,31,BBBCX,S9/9S
+play,4,0,ordor001,00,B,SB2
+play,4,0,ordor001,10,BX,23/SH.2-3
+play,4,0,hampm001,22,BSCBFX,7/SF.3-H
+play,4,0,mcewj001,01,CX,S
+play,4,0,belld001,22,CBFFBC,K/C
+play,4,1,mathm001,12,BSFH,HP
+play,4,1,polap001,22,FBSFBX,S9.1-2
+play,4,1,hentp001,12,BCCX,54/SH.2-3;1-2
+play,4,1,vinaf001,01,CX,41/G.3-H;2-3
+play,4,1,rente001,00,X,53/G
+play,5,0,alfoe001,01,CX,6/P6
+play,5,0,piazm001,11,FBX,53/G
+play,5,0,ventr001,11,BCX,43/G
+play,5,1,edmoj001,10,BX,HR/9
+play,5,1,mcgwm001,11,FBX,13/G
+play,5,1,davie001,02,FCFX,13/G
+play,5,1,paquc001,22,BFFFBS,K
+play,6,0,zeilt001,21,CBBX,63/G
+play,6,0,agbab001,32,BBFFFBFB,W
+play,6,0,ordor001,00,B,CS2(26)
+play,6,0,ordor001,32,BBSFBFFX,8/F8
+play,6,1,mathm001,12,FFBX,63/G
+play,6,1,polap001,00,X,9/F9
+play,6,1,hentp001,00,,NP
+sub,drewj001,"J.D. Drew",1,9,11
+play,6,1,drewj001,21,BBSX,D7
+play,6,1,vinaf001,22,SFBBX,9/F9
+play,7,0,hampm001,00,,NP
+sub,thomm002,"Mark Thompson",1,9,1
+play,7,0,hampm001,11,SBX,63/G
+play,7,0,mcewj001,21,CBBX,7/F7
+play,7,0,belld001,30,BBBB,W
+play,7,0,alfoe001,31,BCBBB,W.1-2
+play,7,0,piazm001,30,BBBB,W.2-3;1-2
+play,7,0,ventr001,00,,NP
+sub,mohlm001,"Mike Mohler",1,9,1
+play,7,0,ventr001,11,FBX,S9.3-H;2-H;1-3;B-2(E9)
+play,7,0,zeilt001,00,,NP
+sub,sloch001,"Heathcliff Slocumb",1,9,1
+play,7,0,zeilt001,32,CBBCBB,W
+play,7,0,agbab001,22,FFBBS,K
+play,7,1,rente001,00,,NP
+sub,mcewj001,"Joe McEwing",0,1,7
+play,7,1,rente001,00,,NP
+sub,paytj001,"Jay Payton",0,7,8
+play,7,1,rente001,10,BX,53/G
+play,7,1,edmoj001,02,CFS,K
+play,7,1,mcgwm001,11,BFX,43/G
+play,8,0,ordor001,00,X,7/F7
+play,8,0,hampm001,02,CFX,S6.B-2(E6/TH1)
+play,8,0,mcewj001,02,CCX,63/G
+play,8,0,belld001,21,BBCX,63/G
+play,8,1,davie001,32,BCBBCX,D8
+play,8,1,paquc001,11,BCX,63/G
+play,8,1,mathm001,02,FFX,2/FL
+play,8,1,polap001,31,BBBCX,8/L8
+play,9,0,alfoe001,01,CX,D9/9S
+play,9,0,piazm001,21,BFBX,S9.2-3
+play,9,0,ventr001,00,,NP
+sub,rodrj001,"Jose Rodriguez",1,9,1
+play,9,0,ventr001,20,BBX,8/SF.3-H
+play,9,0,zeilt001,01,CX,8/F8D
+play,9,0,paytj001,01,FX,D9.1-3
+play,9,0,ordor001,31,BBBCX,8/F8
+play,9,1,rodrj001,00,,NP
+sub,howat001,"Thomas Howard",1,9,11
+play,9,1,howat001,00,,NP
+sub,benia001,"Armando Benitez",0,9,1
+play,9,1,howat001,12,BCCFX,53/G
+play,9,1,vinaf001,11,BCX,E3/TH
+play,9,1,rente001,20,BBC,SB2
+play,9,1,rente001,22,BBCSFS,K
+play,9,1,edmoj001,22,BCBFS,K
+data,er,hampm001,2
+data,er,benia001,0
+data,er,hentp001,2
+data,er,thomm002,2
+data,er,mohlm001,0
+data,er,sloch001,1
+data,er,rodrj001,0

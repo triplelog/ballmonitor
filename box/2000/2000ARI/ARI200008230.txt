@@ -1,0 +1,149 @@
+version,2
+info,visteam,MIL
+info,hometeam,ARI
+info,site,PHO01
+info,date,2000/08/23
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,ripps901
+info,ump1b,gibsg901
+info,ump2b,tscht901
+info,ump3b,meric901
+info,pitches,pitches
+info,temp,72
+info,winddir,tolf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,183
+info,attendance,29954
+info,wp,haynj001
+info,lp,schic002
+info,save,leskc001
+start,grism001,"Marquis Grissom",0,1,8
+start,lorem001,"Mark Loretta",0,2,6
+start,jenkg001,"Geoff Jenkins",0,3,7
+start,sexsr001,"Richie Sexson",0,4,3
+start,burnj001,"Jeromy Burnitz",0,5,9
+start,hayec001,"Charlie Hayes",0,6,5
+start,casar001,"Raul Casanova",0,7,2
+start,lopel002,"Luis Lopez",0,8,4
+start,haynj001,"Jimmy Haynes",0,9,1
+start,womat001,"Tony Womack",1,1,6
+start,bellj001,"Jay Bell",1,2,4
+start,gonzl001,"Luis Gonzalez",1,3,7
+start,willm003,"Matt D. Williams",1,4,5
+start,finls001,"Steve Finley",1,5,8
+start,colbg001,"Greg Colbrunn",1,6,3
+start,milld002,"Damian Miller",1,7,2
+start,bautd001,"Danny Bautista",1,8,9
+start,schic002,"Curt Schilling",1,9,1
+play,1,0,grism001,32,CBCBBFS,K
+play,1,0,lorem001,11,CBX,63/G
+play,1,0,jenkg001,32,BCBSBFFS,K
+play,1,1,womat001,01,CX,8/F8
+play,1,1,bellj001,22,CBBFS,K
+play,1,1,gonzl001,12,BFFX,D8
+play,1,1,willm003,10,BX,7/F7
+play,2,0,sexsr001,12,CBFX,D8/78.BX3(85)
+play,2,0,burnj001,00,X,5/FL
+play,2,0,hayec001,22,BCSBX,63/G
+play,2,1,finls001,22,BCBSC,K/C
+play,2,1,colbg001,00,X,S
+play,2,1,milld002,02,SSC,K/C
+play,2,1,bautd001,10,B1,PO1(E1).1-3
+play,2,1,bautd001,30,B1BII,IW
+play,2,1,schic002,10,BX,S8.3-H;1-2
+play,2,1,womat001,02,FFX,7/F7
+play,3,0,casar001,32,BFSBBX,6/L6
+play,3,0,lopel002,10,BX,6/P6
+play,3,0,haynj001,01,SX,7/F7
+play,3,1,bellj001,22,FFBBFX,63/G
+play,3,1,gonzl001,02,CFX,3/G
+play,3,1,willm003,21,BBFX,53/G
+play,4,0,grism001,00,X,S8/8S
+play,4,0,lorem001,02,FFX,9/F9
+play,4,0,jenkg001,01,CX,D8/8D.1-H
+play,4,0,sexsr001,31,BFBBB,W
+play,4,0,burnj001,01,FX,7/FL.2-3;1-2
+play,4,0,hayec001,10,BX,S8.3-H;2-H
+play,4,0,casar001,10,BX,13/G
+play,4,1,finls001,21,CBBX,S9
+play,4,1,colbg001,00,X,9/F9
+play,4,1,milld002,00,X,S7/7S.1-3
+play,4,1,bautd001,21,BCBX,8/SF.3-H
+play,4,1,schic002,12,FBSS,K
+play,5,0,lopel002,10,BX,53/G
+play,5,0,haynj001,10,BX,7/F7
+play,5,0,grism001,01,CX,6/L6
+play,5,1,womat001,00,X,53/G
+play,5,1,bellj001,32,BBCSFBFFFFB,W
+play,5,1,gonzl001,22,SBSFBFFX,36(1)1/GDP
+play,6,0,lorem001,31,BCBBX,HR/7
+play,6,0,jenkg001,12,BFSFFX,31/G
+play,6,0,sexsr001,12,FFBS,K
+play,6,0,burnj001,02,CFX,S8
+play,6,0,hayec001,20,BBX,64(1)/FO
+play,6,1,willm003,00,X,D9
+play,6,1,finls001,21,BBFX,7/F7
+play,6,1,colbg001,12,CSBFFX,S8/8S.2-H
+play,6,1,milld002,22,BSSBS,K
+play,6,1,bautd001,00,X,8/F8
+play,7,0,casar001,12,BFCX,8/F8
+play,7,0,lopel002,02,CFX,HR/9
+play,7,0,haynj001,11,CBX,8/F8D
+play,7,0,grism001,10,BX,63/G
+play,7,1,schic002,00,,NP
+sub,delld001,"David Dellucci",1,9,11
+play,7,1,delld001,31,CBBBB,W
+play,7,1,womat001,21,BBCX,13/BG.1-2
+play,7,1,bellj001,22,CBCBX,S7/7S.2-3
+play,7,1,gonzl001,00,,NP
+sub,kingr001,"Ray King",0,9,1
+play,7,1,gonzl001,32,BBSBFFX,9/SF.3-H
+play,7,1,willm003,00,,NP
+sub,acevj001,"Juan Acevedo",0,9,1
+play,7,1,willm003,00,X,S7/7S.1-3
+play,7,1,finls001,12,BFCX,9/F9
+play,8,0,lorem001,00,,NP
+sub,kim-b001,"Byung-Hyun Kim",1,9,1
+play,8,0,lorem001,32,BCFBBB,W
+play,8,0,jenkg001,11,SBC,BK.1-2
+play,8,0,jenkg001,12,SBCFC,K/C
+play,8,0,sexsr001,31,BBFBX,HR/8D.2-H
+play,8,0,burnj001,22,BBFFFX,43/G
+play,8,0,hayec001,32,BBSBSC,K/C
+play,8,1,colbg001,22,CFBBFS,K
+play,8,1,milld002,22,BFBFX,8/F8
+play,8,1,bautd001,31,BBBCX,HR/7
+play,8,1,kim-b001,00,,NP
+sub,friah001,"Hanley Frias",1,9,11
+play,8,1,friah001,32,BCBBCFX,43/G
+play,9,0,casar001,00,,NP
+sub,mantm001,"Matt Mantei",1,9,1
+play,9,0,casar001,30,BBBB,W
+play,9,0,lopel002,01,LX,54/SH.1-2
+play,9,0,acevj001,00,,NP
+sub,sweem001,"Mark Sweeney",0,9,11
+play,9,0,sweem001,12,CSBB,WP.2-3
+play,9,0,sweem001,32,CSBBBFX,S9.3-H
+play,9,0,grism001,00,,NP
+sub,moutj001,"James Mouton",0,9,12
+play,9,0,grism001,10,BX,8/F8
+play,9,0,lorem001,31,BBBCX,8/F8
+play,9,1,womat001,00,,NP
+sub,leskc001,"Curtis Leskanic",0,9,1
+play,9,1,womat001,01,CX,S9
+play,9,1,bellj001,22,BCBCFFFX,6/P6
+play,9,1,gonzl001,30,BBBB,W.1-2
+play,9,1,willm003,12,BFSX,54(1)3/GDP
+data,er,haynj001,4
+data,er,kingr001,0
+data,er,acevj001,1
+data,er,leskc001,0
+data,er,schic002,5
+data,er,kim-b001,2
+data,er,mantm001,1

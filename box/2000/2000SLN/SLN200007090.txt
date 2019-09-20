@@ -1,0 +1,156 @@
+version,2
+info,visteam,SFN
+info,hometeam,SLN
+info,site,STL09
+info,date,2000/07/09
+info,number,0
+info,starttime,1:10PM
+info,daynight,day
+info,usedh,false
+info,umphome,onorb901
+info,ump1b,iassd901
+info,ump2b,hirsm901
+info,ump3b,bellw901
+info,pitches,pitches
+info,temp,94
+info,winddir,rtol
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,187
+info,attendance,44202
+info,wp,hentp001
+info,lp,hernl003
+info,save,vered001
+start,benam001,"Marvin Benard",0,1,9
+start,murrc001,"Calvin Murray",0,2,8
+start,snowj001,"J.T. Snow",0,3,3
+start,cresf001,"Felipe Crespo",0,4,7
+start,martr003,"Ramon E. Martinez",0,5,4
+start,muelb001,"Bill Mueller",0,6,5
+start,aurir001,"Rich Aurilia",0,7,6
+start,estab001,"Bobby Estalella",0,8,2
+start,hernl003,"Livan Hernandez",0,9,1
+start,vinaf001,"Fernando Vina",1,1,4
+start,rente001,"Edgar Renteria",1,2,6
+start,edmoj001,"Jim Edmonds",1,3,8
+start,tatif001,"Fernando Tatis",1,4,5
+start,lankr001,"Ray Lankford",1,5,7
+start,davie001,"Eric Davis",1,6,9
+start,paquc001,"Craig Paquette",1,7,3
+start,mathm001,"Mike Matheny",1,8,2
+start,hentp001,"Pat Hentgen",1,9,1
+play,1,0,benam001,21,BCBX,6/P6
+play,1,0,murrc001,00,X,6/P6
+play,1,0,snowj001,32,CFBFBFFBFX,43/G
+play,1,1,vinaf001,00,X,7/F7
+play,1,1,rente001,22,CBBFX,63/G
+play,1,1,edmoj001,11,BCX,8/F8
+play,2,0,cresf001,01,CX,D9/9S
+play,2,0,martr003,20,BBX,53/SH.2-3
+play,2,0,muelb001,22,CBFBX,3/FL
+play,2,0,aurir001,00,X,63/G
+play,2,1,tatif001,22,BCCBX,S9
+play,2,1,lankr001,00,X,D/78.1-3
+play,2,1,davie001,21,SBBX,S8/8S.3-H;2-H
+play,2,1,paquc001,02,FCFX,54(1)/FO
+play,2,1,mathm001,32,CBFBBX,8/F8
+play,2,1,hentp001,11,CBX,E6/TH.1-3
+play,2,1,vinaf001,32,CSBBFBX,S8.3-H(UR);1-2
+play,2,1,rente001,12,CFBX,4/L4
+play,3,0,estab001,10,BX,9/F9
+play,3,0,hernl003,22,CBFBFC,K/C
+play,3,0,benam001,32,BBBCFB,W
+play,3,0,murrc001,30,BBBB,W.1-2
+play,3,0,snowj001,22,BFBCX,3/G
+play,3,1,edmoj001,22,CBBFS,K
+play,3,1,tatif001,02,FCX,3/FL
+play,3,1,lankr001,32,CBFBBB,W
+play,3,1,davie001,21,BSBX,E6/G.1-2
+play,3,1,paquc001,00,X,54(1)/FO.2-3
+play,4,0,cresf001,22,CCBFBX,6/L6
+play,4,0,martr003,10,BX,S9
+play,4,0,muelb001,21,BBCX,9/F9
+play,4,0,aurir001,31,BFBBB,W.1-2
+play,4,0,estab001,12,CBFX,6/FL
+play,4,1,mathm001,12,CCBX,9/F9
+play,4,1,hentp001,02,CFC,K/C
+play,4,1,vinaf001,10,BX,43/G
+play,5,0,hernl003,11,FBX,13/G
+play,5,0,benam001,22,BCFBX,3/G
+play,5,0,murrc001,12,CFBFFS,K
+play,5,1,rente001,10,BX,43/G
+play,5,1,edmoj001,01,CH,HP
+play,5,1,tatif001,10,BX,HR/7.1-H
+play,5,1,lankr001,22,SBBFFX,2/FL
+play,5,1,davie001,02,CCX,S9
+play,5,1,paquc001,21,BSBX,D7/7S.1-3
+play,5,1,mathm001,02,FCS,K
+play,6,0,snowj001,00,,NP
+sub,benea001,"Andy Benes",1,9,1
+play,6,0,snowj001,32,CCBFBFBB,W
+play,6,0,cresf001,12,BSFX,E3/TH.1-3;B-2
+play,6,0,martr003,00,X,43/G.3-H(UR);2-3
+play,6,0,muelb001,11,BFX,4/P4
+play,6,0,aurir001,22,BBCFC,K/C
+play,6,1,benea001,10,BX,63/G
+play,6,1,vinaf001,11,BCX,S9/9S.BX2(96)
+play,6,1,rente001,12,FBFC,K/C
+play,7,0,estab001,02,SSC,K/C
+play,7,0,hernl003,00,,NP
+sub,riosa001,"Armando Rios",0,9,11
+play,7,0,riosa001,12,CBSX,3/G
+play,7,0,benam001,32,FBBSBB,W
+play,7,0,murrc001,01,SX,D7/7S.1-H
+play,7,0,snowj001,12,CSBFC,K/C
+play,7,1,edmoj001,00,,NP
+sub,nathj001,"Joe Nathan",0,9,1
+play,7,1,edmoj001,31,BBBCX,9/F9
+play,7,1,tatif001,32,BBCFBC,K/C
+play,7,1,lankr001,21,CBBX,HR/9
+play,7,1,davie001,32,FBBSBFB,W
+play,7,1,paquc001,12,SBFX,HR/9.1-H
+play,7,1,mathm001,12,FBSX,53/G
+play,8,0,cresf001,00,,NP
+sub,dunss001,"Shawon Dunston",1,6,9
+play,8,0,cresf001,32,BBBCFFFX,8/F8
+play,8,0,martr003,00,X,E6/TH1
+play,8,0,muelb001,02,CCX,S9.1-2
+play,8,0,aurir001,12,SBFX,S7.2-H(UR);1-2
+play,8,0,estab001,00,,NP
+sub,bondb001,"Barry Bonds",0,8,11
+play,8,0,bondb001,00,,NP
+sub,mattm001,"Mike Matthews",1,9,1
+play,8,0,bondb001,00,,NP
+sub,burke001,"Ellis Burks",0,8,11
+play,8,0,burke001,20,BBX,S7.2-3;1-2
+play,8,0,nathj001,00,,NP
+sub,kentj001,"Jeff Kent",0,9,11
+play,8,0,kentj001,00,,NP
+sub,vered001,"Dave Veres",1,6,1
+play,8,0,kentj001,00,,NP
+sub,howat001,"Thomas Howard",1,9,9
+play,8,0,kentj001,32,BCFBBX,D/78.3-H;2-H;1-H
+play,8,0,benam001,11,FBX,3/G.2-3
+play,8,0,murrc001,01,SX,S.3-H(TUR)
+play,8,0,snowj001,00,X,4/L4
+play,8,1,howat001,00,,NP
+sub,kentj001,"Jeff Kent",0,9,3
+play,8,1,howat001,00,,NP
+sub,mirad001,"Doug Mirabelli",0,8,2
+play,8,1,howat001,00,,NP
+sub,fulta001,"Aaron Fultz",0,3,1
+play,8,1,howat001,11,BCX,9/F9
+play,8,1,vinaf001,12,BCFFFX,9/F9S
+play,8,1,rente001,12,CSBFFX,4/FL
+play,9,0,cresf001,12,CSBS,K
+play,9,0,martr003,20,BBX,8/F8
+play,9,0,muelb001,32,BCBBCC,K/C
+data,er,hernl003,4
+data,er,nathj001,3
+data,er,fulta001,0
+data,er,hentp001,0
+data,er,benea001,3
+data,er,mattm001,1
+data,er,vered001,1

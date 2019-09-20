@@ -1,0 +1,88 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,12,1,,,,,0,5,SFBFC,daalo001,1,0,lugoj001 strikes out. ,lugoj001,0,
+,01,1,,,,,1,7,CX,daalo001,1,0,biggc001 grounds out. ,biggc001,0,G
+,20,1,bagwj001,,,,2,10,BBX,daalo001,0,0,bagwj001 singles. ,bagwj001,0,
+,31,1,bagwj001,,,,3,15,BFBBX,daalo001,1,0,hidar001 grounds out. ,hidar001,0,G
+,32,1,,,,,4,9,CBSBFFBFX,elars001,1,0,,womat001,1,F
+,32,1,,,,,5,17,CCBFBBFX,elars001,1,0,bellj001 grounds out. ,bellj001,1,G
+,22,1,,,,,6,23,BSBFFS,elars001,1,0,gonzl001 strikes out. ,gonzl001,1,
+,01,2,aloum001,,,,7,17,CX,daalo001,0,0,aloum001 singles. ,aloum001,0,
+aloum001 to 2B. ,30,2,berkl001,aloum001,,,8,21,BBBB,daalo001,0,0,berkl001 walks. ,berkl001,0,
+aloum001 to 3B. ,00,2,,,aloum001,,9,22,X,daalo001,2,0,Double Play. ,melum001,0,
+,30,2,trubc001,,aloum001,,10,26,IIII,daalo001,0,0,trubc001 intentionally walks. ,trubc001,0,
+trubc001 out. ,02,2,elars001,,aloum001,,11,29,FFX,daalo001,1,0,elars001 reaches on fielder's choice. ,elars001,0,
+,21,2,,,,,12,27,FBBX,elars001,1,0,finls001 grounds out. ,finls001,1,G
+,01,2,,,cabra001,,13,29,CX,elars001,0,0,cabra001 triples. ,cabra001,1,
+,11,2,,,cabra001,,14,32,FBX,elars001,1,0,,lee-t002,1,
+,12,2,,,cabra001,,15,37,CFBFX,elars001,1,0,,klasd001,1,F
+,10,3,,,,,16,31,BX,daalo001,1,0,lugoj001 grounds out. ,lugoj001,0,G
+,00,3,,,,,17,32,X,daalo001,1,0,biggc001 grounds out. ,biggc001,0,G
+,32,3,bagwj001,,,,18,38,CBBBSB,daalo001,0,0,bagwj001 walks. ,bagwj001,0,
+bagwj001 to 2B. ,31,3,,bagwj001,,hidar001,19,43,BBBC1,daalo001,0,0,Pickoff error. ,hidar001,0,
+bagwj001 scores. ,32,3,hidar001,,,,20,50,BBBC1CX,daalo001,0,1,hidar001 singles. ,hidar001,0,
+,32,3,hidar001,,,,21,56,CBBFBX,daalo001,1,0,,aloum001,0,F
+,11,3,,,,,22,40,CBX,elars001,1,0,,stink001,1,F
+,01,3,,,,,23,42,FX,elars001,0,1,daalo001 homers. ,daalo001,1,
+,02,3,,,,,24,45,CCX,elars001,1,0,,womat001,1,F
+,22,3,,,,,25,50,CBSBX,elars001,1,0,,bellj001,1,F
+,00,4,,,,,26,57,X,daalo001,1,0,berkl001 grounds out. ,berkl001,0,G
+,22,4,,,,,27,62,CBBFX,daalo001,1,0,,melum001,0,F
+,12,4,,,,,28,66,FBCX,daalo001,1,0,,trubc001,0,P
+,32,4,,,,,29,57,CFFBBBX,elars001,1,0,gonzl001 grounds out. ,gonzl001,1,G
+,00,4,,,,,30,58,X,elars001,1,0,,finls001,1,P
+,31,4,cabra001,,,,31,63,BBBSB,elars001,0,0,cabra001 walks. ,cabra001,1,
+,00,4,cabra001,,,,32,64,X,elars001,1,0,lee-t002 grounds out. ,lee-t002,1,G
+,12,5,,,,,33,71,FFFBS,daalo001,1,0,elars001 strikes out. ,elars001,0,
+,30,5,lugoj001,,,,34,75,BBBB,daalo001,0,0,lugoj001 walks. ,lugoj001,0,
+lugoj001 to 2B. ,01,5,biggc001,lugoj001,,,35,77,CH,daalo001,0,0,biggc001 hit by pitch. ,biggc001,0,
+lugoj001 scores. biggc001 to 3B. ,01,5,,bagwj001,biggc001,,36,79,FX,daalo001,0,1,bagwj001 doubles. ,bagwj001,0,
+,02,5,hidar001,bagwj001,biggc001,,37,82,CFH,daalo001,0,0,hidar001 hit by pitch. ,hidar001,0,
+biggc001 scores. bagwj001 scores. hidar001 to 3B. aloum001 to 2B. ,20,5,,aloum001,hidar001,,38,85,BBX,daalo001,0,2,aloum001 singles. ,aloum001,0,
+,30,5,berkl001,aloum001,hidar001,,39,89,IIII,daalo001,0,0,berkl001 intentionally walks. ,berkl001,0,
+hidar001 scores. aloum001 to 3B. berkl001 to 2B. ,02,5,melum001,berkl001,aloum001,,40,92,CSX,daalo001,0,1,melum001 singles. ,melum001,0,
+,02,5,melum001,berkl001,aloum001,,43,3,CSS,sprir001,1,0,trubc001 strikes out. ,trubc001,0,
+,22,5,melum001,berkl001,aloum001,,44,8,BCBFX,sprir001,1,0,elars001 grounds out. ,elars001,0,G
+,11,5,,,,,45,67,BCX,elars001,1,0,,klasd001,1,F
+,00,5,stink001,,,,46,68,X,elars001,0,0,stink001 singles. ,stink001,1,
+stink001 to 2B. ,20,5,bautd001,stink001,,,47,71,BBX,elars001,0,0,bautd001 singles. ,bautd001,1,
+,00,5,bautd001,stink001,,,48,72,X,elars001,1,0,,womat001,1,F
+,11,5,bautd001,stink001,,,49,75,CBX,elars001,1,0,,bellj001,1,
+,32,6,lugoj001,,,,50,14,BFBBCB,sprir001,0,0,lugoj001 walks. ,lugoj001,0,
+,01,6,lugoj001,,,,51,16,CX,sprir001,1,0,,biggc001,0,
+lugoj001 to 3B. ,00,6,,,lugoj001,bagwj001,52,17,B,sprir001,0,0,lugoj001 steals 2B. ,bagwj001,0,
+lugoj001 scores. ,21,6,bagwj001,,,,53,21,BCBX,sprir001,0,1,bagwj001 singles. ,bagwj001,0,
+bagwj001 to 3B. ,12,6,,hidar001,bagwj001,,54,25,FFBX,sprir001,0,0,hidar001 doubles. ,hidar001,0,
+bagwj001 scores. hidar001 scores. ,10,6,,aloum001,,,55,27,BX,sprir001,0,2,aloum001 doubles. ,aloum001,0,
+,00,6,,aloum001,,,58,1,X,swing001,1,0,,berkl001,0,P
+aloum001 scores. melum001 to 2B. ,10,6,,melum001,,,59,3,BX,swing001,0,1,melum001 singles. ,melum001,0,
+,12,6,,melum001,,,60,7,BFFX,swing001,1,0,,trubc001,0,F
+,32,6,,,,,61,82,BFBFBFX,elars001,1,0,,gonzl001,1,
+,22,6,,,,,62,87,BBFFS,elars001,1,0,finls001 strikes out. ,finls001,1,
+,22,6,,,,,63,94,CBFFBFS,elars001,1,0,cabra001 strikes out. ,cabra001,1,
+,12,7,,,,,64,12,CCFBS,swing001,1,0,elars001 strikes out. ,elars001,0,
+,02,7,,,,,65,15,CCS,swing001,1,0,lugoj001 strikes out. ,lugoj001,0,
+,01,7,,,,,66,17,CX,swing001,1,0,biggc001 grounds out. ,biggc001,0,G
+,22,7,,,,,67,100,CFFBBX,elars001,1,0,,friah001,1,
+,12,7,,,,,68,104,SBCX,elars001,1,0,klasd001 grounds out. ,klasd001,1,G
+,32,7,,,,,69,110,SBBFBX,elars001,1,0,,stink001,1,
+,11,8,,,,,71,3,BSX,mantm001,1,0,,bagwj001,0,P
+,12,8,,,,,72,7,CFBX,mantm001,1,0,,hidar001,0,P
+,21,8,aloum001,,,,73,11,BFBX,mantm001,0,0,aloum001 singles. ,aloum001,0,
+aloum001 to 2B. ,31,8,berkl001,aloum001,,,74,16,BBCBB,mantm001,0,0,berkl001 walks. ,berkl001,0,
+aloum001 scores. berkl001 scores. melum001 scores. ,21,8,,,,,75,20,BSBX,mantm001,0,3,melum001 doubles. ,melum001,0,
+,12,8,,,,,76,24,BFSX,mantm001,1,0,,trubc001,0,P
+,01,8,,,,,81,112,CX,elars001,1,0,bautd001 grounds out. ,bautd001,1,G
+,20,8,womat001,,,,82,115,BBX,elars001,0,0,womat001 singles. ,womat001,1,
+,01,8,womat001,,,,84,117,CX,elars001,1,0,,colbg001,1,
+,10,8,womat001,,,,85,119,BX,elars001,1,0,,gonzl001,1,P
+,02,9,,,,,88,3,CSC,morgm001,1,0,miesm001 strikes out. ,miesm001,0,
+,10,9,,,,,89,5,BX,morgm001,1,0,,lugoj001,0,F
+,11,9,biggc001,,,,90,8,BCX,morgm001,0,0,biggc001 singles. ,biggc001,0,
+,00,9,biggc001,,,,91,9,X,morgm001,1,0,wardd002 grounds out. ,wardd002,0,G
+,10,9,,,,,93,2,BX,cabrj001,1,0,,finls001,1,F
+,10,9,cabra001,,,,94,4,BX,cabrj001,0,0,cabra001 singles. ,cabra001,1,
+cabra001 to 3B. ,21,9,,friah001,cabra001,,95,8,FBBX,cabrj001,0,0,friah001 doubles. ,friah001,1,
+,32,9,klasd001,friah001,cabra001,,96,14,CBBFBB,cabrj001,0,0,klasd001 walks. ,klasd001,1,
+cabra001 scores. friah001 scores. klasd001 scores. ,12,9,,stink001,,,97,18,FFBX,cabrj001,0,3,stink001 doubles. ,stink001,1,
+,12,9,,stink001,,,99,22,CFBX,cabrj001,1,0,,bautd001,1,F
+,11,9,,stink001,,,100,25,BCX,cabrj001,1,0,womat001 grounds out. ,womat001,1,G

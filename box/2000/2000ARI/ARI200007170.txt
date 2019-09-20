@@ -1,0 +1,130 @@
+version,2
+info,visteam,SEA
+info,hometeam,ARI
+info,site,PHO01
+info,date,2000/07/17
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,carlm901
+info,ump1b,demud901
+info,ump2b,eddid901
+info,ump3b,relic901
+info,pitches,pitches
+info,temp,72
+info,winddir,ltor
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,160
+info,attendance,35504
+info,wp,guzmg001
+info,lp,halaj001
+info,save,
+start,hendr001,"Rickey Henderson",0,1,7
+start,belld002,"David Bell",0,2,4
+start,camem001,"Mike Cameron",0,3,8
+start,olerj001,"John Olerud",0,4,3
+start,buhnj001,"Jay Buhner",0,5,9
+start,mabrj001,"John Mabry",0,6,5
+start,wilsd001,"Dan Wilson",0,7,2
+start,guilc001,"Carlos Guillen",0,8,6
+start,halaj001,"John Halama",0,9,1
+start,womat001,"Tony Womack",1,1,6
+start,bellj001,"Jay Bell",1,2,4
+start,gonzl001,"Luis Gonzalez",1,3,7
+start,willm003,"Matt D. Williams",1,4,5
+start,cabra001,"Alex Cabrera",1,5,9
+start,colbg001,"Greg Colbrunn",1,6,3
+start,milld002,"Damian Miller",1,7,2
+start,bautd001,"Danny Bautista",1,8,8
+start,guzmg001,"Geraldo Guzman",1,9,1
+play,1,0,hendr001,32,CBBCBB,W
+play,1,0,belld002,10,BX,6(1)3/GDP
+play,1,0,camem001,22,CBCBX,63/G
+play,1,1,womat001,12,CBSX,9/F9D
+play,1,1,bellj001,10,BX,S7/7S
+play,1,1,gonzl001,11,CBX,36(1)/FO
+play,1,1,willm003,12,BSFX,D7/7S.1-3
+play,1,1,cabra001,00,X,9/F9
+play,2,0,olerj001,31,CBBBB,W
+play,2,0,buhnj001,22,CBBCS,K
+play,2,0,mabrj001,00,X,S7/7S.1-2
+play,2,0,wilsd001,02,CSC,K/C
+play,2,0,guilc001,01,SX,43/G
+play,2,1,colbg001,00,X,8/F8
+play,2,1,milld002,32,BSSBBS,K
+play,2,1,bautd001,00,X,S8
+play,2,1,guzmg001,12,SSBS,K
+play,3,0,halaj001,01,CX,S9/9S
+play,3,0,hendr001,02,FCFS,K
+play,3,0,belld002,22,BBFCFX,8/F8
+play,3,0,camem001,02,CSS,K
+play,3,1,womat001,21,BBCX,S1/BG1
+play,3,1,bellj001,21,BCBX,T8.1-H
+play,3,1,gonzl001,02,CCC,K/C
+play,3,1,willm003,31,BFBBX,4/P4
+play,3,1,cabra001,01,FX,8/F8
+play,4,0,olerj001,00,X,7/F7D
+play,4,0,buhnj001,32,FFBBBC,K/C
+play,4,0,mabrj001,00,X,S9/9S
+play,4,0,wilsd001,32,BBBCSC,K/C
+play,4,1,colbg001,22,BCFBFX,S
+play,4,1,milld002,30,BBBX,D7.1-3
+play,4,1,bautd001,00,X,8/SF.3-H;2-3
+play,4,1,guzmg001,32,BBCBCS,K
+play,4,1,womat001,22,BCBCFX,D8.3-H
+play,4,1,bellj001,12,CFBX,S8/8S.2-H
+play,4,1,gonzl001,00,X,8/F8
+play,5,0,guilc001,31,BBCBB,W
+play,5,0,halaj001,00,X,34/SH.1-2
+play,5,0,hendr001,00,X,8/F8
+play,5,0,belld002,32,BBFCBFFX,4/P4
+play,5,1,willm003,00,X,8/L8
+play,5,1,cabra001,01,CX,HR/78
+play,5,1,colbg001,30,BBBX,8/F8
+play,5,1,milld002,10,BX,8/F8
+play,6,0,camem001,00,X,2/FL
+play,6,0,olerj001,12,BCCX,7/F7
+play,6,0,buhnj001,00,X,9/F9S
+play,6,1,bautd001,12,CSBX,7/L7
+play,6,1,guzmg001,12,SBSC,K/C
+play,6,1,womat001,12,BCFX,E6/G
+play,6,1,bellj001,00,1,POCS2(136)
+play,7,0,mabrj001,22,BBSSFX,7/F7D
+play,7,0,wilsd001,12,SBSS,K
+play,7,0,guilc001,01,FX,7/F7D
+play,7,1,bellj001,11,BFX,7/F7D
+play,7,1,gonzl001,10,BX,D/78
+play,7,1,willm003,21,BFBX,S8.2-3
+play,7,1,cabra001,00,,NP
+sub,gipsc001,"Charles Gipson",0,9,6
+play,7,1,cabra001,00,,NP
+sub,ramsr001,"Robert Ramsay",0,8,1
+play,7,1,cabra001,10,BX,8/SF.3-H
+play,7,1,colbg001,32,BBBCFS,K
+play,8,0,gipsc001,12,FBCS,K
+play,8,0,hendr001,00,X,4/P4
+play,8,0,belld002,32,BBCSFBX,S7
+play,8,0,camem001,22,BFBCS,K
+play,8,1,milld002,12,CCBS,K
+play,8,1,bautd001,30,BBBB,W
+play,8,1,guzmg001,00,,NP
+sub,friah001,"Hanley Frias",1,9,11
+play,8,1,friah001,22,BFFBX,S/89S.1-3
+play,8,1,womat001,32,SBBFBX,8/SF.3-H
+play,8,1,bellj001,22,SFBBFX,7/F7
+play,9,0,olerj001,00,,NP
+sub,swing001,"Greg Swindell",1,9,1
+play,9,0,olerj001,12,CBFFX,3/G
+play,9,0,buhnj001,00,X,D7
+play,9,0,mabrj001,00,,NP
+sub,marte001,"Edgar Martinez",0,6,11
+play,9,0,marte001,01,CX,43/G.2-3
+play,9,0,wilsd001,00,X,8/F8
+data,er,halaj001,6
+data,er,ramsr001,1
+data,er,guzmg001,0
+data,er,swing001,0

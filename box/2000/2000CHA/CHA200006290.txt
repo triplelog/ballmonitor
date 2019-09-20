@@ -1,0 +1,153 @@
+version,2
+info,visteam,MIN
+info,hometeam,CHA
+info,site,CHI12
+info,date,2000/06/29
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,younl901
+info,ump1b,klemj901
+info,ump2b,millb901
+info,ump3b,mealj901
+info,pitches,pitches
+info,temp,77
+info,winddir,torf
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,184
+info,attendance,21239
+info,wp,milte001
+info,lp,wellk001
+info,save,
+start,canij001,"Jay Canizaro",0,1,4
+start,cummm001,"Midre Cummings",0,2,9
+start,lawtm002,"Matt Lawton",0,3,7
+start,coomr001,"Ron Coomer",0,4,3
+start,koskc001,"Corey Koskie",0,5,5
+start,ortid001,"David Ortiz",0,6,10
+start,jensm001,"Marcus Jensen",0,7,2
+start,jonej003,"Jacque Jones",0,8,8
+start,guzmc001,"Cristian Guzman",0,9,6
+start,milte001,"Eric Milton",0,0,1
+start,durhr001,"Ray Durham",1,1,4
+start,graft001,"Tony Graffanino",1,2,6
+start,thomf001,"Frank Thomas",1,3,10
+start,ordom001,"Magglio Ordonez",1,4,9
+start,konep001,"Paul Konerko",1,5,3
+start,abboj002,"Jeff Abbott",1,6,8
+start,lee-c001,"Carlos Lee",1,7,7
+start,perrh001,"Herbert Perry",1,8,5
+start,johnm003,"Mark Johnson",1,9,2
+start,wellk001,"Kip Wells",1,0,1
+play,1,0,canij001,11,CBX,S/78
+play,1,0,cummm001,00,X,E3/G.1-2
+com,"originally scored as single, changes three ER as well"
+play,1,0,lawtm002,32,CBBFBX,7/F7D.2-3
+play,1,0,coomr001,30,BBBB,W.1-2;3-H(WP)
+play,1,0,koskc001,30,BBBB,W.2-3;1-2
+play,1,0,ortid001,32,BBCBCFX,8/SF.3-H(UR)
+play,1,0,jensm001,12,FBFX,D8/8S.2-H(UR);1-H(UR)
+play,1,0,jonej003,12,CCBFFX,3/G
+play,1,1,durhr001,12,CCBS,K
+play,1,1,graft001,12,CFBS,K
+play,1,1,thomf001,02,CCX,S/78
+play,1,1,ordom001,02,SCX,64(1)/FO
+play,2,0,guzmc001,12,SBCX,S9
+play,2,0,canij001,01,CX,S7.1-2
+play,2,0,cummm001,20,BBX,5/FL
+play,2,0,lawtm002,02,FCFS,K
+play,2,0,coomr001,32,CBBBFFFX,S/78.2-H;1-3
+play,2,0,koskc001,22,BCBFS,K
+play,2,1,konep001,10,BX,8/F8D
+play,2,1,abboj002,00,X,9/F9
+play,2,1,lee-c001,31,BBBCB,W
+play,2,1,perrh001,10,BX,S8.1-2
+play,2,1,johnm003,01,CX,S7.2-H;1-2
+play,2,1,durhr001,32,CFBBBS,K
+play,3,0,ortid001,00,X,E3/G
+play,3,0,jensm001,11,BFX,S9.1-2
+play,3,0,jonej003,02,FSX,46(1)3/GDP.2-3
+play,3,0,guzmc001,01,CX,63/G
+play,3,1,graft001,02,CFFX,53/G
+play,3,1,thomf001,32,FBFBBX,6/P6
+play,3,1,ordom001,12,BSSX,S/78
+play,3,1,konep001,12,FCBFFX,53/G
+play,4,0,canij001,00,,NP
+sub,lowes001,"Sean Lowe",1,0,1
+play,4,0,canij001,12,CCBX,HR/7
+play,4,0,cummm001,11,BCX,S
+play,4,0,lawtm002,21,CBBB,PB.1-2
+play,4,0,lawtm002,31,CBBBX,31/G.2-3
+play,4,0,coomr001,22,BFSBX,D/78D.3-H
+play,4,0,koskc001,32,FSBBBFX,S9.2-3
+play,4,0,ortid001,22,BCBFS,K
+play,4,0,jensm001,32,BBFCBFC,K/C
+play,4,1,abboj002,01,CX,6/P6
+play,4,1,lee-c001,02,CFS,K
+play,4,1,perrh001,32,BBCBSS,K
+play,5,0,jonej003,00,,NP
+sub,graft001,"Tony Graffanino",1,2,4
+play,5,0,jonej003,00,,NP
+sub,valej003,"Jose Valentin",1,1,6
+play,5,0,jonej003,10,BX,8/L8
+play,5,0,guzmc001,10,BX,63/G
+play,5,0,canij001,31,CBBBX,43/G
+play,5,1,johnm003,32,BBFFFBX,9/F9
+play,5,1,valej003,10,BX,8/F8
+play,5,1,graft001,12,CCBX,4/P4
+play,6,0,cummm001,11,BFX,S8
+play,6,0,lawtm002,01,FX,S.1-2
+play,6,0,coomr001,11,BFX,46(1)3/GDP.2-3
+play,6,0,koskc001,32,FFBBFFBFB,W
+play,6,0,ortid001,00,,NP
+sub,penaj003,"Jesus Pena",1,0,1
+play,6,0,ortid001,22,CCBBX,8/F8
+play,6,1,thomf001,32,CFBFBFBX,S8
+play,6,1,ordom001,12,BSCFX,7/F7
+play,6,1,konep001,32,BFBBFB,W.1-2
+play,6,1,abboj002,22,CCFFBBFX,9/F9
+play,6,1,lee-c001,12,FBFX,6/P6
+play,7,0,jensm001,22,FBFFBFX,8/F8
+play,7,0,jonej003,02,CFX,63/G
+play,7,0,guzmc001,22,BBCSS,K
+play,7,1,perrh001,02,FCS,K
+play,7,1,johnm003,00,X,8/F8D
+play,7,1,valej003,22,CFBBX,13/G
+play,8,0,canij001,00,,NP
+sub,foulk001,"Keith Foulke",1,0,1
+play,8,0,canij001,01,CX,S8
+play,8,0,cummm001,11,BCB,WP.1-2
+play,8,0,cummm001,31,BCBBX,7/F7D.2-3
+play,8,0,lawtm002,00,X,S8.3-H
+play,8,0,coomr001,12,BSSS,K
+play,8,0,koskc001,31,BFBBX,HR/9.1-H
+play,8,0,ortid001,22,BCBFFC,K/C
+play,8,1,graft001,00,,NP
+sub,wellb002,"Bob Wells",0,0,1
+play,8,1,graft001,01,CX,8/F8
+play,8,1,thomf001,12,BCFX,7/F7
+play,8,1,ordom001,00,X,9/P9S
+play,9,0,jensm001,00,,NP
+sub,beirk001,"Kevin Beirne",1,0,1
+play,9,0,jensm001,02,CCC,K/C
+play,9,0,jonej003,01,SX,13/G
+play,9,0,guzmc001,02,FFX,63/G
+play,9,1,konep001,00,,NP
+sub,millt001,"Travis Miller",0,0,1
+play,9,1,konep001,31,BBBCX,S8
+play,9,1,abboj002,31,BBBCB,W.1-2
+play,9,1,lee-c001,02,CSS,K
+play,9,1,perrh001,01,CX,7/F7D.2-3
+play,9,1,johnm003,22,CBBFS,K
+data,er,milte001,1
+data,er,wellb002,0
+data,er,millt001,0
+data,er,wellk001,2
+data,er,lowes001,2
+data,er,penaj003,0
+data,er,foulk001,3
+data,er,beirk001,0

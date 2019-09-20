@@ -1,0 +1,89 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,01,1,,,,,0,2,SX,wolfr001,1,0,guerw001 grounds out. ,guerw001,0,G
+,22,1,,,,,1,7,CBBFX,wolfr001,1,0,jonet004 grounds out. ,jonet004,0,G
+,31,1,,,,,2,12,BBBFX,wolfr001,1,0,,seguf001,0,F
+,22,1,,,,,3,5,CCBBX,johnm002,1,0,andem003 grounds out. ,andem003,1,G
+,22,1,,,,,4,10,SBBFS,johnm002,1,0,gland001 strikes out. ,gland001,1,
+,32,1,,,,,5,17,SBBSFBS,johnm002,1,0,abreb001 strikes out. ,abreb001,1,
+,32,2,guerv001,,,,6,18,FBSBBB,wolfr001,0,0,guerv001 walks. ,guerv001,0,
+,22,2,guerv001,,,,7,24,BFBFFX,wolfr001,1,0,,vidrj001,0,F
+guerv001 to 2B. ,11,2,mordm001,guerv001,,,8,27,CBX,wolfr001,0,0,mordm001 singles. ,mordm001,0,
+,02,2,mordm001,guerv001,,,9,31,CFFS,wolfr001,1,0,barrm003 strikes out. ,barrm003,0,
+,20,2,mordm001,guerv001,,,10,34,BBX,wolfr001,1,0,,delat001,0,
+,21,2,,,,,11,21,CBBX,johnm002,1,0,,roles001,1,F
+,01,2,,,,,12,23,FX,johnm002,1,0,burrp001 grounds out. ,burrp001,1,G
+,00,2,,,,,13,24,X,johnm002,1,0,,lee-t002,1,F
+,12,3,,,,,14,38,BCCX,wolfr001,1,0,,johnm002,0,
+,10,3,guerw001,,,,15,40,BX,wolfr001,0,0,guerw001 singles. ,guerw001,0,
+guerw001 to 2B. ,20,3,jonet004,guerw001,,,16,43,BBX,wolfr001,0,0,jonet004 reaches on error. ,jonet004,0,G
+guerw001 to 3B. jonet004 out. ,20,3,seguf001,,guerw001,,17,46,BBX,wolfr001,1,0,seguf001 reaches on fielder's choice. ,seguf001,0,
+guerw001 scores. seguf001 to 3B. ,21,3,guerv001,,seguf001,,18,50,BFBX,wolfr001,0,1,guerv001 singles. ,guerv001,0,
+,32,3,guerv001,,seguf001,,19,57,BBFFBFX,wolfr001,1,0,vidrj001 grounds out. ,vidrj001,0,G
+,10,3,peret003,,,,20,26,BX,johnm002,0,0,peret003 singles. ,peret003,1,
+peret003 to 2B. ,01,3,print001,peret003,,,21,28,CH,johnm002,0,0,print001 hit by pitch. ,print001,1,
+peret003 to 3B. print001 to 2B. ,10,3,,print001,peret003,,22,30,BX,johnm002,1,0,Sacrifice bunt by wolfr001.,wolfr001,1,
+peret003 scores. print001 to 3B. ,21,3,,,print001,,23,34,CBBX,johnm002,1,1,andem003 grounds out. ,andem003,1,G
+,31,3,,,print001,,24,39,BBBCX,johnm002,1,0,,gland001,1,F
+,21,4,,mordm001,,,25,61,CBBX,wolfr001,0,0,mordm001 doubles. ,mordm001,0,
+mordm001 to 3B. ,00,4,,,mordm001,,26,62,X,wolfr001,1,0,barrm003 grounds out. ,barrm003,0,G
+mordm001 scores. ,10,4,,,,,27,64,BX,wolfr001,1,1,Sacrifice bunt by delat001.,delat001,0,
+,12,4,,,,,28,68,CBCS,wolfr001,1,0,johnm002 strikes out. ,johnm002,0,
+,30,4,abreb001,,,,29,43,BBBB,johnm002,0,0,abreb001 walks. ,abreb001,1,
+abreb001 to 2B. ,12,4,roles001,abreb001,,,30,47,BCSX,johnm002,0,0,roles001 singles. ,roles001,1,
+abreb001 to 3B. roles001 to 2B. ,22,4,,roles001,abreb001,burrp001,31,52,FBFBB,johnm002,0,0,Wild Pitch. ,burrp001,1,
+abreb001 scores. roles001 to 2B. ,32,4,burrp001,roles001,,,32,58,FBFBBX,johnm002,0,1,burrp001 singles. ,burrp001,1,
+roles001 to 3B. burrp001 to 2B. ,32,4,lee-t002,burrp001,roles001,,33,64,FBCBBB,johnm002,0,0,lee-t002 walks. ,lee-t002,1,
+roles001 scores. burrp001 to 3B. lee-t002 to 2B. ,02,4,,lee-t002,burrp001,,34,67,FSX,johnm002,1,1,peret003 grounds out. ,peret003,1,G
+,02,4,,lee-t002,burrp001,,35,70,SSS,johnm002,1,0,print001 strikes out. ,print001,1,
+,12,4,,lee-t002,burrp001,,36,74,SSBX,johnm002,1,0,,wolfr001,1,F
+,00,5,guerw001,,,,37,69,X,wolfr001,0,0,guerw001 singles. ,guerw001,0,
+guerw001 to 2B. ,31,5,jonet004,guerw001,,,38,74,BCBBB,wolfr001,0,0,jonet004 walks. ,jonet004,0,
+guerw001 to 3B. ,10,5,,,guerw001,,39,76,BX,wolfr001,2,0,Double Play. ,seguf001,0,
+guerw001 scores. ,22,5,guerv001,,,,40,81,BCBFX,wolfr001,0,1,guerv001 singles. ,guerv001,0,
+guerv001 to 2B. ,32,5,vidrj001,guerv001,,,41,88,CFBBFBB,wolfr001,0,0,vidrj001 walks. ,vidrj001,0,
+guerv001 to 3B. vidrj001 to 2B. ,30,5,mordm001,vidrj001,guerv001,,42,92,BBBB,wolfr001,0,0,mordm001 walks. ,mordm001,0,
+,00,5,mordm001,vidrj001,guerv001,,43,93,X,wolfr001,1,0,barrm003 grounds out. ,barrm003,0,G
+,31,5,,,,,45,5,SBBBX,liraf001,1,0,,andem003,1,F
+,12,5,,,,,46,9,FBFX,liraf001,1,0,gland001 grounds out. ,gland001,1,G
+,12,5,,,,,47,13,SBFX,liraf001,1,0,abreb001 grounds out. ,abreb001,1,G
+,01,6,,,delat001,,48,95,CX,wolfr001,0,0,delat001 triples. ,delat001,0,
+delat001 scores. ,02,6,,coqut001,,,50,99,CCFX,wolfr001,0,1,coqut001 doubles. ,coqut001,0,
+coqut001 to 3B. ,02,6,,,coqut001,,51,103,CCFX,wolfr001,1,0,Sacrifice bunt by guerw001.,guerw001,0,
+coqut001 out. jonet004 to 1B. ,11,6,jonet004,,,,52,106,BFX,wolfr001,1,0,jonet004 hits into a fielder's choice. ,jonet004,0,
+,02,6,,,,seguf001,53,110,SFF1,wolfr001,1,0,jonet004 picked off. ,seguf001,0,
+,00,6,,,roles001,,55,1,X,santj001,0,0,roles001 triples. ,roles001,1,
+roles001 scores. ,22,6,burrp001,,,,56,6,BFCBX,santj001,0,1,burrp001 singles. ,burrp001,1,
+burrp001 to 2B. ,22,6,lee-t002,burrp001,,,57,12,BBFCFX,santj001,0,0,lee-t002 singles. ,lee-t002,1,
+lee-t002 to 2B. burrp001 out. ,11,6,peret003,lee-t002,,,58,15,LBX,santj001,1,0,peret003 reaches on fielder's choice. ,peret003,1,
+,10,6,,peret003,lee-t002,print001,59,17,BS,santj001,0,0,lee-t002 steals 3B. peret003 steals 2B. ,print001,1,
+lee-t002 scores. peret003 to 3B. ,11,6,,,peret003,print001,60,20,BS+2,santj001,0,1,Pickoff error. ,print001,1,
+,11,6,,,,print001,61,24,BS+2B,santj001,1,0,peret003 caught stealing. ,print001,1,
+,32,6,print001,,,,62,31,BS+2BBFX,santj001,0,0,print001 singles. ,print001,1,
+,00,6,print001,,,,64,32,X,santj001,1,0,,jordk001,1,F
+,32,7,,,,,67,6,FFBBBS,brocc001,1,0,seguf001 strikes out. ,seguf001,0,
+,00,7,guerv001,,,,68,7,X,brocc001,0,0,guerv001 singles. ,guerv001,0,
+,12,7,,,,,69,11,FBFX,brocc001,2,0,Double Play. ,vidrj001,0,
+,00,7,andem003,,,,72,1,X,spens003,0,0,andem003 singles. ,andem003,1,
+,22,7,,,,,73,6,CSBBX,spens003,2,0,Double Play. ,gland001,1,
+,22,7,,sefck001,,,74,12,BBFCFX,spens003,0,0,sefck001 doubles. ,sefck001,1,
+,32,7,roles001,sefck001,,,77,8,SFBFFBBB,motag001,0,0,roles001 walks. ,roles001,1,
+,12,7,roles001,sefck001,,,78,12,BCFS,motag001,1,0,burrp001 strikes out. ,burrp001,1,
+,12,8,,,,,81,4,CSBS,vosbe001,1,0,traca001 strikes out. ,traca001,0,
+,21,8,schnb001,,,,82,8,FBBX,vosbe001,0,0,schnb001 singles. ,schnb001,0,
+schnb001 to 2B. ,32,8,,schnb001,,,84,7,BFSBFBX,padiv001,1,0,delat001 grounds out. ,delat001,0,G
+schnb001 scores. ,00,8,,,,,85,8,X,padiv001,0,2,blumg001 homers. ,blumg001,0,
+,11,8,,,,,86,11,BFX,padiv001,1,0,,guerw001,0,F
+,32,8,,,,,91,6,CBBBCX,klins002,1,0,,lee-t002,1,F
+,02,8,,,,,92,11,CFFFX,klins002,1,0,peret003 grounds out. ,peret003,1,G
+,11,8,,,,,94,14,BFX,klins002,1,0,,huntb001,1,F
+,12,9,,jonet004,,,97,4,BCFX,gomew001,0,0,jonet004 doubles. ,jonet004,0,
+jonet004 to 3B. bergp001 to 1B. ,10,9,bergp001,,jonet004,,98,6,BX,gomew001,0,0,bergp001 hits into a fielder's choice. ,bergp001,0,
+,11,9,bergp001,,jonet004,,99,9,CBX,gomew001,1,0,,guerv001,0,P
+jonet004 scores. bergp001 to 2B. ,11,9,,bergp001,,vidrj001,100,12,FBB,gomew001,0,1,Wild Pitch. ,vidrj001,0,
+bergp001 to 3B. ,31,9,,,bergp001,,101,17,FBBBX,gomew001,1,0,vidrj001 grounds out. ,vidrj001,0,G
+,00,9,,,bergp001,,102,18,X,gomew001,1,0,traca001 grounds out. ,traca001,0,G
+,22,9,ariaa001,,,,107,19,BCBFH,klins002,0,0,ariaa001 hit by pitch. ,ariaa001,1,
+ariaa001 to 2B. ,00,9,andem003,ariaa001,,,108,20,X,klins002,0,0,andem003 singles. ,andem003,1,
+ariaa001 to 3B. andem003 to 2B. ,20,9,,andem003,ariaa001,,110,3,BBX,stris001,1,0,Sacrifice bunt by gland001.,gland001,1,
+ariaa001 scores. andem003 to 3B. ,11,9,,,andem003,,112,6,BCX,stris001,1,1,duceb001 hits sacrifice fly. ,duceb001,1,
+,32,9,,,andem003,,113,13,FCFBBBS,stris001,1,0,roles001 strikes out. ,roles001,1,

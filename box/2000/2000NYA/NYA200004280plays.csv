@@ -1,0 +1,73 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,01,1,stews002,,,,0,2,CX,coned001,0,0,stews002 singles. ,stews002,0,
+,10,1,stews002,,,,1,4,BX,coned001,1,0,,cruzj004,0,F
+stews002 out. ,11,1,mondr002,,,,2,7,CBX,coned001,1,0,mondr002 reaches on fielder's choice. ,mondr002,0,
+,01,1,,mondr002,,delgc001,3,9,CC,coned001,0,0,mondr002 steals 2B. ,delgc001,0,
+,12,1,,mondr002,,,4,13,CCBS,coned001,1,0,delgc001 strikes out. ,delgc001,0,
+,32,1,,,,,5,6,CBCBBX,escok001,1,0,,knobc001,1,F
+,10,1,,,,,6,8,BX,escok001,1,0,jeted001 grounds out. ,jeted001,1,G
+,10,1,,,,,7,10,BX,escok001,1,0,,oneip001,1,L
+,11,2,,,,,8,16,CBX,coned001,1,0,,fullb001,0,F
+,22,2,,,,,9,22,CBFBFS,coned001,1,0,batit001 strikes out. ,batit001,0,
+,22,2,,,,,10,27,BFFBX,coned001,1,0,fletd001 grounds out. ,fletd001,0,G
+,12,2,,,,,11,15,CFFBX,escok001,1,0,,willb002,1,L
+,00,2,,,,,12,16,X,escok001,1,0,,martt002,1,F
+,32,2,leder001,,,,13,23,BBFCFBB,escok001,0,0,leder001 walks. ,leder001,1,
+,10,2,,leder001,,posaj001,14,25,BS,escok001,0,0,leder001 steals 2B. ,posaj001,1,
+,32,2,,leder001,,,15,31,BSBBCC,escok001,1,0,posaj001 strikes out. ,posaj001,1,
+,32,3,gonza001,,,,16,35,FBCBBFFB,coned001,0,0,gonza001 walks. ,gonza001,0,
+,10,3,gonza001,,,,17,37,BX,coned001,1,0,,bushh001,0,P
+,02,3,gonza001,,,,18,40,CSX,coned001,1,0,,stews002,0,F
+,02,3,gonza001,,,,19,43,CSS,coned001,1,0,cruzj004 strikes out. ,cruzj004,0,
+,12,3,spens001,,,,20,36,BFCFX,escok001,0,0,spens001 singles. ,spens001,1,
+,02,3,spens001,,,,21,40,CCFS,escok001,1,0,bross001 strikes out. ,bross001,1,
+spens001 to 3B. knobc001 to 2B. ,12,3,,knobc001,spens001,,22,44,CFBX,escok001,0,0,knobc001 singles. ,knobc001,1,
+,32,3,jeted001,knobc001,spens001,,23,50,BFFBBB,escok001,0,0,jeted001 walks. ,jeted001,1,
+spens001 scores. knobc001 to 3B. jeted001 to 2B. ,11,3,oneip001,jeted001,knobc001,,24,53,CBX,escok001,0,1,oneip001 reaches on error. ,oneip001,1,G
+knobc001 scores. jeted001 scores. oneip001 to 3B. ,00,3,,willb002,oneip001,,25,54,X,escok001,0,2,willb002 doubles. ,willb002,1,
+oneip001 scores. willb002 to 3B. ,10,3,,,willb002,,26,56,BX,escok001,1,1,martt002 grounds out. ,martt002,1,G
+,00,3,,,willb002,,27,57,X,escok001,1,0,leder001 grounds out. ,leder001,1,G
+,10,4,,,,,28,45,BX,coned001,1,0,,mondr002,0,F
+,10,4,delgc001,,,,29,47,BX,coned001,0,0,delgc001 singles. ,delgc001,0,
+,01,4,delgc001,,,,30,49,CX,coned001,1,0,,fullb001,0,F
+,00,4,delgc001,,,,31,50,X,coned001,1,0,batit001 grounds out. ,batit001,0,G
+posaj001 out. ,32,4,,,,,32,64,BFBFBFX,escok001,1,0,posaj001 singles. ,posaj001,1,
+,32,4,,,,,33,71,FBFFBBS,escok001,1,0,spens001 strikes out. ,spens001,1,
+,22,4,bross001,,,,34,76,CBBFX,escok001,0,0,bross001 reaches on error. ,bross001,1,
+,22,4,bross001,,,,35,81,BBCFC,escok001,1,0,knobc001 strikes out. ,knobc001,1,
+,11,5,,,,,36,53,FBX,coned001,1,0,fletd001 grounds out. ,fletd001,0,G
+,01,5,gonza001,,,,37,55,SX,coned001,0,0,gonza001 singles. ,gonza001,0,
+,21,5,,,,,38,59,BCBX,coned001,2,0,Double Play. ,bushh001,0,
+,11,5,jeted001,,,,39,84,BFX,escok001,0,0,jeted001 singles. ,jeted001,1,
+,20,5,,,,,40,87,BBX,escok001,2,0,Double Play. ,oneip001,1,
+,02,5,,,,,41,90,FFC,escok001,1,0,willb002 strikes out. ,willb002,1,
+,01,6,,,,,42,61,CX,coned001,1,0,,stews002,0,F
+,30,6,cruzj004,,,,43,65,BBBB,coned001,0,0,cruzj004 walks. ,cruzj004,0,
+,21,6,cruzj004,,,,44,69,BBCX,coned001,1,0,,mondr002,0,P
+,32,6,cruzj004,,,,45,76,CSBBFBS,coned001,1,0,delgc001 strikes out. ,delgc001,0,
+,01,6,,,,,46,92,CX,escok001,1,0,,martt002,1,F
+,11,6,,,,,47,95,BFX,escok001,1,0,,leder001,1,F
+,21,6,,,,,48,99,BSBX,escok001,0,1,posaj001 homers. ,posaj001,1,
+,31,6,spens001,,,,49,104,FBBBB,escok001,0,0,spens001 walks. ,spens001,1,
+spens001 to 2B. ,00,6,bross001,spens001,,,50,105,X,escok001,0,0,bross001 singles. ,bross001,1,
+spens001 to 3B. bross001 out. ,22,6,knobc001,,spens001,,51,110,BCBFX,escok001,1,0,knobc001 reaches on fielder's choice. ,knobc001,1,
+,11,7,,,,,52,79,BFX,coned001,1,0,,fullb001,0,F
+,22,7,,,,,53,84,BCFBS,coned001,1,0,batit001 strikes out. ,batit001,0,
+,01,7,,,,,54,86,SX,coned001,1,0,,fletd001,0,
+,00,7,,,jeted001,,56,1,X,gunde001,0,0,jeted001 triples. ,jeted001,1,
+,11,7,,,jeted001,,57,4,CBX,gunde001,1,0,oneip001 grounds out. ,oneip001,1,G
+,30,7,willb002,,jeted001,,58,8,IIII,gunde001,0,0,willb002 intentionally walks. ,willb002,1,
+willb002 to 2B. ,21,7,martt002,willb002,jeted001,,59,12,BBFH,gunde001,0,0,martt002 hit by pitch. ,martt002,1,
+jeted001 scores. ,11,7,martt002,willb002,,,60,15,SBX,gunde001,1,1,leder001 hits sacrifice fly. ,leder001,1,
+,10,7,martt002,willb002,,,61,17,BX,gunde001,1,0,,posaj001,1,F
+,12,8,,,,,63,4,CCBS,nelsj001,1,0,gonza001 strikes out. ,gonza001,0,
+,22,8,,,,,64,10,CFBFBX,nelsj001,1,0,,bushh001,0,F
+,32,8,,,,,65,17,SBSFBBX,nelsj001,1,0,stews002 grounds out. ,stews002,0,G
+,02,8,,,,,68,3,CCX,frasj001,1,0,,spens001,1,L
+,21,8,,,,,69,7,FBBX,frasj001,1,0,,bross001,1,F
+,12,8,,,,,70,11,BCFX,frasj001,1,0,knobc001 grounds out. ,knobc001,1,G
+,12,9,cruzj004,,,,72,4,BFFX,stanm003,0,0,cruzj004 reaches on error. ,cruzj004,0,G
+cruzj004 to 2B. ,01,9,mondr002,cruzj004,,,73,6,CH,stanm003,0,0,mondr002 hit by pitch. ,mondr002,0,
+,32,9,mondr002,cruzj004,,,74,12,CBBSBS,stanm003,1,0,delgc001 strikes out. ,delgc001,0,
+,02,9,mondr002,cruzj004,,,75,15,CFS,stanm003,1,0,fullb001 strikes out. ,fullb001,0,
+,10,9,mondr002,cruzj004,,,76,17,BX,stanm003,1,0,batit001 grounds out. ,batit001,0,G

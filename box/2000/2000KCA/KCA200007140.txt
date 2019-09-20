@@ -1,0 +1,141 @@
+version,2
+info,visteam,MIL
+info,hometeam,KCA
+info,site,KAN06
+info,date,2000/07/14
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,randt901
+info,ump1b,monte901
+info,ump2b,drakr901
+info,ump3b,barrt901
+info,pitches,pitches
+info,temp,93
+info,winddir,ltor
+info,windspeed,6
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,164
+info,attendance,29473
+info,wp,damij001
+info,lp,suzum001
+info,save,
+start,bellr002,"Ron Belliard",0,1,4
+start,grism001,"Marquis Grissom",0,2,8
+start,jenkg001,"Geoff Jenkins",0,3,7
+start,burnj001,"Jeromy Burnitz",0,4,9
+start,hayec001,"Charlie Hayes",0,5,5
+start,houst001,"Tyler Houston",0,6,3
+start,hernj001,"Jose Hernandez",0,7,6
+start,casar001,"Raul Casanova",0,8,10
+start,blanh001,"Henry Blanco",0,9,2
+start,damij001,"Jeff D'Amico",0,0,1
+start,damoj001,"Johnny Damon",1,1,8
+start,reboj001,"Jeff Reboulet",1,2,4
+start,sweem002,"Mike Sweeney",1,3,10
+start,dye-j001,"Jermaine Dye",1,4,9
+start,quinm001,"Mark Quinn",1,5,7
+start,randj002,"Joe Randa",1,6,5
+start,mccad001,"David McCarty",1,7,3
+start,fabrj001,"Jorge Fabregas",1,8,2
+start,sancr001,"Rey Sanchez",1,9,6
+start,suzum001,"Mac Suzuki",1,0,1
+play,1,0,bellr002,00,X,53/G
+play,1,0,grism001,12,FSFBS,K
+play,1,0,jenkg001,31,BBBCX,D8/8D
+play,1,0,burnj001,11,BSX,43/G
+play,1,1,damoj001,21,BBFX,43/G
+play,1,1,reboj001,32,SBBBFX,9/F9
+play,1,1,sweem002,10,BX,9/F9D
+play,2,0,hayec001,21,BFBX,4/P4
+play,2,0,houst001,20,BBX,S8
+play,2,0,hernj001,32,CBBFFBFB,W.1-2
+play,2,0,casar001,02,CSS,K
+play,2,0,blanh001,00,X,7/F7
+play,2,1,dye-j001,32,BBBFCX,4/P4
+play,2,1,quinm001,31,BCBBB,W
+play,2,1,randj002,01,CX,46(1)3/GDP
+play,3,0,bellr002,00,,NP
+sub,dunwt001,"Todd Dunwoody",1,1,8
+com,"not clear why early sub"
+play,3,0,bellr002,00,X,63/G
+play,3,0,grism001,21,BBFX,9/F9D
+play,3,0,jenkg001,02,FSX,7/F7D
+play,3,1,mccad001,12,CBFC,K/C
+play,3,1,fabrj001,12,CCBX,3/G
+play,3,1,sancr001,12,CCBS,K
+play,4,0,burnj001,32,FBBBSX,31/G
+play,4,0,hayec001,11,FBX,S/78
+play,4,0,houst001,20,BBX,7/FL.1-2
+play,4,0,hernj001,01,SB,WP.2-3
+play,4,0,hernj001,11,SBX,D9.3-H
+play,4,0,casar001,00,X,S9.2-H;BX2(926)
+play,4,1,dunwt001,10,BX,43/G
+play,4,1,reboj001,02,FCFS,K
+play,4,1,sweem002,00,X,S7
+play,4,1,dye-j001,01,FX,6/P6
+play,5,0,blanh001,00,X,7/F7D
+play,5,0,bellr002,31,BBBCX,D7/7D
+play,5,0,grism001,00,,NP
+sub,lopel002,"Luis Lopez",0,1,12
+play,5,0,grism001,32,BBFSFBFX,8/F8
+play,5,0,jenkg001,01,SX,31/G
+play,5,1,quinm001,00,,NP
+sub,lopel002,"Luis Lopez",0,1,4
+play,5,1,quinm001,10,BX,S9
+play,5,1,randj002,11,CBB,WP.1-2
+play,5,1,randj002,22,CBBFX,8/F8.2-3
+play,5,1,mccad001,01,FX,3/FL
+play,5,1,fabrj001,32,BBBCCFX,3/G
+play,6,0,burnj001,00,X,8/F8
+play,6,0,hayec001,22,BBFCX,D9
+play,6,0,houst001,11,BSX,S.2-2
+play,6,0,hernj001,10,BX,8/F8.2-3
+play,6,0,casar001,10,BX,9/L9
+play,6,1,sancr001,00,X,D7/7S
+play,6,1,dunwt001,00,X,7/F7
+play,6,1,reboj001,32,BCCFFBBC,K/C
+play,6,1,sweem002,31,CBBBB,W
+play,6,1,dye-j001,32,BCBFBFX,8/F8D
+play,7,0,blanh001,21,BCBX,S8
+play,7,0,lopel002,00,X,13/SH.1-2
+play,7,0,grism001,32,CBBFBFB,W
+play,7,0,jenkg001,00,X,46(1)3/GDP
+play,7,1,quinm001,00,X,7/F7
+play,7,1,randj002,32,BFBBFX,E5/G
+play,7,1,mccad001,00,X,7/F7D
+play,7,1,fabrj001,11,BFX,7/F7
+play,8,0,burnj001,00,,NP
+sub,santj002,"Jose Santiago",1,0,1
+play,8,0,burnj001,00,X,9/F9D
+play,8,0,hayec001,21,BBCX,S/78
+play,8,0,houst001,12,BFFFC,K/C
+play,8,0,hernj001,01,CX,HR/9.1-H
+play,8,0,casar001,01,FX,9/L9
+play,8,1,sancr001,00,,NP
+sub,leskc001,"Curtis Leskanic",0,0,1
+play,8,1,sancr001,11,BCX,31/G
+play,8,1,dunwt001,00,X,S8
+play,8,1,reboj001,00,,NP
+sub,poses001,"Scott Pose",1,2,11
+play,8,1,poses001,12,BFSX,7/F7
+play,8,1,sweem002,22,BCFBX,43/G
+play,9,0,blanh001,00,,NP
+sub,ordal001,"Luis Ordaz",1,2,4
+play,9,0,blanh001,00,X,53/G
+play,9,0,lopel002,11,BFX,S7
+play,9,0,grism001,21,BFBX,8/F8
+play,9,0,jenkg001,11,SBX,7/F7
+play,9,1,dye-j001,00,,NP
+sub,acevj001,"Juan Acevedo",0,0,1
+play,9,1,dye-j001,32,BCBBFX,53/G
+play,9,1,quinm001,01,CX,9/F9
+play,9,1,randj002,11,FBX,8/F8
+data,er,damij001,0
+data,er,leskc001,0
+data,er,acevj001,0
+data,er,suzum001,2
+data,er,santj002,2

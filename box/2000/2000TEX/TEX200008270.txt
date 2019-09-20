@@ -1,0 +1,138 @@
+version,2
+info,visteam,TOR
+info,hometeam,TEX
+info,site,ARL02
+info,date,2000/08/27
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,mcclt901
+info,ump1b,higgs901
+info,ump2b,cuzzp901
+info,ump3b,schrp901
+info,pitches,pitches
+info,temp,95
+info,winddir,rtol
+info,windspeed,15
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,180
+info,attendance,21896
+info,wp,tracs001
+info,lp,hellr001
+info,save,kochb001
+start,stews002,"Shannon Stewart",0,1,7
+start,gonza001,"Alex S. Gonzalez",0,2,6
+start,martd002,"Dave Martinez",0,3,9
+start,delgc001,"Carlos Delgado",0,4,3
+start,fullb001,"Brad Fullmer",0,5,10
+start,batit001,"Tony Batista",0,6,5
+start,fletd001,"Darrin Fletcher",0,7,2
+start,cruzj004,"Jose Cruz",0,8,8
+start,moram001,"Mickey Morandini",0,9,4
+start,tracs001,"Steve Trachsel",0,0,1
+start,cataf001,"Frank Catalanotto",1,1,4
+start,curtc001,"Chad Curtis",1,2,10
+start,greer001,"Rusty Greer",1,3,7
+start,palmr001,"Rafael Palmeiro",1,4,3
+start,kaplg001,"Gabe Kapler",1,5,8
+start,leder001,"Ricky Ledee",1,6,9
+start,haseb001,"Bill Haselman",1,7,2
+start,lambm001,"Mike Lamb",1,8,5
+start,clayr001,"Royce Clayton",1,9,6
+start,hellr001,"Rick Helling",1,0,1
+play,1,0,stews002,12,BCCX,8/F8
+play,1,0,gonza001,00,X,3/G
+play,1,0,martd002,22,BBCFFX,S8
+play,1,0,delgc001,12,CFBX,8/F8D
+play,1,1,cataf001,12,BCFC,K/C
+play,1,1,curtc001,12,CBSX,D7/7D
+play,1,1,greer001,30,BBBB,W
+play,1,1,palmr001,20,BBX,9/F9S
+play,1,1,kaplg001,00,X,S8.2-H;1-3
+play,1,1,leder001,32,BBBCFX,7/F7S
+play,2,0,fullb001,21,BCBX,3/G
+play,2,0,batit001,22,FBBSS,K
+play,2,0,fletd001,20,BBX,HR/9
+play,2,0,cruzj004,22,FBFBC,K/C
+play,2,1,haseb001,32,CCBBBFS,K
+play,2,1,lambm001,30,BBBB,W
+play,2,1,clayr001,12,CSBX,S7.1-2
+play,2,1,cataf001,00,X,64(1)/FO.2-3
+play,2,1,curtc001,32,CBFBBS,K
+play,3,0,moram001,12,CBFS,K
+play,3,0,stews002,10,BX,HR/7
+play,3,0,gonza001,11,BSX,S8/8S
+play,3,0,martd002,21,BCBX,8/F8
+play,3,0,delgc001,32,FBBBFB,W.1-2
+play,3,0,fullb001,12,CBFX,S8/8S.2-3;1-2
+play,3,0,batit001,12,BFFX,6/P6
+play,3,1,greer001,22,CBBCFX,7/F7
+play,3,1,palmr001,21,BFBX,3/P3
+play,3,1,kaplg001,00,X,9/F9S
+play,4,0,fletd001,22,BCBCFX,HR/9
+play,4,0,cruzj004,11,CBX,D9
+play,4,0,moram001,00,X,S.2-3
+play,4,0,stews002,21,BSBX,8/SF.3-H
+play,4,0,gonza001,00,X,16(1)3/GDP
+play,4,1,leder001,11,FBX,S9
+play,4,1,haseb001,32,BCBBSFS,K+SB2
+play,4,1,lambm001,20,BBX,5/FL
+play,4,1,clayr001,11,BCX,43/G
+play,5,0,martd002,00,X,S9
+play,5,0,delgc001,32,BBBCFFX,3/G.1-2
+play,5,0,fullb001,22,BFFBC,K+SB3/C
+play,5,0,batit001,32,FBBBFFFX,6/P6
+play,5,1,cataf001,02,CSX,53/G
+play,5,1,curtc001,32,BFCBBFFX,7/F7D
+play,5,1,greer001,32,BBFFBFX,S7
+play,5,1,palmr001,30,BBBX,HR/9.1-H
+play,5,1,kaplg001,12,FSFBX,53/G
+play,6,0,fletd001,00,X,9/L9
+play,6,0,cruzj004,00,X,1/G
+play,6,0,moram001,20,BBX,4/P4
+play,6,1,leder001,22,CFBBX,8/F8D
+play,6,1,haseb001,01,CX,7/L7
+play,6,1,lambm001,12,BCCX,1/L1
+play,7,0,stews002,10,BX,S9
+play,7,0,gonza001,00,X,13/SH.1-2
+play,7,0,martd002,32,BCBBCC,K/C
+play,7,0,delgc001,30,BBII,IW
+play,7,0,fullb001,10,BX,9/F9
+play,7,1,clayr001,00,,NP
+sub,escok001,"Kelvim Escobar",0,0,1
+play,7,1,clayr001,10,BX,9/F9
+play,7,1,cataf001,12,CFBS,K
+play,7,1,curtc001,12,CBSS,K
+play,8,0,batit001,02,CSFX,7/F7
+play,8,0,fletd001,10,BX,HR/9
+play,8,0,cruzj004,10,BX,HR/9
+play,8,0,moram001,31,BBCBB,W
+play,8,0,stews002,00,,NP
+sub,crabt001,"Tim Crabtree",1,0,1
+play,8,0,stews002,00,X,16(1)3/GDP
+play,8,1,greer001,02,SCS,K
+play,8,1,palmr001,00,X,63/G
+play,8,1,kaplg001,21,FBBX,D9
+play,8,1,leder001,32,CBFBBX,S8.2-H
+play,8,1,haseb001,02,CFB,SB2
+play,8,1,haseb001,22,CFBBX,7/F7
+play,9,0,gonza001,02,CFFX,S8
+play,9,0,martd002,00,,NP
+sub,venam002,"Mike Venafro",1,0,1
+play,9,0,martd002,00,X,S7.1-2
+play,9,0,delgc001,00,X,6/L6
+play,9,0,fullb001,11,BFX,6(B)6(2)/LDP
+play,9,1,lambm001,00,,NP
+sub,kochb001,"Billy Koch",0,0,1
+play,9,1,lambm001,01,CX,3/G
+play,9,1,clayr001,32,BBCBFFX,8/F8
+play,9,1,cataf001,01,CX,63/G
+data,er,tracs001,3
+data,er,escok001,1
+data,er,kochb001,0
+data,er,hellr001,6
+data,er,crabt001,0
+data,er,venam002,0

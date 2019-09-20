@@ -1,0 +1,165 @@
+version,2
+info,visteam,OAK
+info,hometeam,CLE
+info,site,CLE08
+info,date,2000/04/20
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,hudsm901
+info,ump1b,fichm901
+info,ump2b,scotd901
+info,ump3b,cedeg901
+info,pitches,pitches
+info,temp,64
+info,winddir,ltor
+info,windspeed,9
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,211
+info,attendance,42134
+info,wp,burbd001
+info,lp,hudst001
+info,save,
+start,chrir001,"Ryan Christenson",0,1,8
+start,tejam001,"Miguel Tejada",0,2,6
+start,staim001,"Matt Stairs",0,3,9
+start,jahaj001,"John Jaha",0,4,10
+start,saeno001,"Olmedo Saenz",0,5,3
+start,grieb001,"Ben Grieve",0,6,7
+start,chave001,"Eric Chavez",0,7,5
+start,fasas001,"Sal Fasano",0,8,2
+start,velaj001,"Jorge Velandia",0,9,4
+start,hudst001,"Tim Hudson",0,0,1
+start,loftk001,"Kenny Lofton",1,1,8
+start,wilse001,"Enrique Wilson",1,2,6
+start,alomr001,"Roberto Alomar",1,3,4
+start,ramim002,"Manny Ramirez",1,4,9
+start,thomj002,"Jim Thome",1,5,3
+start,justd001,"David Justice",1,6,10
+start,frymt001,"Travis Fryman",1,7,5
+start,cruzj003,"Jacob Cruz",1,8,7
+start,diaze002,"Einar Diaz",1,9,2
+start,burbd001,"Dave Burba",1,0,1
+com,"1:42 rain delay in the sixth inning"
+play,1,0,chrir001,22,BCBFX,63/G
+play,1,0,tejam001,10,BX,S8
+play,1,0,staim001,11,BSB,WP.1-2
+play,1,0,staim001,32,BSBBCS,K
+play,1,0,jahaj001,02,CSFS,K
+play,1,1,loftk001,21,BBCX,HR/8
+play,1,1,wilse001,20,BBX,31/G
+play,1,1,alomr001,22,BBCCX,D8/8D
+play,1,1,ramim002,32,BBFBSFS,K
+play,1,1,thomj002,21,FBBC,SB3
+play,1,1,thomj002,32,FBBCBX,HR/8.3-H
+play,1,1,justd001,22,BFBSX,8/F8D
+play,2,0,saeno001,00,X,D8/8D
+play,2,0,grieb001,21,CBBX,S7/7S.2-3
+play,2,0,chave001,22,BBSSS,K
+play,2,0,fasas001,02,CSFX,9/SF.3-H
+play,2,0,velaj001,00,X,D9.1-H
+play,2,0,chrir001,02,CSS,K
+play,2,1,frymt001,10,BX,8/F8
+play,2,1,cruzj003,32,BCBSFBS,K
+play,2,1,diaze002,12,CCBS,K
+play,3,0,tejam001,21,BCBX,63/G
+play,3,0,staim001,31,CBBBX,D9
+play,3,0,jahaj001,02,CSS,K
+play,3,0,saeno001,22,BBSSC,K/C
+play,3,1,loftk001,32,BFBFBB,W
+play,3,1,wilse001,31,BCBBX,S8.1-2
+play,3,1,alomr001,00,2,POCS3(156)
+play,3,1,alomr001,01,2CX,S9.1-3
+play,3,1,ramim002,00,,NP
+sub,mahar001,"Ron Mahay",0,0,1
+play,3,1,ramim002,21,BBCX,53/G.3-H;1-2
+play,3,1,thomj002,32,SBBBSB,W
+play,3,1,justd001,01,CX,5/FL
+play,4,0,grieb001,00,X,43/G
+play,4,0,chave001,31,CBBBB,W
+play,4,0,fasas001,32,FSBBBB,W.1-2
+play,4,0,velaj001,00,X,4/P4
+play,4,0,chrir001,22,BBCSS,K
+play,4,1,frymt001,21,CBBX,3/FL
+play,4,1,cruzj003,11,CBX,S9/9S
+play,4,1,diaze002,12,FSBX,D7/7S.1-3
+play,4,1,loftk001,22,CCBBX,9/SF.3-H;2-3
+play,4,1,wilse001,12,FCBX,D7/7D.3-H
+play,4,1,alomr001,12,BCFX,9/F9S
+play,5,0,tejam001,10,BX,53/G
+play,5,0,staim001,22,BCCBS,K
+play,5,0,jahaj001,22,FBBCS,K
+play,5,1,ramim002,01,CX,9/F9D
+play,5,1,thomj002,32,CSBBBX,8/F8
+play,5,1,justd001,21,FBBX,D9
+play,5,1,frymt001,02,SFB,WP.2-3
+play,5,1,frymt001,22,SFBBFFS,K
+play,6,0,saeno001,00,,NP
+sub,kamis001,"Scott Kamieniecki",1,0,1
+play,6,0,saeno001,10,BX,S7/7S
+play,6,0,grieb001,21,BSBX,46(1)3/GDP
+play,6,0,chave001,21,BBFX,S8
+play,6,0,fasas001,31,BCBBX,S7.1-2
+play,6,0,velaj001,00,,NP
+sub,giamj002,"Jeremy Giambi",0,9,11
+play,6,0,giamj002,32,BCBBSFB,W.2-3;1-2
+play,6,0,chrir001,32,BBCBSX,1/L1
+play,6,1,cruzj003,00,,NP
+sub,menef001,"Frank Menechino",0,9,4
+play,6,1,cruzj003,22,CCBBX,5/P5
+play,6,1,diaze002,12,SBCFX,S/78
+play,6,1,loftk001,12,FBCS,K
+play,6,1,wilse001,01,CX,9/L9
+play,7,0,tejam001,10,BX,S9/9S
+play,7,0,staim001,11,BFX,HR/9.1-H
+play,7,0,jahaj001,12,CSBS,K
+play,7,0,saeno001,12,BFSX,S8
+play,7,0,grieb001,00,,NP
+sub,rincr001,"Ricardo Rincon",1,0,1
+play,7,0,grieb001,12,CBFS,K
+play,7,0,chave001,02,CCS,K
+play,7,1,alomr001,31,BBBCX,S5/BG5
+play,7,1,ramim002,00,,NP
+sub,matht002,"T.J. Mathews",0,0,1
+play,7,1,ramim002,00,X,HR/8.1-H
+play,7,1,thomj002,02,CSX,S9
+play,7,1,justd001,00,X,9/F9D
+play,7,1,frymt001,11,BCX,S/89S.1-3
+play,7,1,cruzj003,12,SCFBX,3/G.3-H;1-2
+play,7,1,diaze002,11,BCX,53/G
+play,8,0,fasas001,00,,NP
+sub,shuep001,"Paul Shuey",1,0,1
+play,8,0,fasas001,21,CBBX,S
+play,8,0,menef001,00,X,54(1)/FO.B-2(E4/TH1)
+play,8,0,chrir001,00,,NP
+sub,beckr002,"Rich Becker",0,1,11
+play,8,0,beckr002,12,CFFBX,S7.2-H(UR)
+play,8,0,tejam001,10,BX,9/F9
+play,8,0,staim001,32,SSBBBFB,W.1-2
+play,8,0,jahaj001,22,BBCSS,K
+play,8,1,loftk001,00,,NP
+sub,beckr002,"Rich Becker",0,1,8
+play,8,1,loftk001,32,CBFFBBFFFFX,8/F8
+play,8,1,wilse001,02,CFFX,5/FL
+play,8,1,alomr001,32,BCSBFFBB,W
+play,8,1,ramim002,00,X,53/G
+play,9,0,saeno001,00,,NP
+sub,karss001,"Steve Karsay",1,0,1
+play,9,0,saeno001,21,BFBX,63/G
+play,9,0,grieb001,22,CBFBC,K/C
+play,9,0,chave001,01,SX,S9
+play,9,0,fasas001,10,BX,S9.1-2
+play,9,0,menef001,00,,NP
+sub,giamj001,"Jason Giambi",0,9,11
+play,9,0,giamj001,02,CCS,K
+data,er,hudst001,4
+data,er,mahar001,3
+data,er,matht002,2
+data,er,burbd001,2
+data,er,kamis001,2
+data,er,rincr001,0
+data,er,shuep001,0
+data,er,karss001,0

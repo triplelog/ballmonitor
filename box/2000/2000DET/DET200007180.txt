@@ -1,0 +1,148 @@
+version,2
+info,visteam,CIN
+info,hometeam,DET
+info,site,DET05
+info,date,2000/07/18
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,dimum901
+info,ump1b,gormb901
+info,ump2b,everm901
+info,ump3b,crawj901
+info,pitches,pitches
+info,temp,72
+info,winddir,ltor
+info,windspeed,12
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,184
+info,attendance,38255
+info,wp,desse001
+info,lp,moehb001
+info,save,gravd001
+start,stync001,"Chris Stynes",0,1,5
+start,larkb001,"Barry Larkin",0,2,6
+start,grifk002,"Ken Griffey",0,3,8
+start,bichd001,"Dante Bichette",0,4,9
+start,cases001,"Sean Casey",0,5,3
+start,yound001,"Dmitri Young",0,6,10
+start,ochoa001,"Alex Ochoa",0,7,7
+start,taube001,"Eddie Taubensee",0,8,2
+start,reesp001,"Pokey Reese",0,9,4
+start,desse001,"Elmer Dessens",0,0,1
+start,polol001,"Luis Polonia",1,1,10
+start,beckr002,"Rich Becker",1,2,9
+start,higgb001,"Bobby Higginson",1,3,7
+start,palmd002,"Dean Palmer",1,4,5
+start,cruzd001,"Deivi Cruz",1,5,6
+start,encaj001,"Juan Encarnacion",1,6,8
+start,ausmb001,"Brad Ausmus",1,7,2
+start,easld001,"Damion Easley",1,8,4
+start,halts001,"Shane Halter",1,9,3
+start,moehb001,"Brian Moehler",1,0,1
+play,1,0,stync001,21,CBBX,D7/7D
+play,1,0,larkb001,10,BX,43/G.2-3
+play,1,0,grifk002,22,BFBSS,K
+play,1,0,bichd001,00,X,S9.3-H
+play,1,0,cases001,10,BX,S8.1-2
+play,1,0,yound001,22,BSSFBFX,S9.2-H;1-3
+play,1,0,ochoa001,22,BBCFX,13/G
+play,1,1,polol001,11,CBX,63/G
+play,1,1,beckr002,12,CBFX,13/G
+play,1,1,higgb001,00,X,13/G
+play,2,0,taube001,02,CFC,K/C
+play,2,0,reesp001,02,CFFX,4/P4
+play,2,0,stync001,11,CBX,S9
+play,2,0,larkb001,32,CFFFBBBX,S9/9S.1-3
+play,2,0,grifk002,11,CBX,4/L4
+play,2,1,palmd002,21,CBBX,9/F9
+play,2,1,cruzd001,11,SBX,S7
+play,2,1,encaj001,12,BCFX,43/G.1-2
+play,2,1,ausmb001,32,BFBBCB,W
+play,2,1,easld001,22,FSBBX,64(1)/FO.2-3
+play,3,0,bichd001,11,BSX,3/L3
+play,3,0,cases001,02,CCX,43/G
+play,3,0,yound001,10,BX,HR/9
+play,3,0,ochoa001,10,BX,53/G
+play,3,1,halts001,10,BX,63/G
+play,3,1,polol001,31,BFBBB,W
+play,3,1,beckr002,31,BBCBB,W.1-2
+play,3,1,higgb001,20,BBX,D9/9S.2-H;1-3
+play,3,1,palmd002,10,BX,4/P4
+play,3,1,cruzd001,01,CX,13/G
+play,4,0,taube001,11,CBX,43/G
+play,4,0,reesp001,22,BCSBFC,K/C
+play,4,0,stync001,22,FBFBC,K/C
+play,4,1,encaj001,00,H,HP
+play,4,1,ausmb001,11,BCX,D9.1-H
+play,4,1,easld001,11,BCX,S8.2-H
+play,4,1,halts001,10,BX,1(B)3(1)/FDP
+play,4,1,polol001,22,BLBFFX,S9.B-2(E9)
+play,4,1,beckr002,11,BCX,8/F8
+play,5,0,larkb001,12,SFBX,13/G
+play,5,0,grifk002,11,FBX,7/F7
+play,5,0,bichd001,02,CCX,S
+play,5,0,cases001,22,CSBBX,3/G
+play,5,1,higgb001,32,BCBBFX,9/L9
+play,5,1,palmd002,21,CBBX,63/G
+play,5,1,cruzd001,02,CCX,S8
+play,5,1,encaj001,00,X,4/P4
+play,6,0,yound001,00,X,S8
+play,6,0,ochoa001,22,FBCBX,S7.1-2
+play,6,0,taube001,00,X,46(1)3/GDP.2-3
+play,6,0,reesp001,22,SSBBX,D7.3-H
+play,6,0,stync001,31,BBFBX,S7.2-H;BX2(7534)
+play,6,1,ausmb001,00,X,S9
+play,6,1,easld001,12,CFBX,53/G.1-2
+play,6,1,halts001,01,CX,63/G
+play,6,1,polol001,00,,NP
+sub,reyed001,"Dennys Reyes",0,0,1
+play,6,1,polol001,10,BX,D7.2-H
+play,6,1,beckr002,12,CBSS,K
+play,7,0,larkb001,00,,NP
+sub,pattd001,"Danny Patterson",1,0,1
+play,7,0,larkb001,00,X,S9
+play,7,0,grifk002,00,X,S.1-2
+play,7,0,bichd001,32,CFFBBFBX,7/F7
+play,7,0,cases001,11,FBX,46(1)3/GDP
+play,7,1,higgb001,32,BFBCFBS,K
+play,7,1,palmd002,00,,NP
+sub,sulls001,"Scott Sullivan",0,0,1
+play,7,1,palmd002,12,BSFFS,K
+play,7,1,cruzd001,00,X,63/G
+play,8,0,yound001,11,FBX,53/G
+play,8,0,ochoa001,32,FBSBFBFB,W
+play,8,0,taube001,10,BX,S9.1-2
+play,8,0,reesp001,02,CSX,54(1)3/GDP
+play,8,1,encaj001,00,X,S7/7S
+play,8,1,ausmb001,12,CLBS,K
+play,8,1,easld001,02,CSS,K
+play,8,1,halts001,00,,NP
+sub,macij001,"Jose Macias",1,9,11
+play,8,1,macij001,12,BFFFS,K23
+play,9,0,stync001,00,,NP
+sub,munse001,"Eric Munson",1,9,3
+play,9,0,stync001,00,,NP
+sub,andem002,"Matt Anderson",1,0,1
+play,9,0,stync001,02,CSX,63/G
+com,"Debut game for Eric Munson"
+play,9,0,larkb001,00,X,43/G
+play,9,0,grifk002,22,BCFBFFX,3/G
+play,9,1,polol001,00,,NP
+sub,castj004,"Juan Castro",0,1,5
+play,9,1,polol001,00,,NP
+sub,gravd001,"Danny Graves",0,0,1
+play,9,1,polol001,01,CX,43/G
+play,9,1,beckr002,00,X,63/G
+play,9,1,higgb001,11,CBX,S
+play,9,1,palmd002,01,CX,9/F9
+data,er,desse001,4
+data,er,reyed001,0
+data,er,sulls001,0
+data,er,gravd001,0
+data,er,moehb001,5
+data,er,pattd001,0
+data,er,andem002,0

@@ -1,0 +1,156 @@
+version,2
+info,visteam,OAK
+info,hometeam,TEX
+info,site,ARL02
+info,date,2000/05/07
+info,number,0
+info,starttime,2:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,culbf901
+info,ump1b,welkb901
+info,ump2b,froeb901
+info,ump3b,wintm901
+info,pitches,pitches
+info,temp,87
+info,winddir,fromrf
+info,windspeed,23
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,201
+info,attendance,39368
+info,wp,olivo001
+info,lp,david002
+info,save,joned001
+start,longt002,"Terrence Long",0,1,8
+start,tejam001,"Miguel Tejada",0,2,6
+start,giamj001,"Jason Giambi",0,3,10
+start,saeno001,"Olmedo Saenz",0,4,3
+start,grieb001,"Ben Grieve",0,5,7
+start,giamj002,"Jeremy Giambi",0,6,9
+start,menef001,"Frank Menechino",0,7,4
+start,chave001,"Eric Chavez",0,8,5
+start,fasas001,"Sal Fasano",0,9,2
+start,olivo001,"Omar Olivares",0,0,1
+start,clayr001,"Royce Clayton",1,1,6
+start,alicl001,"Luis Alicea",1,2,4
+start,rodri001,"Ivan Rodriguez",1,3,2
+start,palmr001,"Rafael Palmeiro",1,4,10
+start,segud001,"David Segui",1,5,3
+start,mater001,"Ruben Mateo",1,6,8
+start,curtc001,"Chad Curtis",1,7,7
+start,lambm001,"Mike Lamb",1,8,5
+start,mcdoj002,"Jason McDonald",1,9,9
+start,david002,"Doug Davis",1,0,1
+play,1,0,longt002,11,BCX,D/78
+play,1,0,tejam001,32,BBFSFFBFFFX,63/G
+play,1,0,giamj001,30,BBBB,W
+play,1,0,saeno001,31,CBBBB,W.2-3;1-2
+play,1,0,grieb001,32,CBBCBB,W.3-H;2-3;1-2
+play,1,0,giamj002,10,BX,S9/9S.3-H;2-3;1-2
+play,1,0,menef001,21,CBBX,46(1)/FO.3-H;2-3
+play,1,0,chave001,01,CX,8/F8
+play,1,1,clayr001,10,BX,43/G
+play,1,1,alicl001,10,BX,S9
+play,1,1,rodri001,22,CFBBS,K
+play,1,1,palmr001,22,BFBFC,K/C
+play,2,0,fasas001,31,CBBBB,W
+play,2,0,longt002,02,CSFX,S9.1-2
+play,2,0,tejam001,00,X,8/F8D
+play,2,0,giamj001,02,CCFFC,K/C
+play,2,0,saeno001,01,FB,WP.2-3;1-2
+play,2,0,saeno001,12,FBSS,K
+play,2,1,segud001,11,CBX,E3/TH1
+play,2,1,mater001,31,BFBBX,5/L5
+play,2,1,curtc001,00,X,46(1)/FO.B-2(E6/TH1)
+play,2,1,lambm001,12,CFBX,S9.2-H(UR)
+play,2,1,mcdoj002,12,FBSC,K/C
+play,3,0,grieb001,22,BCSBFS,K
+play,3,0,giamj002,32,BCBFFBX,5/FL
+play,3,0,menef001,22,BCBCS,K23
+play,3,1,clayr001,12,CCBX,63/G
+play,3,1,alicl001,00,X,4/P4
+play,3,1,rodri001,22,FCBBX,7/F7
+play,4,0,chave001,12,CBFS,K
+play,4,0,fasas001,12,BSSFFS,K
+play,4,0,longt002,12,BFSFFX,31/G
+play,4,1,palmr001,00,X,3/G
+play,4,1,segud001,31,BBBCB,W
+play,4,1,mater001,10,BX,S7.1-2
+play,4,1,curtc001,32,FBBSBB,W.2-3;1-2
+play,4,1,lambm001,30,BBBB,W.3-H;2-3;1-2
+play,4,1,mcdoj002,21,BBCX,12(3)3/GDP.2-3;1-2
+play,5,0,tejam001,10,BX,8/F8S
+play,5,0,giamj001,30,BBBB,W
+play,5,0,saeno001,31,BBCBB,W.1-2
+play,5,0,grieb001,11,CBX,S7/7S.2-3;1-2
+play,5,0,giamj002,00,,NP
+sub,cordf002,"Francisco Cordero",1,0,1
+play,5,0,giamj002,01,FX,S9.3-H;2-H;1-3
+play,5,0,menef001,22,BBFFFX,S9.3-H;1-2
+play,5,0,chave001,32,BCBFFFBS,K
+play,5,0,fasas001,10,BX,7/F7
+play,5,1,clayr001,21,FBBX,9/F9S
+play,5,1,alicl001,12,CCBX,S9
+play,5,1,rodri001,00,X,64(1)3/GDP
+play,6,0,longt002,32,BCFBBB,W
+play,6,0,tejam001,00,X,46(1)3/GDP
+play,6,0,giamj001,22,CBCBC,K/C
+play,6,1,palmr001,11,BCX,7/L7
+play,6,1,segud001,00,X,S9
+play,6,1,mater001,00,X,64(1)3/GDP
+play,7,0,saeno001,00,,NP
+sub,zimmj001,"Jeff Zimmerman",1,0,1
+play,7,0,saeno001,31,BCBBB,W
+play,7,0,grieb001,10,BX,9/F9D
+play,7,0,giamj002,31,BBBCB,W.1-2
+play,7,0,menef001,12,BCSFC,K/C
+play,7,0,chave001,32,BSFBBS,K
+play,7,1,curtc001,10,BX,D7
+play,7,1,lambm001,01,FX,63/G
+play,7,1,mcdoj002,00,X,HR/9.2-H
+play,7,1,clayr001,21,BBSX,S8
+play,7,1,alicl001,32,BCBCBX,6(B)3(1)/LDP
+play,8,0,fasas001,00,,NP
+sub,crabt001,"Tim Crabtree",1,0,1
+play,8,0,fasas001,12,FFBC,K/C
+play,8,0,longt002,12,CSBS,K
+play,8,0,tejam001,32,BFBCFBX,S7
+play,8,0,giamj001,31,BBFBX,D8/8D.1-H
+play,8,0,saeno001,12,CBSS,K
+play,8,1,rodri001,00,X,9/F9
+play,8,1,palmr001,31,BBBCX,HR/9
+play,8,1,segud001,00,,NP
+sub,magnm001,"Mike Magnante",0,0,1
+play,8,1,segud001,11,CBX,8/F8D
+play,8,1,mater001,00,,NP
+sub,joned001,"Doug Jones",0,0,1
+play,8,1,mater001,12,CBFX,HR/7
+play,8,1,curtc001,02,CFX,S
+play,8,1,lambm001,22,CBBCX,S8.1-3
+play,8,1,mcdoj002,32,CBBBSFS,K
+play,9,0,grieb001,00,,NP
+sub,venam002,"Mike Venafro",1,0,1
+play,9,0,grieb001,01,SX,3/G
+play,9,0,giamj002,01,FX,S/89S
+play,9,0,menef001,11,BCX,64(1)/FO
+play,9,0,chave001,02,FFFX,E1/TH.1-2
+play,9,0,fasas001,00,,NP
+sub,hernr002,"Ramon Hernandez",0,9,11
+play,9,0,hernr002,20,BBX,5(2)/FO.1-2
+play,9,1,clayr001,00,,NP
+sub,chrir001,"Ryan Christenson",0,5,7
+play,9,1,clayr001,00,,NP
+sub,hernr002,"Ramon Hernandez",0,9,2
+play,9,1,clayr001,00,X,9/F9
+play,9,1,alicl001,12,CSBS,K
+play,9,1,rodri001,12,BFFFX,9/F9
+data,er,olivo001,4
+data,er,magnm001,0
+data,er,joned001,1
+data,er,david002,6
+data,er,cordf002,0
+data,er,zimmj001,0
+data,er,crabt001,1
+data,er,venam002,0

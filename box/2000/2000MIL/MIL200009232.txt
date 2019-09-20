@@ -1,0 +1,185 @@
+version,2
+info,visteam,PIT
+info,hometeam,MIL
+info,site,MIL05
+info,date,2000/09/23
+info,number,2
+info,starttime,7:15PM
+info,daynight,night
+info,usedh,false
+info,umphome,morrd901
+info,ump1b,craft901
+info,ump2b,mckej901
+info,ump3b,spiep901
+info,pitches,pitches
+info,temp,56
+info,winddir,ltor
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,225
+info,attendance,26040
+info,wp,leskc001
+info,lp,arrob001
+info,save,
+start,browa001,"Adrian Brown",0,1,8
+start,nunea001,"Abraham O. Nunez",0,2,6
+start,browe001,"Emil Brown",0,3,7
+start,herna001,"Alex Hernandez",0,4,3
+start,morrw001,"Warren Morris",0,5,4
+start,osikk001,"Keith Osik",0,6,2
+start,hyzda001,"Adam Hyzdu",0,7,9
+start,benjm001,"Mike Benjamin",0,8,5
+start,serad001,"Dan Serafini",0,9,1
+start,colll001,"Lou Collier",1,1,7
+start,peres001,"Santiago Perez",1,2,6
+start,grism001,"Marquis Grissom",1,3,8
+start,sexsr001,"Richie Sexson",1,4,3
+start,burnj001,"Jeromy Burnitz",1,5,9
+start,hernj001,"Jose Hernandez",1,6,5
+start,lopel002,"Luis Lopez",1,7,4
+start,browk004,"Kevin L. Brown",1,8,2
+start,snydj001,"John Snyder",1,9,1
+play,1,0,browa001,02,CCX,S8/8S
+play,1,0,nunea001,32,BBCFBX,S9.1-3
+play,1,0,browe001,10,BX,43/G.3-H;1-2
+play,1,0,herna001,22,BBFFX,3/G.2-3
+play,1,0,morrw001,12,CBCS,K
+play,1,1,colll001,32,FBCFBBFFFFB,W
+play,1,1,peres001,21,BBCX,13/SH.1-2
+play,1,1,grism001,20,BBX,8/F8
+play,1,1,sexsr001,22,SBCBC,K/C
+play,2,0,osikk001,10,BX,63/G
+play,2,0,hyzda001,32,BCBBFX,D9
+play,2,0,benjm001,32,BBBCSX,8/F8
+play,2,0,serad001,12,SFBX,S/89.2-H
+play,2,0,browa001,30,BBBB,W.1-2
+play,2,0,nunea001,20,BBX,31/G
+play,2,1,burnj001,12,FBFX,7/F7
+play,2,1,hernj001,31,SBBBB,W
+play,2,1,lopel002,22,FBSBX,54(1)/FO
+play,2,1,browk004,32,FBSFFBFFBB,W.1-2
+play,2,1,snydj001,01,FX,1/P1
+play,3,0,browe001,01,FX,9/F9
+play,3,0,herna001,32,SSBFBBFX,5/P5
+play,3,0,morrw001,32,CFFBBBFFX,7/F7
+play,3,1,colll001,00,X,53/G
+play,3,1,peres001,11,BCX,63/G
+play,3,1,grism001,01,FX,3/P3
+play,4,0,osikk001,12,BFFX,53/G
+play,4,0,hyzda001,11,CBX,8/F8
+play,4,0,benjm001,02,FFFX,8/F8S
+play,4,1,sexsr001,10,BX,63/G
+play,4,1,burnj001,00,X,S9
+play,4,1,hernj001,10,BX,S9/9S.1-2
+play,4,1,lopel002,10,BX,6/P6
+play,4,1,browk004,22,FBFBC,K/C
+play,5,0,serad001,02,SFX,23/G
+play,5,0,browa001,02,CCS,K
+play,5,0,nunea001,10,BX,S8/8S
+play,5,0,browe001,02,SFFX,53/G
+play,5,1,snydj001,32,BFBSBB,W
+play,5,1,colll001,22,LBBFS,K
+play,5,1,peres001,02,CFFS,K
+play,5,1,grism001,30,BBBB,W.1-2
+play,5,1,sexsr001,11,SBX,6/L6
+play,6,0,herna001,11,BSX,S9
+play,6,0,morrw001,10,BS,SB2
+play,6,0,morrw001,11,BSX,6/P6
+play,6,0,osikk001,01,CX,S8/8S.2-H
+play,6,0,hyzda001,12,CBSX,S9/9S.1-3
+play,6,0,benjm001,00,X,S3/BG3.3-H;1-2
+play,6,0,serad001,02,LFC,K/C
+play,6,0,browa001,00,X,13/G
+play,6,1,burnj001,30,BBBB,W
+play,6,1,hernj001,32,BFBBSX,8/F8
+play,6,1,lopel002,11,SBX,9/F9
+play,6,1,browk004,02,FCS,K
+play,7,0,nunea001,11,FBX,8/F8
+play,7,0,browe001,20,BBX,8/F8
+play,7,0,herna001,00,X,8/F8
+play,7,1,snydj001,00,,NP
+sub,moutl001,"Lyle Mouton",1,9,11
+play,7,1,moutl001,32,BFFBBFB,W
+play,7,1,colll001,12,FBFX,8/F8
+play,7,1,peres001,00,X,8/F8
+play,7,1,grism001,22,BBCFFFFX,64(1)/FO
+play,8,0,morrw001,00,,NP
+sub,moutl001,"Lyle Mouton",1,9,7
+play,8,0,morrw001,00,,NP
+sub,colll001,"Lou Collier",1,1,8
+play,8,0,morrw001,00,,NP
+sub,buddm001,"Mike Buddie",1,3,1
+play,8,0,morrw001,00,X,9/F9
+play,8,0,osikk001,32,BFCBBX,53/G
+play,8,0,hyzda001,11,CBX,D7
+play,8,0,benjm001,22,CBSFFFBFC,K/C
+play,8,1,sexsr001,00,,NP
+sub,benjm001,"Mike Benjamin",0,8,4
+play,8,1,sexsr001,00,,NP
+sub,wehnj001,"John Wehner",0,9,5
+play,8,1,sexsr001,00,,NP
+sub,wilkm001,"Marc Wilkins",0,5,1
+play,8,1,sexsr001,32,BBFCBB,W
+play,8,1,burnj001,10,BX,S9.1-2
+play,8,1,hernj001,20,BBX,S7.2-3;1-2
+play,8,1,lopel002,00,X,D7.3-H;2-H;1-3
+play,8,1,browk004,00,,NP
+sub,houst001,"Tyler Houston",1,8,11
+play,8,1,houst001,00,,NP
+sub,saues001,"Scott Sauerbeck",0,5,1
+play,8,1,houst001,00,,NP
+sub,lorem001,"Mark Loretta",1,8,11
+play,8,1,lorem001,21,BCBX,63/G.3-H
+play,8,1,moutl001,11,BCX,D7.2-H
+play,8,1,colll001,22,BCBFX,13/G.2-3
+play,8,1,peres001,00,,NP
+sub,hayec001,"Charlie Hayes",1,2,11
+play,8,1,hayec001,31,BFBBB,W
+play,8,1,buddm001,00,,NP
+sub,echea001,"Angel Echevarria",1,3,11
+play,8,1,echea001,31,BBBCB,W.1-2
+play,8,1,sexsr001,00,,NP
+sub,manzj001,"Josias Manzanillo",0,5,1
+play,8,1,sexsr001,02,SCX,7/F7
+play,9,0,wehnj001,00,,NP
+sub,casar001,"Raul Casanova",1,2,2
+play,9,0,wehnj001,00,,NP
+sub,lorem001,"Mark Loretta",1,8,6
+play,9,0,wehnj001,00,,NP
+sub,leskc001,"Curtis Leskanic",1,3,1
+play,9,0,wehnj001,31,BBBCX,6/P6
+play,9,0,browa001,30,BBBB,W
+play,9,0,nunea001,32,BCBCBX,7/FL
+play,9,0,browe001,32,BBCBFS,K
+play,9,1,burnj001,31,CBBBB,W
+play,9,1,hernj001,12,LLBFS,K
+play,9,1,lopel002,21,BFBS,CS2(24)
+play,9,1,lopel002,22,BFBSX,S9
+play,9,1,lorem001,22,SBCFBX,S8.1-2
+play,9,1,moutl001,12,BCSS,K
+play,10,0,herna001,12,SBCS,K
+play,10,0,manzj001,00,,NP
+sub,vandj001,"John Vander Wal",0,5,11
+play,10,0,vandj001,32,BBBCFB,W
+play,10,0,osikk001,00,,NP
+sub,arrob001,"Bronson Arroyo",0,5,12
+play,10,0,osikk001,00,X,4(1)3/GDP
+play,10,1,colll001,00,,NP
+sub,arrob001,"Bronson Arroyo",0,5,1
+play,10,1,colll001,30,BBBB,W
+play,10,1,casar001,00,X,54/SH.1-2
+play,10,1,leskc001,00,,NP
+sub,jenkg001,"Geoff Jenkins",1,3,11
+play,10,1,jenkg001,30,IIII,IW
+play,10,1,sexsr001,00,B,PB.2-3;1-2
+play,10,1,sexsr001,32,BBBCS+3,PO3(E2).3-H(UR);2-3
+data,er,serad001,0
+data,er,wilkm001,4
+data,er,saues001,0
+data,er,manzj001,0
+data,er,arrob001,0
+data,er,snydj001,4
+data,er,buddm001,0
+data,er,leskc001,0

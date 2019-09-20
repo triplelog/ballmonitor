@@ -1,0 +1,156 @@
+version,2
+info,visteam,MIL
+info,hometeam,HOU
+info,site,HOU03
+info,date,2000/08/19
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,brinj901
+info,ump1b,nelsj901
+info,ump2b,marqa901
+info,ump3b,fichm901
+info,pitches,pitches
+info,temp,72
+info,winddir,ltor
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,197
+info,attendance,42297
+info,wp,cabrj001
+info,lp,acevj001
+info,save,doteo001
+start,moutj001,"James Mouton",0,1,8
+start,lorem001,"Mark Loretta",0,2,6
+start,jenkg001,"Geoff Jenkins",0,3,7
+start,sexsr001,"Richie Sexson",0,4,3
+start,burnj001,"Jeromy Burnitz",0,5,9
+start,hayec001,"Charlie Hayes",0,6,5
+start,bellr002,"Ron Belliard",0,7,4
+start,blanh001,"Henry Blanco",0,8,2
+start,wrigj001,"Jamey Wright",0,9,1
+start,ceder001,"Roger Cedeno",1,1,7
+start,lugoj001,"Julio Lugo",1,2,4
+start,bagwj001,"Jeff Bagwell",1,3,3
+start,hidar001,"Richard Hidalgo",1,4,8
+start,aloum001,"Moises Alou",1,5,9
+start,melum001,"Mitch Meluskey",1,6,2
+start,trubc001,"Chris Truby",1,7,5
+start,bogat001,"Tim Bogar",1,8,6
+start,holtc001,"Chris Holt",1,9,1
+play,1,0,moutj001,32,BBCCBFB,W
+play,1,0,lorem001,30,BBBB,W.1-2
+play,1,0,jenkg001,02,FFX,64(1)3/GDP.2-3
+play,1,0,sexsr001,00,H,HP
+play,1,0,burnj001,01,CX,HR/9.3-H;1-H
+play,1,0,hayec001,21,CBBX,2/FL
+play,1,1,ceder001,32,BBFBCFB,W
+play,1,1,lugoj001,32,CBBBFFX,13/G.1-2
+play,1,1,bagwj001,01,SX,9/F9
+play,1,1,hidar001,10,BX,53/G
+play,2,0,bellr002,12,BCCX,9/F9
+play,2,0,blanh001,20,BBX,53/G
+play,2,0,wrigj001,12,FBFS,K
+play,2,1,aloum001,01,CX,43/G
+play,2,1,melum001,32,BCBBCB,W
+play,2,1,trubc001,10,BH,HP.1-2
+play,2,1,bogat001,11,CBX,S9/9S.2-H;1-2
+play,2,1,holtc001,00,X,34/SH.2-3;1-2
+play,2,1,ceder001,11,BCB,WP.3-H;2-3
+play,2,1,ceder001,21,BCBX,S9/9S.3-H
+play,2,1,lugoj001,00,X,S.1-2
+play,2,1,bagwj001,11,BSX,HR/7.2-H;1-H
+play,2,1,hidar001,10,BX,5/FL
+play,3,0,moutj001,12,CBCX,53/G
+play,3,0,lorem001,01,CX,9/F9
+play,3,0,jenkg001,00,X,6/P6
+play,3,1,aloum001,22,FSFBBS,K
+play,3,1,melum001,12,BFFX,31/G
+play,3,1,trubc001,22,CSBFBFS,K
+play,4,0,sexsr001,00,X,63/G
+play,4,0,burnj001,10,BX,S9/9S
+play,4,0,hayec001,10,BX,C/E2.1-2
+play,4,0,bellr002,10,BB,WP.2-3;1-2
+play,4,0,bellr002,30,BBBX,S9/9S.3-H;2-3
+play,4,0,blanh001,00,X,D7.3-H(UR);1-3
+play,4,0,wrigj001,02,CCS,K
+play,4,0,moutj001,00,X,T8.3-H;2-H
+play,4,0,lorem001,00,X,S7.3-H
+play,4,0,jenkg001,22,CBFFFBC,K/C
+play,4,1,bogat001,01,CX,53/G
+play,4,1,holtc001,00,,NP
+sub,wardd002,"Daryle Ward",1,9,11
+play,4,1,wardd002,31,BBSBX,43/G
+play,4,1,ceder001,32,BBBCCX,S8
+play,4,1,lugoj001,00,1,PO1(13)
+play,5,0,sexsr001,00,,NP
+sub,slusj001,"Joe Slusarski",1,9,1
+play,5,0,sexsr001,00,X,S7
+play,5,0,burnj001,32,CBBSFBX,3/G.1-2
+play,5,0,hayec001,10,BX,4/FL
+play,5,0,bellr002,31,BBBFB,W
+play,5,0,blanh001,31,BBBFB,W.2-3;1-2
+play,5,0,wrigj001,12,CSBS,K
+play,5,1,lugoj001,12,BCCX,8/F8
+play,5,1,bagwj001,12,CBSFFFX,9/F9D
+play,5,1,hidar001,22,SBBFX,9/F9D
+play,6,0,moutj001,12,CCBFS,K
+play,6,0,lorem001,12,BCFX,43/G
+play,6,0,jenkg001,12,SSFBS,K
+play,6,1,aloum001,10,BX,D9
+play,6,1,melum001,10,BB,PB.2-3
+play,6,1,melum001,30,BBBB,W
+play,6,1,trubc001,22,BFFBX,S7.3-H;1-2
+play,6,1,bogat001,00,,NP
+sub,delov001,"Valerio De Los Santos",0,9,1
+play,6,1,bogat001,00,X,14/SH.2-3;1-2
+play,6,1,slusj001,00,,NP
+sub,berkl001,"Lance Berkman",1,9,11
+play,6,1,berkl001,32,BBCBFC,K/C
+play,6,1,ceder001,22,BCFFBS,K
+com,"$the roof was opened"
+play,7,0,sexsr001,00,,NP
+sub,cabrj001,"Jose Cabrera",1,9,1
+play,7,0,sexsr001,21,CBBX,9/F9
+play,7,0,burnj001,12,BCFC,K/C
+play,7,0,hayec001,32,BBFBFC,K/C
+play,7,1,lugoj001,00,X,4/P4
+play,7,1,bagwj001,32,SBBBSB,W
+play,7,1,hidar001,31,FBBBB,W.1-2
+play,7,1,aloum001,00,,NP
+sub,houst001,"Tyler Houston",0,9,5
+play,7,1,aloum001,00,,NP
+sub,acevj001,"Juan Acevedo",0,6,1
+play,7,1,aloum001,20,BBX,S7/7S.2-3;1-2
+play,7,1,melum001,01,FX,S.3-H;2-3;1-2
+play,7,1,trubc001,11,BFX,9/F9S
+play,7,1,bogat001,22,SFBBFX,8/F8
+play,8,0,bellr002,11,BFX,7/F7D
+play,8,0,blanh001,32,CBBSFBFX,8/F8
+play,8,0,houst001,22,FBBSS,K
+play,8,1,cabrj001,00,,NP
+sub,spieb001,"Bill Spiers",1,9,11
+play,8,1,spieb001,01,CX,S8
+play,8,1,ceder001,22,BBFFX,36(1)/FO
+play,8,1,lugoj001,21,BBFB,CS2(26)
+play,8,1,lugoj001,31,BBFBB,W
+play,8,1,bagwj001,02,FSX,HR/7.1-H
+play,8,1,hidar001,21,CBBX,53/G
+play,9,0,moutj001,00,,NP
+sub,spieb001,"Bill Spiers",1,9,4
+play,9,0,moutj001,00,,NP
+sub,doteo001,"Octavio Dotel",1,2,1
+play,9,0,moutj001,32,BCBCBX,7/F7
+play,9,0,lorem001,00,X,D8
+play,9,0,jenkg001,22,FCFBFBS,K
+play,9,0,sexsr001,02,SSFS,K
+data,er,wrigj001,7
+data,er,delov001,1
+data,er,acevj001,2
+data,er,holtc001,7
+data,er,slusj001,0
+data,er,cabrj001,0
+data,er,doteo001,0

@@ -1,0 +1,168 @@
+version,2
+info,visteam,PIT
+info,hometeam,LAN
+info,site,LOS03
+info,date,2000/07/18
+info,number,0
+info,starttime,1:10PM
+info,daynight,day
+info,usedh,false
+info,umphome,rapue901
+info,ump1b,shulj901
+info,ump2b,roe-r901
+info,ump3b,rungb901
+info,pitches,pitches
+info,temp,85
+info,winddir,rtol
+info,windspeed,8
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,207
+info,attendance,34872
+info,wp,manzj001
+info,lp,juddm001
+info,save,willm005
+start,morrw001,"Warren Morris",0,1,4
+start,kendj001,"Jason Kendall",0,2,2
+start,cordw001,"Wil Cordero",0,3,7
+start,gileb002,"Brian Giles",0,4,8
+start,younk001,"Kevin Young",0,5,3
+start,vandj001,"John Vander Wal",0,6,9
+start,ramia001,"Aramis Ramirez",0,7,5
+start,benjm001,"Mike Benjamin",0,8,6
+start,ritct001,"Todd Ritchie",0,9,1
+start,coraa001,"Alex Cora",1,1,4
+start,lodup001,"Paul LoDuca",1,2,2
+start,shefg001,"Gary Sheffield",1,3,7
+start,grees001,"Shawn Green",1,4,9
+start,karre001,"Eric Karros",1,5,3
+start,belta001,"Adrian Beltre",1,6,5
+start,hollt001,"Todd Hollandsworth",1,7,8
+start,elstk001,"Kevin Elster",1,8,6
+start,juddm001,"Mike Judd",1,9,1
+com,"$Mgr Dave Johnson in hospital"
+play,1,0,morrw001,32,BCBFBFB,W
+play,1,0,kendj001,12,BCFH,HP.1-2
+play,1,0,cordw001,12,BFFX,HR/78.2-H;1-H
+play,1,0,gileb002,32,BSFBBX,53/G
+play,1,0,younk001,12,CSBX,8/F8
+play,1,0,vandj001,12,CBFS,K
+play,1,1,coraa001,21,BBCX,8/F8
+play,1,1,lodup001,02,CFFFX,S8
+play,1,1,shefg001,21,CBBX,7/F7
+play,1,1,grees001,32,BCBBFC,K/C
+play,2,0,ramia001,32,CBBSBS,K
+play,2,0,benjm001,31,BBBCB,W
+play,2,0,ritct001,32,CBBBCF,FLE2#
+com,"FLE2 somewhere in this inning"
+play,2,0,ritct001,32,CBBBCFFX,D9/9S.1-H
+play,2,0,morrw001,12,CFBS,K
+play,2,0,kendj001,11,BCX,S7.2-H;B-2(THH)
+play,2,0,cordw001,32,CFBBBFFS,K
+play,2,1,karre001,22,BBCFFFX,S9
+play,2,1,belta001,01,CX,9/F9
+play,2,1,hollt001,12,FBSX,9/F9
+play,2,1,elstk001,12,SSBS,K
+play,3,0,gileb002,32,BCBCBFS,K
+play,3,0,younk001,21,BBFX,63/G
+play,3,0,vandj001,32,BBCCFBX,4/P4
+play,3,1,juddm001,01,CX,S9/9S
+play,3,1,coraa001,11,BCX,S8.1-2
+play,3,1,lodup001,02,SFC,K/C
+play,3,1,shefg001,01,SX,S7/7S.2-3;1-2
+play,3,1,grees001,22,BFSFBX,D9/9D.3-H;2-H;1-3
+play,3,1,karre001,00,X,S8/8S.3-H;2-H
+play,3,1,belta001,00,,BK.1-2
+play,3,1,belta001,02,FSX,S/78.2-3;B-2(THH)
+play,3,1,hollt001,30,BBII,IW
+play,3,1,elstk001,22,BFBFX,S7.3-H;2-H;1-2
+play,3,1,juddm001,00,,NP
+sub,manzj001,"Josias Manzanillo",0,9,1
+play,3,1,juddm001,11,CBX,23/SH.2-3;1-2
+play,3,1,coraa001,20,BBX,7/F7
+play,4,0,ramia001,01,CX,9/F9
+play,4,0,benjm001,22,BCCBFX,8/L8
+play,4,0,manzj001,22,BBCFFX,9/F9
+play,4,1,lodup001,20,BBX,7/F7
+play,4,1,shefg001,32,FBBBSFB,W
+play,4,1,grees001,00,C,SB2
+play,4,1,grees001,32,CBBBFFX,6/P6
+play,4,1,karre001,12,FBFX,9/F9
+play,5,0,morrw001,32,BBBCFFB,W
+play,5,0,kendj001,10,BX,HR/7.1-H
+play,5,0,cordw001,00,,NP
+sub,osuna002,"Antonio Osuna",1,9,1
+play,5,0,cordw001,21,CBBX,6/P6
+play,5,0,gileb002,12,SBFS,K
+play,5,0,younk001,22,BBCSC,K/C
+play,5,1,belta001,02,CSX,S
+play,5,1,hollt001,31,BFBBB,W.1-2
+play,5,1,elstk001,12,CCBS,K
+play,5,1,osuna002,12,SLBL,K/BF
+play,5,1,coraa001,01,CX,6/P6
+play,6,0,vandj001,11,BSX,S1.B-2(E1/TH1)
+play,6,0,ramia001,02,FSS,K
+play,6,0,benjm001,11,BCX,53/G
+play,6,0,manzj001,12,FSBS,K
+play,6,1,lodup001,01,CX,9/F9
+play,6,1,shefg001,22,BBCSS,K
+play,6,1,grees001,12,FBCC,K/C
+play,7,0,morrw001,21,BFBX,D9
+play,7,0,kendj001,00,X,9/F9.2-3
+play,7,0,cordw001,11,BSF,FLE5
+play,7,0,cordw001,32,BSFBBB,W
+play,7,0,gileb002,31,CBBBX,7/SF.3-H(UR)
+play,7,0,younk001,22,BSBSS,K
+play,7,1,karre001,00,,NP
+sub,wilkm001,"Marc Wilkins",0,9,1
+play,7,1,karre001,22,CBBFX,63/G
+play,7,1,belta001,01,SX,4/L4
+play,7,1,hollt001,11,CBX,S9
+play,7,1,elstk001,32,FBSBBB,W.1-2
+play,7,1,osuna002,00,,NP
+sub,kreuc001,"Chad Kreuter",1,9,11
+play,7,1,kreuc001,00,,NP
+sub,chrij002,"Jason Christiansen",0,5,1
+play,7,1,kreuc001,00,,NP
+sub,vandj001,"John Vander Wal",0,6,3
+play,7,1,kreuc001,00,,NP
+sub,avenb001,"Bruce Aven",0,9,9
+play,7,1,kreuc001,32,BCBBSB,W.2-3;1-2
+play,7,1,coraa001,00,,NP
+sub,grudm001,"Mark Grudzielanek",1,1,11
+play,7,1,grudm001,32,BFBSBC,K/C
+play,8,0,vandj001,00,,NP
+sub,grudm001,"Mark Grudzielanek",1,1,4
+play,8,0,vandj001,00,,NP
+sub,hergm001,"Matt Herges",1,9,1
+play,8,0,vandj001,02,CFFX,D7
+play,8,0,ramia001,22,BBCSFX,E6/TH.2-3
+play,8,0,benjm001,22,BBCSS,K
+play,8,0,avenb001,01,FX,54(1)3/GDP
+play,8,1,lodup001,00,,NP
+sub,saues001,"Scott Sauerbeck",0,5,1
+play,8,1,lodup001,12,BCCX,S
+play,8,1,shefg001,11,BCX,9/F9
+play,8,1,grees001,11,BCX,46(1)/FO
+play,8,1,karre001,20,BBX,9/F9
+play,9,0,morrw001,01,CX,63/G
+play,9,0,kendj001,32,CBSBBX,5/P5
+play,9,0,cordw001,00,X,S7
+play,9,0,gileb002,32,BBBCCX,8/F8S
+play,9,1,belta001,00,,NP
+sub,redmt001,"Tike Redman",0,5,7
+play,9,1,belta001,00,,NP
+sub,willm005,"Mike Williams",0,3,1
+play,9,1,belta001,12,BCFX,63/G
+play,9,1,hollt001,12,CSBS,K
+play,9,1,elstk001,22,CBBSX,5/L5
+data,er,ritct001,6
+data,er,manzj001,0
+data,er,wilkm001,0
+data,er,chrij002,0
+data,er,saues001,0
+data,er,willm005,0
+data,er,juddm001,7
+data,er,osuna002,0
+data,er,hergm001,0

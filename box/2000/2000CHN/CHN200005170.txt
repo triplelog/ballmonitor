@@ -1,0 +1,173 @@
+version,2
+info,visteam,LAN
+info,hometeam,CHN
+info,site,CHI11
+info,date,2000/05/17
+info,number,0
+info,starttime,1:20PM
+info,daynight,day
+info,usedh,false
+info,umphome,everm901
+info,ump1b,hirsj901
+info,ump2b,dimum901
+info,ump3b,gormb901
+info,pitches,pitches
+info,temp,58
+info,winddir,rtol
+info,windspeed,8
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,218
+info,attendance,30235
+info,wp,milla001
+info,lp,heref001
+info,save,shawj001
+start,santf001,"F.P. Santangelo",0,1,8
+start,grudm001,"Mark Grudzielanek",0,2,4
+start,grees001,"Shawn Green",0,3,9
+start,shefg001,"Gary Sheffield",0,4,7
+start,karre001,"Eric Karros",0,5,3
+start,belta001,"Adrian Beltre",0,6,5
+start,hundt001,"Todd Hundley",0,7,2
+start,vizcj001,"Jose Vizcaino",0,8,6
+start,dreid001,"Darren Dreifort",0,9,1
+start,youne001,"Eric Young",1,1,4
+start,gutir001,"Ricky Gutierrez",1,2,6
+start,martd002,"Dave Martinez",1,3,7
+start,sosas001,"Sammy Sosa",1,4,9
+start,greew001,"Willie Greene",1,5,5
+start,zulej001,"Julio Zuleta",1,6,3
+start,bufod001,"Damon Buford",1,7,8
+start,giraj001,"Joe Girardi",1,8,2
+start,downs001,"Scott Downs",1,9,1
+play,1,0,santf001,22,BCCBX,53/G
+play,1,0,grudm001,11,BCX,63/G
+play,1,0,grees001,22,CCBBS,K
+play,1,1,youne001,21,CBBX,13/G
+play,1,1,gutir001,02,CFS,K
+play,1,1,martd002,22,BBCFS,K23
+play,2,0,shefg001,31,BSBBX,7/F7
+play,2,0,karre001,12,CCBX,8/F8D
+play,2,0,belta001,01,CX,8/F8S
+play,2,1,sosas001,32,CBSBBFX,S/89S
+play,2,1,greew001,22,FBFBX,5/FL
+play,2,1,zulej001,12,CFBS,K
+play,2,1,bufod001,11,BFX,64(1)/FO
+play,3,0,hundt001,22,BCBSX,9/F9
+play,3,0,vizcj001,32,CCBBBC,K/C
+play,3,0,dreid001,01,SX,E6/G
+play,3,0,santf001,31,BBCBX,8/F8
+play,3,1,giraj001,31,BBSBB,W
+play,3,1,downs001,02,FLX,14/SH.1-2
+play,3,1,youne001,10,BX,53/G
+play,3,1,gutir001,11,BFX,13/G
+play,4,0,grudm001,32,CBBBFB,W
+play,4,0,grees001,20,BBX,D9/9D.1-3
+play,4,0,shefg001,21,CBBX,S8.3-H;2-H
+play,4,0,karre001,11,BCX,D7.1-3
+play,4,0,belta001,21,BBSX,S8.3-H;2-3
+play,4,0,hundt001,32,BCBCBB,W.1-2
+play,4,0,vizcj001,00,,NP
+sub,vanpt001,"Todd Van Poppel",1,9,1
+play,4,0,vizcj001,12,CCFFFFBX,6(B)6(2)/LDP
+play,4,0,dreid001,21,FBBX,D9/9D.3-H;1-H(E9)(UR);B-3
+play,4,0,santf001,10,BX,31/G
+play,4,1,martd002,10,BX,S7
+play,4,1,sosas001,10,BX,S7.1-2
+play,4,1,greew001,00,X,8/F8.2-3
+play,4,1,zulej001,10,BX,53/G.3-H;1-2
+play,4,1,bufod001,32,BFBBSFFH,HP
+play,4,1,giraj001,32,BCBCFBB,W.2-3;1-2
+play,4,1,vanpt001,00,,NP
+sub,husoj001,"Jeff Huson",1,9,11
+play,4,1,husoj001,30,BBBB,W.3-H;2-3;1-2
+play,4,1,youne001,11,BCX,S9.3-H;2-H;1-2
+play,4,1,gutir001,11,BCX,13/G
+play,5,0,grudm001,00,,NP
+sub,garid001,"Daniel Garibay",1,9,1
+play,5,0,grudm001,20,BBX,8/F8
+play,5,0,grees001,10,BX,8/F8
+play,5,0,shefg001,32,CCBBBX,S8
+play,5,0,karre001,12,BFFS,K
+play,5,1,martd002,10,BX,T9
+play,5,1,sosas001,01,CX,63/G.3-H
+play,5,1,greew001,10,BX,HR/9
+play,5,1,zulej001,00,X,S
+play,5,1,bufod001,00,,NP
+sub,hergm001,"Matt Herges",0,9,1
+play,5,1,bufod001,01,LB,CS2(24)
+play,5,1,bufod001,22,LBBFC,K/C
+play,6,0,belta001,32,BSBBCFB,W
+play,6,0,hundt001,20,BBX,16(1)/FO
+play,6,0,vizcj001,21,CBBX,9/F9
+play,6,0,hergm001,00,,NP
+sub,berrg001,"Geronimo Berroa",0,9,11
+play,6,0,berrg001,32,CBBBFX,63/G
+play,6,1,giraj001,00,,NP
+sub,osuna002,"Antonio Osuna",0,9,1
+play,6,1,giraj001,12,FCBX,63/G
+play,6,1,garid001,00,,NP
+sub,nievj002,"Jose Nieves",1,9,11
+play,6,1,nievj002,32,BBBCFFFX,9/F9S
+play,6,1,youne001,02,FCX,6/FL
+play,7,0,santf001,00,,NP
+sub,willb001,"Brian Williams",1,9,1
+play,7,0,santf001,31,BBBCB,W
+play,7,0,grudm001,31,BBBCX,64(1)3/GDP
+play,7,0,grees001,30,BBBB,W
+play,7,0,shefg001,12,CBSX,64(1)/FO
+play,7,1,gutir001,00,X,8/F8
+play,7,1,martd002,32,CBBBCX,53/G
+play,7,1,sosas001,00,X,9/L9
+play,8,0,karre001,00,,NP
+sub,farnk001,"Kyle Farnsworth",1,9,1
+play,8,0,karre001,30,BBBB,W
+play,8,0,belta001,01,CX,4/FL
+play,8,0,hundt001,22,CCFFBBX,5/FL
+play,8,0,vizcj001,32,FBBFBX,8/F8
+play,8,1,greew001,32,BBBCFB,W
+play,8,1,zulej001,12,SFBFFFFFS,K
+play,8,1,bufod001,00,,NP
+sub,milla001,"Alan Mills",0,9,1
+play,8,1,bufod001,00,X,46(1)3/GDP
+play,9,0,milla001,00,,NP
+sub,aguir001,"Rick Aguilera",1,9,1
+play,9,0,milla001,00,,NP
+sub,hansd001,"Dave Hansen",0,9,11
+play,9,0,hansd001,32,BCBFBFX,HR/9
+play,9,0,santf001,00,,NP
+sub,hollt001,"Todd Hollandsworth",0,1,11
+play,9,0,hollt001,22,BSFBFX,9/F9
+play,9,0,grudm001,32,FBCFBBFX,9/F9
+play,9,0,grees001,00,,NP
+sub,heref001,"Felix Heredia",1,6,1
+play,9,0,grees001,00,,NP
+sub,martd002,"Dave Martinez",1,3,3
+play,9,0,grees001,00,,NP
+sub,hillg001,"Glenallen Hill",1,9,7
+play,9,0,grees001,32,BCFBBB,W
+play,9,0,shefg001,31,BFBBB,W.1-2
+play,9,0,karre001,02,CFFFX,S8.2-H;1-2
+play,9,0,belta001,12,SSBX,S7.2-H;1X3(75)
+play,9,1,giraj001,00,,NP
+sub,hollt001,"Todd Hollandsworth",0,1,8
+play,9,1,giraj001,00,,NP
+sub,hansd001,"Dave Hansen",0,9,3
+play,9,1,giraj001,00,,NP
+sub,shawj001,"Jeff Shaw",0,5,1
+play,9,1,giraj001,01,CX,63/G
+play,9,1,hillg001,22,BSBSS,K
+play,9,1,youne001,00,X,63/G
+data,er,dreid001,6
+data,er,hergm001,0
+data,er,osuna002,0
+data,er,milla001,0
+data,er,shawj001,0
+data,er,downs001,4
+data,er,vanpt001,0
+data,er,garid001,0
+data,er,willb001,0
+data,er,farnk001,0
+data,er,aguir001,1
+data,er,heref001,2

@@ -1,0 +1,152 @@
+version,2
+info,visteam,LAN
+info,hometeam,SDN
+info,site,SAN01
+info,date,2000/07/06
+info,number,0
+info,starttime,2:05PM
+info,daynight,day
+info,usedh,false
+info,umphome,iassd901
+info,ump1b,hirsm901
+info,ump2b,bellw901
+info,ump3b,onorb901
+info,pitches,pitches
+info,temp,74
+info,winddir,tocf
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,182
+info,attendance,30902
+info,wp,browk001
+info,lp,meadb001
+info,save,
+start,hollt001,"Todd Hollandsworth",0,1,8
+start,grudm001,"Mark Grudzielanek",0,2,4
+start,shefg001,"Gary Sheffield",0,3,7
+start,grees001,"Shawn Green",0,4,9
+start,karre001,"Eric Karros",0,5,3
+start,hundt001,"Todd Hundley",0,6,2
+start,belta001,"Adrian Beltre",0,7,5
+start,coraa001,"Alex Cora",0,8,6
+start,browk001,"Kevin Brown",0,9,1
+start,marta001,"Al Martin",1,1,7
+start,dehak001,"Kory DeHaan",1,2,9
+start,klesr001,"Ryan Klesko",1,3,3
+start,nevip001,"Phil Nevin",1,4,5
+start,boonb002,"Bret Boone",1,5,4
+start,gonzw001,"Wiki Gonzalez",1,6,2
+start,river002,"Ruben Rivera",1,7,8
+start,nichk001,"Kevin Nicholson",1,8,6
+start,meadb001,"Brian Meadows",1,9,1
+play,1,0,hollt001,10,BX,S9/9S
+play,1,0,grudm001,01,CX,7/F7D
+play,1,0,shefg001,22,BBCFX,8(B)23(1)/FDP
+play,1,1,marta001,12,SFBX,3/G
+play,1,1,dehak001,12,CFBS,K
+play,1,1,klesr001,11,BCX,S9/9S
+play,1,1,nevip001,10,BX,HR/9.1-H
+play,1,1,boonb002,22,BFFBFX,9/F9
+play,2,0,grees001,00,X,D7/7S
+play,2,0,karre001,22,CBFBX,7/F7D
+play,2,0,hundt001,21,CBBX,S8.2-H
+play,2,0,belta001,01,CX,S8.1-2
+play,2,0,coraa001,00,B,OA.2X3(25)#
+play,2,0,coraa001,20,BBX,7/F7
+play,2,1,gonzw001,10,BX,63/G
+play,2,1,river002,00,X,6/P6
+play,2,1,nichk001,12,CFFBFFC,K/C
+play,3,0,browk001,12,CBFS,K
+play,3,0,hollt001,12,CFBX,63/G
+play,3,0,grudm001,22,BCSBX,S8
+play,3,0,shefg001,21,BBFX,E5/G.1-3
+play,3,0,grees001,22,BCFBX,6/P6
+play,3,1,meadb001,32,CCBBFBC,K/C
+play,3,1,marta001,22,BCBCS,K
+play,3,1,dehak001,10,BX,63/G
+play,4,0,karre001,32,BSBBFX,S7/7S
+play,4,0,hundt001,00,X,8/F8
+play,4,0,belta001,11,CBX,HR/8.1-H
+play,4,0,coraa001,10,BX,7/F7
+play,4,0,browk001,11,BSX,S9
+play,4,0,hollt001,12,BCFFFX,8/F8
+play,4,1,klesr001,12,BSCC,K/C
+play,4,1,nevip001,02,SSS,K
+play,4,1,boonb002,32,BBFCFBC,K/C
+play,5,0,grudm001,01,CX,63/G
+play,5,0,shefg001,01,FX,63/G
+play,5,0,grees001,00,X,HR/9
+play,5,0,karre001,32,SBBCBX,S8
+play,5,0,hundt001,32,BFSBBX,S8.1-3
+play,5,0,belta001,12,BCFX,2/FL
+play,5,1,gonzw001,01,CX,D9
+play,5,1,river002,22,BBFSS,K
+play,5,1,nichk001,02,FCFFS,K
+play,5,1,meadb001,00,,NP
+sub,alled001,"Dusty Allen",1,9,11
+play,5,1,alled001,12,CCBFS,K
+play,6,0,coraa001,00,,NP
+sub,cunnw001,"Will Cunnane",1,9,1
+play,6,0,coraa001,32,BBBCFFB,W
+play,6,0,browk001,00,X,34/SH.1-2
+play,6,0,hollt001,02,CFS,K
+play,6,0,grudm001,11,BCX,8/F8
+play,6,1,marta001,12,CSBFX,8/F8
+play,6,1,dehak001,32,BSSBBFX,8/F8
+play,6,1,klesr001,00,X,43/G
+play,7,0,shefg001,00,,NP
+sub,monts001,"Steve L. Montgomery",1,9,1
+play,7,0,shefg001,32,CFBBBC,K/C
+play,7,0,grees001,10,BX,3/L3
+play,7,0,karre001,32,BCBCBB,W
+play,7,0,hundt001,22,CBBFX,64(1)/FO
+play,7,1,nevip001,30,BBBB,W
+play,7,1,boonb002,01,CX,54(1)3/GDP
+play,7,1,gonzw001,00,X,HR/7
+play,7,1,river002,12,BFFS,K
+play,8,0,belta001,00,,NP
+sub,walkk001,"Kevin Walker",1,9,1
+play,8,0,belta001,32,BCFBBB,W
+play,8,0,coraa001,00,X,S8.1-3
+play,8,0,browk001,11,SBX,9(B)2(3)/FDP.1-2
+play,8,0,hollt001,30,BBBB,W
+play,8,0,grudm001,21,BCBX,D9/9S.2-H;1-3
+play,8,0,shefg001,30,IIII,IW
+play,8,0,grees001,32,BFSBFBX,E7/F.3-H(UR)(NR);2-H(UR)(NR);1-H(UR)(NR);B-3
+play,8,0,karre001,12,CCBX,9/F9
+play,8,1,nichk001,02,CCS,K
+play,8,1,walkk001,00,,NP
+sub,magad001,"Dave Magadan",1,9,11
+play,8,1,magad001,11,BCX,31/G
+play,8,1,marta001,22,FBSBX,43/G
+play,9,0,hundt001,00,,NP
+sub,reyec001,"Carlos Reyes",1,9,1
+play,9,0,hundt001,00,X,HR/9
+play,9,0,belta001,10,BX,63/G
+play,9,0,coraa001,00,X,8/F8
+play,9,0,browk001,00,,NP
+sub,metcm001,"Mike Metcalfe",0,9,11
+play,9,0,metcm001,02,CCX,3/L3
+play,9,1,dehak001,00,,NP
+sub,metcm001,"Mike Metcalfe",0,9,7
+play,9,1,dehak001,00,,NP
+sub,jackd003,"Damian Jackson",1,2,11
+play,9,1,jackd003,00,,NP
+sub,masao001,"Onan Masaoka",0,3,1
+play,9,1,jackd003,32,BBCFBFX,4/P4
+play,9,1,klesr001,10,BX,3/G
+play,9,1,nevip001,01,CX,S
+play,9,1,boonb002,30,BBBB,W.1-2
+play,9,1,gonzw001,00,,NP
+sub,hergm001,"Matt Herges",0,3,1
+play,9,1,gonzw001,12,BFCS,K
+data,er,browk001,3
+data,er,masao001,0
+data,er,hergm001,0
+data,er,meadb001,4
+data,er,cunnw001,0
+data,er,monts001,0
+data,er,walkk001,1
+data,er,reyec001,1

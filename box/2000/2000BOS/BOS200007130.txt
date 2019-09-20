@@ -1,0 +1,148 @@
+version,2
+info,visteam,NYN
+info,hometeam,BOS
+info,site,BOS07
+info,date,2000/07/13
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,herna901
+info,ump1b,fostm901
+info,ump2b,kulpr901
+info,ump3b,marsr901
+info,pitches,pitches
+info,temp,83
+info,winddir,tocf
+info,windspeed,15
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,190
+info,attendance,33894
+info,wp,garcr001
+info,lp,benia001
+info,save,
+start,moram002,"Melvin Mora",0,1,6
+start,belld001,"Derek Bell",0,2,9
+start,alfoe001,"Edgardo Alfonzo",0,3,10
+start,piazm001,"Mike Piazza",0,4,2
+start,ventr001,"Robin Ventura",0,5,5
+start,zeilt001,"Todd Zeile",0,6,3
+start,paytj001,"Jay Payton",0,7,8
+start,agbab001,"Benny Agbayani",0,8,7
+start,mcewj001,"Joe McEwing",0,9,4
+start,joneb003,"Bobby J. Jones",0,0,1
+start,offej001,"Jose Offerman",1,1,4
+start,fryej001,"Jeff Frye",1,2,9
+start,daubb001,"Brian Daubach",1,3,3
+start,garcn001,"Nomar Garciaparra",1,4,6
+start,everc001,"Carl Everett",1,5,8
+start,oleat001,"Troy O'Leary",1,6,7
+start,burkm001,"Morgan Burkhart",1,7,10
+start,varij001,"Jason Varitek",1,8,2
+start,sprae001,"Ed Sprague",1,9,5
+start,martp001,"Pedro Martinez",1,0,1
+play,1,0,moram002,01,CX,5/FL
+play,1,0,belld001,32,CFFBBBX,53/G
+play,1,0,alfoe001,12,BCFX,9/F9
+play,1,1,offej001,32,CBSBFBB,W
+play,1,1,fryej001,10,BS,CS2(24)
+play,1,1,fryej001,12,BSCX,9/L9
+play,1,1,daubb001,22,BCSBX,S8
+play,1,1,garcn001,02,FCX,8/F8
+play,2,0,piazm001,10,BX,53/G
+play,2,0,ventr001,32,SBCBBS,K
+play,2,0,zeilt001,12,CBCFX,D/78
+play,2,0,paytj001,12,CBSX,D7.2-H
+play,2,0,agbab001,10,BX,9/F89
+play,2,1,everc001,12,CBCS,K
+play,2,1,oleat001,00,X,D7/7D
+play,2,1,burkm001,12,CBFS,K
+play,2,1,varij001,12,SCBS,K
+play,3,0,mcewj001,01,CX,S
+play,3,0,moram002,21,LBBX,13/SH.1-2
+play,3,0,belld001,12,BFFC,K/C
+play,3,0,alfoe001,02,CSS,K
+play,3,1,sprae001,10,BX,8/F8S
+play,3,1,offej001,32,BSCBBX,31/G
+play,3,1,fryej001,32,BBFFBFB,W
+play,3,1,daubb001,22,BFSBS,K
+play,4,0,piazm001,10,BX,9/F9S
+play,4,0,ventr001,02,CFS,K
+play,4,0,zeilt001,22,CBFBS,K
+play,4,1,garcn001,00,X,S7/7D
+play,4,1,everc001,32,BBFBFS,K+SB2
+play,4,1,oleat001,22,BBCSS,K
+play,4,1,burkm001,12,BSFFS,K
+play,5,0,paytj001,12,SFFBFC,K/C
+play,5,0,agbab001,32,BCBBFB,W
+play,5,0,mcewj001,02,CSX,S/78.1-2
+play,5,0,moram002,01,CX,7/F7
+play,5,0,belld001,00,X,6/P6
+play,5,1,varij001,12,CSFFBS,K
+play,5,1,sprae001,30,BBBB,W
+play,5,1,offej001,31,BBFBB,W.1-2
+play,5,1,fryej001,32,CCFBBBFX,S.2-3;1-2
+play,5,1,daubb001,10,BX,3/FL
+play,5,1,garcn001,01,FX,8/F8D
+play,6,0,alfoe001,22,CBCBFS,K
+play,6,0,piazm001,01,FX,9/F9
+play,6,0,ventr001,21,BBFX,31/G
+play,6,1,everc001,22,CFBBX,S/78
+play,6,1,oleat001,01,CX,4/P4
+play,6,1,burkm001,12,CBSX,HR/9.1-H
+play,6,1,varij001,11,CBX,4/P4
+play,6,1,sprae001,01,FX,13/G
+play,7,0,zeilt001,22,SFBBC,K/C
+play,7,0,paytj001,22,FBBCX,HR/7
+play,7,0,agbab001,12,CCBC,K/C
+play,7,0,mcewj001,22,CBBFS,K
+play,7,1,offej001,00,,NP
+sub,cookd001,"Dennis Cook",0,0,1
+play,7,1,offej001,01,CX,9/F9
+play,7,1,fryej001,32,BSBBFC,K/C
+play,7,1,daubb001,12,CSBS,K
+play,8,0,moram002,00,,NP
+sub,cormr001,"Rheal Cormier",1,0,1
+play,8,0,moram002,01,CX,53/G
+play,8,0,belld001,00,X,6/L6
+play,8,0,alfoe001,21,BBCX,S/78
+play,8,0,piazm001,00,,NP
+sub,garcr001,"Rich Garces",1,0,1
+play,8,0,piazm001,32,BCBBSX,S8.1-H(E8)(UR);B-2
+play,8,0,ventr001,32,BCBCFBFS,K
+play,8,1,garcn001,00,,NP
+sub,franj001,"John Franco",0,0,1
+play,8,1,garcn001,12,CFBX,S7
+badj,everc001,L
+play,8,1,everc001,11,BCX,3/G.1-2
+play,8,1,oleat001,31,CBBBX,31/G.2-3
+play,8,1,burkm001,12,FBFC,K/C
+play,9,0,zeilt001,21,BBCX,2/FL
+play,9,0,paytj001,22,BBCCX,43/G
+play,9,0,agbab001,01,CH,HP
+play,9,0,mcewj001,01,SX,S8.1-2
+play,9,0,moram002,32,BBBCFX,7/P78S
+play,9,1,varij001,00,,NP
+sub,lambd001,"David Lamb",0,8,4
+play,9,1,varij001,00,,NP
+sub,mcewj001,"Joe McEwing",0,9,7
+play,9,1,varij001,00,,NP
+sub,benia001,"Armando Benitez",0,0,1
+play,9,1,varij001,01,CX,3/G
+play,9,1,sprae001,00,,NP
+sub,hatts001,"Scott Hatteberg",1,9,11
+play,9,1,hatts001,31,BBBCB,W
+play,9,1,offej001,00,,NP
+sub,alexm001,"Manny Alexander",1,9,12
+play,9,1,offej001,00,X,E6/G.1-2
+play,9,1,fryej001,22,CCBFBFX,7/F78.2-3
+play,9,1,daubb001,12,BCFX,D9/9D.3-H(UR);1-H(UR)
+data,er,joneb003,2
+data,er,cookd001,0
+data,er,franj001,0
+data,er,benia001,0
+data,er,martp001,2
+data,er,cormr001,0
+data,er,garcr001,0

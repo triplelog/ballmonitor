@@ -1,0 +1,129 @@
+version,2
+info,visteam,FLO
+info,hometeam,NYA
+info,site,NYC16
+info,date,2000/07/14
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,mealj901
+info,ump1b,younl901
+info,ump2b,vanvm901
+info,ump3b,millb901
+info,pitches,pitches
+info,temp,72
+info,winddir,tolf
+info,windspeed,15
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,175
+info,attendance,35332
+info,wp,clemr001
+info,lp,dempr002
+info,save,
+start,castl001,"Luis Castillo",0,1,4
+start,kotsm001,"Mark Kotsay",0,2,9
+start,floyc001,"Cliff Floyd",0,3,7
+start,wilsp002,"Preston Wilson",0,4,8
+start,lowem001,"Mike Lowell",0,5,5
+start,lee-d002,"Derrek Lee",0,6,3
+start,millk005,"Kevin Millar",0,7,10
+start,gonza002,"Alex Gonzalez",0,8,6
+start,bakop001,"Paul Bako",0,9,2
+start,dempr002,"Ryan Dempster",0,0,1
+start,vizcj001,"Jose Vizcaino",1,1,4
+start,jeted001,"Derek Jeter",1,2,6
+start,oneip001,"Paul O'Neill",1,3,9
+start,willb002,"Bernie Williams",1,4,8
+start,justd001,"David Justice",1,5,10
+start,martt002,"Tino Martinez",1,6,3
+start,posaj001,"Jorge Posada",1,7,2
+start,thomr004,"Ryan Thompson",1,8,7
+start,bross001,"Scott Brosius",1,9,5
+start,clemr001,"Roger Clemens",1,0,1
+play,1,0,castl001,21,BBCX,S7
+play,1,0,kotsm001,00,X,8/F8
+play,1,0,floyc001,10,BC,SB2
+play,1,0,floyc001,32,BCBFFBFFFS,K
+play,1,0,wilsp002,32,BSBBSFFFB,W+SB3
+play,1,0,lowem001,12,BCFFFFB,SB2
+play,1,0,lowem001,22,BCFFFFBFS,K
+play,1,1,vizcj001,12,CCBS,K
+play,1,1,jeted001,32,BSSBFBB,W
+play,1,1,oneip001,31,CBBBX,43/G.1-2
+play,1,1,willb002,22,FBBCX,HR/9.2-H
+play,1,1,justd001,32,FCBBBX,HR/7
+play,1,1,martt002,12,BCFC,K/C
+play,2,0,lee-d002,01,SX,63/G
+play,2,0,millk005,12,CFFBX,63/G
+play,2,0,gonza002,02,SFX,D7/7D
+play,2,0,bakop001,31,BFBBX,31/G
+play,2,1,posaj001,32,BFBFBFX,7/F7S
+play,2,1,thomr004,32,SBBSFBFC,K/C
+play,2,1,bross001,10,BX,13/G
+play,3,0,castl001,12,CCBX,13/G
+play,3,0,kotsm001,22,BSCFBX,7/F7
+play,3,0,floyc001,00,X,D8/8D
+play,3,0,wilsp002,22,FBSBX,HR/9.2-H
+play,3,0,lowem001,11,BFX,6/L6
+play,3,1,vizcj001,00,X,8/L8
+play,3,1,jeted001,01,FX,S
+play,3,1,oneip001,21,CBBX,46(1)3/GDP
+play,4,0,lee-d002,02,CCX,S
+play,4,0,millk005,30,BBBB,W.1-2
+play,4,0,gonza002,10,BX,64(1)3/GDP.2-3
+play,4,0,bakop001,22,BCBFX,13/G
+play,4,1,willb002,21,CBBX,7/F7D
+play,4,1,justd001,30,BBBB,W
+play,4,1,martt002,11,CBX,S7.1-2
+play,4,1,posaj001,11,BCX,53/G.2-3;1-2
+play,4,1,thomr004,20,BBX,HR/7.3-H;2-H
+play,4,1,bross001,32,CBBSBB,W
+play,4,1,vizcj001,10,BX,S.1-2
+play,4,1,jeted001,32,CBBSBS,K
+play,5,0,castl001,10,BX,7/L7
+play,5,0,kotsm001,02,CCX,63/G
+play,5,0,floyc001,11,CBX,S9
+play,5,0,wilsp002,02,CCB,SB2
+play,5,0,wilsp002,12,CCBS,K
+play,5,1,oneip001,00,X,S7/7S
+play,5,1,willb002,01,FC,SB2
+play,5,1,willb002,02,FCS,K
+play,5,1,justd001,21,CBBX,7/F7
+play,5,1,martt002,21,BCBX,9/F9
+play,6,0,lowem001,01,CX,43/G
+play,6,0,lee-d002,10,BX,D9
+play,6,0,millk005,00,X,8/F8
+play,6,0,gonza002,01,CX,8/F8
+play,6,1,posaj001,10,BX,13/G
+play,6,1,thomr004,22,CBCBX,63/G
+play,6,1,bross001,32,BFCBBFFB,W
+play,6,1,vizcj001,10,BX,S8/8S.1-2
+play,6,1,jeted001,12,BFCX,9/F9
+play,7,0,bakop001,11,BCX,3/G
+play,7,0,castl001,22,BCCFBX,63/G
+play,7,0,kotsm001,32,CBBBFFFB,W
+play,7,0,floyc001,12,SBFC,K/C
+play,7,1,oneip001,00,,NP
+sub,darev001,"Vic Darensbourg",0,0,1
+play,7,1,oneip001,02,CFC,K/C
+play,7,1,willb002,10,BX,63/G
+play,7,1,justd001,12,SCBFX,9/F9S
+play,8,0,wilsp002,00,,NP
+sub,nelsj001,"Jeff Nelson",1,0,1
+play,8,0,wilsp002,12,CSBS,K
+play,8,0,lowem001,00,X,4/P4
+play,8,0,lee-d002,22,CBCBX,8/F8
+play,8,1,martt002,02,SSFX,13/G
+play,8,1,posaj001,22,CSBFBFFX,D/89D
+play,8,1,thomr004,12,SFBX,53/G
+play,8,1,bross001,00,X,9/F9
+play,9,0,millk005,22,BCBCFFX,8/F8
+play,9,0,gonza002,01,FX,3/P3
+play,9,0,bakop001,12,CBCS,K
+data,er,dempr002,6
+data,er,darev001,0
+data,er,clemr001,2
+data,er,nelsj001,0

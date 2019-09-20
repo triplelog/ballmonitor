@@ -1,0 +1,71 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,30,1,clayr001,,,,0,4,BBBB,finlc001,0,0,clayr001 walks. ,clayr001,0,
+,12,1,clayr001,,,,1,8,CCBS,finlc001,1,0,curtc001 strikes out. ,curtc001,0,
+,00,1,,,,,2,9,X,finlc001,2,0,Double Play. ,rodri001,0,
+,11,1,,,,,3,3,BCX,loaie001,1,0,,cruzj003,1,F
+,32,1,vizqo001,,,,4,10,CBBBCFB,loaie001,0,0,vizqo001 walks. ,vizqo001,1,
+,01,1,vizqo001,,,,5,12,CX,loaie001,1,0,,alomr001,1,P
+,32,1,vizqo001,,,,6,18,CBBFBS,loaie001,1,0,ramim002 strikes out. ,ramim002,1,
+,21,2,,,,,7,13,BBFX,finlc001,1,0,,palmr001,0,F
+,31,2,segud001,,,,8,18,BBSBB,finlc001,0,0,segud001 walks. ,segud001,0,
+,20,2,segud001,,,,9,21,BBX,finlc001,1,0,,mater001,0,F
+,02,2,segud001,,,,10,24,CSS,finlc001,1,0,kaplg001 strikes out. ,kaplg001,0,
+,12,2,,,,,11,22,CBSC,loaie001,1,0,thomj002 strikes out. ,thomj002,1,
+,02,2,,,,,12,26,CSFS,loaie001,1,0,sexsr001 strikes out. ,sexsr001,1,
+,31,2,justd001,,,,13,31,BBSBB,loaie001,0,0,justd001 walks. ,justd001,1,
+,00,2,justd001,,,,14,32,X,loaie001,1,0,,frymt001,1,F
+,21,3,alicl001,,,,15,28,.BCBX,finlc001,0,0,alicl001 singles. ,alicl001,0,
+,22,3,alicl001,,,,16,33,CCBBS,finlc001,1,0,evant001 strikes out. ,evant001,0,
+,12,3,alicl001,,,,17,37,BSFS,finlc001,1,0,clayr001 strikes out. ,clayr001,0,
+,12,3,,alicl001,,curtc001,18,41,CFBB,finlc001,0,0,alicl001 steals 2B. ,curtc001,0,
+alicl001 to 3B. curtc001 to 1B. ,22,3,curtc001,,alicl001,,19,46,CFBBS,finlc001,0,0,curtc001 strikes out. Passed Ball. ,curtc001,0,
+alicl001 scores. curtc001 to 2B. ,10,3,rodri001,curtc001,,,20,48,BX,finlc001,0,1,rodri001 singles. ,rodri001,0,
+,32,3,rodri001,curtc001,,,21,54,BBBCSC,finlc001,1,0,palmr001 strikes out. ,palmr001,0,
+,32,3,,,,,22,39,SBSFBBX,loaie001,1,0,,diaze002,1,F
+,32,3,,,,,23,45,CFBBBX,loaie001,1,0,cruzj003 grounds out. ,cruzj003,1,G
+,11,3,,,,,24,48,BCX,loaie001,1,0,,vizqo001,1,P
+,00,4,,,,,25,55,X,finlc001,1,0,segud001 grounds out. ,segud001,0,G
+,12,4,mater001,,,,26,59,FBSX,finlc001,0,0,mater001 singles. ,mater001,0,
+,12,4,mater001,,,,27,63,CSBS,finlc001,1,0,kaplg001 strikes out. ,kaplg001,0,
+mater001 to 2B. ,10,4,,mater001,,alicl001,28,65,B1,finlc001,0,0,Pickoff error. ,alicl001,0,
+,10,4,,mater001,,,29,68,B1X,finlc001,1,0,,alicl001,0,P
+,32,4,,,,,30,54,BCBBCX,loaie001,1,0,,alomr001,1,P
+,22,4,,,,,31,59,BCFBS,loaie001,1,0,ramim002 strikes out. ,ramim002,1,
+,01,4,,,,,32,61,SX,loaie001,1,0,thomj002 grounds out. ,thomj002,1,G
+,02,5,,,,,33,71,CCS,finlc001,1,0,evant001 strikes out. ,evant001,0,
+,00,5,clayr001,,,,34,72,X,finlc001,0,0,clayr001 reaches on error. ,clayr001,0,G
+clayr001 to 2B. ,00,5,curtc001,clayr001,,,35,73,X,finlc001,0,0,curtc001 singles. ,curtc001,0,
+clayr001 out. ,02,5,curtc001,,,,36,76,FSX,finlc001,2,0,,rodri001,0,
+,22,5,,,,,37,67,BCSBFS,loaie001,1,0,sexsr001 strikes out. ,sexsr001,1,
+,21,5,,justd001,,,38,71,FBBX,loaie001,0,0,justd001 doubles. ,justd001,1,
+,20,5,,justd001,,,39,74,BBX,loaie001,1,0,frymt001 grounds out. ,frymt001,1,G
+,02,5,,justd001,,,40,77,CCX,loaie001,1,0,diaze002 grounds out. ,diaze002,1,G
+,00,6,,,,,41,77,X,finlc001,1,0,palmr001 grounds out. ,palmr001,0,G
+,10,6,,,,,42,79,BX,finlc001,1,0,segud001 grounds out. ,segud001,0,G
+,10,6,,,,,43,81,BX,finlc001,1,0,mater001 grounds out. ,mater001,0,G
+,20,6,,,,,44,80,BBX,loaie001,1,0,cruzj003 grounds out. ,cruzj003,1,G
+,22,6,,,,,45,85,BCCBC,loaie001,1,0,vizqo001 strikes out. ,vizqo001,1,
+,12,6,,,,,46,89,BCCS,loaie001,1,0,alomr001 strikes out. ,alomr001,1,
+,32,7,,,,,47,88,BBFFFBS,finlc001,1,0,kaplg001 strikes out. ,kaplg001,0,
+,32,7,,,,,48,94,CBBFBC,finlc001,1,0,alicl001 strikes out. ,alicl001,0,
+,22,7,,,,,49,99,BCBFC,finlc001,1,0,evant001 strikes out. ,evant001,0,
+,02,7,,,,,50,92,FSC,loaie001,1,0,ramim002 strikes out. ,ramim002,1,
+,32,7,,,,,51,98,BCBSBS,loaie001,1,0,thomj002 strikes out. ,thomj002,1,
+,12,7,,,,,52,103,BSFFS,loaie001,1,0,sexsr001 strikes out. ,sexsr001,1,
+,10,8,,,,,53,101,BX,finlc001,1,0,,clayr001,0,F
+,31,8,curtc001,,,,54,106,BCBBB,finlc001,0,0,curtc001 walks. ,curtc001,0,
+curtc001 to 2B. ,00,8,,curtc001,,,55,107,X,finlc001,1,0,rodri001 grounds out. ,rodri001,0,G
+,12,8,,,,palmr001,56,111,BCSB,finlc001,1,0,curtc001 caught stealing. ,palmr001,0,
+,02,8,,,,,57,106,FFX,loaie001,1,0,justd001 grounds out. ,justd001,1,G
+,21,8,frymt001,,,,58,110,BFBX,loaie001,0,0,frymt001 singles. ,frymt001,1,
+,31,8,frymt001,,,,61,5,BSBBX,zimmj001,1,0,,aloms001,1,P
+frymt001 to 2B. ,32,8,cruzj003,frymt001,,,62,13,FBFFBBFB,zimmj001,0,0,cruzj003 walks. ,cruzj003,1,
+,32,8,cruzj003,frymt001,,,63,19,BBBCSS,zimmj001,1,0,vizqo001 strikes out. ,vizqo001,1,
+,02,9,,,,,65,114,FSS,finlc001,1,0,palmr001 strikes out. ,palmr001,0,
+,32,9,,,,,66,121,BSFBBFS,finlc001,1,0,segud001 strikes out. ,segud001,0,
+,32,9,mater001,,,,67,127,CBBSBX,finlc001,0,0,mater001 singles. ,mater001,0,
+mater001 to 2B. ,30,9,kaplg001,mater001,,,68,131,BBBB,finlc001,0,0,kaplg001 walks. ,kaplg001,0,
+,00,9,kaplg001,mater001,,,69,132,X,finlc001,1,0,,alicl001,0,F
+,00,9,,,,,71,1,X,wettj001,1,0,alomr001 grounds out. ,alomr001,1,G
+,32,9,,,,,72,7,BFFBBX,wettj001,0,1,ramim002 homers. ,ramim002,1,
+,22,9,,,,,73,12,BBFFX,wettj001,0,1,thomj002 homers. ,thomj002,1,

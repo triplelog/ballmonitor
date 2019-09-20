@@ -1,0 +1,136 @@
+version,2
+info,visteam,HOU
+info,hometeam,ARI
+info,site,PHO01
+info,date,2000/06/29
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,bellw901
+info,ump1b,onorb901
+info,ump2b,iassd901
+info,ump3b,hirsm901
+info,pitches,pitches
+info,temp,72
+info,winddir,ltor
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,161
+info,attendance,31518
+info,wp,johnr005
+info,lp,reyns001
+info,save,
+start,lugoj001,"Julio Lugo",0,1,6
+start,biggc001,"Craig Biggio",0,2,4
+start,bagwj001,"Jeff Bagwell",0,3,3
+start,hidar001,"Richard Hidalgo",0,4,8
+start,aloum001,"Moises Alou",0,5,7
+start,miesm001,"Matt Mieske",0,6,9
+start,euset001,"Tony Eusebio",0,7,2
+start,trubc001,"Chris Truby",0,8,5
+start,reyns001,"Shane Reynolds",0,9,1
+start,womat001,"Tony Womack",1,1,6
+start,bellj001,"Jay Bell",1,2,4
+start,gonzl001,"Luis Gonzalez",1,3,7
+start,finls001,"Steve Finley",1,4,8
+start,colbg001,"Greg Colbrunn",1,5,3
+start,lee-t002,"Travis Lee",1,6,9
+start,klasd001,"Danny Klassen",1,7,5
+start,milld002,"Damian Miller",1,8,2
+start,johnr005,"Randy Johnson",1,9,1
+play,1,0,lugoj001,11,BFX,9/F9
+play,1,0,biggc001,10,BX,8/F8D
+play,1,0,bagwj001,02,CFC,K/C
+play,1,1,womat001,02,CSFX,4/P4
+play,1,1,bellj001,01,CX,23/G
+play,1,1,gonzl001,10,BX,8/F8
+play,2,0,hidar001,32,BBCFBC,K/C
+play,2,0,aloum001,00,X,S8
+play,2,0,miesm001,22,BCFBFFS,K
+play,2,0,euset001,32,BFBBSX,43/G
+play,2,1,finls001,32,BBCFBB,W
+play,2,1,colbg001,12,BFCS,K
+play,2,1,lee-t002,12,CBSS,K
+play,2,1,klasd001,12,CCBX,43/G
+play,3,0,trubc001,12,BCSFS,K
+play,3,0,reyns001,02,FSS,K
+play,3,0,lugoj001,31,BBFBX,S8
+play,3,0,biggc001,01,CB,SB2
+play,3,0,biggc001,11,CBS,CS3(25)
+play,3,1,milld002,12,SCFBFX,D7/7S
+play,3,1,johnr005,02,CLS,K
+play,3,1,womat001,00,X,13/G.2-3
+play,3,1,bellj001,22,BCCBX,D7.3-H
+play,3,1,gonzl001,32,FBBFBFB,W
+play,3,1,finls001,00,X,HR/9.2-H;1-H
+play,3,1,colbg001,01,CX,S8
+play,3,1,lee-t002,12,BSSS,K
+play,4,0,biggc001,30,BBBB,W
+play,4,0,bagwj001,12,BCCX,9/F9D
+play,4,0,hidar001,31,FBBBB,W.1-2
+play,4,0,aloum001,00,X,S7.2-H;1X3(7546)
+play,4,0,miesm001,32,BCFBFFBB,W.1-2
+play,4,0,euset001,12,BFCS,K
+play,4,1,klasd001,31,FBBBX,63/G
+play,4,1,milld002,01,CX,D/89D
+play,4,1,johnr005,11,FBX,53/G.2-3
+play,4,1,womat001,12,CFBX,43/G
+play,5,0,trubc001,02,SCX,D9
+play,5,0,reyns001,02,SSS,K
+play,5,0,lugoj001,12,BCSS,K
+play,5,0,biggc001,12,FBSS,K
+play,5,1,bellj001,21,CBBX,9/F9
+play,5,1,gonzl001,30,BBBX,S9/9S
+play,5,1,finls001,12,BCFX,6/P6
+play,5,1,colbg001,32,BCBFBFX,63/G
+play,6,0,bagwj001,31,BCBBX,S7
+play,6,0,hidar001,10,BS,SB2
+play,6,0,hidar001,12,BSCH,HP
+play,6,0,aloum001,22,SBBFS,K
+play,6,0,miesm001,10,BX,64(1)3/GDP
+play,6,1,lee-t002,12,CBFFFC,K/C
+play,6,1,klasd001,22,SCBFBX,53/G
+play,6,1,milld002,11,FBX,63/G
+play,7,0,euset001,00,,NP
+sub,lee-t002,"Travis Lee",1,6,3
+play,7,0,euset001,00,,NP
+sub,bautd001,"Danny Bautista",1,5,9
+play,7,0,euset001,00,X,13/G
+play,7,0,trubc001,11,BCX,63/G
+play,7,0,reyns001,22,CBBSS,K
+play,7,1,johnr005,22,FBCBX,13/G
+play,7,1,womat001,02,FCS,K
+play,7,1,bellj001,00,X,8/F8D
+play,8,0,lugoj001,22,CSFBBX,9/L9
+play,8,0,biggc001,30,BBBB,W
+play,8,0,bagwj001,02,CSS,K
+play,8,0,hidar001,22,BBSCS,K
+play,8,1,gonzl001,00,X,3/G
+play,8,1,finls001,01,FX,8/F8
+play,8,1,bautd001,00,X,S8
+play,8,1,lee-t002,00,X,D/78.1-H
+play,8,1,klasd001,00,,NP
+sub,valdm001,"Marc Valdes",0,9,1
+play,8,1,klasd001,22,BBSFX,S9/9S.2-H
+play,8,1,milld002,11,BCH,HP.1-2
+play,8,1,johnr005,00,,NP
+sub,contj001,"Jason Conti",1,9,11
+play,8,1,contj001,12,BFFX,S9.2-H;1-3
+com,"Debut game for Jason Conti"
+play,8,1,womat001,12,CBFFFX,6(1)/FO/G
+play,9,0,aloum001,00,,NP
+sub,mantm001,"Matt Mantei",1,9,1
+play,9,0,aloum001,00,X,63/G
+play,9,0,miesm001,00,,NP
+sub,berkl001,"Lance Berkman",0,6,11
+play,9,0,berkl001,12,SBSS,K
+play,9,0,euset001,00,,NP
+sub,melum001,"Mitch Meluskey",0,7,11
+play,9,0,melum001,12,CBCC,K/C
+data,er,reyns001,6
+data,er,valdm001,1
+data,er,johnr005,1
+data,er,mantm001,0

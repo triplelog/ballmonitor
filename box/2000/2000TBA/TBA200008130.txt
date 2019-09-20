@@ -1,0 +1,136 @@
+version,2
+info,visteam,CHA
+info,hometeam,TBA
+info,site,STP01
+info,date,2000/08/13
+info,number,0
+info,starttime,1:15PM
+info,daynight,day
+info,usedh,true
+info,umphome,hodgm901
+info,ump1b,reedr901
+info,ump2b,wendh902
+info,ump3b,buckc901
+info,pitches,pitches
+info,temp,72
+info,winddir,fromlf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,148
+info,attendance,19685
+info,wp,lopea002
+info,lp,howrb001
+info,save,
+start,durhr001,"Ray Durham",0,1,4
+start,valej003,"Jose Valentin",0,2,6
+start,thomf001,"Frank Thomas",0,3,3
+start,ordom001,"Magglio Ordonez",0,4,9
+start,bainh001,"Harold Baines",0,5,10
+start,perrh001,"Herbert Perry",0,6,5
+start,lee-c001,"Carlos Lee",0,7,7
+start,abboj002,"Jeff Abbott",0,8,8
+start,johnm003,"Mark Johnson",0,9,2
+start,garlj001,"Jon Garland",0,0,1
+start,willg001,"Gerald Williams",1,1,8
+start,johnr006,"Russ Johnson",1,2,4
+start,vaugg001,"Greg Vaughn",1,3,10
+start,mcgrf001,"Fred McGriff",1,4,3
+start,guilj001,"Jose Guillen",1,5,9
+start,cox-s001,"Steve Cox",1,6,7
+start,flahj001,"John Flaherty",1,7,2
+start,huffa001,"Aubrey Huff",1,8,5
+start,guilo001,"Ozzie Guillen",1,9,6
+start,lopea002,"Albie Lopez",1,0,1
+play,1,0,durhr001,21,CBBX,43/G
+play,1,0,valej003,00,X,43/G
+play,1,0,thomf001,00,X,53/G
+play,1,1,willg001,22,BCCBX,53/G
+play,1,1,johnr006,11,BCX,53/G
+play,1,1,vaugg001,11,BSX,63/G
+play,2,0,ordom001,12,CBCS,K
+play,2,0,bainh001,32,BFCFBFBB,W
+play,2,0,perrh001,20,BBX,3/FL
+play,2,0,lee-c001,22,CBSBFS,K
+play,2,1,mcgrf001,22,SCBFBFX,8/F8D
+play,2,1,guilj001,12,BCFC,K/C
+play,2,1,cox-s001,00,X,43/G
+play,3,0,abboj002,02,FFX,DGR/F7DW
+com,"$Abbott's ball landed on the top of the padding and stayed"
+play,3,0,johnm003,11,CBX,E5/G.2-3
+play,3,0,durhr001,32,FSBBBX,64(1)/FO.3-H
+play,3,0,valej003,12,CSFBX,6(1)3/GDP
+play,3,1,flahj001,00,X,3/P3
+play,3,1,huffa001,22,CCBFBX,3/G
+play,3,1,guilo001,02,CCX,43/G
+play,4,0,thomf001,32,FCFBFBBX,HR/7
+play,4,0,ordom001,00,X,53/G
+play,4,0,bainh001,01,FX,7/F7
+play,4,0,perrh001,11,BFX,53/G
+play,4,1,willg001,12,SSBX,HR/7
+play,4,1,johnr006,10,BX,S8
+play,4,1,vaugg001,32,CBBBFFX,4/P4
+play,4,1,mcgrf001,00,1,PO1(13)
+play,4,1,mcgrf001,10,1BX,S9
+play,4,1,guilj001,00,X,D7.1-3
+play,4,1,cox-s001,22,BSBFX,43/G
+play,5,0,lee-c001,02,SFS,K
+play,5,0,abboj002,12,CBFX,7/F7
+play,5,0,johnm003,01,FX,7/F7
+play,5,1,flahj001,00,X,4/P4
+play,5,1,huffa001,20,BBX,43/G
+play,5,1,guilo001,12,FFBX,53/G
+play,6,0,durhr001,31,BFBBX,43/G
+play,6,0,valej003,21,BCBX,S8/8S
+play,6,0,thomf001,10,BX,4/FL
+play,6,0,ordom001,00,B,SB2
+play,6,0,ordom001,11,BSX,D7.2-H
+play,6,0,bainh001,00,X,43/G
+play,6,1,willg001,00,X,S9
+play,6,1,johnr006,20,BB1,POCS2(14)
+play,6,1,johnr006,22,BB1CFX,9/F9
+play,6,1,vaugg001,32,BSBFFBFX,13/G
+play,7,0,perrh001,00,X,3/FL
+play,7,0,lee-c001,22,BCFFBX,8/F8
+play,7,0,abboj002,12,FBSS,K
+play,7,1,mcgrf001,01,FX,9/F9D
+play,7,1,guilj001,20,BBX,8/F8
+play,7,1,cox-s001,00,X,D7
+play,7,1,flahj001,12,FFBFX,S8.2-H
+play,7,1,huffa001,32,CBBBCX,2/FL
+play,8,0,johnm003,00,X,7/F7
+play,8,0,durhr001,32,BBBCCX,53/G
+play,8,0,valej003,22,CCBFBX,D8/8D
+play,8,0,thomf001,01,CX,53/G
+play,8,1,guilo001,00,,NP
+sub,simab001,"Bill Simas",0,0,1
+play,8,1,guilo001,00,,NP
+sub,abboj002,"Jeff Abbott",0,8,7
+play,8,1,guilo001,00,,NP
+sub,singc001,"Chris Singleton",0,7,8
+play,8,1,guilo001,12,LBFX,53/G
+play,8,1,willg001,10,BX,43/G
+play,8,1,johnr006,30,BBBB,W
+play,8,1,vaugg001,00,X,8/F8
+play,9,0,ordom001,10,BX,8/F8
+play,9,0,bainh001,00,X,31/G
+play,9,0,perrh001,01,CX,53/G
+play,9,1,mcgrf001,00,,NP
+sub,wunsk001,"Kelly Wunsch",0,0,1
+play,9,1,mcgrf001,22,SBFBS,K
+play,9,1,guilj001,32,CBBCFBB,W
+play,9,1,cox-s001,00,,NP
+sub,cairm001,"Miguel Cairo",1,6,11
+play,9,1,cairm001,00,,NP
+sub,howrb001,"Bobby Howry",0,0,1
+play,9,1,cairm001,00,,NP
+sub,tynej001,"Jason Tyner",1,5,12
+play,9,1,cairm001,21,CBBB,SB2
+play,9,1,cairm001,32,CBBBSB,W
+play,9,1,flahj001,32,BFFFFBBFFFFX,HR/7.2-H;1-H
+data,er,garlj001,2
+data,er,simab001,0
+data,er,wunsk001,1
+data,er,howrb001,2
+data,er,lopea002,3

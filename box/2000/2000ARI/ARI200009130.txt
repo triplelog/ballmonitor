@@ -1,0 +1,151 @@
+version,2
+info,visteam,LAN
+info,hometeam,ARI
+info,site,PHO01
+info,date,2000/09/13
+info,number,0
+info,starttime,6:35PM
+info,daynight,night
+info,usedh,false
+info,umphome,reynj901
+info,ump1b,hirsj901
+info,ump2b,willc901
+info,ump3b,wegnm901
+info,pitches,pitches
+info,temp,72
+info,winddir,ltor
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,159
+info,attendance,34526
+info,wp,plesd001
+info,lp,adamt001
+info,save,
+start,goodt001,"Tom Goodwin",0,1,8
+start,grudm001,"Mark Grudzielanek",0,2,4
+start,grees001,"Shawn Green",0,3,9
+start,shefg001,"Gary Sheffield",0,4,7
+start,karre001,"Eric Karros",0,5,3
+start,belta001,"Adrian Beltre",0,6,5
+start,hundt001,"Todd Hundley",0,7,2
+start,coraa001,"Alex Cora",0,8,6
+start,browk001,"Kevin Brown",0,9,1
+start,womat001,"Tony Womack",1,1,6
+start,bellj001,"Jay Bell",1,2,4
+start,gonzl001,"Luis Gonzalez",1,3,7
+start,colbg001,"Greg Colbrunn",1,4,3
+start,delld001,"David Dellucci",1,5,9
+start,willm003,"Matt D. Williams",1,6,5
+start,bautd001,"Danny Bautista",1,7,8
+start,stink001,"Kelly Stinnett",1,8,2
+start,andeb002,"Brian Anderson",1,9,1
+play,1,0,goodt001,00,X,S9
+play,1,0,grudm001,12,CCBFFX,9/F9S
+play,1,0,grees001,00,,BK.1-2
+play,1,0,grees001,00,X,31/G.2-3
+play,1,0,shefg001,12,BCFS,K
+play,1,1,womat001,32,BBBCCS,K
+play,1,1,bellj001,11,BSX,9/F9
+play,1,1,gonzl001,02,CFX,43/G
+play,2,0,karre001,22,CBFBS,K
+play,2,0,belta001,31,BBFBB,W
+badj,hundt001,L
+play,2,0,hundt001,22,BSBCX,36(1)/FO
+play,2,0,coraa001,00,X,46(1)/FO
+play,2,1,colbg001,10,BX,9/F9
+play,2,1,delld001,10,BX,S8
+play,2,1,willm003,11,CBX,43/G.1-2
+play,2,1,bautd001,01,CX,9/F9
+play,3,0,browk001,12,CBFS,K
+play,3,0,goodt001,10,BX,43/G
+play,3,0,grudm001,10,BX,63/G
+play,3,1,stink001,01,CX,9/F9D
+play,3,1,andeb002,02,SSS,K
+play,3,1,womat001,11,BCX,43/G
+play,4,0,grees001,02,CFX,8/F8
+play,4,0,shefg001,10,BX,9/FL
+play,4,0,karre001,22,FCBBC,K/C
+play,4,1,bellj001,00,X,53/G
+play,4,1,gonzl001,11,BFX,D/89
+play,4,1,colbg001,00,X,63/G.2-3
+play,4,1,delld001,30,BBBB,W
+play,4,1,willm003,32,CBBCBFS,K
+play,5,0,belta001,22,CCFBBX,7/L7
+badj,hundt001,L
+play,5,0,hundt001,12,CCBX,4/L4
+play,5,0,coraa001,12,CBFX,63/G
+play,5,1,bautd001,01,CX,S9
+play,5,1,stink001,12,CFFFBS,K
+play,5,1,andeb002,11,BFX,5/BP5
+play,5,1,womat001,00,X,8/F8
+play,6,0,browk001,11,FBX,4/P4
+play,6,0,goodt001,22,CBBFC,K/C
+play,6,0,grudm001,02,FCX,63/G
+play,6,1,bellj001,11,BSX,HR/7
+play,6,1,gonzl001,31,BBBCX,43/G
+play,6,1,colbg001,21,BBSX,HR/7
+play,6,1,delld001,12,CBSX,63/G
+play,6,1,willm003,00,X,63/G
+play,7,0,grees001,00,X,S8
+play,7,0,shefg001,01,CX,54(1)3/GDP
+play,7,0,karre001,10,BX,8/F8
+play,7,1,bautd001,00,X,D7
+play,7,1,stink001,22,BBSFX,FC6.2X3(65);B-1#
+play,7,1,andeb002,00,X,14/SH.1-2
+play,7,1,womat001,01,CX,1/L1
+play,8,0,belta001,11,BCX,HR/78
+badj,hundt001,L
+play,8,0,hundt001,21,BBSX,D9/9S
+play,8,0,coraa001,00,,NP
+sub,elstk001,"Kevin Elster",0,8,11
+play,8,0,elstk001,00,,NP
+sub,lodup001,"Paul LoDuca",0,7,12
+play,8,0,elstk001,00,X,43/G.2-3
+play,8,0,browk001,00,,NP
+sub,leyrj001,"Jim Leyritz",0,9,11
+play,8,0,leyrj001,22,BCBFH,HP
+play,8,0,goodt001,00,,NP
+sub,bocah001,"Hiram Bocachica",0,9,12
+play,8,0,goodt001,00,X,FC5.3XH(52);1-2;B-1#
+com,"Debut game for Hiram Bocachica"
+play,8,0,grudm001,32,BFCBBS,K
+play,8,1,bellj001,00,,NP
+sub,lodup001,"Paul LoDuca",0,7,2
+play,8,1,bellj001,00,,NP
+sub,branj002,"Jeff Branson",0,8,6
+play,8,1,bellj001,00,,NP
+sub,adamt001,"Terry Adams",0,9,1
+play,8,1,bellj001,12,BCCFS,K
+play,8,1,gonzl001,01,CX,5/FL
+play,8,1,colbg001,12,SSFFFBS,K
+play,9,0,grees001,00,,NP
+sub,contj001,"Jason Conti",1,5,9
+play,9,0,grees001,00,,NP
+sub,mantm001,"Matt Mantei",1,9,1
+play,9,0,grees001,30,BBBB,W
+play,9,0,shefg001,12,CCFBX,5/P5
+play,9,0,karre001,22,BCBSS,K+SB2
+play,9,0,belta001,00,X,S7.2-H
+play,9,0,lodup001,00,,NP
+sub,hansd001,"Dave Hansen",0,7,11
+play,9,0,hansd001,00,,NP
+sub,plesd001,"Dan Plesac",1,9,1
+play,9,0,hansd001,12,SFBC,K/C
+play,9,1,contj001,00,,NP
+sub,kreuc001,"Chad Kreuter",0,7,2
+play,9,1,contj001,00,X,S4/BG4
+play,9,1,willm003,20,BBX,S7.1-2
+play,9,1,bautd001,10,BX,4(1)3/GDP.2-3
+play,9,1,stink001,00,,NP
+sub,counc001,"Craig Counsell",1,8,11
+play,9,1,counc001,32,BBFCFBB,W
+play,9,1,plesd001,00,,NP
+sub,ryanr001,"Rob Ryan",1,9,11
+play,9,1,ryanr001,00,X,S8.3-H;1-2
+data,er,browk001,2
+data,er,adamt001,1
+data,er,andeb002,1
+data,er,mantm001,1
+data,er,plesd001,0

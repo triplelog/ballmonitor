@@ -1,0 +1,87 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,21,1,,,,,0,4,BBCX,rappp001,1,0,stews002 grounds out. ,stews002,0,G
+,32,1,,,,,1,10,BBCCBX,rappp001,1,0,gonza001 grounds out. ,gonza001,0,G
+,12,1,,,,,2,14,CBCX,rappp001,1,0,martd002 grounds out. ,martd002,0,G
+,22,1,,,,,3,6,BBCFFX,carpc002,0,1,andeb001 homers. ,andeb001,1,
+,02,1,,,,,4,9,CFC,carpc002,1,0,hairj002 strikes out. ,hairj002,1,
+,30,1,deshd001,,,,5,13,BBBB,carpc002,0,0,deshd001 walks. ,deshd001,1,
+,31,1,deshd001,,,,6,18,BCBBX,carpc002,1,0,,bellj002,1,F
+deshd001 scores. ,22,1,,richc001,,,7,23,CFBBX,carpc002,0,1,richc001 doubles. ,richc001,1,
+richc001 scores. ,00,1,ripkc001,,,,8,24,X,carpc002,0,1,ripkc001 singles. ,ripkc001,1,
+,00,1,ripkc001,,,,9,25,X,carpc002,1,0,,moram002,1,F
+,12,2,,,,,10,18,CBCS,rappp001,1,0,delgc001 strikes out. ,delgc001,0,
+,11,2,,,,,11,21,CBX,rappp001,1,0,fletd001 grounds out. ,fletd001,0,G
+,00,2,,,,,12,22,X,rappp001,1,0,,batit001,0,F
+,11,2,fordb001,,,,13,28,CBX,carpc002,0,0,fordb001 singles. ,fordb001,1,
+,32,2,fordb001,,,,14,35,BLCBFBX,carpc002,1,0,,kingg001,1,F
+fordb001 to 2B. ,31,2,andeb001,fordb001,,,15,40,BBCBB,carpc002,0,0,andeb001 walks. ,andeb001,1,
+fordb001 scores. andeb001 to 2B. ,10,2,hairj002,andeb001,,,16,42,BX,carpc002,0,1,hairj002 reaches on error. ,hairj002,1,G
+andeb001 scores. hairj002 scores. deshd001 to 2B. ,11,2,,deshd001,,,17,45,CBX,carpc002,0,2,deshd001 singles. ,deshd001,1,
+deshd001 to 3B. ,01,2,,,deshd001,,18,47,CX,carpc002,1,0,bellj002 grounds out. ,bellj002,1,G
+,22,2,,,deshd001,,19,52,SCBBS,carpc002,1,0,richc001 strikes out. ,richc001,1,
+,32,3,,,,,20,30,BBFBFFFS,rappp001,1,0,cruzj004 strikes out. ,cruzj004,0,
+,32,3,,,,,21,36,BBCBCC,rappp001,1,0,grebc001 strikes out. ,grebc001,0,
+,00,3,,,,,22,37,X,rappp001,1,0,,casta001,0,F
+,22,3,,,,,23,57,BSCBS,carpc002,1,0,ripkc001 strikes out. ,ripkc001,1,
+,22,3,moram002,,,,24,62,BCSBH,carpc002,0,0,moram002 hit by pitch. ,moram002,1,
+,00,3,moram002,,,,25,63,X,carpc002,1,0,,fordb001,1,P
+,10,3,moram002,,,,26,65,BX,carpc002,1,0,kingg001 grounds out. ,kingg001,1,G
+,10,4,stews002,,,,27,39,BX,rappp001,0,0,stews002 singles. ,stews002,0,
+stews002 to 2B. ,10,4,,stews002,,,28,41,BX,rappp001,1,0,gonza001 grounds out. ,gonza001,0,G
+stews002 to 3B. ,22,4,,,stews002,,29,46,BCBCX,rappp001,1,0,,martd002,0,F
+,12,4,,,stews002,,30,50,CFBS,rappp001,1,0,delgc001 strikes out. ,delgc001,0,
+,30,4,andeb001,,,,32,4,BBBB,hallr001,0,0,andeb001 walks. ,andeb001,1,
+andeb001 to 2B. ,11,4,hairj002,andeb001,,,33,7,CBX,hallr001,0,0,hairj002 reaches on error. ,hairj002,1,G
+,21,4,hairj002,andeb001,,,34,11,BSBX,hallr001,1,0,,deshd001,1,F
+andeb001 scores. hairj002 to 2B. ,12,4,bellj002,hairj002,,,35,15,FBCX,hallr001,0,1,bellj002 singles. ,bellj002,1,
+hairj002 to 3B. bellj002 out. ,11,4,richc001,,hairj002,,36,18,FBX,hallr001,1,0,richc001 reaches on fielder's choice. ,richc001,1,
+hairj002 scores. ,10,4,richc001,,,ripkc001,37,20,B+3,hallr001,0,1,Pickoff error. ,ripkc001,1,
+richc001 to 2B. ,31,4,ripkc001,richc001,,,38,26,B+3BBCX,hallr001,0,0,ripkc001 singles. ,ripkc001,1,
+richc001 to 3B. ripkc001 to 2B. ,22,4,moram002,ripkc001,richc001,,39,31,BCBCX,hallr001,0,0,moram002 singles. ,moram002,1,
+richc001 scores. ripkc001 to 3B. moram002 to 2B. ,10,4,fordb001,moram002,ripkc001,,40,33,BX,hallr001,0,1,fordb001 singles. ,fordb001,1,
+ripkc001 scores. moram002 to 3B. fordb001 to 2B. ,32,4,kingg001,fordb001,moram002,,41,39,CBFBBX,hallr001,0,1,kingg001 singles. ,kingg001,1,
+moram002 scores. fordb001 scores. kingg001 to 3B. ,00,4,,andeb001,kingg001,,43,1,X,painl001,0,2,andeb001 doubles. ,andeb001,1,
+kingg001 scores. andeb001 to 3B. ,22,4,hairj002,,andeb001,,44,6,BFCBX,painl001,0,1,hairj002 singles. ,hairj002,1,
+andeb001 scores. hairj002 scores. deshd001 scores. ,32,4,,,,,45,14,BBCBCFFX,painl001,0,3,deshd001 homers. ,deshd001,1,
+,00,4,,,,,46,15,X,painl001,1,0,,bellj002,1,F
+,20,5,,,,,47,53,BBX,rappp001,0,1,fletd001 homers. ,fletd001,0,
+,31,5,,,,,48,58,BFBBX,rappp001,1,0,,batit001,0,L
+,00,5,,,,,49,59,X,rappp001,1,0,cruzj004 grounds out. ,cruzj004,0,G
+,21,5,,,,,50,63,BBCX,rappp001,1,0,,grebc001,0,P
+,12,5,,,,,53,19,BFSC,painl001,1,0,richc001 strikes out. ,richc001,1,
+,01,5,ripkc001,,,,54,21,SX,painl001,0,0,ripkc001 singles. ,ripkc001,1,
+ripkc001 to 2B. ,32,5,garcj001,ripkc001,,,56,29,CCBFBFBB,painl001,0,0,garcj001 walks. ,garcj001,1,
+lewim001 to 3B. garcj001 to 2B. ,32,5,fordb001,garcj001,lewim001,,58,36,FBBCFBX,painl001,0,0,fordb001 singles. ,fordb001,1,
+lewim001 scores. garcj001 to 3B. fordb001 to 2B. ,11,5,kingg001,fordb001,garcj001,,59,39,BSX,painl001,0,1,kingg001 singles. ,kingg001,1,
+garcj001 scores. ,32,5,kingg001,fordb001,,,60,46,BBBCCFX,painl001,1,1,andeb001 hits sacrifice fly. ,andeb001,1,
+fordb001 scores. kingg001 to 3B. ,31,5,hairj002,,kingg001,,61,51,BFBBX,painl001,0,1,hairj002 singles. ,hairj002,1,
+kingg001 scores. hairj002 to 2B. ,00,5,deshd001,hairj002,,,62,52,X,painl001,0,1,deshd001 singles. ,deshd001,1,
+hairj002 scores. hubbt001 to 2B. ,00,5,bellj002,hubbt001,,,65,1,X,frasj001,0,1,bellj002 singles. ,bellj002,1,
+hubbt001 to 3B. bellj002 to 2B. ,11,5,richc001,bellj002,hubbt001,,66,4,CBX,frasj001,0,0,richc001 singles. ,richc001,1,
+,22,5,richc001,bellj002,hubbt001,,67,9,CBSBC,frasj001,1,0,lewim001 strikes out. ,lewim001,1,
+,12,6,,,,,71,67,CBCX,rappp001,1,0,,casta001,0,F
+,11,6,,,,,72,70,BCX,rappp001,1,0,,stews002,0,F
+,02,6,,,,,73,73,CSC,rappp001,1,0,gonza001 strikes out. ,gonza001,0,
+,00,6,,,,,75,10,X,frasj001,1,0,garcj001 grounds out. ,garcj001,1,G
+,01,6,,,,,76,12,CX,frasj001,0,1,fordb001 homers. ,fordb001,1,
+,32,6,,,,,77,18,BCBBFX,frasj001,1,0,kingg001 grounds out. ,kingg001,1,G
+,00,6,,,,,79,19,X,frasj001,1,0,garck002 grounds out. ,garck002,1,G
+,32,7,,,,,82,79,BSBBCS,rappp001,1,0,mottc001 strikes out. ,mottc001,0,
+,32,7,delgc001,,,,83,85,CCBBBB,rappp001,0,0,delgc001 walks. ,delgc001,0,
+,12,7,delgc001,,,,85,89,FFBS,rappp001,1,0,cordm001 strikes out. ,cordm001,0,
+,31,7,delgc001,,,,86,94,BBBCX,rappp001,1,0,,batit001,0,F
+,10,7,,,,,87,21,BX,frasj001,1,0,,hairj002,1,F
+,10,7,hubbt001,,,,88,23,BX,frasj001,0,0,hubbt001 singles. ,hubbt001,1,
+,00,7,,,,,89,24,X,frasj001,2,0,Double Play. ,bellj002,1,
+,20,8,,,,,93,3,BBX,spurj001,1,0,,wellv001,0,
+,12,8,,,,,94,7,CBFS,spurj001,1,0,grebc001 strikes out. ,grebc001,0,
+,32,8,,,,,95,13,BBFBCX,spurj001,1,0,,casta001,0,P
+,32,8,minor001,,,,97,32,BFBFBFFB,frasj001,0,0,minor001 walks. ,minor001,1,
+minor001 to 2B. ,00,8,lewim001,minor001,,,98,33,X,frasj001,0,0,lewim001 singles. ,lewim001,1,
+,01,8,lewim001,minor001,,,99,35,CX,frasj001,1,0,,garcj001,1,P
+minor001 to 3B. lewim001 to 2B. ,00,8,,lewim001,minor001,lunaf001,100,36,B,frasj001,0,0,Passed Ball. ,lunaf001,1,
+minor001 scores. lewim001 to 3B. ,10,8,,,lewim001,,101,38,BX,frasj001,1,1,lunaf001 grounds out. ,lunaf001,1,G
+,00,8,,,lewim001,,102,39,X,frasj001,1,0,,kingg001,1,L
+,00,9,,,,,104,1,X,groob001,1,0,,wised001,0,F
+,12,9,,,,,106,4,CBFX,breal001,1,0,woodc001 grounds out. ,woodc001,0,G
+,22,9,,,,,107,9,CBCBS,breal001,1,0,mottc001 strikes out. ,mottc001,0,

@@ -1,0 +1,153 @@
+version,2
+info,visteam,SLN
+info,hometeam,CIN
+info,site,CIN08
+info,date,2000/06/28
+info,number,0
+info,starttime,7:35PM
+info,daynight,night
+info,usedh,false
+info,umphome,timmt901
+info,ump1b,schrp901
+info,ump2b,mcclt901
+info,ump3b,cuzzp901
+info,pitches,pitches
+info,temp,78
+info,winddir,tocf
+info,windspeed,7
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,189
+info,attendance,37861
+info,wp,reyed001
+info,lp,benea002
+info,save,
+start,rente001,"Edgar Renteria",0,1,6
+start,drewj001,"J.D. Drew",0,2,9
+start,edmoj001,"Jim Edmonds",0,3,8
+start,mcgwm001,"Mark McGwire",0,4,3
+start,lankr001,"Ray Lankford",0,5,7
+start,paquc001,"Craig Paquette",0,6,5
+start,mathm001,"Mike Matheny",0,7,2
+start,polap001,"Placido Polanco",0,8,4
+start,hentp001,"Pat Hentgen",0,9,1
+start,larkb001,"Barry Larkin",1,1,6
+start,yound001,"Dmitri Young",1,2,7
+start,grifk002,"Ken Griffey",1,3,8
+start,bichd001,"Dante Bichette",1,4,9
+start,cases001,"Sean Casey",1,5,3
+start,boona001,"Aaron Boone",1,6,5
+start,santb001,"Benito Santiago",1,7,2
+start,reesp001,"Pokey Reese",1,8,4
+start,desse001,"Elmer Dessens",1,9,1
+play,1,0,rente001,01,CX,3/FL
+play,1,0,drewj001,32,BBCCBFB,W
+play,1,0,edmoj001,12,CFBC,K/C
+play,1,0,mcgwm001,12,CBCC,K/C
+play,1,1,larkb001,32,BCBBFX,63/G
+play,1,1,yound001,02,CFFFS,K23
+play,1,1,grifk002,11,CBX,7/F7S
+play,2,0,lankr001,12,CBSS,K
+play,2,0,paquc001,00,X,4/P4
+play,2,0,mathm001,21,CBBX,3/G
+play,2,1,bichd001,21,BFBX,3/P3
+play,2,1,cases001,12,CSBX,43/G
+play,2,1,boona001,22,CCBBX,63/G
+play,3,0,polap001,11,BCX,D9/9S
+play,3,0,hentp001,21,BBFX,54/SH.2-3
+play,3,0,rente001,00,X,63/G.3-H
+play,3,0,drewj001,11,BCX,S9
+play,3,0,edmoj001,31,BBCBX,8/F8D
+play,3,1,santb001,11,BCX,9/F9
+play,3,1,reesp001,11,BFX,S8
+play,3,1,desse001,31,BBSBB,W.1-2
+play,3,1,larkb001,22,BFCBFX,8/F8.2-3
+play,3,1,yound001,02,FSFX,3/L3
+play,4,0,mcgwm001,01,CX,3/FL
+play,4,0,lankr001,01,FX,S8/8S
+play,4,0,paquc001,00,X,8/F8
+play,4,0,mathm001,32,BFBBFB,W.1-2
+play,4,0,polap001,12,BSSS,K
+play,4,1,grifk002,22,CBBFFFC,K/C
+play,4,1,bichd001,01,SX,63/G
+play,4,1,cases001,21,FBBX,7/F7
+play,5,0,hentp001,00,X,31/G
+play,5,0,rente001,20,BBX,D7
+play,5,0,drewj001,12,CCBX,5/P5
+play,5,0,edmoj001,31,BBCBB,W
+play,5,0,mcgwm001,32,FFBBBC,K/C
+play,5,1,boona001,22,FBBFFX,S8
+play,5,1,santb001,00,X,7/F7
+play,5,1,reesp001,12,CFBFFX,6/P6
+play,5,1,desse001,30,BBBB,W.1-2
+play,5,1,larkb001,11,BFX,9/F9
+play,6,0,lankr001,00,X,HR/78
+play,6,0,paquc001,10,BX,D7
+play,6,0,mathm001,00,X,24/SH.2-3
+play,6,0,polap001,00,X,53/G
+play,6,0,hentp001,00,,NP
+sub,suttl001,"Larry Sutton",0,9,11
+play,6,0,suttl001,30,BBBB,W
+play,6,0,rente001,00,,NP
+sub,aybam001,"Manny Aybar",1,9,1
+play,6,0,rente001,01,CX,S.3-H;1-2
+play,6,0,drewj001,00,,NP
+sub,reyed001,"Dennys Reyes",1,9,1
+play,6,0,drewj001,22,BSCBS,K
+play,6,1,yound001,00,,NP
+sub,benea002,"Alan Benes",0,9,1
+play,6,1,yound001,00,X,8/L8
+play,6,1,grifk002,21,BBFX,8/F8
+play,6,1,bichd001,11,BCX,S8
+play,6,1,cases001,02,CFH,HP.1-2
+play,6,1,boona001,10,BX,S7.2-H;1-2
+play,6,1,santb001,12,FBSX,HR/7.2-H;1-H
+play,6,1,reesp001,32,BBFFBC,K/C
+play,7,0,edmoj001,32,BBSFBB,W
+play,7,0,mcgwm001,22,FBBSS,K
+play,7,0,lankr001,22,CBBSC,K/C
+play,7,0,paquc001,22,BSSBFS,K
+play,7,1,reyed001,00,,NP
+sub,morrh001,"Hal Morris",1,9,11
+play,7,1,morrh001,12,CFBX,63/G
+play,7,1,larkb001,31,CBBBB,W
+play,7,1,yound001,00,,NP
+sub,mattm001,"Mike Matthews",0,9,1
+play,7,1,yound001,10,BX,S8/8S.1-2
+play,7,1,grifk002,01,SX,8/F8D.2-3;1-2
+play,7,1,bichd001,30,IIII,IW
+play,7,1,cases001,00,X,D9.3-H;2-H;1-H
+play,7,1,boona001,00,,NP
+sub,jamem001,"Mike James",0,9,1
+play,7,1,boona001,02,SCC,K/C
+play,8,0,mathm001,00,,NP
+sub,morrh001,"Hal Morris",1,9,3
+play,8,0,mathm001,00,,NP
+sub,sulls001,"Scott Sullivan",1,5,1
+play,8,0,mathm001,00,,NP
+sub,howat001,"Thomas Howard",0,7,11
+play,8,0,howat001,12,FBFFX,31/G
+play,8,0,polap001,32,FBBSFBX,8/F8
+play,8,0,jamem001,00,,NP
+sub,marre001,"Eli Marrero",0,9,11
+play,8,0,marre001,12,BSSS,K
+play,8,1,santb001,00,,NP
+sub,marre001,"Eli Marrero",0,9,2
+play,8,1,santb001,00,,NP
+sub,thomm002,"Mark Thompson",0,7,1
+play,8,1,santb001,11,FBX,S7
+play,8,1,reesp001,22,BFBCX,6(1)3/GDP
+play,8,1,morrh001,12,SFBS,K
+play,9,0,rente001,02,CFFX,9/F9
+play,9,0,drewj001,01,CX,8/F8
+play,9,0,edmoj001,12,FCBS,K
+data,er,hentp001,0
+data,er,benea002,5
+data,er,mattm001,2
+data,er,jamem001,0
+data,er,thomm002,0
+data,er,desse001,3
+data,er,aybam001,0
+data,er,reyed001,0
+data,er,sulls001,0

@@ -1,0 +1,78 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,00,1,,,,,0,1,X,baldj002,1,0,,cruzj004,0,F
+,20,1,,,,,1,4,BBX,baldj002,1,0,,bushh001,0,F
+,22,1,,,,,2,9,BFCBS,baldj002,1,0,mondr002 strikes out. ,mondr002,0,
+,10,1,,,,,3,2,BX,escok001,1,0,,durhr001,1,F
+,32,1,,,,,4,9,BBFBFFX,escok001,0,1,valej003 homers. ,valej003,1,
+,02,1,,,,,5,12,CCS,escok001,1,0,thomf001 strikes out. ,thomf001,1,
+,32,1,konep001,,,,6,19,FCBFBBB,escok001,0,0,konep001 walks. ,konep001,1,
+,00,1,konep001,,,,7,20,X,escok001,1,0,,singc001,1,F
+,31,2,delgc001,,,,8,14,CBBBB,baldj002,0,0,delgc001 walks. ,delgc001,0,
+,00,2,delgc001,,,,9,15,X,baldj002,1,0,,fullb001,0,F
+,20,2,delgc001,,,,10,18,BBX,baldj002,1,0,,batit001,0,F
+,10,2,delgc001,,,,11,20,BX,baldj002,1,0,,fletd001,0,F
+,32,2,lee-c001,,,,12,31,FBFBFBFFFFB,escok001,0,0,lee-c001 walks. ,lee-c001,1,
+lee-c001 to 2B. ,00,2,,lee-c001,,,13,32,X,escok001,1,0,perrh001 grounds out. ,perrh001,1,G
+lee-c001 to 3B. ,10,2,,,lee-c001,,14,34,BX,escok001,1,0,abboj002 grounds out. ,abboj002,1,G
+lee-c001 scores. ,21,2,johnm003,,,,15,38,BCBX,escok001,0,1,johnm003 singles. ,johnm003,1,
+,10,2,johnm003,,,,16,40,BX,escok001,1,0,,durhr001,1,
+,00,3,,,,,17,21,X,baldj002,0,1,cordm001 homers. ,cordm001,0,
+,00,3,,,,,18,22,X,baldj002,1,0,,gonza001,0,
+,22,3,,,,,19,29,BBFCFFC,baldj002,1,0,cruzj004 strikes out. ,cruzj004,0,
+,32,3,,,,,20,35,BFBFBX,baldj002,1,0,bushh001 grounds out. ,bushh001,0,G
+,21,3,,,,,21,44,CBBX,escok001,1,0,,valej003,1,L
+,11,3,,,,,22,47,BFX,escok001,1,0,thomf001 grounds out. ,thomf001,1,G
+,31,3,konep001,,,,23,52,BFBBB,escok001,0,0,konep001 walks. ,konep001,1,
+,02,3,konep001,,,,24,55,CSS,escok001,1,0,singc001 strikes out. ,singc001,1,
+,00,4,,,,,25,36,X,baldj002,1,0,mondr002 grounds out. ,mondr002,0,G
+,12,4,delgc001,,,,26,40,BSFX,baldj002,0,0,delgc001 singles. ,delgc001,0,
+,10,4,delgc001,,,,27,42,BX,baldj002,1,0,,fullb001,0,P
+,32,4,delgc001,,,,28,48,CBFBBX,baldj002,1,0,,batit001,0,F
+,30,4,lee-c001,,,,29,59,BBBB,escok001,0,0,lee-c001 walks. ,lee-c001,1,
+lee-c001 to 2B. ,32,4,perrh001,lee-c001,,,30,65,BBBCFB,escok001,0,0,perrh001 walks. ,perrh001,1,
+,00,4,perrh001,lee-c001,,,31,66,X,escok001,1,0,,abboj002,1,P
+,20,4,perrh001,lee-c001,,,32,69,BBX,escok001,1,0,,johnm003,1,F
+lee-c001 to 3B. perrh001 out. ,10,4,durhr001,,lee-c001,,33,71,BX,escok001,1,0,durhr001 reaches on fielder's choice. ,durhr001,1,
+,02,5,,,,,34,51,CFX,baldj002,0,1,fletd001 homers. ,fletd001,0,
+,11,5,,,,,35,54,BCX,baldj002,1,0,,cordm001,0,P
+,01,5,,,,,36,56,FX,baldj002,1,0,gonza001 grounds out. ,gonza001,0,G
+,12,5,,,,,37,62,SFBFFS,baldj002,1,0,cruzj004 strikes out. ,cruzj004,0,
+,21,5,,,,,38,75,BCBX,escok001,1,0,,valej003,1,L
+,32,5,thomf001,,,,39,82,CBSFBBX,escok001,0,0,thomf001 singles. ,thomf001,1,
+thomf001 to 2B. ,31,5,konep001,thomf001,,,40,87,BBCBB,escok001,0,0,konep001 walks. ,konep001,1,
+,00,5,konep001,thomf001,,,41,88,X,escok001,1,0,,singc001,1,F
+thomf001 to 3B. konep001 out. ,10,5,lee-c001,,thomf001,,42,90,BX,escok001,1,0,lee-c001 reaches on fielder's choice. ,lee-c001,1,
+,01,6,,,,,43,64,CX,baldj002,1,0,bushh001 grounds out. ,bushh001,0,G
+,10,6,,,,,44,66,BX,baldj002,1,0,mondr002 grounds out. ,mondr002,0,G
+,10,6,,,,,45,68,BX,baldj002,1,0,delgc001 grounds out. ,delgc001,0,G
+,00,6,perrh001,,,,46,91,X,escok001,0,0,perrh001 singles. ,perrh001,1,
+perrh001 to 2B. ,01,6,,perrh001,,,47,93,LX,escok001,1,0,Sacrifice bunt by abboj002.,abboj002,1,
+perrh001 scores. ,02,6,,,,,48,96,CFX,escok001,0,2,johnm003 homers. ,johnm003,1,
+,31,6,,,,,49,101,BFBBX,escok001,1,0,,durhr001,1,
+,32,6,,,,,50,107,BBFBFX,escok001,0,1,valej003 homers. ,valej003,1,
+,22,6,,,,,52,5,BCFBX,frasj001,0,1,thomf001 homers. ,thomf001,1,
+,01,6,,,,,53,7,CX,frasj001,0,1,konep001 homers. ,konep001,1,
+,01,6,,,,,54,9,CX,frasj001,1,0,singc001 grounds out. ,singc001,1,G
+,12,7,,,,,55,72,FBFX,baldj002,1,0,,fullb001,0,F
+,11,7,,,,,56,75,BCX,baldj002,1,0,,batit001,0,P
+,22,7,,,,,57,81,BFBFFX,baldj002,1,0,,fletd001,0,F
+,00,7,,,,,58,10,X,frasj001,1,0,lee-c001 grounds out. ,lee-c001,1,G
+,31,7,perrh001,,,,59,15,BFBBB,frasj001,0,0,perrh001 walks. ,perrh001,1,
+perrh001 to 2B. ,31,7,abboj002,perrh001,,,60,20,BBBCB,frasj001,0,0,abboj002 walks. ,abboj002,1,
+,32,7,abboj002,perrh001,,,62,7,BCBCBFX,painl001,1,0,,johnm003,1,F
+,01,7,abboj002,perrh001,,,63,9,CX,painl001,1,0,durhr001 grounds out. ,durhr001,1,G
+,11,8,cordm001,,,,64,84,BFX,baldj002,0,0,cordm001 reaches on Error. ,cordm001,0,G
+cordm001 to 2B. ,32,8,gonza001,cordm001,,,65,91,BBBCFFB,baldj002,0,0,gonza001 walks. ,gonza001,0,
+,11,8,gonza001,cordm001,,,66,94,CBX,baldj002,1,0,,cruzj004,0,P
+cordm001 scores. gonza001 to 2B. ,12,8,bushh001,gonza001,,,67,99,CSBFX,baldj002,0,1,bushh001 singles. ,bushh001,0,
+gonza001 to 3B. bushh001 to 2B. ,00,8,,bushh001,gonza001,,69,1,X,foulk001,1,0,mondr002 grounds out. ,mondr002,0,G
+,32,8,delgc001,bushh001,gonza001,,70,7,BBBCSB,foulk001,0,0,delgc001 walks. ,delgc001,0,
+,11,8,delgc001,bushh001,gonza001,,71,10,SBX,foulk001,1,0,,fullb001,0,F
+,01,8,,,,,72,11,FX,painl001,1,0,,valej003,1,L
+,32,8,thomf001,,,,73,17,BFBCBB,painl001,0,0,thomf001 walks. ,thomf001,1,
+,00,8,thomf001,,,,74,18,X,painl001,1,0,,konep001,1,F
+,11,8,thomf001,,,,75,21,FBX,painl001,1,0,singc001 grounds out. ,singc001,1,G
+,10,9,,,,,76,12,BX,foulk001,1,0,,batit001,0,F
+,00,9,,,,,77,13,X,foulk001,1,0,,fletd001,0,F
+,11,9,cordm001,,,,78,16,SBX,foulk001,0,0,cordm001 singles. ,cordm001,0,
+,00,9,cordm001,,,,79,17,X,foulk001,1,0,gonza001 grounds out. ,gonza001,0,G

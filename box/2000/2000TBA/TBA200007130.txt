@@ -1,0 +1,142 @@
+version,2
+info,visteam,MON
+info,hometeam,TBA
+info,site,STP01
+info,date,2000/07/13
+info,number,0
+info,starttime,7:15PM
+info,daynight,night
+info,usedh,true
+info,umphome,timmt901
+info,ump1b,cedeg901
+info,ump2b,scotd901
+info,ump3b,hudsm901
+info,pitches,pitches
+info,temp,72
+info,winddir,fromlf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,171
+info,attendance,14924
+info,wp,mecij001
+info,lp,liraf001
+info,save,hernr001
+start,bergp001,"Peter Bergeron",0,1,8
+start,jonet004,"Terry Jones",0,2,7
+start,vidrj001,"Jose Vidro",0,3,4
+start,guerv001,"Vladimir Guerrero",0,4,9
+start,stevl001,"Lee Stevens",0,5,3
+start,seguf001,"Fernando Seguignol",0,6,10
+start,barrm003,"Michael Barrett",0,7,5
+start,widgc001,"Chris Widger",0,8,2
+start,cabro001,"Orlando Cabrera",0,9,6
+start,vazqj001,"Javier Vazquez",0,0,1
+start,willg001,"Gerald Williams",1,1,8
+start,cox-s001,"Steve Cox",1,2,10
+start,vaugg001,"Greg Vaughn",1,3,7
+start,mcgrf001,"Fred McGriff",1,4,3
+start,tramb001,"Bubba Trammell",1,5,9
+start,castv001,"Vinny Castilla",1,6,5
+start,difem001,"Mike DiFelice",1,7,2
+start,cairm001,"Miguel Cairo",1,8,4
+start,martf001,"Felix Martinez",1,9,6
+start,rekab001,"Bryan Rekar",1,0,1
+play,1,0,bergp001,01,CX,S9
+play,1,0,jonet004,10,BX,46(1)/FO
+play,1,0,vidrj001,21,BBFX,13/G.1-2
+play,1,0,guerv001,11,BSX,HR/8.2-H
+play,1,0,stevl001,10,BX,63/G
+play,1,1,willg001,22,CBFBFFFFX,S7
+play,1,1,cox-s001,12,CFBFS,K
+play,1,1,vaugg001,01,SX,36(1)/FO
+play,1,1,mcgrf001,31,SBBBB,W.1-2
+play,1,1,tramb001,11,FBX,D9/9S.2-H;1-3
+play,1,1,castv001,12,BCSFFS,K
+play,2,0,seguf001,11,BFX,43/G
+play,2,0,barrm003,02,CFC,K/C
+play,2,0,widgc001,32,BSBFBS,K
+play,2,1,difem001,20,BBX,S7
+play,2,1,cairm001,11,BCX,23/SH.1-2
+play,2,1,martf001,12,CBFC,K/C
+play,2,1,willg001,02,CFX,S8.2XH(82)
+play,3,0,cabro001,22,CBCBX,53/G
+play,3,0,bergp001,20,BBX,13/G
+play,3,0,jonet004,31,BBBCX,S7
+play,3,0,vidrj001,10,BX,43/G
+play,3,1,cox-s001,11,FBX,S8
+play,3,1,vaugg001,32,BCBBFS,K
+play,3,1,mcgrf001,02,CSFS,K
+play,3,1,tramb001,01,SX,3/P3
+play,4,0,guerv001,20,BBX,D7
+play,4,0,stevl001,01,SX,63/G.2-3
+play,4,0,seguf001,00,X,3/G
+play,4,0,barrm003,32,BBCBCB,W
+play,4,0,widgc001,02,CCS,K
+play,4,1,castv001,32,FSBFBBX,7/F7
+play,4,1,difem001,22,BSBCS,K
+play,4,1,cairm001,02,FFS,K
+play,5,0,cabro001,02,FFX,S9
+play,5,0,bergp001,21,BSBX,S8.1-3
+play,5,0,jonet004,22,FBSBFS,K
+play,5,0,vidrj001,12,BFFX,9/SF.3-H
+play,5,0,guerv001,12,SCBS,K
+play,5,1,martf001,12,CBSX,S7
+play,5,1,willg001,00,X,HR/7.1-H
+play,5,1,cox-s001,02,SSX,D/89D
+play,5,1,vaugg001,32,BCBFBX,5/L5
+play,5,1,mcgrf001,30,BBBX,S9.2-H
+play,5,1,tramb001,10,BX,6/P6
+play,5,1,castv001,32,SBFBFBX,S9.1-3
+play,5,1,difem001,00,,NP
+sub,liraf001,"Felipe Lira",0,0,1
+play,5,1,difem001,10,BX,8/F8
+play,6,0,stevl001,11,BSX,63/G
+play,6,0,seguf001,02,CSX,43/G
+play,6,0,barrm003,00,X,53/G
+play,6,1,cairm001,10,BX,3/L3
+play,6,1,martf001,00,X,63/G
+play,6,1,willg001,22,CCBBS,K
+play,7,0,widgc001,21,CBBX,HR/78
+play,7,0,cabro001,00,X,63/G
+play,7,0,bergp001,12,CFBX,S9
+play,7,0,jonet004,00,,NP
+sub,mecij001,"Jim Mecir",1,0,1
+play,7,0,jonet004,22,BCBCX,3(B)3(1)/LDP
+play,7,1,cox-s001,22,CFBBX,S7
+play,7,1,vaugg001,00,X,S7.1-2
+play,7,1,mcgrf001,00,,NP
+sub,forss001,"Scott Forster",0,0,1
+play,7,1,mcgrf001,32,BBFCBB,W.2-3;1-2
+play,7,1,tramb001,00,,NP
+sub,stris001,"Scott Strickland",0,0,1
+play,7,1,tramb001,21,CBBX,46(1)/FO.3-H;2-3
+play,7,1,castv001,01,FX,S9.3-H;1-2
+play,7,1,difem001,12,CBCS,K
+play,7,1,cairm001,32,BBSBSS,K
+play,8,0,vidrj001,01,LX,7/F7
+play,8,0,guerv001,00,X,3/FL
+play,8,0,stevl001,31,BCBBB,W
+play,8,0,seguf001,22,BCBFS,K
+play,8,1,martf001,00,,NP
+sub,telfa001,"Anthony Telford",0,0,1
+play,8,1,martf001,21,FBBX,13/G
+play,8,1,willg001,12,CFFFBX,63/G
+play,8,1,cox-s001,32,FBBBFFX,S8
+play,8,1,vaugg001,12,FSBC,K/C
+play,9,0,barrm003,00,,NP
+sub,guilj001,"Jose Guillen",1,5,9
+play,9,0,barrm003,00,,NP
+sub,hernr001,"Roberto Hernandez",1,0,1
+play,9,0,barrm003,32,BBCSFBX,9/F9
+play,9,0,widgc001,32,BBBCFFX,63/G
+play,9,0,cabro001,11,BFX,53/G
+data,er,vazqj001,4
+data,er,liraf001,2
+data,er,forss001,0
+data,er,stris001,0
+data,er,telfa001,0
+data,er,rekab001,4
+data,er,mecij001,0
+data,er,hernr001,0

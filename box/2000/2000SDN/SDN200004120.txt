@@ -1,0 +1,133 @@
+version,2
+info,visteam,ARI
+info,hometeam,SDN
+info,site,SAN01
+info,date,2000/04/12
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,relic901
+info,ump1b,eddid901
+info,ump2b,carlm901
+info,ump3b,demud901
+info,pitches,pitches
+info,temp,65
+info,winddir,torf
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,144
+info,attendance,15801
+info,wp,meadb001
+info,lp,reyna001
+info,save,hofft001
+start,womat001,"Tony Womack",0,1,6
+start,bellj001,"Jay Bell",0,2,4
+start,gonzl001,"Luis Gonzalez",0,3,7
+start,durae001,"Erubiel Durazo",0,4,3
+start,finls001,"Steve Finley",0,5,8
+start,lee-t002,"Travis Lee",0,6,9
+start,harrl001,"Lenny Harris",0,7,5
+start,stink001,"Kelly Stinnett",0,8,2
+start,reyna001,"Armando Reynoso",0,9,1
+start,marta001,"Al Martin",1,1,7
+start,owene001,"Eric Owens",1,2,8
+start,klesr001,"Ryan Klesko",1,3,3
+start,nevip001,"Phil Nevin",1,4,5
+start,boonb002,"Bret Boone",1,5,4
+start,newhd001,"David Newhan",1,6,9
+start,davib003,"Ben Davis",1,7,2
+start,gomec001,"Chris Gomez",1,8,6
+start,meadb001,"Brian Meadows",1,9,1
+play,1,0,womat001,32,CBBBCFX,S
+play,1,0,bellj001,01,CB,SB2
+play,1,0,bellj001,32,CBBBFX,63/G
+play,1,0,gonzl001,10,BX,43/G.2-3
+play,1,0,durae001,30,BBBB,W
+play,1,0,finls001,00,X,3/G
+play,1,1,marta001,12,FBFX,13/G
+play,1,1,owene001,11,BCX,S3/BG3
+play,1,1,klesr001,11,FBB,CS2(26)
+play,1,1,klesr001,21,FBBX,63/G
+play,2,0,lee-t002,20,BBX,HR/9
+play,2,0,harrl001,21,CBBX,S9
+play,2,0,stink001,00,X,46(1)3/GDP
+play,2,0,reyna001,00,X,4/P4
+play,2,1,nevip001,00,X,9/F9D
+play,2,1,boonb002,12,CCBS,K
+play,2,1,newhd001,00,X,S.B-2(E6/TH1)
+play,2,1,davib003,10,BX,3/G
+play,3,0,womat001,11,CBX,S
+play,3,0,bellj001,01,FX,5(B)3(1)/LDP
+play,3,0,gonzl001,01,CX,4/P4
+play,3,1,gomec001,31,BBBCX,63/G
+play,3,1,meadb001,10,BX,9/L9
+play,3,1,marta001,00,X,8/F8D
+play,4,0,durae001,22,FBCBX,3/G
+play,4,0,finls001,02,CFX,4/P4
+play,4,0,lee-t002,00,X,43/G
+play,4,1,owene001,32,BCBFFBX,S
+play,4,1,klesr001,32,FFBBFBFX,7/F7
+play,4,1,nevip001,00,X,8/F8
+play,4,1,boonb002,32,BBFSBX,8/F8
+play,5,0,harrl001,21,CBBX,31/G
+play,5,0,stink001,11,CBX,63/G
+play,5,0,reyna001,11,CBX,63/G
+play,5,1,newhd001,10,BX,9/L9
+play,5,1,davib003,32,FSBBFBFS,K
+play,5,1,gomec001,11,CBX,43/G
+play,6,0,womat001,01,CX,7/F7
+play,6,0,bellj001,30,BBBB,W
+play,6,0,gonzl001,00,X,46(1)3/GDP
+play,6,1,meadb001,00,X,31/G
+play,6,1,marta001,10,BX,HR/8
+play,6,1,owene001,31,BBBCB,W
+play,6,1,klesr001,10,BX,13/BG.1-2
+play,6,1,nevip001,12,BCFX,4/P4
+play,7,0,durae001,32,BSBBSS,K
+play,7,0,finls001,11,BCX,S7
+play,7,0,lee-t002,22,BCBFC,K/C
+play,7,0,harrl001,00,X,T9/9S.1-H
+play,7,0,stink001,00,X,7/F7D
+play,7,1,boonb002,00,X,S7/7S
+play,7,1,newhd001,32,BFBBFB,W.1-2
+play,7,1,davib003,00,X,FC1/SH.2-3;1-2;B-1#
+play,7,1,gomec001,01,CX,E5/THH.3-H(UR)(NR);2XH(2);1-3#
+play,7,1,meadb001,00,,NP
+sub,sprae001,"Ed Sprague",1,9,11
+play,7,1,sprae001,00,,NP
+sub,holmd001,"Darren Holmes",0,9,1
+play,7,1,sprae001,00,,NP
+sub,jackd003,"Damian Jackson",1,8,12
+play,7,1,sprae001,01,FB,SB2
+play,7,1,sprae001,11,FBX,S/78.3-H;2-H
+play,7,1,marta001,22,BFCBC,K/C
+play,7,1,owene001,20,BBX,9/FL
+play,8,0,holmd001,00,,NP
+sub,jackd003,"Damian Jackson",1,8,6
+play,8,0,holmd001,00,,NP
+sub,friah001,"Hanley Frias",0,9,11
+play,8,0,friah001,00,,NP
+sub,almac001,"Carlos Almanzar",1,9,1
+play,8,0,friah001,12,CCBC,K/C
+play,8,0,womat001,10,BX,43/G
+play,8,0,bellj001,22,BBCFS,K
+play,8,1,klesr001,00,,NP
+sub,plesd001,"Dan Plesac",0,9,1
+play,8,1,klesr001,12,FBSS,K
+play,8,1,nevip001,22,BSCBS,K
+play,8,1,boonb002,30,BBBB,W
+play,8,1,newhd001,10,BX,3/G
+play,9,0,gonzl001,00,,NP
+sub,hofft001,"Trevor Hoffman",1,9,1
+play,9,0,gonzl001,32,BBBCFFX,6/P6
+play,9,0,durae001,12,CSBC,K/C
+play,9,0,finls001,10,BX,5/FL
+data,er,reyna001,3
+data,er,holmd001,0
+data,er,plesd001,0
+data,er,meadb001,2
+data,er,almac001,0
+data,er,hofft001,0

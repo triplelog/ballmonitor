@@ -1,0 +1,71 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,22,1,,,,,0,5,BFBSX,smitc001,1,0,,bellr002,0,F
+,12,1,,,,,1,9,CBCS,smitc001,1,0,peres001 strikes out. ,peres001,0,
+,22,1,,,,,2,15,SSFBBS,smitc001,1,0,jenkg001 strikes out. ,jenkg001,0,
+,31,1,,,,,3,5,BBBCX,wrigj001,1,0,castl001 grounds out. ,castl001,1,G
+,11,1,,,,,4,8,CBX,wrigj001,1,0,kotsm001 grounds out. ,kotsm001,1,G
+,02,1,floyc001,,,,5,11,SFH,wrigj001,0,0,floyc001 hit by pitch. ,floyc001,1,
+,12,1,floyc001,,,,6,15,CFBC,wrigj001,1,0,wilsp002 strikes out. ,wilsp002,1,
+,00,2,burnj001,,,,7,16,H,smitc001,0,0,burnj001 hit by pitch. ,burnj001,0,
+,01,2,,burnj001,,hayec001,8,18,CB,smitc001,0,0,burnj001 steals 2B. ,hayec001,0,
+,11,2,,burnj001,,,9,21,CBX,smitc001,1,0,hayec001 grounds out. ,hayec001,0,G
+,21,2,,burnj001,,,10,25,BBCX,smitc001,1,0,grism001 grounds out. ,grism001,0,G
+,11,2,,burnj001,,,11,28,CBX,smitc001,1,0,,hernj001,0,L
+,20,2,lowem001,,,,12,18,BBX,wrigj001,0,0,lowem001 singles. ,lowem001,1,
+lowem001 to 2B. ,00,2,,lowem001,,,13,19,X,wrigj001,1,0,lee-d002 grounds out. ,lee-d002,1,G
+,10,2,,lowem001,,,14,21,BX,wrigj001,1,0,,gonza002,1,F
+,30,2,bakop001,lowem001,,,15,25,BBBB,wrigj001,0,0,bakop001 walks. ,bakop001,1,
+,02,2,bakop001,lowem001,,,16,28,FSS,wrigj001,1,0,smitc001 strikes out. ,smitc001,1,
+,00,3,,,,,17,29,X,smitc001,1,0,blanh001 grounds out. ,blanh001,0,G
+,21,3,,,,,18,33,BBCX,smitc001,1,0,,wrigj001,0,L
+,32,3,,,,,19,40,BCBSBFS,smitc001,1,0,bellr002 strikes out. ,bellr002,0,
+,21,3,,,,,20,32,BCBX,wrigj001,1,0,castl001 grounds out. ,castl001,1,G
+,31,3,,,,,21,37,CBBBX,wrigj001,1,0,kotsm001 grounds out. ,kotsm001,1,G
+,02,3,,,,,22,40,SSS,wrigj001,1,0,floyc001 strikes out. ,floyc001,1,
+,11,4,peres001,,,,23,43,SBH,smitc001,0,0,peres001 hit by pitch. ,peres001,0,
+peres001 scores. ,00,4,,jenkg001,,,24,44,X,smitc001,0,1,jenkg001 doubles. ,jenkg001,0,
+jenkg001 scores. ,01,4,burnj001,,,,25,46,SX,smitc001,0,1,burnj001 singles. ,burnj001,0,
+burnj001 out. ,12,4,hayec001,,,,26,50,CSBX,smitc001,1,0,hayec001 reaches on fielder's choice. ,hayec001,0,
+,22,4,hayec001,,,,27,55,CSBBC,smitc001,1,0,grism001 strikes out. ,grism001,0,
+,32,4,hayec001,,,,28,61,BBBCCS,smitc001,1,0,hernj001 strikes out. ,hernj001,0,
+,12,4,wilsp002,,,,29,47,BSSFFFX,wrigj001,0,0,wilsp002 singles. ,wilsp002,1,
+,32,4,,,,lowem001,30,54,CFBBBF1,wrigj001,1,0,wilsp002 picked off. ,lowem001,1,
+,32,4,,,,,31,62,CFBBBF1S,wrigj001,1,0,lowem001 strikes out. ,lowem001,1,
+,12,4,,,,,32,66,BFFC,wrigj001,1,0,lee-d002 strikes out. ,lee-d002,1,
+,31,5,blanh001,,,,33,66,BCBBX,smitc001,0,0,blanh001 singles. ,blanh001,0,
+,02,5,,,,,34,69,SLS,smitc001,2,0,wrigj001 strikes out. blanh001 caught stealing. ,wrigj001,0,
+,32,5,bellr002,,,,35,77,BBCFBFFB,smitc001,0,0,bellr002 walks. ,bellr002,0,
+,01,5,bellr002,,,,36,79,FX,smitc001,1,0,peres001 grounds out. ,peres001,0,G
+,12,5,,,,,37,70,CCBX,wrigj001,1,0,,gonza002,1,L
+,12,5,,,,,38,74,BCSC,wrigj001,1,0,bakop001 strikes out. ,bakop001,1,
+,00,5,,,,,39,75,X,wrigj001,1,0,smitc001 grounds out. ,smitc001,1,G
+,12,6,,,,,40,83,CSBS,smitc001,1,0,jenkg001 strikes out. ,jenkg001,0,
+,12,6,burnj001,,,,41,87,BSCX,smitc001,0,0,burnj001 reaches on error. ,burnj001,0,G
+,22,6,burnj001,,,,42,93,FSBFBS,smitc001,1,0,hayec001 strikes out. ,hayec001,0,
+burnj001 out. ,11,6,grism001,,,,43,96,BFX,smitc001,1,0,grism001 reaches on fielder's choice. ,grism001,0,
+,31,6,castl001,,,,44,80,BFBBB,wrigj001,0,0,castl001 walks. ,castl001,1,
+castl001 out. ,11,6,kotsm001,,,,45,83,CBX,wrigj001,1,0,kotsm001 reaches on fielder's choice. ,kotsm001,1,
+,10,6,,,,,46,85,BX,wrigj001,2,0,Double Play. ,floyc001,1,
+,00,7,hernj001,,,,47,97,X,smitc001,0,0,hernj001 singles. ,hernj001,0,
+,12,7,hernj001,,,,48,102,FBFFS,smitc001,1,0,blanh001 strikes out. ,blanh001,0,
+,00,7,,,,wrigj001,49,103,B,smitc001,1,0,hernj001 caught stealing. ,wrigj001,0,
+,11,7,,,,,50,106,BSX,smitc001,1,0,wrigj001 grounds out. ,wrigj001,0,G
+,32,7,,,,,51,91,BFCBBX,wrigj001,1,0,wilsp002 grounds out. ,wilsp002,1,G
+,01,7,,,,,52,93,FX,wrigj001,1,0,,lowem001,1,L
+,11,7,lee-d002,,,,53,96,BFX,wrigj001,0,0,lee-d002 singles. ,lee-d002,1,
+,02,7,lee-d002,,,,54,99,CFS,wrigj001,1,0,gonza002 strikes out. ,gonza002,1,
+,02,8,,,,,55,110,FSFS,smitc001,1,0,bellr002 strikes out. ,bellr002,0,
+,12,8,,,,,56,114,CFBC,smitc001,1,0,peres001 strikes out. ,peres001,0,
+,02,8,jenkg001,,,,58,4,FFFX,darev001,0,0,jenkg001 singles. ,jenkg001,0,
+,11,8,,jenkg001,,burnj001,59,7,BCS,darev001,0,0,jenkg001 steals 2B. ,burnj001,0,
+,22,8,,jenkg001,,,60,14,BCSFFBS,darev001,1,0,burnj001 strikes out. ,burnj001,0,
+,11,8,,,,,61,102,FBX,wrigj001,1,0,bakop001 grounds out. ,bakop001,1,G
+,22,8,,,,,63,107,BCBCS,wrigj001,1,0,millk005 strikes out. ,millk005,1,
+,11,8,,,,,64,110,BCX,wrigj001,1,0,,castl001,1,F
+,22,9,,,,,66,5,BSFBX,loopb001,1,0,,hayec001,0,
+,32,9,,,,,67,14,FBSBFFBFX,loopb001,1,0,grism001 grounds out. ,grism001,0,G
+,32,9,hernj001,,,,68,21,FBBBFFX,loopb001,0,0,hernj001 reaches on error. ,hernj001,0,G
+,31,9,,,,blanh001,69,26,BBBFC,loopb001,1,0,hernj001 caught stealing. ,blanh001,0,
+,31,9,kotsm001,,,,70,115,BBBCB,wrigj001,0,0,kotsm001 walks. ,kotsm001,1,
+,21,9,,,,,72,4,BFBX,wickb001,2,0,Double Play. ,floyc001,1,
+,11,9,,,,,73,7,CBX,wickb001,1,0,,wilsp002,1,F

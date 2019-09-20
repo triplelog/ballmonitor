@@ -1,0 +1,78 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,01,1,mclem001,,,,0,2,CX,rosaj001,0,0,mclem001 reaches on error. ,mclem001,0,G
+,10,1,,,,,1,4,BX,rosaj001,2,0,Double Play. ,javis001,0,
+,31,1,rodra001,,,,2,9,BBCBB,rosaj001,0,0,rodra001 walks. ,rodra001,0,
+,02,1,rodra001,,,,3,12,CFX,rosaj001,1,0,marte001 grounds out. ,marte001,0,G
+,10,1,damoj001,,,,4,2,BX,mechg001,0,0,damoj001 singles. ,damoj001,1,
+,11,1,,,,,5,5,BCX,mechg001,2,0,Double Play. ,feblc001,1,
+,02,1,,,,,6,8,CFS,mechg001,1,0,sweem002 strikes out. ,sweem002,1,
+,12,2,,,,,7,16,BCSX,rosaj001,1,0,,olerj001,0,F
+,22,2,buhnj001,,,,8,21,BCSBX,rosaj001,0,0,buhnj001 reaches on error. ,buhnj001,0,G
+,01,2,buhnj001,,,,9,23,CX,rosaj001,1,0,,camem001,0,F
+buhnj001 to 3B. ,01,2,,wilsd001,buhnj001,,10,25,CX,rosaj001,0,0,wilsd001 doubles. ,wilsd001,0,
+,22,2,,wilsd001,buhnj001,,11,33,CBCFFBFS,rosaj001,1,0,guilc001 strikes out. ,guilc001,0,
+,20,2,,,,,12,11,BBX,mechg001,1,0,,dye-j001,1,F
+,22,2,,,,,13,16,BCCBC,mechg001,1,0,beltc001 strikes out. ,beltc001,1,
+,31,2,randj002,,,,14,21,CBBBH,mechg001,0,0,randj002 hit by pitch. ,randj002,1,
+randj002 scores. ,32,2,,,,,15,28,CSBFBBX,mechg001,0,2,quinm001 homers. ,quinm001,1,
+,00,2,,,,,16,29,X,mechg001,1,0,fabrj001 grounds out. ,fabrj001,1,G
+,01,3,,mclem001,,,17,35,CX,rosaj001,0,0,mclem001 doubles. ,mclem001,0,
+mclem001 to 3B. ,10,3,,,mclem001,,18,37,BX,rosaj001,1,0,Sacrifice bunt by javis001.,javis001,0,
+mclem001 scores. ,00,3,,,,,19,38,X,rosaj001,1,1,rodra001 hits sacrifice fly. ,rodra001,0,
+,20,3,,,,,20,41,BBX,rosaj001,1,0,,marte001,0,F
+,31,3,reboj001,,,,21,34,BBCBB,mechg001,0,0,reboj001 walks. ,reboj001,1,
+,11,3,,,,,22,37,FBX,mechg001,2,0,Double Play. ,damoj001,1,
+,31,3,feblc001,,,,23,42,BCBBB,mechg001,0,0,feblc001 walks. ,feblc001,1,
+feblc001 to 2B. ,31,3,sweem002,feblc001,,,24,47,BBCBB,mechg001,0,0,sweem002 walks. ,sweem002,1,
+,12,3,sweem002,feblc001,,,25,51,CCBX,mechg001,1,0,dye-j001 grounds out. ,dye-j001,1,G
+,00,4,,,,,26,42,X,rosaj001,1,0,olerj001 grounds out. ,olerj001,0,G
+,32,4,,,,,27,48,BCSBBX,rosaj001,1,0,,buhnj001,0,F
+,32,4,,camem001,,,28,54,BBSBSX,rosaj001,0,0,camem001 doubles. ,camem001,0,
+,30,4,wilsd001,camem001,,,29,58,BBBB,rosaj001,0,0,wilsd001 walks. ,wilsd001,0,
+,00,4,wilsd001,camem001,,,30,59,X,rosaj001,1,0,,guilc001,0,F
+,01,4,,,,,31,53,FX,mechg001,1,0,beltc001 grounds out. ,beltc001,1,G
+,00,4,randj002,,,,32,54,X,mechg001,0,0,randj002 singles. ,randj002,1,
+,12,4,randj002,,,,33,60,FFFFBX,mechg001,1,0,,quinm001,1,F
+,22,4,randj002,,,,34,65,BFFBS,mechg001,1,0,fabrj001 strikes out. ,fabrj001,1,
+,32,5,,,,,35,66,CBCBBFC,rosaj001,1,0,mclem001 strikes out. ,mclem001,0,
+,32,5,javis001,,,,36,73,CBBCBFB,rosaj001,0,0,javis001 walks. ,javis001,0,
+javis001 to 3B. ,11,5,,rodra001,javis001,,37,76,CBX,rosaj001,0,0,rodra001 doubles. ,rodra001,0,
+javis001 scores. ,11,5,,rodra001,,,38,79,BCX,rosaj001,1,1,marte001 grounds out. ,marte001,0,G
+,12,5,,rodra001,,,39,83,BCCS,rosaj001,1,0,olerj001 strikes out. ,olerj001,0,
+,11,5,reboj001,,,,40,68,CBX,mechg001,0,0,reboj001 singles. ,reboj001,1,G
+reboj001 out. ,02,5,damoj001,,,,41,71,CFX,mechg001,1,0,damoj001 reaches on fielder's choice. ,damoj001,1,
+,00,5,,damoj001,,feblc001,42,72,S,mechg001,0,0,damoj001 steals 2B. ,feblc001,1,
+damoj001 to 3B. ,01,5,,,damoj001,,43,74,SX,mechg001,1,0,feblc001 grounds out. ,feblc001,1,G
+damoj001 scores. ,00,5,sweem002,,,,44,75,X,mechg001,0,1,sweem002 singles. ,sweem002,1,G
+sweem002 scores. ,22,5,,dye-j001,,,45,80,CBBFX,mechg001,0,1,dye-j001 doubles. ,dye-j001,1,
+,01,5,,dye-j001,,,46,82,CX,mechg001,1,0,beltc001 grounds out. ,beltc001,1,G
+,22,6,,,,,47,88,BFBFS,rosaj001,1,0,buhnj001 strikes out. ,buhnj001,0,
+,00,6,,,,,48,89,X,rosaj001,1,0,,camem001,0,G
+,32,6,wilsd001,,,,49,95,BBFBFX,rosaj001,0,0,wilsd001 singles. ,wilsd001,0,
+wilsd001 to 2B. ,22,6,guilc001,wilsd001,,,51,5,BFBCX,santj002,0,0,guilc001 reaches on error. ,guilc001,0,G
+,22,6,guilc001,wilsd001,,,52,10,CBSBX,santj002,1,0,mclem001 grounds out. ,mclem001,0,G
+,00,6,,,,,54,1,X,rodrf001,1,0,,randj002,1,F
+,21,6,quinm001,,,,55,5,CBBX,rodrf001,0,0,quinm001 singles. ,quinm001,1,
+,11,6,,,,,56,8,BFX,rodrf001,2,0,Double Play. ,fabrj001,1,
+,22,7,,,,,57,17,CBSBFFS,santj002,1,0,javis001 strikes out. ,javis001,0,
+,32,7,,,,,58,23,BCFBBS,santj002,1,0,rodra001 strikes out. ,rodra001,0,
+,22,7,,,,,59,28,BCBFX,santj002,0,1,marte001 homers. ,marte001,0,
+,31,7,olerj001,,,,60,33,BBBCB,santj002,0,0,olerj001 walks. ,olerj001,0,
+olerj001 out. ,10,7,buhnj001,,,,61,35,BX,santj002,1,0,buhnj001 reaches on fielder's choice. ,buhnj001,0,
+,22,7,reboj001,,,,62,14,BBCCFX,rodrf001,0,0,reboj001 singles. ,reboj001,1,
+,21,7,,,,,63,18,BBCX,rodrf001,2,0,Double Play. ,damoj001,1,
+,02,7,,,,,64,21,CCX,rodrf001,1,0,feblc001 grounds out. ,feblc001,1,G
+,22,8,,,,,65,41,CBBFFC,santj002,1,0,camem001 strikes out. ,camem001,0,
+,22,8,,,,,66,46,CBBFS,santj002,1,0,wilsd001 strikes out. ,wilsd001,0,
+,32,8,,,,,68,53,BBCCBFS,santj002,1,0,lampt001 strikes out. ,lampt001,0,
+,12,8,sweem002,,,,70,26,FBFFX,rodrf001,0,0,sweem002 singles. ,sweem002,1,
+,22,8,sweem002,,,,71,31,CBBCX,rodrf001,1,0,,dye-j001,1,P
+sweem002 to 2B. ,01,8,,sweem002,,,72,33,CX,rodrf001,1,0,beltc001 grounds out. ,beltc001,1,G
+sweem002 scores. ,22,8,,,,,73,38,BBCFX,rodrf001,0,2,randj002 homers. ,randj002,1,
+,00,8,,,,,74,39,X,rodrf001,1,0,,quinm001,1,F
+,22,9,,mclem001,,,77,5,CBCBX,bottr001,0,0,mclem001 doubles. ,mclem001,0,
+,01,9,,mclem001,,,78,7,CX,bottr001,1,0,javis001 grounds out. ,javis001,0,G
+,02,9,,,,rodra001,79,10,CSB,bottr001,1,0,mclem001 caught stealing. ,rodra001,0,
+,32,9,rodra001,,,,80,17,CSBFBBB,bottr001,0,0,rodra001 walks. ,rodra001,0,
+rodra001 to 2B. ,00,9,,rodra001,,marte001,81,18,C,bottr001,0,0,rodra001 to 2B on defensive indifference. ,marte001,0,
+,02,9,,rodra001,,,82,21,CFC,bottr001,1,0,marte001 strikes out. ,marte001,0,

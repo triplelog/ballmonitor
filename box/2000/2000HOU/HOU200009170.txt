@@ -1,0 +1,137 @@
+version,2
+info,visteam,PIT
+info,hometeam,HOU
+info,site,HOU03
+info,date,2000/09/17
+info,number,0
+info,starttime,2:05PM
+info,daynight,day
+info,usedh,false
+info,umphome,relic901
+info,ump1b,hodgm901
+info,ump2b,timmt901
+info,ump3b,eddid901
+info,pitches,pitches
+info,temp,82
+info,winddir,tolf
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,163
+info,attendance,40036
+info,wp,elars001
+info,lp,serad001
+info,save,doteo001
+start,browa001,"Adrian Brown",0,1,8
+start,nunea001,"Abraham O. Nunez",0,2,6
+start,gileb002,"Brian Giles",0,3,7
+start,vandj001,"John Vander Wal",0,4,3
+start,wehnj001,"John Wehner",0,5,5
+start,morrw001,"Warren Morris",0,6,4
+start,browe001,"Emil Brown",0,7,9
+start,osikk001,"Keith Osik",0,8,2
+start,serad001,"Dan Serafini",0,9,1
+start,lugoj001,"Julio Lugo",1,1,4
+start,melum001,"Mitch Meluskey",1,2,2
+start,bagwj001,"Jeff Bagwell",1,3,3
+start,hidar001,"Richard Hidalgo",1,4,8
+start,aloum001,"Moises Alou",1,5,9
+start,berkl001,"Lance Berkman",1,6,7
+start,trubc001,"Chris Truby",1,7,5
+start,bogat001,"Tim Bogar",1,8,6
+start,elars001,"Scott Elarton",1,9,1
+play,1,0,browa001,11,BCX,S8/8S
+play,1,0,nunea001,02,CFX,HR/9.1-H
+play,1,0,gileb002,30,BBBX,7/F7
+play,1,0,vandj001,01,CX,8/F8
+play,1,0,wehnj001,11,CBX,8/F8
+play,1,1,lugoj001,00,X,53/BG
+play,1,1,melum001,11,BSX,S9/9S
+play,1,1,bagwj001,10,BX,64(1)3/GDP
+play,2,0,morrw001,11,CBX,31/G
+play,2,0,browe001,22,BCBCX,S9/9D
+play,2,0,osikk001,32,BFBFFFBB,W.1-2
+play,2,0,serad001,02,FCL,K/BF
+play,2,0,browa001,20,BBX,6/P6
+play,2,1,hidar001,21,CBBX,5/P5
+play,2,1,aloum001,10,BX,HR/7
+play,2,1,berkl001,12,CFFBX,8/F8
+play,2,1,trubc001,22,FBCBS,K
+play,3,0,nunea001,02,CCX,6/P6
+play,3,0,gileb002,22,CFBBX,43/G
+play,3,0,vandj001,32,SBBFBC,K/C
+play,3,1,bogat001,31,BBCBX,S8
+play,3,1,elars001,00,X,24/SH.1-2
+play,3,1,lugoj001,00,X,3/P3
+play,3,1,melum001,01,CX,S9.2-H
+play,3,1,bagwj001,21,CBBB,WP.1-2
+play,3,1,bagwj001,31,CBBBB,W
+play,3,1,hidar001,32,FBBCFBX,6/P6
+play,4,0,wehnj001,11,BCX,D/78
+play,4,0,morrw001,11,BFX,S8.2-3
+play,4,0,browe001,01,CX,5/L5
+play,4,0,osikk001,10,BX,FC5.3-H;1-2;B-1
+play,4,0,serad001,20,BBX,54/SH.2-3;1-2
+play,4,0,browa001,32,BBBCSX,31/G
+play,4,1,aloum001,00,X,9/F9S
+play,4,1,berkl001,00,X,8/F8D
+play,4,1,trubc001,12,BCCS,K
+play,5,0,nunea001,12,BFCFX,13/G
+play,5,0,gileb002,02,CCFX,S8/8S
+play,5,0,vandj001,22,BCFBX,63/G.1-2
+play,5,0,wehnj001,31,BBBCB,W
+play,5,0,morrw001,00,X,63/G
+play,5,1,bogat001,11,BFX,3/FL
+play,5,1,elars001,21,BFBX,S8
+play,5,1,lugoj001,21,BFBX,8/F8
+play,5,1,melum001,10,BX,54(1)/FO
+play,6,0,browe001,12,SBFX,53/G
+play,6,0,osikk001,10,BX,53/G
+play,6,0,serad001,22,SCBBFX,53/G
+play,6,1,bagwj001,30,BBBB,W
+play,6,1,hidar001,32,FFBBBX,D7.1-3
+play,6,1,aloum001,11,FBX,D7.3-H;2-H
+play,6,1,berkl001,00,X,6/P6
+play,6,1,trubc001,01,FX,5/FL
+play,6,1,bogat001,31,FBBBI,IW
+play,6,1,elars001,00,,NP
+sub,wilkm001,"Marc Wilkins",0,9,1
+play,6,1,elars001,00,H,HP.2-3;1-2
+play,6,1,lugoj001,10,BX,2/FL
+play,7,0,browa001,11,CBX,13/G
+play,7,0,nunea001,22,BFBFFX,7/F7
+play,7,0,gileb002,22,BFBCC,K/C
+play,7,1,melum001,31,CBBBB,W
+play,7,1,bagwj001,32,BBSCBX,7/F7D
+play,7,1,hidar001,10,BX,S7.1-3
+play,7,1,aloum001,32,BBFCFFBX,8/SF.3-H
+play,7,1,berkl001,22,SFBFBB,SB2
+play,7,1,berkl001,32,SFBFBBS,K
+play,8,0,vandj001,00,,NP
+sub,hidar001,"Richard Hidalgo",1,4,7
+play,8,0,vandj001,00,,NP
+sub,barkg001,"Glen Barker",1,6,8
+play,8,0,vandj001,01,FX,3/L3
+play,8,0,wehnj001,12,CFBX,S7
+play,8,0,morrw001,21,SBBX,46(1)3/GDP
+play,8,1,trubc001,00,,NP
+sub,manzj001,"Josias Manzanillo",0,6,1
+play,8,1,trubc001,00,,NP
+sub,benjm001,"Mike Benjamin",0,9,4
+play,8,1,trubc001,11,BFX,3/FL
+play,8,1,bogat001,12,CFBX,S7
+play,8,1,elars001,00,,NP
+sub,spieb001,"Bill Spiers",1,9,11
+play,8,1,spieb001,00,X,4(1)3/GDP
+play,9,0,browe001,00,,NP
+sub,doteo001,"Octavio Dotel",1,9,1
+play,9,0,browe001,21,BBCX,2/FL
+play,9,0,osikk001,32,BBBCCX,S8
+play,9,0,benjm001,02,CSX,7/F7
+play,9,0,browa001,12,BCCX,4(1)/FO/G
+data,er,serad001,4
+data,er,wilkm001,1
+data,er,manzj001,0
+data,er,elars001,3
+data,er,doteo001,0

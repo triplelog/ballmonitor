@@ -1,0 +1,79 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,12,1,,,,,0,4,BCCS,lowes001,1,0,andeb001 strikes out. ,andeb001,0,
+,22,1,,,,,1,9,CCBBX,lowes001,1,0,,moram002,0,F
+,11,1,,deshd001,,,2,12,BSX,lowes001,0,0,deshd001 doubles. ,deshd001,0,
+,00,1,,deshd001,,,3,13,X,lowes001,1,0,,bellj002,0,F
+,31,1,durhr001,,,,4,5,BSBBB,parrj003,0,0,durhr001 walks. ,durhr001,1,
+durhr001 to 2B. ,31,1,graft001,durhr001,,,5,10,CBBBB,parrj003,0,0,graft001 walks. ,graft001,1,
+,12,1,graft001,durhr001,,,6,14,CFBS,parrj003,1,0,thomf001 strikes out. ,thomf001,1,
+,01,1,,graft001,durhr001,ordom001,7,16,FB,parrj003,0,0,durhr001 steals 3B. graft001 steals 2B. ,ordom001,1,
+durhr001 scores. graft001 scores. ,11,1,,ordom001,,,8,19,FBX,parrj003,0,2,ordom001 doubles. ,ordom001,1,
+ordom001 scores. ,11,1,lee-c001,,,,9,22,BFX,parrj003,0,1,lee-c001 singles. ,lee-c001,1,
+,10,1,,,,,10,24,BX,parrj003,2,0,Double Play. ,perrh001,1,
+,32,2,conij001,,,,11,19,CBBBFB,lowes001,0,0,conij001 walks. ,conij001,0,
+,00,2,,,,,12,20,X,lowes001,2,0,Double Play. ,richc001,0,
+,11,2,,,,,13,23,BCX,lowes001,1,0,,fordb001,0,F
+,22,2,konep001,,,,14,29,FBBSX,parrj003,0,0,konep001 singles. ,konep001,1,
+konep001 to 3B. singc001 to 2B. ,22,2,,singc001,konep001,,15,34,BCBLX,parrj003,0,0,singc001 reaches on error. ,singc001,1,
+,30,2,johnc002,singc001,konep001,,16,38,BBBB,parrj003,0,0,johnc002 walks. ,johnc002,1,
+singc001 to 3B. johnc002 to 2B. ,11,2,,johnc002,singc001,,17,41,CBX,parrj003,2,0,Double Play. ,durhr001,1,
+,30,2,graft001,johnc002,singc001,,18,45,BBBB,parrj003,0,0,graft001 walks. ,graft001,1,
+singc001 scores. johnc002 to 3B. graft001 to 2B. ,10,2,thomf001,graft001,johnc002,,19,47,BX,parrj003,0,1,thomf001 singles. ,thomf001,1,
+johnc002 scores. graft001 to 3B. thomf001 to 2B. ,30,2,ordom001,thomf001,graft001,,20,51,BBBB,parrj003,0,1,ordom001 walks. ,ordom001,1,
+,11,2,ordom001,thomf001,graft001,,22,3,BCX,johnj007,1,0,lee-c001 grounds out. ,lee-c001,1,G
+,30,3,matol001,,,,23,27,BBBB,lowes001,0,0,matol001 walks. ,matol001,0,
+matol001 to 2B. ,02,3,hairj002,matol001,,,24,30,CCX,lowes001,0,0,hairj002 reaches on error. ,hairj002,0,
+matol001 to 3B. ,10,3,hairj002,,matol001,,25,32,BX,lowes001,1,0,,andeb001,0,F
+,12,3,,hairj002,matol001,,26,36,CBFS,lowes001,1,0,moram002 strikes out. hairj002 steals 2B. ,moram002,0,
+,22,3,,hairj002,matol001,,27,41,BBSCS,lowes001,1,0,deshd001 strikes out. ,deshd001,0,
+,32,3,,,,,28,9,CBBSBC,johnj007,1,0,perrh001 strikes out. ,perrh001,1,
+,11,3,,,,,29,12,CBX,johnj007,1,0,,konep001,1,F
+,22,3,,,,,30,17,FBBSX,johnj007,1,0,,singc001,1,P
+,12,4,,,,,31,45,FBSX,lowes001,1,0,bellj002 grounds out. ,bellj002,0,G
+,12,4,,,,,32,50,SBCFX,lowes001,1,0,conij001 grounds out. ,conij001,0,G
+,32,4,,,,,33,59,BBBCFFFFX,lowes001,0,1,richc001 homers. ,richc001,0,
+,02,4,,,,,34,62,CFX,lowes001,1,0,,fordb001,0,F
+,32,4,johnc002,,,,35,25,CCFBFBBB,johnj007,0,0,johnc002 walks. ,johnc002,1,
+johnc002 to 2B. ,32,4,durhr001,johnc002,,,36,32,BSCBFBB,johnj007,0,0,durhr001 walks. ,durhr001,1,
+durhr001 to 2B. johnc002 out. ,10,4,graft001,durhr001,,,37,34,BX,johnj007,1,0,graft001 reaches on fielder's choice. ,graft001,1,
+durhr001 to 3B. graft001 to 2B. ,32,4,thomf001,graft001,durhr001,,38,40,BBFBCB,johnj007,0,0,thomf001 walks. ,thomf001,1,
+,00,4,thomf001,graft001,durhr001,,39,41,X,johnj007,1,0,,ordom001,1,P
+durhr001 scores. graft001 scores. thomf001 to 3B. ,11,4,lee-c001,,thomf001,,40,44,CBX,johnj007,0,2,lee-c001 reaches on error. ,lee-c001,1,P
+,11,4,lee-c001,,thomf001,,41,47,BCX,johnj007,1,0,,perrh001,1,
+,11,5,,,,,42,65,BCX,lowes001,1,0,matol001 grounds out. ,matol001,0,G
+,10,5,,,,,43,67,BX,lowes001,0,1,hairj002 homers. ,hairj002,0,
+,10,5,,,,,44,69,BX,lowes001,0,1,andeb001 homers. ,andeb001,0,
+,11,5,moram002,,,,45,72,CBX,lowes001,0,0,moram002 singles. ,moram002,0,
+,10,5,moram002,,,,47,2,BX,barcl001,1,0,,deshd001,0,P
+,32,5,moram002,,,,48,9,BBCFFBX,barcl001,1,0,,bellj002,0,F
+,31,5,,,,,49,52,BCBBX,johnj007,1,0,,konep001,1,
+,11,5,,,,,50,55,BFX,johnj007,1,0,singc001 grounds out. ,singc001,1,G
+,00,5,,,,,51,56,X,johnj007,1,0,johnc002 grounds out. ,johnc002,1,G
+,21,6,,,,,52,13,BSBX,barcl001,0,1,conij001 homers. ,conij001,0,
+,01,6,,,,,53,15,CX,barcl001,1,0,,richc001,0,F
+,12,6,,,,,54,19,FSBS,barcl001,1,0,fordb001 strikes out. ,fordb001,0,
+,31,6,,,,,55,24,CBBBX,barcl001,1,0,,matol001,0,F
+,31,6,durhr001,,,,56,61,BBBCB,johnj007,0,0,durhr001 walks. ,durhr001,1,
+,22,6,,durhr001,,,57,66,BBCLC,johnj007,1,0,graft001 strikes out. durhr001 steals 2B. ,graft001,1,
+durhr001 scores. ,00,6,,thomf001,,,58,67,X,johnj007,0,1,thomf001 doubles. ,thomf001,1,
+,22,6,,thomf001,,,59,72,BFFBS,johnj007,1,0,ordom001 strikes out. ,ordom001,1,
+,12,6,,thomf001,,,60,77,BFCFX,johnj007,1,0,lee-c001 grounds out. ,lee-c001,1,G
+,21,7,,,,,61,28,BBCX,barcl001,1,0,hairj002 grounds out. ,hairj002,0,G
+,32,7,,,,,62,34,BCBSBS,barcl001,1,0,andeb001 strikes out. ,andeb001,0,
+,12,7,,,,,63,38,CCBX,barcl001,1,0,,moram002,0,F
+,12,7,,,,,64,84,CFBFFFS,johnj007,1,0,perrh001 strikes out. ,perrh001,1,
+,10,7,,,,,65,86,BX,johnj007,1,0,,konep001,1,P
+,22,7,,,,,66,93,LSBFBFX,johnj007,1,0,singc001 grounds out. ,singc001,1,G
+,11,8,,,,,67,41,BCX,barcl001,1,0,deshd001 grounds out. ,deshd001,0,G
+,01,8,,,,,68,43,SX,barcl001,1,0,,bellj002,0,P
+,22,8,conij001,,,,69,49,BBCCFX,barcl001,0,0,conij001 singles. ,conij001,0,
+conij001 out. ,21,8,kinkm001,,,,72,4,BBFX,wunsk001,1,0,kinkm001 reaches on fielder's choice. ,kinkm001,0,
+,01,8,johnc002,,,,74,95,SX,johnj007,0,0,johnc002 singles. ,johnc002,1,
+,22,8,johnc002,,,,75,101,CBBSFC,johnj007,1,0,durhr001 strikes out. ,durhr001,1,
+johnc002 out. ,02,8,graft001,,,,76,104,CFX,johnj007,1,0,graft001 reaches on fielder's choice. ,graft001,1,
+graft001 to 3B. ,22,8,thomf001,,graft001,,77,109,BBFFX,johnj007,0,0,thomf001 singles. ,thomf001,1,
+,32,8,thomf001,,graft001,,78,115,CCBBBX,johnj007,1,0,,ordom001,1,
+,01,9,,,,,80,2,FX,howrb001,1,0,,fordb001,0,F
+,10,9,matol001,,,,81,4,BX,howrb001,0,0,matol001 singles. ,matol001,0,
+matol001 out. ,11,9,hairj002,,,,82,7,BFX,howrb001,1,0,hairj002 reaches on fielder's choice. ,hairj002,0,
+,02,9,hairj002,,,,83,10,SFX,howrb001,1,0,andeb001 grounds out. ,andeb001,0,G

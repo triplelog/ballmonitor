@@ -1,0 +1,137 @@
+version,2
+info,visteam,DET
+info,hometeam,MIN
+info,site,MIN03
+info,date,2000/08/25
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,dimum901
+info,ump1b,gormb901
+info,ump2b,everm901
+info,ump3b,danlk901
+info,pitches,pitches
+info,temp,72
+info,winddir,ltor
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,175
+info,attendance,8734
+info,wp,radkb001
+info,lp,blaiw001
+info,save,wellb002
+start,mcmib001,"Billy McMillon",0,1,10
+start,encaj001,"Juan Encarnacion",0,2,8
+start,higgb001,"Bobby Higginson",0,3,7
+start,gonzj002,"Juan Gonzalez",0,4,9
+start,palmd002,"Dean Palmer",0,5,3
+start,easld001,"Damion Easley",0,6,4
+start,cruzd001,"Deivi Cruz",0,7,6
+start,ausmb001,"Brad Ausmus",0,8,2
+start,macij001,"Jose Macias",0,9,5
+start,blaiw001,"Willie Blair",0,0,1
+start,guzmc001,"Cristian Guzman",1,1,6
+start,canij001,"Jay Canizaro",1,2,4
+start,lawtm002,"Matt Lawton",1,3,9
+start,coomr001,"Ron Coomer",1,4,3
+start,ortid001,"David Ortiz",1,5,10
+start,koskc001,"Corey Koskie",1,6,5
+start,huntt001,"Torii Hunter",1,7,8
+start,jonej003,"Jacque Jones",1,8,7
+start,piera001,"A.J. Pierzynski",1,9,2
+start,radkb001,"Brad Radke",1,0,1
+play,1,0,mcmib001,22,BCCBX,D9
+play,1,0,encaj001,00,X,S8.2-H
+play,1,0,higgb001,12,CBSFB,SB2
+play,1,0,higgb001,22,CBSFBFFX,9/F9D.2-3
+play,1,0,gonzj002,00,X,13/G
+play,1,0,palmd002,11,CBX,9/F9
+play,1,1,guzmc001,00,X,8/F8
+play,1,1,canij001,02,CCX,43/G
+play,1,1,lawtm002,32,BFBCBB,W
+play,1,1,coomr001,21,FBBX,9/F9
+play,2,0,easld001,12,CCBS,K
+play,2,0,cruzd001,31,BBBCX,8/F8
+play,2,0,ausmb001,12,CBCC,K/C
+play,2,1,ortid001,01,CX,7/F7
+play,2,1,koskc001,20,BBX,S
+play,2,1,huntt001,12,CCBS,K
+play,2,1,jonej003,11,CBX,43/G
+play,3,0,macij001,02,CFX,E6/TH1
+play,3,0,mcmib001,32,BFBSBS,K+SB2
+play,3,0,encaj001,22,FSBFBFS,K
+play,3,0,higgb001,32,BFBBCFFX,D9.2-H(UR)
+play,3,0,gonzj002,11,BFX,S8.2-H(UR)
+play,3,0,palmd002,32,SSFBBBFB,W.1-2
+play,3,0,easld001,32,BFCFBBC,K/C
+play,3,1,piera001,00,X,S8
+play,3,1,guzmc001,10,BX,6/F6
+play,3,1,canij001,32,CFFBBBB,W.1-2
+play,3,1,lawtm002,02,CCX,7/F7S
+play,3,1,coomr001,00,X,HR/78.2-H;1-H
+play,3,1,ortid001,00,X,8/F8D
+play,4,0,cruzd001,02,CFX,8/F8D
+play,4,0,ausmb001,22,FSBBFS,K
+play,4,0,macij001,00,X,43/G
+play,4,1,koskc001,02,FCX,8/F8
+play,4,1,huntt001,22,CBBSFX,S7
+play,4,1,jonej003,32,BCBFBX,C/E2.1-2
+play,4,1,piera001,12,FFBX,S7.2-3;1-2
+play,4,1,guzmc001,22,BSFFFBC,K/C
+play,4,1,canij001,21,CBBX,HR/9.3-H;2-H(UR);1-H
+play,4,1,lawtm002,22,CSBBX,63/G
+play,5,0,mcmib001,02,CFX,S7
+play,5,0,encaj001,32,CSBBBFS,K
+play,5,0,higgb001,10,BX,43/G.1-2
+play,5,0,gonzj002,20,BBX,53/G
+play,5,1,coomr001,11,BCX,S8
+play,5,1,ortid001,20,BBX,8/F8
+play,5,1,koskc001,32,BBFBFX,43/G.1-2
+play,5,1,huntt001,22,CCBBFS,K
+play,6,0,palmd002,22,FBSBS,K
+play,6,0,easld001,12,CBFS,K23
+play,6,0,cruzd001,00,X,9/F9D
+play,6,1,jonej003,00,X,9/F9
+play,6,1,piera001,12,CBSX,S9
+play,6,1,guzmc001,11,BCS,SB2
+play,6,1,guzmc001,12,BCSC,K/C
+com,"ej,guzmc001,P,dimum901,Balls and strikes"
+com,"Cristian Guzman ejected by HP umpire Mike Dimuro"
+play,6,1,canij001,11,CBX,S9.2-H
+play,6,1,lawtm002,00,,NP
+sub,andem002,"Matt Anderson",0,0,1
+play,6,1,lawtm002,00,X,8/F8
+play,7,0,ausmb001,00,,NP
+sub,hockd001,"Denny Hocking",1,1,6
+play,7,0,ausmb001,02,CSX,D/89
+play,7,0,macij001,00,,NP
+sub,wellb002,"Bob Wells",1,0,1
+play,7,0,macij001,12,CSBS,K
+play,7,0,mcmib001,02,SCX,5/P5
+play,7,0,encaj001,12,BFCX,7/F7
+play,7,1,coomr001,02,CSC,K/C
+play,7,1,ortid001,02,CSS,K
+play,7,1,koskc001,11,SBX,7/F7
+play,8,0,higgb001,12,CCBC,K/C
+com,"ej,higgb001,P,dimum901,Balls and strikes"
+com,"ej,madlb001,C,dimum901,Balls and strikes"
+com,"Bobby Higginson and Twins coach Bill Madlock ejected by HP umpire Mike Dimuro"
+play,8,0,gonzj002,11,BSX,8/F8
+play,8,0,palmd002,32,BCBSBFFFFX,9/F9
+play,8,1,huntt001,00,,NP
+sub,beckr002,"Rich Becker",0,3,7
+play,8,1,huntt001,22,BBSSFS,K
+play,8,1,jonej003,02,CSX,5/P5
+play,8,1,piera001,02,SSX,S
+play,8,1,hockd001,21,CBBX,43/G
+play,9,0,easld001,10,BX,3/F3
+play,9,0,cruzd001,00,X,5/P5
+play,9,0,ausmb001,11,BCX,S9
+play,9,0,macij001,02,CFS,K
+data,er,blaiw001,7
+data,er,andem002,0
+data,er,radkb001,1
+data,er,wellb002,0

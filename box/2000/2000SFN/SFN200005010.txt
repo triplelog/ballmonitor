@@ -1,0 +1,154 @@
+version,2
+info,visteam,NYN
+info,hometeam,SFN
+info,site,SFO03
+info,date,2000/05/01
+info,number,0
+info,starttime,7:15PM
+info,daynight,night
+info,usedh,false
+info,umphome,hirsj901
+info,ump1b,wegnm901
+info,ump2b,reynj901
+info,ump3b,willc901
+info,pitches,pitches
+info,temp,63
+info,winddir,torf
+info,windspeed,22
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,170
+info,attendance,40930
+info,wp,estes001
+info,lp,pulsb001
+info,save,
+start,hendr001,"Rickey Henderson",0,1,7
+start,belld001,"Derek Bell",0,2,9
+start,alfoe001,"Edgardo Alfonzo",0,3,4
+start,ventr001,"Robin Ventura",0,4,5
+start,zeilt001,"Todd Zeile",0,5,3
+start,paytj001,"Jay Payton",0,6,8
+start,pratt001,"Todd Pratt",0,7,2
+start,ordor001,"Rey Ordonez",0,8,6
+start,pulsb001,"Bill Pulsipher",0,9,1
+start,murrc001,"Calvin Murray",1,1,8
+start,muelb001,"Bill Mueller",1,2,5
+start,bondb001,"Barry Bonds",1,3,7
+start,kentj001,"Jeff Kent",1,4,4
+start,cresf001,"Felipe Crespo",1,5,9
+start,aurir001,"Rich Aurilia",1,6,6
+start,snowj001,"J.T. Snow",1,7,3
+start,estab001,"Bobby Estalella",1,8,2
+start,estes001,"Shawn Estes",1,9,1
+play,1,0,hendr001,11,BCX,8/F8S
+play,1,0,belld001,10,BX,13/G
+play,1,0,alfoe001,22,CBBSX,S7
+play,1,0,ventr001,32,FCBBFBFX,8/F8S
+play,1,1,murrc001,22,BBCFX,3/G
+play,1,1,muelb001,02,CFX,341/G
+play,1,1,bondb001,22,BCBSC,K/C
+play,2,0,zeilt001,21,BCBX,8/F8D
+play,2,0,paytj001,21,BFBX,S
+play,2,0,pratt001,11,CBB,SB2
+play,2,0,pratt001,32,CBBFBB,W
+play,2,0,ordor001,21,CBBX,4(B)6(2)/LDP
+play,2,1,kentj001,11,CBX,HR/7
+play,2,1,cresf001,10,BX,6/L6
+play,2,1,aurir001,32,CBFFBBB,W
+play,2,1,snowj001,01,CX,7/F7
+play,2,1,estab001,12,CBFS,K
+play,3,0,pulsb001,12,CSBX,7/F7
+play,3,0,hendr001,30,BBBB,W
+play,3,0,belld001,00,X,46(1)3/GDP
+play,3,1,estes001,01,SX,3/G
+play,3,1,murrc001,32,CBFBFBC,K/C
+play,3,1,muelb001,00,X,8/F8D
+play,4,0,alfoe001,32,CBBSFBFFC,K/C
+play,4,0,ventr001,01,FX,9/F9
+play,4,0,zeilt001,30,BBBX,63/G
+play,4,1,bondb001,32,FBFBBB,W
+play,4,1,kentj001,21,BFBB,SB2
+play,4,1,kentj001,31,BFBBB,W
+play,4,1,cresf001,00,X,13/SH.2-3;1-2
+play,4,1,aurir001,00,X,S8.3-H;2-3
+play,4,1,snowj001,02,CFH,HP.1-2
+play,4,1,estab001,11,BFX,S7/7S.3-H;2-H;1-2
+play,4,1,estes001,30,BBBB,W.2-3;1-2
+play,4,1,murrc001,00,,NP
+sub,mahop001,"Pat Mahomes",0,9,1
+play,4,1,murrc001,20,BBX,32(3)/FO.2-3;1-2
+play,4,1,muelb001,12,FCBX,7/F7
+play,5,0,paytj001,12,FBCX,6/P6
+play,5,0,pratt001,21,FBBX,9/F9
+play,5,0,ordor001,10,BX,43/G
+play,5,1,bondb001,01,CX,S9
+play,5,1,kentj001,10,BX,D7/7S.1-H(E7)
+play,5,1,cresf001,10,BX,S8.2-H
+play,5,1,aurir001,21,BFBX,7/F7S
+play,5,1,snowj001,00,X,5/FL
+play,5,1,estab001,32,CFBBFFBFFB,W.1-2
+play,5,1,estes001,02,SCX,63/G
+play,6,0,mahop001,00,,NP
+sub,abbok002,"Kurt Abbott",0,9,11
+play,6,0,abbok002,11,CBX,5/P5
+play,6,0,hendr001,32,BCFBBS,K
+play,6,0,belld001,10,BX,8/L8
+play,6,1,murrc001,00,,NP
+sub,rodrr004,"Rich Rodriguez",0,9,1
+play,6,1,murrc001,32,BBCFBX,S7
+play,6,1,muelb001,12,BCFX,S.1-2
+play,6,1,bondb001,00,X,HR/9.2-H;1-H
+play,6,1,kentj001,31,BBBCX,3/G
+play,6,1,cresf001,02,CFS,K
+play,6,1,aurir001,00,X,63/G
+play,7,0,alfoe001,00,,NP
+sub,riosa001,"Armando Rios",1,3,7
+play,7,0,alfoe001,22,CBFBX,S8
+play,7,0,ventr001,02,FSX,64(1)3/GDP
+play,7,0,zeilt001,20,BBX,HR/7
+play,7,0,paytj001,31,BFBBB,W
+play,7,0,pratt001,00,X,S.1-2
+play,7,0,ordor001,00,X,63/G
+play,7,1,snowj001,00,,NP
+sub,moram002,"Melvin Mora",0,4,5
+play,7,1,snowj001,00,X,43/G
+play,7,1,estab001,21,CBBX,D8/8S
+play,7,1,estes001,31,BBBCX,D7.2-H
+play,7,1,murrc001,32,BBCSBFS,K
+play,7,1,muelb001,00,X,143/G
+play,8,0,rodrr004,00,,NP
+sub,agbab001,"Benny Agbayani",0,9,11
+play,8,0,agbab001,30,BBBB,W
+play,8,0,hendr001,30,BBBB,W.1-2
+play,8,0,belld001,00,,NP
+sub,embra001,"Alan Embree",1,9,1
+play,8,0,belld001,22,BFCFBS,K
+play,8,0,alfoe001,22,CSBBX,S7.2-H;1-3(E7)
+play,8,0,moram002,12,BSFX,8/SF.3-H(UR)
+play,8,0,zeilt001,31,BBCBX,6/P6
+play,8,1,riosa001,00,,NP
+sub,agbab001,"Benny Agbayani",0,9,9
+play,8,1,riosa001,00,,NP
+sub,franj001,"John Franco",0,2,1
+play,8,1,riosa001,31,BBCBB,W
+play,8,1,kentj001,31,BBFBB,W.1-2
+play,8,1,cresf001,02,FSS,K
+play,8,1,aurir001,10,BX,6/P6
+play,8,1,snowj001,20,BBX,43/G
+play,9,0,paytj001,00,,NP
+sub,martr003,"Ramon E. Martinez",1,9,4
+play,9,0,paytj001,00,,NP
+sub,rodrf002,"Felix Rodriguez",1,4,1
+play,9,0,paytj001,32,SBFBBX,S8
+play,9,0,pratt001,00,,NP
+sub,nunnj001,"Jon Nunnally",0,7,11
+play,9,0,nunnj001,02,SFS,K
+play,9,0,ordor001,12,CBFFX,64(1)3/GDP
+data,er,pulsb001,4
+data,er,mahop001,2
+data,er,rodrr004,4
+data,er,franj001,0
+data,er,estes001,2
+data,er,embra001,0
+data,er,rodrf002,0

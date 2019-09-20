@@ -1,0 +1,182 @@
+version,2
+info,visteam,MIL
+info,hometeam,NYN
+info,site,NYC17
+info,date,2000/04/20
+info,number,0
+info,starttime,7:10PM
+info,daynight,night
+info,usedh,false
+info,umphome,rapue901
+info,ump1b,millb901
+info,ump2b,rungb901
+info,ump3b,shulj901
+info,pitches,pitches
+info,temp,59
+info,winddir,rtol
+info,windspeed,3
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,209
+info,attendance,17002
+info,wp,wendt001
+info,lp,leskc001
+info,save,
+start,grism001,"Marquis Grissom",0,1,8
+start,lorem001,"Mark Loretta",0,2,6
+start,burnj001,"Jeromy Burnitz",0,3,9
+start,hayec001,"Charlie Hayes",0,4,3
+start,moutj001,"James Mouton",0,5,7
+start,bellr002,"Ron Belliard",0,6,4
+start,hernj001,"Jose Hernandez",0,7,5
+start,casar001,"Raul Casanova",0,8,2
+start,woods001,"Steve Woodard",0,9,1
+start,hendr001,"Rickey Henderson",1,1,7
+start,belld001,"Derek Bell",1,2,9
+start,alfoe001,"Edgardo Alfonzo",1,3,4
+start,piazm001,"Mike Piazza",1,4,2
+start,ventr001,"Robin Ventura",1,5,5
+start,zeilt001,"Todd Zeile",1,6,3
+start,agbab001,"Benny Agbayani",1,7,8
+start,ordor001,"Rey Ordonez",1,8,6
+start,leita001,"Al Leiter",1,9,1
+play,1,0,grism001,22,CBFBX,D7
+play,1,0,lorem001,31,BBCBB,W+SB3
+play,1,0,burnj001,12,FBSFFFX,7/SF.3-H
+play,1,0,hayec001,31,BBFBB,W.1-2
+play,1,0,moutj001,22,SFBBX,8/F8
+play,1,0,bellr002,01,CX,9/F9S
+play,1,1,hendr001,22,CBCBX,43/G
+play,1,1,belld001,32,BCBCBFC,K/C
+play,1,1,alfoe001,01,CX,7/F7
+play,2,0,hernj001,12,CBSS,K
+play,2,0,casar001,22,BFBCX,S9
+play,2,0,woods001,01,LX,36(1)/FO
+play,2,0,grism001,00,X,54(1)/FO
+play,2,1,piazm001,22,BBCFX,HR/78
+play,2,1,ventr001,32,CBBBCX,8/F8
+play,2,1,zeilt001,22,CSBBX,9/F9S
+play,2,1,agbab001,22,CBCBS,K
+play,3,0,lorem001,12,FBFX,4/P4
+play,3,0,burnj001,11,BCX,3/G
+play,3,0,hayec001,00,X,D9
+play,3,0,moutj001,11,FBX,HR/78.2-H
+play,3,0,bellr002,00,X,53/G
+play,3,1,ordor001,10,BX,4/P4
+play,3,1,leita001,22,CBBSX,43/G
+play,3,1,hendr001,22,CCBBC,K/C
+play,4,0,hernj001,21,BBCX,S/78
+play,4,0,casar001,12,SBSFB,SB2
+play,4,0,casar001,32,SBSFBBS,K
+play,4,0,woods001,02,FCFFC,K/C
+play,4,0,grism001,20,BBX,S.2-3
+play,4,0,lorem001,31,BBFBC,SB2
+play,4,0,lorem001,32,BBFBCB,W
+play,4,0,burnj001,22,BBCSFX,46(1)/FO
+play,4,1,belld001,00,X,53/G
+play,4,1,alfoe001,12,CBFS,K
+play,4,1,piazm001,02,CFS,K
+play,5,0,hayec001,22,CBSBX,HR/7
+play,5,0,moutj001,11,CBX,3/P3
+play,5,0,bellr002,00,X,53/G
+play,5,0,hernj001,22,SBBSS,K
+play,5,1,ventr001,12,SCBX,43/G
+play,5,1,zeilt001,31,BBFBX,63/G
+play,5,1,agbab001,00,X,63/G
+play,6,0,casar001,22,CFBBX,63/G
+play,6,0,woods001,12,BCSX,43/G
+play,6,0,grism001,00,X,S7
+play,6,0,lorem001,22,FCBBFFFX,53/G
+play,6,1,ordor001,12,CCBX,9/F9S
+play,6,1,leita001,00,,NP
+sub,nunnj001,"Jon Nunnally",1,9,11
+play,6,1,nunnj001,12,CBFS,K
+play,6,1,hendr001,10,BX,6/FL
+play,7,0,burnj001,00,,NP
+sub,agbab001,"Benny Agbayani",1,7,7
+play,7,0,burnj001,00,,NP
+sub,nunnj001,"Jon Nunnally",1,9,8
+play,7,0,burnj001,00,,NP
+sub,mahop001,"Pat Mahomes",1,1,1
+play,7,0,burnj001,21,BSBX,7/F7
+play,7,0,hayec001,10,BX,S9
+play,7,0,moutj001,30,BBBB,W.1-2
+play,7,0,bellr002,32,CBSBBFX,8/F8
+play,7,0,hernj001,32,CCBBFFFBFX,63/G
+play,7,1,belld001,00,,NP
+sub,lopel002,"Luis Lopez",0,2,6
+play,7,1,belld001,00,X,HR/7
+play,7,1,alfoe001,01,CX,S7
+play,7,1,piazm001,30,BBBB,W.1-2
+play,7,1,ventr001,00,,NP
+sub,delov001,"Valerio De Los Santos",0,9,1
+play,7,1,ventr001,20,BBX,36(1)/FO.2-3
+play,7,1,zeilt001,00,,NP
+sub,weatd001,"David Weathers",0,9,1
+play,7,1,zeilt001,00,X,S9.3-H;1-H(E9/TH)(UR);B-2
+play,7,1,agbab001,11,BCX,9/L9
+play,7,1,ordor001,00,X,8/F8
+play,8,0,casar001,12,FFBFC,K/C
+play,8,0,weatd001,00,,NP
+sub,barkk001,"Kevin Barker",0,9,11
+play,8,0,barkk001,12,BSCC,K/C
+play,8,0,grism001,11,BCX,9/FL
+play,8,1,nunnj001,00,,NP
+sub,brusj001,"Jim Bruske",0,9,1
+play,8,1,nunnj001,10,BX,8/F8D
+play,8,1,mahop001,00,,NP
+sub,franm001,"Matt Franco",1,1,11
+play,8,1,franm001,31,BSBBX,3/G
+play,8,1,belld001,22,CBCBX,D8/8D
+play,8,1,alfoe001,00,,NP
+sub,wickb001,"Bob Wickman",0,9,1
+play,8,1,alfoe001,12,CBSS,K
+play,9,0,lopel002,00,,NP
+sub,cookd001,"Dennis Cook",1,1,1
+play,9,0,lopel002,12,LCFFBC,K/C
+play,9,0,burnj001,31,BBBFH,HP
+play,9,0,hayec001,12,SBFC,K/C
+play,9,0,moutj001,01,CS,SB2
+play,9,0,moutj001,22,CSBBS,K
+play,9,1,piazm001,11,FBX,S9/9S
+play,9,1,ventr001,00,,NP
+sub,abbok002,"Kurt Abbott",1,4,12
+play,9,1,ventr001,20,BBX,3/G.1-2
+play,9,1,zeilt001,30,BBBI,IW
+play,9,1,agbab001,12,BCCFS,K+SB3
+play,9,1,ordor001,12,CBFX,43/G
+play,10,0,bellr002,00,,NP
+sub,moram002,"Melvin Mora",1,1,8
+play,10,0,bellr002,00,,NP
+sub,nunnj001,"Jon Nunnally",1,9,7
+play,10,0,bellr002,00,,NP
+sub,pratt001,"Todd Pratt",1,4,2
+play,10,0,bellr002,00,,NP
+sub,wendt001,"Turk Wendell",1,7,1
+play,10,0,bellr002,12,CBFFH,HP
+play,10,0,hernj001,12,CLBFC,K/C
+play,10,0,casar001,20,BBB,PB.1-2
+play,10,0,casar001,30,BBBX,53/G
+play,10,0,wickb001,00,,NP
+sub,jenkg001,"Geoff Jenkins",0,9,11
+play,10,0,jenkg001,30,IIII,IW
+play,10,0,grism001,00,X,8/F8D
+play,10,1,nunnj001,00,,NP
+sub,moutj001,"James Mouton",0,5,8
+play,10,1,nunnj001,00,,NP
+sub,jenkg001,"Geoff Jenkins",0,9,7
+play,10,1,nunnj001,00,,NP
+sub,leskc001,"Curtis Leskanic",0,1,1
+play,10,1,nunnj001,12,CFBS,K
+play,10,1,moram002,00,X,HR/8
+data,er,woods001,3
+data,er,delov001,0
+data,er,weatd001,0
+data,er,brusj001,0
+data,er,wickb001,0
+data,er,leskc001,1
+data,er,leita001,4
+data,er,mahop001,0
+data,er,cookd001,0
+data,er,wendt001,0

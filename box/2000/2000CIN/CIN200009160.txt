@@ -1,0 +1,142 @@
+version,2
+info,visteam,MIL
+info,hometeam,CIN
+info,site,CIN08
+info,date,2000/09/16
+info,number,0
+info,starttime,1:15PM
+info,daynight,day
+info,usedh,false
+info,umphome,froeb901
+info,ump1b,vanvm901
+info,ump2b,culbf901
+info,ump3b,welkb901
+info,pitches,pitches
+info,temp,54
+info,winddir,ltor
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,166
+info,attendance,29350
+info,wp,desse001
+info,lp,rigdp001
+info,save,riedj001
+start,grism001,"Marquis Grissom",0,1,8
+start,lorem001,"Mark Loretta",0,2,6
+start,jenkg001,"Geoff Jenkins",0,3,7
+start,sexsr001,"Richie Sexson",0,4,3
+start,burnj001,"Jeromy Burnitz",0,5,9
+start,hernj001,"Jose Hernandez",0,6,5
+start,lopel002,"Luis Lopez",0,7,4
+start,browk004,"Kevin L. Brown",0,8,2
+start,rigdp001,"Paul Rigdon",0,9,1
+start,reesp001,"Pokey Reese",1,1,4
+start,tuckm001,"Michael Tucker",1,2,8
+start,yound001,"Dmitri Young",1,3,7
+start,cases001,"Sean Casey",1,4,3
+start,ochoa001,"Alex Ochoa",1,5,9
+start,stync001,"Chris Stynes",1,6,5
+start,santb001,"Benito Santiago",1,7,2
+start,sextc001,"Chris Sexton",1,8,6
+start,desse001,"Elmer Dessens",1,9,1
+play,1,0,grism001,21,BBCX,6/L6
+play,1,0,lorem001,32,CBBBFX,T9
+play,1,0,jenkg001,22,FBBSFX,43/G.3-H
+play,1,0,sexsr001,11,BSX,S/78
+play,1,0,burnj001,31,BBBCB,W.1-2
+play,1,0,hernj001,00,X,53/G
+play,1,1,reesp001,12,CSBS,K
+play,1,1,tuckm001,01,CX,S5/BG5
+play,1,1,yound001,31,BCBBB,W.1-2
+play,1,1,cases001,02,CFX,S/89.2-H;1-3
+play,1,1,ochoa001,01,CX,9/SF.3-H
+play,1,1,stync001,12,CBSX,D7.1-H
+play,1,1,santb001,22,CCFFFBBX,13/G
+play,2,0,lopel002,01,CX,S
+play,2,0,browk004,22,BBFCX,16(1)/FO
+play,2,0,rigdp001,01,CX,3/SH.1-2
+play,2,0,grism001,31,BFBBX,S7/7S.2-H;B-2(TH)
+play,2,0,lorem001,00,X,63/G
+play,2,1,sextc001,02,CCFX,63/G
+play,2,1,desse001,22,BBCFX,43/G
+play,2,1,reesp001,02,CCFX,63/G
+play,3,0,jenkg001,02,SFX,43/G
+play,3,0,sexsr001,22,BSSBS,K
+play,3,0,burnj001,10,BX,63/G
+play,3,1,tuckm001,32,BSFBBFC,K/C
+play,3,1,yound001,31,BBSBX,7/F7
+play,3,1,cases001,01,FX,8/F8D
+play,4,0,hernj001,32,BCBBFX,4/P4
+play,4,0,lopel002,10,BX,8/F8
+play,4,0,browk004,22,SSBBX,D/78
+play,4,0,rigdp001,32,BSBFFBX,63/G
+play,4,1,ochoa001,01,FX,53/G
+play,4,1,stync001,22,CFFBBFX,9/F9
+play,4,1,santb001,01,CX,2/FL
+play,5,0,grism001,31,BBBCX,8/F8
+play,5,0,lorem001,22,CFBFBFX,D7/7D
+play,5,0,jenkg001,00,X,S8/8S.2-3
+play,5,0,sexsr001,22,FBCBS,K
+play,5,0,burnj001,01,CX,6/P6
+play,5,1,sextc001,00,X,9/F9
+play,5,1,desse001,22,BCBSC,K/C
+play,5,1,reesp001,32,BBBCCFX,T9.B-H(E9)(UR)
+play,5,1,tuckm001,01,FX,6/L6
+play,6,0,hernj001,10,BX,S8
+play,6,0,lopel002,12,FCFBS,K
+play,6,0,browk004,02,FSX,S9/9S.1-3
+play,6,0,rigdp001,00,,NP
+sub,sweem001,"Mark Sweeney",0,9,11
+play,6,0,sweem001,12,CBFX,5/FL
+play,6,0,grism001,01,CX,8/F8
+play,6,1,yound001,00,,NP
+sub,delov001,"Valerio De Los Santos",0,9,1
+play,6,1,yound001,21,BBFX,43/G
+play,6,1,cases001,00,X,S9/9S
+play,6,1,ochoa001,32,SBBCFBX,7/L7
+play,6,1,stync001,00,X,HR/7.1-H
+play,6,1,santb001,00,X,4/P4
+play,7,0,lorem001,00,,NP
+sub,riedj001,"John Riedling",1,9,1
+play,7,0,lorem001,32,BBBCCX,63/G
+play,7,0,jenkg001,12,CFBS,K23
+play,7,0,sexsr001,11,BSX,63/G
+play,7,1,sextc001,00,,NP
+sub,buddm001,"Mike Buddie",0,9,1
+play,7,1,sextc001,10,BX,S8
+play,7,1,riedj001,12,LLBS,K+SB2
+play,7,1,reesp001,10,BX,53/G
+play,7,1,tuckm001,02,CFFX,9/F9
+play,8,0,burnj001,31,BBSBX,HR/9
+play,8,0,hernj001,32,BSBBFC,K/C
+play,8,0,lopel002,31,BBBCX,3/G
+play,8,0,browk004,12,BSCS,K
+play,8,1,yound001,12,BSSX,S9
+play,8,1,cases001,00,,NP
+sub,huntb002,"Brian L. Hunter",1,3,12
+play,8,1,cases001,11,BFX,7/L7
+play,8,1,ochoa001,00,X,T/89.1-H
+play,8,1,stync001,30,IIII,IW
+play,8,1,santb001,00,,NP
+sub,weatd001,"David Weathers",0,9,1
+play,8,1,santb001,00,X,64(1)3/GDP
+play,9,0,weatd001,00,,NP
+sub,tuckm001,"Michael Tucker",1,2,9
+play,9,0,weatd001,00,,NP
+sub,huntb002,"Brian L. Hunter",1,3,8
+play,9,0,weatd001,00,,NP
+sub,ochoa001,"Alex Ochoa",1,5,7
+play,9,0,weatd001,00,,NP
+sub,houst001,"Tyler Houston",0,9,11
+play,9,0,houst001,30,BBBB,W
+play,9,0,grism001,02,CCS,K
+play,9,0,lorem001,32,BBBCFS,K
+play,9,0,jenkg001,00,X,3/G
+data,er,rigdp001,3
+data,er,delov001,2
+data,er,buddm001,1
+data,er,weatd001,0
+data,er,desse001,2
+data,er,riedj001,1

@@ -1,0 +1,77 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,01,1,,,,,0,2,CX,cornr001,1,0,,polap001,0,
+,20,1,,,,,1,5,BBX,cornr001,1,0,drewj001 grounds out. ,drewj001,0,G
+,32,1,,,,,2,11,BFBBFS,cornr001,1,0,edmoj001 strikes out. ,edmoj001,0,
+,00,1,,,,,3,1,X,reamb001,1,0,castl001 grounds out. ,castl001,1,G
+,11,1,fox-a001,,,,4,4,CBX,reamb001,0,0,fox-a001 singles. ,fox-a001,1,
+fox-a001 to 2B. ,31,1,floyc001,fox-a001,,,5,9,BBBCB,reamb001,0,0,floyc001 walks. ,floyc001,1,
+fox-a001 scores. floyc001 out. ,12,1,wilsp002,,,,6,13,CFBX,reamb001,1,1,wilsp002 reaches on fielder's choice. ,wilsp002,1,
+,21,1,,,,lowem001,7,17,BFBC,reamb001,1,0,wilsp002 caught stealing. ,lowem001,1,
+,20,2,,,,,8,14,BBX,cornr001,0,1,clarw001 homers. ,clarw001,0,
+,10,2,,,,,9,16,BX,cornr001,0,1,paquc001 homers. ,paquc001,0,
+,30,2,lankr001,,,,10,20,BBBB,cornr001,0,0,lankr001 walks. ,lankr001,0,
+,32,2,lankr001,,,,11,26,CBBFBX,cornr001,1,0,,rente001,0,P
+,01,2,lankr001,,,,12,28,CX,cornr001,1,0,,mathm001,0,F
+lankr001 to 2B. ,01,2,,lankr001,,reamb001,13,30,FN,cornr001,0,0,Balk. ,reamb001,0,
+,22,2,,lankr001,,,14,35,FBFBS,cornr001,1,0,reamb001 strikes out. ,reamb001,0,
+,11,2,,,,,15,20,FBX,reamb001,1,0,,lowem001,1,
+,12,2,,,,,16,24,CBFX,reamb001,1,0,,rodrh001,1,F
+,01,2,lee-d002,,,,17,26,CX,reamb001,0,0,lee-d002 singles. ,lee-d002,1,
+,22,2,lee-d002,,,,18,32,CSBFBC,reamb001,1,0,castr002 strikes out. ,castr002,1,
+,21,3,,,,,19,39,BBCX,cornr001,1,0,,polap001,0,F
+,12,3,,,,,20,43,CBFS,cornr001,1,0,drewj001 strikes out. ,drewj001,0,
+,01,3,,,,,21,45,CX,cornr001,1,0,,edmoj001,0,F
+,00,3,,cornr001,,,22,33,X,reamb001,0,0,cornr001 doubles. ,cornr001,1,
+cornr001 to 3B. ,31,3,castl001,,cornr001,,23,38,BBBCX,reamb001,0,0,castl001 singles. ,castl001,1,G
+,22,3,castl001,,cornr001,,24,43,BBSSS,reamb001,1,0,fox-a001 strikes out. ,fox-a001,1,
+,21,3,,,cornr001,,25,47,FBBX,reamb001,2,0,Double Play. ,floyc001,1,
+,22,4,,,,,26,50,BBCSS,cornr001,1,0,clarw001 strikes out. ,clarw001,0,
+,01,4,,,,,27,52,FX,cornr001,1,0,paquc001 grounds out. ,paquc001,0,G
+,02,4,,,,,28,55,SCX,cornr001,1,0,,lankr001,0,F
+,01,4,,,,,29,49,FX,reamb001,1,0,wilsp002 grounds out. ,wilsp002,1,G
+,31,4,,lowem001,,,30,54,BFBBX,reamb001,0,0,lowem001 doubles. ,lowem001,1,
+,22,4,,lowem001,,,31,59,BFBFS,reamb001,1,0,rodrh001 strikes out. ,rodrh001,1,
+,30,4,lee-d002,lowem001,,,32,63,IIII,reamb001,0,0,lee-d002 intentionally walks. ,lee-d002,1,
+,02,4,lee-d002,lowem001,,,33,66,FCS,reamb001,1,0,castr002 strikes out. ,castr002,1,
+,11,5,,,,,34,58,CBX,cornr001,1,0,,rente001,0,F
+,00,5,mathm001,,,,35,59,X,cornr001,0,0,mathm001 singles. ,mathm001,0,
+mathm001 to 2B. ,12,5,,mathm001,,,36,63,LBSX,cornr001,1,0,Sacrifice bunt by reamb001.,reamb001,0,
+,11,5,,mathm001,,,37,66,CBX,cornr001,1,0,polap001 grounds out. ,polap001,0,G
+,11,5,,,,,38,69,CBX,reamb001,1,0,,cornr001,1,
+,22,5,,,,,39,75,CCBBFC,reamb001,1,0,castl001 strikes out. ,castl001,1,
+,12,5,,,,,40,79,SBFS,reamb001,1,0,fox-a001 strikes out. ,fox-a001,1,
+,01,6,,,,,42,68,FX,cornr001,1,0,,drewj001,0,F
+,00,6,edmoj001,,,,43,69,X,cornr001,0,0,edmoj001 singles. ,edmoj001,0,
+,12,6,edmoj001,,,,44,73,SBSS,cornr001,1,0,clarw001 strikes out. ,clarw001,0,
+edmoj001 to 2B. ,12,6,,edmoj001,,paquc001,45,77,BCFN,cornr001,0,0,Balk. ,paquc001,0,
+,22,6,,edmoj001,,,46,82,BCFBX,cornr001,1,0,,paquc001,0,F
+,00,6,,floyc001,,,47,80,X,reamb001,0,0,floyc001 doubles. ,floyc001,1,
+,22,6,,floyc001,,,48,85,BBSSS,reamb001,1,0,wilsp002 strikes out. ,wilsp002,1,
+,30,6,lowem001,floyc001,,,49,89,BBBB,reamb001,0,0,lowem001 walks. ,lowem001,1,
+floyc001 scores. lowem001 to 2B. ,22,6,smitm004,lowem001,,,50,94,BCSBX,reamb001,0,1,smitm004 singles. ,smitm004,1,
+lowem001 to 3B. smitm004 out. ,21,6,lee-d002,,lowem001,,51,98,BBSX,reamb001,1,0,lee-d002 reaches on fielder's choice. ,lee-d002,1,
+lee-d002 to 2B. ,01,6,castr002,lee-d002,lowem001,,52,100,FH,reamb001,0,0,castr002 hit by pitch. ,castr002,1,
+,32,6,castr002,lee-d002,lowem001,,54,106,BBSBFC,reamb001,1,0,millk005 strikes out. ,millk005,1,
+,02,7,,,,,57,3,CSC,boner001,1,0,lankr001 strikes out. ,lankr001,0,
+,22,7,,,,,58,8,CBBFS,boner001,1,0,rente001 strikes out. ,rente001,0,
+,12,7,,,,,59,13,CBSFC,boner001,1,0,mathm001 strikes out. ,mathm001,0,
+,12,7,,,,,61,4,CBFC,chrij002,1,0,castl001 strikes out. ,castl001,1,
+,02,7,,,,,62,7,FFC,chrij002,1,0,fox-a001 strikes out. ,fox-a001,1,
+,02,7,,,,,64,10,CCS,chrij002,1,0,bergd002 strikes out. ,bergd002,1,
+,02,8,,,,,67,3,CFC,miced001,1,0,davie001 strikes out. ,davie001,0,
+,31,8,,,,,68,8,BFBBX,miced001,1,0,polap001 grounds out. ,polap001,0,G
+,32,8,,,,,69,14,BCSBBC,miced001,1,0,drewj001 strikes out. ,drewj001,0,
+,12,8,,,,,71,4,FCBS,morrm001,1,0,wilsp002 strikes out. ,wilsp002,1,
+,30,8,lowem001,,,,72,8,BBBB,morrm001,0,0,lowem001 walks. ,lowem001,1,
+lowem001 out. ,12,8,smitm004,,,,73,12,CFBX,morrm001,1,0,smitm004 reaches on fielder's choice. ,smitm004,1,
+,10,8,smitm004,,,,74,14,BX,morrm001,1,0,,lee-d002,1,P
+,12,9,edmoj001,,,,76,4,BCCX,alfoa001,0,0,edmoj001 singles. ,edmoj001,0,
+edmoj001 scores. ,00,9,,clarw001,,,77,5,X,alfoa001,0,1,clarw001 doubles. ,clarw001,0,
+clarw001 to 3B. ,10,9,,,clarw001,,78,7,BX,alfoa001,1,0,Sacrifice bunt by paquc001.,paquc001,0,
+clarw001 scores. ,12,9,lankr001,,,,79,11,SFBX,alfoa001,0,1,lankr001 singles. ,lankr001,0,
+,00,9,,,,,81,1,X,loopb001,2,0,Double Play. ,rente001,0,
+,12,9,,,,,83,4,CSBS,vered001,1,0,castr002 strikes out. ,castr002,1,
+,11,9,,,,,84,7,CBX,vered001,1,0,millk005 grounds out. ,millk005,1,G
+,22,9,castl001,,,,85,13,BCCFBX,vered001,0,0,castl001 singles. ,castl001,1,
+castl001 to 2B. ,00,9,,castl001,,fox-a001,86,14,B,vered001,0,0,castl001 to 2B on defensive indifference. ,fox-a001,1,
+,32,9,,castl001,,,87,20,BBBCFS,vered001,1,0,fox-a001 strikes out. ,fox-a001,1,

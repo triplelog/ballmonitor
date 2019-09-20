@@ -1,0 +1,149 @@
+version,2
+info,visteam,SDN
+info,hometeam,CIN
+info,site,CIN08
+info,date,2000/05/09
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,marqa901
+info,ump1b,brinj901
+info,ump2b,nelsj901
+info,ump3b,cousd901
+info,pitches,pitches
+info,temp,82
+info,winddir,rtol
+info,windspeed,17
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,161
+info,attendance,22435
+info,wp,parrs001
+info,lp,meadb001
+info,save,gravd001
+start,marta001,"Al Martin",0,1,7
+start,jackd003,"Damian Jackson",0,2,6
+start,klesr001,"Ryan Klesko",0,3,3
+start,nevip001,"Phil Nevin",0,4,5
+start,owene001,"Eric Owens",0,5,9
+start,boonb002,"Bret Boone",0,6,4
+start,hernc001,"Carlos A. Hernandez",0,7,2
+start,river002,"Ruben Rivera",0,8,8
+start,meadb001,"Brian Meadows",0,9,1
+start,reesp001,"Pokey Reese",1,1,4
+start,cases001,"Sean Casey",1,2,3
+start,grifk002,"Ken Griffey",1,3,8
+start,bichd001,"Dante Bichette",1,4,9
+start,taube001,"Eddie Taubensee",1,5,2
+start,tuckm001,"Michael Tucker",1,6,7
+start,boona001,"Aaron Boone",1,7,5
+start,dawkt001,"Travis Dawkins",1,8,6
+start,parrs001,"Steve Parris",1,9,1
+play,1,0,marta001,00,X,S
+play,1,0,jackd003,10,BX,13/G.1-2
+play,1,0,klesr001,21,CBBX,S9/9S.2-3
+play,1,0,nevip001,00,X,46(1)3/GDP
+play,1,1,reesp001,22,BCBFH,HP
+play,1,1,cases001,22,BBSFFFX,7/F7
+play,1,1,grifk002,10,BB,SB2
+play,1,1,grifk002,30,BBII,IW
+play,1,1,bichd001,01,CX,64(1)3/GDP
+play,2,0,owene001,11,CBX,9/F9S
+play,2,0,boonb002,32,BBBCSFFFS,K23
+play,2,0,hernc001,11,CBX,E6/TH
+play,2,0,river002,32,BBFBCB,W.1-2
+play,2,0,meadb001,22,CBFBX,9/F9
+play,2,1,taube001,31,BFBBB,W
+play,2,1,tuckm001,21,CBBX,7/L7
+play,2,1,boona001,12,CCBX,D7/7S.1-3
+play,2,1,dawkt001,30,IIII,IW
+play,2,1,parrs001,11,SBX,8/SF.3-H;2-3
+play,2,1,reesp001,02,CCX,3/FL
+play,3,0,marta001,01,CX,41/G
+play,3,0,jackd003,22,FBBFS,K
+play,3,0,klesr001,10,BX,D9/9S
+play,3,0,nevip001,12,CSBX,63/G
+play,3,1,cases001,00,X,S9
+play,3,1,grifk002,20,BBX,E3/TH.1-2
+play,3,1,bichd001,10,BX,54(1)3/GDP.2-3
+play,3,1,taube001,31,BFBBB,W
+play,3,1,tuckm001,01,FX,8/F8S
+play,4,0,owene001,10,BX,S8
+play,4,0,boonb002,22,CCBBX,16(1)/FO
+play,4,0,hernc001,12,CFBFX,8/F8S
+play,4,0,river002,22,BBCSFB,SB2
+play,4,0,river002,32,BBCSFBC,K/C
+play,4,1,boona001,22,BBCFFS,K
+play,4,1,dawkt001,22,CBSBFX,43/G
+play,4,1,parrs001,00,X,5/FL
+play,5,0,meadb001,32,SBBBCFX,7/F7
+play,5,0,marta001,00,X,3/G
+play,5,0,jackd003,21,SBBX,63/G
+play,5,1,reesp001,32,BFBBFFB,W
+play,5,1,cases001,01,CX,S8.1-2
+play,5,1,grifk002,10,BX,2/FL
+play,5,1,bichd001,01,CB,SB3
+play,5,1,bichd001,11,CBX,64(1)3/GDP
+play,6,0,klesr001,12,CFBX,53/G
+play,6,0,nevip001,11,CBX,53/G
+play,6,0,owene001,11,CBX,S
+play,6,0,boonb002,21,BFBX,53/G
+play,6,1,taube001,00,X,63/G
+play,6,1,tuckm001,12,FBSFFX,S9
+play,6,1,boona001,00,X,D/78.1-3
+play,6,1,dawkt001,00,,NP
+sub,morrh001,"Hal Morris",1,8,11
+play,6,1,morrh001,30,IIII,IW
+play,6,1,parrs001,00,,NP
+sub,ochoa001,"Alex Ochoa",1,9,11
+play,6,1,ochoa001,12,FFBX,52(3)/FO.2-3;1-2
+play,6,1,reesp001,10,BX,E4/G.3-H(UR)(NR);2-3;1-2
+play,6,1,cases001,00,,NP
+sub,walkk001,"Kevin Walker",0,9,1
+play,6,1,cases001,32,BBSFFBX,63/G
+play,7,0,hernc001,00,,NP
+sub,castj004,"Juan Castro",1,8,6
+play,7,0,hernc001,00,,NP
+sub,wills002,"Scott Williamson",1,9,1
+play,7,0,hernc001,12,CFBS,K
+play,7,0,river002,22,SSBBFX,S9
+play,7,0,walkk001,00,,NP
+sub,magad001,"Dave Magadan",0,9,11
+play,7,0,magad001,21,BBCX,46(1)3/GDP
+play,7,1,grifk002,00,,NP
+sub,walld002,"Donne Wall",0,9,1
+play,7,1,grifk002,32,CBBFBB,W
+play,7,1,bichd001,01,CX,D7/7S.1-3
+play,7,1,taube001,01,FX,FC4.2X3(4);B-1
+play,7,1,tuckm001,10,BX,3/L3
+play,7,1,boona001,10,BX,7/F7
+play,8,0,marta001,00,,NP
+sub,gravd001,"Danny Graves",1,9,1
+play,8,0,marta001,10,BX,D/78
+play,8,0,jackd003,00,X,63/G
+play,8,0,klesr001,01,SX,13/G.2-3
+play,8,0,nevip001,10,BX,8/F8D
+play,8,1,castj004,00,,NP
+sub,almac001,"Carlos Almanzar",0,9,1
+play,8,1,castj004,01,CX,8/F8
+play,8,1,gravd001,00,X,13/G
+play,8,1,reesp001,32,BBCCBX,S
+play,8,1,cases001,00,X,3/G
+play,9,0,owene001,22,BCBCX,53/G
+play,9,0,boonb002,21,BBCX,S
+play,9,0,hernc001,01,FX,8/F8D
+play,9,0,river002,00,B,DI.1-2
+play,9,0,river002,30,BBBB,W
+play,9,0,almac001,00,,NP
+sub,sprae001,"Ed Sprague",0,9,11
+play,9,0,sprae001,31,BBBCB,W.2-3;1-2
+play,9,0,marta001,10,BX,43/G
+data,er,meadb001,1
+data,er,walkk001,0
+data,er,walld002,0
+data,er,almac001,0
+data,er,parrs001,0
+data,er,wills002,0
+data,er,gravd001,0

@@ -1,0 +1,141 @@
+version,2
+info,visteam,MIL
+info,hometeam,COL
+info,site,DEN02
+info,date,2000/09/01
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,buckc901
+info,ump1b,reedr901
+info,ump2b,wendh902
+info,ump3b,fichm901
+info,pitches,pitches
+info,temp,82
+info,winddir,tolf
+info,windspeed,1
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,158
+info,attendance,38970
+info,wp,astap001
+info,lp,snydj001
+info,save,whitg001
+start,moutj001,"James Mouton",0,1,8
+start,lorem001,"Mark Loretta",0,2,6
+start,jenkg001,"Geoff Jenkins",0,3,7
+start,sexsr001,"Richie Sexson",0,4,3
+start,burnj001,"Jeromy Burnitz",0,5,9
+start,houst001,"Tyler Houston",0,6,5
+start,bellr002,"Ron Belliard",0,7,4
+start,casar001,"Raul Casanova",0,8,2
+start,snydj001,"John Snyder",0,9,1
+start,pierj002,"Juan Pierre",1,1,8
+start,peren001,"Neifi Perez",1,2,6
+start,heltt001,"Todd Helton",1,3,3
+start,hammj001,"Jeffrey Hammonds",1,4,9
+start,walkt002,"Todd Walker",1,5,4
+start,cirij001,"Jeff Cirillo",1,6,5
+start,hollt001,"Todd Hollandsworth",1,7,7
+start,petrb001,"Ben Petrick",1,8,2
+start,astap001,"Pedro Astacio",1,9,1
+play,1,0,moutj001,21,CBBX,S5/BG5
+play,1,0,lorem001,01,CX,53/G.1-2
+play,1,0,jenkg001,01,SB,WP.2-3
+play,1,0,jenkg001,32,SBBBSX,HR/89.3-H
+play,1,0,sexsr001,11,BSX,S7
+play,1,0,burnj001,22,BCBFFX,46(1)3/GDP
+play,1,1,pierj002,11,BLX,7/F7
+play,1,1,peren001,21,BFBX,S5/BG5
+play,1,1,heltt001,00,X,8/F8
+play,1,1,hammj001,02,CFX,S/89.1-3
+play,1,1,walkt002,32,CFBBBX,43/G
+play,2,0,houst001,10,BX,43/G
+play,2,0,bellr002,11,BSX,5/L5
+play,2,0,casar001,00,X,3/G
+play,2,1,cirij001,22,CFBFBX,43/G
+play,2,1,hollt001,11,CBX,HR/78
+play,2,1,petrb001,02,FCX,S7
+play,2,1,astap001,02,LSS,K
+play,2,1,pierj002,00,X,13/G
+play,3,0,snydj001,11,BSX,31/G
+play,3,0,moutj001,01,SX,S2/BG2
+play,3,0,lorem001,12,FFBX,63/G.1-2
+play,3,0,jenkg001,31,BBBCB,W
+play,3,0,sexsr001,00,X,5/L5
+play,3,1,peren001,12,CBLC,K/C
+play,3,1,heltt001,22,CBBCX,31/G
+play,3,1,hammj001,32,BCBSBB,W
+play,3,1,walkt002,11,BSX,7/F7
+play,4,0,burnj001,32,CBBBFS,K
+play,4,0,houst001,11,BFX,S/89
+play,4,0,bellr002,00,S,SB2
+play,4,0,bellr002,02,SSS,K
+play,4,0,casar001,30,BIII,IW
+play,4,0,snydj001,10,BX,63/G
+play,4,1,cirij001,21,SBBX,D7
+play,4,1,hollt001,10,BX,S7.2-3
+play,4,1,petrb001,32,BBFFFBB,W.1-2
+play,4,1,astap001,02,SSX,46(1)/FO.3-H;2-3
+play,4,1,pierj002,00,X,46(1)3/GDP
+play,5,0,moutj001,01,FX,9/F9
+play,5,0,lorem001,22,BCBCS,K
+play,5,0,jenkg001,10,BX,9/F9
+play,5,1,peren001,32,FLBBBX,31/G
+play,5,1,heltt001,21,CBBX,HR/78
+play,5,1,hammj001,12,BFFX,8/F8D
+play,5,1,walkt002,01,CX,8/F8D
+play,6,0,sexsr001,01,SX,HR/7
+play,6,0,burnj001,22,CFBFBC,K/C
+play,6,0,houst001,21,BCBX,43/G
+play,6,0,bellr002,20,BBX,13/G
+play,6,1,cirij001,01,CX,63/G
+play,6,1,hollt001,10,BX,S9
+play,6,1,petrb001,12,FCBX,S.1-3(E4)
+play,6,1,astap001,02,LCX,S9.3-H;1-3
+play,6,1,pierj002,01,LX,E1/SH.3-H;1-2
+play,6,1,peren001,00,X,46(1)3/GDP
+play,7,0,casar001,30,BBBB,W
+play,7,0,snydj001,00,,NP
+sub,hayec001,"Charlie Hayes",0,9,11
+play,7,0,hayec001,31,BBBCX,S7/7S.1-2
+play,7,0,moutj001,00,X,54/SH.2-3;1-2
+play,7,0,lorem001,12,CBFS,K
+play,7,0,jenkg001,00,,NP
+sub,myerm001,"Mike Myers",1,9,1
+play,7,0,jenkg001,02,FCS,K
+play,7,1,heltt001,00,,NP
+sub,kingr001,"Ray King",0,9,1
+play,7,1,heltt001,21,CBBX,6/P6
+play,7,1,hammj001,11,BSX,4/L4
+play,7,1,walkt002,01,FX,43/G
+play,8,0,sexsr001,00,,NP
+sub,fryej001,"Jeff Frye",1,9,4
+play,8,0,sexsr001,00,,NP
+sub,whitg001,"Gabe White",1,5,1
+play,8,0,sexsr001,21,BCBX,5/FL
+play,8,0,burnj001,01,SX,31/G
+play,8,0,houst001,00,,NP
+sub,hernj001,"Jose Hernandez",0,6,11
+play,8,0,hernj001,22,BFSBS,K
+play,8,1,cirij001,00,,NP
+sub,hernj001,"Jose Hernandez",0,6,5
+play,8,1,cirij001,00,,NP
+sub,weatd001,"David Weathers",0,9,1
+play,8,1,cirij001,32,CBFBBX,D9
+play,8,1,hollt001,02,FFS,K
+play,8,1,petrb001,31,BBBCB,W
+play,8,1,fryej001,11,CBX,64(1)3/GDP
+play,9,0,bellr002,22,BCBFX,9/F9D
+play,9,0,casar001,22,CBBCX,63/G
+play,9,0,weatd001,00,,NP
+sub,echea001,"Angel Echevarria",0,9,11
+play,9,0,echea001,02,CFFX,8/F8
+data,er,snydj001,5
+data,er,kingr001,0
+data,er,weatd001,0
+data,er,astap001,3
+data,er,myerm001,0
+data,er,whitg001,0

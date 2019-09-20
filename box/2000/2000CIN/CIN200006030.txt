@@ -1,0 +1,139 @@
+version,2
+info,visteam,MIN
+info,hometeam,CIN
+info,site,CIN08
+info,date,2000/06/03
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,monte901
+info,ump1b,randt901
+info,ump2b,barrt901
+info,ump3b,laynj901
+info,pitches,pitches
+info,temp,77
+info,winddir,fromcf
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,159
+info,attendance,45617
+info,wp,neagd001
+info,lp,bergs001
+info,save,
+start,canij001,"Jay Canizaro",0,1,4
+start,guzmc001,"Cristian Guzman",0,2,6
+start,lawtm002,"Matt Lawton",0,3,7
+start,huskb001,"Butch Huskey",0,4,3
+start,buchb002,"Brian Buchanan",0,5,9
+start,jonej003,"Jacque Jones",0,6,8
+start,jensm001,"Marcus Jensen",0,7,2
+start,maxwj001,"Jason Maxwell",0,8,5
+start,bergs001,"Sean Bergman",0,9,1
+start,reesp001,"Pokey Reese",1,1,4
+start,larkb001,"Barry Larkin",1,2,6
+start,grifk002,"Ken Griffey",1,3,8
+start,bichd001,"Dante Bichette",1,4,9
+start,tuckm001,"Michael Tucker",1,5,7
+start,cases001,"Sean Casey",1,6,3
+start,boona001,"Aaron Boone",1,7,5
+start,taube001,"Eddie Taubensee",1,8,2
+start,neagd001,"Denny Neagle",1,9,1
+play,1,0,canij001,12,LBFX,4/P4
+play,1,0,guzmc001,01,CX,4/P4
+play,1,0,lawtm002,00,X,13/G
+play,1,1,reesp001,11,BCX,S8
+play,1,1,larkb001,01,CX,HR/7.1-H
+play,1,1,grifk002,32,CBBSBFFB,W
+play,1,1,bichd001,00,X,7/F7
+play,1,1,tuckm001,10,BX,8/F8
+play,1,1,cases001,02,CSS,K
+play,2,0,huskb001,32,CBBBFFB,W
+play,2,0,buchb002,00,X,D9.1-H
+play,2,0,jonej003,00,X,3/G.2-3
+play,2,0,jensm001,31,BBFBB,W
+play,2,0,maxwj001,01,CX,43/G.3-H;1-2
+play,2,0,bergs001,12,BSCS,K
+play,2,1,boona001,00,X,53/G
+play,2,1,taube001,11,BCX,3/G
+play,2,1,neagd001,12,SFBX,43/G
+play,3,0,canij001,00,X,HR/7
+play,3,0,guzmc001,22,CBFBX,3/G
+play,3,0,lawtm002,10,BX,S6.B-2(E6/TH1)
+play,3,0,huskb001,32,BSBFBB,W
+play,3,0,buchb002,12,CFBFS,K
+play,3,0,jonej003,12,CBFS,K
+play,3,1,reesp001,10,BX,13/G
+play,3,1,larkb001,12,CCBX,63/G
+play,3,1,grifk002,31,BBFBX,13/G
+play,4,0,jensm001,21,BBSX,8/F8D
+play,4,0,maxwj001,31,BFBBX,8/F8
+play,4,0,bergs001,01,FX,D7
+play,4,0,canij001,10,BX,4/P4
+play,4,1,bichd001,01,CX,63/G
+play,4,1,tuckm001,32,FBBFFBB,W
+play,4,1,cases001,00,B,SB2
+play,4,1,cases001,32,BBBCFB,W
+play,4,1,boona001,12,BFFX,64(1)/FO.2-3
+play,4,1,taube001,31,BBSBB,W.1-2
+play,4,1,neagd001,00,X,S.3-H;2-3;1-2
+play,4,1,reesp001,11,BCX,S8.3-H;2-H;1-2
+play,4,1,larkb001,00,X,9/F9S
+play,5,0,guzmc001,31,BBBCB,W
+play,5,0,lawtm002,32,CBBCFBFX,9(B)3(1)/LDP
+play,5,0,huskb001,31,BBBCX,8/F8
+play,5,1,grifk002,00,X,HR/7
+play,5,1,bichd001,00,X,HR/8
+play,5,1,tuckm001,00,,NP
+sub,santj003,"Johan Santana",0,9,1
+play,5,1,tuckm001,32,BBCBFX,31/G
+play,5,1,cases001,22,CBBCC,K/C
+play,5,1,boona001,32,BCSBBS,K
+play,6,0,buchb002,31,FBBBX,5/P5
+play,6,0,jonej003,10,BX,43/G
+play,6,0,jensm001,22,BFBCX,63/G
+play,6,1,taube001,00,X,8/F8D
+play,6,1,neagd001,21,FBBX,63/G
+play,6,1,reesp001,32,BBBCCB,W
+play,6,1,larkb001,12,CFFBX,T9/9S.1-H
+play,6,1,grifk002,00,X,8/F8D
+play,7,0,maxwj001,10,BX,63/G
+play,7,0,santj003,00,,NP
+sub,coomr001,"Ron Coomer",0,9,11
+play,7,0,coomr001,22,BBSCS,K
+play,7,0,canij001,02,FCX,53/G
+play,7,1,bichd001,00,,NP
+sub,millt001,"Travis Miller",0,9,1
+play,7,1,bichd001,32,BCBFBB,W
+play,7,1,tuckm001,01,CH,HP.1-2
+play,7,1,cases001,12,CFBC,K/C
+play,7,1,boona001,01,FX,S9/9S.2-H;1-3
+play,7,1,taube001,22,BCSFFFFBX,4/P4
+play,7,1,neagd001,00,,NP
+sub,stync001,"Chris Stynes",1,9,11
+play,7,1,stync001,00,X,46(1)/FO
+play,8,0,guzmc001,00,,NP
+sub,castj004,"Juan Castro",1,2,6
+play,8,0,guzmc001,00,,NP
+sub,reyed001,"Dennys Reyes",1,9,1
+play,8,0,guzmc001,10,BX,4/P4
+play,8,0,lawtm002,11,CBX,31/G
+play,8,0,huskb001,22,BSBFS,K
+play,8,1,reesp001,00,,NP
+sub,guare001,"Eddie Guardado",0,9,1
+play,8,1,reesp001,22,CSBBS,K
+play,8,1,castj004,12,CBFS,K
+play,8,1,grifk002,32,BBCSBS,K
+play,9,0,buchb002,00,X,43/G
+play,9,0,jonej003,00,,NP
+sub,lecrm001,"Matt LeCroy",0,6,11
+play,9,0,lecrm001,10,BX,3/G
+play,9,0,jensm001,01,FX,53/G
+data,er,bergs001,7
+data,er,santj003,1
+data,er,millt001,1
+data,er,guare001,0
+data,er,neagd001,3
+data,er,reyed001,0

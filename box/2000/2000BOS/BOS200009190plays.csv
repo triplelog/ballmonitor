@@ -1,0 +1,87 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,20,1,,,,,0,3,BBX,ohkat001,1,0,,loftk001,0,F
+,00,1,,,,,1,4,X,ohkat001,1,0,,vizqo001,0,F
+,02,1,,,,,2,7,CCC,ohkat001,1,0,alomr001 strikes out. ,alomr001,0,
+,12,1,,,,,3,4,BCCX,nagyc001,1,0,,nixot001,1,F
+,21,1,offej001,,,,4,8,BCBX,nagyc001,0,0,offej001 singles. ,offej001,1,
+offej001 to 2B. ,31,1,varij001,offej001,,,5,13,BBCBX,nagyc001,0,0,varij001 singles. ,varij001,1,
+offej001 to 3B. varij001 to 2B. ,32,1,garcn001,varij001,offej001,,6,19,BFFBBB,nagyc001,0,0,garcn001 walks. ,garcn001,1,
+varij001 to 3B. garcn001 to 2B. offej001 out. ,00,1,oleat001,garcn001,varij001,,7,20,X,nagyc001,1,0,oleat001 reaches on fielder's choice. ,oleat001,1,
+,10,1,oleat001,garcn001,varij001,,8,22,BX,nagyc001,1,0,,bichd001,1,F
+,11,2,,ramim002,,,9,10,BCX,ohkat001,0,0,ramim002 doubles. ,ramim002,0,
+ramim002 to 3B. ,31,2,thomj002,,ramim002,,10,15,BBSBB,ohkat001,0,0,thomj002 walks. ,thomj002,0,
+ramim002 scores. ,21,2,thomj002,,,,11,19,BFBX,ohkat001,1,1,frymt001 hits sacrifice fly. ,frymt001,0,
+thomj002 to 2B. ,21,2,selbb001,thomj002,,,12,23,BCBX,ohkat001,0,0,selbb001 singles. ,selbb001,0,
+thomj002 to 3B. ,10,2,selbb001,,thomj002,,13,25,BX,ohkat001,1,0,,branr001,0,F
+selbb001 out. ,21,2,aloms001,,thomj002,,14,29,CBBX,ohkat001,1,0,aloms001 reaches on fielder's choice. ,aloms001,0,
+,32,2,,,,,15,28,BCFBBX,nagyc001,1,0,,daubb001,1,F
+,21,2,,,,,16,32,BFBX,nagyc001,1,0,merll001 grounds out. ,merll001,1,G
+,10,2,,,,,17,34,BX,nagyc001,1,0,,lewid001,1,L
+,02,3,loftk001,,,,18,32,LFX,ohkat001,0,0,loftk001 singles. ,loftk001,0,
+,00,3,,loftk001,,vizqo001,19,33,B,ohkat001,0,0,loftk001 steals 2B. ,vizqo001,0,
+loftk001 to 3B. ,10,3,,,loftk001,vizqo001,20,35,BB,ohkat001,0,0,Wild Pitch. ,vizqo001,0,
+,20,3,,,loftk001,,21,38,BBX,ohkat001,1,0,vizqo001 grounds out. ,vizqo001,0,G
+,10,3,,,loftk001,,22,40,BX,ohkat001,1,0,alomr001 grounds out. ,alomr001,0,G
+,32,3,,,loftk001,,23,49,CSBFFBFBC,ohkat001,1,0,ramim002 strikes out. ,ramim002,0,
+,20,3,nixot001,,,,24,37,BBX,nagyc001,0,0,nixot001 singles. ,nixot001,1,
+,20,3,nixot001,,,,25,40,BBX,nagyc001,1,0,,offej001,1,F
+nixot001 to 2B. ,30,3,varij001,nixot001,,,26,44,BBBB,nagyc001,0,0,varij001 walks. ,varij001,1,
+nixot001 scores. varij001 scores. ,10,3,,,garcn001,,27,46,BX,nagyc001,0,2,garcn001 triples. ,garcn001,1,
+,01,3,,,garcn001,,28,48,CX,nagyc001,1,0,oleat001 grounds out. ,oleat001,1,G
+garcn001 scores. ,00,3,,,,,29,49,X,nagyc001,0,2,bichd001 homers. ,bichd001,1,
+,10,3,,,,,30,51,BX,nagyc001,1,0,daubb001 grounds out. ,daubb001,1,G
+,12,4,,,,,31,53,FSBC,ohkat001,1,0,thomj002 strikes out. ,thomj002,0,
+,32,4,frymt001,,,,32,59,FCBBBX,ohkat001,0,0,frymt001 singles. ,frymt001,0,
+frymt001 out. ,00,4,selbb001,,,,33,60,X,ohkat001,1,0,selbb001 reaches on fielder's choice. ,selbb001,0,
+selbb001 to 2B. ,11,4,branr001,selbb001,,,34,63,BSX,ohkat001,0,0,branr001 singles. ,branr001,0,
+selbb001 to 3B. branr001 to 2B. ,31,4,aloms001,branr001,selbb001,,35,68,BBBCB,ohkat001,0,0,aloms001 walks. ,aloms001,0,
+,02,4,aloms001,branr001,selbb001,,36,72,FSFX,ohkat001,1,0,,loftk001,0,F
+,01,4,,,,,37,53,CX,nagyc001,1,0,,merll001,1,L
+,22,4,,lewid001,,,38,59,CSBBFX,nagyc001,0,0,lewid001 doubles. ,lewid001,1,
+lewid001 scores. ,00,4,nixot001,,,,39,60,X,nagyc001,0,1,nixot001 singles. ,nixot001,1,
+nixot001 to 3B. ,21,4,,offej001,nixot001,,41,4,BCBX,speij001,0,0,offej001 doubles. ,offej001,1,
+nixot001 scores. offej001 to 3B. ,00,4,,,offej001,,42,5,X,speij001,1,1,varij001 hits sacrifice fly. ,varij001,1,
+,30,4,garcn001,,offej001,,43,9,IIII,speij001,0,0,garcn001 intentionally walks. ,garcn001,1,
+,02,4,garcn001,,offej001,,44,12,FSX,speij001,1,0,,oleat001,1,F
+,11,5,vizqo001,,,,46,3,CBX,pichh001,0,0,vizqo001 singles. ,vizqo001,0,
+vizqo001 to 2B. ,01,5,alomr001,vizqo001,,,47,5,CX,pichh001,0,0,alomr001 singles. ,alomr001,0,
+vizqo001 to 3B. alomr001 to 2B. ,32,5,,alomr001,vizqo001,,48,13,CBBFBFFX,pichh001,1,0,ramim002 grounds out. ,ramim002,0,G
+vizqo001 scores. ,30,5,,alomr001,,,49,17,BBBX,pichh001,1,1,thomj002 hits sacrifice fly. ,thomj002,0,
+alomr001 scores. ,21,5,frymt001,,,,50,21,BBFX,pichh001,0,1,frymt001 singles. ,frymt001,0,
+,12,5,frymt001,,,,51,26,CSFBS,pichh001,1,0,selbb001 strikes out. ,selbb001,0,
+,32,5,,,,,52,18,BBCFBX,speij001,1,0,,bichd001,1,F
+,22,5,,,,,53,23,BFFBX,speij001,1,0,,daubb001,1,F
+,32,5,merll001,,,,54,30,CFFBBBX,speij001,0,0,merll001 singles. ,merll001,1,
+,12,5,merll001,,,,55,34,FCBS,speij001,1,0,lewid001 strikes out. ,lewid001,1,
+,32,6,,,,,56,33,FBSBBFS,pichh001,1,0,branr001 strikes out. ,branr001,0,
+,20,6,,,,,57,36,BBX,pichh001,1,0,aloms001 grounds out. ,aloms001,0,G
+,22,6,,,,,58,43,CFBFBFX,pichh001,1,0,loftk001 grounds out. ,loftk001,0,G
+,22,6,,,,,60,5,CBBFS,cairc001,1,0,nixot001 strikes out. ,nixot001,1,
+,00,6,offej001,,,,61,6,X,cairc001,0,0,offej001 singles. ,offej001,1,
+,00,6,offej001,,,,62,7,X,cairc001,1,0,,varij001,1,P
+offej001 to 2B. ,31,6,garcn001,offej001,,,64,5,BBBCB,reeds001,0,0,garcn001 walks. ,garcn001,1,
+offej001 scores. garcn001 to 3B. ,12,6,,oleat001,garcn001,,65,10,BCFFX,reeds001,0,1,oleat001 doubles. ,oleat001,1,
+,22,6,,oleat001,garcn001,,66,15,SBFBX,reeds001,1,0,,bichd001,1,F
+,11,7,,,,,68,3,BCX,cormr001,1,0,,vizqo001,0,L
+,02,7,alomr001,,,,69,6,CCX,cormr001,0,0,alomr001 singles. ,alomr001,0,
+alomr001 to 2B. ,10,7,,alomr001,,,71,2,BX,garcr001,1,0,ramim002 grounds out. ,ramim002,0,G
+alomr001 to 3B. ,22,7,,,alomr001,thomj002,72,7,BBFFB,garcr001,0,0,alomr001 to 3B on defensive indifference. ,thomj002,0,
+alomr001 scores. thomj002 to 1B. ,32,7,thomj002,,,,73,13,BBFFBS,garcr001,0,1,thomj002 strikes out. Wild Pitch. ,thomj002,0,
+,31,7,thomj002,,,,74,18,BBCBX,garcr001,1,0,,frymt001,0,
+,11,7,,,,,75,18,BSX,reeds001,1,0,,daubb001,1,F
+,02,7,merll001,,,,76,21,CFX,reeds001,0,0,merll001 singles. ,merll001,1,
+,11,7,merll001,,,,77,24,BSX,reeds001,1,0,,lewid001,1,F
+merll001 to 2B. ,31,7,nixot001,merll001,,,79,5,BBBCB,rincr001,0,0,nixot001 walks. ,nixot001,1,
+merll001 to 3B. nixot001 out. ,10,7,offej001,,merll001,,80,7,BX,rincr001,1,0,offej001 reaches on fielder's choice. ,offej001,1,G
+,22,8,,,,,83,5,FBFBX,beckr001,1,0,selbb001 grounds out. ,selbb001,0,G
+,02,8,,,,,84,8,FSS,beckr001,1,0,branr001 strikes out. ,branr001,0,
+aloms001 to 2B. ,22,8,,aloms001,,,85,13,BFCBX,beckr001,0,0,aloms001 singles. ,aloms001,0,
+,01,8,,aloms001,,,86,15,CX,beckr001,1,0,,loftk001,0,F
+,10,8,,,,,88,2,BX,karss001,1,0,,varij001,1,
+,22,8,,,,,89,7,BBSFS,karss001,1,0,garcn001 strikes out. ,garcn001,1,
+,11,8,,,,,90,10,FBX,karss001,1,0,,oleat001,1,F
+,32,9,vizqo001,,,,94,6,BBCBLX,lowed001,0,0,vizqo001 singles. ,vizqo001,0,
+vizqo001 out. ,12,9,alomr001,,,,95,10,BCFX,lowed001,1,0,alomr001 reaches on fielder's choice. ,alomr001,0,
+alomr001 to 3B. ,00,9,,,alomr001,,96,11,X,lowed001,1,0,ramim002 grounds out. ,ramim002,0,G
+,32,9,thomj002,,alomr001,,97,19,CCBFBFBB,lowed001,0,0,thomj002 walks. ,thomj002,0,
+,02,9,thomj002,,alomr001,,98,23,CSFC,lowed001,1,0,frymt001 strikes out. ,frymt001,0,

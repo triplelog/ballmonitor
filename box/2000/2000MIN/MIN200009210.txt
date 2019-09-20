@@ -1,0 +1,159 @@
+version,2
+info,visteam,CHA
+info,hometeam,MIN
+info,site,MIN03
+info,date,2000/09/21
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,lampi901
+info,ump1b,rungb901
+info,ump2b,shulj901
+info,ump3b,roe-r901
+info,pitches,pitches
+info,temp,72
+info,winddir,rtol
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,183
+info,attendance,6688
+info,wp,sirom001
+info,lp,santj003
+info,save,
+start,durhr001,"Ray Durham",0,1,4
+start,valej003,"Jose Valentin",0,2,6
+start,thomf001,"Frank Thomas",0,3,10
+start,ordom001,"Magglio Ordonez",0,4,9
+start,lee-c001,"Carlos Lee",0,5,7
+start,konep001,"Paul Konerko",0,6,3
+start,perrh001,"Herbert Perry",0,7,5
+start,abboj002,"Jeff Abbott",0,8,8
+start,johnc002,"Charles Johnson",0,9,2
+start,sirom001,"Mike Sirotka",0,0,1
+start,guzmc001,"Cristian Guzman",1,1,6
+start,rival001,"Luis Rivas",1,2,4
+start,lawtm002,"Matt Lawton",1,3,9
+start,coomr001,"Ron Coomer",1,4,3
+start,ortid001,"David Ortiz",1,5,10
+start,huntt001,"Torii Hunter",1,6,8
+start,koskc001,"Corey Koskie",1,7,5
+start,moelc001,"Chad Moeller",1,8,2
+start,jonej003,"Jacque Jones",1,9,7
+start,santj003,"Johan Santana",1,0,1
+play,1,0,durhr001,32,BBCCFFBFX,7/F7
+play,1,0,valej003,22,BFSFBS,K
+play,1,0,thomf001,32,BBFFFBFB,W
+play,1,0,ordom001,32,BCBBCC,K/C
+play,1,1,guzmc001,01,FX,53/G
+play,1,1,rival001,31,CBBBX,13/G
+play,1,1,lawtm002,11,FBX,S
+play,1,1,coomr001,11,BCX,D7/7S.1-3
+play,1,1,ortid001,32,BSBFBX,S7.3-H;2XH(72)
+play,2,0,lee-c001,02,FCS,K
+play,2,0,konep001,01,CX,63/G
+play,2,0,perrh001,32,BBBCSFX,9/F9
+com,"$diving catch by Lawton"
+play,2,1,huntt001,12,CSBX,6/P6
+play,2,1,koskc001,31,BBCBX,5/FL
+play,2,1,moelc001,11,CBX,63/G
+play,3,0,abboj002,01,CX,43/G
+play,3,0,johnc002,12,FCBS,K
+play,3,0,durhr001,01,FX,S
+play,3,0,valej003,22,SBBFX,13/G
+play,3,1,jonej003,32,BCFBBB,W
+play,3,1,guzmc001,12,SBLFX,S9.1-2
+play,3,1,rival001,10,BX,54/SH.2-3;1-2
+play,3,1,lawtm002,20,BBX,S8/8S.3-H;2-H
+play,3,1,coomr001,21,BCBX,8/F8
+play,3,1,ortid001,12,CFBX,7/F7
+play,4,0,thomf001,32,CBBBFX,S9
+play,4,0,ordom001,22,FBBCFFX,S.1-2
+play,4,0,lee-c001,02,SCX,8/F8S
+play,4,0,konep001,00,X,9/F9.2-3
+play,4,0,perrh001,20,BBX,D/89.3-H;1-3
+play,4,0,abboj002,00,X,S7.3-H;2-H
+play,4,0,johnc002,01,CB,OA.1X2(24)#
+play,4,1,huntt001,11,BSX,S8
+play,4,1,koskc001,00,X,S9.1-2
+play,4,1,moelc001,31,BBBCX,5(2)4(1)/GDP.B-1
+play,4,1,jonej003,21,BCBX,1/G
+play,5,0,johnc002,32,BSBBSB,W
+play,5,0,durhr001,21,CBBX,S9.1-2
+play,5,0,valej003,32,LBLBBFB,W.2-3;1-2
+play,5,0,thomf001,11,FBX,4/P4
+play,5,0,ordom001,02,FCX,9/SF.3-H;2-3
+play,5,0,lee-c001,02,FFX,S7.3-H;1-2
+play,5,0,konep001,00,,NP
+sub,ryanj001,"Jay Ryan",1,0,1
+play,5,0,konep001,02,CFF2,PO2(E1).2-3;1-2
+play,5,0,konep001,12,CFF2BH,HP
+play,5,0,perrh001,00,X,D7.3-H;2-H;1-3
+play,5,0,abboj002,00,X,53/G
+play,5,1,guzmc001,21,BSBX,63/G
+play,5,1,rival001,00,X,S7
+play,5,1,lawtm002,01,CX,S9/9S.1-3
+play,5,1,coomr001,10,BX,36(1)3/GDP
+play,6,0,johnc002,01,SX,S7/7S
+play,6,0,durhr001,12,CBCS,K
+play,6,0,valej003,22,BBSSS,K
+play,6,0,thomf001,31,SBBBB,W.1-2
+play,6,0,ordom001,20,BBX,64(1)/FO.2-3
+play,6,1,ortid001,02,FFS,K
+play,6,1,huntt001,12,CFBFX,S7/7S
+play,6,1,koskc001,21,BBCX,6/P6
+play,6,1,moelc001,00,X,64(1)/FO
+play,7,0,lee-c001,02,CFFFX,53/G
+play,7,0,konep001,12,BCCS,K
+play,7,0,perrh001,00,X,63/G56D
+play,7,1,jonej003,00,,NP
+sub,chrim002,"McKay Christensen",0,8,8
+play,7,1,jonej003,22,CBBSX,6/P6
+play,7,1,guzmc001,10,BX,63/G
+play,7,1,rival001,10,BX,E5/G
+play,7,1,lawtm002,32,CBBBCB,W.1-2
+play,7,1,coomr001,00,,NP
+sub,bradc001,"Chad Bradford",0,0,1
+play,7,1,coomr001,12,BFFX,43/G
+play,8,0,chrim002,31,BCBBB,W
+play,8,0,johnc002,01,FX,D/78D.1-H
+play,8,0,durhr001,00,,NP
+sub,millt001,"Travis Miller",1,0,1
+play,8,0,durhr001,00,X,S9.2-3
+play,8,0,valej003,22,BBSCFX,FC5.3XH(52);1-2;B-1#
+play,8,0,thomf001,30,BBBB,W.2-3;1-2
+play,8,0,ordom001,00,,NP
+sub,motad001,"Danny Mota",1,0,1
+play,8,0,ordom001,11,FBX,5(2)/FO.3-H;1-2
+play,8,0,lee-c001,10,BX,53/G
+play,8,1,ortid001,00,,NP
+sub,wunsk001,"Kelly Wunsch",0,0,1
+play,8,1,ortid001,31,BBCBB,W
+play,8,1,huntt001,10,BX,4(1)3/GDP
+play,8,1,koskc001,00,,NP
+sub,blakc001,"Casey Blake",1,7,11
+play,8,1,blakc001,32,CSBBBB,W
+play,8,1,moelc001,31,CBBBX,7/F7
+play,9,0,konep001,00,,NP
+sub,blakc001,"Casey Blake",1,7,5
+play,9,0,konep001,11,CBX,9/F9
+play,9,0,perrh001,02,CSX,9/F9
+play,9,0,chrim002,22,BFFBS,K
+play,9,1,jonej003,00,,NP
+sub,paulj001,"Josh Paul",0,9,2
+play,9,1,jonej003,00,,NP
+sub,gintm001,"Matt Ginter",0,0,1
+play,9,1,jonej003,10,BX,D/78
+play,9,1,guzmc001,22,SCBBX,3/G.2-3
+play,9,1,rival001,00,X,8/SF.3-H
+play,9,1,lawtm002,21,BBFX,63/G
+data,er,sirom001,3
+data,er,bradc001,0
+data,er,wunsk001,0
+data,er,gintm001,1
+data,er,santj003,7
+data,er,ryanj001,2
+data,er,millt001,0
+data,er,motad001,0

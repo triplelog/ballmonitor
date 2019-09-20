@@ -1,0 +1,94 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,22,1,,,,,0,7,CCFBFBS,stott001,1,0,benam001 strikes out. ,benam001,0,
+,32,1,,,,,1,14,BBFFFBX,stott001,0,1,muelb001 homers. ,muelb001,0,
+,02,1,,,,,2,17,FCX,stott001,1,0,,bondb001,0,F
+,10,1,,,,,3,19,BX,stott001,1,0,,kentj001,0,F
+,11,1,womat001,,,,4,3,BCX,ortir001,0,0,womat001 singles. ,womat001,1,
+,01,1,,,,bellj001,5,5,CB,ortir001,1,0,womat001 caught stealing. ,bellj001,1,
+,22,1,,,,,6,11,CBCFBS,ortir001,1,0,bellj001 strikes out. ,bellj001,1,
+,01,1,gonzl001,,,,7,13,CX,ortir001,0,0,gonzl001 singles. ,gonzl001,1,
+gonzl001 to 2B. ,31,1,durae001,gonzl001,,,8,18,BCBBB,ortir001,0,0,durae001 walks. ,durae001,1,
+gonzl001 to 3B. durae001 to 2B. ,32,1,finls001,durae001,gonzl001,,9,24,CCBBBB,ortir001,0,0,finls001 walks. ,finls001,1,
+,31,1,finls001,durae001,gonzl001,,10,29,BBCBX,ortir001,1,0,,lee-t002,1,F
+,21,2,snowj001,,,,11,23,BCBX,stott001,0,0,snowj001 singles. ,snowj001,0,
+,00,2,snowj001,,,,12,24,X,stott001,1,0,,burke001,0,F
+snowj001 to 2B. ,10,2,aurir001,snowj001,,,13,26,BX,stott001,0,0,aurir001 singles. ,aurir001,0,
+,02,2,aurir001,,,,14,29,SCX,stott001,2,0,Double Play. ,mirad001,0,
+,20,2,,,,,15,32,BBX,ortir001,0,1,stink001 homers. ,stink001,1,
+,11,2,,,,,16,35,BCX,ortir001,1,0,harrl001 grounds out. ,harrl001,1,G
+,12,2,,,,,17,39,SCBS,ortir001,1,0,stott001 strikes out. ,stott001,1,
+,10,2,,,,,18,41,BX,ortir001,1,0,,womat001,1,F
+,01,3,ortir001,,,,19,31,CX,stott001,0,0,ortir001 singles. ,ortir001,0,
+ortir001 to 2B. ,30,3,benam001,ortir001,,,20,35,BBBB,stott001,0,0,benam001 walks. ,benam001,0,
+ortir001 to 3B. benam001 to 2B. ,00,3,,benam001,ortir001,,21,36,X,stott001,1,0,Sacrifice bunt by muelb001.,muelb001,0,
+,30,3,bondb001,benam001,ortir001,,22,40,IIII,stott001,0,0,bondb001 intentionally walks. ,bondb001,0,
+ortir001 scores. benam001 scores. bondb001 scores. ,10,3,,kentj001,,,23,42,BX,stott001,0,3,kentj001 doubles. ,kentj001,0,
+,00,3,,,,snowj001,24,43,B,stott001,1,0,kentj001 caught stealing. ,snowj001,0,
+,10,3,,,,,25,45,BX,stott001,1,0,,snowj001,0,F
+,21,3,,,,,26,45,BCBX,ortir001,1,0,bellj001 grounds out. ,bellj001,1,G
+,21,3,,gonzl001,,,27,49,CBBX,ortir001,0,0,gonzl001 doubles. ,gonzl001,1,
+gonzl001 to 3B. ,12,3,,,gonzl001,,28,54,BCSFX,ortir001,1,0,durae001 grounds out. ,durae001,1,G
+,01,3,,,gonzl001,,29,56,CX,ortir001,1,0,finls001 grounds out. ,finls001,1,G
+,00,4,,,,,30,46,X,stott001,1,0,burke001 grounds out. ,burke001,0,G
+,20,4,aurir001,,,,31,49,BBX,stott001,0,0,aurir001 singles. ,aurir001,0,
+,11,4,aurir001,,,,32,52,FBX,stott001,1,0,,mirad001,0,F
+aurir001 to 3B. ,31,4,,ortir001,aurir001,,33,57,BBCBX,stott001,0,0,ortir001 doubles. ,ortir001,0,
+aurir001 scores. ortir001 scores. ,10,4,,,,,34,59,BX,stott001,0,3,benam001 homers. ,benam001,0,
+,30,4,muelb001,,,,35,63,BBBB,stott001,0,0,muelb001 walks. ,muelb001,0,
+,00,4,muelb001,,,,37,1,X,sprir001,1,0,,bondb001,0,F
+,22,4,,,,,38,63,BSCFBFS,ortir001,1,0,lee-t002 strikes out. ,lee-t002,1,
+,01,4,,,,,39,65,CX,ortir001,1,0,stink001 grounds out. ,stink001,1,G
+,01,4,,,,,40,67,SX,ortir001,1,0,harrl001 grounds out. ,harrl001,1,G
+,32,5,,,,,41,7,BCFBBX,sprir001,0,1,kentj001 homers. ,kentj001,0,
+,01,5,snowj001,,,,42,9,CX,sprir001,0,0,snowj001 reaches on error. ,snowj001,0,G
+,10,5,snowj001,,,,43,11,BX,sprir001,1,0,,burke001,0,F
+,12,5,snowj001,,,,44,15,SBSS,sprir001,1,0,aurir001 strikes out. ,aurir001,0,
+snowj001 to 2B. ,32,5,mirad001,snowj001,,,45,22,BSBBSFB,sprir001,0,0,mirad001 walks. ,mirad001,0,
+snowj001 to 3B. mirad001 to 2B. ,32,5,ortir001,mirad001,snowj001,,46,29,BFBBFFB,sprir001,0,0,ortir001 walks. ,ortir001,0,
+snowj001 scores. mirad001 to 3B. ortir001 to 2B. ,32,5,benam001,ortir001,mirad001,,47,35,BBBCFB,sprir001,0,1,benam001 walks. ,benam001,0,
+,12,5,benam001,ortir001,mirad001,,50,4,CSBS,plesd001,1,0,muelb001 strikes out. ,muelb001,0,
+,00,5,,,,,51,68,X,ortir001,1,0,,fox-a001,1,F
+,10,5,,womat001,,,52,70,BX,ortir001,0,0,womat001 doubles. ,womat001,1,
+womat001 to 3B. ,32,5,,,womat001,,53,76,BBFFBX,ortir001,1,0,,bellj001,1,F
+,10,5,,,womat001,,54,78,BX,ortir001,1,0,gonzl001 grounds out. ,gonzl001,1,G
+,32,6,bondb001,,,,55,10,CBBCBX,plesd001,0,0,bondb001 singles. ,bondb001,0,
+riosa001 to 2B. ,10,6,,riosa001,,,57,12,BX,plesd001,1,0,kentj001 grounds out. ,kentj001,0,G
+,30,6,snowj001,riosa001,,,58,16,BBBB,plesd001,0,0,snowj001 walks. ,snowj001,0,
+riosa001 to 3B. snowj001 to 2B. ,31,6,burke001,snowj001,riosa001,,59,21,BSBBB,plesd001,0,0,burke001 walks. ,burke001,0,
+,12,6,burke001,snowj001,riosa001,,60,27,CFBFFX,plesd001,1,0,,aurir001,0,F
+burke001 to 2B. snowj001 out. ,02,6,mirad001,burke001,riosa001,,61,30,CCX,plesd001,1,0,mirad001 reaches on fielder's choice. ,mirad001,0,
+,20,6,,durae001,,,63,81,BBX,ortir001,0,0,durae001 doubles. ,durae001,1,
+durae001 to 3B. ,00,6,finls001,,durae001,,64,82,X,ortir001,0,0,finls001 singles. ,finls001,1,
+,10,6,finls001,,durae001,,65,84,BX,ortir001,1,0,,lee-t002,1,P
+finls001 to 2B. ,30,6,stink001,finls001,durae001,,66,88,BBBB,ortir001,0,0,stink001 walks. ,stink001,1,
+,12,6,stink001,finls001,durae001,,68,93,FBFFS,ortir001,1,0,colbg001 strikes out. ,colbg001,1,
+durae001 scores. finls001 to 3B. stink001 to 2B. ,31,6,fox-a001,stink001,finls001,,69,98,CBBBB,ortir001,0,1,fox-a001 walks. ,fox-a001,1,
+,22,6,fox-a001,stink001,finls001,,70,103,BFBFX,ortir001,1,0,,womat001,1,L
+,22,7,,,,,73,5,CFBBX,morgm001,1,0,ortir001 grounds out. ,ortir001,0,G
+,21,7,benam001,,,,74,9,CBBX,morgm001,0,0,benam001 singles. ,benam001,0,
+benam001 to 2B. ,00,7,muelb001,benam001,,,75,10,X,morgm001,0,0,muelb001 singles. ,muelb001,0,
+benam001 scores. muelb001 out. ,21,7,,riosa001,,,76,14,BBCX,morgm001,1,1,riosa001 doubles. ,riosa001,0,
+riosa001 scores. kentj001 out. ,00,7,,,,,77,15,X,morgm001,1,1,kentj001 singles. ,kentj001,0,
+,01,7,,,,,80,105,FX,ortir001,0,1,bellj001 homers. ,bellj001,1,
+,02,7,,,,,81,108,CCX,ortir001,1,0,gonzl001 grounds out. ,gonzl001,1,G
+,11,7,,,,,82,111,CBX,ortir001,1,0,,durae001,1,F
+,00,7,finls001,,,,83,112,X,ortir001,0,0,finls001 singles. ,finls001,1,
+finls001 scores. ,00,7,,lee-t002,,,84,113,X,ortir001,0,1,lee-t002 doubles. ,lee-t002,1,
+,32,7,,lee-t002,,,85,119,BFBBSS,ortir001,1,0,stink001 strikes out. ,stink001,1,
+,12,8,,,,,86,19,BFFC,morgm001,1,0,snowj001 strikes out. ,snowj001,0,
+,30,8,murrc001,,,,87,23,BBBB,morgm001,0,0,murrc001 walks. ,murrc001,0,
+,10,8,,,,,88,25,BX,morgm001,2,0,Double Play. ,aurir001,0,
+friah001 to 2B. ,01,8,,friah001,,,91,2,CX,embra001,0,0,friah001 reaches on error. ,friah001,1,F
+,01,8,,friah001,,,93,4,CX,embra001,1,0,,klasd001,1,F
+,32,8,,friah001,,,95,11,BBFBFFS,embra001,1,0,gilkb001 strikes out. ,gilkb001,1,
+,20,8,,friah001,,,96,14,BBX,embra001,1,0,bellj001 grounds out. ,bellj001,1,G
+,00,9,,,,,99,1,X,swing001,1,0,,mirad001,0,F
+,12,9,martr003,,,,100,6,CBFFX,swing001,0,0,martr003 singles. ,martr003,0,
+martr003 to 2B. ,00,9,benam001,martr003,,,101,7,X,swing001,0,0,benam001 singles. ,benam001,0,
+,22,9,benam001,martr003,,,102,13,FBSBFS,swing001,1,0,muelb001 strikes out. ,muelb001,0,
+,11,9,benam001,martr003,,,103,16,BFX,swing001,1,0,riosa001 grounds out. ,riosa001,0,G
+,00,9,,gonzl001,,,106,1,X,johnj006,0,0,gonzl001 doubles. ,gonzl001,1,
+gonzl001 scores. ,01,9,,durae001,,,107,3,CX,johnj006,0,1,durae001 doubles. ,durae001,1,
+,12,9,,durae001,,,108,7,CBFX,johnj006,1,0,,finls001,1,
+,21,9,,durae001,,,109,11,CBBX,johnj006,1,0,,lee-t002,1,
+,22,9,,durae001,,,110,16,FFBBS,johnj006,1,0,stink001 strikes out. ,stink001,1,

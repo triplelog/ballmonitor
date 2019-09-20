@@ -1,0 +1,141 @@
+version,2
+info,visteam,MIN
+info,hometeam,BOS
+info,site,BOS07
+info,date,2000/04/12
+info,number,0
+info,starttime,6:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,welkt901
+info,ump1b,scotd901
+info,ump2b,cedeg901
+info,ump3b,hudsm901
+info,pitches,pitches
+info,temp,46
+info,winddir,fromlf
+info,windspeed,20
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,168
+info,attendance,20313
+info,wp,fassj001
+info,lp,santj003
+info,save,
+start,guzmc001,"Cristian Guzman",0,1,6
+start,hockd001,"Denny Hocking",0,2,7
+start,lawtm002,"Matt Lawton",0,3,9
+start,coomr001,"Ron Coomer",0,4,3
+start,huskb001,"Butch Huskey",0,5,10
+start,lecrm001,"Matt LeCroy",0,6,2
+start,koskc001,"Corey Koskie",0,7,5
+start,huntt001,"Torii Hunter",0,8,8
+start,maxwj001,"Jason Maxwell",0,9,4
+start,santj003,"Johan Santana",0,0,1
+start,offej001,"Jose Offerman",1,1,4
+start,lewid001,"Darren Lewis",1,2,9
+start,garcn001,"Nomar Garciaparra",1,3,6
+start,stanm002,"Mike Stanley",1,4,3
+start,oleat001,"Troy O'Leary",1,5,7
+start,everc001,"Carl Everett",1,6,8
+start,gaetg001,"Gary Gaetti",1,7,10
+start,varij001,"Jason Varitek",1,8,2
+start,veraw001,"Wilton Veras",1,9,5
+start,fassj001,"Jeff Fassero",1,0,1
+play,1,0,guzmc001,10,BX,53/G
+play,1,0,hockd001,22,CCBBFX,D7/7D
+play,1,0,lawtm002,01,CX,4/P4
+play,1,0,coomr001,31,CBBBB,W
+play,1,0,huskb001,10,BB,PB.2-3;1-2
+play,1,0,huskb001,21,BBFX,9/F9
+play,1,1,offej001,12,BCFC,K/C
+play,1,1,lewid001,32,CBFBBX,8/F8
+play,1,1,garcn001,10,BX,9/F9
+play,2,0,lecrm001,32,FBBBFX,S9
+play,2,0,koskc001,00,X,S5/BG5.1-2
+play,2,0,huntt001,12,CFFBX,S9.2-3;1-2
+play,2,0,maxwj001,00,X,8/SF.3-H;2-3
+play,2,0,guzmc001,32,BBBCFFFFX,FC5.3XH(52);1-3;B-2
+play,2,0,hockd001,31,CBBBB,W
+play,2,0,lawtm002,12,SBCFX,6/P6
+play,2,1,stanm002,10,BX,8/F8D
+play,2,1,oleat001,31,BBBCX,D7
+play,2,1,everc001,21,FBBX,S.2-3
+play,2,1,gaetg001,10,BX,8/SF.3-H
+play,2,1,varij001,10,BX,9/F9
+play,3,0,coomr001,02,FFX,43/G
+play,3,0,huskb001,22,FBBSX,4/P4
+play,3,0,lecrm001,21,BBFX,9/F9D
+play,3,1,veraw001,12,BFFX,43/G
+play,3,1,offej001,11,BFX,S
+play,3,1,lewid001,11,BCX,S9.1-2
+play,3,1,garcn001,32,BCFBFBX,D7.2-H;1-H
+play,3,1,stanm002,31,BBBCX,S7.2-3
+play,3,1,oleat001,10,BX,D9/9D.3-H;1-3
+play,3,1,everc001,01,CX,S8.3-H;2-H
+play,3,1,gaetg001,31,BCBB1,PO1(13)
+play,3,1,gaetg001,31,BCBB1X,4/P4
+play,4,0,koskc001,10,BX,31/G
+play,4,0,huntt001,01,CX,S8
+play,4,0,maxwj001,12,BFCS,K
+play,4,0,guzmc001,11,FBX,T8.1-H
+play,4,0,hockd001,00,X,S8.3-H
+play,4,0,lawtm002,00,X,3/P3
+play,4,1,varij001,32,BCFBBX,S8
+play,4,1,veraw001,32,BFSFBFFBS,K
+play,4,1,offej001,32,BBBCCB,W.1-2
+play,4,1,lewid001,32,BBCFBX,64(1)/FO.2-3
+play,4,1,garcn001,01,SX,S/78.3-H;1-3
+play,4,1,stanm002,00,,NP
+sub,carrh001,"Hector Carrasco",0,0,1
+play,4,1,stanm002,10,BX,13/G
+play,5,0,coomr001,01,CX,43/G
+play,5,0,huskb001,21,BSBX,S9
+play,5,0,lecrm001,32,SFBFBBX,8/F8
+play,5,0,koskc001,12,CBFC,K/C
+play,5,1,oleat001,01,CX,23/G
+play,5,1,everc001,21,BBCX,E8/F.B-2
+play,5,1,gaetg001,01,CX,8/F8S
+play,5,1,varij001,30,BBBB,W
+play,5,1,veraw001,12,CFBFX,13/G
+play,6,0,huntt001,00,,NP
+sub,cormr001,"Rheal Cormier",1,0,1
+play,6,0,huntt001,12,CFBS,K
+play,6,0,maxwj001,02,CSS,K
+play,6,0,guzmc001,11,CBX,53/G
+play,6,1,offej001,00,X,63/G
+play,6,1,lewid001,32,BSBFBFB,W
+play,6,1,garcn001,00,X,16(1)/FO
+play,6,1,stanm002,00,X,9/F9D
+play,7,0,hockd001,12,CSBX,9/F9
+play,7,0,lawtm002,32,CBBFBX,13/G
+play,7,0,coomr001,02,CCX,53/G
+play,7,1,oleat001,10,BX,43/G
+play,7,1,everc001,02,FSS,K
+play,7,1,gaetg001,12,CSBS,K
+play,8,0,huskb001,00,,NP
+sub,lowed001,"Derek Lowe",1,0,1
+play,8,0,huskb001,12,CBFX,E5/TH
+play,8,0,lecrm001,21,BCBX,54(1)3/GDP
+play,8,0,koskc001,11,CBX,S
+play,8,0,huntt001,00,,NP
+sub,cummm001,"Midre Cummings",0,8,11
+play,8,0,cummm001,02,CFX,1/L1
+play,8,1,varij001,00,,NP
+sub,hockd001,"Denny Hocking",0,2,8
+play,8,1,varij001,00,,NP
+sub,cummm001,"Midre Cummings",0,8,7
+play,8,1,varij001,32,BCCBBX,43/G
+play,8,1,veraw001,00,X,8/F8
+play,8,1,offej001,21,BBCX,13/G
+play,9,0,maxwj001,00,,NP
+sub,jonej003,"Jacque Jones",0,9,11
+play,9,0,jonej003,10,BX,9/L9
+play,9,0,guzmc001,02,CCFFX,43/G
+play,9,0,hockd001,00,X,43/G
+data,er,santj003,7
+data,er,carrh001,0
+data,er,fassj001,3
+data,er,cormr001,0
+data,er,lowed001,0

@@ -1,0 +1,156 @@
+version,2
+info,visteam,ATL
+info,hometeam,PIT
+info,site,PIT07
+info,date,2000/06/14
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,wendh902
+info,ump1b,clara901
+info,ump2b,buckc901
+info,ump3b,reedr901
+info,pitches,pitches
+info,temp,89
+info,winddir,rtol
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,180
+info,attendance,16972
+info,wp,maddg002
+info,lp,andej002
+info,save,ligtk001
+start,veraq001,"Quilvio Veras",0,1,4
+start,jonea002,"Andruw Jones",0,2,8
+start,jonec004,"Chipper Jones",0,3,5
+start,galaa001,"Andres Galarraga",0,4,3
+start,jordb001,"Brian Jordan",0,5,9
+start,sandr002,"Reggie Sanders",0,6,7
+start,derom001,"Mark DeRosa",0,7,6
+start,lunaf001,"Fernando Lunar",0,8,2
+start,maddg002,"Greg Maddux",0,9,1
+start,morrw001,"Warren Morris",1,1,4
+start,kendj001,"Jason Kendall",1,2,2
+start,cordw001,"Wil Cordero",1,3,7
+start,gileb002,"Brian Giles",1,4,8
+start,younk001,"Kevin Young",1,5,3
+start,vandj001,"John Vander Wal",1,6,9
+start,mearp001,"Pat Meares",1,7,6
+start,benjm001,"Mike Benjamin",1,8,5
+start,andej002,"Jimmy Anderson",1,9,1
+com,"ej,mccll001,C,wendh902,Balls and strikes"
+com,"Pirates coach Lloyd McClendon ejected by HP umpire Hunter Wendelstedt in sixth"
+play,1,0,veraq001,31,BBBCB,W
+play,1,0,jonea002,00,X,S8.1-2
+play,1,0,jonec004,32,CBFBBFX,53/G.2-3;1-2
+play,1,0,galaa001,31,BFBBX,13/G.3-H;2-3
+play,1,0,jordb001,30,BBBB,W
+play,1,0,sandr002,32,BBCBCFFX,13/G
+play,1,1,morrw001,10,BX,43/G
+play,1,1,kendj001,12,CFBS,K23
+play,1,1,cordw001,12,SCBFS,K
+play,2,0,derom001,31,BFBBB,W
+play,2,0,lunaf001,02,FCS,K
+play,2,0,maddg002,01,LX,34/SH.1-2
+play,2,0,veraq001,12,CCFBX,S8/8S.2-H;B-2(THH)
+play,2,0,jonea002,32,BBBFFS,K
+play,2,1,gileb002,21,SBBX,D7
+play,2,1,younk001,01,CX,S9.2-H
+play,2,1,vandj001,00,X,HR/8.1-H
+play,2,1,mearp001,11,CBX,63/G
+play,2,1,benjm001,22,FBCBS,K
+play,2,1,andej002,00,X,6/L6
+play,3,0,jonec004,31,BBBCB,W
+play,3,0,galaa001,00,X,S8.1-2
+play,3,0,jordb001,12,BFFX,E4/G.2-H(UR);1-3
+play,3,0,sandr002,11,FBX,64(1)3/GDP.3-H(UR)
+play,3,0,derom001,20,BBX,S8
+play,3,0,lunaf001,22,BSFBS,K
+play,3,1,morrw001,31,BFBBX,6/L6
+play,3,1,kendj001,01,CX,S9/9S
+play,3,1,cordw001,12,BFSS,K
+play,3,1,gileb002,00,B,SB2
+play,3,1,gileb002,10,BX,S8.2-H
+play,3,1,younk001,32,BBBCCFX,13/G
+play,4,0,maddg002,31,BBBCB,W
+play,4,0,veraq001,00,B,PB.1-2
+play,4,0,veraq001,11,BCX,FC1.2X3(15);B-2#
+play,4,0,jonea002,22,BBFCX,3/FL
+play,4,0,jonec004,20,BBX,HR/9.2-H
+play,4,0,galaa001,20,BBX,4/L4
+play,4,1,vandj001,11,BSX,41/G
+play,4,1,mearp001,10,BX,63/G
+play,4,1,benjm001,02,FFX,53/G
+play,5,0,jordb001,00,,NP
+sub,loisr001,"Rich Loiselle",1,9,1
+play,5,0,jordb001,20,BBX,8/L8
+play,5,0,sandr002,11,CBX,8/F8
+play,5,0,derom001,02,CFS,K
+play,5,1,loisr001,00,,NP
+sub,nunea001,"Abraham O. Nunez",1,9,11
+play,5,1,nunea001,32,BFBFBFX,13/G
+play,5,1,morrw001,10,BX,8/F8D
+play,5,1,kendj001,22,BBFFX,S9
+play,5,1,cordw001,00,X,63/G
+play,6,0,lunaf001,00,,NP
+sub,saues001,"Scott Sauerbeck",1,9,1
+play,6,0,lunaf001,02,CSX,E6/TH
+play,6,0,maddg002,12,CBFS,K
+play,6,0,veraq001,12,CFFBC,K/C
+play,6,0,jonea002,30,BBBB,W.1-2
+play,6,0,jonec004,20,BBX,3/G
+play,6,1,gileb002,21,FBBX,S8
+play,6,1,younk001,12,SBFC,K+SB2/C
+play,6,1,vandj001,01,CX,43/G.2-3
+play,6,1,mearp001,22,CBFBC,K/C
+play,7,0,galaa001,11,BSX,S8
+play,7,0,jordb001,32,CBBBFB,W.1-2
+play,7,0,sandr002,00,X,43/G.2-3;1-2
+play,7,0,derom001,32,BCBBCB,W
+play,7,0,lunaf001,11,BFX,S8.3-H;2-H;1-2
+play,7,0,maddg002,10,BX,14/SH.2-3;1-2
+play,7,0,veraq001,10,BX,53/G
+play,7,1,benjm001,02,FFC,K/C
+play,7,1,saues001,00,,NP
+sub,avenb001,"Bruce Aven",1,9,11
+play,7,1,avenb001,01,CX,63/G
+play,7,1,morrw001,22,CFBBC,K/C
+play,8,0,jonea002,00,,NP
+sub,silvj001,"Jose Silva",1,9,1
+play,8,0,jonea002,21,CBBX,53/G
+play,8,0,jonec004,01,CX,8/F8D
+play,8,0,galaa001,02,CSS,K
+play,8,1,kendj001,32,CBSFBBX,53/G
+play,8,1,cordw001,02,CCX,43/G
+play,8,1,gileb002,32,BBFFFBB,W
+play,8,1,younk001,00,X,S/78.1-2
+play,8,1,vandj001,00,,NP
+sub,rockj001,"John Rocker",0,4,1
+play,8,1,vandj001,00,,NP
+sub,joynw001,"Wally Joyner",0,9,3
+play,8,1,vandj001,30,BBBB,W.2-3;1-2
+play,8,1,mearp001,00,,NP
+sub,ligtk001,"Kerry Ligtenberg",0,4,1
+play,8,1,mearp001,21,BBCX,54(1)/FO
+play,9,0,jordb001,00,,NP
+sub,manzj001,"Josias Manzanillo",1,9,1
+play,9,0,jordb001,12,BFFX,8/F8
+play,9,0,sandr002,12,FCFBS,K
+play,9,0,derom001,00,X,9/F9
+play,9,1,benjm001,32,CFBBBFX,8/F8
+play,9,1,manzj001,00,,NP
+sub,sojol001,"Luis Sojo",1,9,11
+play,9,1,sojol001,11,CBX,D9
+play,9,1,morrw001,31,BBBCX,8/F8D.2-3
+play,9,1,kendj001,32,BCBBCFS,K
+data,er,maddg002,4
+data,er,rockj001,0
+data,er,ligtk001,0
+data,er,andej002,4
+data,er,loisr001,0
+data,er,saues001,2
+data,er,silvj001,0
+data,er,manzj001,0

@@ -1,0 +1,80 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,10,1,,,,,0,2,BX,bellr003,1,0,bergp001 grounds out. ,bergp001,0,G
+,01,1,bradm001,,,,1,4,FX,bellr003,0,0,bradm001 singles. ,bradm001,0,
+bradm001 scores. ,10,1,,vidrj001,,,2,6,BX,bellr003,0,1,vidrj001 doubles. ,vidrj001,0,
+,22,1,,vidrj001,,,3,11,BSSBX,bellr003,1,0,,guerv001,0,F
+,11,1,,vidrj001,,,4,14,SBX,bellr003,1,0,,stevl001,0,F
+,01,1,,,,,5,2,CX,hermd001,1,0,reesp001 grounds out. ,reesp001,1,G
+,22,1,,,,,6,7,BSSBX,hermd001,1,0,,stync001,1,F
+,01,1,,,,,7,9,CX,hermd001,1,0,grifk002 grounds out. ,grifk002,1,G
+,31,2,,,,,8,19,CBBBX,bellr003,1,0,,blumg001,0,F
+,10,2,,,,,9,21,BX,bellr003,1,0,,cabro001,0,F
+,32,2,barrm003,,,,10,27,CBBSBB,bellr003,0,0,barrm003 walks. ,barrm003,0,
+,12,2,barrm003,,,,11,32,BFCFS,bellr003,1,0,hermd001 strikes out. ,hermd001,0,
+,30,2,cases001,,,,12,13,BBBB,hermd001,0,0,cases001 walks. ,cases001,1,
+cases001 to 2B. ,32,2,yound001,cases001,,,13,19,CBSBBB,hermd001,0,0,yound001 walks. ,yound001,1,
+,22,2,yound001,cases001,,,14,24,BCBFC,hermd001,1,0,tuckm001 strikes out. ,tuckm001,1,
+,12,2,yound001,cases001,,,15,28,CBFC,hermd001,1,0,santb001 strikes out. ,santb001,1,
+cases001 scores. yound001 to 3B. sextc001 to 2B. ,00,2,,sextc001,yound001,,16,29,X,hermd001,0,1,sextc001 singles. ,sextc001,1,
+,12,2,,sextc001,yound001,,17,33,CSBS,hermd001,1,0,bellr003 strikes out. ,bellr003,1,
+,10,3,,,,,18,34,BX,bellr003,1,0,,bergp001,0,F
+,12,3,,,,,19,38,CBFS,bellr003,1,0,bradm001 strikes out. ,bradm001,0,
+,10,3,,,,,20,40,BX,bellr003,1,0,vidrj001 grounds out. ,vidrj001,0,G
+,10,3,reesp001,,,,21,35,BX,hermd001,0,0,reesp001 singles. ,reesp001,1,
+reesp001 to 2B. ,31,3,stync001,reesp001,,,22,40,BFBBB,hermd001,0,0,stync001 walks. ,stync001,1,
+reesp001 to 3B. ,11,3,stync001,,reesp001,,23,43,BFX,hermd001,1,0,,grifk002,1,F
+reesp001 scores. stync001 to 3B. ,00,3,,cases001,stync001,,24,44,X,hermd001,0,1,cases001 doubles. ,cases001,1,
+stync001 scores. cases001 out. yound001 to 2B. ,00,3,,yound001,,,25,45,X,hermd001,1,1,yound001 singles. ,yound001,1,
+,02,3,,yound001,,,26,48,CSS,hermd001,1,0,tuckm001 strikes out. ,tuckm001,1,
+,01,4,,,,,27,42,SX,bellr003,1,0,,guerv001,0,F
+,02,4,,,,,28,45,SFS,bellr003,1,0,stevl001 strikes out. ,stevl001,0,
+,30,4,blumg001,,,,29,49,BBBB,bellr003,0,0,blumg001 walks. ,blumg001,0,
+,21,4,blumg001,,,,30,53,CBBX,bellr003,1,0,,cabro001,0,P
+,00,4,,,,,31,49,X,hermd001,1,0,santb001 grounds out. ,santb001,1,G
+,01,4,,,,,32,51,CX,hermd001,1,0,,sextc001,1,F
+,12,4,,,,,33,55,CBCX,hermd001,1,0,bellr003 grounds out. ,bellr003,1,G
+,22,5,barrm003,,,,34,59,FCBBFX,bellr003,0,0,barrm003 singles. ,barrm003,0,
+barrm003 to 2B. ,00,5,,barrm003,,,35,60,X,bellr003,1,0,Sacrifice bunt by hermd001.,hermd001,0,
+barrm003 to 3B. ,00,5,,,barrm003,bergp001,36,61,B,bellr003,0,0,Wild Pitch. ,bergp001,0,
+barrm003 scores. ,10,5,,,,,37,63,BX,bellr003,1,1,bergp001 hits sacrifice fly. ,bergp001,0,
+,01,5,,,,,38,65,FX,bellr003,1,0,bradm001 grounds out. ,bradm001,0,G
+,01,5,,,,,39,57,CX,hermd001,0,1,reesp001 homers. ,reesp001,1,
+,00,5,,,,,40,58,X,hermd001,1,0,,stync001,1,F
+,11,5,,,,,41,61,CBX,hermd001,0,1,grifk002 homers. ,grifk002,1,
+,11,5,cases001,,,,42,64,BSH,hermd001,0,0,cases001 hit by pitch. ,cases001,1,
+cases001 to 2B. ,31,5,yound001,cases001,,,43,69,BBFBB,hermd001,0,0,yound001 walks. ,yound001,1,
+cases001 to 3B. yound001 to 2B. ,32,5,tuckm001,yound001,cases001,,44,76,BFCBFBB,hermd001,0,0,tuckm001 walks. ,tuckm001,1,
+cases001 scores. ,00,5,tuckm001,yound001,,,45,77,X,hermd001,1,1,santb001 hits sacrifice fly. ,santb001,1,
+,00,5,tuckm001,yound001,,,46,78,X,hermd001,1,0,sextc001 grounds out. ,sextc001,1,G
+,12,6,,,,,47,69,CFBS,bellr003,1,0,vidrj001 strikes out. ,vidrj001,0,
+,10,6,,,,,48,71,BX,bellr003,1,0,guerv001 grounds out. ,guerv001,0,G
+,21,6,,,,,49,75,SBBX,bellr003,1,0,,stevl001,0,F
+,02,6,,bellr003,,,50,81,CSX,hermd001,0,0,bellr003 doubles. ,bellr003,1,
+bellr003 to 3B. ,10,6,reesp001,,bellr003,,51,83,BX,hermd001,0,0,reesp001 singles. ,reesp001,1,
+bellr003 scores. reesp001 out. ,00,6,stync001,,,,53,1,X,johnm002,1,1,stync001 reaches on fielder's choice. ,stync001,1,
+stync001 out. ,21,6,grifk002,,,,54,5,FBBX,johnm002,1,0,grifk002 reaches on fielder's choice. ,grifk002,1,
+,32,6,grifk002,,,,55,11,BFFBBX,johnm002,1,0,,cases001,1,F
+,22,7,,,,,56,81,BBFFFX,bellr003,1,0,blumg001 grounds out. ,blumg001,0,G
+,21,7,cabro001,,,,57,85,BBCX,bellr003,0,0,cabro001 singles. ,cabro001,0,
+cabro001 to 2B. ,31,7,,cabro001,,,58,90,BBFBX,bellr003,1,0,barrm003 grounds out. ,barrm003,0,G
+,31,7,traca001,cabro001,,,60,95,BBFBB,bellr003,0,0,traca001 walks. ,traca001,0,
+,21,7,traca001,cabro001,,,61,99,CBBX,bellr003,1,0,,bergp001,0,F
+,12,7,,yound001,,,64,4,SFBX,forss001,0,0,yound001 doubles. ,yound001,1,
+yound001 to 3B. ,00,7,,,yound001,tuckm001,65,5,B,forss001,0,0,Wild Pitch. ,tuckm001,1,
+,22,7,,,yound001,,66,10,BFBFS,forss001,1,0,tuckm001 strikes out. ,tuckm001,1,
+yound001 scores. ,02,7,,,,,67,13,FCX,forss001,1,1,santb001 hits sacrifice fly. ,santb001,1,
+,12,7,,,,,68,17,BCCS,forss001,1,0,sextc001 strikes out. ,sextc001,1,
+,11,8,,,,,69,102,BFX,bellr003,1,0,bradm001 grounds out. ,bradm001,0,G
+,21,8,,,,,70,106,CBBX,bellr003,1,0,vidrj001 grounds out. ,vidrj001,0,G
+,10,8,guerv001,,,,71,108,BX,bellr003,0,0,guerv001 singles. ,guerv001,0,
+guerv001 to 3B. ,11,8,,stevl001,guerv001,,72,111,FBX,bellr003,0,0,stevl001 doubles. ,stevl001,0,
+,20,8,,stevl001,guerv001,,73,114,BBX,bellr003,1,0,,blumg001,0,F
+,11,8,,ochoa001,,,79,3,BSX,santj001,0,0,ochoa001 doubles. ,ochoa001,1,
+,30,8,reesp001,ochoa001,,,80,7,BBBB,santj001,0,0,reesp001 walks. ,reesp001,1,
+,12,8,reesp001,ochoa001,,,81,12,CFBFS,santj001,1,0,stync001 strikes out. ,stync001,1,
+ochoa001 to 3B. reesp001 out. ,22,8,huntb002,,ochoa001,,83,17,CBFBX,santj001,1,0,huntb002 reaches on fielder's choice. ,huntb002,1,
+,22,8,huntb002,,ochoa001,,84,22,BFSBS,santj001,1,0,cases001 strikes out. ,cases001,1,
+,32,9,,cabro001,,,87,6,BBBCFX,merch002,0,0,cabro001 doubles. ,cabro001,0,
+,22,9,,cabro001,,,88,11,BBFCS,merch002,1,0,schnb001 strikes out. ,schnb001,0,
+,02,9,,cabro001,,,89,14,CSS,merch002,1,0,seguf001 strikes out. ,seguf001,0,
+,21,9,,cabro001,,,91,18,BBFX,merch002,1,0,websl001 grounds out. ,websl001,0,G

@@ -1,0 +1,82 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,10,1,,,,,0,2,BX,johnr005,1,0,,goodt001,0,F
+,12,1,,,,,1,7,CFBFX,johnr005,1,0,huntb002 grounds out. ,huntb002,0,G
+,12,1,,,,,2,11,BCCX,johnr005,1,0,lansm001 grounds out. ,lansm001,0,G
+,12,1,womat001,,,,3,5,SCFBX,yoshm001,0,0,womat001 singles. ,womat001,1,
+,31,1,womat001,,,,4,10,CBBBX,yoshm001,1,0,,bellj001,1,F
+,22,1,,womat001,,gonzl001,5,15,BCBFB,yoshm001,0,0,womat001 steals 2B. ,gonzl001,1,
+,32,1,,womat001,,,6,24,BCBFBFFFX,yoshm001,1,0,,gonzl001,1,P
+,31,1,durae001,womat001,,,7,29,BBCBB,yoshm001,0,0,durae001 walks. ,durae001,1,
+,10,1,durae001,womat001,,,8,31,BX,yoshm001,1,0,,finls001,1,F
+,12,2,,,,,9,15,CSBX,johnr005,1,0,,cirij001,0,F
+,10,2,,,,,10,17,BX,johnr005,1,0,,hammj001,0,F
+,11,2,,,,,11,20,BSX,johnr005,1,0,,shumt001,0,P
+,00,2,,,,,12,32,X,yoshm001,1,0,,lee-t002,1,F
+,12,2,stink001,,,,13,37,BFSFX,yoshm001,0,0,stink001 singles. ,stink001,1,
+stink001 to 2B. ,32,2,,stink001,,counc001,14,44,BBCSBFF,yoshm001,0,0,Balk. ,counc001,1,
+,32,2,,stink001,,,15,52,BBCSBFFS,yoshm001,1,0,counc001 strikes out. ,counc001,1,
+,12,2,,stink001,,,16,56,BSSS,yoshm001,1,0,johnr005 strikes out. ,johnr005,1,
+,32,3,servs002,,,,17,28,BSBFFBFB,johnr005,0,0,servs002 walks. ,servs002,0,
+,12,3,servs002,,,,18,34,SSFBFC,johnr005,1,0,peren001 strikes out. ,peren001,0,
+servs002 to 2B. ,02,3,,servs002,,,19,37,LLX,johnr005,1,0,Sacrifice bunt by yoshm001.,yoshm001,0,
+,22,3,,servs002,,,20,42,BBFSS,johnr005,1,0,goodt001 strikes out. ,goodt001,0,
+,02,3,,,,,21,59,FFX,yoshm001,1,0,,womat001,1,F
+,32,3,,,,,22,70,BCFFFBBFFFX,yoshm001,1,0,,bellj001,1,F
+,20,3,,,,,23,73,BBX,yoshm001,1,0,,gonzl001,1,L
+,00,4,huntb002,,,,24,43,X,johnr005,0,0,huntb002 singles. ,huntb002,0,
+,01,4,,huntb002,,lansm001,25,45,CB,johnr005,0,0,huntb002 steals 2B. ,lansm001,0,
+,12,4,,huntb002,,,26,49,CBFC,johnr005,1,0,lansm001 strikes out. ,lansm001,0,
+huntb002 to 3B. ,00,4,,,huntb002,cirij001,27,50,B,johnr005,0,0,Wild Pitch. ,cirij001,0,
+huntb002 scores. ,20,4,,,,,28,53,BBX,johnr005,1,1,cirij001 hits sacrifice fly. ,cirij001,0,
+,32,4,hammj001,,,,29,59,SFBBBB,johnr005,0,0,hammj001 walks. ,hammj001,0,
+,00,4,,hammj001,,shumt001,30,60,C,johnr005,0,0,hammj001 steals 2B. ,shumt001,0,
+,01,4,shumt001,hammj001,,,31,62,CH,johnr005,0,0,shumt001 hit by pitch. ,shumt001,0,
+,32,4,shumt001,hammj001,,,32,68,BSBCBX,johnr005,1,0,,servs002,0,F
+,12,4,,,,,33,80,BCFFFFX,yoshm001,1,0,durae001 grounds out. ,durae001,1,G
+,20,4,,,,,34,83,BBX,yoshm001,1,0,,finls001,1,P
+,22,4,,,,,35,88,CBBFS,yoshm001,1,0,lee-t002 strikes out. ,lee-t002,1,
+,12,5,,,,,36,72,BCSS,johnr005,1,0,peren001 strikes out. ,peren001,0,
+,00,5,yoshm001,,,,37,73,X,johnr005,0,0,yoshm001 singles. ,yoshm001,0,
+,01,5,,yoshm001,,goodt001,38,75,SS,johnr005,0,0,yoshm001 steals 2B. ,goodt001,0,
+yoshm001 scores. goodt001 to 3B. ,22,5,,,goodt001,,39,80,SSBBX,johnr005,0,1,goodt001 doubles. ,goodt001,0,
+,01,5,,,,huntb002,40,82,CB,johnr005,0,1,goodt001 scores on CS Error. ,huntb002,0,
+,32,5,huntb002,,,,41,88,CBBFBX,johnr005,0,0,huntb002 singles. ,huntb002,0,
+,00,5,,huntb002,,lansm001,42,89,C,johnr005,0,0,huntb002 steals 2B. ,lansm001,0,
+huntb002 scores. ,02,5,lansm001,,,,43,92,CFX,johnr005,0,1,lansm001 singles. ,lansm001,0,
+,00,5,lansm001,,,,44,93,X,johnr005,1,0,,cirij001,0,F
+,11,5,lansm001,,,,45,96,BCX,johnr005,1,0,,hammj001,0,F
+,32,5,,,,,46,96,FBFBFFBS,yoshm001,1,0,stink001 strikes out. ,stink001,1,
+,32,5,counc001,,,,47,104,BCCBFFBX,yoshm001,0,0,counc001 singles. ,counc001,1,
+counc001 to 3B. ,00,5,johnr005,,counc001,,48,105,X,yoshm001,0,0,johnr005 reaches on error. ,johnr005,1,
+,31,5,,,counc001,,49,110,BFBBX,yoshm001,2,0,Double Play. ,womat001,1,
+,11,6,,,,,50,99,BCX,johnr005,1,0,,shumt001,0,F
+,00,6,,,,,51,100,X,johnr005,1,0,servs002 grounds out. ,servs002,0,G
+,12,6,,,,,52,105,FBFFS,johnr005,1,0,peren001 strikes out. ,peren001,0,
+,02,6,bellj001,,,,54,113,CCX,yoshm001,0,0,bellj001 singles. ,bellj001,1,
+,00,6,bellj001,,,,55,114,X,yoshm001,1,0,,gonzl001,1,F
+,22,6,bellj001,,,,56,119,SBFBX,yoshm001,1,0,,durae001,1,F
+bellj001 to 3B. ,20,6,finls001,,bellj001,,57,122,BBX,yoshm001,0,0,finls001 singles. ,finls001,1,
+,12,6,finls001,,bellj001,,59,8,BFCFFFFS,whitg001,1,0,lee-t002 strikes out. ,lee-t002,1,
+,02,7,,,,,60,108,FFS,johnr005,1,0,whitg001 strikes out. ,whitg001,0,
+,01,7,,,,,61,110,LX,johnr005,1,0,goodt001 grounds out. ,goodt001,0,G
+,10,7,,,,,62,112,BX,johnr005,1,0,huntb002 grounds out. ,huntb002,0,G
+,11,7,,,,,63,11,FBX,whitg001,1,0,,stink001,1,
+,02,7,counc001,,,,64,14,CCX,whitg001,0,0,counc001 singles. ,counc001,1,
+,00,7,counc001,,,,66,15,X,whitg001,1,0,,willm003,1,P
+,00,7,counc001,,,,67,16,X,whitg001,1,0,,womat001,1,F
+,00,8,,,,,69,1,X,sprir001,1,0,,lansm001,0,F
+,22,8,,,,,70,6,CBFBX,sprir001,1,0,,cirij001,0,F
+,22,8,hammj001,,,,71,11,BFBCX,sprir001,0,0,hammj001 singles. ,hammj001,0,
+,12,8,hammj001,,,,73,4,CBCX,swing001,1,0,,heltt001,0,F
+,11,8,,,,,74,19,CBX,whitg001,1,0,,bellj001,1,F
+,31,8,,,,,75,24,BBFBX,whitg001,1,0,,gonzl001,1,F
+,12,8,,,,,76,28,FCBX,whitg001,1,0,,durae001,1,L
+,21,9,,,,,78,4,BFBX,mantm001,1,0,servs002 grounds out. ,servs002,0,G
+,32,9,peren001,,,,79,11,BBBCCFB,mantm001,0,0,peren001 walks. ,peren001,0,
+,00,9,,,,bragd001,81,12,B,mantm001,1,0,peren001 caught stealing. ,bragd001,0,
+,32,9,,,,,82,19,BCBBSFS,mantm001,1,0,bragd001 strikes out. ,bragd001,0,
+,21,9,,,,,84,4,CBBX,myerm001,1,0,,finls001,1,F
+,01,9,,bautd001,,,87,2,CX,jimej001,0,0,bautd001 doubles. ,bautd001,1,
+,11,9,,bautd001,,,89,5,BCX,jimej001,1,0,,friah001,1,L
+,31,9,counc001,bautd001,,,90,10,CBBBB,jimej001,0,0,counc001 walks. ,counc001,1,
+,22,9,counc001,bautd001,,,92,15,CFBBX,jimej001,1,0,colbg001 grounds out. ,colbg001,1,G

@@ -1,0 +1,148 @@
+version,2
+info,visteam,SLN
+info,hometeam,ARI
+info,site,PHO01
+info,date,2000/05/31
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,gibsg901
+info,ump1b,ripps901
+info,ump2b,tscht901
+info,ump3b,katzt901
+info,pitches,pitches
+info,temp,72
+info,winddir,torf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,168
+info,attendance,39761
+info,wp,johnr005
+info,lp,hentp001
+info,save,kim-b001
+start,polap001,"Placido Polanco",0,1,4
+start,rente001,"Edgar Renteria",0,2,6
+start,dunss001,"Shawon Dunston",0,3,7
+start,mcgwm001,"Mark McGwire",0,4,3
+start,davie001,"Eric Davis",0,5,9
+start,paquc001,"Craig Paquette",0,6,5
+start,mathm001,"Mike Matheny",0,7,2
+start,drewj001,"J.D. Drew",0,8,8
+start,hentp001,"Pat Hentgen",0,9,1
+start,womat001,"Tony Womack",1,1,6
+start,bellj001,"Jay Bell",1,2,4
+start,gonzl001,"Luis Gonzalez",1,3,7
+start,willm003,"Matt D. Williams",1,4,5
+start,finls001,"Steve Finley",1,5,8
+start,colbg001,"Greg Colbrunn",1,6,3
+start,wardt001,"Turner Ward",1,7,9
+start,milld002,"Damian Miller",1,8,2
+start,johnr005,"Randy Johnson",1,9,1
+play,1,0,polap001,10,BX,53/G
+play,1,0,rente001,00,X,S
+play,1,0,dunss001,22,BSBFX,54(1)3/GDP
+play,1,1,womat001,12,BCFX,43/G
+play,1,1,bellj001,32,CCBBBFB,W
+play,1,1,gonzl001,00,X,8/F8D
+play,1,1,willm003,11,CBX,S9/9S.1-3
+play,1,1,finls001,00,B,WP.3-H;1-2
+play,1,1,finls001,12,BCFFS,K
+play,2,0,mcgwm001,22,CBSBS,K
+play,2,0,davie001,12,BCFC,K/C
+play,2,0,paquc001,32,BFBFBB,W
+play,2,0,mathm001,02,SSS,K
+play,2,1,colbg001,32,FBCBBX,13/G
+play,2,1,wardt001,22,BBCFX,63/G
+play,2,1,milld002,22,BCBFC,K/C
+play,3,0,drewj001,02,FCX,S9/9S
+play,3,0,hentp001,00,B,CS2(26)
+play,3,0,hentp001,22,BBCSFS,K
+play,3,0,polap001,00,X,D7
+play,3,0,rente001,31,BFBBB,W
+play,3,0,dunss001,12,BCCFFX,4/P4
+play,3,1,johnr005,22,CFBBC,K/C
+play,3,1,womat001,10,BX,9/F9
+play,3,1,bellj001,31,CBBBX,9/F9S
+play,4,0,mcgwm001,12,CSBC,K/C
+play,4,0,davie001,32,BBFBFX,D8/8D
+play,4,0,paquc001,32,BFSBBB,W
+play,4,0,mathm001,32,CBFBBFS,K
+play,4,0,drewj001,12,BCSS,K
+play,4,1,gonzl001,01,CX,S8/8S
+play,4,1,willm003,21,SBBX,9/F9
+play,4,1,finls001,02,CFX,S7/7S.1-2
+play,4,1,colbg001,00,X,S/78.2-H;1-3
+play,4,1,wardt001,01,FX,9/SF.3-H
+play,4,1,milld002,00,X,8/F8
+play,5,0,hentp001,21,BBFX,S8
+play,5,0,polap001,11,FBX,S8/8S.1-2
+play,5,0,rente001,02,FCX,E3/G.2-3;1-2
+play,5,0,dunss001,00,X,S9.3-H;2-3;1-2
+play,5,0,mcgwm001,02,FCX,8(B)2(3)6(2)/TP
+play,5,1,johnr005,02,CFX,9/F9
+play,5,1,womat001,01,CX,6/L6
+play,5,1,bellj001,01,FX,4/P4
+play,6,0,davie001,00,X,63/G
+play,6,0,paquc001,12,BSCFC,K/C
+play,6,0,mathm001,32,SCBBFBS,K
+play,6,1,gonzl001,00,X,6/P6
+play,6,1,willm003,30,BBBX,D7/7S
+play,6,1,finls001,11,BCX,2/FL
+play,6,1,colbg001,32,BFFFBFBC,K/C
+play,7,0,drewj001,00,X,3/FL
+play,7,0,hentp001,02,CCS,K
+play,7,0,polap001,11,BSX,13/G
+play,7,1,wardt001,32,BCCBBX,S9/9S
+play,7,1,milld002,22,BSBFB,SB2
+play,7,1,milld002,32,BSBFBB,W
+play,7,1,johnr005,01,CX,14/SH.2-3;1-2
+play,7,1,womat001,00,,NP
+sub,mattm001,"Mike Matthews",0,9,1
+play,7,1,womat001,10,BX,S7.3-H;2-3
+com,"Debut game for Mike Matthews"
+play,7,1,bellj001,00,,NP
+sub,thomm002,"Mark Thompson",0,9,1
+play,7,1,bellj001,11,BCX,7/SF.3-H
+play,7,1,gonzl001,10,BB,SB2
+play,7,1,gonzl001,31,BBSBB,W
+play,7,1,willm003,32,BBFBCC,K/C
+play,8,0,rente001,00,X,S8
+play,8,0,dunss001,00,X,54(1)3/GDP
+play,8,0,mcgwm001,10,BX,HR/78
+play,8,0,davie001,00,,NP
+sub,kim-b001,"Byung-Hyun Kim",1,9,1
+play,8,0,davie001,00,,NP
+sub,vinaf001,"Fernando Vina",0,5,11
+play,8,0,vinaf001,22,BCSBFS,K
+play,8,1,finls001,00,,NP
+sub,polap001,"Placido Polanco",0,1,5
+play,8,1,finls001,00,,NP
+sub,vinaf001,"Fernando Vina",0,5,4
+play,8,1,finls001,00,,NP
+sub,paquc001,"Craig Paquette",0,6,9
+play,8,1,finls001,00,,NP
+sub,vered001,"Dave Veres",0,9,1
+play,8,1,finls001,21,FBBX,D8/8D
+play,8,1,colbg001,01,SX,8/F8.2-3
+play,8,1,wardt001,32,BBCBFX,3/G
+play,8,1,milld002,02,FSB,WP.3-H
+play,8,1,milld002,12,FSBX,53/G
+play,9,0,paquc001,00,,NP
+sub,edmoj001,"Jim Edmonds",0,6,11
+play,9,0,edmoj001,32,CCBBBS,K
+play,9,0,mathm001,00,,NP
+sub,lankr001,"Ray Lankford",0,7,11
+play,9,0,lankr001,12,SBCX,3/P3
+play,9,0,drewj001,12,FFBX,S8
+play,9,0,vered001,00,,NP
+sub,howat001,"Thomas Howard",0,9,11
+play,9,0,howat001,12,CCBS,K
+data,er,hentp001,5
+data,er,mattm001,0
+data,er,thomm002,0
+data,er,vered001,1
+data,er,johnr005,2
+data,er,kim-b001,0

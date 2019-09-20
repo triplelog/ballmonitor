@@ -1,0 +1,73 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,01,1,,,,,0,2,CX,andeb002,1,0,lugoj001 grounds out. ,lugoj001,0,G
+,00,1,biggc001,,,,1,3,X,andeb002,0,0,biggc001 singles. ,biggc001,0,
+,10,1,biggc001,,,,2,5,BX,andeb002,1,0,,bagwj001,0,F
+biggc001 to 2B. ,22,1,hidar001,biggc001,,,3,11,CCBBFX,andeb002,0,0,hidar001 singles. ,hidar001,0,
+,01,1,hidar001,biggc001,,,4,13,FX,andeb002,1,0,,aloum001,0,F
+,02,1,,,,,5,4,CSFX,limaj001,1,0,womat001 grounds out. ,womat001,1,G
+,22,1,,,,,6,11,CBBSFFX,limaj001,1,0,,bellj001,1,F
+,12,1,,,,,7,15,FBFX,limaj001,1,0,gonzl001 grounds out. ,gonzl001,1,G
+,00,2,,,,,8,14,X,andeb002,1,0,,miesm001,0,F
+,22,2,,,,,9,19,BCFBS,andeb002,1,0,euset001 strikes out. ,euset001,0,
+,12,2,,,,,10,23,CSBS,andeb002,1,0,trubc001 strikes out. ,trubc001,0,
+,31,2,finls001,,,,11,20,BCBBB,limaj001,0,0,finls001 walks. ,finls001,1,
+finls001 to 2B. ,12,2,cabra001,finls001,,,12,24,CBSX,limaj001,0,0,cabra001 singles. ,cabra001,1,
+cabra001 to 2B. ,32,2,,cabra001,,,13,32,BCBFFFBS,limaj001,2,0,lee-t002 strikes out. finls001 caught stealing. ,lee-t002,1,
+,12,2,,cabra001,,,14,38,CBFFFS,limaj001,1,0,milld002 strikes out. ,milld002,1,
+,00,3,,,,,15,24,X,andeb002,1,0,limaj001 grounds out. ,limaj001,0,G
+,12,3,,,,,16,30,CFBFFC,andeb002,1,0,lugoj001 strikes out. ,lugoj001,0,
+,11,3,,,,,17,33,CBX,andeb002,1,0,,biggc001,0,P
+,12,3,,,,,18,43,CSBFC,limaj001,1,0,klasd001 strikes out. ,klasd001,1,
+,11,3,,,,,19,46,BCX,limaj001,1,0,,andeb002,1,P
+,02,3,,,,,20,50,CSFX,limaj001,1,0,,womat001,1,P
+,21,4,,,,,21,37,CBBX,andeb002,1,0,,bagwj001,0,P
+,12,4,,,,,22,41,SSBS,andeb002,1,0,hidar001 strikes out. ,hidar001,0,
+,22,4,,,,,23,46,BBFFX,andeb002,1,0,aloum001 grounds out. ,aloum001,0,G
+,00,4,,,,,24,51,X,limaj001,1,0,bellj001 grounds out. ,bellj001,1,G
+,10,4,,,,,25,53,BX,limaj001,1,0,,gonzl001,1,P
+,11,4,,,,,26,56,CBX,limaj001,0,1,finls001 homers. ,finls001,1,
+,00,4,,,,,27,57,X,limaj001,1,0,,cabra001,1,F
+,01,5,,,,,28,48,CX,andeb002,1,0,,miesm001,0,F
+,11,5,,,,,29,51,SBX,andeb002,1,0,euset001 grounds out. ,euset001,0,G
+,00,5,trubc001,,,,30,52,X,andeb002,0,0,trubc001 singles. ,trubc001,0,
+,01,5,trubc001,,,,31,54,SX,andeb002,1,0,,limaj001,0,F
+,11,5,,,,,32,60,BCX,limaj001,1,0,,lee-t002,1,F
+,11,5,milld002,,,,33,63,CBX,limaj001,0,0,milld002 singles. ,milld002,1,
+,12,5,milld002,,,,34,67,CBFS,limaj001,1,0,klasd001 strikes out. ,klasd001,1,
+milld002 to 2B. ,12,5,andeb002,milld002,,,35,71,CSBX,limaj001,0,0,andeb002 singles. ,andeb002,1,
+milld002 to 3B. andeb002 out. ,01,5,womat001,,milld002,,36,73,CX,limaj001,1,0,womat001 reaches on fielder's choice. ,womat001,1,
+,00,6,,,,,37,55,X,andeb002,1,0,lugoj001 grounds out. ,lugoj001,0,G
+,11,6,,,,,38,58,SBX,andeb002,1,0,,biggc001,0,L
+,12,6,,,,,39,62,BFCX,andeb002,1,0,bagwj001 grounds out. ,bagwj001,0,G
+,22,6,,,,,40,78,CBBFX,limaj001,1,0,,bellj001,1,F
+,10,6,gonzl001,,,,41,80,BX,limaj001,0,0,gonzl001 singles. ,gonzl001,1,
+gonzl001 scores. finls001 to 3B. ,10,6,,,finls001,,42,82,BX,limaj001,0,1,finls001 doubles. ,finls001,1,
+finls001 scores. ,22,6,,,,,43,87,BBSCX,limaj001,1,1,cabra001 hits sacrifice fly. ,cabra001,1,
+,00,6,,,,,44,88,X,limaj001,1,0,,lee-t002,1,F
+,00,7,hidar001,,,,45,63,X,andeb002,0,0,hidar001 singles. ,hidar001,0,
+,00,7,hidar001,,,,46,64,X,andeb002,1,0,,aloum001,0,F
+,00,7,,,,miesm001,47,65,1,andeb002,1,0,hidar001 picked off. ,miesm001,0,
+,11,7,,,,,48,69,1BCX,andeb002,1,0,,miesm001,0,F
+,12,7,milld002,,,,49,93,BCSFX,limaj001,0,0,milld002 singles. ,milld002,1,
+milld002 scores. ,10,7,,klasd001,,,50,95,BX,limaj001,0,1,klasd001 doubles. ,klasd001,1,
+,02,7,,klasd001,,,52,3,LFS,slusj001,1,0,andeb002 strikes out. ,andeb002,1,
+klasd001 scores. ,22,7,womat001,,,,53,13,FFBFFFBFFX,slusj001,0,1,womat001 singles. ,womat001,1,
+,00,7,,womat001,,bellj001,54,14,B,slusj001,0,0,womat001 steals 2B. ,bellj001,1,
+womat001 scores. ,10,7,bellj001,,,,55,16,BX,slusj001,0,1,bellj001 singles. ,bellj001,1,
+,12,7,bellj001,,,,56,20,BFCX,slusj001,1,0,,gonzl001,1,F
+,20,7,bellj001,,,,57,23,BBX,slusj001,1,0,,finls001,1,F
+,12,8,,,,,58,74,CFFBX,andeb002,1,0,euset001 grounds out. ,euset001,0,G
+,00,8,trubc001,,,,59,75,X,andeb002,0,0,trubc001 singles. ,trubc001,0,
+,22,8,trubc001,,,,61,80,BCSBC,andeb002,1,0,melum001 strikes out. ,melum001,0,
+trubc001 scores. ,22,8,,lugoj001,,,62,85,BCBSX,andeb002,0,1,lugoj001 doubles. ,lugoj001,0,
+,32,8,biggc001,lugoj001,,,63,91,BCBBCB,andeb002,0,0,biggc001 walks. ,biggc001,0,
+,12,8,biggc001,lugoj001,,,65,4,FFBS,padiv001,1,0,bagwj001 strikes out. ,bagwj001,0,
+,22,8,,,,,67,5,SBBFS,henrd002,1,0,cabra001 strikes out. ,cabra001,1,
+,11,8,,,,,68,8,BSX,henrd002,1,0,lee-t002 grounds out. ,lee-t002,1,G
+,32,8,,,,,69,14,CFBBBS,henrd002,1,0,milld002 strikes out. ,milld002,1,
+,22,9,,,,,70,10,CCBFBS,padiv001,1,0,hidar001 strikes out. ,hidar001,0,
+,01,9,aloum001,,,,71,12,CX,padiv001,0,0,aloum001 singles. ,aloum001,0,
+aloum001 to 2B. ,31,9,miesm001,aloum001,,,72,17,BBBCB,padiv001,0,0,miesm001 walks. ,miesm001,0,
+aloum001 scores. miesm001 to 2B. ,12,9,euset001,miesm001,,,73,21,CBCX,padiv001,0,1,euset001 singles. ,euset001,0,
+,22,9,euset001,miesm001,,,75,6,BCSFBS,kim-b001,1,0,trubc001 strikes out. ,trubc001,0,
+,00,9,euset001,miesm001,,,77,7,X,kim-b001,1,0,,wardd002,0,F

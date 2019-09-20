@@ -1,0 +1,73 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,21,1,,,,,0,4,FBBX,schic002,1,0,goodt001 grounds out. ,goodt001,0,G
+,22,1,,,,,1,13,BBCFFFFFX,schic002,1,0,,coraa001,0,F
+,22,1,,,,,2,18,CFBBS,schic002,1,0,shefg001 strikes out. ,shefg001,0,
+,12,1,,,,,3,6,CBCFFS,prokl001,1,0,womat001 strikes out. ,womat001,1,
+,02,1,counc001,,,,4,9,CFH,prokl001,0,0,counc001 hit by pitch. ,counc001,1,
+,10,1,,counc001,,gonzl001,5,11,BS,prokl001,0,0,counc001 steals 2B. ,gonzl001,1,
+,12,1,gonzl001,counc001,,,6,15,BSFH,prokl001,0,0,gonzl001 hit by pitch. ,gonzl001,1,
+,01,1,,counc001,,,7,17,CX,prokl001,2,0,Double Play. ,colbg001,1,
+,02,2,,,,,8,21,CCX,schic002,1,0,grees001 grounds out. ,grees001,0,G
+,11,2,karre001,,,,9,24,BFX,schic002,0,0,karre001 singles. ,karre001,0,
+,12,2,karre001,,,,10,28,BFFS,schic002,1,0,hundt001 strikes out. ,hundt001,0,
+,32,2,karre001,,,,11,34,BBBCFX,schic002,1,0,belta001 grounds out. ,belta001,0,G
+,21,2,finls001,,,,12,21,CBBX,prokl001,0,0,finls001 singles. ,finls001,1,
+,12,2,finls001,,,,13,25,CBFS,prokl001,1,0,contj001 strikes out. ,contj001,1,
+,10,2,finls001,,,,14,27,BX,prokl001,1,0,,friah001,1,F
+,10,2,finls001,,,,15,29,BX,prokl001,1,0,stink001 grounds out. ,stink001,1,G
+,10,3,branj002,,,,16,36,BX,schic002,0,0,branj002 singles. ,branj002,0,
+branj002 to 2B. ,00,3,,branj002,,,17,37,X,schic002,1,0,Sacrifice bunt by prokl001.,prokl001,0,
+branj002 to 3B. ,12,3,,,branj002,,18,42,CCFBX,schic002,1,0,goodt001 grounds out. ,goodt001,0,G
+,22,3,,,branj002,,19,49,CFBBFFS,schic002,1,0,coraa001 strikes out. ,coraa001,0,
+,00,3,schic002,,,,20,30,X,prokl001,0,0,schic002 singles. ,schic002,1,
+,01,3,schic002,,,,21,32,CX,prokl001,1,0,,womat001,1,
+,32,3,schic002,,,,22,38,BBCBCX,prokl001,1,0,,counc001,1,F
+schic002 to 2B. ,32,3,gonzl001,schic002,,,23,45,BFBSFBB,prokl001,0,0,gonzl001 walks. ,gonzl001,1,
+,11,3,gonzl001,schic002,,,24,48,BCX,prokl001,1,0,colbg001 grounds out. ,colbg001,1,G
+,01,4,,shefg001,,,25,51,FX,schic002,0,0,shefg001 doubles. ,shefg001,0,
+shefg001 to 3B. ,11,4,,,shefg001,,26,54,CBX,schic002,1,0,,grees001,0,F
+shefg001 scores. ,20,4,,,,,27,57,BBX,schic002,1,1,karre001 hits sacrifice fly. ,karre001,0,
+,02,4,,,,,28,60,CSS,schic002,1,0,hundt001 strikes out. ,hundt001,0,
+,21,4,,,,,29,52,BBCX,prokl001,1,0,,finls001,1,F
+,12,4,,,,,30,56,BFCS,prokl001,1,0,contj001 strikes out. ,contj001,1,
+,20,4,,friah001,,,31,59,BBX,prokl001,0,0,friah001 doubles. ,friah001,1,
+friah001 scores. ,10,4,stink001,,,,32,61,BX,prokl001,0,1,stink001 reaches on error. ,stink001,1,
+stink001 scores. ,01,4,,schic002,,,33,63,FX,prokl001,0,1,schic002 doubles. ,schic002,1,
+,02,4,,schic002,,,34,69,FFFFFX,prokl001,1,0,,womat001,1,F
+,12,5,,,,,35,64,BFCX,schic002,1,0,belta001 grounds out. ,belta001,0,G
+,02,5,,,,,36,67,CFX,schic002,1,0,,branj002,0,
+,02,5,,,,,37,70,SFX,schic002,1,0,prokl001 grounds out. ,prokl001,0,G
+,12,5,counc001,,,,38,73,FFBX,prokl001,0,0,counc001 singles. ,counc001,1,
+counc001 scores. ,10,5,,gonzl001,,,39,75,BX,prokl001,0,1,gonzl001 doubles. ,gonzl001,1,
+gonzl001 to 3B. ,22,5,,,gonzl001,,40,80,BSFBX,prokl001,1,0,,colbg001,1,F
+gonzl001 scores. ,12,5,finls001,,,,42,4,CBCX,willj002,0,1,finls001 reaches on error. ,finls001,1,G
+,11,5,,,,,44,7,SBX,willj002,2,0,Double Play. ,bautd001,1,
+,00,6,goodt001,,,,46,71,X,schic002,0,0,goodt001 singles. ,goodt001,0,G
+goodt001 to 2B. ,00,6,,goodt001,,,47,72,X,schic002,1,0,coraa001 grounds out. ,coraa001,0,G
+,10,6,,goodt001,,,48,74,BX,schic002,1,0,,shefg001,0,P
+,32,6,,goodt001,,,49,80,CFBBBS,schic002,1,0,grees001 strikes out. ,grees001,0,
+,00,6,,friah001,,,50,8,X,willj002,0,0,friah001 doubles. ,friah001,1,
+,10,6,,friah001,,,51,10,BX,willj002,1,0,,stink001,1,
+,12,6,,friah001,,,52,14,FBFS,willj002,1,0,schic002 strikes out. ,schic002,1,
+,00,6,,friah001,,,53,15,X,willj002,1,0,womat001 grounds out. ,womat001,1,G
+,31,7,,,,,54,85,FBBBX,schic002,1,0,,karre001,0,F
+,30,7,hundt001,,,,55,89,BBBB,schic002,0,0,hundt001 walks. ,hundt001,0,
+hundt001 to 3B. ,00,7,belta001,,hundt001,,56,90,X,schic002,0,0,belta001 singles. ,belta001,0,
+,22,7,belta001,,hundt001,,57,96,FBCFBS,schic002,1,0,branj002 strikes out. ,branj002,0,
+hundt001 scores. belta001 scores. ,00,7,,,,,59,97,X,schic002,0,3,hansd001 homers. ,hansd001,0,
+,11,7,,,,,60,100,CBX,schic002,1,0,,goodt001,0,F
+,02,7,,,,,63,3,CSX,masao001,1,0,bellj001 grounds out. ,bellj001,1,G
+,32,7,,,,,64,12,CBFBBFFFS,masao001,1,0,gonzl001 strikes out. ,gonzl001,1,
+,32,7,,,,,65,18,FBBBCX,masao001,1,0,,colbg001,1,F
+,00,8,,,,,69,1,X,kim-b001,1,0,,coraa001,0,G
+,01,8,,,,,70,3,CX,kim-b001,1,0,,shefg001,0,
+,01,8,grees001,,,,71,5,FX,kim-b001,0,0,grees001 singles. ,grees001,0,
+,00,8,grees001,,,,72,6,X,kim-b001,1,0,karre001 grounds out. ,karre001,0,G
+,02,8,finls001,,,,73,21,CCH,masao001,0,0,finls001 hit by pitch. ,finls001,1,
+miesm001 to 2B. ,00,8,,miesm001,,,76,1,X,hergm001,1,0,Sacrifice bunt by bautd001.,bautd001,1,
+miesm001 to 3B. ,00,8,,,miesm001,,77,2,X,hergm001,1,0,,friah001,1,F
+miesm001 scores. ,20,8,delld001,,,,79,5,BBX,hergm001,0,1,delld001 singles. ,delld001,1,
+,10,8,delld001,,,,81,7,BX,hergm001,1,0,,ryanr001,1,L
+,10,9,,,,,88,2,BX,mantm001,1,0,,hundt001,0,P
+,02,9,,,,,89,5,CCX,mantm001,1,0,,belta001,0,F
+,11,9,,,,,90,8,BFX,mantm001,1,0,branj002 grounds out. ,branj002,0,G

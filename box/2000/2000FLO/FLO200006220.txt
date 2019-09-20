@@ -1,0 +1,147 @@
+version,2
+info,visteam,MIL
+info,hometeam,FLO
+info,site,MIA01
+info,date,2000/06/22
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,mcclt901
+info,ump1b,cuzzp901
+info,ump2b,timmt901
+info,ump3b,craft901
+info,howscored,park
+info,pitches,pitches
+info,temp,87
+info,winddir,rtol
+info,windspeed,13
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,175
+info,attendance,8285
+info,wp,snydj001
+info,lp,sancj001
+info,save,
+start,bellr002,"Ron Belliard",0,1,4
+start,lopel002,"Luis Lopez",0,2,6
+start,hayec001,"Charlie Hayes",0,3,3
+start,burnj001,"Jeromy Burnitz",0,4,9
+start,grism001,"Marquis Grissom",0,5,8
+start,hernj001,"Jose Hernandez",0,6,5
+start,moutl001,"Lyle Mouton",0,7,7
+start,blanh001,"Henry Blanco",0,8,2
+start,snydj001,"John Snyder",0,9,1
+start,kotsm001,"Mark Kotsay",1,1,9
+start,bergd002,"Dave Berg",1,2,4
+start,smitm004,"Mark Smith",1,3,7
+start,wilsp002,"Preston Wilson",1,4,8
+start,lowem001,"Mike Lowell",1,5,5
+start,millk005,"Kevin Millar",1,6,3
+start,fox-a001,"Andy Fox",1,7,6
+start,bakop001,"Paul Bako",1,8,2
+start,sancj001,"Jesus Sanchez",1,9,1
+play,1,0,bellr002,02,SFX,S
+play,1,0,lopel002,00,B,CS2(26)
+play,1,0,lopel002,32,BFBFBFFX,HR/7
+play,1,0,hayec001,32,BBFBFX,9/F9
+play,1,0,burnj001,00,X,43/G
+play,1,1,kotsm001,00,X,3/G
+play,1,1,bergd002,32,BBBCFFB,W
+play,1,1,smitm004,02,CCX,13/G.1-2
+play,1,1,wilsp002,12,CFBX,63/G
+play,2,0,grism001,22,BCBSS,K
+play,2,0,hernj001,32,BBBFFS,K
+play,2,0,moutl001,32,BSFBBFS,K
+play,2,1,lowem001,30,BBBB,W
+play,2,1,millk005,32,BFBBFX,5(B)3(1)/LDP
+play,2,1,fox-a001,31,BBBCX,7/F7
+play,3,0,blanh001,22,BBSFX,3/FL
+play,3,0,snydj001,32,BBBCCX,63/G
+play,3,0,bellr002,11,BSX,13/G
+play,3,1,bakop001,11,CBX,53/G
+play,3,1,sancj001,00,X,5/P5
+play,3,1,kotsm001,30,BBBB,W
+play,3,1,bergd002,01,FX,53/G
+play,4,0,lopel002,01,CX,S7
+play,4,0,hayec001,02,SFX,HR/7.1-H
+play,4,0,burnj001,20,BBX,7/F7
+play,4,0,grism001,11,BFX,53/G
+play,4,0,hernj001,00,X,D7/7D
+play,4,0,moutl001,02,FFS,K23
+play,4,1,smitm004,22,CBCFBX,S9/9S
+play,4,1,wilsp002,10,BX,8/F8D.1-2
+play,4,1,lowem001,30,BBBB,W
+play,4,1,millk005,31,BBSBB,W.2-3;1-2
+play,4,1,fox-a001,12,FBCC,K/C
+play,4,1,bakop001,12,SBFS,K
+play,5,0,blanh001,21,BBFX,9/F9
+play,5,0,snydj001,22,BBCCFFC,K/C
+play,5,0,bellr002,32,CCBFBBS,K
+play,5,1,sancj001,11,BCX,S/78
+play,5,1,kotsm001,32,SCFBFBBB,W.1-2
+play,5,1,bergd002,31,BBBCX,4(1)3/GDP.2-3
+play,5,1,smitm004,22,BSSBS,K
+play,6,0,lopel002,11,BCX,53/G
+play,6,0,hayec001,12,CBFX,9/F9
+play,6,0,burnj001,12,SCBS,K
+play,6,1,wilsp002,11,BFX,4/P4
+play,6,1,lowem001,32,BBBCFC,K/C
+play,6,1,millk005,12,CFBX,7/F7D
+play,7,0,grism001,01,FX,43/G
+play,7,0,hernj001,32,BCBBFB,W
+play,7,0,moutl001,32,BSBSFBX,S8.1-3
+play,7,0,blanh001,00,,NP
+sub,stroj001,"Joe Strong",1,9,1
+play,7,0,blanh001,21,CBBX,54(1)3/GDP
+play,7,1,fox-a001,00,,NP
+sub,acevj001,"Juan Acevedo",0,7,1
+play,7,1,fox-a001,00,,NP
+sub,jenkg001,"Geoff Jenkins",0,9,7
+play,7,1,fox-a001,10,BX,43/G
+play,7,1,bakop001,10,BX,S7
+play,7,1,stroj001,00,,NP
+sub,floyc001,"Cliff Floyd",1,9,11
+play,7,1,floyc001,22,SFBFBX,7/F7D
+play,7,1,kotsm001,20,BBX,T/78D.1-H
+play,7,1,bergd002,20,BBX,9/F9
+play,8,0,jenkg001,00,,NP
+sub,darev001,"Vic Darensbourg",1,9,1
+play,8,0,jenkg001,00,X,HR/78
+play,8,0,bellr002,00,X,S9/9S
+play,8,0,lopel002,00,X,13/SH.1-2#
+play,8,0,hayec001,22,BFBFFX,3/G.2-3#
+play,8,0,burnj001,10,BX,4/L4
+play,8,1,smitm004,00,,NP
+sub,leskc001,"Curtis Leskanic",0,7,1
+play,8,1,smitm004,22,BSCBX,S9/9S
+play,8,1,wilsp002,02,SSX,46(1)3/GDP
+play,8,1,lowem001,21,BFBX,9/F9
+play,9,0,grism001,32,BFBBSFFS,K
+play,9,0,hernj001,10,BX,D/78D
+play,9,0,leskc001,00,,NP
+sub,moutj001,"James Mouton",0,7,11
+play,9,0,moutj001,32,BSSFFBFFBB,W
+play,9,0,blanh001,01,FX,D7.2-H;1-H
+play,9,0,jenkg001,00,,NP
+sub,mahar001,"Ron Mahay",1,9,1
+play,9,0,jenkg001,12,BFSFS,K23
+play,9,0,bellr002,31,BFBBB,W
+play,9,0,lopel002,22,BSBSS,K
+play,9,1,millk005,00,,NP
+sub,wickb001,"Bob Wickman",0,7,1
+play,9,1,millk005,00,X,63/G
+play,9,1,fox-a001,32,BBCSFBB,W
+play,9,1,bakop001,11,SBX,S7.1-2
+play,9,1,mahar001,00,,NP
+sub,lee-d002,"Derrek Lee",1,9,11
+play,9,1,lee-d002,11,BCX,46(1)3/GDP
+data,er,snydj001,0
+data,er,acevj001,1
+data,er,leskc001,0
+data,er,wickb001,0
+data,er,sancj001,3
+data,er,stroj001,0
+data,er,darev001,3
+data,er,mahar001,0

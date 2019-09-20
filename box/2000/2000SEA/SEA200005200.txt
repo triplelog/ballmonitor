@@ -1,0 +1,155 @@
+version,2
+info,visteam,TBA
+info,hometeam,SEA
+info,site,SEA03
+info,date,2000/05/20
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,welkb901
+info,ump1b,froeb901
+info,ump2b,wintm901
+info,ump3b,culbf901
+info,pitches,pitches
+info,temp,55
+info,winddir,rtol
+info,windspeed,6
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,206
+info,attendance,40665
+info,wp,yan-e001
+info,lp,ramsr001
+info,save,hernr001
+start,willg001,"Gerald Williams",0,1,8
+start,castv001,"Vinny Castilla",0,2,5
+start,vaugg001,"Greg Vaughn",0,3,7
+start,mcgrf001,"Fred McGriff",0,4,3
+start,cansj001,"Jose Canseco",0,5,10
+start,guilj001,"Jose Guillen",0,6,9
+start,difem001,"Mike DiFelice",0,7,2
+start,stock001,"Kevin Stocker",0,8,6
+start,cairm001,"Miguel Cairo",0,9,4
+start,yan-e001,"Esteban Yan",0,0,1
+start,hendr001,"Rickey Henderson",1,1,7
+start,belld002,"David Bell",1,2,5
+start,rodra001,"Alex Rodriguez",1,3,6
+start,olerj001,"John Olerud",1,4,3
+start,marte001,"Edgar Martinez",1,5,10
+start,mabrj001,"John Mabry",1,6,9
+start,camem001,"Mike Cameron",1,7,8
+start,lampt001,"Tom Lampkin",1,8,2
+start,mclem001,"Mark McLemore",1,9,4
+start,abbop001,"Paul Abbott",1,0,1
+play,1,0,willg001,11,BSX,8/F8
+play,1,0,castv001,10,BX,8/F8
+play,1,0,vaugg001,32,FCBFBBFB,W
+play,1,0,mcgrf001,32,BBFBFS,K
+play,1,1,hendr001,11,CBX,HR/7
+play,1,1,belld002,20,BBX,4/P4
+play,1,1,rodra001,32,BBCSBC,K/C
+play,1,1,olerj001,22,BBCFC,K/C
+play,2,0,cansj001,32,BCCBBB,W
+play,2,0,guilj001,22,BBFCFS,K
+play,2,0,difem001,21,BBFX,9/F9
+play,2,0,stock001,22,BFBFS,K
+play,2,1,marte001,32,BCBBFX,9/L9
+play,2,1,mabrj001,12,BSFS,K
+play,2,1,camem001,00,X,43/G
+play,3,0,cairm001,21,BBCX,S7
+play,3,0,willg001,12,CBFFX,S8/8S.1-2
+play,3,0,castv001,11,BFX,S7.2-H;1-3
+play,3,0,vaugg001,11,CBX,54(1)/FO.3-H
+play,3,0,mcgrf001,20,BBX,46(1)3/GDP
+play,3,1,lampt001,02,CSX,S9
+play,3,1,mclem001,00,X,7/F7
+play,3,1,hendr001,11,CBX,9/F9D
+play,3,1,belld002,12,BCSC,K/C
+play,4,0,cansj001,22,SSBBC,K/C
+play,4,0,guilj001,11,FBX,53/G
+play,4,0,difem001,10,BX,D7
+play,4,0,stock001,12,FSFBC,K/C
+play,4,1,rodra001,12,CBSS,K
+play,4,1,olerj001,00,X,S7
+play,4,1,marte001,01,CX,9/F9
+play,4,1,mabrj001,22,FBBSS,K
+play,5,0,cairm001,01,CX,2/FL
+play,5,0,willg001,32,BBCBFB,W
+play,5,0,castv001,12,BFFX,7/F7D.1-2
+play,5,0,vaugg001,22,BBSFS,K
+play,5,1,camem001,10,BX,9/F9
+play,5,1,lampt001,20,BBX,S9
+play,5,1,mclem001,01,CX,S8.1-2
+play,5,1,hendr001,32,CFBBBC,K/C
+play,5,1,belld002,10,BX,8/F8
+play,6,0,mcgrf001,00,,NP
+sub,ramsr001,"Robert Ramsay",1,0,1
+play,6,0,mcgrf001,12,BCFFFS,K
+play,6,0,cansj001,21,CBBX,7/F7
+play,6,0,guilj001,00,X,7/F7
+play,6,1,rodra001,31,BBCBX,HR/9
+play,6,1,olerj001,31,BBCBB,W
+play,6,1,marte001,22,BBFSX,8/F8
+play,6,1,mabrj001,22,CSBFFBX,E4/TH.1-2
+play,6,1,camem001,00,X,8/F8
+play,6,1,lampt001,22,CFBBS,K
+play,7,0,difem001,22,CBBFX,9/F9
+play,7,0,stock001,32,BBFBCFB,W
+play,7,0,cairm001,01,CX,S9.1-2
+play,7,0,willg001,01,CX,S7.2-H;1-3;B-2(E7/TH)
+play,7,0,castv001,30,IIII,IW
+play,7,0,vaugg001,00,,NP
+sub,panij001,"Jose Paniagua",1,0,1
+play,7,0,vaugg001,11,FBX,3/P3
+play,7,0,mcgrf001,31,FBBBB,W.3-H;2-3;1-2
+play,7,0,cansj001,22,BSFBS,K
+play,7,1,mclem001,21,BFB,NP
+sub,taylb001,"Billy Taylor",0,0,1
+com,"ej,mclem001,P,froeb901,Charging mound"
+com,"ej,rhoda001,P,froeb901,Fighting; arguing with umpire"
+com,"$Mark McLemore and Arthur Rhodes (not in game)"
+com,"ejected by crew chief Bruce Froemming"
+play,7,1,mclem001,21,BFB,NP
+sub,javis001,"Stan Javier",1,9,11
+play,7,1,javis001,22,BFB.CX,23/G
+play,7,1,hendr001,32,CBBBCFFB,W
+play,7,1,belld002,32,BBCCBS,K+CS2(24)/DP
+play,8,0,guilj001,00,,NP
+sub,belld002,"David Bell",1,2,4
+play,8,0,guilj001,00,,NP
+sub,mabrj001,"John Mabry",1,6,5
+play,8,0,guilj001,00,,NP
+sub,javis001,"Stan Javier",1,9,9
+play,8,0,guilj001,22,BBSFFFX,D/89D
+play,8,0,difem001,02,FFS,K
+play,8,0,stock001,31,BCBBB,W
+play,8,0,cairm001,22,BBSSX,S8.2-3;1-2
+play,8,0,willg001,12,LBSFX,4/P4
+play,8,0,castv001,22,FBBFS,K
+play,8,1,rodra001,00,,NP
+sub,hernr001,"Roberto Hernandez",0,0,1
+play,8,1,rodra001,22,FFBBS,K
+play,8,1,olerj001,22,BSBSX,D7
+play,8,1,marte001,32,CBFBBX,D9/9D.2-H
+play,8,1,mabrj001,00,,NP
+sub,ibanr001,"Raul Ibanez",1,5,12
+play,8,1,mabrj001,12,SBFS,K
+play,8,1,camem001,22,BBSCC,K/C
+play,9,0,vaugg001,00,,NP
+sub,mesaj001,"Jose Mesa",1,0,1
+play,9,0,vaugg001,30,BBBB,W
+play,9,0,mcgrf001,00,X,46(1)3/GDP
+play,9,0,cansj001,22,BFSBS,K
+play,9,1,lampt001,32,BBCBCX,9/F9
+play,9,1,javis001,22,SBFBX,53/G
+play,9,1,hendr001,31,BFBBB,W
+play,9,1,belld002,10,BX,9/F9
+data,er,yan-e001,2
+data,er,taylb001,0
+data,er,hernr001,1
+data,er,abbop001,2
+data,er,ramsr001,2
+data,er,panij001,0
+data,er,mesaj001,0

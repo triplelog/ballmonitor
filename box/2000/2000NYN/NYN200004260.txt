@@ -1,0 +1,161 @@
+version,2
+info,visteam,CIN
+info,hometeam,NYN
+info,site,NYC17
+info,date,2000/04/26
+info,number,0
+info,starttime,7:10PM
+info,daynight,night
+info,usedh,false
+info,umphome,emmep901
+info,ump1b,davig901
+info,ump2b,joycj901
+info,ump3b,riekr901
+info,pitches,pitches
+info,temp,43
+info,winddir,fromcf
+info,windspeed,9
+info,fieldcond,unknown
+info,precip,drizzle
+info,sky,cloudy
+info,timeofgame,177
+info,attendance,33371
+info,wp,neagd001
+info,lp,sprid001
+info,save,
+start,reesp001,"Pokey Reese",0,1,4
+start,yound001,"Dmitri Young",0,2,7
+start,grifk002,"Ken Griffey",0,3,8
+start,bichd001,"Dante Bichette",0,4,9
+start,cases001,"Sean Casey",0,5,3
+start,taube001,"Eddie Taubensee",0,6,2
+start,boona001,"Aaron Boone",0,7,5
+start,dawkt001,"Travis Dawkins",0,8,6
+start,neagd001,"Denny Neagle",0,9,1
+start,hendr001,"Rickey Henderson",1,1,7
+start,belld001,"Derek Bell",1,2,9
+start,alfoe001,"Edgardo Alfonzo",1,3,4
+start,piazm001,"Mike Piazza",1,4,2
+start,zeilt001,"Todd Zeile",1,5,3
+start,agbab001,"Benny Agbayani",1,6,8
+start,abbok002,"Kurt Abbott",1,7,5
+start,ordor001,"Rey Ordonez",1,8,6
+start,sprid001,"Dennis Springer",1,9,1
+play,1,0,reesp001,12,CFBX,S8/8S
+play,1,0,yound001,00,X,HR/9.1-H
+play,1,0,grifk002,32,BBCSFBB,W
+play,1,0,bichd001,10,BX,6/P6
+play,1,0,cases001,31,BFBBX,3/G.1-2
+badj,taube001,R
+play,1,0,taube001,11,SBX,5/FL
+play,1,1,hendr001,20,BBX,7/F7D
+play,1,1,belld001,32,SBCBBB,W
+play,1,1,alfoe001,32,BBCSBX,9/F9
+play,1,1,piazm001,01,CX,6/P6
+play,2,0,boona001,31,BBCBX,D7
+play,2,0,dawkt001,32,BSBSFBS,K
+play,2,0,neagd001,32,BBCSBB,W
+play,2,0,reesp001,02,CSFS,K
+play,2,0,yound001,01,SB,WP.2-3
+play,2,0,yound001,11,SBX,D8/8D.3-H;1-3
+play,2,0,grifk002,00,X,3/P3
+play,2,1,zeilt001,11,LBX,4/FL
+play,2,1,agbab001,22,CBBCFX,3/P3
+play,2,1,abbok002,22,BSBFX,D8/8S
+play,2,1,ordor001,32,BBCFBB,W
+play,2,1,sprid001,32,BBBCFC,K/C
+play,3,0,bichd001,30,BBBB,W
+play,3,0,cases001,01,CX,7/F7
+badj,taube001,R
+play,3,0,taube001,00,X,D9/9D.1-3
+play,3,0,boona001,11,SBX,D9.3-H;2-3
+play,3,0,dawkt001,12,CBSS,K
+play,3,0,neagd001,01,CX,8/F8D
+play,3,1,hendr001,12,CBSS,K
+play,3,1,belld001,11,SBX,53/G
+play,3,1,alfoe001,22,BCBFS,K
+play,4,0,reesp001,21,BCBX,8/F8
+play,4,0,yound001,00,X,3/FL
+play,4,0,grifk002,10,BX,6/P6
+play,4,1,piazm001,32,FBSBBS,K
+play,4,1,zeilt001,22,BBCFFS,K
+play,4,1,agbab001,01,FX,53/G
+play,5,0,bichd001,00,X,8/F8S
+play,5,0,cases001,00,X,S9
+badj,taube001,R
+play,5,0,taube001,11,BFB,WP.1-2
+badj,taube001,R
+play,5,0,taube001,21,BFBX,S9/9S.2-H
+play,5,0,boona001,21,CBBX,S8.1-2
+play,5,0,dawkt001,11,BSX,64(1)3/GDP
+play,5,1,abbok002,12,CSBS,K
+play,5,1,ordor001,31,BBFBB,W
+play,5,1,sprid001,02,SFFS,K
+play,5,1,hendr001,32,CBBBSFFB,W.1-2
+play,5,1,belld001,01,SX,13/G
+play,6,0,neagd001,22,CSFBBX,43/G
+play,6,0,reesp001,21,BFBX,S9/9S
+play,6,0,yound001,01,FX,S7/7S.1-2
+play,6,0,grifk002,22,SBBFX,36(1)/FO.2-3
+play,6,0,bichd001,00,X,8/F8
+play,6,1,alfoe001,12,CCBS,K
+play,6,1,piazm001,00,X,D/78
+play,6,1,zeilt001,22,BCCBX,43/G.2-3
+play,6,1,agbab001,22,BBCCX,63/G
+play,7,0,cases001,01,CX,D7/7S
+badj,taube001,R
+play,7,0,taube001,00,X,HR/9.2-H
+play,7,0,boona001,31,BBCBB,W
+play,7,0,dawkt001,00,,NP
+sub,paytj001,"Jay Payton",1,9,8
+play,7,0,dawkt001,00,,NP
+sub,rodrr004,"Rich Rodriguez",1,6,1
+play,7,0,dawkt001,21,BFBX,4/P4
+play,7,0,neagd001,22,CBBFFX,7/F7
+play,7,0,reesp001,10,BX,S8.1-2
+play,7,0,yound001,32,BFSFBBX,D8/8D.2-H;1-H;BX3(865)
+play,7,1,abbok002,12,BSSC,K/C
+play,7,1,ordor001,00,X,7/F7
+play,7,1,paytj001,02,CSX,43/G
+play,8,0,grifk002,00,,NP
+sub,moram002,"Melvin Mora",1,3,4
+play,8,0,grifk002,00,,NP
+sub,pratt001,"Todd Pratt",1,4,2
+play,8,0,grifk002,12,CSBX,S9
+play,8,0,bichd001,11,SBX,5/L5
+play,8,0,cases001,20,BBX,3/G.1-2
+play,8,0,taube001,11,CBX,31/G
+play,8,1,hendr001,00,,NP
+sub,tuckm001,"Michael Tucker",0,3,8
+play,8,1,hendr001,00,,NP
+sub,stync001,"Chris Stynes",0,1,4
+play,8,1,hendr001,00,,NP
+sub,morrh001,"Hal Morris",0,9,3
+play,8,1,hendr001,00,,NP
+sub,nunnj001,"Jon Nunnally",1,1,11
+play,8,1,nunnj001,00,,NP
+sub,aybam001,"Manny Aybar",0,5,1
+play,8,1,nunnj001,02,SCX,T9
+play,8,1,belld001,12,BSFX,7/SF.3-H
+play,8,1,moram002,00,X,53/G
+play,8,1,pratt001,00,X,7/F7
+play,9,0,boona001,00,,NP
+sub,nunnj001,"Jon Nunnally",1,1,7
+play,9,0,boona001,32,BBBCSB,W
+play,9,0,dawkt001,02,SCX,9/F9
+play,9,0,morrh001,20,BBX,E3/TH.1-2
+play,9,0,stync001,00,X,D7.2-H;1-H(UR)
+play,9,0,yound001,31,BBSBB,W
+play,9,0,tuckm001,22,FFBBX,3/G.2-3;1-2
+play,9,0,bichd001,21,FBBX,S7/7S.3-H(UR);2-3
+play,9,0,aybam001,12,SCBFFS,K
+play,9,1,zeilt001,12,BCSX,S7
+play,9,1,rodrr004,00,,NP
+sub,franm001,"Matt Franco",1,6,11
+play,9,1,franm001,00,X,9/L9
+play,9,1,abbok002,02,FFS,K
+play,9,1,ordor001,01,FX,46(1)/FO
+data,er,neagd001,0
+data,er,aybam001,1
+data,er,sprid001,8
+data,er,rodrr004,2

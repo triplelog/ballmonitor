@@ -1,0 +1,131 @@
+version,2
+info,visteam,LAN
+info,hometeam,HOU
+info,site,HOU03
+info,date,2000/06/22
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,meric901
+info,ump1b,gibsg901
+info,ump2b,ripps901
+info,ump3b,tscht901
+info,pitches,pitches
+info,temp,72
+info,winddir,ltor
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,162
+info,attendance,37150
+info,wp,elars001
+info,lp,dreid001
+info,save,valdm001
+start,hollt001,"Todd Hollandsworth",0,1,8
+start,grudm001,"Mark Grudzielanek",0,2,4
+start,shefg001,"Gary Sheffield",0,3,7
+start,grees001,"Shawn Green",0,4,9
+start,karre001,"Eric Karros",0,5,3
+start,belta001,"Adrian Beltre",0,6,5
+start,kreuc001,"Chad Kreuter",0,7,2
+start,elstk001,"Kevin Elster",0,8,6
+start,dreid001,"Darren Dreifort",0,9,1
+start,barkg001,"Glen Barker",1,1,8
+start,biggc001,"Craig Biggio",1,2,4
+start,bagwj001,"Jeff Bagwell",1,3,3
+start,berkl001,"Lance Berkman",1,4,9
+start,aloum001,"Moises Alou",1,5,7
+start,melum001,"Mitch Meluskey",1,6,2
+start,lugoj001,"Julio Lugo",1,7,6
+start,trubc001,"Chris Truby",1,8,5
+start,elars001,"Scott Elarton",1,9,1
+play,1,0,hollt001,22,BBCSFX,63/G
+play,1,0,grudm001,10,BX,D7
+play,1,0,shefg001,01,CX,53/G
+play,1,0,grees001,12,BFSFX,8/F8
+play,1,1,barkg001,21,BBCX,8/F8
+play,1,1,biggc001,30,BBBB,W
+play,1,1,bagwj001,32,BBFFBB,W.1-2
+play,1,1,berkl001,00,X,HR/8.2-H;1-H
+play,1,1,aloum001,20,BBX,8/F8
+play,1,1,melum001,22,BCBFS,K
+play,2,0,karre001,11,CBX,9/F9S
+play,2,0,belta001,32,BSSFFBFBX,9/F9
+play,2,0,kreuc001,11,FBX,2/FL
+play,2,1,lugoj001,01,CX,63/G
+play,2,1,trubc001,12,CSFBFFH,HP
+play,2,1,elars001,01,LX,14/SH.1-2
+play,2,1,barkg001,20,BBX,6/FL
+play,3,0,elstk001,00,X,4/P4
+play,3,0,dreid001,02,FCX,9/FL
+play,3,0,hollt001,12,CBFFS,K
+play,3,1,biggc001,32,CSFBBBFFX,D8/8D.BX3(865)
+play,3,1,bagwj001,21,CBBX,63/G
+play,3,1,berkl001,31,BSBBB,W
+play,3,1,aloum001,01,FX,54(1)/FO
+play,4,0,grudm001,22,BCBFFS,K
+play,4,0,shefg001,21,CBBX,4/P4
+play,4,0,grees001,32,BFCFFBBX,6/L6
+play,4,1,melum001,20,BBX,4/P4
+play,4,1,lugoj001,00,X,63/G
+play,4,1,trubc001,10,BX,D/78
+play,4,1,elars001,00,X,13/G
+com,"$the roof was opened"
+play,5,0,karre001,00,X,6/P6
+play,5,0,belta001,12,FBCX,4/L4
+play,5,0,kreuc001,31,BFBBB,W
+play,5,0,elstk001,01,CX,S7/7S.1-2
+play,5,0,dreid001,11,CBX,D8/8D.2-H;1-3
+play,5,0,hollt001,02,CFS,K
+play,5,1,barkg001,00,X,13/G
+play,5,1,biggc001,12,CBSS,K
+play,5,1,bagwj001,10,BX,9/F9
+play,6,0,grudm001,02,CCS,K
+play,6,0,shefg001,02,FFX,63/G
+play,6,0,grees001,32,BBCBSX,7/F7D
+play,6,1,berkl001,22,BBCCX,S8
+play,6,1,aloum001,10,BX,8/L8
+play,6,1,melum001,10,BX,S7/7S.1-2
+play,6,1,lugoj001,10,BC,SB3;SB2
+play,6,1,lugoj001,12,BCSX,E4/G.3-H(NR)(UR);2-H(UR)(NR);B-2
+play,6,1,trubc001,00,B,CS3(25)
+play,6,1,trubc001,32,BBSSBS,K23
+play,7,0,karre001,12,CSBS,K
+play,7,0,belta001,11,SBX,7/F7
+play,7,0,kreuc001,21,BCBX,43/G
+play,7,1,elars001,22,FSBBFX,63/G
+play,7,1,barkg001,20,BBX,3/G
+play,7,1,biggc001,00,X,3/P3
+play,8,0,elstk001,02,CFX,S7
+play,8,0,dreid001,00,,NP
+sub,hansd001,"Dave Hansen",0,9,11
+play,8,0,hansd001,12,CSFBX,13/G.1-2
+play,8,0,hollt001,12,FFBS,K
+play,8,0,grudm001,22,SBBFFX,13/G
+play,8,1,bagwj001,00,,NP
+sub,adamt001,"Terry Adams",0,9,1
+play,8,1,bagwj001,31,BSBBB,W
+play,8,1,berkl001,01,FX,S9.1-3
+play,8,1,aloum001,01,CX,D/78.3-H;1-3
+play,8,1,melum001,22,BCFBX,6/P6
+play,8,1,lugoj001,22,BFSBS,K
+play,8,1,trubc001,11,BFX,31/G
+play,9,0,shefg001,00,,NP
+sub,henrd002,"Doug Henry",1,9,1
+play,9,0,shefg001,11,BCX,HR/7
+play,9,0,grees001,30,BBBB,W
+play,9,0,karre001,11,BCX,S7/7S.1-2
+play,9,0,belta001,00,,NP
+sub,valdm001,"Marc Valdes",1,7,1
+play,9,0,belta001,00,,NP
+sub,bogat001,"Tim Bogar",1,9,6
+play,9,0,belta001,30,BBBB,W.2-3;1-2
+play,9,0,kreuc001,01,CX,14(1)3/GDP.3-H;2-3
+play,9,0,elstk001,22,CBSBX,8/F8
+data,er,dreid001,3
+data,er,adamt001,1
+data,er,elars001,1
+data,er,henrd002,2
+data,er,valdm001,0

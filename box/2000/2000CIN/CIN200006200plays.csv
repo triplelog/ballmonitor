@@ -1,0 +1,72 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,12,1,,,,,0,4,CBSS,ferno001,1,0,goodt001 strikes out. ,goodt001,0,
+,00,1,,,,,1,5,X,ferno001,1,0,,lansm001,0,P
+,32,1,,,,,2,11,FCBBBX,ferno001,1,0,walkl001 grounds out. ,walkl001,0,G
+,02,1,,,,,3,4,CCFX,astap001,1,0,,reesp001,1,F
+,01,1,,larkb001,,,4,6,CX,astap001,0,0,larkb001 doubles. ,larkb001,1,
+,00,1,,larkb001,,,5,7,X,astap001,1,0,,grifk002,1,F
+larkb001 scores. ,01,1,bichd001,,,,6,9,CX,astap001,0,1,bichd001 singles. ,bichd001,1,
+bichd001 to 2B. ,20,1,yound001,bichd001,,,7,12,BBX,astap001,0,0,yound001 singles. ,yound001,1,
+bichd001 scores. yound001 to 3B. ,02,1,,cases001,yound001,,8,15,CFX,astap001,0,1,cases001 doubles. ,cases001,1,
+,20,1,,cases001,yound001,,9,18,BBX,astap001,1,0,,boona001,1,L
+,10,2,,,,,10,13,BX,ferno001,1,0,,cirij001,0,F
+,32,2,,,,,11,21,BFBBCFFX,ferno001,0,1,heltt001 homers. ,heltt001,0,
+,22,2,,,,,12,26,BCBFS,ferno001,1,0,hammj001 strikes out. ,hammj001,0,
+,22,2,,,,,13,31,CBBCX,ferno001,1,0,maynb001 grounds out. ,maynb001,0,G
+,00,2,,,,,14,19,X,astap001,1,0,santb001 grounds out. ,santb001,1,G
+,32,2,ferno001,,,,15,25,CBFBBB,astap001,0,0,ferno001 walks. ,ferno001,1,
+,00,2,ferno001,,,,16,26,X,astap001,1,0,,reesp001,1,P
+,11,2,ferno001,,,,17,29,BCX,astap001,1,0,,larkb001,1,F
+,01,3,,,,,18,33,CX,ferno001,1,0,peren001 grounds out. ,peren001,0,G
+,01,3,,,,,19,35,CX,ferno001,1,0,astap001 grounds out. ,astap001,0,G
+,02,3,,,,,20,38,CFX,ferno001,1,0,goodt001 grounds out. ,goodt001,0,G
+,32,3,grifk002,,,,21,35,BBCFBB,astap001,0,0,grifk002 walks. ,grifk002,1,
+,11,3,,,,,22,38,BFX,astap001,2,0,Double Play. ,bichd001,1,
+,00,3,yound001,,,,23,39,X,astap001,0,0,yound001 singles. ,yound001,1,
+,22,3,yound001,,,,24,44,BBFFX,astap001,1,0,cases001 grounds out. ,cases001,1,G
+,21,4,,,,,25,42,BBSX,ferno001,1,0,lansm001 grounds out. ,lansm001,0,G
+,00,4,,,,,26,43,X,ferno001,1,0,walkl001 grounds out. ,walkl001,0,G
+,01,4,,,,,27,45,CX,ferno001,1,0,cirij001 grounds out. ,cirij001,0,G
+,01,4,boona001,,,,28,46,CX,astap001,0,0,boona001 singles. ,boona001,1,
+,00,4,,boona001,,santb001,29,47,C,astap001,0,0,boona001 steals 2B. ,santb001,1,
+boona001 to 3B. ,11,4,,,boona001,,30,50,CBX,astap001,1,0,santb001 grounds out. ,santb001,1,G
+,11,4,,,boona001,,31,53,BCX,astap001,1,0,ferno001 grounds out. ,ferno001,1,G
+,11,4,,,boona001,,32,56,CBX,astap001,1,0,,reesp001,1,P
+,02,5,,,,,33,49,CCFX,ferno001,1,0,,heltt001,0,F
+,00,5,,hammj001,,,34,50,X,ferno001,0,0,hammj001 doubles. ,hammj001,0,
+hammj001 to 3B. ,00,5,,,hammj001,,35,51,X,ferno001,1,0,,maynb001,0,F
+,31,5,peren001,,hammj001,,36,56,FBBBI,ferno001,0,0,peren001 intentionally walks. ,peren001,0,
+peren001 out. ,00,5,astap001,,hammj001,,37,57,X,ferno001,1,0,astap001 reaches on fielder's choice. ,astap001,0,
+,01,5,,larkb001,,,38,58,CX,astap001,0,0,larkb001 doubles. ,larkb001,1,
+,00,5,,larkb001,,,39,59,X,astap001,1,0,,grifk002,1,L
+,01,5,,larkb001,,,40,61,FX,astap001,1,0,,bichd001,1,P
+,12,5,,larkb001,,,41,65,SBFS,astap001,1,0,yound001 strikes out. ,yound001,1,
+,10,6,,,,,42,59,BX,ferno001,1,0,goodt001 grounds out. ,goodt001,0,G
+,00,6,lansm001,,,,43,60,X,ferno001,0,0,lansm001 singles. ,lansm001,0,
+lansm001 to 2B. ,32,6,walkl001,lansm001,,,44,66,BBCFBB,ferno001,0,0,walkl001 walks. ,walkl001,0,
+,01,6,,lansm001,,,45,68,FX,ferno001,2,0,Double Play. ,cirij001,0,
+,00,6,,,,,46,66,X,astap001,1,0,,cases001,1,F
+,01,6,,boona001,,,47,68,CX,astap001,0,0,boona001 doubles. ,boona001,1,
+,32,6,,boona001,,,48,74,BCBBSS,astap001,1,0,santb001 strikes out. ,santb001,1,
+,12,6,,boona001,,,49,78,CBCC,astap001,1,0,ferno001 strikes out. ,ferno001,1,
+,21,7,,,,,50,72,BBFX,ferno001,0,1,heltt001 homers. ,heltt001,0,
+,01,7,,,,,51,74,FX,ferno001,1,0,,hammj001,0,F
+,31,7,,,,,52,79,BCBBX,ferno001,1,0,,maynb001,0,F
+,00,7,,,peren001,,53,80,X,ferno001,0,0,peren001 triples. ,peren001,0,
+,12,7,,,peren001,,54,84,FSBS,ferno001,1,0,astap001 strikes out. ,astap001,0,
+,01,7,,,,,55,80,CX,astap001,1,0,reesp001 grounds out. ,reesp001,1,G
+,02,7,,,,,56,83,CFX,astap001,1,0,larkb001 grounds out. ,larkb001,1,G
+,30,7,grifk002,,,,57,87,BBBX,astap001,0,0,grifk002 singles. ,grifk002,1,
+,01,7,grifk002,,,,58,89,CX,astap001,1,0,bichd001 grounds out. ,bichd001,1,G
+,31,8,,,,,59,89,BBBCX,ferno001,1,0,,goodt001,0,F
+,10,8,,lansm001,,,60,91,BX,ferno001,0,0,lansm001 doubles. ,lansm001,0,
+,31,8,walkl001,lansm001,,,62,5,BBBCB,reyed001,0,0,walkl001 walks. ,walkl001,0,
+,00,8,walkl001,,,,65,1,X,gravd001,2,0,Double Play. ,cirij001,0,
+,00,8,,,,,66,90,X,astap001,0,1,yound001 homers. ,yound001,1,
+,20,8,,,,,67,93,BBX,astap001,1,0,cases001 grounds out. ,cases001,1,G
+,22,8,boona001,,,,68,98,CBBCX,astap001,0,0,boona001 reaches on error. ,boona001,1,G
+boona001 to 2B. ,01,8,santb001,boona001,,,69,100,FX,astap001,0,0,santb001 singles. ,santb001,1,
+,02,8,,boona001,,,70,104,SCFX,astap001,2,0,Double Play. ,tuckm001,1,
+,00,9,,,,,72,2,X,gravd001,1,0,heltt001 grounds out. ,heltt001,0,G
+,22,9,hammj001,,,,73,7,BFBCX,gravd001,0,0,hammj001 singles. ,hammj001,0,
+,00,9,,,,,74,8,X,gravd001,2,0,Double Play. ,maynb001,0,

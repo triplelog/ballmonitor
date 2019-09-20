@@ -1,0 +1,147 @@
+version,2
+info,visteam,PHI
+info,hometeam,NYN
+info,site,NYC17
+info,date,2000/09/08
+info,number,0
+info,starttime,7:10PM
+info,daynight,night
+info,usedh,false
+info,umphome,younl901
+info,ump1b,katzt901
+info,ump2b,millb901
+info,ump3b,mealj901
+info,pitches,pitches
+info,temp,75
+info,winddir,rtol
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,193
+info,attendance,38808
+info,wp,padiv001
+info,lp,hampm001
+info,save,branj001
+start,abreb001,"Bobby Abreu",0,1,9
+start,gland001,"Doug Glanville",0,2,8
+start,roles001,"Scott Rolen",0,3,5
+start,burrp001,"Pat Burrell",0,4,7
+start,jordk001,"Kevin Jordan",0,5,4
+start,lee-t002,"Travis Lee",0,6,3
+start,benng001,"Gary Bennett",0,7,2
+start,peret003,"Tomas Perez",0,8,6
+start,chenb001,"Bruce Chen",0,9,1
+start,agbab001,"Benny Agbayani",1,1,7
+start,belld001,"Derek Bell",1,2,9
+start,alfoe001,"Edgardo Alfonzo",1,3,4
+start,piazm001,"Mike Piazza",1,4,2
+start,zeilt001,"Todd Zeile",1,5,3
+start,ventr001,"Robin Ventura",1,6,5
+start,paytj001,"Jay Payton",1,7,8
+start,bordm001,"Mike Bordick",1,8,6
+start,hampm001,"Mike Hampton",1,9,1
+play,1,0,abreb001,32,BBCBSS,K
+play,1,0,gland001,21,BBCX,6/P6
+play,1,0,roles001,21,CBBX,63/G
+play,1,1,agbab001,22,CBFBX,8/F8
+play,1,1,belld001,00,X,S8
+play,1,1,alfoe001,01,CX,S8.1-2
+play,1,1,piazm001,22,CBBFFFX,16(1)/FO.2-3
+play,1,1,zeilt001,01,CX,9/F9
+play,2,0,burrp001,11,CBX,8/F8
+play,2,0,jordk001,01,CX,8/L8
+play,2,0,lee-t002,01,CX,43/G
+play,2,1,ventr001,32,BCCBBX,3/L3
+play,2,1,paytj001,22,CBFFFFFFBFX,9/F9
+play,2,1,bordm001,02,FFX,S7
+play,2,1,hampm001,00,X,2/BG
+play,3,0,benng001,12,BCSFFX,S8
+play,3,0,peret003,01,CX,54(1)/FO
+play,3,0,chenb001,00,X,34/SH.1-2
+play,3,0,abreb001,12,BCSX,43/G
+play,3,1,agbab001,02,FFX,S7/7S
+play,3,1,belld001,01,CX,54(1)/FO
+play,3,1,alfoe001,32,FBFBFFFBC,K+CS2(24)/DP/C
+play,4,0,gland001,21,BBCX,S
+play,4,0,roles001,02,CSS,K
+play,4,0,burrp001,12,FBSB,WP.1-2
+play,4,0,burrp001,32,FBSBBB,W
+play,4,0,jordk001,12,BFCB,WP.2-3;1-2
+play,4,0,jordk001,32,BFCBBS,K
+play,4,0,lee-t002,30,BBBB,W
+play,4,0,benng001,00,X,63/G
+play,4,1,piazm001,01,FX,8/L8
+play,4,1,zeilt001,21,CBBX,6/P6
+play,4,1,ventr001,22,BBFFS,K
+play,5,0,peret003,12,CSBFC,K/C
+play,5,0,chenb001,02,CSS,K
+play,5,0,abreb001,02,CCX,D7
+play,5,0,gland001,22,BCFBS,K23
+play,5,1,paytj001,01,SX,8/F8
+play,5,1,bordm001,11,BCX,D9
+play,5,1,hampm001,02,CSS,K
+play,5,1,agbab001,31,BFBBB,W
+play,5,1,belld001,11,BFB,WP.2-3;1-2
+play,5,1,belld001,32,BFBBSX,9/F9
+play,6,0,roles001,00,X,63/G
+play,6,0,burrp001,00,X,43/G
+play,6,0,jordk001,02,CCX,63/G
+play,6,1,alfoe001,02,CCX,7/F7S
+play,6,1,piazm001,20,BBX,S7/7S
+play,6,1,zeilt001,20,BBX,7/F7
+play,6,1,ventr001,31,BBBCX,3/G
+play,7,0,lee-t002,10,BX,9/F9
+play,7,0,benng001,02,FCC,K/C
+play,7,0,peret003,21,BFBX,3/G
+play,7,1,paytj001,12,FBFFX,S/89S
+play,7,1,bordm001,32,BBBCFFX,3/P3
+play,7,1,hampm001,10,BX,S8.1-2
+play,7,1,agbab001,00,,NP
+sub,padiv001,"Vicente Padilla",0,9,1
+play,7,1,agbab001,11,BSX,43/G.2-3;1-2
+play,7,1,belld001,01,FX,43/G
+play,8,0,padiv001,00,,NP
+sub,sefck001,"Kevin Sefcik",0,9,11
+play,8,0,sefck001,22,BBCSFX,53/G
+play,8,0,abreb001,12,CCBS,K
+play,8,0,gland001,32,BBCBCB,W
+play,8,0,roles001,32,BCBSFBX,HR/7.1-H
+play,8,0,burrp001,32,BBBCFB,W
+play,8,0,jordk001,00,,NP
+sub,whitr002,"Rick White",1,9,1
+play,8,0,jordk001,02,CCC,K/C
+play,8,1,alfoe001,00,,NP
+sub,sefck001,"Kevin Sefcik",0,9,7
+play,8,1,alfoe001,00,,NP
+sub,brocc001,"Chris Brock",0,4,1
+play,8,1,alfoe001,22,CFFBBFX,S7
+play,8,1,piazm001,12,CBSFS,K
+play,8,1,zeilt001,01,CX,9/F9
+play,8,1,ventr001,00,,NP
+sub,vosbe001,"Ed Vosberg",0,4,1
+play,8,1,ventr001,31,BBFBB,W.1-2
+play,8,1,paytj001,00,,NP
+sub,branj001,"Jeff Brantley",0,4,1
+play,8,1,paytj001,00,,NP
+sub,peret004,"Timoniel Perez",1,6,12
+play,8,1,paytj001,00,X,3/P3
+play,9,0,lee-t002,00,,NP
+sub,velaj001,"Jorge Velandia",1,6,5
+play,9,0,lee-t002,30,BBBB,W
+play,9,0,benng001,11,FBX,3/BP3
+play,9,0,peret003,22,BLCBS,K
+play,9,0,sefck001,00,X,5/FL
+play,9,1,bordm001,12,BCCS,K
+play,9,1,whitr002,00,,NP
+sub,harrl001,"Lenny Harris",1,9,11
+play,9,1,harrl001,31,BBBCB,W
+play,9,1,agbab001,22,CSBBS,K
+play,9,1,belld001,00,X,8/F8
+data,er,chenb001,0
+data,er,padiv001,0
+data,er,brocc001,0
+data,er,vosbe001,0
+data,er,branj001,0
+data,er,hampm001,2
+data,er,whitr002,0

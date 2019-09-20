@@ -1,0 +1,140 @@
+version,2
+info,visteam,TEX
+info,hometeam,TOR
+info,site,TOR02
+info,date,2000/08/03
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,nelsj901
+info,ump1b,cousd901
+info,ump2b,marqa901
+info,ump3b,brinj901
+info,pitches,pitches
+info,temp,65
+info,winddir,fromlf
+info,windspeed,14
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,172
+info,attendance,24825
+info,wp,castf001
+info,lp,rogek001
+info,save,kochb001
+start,cataf001,"Frank Catalanotto",0,1,4
+start,martd002,"Dave Martinez",0,2,3
+start,greer001,"Rusty Greer",0,3,7
+start,palmr001,"Rafael Palmeiro",0,4,10
+start,kaplg001,"Gabe Kapler",0,5,8
+start,leder001,"Ricky Ledee",0,6,9
+start,haseb001,"Bill Haselman",0,7,2
+start,lambm001,"Mike Lamb",0,8,5
+start,clayr001,"Royce Clayton",0,9,6
+start,rogek001,"Kenny Rogers",0,0,1
+start,stews002,"Shannon Stewart",1,1,7
+start,gonza001,"Alex S. Gonzalez",1,2,6
+start,fullb001,"Brad Fullmer",1,3,10
+start,delgc001,"Carlos Delgado",1,4,3
+start,batit001,"Tony Batista",1,5,5
+start,cruzj004,"Jose Cruz",1,6,8
+start,fletd001,"Darrin Fletcher",1,7,2
+start,cordm001,"Marty Cordova",1,8,9
+start,woodc001,"Chris Woodward",1,9,4
+start,castf001,"Frank Castillo",1,0,1
+play,1,0,cataf001,21,BFBX,7/F7S
+play,1,0,martd002,12,BFFX,6/P6
+play,1,0,greer001,12,CFBS,K
+play,1,1,stews002,01,CX,S9
+play,1,1,gonza001,00,X,23/SH.1-2
+play,1,1,fullb001,22,BFBSX,3/G.2-3
+play,1,1,delgc001,22,CBBCS,K
+play,2,0,palmr001,12,BFFFC,K/C
+play,2,0,kaplg001,10,BX,HR/7
+play,2,0,leder001,12,BCCC,K/C
+play,2,0,haseb001,21,BSBX,143/G
+play,2,1,batit001,22,FBFBS,K
+play,2,1,cruzj004,32,BCFBBX,D9
+play,2,1,fletd001,31,CBBBB,W
+play,2,1,cordm001,10,BX,S9.2-H;1-2
+play,2,1,woodc001,12,CFBS,K
+play,2,1,stews002,32,CFBBFBC,K/C
+play,3,0,lambm001,02,CSFFX,7/F7
+play,3,0,clayr001,00,X,63/G
+play,3,0,cataf001,00,X,8/F8
+play,3,1,gonza001,32,BBSFBX,7/F7
+play,3,1,fullb001,32,BFBFFBX,9/F9
+play,3,1,delgc001,21,CBBX,S7/7S
+play,3,1,batit001,32,CBFBBX,53/G
+play,4,0,martd002,01,SX,2/FL
+play,4,0,greer001,01,CX,S7/7S
+play,4,0,palmr001,32,BBBFSFFX,9/F9
+play,4,0,kaplg001,00,B,PB.1-2
+play,4,0,kaplg001,10,BX,13/G
+play,4,1,cruzj004,10,BX,63/G
+play,4,1,fletd001,22,CCBBX,D7/7D
+play,4,1,cordm001,32,BSBFBB,W
+play,4,1,woodc001,00,X,5/L5
+play,4,1,stews002,00,X,9/F9D
+play,5,0,leder001,02,SCS,K23
+play,5,0,haseb001,21,BCBX,7/F7D
+play,5,0,lambm001,12,BSFX,43/G
+play,5,1,gonza001,00,X,4/L4
+play,5,1,fullb001,22,FFBBFFX,4/P4
+play,5,1,delgc001,32,CBBBFFX,13/G
+play,6,0,clayr001,02,CFX,S8
+play,6,0,cataf001,10,BX,S8.1-2
+play,6,0,martd002,11,LBX,1(B)6(2)/BP/DP
+com,"$great diving catch by Castillo"
+play,6,0,greer001,32,BFBBCX,8/F8
+play,6,1,batit001,00,X,S8
+play,6,1,cruzj004,11,FBX,46(1)/FO
+play,6,1,fletd001,32,BBSFBB,W.1-2
+play,6,1,cordm001,12,CBCC,K/C
+play,6,1,woodc001,11,CBX,S8.2-H;1-2
+play,6,1,stews002,32,FFBBBFX,53/G
+play,7,0,palmr001,02,FCS,K
+play,7,0,kaplg001,02,FSFX,43/G
+play,7,0,leder001,11,CBX,6/P6
+play,7,1,gonza001,00,,NP
+sub,venam002,"Mike Venafro",0,0,1
+play,7,1,gonza001,10,BX,D/78
+play,7,1,fullb001,32,BCSBFBS,K
+play,7,1,delgc001,30,BBII,IW
+play,7,1,batit001,00,,NP
+sub,zimmj001,"Jeff Zimmerman",0,0,1
+play,7,1,batit001,02,CSS,K
+play,7,1,cruzj004,32,BCBSBS,K
+play,8,0,haseb001,00,,NP
+sub,quanp001,"Paul Quantrill",1,0,1
+play,8,0,haseb001,02,CCX,31/G
+play,8,0,lambm001,11,BFX,5/FL
+play,8,0,clayr001,31,CBBBB,W
+play,8,0,cataf001,00,,NP
+sub,guthm001,"Mark Guthrie",1,0,1
+play,8,0,cataf001,00,,NP
+sub,curtc001,"Chad Curtis",0,1,11
+play,8,0,curtc001,32,BBBCCS,K
+play,8,1,fletd001,00,,NP
+sub,shels001,"Scott Sheldon",0,1,4
+play,8,1,fletd001,02,FFFFX,S9
+play,8,1,cordm001,10,BX,S8.1-3
+play,8,1,woodc001,02,CCS,K/DP.1-2;3XH(2)
+com,"$ball bounced off backstop, right to catcher for DP"
+play,8,1,stews002,00,B,WP.2-3
+play,8,1,stews002,10,BX,S.3-H
+play,8,1,gonza001,10,BX,S8.1-2
+play,8,1,fullb001,12,FFBS,K
+play,9,0,martd002,00,,NP
+sub,kochb001,"Billy Koch",1,0,1
+play,9,0,martd002,01,CX,31/G
+play,9,0,greer001,10,BX,7/F7
+play,9,0,palmr001,01,FX,7/F7
+data,er,rogek001,2
+data,er,venam002,0
+data,er,zimmj001,1
+data,er,castf001,1
+data,er,quanp001,0
+data,er,guthm001,0
+data,er,kochb001,0

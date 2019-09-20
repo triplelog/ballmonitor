@@ -1,0 +1,162 @@
+version,2
+info,visteam,KCA
+info,hometeam,BOS
+info,site,BOS07
+info,date,2000/08/05
+info,number,0
+info,starttime,1:15PM
+info,daynight,day
+info,usedh,true
+info,umphome,shulj901
+info,ump1b,roe-r901
+info,ump2b,rungb901
+info,ump3b,lampi901
+info,pitches,pitches
+info,temp,80
+info,winddir,fromlf
+info,windspeed,6
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,189
+info,attendance,31441
+info,wp,meadb001
+info,lp,cormr001
+info,save,bottr001
+start,damoj001,"Johnny Damon",0,1,10
+start,feblc001,"Carlos Febles",0,2,4
+start,sweem002,"Mike Sweeney",0,3,3
+start,dye-j001,"Jermaine Dye",0,4,9
+start,randj002,"Joe Randa",0,5,5
+start,quinm001,"Mark Quinn",0,6,7
+start,zaung001,"Gregg Zaun",0,7,2
+start,dunwt001,"Todd Dunwoody",0,8,8
+start,ordal001,"Luis Ordaz",0,9,6
+start,durbc001,"Chad Durbin",0,0,1
+start,nixot001,"Trot Nixon",1,1,9
+start,daubb001,"Brian Daubach",1,2,10
+start,everc001,"Carl Everett",1,3,8
+start,garcn001,"Nomar Garciaparra",1,4,6
+start,oleat001,"Troy O'Leary",1,5,7
+start,varij001,"Jason Varitek",1,6,2
+start,sprae001,"Ed Sprague",1,7,5
+start,brogr001,"Rico Brogna",1,8,3
+start,lansm001,"Mike Lansing",1,9,4
+start,arror001,"Rolando Arrojo",1,0,1
+com,"$Carl Everett returns from 10 game suspension by yelling at Mgr"
+com,"Jimy Williams in office before game; neither man commented"
+play,1,0,damoj001,11,BFX,S8
+play,1,0,feblc001,10,BB,SB2
+play,1,0,feblc001,32,BBLBFX,3/G.2-3
+play,1,0,sweem002,32,BBFFBFX,S7/7D.3-H
+play,1,0,dye-j001,20,BBX,S9.1-2
+play,1,0,randj002,31,BBBCX,64(1)3/GDP
+play,1,1,nixot001,31,BBFBB,W
+play,1,1,daubb001,00,X,7/F7
+play,1,1,everc001,00,X,5/P5
+play,1,1,garcn001,10,BX,64(1)/FO
+play,2,0,quinm001,32,SSBBBB,W
+play,2,0,zaung001,12,BCFFX,43/G.1-2
+play,2,0,dunwt001,00,X,E3/G.2-3
+play,2,0,ordal001,00,X,64(1)/FO.3-H(UR)
+play,2,0,damoj001,00,B,CS2(26)
+play,2,1,oleat001,32,BBCCFBFFB,W
+play,2,1,varij001,32,BFBBSB,W.1-2
+play,2,1,sprae001,00,B,WP.2-3;1-2
+play,2,1,sprae001,10,BX,3/FL
+play,2,1,brogr001,31,BBFBB,W
+play,2,1,lansm001,31,BBFBX,S9.3-H;2-H;1-3
+play,2,1,nixot001,00,,NP
+sub,meadb001,"Brian Meadows",0,0,1
+play,2,1,nixot001,21,BFBX,7/SF.3-H
+play,2,1,daubb001,00,X,5/FL
+play,3,0,damoj001,01,CX,D9
+play,3,0,feblc001,01,LX,1/G.2-3
+play,3,0,sweem002,00,B,WP.3-H
+play,3,0,sweem002,31,BBSBX,5/P5
+play,3,0,dye-j001,12,CFBS,K
+play,3,1,everc001,31,BBBCX,S
+play,3,1,garcn001,00,X,4/P4
+play,3,1,oleat001,01,FX,S7.1-2
+play,3,1,varij001,22,CBBCX,8/F8.2-3
+play,3,1,sprae001,12,CFBX,9/F9
+play,4,0,randj002,32,BCFFBFBX,43/G
+play,4,0,quinm001,00,X,3/P3
+play,4,0,zaung001,30,BBBB,W
+play,4,0,dunwt001,21,BBFX,S8.1-2
+play,4,0,ordal001,10,BX,8/F8
+play,4,1,brogr001,01,CX,7/F7
+play,4,1,lansm001,11,BCX,9/F9
+play,4,1,nixot001,01,CX,43/G
+play,5,0,damoj001,10,BX,D9
+play,5,0,feblc001,12,LLBFX,3/G.2-3
+play,5,0,sweem002,20,BBX,3/G.3-H
+play,5,0,dye-j001,10,BX,S9
+play,5,0,randj002,00,X,E5/G.1-2
+play,5,0,quinm001,00,,NP
+sub,florb001,"Bryce Florie",1,0,1
+play,5,0,quinm001,11,FBX,S7.2XH(72);1-2
+play,5,1,daubb001,01,CX,9/F9
+play,5,1,everc001,32,BBBCFX,31/G
+play,5,1,garcn001,30,BBBX,5/FL
+play,6,0,zaung001,12,CBSC,K/C
+play,6,0,dunwt001,20,BBX,43/G
+play,6,0,ordal001,22,CFBBX,63/G
+play,6,1,oleat001,31,BBBCX,9/F9
+play,6,1,varij001,11,FBX,D8
+play,6,1,sprae001,00,X,9/F9S
+play,6,1,brogr001,31,BBSBB,W
+play,6,1,lansm001,00,X,8/F8D
+play,7,0,damoj001,00,,NP
+sub,cormr001,"Rheal Cormier",1,0,1
+play,7,0,damoj001,01,CX,43/G
+play,7,0,feblc001,32,BBSCBS,K
+play,7,0,sweem002,11,SBX,8/L8
+play,7,1,nixot001,12,FFBX,9/F9D
+play,7,1,daubb001,01,FX,8/F8
+play,7,1,everc001,00,X,D7/7D
+play,7,1,garcn001,12,CCBX,S9.2-H
+play,7,1,oleat001,00,X,8/F8
+play,8,0,dye-j001,00,X,S7
+play,8,0,randj002,00,X,S7.1-2
+play,8,0,quinm001,00,,NP
+sub,beckr001,"Rod Beck",1,0,1
+play,8,0,quinm001,31,BBBCX,D/89D.2-H;1-3
+play,8,0,zaung001,12,BCFX,S9/9S.3-H;2-3
+play,8,0,dunwt001,02,SSX,4/P4
+play,8,0,ordal001,00,,NP
+sub,mccad001,"David McCarty",0,9,11
+play,8,0,mccad001,22,CBBSX,64(1)/FO.3-H
+play,8,0,damoj001,00,,NP
+sub,sancr001,"Rey Sanchez",0,9,12
+play,8,0,damoj001,12,SCBB,WP.1-2
+play,8,0,damoj001,22,SCBBX,43/G
+play,8,1,varij001,00,,NP
+sub,sancr001,"Rey Sanchez",0,9,6
+play,8,1,varij001,00,X,D9
+play,8,1,sprae001,00,,NP
+sub,hatts001,"Scott Hatteberg",1,7,11
+play,8,1,hatts001,12,CBFX,7/F7
+play,8,1,brogr001,11,CBX,43/G.2-3
+play,8,1,lansm001,01,CX,9/F9
+play,9,0,feblc001,00,,NP
+sub,alexm001,"Manny Alexander",1,7,5
+play,9,0,feblc001,12,CFBX,63/G
+play,9,0,sweem002,21,CBBX,S7
+play,9,0,dye-j001,11,BCX,8/F8
+play,9,0,randj002,12,CBCS,K23
+play,9,1,nixot001,00,,NP
+sub,bottr001,"Ricky Bottalico",0,0,1
+play,9,1,nixot001,22,CCFBBC,K/C
+play,9,1,daubb001,22,BFBCX,7/F7
+play,9,1,everc001,12,BFFFX,HR/9
+play,9,1,garcn001,31,BBSBB,W
+play,9,1,oleat001,32,BCFFBBFB,W.1-2
+play,9,1,varij001,02,SFS,K23
+data,er,durbc001,3
+data,er,meadb001,1
+data,er,bottr001,1
+data,er,arror001,3
+data,er,florb001,0
+data,er,cormr001,2
+data,er,beckr001,1

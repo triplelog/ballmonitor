@@ -1,0 +1,155 @@
+version,2
+info,visteam,NYA
+info,hometeam,TBA
+info,site,STP01
+info,date,2000/09/28
+info,number,0
+info,starttime,7:15PM
+info,daynight,night
+info,usedh,true
+info,umphome,barrt901
+info,ump1b,randt901
+info,ump2b,monte901
+info,ump3b,laynj901
+info,pitches,pitches
+info,temp,72
+info,winddir,tocf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,177
+info,attendance,20961
+info,wp,rekab001
+info,lp,clemr001
+info,save,
+start,knobc001,"Chuck Knoblauch",0,1,4
+start,jeted001,"Derek Jeter",0,2,6
+start,oneip001,"Paul O'Neill",0,3,9
+start,willb002,"Bernie Williams",0,4,8
+start,justd001,"David Justice",0,5,7
+start,cansj001,"Jose Canseco",0,6,10
+start,martt002,"Tino Martinez",0,7,3
+start,posaj001,"Jorge Posada",0,8,2
+start,bross001,"Scott Brosius",0,9,5
+start,clemr001,"Roger Clemens",0,0,1
+start,willg001,"Gerald Williams",1,1,8
+start,winnr001,"Randy Winn",1,2,7
+start,cox-s001,"Steve Cox",1,3,3
+start,mcgrf001,"Fred McGriff",1,4,10
+start,timmo001,"Ozzie Timmons",1,5,9
+start,huffa001,"Aubrey Huff",1,6,5
+start,smitr003,"Bobby Smith",1,7,4
+start,difem001,"Mike DiFelice",1,8,2
+start,martf001,"Felix Martinez",1,9,6
+start,rekab001,"Bryan Rekar",1,0,1
+play,1,0,knobc001,00,X,63/G
+play,1,0,jeted001,20,BBX,S/89
+play,1,0,oneip001,20,BBX,6/FL
+play,1,0,willb002,10,BX,46(1)/FO
+play,1,1,willg001,22,FBBFX,5/L5
+play,1,1,winnr001,02,LCC,K/C
+play,1,1,cox-s001,02,CFFX,3/G
+play,2,0,justd001,11,BCX,8/F8
+play,2,0,cansj001,32,BCBCBB,W
+play,2,0,martt002,11,CBX,D8/8D/NDP.1XH(862);BXH(52)
+com,"$Tino Martinez safe at 3B on double, but ball got past"
+com,"third baseman and Martinez was out trying to score"
+play,2,1,mcgrf001,32,BCSBBB,W
+play,2,1,timmo001,00,X,HR/7.1-H
+play,2,1,huffa001,01,CX,3/G#
+play,2,1,smitr003,00,X,9/F9
+play,2,1,difem001,00,X,63/G
+play,3,0,posaj001,02,CCFX,3/G#
+play,3,0,bross001,12,BCSX,8/F8D
+play,3,0,knobc001,22,CCBBX,S8
+play,3,0,jeted001,21,BFBS,SB2
+play,3,0,jeted001,22,BFBSX,S8.2-H
+play,3,0,oneip001,00,B,CS2(26)
+play,3,1,martf001,32,BCCBBFX,D7
+play,3,1,willg001,22,BBFFS,K
+play,3,1,winnr001,20,BBX,S7.2-H
+play,3,1,cox-s001,12,SCFBX,16(1)3/GDP
+play,4,0,oneip001,02,SCFX,3/G#
+play,4,0,willb002,22,BBCFX,S9
+play,4,0,justd001,22,CBBFFFX,5/L5
+play,4,0,cansj001,02,CCFFX,8/F8S
+play,4,1,mcgrf001,21,BBSX,S9
+play,4,1,timmo001,02,SCS,K
+play,4,1,huffa001,31,SBBBX,HR/7.1-H
+play,4,1,smitr003,21,BBCX,HR/7
+play,4,1,difem001,01,CX,8/F8
+play,4,1,martf001,11,CBX,S8
+play,4,1,willg001,02,CFS,K
+play,5,0,martt002,01,CX,S7
+play,5,0,posaj001,32,BFBBCS,K
+play,5,0,bross001,22,BCSBFFX,9/F9
+play,5,0,knobc001,01,CX,4/P4
+play,5,1,winnr001,00,,NP
+sub,goodd001,"Dwight Gooden",0,0,1
+play,5,1,winnr001,00,X,43/G
+play,5,1,cox-s001,10,BX,D7
+play,5,1,mcgrf001,11,FBB,PB.2-3
+play,5,1,mcgrf001,31,FBBII,IW
+play,5,1,timmo001,12,BCSX,64(1)/FO.3-H(UR)
+play,5,1,huffa001,00,X,3/G#
+play,6,0,jeted001,01,CX,63/G
+play,6,0,oneip001,22,SFBBC,K/C
+play,6,0,willb002,31,BFBBX,3/G#
+play,6,1,smitr003,32,FFBBBX,E5/G
+play,6,1,difem001,00,X,S7.1-2
+play,6,1,martf001,02,FSS,K
+play,6,1,willg001,22,SBBFFX,7/F7
+play,6,1,winnr001,21,BFBX,S8.2-H(UR);1-2
+play,6,1,cox-s001,00,X,43/G
+play,7,0,justd001,11,BFX,13/G
+play,7,0,cansj001,00,X,S7
+play,7,0,martt002,32,BBBCCX,5/P5
+play,7,0,posaj001,01,FX,7/F7
+play,7,1,mcgrf001,00,,NP
+sub,choar001,"Randy Choate",0,0,1
+play,7,1,mcgrf001,11,BFX,6/P6
+play,7,1,timmo001,12,CBFX,S
+play,7,1,huffa001,32,BFBBFX,7/F7D
+play,7,1,smitr003,00,,NP
+sub,grimj001,"Jason Grimsley",0,0,1
+play,7,1,smitr003,31,FBBBB,W.1-2
+play,7,1,difem001,00,B,WP.2-3;1-2
+play,7,1,difem001,12,BFSX,HR/7.3-H;2-H
+play,7,1,martf001,00,,NP
+sub,dingc001,"Craig Dingman",0,0,1
+play,7,1,martf001,10,BX,S
+play,7,1,willg001,02,FFX,6/P6
+play,8,0,bross001,00,,NP
+sub,creed001,"Doug Creek",1,0,1
+play,8,0,bross001,00,X,8/F8
+play,8,0,knobc001,20,BBX,D/78
+play,8,0,jeted001,12,CCBC,K/C
+play,8,0,oneip001,32,BSSBBB,W
+play,8,0,willb002,21,BBFX,D7.2-H;1-3
+play,8,0,justd001,22,CSBBFC,K/C
+play,8,1,winnr001,00,,NP
+sub,turnc001,"Chris Turner",0,8,2
+play,8,1,winnr001,10,BX,S7
+play,8,1,cox-s001,12,BFFFC,K/C
+play,8,1,mcgrf001,00,,NP
+sub,rolld001,"Damian Rolls",1,4,11
+play,8,1,rolld001,12,SBCX,S7.1-2
+play,8,1,timmo001,22,CBBSC,K/C
+play,8,1,huffa001,01,CX,6/P6
+play,9,0,cansj001,00,,NP
+sub,endet001,"Trevor Enders",1,0,1
+play,9,0,cansj001,22,BBSCS,K
+play,9,0,martt002,00,,NP
+sub,hillg001,"Glenallen Hill",0,7,11
+play,9,0,hillg001,00,X,HR/9
+play,9,0,turnc001,22,SBFBC,K/C
+play,9,0,bross001,11,CBX,8/F8
+data,er,clemr001,6
+data,er,goodd001,0
+data,er,choar001,1
+data,er,grimj001,2
+data,er,dingc001,0
+data,er,rekab001,1
+data,er,creed001,1
+data,er,endet001,1

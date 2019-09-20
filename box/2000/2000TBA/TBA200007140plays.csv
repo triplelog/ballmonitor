@@ -1,0 +1,79 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,11,1,bergp001,,,,0,3,CBX,lopea002,0,0,bergp001 singles. ,bergp001,0,
+,01,1,bergp001,,,,1,5,CX,lopea002,1,0,,mordm001,0,F
+bergp001 to 2B. ,11,1,vidrj001,bergp001,,,2,8,BFX,lopea002,0,0,vidrj001 singles. ,vidrj001,0,
+bergp001 to 3B. ,21,1,,,bergp001,,3,12,BFBX,lopea002,2,0,Double Play. ,guerv001,0,
+,11,1,,,,,4,3,CBX,armat002,1,0,,willg001,1,F
+,12,1,,,,,5,8,FCFBX,armat002,1,0,cox-s001 grounds out. ,cox-s001,1,G
+,21,1,,vaugg001,,,6,12,BBSX,armat002,0,0,vaugg001 doubles. ,vaugg001,1,
+,00,1,,vaugg001,,,7,13,X,armat002,1,0,,mcgrf001,1,F
+,21,2,,,,,8,16,BFBX,lopea002,0,1,stevl001 homers. ,stevl001,0,
+,01,2,guerw001,,,,9,18,FX,lopea002,0,0,guerw001 singles. ,guerw001,0,
+,00,2,,guerw001,,widgc001,10,19,C,lopea002,0,0,guerw001 steals 2B. ,widgc001,0,
+,01,2,,guerw001,,,11,21,CX,lopea002,1,0,widgc001 grounds out. ,widgc001,0,G
+,30,2,cabro001,guerw001,,,12,25,BBBB,lopea002,0,0,cabro001 walks. ,cabro001,0,
+guerw001 to 3B. ,11,2,,,guerw001,,13,28,CBX,lopea002,2,0,Double Play. ,jonet004,0,
+,11,2,tramb001,,,,14,16,CBX,armat002,0,0,tramb001 singles. ,tramb001,1,
+tramb001 out. ,00,2,,castv001,,,15,17,X,armat002,1,0,castv001 doubles. ,castv001,1,
+castv001 to 3B. ,10,2,flahj001,,castv001,,16,19,BX,armat002,0,0,flahj001 singles. ,flahj001,1,
+flahj001 to 2B. ,30,2,cairm001,flahj001,castv001,,17,23,BBBB,armat002,0,0,cairm001 walks. ,cairm001,1,
+castv001 scores. flahj001 to 3B. cairm001 to 2B. ,00,2,,cairm001,flahj001,,18,24,X,armat002,1,1,martf001 hits sacrifice fly. ,martf001,1,
+flahj001 scores. cairm001 scores. ,21,2,willg001,,,,19,28,BBCX,armat002,0,2,willg001 singles. ,willg001,1,
+,01,2,willg001,,,,20,30,CX,armat002,1,0,,cox-s001,1,P
+,32,3,,,,,21,35,CBFBFBS,lopea002,1,0,bergp001 strikes out. ,bergp001,0,
+,01,3,,,,,22,37,CX,lopea002,1,0,,mordm001,0,L
+,22,3,,,,,23,43,BCCBFX,lopea002,1,0,vidrj001 grounds out. ,vidrj001,0,G
+,12,3,,vaugg001,,,25,34,CSBX,armat002,0,0,vaugg001 doubles. ,vaugg001,1,
+vaugg001 to 3B. ,20,3,,,vaugg001,mcgrf001,26,37,BBB,armat002,0,0,Wild Pitch. ,mcgrf001,1,
+,30,3,mcgrf001,,vaugg001,,27,41,BBBB,armat002,0,0,mcgrf001 walks. ,mcgrf001,1,
+vaugg001 scores. ,11,3,,,,,28,44,SBX,armat002,2,1,Double Play. ,tramb001,1,
+,11,3,,,,,29,47,BSX,armat002,1,0,,castv001,1,F
+,11,4,,,,,30,46,FBX,lopea002,1,0,guerv001 grounds out. ,guerv001,0,G
+,12,4,,stevl001,,,31,51,BFFFX,lopea002,0,0,stevl001 doubles. ,stevl001,0,
+,31,4,guerw001,stevl001,,,32,56,BFBBB,lopea002,0,0,guerw001 walks. ,guerw001,0,
+,11,4,guerw001,stevl001,,,33,59,CBX,lopea002,1,0,,widgc001,0,F
+,31,4,guerw001,stevl001,,,34,64,BBBCX,lopea002,1,0,,blumg001,0,F
+,00,4,,,,,35,48,X,armat002,1,0,,flahj001,1,
+,11,4,,cairm001,,,36,51,CBX,armat002,0,0,cairm001 doubles. ,cairm001,1,
+cairm001 to 3B. ,31,4,,,cairm001,,37,56,BBFBX,armat002,1,0,,martf001,1,F
+,12,4,,,cairm001,,38,60,CBFS,armat002,1,0,willg001 strikes out. ,willg001,1,
+,12,5,,,jonet004,,39,69,LBFFX,lopea002,0,0,jonet004 triples. ,jonet004,0,
+jonet004 scores. ,22,5,,,,,40,75,FFFBBX,lopea002,1,1,bergp001 grounds out. ,bergp001,0,G
+,12,5,,,,,41,83,SCFBFFFS,lopea002,1,0,mordm001 strikes out. ,mordm001,0,
+,00,5,,,,,42,84,X,lopea002,1,0,vidrj001 grounds out. ,vidrj001,0,G
+,32,5,,cox-s001,,,43,66,BSFBBX,armat002,0,0,cox-s001 doubles. ,cox-s001,1,
+,32,5,vaugg001,cox-s001,,,44,72,BSBBSB,armat002,0,0,vaugg001 walks. ,vaugg001,1,
+cox-s001 to 3B. ,21,5,,,cox-s001,,45,76,BBFX,armat002,2,0,Double Play. ,mcgrf001,1,
+cox-s001 scores. ,00,5,tramb001,,,,46,77,X,armat002,0,1,tramb001 reaches on error. ,tramb001,1,
+tramb001 out. ,10,5,castv001,,,,47,79,BX,armat002,1,0,castv001 reaches on fielder's choice. ,castv001,1,
+,11,6,,,,,48,87,BFX,lopea002,1,0,guerv001 grounds out. ,guerv001,0,G
+,22,6,stevl001,,,,49,92,BFBFX,lopea002,0,0,stevl001 singles. ,stevl001,0,
+,01,6,,,,,50,94,FX,lopea002,2,0,Double Play. ,guerw001,0,
+,10,6,,,,,51,81,BX,armat002,1,0,,flahj001,1,F
+,02,6,,,,,52,84,CFX,armat002,1,0,,cairm001,1,F
+,31,6,martf001,,,,53,89,FBBBX,armat002,0,0,martf001 singles. ,martf001,1,
+martf001 scores. ,12,6,,,,,54,93,FFBX,armat002,0,2,willg001 homers. ,willg001,1,
+,12,6,,,,,56,4,SBCC,forss001,1,0,cox-s001 strikes out. ,cox-s001,1,
+,10,7,,,,,57,96,BX,lopea002,1,0,,widgc001,0,F
+,21,7,blumg001,,,,58,100,CBBX,lopea002,0,0,blumg001 singles. ,blumg001,0,
+,12,7,,,,,59,104,BFFX,lopea002,2,0,Double Play. ,jonet004,0,
+,31,7,vaugg001,,,,61,9,BCBBX,forss001,0,0,vaugg001 singles. ,vaugg001,1,
+vaugg001 to 2B. ,00,7,,vaugg001,,,62,10,X,forss001,1,0,mcgrf001 grounds out. ,mcgrf001,1,G
+,32,7,tramb001,vaugg001,,,64,7,BCBFBFB,laray001,0,0,tramb001 walks. ,tramb001,1,
+vaugg001 to 3B. tramb001 out. ,01,7,castv001,,vaugg001,,65,9,SX,laray001,1,0,castv001 reaches on fielder's choice. ,castv001,1,
+castv001 to 2B. ,30,7,flahj001,castv001,vaugg001,,66,13,BBBB,laray001,0,0,flahj001 walks. ,flahj001,1,
+vaugg001 scores. castv001 to 3B. flahj001 to 2B. ,31,7,cairm001,flahj001,castv001,,67,18,BBBCB,laray001,0,1,cairm001 walks. ,cairm001,1,
+,12,7,cairm001,flahj001,castv001,,68,22,BCFS,laray001,1,0,martf001 strikes out. ,martf001,1,
+,00,8,bergp001,,,,71,1,X,whitr002,0,0,bergp001 singles. ,bergp001,0,
+bergp001 to 3B. ,00,8,,mordm001,bergp001,,72,2,X,whitr002,0,0,mordm001 doubles. ,mordm001,0,
+bergp001 scores. mordm001 to 3B. ,11,8,,,mordm001,,73,5,FBX,whitr002,1,1,vidrj001 grounds out. ,vidrj001,0,G
+mordm001 scores. ,11,8,,,,,74,8,BFX,whitr002,1,1,guerv001 grounds out. ,guerv001,0,G
+,00,8,,,,,76,1,X,guthm001,1,0,,stevl001,0,F
+,21,8,,,,,79,4,BBCX,klins002,1,0,willg001 grounds out. ,willg001,1,G
+,32,8,,,,,80,10,BSBSBC,klins002,1,0,cox-s001 strikes out. ,cox-s001,1,
+,10,8,,,,,81,12,BX,klins002,1,0,,winnr001,1,F
+guerw001 to 2B. ,00,9,,guerw001,,,82,2,X,guthm001,0,0,guerw001 singles. ,guerw001,0,
+,01,9,,guerw001,,,83,4,CX,guthm001,1,0,,websl001,0,F
+,22,9,,guerw001,,,84,9,CBBFS,guthm001,1,0,blumg001 strikes out. ,blumg001,0,
+guerw001 scores. ,12,9,,jonet004,,,85,13,BCCX,guthm001,0,1,jonet004 doubles. ,jonet004,0,
+,32,9,,jonet004,,,87,6,BCBFBX,hernr001,1,0,,bergp001,0,F

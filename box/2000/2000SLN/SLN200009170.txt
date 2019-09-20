@@ -1,0 +1,147 @@
+version,2
+info,visteam,CHN
+info,hometeam,SLN
+info,site,STL09
+info,date,2000/09/17
+info,number,0
+info,starttime,1:10PM
+info,daynight,day
+info,usedh,false
+info,umphome,drakr901
+info,ump1b,hirsj901
+info,ump2b,willc901
+info,ump3b,reynj901
+info,pitches,pitches
+info,temp,77
+info,winddir,fromcf
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,179
+info,attendance,46910
+info,wp,kiled001
+info,lp,worrt002
+info,save,morrm001
+start,ojeda001,"Augie Ojeda",0,1,4
+start,gutir001,"Ricky Gutierrez",0,2,6
+start,sosas001,"Sammy Sosa",0,3,9
+start,gracm001,"Mark Grace",0,4,3
+start,browr001,"Roosevelt Brown",0,5,7
+start,andrs001,"Shane Andrews",0,6,5
+start,reedj001,"Jeff Reed",0,7,2
+start,mattg002,"Gary Jr. Matthews",0,8,8
+start,woodk002,"Kerry Wood",0,9,1
+start,drewj001,"J.D. Drew",1,1,9
+start,paquc001,"Craig Paquette",1,2,4
+start,edmoj001,"Jim Edmonds",1,3,8
+start,clarw001,"Will Clark",1,4,3
+start,tatif001,"Fernando Tatis",1,5,5
+start,peree001,"Eduardo Perez",1,6,7
+start,rente001,"Edgar Renteria",1,7,6
+start,mathm001,"Mike Matheny",1,8,2
+start,kiled001,"Darryl Kile",1,9,1
+play,1,0,ojeda001,02,CCS,K
+play,1,0,gutir001,12,SFFFBX,7/F7
+play,1,0,sosas001,22,BCSBFC,K/C
+play,1,1,drewj001,22,CBBSS,K
+play,1,1,paquc001,00,X,63/G
+play,1,1,edmoj001,32,CCBBBB,W
+play,1,1,clarw001,00,X,9/F9
+play,2,0,gracm001,12,FSBX,43/G
+play,2,0,browr001,02,CFFS,K
+play,2,0,andrs001,22,CBBCFX,S7
+play,2,0,reedj001,31,BFBBB,W.1-2
+play,2,0,mattg002,10,BX,43/G
+play,2,1,tatif001,31,BCBBB,W
+play,2,1,peree001,22,FCBBS,K
+play,2,1,rente001,32,BBCBCX,S7/7S.1-3
+play,2,1,mathm001,32,BBSFBFFFX,9/SF.3-H;1-2
+play,2,1,kiled001,32,CBBFBB,W
+play,2,1,drewj001,12,BCCS,K
+play,3,0,woodk002,12,CFBX,8/F8S
+play,3,0,ojeda001,11,BFX,HR/9
+play,3,0,gutir001,11,CBX,13/G
+play,3,0,sosas001,11,CBX,9/F9
+play,3,1,paquc001,12,FSBFS,K
+play,3,1,edmoj001,21,SBBX,53/G
+play,3,1,clarw001,30,BBBB,W
+play,3,1,tatif001,02,CSFS,K
+play,4,0,gracm001,20,BBX,7/F7
+play,4,0,browr001,11,BCX,S9
+play,4,0,andrs001,31,BCBBC,CS2(24)
+play,4,0,andrs001,32,BCBBCX,S8
+play,4,0,reedj001,01,CX,8/F8
+play,4,1,peree001,12,BCFX,8/F8
+play,4,1,rente001,01,CX,3/P3
+play,4,1,mathm001,22,BBCCFX,8/F8
+play,5,0,mattg002,02,CCFS,K
+play,5,0,woodk002,00,X,3/L3
+play,5,0,ojeda001,22,CBBCFX,6/P6
+play,5,1,kiled001,32,CBBFBB,W
+play,5,1,drewj001,22,CBBFX,36(1)3/GDP
+play,5,1,paquc001,32,CBCBBS,K
+play,6,0,gutir001,11,CBX,13/G
+play,6,0,sosas001,12,BFFS,K
+play,6,0,gracm001,30,BBBB,W
+play,6,0,browr001,01,FX,7/F7
+play,6,1,edmoj001,32,BBCBSFFX,4/P4
+play,6,1,clarw001,22,CFFBFBS,K
+play,6,1,tatif001,31,BFBBB,W
+play,6,1,peree001,20,BBX,S8.1-2
+play,6,1,rente001,02,SFFS,K
+play,7,0,andrs001,00,X,HR/7
+play,7,0,reedj001,32,BBFCBFX,7/F7
+play,7,0,mattg002,12,FSBS,K
+play,7,0,woodk002,00,,NP
+sub,gloar001,"Ross Gload",0,9,11
+play,7,0,gloar001,11,BCX,7/F7
+play,7,1,mathm001,00,,NP
+sub,worrt002,"Tim Worrell",0,9,1
+play,7,1,mathm001,20,BBX,6/P6
+play,7,1,kiled001,02,CCS,K
+play,7,1,drewj001,32,BBFFBX,6/P6
+play,8,0,ojeda001,00,X,6/FL
+play,8,0,gutir001,12,CCBX,43/G
+play,8,0,sosas001,10,BX,S7
+play,8,0,gracm001,02,FFB,CS2(26)
+play,8,1,paquc001,00,,NP
+sub,mcgwm001,"Mark McGwire",1,2,11
+play,8,1,mcgwm001,12,CBFC,K/C
+play,8,1,edmoj001,10,BX,S9
+play,8,1,clarw001,10,BX,D7.1-3
+play,8,1,tatif001,30,IIII,IW
+play,8,1,peree001,31,BFBBX,52(3)/FO.2-3;1-2
+play,8,1,rente001,22,BBCCX,E9/F9LM.3-H(NR)(UR);2-H(NR)(UR);1-H(NR)(UR);B-3
+com,"$Sosa dropped ball after long run into corner"
+play,8,1,mathm001,30,IIII,IW
+play,8,1,kiled001,00,,NP
+sub,howat001,"Thomas Howard",1,9,11
+play,8,1,howat001,00,,NP
+sub,farnk001,"Kyle Farnsworth",0,9,1
+play,8,1,howat001,11,SBX,63/G
+play,9,0,gracm001,00,,NP
+sub,satul001,"Luis Saturria",1,6,9
+play,9,0,gracm001,00,,NP
+sub,drewj001,"J.D. Drew",1,1,7
+play,9,0,gracm001,00,,NP
+sub,polap001,"Placido Polanco",1,2,4
+play,9,0,gracm001,00,,NP
+sub,chrij002,"Jason Christiansen",1,9,1
+play,9,0,gracm001,30,BBBB,W
+play,9,0,browr001,00,,NP
+sub,zulej001,"Julio Zuleta",0,5,11
+play,9,0,zulej001,00,,NP
+sub,morrm001,"Matt Morris",1,9,1
+play,9,0,zulej001,22,FBFBFFC,K/C
+play,9,0,andrs001,32,BFCBBFC,K/C
+play,9,0,reedj001,00,X,S7.1-2
+play,9,0,mattg002,00,,NP
+sub,greew001,"Willie Greene",0,8,11
+play,9,0,greew001,22,BCFBS,K
+data,er,woodk002,1
+data,er,worrt002,0
+data,er,farnk001,0
+data,er,kiled001,2
+data,er,chrij002,0
+data,er,morrm001,0

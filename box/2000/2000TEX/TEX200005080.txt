@@ -1,0 +1,132 @@
+version,2
+info,visteam,SEA
+info,hometeam,TEX
+info,site,ARL02
+info,date,2000/05/08
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,coope901
+info,ump1b,diazl901
+info,ump2b,reilm901
+info,ump3b,kellj901
+info,pitches,pitches
+info,temp,87
+info,winddir,fromrf
+info,windspeed,23
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,157
+info,attendance,29930
+info,wp,hellr001
+info,lp,tomkb001
+info,save,
+start,mclem001,"Mark McLemore",0,1,4
+start,javis001,"Stan Javier",0,2,7
+start,rodra001,"Alex Rodriguez",0,3,6
+start,olerj001,"John Olerud",0,4,3
+start,marte001,"Edgar Martinez",0,5,10
+start,buhnj001,"Jay Buhner",0,6,9
+start,lampt001,"Tom Lampkin",0,7,2
+start,belld002,"David Bell",0,8,5
+start,camem001,"Mike Cameron",0,9,8
+start,tomkb001,"Brett Tomko",0,0,1
+start,clayr001,"Royce Clayton",1,1,6
+start,alicl001,"Luis Alicea",1,2,4
+start,rodri001,"Ivan Rodriguez",1,3,2
+start,palmr001,"Rafael Palmeiro",1,4,10
+start,segud001,"David Segui",1,5,3
+start,mater001,"Ruben Mateo",1,6,8
+start,curtc001,"Chad Curtis",1,7,7
+start,lambm001,"Mike Lamb",1,8,5
+start,mcdoj002,"Jason McDonald",1,9,9
+start,hellr001,"Rick Helling",1,0,1
+play,1,0,mclem001,00,X,7/F7
+play,1,0,javis001,12,CBCX,43/G
+play,1,0,rodra001,22,CBCBS,K
+play,1,1,clayr001,00,X,T9
+play,1,1,alicl001,00,X,S9.3-H
+play,1,1,rodri001,11,BFX,7/F7
+play,1,1,palmr001,32,CBBFBB,W.1-2
+play,1,1,segud001,32,BSBCFFFFBB,W.2-3;1-2
+play,1,1,mater001,12,BFFFS,K
+play,1,1,curtc001,11,BSX,S7/7S.3-H;2-H;1-2
+play,1,1,lambm001,21,CBBX,4/P4
+play,2,0,olerj001,01,CX,7/F7
+play,2,0,marte001,31,CBBBX,S7
+play,2,0,buhnj001,20,BBX,9/F9
+play,2,0,lampt001,11,SBX,13/G
+play,2,1,mcdoj002,11,CBX,HR/9
+play,2,1,clayr001,20,BBX,E6/TH1.B-2
+play,2,1,alicl001,00,X,53/SH.2-3
+play,2,1,rodri001,00,X,63/DP.3XH(32)
+play,3,0,belld002,21,CBBX,9/FL
+play,3,0,camem001,11,CBX,53/G
+play,3,0,mclem001,22,CBBFX,7/F7
+play,3,1,palmr001,21,BFBX,9/F9
+play,3,1,segud001,22,BFCBS,K
+play,3,1,mater001,21,BCBX,D7/7S
+play,3,1,curtc001,00,X,8/F8S
+play,4,0,javis001,12,BCCC,K/C
+play,4,0,rodra001,11,BFX,63/G
+play,4,0,olerj001,10,BX,7/F7
+play,4,1,lambm001,10,BX,D/89D
+play,4,1,mcdoj002,21,FBBX,S9.2-H
+play,4,1,clayr001,10,BX,8/F8S
+play,4,1,alicl001,32,FBFBBFB,W.1-2
+play,4,1,rodri001,02,FFX,54(1)3/GDP
+play,5,0,marte001,32,CCBBBB,W
+play,5,0,buhnj001,12,CFBX,8/F8S
+play,5,0,lampt001,00,X,S9.1-2
+play,5,0,belld002,10,BX,75(2)/FO.1-2
+play,5,0,camem001,12,CBFS,K
+play,5,1,palmr001,12,CBSX,5/P5
+play,5,1,segud001,12,BFFFX,43/G
+play,5,1,mater001,20,BBX,S8/8S
+play,5,1,curtc001,02,CSS,K
+play,6,0,mclem001,00,X,43/G
+play,6,0,javis001,20,BBX,9/F9
+play,6,0,rodra001,32,CSBBBX,S8/8S
+play,6,0,olerj001,00,X,7/F7
+play,6,1,lambm001,01,CX,D9
+play,6,1,mcdoj002,32,CBFBBB,W
+play,6,1,clayr001,21,BFBX,54/SH.2-3;1-2
+play,6,1,alicl001,10,BX,9/SF.3-H;2-3
+play,6,1,rodri001,20,BBX,4/FL
+play,7,0,marte001,00,,NP
+sub,zimmj001,"Jeff Zimmerman",1,0,1
+play,7,0,marte001,02,CFFC,K/C
+play,7,0,buhnj001,02,CCFS,K
+play,7,0,lampt001,21,BBCX,D9
+play,7,0,belld002,21,BBCX,E5/G.2-H(UR)
+play,7,0,camem001,10,BX,S7/7S.1-2
+play,7,0,mclem001,21,BCBX,4/P4
+play,7,1,palmr001,00,,NP
+sub,panij001,"Jose Paniagua",0,0,1
+play,7,1,palmr001,00,X,31/G
+play,7,1,segud001,32,BBCFBX,S8
+play,7,1,mater001,21,CBBX,D7/7D.1-3
+play,7,1,curtc001,10,BX,8/SF.3-H
+play,7,1,lambm001,31,BBBCX,S9/9S.2-H
+play,7,1,mcdoj002,21,BBCX,9/F9
+play,8,0,javis001,01,CX,5/L5
+play,8,0,rodra001,22,BFCBFX,53/G
+play,8,0,olerj001,21,BCBX,9/F9
+play,8,1,clayr001,00,X,HR/9
+play,8,1,alicl001,20,BBX,S8
+play,8,1,rodri001,12,BFFH,HP.1-2
+play,8,1,palmr001,00,B,WP.2-3;1X2(26)#
+play,8,1,palmr001,10,BX,31/G.3-H
+play,8,1,segud001,22,BBFFS,K
+play,9,0,marte001,00,,NP
+sub,crabt001,"Tim Crabtree",1,0,1
+play,9,0,marte001,22,CBBCFFX,63/G
+play,9,0,buhnj001,20,BBX,53/G
+play,9,0,lampt001,10,BX,63/G
+data,er,tomkb001,6
+data,er,panij001,4
+data,er,hellr001,0
+data,er,zimmj001,0
+data,er,crabt001,0

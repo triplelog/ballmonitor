@@ -1,0 +1,71 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,22,1,,,,,0,5,CBBFX,berej002,1,0,castl001 grounds out. ,castl001,0,G
+,12,1,,,,,1,11,BCCFFX,berej002,1,0,,browb003,0,F
+,02,1,,,,,2,14,SCS,berej002,1,0,floyc001 strikes out. ,floyc001,0,
+,02,1,,,,,3,3,CCX,pennb002,1,0,grism001 grounds out. ,grism001,1,G
+,10,1,,,,,4,5,BX,pennb002,1,0,bellr002 grounds out. ,bellr002,1,G
+,00,1,,,,,5,6,X,pennb002,1,0,burnj001 grounds out. ,burnj001,1,G
+,32,2,wilsp002,,,,6,21,BBFSBFB,berej002,0,0,wilsp002 walks. ,wilsp002,0,
+,10,2,,,,lowem001,7,23,BB,berej002,1,0,wilsp002 caught stealing. ,lowem001,0,
+,32,2,,,,,8,29,BBFCBC,berej002,1,0,lowem001 strikes out. ,lowem001,0,
+,32,2,lee-d002,,,,9,35,CBSBBX,berej002,0,0,lee-d002 singles. ,lee-d002,0,
+lee-d002 to 3B. ,01,2,gonza002,,lee-d002,,10,37,FX,berej002,0,0,gonza002 singles. ,gonza002,0,
+gonza002 to 2B. ,30,2,bakop001,gonza002,lee-d002,,11,41,BBBB,berej002,0,0,bakop001 walks. ,bakop001,0,
+,02,2,bakop001,gonza002,lee-d002,,12,47,SCFFFS,berej002,1,0,pennb002 strikes out. ,pennb002,0,
+,10,2,jenkg001,,,,13,8,BX,pennb002,0,0,jenkg001 singles. ,jenkg001,1,
+jenkg001 to 2B. ,01,2,,jenkg001,,hernj001,14,10,CB,pennb002,0,0,Wild Pitch. ,hernj001,1,
+,22,2,,jenkg001,,,15,16,CBSBFS,pennb002,1,0,hernj001 strikes out. ,hernj001,1,
+,32,2,houst001,jenkg001,,,16,22,CBBFBB,pennb002,0,0,houst001 walks. ,houst001,1,
+jenkg001 to 3B. houst001 to 2B. ,10,2,,houst001,jenkg001,,17,24,BX,pennb002,1,0,barkk001 grounds out. ,barkk001,1,G
+jenkg001 scores. houst001 scores. ,10,2,,lopel002,,,18,26,BX,pennb002,0,2,lopel002 doubles. ,lopel002,1,
+lopel002 scores. berej002 to 2B. ,22,2,,berej002,,,19,31,BCFBX,pennb002,0,1,berej002 singles. ,berej002,1,
+,01,2,,berej002,,,20,33,CX,pennb002,1,0,,grism001,1,P
+,32,3,,,,,21,53,BFFBBX,berej002,1,0,castl001 grounds out. ,castl001,0,G
+,31,3,browb003,,,,22,58,SBBBX,berej002,0,0,browb003 singles. ,browb003,0,
+,12,3,browb003,,,,23,62,BSCS,berej002,1,0,floyc001 strikes out. ,floyc001,0,
+,02,3,browb003,,,,24,65,CCX,berej002,1,0,,wilsp002,0,L
+,21,3,,,,,25,37,BCBX,pennb002,1,0,bellr002 grounds out. ,bellr002,1,G
+,30,3,,,,,26,41,BBBX,pennb002,1,0,burnj001 grounds out. ,burnj001,1,G
+,22,3,,,,,27,46,BBFFS,pennb002,1,0,jenkg001 strikes out. ,jenkg001,1,
+,11,4,,,,,28,68,CBX,berej002,1,0,lowem001 grounds out. ,lowem001,0,G
+,12,4,,,,,29,72,CBSS,berej002,1,0,lee-d002 strikes out. ,lee-d002,0,
+,21,4,,,,,30,76,FBBX,berej002,1,0,gonza002 grounds out. ,gonza002,0,G
+,21,4,,,,,31,50,BCBX,pennb002,1,0,hernj001 grounds out. ,hernj001,1,G
+,00,4,,,,,32,51,X,pennb002,1,0,,houst001,1,F
+,21,4,,,,,33,55,BFBX,pennb002,1,0,barkk001 grounds out. ,barkk001,1,G
+,21,5,,,,,34,80,FBBX,berej002,1,0,,bakop001,0,L
+,12,5,,,,,35,84,BFFS,berej002,1,0,pennb002 strikes out. ,pennb002,0,
+,32,5,castl001,,,,36,92,BBCCBFFX,berej002,0,0,castl001 reaches on error. ,castl001,0,G
+,22,5,castl001,,,,37,97,BCBFS,berej002,1,0,browb003 strikes out. ,browb003,0,
+,12,5,,,,,38,59,FBCC,pennb002,1,0,lopel002 strikes out. ,lopel002,1,
+,12,5,,,,,39,63,BCCS,pennb002,1,0,berej002 strikes out. ,berej002,1,
+,01,5,,,,,40,65,SX,pennb002,1,0,grism001 grounds out. ,grism001,1,G
+,00,6,,,,,41,98,X,berej002,1,0,,floyc001,0,P
+,12,6,,,,,42,102,CFBS,berej002,1,0,wilsp002 strikes out. ,wilsp002,0,
+,00,6,,,,,43,103,X,berej002,1,0,lowem001 grounds out. ,lowem001,0,G
+,00,6,,,,,44,66,X,pennb002,0,1,bellr002 homers. ,bellr002,1,
+,22,6,,,,,45,71,BCBCS,pennb002,1,0,burnj001 strikes out. ,burnj001,1,
+,32,6,,,,,46,78,CBBBCFX,pennb002,1,0,jenkg001 grounds out. ,jenkg001,1,G
+,32,6,hernj001,,,,47,84,BBBCFX,pennb002,0,0,hernj001 singles. ,hernj001,1,
+,30,6,hernj001,,,,48,88,BBBX,pennb002,1,0,,houst001,1,F
+,22,7,,,,,49,108,CBBSS,berej002,1,0,lee-d002 strikes out. ,lee-d002,0,
+,11,7,,,,,50,111,BSX,berej002,1,0,,gonza002,0,P
+,32,7,bakop001,,,,51,117,CBBSBB,berej002,0,0,bakop001 walks. ,bakop001,0,
+,22,7,bakop001,,,,53,122,SBCBX,berej002,1,0,kotsm001 grounds out. ,kotsm001,0,G
+,20,7,barkk001,,,,55,3,BBX,loopb001,0,0,barkk001 singles. ,barkk001,1,
+barkk001 to 2B. ,00,7,,barkk001,,lopel002,56,4,B,loopb001,0,0,Wild Pitch. ,lopel002,1,
+,10,7,,barkk001,,,57,6,BX,loopb001,1,0,,lopel002,1,L
+,00,7,,barkk001,,,59,7,X,loopb001,1,0,moutl001 grounds out. ,moutl001,1,G
+,21,7,,barkk001,,,60,11,CBBX,loopb001,1,0,grism001 grounds out. ,grism001,1,G
+,32,8,castl001,,,,62,7,BCCFBBB,weatd001,0,0,castl001 walks. ,castl001,0,
+,00,8,castl001,,,,63,8,X,weatd001,1,0,,browb003,0,L
+,31,8,castl001,,,,64,13,BBBCX,weatd001,1,0,,floyc001,0,F
+,22,8,castl001,,,,65,19,BCFBFX,weatd001,1,0,,wilsp002,0,F
+,02,8,bellr002,,,,66,14,FFH,loopb001,0,0,bellr002 hit by pitch. ,bellr002,1,
+,10,8,lorem001,,,,69,2,BX,darev001,1,0,,burnj001,1,F
+,00,8,,,,jenkg001,70,3,1,darev001,1,0,lorem001 picked off. ,jenkg001,1,
+,22,8,,,,,71,9,1BFSBX,darev001,1,0,,jenkg001,1,F
+,01,9,,,,,75,2,SX,wickb001,1,0,lowem001 grounds out. ,lowem001,0,G
+,10,9,,lee-d002,,,76,4,BX,wickb001,0,0,lee-d002 doubles. ,lee-d002,0,
+lee-d002 to 3B. ,12,9,,,lee-d002,,77,9,CFBFX,wickb001,1,0,gonza002 grounds out. ,gonza002,0,G
+,22,9,,,lee-d002,,78,14,BFSBS,wickb001,1,0,bakop001 strikes out. ,bakop001,0,

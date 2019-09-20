@@ -1,0 +1,88 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,12,1,,,,,0,4,BCCX,bottk001,1,0,jonej003 grounds out. ,jonej003,0,G
+,02,1,,,,,1,7,CLC,bottk001,1,0,guzmc001 strikes out. ,guzmc001,0,
+,30,1,lawtm002,,,,2,11,BBBB,bottk001,0,0,lawtm002 walks. ,lawtm002,0,
+,00,1,,,,coomr001,3,12,1,bottk001,1,0,lawtm002 picked off. ,coomr001,0,
+,32,1,,,,,4,8,CBFBFFBS,milte001,1,0,erstd001 strikes out. ,erstd001,1,
+,10,1,,gil-b001,,,5,10,BX,milte001,0,0,gil-b001 doubles. ,gil-b001,1,
+,31,1,vaugm001,gil-b001,,,6,15,SBBBB,milte001,0,0,vaugm001 walks. ,vaugm001,1,
+,32,1,vaugm001,,,,7,23,FFBBBFFS,milte001,2,0,salmt001 strikes out. gil-b001 caught stealing. ,salmt001,1,
+,12,2,,,,,8,16,CBCC,bottk001,1,0,coomr001 strikes out. ,coomr001,0,
+,31,2,ortid001,,,,9,21,BBBCB,bottk001,0,0,ortid001 walks. ,ortid001,0,
+ortid001 to 2B. ,00,2,koskc001,ortid001,,,10,22,X,bottk001,0,0,koskc001 singles. ,koskc001,0,
+ortid001 scores. koskc001 to 3B. ,01,2,,hockd001,koskc001,,11,24,CX,bottk001,0,1,hockd001 doubles. ,hockd001,0,
+koskc001 scores. hockd001 scores. ,21,2,,jensm001,,,12,28,BBFX,bottk001,0,2,jensm001 doubles. ,jensm001,0,
+jensm001 to 3B. ,02,2,canij001,,jensm001,,13,31,LCX,bottk001,0,0,canij001 singles. ,canij001,0,
+,22,2,canij001,,jensm001,,14,36,SBFBS,bottk001,1,0,jonej003 strikes out. ,jonej003,0,
+,01,2,canij001,,jensm001,,15,38,FX,bottk001,1,0,,guzmc001,0,
+,10,2,,,,,16,25,BX,milte001,0,1,andeg001 homers. ,andeg001,1,
+,32,2,,,,,17,33,FBFBFFBX,milte001,0,1,glaut001 homers. ,glaut001,1,
+,00,2,,,,,18,34,X,milte001,0,1,spies001 homers. ,spies001,1,
+,00,2,,,,,19,35,X,milte001,1,0,,kenna001,1,P
+,00,2,,,,,20,36,X,milte001,1,0,walbm001 grounds out. ,walbm001,1,G
+,12,2,,,,,21,41,BFFFS,milte001,1,0,erstd001 strikes out. ,erstd001,1,
+,22,3,,,,,22,44,BFFBFX,bottk001,1,0,,lawtm002,0,L
+,00,3,,,,,23,45,X,bottk001,1,0,,coomr001,0,
+,32,3,ortid001,,,,24,51,BBFFBB,bottk001,0,0,ortid001 walks. ,ortid001,0,
+ortid001 out. ,00,3,koskc001,,,,25,52,X,bottk001,1,0,koskc001 reaches on fielder's choice. ,koskc001,0,
+,12,3,,gil-b001,,,26,45,CCBX,milte001,0,0,gil-b001 doubles. ,gil-b001,1,
+,10,3,,gil-b001,,,27,47,BX,milte001,1,0,,vaugm001,1,L
+,01,3,,gil-b001,,,28,49,CX,milte001,1,0,salmt001 grounds out. ,salmt001,1,G
+gil-b001 scores. andeg001 to 2B. ,01,3,,andeg001,,,29,51,CX,milte001,0,1,andeg001 singles. ,andeg001,1,
+andeg001 out. glaut001 to 1B. ,10,3,glaut001,,,,30,53,BX,milte001,1,0,glaut001 hits into a fielder's choice. ,glaut001,1,
+,02,4,,,,,31,56,LCFX,bottk001,1,0,hockd001 grounds out. ,hockd001,0,G
+,32,4,jensm001,,,,32,63,CFFBBBB,bottk001,0,0,jensm001 walks. ,jensm001,0,
+,22,4,jensm001,,,,33,68,BBFSX,bottk001,1,0,,canij001,0,F
+jensm001 scores. ,00,4,,,,,34,69,X,bottk001,0,2,jonej003 homers. ,jonej003,0,
+,22,4,guzmc001,,,,35,76,FCFFBBX,bottk001,0,0,guzmc001 singles. ,guzmc001,0,
+,11,4,guzmc001,,,,36,79,FBX,bottk001,1,0,lawtm002 grounds out. ,lawtm002,0,G
+,02,4,,,,,37,56,FFC,milte001,1,0,spies001 strikes out. ,spies001,1,
+,00,4,,,,,38,57,X,milte001,1,0,,kenna001,1,F
+,10,4,,,,,39,59,BX,milte001,1,0,,walbm001,1,F
+,01,5,,,,,40,81,CX,bottk001,1,0,,coomr001,0,L
+,32,5,,,,,41,88,CFBBBFS,bottk001,1,0,ortid001 strikes out. ,ortid001,0,
+,20,5,,,,,42,91,BBX,bottk001,0,1,koskc001 homers. ,koskc001,0,
+,00,5,,,,,43,92,X,bottk001,1,0,,hockd001,0,F
+,10,5,erstd001,,,,44,61,BX,milte001,0,0,erstd001 singles. ,erstd001,1,
+,12,5,erstd001,,,,45,65,BSCX,milte001,1,0,,gil-b001,1,L
+,00,5,erstd001,,,,46,66,X,milte001,1,0,,vaugm001,1,L
+,32,5,erstd001,,,,47,73,CBBBFFC,milte001,1,0,salmt001 strikes out. ,salmt001,1,
+,32,6,jensm001,,,,49,8,FBCFBBFB,holtm001,0,0,jensm001 walks. ,jensm001,0,
+jensm001 to 2B. ,11,6,canij001,jensm001,,,50,11,BCX,holtm001,0,0,canij001 singles. ,canij001,0,
+jensm001 to 3B. canij001 to 2B. ,00,6,,canij001,jensm001,,51,12,X,holtm001,1,0,Sacrifice bunt by jonej003.,jonej003,0,
+,12,6,,canij001,jensm001,,52,17,CBSFX,holtm001,1,0,guzmc001 grounds out. ,guzmc001,0,G
+,32,6,,canij001,jensm001,,53,24,BCCBFBS,holtm001,1,0,lawtm002 strikes out. ,lawtm002,0,
+,31,6,,,,,54,78,BBBCX,milte001,1,0,,andeg001,1,F
+,01,6,glaut001,,,,55,80,CX,milte001,0,0,glaut001 singles. ,glaut001,1,
+,02,6,glaut001,,,,56,85,CCFFS,milte001,1,0,spies001 strikes out. ,spies001,1,
+,00,6,glaut001,,,,57,86,X,milte001,1,0,,kenna001,1,F
+,00,7,,,,,58,25,X,holtm001,1,0,coomr001 grounds out. ,coomr001,0,G
+,32,7,,ortid001,,,59,31,CBCBBX,holtm001,0,0,ortid001 doubles. ,ortid001,0,
+,12,7,,ortid001,,,60,35,BFCS,holtm001,1,0,koskc001 strikes out. ,koskc001,0,
+,30,7,hockd001,ortid001,,,61,39,IIII,holtm001,0,0,hockd001 intentionally walks. ,hockd001,0,
+ortid001 scores. hockd001 scores. ,10,7,,jensm001,,,62,41,BX,holtm001,0,2,jensm001 doubles. ,jensm001,0,
+,11,7,,jensm001,,,64,3,BSX,fyhrm001,1,0,canij001 grounds out. ,canij001,0,G
+,01,7,,,,,65,88,CX,milte001,1,0,,walbm001,1,F
+,02,7,,,,,66,91,CFX,milte001,1,0,erstd001 grounds out. ,erstd001,1,G
+,31,7,gil-b001,,,,67,96,BSBBX,milte001,0,0,gil-b001 singles. ,gil-b001,1,
+,21,7,gil-b001,,,,68,100,SBBX,milte001,1,0,vaugm001 grounds out. ,vaugm001,1,G
+,00,8,jonej003,,,,69,4,X,fyhrm001,0,0,jonej003 singles. ,jonej003,0,
+jonej003 out. ,01,8,guzmc001,,,,70,6,FX,fyhrm001,1,0,guzmc001 reaches on fielder's choice. ,guzmc001,0,
+,10,8,,,,,71,8,BX,fyhrm001,2,0,Double Play. ,lawtm002,0,
+,12,8,,,,,73,5,BFFFS,hawkl001,1,0,salmt001 strikes out. ,salmt001,1,
+,11,8,,,,,74,8,BSX,hawkl001,1,0,andeg001 grounds out. ,andeg001,1,G
+,10,8,,,,,76,10,BX,hawkl001,1,0,cleme001 grounds out. ,cleme001,1,G
+,12,9,,coomr001,,,78,5,CBFFX,hases001,0,0,coomr001 doubles. ,coomr001,0,
+coomr001 to 3B. ,01,9,,,coomr001,,79,7,SX,hases001,1,0,ortid001 grounds out. ,ortid001,0,G
+coomr001 scores. ,20,9,koskc001,,,,80,10,BBX,hases001,0,1,koskc001 singles. ,koskc001,0,
+koskc001 to 3B. ,12,9,hockd001,,koskc001,,81,14,CCBX,hases001,0,0,hockd001 singles. ,hockd001,0,
+koskc001 scores. hockd001 out. ,22,9,jensm001,,,,82,19,SBCBX,hases001,1,1,jensm001 reaches on fielder's choice. ,jensm001,0,
+jensm001 to 2B. ,00,9,canij001,jensm001,,,83,20,X,hases001,0,0,canij001 singles. ,canij001,0,
+jensm001 scores. canij001 to 3B. ,00,9,jonej003,,canij001,,84,21,X,hases001,0,1,jonej003 singles. ,jonej003,0,
+,01,9,jonej003,,canij001,,86,2,FX,turnd001,1,0,,guzmc001,0,F
+,01,9,spies001,,,,87,12,CX,hawkl001,0,0,spies001 singles. ,spies001,1,
+,11,9,spies001,,,,88,15,CBX,hawkl001,1,0,,kenna001,1,L
+spies001 to 3B. ,32,9,,walbm001,spies001,,89,23,BBBCFFFX,hawkl001,0,0,walbm001 doubles. ,walbm001,1,
+spies001 scores. walbm001 to 3B. ,31,9,,,walbm001,,90,28,BBFBX,hawkl001,1,1,erstd001 grounds out. ,erstd001,1,G
+,32,9,gil-b001,,walbm001,,91,34,BBFBFB,hawkl001,0,0,gil-b001 walks. ,gil-b001,1,
+,00,9,gil-b001,,walbm001,,93,1,X,guare001,1,0,,vaugm001,1,F

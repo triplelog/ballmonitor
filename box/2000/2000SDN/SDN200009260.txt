@@ -1,0 +1,152 @@
+version,2
+info,visteam,SLN
+info,hometeam,SDN
+info,site,SAN01
+info,date,2000/09/26
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,lampi901
+info,ump1b,rungb901
+info,ump2b,shulj901
+info,ump3b,roe-r901
+info,pitches,pitches
+info,temp,72
+info,winddir,tocf
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,165
+info,attendance,29722
+info,wp,benea001
+info,lp,eatoa001
+info,save,
+start,vinaf001,"Fernando Vina",0,1,4
+start,drewj001,"J.D. Drew",0,2,9
+start,edmoj001,"Jim Edmonds",0,3,8
+start,clarw001,"Will Clark",0,4,3
+start,tatif001,"Fernando Tatis",0,5,5
+start,lankr001,"Ray Lankford",0,6,7
+start,rente001,"Edgar Renteria",0,7,6
+start,hernc001,"Carlos A. Hernandez",0,8,2
+start,benea001,"Andy Benes",0,9,1
+start,jackd003,"Damian Jackson",1,1,4
+start,relad001,"Desi Relaford",1,2,6
+start,klesr001,"Ryan Klesko",1,3,3
+start,nevip001,"Phil Nevin",1,4,5
+start,mabrj001,"John Mabry",1,5,9
+start,darrm001,"Mike Darr",1,6,8
+start,owene001,"Eric Owens",1,7,7
+start,davib003,"Ben Davis",1,8,2
+start,eatoa001,"Adam Eaton",1,9,1
+play,1,0,vinaf001,22,CFBBFX,S9
+play,1,0,drewj001,10,BX,S7.1-2
+play,1,0,edmoj001,21,CBBX,6(1)3/GDP.2-3
+play,1,0,clarw001,22,BSBCS,K
+play,1,1,jackd003,32,BBSCBFX,3/FL
+play,1,1,relad001,32,CBCBBS,K
+play,1,1,klesr001,02,FFX,9/F9D
+play,2,0,tatif001,21,BBCX,S8
+play,2,0,lankr001,32,CBSBBB,W.1-2
+play,2,0,rente001,22,CSBBX,D7.2-H;1-3
+play,2,0,hernc001,22,CBBSFFX,53/G.3-H
+play,2,0,benea001,32,BSBSBX,43/G.2-3
+play,2,0,vinaf001,12,FSBX,5/FL
+play,2,1,nevip001,11,CBX,53/G
+play,2,1,mabrj001,32,FBFBFBX,43/G
+play,2,1,darrm001,01,CX,41/G
+play,3,0,drewj001,31,BBCBB,W
+play,3,0,edmoj001,32,CBBBCX,HR/7.1-H
+play,3,0,clarw001,00,X,7/F7
+play,3,0,tatif001,22,BBFSFX,D9/9D
+play,3,0,lankr001,21,BBSX,7/F7
+play,3,0,rente001,10,BX,53/G
+play,3,1,owene001,22,BFCFFFBX,63/G
+play,3,1,davib003,00,X,S/89
+play,3,1,eatoa001,22,BSFBX,64(1)/FO
+play,3,1,jackd003,31,BBCBB,W.1-2
+play,3,1,relad001,21,CBBX,7/F7
+play,4,0,hernc001,10,BX,S8
+play,4,0,benea001,10,BX,36(1)4//BG/GDP
+play,4,0,vinaf001,12,BCFX,9/F9
+play,4,1,klesr001,00,X,9/L9
+play,4,1,nevip001,12,FBFX,S8
+play,4,1,mabrj001,11,BCX,54(1)3/GDP
+play,5,0,drewj001,10,BH,HP
+play,5,0,edmoj001,32,CBFBBC,K+CS2(26)/DP/C
+play,5,0,clarw001,11,CBX,D9/9S
+play,5,0,tatif001,02,CFX,53/G
+play,5,1,darrm001,11,CBX,S9
+play,5,1,owene001,21,BFBX,64(1)3/GDP
+play,5,1,davib003,12,BSCX,53/G
+play,6,0,lankr001,00,,NP
+sub,darrm001,"Mike Darr",1,6,7
+play,6,0,lankr001,00,,NP
+sub,river002,"Ruben Rivera",1,9,8
+play,6,0,lankr001,00,,NP
+sub,cunnw001,"Will Cunnane",1,7,1
+play,6,0,lankr001,12,BCSS,K
+play,6,0,rente001,22,BFFBX,63/G
+play,6,0,hernc001,32,SBSBBS,K
+play,6,1,river002,10,BX,D/78
+play,6,1,jackd003,21,BCBX,7/F7D
+play,6,1,relad001,00,X,S9.2-H
+play,6,1,klesr001,00,X,7/F7
+play,6,1,nevip001,00,X,54(1)/FO
+play,7,0,benea001,00,,NP
+sub,suttl001,"Larry Sutton",0,9,11
+play,7,0,suttl001,11,CBX,43/G
+play,7,0,vinaf001,32,BCBFBX,S
+play,7,0,drewj001,00,X,8/F8
+play,7,0,edmoj001,00,C,CS2(26)
+play,7,1,mabrj001,00,,NP
+sub,timlm001,"Mike Timlin",0,9,1
+play,7,1,mabrj001,11,FBX,43/G
+play,7,1,darrm001,22,SBBFS,K
+play,7,1,cunnw001,00,,NP
+sub,vitij001,"Joe Vitiello",1,7,11
+play,7,1,vitij001,32,BBBCSB,W
+play,7,1,davib003,20,BBX,31/G
+play,8,0,edmoj001,00,,NP
+sub,maurd001,"Dave Maurer",1,7,1
+play,8,0,edmoj001,32,CSBBBS,K
+play,8,0,clarw001,10,BH,HP
+play,8,0,tatif001,12,BSSC,K/C
+play,8,0,lankr001,01,SH,HP.1-2
+play,8,0,rente001,00,,NP
+sub,sloch001,"Heathcliff Slocumb",1,7,1
+play,8,0,rente001,00,X,D/78.2-H;1-H
+play,8,0,hernc001,22,CBFBX,D7.2-H
+play,8,0,timlm001,00,,NP
+sub,mcgwm001,"Mark McGwire",0,9,11
+play,8,0,mcgwm001,10,BH,HP
+play,8,0,vinaf001,00,,NP
+sub,reamb001,"Britt Reames",0,9,12
+play,8,0,vinaf001,01,CX,13/G
+play,8,1,river002,00,,NP
+sub,jamem001,"Mike James",0,9,1
+play,8,1,river002,31,BCBBX,S7
+play,8,1,jackd003,20,BBX,6/P6
+play,8,1,relad001,00,X,46(1)3/GDP
+play,9,0,drewj001,00,,NP
+sub,carlb001,"Buddy Carlyle",1,7,1
+play,9,0,drewj001,21,BCBX,4/P4
+play,9,0,edmoj001,31,BBBCB,W
+play,9,0,clarw001,22,BFCFBC,K/C
+play,9,0,tatif001,32,BCCBFBX,4/P4
+play,9,1,klesr001,00,,NP
+sub,stecg001,"Gene Stechschulte",0,9,1
+play,9,1,klesr001,00,X,8/F8
+play,9,1,nevip001,02,CCS,K
+play,9,1,mabrj001,32,SFBBFBS,K
+data,er,benea001,1
+data,er,timlm001,0
+data,er,jamem001,0
+data,er,stecg001,0
+data,er,eatoa001,4
+data,er,cunnw001,0
+data,er,maurd001,2
+data,er,sloch001,1
+data,er,carlb001,0

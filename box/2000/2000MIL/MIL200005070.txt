@@ -1,0 +1,151 @@
+version,2
+info,visteam,MON
+info,hometeam,MIL
+info,site,MIL05
+info,date,2000/05/07
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,false
+info,umphome,craft901
+info,ump1b,mcclt901
+info,ump2b,schrp901
+info,ump3b,cuzzp901
+info,pitches,pitches
+info,temp,74
+info,winddir,rtol
+info,windspeed,8
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,158
+info,attendance,11989
+info,wp,haynj001
+info,lp,hermd001
+info,save,
+start,bergp001,"Peter Bergeron",0,1,8
+start,vidrj001,"Jose Vidro",0,2,4
+start,whitr001,"Rondell White",0,3,7
+start,guerv001,"Vladimir Guerrero",0,4,9
+start,stevl001,"Lee Stevens",0,5,3
+start,widgc001,"Chris Widger",0,6,2
+start,barrm003,"Michael Barrett",0,7,5
+start,cabro001,"Orlando Cabrera",0,8,6
+start,hermd001,"Dustin Hermanson",0,9,1
+start,bellr002,"Ron Belliard",1,1,4
+start,lorem001,"Mark Loretta",1,2,6
+start,burnj001,"Jeromy Burnitz",1,3,9
+start,moutl001,"Lyle Mouton",1,4,7
+start,barkk001,"Kevin Barker",1,5,3
+start,grism001,"Marquis Grissom",1,6,8
+start,hernj001,"Jose Hernandez",1,7,5
+start,blanh001,"Henry Blanco",1,8,2
+start,haynj001,"Jimmy Haynes",1,9,1
+play,1,0,bergp001,32,BCFBBX,63/G
+play,1,0,vidrj001,02,CCFX,S7/7S
+play,1,0,whitr001,32,BBBCFB,W.1-2
+play,1,0,guerv001,00,X,54(1)3/GDP
+play,1,1,bellr002,01,CX,63/G
+play,1,1,lorem001,22,CBCFFFBX,8/F8S
+play,1,1,burnj001,30,BBBX,HR/9
+play,1,1,moutl001,11,FBX,7/L7
+play,2,0,stevl001,20,BBX,9/F9
+play,2,0,widgc001,22,BSBFS,K
+play,2,0,barrm003,00,X,9/F9
+play,2,1,barkk001,22,BFFBX,8/L8
+play,2,1,grism001,11,CBX,S7/7S
+play,2,1,hernj001,12,FFBFX,S9/9S.1-3
+play,2,1,blanh001,30,BBBB,W.1-2
+play,2,1,haynj001,10,BX,9/F9S
+play,2,1,bellr002,11,FBX,D7.3-H;2-H;1XH(762)
+play,3,0,cabro001,12,BCFX,S7
+play,3,0,hermd001,00,X,14/SH.1-2
+play,3,0,bergp001,12,BFCC,K/C
+play,3,0,vidrj001,22,BBCFX,S9/9S.2-H;B-2(THH)
+play,3,0,whitr001,11,CBX,43/G
+play,3,1,lorem001,11,BSX,13/G
+play,3,1,burnj001,22,FSBBFS,K
+play,3,1,moutl001,12,FFBX,E5/G
+play,3,1,barkk001,10,BX,S9.1-2
+play,3,1,grism001,32,FBBSFFBB,W.2-3;1-2
+play,3,1,hernj001,01,SX,S9.3-H(UR);2-H(UR);1-3;B-2(TH)
+play,3,1,blanh001,30,BIII,IW
+play,3,1,haynj001,02,CSS,K
+play,4,0,guerv001,10,BX,7/FL
+play,4,0,stevl001,30,BBBB,W
+play,4,0,widgc001,20,BBX,D/78.1-H
+play,4,0,barrm003,10,BX,8/L8
+play,4,0,cabro001,21,BCBX,2/FL
+play,4,1,bellr002,32,BBBCFB,W
+play,4,1,lorem001,02,CFFFX,S7/7S.1-2
+play,4,1,burnj001,01,CX,8/L8
+play,4,1,moutl001,01,FX,7/F7D
+play,4,1,barkk001,20,BBX,D/78.2-H;1-H
+play,4,1,grism001,00,,NP
+sub,johnm002,"Mike Johnson",0,8,1
+play,4,1,grism001,00,,NP
+sub,blumg001,"Geoff Blum",0,9,6
+play,4,1,grism001,10,BX,3/L3
+play,5,0,blumg001,21,BBCX,9/F9S
+play,5,0,bergp001,00,X,13/G
+play,5,0,vidrj001,20,BBX,HR/9
+play,5,0,whitr001,11,CBX,63/G
+play,5,1,hernj001,12,CFFBX,HR/7
+play,5,1,blanh001,00,X,2/FL
+play,5,1,haynj001,02,SFS,K
+play,5,1,bellr002,02,SSC,K/C
+play,6,0,guerv001,32,BBFBFX,63/G
+play,6,0,stevl001,22,CSBBFX,HR/9
+play,6,0,widgc001,11,BCX,S7
+play,6,0,barrm003,21,BBCX,54(1)3/GDP
+play,6,1,lorem001,32,CBBFBX,43/G
+play,6,1,burnj001,11,BSX,3/L3
+play,6,1,moutl001,21,SBBX,53/G
+play,7,0,johnm002,00,,NP
+sub,leskc001,"Curtis Leskanic",1,9,1
+play,7,0,johnm002,00,,NP
+sub,guerw001,"Wilton Guerrero",0,8,11
+play,7,0,guerw001,00,X,13/G
+play,7,0,blumg001,32,BCFBBS,K
+play,7,0,bergp001,21,BBCX,S7
+play,7,0,vidrj001,11,BFX,63/G
+play,7,1,barkk001,00,,NP
+sub,guerw001,"Wilton Guerrero",0,8,8
+play,7,1,barkk001,00,,NP
+sub,blanm001,"Matt Blank",0,1,1
+play,7,1,barkk001,11,BCX,43/G
+play,7,1,grism001,31,BBBCX,43/G
+play,7,1,hernj001,31,CBBBX,31/G
+play,8,0,whitr001,01,FX,8/F8
+play,8,0,guerv001,12,BSFX,63/G
+play,8,0,stevl001,31,BBBCB,W
+play,8,0,widgc001,12,FFBX,7/L7
+play,8,1,blanh001,00,,NP
+sub,websl001,"Lenny Webster",0,3,2
+play,8,1,blanh001,00,,NP
+sub,guerw001,"Wilton Guerrero",0,8,7
+play,8,1,blanh001,00,,NP
+sub,jonet004,"Terry Jones",0,1,8
+play,8,1,blanh001,00,,NP
+sub,liraf001,"Felipe Lira",0,6,1
+play,8,1,blanh001,10,BX,43/G
+play,8,1,leskc001,00,,NP
+sub,sweem001,"Mark Sweeney",1,9,11
+play,8,1,sweem001,00,X,S9.B-2(E9)
+play,8,1,bellr002,00,X,S7.2-H
+play,8,1,lorem001,02,CFX,S7/7S.1-2
+play,8,1,burnj001,22,BCCBFX,S9.2-3;1-2
+play,8,1,moutl001,12,BCFFFS,K
+play,8,1,barkk001,21,CBBX,3/G
+play,9,0,barrm003,00,,NP
+sub,wickb001,"Bob Wickman",1,9,1
+play,9,0,barrm003,22,SFFBFFBS,K
+play,9,0,guerw001,00,X,7/FL
+play,9,0,blumg001,12,SBCX,13/G
+data,er,hermd001,5
+data,er,johnm002,1
+data,er,blanm001,0
+data,er,liraf001,1
+data,er,haynj001,4
+data,er,leskc001,0
+data,er,wickb001,0

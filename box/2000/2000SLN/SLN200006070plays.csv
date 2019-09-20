@@ -1,0 +1,73 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,01,1,,,,,0,2,CX,kiled001,1,0,,damoj001,0,F
+,00,1,,,,,1,3,X,kiled001,1,0,reboj001 grounds out. ,reboj001,0,G
+,21,1,sweem002,,,,2,7,FBBX,kiled001,0,0,sweem002 singles. ,sweem002,0,
+,10,1,sweem002,,,,3,9,BX,kiled001,1,0,,dye-j001,0,F
+,01,1,polap001,,,,4,2,CX,batim001,0,0,polap001 singles. ,polap001,1,
+polap001 scores. ,12,1,,rente001,,,5,6,CFBX,batim001,0,1,rente001 doubles. ,rente001,1,
+rente001 to 3B. ,11,1,,,rente001,,6,9,SBX,batim001,1,0,,edmoj001,1,F
+rente001 scores. ,32,1,davie001,,,,7,15,SFBBBX,batim001,0,1,davie001 singles. ,davie001,1,
+,00,1,davie001,,,,8,16,X,batim001,1,0,,suttl001,1,F
+,12,1,davie001,,,,9,20,FCBS,batim001,1,0,drewj001 strikes out. ,drewj001,1,
+,12,2,,,,,10,13,CSBS,kiled001,1,0,beltc001 strikes out. ,beltc001,0,
+,12,2,,randj002,,,11,17,CFBX,kiled001,0,0,randj002 doubles. ,randj002,0,
+,00,2,,randj002,,,12,18,X,kiled001,1,0,,zaung001,0,F
+,22,2,,randj002,,,13,23,BBCFC,kiled001,1,0,sancr001 strikes out. ,sancr001,0,
+,00,2,,,,,14,21,X,batim001,1,0,,paquc001,1,F
+,21,2,,,,,15,25,BFBX,batim001,1,0,,marre001,1,F
+,01,2,kiled001,,,,16,27,CX,batim001,0,0,kiled001 singles. ,kiled001,1,
+kiled001 scores. polap001 to 3B. ,01,2,,,polap001,,17,29,FX,batim001,0,1,polap001 reaches on error. ,polap001,1,F
+polap001 scores. ,21,2,rente001,,,,18,33,BBFX,batim001,0,1,rente001 singles. ,rente001,1,
+,00,2,,rente001,,edmoj001,19,34,S,batim001,0,0,rente001 steals 2B. ,edmoj001,1,
+,21,2,,rente001,,,20,38,SBBX,batim001,1,0,edmoj001 grounds out. ,edmoj001,1,G
+,22,3,,,,,21,28,BCBSC,kiled001,1,0,batim001 strikes out. ,batim001,0,
+,22,3,,,,,22,34,BCFBFS,kiled001,1,0,damoj001 strikes out. ,damoj001,0,
+,12,3,,,,,23,38,CBCC,kiled001,1,0,reboj001 strikes out. ,reboj001,0,
+,10,3,,,,,24,40,BX,batim001,1,0,davie001 grounds out. ,davie001,1,G
+,02,3,,,,,25,43,CCX,batim001,1,0,suttl001 grounds out. ,suttl001,1,G
+,01,3,,,,,26,45,CX,batim001,1,0,,drewj001,1,
+,01,4,,,,,27,40,CX,kiled001,1,0,sweem002 grounds out. ,sweem002,0,G
+,22,4,,,,,28,45,CBCBC,kiled001,1,0,dye-j001 strikes out. ,dye-j001,0,
+,21,4,,,,,29,49,BBSX,kiled001,1,0,beltc001 grounds out. ,beltc001,0,G
+,22,4,,,,,30,50,BSSBX,batim001,1,0,,paquc001,1,
+,00,4,,,,,31,51,X,batim001,1,0,marre001 grounds out. ,marre001,1,G
+,12,4,,,,,32,55,CBFC,batim001,1,0,kiled001 strikes out. ,kiled001,1,
+,02,5,,,,,33,53,CSFC,kiled001,1,0,randj002 strikes out. ,randj002,0,
+,21,5,,,,,34,57,SBBX,kiled001,1,0,,zaung001,0,F
+,00,5,,,,,35,58,X,kiled001,1,0,sancr001 grounds out. ,sancr001,0,G
+,31,5,polap001,,,,36,60,CBBBX,batim001,0,0,polap001 singles. ,polap001,1,
+polap001 to 2B. ,21,5,,polap001,,,37,64,BBFX,batim001,1,0,rente001 grounds out. ,rente001,1,G
+,30,5,edmoj001,polap001,,,38,68,BBII,batim001,0,0,edmoj001 intentionally walks. ,edmoj001,1,
+polap001 to 3B. edmoj001 out. ,12,5,davie001,,polap001,,39,74,BFCFFX,batim001,1,0,davie001 reaches on fielder's choice. ,davie001,1,
+davie001 out. ,12,5,suttl001,,polap001,,40,78,SBFX,batim001,1,0,suttl001 reaches on fielder's choice. ,suttl001,1,G
+,30,6,poses001,,,,42,62,BBBB,kiled001,0,0,poses001 walks. ,poses001,0,
+poses001 to 2B. ,02,6,damoj001,poses001,,,43,65,CFX,kiled001,0,0,damoj001 singles. ,damoj001,0,
+poses001 to 3B. damoj001 to 2B. ,00,6,,damoj001,poses001,,44,66,X,kiled001,1,0,Sacrifice bunt by reboj001.,reboj001,0,
+poses001 scores. ,10,6,,damoj001,,,45,68,BX,kiled001,1,1,sweem002 hits sacrifice fly. ,sweem002,0,
+,12,6,,damoj001,,,46,73,BFFFS,kiled001,1,0,dye-j001 strikes out. ,dye-j001,0,
+,01,6,,,,,48,2,CX,reicd001,1,0,drewj001 grounds out. ,drewj001,1,G
+,31,6,,,,,49,7,CBBBX,reicd001,1,0,,paquc001,1,F
+,11,6,marre001,,,,50,10,BCX,reicd001,0,0,marre001 singles. ,marre001,1,
+,12,6,marre001,,,,51,14,BSCC,reicd001,1,0,kiled001 strikes out. ,kiled001,1,
+,22,7,,,,,52,79,BCCBFC,kiled001,1,0,beltc001 strikes out. ,beltc001,0,
+,01,7,,,,,53,81,FX,kiled001,1,0,randj002 grounds out. ,randj002,0,G
+,31,7,zaung001,,,,54,86,CBBBX,kiled001,0,0,zaung001 singles. ,zaung001,0,
+,12,7,zaung001,,,,55,90,BCFC,kiled001,1,0,sancr001 strikes out. ,sancr001,0,
+,11,7,,,,,56,17,CBX,reicd001,1,0,,polap001,1,L
+,11,7,rente001,,,,57,20,BFX,reicd001,0,0,rente001 singles. ,rente001,1,
+rente001 to 2B. ,31,7,edmoj001,rente001,,,58,25,SBBBB,reicd001,0,0,edmoj001 walks. ,edmoj001,1,
+,02,7,edmoj001,rente001,,,59,28,CSS,reicd001,1,0,davie001 strikes out. ,davie001,1,
+rente001 to 3B. edmoj001 to 2B. ,02,7,suttl001,edmoj001,rente001,,60,31,CCX,reicd001,0,0,suttl001 singles. ,suttl001,1,
+,12,7,suttl001,edmoj001,rente001,,61,37,BCSFFS,reicd001,1,0,drewj001 strikes out. ,drewj001,1,
+,12,8,,,,,63,97,FFFFBFX,kiled001,1,0,dunwt001 grounds out. ,dunwt001,0,G
+,22,8,,,,,64,104,BFFFBFX,kiled001,1,0,,damoj001,0,F
+,10,8,,,,,65,106,BX,kiled001,1,0,reboj001 grounds out. ,reboj001,0,G
+,02,8,,,,,67,3,CFS,santj002,1,0,paquc001 strikes out. ,paquc001,1,
+,01,8,marre001,,,,68,5,CX,santj002,0,0,marre001 singles. ,marre001,1,
+marre001 to 2B. ,11,8,,marre001,,,69,8,CBX,santj002,1,0,kiled001 grounds out. ,kiled001,1,G
+,01,8,,marre001,,,70,10,CX,santj002,1,0,polap001 grounds out. ,polap001,1,G
+,00,9,,,,,71,107,X,kiled001,1,0,sweem002 grounds out. ,sweem002,0,G
+,10,9,dye-j001,,,,72,109,BX,kiled001,0,0,dye-j001 singles. ,dye-j001,0,
+dye-j001 to 3B. ,00,9,beltc001,,dye-j001,,73,110,X,kiled001,0,0,beltc001 singles. ,beltc001,0,
+dye-j001 scores. beltc001 to 3B. ,10,9,randj002,,beltc001,,74,112,BX,kiled001,0,1,randj002 singles. ,randj002,0,
+,10,9,,,beltc001,,75,114,BX,kiled001,2,0,Double Play. ,zaung001,0,

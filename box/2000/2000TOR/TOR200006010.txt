@@ -1,0 +1,129 @@
+version,2
+info,visteam,MIN
+info,hometeam,TOR
+info,site,TOR02
+info,date,2000/06/01
+info,number,0
+info,starttime,12:35PM
+info,daynight,day
+info,usedh,true
+info,umphome,reynj901
+info,ump1b,wegnm901
+info,ump2b,vanvm901
+info,ump3b,willc901
+info,pitches,pitches
+info,temp,62
+info,winddir,fromlf
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,164
+info,attendance,30444
+info,wp,milte001
+info,lp,castf001
+info,save,
+start,jonej003,"Jacque Jones",0,1,8
+start,guzmc001,"Cristian Guzman",0,2,6
+start,lawtm002,"Matt Lawton",0,3,7
+start,coomr001,"Ron Coomer",0,4,10
+start,cummm001,"Midre Cummings",0,5,9
+start,huskb001,"Butch Huskey",0,6,3
+start,koskc001,"Corey Koskie",0,7,5
+start,jensm001,"Marcus Jensen",0,8,2
+start,canij001,"Jay Canizaro",0,9,4
+start,milte001,"Eric Milton",0,0,1
+start,stews002,"Shannon Stewart",1,1,7
+start,grebc001,"Craig Grebeck",1,2,4
+start,mondr002,"Raul Mondesi",1,3,9
+start,delgc001,"Carlos Delgado",1,4,3
+start,cordm001,"Marty Cordova",1,5,10
+start,cruzj004,"Jose Cruz",1,6,8
+start,gonza001,"Alex S. Gonzalez",1,7,6
+start,woodc001,"Chris Woodward",1,8,5
+start,casta001,"Alberto Castillo",1,9,2
+start,castf001,"Frank Castillo",1,0,1
+play,1,0,jonej003,22,CFBBFX,3/L3
+play,1,0,guzmc001,21,CBBX,53/BG
+play,1,0,lawtm002,22,CCBBFFS,K
+play,1,1,stews002,12,CBFFX,S7/7S
+play,1,1,grebc001,22,BFBSFC,K/C
+play,1,1,mondr002,22,FSFBBS,K
+play,1,1,delgc001,32,SCBBFBS,K
+play,2,0,coomr001,12,BSSFFFX,43/G
+play,2,0,cummm001,11,BCX,3/G
+play,2,0,huskb001,21,BCBX,2/FL
+play,2,1,cordm001,11,BFX,4/P4
+play,2,1,cruzj004,22,BCBCFX,6/P6
+play,2,1,gonza001,11,CBX,9/F9D
+play,3,0,koskc001,32,CCBBFFBB,W
+play,3,0,jensm001,31,FBBBB,W.1-2
+play,3,0,canij001,02,LC+2,PO2(26)
+play,3,0,canij001,02,LC+2C,K/C
+play,3,0,jonej003,32,SBBSBX,T9.1-H
+play,3,0,guzmc001,32,CBBFBFFC,K/C
+play,3,1,woodc001,12,BCFS,K
+play,3,1,casta001,32,BCSFBBFFX,3/FL
+play,3,1,stews002,32,BBFFBFS,K
+play,4,0,lawtm002,31,BFBBB,W
+play,4,0,coomr001,01,FB,SB2
+play,4,0,coomr001,12,FBCX,4/P4
+play,4,0,cummm001,22,BFSBFX,4/P4
+play,4,0,huskb001,32,CCBBBX,9/F9
+play,4,1,grebc001,12,CFBX,63/G
+play,4,1,mondr002,00,X,9/F9
+play,4,1,delgc001,21,BCBX,S8
+play,4,1,cordm001,01,SX,63/G
+play,5,0,koskc001,12,SCBX,8/F8
+play,5,0,jensm001,30,BBBB,W
+play,5,0,canij001,10,BX,1(B)3(1)/LDP
+play,5,1,cruzj004,10,BX,T8/8D
+play,5,1,gonza001,12,BCFS,K
+play,5,1,woodc001,21,FBBX,2/FL
+play,5,1,casta001,00,X,43/G
+play,6,0,jonej003,01,LX,S
+play,6,0,guzmc001,32,BBBCCX,D9.1-H;B-3(E9)
+play,6,0,lawtm002,00,,NP
+sub,andrc001,"Clayton Andrews",1,0,1
+play,6,0,lawtm002,12,CBCX,43/G.3-H
+play,6,0,coomr001,20,BBX,HR/8
+play,6,0,cummm001,12,CCFFBX,13/G
+play,6,0,huskb001,12,CBSC,K/C
+play,6,1,stews002,01,CX,43/G
+play,6,1,grebc001,12,CFBS,K
+play,6,1,mondr002,21,BFBX,6/P6
+play,7,0,koskc001,12,BFCX,43/G
+play,7,0,jensm001,00,X,53/G
+play,7,0,canij001,22,BBFFFFX,9/F9D
+play,7,1,delgc001,01,CX,HR/9
+play,7,1,cordm001,21,BCBX,7/F7
+play,7,1,cruzj004,02,CCC,K/C
+play,7,1,gonza001,11,CBX,9/F9
+play,8,0,jonej003,01,SX,D7
+play,8,0,guzmc001,10,BX,53/G
+play,8,0,lawtm002,00,X,43/G.2-3
+play,8,0,coomr001,00,,NP
+sub,cubid001,"Darwin Cubillan",1,0,1
+play,8,0,coomr001,22,BSSBFX,S9/9S.3-H
+play,8,0,cummm001,02,CSFFX,8/F8
+play,8,1,woodc001,12,BFCS,K
+play,8,1,casta001,21,BBFX,S9
+play,8,1,stews002,00,X,16(1)/FO
+play,8,1,grebc001,02,FCFFX,7/F7
+play,9,0,huskb001,02,CCS,K
+play,9,0,koskc001,22,BSFBX,43/G
+play,9,0,jensm001,22,CBBFC,K/C
+play,9,1,mondr002,00,,NP
+sub,wellb002,"Bob Wells",0,0,1
+play,9,1,mondr002,10,BX,9/F9
+play,9,1,delgc001,00,,NP
+sub,guare001,"Eddie Guardado",0,0,1
+play,9,1,delgc001,20,BBX,6/P6
+play,9,1,cordm001,22,BCSBX,S8
+play,9,1,cruzj004,02,SFS,K
+data,er,milte001,1
+data,er,wellb002,0
+data,er,guare001,0
+data,er,castf001,3
+data,er,andrc001,2
+data,er,cubid001,0

@@ -1,0 +1,164 @@
+version,2
+info,visteam,NYN
+info,hometeam,SDN
+info,site,SAN01
+info,date,2000/08/22
+info,number,0
+info,starttime,2:05PM
+info,daynight,day
+info,usedh,false
+info,umphome,guccc901
+info,ump1b,emmep901
+info,ump2b,packs901
+info,ump3b,davig901
+info,pitches,pitches
+info,temp,77
+info,winddir,tolf
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,161
+info,attendance,24919
+info,wp,eatoa001
+info,lp,mahop001
+info,save,erdot001
+start,harrl001,"Lenny Harris",0,1,4
+start,bordm001,"Mike Bordick",0,2,6
+start,ventr001,"Robin Ventura",0,3,5
+start,zeilt001,"Todd Zeile",0,4,3
+start,hamid001,"Darryl Hamilton",0,5,9
+start,agbab001,"Benny Agbayani",0,6,7
+start,paytj001,"Jay Payton",0,7,8
+start,pratt001,"Todd Pratt",0,8,2
+start,mahop001,"Pat Mahomes",0,9,1
+start,jackd003,"Damian Jackson",1,1,4
+start,relad001,"Desi Relaford",1,2,6
+start,klesr001,"Ryan Klesko",1,3,3
+start,nevip001,"Phil Nevin",1,4,5
+start,mabrj001,"John Mabry",1,5,9
+start,darrm001,"Mike Darr",1,6,7
+start,river002,"Ruben Rivera",1,7,8
+start,gonzw001,"Wiki Gonzalez",1,8,2
+start,eatoa001,"Adam Eaton",1,9,1
+play,1,0,harrl001,00,X,S9/9S
+play,1,0,bordm001,11,FBC,SB2
+play,1,0,bordm001,12,FBCFX,5/FL
+play,1,0,ventr001,21,BCBX,13/G.2-3
+play,1,0,zeilt001,02,CCX,3/L3
+play,1,1,jackd003,00,X,7/L7
+play,1,1,relad001,32,BBCSBX,3/G
+play,1,1,klesr001,31,FBBBX,3/G
+play,2,0,hamid001,12,CBCS,K
+play,2,0,agbab001,22,BBSCS,K
+play,2,0,paytj001,11,BFX,63/G
+play,2,1,nevip001,11,CBX,9/L9
+play,2,1,mabrj001,32,BFBSBX,D/89
+play,2,1,darrm001,10,BX,3/G.2-3
+play,2,1,river002,30,BBBB,W
+play,2,1,gonzw001,21,BCBB,SB2
+play,2,1,gonzw001,32,BCBBCB,W
+play,2,1,eatoa001,32,SBCBFFBB,W.3-H;2-3;1-2
+play,2,1,jackd003,00,X,HR/7.3-H;2-H;1-H
+play,2,1,relad001,21,BBCX,8/F8
+play,3,0,pratt001,12,BCSX,S7/7S
+play,3,0,mahop001,01,CX,S9/9S.1-2
+play,3,0,harrl001,00,X,64(1)3/GDP.2-3
+play,3,0,bordm001,21,BCBX,S9.3-H
+play,3,0,ventr001,20,BBX,9/F9
+play,3,1,klesr001,32,BBBFFB,W
+play,3,1,nevip001,02,SFX,HR/7.1-H
+play,3,1,mabrj001,11,FBX,HR/9
+play,3,1,darrm001,32,FFBBBFX,43/G
+play,3,1,river002,00,X,D7
+play,3,1,gonzw001,31,CBBBX,D/89D.2-H
+play,3,1,eatoa001,22,BSCBFX,D7.2-H
+play,3,1,jackd003,12,BCCS,K
+play,3,1,relad001,32,CBBBFS,K
+play,4,0,zeilt001,30,BBBB,W
+play,4,0,hamid001,11,BCB,SB2
+play,4,0,hamid001,22,BCBFX,6(B)4(2)/FDP
+play,4,0,agbab001,00,X,S/89
+play,4,0,paytj001,00,X,46(1)/FO
+play,4,1,klesr001,00,,NP
+sub,mcewj001,"Joe McEwing",0,3,5
+play,4,1,klesr001,00,,NP
+sub,abbok002,"Kurt Abbott",0,2,6
+play,4,1,klesr001,32,BBCFBB,W
+play,4,1,nevip001,22,CBBCX,8/F8
+play,4,1,mabrj001,12,BCSS,K
+play,4,1,darrm001,02,FSX,31/G
+play,5,0,pratt001,12,CBFFX,D/78
+play,5,0,mahop001,00,,NP
+sub,tramb001,"Bubba Trammell",0,9,11
+play,5,0,tramb001,32,CSFBBBFX,63/G
+play,5,0,harrl001,21,BBCX,31/G.2-3
+play,5,0,abbok002,22,CBSBS,K
+play,5,1,river002,00,,NP
+sub,tramb001,"Bubba Trammell",0,9,7
+play,5,1,river002,00,,NP
+sub,wendt001,"Turk Wendell",0,6,1
+play,5,1,river002,32,BCCBBC,K/C
+play,5,1,gonzw001,10,BX,S
+play,5,1,eatoa001,11,BCX,31/G.1-2
+play,5,1,jackd003,32,BFBBCX,D9.2-H
+play,5,1,relad001,21,CBBX,8/F8
+play,6,0,mcewj001,00,,NP
+sub,magad001,"Dave Magadan",1,4,5
+play,6,0,mcewj001,32,BFBFBS,K
+play,6,0,zeilt001,10,BX,4/FL
+play,6,0,hamid001,22,BBCFC,K/C
+play,6,1,klesr001,00,,NP
+sub,franj001,"John Franco",0,6,1
+play,6,1,klesr001,22,CCBBS,K
+play,6,1,magad001,12,CBCFX,13/G
+play,6,1,mabrj001,11,CBX,43/G
+play,7,0,franj001,00,,NP
+sub,willg002,"George Williams",1,8,2
+play,7,0,franj001,00,,NP
+sub,vitij001,"Joe Vitiello",1,9,3
+play,7,0,franj001,00,,NP
+sub,erdot001,"Todd Erdos",1,3,1
+play,7,0,franj001,00,,NP
+sub,whitr002,"Rick White",0,6,11
+play,7,0,whitr002,12,CCBS,K
+play,7,0,paytj001,01,CX,63/G
+play,7,0,pratt001,02,CSX,13/G
+play,7,1,darrm001,00,,NP
+sub,benia001,"Armando Benitez",0,6,1
+play,7,1,darrm001,22,BBCFC,K/C
+play,7,1,river002,12,CCBS,K
+play,7,1,willg002,32,BCBFBX,31/G
+play,8,0,tramb001,00,X,S7/7D.BX2(76)
+play,8,0,harrl001,10,BX,63/G
+play,8,0,abbok002,31,BBBCB,W
+play,8,0,mcewj001,12,CBSS,K
+play,8,1,vitij001,00,,NP
+sub,belld001,"Derek Bell",0,6,1
+com,"$Bell's first pitch clocked at 47 MPH"
+play,8,1,vitij001,32,BBCBFB,W
+play,8,1,jackd003,00,X,S9.1-3
+play,8,1,relad001,01,CX,36(1)/FO.3-H
+play,8,1,erdot001,01,CX,5/L5
+play,8,1,magad001,21,BCBX,S9.1-2
+play,8,1,mabrj001,32,FBBBCB,W.2-3;1-2
+play,8,1,darrm001,00,,NP
+sub,dehak001,"Kory DeHaan",1,6,11
+play,8,1,dehak001,12,CBSX,D9/9D.3-H;2-H;1-H
+play,8,1,river002,32,BBCBSB,W
+play,8,1,willg002,30,BBBX,E2/P2R.2-H(UR);1-3
+play,8,1,vitij001,00,X,6/P6
+play,9,0,zeilt001,00,,NP
+sub,dehak001,"Kory DeHaan",1,6,7
+play,9,0,zeilt001,32,BCFBBX,9/F9S
+play,9,0,hamid001,12,FBSX,8/F8
+play,9,0,belld001,32,FBBFBB,W
+play,9,0,paytj001,10,BB,DI.1-2
+play,9,0,paytj001,20,BBX,9/F9D
+data,er,mahop001,10
+data,er,wendt001,1
+data,er,franj001,0
+data,er,benia001,0
+data,er,belld001,4
+data,er,eatoa001,1
+data,er,erdot001,0

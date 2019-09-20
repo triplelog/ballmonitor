@@ -1,0 +1,115 @@
+version,2
+info,visteam,MIN
+info,hometeam,SEA
+info,site,SEA03
+info,date,2000/05/17
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,bonig901
+info,ump1b,katzt901
+info,ump2b,mealj901
+info,ump3b,younl901
+info,pitches,pitches
+info,temp,61
+info,winddir,tolf
+info,windspeed,6
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,133
+info,attendance,25583
+info,wp,halaj001
+info,lp,maysj001
+info,save,
+start,guzmc001,"Cristian Guzman",0,1,6
+start,canij001,"Jay Canizaro",0,2,4
+start,lawtm002,"Matt Lawton",0,3,9
+start,coomr001,"Ron Coomer",0,4,3
+start,huskb001,"Butch Huskey",0,5,10
+start,lecrm001,"Matt LeCroy",0,6,2
+start,huntt001,"Torii Hunter",0,7,8
+start,jonej003,"Jacque Jones",0,8,7
+start,hockd001,"Denny Hocking",0,9,5
+start,maysj001,"Joe Mays",0,0,1
+start,camem001,"Mike Cameron",1,1,8
+start,belld002,"David Bell",1,2,4
+start,rodra001,"Alex Rodriguez",1,3,6
+start,olerj001,"John Olerud",1,4,3
+start,marte001,"Edgar Martinez",1,5,10
+start,buhnj001,"Jay Buhner",1,6,9
+start,javis001,"Stan Javier",1,7,7
+start,lampt001,"Tom Lampkin",1,8,2
+start,guilc001,"Carlos Guillen",1,9,5
+start,halaj001,"John Halama",1,0,1
+play,1,0,guzmc001,01,SX,53/G
+play,1,0,canij001,00,X,9/F9
+play,1,0,lawtm002,11,CBX,6/L6
+play,1,1,camem001,12,CCBS,K
+play,1,1,belld002,32,FBBCBX,S8
+play,1,1,rodra001,32,BFBCBB,W.1-2
+play,1,1,olerj001,12,BFFX,S8.2-H;1-2
+play,1,1,marte001,01,FX,4/P4
+play,1,1,buhnj001,01,CX,2/FL
+play,2,0,coomr001,21,BCBX,43/G
+play,2,0,huskb001,20,BBX,S8/8S
+play,2,0,lecrm001,22,BBFFX,7/F7
+play,2,0,huntt001,02,FSX,43/G
+play,2,1,javis001,12,FCBX,43/G
+play,2,1,lampt001,32,CCBFBFFBFC,K/C
+play,2,1,guilc001,22,FFBFBX,8/F8
+play,3,0,jonej003,00,X,7/F7
+play,3,0,hockd001,01,CX,63/G
+play,3,0,guzmc001,20,BBX,6/P6
+play,3,1,camem001,11,BCX,S
+play,3,1,belld002,11,FBX,7/F7D
+play,3,1,rodra001,32,BBFBFFFB,W.1-2
+play,3,1,olerj001,32,BCFBBF1,PO1(E1).2-H;1-2
+play,3,1,olerj001,32,BCFBBF1X,D9.2-H(UR)
+play,3,1,marte001,12,BFSC,K/C
+play,3,1,buhnj001,11,BCX,53/G
+play,4,0,canij001,00,X,8/F8
+play,4,0,lawtm002,22,BFFBX,7/F7
+play,4,0,coomr001,11,BSX,4/P4
+play,4,1,javis001,12,BFCC,K/C
+play,4,1,lampt001,22,BBCFX,9/F9D
+play,4,1,guilc001,01,FX,8/F8
+play,5,0,huskb001,22,CCBBX,S
+play,5,0,lecrm001,00,X,9/F9
+play,5,0,huntt001,31,BBFBX,64(1)3/GDP
+play,5,1,camem001,00,X,9/F9
+play,5,1,belld002,11,BCX,53/G
+play,5,1,rodra001,02,CCFX,S9
+play,5,1,olerj001,11,FBX,1/G
+play,6,0,jonej003,01,CX,43/G
+play,6,0,hockd001,12,CBFX,9/F9
+play,6,0,guzmc001,11,CBX,7/F7
+play,6,1,marte001,01,CX,HR/7
+play,6,1,buhnj001,32,CBSBBS,K
+play,6,1,javis001,02,FFX,43/G
+play,6,1,lampt001,00,X,43/G
+play,7,0,canij001,12,BCSS,K
+play,7,0,lawtm002,21,CBBX,S8/8S
+play,7,0,coomr001,10,BX,64(1)3/GDP
+play,7,1,guilc001,11,CBX,63/G
+play,7,1,camem001,32,CBCFBBS,K
+play,7,1,belld002,22,FBBCX,1/L1
+play,8,0,huskb001,21,BFBX,4/P4
+play,8,0,lecrm001,21,BBCX,8/L8
+play,8,0,huntt001,00,X,9/F9
+play,8,1,rodra001,00,,NP
+sub,hawkl001,"LaTroy Hawkins",0,0,1
+play,8,1,rodra001,02,FFS,K
+play,8,1,olerj001,32,BBSBCFS,K
+play,8,1,marte001,01,CX,8/F8
+play,9,0,jonej003,00,,NP
+sub,ibanr001,"Raul Ibanez",1,6,9
+play,9,0,jonej003,22,BCFFBX,43/G
+play,9,0,hockd001,00,X,S8/8S
+play,9,0,guzmc001,00,X,64(1)/FO
+play,9,0,canij001,00,,BK.1-2
+play,9,0,canij001,12,CFBC,K/C
+data,er,maysj001,3
+data,er,hawkl001,0
+data,er,halaj001,0

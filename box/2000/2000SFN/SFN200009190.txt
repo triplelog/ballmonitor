@@ -1,0 +1,139 @@
+version,2
+info,visteam,CIN
+info,hometeam,SFN
+info,site,SFO03
+info,date,2000/09/19
+info,number,0
+info,starttime,7:15PM
+info,daynight,night
+info,usedh,false
+info,umphome,hirsm901
+info,ump1b,iassd901
+info,ump2b,(none)
+info,ump3b,bellw901
+info,pitches,pitches
+info,temp,75
+info,winddir,ltor
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,159
+info,attendance,40930
+info,wp,hernl003
+info,lp,bellr003
+info,save,
+start,reesp001,"Pokey Reese",0,1,4
+start,tuckm001,"Michael Tucker",0,2,8
+start,yound001,"Dmitri Young",0,3,7
+start,cases001,"Sean Casey",0,4,3
+start,ochoa001,"Alex Ochoa",0,5,9
+start,santb001,"Benito Santiago",0,6,2
+start,sextc001,"Chris Sexton",0,7,5
+start,castj004,"Juan Castro",0,8,6
+start,bellr003,"Rob Bell",0,9,1
+start,benam001,"Marvin Benard",1,1,8
+start,muelb001,"Bill Mueller",1,2,5
+start,bondb001,"Barry Bonds",1,3,7
+start,kentj001,"Jeff Kent",1,4,4
+start,burke001,"Ellis Burks",1,5,9
+start,snowj001,"J.T. Snow",1,6,3
+start,aurir001,"Rich Aurilia",1,7,6
+start,estab001,"Bobby Estalella",1,8,2
+start,hernl003,"Livan Hernandez",1,9,1
+play,1,0,reesp001,22,CBBSFFX,63/G
+play,1,0,tuckm001,22,CFBFBX,5/FL
+play,1,0,yound001,00,X,8/F8
+play,1,1,benam001,12,BCFS,K
+play,1,1,muelb001,12,CBCFX,3/G
+play,1,1,bondb001,00,X,9/F9
+play,2,0,cases001,11,BSX,D9/9D
+play,2,0,ochoa001,00,X,13/G
+play,2,0,santb001,01,CX,8/L8
+play,2,0,sextc001,11,CBX,S8/8S.2-H;B-2(THH)
+play,2,0,castj004,00,X,63/G
+play,2,1,kentj001,00,,NP
+sub,cromd001,"David Cromer",0,4,3
+play,2,1,kentj001,00,X,S7
+play,2,1,burke001,32,CCBFBBS,K+SB2
+play,2,1,snowj001,32,BCSBFFBX,43/G.2-3
+play,2,1,aurir001,02,CFFS,K
+play,3,0,bellr003,02,SCFS,K23
+play,3,0,reesp001,01,CX,S7/7S
+play,3,0,tuckm001,20,BBX,46(1)3/GDP
+play,3,1,estab001,01,CX,D7
+play,3,1,hernl003,01,LX,63/G.2-3
+play,3,1,benam001,20,BBX,D9.3-H
+play,3,1,muelb001,21,BBCX,S/78.2-H
+play,3,1,bondb001,21,BBFX,D/78.1-H
+play,3,1,kentj001,12,CFBS,K
+play,3,1,burke001,21,BBCX,8/F8
+play,4,0,yound001,22,BCFFBX,53/G
+play,4,0,cromd001,02,CSX,S8/8S
+play,4,0,ochoa001,12,CBFC,K/C
+play,4,0,santb001,32,CCBBFBX,53/G
+play,4,1,snowj001,32,FFBBBFX,7/F7D
+play,4,1,aurir001,31,BBFBX,S8
+play,4,1,estab001,00,X,7/FL
+play,4,1,hernl003,00,X,54(1)/FO
+play,5,0,sextc001,00,X,9/F9
+play,5,0,castj004,02,CCX,53/G
+play,5,0,bellr003,22,BBCCX,13/G
+play,5,1,benam001,01,LX,53/BG
+play,5,1,muelb001,21,BBFX,43/G
+play,5,1,bondb001,32,BBCBFB,W
+play,5,1,kentj001,32,FBFBFBX,D7.1-H
+play,5,1,burke001,22,BFFFBX,7/F7
+play,6,0,reesp001,12,BCCX,9/F9
+play,6,0,tuckm001,22,BCFBX,6/L6
+play,6,0,yound001,21,BFBX,43/G
+play,6,1,snowj001,00,,NP
+sub,wohlm001,"Mark Wohlers",0,9,1
+play,6,1,snowj001,21,CBBX,S9
+play,6,1,aurir001,00,X,3/P3
+play,6,1,estab001,00,X,T9/9D.1-H
+play,6,1,hernl003,12,FBCX,S8/8S.3-H
+play,6,1,benam001,10,BX,S7.1-2
+play,6,1,muelb001,10,BX,46(1)/FO.2-3
+play,6,1,bondb001,31,BBCBX,43/G
+play,7,0,cromd001,02,CSX,7/F7
+play,7,0,ochoa001,10,BX,7/L7
+play,7,0,santb001,00,X,E6/G
+play,7,0,sextc001,22,CCBBX,13/G
+play,7,1,kentj001,00,,NP
+sub,glauk001,"Keith Glauber",0,9,1
+play,7,1,kentj001,22,BCBFX,T/89
+play,7,1,burke001,22,BSCBS,K
+play,7,1,snowj001,32,BCBSBFB,W
+play,7,1,aurir001,12,BFSFFX,S8.3-H;1-2
+play,7,1,estab001,00,X,8/F8
+play,7,1,hernl003,00,X,9/F9
+play,8,0,castj004,00,X,63/G
+play,8,0,glauk001,00,,NP
+sub,grifk002,"Ken Griffey",0,9,11
+play,8,0,grifk002,32,BFBFBX,HR/8
+play,8,0,reesp001,01,CX,3/P3
+play,8,0,tuckm001,32,BFFBBS,K
+play,8,1,benam001,00,,NP
+sub,reyed001,"Dennys Reyes",0,9,1
+play,8,1,benam001,12,FCBX,S
+play,8,1,muelb001,00,X,64(1)3/GDP
+play,8,1,bondb001,00,,NP
+sub,riosa001,"Armando Rios",1,3,11
+play,8,1,riosa001,11,BSX,7/F7D
+play,9,0,yound001,00,,NP
+sub,benam001,"Marvin Benard",1,1,9
+play,9,0,yound001,00,,NP
+sub,murrc001,"Calvin Murray",1,5,8
+play,9,0,yound001,00,,NP
+sub,riosa001,"Armando Rios",1,3,7
+play,9,0,yound001,10,BX,HR/78
+play,9,0,cromd001,02,FFX,7/F7
+play,9,0,ochoa001,10,BX,63/G
+play,9,0,santb001,12,FSBX,S8
+play,9,0,sextc001,10,BX,1/L1
+data,er,bellr003,4
+data,er,wohlm001,2
+data,er,glauk001,1
+data,er,reyed001,0
+data,er,hernl003,3

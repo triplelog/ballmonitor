@@ -1,0 +1,156 @@
+version,2
+info,visteam,CHN
+info,hometeam,MON
+info,site,MON02
+info,date,2000/04/19
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,crawj901
+info,ump1b,dimum901
+info,ump2b,gormb901
+info,ump3b,everm901
+info,pitches,pitches
+info,temp,72
+info,winddir,torf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,162
+info,attendance,10112
+info,wp,pavac001
+info,lp,quevr001
+info,save,
+start,youne001,"Eric Young",0,1,4
+start,gutir001,"Ricky Gutierrez",0,2,6
+start,gracm001,"Mark Grace",0,3,3
+start,sosas001,"Sammy Sosa",0,4,9
+start,rodrh001,"Henry Rodriguez",0,5,7
+start,andrs001,"Shane Andrews",0,6,5
+start,reedj001,"Jeff Reed",0,7,2
+start,bufod001,"Damon Buford",0,8,8
+start,lorra001,"Andrew Lorraine",0,9,1
+start,guerw001,"Wilton Guerrero",1,1,8
+start,cabro001,"Orlando Cabrera",1,2,6
+start,whitr001,"Rondell White",1,3,7
+start,guerv001,"Vladimir Guerrero",1,4,9
+start,vidrj001,"Jose Vidro",1,5,4
+start,stevl001,"Lee Stevens",1,6,3
+start,widgc001,"Chris Widger",1,7,2
+start,barrm003,"Michael Barrett",1,8,5
+start,pavac001,"Carl Pavano",1,9,1
+play,1,0,youne001,02,CFX,43/G
+play,1,0,gutir001,00,X,53/G
+play,1,0,gracm001,22,CBBSX,S8
+play,1,0,sosas001,10,BX,S7/7S.1-2
+play,1,0,rodrh001,31,SBBBX,8/F8D
+play,1,1,guerw001,10,BX,43/G
+play,1,1,cabro001,12,FBSFFFX,D8/8S
+play,1,1,whitr001,31,CBBBX,S7/7S.2-3
+play,1,1,guerv001,12,FSBX,S9.3-H;1-3;B-2(TH)
+play,1,1,vidrj001,21,BSBX,53/G.3-H;2-3
+play,1,1,stevl001,31,BCBBX,8/F8D
+play,2,0,andrs001,22,BFBSX,8/F8
+play,2,0,reedj001,32,BSBFBB,W
+play,2,0,bufod001,02,CFX,46(1)3/GDP
+play,2,1,widgc001,12,CBFX,9/F9
+play,2,1,barrm003,21,BFBX,7/F7D
+play,2,1,pavac001,02,CFS,K
+play,3,0,lorra001,22,BCBFFFS,K
+play,3,0,youne001,01,CX,3/G
+play,3,0,gutir001,21,BCBX,43/G
+play,3,1,guerw001,11,BFX,43/G
+play,3,1,cabro001,02,CSX,63/G
+play,3,1,whitr001,00,X,53/G
+play,4,0,gracm001,12,CCBH,HP
+play,4,0,sosas001,00,X,54(1)3/GDP
+play,4,0,rodrh001,00,X,HR/9
+play,4,0,andrs001,02,CCX,63/G
+play,4,1,guerv001,02,CFFS,K
+play,4,1,vidrj001,12,FBFX,8/P8
+play,4,1,stevl001,31,BBBCB,W
+play,4,1,widgc001,01,CX,S7/7S.1-2
+play,4,1,barrm003,01,CX,S.2-3;1-2
+play,4,1,pavac001,12,CSFBX,64(1)/FO
+play,5,0,reedj001,20,BBX,D9
+play,5,0,bufod001,31,BBBCX,43/G.2-3
+play,5,0,lorra001,32,BFFBFBC,K/C
+play,5,0,youne001,20,BBX,S8.3-H
+play,5,0,gutir001,01,CX,8/F8
+play,5,1,guerw001,10,BX,8/F8S
+play,5,1,cabro001,01,CX,3/P3
+play,5,1,whitr001,32,BBBCSB,W
+play,5,1,guerv001,00,X,T9.1-H
+play,5,1,vidrj001,00,X,6/P6
+play,6,0,gracm001,21,CBBX,31/G
+play,6,0,sosas001,12,FBSFS,K
+play,6,0,rodrh001,12,FCBX,7/F7
+play,6,1,stevl001,32,BSBBFFFX,3/G
+play,6,1,widgc001,11,BFX,43/G
+play,6,1,barrm003,00,X,63/G
+play,7,0,andrs001,00,,NP
+sub,jonet004,"Terry Jones",1,1,8
+play,7,0,andrs001,02,FFS,K
+play,7,0,reedj001,11,CBX,HR/9
+play,7,0,bufod001,12,BCSS,K
+play,7,0,lorra001,00,,NP
+sub,browr001,"Roosevelt Brown",0,9,11
+play,7,0,browr001,01,SX,8/F8
+play,7,1,pavac001,00,,NP
+sub,bergp001,"Peter Bergeron",1,9,11
+play,7,1,bergp001,00,,NP
+sub,quevr001,"Ruben Quevedo",0,9,1
+play,7,1,bergp001,10,BX,7/F7
+play,7,1,jonet004,00,,NP
+sub,blumg001,"Geoff Blum",1,1,11
+play,7,1,blumg001,32,BBCSFBB,W
+play,7,1,cabro001,12,BFFFFX,S.1-2
+play,7,1,whitr001,22,BSBCC,K/C
+play,7,1,guerv001,10,BX,D7.2-H;1-H
+play,7,1,vidrj001,30,IIII,IW
+play,7,1,stevl001,00,,NP
+sub,guthm001,"Mark Guthrie",0,9,1
+play,7,1,stevl001,32,BFFBBB,W.2-3;1-2
+play,7,1,widgc001,00,,NP
+sub,willb001,"Brian Williams",0,9,1
+play,7,1,widgc001,12,CBFX,64(1)/FO
+play,8,0,youne001,00,,NP
+sub,bergp001,"Peter Bergeron",1,9,8
+play,8,0,youne001,00,,NP
+sub,stris001,"Scott Strickland",1,1,1
+play,8,0,youne001,01,SX,3/G
+play,8,0,gutir001,32,BFBBFB,W
+play,8,0,gracm001,00,,NP
+sub,klins002,"Steve Kline",1,1,1
+play,8,0,gracm001,02,FSS,K
+play,8,0,sosas001,00,,NP
+sub,telfa001,"Anthony Telford",1,1,1
+play,8,0,sosas001,01,FX,13/G
+play,8,1,barrm003,02,FFFFX,S
+play,8,1,bergp001,00,X,34/SH.1-2
+play,8,1,telfa001,00,,NP
+sub,coqut001,"Trace Coquillette",1,1,11
+play,8,1,coqut001,10,BX,D7.2-H
+play,8,1,cabro001,12,BFSX,8/F8
+play,8,1,whitr001,21,BCBX,S8.2-H
+play,8,1,guerv001,10,BX,8/F8
+play,9,0,rodrh001,00,,NP
+sub,urbiu001,"Ugueth Urbina",1,1,1
+play,9,0,rodrh001,22,BSFBS,K
+play,9,0,andrs001,31,SBBBB,W
+play,9,0,reedj001,00,X,S8.1-2
+play,9,0,bufod001,10,BX,3/P3
+play,9,0,willb001,00,,NP
+sub,hillg001,"Glenallen Hill",0,9,11
+play,9,0,hillg001,10,BX,54(1)/FO.2-3
+data,er,lorra001,3
+data,er,quevr001,2
+data,er,guthm001,0
+data,er,willb001,2
+data,er,pavac001,3
+data,er,stris001,0
+data,er,klins002,0
+data,er,telfa001,0
+data,er,urbiu001,0

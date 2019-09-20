@@ -1,0 +1,149 @@
+version,2
+info,visteam,SDN
+info,hometeam,COL
+info,site,DEN02
+info,date,2000/07/21
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,timmt901
+info,ump1b,ripps901
+info,ump2b,tscht901
+info,ump3b,meric901
+info,pitches,pitches
+info,temp,82
+info,winddir,tolf
+info,windspeed,2
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,167
+info,attendance,41118
+info,wp,eatoa001
+info,lp,bohab001
+info,save,
+start,owene001,"Eric Owens",0,1,9
+start,river002,"Ruben Rivera",0,2,8
+start,klesr001,"Ryan Klesko",0,3,3
+start,nevip001,"Phil Nevin",0,4,5
+start,boonb002,"Bret Boone",0,5,4
+start,marta001,"Al Martin",0,6,7
+start,davib003,"Ben Davis",0,7,2
+start,jackd003,"Damian Jackson",0,8,6
+start,eatoa001,"Adam Eaton",0,9,1
+start,huntb002,"Brian L. Hunter",1,1,8
+start,peren001,"Neifi Perez",1,2,6
+start,walkl001,"Larry Walker",1,3,7
+start,cirij001,"Jeff Cirillo",1,4,5
+start,heltt001,"Todd Helton",1,5,3
+start,hammj001,"Jeffrey Hammonds",1,6,9
+start,lansm001,"Mike Lansing",1,7,4
+start,petrb001,"Ben Petrick",1,8,2
+start,bohab001,"Brian Bohanon",1,9,1
+play,1,0,owene001,10,BX,S
+play,1,0,river002,11,BFX,8/F8S
+play,1,0,klesr001,11,SBX,16(1)3/GDP
+play,1,1,huntb002,02,CFC,K/C
+play,1,1,peren001,10,BX,8/F8
+play,1,1,walkl001,00,X,43/G
+play,2,0,nevip001,10,BX,7/F7D
+play,2,0,boonb002,10,BX,S9
+play,2,0,marta001,00,X,46(1)/FO
+play,2,0,davib003,20,BBX,64(1)/FO
+play,2,1,cirij001,11,CBX,63/G
+play,2,1,heltt001,10,BX,7/F7D
+play,2,1,hammj001,20,BBX,S7
+play,2,1,lansm001,00,B,WP.1-2
+play,2,1,lansm001,11,BCX,S7.2-H;B-2(THH)
+play,2,1,petrb001,32,BFBBCFB,W
+play,2,1,bohab001,22,FBCBX,64(1)/FO.2-3
+play,3,0,jackd003,10,BX,43/G
+play,3,0,eatoa001,20,BBX,S8
+play,3,0,owene001,12,FCBFFX,64(1)3/GDP
+play,3,1,huntb002,00,X,13/G
+play,3,1,peren001,21,BBCX,9/F9D
+play,3,1,walkl001,11,FBX,63/G
+play,4,0,river002,22,BBFFS,K
+play,4,0,klesr001,31,FBBBB,W
+play,4,0,nevip001,21,FBBX,S7.1-2
+play,4,0,boonb002,30,BBBB,W.2-3;1-2
+play,4,0,marta001,11,SBX,S9.3-H;2-H;1-2
+play,4,0,davib003,10,BX,54(1)/FO.2-3
+play,4,0,jackd003,00,X,S9.3-H;1-2
+play,4,0,eatoa001,31,BFBBB,W.2-3;1-2
+play,4,0,owene001,22,BCFBX,64(1)/FO
+play,4,1,cirij001,12,BCFFX,63/G
+play,4,1,heltt001,00,X,D7
+play,4,1,hammj001,12,FBFC,K/C
+play,4,1,lansm001,12,FCBS,K
+play,5,0,river002,11,BFX,5/L5
+play,5,0,klesr001,22,FBBFS,K
+play,5,0,nevip001,10,BX,D9/9D
+play,5,0,boonb002,30,IIII,IW
+play,5,0,marta001,11,CBX,E1/G.2-3;1-2
+play,5,0,davib003,12,CSBS,K
+play,5,1,petrb001,21,BFBX,8/F8D
+play,5,1,bohab001,00,X,8/F8
+play,5,1,huntb002,11,BCX,43/G
+play,6,0,jackd003,12,CBFX,63/G
+play,6,0,eatoa001,11,BSX,S8
+play,6,0,owene001,12,BFCB,SB2
+play,6,0,owene001,22,BFCBFX,63/G.2-3
+play,6,0,river002,21,BFBX,S7.3-H
+play,6,0,klesr001,11,BFX,D/78.1-H
+play,6,0,nevip001,00,,NP
+sub,tavaj001,"Julian Tavarez",1,9,1
+play,6,0,nevip001,32,BFBBFX,63/G
+play,6,1,peren001,12,CFBX,S7
+play,6,1,walkl001,11,CBX,6(1)3/GDP
+play,6,1,cirij001,30,BBBB,W
+play,6,1,heltt001,31,BBBCB,W.1-2
+play,6,1,hammj001,00,X,4/L4
+play,7,0,boonb002,22,CSBBS,K
+play,7,0,marta001,00,X,43/G
+play,7,0,davib003,32,BSCFBBS,K
+play,7,1,lansm001,11,CBX,4/P4
+play,7,1,petrb001,31,BFBBB,W
+play,7,1,tavaj001,00,,NP
+sub,walkt002,"Todd Walker",1,9,11
+play,7,1,walkt002,02,FFFX,S.1-2
+play,7,1,huntb002,21,BSBX,64(1)3/GDP
+play,8,0,jackd003,00,,NP
+sub,dejem001,"Mike DeJean",1,9,1
+play,8,0,jackd003,00,X,9/F9
+play,8,0,eatoa001,20,BBX,S9
+play,8,0,owene001,12,FFFBFS,K
+play,8,0,river002,22,BCBFS,K
+play,8,1,peren001,22,BCFBFX,S7
+play,8,1,walkl001,01,CX,64(1)/FO
+play,8,1,cirij001,10,BX,S9.1-2
+play,8,1,heltt001,00,,NP
+sub,walkk001,"Kevin Walker",0,9,1
+play,8,1,heltt001,31,BBCBX,46(1)/FO.2-3
+play,8,1,hammj001,01,CX,64(1)/FO
+play,9,0,klesr001,00,,NP
+sub,jimej001,"Jose Jimenez",1,9,1
+play,9,0,klesr001,00,X,D8/8D
+play,9,0,nevip001,02,CCS,K
+play,9,0,boonb002,00,X,63/G.2-3
+play,9,0,marta001,30,IIII,IW
+play,9,0,davib003,00,X,53/G
+play,9,1,lansm001,00,,NP
+sub,erdot001,"Todd Erdos",0,9,1
+play,9,1,lansm001,30,BBBB,W
+play,9,1,petrb001,00,,NP
+sub,maynb001,"Brent Mayne",1,8,11
+play,9,1,maynb001,20,BBB,DI.1-2
+play,9,1,maynb001,31,BBBCX,9/F9.2-3
+play,9,1,jimej001,00,,NP
+sub,shumt001,"Terry Shumpert",1,9,11
+play,9,1,shumt001,11,CBX,5/P5
+play,9,1,huntb002,21,BBCX,8/F8
+data,er,eatoa001,1
+data,er,walkk001,0
+data,er,erdot001,0
+data,er,bohab001,5
+data,er,tavaj001,0
+data,er,dejem001,0
+data,er,jimej001,0

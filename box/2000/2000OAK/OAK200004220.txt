@@ -1,0 +1,158 @@
+version,2
+info,visteam,BAL
+info,hometeam,OAK
+info,site,OAK01
+info,date,2000/04/22
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,laynj901
+info,ump1b,monte901
+info,ump2b,randt901
+info,ump3b,barrt901
+info,pitches,pitches
+info,temp,63
+info,winddir,torf
+info,windspeed,17
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,203
+info,attendance,23783
+info,wp,mercj001
+info,lp,hereg001
+info,save,groob001
+start,andeb001,"Brady Anderson",0,1,8
+start,deshd001,"Delino DeShields",0,2,4
+start,surhb001,"B.J. Surhoff",0,3,7
+start,bellj002,"Albert Belle",0,4,9
+start,bainh001,"Harold Baines",0,5,10
+start,ripkc001,"Cal Ripken",0,6,5
+start,clarw001,"Will Clark",0,7,3
+start,myerg001,"Greg Myers",0,8,2
+start,bordm001,"Mike Bordick",0,9,6
+start,mercj001,"Jose Mercedes",0,0,1
+start,chrir001,"Ryan Christenson",1,1,8
+start,giamj002,"Jeremy Giambi",1,2,7
+start,giamj001,"Jason Giambi",1,3,10
+start,saeno001,"Olmedo Saenz",1,4,3
+start,staim001,"Matt Stairs",1,5,9
+start,tejam001,"Miguel Tejada",1,6,6
+start,chave001,"Eric Chavez",1,7,5
+start,fasas001,"Sal Fasano",1,8,2
+start,velaj001,"Jorge Velandia",1,9,4
+start,hereg001,"Gil Heredia",1,0,1
+play,1,0,andeb001,11,CBX,5/FL
+play,1,0,deshd001,32,CBFBBB,W
+play,1,0,surhb001,22,CBBFB,SB2
+play,1,0,surhb001,32,CBBFBX,43/G.2-3
+play,1,0,bellj002,32,BCBBSB,W
+play,1,0,bainh001,21,CBBX,6/L6
+play,1,1,chrir001,10,BX,7/F7
+play,1,1,giamj002,10,BX,7/F7D
+play,1,1,giamj001,01,CX,8/F8
+play,2,0,ripkc001,01,FX,S9/9S
+play,2,0,clarw001,11,BFX,8/F8
+play,2,0,myerg001,00,X,7/L7
+play,2,0,bordm001,21,CBBX,HR/7.1-H
+play,2,0,andeb001,10,BX,9/L9
+play,2,1,saeno001,02,CSX,5/FL
+play,2,1,staim001,11,CBX,8/F8
+play,2,1,tejam001,32,CBCFBFFFBB,W
+play,2,1,chave001,32,CSBFBBFX,9/F9
+play,3,0,deshd001,12,FFBFX,3/G
+play,3,0,surhb001,00,X,8/F8
+play,3,0,bellj002,32,SFBFBBB,W
+play,3,0,bainh001,00,X,D/89D.1-H
+play,3,0,ripkc001,10,BX,S8.2-3
+play,3,0,clarw001,32,BBBCFB,W.1-2
+play,3,0,myerg001,32,FBFBBS,K
+play,3,1,fasas001,21,BFBX,6/P6
+play,3,1,velaj001,11,BFX,9/L9
+play,3,1,chrir001,31,BBBCB,W
+play,3,1,giamj002,20,BBX,S9/9S.1-3
+play,3,1,giamj001,22,BSBSX,S9/9S.3-H;1-2
+play,3,1,saeno001,10,BX,4/P4
+play,4,0,bordm001,11,CBX,9/F9S
+play,4,0,andeb001,11,BFX,S8
+play,4,0,deshd001,02,CSC,K/C
+play,4,0,surhb001,02,FFX,S/78S.1-2
+play,4,0,bellj002,01,FX,4/P4
+play,4,1,staim001,01,FX,S9
+play,4,1,tejam001,10,BX,9/F9
+play,4,1,chave001,01,FX,3/G.1-2
+play,4,1,fasas001,10,BX,43/G
+play,5,0,bainh001,00,X,D9/9D
+play,5,0,ripkc001,11,CBX,63/G
+play,5,0,clarw001,31,BCBBX,S9.2-H(E9/TH)(UR);B-2
+play,5,0,myerg001,22,BBFSS,K
+play,5,0,bordm001,01,CX,53/G
+play,5,1,velaj001,02,CFX,9/L9
+play,5,1,chrir001,32,BSFBBX,S7/7S
+play,5,1,giamj002,00,X,46(1)/FO
+play,5,1,giamj001,10,BX,6/P6
+play,6,0,andeb001,01,FX,3/G
+play,6,0,deshd001,21,BCBX,4/L4
+play,6,0,surhb001,12,CCBS,K23
+play,6,1,saeno001,12,BFFX,5/L5
+play,6,1,staim001,11,BSX,D9
+play,6,1,tejam001,30,BBBB,W
+play,6,1,chave001,01,SX,8/F8.2-3
+play,6,1,fasas001,00,,NP
+sub,grieb001,"Ben Grieve",1,8,11
+play,6,1,grieb001,01,SX,S7/7S.3-H;1-2
+play,6,1,velaj001,00,,NP
+sub,maduc001,"Calvin Maduro",0,0,1
+play,6,1,velaj001,00,,NP
+sub,hernr002,"Ramon Hernandez",1,9,11
+play,6,1,hernr002,00,,NP
+sub,menef001,"Frank Menechino",1,8,12
+play,6,1,hernr002,12,BFFS,K23
+play,7,0,bellj002,00,,NP
+sub,menef001,"Frank Menechino",1,8,4
+play,7,0,bellj002,00,,NP
+sub,hernr002,"Ramon Hernandez",1,9,2
+play,7,0,bellj002,00,,NP
+sub,tam-j001,"Jeff Tam",1,0,1
+play,7,0,bellj002,32,CBCBBH,HP
+play,7,0,bainh001,00,X,7/F7D
+play,7,0,ripkc001,22,SCBBX,64(1)3/GDP
+play,7,1,chrir001,32,CBCBBB,W
+play,7,1,giamj002,11,BCX,31/G.1-2
+play,7,1,giamj001,22,CBFFBC,K/C
+play,7,1,saeno001,21,BBCX,2/FL
+play,8,0,clarw001,32,CBBCBX,43/G
+play,8,0,myerg001,02,FSX,S9/9S.BX2(96)
+play,8,0,bordm001,32,CBBSBX,8/F8
+play,8,1,staim001,32,BBCBSFB,W
+play,8,1,tejam001,00,X,46(1)3/GDP
+play,8,1,chave001,12,CBSX,6/P6
+play,9,0,andeb001,00,,NP
+sub,magnm001,"Mike Magnante",1,0,1
+play,9,0,andeb001,12,BCCFX,5/FL
+play,9,0,deshd001,32,CBBSFBX,43/G
+play,9,0,surhb001,32,CBFBBX,S8
+play,9,0,bellj002,11,FBX,8/F8D
+play,9,1,menef001,00,,NP
+sub,beckr002,"Rich Becker",1,8,11
+play,9,1,beckr002,00,,NP
+sub,timlm001,"Mike Timlin",0,0,1
+play,9,1,beckr002,32,CBSBBX,S9
+play,9,1,hernr002,11,BCX,S7/7S.1-2
+play,9,1,chrir001,00,X,14/SH.2-3;1-2
+play,9,1,giamj002,32,BCBFFBFB,W
+play,9,1,giamj001,31,BBFBX,8/SF.3-H
+play,9,1,saeno001,00,X,S.2-3;1-2
+play,9,1,staim001,00,,NP
+sub,groob001,"Buddy Groom",0,0,1
+play,9,1,staim001,00,,NP
+sub,johnc002,"Charles Johnson",0,8,2
+play,9,1,staim001,01,CX,5/FL
+data,er,mercj001,2
+data,er,maduc001,0
+data,er,timlm001,1
+data,er,groob001,0
+data,er,hereg001,3
+data,er,tam-j001,0
+data,er,magnm001,0

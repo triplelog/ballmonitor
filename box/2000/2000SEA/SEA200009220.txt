@@ -1,0 +1,162 @@
+version,2
+info,visteam,OAK
+info,hometeam,SEA
+info,site,SEA03
+info,date,2000/09/22
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,nelsj901
+info,ump1b,hirsm901
+info,ump2b,iassd901
+info,ump3b,bellw901
+info,pitches,pitches
+info,temp,64
+info,winddir,ltor
+info,windspeed,12
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,208
+info,attendance,45408
+info,wp,olivo001
+info,lp,garcf002
+info,save,servs001
+start,longt002,"Terrence Long",0,1,8
+start,velar001,"Randy Velarde",0,2,4
+start,giamj001,"Jason Giambi",0,3,3
+start,staim001,"Matt Stairs",0,4,10
+start,grieb001,"Ben Grieve",0,5,7
+start,tejam001,"Miguel Tejada",0,6,6
+start,chave001,"Eric Chavez",0,7,5
+start,giamj002,"Jeremy Giambi",0,8,9
+start,hernr002,"Ramon Hernandez",0,9,2
+start,olivo001,"Omar Olivares",0,0,1
+start,mclem001,"Mark McLemore",1,1,4
+start,javis001,"Stan Javier",1,2,7
+start,rodra001,"Alex Rodriguez",1,3,6
+start,marte001,"Edgar Martinez",1,4,10
+start,olerj001,"John Olerud",1,5,3
+start,buhnj001,"Jay Buhner",1,6,9
+start,camem001,"Mike Cameron",1,7,8
+start,olivj001,"Joe Oliver",1,8,2
+start,belld002,"David Bell",1,9,5
+start,garcf002,"Freddy An. Garcia",1,0,1
+play,1,0,longt002,32,BBCFBFB,W
+play,1,0,velar001,11,BCX,S8/8S.1-2
+play,1,0,giamj001,12,CFBS,K
+play,1,0,staim001,00,X,S7.2-H;1-2
+play,1,0,grieb001,30,BBBB,W.2-3;1-2
+play,1,0,tejam001,32,FFBBFFFFBX,7/F7S
+play,1,0,chave001,12,FFFFBX,S9.3-H;2-H;1-2
+play,1,0,giamj002,10,B1,PO1(E1).2-3;1-2
+play,1,0,giamj002,21,B1BFX,S.3-H;2-H(UR)
+play,1,0,hernr002,12,CBFS,K
+play,1,1,mclem001,22,CBFFBC,K/C
+play,1,1,javis001,01,CX,7/F7
+play,1,1,rodra001,22,CBFBX,63/G
+play,2,0,longt002,21,BCBX,3/G
+play,2,0,velar001,21,BCBX,8/L8
+play,2,0,giamj001,32,SBFFBBB,W
+play,2,0,staim001,12,BSSS,K
+play,2,1,marte001,32,BCBSFBB,W
+play,2,1,olerj001,12,CSBX,64(1)3/GDP
+play,2,1,buhnj001,02,SSC,K/C
+play,3,0,grieb001,12,CBSS,K
+play,3,0,tejam001,00,X,S9/9S
+play,3,0,chave001,31,BSBBB,W.1-2
+play,3,0,giamj002,11,CBX,9/F9
+play,3,0,hernr002,22,BFFBX,13/G
+play,3,1,camem001,11,BCX,13/G
+play,3,1,olivj001,11,CBX,S9
+play,3,1,belld002,10,BX,S9.1-3
+play,3,1,mclem001,10,BX,43/G.3-H;1-2
+play,3,1,javis001,11,BCX,63/G
+play,4,0,longt002,01,CX,43/G
+play,4,0,velar001,22,BBFSX,63/G
+play,4,0,giamj001,11,BCX,6/L6
+play,4,1,rodra001,21,BBCX,63/G
+play,4,1,marte001,11,CBX,8/F8
+play,4,1,olerj001,11,BCX,S8/8S
+play,4,1,buhnj001,12,SSBS,K
+play,5,0,staim001,10,BX,S8/8S
+play,5,0,grieb001,10,BX,S8.1-3;B-2(E8)
+play,5,0,tejam001,21,BBCX,D7.3-H;2-H
+play,5,0,chave001,00,,NP
+sub,ramsr001,"Robert Ramsay",1,0,1
+play,5,0,chave001,32,BBFFBX,1/G.2-3
+play,5,0,giamj002,00,,NP
+sub,piata001,"Adam Piatt",0,8,11
+play,5,0,piata001,32,BFBBFB,W
+play,5,0,hernr002,12,SCBFFX,8/SF.3-H(UR)
+play,5,0,longt002,12,CBFX,53/G
+play,5,1,camem001,00,,NP
+sub,piata001,"Adam Piatt",0,8,9
+play,5,1,camem001,22,CBSBX,53/G
+play,5,1,olivj001,32,BBFFBFFB,W
+play,5,1,belld002,00,X,S7/7S.1-2
+play,5,1,mclem001,21,BBCX,5/FL
+play,5,1,javis001,02,FFC,K/C
+play,6,0,velar001,32,CBBBCC,K/C
+play,6,0,giamj001,10,BX,8/F8
+play,6,0,staim001,32,CFBBBB,W
+play,6,0,grieb001,12,CBFS,K
+play,6,1,rodra001,00,H,HP
+play,6,1,marte001,00,,NP
+sub,servs001,"Scott Service",0,0,1
+play,6,1,marte001,10,BX,D7.1-H
+play,6,1,olerj001,32,BBBCCB,W
+play,6,1,buhnj001,32,CBBBFX,S7/7S.2-3;1-2
+play,6,1,camem001,02,CCS,K
+play,6,1,olivj001,00,,NP
+sub,ibanr001,"Raul Ibanez",1,8,11
+play,6,1,ibanr001,01,CX,9/SF.3-H
+play,6,1,belld002,02,FCX,6/L6
+play,7,0,tejam001,00,,NP
+sub,widgc001,"Chris Widger",1,8,2
+play,7,0,tejam001,00,,NP
+sub,rodrf001,"Frankie Rodriguez",1,0,1
+play,7,0,tejam001,21,BBCX,S8
+play,7,0,chave001,32,BBCCBB,W.1-2
+play,7,0,piata001,22,CBBFS,K
+play,7,0,hernr002,12,BCCC,K/C
+play,7,0,longt002,12,CCBFX,63/G
+play,7,1,mclem001,00,,NP
+sub,portb001,"Bo Porter",0,8,9
+play,7,1,mclem001,22,BBCSFFX,9/F9
+play,7,1,javis001,01,CX,7/F7
+play,7,1,rodra001,11,BCX,3/FL
+play,8,0,velar001,02,FCC,K/C
+play,8,0,giamj001,32,BCBBCFB,W
+play,8,0,staim001,31,BBBCB,W.1-2
+play,8,0,grieb001,31,BSBBX,36(1)/FO.2-3
+play,8,0,tejam001,00,,NP
+sub,chrir001,"Ryan Christenson",0,5,12
+play,8,0,tejam001,32,BBFBCB,W.1-2
+play,8,0,chave001,12,SBFS,K
+play,8,1,marte001,00,,NP
+sub,chrir001,"Ryan Christenson",0,5,7
+play,8,1,marte001,00,X,9/F9
+play,8,1,olerj001,10,BX,S9/9S
+play,8,1,buhnj001,01,CX,54(1)3/GDP
+play,9,0,portb001,00,,NP
+sub,hodgk001,"Kevin Hodges",1,0,1
+play,9,0,portb001,22,CBFFBX,9/F9
+play,9,0,hernr002,12,FSFBH,HP
+play,9,0,longt002,00,X,46(1)3/GDP
+play,9,1,camem001,31,BSBBB,W
+play,9,1,widgc001,00,,NP
+sub,guilc001,"Carlos Guillen",1,8,11
+play,9,1,guilc001,00,C,DI.1-2
+play,9,1,guilc001,11,CBX,9/F9
+play,9,1,belld002,00,,NP
+sub,marta001,"Al Martin",1,9,11
+play,9,1,marta001,12,BCSS,K
+play,9,1,mclem001,22,BSCFBX,43/G
+data,er,olivo001,2
+data,er,servs001,1
+data,er,garcf002,6
+data,er,ramsr001,0
+data,er,rodrf001,0
+data,er,hodgk001,0

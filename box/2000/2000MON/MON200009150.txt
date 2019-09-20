@@ -1,0 +1,141 @@
+version,2
+info,visteam,NYN
+info,hometeam,MON
+info,site,MON02
+info,date,2000/09/15
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,riekr901
+info,ump1b,guccc901
+info,ump2b,lampi901
+info,ump3b,emmep901
+info,pitches,pitches
+info,temp,72
+info,winddir,rtol
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,169
+info,attendance,6979
+info,wp,vazqj001
+info,lp,wendt001
+info,save,stris001
+start,hamid001,"Darryl Hamilton",0,1,7
+start,belld001,"Derek Bell",0,2,9
+start,alfoe001,"Edgardo Alfonzo",0,3,4
+start,piazm001,"Mike Piazza",0,4,2
+start,ventr001,"Robin Ventura",0,5,5
+start,zeilt001,"Todd Zeile",0,6,3
+start,paytj001,"Jay Payton",0,7,8
+start,abbok002,"Kurt Abbott",0,8,6
+start,leita001,"Al Leiter",0,9,1
+start,bergp001,"Peter Bergeron",1,1,8
+start,cabro001,"Orlando Cabrera",1,2,6
+start,seguf001,"Fernando Seguignol",1,3,3
+start,guerv001,"Vladimir Guerrero",1,4,9
+start,vidrj001,"Jose Vidro",1,5,4
+start,guerw001,"Wilton Guerrero",1,6,7
+start,coqut001,"Trace Coquillette",1,7,5
+start,schnb001,"Brian Schneider",1,8,2
+start,vazqj001,"Javier Vazquez",1,9,1
+play,1,0,hamid001,12,CFFBX,S9/9S
+play,1,0,belld001,21,BBFX,D/78.1-H
+play,1,0,alfoe001,20,BBX,9/F9D.2-3
+play,1,0,piazm001,10,BX,6(B)2(3)/FDP
+play,1,1,bergp001,12,BSFS,K
+play,1,1,cabro001,32,BBCBCX,S7
+play,1,1,seguf001,22,SSBBFS,K
+play,1,1,guerv001,11,FBX,5/P5
+play,2,0,ventr001,32,BSBCBS,K
+play,2,0,zeilt001,21,BBCX,63/G
+play,2,0,paytj001,22,SBBFX,4/P4
+play,2,1,vidrj001,02,CSFX,9/FL
+play,2,1,guerw001,11,BFX,53/G
+play,2,1,coqut001,01,FX,S7/7S
+play,2,1,schnb001,10,BX,S.1-2
+play,2,1,vazqj001,02,CFX,S9/9S.2-H;1-3
+play,2,1,bergp001,32,BBSFBB,W.1-2
+play,2,1,cabro001,22,CBFBFFX,7/F7
+play,3,0,abbok002,22,FBSBS,K
+play,3,0,leita001,02,SSS,K
+play,3,0,hamid001,10,BX,53/G
+play,3,1,seguf001,31,BBBCB,W
+play,3,1,guerv001,01,SX,6/P6
+play,3,1,vidrj001,11,BCX,S7/7S.1-2
+play,3,1,guerw001,12,BCSX,5(2)/FO.1-3(E5)
+play,3,1,coqut001,11,BCX,4/P4
+play,4,0,belld001,32,BBCFBC,K/C
+play,4,0,alfoe001,11,CBX,63/G
+play,4,0,piazm001,22,BBCFFFX,HR/7
+play,4,0,ventr001,12,CBCC,K/C
+play,4,1,schnb001,22,BFFBS,K
+play,4,1,vazqj001,12,BCFS,K
+play,4,1,bergp001,02,SCX,3/G
+play,5,0,zeilt001,32,CSFBBBS,K
+play,5,0,paytj001,01,SX,S8
+play,5,0,abbok002,11,FBX,S7.1-2
+play,5,0,leita001,02,FLL,K/BF
+play,5,0,hamid001,01,CX,S8/8S.2-H;1-3
+play,5,0,belld001,22,CBBFC,K/C
+play,5,1,cabro001,11,CBX,D/78
+play,5,1,seguf001,32,BFBBFFFFFC,K/C
+play,5,1,guerv001,22,CBFBFS,K
+play,5,1,vidrj001,30,BBBB,W
+play,5,1,guerw001,00,X,6/P6
+play,6,0,alfoe001,22,SBBFX,S
+play,6,0,piazm001,10,BX,64(1)3/GDP
+play,6,0,ventr001,32,SCBBBC,K/C
+play,6,1,coqut001,31,CBBBX,9/F9
+play,6,1,schnb001,00,X,6/L6
+play,6,1,vazqj001,21,BBCX,S8/8S
+play,6,1,bergp001,21,BFBX,D7.1-H;B-3(E6/TH)
+play,6,1,cabro001,00,,NP
+sub,wendt001,"Turk Wendell",0,5,1
+play,6,1,cabro001,00,,NP
+sub,franm001,"Matt Franco",0,9,5
+play,6,1,cabro001,01,CX,HR/7.3-H
+play,6,1,seguf001,22,FBFBS,K
+play,7,0,zeilt001,00,X,S8/8S
+play,7,0,paytj001,02,CFFFX,63/G.1-2
+play,7,0,abbok002,21,BBSX,63/G
+play,7,0,franm001,11,CBX,8/F8
+play,7,1,guerv001,12,SBFFX,8/F8
+play,7,1,vidrj001,32,BBCBFX,S9/9S
+play,7,1,guerw001,10,BX,31/G.1-2
+play,7,1,coqut001,01,CX,63/G
+play,8,0,hamid001,00,,NP
+sub,jonet004,"Terry Jones",1,6,7
+play,8,0,hamid001,31,BBBCX,9/F9
+play,8,0,belld001,00,X,53/G
+play,8,0,alfoe001,02,CFX,S9/9S
+play,8,0,piazm001,00,,NP
+sub,peret004,"Timoniel Perez",0,3,12
+play,8,0,piazm001,02,CFX,4/P4
+play,8,1,schnb001,00,,NP
+sub,velaj001,"Jorge Velandia",0,3,4
+play,8,1,schnb001,00,,NP
+sub,cookd001,"Dennis Cook",0,5,1
+play,8,1,schnb001,11,BFX,4/FL
+play,8,1,vazqj001,00,,NP
+sub,websl001,"Lenny Webster",1,9,11
+play,8,1,websl001,22,BCSBX,43/G
+play,8,1,bergp001,21,BCBX,43/G
+play,9,0,cookd001,00,,NP
+sub,blumg001,"Geoff Blum",1,3,5
+play,9,0,cookd001,00,,NP
+sub,nunnt001,"Talmadge Nunnari",1,7,3
+play,9,0,cookd001,00,,NP
+sub,stris001,"Scott Strickland",1,9,1
+play,9,0,cookd001,00,,NP
+sub,harrl001,"Lenny Harris",0,5,11
+play,9,0,harrl001,20,BBX,13/G
+play,9,0,zeilt001,12,BCFX,13/G
+play,9,0,paytj001,12,FSBS,K
+data,er,leita001,3
+data,er,wendt001,1
+data,er,cookd001,0
+data,er,vazqj001,3
+data,er,stris001,0

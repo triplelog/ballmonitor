@@ -1,0 +1,161 @@
+version,2
+info,visteam,ARI
+info,hometeam,SFN
+info,site,SFO03
+info,date,2000/09/23
+info,number,2
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,welkb901
+info,ump1b,froeb901
+info,ump2b,wolfj901
+info,ump3b,vanvm901
+info,pitches,pitches
+info,temp,67
+info,winddir,tocf
+info,windspeed,17
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,192
+info,attendance,40930
+info,wp,deltm001
+info,lp,reyna001
+info,save,
+start,womat001,"Tony Womack",0,1,6
+start,bautd001,"Danny Bautista",0,2,9
+start,gonzl001,"Luis Gonzalez",0,3,7
+start,colbg001,"Greg Colbrunn",0,4,3
+start,finls001,"Steve Finley",0,5,8
+start,willm003,"Matt D. Williams",0,6,5
+start,counc001,"Craig Counsell",0,7,4
+start,barar001,"Rod Barajas",0,8,2
+start,reyna001,"Armando Reynoso",0,9,1
+start,benam001,"Marvin Benard",1,1,8
+start,muelb001,"Bill Mueller",1,2,5
+start,bondb001,"Barry Bonds",1,3,7
+start,kentj001,"Jeff Kent",1,4,4
+start,snowj001,"J.T. Snow",1,5,3
+start,aurir001,"Rich Aurilia",1,6,6
+start,riosa001,"Armando Rios",1,7,9
+start,servs002,"Scott Servais",1,8,2
+start,deltm001,"Miguel Del Toro",1,9,1
+play,1,0,womat001,22,CBBFFX,7/F7
+play,1,0,bautd001,10,BX,13/G
+play,1,0,gonzl001,20,BBX,63/G
+play,1,1,benam001,21,BSBX,7/F7D
+play,1,1,muelb001,32,CBCBFFBX,D9
+play,1,1,bondb001,12,BCSS,K
+play,1,1,kentj001,12,CFBS,K
+play,2,0,colbg001,32,CFBFBFBFB,W
+play,2,0,finls001,02,FCS,K
+play,2,0,willm003,00,X,S8/8S.1-2
+play,2,0,counc001,22,BBCCX,2/P2
+play,2,0,barar001,02,SSS,K
+play,2,1,snowj001,32,CBBFBFX,D8
+play,2,1,aurir001,01,LX,FC1/SH.2-3;B-1#
+play,2,1,riosa001,00,X,3/G.1-2
+play,2,1,servs002,30,IIII,IW
+play,2,1,deltm001,10,BX,12(3)/FO.2-3;1-2
+play,2,1,benam001,00,X,12(3)/FO.2-3
+play,3,0,reyna001,32,BBBCCFX,S8/8S
+play,3,0,womat001,10,BX,13/SH.1-2
+play,3,0,bautd001,01,CH,HP
+play,3,0,gonzl001,00,X,46(1)3/GDP
+play,3,1,muelb001,00,X,S7/7S
+play,3,1,bondb001,10,BX,4(B)3(1)/LDP
+play,3,1,kentj001,00,X,53/G
+play,4,0,colbg001,22,FBBFFFC,K/C
+play,4,0,finls001,10,BX,63/G
+play,4,0,willm003,32,SBSBBB,W
+play,4,0,counc001,20,BBX,7/F7
+play,4,1,snowj001,12,CFBFC,K/C
+play,4,1,aurir001,32,BBCBSB,W
+play,4,1,riosa001,20,BBX,S9.1-2
+play,4,1,servs002,31,CBBBB,W.2-3;1-2
+play,4,1,deltm001,11,CBX,S9.3-H;2-H;1-3
+play,4,1,benam001,32,FFBBFBFX,T/89D.3-H;1-H
+play,4,1,muelb001,11,CBX,9/SF.3-H
+play,4,1,bondb001,12,CBSX,9/F9S
+play,5,0,barar001,32,BBBCFS,K
+play,5,0,reyna001,00,,NP
+sub,ryanr001,"Rob Ryan",0,9,11
+play,5,0,ryanr001,12,BCFFX,S/78
+play,5,0,womat001,22,BFBFFX,S7.1-2
+play,5,0,bautd001,11,BFX,S8/8S.2-H;1-2
+play,5,0,gonzl001,00,X,HR/78.2-H;1-H
+play,5,0,colbg001,00,X,8/F8
+play,5,0,finls001,02,FCS,K
+play,5,1,kentj001,00,,NP
+sub,morgm001,"Mike Morgan",0,9,1
+play,5,1,kentj001,01,CX,S8/8S
+play,5,1,snowj001,32,CBSBBX,7/F7
+play,5,1,aurir001,00,X,D7.1-3
+play,5,1,riosa001,30,IIII,IW
+play,5,1,servs002,00,,NP
+sub,burke001,"Ellis Burks",1,8,11
+play,5,1,burke001,31,BBBCB,W.3-H;2-3;1-2
+play,5,1,deltm001,00,,NP
+sub,estab001,"Bobby Estalella",1,9,11
+play,5,1,estab001,12,BSCX,D/78.3-H;2-H;1-H
+play,5,1,benam001,02,FCX,63/G.2-3
+play,5,1,muelb001,01,CX,13/G
+play,6,0,willm003,00,,NP
+sub,estab001,"Bobby Estalella",1,9,2
+play,6,0,willm003,00,,NP
+sub,henrd002,"Doug Henry",1,8,1
+play,6,0,willm003,22,SBSFFBX,S/78
+play,6,0,counc001,00,X,54(1)3/GDP
+play,6,0,barar001,12,CBCX,S9/9S
+play,6,0,morgm001,00,,NP
+sub,delld001,"David Dellucci",0,9,11
+play,6,0,delld001,21,BCBX,53/G
+play,6,1,bondb001,00,,NP
+sub,swing001,"Greg Swindell",0,9,1
+play,6,1,bondb001,00,X,2/FL
+play,6,1,kentj001,31,BCBBB,W
+play,6,1,snowj001,32,CFBBBFS,K
+play,6,1,aurir001,00,X,D7.1-3
+play,6,1,riosa001,01,CX,43/G
+play,7,0,womat001,22,CFBBX,S7
+play,7,0,bautd001,10,BB,SB2.1-3(E2/TH2)
+play,7,0,bautd001,20,BBX,3/P3
+play,7,0,gonzl001,00,,NP
+sub,embra001,"Alan Embree",1,7,1
+play,7,0,gonzl001,00,,NP
+sub,lowet001,"Terrell Lowery",1,8,9
+play,7,0,gonzl001,21,BFBX,8/SF.3-H(UR)
+play,7,0,colbg001,32,BFBFFBB,W
+play,7,0,finls001,32,CBCBBB,W.1-2
+play,7,0,willm003,00,,NP
+sub,rodrf002,"Felix Rodriguez",1,7,1
+play,7,0,willm003,01,SX,7/F7D
+play,7,1,lowet001,02,CCFX,8/F8D
+play,7,1,estab001,02,CFS,K
+play,7,1,benam001,11,BCX,53/G
+play,8,0,counc001,32,BSCBBB,W
+play,8,0,barar001,32,BCBFFFBX,7/F7
+play,8,0,swing001,00,,NP
+sub,contj001,"Jason Conti",0,9,11
+play,8,0,contj001,12,CSBS,K
+play,8,0,womat001,32,BBCBCFFX,7/F7
+play,8,1,muelb001,00,,NP
+sub,holmd001,"Darren Holmes",0,9,1
+play,8,1,muelb001,22,CFBBC,K/C
+play,8,1,bondb001,12,BFCC,K/C
+play,8,1,kentj001,22,CBBCS,K
+play,9,0,bautd001,00,,NP
+sub,nen-r001,"Robb Nen",1,7,1
+play,9,0,bautd001,32,BCBBCX,43/G
+play,9,0,gonzl001,22,BCSBS,K
+play,9,0,colbg001,02,FSX,63/G
+data,er,reyna001,5
+data,er,morgm001,4
+data,er,swing001,0
+data,er,holmd001,0
+data,er,deltm001,4
+data,er,henrd002,0
+data,er,embra001,0
+data,er,rodrf002,0
+data,er,nen-r001,0

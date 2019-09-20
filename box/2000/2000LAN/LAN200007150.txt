@@ -1,0 +1,153 @@
+version,2
+info,visteam,ANA
+info,hometeam,LAN
+info,site,LOS03
+info,date,2000/07/15
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,false
+info,umphome,tscht901
+info,ump1b,meric901
+info,ump2b,gibsg901
+info,ump3b,ripps901
+info,pitches,pitches
+info,temp,82
+info,winddir,ltor
+info,windspeed,11
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,198
+info,attendance,42726
+info,wp,ethes001
+info,lp,parkc002
+info,save,
+start,erstd001,"Darin Erstad",0,1,8
+start,palmo001,"Orlando Palmeiro",0,2,7
+start,vaugm001,"Mo Vaughn",0,3,3
+start,salmt001,"Tim Salmon",0,4,9
+start,glaut001,"Troy Glaus",0,5,5
+start,molib001,"Ben Molina",0,6,2
+start,kenna001,"Adam Kennedy",0,7,4
+start,gil-b001,"Benji Gil",0,8,6
+start,ethes001,"Seth Etherton",0,9,1
+start,coraa001,"Alex Cora",1,1,4
+start,lodup001,"Paul LoDuca",1,2,2
+start,shefg001,"Gary Sheffield",1,3,7
+start,grees001,"Shawn Green",1,4,9
+start,karre001,"Eric Karros",1,5,3
+start,belta001,"Adrian Beltre",1,6,5
+start,hollt001,"Todd Hollandsworth",1,7,8
+start,elstk001,"Kevin Elster",1,8,6
+start,parkc002,"Chan Ho Park",1,9,1
+play,1,0,erstd001,02,CCX,31/G
+play,1,0,palmo001,31,BBCBB,W
+play,1,0,vaugm001,32,BBFFBB,W.1-2
+play,1,0,salmt001,32,SCBBBX,D7.2-H;1-3
+play,1,0,glaut001,32,BBCSBB,W
+play,1,0,molib001,10,BX,7/SF.3-H
+play,1,0,kenna001,12,CCBC,K/C
+play,1,1,coraa001,01,CX,8/F8
+play,1,1,lodup001,32,BCBBFFX,8/L8
+play,1,1,shefg001,31,BCBBB,W
+play,1,1,grees001,30,BBBB,W.1-2
+play,1,1,karre001,22,BBCFX,53/G
+play,2,0,gil-b001,12,FCFBX,8/F8
+play,2,0,ethes001,32,CBBBCB,W
+play,2,0,erstd001,12,CCBX,S7.1-2
+play,2,0,palmo001,32,CBBBCFX,D9.2-H;1-3
+play,2,0,vaugm001,30,IIII,IW
+play,2,0,salmt001,02,FSS,K
+play,2,0,glaut001,12,BCSS,K
+play,2,1,belta001,32,BCFBBFFFFX,D9
+play,2,1,hollt001,22,BCBFFFX,8/F8
+play,2,1,elstk001,32,BFBSBC,K/C
+play,2,1,parkc002,00,X,9/F9
+play,3,0,molib001,00,X,3/P3
+play,3,0,kenna001,00,X,9/F9
+play,3,0,gil-b001,32,CBBBSB,W
+play,3,0,ethes001,12,BFCX,53/G
+play,3,1,coraa001,02,CCX,7/F7
+play,3,1,lodup001,12,CBCX,8/F8D
+play,3,1,shefg001,32,BBCBCX,HR/78
+play,3,1,grees001,10,BX,43/G
+play,4,0,erstd001,21,BBFX,53/G
+play,4,0,palmo001,31,BSBBB,W
+play,4,0,vaugm001,00,X,S9/9S.1-3
+play,4,0,salmt001,21,SBBX,5/L5
+play,4,0,glaut001,22,BCSBX,54(1)/FO
+play,4,1,karre001,02,CCX,D7
+play,4,1,belta001,32,FBBFBX,53/G
+play,4,1,hollt001,12,FBCX,E4/G.2-H(UR)
+play,4,1,elstk001,10,BX,7/F7
+play,4,1,parkc002,02,CSFS,K
+play,5,0,molib001,02,CFFFX,S7
+play,5,0,kenna001,02,FFX,46(1)/FO
+play,5,0,gil-b001,11,BFX,5/FL
+play,5,0,ethes001,21,BBCX,4/F4
+play,5,1,coraa001,01,CX,S8
+play,5,1,lodup001,10,BB,SB2
+play,5,1,lodup001,20,BBX,53/SH.2-3
+play,5,1,shefg001,00,X,4/P4
+play,5,1,grees001,11,BSX,7/F7
+play,6,0,erstd001,00,,NP
+sub,osuna002,"Antonio Osuna",1,9,1
+play,6,0,erstd001,00,X,D8
+play,6,0,palmo001,00,X,54/SH.2-3
+play,6,0,vaugm001,12,BFFS,K
+play,6,0,salmt001,32,BSBFBB,W
+play,6,0,glaut001,32,BBCSBFFB,W.1-2
+play,6,0,molib001,12,FSFFBX,S9.3-H;2-H;1-3
+play,6,0,kenna001,22,CBBSX,8/F8
+play,6,1,karre001,21,FBBX,53/G
+play,6,1,belta001,00,X,3/FL
+play,6,1,hollt001,22,BCCBX,7/F7
+play,7,0,gil-b001,00,,NP
+sub,santf001,"F.P. Santangelo",1,9,8
+play,7,0,gil-b001,00,,NP
+sub,masao001,"Onan Masaoka",1,7,1
+play,7,0,gil-b001,21,BBFX,8/F8
+play,7,0,ethes001,00,,NP
+sub,spies001,"Scott Spiezio",0,9,11
+play,7,0,spies001,22,CFFBBFS,K
+play,7,0,erstd001,12,CFBS,K+WP.B-1
+play,7,0,palmo001,00,B,SB2
+play,7,0,palmo001,32,BCBFBX,63/G
+play,7,1,elstk001,00,,NP
+sub,petkm001,"Mark Petkovsek",0,9,1
+play,7,1,elstk001,22,CCBFFBX,5/P5
+play,7,1,santf001,00,X,S5/BG5
+play,7,1,coraa001,01,FX,64(1)/FO
+play,7,1,lodup001,32,BFBBCX,63/G
+play,8,0,vaugm001,00,,NP
+sub,hergm001,"Matt Herges",1,7,1
+play,8,0,vaugm001,02,FFX,S9
+play,8,0,salmt001,00,X,54(1)3/GDP
+play,8,0,glaut001,01,FX,HR/7
+play,8,0,molib001,00,X,63/G
+play,8,1,shefg001,00,,NP
+sub,hases001,"Shigetoshi Hasegawa",0,9,1
+play,8,1,shefg001,01,FX,8/F8
+play,8,1,grees001,00,X,1/L1
+play,8,1,karre001,11,BFX,S7
+play,8,1,belta001,12,FBSX,64(1)/FO
+play,9,0,kenna001,00,,NP
+sub,shawj001,"Jeff Shaw",1,7,1
+play,9,0,kenna001,02,CFX,S7
+play,9,0,gil-b001,01,SX,3/P3
+play,9,0,hases001,00,X,64(1)/FO
+play,9,0,erstd001,00,X,43/G
+play,9,1,shawj001,00,,NP
+sub,hansd001,"Dave Hansen",1,7,11
+play,9,1,hansd001,31,BBBCB,W
+play,9,1,elstk001,01,CX,7/L7
+play,9,1,santf001,01,CX,6(1)3/GDP
+data,er,ethes001,1
+data,er,petkm001,0
+data,er,hases001,0
+data,er,parkc002,3
+data,er,osuna002,2
+data,er,masao001,0
+data,er,hergm001,1
+data,er,shawj001,0

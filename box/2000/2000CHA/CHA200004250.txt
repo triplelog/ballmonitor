@@ -1,0 +1,166 @@
+version,2
+info,visteam,BAL
+info,hometeam,CHA
+info,site,CHI12
+info,date,2000/04/25
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,schrp901
+info,ump1b,mcclt901
+info,ump2b,cuzzp901
+info,ump3b,craft901
+info,pitches,pitches
+info,temp,54
+info,winddir,torf
+info,windspeed,14
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,195
+info,attendance,11658
+info,wp,rappp001
+info,lp,sirom001
+info,save,
+start,andeb001,"Brady Anderson",0,1,10
+start,deshd001,"Delino DeShields",0,2,4
+start,surhb001,"B.J. Surhoff",0,3,7
+start,bellj002,"Albert Belle",0,4,9
+start,conij001,"Jeff Conine",0,5,3
+start,ripkc001,"Cal Ripken",0,6,5
+start,johnc002,"Charles Johnson",0,7,2
+start,amarr001,"Rich Amaral",0,8,8
+start,bordm001,"Mike Bordick",0,9,6
+start,rappp001,"Pat Rapp",0,0,1
+start,durhr001,"Ray Durham",1,1,4
+start,valej003,"Jose Valentin",1,2,6
+start,thomf001,"Frank Thomas",1,3,10
+start,ordom001,"Magglio Ordonez",1,4,9
+start,konep001,"Paul Konerko",1,5,3
+start,singc001,"Chris Singleton",1,6,8
+start,lee-c001,"Carlos Lee",1,7,7
+start,nortg001,"Greg Norton",1,8,5
+start,johnm003,"Mark Johnson",1,9,2
+start,sirom001,"Mike Sirotka",1,0,1
+play,1,0,andeb001,00,X,13/G
+play,1,0,deshd001,30,BBBB,W
+play,1,0,surhb001,31,BBCBB,W.1-2
+play,1,0,bellj002,12,SFBS,K
+play,1,0,conij001,11,CBX,4/P4
+play,1,1,durhr001,21,CBBX,3/G
+play,1,1,valej003,10,BX,53/G
+play,1,1,thomf001,31,CBBBB,W
+play,1,1,ordom001,12,CBF1,POCS2(1436)
+play,2,0,ripkc001,32,CBBFBFFB,W
+play,2,0,johnc002,31,BFBBB,W.1-2
+play,2,0,amarr001,11,SBX,46(1)3/GDP.2-3
+play,2,0,bordm001,10,BX,E5/G.3-H(NR)(UR)
+play,2,0,andeb001,10,BB,SB2
+play,2,0,andeb001,21,BBFX,D9/9D.2-H(UR)
+play,2,0,deshd001,00,X,S8.2-H(UR)
+play,2,0,surhb001,01,CX,6/P6
+play,2,1,ordom001,12,CBCC,K/C
+play,2,1,konep001,31,BCBBX,D9
+play,2,1,singc001,00,X,S8.2-H
+play,2,1,lee-c001,32,BCBFBX,4/P4
+play,2,1,nortg001,32,BFBSBX,S.1-3
+play,2,1,johnm003,20,BBX,S9.3-H;1-3
+play,2,1,durhr001,22,BBCSS,K
+play,3,0,bellj002,12,SFBX,6/P6
+play,3,0,conij001,32,BBFFBB,W
+play,3,0,ripkc001,10,BX,S9/9S.1-2
+play,3,0,johnc002,22,SBBSX,S7.2-H;1-2
+play,3,0,amarr001,20,BBX,T9.2-H;1-H
+play,3,0,bordm001,00,X,E9/SF.3-H
+play,3,0,andeb001,00,,NP
+sub,eyres001,"Scott Eyre",1,0,1
+play,3,0,andeb001,22,BBCSX,D/78.1-H(UR)
+play,3,0,deshd001,32,BCBBCX,S7.2-H;B-2(THH)
+play,3,0,surhb001,01,CX,8/F8D.2-3
+play,3,0,bellj002,31,BBCBB,W
+play,3,0,conij001,02,FCX,53/G
+play,3,1,valej003,02,CCX,3/FL
+play,3,1,thomf001,02,FSS,K
+play,3,1,ordom001,10,BX,S7
+play,3,1,konep001,11,CBX,46(1)/FO
+play,4,0,ripkc001,10,BX,9/L9
+play,4,0,johnc002,31,BCBBB,W
+play,4,0,amarr001,10,BX,S9.1-3
+play,4,0,bordm001,00,X,64(1)3/GDP
+play,4,1,singc001,22,FFBBX,S9
+play,4,1,lee-c001,21,BFBX,2/FL
+play,4,1,nortg001,22,SCFBBS,K
+play,4,1,johnm003,21,CBBX,43/G
+play,5,0,andeb001,12,CSFBX,8/F8
+play,5,0,deshd001,32,BCBCBFB,W
+play,5,0,surhb001,00,H,HP.1-2
+play,5,0,bellj002,10,BX,46(1)3/GDP
+play,5,1,durhr001,32,BBCCBX,43/G
+play,5,1,valej003,31,BBBCX,9/F9
+play,5,1,thomf001,32,BBBCFB,W
+play,5,1,ordom001,32,BFFBBFX,S9.1-2
+play,5,1,konep001,00,X,HR/7.2-H;1-H
+play,5,1,singc001,00,X,9/F9
+play,6,0,conij001,00,,NP
+sub,sturt001,"Tanyon Sturtze",1,0,1
+play,6,0,conij001,22,FCBBX,9/F9D
+play,6,0,ripkc001,20,BBX,43/G
+play,6,0,johnc002,20,BBX,43/G
+play,6,1,lee-c001,00,,NP
+sub,maduc001,"Calvin Maduro",0,0,1
+play,6,1,lee-c001,10,BX,D7
+play,6,1,nortg001,01,FX,13/G.2-3
+play,6,1,johnm003,00,,NP
+sub,groob001,"Buddy Groom",0,0,1
+play,6,1,johnm003,00,,NP
+sub,perrh001,"Herbert Perry",1,9,11
+play,6,1,perrh001,01,FX,1(B)5(3)/LDP
+play,7,0,amarr001,00,,NP
+sub,paulj001,"Josh Paul",1,9,2
+play,7,0,amarr001,32,BFBBCB,W
+play,7,0,bordm001,01,CB,SB2
+play,7,0,bordm001,32,CBCBBFB,W
+play,7,0,andeb001,01,LX,7/F7
+play,7,0,deshd001,11,SBX,D7/7S.2-H;1-3
+play,7,0,surhb001,12,BFFX,S9.3-H;2-3
+play,7,0,bellj002,00,X,4/P4
+play,7,0,conij001,22,CBSBX,64(1)/FO
+play,7,1,durhr001,22,CBBCX,T/89D
+play,7,1,valej003,31,BFBBX,9/SF.3-H
+play,7,1,thomf001,12,BFCFX,6/P6
+play,7,1,ordom001,32,SSBBBX,43/G
+play,8,0,ripkc001,00,,NP
+sub,lowes001,"Sean Lowe",1,0,1
+play,8,0,ripkc001,00,X,43/G
+play,8,0,johnc002,31,BBBCB,W
+play,8,0,amarr001,32,BBCBCB,W.1-2
+play,8,0,bordm001,32,BBBCCX,46(1)3/GDP
+play,8,1,konep001,00,,NP
+sub,tromm001,"Mike Trombley",0,0,1
+play,8,1,konep001,22,BCFBX,8/F8D
+play,8,1,singc001,22,BCBFFX,8/F8
+play,8,1,lee-c001,00,X,13/G
+play,9,0,andeb001,00,,NP
+sub,howrb001,"Bobby Howry",1,0,1
+play,9,0,andeb001,12,FCBX,31/G
+play,9,0,deshd001,11,CBX,8/F8D
+play,9,0,surhb001,02,CFX,HR/9
+play,9,0,bellj002,00,X,D/89D
+play,9,0,conij001,00,X,53/G
+play,9,1,nortg001,00,,NP
+sub,timlm001,"Mike Timlin",0,0,1
+play,9,1,nortg001,00,X,S9
+play,9,1,paulj001,02,CFS,K
+play,9,1,durhr001,10,BX,54(1)/FO
+play,9,1,valej003,00,X,43/G
+data,er,rappp001,5
+data,er,maduc001,0
+data,er,groob001,1
+data,er,tromm001,0
+data,er,timlm001,0
+data,er,sirom001,4
+data,er,eyres001,1
+data,er,sturt001,2
+data,er,lowes001,0
+data,er,howrb001,1

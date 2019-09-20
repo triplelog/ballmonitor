@@ -1,0 +1,86 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,10,1,,,,,0,2,BX,belct001,0,1,chrir001 homers. ,chrir001,0,
+,11,1,velar001,,,,1,5,BCX,belct001,0,0,velar001 singles. ,velar001,0,
+velar001 to 2B. ,30,1,giamj001,velar001,,,2,9,BBBB,belct001,0,0,giamj001 walks. ,giamj001,0,
+velar001 scores. giamj001 to 2B. ,10,1,grieb001,giamj001,,,3,11,BX,belct001,0,1,grieb001 singles. ,grieb001,0,
+giamj001 scores. grieb001 to 2B. ,11,1,saeno001,grieb001,,,4,14,BFX,belct001,0,1,saeno001 singles. ,saeno001,0,
+grieb001 to 3B. saeno001 to 2B. ,32,1,staim001,saeno001,grieb001,,5,20,CBFBBB,belct001,0,0,staim001 walks. ,staim001,0,
+grieb001 scores. saeno001 to 3B. staim001 to 2B. ,21,1,,staim001,saeno001,,6,24,BBFX,belct001,1,1,tejam001 grounds out. ,tejam001,0,G
+,30,1,chave001,staim001,saeno001,,7,28,IIII,belct001,0,0,chave001 intentionally walks. ,chave001,0,
+saeno001 scores. staim001 to 3B. chave001 to 2B. ,21,1,hernr002,chave001,staim001,,8,32,BCBX,belct001,0,1,hernr002 singles. ,hernr002,0,
+staim001 scores. chave001 to 3B. hernr002 to 2B. ,12,1,chrir001,hernr002,chave001,,10,4,BFSX,fyhrm001,0,1,chrir001 singles. ,chrir001,0,
+chave001 scores. hernr002 to 3B. chrir001 to 2B. ,11,1,velar001,chrir001,hernr002,,11,7,CBX,fyhrm001,0,1,velar001 singles. ,velar001,0,
+,02,1,velar001,chrir001,hernr002,,12,11,FFFX,fyhrm001,1,0,,giamj001,0,F
+,22,1,velar001,chrir001,hernr002,,13,16,BCCBS,fyhrm001,1,0,grieb001 strikes out. ,grieb001,0,
+,10,1,erstd001,,,,14,2,BX,hudst001,0,0,erstd001 singles. ,erstd001,1,
+erstd001 out. ,10,1,palmo001,,,,15,4,BX,hudst001,1,0,palmo001 reaches on fielder's choice. ,palmo001,1,
+palmo001 to 3B. ,11,1,,vaugm001,palmo001,,16,7,CBX,hudst001,0,0,vaugm001 doubles. ,vaugm001,1,
+,32,1,salmt001,vaugm001,palmo001,,17,14,CSBFBBB,hudst001,0,0,salmt001 walks. ,salmt001,1,
+palmo001 scores. vaugm001 to 3B. salmt001 out. ,12,1,andeg001,,vaugm001,,18,19,SFBFX,hudst001,1,1,andeg001 reaches on fielder's choice. ,andeg001,1,
+,21,1,andeg001,,vaugm001,,19,23,BCBX,hudst001,1,0,glaut001 grounds out. ,glaut001,1,G
+,21,2,,,,,20,20,BCBX,fyhrm001,1,0,,saeno001,0,F
+,22,2,,,,,21,25,CSBBX,fyhrm001,1,0,,staim001,0,
+,22,2,,,,,22,31,SBFFBX,fyhrm001,1,0,tejam001 grounds out. ,tejam001,0,G
+,10,2,,,,,23,25,BX,hudst001,1,0,,molib001,1,F
+,22,2,,,,,24,30,FBBSS,hudst001,1,0,kenna001 strikes out. ,kenna001,1,
+,11,2,,,,,25,33,BCX,hudst001,1,0,gil-b001 grounds out. ,gil-b001,1,G
+,20,3,,,,,26,34,BBX,fyhrm001,1,0,,chave001,0,F
+,12,3,,,,,27,39,CSFBX,fyhrm001,1,0,hernr002 grounds out. ,hernr002,0,G
+,12,3,,,,,28,43,CBFC,fyhrm001,1,0,chrir001 strikes out. ,chrir001,0,
+,31,3,erstd001,,,,29,38,BCBBB,hudst001,0,0,erstd001 walks. ,erstd001,1,
+erstd001 to 3B. ,01,3,palmo001,,erstd001,,30,40,CX,hudst001,0,0,palmo001 singles. ,palmo001,1,
+,02,3,palmo001,,erstd001,,31,43,FCS,hudst001,1,0,vaugm001 strikes out. ,vaugm001,1,
+erstd001 scores. palmo001 to 3B. ,21,3,salmt001,,palmo001,,32,47,BCBX,hudst001,0,1,salmt001 singles. ,salmt001,1,
+,02,3,salmt001,,palmo001,,33,50,CCS,hudst001,1,0,andeg001 strikes out. ,andeg001,1,
+,22,3,salmt001,,palmo001,,34,55,CBSBS,hudst001,1,0,glaut001 strikes out. ,glaut001,1,
+,01,4,,,,,35,45,FX,fyhrm001,1,0,,velar001,0,F
+,31,4,giamj001,,,,36,50,BBBCX,fyhrm001,0,0,giamj001 singles. ,giamj001,0,
+giamj001 to 3B. ,01,4,,grieb001,giamj001,,37,52,CX,fyhrm001,0,0,grieb001 doubles. ,grieb001,0,
+,22,4,,grieb001,giamj001,,38,57,BCBCX,fyhrm001,1,0,,saeno001,0,L
+,32,4,,grieb001,giamj001,,39,64,SBBSFBX,fyhrm001,1,0,staim001 grounds out. ,staim001,0,G
+,02,4,,,,,40,58,CCX,hudst001,1,0,,molib001,1,F
+,00,4,,,,,41,59,X,hudst001,1,0,kenna001 grounds out. ,kenna001,1,G
+,12,4,,,,,42,63,BSCS,hudst001,1,0,gil-b001 strikes out. ,gil-b001,1,
+,11,5,,,,,43,67,BFX,fyhrm001,1,0,tejam001 grounds out. ,tejam001,0,G
+,12,5,,,,,44,71,FFBC,fyhrm001,1,0,chave001 strikes out. ,chave001,0,
+,00,5,,,,,45,72,X,fyhrm001,1,0,,hernr002,0,L
+,31,5,,,,,46,68,FBBBX,hudst001,1,0,,erstd001,1,F
+,22,5,palmo001,,,,47,73,BBCCX,hudst001,0,0,palmo001 singles. ,palmo001,1,
+,22,5,palmo001,,,,48,79,BBFFFX,hudst001,1,0,,vaugm001,1,F
+palmo001 out. ,10,5,salmt001,,,,49,81,BX,hudst001,1,0,salmt001 reaches on fielder's choice. ,salmt001,1,
+,22,6,,chrir001,,,51,5,CFBBX,petkm001,0,0,chrir001 doubles. ,chrir001,0,
+,22,6,,chrir001,,,52,12,CSFBBFS,petkm001,1,0,velar001 strikes out. ,velar001,0,
+chrir001 scores. ,12,6,giamj001,,,,53,16,BCCX,petkm001,0,1,giamj001 singles. ,giamj001,0,
+,00,6,,,,,54,17,X,petkm001,2,0,Double Play. ,grieb001,0,
+,00,6,,,,,55,82,X,hudst001,1,0,,andeg001,1,F
+,32,6,,,,,56,88,BBBCSX,hudst001,1,0,,glaut001,1,
+,01,6,,,,,57,90,SX,hudst001,1,0,molib001 grounds out. ,molib001,1,G
+,11,7,saeno001,,,,59,3,BFH,holtm001,0,0,saeno001 hit by pitch. ,saeno001,0,
+,22,7,saeno001,,,,60,9,CBCBFC,holtm001,1,0,staim001 strikes out. ,staim001,0,
+,22,7,saeno001,,,,61,18,CBFFFFFBX,holtm001,1,0,,tejam001,0,L
+,22,7,saeno001,,,,62,23,BBFFS,holtm001,1,0,chave001 strikes out. ,chave001,0,
+,21,7,,,,,63,94,BBFX,hudst001,1,0,,kenna001,1,F
+,12,7,,,,,64,99,FBCFS,hudst001,1,0,gil-b001 strikes out. ,gil-b001,1,
+,32,7,erstd001,,,,65,105,BFSBBX,hudst001,0,0,erstd001 singles. ,erstd001,1,
+,31,7,,erstd001,,palmo001,66,110,CBBBC,hudst001,0,0,erstd001 steals 2B. ,palmo001,1,
+,32,7,,erstd001,,,67,117,CBBBCFX,hudst001,1,0,,palmo001,1,L
+,00,8,,,,,70,1,X,turnd001,1,0,,hernr002,0,F
+,22,8,,,,,71,8,CFFBBFS,turnd001,1,0,chrir001 strikes out. ,chrir001,0,
+,31,8,velar001,,,,72,13,BBBCB,turnd001,0,0,velar001 walks. ,velar001,0,
+,00,8,velar001,,,,73,14,X,turnd001,1,0,giamj001 grounds out. ,giamj001,0,G
+,22,8,,,,,75,7,CSBFFBX,magnm001,1,0,vaugm001 grounds out. ,vaugm001,1,G
+,11,8,salmt001,,,,76,10,CBX,magnm001,0,0,salmt001 singles. ,salmt001,1,
+salmt001 to 2B. ,31,8,andeg001,salmt001,,,77,15,BBCBB,magnm001,0,0,andeg001 walks. ,andeg001,1,
+,02,8,andeg001,salmt001,,,79,3,SCC,tam-j001,1,0,glaut001 strikes out. ,glaut001,1,
+,00,8,andeg001,salmt001,,,80,4,X,tam-j001,1,0,molib001 grounds out. ,molib001,1,G
+,32,9,,,,,81,21,BSBSBFS,turnd001,1,0,grieb001 strikes out. ,grieb001,0,
+,02,9,,,,,82,26,CSFFS,turnd001,1,0,saeno001 strikes out. ,saeno001,0,
+,32,9,staim001,,,,83,32,SBBBSB,turnd001,0,0,staim001 walks. ,staim001,0,
+staim001 scores. ,31,9,,,,,84,37,BBFBX,turnd001,0,2,tejam001 homers. ,tejam001,0,
+,02,9,,,,,85,40,CFS,turnd001,1,0,chave001 strikes out. ,chave001,0,
+,01,9,kenna001,,,,88,6,CX,tam-j001,0,0,kenna001 singles. ,kenna001,1,
+kenna001 to 2B. ,01,9,,kenna001,,baugj001,89,8,CC,tam-j001,0,0,kenna001 to 2B on defensive indifference. ,baugj001,1,
+kenna001 to 3B. ,12,9,,,kenna001,,90,12,CCBX,tam-j001,1,0,baugj001 grounds out. ,baugj001,1,G
+kenna001 scores. ,01,9,,,,erstd001,91,14,CB,tam-j001,0,1,Wild Pitch. ,erstd001,1,
+,11,9,,,,,92,17,CBX,tam-j001,1,0,erstd001 grounds out. ,erstd001,1,G
+,32,9,,,,,94,24,BBCCFBX,tam-j001,1,0,,spies001,1,F

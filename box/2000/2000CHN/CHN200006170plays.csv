@@ -1,0 +1,72 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,00,1,bergp001,,,,0,1,X,valdi001,0,0,bergp001 singles. ,bergp001,0,G
+,31,1,,,,vidrj001,1,6,BBCBC,valdi001,1,0,bergp001 caught stealing. ,vidrj001,0,
+,32,1,vidrj001,,,,2,12,BBCBCB,valdi001,0,0,vidrj001 walks. ,vidrj001,0,
+,10,1,,,,whitr001,3,14,B1,valdi001,1,0,vidrj001 picked off. ,whitr001,0,
+,32,1,whitr001,,,,4,21,B1BCBFB,valdi001,0,0,whitr001 walks. ,whitr001,0,
+,32,1,whitr001,,,,5,28,BCFBFBX,valdi001,1,0,,guerv001,0,P
+,32,1,,,,,6,7,BBBFFFX,hermd001,1,0,,youne001,1,L
+,32,1,browb003,,,,7,15,FBBFFFBB,hermd001,0,0,browb003 walks. ,browb003,1,
+,02,1,browb003,,,,8,18,FSS,hermd001,1,0,sosas001 strikes out. ,sosas001,1,
+,02,1,browb003,,,,9,21,CCX,hermd001,1,0,gracm001 grounds out. ,gracm001,1,G
+,01,2,stevl001,,,,10,30,CX,valdi001,0,0,stevl001 singles. ,stevl001,0,
+,12,2,stevl001,,,,11,35,CBFFS,valdi001,1,0,widgc001 strikes out. ,widgc001,0,
+,12,2,stevl001,,,,12,40,CBFFX,valdi001,1,0,,barrm003,0,F
+,22,2,stevl001,,,,13,45,SBBFX,valdi001,1,0,,cabro001,0,F
+,22,2,,,,,14,26,CCBBC,hermd001,1,0,rodrh001 strikes out. ,rodrh001,1,
+giraj001 to 2B. ,00,2,,giraj001,,,15,27,X,hermd001,0,0,giraj001 reaches on error. ,giraj001,1,
+,21,2,,giraj001,,,16,31,BFIX,hermd001,1,0,,greew001,1,F
+,30,2,husoj001,giraj001,,,17,35,BIII,hermd001,0,0,husoj001 intentionally walks. ,husoj001,1,
+giraj001 scores. husoj001 out. ,11,2,valdi001,,,,18,38,BSX,hermd001,1,1,valdi001 singles. ,valdi001,1,
+,32,3,,,,,19,51,BBBCFX,valdi001,1,0,,hermd001,0,F
+,30,3,bergp001,,,,20,55,BBBB,valdi001,0,0,bergp001 walks. ,bergp001,0,
+bergp001 to 3B. ,02,3,vidrj001,,bergp001,,21,58,CFX,valdi001,0,0,vidrj001 singles. ,vidrj001,0,
+vidrj001 to 2B. ,31,3,whitr001,vidrj001,bergp001,,22,63,FBBBB,valdi001,0,0,whitr001 walks. ,whitr001,0,
+,00,3,,vidrj001,bergp001,,23,64,X,valdi001,2,0,Double Play. ,guerv001,0,
+,21,3,,,,,24,42,CBBX,hermd001,1,0,,youne001,1,P
+,22,3,,,,,25,48,BFBFFC,hermd001,1,0,browb003 strikes out. ,browb003,1,
+,00,3,,,,,26,49,X,hermd001,1,0,sosas001 grounds out. ,sosas001,1,G
+,12,4,,,,,28,4,FBFX,rains001,1,0,,stevl001,0,F
+,12,4,,,,,29,8,SCBS,rains001,1,0,widgc001 strikes out. ,widgc001,0,
+,00,4,,,,,30,9,X,rains001,1,0,barrm003 grounds out. ,barrm003,0,G
+,01,4,,,,,31,51,CX,hermd001,1,0,,gracm001,1,L
+,31,4,rodrh001,,,,32,56,BBBCX,hermd001,0,0,rodrh001 singles. ,rodrh001,1,
+,11,4,,,,giraj001,33,59,LBS,hermd001,1,0,rodrh001 caught stealing. ,giraj001,1,
+,22,4,,,,,34,65,LBSFBX,hermd001,1,0,,giraj001,1,P
+,02,5,,,,,35,12,CFX,rains001,1,0,cabro001 grounds out. ,cabro001,0,G
+,12,5,hermd001,,,,36,17,CBCFX,rains001,0,0,hermd001 singles. ,hermd001,0,
+,02,5,hermd001,,,,37,20,FFC,rains001,1,0,bergp001 strikes out. ,bergp001,0,
+,02,5,hermd001,,,,38,23,FFX,rains001,1,0,,vidrj001,0,F
+,10,5,,,,,39,67,BX,hermd001,1,0,,greew001,1,P
+,32,5,,,,,40,76,BFCBBFFFX,hermd001,1,0,,husoj001,1,P
+,32,5,rains001,,,,41,83,SFBBFBB,hermd001,0,0,rains001 walks. ,rains001,1,
+,10,5,rains001,,,,42,85,BX,hermd001,1,0,,youne001,1,F
+,12,6,,,,,43,27,CBCX,rains001,1,0,whitr001 grounds out. ,whitr001,0,G
+,32,6,guerv001,,,,44,34,FBBFBFX,rains001,0,0,guerv001 singles. ,guerv001,0,
+,12,6,guerv001,,,,45,38,CFBX,rains001,1,0,,stevl001,0,L
+,00,6,,,,widgc001,46,39,C,rains001,1,0,guerv001 caught stealing. ,widgc001,0,
+,01,6,,,,,47,87,SX,hermd001,1,0,browb003 grounds out. ,browb003,1,G
+,10,6,sosas001,,,,48,89,BX,hermd001,0,0,sosas001 singles. ,sosas001,1,
+sosas001 out. ,10,6,gracm001,,,,49,91,BX,hermd001,1,0,gracm001 reaches on fielder's choice. ,gracm001,1,
+,12,6,gracm001,,,,50,95,FBSX,hermd001,1,0,,rodrh001,1,F
+,01,7,,,,,51,41,CX,rains001,1,0,,widgc001,0,P
+,00,7,,,,,52,42,X,rains001,1,0,barrm003 grounds out. ,barrm003,0,G
+,10,7,cabro001,,,,53,44,BX,rains001,0,0,cabro001 singles. ,cabro001,0,
+cabro001 to 2B. ,22,7,guerw001,cabro001,,,55,49,BFFBX,rains001,0,0,guerw001 singles. ,guerw001,0,
+,20,7,guerw001,cabro001,,,58,3,BBX,heref001,1,0,,mordm001,0,L
+,11,7,,,,,61,3,CBX,telfa001,1,0,,giraj001,1,F
+,10,7,,,,,62,5,BX,telfa001,1,0,,greew001,1,F
+,02,7,,husoj001,,,63,9,CFFX,telfa001,0,0,husoj001 doubles. ,husoj001,1,
+,31,7,,husoj001,,,65,14,BBFBX,telfa001,1,0,,mattg002,1,F
+,02,8,,,,,67,3,CFX,worrt002,1,0,vidrj001 grounds out. ,vidrj001,0,G
+,11,8,,,,,68,6,BCX,worrt002,1,0,,whitr001,0,L
+,31,8,guerv001,,,,69,11,BSBBB,worrt002,0,0,guerv001 walks. ,guerv001,0,
+guerv001 out. ,10,8,stevl001,,,,70,13,BX,worrt002,1,0,stevl001 reaches on fielder's choice. ,stevl001,0,
+,11,8,,,,,73,3,LBX,klins002,1,0,youne001 grounds out. ,youne001,1,G
+,02,8,,,,,74,6,SSS,klins002,1,0,browb003 strikes out. ,browb003,1,
+,22,8,,,,,75,11,SBSBS,klins002,1,0,sosas001 strikes out. ,sosas001,1,
+,20,9,widgc001,,,,77,3,BBX,aguir001,0,0,widgc001 singles. ,widgc001,0,
+,11,9,,,,,79,6,BSX,aguir001,2,0,Double Play. ,barrm003,0,
+,32,9,cabro001,,,,80,14,BBCCFBFB,aguir001,0,0,cabro001 walks. ,cabro001,0,
+,31,9,,cabro001,,guerw001,81,19,CBBBC,aguir001,0,0,cabro001 steals 2B. ,guerw001,0,
+,32,9,,cabro001,,,82,27,CBBBCFFX,aguir001,1,0,,guerw001,0,

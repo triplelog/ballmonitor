@@ -1,0 +1,130 @@
+version,2
+info,visteam,HOU
+info,hometeam,LAN
+info,site,LOS03
+info,date,2000/05/05
+info,number,0
+info,starttime,7:10PM
+info,daynight,night
+info,usedh,false
+info,umphome,emmep901
+info,ump1b,davig901
+info,ump2b,joycj901
+info,ump3b,riekr901
+info,pitches,pitches
+info,temp,66
+info,winddir,ltor
+info,windspeed,14
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,162
+info,attendance,45428
+info,wp,shawj001
+info,lp,henrd002
+info,save,
+start,biggc001,"Craig Biggio",0,1,4
+start,ceder001,"Roger Cedeno",0,2,8
+start,bagwj001,"Jeff Bagwell",0,3,3
+start,berkl001,"Lance Berkman",0,4,9
+start,wardd002,"Daryle Ward",0,5,7
+start,spieb001,"Bill Spiers",0,6,5
+start,euset001,"Tony Eusebio",0,7,2
+start,bogat001,"Tim Bogar",0,8,6
+start,reyns001,"Shane Reynolds",0,9,1
+start,hollt001,"Todd Hollandsworth",1,1,8
+start,grudm001,"Mark Grudzielanek",1,2,4
+start,shefg001,"Gary Sheffield",1,3,7
+start,grees001,"Shawn Green",1,4,9
+start,karre001,"Eric Karros",1,5,3
+start,hundt001,"Todd Hundley",1,6,2
+start,hansd001,"Dave Hansen",1,7,5
+start,coraa001,"Alex Cora",1,8,6
+start,browk001,"Kevin Brown",1,9,1
+play,1,0,biggc001,01,CX,3/G
+play,1,0,ceder001,12,CFBX,S1.B-2(E1/TH1)
+play,1,0,bagwj001,22,SFFBBX,43/G.2-3
+play,1,0,berkl001,32,BCFBFBX,31/G
+play,1,1,hollt001,32,BBCFBS,K
+play,1,1,grudm001,01,CX,8/F8D
+play,1,1,shefg001,31,CBBBB,W
+play,1,1,grees001,11,BCX,4/P4
+play,2,0,wardd002,10,BX,9/F9D
+play,2,0,spieb001,00,X,7/F7
+play,2,0,euset001,12,CSBFS,K
+play,2,1,karre001,02,CCX,S7/7S
+play,2,1,hundt001,32,BCBSBX,63/G.1-2
+play,2,1,hansd001,12,SBCX,FC1.2X3(156);B-2
+play,2,1,coraa001,02,CFFX,8/F8
+play,3,0,bogat001,32,FBFBBFX,4/P4
+play,3,0,reyns001,00,X,13/G
+play,3,0,biggc001,22,CBFBC,K/C
+play,3,1,browk001,12,FSFBX,13/G
+play,3,1,hollt001,01,CX,D/78
+play,3,1,grudm001,00,X,53/G
+play,3,1,shefg001,01,CX,D7.2-H
+play,3,1,grees001,31,BSBBB,W
+play,3,1,karre001,20,BBX,9/F9
+play,4,0,ceder001,00,X,6/L6
+play,4,0,bagwj001,21,BSBX,HR/8
+play,4,0,berkl001,11,BSX,6/P6
+play,4,0,wardd002,12,CSBC,K/C
+play,4,1,hundt001,20,BBX,HR/78
+play,4,1,hansd001,32,BBFFBX,S
+play,4,1,coraa001,31,BSBBX,46(1)/FO
+play,4,1,browk001,00,X,34/SH.1-2
+play,4,1,hollt001,00,X,43/G
+play,5,0,spieb001,32,CBFBBX,6/P6
+play,5,0,euset001,32,BFBFFFBFFX,9/F9
+play,5,0,bogat001,22,FCBBX,9/F9
+play,5,1,grudm001,00,X,13/G
+play,5,1,shefg001,00,X,S7/7D
+play,5,1,grees001,22,BBCSX,64(1)3/GDP
+play,6,0,reyns001,10,BX,43/G
+play,6,0,biggc001,00,X,53/G
+play,6,0,ceder001,00,X,13/BG
+play,6,1,karre001,01,FX,53/G
+play,6,1,hundt001,22,BBSSS,K
+play,6,1,hansd001,32,CFFFBBBB,W
+play,6,1,coraa001,10,BX,3/G
+play,7,0,bagwj001,10,BX,S7/7S
+play,7,0,berkl001,00,X,E6/G.1-2
+play,7,0,wardd002,12,BFCS,K
+play,7,0,spieb001,00,X,8/F8D.2-3
+play,7,0,euset001,30,BBBB,W.1-2
+play,7,0,bogat001,01,SB,OA.3XH(2)#
+play,7,1,browk001,01,FX,S7
+play,7,1,hollt001,11,SBX,46(1)/FO
+play,7,1,grudm001,21,BCBX,7/L7
+play,7,1,shefg001,10,BX,6(1)/FO/G
+play,8,0,bogat001,22,BFFFBC,K/C
+play,8,0,reyns001,00,,NP
+sub,camik001,"Ken Caminiti",0,9,11
+play,8,0,camik001,00,X,43/G
+play,8,0,biggc001,21,BSBX,53/G
+play,8,1,grees001,00,,NP
+sub,henrd002,"Doug Henry",0,9,1
+play,8,1,grees001,12,SCFBFS,K
+play,8,1,karre001,10,BX,8/F8
+play,8,1,hundt001,30,BBBB,W
+play,8,1,hansd001,22,BBCCX,9/L9
+play,9,0,ceder001,00,,NP
+sub,shawj001,"Jeff Shaw",1,9,1
+play,9,0,ceder001,10,BX,7/F7
+play,9,0,bagwj001,01,FX,9/F9
+play,9,0,berkl001,10,BX,HR/9
+play,9,0,wardd002,11,CBX,4/L4
+play,9,1,coraa001,00,,NP
+sub,lugoj001,"Julio Lugo",0,5,7
+play,9,1,coraa001,22,BCBFX,D9
+play,9,1,shawj001,00,,NP
+sub,santf001,"F.P. Santangelo",1,9,11
+play,9,1,santf001,01,LX,14/SH.2-3
+play,9,1,hollt001,00,,NP
+sub,powej001,"Jay Powell",0,9,1
+play,9,1,hollt001,31,FBBBX,S8.3-H
+data,er,reyns001,2
+data,er,henrd002,1
+data,er,powej001,0
+data,er,browk001,1
+data,er,shawj001,1

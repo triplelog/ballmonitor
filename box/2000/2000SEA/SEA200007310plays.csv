@@ -1,0 +1,85 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,12,1,,,,,0,4,CBCX,abbop001,1,0,nixot001 grounds out. ,nixot001,0,G
+,01,1,,,,,1,6,CX,abbop001,1,0,,varij001,0,F
+,12,1,,,,,2,12,CFFBFX,abbop001,1,0,daubb001 grounds out. ,daubb001,0,G
+,32,1,hendr001,,,,3,9,BBBCCFFFB,martr002,0,0,hendr001 walks. ,hendr001,1,
+,10,1,,hendr001,,mclem001,4,11,BC,martr002,0,0,hendr001 steals 2B. ,mclem001,1,
+,22,1,,hendr001,,,5,16,BCBCX,martr002,1,0,,mclem001,1,
+,31,1,rodra001,hendr001,,,6,21,BBCBB,martr002,0,0,rodra001 walks. ,rodra001,1,
+,10,1,,rodra001,hendr001,marte001,7,23,BB,martr002,0,0,hendr001 steals 3B. rodra001 steals 2B. ,marte001,1,
+,30,1,marte001,rodra001,hendr001,,8,27,BBBB,martr002,0,0,marte001 walks. ,marte001,1,
+,02,1,marte001,rodra001,hendr001,,9,30,CFC,martr002,1,0,olerj001 strikes out. ,olerj001,1,
+hendr001 scores. rodra001 scores. marte001 scores. ,32,1,,,,,10,37,BBSFBFX,martr002,0,4,buhnj001 homers. ,buhnj001,1,
+,30,1,camem001,,,,11,41,BBBB,martr002,0,0,camem001 walks. ,camem001,1,
+,10,1,,camem001,,wilsd001,12,43,BB,martr002,0,0,camem001 steals 2B. ,wilsd001,1,
+,32,1,,camem001,,,13,50,BBFBFFX,martr002,1,0,wilsd001 grounds out. ,wilsd001,1,G
+,20,2,,,,,14,15,BBX,abbop001,0,1,garcn001 homers. ,garcn001,0,
+,32,2,oleat001,,,,15,21,BBBCFB,abbop001,0,0,oleat001 walks. ,oleat001,0,
+oleat001 to 2B. ,01,2,gilkb001,oleat001,,,16,23,CX,abbop001,0,0,gilkb001 singles. ,gilkb001,0,
+oleat001 scores. gilkb001 to 3B. ,32,2,hatts001,,gilkb001,,17,32,BBFFFFBFX,abbop001,0,1,hatts001 reaches on error. ,hatts001,0,G
+,22,2,hatts001,,gilkb001,,18,38,FBSFBX,abbop001,1,0,,sprae001,0,P
+gilkb001 scores. ,22,2,hatts001,,,,19,45,SBCBFFX,abbop001,1,1,lansm001 hits sacrifice fly. ,lansm001,0,
+hatts001 to 2B. ,30,2,nixot001,hatts001,,,20,49,BBBB,abbop001,0,0,nixot001 walks. ,nixot001,0,
+hatts001 to 3B. nixot001 to 2B. ,11,2,varij001,nixot001,hatts001,,21,52,SBX,abbop001,0,0,varij001 singles. ,varij001,0,
+,10,2,varij001,nixot001,hatts001,,22,54,BX,abbop001,1,0,,daubb001,0,F
+,30,2,belld002,,,,23,54,BBBB,martr002,0,0,belld002 walks. ,belld002,1,
+belld002 to 2B. ,32,2,hendr001,belld002,,,25,6,BCCBBX,florb001,0,0,hendr001 singles. ,hendr001,1,
+belld002 to 3B. hendr001 to 2B. ,00,2,,hendr001,belld002,,26,7,X,florb001,1,0,Sacrifice bunt by mclem001.,mclem001,1,
+belld002 scores. ,21,2,,hendr001,,,27,11,BBFX,florb001,1,1,rodra001 grounds out. ,rodra001,1,G
+,11,2,,hendr001,,,28,14,CBX,florb001,1,0,,marte001,1,L
+,32,3,garcn001,,,,29,61,BFBFBFB,abbop001,0,0,garcn001 walks. ,garcn001,0,
+,12,3,garcn001,,,,30,65,FBFS,abbop001,1,0,oleat001 strikes out. ,oleat001,0,
+,21,3,garcn001,,,,31,69,BBFX,abbop001,1,0,,gilkb001,0,
+garcn001 out. ,31,3,hatts001,,,,32,74,BBBCX,abbop001,1,0,hatts001 reaches on fielder's choice. ,hatts001,0,G
+,10,3,,,,,33,16,BX,florb001,1,0,olerj001 grounds out. ,olerj001,1,G
+,21,3,,,,,34,20,BSBX,florb001,1,0,,buhnj001,1,F
+,21,3,,,,,35,24,BCBX,florb001,1,0,camem001 grounds out. ,camem001,1,G
+,11,4,,,,,36,77,BCX,abbop001,1,0,sprae001 grounds out. ,sprae001,0,G
+,10,4,,,,,37,79,BX,abbop001,1,0,,lansm001,0,F
+,31,4,nixot001,,,,38,84,BBCBX,abbop001,0,0,nixot001 singles. ,nixot001,0,
+,22,4,nixot001,,,,39,89,FFBBX,abbop001,1,0,varij001 grounds out. ,varij001,0,G
+,32,4,wilsd001,,,,40,31,BBCFFBB,florb001,0,0,wilsd001 walks. ,wilsd001,1,
+wilsd001 to 2B. ,00,4,,wilsd001,,,41,32,X,florb001,1,0,Sacrifice bunt by belld002.,belld002,1,
+,01,4,,wilsd001,,,42,34,CX,florb001,1,0,,hendr001,1,L
+,32,4,,wilsd001,,,43,40,CBCBBS,florb001,1,0,mclem001 strikes out. ,mclem001,1,
+,10,5,,,,,44,91,BX,abbop001,1,0,daubb001 grounds out. ,daubb001,0,G
+,12,5,,,,,45,95,BFFX,abbop001,1,0,,garcn001,0,F
+,31,5,oleat001,,,,46,100,BBCBB,abbop001,0,0,oleat001 walks. ,oleat001,0,
+,21,5,oleat001,,,,47,104,BBSX,abbop001,1,0,,gilkb001,0,F
+,22,5,,,,,49,5,CBBCX,beckr001,1,0,,rodra001,1,P
+,02,5,,,,,50,8,CCS,beckr001,1,0,marte001 strikes out. ,marte001,1,
+,00,5,,,,,51,9,X,beckr001,1,0,olerj001 grounds out. ,olerj001,1,G
+,22,6,,hatts001,,,52,110,CBBFFX,abbop001,0,0,hatts001 doubles. ,hatts001,0,
+,00,6,,hatts001,,,53,111,X,abbop001,1,0,,sprae001,0,F
+hatts001 scores. ,10,6,lansm001,,,,54,113,BX,abbop001,0,1,lansm001 singles. ,lansm001,0,
+,32,6,lansm001,,,,56,7,BSBSBFS,rhoda001,1,0,nixot001 strikes out. ,nixot001,0,
+,22,6,lansm001,,,,57,19,SFFBBFFFFFFC,rhoda001,1,0,varij001 strikes out. ,varij001,0,
+,00,6,,,,,58,10,X,beckr001,1,0,,buhnj001,1,P
+,32,6,camem001,,,,59,17,BCCBFBB,beckr001,0,0,camem001 walks. ,camem001,1,
+,10,6,,,,wilsd001,60,19,BB,beckr001,1,0,camem001 caught stealing. ,wilsd001,1,
+,22,6,,,,,61,24,BBFCC,beckr001,1,0,wilsd001 strikes out. ,wilsd001,1,
+,11,7,,,,,62,22,CBX,rhoda001,1,0,daubb001 grounds out. ,daubb001,0,G
+,32,7,,,,,63,28,FFBBBX,rhoda001,1,0,,garcn001,0,F
+,02,7,,,,,64,31,FSC,rhoda001,1,0,oleat001 strikes out. ,oleat001,0,
+,31,7,,,,,66,5,BBCBX,garcr001,1,0,belld002 grounds out. ,belld002,1,G
+,22,7,hendr001,,,,67,11,BBCCFX,garcr001,0,0,hendr001 singles. ,hendr001,1,
+,01,7,hendr001,,,,68,13,CX,garcr001,1,0,,mclem001,1,F
+,00,7,,hendr001,,rodra001,69,14,C,garcr001,0,0,hendr001 steals 2B. ,rodra001,1,
+,12,7,,hendr001,,,70,19,CFBFX,garcr001,1,0,rodra001 grounds out. ,rodra001,1,G
+,21,8,,,,,72,4,BBCX,mesaj001,1,0,,gilkb001,0,F
+,01,8,hatts001,,,,73,6,FX,mesaj001,0,0,hatts001 singles. ,hatts001,0,
+,10,8,lewid001,,,,75,8,BX,mesaj001,1,0,,sprae001,0,F
+lewid001 to 3B. ,22,8,lansm001,,lewid001,,76,13,FBSBX,mesaj001,0,0,lansm001 singles. ,lansm001,0,
+lewid001 scores. lansm001 to 3B. ,20,8,nixot001,,lansm001,,78,3,BBX,sasak001,0,1,nixot001 singles. ,nixot001,0,
+lansm001 scores. nixot001 scores. ,01,8,,,,,79,5,CX,sasak001,0,3,varij001 homers. ,varij001,0,
+,01,8,,,,,80,7,CX,sasak001,1,0,,daubb001,0,F
+,12,8,,,,,84,4,BCFX,pichh001,1,0,marte001 grounds out. ,marte001,1,G
+,22,8,,,,,85,9,BCBCX,pichh001,1,0,olerj001 grounds out. ,olerj001,1,G
+,12,8,,,,,86,13,BFSS,pichh001,1,0,buhnj001 strikes out. ,buhnj001,1,
+,01,9,garcn001,,,,88,2,FX,panij001,0,0,garcn001 singles. ,garcn001,0,
+garcn001 to 2B. ,12,9,,garcn001,,,89,6,BCFX,panij001,1,0,oleat001 grounds out. ,oleat001,0,G
+,22,9,,garcn001,,,90,11,BCCBC,panij001,1,0,pichh001 strikes out. ,pichh001,0,
+,22,9,,garcn001,,,91,16,FBBCX,panij001,1,0,,lewid001,0,F
+,00,9,,,,,92,14,X,pichh001,1,0,camem001 grounds out. ,camem001,1,G
+,01,9,,,,,94,16,CX,pichh001,1,0,javis001 grounds out. ,javis001,1,G
+,32,9,,,,,96,22,BBCFBX,pichh001,1,0,,ibanr001,1,F

@@ -1,0 +1,160 @@
+version,2
+info,visteam,BAL
+info,hometeam,NYA
+info,site,NYC16
+info,date,2000/05/07
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,gormb901
+info,ump1b,everm901
+info,ump2b,crawj901
+info,ump3b,dimum901
+info,pitches,pitches
+info,temp,90
+info,winddir,rtol
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,198
+info,attendance,52559
+info,wp,groob001
+info,lp,rivem002
+info,save,timlm001
+start,andeb001,"Brady Anderson",0,1,8
+start,deshd001,"Delino DeShields",0,2,4
+start,surhb001,"B.J. Surhoff",0,3,7
+start,bellj002,"Albert Belle",0,4,9
+start,bainh001,"Harold Baines",0,5,10
+start,ripkc001,"Cal Ripken",0,6,5
+start,conij001,"Jeff Conine",0,7,3
+start,johnc002,"Charles Johnson",0,8,2
+start,bordm001,"Mike Bordick",0,9,6
+start,ponss001,"Sidney Ponson",0,0,1
+start,leder001,"Ricky Ledee",1,1,7
+start,jeted001,"Derek Jeter",1,2,6
+start,oneip001,"Paul O'Neill",1,3,9
+start,willb002,"Bernie Williams",1,4,8
+start,martt002,"Tino Martinez",1,5,3
+start,posaj001,"Jorge Posada",1,6,2
+start,spens001,"Shane Spencer",1,7,10
+start,bross001,"Scott Brosius",1,8,5
+start,bellc001,"Clay Bellinger",1,9,4
+start,mendr001,"Ramiro Mendoza",1,0,1
+play,1,0,andeb001,11,CBX,43/G
+play,1,0,deshd001,12,FFFBS,K
+play,1,0,surhb001,22,FBSBFC,K/C
+play,1,1,leder001,01,CX,63/G
+play,1,1,jeted001,22,CBFBS,K
+play,1,1,oneip001,00,X,13/G
+play,2,0,bellj002,00,X,53/G
+play,2,0,bainh001,31,BFBBX,43/G
+play,2,0,ripkc001,11,CBX,HR/7
+play,2,0,conij001,12,CBCX,53/G
+play,2,1,willb002,21,BFBX,3/G
+play,2,1,martt002,01,CX,63/G
+play,2,1,posaj001,21,BCBX,63/G
+play,3,0,johnc002,21,BBSX,S7
+play,3,0,bordm001,00,X,4/P4
+play,3,0,andeb001,22,BFSFFBFX,9/F9
+play,3,0,deshd001,21,CBBX,43/G
+play,3,1,spens001,11,CBX,6/L6
+play,3,1,bross001,32,FFBFBBX,53/G
+play,3,1,bellc001,31,BFBBX,53/G
+play,4,0,surhb001,10,BX,3/G
+play,4,0,bellj002,02,SSX,6/P6
+play,4,0,bainh001,00,X,S
+play,4,0,ripkc001,32,CBBFBX,8/F8
+play,4,1,leder001,22,SFBBX,8/F8
+play,4,1,jeted001,00,X,8/F8
+play,4,1,oneip001,22,BSSBX,S
+play,4,1,willb002,30,BBBB,W.1-2
+play,4,1,martt002,22,CSBBFX,S/78.2-H;1-3
+play,4,1,posaj001,32,CBBCBFB,W.1-2
+play,4,1,spens001,10,BX,53/G
+play,5,0,conij001,32,BCSFBFBFX,4/P4
+play,5,0,johnc002,01,FX,S
+play,5,0,bordm001,02,FFX,8/F8
+play,5,0,andeb001,11,LBX,7/F7
+play,5,1,bross001,00,X,D9
+play,5,1,bellc001,10,BX,9/F9.2-3
+play,5,1,leder001,12,BFSX,4/P4
+play,5,1,jeted001,22,FBFBFFFS,K
+play,6,0,deshd001,10,BX,HR/9
+play,6,0,surhb001,32,BBFBFX,D/78
+play,6,0,bellj002,01,CX,9/F9.2-3
+play,6,0,bainh001,10,BX,8/SF.3-H
+play,6,0,ripkc001,21,BBCX,7/F7
+play,6,1,oneip001,00,X,43/G
+play,6,1,willb002,01,FX,D9/9S
+play,6,1,martt002,20,BBX,7/F7
+play,6,1,posaj001,30,BBBB,W
+play,6,1,spens001,32,BBSCFFFFBB,W.2-3;1-2
+play,6,1,bross001,31,BBFBB,W.3-H;2-3;1-2
+play,6,1,bellc001,00,,NP
+sub,johnl001,"Lance Johnson",1,9,11
+play,6,1,johnl001,21,BCBX,43/G
+play,7,0,conij001,00,,NP
+sub,delgw001,"Wilson Delgado",1,9,4
+play,7,0,conij001,00,,NP
+sub,grimj001,"Jason Grimsley",1,0,1
+play,7,0,conij001,02,FFC,K/C
+play,7,0,johnc002,22,SFFBBX,8/F8
+play,7,0,bordm001,00,X,63/G
+play,7,1,leder001,00,,NP
+sub,ryanb001,"B.J. Ryan",0,0,1
+play,7,1,leder001,22,BCCBX,T/78D
+play,7,1,jeted001,00,X,13/G
+play,7,1,oneip001,10,BX,3/G
+play,7,1,willb002,00,X,63/G
+play,8,0,andeb001,00,,NP
+sub,stanm003,"Mike Stanton",1,0,1
+play,8,0,andeb001,22,CBSFFBX,3/G
+play,8,0,deshd001,32,CBBFBS,K
+play,8,0,surhb001,11,BSX,S7
+play,8,0,bellj002,00,,NP
+sub,nelsj001,"Jeff Nelson",1,0,1
+play,8,0,bellj002,30,BBBB,W.1-2
+play,8,0,bainh001,11,BCX,D9.2-H;1-3
+play,8,0,ripkc001,30,BBBB,W
+play,8,0,conij001,12,BCFX,6/P6
+play,8,1,martt002,32,CBBSBB,W
+play,8,1,posaj001,31,BCBBX,D9.1-3
+play,8,1,spens001,00,,NP
+sub,tromm001,"Mike Trombley",0,0,1
+play,8,1,spens001,32,CBSBBB,W
+play,8,1,bross001,12,BFSX,HR/78.3-H;2-H;1-H
+play,8,1,delgw001,02,SCFX,S8
+play,8,1,leder001,00,X,S9.1-2
+play,8,1,jeted001,01,FX,53/SH.2-3;1-2
+play,8,1,oneip001,00,,NP
+sub,groob001,"Buddy Groom",0,0,1
+play,8,1,oneip001,22,FSBBX,43/G
+play,8,1,willb002,30,IIII,IW
+play,8,1,martt002,12,CSBS,K
+play,9,0,johnc002,00,,NP
+sub,rivem002,"Mariano Rivera",1,0,1
+play,9,0,johnc002,31,BBCBX,S8
+play,9,0,bordm001,01,FX,8/F8
+play,9,0,andeb001,02,FSX,S7/7S.1-3
+play,9,0,deshd001,01,FX,S9.3-H;1-2
+play,9,0,surhb001,00,X,43/G.2-3;1-2
+play,9,0,bellj002,22,SBBSFX,S8.3-H;2-H
+play,9,0,bainh001,02,SCX,6/P6
+play,9,1,posaj001,00,,NP
+sub,timlm001,"Mike Timlin",0,0,1
+play,9,1,posaj001,00,X,S8
+play,9,1,spens001,02,FFS,K
+play,9,1,bross001,32,BSSBFBFS,K+CS2(24)/DP
+data,er,ponss001,2
+data,er,ryanb001,2
+data,er,tromm001,2
+data,er,groob001,0
+data,er,timlm001,0
+data,er,mendr001,3
+data,er,grimj001,0
+data,er,stanm003,1
+data,er,nelsj001,0
+data,er,rivem002,3

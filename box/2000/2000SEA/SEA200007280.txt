@@ -1,0 +1,139 @@
+version,2
+info,visteam,TOR
+info,hometeam,SEA
+info,site,SEA03
+info,date,2000/07/28
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,davig901
+info,ump1b,guccc901
+info,ump2b,riekr901
+info,ump3b,emmep901
+info,pitches,pitches
+info,temp,70
+info,winddir,ltor
+info,windspeed,7
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,191
+info,attendance,37126
+info,wp,garcf002
+info,lp,carpc002
+info,save,sasak001
+start,stews002,"Shannon Stewart",0,1,7
+start,bushh001,"Homer Bush",0,2,4
+start,cruzj004,"Jose Cruz",0,3,8
+start,delgc001,"Carlos Delgado",0,4,3
+start,fullb001,"Brad Fullmer",0,5,10
+start,batit001,"Tony Batista",0,6,5
+start,fletd001,"Darrin Fletcher",0,7,2
+start,duceb001,"Rob Ducey",0,8,9
+start,gonza001,"Alex S. Gonzalez",0,9,6
+start,carpc002,"Chris Carpenter",0,0,1
+start,hendr001,"Rickey Henderson",1,1,7
+start,mclem001,"Mark McLemore",1,2,4
+start,rodra001,"Alex Rodriguez",1,3,6
+start,marte001,"Edgar Martinez",1,4,10
+start,olerj001,"John Olerud",1,5,3
+start,buhnj001,"Jay Buhner",1,6,9
+start,camem001,"Mike Cameron",1,7,8
+start,wilsd001,"Dan Wilson",1,8,2
+start,belld002,"David Bell",1,9,5
+start,garcf002,"Freddy An. Garcia",1,0,1
+play,1,0,stews002,22,CSFBBFFS,K
+play,1,0,bushh001,02,CSX,6/L6
+play,1,0,cruzj004,11,BFX,7/F7
+play,1,1,hendr001,00,X,7/L7
+play,1,1,mclem001,31,BBBCB,W
+play,1,1,rodra001,31,CBBBC,SB2
+play,1,1,rodra001,32,CBBBCB,W
+play,1,1,marte001,22,BBCFX,7/F7
+play,1,1,olerj001,10,BX,9/F9
+play,2,0,delgc001,21,CBBX,D9
+play,2,0,fullb001,00,X,FC1.2X3(1X);B-1#
+play,2,0,batit001,11,BFX,53/G.1-2
+play,2,0,fletd001,00,X,8/F8
+play,2,1,buhnj001,10,BX,S8
+play,2,1,camem001,12,CBCX,D7.1-3
+play,2,1,wilsd001,12,SBFX,S8/8S.3-H;2-3
+play,2,1,belld002,11,BCX,S8.3-H;1-2
+play,2,1,hendr001,31,CBBBX,54(1)3/GDP.2-3
+play,2,1,mclem001,10,BX,7/F7S
+play,3,0,duceb001,31,CBBBB,W
+play,3,0,gonza001,22,CBFBFS,K
+play,3,0,stews002,31,BBSBB,W.1-2
+play,3,0,bushh001,12,FBFS,K
+play,3,0,cruzj004,00,X,HR/9.2-H;1-H
+play,3,0,delgc001,10,BX,D8/8D
+play,3,0,fullb001,11,BCX,D7.2-H
+play,3,0,batit001,01,SX,53/G
+play,3,1,rodra001,32,BBBCFC,K/C
+play,3,1,marte001,10,BX,D9/9D
+play,3,1,olerj001,32,CBBBFB,W
+play,3,1,buhnj001,00,X,S7.2-3;1-2
+play,3,1,camem001,10,BX,9/SF.3-H;2-3
+play,3,1,wilsd001,31,BBFBB,W.1-2
+play,3,1,belld002,32,BCBBFX,9/F9S
+play,4,0,fletd001,22,CBBCFFS,K
+play,4,0,duceb001,21,BCBX,6/P6
+play,4,0,gonza001,12,CBFS,K
+play,4,1,hendr001,31,BBBCX,S8
+play,4,1,mclem001,12,CFBX,S9.1-2
+play,4,1,rodra001,31,BBBCX,5(2)/FO.1-3;B-2(E5/TH)
+play,4,1,marte001,30,BBBB,W
+play,4,1,olerj001,00,,NP
+sub,hallr001,"Roy Halladay",0,0,1
+play,4,1,olerj001,30,BBBB,W.3-H;2-3;1-2
+play,4,1,buhnj001,22,BCCBH,HP.3-H;2-3;1-2
+play,4,1,camem001,02,FCFFX,46(1)/FO.3-H;2-3
+play,4,1,wilsd001,00,X,64(1)/FO
+play,5,0,stews002,22,BSFBS,K
+play,5,0,bushh001,12,BSSS,K
+play,5,0,cruzj004,00,X,3/G
+play,5,1,belld002,10,BX,7/F7
+play,5,1,hendr001,20,BBX,9/F9D
+play,5,1,mclem001,11,BCX,S9
+play,5,1,rodra001,21,CBBX,3/FL
+play,6,0,delgc001,21,BBCX,41/G
+play,6,0,fullb001,32,CSBBFBS,K
+play,6,0,batit001,32,BCBFBB,W
+play,6,0,fletd001,10,BX,13/G
+play,6,1,marte001,22,BBCFFFS,K
+play,6,1,olerj001,02,CSX,31/G
+play,6,1,buhnj001,12,SBCX,3/FL
+play,7,0,duceb001,31,BCBBX,8/F8
+play,7,0,gonza001,20,BBX,S7
+play,7,0,stews002,12,SBFFX,S9.1-2
+play,7,0,bushh001,22,BBCFX,8/F8D
+play,7,0,cruzj004,00,,NP
+sub,ramsr001,"Robert Ramsay",1,0,1
+play,7,0,cruzj004,12,BCFS,K
+play,7,1,camem001,31,CBBBB,W
+play,7,1,wilsd001,01,LS,SB2
+play,7,1,wilsd001,02,LSFFX,1/G.2-3
+play,7,1,belld002,32,BBCBFFB,W
+play,7,1,hendr001,00,,NP
+sub,quanp001,"Paul Quantrill",0,0,1
+play,7,1,hendr001,01,CX,64(1)/FO.3-H
+play,7,1,mclem001,11,BCC,SB2
+play,7,1,mclem001,12,BCCC,K/C
+play,8,0,delgc001,11,BCX,31/G
+play,8,0,fullb001,22,BCSBC,K/C
+play,8,0,batit001,22,BSFBS,K
+play,8,1,rodra001,21,CBBX,63/G
+play,8,1,marte001,22,CBFBFC,K/C
+play,8,1,olerj001,12,CBFC,K/C
+play,9,0,fletd001,00,,NP
+sub,sasak001,"Kazuhiro Sasaki",1,0,1
+play,9,0,fletd001,12,FBFX,7/F7
+play,9,0,duceb001,02,CSX,43/G
+play,9,0,gonza001,12,BCFS,K
+data,er,carpc002,6
+data,er,hallr001,1
+data,er,quanp001,0
+data,er,garcf002,4
+data,er,ramsr001,0
+data,er,sasak001,0

@@ -1,0 +1,145 @@
+version,2
+info,visteam,ATL
+info,hometeam,FLO
+info,site,MIA01
+info,date,2000/05/10
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,dimum901
+info,ump1b,gormb901
+info,ump2b,everm901
+info,ump3b,crawj901
+info,pitches,pitches
+info,temp,83
+info,winddir,fromrf
+info,windspeed,15
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,166
+info,attendance,15249
+info,wp,sancj001
+info,lp,glavt001
+info,save,alfoa001
+start,veraq001,"Quilvio Veras",0,1,4
+start,jonea002,"Andruw Jones",0,2,8
+start,jonec004,"Chipper Jones",0,3,5
+start,galaa001,"Andres Galarraga",0,4,3
+start,jordb001,"Brian Jordan",0,5,9
+start,lopej001,"Javy Lopez",0,6,2
+start,bonib001,"Bobby Bonilla",0,7,7
+start,furcr001,"Rafael Furcal",0,8,6
+start,glavt001,"Tom Glavine",0,9,1
+start,castl001,"Luis Castillo",1,1,4
+start,bergd002,"Dave Berg",1,2,6
+start,floyc001,"Cliff Floyd",1,3,7
+start,wilsp002,"Preston Wilson",1,4,8
+start,lowem001,"Mike Lowell",1,5,5
+start,lee-d002,"Derrek Lee",1,6,3
+start,bautd001,"Danny Bautista",1,7,9
+start,redmm001,"Mike Redmond",1,8,2
+start,sancj001,"Jesus Sanchez",1,9,1
+play,1,0,veraq001,00,X,53/G
+play,1,0,jonea002,32,BFBFBFFS,K
+play,1,0,jonec004,02,FSX,9/F9
+play,1,1,castl001,12,CFBX,63/G
+play,1,1,bergd002,12,CBFS,K
+play,1,1,floyc001,10,BX,3/G
+play,2,0,galaa001,12,CBSFX,53/G
+play,2,0,jordb001,01,CX,S.BX2(4)#
+play,2,0,lopej001,11,CBX,53/G
+play,2,1,wilsp002,22,BBCSFX,8/F8
+play,2,1,lowem001,01,CX,53/G
+play,2,1,lee-d002,01,CX,S9
+play,2,1,bautd001,11,BFX,63/G
+play,3,0,bonib001,10,BX,T/78
+play,3,0,furcr001,12,FBFS,K
+play,3,0,glavt001,12,SLFBX,S8/8S.3-H
+play,3,0,veraq001,00,X,64(1)3/GDP
+play,3,1,redmm001,11,FBX,S
+play,3,1,sancj001,11,BLX,16(1)/FO
+play,3,1,castl001,21,CBBX,7/F7
+play,3,1,bergd002,21,BFBX,D/89D.1-3
+play,3,1,floyc001,00,X,D7.3-H;2-H
+play,3,1,wilsp002,22,BCBSS,K
+play,4,0,jonea002,00,X,S
+play,4,0,jonec004,10,BX,3/FL
+play,4,0,galaa001,12,FFFBX,64(1)3/GDP
+play,4,1,lowem001,20,BBX,HR/7
+play,4,1,lee-d002,22,CBFBFFX,63/G
+play,4,1,bautd001,10,BX,9/L9
+play,4,1,redmm001,01,CX,S
+play,4,1,sancj001,02,CFX,13/G
+play,5,0,jordb001,00,X,D/78D
+play,5,0,lopej001,01,CX,9/F9.2-3
+play,5,0,bonib001,21,BBFX,D8/8D.3-H;BX3(845)
+play,5,0,furcr001,22,SBBCX,31/G
+play,5,1,castl001,02,CCC,K/C
+play,5,1,bergd002,32,BBSSBC,K/C
+play,5,1,floyc001,12,CFBX,63/G
+play,6,0,glavt001,32,BBBCCB,W
+play,6,0,veraq001,10,BX,D7/7D.1-3
+play,6,0,jonea002,30,BBBB,W
+play,6,0,jonec004,00,X,9(B)242(3)/DP.2-3;1-2
+play,6,0,galaa001,00,X,63/G
+play,6,1,wilsp002,00,X,HR/7
+play,6,1,lowem001,10,BX,53/G
+play,6,1,lee-d002,32,BFCBBFX,6/P6
+play,6,1,bautd001,11,BSX,E4/G
+play,6,1,redmm001,21,BFBX,43/G
+play,7,0,jordb001,20,BBX,HR/7
+play,7,0,lopej001,00,X,63/G
+play,7,0,bonib001,10,BX,13/G
+play,7,0,furcr001,11,CBX,13/BG
+play,7,1,sancj001,00,,NP
+sub,smitm004,"Mark Smith",1,9,11
+play,7,1,smitm004,12,SBFX,63/G
+play,7,1,castl001,21,BBCX,S9/9S
+play,7,1,bergd002,22,FBFBX,43/G.1-2
+play,7,1,floyc001,22,BBCCX,S9/9S.2-H
+play,7,1,wilsp002,22,BBCFS,K
+play,8,0,glavt001,00,,NP
+sub,kotsm001,"Mark Kotsay",1,9,9
+play,8,0,glavt001,00,,NP
+sub,bautd001,"Danny Bautista",1,7,7
+play,8,0,glavt001,00,,NP
+sub,joynw001,"Wally Joyner",0,9,11
+play,8,0,joynw001,00,,NP
+sub,miced001,"Dan Miceli",1,3,1
+play,8,0,joynw001,32,CBBFBFB,W
+play,8,0,veraq001,00,,NP
+sub,siscs001,"Steve Sisco",0,9,12
+play,8,0,veraq001,01,FX,S9.1-2
+play,8,0,jonea002,31,BBFBB,W.2-3;1-2
+play,8,0,jonec004,00,,NP
+sub,almaa001,"Armando Almanza",1,3,1
+play,8,0,jonec004,32,BBFFBFX,9/F9
+play,8,0,galaa001,22,SBBSS,K
+play,8,0,jordb001,00,,NP
+sub,loopb001,"Braden Looper",1,3,1
+play,8,0,jordb001,12,CSBS,K
+play,8,1,lowem001,00,,NP
+sub,seanr001,"Rudy Seanez",0,9,1
+play,8,1,lowem001,32,BSBSBFFS,K
+play,8,1,lee-d002,01,SX,8/F8
+play,8,1,bautd001,02,CCS,K
+play,9,0,lopej001,00,,NP
+sub,alfoa001,"Antonio Alfonseca",1,3,1
+play,9,0,lopej001,02,CSFFX,13/G
+play,9,0,bonib001,32,SSBBFBB,W
+play,9,0,furcr001,00,,NP
+sub,hubbt001,"Trenidad Hubbard",0,7,12
+play,9,0,furcr001,00,X,S.1-2
+play,9,0,seanr001,00,,NP
+sub,lockk001,"Keith Lockhart",0,9,11
+play,9,0,lockk001,00,X,43/G.2-3;1-2
+play,9,0,veraq001,11,CBX,63/G
+data,er,glavt001,5
+data,er,seanr001,0
+data,er,sancj001,3
+data,er,miced001,0
+data,er,almaa001,0
+data,er,loopb001,0
+data,er,alfoa001,0

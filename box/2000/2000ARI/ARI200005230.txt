@@ -1,0 +1,131 @@
+version,2
+info,visteam,PIT
+info,hometeam,ARI
+info,site,PHO01
+info,date,2000/05/23
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,mckej901
+info,ump1b,danlk901
+info,ump2b,higgs901
+info,ump3b,morrd901
+info,pitches,pitches
+info,temp,72
+info,winddir,tolf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,137
+info,attendance,31726
+info,wp,andeb002
+info,lp,andej002
+info,save,
+start,morrw001,"Warren Morris",0,1,4
+start,kendj001,"Jason Kendall",0,2,2
+start,cordw001,"Wil Cordero",0,3,7
+start,gileb002,"Brian Giles",0,4,8
+start,younk001,"Kevin Young",0,5,3
+start,avenb001,"Bruce Aven",0,6,9
+start,mearp001,"Pat Meares",0,7,6
+start,benjm001,"Mike Benjamin",0,8,5
+start,andej002,"Jimmy Anderson",0,9,1
+start,womat001,"Tony Womack",1,1,6
+start,bellj001,"Jay Bell",1,2,4
+start,gonzl001,"Luis Gonzalez",1,3,7
+start,willm003,"Matt D. Williams",1,4,5
+start,finls001,"Steve Finley",1,5,8
+start,colbg001,"Greg Colbrunn",1,6,3
+start,milld002,"Damian Miller",1,7,2
+start,gilkb001,"Bernard Gilkey",1,8,9
+start,andeb002,"Brian Anderson",1,9,1
+play,1,0,morrw001,00,X,S9/9S
+play,1,0,kendj001,00,1,PO1(13)
+play,1,0,kendj001,01,1CX,T9/9D
+play,1,0,cordw001,21,BBCX,8/SF.3-H
+play,1,0,gileb002,32,BCBBCX,S8
+play,1,0,younk001,12,FFBS,K
+play,1,1,womat001,01,CX,31/G
+play,1,1,bellj001,00,X,43/G
+play,1,1,gonzl001,11,CBX,S8
+play,1,1,willm003,01,FX,S9.1-3
+play,1,1,finls001,32,BBCSBFFX,HR/9.3-H;1-H
+play,1,1,colbg001,02,FFFC,K/C
+play,2,0,avenb001,10,BX,S9
+play,2,0,mearp001,21,CBBX,4/P4
+play,2,0,benjm001,12,CSBX,S7/7S.1-2
+play,2,0,andej002,00,X,25(2)/FO.1-2
+play,2,0,morrw001,22,CBFBX,6/L6
+play,2,1,milld002,30,BBBX,3/FL
+play,2,1,gilkb001,21,CBBX,8/F8D
+play,2,1,andeb002,12,BSCS,K
+play,3,0,kendj001,12,CCBX,8/F8
+play,3,0,cordw001,12,BCFX,S/78
+play,3,0,gileb002,10,BX,54(1)3/GDP
+play,3,1,womat001,11,BFX,53/G
+play,3,1,bellj001,00,X,8/F8S
+play,3,1,gonzl001,31,CBBBB,W
+play,3,1,willm003,30,BBBX,9/F9
+play,4,0,younk001,00,X,4/P4
+play,4,0,avenb001,01,SX,43/G
+play,4,0,mearp001,02,CSS,K
+play,4,1,finls001,21,CBBX,S
+play,4,1,colbg001,21,BBFX,9/F9
+play,4,1,milld002,32,FBSBBX,63/G.1-2
+play,4,1,gilkb001,30,IIII,IW
+play,4,1,andeb002,00,X,9/F9
+play,5,0,benjm001,10,BX,53/G
+play,5,0,andej002,01,CX,63/G
+play,5,0,morrw001,02,CFX,7/F7S
+play,5,1,womat001,22,CBBLH,HP
+play,5,1,bellj001,00,X,T8/8D.1-H
+play,5,1,gonzl001,21,CBBX,D9.3-H
+play,5,1,willm003,00,X,S7/7S.2-3
+play,5,1,finls001,01,SX,8/SF.3-H
+play,5,1,colbg001,00,,NP
+sub,loisr001,"Rich Loiselle",0,9,1
+play,5,1,colbg001,22,SBSFBFX,D7.1-3
+play,5,1,milld002,32,BSBBFB,W
+play,5,1,gilkb001,02,FFX,46(1)3/GDP
+play,6,0,kendj001,12,CFBFX,S
+play,6,0,cordw001,10,BX,5/FL
+play,6,0,gileb002,00,X,54(1)3/GDP
+play,6,1,andeb002,22,CFBFBS,K
+play,6,1,womat001,12,BFCX,43/G
+play,6,1,bellj001,01,CX,S7/7S
+play,6,1,gonzl001,20,BBX,S8.1-3;B-2(TH3)
+play,6,1,willm003,00,X,4/P4
+play,7,0,younk001,21,BBCX,53/G
+play,7,0,avenb001,32,FBFBBFC,K/C
+play,7,0,mearp001,00,X,43/G
+play,7,1,finls001,00,,NP
+sub,browa001,"Adrian Brown",0,9,9
+play,7,1,finls001,00,,NP
+sub,manzj001,"Josias Manzanillo",0,6,1
+play,7,1,finls001,30,BBBB,W
+play,7,1,colbg001,31,BBFBX,64(1)3/GDP
+play,7,1,milld002,12,CCBFX,43/G
+play,8,0,benjm001,21,BBFX,8/F8S
+play,8,0,browa001,01,CX,S8
+play,8,0,morrw001,12,CBFX,54(1)3/GDP
+play,8,1,gilkb001,00,X,9/F9
+play,8,1,andeb002,00,,NP
+sub,lee-t002,"Travis Lee",1,9,11
+play,8,1,lee-t002,11,BCX,53/G
+play,8,1,womat001,22,CFBFBFX,S7
+play,8,1,bellj001,10,BX,9/F9
+play,9,0,kendj001,00,,NP
+sub,lee-t002,"Travis Lee",1,9,9
+play,9,0,kendj001,00,,NP
+sub,mantm001,"Matt Mantei",1,8,1
+play,9,0,kendj001,32,BCCBBFFB,W
+play,9,0,cordw001,11,CBX,31/G.1-2
+play,9,0,gileb002,02,FCFX,7/F7
+play,9,0,younk001,00,X,1/P1
+data,er,andej002,6
+data,er,loisr001,0
+data,er,manzj001,0
+data,er,andeb002,1
+data,er,mantm001,0

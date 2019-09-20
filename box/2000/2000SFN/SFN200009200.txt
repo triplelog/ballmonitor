@@ -1,0 +1,159 @@
+version,2
+info,visteam,CIN
+info,hometeam,SFN
+info,site,SFO03
+info,date,2000/09/20
+info,number,0
+info,starttime,12:35PM
+info,daynight,day
+info,usedh,false
+info,umphome,iassd901
+info,ump1b,bellw901
+info,ump2b,nelsj901
+info,ump3b,hirsm901
+info,pitches,pitches
+info,temp,62
+info,winddir,rtol
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,163
+info,attendance,40930
+info,wp,ortir001
+info,lp,parrs001
+info,save,nen-r001
+start,huntb002,"Brian L. Hunter",0,1,8
+start,reesp001,"Pokey Reese",0,2,4
+start,yound001,"Dmitri Young",0,3,3
+start,ochoa001,"Alex Ochoa",0,4,7
+start,tuckm001,"Michael Tucker",0,5,9
+start,sextc001,"Chris Sexton",0,6,5
+start,castj004,"Juan Castro",0,7,6
+start,laruj001,"Jason LaRue",0,8,2
+start,parrs001,"Steve Parris",0,9,1
+start,benam001,"Marvin Benard",1,1,8
+start,muelb001,"Bill Mueller",1,2,5
+start,bondb001,"Barry Bonds",1,3,7
+start,kentj001,"Jeff Kent",1,4,4
+start,snowj001,"J.T. Snow",1,5,3
+start,burke001,"Ellis Burks",1,6,9
+start,aurir001,"Rich Aurilia",1,7,6
+start,estab001,"Bobby Estalella",1,8,2
+start,ortir001,"Russ Ortiz",1,9,1
+play,1,0,huntb002,12,CBFS,K
+play,1,0,reesp001,22,CCBBX,43/G
+play,1,0,yound001,10,BX,13/G
+play,1,1,benam001,12,CBLS,K23
+play,1,1,muelb001,22,CCBFBX,43/G
+play,1,1,bondb001,10,BX,63/G
+play,2,0,ochoa001,12,FFBFFFFFC,K/C
+play,2,0,tuckm001,31,BBCBB,W
+play,2,0,sextc001,02,CCFFC,K/C
+play,2,0,castj004,00,B,CS2(26)
+play,2,1,kentj001,00,X,T9/9D
+play,2,1,snowj001,02,CFFX,43/G.3-H
+play,2,1,burke001,12,CBFFX,63/G
+play,2,1,aurir001,22,CBBCFX,S7
+play,2,1,estab001,10,BX,9/F9
+play,3,0,castj004,00,X,43/G
+play,3,0,laruj001,12,BSSC,K/C
+play,3,0,parrs001,12,CSBS,K
+play,3,1,ortir001,21,BCBX,9/F9
+play,3,1,benam001,01,CX,S8
+play,3,1,muelb001,10,B+1,PO1(E2).1-2
+play,3,1,muelb001,10,B+1X,6/FL
+play,3,1,bondb001,31,BFBBI,IW
+play,3,1,kentj001,31,CBBBB,W.2-3;1-2
+play,3,1,snowj001,12,CFBX,D7.3-H;2-H;1-3
+play,3,1,burke001,10,BX,8/F8
+play,4,0,huntb002,02,CCX,43/G
+play,4,0,reesp001,02,SSS,K
+play,4,0,yound001,00,X,13/G
+play,4,1,aurir001,11,CBX,63/G
+play,4,1,estab001,12,BFSS,K
+play,4,1,ortir001,32,BCBFBB,W
+play,4,1,benam001,31,BBBCX,7/F7
+play,5,0,ochoa001,20,BBX,43/G
+play,5,0,tuckm001,10,BX,63/G
+play,5,0,sextc001,32,CBBFBFX,63/G
+play,5,1,muelb001,10,BX,5/FL
+play,5,1,bondb001,01,FX,HR/9
+play,5,1,kentj001,20,BBX,7/L7
+play,5,1,snowj001,02,CCX,7/F7
+play,6,0,castj004,11,CBX,43/G
+play,6,0,laruj001,31,BBBCX,3/P3
+play,6,0,parrs001,00,,NP
+sub,clarb003,"Brady Clark",0,9,11
+play,6,0,clarb003,22,BBFSS,K
+play,6,1,burke001,00,,NP
+sub,sulls001,"Scott Sullivan",0,9,1
+play,6,1,burke001,00,X,3/FL
+play,6,1,aurir001,10,BX,63/G
+play,6,1,estab001,12,CSBFFS,K
+play,7,0,huntb002,00,X,S5/BG5
+play,7,0,reesp001,32,BBBCFH,HP.1-2
+play,7,0,yound001,00,,NP
+sub,bellm003,"Mike Bell",0,2,12
+play,7,0,yound001,22,BSSBS,K.2-3;1-2(WP)
+play,7,0,ochoa001,02,CCX,6/L6
+play,7,0,tuckm001,31,BBSBX,D9.3-H;2-H
+play,7,0,sextc001,32,CBBBCB,W
+play,7,0,castj004,00,,NP
+sub,henrd002,"Doug Henry",1,9,1
+play,7,0,castj004,22,CBSFBFB,SB3;SB2
+play,7,0,castj004,32,CBSFBFBX,53/G
+play,7,1,henrd002,00,,NP
+sub,bellm003,"Mike Bell",0,2,5
+play,7,1,henrd002,00,,NP
+sub,sextc001,"Chris Sexton",0,6,4
+play,7,1,henrd002,00,,NP
+sub,davir002,"Russ Davis",1,9,11
+play,7,1,davir002,12,FCBX,9/F9D
+play,7,1,benam001,11,CBX,7/F7
+play,7,1,muelb001,12,FBSX,7/F7
+play,8,0,laruj001,00,,NP
+sub,rodrf002,"Felix Rodriguez",1,9,1
+play,8,0,laruj001,00,,NP
+sub,santb001,"Benito Santiago",0,8,11
+play,8,0,santb001,22,CBBFC,K/C
+play,8,0,sulls001,00,,NP
+sub,cromd001,"David Cromer",0,9,11
+play,8,0,cromd001,12,BSSS,K
+play,8,0,huntb002,11,BCX,S7
+play,8,0,bellm003,00,,NP
+sub,grifk002,"Ken Griffey",0,2,11
+play,8,0,grifk002,32,BCBBSS,K
+play,8,1,bondb001,00,,NP
+sub,ochoa001,"Alex Ochoa",0,4,9
+play,8,1,bondb001,00,,NP
+sub,tuckm001,"Michael Tucker",0,5,4
+play,8,1,bondb001,00,,NP
+sub,sextc001,"Chris Sexton",0,6,5
+play,8,1,bondb001,00,,NP
+sub,santb001,"Benito Santiago",0,8,2
+play,8,1,bondb001,00,,NP
+sub,bartk001,"Kimera Bartee",0,9,7
+play,8,1,bondb001,00,,NP
+sub,reyed001,"Dennys Reyes",0,2,1
+play,8,1,bondb001,22,SBBFS,K
+play,8,1,kentj001,00,,NP
+sub,riedj001,"John Riedling",0,2,1
+play,8,1,kentj001,11,BSX,8/F8
+play,8,1,snowj001,12,CBCS,K
+play,9,0,yound001,00,,NP
+sub,nen-r001,"Robb Nen",1,9,1
+play,9,0,yound001,22,BFBCFX,S7/7S
+play,9,0,ochoa001,12,FSBS,K
+play,9,0,tuckm001,12,FFBS,K
+play,9,0,sextc001,00,,NP
+sub,cases001,"Sean Casey",0,6,11
+play,9,0,cases001,02,SSS,K
+data,er,parrs001,4
+data,er,sulls001,0
+data,er,reyed001,0
+data,er,riedj001,0
+data,er,ortir001,2
+data,er,henrd002,0
+data,er,rodrf002,0
+data,er,nen-r001,0

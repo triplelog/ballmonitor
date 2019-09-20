@@ -1,0 +1,149 @@
+version,2
+info,visteam,TEX
+info,hometeam,SEA
+info,site,SEA03
+info,date,2000/07/21
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,willc901
+info,ump1b,katzt901
+info,ump2b,higgs901
+info,ump3b,wegnm901
+info,pitches,pitches
+info,temp,81
+info,winddir,ltor
+info,windspeed,13
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,179
+info,attendance,44765
+info,wp,abbop001
+info,lp,perim001
+info,save,
+start,cataf001,"Frank Catalanotto",0,1,4
+start,greer001,"Rusty Greer",0,2,7
+start,palmr001,"Rafael Palmeiro",0,3,10
+start,segud001,"David Segui",0,4,3
+start,haseb001,"Bill Haselman",0,5,2
+start,martd002,"Dave Martinez",0,6,9
+start,kaplg001,"Gabe Kapler",0,7,8
+start,lambm001,"Mike Lamb",0,8,5
+start,clayr001,"Royce Clayton",0,9,6
+start,perim001,"Matt Perisho",0,0,1
+start,hendr001,"Rickey Henderson",1,1,7
+start,guilc001,"Carlos Guillen",1,2,6
+start,marte001,"Edgar Martinez",1,3,10
+start,olerj001,"John Olerud",1,4,3
+start,buhnj001,"Jay Buhner",1,5,9
+start,camem001,"Mike Cameron",1,6,8
+start,belld002,"David Bell",1,7,5
+start,wilsd001,"Dan Wilson",1,8,2
+start,mclem001,"Mark McLemore",1,9,4
+start,abbop001,"Paul Abbott",1,0,1
+play,1,0,cataf001,32,BCFBFBFFB,W
+play,1,0,greer001,11,BCX,64(1)3/GDP
+play,1,0,palmr001,22,BBFFFS,K
+play,1,1,hendr001,31,CBBBX,S7
+play,1,1,guilc001,11,BFC,SB2
+play,1,1,guilc001,12,BFCX,S.2-3
+play,1,1,marte001,21,CBBX,S8.3-H;1-3
+play,1,1,olerj001,32,CBBBFX,S/78.3-H;1-2
+play,1,1,buhnj001,32,BCBBCX,9/F9.2-3
+play,1,1,camem001,32,CSBFBBB,W.1-2
+play,1,1,belld002,32,BBCCBFFB,W.3-H;2-3;1-2
+play,1,1,wilsd001,30,BBBB,W.3-H;2-3;1-2
+play,1,1,mclem001,00,,NP
+sub,david002,"Doug Davis",0,0,1
+play,1,1,mclem001,32,CBBCBX,7/F7S
+play,1,1,hendr001,31,BCBBB,W.3-H;2-3;1-2
+play,1,1,guilc001,11,CBX,S4.3-H;2-H(E4/TH)(UR);1-3;B-2
+play,1,1,marte001,12,BCCC,K/C
+play,2,0,segud001,32,BCSBBX,S7/7S
+play,2,0,haseb001,11,CBX,7/F7
+play,2,0,martd002,10,BX,8/F8
+play,2,0,kaplg001,10,BX,53/G
+play,2,1,olerj001,02,CFFFX,63/G
+play,2,1,buhnj001,21,BFBX,53/G
+play,2,1,camem001,20,BBX,D9
+play,2,1,belld002,12,BCFX,63/G
+play,3,0,lambm001,01,CX,7/L7
+play,3,0,clayr001,32,BBFSBX,4/P4
+play,3,0,cataf001,10,BX,S7
+play,3,0,greer001,21,BCBX,3/G
+play,3,1,wilsd001,32,CBFBBB,W
+play,3,1,mclem001,22,BFFBX,HR/7.1-H
+play,3,1,hendr001,32,BBCBCX,8/F8
+play,3,1,guilc001,00,X,3/G
+play,3,1,marte001,21,CBBX,S7/7S
+play,3,1,olerj001,31,FBBBB,W.1-2
+play,3,1,buhnj001,21,CBBX,HR/8.2-H;1-H
+play,3,1,camem001,01,CX,9/F9
+play,4,0,palmr001,01,CX,4/P4
+play,4,0,segud001,10,BX,7/F7
+play,4,0,haseb001,12,CBSFX,S8
+play,4,0,martd002,32,BBCBCX,13/G
+play,4,1,belld002,12,CCFFBFFX,9/F9
+play,4,1,wilsd001,12,CBSX,9/F9S
+play,4,1,mclem001,02,CSC,K/C
+play,5,0,kaplg001,21,BCBX,4/L4
+play,5,0,lambm001,10,BX,7/F7
+play,5,0,clayr001,21,BSBX,7/F7D
+play,5,1,hendr001,22,FCBBFX,13/G
+play,5,1,guilc001,10,BX,D7
+play,5,1,marte001,22,BBSFS,K
+play,5,1,olerj001,00,X,8/F8
+play,6,0,cataf001,00,,NP
+sub,ibanr001,"Raul Ibanez",1,1,7
+play,6,0,cataf001,01,CX,HR/9
+play,6,0,greer001,21,BCBX,31/G
+play,6,0,palmr001,31,BBCBX,43/G
+play,6,0,segud001,31,SBBBB,W
+play,6,0,haseb001,12,CBCS,K
+play,6,1,buhnj001,00,,NP
+sub,crabt001,"Tim Crabtree",0,0,1
+play,6,1,buhnj001,22,CBFFBX,6/L6
+play,6,1,camem001,32,BFBBSX,8/L8
+play,6,1,belld002,20,BBX,53/G
+play,7,0,martd002,00,,NP
+sub,gipsc001,"Charles Gipson",1,5,9
+play,7,0,martd002,21,CBBX,S7
+play,7,0,kaplg001,00,X,S9.1-3
+play,7,0,lambm001,20,BBX,54(1)3/GDP.3-H
+play,7,0,clayr001,00,,NP
+sub,shels001,"Scott Sheldon",0,9,11
+play,7,0,shels001,32,SSBBBB,W
+play,7,0,cataf001,31,BBBCX,43/G
+play,7,1,wilsd001,00,,NP
+sub,shels001,"Scott Sheldon",0,9,6
+play,7,1,wilsd001,00,X,9/F9
+play,7,1,mclem001,12,FBFC,K/C
+play,7,1,ibanr001,12,FBFX,4/P4
+play,8,0,greer001,00,,NP
+sub,gipsc001,"Charles Gipson",1,5,5
+play,8,0,greer001,00,,NP
+sub,belld002,"David Bell",1,7,4
+play,8,0,greer001,00,,NP
+sub,mabrj001,"John Mabry",1,9,9
+play,8,0,greer001,00,,NP
+sub,tomkb001,"Brett Tomko",1,0,1
+play,8,0,greer001,32,BCCBBS,K
+play,8,0,palmr001,32,BSCBFBX,8/F8D
+play,8,0,segud001,11,BFX,HR/9
+play,8,0,haseb001,21,CBBX,63/G
+play,8,1,guilc001,22,CBBFFX,S8
+play,8,1,marte001,00,X,53/G.1-2
+play,8,1,olerj001,32,SBBBCX,63/G.2-3
+play,8,1,gipsc001,31,FBBBB,W
+play,8,1,camem001,11,CBX,64(1)/FO
+play,9,0,martd002,02,FCFX,53/G
+play,9,0,kaplg001,31,CBBBX,63/G
+play,9,0,lambm001,22,SFFBBX,S8
+play,9,0,shels001,22,BFSFBX,53/G
+data,er,perim001,6
+data,er,david002,5
+data,er,crabt001,0
+data,er,abbop001,2
+data,er,tomkb001,1

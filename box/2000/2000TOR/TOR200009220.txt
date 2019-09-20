@@ -1,0 +1,149 @@
+version,2
+info,visteam,TBA
+info,hometeam,TOR
+info,site,TOR02
+info,date,2000/09/22
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,emmep901
+info,ump1b,riekr901
+info,ump2b,guccc901
+info,ump3b,davig901
+info,pitches,pitches
+info,temp,72
+info,winddir,torf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,167
+info,attendance,18063
+info,wp,lidlc001
+info,lp,frasj001
+info,save,hernr001
+start,tynej001,"Jason Tyner",0,1,8
+start,winnr001,"Randy Winn",0,2,7
+start,vaugg001,"Greg Vaughn",0,3,10
+start,mcgrf001,"Fred McGriff",0,4,3
+start,huffa001,"Aubrey Huff",0,5,5
+start,timmo001,"Ozzie Timmons",0,6,9
+start,smitr003,"Bobby Smith",0,7,4
+start,hallt001,"Toby Hall",0,8,2
+start,martf001,"Felix Martinez",0,9,6
+start,lidlc001,"Cory Lidle",0,0,1
+start,stews002,"Shannon Stewart",1,1,7
+start,gonza001,"Alex S. Gonzalez",1,2,6
+start,martd002,"Dave Martinez",1,3,9
+start,delgc001,"Carlos Delgado",1,4,3
+start,fullb001,"Brad Fullmer",1,5,10
+start,batit001,"Tony Batista",1,6,5
+start,fletd001,"Darrin Fletcher",1,7,2
+start,cruzj004,"Jose Cruz",1,8,8
+start,moram001,"Mickey Morandini",1,9,4
+start,castf001,"Frank Castillo",1,0,1
+play,1,0,tynej001,22,CBFBX,7/L7
+play,1,0,winnr001,02,CSS,K
+play,1,0,vaugg001,02,CCX,53/G
+play,1,1,stews002,22,CCBFBX,63/G
+play,1,1,gonza001,21,BBCX,63/G
+play,1,1,martd002,31,CBBBB,W
+play,1,1,delgc001,32,CBBFBX,43/G
+play,2,0,mcgrf001,32,BSBFBFFB,W
+play,2,0,huffa001,10,BX,9/F9
+play,2,0,timmo001,12,BCSX,S7.1-2
+play,2,0,smitr003,02,CFC,K/C
+play,2,0,hallt001,10,BX,S.2-3;1-2
+play,2,0,martf001,21,FBBX,43/G
+play,2,1,fullb001,12,BFFS,K
+play,2,1,batit001,00,X,8/F8S
+play,2,1,fletd001,12,CBFX,S9
+play,2,1,cruzj004,11,BFX,13/G
+play,3,0,tynej001,11,LBX,3/G
+play,3,0,winnr001,22,BLBFX,43/G
+play,3,0,vaugg001,11,BFX,6/P6
+play,3,1,moram001,10,BX,63/G
+play,3,1,stews002,10,BX,S8
+play,3,1,gonza001,00,B,WP.1-2
+play,3,1,gonza001,30,BBBB,W
+play,3,1,martd002,01,CX,54(1)/FO.2-3
+play,3,1,delgc001,22,BFBSX,3/G
+play,4,0,mcgrf001,11,SBX,S9
+play,4,0,huffa001,01,CX,13/G.1-2
+play,4,0,timmo001,01,CX,8/F8S
+play,4,0,smitr003,12,SBFS,K
+play,4,1,fullb001,00,X,43/G
+play,4,1,batit001,12,BCFS,K
+play,4,1,fletd001,10,BX,S8
+play,4,1,cruzj004,21,BSBX,6(1)/FO/G
+play,5,0,hallt001,10,BX,HR/7
+play,5,0,martf001,00,X,S8
+play,5,0,tynej001,10,BX,53/SH.1-3
+play,5,0,winnr001,12,CBS3,POCSH(12)
+play,5,0,winnr001,32,CBS3BBB,W
+play,5,0,vaugg001,22,BFFBX,7/L7
+play,5,1,moram001,32,BBCCFBX,7/F7
+play,5,1,stews002,21,BCBX,63/G
+play,5,1,gonza001,32,FBBCFBFB,W
+play,5,1,martd002,10,BX,64(1)/FO
+play,6,0,mcgrf001,00,,NP
+sub,guthm001,"Mark Guthrie",1,0,1
+play,6,0,mcgrf001,11,BSX,5/P5
+play,6,0,huffa001,22,SSBBH,HP
+play,6,0,timmo001,12,CBFX,4/P4
+play,6,0,smitr003,01,CX,S9.1-3
+play,6,0,hallt001,02,FCX,63/G
+play,6,1,delgc001,10,BX,63/G
+play,6,1,fullb001,10,BX,E5/G
+play,6,1,batit001,32,BBFBSX,8/F8D
+play,6,1,fletd001,11,CBX,HR/9.1-H(UR);B-H(UR)
+play,6,1,cruzj004,12,BCFS,K
+play,7,0,martf001,00,,NP
+sub,frasj001,"John Frascatore",1,0,1
+play,7,0,martf001,01,CX,D9
+play,7,0,tynej001,00,X,43/G.2-3
+play,7,0,winnr001,10,BX,D9/9D.3-H
+play,7,0,vaugg001,00,,NP
+sub,escok001,"Kelvim Escobar",1,0,1
+play,7,0,vaugg001,10,BX,S8.2-H
+play,7,0,mcgrf001,31,BCBBX,7/F7D
+play,7,0,huffa001,02,CCS,K
+play,7,1,moram001,00,,NP
+sub,yan-e001,"Esteban Yan",0,0,1
+play,7,1,moram001,00,,NP
+sub,johnr006,"Russ Johnson",0,5,5
+play,7,1,moram001,00,X,S/89
+play,7,1,stews002,02,CSFFS,K
+play,7,1,gonza001,01,FX,64(1)3/GDP
+play,8,0,timmo001,00,X,53/G
+play,8,0,smitr003,02,CFFX,6/P6
+play,8,0,hallt001,02,SFFX,5/L5
+play,8,1,martd002,00,X,S9
+play,8,1,delgc001,10,BX,46(1)3/GDP
+play,8,1,fullb001,00,X,3/G
+play,9,0,martf001,00,,NP
+sub,kochb001,"Billy Koch",1,0,1
+play,9,0,martf001,00,X,7/L7
+play,9,0,tynej001,11,FBX,S
+play,9,0,winnr001,12,FBCX,5/FL
+play,9,0,vaugg001,21,BSBX,3/P3
+play,9,1,batit001,00,,NP
+sub,flahj001,"John Flaherty",0,8,2
+play,9,1,batit001,00,,NP
+sub,hernr001,"Roberto Hernandez",0,0,1
+play,9,1,batit001,32,CFBBBFB,W
+play,9,1,fletd001,00,X,S8.1-2
+play,9,1,cruzj004,00,,NP
+sub,wised001,"Dewayne Wise",1,7,12
+play,9,1,cruzj004,01,LX,14/SH.2-3;1-2
+play,9,1,moram001,10,BX,FC3.3XH(32);2-3;B-1#
+play,9,1,stews002,02,FSS,K
+data,er,lidlc001,0
+data,er,yan-e001,0
+data,er,hernr001,0
+data,er,castf001,1
+data,er,guthm001,0
+data,er,frasj001,2
+data,er,escok001,0
+data,er,kochb001,0

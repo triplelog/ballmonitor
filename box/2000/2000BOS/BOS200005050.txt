@@ -1,0 +1,139 @@
+version,2
+info,visteam,TBA
+info,hometeam,BOS
+info,site,BOS07
+info,date,2000/05/05
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,cedeg901
+info,ump1b,fichm901
+info,ump2b,scotd901
+info,ump3b,welkt901
+info,pitches,pitches
+info,temp,81
+info,winddir,ltor
+info,windspeed,12
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,174
+info,attendance,32479
+info,wp,martr002
+info,lp,eilad001
+info,save,lowed001
+start,willg001,"Gerald Williams",0,1,8
+start,martd002,"Dave Martinez",0,2,9
+start,vaugg001,"Greg Vaughn",0,3,7
+start,cansj001,"Jose Canseco",0,4,10
+start,mcgrf001,"Fred McGriff",0,5,3
+start,castv001,"Vinny Castilla",0,6,5
+start,difem001,"Mike DiFelice",0,7,2
+start,stock001,"Kevin Stocker",0,8,6
+start,graft001,"Tony Graffanino",0,9,4
+start,eilad001,"Dave Eiland",0,0,1
+start,offej001,"Jose Offerman",1,1,4
+start,nixot001,"Trot Nixon",1,2,9
+start,daubb001,"Brian Daubach",1,3,10
+start,garcn001,"Nomar Garciaparra",1,4,6
+start,oleat001,"Troy O'Leary",1,5,7
+start,everc001,"Carl Everett",1,6,8
+start,stanm002,"Mike Stanley",1,7,3
+start,varij001,"Jason Varitek",1,8,2
+start,veraw001,"Wilton Veras",1,9,5
+start,martr002,"Ramon Martinez",1,0,1
+play,1,0,willg001,32,BCBBSX,T/78
+play,1,0,martd002,32,CBBBFX,7/F7
+play,1,0,vaugg001,11,CBX,S9/9S.3-H
+play,1,0,cansj001,11,CBX,64(1)/FO
+play,1,0,mcgrf001,20,BBX,S9.1-2
+play,1,0,castv001,02,CCFX,64(1)/FO.2-3
+play,1,1,offej001,12,CCBC,K/C
+play,1,1,nixot001,20,BBX,D/78D
+play,1,1,daubb001,02,CSX,D/78.2-H
+play,1,1,garcn001,11,BCX,13/G.2-3
+play,1,1,oleat001,02,SSFS,K
+play,2,0,difem001,12,CBFFFX,31/G
+play,2,0,stock001,11,CBX,43/G
+play,2,0,graft001,11,BCX,9/F9S
+play,2,1,everc001,02,CFX,5/FL
+play,2,1,stanm002,12,SSBX,4/P4
+play,2,1,varij001,32,BCBCFBB,W
+play,2,1,veraw001,02,SCX,13/G
+play,3,0,willg001,02,FCX,43/G
+play,3,0,martd002,32,BBBCFS,K
+play,3,0,vaugg001,22,CBBCX,S8/8S
+play,3,0,cansj001,01,FB,SB2
+play,3,0,cansj001,32,FBFBBB,W
+play,3,0,mcgrf001,12,FFBS,K
+play,3,1,offej001,00,X,S8/8S
+play,3,1,nixot001,10,BS,CS2(26)
+play,3,1,nixot001,22,BSFBX,S9/9S
+play,3,1,daubb001,22,BCBFFX,D9.1-3
+play,3,1,garcn001,01,FX,8/SF.3-H
+play,3,1,oleat001,21,BBCX,3/G
+play,4,0,castv001,22,BSBFFS,K
+play,4,0,difem001,02,SFX,8/F8S
+play,4,0,stock001,31,BFBBX,31/G
+play,4,1,everc001,00,X,HR/9
+play,4,1,stanm002,02,CSC,K/C
+play,4,1,varij001,32,BBBCSFX,D9
+play,4,1,veraw001,01,CX,D/78D.2-H
+play,4,1,offej001,00,,NP
+sub,lidlc001,"Cory Lidle",0,0,1
+play,4,1,offej001,00,X,S9.2-H
+play,4,1,nixot001,31,BBCBX,8/F8D
+play,4,1,daubb001,22,FBBFS,K
+play,5,0,graft001,12,CFBX,D/78D
+play,5,0,willg001,02,FCX,S9.2-H
+play,5,0,martd002,00,1,POCS2(136)
+play,5,0,martd002,12,1BCFC,K/C
+play,5,0,vaugg001,21,BBSX,8/F8S
+play,5,1,garcn001,22,BBCCFX,53/G
+play,5,1,oleat001,32,BBBCCX,6/L6
+play,5,1,everc001,22,CBBSX,43/G
+play,6,0,cansj001,00,X,HR/7
+play,6,0,mcgrf001,32,SFFBFBBX,S8
+play,6,0,castv001,00,,NP
+sub,garcr001,"Rich Garces",1,0,1
+play,6,0,castv001,22,BCSBB,WP.1-2
+play,6,0,castv001,32,BCSBBB,W
+play,6,0,difem001,12,FBCFFX,9/F9D.2-3
+play,6,0,stock001,22,CBFBS,K
+play,6,0,graft001,02,CFC,K/C
+play,6,1,stanm002,32,FFBBBFX,53/G
+play,6,1,varij001,22,FCBBC,K/C
+play,6,1,veraw001,22,BSCBS,K23
+play,7,0,willg001,01,SX,53/G
+play,7,0,martd002,00,X,43/G
+play,7,0,vaugg001,21,BBSX,7/F7
+play,7,1,offej001,00,,NP
+sub,morrj004,"Jim Morris",0,0,1
+play,7,1,offej001,00,X,S7/7S
+play,7,1,nixot001,31,LBBBB,W.1-2
+play,7,1,daubb001,22,SBBFX,46(1)3/GDP.2-3
+play,7,1,garcn001,00,,NP
+sub,sparj001,"Jeff Sparks",0,0,1
+play,7,1,garcn001,01,FX,53/G
+play,8,0,cansj001,00,,NP
+sub,lowed001,"Derek Lowe",1,0,1
+play,8,0,cansj001,12,CSBS,K
+play,8,0,mcgrf001,00,X,63/G
+play,8,0,castv001,01,SX,63/G
+play,8,1,oleat001,22,CBBSS,K
+play,8,1,everc001,10,BX,43/G
+play,8,1,stanm002,32,CBBFBX,2/FL
+play,9,0,difem001,01,CX,7/F7
+play,9,0,stock001,11,BCH,HP
+play,9,0,graft001,00,,NP
+sub,cox-s001,"Steve Cox",0,9,11
+play,9,0,cox-s001,00,X,5/L5
+play,9,0,willg001,12,SBCX,43/G
+data,er,eilad001,5
+data,er,lidlc001,0
+data,er,morrj004,0
+data,er,sparj001,0
+data,er,martr002,3
+data,er,garcr001,0
+data,er,lowed001,0

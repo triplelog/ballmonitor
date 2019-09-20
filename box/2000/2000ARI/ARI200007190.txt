@@ -1,0 +1,135 @@
+version,2
+info,visteam,SLN
+info,hometeam,ARI
+info,site,PHO01
+info,date,2000/07/19
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,shulj901
+info,ump1b,roe-r901
+info,ump2b,rungb901
+info,ump3b,rapue901
+info,pitches,pitches
+info,temp,72
+info,winddir,torf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,160
+info,attendance,37119
+info,wp,reyna001
+info,lp,stepg001
+info,save,mantm001
+start,vinaf001,"Fernando Vina",0,1,4
+start,rente001,"Edgar Renteria",0,2,6
+start,edmoj001,"Jim Edmonds",0,3,8
+start,tatif001,"Fernando Tatis",0,4,5
+start,lankr001,"Ray Lankford",0,5,7
+start,paquc001,"Craig Paquette",0,6,9
+start,peree001,"Eduardo Perez",0,7,3
+start,mathm001,"Mike Matheny",0,8,2
+start,stepg001,"Garrett Stephenson",0,9,1
+start,womat001,"Tony Womack",1,1,6
+start,bellj001,"Jay Bell",1,2,4
+start,gonzl001,"Luis Gonzalez",1,3,7
+start,willm003,"Matt D. Williams",1,4,5
+start,finls001,"Steve Finley",1,5,8
+start,durae001,"Erubiel Durazo",1,6,3
+start,cabra001,"Alex Cabrera",1,7,9
+start,milld002,"Damian Miller",1,8,2
+start,reyna001,"Armando Reynoso",1,9,1
+play,1,0,vinaf001,01,FX,9/F9
+play,1,0,rente001,30,BBBB,W
+play,1,0,edmoj001,00,X,46(1)/FO
+play,1,0,tatif001,22,BSBCX,3/P3
+play,1,1,womat001,11,BCX,D/78
+play,1,1,bellj001,00,X,54/SH.2-3
+play,1,1,gonzl001,12,CBCFX,7/SF.3-H
+play,1,1,willm003,32,BCSFBBX,9/F9
+play,2,0,lankr001,31,BCBBX,7/F7
+play,2,0,paquc001,22,CBFBFFFS,K
+play,2,0,peree001,10,BX,D9
+play,2,0,mathm001,00,X,63/G
+play,2,1,finls001,22,BBFCX,43/G
+play,2,1,durae001,02,SSX,D9
+play,2,1,cabra001,02,SCS,K
+play,2,1,milld002,31,BBCBB,W
+play,2,1,reyna001,22,BSCBS,K
+play,3,0,stepg001,32,CFBBBX,63/G
+play,3,0,vinaf001,21,BBCX,7/F7
+play,3,0,rente001,11,CBX,6/P6
+play,3,1,womat001,01,FX,3/L3
+play,3,1,bellj001,12,CBCFX,63/G
+play,3,1,gonzl001,10,BX,13/G
+play,4,0,edmoj001,12,BSCX,7/F7
+play,4,0,tatif001,22,BBSSX,63/G
+play,4,0,lankr001,32,FBSFBBB,W
+play,4,0,paquc001,12,CSBX,64(1)/FO
+play,4,1,willm003,01,SX,S8
+play,4,1,finls001,00,X,D9.1-3
+play,4,1,durae001,31,BSBBX,D9.3-H;2-H
+play,4,1,cabra001,22,FCBBX,13/G
+play,4,1,milld002,01,CX,S.2-H(E6/TH)(UR)
+play,4,1,reyna001,12,BLLL,K/BF
+play,4,1,womat001,11,BCX,3/P3
+play,5,0,peree001,22,BCBFFS,K
+play,5,0,mathm001,12,FBCX,S
+play,5,0,stepg001,00,X,3/SH.1-2
+play,5,0,vinaf001,22,FBBFC,K/C
+play,5,1,bellj001,20,BBX,9/F9
+play,5,1,gonzl001,00,X,43/G
+play,5,1,willm003,10,BX,4/L4
+play,6,0,rente001,10,BX,S8
+play,6,0,edmoj001,00,X,S9.1-2
+play,6,0,tatif001,00,X,S7.2-H;1-2
+play,6,0,lankr001,32,BBCCBFX,D/89D.2-H;1-3
+play,6,0,paquc001,00,,NP
+sub,sprir001,"Russ Springer",1,9,1
+play,6,0,paquc001,01,FX,63/G.3-H
+play,6,0,peree001,00,X,8/F8
+play,6,0,mathm001,32,FFBBBS,K
+play,6,1,finls001,32,BBCBCFFC,K/C
+play,6,1,durae001,00,X,63/G
+play,6,1,cabra001,10,BX,S7
+play,6,1,milld002,11,BFX,13/G
+play,7,0,stepg001,00,,NP
+sub,richc001,"Chris Richard",0,9,11
+play,7,0,richc001,00,,NP
+sub,swing001,"Greg Swindell",1,7,1
+play,7,0,richc001,00,,NP
+sub,bautd001,"Danny Bautista",1,9,9
+play,7,0,richc001,00,,NP
+sub,davie001,"Eric Davis",0,9,11
+play,7,0,davie001,10,BX,5/P5
+play,7,0,vinaf001,11,BCX,5/L5
+play,7,0,rente001,12,BCCX,9/F9
+play,7,1,bautd001,00,,NP
+sub,morrm001,"Matt Morris",0,9,1
+play,7,1,bautd001,02,FSX,S7/7S
+play,7,1,womat001,10,BX,S2/BG2.1-2
+play,7,1,bellj001,02,LLX,4(B)6(2)/LDP
+play,7,1,gonzl001,12,BFSS,K
+play,8,0,edmoj001,01,CX,7/F7
+play,8,0,tatif001,32,BBSSBX,6/P6
+play,8,0,lankr001,32,BBSBFX,7/F7
+play,8,1,willm003,21,CBBX,6/P6
+play,8,1,finls001,32,BFFBBX,43/G
+play,8,1,durae001,11,BSX,9/F9
+play,9,0,paquc001,00,,NP
+sub,mantm001,"Matt Mantei",1,7,1
+play,9,0,paquc001,00,,NP
+sub,polap001,"Placido Polanco",0,6,11
+play,9,0,polap001,32,BBCFBX,8/F8
+play,9,0,peree001,11,BCX,8/F8
+play,9,0,mathm001,00,,NP
+sub,dunss001,"Shawon Dunston",0,8,11
+play,9,0,dunss001,22,CSBBS,K
+data,er,stepg001,3
+data,er,morrm001,0
+data,er,reyna001,3
+data,er,sprir001,0
+data,er,swing001,0
+data,er,mantm001,0

@@ -1,0 +1,76 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,02,1,,,,,0,3,CCS,hentp001,1,0,gland001 strikes out. ,gland001,0,
+,32,1,abreb001,,,,1,10,CSFBBBX,hentp001,0,0,abreb001 singles. ,abreb001,0,
+,01,1,,abreb001,,roles001,2,12,FS,hentp001,0,0,abreb001 steals 2B. ,roles001,0,
+,22,1,,abreb001,,,3,18,FSFBBX,hentp001,1,0,,roles001,0,F
+,31,1,liebm001,abreb001,,,4,23,BBBCB,hentp001,0,0,liebm001 walks. ,liebm001,0,
+abreb001 scores. liebm001 to 3B. ,01,1,lee-t002,,liebm001,,5,25,FX,hentp001,0,1,lee-t002 singles. ,lee-t002,0,
+lee-t002 to 2B. ,32,1,burrp001,lee-t002,liebm001,,6,31,BBCBFB,hentp001,0,0,burrp001 walks. ,burrp001,0,
+,11,1,burrp001,lee-t002,liebm001,,7,34,BFX,hentp001,1,0,,andem003,0,P
+,00,1,vinaf001,,,,8,1,X,daalo001,0,0,vinaf001 singles. ,vinaf001,1,
+vinaf001 to 2B. ,32,1,rente001,vinaf001,,,9,7,FBBBFB,daalo001,0,0,rente001 walks. ,rente001,1,
+vinaf001 scores. rente001 scores. ,10,1,,dunss001,,,10,9,BX,daalo001,0,2,dunss001 doubles. ,dunss001,1,
+,12,1,,dunss001,,,11,15,BCCFFC,daalo001,1,0,tatif001 strikes out. ,tatif001,1,
+dunss001 scores. ,00,1,davie001,,,,12,16,X,daalo001,0,1,davie001 singles. ,davie001,1,
+,10,1,davie001,,,,13,18,BX,daalo001,1,0,,paquc001,1,F
+,12,1,davie001,,,,14,22,CSBS,daalo001,1,0,mathm001 strikes out. ,mathm001,1,
+,30,2,peret003,,,,15,38,BBBB,hentp001,0,0,peret003 walks. ,peret003,0,
+peret003 out. ,10,2,daalo001,,,,16,40,BX,hentp001,1,0,daalo001 reaches on fielder's choice. ,daalo001,0,
+,12,2,daalo001,,,,17,44,FFBX,hentp001,1,0,,gland001,0,P
+,22,2,daalo001,,,,18,50,BCFFBC,hentp001,1,0,abreb001 strikes out. ,abreb001,0,
+,32,2,,,,,19,28,BSBFBC,daalo001,1,0,drewj001 strikes out. ,drewj001,1,
+,02,2,,,,,20,31,CCS,daalo001,1,0,hentp001 strikes out. ,hentp001,1,
+,32,2,vinaf001,,,,21,38,BCBCBFX,daalo001,0,0,vinaf001 singles. ,vinaf001,1,
+,02,2,,,,rente001,22,41,CC1,daalo001,1,0,vinaf001 picked off. ,rente001,1,
+,22,3,,,,,23,55,CBBFX,hentp001,1,0,roles001 grounds out. ,roles001,0,G
+,00,3,,,,,24,56,X,hentp001,1,0,,liebm001,0,P
+,22,3,,,,,25,62,FFFBBC,hentp001,1,0,lee-t002 strikes out. ,lee-t002,0,
+,00,3,,,,,26,42,X,daalo001,1,0,rente001 grounds out. ,rente001,1,G
+,32,3,,,,,27,50,BFFBFBFS,daalo001,1,0,dunss001 strikes out. ,dunss001,1,
+,02,3,,,,,28,53,CSS,daalo001,1,0,tatif001 strikes out. ,tatif001,1,
+,00,4,burrp001,,,,29,63,X,hentp001,0,0,burrp001 singles. ,burrp001,0,
+burrp001 to 2B. ,31,4,andem003,burrp001,,,30,68,BFBBB,hentp001,0,0,andem003 walks. ,andem003,0,
+burrp001 to 3B. andem003 to 2B. ,12,4,,andem003,burrp001,,31,72,BFFX,hentp001,1,0,peret003 grounds out. ,peret003,0,G
+,10,4,,andem003,burrp001,,32,74,BX,hentp001,1,0,,daalo001,0,P
+,22,4,,andem003,burrp001,,33,79,CBBFX,hentp001,1,0,gland001 grounds out. ,gland001,0,G
+,00,4,davie001,,,,34,54,X,daalo001,0,0,davie001 singles. ,davie001,1,
+,11,4,davie001,,,,35,57,BFX,daalo001,1,0,,paquc001,1,
+,01,4,davie001,,,,36,59,SX,daalo001,1,0,,mathm001,1,F
+davie001 to 2B. ,00,4,drewj001,davie001,,,37,60,X,daalo001,0,0,drewj001 singles. ,drewj001,1,
+,02,4,drewj001,davie001,,,38,63,SFS,daalo001,1,0,hentp001 strikes out. ,hentp001,1,
+,00,5,abreb001,,,,39,80,X,hentp001,0,0,abreb001 singles. ,abreb001,0,G
+abreb001 to 2B. ,32,5,roles001,abreb001,,,40,87,BBBFFFB,hentp001,0,0,roles001 walks. ,roles001,0,
+,01,5,roles001,abreb001,,,41,89,CX,hentp001,1,0,,liebm001,0,L
+,11,5,roles001,abreb001,,,42,92,BFX,hentp001,1,0,,lee-t002,0,F
+,12,5,roles001,abreb001,,,43,96,BSFX,hentp001,1,0,,burrp001,0,F
+,11,5,,,,,44,66,CBX,daalo001,1,0,vinaf001 grounds out. ,vinaf001,1,G
+,21,5,,,,,45,70,CBBX,daalo001,1,0,rente001 grounds out. ,rente001,1,G
+,32,5,,,,,46,76,SFBBBS,daalo001,1,0,dunss001 strikes out. ,dunss001,1,
+,12,6,,,,,48,6,CCBFFX,morrm001,1,0,,andem003,0,F
+,02,6,,,,,49,9,CFS,morrm001,1,0,peret003 strikes out. ,peret003,0,
+,02,6,daalo001,,,,50,12,CFX,morrm001,0,0,daalo001 singles. ,daalo001,0,
+,32,6,daalo001,,,,51,18,FBBBCX,morrm001,1,0,,gland001,0,P
+,22,6,,,,,52,81,BSSBC,daalo001,1,0,tatif001 strikes out. ,tatif001,1,
+,30,6,davie001,,,,53,85,BBBB,daalo001,0,0,davie001 walks. ,davie001,1,
+davie001 to 2B. ,00,6,paquc001,davie001,,,54,86,X,daalo001,0,0,paquc001 singles. ,paquc001,1,
+,10,6,,davie001,,,55,88,BX,daalo001,2,0,Double Play. ,mathm001,1,
+,12,7,,,,,58,22,CBSC,morrm001,1,0,abreb001 strikes out. ,abreb001,0,
+,01,7,,,,,59,24,CX,morrm001,1,0,roles001 grounds out. ,roles001,0,G
+,32,7,,,,,60,30,BBSCBX,morrm001,1,0,,liebm001,0,
+,10,7,,,,,61,90,BX,daalo001,1,0,,drewj001,1,P
+,11,7,polap001,,,,63,93,CBX,daalo001,0,0,polap001 singles. ,polap001,1,
+polap001 to 2B. ,31,7,vinaf001,polap001,,,64,98,BBBCB,daalo001,0,0,vinaf001 walks. ,vinaf001,1,
+polap001 scores. vinaf001 scores. ,20,7,,,,,65,101,BBX,daalo001,0,3,rente001 homers. ,rente001,1,
+,10,7,,,,,66,103,BX,daalo001,1,0,,dunss001,1,P
+,11,7,,,,,67,106,CBX,daalo001,1,0,clarw001 grounds out. ,clarw001,1,G
+,31,8,,,,,69,5,CBBBX,vered001,1,0,,lee-t002,0,F
+,02,8,,,,,70,9,FSFS,vered001,1,0,burrp001 strikes out. ,burrp001,0,
+,00,8,,,,,71,10,X,vered001,1,0,andem003 grounds out. ,andem003,0,G
+,20,8,,,,,73,3,BBX,boydj001,1,0,davie001 grounds out. ,davie001,1,G
+,11,8,,,,,74,6,BFX,boydj001,1,0,,paquc001,1,
+,12,8,,,,,75,10,CBSS,boydj001,1,0,mathm001 strikes out. ,mathm001,1,
+,01,9,,,,,77,2,CX,timlm001,1,0,peret003 grounds out. ,peret003,0,G
+,22,9,duceb001,,,,79,7,CBFBX,timlm001,0,0,duceb001 singles. ,duceb001,0,
+duceb001 scores. ,21,9,,,,,80,11,BBCX,timlm001,0,2,gland001 homers. ,gland001,0,
+,11,9,,,,,81,14,BCX,timlm001,1,0,,abreb001,0,F
+,22,9,,,,,82,19,BCCBX,timlm001,1,0,,roles001,0,F

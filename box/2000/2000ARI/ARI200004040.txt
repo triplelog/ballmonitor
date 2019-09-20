@@ -1,0 +1,136 @@
+version,2
+info,visteam,PHI
+info,hometeam,ARI
+info,site,PHO01
+info,date,2000/04/04
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,reilm901
+info,ump1b,kellj901
+info,ump2b,coope901
+info,ump3b,diazl901
+info,pitches,pitches
+info,temp,90
+info,winddir,ltor
+info,windspeed,3
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,144
+info,attendance,44298
+info,wp,johnr005
+info,lp,ashba002
+info,save,holmd001
+start,gland001,"Doug Glanville",0,1,8
+start,gantr001,"Ron Gant",0,2,7
+start,roles001,"Scott Rolen",0,3,5
+start,liebm001,"Mike Lieberthal",0,4,2
+start,jordk001,"Kevin Jordan",0,5,4
+start,brogr001,"Rico Brogna",0,6,3
+start,sefck001,"Kevin Sefcik",0,7,9
+start,relad001,"Desi Relaford",0,8,6
+start,ashba002,"Andy Ashby",0,9,1
+start,womat001,"Tony Womack",1,1,6
+start,bellj001,"Jay Bell",1,2,4
+start,gonzl001,"Luis Gonzalez",1,3,7
+start,durae001,"Erubiel Durazo",1,4,3
+start,finls001,"Steve Finley",1,5,8
+start,lee-t002,"Travis Lee",1,6,9
+start,harrl001,"Lenny Harris",1,7,5
+start,milld002,"Damian Miller",1,8,2
+start,johnr005,"Randy Johnson",1,9,1
+play,1,0,gland001,02,CFX,9/F9
+play,1,0,gantr001,30,BBBB,W
+play,1,0,roles001,12,CBCS,K
+play,1,0,liebm001,21,BBFX,9/F9
+play,1,1,womat001,32,BBBCCX,S8
+play,1,1,bellj001,01,CX,63/G.1-2
+play,1,1,gonzl001,10,BX,43/G.2-3
+play,1,1,durae001,21,CBBX,3/G
+play,2,0,jordk001,32,BBBCFB,W
+play,2,0,brogr001,02,SSS,K
+play,2,0,sefck001,10,BX,9/F9
+play,2,0,relad001,10,BX,8/F8
+play,2,1,finls001,01,CX,S
+play,2,1,lee-t002,00,X,S7/7S.1-2
+play,2,1,harrl001,21,BCBX,43/G.2-3;1-2
+play,2,1,milld002,10,BX,HR/7.3-H;2-H
+play,2,1,johnr005,12,BFCX,63/G
+play,2,1,womat001,00,X,43/G
+play,3,0,ashba002,22,BCFBC,K/C
+play,3,0,gland001,21,BCBX,7/F7S
+play,3,0,gantr001,12,BCFS,K
+play,3,1,bellj001,22,FBSBS,K
+play,3,1,gonzl001,22,CBBSX,43/G
+play,3,1,durae001,00,X,3/P3
+play,4,0,roles001,00,X,8/L8
+play,4,0,liebm001,22,BFBSX,D/78
+play,4,0,jordk001,02,CFS,K
+play,4,0,brogr001,21,BSBX,4/L4
+play,4,1,finls001,00,X,S7
+play,4,1,lee-t002,00,X,46(1)3/GDP
+play,4,1,harrl001,11,CBX,31/G
+play,5,0,sefck001,00,X,53/G
+play,5,0,relad001,20,BBX,S8
+play,5,0,ashba002,00,X,34/SH.1-2
+play,5,0,gland001,12,FFBFFS,K
+play,5,1,milld002,21,BFBX,63/G
+play,5,1,johnr005,02,FSX,63/G
+play,5,1,womat001,01,CX,9/F9
+play,6,0,gantr001,00,X,43/G
+play,6,0,roles001,32,BSCBBFX,HR/9
+play,6,0,liebm001,22,BFBCFC,K/C
+play,6,0,jordk001,10,BX,7/F7S
+play,6,1,bellj001,32,SBBFFBX,S
+play,6,1,gonzl001,00,X,HR/9.1-H
+play,6,1,durae001,01,CX,3/G
+play,6,1,finls001,01,CX,HR/7
+play,6,1,lee-t002,22,BFFBX,3/G
+play,6,1,harrl001,00,X,8/F8
+play,7,0,brogr001,21,CBBX,43/G
+play,7,0,sefck001,11,CBX,143/G
+play,7,0,relad001,22,BFCBX,HR/7
+play,7,0,ashba002,00,,NP
+sub,ariaa001,"Alex Arias",0,9,11
+play,7,0,ariaa001,01,CX,8/F8
+play,7,1,milld002,00,,NP
+sub,schrs001,"Steve Schrenk",0,9,1
+play,7,1,milld002,11,BCX,D9
+play,7,1,johnr005,00,X,14/SH.2-3
+play,7,1,womat001,22,CFFBBFX,53/G
+play,7,1,bellj001,32,BFFBBFX,8/F8D
+play,8,0,gland001,32,BBBCFX,43/G
+play,8,0,gantr001,22,BSCBFS,K
+play,8,0,roles001,22,BFCFBS,K
+play,8,1,gonzl001,00,,NP
+sub,millt002,"Trever Miller",0,9,1
+play,8,1,gonzl001,01,CX,8/F8
+play,8,1,durae001,12,BSSS,K
+play,8,1,finls001,01,SX,S
+play,8,1,lee-t002,02,FSC,K/C
+play,9,0,liebm001,12,CCFFFFFBFX,9/L9
+play,9,0,jordk001,22,BFBFFX,E6/G
+play,9,0,brogr001,12,CFBS,K
+play,9,0,sefck001,00,,NP
+sub,duceb001,"Rob Ducey",0,7,11
+play,9,0,duceb001,00,,NP
+sub,sprir001,"Russ Springer",1,9,1
+play,9,0,duceb001,32,CBSBBB,W.1-2
+play,9,0,relad001,11,CBX,S7/7S.2-H(UR);1-2
+play,9,0,millt002,00,,NP
+sub,abreb001,"Bobby Abreu",0,9,11
+play,9,0,abreb001,00,,NP
+sub,plesd001,"Dan Plesac",1,9,1
+play,9,0,abreb001,31,BCBBX,S8.2-H(TUR);1-3
+play,9,0,gland001,00,,NP
+sub,holmd001,"Darren Holmes",1,9,1
+play,9,0,gland001,12,CBFX,5/L5
+data,er,ashba002,6
+data,er,schrs001,0
+data,er,millt002,0
+data,er,johnr005,2
+data,er,sprir001,1
+data,er,plesd001,0
+data,er,holmd001,0

@@ -1,0 +1,214 @@
+version,2
+info,visteam,TOR
+info,hometeam,SEA
+info,site,SEA03
+info,date,2000/07/29
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,guccc901
+info,ump1b,riekr901
+info,ump2b,emmep901
+info,ump3b,davig901
+info,pitches,pitches
+info,temp,69
+info,winddir,ltor
+info,windspeed,7
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,304
+info,attendance,45264
+info,wp,tomkb001
+info,lp,hallr001
+info,save,
+start,stews002,"Shannon Stewart",0,1,7
+start,grebc001,"Craig Grebeck",0,2,4
+start,cruzj004,"Jose Cruz",0,3,8
+start,delgc001,"Carlos Delgado",0,4,3
+start,batit001,"Tony Batista",0,5,5
+start,greet003,"Todd Greene",0,6,10
+start,cordm001,"Marty Cordova",0,7,9
+start,casta001,"Alberto Castillo",0,8,2
+start,gonza001,"Alex S. Gonzalez",0,9,6
+start,castf001,"Frank Castillo",0,0,1
+start,javis001,"Stan Javier",1,1,7
+start,guilc001,"Carlos Guillen",1,2,5
+start,rodra001,"Alex Rodriguez",1,3,6
+start,marte001,"Edgar Martinez",1,4,10
+start,olerj001,"John Olerud",1,5,3
+start,camem001,"Mike Cameron",1,6,8
+start,ibanr001,"Raul Ibanez",1,7,9
+start,olivj001,"Joe Oliver",1,8,2
+start,mclem001,"Mark McLemore",1,9,4
+start,moyej001,"Jamie Moyer",1,0,1
+play,1,0,stews002,01,CX,6/L6
+play,1,0,grebc001,22,CBCBX,63/G
+play,1,0,cruzj004,20,BBX,8/L8
+play,1,1,javis001,22,CFBBFFFX,8/F8
+play,1,1,guilc001,12,CBFS,K
+play,1,1,rodra001,22,CBFBX,43/G
+play,2,0,delgc001,32,CBBCBX,43/G
+play,2,0,batit001,21,SBBX,8/F8
+play,2,0,greet003,30,BBBB,W
+play,2,0,cordm001,01,CX,64(1)/FO
+play,2,1,marte001,02,FFS,K
+play,2,1,olerj001,21,CBBX,S9
+play,2,1,camem001,12,CFBS,K
+play,2,1,ibanr001,02,SFFS,K
+play,3,0,casta001,11,BFX,4/P4
+play,3,0,gonza001,22,CFFBBX,53/G
+play,3,0,stews002,12,SFBX,S8/8S
+play,3,0,grebc001,01,FB,CS2(24)
+play,3,1,olivj001,22,CBBSX,HR/7
+play,3,1,mclem001,30,BBBB,W
+play,3,1,javis001,00,X,43/G.1-2
+play,3,1,guilc001,22,BSSBS,K
+play,3,1,rodra001,32,BSBBCFFB,W
+play,3,1,marte001,30,BBBB,W.2-3;1-2
+play,3,1,olerj001,21,BBCX,D7.3-H;2-H;1-3
+play,3,1,camem001,00,,NP
+sub,duceb001,"Rob Ducey",0,1,7
+play,3,1,camem001,32,BBSBCX,7/F7
+play,4,0,grebc001,12,CFBX,S
+play,4,0,cruzj004,22,CBBFX,9/F9
+play,4,0,delgc001,21,BSBX,D9.1-3
+play,4,0,batit001,12,BCSFFX,63/G.3-H
+play,4,0,greet003,01,SX,8/F8
+play,4,1,ibanr001,00,X,S5/BG5
+play,4,1,olivj001,21,BFBX,3(B)3(1)/LDP
+play,4,1,mclem001,00,X,5/FL
+play,5,0,cordm001,32,BBBCCX,63/G
+play,5,0,casta001,32,SBFBBB,W
+play,5,0,gonza001,11,BCX,S7.1-2
+play,5,0,duceb001,32,CBBCBX,D9.2-H;1-3
+play,5,0,grebc001,00,X,S8.3-H;2-H
+play,5,0,cruzj004,02,FFC,K/C
+play,5,0,delgc001,11,FBX,43/G
+play,5,1,javis001,12,FBFX,4/L4
+play,5,1,guilc001,22,CBFBFS,K
+play,5,1,rodra001,01,CX,S8
+play,5,1,marte001,21,BBFX,S9.1-2
+play,5,1,olerj001,12,CFBS,K
+play,6,0,batit001,12,SFBC,K/C
+play,6,0,greet003,21,SBBX,HR/7
+play,6,0,cordm001,32,CSFFBBBS,K
+play,6,0,casta001,32,CBBBCB,W
+play,6,0,gonza001,00,X,4/P4
+play,6,1,camem001,32,BBBCFFFX,7/F7D
+play,6,1,ibanr001,22,BFBSX,D9
+play,6,1,olivj001,11,FBX,D/78.2-H
+play,6,1,mclem001,00,,NP
+sub,frasj001,"John Frascatore",0,0,1
+play,6,1,mclem001,21,CBBX,13/G.2-3
+play,6,1,javis001,22,SFBFBFX,S7.3-H
+play,6,1,guilc001,01,CB,CS2(26)
+play,7,0,duceb001,00,,NP
+sub,rhoda001,"Arthur Rhodes",1,0,1
+play,7,0,duceb001,32,CBFBBS,K
+play,7,0,grebc001,02,SCS,K
+play,7,0,cruzj004,22,FSBBC,K/C
+play,7,1,guilc001,10,BX,43/G
+play,7,1,rodra001,21,BCBH,HP
+com,"$Rodriguez hit on left thigh; he and Frascatore exchanged angry words"
+com,"and had to be restrained; both benches and bullpens emptied but no"
+com,"fighting occurred"
+play,7,1,marte001,01,FX,64(1)3/GDP
+play,8,0,delgc001,02,CSS,K
+play,8,0,batit001,00,,NP
+sub,panij001,"Jose Paniagua",1,0,1
+play,8,0,batit001,02,SSS,K
+play,8,0,greet003,22,BCFFFBS,K
+play,8,1,olerj001,00,,NP
+sub,borbp001,"Pedro Borbon",0,0,1
+play,8,1,olerj001,01,CX,43/G
+play,8,1,camem001,00,,NP
+sub,quanp001,"Paul Quantrill",0,0,1
+play,8,1,camem001,32,CBCBBB,W
+play,8,1,ibanr001,12,FFB+1,PO1(23)
+play,8,1,ibanr001,12,FFB+1X,S9
+play,8,1,olivj001,12,BCCX,D7.1-3
+play,8,1,mclem001,21,FBBX,6/L6
+play,9,0,cordm001,01,SX,9/F9
+play,9,0,casta001,12,CFBS,K
+play,9,0,gonza001,12,CBCFX,63/G
+play,9,1,javis001,00,,NP
+sub,kochb001,"Billy Koch",0,0,1
+play,9,1,javis001,12,CSBX,S
+play,9,1,guilc001,00,,NP
+sub,hendr001,"Rickey Henderson",1,1,12
+play,9,1,guilc001,10,BX,3/SH.1-2
+play,9,1,rodra001,30,IIII,IW
+play,9,1,marte001,21,BFBX,4/P4
+play,9,1,olerj001,01,CX,65(2)/FO.1-2
+play,10,0,duceb001,00,,NP
+sub,hendr001,"Rickey Henderson",1,1,7
+play,10,0,duceb001,00,,NP
+sub,sasak001,"Kazuhiro Sasaki",1,0,1
+play,10,0,duceb001,02,CSS,K23
+play,10,0,grebc001,32,SBSBFBB,W
+play,10,0,cruzj004,00,,NP
+sub,bushh001,"Homer Bush",0,2,12
+play,10,0,cruzj004,22,FBBSFS,K+SB2
+play,10,0,delgc001,30,IIII,IW
+play,10,0,batit001,12,BSCS,K
+play,10,1,camem001,00,,NP
+sub,bushh001,"Homer Bush",0,2,4
+play,10,1,camem001,00,,NP
+sub,painl001,"Lance Painter",0,0,1
+play,10,1,camem001,10,BX,S8
+play,10,1,ibanr001,22,CBSBFH,HP.1-2
+play,10,1,olivj001,00,X,14/SH.2-3;1-2
+play,10,1,mclem001,00,,NP
+sub,buhnj001,"Jay Buhner",1,9,11
+play,10,1,buhnj001,30,IIII,IW
+play,10,1,hendr001,22,SBFBFS,K
+play,10,1,guilc001,00,,NP
+sub,belld002,"David Bell",1,2,11
+play,10,1,belld002,22,BCFBX,8/F8
+play,11,0,greet003,00,,NP
+sub,belld002,"David Bell",1,2,4
+play,11,0,greet003,00,,NP
+sub,mabrj001,"John Mabry",1,9,5
+play,11,0,greet003,00,,NP
+sub,fullb001,"Brad Fullmer",0,6,11
+play,11,0,fullb001,00,,NP
+sub,tomkb001,"Brett Tomko",1,0,1
+play,11,0,fullb001,11,CBX,S8
+play,11,0,cordm001,31,BBBCB,W.1-2
+play,11,0,casta001,31,BBBCX,1/BP1
+play,11,0,gonza001,32,BCBBSX,3/P3
+play,11,0,duceb001,22,BSSBX,8/F8
+play,11,1,rodra001,32,SFBBBS,K
+play,11,1,marte001,31,BBBSB,W
+play,11,1,olerj001,01,CX,36(1)1/GDP
+play,12,0,bushh001,11,BCX,S8
+play,12,0,cruzj004,02,SFX,8/L8
+play,12,0,delgc001,20,BBX,6/P6
+play,12,0,batit001,32,BBBFSFFFFS,K
+play,12,1,camem001,00,X,13/G
+play,12,1,ibanr001,32,BBBCSB,W
+play,12,1,olivj001,00,X,53/G.1-2
+play,12,1,mabrj001,12,BFFS,K
+play,13,0,fullb001,32,SBBFBX,5/FL
+play,13,0,cordm001,11,BFX,53/G
+play,13,0,casta001,02,CSFS,K
+play,13,1,hendr001,00,,NP
+sub,hallr001,"Roy Halladay",0,0,1
+play,13,1,hendr001,12,CBFX,S
+play,13,1,belld002,00,X,FC2/SH.1-2;B-1#
+play,13,1,rodra001,21,BBCX,S8.2-3;1-2
+play,13,1,marte001,21,BFBX,S8.3-H;2-3;1-2
+data,er,castf001,5
+data,er,frasj001,0
+data,er,borbp001,0
+data,er,quanp001,0
+data,er,kochb001,0
+data,er,painl001,0
+data,er,hallr001,1
+data,er,moyej001,5
+data,er,rhoda001,0
+data,er,panij001,0
+data,er,sasak001,0
+data,er,tomkb001,0

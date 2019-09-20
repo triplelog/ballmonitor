@@ -1,0 +1,154 @@
+version,2
+info,visteam,SLN
+info,hometeam,HOU
+info,site,HOU03
+info,date,2000/07/22
+info,number,0
+info,starttime,12:15PM
+info,daynight,day
+info,usedh,false
+info,umphome,diazl901
+info,ump1b,reilm901
+info,ump2b,kellj901
+info,ump3b,coope901
+info,pitches,pitches
+info,temp,72
+info,winddir,ltor
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,185
+info,attendance,42588
+info,wp,millw001
+info,lp,hentp001
+info,save,
+start,vinaf001,"Fernando Vina",0,1,4
+start,rente001,"Edgar Renteria",0,2,6
+start,edmoj001,"Jim Edmonds",0,3,8
+start,howat001,"Thomas Howard",0,4,7
+start,tatif001,"Fernando Tatis",0,5,5
+start,richc001,"Chris Richard",0,6,9
+start,peree001,"Eduardo Perez",0,7,3
+start,mathm001,"Mike Matheny",0,8,2
+start,hentp001,"Pat Hentgen",0,9,1
+start,lugoj001,"Julio Lugo",1,1,6
+start,biggc001,"Craig Biggio",1,2,4
+start,bagwj001,"Jeff Bagwell",1,3,3
+start,hidar001,"Richard Hidalgo",1,4,8
+start,aloum001,"Moises Alou",1,5,9
+start,melum001,"Mitch Meluskey",1,6,2
+start,wardd002,"Daryle Ward",1,7,7
+start,trubc001,"Chris Truby",1,8,5
+start,millw001,"Wade Miller",1,9,1
+play,1,0,vinaf001,32,BBCSFBFFX,D9
+play,1,0,rente001,01,SX,24/SH.2-3
+play,1,0,edmoj001,20,BBX,7/SF.3-H
+play,1,0,howat001,32,BBCBFS,K
+play,1,1,lugoj001,21,BBCX,S9
+play,1,1,biggc001,10,BX,S7.1-2
+play,1,1,bagwj001,22,BCCBX,D7.2-H;1-3
+play,1,1,hidar001,00,X,63/G.3-H
+play,1,1,aloum001,00,X,9/F9.2-3
+play,1,1,melum001,10,BX,HR/9.3-H
+play,1,1,wardd002,12,BFFFFFX,D9
+play,1,1,trubc001,32,BBCFBX,S7.2-H
+play,1,1,millw001,00,X,S.1-2
+play,1,1,lugoj001,00,X,3/G
+play,2,0,tatif001,22,BBCCFFX,6/P6
+play,2,0,richc001,22,BCCBX,9/L9
+play,2,0,peree001,32,CBSBBFB,W
+play,2,0,mathm001,00,X,3/G
+play,2,1,biggc001,22,CCBFBX,53/G
+play,2,1,bagwj001,12,FCBX,HR/9
+play,2,1,hidar001,00,X,3/G
+play,2,1,aloum001,30,BBBB,W
+play,2,1,melum001,32,CCBBBX,S8.1-3
+play,2,1,wardd002,11,BCX,8/F8
+play,3,0,hentp001,11,BCX,43/G
+play,3,0,vinaf001,20,BBX,13/G
+play,3,0,rente001,32,CSBBBX,63/G
+play,3,1,trubc001,11,CBX,S8
+play,3,1,millw001,02,CCX,14/SH.1-2
+play,3,1,lugoj001,22,CBCBX,8/L8
+play,3,1,biggc001,10,BX,9/F9
+play,4,0,edmoj001,32,FBBSBFFS,K
+play,4,0,howat001,12,CBFC,K/C
+play,4,0,tatif001,02,CCS,K
+play,4,1,bagwj001,00,,NP
+sub,thomm002,"Mark Thompson",0,9,1
+play,4,1,bagwj001,10,BX,S8
+play,4,1,hidar001,01,CX,S7.1-2
+play,4,1,aloum001,32,CBBBFFB,W.2-3;1-2
+play,4,1,melum001,10,BH,HP.3-H;2-3;1-2
+play,4,1,wardd002,12,BFFX,S8.3-H;2XH(82);1-2
+play,4,1,trubc001,20,BBX,D7.2-H;1-3
+play,4,1,millw001,12,CBFS,K
+play,4,1,lugoj001,22,CBBCX,S9.3-H;2-3;B-2(E2)
+play,4,1,biggc001,21,BCBX,43/G
+play,5,0,richc001,02,CSX,53/G
+play,5,0,peree001,12,CSBS,K
+play,5,0,mathm001,32,CBFFBBX,53/G
+play,5,1,bagwj001,32,BCBBFH,HP
+play,5,1,hidar001,21,CBBX,4/P4
+play,5,1,aloum001,00,,NP
+sub,jamem001,"Mike James",0,5,1
+play,5,1,aloum001,00,,NP
+sub,paquc001,"Craig Paquette",0,9,5
+play,5,1,aloum001,31,BFBBX,S7.1-2
+play,5,1,melum001,32,BFFBFFBX,4(1)3/GDP
+play,6,0,paquc001,12,CFBS,K
+play,6,0,vinaf001,32,BBCBCX,43/G
+play,6,0,rente001,31,CBBBB,W
+play,6,0,edmoj001,20,BBX,HR/9.1-H
+play,6,0,howat001,32,FBFBFBC,K/C
+play,6,1,wardd002,32,FBBBFFFS,K
+play,6,1,trubc001,12,CSBX,3/P3
+play,6,1,millw001,22,BSCBC,K/C
+play,7,0,jamem001,00,,NP
+sub,polap001,"Placido Polanco",0,5,11
+play,7,0,polap001,00,X,8/L8
+play,7,0,richc001,10,BX,7/F7D
+play,7,0,peree001,22,BBFFC,K/C
+play,7,1,lugoj001,00,,NP
+sub,polap001,"Placido Polanco",0,5,6
+play,7,1,lugoj001,00,,NP
+sub,sloch001,"Heathcliff Slocumb",0,2,1
+play,7,1,lugoj001,02,CFX,53/G
+play,7,1,biggc001,00,X,63/G
+play,7,1,bagwj001,21,BBSX,63/G
+play,8,0,mathm001,00,,NP
+sub,spieb001,"Bill Spiers",1,2,4
+play,8,0,mathm001,11,CBX,S9
+play,8,0,paquc001,00,B,WP.1-2
+play,8,0,paquc001,32,BBBCSS,K
+play,8,0,vinaf001,10,BX,S9.2-3
+play,8,0,sloch001,00,,NP
+sub,wilkr001,"Rick Wilkins",0,2,11
+play,8,0,wilkr001,00,X,3/G.3-H;1-2
+play,8,0,edmoj001,21,BBCX,8/F8D
+play,8,1,hidar001,00,,NP
+sub,vered001,"Dave Veres",0,2,1
+play,8,1,hidar001,22,CBCBFFS,K
+play,8,1,aloum001,22,FSBBX,S9
+play,8,1,melum001,32,BCCBBH,HP.1-2
+play,8,1,wardd002,12,FBFFS,K
+play,8,1,trubc001,12,CFBX,53/G
+play,9,0,howat001,00,,NP
+sub,hidar001,"Richard Hidalgo",1,4,7
+play,9,0,howat001,00,,NP
+sub,barkg001,"Glen Barker",1,9,8
+play,9,0,howat001,00,,NP
+sub,valdm001,"Marc Valdes",1,7,1
+play,9,0,howat001,10,BX,43/G
+play,9,0,polap001,12,BFFX,S9
+play,9,0,richc001,12,BCCX,3/G.1-2
+play,9,0,peree001,12,BFSX,D9.2-H
+play,9,0,mathm001,02,CSS,K
+data,er,hentp001,6
+data,er,thomm002,4
+data,er,jamem001,0
+data,er,sloch001,0
+data,er,vered001,0
+data,er,millw001,4
+data,er,valdm001,1

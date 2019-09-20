@@ -1,0 +1,79 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,22,1,,,,,0,5,CBBCX,parrj003,1,0,durhr001 grounds out. ,durhr001,0,G
+,12,1,graft001,,,,1,9,BSFX,parrj003,0,0,graft001 reaches on error. ,graft001,0,
+,11,1,graft001,,,,2,12,CBX,parrj003,1,0,,thomf001,0,F
+,10,1,,,,ordom001,3,14,B1,parrj003,1,0,graft001 picked off. ,ordom001,0,
+,22,1,,,,,4,5,CBBFX,baldj002,1,0,hairj002 grounds out. ,hairj002,1,G
+,22,1,,,,,5,10,BCBFX,baldj002,1,0,moram002 grounds out. ,moram002,1,G
+,32,1,deshd001,,,,6,16,BFFBBB,baldj002,0,0,deshd001 walks. ,deshd001,1,
+,01,1,,deshd001,,bellj002,7,18,FC,baldj002,0,0,deshd001 steals 2B. ,bellj002,1,
+,12,1,,deshd001,,,8,22,FCBX,baldj002,1,0,bellj002 grounds out. ,bellj002,1,G
+,22,2,,,,,9,20,CCBBFS,parrj003,1,0,ordom001 strikes out. ,ordom001,0,
+,22,2,,,,,10,25,BCFBC,parrj003,1,0,konep001 strikes out. ,konep001,0,
+,02,2,,,,,11,28,SCS,parrj003,1,0,perrh001 strikes out. ,perrh001,0,
+,00,2,,,,,12,23,X,baldj002,1,0,conij001 grounds out. ,conij001,1,G
+,10,2,,,,,13,25,BX,baldj002,1,0,richc001 grounds out. ,richc001,1,G
+,02,2,,,,,14,28,CCX,baldj002,1,0,lewim001 grounds out. ,lewim001,1,G
+,32,3,,,,,15,34,CBBFBC,parrj003,1,0,lee-c001 strikes out. ,lee-c001,0,
+,32,3,abboj002,,,,16,41,BBBCCFB,parrj003,0,0,abboj002 walks. ,abboj002,0,
+abboj002 out. ,31,3,johnc002,,,,17,46,FBBBX,parrj003,1,0,johnc002 reaches on fielder's choice. ,johnc002,0,
+,32,3,johnc002,,,,18,52,BCSBBC,parrj003,1,0,durhr001 strikes out. ,durhr001,0,
+,21,3,,,,,19,32,CBBX,baldj002,1,0,myerg001 grounds out. ,myerg001,1,G
+,11,3,matol001,,,,20,35,BCX,baldj002,0,0,matol001 singles. ,matol001,1,
+matol001 to 2B. ,22,3,hairj002,matol001,,,21,43,BFFFFBFH,baldj002,0,0,hairj002 hit by pitch. ,hairj002,1,
+matol001 to 3B. hairj002 to 2B. ,00,3,moram002,hairj002,matol001,,22,44,H,baldj002,0,0,moram002 hit by pitch. ,moram002,1,
+,00,3,,hairj002,matol001,,23,45,X,baldj002,2,0,Double Play. ,deshd001,1,
+,12,4,,,,,24,56,BCFX,parrj003,0,1,graft001 homers. ,graft001,0,
+,31,4,thomf001,,,,25,61,CBBBB,parrj003,0,0,thomf001 walks. ,thomf001,0,
+,00,4,thomf001,,,,26,62,X,parrj003,1,0,,ordom001,0,F
+,12,4,,,,,27,69,CSFFBFX,parrj003,2,0,Double Play. ,konep001,0,
+,00,4,bellj002,,,,28,46,X,baldj002,0,0,bellj002 singles. ,bellj002,1,
+,10,4,,,,,29,48,BX,baldj002,2,0,Double Play. ,conij001,1,
+,20,4,richc001,,,,30,51,BBX,baldj002,0,0,richc001 singles. ,richc001,1,
+,12,4,richc001,,,,31,55,CCBC,baldj002,1,0,lewim001 strikes out. ,lewim001,1,
+,30,5,perrh001,,,,32,73,BBBB,parrj003,0,0,perrh001 walks. ,perrh001,0,
+perrh001 to 3B. ,22,5,,lee-c001,perrh001,,33,78,BFSBX,parrj003,0,0,lee-c001 doubles. ,lee-c001,0,
+,02,5,,lee-c001,perrh001,,34,82,CFFS,parrj003,1,0,abboj002 strikes out. ,abboj002,0,
+,32,5,,lee-c001,perrh001,,35,88,BFBBSS,parrj003,1,0,johnc002 strikes out. ,johnc002,0,
+,11,5,,lee-c001,perrh001,,36,91,CBX,parrj003,1,0,durhr001 grounds out. ,durhr001,0,G
+,00,5,,myerg001,,,37,56,X,baldj002,0,0,myerg001 doubles. ,myerg001,1,
+myerg001 scores. ,00,5,matol001,,,,38,57,X,baldj002,0,1,matol001 singles. ,matol001,1,
+matol001 to 2B. ,00,5,hairj002,matol001,,,39,58,H,baldj002,0,0,hairj002 hit by pitch. ,hairj002,1,
+matol001 to 3B. hairj002 to 2B. ,32,5,,hairj002,matol001,,40,66,BBCFFFBX,baldj002,1,0,moram002 grounds out. ,moram002,1,G
+matol001 scores. ,12,5,,hairj002,,,41,70,BCFX,baldj002,1,1,deshd001 hits sacrifice fly. ,deshd001,1,
+,22,5,,hairj002,,,42,75,BCBSS,baldj002,1,0,bellj002 strikes out. ,bellj002,1,
+,31,6,graft001,,,,43,96,BBCBB,parrj003,0,0,graft001 walks. ,graft001,0,
+graft001 to 2B. ,31,6,thomf001,graft001,,,44,101,CBBBB,parrj003,0,0,thomf001 walks. ,thomf001,0,
+graft001 to 3B. ,10,6,,,graft001,,45,103,BX,parrj003,2,0,Double Play. ,ordom001,0,
+,31,6,konep001,,graft001,,46,108,CBBBB,parrj003,0,0,konep001 walks. ,konep001,0,
+,11,6,konep001,,graft001,,47,111,BCX,parrj003,1,0,perrh001 grounds out. ,perrh001,0,G
+,00,6,,,,,48,76,X,baldj002,0,1,conij001 homers. ,conij001,1,
+,01,6,richc001,,,,49,78,CX,baldj002,0,0,richc001 singles. ,richc001,1,
+richc001 to 2B. ,10,6,lewim001,richc001,,,50,80,BH,baldj002,0,0,lewim001 hit by pitch. ,lewim001,1,
+richc001 to 3B. lewim001 to 2B. ,00,6,,lewim001,richc001,,51,81,X,baldj002,1,0,Sacrifice bunt by myerg001.,myerg001,1,
+,31,6,matol001,lewim001,richc001,,52,86,CBBBB,baldj002,0,0,matol001 walks. ,matol001,1,
+richc001 scores. lewim001 scores. matol001 to 2B. ,32,6,hairj002,matol001,,,53,92,BFBFBX,baldj002,0,2,hairj002 singles. ,hairj002,1,
+hairj002 to 2B. ,11,6,,hairj002,,moram002,55,3,CBC,barcl001,1,0,matol001 caught stealing. ,moram002,1,
+,32,6,,hairj002,,,56,10,CBCBFBX,barcl001,1,0,,moram002,1,
+,11,7,,,,,57,114,CBX,parrj003,1,0,,lee-c001,0,F
+,31,7,abboj002,,,,58,119,BBCBB,parrj003,0,0,abboj002 walks. ,abboj002,0,
+abboj002 to 2B. ,00,7,,abboj002,,,59,120,X,parrj003,1,0,johnc002 grounds out. ,johnc002,0,G
+,31,7,durhr001,abboj002,,,60,125,SBBBB,parrj003,0,0,durhr001 walks. ,durhr001,0,
+,22,7,durhr001,abboj002,,,63,5,FBBSS,tromm001,1,0,bainh001 strikes out. ,bainh001,0,
+,00,7,,,,,65,11,X,barcl001,1,0,deshd001 grounds out. ,deshd001,1,G
+,00,7,bellj002,,,,66,12,X,barcl001,0,0,bellj002 singles. ,bellj002,1,
+,01,7,bellj002,,,,67,14,CX,barcl001,1,0,,conij001,1,F
+,02,7,bellj002,,,,68,17,CFX,barcl001,1,0,,richc001,1,
+,12,8,,,,,69,10,CCFBC,tromm001,1,0,thomf001 strikes out. ,thomf001,0,
+,32,8,ordom001,,,,70,16,BFBSBX,tromm001,0,0,ordom001 reaches on error. ,ordom001,0,
+ordom001 to 2B. ,01,8,konep001,ordom001,,,71,18,SX,tromm001,0,0,konep001 singles. ,konep001,0,
+,22,8,konep001,ordom001,,,72,23,BSCBS,tromm001,1,0,perrh001 strikes out. ,perrh001,0,
+,02,8,konep001,ordom001,,,73,26,CCX,tromm001,1,0,,lee-c001,0,F
+,20,8,,,,,75,3,BBX,howrb001,1,0,lewim001 grounds out. ,lewim001,1,G
+,01,8,myerg001,,,,76,5,FX,howrb001,0,0,myerg001 singles. ,myerg001,1,
+,11,8,,,,,77,8,FBX,howrb001,2,0,Double Play. ,matol001,1,
+,12,9,,,,,79,5,CBCFS,kohlr001,1,0,abboj002 strikes out. ,abboj002,0,
+,31,9,,,,,80,10,BBBCX,kohlr001,1,0,,johnc002,0,F
+,02,9,durhr001,,,,81,13,SCX,kohlr001,0,0,durhr001 reaches on error. ,durhr001,0,G
+durhr001 scores. valej003 scores. ,11,9,,,,,82,16,FBX,kohlr001,0,2,valej003 homers. ,valej003,0,
+,12,9,,,,,83,20,FFBX,kohlr001,1,0,,thomf001,0,F

@@ -1,0 +1,178 @@
+version,2
+info,visteam,CIN
+info,hometeam,NYN
+info,site,NYC17
+info,date,2000/04/27
+info,number,0
+info,starttime,1:10PM
+info,daynight,day
+info,usedh,false
+info,umphome,davig901
+info,ump1b,joycj901
+info,ump2b,riekr901
+info,ump3b,emmep901
+info,pitches,pitches
+info,temp,47
+info,winddir,tocf
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,217
+info,attendance,50971
+info,wp,gravd001
+info,lp,benia001
+info,save,sulls001
+start,reesp001,"Pokey Reese",0,1,4
+start,yound001,"Dmitri Young",0,2,7
+start,grifk002,"Ken Griffey",0,3,8
+start,bichd001,"Dante Bichette",0,4,9
+start,cases001,"Sean Casey",0,5,3
+start,boona001,"Aaron Boone",0,6,5
+start,santb001,"Benito Santiago",0,7,2
+start,dawkt001,"Travis Dawkins",0,8,6
+start,parrs001,"Steve Parris",0,9,1
+start,nunnj001,"Jon Nunnally",1,1,7
+start,belld001,"Derek Bell",1,2,9
+start,alfoe001,"Edgardo Alfonzo",1,3,4
+start,ventr001,"Robin Ventura",1,4,5
+start,zeilt001,"Todd Zeile",1,5,3
+start,paytj001,"Jay Payton",1,6,8
+start,pratt001,"Todd Pratt",1,7,2
+start,ordor001,"Rey Ordonez",1,8,6
+start,ruscg001,"Glendon Rusch",1,9,1
+play,1,0,reesp001,32,BCCBBX,4/P4
+play,1,0,yound001,00,X,63/G
+play,1,0,grifk002,12,BFFX,1/P1
+play,1,1,nunnj001,11,CBX,5/L5
+play,1,1,belld001,31,CBBBB,W
+play,1,1,alfoe001,21,CBBX,S9.1-2
+play,1,1,ventr001,10,BX,36(1)1/GDP
+play,2,0,bichd001,00,X,53/G
+play,2,0,cases001,22,BCFFBX,43/G
+play,2,0,boona001,22,BCCBX,9/F9
+play,2,1,zeilt001,21,BBFX,63/G
+play,2,1,paytj001,32,CBBBFB,W
+play,2,1,pratt001,12,CFBX,64(1)3/GDP
+play,3,0,santb001,01,CX,3/G
+play,3,0,dawkt001,22,BCBSC,K/C
+play,3,0,parrs001,00,X,D7
+play,3,0,reesp001,31,CBBBX,8/F8
+play,3,1,ordor001,12,BFFS,K
+play,3,1,ruscg001,01,CX,53/G
+play,3,1,nunnj001,32,BCBBCX,S9
+play,3,1,belld001,30,BBBB,W.1-2
+play,3,1,alfoe001,20,BBX,8/F8
+play,4,0,yound001,12,BCCFFS,K
+play,4,0,grifk002,10,BX,HR/9
+play,4,0,bichd001,12,FCBX,4/P4
+play,4,0,cases001,02,CCC,K/C
+play,4,1,ventr001,00,X,HR/9
+play,4,1,zeilt001,02,CCX,63/G
+play,4,1,paytj001,00,X,43/G
+play,4,1,pratt001,01,CX,8/F8
+play,5,0,boona001,11,BFX,D8
+play,5,0,santb001,22,FCBFBFX,4/P4
+play,5,0,dawkt001,10,BX,7/F7D
+play,5,0,parrs001,12,SSBS,K23
+play,5,1,ordor001,11,BCX,63/G
+play,5,1,ruscg001,10,BX,3/G
+play,5,1,nunnj001,01,FX,8/F8
+play,6,0,reesp001,22,BFSBC,K/C
+play,6,0,yound001,21,BCBX,S8/8S
+play,6,0,grifk002,10,BX,8/F8
+play,6,0,bichd001,00,X,46(1)/FO
+play,6,1,belld001,00,X,63/G
+play,6,1,alfoe001,32,CBBSBX,S8
+play,6,1,ventr001,31,BCBBX,7/F7
+play,6,1,zeilt001,22,BCCBX,13/G
+play,7,0,cases001,01,FX,43/G
+play,7,0,boona001,12,BCCFS,K
+play,7,0,santb001,00,X,S7/7S
+play,7,0,dawkt001,12,CBFX,13/G
+play,7,1,paytj001,22,BFFBS,K
+play,7,1,pratt001,32,BSBBSX,43/G
+play,7,1,ordor001,10,BX,9/F9
+play,8,0,parrs001,00,,NP
+sub,ochoa001,"Alex Ochoa",0,9,11
+play,8,0,ochoa001,01,CX,S
+play,8,0,reesp001,00,X,14/SH.1-2
+play,8,0,yound001,00,X,13/G.2-3
+play,8,0,grifk002,30,IIII,IW
+play,8,0,bichd001,00,,NP
+sub,wendt001,"Turk Wendell",1,6,1
+play,8,0,bichd001,00,,NP
+sub,moram002,"Melvin Mora",1,9,8
+play,8,0,bichd001,00,X,6/P6
+play,8,1,moram002,00,,NP
+sub,ochoa001,"Alex Ochoa",0,9,9
+play,8,1,moram002,00,,NP
+sub,wills002,"Scott Williamson",0,4,1
+play,8,1,moram002,21,BBCX,3/FL
+play,8,1,nunnj001,10,BX,6/P6
+play,8,1,belld001,32,FSBBBB,W
+play,8,1,alfoe001,22,BBFSFB,PB.1-2
+play,8,1,alfoe001,32,BBFSFBB,W
+play,8,1,ventr001,02,CCS,K
+play,9,0,cases001,00,X,8/F8
+play,9,0,boona001,12,SFBS,K
+play,9,0,santb001,11,FBX,4/P4
+play,9,1,zeilt001,11,CBX,S
+play,9,1,wendt001,00,,NP
+sub,franm001,"Matt Franco",1,6,11
+play,9,1,franm001,00,,NP
+sub,hendr001,"Rickey Henderson",1,5,12
+play,9,1,franm001,32,BBFFBS,K+CS2(26)/DP
+play,9,1,pratt001,31,FBBBB,W
+play,9,1,ordor001,12,CBFX,D7.1-3
+play,9,1,moram002,30,BBBB,W
+play,9,1,nunnj001,00,,NP
+sub,gravd001,"Danny Graves",0,7,1
+play,9,1,nunnj001,00,,NP
+sub,taube001,"Eddie Taubensee",0,4,2
+play,9,1,nunnj001,02,CCX,9/F9D
+play,10,0,dawkt001,00,,NP
+sub,franm001,"Matt Franco",1,6,3
+play,10,0,dawkt001,00,,NP
+sub,cookd001,"Dennis Cook",1,5,1
+play,10,0,dawkt001,32,BFBFFBFFFFFFX,S7/7S
+play,10,0,ochoa001,00,X,26(1)4/BG2/GDP
+play,10,0,reesp001,22,BFBSC,K/C
+play,10,1,belld001,32,CBFFBBFS,K
+play,10,1,alfoe001,01,CX,3/FL
+play,10,1,ventr001,10,BX,3/G
+play,11,0,yound001,31,SBBBX,53/G
+play,11,0,grifk002,31,BBBSX,31/G
+play,11,0,taube001,01,CX,63/G
+play,11,1,cookd001,00,,NP
+sub,abbok002,"Kurt Abbott",1,5,11
+play,11,1,abbok002,01,CX,63/G
+play,11,1,franm001,11,CBX,8/F8
+play,11,1,pratt001,11,SBH,HP
+play,11,1,ordor001,00,X,64(1)/FO
+play,12,0,cases001,00,,NP
+sub,benia001,"Armando Benitez",1,5,1
+play,12,0,cases001,31,CBBBB,W
+play,12,0,boona001,00,X,34/SH.1-2
+play,12,0,gravd001,00,,NP
+sub,morrh001,"Hal Morris",0,7,11
+play,12,0,morrh001,30,IIII,IW
+play,12,0,dawkt001,01,CX,S7.2-H;1-3;B-2(TH)
+play,12,0,ochoa001,12,FBFFX,3/FL
+play,12,0,reesp001,12,CBFX,5/P5
+play,12,1,moram002,00,,NP
+sub,sulls001,"Scott Sullivan",0,7,1
+play,12,1,moram002,12,CLBFX,53/G
+play,12,1,nunnj001,31,BSBBB,W
+play,12,1,belld001,00,B,WP.1-2
+play,12,1,belld001,31,BBBCB,W
+play,12,1,alfoe001,32,BBCBCX,4/P4
+play,12,1,ventr001,00,X,5/P5
+data,er,parrs001,1
+data,er,wills002,0
+data,er,gravd001,0
+data,er,sulls001,0
+data,er,ruscg001,1
+data,er,wendt001,0
+data,er,cookd001,0
+data,er,benia001,1

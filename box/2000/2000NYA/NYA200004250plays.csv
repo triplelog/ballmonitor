@@ -1,0 +1,80 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,11,1,,,,,0,3,CBX,mendr001,1,0,walkt002 grounds out. ,walkt002,0,G
+,30,1,guzmc001,,,,1,7,BBBB,mendr001,0,0,guzmc001 walks. ,guzmc001,0,
+guzmc001 to 2B. ,10,1,lawtm002,guzmc001,,,2,9,BX,mendr001,0,0,lawtm002 singles. ,lawtm002,0,
+guzmc001 to 3B. lawtm002 out. ,12,1,ortid001,,guzmc001,,3,14,CFFBX,mendr001,1,0,ortid001 reaches on fielder's choice. ,ortid001,0,
+,11,1,ortid001,,guzmc001,,4,17,BCX,mendr001,1,0,,coomr001,0,P
+,31,1,,,,,5,5,FBBBX,bergs001,1,0,,johnl001,1,F
+,22,1,jeted001,,,,6,10,BCBCX,bergs001,0,0,jeted001 singles. ,jeted001,1,
+,01,1,jeted001,,,,7,12,FX,bergs001,1,0,,oneip001,1,F
+,10,1,,jeted001,,willb002,8,14,BB,bergs001,0,0,jeted001 steals 2B. ,willb002,1,
+,30,1,willb002,jeted001,,,9,18,BBBB,bergs001,0,0,willb002 walks. ,willb002,1,
+,01,1,willb002,jeted001,,,10,20,SX,bergs001,1,0,martt002 grounds out. ,martt002,1,G
+,00,2,,,,,11,18,X,mendr001,1,0,koskc001 grounds out. ,koskc001,0,G
+,22,2,,,,,12,23,BBFSS,mendr001,1,0,jensm001 strikes out. ,jensm001,0,
+,12,2,,,,,13,27,CCBS,mendr001,1,0,jonej003 strikes out. ,jonej003,0,
+,21,2,,,,,14,24,BBFX,bergs001,1,0,posaj001 grounds out. ,posaj001,1,G
+leder001 out. ,00,2,,,,,15,25,X,bergs001,1,0,leder001 singles. ,leder001,1,
+,21,2,,,,,16,29,BBCX,bergs001,1,0,bross001 grounds out. ,bross001,1,G
+,10,3,,,,,17,29,BX,mendr001,1,0,huntt001 grounds out. ,huntt001,0,G
+,01,3,,,,,18,31,CX,mendr001,0,1,walkt002 homers. ,walkt002,0,
+,11,3,,,,,19,34,BCX,mendr001,0,1,guzmc001 homers. ,guzmc001,0,
+,02,3,,,,,20,37,FFX,mendr001,1,0,lawtm002 grounds out. ,lawtm002,0,G
+,22,3,,,,,21,42,BCSBX,mendr001,1,0,ortid001 grounds out. ,ortid001,0,G
+,12,3,,,,,22,34,CFFBX,bergs001,1,0,delgw001 grounds out. ,delgw001,1,G
+,32,3,,,,,23,40,BBCCBX,bergs001,1,0,johnl001 grounds out. ,johnl001,1,G
+,31,3,jeted001,,,,24,45,BBBCB,bergs001,0,0,jeted001 walks. ,jeted001,1,
+,11,3,jeted001,,,,25,48,FBX,bergs001,1,0,,oneip001,1,F
+,11,4,,,,,26,45,BFX,mendr001,1,0,coomr001 grounds out. ,coomr001,0,G
+,01,4,,,,,27,47,FX,mendr001,1,0,koskc001 grounds out. ,koskc001,0,G
+,31,4,,jensm001,,,28,52,BBFBX,mendr001,0,0,jensm001 doubles. ,jensm001,0,
+jensm001 scores. jonej003 to 2B. ,30,4,,jonej003,,,29,56,BBBX,mendr001,0,1,jonej003 singles. ,jonej003,0,
+,01,4,,jonej003,,,30,58,FX,mendr001,1,0,huntt001 grounds out. ,huntt001,0,G
+,32,4,willb002,,,,31,56,CCBBBFFB,bergs001,0,0,willb002 walks. ,willb002,1,
+,01,4,willb002,,,,32,58,CX,bergs001,1,0,,martt002,1,F
+,22,4,willb002,,,,33,64,CFBFBS,bergs001,1,0,posaj001 strikes out. ,posaj001,1,
+,00,4,willb002,,,,34,65,X,bergs001,1,0,leder001 grounds out. ,leder001,1,G
+,20,5,,,,,35,61,BBX,mendr001,1,0,,walkt002,0,F
+,22,5,guzmc001,,,,36,66,CBBFX,mendr001,0,0,guzmc001 singles. ,guzmc001,0,
+,22,5,guzmc001,,,,37,71,FBBFS,mendr001,1,0,lawtm002 strikes out. ,lawtm002,0,
+,31,5,guzmc001,,,,38,76,BFBBX,mendr001,1,0,ortid001 grounds out. ,ortid001,0,G
+,11,5,,,,,39,68,BCX,bergs001,1,0,,bross001,1,F
+,32,5,delgw001,,,,40,74,CBFBBB,bergs001,0,0,delgw001 walks. ,delgw001,1,
+delgw001 to 2B. ,01,5,,delgw001,,johnl001,41,76,SB,bergs001,0,0,Passed Ball. ,johnl001,1,
+,12,5,,delgw001,,,42,80,SBFC,bergs001,1,0,johnl001 strikes out. ,johnl001,1,
+,22,5,,delgw001,,,43,85,FBBFS,bergs001,1,0,jeted001 strikes out. ,jeted001,1,
+,32,6,coomr001,,,,44,86,SCBBFFFFBB,mendr001,0,0,coomr001 walks. ,coomr001,0,
+coomr001 to 2B. ,01,6,koskc001,coomr001,,,45,88,FX,mendr001,0,0,koskc001 singles. ,koskc001,0,
+coomr001 to 3B. ,32,6,koskc001,,coomr001,,46,94,BBBCSX,mendr001,1,0,,jensm001,0,F
+coomr001 scores. koskc001 to 3B. ,32,6,jonej003,,koskc001,,47,101,BBFFFBX,mendr001,0,1,jonej003 singles. ,jonej003,0,
+koskc001 scores. jonej003 to 2B. ,00,6,,jonej003,,,49,1,X,grimj001,1,1,huntt001 grounds out. ,huntt001,0,G
+,02,6,,jonej003,,,50,4,CCS,grimj001,1,0,walkt002 strikes out. ,walkt002,0,
+,00,6,,,,,51,86,X,bergs001,1,0,,oneip001,1,F
+,32,6,willb002,,,,52,93,CFFBBBB,bergs001,0,0,willb002 walks. ,willb002,1,
+willb002 to 3B. ,21,6,martt002,,willb002,,53,97,BCBX,bergs001,0,0,martt002 singles. ,martt002,1,
+,12,6,,,willb002,,54,101,BFCX,bergs001,2,0,Double Play. ,posaj001,1,
+,31,7,,,,,55,9,BBBCX,grimj001,1,0,,guzmc001,0,F
+lawtm002 to 2B. ,10,7,,lawtm002,,,56,11,BX,grimj001,0,0,lawtm002 singles. ,lawtm002,0,
+lawtm002 to 3B. ,02,7,,,lawtm002,,57,14,CCX,grimj001,1,0,ortid001 grounds out. ,ortid001,0,G
+lawtm002 scores. ,11,7,coomr001,,,,58,17,CBX,grimj001,0,1,coomr001 singles. ,coomr001,0,
+coomr001 out. ,00,7,koskc001,,,,59,18,X,grimj001,1,0,koskc001 reaches on fielder's choice. ,koskc001,0,
+,10,7,,,,,60,103,BX,bergs001,1,0,leder001 grounds out. ,leder001,1,G
+,32,7,bross001,,,,61,110,BCBFBFB,bergs001,0,0,bross001 walks. ,bross001,1,
+bross001 to 2B. ,10,7,delgw001,bross001,,,62,112,BX,bergs001,0,0,delgw001 singles. ,delgw001,1,
+bross001 to 3B. delgw001 to 2B. ,21,7,leyrj001,delgw001,bross001,,65,4,BCBX,millt001,0,0,leyrj001 singles. ,leyrj001,1,
+bross001 scores. delgw001 to 3B. ,01,7,leyrj001,,delgw001,,66,6,FX,millt001,1,1,jeted001 hits sacrifice fly. ,jeted001,1,
+,12,7,leyrj001,,delgw001,,67,10,BSCS,millt001,1,0,oneip001 strikes out. ,oneip001,1,
+,32,8,jensm001,,,,69,6,CBBBFB,yarne001,0,0,jensm001 walks. ,jensm001,0,
+,11,8,,,,,70,9,BSX,yarne001,2,0,Double Play. ,jonej003,0,
+,02,8,,,,,71,12,SSS,yarne001,1,0,huntt001 strikes out. ,huntt001,0,
+,21,8,willb002,,,,73,14,BFBX,millt001,0,0,willb002 singles. ,willb002,1,
+,22,8,willb002,,,,74,20,BBFCFS,millt001,1,0,martt002 strikes out. ,martt002,1,
+willb002 to 2B. ,12,8,posaj001,willb002,,,75,26,FSFFBX,millt001,0,0,posaj001 singles. ,posaj001,1,
+,02,8,,willb002,,,76,29,CCX,millt001,2,0,Double Play. ,leder001,1,
+,32,9,,,,,77,18,BBFBSX,yarne001,1,0,,maxwj001,0,F
+,21,9,,,,,78,22,BBCX,yarne001,1,0,guzmc001 grounds out. ,guzmc001,0,G
+,32,9,,,,,79,29,BCBFBFX,yarne001,1,0,,lawtm002,0,P
+,22,9,,,,,81,5,BCFBS,carrh001,1,0,bross001 strikes out. ,bross001,1,
+,32,9,,,,,82,11,CFBBBS,carrh001,1,0,delgw001 strikes out. ,delgw001,1,
+,22,9,,,,leyrj001,83,16,CBBFF,carrh001,0,0,,leyrj001,1,
+,22,9,,,,,84,22,CBBFFS,carrh001,1,0,leyrj001 strikes out. ,leyrj001,1,

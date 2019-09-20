@@ -1,0 +1,78 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,02,1,,,,,0,3,CCS,arrob001,1,0,reesp001 strikes out. ,reesp001,0,
+,00,1,,,,,1,4,X,arrob001,1,0,,bellm003,0,F
+,32,1,,,,,2,10,BSBBFS,arrob001,1,0,grifk002 strikes out. ,grifk002,0,
+,12,1,,,,,3,5,CBFFX,villr001,1,0,browe001 grounds out. ,browe001,1,G
+,22,1,,,,,4,10,CFBBX,villr001,1,0,mearp001 grounds out. ,mearp001,1,G
+,12,1,,,,,5,14,FFBS,villr001,1,0,wilse001 strikes out. ,wilse001,1,
+cases001 to 1B. ,12,2,cases001,,,,6,17,CSFFBFS,arrob001,0,0,cases001 strikes out. Wild Pitch. ,cases001,0,
+cases001 to 2B. ,01,2,yound001,cases001,,,7,19,FX,arrob001,0,0,yound001 singles. ,yound001,0,
+,12,2,yound001,cases001,,,8,23,CBCX,arrob001,1,0,,tuckm001,0,
+,32,2,yound001,cases001,,,9,29,SBBBFX,arrob001,1,0,,sextc001,0,F
+,22,2,yound001,cases001,,,10,34,SBBFX,arrob001,1,0,,laruj001,0,F
+,22,2,ramia002,,,,11,20,BFFFBX,villr001,0,0,ramia002 singles. ,ramia002,1,
+,32,2,ramia002,,,,12,26,BBFCBX,villr001,1,0,,osikk001,1,F
+,01,2,ramia002,,,,13,28,CX,villr001,1,0,,wehnj001,1,F
+,00,2,ramia002,,,,14,29,X,villr001,1,0,herna001 grounds out. ,herna001,1,G
+,00,3,,,,,15,35,X,arrob001,1,0,,villr001,0,F
+,30,3,reesp001,,,,16,39,BBBB,arrob001,0,0,reesp001 walks. ,reesp001,0,
+reesp001 to 2B. ,31,3,bellm003,reesp001,,,17,44,BBCBB,arrob001,0,0,bellm003 walks. ,bellm003,0,
+,12,3,bellm003,reesp001,,,18,48,BSFS,arrob001,1,0,grifk002 strikes out. ,grifk002,0,
+,11,3,bellm003,reesp001,,,19,51,FBX,arrob001,1,0,,cases001,0,F
+,12,3,hyzda001,,,,20,33,CBFX,villr001,0,0,hyzda001 singles. ,hyzda001,1,
+hyzda001 to 2B. ,00,3,,hyzda001,,,21,34,X,villr001,1,0,Sacrifice bunt by arrob001.,arrob001,1,
+,12,3,,hyzda001,,,22,39,CCBFS,villr001,1,0,browe001 strikes out. ,browe001,1,
+,21,3,,hyzda001,,,23,43,BFBX,villr001,1,0,mearp001 grounds out. ,mearp001,1,G
+,12,4,,,,,24,55,SFBX,arrob001,1,0,yound001 grounds out. ,yound001,0,G
+,21,4,tuckm001,,,,25,59,CBBX,arrob001,0,0,tuckm001 singles. ,tuckm001,0,
+tuckm001 to 2B. ,30,4,sextc001,tuckm001,,,26,63,BBBB,arrob001,0,0,sextc001 walks. ,sextc001,0,
+tuckm001 to 3B. sextc001 to 2B. ,01,4,laruj001,sextc001,tuckm001,,27,65,CX,arrob001,0,0,laruj001 singles. ,laruj001,0,
+,12,4,,sextc001,tuckm001,,28,70,BCFFX,arrob001,2,0,Double Play. ,villr001,0,
+,30,4,wilse001,,,,29,47,BBBB,villr001,0,0,wilse001 walks. ,wilse001,1,
+,10,4,,,,,30,49,BX,villr001,2,0,Double Play. ,ramia002,1,
+,10,4,,,,,31,51,BX,villr001,1,0,,osikk001,1,
+,02,5,reesp001,,,,32,73,CSX,arrob001,0,0,reesp001 singles. ,reesp001,0,
+reesp001 to 2B. ,10,5,,reesp001,,,33,75,BX,arrob001,1,0,bellm003 grounds out. ,bellm003,0,G
+reesp001 to 3B. ,00,5,,,reesp001,,34,76,X,arrob001,1,0,grifk002 grounds out. ,grifk002,0,G
+,00,5,,,reesp001,,35,77,X,arrob001,1,0,cases001 grounds out. ,cases001,0,G
+,01,5,wehnj001,,,,36,53,CX,villr001,0,0,wehnj001 singles. ,wehnj001,1,
+wehnj001 out. ,10,5,herna001,,,,37,55,BX,villr001,1,0,herna001 reaches on fielder's choice. ,herna001,1,
+herna001 out. ,01,5,,,,hyzda001,38,57,CB,villr001,1,0,,hyzda001,1,
+,22,5,,,,,39,63,CBFFBX,villr001,1,0,,hyzda001,1,F
+,01,6,,,,,41,2,FX,wilkm001,1,0,yound001 grounds out. ,yound001,0,G
+,00,6,,tuckm001,,,42,3,X,wilkm001,0,0,tuckm001 doubles. ,tuckm001,0,
+,01,6,sextc001,tuckm001,,,43,5,CH,wilkm001,0,0,sextc001 hit by pitch. ,sextc001,0,
+,11,6,,sextc001,tuckm001,laruj001,44,8,BSS,wilkm001,0,0,tuckm001 steals 3B. sextc001 steals 2B. ,laruj001,0,
+,12,6,,sextc001,tuckm001,,45,13,BSSFS,wilkm001,1,0,laruj001 strikes out. ,laruj001,0,
+,02,6,,sextc001,tuckm001,,46,16,FFX,wilkm001,1,0,villr001 grounds out. ,villr001,0,G
+,30,6,browa001,,,,48,67,BBBB,villr001,0,0,browa001 walks. ,browa001,1,
+browa001 to 2B. ,10,6,,browa001,,,49,69,BX,villr001,1,0,Sacrifice bunt by browe001.,browe001,1,
+,22,6,mearp001,browa001,,,50,76,BBSFFFH,villr001,0,0,mearp001 hit by pitch. ,mearp001,1,
+,31,6,mearp001,browa001,,,51,81,BFBBX,villr001,1,0,,wilse001,1,
+browa001 scores. mearp001 scores. ,02,6,,,ramia002,,52,84,SCX,villr001,0,2,ramia002 triples. ,ramia002,1,
+ramia002 scores. ,32,6,,osikk001,,,53,97,BBCCFFFFFFFBX,villr001,0,1,osikk001 doubles. ,osikk001,1,
+,21,6,,osikk001,,,55,4,BCBX,wohlm001,1,0,,wehnj001,1,
+,22,7,,,,,59,6,BBCFFX,manzj001,1,0,,reesp001,0,L
+,11,7,,,,,60,9,BFX,manzj001,1,0,bellm003 grounds out. ,bellm003,0,G
+,32,7,grifk002,,,,61,15,BCBBSB,manzj001,0,0,grifk002 walks. ,grifk002,0,
+grifk002 to 2B. ,20,7,cases001,grifk002,,,62,18,BBX,manzj001,0,0,cases001 singles. ,cases001,0,
+,00,7,cases001,grifk002,,,64,1,X,wallj001,1,0,,yound001,0,F
+,32,7,,,,,65,15,CFFFBFBBFFS,wohlm001,1,0,herna001 strikes out. ,herna001,1,
+,32,7,,,,,66,21,BBBCFX,wohlm001,1,0,,hyzda001,1,
+,12,7,,,,,67,26,CBFFX,wohlm001,1,0,browa001 grounds out. ,browa001,1,G
+,21,8,,,,,71,4,BBCX,skrmm001,1,0,,ochoa001,0,L
+,22,8,,,,,72,9,CBSBC,skrmm001,1,0,sextc001 strikes out. ,sextc001,0,
+,00,8,laruj001,,,,73,10,H,skrmm001,0,0,laruj001 hit by pitch. ,laruj001,0,
+laruj001 to 2B. ,22,8,cromd001,laruj001,,,75,16,CBBFFX,skrmm001,0,0,cromd001 singles. ,cromd001,0,
+laruj001 scores. cromd001 to 2B. ,11,8,reesp001,cromd001,,,76,19,CBX,skrmm001,0,1,reesp001 singles. ,reesp001,0,
+,00,8,,reesp001,bartk001,stync001,79,20,B,skrmm001,0,0,bartk001 steals 3B. reesp001 steals 2B. ,stync001,0,
+,11,8,,reesp001,bartk001,,80,23,BFX,skrmm001,1,0,stync001 grounds out. ,stync001,0,G
+,11,8,browe001,,,,84,3,SBH,reyed001,0,0,browe001 hit by pitch. ,browe001,1,
+browe001 to 2B. ,10,8,,browe001,,,85,5,BX,reyed001,1,0,Sacrifice bunt by mearp001.,mearp001,1,
+,00,8,,,,nunea001,86,6,B,reyed001,1,0,browe001 caught stealing. ,nunea001,1,
+,30,8,nunea001,,,,87,10,BBBB,reyed001,0,0,nunea001 walks. ,nunea001,1,
+nunea001 out. ,31,8,kendj001,,,,89,15,BBBCX,reyed001,1,0,kendj001 singles. ,kendj001,1,
+,12,9,,,,,91,4,CBSX,saues001,1,0,grifk002 grounds out. ,grifk002,0,G
+,02,9,,,,,92,7,CSS,saues001,1,0,cases001 strikes out. ,cases001,0,
+,00,9,yound001,,,,93,8,X,saues001,0,0,yound001 singles. ,yound001,0,
+,12,9,yound001,,,,95,4,SBFX,willm005,1,0,,ochoa001,0,

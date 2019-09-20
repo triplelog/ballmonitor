@@ -1,0 +1,80 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,12,1,,,,,0,5,CSFBX,cordf001,1,0,,beckr002,0,F
+,32,1,,,,,1,13,CFFBBBFX,cordf001,1,0,fickr001 grounds out. ,fickr001,0,G
+,12,1,,,,,2,17,SSBC,cordf001,1,0,encaj001 strikes out. ,encaj001,0,
+,01,1,,,,,3,2,CX,mlicd001,1,0,morrw001 grounds out. ,morrw001,1,G
+,11,1,,,,,4,5,CBX,mlicd001,1,0,,kendj001,1,
+,12,1,cordw001,,,,5,9,FCBX,mlicd001,0,0,cordw001 singles. ,cordw001,1,
+cordw001 scores. ,31,1,,,gileb002,,6,14,BCBBX,mlicd001,0,1,gileb002 triples. ,gileb002,1,
+,32,1,vandj001,,gileb002,,7,20,BCFBBB,mlicd001,0,0,vandj001 walks. ,vandj001,1,
+,22,1,,vandj001,gileb002,younk001,8,26,BBFFFB,mlicd001,0,0,vandj001 steals 2B. ,younk001,1,
+,32,1,,vandj001,gileb002,,9,33,BBFFFBC,mlicd001,1,0,younk001 strikes out. ,younk001,1,
+,02,2,higgb001,,,,10,20,SFX,cordf001,0,0,higgb001 singles. ,higgb001,0,
+higgb001 to 3B. ,30,2,,palmd002,higgb001,,11,24,BBBX,cordf001,0,0,palmd002 doubles. ,palmd002,0,
+,12,2,,palmd002,higgb001,,12,28,CFBS,cordf001,1,0,easld001 strikes out. ,easld001,0,
+,02,2,,palmd002,higgb001,,13,31,FSX,cordf001,1,0,,cruzd001,0,L
+,12,2,,palmd002,higgb001,,14,35,BSSS,cordf001,1,0,cardj001 strikes out. ,cardj001,0,
+,01,2,,,,,15,35,CX,mlicd001,1,0,mearp001 grounds out. ,mearp001,1,G
+,10,2,,,,,16,37,BX,mlicd001,1,0,sojol001 grounds out. ,sojol001,1,G
+,12,2,cordf001,,,,17,41,SBSX,mlicd001,0,0,cordf001 singles. ,cordf001,1,
+,32,2,cordf001,,,,18,47,BCBFBX,mlicd001,1,0,,morrw001,1,
+,02,3,,,,,19,38,CSS,cordf001,1,0,mlicd001 strikes out. ,mlicd001,0,
+,21,3,,,,,20,42,BCBX,cordf001,1,0,beckr002 grounds out. ,beckr002,0,G
+,22,3,,,,,21,47,FCBBX,cordf001,1,0,fickr001 grounds out. ,fickr001,0,G
+,22,3,,,,,22,52,BFBFX,mlicd001,1,0,,kendj001,1,F
+,22,3,,,,,23,57,BSCBX,mlicd001,0,1,cordw001 homers. ,cordw001,1,
+,30,3,gileb002,,,,24,61,BBBB,mlicd001,0,0,gileb002 walks. ,gileb002,1,
+,12,3,gileb002,,,,25,65,FBSC,mlicd001,1,0,vandj001 strikes out. ,vandj001,1,
+gileb002 to 2B. younk001 to 1B. ,22,3,younk001,gileb002,,,26,71,BSCFBX,mlicd001,0,0,younk001 hits into a fielder's choice. ,younk001,1,
+,12,3,younk001,gileb002,,,27,75,SBFS,mlicd001,1,0,mearp001 strikes out. ,mearp001,1,
+,12,4,,,,,28,51,FBSS,cordf001,1,0,encaj001 strikes out. ,encaj001,0,
+,21,4,,,,,29,55,BCBX,cordf001,1,0,higgb001 grounds out. ,higgb001,0,G
+,22,4,,,,,30,60,SBBFC,cordf001,1,0,palmd002 strikes out. ,palmd002,0,
+,10,4,,,,,31,77,BX,mlicd001,1,0,,sojol001,1,F
+,01,4,,,,,32,79,SX,mlicd001,1,0,cordf001 grounds out. ,cordf001,1,G
+,32,4,morrw001,,,,33,85,BBBCFB,mlicd001,0,0,morrw001 walks. ,morrw001,1,
+morrw001 to 2B. ,30,4,kendj001,morrw001,,,34,89,BBBB,mlicd001,0,0,kendj001 walks. ,kendj001,1,
+morrw001 to 3B. kendj001 to 2B. ,01,4,cordw001,kendj001,morrw001,,35,91,CX,mlicd001,0,0,cordw001 singles. ,cordw001,1,
+morrw001 scores. kendj001 to 3B. cordw001 to 2B. ,01,4,gileb002,cordw001,kendj001,,36,93,CX,mlicd001,0,1,gileb002 reaches on error. ,gileb002,1,G
+,00,4,gileb002,cordw001,kendj001,,37,94,X,mlicd001,1,0,,vandj001,1,P
+,10,5,,,,,39,62,BX,cordf001,1,0,,easld001,0,F
+,20,5,,,,,40,65,BBX,cordf001,1,0,,cruzd001,0,F
+,20,5,cardj001,,,,41,68,BBX,cordf001,0,0,cardj001 singles. ,cardj001,0,
+cardj001 out. ,10,5,mlicd001,,,,42,70,BX,cordf001,1,0,mlicd001 reaches on fielder's choice. ,mlicd001,0,
+,01,5,younk001,,,,43,96,FX,mlicd001,0,0,younk001 singles. ,younk001,1,
+,11,5,younk001,,,,44,99,BCX,mlicd001,1,0,,mearp001,1,F
+,10,5,,,,,45,101,BX,mlicd001,2,0,Double Play. ,sojol001,1,
+,20,6,,beckr002,,,46,73,BBX,cordf001,0,0,beckr002 doubles. ,beckr002,0,
+beckr002 to 3B. ,10,6,fickr001,,beckr002,,47,75,BX,cordf001,0,0,fickr001 singles. ,fickr001,0,
+,01,6,fickr001,,beckr002,,48,77,SX,cordf001,1,0,,encaj001,0,P
+fickr001 to 2B. ,31,6,higgb001,fickr001,beckr002,,49,82,BFBBB,cordf001,0,0,higgb001 walks. ,higgb001,0,
+,32,6,higgb001,fickr001,beckr002,,50,88,SBBSBS,cordf001,1,0,palmd002 strikes out. ,palmd002,0,
+higgb001 out. ,22,6,easld001,fickr001,beckr002,,51,93,BBCCX,cordf001,1,0,easld001 reaches on fielder's choice. ,easld001,0,
+,31,6,cordf001,,,,52,106,BBBCB,mlicd001,0,0,cordf001 walks. ,cordf001,1,
+,02,6,cordf001,,,,53,109,LCS,mlicd001,1,0,benjm001 strikes out. ,benjm001,1,
+cordf001 out. ,11,6,kendj001,,,,54,112,BCX,mlicd001,1,0,kendj001 reaches on fielder's choice. ,kendj001,1,
+kendj001 out. ,00,6,cordw001,,,,55,113,X,mlicd001,1,0,cordw001 reaches on fielder's choice. ,cordw001,1,
+,11,7,,,,,56,96,BFX,cordf001,1,0,cruzd001 grounds out. ,cruzd001,0,G
+,22,7,,,,,57,101,CFBBX,cordf001,1,0,,cardj001,0,F
+,12,7,,,,,59,106,BSFFX,cordf001,1,0,,macij001,0,F
+,11,7,,gileb002,,,61,3,CBX,mcdia001,0,0,gileb002 doubles. ,gileb002,1,
+gileb002 to 3B. ,02,7,,,gileb002,vandj001,62,6,CCB,mcdia001,0,0,Wild Pitch. ,vandj001,1,
+gileb002 scores. ,12,7,vandj001,,,,63,10,CCBX,mcdia001,0,1,vandj001 singles. ,vandj001,1,
+vandj001 out. ,11,7,younk001,,,,64,13,BCX,mcdia001,1,0,younk001 reaches on fielder's choice. ,younk001,1,
+younk001 to 2B. ,21,7,mearp001,younk001,,,65,17,BFBH,mcdia001,0,0,mearp001 hit by pitch. ,mearp001,1,
+younk001 scores. mearp001 to 2B. ,22,7,sojol001,mearp001,,,66,22,BCBFX,mcdia001,0,1,sojol001 singles. ,sojol001,1,
+sojol001 to 2B. mearp001 out. ,00,7,cordf001,sojol001,,,67,23,X,mcdia001,1,0,cordf001 reaches on fielder's choice. ,cordf001,1,
+,10,7,cordf001,sojol001,,,68,25,BX,mcdia001,1,0,,benjm001,1,F
+,32,8,beckr002,,,,70,114,CBBFFBFB,cordf001,0,0,beckr002 walks. ,beckr002,0,
+beckr002 to 3B. ,32,8,fickr001,,beckr002,,71,123,CBCFFBBFX,cordf001,0,0,fickr001 singles. ,fickr001,0,
+beckr002 scores. ,11,8,fickr001,,,,73,3,BCX,silvj001,1,1,encaj001 hits sacrifice fly. ,encaj001,0,
+,02,8,fickr001,,,,74,6,SFS,silvj001,1,0,higgb001 strikes out. ,higgb001,0,
+,22,8,fickr001,,,,75,11,FBFBC,silvj001,1,0,palmd002 strikes out. ,palmd002,0,
+,00,8,,,,,77,1,X,nitkc001,1,0,,kendj001,1,
+,11,8,cordw001,,,,78,4,FBH,nitkc001,0,0,cordw001 hit by pitch. ,cordw001,1,
+,32,8,cordw001,,,,79,10,BCBBSC,nitkc001,1,0,gileb002 strikes out. ,gileb002,1,
+,11,8,cordw001,,,,80,13,CBX,nitkc001,1,0,browa001 grounds out. ,browa001,1,G
+,02,9,easld001,,,,81,14,CCX,silvj001,0,0,easld001 singles. ,easld001,0,
+,22,9,easld001,,,,82,19,BBFFX,silvj001,1,0,,cruzd001,0,F
+,12,9,easld001,,,,84,25,BSCFFS,silvj001,1,0,polol001 strikes out. ,polol001,0,
+,22,9,easld001,,,,86,30,CBSBC,silvj001,1,0,halts001 strikes out. ,halts001,0,

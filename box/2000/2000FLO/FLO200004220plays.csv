@@ -1,0 +1,71 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,32,1,,,,,0,6,BBCBCX,sancj001,1,0,gland001 grounds out. ,gland001,0,G
+,31,1,,gantr001,,,1,11,BCBBX,sancj001,0,0,gantr001 doubles. ,gantr001,0,
+,00,1,,gantr001,,,2,12,X,sancj001,1,0,,abreb001,0,F
+,12,1,,gantr001,,,3,16,BCFC,sancj001,1,0,roles001 strikes out. ,roles001,0,
+,11,1,,,,,4,3,BCX,byrdp001,0,1,kotsm001 homers. ,kotsm001,1,
+,32,1,gonza002,,,,5,9,BBBCFB,byrdp001,0,0,gonza002 walks. ,gonza002,1,
+,02,1,gonza002,,,,6,12,CFC,byrdp001,1,0,browb003 strikes out. ,browb003,1,
+,21,1,,,,wilsp002,7,16,BSBB,byrdp001,1,0,gonza002 caught stealing. ,wilsp002,1,
+,32,1,,,,,8,22,BSBBSS,byrdp001,1,0,wilsp002 strikes out. ,wilsp002,1,
+,10,2,jordk001,,,,9,18,BX,sancj001,0,0,jordk001 reaches on error. ,jordk001,0,G
+,01,2,jordk001,,,,10,20,CX,sancj001,1,0,,huntb001,0,F
+,22,2,jordk001,,,,11,25,BCFBS,sancj001,1,0,print001 strikes out. ,print001,0,
+jordk001 out. ,22,2,relad001,,,,12,30,BCFBX,sancj001,1,0,relad001 reaches on fielder's choice. ,relad001,0,
+,00,2,,,,,13,23,X,byrdp001,1,0,,lowem001,1,F
+,31,2,lee-d002,,,,14,28,CBBBB,byrdp001,0,0,lee-d002 walks. ,lee-d002,1,
+lee-d002 to 3B. ,12,2,,clapc001,lee-d002,,15,33,CFFBX,byrdp001,0,0,clapc001 doubles. ,clapc001,1,
+lee-d002 scores. clapc001 to 3B. ,22,2,,,clapc001,,16,38,BSBSX,byrdp001,1,1,bakop001 grounds out. ,bakop001,1,G
+clapc001 scores. ,00,2,sancj001,,,,17,39,X,byrdp001,0,1,sancj001 singles. ,sancj001,1,
+,10,2,sancj001,,,,18,41,BX,byrdp001,1,0,,kotsm001,1,P
+,12,3,byrdp001,,,,19,34,CFBX,sancj001,0,0,byrdp001 singles. ,byrdp001,0,
+,21,3,,,,,20,38,BBFX,sancj001,2,0,Double Play. ,gland001,0,
+,22,3,,,,,21,44,CBBCFX,sancj001,1,0,,gantr001,0,P
+,11,3,,,,,22,44,CBX,byrdp001,1,0,gonza002 grounds out. ,gonza002,1,G
+,22,3,,,,,23,51,FBSBFFS,byrdp001,1,0,browb003 strikes out. ,browb003,1,
+,12,3,,,,,24,56,CFBFS,byrdp001,1,0,wilsp002 strikes out. ,wilsp002,1,
+,01,4,,,,,25,46,CX,sancj001,1,0,abreb001 grounds out. ,abreb001,0,G
+,12,4,roles001,,,,26,50,FBFH,sancj001,0,0,roles001 hit by pitch. ,roles001,0,
+,11,4,,,,,27,53,BCX,sancj001,2,0,Double Play. ,jordk001,0,
+,11,4,,,,,28,59,CBX,byrdp001,1,0,,lowem001,1,F
+,12,4,,,,,29,66,SSBFFFC,byrdp001,1,0,lee-d002 strikes out. ,lee-d002,1,
+,00,4,,,,,30,67,X,byrdp001,1,0,,clapc001,1,F
+,01,5,huntb001,,,,31,55,CX,sancj001,0,0,huntb001 singles. ,huntb001,0,
+,32,5,,,,print001,32,61,SBBCB1,sancj001,1,0,huntb001 picked off. ,print001,0,
+,32,5,,,,,33,69,SBBCB1FX,sancj001,1,0,print001 grounds out. ,print001,0,G
+,32,5,relad001,,,,34,77,CBBFFBFB,sancj001,0,0,relad001 walks. ,relad001,0,
+relad001 to 2B. ,12,5,,relad001,,byrdp001,35,82,BCFFB,sancj001,0,0,Wild Pitch. ,byrdp001,0,
+,22,5,,relad001,,,36,88,BCFFBS,sancj001,1,0,byrdp001 strikes out. ,byrdp001,0,
+,00,5,,,,,37,68,X,byrdp001,1,0,bakop001 grounds out. ,bakop001,1,G
+,02,5,sancj001,,,,38,71,FCX,byrdp001,0,0,sancj001 singles. ,sancj001,1,
+sancj001 scores. ,11,5,,kotsm001,,,39,74,BFX,byrdp001,0,1,kotsm001 doubles. ,kotsm001,1,
+kotsm001 to 3B. ,01,5,,,kotsm001,,40,76,CX,byrdp001,1,0,,gonza002,1,F
+,20,5,,,kotsm001,,41,79,BBX,byrdp001,1,0,,browb003,1,F
+,22,6,,,,,43,93,BBCFX,sancj001,1,0,,gland001,0,F
+,21,6,gantr001,,,,44,97,BBFX,sancj001,0,0,gantr001 singles. ,gantr001,0,
+gantr001 to 3B. ,00,6,,abreb001,gantr001,,45,98,X,sancj001,0,0,abreb001 doubles. ,abreb001,0,
+,12,6,,abreb001,gantr001,,46,102,FBFS,sancj001,1,0,roles001 strikes out. ,roles001,0,
+,00,6,,abreb001,gantr001,,47,103,X,sancj001,1,0,,jordk001,0,P
+,22,6,,,,,48,84,SBCBC,byrdp001,1,0,wilsp002 strikes out. ,wilsp002,1,
+,10,6,lowem001,,,,49,86,BX,byrdp001,0,0,lowem001 singles. ,lowem001,1,
+lowem001 out. ,22,6,lee-d002,,,,50,91,FFBBX,byrdp001,1,0,lee-d002 reaches on fielder's choice. ,lee-d002,1,
+,02,6,lee-d002,,,,51,94,CSS,byrdp001,1,0,clapc001 strikes out. ,clapc001,1,
+,32,7,,,,,52,110,BBCBFFX,sancj001,1,0,,huntb001,0,F
+,01,7,print001,,,,53,112,CH,sancj001,0,0,print001 hit by pitch. ,print001,0,
+print001 to 2B. ,32,7,relad001,print001,,,54,120,CBFFBBFB,sancj001,0,0,relad001 walks. ,relad001,0,
+print001 to 3B. relad001 to 2B. ,21,7,sefck001,relad001,print001,,56,124,BSBX,sancj001,0,0,sefck001 singles. ,sefck001,0,
+print001 scores. relad001 scores. sefck001 to 2B. ,20,7,gland001,sefck001,,,57,127,BBX,sancj001,0,2,gland001 singles. ,gland001,0,
+,01,7,,sefck001,,,59,2,CX,loopb001,2,0,Double Play. ,gantr001,0,
+,12,7,,,,,61,5,FFBFS,millt002,1,0,bakop001 strikes out. ,bakop001,1,
+,22,7,,,,,63,10,CBBFX,millt002,1,0,,millk005,1,L
+,12,7,,,,,64,14,BCFX,millt002,1,0,kotsm001 grounds out. ,kotsm001,1,G
+,01,8,abreb001,,,,66,2,CX,miced001,0,0,abreb001 singles. ,abreb001,0,
+,12,8,abreb001,,,,67,6,BFFC,miced001,1,0,roles001 strikes out. ,roles001,0,
+,32,8,abreb001,,,,68,13,BSSBFBX,miced001,1,0,,jordk001,0,F
+,01,8,abreb001,,,,70,15,CX,miced001,1,0,brogr001 grounds out. ,brogr001,0,G
+,12,8,,,,,73,5,CCFBS,telea001,1,0,gonza002 strikes out. ,gonza002,1,
+,02,8,,,,,74,8,CFX,telea001,1,0,,bautd001,1,P
+,21,8,,,,,75,12,CBBX,telea001,1,0,,wilsp002,1,F
+,32,9,,,,,78,7,CFBBBFX,alfoa001,1,0,moram001 grounds out. ,moram001,0,G
+,22,9,,,,,79,15,BCCBFFFX,alfoa001,1,0,relad001 grounds out. ,relad001,0,G
+,32,9,,,,,81,21,BCBBCC,alfoa001,1,0,duceb001 strikes out. ,duceb001,0,

@@ -1,0 +1,143 @@
+version,2
+info,visteam,DET
+info,hometeam,SEA
+info,site,SEA03
+info,date,2000/08/15
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,rapue901
+info,ump1b,cuzzp901
+info,ump2b,schrp901
+info,ump3b,mcclt901
+info,pitches,pitches
+info,temp,66
+info,winddir,ltor
+info,windspeed,6
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,153
+info,attendance,38674
+info,wp,spars001
+info,lp,selea001
+info,save,
+start,beckr002,"Rich Becker",0,1,10
+start,encaj001,"Juan Encarnacion",0,2,8
+start,higgb001,"Bobby Higginson",0,3,7
+start,gonzj002,"Juan Gonzalez",0,4,9
+start,palmd002,"Dean Palmer",0,5,5
+start,easld001,"Damion Easley",0,6,4
+start,cruzd001,"Deivi Cruz",0,7,6
+start,ausmb001,"Brad Ausmus",0,8,2
+start,halts001,"Shane Halter",0,9,3
+start,spars001,"Steve Sparks",0,0,1
+start,mclem001,"Mark McLemore",1,1,4
+start,javis001,"Stan Javier",1,2,7
+start,rodra001,"Alex Rodriguez",1,3,6
+start,marte001,"Edgar Martinez",1,4,10
+start,olerj001,"John Olerud",1,5,3
+start,buhnj001,"Jay Buhner",1,6,9
+start,camem001,"Mike Cameron",1,7,8
+start,olivj001,"Joe Oliver",1,8,2
+start,guilc001,"Carlos Guillen",1,9,5
+start,selea001,"Aaron Sele",1,0,1
+play,1,0,beckr002,21,BCBX,D/78D
+play,1,0,encaj001,22,CSBBFX,D7.2-H
+play,1,0,higgb001,21,BCBX,S.2-2
+play,1,0,gonzj002,22,BCBFX,7/F7
+play,1,0,palmd002,12,SCBFX,64(1)/FO.2-3
+play,1,0,easld001,22,CFBBX,53/G
+play,1,1,mclem001,21,CBBX,43/G
+play,1,1,javis001,00,X,7/F7
+play,1,1,rodra001,01,CX,13/G
+play,2,0,cruzd001,12,CCFBFX,S
+play,2,0,ausmb001,01,CX,6(1)3/GDP
+play,2,0,halts001,02,CSC,K/C
+play,2,1,marte001,12,BCFC,K/C
+play,2,1,olerj001,32,BFBFBFX,43/G
+play,2,1,buhnj001,12,FSFBS,K
+play,3,0,beckr002,21,CBBX,43/G
+play,3,0,encaj001,11,CBX,43/G
+play,3,0,higgb001,00,X,S8
+play,3,0,gonzj002,10,BX,D9.1-3
+play,3,0,palmd002,00,X,S7.3-H;2-H
+play,3,0,easld001,00,X,8/F8
+play,3,1,camem001,31,BFBBB,W
+play,3,1,olivj001,12,CFFFBX,46(1)3/GDP
+play,3,1,guilc001,21,BFBX,13/G
+play,4,0,cruzd001,10,BX,3/FL
+play,4,0,ausmb001,32,BBCBSFFX,S8
+play,4,0,halts001,00,X,54(1)/FO
+play,4,0,beckr002,31,BBBCB,W.1-2
+play,4,0,encaj001,00,X,S8/8S.2-H;1-3
+play,4,0,higgb001,32,BBBFFS,K
+play,4,1,mclem001,01,CX,3/P3
+play,4,1,javis001,32,BBCBFFX,63/G
+play,4,1,rodra001,22,BBCCS,K
+play,5,0,gonzj002,12,CFBX,S
+play,5,0,palmd002,31,BBBCX,HR/8.1-H
+play,5,0,easld001,11,BCX,53/G
+play,5,0,cruzd001,32,CBFBBC,K/C
+play,5,0,ausmb001,32,BBBCCX,9/F9
+play,5,1,marte001,22,CBBSFS,K
+play,5,1,olerj001,21,CBBX,43/G
+play,5,1,buhnj001,10,BX,23/G
+play,6,0,halts001,00,,NP
+sub,mesaj001,"Jose Mesa",1,0,1
+play,6,0,halts001,02,CSX,5/L5
+play,6,0,beckr002,11,CBX,S9
+play,6,0,encaj001,12,BSSX,4/P4
+play,6,0,higgb001,01,CX,5/FL
+play,6,1,camem001,02,CSS,K
+play,6,1,olivj001,12,SFBS,K
+play,6,1,guilc001,22,BBFCX,D7
+play,6,1,mclem001,00,X,3/G
+play,7,0,gonzj002,11,BCX,S8
+play,7,0,palmd002,32,CBBFFFBX,S8/8S.1-2
+play,7,0,easld001,11,BCX,64(1)/FO.2-3
+play,7,0,cruzd001,01,CX,9/F9
+play,7,0,ausmb001,12,SCFBC,K/C
+play,7,1,javis001,12,FCBX,8/F8
+play,7,1,rodra001,22,BFCFBX,S8/8S
+play,7,1,marte001,01,CX,64(1)3/GDP
+play,8,0,halts001,00,,NP
+sub,rhoda001,"Arthur Rhodes",1,0,1
+play,8,0,halts001,22,BFCBFX,43/G
+play,8,0,beckr002,32,BCSBBB,W
+play,8,0,encaj001,02,FSC,K/C
+play,8,0,higgb001,10,BX,D7.1-H;B-3(THH)
+play,8,0,gonzj002,00,X,HR/9.3-H
+play,8,0,palmd002,22,BCSFBFC,K/C
+play,8,1,olerj001,00,,NP
+sub,mcmib001,"Billy McMillon",0,3,7
+play,8,1,olerj001,00,,NP
+sub,magew001,"Wendell Magee",0,4,9
+play,8,1,olerj001,00,,NP
+sub,macij001,"Jose Macias",0,5,5
+play,8,1,olerj001,01,CX,S7
+play,8,1,buhnj001,10,BX,64(1)3/GDP
+play,8,1,camem001,12,CBSX,S7
+play,8,1,olivj001,00,X,S9/9S.1-3
+play,8,1,guilc001,10,BX,43/G
+play,9,0,easld001,00,,NP
+sub,sasak001,"Kazuhiro Sasaki",1,0,1
+play,9,0,easld001,32,CBBFBC,K/C
+play,9,0,cruzd001,22,BBFFX,D7
+play,9,0,ausmb001,10,BX,9/F9
+play,9,0,halts001,02,FCS,K
+play,9,1,mclem001,00,,NP
+sub,macij001,"Jose Macias",0,5,4
+play,9,1,mclem001,00,,NP
+sub,halts001,"Shane Halter",0,9,5
+play,9,1,mclem001,00,,NP
+sub,alled001,"Dusty Allen",0,6,3
+play,9,1,mclem001,21,CBBX,9/F9
+play,9,1,javis001,12,BCFX,13/G
+play,9,1,rodra001,10,BX,3/FL
+data,er,spars001,0
+data,er,selea001,6
+data,er,mesaj001,0
+data,er,rhoda001,3
+data,er,sasak001,0

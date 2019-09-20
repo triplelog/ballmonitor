@@ -1,0 +1,137 @@
+version,2
+info,visteam,ATL
+info,hometeam,MON
+info,site,MON02
+info,date,2000/09/22
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,reynj901
+info,ump1b,hirsj901
+info,ump2b,willc901
+info,ump3b,wegnm901
+info,pitches,pitches
+info,temp,72
+info,winddir,tolf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,162
+info,attendance,8464
+info,wp,armat002
+info,lp,millk004
+info,save,stris001
+start,furcr001,"Rafael Furcal",0,1,6
+start,jonea002,"Andruw Jones",0,2,8
+start,jonec004,"Chipper Jones",0,3,5
+start,galaa001,"Andres Galarraga",0,4,3
+start,bonib001,"Bobby Bonilla",0,5,7
+start,lopej001,"Javy Lopez",0,6,2
+start,sandr002,"Reggie Sanders",0,7,9
+start,lockk001,"Keith Lockhart",0,8,4
+start,millk004,"Kevin Millwood",0,9,1
+start,bergp001,"Peter Bergeron",1,1,8
+start,guerw001,"Wilton Guerrero",1,2,7
+start,traca001,"Andy Tracy",1,3,3
+start,guerv001,"Vladimir Guerrero",1,4,9
+start,vidrj001,"Jose Vidro",1,5,4
+start,blumg001,"Geoff Blum",1,6,5
+start,cabro001,"Orlando Cabrera",1,7,6
+start,schnb001,"Brian Schneider",1,8,2
+start,armat002,"Tony Armas",1,9,1
+play,1,0,furcr001,21,BCBX,5/L5
+play,1,0,jonea002,02,CCFX,23/G
+play,1,0,jonec004,32,SBFFBBX,S9/9S
+play,1,0,galaa001,32,BBSFBS,K
+play,1,1,bergp001,01,CX,7/F7
+play,1,1,guerw001,02,SSS,K
+play,1,1,traca001,02,SCS,K
+play,2,0,bonib001,22,BBFFC,K/C
+play,2,0,lopej001,32,BCBBSB,W
+play,2,0,sandr002,32,CCFBBBS,K
+play,2,0,lockk001,01,FX,7/F7
+play,2,1,guerv001,01,SX,9/F9
+play,2,1,vidrj001,01,CX,8/F8
+play,2,1,blumg001,22,BCFBFX,D9/9S
+play,2,1,cabro001,32,FFBBBC,K/C
+play,3,0,millk004,21,BCBX,63/G
+play,3,0,furcr001,11,BFX,9/F9
+play,3,0,jonea002,00,X,6/FL
+com,"$the ball struck the roof before being caught, causing a 10"
+com,"minute discussion"
+play,3,1,schnb001,00,X,53/G
+play,3,1,armat002,00,X,63/G
+play,3,1,bergp001,11,FBX,T8/8S.B-H(E8)(UR)
+com,"$A Jones made two stabs at the ball near the wall before picking it up"
+play,3,1,guerw001,01,CX,43/G
+play,4,0,jonec004,30,BBBB,W
+play,4,0,galaa001,32,CBSBBFFB,W.1-2
+play,4,0,bonib001,02,FFS,K
+play,4,0,lopej001,02,CCX,64(1)3/GDP
+play,4,1,traca001,32,CSBBBFB,W
+play,4,1,guerv001,01,SX,8/F8
+play,4,1,vidrj001,12,BCFX,7/F7
+play,4,1,blumg001,12,CBFX,S.1-2
+play,4,1,cabro001,22,BSFBFX,HR/7.2-H;1-H
+play,4,1,schnb001,10,BX,5/P5
+play,5,0,sandr002,10,BX,53/G
+play,5,0,lockk001,20,BBX,7/F7
+play,5,0,millk004,10,BX,S8
+play,5,0,furcr001,21,CBBX,S8/8S.1-2
+play,5,0,jonea002,01,CX,13/G
+play,5,1,armat002,12,CFBS,K
+play,5,1,bergp001,31,BBBCX,7/F7
+play,5,1,guerw001,21,FBBX,S7
+play,5,1,traca001,01,CX,D7/7S.1-H
+play,5,1,guerv001,11,FBX,63/G
+play,6,0,jonec004,02,FCX,7/F7S
+play,6,0,galaa001,00,X,4/L4
+play,6,0,bonib001,11,CBX,HR/9
+play,6,0,lopej001,02,FFX,4/P4
+play,6,1,vidrj001,11,CBX,63/G
+play,6,1,blumg001,32,CBBCFFBX,9/F9
+play,6,1,cabro001,01,SX,3/P3
+play,7,0,sandr002,22,BCFBX,D8/78.BX3(865)
+play,7,0,lockk001,31,BBBCB,W
+play,7,0,millk004,00,,NP
+sub,joynw001,"Wally Joyner",0,9,11
+play,7,0,joynw001,11,FBX,7/F7
+play,7,0,furcr001,31,CBBBB,W.1-2
+play,7,0,jonea002,10,BX,HR/7.2-H;1-H
+play,7,0,jonec004,00,,NP
+sub,motag001,"Guillermo Mota",1,9,1
+play,7,0,jonec004,20,BBX,7/F7
+play,7,1,schnb001,00,,NP
+sub,mulht001,"Terry Mulholland",0,9,1
+play,7,1,schnb001,10,BX,63/G
+play,7,1,motag001,11,SBX,3/FL
+play,7,1,bergp001,12,BCSC,K/C
+play,8,0,galaa001,00,,NP
+sub,jonet004,"Terry Jones",1,2,7
+play,8,0,galaa001,32,BBFBFX,63/G
+play,8,0,bonib001,20,BBX,53/G
+play,8,0,lopej001,00,X,2/FL
+play,8,1,jonet004,10,BX,63/G
+play,8,1,traca001,22,BBSSS,K23
+play,8,1,guerv001,12,BFSX,S8/8S
+play,8,1,vidrj001,21,BBFX,S9/9S.1-2
+badj,blumg001,L
+play,8,1,blumg001,22,CFBBX,S/78.2-H;1-2
+play,8,1,cabro001,00,,NP
+sub,ligtk001,"Kerry Ligtenberg",0,9,1
+play,8,1,cabro001,21,FBBX,7/F7
+play,9,0,sandr002,00,,NP
+sub,stris001,"Scott Strickland",1,9,1
+play,9,0,sandr002,00,X,9/F9
+play,9,0,lockk001,31,BCBBB,W
+play,9,0,ligtk001,00,,NP
+sub,surhb001,"B.J. Surhoff",0,9,11
+play,9,0,surhb001,00,X,46(1)3/GDP
+data,er,millk004,4
+data,er,mulht001,1
+data,er,ligtk001,0
+data,er,armat002,4
+data,er,motag001,0
+data,er,stris001,0

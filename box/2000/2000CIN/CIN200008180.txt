@@ -1,0 +1,158 @@
+version,2
+info,visteam,PIT
+info,hometeam,CIN
+info,site,CIN08
+info,date,2000/08/18
+info,number,0
+info,starttime,7:35PM
+info,daynight,night
+info,usedh,false
+info,umphome,morrd901
+info,ump1b,fleta901
+info,ump2b,(none)
+info,ump3b,timmt901
+info,pitches,pitches
+info,temp,75
+info,winddir,fromrf
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,167
+info,attendance,31891
+info,wp,ritct001
+info,lp,sulls001
+info,save,willm005
+start,browa001,"Adrian Brown",0,1,8
+start,kendj001,"Jason Kendall",0,2,2
+start,gileb002,"Brian Giles",0,3,7
+start,vandj001,"John Vander Wal",0,4,3
+start,ramia001,"Aramis Ramirez",0,5,5
+start,morrw001,"Warren Morris",0,6,4
+start,ramia002,"Alex Ramirez",0,7,9
+start,wilse001,"Enrique Wilson",0,8,6
+start,ritct001,"Todd Ritchie",0,9,1
+start,tuckm001,"Michael Tucker",1,1,7
+start,larkb001,"Barry Larkin",1,2,6
+start,grifk002,"Ken Griffey",1,3,8
+start,bichd001,"Dante Bichette",1,4,9
+start,cases001,"Sean Casey",1,5,3
+start,stync001,"Chris Stynes",1,6,5
+start,castj004,"Juan Castro",1,7,4
+start,laruj001,"Jason LaRue",1,8,2
+start,wills002,"Scott Williamson",1,9,1
+play,1,0,browa001,11,BCX,43/G
+play,1,0,kendj001,10,BX,6/L6
+play,1,0,gileb002,12,CBFS,K
+play,1,1,tuckm001,00,X,D7/7D
+play,1,1,larkb001,00,X,43/G.2-3
+play,1,1,grifk002,11,SBX,7/SF.3-H
+play,1,1,bichd001,31,BBBCB,W
+play,1,1,cases001,21,BBFX,8/F8
+play,2,0,vandj001,01,CX,6/P6
+play,2,0,ramia001,12,SSBS,K
+play,2,0,morrw001,21,BFBX,8/F8
+play,2,1,stync001,00,X,53/G
+play,2,1,castj004,31,CBBBX,2/FL
+play,2,1,laruj001,00,X,63/G
+play,3,0,ramia002,22,FBSFBS,K
+play,3,0,wilse001,22,SFBBX,S7/7S
+play,3,0,ritct001,20,BB1,PO1(13)
+play,3,0,ritct001,20,BB1X,7/F7
+play,3,1,wills002,22,BBCCS,K
+play,3,1,tuckm001,32,BSBFBB,W
+play,3,1,larkb001,21,BBF1,PO1(E1).1-3
+play,3,1,larkb001,22,BBF1FX,S.3-3
+play,3,1,grifk002,22,BFBFS,K
+play,3,1,bichd001,10,BX,8/F8D
+play,4,0,browa001,32,BBBCCFFX,63/G
+play,4,0,kendj001,22,BCSBFFS,K23
+play,4,0,gileb002,30,BBBB,W
+play,4,0,vandj001,32,BBCSBC,K/C
+play,4,1,cases001,12,CBFX,43/G
+play,4,1,stync001,10,BX,7/F7
+play,4,1,castj004,10,BX,13/G
+play,5,0,ramia001,22,BSCBFFFX,63/G
+play,5,0,morrw001,21,BCBX,5/P5
+play,5,0,ramia002,10,BX,D9/9S
+play,5,0,wilse001,30,IIII,IW
+play,5,0,ritct001,12,CCBC,K/C
+play,5,1,laruj001,12,BSSX,63/G
+play,5,1,wills002,21,CBBX,63/G
+play,5,1,tuckm001,22,BSCBS,K
+play,6,0,browa001,01,CX,7/F7
+play,6,0,kendj001,10,BX,HR/7
+play,6,0,gileb002,21,CBBX,S9/9S
+play,6,0,vandj001,10,BX,D/78D.1-H
+play,6,0,ramia001,22,CFBBX,9/F9
+play,6,0,morrw001,21,BBCB,WP.2-3
+play,6,0,morrw001,32,BBCBCS,K
+play,6,1,larkb001,02,CCX,8/F8
+play,6,1,grifk002,10,BX,HR/9
+play,6,1,bichd001,02,CCFX,S
+play,6,1,cases001,00,X,7/F7
+play,6,1,stync001,01,CX,9/F9
+play,7,0,ramia002,00,X,3/G
+play,7,0,wilse001,11,BCX,8/F8S
+play,7,0,ritct001,21,FBBX,8/F8
+play,7,1,castj004,02,CCC,K/C
+play,7,1,laruj001,12,SBSX,43/G
+play,7,1,wills002,00,,NP
+sub,sextc001,"Chris Sexton",1,9,11
+play,7,1,sextc001,00,X,43/G
+play,8,0,browa001,00,,NP
+sub,sulls001,"Scott Sullivan",1,9,1
+play,8,0,browa001,11,CBX,43/BG
+play,8,0,kendj001,02,CSX,S8
+play,8,0,gileb002,20,BBX,S9.1-H(E9);B-3
+com,"$Bichette charged but missed the ball and it rolled to the wall"
+play,8,0,vandj001,00,,NP
+sub,younk001,"Kevin Young",0,4,11
+play,8,0,younk001,00,,NP
+sub,reyed001,"Dennys Reyes",1,9,1
+play,8,0,younk001,30,BBBX,2/FL
+play,8,0,ramia001,00,,NP
+sub,gravd001,"Danny Graves",1,9,1
+play,8,0,ramia001,00,X,D9.3-H(UR)
+play,8,0,morrw001,21,FBBX,43/G
+play,8,1,tuckm001,00,,NP
+sub,younk001,"Kevin Young",0,4,3
+play,8,1,tuckm001,21,BBCX,D7
+play,8,1,larkb001,00,X,3/G.2-3
+play,8,1,grifk002,00,,NP
+sub,benjm001,"Mike Benjamin",0,9,4
+play,8,1,grifk002,00,,NP
+sub,saues001,"Scott Sauerbeck",0,6,1
+play,8,1,grifk002,00,X,53/G.3-H
+play,8,1,bichd001,32,BBBFFS,K
+play,9,0,ramia002,11,FBX,S8
+play,9,0,wilse001,00,X,14/SH.1-2
+play,9,0,benjm001,00,X,43/G.2-3
+play,9,0,browa001,12,CFBX,S7.3-H
+play,9,0,kendj001,02,CSFB,SB2
+play,9,0,kendj001,32,CSFBFBBX,S8.2-H
+play,9,0,gileb002,00,,NP
+sub,villr001,"Ron Villone",1,9,1
+play,9,0,gileb002,31,BBCBX,43/G
+play,9,1,cases001,00,,NP
+sub,willm005,"Mike Williams",0,6,1
+play,9,1,cases001,01,CX,8/F8S
+play,9,1,stync001,01,CX,S8
+play,9,1,castj004,00,,NP
+sub,ochoa001,"Alex Ochoa",1,7,11
+play,9,1,ochoa001,12,CBCS,K
+play,9,1,laruj001,00,,NP
+sub,santb001,"Benito Santiago",1,8,11
+play,9,1,santb001,00,B,DI.1-2
+play,9,1,santb001,31,BBBCB,W
+play,9,1,villr001,00,,NP
+sub,yound001,"Dmitri Young",1,9,11
+play,9,1,yound001,22,FCBBFX,4(1)/FO/G.2-3
+data,er,ritct001,3
+data,er,saues001,0
+data,er,willm005,0
+data,er,wills002,2
+data,er,sulls001,1
+data,er,reyed001,0
+data,er,gravd001,2
+data,er,villr001,0

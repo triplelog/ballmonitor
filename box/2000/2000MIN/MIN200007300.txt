@@ -1,0 +1,153 @@
+version,2
+info,visteam,NYA
+info,hometeam,MIN
+info,site,MIN03
+info,date,2000/07/30
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,spiep901
+info,ump1b,gibsg901
+info,ump2b,meric901
+info,ump3b,timmt901
+info,howscored,park
+info,pitches,pitches
+info,temp,72
+info,winddir,ltor
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,203
+info,attendance,19041
+info,wp,petta001
+info,lp,maysj001
+info,save,
+start,knobc001,"Chuck Knoblauch",0,1,10
+start,jeted001,"Derek Jeter",0,2,6
+start,oneip001,"Paul O'Neill",0,3,9
+start,willb002,"Bernie Williams",0,4,8
+start,justd001,"David Justice",0,5,7
+start,martt002,"Tino Martinez",0,6,3
+start,posaj001,"Jorge Posada",0,7,2
+start,vizcj001,"Jose Vizcaino",0,8,4
+start,bellc001,"Clay Bellinger",0,9,5
+start,petta001,"Andy Pettitte",0,0,1
+start,hockd001,"Denny Hocking",1,1,7
+start,guzmc001,"Cristian Guzman",1,2,6
+start,lawtm002,"Matt Lawton",1,3,9
+start,coomr001,"Ron Coomer",1,4,3
+start,ortid001,"David Ortiz",1,5,10
+start,huntt001,"Torii Hunter",1,6,8
+start,canij001,"Jay Canizaro",1,7,4
+start,maxwj001,"Jason Maxwell",1,8,5
+start,moelc001,"Chad Moeller",1,9,2
+start,maysj001,"Joe Mays",1,0,1
+play,1,0,knobc001,32,CCBFBBB,W
+play,1,0,jeted001,11,BCX,S9.1-3
+play,1,0,oneip001,21,BFBX,64(1)/FO.3-H
+play,1,0,willb002,10,BX,S/78.1-2
+play,1,0,justd001,32,BFBSBB,W.2-3;1-2
+play,1,0,martt002,22,BCFBFX,D9.3-H;2-H;1-H
+play,1,0,posaj001,21,BBCX,43/G.2-3
+play,1,0,vizcj001,11,FBX,43/G
+play,1,1,hockd001,31,BCBBB,W
+play,1,1,guzmc001,12,BCCFS,K
+play,1,1,lawtm002,32,BFBFBFX,7/F7
+play,1,1,coomr001,11,CBX,63/G
+play,2,0,bellc001,22,BBFFX,53/G
+play,2,0,knobc001,10,BX,S
+play,2,0,jeted001,12,BCSS,K
+play,2,0,oneip001,32,BCBCFBFX,3/G#
+play,2,1,ortid001,32,BBFSBB,W
+play,2,1,huntt001,10,BX,4(B)3(1)/LDP
+play,2,1,canij001,11,CBX,53/G
+play,3,0,willb002,30,BBBX,9/L9
+play,3,0,justd001,12,BCCX,S9
+play,3,0,martt002,31,BSBBX,8/F8
+play,3,0,posaj001,02,CCS,K
+play,3,1,maxwj001,21,BBCX,D8/8D
+play,3,1,moelc001,30,BBBB,W
+play,3,1,hockd001,12,BCFC,K/C
+play,3,1,guzmc001,02,CSFS,K
+play,3,1,lawtm002,01,CX,3/G#
+play,4,0,vizcj001,00,,NP
+sub,santj003,"Johan Santana",1,0,1
+play,4,0,vizcj001,00,X,8/F8D
+play,4,0,bellc001,20,BBX,S
+play,4,0,knobc001,30,BBBB,W.1-2
+play,4,0,jeted001,01,CX,9/F9
+play,4,0,oneip001,20,BBX,S/78.2-H;1-3
+play,4,0,willb002,31,BBSBX,54(1)/FO
+play,4,1,coomr001,12,FBSX,63/G
+play,4,1,ortid001,32,CBBFBX,43/G
+play,4,1,huntt001,02,CFFS,K
+play,5,0,justd001,10,BX,S/78
+play,5,0,martt002,30,BBBX,8/F8
+play,5,0,posaj001,01,FX,46(1)3/GDP
+play,5,1,canij001,22,CFBBX,53/G
+play,5,1,maxwj001,21,BBCX,D9
+play,5,1,moelc001,12,BSFX,S7.2-H;B-2(THH)
+play,5,1,hockd001,31,BFBBX,8/F8
+play,5,1,guzmc001,02,FFS,K23
+play,6,0,vizcj001,31,BFBBB,W
+play,6,0,bellc001,00,X,9/FL
+play,6,0,knobc001,21,BCBX,S8.1-2
+play,6,0,jeted001,00,X,7/F7
+play,6,0,oneip001,01,FX,S9.2-H;1-3
+play,6,0,willb002,00,B,WP.3-H;1-2
+play,6,0,willb002,32,BFFBBB,W
+play,6,0,justd001,00,,NP
+sub,millt001,"Travis Miller",1,0,1
+play,6,0,justd001,32,BBCFFFBC,K/C
+play,6,1,lawtm002,00,X,9/F9D
+play,6,1,coomr001,21,BBFX,S/78
+play,6,1,ortid001,02,FFFX,S9.1-3;B-2(E9/TH)
+play,6,1,huntt001,01,CX,63/G.3-H
+play,6,1,canij001,00,X,S8.2-H(UR)
+play,6,1,maxwj001,00,X,3/P3
+play,7,0,martt002,21,BCBX,7/F7
+play,7,0,posaj001,12,FBFS,K
+play,7,0,vizcj001,10,BX,53/G
+play,7,1,moelc001,00,X,D/89D
+play,7,1,hockd001,11,CBX,43/G.2-3
+play,7,1,guzmc001,02,SSS,K
+play,7,1,lawtm002,32,BBBCCFB,W
+play,7,1,coomr001,00,,NP
+sub,nelsj001,"Jeff Nelson",0,0,1
+play,7,1,coomr001,32,BFFBBFFB,W.1-2
+play,7,1,ortid001,00,,NP
+sub,stanm003,"Mike Stanton",0,0,1
+play,7,1,ortid001,10,BX,7/F7
+play,8,0,bellc001,00,,NP
+sub,ryanj001,"Jay Ryan",1,0,1
+play,8,0,bellc001,22,CBBFS,K
+play,8,0,knobc001,02,CFS,K
+play,8,0,jeted001,02,CSX,63/G
+play,8,1,huntt001,22,BBFFFS,K
+play,8,1,canij001,12,FFBS,K
+play,8,1,maxwj001,22,BFBCX,9/F9
+play,9,0,oneip001,22,BBCCFX,S7
+play,9,0,willb002,22,FBCBX,64(1)3/GDP
+play,9,0,justd001,11,CBX,S8
+play,9,0,martt002,00,,NP
+sub,thomr004,"Ryan Thompson",0,5,12
+play,9,0,martt002,22,BSSFBX,4/P4
+play,9,1,moelc001,00,,NP
+sub,thomr004,"Ryan Thompson",0,5,7
+play,9,1,moelc001,00,,NP
+sub,rivem002,"Mariano Rivera",0,0,1
+play,9,1,moelc001,22,CBBCX,S
+play,9,1,hockd001,01,FX,S8.1-2
+play,9,1,guzmc001,12,FBFX,3/G.2-3;1-2#
+play,9,1,lawtm002,01,CX,3/G.3-H;2-3#
+play,9,1,coomr001,00,X,9/F9
+data,er,petta001,2
+data,er,nelsj001,0
+data,er,stanm003,0
+data,er,rivem002,1
+data,er,maysj001,4
+data,er,santj003,3
+data,er,millt001,0
+data,er,ryanj001,0

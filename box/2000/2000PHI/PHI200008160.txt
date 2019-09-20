@@ -1,0 +1,142 @@
+version,2
+info,visteam,ARI
+info,hometeam,PHI
+info,site,PHI12
+info,date,2000/08/16
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,false
+info,umphome,buckc901
+info,ump1b,packs901
+info,ump2b,clara901
+info,ump3b,wendh902
+info,pitches,pitches
+info,temp,82
+info,winddir,ltor
+info,windspeed,8
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,175
+info,attendance,23498
+info,wp,reyna001
+info,lp,chenb001
+info,save,
+start,womat001,"Tony Womack",0,1,6
+start,bellj001,"Jay Bell",0,2,4
+start,gonzl001,"Luis Gonzalez",0,3,7
+start,willm003,"Matt D. Williams",0,4,5
+start,finls001,"Steve Finley",0,5,8
+start,colbg001,"Greg Colbrunn",0,6,3
+start,milld002,"Damian Miller",0,7,2
+start,bautd001,"Danny Bautista",0,8,9
+start,reyna001,"Armando Reynoso",0,9,1
+start,gland001,"Doug Glanville",1,1,8
+start,abreb001,"Bobby Abreu",1,2,9
+start,roles001,"Scott Rolen",1,3,5
+start,liebm001,"Mike Lieberthal",1,4,2
+start,lee-t002,"Travis Lee",1,5,3
+start,burrp001,"Pat Burrell",1,6,7
+start,andem003,"Marlon Anderson",1,7,4
+start,peret003,"Tomas Perez",1,8,6
+start,chenb001,"Bruce Chen",1,9,1
+play,1,0,womat001,31,BBBCB,W
+play,1,0,bellj001,01,CB,SB2
+play,1,0,bellj001,11,CBX,53/SH.2-3
+play,1,0,gonzl001,10,BX,9/SF.3-H
+play,1,0,willm003,31,BFBBX,53/G
+play,1,1,gland001,32,CBBFBX,9/L9
+play,1,1,abreb001,00,X,S5/BG5
+play,1,1,roles001,22,SCBFBB,WP.1-2
+play,1,1,roles001,32,SCBFBBFX,S9.2XH(92)
+play,1,1,liebm001,22,FFBBFS,K
+play,2,0,finls001,12,CSBX,3/G
+play,2,0,colbg001,01,SX,4/P4
+play,2,0,milld002,22,FBFBX,S8
+play,2,0,bautd001,02,FSS,K
+play,2,1,lee-t002,12,CFBX,43/G
+play,2,1,burrp001,12,CSFBX,8/F8
+play,2,1,andem003,22,BSFBX,43/G
+play,3,0,reyna001,22,BSCFBS,K
+play,3,0,womat001,00,X,6/L6
+play,3,0,bellj001,12,FFBX,HR/7
+play,3,0,gonzl001,22,BFSBC,K/C
+play,3,1,peret003,10,BX,S5/BG5
+play,3,1,chenb001,00,X,14/SH.1-2
+play,3,1,gland001,32,BCFBBB,W
+play,3,1,abreb001,22,BFBFFX,D9.2-H;1-3
+play,3,1,roles001,12,SSBC,K/C
+play,3,1,liebm001,01,FX,6/P6
+play,4,0,willm003,00,X,S8
+play,4,0,finls001,00,X,16(1)/FO
+play,4,0,colbg001,22,BCBFX,64(1)3/GDP
+play,4,1,lee-t002,22,BCSBS,K
+play,4,1,burrp001,22,CSBFBS,K
+play,4,1,andem003,12,SSBS,K
+play,5,0,milld002,12,BSFX,S8
+play,5,0,bautd001,12,FCBX,8/F8D
+play,5,0,reyna001,10,BX,34/SH.1-2
+play,5,0,womat001,12,BFFS,K
+play,5,1,peret003,12,CBSFX,31/G
+play,5,1,chenb001,02,CCS,K
+play,5,1,gland001,12,CCBFX,43/G
+play,6,0,bellj001,32,BCFBBFX,S
+play,6,0,gonzl001,02,CFX,S/78.1-3
+play,6,0,willm003,10,BX,8/F8S
+play,6,0,finls001,10,BX,5/FL
+play,6,0,colbg001,00,X,D7.3-H;1-3
+play,6,0,milld002,02,CFX,D/89D.3-H;2-H
+play,6,0,bautd001,30,IIII,IW
+play,6,0,reyna001,02,FFS,K
+play,6,1,abreb001,11,BCX,7/F7
+play,6,1,roles001,12,CBFS,K
+play,6,1,liebm001,32,BCBBCX,53/G
+play,7,0,womat001,32,BBBCCX,7/L7
+play,7,0,bellj001,22,CBFFBS,K+WP.B-1
+play,7,0,gonzl001,01,CB,WP.1-2
+play,7,0,gonzl001,22,CBBFFX,3/G.2-3
+play,7,0,willm003,00,X,53/G
+play,7,1,lee-t002,21,CBBX,2/FL
+play,7,1,burrp001,12,FCBX,9/F9
+play,7,1,andem003,21,CBBX,7/F7S
+play,8,0,finls001,00,,NP
+sub,padiv001,"Vicente Padilla",1,9,1
+play,8,0,finls001,32,FBBFBB,W
+play,8,0,colbg001,00,X,54(1)3/GDP
+play,8,0,milld002,00,X,S
+play,8,0,bautd001,22,CBFFBFX,D7.1XH(762)
+play,8,1,peret003,00,X,7/FL
+play,8,1,padiv001,00,,NP
+sub,duceb001,"Rob Ducey",1,9,11
+play,8,1,duceb001,00,X,8/F8
+play,8,1,gland001,11,BCX,S7/7S
+play,8,1,abreb001,32,FBCBBX,S9.1-3
+play,8,1,roles001,00,,NP
+sub,kim-b001,"Byung-Hyun Kim",0,9,1
+play,8,1,roles001,22,SSBBFS,K
+play,9,0,kim-b001,00,,NP
+sub,delld001,"David Dellucci",0,9,11
+play,9,0,delld001,00,,NP
+sub,branj001,"Jeff Brantley",1,9,1
+play,9,0,delld001,12,CFFFBC,K/C
+play,9,0,womat001,20,BBX,8/L8
+play,9,0,bellj001,00,X,4/L4
+play,9,1,liebm001,00,,NP
+sub,mantm001,"Matt Mantei",0,9,1
+play,9,1,liebm001,32,BBCBCX,63/G
+play,9,1,lee-t002,31,BBBCB,W
+play,9,1,burrp001,31,CBBBB,W.1-2
+play,9,1,andem003,12,BCSS,K
+play,9,1,peret003,00,,NP
+sub,huntb001,"Brian R. Hunter",1,8,11
+play,9,1,huntb001,00,X,S7.2-3;1-2
+play,9,1,branj001,00,,NP
+sub,jordk001,"Kevin Jordan",1,9,11
+play,9,1,jordk001,10,BX,64(1)/FO
+data,er,reyna001,1
+data,er,kim-b001,0
+data,er,mantm001,0
+data,er,chenb001,5
+data,er,padiv001,0
+data,er,branj001,0

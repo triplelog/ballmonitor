@@ -1,0 +1,153 @@
+version,2
+info,visteam,CHN
+info,hometeam,NYN
+info,site,NYC17
+info,date,2000/04/22
+info,number,1
+info,starttime,1:10PM
+info,daynight,day
+info,usedh,false
+info,umphome,schrp901
+info,ump1b,mcclt901
+info,ump2b,cuzzp901
+info,ump3b,craft901
+info,pitches,pitches
+info,temp,47
+info,winddir,ltor
+info,windspeed,9
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,168
+info,attendance,0
+info,wp,ruscg001
+info,lp,liebj001
+info,save,
+start,youne001,"Eric Young",0,1,4
+start,gutir001,"Ricky Gutierrez",0,2,6
+start,gracm001,"Mark Grace",0,3,3
+start,sosas001,"Sammy Sosa",0,4,9
+start,hillg001,"Glenallen Hill",0,5,7
+start,andrs001,"Shane Andrews",0,6,5
+start,giraj001,"Joe Girardi",0,7,2
+start,bufod001,"Damon Buford",0,8,8
+start,liebj001,"Jon Lieber",0,9,1
+start,hendr001,"Rickey Henderson",1,1,7
+start,belld001,"Derek Bell",1,2,9
+start,alfoe001,"Edgardo Alfonzo",1,3,4
+start,ventr001,"Robin Ventura",1,4,5
+start,pratt001,"Todd Pratt",1,5,2
+start,franm001,"Matt Franco",1,6,3
+start,moram002,"Melvin Mora",1,7,8
+start,ordor001,"Rey Ordonez",1,8,6
+start,ruscg001,"Glendon Rusch",1,9,1
+play,1,0,youne001,32,BCBFFFBX,63/G
+play,1,0,gutir001,11,BCX,8/F8
+play,1,0,gracm001,22,BCBCX,S7
+play,1,0,sosas001,01,CX,8/F8
+play,1,1,hendr001,12,FSBC,K/C
+play,1,1,belld001,00,X,S8
+play,1,1,alfoe001,32,BBBCFX,S8.1-3
+play,1,1,ventr001,10,BX,46(1)/FO.3-H
+play,1,1,pratt001,12,CSBB,SB2
+play,1,1,pratt001,22,CSBBX,53/G
+play,2,0,hillg001,01,CX,4/P4
+play,2,0,andrs001,32,CCBBFBFC,K/C
+play,2,0,giraj001,11,CBX,53/G
+play,2,1,franm001,11,CBX,8/F8
+play,2,1,moram002,00,X,S5/BG5
+play,2,1,ordor001,11,FBX,7/F7
+play,2,1,ruscg001,01,FX,8/F8
+play,3,0,bufod001,22,CBBFX,9/F9
+play,3,0,liebj001,31,BBBCX,6/L6
+play,3,0,youne001,31,BBCBX,6/P6
+play,3,1,hendr001,22,BCBCX,63/G
+play,3,1,belld001,12,BCCX,S
+play,3,1,alfoe001,00,X,S7.1-2
+play,3,1,ventr001,22,BSBCFX,46(1)3/GDP
+play,4,0,gutir001,21,CBBX,D7/7S
+play,4,0,gracm001,00,X,13/SH.2-3
+play,4,0,sosas001,32,CCBBFBFC,K/C
+play,4,0,hillg001,22,BFFBS,K
+play,4,1,pratt001,10,BX,S8
+play,4,1,franm001,11,BFX,64(1)3/GDP
+play,4,1,moram002,00,X,53/G
+play,5,0,andrs001,10,BX,7/F7
+play,5,0,giraj001,21,BBCX,9/L9
+play,5,0,bufod001,21,BBSX,9/F9
+play,5,1,ordor001,11,FBX,63/G
+play,5,1,ruscg001,10,BX,1/G
+play,5,1,hendr001,00,X,63/G
+play,6,0,liebj001,02,CCC,K/C
+play,6,0,youne001,11,BCX,63/G
+play,6,0,gutir001,21,CBBX,8/F8
+play,6,1,belld001,00,X,D9
+play,6,1,alfoe001,12,FSBX,63/G.2-3
+play,6,1,ventr001,30,IIII,IW
+play,6,1,pratt001,00,X,41/G.3-H;1-2
+play,6,1,franm001,12,FFBX,S9/9S.2-H
+play,6,1,moram002,32,BSFBBFFX,S9.1-3
+play,6,1,ordor001,10,BX,53/G
+play,7,0,gracm001,11,BFX,HR/9
+play,7,0,sosas001,00,X,7/L7
+play,7,0,hillg001,00,X,53/G
+play,7,0,andrs001,11,CBX,HR/7
+play,7,0,giraj001,12,SBFX,3/G
+play,7,1,ruscg001,00,,NP
+sub,nunnj001,"Jon Nunnally",1,9,11
+play,7,1,nunnj001,32,CFBBBFS,K
+play,7,1,hendr001,10,BH,HP
+play,7,1,belld001,01,SX,13/G.1-2
+play,7,1,alfoe001,32,BFFFBBB,W
+play,7,1,ventr001,00,X,43/G
+play,8,0,bufod001,00,,NP
+sub,nunnj001,"Jon Nunnally",1,9,7
+play,8,0,bufod001,00,,NP
+sub,franj001,"John Franco",1,1,1
+play,8,0,bufod001,22,BLFBFX,S7
+play,8,0,liebj001,00,,NP
+sub,nievj002,"Jose Nieves",0,9,11
+play,8,0,nievj002,00,X,14/SH.1-2
+play,8,0,youne001,32,BBSFFBX,43/G.2-3
+play,8,0,gutir001,31,BBCBB,W
+play,8,0,gracm001,02,FFC,K/C
+play,8,1,pratt001,00,,NP
+sub,quevr001,"Ruben Quevedo",0,9,1
+play,8,1,pratt001,32,SBBFBFB,W
+play,8,1,franm001,11,BFX,14/SH.1-2
+play,8,1,moram002,31,BCBBI,IW
+play,8,1,ordor001,12,CCBFX,S8.2-H;1-3
+play,8,1,nunnj001,00,,NP
+sub,heref001,"Felix Heredia",0,9,1
+play,8,1,nunnj001,00,,NP
+sub,piazm001,"Mike Piazza",1,9,11
+play,8,1,piazm001,32,BFSFFBBFB,W.1-2
+play,8,1,franj001,00,,NP
+sub,agbab001,"Benny Agbayani",1,1,11
+play,8,1,agbab001,00,,NP
+sub,willb001,"Brian Williams",0,9,1
+play,8,1,agbab001,22,BFFBFX,D7/7S.3-H;2-H;1-3
+play,8,1,belld001,12,BFFFX,D7.3-H;2-H
+play,8,1,alfoe001,30,BBBB,W
+play,8,1,ventr001,22,BCBCX,6/P6
+play,8,1,pratt001,22,BBFSFFC,K/C
+play,9,0,sosas001,00,,NP
+sub,agbab001,"Benny Agbayani",1,1,7
+play,9,0,sosas001,00,,NP
+sub,rodrr004,"Rich Rodriguez",1,9,1
+play,9,0,sosas001,31,BCBBX,S7
+play,9,0,hillg001,32,BCBFBFX,8/F8D
+play,9,0,andrs001,20,BBB,WP.1-2
+play,9,0,andrs001,31,BBBCX,S7.2-3
+play,9,0,giraj001,11,BCX,S.3-H;1-2
+play,9,0,bufod001,11,BCX,8/L8
+play,9,0,willb001,00,,NP
+sub,reedj001,"Jeff Reed",0,9,11
+play,9,0,reedj001,10,BX,3/G
+data,er,liebj001,3
+data,er,quevr001,3
+data,er,heref001,1
+data,er,willb001,1
+data,er,ruscg001,2
+data,er,franj001,0
+data,er,rodrr004,1

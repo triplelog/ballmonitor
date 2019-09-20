@@ -1,0 +1,135 @@
+version,2
+info,visteam,NYA
+info,hometeam,TBA
+info,site,STP01
+info,date,2000/09/26
+info,number,0
+info,starttime,7:15PM
+info,daynight,night
+info,usedh,true
+info,umphome,monte901
+info,ump1b,laynj901
+info,ump2b,barrt901
+info,ump3b,randt901
+info,pitches,pitches
+info,temp,72
+info,winddir,torf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,161
+info,attendance,19469
+info,wp,hernr001
+info,lp,nelsj001
+info,save,
+start,knobc001,"Chuck Knoblauch",0,1,10
+start,jeted001,"Derek Jeter",0,2,6
+start,oneip001,"Paul O'Neill",0,3,9
+start,willb002,"Bernie Williams",0,4,8
+start,justd001,"David Justice",0,5,7
+start,martt002,"Tino Martinez",0,6,3
+start,posaj001,"Jorge Posada",0,7,2
+start,bross001,"Scott Brosius",0,8,5
+start,vizcj001,"Jose Vizcaino",0,9,4
+start,herno001,"Orlando Hernandez",0,0,1
+start,willg001,"Gerald Williams",1,1,8
+start,tynej001,"Jason Tyner",1,2,7
+start,cox-s001,"Steve Cox",1,3,10
+start,mcgrf001,"Fred McGriff",1,4,3
+start,huffa001,"Aubrey Huff",1,5,5
+start,guilj001,"Jose Guillen",1,6,9
+start,flahj001,"John Flaherty",1,7,2
+start,smitr003,"Bobby Smith",1,8,4
+start,martf001,"Felix Martinez",1,9,6
+start,lopea002,"Albie Lopez",1,0,1
+play,1,0,knobc001,31,BBCBB,W
+play,1,0,jeted001,01,CX,S9.1-2
+play,1,0,oneip001,11,CBX,36(1)/FO.2-3
+play,1,0,willb002,10,BX,FC3.3XH(32);1-2;B-1#
+play,1,0,justd001,30,BBBX,5/FL
+play,1,1,willg001,12,FBFX,53/G
+play,1,1,tynej001,10,BX,43/G
+play,1,1,cox-s001,01,CX,4/P4
+play,2,0,martt002,10,BX,9/L9
+play,2,0,posaj001,32,CBFBBX,9/F9D
+play,2,0,bross001,22,FFFBBFX,E5/G
+play,2,0,vizcj001,12,BFFX,6/L6
+play,2,1,mcgrf001,00,X,7/F7
+play,2,1,huffa001,11,CBX,43/G
+play,2,1,guilj001,32,CBFBBS,K
+play,3,0,knobc001,00,X,6/P6
+play,3,0,jeted001,21,BBSX,53/G
+play,3,0,oneip001,00,X,63/G
+play,3,1,flahj001,12,CBFS,K
+play,3,1,smitr003,22,SBCBX,3/FL
+play,3,1,martf001,22,FCBFBX,7/F7
+play,4,0,willb002,12,BSFC,K/C
+play,4,0,justd001,22,CBBSFX,7/F7D
+play,4,0,martt002,22,BCFBS,K
+play,4,1,willg001,00,X,8/F8
+play,4,1,tynej001,01,CX,1/G
+play,4,1,cox-s001,11,CBX,S7
+play,4,1,mcgrf001,20,BBX,8/L8
+play,5,0,posaj001,00,X,6/L6
+play,5,0,bross001,22,BCFBX,S9/9S
+play,5,0,vizcj001,10,BX,S7.1-2
+play,5,0,knobc001,22,BCCBC,K/C
+play,5,0,jeted001,32,BFBFFBS,K
+play,5,1,huffa001,22,BCBFS,K
+play,5,1,guilj001,00,X,63/G
+play,5,1,flahj001,12,FFFBS,K
+play,6,0,oneip001,10,BX,S9
+play,6,0,willb002,00,X,8/F8
+play,6,0,justd001,10,BX,46(1)/FO
+play,6,0,martt002,22,FBSBX,S/78.1-3
+play,6,0,posaj001,31,BBBCB,W.1-2
+play,6,0,bross001,02,CFFC,K/C
+play,6,1,smitr003,12,CCBS,K
+play,6,1,martf001,32,BCBFBX,9/F9D
+play,6,1,willg001,01,CX,HR/7
+play,6,1,tynej001,02,FFC,K/C
+play,7,0,vizcj001,02,CCX,31/G
+play,7,0,knobc001,22,FCBBX,4/P4
+play,7,0,jeted001,02,CFS,K
+play,7,1,cox-s001,22,SFBBFX,8/L8
+play,7,1,mcgrf001,11,BFX,2/P2
+play,7,1,huffa001,21,BBCX,7/F7
+play,8,0,oneip001,00,,NP
+sub,johnr006,"Russ Johnson",1,5,5
+play,8,0,oneip001,02,CSX,S
+play,8,0,willb002,20,BBX,D/78D.1-3
+play,8,0,justd001,01,CX,9/LDP.3XH(92)
+play,8,0,martt002,21,BFBX,3/G
+play,8,1,guilj001,32,SBFBBX,9/FL
+play,8,1,flahj001,01,FX,4/P4
+play,8,1,smitr003,32,CBCBBB,W
+play,8,1,martf001,10,BC,CS2(24)
+play,9,0,posaj001,00,,NP
+sub,hernr001,"Roberto Hernandez",1,0,1
+play,9,0,posaj001,00,X,HR/8
+play,9,0,bross001,10,BX,4/P4
+play,9,0,vizcj001,00,,NP
+sub,cansj001,"Jose Canseco",0,9,11
+play,9,0,cansj001,10,BX,6/FL
+play,9,0,knobc001,12,FBCFFS,K
+play,9,1,martf001,00,,NP
+sub,sojol001,"Luis Sojo",0,9,4
+play,9,1,martf001,00,,NP
+sub,winnr001,"Randy Winn",1,9,11
+play,9,1,winnr001,00,,NP
+sub,nelsj001,"Jeff Nelson",0,0,1
+play,9,1,winnr001,31,BBBCB,W
+play,9,1,willg001,11,BLX,34/SH.1-2
+play,9,1,tynej001,00,,NP
+sub,stanm003,"Mike Stanton",0,0,1
+play,9,1,tynej001,00,,NP
+sub,castv001,"Vinny Castilla",1,2,11
+play,9,1,castv001,30,IIII,IW
+play,9,1,cox-s001,10,BX,36(1)/FO.2-3
+play,9,1,mcgrf001,20,BBX,S9/G34.3-H;1-2
+data,er,herno001,1
+data,er,nelsj001,1
+data,er,stanm003,0
+data,er,lopea002,0
+data,er,hernr001,1

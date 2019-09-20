@@ -1,0 +1,78 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,31,1,goodt001,,,,0,5,BBBCB,hillk001,0,0,goodt001 walks. ,goodt001,0,
+,00,1,,goodt001,,huntb002,1,6,B,hillk001,0,0,goodt001 steals 2B. ,huntb002,0,
+,12,1,huntb002,goodt001,,,2,12,BCCFFX,hillk001,0,0,huntb002 reaches on error. ,huntb002,0,
+goodt001 to 3B. ,00,1,,,goodt001,,3,13,X,hillk001,2,0,Double Play. ,heltt001,0,
+,01,1,,,goodt001,,4,15,CX,hillk001,1,0,,hammj001,0,
+,01,1,,,,,5,2,CX,bohab001,0,1,erstd001 homers. ,erstd001,1,
+,32,1,gil-b001,,,,6,8,BCBFBB,bohab001,0,0,gil-b001 walks. ,gil-b001,1,
+gil-b001 scores. ,31,1,,,,,7,13,FBBBX,bohab001,0,2,vaugm001 homers. ,vaugm001,1,
+,20,1,,,,,8,16,BBX,bohab001,1,0,salmt001 grounds out. ,salmt001,1,G
+,12,1,,,,,9,20,BSSS,bohab001,1,0,andeg001 strikes out. ,andeg001,1,
+,31,1,glaut001,,,,10,25,BBBCB,bohab001,0,0,glaut001 walks. ,glaut001,1,
+glaut001 to 3B. ,12,1,,,glaut001,molib001,11,29,BCFB,bohab001,0,0,glaut001 steals 2B. ,molib001,1,
+,22,1,,,glaut001,,12,34,BCFBX,bohab001,1,0,,molib001,1,F
+,32,2,,,,,13,23,CBFFBBFC,hillk001,1,0,walkl001 strikes out. ,walkl001,0,
+,00,2,,,,,14,24,X,hillk001,1,0,,shumt001,0,P
+,00,2,lansm001,,,,15,25,X,hillk001,0,0,lansm001 singles. ,lansm001,0,
+,10,2,lansm001,,,,16,27,BX,hillk001,1,0,,servs002,0,P
+,10,2,,,,,17,36,BX,bohab001,1,0,,kenna001,1,F
+,12,2,walbm001,,,,18,40,SFBX,bohab001,0,0,walbm001 singles. ,walbm001,1,
+walbm001 out. ,00,2,erstd001,,,,19,41,X,bohab001,1,0,erstd001 reaches on fielder's choice. ,erstd001,1,
+,00,2,,erstd001,,gil-b001,20,42,C,bohab001,0,0,erstd001 steals 2B. ,gil-b001,1,
+erstd001 out. gil-b001 to 1B. ,01,2,gil-b001,,,,21,44,CX,bohab001,1,0,gil-b001 hits into a fielder's choice. ,gil-b001,1,
+,01,3,peren001,,,,22,29,FX,hillk001,0,0,peren001 singles. ,peren001,0,
+,21,3,,,,,23,33,CBBX,hillk001,2,0,Double Play. ,goodt001,0,
+,00,3,huntb002,,,,24,34,X,hillk001,0,0,huntb002 singles. ,huntb002,0,
+huntb002 to 2B. ,32,3,heltt001,huntb002,,,25,42,CBBBFFFB,hillk001,0,0,heltt001 walks. ,heltt001,0,
+,22,3,heltt001,huntb002,,,26,47,SFBBS,hillk001,1,0,hammj001 strikes out. ,hammj001,0,
+,32,3,,,,,27,51,CBCFBBX,bohab001,1,0,,vaugm001,1,F
+,32,3,,,,,28,57,BBBCSS,bohab001,1,0,salmt001 strikes out. ,salmt001,1,
+,12,3,,,,,29,61,BCSS,bohab001,1,0,andeg001 strikes out. ,andeg001,1,
+,21,4,,,,,30,51,BBCX,hillk001,1,0,walkl001 grounds out. ,walkl001,0,G
+,11,4,,,,,31,54,LBX,hillk001,0,1,shumt001 homers. ,shumt001,0,
+,21,4,,,,,32,58,BBCX,hillk001,1,0,,lansm001,0,
+,21,4,,,,,33,62,BBFX,hillk001,1,0,servs002 grounds out. ,servs002,0,G
+,10,4,,,,,34,63,BX,bohab001,1,0,,glaut001,1,F
+,10,4,,,,,35,65,BX,bohab001,0,1,molib001 homers. ,molib001,1,
+,11,4,,kenna001,,,36,68,CBX,bohab001,0,0,kenna001 doubles. ,kenna001,1,
+kenna001 to 2B. ,10,4,walbm001,kenna001,,,37,70,BX,bohab001,0,0,walbm001 singles. ,walbm001,1,F
+kenna001 scores. walbm001 to 3B. ,20,4,erstd001,,walbm001,,38,73,BBX,bohab001,0,1,erstd001 singles. ,erstd001,1,
+,10,4,,,walbm001,,39,75,BX,bohab001,2,0,Double Play. ,gil-b001,1,
+,01,5,,,,,40,64,SX,hillk001,1,0,,peren001,0,F
+,11,5,,,,,41,67,CBX,hillk001,1,0,,goodt001,0,F
+,02,5,huntb002,,,,42,70,SSX,hillk001,0,0,huntb002 singles. ,huntb002,0,
+huntb002 to 3B. ,21,5,heltt001,,huntb002,,43,74,SBBX,hillk001,0,0,heltt001 singles. ,heltt001,0,
+heltt001 to 2B. ,32,5,hammj001,heltt001,huntb002,,44,81,BSBFBFB,hillk001,0,0,hammj001 walks. ,hammj001,0,
+,21,5,hammj001,heltt001,huntb002,,45,85,FBBX,hillk001,1,0,,walkl001,0,F
+,00,5,,,,,46,76,X,bohab001,1,0,,vaugm001,1,F
+,12,5,,,,,47,82,FSFBFS,bohab001,1,0,salmt001 strikes out. ,salmt001,1,
+,02,5,,,,,48,85,SFX,bohab001,1,0,andeg001 grounds out. ,andeg001,1,G
+,12,6,,,,,49,90,CCFBX,hillk001,1,0,,shumt001,0,F
+,10,6,lansm001,,,,50,92,BX,hillk001,0,0,lansm001 singles. ,lansm001,0,
+,00,6,,lansm001,,servs002,51,93,S,hillk001,0,0,lansm001 steals 2B. ,servs002,0,
+,32,6,,lansm001,,,52,106,SBFBFBFFFFFFX,hillk001,1,0,,servs002,0,P
+lansm001 scores. ,11,6,,peren001,,,53,109,FBX,hillk001,0,1,peren001 doubles. ,peren001,0,
+,22,6,,peren001,,,55,5,BCBFS,holtm001,1,0,goodt001 strikes out. ,goodt001,0,
+,11,6,,,,,56,88,CBX,bohab001,1,0,,glaut001,1,F
+,32,6,molib001,,,,57,96,CBFBBFFB,bohab001,0,0,molib001 walks. ,molib001,1,
+molib001 to 2B. ,02,6,kenna001,molib001,,,58,100,CSFX,bohab001,0,0,kenna001 singles. ,kenna001,1,
+molib001 to 3B. kenna001 out. ,32,6,walbm001,,molib001,,59,106,BFBBSX,bohab001,1,0,walbm001 reaches on fielder's choice. ,walbm001,1,
+,10,6,walbm001,,molib001,,60,108,BX,bohab001,1,0,erstd001 grounds out. ,erstd001,1,G
+,12,7,,,,,62,4,FSBS,hases001,1,0,huntb002 strikes out. ,huntb002,0,
+,22,7,,,,,63,9,BSFBX,hases001,1,0,heltt001 grounds out. ,heltt001,0,G
+,22,7,,,,,64,14,CFBBS,hases001,1,0,hammj001 strikes out. ,hammj001,0,
+,10,7,gil-b001,,,,65,110,BX,bohab001,0,0,gil-b001 singles. ,gil-b001,1,
+,00,7,,,,,66,111,X,bohab001,2,0,Double Play. ,vaugm001,1,
+,11,7,,,,,67,114,CBX,bohab001,1,0,salmt001 grounds out. ,salmt001,1,G
+,22,8,,,,,68,19,SBBCX,hases001,1,0,walkl001 grounds out. ,walkl001,0,G
+,01,8,,shumt001,,,69,21,SX,hases001,0,0,shumt001 doubles. ,shumt001,0,
+shumt001 to 3B. ,32,8,,,shumt001,,70,31,FBFBFBFFFX,hases001,1,0,lansm001 grounds out. ,lansm001,0,G
+,11,8,,,shumt001,,72,34,CBX,hases001,1,0,maynb001 grounds out. ,maynb001,0,G
+,10,8,,,,,74,116,BX,bohab001,0,1,andeg001 homers. ,andeg001,1,
+,21,8,glaut001,,,,76,4,BCBX,tavaj001,0,0,glaut001 singles. ,glaut001,1,
+,00,8,,,,,77,5,X,tavaj001,2,0,Double Play. ,molib001,1,
+,01,8,,,,,78,7,CX,tavaj001,1,0,kenna001 grounds out. ,kenna001,1,G
+,12,9,,,,,80,4,BCCS,perct001,1,0,peren001 strikes out. ,peren001,0,
+,11,9,,,,,81,7,CBX,perct001,1,0,goodt001 grounds out. ,goodt001,0,G
+,32,9,,,,,83,13,CCBBBS,perct001,1,0,bragd001 strikes out. ,bragd001,0,

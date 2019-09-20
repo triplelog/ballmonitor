@@ -1,0 +1,188 @@
+version,2
+info,visteam,SDN
+info,hometeam,LAN
+info,site,LOS03
+info,date,2000/09/22
+info,number,0
+info,starttime,7:10PM
+info,daynight,night
+info,usedh,false
+info,umphome,marsr901
+info,ump1b,herna901
+info,ump2b,fostm901
+info,ump3b,kulpr901
+info,pitches,pitches
+info,temp,66
+info,winddir,rtol
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,199
+info,attendance,37512
+info,wp,maurd001
+info,lp,osuna002
+info,save,hofft001
+start,jackd003,"Damian Jackson",0,1,4
+start,relad001,"Desi Relaford",0,2,6
+start,klesr001,"Ryan Klesko",0,3,3
+start,nevip001,"Phil Nevin",0,4,5
+start,mabrj001,"John Mabry",0,5,9
+start,darrm001,"Mike Darr",0,6,8
+start,davib003,"Ben Davis",0,7,2
+start,dehak001,"Kory DeHaan",0,8,7
+start,witaj001,"Jay Witasick",0,9,1
+start,goodt001,"Tom Goodwin",1,1,8
+start,grudm001,"Mark Grudzielanek",1,2,4
+start,grees001,"Shawn Green",1,3,9
+start,karre001,"Eric Karros",1,4,3
+start,hundt001,"Todd Hundley",1,5,2
+start,belta001,"Adrian Beltre",1,6,5
+start,donnc001,"Chris Donnels",1,7,7
+start,coraa001,"Alex Cora",1,8,6
+start,gagne001,"Eric Gagne",1,9,1
+com,"rain delays of 1:53 in the fourth and 39 minutes in the seventh"
+play,1,0,jackd003,32,BFSBBFB,W
+play,1,0,relad001,10,BX,HR/9.1-H
+play,1,0,klesr001,21,SBBX,6/P6
+play,1,0,nevip001,21,CBBX,S
+play,1,0,mabrj001,00,X,16(1)3/GDP
+play,1,1,goodt001,21,FBBX,S8
+play,1,1,grudm001,11,BCH,HP.1-2
+play,1,1,grees001,22,CBBFFS,K
+play,1,1,karre001,00,B,SB3;SB2
+play,1,1,karre001,22,BFFBC,K/C
+play,1,1,hundt001,02,CSFS,K
+play,2,0,darrm001,32,SBSBFFFBFX,S8
+play,2,0,davib003,22,FSBBB,SB2
+play,2,0,davib003,32,FSBBBFB,W
+play,2,0,dehak001,22,SBSBS,K
+play,2,0,witaj001,00,X,56(2)4(1)/GDP
+play,2,1,belta001,11,CBX,43/G
+play,2,1,donnc001,10,BX,HR/8
+play,2,1,coraa001,32,BCBFBB,W
+play,2,1,gagne001,00,X,34/SH.1-2
+play,2,1,goodt001,22,BSSBC,K/C
+play,3,0,jackd003,00,X,8/F8S
+play,3,0,relad001,30,BBBB,W
+play,3,0,klesr001,22,BCCBFX,S9.1-2
+play,3,0,nevip001,21,BFBX,8/F8D.2-3
+play,3,0,mabrj001,11,SBB,SB2
+play,3,0,mabrj001,31,SBBBB,W
+play,3,0,darrm001,22,BCBFX,8/F8
+play,3,1,grudm001,00,X,63/G
+play,3,1,grees001,00,X,3/L3
+play,3,1,karre001,21,CBBX,6/P6
+play,4,0,davib003,11,CBX,7/F7
+play,4,0,dehak001,22,CBFBFX,S
+play,4,0,witaj001,00,C,SB2
+play,4,0,witaj001,32,CSFBFBBB,W
+play,4,0,jackd003,00,,NP
+sub,prokl001,"Luke Prokopec",1,9,1
+play,4,0,jackd003,11,FBX,7/F7
+play,4,0,relad001,31,BFBBB,W.2-3;1-2
+play,4,0,klesr001,02,CFC,K/C
+play,4,1,hundt001,00,,NP
+sub,almac001,"Carlos Almanzar",0,9,1
+play,4,1,hundt001,00,X,4/FL
+play,4,1,belta001,20,BBX,S7
+play,4,1,donnc001,31,BCBBB,W.1-2
+play,4,1,coraa001,01,CX,8/F8
+play,4,1,prokl001,12,SFBFFFC,K/C
+play,5,0,nevip001,00,X,S7/7S
+play,5,0,mabrj001,12,BSSS,K
+play,5,0,darrm001,10,BX,8/F8
+play,5,0,davib003,00,X,7/F7
+play,5,1,goodt001,01,CX,23/BG
+play,5,1,grudm001,01,CX,S8
+play,5,1,grees001,11,BCX,7/F7
+play,5,1,karre001,00,X,9/F9
+play,6,0,dehak001,11,FBX,9/F9
+play,6,0,almac001,00,,NP
+sub,alvag001,"Gabe Alvarez",0,9,11
+play,6,0,alvag001,31,BBBCX,4/P4
+play,6,0,jackd003,12,CFBS,K
+play,6,1,hundt001,00,,NP
+sub,maurd001,"Dave Maurer",0,9,1
+badj,hundt001,L
+play,6,1,hundt001,11,SBX,3/L3
+play,6,1,belta001,31,BBBCB,W
+play,6,1,donnc001,00,,NP
+sub,avenb001,"Bruce Aven",1,7,11
+play,6,1,avenb001,22,BCSBS,K
+play,6,1,coraa001,10,BX,D/89.1-H
+play,6,1,prokl001,00,,NP
+sub,bocah001,"Hiram Bocachica",1,9,11
+play,6,1,bocah001,22,BCFBS,K23
+play,7,0,relad001,00,,NP
+sub,avenb001,"Bruce Aven",1,7,7
+play,7,0,relad001,00,,NP
+sub,osuna002,"Antonio Osuna",1,9,1
+play,7,0,relad001,32,CBBFBFB,W
+play,7,0,klesr001,11,BFX,2/FL
+play,7,0,nevip001,00,B,SB2.1-3(E2/TH2)
+play,7,0,nevip001,10,BX,5/P5
+play,7,0,mabrj001,32,SBBSBX,D9.3-H
+play,7,0,darrm001,00,,NP
+sub,masao001,"Onan Masaoka",1,9,1
+play,7,0,darrm001,00,,NP
+sub,river002,"Ruben Rivera",0,5,12
+play,7,0,darrm001,32,BBFBFB,W
+play,7,0,davib003,12,BSSFS,K
+play,7,1,goodt001,00,,NP
+sub,river002,"Ruben Rivera",0,5,8
+play,7,1,goodt001,00,,NP
+sub,darrm001,"Mike Darr",0,6,9
+play,7,1,goodt001,00,,NP
+sub,larog001,"Greg LaRocca",0,9,5
+play,7,1,goodt001,00,,NP
+sub,davet001,"Tom Davey",0,4,1
+play,7,1,goodt001,12,CCBX,6/P6
+play,7,1,grudm001,10,BX,9/F9
+play,7,1,grees001,32,BBBCSX,6/P6
+play,8,0,dehak001,00,,NP
+sub,reyea001,"Al Reyes",1,9,1
+play,8,0,dehak001,12,CBFS,K
+play,8,0,larog001,00,X,6/P6
+play,8,0,jackd003,22,BFBCFX,E5/TH
+play,8,0,relad001,22,BFBFS,K
+play,8,1,karre001,10,BX,S8
+play,8,1,hundt001,00,,NP
+sub,santf001,"F.P. Santangelo",1,4,12
+play,8,1,hundt001,11,CBX,6(B)3(1)/FDP
+play,8,1,belta001,12,BSCX,S
+play,8,1,avenb001,00,X,S/89.1-2
+play,8,1,coraa001,00,,NP
+sub,hansd001,"Dave Hansen",1,8,11
+play,8,1,hansd001,00,,NP
+sub,walkk001,"Kevin Walker",0,4,1
+play,8,1,hansd001,22,BBCSFS,K
+play,9,0,klesr001,00,,NP
+sub,hansd001,"Dave Hansen",1,8,3
+play,9,0,klesr001,00,,NP
+sub,kreuc001,"Chad Kreuter",1,4,2
+play,9,0,klesr001,00,,NP
+sub,branj002,"Jeff Branson",1,5,6
+play,9,0,klesr001,30,BBBX,8/F8
+play,9,0,walkk001,00,,NP
+sub,sprae001,"Ed Sprague",0,4,11
+play,9,0,sprae001,12,BCFS,K
+play,9,0,river002,12,SCFBS,K
+play,9,1,reyea001,00,,NP
+sub,lodup001,"Paul LoDuca",1,9,11
+play,9,1,lodup001,00,,NP
+sub,hofft001,"Trevor Hoffman",0,4,1
+play,9,1,lodup001,00,X,7/F7
+play,9,1,goodt001,32,BBCFBFX,8/L8
+play,9,1,grudm001,12,CBFX,43/G
+data,er,witaj001,1
+data,er,almac001,0
+data,er,maurd001,1
+data,er,davet001,0
+data,er,walkk001,0
+data,er,hofft001,0
+data,er,gagne001,2
+data,er,prokl001,0
+data,er,osuna002,1
+data,er,masao001,0
+data,er,reyea001,0

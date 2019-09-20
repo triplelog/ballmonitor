@@ -1,0 +1,123 @@
+version,2
+info,visteam,TBA
+info,hometeam,KCA
+info,site,KAN06
+info,date,2000/07/29
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,hirsm901
+info,ump1b,bellw901
+info,ump2b,onorb901
+info,ump3b,iassd901
+info,pitches,pitches
+info,temp,78
+info,winddir,tocf
+info,windspeed,3
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,138
+info,attendance,29162
+info,wp,lopea002
+info,lp,suzum001
+info,save,hernr001
+start,willg001,"Gerald Williams",0,1,8
+start,cairm001,"Miguel Cairo",0,2,4
+start,vaugg001,"Greg Vaughn",0,3,7
+start,mcgrf001,"Fred McGriff",0,4,3
+start,cansj001,"Jose Canseco",0,5,10
+start,cox-s001,"Steve Cox",0,6,9
+start,castv001,"Vinny Castilla",0,7,5
+start,flahj001,"John Flaherty",0,8,2
+start,martf001,"Felix Martinez",0,9,6
+start,lopea002,"Albie Lopez",0,0,1
+start,damoj001,"Johnny Damon",1,1,8
+start,sancr001,"Rey Sanchez",1,2,6
+start,sweem002,"Mike Sweeney",1,3,3
+start,dye-j001,"Jermaine Dye",1,4,10
+start,randj002,"Joe Randa",1,5,5
+start,quinm001,"Mark Quinn",1,6,7
+start,dunwt001,"Todd Dunwoody",1,7,9
+start,zaung001,"Gregg Zaun",1,8,2
+start,feblc001,"Carlos Febles",1,9,4
+start,suzum001,"Mac Suzuki",1,0,1
+play,1,0,willg001,21,FBBX,8/F8
+play,1,0,cairm001,21,BFBX,9/FL
+play,1,0,vaugg001,12,CCBS,K
+play,1,1,damoj001,11,CBX,63/G
+play,1,1,sancr001,10,BX,43/G
+play,1,1,sweem002,01,CX,63/G
+play,2,0,mcgrf001,02,FFC,K/C
+play,2,0,cansj001,22,CSBBC,K/C
+play,2,0,cox-s001,12,CCBFFS,K
+play,2,1,dye-j001,11,CBX,31/G
+play,2,1,randj002,00,X,8/F8D
+play,2,1,quinm001,12,CSBS,K
+play,3,0,castv001,01,SX,53/G
+play,3,0,flahj001,12,CBSFFX,S9
+play,3,0,martf001,10,BX,8/F8
+play,3,0,willg001,02,FSS,K
+play,3,1,dunwt001,02,CFFX,63/G
+play,3,1,zaung001,01,CX,S
+play,3,1,feblc001,00,X,S8.1-2
+play,3,1,damoj001,22,BCFFBX,9/F9
+play,3,1,sancr001,20,BBX,63/G
+play,4,0,cairm001,01,CX,63/G
+play,4,0,vaugg001,31,BBFBB,W
+play,4,0,mcgrf001,22,BCSBS,K
+play,4,0,cansj001,32,CFBBBB,W.1-2
+play,4,0,cox-s001,31,BBBCB,W.2-3;1-2
+play,4,0,castv001,11,SBX,6/FL
+play,4,1,sweem002,11,BLX,8/F8
+play,4,1,dye-j001,22,CBFBS,K
+play,4,1,randj002,10,BX,53/G
+play,5,0,flahj001,12,CFBX,8/F8
+play,5,0,martf001,21,BBCX,7/F7
+play,5,0,willg001,00,X,9/L9
+play,5,1,quinm001,12,CFBX,63/G
+play,5,1,dunwt001,10,BX,6/L6
+play,5,1,zaung001,02,FFH,HP
+play,5,1,feblc001,11,CBX,63/G
+play,6,0,cairm001,10,BX,S8
+play,6,0,vaugg001,10,BX,46(1)3/GDP
+play,6,0,mcgrf001,30,BBBB,W
+play,6,0,cansj001,12,CBCS,K
+play,6,1,damoj001,12,FBFFX,8/F8
+play,6,1,sancr001,01,CX,63/G
+play,6,1,sweem002,11,CBX,53/G
+play,7,0,cox-s001,31,BBSBX,9/F9D
+play,7,0,castv001,12,CFBX,8/F8S
+play,7,0,flahj001,01,CX,HR/7
+play,7,0,martf001,22,BFSBS,K
+play,7,1,dye-j001,00,,NP
+sub,guilj001,"Jose Guillen",0,6,9
+play,7,1,dye-j001,22,BSBFX,63/G
+play,7,1,randj002,01,CX,S
+play,7,1,quinm001,20,BBX,S8/8S.1-2
+play,7,1,dunwt001,11,BCX,3/G.2-3;1-2
+play,7,1,zaung001,21,BFBX,9/F9S
+play,8,0,willg001,00,X,8/F8
+play,8,0,cairm001,21,BBCX,7/F7
+play,8,0,vaugg001,00,X,HR/7
+play,8,0,mcgrf001,22,BBFCX,31/G
+play,8,1,feblc001,01,CX,S
+play,8,1,damoj001,11,BCX,S8.1-2
+play,8,1,sancr001,10,BX,5(B)6(2)/BP/DP
+play,8,1,sweem002,00,X,53/G
+play,9,0,cansj001,00,,NP
+sub,bottr001,"Ricky Bottalico",1,0,1
+play,9,0,cansj001,22,CBBFX,63/G
+play,9,0,guilj001,22,CBFBX,8/F8
+play,9,0,castv001,12,SBSX,53/G
+play,9,1,dye-j001,02,CCS,K
+play,9,1,randj002,00,X,9/F9
+play,9,1,quinm001,00,X,HR/78
+play,9,1,dunwt001,00,,NP
+sub,hernr001,"Roberto Hernandez",0,0,1
+play,9,1,dunwt001,01,CX,43/G
+data,er,lopea002,1
+data,er,hernr001,0
+data,er,suzum001,2
+data,er,bottr001,0

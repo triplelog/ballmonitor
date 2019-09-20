@@ -1,0 +1,152 @@
+version,2
+info,visteam,TEX
+info,hometeam,SEA
+info,site,SEA03
+info,date,2000/07/23
+info,number,0
+info,starttime,1:35PM
+info,daynight,day
+info,usedh,true
+info,umphome,higgs901
+info,ump1b,wegnm901
+info,ump2b,willc901
+info,ump3b,katzt901
+info,pitches,pitches
+info,temp,65
+info,winddir,ltor
+info,windspeed,4
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,191
+info,attendance,45319
+info,wp,hellr001
+info,lp,rhoda001
+info,save,wettj001
+start,alicl001,"Luis Alicea",0,1,4
+start,greer001,"Rusty Greer",0,2,7
+start,palmr001,"Rafael Palmeiro",0,3,3
+start,rodri001,"Ivan Rodriguez",0,4,2
+start,segud001,"David Segui",0,5,10
+start,martd002,"Dave Martinez",0,6,9
+start,kaplg001,"Gabe Kapler",0,7,8
+start,lambm001,"Mike Lamb",0,8,5
+start,clayr001,"Royce Clayton",0,9,6
+start,hellr001,"Rick Helling",0,0,1
+start,hendr001,"Rickey Henderson",1,1,7
+start,guilc001,"Carlos Guillen",1,2,6
+start,marte001,"Edgar Martinez",1,3,10
+start,olerj001,"John Olerud",1,4,3
+start,camem001,"Mike Cameron",1,5,8
+start,buhnj001,"Jay Buhner",1,6,9
+start,belld002,"David Bell",1,7,5
+start,wilsd001,"Dan Wilson",1,8,2
+start,mclem001,"Mark McLemore",1,9,4
+start,garcf002,"Freddy An. Garcia",1,0,1
+play,1,0,alicl001,11,CBX,53/G
+play,1,0,greer001,32,CCBBBX,S9
+play,1,0,palmr001,21,CBBX,9/F9
+play,1,0,rodri001,02,FFFX,8/F8
+play,1,1,hendr001,11,BFX,9/F9
+play,1,1,guilc001,12,BCCFFX,8/L8
+play,1,1,marte001,22,FCBBX,S9
+play,1,1,olerj001,21,BFBX,9/F9
+play,2,0,segud001,11,FBX,63/G
+play,2,0,martd002,10,BX,7/F7
+play,2,0,kaplg001,21,BCBX,S9
+play,2,0,lambm001,00,B,SB2
+play,2,0,lambm001,10,BX,53/G
+play,2,1,camem001,32,LBBFBFB,W
+play,2,1,buhnj001,00,X,8/F8D
+play,2,1,belld002,00,C,CS2(24)
+play,2,1,belld002,32,CBBBFFFX,8/F8
+play,3,0,clayr001,32,CBFBBX,23/G
+play,3,0,alicl001,10,BX,5/FL
+play,3,0,greer001,22,CBBFX,S8
+play,3,0,palmr001,10,BX,8/F8
+play,3,1,wilsd001,22,CBFFFBX,S7/7S
+play,3,1,mclem001,22,BBCFX,7/F7
+play,3,1,hendr001,00,X,8/F8D
+play,3,1,guilc001,10,BX,S.1-2
+play,3,1,marte001,22,CBCBX,8/F8
+play,4,0,rodri001,32,FBSBBB,W
+play,4,0,segud001,11,BFX,7/F7
+play,4,0,martd002,32,BBFFBX,S8.1-3
+play,4,0,kaplg001,32,FFBBBB,W.3-H(PB);1-3
+play,4,0,lambm001,11,CBX,36(1)/FO.3-H(UR)
+play,4,0,clayr001,22,FBFFBX,7/F7
+play,4,1,olerj001,10,BX,D8/8D.B-3(E8/TH)
+play,4,1,camem001,12,BCFC,K/C
+play,4,1,buhnj001,01,CX,3/FL
+play,4,1,belld002,11,CBX,7/F7
+play,5,0,alicl001,01,FX,6/P6
+play,5,0,greer001,31,BBCBB,W
+play,5,0,palmr001,30,BBBX,8/F8D
+play,5,0,rodri001,00,X,5/P5
+play,5,1,wilsd001,11,CBX,53/G
+play,5,1,mclem001,10,BX,S9
+play,5,1,hendr001,11,BCX,4/P4
+play,5,1,guilc001,01,CB,SB2
+play,5,1,guilc001,11,CBX,S9.2-H
+play,5,1,marte001,00,X,4/P4
+play,6,0,segud001,21,BBFX,S7
+play,6,0,martd002,00,X,S7.1-2
+play,6,0,kaplg001,32,BBFFBX,9/F9
+play,6,0,lambm001,22,BSBFX,4/L4
+play,6,0,clayr001,11,BFH,HP.2-3;1-2
+play,6,0,alicl001,12,BCFS,K
+play,6,1,olerj001,11,CBX,3/L3
+play,6,1,camem001,10,BX,9/F9
+play,6,1,buhnj001,01,FX,53/G
+play,7,0,greer001,00,,NP
+sub,ramsr001,"Robert Ramsay",1,0,1
+play,7,0,greer001,01,CX,E4/G
+play,7,0,palmr001,00,X,D9.1-3
+play,7,0,rodri001,30,BBII,IW
+play,7,0,segud001,31,CBBBX,9/F9
+play,7,0,martd002,00,,NP
+sub,curtc001,"Chad Curtis",0,6,11
+play,7,0,curtc001,00,,NP
+sub,tomkb001,"Brett Tomko",1,0,1
+play,7,0,curtc001,00,,NP
+sub,cataf001,"Frank Catalanotto",0,6,11
+play,7,0,cataf001,22,BBSSX,6/P6
+play,7,0,kaplg001,20,BBX,54(1)/FO
+play,7,1,belld002,00,,NP
+sub,grees002,"Scarborough Green",0,6,9
+play,7,1,belld002,12,CBCX,D7
+play,7,1,wilsd001,00,X,13/SH.2-3
+play,7,1,mclem001,32,BFFBBX,S9.3-H
+play,7,1,hendr001,20,BBX,2/FL
+play,7,1,guilc001,12,CCBX,6(1)/FO/G
+play,8,0,lambm001,00,,NP
+sub,rhoda001,"Arthur Rhodes",1,0,1
+play,8,0,lambm001,22,FCFBFBFFX,S8
+play,8,0,clayr001,00,X,3/FL
+play,8,0,alicl001,10,BX,8/L8
+play,8,0,greer001,32,CBSFBFFBB,W.1-2
+play,8,0,palmr001,01,CX,S9.2-H;1-2
+play,8,0,rodri001,10,BX,3/P3
+play,8,1,marte001,10,BX,53/G
+play,8,1,olerj001,00,X,8/F8
+play,8,1,camem001,31,BBBCB,W
+play,8,1,buhnj001,11,CBX,5/FL
+play,9,0,segud001,00,,NP
+sub,mesaj001,"Jose Mesa",1,0,1
+play,9,0,segud001,22,CBBFX,7/F7D
+play,9,0,grees002,10,BX,31/G
+play,9,0,kaplg001,12,SBFS,K
+play,9,1,belld002,00,,NP
+sub,wettj001,"John Wetteland",0,0,1
+play,9,1,belld002,11,CBX,43/G
+play,9,1,wilsd001,00,,NP
+sub,javis001,"Stan Javier",1,8,11
+play,9,1,javis001,01,CX,43/G
+play,9,1,mclem001,02,CCFX,8/F8
+data,er,hellr001,2
+data,er,wettj001,0
+data,er,garcf002,1
+data,er,ramsr001,0
+data,er,tomkb001,0
+data,er,rhoda001,1
+data,er,mesaj001,0

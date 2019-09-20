@@ -1,0 +1,84 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,12,1,,,,,0,4,CSBX,leita001,1,0,,furcr001,0,F
+,10,1,,,,,1,6,BX,leita001,1,0,,jonea002,0,L
+,22,1,,,,,2,11,SBFBS,leita001,1,0,jonec004 strikes out. ,jonec004,0,
+,32,1,,,,,3,6,BCLBBX,burkj001,1,0,,hamid001,1,
+,21,1,belld001,,,,4,10,CBBX,burkj001,0,0,belld001 singles. ,belld001,1,
+belld001 to 2B. ,22,1,,belld001,,alfoe001,5,16,BFCFBB,burkj001,0,0,Wild Pitch. ,alfoe001,1,
+,32,1,alfoe001,belld001,,,6,23,BFCFBBB,burkj001,0,0,alfoe001 walks. ,alfoe001,1,
+,21,1,alfoe001,belld001,,,7,27,CBBX,burkj001,1,0,,piazm001,1,L
+,10,1,alfoe001,belld001,,,8,29,BX,burkj001,1,0,ventr001 grounds out. ,ventr001,1,G
+,31,2,,,,,9,16,BSBBX,leita001,1,0,galaa001 grounds out. ,galaa001,0,G
+,32,2,,,,,10,22,BSBBCX,leita001,1,0,,lopej001,0,P
+,32,2,,,,,11,28,FSBBBS,leita001,1,0,jordb001 strikes out. ,jordb001,0,
+,32,2,,,,,12,35,BCBCBC,burkj001,1,0,zeilt001 strikes out. ,zeilt001,1,
+,30,2,paytj001,,,,13,39,BBBB,burkj001,0,0,paytj001 walks. ,paytj001,1,
+,00,2,,,,bordm001,14,40,1,burkj001,1,0,paytj001 picked off. ,bordm001,1,
+,31,2,bordm001,,,,15,46,1CBBBB,burkj001,0,0,bordm001 walks. ,bordm001,1,
+,12,2,bordm001,,,,16,50,CBSS,burkj001,1,0,leita001 strikes out. ,leita001,1,
+,31,3,sandr002,,,,17,33,CBBBX,leita001,0,0,sandr002 singles. ,sandr002,0,
+sandr002 to 2B. ,01,3,,sandr002,,,18,35,CX,leita001,1,0,weisw001 grounds out. ,weisw001,0,G
+,11,3,,,sandr002,burkj001,19,38,BCS,leita001,0,0,sandr002 steals 3B. ,burkj001,0,
+,12,3,,,sandr002,,20,44,BCSFFS,leita001,1,0,burkj001 strikes out. ,burkj001,0,
+,32,3,furcr001,,sandr002,,21,50,BCBCBB,leita001,0,0,furcr001 walks. ,furcr001,0,
+,01,3,,furcr001,sandr002,jonea002,22,52,CB,leita001,0,0,furcr001 steals 2B. ,jonea002,0,
+,12,3,,furcr001,sandr002,,23,56,CBFX,leita001,1,0,,jonea002,0,P
+,01,3,,,,,24,52,CX,burkj001,1,0,,hamid001,1,L
+,32,3,belld001,,,,25,58,SBCBBB,burkj001,0,0,belld001 walks. ,belld001,1,
+,22,3,belld001,,,,26,64,CBFBFX,burkj001,1,0,,alfoe001,1,P
+,12,3,belld001,,,,27,68,FBSX,burkj001,1,0,,piazm001,1,F
+,22,4,,,,,28,61,FBFBS,leita001,1,0,jonec004 strikes out. ,jonec004,0,
+,11,4,galaa001,,,,29,64,BFX,leita001,0,0,galaa001 singles. ,galaa001,0,
+,01,4,galaa001,,,,30,66,CX,leita001,1,0,,lopej001,0,F
+,12,4,,,,jordb001,31,71,FBFF1,leita001,1,0,galaa001 picked off. ,jordb001,0,
+,01,4,,,,,32,70,CX,burkj001,1,0,,ventr001,1,L
+,22,4,,,,,33,75,FBFBS,burkj001,1,0,zeilt001 strikes out. ,zeilt001,1,
+,01,4,,,,,34,77,CX,burkj001,1,0,,paytj001,1,F
+,22,5,,,,,35,78,SBBFFFX,leita001,1,0,jordb001 grounds out. ,jordb001,0,G
+,32,5,,sandr002,,,36,84,BBCFBX,leita001,0,0,sandr002 doubles. ,sandr002,0,
+,12,5,,sandr002,,,37,88,CSBC,leita001,1,0,weisw001 strikes out. ,weisw001,0,
+sandr002 scores. ,00,5,burkj001,,,,38,89,X,leita001,0,1,burkj001 singles. ,burkj001,0,
+burkj001 to 2B. ,01,5,furcr001,burkj001,,,39,91,CX,leita001,0,0,furcr001 singles. ,furcr001,0,
+,22,5,furcr001,burkj001,,,40,96,FBBSX,leita001,1,0,jonea002 grounds out. ,jonea002,0,G
+,31,5,,,,,41,82,BBBCX,burkj001,1,0,,bordm001,1,F
+,12,5,,,,,42,86,BSFC,burkj001,1,0,leita001 strikes out. ,leita001,1,
+,22,5,hamid001,,,,43,94,CBFBFFFX,burkj001,0,0,hamid001 singles. ,hamid001,1,
+hamid001 out. ,12,5,belld001,,,,44,99,FCFBX,burkj001,1,0,belld001 reaches on fielder's choice. ,belld001,1,G
+,11,6,,,,,45,99,BCX,leita001,0,1,jonec004 homers. ,jonec004,0,
+,32,6,,,,,46,105,BBBCSX,leita001,1,0,galaa001 grounds out. ,galaa001,0,G
+,22,6,,lopej001,,,47,111,BBSFFX,leita001,0,0,lopej001 doubles. ,lopej001,0,
+,32,6,jordb001,lopej001,,,48,117,FSBBBB,leita001,0,0,jordb001 walks. ,jordb001,0,
+lopej001 to 3B. jordb001 to 2B. ,32,6,sandr002,jordb001,lopej001,,49,123,BCCBBB,leita001,0,0,sandr002 walks. ,sandr002,0,
+lopej001 scores. jordb001 scores. sandr002 to 3B. weisw001 to 2B. ,00,6,,weisw001,sandr002,,50,124,X,leita001,0,2,weisw001 reaches on error. ,weisw001,0,
+,22,6,,weisw001,sandr002,,52,6,FSBBFS,whitr002,1,0,burkj001 strikes out. ,burkj001,0,
+,11,6,,weisw001,sandr002,,53,9,FBX,whitr002,1,0,,furcr001,0,F
+,12,6,,,,,54,103,CBSX,burkj001,0,1,alfoe001 homers. ,alfoe001,1,
+,11,6,,,,,55,106,BFX,burkj001,1,0,,piazm001,1,F
+,22,6,,,,,56,111,FBBSX,burkj001,1,0,,ventr001,1,F
+,11,6,,,,,57,114,CBX,burkj001,1,0,zeilt001 grounds out. ,zeilt001,1,G
+,00,7,jonea002,,,,58,10,X,whitr002,0,0,jonea002 singles. ,jonea002,0,
+jonea002 to 2B. ,32,7,jonec004,jonea002,,,59,16,BBCFBB,whitr002,0,0,jonec004 walks. ,jonec004,0,
+,01,7,jonec004,,jonea002,galaa001,60,18,SB,whitr002,0,0,jonea002 steals 3B. ,galaa001,0,
+jonea002 scores. jonec004 scores. ,11,7,,galaa001,,,61,21,SBX,whitr002,0,2,galaa001 doubles. ,galaa001,0,
+galaa001 to 3B. ,10,7,lopej001,,galaa001,,62,23,BX,whitr002,0,0,lopej001 reaches on error. ,lopej001,0,
+galaa001 scores. ,00,7,lopej001,,,,65,1,X,wendt001,1,1,jordb001 hits sacrifice fly. ,jordb001,0,
+,01,7,,,,,66,3,CX,wendt001,2,0,Double Play. ,sandr002,0,
+,01,7,,,,,70,2,CX,remlm001,1,0,paytj001 grounds out. ,paytj001,1,G
+,12,7,,,,,71,8,CFFFBX,remlm001,1,0,bordm001 grounds out. ,bordm001,1,G
+,22,7,,,,,73,13,SCBBX,remlm001,1,0,,tocaj001,1,L
+,22,8,,,,,76,6,CSBFBS,mahop001,1,0,lockk001 strikes out. ,lockk001,0,
+,22,8,,,,,78,11,BBFFS,mahop001,1,0,surhb001 strikes out. ,surhb001,0,
+,11,8,,,,,79,14,FBX,mahop001,1,0,,furcr001,0,F
+,21,8,,,,,81,4,BCBX,ligtk001,1,0,,hamid001,1,F
+,00,8,,,,,82,5,X,ligtk001,1,0,,belld001,1,F
+,02,8,alfoe001,,,,83,8,CSX,ligtk001,0,0,alfoe001 singles. ,alfoe001,1,
+alfoe001 to 2B. ,11,8,piazm001,alfoe001,,,84,11,BFX,ligtk001,0,0,piazm001 singles. ,piazm001,1,
+,32,8,piazm001,alfoe001,,,86,6,BBCFBX,rockj001,1,0,,ventr001,1,F
+,02,9,,,,,87,17,CSS,mahop001,1,0,jonea002 strikes out. ,jonea002,0,
+,11,9,,,,,88,20,BFX,mahop001,1,0,jonec004 grounds out. ,jonec004,0,G
+,20,9,,,,,89,23,BBX,mahop001,1,0,,galaa001,0,F
+,10,9,tramb001,,,,91,8,BX,rockj001,0,0,tramb001 singles. ,tramb001,1,
+tramb001 to 2B. ,12,9,paytj001,tramb001,,,92,14,FFFBFX,rockj001,0,0,paytj001 singles. ,paytj001,1,
+,32,9,paytj001,tramb001,,,93,21,BBCFFBX,rockj001,1,0,,bordm001,1,L
+,02,9,paytj001,tramb001,,,94,24,CSS,rockj001,1,0,tocaj001 strikes out. ,tocaj001,1,
+paytj001 to 2B. tramb001 out. ,32,9,pratt001,paytj001,,,96,31,BCSBBFX,rockj001,1,0,pratt001 reaches on fielder's choice. ,pratt001,1,

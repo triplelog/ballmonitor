@@ -1,0 +1,154 @@
+version,2
+info,visteam,SEA
+info,hometeam,TOR
+info,site,TOR02
+info,date,2000/04/14
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,mckej901
+info,ump1b,danlk901
+info,ump2b,morrd901
+info,ump3b,fleta901
+info,pitches,pitches
+info,temp,72
+info,winddir,tolf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,186
+info,attendance,17306
+info,wp,moyej001
+info,lp,welld001
+info,save,
+start,camem001,"Mike Cameron",0,1,8
+start,belld002,"David Bell",0,2,4
+start,rodra001,"Alex Rodriguez",0,3,6
+start,marte001,"Edgar Martinez",0,4,10
+start,olerj001,"John Olerud",0,5,3
+start,buhnj001,"Jay Buhner",0,6,9
+start,javis001,"Stan Javier",0,7,7
+start,wilsd001,"Dan Wilson",0,8,2
+start,gipsc001,"Charles Gipson",0,9,5
+start,moyej001,"Jamie Moyer",0,0,1
+start,stews002,"Shannon Stewart",1,1,7
+start,bushh001,"Homer Bush",1,2,4
+start,mondr002,"Raul Mondesi",1,3,9
+start,delgc001,"Carlos Delgado",1,4,3
+start,batit001,"Tony Batista",1,5,5
+start,cordm001,"Marty Cordova",1,6,10
+start,cruzj004,"Jose Cruz",1,7,8
+start,gonza001,"Alex S. Gonzalez",1,8,6
+start,casta001,"Alberto Castillo",1,9,2
+start,welld001,"David Wells",1,0,1
+play,1,0,camem001,21,BBCX,9/F9
+play,1,0,belld002,02,FSX,S8
+play,1,0,rodra001,31,BBBCX,S7.1-2
+play,1,0,marte001,22,BCBSX,HR/78.2-H;1-H
+play,1,0,olerj001,32,BCBBFB,W
+play,1,0,buhnj001,12,BCCS,K
+play,1,0,javis001,12,SFBX,S9.1-2
+play,1,0,wilsd001,10,BX,HR/7.2-H;1-H
+play,1,0,gipsc001,12,CBFS,K
+play,1,1,stews002,11,BCX,S7
+play,1,1,bushh001,00,X,S8.1-2
+play,1,1,mondr002,12,CFBX,8/F8
+play,1,1,delgc001,00,X,S/BR.1X2(4);2-3
+play,1,1,batit001,31,BBFBB,W.3-3;1-2
+play,1,1,cordm001,01,CX,64(1)/FO
+play,2,0,camem001,00,,NP
+sub,munrp001,"Peter Munro",1,0,1
+play,2,0,camem001,31,BBBCB,W
+play,2,0,belld002,11,BFX,S9.1-3
+play,2,0,rodra001,11,SBX,D7.3-H;1-3
+play,2,0,marte001,22,CCBBFFX,S8.3-H;2-H
+play,2,0,olerj001,22,BCSBS,K
+play,2,0,buhnj001,00,X,14(1)3/GDP
+play,2,1,cruzj004,22,BSBCX,7/F7D
+play,2,1,gonza001,01,CX,13/G
+play,2,1,casta001,02,CFX,S/78
+play,2,1,stews002,21,BBCX,D7.1-3
+play,2,1,bushh001,02,CSS,K23
+play,3,0,javis001,32,BBCFBX,3/G
+play,3,0,wilsd001,11,BSX,3/G
+play,3,0,gipsc001,02,CFX,S
+play,3,0,camem001,22,CSBBX,54(1)/FO
+play,3,1,mondr002,22,BFBCX,53/G
+play,3,1,delgc001,31,BCBBX,HR/9
+play,3,1,batit001,21,FBBX,53/G
+play,3,1,cordm001,10,BX,53/G
+play,4,0,belld002,30,BBBB,W
+play,4,0,rodra001,22,BBCFFX,46(1)3/GDP
+play,4,0,marte001,00,X,53/G
+play,4,1,cruzj004,01,SX,3/P3
+play,4,1,gonza001,21,BBCX,53/G
+play,4,1,casta001,32,CBBFBX,63/G
+play,5,0,olerj001,32,BCBBCX,31/G
+play,5,0,buhnj001,12,CBFFC,K/C
+play,5,0,javis001,32,SBCBBB,W
+play,5,0,wilsd001,30,BBBB,W.1-2
+play,5,0,gipsc001,02,CFX,43/G
+play,5,1,stews002,32,BBCBFX,S8
+play,5,1,bushh001,12,SFFBX,54(1)/FO
+play,5,1,mondr002,32,FBCFBBFB,W.1-2
+play,5,1,delgc001,22,BCSBX,8/F8.2-3
+play,5,1,batit001,10,BX,D/78.3-H;1-H
+play,5,1,cordm001,10,BX,D7.2-H
+play,5,1,cruzj004,00,X,2/FL
+play,6,0,camem001,00,,NP
+sub,painl001,"Lance Painter",1,0,1
+play,6,0,camem001,00,X,13/G
+play,6,0,belld002,12,CBSX,4/F4
+play,6,0,rodra001,22,CBCFBC,K/C
+play,6,1,gonza001,00,,NP
+sub,abbop001,"Paul Abbott",0,0,1
+play,6,1,gonza001,20,BBX,S7
+play,6,1,casta001,22,CCBBFFX,S7.1-2
+play,6,1,stews002,00,X,7/F7
+play,6,1,bushh001,12,BSSFS,K
+play,6,1,mondr002,11,BSX,S8.2-H;1-2
+play,6,1,delgc001,12,FBSX,S8.2-H;1-2
+play,6,1,batit001,02,CCX,8/F8D
+play,7,0,marte001,22,CCBBX,43/G
+play,7,0,olerj001,32,CCBBFBB,W
+play,7,0,buhnj001,01,SX,FC1.1-3(E4)
+play,7,0,javis001,00,,NP
+sub,ibanr001,"Raul Ibanez",0,6,12
+play,7,0,javis001,11,BCX,FC4.3-H(UR);1-2;B-1
+play,7,0,wilsd001,21,BCBX,53/G.2-3;1-2
+play,7,0,gipsc001,12,SBSX,5/L5
+play,7,1,cordm001,00,,NP
+sub,ibanr001,"Raul Ibanez",0,6,9
+play,7,1,cordm001,21,BBSX,7/F7
+play,7,1,cruzj004,22,BSBCX,9/F9
+play,7,1,gonza001,11,CBX,43/G
+play,8,0,camem001,00,,NP
+sub,quanp001,"Paul Quantrill",1,0,1
+play,8,0,camem001,32,BCBBCX,9/F9
+play,8,0,belld002,00,X,63/G
+play,8,0,rodra001,32,BBFBFFX,S8
+play,8,0,marte001,21,CBBX,4/L4
+play,8,1,casta001,00,X,HR/9
+play,8,1,stews002,11,BFX,8/F8
+play,8,1,bushh001,02,CSX,63/G
+play,8,1,mondr002,11,SBX,2/P2
+play,9,0,olerj001,22,BBCFC,K/C
+play,9,0,ibanr001,00,X,7/F7
+play,9,0,javis001,32,BCCBBFX,S
+play,9,0,wilsd001,11,BCX,D8.1-H;BX3(86)
+play,9,1,delgc001,00,,NP
+sub,sasak001,"Kazuhiro Sasaki",0,0,1
+play,9,1,delgc001,02,CCS,K
+play,9,1,batit001,32,FBCBFFFFBFX,HR/7
+play,9,1,cordm001,21,BSBX,3/FL
+play,9,1,cruzj004,22,BFFBX,HR/8
+play,9,1,gonza001,22,BCBFFS,K
+data,er,moyej001,4
+data,er,abbop001,3
+data,er,sasak001,2
+data,er,welld001,6
+data,er,munrp001,3
+data,er,painl001,0
+data,er,quanp001,1

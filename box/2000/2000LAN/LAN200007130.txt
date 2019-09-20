@@ -1,0 +1,162 @@
+version,2
+info,visteam,ANA
+info,hometeam,LAN
+info,site,LOS03
+info,date,2000/07/13
+info,number,0
+info,starttime,7:10PM
+info,daynight,night
+info,usedh,false
+info,umphome,gibsg901
+info,ump1b,ripps901
+info,ump2b,tscht901
+info,ump3b,meric901
+info,pitches,pitches
+info,temp,72
+info,winddir,ltor
+info,windspeed,14
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,210
+info,attendance,35456
+info,wp,osuna002
+info,lp,levia001
+info,save,
+start,erstd001,"Darin Erstad",0,1,7
+start,gil-b001,"Benji Gil",0,2,6
+start,vaugm001,"Mo Vaughn",0,3,3
+start,salmt001,"Tim Salmon",0,4,9
+start,andeg001,"Garret Anderson",0,5,8
+start,glaut001,"Troy Glaus",0,6,5
+start,molib001,"Ben Molina",0,7,2
+start,kenna001,"Adam Kennedy",0,8,4
+start,hillk001,"Ken Hill",0,9,1
+start,santf001,"F.P. Santangelo",1,1,4
+start,lodup001,"Paul LoDuca",1,2,2
+start,shefg001,"Gary Sheffield",1,3,7
+start,grees001,"Shawn Green",1,4,9
+start,karre001,"Eric Karros",1,5,3
+start,hollt001,"Todd Hollandsworth",1,6,8
+start,belta001,"Adrian Beltre",1,7,5
+start,elstk001,"Kevin Elster",1,8,6
+start,perec001,"Carlos Perez",1,9,1
+play,1,0,erstd001,02,CSX,4/L4
+play,1,0,gil-b001,32,CSBBBFX,S
+play,1,0,vaugm001,00,X,36(1)3/GDP
+play,1,1,santf001,32,CBFBBFX,9/F9
+play,1,1,lodup001,00,X,8/F8D
+play,1,1,shefg001,31,BBBCB,W
+play,1,1,grees001,12,BSSS,K
+play,2,0,salmt001,00,X,53/G
+play,2,0,andeg001,11,CBX,S9
+play,2,0,glaut001,00,X,9/P9S
+play,2,0,molib001,22,CSBBX,3/FL
+play,2,1,karre001,22,CCBFBS,K23
+play,2,1,hollt001,22,CFBBS,K
+play,2,1,belta001,01,CX,S8
+play,2,1,elstk001,00,B,SB2
+play,2,1,elstk001,32,BBCFFFBX,7/L7
+play,3,0,kenna001,02,CFX,3/G
+play,3,0,hillk001,12,BFCX,S8
+play,3,0,erstd001,01,SX,5/FL
+play,3,0,gil-b001,02,CCX,8/L8
+play,3,1,perec001,10,BX,63/G
+play,3,1,santf001,12,CFFBX,43/G
+play,3,1,lodup001,11,CBX,S7
+play,3,1,shefg001,21,BBSX,HR/7.1-H
+play,3,1,grees001,32,BBFBSS,K
+play,4,0,vaugm001,22,BBCFFFS,K
+play,4,0,salmt001,22,CSBBC,K/C
+play,4,0,andeg001,00,X,7/F7
+play,4,1,karre001,32,FSBBBS,K
+play,4,1,hollt001,02,CCX,43/G
+play,4,1,belta001,12,CBFX,D/78
+play,4,1,elstk001,32,CBBCFBS,K
+play,5,0,glaut001,12,CCFFFBFX,D8/8D
+play,5,0,molib001,12,FBFFX,S8.2-H
+play,5,0,kenna001,22,BCFBX,8/F8
+play,5,0,hillk001,01,LX,14/SH.1-2
+play,5,0,erstd001,00,X,7/F7
+play,5,1,perec001,00,X,5/FL
+play,5,1,santf001,32,CLFBBFBB,W
+play,5,1,lodup001,00,B,WP.1-2
+play,5,1,lodup001,32,BBSBCB,W
+play,5,1,shefg001,22,CBBFFFFX,8/F89D
+play,5,1,grees001,12,CFBC,K/C
+play,6,0,gil-b001,22,BCFFBX,S8
+play,6,0,vaugm001,00,X,8/F8
+play,6,0,salmt001,00,1,PO1(13)
+play,6,0,salmt001,20,1BBX,43/G
+play,6,1,karre001,11,CBX,9/F9
+play,6,1,hollt001,30,BBBB,W
+play,6,1,belta001,32,BCBBFFC,K+SB2/C
+play,6,1,elstk001,30,IIII,IW
+play,6,1,perec001,21,CBBX,8/P89S
+play,7,0,andeg001,02,CCX,S9
+play,7,0,glaut001,00,X,HR/7.1-H
+play,7,0,molib001,00,X,9/F9
+play,7,0,kenna001,11,CBX,7/F78
+play,7,0,hillk001,00,,NP
+sub,cleme001,"Edgard Clemente",0,9,11
+play,7,0,cleme001,32,BFBFFBX,S7
+play,7,0,erstd001,00,1,POCS2(136)
+play,7,1,santf001,00,,NP
+sub,hases001,"Shigetoshi Hasegawa",0,9,1
+play,7,1,santf001,21,BCBX,2/FL
+play,7,1,lodup001,00,X,E3/G
+play,7,1,shefg001,32,BBBCFB,W.1-2
+play,7,1,grees001,22,SFBBFX,S8.2-H(UR);1-3
+play,7,1,karre001,30,BBBB,W.1-2
+play,7,1,hollt001,02,SFFFS,K
+play,7,1,belta001,32,BBBCCFFFX,53/G
+play,8,0,erstd001,00,,NP
+sub,adamt001,"Terry Adams",1,9,1
+play,8,0,erstd001,21,BCBX,53/G
+play,8,0,gil-b001,00,,NP
+sub,stock001,"Kevin Stocker",0,2,11
+play,8,0,stock001,22,BCBSS,K
+play,8,0,vaugm001,22,BFFBS,K
+play,8,1,elstk001,00,,NP
+sub,stock001,"Kevin Stocker",0,2,6
+play,8,1,elstk001,12,FBFS,K
+play,8,1,adamt001,00,,NP
+sub,hansd001,"Dave Hansen",1,9,11
+play,8,1,hansd001,22,CBCBS,K
+play,8,1,santf001,02,FCX,63/G
+play,9,0,salmt001,00,,NP
+sub,fettm001,"Mike Fetters",1,9,1
+play,9,0,salmt001,22,CBBFFS,K
+play,9,0,andeg001,00,X,3/G
+play,9,0,glaut001,22,CBBSS,K
+play,9,1,lodup001,00,,NP
+sub,petkm001,"Mark Petkovsek",0,9,1
+play,9,1,lodup001,22,CBBCX,D9
+play,9,1,shefg001,00,X,43/G
+play,9,1,grees001,30,IIII,IW
+play,9,1,karre001,10,BX,54(1)3/GDP
+play,10,0,molib001,00,,NP
+sub,leyrj001,"Jim Leyritz",1,9,3
+play,10,0,molib001,00,,NP
+sub,osuna002,"Antonio Osuna",1,5,1
+play,10,0,molib001,10,BX,8/F8D
+play,10,0,kenna001,00,X,7/P78S
+play,10,0,petkm001,00,,NP
+sub,spies001,"Scott Spiezio",0,9,11
+play,10,0,spies001,10,BX,8/F8
+play,10,1,hollt001,00,,NP
+sub,levia001,"Al Levine",0,9,1
+play,10,1,hollt001,10,BX,31/G
+play,10,1,belta001,12,CBSFX,T9/9D
+com,"$left fielder Erstad positioned at 2B bag"
+play,10,1,elstk001,11,BCX,73/G46
+com,"$Erstad back in LF"
+play,10,1,leyrj001,11,SBX,S9.3-H
+data,er,hillk001,2
+data,er,hases001,0
+data,er,petkm001,0
+data,er,levia001,1
+data,er,perec001,3
+data,er,adamt001,0
+data,er,fettm001,0
+data,er,osuna002,0

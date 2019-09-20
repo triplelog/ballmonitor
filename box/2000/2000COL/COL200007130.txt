@@ -1,0 +1,163 @@
+version,2
+info,visteam,CIN
+info,hometeam,COL
+info,site,DEN02
+info,date,2000/07/13
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,carlm901
+info,ump1b,demud901
+info,ump2b,eddid901
+info,ump3b,relic901
+info,pitches,pitches
+info,temp,88
+info,winddir,tolf
+info,windspeed,4
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,164
+info,attendance,48735
+info,wp,desse001
+info,lp,astap001
+info,save,
+start,stync001,"Chris Stynes",0,1,5
+start,larkb001,"Barry Larkin",0,2,6
+start,grifk002,"Ken Griffey",0,3,8
+start,bichd001,"Dante Bichette",0,4,9
+start,cases001,"Sean Casey",0,5,3
+start,yound001,"Dmitri Young",0,6,7
+start,taube001,"Eddie Taubensee",0,7,2
+start,reesp001,"Pokey Reese",0,8,4
+start,desse001,"Elmer Dessens",0,9,1
+start,goodt001,"Tom Goodwin",1,1,8
+start,lansm001,"Mike Lansing",1,2,4
+start,walkl001,"Larry Walker",1,3,7
+start,cirij001,"Jeff Cirillo",1,4,5
+start,heltt001,"Todd Helton",1,5,3
+start,hammj001,"Jeffrey Hammonds",1,6,9
+start,maynb001,"Brent Mayne",1,7,2
+start,peren001,"Neifi Perez",1,8,6
+start,astap001,"Pedro Astacio",1,9,1
+play,1,0,stync001,11,CBX,S8
+play,1,0,larkb001,02,CFFX,53/G.1-2
+play,1,0,grifk002,31,BCBBX,HR/7.2-H
+play,1,0,bichd001,10,BX,13/G
+play,1,0,cases001,12,CFBX,3/G
+play,1,1,goodt001,32,BBCBCX,63/G
+play,1,1,lansm001,10,BX,S8
+play,1,1,walkl001,30,BBBX,6(1)3/GDP
+play,2,0,yound001,22,BCSBX,13/G
+play,2,0,taube001,32,CBSBBS,K
+play,2,0,reesp001,20,BBX,63/G
+play,2,1,cirij001,30,BBBB,W
+play,2,1,heltt001,11,BFX,46(1)3/GDP
+play,2,1,hammj001,00,X,43/G
+play,3,0,desse001,10,BX,S9
+play,3,0,stync001,21,CBBX,S8.1-2
+play,3,0,larkb001,12,CSBFFB,WP.2-3;1-2
+play,3,0,larkb001,32,CSBFFBBX,53/G
+play,3,0,grifk002,30,IIII,IW
+play,3,0,bichd001,01,SX,S9.3-H;2-3;1-2
+play,3,0,cases001,02,CFS,K
+play,3,0,yound001,00,X,T8/8D.3-H;2-H;1-H
+play,3,0,taube001,31,BSBBB,W
+play,3,0,reesp001,00,X,46(1)/FO
+play,3,1,maynb001,01,CX,63/G
+play,3,1,peren001,32,BSBBFX,63/G
+play,3,1,astap001,12,SBFC,K/C
+play,4,0,desse001,11,BCX,13/G
+play,4,0,stync001,12,CBFC,K/C
+play,4,0,larkb001,20,BBX,43/G
+play,4,1,goodt001,32,BBBCCX,1/G
+play,4,1,lansm001,00,X,3/FL
+play,4,1,walkl001,12,FFBX,63/G
+play,5,0,grifk002,10,BH,HP
+play,5,0,bichd001,00,X,7/F7
+play,5,0,cases001,10,BX,HR/8.1-H
+play,5,0,yound001,00,X,7/F7S
+play,5,0,taube001,00,X,43/G
+play,5,1,cirij001,31,BBBCX,8/F8
+play,5,1,heltt001,12,FBFX,D7
+play,5,1,hammj001,00,X,8/F8.2-3
+play,5,1,maynb001,30,BBBB,W
+play,5,1,peren001,10,BX,9/F9
+play,6,0,reesp001,32,BBBCFFFS,K
+play,6,0,desse001,12,BCCS,K
+play,6,0,stync001,32,BBBCCB,W
+play,6,0,larkb001,00,X,HR/7.1-H
+play,6,0,grifk002,22,BFBCS,K
+play,6,1,astap001,00,,NP
+sub,echea001,"Angel Echevarria",1,9,11
+play,6,1,echea001,00,X,53/G
+play,6,1,goodt001,11,BCX,S9
+play,6,1,lansm001,01,CX,64(1)/FO
+play,6,1,walkl001,00,X,53/G
+play,7,0,bichd001,00,,NP
+sub,belis001,"Stan Belinda",1,9,1
+play,7,0,bichd001,32,BSBBFS,K
+play,7,0,cases001,01,SX,S8
+play,7,0,yound001,00,X,7/F7D
+play,7,0,taube001,11,BSX,9/F9
+play,7,1,cirij001,00,,NP
+sub,tuckm001,"Michael Tucker",0,4,9
+play,7,1,cirij001,11,CBX,S7
+play,7,1,heltt001,00,B,WP.1-2
+play,7,1,heltt001,30,BBBB,W
+play,7,1,hammj001,00,X,S9.2-H;1-3
+play,7,1,maynb001,01,FX,S/78.3-H;1-3
+play,7,1,peren001,10,BX,7/SF.3-H
+play,7,1,belis001,00,,NP
+sub,bragd001,"Darren Bragg",1,9,11
+play,7,1,bragd001,02,CFX,3/G.1-2
+play,7,1,goodt001,10,BX,43/G
+play,8,0,reesp001,00,,NP
+sub,tavaj001,"Julian Tavarez",1,9,1
+play,8,0,reesp001,11,BSX,53/G
+play,8,0,desse001,00,X,31/G
+play,8,0,stync001,21,BBFX,S
+play,8,0,larkb001,11,CBX,T9.1-H
+play,8,0,grifk002,32,FBBBFX,HR/8.3-H
+play,8,0,tuckm001,11,BCX,7/F7
+play,8,1,lansm001,00,,NP
+sub,tuckm001,"Michael Tucker",0,4,8
+play,8,1,lansm001,00,,NP
+sub,ochoa001,"Alex Ochoa",0,3,9
+play,8,1,lansm001,00,,NP
+sub,castj004,"Juan Castro",0,2,6
+play,8,1,lansm001,12,BFFX,43/G
+play,8,1,walkl001,20,BBH,HP
+com,"ej,bellb001,M,demud901,Protesting Intentional HBP"
+com,"Rockies manager Buddy Bell ejected by crew chief Dana Demuth"
+play,8,1,cirij001,10,BX,S.1-2
+play,8,1,heltt001,00,X,D9.2-H;1-H
+play,8,1,hammj001,00,X,S9.2-3
+play,8,1,maynb001,00,,NP
+sub,reyed001,"Dennys Reyes",0,9,1
+play,8,1,maynb001,01,FX,46(1)/FO.3-H
+play,8,1,peren001,22,BBFFFS,K
+play,9,0,cases001,00,,NP
+sub,jimej001,"Jose Jimenez",1,9,1
+play,9,0,cases001,12,CCBS,K
+play,9,0,yound001,01,FX,53/G
+play,9,0,taube001,20,BBH,HP
+com,"ej,jimej001,P,carlm901,Intentional HBP"
+com,"Jose Jimenez ejected by HP umpire Mark Carlson"
+play,9,0,reesp001,00,,NP
+sub,myerm001,"Mike Myers",1,9,1
+play,9,0,reesp001,22,BCFBX,HR/78.1-H
+play,9,0,reyed001,22,FBCBS,K
+play,9,1,myerm001,00,,NP
+sub,huntb002,"Brian L. Hunter",1,9,11
+play,9,1,huntb002,11,CBX,63/G
+play,9,1,goodt001,12,BSFX,8/F89D
+play,9,1,lansm001,10,BX,53/G
+data,er,desse001,6
+data,er,reyed001,0
+data,er,astap001,10
+data,er,belis001,0
+data,er,tavaj001,3
+data,er,jimej001,1
+data,er,myerm001,1

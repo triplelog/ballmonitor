@@ -1,0 +1,135 @@
+version,2
+info,visteam,SLN
+info,hometeam,MIL
+info,site,MIL05
+info,date,2000/08/11
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,rapue901
+info,ump1b,cuzzp901
+info,ump2b,schrp901
+info,ump3b,mcclt901
+info,pitches,pitches
+info,temp,72
+info,winddir,fromlf
+info,windspeed,7
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,175
+info,attendance,25890
+info,wp,damij001
+info,lp,kiled001
+info,save,
+start,vinaf001,"Fernando Vina",0,1,4
+start,rente001,"Edgar Renteria",0,2,6
+start,edmoj001,"Jim Edmonds",0,3,8
+start,davie001,"Eric Davis",0,4,9
+start,clarw001,"Will Clark",0,5,3
+start,tatif001,"Fernando Tatis",0,6,5
+start,lankr001,"Ray Lankford",0,7,7
+start,mathm001,"Mike Matheny",0,8,2
+start,kiled001,"Darryl Kile",0,9,1
+start,bellr002,"Ron Belliard",1,1,4
+start,lopel002,"Luis Lopez",1,2,6
+start,jenkg001,"Geoff Jenkins",1,3,7
+start,sexsr001,"Richie Sexson",1,4,3
+start,burnj001,"Jeromy Burnitz",1,5,9
+start,houst001,"Tyler Houston",1,6,5
+start,grism001,"Marquis Grissom",1,7,8
+start,blanh001,"Henry Blanco",1,8,2
+start,damij001,"Jeff D'Amico",1,9,1
+play,1,0,vinaf001,00,X,3/G
+play,1,0,rente001,01,CX,3/P3
+play,1,0,edmoj001,02,CFX,3/L3
+play,1,1,bellr002,10,BX,7/L7
+play,1,1,lopel002,10,BX,8/F8
+play,1,1,jenkg001,00,X,S9
+play,1,1,sexsr001,21,BBFX,HR/7.1-H
+play,1,1,burnj001,11,BSX,43/G
+play,2,0,davie001,22,BCFBX,63/G
+play,2,0,clarw001,10,BX,3/L3
+play,2,0,tatif001,10,BX,9/F9
+play,2,1,houst001,12,CFBS,K
+play,2,1,grism001,20,BBX,3/P3
+play,2,1,blanh001,32,BBFFBX,7/F7
+play,3,0,lankr001,32,BBCCBFFB,W
+play,3,0,mathm001,00,X,S9.1-3
+play,3,0,kiled001,22,BBCLC,K/C
+play,3,0,vinaf001,12,CFFFFBX,S9.3-H;1-2
+play,3,0,rente001,01,CX,54(1)/FO.2-3
+play,3,0,edmoj001,00,X,8/F8
+play,3,1,damij001,22,CSBBC,K/C
+play,3,1,bellr002,12,SFBX,8/F8
+play,3,1,lopel002,12,BFFC,K/C
+play,4,0,davie001,22,CBBFS,K
+play,4,0,clarw001,01,CX,D9/9D
+play,4,0,tatif001,22,CFBBS,K
+play,4,0,lankr001,32,FBBFBFX,6/P6
+play,4,1,jenkg001,02,FSS,K
+play,4,1,sexsr001,12,CBSC,K/C
+play,4,1,burnj001,01,CX,43/G
+play,5,0,mathm001,12,CSBX,63/G
+play,5,0,kiled001,12,BFCFS,K
+play,5,0,vinaf001,11,CBX,7/F7
+play,5,1,houst001,32,CFBBFBX,7/F7D
+play,5,1,grism001,01,CX,D/78
+play,5,1,blanh001,30,BBBB,W
+play,5,1,damij001,00,X,14/SH.2-3;1-2
+play,5,1,bellr002,32,CSFBBBB,W
+play,5,1,lopel002,22,CBBSX,3/G
+play,6,0,rente001,22,CBFBS,K
+play,6,0,edmoj001,21,CBBX,43/G
+play,6,0,davie001,22,FFBBFX,D9/9S
+play,6,0,clarw001,10,BX,S7.2-H
+play,6,0,tatif001,31,BBFBX,8/F8
+play,6,1,jenkg001,12,SBFX,S9
+play,6,1,sexsr001,01,SX,S.1-3
+play,6,1,burnj001,02,CFX,4/P4
+play,6,1,houst001,12,BCFS,K
+play,6,1,grism001,00,X,S7.3-H;1-2
+play,6,1,blanh001,22,CCBBX,S7.2-H;1-2
+play,6,1,damij001,12,CCBC,K/C
+play,7,0,lankr001,12,BCFX,9/F9
+play,7,0,mathm001,01,CX,S7
+play,7,0,kiled001,00,,NP
+sub,peree001,"Eduardo Perez",0,9,11
+play,7,0,peree001,00,X,54(1)3/GDP
+play,7,1,bellr002,00,,NP
+sub,jamem001,"Mike James",0,9,1
+play,7,1,bellr002,32,BBCFBFFB,W
+play,7,1,lopel002,21,BCBC,SB2
+play,7,1,lopel002,32,BCBCBFFX,5/FL
+play,7,1,jenkg001,00,,NP
+sub,chrij002,"Jason Christiansen",0,9,1
+play,7,1,jenkg001,02,SFFC,K/C
+play,7,1,sexsr001,30,IIII,IW
+play,7,1,burnj001,12,FBSH,HP.2-3;1-2
+play,7,1,houst001,11,BSX,D/89D.3-H;2-H;1-3
+play,7,1,grism001,00,,NP
+sub,benea002,"Alan Benes",0,9,1
+play,7,1,grism001,31,BBBCB,W
+play,7,1,blanh001,12,CFBX,4/P4
+play,8,0,vinaf001,01,CX,43/G
+play,8,0,rente001,30,BBBB,W
+play,8,0,edmoj001,02,CCX,9/F9D
+play,8,0,davie001,12,SFBS,K
+play,8,1,damij001,00,,NP
+sub,echea001,"Angel Echevarria",1,9,11
+play,8,1,echea001,02,FCX,6/L6
+play,8,1,bellr002,22,CBFBX,9/F9
+play,8,1,lopel002,10,BX,43/G
+play,9,0,clarw001,00,,NP
+sub,kingr001,"Ray King",1,9,1
+play,9,0,clarw001,12,BSFX,D9
+play,9,0,tatif001,20,BBX,9/F9D.2-3
+play,9,0,lankr001,01,SX,3/P3
+play,9,0,mathm001,02,CSS,K
+data,er,kiled001,4
+data,er,jamem001,1
+data,er,chrij002,1
+data,er,benea002,0
+data,er,damij001,2
+data,er,kingr001,0

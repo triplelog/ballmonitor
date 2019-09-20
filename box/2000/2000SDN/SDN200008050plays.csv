@@ -1,0 +1,75 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,10,1,husoj001,,,,0,2,BX,willw001,0,0,husoj001 singles. ,husoj001,0,
+,20,1,husoj001,,,,1,5,BBX,willw001,1,0,,gutir001,0,F
+,10,1,husoj001,,,,2,7,BX,willw001,1,0,,sosas001,0,P
+,21,1,husoj001,,,,3,11,CBBX,willw001,1,0,,gracm001,0,L
+,31,1,owene001,,,,4,5,BBBCB,tapak001,0,0,owene001 walks. ,owene001,1,
+,02,1,owene001,,,,5,9,FCFS,tapak001,1,0,darrm001 strikes out. ,darrm001,1,
+,22,1,owene001,,,,6,14,BFBSS,tapak001,1,0,klesr001 strikes out. ,klesr001,1,
+,01,1,owene001,,,,7,16,CX,tapak001,1,0,,nevip001,1,F
+,02,2,,,,,8,14,CSX,willw001,1,0,bufod001 grounds out. ,bufod001,0,G
+,11,2,,,,,9,17,BCX,willw001,1,0,mattg002 grounds out. ,mattg002,0,G
+,01,2,,,,,10,19,CX,willw001,1,0,,giraj001,0,F
+,12,2,,,,,11,22,FFBFFS,tapak001,1,0,boonb002 strikes out. ,boonb002,1,
+,01,2,,,,,12,24,CX,tapak001,1,0,,river002,1,P
+,10,2,,,,,13,26,BX,tapak001,1,0,gonzw001 grounds out. ,gonzw001,1,G
+,02,3,,,,,14,24,CLFFC,willw001,1,0,meyec001 strikes out. ,meyec001,0,
+,21,3,,tapak001,,,15,28,BCBX,willw001,0,0,tapak001 doubles. ,tapak001,0,
+tapak001 to 3B. ,02,3,husoj001,,tapak001,,16,31,CFX,willw001,0,0,husoj001 singles. ,husoj001,0,
+tapak001 scores. husoj001 to 3B. ,11,3,gutir001,,husoj001,,17,34,CBX,willw001,0,1,gutir001 singles. ,gutir001,0,
+husoj001 scores. gutir001 scores. ,01,3,,,,,18,36,CX,willw001,0,3,sosas001 homers. ,sosas001,0,
+,01,3,,,,,19,38,CX,willw001,1,0,gracm001 grounds out. ,gracm001,0,G
+,22,3,,bufod001,,,20,44,CFBBFX,willw001,0,0,bufod001 doubles. ,bufod001,0,
+,00,3,,bufod001,,,21,45,X,willw001,1,0,,mattg002,0,F
+,01,3,relad001,,,,22,28,CX,tapak001,0,0,relad001 singles. ,relad001,1,
+,12,3,relad001,,,,23,32,CBLS,tapak001,1,0,willw001 strikes out. ,willw001,1,
+,01,3,,,,,24,34,CX,tapak001,2,0,Double Play. ,owene001,1,
+,12,4,,,,,25,49,BCSX,willw001,1,0,giraj001 grounds out. ,giraj001,0,G
+,10,4,,,,,26,51,BX,willw001,1,0,,meyec001,0,L
+,11,4,,,,,27,54,CBX,willw001,1,0,,tapak001,0,P
+,21,4,,,,,28,38,BFBX,tapak001,1,0,,darrm001,1,F
+,00,4,,,,,29,39,X,tapak001,1,0,,klesr001,1,F
+,12,4,,nevip001,,,30,43,FSBX,tapak001,0,0,nevip001 doubles. ,nevip001,1,
+,32,4,,nevip001,,,31,50,BBBSSFX,tapak001,1,0,,boonb002,1,
+,12,5,husoj001,,,,32,58,BCFX,willw001,0,0,husoj001 singles. ,husoj001,0,
+,12,5,,,,,33,62,BCFX,willw001,2,0,Double Play. ,gutir001,0,
+,32,5,,sosas001,,,34,68,CBBBSX,willw001,0,0,sosas001 doubles. ,sosas001,0,
+,30,5,gracm001,sosas001,,,35,72,IIII,willw001,0,0,gracm001 intentionally walks. ,gracm001,0,
+,32,5,gracm001,sosas001,,,36,79,CFBBBFX,willw001,1,0,bufod001 grounds out. ,bufod001,0,G
+,22,5,river002,,,,37,56,SSBFBX,tapak001,0,0,river002 singles. ,river002,1,
+river002 to 3B. ,02,5,gonzw001,,river002,,38,59,CSX,tapak001,0,0,gonzw001 singles. ,gonzw001,1,
+river002 scores. gonzw001 to 2B. ,12,5,relad001,gonzw001,,,39,63,CFBX,tapak001,0,1,relad001 singles. ,relad001,1,
+relad001 to 2B. gonzw001 out. ,02,5,willw001,relad001,,,40,66,CSX,tapak001,1,0,willw001 reaches on fielder's choice. ,willw001,1,
+,11,5,willw001,relad001,,,41,69,CBX,tapak001,1,0,,owene001,1,F
+,00,5,willw001,relad001,,,42,70,X,tapak001,1,0,,darrm001,1,F
+,22,6,,,,,43,84,BCFBX,willw001,1,0,,mattg002,0,F
+,00,6,,,,,44,85,X,willw001,1,0,giraj001 grounds out. ,giraj001,0,G
+,01,6,,,,,45,87,CX,willw001,1,0,meyec001 grounds out. ,meyec001,0,G
+,12,6,,,,,47,74,FFBC,tapak001,1,0,klesr001 strikes out. ,klesr001,1,
+,02,6,nevip001,,,,48,77,SSX,tapak001,0,0,nevip001 singles. ,nevip001,1,
+,22,6,nevip001,,,,49,87,BCSFBFFFFS,tapak001,1,0,boonb002 strikes out. ,boonb002,1,
+,32,6,nevip001,,,,50,93,BCFBBX,tapak001,1,0,,river002,1,F
+,10,7,,,,,51,89,BX,willw001,1,0,,tapak001,0,F
+,22,7,,,,,52,94,CBBFX,willw001,1,0,,husoj001,0,F
+,22,7,,,,,53,100,CBBFFX,willw001,1,0,gutir001 grounds out. ,gutir001,0,G
+,10,7,,,,,54,95,BX,tapak001,1,0,gonzw001 grounds out. ,gonzw001,1,G
+,10,7,,,,,55,97,BX,tapak001,1,0,relad001 grounds out. ,relad001,1,G
+,21,7,,,,,56,101,CBBX,tapak001,1,0,,willw001,1,F
+,10,8,,,,,57,102,BX,willw001,1,0,sosas001 grounds out. ,sosas001,0,G
+,11,8,,,,,58,105,CBX,willw001,1,0,,gracm001,0,F
+,22,8,,,,,59,111,FFFBBX,willw001,1,0,bufod001 grounds out. ,bufod001,0,G
+,21,8,,,,,61,4,CBBX,worrt002,1,0,,owene001,1,F
+,22,8,,,,,62,9,CBBCC,worrt002,1,0,darrm001 strikes out. ,darrm001,1,
+,21,8,,,,,63,13,BFBX,worrt002,0,1,klesr001 homers. ,klesr001,1,
+,20,8,,,,,64,16,BBX,worrt002,0,1,nevip001 homers. ,nevip001,1,
+,01,8,,,,,65,18,CX,worrt002,1,0,,boonb002,1,F
+,30,9,mattg002,,,,66,115,BBBB,willw001,0,0,mattg002 walks. ,mattg002,0,
+mattg002 to 2B. ,02,9,giraj001,mattg002,,,67,118,CFH,willw001,0,0,giraj001 hit by pitch. ,giraj001,0,
+mattg002 to 3B. youne001 to 2B. ,11,9,,youne001,mattg002,,70,3,CBX,walld002,1,0,greew001 grounds out. ,greew001,0,G
+mattg002 scores. youne001 scores. ,01,9,reedj001,,,,72,5,CX,walld002,0,2,reedj001 singles. ,reedj001,0,
+reedj001 to 2B. ,32,9,husoj001,reedj001,,,73,11,BCBBFX,walld002,0,0,husoj001 singles. ,husoj001,0,
+,22,9,husoj001,reedj001,,,74,16,CCBBC,walld002,1,0,gutir001 strikes out. ,gutir001,0,
+,22,9,husoj001,reedj001,,,75,21,BSBSC,walld002,1,0,sosas001 strikes out. ,sosas001,0,
+,22,9,,,,,80,5,BCFBX,aguir001,1,0,river002 grounds out. ,river002,1,G
+,31,9,,,,,81,10,FBBBX,aguir001,1,0,,gonzw001,1,
+,22,9,,,,,82,15,CFBBX,aguir001,1,0,relad001 grounds out. ,relad001,1,G

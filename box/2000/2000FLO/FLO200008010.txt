@@ -1,0 +1,140 @@
+version,2
+info,visteam,HOU
+info,hometeam,FLO
+info,site,MIA01
+info,date,2000/08/01
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,eddid901
+info,ump1b,relic901
+info,ump2b,carlm901
+info,ump3b,demud901
+info,pitches,pitches
+info,temp,82
+info,winddir,fromrf
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,drizzle
+info,sky,cloudy
+info,timeofgame,148
+info,attendance,9568
+info,wp,elars001
+info,lp,smitc001
+info,save,doteo001
+start,lugoj001,"Julio Lugo",0,1,6
+start,biggc001,"Craig Biggio",0,2,4
+start,bagwj001,"Jeff Bagwell",0,3,3
+start,berkl001,"Lance Berkman",0,4,9
+start,aloum001,"Moises Alou",0,5,7
+start,hidar001,"Richard Hidalgo",0,6,8
+start,trubc001,"Chris Truby",0,7,5
+start,chavr001,"Raul Chavez",0,8,2
+start,elars001,"Scott Elarton",0,9,1
+start,castl001,"Luis Castillo",1,1,4
+start,kotsm001,"Mark Kotsay",1,2,9
+start,smitm004,"Mark Smith",1,3,7
+start,wilsp002,"Preston Wilson",1,4,8
+start,lowem001,"Mike Lowell",1,5,5
+start,lee-d002,"Derrek Lee",1,6,3
+start,bergd002,"Dave Berg",1,7,6
+start,castr002,"Ramon Castro",1,8,2
+start,smitc001,"Chuck Smith",1,9,1
+play,1,0,lugoj001,01,CX,63/G
+play,1,0,biggc001,22,CBSFFBS,K
+play,1,0,bagwj001,21,FBBX,53/G
+play,1,1,castl001,21,BCBX,13/G
+play,1,1,kotsm001,11,SBX,7/F7
+play,1,1,smitm004,02,CCFX,S7
+play,1,1,wilsp002,02,FSS,K
+play,2,0,berkl001,22,CSBBX,43/G
+play,2,0,aloum001,10,BX,8/F8D
+play,2,0,hidar001,20,BBX,6/L6
+play,2,1,lowem001,10,BX,3/FL
+play,2,1,lee-d002,12,FFBS,K
+play,2,1,bergd002,00,X,8/F8
+play,3,0,trubc001,02,CSX,9/F9
+play,3,0,chavr001,02,FCC,K/C
+play,3,0,elars001,02,CFC,K/C
+play,3,1,castr002,11,FBX,53/G
+play,3,1,smitc001,12,LLBS,K
+play,3,1,castl001,31,BBCBB,W
+play,3,1,kotsm001,21,CBBX,63/G
+play,4,0,lugoj001,22,CBBFS,K
+play,4,0,biggc001,22,CSBBX,53/G
+play,4,0,bagwj001,20,BBX,8/F8
+play,4,1,smitm004,01,SX,53/G
+play,4,1,wilsp002,00,X,63/G
+play,4,1,lowem001,02,CSFC,K/C
+play,5,0,berkl001,12,BFCFX,3/G#
+play,5,0,aloum001,31,FBBBB,W
+play,5,0,hidar001,01,CX,64(1)3/GDP
+play,5,1,lee-d002,00,X,8/F8
+play,5,1,bergd002,00,X,S/78
+play,5,1,castr002,11,BFX,3/FL
+play,5,1,smitc001,12,BSLS,K
+play,6,0,trubc001,02,CSS,K
+play,6,0,chavr001,21,BCBX,S9
+play,6,0,elars001,32,BCBSBC,K/C
+play,6,0,lugoj001,32,BSBCBB,W.1-2
+play,6,0,biggc001,00,X,E2/TH.2-3;1-2
+play,6,0,bagwj001,32,BCFBFBB,W.3-H(UR);2-3;1-2
+play,6,0,berkl001,31,BBBCB,W.3-H(UR);2-3;1-2
+play,6,0,aloum001,01,FX,S7.3-H(UR);2-H(UR);1X3(7545)
+play,6,1,castl001,02,FFFFFX,13/G
+play,6,1,kotsm001,12,BFFFX,43/G
+play,6,1,smitm004,02,SSS,K
+play,7,0,hidar001,02,CSC,K/C
+play,7,0,trubc001,02,SFFFX,5/P5
+play,7,0,chavr001,10,BX,13/G
+play,7,1,wilsp002,00,X,S7
+play,7,1,lowem001,01,CX,54(1)/FO
+play,7,1,lee-d002,00,,NP
+sub,spieb001,"Bill Spiers",0,2,4
+com,"$Wilson hit Biggio at 2B, torn ACL & MCL, out for season"
+play,7,1,lee-d002,22,BFCBC,K/C
+play,7,1,bergd002,31,BBBCB,W.1-2
+play,7,1,castr002,11,BCX,8/F8
+play,8,0,elars001,00,,NP
+sub,aybam001,"Manny Aybar",1,9,1
+play,8,0,elars001,00,X,53/G
+play,8,0,lugoj001,02,CSX,63/G
+play,8,0,spieb001,12,CFBFS,K
+play,8,1,aybam001,00,,NP
+sub,fox-a001,"Andy Fox",1,9,11
+play,8,1,fox-a001,10,BX,5/FL
+play,8,1,castl001,32,BCBBCFFX,S7
+play,8,1,kotsm001,21,CBBX,64(1)3/GDP
+play,9,0,bagwj001,00,,NP
+sub,darev001,"Vic Darensbourg",1,9,1
+play,9,0,bagwj001,00,F,FLE2#
+com,"need FLE2 somewhere this inning"
+play,9,0,bagwj001,22,FBBFX,8/F8
+play,9,0,berkl001,00,X,4/P4
+play,9,0,aloum001,00,X,E8/F.B-3
+play,9,0,hidar001,00,X,63/G
+play,9,1,smitm004,00,,NP
+sub,hidar001,"Richard Hidalgo",0,6,9
+play,9,1,smitm004,00,,NP
+sub,barkg001,"Glen Barker",0,4,8
+play,9,1,smitm004,12,SBFH,HP
+play,9,1,wilsp002,02,CCX,S9.1-2
+play,9,1,lowem001,12,CFBFFX,4/P4
+play,9,1,lee-d002,00,X,T8.2-H;1-H
+play,9,1,bergd002,00,,NP
+sub,doteo001,"Octavio Dotel",0,9,1
+play,9,1,bergd002,31,BBBCX,8/SF.3-H
+play,9,1,castr002,00,,NP
+sub,millk005,"Kevin Millar",1,8,11
+play,9,1,millk005,31,CBBBB,W
+play,9,1,darev001,00,,NP
+sub,lopem001,"Mendy Lopez",1,9,11
+play,9,1,lopem001,00,,NP
+sub,sancj001,"Jesus Sanchez",1,8,12
+play,9,1,lopem001,02,CSFS,K
+data,er,elars001,3
+data,er,doteo001,0
+data,er,smitc001,0
+data,er,aybam001,0
+data,er,darev001,0

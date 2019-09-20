@@ -1,0 +1,140 @@
+version,2
+info,visteam,NYN
+info,hometeam,PHI
+info,site,PHI12
+info,date,2000/09/24
+info,number,0
+info,starttime,1:35PM
+info,daynight,day
+info,usedh,false
+info,umphome,gibsg901
+info,ump1b,ripps901
+info,ump2b,tscht901
+info,ump3b,meric901
+info,pitches,pitches
+info,temp,75
+info,winddir,tocf
+info,windspeed,7
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,146
+info,attendance,31391
+info,wp,ruscg001
+info,lp,chenb001
+info,save,benia001
+start,peret004,"Timoniel Perez",0,1,7
+start,paytj001,"Jay Payton",0,2,8
+start,alfoe001,"Edgardo Alfonzo",0,3,4
+start,piazm001,"Mike Piazza",0,4,2
+start,zeilt001,"Todd Zeile",0,5,3
+start,tramb001,"Bubba Trammell",0,6,9
+start,abbok002,"Kurt Abbott",0,7,6
+start,mcewj001,"Joe McEwing",0,8,5
+start,ruscg001,"Glendon Rusch",0,9,1
+start,rollj001,"Jimmy Rollins",1,1,6
+start,gland001,"Doug Glanville",1,2,8
+start,abreb001,"Bobby Abreu",1,3,9
+start,burrp001,"Pat Burrell",1,4,7
+start,lee-t002,"Travis Lee",1,5,3
+start,jordk001,"Kevin Jordan",1,6,5
+start,andem003,"Marlon Anderson",1,7,4
+start,print001,"Tom Prince",1,8,2
+start,chenb001,"Bruce Chen",1,9,1
+play,1,0,peret004,00,X,53/G
+play,1,0,paytj001,12,BCFX,7/F7
+play,1,0,alfoe001,02,CSX,8/F8
+play,1,1,rollj001,32,BBBCFFX,53/G
+play,1,1,gland001,12,CBFS,K
+play,1,1,abreb001,22,CCBBX,S
+play,1,1,burrp001,00,X,S7.1-2
+play,1,1,lee-t002,22,CBCBFB,SB3
+play,1,1,lee-t002,32,CBCBFBC,K/C
+play,2,0,piazm001,02,CSS,K
+play,2,0,zeilt001,31,CBBBB,W
+play,2,0,tramb001,21,FBBX,8/F8
+play,2,0,abbok002,11,FBX,6/P6
+play,2,1,jordk001,10,BX,53/G
+play,2,1,andem003,21,CBBX,8/F8
+play,2,1,print001,20,BBX,7/F7S
+play,3,0,mcewj001,31,BBBCX,5/FL
+play,3,0,ruscg001,22,BFFBC,K/C
+play,3,0,peret004,11,CBX,HR8/IPHR
+com,"IPHR"
+play,3,0,paytj001,10,BX,13/G
+play,3,1,chenb001,12,CBCS,K
+play,3,1,rollj001,22,BCBSX,S
+play,3,1,gland001,11,FBX,1(B)3(1)/LDP
+play,4,0,alfoe001,11,SBX,9/F9
+play,4,0,piazm001,30,BBBB,W
+play,4,0,zeilt001,00,X,HR/89.1-H
+play,4,0,tramb001,32,BFBBFFFS,K
+play,4,0,abbok002,11,BCX,8/F8
+play,4,1,abreb001,21,BBSX,7/F7
+play,4,1,burrp001,01,CX,S9
+play,4,1,lee-t002,22,BCBSX,4/P4
+play,4,1,jordk001,21,BBFX,46(1)/FO
+play,5,0,mcewj001,22,CBFFBC,K/C
+play,5,0,ruscg001,12,BFFS,K
+play,5,0,peret004,00,X,1/P1
+play,5,1,andem003,32,CBBFFBFX,53/G
+play,5,1,print001,22,CBFBX,8/F8
+play,5,1,chenb001,02,FCC,K/C
+play,6,0,paytj001,01,CX,53/G
+play,6,0,alfoe001,00,X,D7/7S
+play,6,0,piazm001,00,X,43/G.2-3
+play,6,0,zeilt001,31,CBBBB,W
+play,6,0,tramb001,10,BX,4/P4
+play,6,1,rollj001,11,CBX,8/F8
+play,6,1,gland001,12,CCBX,53/G
+play,6,1,abreb001,22,BCSBFS,K
+play,7,0,abbok002,10,BX,6/P6
+play,7,0,mcewj001,32,BBCBFX,7/F7
+play,7,0,ruscg001,21,BBCX,7/F7
+play,7,1,burrp001,00,X,D7/7D
+play,7,1,lee-t002,10,BX,9/F9.2-3
+play,7,1,jordk001,22,CBFBX,43/G.3-H
+play,7,1,andem003,22,BSFBS,K23
+play,8,0,peret004,02,CCX,43/G
+play,8,0,paytj001,32,BFBBFFFX,9/F9
+play,8,0,alfoe001,12,BCCX,8/F8
+play,8,1,print001,00,,NP
+sub,sefck001,"Kevin Sefcik",1,8,11
+play,8,1,sefck001,22,BCCBX,9/F9
+play,8,1,chenb001,00,,NP
+sub,ariaa001,"Alex Arias",1,9,11
+play,8,1,ariaa001,02,CCFC,K/C
+play,8,1,rollj001,20,BBX,53/G
+play,9,0,piazm001,00,,NP
+sub,benng001,"Gary Bennett",1,9,2
+play,9,0,piazm001,00,,NP
+sub,branj001,"Jeff Brantley",1,8,1
+play,9,0,piazm001,21,CBBX,D/78
+play,9,0,zeilt001,32,BBCBFFFX,9/F9
+play,9,0,tramb001,00,,NP
+sub,harrl001,"Lenny Harris",0,6,11
+play,9,0,harrl001,10,BX,4/P4
+play,9,0,abbok002,00,,NP
+sub,franm001,"Matt Franco",0,7,11
+play,9,0,franm001,22,FBBCS,K
+play,9,1,gland001,00,,NP
+sub,belld001,"Derek Bell",0,6,9
+play,9,1,gland001,00,,NP
+sub,velaj001,"Jorge Velandia",0,7,6
+play,9,1,gland001,00,,NP
+sub,benia001,"Armando Benitez",0,9,1
+play,9,1,gland001,32,BCSBBFX,S
+play,9,1,abreb001,01,CB,DI.1-2
+play,9,1,abreb001,32,CBFBBX,7/F7
+play,9,1,burrp001,32,BCBCBB,W
+play,9,1,lee-t002,00,,NP
+sub,taylr001,"Reggie Taylor",1,4,12
+play,9,1,lee-t002,22,CSBBX,6/P6
+play,9,1,jordk001,01,CX,S8/8S.2-H;1-3;B-2(TH)
+play,9,1,andem003,00,,NP
+sub,newhd001,"David Newhan",1,6,12
+play,9,1,andem003,12,BSFS,K
+data,er,ruscg001,1
+data,er,benia001,1
+data,er,chenb001,3
+data,er,branj001,0

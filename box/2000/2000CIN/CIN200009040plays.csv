@@ -1,0 +1,78 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,01,1,,peret004,,,0,2,CX,desse001,0,0,peret004 doubles. ,peret004,0,
+,22,1,,peret004,,,1,7,FBBFS,desse001,1,0,bordm001 strikes out. ,bordm001,0,
+,11,1,,peret004,,,2,10,BCX,desse001,1,0,alfoe001 grounds out. ,alfoe001,0,G
+,00,1,,peret004,,,3,11,X,desse001,1,0,,piazm001,0,F
+,01,1,,,,,4,2,CX,leita001,1,0,,reesp001,1,L
+,00,1,stync001,,,,5,3,H,leita001,0,0,stync001 hit by pitch. ,stync001,1,
+stync001 scores. ,22,1,,,,,6,8,BBSFX,leita001,0,2,grifk002 homers. ,grifk002,1,
+,00,1,,,,,7,9,X,leita001,1,0,yound001 grounds out. ,yound001,1,G
+,01,1,,,,,8,11,SX,leita001,1,0,ochoa001 grounds out. ,ochoa001,1,G
+,22,2,,,,,9,16,BBCFC,desse001,1,0,ventr001 strikes out. ,ventr001,0,
+,30,2,zeilt001,,,,10,20,BBBB,desse001,0,0,zeilt001 walks. ,zeilt001,0,
+zeilt001 out. ,32,2,paytj001,,,,11,27,BBFBFFX,desse001,1,0,paytj001 reaches on fielder's choice. ,paytj001,0,
+paytj001 to 2B. ,12,2,hamid001,paytj001,,,12,31,CCBX,desse001,0,0,hamid001 reaches on error. ,hamid001,0,G
+,02,2,hamid001,paytj001,,,13,34,CFC,desse001,1,0,leita001 strikes out. ,leita001,0,
+,01,2,,santb001,,,14,13,CX,leita001,0,0,santb001 doubles. ,santb001,1,
+santb001 to 3B. ,00,2,,,santb001,,15,14,X,leita001,1,0,Sacrifice bunt by huntb002.,huntb002,1,
+santb001 out. sextc001 to 1B. ,00,2,sextc001,,,,16,15,X,leita001,1,0,sextc001 hits into a fielder's choice. ,sextc001,1,
+,12,2,sextc001,,,,17,19,FFBC,leita001,1,0,desse001 strikes out. ,desse001,1,
+,00,3,,,,,18,35,X,desse001,1,0,,peret004,0,P
+,32,3,,,,,19,41,BBCFBX,desse001,1,0,bordm001 grounds out. ,bordm001,0,G
+,21,3,,,,,20,45,FBBX,desse001,1,0,,alfoe001,0,F
+,22,3,reesp001,,,,21,25,BBCCFX,leita001,0,0,reesp001 singles. ,reesp001,1,
+,12,3,,reesp001,,,22,29,FFBC,leita001,1,0,stync001 strikes out. reesp001 steals 2B. ,stync001,1,
+reesp001 to 3B. ,21,3,,,reesp001,,23,33,BBCX,leita001,1,0,grifk002 grounds out. ,grifk002,1,G
+reesp001 scores. ,00,3,yound001,,,,24,34,X,leita001,0,1,yound001 singles. ,yound001,1,
+,11,3,yound001,,,,25,37,BFX,leita001,1,0,ochoa001 grounds out. ,ochoa001,1,G
+,22,4,piazm001,,,,26,50,CBBFX,desse001,0,0,piazm001 singles. ,piazm001,0,
+,01,4,piazm001,,,,27,52,FX,desse001,1,0,,ventr001,0,F
+,22,4,piazm001,,,,28,58,CBCFBC,desse001,1,0,zeilt001 strikes out. ,zeilt001,0,
+,00,4,piazm001,,,,29,59,X,desse001,1,0,,paytj001,0,L
+,22,4,,,,,30,42,FSBBX,leita001,1,0,,santb001,1,F
+,32,4,,,,,31,52,CCBBFBFFFX,leita001,1,0,huntb002 grounds out. ,huntb002,1,G
+,22,4,,,,,32,57,BCFBX,leita001,1,0,sextc001 grounds out. ,sextc001,1,G
+,11,5,,hamid001,,,33,62,BCX,desse001,0,0,hamid001 doubles. ,hamid001,0,
+hamid001 to 3B. ,10,5,,,hamid001,,34,64,BX,desse001,1,0,Sacrifice bunt by leita001.,leita001,0,
+hamid001 scores. ,12,5,,,,,35,70,FFFFBX,desse001,1,1,peret004 hits sacrifice fly. ,peret004,0,
+,10,5,,,,,36,72,BX,desse001,1,0,,bordm001,0,P
+,12,5,,,,,37,61,FCBX,leita001,1,0,desse001 grounds out. ,desse001,1,G
+,22,5,,,,,38,68,CBFBFFX,leita001,1,0,reesp001 grounds out. ,reesp001,1,G
+,30,5,stync001,,,,39,72,BBBB,leita001,0,0,stync001 walks. ,stync001,1,
+stync001 to 2B. ,31,5,grifk002,stync001,,,40,77,BFBBB,leita001,0,0,grifk002 walks. ,grifk002,1,
+,01,5,grifk002,stync001,,,41,79,FX,leita001,1,0,,yound001,1,L
+,31,6,alfoe001,,,,42,77,BBBCB,desse001,0,0,alfoe001 walks. ,alfoe001,0,
+alfoe001 to 2B. ,32,6,piazm001,alfoe001,,,43,84,FFBBFBB,desse001,0,0,piazm001 walks. ,piazm001,0,
+,00,6,piazm001,alfoe001,,,44,85,X,desse001,1,0,,ventr001,0,F
+,22,6,piazm001,alfoe001,,,45,91,CFBFBX,desse001,1,0,,zeilt001,0,F
+,12,6,piazm001,alfoe001,,,46,95,CBFX,desse001,1,0,paytj001 grounds out. ,paytj001,0,G
+,22,6,,,,,47,85,FBFBFX,leita001,1,0,,ochoa001,1,P
+,30,6,santb001,,,,48,89,BBBB,leita001,0,0,santb001 walks. ,santb001,1,
+,31,6,,santb001,,huntb002,49,94,BBBCC,leita001,0,0,santb001 steals 2B. ,huntb002,1,
+,32,6,,santb001,,,50,100,BBBCCC,leita001,1,0,huntb002 strikes out. ,huntb002,1,
+santb001 scores. ,00,6,,sextc001,,,51,101,X,leita001,0,1,sextc001 doubles. ,sextc001,1,
+,02,6,,sextc001,,,52,105,FFFX,leita001,1,0,desse001 grounds out. ,desse001,1,G
+,11,7,,,,,53,98,BCX,desse001,1,0,hamid001 grounds out. ,hamid001,0,G
+,01,7,,,,,55,100,FX,desse001,1,0,,franm001,0,P
+,32,7,,peret004,,,56,106,CBBBCX,desse001,0,0,peret004 doubles. ,peret004,0,
+,31,7,,peret004,,,58,5,BFBBX,sulls001,1,0,,bordm001,0,F
+,12,7,,,,,60,5,CCBFS,camme001,1,0,reesp001 strikes out. ,reesp001,1,
+,32,7,stync001,,,,61,12,BBCFBFB,camme001,0,0,stync001 walks. ,stync001,1,
+,00,7,,stync001,,grifk002,63,1,B,rodrr004,0,0,stync001 steals 2B. ,grifk002,1,
+stync001 to 3B. ,31,7,,,stync001,,64,6,BBBCX,rodrr004,1,0,grifk002 grounds out. ,grifk002,1,G
+,11,7,,,stync001,,65,9,BCX,rodrr004,1,0,,yound001,1,F
+,21,8,,,,,66,9,BCBX,sulls001,1,0,,alfoe001,0,F
+,20,8,,,,,67,12,BBX,sulls001,0,1,piazm001 homers. ,piazm001,0,
+,11,8,,,,,68,15,CBX,sulls001,1,0,,ventr001,0,F
+,11,8,,,,,69,18,BCX,sulls001,1,0,zeilt001 grounds out. ,zeilt001,0,G
+,22,8,,,,,70,15,BCBFFX,rodrr004,1,0,,ochoa001,1,F
+,01,8,santb001,,,,71,17,FX,rodrr004,0,0,santb001 singles. ,santb001,1,
+santb001 to 3B. ,32,8,huntb002,,santb001,,72,24,BBBCFFX,rodrr004,0,0,huntb002 singles. ,huntb002,1,
+santb001 scores. huntb002 to 2B. ,00,8,,huntb002,,,74,1,X,mahop001,1,1,Sacrifice bunt by sextc001.,sextc001,1,
+,31,8,tuckm001,huntb002,,,76,6,BBBCB,mahop001,0,0,tuckm001 walks. ,tuckm001,1,
+huntb002 scores. tuckm001 to 3B. ,12,8,reesp001,,tuckm001,,77,11,FBSFX,mahop001,0,1,reesp001 singles. ,reesp001,1,
+,00,8,reesp001,,tuckm001,,78,12,X,mahop001,1,0,,stync001,1,F
+,00,9,,,,,80,1,X,gravd001,1,0,paytj001 grounds out. ,paytj001,0,G
+,11,9,,,,,81,4,CBX,gravd001,1,0,,hamid001,0,F
+,00,9,harrl001,,,,83,5,X,gravd001,0,0,harrl001 singles. ,harrl001,0,
+harrl001 out. ,01,9,peret004,,,,84,7,CX,gravd001,1,0,peret004 reaches on fielder's choice. ,peret004,0,

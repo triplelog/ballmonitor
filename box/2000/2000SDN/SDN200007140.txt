@@ -1,0 +1,148 @@
+version,2
+info,visteam,SEA
+info,hometeam,SDN
+info,site,SAN01
+info,date,2000/07/14
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,rapue901
+info,ump1b,wolfj901
+info,ump2b,roe-r901
+info,ump3b,rungb901
+info,pitches,pitches
+info,temp,72
+info,winddir,torf
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,178
+info,attendance,26498
+info,wp,moyej001
+info,lp,meadb001
+info,save,sasak001
+start,javis001,"Stan Javier",0,1,7
+start,guilc001,"Carlos Guillen",0,2,6
+start,camem001,"Mike Cameron",0,3,8
+start,olerj001,"John Olerud",0,4,3
+start,buhnj001,"Jay Buhner",0,5,9
+start,belld002,"David Bell",0,6,5
+start,olivj001,"Joe Oliver",0,7,2
+start,mclem001,"Mark McLemore",0,8,4
+start,moyej001,"Jamie Moyer",0,9,1
+start,owene001,"Eric Owens",1,1,9
+start,river002,"Ruben Rivera",1,2,8
+start,klesr001,"Ryan Klesko",1,3,3
+start,nevip001,"Phil Nevin",1,4,5
+start,boonb002,"Bret Boone",1,5,4
+start,gonzw001,"Wiki Gonzalez",1,6,2
+start,jackd003,"Damian Jackson",1,7,7
+start,nichk001,"Kevin Nicholson",1,8,6
+start,meadb001,"Brian Meadows",1,9,1
+play,1,0,javis001,11,BCX,S
+play,1,0,guilc001,01,CX,3/G.1-2
+play,1,0,camem001,22,CSBBX,4/P4
+play,1,0,olerj001,11,CBX,D9.2-H
+play,1,0,buhnj001,02,FFX,63/G
+play,1,1,owene001,10,BX,43/G
+play,1,1,river002,22,BBFSX,4/P4
+play,1,1,klesr001,11,BCX,3/L3
+play,2,0,belld002,12,FCBS,K
+play,2,0,olivj001,10,BX,63/G
+play,2,0,mclem001,20,BBX,43/G
+play,2,1,nevip001,00,X,S9
+play,2,1,boonb002,12,BCFX,S9.1-3
+play,2,1,gonzw001,02,CFX,E6/G.3-H;1-2
+play,2,1,jackd003,12,LBLS,K
+play,2,1,nichk001,12,CSBS,K
+play,2,1,meadb001,10,BX,64(1)/FO.2-3
+play,3,0,moyej001,02,FFFX,3/G
+play,3,0,javis001,32,BFBCBFX,43/G
+play,3,0,guilc001,10,BX,9/F9D
+play,3,1,owene001,22,BCFBX,63/G
+play,3,1,river002,22,BFBSS,K
+play,3,1,klesr001,20,BBX,S8
+play,3,1,nevip001,32,CSBBFBB,W.1-2
+play,3,1,boonb002,22,SBBFFX,6/P6
+play,4,0,camem001,01,CX,S7
+play,4,0,olerj001,11,BCX,5/FL
+play,4,0,buhnj001,11,BSX,S7/7S.1-2
+play,4,0,belld002,01,CX,16(1)3/GDP
+play,4,1,gonzw001,12,SFBS,K
+play,4,1,jackd003,22,BBFCS,K
+play,4,1,nichk001,00,X,13/G
+play,5,0,olivj001,10,BX,63/G
+play,5,0,mclem001,12,CFBC,K/C
+play,5,0,moyej001,12,CBCS,K
+play,5,1,meadb001,10,BX,53/G
+play,5,1,owene001,10,BX,T9
+play,5,1,river002,20,BBX,S.3-H
+play,5,1,klesr001,10,BX,43/G.1-2
+play,5,1,nevip001,30,BBBB,W
+play,5,1,boonb002,32,BBCBCX,53/G
+play,6,0,javis001,12,CFBFX,S7
+play,6,0,guilc001,12,SBCC,K/C
+play,6,0,camem001,00,X,S7.1-2
+play,6,0,olerj001,10,BX,HR/9.2-H;1-H
+play,6,0,buhnj001,12,BCFS,K
+play,6,0,belld002,12,FBSFFFX,3/FL
+play,6,1,gonzw001,20,BBX,8/F8
+play,6,1,jackd003,21,BCBX,S7
+play,6,1,nichk001,22,CBFBB,WP.1-2
+play,6,1,nichk001,32,CBFBBX,4/P4
+play,6,1,meadb001,00,,NP
+sub,alled001,"Dusty Allen",1,9,11
+play,6,1,alled001,00,B,SB3
+play,6,1,alled001,32,BFBBCS,K
+play,7,0,olivj001,00,,NP
+sub,almac001,"Carlos Almanzar",1,9,1
+play,7,0,olivj001,30,BBBB,W
+play,7,0,mclem001,32,CBLBBX,S9/9S.1-3
+play,7,0,moyej001,00,,NP
+sub,ibanr001,"Raul Ibanez",0,9,11
+play,7,0,ibanr001,00,X,54(1)/FO
+play,7,0,javis001,21,BFBX,4/L4
+play,7,0,guilc001,01,CX,64(1)/FO
+play,7,1,owene001,00,,NP
+sub,panij001,"Jose Paniagua",0,9,1
+play,7,1,owene001,10,BX,8/F8
+play,7,1,river002,21,BFBX,5/P5
+play,7,1,klesr001,22,CBBFC,K/C
+play,8,0,camem001,00,,NP
+sub,monts001,"Steve L. Montgomery",1,9,1
+play,8,0,camem001,11,CBX,HR/7
+play,8,0,olerj001,22,BBCFFFFX,HR/9
+play,8,0,buhnj001,22,CBBSFX,D7
+play,8,0,belld002,00,X,13/SH.2-3
+play,8,0,olivj001,00,X,S7.3-H
+play,8,0,mclem001,00,,NP
+sub,erdot001,"Todd Erdos",1,9,1
+play,8,0,mclem001,32,BCFBFBC,K/C
+play,8,0,panij001,12,SSBS,K
+play,8,1,nevip001,02,CFFFX,D9/9D
+play,8,1,boonb002,11,CBX,HR/7.2-H
+play,8,1,gonzw001,22,CFFBBC,K/C
+play,8,1,jackd003,00,X,6/P6
+play,8,1,nichk001,22,CFFBFBC,K/C
+play,9,0,javis001,11,BCX,7/F7
+play,9,0,guilc001,22,CCBFBX,53/G
+play,9,0,camem001,02,SCX,4/P4
+play,9,1,erdot001,00,,NP
+sub,sasak001,"Kazuhiro Sasaki",0,9,1
+play,9,1,erdot001,00,,NP
+sub,magad001,"Dave Magadan",1,9,11
+play,9,1,magad001,11,CBX,HR/9
+play,9,1,owene001,01,FX,23/BG
+play,9,1,river002,00,,NP
+sub,marta001,"Al Martin",1,2,11
+play,9,1,marta001,10,BX,3/G
+play,9,1,klesr001,11,CBX,9/L9
+data,er,moyej001,2
+data,er,panij001,2
+data,er,sasak001,1
+data,er,meadb001,4
+data,er,almac001,0
+data,er,monts001,3
+data,er,erdot001,0

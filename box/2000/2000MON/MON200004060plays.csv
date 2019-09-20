@@ -1,0 +1,81 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,00,1,,,,,0,1,X,pavac001,1,0,whitd001 grounds out. ,whitd001,0,G
+,12,1,,,,,1,6,CCBFS,pavac001,1,0,grudm001 strikes out. ,grudm001,0,
+,11,1,,shefg001,,,2,9,BSX,pavac001,0,0,shefg001 doubles. ,shefg001,0,
+,00,1,,shefg001,,,3,10,X,pavac001,1,0,,grees001,0,F
+,10,1,,,,,4,2,BX,perec001,1,0,,bergp001,1,F
+,02,1,barrm003,,,,5,6,CFFH,perec001,0,0,barrm003 hit by pitch. ,barrm003,1,
+,02,1,barrm003,,,,6,9,CFX,perec001,1,0,,whitr001,1,F
+,10,1,barrm003,,,,7,11,BX,perec001,1,0,,guerv001,1,P
+,11,2,,,,,8,13,CBX,pavac001,1,0,,karre001,0,F
+,10,2,,,,,9,15,BX,pavac001,1,0,hundt001 grounds out. ,hundt001,0,G
+,11,2,belta001,,,,10,18,BCX,pavac001,0,0,belta001 singles. ,belta001,0,
+,11,2,,,,elstk001,11,21,CBS,pavac001,1,0,belta001 caught stealing. ,elstk001,0,
+,01,2,vidrj001,,,,12,13,FX,perec001,0,0,vidrj001 singles. ,vidrj001,1,
+,00,2,vidrj001,,,,13,14,X,perec001,1,0,,stevl001,1,
+,21,2,,vidrj001,,widgc001,14,18,BSBB,perec001,0,0,vidrj001 steals 2B. ,widgc001,1,
+,31,2,widgc001,vidrj001,,,15,23,BSBBB,perec001,0,0,widgc001 walks. ,widgc001,1,
+vidrj001 scores. widgc001 scores. ,22,2,,,,,16,28,CSBBX,perec001,0,3,cabro001 homers. ,cabro001,1,
+,11,2,pavac001,,,,17,31,BCX,perec001,0,0,pavac001 singles. ,pavac001,1,
+pavac001 to 2B. ,31,2,bergp001,pavac001,,,18,36,SBBBB,perec001,0,0,bergp001 walks. ,bergp001,1,
+,00,2,bergp001,pavac001,,,19,37,X,perec001,1,0,,barrm003,1,F
+pavac001 scores. bergp001 scores. ,00,2,,whitr001,,,20,38,X,perec001,0,2,whitr001 doubles. ,whitr001,1,
+,01,2,,whitr001,,,21,40,FX,perec001,1,0,,guerv001,1,F
+,21,3,,elstk001,,,22,25,BCBX,pavac001,0,0,elstk001 doubles. ,elstk001,0,
+elstk001 to 3B. ,00,3,,,elstk001,,23,26,X,pavac001,1,0,Sacrifice bunt by perec001.,perec001,0,
+elstk001 scores. ,10,3,whitd001,,,,24,28,BX,pavac001,0,1,whitd001 singles. ,whitd001,0,
+,01,3,,,,,25,30,CX,pavac001,2,0,Double Play. ,grudm001,0,
+,11,3,vidrj001,,,,26,43,CBX,perec001,0,0,vidrj001 singles. ,vidrj001,1,
+,00,3,vidrj001,,,,27,44,X,perec001,1,0,,stevl001,1,F
+,10,3,vidrj001,,,,28,46,BX,perec001,1,0,,widgc001,1,F
+,00,3,vidrj001,,,,29,47,X,perec001,1,0,,cabro001,1,F
+,30,4,shefg001,,,,30,34,BBBB,pavac001,0,0,shefg001 walks. ,shefg001,0,
+shefg001 to 3B. ,01,4,,grees001,shefg001,,31,36,CX,pavac001,0,0,grees001 doubles. ,grees001,0,
+,12,4,,grees001,shefg001,,32,40,SFBS,pavac001,1,0,karre001 strikes out. ,karre001,0,
+,01,4,hundt001,grees001,shefg001,,33,42,FH,pavac001,0,0,hundt001 hit by pitch. ,hundt001,0,
+,22,4,,grees001,shefg001,,34,49,BSBSFFX,pavac001,2,0,Double Play. ,belta001,0,
+,10,4,,,,,35,49,BX,perec001,1,0,,pavac001,1,F
+,02,4,,,,,36,52,CFS,perec001,1,0,bergp001 strikes out. ,bergp001,1,
+,00,4,,,,,37,53,X,perec001,1,0,barrm003 grounds out. ,barrm003,1,G
+,11,5,,,,,38,52,BSX,pavac001,1,0,elstk001 grounds out. ,elstk001,0,G
+,21,5,,,,,39,56,SBBX,pavac001,1,0,perec001 grounds out. ,perec001,0,G
+,00,5,,,,,40,57,X,pavac001,1,0,,whitd001,0,F
+,22,5,,,,,41,58,FBCBS,perec001,1,0,whitr001 strikes out. ,whitr001,1,
+,00,5,guerv001,,,,42,59,X,perec001,0,0,guerv001 singles. ,guerv001,1,
+,10,5,,guerv001,,vidrj001,43,61,BB,perec001,0,0,guerv001 steals 2B. ,vidrj001,1,
+guerv001 to 3B. ,21,5,vidrj001,,guerv001,,44,65,BBCX,perec001,0,0,vidrj001 reaches on error. ,vidrj001,1,G
+,02,5,vidrj001,,guerv001,,45,70,SSFFS,perec001,1,0,stevl001 strikes out. ,stevl001,1,
+guerv001 scores. vidrj001 scores. widgc001 scores. ,20,5,,,,,46,73,BBX,perec001,0,3,widgc001 homers. ,widgc001,1,
+,12,5,,cabro001,,,48,6,FBCFFX,milla001,0,0,cabro001 doubles. ,cabro001,1,
+,02,5,,cabro001,,,49,9,SSX,milla001,1,0,pavac001 grounds out. ,pavac001,1,G
+,32,6,,,,,50,65,BFBCFFBX,pavac001,1,0,grudm001 grounds out. ,grudm001,0,G
+,10,6,,,,,51,67,BX,pavac001,1,0,shefg001 grounds out. ,shefg001,0,G
+grees001 to 2B. ,02,6,,grees001,,,52,70,CSX,pavac001,0,0,grees001 reaches on error. ,grees001,0,
+,01,6,,grees001,,,53,72,SX,pavac001,1,0,,karre001,0,F
+,21,6,,,,,54,13,BCBX,milla001,1,0,bergp001 grounds out. ,bergp001,1,G
+,01,6,,barrm003,,,55,15,CX,milla001,0,0,barrm003 doubles. ,barrm003,1,
+barrm003 to 3B. ,00,6,,,barrm003,,56,16,X,milla001,1,0,whitr001 grounds out. ,whitr001,1,G
+,32,6,guerv001,,barrm003,,57,22,BFBFBB,milla001,0,0,guerv001 walks. ,guerv001,1,
+,00,6,guerv001,,barrm003,,58,23,X,milla001,1,0,vidrj001 grounds out. ,vidrj001,1,G
+,10,7,,,,,59,74,BX,pavac001,1,0,,hundt001,0,F
+,12,7,,,,,60,78,BCCX,pavac001,1,0,belta001 grounds out. ,belta001,0,G
+,22,7,,,,,61,83,BCSBS,pavac001,1,0,elstk001 strikes out. ,elstk001,0,
+,10,7,,,,,64,2,BX,masao001,1,0,,stevl001,1,F
+,02,7,,widgc001,,,65,5,CCX,masao001,0,0,widgc001 doubles. ,widgc001,1,
+widgc001 scores. cabro001 out. ,10,7,,,,,66,7,BX,masao001,1,1,cabro001 singles. ,cabro001,1,
+,11,7,pavac001,,,,67,10,FBX,masao001,0,0,pavac001 singles. ,pavac001,1,
+,12,7,pavac001,,,,68,14,SBFC,masao001,1,0,bergp001 strikes out. ,bergp001,1,
+,22,8,,,,,69,89,BBCCFC,pavac001,1,0,hansd001 strikes out. ,hansd001,0,
+,22,8,,,,,70,95,BCBSFX,pavac001,1,0,whitd001 grounds out. ,whitd001,0,G
+,12,8,,,,,71,102,CFFFBFX,pavac001,1,0,grudm001 grounds out. ,grudm001,0,G
+,31,8,,,,,74,19,BBBCX,masao001,1,0,barrm003 grounds out. ,barrm003,1,G
+,20,8,whitr001,,,,75,22,BBX,masao001,0,0,whitr001 singles. ,whitr001,1,
+jonet004 scores. ,01,8,,,,,77,24,SX,masao001,0,2,guerv001 homers. ,guerv001,1,
+,22,8,,,,,78,30,BFBCFX,masao001,1,0,vidrj001 grounds out. ,vidrj001,1,G
+,12,8,,,,,79,34,CSBS,masao001,1,0,stevl001 strikes out. ,stevl001,1,
+,22,9,hollt001,,,,83,5,BCBFX,telfa001,0,0,hollt001 singles. ,hollt001,0,
+hollt001 to 2B. ,12,9,grees001,hollt001,,,84,10,FBFFX,telfa001,0,0,grees001 reaches on error. ,grees001,0,
+hollt001 to 3B. grees001 to 2B. ,12,9,karre001,grees001,hollt001,,85,14,FFBH,telfa001,0,0,karre001 hit by pitch. ,karre001,0,
+hollt001 scores. grees001 to 3B. ,22,9,karre001,,grees001,,86,19,CFBBX,telfa001,1,1,hundt001 hits sacrifice fly. ,hundt001,0,
+grees001 scores. karre001 out. ,22,9,vizcj001,,,,88,24,BBFFX,telfa001,1,1,vizcj001 reaches on fielder's choice. ,vizcj001,0,
+,02,9,vizcj001,,,,89,27,SCS,telfa001,1,0,elstk001 strikes out. ,elstk001,0,

@@ -1,0 +1,152 @@
+version,2
+info,visteam,ATL
+info,hometeam,HOU
+info,site,HOU03
+info,date,2000/05/27
+info,number,0
+info,starttime,12:26PM
+info,daynight,day
+info,usedh,false
+info,umphome,fostm901
+info,ump1b,kulpr901
+info,ump2b,herna901
+info,ump3b,timmt901
+info,pitches,pitches
+info,temp,72
+info,winddir,ltor
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,195
+info,attendance,42632
+info,wp,burkj001
+info,lp,reyns001
+info,save,ligtk001
+start,veraq001,"Quilvio Veras",0,1,4
+start,jonea002,"Andruw Jones",0,2,8
+start,jonec004,"Chipper Jones",0,3,5
+start,joynw001,"Wally Joyner",0,4,3
+start,jordb001,"Brian Jordan",0,5,9
+start,lopej001,"Javy Lopez",0,6,2
+start,sandr002,"Reggie Sanders",0,7,7
+start,furcr001,"Rafael Furcal",0,8,6
+start,burkj001,"John Burkett",0,9,1
+start,biggc001,"Craig Biggio",1,1,4
+start,spieb001,"Bill Spiers",1,2,6
+start,bagwj001,"Jeff Bagwell",1,3,3
+start,camik001,"Ken Caminiti",1,4,5
+start,aloum001,"Moises Alou",1,5,7
+start,hidar001,"Richard Hidalgo",1,6,8
+start,berkl001,"Lance Berkman",1,7,9
+start,euset001,"Tony Eusebio",1,8,2
+start,reyns001,"Shane Reynolds",1,9,1
+play,1,0,veraq001,12,BCFX,D/78
+play,1,0,jonea002,00,X,43/G.2-3
+play,1,0,jonec004,22,CSBBX,7/SF.3-H
+play,1,0,joynw001,11,FBX,31/G
+play,1,1,biggc001,00,X,9/F9
+play,1,1,spieb001,31,CBBBX,S/78
+play,1,1,bagwj001,22,CCBBX,D7/7D.1-3
+play,1,1,camik001,12,BFSFS,K
+play,1,1,aloum001,32,BBSFBB,W
+play,1,1,hidar001,22,BBCCC,K/C
+play,2,0,jordb001,00,X,63/G
+play,2,0,lopej001,31,BBBCX,53/G
+play,2,0,sandr002,10,BX,S8
+play,2,0,furcr001,00,B,SB2
+play,2,0,furcr001,11,BSX,3/G
+play,2,1,berkl001,21,BBCX,43/G
+play,2,1,euset001,11,CBX,63/G
+play,2,1,reyns001,00,X,S7
+play,2,1,biggc001,02,CFFX,4(1)/FO/G
+play,3,0,burkj001,12,CFBC,K/C
+play,3,0,veraq001,00,X,S5/BG5.B-2(E5/TH1)
+play,3,0,jonea002,01,FX,HR/7.2-H
+play,3,0,jonec004,10,BX,S
+play,3,0,joynw001,30,BBBX,9/F9
+play,3,0,jordb001,10,BX,8/F8
+play,3,1,spieb001,32,CFBBBFB,W
+play,3,1,bagwj001,01,SX,S7/7S.1-2
+play,3,1,camik001,12,BCCX,7/F7
+play,3,1,aloum001,32,BBCFBFB,W.2-3;1-2
+play,3,1,hidar001,10,BX,S7.3-H;2-3;1-2
+play,3,1,berkl001,00,X,46(1)/FO.3-H;2-3
+play,3,1,euset001,30,BBBB,W.1-2
+play,3,1,reyns001,12,FCBS,K
+play,4,0,lopej001,12,CSBFX,53/G
+play,4,0,sandr002,02,FFS,K
+play,4,0,furcr001,12,CBCC,K/C
+play,4,1,biggc001,11,CBX,43/G
+play,4,1,spieb001,10,BX,S9
+play,4,1,bagwj001,12,BFFX,64(1)3/GDP
+play,5,0,burkj001,00,,NP
+sub,wardd002,"Daryle Ward",1,5,7
+play,5,0,burkj001,00,X,S8/8S
+play,5,0,veraq001,20,BBX,64(1)3/GDP
+play,5,0,jonea002,32,CBCBBX,53/G
+play,5,1,camik001,31,BBCBX,31/G
+play,5,1,wardd002,11,FBX,4/L4
+play,5,1,hidar001,22,CFBFBX,5/L5
+play,6,0,jonec004,00,X,13/G
+play,6,0,joynw001,01,CX,7/F7
+play,6,0,jordb001,10,BX,HR/7
+play,6,0,lopej001,00,X,53/G
+play,6,1,berkl001,31,CBBBX,8/F8S
+play,6,1,euset001,22,BCCBS,K
+play,6,1,reyns001,22,CBSFBX,S
+play,6,1,biggc001,32,BBCBCS,K23
+play,7,0,sandr002,31,CBBBX,63/G
+play,7,0,furcr001,01,FX,7/F7
+play,7,0,burkj001,00,,NP
+sub,weisw001,"Walt Weiss",0,9,11
+play,7,0,weisw001,02,CSFX,1/L1
+play,7,1,spieb001,00,,NP
+sub,mcmig001,"Greg McMichael",0,9,1
+play,7,1,spieb001,01,CX,3/G
+play,7,1,bagwj001,01,FX,8/F8
+play,7,1,camik001,21,BSBX,HR/9
+play,7,1,wardd002,01,CX,5/FL
+play,8,0,veraq001,12,CBFFFFX,43/G
+play,8,0,jonea002,30,BBBB,W
+play,8,0,jonec004,21,SBBX,HR/9.1-H
+play,8,0,joynw001,00,,NP
+sub,henrd002,"Doug Henry",1,9,1
+play,8,0,joynw001,11,CBX,8/F8
+play,8,0,jordb001,21,SBBX,63/G
+play,8,1,hidar001,00,,NP
+sub,remlm001,"Mike Remlinger",0,9,1
+play,8,1,hidar001,12,BCFX,S7/7S
+play,8,1,berkl001,00,X,HR/78.1-H
+play,8,1,euset001,01,FX,43/G
+play,8,1,henrd002,00,,NP
+sub,miesm001,"Matt Mieske",1,9,11
+play,8,1,miesm001,12,CBCS,K
+play,8,1,biggc001,00,X,53/G
+play,9,0,lopej001,00,,NP
+sub,cabrj001,"Jose Cabrera",1,9,1
+play,9,0,lopej001,22,BBSFFX,9/F9
+play,9,0,sandr002,02,FCX,4/P4
+play,9,0,furcr001,22,FBSBFX,S/78
+play,9,0,remlm001,00,,NP
+sub,bonib001,"Bobby Bonilla",0,9,11
+play,9,0,bonib001,32,BBFSFBB,W.1-2
+play,9,0,veraq001,01,SX,4/L4
+play,9,1,spieb001,00,,NP
+sub,rockj001,"John Rocker",0,9,1
+play,9,1,spieb001,32,BCBBSFB,W
+play,9,1,bagwj001,31,BBCBB,W.1-2
+play,9,1,camik001,01,CB,WP.2-3;1-2
+play,9,1,camik001,31,CBIII,IW
+play,9,1,wardd002,00,,NP
+sub,ligtk001,"Kerry Ligtenberg",0,9,1
+play,9,1,wardd002,32,BBBCFFX,8/F8
+play,9,1,hidar001,32,BBSFBFFX,54(1)3/GDP
+data,er,burkj001,2
+data,er,mcmig001,1
+data,er,remlm001,2
+data,er,rockj001,0
+data,er,ligtk001,0
+data,er,reyns001,6
+data,er,henrd002,0
+data,er,cabrj001,0

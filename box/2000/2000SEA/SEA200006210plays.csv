@@ -1,0 +1,81 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,22,1,,,,,0,7,CBCBFFS,selea001,1,0,willg001 strikes out. ,willg001,0,
+,32,1,mccrq001,,,,1,13,BCBFBB,selea001,0,0,mccrq001 walks. ,mccrq001,0,
+,12,1,,,,cox-s001,2,17,CCBB,selea001,1,0,mccrq001 caught stealing. ,cox-s001,0,
+,32,1,cox-s001,,,,3,23,CCBBBB,selea001,0,0,cox-s001 walks. ,cox-s001,0,
+,22,1,cox-s001,,,,4,29,CSBFBX,selea001,1,0,mcgrf001 grounds out. ,mcgrf001,0,G
+,21,1,hendr001,,,,5,4,BBCX,yan-e001,0,0,hendr001 singles. ,hendr001,1,
+,11,1,hendr001,,,,6,7,BCX,yan-e001,1,0,,camem001,1,F
+hendr001 to 3B. ,01,1,,rodra001,hendr001,,7,9,CX,yan-e001,0,0,rodra001 doubles. ,rodra001,1,
+,31,1,marte001,rodra001,hendr001,,8,14,BFBBB,yan-e001,0,0,marte001 walks. ,marte001,1,
+,00,1,marte001,rodra001,hendr001,,9,15,X,yan-e001,1,0,,olerj001,1,P
+,32,1,marte001,rodra001,hendr001,,10,23,SBCBBFFX,yan-e001,1,0,buhnj001 grounds out. ,buhnj001,1,G
+,12,2,,,,,11,33,CFBS,selea001,1,0,smitr003 strikes out. ,smitr003,0,
+,12,2,,,,,12,37,BSSC,selea001,1,0,guilj001 strikes out. ,guilj001,0,
+,02,2,,,,,13,40,CCS,selea001,1,0,difem001 strikes out. ,difem001,0,
+,32,2,lampt001,,,,14,30,BBBCFFB,yan-e001,0,0,lampt001 walks. ,lampt001,1,
+lampt001 to 2B. ,02,2,belld002,lampt001,,,15,33,CCH,yan-e001,0,0,belld002 hit by pitch. ,belld002,1,
+lampt001 scores. belld002 to 3B. ,12,2,mabrj001,,belld002,,16,37,FCBX,yan-e001,0,1,mabrj001 reaches on error. ,mabrj001,1,G
+mabrj001 to 2B. ,32,2,hendr001,mabrj001,belld002,,17,44,BBCFBFB,yan-e001,0,0,hendr001 walks. ,hendr001,1,
+belld002 scores. mabrj001 to 3B. hendr001 to 2B. ,31,2,camem001,hendr001,mabrj001,,18,49,FBBBB,yan-e001,0,1,camem001 walks. ,camem001,1,
+mabrj001 scores. hendr001 scores. camem001 to 3B. ,11,2,,rodra001,camem001,,19,52,CBX,yan-e001,0,2,rodra001 doubles. ,rodra001,1,
+,31,2,marte001,rodra001,camem001,,20,57,FBBBB,yan-e001,0,0,marte001 walks. ,marte001,1,
+camem001 scores. rodra001 scores. marte001 scores. ,32,2,,olerj001,,,22,6,FBBCBX,creed001,0,3,olerj001 doubles. ,olerj001,1,
+,11,2,,olerj001,,,23,9,FBX,creed001,1,0,buhnj001 grounds out. ,buhnj001,1,G
+,32,2,lampt001,olerj001,,,24,15,CBBCBB,creed001,0,0,lampt001 walks. ,lampt001,1,
+,32,2,lampt001,olerj001,,,25,22,BBBCFFX,creed001,1,0,,belld002,1,F
+,22,2,lampt001,olerj001,,,26,27,BBCFX,creed001,1,0,mabrj001 grounds out. ,mabrj001,1,G
+,22,3,guilo001,,,,27,45,BCSBX,selea001,0,0,guilo001 singles. ,guilo001,0,
+,12,3,,,,,28,49,LBFX,selea001,2,0,Double Play. ,martf001,0,
+,32,3,,,,,29,55,CBSBBX,selea001,1,0,,willg001,0,F
+,32,3,,,,,30,34,FBBSBFS,creed001,1,0,hendr001 strikes out. ,hendr001,1,
+,32,3,,,,,31,40,CBBCBS,creed001,1,0,camem001 strikes out. ,camem001,1,
+,22,3,,,,,32,45,BCFBX,creed001,1,0,rodra001 grounds out. ,rodra001,1,G
+,32,4,mccrq001,,,,33,61,BBFFBB,selea001,0,0,mccrq001 walks. ,mccrq001,0,
+mccrq001 out. ,00,4,cox-s001,,,,34,62,X,selea001,1,0,cox-s001 reaches on fielder's choice. ,cox-s001,0,
+cox-s001 scores. ,32,4,,,,,35,68,BCBSBX,selea001,0,2,mcgrf001 homers. ,mcgrf001,0,
+,22,4,,,,,36,74,FCBBFS,selea001,1,0,smitr003 strikes out. ,smitr003,0,
+,32,4,,,,,37,80,CBBBSS,selea001,1,0,guilj001 strikes out. ,guilj001,0,
+,02,4,,,,,38,48,CCS,creed001,1,0,marte001 strikes out. ,marte001,1,
+,00,4,olerj001,,,,39,49,X,creed001,0,0,olerj001 singles. ,olerj001,1,
+olerj001 to 2B. ,12,4,buhnj001,olerj001,,,40,53,CCBH,creed001,0,0,buhnj001 hit by pitch. ,buhnj001,1,
+,32,4,buhnj001,olerj001,,,41,61,CBCBFBFC,creed001,1,0,lampt001 strikes out. ,lampt001,1,
+olerj001 to 3B. buhnj001 out. ,10,4,belld002,,olerj001,,42,63,BX,creed001,1,0,belld002 reaches on fielder's choice. ,belld002,1,
+,11,5,difem001,,,,43,83,BCX,selea001,0,0,difem001 singles. ,difem001,0,
+,00,5,difem001,,,,44,84,X,selea001,1,0,,guilo001,0,F
+difem001 to 3B. ,10,5,,martf001,difem001,,45,86,BX,selea001,0,0,martf001 doubles. ,martf001,0,
+difem001 scores. martf001 scores. willg001 to 2B. ,11,5,,willg001,,,46,89,BCX,selea001,0,2,willg001 reaches on error. ,willg001,0,G
+,22,5,,willg001,,,47,95,CCBBFX,selea001,1,0,mccrq001 grounds out. ,mccrq001,0,G
+,01,5,,willg001,,,48,97,CX,selea001,1,0,,cox-s001,0,F
+,12,5,,,,,49,67,CBCX,creed001,1,0,mabrj001 grounds out. ,mabrj001,1,G
+,12,5,,,,,50,71,CBFC,creed001,1,0,hendr001 strikes out. ,hendr001,1,
+,12,5,,,,,51,75,FCBX,creed001,1,0,,camem001,1,F
+,32,6,mcgrf001,,,,52,104,BSBBFFB,selea001,0,0,mcgrf001 walks. ,mcgrf001,0,
+mcgrf001 to 3B. ,12,6,,smitr003,mcgrf001,,53,108,BSCX,selea001,0,0,smitr003 doubles. ,smitr003,0,
+,12,6,,smitr003,mcgrf001,,55,4,FSBS,panij001,1,0,guilj001 strikes out. ,guilj001,0,
+mcgrf001 scores. smitr003 to 3B. ,10,6,,,smitr003,,56,6,BX,panij001,1,1,difem001 hits sacrifice fly. ,difem001,0,
+,00,6,,,smitr003,,57,7,X,panij001,1,0,,guilo001,0,F
+,21,6,,,,,59,4,CBBX,whitr002,1,0,,rodra001,1,F
+,01,6,,,,,60,6,SX,whitr002,1,0,marte001 grounds out. ,marte001,1,G
+,30,6,olerj001,,,,61,10,BBBB,whitr002,0,0,olerj001 walks. ,olerj001,1,
+,12,6,olerj001,,,,62,14,SBCC,whitr002,1,0,buhnj001 strikes out. ,buhnj001,1,
+,22,7,martf001,,,,63,14,CCFFBBX,panij001,0,0,martf001 singles. ,martf001,0,
+,00,7,martf001,,,,64,15,X,panij001,1,0,,willg001,0,F
+,32,7,martf001,,,,65,21,FCBBBX,panij001,1,0,,mccrq001,0,F
+,02,7,martf001,,,,68,3,SSS,rhoda001,1,0,tramb001 strikes out. ,tramb001,0,
+,11,7,,,,,70,17,SBX,whitr002,1,0,lampt001 grounds out. ,lampt001,1,G
+,22,7,belld002,,,,71,23,CBCFBX,whitr002,0,0,belld002 singles. ,belld002,1,
+belld002 to 2B. ,30,7,mabrj001,belld002,,,72,27,BBBB,whitr002,0,0,mabrj001 walks. ,mabrj001,1,
+belld002 scores. mabrj001 to 2B. ,10,7,hendr001,mabrj001,,,73,29,BX,whitr002,0,1,hendr001 singles. ,hendr001,1,
+,22,7,,mabrj001,,,75,5,BCFBX,mecij001,2,0,Double Play. ,camem001,1,
+,00,8,,,,,76,4,X,rhoda001,1,0,mcgrf001 grounds out. ,mcgrf001,0,G
+,22,8,,,,,78,5,BSBSS,mesaj001,1,0,smitr003 strikes out. ,smitr003,0,
+,12,8,,,,,79,9,FBFS,mesaj001,1,0,guilj001 strikes out. ,guilj001,0,
+,12,8,,,,,80,9,FSBX,mecij001,1,0,,rodra001,1,F
+,22,8,,,,,81,14,CBBCX,mecij001,1,0,marte001 grounds out. ,marte001,1,G
+,32,8,,,,,82,21,BBCBCFX,mecij001,1,0,,olerj001,1,F
+,01,9,,,,,85,2,FX,sasak001,1,0,difem001 grounds out. ,difem001,0,G
+,01,9,guilo001,,,,86,4,FX,sasak001,0,0,guilo001 singles. ,guilo001,0,
+,00,9,guilo001,,,,87,5,X,sasak001,1,0,,martf001,0,F
+guilo001 to 2B. ,01,9,,guilo001,,willg001,88,7,CB,sasak001,0,0,guilo001 to 2B on defensive indifference. ,willg001,0,
+,12,9,,guilo001,,,89,11,CBFX,sasak001,1,0,willg001 grounds out. ,willg001,0,G

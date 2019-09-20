@@ -1,0 +1,163 @@
+version,2
+info,visteam,HOU
+info,hometeam,CIN
+info,site,CIN08
+info,date,2000/09/22
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,coope901
+info,ump1b,kellj901
+info,ump2b,reilm901
+info,ump3b,diazl901
+info,pitches,pitches
+info,temp,76
+info,winddir,rtol
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,174
+info,attendance,32223
+info,wp,desse001
+info,lp,limaj001
+info,save,
+start,lugoj001,"Julio Lugo",0,1,6
+start,spieb001,"Bill Spiers",0,2,4
+start,bagwj001,"Jeff Bagwell",0,3,3
+start,berkl001,"Lance Berkman",0,4,7
+start,aloum001,"Moises Alou",0,5,9
+start,hidar001,"Richard Hidalgo",0,6,8
+start,melum001,"Mitch Meluskey",0,7,2
+start,trubc001,"Chris Truby",0,8,5
+start,limaj001,"Jose Lima",0,9,1
+start,tuckm001,"Michael Tucker",1,1,8
+start,sextc001,"Chris Sexton",1,2,4
+start,yound001,"Dmitri Young",1,3,7
+start,cases001,"Sean Casey",1,4,3
+start,ochoa001,"Alex Ochoa",1,5,9
+start,stync001,"Chris Stynes",1,6,5
+start,santb001,"Benito Santiago",1,7,2
+start,castj004,"Juan Castro",1,8,6
+start,desse001,"Elmer Dessens",1,9,1
+play,1,0,lugoj001,11,CBX,63/G
+play,1,0,spieb001,11,CBX,43/G
+play,1,0,bagwj001,32,CBBBSS,K
+play,1,1,tuckm001,31,BCBBB,W
+play,1,1,sextc001,12,BCCS,K
+play,1,1,yound001,11,BFB,SB2
+play,1,1,yound001,32,BFBBSB,W
+play,1,1,cases001,11,BFX,D8.2-H;1-3
+play,1,1,ochoa001,11,BSX,8/SF.3-H;2-3
+play,1,1,stync001,22,BCSBX,9/F9
+play,2,0,berkl001,10,BX,63/G
+play,2,0,aloum001,32,BFBFFBX,9/L9
+play,2,0,hidar001,12,CCBFFX,HR/9
+play,2,0,melum001,22,CBFBFX,S/89S
+play,2,0,trubc001,10,BX,6/L6
+play,2,1,santb001,30,BBBB,W
+play,2,1,castj004,01,CX,HR/7.1-H
+play,2,1,desse001,00,X,S8
+play,2,1,tuckm001,11,BSX,HR/9.1-H
+play,2,1,sextc001,00,X,9/FL
+play,2,1,yound001,21,BCBX,7/L7
+play,2,1,cases001,10,BX,HR/9
+com,"$Lima's 47th homer surrendered for new NL record"
+play,2,1,ochoa001,22,FBBFX,8/F8
+play,3,0,limaj001,00,,NP
+sub,gintk001,"Keith Ginter",0,9,11
+play,3,0,gintk001,12,CCBS,K
+play,3,0,lugoj001,22,BFFBFX,S7
+play,3,0,spieb001,00,X,S7/7S.1-2
+play,3,0,bagwj001,12,CFFBFFS,K
+play,3,0,berkl001,01,FX,3/G
+play,3,1,stync001,00,,NP
+sub,poweb001,"Brian Powell",0,9,1
+play,3,1,stync001,00,X,D/89
+play,3,1,santb001,12,CSBC,K/C
+play,3,1,castj004,11,BCX,8/F8
+play,3,1,desse001,22,CCBFBS,K
+play,4,0,aloum001,01,FX,S8/8S
+play,4,0,hidar001,21,BFBX,S7.1-2
+play,4,0,melum001,00,X,8/F8
+play,4,0,trubc001,00,X,9/F9D
+play,4,0,poweb001,00,,NP
+sub,wardd002,"Daryle Ward",0,9,11
+play,4,0,wardd002,22,BFBFFX,43/G
+play,4,1,tuckm001,00,,NP
+sub,lines001,"Scott Linebrink",0,9,1
+play,4,1,tuckm001,12,CFBX,63/G
+play,4,1,sextc001,30,BBBB,W
+play,4,1,yound001,12,SFBS,K
+play,4,1,cases001,31,BBCBB,W.1-2
+play,4,1,ochoa001,11,BCX,64(1)/FO.2-3
+play,5,0,lugoj001,11,CBX,7/L7
+play,5,0,spieb001,32,BBBCSB,W
+play,5,0,bagwj001,20,BBX,64(1)/FO
+play,5,0,berkl001,00,X,S9.1-2
+play,5,0,aloum001,31,BFBBX,8/F8
+play,5,1,stync001,31,BBBCX,2/FL
+play,5,1,santb001,00,X,53/G
+play,5,1,castj004,10,BX,S7
+play,5,1,desse001,12,FSFBC,K/C
+play,6,0,hidar001,02,FCX,8/L8
+play,6,0,melum001,20,BBX,8/F8
+play,6,0,trubc001,02,CFX,43/G
+play,6,1,tuckm001,12,BSFX,S9
+play,6,1,sextc001,11,BFX,9/F9D
+play,6,1,yound001,02,CFFFFX,3(B)6(1)/GDP
+play,7,0,lines001,00,,NP
+sub,bogat001,"Tim Bogar",0,9,11
+play,7,0,bogat001,00,X,S8/8S
+play,7,0,lugoj001,11,BFX,S8/8S.1-2
+play,7,0,spieb001,00,X,D9.2-H;1-3
+play,7,0,bagwj001,00,X,63/G.3-H
+play,7,0,berkl001,31,BBBCX,9/F9
+play,7,0,aloum001,00,,NP
+sub,sulls001,"Scott Sullivan",1,9,1
+play,7,0,aloum001,11,BFX,8/F8
+play,7,1,cases001,00,,NP
+sub,meacr001,"Rusty Meacham",0,9,1
+play,7,1,cases001,00,X,HR/9
+play,7,1,ochoa001,00,X,9/F9D
+play,7,1,stync001,01,CX,53/G
+play,7,1,santb001,00,X,HR/78
+play,7,1,castj004,21,BFBX,S8/8S
+play,7,1,sulls001,02,CSX,3/G
+play,8,0,hidar001,00,,NP
+sub,tuckm001,"Michael Tucker",1,1,9
+play,8,0,hidar001,00,,NP
+sub,yound001,"Dmitri Young",1,3,3
+play,8,0,hidar001,00,,NP
+sub,huntb002,"Brian L. Hunter",1,4,8
+play,8,0,hidar001,00,,NP
+sub,ochoa001,"Alex Ochoa",1,5,7
+play,8,0,hidar001,00,,NP
+sub,bellm003,"Mike Bell",1,6,5
+play,8,0,hidar001,01,FX,HR/7
+play,8,0,melum001,30,BBBB,W
+play,8,0,trubc001,22,SFBBS,K
+play,8,0,meacr001,00,,NP
+sub,ceder001,"Roger Cedeno",0,9,11
+play,8,0,ceder001,12,BCCX,36(1)/FO
+play,8,0,lugoj001,10,BX,8/F8
+play,8,1,tuckm001,00,,NP
+sub,cabrj001,"Jose Cabrera",0,9,1
+play,8,1,tuckm001,01,FX,D/78
+play,8,1,sextc001,32,BBBCFFS,K
+play,8,1,yound001,10,BX,S7/7S.2-3
+play,8,1,huntb002,22,CBBFFS,K
+play,8,1,ochoa001,01,CX,HR/7.3-H;1-H
+play,8,1,bellm003,32,CBFBBS,K
+play,9,0,spieb001,00,X,43/G
+play,9,0,bagwj001,12,CBCFX,8/F8
+play,9,0,berkl001,31,BBCBX,HR/7
+play,9,0,aloum001,02,CFS,K
+data,er,limaj001,7
+data,er,poweb001,0
+data,er,lines001,0
+data,er,meacr001,2
+data,er,cabrj001,3
+data,er,desse001,3
+data,er,sulls001,2

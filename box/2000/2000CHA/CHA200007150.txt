@@ -1,0 +1,182 @@
+version,2
+info,visteam,SLN
+info,hometeam,CHA
+info,site,CHI12
+info,date,2000/07/15
+info,number,0
+info,starttime,6:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,marqa901
+info,ump1b,iassd901
+info,ump2b,nelsj901
+info,ump3b,cousd901
+info,pitches,pitches
+info,temp,76
+info,winddir,torf
+info,windspeed,15
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,240
+info,attendance,40681
+info,wp,parqj001
+info,lp,kiled001
+info,save,
+start,vinaf001,"Fernando Vina",0,1,4
+start,rente001,"Edgar Renteria",0,2,6
+start,edmoj001,"Jim Edmonds",0,3,8
+start,tatif001,"Fernando Tatis",0,4,5
+start,davie001,"Eric Davis",0,5,10
+start,lankr001,"Ray Lankford",0,6,7
+start,peree001,"Eduardo Perez",0,7,3
+start,mathm001,"Mike Matheny",0,8,2
+start,dunss001,"Shawon Dunston",0,9,9
+start,kiled001,"Darryl Kile",0,0,1
+start,durhr001,"Ray Durham",1,1,4
+start,valej003,"Jose Valentin",1,2,6
+start,thomf001,"Frank Thomas",1,3,10
+start,ordom001,"Magglio Ordonez",1,4,9
+start,konep001,"Paul Konerko",1,5,3
+start,singc001,"Chris Singleton",1,6,8
+start,abboj002,"Jeff Abbott",1,7,7
+start,perrh001,"Herbert Perry",1,8,5
+start,fordb001,"Brook Fordyce",1,9,2
+start,parqj001,"Jim Parque",1,0,1
+play,1,0,vinaf001,32,CBBFBX,4/FL
+play,1,0,rente001,32,BCFBBFFB,W
+play,1,0,edmoj001,12,CBFC,K/C
+play,1,0,tatif001,32,CBFFBBB,W.1-2
+play,1,0,davie001,01,CB,SB3
+play,1,0,davie001,11,CBX,S9.3-H;1-2
+play,1,0,lankr001,02,CCC,K/C
+play,1,1,durhr001,32,FCBBFBB,W
+play,1,1,valej003,21,FBBX,S9.1-3
+play,1,1,thomf001,10,BX,HR/7.3-H;1-H
+play,1,1,ordom001,32,CSBBBFX,S8
+play,1,1,konep001,32,BCBFBX,3/FL
+play,1,1,singc001,02,SFX,9/L9
+play,1,1,abboj002,11,BFB,SB2
+play,1,1,abboj002,22,BFBCS,K
+play,2,0,peree001,32,BSCBBB,W
+play,2,0,mathm001,10,BX,S9/9S.1-3
+play,2,0,dunss001,10,BX,8/SF.3-H
+play,2,0,vinaf001,11,BCX,S9.1-2
+play,2,0,rente001,02,SFX,46(1)3/GDP
+play,2,1,perrh001,11,CBX,E5/G
+play,2,1,fordb001,22,FSFBBX,4/P4
+play,2,1,durhr001,22,SBBSS,K
+play,2,1,valej003,10,BX,D9.1-3
+play,2,1,thomf001,02,CCX,53/G
+play,3,0,edmoj001,31,BBBCX,43/G
+play,3,0,tatif001,22,BCBFC,K/C
+play,3,0,davie001,12,CCBX,S7/7S
+play,3,0,lankr001,12,BFCFX,8/F8D
+play,3,1,ordom001,12,CBCS,K
+play,3,1,konep001,01,CX,9/FL
+play,3,1,singc001,12,CFBFFX,3/G
+play,4,0,peree001,22,BBFFX,43/G
+play,4,0,mathm001,31,BCBBX,7/F7
+play,4,0,dunss001,22,BCFBX,53/G
+play,4,1,abboj002,00,X,D7
+play,4,1,perrh001,20,BBX,D9.2-H
+play,4,1,fordb001,31,FBBBX,31/G.2-3
+play,4,1,durhr001,32,CBCBBFX,S8.3-H
+play,4,1,valej003,12,CBSX,9/F9
+play,4,1,thomf001,21,CBBB,CS2(24)
+play,5,0,vinaf001,31,BFBBB,W
+play,5,0,rente001,21,BCBX,64(1)/FO
+play,5,0,edmoj001,32,CBBBFX,46(1)/FO.B-2(E6/TH1)
+play,5,0,tatif001,12,BFFH,HP
+play,5,0,davie001,10,BX,S9.2-H;1-H(E9/TH)(UR);B-3
+play,5,0,lankr001,31,BSBBX,31/G
+play,5,1,thomf001,22,CBSBS,K
+play,5,1,ordom001,00,H,HP
+play,5,1,konep001,01,CX,S9.1-3
+play,5,1,singc001,00,X,8/SF.3-H
+play,5,1,abboj002,31,BCBBB,W.1-2
+play,5,1,perrh001,00,,NP
+sub,thomm002,"Mark Thompson",0,0,1
+play,5,1,perrh001,31,BBBCX,4/P4
+play,6,0,peree001,00,,NP
+sub,simab001,"Bill Simas",1,0,1
+play,6,0,peree001,02,CSC,K/C
+play,6,0,mathm001,12,CBSFX,S9
+play,6,0,dunss001,01,CX,S8/8S.1-2
+play,6,0,vinaf001,01,FX,3/FL
+play,6,0,rente001,00,X,5(2)/FO.1-2
+play,6,1,fordb001,32,CBSBBFX,8/F8
+play,6,1,durhr001,02,FCFFX,S
+play,6,1,valej003,21,BBCX,63/G.1-2
+play,6,1,thomf001,11,BFB,WP.2-3
+play,6,1,thomf001,22,BFBFC,K/C
+play,7,0,edmoj001,12,FBSFC,K/C
+play,7,0,tatif001,11,BCX,D/78
+play,7,0,davie001,20,BBX,S.2-3
+play,7,0,lankr001,00,,NP
+sub,wunsk001,"Kelly Wunsch",1,0,1
+play,7,0,lankr001,12,FBFS,K
+play,7,0,peree001,00,,NP
+sub,foulk001,"Keith Foulke",1,0,1
+play,7,0,peree001,02,FSS,K
+play,7,1,ordom001,00,X,13/G
+play,7,1,konep001,21,BCBX,S8
+play,7,1,singc001,32,BCBFBB,W.1-2
+play,7,1,abboj002,00,,NP
+sub,jamem001,"Mike James",0,0,1
+play,7,1,abboj002,21,BCBX,S7.2-H;1-3
+play,7,1,perrh001,00,X,D7.3-H;1-3
+play,7,1,fordb001,32,SCBBFBFB,W
+play,7,1,durhr001,00,,NP
+sub,mattm001,"Mike Matthews",0,0,1
+play,7,1,durhr001,31,BBCBB,W.3-H;2-3;1-2
+play,7,1,valej003,22,BFFBFH,HP.3-H;2-3;1-2
+play,7,1,thomf001,11,BCX,D7.3-H;2-H;1-H
+play,7,1,ordom001,31,BBFBB,W
+play,7,1,konep001,00,,NP
+sub,lee-c001,"Carlos Lee",1,4,12
+play,7,1,konep001,11,CBX,D7.2-H;1-3
+play,7,1,singc001,22,BFFBX,43/G.3-H;2-3
+play,7,1,abboj002,10,BX,7/F7
+play,8,0,mathm001,00,,NP
+sub,lee-c001,"Carlos Lee",1,4,7
+play,8,0,mathm001,00,,NP
+sub,abboj002,"Jeff Abbott",1,7,9
+play,8,0,mathm001,00,X,63/G
+play,8,0,dunss001,02,CSX,E7/F.B-2
+play,8,0,vinaf001,32,BBCCFFBB,W
+play,8,0,rente001,21,BBCX,S/BR.2X3(5);1-2
+play,8,0,edmoj001,22,SSBBS,K
+play,8,1,perrh001,00,,NP
+sub,dunss001,"Shawon Dunston",0,9,8
+play,8,1,perrh001,00,,NP
+sub,paquc001,"Craig Paquette",0,3,9
+play,8,1,perrh001,00,,NP
+sub,sloch001,"Heathcliff Slocumb",0,0,1
+play,8,1,perrh001,02,FFS,K
+play,8,1,fordb001,12,FBFFS,K
+play,8,1,durhr001,10,BX,S9
+play,8,1,valej003,32,BBBCFFFS,K
+play,9,0,tatif001,00,,NP
+sub,penaj003,"Jesus Pena",1,0,1
+play,9,0,tatif001,11,BFX,HR/7
+play,9,0,davie001,22,BBCFX,S7
+play,9,0,lankr001,00,,NP
+sub,howat001,"Thomas Howard",0,6,11
+play,9,0,howat001,01,CX,64(1)3/GDP
+com,"PH deduced from Elias totals, check GDP"
+play,9,0,peree001,21,BCBH,HP
+play,9,0,mathm001,00,,NP
+sub,mcdok001,"Keith McDonald",0,8,11
+play,9,0,mcdok001,31,BBCBX,HR/7.1-H
+play,9,0,dunss001,01,CX,8/F8S
+data,er,kiled001,6
+data,er,thomm002,2
+data,er,jamem001,3
+data,er,mattm001,4
+data,er,sloch001,0
+data,er,parqj001,3
+data,er,simab001,0
+data,er,wunsk001,0
+data,er,foulk001,0
+data,er,penaj003,3

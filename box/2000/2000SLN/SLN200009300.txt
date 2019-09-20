@@ -1,0 +1,172 @@
+version,2
+info,visteam,CIN
+info,hometeam,SLN
+info,site,STL09
+info,date,2000/09/30
+info,number,0
+info,starttime,1:10PM
+info,daynight,day
+info,usedh,false
+info,umphome,carlm901
+info,ump1b,timmt901
+info,ump2b,demud901
+info,ump3b,relic901
+info,pitches,pitches
+info,temp,79
+info,winddir,rtol
+info,windspeed,8
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,188
+info,attendance,47099
+info,wp,ferno001
+info,lp,hentp001
+info,save,
+start,huntb002,"Brian L. Hunter",0,1,8
+start,tuckm001,"Michael Tucker",0,2,9
+start,cases001,"Sean Casey",0,3,3
+start,ochoa001,"Alex Ochoa",0,4,7
+start,stync001,"Chris Stynes",0,5,5
+start,castj004,"Juan Castro",0,6,6
+start,sextc001,"Chris Sexton",0,7,4
+start,laruj001,"Jason LaRue",0,8,2
+start,ferno001,"Osvaldo Fernandez",0,9,1
+start,vinaf001,"Fernando Vina",1,1,4
+start,polap001,"Placido Polanco",1,2,5
+start,edmoj001,"Jim Edmonds",1,3,8
+start,clarw001,"Will Clark",1,4,3
+start,lankr001,"Ray Lankford",1,5,7
+start,rente001,"Edgar Renteria",1,6,6
+start,drewj001,"J.D. Drew",1,7,9
+start,hernc001,"Carlos A. Hernandez",1,8,2
+start,hentp001,"Pat Hentgen",1,9,1
+play,1,0,huntb002,32,CBBFFBX,S8
+play,1,0,tuckm001,10,BB,SB2
+play,1,0,tuckm001,32,BBCCBC,K/C
+play,1,0,cases001,32,CBBFBX,S/89.2-H
+play,1,0,ochoa001,12,BFCX,S7.1-2
+play,1,0,stync001,32,BFCBFBFFFFS,K+SB3;SB2
+play,1,0,castj004,20,BBX,9/F9
+play,1,1,vinaf001,21,BBCX,6/L6
+play,1,1,polap001,12,CBFFFFS,K
+play,1,1,edmoj001,12,SBFX,E8/F.B-2
+play,1,1,clarw001,00,X,7/F7
+play,2,0,sextc001,22,BBCFFX,7/FL
+play,2,0,laruj001,32,BBSCBX,53/G
+play,2,0,ferno001,02,CCC,K/C
+play,2,1,lankr001,01,CX,7/F7D
+play,2,1,rente001,31,BBCBB,W
+play,2,1,drewj001,12,CFB1,POCS2(136343)
+play,2,1,drewj001,12,CFB1X,43/G
+play,3,0,huntb002,12,BFCFFX,S
+play,3,0,tuckm001,00,B,SB2
+play,3,0,tuckm001,32,BSBBCFX,T9.2-H
+play,3,0,cases001,02,CCX,3/G.3-H#
+play,3,0,ochoa001,00,X,43/G
+play,3,0,stync001,01,CX,D/78
+play,3,0,castj004,11,FBX,53/G
+play,3,1,hernc001,11,BCX,S7
+play,3,1,hentp001,00,X,16(1)/FO
+play,3,1,vinaf001,12,CBFFS,K
+play,3,1,polap001,00,X,S9.1-2
+play,3,1,edmoj001,22,SSFBBS,K
+play,4,0,sextc001,01,CX,S9
+play,4,0,laruj001,00,X,HR/9.1-H
+play,4,0,ferno001,01,CX,3/G#
+play,4,0,huntb002,22,BBCFFX,9/F9
+play,4,0,tuckm001,30,BBBB,W
+play,4,0,cases001,20,BBX,8/F8D
+play,4,1,clarw001,22,BCFBX,S8
+play,4,1,lankr001,02,FFS,K
+play,4,1,rente001,00,X,64(1)/FO
+play,4,1,drewj001,12,SSBC,K/C
+play,5,0,ochoa001,00,,NP
+sub,polap001,"Placido Polanco",1,2,6
+play,5,0,ochoa001,00,,NP
+sub,paquc001,"Craig Paquette",1,9,5
+play,5,0,ochoa001,00,,NP
+sub,hackl001,"Luther Hackman",1,6,1
+play,5,0,ochoa001,00,X,8/F8
+play,5,0,stync001,22,BFSBFX,53/G
+play,5,0,castj004,01,FX,S8
+play,5,0,sextc001,00,X,7/F7D
+play,5,1,hernc001,22,BBCCX,9/F9S
+play,5,1,paquc001,10,BX,53/G
+play,5,1,vinaf001,11,BCX,7/F7S
+play,6,0,laruj001,22,CBBFX,S7
+play,6,0,ferno001,00,X,13/SH.1-2#
+play,6,0,huntb002,31,BBBCB,W
+play,6,0,tuckm001,00,,NP
+sub,yound001,"Dmitri Young",0,2,11
+play,6,0,yound001,22,BBSFFX,S7.2-H;1-3;B-2(E7)
+play,6,0,cases001,30,IIII,IW
+play,6,0,ochoa001,00,X,9/F9S
+play,6,0,stync001,20,BBX,8/F8
+play,6,1,polap001,00,,NP
+sub,clarb003,"Brady Clark",0,2,7
+play,6,1,polap001,00,,NP
+sub,ochoa001,"Alex Ochoa",0,4,9
+play,6,1,polap001,02,CFX,63/G
+play,6,1,edmoj001,32,FCBFBBFB,W
+play,6,1,clarw001,01,CX,S9.1-2
+play,6,1,lankr001,32,BBCCBFX,36(1)1/GDP
+play,7,0,castj004,30,BBBB,W
+play,7,0,sextc001,22,BBCCX,54(1)/FO
+play,7,0,laruj001,00,H,HP.1-2
+play,7,0,ferno001,01,CX,53/SH.2-3;1-2#
+play,7,0,huntb002,32,CBBCBB,W
+play,7,0,clarb003,00,X,S8.3-H;2-H;1-2
+play,7,0,cases001,00,,NP
+sub,jamem001,"Mike James",1,5,1
+play,7,0,cases001,00,,NP
+sub,dunss001,"Shawon Dunston",1,6,7
+play,7,0,cases001,22,FBCBC,K/C
+play,7,1,dunss001,00,X,53/G
+play,7,1,drewj001,10,BX,7/F7
+play,7,1,hernc001,32,CSBBBX,23/G
+play,8,0,ochoa001,32,BBBCSFS,K
+play,8,0,stync001,22,BBFFC,K/C
+play,8,0,castj004,11,BCX,8/F8
+play,8,1,paquc001,00,,NP
+sub,bellm003,"Mike Bell",0,5,5
+play,8,1,paquc001,00,,NP
+sub,cromd001,"David Cromer",0,3,3
+play,8,1,paquc001,00,,NP
+sub,riedj001,"John Riedling",0,9,1
+play,8,1,paquc001,00,X,S9
+play,8,1,vinaf001,00,X,46(1)/FO
+play,8,1,polap001,01,CX,64(1)3/GDP
+play,9,0,sextc001,00,,NP
+sub,satul001,"Luis Saturria",1,3,8
+play,9,0,sextc001,00,,NP
+sub,suttl001,"Larry Sutton",1,4,3
+play,9,0,sextc001,00,,NP
+sub,benea002,"Alan Benes",1,5,1
+play,9,0,sextc001,00,X,43/G
+play,9,0,laruj001,21,BBCX,7/F7
+play,9,0,riedj001,00,,NP
+sub,bartk001,"Kimera Bartee",0,9,11
+play,9,0,bartk001,22,BFCBC,K/C
+play,9,1,satul001,00,,NP
+sub,wohlm001,"Mark Wohlers",0,9,1
+play,9,1,satul001,00,,NP
+sub,howat001,"Thomas Howard",1,3,11
+play,9,1,howat001,00,X,S
+play,9,1,suttl001,32,BFBFBS,K.1-2
+play,9,1,benea002,00,,NP
+sub,mcgwm001,"Mark McGwire",1,5,11
+play,9,1,mcgwm001,00,X,S/89.2-H
+play,9,1,dunss001,00,,NP
+sub,marre001,"Eli Marrero",1,5,12
+play,9,1,dunss001,00,X,S7.1-2
+play,9,1,drewj001,12,CSBS,K
+play,9,1,hernc001,10,BX,HR/8.2-H;1-H
+play,9,1,paquc001,12,BFFFFFFX,43/G
+data,er,ferno001,0
+data,er,riedj001,0
+data,er,wohlm001,4
+data,er,hentp001,5
+data,er,hackl001,3
+data,er,jamem001,0
+data,er,benea002,0

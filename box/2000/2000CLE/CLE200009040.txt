@@ -1,0 +1,151 @@
+version,2
+info,visteam,TBA
+info,hometeam,CLE
+info,site,CLE08
+info,date,2000/09/04
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,laynj901
+info,ump1b,barrt901
+info,ump2b,randt901
+info,ump3b,monte901
+info,pitches,pitches
+info,temp,69
+info,winddir,fromcf
+info,windspeed,18
+info,fieldcond,unknown
+info,precip,drizzle
+info,sky,cloudy
+info,timeofgame,189
+info,attendance,42628
+info,wp,burbd001
+info,lp,lopea002
+info,save,
+start,willg001,"Gerald Williams",0,1,8
+start,cairm001,"Miguel Cairo",0,2,4
+start,cox-s001,"Steve Cox",0,3,9
+start,mcgrf001,"Fred McGriff",0,4,3
+start,vaugg001,"Greg Vaughn",0,5,10
+start,huffa001,"Aubrey Huff",0,6,5
+start,flahj001,"John Flaherty",0,7,2
+start,tynej001,"Jason Tyner",0,8,7
+start,martf001,"Felix Martinez",0,9,6
+start,lopea002,"Albie Lopez",0,0,1
+start,loftk001,"Kenny Lofton",1,1,8
+start,vizqo001,"Omar Vizquel",1,2,6
+start,alomr001,"Roberto Alomar",1,3,4
+start,ramim002,"Manny Ramirez",1,4,9
+start,thomj002,"Jim Thome",1,5,3
+start,segud001,"David Segui",1,6,10
+start,frymt001,"Travis Fryman",1,7,5
+start,branr001,"Russell Branyan",1,8,7
+start,diaze002,"Einar Diaz",1,9,2
+start,burbd001,"Dave Burba",1,0,1
+play,1,0,willg001,02,FFX,7/F7
+play,1,0,cairm001,10,BX,7/F7
+play,1,0,cox-s001,21,CBBX,D/78D
+play,1,0,mcgrf001,10,BX,6/P6
+play,1,1,loftk001,21,BFBX,43/G
+play,1,1,vizqo001,32,BCBFBX,S
+play,1,1,alomr001,22,CBBCX,S7.1-2
+play,1,1,ramim002,02,SFX,64(1)3/GDP
+play,2,0,vaugg001,12,BCFS,K23
+play,2,0,huffa001,00,X,63/G
+play,2,0,flahj001,02,CFS,K23
+play,2,1,thomj002,12,CBFS,K
+play,2,1,segud001,12,CBFX,S7/7S
+play,2,1,frymt001,12,CCBX,T/89D.1-H
+play,2,1,branr001,11,CBX,S9/9S.3-H
+play,2,1,diaze002,11,BCX,54(1)/FO
+play,2,1,loftk001,20,BBX,S7/7S.1-2
+play,2,1,vizqo001,10,BX,31/G
+play,3,0,tynej001,00,X,S1/BG1
+play,3,0,martf001,00,X,13/SH.1-2#
+play,3,0,willg001,02,FSX,7/F7
+play,3,0,cairm001,20,BBX,4/L4
+play,3,1,alomr001,11,CBX,S/78
+play,3,1,ramim002,00,B,CS2(24)
+play,3,1,ramim002,12,BCFX,D/89
+play,3,1,thomj002,22,BBFFB,WP.2-3
+play,3,1,thomj002,32,BBFFBFFX,43/G
+play,3,1,segud001,22,FBCFBFX,7/F7D
+play,4,0,cox-s001,12,CBFX,D/89
+play,4,0,mcgrf001,30,BBBX,7/L7
+play,4,0,vaugg001,00,X,8/F8
+play,4,0,huffa001,12,BCSS,K
+play,4,1,frymt001,00,,NP
+sub,creed001,"Doug Creek",0,0,1
+play,4,1,frymt001,11,CBX,S/78
+play,4,1,branr001,31,BBSBX,5/FL
+play,4,1,diaze002,10,BX,8/F8S
+play,4,1,loftk001,12,BFCB,WP.1-2
+play,4,1,loftk001,22,BFCBFS,K
+play,5,0,flahj001,02,FFX,63/G
+play,5,0,tynej001,10,BX,S7
+play,5,0,martf001,00,X,3/BG.1-2
+play,5,0,willg001,32,SSBBFBX,8/F8
+play,5,1,vizqo001,21,BCBX,3/P3
+play,5,1,alomr001,01,CX,E9/F.BX2(94)
+play,5,1,ramim002,10,BX,D7/7D
+play,5,1,thomj002,01,CX,8/F8D
+play,6,0,cairm001,01,CX,53/G
+play,6,0,cox-s001,32,BBBCFB,W
+play,6,0,mcgrf001,12,CBSB,OA.1X2(24)#
+play,6,0,mcgrf001,32,CBSBBB,W
+play,6,0,vaugg001,12,CBFB,WP.1-2
+play,6,0,vaugg001,22,CBFBS,K
+play,6,1,segud001,12,BSSS,K
+play,6,1,frymt001,22,FBBFX,13/G
+play,6,1,branr001,01,SX,T7
+play,6,1,diaze002,00,H,HP
+play,6,1,loftk001,31,BBBCC,CS2(24)
+play,7,0,huffa001,31,BSBBX,43/G
+play,7,0,flahj001,12,FSBFX,S9
+play,7,0,tynej001,00,X,64(1)/FO
+play,7,0,martf001,00,X,63/G
+play,7,1,loftk001,21,BBCX,3/G
+play,7,1,vizqo001,32,BFFBBB,W
+play,7,1,alomr001,00,,NP
+sub,fiort001,"Tony Fiore",0,0,1
+play,7,1,alomr001,20,BBC,SB2
+play,7,1,alomr001,32,BBCBLFB,W
+play,7,1,ramim002,10,BB,WP.2-3;1-2
+play,7,1,ramim002,30,BBII,IW
+play,7,1,thomj002,00,,NP
+sub,cabrj002,"Jolbert Cabrera",1,4,12
+play,7,1,thomj002,00,X,S8/8S.3-H;2-H;1-3
+play,7,1,segud001,01,FX,S8.3-H;1-2
+play,7,1,frymt001,12,CCFFBX,8/F8
+play,7,1,branr001,32,SSBBFFBX,43/G
+play,8,0,willg001,00,,NP
+sub,cabrj002,"Jolbert Cabrera",1,4,9
+play,8,0,willg001,00,,NP
+sub,robed001,"Dave Roberts",1,8,7
+play,8,0,willg001,10,BX,53/G
+play,8,0,cairm001,22,BCFBFFFX,4/P4
+play,8,0,cox-s001,21,BBCX,HR/9
+play,8,0,mcgrf001,10,BX,S9
+play,8,0,vaugg001,00,,NP
+sub,shuep001,"Paul Shuey",1,0,1
+play,8,0,vaugg001,10,BX,6/P6
+play,8,1,diaze002,00,,NP
+sub,wheed001,"Dan Wheeler",0,0,1
+play,8,1,diaze002,11,BCX,E5/TH
+play,8,1,loftk001,11,FBX,7/F7D
+play,8,1,vizqo001,11,CBB,WP.1-2
+play,8,1,vizqo001,32,CBBFBC,K/C
+play,8,1,alomr001,30,IIII,IW
+play,8,1,cabrj002,00,H,HP.2-3;1-2
+play,8,1,thomj002,32,SBSBBFX,6/P6
+play,9,0,huffa001,31,BBBCX,63/G
+play,9,0,flahj001,22,BCSBS,K
+play,9,0,tynej001,31,BBCBB,W
+play,9,0,martf001,12,CBCFS,K
+data,er,lopea002,2
+data,er,creed001,1
+data,er,fiort001,2
+data,er,wheed001,0
+data,er,burbd001,1
+data,er,shuep001,0

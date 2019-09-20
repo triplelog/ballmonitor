@@ -1,0 +1,155 @@
+version,2
+info,visteam,COL
+info,hometeam,MON
+info,site,MON02
+info,date,2000/04/25
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,wendh902
+info,ump1b,buckc901
+info,ump2b,(none)
+info,ump3b,vanvm901
+info,pitches,pitches
+info,temp,72
+info,winddir,tocf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,157
+info,attendance,10019
+info,wp,pavac001
+info,lp,bohab001
+info,save,
+start,goodt001,"Tom Goodwin",0,1,8
+start,lansm001,"Mike Lansing",0,2,4
+start,walkl001,"Larry Walker",0,3,9
+start,cirij001,"Jeff Cirillo",0,4,5
+start,heltt001,"Todd Helton",0,5,3
+start,hammj001,"Jeffrey Hammonds",0,6,7
+start,peren001,"Neifi Perez",0,7,6
+start,maynb001,"Brent Mayne",0,8,2
+start,bohab001,"Brian Bohanon",0,9,1
+start,jonet004,"Terry Jones",1,1,8
+start,cabro001,"Orlando Cabrera",1,2,6
+start,whitr001,"Rondell White",1,3,7
+start,guerv001,"Vladimir Guerrero",1,4,9
+start,vidrj001,"Jose Vidro",1,5,4
+start,stevl001,"Lee Stevens",1,6,3
+start,widgc001,"Chris Widger",1,7,2
+start,barrm003,"Michael Barrett",1,8,5
+start,pavac001,"Carl Pavano",1,9,1
+play,1,0,goodt001,32,CBSBBX,53/G
+play,1,0,lansm001,22,FBFBX,5/P5
+play,1,0,walkl001,01,FX,43/G
+play,1,1,jonet004,01,CX,D/78D
+play,1,1,cabro001,00,X,S1/BG1.2-3
+play,1,1,whitr001,10,BX,D7/7S.3-H;1-H
+play,1,1,guerv001,00,X,8/F8
+play,1,1,vidrj001,10,BX,9/F9
+play,1,1,stevl001,00,X,43/G
+play,2,0,cirij001,01,CX,S1/BG1
+play,2,0,heltt001,10,BX,36(1)1/GDP
+play,2,0,hammj001,10,BX,3/G
+play,2,1,widgc001,32,BBFBFX,9/F9
+play,2,1,barrm003,20,BBX,T7
+play,2,1,pavac001,00,S,CSH(25)
+play,2,1,pavac001,12,SBFFS,K
+com,"umpchange,3,ump1b,reedr901"
+com,"umpchange,3,ump2b,buckc901"
+com,"$umpire crew chief Rick Reed arrived late due to travel delays"
+play,3,0,peren001,01,CX,5/P5
+play,3,0,maynb001,12,CFBX,S/78S
+play,3,0,bohab001,22,BLLBS,K
+play,3,0,goodt001,12,CFBX,S9.1-3
+play,3,0,lansm001,00,C,SB2
+play,3,0,lansm001,21,CBBX,S9.3-H;2-H
+play,3,0,walkl001,31,BCBBX,5/L5
+play,3,1,jonet004,10,BX,13/G
+play,3,1,cabro001,22,BBCFX,S9
+play,3,1,whitr001,00,X,9/F9
+play,3,1,guerv001,31,BBBSX,64(1)/FO
+play,4,0,cirij001,00,X,S9
+play,4,0,heltt001,00,X,S5/BG5.1-2
+play,4,0,hammj001,32,BSCBBB,W.2-3;1-2
+play,4,0,peren001,01,CX,6(1)3/GDP.3-H;2-3
+play,4,0,maynb001,30,IIII,IW
+play,4,0,bohab001,22,BCSBS,K
+play,4,1,vidrj001,20,BBX,4/L4
+play,4,1,stevl001,21,BBCX,43/G
+play,4,1,widgc001,21,BFBX,HR/7
+play,4,1,barrm003,31,BBCBX,31/G
+play,5,0,goodt001,11,CBX,S8
+play,5,0,lansm001,12,CBLFB,SB2
+play,5,0,lansm001,22,CBLFBX,43/G.2-3
+play,5,0,walkl001,20,BBX,3/G.3-H
+play,5,0,cirij001,02,CFX,S9
+play,5,0,heltt001,22,CFFBBX,7/F7
+play,5,1,pavac001,12,SBFX,8/F8
+play,5,1,jonet004,21,BFBX,53/G
+play,5,1,cabro001,10,BX,43/G
+play,6,0,hammj001,00,X,43/G
+play,6,0,peren001,20,BBX,8/F8
+play,6,0,maynb001,21,BFBX,S9
+play,6,0,bohab001,32,BSFFBBX,63/G
+play,6,1,whitr001,01,CX,63/G
+play,6,1,guerv001,22,BSBFFX,S/78
+play,6,1,vidrj001,01,CX,S9.1-3
+play,6,1,stevl001,12,BCFC,K/C
+play,6,1,widgc001,00,,NP
+sub,dipoj001,"Jerry Dipoto",0,9,1
+play,6,1,widgc001,30,BBBB,W.1-2
+play,6,1,barrm003,31,BBCBX,S/78.3-H;2-H;1-3
+play,6,1,pavac001,00,,NP
+sub,traca001,"Andy Tracy",1,9,11
+play,6,1,traca001,00,,NP
+sub,tavaj001,"Julian Tavarez",0,9,1
+play,6,1,traca001,00,X,S8.3-H;1-3
+com,"Debut game for Andy Tracy"
+play,6,1,jonet004,32,CBBFBX,63/G
+play,7,0,goodt001,00,,NP
+sub,klins002,"Steve Kline",1,9,1
+play,7,0,goodt001,32,BBCBCB,W
+play,7,0,lansm001,00,X,54(1)3/GDP
+play,7,0,walkl001,01,CX,S9
+play,7,0,cirij001,12,BCSC,K/C
+play,7,1,cabro001,21,CBBX,D9
+play,7,1,whitr001,22,BCSFFBX,13/G.2-3
+play,7,1,guerv001,30,IIII,IW
+play,7,1,vidrj001,00,,NP
+sub,whitg001,"Gabe White",0,9,1
+play,7,1,vidrj001,22,CFBBFX,S9.3-H;1-3
+play,7,1,stevl001,02,SFX,HR/7.3-H;1-H
+play,7,1,widgc001,21,FBBX,S7
+play,7,1,barrm003,01,FX,2/FL
+play,7,1,klins002,02,FFS,K
+play,8,0,heltt001,00,,NP
+sub,jonet004,"Terry Jones",1,1,7
+play,8,0,heltt001,00,,NP
+sub,bergp001,"Peter Bergeron",1,3,8
+play,8,0,heltt001,22,BBCFX,43/G
+play,8,0,hammj001,10,BX,9/F9
+play,8,0,peren001,32,BBBCFX,3/G
+play,8,1,jonet004,00,,NP
+sub,belis001,"Stan Belinda",0,9,1
+play,8,1,jonet004,12,CFFBS,K
+play,8,1,cabro001,00,X,6/P6
+play,8,1,bergp001,21,BBCX,43/G
+play,9,0,maynb001,00,,NP
+sub,stris001,"Scott Strickland",1,9,1
+play,9,0,maynb001,02,CCS,K
+play,9,0,belis001,00,,NP
+sub,bragd001,"Darren Bragg",0,9,11
+play,9,0,bragd001,12,FBSS,K
+play,9,0,goodt001,10,BX,T9
+play,9,0,lansm001,12,CBCX,8/F8
+data,er,bohab001,5
+data,er,dipoj001,1
+data,er,tavaj001,2
+data,er,whitg001,2
+data,er,belis001,0
+data,er,pavac001,4
+data,er,klins002,0
+data,er,stris001,0

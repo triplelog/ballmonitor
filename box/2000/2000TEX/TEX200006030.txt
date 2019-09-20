@@ -1,0 +1,146 @@
+version,2
+info,visteam,ARI
+info,hometeam,TEX
+info,site,ARL02
+info,date,2000/06/03
+info,number,0
+info,starttime,7:35PM
+info,daynight,night
+info,usedh,true
+info,umphome,millb901
+info,ump1b,rungb901
+info,ump2b,rapue901
+info,ump3b,shulj901
+info,pitches,pitches
+info,temp,75
+info,winddir,fromlf
+info,windspeed,11
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,173
+info,attendance,46222
+info,wp,rogek001
+info,lp,figun001
+info,save,wettj001
+start,friah001,"Hanley Frias",0,1,6
+start,bellj001,"Jay Bell",0,2,4
+start,gonzl001,"Luis Gonzalez",0,3,7
+start,willm003,"Matt D. Williams",0,4,5
+start,finls001,"Steve Finley",0,5,10
+start,colbg001,"Greg Colbrunn",0,6,3
+start,wardt001,"Turner Ward",0,7,8
+start,gilkb001,"Bernard Gilkey",0,8,9
+start,milld002,"Damian Miller",0,9,2
+start,figun001,"Nelson Figueroa",0,0,1
+start,alicl001,"Luis Alicea",1,1,4
+start,greer001,"Rusty Greer",1,2,7
+start,rodri001,"Ivan Rodriguez",1,3,2
+start,palmr001,"Rafael Palmeiro",1,4,3
+start,segud001,"David Segui",1,5,10
+start,curtc001,"Chad Curtis",1,6,9
+start,lambm001,"Mike Lamb",1,7,5
+start,clayr001,"Royce Clayton",1,8,6
+start,mcdoj002,"Jason McDonald",1,9,8
+start,rogek001,"Kenny Rogers",1,0,1
+play,1,0,friah001,21,BCBX,63/G
+com,"Debut game for Nelson Figueroa"
+play,1,0,bellj001,32,CBBFBX,53/G
+play,1,0,gonzl001,02,CSS,K
+play,1,1,alicl001,01,CX,3/G
+play,1,1,greer001,32,CBBFBX,63/G
+play,1,1,rodri001,01,CX,E5/G
+play,1,1,palmr001,31,BBBCX,63/G
+play,2,0,willm003,22,BFCBX,S9
+play,2,0,finls001,32,FBBCBH,HP.1-2
+play,2,0,colbg001,01,CX,9/F9
+play,2,0,wardt001,00,X,5(2)3/GDP
+play,2,1,segud001,01,CX,23/G
+play,2,1,curtc001,21,CBBX,7/F7
+play,2,1,lambm001,00,X,7/F7D
+play,3,0,gilkb001,02,CFS,K
+play,3,0,milld002,00,X,31/G
+play,3,0,friah001,22,BSBFX,D/78
+play,3,0,bellj001,20,BBX,D/78D.2-H
+play,3,0,gonzl001,32,BBBCFS,K
+play,3,1,clayr001,12,CFBX,53/G
+play,3,1,mcdoj002,21,BBFX,S9
+play,3,1,alicl001,12,SSBX,5/P5
+play,3,1,greer001,02,CFX,7/F7
+play,4,0,willm003,00,X,63/G
+play,4,0,finls001,12,BCFC,K/C
+play,4,0,colbg001,22,BFFBS,K
+play,4,1,rodri001,22,FSBFBX,E5/G
+play,4,1,palmr001,00,B,WP.1-2
+play,4,1,palmr001,30,BBBB,W
+play,4,1,segud001,12,LBCB,CS3(25)
+play,4,1,segud001,22,LBCBB,SB2
+play,4,1,segud001,32,LBCBBX,S8/8S.2-H
+play,4,1,curtc001,31,CBBBX,HR/8.1-H
+play,4,1,lambm001,00,X,7/F7
+play,4,1,clayr001,00,X,5/FL
+play,5,0,wardt001,10,BX,6/L6
+play,5,0,gilkb001,32,BBCBFX,4/P4
+play,5,0,milld002,12,BCFS,K
+play,5,1,mcdoj002,12,CBSX,9/F9D
+play,5,1,alicl001,32,CBBBCC,K/C
+play,5,1,greer001,12,CSBX,D9
+play,5,1,rodri001,00,X,53/G
+play,6,0,friah001,00,X,8/F8
+play,6,0,bellj001,32,BCBCBB,W
+play,6,0,gonzl001,00,1,PO1(13)
+play,6,0,gonzl001,10,1BX,9/F9D
+play,6,1,palmr001,00,X,8/F8D
+play,6,1,segud001,00,X,S9
+play,6,1,curtc001,22,BCBCS,K
+play,6,1,lambm001,11,BCB,WP.1-2
+play,6,1,lambm001,21,BCBX,43/G
+play,7,0,willm003,30,BBBB,W
+play,7,0,finls001,11,BCX,S9.1-2
+play,7,0,colbg001,00,,NP
+sub,crabt001,"Tim Crabtree",1,0,1
+play,7,0,colbg001,10,BS,CS3(25).1-2
+play,7,0,colbg001,11,BSH,HP
+play,7,0,wardt001,12,BCSX,S9/9S.2-H;1-2
+play,7,0,gilkb001,10,BX,4(B)6(2)/LDP
+play,7,1,clayr001,11,CBX,53/G
+play,7,1,mcdoj002,10,BX,S9
+play,7,1,alicl001,10,BX,S/78.1-3
+play,7,1,greer001,00,,NP
+sub,swing001,"Greg Swindell",0,0,1
+play,7,1,greer001,01,FX,3/G.3-H;1-2
+play,7,1,rodri001,12,BSCS,K
+play,8,0,milld002,00,,NP
+sub,mcdoj002,"Jason McDonald",1,9,9
+play,8,0,milld002,00,,NP
+sub,grees002,"Scarborough Green",1,6,8
+play,8,0,milld002,32,BBSSBX,S8/8S
+play,8,0,friah001,12,BCFX,13/G.1-2
+play,8,0,bellj001,21,BSBX,53/G
+play,8,0,gonzl001,00,,NP
+sub,venam002,"Mike Venafro",1,0,1
+play,8,0,gonzl001,01,FX,D7.2-H
+play,8,0,willm003,00,,NP
+sub,zimmj001,"Jeff Zimmerman",1,0,1
+play,8,0,willm003,10,BX,63/G
+play,8,1,palmr001,31,FBBBB,W
+play,8,1,segud001,22,CBFFBX,S/78.1-2
+play,8,1,grees002,10,BX,S5/BG5.2-3;1-2
+play,8,1,lambm001,01,SX,7/F7S
+play,8,1,clayr001,22,BSFFBFFX,9/F9S
+play,8,1,mcdoj002,12,FBCX,63/G
+play,9,0,finls001,00,,NP
+sub,wettj001,"John Wetteland",1,0,1
+play,9,0,finls001,22,BFBFFX,9/F9D
+play,9,0,colbg001,12,BCFFFFH,HP
+play,9,0,wardt001,00,,NP
+sub,womat001,"Tony Womack",0,6,12
+play,9,0,wardt001,11,CBX,7/F7D
+play,9,0,gilkb001,22,SCBBX,7/F7
+data,er,figun001,4
+data,er,swing001,0
+data,er,rogek001,2
+data,er,crabt001,1
+data,er,venam002,0
+data,er,zimmj001,0
+data,er,wettj001,0

@@ -1,0 +1,76 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,01,1,,,,,0,2,CX,harnp001,1,0,furcr001 grounds out. ,furcr001,0,G
+,12,1,,,,,1,6,CBFX,harnp001,1,0,,jonea002,0,F
+,20,1,,,,,2,9,BBX,harnp001,1,0,,jonec004,0,P
+,31,1,stync001,,,,3,5,BBBCB,glavt001,0,0,stync001 walks. ,stync001,1,
+stync001 to 2B. ,11,1,,stync001,,,4,8,CBX,glavt001,1,0,castj004 grounds out. ,castj004,1,G
+stync001 scores. grifk002 to 2B. ,21,1,,grifk002,,,5,12,CBBX,glavt001,0,1,grifk002 singles. ,grifk002,1,
+grifk002 to 3B. ,00,1,,,grifk002,,6,13,X,glavt001,1,0,,bichd001,1,F
+,30,1,yound001,,grifk002,,7,17,BBBB,glavt001,0,0,yound001 walks. ,yound001,1,
+grifk002 scores. yound001 to 2B. ,01,1,ochoa001,yound001,,,8,19,CX,glavt001,0,1,ochoa001 singles. ,ochoa001,1,
+,12,1,ochoa001,yound001,,,9,23,CCBX,glavt001,1,0,reesp001 grounds out. ,reesp001,1,G
+,21,2,joynw001,,,,10,13,CBBX,harnp001,0,0,joynw001 singles. ,joynw001,0,
+,01,2,joynw001,,,,11,15,CX,harnp001,1,0,,surhb001,0,F
+joynw001 to 3B. ,20,2,bonib001,,joynw001,,12,18,BBX,harnp001,0,0,bonib001 singles. ,bonib001,0,
+joynw001 scores. bonib001 out. ,02,2,bakop001,,,,13,22,FSFX,harnp001,1,1,bakop001 reaches on fielder's choice. ,bakop001,0,
+,21,2,bakop001,,,,14,26,BCBX,harnp001,1,0,weisw001 grounds out. ,weisw001,0,G
+,02,2,,,,,15,26,FFX,glavt001,1,0,,laruj001,1,F
+,22,2,,,,,16,31,BSFBX,glavt001,1,0,,harnp001,1,F
+,10,2,,,,,17,33,BX,glavt001,1,0,stync001 grounds out. ,stync001,1,G
+,12,3,glavt001,,,,18,30,FBFX,harnp001,0,0,glavt001 singles. ,glavt001,0,
+glavt001 to 2B. ,00,3,furcr001,glavt001,,,19,31,X,harnp001,0,0,furcr001 singles. ,furcr001,0,G
+,00,3,furcr001,glavt001,,,20,32,X,harnp001,1,0,,jonea002,0,F
+glavt001 to 3B. furcr001 to 2B. ,20,3,,furcr001,glavt001,,21,35,BBX,harnp001,1,0,jonec004 grounds out. ,jonec004,0,G
+glavt001 scores. furcr001 scores. ,00,3,joynw001,,,,22,36,X,harnp001,0,2,joynw001 singles. ,joynw001,0,
+joynw001 to 3B. ,10,3,surhb001,,joynw001,,23,38,BX,harnp001,0,0,surhb001 singles. ,surhb001,0,
+joynw001 scores. surhb001 scores. ,32,3,,,bonib001,,24,45,SFBBFBX,harnp001,0,2,bonib001 triples. ,bonib001,0,
+bonib001 scores. ,01,3,,,,bakop001,25,47,FS,harnp001,0,1,Wild Pitch. ,bakop001,0,
+,12,3,,,,,26,51,FSBX,harnp001,1,0,bakop001 grounds out. ,bakop001,0,G
+,12,3,,,,,27,37,CBFX,glavt001,1,0,castj004 grounds out. ,castj004,1,G
+,32,3,,,,,28,43,CBFBBX,glavt001,0,1,grifk002 homers. ,grifk002,1,
+,21,3,,,,,29,47,BFBX,glavt001,1,0,,bichd001,1,F
+,00,3,,,,,30,48,X,glavt001,1,0,yound001 grounds out. ,yound001,1,G
+,22,4,,,,,31,56,FBBFX,harnp001,1,0,weisw001 grounds out. ,weisw001,0,G
+,11,4,,,,,32,59,BCX,harnp001,1,0,glavt001 grounds out. ,glavt001,0,G
+,12,4,,,,,33,63,CBFX,harnp001,1,0,furcr001 grounds out. ,furcr001,0,G
+,21,4,,ochoa001,,,34,52,BBCX,glavt001,0,0,ochoa001 doubles. ,ochoa001,1,
+ochoa001 to 3B. ,01,4,reesp001,,ochoa001,,35,54,CX,glavt001,0,0,reesp001 singles. ,reesp001,1,
+ochoa001 scores. reesp001 to 2B. ,11,4,laruj001,reesp001,,,36,57,CBX,glavt001,0,1,laruj001 singles. ,laruj001,1,
+reesp001 to 3B. laruj001 to 2B. ,01,4,,laruj001,reesp001,,37,59,LX,glavt001,1,0,Sacrifice bunt by harnp001.,harnp001,1,
+reesp001 scores. ,21,4,,laruj001,,,38,63,BSBX,glavt001,1,1,stync001 grounds out. ,stync001,1,G
+,00,4,,laruj001,,,39,64,X,glavt001,1,0,castj004 grounds out. ,castj004,1,G
+,12,5,,,,,40,68,FBFFX,harnp001,1,0,jonea002 grounds out. ,jonea002,0,G
+,00,5,,,,,41,69,X,harnp001,1,0,jonec004 grounds out. ,jonec004,0,G
+,11,5,,,,,42,72,BCX,harnp001,1,0,joynw001 grounds out. ,joynw001,0,G
+,01,5,grifk002,,,,43,66,SX,glavt001,0,0,grifk002 singles. ,grifk002,1,
+grifk002 to 3B. ,20,5,bichd001,,grifk002,,44,69,BBX,glavt001,0,0,bichd001 singles. ,bichd001,1,
+grifk002 scores. bichd001 to 3B. ,10,5,,yound001,bichd001,,45,71,BX,glavt001,0,1,yound001 doubles. ,yound001,1,
+bichd001 scores. yound001 scores. ,00,5,,,ochoa001,,47,1,X,belis001,0,2,ochoa001 triples. ,ochoa001,1,
+,31,5,,,ochoa001,,48,6,BSBBX,belis001,1,0,reesp001 grounds out. ,reesp001,1,G
+,02,5,,,ochoa001,,49,9,SSC,belis001,1,0,laruj001 strikes out. ,laruj001,1,
+ochoa001 scores. ,22,5,,,,,50,14,BFBSX,belis001,0,2,harnp001 homers. ,harnp001,1,
+,12,5,,,,,51,18,BCSX,belis001,1,0,,stync001,1,F
+,12,6,surhb001,,,,52,76,BCFX,harnp001,0,0,surhb001 singles. ,surhb001,0,
+,12,6,surhb001,,,,53,80,CBFX,harnp001,1,0,,bonib001,0,F
+surhb001 to 2B. ,31,6,bakop001,surhb001,,,54,85,BBBCB,harnp001,0,0,bakop001 walks. ,bakop001,0,
+,01,6,bakop001,surhb001,,,55,87,CX,harnp001,1,0,,weisw001,0,P
+,21,6,bakop001,surhb001,,,57,91,CBBX,harnp001,1,0,,lockk001,0,F
+,00,6,castj004,,,,59,1,X,mulht001,0,0,castj004 singles. ,castj004,1,
+,32,6,,,,,60,10,FFBFBFBFC,mulht001,2,0,grifk002 strikes out. castj004 caught stealing. ,grifk002,1,
+,10,6,,,,,61,12,BX,mulht001,1,0,,bichd001,1,F
+,10,7,,,,,62,93,BX,harnp001,1,0,furcr001 grounds out. ,furcr001,0,G
+,12,7,,,,,63,97,FBSX,harnp001,1,0,jonea002 grounds out. ,jonea002,0,G
+,10,7,,,jonec004,,64,99,BX,harnp001,0,0,jonec004 triples. ,jonec004,0,
+,22,7,,,jonec004,,65,104,CFBBX,harnp001,1,0,joynw001 grounds out. ,joynw001,0,G
+,10,7,,,,,66,14,BX,mulht001,1,0,yound001 grounds out. ,yound001,1,G
+,00,7,,,,,67,15,X,mulht001,1,0,,ochoa001,1,L
+,01,7,,,,,68,17,CX,mulht001,1,0,reesp001 grounds out. ,reesp001,1,G
+,01,8,,,,,69,106,CX,harnp001,1,0,,surhb001,0,F
+,02,8,,,,,70,109,SCS,harnp001,1,0,bonib001 strikes out. ,bonib001,0,
+,11,8,,,,,71,112,FBX,harnp001,1,0,,bakop001,0,F
+,10,8,,,,,74,2,BX,burkj001,1,0,laruj001 grounds out. ,laruj001,1,G
+,12,8,,,,,75,6,CBFS,burkj001,1,0,harnp001 strikes out. ,harnp001,1,
+,21,8,,,,,76,10,CBBX,burkj001,1,0,stync001 grounds out. ,stync001,1,G
+,01,9,,,,,78,114,CX,harnp001,1,0,,weisw001,0,P
+,22,9,,,,,79,120,CSBBFS,harnp001,1,0,lombg001 strikes out. ,lombg001,0,
+,22,9,,,,,80,126,CSBBFS,harnp001,1,0,furcr001 strikes out. ,furcr001,0,

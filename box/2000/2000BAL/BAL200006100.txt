@@ -1,0 +1,137 @@
+version,2
+info,visteam,PHI
+info,hometeam,BAL
+info,site,BAL12
+info,date,2000/06/10
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,wendh902
+info,ump1b,clara901
+info,ump2b,buckc901
+info,ump3b,reedr901
+info,pitches,pitches
+info,temp,98
+info,winddir,ltor
+info,windspeed,15
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,163
+info,attendance,48443
+info,wp,ponss001
+info,lp,schic002
+info,save,
+start,gland001,"Doug Glanville",0,1,8
+start,gantr001,"Ron Gant",0,2,7
+start,abreb001,"Bobby Abreu",0,3,9
+start,roles001,"Scott Rolen",0,4,5
+start,liebm001,"Mike Lieberthal",0,5,2
+start,duceb001,"Rob Ducey",0,6,10
+start,burrp001,"Pat Burrell",0,7,3
+start,moram001,"Mickey Morandini",0,8,4
+start,relad001,"Desi Relaford",0,9,6
+start,schic002,"Curt Schilling",0,0,1
+start,andeb001,"Brady Anderson",1,1,8
+start,bordm001,"Mike Bordick",1,2,6
+start,deshd001,"Delino DeShields",1,3,4
+start,bellj002,"Albert Belle",1,4,9
+start,surhb001,"B.J. Surhoff",1,5,7
+start,ripkc001,"Cal Ripken",1,6,5
+start,clarw001,"Will Clark",1,7,3
+start,bainh001,"Harold Baines",1,8,10
+start,johnc002,"Charles Johnson",1,9,2
+start,ponss001,"Sidney Ponson",1,0,1
+play,1,0,gland001,02,CFX,43/G
+play,1,0,gantr001,12,SCBFFS,K
+play,1,0,abreb001,22,FBFBC,K/C
+play,1,1,andeb001,10,BX,D7/7D
+play,1,1,bordm001,02,SLC,K/C
+play,1,1,deshd001,11,BCX,D7.2-H
+play,1,1,bellj002,10,BX,9/F9D.2-3
+play,1,1,surhb001,12,CBCX,D/89D.3-H
+play,1,1,ripkc001,00,X,S8.2-H
+play,1,1,clarw001,21,BFBX,7/F7D
+play,2,0,roles001,32,BBCFBFX,13/G
+play,2,0,liebm001,31,CBBBX,HR/7
+play,2,0,duceb001,32,BBCBSB,W
+play,2,0,burrp001,00,X,8/F8D
+play,2,0,moram001,32,BFBFFFBX,3/L3
+play,2,1,bainh001,31,BBBCB,W
+play,2,1,johnc002,22,BBCFX,S8.1-2
+play,2,1,andeb001,00,X,S9.2-3;1-2
+play,2,1,bordm001,01,CX,9/L9
+play,2,1,deshd001,32,CBBFBFFX,8/F8S
+play,2,1,bellj002,32,BBCBFFX,S8.3-H;2-H;1-3
+play,2,1,surhb001,01,CX,7/L7
+play,3,0,relad001,01,CX,7/F7
+play,3,0,gland001,00,X,63/G
+play,3,0,gantr001,10,BX,53/G
+play,3,1,ripkc001,01,FX,7/FL
+play,3,1,clarw001,20,BBX,7/F7D
+play,3,1,bainh001,00,X,3/G
+play,4,0,abreb001,10,BX,43/G
+play,4,0,roles001,11,CBX,53/G
+play,4,0,liebm001,20,BBX,4/P4
+play,4,1,johnc002,12,SFBS,K
+play,4,1,andeb001,00,X,8/F8
+play,4,1,bordm001,02,CFX,9/F9D
+play,5,0,duceb001,32,CBBCFBFC,K/C
+play,5,0,burrp001,12,BSSX,9/F9
+play,5,0,moram001,12,CCFFBFX,S7
+play,5,0,relad001,01,CX,8/F8
+play,5,1,deshd001,22,CBBCX,63/G
+play,5,1,bellj002,00,X,S
+play,5,1,surhb001,02,CFS,K
+play,5,1,ripkc001,11,FBX,HR/7.1-H
+play,5,1,clarw001,22,FBBFFX,31/G
+play,6,0,gland001,11,CBX,S9
+play,6,0,gantr001,10,BX,S9.1-2
+play,6,0,abreb001,10,BX,HR/78.2-H;1-H
+play,6,0,roles001,12,CFBFX,8/F8
+play,6,0,liebm001,00,X,7/F7
+play,6,0,duceb001,12,BFFS,K
+play,6,1,bainh001,31,BBBCB,W
+play,6,1,johnc002,00,X,S.1-2
+play,6,1,andeb001,00,,NP
+sub,amarr001,"Rich Amaral",1,8,12
+play,6,1,andeb001,00,,NP
+sub,holzm001,"Mark Holzemer",0,0,1
+play,6,1,andeb001,00,X,15(2)/FO.1-2
+play,6,1,bordm001,22,SBBFFS,K
+play,6,1,deshd001,12,BCCX,6(1)/FO/G.2-3
+play,7,0,burrp001,02,CFX,9/F9
+play,7,0,moram001,00,X,8/L8
+play,7,0,relad001,22,CFBBFS,K23
+play,7,1,bellj002,32,BBFBFFX,9/F9
+play,7,1,surhb001,12,CBFX,43/G
+play,7,1,ripkc001,10,BX,S7/7S
+play,7,1,clarw001,22,FBFBX,43/G
+play,8,0,gland001,30,BBBB,W
+play,8,0,gantr001,22,CBBFFX,54(1)/FO
+play,8,0,abreb001,10,BX,7/F7D.1-2
+play,8,0,roles001,01,FX,8/F8D
+play,8,1,amarr001,00,,NP
+sub,boydj001,"Jason Boyd",0,0,1
+play,8,1,amarr001,32,BCBBFB,W
+play,8,1,johnc002,12,CBFS,K
+play,8,1,andeb001,30,BBBB,W.1-2
+play,8,1,bordm001,00,X,E6/G.2-H(UR);1-3
+play,8,1,deshd001,00,,NP
+sub,wardb001,"Bryan Ward",0,0,1
+play,8,1,deshd001,00,X,8/SF.3-H(UR)
+play,8,1,bellj002,00,X,HR/7.1-H(UR);B-H(TUR)
+play,8,1,surhb001,00,X,2/FL
+play,9,0,liebm001,00,,NP
+sub,timlm001,"Mike Timlin",1,0,1
+play,9,0,liebm001,21,BCBX,D7
+play,9,0,duceb001,32,BBBCCX,43/G.2-3
+play,9,0,burrp001,31,BCBBX,8/F8S
+play,9,0,moram001,32,CBFFBBX,7/F7
+data,er,schic002,7
+data,er,holzm001,0
+data,er,boydj001,0
+data,er,wardb001,1
+data,er,ponss001,4
+data,er,timlm001,0

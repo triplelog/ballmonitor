@@ -1,0 +1,155 @@
+version,2
+info,visteam,ANA
+info,hometeam,SEA
+info,site,SEA03
+info,date,2000/06/28
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,gormb901
+info,ump1b,higgs901
+info,ump2b,everm901
+info,ump3b,dimum901
+info,pitches,pitches
+info,temp,89
+info,winddir,ltor
+info,windspeed,7
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,193
+info,attendance,32581
+info,wp,hillk001
+info,lp,moyej001
+info,save,perct001
+start,erstd001,"Darin Erstad",0,1,7
+start,gil-b001,"Benji Gil",0,2,6
+start,vaugm001,"Mo Vaughn",0,3,3
+start,salmt001,"Tim Salmon",0,4,9
+start,andeg001,"Garret Anderson",0,5,8
+start,glaut001,"Troy Glaus",0,6,5
+start,molib001,"Ben Molina",0,7,2
+start,kenna001,"Adam Kennedy",0,8,4
+start,cleme001,"Edgard Clemente",0,9,10
+start,hillk001,"Ken Hill",0,0,1
+start,hendr001,"Rickey Henderson",1,1,7
+start,camem001,"Mike Cameron",1,2,8
+start,rodra001,"Alex Rodriguez",1,3,6
+start,marte001,"Edgar Martinez",1,4,10
+start,olerj001,"John Olerud",1,5,3
+start,buhnj001,"Jay Buhner",1,6,9
+start,belld002,"David Bell",1,7,5
+start,olivj001,"Joe Oliver",1,8,2
+start,mclem001,"Mark McLemore",1,9,4
+start,moyej001,"Jamie Moyer",1,0,1
+play,1,0,erstd001,00,X,8/F8
+play,1,0,gil-b001,01,CX,S8
+play,1,0,vaugm001,30,BBBB,W.1-2
+play,1,0,salmt001,11,BFB,SB3
+play,1,0,salmt001,31,BFBBB,W.1-2
+play,1,0,andeg001,11,BFX,46(1)/FO.3-H;2-3
+play,1,0,glaut001,01,CX,S8.3-H;1-2
+play,1,0,molib001,22,BBCCX,53/G
+play,1,1,hendr001,11,BCX,9/F9
+play,1,1,camem001,32,CBBFBS,K
+play,1,1,rodra001,31,BBBCB,W
+play,1,1,marte001,00,C,SB2
+play,1,1,marte001,11,CBX,43/G
+play,2,0,kenna001,12,CCBS,K23
+play,2,0,cleme001,10,BX,8/F8
+play,2,0,erstd001,11,CBX,S9
+play,2,0,gil-b001,32,BBBFFX,6/P6
+play,2,1,olerj001,02,CFX,63/G
+play,2,1,buhnj001,32,BBBCFX,3/FL
+play,2,1,belld002,11,BCX,7/F7
+play,3,0,vaugm001,02,CCFX,3/G
+play,3,0,salmt001,31,BBFBX,63/G
+play,3,0,andeg001,12,FFBX,13/G
+play,3,1,olivj001,22,CFBBFX,S9/9S
+play,3,1,mclem001,32,BBBCFC,K/C
+play,3,1,hendr001,00,X,9/L9
+play,3,1,camem001,02,CCB,SB2
+play,3,1,camem001,32,CCBBBX,13/G
+play,4,0,glaut001,22,CBCBS,K
+play,4,0,molib001,11,CBX,63/G
+play,4,0,kenna001,32,BCCBBX,S9
+play,4,0,cleme001,10,BS,SB2
+play,4,0,cleme001,12,BSSS,K
+play,4,1,rodra001,01,FX,63/G
+play,4,1,marte001,22,CBSBX,HR/8
+play,4,1,olerj001,00,X,9/F9
+play,4,1,buhnj001,30,BBBX,S7
+play,4,1,belld002,00,X,8/F8D
+play,5,0,erstd001,22,CCBFBFX,43/G
+play,5,0,gil-b001,31,FBBBX,T8/8D
+play,5,0,vaugm001,11,CBH,HP
+play,5,0,salmt001,31,BBBSB,W.1-2
+play,5,0,andeg001,22,FFFBFBFFFS,K
+play,5,0,glaut001,02,CSFS,K
+play,5,1,olivj001,01,FX,53/G
+play,5,1,mclem001,12,CCBX,S8
+play,5,1,hendr001,10,BB,CS2(24)
+play,5,1,hendr001,31,BBCBB,W
+play,5,1,camem001,00,X,7/F7D
+play,6,0,molib001,00,X,43/G
+play,6,0,kenna001,12,CCBX,43/G
+play,6,0,cleme001,20,BBX,9/F9
+play,6,1,rodra001,22,FCBBX,8/F8
+play,6,1,marte001,32,BCCBBB,W
+play,6,1,olerj001,21,BCBX,8/F8
+play,6,1,buhnj001,00,X,8/F8
+play,7,0,erstd001,00,,NP
+sub,tomkb001,"Brett Tomko",1,0,1
+play,7,0,erstd001,32,BCBBFFX,S7
+play,7,0,gil-b001,11,BSX,D7/7D.1-H
+play,7,0,vaugm001,32,CBBBSFX,S8.2-3
+play,7,0,salmt001,22,BFBCFS,K
+play,7,0,andeg001,01,CX,16(1)3/GDP
+play,7,1,belld002,00,,NP
+sub,hases001,"Shigetoshi Hasegawa",0,0,1
+play,7,1,belld002,22,CCBFBX,53/G
+play,7,1,olivj001,00,,NP
+sub,mabrj001,"John Mabry",1,8,11
+play,7,1,mabrj001,00,X,4/L4
+play,7,1,mclem001,32,BCBCFFBX,S8
+play,7,1,hendr001,12,BCCS,K
+play,8,0,glaut001,00,,NP
+sub,mabrj001,"John Mabry",1,8,7
+play,8,0,glaut001,00,,NP
+sub,machr001,"Robert Machado",1,1,2
+play,8,0,glaut001,00,,NP
+sub,panij001,"Jose Paniagua",1,0,1
+play,8,0,glaut001,22,FBSBS,K
+play,8,0,molib001,01,FX,53/G
+play,8,0,kenna001,00,X,43/G
+play,8,1,camem001,02,CSX,9/F9
+play,8,1,rodra001,11,CBX,HR/8
+play,8,1,marte001,32,CBCBBX,E5/TH
+play,8,1,olerj001,00,,NP
+sub,ibanr001,"Raul Ibanez",1,4,12
+play,8,1,olerj001,12,CBCFS,K
+play,8,1,buhnj001,22,SBBFS,K
+play,9,0,cleme001,00,,NP
+sub,palmo001,"Orlando Palmeiro",0,9,11
+play,9,0,palmo001,00,,NP
+sub,mesaj001,"Jose Mesa",1,0,1
+play,9,0,palmo001,32,BBCBCX,7/FL
+play,9,0,erstd001,02,FFC,K/C
+play,9,0,gil-b001,02,FSC,K/C
+play,9,1,belld002,00,,NP
+sub,perct001,"Troy Percival",0,0,1
+play,9,1,belld002,12,CCBFX,9/F9
+play,9,1,mabrj001,31,BBBCB,W
+play,9,1,mclem001,11,CBX,54(1)/FO
+play,9,1,machr001,00,,NP
+sub,javis001,"Stan Javier",1,1,11
+play,9,1,javis001,10,BB,SB2
+play,9,1,javis001,32,BBCFBX,7/F7
+data,er,hillk001,1
+data,er,hases001,1
+data,er,perct001,0
+data,er,moyej001,2
+data,er,tomkb001,1
+data,er,panij001,0
+data,er,mesaj001,0

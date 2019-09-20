@@ -1,0 +1,133 @@
+version,2
+info,visteam,TBA
+info,hometeam,OAK
+info,site,OAK01
+info,date,2000/09/09
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,carlm901
+info,ump1b,demud901
+info,ump2b,timmt901
+info,ump3b,eddid901
+info,pitches,pitches
+info,temp,66
+info,winddir,torf
+info,windspeed,6
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,125
+info,attendance,30841
+info,wp,hudst001
+info,lp,lopea002
+info,save,
+start,willg001,"Gerald Williams",0,1,8
+start,cairm001,"Miguel Cairo",0,2,4
+start,cox-s001,"Steve Cox",0,3,9
+start,mcgrf001,"Fred McGriff",0,4,3
+start,vaugg001,"Greg Vaughn",0,5,10
+start,castv001,"Vinny Castilla",0,6,5
+start,flahj001,"John Flaherty",0,7,2
+start,tynej001,"Jason Tyner",0,8,7
+start,guilo001,"Ozzie Guillen",0,9,6
+start,lopea002,"Albie Lopez",0,0,1
+start,longt002,"Terrence Long",1,1,8
+start,velar001,"Randy Velarde",1,2,4
+start,giamj001,"Jason Giambi",1,3,3
+start,grieb001,"Ben Grieve",1,4,7
+start,staim001,"Matt Stairs",1,5,9
+start,tejam001,"Miguel Tejada",1,6,6
+start,chave001,"Eric Chavez",1,7,5
+start,giamj002,"Jeremy Giambi",1,8,10
+start,hernr002,"Ramon Hernandez",1,9,2
+start,hudst001,"Tim Hudson",1,0,1
+play,1,0,willg001,02,CCS,K
+play,1,0,cairm001,21,BBCX,53/G
+play,1,0,cox-s001,22,BFSBX,63/G
+play,1,1,longt002,01,CX,D7
+play,1,1,velar001,00,X,13/SH.2-3
+play,1,1,giamj001,31,BCBBX,HR/8.3-H
+play,1,1,grieb001,32,CBBCBX,HR/8
+play,1,1,staim001,31,CBBBX,9/F9
+play,1,1,tejam001,12,BFFX,53/G
+play,2,0,mcgrf001,12,BSSS,K
+play,2,0,vaugg001,00,X,9/F9
+play,2,0,castv001,00,X,5/P5
+play,2,1,chave001,20,BBX,S
+play,2,1,giamj002,01,CX,13/SH.1-2
+play,2,1,hernr002,10,BX,HR/7.2-H
+play,2,1,longt002,01,CX,4/P4
+play,2,1,velar001,22,CBBSC,K/C
+play,3,0,flahj001,10,BX,S7
+play,3,0,tynej001,11,BFX,6/FL
+play,3,0,guilo001,12,CFBS,K
+play,3,0,willg001,12,FFBFX,13/G
+play,3,1,giamj001,10,BX,HR/8
+play,3,1,grieb001,20,BBX,63/G
+play,3,1,staim001,10,BX,9/F9
+play,3,1,tejam001,12,CBFX,9/F9
+play,4,0,cairm001,00,X,9/F9
+play,4,0,cox-s001,12,CFBX,63/G
+play,4,0,mcgrf001,10,BX,43/G
+play,4,1,chave001,11,BCX,S9
+play,4,1,giamj002,02,SFX,4/P4
+play,4,1,hernr002,10,BX,4/P4
+play,4,1,longt002,10,BX,HR/9.1-H
+play,4,1,velar001,00,,NP
+sub,endet001,"Trevor Enders",0,0,1
+play,4,1,velar001,11,CBX,3/FL
+play,5,0,vaugg001,32,FBBBFFX,53/G
+play,5,0,castv001,32,SBSBFBS,K
+play,5,0,flahj001,00,X,53/G
+play,5,1,giamj001,32,BCBBCB,W
+play,5,1,grieb001,22,BFBCX,64(1)3/GDP
+play,5,1,staim001,32,CBBSBX,S
+play,5,1,tejam001,11,SBX,HR/8.1-H
+play,5,1,chave001,02,CFX,1/L1
+play,6,0,tynej001,12,BFFX,8/F8
+play,6,0,guilo001,12,FBCX,13/G
+play,6,0,willg001,21,BSBX,S9
+play,6,0,cairm001,11,BFX,64(1)/FO
+play,6,1,giamj002,11,CBX,S7
+play,6,1,hernr002,11,BCX,64(1)3/GDP
+play,6,1,longt002,12,CCBX,D/89
+play,6,1,velar001,11,CBX,3/FL
+play,7,0,cox-s001,31,BFBBX,7/F7
+play,7,0,mcgrf001,00,X,43/G
+play,7,0,vaugg001,11,BCX,53/G
+play,7,1,giamj001,00,,NP
+sub,cox-s001,"Steve Cox",0,3,3
+play,7,1,giamj001,00,,NP
+sub,guilj001,"Jose Guillen",0,6,9
+play,7,1,giamj001,00,,NP
+sub,rolld001,"Damian Rolls",0,4,5
+play,7,1,giamj001,12,CFBFS,K
+play,7,1,grieb001,21,BFBX,43/G
+play,7,1,staim001,22,CBBCC,K/C
+play,8,0,guilj001,00,,NP
+sub,menef001,"Frank Menechino",1,2,4
+play,8,0,guilj001,00,,NP
+sub,chrir001,"Ryan Christenson",1,4,7
+play,8,0,guilj001,21,BFBX,23/G
+play,8,0,flahj001,12,BSFX,8/F8
+play,8,0,tynej001,12,BCFX,43/G
+play,8,1,tejam001,00,,NP
+sub,fiort001,"Tony Fiore",0,0,1
+play,8,1,tejam001,01,FX,7/F7
+play,8,1,chave001,22,CBBFFX,S8/8S
+play,8,1,giamj002,32,CFFFBBBS,K
+play,8,1,hernr002,00,X,S8/8S.1-2
+play,8,1,longt002,32,BBSBFX,7/F7
+play,9,0,guilo001,00,,NP
+sub,piata001,"Adam Piatt",1,3,9
+play,9,0,guilo001,00,,NP
+sub,staim001,"Matt Stairs",1,5,3
+play,9,0,guilo001,00,X,43/G
+play,9,0,willg001,00,X,53/G
+play,9,0,cairm001,01,CX,8/F8
+data,er,lopea002,8
+data,er,endet001,2
+data,er,fiort001,0
+data,er,hudst001,0

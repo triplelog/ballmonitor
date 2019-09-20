@@ -1,0 +1,85 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,02,1,,,,,0,3,CFC,estes001,1,0,peret004 strikes out. ,peret004,0,
+,00,1,,,,,1,4,X,estes001,1,0,alfoe001 grounds out. ,alfoe001,0,G
+,30,1,piazm001,,,,2,8,BBBB,estes001,0,0,piazm001 walks. ,piazm001,0,
+,22,1,piazm001,,,,3,13,BBCCX,estes001,1,0,zeilt001 grounds out. ,zeilt001,0,G
+,01,1,,,,,4,2,CX,leita001,1,0,,murrc001,1,P
+,22,1,,,,,5,8,CCBBFS,leita001,1,0,muelb001 strikes out. ,muelb001,1,
+,02,1,,,,,6,11,FFX,leita001,1,0,bondb001 grounds out. ,bondb001,1,G
+,01,2,ventr001,,,,7,15,FH,estes001,0,0,ventr001 hit by pitch. ,ventr001,0,
+ventr001 to 2B. ,30,2,agbab001,ventr001,,,8,19,BBBB,estes001,0,0,agbab001 walks. ,agbab001,0,
+ventr001 to 3B. agbab001 out. ,02,2,paytj001,,ventr001,,9,22,CFX,estes001,1,0,paytj001 reaches on fielder's choice. ,paytj001,0,
+paytj001 to 2B. ,30,2,bordm001,paytj001,ventr001,,10,26,BBBB,estes001,0,0,bordm001 walks. ,bordm001,0,
+paytj001 to 3B. bordm001 to 2B. ventr001 out. ,01,2,leita001,bordm001,paytj001,,11,28,CX,estes001,1,0,leita001 reaches on fielder's choice. ,leita001,0,G
+paytj001 scores. bordm001 scores. leita001 to 2B. ,01,2,peret004,leita001,,,12,30,FX,estes001,0,2,peret004 singles. ,peret004,0,
+,12,2,peret004,leita001,,,13,34,CFBS,estes001,1,0,alfoe001 strikes out. ,alfoe001,0,
+,11,2,kentj001,,,,14,14,SBX,leita001,0,0,kentj001 singles. ,kentj001,1,
+,11,2,,kentj001,,burke001,15,17,BFB,leita001,0,0,kentj001 steals 2B. ,burke001,1,
+kentj001 scores. ,32,2,,burke001,,,16,23,BFBBFX,leita001,0,1,burke001 doubles. ,burke001,1,
+,11,2,,burke001,,,17,26,BFX,leita001,1,0,,martr003,1,F
+,01,2,,burke001,,,18,28,CX,leita001,1,0,aurir001 grounds out. ,aurir001,1,G
+,21,2,,burke001,,,19,32,BSBX,leita001,1,0,,estab001,1,
+,10,3,piazm001,,,,20,36,BX,estes001,0,0,piazm001 singles. ,piazm001,0,
+,12,3,piazm001,,,,21,40,BCFC,estes001,1,0,zeilt001 strikes out. ,zeilt001,0,
+,00,3,piazm001,,,,22,41,X,estes001,1,0,,ventr001,0,F
+piazm001 to 2B. ,00,3,agbab001,piazm001,,,23,42,X,estes001,0,0,agbab001 singles. ,agbab001,0,
+piazm001 to 3B. agbab001 out. ,01,3,paytj001,,piazm001,,24,44,CX,estes001,1,0,paytj001 reaches on fielder's choice. ,paytj001,0,
+,30,3,estes001,,,,25,36,BBBB,leita001,0,0,estes001 walks. ,estes001,1,
+,12,3,estes001,,,,26,40,CFBC,leita001,1,0,murrc001 strikes out. ,murrc001,1,
+estes001 out. ,02,3,muelb001,,,,27,43,CSX,leita001,1,0,muelb001 singles. ,muelb001,1,
+,31,3,muelb001,,,,28,48,BFBBX,leita001,1,0,,bondb001,1,F
+,12,4,,,,,30,5,CCBFX,ruetk001,1,0,bordm001 grounds out. ,bordm001,0,G
+,12,4,,,,,31,9,CBFC,ruetk001,1,0,leita001 strikes out. ,leita001,0,
+,32,4,peret004,,,,32,16,CBFBFBX,ruetk001,0,0,peret004 singles. ,peret004,0,G
+,12,4,peret004,,,,33,20,CBFX,ruetk001,1,0,,alfoe001,0,F
+,00,4,,,,,34,49,X,leita001,1,0,,kentj001,1,
+,32,4,,,,,35,56,BBCBFFS,leita001,1,0,burke001 strikes out. ,burke001,1,
+,22,4,,,,,36,61,BBSSS,leita001,1,0,martr003 strikes out. ,martr003,1,
+,11,5,,,,,37,23,CBX,ruetk001,1,0,piazm001 grounds out. ,piazm001,0,G
+,21,5,,,,,38,27,BCBX,ruetk001,1,0,zeilt001 grounds out. ,zeilt001,0,G
+,31,5,ventr001,,,,39,32,BBCBB,ruetk001,0,0,ventr001 walks. ,ventr001,0,
+,31,5,ventr001,,,,40,37,BBBCX,ruetk001,1,0,agbab001 grounds out. ,agbab001,0,G
+,00,5,,,,,41,62,X,leita001,1,0,,aurir001,1,F
+,32,5,,,,,42,69,BSBFBFX,leita001,1,0,,estab001,1,P
+,31,5,ruetk001,,,,43,74,BBBCB,leita001,0,0,ruetk001 walks. ,ruetk001,1,
+,32,5,ruetk001,,,,44,83,CFFBBBFFS,leita001,1,0,murrc001 strikes out. ,murrc001,1,
+,21,6,,,,,45,41,BBCX,ruetk001,1,0,,paytj001,0,P
+,00,6,bordm001,,,,46,42,X,ruetk001,0,0,bordm001 singles. ,bordm001,0,
+,10,6,,,,,47,44,BX,ruetk001,2,0,Double Play. ,leita001,0,G
+,02,6,,,,,48,86,CFS,leita001,1,0,muelb001 strikes out. ,muelb001,1,
+,31,6,,,,,49,91,BFBBX,leita001,1,0,,bondb001,1,F
+,11,6,,,,,50,94,BCX,leita001,1,0,,kentj001,1,L
+,22,7,,,,,51,49,CCBBX,ruetk001,1,0,peret004 grounds out. ,peret004,0,G
+,32,7,,,,,52,55,FBFBBX,ruetk001,1,0,,alfoe001,0,F
+,21,7,,piazm001,,,53,59,CBBX,ruetk001,0,0,piazm001 doubles. ,piazm001,0,
+,22,7,,piazm001,,,54,64,CBFBX,ruetk001,1,0,,zeilt001,0,F
+,31,7,burke001,,,,55,99,BBFBB,leita001,0,0,burke001 walks. ,burke001,1,
+burke001 out. ,01,7,martr003,,,,56,101,CX,leita001,1,0,martr003 reaches on fielder's choice. ,martr003,1,G
+,01,7,martr003,,,,57,103,CX,leita001,1,0,,aurir001,1,F
+,32,7,martr003,,,,58,113,BBCBSFFFFX,leita001,1,0,,estab001,1,P
+,32,8,,,,,59,71,LBBBCFX,ruetk001,1,0,,ventr001,0,F
+,32,8,agbab001,,,,61,7,FCBBFBB,henrd002,0,0,agbab001 walks. ,agbab001,0,
+,10,8,,,,,63,9,BX,henrd002,2,0,Double Play. ,paytj001,0,G
+,01,8,,,,,66,115,CX,leita001,1,0,,cresf001,1,
+,32,8,murrc001,,,,67,122,BFFBFBX,leita001,0,0,murrc001 singles. ,murrc001,1,
+,01,8,,,,,68,124,CX,leita001,2,0,Double Play. ,muelb001,1,
+,22,9,,,,,70,5,BBCSC,rodrf002,1,0,bordm001 strikes out. ,bordm001,0,
+,12,9,,,,,71,10,SSFBS,rodrf002,1,0,leita001 strikes out. ,leita001,0,
+,32,9,peret004,,,,72,18,BBCFFBFX,rodrf002,0,0,peret004 singles. ,peret004,0,
+peret004 scores. ,20,9,,,,,73,21,BBX,rodrf002,0,2,alfoe001 homers. ,alfoe001,0,
+,22,9,,,,,74,27,BFFBFX,rodrf002,1,0,,piazm001,0,
+,10,9,,bondb001,,,75,126,BX,leita001,0,0,bondb001 doubles. ,bondb001,1,
+bondb001 to 2B. ,12,9,kentj001,bondb001,,,77,4,CSBX,benia001,0,0,kentj001 singles. ,kentj001,1,
+,00,9,kentj001,bondb001,,,78,5,X,benia001,1,0,,burke001,1,F
+bondb001 scores. kentj001 scores. ,21,9,,,,,80,9,BBCX,benia001,0,3,snowj001 homers. ,snowj001,1,
+,12,9,,,,,81,13,SSBX,benia001,1,0,aurir001 grounds out. ,aurir001,1,G
+,02,9,,,,,82,16,CCX,benia001,1,0,,estab001,1,P
+,11,10,,,,,85,30,BSX,rodrf002,1,0,zeilt001 grounds out. ,zeilt001,0,G
+,01,10,,,,,86,32,FX,rodrf002,1,0,,ventr001,0,
+,01,10,,hamid001,,,88,34,FX,rodrf002,0,0,hamid001 doubles. ,hamid001,0,
+hamid001 scores. ,00,10,paytj001,,,,89,35,X,rodrf002,0,1,paytj001 singles. ,paytj001,0,
+,12,10,paytj001,,,,90,39,CBFS,rodrf002,1,0,bordm001 strikes out. ,bordm001,0,
+,32,10,riosa001,,,,93,23,CBSFBBX,benia001,0,0,riosa001 singles. ,riosa001,1,
+riosa001 to 2B. ,00,10,,riosa001,,,96,1,X,franj001,1,0,Sacrifice bunt by benam001.,benam001,1,
+riosa001 out. muelb001 to 1B. ,10,10,muelb001,,,,97,3,BX,franj001,1,0,muelb001 hits into a fielder's choice. ,muelb001,1,
+,32,10,muelb001,,,,98,10,BBSBCFC,franj001,1,0,bondb001 strikes out. ,bondb001,1,

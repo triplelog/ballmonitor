@@ -1,0 +1,140 @@
+version,2
+info,visteam,PHI
+info,hometeam,SLN
+info,site,STL09
+info,date,2000/08/19
+info,number,0
+info,starttime,7:10PM
+info,daynight,night
+info,usedh,false
+info,umphome,emmep901
+info,ump1b,riekr901
+info,ump2b,davig901
+info,ump3b,guccc901
+info,pitches,pitches
+info,temp,72
+info,winddir,ltor
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,drizzle
+info,sky,cloudy
+info,timeofgame,161
+info,attendance,47163
+info,wp,hentp001
+info,lp,daalo001
+info,save,
+start,gland001,"Doug Glanville",0,1,8
+start,abreb001,"Bobby Abreu",0,2,9
+start,roles001,"Scott Rolen",0,3,5
+start,liebm001,"Mike Lieberthal",0,4,2
+start,lee-t002,"Travis Lee",0,5,3
+start,burrp001,"Pat Burrell",0,6,7
+start,andem003,"Marlon Anderson",0,7,4
+start,peret003,"Tomas Perez",0,8,6
+start,daalo001,"Omar Daal",0,9,1
+start,vinaf001,"Fernando Vina",1,1,4
+start,rente001,"Edgar Renteria",1,2,6
+start,dunss001,"Shawon Dunston",1,3,7
+start,tatif001,"Fernando Tatis",1,4,5
+start,davie001,"Eric Davis",1,5,9
+start,paquc001,"Craig Paquette",1,6,3
+start,mathm001,"Mike Matheny",1,7,2
+start,drewj001,"J.D. Drew",1,8,8
+start,hentp001,"Pat Hentgen",1,9,1
+play,1,0,gland001,02,CCS,K
+play,1,0,abreb001,32,CSFBBBX,S8
+play,1,0,roles001,01,FS,SB2
+play,1,0,roles001,22,FSFBBX,7/F7
+play,1,0,liebm001,31,BBBCB,W
+play,1,0,lee-t002,01,FX,S8.2-H;1-3
+play,1,0,burrp001,32,BBCBFB,W.1-2
+play,1,0,andem003,11,BFX,6/P6
+play,1,1,vinaf001,00,X,S
+play,1,1,rente001,32,FBBBFB,W.1-2
+play,1,1,dunss001,10,BX,D/78D.2-H;1-H
+play,1,1,tatif001,12,BCCFFC,K/C
+play,1,1,davie001,00,X,S7.2-H
+play,1,1,paquc001,10,BX,7/F7D
+play,1,1,mathm001,12,CSBS,K
+play,2,0,peret003,30,BBBB,W
+play,2,0,daalo001,10,BX,16(1)/FO
+play,2,0,gland001,12,FFBX,4/P4
+play,2,0,abreb001,22,BCFFBC,K/C
+play,2,1,drewj001,32,BSBFBC,K/C
+play,2,1,hentp001,02,CCS,K
+play,2,1,vinaf001,32,BCBCBFX,S7
+play,2,1,rente001,02,CC1,POCS2(136)
+play,3,0,roles001,22,CBBFX,31/G
+play,3,0,liebm001,00,X,4/P4
+play,3,0,lee-t002,22,FFFBBC,K/C
+play,3,1,rente001,00,X,53/G
+play,3,1,dunss001,32,BFFBFBFS,K
+play,3,1,tatif001,02,CSS,K
+play,4,0,burrp001,00,X,S9
+play,4,0,andem003,31,BFBBB,W.1-2
+play,4,0,peret003,12,BFFX,3/G.2-3;1-2
+play,4,0,daalo001,10,BX,6/P6
+play,4,0,gland001,22,CBBFX,1/G
+play,4,1,davie001,00,X,S8
+play,4,1,paquc001,11,BFX,3/FL
+play,4,1,mathm001,01,SX,8/F8
+play,4,1,drewj001,00,X,S8.1-2
+play,4,1,hentp001,02,SFS,K
+play,5,0,abreb001,00,X,S5/BG5
+play,5,0,roles001,32,BBBFFFB,W.1-2
+play,5,0,liebm001,01,CX,6/L6
+play,5,0,lee-t002,11,BFX,9/F9
+play,5,0,burrp001,12,BSFX,8/F8
+play,5,1,vinaf001,11,CBX,43/G
+play,5,1,rente001,21,CBBX,53/G
+play,5,1,dunss001,32,SFBBBS,K
+play,6,0,andem003,00,,NP
+sub,morrm001,"Matt Morris",1,9,1
+play,6,0,andem003,12,CCBFFX,7/F7
+play,6,0,peret003,02,CFS,K
+play,6,0,daalo001,02,CFX,S7
+play,6,0,gland001,32,FBBBCX,4/P4
+play,6,1,tatif001,22,BSSBC,K/C
+play,6,1,davie001,30,BBBB,W
+play,6,1,paquc001,00,X,S7.1-2
+play,6,1,mathm001,10,BX,164(1)3/GDP
+play,7,0,abreb001,00,,NP
+sub,paquc001,"Craig Paquette",1,6,5
+play,7,0,abreb001,00,,NP
+sub,clarw001,"Will Clark",1,4,3
+play,7,0,abreb001,12,CBSC,K/C
+play,7,0,roles001,01,CX,63/G
+play,7,0,liebm001,32,BBSCBX,2/FL
+play,7,1,drewj001,10,BX,4/P4
+play,7,1,morrm001,00,,NP
+sub,polap001,"Placido Polanco",1,9,11
+play,7,1,polap001,11,CBX,S7
+play,7,1,vinaf001,31,BBBCB,W.1-2
+play,7,1,rente001,20,BBX,HR/7.2-H;1-H
+play,7,1,dunss001,10,BX,6/P6
+play,7,1,clarw001,11,CBX,43/G
+play,8,0,lee-t002,00,,NP
+sub,vered001,"Dave Veres",1,9,1
+play,8,0,lee-t002,31,CBBBX,8/F8
+play,8,0,burrp001,02,FSFS,K
+play,8,0,andem003,00,X,13/G
+play,8,1,davie001,00,,NP
+sub,boydj001,"Jason Boyd",0,9,1
+play,8,1,davie001,20,BBX,13/G
+play,8,1,paquc001,11,BFX,3/FL
+play,8,1,mathm001,12,CBSS,K
+play,9,0,peret003,00,,NP
+sub,timlm001,"Mike Timlin",1,9,1
+play,9,0,peret003,01,CX,63/G
+play,9,0,boydj001,00,,NP
+sub,duceb001,"Rob Ducey",0,9,11
+play,9,0,duceb001,22,CBFBX,S9
+play,9,0,gland001,21,BBCX,HR/7.1-H
+play,9,0,abreb001,11,BCX,8/F8
+play,9,0,roles001,22,BCCBX,8/F8
+data,er,daalo001,6
+data,er,boydj001,0
+data,er,hentp001,1
+data,er,morrm001,0
+data,er,vered001,0
+data,er,timlm001,2

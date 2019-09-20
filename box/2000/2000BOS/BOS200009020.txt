@@ -1,0 +1,162 @@
+version,2
+info,visteam,SEA
+info,hometeam,BOS
+info,site,BOS07
+info,date,2000/09/02
+info,number,0
+info,starttime,1:15PM
+info,daynight,day
+info,usedh,true
+info,umphome,millb901
+info,ump1b,mealj901
+info,ump2b,younl901
+info,ump3b,katzt901
+info,pitches,pitches
+info,temp,56
+info,winddir,fromcf
+info,windspeed,12
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,193
+info,attendance,31830
+info,wp,garcf002
+info,lp,garcr001
+info,save,sasak001
+start,mclem001,"Mark McLemore",0,1,4
+start,marta001,"Al Martin",0,2,7
+start,rodra001,"Alex Rodriguez",0,3,6
+start,marte001,"Edgar Martinez",0,4,10
+start,buhnj001,"Jay Buhner",0,5,9
+start,guilc001,"Carlos Guillen",0,6,5
+start,camem001,"Mike Cameron",0,7,8
+start,olivj001,"Joe Oliver",0,8,2
+start,belld002,"David Bell",0,9,3
+start,garcf002,"Freddy An. Garcia",0,0,1
+start,nixot001,"Trot Nixon",1,1,9
+start,garcn001,"Nomar Garciaparra",1,2,6
+start,everc001,"Carl Everett",1,3,8
+start,bichd001,"Dante Bichette",1,4,10
+start,oleat001,"Troy O'Leary",1,5,7
+start,varij001,"Jason Varitek",1,6,2
+start,alexm001,"Manny Alexander",1,7,5
+start,brogr001,"Rico Brogna",1,8,3
+start,lansm001,"Mike Lansing",1,9,4
+start,martr002,"Ramon Martinez",1,0,1
+play,1,0,mclem001,22,CBBFS,K
+play,1,0,marta001,12,FFBX,43/G
+play,1,0,rodra001,32,BBCBFB,W
+play,1,0,marte001,01,CX,9/F9
+play,1,1,nixot001,01,CX,7/F7
+play,1,1,garcn001,00,X,7/F7S
+play,1,1,everc001,22,CBSBX,D9
+play,1,1,bichd001,02,CFFS,K
+play,2,0,buhnj001,21,FBBX,S7/7D
+play,2,0,guilc001,00,X,7/F7
+play,2,0,camem001,01,FH,HP.1-2
+play,2,0,olivj001,21,CBBX,4/P4
+play,2,0,belld002,00,X,8/F8
+play,2,1,oleat001,20,BBX,8/F8
+play,2,1,varij001,02,CSX,43/G
+play,2,1,alexm001,22,CBCBX,63/G
+play,3,0,mclem001,32,BCBCBX,8/F8
+play,3,0,marta001,12,CFBC,K/C
+play,3,0,rodra001,10,BX,7/F7
+play,3,1,brogr001,12,CFBS,K
+play,3,1,lansm001,22,CBSFBX,S
+play,3,1,nixot001,12,BCCS,K
+play,3,1,garcn001,11,SBX,7/F7D
+play,4,0,marte001,00,X,S7
+play,4,0,buhnj001,01,SX,6/P6
+play,4,0,guilc001,11,BSX,8/F8
+play,4,0,camem001,21,BBCX,3/L3
+play,4,1,everc001,32,BBCBFS,K
+play,4,1,bichd001,02,SFS,K
+play,4,1,oleat001,32,FBSBBX,63/G
+play,5,0,olivj001,22,BFBSFFS,K
+play,5,0,belld002,32,BBFBFX,53/G
+play,5,0,mclem001,32,BBBCCB,W
+play,5,0,marta001,01,CB,CS2(26)
+play,5,1,varij001,10,BX,8/F8
+play,5,1,alexm001,22,BCBCS,K
+play,5,1,brogr001,00,X,8/F8D
+play,6,0,marta001,31,BBFBX,9/L9
+play,6,0,rodra001,32,BBFBSFB,W
+play,6,0,marte001,00,H,HP.1-2
+play,6,0,buhnj001,31,BBBCB,W.2-3;1-2
+play,6,0,guilc001,00,,NP
+sub,pichh001,"Hipolito Pichardo",1,0,1
+play,6,0,guilc001,00,X,5/FL
+play,6,0,camem001,12,CBCFS,K
+play,6,1,lansm001,01,FX,7/F7
+play,6,1,nixot001,12,CBSX,43/G
+play,6,1,garcn001,12,FBSS,K
+play,7,0,olivj001,00,X,13/G
+play,7,0,belld002,00,X,63/G
+play,7,0,mclem001,32,CBSBBFX,S8
+play,7,0,marta001,00,,NP
+sub,cormr001,"Rheal Cormier",1,0,1
+play,7,0,marta001,00,,NP
+sub,leshb001,"Brian Lesher",0,2,11
+play,7,0,leshb001,32,BFBBFX,T9/9D.1-H
+play,7,0,rodra001,00,,NP
+sub,garcr001,"Rich Garces",1,0,1
+play,7,0,rodra001,11,CBX,4/P4
+play,7,1,everc001,00,,NP
+sub,leshb001,"Brian Lesher",0,2,3
+play,7,1,everc001,00,,NP
+sub,ibanr001,"Raul Ibanez",0,9,7
+play,7,1,everc001,02,FFX,31/G
+play,7,1,bichd001,20,BBX,3/FL
+play,7,1,oleat001,11,BCX,HR/89
+play,7,1,varij001,01,CX,7/F7S
+play,8,0,marte001,01,CX,HR/8
+play,8,0,buhnj001,12,SBSS,K
+play,8,0,guilc001,22,CBSBX,43/G
+play,8,0,camem001,32,BBCBFC,K/C
+play,8,1,alexm001,00,,NP
+sub,gipsc001,"Charles Gipson",0,5,9
+play,8,1,alexm001,00,,NP
+sub,cummm001,"Midre Cummings",1,7,11
+play,8,1,cummm001,00,,NP
+sub,rhoda001,"Arthur Rhodes",0,0,1
+play,8,1,cummm001,00,,NP
+sub,gilkb001,"Bernard Gilkey",1,7,11
+play,8,1,gilkb001,22,FCBBS,K
+play,8,1,brogr001,00,,NP
+sub,alcai001,"Israel Alcantara",1,8,11
+play,8,1,alcai001,22,BCBSX,7/F7
+play,8,1,lansm001,12,BCCS,K
+play,9,0,olivj001,00,,NP
+sub,alcai001,"Israel Alcantara",1,8,3
+play,9,0,olivj001,00,,NP
+sub,offej001,"Jose Offerman",1,7,4
+play,9,0,olivj001,00,,NP
+sub,lansm001,"Mike Lansing",1,9,5
+play,9,0,olivj001,22,BFCBFX,S7
+play,9,0,ibanr001,12,BLSS,K
+play,9,0,mclem001,32,BBCFBB,W.1-2
+play,9,0,leshb001,00,,NP
+sub,hendr001,"Rickey Henderson",0,8,12
+play,9,0,leshb001,02,SFFFX,D/78.2-H;1-H
+play,9,0,rodra001,00,,NP
+sub,waket001,"Tim Wakefield",1,0,1
+play,9,0,rodra001,02,CFS,K+SB3
+play,9,0,marte001,02,FCS,K
+play,9,1,nixot001,00,,NP
+sub,wilsd001,"Dan Wilson",0,8,2
+play,9,1,nixot001,32,CBCFFBFBB,W
+play,9,1,garcn001,00,,NP
+sub,sasak001,"Kazuhiro Sasaki",0,0,1
+play,9,1,garcn001,11,CBX,8/F8
+play,9,1,everc001,31,SBBBB,W.1-2
+play,9,1,bichd001,02,FCFX,5(2)/FO.1-2
+play,9,1,oleat001,22,BSCBX,9/F9S
+data,er,garcf002,1
+data,er,rhoda001,0
+data,er,sasak001,0
+data,er,martr002,0
+data,er,pichh001,1
+data,er,cormr001,0
+data,er,garcr001,3
+data,er,waket001,0

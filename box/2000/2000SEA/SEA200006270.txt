@@ -1,0 +1,141 @@
+version,2
+info,visteam,ANA
+info,hometeam,SEA
+info,site,SEA03
+info,date,2000/06/27
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,dimum901
+info,ump1b,gormb901
+info,ump2b,crawj901
+info,ump3b,everm901
+info,pitches,pitches
+info,temp,89
+info,winddir,ltor
+info,windspeed,6
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,193
+info,attendance,32051
+info,wp,selea001
+info,lp,belct001
+info,save,sasak001
+start,erstd001,"Darin Erstad",0,1,7
+start,spies001,"Scott Spiezio",0,2,10
+start,vaugm001,"Mo Vaughn",0,3,3
+start,salmt001,"Tim Salmon",0,4,9
+start,andeg001,"Garret Anderson",0,5,8
+start,glaut001,"Troy Glaus",0,6,5
+start,molib001,"Ben Molina",0,7,2
+start,kenna001,"Adam Kennedy",0,8,4
+start,gil-b001,"Benji Gil",0,9,6
+start,belct001,"Tim Belcher",0,0,1
+start,hendr001,"Rickey Henderson",1,1,7
+start,camem001,"Mike Cameron",1,2,8
+start,rodra001,"Alex Rodriguez",1,3,6
+start,marte001,"Edgar Martinez",1,4,10
+start,olerj001,"John Olerud",1,5,3
+start,buhnj001,"Jay Buhner",1,6,9
+start,belld002,"David Bell",1,7,5
+start,olivj001,"Joe Oliver",1,8,2
+start,mclem001,"Mark McLemore",1,9,4
+start,selea001,"Aaron Sele",1,0,1
+play,1,0,erstd001,22,BCBSS,K
+play,1,0,spies001,30,BBBB,W
+play,1,0,vaugm001,21,BBSX,9/F9
+play,1,0,salmt001,22,FSBBS,K
+play,1,1,hendr001,00,X,8/F8
+play,1,1,camem001,32,CBBSBFB,W
+play,1,1,rodra001,12,FSBC,K/C
+play,1,1,marte001,30,BBBB,W.1-2
+play,1,1,olerj001,21,CBBX,S7/7S.2-H;1-2
+play,1,1,buhnj001,32,FFBBFBFS,K
+play,2,0,andeg001,02,CCX,31/G
+play,2,0,glaut001,22,BCFBS,K
+play,2,0,molib001,32,CBFFBBX,S7
+play,2,0,kenna001,32,BFBBFS,K
+play,2,1,belld002,10,BX,HR/7
+play,2,1,olivj001,12,BCCX,S9
+play,2,1,mclem001,32,FBCBFBFFB,W.1-2
+play,2,1,hendr001,12,CBFX,54(1)/FO.2-3
+play,2,1,camem001,00,,BK.3-H;1-2
+play,2,1,camem001,00,,NP
+sub,fyhrm001,"Mike Fyhrie",0,0,1
+com,"ej,belct001,P,dimum901,Balk call"
+com,"ej,sciom001,M,dimum901,Ejection of Belcher"
+com,"Tim Belcher and Angels manager Mike Scioscia ejected by HP umpire Mike Dimuro"
+play,2,1,camem001,22,BBCFC,K/C
+play,2,1,rodra001,22,CCBBX,9/F9
+play,3,0,gil-b001,20,BBX,43/G
+play,3,0,erstd001,21,CBBX,43/G
+play,3,0,spies001,22,BFCBX,S9/9S
+play,3,0,vaugm001,22,CBCBX,S8/8S.1-3
+play,3,0,salmt001,00,X,S8.3-H;1-2
+play,3,0,andeg001,20,BBX,7/F7
+play,3,1,marte001,22,CBBCFC,K/C
+play,3,1,olerj001,22,FBCFBX,3/G
+play,3,1,buhnj001,32,CBSBBC,K/C
+play,4,0,glaut001,32,CBBFBC,K/C
+play,4,0,molib001,22,CBCBX,63/G
+play,4,0,kenna001,22,BCSBS,K
+play,4,1,belld002,10,BX,S
+play,4,1,olivj001,10,BX,S9.1-3
+play,4,1,mclem001,22,CBFBX,46(1)3/GDP.3-H
+play,4,1,hendr001,12,CSFBC,K/C
+play,5,0,gil-b001,21,CBBX,53/G
+play,5,0,erstd001,32,BCBSFFBX,53/G
+play,5,0,spies001,11,BCX,4/P4
+play,5,1,camem001,32,BFCFBBX,HR/7
+play,5,1,rodra001,10,BX,S7
+play,5,1,marte001,32,CBBBFX,64(1)3/GDP
+play,5,1,olerj001,02,CSC,K/C
+play,6,0,vaugm001,11,BFX,HR/9
+play,6,0,salmt001,00,X,63/G
+play,6,0,andeg001,12,BFSFFX,9/F9D
+play,6,0,glaut001,31,BBBCB,W
+play,6,0,molib001,10,BX,54(1)/FO
+play,6,1,buhnj001,00,,NP
+sub,potel001,"Lou Pote",0,0,1
+play,6,1,buhnj001,22,BFSBX,2/FL
+play,6,1,belld002,22,CBSBC,K/C
+play,6,1,olivj001,22,BFBFFS,K
+play,7,0,kenna001,30,BBBB,W
+play,7,0,gil-b001,01,CX,7/F7D.1-2
+play,7,0,erstd001,00,,NP
+sub,rhoda001,"Arthur Rhodes",1,0,1
+play,7,0,erstd001,00,B,WP.2-3
+play,7,0,erstd001,21,BFBX,63/G.3-H
+play,7,0,spies001,01,FX,2/FL
+play,7,1,mclem001,22,BFBFS,K
+play,7,1,hendr001,32,BSBFBB,W
+play,7,1,camem001,21,BBFB,SB2
+play,7,1,camem001,32,BBFBFX,53/G
+play,7,1,rodra001,12,SBFB,SB3
+play,7,1,rodra001,22,SBFBX,8/F8
+play,8,0,vaugm001,22,CSBBFFFS,K
+play,8,0,salmt001,12,BFFS,K
+play,8,0,andeg001,01,FX,8/F8
+play,8,1,marte001,00,,NP
+sub,petkm001,"Mark Petkovsek",0,0,1
+play,8,1,marte001,21,FBBX,9/F9
+play,8,1,olerj001,22,FBSBX,S
+play,8,1,buhnj001,11,FBX,4/L4
+play,8,1,belld002,32,BFBFBB,W.1-2
+play,8,1,olivj001,10,BX,7/F7
+play,9,0,glaut001,00,,NP
+sub,ibanr001,"Raul Ibanez",1,6,9
+play,9,0,glaut001,00,,NP
+sub,sasak001,"Kazuhiro Sasaki",1,0,1
+play,9,0,glaut001,12,SBCS,K23
+play,9,0,molib001,02,FSS,K
+play,9,0,kenna001,00,X,8/F8
+data,er,belct001,3
+data,er,fyhrm001,2
+data,er,potel001,0
+data,er,petkm001,0
+data,er,selea001,3
+data,er,rhoda001,0
+data,er,sasak001,0

@@ -1,0 +1,158 @@
+version,2
+info,visteam,TBA
+info,hometeam,SEA
+info,site,SEA03
+info,date,2000/05/19
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,culbf901
+info,ump1b,welkb901
+info,ump2b,froeb901
+info,ump3b,wintm901
+info,pitches,pitches
+info,temp,64
+info,winddir,ltor
+info,windspeed,6
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,206
+info,attendance,34067
+info,wp,mesaj001
+info,lp,taylb001
+info,save,sasak001
+start,willg001,"Gerald Williams",0,1,8
+start,castv001,"Vinny Castilla",0,2,5
+start,vaugg001,"Greg Vaughn",0,3,7
+start,mcgrf001,"Fred McGriff",0,4,3
+start,cansj001,"Jose Canseco",0,5,10
+start,guilj001,"Jose Guillen",0,6,9
+start,flahj001,"John Flaherty",0,7,2
+start,stock001,"Kevin Stocker",0,8,6
+start,cairm001,"Miguel Cairo",0,9,4
+start,goodd001,"Dwight Gooden",0,0,1
+start,mclem001,"Mark McLemore",1,1,4
+start,belld002,"David Bell",1,2,5
+start,rodra001,"Alex Rodriguez",1,3,6
+start,olerj001,"John Olerud",1,4,3
+start,marte001,"Edgar Martinez",1,5,10
+start,buhnj001,"Jay Buhner",1,6,9
+start,javis001,"Stan Javier",1,7,7
+start,wilsd001,"Dan Wilson",1,8,2
+start,camem001,"Mike Cameron",1,9,8
+start,tomkb001,"Brett Tomko",1,0,1
+play,1,0,willg001,32,SBFBBX,63/G
+play,1,0,castv001,01,FX,13/G
+play,1,0,vaugg001,11,SBX,HR/7
+play,1,0,mcgrf001,32,FBBSFBS,K
+play,1,1,mclem001,32,CFBBBB,W
+play,1,1,belld002,00,C,SB2
+play,1,1,belld002,32,CFBBBX,7/F7D
+play,1,1,rodra001,02,CCX,9/F9.2-3
+play,1,1,olerj001,31,BBCBB,W
+play,1,1,marte001,20,BBX,S7.3-H;1-2
+play,1,1,buhnj001,21,BFBX,S7/7S.2XH(72);1-2
+play,2,0,cansj001,22,BSCBC,K/C
+play,2,0,guilj001,22,FBBSFS,K
+play,2,0,flahj001,11,BCX,S7
+play,2,0,stock001,32,CBFBBB,W.1-2
+play,2,0,cairm001,12,CBFS,K
+play,2,1,javis001,22,CCBBX,HR/9
+play,2,1,wilsd001,01,CX,8/F8
+play,2,1,camem001,32,BBCCBX,3/P3
+play,2,1,mclem001,31,BBBCB,W
+play,2,1,belld002,10,BC,SB2
+play,2,1,belld002,11,BCX,9/F9
+play,3,0,willg001,12,SBFFC,K/C
+play,3,0,castv001,21,BBFX,8/F8
+play,3,0,vaugg001,00,X,S.B-2(E5/TH)
+play,3,0,mcgrf001,01,CX,7/F7
+play,3,1,rodra001,02,SFC,K/C
+play,3,1,olerj001,22,CFBBC,K/C
+play,3,1,marte001,11,BFX,S9
+play,3,1,buhnj001,22,BFCBS,K
+play,4,0,cansj001,32,CBSBFFBB,W
+play,4,0,guilj001,22,CSBFBFFX,S8.1-2
+play,4,0,flahj001,00,,NP
+sub,rodrf001,"Frankie Rodriguez",1,0,1
+play,4,0,flahj001,32,BBBCSFFX,9/F9.2-3
+play,4,0,stock001,10,BX,36(1)1/GDP
+play,4,1,javis001,32,BBBCCX,63/G
+play,4,1,wilsd001,01,CX,S7/7S
+play,4,1,camem001,32,BCCBBX,S7/7S.1-2
+play,4,1,mclem001,20,BBX,S8.2-H;1-3
+play,4,1,belld002,11,BCB,SB2
+play,4,1,belld002,21,BCBX,S.2-2
+play,4,1,rodra001,01,CX,64(1)3/GDP
+play,5,0,cairm001,22,BCFFBX,2/FL
+play,5,0,willg001,11,CBX,HR/78
+play,5,0,castv001,30,BBBX,63/G
+play,5,0,vaugg001,20,BBX,7/F7
+play,5,1,olerj001,12,SBCX,43/G
+play,5,1,marte001,21,CBBX,HR/9
+play,5,1,buhnj001,21,BBSX,S7/7S
+play,5,1,javis001,32,BCCBBFFS,K+CS2(26)/DP
+play,6,0,mcgrf001,30,BBBB,W
+play,6,0,cansj001,11,BCX,9/F9
+play,6,0,guilj001,22,CBFBFX,14(1)3/GDP
+play,6,1,wilsd001,00,,NP
+sub,lopea002,"Albie Lopez",0,0,1
+play,6,1,wilsd001,10,BX,S/78
+play,6,1,camem001,22,LLFBBS,K
+play,6,1,mclem001,31,BBFBX,54(1)3/GDP
+play,7,0,flahj001,00,,NP
+sub,panij001,"Jose Paniagua",1,0,1
+play,7,0,flahj001,01,FX,163/G
+play,7,0,stock001,31,BBCBB,W
+play,7,0,cairm001,31,BBBCB,W.1-2
+play,7,0,willg001,32,FBSFBBB,W.2-3;1-2
+play,7,0,castv001,00,,NP
+sub,mesaj001,"Jose Mesa",1,0,1
+play,7,0,castv001,12,CSBX,7/SF.3-H
+play,7,0,vaugg001,00,X,HR/7.2-H;1-H
+play,7,0,mcgrf001,12,CBFS,K
+play,7,1,belld002,01,CX,63/G
+play,7,1,rodra001,10,BX,HR/7
+play,7,1,olerj001,00,,NP
+sub,guthm001,"Mark Guthrie",0,0,1
+play,7,1,olerj001,22,SBSBC,K/C
+play,7,1,marte001,00,,NP
+sub,taylb001,"Billy Taylor",0,0,1
+play,7,1,marte001,32,CCBBBX,4/P4
+play,8,0,cansj001,11,BSX,D7/7S
+play,8,0,guilj001,12,SFFBS,K
+play,8,0,flahj001,22,BFSBFC,K/C
+play,8,0,stock001,32,BFFBBFX,7/F7
+play,8,1,buhnj001,32,SFBBBFB,W
+play,8,1,javis001,00,,NP
+sub,hendr001,"Rickey Henderson",1,6,12
+play,8,1,javis001,20,BBX,D8/8D.1-H
+play,8,1,wilsd001,00,,NP
+sub,hernr001,"Roberto Hernandez",0,0,1
+play,8,1,wilsd001,00,,NP
+sub,lampt001,"Tom Lampkin",1,8,11
+play,8,1,lampt001,32,SFBFFBFBFFB,W
+play,8,1,camem001,00,X,34/SH.2-3;1-2
+play,8,1,mclem001,00,X,7/SF.3-H;2-3
+play,8,1,belld002,22,CBBCS,K
+play,9,0,cairm001,00,,NP
+sub,lampt001,"Tom Lampkin",1,8,2
+play,9,0,cairm001,00,,NP
+sub,ibanr001,"Raul Ibanez",1,6,9
+play,9,0,cairm001,00,,NP
+sub,sasak001,"Kazuhiro Sasaki",1,0,1
+play,9,0,cairm001,22,BCBFFS,K
+play,9,0,willg001,02,SCX,53/G
+play,9,0,castv001,12,SBCX,53/G
+data,er,goodd001,4
+data,er,lopea002,1
+data,er,guthm001,0
+data,er,taylb001,2
+data,er,hernr001,0
+data,er,tomkb001,1
+data,er,rodrf001,1
+data,er,panij001,3
+data,er,mesaj001,1
+data,er,sasak001,0

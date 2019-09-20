@@ -1,0 +1,131 @@
+version,2
+info,visteam,CLE
+info,hometeam,TBA
+info,site,STP01
+info,date,2000/08/03
+info,number,0
+info,starttime,7:15PM
+info,daynight,night
+info,usedh,true
+info,umphome,laynj901
+info,ump1b,monte901
+info,ump2b,randt901
+info,ump3b,fichm901
+info,pitches,pitches
+info,temp,72
+info,winddir,tolf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,157
+info,attendance,21703
+info,wp,berej002
+info,lp,lopea002
+info,save,
+start,loftk001,"Kenny Lofton",0,1,8
+start,vizqo001,"Omar Vizquel",0,2,6
+start,alomr001,"Roberto Alomar",0,3,4
+start,ramim002,"Manny Ramirez",0,4,10
+start,thomj002,"Jim Thome",0,5,3
+start,cordw001,"Wil Cordero",0,6,7
+start,segud001,"David Segui",0,7,9
+start,frymt001,"Travis Fryman",0,8,5
+start,aloms001,"Sandy Alomar",0,9,2
+start,berej002,"Jason Bere",0,0,1
+start,willg001,"Gerald Williams",1,1,8
+start,johnr006,"Russ Johnson",1,2,4
+start,vaugg001,"Greg Vaughn",1,3,7
+start,mcgrf001,"Fred McGriff",1,4,3
+start,cansj001,"Jose Canseco",1,5,10
+start,cox-s001,"Steve Cox",1,6,9
+start,flahj001,"John Flaherty",1,7,2
+start,huffa001,"Aubrey Huff",1,8,5
+start,martf001,"Felix Martinez",1,9,6
+start,lopea002,"Albie Lopez",1,0,1
+play,1,0,loftk001,22,CBCBS,K
+play,1,0,vizqo001,22,CCFBBS,K
+play,1,0,alomr001,11,BFX,S
+play,1,0,ramim002,22,CBFBC,K/C
+play,1,1,willg001,01,CX,63/G
+play,1,1,johnr006,11,FBX,8/F8
+play,1,1,vaugg001,21,CBBX,S7/7S
+play,1,1,mcgrf001,22,SBBSC,K/C
+play,2,0,thomj002,00,X,S7
+play,2,0,cordw001,01,CX,E6/G.1-2
+play,2,0,segud001,32,CFBFBBS,K
+play,2,0,frymt001,32,BFBSFBX,S/78.2-H(UR);1-2
+play,2,0,aloms001,00,X,S8.2-3;1-2
+play,2,0,loftk001,00,X,64(1)/FO.3-H(UR);2-3
+play,2,0,vizqo001,00,X,43/G
+play,2,1,cansj001,31,BCBBB,W
+play,2,1,cox-s001,12,CBFS,K+SB2
+play,2,1,flahj001,12,FFBX,8/F8.2-3
+play,2,1,huffa001,12,FBFFX,5/P5
+play,3,0,alomr001,31,BBBCX,3/G
+play,3,0,ramim002,12,BCSS,K
+play,3,0,thomj002,12,FCBFC,K/C
+play,3,1,martf001,01,CX,53/G
+play,3,1,willg001,12,CSFBS,K
+play,3,1,johnr006,20,BBX,S8
+play,3,1,vaugg001,22,SSBBS,K
+play,4,0,cordw001,31,BBBCB,W
+play,4,0,segud001,01,FX,S8.1-2
+play,4,0,frymt001,02,FFFX,S7.2-3;1-2
+play,4,0,aloms001,11,FBX,S.3-H;2-3;1-2
+play,4,0,loftk001,00,X,46(1)3/GDP.3-H;2-3
+play,4,0,vizqo001,21,CBBX,53/G
+play,4,1,mcgrf001,32,FBCBFBX,31/G
+play,4,1,cansj001,32,BSBSFBX,8/F8D
+play,4,1,cox-s001,01,CX,7/F7
+play,5,0,alomr001,12,CBFX,3/L3
+play,5,0,ramim002,32,BBFFFFBX,D7
+play,5,0,thomj002,21,BBSX,43/G.2-3
+play,5,0,cordw001,10,BX,9/F9D
+play,5,1,flahj001,00,X,S8
+play,5,1,huffa001,00,X,36(1)1/GDP
+play,5,1,martf001,02,SFS,K
+play,6,0,segud001,32,BBBCFB,W
+play,6,0,frymt001,22,CBSBX,3/P3
+play,6,0,aloms001,10,BX,6(1)3/GDP
+play,6,1,willg001,02,CFX,43/G
+play,6,1,johnr006,32,CBBBCFFX,HR/7
+play,6,1,vaugg001,32,BBFSFBFB,W
+play,6,1,mcgrf001,10,BX,36(1)1/GDP
+play,7,0,loftk001,10,BX,43/G
+play,7,0,vizqo001,01,LX,6/P6
+play,7,0,alomr001,32,CBBBFB,W
+play,7,0,ramim002,02,FSFFS,K
+play,7,1,cansj001,00,,NP
+sub,cabrj002,"Jolbert Cabrera",0,2,6
+play,7,1,cansj001,12,CCFBX,63/G
+play,7,1,cox-s001,22,BCFBS,K
+play,7,1,flahj001,12,CFFBS,K
+play,8,0,thomj002,00,,NP
+sub,yan-e001,"Esteban Yan",1,0,1
+play,8,0,thomj002,32,BSBFBS,K
+play,8,0,cordw001,22,BSFBX,4/P4
+play,8,0,segud001,11,SBX,3/G
+play,8,1,huffa001,02,CFX,7/F7
+play,8,1,martf001,00,,NP
+sub,cairm001,"Miguel Cairo",1,9,11
+play,8,1,cairm001,22,BBCCC,K/C
+play,8,1,willg001,00,X,53/G
+play,9,0,frymt001,00,,NP
+sub,johnr006,"Russ Johnson",1,2,6
+play,9,0,frymt001,00,,NP
+sub,cairm001,"Miguel Cairo",1,9,4
+play,9,0,frymt001,12,BCCC,K/C
+play,9,0,aloms001,22,BSBFFX,HR/78
+play,9,0,loftk001,12,CCBX,7/F7
+play,9,0,cabrj002,02,SSS,K
+play,9,1,johnr006,00,,NP
+sub,wickb001,"Bob Wickman",0,0,1
+play,9,1,johnr006,11,BCX,S7
+play,9,1,vaugg001,22,CCBBX,64(1)3/GDP
+play,9,1,mcgrf001,20,BBX,S
+play,9,1,cansj001,10,BX,63/G
+data,er,berej002,1
+data,er,wickb001,0
+data,er,lopea002,2
+data,er,yan-e001,1

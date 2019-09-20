@@ -1,0 +1,150 @@
+version,2
+info,visteam,TOR
+info,hometeam,TBA
+info,site,STP01
+info,date,2000/06/29
+info,number,0
+info,starttime,12:15PM
+info,daynight,day
+info,usedh,true
+info,umphome,froeb901
+info,ump1b,wintm901
+info,ump2b,welkb901
+info,ump3b,culbf901
+info,pitches,pitches
+info,temp,72
+info,winddir,tocf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,182
+info,attendance,21666
+info,wp,castf001
+info,lp,lidlc001
+info,save,
+start,stews002,"Shannon Stewart",0,1,7
+start,woodc001,"Chris Woodward",0,2,6
+start,mondr002,"Raul Mondesi",0,3,9
+start,delgc001,"Carlos Delgado",0,4,3
+start,fullb001,"Brad Fullmer",0,5,10
+start,batit001,"Tony Batista",0,6,5
+start,cruzj004,"Jose Cruz",0,7,8
+start,greec002,"Charlie Greene",0,8,2
+start,bushh001,"Homer Bush",0,9,4
+start,castf001,"Frank Castillo",0,0,1
+start,winnr001,"Randy Winn",1,1,8
+start,cox-s001,"Steve Cox",1,2,3
+start,tramb001,"Bubba Trammell",1,3,7
+start,mcgrf001,"Fred McGriff",1,4,10
+start,smitr003,"Bobby Smith",1,5,4
+start,guilj001,"Jose Guillen",1,6,9
+start,difem001,"Mike DiFelice",1,7,2
+start,guilo001,"Ozzie Guillen",1,8,5
+start,martf001,"Felix Martinez",1,9,6
+start,lidlc001,"Cory Lidle",1,0,1
+play,1,0,stews002,32,FBFBBFX,13/G
+play,1,0,woodc001,02,CFX,D7
+play,1,0,mondr002,32,CSBFBBB,W.2-3(WP)
+play,1,0,delgc001,10,BX,D8/8D.3-H;1-3
+play,1,0,fullb001,22,FFFBBFX,HR/9.3-H;2-H
+play,1,0,batit001,12,CFBX,53/G
+play,1,0,cruzj004,22,BCBSFX,31/G
+com,"SS ADDED 1ST INNING BADJ 12/19/00"
+badj,winnr001,R
+play,1,1,winnr001,32,.BFBCBB,W
+play,1,1,cox-s001,10,BX,S9.1-2
+play,1,1,tramb001,01,CX,S8.2-3;1-2
+play,1,1,mcgrf001,00,X,6/P6
+play,1,1,smitr003,00,X,9/SF.3-H;2-3
+play,1,1,guilj001,12,BCFS,K
+play,2,0,greec002,22,FFBBX,53/G
+play,2,0,bushh001,22,BFBFX,63/G
+play,2,0,stews002,00,X,63/G
+play,2,1,difem001,22,BCCBX,S7/7S
+play,2,1,guilo001,00,X,46(1)/FO
+play,2,1,martf001,22,CSBBS,K
+badj,winnr001,R
+play,2,1,winnr001,01,CX,9/F9
+play,3,0,woodc001,12,FBCX,43/G
+play,3,0,mondr002,32,SBBBCFX,43/G
+play,3,0,delgc001,11,BCX,S8
+play,3,0,fullb001,10,BX,T9.1-H
+play,3,0,batit001,32,BCBFBB,W
+play,3,0,cruzj004,22,CBSFBX,HR/8.3-H;1-H
+play,3,0,greec002,12,CBFC,K/C
+play,3,1,cox-s001,30,BBBB,W
+play,3,1,tramb001,00,X,S7.1-2
+play,3,1,mcgrf001,12,BFCC,K/C
+play,3,1,smitr003,00,X,7/F7
+play,3,1,guilj001,01,CX,9/F9
+play,4,0,bushh001,32,BFFFBBX,D7
+play,4,0,stews002,02,CFX,8/F8D.2-3
+play,4,0,woodc001,00,,NP
+sub,sturt001,"Tanyon Sturtze",1,0,1
+play,4,0,woodc001,22,CFBFBS,K
+play,4,0,mondr002,21,FBBX,HR/7.3-H
+play,4,0,delgc001,12,BCCFS,K
+play,4,1,difem001,00,X,S7/7S
+play,4,1,guilo001,12,BCCX,S7/7S.1-2
+play,4,1,martf001,12,LBSS,K
+badj,winnr001,R
+play,4,1,winnr001,00,X,6(B)4(2)/LDP
+play,5,0,fullb001,22,FBSBX,S8
+play,5,0,batit001,02,FCS,K
+play,5,0,cruzj004,02,SFFC,K/C
+play,5,0,greec002,02,FFS,K
+play,5,1,cox-s001,22,CBBFFS,K
+play,5,1,tramb001,32,FBFBBX,S8
+play,5,1,mcgrf001,12,BCFS,K
+play,5,1,smitr003,00,X,4/L4
+play,6,0,bushh001,00,X,S7/7S
+play,6,0,stews002,11,CBX,S9.1-3
+play,6,0,woodc001,01,FX,9/F9S
+play,6,0,mondr002,00,X,3/FL
+play,6,0,delgc001,11,SBX,7/F7
+play,6,1,guilj001,22,BSSBS,K
+play,6,1,difem001,32,SBBBFX,HR/7
+play,6,1,guilo001,02,CFX,43/G
+play,6,1,martf001,12,CCBS,K
+play,7,0,fullb001,02,CFX,S7
+play,7,0,batit001,22,BBFFFX,9/F9
+play,7,0,cruzj004,31,BBFBB,W.1-2
+play,7,0,greec002,22,FCBFBFX,43/G.2-3;1-2
+play,7,0,bushh001,01,FX,53/G
+badj,winnr001,R
+play,7,1,winnr001,11,CBX,8/F8
+play,7,1,cox-s001,21,BFBX,9/F9
+play,7,1,tramb001,22,CCBBFX,53/G
+play,8,0,stews002,00,,NP
+sub,whitr002,"Rick White",1,0,1
+play,8,0,stews002,32,BFFBBFFFS,K
+play,8,0,woodc001,20,BBX,6/L6
+play,8,0,mondr002,31,CBBBB,W
+play,8,0,delgc001,12,CSBB,WP.1-2
+play,8,0,delgc001,32,CSBBFFBFS,K
+play,8,1,mcgrf001,12,SFBX,S9
+play,8,1,smitr003,00,X,D/78D.1-H
+play,8,1,guilj001,10,BX,13/G
+play,8,1,difem001,12,BSCFX,63/G
+play,8,1,guilo001,22,BFFBX,9/F9S
+play,9,0,fullb001,00,,NP
+sub,guthm001,"Mark Guthrie",1,0,1
+play,9,0,fullb001,32,BFBBCFB,W
+play,9,0,batit001,21,SBBX,HR/7.1-H
+play,9,0,cruzj004,10,BX,6/L6
+play,9,0,greec002,12,CBSS,K
+play,9,0,bushh001,00,X,S/78
+play,9,0,stews002,22,BSFBS,K
+play,9,1,martf001,00,,NP
+sub,quanp001,"Paul Quantrill",0,0,1
+play,9,1,martf001,12,CFBFX,7/F7
+badj,winnr001,R
+play,9,1,winnr001,32,BBFCBX,43/G
+play,9,1,cox-s001,20,BBX,8/F8
+data,er,castf001,3
+data,er,quanp001,0
+data,er,lidlc001,9
+data,er,sturt001,1
+data,er,whitr002,0
+data,er,guthm001,2

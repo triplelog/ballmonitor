@@ -1,0 +1,199 @@
+version,2
+info,visteam,SFN
+info,hometeam,HOU
+info,site,HOU03
+info,date,2000/09/11
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,everm901
+info,ump1b,katzt901
+info,ump2b,gormb901
+info,ump3b,danlk901
+info,pitches,pitches
+info,temp,72
+info,winddir,rtol
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,225
+info,attendance,35130
+info,wp,nen-r001
+info,lp,valdm001
+info,save,
+start,benam001,"Marvin Benard",0,1,8
+start,muelb001,"Bill Mueller",0,2,5
+start,bondb001,"Barry Bonds",0,3,7
+start,kentj001,"Jeff Kent",0,4,4
+start,snowj001,"J.T. Snow",0,5,3
+start,cresf001,"Felipe Crespo",0,6,9
+start,aurir001,"Rich Aurilia",0,7,6
+start,mirad001,"Doug Mirabelli",0,8,2
+start,nathj001,"Joe Nathan",0,9,1
+start,lugoj001,"Julio Lugo",1,1,4
+start,bogat001,"Tim Bogar",1,2,6
+start,bagwj001,"Jeff Bagwell",1,3,3
+start,berkl001,"Lance Berkman",1,4,7
+start,aloum001,"Moises Alou",1,5,9
+start,hidar001,"Richard Hidalgo",1,6,8
+start,trubc001,"Chris Truby",1,7,5
+start,chavr001,"Raul Chavez",1,8,2
+start,limaj001,"Jose Lima",1,9,1
+play,1,0,benam001,21,BFBX,3/G
+play,1,0,muelb001,31,CBBBB,W
+play,1,0,bondb001,00,X,S9.1-3
+play,1,0,kentj001,21,BFBX,HR/7.3-H;1-H
+play,1,0,snowj001,10,BX,HR/89
+play,1,0,cresf001,30,BBBB,W
+play,1,0,aurir001,12,CSBX,9/F9
+play,1,0,mirad001,02,CSC,K/C
+play,1,1,lugoj001,30,BBBB,W
+play,1,1,bogat001,31,BBCBB,W.1-2
+play,1,1,bagwj001,31,BBCBX,64(1)3/GDP.2-3
+play,1,1,berkl001,00,X,4/P4
+play,2,0,nathj001,12,CCBS,K
+play,2,0,benam001,11,CBX,7/F7
+play,2,0,muelb001,22,CCBBX,S9/9S
+play,2,0,bondb001,30,BBBB,W.1-2
+play,2,0,kentj001,00,X,S7/7D.2-H;1-3
+play,2,0,snowj001,00,X,8/F8
+play,2,1,aloum001,00,X,7/F7
+play,2,1,hidar001,11,BSX,HR/78
+play,2,1,trubc001,12,FFBX,8/F8
+play,2,1,chavr001,10,BX,5/P5
+play,3,0,cresf001,02,SFX,S9
+play,3,0,aurir001,12,BFFX,8/F8
+play,3,0,mirad001,00,X,63/G.1-2
+play,3,0,nathj001,11,CBX,53/G
+play,3,1,limaj001,12,CFBX,D7/7S
+play,3,1,lugoj001,31,BBBCX,T8/8D.2-H
+play,3,1,bogat001,00,X,9/F9
+play,3,1,bagwj001,10,B+3,PO3(E2).3-H
+play,3,1,bagwj001,11,B+3CX,HR/7
+play,3,1,berkl001,32,BBSCFBB,W
+play,3,1,aloum001,11,CBX,HR/7.1-H
+play,3,1,hidar001,00,,NP
+sub,deltm001,"Miguel Del Toro",0,9,1
+play,3,1,hidar001,32,BFCBFFBB,W
+play,3,1,trubc001,10,BX,9/F9
+play,3,1,chavr001,00,X,D7.1-H
+play,3,1,limaj001,12,SBCS,K
+play,4,0,benam001,32,BFCFFFBBB,W
+play,4,0,muelb001,11,FBX,8/F8
+play,4,0,bondb001,00,B,CS2(26)
+play,4,0,bondb001,30,BBBB,W
+play,4,0,kentj001,22,BFCBC,K/C
+play,4,1,lugoj001,11,FBX,7/F7
+play,4,1,bogat001,01,CX,13/G
+play,4,1,bagwj001,32,BFBBFH,HP
+play,4,1,berkl001,00,X,8/F8
+play,5,0,snowj001,21,CBBX,D/89
+play,5,0,cresf001,11,FB+2,PO2(26)
+play,5,0,cresf001,11,FB+2X,8/F8
+play,5,0,aurir001,22,BFFBX,9/F9
+play,5,1,aloum001,00,X,53/G
+play,5,1,hidar001,22,CBCBX,T/89D
+com,"$the ball struck top of inner fence in Houston"
+com,"bullpen, bounced back onto field and was mistakenly"
+com,"called in play by the umpire"
+play,5,1,trubc001,10,BX,7/F7
+play,5,1,chavr001,30,IIII,IW
+play,5,1,limaj001,01,SX,8/F8
+play,6,0,mirad001,22,SBFBFS,K
+play,6,0,deltm001,00,,NP
+sub,servs002,"Scott Servais",0,9,11
+play,6,0,servs002,12,BFFX,7/F7
+play,6,0,benam001,11,CBX,3/G
+play,6,1,lugoj001,00,,NP
+sub,johnj006,"John Johnstone",0,9,1
+play,6,1,lugoj001,11,BFX,9/F9
+play,6,1,bogat001,11,FBX,63/G
+play,6,1,bagwj001,11,BCX,7/F7
+com,"$the roof was opened"
+play,7,0,muelb001,22,CBBFS,K
+play,7,0,bondb001,32,SBBBFB,W
+play,7,0,kentj001,00,C,SB2
+play,7,0,kentj001,12,CFBX,63/G.2-3
+play,7,0,snowj001,00,,NP
+sub,franw001,"Wayne Franklin",1,9,1
+play,7,0,snowj001,01,CX,7/F7D
+play,7,1,berkl001,32,FSBBBX,7/F7
+play,7,1,aloum001,21,FBBX,9/F9D
+play,7,1,hidar001,02,FCFX,S7/7S
+play,7,1,trubc001,10,BX,4/P4
+play,8,0,cresf001,00,X,63/G
+play,8,0,aurir001,00,,NP
+sub,slusj001,"Joe Slusarski",1,9,1
+play,8,0,aurir001,32,BCBBFX,S7
+play,8,0,mirad001,00,,NP
+sub,burke001,"Ellis Burks",0,8,11
+play,8,0,burke001,21,BBSX,E5/G.1-3
+play,8,0,johnj006,00,,NP
+sub,davir002,"Russ Davis",0,9,11
+play,8,0,davir002,00,,NP
+sub,meloj001,"Juan Melo",0,8,12
+play,8,0,davir002,10,BX,9/F9
+play,8,0,benam001,10,BX,9/F9
+play,8,1,chavr001,00,,NP
+sub,estab001,"Bobby Estalella",0,8,2
+play,8,1,chavr001,00,,NP
+sub,ceder001,"Roger Cedeno",1,8,11
+play,8,1,ceder001,00,,NP
+sub,rodrf002,"Felix Rodriguez",0,9,1
+play,8,1,ceder001,12,CFBC,K/C
+play,8,1,slusj001,00,,NP
+sub,melum001,"Mitch Meluskey",1,9,11
+play,8,1,melum001,32,BSBBCX,S8
+play,8,1,lugoj001,22,BBCFX,54(1)/FO
+play,8,1,bogat001,12,CCBFS,K
+play,9,0,muelb001,00,,NP
+sub,barkg001,"Glen Barker",1,8,8
+play,9,0,muelb001,00,,NP
+sub,hidar001,"Richard Hidalgo",1,6,7
+play,9,0,muelb001,00,,NP
+sub,melum001,"Mitch Meluskey",1,9,2
+play,9,0,muelb001,00,,NP
+sub,doteo001,"Octavio Dotel",1,4,1
+play,9,0,muelb001,31,BCBBB,W
+play,9,0,bondb001,12,CCBX,HR/89.1-H
+play,9,0,kentj001,02,CFS,K
+play,9,0,snowj001,10,BX,3/P3
+play,9,0,cresf001,32,BBFFBFX,S9
+play,9,0,aurir001,12,BSSB,SB2
+play,9,0,aurir001,22,BSSBFFX,8/F8
+play,9,1,bagwj001,00,,NP
+sub,benam001,"Marvin Benard",0,1,9
+play,9,1,bagwj001,00,,NP
+sub,murrc001,"Calvin Murray",0,6,8
+play,9,1,bagwj001,00,H,HP
+play,9,1,doteo001,00,,NP
+sub,wardd002,"Daryle Ward",1,4,11
+play,9,1,wardd002,12,FBFS,K
+play,9,1,aloum001,00,,NP
+sub,martr003,"Ramon E. Martinez",0,9,6
+play,9,1,aloum001,00,,NP
+sub,nen-r001,"Robb Nen",0,7,1
+play,9,1,aloum001,21,SBBX,64(1)3/GDP
+play,10,0,estab001,00,,NP
+sub,valdm001,"Marc Valdes",1,4,1
+play,10,0,estab001,12,CBFFX,7/F7D
+play,10,0,martr003,10,BX,S8/8S
+play,10,0,benam001,12,BFFFS,K
+play,10,0,muelb001,10,BX,T/89D.1-H
+play,10,0,bondb001,30,IIII,IW
+play,10,0,kentj001,22,BBFFX,3/P3
+play,10,1,hidar001,22,BFBFFFX,43/G
+play,10,1,trubc001,01,SX,7/F7
+play,10,1,barkg001,22,CCBBS,K
+data,er,nathj001,6
+data,er,deltm001,1
+data,er,johnj006,0
+data,er,rodrf002,0
+data,er,nen-r001,0
+data,er,limaj001,5
+data,er,franw001,0
+data,er,slusj001,0
+data,er,doteo001,2
+data,er,valdm001,1

@@ -1,0 +1,83 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,32,1,,,,,0,6,BBBCCS,limaj001,1,0,castl001 strikes out. ,castl001,0,
+,00,1,,,,,1,7,X,limaj001,1,0,,gonza002,0,P
+,21,1,,,,,2,11,BFBX,limaj001,1,0,,floyc001,0,F
+,12,1,,,,,3,8,CFFFFBFX,sancj001,1,0,,ceder001,1,F
+,01,1,,,,,4,10,CX,sancj001,1,0,,lugoj001,1,F
+,12,1,,,,,5,14,BCSS,sancj001,1,0,bagwj001 strikes out. ,bagwj001,1,
+,02,2,,,,,6,14,FFX,limaj001,1,0,wilsp002 grounds out. ,wilsp002,0,G
+,01,2,,,,,7,16,CX,limaj001,1,0,lowem001 grounds out. ,lowem001,0,G
+,01,2,,,,,8,18,CX,limaj001,1,0,,rodrh001,0,
+,01,2,hidar001,,,,9,16,CX,sancj001,0,0,hidar001 singles. ,hidar001,1,
+,11,2,hidar001,,,,10,19,BCX,sancj001,1,0,,aloum001,1,F
+hidar001 scores. ,10,2,,,trubc001,,11,21,BX,sancj001,0,1,trubc001 triples. ,trubc001,1,
+trubc001 out. bogat001 to 2B. ,32,2,,bogat001,,,12,27,BBSBCX,sancj001,1,0,bogat001 hits into a fielder's choice. ,bogat001,1,
+,30,2,chavr001,bogat001,,,13,31,IIII,sancj001,0,0,chavr001 intentionally walks. ,chavr001,1,
+,12,2,chavr001,bogat001,,,14,36,SSFBX,sancj001,1,0,limaj001 grounds out. ,limaj001,1,G
+,01,3,,,,,15,20,CX,limaj001,1,0,,lee-d002,0,
+,02,3,,,,,16,23,CSX,limaj001,1,0,,castr002,0,F
+,00,3,sancj001,,,,17,24,X,limaj001,0,0,sancj001 singles. ,sancj001,0,
+sancj001 to 2B. ,31,3,castl001,sancj001,,,18,29,BFBBB,limaj001,0,0,castl001 walks. ,castl001,0,
+,01,3,castl001,sancj001,,,19,31,CX,limaj001,1,0,,gonza002,0,
+,11,3,,,,,20,39,BSX,sancj001,1,0,,ceder001,1,P
+,22,3,,,,,21,44,BBFCX,sancj001,1,0,,lugoj001,1,
+,00,3,,,,,22,45,X,sancj001,1,0,,bagwj001,1,F
+,00,4,,,,,23,32,X,limaj001,1,0,,floyc001,0,P
+,12,4,,,,,24,36,SSBC,limaj001,1,0,wilsp002 strikes out. ,wilsp002,0,
+,32,4,lowem001,,,,25,42,BBBCFB,limaj001,0,0,lowem001 walks. ,lowem001,0,
+lowem001 to 2B. ,21,4,rodrh001,lowem001,,,26,46,BBFX,limaj001,0,0,rodrh001 singles. ,rodrh001,0,
+lowem001 scores. rodrh001 to 3B. ,32,4,lee-d002,,rodrh001,,27,52,BBSCBX,limaj001,0,1,lee-d002 singles. ,lee-d002,0,
+lee-d002 out. ,10,4,castr002,,rodrh001,,28,54,BX,limaj001,1,0,castr002 reaches on fielder's choice. ,castr002,0,
+,00,4,,,,,29,46,X,sancj001,1,0,,hidar001,1,
+,00,4,,,,,30,47,X,sancj001,0,1,aloum001 homers. ,aloum001,1,
+,00,4,,,,,31,48,X,sancj001,1,0,,trubc001,1,F
+,31,4,,,,,32,53,FBBBX,sancj001,1,0,bogat001 grounds out. ,bogat001,1,G
+,01,5,,,,,33,56,SX,limaj001,1,0,sancj001 grounds out. ,sancj001,0,G
+,22,5,,,,,34,61,FBBFX,limaj001,1,0,castl001 grounds out. ,castl001,0,G
+,11,5,gonza002,,,,35,64,SBX,limaj001,0,0,gonza002 singles. ,gonza002,0,
+gonza002 to 2B. ,32,5,floyc001,gonza002,,,36,70,BFBBSB,limaj001,0,0,floyc001 walks. ,floyc001,0,
+gonza002 scores. floyc001 scores. ,02,5,,,,,37,73,CSX,limaj001,0,3,wilsp002 homers. ,wilsp002,0,
+,20,5,,,,,38,76,BBX,limaj001,1,0,lowem001 grounds out. ,lowem001,0,G
+,11,5,chavr001,,,,39,56,BCX,sancj001,0,0,chavr001 singles. ,chavr001,1,
+chavr001 to 2B. ,30,5,limaj001,chavr001,,,40,60,BBBB,sancj001,0,0,limaj001 walks. ,limaj001,1,
+chavr001 to 3B. limaj001 to 2B. ,32,5,ceder001,limaj001,chavr001,,41,66,CBBBSB,sancj001,0,0,ceder001 walks. ,ceder001,1,
+chavr001 scores. limaj001 scores. ceder001 to 3B. ,02,5,,lugoj001,ceder001,,42,69,FSX,sancj001,0,2,lugoj001 doubles. ,lugoj001,1,
+ceder001 scores. lugoj001 scores. ,00,5,,bagwj001,,,43,70,X,sancj001,0,2,bagwj001 doubles. ,bagwj001,1,
+,00,5,,,bagwj001,hidar001,44,71,B,sancj001,0,0,bagwj001 steals 3B. ,hidar001,1,
+bagwj001 scores. ,10,5,,hidar001,,,45,73,BX,sancj001,0,1,hidar001 doubles. ,hidar001,1,
+,11,5,,hidar001,,,47,3,FBX,aybam001,1,0,,aloum001,1,P
+hidar001 scores. ,10,5,,,,,48,5,BX,aybam001,0,2,trubc001 homers. ,trubc001,1,
+,32,5,bogat001,,,,49,12,BBBCFFB,aybam001,0,0,bogat001 walks. ,bogat001,1,
+,32,5,,,,,50,18,BFBFBX,aybam001,2,0,Double Play. ,chavr001,1,
+,32,6,,,,,51,82,BCBFBX,limaj001,1,0,,rodrh001,0,F
+,01,6,,,,,52,84,FX,limaj001,1,0,,lee-d002,0,F
+,20,6,,,,,53,87,BBX,limaj001,1,0,,castr002,0,F
+,02,6,limaj001,,,,54,21,FCX,aybam001,0,0,limaj001 singles. ,limaj001,1,
+,22,6,limaj001,,,,55,26,CBFBX,aybam001,1,0,,ceder001,1,F
+limaj001 to 3B. ,32,6,,lugoj001,limaj001,,56,34,BFBFFFBX,aybam001,0,0,lugoj001 doubles. ,lugoj001,1,
+,30,6,bagwj001,lugoj001,limaj001,,57,38,IIII,aybam001,0,0,bagwj001 intentionally walks. ,bagwj001,1,
+limaj001 scores. lugoj001 to 3B. ,22,6,bagwj001,,lugoj001,,58,44,BFBSFX,aybam001,1,1,hidar001 hits sacrifice fly. ,hidar001,1,
+,32,6,bagwj001,,lugoj001,,59,52,SBBFBFFX,aybam001,1,0,aloum001 grounds out. ,aloum001,1,G
+,01,7,,,,,61,89,CX,limaj001,0,1,clapc001 homers. ,clapc001,0,
+,12,7,,,,,62,93,CBCC,limaj001,1,0,castl001 strikes out. ,castl001,0,
+,01,7,,,,,63,95,CX,limaj001,1,0,,gonza002,0,F
+,12,7,,,,,64,99,CBCS,limaj001,1,0,floyc001 strikes out. ,floyc001,0,
+,02,7,,,,,66,3,CCX,boner001,1,0,trubc001 grounds out. ,trubc001,1,G
+,00,7,,,,,67,4,X,boner001,1,0,bogat001 grounds out. ,bogat001,1,G
+,21,7,chavr001,,,,68,8,BBFX,boner001,0,0,chavr001 singles. ,chavr001,1,
+,12,7,chavr001,,,,69,12,BCCS,boner001,1,0,limaj001 strikes out. ,limaj001,1,
+,22,8,,,,,70,104,CCBBX,limaj001,1,0,wilsp002 grounds out. ,wilsp002,0,G
+,12,8,,,,,71,108,BFCC,limaj001,1,0,lowem001 strikes out. ,lowem001,0,
+,11,8,,rodrh001,,,72,111,FBX,limaj001,0,0,rodrh001 doubles. ,rodrh001,0,
+,22,8,,rodrh001,,,73,117,BSFBFS,limaj001,1,0,lee-d002 strikes out. ,lee-d002,0,
+,11,8,ceder001,,,,75,3,BCX,loopb001,0,0,ceder001 singles. ,ceder001,1,
+ceder001 to 2B. ,31,8,lugoj001,ceder001,,,76,8,BBBCB,loopb001,0,0,lugoj001 walks. ,lugoj001,1,
+ceder001 scores. lugoj001 to 3B. ,00,8,,bagwj001,lugoj001,,77,9,X,loopb001,0,1,bagwj001 doubles. ,bagwj001,1,
+lugoj001 scores. berkl001 to 3B. ,02,8,,,berkl001,,79,12,FSX,loopb001,1,1,hidar001 hits sacrifice fly. ,hidar001,1,
+berkl001 scores. ,32,8,,,,,80,21,CBSBFFFBX,loopb001,1,1,aloum001 grounds out. ,aloum001,1,G
+,00,8,trubc001,,,,81,22,X,loopb001,0,0,trubc001 singles. ,trubc001,1,
+,02,8,trubc001,,,,82,25,SCX,loopb001,1,0,,bogat001,1,
+,12,9,,,,,87,4,SBCS,lines001,1,0,castr002 strikes out. ,castr002,0,
+,02,9,bergd002,,,,89,8,FSFH,lines001,0,0,bergd002 hit by pitch. ,bergd002,0,
+bergd002 out. ,11,9,ozunp001,,,,91,11,BCX,lines001,1,0,ozunp001 reaches on fielder's choice. ,ozunp001,0,
+ozunp001 out. ,20,9,gonza002,,,,92,14,BBX,lines001,1,0,gonza002 reaches on fielder's choice. ,gonza002,0,

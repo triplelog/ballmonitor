@@ -1,0 +1,132 @@
+version,2
+info,visteam,ARI
+info,hometeam,CHN
+info,site,CHI11
+info,date,2000/06/06
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,wendh902
+info,ump1b,clara901
+info,ump2b,buckc901
+info,ump3b,reedr901
+info,pitches,pitches
+info,temp,68
+info,winddir,rtol
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,159
+info,attendance,35933
+info,wp,tapak001
+info,lp,reyna001
+info,save,
+start,womat001,"Tony Womack",0,1,6
+start,counc001,"Craig Counsell",0,2,4
+start,gonzl001,"Luis Gonzalez",0,3,7
+start,willm003,"Matt D. Williams",0,4,5
+start,finls001,"Steve Finley",0,5,8
+start,colbg001,"Greg Colbrunn",0,6,3
+start,wardt001,"Turner Ward",0,7,9
+start,milld002,"Damian Miller",0,8,2
+start,reyna001,"Armando Reynoso",0,9,1
+start,youne001,"Eric Young",1,1,4
+start,giraj001,"Joe Girardi",1,2,2
+start,gracm001,"Mark Grace",1,3,3
+start,sosas001,"Sammy Sosa",1,4,9
+start,greew001,"Willie Greene",1,5,5
+start,martd002,"Dave Martinez",1,6,7
+start,bufod001,"Damon Buford",1,7,8
+start,ojeda001,"Augie Ojeda",1,8,6
+start,tapak001,"Kevin Tapani",1,9,1
+play,1,0,womat001,22,BBCSX,9/F9
+play,1,0,counc001,32,CBBBCX,63/G
+play,1,0,gonzl001,22,CCBBS,K
+play,1,1,youne001,11,BFX,163/G
+play,1,1,giraj001,12,CFBS,K
+play,1,1,gracm001,21,CBBX,S/78
+play,1,1,sosas001,22,CSBBX,54(1)/FO
+play,2,0,willm003,12,CBFC,K/C
+play,2,0,finls001,12,CSBX,7/F7
+play,2,0,colbg001,22,BBCCC,K/C
+play,2,1,greew001,22,CSBBS,K
+play,2,1,martd002,32,CBBBCX,S9
+play,2,1,bufod001,01,CX,7/F7
+play,2,1,ojeda001,22,BSBFX,3/G
+play,3,0,wardt001,01,CX,53/G
+play,3,0,milld002,00,X,63/G
+play,3,0,reyna001,22,CBFBC,K/C
+play,3,1,tapak001,12,BCFS,K23
+play,3,1,youne001,22,BBCCFS,K
+play,3,1,giraj001,00,X,9/F9
+play,4,0,womat001,01,CX,S8/8S
+play,4,0,counc001,12,BSFX,4/P4
+play,4,0,gonzl001,02,SCS,K
+play,4,0,willm003,00,S,SB2
+play,4,0,willm003,21,SBBX,63/G
+play,4,1,gracm001,00,X,4/P4
+play,4,1,sosas001,32,BFBSBX,S/78
+play,4,1,greew001,00,X,9/L9
+play,4,1,martd002,22,BFBFFC,K/C
+play,5,0,finls001,00,X,3/G
+play,5,0,colbg001,22,BBSSX,63/G
+play,5,0,wardt001,02,SSX,53/G
+play,5,1,bufod001,30,BBBB,W
+play,5,1,ojeda001,00,X,T9.1-H
+play,5,1,tapak001,22,CSBBFS,K
+play,5,1,youne001,20,BBH,HP
+play,5,1,giraj001,11,CBX,S8.3-H;1-2
+play,5,1,gracm001,22,CBSBX,S9.2-H;1-3
+play,5,1,sosas001,32,SBBCBS,K
+play,5,1,greew001,00,,NP
+sub,plesd001,"Dan Plesac",0,9,1
+play,5,1,greew001,32,BCCBBS,K
+play,6,0,milld002,22,CBBCX,S
+play,6,0,plesd001,00,,NP
+sub,gilkb001,"Bernard Gilkey",0,9,11
+play,6,0,gilkb001,32,CCBBBFX,54(1)3/GDP
+play,6,0,womat001,01,FX,43/G
+play,6,1,martd002,00,,NP
+sub,sprir001,"Russ Springer",0,9,1
+play,6,1,martd002,00,X,1/BP1
+play,6,1,bufod001,00,X,3/FL
+play,6,1,ojeda001,22,CBCBX,4/L4
+play,7,0,counc001,22,BBCFX,S
+play,7,0,gonzl001,12,SFFBC,K/C
+play,7,0,willm003,10,BX,7/F7D
+play,7,0,finls001,12,CCBX,43/G
+play,7,1,tapak001,12,FCBS,K
+play,7,1,youne001,32,BBFBFB,W
+play,7,1,giraj001,01,CB,SB2
+play,7,1,giraj001,22,CBFBFB,WP.2-3
+play,7,1,giraj001,32,CBFBFBX,D7/7S.3-H
+play,7,1,gracm001,00,X,6/P6
+play,7,1,sosas001,30,IIII,IW
+play,7,1,greew001,00,,NP
+sub,swing001,"Greg Swindell",0,9,1
+play,7,1,greew001,22,CBBFS,K
+play,8,0,colbg001,00,X,53/G
+play,8,0,wardt001,01,CX,D9
+play,8,0,milld002,11,CBX,8/F8.2-3
+play,8,0,swing001,00,,NP
+sub,friah001,"Hanley Frias",0,9,11
+play,8,0,friah001,21,SBBX,31/G
+play,8,1,martd002,00,,NP
+sub,padiv001,"Vicente Padilla",0,9,1
+play,8,1,martd002,01,FX,9/F9
+play,8,1,bufod001,20,BBX,63/G
+play,8,1,ojeda001,32,CBBSBFB,W
+play,8,1,tapak001,11,BFX,S9.1-3
+play,8,1,youne001,00,X,3/G
+play,9,0,womat001,01,CX,7/F7
+play,9,0,counc001,10,BX,HR/9
+play,9,0,gonzl001,00,X,6/P6
+play,9,0,willm003,12,BFCFC,K/C
+data,er,reyna001,3
+data,er,plesd001,0
+data,er,sprir001,1
+data,er,swing001,0
+data,er,padiv001,0
+data,er,tapak001,1

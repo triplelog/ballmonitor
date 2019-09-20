@@ -1,0 +1,125 @@
+version,2
+info,visteam,CHN
+info,hometeam,SFN
+info,site,SFO03
+info,date,2000/05/26
+info,number,0
+info,starttime,7:35PM
+info,daynight,night
+info,usedh,false
+info,umphome,morrd901
+info,ump1b,mckej901
+info,ump2b,danlk901
+info,ump3b,lampi901
+info,pitches,pitches
+info,temp,63
+info,winddir,ltor
+info,windspeed,17
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,135
+info,attendance,40930
+info,wp,gardm001
+info,lp,tapak001
+info,save,
+start,youne001,"Eric Young",0,1,4
+start,martd002,"Dave Martinez",0,2,3
+start,sosas001,"Sammy Sosa",0,3,9
+start,rodrh001,"Henry Rodriguez",0,4,7
+start,greew001,"Willie Greene",0,5,5
+start,nievj002,"Jose Nieves",0,6,6
+start,bufod001,"Damon Buford",0,7,8
+start,giraj001,"Joe Girardi",0,8,2
+start,tapak001,"Kevin Tapani",0,9,1
+start,benam001,"Marvin Benard",1,1,8
+start,martr003,"Ramon E. Martinez",1,2,4
+start,bondb001,"Barry Bonds",1,3,7
+start,kentj001,"Jeff Kent",1,4,3
+start,burke001,"Ellis Burks",1,5,9
+start,muelb001,"Bill Mueller",1,6,5
+start,aurir001,"Rich Aurilia",1,7,6
+start,mirad001,"Doug Mirabelli",1,8,2
+start,gardm001,"Mark Gardner",1,9,1
+play,1,0,youne001,22,CFFFFBBX,8/F8
+play,1,0,martd002,12,BCFX,53/G
+play,1,0,sosas001,01,CX,3/FL
+play,1,1,benam001,01,LX,S7/7S
+play,1,1,martr003,00,B,CS2(26)
+play,1,1,martr003,31,BCBBX,HR/7
+play,1,1,bondb001,11,BSX,D9
+play,1,1,kentj001,31,BSBBB,W
+play,1,1,burke001,22,FBSBX,S9.2-H;1-3
+play,1,1,muelb001,00,X,S9.3-H;1-2
+play,1,1,aurir001,01,CX,64(1)/FO.2-3
+play,1,1,mirad001,12,BSFC,K/C
+play,2,0,rodrh001,12,BCSX,63/G
+play,2,0,greew001,32,CBBSBX,9/FL
+play,2,0,nievj002,02,CSFC,K/C
+play,2,1,gardm001,12,CSBC,K/C
+play,2,1,benam001,10,BX,23/BG
+play,2,1,martr003,12,CFBX,63/G
+play,3,0,bufod001,32,BFBFFBX,53/G
+play,3,0,giraj001,21,BFBX,D8/8D
+play,3,0,tapak001,02,SCX,53/G
+play,3,0,youne001,10,BX,9/F9D
+play,3,1,bondb001,21,FBBX,13/G
+play,3,1,kentj001,11,SBX,9/F9
+play,3,1,burke001,01,CX,S8/8S
+play,3,1,muelb001,32,FBBBCX,23/G
+play,4,0,martd002,22,CBFBX,8/F8
+play,4,0,sosas001,11,BFX,S3/G
+play,4,0,rodrh001,00,X,S9.1-3
+play,4,0,greew001,11,BFX,5/P5
+play,4,0,nievj002,01,CX,43/G
+play,4,1,aurir001,12,FBCS,K
+play,4,1,mirad001,31,BBBCX,9/F9
+play,4,1,gardm001,22,BFSBC,K/C
+play,5,0,bufod001,00,X,3/P3
+play,5,0,giraj001,11,BSX,3/L3
+play,5,0,tapak001,01,CX,8/F8
+play,5,1,benam001,32,BSBFBC,K/C
+play,5,1,martr003,00,X,S
+play,5,1,bondb001,11,CBX,S9.1-2
+play,5,1,kentj001,22,SCBBS,K
+play,5,1,burke001,11,SBX,D7.2-H;1-H
+play,5,1,muelb001,01,FX,3/G
+play,6,0,youne001,00,X,53/G
+play,6,0,martd002,00,X,7/F7S
+play,6,0,sosas001,00,X,D/78
+play,6,0,rodrh001,02,SCS,K
+play,6,1,aurir001,22,BCCBX,3/L3
+play,6,1,mirad001,02,FFC,K/C
+play,6,1,gardm001,12,FSBC,K/C
+play,7,0,greew001,22,BCBSX,43/G
+play,7,0,nievj002,00,X,53/G
+play,7,0,bufod001,12,BFCX,4/P4
+play,7,1,benam001,12,FBCS,K
+play,7,1,martr003,20,BBX,9/F9
+play,7,1,bondb001,32,SBBBSFB,W
+play,7,1,kentj001,01,CX,13/G
+play,8,0,giraj001,02,FFX,S9
+play,8,0,tapak001,00,,NP
+sub,husoj001,"Jeff Huson",0,9,11
+play,8,0,husoj001,11,CBX,16(1)3/GDP
+play,8,0,youne001,00,X,4/P4
+play,8,1,burke001,00,,NP
+sub,husoj001,"Jeff Huson",0,9,4
+play,8,1,burke001,00,,NP
+sub,karcm001,"Matt Karchner",0,1,1
+play,8,1,burke001,10,BX,2/FL
+play,8,1,muelb001,10,BX,31/G
+play,8,1,aurir001,10,BX,T7/7D
+play,8,1,mirad001,32,CBBBFC,K/C
+play,9,0,martd002,21,CBBX,S
+play,9,0,sosas001,00,X,5/FL
+play,9,0,rodrh001,32,CBBFBX,HR/9.1-H
+play,9,0,greew001,00,,NP
+sub,nen-r001,"Robb Nen",1,9,1
+play,9,0,greew001,22,CSBBX,9/F9D
+play,9,0,nievj002,12,SBSX,HR/7
+play,9,0,bufod001,22,BCFFBX,63/G
+data,er,tapak001,5
+data,er,karcm001,0
+data,er,gardm001,2
+data,er,nen-r001,1

@@ -1,0 +1,206 @@
+version,2
+info,visteam,CHN
+info,hometeam,MON
+info,site,MON02
+info,date,2000/05/14
+info,number,0
+info,starttime,1:35PM
+info,daynight,day
+info,usedh,false
+info,umphome,brinj901
+info,ump1b,nelsj901
+info,ump2b,cousd901
+info,ump3b,marqa901
+info,pitches,pitches
+info,temp,72
+info,winddir,ltor
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,220
+info,attendance,10621
+info,wp,hermd001
+info,lp,aguir001
+info,save,
+start,youne001,"Eric Young",0,1,4
+start,gutir001,"Ricky Gutierrez",0,2,6
+start,sosas001,"Sammy Sosa",0,3,9
+start,rodrh001,"Henry Rodriguez",0,4,7
+start,greew001,"Willie Greene",0,5,5
+start,andrs001,"Shane Andrews",0,6,3
+start,giraj001,"Joe Girardi",0,7,2
+start,bufod001,"Damon Buford",0,8,8
+start,valdi001,"Ismael Valdes",0,9,1
+start,bergp001,"Peter Bergeron",1,1,8
+start,vidrj001,"Jose Vidro",1,2,4
+start,whitr001,"Rondell White",1,3,7
+start,guerv001,"Vladimir Guerrero",1,4,9
+start,stevl001,"Lee Stevens",1,5,3
+start,traca001,"Andy Tracy",1,6,5
+start,widgc001,"Chris Widger",1,7,2
+start,cabro001,"Orlando Cabrera",1,8,6
+start,irabh001,"Hideki Irabu",1,9,1
+play,1,0,youne001,00,X,S9
+play,1,0,gutir001,20,BBB,SB2
+play,1,0,gutir001,30,BBBB,W
+play,1,0,sosas001,11,BCX,S8.2-H;1-3
+play,1,0,rodrh001,00,X,3/G/TP.1X2(36);3XH(62)
+play,1,1,bergp001,11,FBX,7/F7
+play,1,1,vidrj001,11,CBX,D7
+play,1,1,whitr001,22,BBCCX,6/P6
+play,1,1,guerv001,21,BFBX,HR/8.2-H
+play,1,1,stevl001,31,CBBBB,W
+play,1,1,traca001,22,BCBFX,43/G
+play,2,0,greew001,01,SX,S7.B-H(E3/TH)
+play,2,0,andrs001,12,FBSFS,K23
+play,2,0,giraj001,22,BBFFX,63/G
+play,2,0,bufod001,31,BFBBX,HR/9
+play,2,0,valdi001,21,BBFX,3/G#
+play,2,1,widgc001,12,SFBS,K
+play,2,1,cabro001,00,X,63/G
+play,2,1,irabh001,11,BCX,S7
+play,2,1,bergp001,31,FBBBB,W.1-2
+play,2,1,vidrj001,02,FFX,7/F7
+play,3,0,youne001,00,X,S9
+play,3,0,gutir001,10,BB,SB2
+play,3,0,gutir001,30,BBBB,W
+play,3,0,sosas001,00,B,SB3
+play,3,0,sosas001,12,BFSFX,6(1)/FO/G.3-H
+play,3,0,rodrh001,00,X,HR/78.1-H
+play,3,0,greew001,10,BX,S8
+play,3,0,andrs001,00,,NP
+sub,johnm002,"Mike Johnson",1,9,1
+play,3,0,andrs001,22,BCCBX,8/F8
+play,3,0,giraj001,10,BX,S8.1-3
+play,3,0,bufod001,22,CFBFBX,13/G
+play,3,1,whitr001,02,CFFX,9/F9
+play,3,1,guerv001,10,BX,S
+play,3,1,stevl001,01,CX,HR/7.1-H
+play,3,1,traca001,32,CCBBBFB,W
+play,3,1,widgc001,01,CX,53/G.1-2
+play,3,1,cabro001,32,CBFBBX,7/F7
+play,4,0,valdi001,02,FSC,K/C
+play,4,0,youne001,21,BCBX,63/G
+play,4,0,gutir001,22,BCBCX,S7/7S
+play,4,0,sosas001,21,BBFX,S7.1-3
+play,4,0,rodrh001,10,BX,S9.3-H;1-2
+play,4,0,greew001,21,FBBX,7/F7
+play,4,1,johnm002,00,,NP
+sub,blumg001,"Geoff Blum",1,9,11
+play,4,1,blumg001,31,CBBBB,W
+play,4,1,bergp001,12,CBSX,7/F7
+play,4,1,vidrj001,32,BCFBBB,W.1-2
+play,4,1,whitr001,22,SBCBX,D7.2-H;1-3
+play,4,1,guerv001,30,BBBI,IW
+play,4,1,stevl001,11,BCX,8/SF.3-H
+play,4,1,traca001,21,BFBX,HR/7.2-H;1-H
+play,4,1,widgc001,00,,NP
+sub,vanpt001,"Todd Van Poppel",0,9,1
+play,4,1,widgc001,32,BBFBFFB,W
+play,4,1,cabro001,01,FX,7/F7
+play,5,0,andrs001,00,,NP
+sub,liraf001,"Felipe Lira",1,9,1
+play,5,0,andrs001,00,X,S
+play,5,0,giraj001,00,C,SB2
+play,5,0,giraj001,01,CX,63/G
+play,5,0,bufod001,22,CBCFBS,K
+play,5,0,vanpt001,00,X,63/G
+play,5,1,liraf001,00,X,63/G
+play,5,1,bergp001,32,BCFBBB,W
+play,5,1,vidrj001,00,1,POCS2(136)
+play,5,1,vidrj001,02,1CCX,31/G
+play,6,0,youne001,30,BBBB,W
+play,6,0,gutir001,10,BC,SB2
+play,6,0,gutir001,22,BCBCFS,K+SB3
+play,6,0,sosas001,02,SCX,S5.3-H;B-2(E5/TH1)
+play,6,0,rodrh001,00,,NP
+sub,blanm001,"Matt Blank",1,9,1
+play,6,0,rodrh001,11,BFX,S8.2-H
+play,6,0,greew001,21,BBCX,8/F8
+play,6,0,andrs001,00,,NP
+sub,telfa001,"Anthony Telford",1,9,1
+play,6,0,andrs001,00,X,9/F9
+play,6,1,whitr001,11,BSX,8/F8
+play,6,1,guerv001,02,CFX,63/G
+play,6,1,stevl001,30,BBBB,W
+play,6,1,traca001,22,CSBFBS,K
+play,7,0,giraj001,12,FFBS,K
+play,7,0,bufod001,11,FBX,9/F9
+play,7,0,vanpt001,00,,NP
+sub,zulej001,"Julio Zuleta",0,9,11
+play,7,0,zulej001,01,FH,HP
+play,7,0,youne001,01,CX,S8.1-2
+play,7,0,gutir001,32,BCBFBX,S8.2-H;1-3
+play,7,0,sosas001,12,CBSX,D8.3-H;1-3
+play,7,0,rodrh001,00,,NP
+sub,klins002,"Steve Kline",1,6,1
+play,7,0,rodrh001,00,,NP
+sub,coqut001,"Trace Coquillette",1,9,5
+play,7,0,rodrh001,32,BSFBBS,K
+play,7,1,widgc001,00,,NP
+sub,willb001,"Brian Williams",0,9,1
+play,7,1,widgc001,12,CCFBS,K
+play,7,1,cabro001,11,CBX,S9/9S
+play,7,1,coqut001,00,B,WP.1-2
+play,7,1,coqut001,10,BX,7/F7
+play,7,1,bergp001,00,X,S.2XH(2)#
+play,8,0,greew001,00,,NP
+sub,nievj002,"Jose Nieves",0,5,11
+play,8,0,nievj002,02,CSS,K
+play,8,0,andrs001,12,CBSFS,K
+play,8,0,giraj001,21,BBCX,53/G
+play,8,1,vidrj001,00,,NP
+sub,nievj002,"Jose Nieves",0,5,5
+play,8,1,vidrj001,30,BBBB,W
+play,8,1,whitr001,32,CBSBFBX,D7.1-3
+play,8,1,guerv001,30,IIII,IW
+play,8,1,stevl001,00,,NP
+sub,heref001,"Felix Heredia",0,7,1
+play,8,1,stevl001,00,,NP
+sub,reedj001,"Jeff Reed",0,9,2
+play,8,1,stevl001,22,BFSFBFFFFX,S7.3-H;2-H;1-3;B-2(TH)
+play,8,1,klins002,00,,NP
+sub,guerw001,"Wilton Guerrero",1,6,11
+play,8,1,guerw001,01,CX,8/SF.3-H
+play,8,1,widgc001,00,,NP
+sub,farnk001,"Kyle Farnsworth",0,7,1
+play,8,1,widgc001,00,X,4/FL.2-3
+play,8,1,cabro001,11,CBX,S8.3-H
+play,8,1,coqut001,02,CCS,K
+play,9,0,bufod001,00,,NP
+sub,mordm001,"Mike Mordecai",1,6,5
+play,9,0,bufod001,00,,NP
+sub,hermd001,"Dustin Hermanson",1,9,1
+play,9,0,bufod001,21,BCBX,63/G
+play,9,0,reedj001,30,BBBB,W
+play,9,0,youne001,12,BCFX,S7.1-2
+play,9,0,gutir001,01,CX,54(1)/FO.2-3
+play,9,0,sosas001,12,CFFBX,S.3-H;1-2
+play,9,0,rodrh001,22,SBFBFX,HR/9.2-H;1-H
+play,9,0,nievj002,02,CFX,S8
+play,9,0,andrs001,12,SBFS,K
+play,9,1,bergp001,00,,NP
+sub,aguir001,"Rick Aguilera",0,7,1
+play,9,1,bergp001,12,BCCS,K
+play,9,1,vidrj001,12,CSBX,S7/7S
+play,9,1,whitr001,01,CX,HR/8.1-H
+play,9,1,guerv001,02,CFFX,S7
+play,9,1,stevl001,00,,NP
+sub,jonet004,"Terry Jones",1,4,12
+play,9,1,stevl001,11,SBB,SB2
+play,9,1,stevl001,31,SBBII,IW
+play,9,1,mordm001,00,X,S7.2-H;1-2
+data,er,valdi001,9
+data,er,vanpt001,0
+data,er,willb001,3
+data,er,heref001,1
+data,er,farnk001,0
+data,er,aguir001,3
+data,er,irabh001,6
+data,er,johnm002,1
+data,er,liraf001,2
+data,er,blanm001,0
+data,er,telfa001,2
+data,er,klins002,0
+data,er,hermd001,4

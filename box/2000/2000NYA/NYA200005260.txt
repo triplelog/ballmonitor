@@ -1,0 +1,139 @@
+version,2
+info,visteam,BOS
+info,hometeam,NYA
+info,site,NYC16
+info,date,2000/05/26
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,shulj901
+info,ump1b,millb901
+info,ump2b,rapue901
+info,ump3b,rungb901
+info,pitches,pitches
+info,temp,74
+info,winddir,torf
+info,windspeed,12
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,164
+info,attendance,54470
+info,wp,martr002
+info,lp,coned001
+info,save,lowed001
+start,fryej001,"Jeff Frye",0,1,4
+start,valej002,"John Valentin",0,2,5
+start,nixot001,"Trot Nixon",0,3,9
+start,daubb001,"Brian Daubach",0,4,3
+start,everc001,"Carl Everett",0,5,8
+start,oleat001,"Troy O'Leary",0,6,7
+start,stanm002,"Mike Stanley",0,7,10
+start,varij001,"Jason Varitek",0,8,2
+start,sadld001,"Donnie Sadler",0,9,6
+start,martr002,"Ramon Martinez",0,0,1
+start,leder001,"Ricky Ledee",1,1,7
+start,delgw001,"Wilson Delgado",1,2,6
+start,oneip001,"Paul O'Neill",1,3,9
+start,willb002,"Bernie Williams",1,4,8
+start,martt002,"Tino Martinez",1,5,3
+start,posaj001,"Jorge Posada",1,6,10
+start,bross001,"Scott Brosius",1,7,5
+start,turnc001,"Chris Turner",1,8,2
+start,bellc001,"Clay Bellinger",1,9,4
+start,coned001,"David Cone",1,0,1
+play,1,0,fryej001,12,FFBX,D7/7D
+play,1,0,valej002,01,CX,S7/7S.2-3
+play,1,0,nixot001,02,CSS,K
+play,1,0,daubb001,00,X,FC1.3XH(12);1-3;B-2#
+play,1,0,everc001,11,SBX,S8.3-H;2-H
+play,1,0,oleat001,00,B,SB2
+play,1,0,oleat001,30,BBBB,W
+play,1,0,stanm002,12,BCFS,K
+play,1,1,leder001,12,BFSC,K/C
+play,1,1,delgw001,01,CX,31/G
+play,1,1,oneip001,12,CBSX,8/F8S
+play,2,0,varij001,32,BSBFBB,W
+play,2,0,sadld001,00,X,14/SH.1-2
+play,2,0,fryej001,32,BBCFBB,W
+play,2,0,valej002,12,BCFFFS,K
+play,2,0,nixot001,32,BBFSBS,K
+play,2,1,willb002,00,X,S8
+play,2,1,martt002,21,BBFX,8/F8
+play,2,1,posaj001,11,SBX,S9.1-2
+play,2,1,bross001,32,CBCFBBFFFX,9/F9D
+play,2,1,turnc001,12,BCFS,K
+play,3,0,daubb001,01,CX,6/L6
+play,3,0,everc001,22,CFBBX,63/G
+play,3,0,oleat001,11,BCX,S8
+play,3,0,stanm002,00,X,HR/7.1-H
+play,3,0,varij001,31,BBCBB,W
+play,3,0,sadld001,00,X,2/FL
+play,3,1,bellc001,11,BCX,HR/7
+play,3,1,leder001,12,CBFX,31/G
+play,3,1,delgw001,32,BCFBFFBX,7/F7
+play,3,1,oneip001,12,CCFFBX,63/G
+play,4,0,fryej001,22,CBBCX,31/G
+play,4,0,valej002,00,X,9/F9
+play,4,0,nixot001,22,CSBBX,13/G
+play,4,1,willb002,22,BCFBFX,5/FL
+play,4,1,martt002,01,CX,8/F8S
+play,4,1,posaj001,02,CCH,HP
+play,4,1,bross001,10,BX,8/F8D
+play,5,0,daubb001,01,CX,9/F9
+play,5,0,everc001,31,FBBBX,7/F7
+play,5,0,oleat001,11,CBX,7/F7S
+play,5,1,turnc001,12,CBFX,S9
+play,5,1,bellc001,01,FX,S7/7S.1-2
+play,5,1,leder001,00,X,S8.2-3;1X3(84);B-2
+play,5,1,delgw001,00,X,5/P5
+play,5,1,oneip001,02,SFX,31/G
+play,6,0,stanm002,12,CBSS,K
+play,6,0,varij001,00,X,43/G
+play,6,0,sadld001,22,CBBFX,63/G
+play,6,1,willb002,11,BFX,8/F8
+play,6,1,martt002,11,BCX,4/P4
+play,6,1,posaj001,12,CBFC,K/C
+play,7,0,fryej001,12,BFFX,S7
+play,7,0,valej002,12,CFBC,K/C
+play,7,0,nixot001,12,FBFX,S9.1-2
+play,7,0,daubb001,11,CBX,8/F8
+play,7,0,everc001,10,BX,43/G
+play,7,1,bross001,21,CBBX,63/G
+play,7,1,turnc001,22,CBBSFS,K
+play,7,1,bellc001,00,X,9/F9S
+play,8,0,oleat001,00,,NP
+sub,watsa001,"Allen Watson",1,0,1
+play,8,0,oleat001,11,BCX,S7/7S
+play,8,0,stanm002,00,,NP
+sub,nelsj001,"Jeff Nelson",1,0,1
+play,8,0,stanm002,11,BSX,9/F9
+play,8,0,varij001,01,CX,46(1)3/GDP
+play,8,1,leder001,00,X,6/P6
+play,8,1,delgw001,00,,NP
+sub,johnl001,"Lance Johnson",1,2,11
+play,8,1,johnl001,22,CBBCC,K/C
+play,8,1,oneip001,22,FBCBX,D7
+play,8,1,willb002,00,,NP
+sub,garcr001,"Rich Garces",0,0,1
+play,8,1,willb002,12,BCFS,K
+play,9,0,sadld001,00,,NP
+sub,soria001,"Alfonso Soriano",1,2,6
+play,9,0,sadld001,12,SCBS,K
+play,9,0,fryej001,02,CCX,9/F9
+play,9,0,valej002,10,BX,53/G
+play,9,1,martt002,00,,NP
+sub,lowed001,"Derek Lowe",0,0,1
+play,9,1,martt002,22,BCSBFX,8/F8D
+play,9,1,posaj001,12,BCCS,K
+play,9,1,bross001,32,CBFBBX,D8/8D
+play,9,1,turnc001,00,,NP
+sub,leyrj001,"Jim Leyritz",1,8,11
+play,9,1,leyrj001,21,CBBX,53/G
+data,er,martr002,1
+data,er,garcr001,0
+data,er,lowed001,0
+data,er,coned001,4
+data,er,watsa001,0
+data,er,nelsj001,0

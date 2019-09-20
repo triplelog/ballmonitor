@@ -1,0 +1,85 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,11,1,,,,,0,3,BCX,ankir001,1,0,,grism001,0,
+,02,1,,,,,1,7,FFFC,ankir001,1,0,lorem001 strikes out. ,lorem001,0,
+,31,1,burnj001,,,,2,12,BBBCB,ankir001,0,0,burnj001 walks. ,burnj001,0,
+,12,1,burnj001,,,,3,16,CBFX,ankir001,1,0,,hayec001,0,F
+,22,1,vinaf001,,,,4,5,CBBFH,delov001,0,0,vinaf001 hit by pitch. ,vinaf001,1,
+vinaf001 to 2B. ,31,1,rente001,vinaf001,,,5,10,BBCBB,delov001,0,0,rente001 walks. ,rente001,1,
+vinaf001 to 3B. rente001 out. ,11,1,dunss001,,vinaf001,,6,13,BFX,delov001,1,0,dunss001 reaches on fielder's choice. ,dunss001,1,G
+vinaf001 scores. dunss001 scores. ,00,1,,,,,7,14,X,delov001,0,3,mcgwm001 homers. ,mcgwm001,1,
+,10,1,,,,,8,16,BX,delov001,0,1,paquc001 homers. ,paquc001,1,
+,20,1,,,,,10,19,BBX,delov001,1,0,edmoj001 grounds out. ,edmoj001,1,G
+,21,1,,davie001,,,11,23,BBCX,delov001,0,0,davie001 doubles. ,davie001,1,
+davie001 scores. marre001 to 3B. ,02,1,,,marre001,,12,26,CSX,delov001,0,1,marre001 singles. ,marre001,1,
+,02,1,,,marre001,,13,29,SFX,delov001,1,0,,ankir001,1,P
+,22,2,,,,,14,21,CFBBS,ankir001,1,0,moutl001 strikes out. ,moutl001,0,
+,32,2,,,,,15,30,SFFFBFBBX,ankir001,1,0,,hernj001,0,F
+,00,2,,,,,16,31,X,ankir001,1,0,bellr002 grounds out. ,bellr002,0,G
+,21,2,,,,,17,33,FBBX,delov001,1,0,,vinaf001,1,P
+,10,2,,,,,18,35,BX,delov001,1,0,,rente001,1,P
+,32,2,dunss001,,,,19,41,BBBCFX,delov001,0,0,dunss001 singles. ,dunss001,1,
+dunss001 to 2B. ,31,2,mcgwm001,dunss001,,,20,46,BBBCB,delov001,0,0,mcgwm001 walks. ,mcgwm001,1,
+,12,2,mcgwm001,dunss001,,,21,50,SSBX,delov001,1,0,,paquc001,1,F
+,32,3,blanh001,,,,22,39,FCBBFFBX,ankir001,0,0,blanh001 singles. ,blanh001,0,
+,01,3,blanh001,,,,23,41,SX,ankir001,1,0,,delov001,0,P
+blanh001 scores. ,21,3,,moutj001,,,24,45,BSBX,ankir001,0,1,moutj001 doubles. ,moutj001,0,
+,31,3,lorem001,moutj001,,,25,50,BFBBB,ankir001,0,0,lorem001 walks. ,lorem001,0,
+moutj001 to 3B. lorem001 to 2B. ,01,3,,lorem001,moutj001,,26,52,CX,ankir001,1,0,burnj001 grounds out. ,burnj001,0,G
+,02,3,,lorem001,moutj001,,27,55,FFS,ankir001,1,0,hayec001 strikes out. ,hayec001,0,
+,21,3,,,,,28,54,BBCX,delov001,0,1,edmoj001 homers. ,edmoj001,1,
+,21,3,,,,,29,58,BBCX,delov001,1,0,,davie001,1,F
+,02,3,,,,,30,61,CSS,delov001,1,0,marre001 strikes out. ,marre001,1,
+,10,3,,,,,31,63,BX,delov001,1,0,,ankir001,1,P
+,22,4,,,,,32,60,BBSSS,ankir001,1,0,moutl001 strikes out. ,moutl001,0,
+,02,4,,,,,33,63,CFS,ankir001,1,0,hernj001 strikes out. ,hernj001,0,
+,02,4,,,,,34,68,CFFFC,ankir001,1,0,bellr002 strikes out. ,bellr002,0,
+,12,4,,,,,35,69,CFFBFX,delov001,1,0,vinaf001 grounds out. ,vinaf001,1,G
+,12,4,,,,,36,73,BFSX,delov001,0,1,rente001 homers. ,rente001,1,
+,10,4,,,,,37,75,BX,delov001,0,1,dunss001 homers. ,dunss001,1,
+,11,4,,,,,38,78,CBX,delov001,1,0,mcgwm001 grounds out. ,mcgwm001,1,G
+,21,4,paquc001,,,,39,82,SBBX,delov001,0,0,paquc001 singles. ,paquc001,1,
+paquc001 to 2B. ,31,4,edmoj001,paquc001,,,40,87,BFBBB,delov001,0,0,edmoj001 walks. ,edmoj001,1,
+paquc001 to 3B. edmoj001 out. ,11,4,davie001,,paquc001,,42,3,CBX,stule001,1,0,davie001 reaches on fielder's choice. ,davie001,1,
+,00,5,,,,,43,69,X,ankir001,0,1,blanh001 homers. ,blanh001,0,
+,12,5,,,,,44,73,FBSS,ankir001,1,0,stule001 strikes out. ,stule001,0,
+,32,5,moutj001,,,,45,79,BFBFBB,ankir001,0,0,moutj001 walks. ,moutj001,0,
+,10,5,moutj001,,,,46,81,BX,ankir001,1,0,,lorem001,0,F
+,12,5,moutj001,,,,47,87,BFFFFS,ankir001,1,0,burnj001 strikes out. ,burnj001,0,
+,12,5,,,,,48,9,BSFFFC,stule001,1,0,marre001 strikes out. ,marre001,1,
+,00,5,ankir001,,,,49,10,X,stule001,0,0,ankir001 singles. ,ankir001,1,
+,22,5,ankir001,,,,50,15,BSBFS,stule001,1,0,vinaf001 strikes out. ,vinaf001,1,
+,12,5,ankir001,,,,51,19,CBCS,stule001,1,0,rente001 strikes out. ,rente001,1,
+,22,6,,,,,52,92,CBBCS,ankir001,1,0,hayec001 strikes out. ,hayec001,0,
+,22,6,,,,,53,98,SBCFBS,ankir001,1,0,moutl001 strikes out. ,moutl001,0,
+,21,6,,,,,54,102,FBBX,ankir001,1,0,,hernj001,0,F
+,22,6,,,,,55,24,CSBBX,stule001,1,0,dunss001 grounds out. ,dunss001,1,G
+,21,6,mcgwm001,,,,56,28,BBFX,stule001,0,0,mcgwm001 singles. ,mcgwm001,1,
+mcgwm001 to 2B. ,02,6,paquc001,mcgwm001,,,57,31,CSX,stule001,0,0,paquc001 singles. ,paquc001,1,
+mcgwm001 to 3B. paquc001 to 2B. ,31,6,edmoj001,paquc001,mcgwm001,,58,36,BCBBB,stule001,0,0,edmoj001 walks. ,edmoj001,1,
+,02,6,,paquc001,mcgwm001,,59,39,CFX,stule001,2,0,Double Play. ,davie001,1,
+,00,7,,,,,62,1,X,sloch001,1,0,bellr002 grounds out. ,bellr002,0,G
+,21,7,blanh001,,,,63,5,BFBX,sloch001,0,0,blanh001 singles. ,blanh001,0,
+,02,7,blanh001,,,,64,8,SSS,sloch001,1,0,stule001 strikes out. ,stule001,0,
+,00,7,blanh001,,,,65,9,X,sloch001,1,0,,moutj001,0,F
+,02,7,marre001,,,,66,43,SFFX,stule001,0,0,marre001 singles. ,marre001,1,
+marre001 to 2B. ,30,7,drewj001,marre001,,,67,47,BBBB,stule001,0,0,drewj001 walks. ,drewj001,1,
+marre001 to 3B. drewj001 to 2B. ,10,7,vinaf001,drewj001,marre001,,68,49,BX,stule001,0,0,vinaf001 singles. ,vinaf001,1,
+drewj001 to 3B. vinaf001 to 2B. marre001 out. ,00,7,rente001,vinaf001,drewj001,,69,50,X,stule001,1,0,rente001 reaches on fielder's choice. ,rente001,1,
+drewj001 scores. vinaf001 to 3B. rente001 out. ,02,7,dunss001,,vinaf001,,70,54,CFFX,stule001,1,1,dunss001 reaches on fielder's choice. ,dunss001,1,
+dunss001 to 2B. ,30,7,mcgwm001,dunss001,vinaf001,,71,58,BBBB,stule001,0,0,mcgwm001 walks. ,mcgwm001,1,
+,12,7,mcgwm001,dunss001,vinaf001,,72,67,SBSFFFFFS,stule001,1,0,paquc001 strikes out. ,paquc001,1,
+,01,8,,,,,74,11,CX,sloch001,1,0,,lorem001,0,P
+,11,8,,,,,75,14,CBX,sloch001,1,0,,burnj001,0,F
+,32,8,hayec001,,,,76,20,BSBCBB,sloch001,0,0,hayec001 walks. ,hayec001,0,
+,22,8,hayec001,,,,77,26,BBFSFS,sloch001,1,0,moutl001 strikes out. ,moutl001,0,
+,02,8,,,,,79,3,CSS,leskc001,1,0,edmoj001 strikes out. ,edmoj001,1,
+,01,8,,,,,81,5,CX,leskc001,1,0,howat001 grounds out. ,howat001,1,G
+,32,8,,marre001,,,82,11,BFFBBX,leskc001,0,0,marre001 doubles. ,marre001,1,
+marre001 scores. ,22,8,,,,,83,16,FBFBX,leskc001,0,2,drewj001 homers. ,drewj001,1,
+,02,8,,,,,84,19,CFX,leskc001,1,0,vinaf001 grounds out. ,vinaf001,1,G
+,10,9,,,,,87,2,BX,waind001,1,0,hernj001 grounds out. ,hernj001,0,G
+,32,9,bellr002,,,,88,8,BBFBFX,waind001,0,0,bellr002 singles. ,bellr002,0,
+,00,9,bellr002,,,,89,9,X,waind001,1,0,,blanh001,0,P
+bellr002 to 2B. ,32,9,lopel002,bellr002,,,91,16,FFBFBBX,waind001,0,0,lopel002 singles. ,lopel002,0,
+bellr002 to 3B. lopel002 to 2B. ,32,9,moutj001,lopel002,bellr002,,92,22,BBFFBB,waind001,0,0,moutj001 walks. ,moutj001,0,
+,00,9,moutj001,lopel002,bellr002,,93,23,X,waind001,1,0,,lorem001,0,

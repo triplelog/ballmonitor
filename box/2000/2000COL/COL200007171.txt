@@ -1,0 +1,176 @@
+version,2
+info,visteam,OAK
+info,hometeam,COL
+info,site,DEN02
+info,date,2000/07/17
+info,number,1
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,false
+info,umphome,buckc901
+info,ump1b,clara901
+info,ump2b,wendh902
+info,ump3b,spiep901
+info,pitches,pitches
+info,temp,82
+info,winddir,fromrf
+info,windspeed,3
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,203
+info,attendance,40120
+info,wp,magnm001
+info,lp,whitg001
+info,save,isrij001
+start,chrir001,"Ryan Christenson",0,1,8
+start,velar001,"Randy Velarde",0,2,4
+start,giamj001,"Jason Giambi",0,3,3
+start,saeno001,"Olmedo Saenz",0,4,5
+start,piata001,"Adam Piatt",0,5,9
+start,giamj002,"Jeremy Giambi",0,6,7
+start,hernr002,"Ramon Hernandez",0,7,2
+start,menef001,"Frank Menechino",0,8,6
+start,jonem002,"Marcus Jones",0,9,1
+start,goodt001,"Tom Goodwin",1,1,8
+start,huntb002,"Brian L. Hunter",1,2,9
+start,walkl001,"Larry Walker",1,3,7
+start,heltt001,"Todd Helton",1,4,3
+start,cirij001,"Jeff Cirillo",1,5,5
+start,peren001,"Neifi Perez",1,6,6
+start,lansm001,"Mike Lansing",1,7,4
+start,petrb001,"Ben Petrick",1,8,2
+start,beltr001,"Rigo Beltran",1,9,1
+play,1,0,chrir001,32,BCCBBC,K/C
+com,"Debut game for Marcus Jones"
+play,1,0,velar001,20,BBX,D7
+play,1,0,giamj001,32,BCBBSX,5/FL
+play,1,0,saeno001,11,BSX,HR/7.2-H
+play,1,0,piata001,30,BBBB,W
+play,1,0,giamj002,12,FSFBX,HR/7.1-H
+play,1,0,hernr002,30,BBBB,W
+play,1,0,menef001,01,CX,S7.1-2
+play,1,0,jonem002,00,X,3/G
+play,1,1,goodt001,22,BCFBX,8/F8
+play,1,1,huntb002,21,BBCX,HR/7
+play,1,1,walkl001,31,BBCBB,W
+play,1,1,heltt001,32,CBBBCFX,8/F8
+play,1,1,cirij001,31,BFBBX,S8.1-2
+play,1,1,peren001,11,BCX,4/P4
+play,2,0,chrir001,10,BX,8/F8
+play,2,0,velar001,10,BX,S7
+play,2,0,giamj001,10,BX,D9.1-H
+play,2,0,saeno001,31,FBBBB,W
+play,2,0,piata001,00,,NP
+sub,tavaj001,"Julian Tavarez",1,9,1
+play,2,0,piata001,01,FX,S9/9S.2-H;1-3
+play,2,0,giamj002,31,BBFBX,36(1)3/GDP
+play,2,1,lansm001,11,BCX,53/G
+play,2,1,petrb001,01,CX,8/F8D
+play,2,1,tavaj001,12,FSBS,K
+play,3,0,hernr002,20,BBX,63/G
+play,3,0,menef001,10,BX,53/G
+play,3,0,jonem002,12,BFCX,13/G
+play,3,1,goodt001,31,BBCBB,W
+play,3,1,huntb002,12,BCCFB,SB2
+play,3,1,huntb002,32,BCCFBBX,4/L4
+play,3,1,walkl001,00,X,S7/7S.2-H
+play,3,1,heltt001,00,X,D/78D.1-3
+play,3,1,cirij001,22,BBFCX,S7.3-H;2-H;B-2(THH)
+play,3,1,peren001,32,CBBFBFB,W
+play,3,1,lansm001,00,,NP
+sub,joned001,"Doug Jones",0,9,1
+play,3,1,lansm001,12,CFBFX,4(1)3/GDP
+play,4,0,chrir001,11,CBX,63/G
+play,4,0,velar001,22,BFCBS,K
+play,4,0,giamj001,32,BCBCBFS,K
+play,4,1,petrb001,02,SFX,S7/7S
+play,4,1,tavaj001,01,LX,1/BP1.1-2(E1/TH1)
+play,4,1,goodt001,32,BCBSFBFX,8/F8
+play,4,1,huntb002,10,BX,D/78S.2-H
+play,4,1,walkl001,00,X,HR/9.2-H
+play,4,1,heltt001,12,CBCS,K
+play,5,0,saeno001,22,BBCFS,K
+play,5,0,piata001,00,X,7/F7D
+play,5,0,giamj002,21,BBFX,13/G
+play,5,1,cirij001,21,BBCX,43/G
+play,5,1,peren001,21,BBFX,63/G
+play,5,1,lansm001,01,CX,S8
+play,5,1,petrb001,32,BBFFFFFFFBFFFX,4/P4
+play,6,0,hernr002,31,BBBCX,53/G
+play,6,0,menef001,00,,NP
+sub,tejam001,"Miguel Tejada",0,8,11
+play,6,0,tejam001,22,BBCFX,S8
+play,6,0,joned001,00,,NP
+sub,chave001,"Eric Chavez",0,9,11
+play,6,0,chave001,21,BFBX,3/G.1-2
+play,6,0,chrir001,00,,NP
+sub,longt002,"Terrence Long",0,1,11
+play,6,0,longt002,12,CCBX,53/G
+play,6,1,tavaj001,00,,NP
+sub,longt002,"Terrence Long",0,1,8
+play,6,1,tavaj001,00,,NP
+sub,tejam001,"Miguel Tejada",0,8,6
+play,6,1,tavaj001,00,,NP
+sub,shumt001,"Terry Shumpert",1,9,11
+play,6,1,shumt001,00,,NP
+sub,magnm001,"Mike Magnante",0,9,1
+play,6,1,shumt001,21,BBCX,E6/G
+play,6,1,goodt001,10,BX,14/SH.1-2
+play,6,1,huntb002,20,BB2,POCS3(154)
+play,6,1,huntb002,32,BB2BCCX,13/G
+play,7,0,velar001,00,,NP
+sub,whitg001,"Gabe White",1,9,1
+play,7,0,velar001,32,FBBBFX,63/G
+play,7,0,giamj001,11,BFX,D8/8D
+play,7,0,saeno001,12,CFFBFX,D/78.2-H
+play,7,0,piata001,01,FX,D9.2-H
+play,7,0,giamj002,21,BBFX,13/G.2-3
+play,7,0,hernr002,00,,NP
+sub,dejem001,"Mike DeJean",1,9,1
+play,7,0,hernr002,22,CBSBX,D7.3-H
+play,7,0,tejam001,30,IIII,IW
+play,7,0,magnm001,00,X,8/F8
+play,7,1,walkl001,21,CBBX,13/G
+play,7,1,heltt001,10,BX,HR/8
+play,7,1,cirij001,00,,NP
+sub,tam-j001,"Jeff Tam",0,9,1
+play,7,1,cirij001,20,BBX,9/F9D
+play,7,1,peren001,00,X,63/G
+play,8,0,longt002,10,BX,43/G
+play,8,0,velar001,30,BBBB,W
+play,8,0,giamj001,30,BBBB,W.1-2
+play,8,0,saeno001,32,CBBFBX,S9.2-H;1-H(E9)(UR);B-2
+play,8,0,piata001,10,BX,4/P4
+play,8,0,giamj002,30,IIII,IW
+play,8,0,hernr002,12,CBFX,43/G
+play,8,1,lansm001,01,CX,63/G
+play,8,1,petrb001,32,BFCBFFBX,53/G
+play,8,1,dejem001,00,,NP
+sub,walkt002,"Todd Walker",1,9,11
+play,8,1,walkt002,00,X,3/G
+play,9,0,tejam001,00,,NP
+sub,myerm001,"Mike Myers",1,9,1
+play,9,0,tejam001,22,CBFBX,8/F8
+play,9,0,tam-j001,00,,NP
+sub,grieb001,"Ben Grieve",0,9,11
+play,9,0,grieb001,12,CCBX,4/L4
+play,9,0,longt002,12,BCFC,K/C
+play,9,1,goodt001,00,,NP
+sub,isrij001,"Jason Isringhausen",0,9,1
+play,9,1,goodt001,22,CBBFX,S
+play,9,1,huntb002,22,CFBFBX,46(1)/FO
+play,9,1,walkl001,20,BBX,43/G.1-2
+play,9,1,heltt001,01,CB,WP.2-3
+play,9,1,heltt001,11,CBX,HR/9.3-H
+play,9,1,cirij001,11,BSX,8/F8
+data,er,jonem002,4
+data,er,joned001,3
+data,er,magnm001,1
+data,er,tam-j001,0
+data,er,isrij001,2
+data,er,beltr001,6
+data,er,tavaj001,0
+data,er,whitg001,3
+data,er,dejem001,1
+data,er,myerm001,0

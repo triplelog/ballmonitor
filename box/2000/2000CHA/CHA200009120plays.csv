@@ -1,0 +1,82 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,22,1,,,,,0,6,BCCBFX,wellk001,1,0,,easld001,0,F
+,32,1,mcmib001,,,,1,12,BBBCCB,wellk001,0,0,mcmib001 walks. ,mcmib001,0,
+,22,1,mcmib001,,,,2,18,BCBCFX,wellk001,1,0,,higgb001,0,F
+,22,1,mcmib001,,,,3,24,CBBSFC,wellk001,1,0,gonzj002 strikes out. ,gonzj002,0,
+,00,1,,,,,4,1,X,mlicd001,1,0,durhr001 grounds out. ,durhr001,1,G
+,32,1,graft001,,,,5,7,BBCBCB,mlicd001,0,0,graft001 walks. ,graft001,1,
+,02,1,graft001,,,,6,10,CCS,mlicd001,1,0,thomf001 strikes out. ,thomf001,1,
+graft001 scores. ,22,1,,,,,7,17,CCBFBFX,mlicd001,0,2,ordom001 homers. ,ordom001,1,
+,22,1,lee-c001,,,,8,22,BBSSX,mlicd001,0,0,lee-c001 reaches on error. ,lee-c001,1,G
+,22,1,lee-c001,,,,9,27,BBCCC,mlicd001,1,0,konep001 strikes out. ,konep001,1,
+,31,2,palmd002,,,,10,29,CBBBB,wellk001,0,0,palmd002 walks. ,palmd002,0,
+palmd002 to 2B. ,00,2,clart002,palmd002,,,11,30,X,wellk001,0,0,clart002 singles. ,clart002,0,
+palmd002 scores. clart002 to 3B. ,01,2,,cruzd001,clart002,,12,32,SX,wellk001,0,1,cruzd001 doubles. ,cruzd001,0,
+clart002 scores. cruzd001 to 2B. ,21,2,encaj001,cruzd001,,,13,36,BBSX,wellk001,0,1,encaj001 singles. ,encaj001,0,
+cruzd001 to 3B. encaj001 to 2B. ,31,2,ausmb001,encaj001,cruzd001,,14,41,BBBCB,wellk001,0,0,ausmb001 walks. ,ausmb001,0,
+,11,2,ausmb001,encaj001,cruzd001,,15,44,CBX,wellk001,1,0,,easld001,0,
+cruzd001 scores. encaj001 to 3B. ausmb001 to 2B. ,00,2,mcmib001,ausmb001,encaj001,,16,45,X,wellk001,0,1,mcmib001 singles. ,mcmib001,0,
+,31,2,mcmib001,ausmb001,encaj001,,17,50,BFBBX,wellk001,1,0,,higgb001,0,P
+,00,2,mcmib001,ausmb001,encaj001,,18,51,X,wellk001,1,0,,gonzj002,0,F
+,01,2,,,,,19,29,CX,mlicd001,1,0,,perrh001,1,
+,32,2,,,,,20,36,BCFBBFX,mlicd001,1,0,,singc001,1,F
+,01,2,,,,,21,38,CX,mlicd001,1,0,,johnc002,1,
+,00,3,palmd002,,,,22,52,X,wellk001,0,0,palmd002 singles. ,palmd002,0,
+palmd002 to 3B. ,11,3,clart002,,palmd002,,23,55,BCX,wellk001,0,0,clart002 singles. ,clart002,0,
+palmd002 scores. clart002 to 2B. ,01,3,cruzd001,clart002,,,24,57,FX,wellk001,0,1,cruzd001 singles. ,cruzd001,0,
+,12,3,cruzd001,clart002,,,26,4,CFBS,lowes001,1,0,encaj001 strikes out. ,encaj001,0,
+clart002 scores. cruzd001 to 3B. ausmb001 to 2B. ,11,3,,ausmb001,cruzd001,,27,7,BCX,lowes001,0,1,ausmb001 singles. ,ausmb001,0,
+,01,3,easld001,ausmb001,cruzd001,,28,9,CH,lowes001,0,0,easld001 hit by pitch. ,easld001,0,
+cruzd001 scores. ,02,3,easld001,ausmb001,,,29,12,FFX,lowes001,1,1,mcmib001 hits sacrifice fly. ,mcmib001,0,
+ausmb001 scores. easld001 scores. ,20,3,,,,,30,15,BBX,lowes001,0,3,higgb001 homers. ,higgb001,0,
+,12,3,,,,,31,19,BSCX,lowes001,1,0,gonzj002 grounds out. ,gonzj002,0,G
+,32,3,durhr001,,,,32,44,BCBBCB,mlicd001,0,0,durhr001 walks. ,durhr001,1,
+durhr001 to 2B. ,20,3,graft001,durhr001,,,33,47,BBX,mlicd001,0,0,graft001 singles. ,graft001,1,
+,01,3,graft001,durhr001,,,34,49,CX,mlicd001,1,0,,thomf001,1,F
+,11,3,,graft001,durhr001,ordom001,35,52,BCB,mlicd001,0,0,durhr001 steals 3B. graft001 steals 2B. ,ordom001,1,
+,31,3,ordom001,graft001,durhr001,,36,57,BCBBB,mlicd001,0,0,ordom001 walks. ,ordom001,1,
+,02,3,ordom001,graft001,durhr001,,37,61,FFFX,mlicd001,1,0,,lee-c001,1,F
+,32,3,ordom001,graft001,durhr001,,38,67,BBCBFX,mlicd001,1,0,konep001 grounds out. ,konep001,1,G
+,21,4,,,,,39,23,CBBX,lowes001,1,0,,palmd002,0,F
+,10,4,clart002,,,,40,25,BX,lowes001,0,0,clart002 singles. ,clart002,0,
+,11,4,clart002,,,,41,28,CBX,lowes001,1,0,,cruzd001,0,F
+,00,4,clart002,,,,42,29,X,lowes001,1,0,encaj001 grounds out. ,encaj001,0,G
+,00,4,perrh001,,,,43,68,X,mlicd001,0,0,perrh001 reaches on error. ,perrh001,1,
+,11,4,perrh001,,,,44,71,BSX,mlicd001,1,0,,singc001,1,F
+perrh001 to 2B. ,02,4,johnc002,perrh001,,,45,74,CFH,mlicd001,0,0,johnc002 hit by pitch. ,johnc002,1,
+perrh001 to 3B. johnc002 to 2B. ,20,4,,johnc002,perrh001,,46,77,BBX,mlicd001,1,0,durhr001 grounds out. ,durhr001,1,G
+,12,4,,johnc002,perrh001,,47,81,CSBS,mlicd001,1,0,graft001 strikes out. ,graft001,1,
+,22,5,,,,,48,34,CBBCS,lowes001,1,0,ausmb001 strikes out. ,ausmb001,0,
+,00,5,,,,,49,35,X,lowes001,1,0,,easld001,0,F
+,32,5,mcmib001,,,,50,41,FBFBBB,lowes001,0,0,mcmib001 walks. ,mcmib001,0,
+,12,5,mcmib001,,,,51,45,FBFX,lowes001,1,0,,higgb001,0,P
+,22,5,,,,,52,88,CBFFBFX,mlicd001,1,0,thomf001 grounds out. ,thomf001,1,G
+,01,5,,,,,53,90,FX,mlicd001,0,1,ordom001 homers. ,ordom001,1,
+,11,5,,,,,54,93,FBX,mlicd001,1,0,,lee-c001,1,F
+,11,5,,,,,55,96,FBX,mlicd001,1,0,konep001 grounds out. ,konep001,1,G
+,12,6,,,,,57,5,FBSFS,bradc001,1,0,gonzj002 strikes out. ,gonzj002,0,
+,02,6,,,,,58,8,FSC,bradc001,1,0,palmd002 strikes out. ,palmd002,0,
+,32,6,,,,,59,15,CFFBBBX,bradc001,1,0,clart002 grounds out. ,clart002,0,G
+,00,6,,,,,62,1,X,blaiw001,1,0,,perrh001,1,F
+,21,6,,,,,63,5,CBBX,blaiw001,1,0,,singc001,1,F
+,12,6,,,,,64,9,BCFS,blaiw001,1,0,johnc002 strikes out. ,johnc002,1,
+,00,7,,,,,66,16,X,bradc001,1,0,cruzd001 grounds out. ,cruzd001,0,G
+,02,7,,,,,67,19,CFX,bradc001,1,0,encaj001 grounds out. ,encaj001,0,G
+,32,7,,,,,68,25,CBBBFX,bradc001,1,0,ausmb001 grounds out. ,ausmb001,0,G
+,22,7,,,,,69,15,CBBFFX,blaiw001,1,0,durhr001 grounds out. ,durhr001,1,G
+,11,7,graft001,,,,70,18,BCX,blaiw001,0,0,graft001 singles. ,graft001,1,
+,31,7,graft001,,,,71,23,BBBCX,blaiw001,1,0,,thomf001,1,F
+,31,7,graft001,,,,72,28,BCBBX,blaiw001,1,0,,ordom001,1,F
+,02,8,,,,,75,3,CSS,wunsk001,1,0,easld001 strikes out. ,easld001,0,
+,22,8,,,,,76,10,BCCBFFX,wunsk001,1,0,mcmib001 grounds out. ,mcmib001,0,G
+,02,8,,,,,77,13,SCS,wunsk001,1,0,higgb001 strikes out. ,higgb001,0,
+,00,8,,,,,78,29,X,blaiw001,1,0,,lee-c001,1,F
+,20,8,,,,,79,32,BBX,blaiw001,1,0,,konep001,1,F
+,01,8,,,,,80,34,CX,blaiw001,1,0,,credj001,1,F
+,12,9,,,,,82,4,BFSS,gintm001,1,0,gonzj002 strikes out. ,gonzj002,0,
+,22,9,,,,,83,10,BFBFFS,gintm001,1,0,palmd002 strikes out. ,palmd002,0,
+,00,9,,,,,84,11,X,gintm001,0,1,morrh001 homers. ,morrh001,0,
+,21,9,,,,,85,15,BFBX,gintm001,1,0,,cruzd001,0,
+,32,9,singc001,,,,90,6,BBSFBB,jonet003,0,0,singc001 walks. ,singc001,1,
+,02,9,,,,,91,9,CCX,jonet003,2,0,Double Play. ,paulj001,1,
+,12,9,,,,,92,16,FFFBFFS,jonet003,1,0,durhr001 strikes out. ,durhr001,1,

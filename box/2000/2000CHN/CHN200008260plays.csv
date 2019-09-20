@@ -1,0 +1,74 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,02,1,,,,,0,3,FFX,tapak001,1,0,goodt001 grounds out. ,goodt001,0,G
+,12,1,,,,,1,7,CBFX,tapak001,1,0,,grudm001,0,F
+,22,1,,,,,2,12,CBFBX,tapak001,1,0,,grees001,0,P
+,32,1,,,,,3,6,BCBBCX,hergm001,1,0,youne001 grounds out. ,youne001,1,G
+,22,1,,,,,4,12,BCCBFX,hergm001,1,0,gracm001 grounds out. ,gracm001,1,G
+,22,1,,,,,5,17,CBSBX,hergm001,1,0,sosas001 grounds out. ,sosas001,1,G
+,10,2,karre001,,,,6,14,BX,tapak001,0,0,karre001 reaches on error. ,karre001,0,F
+,21,2,,,,,7,18,BBFX,tapak001,2,0,Double Play. ,hundt001,0,
+,01,2,belta001,,,,8,20,CX,tapak001,0,0,belta001 singles. ,belta001,0,
+,01,2,belta001,,,,9,22,CX,tapak001,1,0,,avenb001,0,F
+,22,2,,,,,10,22,BFFBX,hergm001,1,0,,whitr001,1,F
+,02,2,,,,,11,25,CCX,hergm001,1,0,,bufod001,1,L
+,32,2,,,,,12,31,CBSBBX,hergm001,1,0,greew001 grounds out. ,greew001,1,G
+,00,3,,,,,13,23,X,tapak001,1,0,,coraa001,0,F
+,12,3,hergm001,,,,14,27,CSBX,tapak001,0,0,hergm001 singles. ,hergm001,0,
+hergm001 out. ,21,3,goodt001,,,,15,31,BSBX,tapak001,1,0,goodt001 reaches on fielder's choice. ,goodt001,0,
+goodt001 scores. ,01,3,,grudm001,,,16,33,CX,tapak001,0,1,grudm001 doubles. ,grudm001,0,
+,00,3,,grudm001,,,17,34,X,tapak001,1,0,,grees001,0,F
+,01,3,gutir001,,,,18,33,CX,hergm001,0,0,gutir001 singles. ,gutir001,1,
+gutir001 to 2B. ,21,3,reedj001,gutir001,,,19,37,BFBX,hergm001,0,0,reedj001 singles. ,reedj001,1,
+gutir001 to 3B. reedj001 to 2B. ,12,3,,reedj001,gutir001,,20,41,BLLX,hergm001,1,0,Sacrifice bunt by tapak001.,tapak001,1,
+gutir001 scores. reedj001 scores. ,01,3,youne001,,,,21,43,FX,hergm001,0,2,youne001 singles. ,youne001,1,
+youne001 to 3B. ,20,3,gracm001,,youne001,,22,46,BBX,hergm001,0,0,gracm001 singles. ,gracm001,1,
+gracm001 to 2B. ,30,3,sosas001,gracm001,youne001,,23,50,BBBB,hergm001,0,0,sosas001 walks. ,sosas001,1,
+youne001 scores. gracm001 to 3B. sosas001 to 2B. ,12,3,whitr001,sosas001,gracm001,,24,54,BFCH,hergm001,0,1,whitr001 hit by pitch. ,whitr001,1,
+,31,3,whitr001,,gracm001,,25,59,BBFBX,hergm001,2,0,Double Play. ,bufod001,1,
+,22,4,karre001,,,,26,42,BSBCFFFX,tapak001,0,0,karre001 singles. ,karre001,0,
+,32,4,,karre001,,,27,48,BBFBFS,tapak001,1,0,hundt001 strikes out. karre001 steals 2B. ,hundt001,0,
+karre001 to 3B. ,12,4,,,karre001,,28,52,CCBX,tapak001,1,0,belta001 grounds out. ,belta001,0,G
+,12,4,,,karre001,,29,56,CSBC,tapak001,1,0,avenb001 strikes out. ,avenb001,0,
+,01,4,,,,,30,61,CX,hergm001,1,0,greew001 grounds out. ,greew001,1,G
+,22,4,,,,,31,67,BBCFFX,hergm001,1,0,gutir001 grounds out. ,gutir001,1,G
+,02,4,,,,,32,70,CCS,hergm001,1,0,reedj001 strikes out. ,reedj001,1,
+,32,5,,,,,33,65,BCFBFBFFX,tapak001,1,0,,coraa001,0,L
+,22,5,,,,,34,71,FSBBFS,tapak001,1,0,hergm001 strikes out. ,hergm001,0,
+,00,5,goodt001,,,,35,72,X,tapak001,0,0,goodt001 singles. ,goodt001,0,
+,00,5,,,,grudm001,36,73,B,tapak001,1,0,goodt001 caught stealing. ,grudm001,0,
+,00,5,,,,,37,71,X,hergm001,1,0,tapak001 grounds out. ,tapak001,1,G
+,11,5,,,,,38,74,BCX,hergm001,1,0,youne001 grounds out. ,youne001,1,G
+,22,5,,,,,39,79,CBBSX,hergm001,1,0,,gracm001,1,F
+,11,6,grudm001,,,,40,76,CBX,tapak001,0,0,grudm001 singles. ,grudm001,0,
+grudm001 to 3B. ,31,6,grees001,,grudm001,,41,81,BBFBX,tapak001,0,0,grees001 singles. ,grees001,0,
+,32,6,,grees001,grudm001,,42,90,SSBFBFFBC,tapak001,1,0,karre001 strikes out. grees001 steals 2B. ,karre001,0,
+,32,6,,grees001,grudm001,,43,99,SBCBFFFBS,tapak001,1,0,hundt001 strikes out. ,hundt001,0,
+,30,6,belta001,grees001,grudm001,,44,103,IIII,tapak001,0,0,belta001 intentionally walks. ,belta001,0,
+grudm001 scores. grees001 to 3B. belta001 to 2B. ,31,6,avenb001,belta001,grees001,,45,108,BBBCB,tapak001,0,1,avenb001 walks. ,avenb001,0,
+grees001 scores. belta001 scores. avenb001 to 3B. coraa001 to 2B. ,01,6,,coraa001,avenb001,,46,110,CX,tapak001,0,2,coraa001 singles. ,coraa001,0,
+,01,6,,coraa001,avenb001,,48,112,SX,tapak001,1,0,,hansd001,0,F
+,31,6,,sosas001,,,50,5,CBBBX,olsog001,0,0,sosas001 doubles. ,sosas001,1,
+sosas001 scores. ,21,6,whitr001,,,,51,9,CBBX,olsog001,0,1,whitr001 singles. ,whitr001,1,
+,22,6,whitr001,,,,52,14,BBFSS,olsog001,1,0,bufod001 strikes out. ,bufod001,1,
+,21,6,,,,greew001,53,18,CBBS,olsog001,1,0,whitr001 caught stealing. ,greew001,1,
+,22,6,,,,,54,23,CBBSX,olsog001,1,0,,greew001,1,
+,02,7,,,,,57,3,SCX,worrt002,1,0,goodt001 grounds out. ,goodt001,0,G
+,00,7,,,,,58,4,X,worrt002,1,0,,grudm001,0,L
+,32,7,grees001,,,,59,12,CBCBFFBB,worrt002,0,0,grees001 walks. ,grees001,0,
+grees001 out. ,10,7,karre001,,,,60,14,BX,worrt002,1,0,karre001 reaches on fielder's choice. ,karre001,0,
+,11,7,,,,,61,26,CBX,olsog001,0,1,gutir001 homers. ,gutir001,1,
+,32,7,reedj001,,,,62,33,BFCBFBB,olsog001,0,0,reedj001 walks. ,reedj001,1,
+reedj001 to 3B. ,00,7,mattg002,,reedj001,,63,34,X,olsog001,0,0,mattg002 singles. ,mattg002,1,
+reedj001 scores. ,32,7,mattg002,,,,64,40,SBBBFX,olsog001,1,1,youne001 hits sacrifice fly. ,youne001,1,
+,20,7,mattg002,,,,66,3,BBX,osuna002,1,0,,gracm001,1,F
+,12,7,mattg002,,,,67,7,CSBS,osuna002,1,0,sosas001 strikes out. ,sosas001,1,
+,32,8,,,,,68,22,CBCFFBBX,worrt002,1,0,,hundt001,0,F
+,00,8,,,,,69,23,X,worrt002,1,0,,belta001,0,P
+,22,8,,,,,70,28,SSBBX,worrt002,1,0,,avenb001,0,F
+,12,8,,,,,72,11,BFSS,osuna002,1,0,browb003 strikes out. ,browb003,1,
+,00,8,,,,,73,12,X,osuna002,1,0,,bufod001,1,F
+,12,8,,,,,74,16,CFBS,osuna002,1,0,greew001 strikes out. ,greew001,1,
+,01,9,coraa001,,,,76,2,CX,aguir001,0,0,coraa001 singles. ,coraa001,0,
+,32,9,coraa001,,,,78,9,CCBFBBX,aguir001,1,0,,leyrj001,0,F
+,02,9,coraa001,,,,79,12,CCS,aguir001,1,0,goodt001 strikes out. ,goodt001,0,
+coraa001 out. ,00,9,grudm001,,,,80,13,X,aguir001,1,0,grudm001 reaches on fielder's choice. ,grudm001,0,

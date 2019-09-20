@@ -1,0 +1,154 @@
+version,2
+info,visteam,SDN
+info,hometeam,MIL
+info,site,MIL05
+info,date,2000/08/27
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,false
+info,umphome,katzt901
+info,ump1b,millb901
+info,ump2b,hodgm901
+info,ump3b,younl901
+info,pitches,pitches
+info,temp,75
+info,winddir,ltor
+info,windspeed,14
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,167
+info,attendance,21785
+info,wp,willw001
+info,lp,weatd001
+info,save,hofft001
+start,owene001,"Eric Owens",0,1,7
+start,relad001,"Desi Relaford",0,2,6
+start,klesr001,"Ryan Klesko",0,3,3
+start,nevip001,"Phil Nevin",0,4,5
+start,darrm001,"Mike Darr",0,5,9
+start,jackd003,"Damian Jackson",0,6,4
+start,river002,"Ruben Rivera",0,7,8
+start,gonzw001,"Wiki Gonzalez",0,8,2
+start,willw001,"Woody Williams",0,9,1
+start,moutj001,"James Mouton",1,1,8
+start,lorem001,"Mark Loretta",1,2,6
+start,jenkg001,"Geoff Jenkins",1,3,7
+start,sexsr001,"Richie Sexson",1,4,3
+start,burnj001,"Jeromy Burnitz",1,5,9
+start,casar001,"Raul Casanova",1,6,2
+start,houst001,"Tyler Houston",1,7,5
+start,bellr002,"Ron Belliard",1,8,4
+start,snydj001,"John Snyder",1,9,1
+play,1,0,owene001,11,BCX,9/F9
+play,1,0,relad001,31,BBCBX,2/FL
+play,1,0,klesr001,01,CX,31/G
+play,1,1,moutj001,12,BCFX,53/G
+play,1,1,lorem001,12,CBFX,4/P4
+play,1,1,jenkg001,22,BSCBX,S9
+play,1,1,sexsr001,00,X,D/89.1-H
+play,1,1,burnj001,32,BCBBCS,K
+play,2,0,nevip001,11,CBX,13/G
+play,2,0,darrm001,12,BCSC,K/C
+play,2,0,jackd003,00,X,9/F9
+play,2,1,casar001,31,BBFBX,31/G
+play,2,1,houst001,12,CCBX,D9
+play,2,1,bellr002,22,BBCFC,K/C
+play,2,1,snydj001,02,CCB,WP.2-3
+play,2,1,snydj001,12,CCBS,K
+play,3,0,river002,12,BSFS,K
+play,3,0,gonzw001,32,CBSBFBX,53/G
+play,3,0,willw001,22,FBFBFX,13/G
+play,3,1,moutj001,10,BX,S8
+play,3,1,lorem001,00,X,4/L4
+play,3,1,jenkg001,22,SSBFBX,S8/8S.1-3
+play,3,1,sexsr001,22,BCFFBS,K
+play,3,1,burnj001,32,BBBSFFX,63/G
+play,4,0,owene001,00,X,9/F9
+play,4,0,relad001,01,CX,E4/TH
+play,4,0,klesr001,12,BFFX,64(1)/FO
+play,4,0,nevip001,10,BX,S8.1-2
+play,4,0,darrm001,22,SBSBFC,K/C
+play,4,1,casar001,11,FBX,8/F8D
+play,4,1,houst001,12,FBCX,5/FL
+play,4,1,bellr002,12,FFBX,53/G
+play,5,0,jackd003,10,BX,8/F8S
+play,5,0,river002,11,BSX,S7
+play,5,0,gonzw001,02,CFS,K
+play,5,0,willw001,12,FCBC,K/C
+play,5,1,snydj001,32,FFFBBBX,9/F9S
+play,5,1,moutj001,01,CX,7/F7D
+play,5,1,lorem001,21,CBBX,9/F9
+play,6,0,owene001,21,BCBX,53/G
+play,6,0,relad001,01,CX,31/G
+play,6,0,klesr001,31,BFBBB,W
+play,6,0,nevip001,10,BC,SB2
+play,6,0,nevip001,11,BCB,WP.2-3
+play,6,0,nevip001,21,BCBX,9/F9
+play,6,1,jenkg001,00,X,8/F8
+play,6,1,sexsr001,32,SBBCFBB,W
+play,6,1,burnj001,00,X,7/F7
+play,6,1,casar001,32,BBBCCB,W.1-2
+play,6,1,houst001,32,FFBBBX,43/G
+play,7,0,darrm001,00,X,7/F7
+play,7,0,jackd003,12,BCFX,S8/8S
+play,7,0,river002,00,X,54(1)3/GDP
+play,7,1,bellr002,22,BBCCX,S8/8S
+play,7,1,snydj001,00,,NP
+sub,lopel002,"Luis Lopez",1,9,11
+play,7,1,lopel002,10,BX,54/SH.1-2
+play,7,1,moutj001,01,SH,HP
+play,7,1,lorem001,00,X,9/F9
+play,7,1,jenkg001,00,X,43/G
+play,8,0,gonzw001,00,,NP
+sub,weatd001,"David Weathers",1,9,1
+play,8,0,gonzw001,12,SSBX,8/F8
+play,8,0,willw001,00,,NP
+sub,mabrj001,"John Mabry",0,9,11
+play,8,0,mabrj001,32,BCFBFBB,W
+play,8,0,owene001,11,CBX,S9.1-2
+play,8,0,relad001,01,CX,S7.2-H;1-3;B-2(TH)
+play,8,0,klesr001,00,,NP
+sub,delov001,"Valerio De Los Santos",1,9,1
+play,8,0,klesr001,00,X,S7.3-H;2-3
+play,8,0,nevip001,30,BBBI,IW.1-2
+play,8,0,darrm001,21,BBSX,4(1)3/GDP
+play,8,1,sexsr001,00,,NP
+sub,walkk001,"Kevin Walker",0,9,1
+play,8,1,sexsr001,12,FFBC,K/C
+play,8,1,burnj001,12,CCBX,S
+play,8,1,casar001,32,BBCBFFB,W.1-2
+play,8,1,houst001,00,,NP
+sub,hayec001,"Charlie Hayes",1,7,11
+play,8,1,hayec001,00,,NP
+sub,almac001,"Carlos Almanzar",0,9,1
+play,8,1,hayec001,00,X,9/FL
+play,8,1,bellr002,02,SCX,S9.2XH(92);1-2
+play,9,0,jackd003,00,,NP
+sub,hayec001,"Charlie Hayes",1,7,5
+play,9,0,jackd003,00,,NP
+sub,leskc001,"Curtis Leskanic",1,9,1
+play,9,0,jackd003,12,FFBX,D7
+play,9,0,river002,21,BCBC,SB3
+play,9,0,river002,22,BCBCS,K
+play,9,0,gonzw001,32,BCBFBB,W
+play,9,0,almac001,00,,NP
+sub,magad001,"Dave Magadan",0,9,11
+play,9,0,magad001,12,BCSC,K/C
+play,9,0,owene001,01,FX,13/G
+play,9,1,leskc001,00,,NP
+sub,sweem001,"Mark Sweeney",1,9,11
+play,9,1,sweem001,00,,NP
+sub,hofft001,"Trevor Hoffman",0,9,1
+play,9,1,sweem001,21,BCBX,6/P6
+play,9,1,moutj001,00,X,8/F8
+play,9,1,lorem001,01,CX,43/G
+data,er,willw001,1
+data,er,walkk001,0
+data,er,almac001,0
+data,er,hofft001,0
+data,er,snydj001,0
+data,er,weatd001,2
+data,er,delov001,0
+data,er,leskc001,0

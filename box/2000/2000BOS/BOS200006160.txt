@@ -1,0 +1,152 @@
+version,2
+info,visteam,TOR
+info,hometeam,BOS
+info,site,BOS07
+info,date,2000/06/16
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,timmt901
+info,ump1b,craft901
+info,ump2b,mcclt901
+info,ump3b,packs901
+info,pitches,pitches
+info,temp,87
+info,winddir,tolf
+info,windspeed,17
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,189
+info,attendance,33638
+info,wp,pichh001
+info,lp,escok001
+info,save,lowed001
+start,stews002,"Shannon Stewart",0,1,7
+start,bushh001,"Homer Bush",0,2,4
+start,mondr002,"Raul Mondesi",0,3,9
+start,delgc001,"Carlos Delgado",0,4,3
+start,batit001,"Tony Batista",0,5,5
+start,cruzj004,"Jose Cruz",0,6,8
+start,fullb001,"Brad Fullmer",0,7,10
+start,gonza001,"Alex S. Gonzalez",0,8,6
+start,casta001,"Alberto Castillo",0,9,2
+start,escok001,"Kelvim Escobar",0,0,1
+start,offej001,"Jose Offerman",1,1,3
+start,fryej001,"Jeff Frye",1,2,4
+start,nixot001,"Trot Nixon",1,3,9
+start,garcn001,"Nomar Garciaparra",1,4,6
+start,everc001,"Carl Everett",1,5,8
+start,daubb001,"Brian Daubach",1,6,10
+start,oleat001,"Troy O'Leary",1,7,7
+start,veraw001,"Wilton Veras",1,8,5
+start,hatts001,"Scott Hatteberg",1,9,2
+start,schop001,"Pete Schourek",1,0,1
+play,1,0,stews002,10,BX,9/F9
+play,1,0,bushh001,31,CBBBB,W
+play,1,0,mondr002,00,X,HR/7.1-H
+play,1,0,delgc001,22,CBCBX,S8
+play,1,0,batit001,12,CFBX,7/F7
+play,1,0,cruzj004,12,FCBX,S.1-2
+play,1,0,fullb001,02,SFFX,43/G
+play,1,1,offej001,22,BCBFX,7/F7
+play,1,1,fryej001,22,BCCBFFX,S8
+play,1,1,nixot001,32,CBBFBX,D/78D.1-3
+play,1,1,garcn001,10,BX,S7/7D.3-H;2-H
+play,1,1,everc001,12,BSFX,HR/8.1-H
+play,1,1,daubb001,21,CBBX,HR/9
+play,1,1,oleat001,31,BBFBB,W
+play,1,1,veraw001,00,X,S7.1-2
+play,1,1,hatts001,31,BFBBX,9
+play,1,1,offej001,00,,OA/AP.2X3(16)
+com,"Troy O'Leary out on appeal for leaving 2B too soon"
+play,2,0,gonza001,12,FCBFX,8/F8
+play,2,0,casta001,32,BFCBBFX,53/G
+play,2,0,stews002,31,CBBBB,W
+play,2,0,bushh001,00,X,54(1)/FO
+play,2,1,offej001,00,X,43/G
+play,2,1,fryej001,20,BBX,8/F8
+play,2,1,nixot001,32,BCCBBC,K/C
+play,3,0,mondr002,31,BBBCX,S9
+play,3,0,delgc001,01,CX,S8.1-2
+play,3,0,batit001,31,FBBBX,D7/7D.2-H;1-3
+play,3,0,cruzj004,00,X,63/G.3-H
+play,3,0,fullb001,20,BBX,3/G.2-3
+play,3,0,gonza001,12,BCSS,K
+play,3,1,garcn001,21,BBFX,8/F8D
+play,3,1,everc001,12,CSBC,K/C
+play,3,1,daubb001,12,BCSS,K
+play,4,0,casta001,32,CBBFBFX,S8
+play,4,0,stews002,00,X,86(1)/FO
+play,4,0,bushh001,00,B,SB2
+play,4,0,bushh001,32,BCBBFX,6/P6
+play,4,0,mondr002,31,BBBFB,W
+play,4,0,delgc001,00,X,S9.2-3;1-2
+play,4,0,batit001,00,,NP
+sub,pichh001,"Hipolito Pichardo",1,0,1
+play,4,0,batit001,12,BFFFFS,K
+play,4,1,oleat001,22,BBSSX,7/L7
+play,4,1,veraw001,02,CCS,K
+play,4,1,hatts001,00,X,S8
+play,4,1,offej001,11,BCX,S9/9S.1-2
+play,4,1,fryej001,32,CBBBCX,9/F9
+play,5,0,cruzj004,11,BSX,43/G
+play,5,0,fullb001,21,BBFX,S7
+play,5,0,gonza001,02,CFS,K
+play,5,0,casta001,32,CBCBBX,6/L6
+play,5,1,nixot001,00,X,2/FL
+play,5,1,garcn001,00,X,63/G
+play,5,1,everc001,01,CX,D9
+play,5,1,daubb001,12,BCSS,K
+play,6,0,stews002,22,BBCFX,43/G
+play,6,0,bushh001,01,CX,6/P6
+play,6,0,mondr002,00,X,S8
+play,6,0,delgc001,00,B,SB2
+play,6,0,delgc001,20,BBB,SB3
+play,6,0,delgc001,30,BBBI,IW
+play,6,0,batit001,02,SFS,K
+play,6,1,oleat001,12,FSBS,K
+play,6,1,veraw001,01,FX,4/P4
+play,6,1,hatts001,32,BBBCFX,8/L8
+play,7,0,cruzj004,00,,NP
+sub,garcr001,"Rich Garces",1,0,1
+play,7,0,cruzj004,02,FFX,43/G
+play,7,0,fullb001,00,X,4/L4
+play,7,0,gonza001,00,X,D/78D
+play,7,0,casta001,22,CBSFBB,WP.2-3
+play,7,0,casta001,32,CBSFBBB,W
+play,7,0,stews002,31,BBBCX,9/F9S
+play,7,1,offej001,22,CBCBX,6/P6
+play,7,1,fryej001,31,CBBBB,W
+play,7,1,nixot001,00,,NP
+sub,painl001,"Lance Painter",0,0,1
+play,7,1,nixot001,11,BFX,S7/7S.1-2
+play,7,1,garcn001,00,,NP
+sub,frasj001,"John Frascatore",0,0,1
+play,7,1,garcn001,11,BCX,S/78.2-H;1-2
+play,7,1,everc001,12,BFFX,8/F8S
+play,7,1,daubb001,00,,NP
+sub,borbp001,"Pedro Borbon",0,0,1
+play,7,1,daubb001,00,,NP
+sub,stanm002,"Mike Stanley",1,6,11
+play,7,1,stanm002,11,BCX,S7/7S.2-H;1X3(74)
+play,8,0,bushh001,12,BFCS,K
+play,8,0,mondr002,12,BFCX,63/G
+play,8,0,delgc001,20,BBX,7/F7D
+play,8,1,oleat001,01,CX,7/F7
+play,8,1,veraw001,32,BSBBFX,2/FL
+play,8,1,hatts001,12,BCCX,7/F7
+play,9,0,batit001,00,,NP
+sub,lowed001,"Derek Lowe",1,0,1
+play,9,0,batit001,21,BBCX,53/G
+play,9,0,cruzj004,22,SBBFS,K
+play,9,0,fullb001,12,BFFFX,8/F8D
+data,er,escok001,6
+data,er,painl001,1
+data,er,frasj001,0
+data,er,borbp001,0
+data,er,schop001,4
+data,er,pichh001,0
+data,er,garcr001,0
+data,er,lowed001,0

@@ -1,0 +1,86 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,02,1,,,,,0,3,CFX,clemm001,1,0,vinaf001 grounds out. ,vinaf001,0,G
+,00,1,,,,,1,4,X,clemm001,1,0,rente001 grounds out. ,rente001,0,G
+,31,1,edmoj001,,,,2,9,BCBBB,clemm001,0,0,edmoj001 walks. ,edmoj001,0,
+edmoj001 to 2B. ,00,1,mcgwm001,edmoj001,,,3,10,X,clemm001,0,0,mcgwm001 singles. ,mcgwm001,0,
+edmoj001 scores. mcgwm001 to 2B. ,01,1,howat001,mcgwm001,,,4,12,CX,clemm001,0,1,howat001 singles. ,howat001,0,
+mcgwm001 to 3B. howat001 to 2B. ,21,1,drewj001,howat001,mcgwm001,,5,16,BCBH,clemm001,0,0,drewj001 hit by pitch. ,drewj001,0,
+,12,1,drewj001,howat001,mcgwm001,,6,20,CBFS,clemm001,1,0,mathm001 strikes out. ,mathm001,0,
+,22,1,,,,,7,6,CCBFBX,benea001,1,0,owene001 grounds out. ,owene001,1,G
+,12,1,,,,,8,11,CCBFS,benea001,1,0,marta001 strikes out. ,marta001,1,
+,22,1,,,,,9,16,CBCBS,benea001,1,0,klesr001 strikes out. ,klesr001,1,
+,01,2,polap001,,,,10,22,CX,clemm001,0,0,polap001 singles. ,polap001,0,
+,21,2,polap001,,,,11,26,BFBX,clemm001,1,0,,benea001,0,
+polap001 to 2B. ,22,2,vinaf001,polap001,,,12,34,BFFFFFBX,clemm001,0,0,vinaf001 reaches on error. ,vinaf001,0,
+,12,2,vinaf001,polap001,,,13,38,BCFS,clemm001,1,0,rente001 strikes out. ,rente001,0,
+,02,2,vinaf001,polap001,,,14,42,SFFS,clemm001,1,0,edmoj001 strikes out. ,edmoj001,0,
+,00,2,,,,,15,17,X,benea001,1,0,nevip001 grounds out. ,nevip001,1,G
+,32,2,,,,,16,23,BBBCCS,benea001,1,0,river002 strikes out. ,river002,1,
+,32,2,,,,,17,29,BBCBSX,benea001,1,0,,boonb002,1,F
+,32,3,mcgwm001,,,,18,48,BCBBSB,clemm001,0,0,mcgwm001 walks. ,mcgwm001,0,
+,02,3,mcgwm001,,,,19,51,FFX,clemm001,1,0,,howat001,0,
+,20,3,,,,,20,54,BBX,clemm001,2,0,Double Play. ,drewj001,0,
+,12,3,gonzw001,,,,21,33,CCBX,benea001,0,0,gonzw001 singles. ,gonzw001,1,
+gonzw001 to 2B. ,32,3,jackd003,gonzw001,,,22,40,SBBCBFX,benea001,0,0,jackd003 singles. ,jackd003,1,
+gonzw001 to 3B. jackd003 to 2B. ,00,3,,jackd003,gonzw001,,23,41,X,benea001,1,0,clemm001 grounds out. ,clemm001,1,G
+gonzw001 scores. jackd003 scores. ,22,3,,owene001,,,24,46,BBFFX,benea001,0,2,owene001 doubles. ,owene001,1,
+,30,3,marta001,owene001,,,25,50,BBBB,benea001,0,0,marta001 walks. ,marta001,1,
+,22,3,marta001,owene001,,,26,55,CFBBS,benea001,1,0,klesr001 strikes out. ,klesr001,1,
+owene001 to 3B. marta001 out. ,21,3,nevip001,,owene001,,27,59,BBCX,benea001,1,0,nevip001 reaches on fielder's choice. ,nevip001,1,
+,32,4,mathm001,,,,28,60,BLBBSB,clemm001,0,0,mathm001 walks. ,mathm001,0,
+,10,4,mathm001,,,,29,62,BX,clemm001,1,0,,polap001,0,F
+mathm001 to 2B. ,32,4,benea001,mathm001,,,30,68,CSBBBB,clemm001,0,0,benea001 walks. ,benea001,0,
+mathm001 to 3B. benea001 to 2B. ,21,4,vinaf001,benea001,mathm001,,31,72,BCBX,clemm001,0,0,vinaf001 singles. ,vinaf001,0,
+,00,4,vinaf001,benea001,,,32,73,X,clemm001,2,0,Double Play. ,rente001,0,
+,12,4,,,,,33,64,SSBFS,benea001,1,0,river002 strikes out. ,river002,1,
+,22,4,,,,,34,71,SCBBFFS,benea001,1,0,boonb002 strikes out. ,boonb002,1,
+,12,4,gonzw001,,,,35,75,CFBX,benea001,0,0,gonzw001 singles. ,gonzw001,1,
+,12,4,gonzw001,,,,36,82,CSFFBFC,benea001,1,0,jackd003 strikes out. ,jackd003,1,
+,32,5,edmoj001,,,,37,79,BCBBCB,clemm001,0,0,edmoj001 walks. ,edmoj001,0,
+,32,5,edmoj001,,,,38,85,BBBCCX,clemm001,1,0,,mcgwm001,0,F
+edmoj001 to 2B. ,12,5,,edmoj001,,,39,89,CFBX,clemm001,1,0,howat001 grounds out. ,howat001,0,G
+,00,5,,edmoj001,,,40,90,X,clemm001,1,0,drewj001 grounds out. ,drewj001,0,G
+,12,5,,,,,41,86,BCFS,benea001,1,0,clemm001 strikes out. ,clemm001,1,
+,01,5,,,,,42,88,CX,benea001,1,0,owene001 grounds out. ,owene001,1,G
+,01,5,,,,,43,90,FX,benea001,1,0,,marta001,1,F
+,00,6,,mathm001,,,44,91,X,clemm001,0,0,mathm001 doubles. ,mathm001,0,
+mathm001 scores. polap001 to 3B. ,02,6,,,polap001,,45,94,LFX,clemm001,0,1,polap001 singles. ,polap001,0,
+,12,6,,,polap001,,46,98,SBFS,clemm001,1,0,benea001 strikes out. ,benea001,0,
+polap001 scores. ,21,6,,,,,47,102,SBBX,clemm001,1,1,vinaf001 hits sacrifice fly. ,vinaf001,0,
+,02,6,,,,,48,105,CFS,clemm001,1,0,rente001 strikes out. ,rente001,0,
+,10,6,,,,,49,92,BX,benea001,0,1,klesr001 homers. ,klesr001,1,
+,00,6,,nevip001,,,50,93,X,benea001,0,0,nevip001 doubles. ,nevip001,1,
+,32,6,,nevip001,,,51,99,SBBBFS,benea001,1,0,river002 strikes out. ,river002,1,
+,22,6,,nevip001,,,52,104,BBSSS,benea001,1,0,boonb002 strikes out. ,boonb002,1,
+,30,6,gonzw001,nevip001,,,53,108,BBBB,benea001,0,0,gonzw001 walks. ,gonzw001,1,
+,32,6,gonzw001,nevip001,,,54,114,BFBBCX,benea001,1,0,,jackd003,1,L
+,32,7,edmoj001,,,,55,111,BBBCCB,clemm001,0,0,edmoj001 walks. ,edmoj001,0,
+edmoj001 scores. ,20,7,,,,,56,114,BBX,clemm001,0,2,mcgwm001 homers. ,mcgwm001,0,
+,01,7,,,,,58,2,SX,almac001,1,0,howat001 grounds out. ,howat001,0,G
+,02,7,,,,,59,6,FFFX,almac001,1,0,,drewj001,0,F
+,21,7,mathm001,,,,60,10,BBSX,almac001,0,0,mathm001 reaches on error. ,mathm001,0,
+,02,7,mathm001,,,,61,13,SFX,almac001,1,0,,polap001,0,F
+,01,7,,,,,64,2,CX,sloch001,1,0,magad001 grounds out. ,magad001,1,G
+,00,7,owene001,,,,65,3,X,sloch001,0,0,owene001 singles. ,owene001,1,
+,21,7,,owene001,,sprae001,69,4,BCBB,orosj001,0,0,owene001 steals 2B. ,sprae001,1,
+,32,7,,owene001,,,70,10,BCBBCS,orosj001,1,0,sprae001 strikes out. ,sprae001,1,
+,32,7,klesr001,owene001,,,71,16,BBBSCB,orosj001,0,0,klesr001 walks. ,klesr001,1,
+,31,7,klesr001,owene001,,,73,5,BBBCX,benea002,1,0,,nevip001,1,F
+,00,8,,,,,76,1,X,reyec001,1,0,,davie001,0,L
+,12,8,,,,,77,6,LBFFS,reyec001,1,0,vinaf001 strikes out. ,vinaf001,0,
+rente001 to 2B. ,11,8,,rente001,,,78,9,CBX,reyec001,0,0,rente001 reaches on error. ,rente001,0,
+,11,8,,rente001,,,79,12,BCX,reyec001,1,0,,edmoj001,0,F
+,02,8,,,,,80,8,FCC,benea002,1,0,river002 strikes out. ,river002,1,
+,32,8,,,,,81,14,BCBBFX,benea002,1,0,,boonb002,1,F
+,22,8,gonzw001,,,,82,19,SFBBX,benea002,0,0,gonzw001 singles. ,gonzw001,1,
+gonzw001 to 2B. ,00,8,,gonzw001,,jackd003,83,20,B,benea002,0,0,Wild Pitch. ,jackd003,1,
+,22,8,,gonzw001,,,84,25,BCFBX,benea002,1,0,jackd003 grounds out. ,jackd003,1,G
+,01,9,,,,,85,14,SX,reyec001,1,0,,mcgwm001,0,L
+,12,9,suttl001,,,,87,18,CSBX,reyec001,0,0,suttl001 singles. ,suttl001,0,
+,02,9,suttl001,,,,88,21,SFX,reyec001,1,0,,drewj001,0,F
+suttl001 scores. ,11,9,,,,,89,24,CBX,reyec001,0,2,mathm001 homers. ,mathm001,0,
+,00,9,polap001,,,,90,25,X,reyec001,0,0,polap001 singles. ,polap001,0,
+polap001 out. ,00,9,davie001,,,,92,1,X,kolbb001,1,0,davie001 reaches on fielder's choice. ,davie001,0,
+,22,9,,,,,95,5,BBCFX,vered001,1,0,,dehak001,1,F
+,21,9,,,,,96,9,BCBX,vered001,1,0,owene001 grounds out. ,owene001,1,G
+,32,9,,,,,97,15,SBSBBC,vered001,1,0,sprae001 strikes out. ,sprae001,1,

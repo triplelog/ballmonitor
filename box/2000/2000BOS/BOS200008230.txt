@@ -1,0 +1,143 @@
+version,2
+info,visteam,ANA
+info,hometeam,BOS
+info,site,BOS07
+info,date,2000/08/23
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,cousd901
+info,ump1b,mealj901
+info,ump2b,marqa901
+info,ump3b,fichm901
+info,pitches,pitches
+info,temp,65
+info,winddir,tolf
+info,windspeed,20
+info,fieldcond,unknown
+info,precip,drizzle
+info,sky,cloudy
+info,timeofgame,177
+info,attendance,32958
+info,wp,ohkat001
+info,lp,ortir002
+info,save,lowed001
+start,palmo001,"Orlando Palmeiro",0,1,7
+start,spies001,"Scott Spiezio",0,2,10
+start,vaugm001,"Mo Vaughn",0,3,3
+start,salmt001,"Tim Salmon",0,4,9
+start,andeg001,"Garret Anderson",0,5,8
+start,glaut001,"Troy Glaus",0,6,5
+start,kenna001,"Adam Kennedy",0,7,4
+start,molib001,"Ben Molina",0,8,2
+start,stock001,"Kevin Stocker",0,9,6
+start,ortir002,"Ramon Ortiz",0,0,1
+start,offej001,"Jose Offerman",1,1,10
+start,nixot001,"Trot Nixon",1,2,9
+start,daubb001,"Brian Daubach",1,3,3
+start,everc001,"Carl Everett",1,4,8
+start,oleat001,"Troy O'Leary",1,5,7
+start,merll001,"Lou Merloni",1,6,5
+start,varij001,"Jason Varitek",1,7,2
+start,lansm001,"Mike Lansing",1,8,4
+start,alexm001,"Manny Alexander",1,9,6
+start,ohkat001,"Tomo Ohka",1,0,1
+play,1,0,palmo001,22,BBCCFFX,9/F9
+play,1,0,spies001,32,BFBSBX,43/G
+play,1,0,vaugm001,32,CBBSBS,K
+play,1,1,offej001,31,BFBBB,W
+play,1,1,nixot001,02,CCS,K
+play,1,1,daubb001,01,CX,64(1)/FO
+play,1,1,everc001,00,X,S8.1-H(E8)(UR);B-2
+play,1,1,oleat001,20,BBX,3/G
+play,2,0,salmt001,10,BX,53/G
+play,2,0,andeg001,20,BBX,S
+play,2,0,glaut001,32,BCFFBBB,W.1-2
+play,2,0,kenna001,11,BSX,43/G.2-3;1-2
+play,2,0,molib001,02,CFX,7/F7
+play,2,1,merll001,22,FBSBS,K
+play,2,1,varij001,10,BX,43/G
+play,2,1,lansm001,01,CX,63/G
+play,3,0,stock001,22,BFBSX,3/G
+play,3,0,palmo001,02,CCX,9/F9
+play,3,0,spies001,32,BSBBFFX,9/F9
+play,3,1,alexm001,12,CBFX,8/F8D
+play,3,1,offej001,30,BBBB,W
+play,3,1,nixot001,01,CX,8/F8D
+play,3,1,daubb001,02,FSFB,WP.1-2
+play,3,1,daubb001,22,FSFBFFBX,S9/9S.2-H
+play,3,1,everc001,21,BBSX,S8/8S.1-3
+play,3,1,oleat001,20,BBX,S9.3-H;1-3;B-2(E9)
+play,3,1,merll001,12,BCFX,53/G
+play,4,0,vaugm001,11,BFX,HR/8
+play,4,0,salmt001,22,CBCBFC,K/C
+play,4,0,andeg001,11,BSX,6/P6
+play,4,0,glaut001,32,CBCBBB,W
+play,4,0,kenna001,32,CBBCFBX,D9.1XH(962)
+play,4,1,varij001,30,BBBB,W
+play,4,1,lansm001,12,CBSX,54(1)/FO
+play,4,1,alexm001,30,BBBB,W.1-2
+play,4,1,offej001,01,CX,6(1)3/GDP
+play,5,0,molib001,32,BBCFBX,S/78
+play,5,0,stock001,00,X,8/F8
+play,5,0,palmo001,22,CBFFBX,7/F7
+play,5,0,spies001,12,FSBS,K
+play,5,1,nixot001,11,CBX,8/F8D
+play,5,1,daubb001,00,X,53/G
+play,5,1,everc001,31,BCBBB,W
+play,5,1,oleat001,01,FX,53/G
+play,6,0,vaugm001,00,X,S9
+play,6,0,salmt001,22,FBFFBFFFFFX,9/F9
+play,6,0,andeg001,00,,NP
+sub,beckr001,"Rod Beck",1,0,1
+play,6,0,andeg001,30,BBBB,W.1-2
+play,6,0,glaut001,32,CBSBFBX,5(2)/FO.1-2
+play,6,0,kenna001,31,BBBCX,3/G
+play,6,1,merll001,12,CBFC,K/C
+play,6,1,varij001,32,BBBCSS,K
+play,6,1,lansm001,02,SCS,K
+play,7,0,molib001,12,BCFS,K
+play,7,0,stock001,11,BFX,3/G
+play,7,0,palmo001,02,CCFX,9/F9
+play,7,1,alexm001,01,CX,2/FL
+play,7,1,offej001,01,CX,S8
+play,7,1,nixot001,00,,NP
+sub,lewid001,"Darren Lewis",1,1,12
+play,7,1,nixot001,02,FFFS,K
+play,7,1,daubb001,01,SX,43/G
+play,8,0,spies001,00,,NP
+sub,brogr001,"Rico Brogna",1,3,3
+play,8,0,spies001,00,X,3/G
+play,8,0,vaugm001,00,,NP
+sub,cormr001,"Rheal Cormier",1,0,1
+play,8,0,vaugm001,10,BX,S9
+play,8,0,salmt001,00,,NP
+sub,garcr001,"Rich Garces",1,0,1
+play,8,0,salmt001,02,CSS,K
+play,8,0,andeg001,10,BX,S9.1-3(E9)
+play,8,0,glaut001,21,CBBC,SB2
+play,8,0,glaut001,32,CBBCBB,W
+play,8,0,kenna001,11,BCX,4/P4
+play,8,1,everc001,11,FBX,3/G
+play,8,1,oleat001,00,,NP
+sub,holtm001,"Mike Holtz",0,0,1
+play,8,1,oleat001,22,CBBSX,8/F8
+play,8,1,merll001,00,,NP
+sub,petkm001,"Mark Petkovsek",0,0,1
+play,8,1,merll001,01,CX,53/G
+play,9,0,molib001,00,,NP
+sub,lowed001,"Derek Lowe",1,0,1
+play,9,0,molib001,12,CFFBX,S/89
+play,9,0,stock001,00,,NP
+sub,gil-b001,"Benji Gil",0,8,12
+play,9,0,stock001,02,FFFX,5(B)3(1)/LDP
+play,9,0,palmo001,32,BCBBCX,43/G
+data,er,ortir002,2
+data,er,holtm001,0
+data,er,petkm001,0
+data,er,ohkat001,1
+data,er,beckr001,0
+data,er,cormr001,0
+data,er,garcr001,0
+data,er,lowed001,0

@@ -1,0 +1,160 @@
+version,2
+info,visteam,FLO
+info,hometeam,CHN
+info,site,CHI11
+info,date,2000/04/14
+info,number,0
+info,starttime,2:20PM
+info,daynight,day
+info,usedh,false
+info,umphome,bellw901
+info,ump1b,onorb901
+info,ump2b,iassd901
+info,ump3b,hirsm901
+info,pitches,pitches
+info,temp,70
+info,winddir,tocf
+info,windspeed,14
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,175
+info,attendance,21324
+info,wp,ferna001
+info,lp,lorra001
+info,save,
+start,castl001,"Luis Castillo",0,1,4
+start,gonza002,"Alex Gonzalez",0,2,6
+start,floyc001,"Cliff Floyd",0,3,7
+start,wilsp002,"Preston Wilson",0,4,8
+start,lowem001,"Mike Lowell",0,5,5
+start,millk005,"Kevin Millar",0,6,3
+start,bautd001,"Danny Bautista",0,7,9
+start,redmm001,"Mike Redmond",0,8,2
+start,ferna001,"Alex Fernandez",0,9,1
+start,youne001,"Eric Young",1,1,4
+start,gutir001,"Ricky Gutierrez",1,2,6
+start,sosas001,"Sammy Sosa",1,3,9
+start,gracm001,"Mark Grace",1,4,3
+start,rodrh001,"Henry Rodriguez",1,5,7
+start,andrs001,"Shane Andrews",1,6,5
+start,bufod001,"Damon Buford",1,7,8
+start,giraj001,"Joe Girardi",1,8,2
+start,lorra001,"Andrew Lorraine",1,9,1
+play,1,0,castl001,22,BFCFBX,E6/G
+play,1,0,gonza002,02,CFX,HR/7.1-H(UR)
+play,1,0,floyc001,32,BBCBSX,43/G
+play,1,0,wilsp002,32,CBCBBS,K
+play,1,0,lowem001,12,SFBS,K
+play,1,1,youne001,22,BCBCX,13/G
+play,1,1,gutir001,31,BSBBX,S8
+play,1,1,sosas001,32,BBFSBB,W.1-2
+play,1,1,gracm001,10,BX,D9.2-H;1-H
+play,1,1,rodrh001,32,BBFFBB,W
+play,1,1,andrs001,12,SSBFX,8/F8D.2-3
+play,1,1,bufod001,11,CBX,S/78.3-H;1-2
+play,1,1,giraj001,01,CX,5(2)/FO.1-2
+play,2,0,millk005,31,BBBCB,W
+play,2,0,bautd001,22,BFBFS,K
+play,2,0,redmm001,02,CFX,8/F8
+play,2,0,ferna001,22,CBBCS,K
+play,2,1,lorra001,00,X,43/G
+play,2,1,youne001,12,CBFX,S8
+play,2,1,gutir001,32,BFFBBFX,63/G.1-2
+play,2,1,sosas001,12,BFSX,3/G
+play,3,0,castl001,12,BSCC,K/C
+play,3,0,gonza002,11,CBX,43/G
+play,3,0,floyc001,22,SBSBFX,7/L7
+play,3,1,gracm001,11,CBX,43/G
+play,3,1,rodrh001,12,CBCC,K/C
+play,3,1,andrs001,12,CFBC,K/C
+play,4,0,wilsp002,00,X,D/89S
+play,4,0,lowem001,10,BX,9/F9.2-3
+play,4,0,millk005,32,BCBFBC,K/C
+play,4,0,bautd001,02,FCC,K/C
+play,4,1,bufod001,22,CBBFC,K/C
+play,4,1,giraj001,10,BX,53/G
+play,4,1,lorra001,32,CBFBFBX,53/G
+play,5,0,redmm001,01,CX,9/F9D
+play,5,0,ferna001,22,CBBSC,K/C
+play,5,0,castl001,20,BBX,9/F9
+play,5,1,youne001,32,BBBCLX,3/G
+play,5,1,gutir001,01,CX,13/G
+play,5,1,sosas001,00,X,HR/7
+play,5,1,gracm001,01,CX,7/F7
+play,6,0,gonza002,00,X,63/G
+play,6,0,floyc001,20,BBX,3/L3
+play,6,0,wilsp002,31,BCBBX,S/78
+play,6,0,lowem001,32,CFBBBB,W.1-2
+play,6,0,millk005,31,BCBBX,S7.2-H;1-2
+play,6,0,bautd001,00,,NP
+sub,willb001,"Brian Williams",1,9,1
+play,6,0,bautd001,20,BBX,HR/8.2-H;1-H
+play,6,0,redmm001,00,X,S7
+play,6,0,ferna001,32,BCSBBFB,W.1-2
+play,6,0,castl001,22,BCBCC,K/C
+play,6,1,rodrh001,00,,NP
+sub,lee-d002,"Derrek Lee",0,6,3
+play,6,1,rodrh001,12,BSFFFFFX,8/F8
+play,6,1,andrs001,10,BX,S9/9S.BX2(96)
+play,6,1,bufod001,00,X,5/L5
+play,7,0,gonza002,31,BFBBX,S7
+play,7,0,floyc001,00,H,HP.1-2
+play,7,0,wilsp002,00,,NP
+sub,quevr001,"Ruben Quevedo",1,9,1
+play,7,0,wilsp002,00,,NP
+sub,kotsm001,"Mark Kotsay",0,3,12
+play,7,0,wilsp002,02,SFX,S8.2-H;1-3
+com,"Debut game for Ruben Quevedo"
+play,7,0,lowem001,21,CBBX,63/G.3-H;1-2
+play,7,0,lee-d002,22,BSFBC,K/C
+play,7,0,bautd001,01,CB,WP.2-3
+play,7,0,bautd001,11,CBX,4/F4
+play,7,1,giraj001,00,,NP
+sub,kotsm001,"Mark Kotsay",0,3,9
+play,7,1,giraj001,00,,NP
+sub,bautd001,"Danny Bautista",0,7,7
+play,7,1,giraj001,11,CBX,63/G
+play,7,1,quevr001,00,,NP
+sub,browr001,"Roosevelt Brown",1,9,11
+play,7,1,browr001,12,BSCX,S9
+play,7,1,youne001,02,CFX,S9.1-2
+play,7,1,gutir001,01,CX,1(B)6(2)/LDP
+play,8,0,redmm001,00,,NP
+sub,garid001,"Daniel Garibay",1,9,1
+play,8,0,redmm001,22,BBFFX,8/F8
+play,8,0,ferna001,00,,NP
+sub,smitm004,"Mark Smith",0,9,11
+play,8,0,smitm004,22,FFBBX,8/F8D
+play,8,0,castl001,22,CBFBX,63/G
+play,8,1,sosas001,00,,NP
+sub,miced001,"Dan Miceli",0,9,1
+play,8,1,sosas001,22,SBFBX,53/G
+play,8,1,gracm001,10,BX,7/FL
+play,8,1,rodrh001,00,X,43/G
+play,9,0,gonza002,00,,NP
+sub,aguir001,"Rick Aguilera",1,9,1
+play,9,0,gonza002,02,CFS,K
+play,9,0,kotsm001,00,X,S9
+play,9,0,wilsp002,11,CBX,54(1)/FO
+play,9,0,lowem001,12,CBFX,D7/7D.1-H
+play,9,0,lee-d002,32,BBBCSB,W
+play,9,0,bautd001,10,BX,4/P4
+play,9,1,andrs001,00,,NP
+sub,alfoa001,"Antonio Alfonseca",0,9,1
+play,9,1,andrs001,12,CBSX,53/G
+play,9,1,bufod001,10,BH,HP
+play,9,1,giraj001,00,,NP
+sub,broct001,"Tarrik Brock",1,8,11
+play,9,1,broct001,31,BBCBB,W.1-2
+play,9,1,aguir001,00,,NP
+sub,reedj001,"Jeff Reed",1,9,11
+play,9,1,reedj001,01,CX,64(1)3/GDP
+data,er,ferna001,4
+data,er,miced001,0
+data,er,alfoa001,0
+data,er,lorra001,4
+data,er,willb001,3
+data,er,quevr001,0
+data,er,garid001,0
+data,er,aguir001,1

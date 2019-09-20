@@ -1,0 +1,145 @@
+version,2
+info,visteam,MIL
+info,hometeam,CHN
+info,site,CHI11
+info,date,2000/07/23
+info,number,0
+info,starttime,1:20PM
+info,daynight,day
+info,usedh,false
+info,umphome,lampi901
+info,ump1b,everm901
+info,ump2b,crawj901
+info,ump3b,gormb901
+info,pitches,pitches
+info,temp,70
+info,winddir,fromcf
+info,windspeed,14
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,164
+info,attendance,38678
+info,wp,valdi001
+info,lp,wrigj001
+info,save,aguir001
+start,bellr002,"Ron Belliard",0,1,4
+start,moutj001,"James Mouton",0,2,8
+start,jenkg001,"Geoff Jenkins",0,3,7
+start,hayec001,"Charlie Hayes",0,4,5
+start,burnj001,"Jeromy Burnitz",0,5,9
+start,houst001,"Tyler Houston",0,6,3
+start,hernj001,"Jose Hernandez",0,7,6
+start,blanh001,"Henry Blanco",0,8,2
+start,wrigj001,"Jamey Wright",0,9,1
+start,youne001,"Eric Young",1,1,4
+start,gutir001,"Ricky Gutierrez",1,2,6
+start,gracm001,"Mark Grace",1,3,3
+start,sosas001,"Sammy Sosa",1,4,9
+start,rodrh001,"Henry Rodriguez",1,5,7
+start,bufod001,"Damon Buford",1,6,8
+start,greew001,"Willie Greene",1,7,5
+start,reedj001,"Jeff Reed",1,8,2
+start,valdi001,"Ismael Valdes",1,9,1
+com,"ej,loped001,M,lampi901,Balls and strikes"
+com,"Brewers manager Davey Lopes ejected by HP umpire Ian Lamplugh sometime in game"
+play,1,0,bellr002,02,CFX,1/P1
+play,1,0,moutj001,11,BFX,4/P4
+play,1,0,jenkg001,32,CBBFFBFFFC,K/C
+play,1,1,youne001,12,BCSX,63/G
+play,1,1,gutir001,01,CX,8/F8D
+play,1,1,gracm001,32,BBBCFFFB,W
+play,1,1,sosas001,02,CCC,K/C
+play,2,0,hayec001,11,CBX,4/P4
+play,2,0,burnj001,00,X,S7/7S
+play,2,0,houst001,11,FBX,D/78D.1-3
+play,2,0,hernj001,20,BBX,S9/9S.3-H;2-H
+play,2,0,blanh001,12,CFBX,8/F8
+play,2,0,wrigj001,10,BX,8/F8
+play,2,1,rodrh001,12,SFBS,K
+play,2,1,bufod001,22,BBCFX,13/G
+play,2,1,greew001,00,H,HP
+play,2,1,reedj001,32,BBSBSB,W.1-2
+play,2,1,valdi001,30,BBBB,W.2-3;1-2
+play,2,1,youne001,32,BCBBCX,S8.3-H;2-H;1-2
+play,2,1,gutir001,22,BCBCX,S7/7S.2-H;1-3;B-2(E7/TH)
+play,2,1,gracm001,20,BBX,D9/9D.3-H;2-H
+play,2,1,sosas001,22,BFSBX,63/G
+play,3,0,bellr002,32,CCBBFBB,W
+play,3,0,moutj001,11,BFX,46(1)3/GDP
+play,3,0,jenkg001,00,X,S9/9S
+play,3,0,hayec001,00,X,S7.1-2
+play,3,0,burnj001,22,CFFBFFFFBFFS,K
+play,3,1,rodrh001,11,BFX,6/P6
+play,3,1,bufod001,31,BBBCB,W
+play,3,1,greew001,32,BSBCFBFS,K+CS2(26)/DP
+play,4,0,houst001,12,CBFX,9/F9D
+play,4,0,hernj001,31,SBBBX,8/F8
+play,4,0,blanh001,32,BCCFBBX,13/G
+play,4,1,reedj001,12,CBFX,7/F7
+play,4,1,valdi001,02,FFS,K
+play,4,1,youne001,21,BBCX,63/G
+play,5,0,wrigj001,22,FBFBX,43/G
+play,5,0,bellr002,10,BX,6/P6
+play,5,0,moutj001,00,X,53/BG
+play,5,1,gutir001,32,CBBBCX,S
+play,5,1,gracm001,32,BBCBFFX,8/F8
+play,5,1,sosas001,10,BX,7(B)3(1)/FDP
+play,6,0,jenkg001,31,BFBBB,W
+play,6,0,hayec001,11,CBX,4/P4
+play,6,0,burnj001,11,CBX,9/F9
+play,6,0,houst001,00,X,6/P6
+play,6,1,rodrh001,22,BCFBX,8/F8
+play,6,1,bufod001,10,BX,7/F7D
+play,6,1,greew001,21,BCBX,43/G
+play,7,0,hernj001,22,BCBFS,K
+play,7,0,blanh001,00,X,5/FL
+play,7,0,wrigj001,00,,NP
+sub,casar001,"Raul Casanova",0,9,11
+play,7,0,casar001,32,BBBCCFB,W
+play,7,0,bellr002,31,CBBBX,8/F8
+play,7,1,reedj001,00,,NP
+sub,kingr001,"Ray King",0,9,1
+play,7,1,reedj001,00,X,31/G
+play,7,1,valdi001,00,,NP
+sub,mattg002,"Gary Jr. Matthews",1,9,11
+play,7,1,mattg002,00,X,43/G
+play,7,1,youne001,20,BBX,7/F7
+play,8,0,moutj001,00,,NP
+sub,vanpt001,"Todd Van Poppel",1,9,1
+play,8,0,moutj001,31,BBBCB,W
+play,8,0,jenkg001,22,BFBCFX,T9.1-H
+play,8,0,hayec001,02,CCFX,8/SF.3-H
+play,8,0,burnj001,00,,NP
+sub,heref001,"Felix Heredia",1,9,1
+play,8,0,burnj001,21,BSBX,D7/7S
+play,8,0,houst001,00,,NP
+sub,echea001,"Angel Echevarria",0,6,11
+play,8,0,echea001,00,,NP
+sub,rains001,"Steve Rain",1,9,1
+play,8,0,echea001,12,FBSS,K
+play,8,0,hernj001,02,CFC,K/C
+play,8,1,gutir001,00,,NP
+sub,echea001,"Angel Echevarria",0,6,3
+play,8,1,gutir001,00,,NP
+sub,wickb001,"Bob Wickman",0,9,1
+play,8,1,gutir001,32,CSBBBB,W
+play,8,1,gracm001,00,X,36(1)1/GDP
+play,8,1,sosas001,22,CSBBFS,K
+play,9,0,blanh001,00,,NP
+sub,browb003,"Brant Brown",1,5,7
+play,9,0,blanh001,00,,NP
+sub,aguir001,"Rick Aguilera",1,9,1
+play,9,0,blanh001,22,BBFCS,K
+play,9,0,wickb001,00,,NP
+sub,grism001,"Marquis Grissom",0,9,11
+play,9,0,grism001,12,SBFFS,K
+play,9,0,bellr002,00,X,63/G
+data,er,wrigj001,5
+data,er,kingr001,0
+data,er,wickb001,0
+data,er,valdi001,2
+data,er,vanpt001,2
+data,er,heref001,0
+data,er,rains001,0
+data,er,aguir001,0

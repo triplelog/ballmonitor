@@ -1,0 +1,159 @@
+version,2
+info,visteam,CIN
+info,hometeam,MIL
+info,site,MIL05
+info,date,2000/09/27
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,katzt901
+info,ump1b,millb901
+info,ump2b,mealj901
+info,ump3b,younl901
+info,pitches,pitches
+info,temp,54
+info,winddir,ltor
+info,windspeed,15
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,177
+info,attendance,27262
+info,wp,delov001
+info,lp,riedj001
+info,save,
+start,tuckm001,"Michael Tucker",0,1,8
+start,sextc001,"Chris Sexton",0,2,4
+start,cases001,"Sean Casey",0,3,3
+start,yound001,"Dmitri Young",0,4,7
+start,ochoa001,"Alex Ochoa",0,5,9
+start,stync001,"Chris Stynes",0,6,5
+start,castj004,"Juan Castro",0,7,6
+start,laruj001,"Jason LaRue",0,8,2
+start,bellr003,"Rob Bell",0,9,1
+start,grism001,"Marquis Grissom",1,1,8
+start,lorem001,"Mark Loretta",1,2,6
+start,jenkg001,"Geoff Jenkins",1,3,7
+start,sexsr001,"Richie Sexson",1,4,3
+start,burnj001,"Jeromy Burnitz",1,5,9
+start,hernj001,"Jose Hernandez",1,6,5
+start,lopel002,"Luis Lopez",1,7,4
+start,casar001,"Raul Casanova",1,8,2
+start,rigdp001,"Paul Rigdon",1,9,1
+play,1,0,tuckm001,11,BCX,HR/78
+play,1,0,sextc001,22,CCFBBFC,K/C
+play,1,0,cases001,11,CBX,63/G
+play,1,0,yound001,22,CCBBFFFX,31/G
+play,1,1,grism001,20,BBX,8/F8
+play,1,1,lorem001,01,CX,13/G
+play,1,1,jenkg001,00,X,7/F7
+play,2,0,ochoa001,22,CBBFX,S7
+play,2,0,stync001,00,X,7/F7D
+play,2,0,castj004,10,BX,HR/7.1-H
+play,2,0,laruj001,20,BBX,S7/7S
+play,2,0,bellr003,02,LCL,K/BF
+play,2,0,tuckm001,12,CBCX,4/FL
+play,2,1,sexsr001,21,BBFX,53/G
+play,2,1,burnj001,02,CFS,K
+play,2,1,hernj001,31,BFBBX,S8
+play,2,1,lopel002,22,BFSBX,43/G
+play,3,0,sextc001,00,X,S
+play,3,0,cases001,12,BCFS,K
+play,3,0,yound001,12,FSBX,9/F9
+play,3,0,ochoa001,10,BB,CS2(24)
+play,3,1,casar001,12,FBSX,3/G
+play,3,1,rigdp001,00,X,HR/78
+play,3,1,grism001,22,BSSFBFFX,53/G
+play,3,1,lorem001,02,CSS,K
+play,4,0,ochoa001,22,BBSFX,8/F8
+play,4,0,stync001,22,BBCCX,63/G
+play,4,0,castj004,12,CFFBC,K/C
+play,4,1,jenkg001,12,SBSS,K
+play,4,1,sexsr001,22,BSCBS,K
+play,4,1,burnj001,10,BX,53/G
+play,5,0,laruj001,00,X,S8
+play,5,0,bellr003,02,LLL,K/BF
+play,5,0,tuckm001,32,CBSBBX,E4/G.1-2
+play,5,0,sextc001,00,X,8/F8
+play,5,0,cases001,22,BSBCFS,K
+play,5,1,hernj001,22,FBFBFS,K
+play,5,1,lopel002,10,BX,5/FL
+play,5,1,casar001,00,X,43/G
+play,6,0,yound001,20,BBX,8/F8
+play,6,0,ochoa001,21,BFBX,S7
+play,6,0,stync001,01,CS,SB2
+play,6,0,stync001,02,CSS,K
+play,6,0,castj004,00,X,FC5.2X3(5);B-1#
+play,6,1,rigdp001,00,,NP
+sub,sweem001,"Mark Sweeney",1,9,11
+play,6,1,sweem001,12,BSFC,K/C
+play,6,1,grism001,21,BBCX,HR/7
+play,6,1,lorem001,00,X,6/L6
+play,6,1,jenkg001,12,SBCFX,7/F7D
+play,7,0,laruj001,00,,NP
+sub,buddm001,"Mike Buddie",1,9,1
+play,7,0,laruj001,00,X,S7/7S
+play,7,0,bellr003,00,X,34/SH.1-2
+play,7,0,tuckm001,12,CFBS,K
+play,7,0,sextc001,22,BBCCX,S9.2-H
+play,7,0,cases001,00,,NP
+sub,delov001,"Valerio De Los Santos",1,9,1
+play,7,0,cases001,22,BBCFX,5/FL
+play,7,1,sexsr001,02,FSX,HR/78
+play,7,1,burnj001,00,,NP
+sub,reyed001,"Dennys Reyes",0,9,1
+play,7,1,burnj001,00,X,9/F9
+play,7,1,hernj001,00,,NP
+sub,riedj001,"John Riedling",0,9,1
+play,7,1,hernj001,30,BBBX,D9
+play,7,1,lopel002,31,FBBBB,W
+play,7,1,casar001,31,FBBBX,S8.2-H;1-2
+play,7,1,delov001,00,,NP
+sub,houst001,"Tyler Houston",1,9,11
+play,7,1,houst001,00,,NP
+sub,sulls001,"Scott Sullivan",0,9,1
+play,7,1,houst001,10,BX,3/G.2-3;1-2
+play,7,1,grism001,00,B,WP.3-H;2-3
+play,7,1,grism001,32,BBCBSS,K
+play,8,0,yound001,00,,NP
+sub,weatd001,"David Weathers",1,9,1
+play,8,0,yound001,00,X,43/G
+play,8,0,ochoa001,22,CBFBX,53/G
+play,8,0,stync001,11,SBX,S8
+play,8,0,castj004,12,SFBX,3/P3
+play,8,1,lorem001,22,BCCBFX,2/FL
+play,8,1,jenkg001,22,BCSBH,HP
+play,8,1,sexsr001,31,BBSBB,W.1-2
+play,8,1,burnj001,00,,NP
+sub,merch002,"Hector Mercado",0,9,1
+play,8,1,burnj001,31,BCBBB,W.2-3;1-2
+play,8,1,hernj001,00,,NP
+sub,gravd001,"Danny Graves",0,6,1
+play,8,1,hernj001,00,,NP
+sub,bellm003,"Mike Bell",0,9,5
+play,8,1,hernj001,10,BX,S9.3-H;2-3;1-2
+play,8,1,lopel002,01,CX,12(3)/FO.2-3;1-2
+play,8,1,casar001,21,BFBX,HR/9.3-H;2-H;1-H
+play,8,1,weatd001,00,,NP
+sub,echea001,"Angel Echevarria",1,9,11
+play,8,1,echea001,31,BBSBB,W
+play,8,1,grism001,00,X,46(1)/FO
+play,9,0,laruj001,00,,NP
+sub,leskc001,"Curtis Leskanic",1,9,1
+play,9,0,laruj001,32,CSBBBB,W
+play,9,0,bellm003,22,BSFBX,HR/7.1-H
+play,9,0,tuckm001,22,BFSBX,43/G
+play,9,0,sextc001,01,CX,4/P4
+play,9,0,cases001,01,CX,43/G
+data,er,bellr003,3
+data,er,reyed001,0
+data,er,riedj001,2
+data,er,sulls001,2
+data,er,merch002,1
+data,er,gravd001,2
+data,er,rigdp001,3
+data,er,buddm001,1
+data,er,delov001,0
+data,er,weatd001,0
+data,er,leskc001,2

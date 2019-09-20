@@ -1,0 +1,150 @@
+version,2
+info,visteam,OAK
+info,hometeam,TBA
+info,site,STP01
+info,date,2000/09/16
+info,number,0
+info,starttime,4:15PM
+info,daynight,day
+info,usedh,true
+info,umphome,diazl901
+info,ump1b,coope901
+info,ump2b,kellj901
+info,ump3b,reilm901
+info,pitches,pitches
+info,temp,72
+info,winddir,ltor
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,199
+info,attendance,17154
+info,wp,hudst001
+info,lp,wilsp001
+info,save,isrij001
+start,longt002,"Terrence Long",0,1,8
+start,velar001,"Randy Velarde",0,2,4
+start,giamj001,"Jason Giambi",0,3,3
+start,grieb001,"Ben Grieve",0,4,7
+start,staim001,"Matt Stairs",0,5,10
+start,tejam001,"Miguel Tejada",0,6,6
+start,chave001,"Eric Chavez",0,7,5
+start,giamj002,"Jeremy Giambi",0,8,9
+start,hernr002,"Ramon Hernandez",0,9,2
+start,hudst001,"Tim Hudson",0,0,1
+start,willg001,"Gerald Williams",1,1,8
+start,winnr001,"Randy Winn",1,2,7
+start,cox-s001,"Steve Cox",1,3,9
+start,mcgrf001,"Fred McGriff",1,4,3
+start,vaugg001,"Greg Vaughn",1,5,10
+start,huffa001,"Aubrey Huff",1,6,5
+start,flahj001,"John Flaherty",1,7,2
+start,cairm001,"Miguel Cairo",1,8,4
+start,martf001,"Felix Martinez",1,9,6
+start,wilsp001,"Paul Wilson",1,0,1
+play,1,0,longt002,21,BCBX,6/P6
+play,1,0,velar001,32,BBCFBX,9/F9
+play,1,0,giamj001,21,BFBX,8/F8
+play,1,1,willg001,12,SSBS,K
+play,1,1,winnr001,32,BSCBBX,3/L3
+play,1,1,cox-s001,32,BSFBBB,W
+play,1,1,mcgrf001,12,CBCX,3/G
+play,2,0,grieb001,22,CBFBX,9/F9
+play,2,0,staim001,12,FBCFS,K
+play,2,0,tejam001,02,CSFS,K
+play,2,1,vaugg001,01,CX,8/F8
+play,2,1,huffa001,22,CFBBX,D/78
+play,2,1,flahj001,12,CBSX,53/G
+play,2,1,cairm001,32,BCBFBB,W
+play,2,1,martf001,00,X,5/P5
+play,3,0,chave001,31,BBBCX,7/F7
+play,3,0,giamj002,10,BX,8/F8
+play,3,0,hernr002,22,BCCBFX,63/G
+play,3,1,willg001,00,X,53/BG
+play,3,1,winnr001,22,BCFBX,5/FL
+play,3,1,cox-s001,00,X,S8
+play,3,1,mcgrf001,21,FBBX,63/G
+play,4,0,longt002,10,BX,D8
+play,4,0,velar001,02,CFS,K
+play,4,0,giamj001,31,CBBBB,W
+play,4,0,grieb001,32,BBSCFBX,D7/7D.2-H;1-3
+play,4,0,staim001,30,BBII,IW
+play,4,0,tejam001,32,BBBCFC,K/C
+play,4,0,chave001,11,BCX,S9.3-H;2-H;1-2
+play,4,0,giamj002,00,X,64(1)/FO.2-3
+play,4,1,vaugg001,11,BFX,8/F8
+play,4,1,huffa001,32,SBBFFBX,S9
+play,4,1,flahj001,22,CBSBS,K
+play,4,1,cairm001,01,SX,7/F7
+play,5,0,hernr002,11,BSX,S8
+play,5,0,longt002,22,BBFFC,K/C
+play,5,0,velar001,21,BCBX,8/F8
+play,5,0,giamj001,21,CBBX,D8/8D.1-H
+play,5,0,grieb001,00,H,HP
+play,5,0,staim001,00,,NP
+sub,creed001,"Doug Creek",1,0,1
+play,5,0,staim001,22,CBFBX,S7.2-H;1-2
+play,5,0,tejam001,11,BFX,6/L6
+play,5,1,martf001,21,BBCX,43/G
+play,5,1,willg001,00,X,S8/8S
+play,5,1,winnr001,02,CSFS,K
+play,5,1,cox-s001,32,BCBFBS,K
+play,6,0,chave001,32,FBBFFBX,6/P6
+play,6,0,giamj002,00,,NP
+sub,portb001,"Bo Porter",0,8,11
+play,6,0,portb001,12,CCBS,K
+play,6,0,hernr002,22,CCBFBS,K
+play,6,1,mcgrf001,00,,NP
+sub,portb001,"Bo Porter",0,8,9
+play,6,1,mcgrf001,32,CBCFBFBX,S8/8S
+play,6,1,vaugg001,32,BBSBFS,K
+play,6,1,huffa001,00,X,4(1)3/GDP
+play,7,0,longt002,01,CX,5/L5
+play,7,0,velar001,22,CBBFFX,8/F8
+play,7,0,giamj001,22,BCBCFX,43/G
+play,7,1,flahj001,02,FFX,53/G
+play,7,1,cairm001,30,BBBB,W
+play,7,1,martf001,00,,NP
+sub,timmo001,"Ozzie Timmons",1,9,11
+play,7,1,timmo001,11,BSC,SB2
+play,7,1,timmo001,12,BSCS,K
+play,7,1,willg001,22,BCSBFX,D/78.2-H
+play,7,1,winnr001,30,BBBB,W
+play,7,1,cox-s001,00,,NP
+sub,magnm001,"Mike Magnante",0,0,1
+play,7,1,cox-s001,22,CFFFBBFX,S8.2-H;1-3
+play,7,1,mcgrf001,12,BCFX,6/P6
+play,8,0,grieb001,00,,NP
+sub,guilo001,"Ozzie Guillen",1,9,6
+play,8,0,grieb001,32,BBCCBFFS,K
+play,8,0,staim001,21,BBFX,S7
+play,8,0,tejam001,12,BFSX,9/F9
+play,8,0,chave001,22,BCBFS,K
+play,8,1,vaugg001,00,,NP
+sub,chrir001,"Ryan Christenson",0,4,7
+play,8,1,vaugg001,12,SBFC,K/C
+play,8,1,huffa001,10,BX,S7
+play,8,1,flahj001,00,,NP
+sub,tam-j001,"Jeff Tam",0,0,1
+play,8,1,flahj001,01,CX,8/F8
+play,8,1,cairm001,12,CCBX,13/G
+play,9,0,portb001,00,,NP
+sub,yan-e001,"Esteban Yan",1,0,1
+play,9,0,portb001,02,LCC,K/C
+play,9,0,hernr002,12,SBSFX,8/F8
+play,9,0,longt002,00,X,S8/8S
+play,9,0,velar001,22,CFBBFX,43/G
+play,9,1,guilo001,00,,NP
+sub,isrij001,"Jason Isringhausen",0,0,1
+play,9,1,guilo001,32,BCFBBX,8/F8
+play,9,1,willg001,12,BFCS,K
+play,9,1,winnr001,32,BBCCBB,W
+play,9,1,cox-s001,12,BCCFX,43/G
+data,er,hudst001,2
+data,er,magnm001,0
+data,er,tam-j001,0
+data,er,isrij001,0
+data,er,wilsp001,5
+data,er,creed001,0
+data,er,yan-e001,0

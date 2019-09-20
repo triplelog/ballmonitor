@@ -1,0 +1,127 @@
+version,2
+info,visteam,CHN
+info,hometeam,ARI
+info,site,PHO01
+info,date,2000/08/20
+info,number,0
+info,starttime,1:35PM
+info,daynight,day
+info,usedh,false
+info,umphome,rapue901
+info,ump1b,cuzzp901
+info,ump2b,schrp901
+info,ump3b,mcclt901
+info,pitches,pitches
+info,temp,72
+info,winddir,rtol
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,158
+info,attendance,43636
+info,wp,johnr005
+info,lp,rains001
+info,save,
+start,youne001,"Eric Young",0,1,4
+start,gutir001,"Ricky Gutierrez",0,2,6
+start,sosas001,"Sammy Sosa",0,3,9
+start,whitr001,"Rondell White",0,4,7
+start,gracm001,"Mark Grace",0,5,3
+start,giraj001,"Joe Girardi",0,6,2
+start,bufod001,"Damon Buford",0,7,8
+start,nievj002,"Jose Nieves",0,8,5
+start,garid001,"Daniel Garibay",0,9,1
+start,womat001,"Tony Womack",1,1,6
+start,bellj001,"Jay Bell",1,2,4
+start,gonzl001,"Luis Gonzalez",1,3,7
+start,willm003,"Matt D. Williams",1,4,5
+start,finls001,"Steve Finley",1,5,8
+start,colbg001,"Greg Colbrunn",1,6,3
+start,milld002,"Damian Miller",1,7,2
+start,bautd001,"Danny Bautista",1,8,9
+start,johnr005,"Randy Johnson",1,9,1
+play,1,0,youne001,02,CCS,K23
+play,1,0,gutir001,02,SFS,K
+play,1,0,sosas001,32,BFSBBFFS,K
+play,1,1,womat001,22,CCBFBFX,S8/8S
+play,1,1,bellj001,00,1,POCS2(136)
+play,1,1,bellj001,02,1CCX,53/G
+play,1,1,gonzl001,11,BFX,31/G
+play,2,0,whitr001,12,BFSS,K23
+play,2,0,gracm001,02,FFX,9/F9S
+play,2,0,giraj001,22,BFFBS,K23
+play,2,1,willm003,22,BCBSC,K/C
+play,2,1,finls001,31,BBSBB,W
+play,2,1,colbg001,01,FX,9/F9
+play,2,1,milld002,10,BX,9/F9
+play,3,0,bufod001,31,BBCBX,D/78
+play,3,0,nievj002,12,CFBX,S8/8S.2-H
+play,3,0,garid001,00,X,54(1)/FO
+play,3,0,youne001,12,FCBX,9/F9
+play,3,0,gutir001,32,BFBBFFFB,W.1-2
+play,3,0,sosas001,00,X,HR/7.2-H;1-H
+play,3,0,whitr001,22,BBFFS,K
+play,3,1,bautd001,21,BBCX,9/F9D
+play,3,1,johnr005,32,BSBBCB,W
+play,3,1,womat001,22,CBCBX,63/G.1-2
+play,3,1,bellj001,32,BCBFBX,63/G
+play,4,0,gracm001,10,BX,31/G
+play,4,0,giraj001,12,FSBX,13/G
+play,4,0,bufod001,00,X,8/F8D
+play,4,1,gonzl001,32,BBBCCC,K/C
+play,4,1,willm003,10,BX,7/F7S
+play,4,1,finls001,30,BBBX,S9
+play,4,1,colbg001,12,FBFX,D7/7D.1-H
+play,4,1,milld002,00,X,4/P4
+play,5,0,nievj002,22,BBSCS,K
+play,5,0,garid001,12,BCCS,K
+play,5,0,youne001,12,BCCX,63/G
+play,5,1,bautd001,12,CSBFS,K
+play,5,1,johnr005,22,BFSBS,K
+play,5,1,womat001,11,BFX,8/F8
+play,6,0,gutir001,32,BCBFBB,W
+play,6,0,sosas001,20,BBX,6(1)3/GDP
+play,6,0,whitr001,00,X,S9
+play,6,0,gracm001,00,H,HP.1-2
+play,6,0,giraj001,02,CFFS,K
+play,6,1,bellj001,22,BCFBX,S7
+play,6,1,gonzl001,11,BCX,46(1)/FO
+play,6,1,willm003,30,BBBB,W.1-2
+play,6,1,finls001,02,CCX,S9.2-3;1-2
+play,6,1,colbg001,00,,NP
+sub,rains001,"Steve Rain",0,9,1
+play,6,1,colbg001,00,X,D/78.3-H;2-H;1-3
+play,6,1,milld002,30,BBBB,W
+play,6,1,bautd001,10,BX,S9.3-H;2-H;1-3
+play,6,1,johnr005,12,BSCS,K
+play,6,1,womat001,12,BFFFS,K
+play,7,0,bufod001,21,BBCX,8/F8
+play,7,0,nievj002,02,CFS,K
+play,7,0,rains001,00,,NP
+sub,meyec001,"Chad Meyers",0,9,11
+play,7,0,meyec001,22,FBBCC,K/C
+play,7,1,bellj001,00,,NP
+sub,farnk001,"Kyle Farnsworth",0,9,1
+play,7,1,bellj001,30,BBBB,W
+play,7,1,gonzl001,11,CBX,S9.1-3
+play,7,1,willm003,21,CBBX,16(1)3/GDP.3-3
+play,7,1,finls001,12,SBFFS,K
+play,8,0,youne001,21,BBCX,8/F8
+play,8,0,gutir001,22,BSCFBX,3/G
+play,8,0,sosas001,32,BCBBFS,K
+play,8,1,colbg001,00,,NP
+sub,worrt002,"Tim Worrell",0,9,1
+play,8,1,colbg001,02,CSX,S8/8S
+play,8,1,milld002,02,CFX,3/FL
+play,8,1,bautd001,00,X,S7.1-2
+play,8,1,johnr005,12,LLBC,K/C
+play,8,1,womat001,12,CBSFS,K
+play,9,0,whitr001,31,BBBCB,W
+play,9,0,gracm001,12,CBCS,K
+play,9,0,giraj001,00,X,6(1)3/GDP
+data,er,garid001,4
+data,er,rains001,1
+data,er,farnk001,0
+data,er,worrt002,0
+data,er,johnr005,4

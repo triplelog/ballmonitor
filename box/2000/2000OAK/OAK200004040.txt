@@ -1,0 +1,130 @@
+version,2
+info,visteam,DET
+info,hometeam,OAK
+info,site,OAK01
+info,date,2000/04/04
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,laynj901
+info,ump1b,barrt901
+info,ump2b,randt901
+info,ump3b,monte901
+info,pitches,pitches
+info,temp,58
+info,winddir,torf
+info,windspeed,14
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,159
+info,attendance,10188
+info,wp,hudst001
+info,lp,nitkc001
+info,save,isrij001
+start,polol001,"Luis Polonia",0,1,9
+start,ausmb001,"Brad Ausmus",0,2,2
+start,higgb001,"Bobby Higginson",0,3,7
+start,palmd002,"Dean Palmer",0,4,5
+start,clart002,"Tony Clark",0,5,3
+start,easld001,"Damion Easley",0,6,4
+start,fickr001,"Robert Fick",0,7,10
+start,encaj001,"Juan Encarnacion",0,8,8
+start,cruzd001,"Deivi Cruz",0,9,6
+start,nitkc001,"C.J. Nitkowski",0,0,1
+start,chrir001,"Ryan Christenson",1,1,8
+start,tejam001,"Miguel Tejada",1,2,6
+start,giamj001,"Jason Giambi",1,3,3
+start,jahaj001,"John Jaha",1,4,10
+start,staim001,"Matt Stairs",1,5,9
+start,grieb001,"Ben Grieve",1,6,7
+start,hernr002,"Ramon Hernandez",1,7,2
+start,chave001,"Eric Chavez",1,8,5
+start,menef001,"Frank Menechino",1,9,4
+start,hudst001,"Tim Hudson",1,0,1
+play,1,0,polol001,02,CSFX,13/G
+play,1,0,ausmb001,32,BBFBSS,K
+play,1,0,higgb001,12,CCBX,8/F8
+play,1,1,chrir001,21,CBBX,3/FL
+play,1,1,tejam001,10,BX,S9/9S
+play,1,1,giamj001,11,CBX,46(1)3/GDP
+play,2,0,palmd002,22,BFCBS,K
+play,2,0,clart002,12,CBSS,K
+play,2,0,easld001,01,CX,53/G
+play,2,1,jahaj001,21,CBBX,63/G
+play,2,1,staim001,02,CSC,K/C
+play,2,1,grieb001,22,CFBBFS,K
+play,3,0,fickr001,22,FBSFFBS,K
+play,3,0,encaj001,00,X,4/P4
+play,3,0,cruzd001,32,CSBBBS,K
+play,3,1,hernr002,21,BFBX,9/F9
+play,3,1,chave001,22,SSBBFC,K/C
+play,3,1,menef001,32,BCBBFX,T9/9D
+play,3,1,chrir001,22,SBBFS,K
+play,4,0,polol001,10,BX,3/G
+play,4,0,ausmb001,30,BBBB,W
+play,4,0,higgb001,00,X,8/F8
+play,4,0,palmd002,31,SBBBB,W.1-2
+play,4,0,clart002,10,BX,8/F8
+play,4,1,tejam001,32,CBBBCX,9/F9
+play,4,1,giamj001,02,CFC,K/C
+play,4,1,jahaj001,31,BSBBB,W
+play,4,1,staim001,22,CBBSX,S9/9S.1-3
+play,4,1,grieb001,32,BCBBCX,S7/7S.3-H;1-3
+play,4,1,hernr002,12,CBSX,43/G
+play,5,0,easld001,32,BBSSBB,W
+play,5,0,fickr001,11,CBX,3/G.1-2
+play,5,0,encaj001,32,BSFBBFFFFS,K
+play,5,0,cruzd001,32,FBSBBX,63/G
+play,5,1,chave001,00,X,E3/G
+play,5,1,menef001,00,X,16(1)/FO
+play,5,1,chrir001,30,BBBB,W.1-2
+play,5,1,tejam001,32,CBSBBB,W.2-3;1-2
+play,5,1,giamj001,32,BBBCSX,46(1)/FO.3-H(UR);2-H(UR)
+play,5,1,jahaj001,32,CBBCFFBFX,4/P4
+play,6,0,polol001,22,BCBSX,43/G
+play,6,0,ausmb001,11,BFX,53/G
+play,6,0,higgb001,12,CBFS,K
+play,6,1,staim001,22,BCBCFS,K
+play,6,1,grieb001,22,BCCBS,K
+play,6,1,hernr002,12,CFBX,9/F9
+play,7,0,palmd002,22,CSBBFC,K/C
+play,7,0,clart002,21,BBSX,D/78
+play,7,0,easld001,01,FX,63/G.2-3
+play,7,0,fickr001,01,CX,9/F9
+play,7,1,chave001,00,,NP
+sub,pattd001,"Danny Patterson",0,0,1
+play,7,1,chave001,00,X,S7/7S
+play,7,1,menef001,02,CLFX,9/F9S
+play,7,1,chrir001,10,BX,54(1)3/GDP
+play,8,0,encaj001,00,,NP
+sub,matht002,"T.J. Mathews",1,0,1
+play,8,0,encaj001,32,CFFFBBBS,K
+play,8,0,cruzd001,00,X,8/F8S
+play,8,0,polol001,01,CX,43/G
+play,8,1,tejam001,00,,NP
+sub,andem002,"Matt Anderson",0,0,1
+play,8,1,tejam001,02,CSS,K
+play,8,1,giamj001,30,BBBB,W
+play,8,1,jahaj001,22,CSBBFC,K/C
+play,8,1,staim001,00,,NP
+sub,poolj001,"Jim Poole",0,0,1
+play,8,1,staim001,21,CBBX,53/G
+play,9,0,ausmb001,00,,NP
+sub,beckr002,"Rich Becker",1,6,7
+play,9,0,ausmb001,00,,NP
+sub,isrij001,"Jason Isringhausen",1,0,1
+play,9,0,ausmb001,22,BCBFC,K/C
+play,9,0,higgb001,11,CBX,7/F7
+play,9,0,palmd002,32,CBSBFBB,W
+play,9,0,clart002,00,X,S7.1-3
+play,9,0,easld001,00,B,PB.3-H(UR);1-2
+play,9,0,easld001,22,BSSBS,K
+data,er,nitkc001,1
+data,er,pattd001,0
+data,er,andem002,0
+data,er,poolj001,0
+data,er,hudst001,0
+data,er,matht002,0
+data,er,isrij001,0

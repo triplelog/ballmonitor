@@ -1,0 +1,176 @@
+version,2
+info,visteam,NYN
+info,hometeam,MON
+info,site,MON02
+info,date,2000/09/14
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,emmep901
+info,ump1b,riekr901
+info,ump2b,guccc901
+info,ump3b,lampi901
+info,pitches,pitches
+info,temp,72
+info,winddir,tocf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,171
+info,attendance,6219
+info,wp,ruscg001
+info,lp,thurm002
+info,save,
+start,agbab001,"Benny Agbayani",0,1,7
+start,belld001,"Derek Bell",0,2,9
+start,alfoe001,"Edgardo Alfonzo",0,3,4
+start,piazm001,"Mike Piazza",0,4,2
+start,ventr001,"Robin Ventura",0,5,5
+start,zeilt001,"Todd Zeile",0,6,3
+start,paytj001,"Jay Payton",0,7,8
+start,bordm001,"Mike Bordick",0,8,6
+start,ruscg001,"Glendon Rusch",0,9,1
+start,bergp001,"Peter Bergeron",1,1,8
+start,delat001,"Tomas De La Rosa",1,2,6
+start,seguf001,"Fernando Seguignol",1,3,3
+start,guerv001,"Vladimir Guerrero",1,4,9
+start,vidrj001,"Jose Vidro",1,5,4
+start,blumg001,"Geoff Blum",1,6,5
+start,guerw001,"Wilton Guerrero",1,7,7
+start,schnb001,"Brian Schneider",1,8,2
+start,thurm002,"Mike Thurman",1,9,1
+play,1,0,agbab001,12,CSFBS,K
+play,1,0,belld001,00,X,9/F9D
+play,1,0,alfoe001,10,BX,HR/7
+play,1,0,piazm001,32,BFBCBX,3/P3
+play,1,1,bergp001,32,BBCSBB,W
+play,1,1,delat001,11,BLX,13/SH.1-2#
+play,1,1,seguf001,00,X,D/78.2-H
+play,1,1,guerv001,00,X,S8/8S.2-H
+play,1,1,vidrj001,22,BFBFS,K
+play,1,1,blumg001,11,CBX,3/G
+play,2,0,ventr001,21,BCBX,S9
+play,2,0,zeilt001,00,C,CS2(24)
+play,2,0,zeilt001,32,CBSBBX,9/F9
+play,2,0,paytj001,01,CX,S8
+play,2,0,bordm001,00,X,S8/8S.1-2
+play,2,0,ruscg001,00,X,S8/8S.2-H;1-2
+play,2,0,agbab001,21,BBFX,S.2-3;1-2
+play,2,0,belld001,31,BCBBB,W.3-H;2-3;1-2
+play,2,0,alfoe001,32,FFBBFBC,K/C
+play,2,1,guerw001,12,BFCX,43/G
+play,2,1,schnb001,11,BCX,13/G
+play,2,1,thurm002,22,BBCSS,K
+play,3,0,piazm001,00,H,HP
+play,3,0,ventr001,00,X,E3/G.1-2
+play,3,0,zeilt001,02,CCS,K
+play,3,0,paytj001,10,BC,SB3
+play,3,0,paytj001,11,BCX,9/SF.3-H(UR);1-2
+play,3,0,bordm001,01,CX,S8/8S.2-H(UR);BX2(836)
+play,3,1,bergp001,32,SFBBBFB,W
+play,3,1,delat001,12,CBFC,K/C
+play,3,1,seguf001,21,CBBX,7/L7
+play,3,1,guerv001,12,CFBC,K/C
+play,4,0,ruscg001,11,CBX,8/F8D
+play,4,0,agbab001,31,BFBBB,W
+play,4,0,belld001,22,BSBSX,46(1)3/GDP
+play,4,1,vidrj001,31,BBFBB,W
+play,4,1,blumg001,10,BX,S8.1-3
+play,4,1,guerw001,00,X,S8/8S.3-H;1-2
+play,4,1,schnb001,22,FBFFBFX,64(1)546(2)/GDP
+com,"now THERE's a 'reverse force' GDP for you!"
+play,4,1,thurm002,00,X,9/F9
+play,5,0,alfoe001,11,BCX,13/G
+play,5,0,piazm001,01,CX,8/F8
+play,5,0,ventr001,22,BBCFFFFX,S9
+play,5,0,zeilt001,00,X,S9/9S.1-2
+play,5,0,paytj001,22,CFFBBS,K
+play,5,1,bergp001,21,FBBX,S8/8S
+play,5,1,delat001,00,X,6/P6
+play,5,1,seguf001,00,X,43(B)6(1)/GDP
+play,6,0,bordm001,01,CX,3/P3
+play,6,0,ruscg001,12,CCBX,7/F7S
+play,6,0,agbab001,01,CX,53/G
+play,6,1,guerv001,01,FX,63/G
+play,6,1,vidrj001,20,BBX,D/89
+play,6,1,blumg001,32,BBCBFX,7/F7
+play,6,1,guerw001,00,X,6/L6
+play,7,0,belld001,10,BX,63/G
+play,7,0,alfoe001,32,BBFCBB,W
+play,7,0,piazm001,00,B,WP.1-2
+play,7,0,piazm001,30,BBII,IW
+play,7,0,ventr001,00,,NP
+sub,spens003,"Sean Spencer",1,7,1
+play,7,0,ventr001,00,,NP
+sub,jonet004,"Terry Jones",1,9,7
+play,7,0,ventr001,00,X,HR/9.2-H;1-H
+play,7,0,zeilt001,30,BBBB,W
+play,7,0,paytj001,21,BBCB,WP.1-2
+play,7,0,paytj001,31,BBCB+2,PO2(E2).2-3
+play,7,0,paytj001,32,BBCB+2FX,HR/7.3-H
+play,7,0,bordm001,21,BBFX,9/F9
+play,7,0,ruscg001,02,CCS,K
+play,7,1,schnb001,22,FCBBX,3/G
+play,7,1,jonet004,10,BX,4/P4
+play,7,1,bergp001,02,CFFC,K/C
+play,8,0,agbab001,00,,NP
+sub,coqut001,"Trace Coquillette",1,6,5
+play,8,0,agbab001,00,,NP
+sub,valey001,"Yohanny Valera",1,7,2
+play,8,0,agbab001,00,,NP
+sub,santj001,"Julio Santana",1,8,1
+play,8,0,agbab001,00,,NP
+sub,hamid001,"Darryl Hamilton",0,1,11
+play,8,0,hamid001,21,BCBX,S8
+play,8,0,belld001,00,,NP
+sub,peret004,"Timoniel Perez",0,2,11
+play,8,0,peret004,11,BSH,HP.1-2
+play,8,0,alfoe001,00,,NP
+sub,harrl001,"Lenny Harris",0,3,11
+play,8,0,harrl001,10,BX,6/P6
+play,8,0,piazm001,32,BFBFFBS,K+SB3;SB2
+play,8,0,ventr001,31,BCBBX,3/G
+play,8,1,delat001,00,,NP
+sub,velaj001,"Jorge Velandia",0,4,4
+play,8,1,delat001,00,,NP
+sub,peret004,"Timoniel Perez",0,2,9
+play,8,1,delat001,00,,NP
+sub,pratt001,"Todd Pratt",0,3,2
+play,8,1,delat001,00,,NP
+sub,mcewj001,"Joe McEwing",0,1,7
+play,8,1,delat001,22,BFBFX,3/P3
+play,8,1,seguf001,12,FBFFFX,S
+play,8,1,guerv001,12,FFBFX,S8/8S.1-2
+play,8,1,vidrj001,00,,NP
+sub,nunnt001,"Talmadge Nunnari",1,4,12
+play,8,1,vidrj001,00,,NP
+sub,whitr002,"Rick White",0,9,1
+play,8,1,vidrj001,00,X,S7/7D.2-H;1-2
+play,8,1,coqut001,11,CBX,8/F8
+play,8,1,valey001,00,X,13/G
+play,9,0,zeilt001,00,,NP
+sub,seguf001,"Fernando Seguignol",1,3,9
+play,9,0,zeilt001,00,,NP
+sub,nunnt001,"Talmadge Nunnari",1,4,3
+play,9,0,zeilt001,00,,NP
+sub,traca001,"Andy Tracy",1,8,5
+play,9,0,zeilt001,00,,NP
+sub,forss001,"Scott Forster",1,6,1
+play,9,0,zeilt001,31,CBBBX,63/G
+play,9,0,paytj001,11,BCX,53/G
+play,9,0,bordm001,32,BBBCSS,K
+play,9,1,traca001,00,,NP
+sub,cookd001,"Dennis Cook",0,9,1
+play,9,1,traca001,22,CBBCX,13/G
+play,9,1,jonet004,01,CX,13/G
+play,9,1,bergp001,02,FSX,S
+play,9,1,delat001,22,BSBCX,53/G
+data,er,ruscg001,4
+data,er,whitr002,0
+data,er,cookd001,0
+data,er,thurm002,5
+data,er,spens003,3
+data,er,santj001,0
+data,er,forss001,0

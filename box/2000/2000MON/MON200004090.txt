@@ -1,0 +1,139 @@
+version,2
+info,visteam,SDN
+info,hometeam,MON
+info,site,MON02
+info,date,2000/04/09
+info,number,0
+info,starttime,1:35PM
+info,daynight,day
+info,usedh,false
+info,umphome,cedeg901
+info,ump1b,hudsm901
+info,ump2b,welkt901
+info,ump3b,scotd901
+info,howscored,park
+info,pitches,pitches
+info,temp,72
+info,winddir,ltor
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,133
+info,attendance,9782
+info,wp,irabh001
+info,lp,boehb001
+info,save,urbiu001
+start,marta001,"Al Martin",0,1,7
+start,jackd003,"Damian Jackson",0,2,6
+start,gwynt001,"Tony Gwynn",0,3,9
+start,nevip001,"Phil Nevin",0,4,5
+start,klesr001,"Ryan Klesko",0,5,3
+start,boonb002,"Bret Boone",0,6,4
+start,owene001,"Eric Owens",0,7,8
+start,gonzw001,"Wiki Gonzalez",0,8,2
+start,boehb001,"Brian Boehringer",0,9,1
+start,bergp001,"Peter Bergeron",1,1,8
+start,vidrj001,"Jose Vidro",1,2,4
+start,whitr001,"Rondell White",1,3,7
+start,guerv001,"Vladimir Guerrero",1,4,9
+start,stevl001,"Lee Stevens",1,5,3
+start,coqut001,"Trace Coquillette",1,6,5
+start,widgc001,"Chris Widger",1,7,2
+start,cabro001,"Orlando Cabrera",1,8,6
+start,irabh001,"Hideki Irabu",1,9,1
+com,"$This game was played indoors while a blizzard was raging outside."
+com,"The Expos announced that anyone who could not get to the game could"
+com,"exchange their tickets for another game during the season. During"
+com,"the game, the Expos announced that those at the game could exchange"
+com,"their ticket stubs for tickets to another game"
+play,1,0,marta001,00,X,13/G
+play,1,0,jackd003,01,CX,7/F7
+play,1,0,gwynt001,22,BFSBX,7/F7
+play,1,1,bergp001,11,CBX,43/G
+play,1,1,vidrj001,12,CBCFS,K
+play,1,1,whitr001,00,X,9/F9S
+play,2,0,nevip001,22,CBBFX,S9/9S
+play,2,0,klesr001,10,BX,4(B)3(1)/LDP
+play,2,0,boonb002,31,BCBBX,53/G
+play,2,1,guerv001,02,SFX,3/FL
+play,2,1,stevl001,12,BCSC,K/C
+play,2,1,coqut001,32,CBBCFFBS,K
+play,3,0,owene001,22,BCBFX,53/G
+play,3,0,gonzw001,11,SBX,S7/7S
+play,3,0,boehb001,02,LCX,34/SH.1-2
+play,3,0,marta001,21,SBBX,13/G
+play,3,1,widgc001,32,BBFFBB,W
+play,3,1,cabro001,12,FFFBX,64(1)/FO
+play,3,1,irabh001,00,X,3/FL
+play,3,1,bergp001,10,BB,CS2(24)
+play,4,0,jackd003,10,BX,63/G
+play,4,0,gwynt001,02,FSC,K/C
+play,4,0,nevip001,01,CX,D9/9D
+play,4,0,klesr001,00,X,53/G
+play,4,1,bergp001,12,CFBC,K/C
+play,4,1,vidrj001,11,BFX,3/G
+play,4,1,whitr001,01,CX,S
+play,4,1,guerv001,21,BFBX,E4/G.1-2
+play,4,1,stevl001,20,BBX,7/F7S
+play,5,0,boonb002,22,CBCBFS,K
+play,5,0,owene001,01,CX,S9/9S
+play,5,0,gonzw001,01,SB,SB2
+play,5,0,gonzw001,21,SBBX,S9.2-H
+play,5,0,boehb001,00,B,SB2
+play,5,0,boehb001,10,BX,63/G.2-3
+play,5,0,marta001,00,X,63/G
+play,5,1,coqut001,01,CX,6/L6
+play,5,1,widgc001,11,SBX,5/P5
+play,5,1,cabro001,22,BFFFFBX,D7/7D
+play,5,1,irabh001,02,FFS,K
+play,6,0,jackd003,21,BBCX,53/G
+play,6,0,gwynt001,00,X,S9
+play,6,0,nevip001,20,BBX,6(1)3/GDP
+play,6,1,bergp001,00,X,63/G
+play,6,1,vidrj001,22,BBCFFX,S8
+play,6,1,whitr001,30,BBBB,W.1-2
+play,6,1,guerv001,00,,NP
+sub,cunnw001,"Will Cunnane",0,9,1
+play,6,1,guerv001,30,BBBB,W.2-3;1-2
+play,6,1,stevl001,00,,NP
+sub,whism001,"Matt Whisenant",0,9,1
+play,6,1,stevl001,12,FSFBX,S9.3-H;2-3;1-2
+play,6,1,coqut001,31,BFBBB,W.3-H;2-3;1-2
+play,6,1,widgc001,12,CFBX,54(1)3/GDP
+play,7,0,klesr001,12,BFFX,3/G
+play,7,0,boonb002,22,FBFBX,S9
+play,7,0,owene001,12,BFFFX,64(1)3/GDP
+play,7,1,cabro001,01,SX,3/G
+play,7,1,irabh001,00,,NP
+sub,guerw001,"Wilton Guerrero",1,9,11
+play,7,1,guerw001,01,CX,43/G
+play,7,1,bergp001,00,X,43/G
+play,8,0,gonzw001,00,,NP
+sub,stris001,"Scott Strickland",1,9,1
+play,8,0,gonzw001,22,FBCBX,8/F8
+play,8,0,whism001,00,,NP
+sub,magad001,"Dave Magadan",0,9,11
+play,8,0,magad001,21,BCBX,43/G
+play,8,0,marta001,02,CFS,K
+com,"umpchange,8,ump1b,scotd901"
+com,"umpchange,8,ump3b,welkt901"
+com,"umpchange,8,ump2b,(None)"
+com,"$1B umpire Marvin Hudson left the game with an undisclosed illness"
+play,8,1,vidrj001,00,,NP
+sub,walld002,"Donne Wall",0,9,1
+play,8,1,vidrj001,12,BCCX,63/G
+play,8,1,whitr001,01,CX,53/G
+play,8,1,guerv001,22,SBBSX,43/G
+play,9,0,jackd003,00,,NP
+sub,urbiu001,"Ugueth Urbina",1,9,1
+play,9,0,jackd003,31,BCBBB,W
+play,9,0,gwynt001,00,X,8/F8
+play,9,0,nevip001,01,CX,64(1)3/GDP
+data,er,boehb001,2
+data,er,cunnw001,0
+data,er,whism001,0
+data,er,walld002,0
+data,er,irabh001,1
+data,er,stris001,0
+data,er,urbiu001,0

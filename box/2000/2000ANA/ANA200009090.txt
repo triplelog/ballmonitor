@@ -1,0 +1,174 @@
+version,2
+info,visteam,BAL
+info,hometeam,ANA
+info,site,ANA01
+info,date,2000/09/09
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,schrp901
+info,ump1b,mcclt901
+info,ump2b,rapue901
+info,ump3b,cuzzp901
+info,pitches,pitches
+info,oscorer,munse701
+info,temp,75
+info,winddir,ltor
+info,windspeed,3
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,190
+info,attendance,22332
+info,wp,mercj001
+info,lp,karls001
+info,save,
+start,andeb001,"Brady Anderson",0,1,9
+start,hairj002,"Jerry Hairston",0,2,4
+start,deshd001,"Delino DeShields",0,3,7
+start,conij001,"Jeff Conine",0,4,5
+start,ripkc001,"Cal Ripken",0,5,10
+start,fordb001,"Brook Fordyce",0,6,2
+start,richc001,"Chris Richard",0,7,3
+start,lewim001,"Mark Lewis",0,8,6
+start,kingg001,"Eugene Kingsale",0,9,8
+start,mercj001,"Jose Mercedes",0,0,1
+start,erstd001,"Darin Erstad",1,1,8
+start,palmo001,"Orlando Palmeiro",1,2,7
+start,vaugm001,"Mo Vaughn",1,3,3
+start,salmt001,"Tim Salmon",1,4,10
+start,andeg001,"Garret Anderson",1,5,9
+start,glaut001,"Troy Glaus",1,6,5
+start,kenna001,"Adam Kennedy",1,7,4
+start,walbm001,"Matt Walbeck",1,8,2
+start,stock001,"Kevin Stocker",1,9,6
+start,karls001,"Scott Karl",1,0,1
+play,1,0,andeb001,31,BCBBB,W
+play,1,0,hairj002,21,CBBX,9/L9
+play,1,0,deshd001,21,BCBX,36(1)3/GDP
+play,1,1,erstd001,22,BCBFS,K
+play,1,1,palmo001,31,BCBBB,W
+play,1,1,vaugm001,20,BBX,46(1)3/GDP
+play,2,0,conij001,31,BCBBX,9/L9
+play,2,0,ripkc001,10,BX,E6/TH1
+play,2,0,fordb001,22,CFBBX,S.1-2
+play,2,0,richc001,10,BX,8/F8
+play,2,0,lewim001,22,BBFCX,S8.2-H(UR);1-2
+play,2,0,kingg001,20,BBX,S/89.2-H(UR);1-2
+play,2,0,andeb001,32,SBCBBFC,K/C
+play,2,1,salmt001,31,BBCBB,W
+play,2,1,andeg001,02,CCX,64(1)3/GDP
+play,2,1,glaut001,22,FBSFBX,S8
+play,2,1,kenna001,11,BCX,7/F7
+play,3,0,hairj002,31,BFBBB,W
+play,3,0,deshd001,01,CX,8/L8
+play,3,0,conij001,22,BBFFB,SB2
+play,3,0,conij001,32,BBFFBB,W
+play,3,0,ripkc001,10,BX,6(1)3/GDP
+play,3,1,walbm001,31,BBCBB,W
+play,3,1,stock001,00,X,46(1)3/GDP
+play,3,1,erstd001,32,BSSFBBFB,W
+play,3,1,palmo001,31,BCBBB,W.1-2
+play,3,1,vaugm001,31,SBBBB,W.2-3;1-2
+play,3,1,salmt001,30,BBBB,W.3-H;2-3;1-2
+play,3,1,andeg001,32,BBFBFFFX,9/F9D
+play,4,0,fordb001,00,X,7/F7
+play,4,0,richc001,20,BBX,HR/9
+play,4,0,lewim001,01,CX,D7
+play,4,0,kingg001,20,BBX,S8.2-H
+play,4,0,andeb001,22,CBFBX,D/78.1-H;B-3
+play,4,0,hairj002,00,,NP
+sub,potel001,"Lou Pote",1,0,1
+play,4,0,hairj002,31,BBBCB,W
+play,4,0,deshd001,31,BBCBX,S9.3-H;1-2
+play,4,0,conij001,01,SB,SB3
+play,4,0,conij001,21,SBB3,POCSH(1362).1-2
+play,4,0,conij001,21,SBB3X,63/G
+play,4,1,glaut001,01,CX,S
+play,4,1,kenna001,12,CBFFX,54(1)3/GDP
+play,4,1,walbm001,02,SFS,K
+play,5,0,ripkc001,01,CX,63/G
+play,5,0,fordb001,02,CFC,K/C
+play,5,0,richc001,10,BX,S8
+play,5,0,lewim001,00,X,3/G
+play,5,1,stock001,01,CX,53/G
+play,5,1,erstd001,02,CSX,43/G
+play,5,1,palmo001,32,BBBCCB,W
+play,5,1,vaugm001,12,BCFX,6(1)/FO/G
+play,6,0,kingg001,11,CBX,63/G
+play,6,0,andeb001,12,CBFC,K/C
+play,6,0,hairj002,32,BFBBFFX,53/G
+play,6,1,salmt001,22,BBCCX,9/F9
+play,6,1,andeg001,00,X,D7
+play,6,1,glaut001,01,SX,4/P4
+play,6,1,kenna001,22,BBCFX,8/L8
+play,7,0,deshd001,11,BFX,3/G
+play,7,0,conij001,00,X,S8
+play,7,0,ripkc001,00,,NP
+sub,myerg001,"Greg Myers",0,5,11
+play,7,0,myerg001,21,BSBB,CS2(26)
+play,7,0,myerg001,32,BSBBFFFS,K
+play,7,1,walbm001,00,,NP
+sub,groob001,"Buddy Groom",0,0,1
+play,7,1,walbm001,11,FBX,S7/7S
+play,7,1,stock001,00,,NP
+sub,gil-b001,"Benji Gil",1,9,11
+play,7,1,gil-b001,21,BFBX,S9.1-2
+play,7,1,erstd001,02,CFX,S9.2-3;1-2
+play,7,1,palmo001,00,,NP
+sub,gantr001,"Ron Gant",1,2,11
+play,7,1,gantr001,01,CX,3/G.3-H;2-3;1-2
+play,7,1,vaugm001,00,X,8/SF.3-H
+play,7,1,salmt001,00,,NP
+sub,tromm001,"Mike Trombley",0,0,1
+play,7,1,salmt001,22,BBSSS,K
+play,8,0,fordb001,00,,NP
+sub,gil-b001,"Benji Gil",1,9,6
+play,8,0,fordb001,00,,NP
+sub,gantr001,"Ron Gant",1,2,7
+play,8,0,fordb001,00,,NP
+sub,webeb001,"Ben Weber",1,0,1
+play,8,0,fordb001,00,X,63/G
+play,8,0,richc001,11,BCX,43/G
+play,8,0,lewim001,01,CX,43/G
+play,8,1,andeg001,32,BCFBBX,3/G
+play,8,1,glaut001,00,X,53/G
+play,8,1,kenna001,01,CX,D7
+play,8,1,walbm001,00,,NP
+sub,molib001,"Ben Molina",1,8,11
+play,8,1,molib001,31,BBBCB,W
+play,8,1,gil-b001,00,,NP
+sub,spies001,"Scott Spiezio",1,9,11
+play,8,1,spies001,32,CBBFBFFFX,31/G
+play,9,0,kingg001,00,,NP
+sub,glaut001,"Troy Glaus",1,6,6
+play,9,0,kingg001,00,,NP
+sub,molib001,"Ben Molina",1,8,2
+play,9,0,kingg001,00,,NP
+sub,spies001,"Scott Spiezio",1,9,5
+play,9,0,kingg001,22,CBBSX,6E3/G
+play,9,0,andeb001,10,BX,S9/9S.1-2
+play,9,0,hairj002,22,CLBBFX,S8.2-3;1-2
+play,9,0,deshd001,00,X,D7.3-H(UR);2-H;1-3
+play,9,0,conij001,21,BBFX,S8.3-H;2-H
+play,9,0,myerg001,00,,NP
+sub,turnd001,"Derrick Turnbow",1,0,1
+play,9,0,myerg001,31,BCBBX,6(1)3/GDP
+play,9,0,fordb001,22,BFSFBS,K
+play,9,1,erstd001,00,,NP
+sub,hubbt001,"Trenidad Hubbard",0,3,7
+play,9,1,erstd001,00,,NP
+sub,ryanb001,"B.J. Ryan",0,0,1
+play,9,1,erstd001,01,CX,S8
+play,9,1,gantr001,10,BX,2/FL
+play,9,1,vaugm001,22,BBFCFS,K
+play,9,1,salmt001,12,CBFC,K/C
+data,er,mercj001,1
+data,er,groob001,2
+data,er,tromm001,0
+data,er,ryanb001,0
+data,er,karls001,4
+data,er,potel001,0
+data,er,webeb001,3
+data,er,turnd001,0

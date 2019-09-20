@@ -1,0 +1,83 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,11,1,,,,,0,3,CBX,garcf002,1,0,alicl001 grounds out. ,alicl001,0,G
+,32,1,greer001,,,,1,9,CCBBBX,garcf002,0,0,greer001 singles. ,greer001,0,
+,21,1,greer001,,,,2,13,CBBX,garcf002,1,0,,palmr001,0,F
+,02,1,greer001,,,,3,17,FFFX,garcf002,1,0,,rodri001,0,F
+,11,1,,,,,4,3,BFX,hellr001,1,0,,hendr001,1,F
+,12,1,,,,,5,9,BCCFFX,hellr001,1,0,,guilc001,1,L
+,22,1,marte001,,,,6,14,FCBBX,hellr001,0,0,marte001 singles. ,marte001,1,
+,21,1,marte001,,,,7,18,BFBX,hellr001,1,0,,olerj001,1,F
+,11,2,,,,,8,20,FBX,garcf002,1,0,segud001 grounds out. ,segud001,0,G
+,10,2,,,,,9,22,BX,garcf002,1,0,,martd002,0,F
+,21,2,kaplg001,,,,10,26,BCBX,garcf002,0,0,kaplg001 singles. ,kaplg001,0,
+,00,2,,kaplg001,,lambm001,11,27,B,garcf002,0,0,kaplg001 steals 2B. ,lambm001,0,
+,10,2,,kaplg001,,,12,29,BX,garcf002,1,0,lambm001 grounds out. ,lambm001,0,G
+,32,2,camem001,,,,13,25,LBBFBFB,hellr001,0,0,camem001 walks. ,camem001,1,
+,00,2,camem001,,,,14,26,X,hellr001,1,0,,buhnj001,1,F
+,00,2,,,,belld002,15,27,C,hellr001,1,0,camem001 caught stealing. ,belld002,1,
+,32,2,,,,,16,35,CBBBFFFX,hellr001,1,0,,belld002,1,F
+,32,3,,,,,17,35,CBFBBX,garcf002,1,0,clayr001 grounds out. ,clayr001,0,G
+,10,3,,,,,18,37,BX,garcf002,1,0,,alicl001,0,
+,22,3,greer001,,,,19,42,CBBFX,garcf002,0,0,greer001 singles. ,greer001,0,
+,10,3,greer001,,,,20,44,BX,garcf002,1,0,,palmr001,0,F
+,22,3,wilsd001,,,,21,42,CBFFFBX,hellr001,0,0,wilsd001 singles. ,wilsd001,1,
+,22,3,wilsd001,,,,22,47,BBCFX,hellr001,1,0,,mclem001,1,F
+,00,3,wilsd001,,,,23,48,X,hellr001,1,0,,hendr001,1,F
+wilsd001 to 2B. ,10,3,guilc001,wilsd001,,,24,50,BX,hellr001,0,0,guilc001 singles. ,guilc001,1,
+,22,3,guilc001,wilsd001,,,25,55,CBCBX,hellr001,1,0,,marte001,1,F
+,32,4,rodri001,,,,26,50,FBSBBB,garcf002,0,0,rodri001 walks. ,rodri001,0,
+,11,4,rodri001,,,,27,53,BFX,garcf002,1,0,,segud001,0,F
+rodri001 to 3B. ,32,4,martd002,,rodri001,,28,59,BBFFBX,garcf002,0,0,martd002 singles. ,martd002,0,
+rodri001 scores. martd002 to 3B. ,32,4,kaplg001,,martd002,,29,65,FFBBBB,garcf002,0,1,kaplg001 walks. ,kaplg001,0,
+martd002 scores. kaplg001 out. ,11,4,lambm001,,,,30,68,CBX,garcf002,1,1,lambm001 reaches on fielder's choice. ,lambm001,0,
+,22,4,lambm001,,,,31,74,FBFFBX,garcf002,1,0,,clayr001,0,F
+olerj001 to 3B. ,10,4,,,olerj001,,32,57,BX,hellr001,0,0,olerj001 doubles. ,olerj001,1,
+,12,4,,,olerj001,,33,61,BCFC,hellr001,1,0,camem001 strikes out. ,camem001,1,
+,01,4,,,olerj001,,34,63,CX,hellr001,1,0,,buhnj001,1,
+,11,4,,,olerj001,,35,66,CBX,hellr001,1,0,,belld002,1,F
+,01,5,,,,,36,76,FX,garcf002,1,0,,alicl001,0,P
+,31,5,greer001,,,,37,81,BBCBB,garcf002,0,0,greer001 walks. ,greer001,0,
+,30,5,greer001,,,,38,85,BBBX,garcf002,1,0,,palmr001,0,F
+,00,5,greer001,,,,39,86,X,garcf002,1,0,,rodri001,0,P
+,11,5,,,,,40,69,CBX,hellr001,1,0,wilsd001 grounds out. ,wilsd001,1,G
+,10,5,mclem001,,,,41,71,BX,hellr001,0,0,mclem001 singles. ,mclem001,1,
+,11,5,mclem001,,,,42,74,BCX,hellr001,1,0,,hendr001,1,P
+,01,5,,mclem001,,guilc001,43,76,CB,hellr001,0,0,mclem001 steals 2B. ,guilc001,1,
+mclem001 scores. ,11,5,guilc001,,,,44,79,CBX,hellr001,0,1,guilc001 singles. ,guilc001,1,
+,00,5,guilc001,,,,45,80,X,hellr001,1,0,,marte001,1,P
+,21,6,segud001,,,,46,90,BBFX,garcf002,0,0,segud001 singles. ,segud001,0,
+segud001 to 2B. ,00,6,martd002,segud001,,,47,91,X,garcf002,0,0,martd002 singles. ,martd002,0,
+,32,6,martd002,segud001,,,48,97,BBFFBX,garcf002,1,0,,kaplg001,0,F
+,22,6,martd002,segud001,,,49,102,BSBFX,garcf002,1,0,,lambm001,0,L
+segud001 to 3B. martd002 to 2B. ,11,6,clayr001,martd002,segud001,,50,105,BFH,garcf002,0,0,clayr001 hit by pitch. ,clayr001,0,
+,12,6,clayr001,martd002,segud001,,51,109,BCFS,garcf002,1,0,alicl001 strikes out. ,alicl001,0,
+,11,6,,,,,52,83,CBX,hellr001,1,0,,olerj001,1,L
+,10,6,,,,,53,85,BX,hellr001,1,0,,camem001,1,F
+,01,6,,,,,54,87,FX,hellr001,1,0,buhnj001 grounds out. ,buhnj001,1,G
+,01,7,greer001,,,,56,2,CX,ramsr001,0,0,greer001 reaches on error. ,greer001,0,G
+greer001 to 3B. ,00,7,,palmr001,greer001,,57,3,X,ramsr001,0,0,palmr001 doubles. ,palmr001,0,
+,30,7,rodri001,palmr001,greer001,,58,7,BBII,ramsr001,0,0,rodri001 intentionally walks. ,rodri001,0,
+,31,7,rodri001,palmr001,greer001,,59,12,CBBBX,ramsr001,1,0,,segud001,0,F
+,22,7,rodri001,palmr001,greer001,,63,5,BBSSX,tomkb001,1,0,,cataf001,0,P
+rodri001 out. ,20,7,kaplg001,palmr001,greer001,,64,8,BBX,tomkb001,1,0,kaplg001 reaches on fielder's choice. ,kaplg001,0,
+,12,7,,belld002,,,66,91,CBCX,hellr001,0,0,belld002 doubles. ,belld002,1,
+belld002 to 3B. ,00,7,,,belld002,,67,92,X,hellr001,1,0,Sacrifice bunt by wilsd001.,wilsd001,1,
+belld002 scores. ,32,7,mclem001,,,,68,98,BFFBBX,hellr001,0,1,mclem001 singles. ,mclem001,1,
+,20,7,mclem001,,,,69,101,BBX,hellr001,1,0,,hendr001,1,
+mclem001 out. ,12,7,guilc001,,,,70,105,CCBX,hellr001,1,0,guilc001 reaches on fielder's choice. ,guilc001,1,G
+,22,8,lambm001,,,,72,9,FCFBFBFFX,rhoda001,0,0,lambm001 singles. ,lambm001,0,
+,00,8,lambm001,,,,73,10,X,rhoda001,1,0,,clayr001,0,
+,10,8,lambm001,,,,74,12,BX,rhoda001,1,0,,alicl001,0,L
+lambm001 to 2B. ,32,8,greer001,lambm001,,,75,21,CBSFBFFBB,rhoda001,0,0,greer001 walks. ,greer001,0,
+lambm001 scores. greer001 to 2B. ,01,8,palmr001,greer001,,,76,23,CX,rhoda001,0,1,palmr001 singles. ,palmr001,0,
+,10,8,palmr001,greer001,,,77,25,BX,rhoda001,1,0,,rodri001,0,P
+,10,8,,,,,78,107,BX,hellr001,1,0,marte001 grounds out. ,marte001,1,G
+,00,8,,,,,79,108,X,hellr001,1,0,,olerj001,1,F
+,31,8,camem001,,,,80,113,BBBCB,hellr001,0,0,camem001 walks. ,camem001,1,
+,11,8,camem001,,,,81,116,CBX,hellr001,1,0,,buhnj001,1,
+,22,9,,,,,83,5,CBBFX,mesaj001,1,0,,segud001,0,F
+,10,9,,,,,84,7,BX,mesaj001,1,0,grees002 grounds out. ,grees002,0,G
+,12,9,,,,,85,11,SBFS,mesaj001,1,0,kaplg001 strikes out. ,kaplg001,0,
+,11,9,,,,,87,3,CBX,wettj001,1,0,belld002 grounds out. ,belld002,1,G
+,01,9,,,,,89,5,CX,wettj001,1,0,javis001 grounds out. ,javis001,1,G
+,02,9,,,,,90,9,CCFX,wettj001,1,0,,mclem001,1,F

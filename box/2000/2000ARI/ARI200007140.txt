@@ -1,0 +1,123 @@
+version,2
+info,visteam,TEX
+info,hometeam,ARI
+info,site,PHO01
+info,date,2000/07/14
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,wendh902
+info,ump1b,clara901
+info,ump2b,buckc901
+info,ump3b,reedr901
+info,pitches,pitches
+info,temp,72
+info,winddir,torf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,149
+info,attendance,34415
+info,wp,reyna001
+info,lp,rogek001
+info,save,
+start,cataf001,"Frank Catalanotto",0,1,4
+start,greer001,"Rusty Greer",0,2,7
+start,palmr001,"Rafael Palmeiro",0,3,3
+start,rodri001,"Ivan Rodriguez",0,4,2
+start,martd002,"Dave Martinez",0,5,9
+start,lambm001,"Mike Lamb",0,6,5
+start,kaplg001,"Gabe Kapler",0,7,8
+start,clayr001,"Royce Clayton",0,8,6
+start,rogek001,"Kenny Rogers",0,9,1
+start,womat001,"Tony Womack",1,1,6
+start,bellj001,"Jay Bell",1,2,4
+start,gonzl001,"Luis Gonzalez",1,3,7
+start,willm003,"Matt D. Williams",1,4,5
+start,finls001,"Steve Finley",1,5,8
+start,colbg001,"Greg Colbrunn",1,6,3
+start,milld002,"Damian Miller",1,7,2
+start,bautd001,"Danny Bautista",1,8,9
+start,reyna001,"Armando Reynoso",1,9,1
+play,1,0,cataf001,12,CFBX,43/G
+play,1,0,greer001,32,FBBFBX,7/F7
+play,1,0,palmr001,32,BSBFBS,K
+play,1,1,womat001,12,SBFS,K
+play,1,1,bellj001,02,CFC,K/C
+play,1,1,gonzl001,31,BBBCX,S9
+play,1,1,willm003,00,X,S8.1-2
+play,1,1,finls001,02,CCS,K
+play,2,0,rodri001,00,X,9/F9
+play,2,0,martd002,12,CBFS,K
+play,2,0,lambm001,21,BBSX,8/F8
+play,2,1,colbg001,32,CBBFBS,K
+play,2,1,milld002,02,CFC,K/C
+play,2,1,bautd001,01,CX,53/G
+play,3,0,kaplg001,12,CCBX,8/F8
+play,3,0,clayr001,00,X,HR/7
+play,3,0,rogek001,00,X,S8/8S
+play,3,0,cataf001,12,FBFFX,6/P6
+play,3,0,greer001,22,CCBBFFS,K
+play,3,1,reyna001,12,BSFC,K/C
+play,3,1,womat001,22,CBSFBX,T9
+play,3,1,bellj001,00,X,63/G.3-H
+play,3,1,gonzl001,30,BBBB,W
+play,3,1,willm003,00,X,8/F8
+play,4,0,palmr001,12,SBFS,K
+play,4,0,rodri001,01,CX,9/F9
+play,4,0,martd002,22,BBFFX,S9
+play,4,0,lambm001,22,BSBFFX,43/G
+play,4,1,finls001,00,X,8/L8
+play,4,1,colbg001,02,SFX,8/F8
+play,4,1,milld002,00,X,S9
+play,4,1,bautd001,00,X,8/F8
+play,5,0,kaplg001,00,X,S
+play,5,0,clayr001,10,BX,8/F8S
+play,5,0,rogek001,01,LX,2/FL
+play,5,0,cataf001,21,BBCX,8/F8
+play,5,1,reyna001,12,SSBS,K
+play,5,1,womat001,22,CBSBX,43/G
+play,5,1,bellj001,00,X,S
+play,5,1,gonzl001,10,BX,S9.1-3
+play,5,1,willm003,31,BBFBB,W.1-2
+play,5,1,finls001,00,X,T9.3-H;2-H;1-H
+play,5,1,colbg001,00,X,7/F7D
+play,6,0,greer001,12,CBFC,K/C
+play,6,0,palmr001,22,BFSBX,5/FL
+play,6,0,rodri001,12,FBFX,43/G
+play,6,1,milld002,32,FBBSBX,S8
+play,6,1,bautd001,00,X,4/L4
+play,6,1,reyna001,00,X,E2/TH.1-2
+play,6,1,womat001,00,X,7/F7
+play,6,1,bellj001,01,FX,D7.2-H(UR);1-3
+play,6,1,gonzl001,12,FFBFFX,63/G
+play,7,0,martd002,00,X,8/F8
+play,7,0,lambm001,32,CFBBBX,63/G
+play,7,0,kaplg001,00,X,S7
+play,7,0,clayr001,01,CX,43/G
+play,7,1,willm003,02,FCX,3/FL
+play,7,1,finls001,10,BX,HR/9
+play,7,1,colbg001,31,BBCBX,53/G
+play,7,1,milld002,02,FCFFX,8/F8
+play,8,0,rogek001,00,,NP
+sub,lee-t002,"Travis Lee",1,6,3
+play,8,0,rogek001,00,,NP
+sub,grees002,"Scarborough Green",0,9,11
+play,8,0,grees002,12,FBCX,43/G
+play,8,0,cataf001,11,LBX,3/G
+play,8,0,greer001,00,X,63/G
+play,8,1,bautd001,00,,NP
+sub,crabt001,"Tim Crabtree",0,9,1
+play,8,1,bautd001,11,BFX,8/F8
+play,8,1,reyna001,31,BBBCB,W
+play,8,1,womat001,02,FCX,43/G.1-2
+play,8,1,bellj001,11,SBX,43/G
+play,9,0,palmr001,21,FBBX,9/F9
+play,9,0,rodri001,32,BBBCFX,8/F8
+play,9,0,martd002,32,CBBFBFX,S9
+play,9,0,lambm001,22,CFBFBFFFFFX,8/F8
+data,er,rogek001,5
+data,er,crabt001,0
+data,er,reyna001,1

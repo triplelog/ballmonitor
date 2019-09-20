@@ -1,0 +1,77 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,00,1,,,,,0,1,X,hudst001,1,0,deshd001 grounds out. ,deshd001,0,G
+,21,1,,,,,1,5,CBBX,hudst001,1,0,,bordm001,0,F
+,12,1,,,,,2,12,SFFFFBC,hudst001,1,0,clarw001 strikes out. ,clarw001,0,
+,02,1,,,,,3,3,CSC,ponss001,1,0,longt002 strikes out. ,longt002,1,
+,31,1,velar001,,,,4,8,BBBCB,ponss001,0,0,velar001 walks. ,velar001,1,
+,11,1,velar001,,,,5,11,BFX,ponss001,1,0,,giamj001,1,P
+,11,1,velar001,,,,6,14,BCX,ponss001,1,0,,grieb001,1,L
+,00,2,,,,,7,13,X,hudst001,1,0,,bellj002,0,F
+,20,2,,,,,8,16,BBX,hudst001,1,0,,surhb001,0,F
+,01,2,,,,,9,18,SX,hudst001,1,0,ripkc001 grounds out. ,ripkc001,0,G
+,32,2,,,,,10,21,CCFBBBS,ponss001,1,0,jahaj001 strikes out. ,jahaj001,1,
+,20,2,,,,,11,24,BBX,ponss001,1,0,,staim001,1,
+,12,2,,,,,12,28,BCFS,ponss001,1,0,tejam001 strikes out. ,tejam001,1,
+,11,3,,,,,13,21,BFX,hudst001,0,1,bainh001 homers. ,bainh001,0,
+,00,3,myerg001,,,,14,22,X,hudst001,0,0,myerg001 singles. ,myerg001,0,
+,22,3,,,,,15,28,CBLBFX,hudst001,2,0,Double Play. ,matol001,0,
+,01,3,,,,,16,30,SX,hudst001,1,0,deshd001 grounds out. ,deshd001,0,G
+,20,3,,,,,17,31,BBX,ponss001,1,0,,chave001,1,F
+,02,3,,,,,18,34,CFC,ponss001,1,0,hernr002 strikes out. ,hernr002,1,
+,00,3,longt002,,,,19,35,X,ponss001,0,0,longt002 singles. ,longt002,1,
+longt002 to 2B. ,32,3,velar001,longt002,,,20,41,BCBCBB,ponss001,0,0,velar001 walks. ,velar001,1,
+longt002 scores. velar001 to 3B. ,21,3,giamj001,,velar001,,21,45,BCBX,ponss001,0,1,giamj001 singles. ,giamj001,1,
+,12,3,giamj001,,velar001,,22,50,SFFBS,ponss001,1,0,grieb001 strikes out. ,grieb001,1,
+,11,4,,,,,23,33,BFX,hudst001,1,0,bordm001 grounds out. ,bordm001,0,G
+,01,4,,,,,24,35,FX,hudst001,1,0,,clarw001,0,F
+,00,4,,,,,25,36,X,hudst001,1,0,,bellj002,0,F
+,22,4,,,,,26,55,CBBFS,ponss001,1,0,jahaj001 strikes out. ,jahaj001,1,
+,11,4,,,,,27,58,CBX,ponss001,1,0,,staim001,1,F
+,11,4,tejam001,,,,28,61,BFX,ponss001,0,0,tejam001 singles. ,tejam001,1,
+,00,4,tejam001,,,,29,62,X,ponss001,1,0,chave001 grounds out. ,chave001,1,G
+,00,5,surhb001,,,,30,37,X,hudst001,0,0,surhb001 singles. ,surhb001,0,
+surhb001 to 3B. ,00,5,,,surhb001,ripkc001,31,38,S,hudst001,0,0,surhb001 steals 2B. ,ripkc001,0,
+surhb001 scores. ,12,5,,,,,32,43,SFFBX,hudst001,1,1,ripkc001 grounds out. ,ripkc001,0,G
+,32,5,,,,,33,49,BSCBBC,hudst001,1,0,bainh001 strikes out. ,bainh001,0,
+,22,5,myerg001,,,,34,54,FFBBX,hudst001,0,0,myerg001 singles. ,myerg001,0,
+,22,5,myerg001,,,,35,59,SCBBS,hudst001,1,0,matol001 strikes out. ,matol001,0,
+,10,5,hernr002,,,,36,64,BX,ponss001,0,0,hernr002 singles. ,hernr002,1,
+,00,5,hernr002,,,,37,65,X,ponss001,1,0,,longt002,1,F
+,32,5,hernr002,,,,38,71,BCBBCX,ponss001,1,0,,velar001,1,F
+,12,5,hernr002,,,,39,75,BCSX,ponss001,1,0,,giamj001,1,F
+,31,6,,,,,40,64,BBCBX,hudst001,1,0,,deshd001,0,F
+,22,6,bordm001,,,,41,69,CBFBX,hudst001,0,0,bordm001 singles. ,bordm001,0,
+bordm001 scores. ,00,6,,,,,42,70,X,hudst001,0,2,clarw001 homers. ,clarw001,0,
+,00,6,,,,,43,71,X,hudst001,1,0,,bellj002,0,F
+,30,6,,,,,44,75,BBBX,hudst001,1,0,,surhb001,0,F
+,11,6,,,,,45,78,CBX,ponss001,0,1,grieb001 homers. ,grieb001,1,
+,22,6,,,,,46,83,SBSBS,ponss001,1,0,jahaj001 strikes out. ,jahaj001,1,
+,11,6,staim001,,,,47,86,FBX,ponss001,0,0,staim001 singles. ,staim001,1,
+,12,6,staim001,,,,48,91,CFFBS,ponss001,1,0,tejam001 strikes out. ,tejam001,1,
+staim001 scores. ,01,6,,,,,49,93,CX,ponss001,0,2,chave001 homers. ,chave001,1,
+,12,6,,,,,50,97,SFBX,ponss001,1,0,,hernr002,1,F
+,01,7,,,,,51,77,FX,hudst001,1,0,ripkc001 grounds out. ,ripkc001,0,G
+,00,7,,,,,52,78,X,hudst001,1,0,bainh001 grounds out. ,bainh001,0,G
+,10,7,,,,,53,80,BX,hudst001,1,0,myerg001 grounds out. ,myerg001,0,G
+,02,7,,,,,54,100,CFX,ponss001,1,0,,longt002,1,
+,10,7,,,,,55,102,BX,ponss001,1,0,,velar001,1,F
+,11,7,,,,,56,105,CBX,ponss001,1,0,,giamj001,1,
+,22,8,,,,,57,85,CFBBX,hudst001,1,0,matol001 grounds out. ,matol001,0,G
+,00,8,,,,,58,86,X,hudst001,1,0,deshd001 grounds out. ,deshd001,0,G
+,32,8,,,,,59,92,CCBBBX,hudst001,0,1,bordm001 homers. ,bordm001,0,
+,00,8,clarw001,,,,60,93,X,hudst001,0,0,clarw001 singles. ,clarw001,0,
+clarw001 to 2B. ,12,8,,clarw001,,bellj002,61,97,FBFB,hudst001,0,0,Wild Pitch. ,bellj002,0,
+,22,8,,clarw001,,,62,103,FBFBFX,hudst001,1,0,bellj002 grounds out. ,bellj002,0,G
+,10,8,,,,,63,107,BX,ponss001,1,0,,grieb001,1,F
+,02,8,,,,,64,110,CSS,ponss001,1,0,jahaj001 strikes out. ,jahaj001,1,
+,30,8,,,,,65,114,BBBX,ponss001,0,1,staim001 homers. ,staim001,1,
+,32,8,tejam001,,,,66,123,BCBFFBFFB,ponss001,0,0,tejam001 walks. ,tejam001,1,
+tejam001 to 2B. ,30,8,chave001,tejam001,,,67,127,BBBB,ponss001,0,0,chave001 walks. ,chave001,1,
+tejam001 scores. chave001 scores. ,31,8,,,,,69,5,BFBBX,maduc001,0,3,hernr002 homers. ,hernr002,1,
+,32,8,longt002,,,,70,12,CBBFBFB,maduc001,0,0,longt002 walks. ,longt002,1,
+,10,8,longt002,,,,71,14,BX,maduc001,1,0,,velar001,1,F
+,21,9,surhb001,,,,74,4,CBBX,isrij001,0,0,surhb001 singles. ,surhb001,0,
+,10,9,surhb001,,,,75,6,BX,isrij001,1,0,,ripkc001,0,F
+,02,9,,surhb001,,bainh001,76,10,FFFB,isrij001,0,0,surhb001 steals 2B. ,bainh001,0,
+surhb001 to 3B. ,12,9,,,surhb001,,77,17,FFFBFFX,isrij001,1,0,bainh001 grounds out. ,bainh001,0,G
+,22,9,,,surhb001,,78,23,BFFBFS,isrij001,1,0,myerg001 strikes out. ,myerg001,0,

@@ -1,0 +1,145 @@
+version,2
+info,visteam,NYA
+info,hometeam,BOS
+info,site,BOS07
+info,date,2000/09/09
+info,number,0
+info,starttime,1:15PM
+info,daynight,day
+info,usedh,true
+info,umphome,culbf901
+info,ump1b,froeb901
+info,ump2b,wintm901
+info,ump3b,welkb901
+info,pitches,pitches
+info,temp,83
+info,winddir,tolf
+info,windspeed,12
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,188
+info,attendance,33355
+info,wp,petta001
+info,lp,martp001
+info,save,
+start,knobc001,"Chuck Knoblauch",0,1,4
+start,jeted001,"Derek Jeter",0,2,6
+start,oneip001,"Paul O'Neill",0,3,9
+start,martt002,"Tino Martinez",0,4,3
+start,justd001,"David Justice",0,5,7
+start,cansj001,"Jose Canseco",0,6,10
+start,posaj001,"Jorge Posada",0,7,2
+start,bross001,"Scott Brosius",0,8,5
+start,bellc001,"Clay Bellinger",0,9,8
+start,petta001,"Andy Pettitte",0,0,1
+start,lewid001,"Darren Lewis",1,1,9
+start,offej001,"Jose Offerman",1,2,3
+start,everc001,"Carl Everett",1,3,8
+start,garcn001,"Nomar Garciaparra",1,4,6
+start,bichd001,"Dante Bichette",1,5,10
+start,oleat001,"Troy O'Leary",1,6,7
+start,varij001,"Jason Varitek",1,7,2
+start,merll001,"Lou Merloni",1,8,5
+start,sadld001,"Donnie Sadler",1,9,4
+start,martp001,"Pedro Martinez",1,0,1
+play,1,0,knobc001,32,BCBCBB,W
+play,1,0,jeted001,22,CFBFBFFS,K
+play,1,0,oneip001,12,CBFFB,CS2(24)
+play,1,0,oneip001,32,CBFFBBS,K
+play,1,1,lewid001,22,FBBCX,9/F9
+play,1,1,offej001,32,BBBCFB,W
+play,1,1,everc001,12,BFCX,S/78.1-3
+play,1,1,garcn001,12,BFFX,54(1)3/GDP
+play,2,0,martt002,12,BCFFX,E5/TH1.B-2
+play,2,0,justd001,12,CCBS,K
+play,2,0,cansj001,22,CBCFBC,K/C
+play,2,0,posaj001,22,CBCFBS,K
+play,2,1,bichd001,11,CBX,8/F8
+play,2,1,oleat001,22,CBCBX,43/G
+play,2,1,varij001,32,CCFBBBX,S8.B-2(E8)
+play,2,1,merll001,22,BBCFX,53/G
+play,3,0,bross001,00,X,8/F8
+play,3,0,bellc001,02,CCS,K
+play,3,0,knobc001,21,BBFX,63/G
+play,3,1,sadld001,01,CX,43/G
+play,3,1,lewid001,02,CLC,K/C
+play,3,1,offej001,22,BBCCFX,S9
+play,3,1,everc001,12,CBSX,D7/7D.1-H;BX2(7354)
+play,4,0,jeted001,12,BFSX,8/F8
+play,4,0,oneip001,00,X,43/G
+play,4,0,martt002,22,BBCSFX,E3/TH
+play,4,0,justd001,10,BX,S7/7S.1-3
+play,4,0,cansj001,32,BCCBBC,K/C
+play,4,1,garcn001,11,BFX,8/F8
+play,4,1,bichd001,02,CSX,4/L4
+play,4,1,oleat001,01,SX,D7
+play,4,1,varij001,21,BCBX,8/F8
+play,5,0,posaj001,32,CBSBBFFFS,K
+play,5,0,bross001,01,CX,2/FL
+play,5,0,bellc001,00,X,8/F8
+play,5,1,merll001,21,BBFX,9/FL
+play,5,1,sadld001,22,BCFBFC,K/C
+play,5,1,lewid001,22,BCFFBS,K
+play,6,0,knobc001,22,CFBFBX,9/F9
+play,6,0,jeted001,31,BBBCX,S8/8S
+play,6,0,oneip001,00,X,46(1)3/GDP
+play,6,1,offej001,12,BCFS,K
+play,6,1,everc001,32,SBCBBX,43/G
+play,6,1,garcn001,21,BCBX,5/L5
+play,7,0,martt002,01,CX,S7/7S
+play,7,0,justd001,12,BSCX,5/FL
+play,7,0,cansj001,12,FFBX,7/F7S
+play,7,0,posaj001,32,BBCSBB,W.1-2
+play,7,0,bross001,32,SSBBBX,HR/7.2-H;1-H
+play,7,0,bellc001,12,BCFC,K/C
+play,7,1,bichd001,00,,NP
+sub,vizcj001,"Jose Vizcaino",0,1,4
+play,7,1,bichd001,12,FBFS,K
+play,7,1,oleat001,01,CX,3/G
+play,7,1,varij001,00,X,S8/8S
+play,7,1,merll001,10,BX,64(1)/FO
+play,8,0,vizcj001,00,,NP
+sub,beckr001,"Rod Beck",1,0,1
+play,8,0,vizcj001,00,X,53/BG
+play,8,0,jeted001,12,CBFX,53/G
+play,8,0,oneip001,11,FBX,63/G
+play,8,1,sadld001,00,,NP
+sub,gilkb001,"Bernard Gilkey",1,9,11
+play,8,1,gilkb001,12,BCFS,K
+play,8,1,lewid001,00,,NP
+sub,alcai001,"Israel Alcantara",1,1,11
+play,8,1,alcai001,22,BSSBX,3/P3
+play,8,1,offej001,32,BSCFBBFFFFX,63/G
+play,9,0,martt002,00,,NP
+sub,gilkb001,"Bernard Gilkey",1,9,9
+play,9,0,martt002,00,,NP
+sub,lansm001,"Mike Lansing",1,1,4
+play,9,0,martt002,21,BSBX,9/F9D
+play,9,0,justd001,31,BFBBX,D/89
+play,9,0,cansj001,00,,NP
+sub,waket001,"Tim Wakefield",1,0,1
+play,9,0,cansj001,22,CBFFFBX,HR/7.2-H
+play,9,0,posaj001,22,BCFBS,K
+play,9,0,bross001,32,FBBCBX,S7/7S
+play,9,0,bellc001,32,CBBFBB,W.1-2
+play,9,0,vizcj001,10,BX,7/F7
+play,9,1,everc001,00,,NP
+sub,justd001,"David Justice",0,5,9
+play,9,1,everc001,00,,NP
+sub,thomr004,"Ryan Thompson",0,3,7
+play,9,1,everc001,00,,NP
+sub,rivem002,"Mariano Rivera",0,0,1
+play,9,1,everc001,22,FBSBFFS,K
+play,9,1,garcn001,02,CFFC,K/C
+play,9,1,bichd001,01,FX,D7/7S
+play,9,1,oleat001,10,BX,T9/9D.2-H
+play,9,1,varij001,11,BCX,D9/9S.3-H
+play,9,1,merll001,00,,NP
+sub,cummm001,"Midre Cummings",1,8,11
+play,9,1,cummm001,22,BFSBFS,K
+data,er,petta001,1
+data,er,rivem002,2
+data,er,martp001,3
+data,er,beckr001,1
+data,er,waket001,1

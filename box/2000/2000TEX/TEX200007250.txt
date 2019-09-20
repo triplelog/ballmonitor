@@ -1,0 +1,149 @@
+version,2
+info,visteam,ANA
+info,hometeam,TEX
+info,site,ARL02
+info,date,2000/07/25
+info,number,0
+info,starttime,7:35PM
+info,daynight,night
+info,usedh,true
+info,umphome,guccc901
+info,ump1b,riekr901
+info,ump2b,emmep901
+info,ump3b,davig901
+info,pitches,pitches
+info,temp,96
+info,winddir,fromlf
+info,windspeed,9
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,187
+info,attendance,34272
+info,wp,david002
+info,lp,holtm001
+info,save,wettj001
+start,erstd001,"Darin Erstad",0,1,7
+start,stock001,"Kevin Stocker",0,2,6
+start,salmt001,"Tim Salmon",0,3,9
+start,andeg001,"Garret Anderson",0,4,8
+start,glaut001,"Troy Glaus",0,5,5
+start,molib001,"Ben Molina",0,6,2
+start,spies001,"Scott Spiezio",0,7,3
+start,kenna001,"Adam Kennedy",0,8,4
+start,baugj001,"Justin Baughman",0,9,10
+start,ethes001,"Seth Etherton",0,0,1
+start,cataf001,"Frank Catalanotto",1,1,4
+start,greer001,"Rusty Greer",1,2,7
+start,palmr001,"Rafael Palmeiro",1,3,3
+start,segud001,"David Segui",1,4,10
+start,haseb001,"Bill Haselman",1,5,2
+start,martd002,"Dave Martinez",1,6,9
+start,kaplg001,"Gabe Kapler",1,7,8
+start,lambm001,"Mike Lamb",1,8,5
+start,clayr001,"Royce Clayton",1,9,6
+start,olivd001,"Darren Oliver",1,0,1
+play,1,0,erstd001,01,CX,D/78
+play,1,0,stock001,31,BBBCX,1/BP1
+play,1,0,salmt001,32,CSBBBS,K
+play,1,0,andeg001,10,BX,S8.2-H
+play,1,0,glaut001,00,C,SB2
+play,1,0,glaut001,32,CBSBFBFFS,K
+play,1,1,cataf001,20,BBX,HR/9
+play,1,1,greer001,11,BCX,S8
+play,1,1,palmr001,12,CBFFX,HR/9.1-H
+play,1,1,segud001,32,BCFBBX,8/F8
+play,1,1,haseb001,11,CBX,9/F9
+play,1,1,martd002,12,BCFFFX,9/F9
+play,2,0,molib001,11,BCX,5/P5
+play,2,0,spies001,12,FBFX,8/F8
+play,2,0,kenna001,22,CCFFFFBBX,63/G
+play,2,1,kaplg001,31,BSBBX,5/FL
+play,2,1,lambm001,22,BFBFFX,8/F8
+play,2,1,clayr001,32,CBFFBBX,8/F8D
+play,3,0,baugj001,12,BCCX,13/G
+play,3,0,erstd001,11,BCX,5/P5
+play,3,0,stock001,00,X,7/F7
+play,3,1,cataf001,32,CCBBBFB,W
+play,3,1,greer001,00,B,SB2
+play,3,1,greer001,11,BSX,HR/8.2-H
+play,3,1,palmr001,11,CBX,8/F8
+play,3,1,segud001,00,X,8/L8
+play,3,1,haseb001,10,BX,D7/7D
+play,3,1,martd002,22,FBFFBS,K
+play,4,0,salmt001,11,BCX,HR/78
+play,4,0,andeg001,32,CBBBFX,HR/8
+play,4,0,glaut001,00,X,8/F8S
+play,4,0,molib001,22,BSBFX,S9
+play,4,0,spies001,00,X,13/G.1-2
+play,4,0,kenna001,01,CX,T9.2-H
+play,4,0,baugj001,02,SFX,43/G
+play,4,1,kaplg001,01,FX,HR/7
+play,4,1,lambm001,01,CX,5/FL
+play,4,1,clayr001,12,BFCX,D/89D
+play,4,1,cataf001,00,,NP
+sub,fyhrm001,"Mike Fyhrie",0,0,1
+play,4,1,cataf001,01,SX,43/G.2-3
+play,4,1,greer001,31,BCBBX,63/G
+play,5,0,erstd001,32,CSFBBBFX,T9/9S
+play,5,0,stock001,10,BX,53/G
+play,5,0,salmt001,10,BX,S8.3-H
+play,5,0,andeg001,00,X,5/FL
+play,5,0,glaut001,32,CBBBCFB,W.1-2
+play,5,0,molib001,00,,NP
+sub,cordf002,"Francisco Cordero",1,0,1
+play,5,0,molib001,11,CBX,46(1)/FO.2-3
+play,5,1,palmr001,10,BX,43/G
+play,5,1,segud001,21,BSBX,3/G
+play,5,1,haseb001,12,CFBFX,5/P5
+play,6,0,spies001,20,BBX,S8
+play,6,0,kenna001,22,BCBSS,K
+play,6,0,baugj001,00,,NP
+sub,palmo001,"Orlando Palmeiro",0,9,11
+play,6,0,palmo001,00,,NP
+sub,david002,"Doug Davis",1,0,1
+play,6,0,palmo001,21,CBBX,43/G.1-2
+play,6,0,erstd001,00,X,S/78S.2-H
+play,6,0,stock001,31,BCBBB,W.1-2
+play,6,0,salmt001,12,BFSS,K
+play,6,1,martd002,00,X,7/F7
+play,6,1,kaplg001,22,CCFBBFFFS,K
+play,6,1,lambm001,01,FX,43/G
+play,7,0,andeg001,31,BBBCX,9/F9
+play,7,0,glaut001,22,BBSCFC,K/C
+play,7,0,molib001,01,CX,3/FL
+play,7,1,clayr001,22,CBFBS,K
+play,7,1,cataf001,02,CCX,5/FL
+play,7,1,greer001,00,,NP
+sub,holtm001,"Mike Holtz",0,0,1
+play,7,1,greer001,21,CBBX,3/G
+play,8,0,spies001,02,FSX,2/FL
+play,8,0,kenna001,22,BCBFFX,63/G
+play,8,0,palmo001,00,,NP
+sub,cleme001,"Edgard Clemente",0,9,11
+play,8,0,cleme001,02,FCS,K
+play,8,1,palmr001,22,BFBFFX,7/F7
+play,8,1,segud001,22,BBFCX,S7/7S
+play,8,1,haseb001,00,,NP
+sub,grees002,"Scarborough Green",1,4,12
+play,8,1,haseb001,00,,NP
+sub,petkm001,"Mark Petkovsek",0,0,1
+play,8,1,haseb001,10,BX,S7/7S.1-H(E7/TH);B-3
+play,8,1,martd002,30,IIII,IW
+play,8,1,kaplg001,01,FX,T7/7D.3-H;1-H
+play,8,1,lambm001,31,FBBBX,FC6.3XH(62);B-1#
+play,8,1,clayr001,00,X,64(1)/FO
+play,9,0,erstd001,00,,NP
+sub,wettj001,"John Wetteland",1,0,1
+play,9,0,erstd001,21,BCBX,8/F8D
+play,9,0,stock001,32,CCBBBB,W
+play,9,0,salmt001,01,SX,7/L7
+play,9,0,andeg001,00,X,43/G
+data,er,ethes001,6
+data,er,fyhrm001,0
+data,er,holtm001,1
+data,er,petkm001,2
+data,er,olivd001,5
+data,er,cordf002,1
+data,er,david002,0
+data,er,wettj001,0

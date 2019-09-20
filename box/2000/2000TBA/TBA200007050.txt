@@ -1,0 +1,145 @@
+version,2
+info,visteam,DET
+info,hometeam,TBA
+info,site,STP01
+info,date,2000/07/05
+info,number,0
+info,starttime,7:15PM
+info,daynight,night
+info,usedh,true
+info,umphome,barkl901
+info,ump1b,craft901
+info,ump2b,younl901
+info,ump3b,klemj901
+info,pitches,pitches
+info,temp,72
+info,winddir,tolf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,178
+info,attendance,14934
+info,wp,rekab001
+info,lp,weavj002
+info,save,hernr001
+start,beckr002,"Rich Becker",0,1,9
+start,ausmb001,"Brad Ausmus",0,2,2
+start,higgb001,"Bobby Higginson",0,3,7
+start,gonzj002,"Juan Gonzalez",0,4,10
+start,palmd002,"Dean Palmer",0,5,5
+start,easld001,"Damion Easley",0,6,4
+start,fickr001,"Robert Fick",0,7,3
+start,encaj001,"Juan Encarnacion",0,8,8
+start,cruzd001,"Deivi Cruz",0,9,6
+start,weavj002,"Jeff Weaver",0,0,1
+start,winnr001,"Randy Winn",1,1,8
+start,willg001,"Gerald Williams",1,2,10
+start,tramb001,"Bubba Trammell",1,3,7
+start,mcgrf001,"Fred McGriff",1,4,3
+start,smitr003,"Bobby Smith",1,5,4
+start,castv001,"Vinny Castilla",1,6,5
+start,guilj001,"Jose Guillen",1,7,9
+start,difem001,"Mike DiFelice",1,8,2
+start,guilo001,"Ozzie Guillen",1,9,6
+start,rekab001,"Bryan Rekar",1,0,1
+play,1,0,beckr002,20,BBX,8/F8
+play,1,0,ausmb001,22,SCBBFX,63/G
+play,1,0,higgb001,32,BBBCFFX,S7
+play,1,0,gonzj002,01,FX,13/G
+play,1,1,winnr001,01,CX,3/G
+play,1,1,willg001,21,BBFX,53/G
+play,1,1,tramb001,31,BBBCB,W
+play,1,1,mcgrf001,31,BCBBB,W.1-2
+play,1,1,smitr003,32,CBBCBX,9/F9
+play,2,0,palmd002,11,CBX,43/G
+play,2,0,easld001,22,BBCSX,HR/8
+play,2,0,fickr001,12,BCCX,D7
+play,2,0,encaj001,12,SFBX,63/G.2-3
+play,2,0,cruzd001,12,CSBX,1/G
+play,2,1,castv001,12,CFBX,S
+play,2,1,guilj001,32,BFBSBX,3/FL
+play,2,1,difem001,12,CSBFS,K
+play,2,1,guilo001,32,BBCBCX,7/F7
+play,3,0,beckr002,32,BCFBBS,K+PB.B-1
+play,3,0,ausmb001,10,BX,9/F9
+play,3,0,higgb001,00,X,7/F7
+play,3,0,gonzj002,32,BBSBSX,S8.1-3
+play,3,0,palmd002,00,X,9/F9
+play,3,1,winnr001,12,LBSFS,K
+play,3,1,willg001,32,CBBBFB,W
+play,3,1,tramb001,22,BBFCFC,K/C
+play,3,1,mcgrf001,11,CBX,S8.1-3
+play,3,1,smitr003,22,SBCBX,S.3-H;1-2
+play,3,1,castv001,00,,NP
+sub,cairm001,"Miguel Cairo",1,5,12
+play,3,1,castv001,00,,NP
+sub,halts001,"Shane Halter",0,7,3
+play,3,1,castv001,00,H,HP.2-3;1-2
+play,3,1,guilj001,01,SX,54(1)/FO
+play,4,0,easld001,00,,NP
+sub,cairm001,"Miguel Cairo",1,5,4
+play,4,0,easld001,32,BCSBBX,2/FL
+play,4,0,halts001,32,FSBBBX,E6/TH.B-2
+play,4,0,encaj001,01,FX,4/L4
+play,4,0,cruzd001,00,X,53/G
+play,4,1,difem001,32,BBCFBFFX,S7
+play,4,1,guilo001,12,CFBX,D9.1-3
+play,4,1,winnr001,32,BBBCCX,3/G
+play,4,1,willg001,02,FFFX,FC5.3XH(52);2-3;B-1#
+play,4,1,tramb001,10,BX,4/P4
+play,5,0,beckr002,10,BX,S9
+play,5,0,ausmb001,02,CLFX,6/P6
+play,5,0,higgb001,20,BBX,4/P4
+play,5,0,gonzj002,32,BFBBFFX,4/L4
+play,5,1,mcgrf001,01,FX,8/F8
+play,5,1,cairm001,32,SCFBBBX,43/G
+play,5,1,castv001,00,X,53/G
+play,6,0,palmd002,12,FFBX,43/G
+play,6,0,easld001,01,SX,63/G
+play,6,0,halts001,32,BCFBBS,K
+play,6,1,guilj001,22,BCCBS,K
+play,6,1,difem001,32,BBFBCB,W
+play,6,1,guilo001,01,FX,HR/9.1-H
+play,6,1,winnr001,02,CFX,S
+play,6,1,willg001,00,,NP
+sub,andem002,"Matt Anderson",0,0,1
+play,6,1,willg001,12,BCCX,53/G.1-2
+play,6,1,tramb001,00,X,43/G
+play,7,0,encaj001,32,BSBBFX,S7
+play,7,0,cruzd001,00,X,7/F7D
+play,7,0,beckr002,22,BFBSX,S8.1-3
+play,7,0,ausmb001,00,,NP
+sub,mecij001,"Jim Mecir",1,0,1
+play,7,0,ausmb001,00,X,54(1)3/GDP
+play,7,1,mcgrf001,00,X,S8
+play,7,1,cairm001,00,X,13/SH.1-2
+play,7,1,castv001,00,X,7/F7D
+play,7,1,guilj001,02,FSS,K
+play,8,0,higgb001,21,CBBX,8/F8
+play,8,0,gonzj002,22,BBSCX,E6/G
+play,8,0,palmd002,22,BCSBX,3/FL
+play,8,0,easld001,11,BSX,63/G
+play,8,1,difem001,00,,NP
+sub,pattd001,"Danny Patterson",0,0,1
+play,8,1,difem001,21,BBCX,E5/G
+play,8,1,guilo001,00,X,63/G.1-2
+play,8,1,winnr001,02,CFS,K
+play,8,1,willg001,12,SSFBFX,S7.2-H(UR)
+play,8,1,tramb001,11,BCX,7/F7
+play,9,0,halts001,00,,NP
+sub,martf001,"Felix Martinez",1,9,6
+play,9,0,halts001,00,,NP
+sub,polol001,"Luis Polonia",0,7,11
+play,9,0,polol001,00,,NP
+sub,hernr001,"Roberto Hernandez",1,0,1
+play,9,0,polol001,22,BBCFX,63/G
+play,9,0,encaj001,21,BCBX,S8/8S
+play,9,0,cruzd001,11,CBX,7/F7
+play,9,0,beckr002,22,BBCCC,K/C
+data,er,weavj002,3
+data,er,andem002,0
+data,er,pattd001,0
+data,er,rekab001,1
+data,er,mecij001,0
+data,er,hernr001,0

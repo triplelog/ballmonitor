@@ -1,0 +1,135 @@
+version,2
+info,visteam,MIN
+info,hometeam,CLE
+info,site,CLE08
+info,date,2000/07/02
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,schrp901
+info,ump1b,timmt901
+info,ump2b,mcclt901
+info,ump3b,cuzzp901
+info,pitches,pitches
+info,temp,82
+info,winddir,ltor
+info,windspeed,14
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,155
+info,attendance,43181
+info,wp,finlc001
+info,lp,maysj001
+info,save,
+start,canij001,"Jay Canizaro",0,1,4
+start,hockd001,"Denny Hocking",0,2,8
+start,cummm001,"Midre Cummings",0,3,9
+start,coomr001,"Ron Coomer",0,4,3
+start,huskb001,"Butch Huskey",0,5,10
+start,lawtm002,"Matt Lawton",0,6,7
+start,moelc001,"Chad Moeller",0,7,2
+start,maxwj001,"Jason Maxwell",0,8,5
+start,guzmc001,"Cristian Guzman",0,9,6
+start,maysj001,"Joe Mays",0,0,1
+start,alomr001,"Roberto Alomar",1,1,4
+start,vizqo001,"Omar Vizquel",1,2,6
+start,leder001,"Ricky Ledee",1,3,9
+start,thomj002,"Jim Thome",1,4,3
+start,sexsr001,"Richie Sexson",1,5,7
+start,wilse001,"Enrique Wilson",1,6,5
+start,branr001,"Russell Branyan",1,7,10
+start,loftk001,"Kenny Lofton",1,8,8
+start,diaze002,"Einar Diaz",1,9,2
+start,finlc001,"Chuck Finley",1,0,1
+play,1,0,canij001,02,CFC,K/C
+play,1,0,hockd001,22,FBBSX,63/G
+play,1,0,cummm001,21,BBSX,43/G
+play,1,1,alomr001,11,BCX,S8
+play,1,1,vizqo001,21,BBCX,S/78.1-3
+play,1,1,leder001,00,X,S9.3-H;1-3
+play,1,1,thomj002,12,CBCX,9/SF.3-H
+play,1,1,sexsr001,11,SBX,S8.1-3
+play,1,1,wilse001,01,CX,S7.3-H;1-2
+play,1,1,branr001,22,BSSBFFX,8/F8
+play,1,1,loftk001,22,CFBBX,7/F7S
+play,2,0,coomr001,00,X,43/G
+play,2,0,huskb001,12,BFCFS,K
+play,2,0,lawtm002,31,BBBCX,43/G
+play,2,1,diaze002,21,BSBX,S
+play,2,1,alomr001,32,LBLBBX,16(1)3/GDP
+play,2,1,vizqo001,11,CBX,E4/G.BX2(83)
+play,3,0,moelc001,31,BBBCX,8/F8D
+play,3,0,maxwj001,22,BFBCX,S9
+play,3,0,guzmc001,10,BX,43/G.1-2
+play,3,0,canij001,22,BSSBX,53/G
+play,3,1,leder001,11,CBX,3/G
+play,3,1,thomj002,30,BBBB,W
+play,3,1,sexsr001,32,SBSBBB,W.1-2
+play,3,1,wilse001,00,X,S9/9S.2-H;1-3
+play,3,1,branr001,00,X,6/P6
+play,3,1,loftk001,00,X,S9.3-H;1-2
+play,3,1,diaze002,31,BBBCX,43/G
+play,4,0,hockd001,32,BBBCCS,K
+play,4,0,cummm001,02,CFS,K
+play,4,0,coomr001,02,CCX,43/G
+play,4,1,alomr001,00,,NP
+sub,santj003,"Johan Santana",0,0,1
+play,4,1,alomr001,02,CSX,8/F8
+play,4,1,vizqo001,01,CX,7/L7
+play,4,1,leder001,22,BBCSS,K
+play,5,0,huskb001,11,CBX,4/P4
+play,5,0,lawtm002,12,CBFC,K/C
+play,5,0,moelc001,10,BX,S9
+play,5,0,maxwj001,32,BBFCBB,W.1-2
+play,5,0,guzmc001,11,SBX,4/L4
+play,5,1,thomj002,11,BSX,31/G
+play,5,1,sexsr001,31,BBBCB,W
+play,5,1,wilse001,10,BX,54(1)3/GDP
+play,6,0,canij001,00,X,D7/7D
+play,6,0,hockd001,12,CBCS,K
+play,6,0,cummm001,11,BFX,S8.2-H
+play,6,0,coomr001,10,BX,9/F9S
+play,6,0,huskb001,22,CBBFX,S.1-2
+play,6,0,lawtm002,11,BFX,53/G
+play,6,1,branr001,32,BSBFBB,W
+play,6,1,loftk001,30,BBBB,W.1-2
+play,6,1,diaze002,21,BBCX,34/SH.2-3;1-2
+play,6,1,alomr001,00,,NP
+sub,millt001,"Travis Miller",0,0,1
+play,6,1,alomr001,00,X,4/L4
+play,6,1,vizqo001,21,CBBX,S8.3-H;2-H
+play,6,1,leder001,21,BBFX,8/F8
+play,7,0,moelc001,00,,NP
+sub,cabrj002,"Jolbert Cabrera",1,2,6
+play,7,0,moelc001,10,BX,8/F8
+play,7,0,maxwj001,11,CBX,S8
+play,7,0,guzmc001,00,X,4/P4
+play,7,0,canij001,01,FX,53/G
+play,7,1,thomj002,21,FBBX,S
+play,7,1,sexsr001,12,FFBFX,63/G.1-2
+play,7,1,wilse001,22,SBFBS,K
+play,7,1,branr001,00,,NP
+sub,ramia002,"Alex Ramirez",1,7,11
+play,7,1,ramia002,12,FBSX,8/F8
+play,8,0,hockd001,00,,NP
+sub,speij001,"Justin Speier",1,0,1
+play,8,0,hockd001,12,BFCX,43/G
+play,8,0,cummm001,01,FX,7/F7S
+play,8,0,coomr001,22,BBFFX,53/G
+play,8,1,loftk001,00,,NP
+sub,carrh001,"Hector Carrasco",0,0,1
+play,8,1,loftk001,00,X,31/G
+play,8,1,diaze002,12,BFFS,K
+play,8,1,alomr001,32,BBFSBX,S
+play,8,1,cabrj002,02,SFX,8/F8D
+play,9,0,huskb001,32,BBCFBFX,9/F9S
+play,9,0,lawtm002,21,BBCX,8/F8
+play,9,0,moelc001,01,CX,63/G
+data,er,maysj001,5
+data,er,santj003,2
+data,er,millt001,0
+data,er,carrh001,0
+data,er,finlc001,1
+data,er,speij001,0

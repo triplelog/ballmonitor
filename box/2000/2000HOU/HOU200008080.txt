@@ -1,0 +1,160 @@
+version,2
+info,visteam,NYN
+info,hometeam,HOU
+info,site,HOU03
+info,date,2000/08/08
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,clara901
+info,ump1b,buckc901
+info,ump2b,reedr901
+info,ump3b,wendh902
+info,pitches,pitches
+info,temp,72
+info,winddir,rtol
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,175
+info,attendance,38031
+info,wp,poweb001
+info,lp,leita001
+info,save,
+start,agbab001,"Benny Agbayani",0,1,7
+start,belld001,"Derek Bell",0,2,9
+start,ventr001,"Robin Ventura",0,3,5
+start,zeilt001,"Todd Zeile",0,4,3
+start,paytj001,"Jay Payton",0,5,8
+start,abbok002,"Kurt Abbott",0,6,4
+start,pratt001,"Todd Pratt",0,7,2
+start,bordm001,"Mike Bordick",0,8,6
+start,leita001,"Al Leiter",0,9,1
+start,lugoj001,"Julio Lugo",1,1,4
+start,berkl001,"Lance Berkman",1,2,7
+start,bagwj001,"Jeff Bagwell",1,3,3
+start,hidar001,"Richard Hidalgo",1,4,8
+start,aloum001,"Moises Alou",1,5,9
+start,trubc001,"Chris Truby",1,6,5
+start,euset001,"Tony Eusebio",1,7,2
+start,bogat001,"Tim Bogar",1,8,6
+start,poweb001,"Brian Powell",1,9,1
+play,1,0,agbab001,11,BFX,63/G
+play,1,0,belld001,00,X,43/G
+play,1,0,ventr001,12,BCCS,K
+play,1,1,lugoj001,01,CX,E6/TH1
+play,1,1,berkl001,31,BBCBB,W.1-2
+play,1,1,bagwj001,10,BX,S/78.2-H(UR);1-2
+play,1,1,hidar001,11,BCX,D7.2-H;1-3
+play,1,1,aloum001,32,BBBCCFX,9/F9
+play,1,1,trubc001,02,CFX,3/G.3-H(UR);2-3
+play,1,1,euset001,10,BX,63/G
+play,2,0,zeilt001,21,CBBX,53/G
+play,2,0,paytj001,21,BFBX,7/F7
+play,2,0,abbok002,22,FFBBX,7/F7S
+play,2,1,bogat001,02,FCS,K23
+play,2,1,poweb001,00,X,D7/7D
+play,2,1,lugoj001,00,X,3/P3
+play,2,1,berkl001,22,FBBCX,T8/8D.2-H
+play,2,1,bagwj001,22,FBSBX,53/G
+play,3,0,pratt001,12,CFBC,K/C
+play,3,0,bordm001,11,CBX,D7/7S
+play,3,0,leita001,12,CCBX,43/G.2-3
+play,3,0,agbab001,11,BCX,6/P6
+play,3,1,hidar001,32,BFFBBX,6/P6
+play,3,1,aloum001,32,SBFBFBX,53/G
+play,3,1,trubc001,32,CFBFBBX,63/G
+play,4,0,belld001,22,CFBBFX,5/P5
+play,4,0,ventr001,31,BBBCB,W
+play,4,0,zeilt001,01,CX,6/P6
+play,4,0,paytj001,30,BBBX,7/F7D
+play,4,1,euset001,32,BCSBBB,W
+play,4,1,bogat001,20,BBX,54(1)3/GDP
+play,4,1,poweb001,12,CSBFX,43/G
+play,5,0,abbok002,10,BX,4/FL
+play,5,0,pratt001,20,BBX,7/F7
+play,5,0,bordm001,01,CX,S8/8S
+play,5,0,leita001,00,X,8/F8
+play,5,1,lugoj001,11,CBX,7/F7
+play,5,1,berkl001,21,BFBX,63/G
+play,5,1,bagwj001,02,CFX,S/78
+play,5,1,hidar001,01,CB,SB2
+play,5,1,hidar001,22,CBBFX,D7.2-H
+play,5,1,aloum001,11,BFX,1/L1
+play,6,0,agbab001,20,BBX,HR/7
+play,6,0,belld001,00,X,53/G
+play,6,0,ventr001,01,CX,43/G
+play,6,0,zeilt001,01,FX,S7
+play,6,0,paytj001,10,BX,8/F8
+play,6,1,trubc001,00,,NP
+sub,mahop001,"Pat Mahomes",0,9,1
+play,6,1,trubc001,32,BFBSBS,K
+play,6,1,euset001,20,BBX,S7
+play,6,1,bogat001,11,CBX,S9.1-3
+play,6,1,poweb001,32,CBLFBBB,W.1-2
+play,6,1,lugoj001,32,BFBSBB,W.3-H;2-3;1-2
+play,6,1,berkl001,01,FX,36(1)/FO.3-H;2-3
+play,6,1,bagwj001,22,BCFBB,SB2
+play,6,1,bagwj001,32,BCFBBFB,W
+play,6,1,hidar001,12,BCSB,WP.3-H;2-3;1-2
+play,6,1,hidar001,22,BCSBS,K
+com,"$the roof was opened"
+play,7,0,abbok002,22,BCSFBFX,3/FL
+play,7,0,pratt001,00,X,9/F9
+play,7,0,bordm001,10,BX,D7
+play,7,0,mahop001,00,,NP
+sub,tramb001,"Bubba Trammell",0,9,11
+play,7,0,tramb001,32,BCBFBFS,K
+play,7,1,aloum001,00,,NP
+sub,mcewj001,"Joe McEwing",0,8,4
+play,7,1,aloum001,00,,NP
+sub,abbok002,"Kurt Abbott",0,6,6
+play,7,1,aloum001,00,,NP
+sub,whitr002,"Rick White",0,9,1
+play,7,1,aloum001,22,FBBSFC,K/C
+play,7,1,trubc001,12,SBFX,S/78
+play,7,1,euset001,31,BBCBX,D8/8D.1-H
+play,7,1,bogat001,01,CX,53/G
+play,7,1,poweb001,00,,NP
+sub,wardd002,"Daryle Ward",1,9,11
+play,7,1,wardd002,22,BSSFBX,5/FL
+play,8,0,agbab001,00,,NP
+sub,powej001,"Jay Powell",1,9,1
+play,8,0,agbab001,02,CCX,S8
+play,8,0,belld001,00,,NP
+sub,harrl001,"Lenny Harris",0,2,11
+play,8,0,harrl001,12,BFCS,K
+play,8,0,ventr001,00,,NP
+sub,franm001,"Matt Franco",0,3,11
+play,8,0,franm001,02,FFX,S9/9S.1-2
+play,8,0,zeilt001,22,CBSFBFFFS,K
+play,8,0,paytj001,01,FX,3/FL
+play,8,1,lugoj001,00,,NP
+sub,harrl001,"Lenny Harris",0,2,9
+play,8,1,lugoj001,00,,NP
+sub,franm001,"Matt Franco",0,3,5
+play,8,1,lugoj001,00,X,53/G
+play,8,1,berkl001,32,CBFBFFBFB,W
+play,8,1,bagwj001,22,CCBBX,E4/TH.1-2
+play,8,1,hidar001,11,BFX,7/F7
+play,8,1,aloum001,00,,NP
+sub,barkg001,"Glen Barker",1,5,11
+play,8,1,barkg001,22,BFBFC,K/C
+play,9,0,abbok002,00,,NP
+sub,hidar001,"Richard Hidalgo",1,4,9
+play,9,0,abbok002,00,,NP
+sub,barkg001,"Glen Barker",1,5,8
+play,9,0,abbok002,12,SBSC,K/C
+play,9,0,pratt001,10,BX,S8/8S
+play,9,0,mcewj001,01,FX,S9.1-2
+play,9,0,whitr002,00,X,S7.2-3;1-2
+play,9,0,agbab001,20,BBX,S7.3-H;2-H;1X3(75);B-2(TH3)
+com,"originally scored as double"
+play,9,0,harrl001,01,FX,9/F9
+data,er,leita001,3
+data,er,mahop001,3
+data,er,whitr002,1
+data,er,poweb001,1
+data,er,powej001,2

@@ -1,0 +1,155 @@
+version,2
+info,visteam,PIT
+info,hometeam,MIL
+info,site,MIL05
+info,date,2000/09/24
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,false
+info,umphome,craft901
+info,ump1b,mckej901
+info,ump2b,fleta901
+info,ump3b,morrd901
+info,pitches,pitches
+info,temp,52
+info,winddir,ltor
+info,windspeed,15
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,181
+info,attendance,26186
+info,wp,leskc001
+info,lp,willm005
+info,save,
+start,browa001,"Adrian Brown",0,1,8
+start,kendj001,"Jason Kendall",0,2,2
+start,gileb002,"Brian Giles",0,3,7
+start,vandj001,"John Vander Wal",0,4,9
+start,younk001,"Kevin Young",0,5,3
+start,morrw001,"Warren Morris",0,6,4
+start,wehnj001,"John Wehner",0,7,5
+start,mearp001,"Pat Meares",0,8,6
+start,ritct001,"Todd Ritchie",0,9,1
+start,grism001,"Marquis Grissom",1,1,8
+start,lorem001,"Mark Loretta",1,2,6
+start,jenkg001,"Geoff Jenkins",1,3,7
+start,sexsr001,"Richie Sexson",1,4,3
+start,burnj001,"Jeromy Burnitz",1,5,9
+start,hernj001,"Jose Hernandez",1,6,5
+start,lopel002,"Luis Lopez",1,7,4
+start,blanh001,"Henry Blanco",1,8,2
+start,haynj001,"Jimmy Haynes",1,9,1
+play,1,0,browa001,12,CFFBS,K
+play,1,0,kendj001,12,CBFX,7/F7
+play,1,0,gileb002,10,BX,13/G
+play,1,1,grism001,10,BX,63/G
+play,1,1,lorem001,21,BCBX,7/F7
+play,1,1,jenkg001,31,BBBFB,W
+play,1,1,sexsr001,01,SX,163/G
+play,2,0,vandj001,01,CX,3/G
+play,2,0,younk001,11,BSX,53/G
+play,2,0,morrw001,32,BCFBBB,W
+play,2,0,wehnj001,22,CBFBFB,CS2(24)
+play,2,1,burnj001,21,CBBX,3/G
+play,2,1,hernj001,12,CFFBX,13/G
+play,2,1,lopel002,12,SBSX,5/FL
+play,3,0,wehnj001,12,BCFX,7/F7
+play,3,0,mearp001,01,CX,63/G
+play,3,0,ritct001,10,BX,9/F9
+play,3,1,blanh001,00,X,HR/7
+play,3,1,haynj001,00,X,4/P4
+play,3,1,grism001,31,BBCBB,W
+play,3,1,lorem001,11,FBB,WP.1-2
+play,3,1,lorem001,32,FBBFBX,8/F8
+play,3,1,jenkg001,11,BSX,9/F9
+play,4,0,browa001,10,BX,5/FL
+play,4,0,kendj001,22,CBBCFS,K
+play,4,0,gileb002,22,BBCCFC,K/C
+play,4,1,sexsr001,02,SSS,K
+play,4,1,burnj001,12,BCFC,K/C
+play,4,1,hernj001,00,X,3/FL
+play,5,0,vandj001,11,BSX,S
+play,5,0,younk001,00,X,S7.1-2
+play,5,0,morrw001,02,FSX,D/89.2-H;1-H
+play,5,0,wehnj001,22,FFBFBX,43/G.2-3
+play,5,0,mearp001,32,BBBCFB,W
+play,5,0,ritct001,31,BBBCX,16(1)3/GDP
+play,5,1,lopel002,12,CBFX,3/G
+play,5,1,blanh001,21,BFBX,4/P4
+play,5,1,haynj001,11,FBX,S7
+play,5,1,grism001,22,BFSBS,K
+play,6,0,browa001,11,CBX,43/G
+play,6,0,kendj001,31,BBBCB,W
+play,6,0,gileb002,32,BCBBFB,W.1-2
+play,6,0,vandj001,32,BCBBCX,S9.2-H;1-3
+play,6,0,younk001,32,BBCFBFX,53/G.3-H;1-2
+play,6,0,morrw001,00,X,S9/9S.2-H
+play,6,0,wehnj001,00,,NP
+sub,stule001,"Everett Stull",1,9,1
+play,6,0,wehnj001,22,FBBFFS,K
+play,6,1,lorem001,22,BBCCX,S/78
+play,6,1,jenkg001,32,FBBCBX,S7.1-2
+play,6,1,sexsr001,12,FBCFX,S7.2-H;1-2
+play,6,1,burnj001,12,SBFFC,K/C
+play,6,1,hernj001,10,BX,S7/7S.2-H;1-3;B-2(E7/TH)
+play,6,1,lopel002,00,,NP
+sub,loisr001,"Rich Loiselle",0,7,1
+play,6,1,lopel002,00,,NP
+sub,benjm001,"Mike Benjamin",0,9,5
+play,6,1,lopel002,10,BX,S9.3-H;2-H
+play,6,1,blanh001,10,BS,CS2(24)
+play,6,1,blanh001,32,BSBFBX,D7
+play,6,1,stule001,00,,NP
+sub,houst001,"Tyler Houston",1,9,11
+play,6,1,houst001,30,IIII,IW
+play,6,1,grism001,31,BCBBB,W.2-3;1-2
+play,6,1,lorem001,02,CFX,64(1)/FO
+play,7,0,mearp001,00,,NP
+sub,delov001,"Valerio De Los Santos",1,9,1
+play,7,0,mearp001,11,BFX,3/FL
+play,7,0,benjm001,12,SBSX,S8
+play,7,0,browa001,32,BSBBSFFX,9/F9
+play,7,0,kendj001,32,BBBFSX,63/G
+play,7,1,jenkg001,00,,NP
+sub,browe001,"Emil Brown",0,7,8
+play,7,1,jenkg001,00,,NP
+sub,wilkm001,"Marc Wilkins",0,1,1
+play,7,1,jenkg001,10,BX,63/G
+play,7,1,sexsr001,32,BBSFBS,K
+play,7,1,burnj001,30,BBBB,W
+play,7,1,hernj001,00,X,53/G
+play,8,0,gileb002,00,,NP
+sub,kingr001,"Ray King",1,9,1
+play,8,0,gileb002,22,BCBCX,9/F9
+play,8,0,vandj001,01,CX,13/G
+play,8,0,younk001,22,BCBFX,4/P4
+play,8,1,lopel002,12,BFFX,5/P5
+play,8,1,blanh001,12,CBCX,5/L5
+play,8,1,kingr001,00,,NP
+sub,sweem001,"Mark Sweeney",1,9,11
+play,8,1,sweem001,00,X,8/F8
+play,9,0,morrw001,00,,NP
+sub,leskc001,"Curtis Leskanic",1,9,1
+play,9,0,morrw001,12,CBFS,K
+play,9,0,browe001,12,CBSFX,63/G
+play,9,0,mearp001,21,BBCX,8/F8
+play,9,1,grism001,00,,NP
+sub,nunea001,"Abraham O. Nunez",0,1,6
+play,9,1,grism001,00,,NP
+sub,willm005,"Mike Williams",0,8,1
+play,9,1,grism001,30,BBBB,W
+play,9,1,lorem001,00,X,54/SH.1-2
+play,9,1,jenkg001,32,BFBSBC,K/C
+play,9,1,sexsr001,32,BSBBCB,W
+play,9,1,burnj001,22,FBSFBX,HR/9.2-H;1-H
+data,er,ritct001,5
+data,er,loisr001,0
+data,er,wilkm001,0
+data,er,willm005,3
+data,er,haynj001,5
+data,er,stule001,0
+data,er,delov001,0
+data,er,kingr001,0
+data,er,leskc001,0

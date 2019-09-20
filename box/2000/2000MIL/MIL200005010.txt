@@ -1,0 +1,154 @@
+version,2
+info,visteam,HOU
+info,hometeam,MIL
+info,site,MIL05
+info,date,2000/05/01
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,mckej901
+info,ump1b,danlk901
+info,ump2b,fleta901
+info,ump3b,morrd901
+info,pitches,pitches
+info,temp,57
+info,winddir,ltor
+info,windspeed,7
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,182
+info,attendance,7247
+info,wp,doteo001
+info,lp,woods001
+info,save,
+start,biggc001,"Craig Biggio",0,1,4
+start,ceder001,"Roger Cedeno",0,2,8
+start,bagwj001,"Jeff Bagwell",0,3,3
+start,camik001,"Ken Caminiti",0,4,5
+start,wardd002,"Daryle Ward",0,5,7
+start,hidar001,"Richard Hidalgo",0,6,9
+start,melum001,"Mitch Meluskey",0,7,2
+start,bogat001,"Tim Bogar",0,8,6
+start,doteo001,"Octavio Dotel",0,9,1
+start,bellr002,"Ron Belliard",1,1,4
+start,lorem001,"Mark Loretta",1,2,6
+start,burnj001,"Jeromy Burnitz",1,3,9
+start,jenkg001,"Geoff Jenkins",1,4,7
+start,grism001,"Marquis Grissom",1,5,8
+start,houst001,"Tyler Houston",1,6,2
+start,hernj001,"Jose Hernandez",1,7,5
+start,barkk001,"Kevin Barker",1,8,3
+start,woods001,"Steve Woodard",1,9,1
+play,1,0,biggc001,12,FFBS,K
+play,1,0,ceder001,22,CSBFBX,43/G
+play,1,0,bagwj001,21,BBCX,63/G
+play,1,1,bellr002,12,BCCX,9/L9
+play,1,1,lorem001,02,CCS,K
+play,1,1,burnj001,22,FBFFFFBS,K
+play,2,0,camik001,32,FFBBBFX,9/F9
+play,2,0,wardd002,22,CBBFS,K
+play,2,0,hidar001,22,BFSBX,S
+play,2,0,melum001,10,BX,HR/9.1-H
+play,2,0,bogat001,00,X,53/G
+play,2,1,jenkg001,11,BCX,7/F7
+play,2,1,grism001,22,CBSBS,K
+play,2,1,houst001,00,X,7/F7S
+play,3,0,doteo001,12,CBFS,K
+play,3,0,biggc001,32,BBCBCC,K/C
+play,3,0,ceder001,21,BBCX,S8/8S
+play,3,0,bagwj001,31,BFBBB,W.1-2
+play,3,0,camik001,21,BCBX,3/G
+play,3,1,hernj001,22,BFSBFS,K
+play,3,1,barkk001,12,CFBS,K
+play,3,1,woods001,20,BBX,3/G
+play,4,0,wardd002,00,X,D7
+play,4,0,hidar001,00,X,S8/8S.2-3;B-2(TH)
+play,4,0,melum001,20,BBX,S7.3-H;2-3
+play,4,0,bogat001,02,CFX,FC5.3XH(52);1-2;B-1
+play,4,0,doteo001,01,CX,34/SH.2-3;1-2
+play,4,0,biggc001,30,IIII,IW
+play,4,0,ceder001,21,CBBX,46(1)/FO
+play,4,1,bellr002,22,BCCBX,6/L6
+play,4,1,lorem001,31,FBBBX,63/G
+play,4,1,burnj001,32,CBFBBB,W
+play,4,1,jenkg001,12,CFBFS,K
+play,5,0,bagwj001,11,CBX,9/F9
+play,5,0,camik001,11,SBX,D7/7D
+play,5,0,wardd002,32,BBFSBS,K
+play,5,0,hidar001,30,BBBB,W
+play,5,0,melum001,32,CFBBBS,K
+play,5,1,grism001,21,BFBX,3/P3
+play,5,1,houst001,00,X,S5/BG5
+play,5,1,hernj001,32,BBBCFX,9/F9
+play,5,1,barkk001,10,BX,43/G
+play,6,0,bogat001,01,CX,8/F8
+play,6,0,doteo001,00,,NP
+sub,johnr006,"Russ Johnson",0,9,11
+play,6,0,johnr006,11,CBX,13/G
+play,6,0,biggc001,11,FBX,S7/7S
+play,6,0,ceder001,22,FBCBFX,S8/8S.1-2
+play,6,0,bagwj001,32,BBCBCB,W.2-3;1-2
+play,6,0,camik001,00,,NP
+sub,delov001,"Valerio De Los Santos",1,8,1
+play,6,0,camik001,00,,NP
+sub,hayec001,"Charlie Hayes",1,9,3
+play,6,0,camik001,02,FFC,K/C
+play,6,1,hayec001,00,,NP
+sub,maddm002,"Mike Maddux",0,9,1
+play,6,1,hayec001,10,BX,13/G
+play,6,1,bellr002,32,CBBCBFB,W
+play,6,1,lorem001,21,CBBX,43/G.1-2
+play,6,1,burnj001,10,BX,3/G
+play,7,0,wardd002,00,,NP
+sub,lugoj001,"Julio Lugo",0,5,11
+play,7,0,lugoj001,32,BFCBBFX,53/G
+play,7,0,hidar001,32,FBBCBFX,S9
+play,7,0,melum001,21,BFBX,9/FL
+play,7,0,bogat001,00,X,3/G
+play,7,1,jenkg001,00,,NP
+sub,lugoj001,"Julio Lugo",0,5,7
+play,7,1,jenkg001,31,BBBCX,43/G
+play,7,1,grism001,12,BSCC,K/C
+play,7,1,houst001,01,SX,D9
+play,7,1,hernj001,01,CX,43/G
+play,8,0,maddm002,00,,NP
+sub,berkl001,"Lance Berkman",0,9,11
+play,8,0,berkl001,12,CBCFX,4/P4
+play,8,0,biggc001,00,X,13/BG
+play,8,0,ceder001,11,FBX,13/G
+play,8,1,delov001,00,,NP
+sub,moutj001,"James Mouton",1,8,11
+play,8,1,moutj001,00,,NP
+sub,powej001,"Jay Powell",0,9,1
+play,8,1,moutj001,32,BBBCCB,W
+play,8,1,hayec001,00,X,64(1)3/GDP
+play,8,1,bellr002,32,BBBCCX,4/L4
+play,9,0,bagwj001,00,,NP
+sub,leskc001,"Curtis Leskanic",1,8,1
+play,9,0,bagwj001,31,BFBBB,W
+play,9,0,camik001,31,CBBBB,W.1-2
+play,9,0,lugoj001,00,,NP
+sub,spieb001,"Bill Spiers",0,5,11
+play,9,0,spieb001,11,CBX,D/78.2-H;1-3
+play,9,0,hidar001,00,X,9/SF.3-H;2-3
+play,9,0,melum001,30,IIII,IW
+play,9,0,bogat001,02,FCFC,K/C
+play,9,0,powej001,00,,NP
+sub,miesm001,"Matt Mieske",0,9,11
+play,9,0,miesm001,21,SBBX,8/F8
+play,9,1,lorem001,00,,NP
+sub,spieb001,"Bill Spiers",0,5,7
+play,9,1,lorem001,00,,NP
+sub,wagnb001,"Billy Wagner",0,9,1
+play,9,1,lorem001,01,CX,13/G
+play,9,1,burnj001,12,CFBX,3/P3
+play,9,1,jenkg001,01,CX,6/P6
+data,er,doteo001,0
+data,er,maddm002,0
+data,er,powej001,0
+data,er,wagnb001,0
+data,er,woods001,3
+data,er,delov001,0
+data,er,leskc001,2

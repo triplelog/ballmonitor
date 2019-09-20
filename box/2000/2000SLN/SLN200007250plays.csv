@@ -1,0 +1,78 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,11,1,,,,,0,3,BCX,stepg001,1,0,,womat001,0,F
+,11,1,,,,,1,6,BCX,stepg001,1,0,counc001 grounds out. ,counc001,0,G
+,31,1,,,,,2,11,BBBFX,stepg001,1,0,gonzl001 grounds out. ,gonzl001,0,G
+,10,1,,polap001,,,3,2,BX,johnr005,0,0,polap001 doubles. ,polap001,1,
+,22,1,,polap001,,,4,7,BCBFS,johnr005,1,0,rente001 strikes out. ,rente001,1,
+,32,1,edmoj001,polap001,,,5,13,BBBCFB,johnr005,0,0,edmoj001 walks. ,edmoj001,1,
+,32,1,edmoj001,polap001,,,6,19,BBFSBS,johnr005,1,0,tatif001 strikes out. ,tatif001,1,
+polap001 to 3B. edmoj001 to 2B. ,32,1,peree001,edmoj001,polap001,,7,25,BBSBSB,johnr005,0,0,peree001 walks. ,peree001,1,
+,10,1,peree001,edmoj001,polap001,,8,27,BX,johnr005,1,0,,dunss001,1,F
+,32,2,,,,,9,17,BBFBFX,stepg001,1,0,,finls001,0,F
+,32,2,,,,,10,23,BCBCBX,stepg001,1,0,,willm003,0,P
+,21,2,,,,,11,27,CBBX,stepg001,1,0,durae001 grounds out. ,durae001,0,G
+,12,2,paquc001,,,,12,32,SBSFX,johnr005,0,0,paquc001 singles. ,paquc001,1,
+,11,2,paquc001,,,,13,35,BFX,johnr005,1,0,,mathm001,1,F
+paquc001 to 2B. ,00,2,,paquc001,,,14,36,X,johnr005,1,0,Sacrifice bunt by stepg001.,stepg001,1,
+,02,2,,paquc001,,,15,40,CFFX,johnr005,1,0,,polap001,1,L
+,21,3,,,,,16,31,CBBX,stepg001,1,0,,bautd001,0,F
+,11,3,,,,,17,34,BCX,stepg001,1,0,stink001 grounds out. ,stink001,0,G
+,32,3,johnr005,,,,18,40,BBCBFB,stepg001,0,0,johnr005 walks. ,johnr005,0,
+,02,3,johnr005,,,,19,43,CFX,stepg001,1,0,womat001 grounds out. ,womat001,0,G
+,31,3,rente001,,,,20,45,BCBBB,johnr005,0,0,rente001 walks. ,rente001,1,
+rente001 to 2B. ,01,3,,rente001,,,21,47,CX,johnr005,1,0,edmoj001 grounds out. ,edmoj001,1,G
+,32,3,,rente001,,,22,54,BBCFFBS,johnr005,1,0,tatif001 strikes out. ,tatif001,1,
+,00,3,,rente001,,,23,55,X,johnr005,1,0,,peree001,1,
+,01,4,,,,,24,45,CX,stepg001,1,0,counc001 grounds out. ,counc001,0,G
+,32,4,gonzl001,,,,25,51,BBFFBB,stepg001,0,0,gonzl001 walks. ,gonzl001,0,
+gonzl001 to 2B. ,21,4,finls001,gonzl001,,,26,55,BFBX,stepg001,0,0,finls001 singles. ,finls001,0,
+gonzl001 to 3B. finls001 to 2B. ,20,4,,finls001,gonzl001,willm003,27,58,BBB,stepg001,0,0,Passed Ball. ,willm003,0,
+,30,4,willm003,finls001,gonzl001,,28,62,BBBB,stepg001,0,0,willm003 walks. ,willm003,0,
+gonzl001 scores. finls001 scores. willm003 to 3B. ,22,4,,durae001,willm003,,29,70,FCBFFFBX,stepg001,0,2,durae001 doubles. ,durae001,0,
+willm003 scores. durae001 to 2B. ,32,4,bautd001,durae001,,,30,79,CFBFBFFBX,stepg001,0,1,bautd001 singles. ,bautd001,0,
+,32,4,,durae001,,,31,85,BFBBCX,stepg001,2,0,Double Play. ,stink001,0,
+,01,4,,,,,32,57,CX,johnr005,1,0,,dunss001,1,P
+,12,4,,,,,33,61,BCCX,johnr005,1,0,,paquc001,1,F
+,32,4,,,,,34,68,BCCFBBC,johnr005,1,0,mathm001 strikes out. ,mathm001,1,
+,02,5,,,,,35,88,SSX,stepg001,1,0,,johnr005,0,F
+,22,5,,,,,36,98,BFFFBFFFFX,stepg001,1,0,,womat001,0,F
+,21,5,,,,,37,102,CBBX,stepg001,1,0,counc001 grounds out. ,counc001,0,G
+,32,5,,,,,38,75,BCBBCFC,johnr005,1,0,stepg001 strikes out. ,stepg001,1,
+,02,5,,,,,39,78,CSC,johnr005,1,0,polap001 strikes out. ,polap001,1,
+,00,5,,rente001,,,40,79,X,johnr005,0,0,rente001 doubles. ,rente001,1,
+,32,5,edmoj001,rente001,,,41,86,BCBSFBB,johnr005,0,0,edmoj001 walks. ,edmoj001,1,
+rente001 scores. edmoj001 to 3B. ,20,5,,,edmoj001,tatif001,42,89,BBB,johnr005,0,1,rente001 steals 3B. edmoj001 steals 2B. ,tatif001,1,
+,30,5,tatif001,,edmoj001,,43,93,BBBB,johnr005,0,0,tatif001 walks. ,tatif001,1,
+,11,5,tatif001,,edmoj001,,44,96,BCX,johnr005,1,0,,peree001,1,F
+,32,6,,,,,45,109,BBCCFBS,stepg001,1,0,gonzl001 strikes out. ,gonzl001,0,
+,00,6,,,,,46,110,X,stepg001,1,0,finls001 grounds out. ,finls001,0,G
+,10,6,,,,,47,112,BX,stepg001,1,0,,willm003,0,P
+,01,6,,,,,48,98,FX,johnr005,1,0,,dunss001,1,F
+,30,6,paquc001,,,,49,102,BBBB,johnr005,0,0,paquc001 walks. ,paquc001,1,
+paquc001 scores. ,12,6,,,,,50,107,BFCFX,johnr005,0,2,mathm001 homers. ,mathm001,1,
+,02,6,,,,,51,110,CFS,johnr005,1,0,stepg001 strikes out. ,stepg001,1,
+,21,6,polap001,,,,52,114,BBCX,johnr005,0,0,polap001 singles. ,polap001,1,
+polap001 to 2B. ,30,6,rente001,polap001,,,53,118,BBBB,johnr005,0,0,rente001 walks. ,rente001,1,
+polap001 to 3B. rente001 to 2B. ,31,6,edmoj001,rente001,polap001,,55,5,BBBCB,plesd001,0,0,edmoj001 walks. ,edmoj001,1,
+polap001 scores. rente001 scores. edmoj001 scores. ,10,6,,,,,57,2,BX,sprir001,0,4,tatif001 homers. ,tatif001,1,
+,00,6,peree001,,,,58,3,X,sprir001,0,0,peree001 singles. ,peree001,1,
+,02,6,peree001,,,,59,6,SSS,sprir001,1,0,dunss001 strikes out. ,dunss001,1,
+,30,7,durae001,,,,60,116,BBBB,stepg001,0,0,durae001 walks. ,durae001,0,
+durae001 out. ,12,7,bautd001,,,,61,120,BCFX,stepg001,1,0,bautd001 reaches on fielder's choice. ,bautd001,0,
+,10,7,,,,,62,122,BX,stepg001,2,0,Double Play. ,stink001,0,
+,11,7,paquc001,,,,63,9,FBX,sprir001,0,0,paquc001 reaches on error. ,paquc001,1,G
+,11,7,,paquc001,,mathm001,64,12,BFB,sprir001,0,0,paquc001 steals 2B. ,mathm001,1,
+,31,7,mathm001,paquc001,,,65,17,BFBBB,sprir001,0,0,mathm001 walks. ,mathm001,1,
+mathm001 to 2B. ,11,7,,mathm001,,,66,20,CBX,sprir001,2,0,Double Play. ,stepg001,1,G
+,11,7,,mathm001,,,67,23,BFX,sprir001,1,0,,polap001,1,P
+,00,8,,,,,69,123,X,stepg001,1,0,friah001 grounds out. ,friah001,0,G
+,02,8,,,,,70,126,CCX,stepg001,1,0,womat001 grounds out. ,womat001,0,G
+,11,8,counc001,,,,71,129,BCX,stepg001,0,0,counc001 singles. ,counc001,0,
+counc001 to 2B. ,31,8,gonzl001,counc001,,,72,134,BCBBX,stepg001,0,0,gonzl001 singles. ,gonzl001,0,
+,22,8,gonzl001,counc001,,,73,140,CFBBFS,stepg001,1,0,finls001 strikes out. ,finls001,0,
+,02,8,,,,,75,3,CCC,morgm001,1,0,rente001 strikes out. ,rente001,1,
+,11,8,edmoj001,,,,76,6,CBX,morgm001,0,0,edmoj001 reaches on error. ,edmoj001,1,G
+,10,8,,,,,77,8,BX,morgm001,2,0,Double Play. ,tatif001,1,
+,22,9,,,,,82,5,CSBBX,jamem001,1,0,,willm003,0,F
+,11,9,,,,,83,8,CBX,jamem001,1,0,durae001 grounds out. ,durae001,0,G
+,21,9,,,,,84,12,BBCX,jamem001,1,0,,bautd001,0,P

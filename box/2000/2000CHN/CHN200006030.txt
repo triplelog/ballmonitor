@@ -1,0 +1,144 @@
+version,2
+info,visteam,DET
+info,hometeam,CHN
+info,site,CHI11
+info,date,2000/06/03
+info,number,0
+info,starttime,3:05PM
+info,daynight,day
+info,usedh,false
+info,umphome,marsr901
+info,ump1b,herna901
+info,ump2b,fostm901
+info,ump3b,kulpr901
+info,pitches,pitches
+info,temp,62
+info,winddir,unknown
+info,windspeed,14
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,170
+info,attendance,40061
+info,wp,weavj002
+info,lp,woodk002
+info,save,jonet003
+start,ausmb001,"Brad Ausmus",0,1,2
+start,fickr001,"Robert Fick",0,2,3
+start,encaj001,"Juan Encarnacion",0,3,8
+start,gonzj002,"Juan Gonzalez",0,4,9
+start,higgb001,"Bobby Higginson",0,5,7
+start,palmd002,"Dean Palmer",0,6,5
+start,easld001,"Damion Easley",0,7,4
+start,cruzd001,"Deivi Cruz",0,8,6
+start,weavj002,"Jeff Weaver",0,9,1
+start,youne001,"Eric Young",1,1,4
+start,giraj001,"Joe Girardi",1,2,2
+start,gracm001,"Mark Grace",1,3,3
+start,sosas001,"Sammy Sosa",1,4,9
+start,rodrh001,"Henry Rodriguez",1,5,7
+start,greew001,"Willie Greene",1,6,5
+start,bufod001,"Damon Buford",1,7,8
+start,husoj001,"Jeff Huson",1,8,6
+start,woodk002,"Kerry Wood",1,9,1
+play,1,0,ausmb001,22,BFFBX,13/G
+play,1,0,fickr001,22,SSBBFC,K/C
+play,1,0,encaj001,12,BFSX,63/G
+play,1,1,youne001,12,BCCFX,63/G
+play,1,1,giraj001,22,BBFFC,K/C
+play,1,1,gracm001,32,BCCFBFFBFB,W
+play,1,1,sosas001,21,BCBX,8/F8
+play,2,0,gonzj002,31,CBBBX,9/F9
+play,2,0,higgb001,10,BX,9/L9
+play,2,0,palmd002,10,BX,HR/7
+play,2,0,easld001,22,SFBBS,K
+play,2,1,rodrh001,31,BCBBX,S8
+play,2,1,greew001,30,BBBB,W.1-2
+play,2,1,bufod001,32,BBBCCFX,8/L8
+play,2,1,husoj001,22,CFBBFX,36(1)/FO.2-3
+play,2,1,woodk002,21,BSBX,64(1)/FO
+play,3,0,cruzd001,00,X,3/FL
+play,3,0,weavj002,11,CBX,63/G
+play,3,0,ausmb001,22,CBCFBS,K
+play,3,1,youne001,22,CFBBX,13/G
+play,3,1,giraj001,10,BX,43/G
+play,3,1,gracm001,10,BX,D9/9D
+play,3,1,sosas001,10,BX,S7.2XH(72)
+play,4,0,fickr001,32,CBBFFBB,W
+play,4,0,encaj001,10,BH,HP.1-2
+play,4,0,gonzj002,22,BSFFBX,S/78.2-H;1-3
+play,4,0,higgb001,00,X,7/F7S
+play,4,0,palmd002,22,BSBSC,K/C
+play,4,0,easld001,01,FX,S7.3-H;1-2
+play,4,0,cruzd001,01,CH,HP.2-3;1-2
+play,4,0,weavj002,22,CFFBBS,K
+play,4,1,rodrh001,02,FSC,K/C
+play,4,1,greew001,11,BCX,D9
+play,4,1,bufod001,00,X,53/G
+play,4,1,husoj001,12,CFFBS,K
+play,5,0,ausmb001,00,X,53/G
+play,5,0,fickr001,01,CX,S5/BG5
+play,5,0,encaj001,01,CX,D9.1-3
+play,5,0,gonzj002,32,BBBCFX,53/G
+play,5,0,higgb001,12,CFBC,K/C
+play,5,1,woodk002,00,X,53/G
+play,5,1,youne001,22,BCCBFFX,7/L7
+play,5,1,giraj001,32,BBBCFX,S
+play,5,1,gracm001,21,BBCX,43/G
+play,6,0,palmd002,10,BX,53/G
+play,6,0,easld001,02,CCFS,K
+play,6,0,cruzd001,10,BX,8/F8S
+play,6,1,sosas001,20,BBX,53/G
+play,6,1,rodrh001,00,X,43/G
+play,6,1,greew001,10,BX,31/G
+play,7,0,weavj002,22,FBCBFS,K
+play,7,0,ausmb001,32,CBCBFBC,K/C
+play,7,0,fickr001,11,CBX,43/G
+play,7,1,bufod001,12,CSBS,K
+play,7,1,husoj001,22,BBCCX,63/G
+play,7,1,woodk002,00,,NP
+sub,mattg002,"Gary Jr. Matthews",1,9,11
+play,7,1,mattg002,00,X,43/G
+play,8,0,encaj001,00,,NP
+sub,karcm001,"Matt Karchner",1,9,1
+play,8,0,encaj001,22,BCBFX,S
+play,8,0,gonzj002,00,X,8/F8
+play,8,0,higgb001,01,CB,SB2
+play,8,0,higgb001,11,CBX,8/F8D.2-3
+play,8,0,palmd002,30,BBBB,W
+play,8,0,easld001,01,CX,D7.3-H;1-H
+play,8,0,cruzd001,02,CFX,163/G
+play,8,1,youne001,22,CBBLX,43/G
+play,8,1,giraj001,32,BBCBCB,W
+play,8,1,gracm001,00,,NP
+sub,andem002,"Matt Anderson",0,9,1
+play,8,1,gracm001,32,CBSBFBB,W.1-2
+play,8,1,sosas001,01,CX,HR/7.2-H;1-H
+play,8,1,rodrh001,00,,NP
+sub,blaiw001,"Willie Blair",0,9,1
+play,8,1,rodrh001,22,FBBFFS,K
+play,8,1,greew001,22,CBCBFC,K/C
+play,9,0,blaiw001,00,,NP
+sub,beckr002,"Rich Becker",0,9,11
+play,9,0,beckr002,00,,NP
+sub,vanpt001,"Todd Van Poppel",1,9,1
+play,9,0,beckr002,32,BFCBBB,W
+play,9,0,ausmb001,12,LLBS,K
+play,9,0,fickr001,11,CBS,CS2(26)
+play,9,0,fickr001,12,CBSS,K
+play,9,1,bufod001,00,,NP
+sub,jonet003,"Todd Jones",0,9,1
+play,9,1,bufod001,02,CFC,K/C
+play,9,1,husoj001,00,,NP
+sub,martd002,"Dave Martinez",1,8,11
+play,9,1,martd002,01,CX,43/G
+play,9,1,vanpt001,00,,NP
+sub,reedj001,"Jeff Reed",1,9,11
+play,9,1,reedj001,02,CCFS,K
+data,er,weavj002,1
+data,er,andem002,2
+data,er,blaiw001,0
+data,er,jonet003,0
+data,er,woodk002,3
+data,er,karcm001,2
+data,er,vanpt001,0

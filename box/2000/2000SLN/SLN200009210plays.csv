@@ -1,0 +1,89 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,22,1,,,,,0,5,CBFBC,benea001,1,0,lugoj001 strikes out. ,lugoj001,0,
+,30,1,spieb001,,,,1,9,BBBB,benea001,0,0,spieb001 walks. ,spieb001,0,
+,32,1,,,,,2,15,BBCFBX,benea001,2,0,Double Play. ,hidar001,0,
+,00,1,,,,,3,1,X,mcknt001,1,0,,vinaf001,1,F
+,22,1,,,,,4,6,BBSFX,mcknt001,1,0,polap001 grounds out. ,polap001,1,G
+,12,1,,,,,5,10,BFFX,mcknt001,1,0,drewj001 grounds out. ,drewj001,1,G
+,11,2,,berkl001,,,6,18,BCX,benea001,0,0,berkl001 doubles. ,berkl001,0,
+berkl001 scores. ,01,2,,aloum001,,,7,20,FX,benea001,0,1,aloum001 doubles. ,aloum001,0,
+,00,2,,aloum001,,,8,21,X,benea001,1,0,,wardd002,0,F
+aloum001 to 3B. ,32,2,melum001,,aloum001,,9,27,BCBBFX,benea001,0,0,melum001 singles. ,melum001,0,
+aloum001 scores. melum001 out. ,10,2,trubc001,,,,10,29,BX,benea001,1,1,trubc001 reaches on fielder's choice. ,trubc001,0,
+,22,2,trubc001,,,,11,34,BCSBC,benea001,1,0,mcknt001 strikes out. ,mcknt001,0,
+,12,2,,,,,12,14,CBSX,mcknt001,1,0,,clarw001,1,F
+,32,2,,,,,13,20,CSBBBX,mcknt001,1,0,,tatif001,1,F
+,12,2,,,,,14,24,CSBX,mcknt001,1,0,howat001 grounds out. ,howat001,1,G
+,12,3,lugoj001,,,,15,38,CCBX,benea001,0,0,lugoj001 singles. ,lugoj001,0,
+,10,3,,lugoj001,,spieb001,16,40,BC,benea001,0,0,lugoj001 steals 2B. ,spieb001,0,
+lugoj001 to 3B. ,11,3,,,lugoj001,,17,43,BCX,benea001,1,0,spieb001 grounds out. ,spieb001,0,G
+,30,3,hidar001,,lugoj001,,18,47,BBBB,benea001,0,0,hidar001 walks. ,hidar001,0,
+lugoj001 scores. ,32,3,hidar001,,,,19,53,CBBFBX,benea001,1,1,berkl001 hits sacrifice fly. ,berkl001,0,
+,11,3,,hidar001,,aloum001,20,56,BCB,benea001,0,0,hidar001 steals 2B. ,aloum001,0,
+hidar001 scores. ,32,3,aloum001,,,,21,62,BCBBSX,benea001,0,1,aloum001 singles. ,aloum001,0,
+,00,3,aloum001,,,,22,63,X,benea001,1,0,wardd002 grounds out. ,wardd002,0,G
+,00,3,peree001,,,,23,25,X,mcknt001,0,0,peree001 singles. ,peree001,1,
+peree001 to 2B. ,32,3,hernc001,peree001,,,24,31,BBFFBX,mcknt001,0,0,hernc001 reaches on error. ,hernc001,1,F
+peree001 to 3B. hernc001 to 2B. ,00,3,,hernc001,peree001,,25,32,X,mcknt001,1,0,benea001 grounds out. ,benea001,1,G
+,02,3,,hernc001,peree001,,26,35,CFS,mcknt001,1,0,vinaf001 strikes out. ,vinaf001,1,
+peree001 scores. hernc001 scores. ,12,3,polap001,,,,27,39,CBFX,mcknt001,0,2,polap001 singles. ,polap001,1,
+,32,3,polap001,,,,28,45,FBFBBX,mcknt001,1,0,,drewj001,1,L
+,32,4,,,,,29,69,CFBBBC,benea001,1,0,melum001 strikes out. ,melum001,0,
+,11,4,,,,,30,72,SBX,benea001,1,0,,trubc001,0,F
+,32,4,,,,,31,78,FBBBSC,benea001,1,0,mcknt001 strikes out. ,mcknt001,0,
+,22,4,,clarw001,,,32,52,BBCFFFX,mcknt001,0,0,clarw001 doubles. ,clarw001,1,
+,21,4,,clarw001,,,33,56,BCBX,mcknt001,1,0,tatif001 grounds out. ,tatif001,1,G
+clarw001 to 3B. ,00,4,howat001,,clarw001,,34,57,X,mcknt001,0,0,howat001 singles. ,howat001,1,
+clarw001 scores. ,12,4,howat001,,,,35,62,CFFBX,mcknt001,1,1,peree001 hits sacrifice fly. ,peree001,1,
+,12,4,howat001,,,,36,66,FFBC,mcknt001,1,0,hernc001 strikes out. ,hernc001,1,
+,12,5,lugoj001,,,,37,82,CBCH,benea001,0,0,lugoj001 hit by pitch. ,lugoj001,0,
+,00,5,lugoj001,,,,38,83,X,benea001,1,0,,spieb001,0,F
+lugoj001 to 3B. ,21,5,,,lugoj001,hidar001,39,87,FBBC,benea001,0,0,lugoj001 steals 2B. ,hidar001,0,
+,32,5,hidar001,,lugoj001,,40,93,FBBCBB,benea001,0,0,hidar001 walks. ,hidar001,0,
+,22,5,,hidar001,lugoj001,berkl001,41,99,FFBBFB,benea001,0,0,hidar001 steals 2B. ,berkl001,0,
+lugoj001 scores. hidar001 to 3B. ,32,5,,,hidar001,,42,106,FFBBFBX,benea001,1,1,berkl001 hits sacrifice fly. ,berkl001,0,
+,11,5,,,hidar001,,43,109,BSX,benea001,1,0,,aloum001,0,L
+,10,5,,,,,45,68,BX,mcknt001,1,0,marre001 grounds out. ,marre001,1,G
+,01,5,,,,,46,70,SX,mcknt001,1,0,,vinaf001,1,F
+,00,5,polap001,,,,47,71,X,mcknt001,0,0,polap001 singles. ,polap001,1,
+,12,5,polap001,,,,48,78,SSFBFFX,mcknt001,1,0,,drewj001,1,F
+,10,6,,,,,51,2,BX,benea002,1,0,,wardd002,0,F
+,22,6,melum001,,,,52,8,BCCBFX,benea002,0,0,melum001 singles. ,melum001,0,
+melum001 scores. ,21,6,,trubc001,,,53,12,FBBX,benea002,0,1,trubc001 doubles. ,trubc001,0,
+trubc001 out. mcknt001 to 1B. ,00,6,mcknt001,,,,54,13,X,benea002,1,0,mcknt001 hits into a fielder's choice. ,mcknt001,0,
+,02,6,mcknt001,,,,55,16,FFC,benea002,1,0,lugoj001 strikes out. ,lugoj001,0,
+,30,6,clarw001,,,,56,82,BBBB,mcknt001,0,0,clarw001 walks. ,clarw001,1,
+,22,6,clarw001,,,,57,88,BCBSFX,mcknt001,1,0,,tatif001,1,F
+clarw001 to 2B. ,11,6,howat001,clarw001,,,58,91,FBX,mcknt001,0,0,howat001 singles. ,howat001,1,
+,00,6,,clarw001,,,59,92,X,mcknt001,2,0,Double Play. ,peree001,1,
+,31,7,spieb001,,,,60,21,BBBCX,benea002,0,0,spieb001 singles. ,spieb001,0,
+spieb001 to 2B. ,10,7,hidar001,spieb001,,,61,23,BX,benea002,0,0,hidar001 singles. ,hidar001,0,
+,10,7,hidar001,spieb001,,,62,25,BX,benea002,1,0,,berkl001,0,P
+,00,7,hidar001,spieb001,,,63,26,X,benea002,1,0,,aloum001,0,F
+,12,7,hidar001,spieb001,,,64,30,SBFS,benea002,1,0,wardd002 strikes out. ,wardd002,0,
+,10,7,,,,,66,94,BX,mcknt001,1,0,,paquc001,1,F
+,20,7,,marre001,,,67,97,BBX,mcknt001,0,0,marre001 doubles. ,marre001,1,
+,01,7,,marre001,,,68,99,FX,mcknt001,1,0,vinaf001 grounds out. ,vinaf001,1,G
+marre001 scores. ,11,7,,polap001,,,69,102,CBX,mcknt001,0,1,polap001 doubles. ,polap001,1,
+,31,7,drewj001,polap001,,,71,5,BCBBB,franw001,0,0,drewj001 walks. ,drewj001,1,
+,10,7,drewj001,polap001,,,72,7,BX,franw001,1,0,,clarw001,1,F
+,02,8,,,,,76,3,CSX,stecg001,1,0,melum001 grounds out. ,melum001,0,G
+,22,8,,,,,77,8,BSBSS,stecg001,1,0,trubc001 strikes out. ,trubc001,0,
+,12,8,,,,,79,12,CBSX,stecg001,1,0,ceder001 grounds out. ,ceder001,0,G
+,22,8,tatif001,,,,81,6,CBBFFH,valdm001,0,0,tatif001 hit by pitch. ,tatif001,1,
+,02,8,,,,,82,9,CSX,valdm001,2,0,Double Play. ,howat001,1,
+,00,8,peree001,,,,83,10,X,valdm001,0,0,peree001 singles. ,peree001,1,
+peree001 to 2B. ,00,8,paquc001,peree001,,,84,11,X,valdm001,0,0,paquc001 singles. ,paquc001,1,
+peree001 to 3B. paquc001 to 2B. ,02,8,,paquc001,peree001,mcgwm001,86,14,SSB,valdm001,0,0,Wild Pitch. ,mcgwm001,1,
+,12,8,,paquc001,peree001,,87,19,SSBFX,valdm001,1,0,,mcgwm001,1,F
+,20,9,lugoj001,,,,89,15,BBX,stecg001,0,0,lugoj001 singles. ,lugoj001,0,
+,21,9,,,,,90,19,BFBX,stecg001,2,0,Double Play. ,spieb001,0,
+,31,9,,,,,91,24,CBBBX,stecg001,0,1,hidar001 homers. ,hidar001,0,
+,10,9,berkl001,,,,92,26,BX,stecg001,0,0,berkl001 singles. ,berkl001,0,
+barkg001 out. ,11,9,aloum001,,,,94,29,SBX,stecg001,1,0,aloum001 reaches on fielder's choice. ,aloum001,0,G
+,32,9,edmoj001,,,,99,6,BBBCCB,doteo001,0,0,edmoj001 walks. ,edmoj001,1,
+edmoj001 to 2B. ,20,9,,edmoj001,,polap001,100,9,BBC,doteo001,0,0,edmoj001 to 2B on defensive indifference. ,polap001,1,
+,22,9,,edmoj001,,,101,15,BBCFFC,doteo001,1,0,polap001 strikes out. ,polap001,1,
+,12,9,,edmoj001,,,103,19,BSSS,doteo001,1,0,lankr001 strikes out. ,lankr001,1,
+edmoj001 scores. ,00,9,clarw001,,,,104,20,X,doteo001,0,1,clarw001 singles. ,clarw001,1,
+,02,9,clarw001,,,,105,23,SSS,doteo001,1,0,tatif001 strikes out. ,tatif001,1,

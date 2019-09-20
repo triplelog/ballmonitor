@@ -1,0 +1,83 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,00,1,,,,,0,1,X,sirom001,1,0,,bellr002,0,L
+,10,1,,,,,1,3,BX,sirom001,1,0,,moutj001,0,F
+,21,1,,,,,2,7,BFBX,sirom001,1,0,grism001 grounds out. ,grism001,0,G
+,12,1,durhr001,,,,3,5,CFFBX,wrigj001,0,0,durhr001 singles. ,durhr001,1,
+durhr001 to 2B. ,20,1,,durhr001,,,4,8,BBX,wrigj001,1,0,valej003 grounds out. ,valej003,1,G
+,22,1,,durhr001,,,5,13,BCBFC,wrigj001,1,0,thomf001 strikes out. ,thomf001,1,
+,22,1,,durhr001,,,6,19,BBFCFX,wrigj001,1,0,,ordom001,1,F
+,00,2,hayec001,,,,7,8,X,sirom001,0,0,hayec001 singles. ,hayec001,0,
+hayec001 to 2B. ,21,2,,hayec001,,,8,12,BBFX,sirom001,1,0,hernj001 grounds out. ,hernj001,0,G
+,31,2,jonec002,hayec001,,,9,17,BFBBB,sirom001,0,0,jonec002 walks. ,jonec002,0,
+hayec001 to 3B. jonec002 to 2B. ,10,2,casar001,jonec002,hayec001,,10,19,BX,sirom001,0,0,casar001 reaches on error. ,casar001,0,G
+,12,2,casar001,jonec002,hayec001,,11,23,BSFC,sirom001,1,0,lopel002 strikes out. ,lopel002,0,
+,01,2,casar001,jonec002,hayec001,,12,25,CX,sirom001,1,0,blanh001 grounds out. ,blanh001,0,G
+,02,2,,,,,13,22,FFC,wrigj001,1,0,konep001 strikes out. ,konep001,1,
+,10,2,,,,,14,24,BX,wrigj001,1,0,,singc001,1,P
+,30,2,lee-c001,,,,15,28,BBBB,wrigj001,0,0,lee-c001 walks. ,lee-c001,1,
+lee-c001 scores. ,00,2,,nortg001,,,16,29,X,wrigj001,0,1,nortg001 doubles. ,nortg001,1,
+,32,2,,nortg001,,,17,35,BFFBBC,wrigj001,1,0,fordb001 strikes out. ,fordb001,1,
+,02,3,bellr002,,,,18,28,CSX,sirom001,0,0,bellr002 singles. ,bellr002,0,
+bellr002 to 2B. ,32,3,moutj001,bellr002,,,19,34,BBBCFB,sirom001,0,0,moutj001 walks. ,moutj001,0,
+bellr002 to 3B. ,10,3,,,bellr002,,20,36,BX,sirom001,2,0,Double Play. ,grism001,0,
+,12,3,,,bellr002,,21,40,CBFC,sirom001,1,0,hayec001 strikes out. ,hayec001,0,
+,31,3,durhr001,,,,22,40,BBSBB,wrigj001,0,0,durhr001 walks. ,durhr001,1,
+,00,3,,durhr001,,valej003,23,41,B,wrigj001,0,0,durhr001 steals 2B. ,valej003,1,
+,31,3,valej003,durhr001,,,24,46,BBBCB,wrigj001,0,0,valej003 walks. ,valej003,1,
+durhr001 scores. valej003 to 3B. ,10,3,,thomf001,valej003,,25,48,BX,wrigj001,0,1,thomf001 doubles. ,thomf001,1,
+,00,3,,thomf001,valej003,,26,49,X,wrigj001,1,0,ordom001 grounds out. ,ordom001,1,G
+,31,3,konep001,thomf001,valej003,,27,54,BBBCB,wrigj001,0,0,konep001 walks. ,konep001,1,
+valej003 scores. thomf001 scores. konep001 to 3B. ,22,3,singc001,,konep001,,28,59,FBFBX,wrigj001,0,2,singc001 singles. ,singc001,1,
+,01,3,singc001,,konep001,,29,61,CX,wrigj001,1,0,,lee-c001,1,L
+konep001 scores. singc001 to 3B. ,00,3,nortg001,,singc001,,30,62,X,wrigj001,0,1,nortg001 singles. ,nortg001,1,
+nortg001 out. ,21,3,fordb001,,singc001,,31,66,BBFX,wrigj001,1,0,fordb001 reaches on fielder's choice. ,fordb001,1,G
+,31,4,hernj001,,,,32,45,FBBBB,sirom001,0,0,hernj001 walks. ,hernj001,0,
+,12,4,hernj001,,,,33,49,FBFS,sirom001,1,0,jonec002 strikes out. ,jonec002,0,
+hernj001 out. ,00,4,casar001,,,,34,50,X,sirom001,1,0,casar001 reaches on fielder's choice. ,casar001,0,
+casar001 to 2B. ,22,4,lopel002,casar001,,,35,56,SBSFBX,sirom001,0,0,lopel002 singles. ,lopel002,0,
+,22,4,lopel002,casar001,,,36,61,FFBBS,sirom001,1,0,blanh001 strikes out. ,blanh001,0,
+,20,4,,,,,37,69,BBX,wrigj001,1,0,durhr001 grounds out. ,durhr001,1,G
+,20,4,,,,,38,72,BBX,wrigj001,1,0,,valej003,1,F
+,00,4,,,,,39,73,X,wrigj001,1,0,,thomf001,1,F
+,00,5,,,,,40,62,X,sirom001,1,0,bellr002 grounds out. ,bellr002,0,G
+,11,5,,,,,41,65,BCX,sirom001,1,0,moutj001 grounds out. ,moutj001,0,G
+,12,5,,,,,42,69,CBCC,sirom001,1,0,grism001 strikes out. ,grism001,0,
+,21,5,ordom001,,,,43,77,FBBX,wrigj001,0,0,ordom001 singles. ,ordom001,1,
+,32,5,,,,,44,83,BCBFBX,wrigj001,2,0,Double Play. ,konep001,1,
+,30,5,singc001,,,,45,87,BBBB,wrigj001,0,0,singc001 walks. ,singc001,1,
+singc001 scores. lee-c001 scores. ,11,5,,,,,46,90,BCX,wrigj001,0,2,lee-c001 singles. ,lee-c001,1,
+,01,5,nortg001,,,,47,92,CH,wrigj001,0,0,nortg001 hit by pitch. ,nortg001,1,
+nortg001 out. ,11,5,fordb001,,,,48,95,BFX,wrigj001,1,0,fordb001 reaches on fielder's choice. ,fordb001,1,
+,12,6,,,,,49,75,CCFBFS,sirom001,1,0,hayec001 strikes out. ,hayec001,0,
+,00,6,,,,,50,76,X,sirom001,1,0,hernj001 grounds out. ,hernj001,0,G
+,10,6,,jonec002,,,51,78,BX,sirom001,0,0,jonec002 doubles. ,jonec002,0,
+jonec002 scores. ,21,6,casar001,,,,52,82,BBFX,sirom001,0,1,casar001 singles. ,casar001,0,
+,02,6,casar001,,,,53,85,FCS,sirom001,1,0,lopel002 strikes out. ,lopel002,0,
+,10,6,,,,,54,97,BX,wrigj001,1,0,,durhr001,1,L
+,10,6,,,,,55,99,BX,wrigj001,1,0,,valej003,1,
+,21,6,thomf001,,,,56,103,BCBX,wrigj001,0,0,thomf001 singles. ,thomf001,1,
+,32,6,thomf001,,,,57,111,CBFFFBBX,wrigj001,1,0,ordom001 grounds out. ,ordom001,1,G
+,02,7,,,,,58,88,CCC,sirom001,1,0,blanh001 strikes out. ,blanh001,0,
+,10,7,,,,,59,90,BX,sirom001,1,0,,bellr002,0,F
+,20,7,moutj001,,,,60,93,BBX,sirom001,0,0,moutj001 singles. ,moutj001,0,
+,00,7,moutj001,,,,61,94,X,sirom001,1,0,grism001 grounds out. ,grism001,0,G
+,10,7,konep001,,,,62,113,BX,wrigj001,0,0,konep001 singles. ,konep001,1,
+,00,7,,,,,63,114,X,wrigj001,2,0,Double Play. ,singc001,1,
+,22,7,,,,,64,121,CCFBBFX,wrigj001,1,0,lee-c001 grounds out. ,lee-c001,1,G
+,11,8,,,,,65,97,BFX,sirom001,1,0,hayec001 grounds out. ,hayec001,0,G
+,32,8,,,,,66,103,CBBFBS,sirom001,1,0,hernj001 strikes out. ,hernj001,0,
+,32,8,,,,,67,109,BBBCFC,sirom001,1,0,jonec002 strikes out. ,jonec002,0,
+,32,8,,,,,70,6,BCBBCX,delov001,1,0,,graft001,1,P
+,21,8,,,,,71,10,BBFX,delov001,1,0,,fordb001,1,F
+,11,8,durhr001,,,,72,13,CBX,delov001,0,0,durhr001 singles. ,durhr001,1,
+,11,8,durhr001,,,,73,16,SBX,delov001,1,0,,valej003,1,
+,11,9,casar001,,,,76,3,CBX,foulk001,0,0,casar001 singles. ,casar001,0,
+casar001 to 3B. ,02,9,lopel002,,casar001,,77,6,FCX,foulk001,0,0,lopel002 singles. ,lopel002,0,
+,00,9,lopel002,,casar001,,78,7,X,foulk001,1,0,,blanh001,0,
+lopel002 to 2B. ,32,9,bellr002,lopel002,casar001,,79,13,BFBFBB,foulk001,0,0,bellr002 walks. ,bellr002,0,
+casar001 scores. lopel002 to 3B. bellr002 to 2B. ,11,9,jenkg001,bellr002,lopel002,,81,16,BSH,foulk001,0,1,jenkg001 hit by pitch. ,jenkg001,0,
+lopel002 scores. bellr002 scores. jenkg001 to 3B. ,32,9,grism001,,jenkg001,,82,28,SFBFFBBFFFFX,foulk001,0,2,grism001 singles. ,grism001,0,
+jenkg001 scores. ,01,9,grism001,,,,84,2,CX,howrb001,1,1,hayec001 hits sacrifice fly. ,hayec001,0,
+grism001 to 2B. ,00,9,,grism001,,burnj001,86,3,B,howrb001,0,0,grism001 to 2B on defensive indifference. ,burnj001,0,
+,12,9,burnj001,grism001,,,87,7,BFCH,howrb001,0,0,burnj001 hit by pitch. ,burnj001,0,
+,02,9,burnj001,grism001,,,90,3,SCS,wunsk001,1,0,houst001 strikes out. ,houst001,0,

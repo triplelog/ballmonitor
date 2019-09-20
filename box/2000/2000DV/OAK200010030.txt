@@ -1,0 +1,147 @@
+version,2
+info,visteam,NYA
+info,hometeam,OAK
+info,date,2000/10/03
+info,site,OAK01
+info,number,0
+info,starttime,0:00PM
+info,daynight,night
+info,usedh,true
+info,umphome,welkt901
+info,ump1b,meric901
+info,ump2b,mcclt901
+info,ump3b,schrp901
+info,umplf,clara901
+info,umprf,nelsj901
+info,inputter,"DWS"
+info,howscored,park
+info,pitches,pitches
+info,temp,65
+info,winddir,torf
+info,windspeed,15
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,184
+info,attendance,47360
+info,wp,hereg001
+info,lp,clemr001
+info,save,isrij001
+start,knobc001,"Chuck Knoblauch",0,1,10
+start,jeted001,"Derek Jeter",0,2,6
+start,oneip001,"Paul O'Neill",0,3,9
+start,willb002,"Bernie Williams",0,4,8
+start,justd001,"David Justice",0,5,7
+start,martt002,"Tino Martinez",0,6,3
+start,posaj001,"Jorge Posada",0,7,2
+start,sojol001,"Luis Sojo",0,8,4
+start,bross001,"Scott Brosius",0,9,5
+start,clemr001,"Roger Clemens",0,0,1
+start,longt002,"Terrence Long",1,1,8
+start,velar001,"Randy Velarde",1,2,4
+start,giamj001,"Jason Giambi",1,3,3
+start,grieb001,"Ben Grieve",1,4,7
+start,tejam001,"Miguel Tejada",1,5,6
+start,staim001,"Matt Stairs",1,6,9
+start,chave001,"Eric Chavez",1,7,5
+start,giamj002,"Jeremy Giambi",1,8,10
+start,hernr002,"Ramon Hernandez",1,9,2
+start,hereg001,"Gil Heredia",1,0,1
+play,1,0,knobc001,01,CX,S8.B-2(E8)
+play,1,0,jeted001,00,H,HP
+play,1,0,oneip001,01,CX,64(1)3/GDP.2-3
+play,1,0,willb002,02,SCC,K/C
+play,1,1,longt002,01,CX,63/G
+play,1,1,velar001,22,CBFBS,K
+play,1,1,giamj001,32,CBBBFB,W
+play,1,1,grieb001,32,SBBBFB,W.1-2
+play,1,1,tejam001,01,FX,3/FL
+play,2,0,justd001,22,BCBCFX,8/F8
+play,2,0,martt002,00,X,3/G#
+play,2,0,posaj001,22,CBSFBX,S9/9S
+play,2,0,sojol001,20,BBX,D/78D.1-H
+play,2,0,bross001,01,CX,D7/7S.2-H
+play,2,0,knobc001,32,BFBFBFFS,K
+play,2,1,staim001,32,BCBBSX,5/FL
+play,2,1,chave001,32,BCBBCFS,K
+play,2,1,giamj002,12,FFBS,K
+play,3,0,jeted001,02,CFX,63/G
+play,3,0,oneip001,12,BFCX,6/P6
+play,3,0,willb002,01,CX,S/78S
+play,3,0,justd001,00,X,9/F9
+play,3,1,hernr002,32,BBFSFBX,8/F8
+play,3,1,longt002,02,CFX,S
+play,3,1,velar001,11,BFX,8/F8
+play,3,1,giamj001,00,X,7/F7D
+play,4,0,martt002,00,X,S
+play,4,0,posaj001,32,BBCSFBX,7/FL
+play,4,0,sojol001,10,BX,4/P4
+play,4,0,bross001,12,SSFBFS,K
+play,4,1,grieb001,12,CCBC,K/C
+play,4,1,tejam001,12,BFFC,K/C
+play,4,1,staim001,22,CBBSX,43/G
+play,5,0,knobc001,01,CX,4/P4
+play,5,0,jeted001,01,CX,53/G
+play,5,0,oneip001,00,X,9/F9
+play,5,1,chave001,00,X,S9
+play,5,1,giamj002,32,BCBBSFB,W.1-2
+play,5,1,hernr002,00,X,S9/9S.2-H;1-2
+play,5,1,longt002,02,FFFFX,43/G.2-3;1-2
+play,5,1,velar001,21,CBBX,S7/7S.3-H;2-3
+play,5,1,giamj001,20,BBB,WP.3-H;1-2
+play,5,1,giamj001,30,BBBI,IW
+play,5,1,grieb001,00,X,46(1)3/GDP
+play,6,0,willb002,21,BBCX,D9
+play,6,0,justd001,10,BX,3/G.2-3#
+play,6,0,martt002,10,BX,7/SF.3-H
+play,6,0,posaj001,31,CBBBB,W
+play,6,0,sojol001,11,BCX,8/F8
+play,6,1,tejam001,20,BBX,63/G
+play,6,1,staim001,12,BFFX,43/G
+play,6,1,chave001,12,FFFBX,S7
+play,6,1,giamj002,22,CBFBFX,S9.1-3
+play,6,1,hernr002,31,BSBBX,D9.3-H;1XH(932)
+play,7,0,bross001,00,,NP
+sub,tam-j001,"Jeff Tam",1,0,1
+play,7,0,bross001,21,BBCX,143/G
+play,7,0,knobc001,12,CBCX,E4/TH1
+play,7,0,jeted001,12,FBSS,K
+play,7,0,oneip001,00,,NP
+sub,mecij001,"Jim Mecir",1,0,1
+play,7,0,oneip001,00,X,9/F9
+play,7,1,longt002,00,,NP
+sub,stanm003,"Mike Stanton",0,0,1
+play,7,1,longt002,01,CX,53/G
+play,7,1,velar001,31,BCBBB,W
+play,7,1,giamj001,11,BFX,S7.1-2
+play,7,1,grieb001,00,C,SB3
+play,7,1,grieb001,22,CBCFBX,5(B)5(3)/LDP
+play,8,0,willb002,22,BFSBX,3/G#
+play,8,0,justd001,32,BCSBBS,K
+play,8,0,martt002,11,CBX,43/G
+play,8,1,tejam001,01,CX,S7/7S
+play,8,1,staim001,32,BFBSBX,6/P6
+play,8,1,chave001,01,CS,WP.1-2
+play,8,1,chave001,12,CSBX,S8.2-H
+play,8,1,giamj002,00,,NP
+sub,saeno001,"Olmedo Saenz",1,8,11
+play,8,1,saeno001,00,,NP
+sub,nelsj001,"Jeff Nelson",0,0,1
+play,8,1,saeno001,22,CFBBX,9/F9
+play,8,1,hernr002,01,CX,7/F7D
+play,9,0,posaj001,00,,NP
+sub,isrij001,"Jason Isringhausen",1,0,1
+play,9,0,posaj001,00,,NP
+sub,chrir001,"Ryan Christenson",1,4,7
+play,9,0,posaj001,32,CFFFBBBS,K
+play,9,0,sojol001,00,,NP
+sub,hillg001,"Glenallen Hill",0,8,11
+play,9,0,hillg001,12,FBSS,K
+play,9,0,bross001,10,BX,63/G
+data,er,clemr001,4
+data,er,stanm003,1
+data,er,nelsj001,0
+data,er,hereg001,3
+data,er,tam-j001,0
+data,er,mecij001,0
+data,er,isrij001,0

@@ -1,0 +1,147 @@
+version,2
+info,visteam,SLN
+info,hometeam,HOU
+info,site,HOU03
+info,date,2000/04/11
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,iassd901
+info,ump1b,hirsm901
+info,ump2b,bellw901
+info,ump3b,onorb901
+info,pitches,pitches
+info,temp,73
+info,winddir,unknown
+info,windspeed,9
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,175
+info,attendance,37463
+info,wp,stepg001
+info,lp,holtc001
+info,save,
+start,vinaf001,"Fernando Vina",0,1,4
+start,rente001,"Edgar Renteria",0,2,6
+start,lankr001,"Ray Lankford",0,3,7
+start,mcgwm001,"Mark McGwire",0,4,3
+start,edmoj001,"Jim Edmonds",0,5,8
+start,tatif001,"Fernando Tatis",0,6,5
+start,davie001,"Eric Davis",0,7,9
+start,mathm001,"Mike Matheny",0,8,2
+start,stepg001,"Garrett Stephenson",0,9,1
+start,biggc001,"Craig Biggio",1,1,4
+start,ceder001,"Roger Cedeno",1,2,8
+start,bagwj001,"Jeff Bagwell",1,3,3
+start,hidar001,"Richard Hidalgo",1,4,7
+start,aloum001,"Moises Alou",1,5,9
+start,spieb001,"Bill Spiers",1,6,5
+start,melum001,"Mitch Meluskey",1,7,2
+start,bogat001,"Tim Bogar",1,8,6
+start,holtc001,"Chris Holt",1,9,1
+play,1,0,vinaf001,11,BFX,3/G
+play,1,0,rente001,12,CBSS,K
+play,1,0,lankr001,22,CBFFBC,K/C
+play,1,1,biggc001,22,BBCFX,13/G
+play,1,1,ceder001,02,CCFC,K/C
+play,1,1,bagwj001,21,BBFX,6/L6
+play,2,0,mcgwm001,01,CX,43/G
+play,2,0,edmoj001,32,BBBCCX,HR/78
+play,2,0,tatif001,12,FBFFC,K/C
+play,2,0,davie001,12,FBFX,23/G
+play,2,1,hidar001,12,CBSS,K
+play,2,1,aloum001,30,BBBB,W
+play,2,1,spieb001,20,BBX,2/FL
+play,2,1,melum001,31,SBBBX,3/G
+play,3,0,mathm001,00,X,D9
+play,3,0,stepg001,22,BFBFS,K
+play,3,0,vinaf001,22,BBCFFX,T9.2-H
+play,3,0,rente001,12,FBFX,9/SF.3-H
+play,3,0,lankr001,00,X,43/G
+play,3,1,bogat001,32,BCFBBB,W
+play,3,1,holtc001,00,X,14/SH.1-2
+play,3,1,biggc001,22,CBCBX,S9.2-3
+play,3,1,ceder001,00,X,T9.3-H;1-H
+play,3,1,bagwj001,32,BBSFBX,HR/7.3-H
+play,3,1,hidar001,01,FH,HP
+play,3,1,aloum001,02,CSB,SB2
+play,3,1,aloum001,12,CSBX,HR/7.2-H
+play,3,1,spieb001,32,BCBBCFX,8/F8
+play,3,1,melum001,22,CBBFC,K/C
+play,4,0,mcgwm001,00,X,63/G
+play,4,0,edmoj001,10,BX,S8
+play,4,0,tatif001,10,BX,46(1)3/GDP
+play,4,1,bogat001,10,BX,23/G
+play,4,1,holtc001,11,BCX,S7
+play,4,1,biggc001,22,BBSCX,46(1)3/GDP
+play,5,0,davie001,30,BBBB,W
+play,5,0,mathm001,00,X,16(1)/FO
+play,5,0,stepg001,00,X,36(1)4/BG3/GDP
+play,5,1,ceder001,00,X,8/F8
+play,5,1,bagwj001,12,CSBX,63/G
+play,5,1,hidar001,32,FBBFBX,4/P4
+play,6,0,vinaf001,00,X,S3/BG3
+play,6,0,rente001,01,CX,54(1)3/GDP
+play,6,0,lankr001,01,FX,8/F8
+play,6,1,aloum001,31,BBBCX,9/F9
+play,6,1,spieb001,01,CX,S8
+play,6,1,melum001,02,FCX,7/F7
+play,6,1,bogat001,22,BCBFX,S8.1-2
+play,6,1,holtc001,22,BSFFBC,K/C
+play,7,0,mcgwm001,32,BBFFBB,W
+play,7,0,edmoj001,00,X,S9.1-2
+play,7,0,tatif001,32,BBBCFFFS,K
+play,7,0,davie001,31,BFBBB,W.2-3;1-2
+play,7,0,mathm001,00,,NP
+sub,howat001,"Thomas Howard",0,8,11
+play,7,0,howat001,00,X,HR/9.3-H;2-H;1-H
+play,7,0,stepg001,00,,NP
+sub,marre001,"Eli Marrero",0,9,11
+play,7,0,marre001,32,BBCBFB,W
+play,7,0,vinaf001,31,BBBCB,W.1-2
+play,7,0,rente001,00,,NP
+sub,henrd002,"Doug Henry",1,9,1
+play,7,0,rente001,11,BFX,HR/78.2-H;1-H
+play,7,0,lankr001,12,FBSX,7/F7D
+play,7,0,mcgwm001,22,BCFBC,K/C
+play,7,1,biggc001,00,,NP
+sub,marre001,"Eli Marrero",0,9,2
+play,7,1,biggc001,00,,NP
+sub,waind001,"David Wainhouse",0,8,1
+play,7,1,biggc001,01,CX,9/F9
+play,7,1,ceder001,02,CCC,K/C
+play,7,1,bagwj001,02,FSS,K
+play,8,0,edmoj001,30,BBBB,W
+play,8,0,tatif001,31,BBBCB,W.1-2
+play,8,0,davie001,32,BCBBSX,63/G.2-3;1-2
+play,8,0,waind001,00,,NP
+sub,dunss001,"Shawon Dunston",0,8,11
+play,8,0,dunss001,00,X,6(B)5(3)/LDP
+play,8,1,hidar001,00,,NP
+sub,mohlm001,"Mike Mohler",0,8,1
+play,8,1,hidar001,01,SX,63/G
+play,8,1,aloum001,00,X,4/P4
+play,8,1,spieb001,31,BBBCX,D9
+play,8,1,melum001,11,CBX,63/G
+play,9,0,marre001,00,,NP
+sub,maddm002,"Mike Maddux",1,9,1
+play,9,0,marre001,00,X,13/G
+play,9,0,vinaf001,32,BBCBCX,3/FL
+play,9,0,rente001,10,BX,S7
+play,9,0,lankr001,10,BX,5/P5
+play,9,1,bogat001,00,,NP
+sub,vered001,"Dave Veres",0,8,1
+play,9,1,bogat001,10,BX,9/F9
+play,9,1,maddm002,00,,NP
+sub,wardd002,"Daryle Ward",1,9,11
+play,9,1,wardd002,12,BSCX,8/F8
+play,9,1,biggc001,32,CSBBFBS,K
+data,er,stepg001,6
+data,er,waind001,0
+data,er,mohlm001,0
+data,er,vered001,0
+data,er,holtc001,9
+data,er,henrd002,1
+data,er,maddm002,0

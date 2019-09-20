@@ -1,0 +1,130 @@
+version,2
+info,visteam,CIN
+info,hometeam,SLN
+info,site,STL09
+info,date,2000/07/05
+info,number,0
+info,starttime,7:10PM
+info,daynight,night
+info,usedh,false
+info,umphome,marsr901
+info,ump1b,herna901
+info,ump2b,fostm901
+info,ump3b,kulpr901
+info,pitches,pitches
+info,temp,97
+info,winddir,tocf
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,142
+info,attendance,45269
+info,wp,hentp001
+info,lp,harnp001
+info,save,vered001
+start,reesp001,"Pokey Reese",0,1,4
+start,larkb001,"Barry Larkin",0,2,6
+start,tuckm001,"Michael Tucker",0,3,8
+start,bichd001,"Dante Bichette",0,4,9
+start,cases001,"Sean Casey",0,5,3
+start,yound001,"Dmitri Young",0,6,7
+start,boona001,"Aaron Boone",0,7,5
+start,taube001,"Eddie Taubensee",0,8,2
+start,harnp001,"Pete Harnisch",0,9,1
+start,vinaf001,"Fernando Vina",1,1,4
+start,rente001,"Edgar Renteria",1,2,6
+start,lankr001,"Ray Lankford",1,3,7
+start,mcgwm001,"Mark McGwire",1,4,3
+start,howat001,"Thomas Howard",1,5,9
+start,tatif001,"Fernando Tatis",1,6,5
+start,drewj001,"J.D. Drew",1,7,8
+start,mathm001,"Mike Matheny",1,8,2
+start,hentp001,"Pat Hentgen",1,9,1
+play,1,0,reesp001,22,BCSBX,S
+play,1,0,larkb001,02,CSFFB,CS2(26)
+play,1,0,larkb001,12,CSFFBX,8/F8
+play,1,0,tuckm001,32,CBBCBC,K/C
+play,1,1,vinaf001,02,CFX,63/G
+play,1,1,rente001,02,FFX,E5/TH1
+play,1,1,lankr001,20,BBX,S9.1-3
+play,1,1,mcgwm001,22,SFBBX,8/F8S
+play,1,1,howat001,32,BBCFBX,S9.3-H(UR);1-3
+play,1,1,tatif001,00,X,9/F9
+play,2,0,bichd001,10,BX,2/FL
+play,2,0,cases001,20,BBX,43/G
+play,2,0,yound001,11,BCX,43/G
+play,2,1,drewj001,10,BX,7/F7
+play,2,1,mathm001,01,CX,63/G
+play,2,1,hentp001,22,BBCSFX,6/L6
+play,3,0,boona001,00,,NP
+sub,stync001,"Chris Stynes",0,7,11
+com,"Boone tears ACL - out for year as of 7-31-00"
+play,3,0,stync001,00,X,43/G
+play,3,0,taube001,22,CFBBS,K
+play,3,0,harnp001,22,BBSFFFX,63/G
+play,3,1,vinaf001,00,,NP
+sub,stync001,"Chris Stynes",0,7,5
+play,3,1,vinaf001,00,X,9/L9
+play,3,1,rente001,11,CBX,8/F8D
+play,3,1,lankr001,11,CBX,9/L9
+play,4,0,reesp001,12,BCCS,K
+play,4,0,larkb001,10,BX,9/F9D
+play,4,0,tuckm001,21,BSBX,43/G
+play,4,1,mcgwm001,10,BX,3/P3
+play,4,1,howat001,00,X,43/G
+play,4,1,tatif001,21,BBFX,9/F9
+play,5,0,bichd001,10,BX,53/G
+play,5,0,cases001,22,BFBFX,6/F6
+play,5,0,yound001,10,BX,23/G
+play,5,1,drewj001,10,BX,HR/8
+play,5,1,mathm001,00,X,53/G
+play,5,1,hentp001,10,BX,E5/G
+play,5,1,vinaf001,10,BX,D9.1-3
+play,5,1,rente001,01,CX,7/SF.3-H(UR)
+play,5,1,lankr001,00,X,7/F7
+play,6,0,stync001,32,FBCFBBX,HR/8
+play,6,0,taube001,10,BX,7/F7
+play,6,0,harnp001,00,X,S7/7S
+play,6,0,reesp001,11,SBX,54(1)3/GDP
+play,6,1,mcgwm001,32,BCBBFB,W
+play,6,1,howat001,10,BX,7/F7
+play,6,1,tatif001,22,BFSBS,K
+play,6,1,drewj001,30,BBBB,W.1-2
+play,6,1,mathm001,32,SBFBBX,3/P3
+play,7,0,larkb001,00,X,8/F8
+play,7,0,tuckm001,00,X,13/G
+play,7,0,bichd001,12,BFSX,D7/7D
+play,7,0,cases001,21,BBFX,HR/8.2-H
+play,7,0,yound001,22,CBBFFS,K
+play,7,1,hentp001,00,,NP
+sub,dunss001,"Shawon Dunston",1,9,11
+play,7,1,dunss001,22,FFBFFBFX,HR/7
+play,7,1,vinaf001,01,CX,7/F7S
+play,7,1,rente001,01,CX,9/F9
+play,7,1,lankr001,12,FSBX,13/G
+play,8,0,stync001,00,,NP
+sub,morrm001,"Matt Morris",1,9,1
+play,8,0,stync001,00,X,63/G
+play,8,0,taube001,32,SFBBBX,43/G
+play,8,0,harnp001,00,,NP
+sub,morrh001,"Hal Morris",0,9,11
+play,8,0,morrh001,00,X,7/F7D
+play,8,1,mcgwm001,00,,NP
+sub,sulls001,"Scott Sullivan",0,9,1
+play,8,1,mcgwm001,32,CFBBBB,W
+play,8,1,howat001,20,BBX,46(1)/FO
+play,8,1,tatif001,22,BBSFFFFX,54(1)3/GDP
+play,9,0,reesp001,00,,NP
+sub,grifk002,"Ken Griffey",0,1,11
+play,9,0,grifk002,22,CBFFFBX,7/F7
+play,9,0,larkb001,01,CX,S9
+play,9,0,tuckm001,00,,NP
+sub,vered001,"Dave Veres",1,9,1
+play,9,0,tuckm001,32,BSSBBS,K
+play,9,0,bichd001,12,SBFX,8/F8
+data,er,harnp001,2
+data,er,sulls001,0
+data,er,hentp001,3
+data,er,morrm001,0
+data,er,vered001,0

@@ -1,0 +1,151 @@
+version,2
+info,visteam,BOS
+info,hometeam,SEA
+info,site,SEA03
+info,date,2000/04/05
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,nelsj901
+info,ump1b,cousd901
+info,ump2b,marqa901
+info,ump3b,brinj901
+info,pitches,pitches
+info,temp,72
+info,winddir,unknown
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,191
+info,attendance,29242
+info,wp,garcf002
+info,lp,martr002
+info,save,
+start,offej001,"Jose Offerman",0,1,4
+start,valej002,"John Valentin",0,2,5
+start,everc001,"Carl Everett",0,3,8
+start,garcn001,"Nomar Garciaparra",0,4,6
+start,oleat001,"Troy O'Leary",0,5,7
+start,stanm002,"Mike Stanley",0,6,3
+start,daubb001,"Brian Daubach",0,7,10
+start,varij001,"Jason Varitek",0,8,2
+start,nixot001,"Trot Nixon",0,9,9
+start,martr002,"Ramon Martinez",0,0,1
+start,camem001,"Mike Cameron",1,1,8
+start,mclem001,"Mark McLemore",1,2,7
+start,rodra001,"Alex Rodriguez",1,3,6
+start,olerj001,"John Olerud",1,4,3
+start,mabrj001,"John Mabry",1,5,10
+start,buhnj001,"Jay Buhner",1,6,9
+start,belld002,"David Bell",1,7,4
+start,wilsd001,"Dan Wilson",1,8,2
+start,guilc001,"Carlos Guillen",1,9,5
+start,garcf002,"Freddy An. Garcia",1,0,1
+play,1,0,offej001,22,BBCCX,D/78
+play,1,0,valej002,01,CX,13/SH.2-3
+play,1,0,everc001,32,BSBBSX,6/P6
+play,1,0,garcn001,00,X,5/L5
+play,1,1,camem001,00,X,S7
+play,1,1,mclem001,30,BBBB,W.1-2
+play,1,1,rodra001,02,FCFFH,HP.2-3;1-2
+play,1,1,olerj001,12,BCSX,8/SF.3-H
+play,1,1,mabrj001,00,X,S/78S.2-H;1-2
+play,1,1,buhnj001,22,CBSBFX,HR/9.2-H;1-H
+play,1,1,belld002,32,BBBCFS,K
+play,1,1,wilsd001,22,BBFSX,53/G
+play,2,0,oleat001,32,BCBFBX,9/F9
+play,2,0,stanm002,21,SBBX,53/G
+play,2,0,daubb001,12,SBFX,HR/9
+play,2,0,varij001,32,CBBSBFX,S
+play,2,0,nixot001,12,BSSS,K
+play,2,1,guilc001,32,BLBBSFFB,W
+play,2,1,camem001,21,BBCX,4/P4
+play,2,1,mclem001,30,BBBB,W.1-2
+play,2,1,rodra001,32,BBCFBFB,W.2-3;1-2
+play,2,1,olerj001,00,,NP
+sub,wasdj001,"John Wasdin",0,0,1
+play,2,1,olerj001,32,BCBCBB,W.3-H;2-3;1-2
+play,2,1,mabrj001,22,CSBBS,K
+play,2,1,buhnj001,32,SBBCBFB,W.3-H;2-3;1-2
+play,2,1,belld002,12,BCSX,5(2)/FO.1-2
+play,3,0,offej001,32,BFBBFB,W
+play,3,0,valej002,31,FBBBX,8/F8S
+play,3,0,everc001,31,BBBCX,S9/9S.1-2
+play,3,0,garcn001,00,X,6(B)4(2)/LDP
+play,3,1,wilsd001,10,BX,8/F8S
+play,3,1,guilc001,12,CBSS,K
+play,3,1,camem001,22,CBBSX,T/78D
+play,3,1,mclem001,12,BCCX,7/F7S
+play,4,0,oleat001,11,BFX,5/P5
+play,4,0,stanm002,11,CBX,7/F7D
+play,4,0,daubb001,21,BFBX,HR/8
+play,4,0,varij001,21,BCBX,S9/9S
+play,4,0,nixot001,01,CX,9/F9
+play,4,1,rodra001,20,BBX,HR/9
+play,4,1,olerj001,32,CBBFFBC,K/C
+play,4,1,mabrj001,02,FFFS,K
+play,4,1,buhnj001,32,SBBBCFX,S8
+play,4,1,belld002,01,CX,8/F8D
+play,5,0,offej001,32,CBCBBB,W
+play,5,0,valej002,12,CBFX,13/G.1-2
+play,5,0,everc001,32,CSBBBS,K23
+play,5,0,garcn001,31,BBBCX,8/F8
+play,5,1,wilsd001,00,,NP
+sub,waket001,"Tim Wakefield",0,0,1
+play,5,1,wilsd001,30,BBBB,W
+play,5,1,guilc001,32,BBBCFS,K
+play,5,1,camem001,22,BCBCS,K
+play,5,1,mclem001,32,BBCFBX,S9.1-3
+play,5,1,rodra001,00,B,DI.1-2
+play,5,1,rodra001,21,BBCX,43/G
+play,6,0,oleat001,00,,NP
+sub,rodrf001,"Frankie Rodriguez",1,0,1
+play,6,0,oleat001,31,CBBBX,6/P6
+play,6,0,stanm002,01,CX,S8
+play,6,0,daubb001,21,CBBB,WP.1-2
+play,6,0,daubb001,31,CBBBB,W
+play,6,0,varij001,32,BCBFBX,5/FL
+play,6,0,nixot001,02,CFX,9/F9
+play,6,1,olerj001,01,CX,HR/9
+play,6,1,mabrj001,22,SCBFBS,K
+play,6,1,buhnj001,22,BFFFBFFX,63/G
+play,6,1,belld002,22,CBSBX,E6/G
+play,6,1,wilsd001,00,X,8/F8
+play,7,0,offej001,11,CBX,7/F7
+play,7,0,valej002,20,BBX,HR/7
+play,7,0,everc001,11,BCX,3/G
+play,7,0,garcn001,22,BBCFFFS,K
+play,7,1,guilc001,20,BBX,31/G
+play,7,1,camem001,22,BBCSFS,K
+play,7,1,mclem001,10,BX,S9
+play,7,1,rodra001,12,CBFX,3/P3
+play,8,0,oleat001,00,,NP
+sub,rhoda001,"Arthur Rhodes",1,0,1
+play,8,0,oleat001,12,FBFS,K
+play,8,0,stanm002,22,SFBBS,K
+play,8,0,daubb001,00,,NP
+sub,gaetg001,"Gary Gaetti",0,7,11
+play,8,0,gaetg001,22,BSSFFBFS,K
+play,8,1,olerj001,00,,NP
+sub,alexm001,"Manny Alexander",0,2,5
+play,8,1,olerj001,00,X,3/G
+play,8,1,mabrj001,32,BBFBFB,W
+play,8,1,buhnj001,22,BCFBX,54(1)3/GDP
+play,9,0,varij001,00,,NP
+sub,gipsc001,"Charles Gipson",1,6,9
+play,9,0,varij001,00,,NP
+sub,sasak001,"Kazuhiro Sasaki",1,0,1
+play,9,0,varij001,12,CFBFX,6/P6
+com,"Debut game for Kazuhiro Sasaki"
+play,9,0,nixot001,22,CBFFBFX,S9
+play,9,0,offej001,00,X,13/G.1-2
+play,9,0,alexm001,02,SCC,K/C
+data,er,martr002,7
+data,er,wasdj001,1
+data,er,waket001,1
+data,er,garcf002,2
+data,er,rodrf001,1
+data,er,rhoda001,0
+data,er,sasak001,0

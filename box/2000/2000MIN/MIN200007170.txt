@@ -1,0 +1,162 @@
+version,2
+info,visteam,SLN
+info,hometeam,MIN
+info,site,MIN03
+info,date,2000/07/17
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,randt901
+info,ump1b,wintm901
+info,ump2b,fichm901
+info,ump3b,barrt901
+info,pitches,pitches
+info,temp,72
+info,winddir,ltor
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,184
+info,attendance,20171
+info,wp,hentp001
+info,lp,lincm001
+info,save,
+start,vinaf001,"Fernando Vina",0,1,4
+start,rente001,"Edgar Renteria",0,2,6
+start,edmoj001,"Jim Edmonds",0,3,8
+start,tatif001,"Fernando Tatis",0,4,10
+start,howat001,"Thomas Howard",0,5,9
+start,peree001,"Eduardo Perez",0,6,3
+start,richc001,"Chris Richard",0,7,7
+start,mathm001,"Mike Matheny",0,8,2
+start,polap001,"Placido Polanco",0,9,5
+start,hentp001,"Pat Hentgen",0,0,1
+start,guzmc001,"Cristian Guzman",1,1,6
+start,canij001,"Jay Canizaro",1,2,4
+start,lawtm002,"Matt Lawton",1,3,7
+start,ortid001,"David Ortiz",1,4,3
+start,koskc001,"Corey Koskie",1,5,5
+start,cummm001,"Midre Cummings",1,6,10
+start,allec001,"Chad Allen",1,7,9
+start,jonej003,"Jacque Jones",1,8,8
+start,jensm001,"Marcus Jensen",1,9,2
+start,lincm001,"Mike Lincoln",1,0,1
+play,1,0,vinaf001,32,CBBBCX,9/F9D
+play,1,0,rente001,30,BBBB,W
+play,1,0,edmoj001,11,CBX,S9/9S.1-2
+play,1,0,tatif001,22,BCBFH,HP.2-3;1-2
+play,1,0,howat001,22,BFBSS,K
+play,1,0,peree001,22,BBCSC,K/C
+play,1,1,guzmc001,22,BCBFS,K
+play,1,1,canij001,22,CCBBX,D7/7D
+play,1,1,lawtm002,30,BBBB,W
+play,1,1,ortid001,12,FBCX,8/F8
+play,1,1,koskc001,10,BX,5(2)/FO.1-2
+play,2,0,richc001,00,X,HR/9
+com,"Debut game for Chris Richard"
+com,"$HR on first pitch in major leagues"
+play,2,0,mathm001,11,BCX,13/G
+play,2,0,polap001,31,FBBBB,W
+play,2,0,vinaf001,00,X,9/L9
+play,2,0,rente001,21,BBCX,4(1)/FO/G
+play,2,1,cummm001,12,CFBFFC,K/C
+play,2,1,allec001,32,CFBBFFBX,S7/7S
+play,2,1,jonej003,22,FFBBB,CS2(24)
+play,2,1,jonej003,32,FFBBBB,W
+play,2,1,jensm001,01,CX,6/P6
+play,3,0,edmoj001,31,FBBBX,D9
+play,3,0,tatif001,32,SBBBFX,3/P3
+play,3,0,howat001,10,BX,S8.2-H
+play,3,0,peree001,01,FX,7/F7
+play,3,0,richc001,11,BSB,WP.1-2
+play,3,0,richc001,32,BSBBSS,K
+play,3,1,guzmc001,00,X,S8
+play,3,1,canij001,30,BBBB,W.1-2
+play,3,1,lawtm002,32,FSBBBX,53/G.2-3;1-2
+play,3,1,ortid001,00,X,43/G.3-H;2-3
+play,3,1,koskc001,22,CCBBX,8/F8
+play,4,0,mathm001,01,CX,43/G
+play,4,0,polap001,00,X,63/G
+play,4,0,vinaf001,21,BFBX,31/G
+play,4,1,cummm001,01,CX,8/F8
+play,4,1,allec001,02,CFC,K/C
+play,4,1,jonej003,22,CBSBFX,S8
+play,4,1,jensm001,32,SBBCBS,K
+play,5,0,rente001,00,X,S7
+play,5,0,edmoj001,32,BBFBSFX,8/F8D
+play,5,0,tatif001,21,BBFX,HR/7.1-H
+play,5,0,howat001,32,CBBSBB,W
+play,5,0,peree001,11,CBX,S9.1-2
+play,5,0,richc001,31,BBBSB,W.2-3;1-2
+play,5,0,mathm001,00,,NP
+sub,carrh001,"Hector Carrasco",1,0,1
+play,5,0,mathm001,01,SX,9/F9S
+play,5,0,polap001,00,X,5(2)/FO.1-2
+play,5,1,guzmc001,31,BCBBX,63/G
+play,5,1,canij001,00,X,S9
+play,5,1,lawtm002,32,CCBBBX,63/G.1-2
+play,5,1,ortid001,20,BBX,63/G
+play,6,0,vinaf001,32,BCBBFS,K
+play,6,0,rente001,21,BFBX,S7/7S
+play,6,0,edmoj001,32,BBSBCC,K+CS2(26)/DP/C
+play,6,1,koskc001,02,CFFX,31/G
+play,6,1,cummm001,01,CX,63/G
+play,6,1,allec001,12,BFCFC,K/C
+play,7,0,tatif001,10,BX,6/FL
+play,7,0,howat001,00,X,D9
+play,7,0,peree001,21,BCBX,63/G.2-3
+play,7,0,richc001,10,BX,43/G
+play,7,1,jonej003,12,BCFX,S9/9S
+play,7,1,jensm001,11,CBX,S9/9S.1-2
+play,7,1,guzmc001,00,,NP
+sub,sloch001,"Heathcliff Slocumb",0,0,1
+play,7,1,guzmc001,00,X,13/SH.2-3;1-2
+play,7,1,canij001,32,FBFBBB,W
+play,7,1,lawtm002,00,X,43(B)6(1)/GDP.3-H
+play,8,0,mathm001,00,,NP
+sub,ryanj001,"Jay Ryan",1,0,1
+play,8,0,mathm001,00,X,63/G
+play,8,0,polap001,01,CX,S8
+play,8,0,vinaf001,00,,NP
+sub,millt001,"Travis Miller",1,0,1
+play,8,0,vinaf001,02,SFS,K
+play,8,0,rente001,32,CCBBBB,W.1-2
+play,8,0,edmoj001,00,X,HR/9.2-H;1-H
+play,8,0,tatif001,12,CCBX,D7
+play,8,0,howat001,10,BX,FC5.2X3(5);B-1#
+play,8,1,ortid001,00,,NP
+sub,paquc001,"Craig Paquette",0,5,9
+play,8,1,ortid001,21,BCBX,31/G
+play,8,1,koskc001,00,X,S7
+play,8,1,cummm001,22,FCBBC,K/C
+play,8,1,allec001,12,FFBFS,K
+play,9,0,peree001,00,,NP
+sub,hawkl001,"LaTroy Hawkins",1,0,1
+play,9,0,peree001,00,X,S6.B-2(E6/TH1)
+play,9,0,richc001,12,BSSX,13/G.2-3
+play,9,0,mathm001,10,BX,63/G.3-H(UR)
+play,9,0,polap001,00,X,3/G
+play,9,1,jonej003,00,,NP
+sub,dunss001,"Shawon Dunston",0,3,8
+play,9,1,jonej003,00,,NP
+sub,benea002,"Alan Benes",0,0,1
+play,9,1,jonej003,00,X,HR/9
+play,9,1,jensm001,00,X,7/FL
+play,9,1,guzmc001,10,BX,7/F7
+play,9,1,canij001,32,BFSBBX,S7
+play,9,1,lawtm002,02,FCB,WP.1-2
+play,9,1,lawtm002,22,FCBBX,S8.2-3
+play,9,1,ortid001,00,,NP
+sub,vered001,"Dave Veres",0,0,1
+play,9,1,ortid001,01,CX,53/G
+data,er,hentp001,2
+data,er,sloch001,0
+data,er,benea002,1
+data,er,vered001,0
+data,er,lincm001,4
+data,er,carrh001,0
+data,er,ryanj001,1
+data,er,millt001,2
+data,er,hawkl001,0

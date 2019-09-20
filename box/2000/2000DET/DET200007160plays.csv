@@ -1,0 +1,80 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,21,1,,,,,0,4,CBBX,weavj002,1,0,,stync001,0,L
+,21,1,,,,,1,8,BFBX,weavj002,1,0,,larkb001,0,F
+,01,1,,,,,2,10,CX,weavj002,1,0,,grifk002,0,P
+,22,1,,,,,3,6,CBFBFS,parrs001,1,0,polol001 strikes out. ,polol001,1,
+,32,1,,,,,4,12,BCFBBC,parrs001,1,0,beckr002 strikes out. ,beckr002,1,
+,21,1,,,,,5,16,CBBX,parrs001,1,0,,higgb001,1,F
+,32,2,,,,,6,18,CBCFBFBX,weavj002,1,0,bichd001 grounds out. ,bichd001,0,G
+,00,2,cases001,,,,7,19,H,weavj002,0,0,cases001 hit by pitch. ,cases001,0,
+cases001 to 3B. ,00,2,,yound001,cases001,,8,20,X,weavj002,0,0,yound001 doubles. ,yound001,0,
+cases001 out. yound001 to 3B. tuckm001 to 1B. ,31,2,tuckm001,,yound001,,9,25,BFBBX,weavj002,1,0,tuckm001 hits into a fielder's choice. ,tuckm001,0,
+,01,2,tuckm001,,yound001,,10,27,CX,weavj002,1,0,,reesp001,0,F
+,21,2,palmd002,,,,11,20,BBFX,parrs001,0,0,palmd002 singles. ,palmd002,1,
+palmd002 to 2B. ,11,2,,palmd002,,,12,23,SBX,parrs001,1,0,cruzd001 grounds out. ,cruzd001,1,G
+,32,2,encaj001,palmd002,,,13,30,FBFBBFB,parrs001,0,0,encaj001 walks. ,encaj001,1,
+,22,2,encaj001,palmd002,,,14,35,CFBBC,parrs001,1,0,ausmb001 strikes out. ,ausmb001,1,
+palmd002 to 3B. encaj001 out. ,10,2,easld001,,palmd002,,15,37,BX,parrs001,1,0,easld001 reaches on fielder's choice. ,easld001,1,
+,11,3,,,,,16,30,BFX,weavj002,1,0,taube001 grounds out. ,taube001,0,G
+,21,3,stync001,,,,17,34,BBFX,weavj002,0,0,stync001 singles. ,stync001,0,
+stync001 to 3B. larkb001 to 2B. ,00,3,,larkb001,stync001,,18,35,X,weavj002,0,0,larkb001 singles. ,larkb001,0,
+stync001 scores. larkb001 to 3B. ,11,3,,,larkb001,,19,38,SBX,weavj002,1,1,grifk002 grounds out. ,grifk002,0,G
+,01,3,,,larkb001,,20,40,SX,weavj002,1,0,bichd001 grounds out. ,bichd001,0,G
+,12,3,,,,,21,41,FBCX,parrs001,1,0,halts001 grounds out. ,halts001,1,G
+,21,3,,,,,22,45,BBFX,parrs001,1,0,,polol001,1,P
+,22,3,,,,,23,50,BBCCX,parrs001,1,0,beckr002 grounds out. ,beckr002,1,G
+,02,4,,,,,24,43,CFS,weavj002,1,0,cases001 strikes out. ,cases001,0,
+,00,4,,yound001,,,25,44,X,weavj002,0,0,yound001 doubles. ,yound001,0,
+,30,4,tuckm001,yound001,,,26,48,BBBB,weavj002,0,0,tuckm001 walks. ,tuckm001,0,
+,02,4,tuckm001,yound001,,,27,51,CSX,weavj002,1,0,,reesp001,0,F
+,21,4,tuckm001,yound001,,,28,55,FBBX,weavj002,1,0,taube001 grounds out. ,taube001,0,G
+,00,4,,higgb001,,,29,51,X,parrs001,0,0,higgb001 doubles. ,higgb001,1,
+,00,4,,higgb001,,,30,52,X,parrs001,1,0,,palmd002,1,
+higgb001 scores. cruzd001 to 2B. ,10,4,,cruzd001,,,31,54,BX,parrs001,0,1,cruzd001 singles. ,cruzd001,1,
+cruzd001 scores. ,22,4,,encaj001,,,32,59,BBFFX,parrs001,0,1,encaj001 doubles. ,encaj001,1,
+,32,4,,encaj001,,,33,65,BBCFBS,parrs001,1,0,ausmb001 strikes out. ,ausmb001,1,
+,31,4,easld001,,encaj001,,34,70,BBCBB,parrs001,0,0,easld001 walks. encaj001 steals 3B. ,easld001,1,
+,11,4,,easld001,encaj001,halts001,35,73,BCB,parrs001,0,0,easld001 steals 2B. ,halts001,1,
+encaj001 scores. easld001 scores. ,21,4,,halts001,,,36,77,BCBX,parrs001,0,2,halts001 doubles. ,halts001,1,
+,21,4,,halts001,,,37,81,BBFX,parrs001,1,0,,polol001,1,F
+,10,5,,stync001,,,38,57,BX,weavj002,0,0,stync001 doubles. ,stync001,0,
+stync001 scores. ,00,5,larkb001,,,,39,58,X,weavj002,0,1,larkb001 singles. ,larkb001,0,
+,32,5,larkb001,,,,40,65,BFBCBFX,weavj002,1,0,,grifk002,0,F
+,02,5,larkb001,,,,41,68,SSX,weavj002,1,0,,bichd001,0,F
+larkb001 to 2B. ,11,5,cases001,larkb001,,,42,71,FBX,weavj002,0,0,cases001 singles. ,cases001,0,
+larkb001 to 3B. cases001 to 2B. ,31,5,yound001,cases001,larkb001,,43,76,BFBBB,weavj002,0,0,yound001 walks. ,yound001,0,
+,02,5,yound001,cases001,larkb001,,44,80,CSFS,weavj002,1,0,tuckm001 strikes out. ,tuckm001,0,
+,31,5,,,,,45,86,BFBBX,parrs001,1,0,,beckr002,1,
+,20,5,,,,,46,89,BBX,parrs001,0,1,higgb001 homers. ,higgb001,1,
+,12,5,,,,,47,93,BCFX,parrs001,1,0,,palmd002,1,F
+,00,5,,cruzd001,,,48,94,X,parrs001,0,0,cruzd001 doubles. ,cruzd001,1,
+cruzd001 scores. ,10,5,,encaj001,,,50,2,BX,larka001,0,1,encaj001 doubles. ,encaj001,1,
+,31,5,,encaj001,,,51,7,BCBBX,larka001,1,0,ausmb001 grounds out. ,ausmb001,1,G
+,00,6,reesp001,,,,52,81,X,weavj002,0,0,reesp001 singles. ,reesp001,0,
+,10,6,reesp001,,,,53,83,BX,weavj002,1,0,,taube001,0,F
+reesp001 to 2B. ,31,6,stync001,reesp001,,,54,88,BBFBB,weavj002,0,0,stync001 walks. ,stync001,0,
+reesp001 to 3B. stync001 to 2B. ,02,6,larkb001,stync001,reesp001,,55,91,CCX,weavj002,0,0,larkb001 singles. ,larkb001,0,
+,12,6,larkb001,stync001,reesp001,,57,4,BSCS,nitkc001,1,0,grifk002 strikes out. ,grifk002,0,
+,00,6,larkb001,stync001,reesp001,,58,5,X,nitkc001,1,0,bichd001 grounds out. ,bichd001,0,G
+,01,6,,,,,59,9,CX,larka001,1,0,,easld001,1,F
+,30,6,halts001,,,,60,13,BBBB,larka001,0,0,halts001 walks. ,halts001,1,
+,31,6,halts001,,,,62,5,BBBCX,villr001,1,0,,polol001,1,F
+,12,6,halts001,,,,63,9,CFBC,villr001,1,0,beckr002 strikes out. ,beckr002,1,
+,22,7,,,,,64,10,CFBBC,nitkc001,1,0,cases001 strikes out. ,cases001,0,
+,32,7,,,,,65,16,BSBCBX,nitkc001,1,0,yound001 grounds out. ,yound001,0,G
+,20,7,,,,,67,19,BBX,nitkc001,1,0,,ochoa001,0,P
+,21,7,higgb001,,,,69,13,BCBX,villr001,0,0,higgb001 singles. ,higgb001,1,
+,02,7,higgb001,,,,70,16,FSS,villr001,1,0,palmd002 strikes out. ,palmd002,1,
+,12,7,,,,,71,21,CSFBX,villr001,2,0,Double Play. ,cruzd001,1,
+,10,8,,,,,73,2,BX,andem002,1,0,,reesp001,0,
+,22,8,,,,,74,8,CCFBBX,andem002,1,0,taube001 grounds out. ,taube001,0,G
+,01,8,,,,,75,10,CX,andem002,1,0,,stync001,0,P
+,11,8,,,,,77,3,FBX,wincs001,1,0,encaj001 grounds out. ,encaj001,1,G
+,32,8,ausmb001,,,,78,9,CBBBFX,wincs001,0,0,ausmb001 singles. ,ausmb001,1,
+,11,8,,ausmb001,,easld001,79,12,CBB,wincs001,0,0,ausmb001 steals 2B. ,easld001,1,
+,32,8,,ausmb001,,,80,18,CBBBSC,wincs001,1,0,easld001 strikes out. ,easld001,1,
+,00,8,,ausmb001,,,81,19,X,wincs001,1,0,halts001 grounds out. ,halts001,1,G
+larkb001 to 2B. ,11,9,,larkb001,,,83,3,CBX,brocd001,0,0,larkb001 reaches on error. ,larkb001,0,
+,22,9,,larkb001,,,84,9,BBFSFX,brocd001,1,0,,grifk002,0,P
+larkb001 to 3B. ,12,9,bichd001,,larkb001,,85,13,BFCX,brocd001,0,0,bichd001 singles. ,bichd001,0,
+,02,9,,,larkb001,,86,17,CFFX,brocd001,2,0,Double Play. ,cases001,0,

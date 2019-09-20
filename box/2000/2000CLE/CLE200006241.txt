@@ -1,0 +1,132 @@
+version,2
+info,visteam,DET
+info,hometeam,CLE
+info,site,CLE08
+info,date,2000/06/24
+info,number,1
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,morrd901
+info,ump1b,mckej901
+info,ump2b,fichm901
+info,ump3b,katzt901
+info,pitches,pitches
+info,temp,81
+info,winddir,torf
+info,windspeed,14
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,169
+info,attendance,43081
+info,wp,colob001
+info,lp,spars001
+info,save,
+start,polol001,"Luis Polonia",0,1,10
+start,fickr001,"Robert Fick",0,2,2
+start,higgb001,"Bobby Higginson",0,3,7
+start,gonzj002,"Juan Gonzalez",0,4,9
+start,palmd002,"Dean Palmer",0,5,5
+start,clart002,"Tony Clark",0,6,3
+start,easld001,"Damion Easley",0,7,4
+start,encaj001,"Juan Encarnacion",0,8,8
+start,cruzd001,"Deivi Cruz",0,9,6
+start,spars001,"Steve Sparks",0,0,1
+start,loftk001,"Kenny Lofton",1,1,8
+start,wilse001,"Enrique Wilson",1,2,6
+start,alomr001,"Roberto Alomar",1,3,4
+start,thomj002,"Jim Thome",1,4,3
+start,frymt001,"Travis Fryman",1,5,5
+start,justd001,"David Justice",1,6,9
+start,sexsr001,"Richie Sexson",1,7,7
+start,branr001,"Russell Branyan",1,8,10
+start,diaze002,"Einar Diaz",1,9,2
+start,colob001,"Bartolo Colon",1,0,1
+com,"rain delays of 1:22 in the 1st and 37 minutes in the 4th"
+play,1,0,polol001,22,BBCFX,S8
+play,1,0,fickr001,32,BCBCFBB,W.1-2
+play,1,0,higgb001,12,BCFC,K/C
+play,1,0,gonzj002,12,CBSS,K
+play,1,0,palmd002,32,BBBCFC,K/C
+play,1,1,loftk001,22,CBBFX,43/G
+badj,wilse001,R
+play,1,1,wilse001,11,BCX,S9/9S
+badj,alomr001,R
+play,1,1,alomr001,30,BBBX,S9/9S.1-2
+play,1,1,thomj002,10,BX,9/F9
+play,1,1,frymt001,30,BBBB,W.2-3;1-2
+play,1,1,justd001,31,BCBBB,W.3-H;2-3;1-2
+play,1,1,sexsr001,12,CBCFX,8/F8
+play,2,0,clart002,32,BBSBCX,53/G
+play,2,0,easld001,12,CCBC,K/C
+play,2,0,encaj001,02,CFFX,7/F7
+play,2,1,branr001,20,BBX,HR/9
+play,2,1,diaze002,00,X,63/G
+play,2,1,loftk001,21,FBBX,2/FL
+badj,wilse001,R
+play,2,1,wilse001,32,CBCBBX,S8
+play,2,1,alomr001,01,CX,3/G
+play,3,0,cruzd001,20,BBX,63/G
+play,3,0,polol001,00,X,9/F9
+play,3,0,fickr001,32,CBBBCFFFFB,W
+play,3,0,higgb001,30,BBBX,6/FL
+play,3,1,thomj002,32,BBBFFB,W
+play,3,1,frymt001,10,BX,54(1)3/GDP
+play,3,1,justd001,11,CBX,4/P4
+play,4,0,gonzj002,02,CSS,K
+play,4,0,palmd002,02,CCS,K
+play,4,0,clart002,12,FBSC,K/C
+play,4,1,sexsr001,02,FFFX,8/F8D
+play,4,1,branr001,22,FBFBX,41/G
+play,4,1,diaze002,01,FX,4/P4
+play,5,0,easld001,11,BCX,HR/8
+play,5,0,encaj001,11,CBX,S8/8S
+play,5,0,cruzd001,12,CFBFX,64(1)3/GDP
+play,5,0,polol001,32,BCCBBX,D7
+play,5,0,fickr001,10,BX,31/G
+play,5,1,loftk001,22,CBBFX,63/G
+play,5,1,wilse001,31,BCBBB,W
+play,5,1,alomr001,31,BCBBB,W.1-2
+play,5,1,thomj002,22,BCFBX,D9.2-H;1-H
+play,5,1,frymt001,00,X,S8/8S.2-H
+play,5,1,justd001,12,CFBX,9/F9
+play,5,1,sexsr001,00,X,D/78.1-H
+play,5,1,branr001,00,H,HP
+play,5,1,diaze002,01,CX,5/P5
+play,6,0,higgb001,32,BCCBFBFS,K
+play,6,0,gonzj002,11,CBX,4/P4
+play,6,0,palmd002,32,SFBFBBS,K
+play,6,1,loftk001,21,BCBX,8/F8
+play,6,1,wilse001,22,CBBCX,S
+play,6,1,alomr001,11,BFX,3/FL
+play,6,1,thomj002,10,BX,T7/7D.1-H
+play,6,1,frymt001,00,,NP
+sub,pattd001,"Danny Patterson",0,0,1
+play,6,1,frymt001,10,BX,S8/8S.3-H
+play,6,1,justd001,22,BSBSS,K
+play,7,0,clart002,32,BFBSFBS,K
+play,7,0,easld001,32,BCFBFBB,W
+play,7,0,encaj001,00,,NP
+sub,speij001,"Justin Speier",1,0,1
+play,7,0,encaj001,12,CFBX,4(1)3/GDP
+play,7,1,sexsr001,12,SCBS,K
+play,7,1,branr001,12,FCBFS,K
+play,7,1,diaze002,00,X,4/L4
+play,8,0,cruzd001,11,BFX,3/P3
+play,8,0,polol001,10,BX,4/P4
+play,8,0,fickr001,22,CBBCC,K/C
+play,8,1,loftk001,00,,NP
+sub,andem002,"Matt Anderson",0,0,1
+play,8,1,loftk001,12,CFBX,43/G
+play,8,1,wilse001,21,BBFX,7/F7
+play,8,1,alomr001,11,BFX,3/G
+play,9,0,higgb001,32,BBCFBFB,W
+play,9,0,gonzj002,12,BCSS,K
+play,9,0,palmd002,31,BBCBX,53/G.1-2
+play,9,0,clart002,12,CFBX,8/F8
+data,er,spars001,8
+data,er,pattd001,0
+data,er,andem002,0
+data,er,colob001,1
+data,er,speij001,0

@@ -1,0 +1,175 @@
+version,2
+info,visteam,ARI
+info,hometeam,NYN
+info,site,NYC17
+info,date,2000/08/25
+info,number,0
+info,starttime,7:10PM
+info,daynight,night
+info,usedh,false
+info,umphome,mealj901
+info,ump1b,marqa901
+info,ump2b,brinj901
+info,ump3b,cousd901
+info,pitches,pitches
+info,temp,74
+info,winddir,ltor
+info,windspeed,6
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,189
+info,attendance,38237
+info,wp,reedr002
+info,lp,johnr005
+info,save,
+start,womat001,"Tony Womack",0,1,6
+start,bellj001,"Jay Bell",0,2,4
+start,gonzl001,"Luis Gonzalez",0,3,7
+start,willm003,"Matt D. Williams",0,4,5
+start,finls001,"Steve Finley",0,5,8
+start,colbg001,"Greg Colbrunn",0,6,3
+start,milld002,"Damian Miller",0,7,2
+start,bautd001,"Danny Bautista",0,8,9
+start,johnr005,"Randy Johnson",0,9,1
+start,mcewj001,"Joe McEwing",1,1,5
+start,belld001,"Derek Bell",1,2,9
+start,alfoe001,"Edgardo Alfonzo",1,3,4
+start,piazm001,"Mike Piazza",1,4,2
+start,zeilt001,"Todd Zeile",1,5,3
+start,agbab001,"Benny Agbayani",1,6,7
+start,paytj001,"Jay Payton",1,7,8
+start,bordm001,"Mike Bordick",1,8,6
+start,reedr002,"Rick Reed",1,9,1
+play,1,0,womat001,02,CFFFFX,43/G
+play,1,0,bellj001,32,CBBBCFFFX,7/F7
+play,1,0,gonzl001,11,BCX,7/F7
+play,1,1,mcewj001,21,BFBX,7/F7
+play,1,1,belld001,00,X,8/F8
+play,1,1,alfoe001,10,BX,S8
+play,1,1,piazm001,32,BBCBCFFX,8/F8
+play,2,0,willm003,20,BBX,4/L4
+play,2,0,finls001,11,CBX,43/G
+play,2,0,colbg001,12,CCFFFBX,S8/8S
+play,2,0,milld002,22,BSBFFX,6/P6
+play,2,1,zeilt001,11,BCX,S8/8S
+play,2,1,agbab001,30,BBBB,W.1-2
+play,2,1,paytj001,00,X,S9/9S.2-H;1-3
+play,2,1,bordm001,01,SX,E5/G.3-H(NR)(UR);1-2
+play,2,1,reedr002,00,X,14/SH.2-3;1-2
+play,2,1,mcewj001,01,FX,3/SH.3-H(UR);2-3
+play,2,1,belld001,32,BFBFBX,9/L9
+play,3,0,bautd001,11,CBX,D/78
+play,3,0,johnr005,02,CCX,1/BP1
+play,3,0,womat001,12,BLCFFFFFX,43/G.2-3
+play,3,0,bellj001,22,CFBBX,53/G
+play,3,1,alfoe001,22,CCBFFBX,S7
+play,3,1,piazm001,11,BFX,E1/TH.1-3
+play,3,1,zeilt001,22,CBFFBX,S7.3-H(UR);1-2
+play,3,1,agbab001,30,BBBB,W.2-3;1-2
+play,3,1,paytj001,32,CBBCBFX,D9.3-H;2-H;1XH(942);B-3(THH)
+play,3,1,bordm001,00,,NP
+sub,morgm001,"Mike Morgan",0,9,1
+play,3,1,bordm001,02,CFC,K/C
+play,3,1,reedr002,02,SFX,13/G
+play,4,0,gonzl001,02,CFS,K
+play,4,0,willm003,01,FX,53/G
+play,4,0,finls001,11,CBX,S8
+play,4,0,colbg001,22,FBCBX,S/89.1-3
+play,4,0,milld002,02,CFFX,3/P3
+play,4,1,mcewj001,02,CCFC,K/C
+play,4,1,belld001,32,CSBBBFFX,63/G
+play,4,1,alfoe001,11,CBX,S8
+play,4,1,piazm001,11,BCX,S7.1-2
+play,4,1,zeilt001,31,CBBBX,63/G
+play,5,0,bautd001,21,BCBX,43/G
+play,5,0,morgm001,32,BBCBCS,K
+play,5,0,womat001,11,FBX,6/P6
+play,5,1,agbab001,20,BBX,S7
+play,5,1,paytj001,22,BBCFX,6(1)3/GDP
+play,5,1,bordm001,32,SBBFBX,8/F8
+play,6,0,bellj001,11,CBH,HP
+play,6,0,gonzl001,01,CX,7/F7
+play,6,0,willm003,11,CBX,E6/G.1-2
+play,6,0,finls001,00,X,HR/9.2-H;1-H(UR)
+play,6,0,colbg001,22,BCSBX,53/G
+play,6,0,milld002,12,BCCC,K/C
+play,6,1,reedr002,22,BBCCX,S
+play,6,1,mcewj001,00,X,13/SH.1-2
+play,6,1,belld001,30,BBBB,W
+play,6,1,alfoe001,12,CCBX,54(1)/FO.2-3
+play,6,1,piazm001,30,BBBB,W.1-2
+play,6,1,zeilt001,32,CCBBBB,W.3-H;2-3;1-2
+play,6,1,agbab001,00,X,D8/8D.3-H;2-H;1-H
+play,6,1,paytj001,00,,NP
+sub,plesd001,"Dan Plesac",0,9,1
+play,6,1,paytj001,02,SFS,K
+play,7,0,bautd001,01,CX,43/G
+play,7,0,plesd001,00,,NP
+sub,contj001,"Jason Conti",0,9,11
+play,7,0,contj001,11,CBX,8/L8
+play,7,0,womat001,02,CSX,2/FL
+play,7,1,bordm001,00,,NP
+sub,sprir001,"Russ Springer",0,9,1
+play,7,1,bordm001,11,BFX,S7
+play,7,1,reedr002,00,,NP
+sub,harrl001,"Lenny Harris",1,9,11
+play,7,1,harrl001,02,CFX,S9/9S.1-3;B-2(TH3)
+play,7,1,mcewj001,02,FSFFS,K
+play,7,1,belld001,00,X,8/SF.3-H;2-3
+play,7,1,alfoe001,30,BBBB,W
+play,7,1,piazm001,00,,NP
+sub,abbok002,"Kurt Abbott",1,3,12
+play,7,1,piazm001,32,SSBFFBBFB,W.1-2
+play,7,1,zeilt001,00,,NP
+sub,pratt001,"Todd Pratt",1,4,12
+play,7,1,zeilt001,10,BX,9/FL
+play,8,0,bellj001,00,,NP
+sub,abbok002,"Kurt Abbott",1,3,4
+play,8,0,bellj001,00,,NP
+sub,pratt001,"Todd Pratt",1,4,2
+play,8,0,bellj001,00,,NP
+sub,harrl001,"Lenny Harris",1,9,3
+play,8,0,bellj001,00,,NP
+sub,whitr002,"Rick White",1,5,1
+play,8,0,bellj001,32,CBBFFBB,W
+play,8,0,gonzl001,00,X,8/F8S
+play,8,0,willm003,02,FFX,D7.1-3
+play,8,0,finls001,12,BSFS,K
+play,8,0,colbg001,02,SSFFX,63/G
+play,8,1,agbab001,00,,NP
+sub,friah001,"Hanley Frias",0,2,4
+play,8,1,agbab001,00,,NP
+sub,counc001,"Craig Counsell",0,4,5
+play,8,1,agbab001,00,,NP
+sub,bautd001,"Danny Bautista",0,8,8
+play,8,1,agbab001,00,,NP
+sub,delld001,"David Dellucci",0,9,9
+play,8,1,agbab001,00,,NP
+sub,swing001,"Greg Swindell",0,5,1
+play,8,1,agbab001,01,FX,S7
+play,8,1,paytj001,02,CFS,K
+play,8,1,bordm001,11,BSX,D9.1-H
+play,8,1,harrl001,00,,NP
+sub,tramb001,"Bubba Trammell",1,9,11
+play,8,1,tramb001,32,BCSFBBX,S8/8S.2-3
+play,8,1,mcewj001,12,SBSX,9/SF.3-H
+play,8,1,belld001,22,BBFFS,K
+play,9,0,milld002,00,,NP
+sub,ventr001,"Robin Ventura",1,5,3
+play,9,0,milld002,00,,NP
+sub,tramb001,"Bubba Trammell",1,9,9
+play,9,0,milld002,00,,NP
+sub,wendt001,"Turk Wendell",1,2,1
+play,9,0,milld002,32,BSBSBB,W
+play,9,0,bautd001,02,CFFS,K
+play,9,0,delld001,02,CFFX,64(1)/FO
+play,9,0,womat001,00,X,43/G
+data,er,johnr005,3
+data,er,morgm001,4
+data,er,plesd001,0
+data,er,sprir001,1
+data,er,swing001,2
+data,er,reedr002,2
+data,er,whitr002,0
+data,er,wendt001,0

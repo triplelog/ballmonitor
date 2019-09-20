@@ -1,0 +1,175 @@
+version,2
+info,visteam,NYN
+info,hometeam,BOS
+info,site,BOS07
+info,date,2000/07/14
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,fostm901
+info,ump1b,kulpr901
+info,ump2b,marsr901
+info,ump3b,herna901
+info,pitches,pitches
+info,temp,76
+info,winddir,tolf
+info,windspeed,20
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,201
+info,attendance,33293
+info,wp,mahop001
+info,lp,lowed001
+info,save,benia001
+start,mcewj001,"Joe McEwing",0,1,5
+start,belld001,"Derek Bell",0,2,9
+start,alfoe001,"Edgardo Alfonzo",0,3,4
+start,piazm001,"Mike Piazza",0,4,10
+start,zeilt001,"Todd Zeile",0,5,3
+start,paytj001,"Jay Payton",0,6,8
+start,agbab001,"Benny Agbayani",0,7,7
+start,pratt001,"Todd Pratt",0,8,2
+start,moram002,"Melvin Mora",0,9,6
+start,ruscg001,"Glendon Rusch",0,0,1
+start,offej001,"Jose Offerman",1,1,3
+start,fryej001,"Jeff Frye",1,2,4
+start,daubb001,"Brian Daubach",1,3,10
+start,garcn001,"Nomar Garciaparra",1,4,6
+start,everc001,"Carl Everett",1,5,8
+start,oleat001,"Troy O'Leary",1,6,7
+start,sprae001,"Ed Sprague",1,7,5
+start,hatts001,"Scott Hatteberg",1,8,2
+start,lewid001,"Darren Lewis",1,9,9
+start,schop001,"Pete Schourek",1,0,1
+play,1,0,mcewj001,21,BBCX,9/F9
+play,1,0,belld001,32,CBSBBX,43/G
+play,1,0,alfoe001,22,CFFBBX,D9
+play,1,0,piazm001,10,BX,9/L9
+play,1,1,offej001,11,CBX,9/F9
+play,1,1,fryej001,11,CBX,43/G
+play,1,1,daubb001,11,CBX,43/G
+play,2,0,zeilt001,31,CBBBX,8/F8
+play,2,0,paytj001,00,X,53/G
+play,2,0,agbab001,32,CBBFBX,S8
+play,2,0,pratt001,01,CX,S8.1-2
+play,2,0,moram002,10,BX,54(1)/FO.2-3
+play,2,1,garcn001,22,FFBBX,D7/7D
+play,2,1,everc001,00,X,3/FL
+play,2,1,oleat001,11,CBX,S9.2-H
+play,2,1,sprae001,22,BCFBFX,S8.1-2
+play,2,1,hatts001,12,CBCX,46(1)/FO.2-3
+play,2,1,lewid001,12,BCFX,63/G
+play,3,0,mcewj001,01,LX,4/P4
+play,3,0,belld001,21,CBBX,3/L3
+play,3,0,alfoe001,12,BCFX,9/F9
+play,3,1,offej001,12,BFCX,9/F9
+play,3,1,fryej001,32,CBCFFBBX,S
+play,3,1,daubb001,22,BCCFBC,K/C
+play,3,1,garcn001,00,X,S7.1-3
+play,3,1,everc001,22,BCFBX,64(1)/FO
+play,4,0,piazm001,10,BX,HR/7
+play,4,0,zeilt001,00,X,63/G
+play,4,0,paytj001,22,FSBBX,S7/7S
+play,4,0,agbab001,10,B1,POCS2(136)
+play,4,0,agbab001,21,B1BCX,13/G
+play,4,1,oleat001,12,CBFX,13/G
+play,4,1,sprae001,01,CX,2/FL
+play,4,1,hatts001,00,X,7/FL
+play,5,0,pratt001,11,BCX,S8
+play,5,0,moram002,12,BLCX,HR/7.1-H
+play,5,0,mcewj001,12,CBFS,K
+play,5,0,belld001,01,CX,43/G
+play,5,0,alfoe001,11,BCX,9/F9
+play,5,1,lewid001,22,CBCBX,S
+play,5,1,offej001,32,BBBCCX,9/F9
+play,5,1,fryej001,12,CSBX,64(1)/FO
+play,5,1,daubb001,12,FBFS,K
+play,6,0,piazm001,00,,NP
+sub,pichh001,"Hipolito Pichardo",1,0,1
+play,6,0,piazm001,32,CBBBFS,K
+play,6,0,zeilt001,32,CBBBSFX,53/G
+play,6,0,paytj001,12,FBCS,K
+play,6,1,garcn001,32,BBSBFX,S7
+play,6,1,everc001,01,FX,43/G.1-2
+play,6,1,oleat001,22,BSBFX,S/78.2-H
+play,6,1,sprae001,00,X,3/P3
+play,6,1,hatts001,21,CBBX,S7.1-2
+play,6,1,lewid001,22,BCFBC,K/C
+play,7,0,agbab001,32,CBFBFBFFX,63/G
+play,7,0,pratt001,22,CSBBS,K
+play,7,0,moram002,32,BFFBBX,9/F9
+play,7,1,offej001,00,,NP
+sub,wendt001,"Turk Wendell",0,0,1
+play,7,1,offej001,31,BBCBB,W
+play,7,1,fryej001,11,BLX,1/SH.1-2
+play,7,1,daubb001,00,,NP
+sub,cookd001,"Dennis Cook",0,0,1
+play,7,1,daubb001,02,CFX,S9.2-H;BX2(9364)
+play,7,1,garcn001,31,BBSBB,W
+play,7,1,everc001,11,BFH,HP.1-2
+com,"ej,cookd001,P,fostm901,Arguing HBP"
+com,"Dennis Cook ejected by HP umpire Marty Foster for"
+com,"arguing that Carl Everett was out of the batter's box;"
+com,"this matter explodes in the next game"
+play,7,1,oleat001,00,,NP
+sub,rodrr004,"Rich Rodriguez",0,0,1
+play,7,1,oleat001,00,X,S8/8S.2-H;1-3
+play,7,1,sprae001,00,,NP
+sub,mahop001,"Pat Mahomes",0,0,1
+play,7,1,sprae001,00,,NP
+sub,burkm001,"Morgan Burkhart",1,7,11
+play,7,1,burkm001,00,X,9/F9
+play,8,0,mcewj001,00,,NP
+sub,alexm001,"Manny Alexander",1,7,5
+play,8,0,mcewj001,00,,NP
+sub,harrl001,"Lenny Harris",0,1,11
+play,8,0,harrl001,10,BX,31/G
+play,8,0,belld001,11,FBX,53/G
+play,8,0,alfoe001,00,,NP
+sub,lowed001,"Derek Lowe",1,0,1
+play,8,0,alfoe001,02,CFX,S9
+play,8,0,piazm001,11,CBX,HR/7.1-H
+play,8,0,zeilt001,11,BCX,S7
+play,8,0,paytj001,11,BCX,13/G
+play,8,1,hatts001,00,,NP
+sub,lambd001,"David Lamb",0,1,5
+play,8,1,hatts001,00,,NP
+sub,varij001,"Jason Varitek",1,8,11
+play,8,1,varij001,00,,NP
+sub,franj001,"John Franco",0,0,1
+play,8,1,varij001,22,CBBSS,K
+play,8,1,lewid001,12,FFBS,K
+play,8,1,offej001,31,SBBBB,W
+play,8,1,fryej001,21,BCBX,54(1)/FO
+play,9,0,agbab001,00,,NP
+sub,varij001,"Jason Varitek",1,8,2
+play,9,0,agbab001,00,,NP
+sub,florb001,"Bryce Florie",1,0,1
+play,9,0,agbab001,12,FBCFFX,S9/9S
+play,9,0,pratt001,01,LX,34/SH.1-2
+play,9,0,moram002,12,BCCX,S8.2-H
+play,9,0,lambd001,00,,NP
+sub,franm001,"Matt Franco",0,1,11
+play,9,0,franm001,21,BCBX,6(1)3/GDP
+play,9,1,daubb001,00,,NP
+sub,franm001,"Matt Franco",0,1,5
+play,9,1,daubb001,00,,NP
+sub,benia001,"Armando Benitez",0,0,1
+play,9,1,daubb001,32,BCBBCC,K/C
+play,9,1,garcn001,02,FFX,D7/7D
+play,9,1,everc001,11,BCX,43/G.2-3
+play,9,1,oleat001,30,BBBB,W
+play,9,1,alexm001,12,FBFS,K
+data,er,ruscg001,2
+data,er,wendt001,1
+data,er,cookd001,1
+data,er,rodrr004,0
+data,er,mahop001,0
+data,er,franj001,0
+data,er,benia001,0
+data,er,schop001,3
+data,er,pichh001,0
+data,er,lowed001,2
+data,er,florb001,1

@@ -1,0 +1,98 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,10,1,,,,,0,2,BX,woods001,1,0,,longt002,0,P
+,21,1,,,,,1,6,BBFX,woods001,1,0,,velar001,0,F
+,32,1,giamj001,,,,2,12,BBCSBB,woods001,0,0,giamj001 walks. ,giamj001,0,
+giamj001 out. ,22,1,stanm002,,,,3,17,CSBBX,woods001,1,0,stanm002 reaches on fielder's choice. ,stanm002,0,
+,32,1,loftk001,,,,4,6,CBBFBB,zitob001,0,0,loftk001 walks. ,loftk001,1,
+loftk001 to 2B. ,32,1,vizqo001,loftk001,,,5,12,BBCFBB,zitob001,0,0,vizqo001 walks. ,vizqo001,1,
+loftk001 to 3B. vizqo001 to 2B. ,00,1,,vizqo001,loftk001,,6,13,X,zitob001,1,0,Sacrifice bunt by alomr001.,alomr001,1,
+,30,1,ramim002,vizqo001,loftk001,,7,17,IIII,zitob001,0,0,ramim002 intentionally walks. ,ramim002,1,
+,02,1,ramim002,vizqo001,loftk001,,8,20,CFC,zitob001,1,0,frymt001 strikes out. ,frymt001,1,
+loftk001 scores. vizqo001 scores. ramim002 to 2B. ,20,1,segud001,ramim002,,,9,23,BBX,zitob001,0,2,segud001 singles. ,segud001,1,
+ramim002 to 3B. segud001 to 2B. ,32,1,thomj002,segud001,ramim002,,10,29,BCBCBB,zitob001,0,0,thomj002 walks. ,thomj002,1,
+thomj002 out. ,12,1,cordw001,segud001,ramim002,,11,33,SCBX,zitob001,1,0,cordw001 reaches on fielder's choice. ,cordw001,1,
+,01,2,grieb001,,,,12,19,FX,woods001,0,0,grieb001 singles. ,grieb001,0,
+grieb001 to 2B. ,00,2,tejam001,grieb001,,,13,20,H,woods001,0,0,tejam001 hit by pitch. ,tejam001,0,
+grieb001 to 3B. tejam001 to 2B. ,00,2,staim001,tejam001,grieb001,,14,21,X,woods001,0,0,staim001 singles. ,staim001,0,G
+,02,2,staim001,tejam001,grieb001,,15,24,CFS,woods001,1,0,chave001 strikes out. ,chave001,0,
+grieb001 scores. tejam001 to 3B. staim001 to 2B. ,30,2,fasas001,staim001,tejam001,,16,28,BBBB,woods001,0,1,fasas001 walks. ,fasas001,0,
+tejam001 scores. staim001 scores. fasas001 scores. ,31,2,,,,,17,33,BBBCX,woods001,0,4,longt002 homers. ,longt002,0,
+,22,2,,,,,18,38,CBSBX,woods001,1,0,velar001 grounds out. ,velar001,0,G
+,00,2,giamj001,,,,19,39,X,woods001,0,0,giamj001 singles. ,giamj001,0,
+,01,2,giamj001,,,,20,41,CX,woods001,1,0,,stanm002,0,F
+,00,2,,,,,21,34,X,zitob001,1,0,aloms001 grounds out. ,aloms001,1,G
+,02,2,,,,,22,38,CCFX,zitob001,1,0,,loftk001,1,F
+,02,2,,,,,23,41,CCC,zitob001,1,0,vizqo001 strikes out. ,vizqo001,1,
+,10,3,,,,,24,43,BX,woods001,1,0,grieb001 grounds out. ,grieb001,0,G
+,20,3,tejam001,,,,25,46,BBX,woods001,0,0,tejam001 singles. ,tejam001,0,
+tejam001 to 3B. ,10,3,staim001,,tejam001,,26,48,BX,woods001,0,0,staim001 singles. ,staim001,0,
+tejam001 scores. staim001 to 3B. chave001 to 2B. ,31,3,,chave001,staim001,,27,53,CBBBX,woods001,0,1,chave001 reaches on error. ,chave001,0,G
+fasas001 to 1B. ,02,3,fasas001,chave001,staim001,,28,56,CSS,woods001,0,0,fasas001 strikes out. Wild Pitch. ,fasas001,0,
+staim001 scores. chave001 scores. fasas001 to 2B. ,10,3,longt002,fasas001,,,30,2,BX,brewj001,0,2,longt002 singles. ,longt002,0,
+,32,3,longt002,fasas001,,,31,10,SBSFBFBC,brewj001,1,0,velar001 strikes out. ,velar001,0,
+,22,3,longt002,fasas001,,,32,15,BCSBC,brewj001,1,0,giamj001 strikes out. ,giamj001,0,
+,11,3,,alomr001,,,33,44,FBX,zitob001,0,0,alomr001 doubles. ,alomr001,1,
+,22,3,,alomr001,,,34,50,BBFCFS,zitob001,1,0,ramim002 strikes out. ,ramim002,1,
+alomr001 to 3B. ,01,3,,,alomr001,frymt001,35,52,SB,zitob001,0,0,Wild Pitch. ,frymt001,1,
+,11,3,,,alomr001,,36,55,SBX,zitob001,1,0,,frymt001,1,P
+,32,3,,,alomr001,,37,61,BFBBFX,zitob001,1,0,,segud001,1,F
+,12,4,,,,,38,19,BCCS,brewj001,1,0,stanm002 strikes out. ,stanm002,0,
+,31,4,grieb001,,,,39,24,BBBCB,brewj001,0,0,grieb001 walks. ,grieb001,0,
+,00,4,grieb001,,,,40,25,X,brewj001,1,0,,tejam001,0,F
+,12,4,,grieb001,,staim001,41,29,BFCB,brewj001,0,0,grieb001 steals 2B. ,staim001,0,
+,32,4,,grieb001,,,42,35,BFCBBX,brewj001,1,0,,staim001,0,F
+,31,4,thomj002,,,,43,66,BBFBB,zitob001,0,0,thomj002 walks. ,thomj002,1,
+,22,4,thomj002,,,,44,71,BSBFC,zitob001,1,0,cordw001 strikes out. ,cordw001,1,
+thomj002 to 2B. ,32,4,aloms001,thomj002,,,45,78,BBSBFFB,zitob001,0,0,aloms001 walks. ,aloms001,1,
+,31,4,aloms001,,,,46,83,BBBCX,zitob001,2,0,Double Play. ,loftk001,1,
+,20,5,,,,,47,38,BBX,brewj001,1,0,chave001 grounds out. ,chave001,0,G
+,01,5,fasas001,,,,48,40,CX,brewj001,0,0,fasas001 singles. ,fasas001,0,
+fasas001 to 2B. ,22,5,longt002,fasas001,,,49,45,FFBBX,brewj001,0,0,longt002 singles. ,longt002,0,
+,22,5,longt002,fasas001,,,50,50,CCBBX,brewj001,1,0,,velar001,0,F
+fasas001 scores. longt002 scores. ,01,5,,giamj001,,,51,52,SX,brewj001,0,2,giamj001 doubles. ,giamj001,0,
+,12,5,,giamj001,,,52,56,CBFS,brewj001,1,0,stanm002 strikes out. ,stanm002,0,
+,22,5,,,,,53,89,FBFBFS,zitob001,1,0,vizqo001 strikes out. ,vizqo001,1,
+,22,5,alomr001,,,,54,94,CBBCX,zitob001,0,0,alomr001 singles. ,alomr001,1,
+alomr001 to 3B. ,22,5,,ramim002,alomr001,,55,99,SCBBX,zitob001,0,0,ramim002 doubles. ,ramim002,1,
+alomr001 out. ramim002 to 3B. frymt001 to 1B. ,31,5,frymt001,,ramim002,,56,104,BBBCX,zitob001,1,0,frymt001 hits into a fielder's choice. ,frymt001,1,
+,22,5,frymt001,,ramim002,,57,109,FBBCS,zitob001,1,0,segud001 strikes out. ,segud001,1,
+,32,6,,,,,58,62,BBSCBX,brewj001,1,0,,grieb001,0,F
+,32,6,tejam001,,,,59,68,BBBCSB,brewj001,0,0,tejam001 walks. ,tejam001,0,
+tejam001 to 2B. ,31,6,staim001,tejam001,,,60,73,BSBBX,brewj001,0,0,staim001 singles. ,staim001,0,
+tejam001 scores. staim001 to 2B. ,12,6,chave001,staim001,,,61,78,FBFFX,brewj001,0,1,chave001 singles. ,chave001,0,
+,12,6,chave001,staim001,,,63,4,CBCS,reeds001,1,0,fasas001 strikes out. ,fasas001,0,
+,12,6,chave001,staim001,,,64,8,CBFX,reeds001,1,0,longt002 grounds out. ,longt002,0,G
+,20,6,thomj002,,,,66,112,BBX,zitob001,0,0,thomj002 reaches on error. ,thomj002,1,
+,11,6,thomj002,,,,67,115,CBX,zitob001,1,0,,cordw001,1,F
+,22,6,,,,,68,120,BSBFX,zitob001,2,0,Double Play. ,aloms001,1,
+,12,7,,,,,73,13,CSFBX,reeds001,1,0,velar001 grounds out. ,velar001,0,G
+,31,7,giamj001,,,,74,18,BBBCB,reeds001,0,0,giamj001 walks. ,giamj001,0,
+,11,7,giamj001,,,,75,21,BFX,reeds001,1,0,,stanm002,0,P
+,22,7,giamj001,,,,76,27,CBSFBC,reeds001,1,0,chrir001 strikes out. ,chrir001,0,
+,01,7,cabrj002,,,,77,122,FX,zitob001,0,0,cabrj002 singles. ,cabrj002,1,
+,02,7,cabrj002,,,,78,125,FSC,zitob001,1,0,mcdoj003 strikes out. ,mcdoj003,1,
+,12,7,cabrj002,,,,79,130,CFBFS,zitob001,1,0,selbb001 strikes out. ,selbb001,1,
+cabrj002 to 2B. ,12,7,ramim002,cabrj002,,,81,4,BSFX,tam-j001,0,0,ramim002 singles. ,ramim002,1,
+cabrj002 scores. ramim002 to 2B. ,01,7,diaze002,ramim002,,,82,6,CX,tam-j001,0,1,diaze002 reaches on error. ,diaze002,1,F
+ramim002 to 3B. diaze002 to 2B. ,32,7,segud001,diaze002,ramim002,,83,12,CBCBBB,tam-j001,0,0,segud001 walks. ,segud001,1,
+ramim002 scores. diaze002 to 3B. segud001 to 2B. ,32,7,thomj002,segud001,diaze002,,84,19,BBSCFBB,tam-j001,0,1,thomj002 walks. ,thomj002,1,
+,22,7,thomj002,segud001,diaze002,,85,24,BBFFC,tam-j001,1,0,cordw001 strikes out. ,cordw001,1,
+,02,8,,,,,87,3,CFC,speij001,1,0,tejam001 strikes out. ,tejam001,0,
+,32,8,,,,,88,9,BCSBBX,speij001,1,0,,staim001,0,F
+,01,8,,,,,89,11,FX,speij001,1,0,,chave001,0,F
+,21,8,aloms001,,,,90,28,BFBX,tam-j001,0,0,aloms001 singles. ,aloms001,1,
+aloms001 out. ,11,8,cabrj002,,,,91,31,BCX,tam-j001,1,0,cabrj002 reaches on fielder's choice. ,cabrj002,1,
+cabrj002 out. ,12,8,mcdoj003,,,,92,38,CCFFBFX,tam-j001,1,0,mcdoj003 reaches on fielder's choice. ,mcdoj003,1,
+,22,8,mcdoj003,,,,93,43,BFFBX,tam-j001,1,0,,selbb001,1,F
+,01,9,,,,,95,2,CX,rincr001,1,0,,fasas001,0,F
+,01,9,,,,,96,4,CX,rincr001,1,0,,longt002,0,P
+,32,9,velar001,,,,97,10,CBCBBB,rincr001,0,0,velar001 walks. ,velar001,0,
+,02,9,velar001,,,,99,13,CCC,rincr001,1,0,piata001 strikes out. ,piata001,0,
+,32,9,,,,,101,6,SCBBBX,isrij001,1,0,,ramim002,1,F
+,22,9,diaze002,,,,102,11,FBFBX,isrij001,0,0,diaze002 singles. ,diaze002,1,
+diaze002 to 2B. ,01,9,segud001,diaze002,,,103,13,CX,isrij001,0,0,segud001 singles. ,segud001,1,
+diaze002 to 3B. segud001 to 2B. ,30,9,thomj002,segud001,diaze002,,104,17,BBBB,isrij001,0,0,thomj002 walks. ,thomj002,1,
+diaze002 scores. segud001 to 3B. thomj002 to 2B. ,22,9,cordw001,thomj002,segud001,,105,23,CBSFBX,isrij001,0,1,cordw001 singles. ,cordw001,1,
+segud001 scores. thomj002 to 3B. cordw001 to 2B. ,00,9,aloms001,cordw001,thomj002,,106,24,X,isrij001,0,1,aloms001 singles. ,aloms001,1,
+thomj002 scores. aloms001 to 3B. cabrj002 to 2B. cordw001 out. ,12,9,,cabrj002,aloms001,,107,29,FFBFX,isrij001,1,1,cabrj002 reaches on fielder's choice. ,cabrj002,1,
+,22,9,,cabrj002,aloms001,,109,6,CBFFBX,mecij001,1,0,,mcdoj003,1,F

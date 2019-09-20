@@ -1,0 +1,161 @@
+version,2
+info,visteam,TOR
+info,hometeam,TBA
+info,site,STP01
+info,date,2000/06/27
+info,number,0
+info,starttime,7:15PM
+info,daynight,night
+info,usedh,true
+info,umphome,welkb901
+info,ump1b,culbf901
+info,ump2b,froeb901
+info,ump3b,wintm901
+info,pitches,pitches
+info,temp,72
+info,winddir,ltor
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,178
+info,attendance,14657
+info,wp,tracs001
+info,lp,escok001
+info,save,
+start,stews002,"Shannon Stewart",0,1,7
+start,grebc001,"Craig Grebeck",0,2,4
+start,batit001,"Tony Batista",0,3,5
+start,delgc001,"Carlos Delgado",0,4,3
+start,fullb001,"Brad Fullmer",0,5,10
+start,cruzj004,"Jose Cruz",0,6,8
+start,cordm001,"Marty Cordova",0,7,9
+start,casta001,"Alberto Castillo",0,8,2
+start,woodc001,"Chris Woodward",0,9,6
+start,escok001,"Kelvim Escobar",0,0,1
+start,winnr001,"Randy Winn",1,1,8
+start,cox-s001,"Steve Cox",1,2,10
+start,tramb001,"Bubba Trammell",1,3,7
+start,mcgrf001,"Fred McGriff",1,4,3
+start,flahj001,"John Flaherty",1,5,2
+start,smitr003,"Bobby Smith",1,6,4
+start,guilj001,"Jose Guillen",1,7,9
+start,guilo001,"Ozzie Guillen",1,8,5
+start,martf001,"Felix Martinez",1,9,6
+start,tracs001,"Steve Trachsel",1,0,1
+play,1,0,stews002,22,CFBBFX,1/L1
+play,1,0,grebc001,21,CBBX,63/G
+play,1,0,batit001,32,CBBFFBFB,W
+play,1,0,delgc001,10,BX,S/78.1-3
+play,1,0,fullb001,01,CX,4/P4
+com,"SS ADDED 1ST INN BADJ 12/19/00"
+badj,winnr001,R
+play,1,1,winnr001,30,.BBBB,W
+play,1,1,cox-s001,31,BBBCX,S9.1-3
+play,1,1,tramb001,11,BCH,HP.1-2
+play,1,1,mcgrf001,12,BSCX,S9.3-H;2-H;1-3
+play,1,1,flahj001,02,CFX,3/FL
+play,1,1,smitr003,02,CFFC,K/C
+play,1,1,guilj001,12,CBSX,8/F8
+play,2,0,cruzj004,22,LBSFBX,S9
+play,2,0,cordm001,02,FSFX,8/F8D
+play,2,0,casta001,01,CX,53/G.1-2
+play,2,0,woodc001,31,BBBCB,W
+play,2,0,stews002,00,X,8/F8D
+play,2,1,guilo001,00,X,4/P4
+play,2,1,martf001,22,BBCCFX,S7
+badj,winnr001,R
+play,2,1,winnr001,11,BCX,46(1)/FO
+play,2,1,cox-s001,21,BCBS,CS2(26)
+play,3,0,grebc001,12,FCBX,S8/8S
+play,3,0,batit001,31,BFBBX,5/P5
+play,3,0,delgc001,02,FCX,S9.1-3
+play,3,0,fullb001,00,X,9/SF.3-H
+play,3,0,cruzj004,32,SBFBBB,W.1-2
+play,3,0,cordm001,32,CBBBCB,W.2-3;1-2
+play,3,0,casta001,22,CBFFBS,K
+play,3,1,cox-s001,32,SBBSBFX,31/G
+play,3,1,tramb001,31,CBBBX,63/G
+play,3,1,mcgrf001,21,BBCX,S8
+play,3,1,flahj001,10,BX,5/L5
+play,4,0,woodc001,10,BX,4/L4
+play,4,0,stews002,31,CBBBX,S7
+play,4,0,grebc001,11,BFB,CS2(24)
+play,4,0,grebc001,22,BFBFX,53/G
+play,4,1,smitr003,00,X,S/78
+play,4,1,guilj001,10,BX,D7.1-3
+play,4,1,guilo001,31,BBBCB,W
+play,4,1,martf001,02,CSS,K
+badj,winnr001,R
+play,4,1,winnr001,20,BBX,E6/G.3-H;2-3;1-2
+play,4,1,cox-s001,00,X,HR/9.3-H;2-H;1-H(UR)
+play,4,1,tramb001,22,CBSBX,D9
+play,4,1,mcgrf001,31,BBSBX,S9.2-H
+play,4,1,flahj001,00,,NP
+sub,dewim001,"Matt DeWitt",0,0,1
+play,4,1,flahj001,12,BSFX,S8.1-2
+play,4,1,smitr003,22,BSCFFBX,9/F9.2-3
+play,4,1,guilj001,21,BFBB,WP.3-H(UR);1-2
+play,4,1,guilj001,32,BFBBCX,8/F8
+play,5,0,batit001,21,SBBX,7/FL
+play,5,0,delgc001,31,BCBBX,31/G
+play,5,0,fullb001,00,X,43/G
+play,5,1,guilo001,01,FX,43/G
+play,5,1,martf001,31,BBBCX,31/G
+badj,winnr001,R
+play,5,1,winnr001,21,BBCX,S
+play,5,1,cox-s001,21,CBBX,36(1)/FO
+play,6,0,cruzj004,02,FCX,S9/9S
+play,6,0,cordm001,00,X,S7.1-2
+play,6,0,casta001,11,BFX,64(1)3/GDP.2-3
+play,6,0,woodc001,20,BBX,9/F9D
+play,6,1,tramb001,00,,NP
+sub,greec002,"Charlie Greene",0,8,2
+play,6,1,tramb001,01,CH,HP
+play,6,1,mcgrf001,30,BBBB,W.1-2
+play,6,1,flahj001,10,BX,3/P3
+play,6,1,smitr003,01,FX,4/P4
+play,6,1,guilj001,11,BCH,HP.2-3;1-2
+play,6,1,guilo001,01,FX,S9.3-H;2-H;1-3
+play,6,1,martf001,00,X,43/G
+play,7,0,stews002,00,,NP
+sub,whitr002,"Rick White",1,0,1
+play,7,0,stews002,00,X,6/L6
+play,7,0,grebc001,22,BCCFBFX,43/G
+play,7,0,batit001,10,BX,S7
+play,7,0,delgc001,00,X,7/F7
+play,7,1,winnr001,00,,NP
+sub,painl001,"Lance Painter",0,0,1
+play,7,1,winnr001,02,SCS,K
+play,7,1,cox-s001,22,BBSCX,D8
+play,7,1,tramb001,02,SCX,9/F9
+play,7,1,mcgrf001,00,,NP
+sub,johnr006,"Russ Johnson",1,4,11
+play,7,1,johnr006,12,BSCFX,8/F8
+play,8,0,fullb001,00,,NP
+sub,johnr006,"Russ Johnson",1,4,5
+play,8,0,fullb001,00,,NP
+sub,guilo001,"Ozzie Guillen",1,8,3
+play,8,0,fullb001,00,,NP
+sub,sturt001,"Tanyon Sturtze",1,0,1
+play,8,0,fullb001,22,BSBSFFFFS,K
+play,8,0,cruzj004,32,FBCBBX,9/F9
+play,8,0,cordm001,32,CCBFBBFFX,6/P6
+play,8,1,flahj001,00,,NP
+sub,greet003,"Todd Greene",0,1,7
+play,8,1,flahj001,01,CX,63/G
+play,8,1,smitr003,22,SBBSC,K/C
+play,8,1,guilj001,31,BBFBX,3/G#
+play,9,0,greec002,00,,NP
+sub,mecij001,"Jim Mecir",1,0,1
+play,9,0,greec002,22,CFBFBX,3/G#
+play,9,0,woodc001,20,BBX,43/G
+play,9,0,greet003,00,X,S7
+play,9,0,grebc001,10,BX,8/F8
+data,er,escok001,7
+data,er,dewim001,2
+data,er,painl001,0
+data,er,tracs001,1
+data,er,whitr002,0
+data,er,sturt001,0
+data,er,mecij001,0

@@ -1,0 +1,130 @@
+version,2
+info,visteam,BAL
+info,hometeam,BOS
+info,site,BOS07
+info,date,2000/09/22
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,relic901
+info,ump1b,carlm901
+info,ump2b,eddid901
+info,ump3b,barkl901
+info,pitches,pitches
+info,temp,68
+info,winddir,tocf
+info,windspeed,3
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,137
+info,attendance,32708
+info,wp,ponss001
+info,lp,martr002
+info,save,
+start,kingg001,"Eugene Kingsale",0,1,8
+start,hairj002,"Jerry Hairston",0,2,4
+start,deshd001,"Delino DeShields",0,3,7
+start,ripkc001,"Cal Ripken",0,4,5
+start,moram002,"Melvin Mora",0,5,6
+start,richc001,"Chris Richard",0,6,3
+start,fordb001,"Brook Fordyce",0,7,2
+start,myerg001,"Greg Myers",0,8,10
+start,matol001,"Luis Matos",0,9,9
+start,ponss001,"Sidney Ponson",0,0,1
+start,nixot001,"Trot Nixon",1,1,9
+start,lewid001,"Darren Lewis",1,2,8
+start,varij001,"Jason Varitek",1,3,2
+start,garcn001,"Nomar Garciaparra",1,4,6
+start,oleat001,"Troy O'Leary",1,5,7
+start,bichd001,"Dante Bichette",1,6,10
+start,daubb001,"Brian Daubach",1,7,3
+start,alexm001,"Manny Alexander",1,8,5
+start,lansm001,"Mike Lansing",1,9,4
+start,martr002,"Ramon Martinez",1,0,1
+play,1,0,kingg001,02,CCFFX,S8
+play,1,0,hairj002,01,CX,54(1)/FO
+play,1,0,deshd001,00,X,9/F9
+play,1,0,ripkc001,12,CBCC,K/C
+play,1,1,nixot001,11,CBX,S8
+play,1,1,lewid001,21,FBBX,9/F9
+play,1,1,varij001,10,BX,64(1)3/GDP
+play,2,0,moram002,01,CX,S1/BG1
+play,2,0,richc001,12,CSBS,K
+play,2,0,fordb001,10,BB,CS2(24)
+play,2,0,fordb001,32,BBBCFFX,63/G
+play,2,1,garcn001,10,BX,9/F9
+play,2,1,oleat001,20,BBX,3/G
+play,2,1,bichd001,12,CCBS,K
+play,3,0,myerg001,32,BCSBBFB,W
+play,3,0,matol001,10,BX,54(1)/FO
+play,3,0,kingg001,22,BBCCX,6(1)3/GDP
+play,3,1,daubb001,10,BX,43/G
+play,3,1,alexm001,00,X,S7/7DW
+play,3,1,lansm001,32,FBFBBX,8/F8
+play,3,1,nixot001,31,BBBCB,W.1-2
+play,3,1,lewid001,11,BFX,S8.2-H;1-3;B-2(E8)
+com,"$Kingsale tried to short hop the ball but kicked it"
+play,3,1,varij001,22,CFFBBX,7/F7
+play,4,0,hairj002,22,BFCBX,HR/7
+play,4,0,deshd001,00,X,31/G
+play,4,0,ripkc001,32,BCSBBFX,63/G
+play,4,0,moram002,10,BX,4/P4
+play,4,1,garcn001,00,X,S
+play,4,1,oleat001,32,BFCBBX,46(1)/FO
+play,4,1,bichd001,22,FSFBFFBFX,64(1)/FO
+play,4,1,daubb001,01,SX,7/F7
+play,5,0,richc001,31,BCBBB,W
+play,5,0,fordb001,01,FX,9/F9
+play,5,0,myerg001,22,BBCSFX,HR/9.1-H
+play,5,0,matol001,11,CBX,13/G
+play,5,0,kingg001,11,FBX,53/G
+play,5,1,alexm001,00,X,7/F7
+play,5,1,lansm001,10,BX,5/L5
+play,5,1,nixot001,12,CCBX,9/F9D
+play,6,0,hairj002,00,X,9/F9S
+play,6,0,deshd001,22,BSCBS,K
+play,6,0,ripkc001,12,CSBFX,53/G
+play,6,1,lewid001,01,CX,53/G
+play,6,1,varij001,00,X,63/G
+play,6,1,garcn001,01,CX,63/G
+play,7,0,moram002,10,BX,6/P6
+play,7,0,richc001,12,BCSS,K
+play,7,0,fordb001,10,BX,S9
+play,7,0,myerg001,31,CBBBX,8/F8
+play,7,1,oleat001,32,BCBBSX,8/F8D
+play,7,1,bichd001,22,SBFBX,9/F9
+play,7,1,daubb001,12,CBFS,K
+play,8,0,matol001,00,,NP
+sub,garcr001,"Rich Garces",1,0,1
+play,8,0,matol001,12,BSFX,7/F7
+play,8,0,kingg001,22,LBBFX,9/F9
+play,8,0,hairj002,12,CCBX,S8
+play,8,0,deshd001,02,CFB,SB2
+play,8,0,deshd001,22,CFBBX,43/G
+play,8,1,alexm001,00,,NP
+sub,cummm001,"Midre Cummings",1,8,11
+play,8,1,cummm001,00,X,31/G
+play,8,1,lansm001,00,,NP
+sub,everc001,"Carl Everett",1,9,11
+play,8,1,everc001,02,SSS,K
+play,8,1,nixot001,11,CBX,43/G
+play,9,0,ripkc001,00,,NP
+sub,merll001,"Lou Merloni",1,8,5
+play,9,0,ripkc001,00,,NP
+sub,sadld001,"Donnie Sadler",1,9,4
+play,9,0,ripkc001,00,,NP
+sub,cormr001,"Rheal Cormier",1,0,1
+play,9,0,ripkc001,02,FSX,5/FL
+play,9,0,moram002,00,X,9/F9
+play,9,0,richc001,12,SBFX,43/G
+play,9,1,lewid001,00,,NP
+sub,hatts001,"Scott Hatteberg",1,2,11
+play,9,1,hatts001,01,CX,31/G
+play,9,1,varij001,12,CFFBX,13/G
+play,9,1,garcn001,00,X,63/G
+data,er,ponss001,1
+data,er,martr002,3
+data,er,garcr001,0
+data,er,cormr001,0

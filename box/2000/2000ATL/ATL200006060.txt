@@ -1,0 +1,175 @@
+version,2
+info,visteam,TOR
+info,hometeam,ATL
+info,site,ATL02
+info,date,2000/06/06
+info,number,0
+info,starttime,7:40PM
+info,daynight,night
+info,usedh,false
+info,umphome,laynj901
+info,ump1b,monte901
+info,ump2b,randt901
+info,ump3b,barrt901
+info,pitches,pitches
+info,temp,67
+info,winddir,ltor
+info,windspeed,20
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,224
+info,attendance,39454
+info,wp,remlm001
+info,lp,frasj001
+info,save,
+start,stews002,"Shannon Stewart",0,1,7
+start,grebc001,"Craig Grebeck",0,2,4
+start,mondr002,"Raul Mondesi",0,3,9
+start,delgc001,"Carlos Delgado",0,4,3
+start,cruzj004,"Jose Cruz",0,5,8
+start,gonza001,"Alex S. Gonzalez",0,6,6
+start,woodc001,"Chris Woodward",0,7,5
+start,casta001,"Alberto Castillo",0,8,2
+start,castf001,"Frank Castillo",0,9,1
+start,veraq001,"Quilvio Veras",1,1,4
+start,jonea002,"Andruw Jones",1,2,8
+start,jonec004,"Chipper Jones",1,3,5
+start,galaa001,"Andres Galarraga",1,4,3
+start,jordb001,"Brian Jordan",1,5,9
+start,lopej001,"Javy Lopez",1,6,2
+start,bonib001,"Bobby Bonilla",1,7,7
+start,furcr001,"Rafael Furcal",1,8,6
+start,glavt001,"Tom Glavine",1,9,1
+play,1,0,stews002,22,CBSBC,K/C
+play,1,0,grebc001,00,X,9/F9D
+play,1,0,mondr002,11,CBX,D9
+play,1,0,delgc001,30,BBBI,IW
+play,1,0,cruzj004,11,CBX,3/L3
+play,1,1,veraq001,02,SFFFC,K/C
+play,1,1,jonea002,12,BFCX,7/F7
+play,1,1,jonec004,31,BCBBX,HR/9
+play,1,1,galaa001,00,X,D/89D
+play,1,1,jordb001,30,BBBB,W
+play,1,1,lopej001,32,FBBBSS,K
+play,2,0,gonza001,02,CFX,53/G
+play,2,0,woodc001,31,BFBBB,W
+play,2,0,casta001,12,SBSC,K/C
+play,2,0,castf001,22,CBFBFFX,S9.1-3
+play,2,0,stews002,01,FX,S.3-H;1-2
+play,2,0,grebc001,10,BX,46(1)/FO.2-3
+play,2,1,bonib001,31,CBBBB,W
+play,2,1,furcr001,32,CBBFBX,7/P7
+play,2,1,glavt001,00,X,24/SH.1-2
+play,2,1,veraq001,32,CBBFBB,W
+play,2,1,jonea002,00,X,S8.2-H;1X2(854)
+play,3,0,mondr002,32,BFBBFFB,W
+play,3,0,delgc001,32,CBFBBFFFFB,W.1-2
+play,3,0,cruzj004,21,BFBX,16(1)/FO.2-3
+play,3,0,gonza001,00,X,7/SF.3-H
+play,3,0,woodc001,02,CSX,HR/7.1-H
+play,3,0,casta001,32,BBSCBFB,W
+play,3,0,castf001,02,CCS,K
+play,3,1,jonec004,02,CCX,9/F9
+play,3,1,galaa001,22,BBSFFS,K
+play,3,1,jordb001,00,X,8/F8D
+play,4,0,stews002,32,BFSFBBX,S8
+play,4,0,grebc001,00,X,S8.1-2
+play,4,0,mondr002,00,X,9/F9.2-3
+play,4,0,delgc001,00,X,S8.3-H;1-2
+play,4,0,cruzj004,22,FBFBS,K
+play,4,0,gonza001,22,CSBBC,K/C
+play,4,1,lopej001,11,BSX,5/FL
+play,4,1,bonib001,31,BBBCB,W
+play,4,1,furcr001,21,BCBX,S9/9S.1-2
+play,4,1,glavt001,10,BX,54/SH.2-3;1-2
+play,4,1,veraq001,32,FBSBBB,W
+play,4,1,jonea002,30,BBBB,W.3-H;2-3;1-2
+play,4,1,jonec004,00,X,31/G
+play,5,0,woodc001,01,CX,9/F9
+play,5,0,casta001,22,BCBFFFFC,K/C
+com,"ej,casta001,P,laynj901,Called third strike"
+com,"Alberto Castillo ejected by HP umpire Jerry Layne"
+play,5,0,castf001,12,FFBS,K
+play,5,1,galaa001,00,,NP
+sub,greet003,"Todd Greene",0,8,2
+play,5,1,galaa001,00,X,8/F8
+play,5,1,jordb001,31,BFBBX,63/G
+play,5,1,lopej001,02,FCFFS,K
+play,6,0,stews002,00,,NP
+sub,lockk001,"Keith Lockhart",1,1,4
+play,6,0,stews002,00,X,S/78
+play,6,0,grebc001,22,FBBFS,K
+play,6,0,mondr002,22,BBFFX,64(1)/FO
+play,6,0,delgc001,10,BC,SB2
+play,6,0,delgc001,31,BCBII,IW
+play,6,0,cruzj004,31,BBBCX,S9/9S.2-H;1-2
+play,6,0,gonza001,32,BFBFFBX,4/P4
+play,6,1,bonib001,32,BSCFBBB,W
+play,6,1,furcr001,11,CBX,1(B)3(1)/FDP
+play,6,1,glavt001,00,,NP
+sub,sandr002,"Reggie Sanders",1,9,11
+play,6,1,sandr002,02,FSX,S
+play,6,1,lockk001,00,,NP
+sub,borbp001,"Pedro Borbon",0,9,1
+play,6,1,lockk001,30,BBBB,W.1-2
+play,6,1,jonea002,00,,NP
+sub,quanp001,"Paul Quantrill",0,9,1
+play,6,1,jonea002,32,BCCFFBBX,S.2-3;1-2
+play,6,1,jonec004,32,BBCFBB,W.3-H;2-3;1-2
+play,6,1,galaa001,22,CCBBX,4(1)/FO/G
+play,7,0,woodc001,00,,NP
+sub,furcr001,"Rafael Furcal",1,8,4
+play,7,0,woodc001,00,,NP
+sub,lockk001,"Keith Lockhart",1,1,5
+play,7,0,woodc001,00,,NP
+sub,weisw001,"Walt Weiss",1,3,6
+play,7,0,woodc001,00,,NP
+sub,marqj001,"Jason Marquis",1,9,1
+play,7,0,woodc001,22,BBCFX,8/F8D
+com,"Debut game for Jason Marquis"
+play,7,0,greet003,12,SSBFFX,63/G
+play,7,0,quanp001,31,BBBCB,W
+play,7,0,stews002,22,BCFBFC,K/C
+play,7,1,jordb001,01,SX,S8
+play,7,1,lopej001,11,CBX,7/F7
+play,7,1,bonib001,00,B,SB2
+play,7,1,bonib001,21,BSBX,S9.2-H
+play,7,1,furcr001,12,FCBS,K
+play,7,1,marqj001,00,,NP
+sub,joynw001,"Wally Joyner",1,9,11
+play,7,1,joynw001,00,,NP
+sub,painl001,"Lance Painter",0,9,1
+play,7,1,joynw001,11,BSX,6/L6
+play,8,0,grebc001,00,,NP
+sub,wengd001,"Don Wengert",1,9,1
+play,8,0,grebc001,21,BBCX,63/G
+play,8,0,mondr002,22,FSBBX,13/G
+play,8,0,delgc001,22,BCCBS,K
+play,8,1,lockk001,00,,NP
+sub,fletd001,"Darrin Fletcher",0,8,2
+play,8,1,lockk001,10,BX,D7/7S
+play,8,1,jonea002,00,,NP
+sub,frasj001,"John Frascatore",0,9,1
+play,8,1,jonea002,12,BCFX,63/G.2-3
+play,8,1,weisw001,01,CX,7/SF.3-H
+play,8,1,galaa001,22,BFCFFBS,K
+play,9,0,cruzj004,00,,NP
+sub,remlm001,"Mike Remlinger",1,9,1
+play,9,0,cruzj004,01,CX,63/G
+play,9,0,gonza001,02,SSX,S
+play,9,0,woodc001,32,BCCBBB,W.1-2
+play,9,0,fletd001,11,CBX,64(1)3/GDP
+play,9,1,jordb001,00,X,S9
+play,9,1,lopej001,01,CX,13/G.1-2
+play,9,1,bonib001,30,IIII,IW
+play,9,1,furcr001,22,BFBCX,D/78.2-H;1-3
+data,er,castf001,4
+data,er,borbp001,0
+data,er,quanp001,1
+data,er,painl001,1
+data,er,frasj001,1
+data,er,glavt001,6
+data,er,marqj001,0
+data,er,wengd001,0
+data,er,remlm001,0

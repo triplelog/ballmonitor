@@ -1,0 +1,126 @@
+version,2
+info,visteam,MON
+info,hometeam,PHI
+info,site,PHI12
+info,date,2000/09/12
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,froeb901
+info,ump1b,vanvm901
+info,ump2b,fichm901
+info,ump3b,welkb901
+info,pitches,pitches
+info,temp,78
+info,winddir,rtol
+info,windspeed,14
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,136
+info,attendance,12135
+info,wp,armat002
+info,lp,telea001
+info,save,stris001
+start,guerw001,"Wilton Guerrero",0,1,7
+start,bergp001,"Peter Bergeron",0,2,8
+start,traca001,"Andy Tracy",0,3,3
+start,guerv001,"Vladimir Guerrero",0,4,9
+start,vidrj001,"Jose Vidro",0,5,4
+start,blumg001,"Geoff Blum",0,6,5
+start,schnb001,"Brian Schneider",0,7,2
+start,cabro001,"Orlando Cabrera",0,8,6
+start,armat002,"Tony Armas",0,9,1
+start,andem003,"Marlon Anderson",1,1,4
+start,gland001,"Doug Glanville",1,2,8
+start,lee-t002,"Travis Lee",1,3,3
+start,roles001,"Scott Rolen",1,4,5
+start,burrp001,"Pat Burrell",1,5,7
+start,duceb001,"Rob Ducey",1,6,9
+start,benng001,"Gary Bennett",1,7,2
+start,peret003,"Tomas Perez",1,8,6
+start,telea001,"Amaury Telemaco",1,9,1
+play,1,0,guerw001,31,BCBBB,W
+play,1,0,bergp001,12,LFBC,K/C
+play,1,0,traca001,10,BX,6(1)3/GDP
+play,1,1,andem003,22,BFBCFX,7/F7
+play,1,1,gland001,11,CBX,6/P6
+play,1,1,lee-t002,02,FCX,3/G
+play,2,0,guerv001,22,CBFBX,S/78
+play,2,0,vidrj001,30,BBBB,W.1-2
+play,2,0,blumg001,22,CBBCX,46(1)3/GDP.2-3
+play,2,0,schnb001,32,SBBBSFS,K
+play,2,1,roles001,21,CBBX,8/F8D
+play,2,1,burrp001,10,BX,63/G
+play,2,1,duceb001,22,BCFBFFFS,K
+play,3,0,cabro001,32,CBSBFBB,W
+play,3,0,armat002,12,FBLL,K/BF
+play,3,0,guerw001,00,S,CS2(26)
+play,3,0,guerw001,12,SBFS,K
+play,3,1,benng001,22,BBCSFFX,7/F7S
+play,3,1,peret003,11,CBX,D9/9D
+play,3,1,telea001,12,CSFBS,K
+play,3,1,andem003,10,BX,43/G
+play,4,0,bergp001,10,BX,63/G
+play,4,0,traca001,31,SBBBX,D9
+play,4,0,guerv001,00,X,3(B)5(2)/FDP
+com,"$great play by Lee reaching into stands"
+play,4,1,gland001,01,CX,43/G
+play,4,1,lee-t002,01,CX,63/G
+play,4,1,roles001,11,BFX,63/G
+play,5,0,vidrj001,00,X,7/F7
+play,5,0,blumg001,32,CBBBSX,8/F8
+play,5,0,schnb001,01,SX,8/F8
+play,5,1,burrp001,11,BCX,3/FL
+play,5,1,duceb001,22,CCBFBFX,8/F8
+play,5,1,benng001,22,BFBCS,K
+play,6,0,cabro001,22,BFCBFFS,K
+play,6,0,armat002,22,BBCFS,K
+play,6,0,guerw001,12,FSBFX,43/G
+play,6,1,peret003,12,BFCFX,7/F7
+play,6,1,telea001,12,CCBX,3/FL
+play,6,1,andem003,22,FSBBFFX,S
+play,6,1,gland001,21,CBBX,9/F9
+play,7,0,bergp001,11,CBX,43/G
+play,7,0,traca001,01,FX,3/G
+play,7,0,guerv001,10,BX,63/G
+play,7,1,lee-t002,31,BBBCB,W
+play,7,1,roles001,11,CBX,9/F9
+play,7,1,burrp001,00,X,64(1)/FO
+play,7,1,duceb001,21,BBCB,WP.1-2
+play,7,1,duceb001,31,BBCBI,IW
+play,7,1,benng001,11,BCX,63/G
+play,8,0,vidrj001,11,BFX,HR/9
+play,8,0,blumg001,00,X,43/G
+play,8,0,schnb001,20,BBX,31/G
+play,8,0,cabro001,10,BX,5/P5
+play,8,1,peret003,00,,NP
+sub,motag001,"Guillermo Mota",0,9,1
+play,8,1,peret003,32,BCFBBX,8/F8
+play,8,1,telea001,00,,NP
+sub,huntb001,"Brian R. Hunter",1,9,11
+play,8,1,huntb001,21,CBBX,7/F7D
+play,8,1,andem003,12,FSBS,K
+play,9,0,motag001,00,,NP
+sub,jacqt001,"Thomas Jacquez",1,9,1
+play,9,0,motag001,00,,NP
+sub,seguf001,"Fernando Seguignol",0,9,11
+play,9,0,seguf001,01,SX,53/G
+play,9,0,guerw001,00,X,9/F9
+play,9,0,bergp001,22,BFBCS,K
+play,9,1,gland001,00,,NP
+sub,nunnt001,"Talmadge Nunnari",0,3,3
+play,9,1,gland001,00,,NP
+sub,jonet004,"Terry Jones",0,1,7
+play,9,1,gland001,00,,NP
+sub,stris001,"Scott Strickland",0,9,1
+play,9,1,gland001,11,BCX,4/P4
+play,9,1,lee-t002,12,FBFX,S8
+play,9,1,roles001,00,X,3/FL
+play,9,1,burrp001,01,CX,9/F9
+data,er,armat002,0
+data,er,motag001,0
+data,er,stris001,0
+data,er,telea001,1
+data,er,jacqt001,0

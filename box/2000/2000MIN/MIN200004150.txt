@@ -1,0 +1,149 @@
+version,2
+info,visteam,BAL
+info,hometeam,MIN
+info,site,MIN03
+info,date,2000/04/15
+info,number,0
+info,starttime,6:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,froeb901
+info,ump1b,wintm901
+info,ump2b,culbf901
+info,ump3b,welkb901
+info,pitches,pitches
+info,temp,72
+info,winddir,ltor
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,169
+info,attendance,18745
+info,wp,worrt002
+info,lp,millt001
+info,save,tromm001
+start,andeb001,"Brady Anderson",0,1,8
+start,bordm001,"Mike Bordick",0,2,6
+start,surhb001,"B.J. Surhoff",0,3,7
+start,bellj002,"Albert Belle",0,4,9
+start,bainh001,"Harold Baines",0,5,10
+start,ripkc001,"Cal Ripken",0,6,5
+start,conij001,"Jeff Conine",0,7,3
+start,johnc002,"Charles Johnson",0,8,2
+start,garcj001,"Jesse Garcia",0,9,4
+start,maduc001,"Calvin Maduro",0,0,1
+start,walkt002,"Todd Walker",1,1,4
+start,guzmc001,"Cristian Guzman",1,2,6
+start,lawtm002,"Matt Lawton",1,3,9
+start,huskb001,"Butch Huskey",1,4,10
+start,koskc001,"Corey Koskie",1,5,5
+start,coomr001,"Ron Coomer",1,6,3
+start,lecrm001,"Matt LeCroy",1,7,2
+start,jonej003,"Jacque Jones",1,8,7
+start,huntt001,"Torii Hunter",1,9,8
+start,bergs001,"Sean Bergman",1,0,1
+play,1,0,andeb001,32,FFBFBBX,D/89D
+play,1,0,bordm001,00,X,S8/8S.2-H
+play,1,0,surhb001,21,BFBB,SB2
+play,1,0,surhb001,32,BFBBFX,4(B)6(2)/LDP
+play,1,0,bellj002,02,FFH,HP
+play,1,0,bainh001,20,BBX,S8/8S.1-3
+play,1,0,ripkc001,21,BSBX,53/G
+play,1,1,walkt002,21,CBBX,7/F7
+play,1,1,guzmc001,11,CBX,6/P6
+play,1,1,lawtm002,12,BCCC,K/C
+play,2,0,conij001,10,BX,9/F9
+play,2,0,johnc002,01,CX,HR/9
+play,2,0,garcj001,02,FCX,53/G
+play,2,0,andeb001,11,FBX,63/G
+play,2,1,huskb001,10,BX,S7
+play,2,1,koskc001,10,BX,9/F9
+play,2,1,coomr001,11,BFX,54(1)3/GDP
+play,3,0,bordm001,21,BBCX,7/F7
+play,3,0,surhb001,12,CFBX,S7/7S
+play,3,0,bellj002,10,BX,64(1)3/GDP
+play,3,1,lecrm001,22,BCCBFFX,9/F9D
+play,3,1,jonej003,11,BCX,43/G
+play,3,1,huntt001,22,BBCFC,K/C
+play,4,0,bainh001,01,SX,S8
+play,4,0,ripkc001,22,BBSSX,S9.1-3
+play,4,0,conij001,00,X,S8/8S.3-H;1-2
+play,4,0,johnc002,12,FBSS,K
+play,4,0,garcj001,02,CSX,3/FL
+play,4,0,andeb001,11,CBX,6/P6
+play,4,1,walkt002,11,BCX,6/FL
+play,4,1,guzmc001,22,BBCLX,S8
+play,4,1,lawtm002,00,B,SB2
+play,4,1,lawtm002,32,BBBSSB,W
+play,4,1,huskb001,22,BBSFS,K
+play,4,1,koskc001,11,CBX,T9/9S.2-H;1-H
+play,4,1,coomr001,12,CFFBX,D9/9D.3-H
+play,4,1,lecrm001,30,BBBB,W
+play,4,1,jonej003,02,CFS,K
+play,5,0,bordm001,31,BBBCX,D7
+play,5,0,surhb001,10,BX,S8/8S.2-H
+play,5,0,bellj002,11,FBX,13/G.1-2
+play,5,0,bainh001,02,SSS,K
+play,5,0,ripkc001,21,BFBX,S.2-3
+play,5,0,conij001,00,X,64(1)/FO
+play,5,1,huntt001,10,BX,T9
+play,5,1,walkt002,00,X,S7.3-H
+play,5,1,guzmc001,01,FX,13/SH.1-2
+play,5,1,lawtm002,11,CBH,HP
+play,5,1,huskb001,00,X,64(1)3/GDP
+play,6,0,johnc002,21,BCBX,53/G
+play,6,0,garcj001,02,FFS,K
+play,6,0,andeb001,20,BBX,D9
+play,6,0,bordm001,01,CX,63/G
+play,6,1,koskc001,00,,NP
+sub,worrt002,"Tim Worrell",0,0,1
+play,6,1,koskc001,31,BCBBX,63/G
+play,6,1,coomr001,20,BBX,S8
+play,6,1,lecrm001,02,SFS,K
+play,6,1,jonej003,01,FX,43/G
+play,7,0,surhb001,00,,NP
+sub,millt001,"Travis Miller",1,0,1
+play,7,0,surhb001,22,CSBFBS,K
+play,7,0,bellj002,20,BBX,D7/7D
+play,7,0,bainh001,22,BBFSX,63/G.2-3
+play,7,0,ripkc001,00,,NP
+sub,carrh001,"Hector Carrasco",1,0,1
+play,7,0,ripkc001,00,B,PB.3-H
+play,7,0,ripkc001,10,BX,S8
+play,7,0,conij001,01,SX,E4/G.1-3
+play,7,0,johnc002,11,BFX,64(1)/FO
+play,7,1,huntt001,20,BBX,7/F7D
+play,7,1,walkt002,31,BBCBX,31/G
+play,7,1,guzmc001,22,BBCCX,S
+play,7,1,lawtm002,00,,NP
+sub,ryanb001,"B.J. Ryan",0,0,1
+play,7,1,lawtm002,22,BFBSX,S7.1-2
+play,7,1,huskb001,11,BFX,53/G
+play,8,0,garcj001,21,BBCX,63/G
+play,8,0,andeb001,00,,NP
+sub,redmm002,"Mark Redman",1,0,1
+play,8,0,andeb001,10,BX,7/FL
+play,8,0,bordm001,22,CBBFX,9/F9
+play,8,1,koskc001,22,FBBSX,43/G
+play,8,1,coomr001,12,BFSS,K
+play,8,1,lecrm001,32,BBBCCFX,6/F6
+play,9,0,surhb001,02,CCFFFX,HR/7
+play,9,0,bellj002,12,CBFX,9/F9
+play,9,0,bainh001,00,X,7/F7
+play,9,0,ripkc001,22,BBFFX,6/P6
+play,9,1,jonej003,00,,NP
+sub,tromm001,"Mike Trombley",0,0,1
+play,9,1,jonej003,01,CX,9/F9
+play,9,1,huntt001,00,,NP
+sub,cummm001,"Midre Cummings",1,9,11
+play,9,1,cummm001,22,BBCFFX,13/G
+play,9,1,walkt002,11,FBX,3/G
+data,er,maduc001,4
+data,er,worrt002,0
+data,er,ryanb001,0
+data,er,tromm001,0
+data,er,bergs001,4
+data,er,millt001,1
+data,er,carrh001,0
+data,er,redmm002,1

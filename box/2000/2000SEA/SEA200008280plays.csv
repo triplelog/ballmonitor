@@ -1,0 +1,87 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,30,1,polol001,,,,0,4,BBBB,abbop001,0,0,polol001 walks. ,polol001,0,
+polol001 to 3B. ,01,1,jeted001,,polol001,,1,6,CX,abbop001,0,0,jeted001 singles. ,jeted001,0,
+jeted001 to 2B. ,32,1,willb002,jeted001,polol001,,2,12,BBCFBB,abbop001,0,0,willb002 walks. ,willb002,0,
+polol001 scores. jeted001 to 3B. ,22,1,,,jeted001,,3,18,CBSBFX,abbop001,2,1,Double Play. ,justd001,0,
+jeted001 scores. ,32,1,,,,,4,25,BFFBFBX,abbop001,0,2,cansj001 homers. ,cansj001,0,
+,22,1,,,,,5,30,BBFSX,abbop001,1,0,,martt002,0,P
+,32,1,hendr001,,,,6,7,CBBFBFB,clemr001,0,0,hendr001 walks. ,hendr001,1,
+,22,1,hendr001,,,,7,12,FFBBS,clemr001,1,0,marta001 strikes out. ,marta001,1,
+,12,1,hendr001,,,,8,16,CFBS,clemr001,1,0,rodra001 strikes out. ,rodra001,1,
+,12,1,hendr001,,,,9,22,FFFBFS,clemr001,1,0,marte001 strikes out. ,marte001,1,
+,32,2,,,,,10,38,BBCBFFFX,abbop001,1,0,posaj001 grounds out. ,posaj001,0,G
+,01,2,,,,,11,40,CX,abbop001,1,0,sojol001 grounds out. ,sojol001,0,G
+,11,2,,,,,12,43,CBX,abbop001,1,0,,bross001,0,F
+,32,2,,,,,13,29,CBFBBFX,clemr001,1,0,olerj001 grounds out. ,olerj001,1,G
+,01,2,,,,,14,31,LX,clemr001,1,0,,guilc001,1,
+,10,2,camem001,,,,15,33,BX,clemr001,0,0,camem001 singles. ,camem001,1,
+camem001 to 3B. ,11,2,wilsd001,,camem001,,16,36,FBX,clemr001,0,0,wilsd001 singles. ,wilsd001,1,
+,12,2,,wilsd001,camem001,mclem001,17,40,FBFB,clemr001,0,0,wilsd001 steals 2B. ,mclem001,1,
+,32,2,mclem001,wilsd001,camem001,,18,47,FBFBBFB,clemr001,0,0,mclem001 walks. ,mclem001,1,
+,10,2,mclem001,wilsd001,camem001,,19,49,BX,clemr001,1,0,,hendr001,1,F
+,31,3,,,,,20,48,BBCBX,abbop001,1,0,polol001 grounds out. ,polol001,0,G
+,01,3,,,,,21,50,FX,abbop001,1,0,,jeted001,0,F
+,21,3,,,,,22,54,BFBX,abbop001,1,0,willb002 grounds out. ,willb002,0,G
+,00,3,marta001,,,,23,50,X,clemr001,0,0,marta001 singles. ,marta001,1,
+,22,3,marta001,,,,24,56,CBBFFX,clemr001,1,0,,rodra001,1,P
+marta001 to 2B. ,32,3,,marta001,,,25,62,CBBBCX,clemr001,1,0,marte001 grounds out. ,marte001,1,G
+,21,3,,marta001,,,26,66,BCBX,clemr001,1,0,olerj001 grounds out. ,olerj001,1,G
+,22,4,,,,,27,59,BSBFX,abbop001,1,0,justd001 grounds out. ,justd001,0,G
+,22,4,,,,,28,64,SBBCX,abbop001,1,0,cansj001 grounds out. ,cansj001,0,G
+,01,4,,,,,29,66,FX,abbop001,1,0,,martt002,0,F
+,32,4,,,,,30,72,BBBCCX,clemr001,1,0,,guilc001,1,P
+,22,4,,,,,31,78,SBBSFS,clemr001,1,0,camem001 strikes out. ,camem001,1,
+,02,4,,,,,32,81,CFS,clemr001,1,0,wilsd001 strikes out. ,wilsd001,1,
+,11,5,,,,,33,69,CBX,abbop001,1,0,,posaj001,0,L
+,31,5,sojol001,,,,34,74,CBBBB,abbop001,0,0,sojol001 walks. ,sojol001,0,
+,11,5,,sojol001,,bross001,35,77,SBS,abbop001,0,0,sojol001 steals 2B. ,bross001,0,
+,12,5,,sojol001,,,36,81,SBSX,abbop001,1,0,bross001 grounds out. ,bross001,0,G
+sojol001 scores. ,00,5,polol001,,,,37,82,X,abbop001,0,1,polol001 singles. ,polol001,0,
+,10,5,,,,jeted001,38,84,BC,abbop001,1,0,polol001 caught stealing. ,jeted001,0,
+,02,5,,,,,39,84,CCC,clemr001,1,0,mclem001 strikes out. ,mclem001,1,
+,31,5,hendr001,,,,40,89,BCBBB,clemr001,0,0,hendr001 walks. ,hendr001,1,
+hendr001 to 2B. ,20,5,marta001,hendr001,,,41,92,BBX,clemr001,0,0,marta001 singles. ,marta001,1,
+hendr001 to 3B. marta001 to 2B. ,30,5,rodra001,marta001,hendr001,,42,96,BBBB,clemr001,0,0,rodra001 walks. ,rodra001,1,
+,00,5,rodra001,marta001,hendr001,,43,97,X,clemr001,1,0,,marte001,1,P
+,20,5,rodra001,marta001,hendr001,,44,100,BBX,clemr001,1,0,,olerj001,1,F
+,01,6,jeted001,,,,45,86,CX,abbop001,0,0,jeted001 singles. ,jeted001,0,
+,32,6,,jeted001,,,46,92,FBBFBC,abbop001,1,0,willb002 strikes out. jeted001 steals 2B. ,willb002,0,
+,30,6,justd001,jeted001,,,47,96,BBBI,abbop001,0,0,justd001 intentionally walks. ,justd001,0,
+,10,6,justd001,jeted001,,,48,98,BX,abbop001,1,0,,cansj001,0,F
+,11,6,justd001,jeted001,,,49,101,BCX,abbop001,1,0,,martt002,0,L
+,11,6,,,,,50,103,BCX,clemr001,1,0,,guilc001,1,F
+,32,6,,,,,51,109,CBBSBS,clemr001,1,0,camem001 strikes out. ,camem001,1,
+,00,6,,,,,52,110,X,clemr001,1,0,,wilsd001,1,F
+,10,7,,,,,53,103,BX,abbop001,1,0,,posaj001,0,
+,01,7,,,,,54,105,CX,abbop001,1,0,,sojol001,0,F
+,01,7,,,,,55,107,CX,abbop001,1,0,,bross001,0,F
+,22,7,,,,,56,115,FFBBX,clemr001,1,0,mclem001 grounds out. ,mclem001,1,G
+,11,7,,,,,57,118,FBX,clemr001,1,0,hendr001 grounds out. ,hendr001,1,G
+,02,7,,,,,58,121,CFX,clemr001,1,0,,marta001,1,F
+,32,8,polol001,,,,59,113,BBBCFX,abbop001,0,0,polol001 singles. ,polol001,0,
+polol001 to 2B. ,02,8,jeted001,polol001,,,60,116,FCH,abbop001,0,0,jeted001 hit by pitch. ,jeted001,0,
+polol001 to 3B. jeted001 to 2B. ,02,8,willb002,jeted001,polol001,,61,119,.FFX,abbop001,0,0,willb002 singles. ,willb002,0,G
+polol001 scores. jeted001 scores. willb002 to 3B. ,00,8,,justd001,willb002,,62,120,X,abbop001,0,2,justd001 doubles. ,justd001,0,
+willb002 scores. ,11,8,,justd001,,,64,3,BFX,pinej001,1,1,cansj001 hits sacrifice fly. ,cansj001,0,
+,30,8,martt002,justd001,,,65,7,BBBB,pinej001,0,0,martt002 walks. ,martt002,0,
+justd001 to 3B. martt002 to 2B. ,31,8,posaj001,martt002,justd001,,66,12,BBBCB,pinej001,0,0,posaj001 walks. ,posaj001,0,
+justd001 scores. martt002 out. posaj001 to 2B. ,11,8,sojol001,posaj001,,,67,15,BCX,pinej001,1,1,sojol001 singles. ,sojol001,0,
+,00,8,sojol001,posaj001,,,68,16,X,pinej001,1,0,,bross001,0,F
+,31,8,rodra001,,,,70,126,CBBBX,clemr001,0,0,rodra001 singles. ,rodra001,1,
+,11,8,rodra001,,,,72,3,CBX,nelsj001,1,0,,marte001,1,L
+rodra001 to 2B. ,01,8,,rodra001,,olerj001,73,5,CB,nelsj001,0,0,rodra001 to 2B on defensive indifference. ,olerj001,1,
+,11,8,,rodra001,,,74,8,CBX,nelsj001,1,0,,olerj001,1,F
+,01,8,,rodra001,,,75,10,CX,nelsj001,1,0,,guilc001,1,F
+,11,9,polol001,,,,76,19,BSX,pinej001,0,0,polol001 singles. ,polol001,0,
+polol001 to 2B. ,31,9,jeted001,polol001,,,77,24,FBBBB,pinej001,0,0,jeted001 walks. ,jeted001,0,
+polol001 to 3B. jeted001 to 2B. ,01,9,willb002,jeted001,polol001,,78,26,CX,pinej001,0,0,willb002 singles. ,willb002,0,
+polol001 scores. jeted001 to 3B. willb002 out. ,00,9,justd001,,jeted001,,79,27,X,pinej001,1,1,justd001 reaches on fielder's choice. ,justd001,0,
+,12,9,justd001,,jeted001,,80,31,FBCS,pinej001,1,0,cansj001 strikes out. ,cansj001,0,
+,22,9,justd001,,jeted001,,81,36,CBSBC,pinej001,1,0,bellc001 strikes out. ,bellc001,0,
+,31,9,camem001,,,,83,5,BBBCB,grimj001,0,0,camem001 walks. ,camem001,1,
+camem001 to 2B. ,00,9,,camem001,,wilsd001,84,6,B,grimj001,0,0,camem001 to 2B on defensive indifference. ,wilsd001,1,
+camem001 to 3B. ,31,9,,,camem001,,85,11,BCBBX,grimj001,1,0,wilsd001 grounds out. ,wilsd001,1,G
+,32,9,mclem001,,camem001,,86,17,CBCBBB,grimj001,0,0,mclem001 walks. ,mclem001,1,
+camem001 scores. ,01,9,mclem001,,,,87,19,CX,grimj001,1,1,hendr001 hits sacrifice fly. ,hendr001,1,
+mclem001 to 2B. ,00,9,,mclem001,,marta001,88,20,B,grimj001,0,0,mclem001 to 2B on defensive indifference. ,marta001,1,
+,31,9,,mclem001,,,89,25,BBCBX,grimj001,1,0,marta001 grounds out. ,marta001,1,G

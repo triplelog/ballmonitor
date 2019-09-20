@@ -1,0 +1,175 @@
+version,2
+info,visteam,DET
+info,hometeam,BAL
+info,site,BAL12
+info,date,2000/04/07
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,mckej901
+info,ump1b,morrd901
+info,ump2b,danlk901
+info,ump3b,fleta901
+info,pitches,pitches
+info,temp,74
+info,winddir,rtol
+info,windspeed,15
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,213
+info,attendance,39415
+info,wp,worrt002
+info,lp,mlicd001
+info,save,
+start,polol001,"Luis Polonia",0,1,9
+start,ausmb001,"Brad Ausmus",0,2,2
+start,higgb001,"Bobby Higginson",0,3,7
+start,palmd002,"Dean Palmer",0,4,5
+start,clart002,"Tony Clark",0,5,3
+start,easld001,"Damion Easley",0,6,4
+start,fickr001,"Robert Fick",0,7,10
+start,encaj001,"Juan Encarnacion",0,8,8
+start,cruzd001,"Deivi Cruz",0,9,6
+start,mlicd001,"Dave Mlicki",0,0,1
+start,andeb001,"Brady Anderson",1,1,8
+start,deshd001,"Delino DeShields",1,2,4
+start,surhb001,"B.J. Surhoff",1,3,7
+start,bellj002,"Albert Belle",1,4,9
+start,bainh001,"Harold Baines",1,5,10
+start,ripkc001,"Cal Ripken",1,6,5
+start,clarw001,"Will Clark",1,7,3
+start,johnc002,"Charles Johnson",1,8,2
+start,bordm001,"Mike Bordick",1,9,6
+start,maduc001,"Calvin Maduro",1,0,1
+play,1,0,polol001,01,CF,FLE3#
+com,"Clark needs FLE3 somewhere in this game"
+play,1,0,polol001,02,CFFX,63/G
+play,1,0,ausmb001,22,FBBFX,8/F8
+play,1,0,higgb001,01,CX,3/G
+play,1,1,andeb001,10,BX,43/G
+play,1,1,deshd001,00,X,9/F9
+play,1,1,surhb001,21,CBBX,31/G
+play,2,0,palmd002,22,CSBBS,K
+play,2,0,clart002,02,CSFX,43/G
+play,2,0,easld001,11,FBX,53/G
+play,2,1,bellj002,02,FFFX,E5/G
+play,2,1,bainh001,12,FBCS,K
+play,2,1,ripkc001,20,BBX,HR/78.1-H(UR)
+play,2,1,clarw001,31,BBBCB,W
+play,2,1,johnc002,01,CX,54(1)3/GDP
+play,3,0,fickr001,12,CSBFX,7/FL
+play,3,0,encaj001,22,BSBFFX,S7
+play,3,0,cruzd001,11,BCX,S7/7S.1-3
+play,3,0,polol001,12,FBCFX,7/SF.3-H
+play,3,0,ausmb001,32,CBFBBFB,W.1-2
+play,3,0,higgb001,12,BCSH,HP.2-3;1-2
+play,3,0,palmd002,32,BSSBBS,K
+play,3,1,bordm001,32,BCBSBX,8/F8D
+play,3,1,andeb001,22,FBBFX,7/F7
+play,3,1,deshd001,00,X,S9/9S
+play,3,1,surhb001,20,BBX,S8.1-3
+play,3,1,bellj002,20,BBX,HR/7.3-H;1-H
+play,3,1,bainh001,01,FX,8/F8S
+play,4,0,clart002,32,BCBCFBFFB,W
+play,4,0,easld001,22,SCFBBFX,S8/8S.1-2
+play,4,0,fickr001,22,CBCBFX,64(1)3/GDP.2-3
+play,4,0,encaj001,21,BBFX,HR/8.3-H
+play,4,0,cruzd001,31,FBBBX,E5/G
+play,4,0,polol001,02,FFFB,WP.1-2
+play,4,0,polol001,22,FFFBFFBX,8/F8S
+play,4,1,ripkc001,12,BCFX,63/G
+play,4,1,clarw001,32,CBSBBFFB,W
+play,4,1,johnc002,22,BBCFX,S8.1-2
+play,4,1,bordm001,11,FBX,13/G.2-3;1-2
+play,4,1,andeb001,32,BCSBBS,K
+play,5,0,ausmb001,02,SCX,HR/7
+play,5,0,higgb001,32,BCBSBB,W
+play,5,0,palmd002,11,FBX,HR/9.1-H
+play,5,0,clart002,00,,NP
+sub,worrt002,"Tim Worrell",1,0,1
+play,5,0,clart002,10,BX,HR/7
+play,5,0,easld001,11,BCX,6/FL
+play,5,0,fickr001,01,CX,43/G
+play,5,0,encaj001,00,X,S7/7S
+play,5,0,cruzd001,00,B,SB2
+play,5,0,cruzd001,10,BX,53/G
+play,5,1,deshd001,11,CBX,T9
+play,5,1,surhb001,01,SX,S9.3-H
+play,5,1,bellj002,32,FBBCFFBX,D7.1-H
+play,5,1,bainh001,00,,NP
+sub,johnm004,"Mark J. Johnson",0,0,1
+play,5,1,bainh001,10,BX,13/G.2-3
+com,"Debut game for Mark J. Johnson"
+play,5,1,ripkc001,11,CBX,63/G
+play,5,1,clarw001,32,BCBFFBFB,W
+play,5,1,johnc002,10,BX,HR/78.3-H;1-H
+play,5,1,bordm001,01,CX,HR/7
+play,5,1,andeb001,32,CBBFFBX,53/G
+play,6,0,polol001,21,CBBX,7/F7
+play,6,0,ausmb001,22,FFBBX,D9
+play,6,0,higgb001,12,FBSFS,K
+play,6,0,palmd002,30,BBBB,W
+play,6,0,clart002,30,BBBB,W.2-3;1-2
+play,6,0,easld001,22,FBFBFX,9/F9S
+play,6,1,deshd001,32,BBFBCS,K
+play,6,1,surhb001,12,CFBC,K/C
+play,6,1,bellj002,01,SX,9/F9S
+play,7,0,fickr001,00,,NP
+sub,reyea001,"Al Reyes",1,0,1
+play,7,0,fickr001,01,LX,7/F7
+play,7,0,encaj001,11,BFX,63/G
+play,7,0,cruzd001,22,CBSFBX,7/F7
+play,7,1,bainh001,22,FFBBX,63/G
+play,7,1,ripkc001,32,BFFFBBB,W
+play,7,1,clarw001,11,CBX,S8.1-3
+play,7,1,johnc002,00,X,E5/TH.3-H;1-3
+play,7,1,bordm001,00,X,8/SF.3-H(UR)
+play,7,1,andeb001,00,,NP
+sub,poolj001,"Jim Poole",0,0,1
+play,7,1,andeb001,00,X,S/78.1-3
+play,7,1,deshd001,12,BFCX,S9/9S.3-H(UR);1-2
+play,7,1,surhb001,02,SCX,5/FL
+play,8,0,polol001,00,,NP
+sub,amarr001,"Rich Amaral",1,1,8
+play,8,0,polol001,00,,NP
+sub,garcj001,"Jesse Garcia",1,9,6
+play,8,0,polol001,00,,NP
+sub,conij001,"Jeff Conine",1,6,5
+play,8,0,polol001,00,,NP
+sub,magew001,"Wendell Magee",0,1,11
+play,8,0,magew001,00,,NP
+sub,ryanb001,"B.J. Ryan",1,0,1
+play,8,0,magew001,32,CBBBCFFX,S9
+play,8,0,ausmb001,01,CX,S.1-2
+play,8,0,higgb001,32,BBBCSC,K/C
+play,8,0,palmd002,22,CFBBS,K
+play,8,0,clart002,32,CBSBBFB,W.2-3;1-2
+play,8,0,easld001,01,CX,54(1)/FO
+play,8,1,bellj002,00,,NP
+sub,magew001,"Wendell Magee",0,1,9
+play,8,1,bellj002,00,,NP
+sub,andem002,"Matt Anderson",0,0,1
+play,8,1,bellj002,32,CFBBBB,W
+play,8,1,bainh001,00,X,6(1)3/GDP
+play,8,1,conij001,30,BBBB,W
+play,8,1,clarw001,22,BBCFS,K
+play,9,0,fickr001,00,,NP
+sub,molig001,"Gabe Molina",1,0,1
+play,9,0,fickr001,21,FBBX,S9
+play,9,0,encaj001,32,BFBFBFB,W.1-2
+play,9,0,cruzd001,11,CBX,7/F7D
+play,9,0,magew001,10,BX,HR/7.2-H;1-H
+play,9,0,ausmb001,22,CBBCX,13/G
+play,9,0,higgb001,21,CBBX,S9
+play,9,0,palmd002,01,CX,9/F9
+data,er,mlicd001,7
+data,er,johnm004,4
+data,er,poolj001,0
+data,er,andem002,0
+data,er,maduc001,6
+data,er,worrt002,1
+data,er,reyea001,0
+data,er,ryanb001,0
+data,er,molig001,3

@@ -1,0 +1,133 @@
+version,2
+info,visteam,COL
+info,hometeam,SDN
+info,site,SAN01
+info,date,2000/07/03
+info,number,0
+info,starttime,6:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,higgs901
+info,ump1b,everm901
+info,ump2b,dimum901
+info,ump3b,gormb901
+info,pitches,pitches
+info,temp,72
+info,winddir,ltor
+info,windspeed,7
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,141
+info,attendance,31717
+info,wp,bohab001
+info,lp,monts001
+info,save,jimej001
+start,goodt001,"Tom Goodwin",0,1,8
+start,lansm001,"Mike Lansing",0,2,4
+start,cirij001,"Jeff Cirillo",0,3,5
+start,heltt001,"Todd Helton",0,4,3
+start,hammj001,"Jeffrey Hammonds",0,5,9
+start,bragd001,"Darren Bragg",0,6,7
+start,maynb001,"Brent Mayne",0,7,2
+start,peren001,"Neifi Perez",0,8,6
+start,bohab001,"Brian Bohanon",0,9,1
+start,owene001,"Eric Owens",1,1,9
+start,river002,"Ruben Rivera",1,2,8
+start,klesr001,"Ryan Klesko",1,3,3
+start,nevip001,"Phil Nevin",1,4,5
+start,boonb002,"Bret Boone",1,5,4
+start,hernc001,"Carlos A. Hernandez",1,6,2
+start,alled001,"Dusty Allen",1,7,7
+start,nichk001,"Kevin Nicholson",1,8,6
+start,eatoa001,"Adam Eaton",1,9,1
+play,1,0,goodt001,22,CCBFBFS,K
+play,1,0,lansm001,22,BFBFFC,K/C
+play,1,0,cirij001,31,BBCBB,W
+play,1,0,heltt001,12,BSFX,S9/9S.1-3
+play,1,0,hammj001,32,BBBSSC,K/C
+play,1,1,owene001,12,BCSC,K/C
+play,1,1,river002,11,BFX,53/G
+play,1,1,klesr001,00,X,7/F7
+play,2,0,bragd001,32,SBCBFBS,K
+play,2,0,maynb001,12,CBSS,K
+play,2,0,peren001,32,FFBBFBB,W
+play,2,0,bohab001,12,CBCS,K
+play,2,1,nevip001,30,BBBB,W
+play,2,1,boonb002,01,CX,9/F9
+play,2,1,hernc001,31,BBCBB,W.1-2
+play,2,1,alled001,11,BFX,46(1)3/GDP
+play,3,0,goodt001,00,X,53/BG
+play,3,0,lansm001,22,CFBBS,K
+play,3,0,cirij001,11,CBX,63/G
+play,3,1,nichk001,12,BCFC,K/C
+play,3,1,eatoa001,12,BFFX,S8
+play,3,1,owene001,22,FFBFBFX,3(B)3(1)/LDP
+play,4,0,heltt001,32,BCBBCX,D9/9S
+play,4,0,hammj001,21,BFBX,FC6.2X3(65);B-2#
+play,4,0,bragd001,10,BX,S7/7S.2-3
+play,4,0,maynb001,31,CBBBB,W.1-2
+play,4,0,peren001,00,X,E4/G.3-H;2-3;1-2
+play,4,0,bohab001,22,BSLBX,6/P6
+play,4,0,goodt001,12,FBSS,K
+play,4,1,river002,12,SBSX,8/F8
+play,4,1,klesr001,20,BBX,1/P1
+play,4,1,nevip001,11,CBX,HR/7
+play,4,1,boonb002,22,BCSBC,K/C
+play,5,0,lansm001,00,X,9/F9
+play,5,0,cirij001,11,CBX,8/F8
+play,5,0,heltt001,31,BBCBB,W
+play,5,0,hammj001,22,BBFFX,64(1)/FO
+play,5,1,hernc001,22,CFBBS,K23
+play,5,1,alled001,10,BX,63/G
+play,5,1,nichk001,22,CBFBX,7/L7
+play,6,0,bragd001,12,FCBFFS,K
+play,6,0,maynb001,22,BFBFFX,13/G
+play,6,0,peren001,12,SLBC,K/C
+play,6,1,eatoa001,00,,NP
+sub,jackd003,"Damian Jackson",1,9,11
+play,6,1,jackd003,22,BFBCS,K
+play,6,1,owene001,12,CBFS,K
+play,6,1,river002,12,BSCS,K
+play,7,0,bohab001,00,,NP
+sub,monts001,"Steve L. Montgomery",1,9,1
+play,7,0,bohab001,01,CX,9/F9
+play,7,0,goodt001,02,CFS,K
+play,7,0,lansm001,01,SX,6/L6
+play,7,1,klesr001,12,SCBX,S8
+play,7,1,nevip001,12,CBFX,3(B)6(1)/GDP
+play,7,1,boonb002,11,CBX,53/G
+play,8,0,cirij001,11,BCX,9/F9
+play,8,0,heltt001,10,BF,FLE5
+com,"DV assumes first foul - might be wrong"
+play,8,0,heltt001,32,BFBFBFB,W
+play,8,0,hammj001,12,CFBX,HR/7.1-H(UR)
+play,8,0,bragd001,00,,NP
+sub,walkk001,"Kevin Walker",1,9,1
+play,8,0,bragd001,01,CX,63/G
+play,8,0,maynb001,32,BCBFBX,43/G
+play,8,1,hernc001,00,X,8/F8
+play,8,1,alled001,00,X,3/P3
+play,8,1,nichk001,32,BBBCCX,S
+play,8,1,walkk001,00,,NP
+sub,gonzw001,"Wiki Gonzalez",1,9,11
+play,8,1,gonzw001,21,BBCX,3/FL
+play,9,0,peren001,00,,NP
+sub,cunnw001,"Will Cunnane",1,9,1
+play,9,0,peren001,11,FBX,43/G
+play,9,0,bohab001,00,,NP
+sub,echea001,"Angel Echevarria",0,9,11
+play,9,0,echea001,22,CFBBFX,9/L9
+play,9,0,goodt001,10,BX,63/G
+play,9,1,owene001,00,,NP
+sub,jimej001,"Jose Jimenez",0,9,1
+play,9,1,owene001,10,BX,13/G
+play,9,1,river002,02,FSS,K
+play,9,1,klesr001,31,BSBBB,W
+play,9,1,nevip001,12,FFBC,K/C
+data,er,bohab001,1
+data,er,jimej001,0
+data,er,eatoa001,1
+data,er,monts001,1
+data,er,walkk001,0
+data,er,cunnw001,0

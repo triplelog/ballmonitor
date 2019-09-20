@@ -1,0 +1,151 @@
+version,2
+info,visteam,OAK
+info,hometeam,KCA
+info,site,KAN06
+info,date,2000/05/01
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,rungb901
+info,ump1b,shulj901
+info,ump2b,rapue901
+info,ump3b,millb901
+info,pitches,pitches
+info,temp,64
+info,winddir,torf
+info,windspeed,7
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,174
+info,attendance,14544
+info,wp,olivo001
+info,lp,reicd001
+info,save,isrij001
+start,longt002,"Terrence Long",0,1,8
+start,tejam001,"Miguel Tejada",0,2,6
+start,giamj001,"Jason Giambi",0,3,3
+start,staim001,"Matt Stairs",0,4,9
+start,piata001,"Adam Piatt",0,5,10
+start,grieb001,"Ben Grieve",0,6,7
+start,hernr002,"Ramon Hernandez",0,7,2
+start,chave001,"Eric Chavez",0,8,5
+start,menef001,"Frank Menechino",0,9,4
+start,olivo001,"Omar Olivares",0,0,1
+start,damoj001,"Johnny Damon",1,1,10
+start,feblc001,"Carlos Febles",1,2,4
+start,sweem002,"Mike Sweeney",1,3,3
+start,dye-j001,"Jermaine Dye",1,4,9
+start,beltc001,"Carlos Beltran",1,5,8
+start,randj002,"Joe Randa",1,6,5
+start,quinm001,"Mark Quinn",1,7,7
+start,fabrj001,"Jorge Fabregas",1,8,2
+start,sancr001,"Rey Sanchez",1,9,6
+start,durbc001,"Chad Durbin",1,0,1
+play,1,0,longt002,02,CSX,5/FL
+play,1,0,tejam001,21,FBBX,E9/F.B-2
+play,1,0,giamj001,32,BBFFFBB,W
+play,1,0,staim001,32,CBBSBFS,K
+play,1,0,piata001,32,BSCBBX,13/G
+play,1,1,damoj001,11,BSX,S3/BG3
+play,1,1,feblc001,22,CBBFX,S9/9S.1-3
+play,1,1,sweem002,11,BCX,7/SF.3-H
+play,1,1,dye-j001,22,BBSCB,SB2
+play,1,1,dye-j001,32,BBSCBX,7/F7
+play,1,1,beltc001,10,BX,S9.2-H
+play,1,1,randj002,21,BBFX,2/FL
+play,2,0,grieb001,00,X,9/F9D
+play,2,0,hernr002,22,CBBFX,D/78
+play,2,0,chave001,32,CCBBBB,W
+play,2,0,menef001,01,SX,S7.2-3;1-2
+play,2,0,longt002,32,BBFFFBFX,T8.3-H;2-H;1-H
+play,2,0,tejam001,00,X,63/G
+play,2,0,giamj001,30,BBBB,W
+play,2,0,staim001,00,X,8/F8
+play,2,1,quinm001,10,BX,53/G
+play,2,1,fabrj001,01,CX,31/G
+play,2,1,sancr001,01,FX,3/P3
+play,3,0,piata001,22,BFSBS,K
+play,3,0,grieb001,32,FBBFBX,43/G
+play,3,0,hernr002,00,X,HR/7
+play,3,0,chave001,00,X,3/FL
+play,3,1,damoj001,01,CX,S8.B-2(E8)
+play,3,1,feblc001,22,BBFSFFFS,K
+play,3,1,sweem002,00,X,8/F8.2-3
+play,3,1,dye-j001,31,FBBBB,W
+play,3,1,beltc001,00,X,S8.3-H;1-2
+play,3,1,randj002,10,BX,S9/9S.2-H;1-3
+play,3,1,quinm001,10,BX,8/F8
+play,4,0,menef001,20,BBX,9/F9
+play,4,0,longt002,10,BX,43/G
+play,4,0,tejam001,10,BX,8/F8
+play,4,1,fabrj001,00,X,4/P4
+play,4,1,sancr001,11,BCX,D7
+play,4,1,damoj001,32,BBBCSC,K/C
+play,4,1,feblc001,22,FBFBS,K
+play,5,0,giamj001,10,BX,31/G
+play,5,0,staim001,00,X,6/P6
+play,5,0,piata001,32,CBFBBX,8/F8
+play,5,1,sweem002,00,X,63/G
+play,5,1,dye-j001,22,CBFBFFS,K
+play,5,1,beltc001,32,BCBFBB,W
+play,5,1,randj002,32,BFBCBFFB,W.1-2
+play,5,1,quinm001,20,BBX,S9.2-H;1-2
+play,5,1,fabrj001,20,BBX,3/G
+play,6,0,grieb001,10,BX,63/G
+play,6,0,hernr002,32,BBCSBX,63/G
+play,6,0,chave001,10,BX,3/G
+play,6,1,sancr001,00,X,63/G
+play,6,1,damoj001,01,CX,2/FL
+play,6,1,feblc001,10,BX,4/P4
+play,7,0,menef001,22,BCBCS,K
+play,7,0,longt002,30,BBBB,W
+play,7,0,tejam001,00,,NP
+sub,reicd001,"Dan Reichert",1,0,1
+play,7,0,tejam001,21,BFBX,54(1)/FO
+play,7,0,giamj001,10,BX,6(1)/FO/G
+play,7,1,sweem002,01,CX,63/G
+play,7,1,dye-j001,10,BX,53/G
+play,7,1,beltc001,11,BFX,5/FL
+play,8,0,staim001,22,CBCBX,E3/TH1
+play,8,0,piata001,00,,NP
+sub,chrir001,"Ryan Christenson",0,4,12
+play,8,0,piata001,10,BX,34/SH.1-2
+play,8,0,grieb001,11,FBH,HP
+play,8,0,hernr002,10,BX,S9.2-3;1-2
+play,8,0,chave001,22,CBBSX,46(1)/FO.3-H(UR);2-3
+play,8,0,menef001,00,,NP
+sub,saeno001,"Olmedo Saenz",0,9,11
+play,8,0,saeno001,00,X,S7/7S.3-H(UR);1-2
+play,8,0,longt002,00,,NP
+sub,velaj001,"Jorge Velandia",0,9,12
+play,8,0,longt002,20,BBX,S9.2-H(UR);1-3
+play,8,0,tejam001,01,FX,4(1)/FO/G
+play,8,1,randj002,00,,NP
+sub,chrir001,"Ryan Christenson",0,4,9
+play,8,1,randj002,00,,NP
+sub,velaj001,"Jorge Velandia",0,9,4
+play,8,1,randj002,00,,NP
+sub,joned001,"Doug Jones",0,0,1
+play,8,1,randj002,12,BCFS,K
+play,8,1,quinm001,11,BCX,9/F9
+play,8,1,fabrj001,10,BX,S9
+play,8,1,sancr001,20,BBH,HP.1-2
+play,8,1,damoj001,21,BBCX,3/G
+play,9,0,giamj001,00,X,31/G
+play,9,0,chrir001,32,BBCSBB,W
+play,9,0,piata001,02,FSS,K
+play,9,0,grieb001,21,CBBX,43/G
+play,9,1,feblc001,00,,NP
+sub,beckr002,"Rich Becker",0,6,7
+play,9,1,feblc001,00,,NP
+sub,isrij001,"Jason Isringhausen",0,0,1
+play,9,1,feblc001,12,BCSX,3/FL
+play,9,1,sweem002,00,X,9/F9
+play,9,1,dye-j001,02,CCX,9/F9
+data,er,olivo001,5
+data,er,joned001,0
+data,er,isrij001,0
+data,er,durbc001,4
+data,er,reicd001,0

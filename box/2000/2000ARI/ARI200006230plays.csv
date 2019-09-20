@@ -1,0 +1,65 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,11,1,,,,,0,3,BCX,andeb002,1,0,,goodt001,0,P
+,20,1,,,,,1,6,BBX,andeb002,1,0,lansm001 grounds out. ,lansm001,0,G
+,31,1,walkl001,,,,2,11,BBBCB,andeb002,0,0,walkl001 walks. ,walkl001,0,
+,12,1,walkl001,,,,3,16,CFBFX,andeb002,1,0,,cirij001,0,P
+,01,1,,,,,4,2,CX,bohab001,1,0,womat001 grounds out. ,womat001,1,G
+,00,1,,,,,5,3,X,bohab001,1,0,,bellj001,1,F
+,01,1,,,,,6,5,CX,bohab001,1,0,gonzl001 grounds out. ,gonzl001,1,G
+,11,2,,,,,7,19,CBX,andeb002,1,0,heltt001 grounds out. ,heltt001,0,G
+,10,2,,,,,8,21,BX,andeb002,1,0,,hammj001,0,F
+,12,2,,,,,9,28,CFFBFFX,andeb002,1,0,,servs002,0,F
+,00,2,,,,,10,6,X,bohab001,1,0,,willm003,1,P
+,30,2,finls001,,,,11,10,BBBB,bohab001,0,0,finls001 walks. ,finls001,1,
+finls001 to 2B. ,31,2,colbg001,finls001,,,12,15,BFBBB,bohab001,0,0,colbg001 walks. ,colbg001,1,
+,12,2,colbg001,finls001,,,13,19,BCFS,bohab001,1,0,milld002 strikes out. ,milld002,1,
+finls001 to 3B. colbg001 to 2B. ,32,2,bautd001,colbg001,finls001,,14,25,BCFBBB,bohab001,0,0,bautd001 walks. ,bautd001,1,
+,02,2,bautd001,colbg001,finls001,,15,28,CSX,bohab001,1,0,andeb002 grounds out. ,andeb002,1,G
+,00,3,,,,,16,29,X,andeb002,1,0,,peren001,0,F
+,01,3,,,,,17,31,CX,andeb002,1,0,bohab001 grounds out. ,bohab001,0,G
+,22,3,,,,,18,36,BCCBX,andeb002,1,0,goodt001 grounds out. ,goodt001,0,G
+,12,3,,,,,19,32,BSFX,bohab001,1,0,womat001 grounds out. ,womat001,1,G
+,31,3,,,,,20,37,BBFBX,bohab001,1,0,bellj001 grounds out. ,bellj001,1,G
+,32,3,,,,,21,44,CBFBFBX,bohab001,1,0,,gonzl001,1,
+,11,4,,,,,22,39,FBX,andeb002,1,0,,lansm001,0,F
+,11,4,,,,,23,42,FBX,andeb002,1,0,walkl001 grounds out. ,walkl001,0,G
+,21,4,,,,,24,46,BCBX,andeb002,1,0,,cirij001,0,F
+,22,4,,,,,25,49,CBSBS,bohab001,1,0,willm003 strikes out. ,willm003,1,
+,12,4,,,,,26,53,CFBX,bohab001,1,0,,finls001,1,F
+,22,4,,,,,27,59,BSCFBS,bohab001,1,0,colbg001 strikes out. ,colbg001,1,
+,10,5,,,,,28,48,BX,andeb002,1,0,,heltt001,0,F
+,00,5,hammj001,,,,29,49,X,andeb002,0,0,hammj001 singles. ,hammj001,0,
+,00,5,,,,servs002,30,50,1,andeb002,1,0,hammj001 picked off. ,servs002,0,
+,00,5,,,,,31,52,1X,andeb002,1,0,,servs002,0,F
+,32,5,,,,,32,66,BFFFBBX,bohab001,1,0,,milld002,1,F
+,02,5,,,,,33,69,CFC,bohab001,1,0,bautd001 strikes out. ,bautd001,1,
+,22,5,,andeb002,,,34,74,FBBFX,bohab001,0,0,andeb002 doubles. ,andeb002,1,
+,32,5,womat001,andeb002,,,35,82,BSBFFFBB,bohab001,0,0,womat001 walks. ,womat001,1,
+,01,5,womat001,andeb002,,,36,84,FX,bohab001,1,0,bellj001 grounds out. ,bellj001,1,G
+,21,6,,,,,37,56,BBFX,andeb002,1,0,,peren001,0,G
+,10,6,,,,,38,58,BX,andeb002,1,0,bohab001 grounds out. ,bohab001,0,G
+,22,6,,,,,39,65,CBCFBFS,andeb002,1,0,goodt001 strikes out. ,goodt001,0,
+,00,6,,,,,40,85,X,bohab001,1,0,,gonzl001,1,L
+,10,6,willm003,,,,41,87,BX,bohab001,0,0,willm003 singles. ,willm003,1,
+willm003 to 3B. ,00,6,finls001,,willm003,,42,88,X,bohab001,0,0,finls001 singles. ,finls001,1,
+willm003 scores. ,22,6,finls001,,,,43,93,FFBBX,bohab001,1,1,colbg001 hits sacrifice fly. ,colbg001,1,
+,00,6,finls001,,,,44,94,X,bohab001,1,0,,milld002,1,F
+,22,7,,,,,45,71,BBCFFX,andeb002,1,0,,lansm001,0,F
+,01,7,walkl001,,,,46,73,SX,andeb002,0,0,walkl001 singles. ,walkl001,0,
+,00,7,walkl001,,,,47,74,X,andeb002,1,0,,cirij001,0,
+,22,7,walkl001,,,,48,79,FSBBX,andeb002,1,0,,heltt001,0,F
+,11,7,,,,,49,97,CBX,bohab001,0,1,bautd001 homers. ,bautd001,1,
+,11,7,andeb002,,,,50,100,LBX,bohab001,0,0,andeb002 singles. ,andeb002,1,
+andeb002 to 2B. ,00,7,,andeb002,,,51,101,X,bohab001,1,0,Sacrifice bunt by womat001.,womat001,1,
+,12,7,,andeb002,,,53,4,BCSS,belis001,1,0,bellj001 strikes out. ,bellj001,1,
+,30,7,gonzl001,andeb002,,,54,8,IIII,belis001,0,0,gonzl001 intentionally walks. ,gonzl001,1,
+,01,7,gonzl001,andeb002,,,55,10,SX,belis001,1,0,willm003 grounds out. ,willm003,1,G
+,01,8,,,,,57,81,SX,andeb002,1,0,,hammj001,0,
+,10,8,,,,,58,83,BX,andeb002,1,0,servs002 grounds out. ,servs002,0,G
+,11,8,,,,,59,86,CBX,andeb002,1,0,,peren001,0,F
+,11,8,,,,,61,3,BFX,myerm001,1,0,finls001 grounds out. ,finls001,1,G
+,12,8,,,,,62,8,CBFFX,myerm001,1,0,,lee-t002,1,P
+,10,8,,,,,65,2,BX,tavaj001,1,0,,milld002,1,F
+,22,9,,,,,67,5,BBCFS,kim-b001,1,0,shumt001 strikes out. ,shumt001,0,
+,32,9,,,,,68,12,BBBCCFS,kim-b001,1,0,goodt001 strikes out. ,goodt001,0,
+,22,9,,,,,69,17,BBCCS,kim-b001,1,0,lansm001 strikes out. ,lansm001,0,

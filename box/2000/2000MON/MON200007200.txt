@@ -1,0 +1,132 @@
+version,2
+info,visteam,NYN
+info,hometeam,MON
+info,site,MON02
+info,date,2000/07/20
+info,number,0
+info,starttime,1:35PM
+info,daynight,day
+info,usedh,false
+info,umphome,everm901
+info,ump1b,crawj901
+info,ump2b,dimum901
+info,ump3b,gormb901
+info,pitches,pitches
+info,temp,72
+info,winddir,fromlf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,151
+info,attendance,13641
+info,wp,hermd001
+info,lp,hampm001
+info,save,stris001
+start,harrl001,"Lenny Harris",0,1,5
+start,belld001,"Derek Bell",0,2,9
+start,alfoe001,"Edgardo Alfonzo",0,3,4
+start,piazm001,"Mike Piazza",0,4,2
+start,zeilt001,"Todd Zeile",0,5,3
+start,paytj001,"Jay Payton",0,6,8
+start,agbab001,"Benny Agbayani",0,7,7
+start,moram002,"Melvin Mora",0,8,6
+start,hampm001,"Mike Hampton",0,9,1
+start,bradm001,"Milton Bradley",1,1,8
+start,guerw001,"Wilton Guerrero",1,2,9
+start,vidrj001,"Jose Vidro",1,3,4
+start,seguf001,"Fernando Seguignol",1,4,3
+start,widgc001,"Chris Widger",1,5,2
+start,barrm003,"Michael Barrett",1,6,5
+start,mordm001,"Mike Mordecai",1,7,6
+start,bergp001,"Peter Bergeron",1,8,7
+start,hermd001,"Dustin Hermanson",1,9,1
+play,1,0,harrl001,00,X,13/G
+play,1,0,belld001,02,CFS,K
+play,1,0,alfoe001,02,CFS,K
+play,1,1,bradm001,00,X,63/G
+play,1,1,guerw001,32,BFBFBS,K
+play,1,1,vidrj001,11,BCX,E6/G
+play,1,1,seguf001,01,CX,43/G
+play,2,0,piazm001,32,CSBFBBC,K/C
+play,2,0,zeilt001,22,BCFBFX,S8
+play,2,0,paytj001,00,X,S7.1-2
+play,2,0,agbab001,12,SFBX,S8.2-H;1X3(835);B-2(TH3)
+play,2,0,moram002,02,CSX,8/F8D
+play,2,1,widgc001,32,BBBCCFB,W
+play,2,1,barrm003,02,FFFS,K
+play,2,1,mordm001,31,BCBBB,W.1-2
+play,2,1,bergp001,01,CX,53/G.2-3;1-2
+play,2,1,hermd001,12,SBSX,53/G
+play,3,0,hampm001,32,BCBCBB,W
+play,3,0,harrl001,21,BSBX,7/F7
+play,3,0,belld001,11,CBB,CS2(24)
+play,3,0,belld001,22,CBBCX,7/F7
+play,3,1,bradm001,32,BBSFFBS,K
+play,3,1,guerw001,10,BX,13/G
+play,3,1,vidrj001,11,CBX,S9
+play,3,1,seguf001,00,X,64(1)/FO
+play,4,0,alfoe001,10,BX,S7/7S
+play,4,0,piazm001,00,X,9/F9S
+play,4,0,zeilt001,22,CBBCC,K/C
+play,4,0,paytj001,10,BX,46(1)/FO
+play,4,1,widgc001,11,BSX,63/G
+play,4,1,barrm003,02,CCS,K
+play,4,1,mordm001,12,CBSC,K/C
+play,5,0,agbab001,12,CFBS,K
+play,5,0,moram002,00,X,53/G
+play,5,0,hampm001,01,CX,63/G
+play,5,1,bergp001,12,FBFX,S/78
+play,5,1,hermd001,00,X,14/SH.1-2
+play,5,1,bradm001,31,BCBBX,S9.2-3
+play,5,1,guerw001,00,X,S8.3-H;1-2
+play,5,1,vidrj001,02,CSS,K
+play,5,1,seguf001,00,X,S8.2XH(82);1-2
+play,6,0,harrl001,31,BFBBX,63/G
+play,6,0,belld001,00,X,43/G
+play,6,0,alfoe001,12,BFSX,9/FL
+play,6,1,widgc001,12,FBFX,HR/7
+play,6,1,barrm003,21,BBFX,53/G
+play,6,1,mordm001,22,BFFBC,K/C
+play,6,1,bergp001,12,CBSS,K
+play,7,0,piazm001,01,CX,53/G
+play,7,0,zeilt001,11,BCX,63/G
+play,7,0,paytj001,11,SBX,13/G
+play,7,1,hermd001,22,BCSBS,K
+play,7,1,bradm001,10,BX,9/F9
+play,7,1,guerw001,30,BBBB,W
+play,7,1,vidrj001,22,SBFBX,S9.1-3
+play,7,1,seguf001,00,B,WP.1-2
+play,7,1,seguf001,32,BBFBSB,W
+play,7,1,widgc001,32,CBCBBX,D7/7D.3-H;2-H;1XH(762)
+play,8,0,agbab001,00,,NP
+sub,stevl001,"Lee Stevens",1,4,3
+play,8,0,agbab001,12,CFFFBFX,S8
+play,8,0,moram002,12,SBSS,K
+play,8,0,hampm001,00,,NP
+sub,franm001,"Matt Franco",0,9,11
+play,8,0,franm001,21,BFBX,S7/7S.1-2
+play,8,0,harrl001,31,BFBBB,W.2-3;1-2
+play,8,0,belld001,22,BFFBS,K
+play,8,0,alfoe001,00,,NP
+sub,johnm001,"Mark P. Johnson",0,3,11
+play,8,0,johnm001,22,BSFFBS,K
+play,8,1,barrm003,00,,NP
+sub,franm001,"Matt Franco",0,9,5
+play,8,1,barrm003,00,,NP
+sub,harrl001,"Lenny Harris",0,1,4
+play,8,1,barrm003,00,,NP
+sub,rodrr004,"Rich Rodriguez",0,3,1
+play,8,1,barrm003,12,CCBX,43/G
+play,8,1,mordm001,00,X,13/G
+play,8,1,bergp001,32,BBFFFBS,K
+play,9,0,piazm001,00,X,53/G
+play,9,0,zeilt001,12,BCCX,53/G
+play,9,0,paytj001,00,X,S7
+play,9,0,agbab001,00,,NP
+sub,stris001,"Scott Strickland",1,9,1
+play,9,0,agbab001,20,BBX,43/G
+data,er,hampm001,4
+data,er,rodrr004,0
+data,er,hermd001,1
+data,er,stris001,0

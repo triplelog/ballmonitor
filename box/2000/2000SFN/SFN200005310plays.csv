@@ -1,0 +1,83 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,01,1,,,,,0,2,CX,gardm001,1,0,,gland001,0,F
+,11,1,,,,,1,5,CBX,gardm001,0,1,gantr001 homers. ,gantr001,0,
+,21,1,,,,,2,9,BCBX,gardm001,1,0,,abreb001,0,P
+,00,1,,liebm001,,,3,10,X,gardm001,0,0,liebm001 doubles. ,liebm001,0,
+,12,1,,liebm001,,,4,14,CSBS,gardm001,1,0,huntb001 strikes out. ,huntb001,0,
+,32,1,,,,,5,6,CBFBBX,byrdp001,1,0,benam001 grounds out. ,benam001,1,G
+,01,1,,,,,6,8,CX,byrdp001,1,0,muelb001 grounds out. ,muelb001,1,G
+,10,1,,,,,7,10,BX,byrdp001,0,1,bondb001 homers. ,bondb001,1,
+,11,1,,,,,8,13,FBX,byrdp001,1,0,kentj001 grounds out. ,kentj001,1,G
+,10,2,,,,,9,16,BX,gardm001,1,0,,jordk001,0,P
+,22,2,,,,,10,22,FBCBFX,gardm001,1,0,,moram001,0,F
+,11,2,,,,,11,25,CBX,gardm001,1,0,relad001 grounds out. ,relad001,0,G
+,11,2,snowj001,,,,12,16,CBX,byrdp001,0,0,snowj001 singles. ,snowj001,1,
+snowj001 scores. ,01,2,,,,,13,18,FX,byrdp001,0,2,burke001 homers. ,burke001,1,
+,00,2,,,,,14,19,X,byrdp001,1,0,,martr003,1,F
+,30,2,mirad001,,,,15,23,BBBB,byrdp001,0,0,mirad001 walks. ,mirad001,1,
+mirad001 to 2B. ,20,2,,mirad001,,,16,26,BBX,byrdp001,1,0,gardm001 grounds out. ,gardm001,1,G
+,22,2,,mirad001,,,17,32,BBCFFX,byrdp001,1,0,benam001 grounds out. ,benam001,1,G
+,21,3,,,,,18,29,BBCX,gardm001,1,0,,byrdp001,0,F
+,00,3,,,,,19,30,X,gardm001,1,0,,gland001,0,F
+,00,3,,,,,20,31,X,gardm001,1,0,,gantr001,0,F
+,01,3,muelb001,,,,21,34,FX,byrdp001,0,0,muelb001 singles. ,muelb001,1,
+muelb001 to 2B. ,01,3,,muelb001,,bondb001,22,36,CB,byrdp001,0,0,Wild Pitch. ,bondb001,1,
+muelb001 out. ,11,3,,,,bondb001,23,39,CBB,byrdp001,1,0,,bondb001,1,
+,31,3,bondb001,,,,24,44,CBBBB,byrdp001,0,0,bondb001 walks. ,bondb001,1,
+,32,3,,bondb001,,,25,50,BBFSBS,byrdp001,1,0,kentj001 strikes out. bondb001 steals 2B. ,kentj001,1,
+,00,3,,bondb001,,,26,51,X,byrdp001,1,0,snowj001 grounds out. ,snowj001,1,G
+,32,4,,,,,27,39,BBBCFFFX,gardm001,1,0,,abreb001,0,F
+,11,4,,,,,28,42,BCX,gardm001,1,0,,liebm001,0,F
+,31,4,huntb001,,,,29,47,FBBBB,gardm001,0,0,huntb001 walks. ,huntb001,0,
+huntb001 to 2B. ,21,4,jordk001,huntb001,,,30,51,BBCX,gardm001,0,0,jordk001 singles. ,jordk001,0,
+,11,4,jordk001,huntb001,,,31,54,BCX,gardm001,1,0,,moram001,0,F
+,20,4,,burke001,,,32,54,BBX,byrdp001,0,0,burke001 doubles. ,burke001,1,
+burke001 scores. ,01,4,martr003,,,,33,56,CX,byrdp001,0,1,martr003 singles. ,martr003,1,
+,00,4,,,,mirad001,34,57,B,byrdp001,1,0,martr003 caught stealing. ,mirad001,1,
+,32,4,mirad001,,,,35,63,BBBCCB,byrdp001,0,0,mirad001 walks. ,mirad001,1,
+mirad001 to 2B. ,00,4,,mirad001,,,36,64,X,byrdp001,1,0,Sacrifice bunt by gardm001.,gardm001,1,
+mirad001 scores. benam001 out. ,11,4,,,,,37,67,CBX,byrdp001,1,1,benam001 singles. ,benam001,1,
+,22,5,,,,,38,59,BFBSC,gardm001,1,0,relad001 strikes out. ,relad001,0,
+,01,5,,,,,39,61,CX,gardm001,1,0,byrdp001 grounds out. ,byrdp001,0,G
+,21,5,,gland001,,,40,65,BBCX,gardm001,0,0,gland001 doubles. ,gland001,0,
+,02,5,,gland001,,,41,68,FCX,gardm001,1,0,gantr001 grounds out. ,gantr001,0,G
+,00,5,,,,,42,68,X,byrdp001,1,0,,muelb001,1,L
+,00,5,,,,,43,69,X,byrdp001,1,0,,bondb001,1,F
+,22,5,,,,,44,75,BBCFFX,byrdp001,1,0,,kentj001,1,F
+,31,6,,abreb001,,,45,73,BCBBX,gardm001,0,0,abreb001 doubles. ,abreb001,0,
+abreb001 to 3B. ,00,6,,,abreb001,,46,74,X,gardm001,1,0,,liebm001,0,F
+abreb001 scores. ,00,6,huntb001,,,,47,75,X,gardm001,0,1,huntb001 singles. ,huntb001,0,
+huntb001 scores. ,11,6,,,,,48,78,BCX,gardm001,0,2,jordk001 homers. ,jordk001,0,
+,22,6,,,,,49,85,CCFBBFX,gardm001,1,0,,moram001,0,F
+,12,6,,,,,50,89,BFCS,gardm001,1,0,relad001 strikes out. ,relad001,0,
+,32,6,snowj001,,,,51,82,BBFFBFX,byrdp001,0,0,snowj001 singles. ,snowj001,1,
+snowj001 out. ,12,6,burke001,,,,52,86,FBFX,byrdp001,1,0,burke001 reaches on fielder's choice. ,burke001,1,
+burke001 scores. ,10,6,,,,,53,88,BX,byrdp001,0,2,martr003 homers. ,martr003,1,
+,22,6,mirad001,,,,54,93,CBSBX,byrdp001,0,0,mirad001 singles. ,mirad001,1,
+mirad001 to 2B. ,32,6,lowet001,mirad001,,,58,6,BBSBSB,wardb001,0,0,lowet001 walks. ,lowet001,1,
+mirad001 to 3B. lowet001 out. ,01,6,benam001,,mirad001,,59,8,CX,wardb001,1,0,benam001 reaches on fielder's choice. ,benam001,1,
+,12,6,benam001,,mirad001,,60,13,CFBFX,wardb001,1,0,,muelb001,1,F
+,11,7,,,,,62,3,CBX,rodrf002,1,0,ariaa001 grounds out. ,ariaa001,0,G
+,01,7,,,,,63,5,CX,rodrf002,1,0,,gland001,0,F
+,12,7,,,,,64,9,FCBX,rodrf002,1,0,gantr001 grounds out. ,gantr001,0,G
+,00,7,bondb001,,,,65,14,X,wardb001,0,0,bondb001 singles. ,bondb001,1,
+,11,7,,,,,66,17,BCX,wardb001,2,0,Double Play. ,kentj001,1,
+,22,7,,,,,67,22,BSFBS,wardb001,1,0,snowj001 strikes out. ,snowj001,1,
+,01,8,,abreb001,,,69,2,CX,johnj006,0,0,abreb001 doubles. ,abreb001,0,
+,02,8,,abreb001,,,70,6,CFFS,johnj006,1,0,liebm001 strikes out. ,liebm001,0,
+,00,8,,abreb001,,,71,7,X,johnj006,1,0,,huntb001,0,P
+,22,8,,abreb001,,,72,12,BCBFX,johnj006,1,0,jordk001 grounds out. ,jordk001,0,G
+,21,8,burke001,,,,74,4,SBBX,branj001,0,0,burke001 singles. ,burke001,1,
+,01,8,,burke001,,martr003,75,6,LB,branj001,0,0,burke001 steals 2B. ,martr003,1,
+burke001 to 3B. ,11,8,,,burke001,,76,9,LBX,branj001,1,0,martr003 grounds out. ,martr003,1,G
+,31,8,mirad001,,burke001,,77,14,BBBCB,branj001,0,0,mirad001 walks. ,mirad001,1,
+mirad001 to 2B. ,30,8,riosa001,mirad001,burke001,,79,18,BBBB,branj001,0,0,riosa001 walks. ,riosa001,1,
+burke001 scores. mirad001 scores. riosa001 to 3B. ,10,8,benam001,,riosa001,,80,20,BX,branj001,0,2,benam001 singles. ,benam001,1,
+riosa001 scores. ,21,8,benam001,,,,81,24,BCBX,branj001,1,1,muelb001 hits sacrifice fly. ,muelb001,1,
+benam001 to 2B. ,10,8,bondb001,benam001,,,82,26,BX,branj001,0,0,bondb001 singles. ,bondb001,1,
+,01,8,murrc001,benam001,,,84,28,CX,branj001,1,0,,kentj001,1,F
+,11,9,moram001,,,,89,3,BCX,embra001,0,0,moram001 singles. ,moram001,0,G
+moram001 to 2B. ,30,9,sefck001,moram001,,,91,7,BBBB,embra001,0,0,sefck001 walks. ,sefck001,0,
+moram001 to 3B. sefck001 out. ,12,9,ariaa001,,moram001,,92,11,BCCX,embra001,1,0,ariaa001 reaches on fielder's choice. ,ariaa001,0,
+,32,9,ariaa001,,moram001,,93,17,BBCBFX,embra001,1,0,,gland001,0,F
+,12,9,ariaa001,,moram001,,94,21,CBSX,embra001,1,0,,gantr001,0,F

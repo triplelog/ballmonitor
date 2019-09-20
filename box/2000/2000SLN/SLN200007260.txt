@@ -1,0 +1,149 @@
+version,2
+info,visteam,ARI
+info,hometeam,SLN
+info,site,STL09
+info,date,2000/07/26
+info,number,0
+info,starttime,7:10PM
+info,daynight,night
+info,usedh,false
+info,umphome,fostm901
+info,ump1b,kulpr901
+info,ump2b,vanvm901
+info,ump3b,marsr901
+info,pitches,pitches
+info,temp,88
+info,winddir,fromrf
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,180
+info,attendance,42762
+info,wp,kiled001
+info,lp,reyna001
+info,save,
+start,womat001,"Tony Womack",0,1,6
+start,friah001,"Hanley Frias",0,2,4
+start,gonzl001,"Luis Gonzalez",0,3,7
+start,finls001,"Steve Finley",0,4,8
+start,willm003,"Matt D. Williams",0,5,5
+start,durae001,"Erubiel Durazo",0,6,3
+start,milld002,"Damian Miller",0,7,2
+start,bautd001,"Danny Bautista",0,8,9
+start,reyna001,"Armando Reynoso",0,9,1
+start,vinaf001,"Fernando Vina",1,1,4
+start,rente001,"Edgar Renteria",1,2,6
+start,edmoj001,"Jim Edmonds",1,3,8
+start,tatif001,"Fernando Tatis",1,4,5
+start,lankr001,"Ray Lankford",1,5,7
+start,peree001,"Eduardo Perez",1,6,3
+start,howat001,"Thomas Howard",1,7,9
+start,mathm001,"Mike Matheny",1,8,2
+start,kiled001,"Darryl Kile",1,9,1
+play,1,0,womat001,02,CSS,K
+play,1,0,friah001,22,CCFBBS,K
+play,1,0,gonzl001,20,BBX,HR/9
+play,1,0,finls001,22,BCFBX,31/G
+play,1,1,vinaf001,21,BBCX,S/89S
+play,1,1,rente001,00,X,S7.1-3
+play,1,1,edmoj001,11,BCX,D7/7D.3-H;1-3
+play,1,1,tatif001,22,FBBSX,5/P5
+play,1,1,lankr001,10,BX,9/SF.3-H;2-3
+play,1,1,peree001,11,BSX,S9.3-H;BX2(96)
+play,2,0,willm003,22,BBFFX,4/L4
+play,2,0,durae001,22,CCBBFFS,K
+play,2,0,milld002,32,SBCBFBB,W
+play,2,0,bautd001,12,CCBB,CS2(24)
+play,2,1,howat001,10,BX,8/F8D
+play,2,1,mathm001,31,BBFBX,S7
+play,2,1,kiled001,11,CBX,14/SH.1-2
+play,2,1,vinaf001,00,X,7/F7
+play,3,0,bautd001,12,CCFBX,S/78
+play,3,0,reyna001,00,X,14/SH.1-2
+play,3,0,womat001,00,X,6/P6
+play,3,0,friah001,20,BBX,7/F7
+play,3,1,rente001,22,CFBBX,S
+play,3,1,edmoj001,12,CBSFB,SB2
+play,3,1,edmoj001,22,CBSFBX,S9.2-3
+play,3,1,tatif001,21,BSBX,9/SF.3-H
+play,3,1,lankr001,22,SFBBS,K
+play,3,1,peree001,10,BX,S9.1-2
+play,3,1,howat001,02,CFX,S/78.2-H;1-3
+play,3,1,mathm001,01,FX,54(1)/FO
+play,4,0,gonzl001,31,BBCBB,W
+play,4,0,finls001,02,CFX,46(1)3/GDP
+play,4,0,willm003,02,CFX,9/L9
+play,4,1,kiled001,32,BFBFBB,W
+play,4,1,vinaf001,01,FX,46(1)/FO
+play,4,1,rente001,22,BSCBS,K+CS2(24)/DP
+play,5,0,durae001,32,BBCCBFX,8/F8
+play,5,0,milld002,12,CSBX,9/F9
+play,5,0,bautd001,00,X,53/G
+play,5,1,edmoj001,10,BX,13/G
+play,5,1,tatif001,32,CBBCBB,W
+play,5,1,lankr001,32,BSBSBB,W.1-2
+play,5,1,peree001,10,BX,7/F7S
+play,5,1,howat001,31,BBBCX,HR/9.2-H;1-H
+play,5,1,mathm001,32,CFBBBFB,W
+play,5,1,kiled001,12,BCSC,K/C
+play,6,0,reyna001,00,,NP
+sub,counc001,"Craig Counsell",0,9,11
+play,6,0,counc001,22,CBBCX,43/G
+play,6,0,womat001,01,CX,D9
+play,6,0,friah001,10,BX,S.2-2
+play,6,0,gonzl001,12,CSBFFFFX,46(1)/FO.2-3
+play,6,0,finls001,10,BX,43/G
+play,6,1,vinaf001,00,,NP
+sub,swing001,"Greg Swindell",0,9,1
+play,6,1,vinaf001,21,BCBX,3/FL
+play,6,1,rente001,10,BX,8/F8D
+play,6,1,edmoj001,21,BBCX,S8
+play,6,1,tatif001,31,BBCBB,W.1-2
+play,6,1,lankr001,12,CBSC,K/C
+play,7,0,willm003,00,X,S8/8S
+play,7,0,durae001,00,X,46(1)3/GDP
+play,7,0,milld002,00,X,S9
+play,7,0,bautd001,00,X,46(1)/FO
+play,7,1,peree001,00,,NP
+sub,kim-b001,"Byung-Hyun Kim",0,9,1
+play,7,1,peree001,00,,NP
+sub,richc001,"Chris Richard",1,6,11
+play,7,1,richc001,00,X,31/G
+play,7,1,howat001,31,BBCBX,8/F8
+play,7,1,mathm001,12,BCSC,K/C
+play,8,0,kim-b001,00,,NP
+sub,richc001,"Chris Richard",1,6,3
+play,8,0,kim-b001,00,,NP
+sub,colbg001,"Greg Colbrunn",0,9,11
+play,8,0,colbg001,11,BCX,S/78
+play,8,0,womat001,22,BCBFX,E1/TH.1-2
+play,8,0,friah001,02,CSC,K/C
+play,8,0,gonzl001,10,BX,S9.2-H(UR);1-3
+play,8,0,finls001,10,BX,7/F7
+play,8,0,willm003,00,X,D/78D.3-H(UR);1-H(UR)
+play,8,0,durae001,00,X,43/G
+play,8,1,kiled001,00,,NP
+sub,plesd001,"Dan Plesac",0,9,1
+play,8,1,kiled001,30,BBBB,W
+play,8,1,vinaf001,31,BBBCB,W.1-2
+play,8,1,rente001,11,BCX,5(2)3/GDP.1-2
+play,8,1,edmoj001,31,BBSBB,W
+play,8,1,tatif001,00,,NP
+sub,morgm001,"Mike Morgan",0,9,1
+play,8,1,tatif001,32,BBBCSX,8/L8
+play,9,0,milld002,32,BBBCCX,D7
+play,9,0,bautd001,00,,NP
+sub,sloch001,"Heathcliff Slocumb",1,9,1
+play,9,0,bautd001,32,CBSBBFX,9/F9
+play,9,0,morgm001,00,,NP
+sub,cabra001,"Alex Cabrera",0,9,11
+play,9,0,cabra001,12,CBFX,8/F8
+play,9,0,womat001,11,BCX,53/G
+data,er,reyna001,8
+data,er,swing001,0
+data,er,kim-b001,0
+data,er,plesd001,0
+data,er,morgm001,0
+data,er,kiled001,1
+data,er,sloch001,0

@@ -1,0 +1,140 @@
+version,2
+info,visteam,ARI
+info,hometeam,MON
+info,site,MON02
+info,date,2000/08/28
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,millb901
+info,ump1b,hodgm901
+info,ump2b,younl901
+info,ump3b,katzt901
+info,pitches,pitches
+info,temp,72
+info,winddir,unknown
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,159
+info,attendance,6389
+info,wp,thurm002
+info,lp,schic002
+info,save,telfa001
+start,womat001,"Tony Womack",0,1,6
+start,bellj001,"Jay Bell",0,2,4
+start,gonzl001,"Luis Gonzalez",0,3,7
+start,colbg001,"Greg Colbrunn",0,4,3
+start,finls001,"Steve Finley",0,5,8
+start,willm003,"Matt D. Williams",0,6,5
+start,bautd001,"Danny Bautista",0,7,9
+start,milld002,"Damian Miller",0,8,2
+start,schic002,"Curt Schilling",0,9,1
+start,bergp001,"Peter Bergeron",1,1,7
+start,bradm001,"Milton Bradley",1,2,8
+start,vidrj001,"Jose Vidro",1,3,4
+start,guerv001,"Vladimir Guerrero",1,4,9
+start,stevl001,"Lee Stevens",1,5,3
+start,blumg001,"Geoff Blum",1,6,5
+start,cabro001,"Orlando Cabrera",1,7,6
+start,barrm003,"Michael Barrett",1,8,2
+start,thurm002,"Mike Thurman",1,9,1
+play,1,0,womat001,22,CBSBFX,43/G
+play,1,0,bellj001,10,BX,53/G
+play,1,0,gonzl001,11,BCX,13/G
+play,1,1,bergp001,22,BCFFBX,7/F7S
+play,1,1,bradm001,12,CBFC,K/C
+play,1,1,vidrj001,10,BX,53/G
+play,2,0,colbg001,22,CBFBX,4/P4
+play,2,0,finls001,32,BBCBFB,W
+play,2,0,willm003,02,CFC,K/C
+play,2,0,bautd001,00,C,SB2
+play,2,0,bautd001,22,CCFBFFBFX,S8.2-H
+play,2,0,milld002,00,B,SB2
+play,2,0,milld002,30,BBII,IW
+play,2,0,schic002,22,SBFBC,K/C
+play,2,1,guerv001,12,CBFS,K
+play,2,1,stevl001,11,FBX,7/F7
+play,2,1,blumg001,22,CBFBS,K
+play,3,0,womat001,01,CX,S
+play,3,0,bellj001,22,BBCFX,54(1)/FO
+play,3,0,gonzl001,11,CBX,9(B)43(1)/LDP
+play,3,1,cabro001,01,CX,63/G
+play,3,1,barrm003,22,CBBCS,K
+play,3,1,thurm002,22,CSBBS,K
+play,4,0,colbg001,11,BCX,S8
+play,4,0,finls001,10,BX,E4/G.1-2
+play,4,0,willm003,21,BBSX,143/G.2-3;1-2
+play,4,0,bautd001,22,CBFBFFX,43/G.3-H(UR);2-3
+play,4,0,milld002,00,X,7/F7
+play,4,1,bergp001,11,BCX,6/P6
+play,4,1,bradm001,00,X,8/F8D
+play,4,1,vidrj001,10,BX,9/F9S
+play,5,0,schic002,32,FBBFBX,9/F9
+play,5,0,womat001,22,BFLBX,7/F7
+play,5,0,bellj001,01,SX,5/P5
+play,5,1,guerv001,22,BBFFFX,63/G
+play,5,1,stevl001,12,FBFX,D7
+play,5,1,blumg001,01,CX,S9/9S.2-H
+play,5,1,cabro001,01,FX,S9.1-2
+play,5,1,barrm003,00,X,S8.2-H;1X3(865);B-2
+play,5,1,thurm002,32,BFCBFBS,K
+play,6,0,gonzl001,21,BCBX,9/FL
+play,6,0,colbg001,01,CX,53/G
+play,6,0,finls001,11,BCX,S9
+play,6,0,willm003,11,FBX,9/F9
+play,6,1,bergp001,12,LCBFX,7/F7
+play,6,1,bradm001,00,X,S9
+play,6,1,vidrj001,12,CBFB,CS2(26)
+play,6,1,vidrj001,22,CBFBFX,43/G
+play,7,0,bautd001,12,CFFBC,K/C
+play,7,0,milld002,00,X,S7
+play,7,0,schic002,22,LBLBX,34/SH.1-2
+play,7,0,womat001,00,X,T/89.2-H
+play,7,0,bellj001,01,CX,43/G
+play,7,1,guerv001,32,BBFBFB,W
+play,7,1,stevl001,02,FSS,K
+play,7,1,blumg001,22,FBFBX,S9.1-2
+play,7,1,cabro001,21,BCBX,D8/8D.2-H;1-3
+play,7,1,barrm003,01,FX,D9/9D.3-H;2-3
+play,7,1,thurm002,00,,NP
+sub,guerw001,"Wilton Guerrero",1,9,11
+play,7,1,guerw001,10,BX,S9.3-H;2-3
+play,7,1,bergp001,00,X,7/SF.3-H
+play,7,1,bradm001,12,BCFX,4/P4
+play,8,0,gonzl001,00,,NP
+sub,klins002,"Steve Kline",1,9,1
+play,8,0,gonzl001,21,BBCX,S/89
+play,8,0,colbg001,00,X,S7.1-2
+play,8,0,finls001,01,CX,D7.2-H;1-3
+play,8,0,willm003,00,,NP
+sub,telfa001,"Anthony Telford",1,9,1
+play,8,0,willm003,00,X,3/G
+play,8,0,bautd001,01,CX,53/G.3-H
+play,8,0,milld002,32,BSSBFBS,K
+play,8,1,vidrj001,00,,NP
+sub,contj001,"Jason Conti",0,9,9
+play,8,1,vidrj001,00,,NP
+sub,morgm001,"Mike Morgan",0,7,1
+play,8,1,vidrj001,21,LBBX,S/89
+play,8,1,guerv001,01,CX,S7.1-2
+play,8,1,stevl001,01,CX,13/G.2-3;1-2
+play,8,1,blumg001,30,IIII,IW
+play,8,1,cabro001,22,CFBBX,S9.3-H;2-H;1-3
+play,8,1,barrm003,00,X,S/89.3-H;1-3
+play,8,1,telfa001,01,CX,FC5.3XH(52);1-2;B-1#
+play,8,1,bergp001,00,,NP
+sub,swing001,"Greg Swindell",0,7,1
+play,8,1,bergp001,11,BCX,S.2-3;1-2
+play,8,1,bradm001,20,BBX,8/F8S
+play,9,0,contj001,02,CCFFFS,K
+play,9,0,womat001,10,BX,63/G
+play,9,0,bellj001,02,CSX,13/G
+data,er,schic002,6
+data,er,morgm001,3
+data,er,swing001,0
+data,er,thurm002,2
+data,er,klins002,2
+data,er,telfa001,0

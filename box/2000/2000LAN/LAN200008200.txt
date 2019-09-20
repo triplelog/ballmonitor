@@ -1,0 +1,177 @@
+version,2
+info,visteam,NYN
+info,hometeam,LAN
+info,site,LOS03
+info,date,2000/08/20
+info,number,0
+info,starttime,1:10PM
+info,daynight,day
+info,usedh,false
+info,umphome,dimum901
+info,ump1b,gormb901
+info,ump2b,everm901
+info,ump3b,danlk901
+info,pitches,pitches
+info,temp,82
+info,winddir,rtol
+info,windspeed,4
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,201
+info,attendance,46122
+info,wp,wendt001
+info,lp,adamt001
+info,save,benia001
+start,harrl001,"Lenny Harris",0,1,7
+start,belld001,"Derek Bell",0,2,9
+start,alfoe001,"Edgardo Alfonzo",0,3,4
+start,piazm001,"Mike Piazza",0,4,2
+start,ventr001,"Robin Ventura",0,5,5
+start,zeilt001,"Todd Zeile",0,6,3
+start,paytj001,"Jay Payton",0,7,8
+start,bordm001,"Mike Bordick",0,8,6
+start,joneb003,"Bobby J. Jones",0,9,1
+start,goodt001,"Tom Goodwin",1,1,8
+start,grudm001,"Mark Grudzielanek",1,2,4
+start,shefg001,"Gary Sheffield",1,3,7
+start,grees001,"Shawn Green",1,4,9
+start,karre001,"Eric Karros",1,5,3
+start,hundt001,"Todd Hundley",1,6,2
+start,belta001,"Adrian Beltre",1,7,5
+start,coraa001,"Alex Cora",1,8,6
+start,dreid001,"Darren Dreifort",1,9,1
+play,1,0,harrl001,01,CX,7/L7
+play,1,0,belld001,10,BX,D/78D
+play,1,0,alfoe001,00,X,HR/89.2-H
+play,1,0,piazm001,21,BBSX,6/L6
+play,1,0,ventr001,31,BBCBB,W
+play,1,0,zeilt001,02,FCB,WP.1-2
+play,1,0,zeilt001,22,FCBBX,43/G
+play,1,1,goodt001,12,CBFC,K/C
+play,1,1,grudm001,21,BFBX,2/FL
+play,1,1,shefg001,10,BX,8/F8S
+play,2,0,paytj001,01,FX,D/78D
+play,2,0,bordm001,00,X,31/G.2-3
+play,2,0,joneb003,12,SBFS,K+PB.B-1
+play,2,0,harrl001,10,BX,S9.3-H;1-3
+play,2,0,belld001,00,C,SB2.3-H(E2/TH2)(UR);1-3
+play,2,0,belld001,32,CBBFBC,K/C
+play,2,0,alfoe001,10,BX,63/G
+play,2,1,grees001,02,CFS,K
+play,2,1,karre001,02,CFX,S/78
+play,2,1,hundt001,11,BSX,HR/9.1-H
+play,2,1,belta001,12,CFBX,S9/9S
+play,2,1,coraa001,02,SFX,2/FL.1-2
+play,2,1,dreid001,10,BX,9/F9
+play,3,0,piazm001,02,FSX,8/F8D
+play,3,0,ventr001,12,FBCS,K
+play,3,0,zeilt001,31,BBCBX,D9
+play,3,0,paytj001,30,BBBB,W
+play,3,0,bordm001,32,BFBBSX,13/G
+play,3,1,goodt001,00,X,53/BG
+play,3,1,grudm001,22,BCFFBX,43/G
+play,3,1,shefg001,21,BBCX,S7/7S
+play,3,1,grees001,10,BX,D/89.1-H
+play,3,1,karre001,11,CBX,53/G
+play,4,0,joneb003,32,BBCSBB,W
+play,4,0,harrl001,30,BBBB,W.1-2
+play,4,0,belld001,10,BX,14/SH.2-3;1-2
+play,4,0,alfoe001,12,SFFBS,K
+play,4,0,piazm001,01,SX,8/F8D
+play,4,1,hundt001,00,X,HR/9
+play,4,1,belta001,12,CBCX,8/F8
+play,4,1,coraa001,32,BCBFBX,7/F7
+play,4,1,dreid001,21,BBFX,5/FL
+play,5,0,ventr001,11,CBX,31/G
+play,5,0,zeilt001,11,CBX,7/F7
+play,5,0,paytj001,31,BBBSB,W
+play,5,0,bordm001,01,CX,8/F8
+play,5,1,goodt001,02,CSX,8/F8
+play,5,1,grudm001,01,CX,S9/9S
+play,5,1,shefg001,12,BCSX,7/F7
+play,5,1,grees001,00,C,SB2
+play,5,1,grees001,32,CBFBFBFB,W
+play,5,1,karre001,22,FBBSFX,S7/7S.2-H;1-2
+play,5,1,hundt001,00,,NP
+sub,cookd001,"Dennis Cook",0,9,1
+play,5,1,hundt001,32,BSBBCC,K/C
+play,6,0,cookd001,00,,NP
+sub,tramb001,"Bubba Trammell",0,9,11
+play,6,0,tramb001,20,BBX,HR/7
+play,6,0,harrl001,10,BX,HR/9
+play,6,0,belld001,00,,NP
+sub,osuna002,"Antonio Osuna",1,9,1
+play,6,0,belld001,20,BBX,5/FL
+play,6,0,alfoe001,20,BBX,8/L8
+play,6,0,piazm001,00,X,8/F8D
+play,6,1,belta001,00,,NP
+sub,wendt001,"Turk Wendell",0,9,1
+play,6,1,belta001,12,CCBX,13/G
+play,6,1,coraa001,12,CSBX,63/G
+play,6,1,osuna002,00,,NP
+sub,santf001,"F.P. Santangelo",1,9,11
+play,6,1,santf001,11,CBX,S8
+play,6,1,goodt001,22,CBFBB,SB2
+play,6,1,goodt001,32,CBFBBC,K/C
+play,7,0,ventr001,00,,NP
+sub,adamt001,"Terry Adams",1,9,1
+play,7,0,ventr001,32,FCBBFBFX,31/G
+play,7,0,zeilt001,02,CFFX,43/G
+play,7,0,paytj001,00,X,9/F9
+play,7,1,grudm001,02,CCS,K
+play,7,1,shefg001,31,BCBBB,W
+play,7,1,grees001,12,SCFBX,S7.1-H(E7);B-2(TH)
+play,7,1,karre001,12,BSFFF2,PO2(14)
+play,7,1,karre001,12,BSFFF2X,S7/7S
+play,7,1,hundt001,22,BBCCB,SB2
+play,7,1,hundt001,32,BBCCBI,IW
+play,7,1,belta001,01,CX,6/FL
+play,8,0,bordm001,00,X,S8/8S
+play,8,0,wendt001,00,,NP
+sub,hamid001,"Darryl Hamilton",0,9,11
+play,8,0,hamid001,01,SX,S9.1-3
+play,8,0,harrl001,00,,NP
+sub,mcewj001,"Joe McEwing",0,9,12
+play,8,0,harrl001,30,BBBX,FC5.3-H(E5/THH)(NR)(UR);1-H(NR)(UR);B-2
+com,"$ball thrown away during rundown"
+play,8,0,belld001,00,X,E4/G.2-H(UR)
+play,8,0,alfoe001,12,CBSC,K/C
+play,8,0,piazm001,10,BX,64(1)3/GDP
+play,8,1,coraa001,00,,NP
+sub,mcewj001,"Joe McEwing",0,9,7
+play,8,1,coraa001,00,,NP
+sub,franj001,"John Franco",0,1,1
+play,8,1,coraa001,00,,NP
+sub,elstk001,"Kevin Elster",1,8,11
+play,8,1,elstk001,01,CX,9/F9
+play,8,1,adamt001,00,,NP
+sub,leyrj001,"Jim Leyritz",1,9,11
+play,8,1,leyrj001,22,CBFBS,K
+play,8,1,goodt001,00,,NP
+sub,whitd001,"Devon White",1,1,11
+play,8,1,whitd001,12,BSSX,9/F9
+play,9,0,ventr001,00,,NP
+sub,whitd001,"Devon White",1,1,8
+play,9,0,ventr001,00,,NP
+sub,elstk001,"Kevin Elster",1,8,6
+play,9,0,ventr001,00,,NP
+sub,olsog001,"Gregg Olson",1,9,1
+play,9,0,ventr001,00,X,8/F8
+play,9,0,zeilt001,32,BCBFBFX,S7/7S
+play,9,0,paytj001,12,BCCC,K/C
+play,9,0,bordm001,00,X,8/F8
+play,9,1,grudm001,00,,NP
+sub,benia001,"Armando Benitez",0,1,1
+play,9,1,grudm001,22,CCFBBX,2/FL
+play,9,1,shefg001,02,SSS,K
+play,9,1,grees001,12,SBSFC,K/C
+data,er,joneb003,5
+data,er,cookd001,0
+data,er,wendt001,1
+data,er,franj001,0
+data,er,benia001,0
+data,er,dreid001,5
+data,er,osuna002,0
+data,er,adamt001,0
+data,er,olsog001,0

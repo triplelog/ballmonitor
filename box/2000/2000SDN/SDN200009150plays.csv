@@ -1,0 +1,82 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,11,1,benam001,,,,0,3,BCX,tollb001,0,0,benam001 singles. ,benam001,0,
+,10,1,benam001,,,,1,5,BX,tollb001,1,0,,muelb001,0,P
+,21,1,,,,,2,9,BBCX,tollb001,2,0,Double Play. ,bondb001,0,
+,22,1,,,,,3,5,CCBBS,ortir001,1,0,jackd003 strikes out. ,jackd003,1,
+,00,1,owene001,,,,4,6,X,ortir001,0,0,owene001 singles. ,owene001,1,
+,10,1,owene001,,,,5,8,BX,ortir001,1,0,,klesr001,1,P
+,12,1,owene001,,,,6,12,BCCX,ortir001,1,0,magad001 grounds out. ,magad001,1,G
+,00,2,,,,,7,10,X,tollb001,1,0,,kentj001,0,F
+,12,2,,,,,8,14,BCSC,tollb001,1,0,snowj001 strikes out. ,snowj001,0,
+,02,2,burke001,,,,9,17,CFX,tollb001,0,0,burke001 reaches on error. ,burke001,0,G
+burke001 out. ,21,2,aurir001,,,,10,21,BCBX,tollb001,1,0,aurir001 reaches on fielder's choice. ,aurir001,0,
+,00,2,,,,,11,13,X,ortir001,1,0,,mabrj001,1,F
+,02,2,,,,,12,17,CFFS,ortir001,1,0,darrm001 strikes out. ,darrm001,1,
+,22,2,,,,,13,22,CBFBX,ortir001,1,0,relad001 grounds out. ,relad001,1,G
+,12,3,,,,,14,25,BSCS,tollb001,1,0,estab001 strikes out. ,estab001,0,
+,02,3,,,,,15,28,CCX,tollb001,1,0,ortir001 grounds out. ,ortir001,0,G
+,02,3,,,,,16,32,CSFX,tollb001,1,0,,benam001,0,F
+,31,3,,,,,17,27,CBBBX,ortir001,1,0,,davib003,1,L
+,00,3,,,,,18,28,X,ortir001,1,0,tollb001 grounds out. ,tollb001,1,G
+,10,3,jackd003,,,,19,30,BX,ortir001,0,0,jackd003 singles. ,jackd003,1,
+,21,3,,jackd003,,owene001,20,34,BBFB,ortir001,0,0,jackd003 steals 2B. ,owene001,1,
+,32,3,owene001,jackd003,,,21,40,BBFBFB,ortir001,0,0,owene001 walks. ,owene001,1,
+jackd003 to 3B. owene001 to 2B. ,32,3,klesr001,owene001,jackd003,,22,46,CBBBCB,ortir001,0,0,klesr001 walks. ,klesr001,1,
+klesr001 out. ,00,3,magad001,owene001,jackd003,,23,47,X,ortir001,1,0,magad001 reaches on fielder's choice. ,magad001,1,
+,10,4,muelb001,,,,24,34,BX,tollb001,0,0,muelb001 singles. ,muelb001,0,
+muelb001 out. ,12,4,bondb001,,,,25,38,CBFX,tollb001,1,0,bondb001 reaches on fielder's choice. ,bondb001,0,
+bondb001 to 2B. ,00,4,kentj001,bondb001,,,26,39,X,tollb001,0,0,kentj001 singles. ,kentj001,0,
+,22,4,kentj001,bondb001,,,27,44,SSBBC,tollb001,1,0,snowj001 strikes out. ,snowj001,0,
+bondb001 to 3B. kentj001 to 2B. ,30,4,burke001,kentj001,bondb001,,28,48,BBBB,tollb001,0,0,burke001 walks. ,burke001,0,
+bondb001 scores. kentj001 scores. burke001 to 3B. ,11,4,,aurir001,burke001,,29,51,FBX,tollb001,0,2,aurir001 doubles. ,aurir001,0,
+,30,4,estab001,aurir001,burke001,,30,55,IIII,tollb001,0,0,estab001 intentionally walks. ,estab001,0,
+,10,4,estab001,aurir001,burke001,,31,57,BX,tollb001,1,0,,ortir001,0,F
+,22,4,,,,,32,52,BBSSC,ortir001,1,0,mabrj001 strikes out. ,mabrj001,1,
+,32,4,,,,,33,60,BCFBFBFC,ortir001,1,0,darrm001 strikes out. ,darrm001,1,
+,32,4,relad001,,,,34,66,BBCFBB,ortir001,0,0,relad001 walks. ,relad001,1,
+,01,4,relad001,,,,35,68,FX,ortir001,1,0,davib003 grounds out. ,davib003,1,G
+,00,5,,,benam001,,36,58,X,tollb001,0,0,benam001 triples. ,benam001,0,
+benam001 scores. ,11,5,muelb001,,,,37,61,BCX,tollb001,0,1,muelb001 reaches on error. ,muelb001,0,G
+muelb001 to 2B. ,00,5,bondb001,muelb001,,,38,62,X,tollb001,0,0,bondb001 singles. ,bondb001,0,
+muelb001 to 3B. ,01,5,,,muelb001,,39,64,CX,tollb001,2,0,Double Play. ,kentj001,0,
+muelb001 scores. ,20,5,snowj001,,,,40,67,BBX,tollb001,0,1,snowj001 singles. ,snowj001,0,
+,01,5,snowj001,,,,41,69,FX,tollb001,1,0,,burke001,0,L
+,21,5,,,,,43,72,CBBX,ortir001,1,0,,alvag001,1,P
+,11,5,jackd003,,,,44,75,FBX,ortir001,0,0,jackd003 singles. ,jackd003,1,
+jackd003 scores. ,11,5,,owene001,,,45,78,CBX,ortir001,0,1,owene001 doubles. ,owene001,1,
+owene001 to 3B. ,20,5,,,owene001,,46,81,BBX,ortir001,1,0,,klesr001,1,F
+,32,5,magad001,,owene001,,47,87,BCBBCB,ortir001,0,0,magad001 walks. ,magad001,1,
+,22,5,magad001,,owene001,,48,92,BSSBX,ortir001,1,0,mabrj001 grounds out. ,mabrj001,1,G
+,32,6,aurir001,,,,50,7,BCFBBFB,almac001,0,0,aurir001 walks. ,aurir001,0,
+,22,6,aurir001,,,,51,12,CBBSC,almac001,1,0,estab001 strikes out. ,estab001,0,
+aurir001 to 2B. ,21,6,,aurir001,,,52,16,BLBX,almac001,1,0,Sacrifice bunt by ortir001.,ortir001,0,
+aurir001 to 3B. ,12,6,benam001,,aurir001,,53,20,SCBX,almac001,0,0,benam001 singles. ,benam001,0,
+,00,6,benam001,,aurir001,,54,21,X,almac001,1,0,muelb001 grounds out. ,muelb001,0,G
+,32,6,darrm001,,,,55,98,CFBBBB,ortir001,0,0,darrm001 walks. ,darrm001,1,
+darrm001 to 2B. ,32,6,relad001,darrm001,,,56,104,FFBBBB,ortir001,0,0,relad001 walks. ,relad001,1,
+,22,6,relad001,darrm001,,,57,109,BFSBC,ortir001,1,0,davib003 strikes out. ,davib003,1,
+,22,6,relad001,darrm001,,,59,115,BCCFBS,ortir001,1,0,dehak001 strikes out. ,dehak001,1,
+,31,6,relad001,darrm001,,,60,120,BBSBX,ortir001,1,0,,jackd003,1,P
+,21,7,,,,,62,4,BBCX,maurd001,1,0,,bondb001,0,P
+,10,7,,,,,63,6,BX,maurd001,1,0,,kentj001,0,F
+,32,7,,,,,64,12,BBBCCX,maurd001,1,0,,snowj001,0,L
+,00,7,,owene001,,,66,1,X,embra001,0,0,owene001 doubles. ,owene001,1,
+owene001 scores. ,11,7,klesr001,,,,67,4,FBX,embra001,0,1,klesr001 singles. ,klesr001,1,
+klesr001 to 2B. ,30,7,magad001,klesr001,,,68,8,BBBB,embra001,0,0,magad001 walks. ,magad001,1,
+klesr001 to 3B. willw001 to 2B. ,01,7,,willw001,klesr001,,71,10,LX,embra001,1,0,Sacrifice bunt by larog001.,larog001,1,
+klesr001 scores. willw001 to 3B. ,32,7,,,willw001,,72,16,BCBFBX,embra001,1,1,darrm001 grounds out. ,darrm001,1,G
+willw001 scores. ,00,7,relad001,,,,73,17,X,embra001,0,1,relad001 singles. ,relad001,1,
+,22,7,relad001,,,,75,5,CBBSS,henrd002,1,0,davib003 strikes out. ,davib003,1,
+,22,8,,,,,80,5,BCCBX,davet001,1,0,,burke001,0,
+,00,8,,,,,81,6,X,davet001,1,0,aurir001 grounds out. ,aurir001,0,G
+,32,8,,,,,82,12,BBFSBX,davet001,1,0,,estab001,0,F
+,10,8,river002,,,,83,7,BX,henrd002,0,0,river002 singles. ,river002,1,
+river002 to 2B. ,10,8,,river002,,,84,9,BX,henrd002,1,0,Sacrifice bunt by jackd003.,jackd003,1,
+,11,8,,river002,,,85,12,BCX,henrd002,1,0,owene001 grounds out. ,owene001,1,G
+,30,8,klesr001,river002,,,86,16,IIII,henrd002,0,0,klesr001 intentionally walks. ,klesr001,1,
+river002 scores. klesr001 to 2B. ,20,8,sprae001,klesr001,,,88,19,BBX,henrd002,0,1,sprae001 singles. ,sprae001,1,
+,12,8,sprae001,klesr001,,,89,23,CSBS,henrd002,1,0,larog001 strikes out. ,larog001,1,
+,32,9,,,,,92,7,CFBFBBX,hofft001,1,0,riosa001 grounds out. ,riosa001,0,G
+,00,9,benam001,,,,93,8,X,hofft001,0,0,benam001 singles. ,benam001,0,G
+,22,9,benam001,,,,94,14,CSBBFC,hofft001,1,0,muelb001 strikes out. ,muelb001,0,
+,00,9,benam001,,,,95,15,X,hofft001,1,0,bondb001 grounds out. ,bondb001,0,G

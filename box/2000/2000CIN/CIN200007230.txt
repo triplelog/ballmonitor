@@ -1,0 +1,138 @@
+version,2
+info,visteam,ARI
+info,hometeam,CIN
+info,site,CIN08
+info,date,2000/07/23
+info,number,0
+info,starttime,1:15PM
+info,daynight,day
+info,usedh,false
+info,umphome,marqa901
+info,ump1b,packs901
+info,ump2b,nelsj901
+info,ump3b,cousd901
+info,pitches,pitches
+info,temp,80
+info,winddir,ltor
+info,windspeed,9
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,151
+info,attendance,34822
+info,wp,desse001
+info,lp,andeb002
+info,save,gravd001
+start,womat001,"Tony Womack",0,1,6
+start,bellj001,"Jay Bell",0,2,4
+start,gonzl001,"Luis Gonzalez",0,3,7
+start,willm003,"Matt D. Williams",0,4,5
+start,finls001,"Steve Finley",0,5,8
+start,durae001,"Erubiel Durazo",0,6,3
+start,bautd001,"Danny Bautista",0,7,9
+start,stink001,"Kelly Stinnett",0,8,2
+start,andeb002,"Brian Anderson",0,9,1
+start,castj004,"Juan Castro",1,1,4
+start,larkb001,"Barry Larkin",1,2,6
+start,grifk002,"Ken Griffey",1,3,8
+start,bichd001,"Dante Bichette",1,4,9
+start,yound001,"Dmitri Young",1,5,3
+start,ochoa001,"Alex Ochoa",1,6,7
+start,bellm003,"Mike Bell",1,7,5
+start,santb001,"Benito Santiago",1,8,2
+start,desse001,"Elmer Dessens",1,9,1
+play,1,0,womat001,21,BBCX,13/G
+play,1,0,bellj001,12,FSBS,K
+play,1,0,gonzl001,21,BFBX,S9
+play,1,0,willm003,00,X,8/F8
+play,1,1,castj004,00,X,43/G
+play,1,1,larkb001,12,CBCX,63/G
+play,1,1,grifk002,11,BCX,7/F7D
+play,2,0,finls001,12,CBFC,K/C
+play,2,0,durae001,00,X,S7
+play,2,0,bautd001,01,CX,6(1)3/GDP
+play,2,1,bichd001,11,CBX,9/F9
+play,2,1,yound001,02,FFFX,HR/7
+play,2,1,ochoa001,21,CBBX,63/G
+play,2,1,bellm003,12,BSFFX,6/P6
+play,3,0,stink001,00,X,53/G
+play,3,0,andeb002,10,BX,S
+play,3,0,womat001,12,LBFS,K
+play,3,0,bellj001,12,FBFS,K
+play,3,1,santb001,00,X,43/G
+play,3,1,desse001,12,CCBC,K/C
+play,3,1,castj004,20,BBX,8/F8
+play,4,0,gonzl001,11,CBX,D9
+play,4,0,willm003,11,BSX,63/G.2-3
+play,4,0,finls001,12,FFFBS,K
+play,4,0,durae001,00,X,8/F8
+play,4,1,larkb001,21,BBCX,63/G
+play,4,1,grifk002,11,LBX,S8
+play,4,1,bichd001,00,X,HR/8.1-H
+play,4,1,yound001,10,BX,53/G
+play,4,1,ochoa001,22,BCFBFX,S9/9S
+play,4,1,bellm003,00,X,S8.1-2
+play,4,1,santb001,10,BX,D7.2-H;1-3
+play,4,1,desse001,32,FFBBBFS,K
+play,5,0,bautd001,22,CBBCX,D/78
+play,5,0,stink001,12,SSBFX,S.2-3
+play,5,0,andeb002,00,X,36(1)/FO.3-H
+play,5,0,womat001,00,X,8/F8S
+play,5,0,bellj001,12,SSBX,53/G
+play,5,1,castj004,01,LX,63/G
+play,5,1,larkb001,21,CBBX,S9
+play,5,1,grifk002,00,X,D9.1-H;BXH(E3/TH)(32)#
+com,"apparently E3 allowed Griffey to 3rd, then out at home"
+play,5,1,bichd001,32,BBSBFB,W
+play,5,1,yound001,01,SX,4/L4
+play,6,0,gonzl001,12,CBFFFX,4/L4
+play,6,0,willm003,00,X,53/G
+play,6,0,finls001,11,BSX,43/G
+play,6,1,ochoa001,00,,NP
+sub,sprir001,"Russ Springer",0,9,1
+play,6,1,ochoa001,22,CCFBBX,63/G
+play,6,1,bellm003,00,X,S7
+play,6,1,santb001,11,CBX,8/F8S
+play,6,1,desse001,10,BX,S9.1-2
+play,6,1,castj004,22,BBCFFS,K
+play,7,0,durae001,21,BBCX,HR/9
+play,7,0,bautd001,20,BBX,9/F9D
+play,7,0,stink001,01,CX,8/F8S
+play,7,0,sprir001,00,,NP
+sub,counc001,"Craig Counsell",0,9,11
+play,7,0,counc001,10,BX,7/F7
+play,7,1,larkb001,00,,NP
+sub,padiv001,"Vicente Padilla",0,9,1
+play,7,1,larkb001,22,SCBBX,43/G
+play,7,1,grifk002,22,SFBBS,K
+play,7,1,bichd001,32,BSBFBB,W
+play,7,1,yound001,02,SCS,K
+play,8,0,womat001,32,BBCSBB,W
+play,8,0,bellj001,21,BSBX,2/FL
+play,8,0,gonzl001,01,CX,S8.1-2
+play,8,0,willm003,00,,NP
+sub,gravd001,"Danny Graves",1,4,1
+play,8,0,willm003,00,,NP
+sub,tuckm001,"Michael Tucker",1,9,9
+play,8,0,willm003,21,BFBX,S7.2-H;1-2
+play,8,0,finls001,00,X,9/F9.2-3
+play,8,0,durae001,31,BBBCB,W.1-2
+play,8,0,bautd001,00,,NP
+sub,friah001,"Hanley Frias",0,4,12
+play,8,0,bautd001,12,CFBX,43/G
+play,8,1,ochoa001,00,,NP
+sub,friah001,"Hanley Frias",0,4,5
+play,8,1,ochoa001,10,BX,7/L7
+play,8,1,bellm003,10,BX,9/F9S
+play,8,1,santb001,02,FSX,7/F7D
+play,9,0,stink001,32,BBCBCB,W
+play,9,0,padiv001,00,,NP
+sub,colbg001,"Greg Colbrunn",0,9,11
+play,9,0,colbg001,00,X,64(1)3/GDP
+play,9,0,womat001,31,BBBCB,W
+play,9,0,bellj001,12,BCSFS,K23
+data,er,andeb002,5
+data,er,sprir001,0
+data,er,padiv001,0
+data,er,desse001,3
+data,er,gravd001,0

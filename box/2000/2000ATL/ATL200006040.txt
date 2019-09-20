@@ -1,0 +1,158 @@
+version,2
+info,visteam,NYA
+info,hometeam,ATL
+info,site,ATL02
+info,date,2000/06/04
+info,number,0
+info,starttime,1:10PM
+info,daynight,day
+info,usedh,false
+info,umphome,gibsg901
+info,ump1b,ripps901
+info,ump2b,tscht901
+info,ump3b,meric901
+info,pitches,pitches
+info,temp,73
+info,winddir,tocf
+info,windspeed,2
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,187
+info,attendance,47756
+info,wp,petta001
+info,lp,mulht001
+info,save,rivem002
+start,knobc001,"Chuck Knoblauch",0,1,4
+start,jeted001,"Derek Jeter",0,2,6
+start,willb002,"Bernie Williams",0,3,8
+start,spens001,"Shane Spencer",0,4,9
+start,josef001,"Felix Jose",0,5,7
+start,martt002,"Tino Martinez",0,6,3
+start,turnc001,"Chris Turner",0,7,2
+start,bross001,"Scott Brosius",0,8,5
+start,petta001,"Andy Pettitte",0,9,1
+start,veraq001,"Quilvio Veras",1,1,4
+start,jonea002,"Andruw Jones",1,2,8
+start,jonec004,"Chipper Jones",1,3,5
+start,galaa001,"Andres Galarraga",1,4,3
+start,jordb001,"Brian Jordan",1,5,9
+start,lopej001,"Javy Lopez",1,6,2
+start,sandr002,"Reggie Sanders",1,7,7
+start,weisw001,"Walt Weiss",1,8,6
+start,mulht001,"Terry Mulholland",1,9,1
+play,1,0,knobc001,32,FCFBFBBFFB,W
+play,1,0,jeted001,10,BX,S/78.1-3;B-2(TH3)
+play,1,0,willb002,02,FFX,S7/7S.3-H;2-3
+play,1,0,spens001,10,BX,8/L8
+play,1,0,josef001,00,X,9/SF.3-H;1-2
+play,1,0,martt002,12,BCCX,D9.2-H
+play,1,0,turnc001,00,X,143/G
+play,1,1,veraq001,12,BCSX,53/G
+play,1,1,jonea002,12,CCFBX,5/P5
+play,1,1,jonec004,20,BBX,9/F9D
+play,2,0,bross001,22,CFBFBC,K/C
+play,2,0,petta001,00,X,7/L7
+play,2,0,knobc001,21,CBBX,D/78D
+play,2,0,jeted001,11,CBX,53/G
+play,2,1,galaa001,32,BBFSBX,S9/9S
+play,2,1,jordb001,00,X,8/L8
+play,2,1,lopej001,22,CBFFBX,54(1)/FO
+play,2,1,sandr002,32,BBCSFBFS,K
+play,3,0,willb002,00,X,7/F7
+play,3,0,spens001,10,BX,S8/8S
+play,3,0,josef001,00,X,53/G.1-2
+play,3,0,martt002,00,X,D/78.2-H
+play,3,0,turnc001,31,BFBBB,W
+play,3,0,bross001,10,BX,E6/TH.2-3;1-2
+play,3,0,petta001,02,CFS,K
+play,3,1,weisw001,12,BCCX,43/G
+play,3,1,mulht001,00,X,S9
+play,3,1,veraq001,30,BBBB,W.1-2
+play,3,1,jonea002,21,BBCX,S/78.2-H;1-3
+play,3,1,jonec004,01,FX,8/SF.3-H
+play,3,1,galaa001,10,BX,8/F8
+play,4,0,knobc001,01,CX,7/F7
+play,4,0,jeted001,11,CBX,S9
+play,4,0,willb002,00,X,S9/9S.1-3
+play,4,0,spens001,00,X,S7/7S.3-H;1-2
+play,4,0,josef001,02,FCC,K/C
+play,4,0,martt002,32,CBFBBB,W.2-3;1-2
+play,4,0,turnc001,01,CX,8/F8
+play,4,1,jordb001,31,BFBBX,D/89D
+play,4,1,lopej001,32,BFBSBX,S7/7S.2-H
+play,4,1,sandr002,30,BBBB,W.1-2
+play,4,1,weisw001,00,C,CS2(24)#
+com,"originally scored as CS3"
+play,4,1,weisw001,02,CFS,K
+play,4,1,mulht001,12,FBSS,K
+play,5,0,bross001,12,BCSX,HR/7
+play,5,0,petta001,02,SSX,13/G
+play,5,0,knobc001,00,X,8/F8
+play,5,0,jeted001,32,CSBFFBFBX,S
+play,5,0,willb002,12,CFBS,K
+play,5,1,veraq001,11,CBX,6/P6
+play,5,1,jonea002,32,FCFBBFBX,S8/8S
+play,5,1,jonec004,00,X,D7/7S.1-H
+play,5,1,galaa001,00,X,63/G.2-3
+play,5,1,jordb001,11,BCX,8/F8D
+play,6,0,spens001,21,BCBX,4/L4
+play,6,0,josef001,00,X,4/P4
+play,6,0,martt002,01,CX,31/G
+play,6,1,lopej001,31,BBCBX,HR/7
+play,6,1,sandr002,10,BX,HR/9
+play,6,1,weisw001,11,BFX,63/G
+play,6,1,mulht001,00,X,63/G
+play,6,1,veraq001,10,BX,6/P6
+play,7,0,turnc001,12,CBCX,63/G
+play,7,0,bross001,00,X,53/G
+play,7,0,petta001,00,,NP
+sub,bellc001,"Clay Bellinger",0,9,11
+play,7,0,bellc001,01,CX,HR/7
+play,7,0,knobc001,12,BCFX,S7
+play,7,0,jeted001,00,,NP
+sub,seanr001,"Rudy Seanez",1,9,1
+play,7,0,jeted001,00,B,SB2
+play,7,0,jeted001,32,BBCFBX,63/G
+play,7,1,jonea002,00,,NP
+sub,grimj001,"Jason Grimsley",0,9,1
+play,7,1,jonea002,21,BBFX,63/G
+play,7,1,jonec004,32,BCCBFBX,8/F8
+play,7,1,galaa001,31,BSBBX,S
+play,7,1,jordb001,12,FBFS,K
+play,8,0,willb002,00,X,9/F9
+play,8,0,spens001,12,CCBFX,S7
+play,8,0,josef001,02,SSFS,K
+play,8,0,martt002,10,BX,8/F8S
+play,8,1,lopej001,00,,NP
+sub,leder001,"Ricky Ledee",0,9,7
+play,8,1,lopej001,00,,NP
+sub,rivem002,"Mariano Rivera",0,5,1
+play,8,1,lopej001,00,X,9/F9
+play,8,1,sandr002,02,CFFC,K/C
+play,8,1,weisw001,00,,NP
+sub,bonib001,"Bobby Bonilla",1,8,11
+play,8,1,bonib001,31,BBBCX,9/F9D
+play,9,0,turnc001,00,,NP
+sub,furcr001,"Rafael Furcal",1,9,6
+play,9,0,turnc001,00,,NP
+sub,rockj001,"John Rocker",1,8,1
+play,9,0,turnc001,02,CFX,S9
+play,9,0,bross001,22,BCSBX,S7/7S.1-2
+play,9,0,leder001,32,CBBBLS,K
+play,9,0,knobc001,11,BCS,BK.2-3;1-2
+play,9,0,knobc001,22,BCSBX,4/P4
+play,9,0,jeted001,10,BX,8/F8
+play,9,1,furcr001,00,,NP
+sub,delgw001,"Wilson Delgado",0,1,4
+play,9,1,furcr001,02,LFX,13/BG
+play,9,1,veraq001,22,FBSBFS,K
+play,9,1,jonea002,11,CBX,S7
+play,9,1,jonec004,00,X,S7/7S.1-3
+play,9,1,galaa001,12,FFBS,K
+data,er,petta001,6
+data,er,grimj001,0
+data,er,rivem002,0
+data,er,mulht001,7
+data,er,seanr001,0
+data,er,rockj001,0

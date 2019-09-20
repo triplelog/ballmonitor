@@ -1,0 +1,175 @@
+version,2
+info,visteam,MON
+info,hometeam,CIN
+info,site,CIN08
+info,date,2000/09/03
+info,number,0
+info,starttime,1:15PM
+info,daynight,day
+info,usedh,false
+info,umphome,timmt901
+info,ump1b,barkl901
+info,ump2b,cousd901
+info,ump3b,nelsj901
+info,pitches,pitches
+info,temp,88
+info,winddir,tocf
+info,windspeed,3
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,172
+info,attendance,26152
+info,wp,parrs001
+info,lp,thurm002
+info,save,
+start,bradm001,"Milton Bradley",0,1,8
+start,bergp001,"Peter Bergeron",0,2,7
+start,vidrj001,"Jose Vidro",0,3,4
+start,guerv001,"Vladimir Guerrero",0,4,9
+start,stevl001,"Lee Stevens",0,5,3
+start,blumg001,"Geoff Blum",0,6,5
+start,cabro001,"Orlando Cabrera",0,7,6
+start,schnb001,"Brian Schneider",0,8,2
+start,thurm002,"Mike Thurman",0,9,1
+start,reesp001,"Pokey Reese",1,1,4
+start,stync001,"Chris Stynes",1,2,5
+start,cases001,"Sean Casey",1,3,3
+start,yound001,"Dmitri Young",1,4,7
+start,ochoa001,"Alex Ochoa",1,5,9
+start,tuckm001,"Michael Tucker",1,6,8
+start,santb001,"Benito Santiago",1,7,2
+start,sextc001,"Chris Sexton",1,8,6
+start,parrs001,"Steve Parris",1,9,1
+play,1,0,bradm001,10,BX,63/G
+play,1,0,bergp001,21,BCBX,63/G
+play,1,0,vidrj001,31,BBFBB,W
+play,1,0,guerv001,02,CSFX,S8.1-2
+play,1,0,stevl001,12,FBSX,31/G
+play,1,1,reesp001,21,BFBX,53/G
+play,1,1,stync001,22,BBCFX,S8/8S
+play,1,1,cases001,10,BX,46(1)3/GDP
+play,2,0,blumg001,01,CX,T/89
+play,2,0,cabro001,00,X,9/F9S
+play,2,0,schnb001,22,BFBSFFS,K
+play,2,0,thurm002,12,CFBX,9/F9
+play,2,1,yound001,10,BX,D8
+play,2,1,ochoa001,01,CX,S/89.2-H
+play,2,1,tuckm001,00,B,CS2(26)
+play,2,1,tuckm001,30,BBBB,W
+play,2,1,santb001,00,B,SB2
+play,2,1,santb001,32,BBCSBX,43/G
+play,2,1,sextc001,31,BBBCB,W
+play,2,1,parrs001,22,BSBFFX,7/F7
+play,3,0,bradm001,00,X,D9
+play,3,0,bergp001,00,X,43/SH.2-3
+play,3,0,vidrj001,00,X,43/G.3-H
+play,3,0,guerv001,00,X,S7
+play,3,0,stevl001,01,CX,S8.1X3(85)
+play,3,1,reesp001,11,CBX,13/G
+play,3,1,stync001,00,X,8/F8
+play,3,1,cases001,22,BFFBX,HR/9
+play,3,1,yound001,00,X,S9
+play,3,1,ochoa001,32,FBSBBX,D9.1-H;BX3(965)
+play,4,0,blumg001,21,BBFX,3/G
+play,4,0,cabro001,12,CBFX,S7
+play,4,0,schnb001,00,X,S7.1-2
+play,4,0,thurm002,00,X,14/SH.2-3;1-2
+play,4,0,bradm001,12,CBCX,C/E2
+play,4,0,bergp001,21,BFBX,43/G
+play,4,1,tuckm001,00,X,S5/BG5
+play,4,1,santb001,00,X,HR/8.1-H
+play,4,1,sextc001,00,X,63/G
+play,4,1,parrs001,12,BFSS,K
+play,4,1,reesp001,11,BCX,S8
+play,4,1,stync001,10,BB,SB2
+play,4,1,stync001,30,BBBB,W
+play,4,1,cases001,31,FBBBB,W.2-3;1-2
+play,4,1,yound001,00,,NP
+sub,johnm002,"Mike Johnson",0,9,1
+play,4,1,yound001,00,X,3/G
+play,5,0,vidrj001,32,BCBBFX,43/G
+play,5,0,guerv001,21,BFBX,S9
+play,5,0,stevl001,31,BSBBB,W.1-2
+play,5,0,blumg001,22,FBBCX,8/F8S
+play,5,0,cabro001,22,FBFFBX,64(1)/FO.2-3
+play,5,1,ochoa001,32,BFBSBS,K
+play,5,1,tuckm001,32,BSSBBS,K
+play,5,1,santb001,22,CBFBS,K+PB.B-1
+play,5,1,sextc001,12,CBCX,8/F8
+play,6,0,schnb001,02,FSS,K
+play,6,0,johnm002,00,,NP
+sub,traca001,"Andy Tracy",0,9,11
+play,6,0,traca001,12,CFFBS,K
+play,6,0,bradm001,22,FBBFS,K
+play,6,1,parrs001,00,,NP
+sub,forss001,"Scott Forster",0,9,1
+play,6,1,parrs001,31,BBBCB,W
+play,6,1,reesp001,31,BBCBB,W.1-2
+play,6,1,stync001,21,CBBX,S7.2-3;1-2
+play,6,1,cases001,11,BFX,S9.3-H;2-3;1-2
+play,6,1,yound001,00,,NP
+sub,liraf001,"Felipe Lira",0,9,1
+play,6,1,yound001,01,CX,8/SF.3-H;2-3
+play,6,1,ochoa001,12,SFBX,54(1)/FO.3-H
+play,6,1,tuckm001,30,BBBB,W.1-2
+play,6,1,santb001,22,CBSBC,K/C
+play,7,0,bergp001,00,X,7/F7
+play,7,0,vidrj001,02,CSX,9/F9D
+play,7,0,guerv001,11,BCX,S9
+play,7,0,stevl001,32,FFBBBX,7/F7
+play,7,1,sextc001,00,,NP
+sub,seguf001,"Fernando Seguignol",0,4,9
+play,7,1,sextc001,00,,NP
+sub,mordm001,"Mike Mordecai",0,3,4
+play,7,1,sextc001,12,BFCS,K23
+play,7,1,parrs001,00,,NP
+sub,clarb003,"Brady Clark",1,9,11
+play,7,1,clarb003,22,BCBSFX,53/G
+com,"Debut game for Brady Clark"
+play,7,1,reesp001,01,CX,S9
+play,7,1,stync001,00,,NP
+sub,bellm003,"Mike Bell",1,2,11
+play,7,1,bellm003,10,BX,53/G
+play,8,0,blumg001,00,,NP
+sub,tuckm001,"Michael Tucker",1,6,9
+play,8,0,blumg001,00,,NP
+sub,ochoa001,"Alex Ochoa",1,5,7
+play,8,0,blumg001,00,,NP
+sub,huntb002,"Brian L. Hunter",1,4,8
+play,8,0,blumg001,00,,NP
+sub,bellm003,"Mike Bell",1,2,5
+play,8,0,blumg001,00,,NP
+sub,merch002,"Hector Mercado",1,9,1
+play,8,0,blumg001,10,BX,9/F9
+play,8,0,cabro001,00,X,53/G
+play,8,0,schnb001,22,BFFBX,S/78
+play,8,0,liraf001,00,,NP
+sub,websl001,"Lenny Webster",0,9,11
+play,8,0,websl001,12,SBSFX,S9.1-3
+play,8,0,bradm001,00,X,6(1)/FO/G
+play,8,1,cases001,00,,NP
+sub,jonet004,"Terry Jones",0,5,9
+play,8,1,cases001,00,,NP
+sub,seguf001,"Fernando Seguignol",0,4,3
+play,8,1,cases001,00,,NP
+sub,klins002,"Steve Kline",0,9,1
+play,8,1,cases001,00,,NP
+sub,bartk001,"Kimera Bartee",1,3,11
+play,8,1,bartk001,02,SSH,HP
+play,8,1,huntb002,00,X,4/P4
+play,8,1,ochoa001,31,BFBBX,64(1)3/GDP
+play,9,0,bergp001,00,,NP
+sub,cromd001,"David Cromer",1,3,3
+play,9,0,bergp001,32,BBCBCFS,K
+play,9,0,mordm001,10,BX,7/F7
+play,9,0,seguf001,31,BFBBB,W
+play,9,0,jonet004,32,BBCCBB,W.1-2
+play,9,0,blumg001,00,X,9/F9
+data,er,thurm002,5
+data,er,johnm002,0
+data,er,forss001,3
+data,er,liraf001,0
+data,er,klins002,0
+data,er,parrs001,1
+data,er,merch002,0

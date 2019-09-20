@@ -1,0 +1,150 @@
+version,2
+info,visteam,MON
+info,hometeam,SDN
+info,site,SAN01
+info,date,2000/08/18
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,monte901
+info,ump1b,laynj901
+info,ump2b,barrt901
+info,ump3b,randt901
+info,pitches,pitches
+info,temp,77
+info,winddir,torf
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,170
+info,attendance,20597
+info,wp,thurm002
+info,lp,clemm001
+info,save,stris001
+start,jonet004,"Terry Jones",0,1,7
+start,bradm001,"Milton Bradley",0,2,8
+start,vidrj001,"Jose Vidro",0,3,4
+start,guerv001,"Vladimir Guerrero",0,4,9
+start,stevl001,"Lee Stevens",0,5,3
+start,blumg001,"Geoff Blum",0,6,5
+start,schnb001,"Brian Schneider",0,7,2
+start,cabro001,"Orlando Cabrera",0,8,6
+start,thurm002,"Mike Thurman",0,9,1
+start,owene001,"Eric Owens",1,1,7
+start,darrm001,"Mike Darr",1,2,9
+start,klesr001,"Ryan Klesko",1,3,3
+start,nevip001,"Phil Nevin",1,4,5
+start,boonb002,"Bret Boone",1,5,4
+start,river002,"Ruben Rivera",1,6,8
+start,gonzw001,"Wiki Gonzalez",1,7,2
+start,relad001,"Desi Relaford",1,8,6
+start,clemm001,"Matt Clement",1,9,1
+play,1,0,jonet004,22,BSLFBX,S8/8S
+play,1,0,bradm001,12,LBSS,K
+play,1,0,vidrj001,11,CBB,WP.1-2
+play,1,0,vidrj001,32,CBBCBB,W
+play,1,0,guerv001,10,BX,S8.2-H;1-2
+play,1,0,stevl001,22,SBSBS,K
+play,1,0,blumg001,01,CX,S8.2-H;1-3
+play,1,0,schnb001,32,BBSFBS,K
+play,1,1,owene001,32,BBCCBB,W
+play,1,1,darrm001,11,BCX,36(1)3/GDP
+play,1,1,klesr001,02,CFX,9/F9
+play,2,0,cabro001,21,CBBX,S8
+play,2,0,thurm002,11,SBX,54/SH.1-2
+play,2,0,jonet004,20,BBX,3/G.2-3
+play,2,0,bradm001,32,BBCBFX,D9.3-H
+play,2,0,vidrj001,00,X,7/F7
+play,2,1,nevip001,22,FFBBX,S
+play,2,1,boonb002,11,FBX,9/F9
+play,2,1,river002,10,BX,D/78.1-3
+play,2,1,gonzw001,20,BBX,43/G.3-H;2-3
+play,2,1,relad001,11,BSX,9/F9
+play,3,0,guerv001,02,CFX,E5/TH1
+play,3,0,stevl001,22,FBBFFS,K
+play,3,0,blumg001,30,BBBB,W.1-2
+play,3,0,schnb001,00,B,WP.2-3;1-2
+play,3,0,schnb001,11,BSX,S1.3-H(UR);2-H(E1)(UR);B-2(E1/TH)
+play,3,0,cabro001,00,X,53/G
+play,3,0,thurm002,02,CSC,K/C
+play,3,1,clemm001,11,CBX,9/F9
+play,3,1,owene001,00,X,S8/8S
+play,3,1,darrm001,32,BBBCCFFFX,9(B)3(1)/FDP
+play,4,0,jonet004,02,FFX,43/G
+play,4,0,bradm001,00,X,6/L6
+play,4,0,vidrj001,00,X,S9
+play,4,0,guerv001,22,BBSCX,64(1)/FO
+play,4,1,klesr001,10,BX,6/L6
+play,4,1,nevip001,21,BCBX,S
+play,4,1,boonb002,00,X,64(1)3/GDP
+play,5,0,stevl001,10,BX,3/G
+play,5,0,blumg001,22,FBCBFFS,K23
+play,5,0,schnb001,22,BFBSX,31/G
+play,5,1,river002,10,BX,2/FL
+play,5,1,gonzw001,32,BBBCFB,W
+play,5,1,relad001,32,BBBCFX,8/F8
+play,5,1,clemm001,00,,NP
+sub,mabrj001,"John Mabry",1,9,11
+play,5,1,mabrj001,10,BX,3/G
+play,6,0,cabro001,00,,NP
+sub,erdot001,"Todd Erdos",1,9,1
+play,6,0,cabro001,00,X,S7
+play,6,0,thurm002,12,CBLX,34/SH.1-2
+play,6,0,jonet004,11,BFX,S8.2-3
+play,6,0,bradm001,22,CBBFX,9/SF.3-H
+play,6,0,vidrj001,00,X,7/F7
+play,6,1,owene001,11,CBX,S8
+play,6,1,darrm001,11,FBX,43/G.1-2
+play,6,1,klesr001,30,BBBB,W
+play,6,1,nevip001,11,BFX,46(1)3/GDP
+play,7,0,guerv001,20,BBX,63/G
+play,7,0,stevl001,22,BSCBS,K
+play,7,0,blumg001,01,CH,HP
+play,7,0,schnb001,00,X,13/G
+play,7,1,boonb002,01,CX,53/G
+play,7,1,river002,12,SSBS,K23
+play,7,1,gonzw001,00,X,9/F9
+play,8,0,cabro001,00,,NP
+sub,almac001,"Carlos Almanzar",1,9,1
+play,8,0,cabro001,02,CSX,S
+play,8,0,thurm002,01,CB,SB2
+play,8,0,thurm002,22,CBBLFS,K
+play,8,0,jonet004,00,X,8/F8
+play,8,0,bradm001,22,BCCFBS,K
+play,8,1,relad001,31,BBBCB,W
+play,8,1,almac001,00,,NP
+sub,magad001,"Dave Magadan",1,9,11
+play,8,1,magad001,00,,NP
+sub,forss001,"Scott Forster",0,9,1
+play,8,1,magad001,31,BCBBB,W.1-2
+play,8,1,owene001,00,,NP
+sub,telfa001,"Anthony Telford",0,9,1
+play,8,1,owene001,21,BBCX,9/FL.2-3
+play,8,1,darrm001,11,BSX,36(1)/FO.3-H
+play,8,1,klesr001,01,FS,SB2.1-3(E2/TH2)
+play,8,1,klesr001,32,FSBBBB,W.3-H(WP)
+play,8,1,nevip001,10,BX,S7.1-2
+play,8,1,boonb002,00,,NP
+sub,stris001,"Scott Strickland",0,9,1
+play,8,1,boonb002,22,BFBSS,K
+play,9,0,vidrj001,00,,NP
+sub,magad001,"Dave Magadan",1,9,5
+play,9,0,vidrj001,00,,NP
+sub,walld002,"Donne Wall",1,4,1
+play,9,0,vidrj001,10,BX,S9
+play,9,0,guerv001,22,BBSSS,K
+play,9,0,stevl001,02,SFS,K+CS2(26)/DP
+play,9,1,river002,12,SCBS,K
+play,9,1,gonzw001,12,CFBX,43/G
+play,9,1,relad001,12,BCFX,S9
+play,9,1,magad001,12,CCBX,5/L5
+data,er,thurm002,2
+data,er,forss001,1
+data,er,telfa001,0
+data,er,stris001,0
+data,er,clemm001,3
+data,er,erdot001,1
+data,er,almac001,0
+data,er,walld002,0

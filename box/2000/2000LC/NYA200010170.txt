@@ -1,0 +1,166 @@
+version,2
+info,visteam,SEA
+info,hometeam,NYA
+info,date,2000/10/17
+info,site,NYC16
+info,number,0
+info,starttime,8:14PM
+info,daynight,night
+info,usedh,true
+info,umphome,hirsj901
+info,ump1b,herna901
+info,ump2b,culbf901
+info,ump3b,hirsm901
+info,umplf,bellw901
+info,umprf,davig901
+info,inputter,"DWS"
+info,howscored,park
+info,pitches,pitches
+info,temp,55
+info,winddir,ltor
+info,windspeed,6
+info,fieldcond,wet
+info,precip,rain
+info,sky,overcast
+info,timeofgame,243
+info,attendance,56598
+info,wp,herno001
+info,lp,panij001
+info,save,
+start,javis001,"Stan Javier",0,1,8
+start,marta001,"Al Martin",0,2,7
+start,rodra001,"Alex Rodriguez",0,3,6
+start,marte001,"Edgar Martinez",0,4,10
+start,olerj001,"John Olerud",0,5,3
+start,ibanr001,"Raul Ibanez",0,6,9
+start,guilc001,"Carlos Guillen",0,7,5
+start,mclem001,"Mark McLemore",0,8,4
+start,wilsd001,"Dan Wilson",0,9,2
+start,halaj001,"John Halama",0,0,1
+start,knobc001,"Chuck Knoblauch",1,1,10
+start,jeted001,"Derek Jeter",1,2,6
+start,justd001,"David Justice",1,3,7
+start,willb002,"Bernie Williams",1,4,8
+start,martt002,"Tino Martinez",1,5,3
+start,posaj001,"Jorge Posada",1,6,2
+start,oneip001,"Paul O'Neill",1,7,9
+start,sojol001,"Luis Sojo",1,8,4
+start,bross001,"Scott Brosius",1,9,5
+start,herno001,"Orlando Hernandez",1,0,1
+play,1,0,javis001,01,CX,53/G5
+play,1,0,marta001,32,BBFCBB,W
+play,1,0,rodra001,01,1F>X,D7/L7LS.1-H
+play,1,0,marte001,01,CX,D7/L7LS.2-H
+play,1,0,olerj001,20,BBX,8/F8RD.2-3
+play,1,0,ibanr001,32,SBSBBC,K/C
+play,1,1,knobc001,11,CBX,9/F9LDW
+play,1,1,jeted001,20,BBX,9/F9D
+play,1,1,justd001,32,BBCSBX,9/F9S
+play,2,0,guilc001,32,CBFBBFB,W
+play,2,0,mclem001,11,111CBB,CS2(243)
+play,2,0,mclem001,21,111CBBX,7/F7M
+play,2,0,wilsd001,22,SSBFBFS,K
+play,2,1,willb002,21,CBBX,S8/G6M
+play,2,1,martt002,02,CFFX,46(1)3/GDP/G4
+play,2,1,posaj001,20,BBX,9/L9LM
+play,3,0,javis001,22,BCBFFX,31/G34
+play,3,0,marta001,01,SX,2/P2LF
+play,3,0,rodra001,12,FSBS,K
+play,3,1,oneip001,01,CX,13/G1
+play,3,1,sojol001,32,CBBBFB,W
+play,3,1,bross001,02,CCC,K/C
+play,3,1,knobc001,31,B1BCBX,3/P3
+play,4,0,marte001,02,CSS,K
+play,4,0,olerj001,22,CBBFX,D/L89XD
+play,4,0,ibanr001,22,CCFBFBX,7/F7LD
+play,4,0,guilc001,00,X,HR/F9L.2-H
+play,4,0,mclem001,01,CX,43/G4
+play,4,1,jeted001,11,CBX,9/F9DW
+play,4,1,justd001,22,BCBFX,S9/L9LD
+play,4,1,willb002,22,BFCFBX,S7/L7S.1-2
+play,4,1,martt002,32,BCBFFFBB,W.2-3;1-2
+play,4,1,posaj001,11,FBX,D8/F89XD.3-H;2-H;1-3
+play,4,1,oneip001,00,X,S8/G4M.3-H;2-3
+play,4,1,sojol001,00,,NP
+sub,tomkb001,"Brett Tomko",0,0,1
+play,4,1,sojol001,01,CX,4/P34D
+play,4,1,bross001,00,X,53/G56S
+play,5,0,wilsd001,32,BFBFBX,S9/L3D
+play,5,0,javis001,31,BBBCX,6(B)3(1)/LDP/L6
+play,5,0,marta001,20,BBX,8/F8RD
+play,5,1,knobc001,21,BBCX,5/P5F
+play,5,1,jeted001,32,CBBSBFB,W
+play,5,1,justd001,31,BF1BB1C,SB2
+play,5,1,justd001,32,BF1BB1CX,63/G6
+play,5,1,willb002,30,BB*BI,IW
+play,5,1,martt002,22,BBFFX,41/G34D
+play,6,0,rodra001,21,FBBX,D8/F78XDW
+play,6,0,marte001,22,CFBBFS,K
+play,6,0,olerj001,30,IIII,IW
+play,6,0,ibanr001,12,FCF*BX,64(1)/FO/G6M.2-3
+com,"$the ball caromed off Derek Jeter to Luis Sojo behind the bag"
+play,6,0,guilc001,31,BBBCB,W.1-2
+play,6,0,mclem001,01,CX,63/G6
+play,6,1,posaj001,22,BCBFS,K
+play,6,1,oneip001,32,BCBBFFX,31/G34
+play,6,1,sojol001,32,BBCFFFBFFX,7/F7D
+play,7,0,wilsd001,22,BBCFS,K
+play,7,0,javis001,10,BX,5/P5F
+play,7,0,marta001,02,FFS,K
+play,7,1,bross001,00,,NP
+sub,javis001,"Stan Javier",0,1,7
+play,7,1,bross001,00,,NP
+sub,camem001,"Mike Cameron",0,2,8
+play,7,1,bross001,00,,NP
+sub,vizcj001,"Jose Vizcaino",1,9,11
+play,7,1,vizcj001,00,,NP
+sub,panij001,"Jose Paniagua",0,0,1
+play,7,1,vizcj001,11,BCX,S4/G34D
+play,7,1,knobc001,01,L1X,24/SH/BG23.1-2
+play,7,1,jeted001,22,CBFBFX,S7/G56.2-3
+play,7,1,justd001,00,,NP
+sub,rhoda001,"Arthur Rhodes",0,0,1
+play,7,1,justd001,31,BBFBX,HR/9.3-H;1-H
+play,7,1,willb002,12,CBFX,S9/G3D
+play,7,1,martt002,11,CBX,DGR/L7LD.1-3
+play,7,1,posaj001,30,IIII,IW
+play,7,1,oneip001,10,BX,S9/G34.3-H;2-H;1-2
+play,7,1,sojol001,00,,NP
+sub,mesaj001,"Jose Mesa",0,0,1
+play,7,1,sojol001,30,BBBB,W.2-3;1-2
+play,7,1,vizcj001,10,BX,7/SF/L7M.3-H
+play,7,1,knobc001,32,CFBF*BBB,W.2-3;1-2
+play,7,1,jeted001,02,CFC,K/C
+play,8,0,rodra001,00,,NP
+sub,vizcj001,"Jose Vizcaino",1,9,5
+play,8,0,rodra001,02,CSX,HR/7
+play,8,0,marte001,32,FBBFBB,W
+play,8,0,olerj001,00,,NP
+sub,rivem002,"Mariano Rivera",1,0,1
+play,8,0,olerj001,21,CBBX,D9/F89XDW.1-3
+play,8,0,ibanr001,11,BFX,9/F9S
+play,8,0,guilc001,10,BX,13/G15
+play,8,0,mclem001,00,X,D9/G3L.3-H;2-H
+com,"$ended Mariano Rivera's 34 inning post-season scoreless streak"
+play,8,0,wilsd001,00,,NP
+sub,buhnj001,"Jay Buhner",0,9,11
+play,8,0,buhnj001,22,SBFBFS,K
+play,8,1,justd001,00,,NP
+sub,olivj001,"Joe Oliver",0,9,2
+play,8,1,justd001,22,CBBCS,K
+play,8,1,willb002,32,BCBFBS,K
+play,8,1,martt002,10,BX,8/F8LS
+play,9,0,javis001,00,,NP
+sub,bellc001,"Clay Bellinger",1,3,7
+play,9,0,javis001,01,CX,31/G3
+play,9,0,camem001,11,BCX,9/F9S
+play,9,0,rodra001,11,CBX,S5/G5S
+play,9,0,marte001,00,C,DI.1-2
+play,9,0,marte001,01,CX,63/G6
+data,er,halaj001,3
+data,er,tomkb001,0
+data,er,panij001,2
+data,er,rhoda001,4
+data,er,mesaj001,0
+data,er,herno001,6
+data,er,rivem002,1

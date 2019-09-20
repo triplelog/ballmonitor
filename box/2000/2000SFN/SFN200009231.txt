@@ -1,0 +1,187 @@
+version,2
+info,visteam,ARI
+info,hometeam,SFN
+info,site,SFO03
+info,date,2000/09/23
+info,number,1
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,false
+info,umphome,wintm901
+info,ump1b,vanvm901
+info,ump2b,froeb901
+info,ump3b,wolfj901
+info,pitches,pitches
+info,temp,68
+info,winddir,torf
+info,windspeed,11
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,190
+info,attendance,40930
+info,wp,guzmg001
+info,lp,estes001
+info,save,mantm001
+start,bautd001,"Danny Bautista",0,1,8
+start,bellj001,"Jay Bell",0,2,4
+start,gonzl001,"Luis Gonzalez",0,3,7
+start,colbg001,"Greg Colbrunn",0,4,3
+start,cabra001,"Alex Cabrera",0,5,9
+start,willm003,"Matt D. Williams",0,6,5
+start,klasd001,"Danny Klassen",0,7,6
+start,stink001,"Kelly Stinnett",0,8,2
+start,guzmg001,"Geraldo Guzman",0,9,1
+start,murrc001,"Calvin Murray",1,1,8
+start,martr003,"Ramon E. Martinez",1,2,6
+start,cresf001,"Felipe Crespo",1,3,7
+start,burke001,"Ellis Burks",1,4,9
+start,minod001,"Damon Minor",1,5,3
+start,davir002,"Russ Davis",1,6,5
+start,meloj001,"Juan Melo",1,7,4
+start,estab001,"Bobby Estalella",1,8,2
+start,estes001,"Shawn Estes",1,9,1
+play,1,0,bautd001,31,BBCBB,W
+play,1,0,bellj001,30,BBBB,W.1-2
+play,1,0,gonzl001,22,CCBBX,HR/9.2-H;1-H
+com,"$into SF Bay; Gonzalez becomes the first to homer into the"
+com,"bay and into the pool in Phoenix"
+play,1,0,colbg001,12,FCBFX,4/P4
+play,1,0,cabra001,01,FX,7/F7
+play,1,0,willm003,00,X,S9
+play,1,0,klasd001,00,X,9/F9
+play,1,1,murrc001,11,CBX,7/F7D
+play,1,1,martr003,21,CBBX,8/F8
+play,1,1,cresf001,32,CBFBBX,63/G
+play,2,0,stink001,12,BSSC,K/C
+play,2,0,guzmg001,02,SCC,K/C
+play,2,0,bautd001,32,BBCSBB,W
+play,2,0,bellj001,10,BX,S7.1-2
+play,2,0,gonzl001,10,BX,9/F9
+play,2,1,burke001,32,CBBFBFC,K/C
+play,2,1,minod001,32,BCBBSFB,W
+play,2,1,davir002,20,BBX,S7.1-2
+play,2,1,meloj001,10,BX,5/FL
+play,2,1,estab001,32,BBBCFFS,K
+play,3,0,colbg001,02,CFX,5/FL
+play,3,0,cabra001,12,CBSS,K
+play,3,0,willm003,00,X,3/G
+play,3,1,estes001,12,CBFS,K
+play,3,1,murrc001,31,BBCBB,W
+play,3,1,martr003,22,CBBCX,S8/8S.1-3
+play,3,1,cresf001,00,X,63/G.3-H;1-3(E3/TH)
+play,3,1,burke001,22,BCSFBC,K/C
+play,4,0,klasd001,12,SSBC,K/C
+play,4,0,stink001,12,CBSFFFS,K23
+play,4,0,guzmg001,02,CFFS,K
+play,4,1,minod001,22,BSFBFFX,7/F7
+play,4,1,davir002,12,FCBX,53/G
+play,4,1,meloj001,00,X,63/G
+play,5,0,bautd001,11,BSX,D/89
+play,5,0,bellj001,22,FFBBX,9/F9
+play,5,0,gonzl001,01,CX,D/89.2-H
+play,5,0,colbg001,21,CBBB,WP.2-3
+play,5,0,colbg001,32,CBBBFX,63/G
+play,5,0,cabra001,32,BFBSBB,W
+play,5,0,willm003,31,BFBBX,HR/7.3-H;1-H
+play,5,0,klasd001,02,SSC,K/C
+play,5,1,estab001,00,,NP
+sub,contj001,"Jason Conti",0,5,9
+play,5,1,estab001,21,BBCX,6/P6
+play,5,1,estes001,00,,NP
+sub,felip001,"Pedro Feliz",1,9,11
+play,5,1,felip001,21,BBCX,53/G
+play,5,1,murrc001,12,CSBFFX,8/F8
+play,6,0,stink001,00,,NP
+sub,voger001,"Ryan Vogelsong",1,9,1
+play,6,0,stink001,00,X,5/L5
+play,6,0,guzmg001,02,CSS,K
+play,6,0,bautd001,01,CX,S8
+play,6,0,bellj001,21,BCBX,8/F8
+play,6,1,martr003,02,CFX,53/G
+play,6,1,cresf001,10,BX,3/G
+play,6,1,burke001,32,BCBSBX,S/78
+play,6,1,minod001,00,,NP
+sub,lowet001,"Terrell Lowery",1,4,12
+play,6,1,minod001,01,FX,HR/8.1-H
+play,6,1,davir002,00,,NP
+sub,sprir001,"Russ Springer",0,9,1
+play,6,1,davir002,22,CFBBFFX,9/F9
+play,7,0,gonzl001,00,,NP
+sub,lowet001,"Terrell Lowery",1,4,9
+play,7,0,gonzl001,31,BBBCB,W
+play,7,0,colbg001,22,FFBFFBFX,7/F7
+play,7,0,contj001,12,CSBC,K/C
+play,7,0,willm003,10,BX,S8.1-2
+play,7,0,klasd001,32,BBCBFFFS,K
+play,7,1,meloj001,12,FBFC,K/C
+play,7,1,estab001,12,SSBFS,K
+play,7,1,voger001,00,,NP
+sub,riosa001,"Armando Rios",1,9,11
+play,7,1,riosa001,22,SBFBX,7/F7
+play,8,0,stink001,00,,NP
+sub,johnj006,"John Johnstone",1,9,1
+play,8,0,stink001,02,FSS,K
+play,8,0,sprir001,00,,NP
+sub,ryanr001,"Rob Ryan",0,9,11
+play,8,0,ryanr001,02,FSX,S8
+play,8,0,bautd001,02,CFFC,K/C
+play,8,0,bellj001,20,BBX,8/F8
+play,8,1,murrc001,00,,NP
+sub,kim-b001,"Byung-Hyun Kim",0,9,1
+play,8,1,murrc001,00,,NP
+sub,benam001,"Marvin Benard",1,1,11
+play,8,1,benam001,00,X,S8
+play,8,1,martr003,00,X,S.1-2
+play,8,1,cresf001,22,FBSBC,K/C
+play,8,1,lowet001,00,,NP
+sub,bondb001,"Barry Bonds",1,4,11
+play,8,1,bondb001,00,,NP
+sub,plesd001,"Dan Plesac",0,9,1
+play,8,1,bondb001,12,SCBS,K
+play,8,1,minod001,00,,NP
+sub,kentj001,"Jeff Kent",1,5,11
+play,8,1,kentj001,00,,NP
+sub,mantm001,"Matt Mantei",0,9,1
+play,8,1,kentj001,32,BFCBBX,4/P4
+play,9,0,gonzl001,00,,NP
+sub,cresf001,"Felipe Crespo",1,3,9
+play,9,0,gonzl001,00,,NP
+sub,benam001,"Marvin Benard",1,1,8
+play,9,0,gonzl001,00,,NP
+sub,kentj001,"Jeff Kent",1,5,3
+play,9,0,gonzl001,00,,NP
+sub,bondb001,"Barry Bonds",1,4,7
+play,9,0,gonzl001,00,,NP
+sub,embra001,"Alan Embree",1,9,1
+play,9,0,gonzl001,02,FFS,K
+play,9,0,colbg001,32,FBSBBS,K
+play,9,0,contj001,00,,NP
+sub,miesm001,"Matt Mieske",0,5,11
+play,9,0,miesm001,00,X,7/L7
+play,9,1,davir002,00,,NP
+sub,finls001,"Steve Finley",0,5,8
+play,9,1,davir002,00,,NP
+sub,bautd001,"Danny Bautista",0,1,9
+play,9,1,davir002,30,BBBB,W
+play,9,1,meloj001,00,,NP
+sub,muelb001,"Bill Mueller",1,7,11
+play,9,1,muelb001,11,CBX,S.1-2
+play,9,1,estab001,00,,NP
+sub,snowj001,"J.T. Snow",1,8,11
+play,9,1,snowj001,00,X,7/F7
+play,9,1,embra001,00,,NP
+sub,aurir001,"Rich Aurilia",1,9,11
+play,9,1,aurir001,30,BBBB,W.2-3;1-2
+play,9,1,benam001,22,BCBFX,6/FL
+play,9,1,martr003,12,FCBFX,S9.3-H;2-H;1-2
+play,9,1,cresf001,10,BX,8/F8
+data,er,guzmg001,3
+data,er,sprir001,0
+data,er,kim-b001,0
+data,er,plesd001,0
+data,er,mantm001,2
+data,er,estes001,7
+data,er,voger001,0
+data,er,johnj006,0
+data,er,embra001,0

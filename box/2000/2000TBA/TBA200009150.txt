@@ -1,0 +1,206 @@
+version,2
+info,visteam,OAK
+info,hometeam,TBA
+info,site,STP01
+info,date,2000/09/15
+info,number,0
+info,starttime,7:15PM
+info,daynight,night
+info,usedh,true
+info,umphome,reilm901
+info,ump1b,diazl901
+info,ump2b,coope901
+info,ump3b,kellj901
+info,pitches,pitches
+info,temp,72
+info,winddir,rtol
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,188
+info,attendance,14087
+info,wp,zitob001
+info,lp,lopea002
+info,save,
+start,longt002,"Terrence Long",0,1,8
+start,velar001,"Randy Velarde",0,2,4
+start,giamj001,"Jason Giambi",0,3,3
+start,grieb001,"Ben Grieve",0,4,7
+start,staim001,"Matt Stairs",0,5,9
+start,tejam001,"Miguel Tejada",0,6,6
+start,chave001,"Eric Chavez",0,7,5
+start,giamj002,"Jeremy Giambi",0,8,10
+start,hernr002,"Ramon Hernandez",0,9,2
+start,zitob001,"Barry Zito",0,0,1
+start,willg001,"Gerald Williams",1,1,8
+start,winnr001,"Randy Winn",1,2,7
+start,castv001,"Vinny Castilla",1,3,5
+start,mcgrf001,"Fred McGriff",1,4,3
+start,vaugg001,"Greg Vaughn",1,5,10
+start,johnr006,"Russ Johnson",1,6,4
+start,flahj001,"John Flaherty",1,7,2
+start,guilj001,"Jose Guillen",1,8,9
+start,martf001,"Felix Martinez",1,9,6
+start,lopea002,"Albie Lopez",1,0,1
+play,1,0,longt002,32,BBBCFX,13/G
+play,1,0,velar001,32,CFBBBB,W
+play,1,0,giamj001,01,CX,46(1)3/GDP
+play,1,1,willg001,00,X,S7
+play,1,1,winnr001,30,BBBB,W.1-2
+play,1,1,castv001,10,BX,5/L5
+play,1,1,mcgrf001,21,SBBX,8/F8S
+play,1,1,vaugg001,30,BBBI,IW.2-3;1-2
+play,1,1,johnr006,32,BCSBBX,9/F9
+play,2,0,grieb001,10,BX,63/G
+play,2,0,staim001,22,CBFBX,53/G
+play,2,0,tejam001,01,FX,S7/7S
+play,2,0,chave001,01,CX,D7/78.1XH(762)
+play,2,1,flahj001,01,CX,6/L6
+play,2,1,guilj001,02,CCFC,K/C
+play,2,1,martf001,12,CBSFC,K/C
+play,3,0,giamj002,30,BBBB,W
+play,3,0,hernr002,32,BBBCFX,9/F9S
+play,3,0,longt002,32,BBFBSFB,W.1-2
+play,3,0,velar001,31,BSBBB,W.2-3;1-2
+play,3,0,giamj001,00,X,HR/9.3-H;2-H;1-H
+play,3,0,grieb001,31,BFBBX,S
+play,3,0,staim001,10,BX,46(1)/FO
+play,3,0,tejam001,32,BBBCSB,W.1-2
+play,3,0,chave001,20,BBX,8/F8
+play,3,1,willg001,22,BFBCFX,6/P6
+play,3,1,winnr001,12,CFBX,8/F8
+play,3,1,castv001,01,SX,53/G
+play,4,0,giamj002,10,BX,S9
+play,4,0,hernr002,00,X,S7/7S.1-2
+play,4,0,longt002,22,BBSFX,S8.2-3;1-2
+play,4,0,velar001,12,BSCS,K
+play,4,0,giamj001,01,CX,S7/7S.3-H;2-3;1-2
+play,4,0,grieb001,00,,NP
+sub,endet001,"Trevor Enders",1,0,1
+play,4,0,grieb001,11,BCX,D9/9D.3-H;2-H;1-3
+play,4,0,staim001,02,CSX,S7.3-H;2-H
+play,4,0,tejam001,11,CBX,64(1)3/GDP
+play,4,1,mcgrf001,00,,NP
+sub,portb001,"Bo Porter",0,5,9
+play,4,1,mcgrf001,00,X,8/F8D
+play,4,1,vaugg001,32,BFBBSFB,W
+play,4,1,johnr006,00,X,8/F8
+play,4,1,flahj001,21,BCBX,HR/7.1-H
+play,4,1,guilj001,32,BSFBFBFS,K
+play,5,0,chave001,32,BBSCFFBB,W
+play,5,0,giamj002,22,CBCBX,E3/G.1-2
+play,5,0,hernr002,30,BBBB,W.2-3;1-2
+play,5,0,longt002,32,BFBFBX,D/78.3-H;2-H(UR);1-3
+play,5,0,velar001,21,BBSX,6/P6
+play,5,0,giamj001,22,BBCCX,D9/9S.3-H;2-H
+play,5,0,grieb001,00,,NP
+sub,fiort001,"Tony Fiore",1,0,1
+play,5,0,grieb001,11,CBX,23/G.2-2
+play,5,0,portb001,02,CCFX,9/FL
+play,5,1,martf001,00,X,9/FL
+play,5,1,willg001,30,BBBB,W
+play,5,1,winnr001,11,BCX,54(1)/FO
+play,5,1,castv001,21,BBSX,8/F8
+play,6,0,tejam001,22,CFBBFX,S8/8S
+play,6,0,chave001,00,X,S9.1-2
+play,6,0,giamj002,01,CX,46(1)/FO.2-3
+play,6,0,hernr002,00,,NP
+sub,fasas001,"Sal Fasano",0,9,11
+play,6,0,fasas001,02,SFS,K
+play,6,0,longt002,11,BSX,S8.3-H;1-2
+play,6,0,velar001,00,,NP
+sub,ortij003,"Jose Ortiz",0,2,11
+play,6,0,ortij003,00,X,5/L5
+com,"Debut game for Jose Ortiz"
+play,6,1,mcgrf001,00,,NP
+sub,ortij003,"Jose Ortiz",0,2,4
+play,6,1,mcgrf001,00,,NP
+sub,menef001,"Frank Menechino",0,6,6
+play,6,1,mcgrf001,00,,NP
+sub,fasas001,"Sal Fasano",0,9,2
+play,6,1,mcgrf001,30,BBBB,W
+play,6,1,vaugg001,11,BSX,S7.1-2
+play,6,1,johnr006,22,BCBSC,K/C
+play,6,1,flahj001,01,SX,3/FL
+play,6,1,guilj001,00,X,6/P6
+play,7,0,giamj001,00,,NP
+sub,hallt001,"Toby Hall",1,2,2
+play,7,0,giamj001,00,,NP
+sub,huffa001,"Aubrey Huff",1,3,5
+play,7,0,giamj001,00,,NP
+sub,cox-s001,"Steve Cox",1,4,3
+play,7,0,giamj001,00,,NP
+sub,timmo001,"Ozzie Timmons",1,7,7
+play,7,0,giamj001,00,,NP
+sub,piata001,"Adam Piatt",0,3,11
+play,7,0,piata001,12,CBSS,K
+com,"Debut game for Toby Hall"
+play,7,0,grieb001,00,,NP
+sub,chrir001,"Ryan Christenson",0,4,11
+play,7,0,chrir001,12,CBFX,S8/8S
+play,7,0,portb001,00,X,HR/7.1-H
+play,7,0,menef001,01,CX,63/G
+play,7,0,chave001,00,,NP
+sub,bellm002,"Mark Bellhorn",0,7,11
+play,7,0,bellm002,12,CSBX,31/G
+play,7,1,martf001,00,,NP
+sub,piata001,"Adam Piatt",0,3,3
+play,7,1,martf001,00,,NP
+sub,chrir001,"Ryan Christenson",0,4,7
+play,7,1,martf001,00,,NP
+sub,bellm002,"Mark Bellhorn",0,7,5
+play,7,1,martf001,00,,NP
+sub,matht002,"T.J. Mathews",0,0,1
+play,7,1,martf001,22,BCCFBFX,8/F8
+play,7,1,willg001,01,SX,2/FL
+play,7,1,hallt001,01,SX,9/F9
+play,8,0,giamj002,00,,NP
+sub,wheed001,"Dan Wheeler",1,0,1
+play,8,0,giamj002,12,FFBX,HR/9
+com,"$both Giambis homer in the game"
+play,8,0,fasas001,22,CBBSC,K/C
+play,8,0,longt002,00,,NP
+sub,byrne001,"Eric Byrnes",0,1,11
+play,8,0,byrne001,12,BCSFX,2/FL
+play,8,0,ortij003,12,CCFFFBS,K+WP.B-1
+play,8,0,piata001,01,CX,5/L5
+play,8,1,huffa001,00,,NP
+sub,byrne001,"Eric Byrnes",0,1,9
+play,8,1,huffa001,00,,NP
+sub,portb001,"Bo Porter",0,5,8
+play,8,1,huffa001,00,,NP
+sub,belit001,"Todd Belitz",0,0,1
+play,8,1,huffa001,21,BBFX,53/G
+play,8,1,cox-s001,32,BBFFBFB,W
+play,8,1,vaugg001,00,,NP
+sub,kellk001,"Kenny Kelly",1,5,11
+play,8,1,kellk001,20,BBX,8/F8
+play,8,1,johnr006,21,BCBX,E4/G.1-3
+play,8,1,timmo001,20,BBX,D/89.3-H(UR);1-3
+play,8,1,guilj001,21,BBSX,2/FL
+play,9,0,chrir001,00,,NP
+sub,hernr001,"Roberto Hernandez",1,0,1
+play,9,0,chrir001,22,BFBCC,K/C
+play,9,0,portb001,11,BSX,S8/8S
+play,9,0,menef001,01,CX,S7/7S.1-2
+play,9,0,bellm002,12,BSSS,K
+play,9,0,giamj002,32,BFBFBFFB,W.2-3;1-2
+play,9,0,fasas001,00,X,7/F7
+play,9,1,martf001,00,,NP
+sub,ratlj001,"Jon Ratliff",0,0,1
+play,9,1,martf001,00,,NP
+sub,rolld001,"Damian Rolls",1,9,11
+play,9,1,rolld001,02,FSX,53/G
+com,"Debut game for Jon Ratliff"
+play,9,1,willg001,11,BCX,3/P3
+play,9,1,hallt001,32,SBBBFX,8/F8
+data,er,zitob001,2
+data,er,matht002,0
+data,er,belit001,0
+data,er,ratlj001,0
+data,er,lopea002,8
+data,er,endet001,4
+data,er,fiort001,3
+data,er,wheed001,1
+data,er,hernr001,0

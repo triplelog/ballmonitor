@@ -1,0 +1,91 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,32,1,moutj001,,,,0,6,BBCLBB,bohab001,0,0,moutj001 walks. ,moutj001,0,
+,22,1,,,,,1,11,BBCFX,bohab001,2,0,Double Play. ,lorem001,0,
+,10,1,,jenkg001,,,2,13,BX,bohab001,0,0,jenkg001 doubles. ,jenkg001,0,
+jenkg001 to 3B. ,22,1,,,jenkg001,sexsr001,3,18,CFBBB,bohab001,0,0,Wild Pitch. ,sexsr001,0,
+jenkg001 scores. ,32,1,,sexsr001,,,4,24,CFBBBX,bohab001,0,1,sexsr001 doubles. ,sexsr001,0,
+sexsr001 to 3B. ,21,1,burnj001,,sexsr001,,5,28,BBFX,bohab001,0,0,burnj001 singles. ,burnj001,0,
+,12,1,burnj001,,sexsr001,,6,32,BFSS,bohab001,1,0,hernj001 strikes out. ,hernj001,0,
+,02,1,pierj002,,,,7,4,CFFX,damij001,0,0,pierj002 singles. ,pierj002,1,
+pierj002 to 3B. ,01,1,,peren001,pierj002,,8,6,CX,damij001,0,0,peren001 doubles. ,peren001,1,
+pierj002 scores. peren001 to 3B. ,01,1,,,peren001,,9,8,CX,damij001,1,1,heltt001 hits sacrifice fly. ,heltt001,1,
+,31,1,hammj001,,peren001,,10,13,BBFBB,damij001,0,0,hammj001 walks. ,hammj001,1,
+,32,1,hammj001,,,,11,21,FFBFBBFS,damij001,2,0,walkt002 strikes out. peren001 caught stealing. ,walkt002,1,
+,10,2,,bellr002,,,12,34,BX,bohab001,0,0,bellr002 doubles. ,bellr002,0,
+,20,2,,bellr002,,,13,37,BBX,bohab001,1,0,blanh001 grounds out. ,blanh001,0,G
+,31,2,damij001,bellr002,,,14,42,BFBBB,bohab001,0,0,damij001 walks. ,damij001,0,
+,21,2,,bellr002,,,15,46,FBBX,bohab001,2,0,Double Play. ,moutj001,0,
+,21,2,,,,,16,25,BFBX,damij001,1,0,,cirij001,1,F
+,00,2,,,,,17,26,X,damij001,1,0,hollt001 grounds out. ,hollt001,1,G
+,10,2,,,,,18,28,BX,damij001,1,0,,petrb001,1,F
+,11,3,,,,,19,49,CBX,bohab001,1,0,,lorem001,0,F
+,12,3,,,,,20,54,CFBFX,bohab001,1,0,,jenkg001,0,F
+,11,3,,,,,21,57,CBX,bohab001,1,0,,sexsr001,0,F
+,00,3,,,,,22,29,X,damij001,1,0,bohab001 grounds out. ,bohab001,1,G
+,22,3,,,,,23,35,BCCBFX,damij001,1,0,,pierj002,1,F
+,12,3,,peren001,,,24,40,CBFFX,damij001,0,0,peren001 doubles. ,peren001,1,
+,12,3,,peren001,,,25,44,BCCX,damij001,1,0,,heltt001,1,F
+,32,4,,,,,26,63,BBSBFX,bohab001,1,0,burnj001 grounds out. ,burnj001,0,G
+,12,4,,,,,27,67,FCBX,bohab001,1,0,hernj001 grounds out. ,hernj001,0,G
+,01,4,,,,,28,69,CX,bohab001,1,0,,bellr002,0,F
+,10,4,,hammj001,,,29,46,BX,damij001,0,0,hammj001 doubles. ,hammj001,1,
+,20,4,,hammj001,,,30,49,BBX,damij001,1,0,,walkt002,1,F
+hammj001 scores. cirij001 to 2B. ,10,4,,cirij001,,,31,51,BX,damij001,0,1,cirij001 singles. ,cirij001,1,
+,12,4,,cirij001,,,32,55,BCCS,damij001,1,0,hollt001 strikes out. ,hollt001,1,
+,30,4,petrb001,cirij001,,,33,59,IIII,damij001,0,0,petrb001 intentionally walks. ,petrb001,1,
+,22,4,petrb001,cirij001,,,34,65,BCBFFS,damij001,1,0,bohab001 strikes out. ,bohab001,1,
+,22,5,blanh001,,,,35,75,FCBBFX,bohab001,0,0,blanh001 singles. ,blanh001,0,
+blanh001 to 2B. ,00,5,,blanh001,,,36,76,X,bohab001,1,0,Sacrifice bunt by damij001.,damij001,0,
+,32,5,moutj001,blanh001,,,37,82,BCBBCB,bohab001,0,0,moutj001 walks. ,moutj001,0,
+blanh001 to 3B. moutj001 out. ,02,5,lorem001,,blanh001,,38,85,SFX,bohab001,1,0,lorem001 reaches on fielder's choice. ,lorem001,0,
+,00,5,lorem001,,blanh001,,39,86,X,bohab001,1,0,jenkg001 grounds out. ,jenkg001,0,G
+,11,5,,,,,40,68,CBX,damij001,1,0,,pierj002,1,F
+,02,5,peren001,,,,41,72,CFFX,damij001,0,0,peren001 singles. ,peren001,1,
+peren001 to 2B. ,30,5,heltt001,peren001,,,42,76,BBBB,damij001,0,0,heltt001 walks. ,heltt001,1,
+,00,5,,peren001,,,43,77,X,damij001,2,0,Double Play. ,hammj001,1,
+,31,6,sexsr001,,,,44,91,BBCBB,bohab001,0,0,sexsr001 walks. ,sexsr001,0,
+sexsr001 to 2B. ,32,6,burnj001,sexsr001,,,45,97,BFCBBB,bohab001,0,0,burnj001 walks. ,burnj001,0,
+sexsr001 to 3B. ,11,6,,,sexsr001,,46,100,BCX,bohab001,2,0,Double Play. ,hernj001,0,
+sexsr001 scores. ,32,6,bellr002,,,,47,107,BCFBFBX,bohab001,0,1,bellr002 singles. ,bellr002,0,
+,02,6,bellr002,,,,48,110,FSX,bohab001,1,0,,blanh001,0,F
+,01,6,,,,,49,79,CX,damij001,1,0,walkt002 grounds out. ,walkt002,1,G
+,01,6,cirij001,,,,50,81,CX,damij001,0,0,cirij001 singles. ,cirij001,1,
+,11,6,,,,hollt001,51,84,CBB,damij001,1,0,cirij001 caught stealing. ,hollt001,1,
+,21,6,,,,,52,88,CBBX,damij001,0,1,hollt001 homers. ,hollt001,1,
+,10,6,,,,,53,90,BX,damij001,1,0,petrb001 grounds out. ,petrb001,1,G
+,11,7,sweem001,,,,56,3,BSX,dejem001,0,0,sweem001 singles. ,sweem001,0,
+sweem001 to 2B. ,00,7,,sweem001,,moutj001,57,4,B,dejem001,0,0,Wild Pitch. ,moutj001,0,
+,30,7,moutj001,sweem001,,,58,8,BBBB,dejem001,0,0,moutj001 walks. ,moutj001,0,
+sweem001 to 3B. moutj001 to 2B. ,12,7,,moutj001,sweem001,,59,12,LSBX,dejem001,1,0,lorem001 grounds out. ,lorem001,0,G
+,30,7,jenkg001,moutj001,sweem001,,60,16,IIII,dejem001,0,0,jenkg001 intentionally walks. ,jenkg001,0,
+sweem001 scores. moutj001 scores. jenkg001 to 2B. ,32,7,sexsr001,jenkg001,,,61,22,BSFBBX,dejem001,0,2,sexsr001 singles. ,sexsr001,0,
+,12,7,,jenkg001,,,63,4,CSBX,myerm001,2,0,Double Play. ,burnj001,0,
+,32,7,,,,,66,6,BCBBFX,delov001,1,0,,shumt001,1,F
+,00,7,pierj002,,,,67,7,X,delov001,0,0,pierj002 reaches on Error. ,pierj002,1,G
+pierj002 to 3B. peren001 out. ,10,7,,,pierj002,,68,9,BX,delov001,1,0,peren001 singles. ,peren001,1,
+,32,7,,,pierj002,,69,16,BFBSFBX,delov001,1,0,heltt001 grounds out. ,heltt001,1,G
+,02,8,,,,,71,4,SFFX,choub001,1,0,hernj001 grounds out. ,hernj001,0,G
+,00,8,,,,,72,5,X,choub001,1,0,bellr002 grounds out. ,bellr002,0,G
+,00,8,,blanh001,,,73,6,X,choub001,0,0,blanh001 doubles. ,blanh001,0,
+,30,8,hayec001,blanh001,,,75,10,IIII,choub001,0,0,hayec001 intentionally walks. ,hayec001,0,
+blanh001 to 3B. hayec001 out. ,31,8,moutj001,,blanh001,,76,15,BFBBX,choub001,1,0,moutj001 reaches on fielder's choice. ,moutj001,0,
+,21,8,,,,,79,4,BBCX,acevj001,1,0,hammj001 grounds out. ,hammj001,1,G
+,12,8,,,,,80,10,CFBFFX,acevj001,1,0,walkt002 grounds out. ,walkt002,1,G
+,30,8,cirij001,,,,81,14,BBBB,acevj001,0,0,cirij001 walks. ,cirij001,1,
+cirij001 to 2B. ,01,8,hollt001,cirij001,,,82,16,CX,acevj001,0,0,hollt001 singles. ,hollt001,1,
+,11,8,hollt001,cirij001,,,83,19,BCX,acevj001,1,0,,petrb001,1,P
+,00,9,lorem001,,,,86,1,X,jimej001,0,0,lorem001 singles. ,lorem001,0,
+lopel002 to 2B. ,11,9,jenkg001,lopel002,,,88,4,BFX,jimej001,0,0,jenkg001 singles. ,jenkg001,0,
+lopel002 scores. jenkg001 to 3B. sexsr001 to 2B. ,10,9,,sexsr001,jenkg001,,89,6,BX,jimej001,0,1,sexsr001 singles. ,sexsr001,0,
+,30,9,burnj001,sexsr001,jenkg001,,90,10,IIII,jimej001,0,0,burnj001 intentionally walks. ,burnj001,0,
+jenkg001 scores. sexsr001 to 3B. burnj001 out. ,01,9,houst001,,sexsr001,,92,12,CX,jimej001,1,1,houst001 singles. ,houst001,0,
+,00,9,,houst001,sexsr001,bellr002,93,12,,jimej001,0,0,houst001 steals 2B. ,bellr002,0,
+,30,9,bellr002,houst001,sexsr001,,94,16,IIII,jimej001,0,0,bellr002 intentionally walks. ,bellr002,0,
+sexsr001 scores. ,00,9,bellr002,houst001,,,95,17,X,jimej001,1,1,blanh001 hits sacrifice fly. ,blanh001,0,
+houst001 scores. bellr002 to 3B. ,12,9,hayec001,,bellr002,,96,21,CCBX,jimej001,0,1,hayec001 singles. ,hayec001,0,
+,32,9,hayec001,,bellr002,,98,6,SBFBBS,dipoj001,1,0,moutj001 strikes out. ,moutj001,0,
+,12,9,,,,,101,4,BCCS,leskc001,1,0,mendc001 strikes out. ,mendc001,1,
+,30,9,pierj002,,,,102,8,BBBB,leskc001,0,0,pierj002 walks. ,pierj002,1,
+,12,9,pierj002,,,,104,12,BCCS,leskc001,1,0,penae001 strikes out. ,penae001,1,
+pierj002 to 2B. ,10,9,,pierj002,,heltt001,105,14,BC,leskc001,0,0,pierj002 to 2B on defensive indifference. ,heltt001,1,
+,22,9,,pierj002,,,106,19,BCCBX,leskc001,1,0,heltt001 grounds out. ,heltt001,1,G

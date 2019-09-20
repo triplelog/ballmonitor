@@ -1,0 +1,155 @@
+version,2
+info,visteam,TOR
+info,hometeam,SEA
+info,site,SEA03
+info,date,2000/07/30
+info,number,0
+info,starttime,1:35PM
+info,daynight,day
+info,usedh,true
+info,umphome,riekr901
+info,ump1b,emmep901
+info,ump2b,davig901
+info,ump3b,guccc901
+info,pitches,pitches
+info,temp,76
+info,winddir,ltor
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,198
+info,attendance,43648
+info,wp,selea001
+info,lp,escok001
+info,save,panij001
+start,duceb001,"Rob Ducey",0,1,7
+start,bushh001,"Homer Bush",0,2,4
+start,batit001,"Tony Batista",0,3,5
+start,delgc001,"Carlos Delgado",0,4,3
+start,fullb001,"Brad Fullmer",0,5,10
+start,cruzj004,"Jose Cruz",0,6,8
+start,fletd001,"Darrin Fletcher",0,7,2
+start,cordm001,"Marty Cordova",0,8,9
+start,gonza001,"Alex S. Gonzalez",0,9,6
+start,escok001,"Kelvim Escobar",0,0,1
+start,hendr001,"Rickey Henderson",1,1,7
+start,mclem001,"Mark McLemore",1,2,4
+start,rodra001,"Alex Rodriguez",1,3,6
+start,marte001,"Edgar Martinez",1,4,10
+start,olerj001,"John Olerud",1,5,3
+start,buhnj001,"Jay Buhner",1,6,9
+start,camem001,"Mike Cameron",1,7,8
+start,wilsd001,"Dan Wilson",1,8,2
+start,belld002,"David Bell",1,9,5
+start,selea001,"Aaron Sele",1,0,1
+com,"ej,welld001,P,davig901,Bench jockeying"
+com,"Blue Jays pitcher David Wells (not in game) ejected"
+com,"by crew chief Gerry Davis sometime in game from bench"
+play,1,0,duceb001,32,FBBFBFB,W
+play,1,0,bushh001,01,FX,64(1)3/GDP
+play,1,0,batit001,01,CX,53/G
+play,1,1,hendr001,32,CBSBBB,W
+play,1,1,mclem001,01,CX,46(1)/FO
+play,1,1,rodra001,22,CSBBS,K
+play,1,1,marte001,01,CX,9/F9
+play,2,0,delgc001,00,H,HP
+play,2,0,fullb001,22,CBBFFS,K
+play,2,0,cruzj004,31,BFBBX,9/L9
+play,2,0,fletd001,01,CX,63/G
+play,2,1,olerj001,31,BBCBX,63/G
+play,2,1,buhnj001,02,CCS,K
+play,2,1,camem001,32,BFBBSFB,W
+play,2,1,wilsd001,01,FX,4/FL
+play,3,0,cordm001,22,CBCBFFS,K
+play,3,0,gonza001,00,X,S9
+play,3,0,duceb001,00,X,7/F7
+play,3,0,bushh001,02,CCX,43/G
+play,3,1,belld002,01,CH,HP
+play,3,1,hendr001,30,BBBB,W.1-2
+play,3,1,mclem001,22,BLFBFFS,K
+play,3,1,rodra001,22,FCBBX,E7/F.2-H;1-3;B-2
+play,3,1,marte001,11,BCX,S.3-H(UR);2-3;B-2(E6/TH)
+play,3,1,olerj001,01,FX,3/G.3-H(UR);2-3
+play,3,1,buhnj001,21,BSBX,HR/7.3-H(UR);B-H(UR)
+play,3,1,camem001,22,CBCBX,63/G
+play,4,0,batit001,30,BBBB,W
+play,4,0,delgc001,02,CFX,S7.1-2
+play,4,0,fullb001,00,X,S9.2-H;1-3
+play,4,0,cruzj004,11,SBX,6(1)3/GDP.3-H
+play,4,0,fletd001,32,CBBBFFFFFFFFFS,K
+play,4,1,wilsd001,21,BBCX,S7
+play,4,1,belld002,12,CBCFFFX,54(1)3/GDP
+play,4,1,hendr001,31,BBBCB,W
+play,4,1,mclem001,00,B,SB2
+play,4,1,mclem001,20,BBX,31/G
+play,5,0,cordm001,22,BCFBFX,63/G
+play,5,0,gonza001,10,BX,9/F9
+play,5,0,duceb001,01,CX,53/G
+play,5,1,rodra001,20,BBX,HR/7
+play,5,1,marte001,00,X,8/F8D
+play,5,1,olerj001,11,BCX,31/G
+play,5,1,buhnj001,22,CBFBC,K/C
+play,6,0,bushh001,32,BCSBBX,63/G
+play,6,0,batit001,10,BX,6/P6
+play,6,0,delgc001,32,CCBBFBS,K
+play,6,1,camem001,00,X,63/G
+play,6,1,wilsd001,32,BCBFBS,K
+play,6,1,belld002,22,FBFBX,7/L7
+play,7,0,fullb001,00,X,HR/9
+play,7,0,cruzj004,01,SX,13/G
+play,7,0,fletd001,11,BCX,HR/9
+play,7,0,cordm001,01,FX,9/L9
+play,7,0,gonza001,11,CBX,S9
+play,7,0,duceb001,00,,NP
+sub,mesaj001,"Jose Mesa",1,0,1
+play,7,0,duceb001,00,X,S9.1-2
+play,7,0,bushh001,22,BBCCS,K
+play,7,1,hendr001,32,FBFBFBB,W
+play,7,1,mclem001,01,CX,46(1)/FO
+play,7,1,rodra001,31,BCBBB,W.1-2
+play,7,1,marte001,31,BBBCB,W.2-3;1-2
+play,7,1,olerj001,00,,NP
+sub,borbp001,"Pedro Borbon",0,0,1
+play,7,1,olerj001,21,BCBX,S7.3-H;2-H;1-2
+play,7,1,buhnj001,20,BBB,PB.2-3;1-2
+play,7,1,buhnj001,30,BBBI,IW
+play,7,1,camem001,00,,NP
+sub,frasj001,"John Frascatore",0,0,1
+play,7,1,camem001,21,FBBX,7/SF.3-H(UR)
+play,7,1,wilsd001,02,FFX,4/P4
+play,8,0,batit001,21,BBFH,HP
+play,8,0,delgc001,00,,NP
+sub,ramsr001,"Robert Ramsay",1,0,1
+play,8,0,delgc001,00,X,S9.1-2
+play,8,0,fullb001,00,X,S9.2-3;1-2
+play,8,0,cruzj004,10,BX,S.3-H;2-3;1-2
+play,8,0,fletd001,31,BBBCX,36(1)/FO.3-H;2-3
+play,8,0,cordm001,00,,NP
+sub,panij001,"Jose Paniagua",1,0,1
+play,8,0,cordm001,00,X,64(1)3/GDP
+play,8,1,belld002,02,CFX,4/P4
+play,8,1,hendr001,32,BCFBBB,W
+play,8,1,mclem001,00,B,SB2
+play,8,1,mclem001,31,BBBCB,W
+com,"ej,frasj001,P,riekr901,Throwing at batter"
+com,"ej,fregj101,M,riekr901,Throwing at batter"
+com,"John Frascatore and Blue Jays manager Jim Fregosi ejected by HP umpire Rich Rieker"
+play,8,1,rodra001,20,BB,NP
+sub,quanp001,"Paul Quantrill",0,0,1
+play,8,1,rodra001,30,BB.BB,W.2-3;1-2
+play,8,1,marte001,12,CBCX,9/SF.3-H;2-3
+play,8,1,olerj001,12,SBFX,8/F8
+play,9,0,gonza001,12,FBFS,K23
+play,9,0,duceb001,32,BCFBBX,43/G
+play,9,0,bushh001,02,SSH,HP
+play,9,0,batit001,00,C,DI.1-2
+play,9,0,batit001,02,CCS,K
+data,er,escok001,4
+data,er,borbp001,0
+data,er,frasj001,1
+data,er,quanp001,0
+data,er,selea001,4
+data,er,mesaj001,1
+data,er,ramsr001,1
+data,er,panij001,0

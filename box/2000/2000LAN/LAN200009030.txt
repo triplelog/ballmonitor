@@ -1,0 +1,138 @@
+version,2
+info,visteam,PHI
+info,hometeam,LAN
+info,site,LOS03
+info,date,2000/09/03
+info,number,0
+info,starttime,5:10PM
+info,daynight,night
+info,usedh,false
+info,umphome,morrd901
+info,ump1b,craft901
+info,ump2b,fleta901
+info,ump3b,danlk901
+info,pitches,pitches
+info,temp,79
+info,winddir,ltor
+info,windspeed,6
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,172
+info,attendance,38150
+info,wp,parkc002
+info,lp,persr001
+info,save,shawj001
+start,abreb001,"Bobby Abreu",0,1,9
+start,gland001,"Doug Glanville",0,2,8
+start,roles001,"Scott Rolen",0,3,5
+start,liebm001,"Mike Lieberthal",0,4,2
+start,lee-t002,"Travis Lee",0,5,3
+start,burrp001,"Pat Burrell",0,6,7
+start,andem003,"Marlon Anderson",0,7,4
+start,peret003,"Tomas Perez",0,8,6
+start,persr001,"Robert Person",0,9,1
+start,goodt001,"Tom Goodwin",1,1,8
+start,grudm001,"Mark Grudzielanek",1,2,4
+start,shefg001,"Gary Sheffield",1,3,7
+start,grees001,"Shawn Green",1,4,9
+start,karre001,"Eric Karros",1,5,3
+start,belta001,"Adrian Beltre",1,6,5
+start,kreuc001,"Chad Kreuter",1,7,2
+start,coraa001,"Alex Cora",1,8,6
+start,parkc002,"Chan Ho Park",1,9,1
+play,1,0,abreb001,22,CBBSX,7/F7S
+play,1,0,gland001,02,CSFS,K
+play,1,0,roles001,00,X,S9
+play,1,0,liebm001,32,BCBSBFFFX,9/F9
+play,1,1,goodt001,30,BBBB,W
+play,1,1,grudm001,11,CBB,SB2
+play,1,1,grudm001,31,CBBBB,W
+play,1,1,shefg001,32,BBBCFX,S7/7S.2-H;1-3
+play,1,1,grees001,12,SBSS,K
+play,1,1,karre001,12,SBSX,6(1)3/GDP
+play,2,0,lee-t002,22,FCBBX,3/G
+play,2,0,burrp001,12,BCFS,K
+play,2,0,andem003,31,BBBCB,W
+play,2,0,peret003,12,BCFS,K
+play,2,1,belta001,22,BCBCX,63/G
+play,2,1,kreuc001,00,X,8/F8D
+play,2,1,coraa001,22,BCSFBFS,K
+play,3,0,persr001,12,CFBX,43/G
+play,3,0,abreb001,31,BBBCB,W
+play,3,0,gland001,01,SX,16(1)3/GDP
+play,3,1,parkc002,12,BFFS,K
+play,3,1,goodt001,22,FBCBS,K
+play,3,1,grudm001,02,CFX,5/FL
+play,4,0,roles001,01,CX,63/G
+play,4,0,liebm001,11,BSX,63/G
+play,4,0,lee-t002,10,BX,8/F8
+play,4,1,shefg001,12,BSFFX,63/G
+play,4,1,grees001,12,FBCS,K
+play,4,1,karre001,20,BBX,5/FL
+play,5,0,burrp001,31,BCBBB,W
+play,5,0,andem003,32,CBBFFFFBB,W.1-2
+play,5,0,peret003,12,BFFX,16(1)3/GDP.2-3
+play,5,0,persr001,32,BSBBFFFS,K
+play,5,1,belta001,22,CBBFFX,HR/89
+play,5,1,kreuc001,32,CFBBFBB,W
+play,5,1,coraa001,02,FCFS,K
+play,5,1,parkc002,22,BLLBL,K/BF
+play,5,1,goodt001,10,BX,S9/9S.1-2
+play,5,1,grudm001,22,CFBBX,S7/7S.2-H;1-3
+play,5,1,shefg001,20,BBX,9/F9
+play,6,0,abreb001,11,CBX,13/G
+play,6,0,gland001,31,BCBBX,8/F8
+play,6,0,roles001,21,BBCX,8/F8
+play,6,1,grees001,31,BBBFX,HR/89
+play,6,1,karre001,22,SBSBFX,8/F8D
+play,6,1,belta001,32,BBBCFX,8/F8D
+play,6,1,kreuc001,31,BSBBB,W
+play,6,1,coraa001,02,SSS,K
+play,7,0,liebm001,30,BBBB,W
+play,7,0,lee-t002,22,BBCFX,6/P6
+play,7,0,burrp001,02,CCS,K
+play,7,0,andem003,10,BX,43/G
+play,7,1,parkc002,00,,NP
+sub,polic001,"Cliff Politte",0,9,1
+play,7,1,parkc002,01,FX,S8
+play,7,1,goodt001,02,SFS,K
+play,7,1,grudm001,32,CBBFFBX,S7/7S.1-2
+play,7,1,shefg001,21,BFBX,S9/9S.2-H;1-3
+play,7,1,grees001,32,BSBSBX,43/G.3-H;1-2
+play,7,1,karre001,32,SBBBFX,S9/9S.2XH(92)
+play,8,0,peret003,12,FBCFX,S9
+play,8,0,polic001,00,,NP
+sub,duceb001,"Rob Ducey",0,9,11
+play,8,0,duceb001,21,BBCX,36(1)3/GDP
+play,8,0,abreb001,32,BCBFBFB,W
+play,8,0,gland001,30,BBBB,W.1-2
+play,8,0,roles001,12,CCBS,K
+play,8,1,belta001,00,,NP
+sub,duceb001,"Rob Ducey",0,9,9
+play,8,1,belta001,00,,NP
+sub,jordk001,"Kevin Jordan",0,1,5
+play,8,1,belta001,00,,NP
+sub,boydj001,"Jason Boyd",0,3,1
+play,8,1,belta001,01,CX,9/F9
+play,8,1,kreuc001,12,CCBC,K/C
+play,8,1,coraa001,00,X,3/G
+play,9,0,liebm001,00,,NP
+sub,lodup001,"Paul LoDuca",1,3,7
+play,9,0,liebm001,00,,NP
+sub,adamt001,"Terry Adams",1,9,1
+play,9,0,liebm001,31,BCBBX,S/78
+play,9,0,lee-t002,22,BBCCFX,S/89.1-3
+play,9,0,burrp001,02,CFFX,13/G.1-2
+play,9,0,andem003,11,BCX,E1/G.3-H
+play,9,0,peret003,02,CSS,K
+play,9,0,duceb001,32,BCCBBFB,W.2-3;1-2
+play,9,0,jordk001,00,,NP
+sub,shawj001,"Jeff Shaw",1,9,1
+play,9,0,jordk001,21,BBCX,7/F7
+data,er,persr001,4
+data,er,polic001,2
+data,er,boydj001,0
+data,er,parkc002,0
+data,er,adamt001,1
+data,er,shawj001,0

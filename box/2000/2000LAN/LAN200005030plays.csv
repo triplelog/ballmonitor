@@ -1,0 +1,77 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,01,1,,,,,0,2,CX,perec001,1,0,,veraq001,0,P
+,32,1,jonea002,,,,1,8,SCBBBX,perec001,0,0,jonea002 singles. ,jonea002,0,
+,11,1,,jonea002,,jonec004,2,11,FBS,perec001,0,0,jonea002 steals 2B. ,jonec004,0,
+jonea002 scores. ,22,1,jonec004,,,,3,16,FBSBX,perec001,0,1,jonec004 singles. ,jonec004,0,
+jonec004 to 2B. ,01,1,,jonec004,,,4,18,CX,perec001,1,0,galaa001 grounds out. ,galaa001,0,G
+jonec004 scores. ,00,1,jordb001,,,,5,19,X,perec001,0,1,jordb001 singles. ,jordb001,0,
+,01,1,,,,bonib001,6,21,F1,perec001,1,0,jordb001 picked off. ,bonib001,0,
+,01,1,hollt001,,,,7,2,CX,maddg002,0,0,hollt001 singles. ,hollt001,1,
+hollt001 to 3B. grudm001 to 2B. ,01,1,,grudm001,hollt001,,8,4,FX,maddg002,0,0,grudm001 singles. ,grudm001,1,
+hollt001 scores. ,12,1,,grudm001,,,9,8,CBCX,maddg002,1,1,shefg001 grounds out. ,shefg001,1,G
+,30,1,grees001,grudm001,,,10,12,BBBB,maddg002,0,0,grees001 walks. ,grees001,1,
+grudm001 to 3B. ,02,1,grees001,,grudm001,,11,15,FCX,maddg002,1,0,,karre001,1,F
+,00,1,,grees001,grudm001,hundt001,12,16,C,maddg002,0,0,grees001 steals 2B. ,hundt001,1,
+,02,1,,grees001,grudm001,,13,19,CFS,maddg002,1,0,hundt001 strikes out. ,hundt001,1,
+,32,2,bonib001,,,,14,27,SBBFBB,perec001,0,0,bonib001 walks. ,bonib001,0,
+peree002 to 2B. bonib001 out. ,20,2,,peree002,,,15,30,BBX,perec001,1,0,peree002 reaches on fielder's choice. ,peree002,0,
+peree002 to 3B. ,00,2,,,peree002,,16,31,X,perec001,1,0,weisw001 grounds out. ,weisw001,0,G
+,11,2,,,peree002,,17,34,CBX,perec001,1,0,,maddg002,0,F
+,00,2,,,,,18,20,X,maddg002,1,0,belta001 grounds out. ,belta001,1,G
+,00,2,,,,,19,21,X,maddg002,1,0,,elstk001,1,
+,00,2,,,,,20,22,X,maddg002,1,0,perec001 grounds out. ,perec001,1,G
+,21,3,,,,,21,38,CBBX,perec001,1,0,,veraq001,0,F
+,32,3,jonea002,,,,22,45,CBFBFBB,perec001,0,0,jonea002 walks. ,jonea002,0,
+jonea002 to 2B. ,30,3,jonec004,jonea002,,,23,49,BBBB,perec001,0,0,jonec004 walks. ,jonec004,0,
+jonea002 scores. jonec004 to 2B. ,00,3,galaa001,jonec004,,,24,50,X,perec001,0,1,galaa001 singles. ,galaa001,0,
+,00,3,,jonec004,,,25,51,X,perec001,2,0,Double Play. ,jordb001,0,
+,01,3,hollt001,,,,26,24,CX,maddg002,0,0,hollt001 singles. ,hollt001,1,
+,01,3,,hollt001,,grudm001,27,26,FS,maddg002,0,0,hollt001 steals 2B. ,grudm001,1,
+hollt001 to 3B. ,02,3,,,hollt001,,28,30,FSFX,maddg002,1,0,grudm001 grounds out. ,grudm001,1,G
+hollt001 scores. ,00,3,shefg001,,,,29,31,X,maddg002,0,1,shefg001 singles. ,shefg001,1,
+shefg001 scores. ,00,3,,,,,30,32,X,maddg002,0,2,grees001 homers. ,grees001,1,
+,02,3,,,,,31,35,FSC,maddg002,1,0,karre001 strikes out. ,karre001,1,
+,12,3,,,,,32,39,CBFX,maddg002,1,0,,hundt001,1,F
+,22,4,bonib001,,,,33,57,BFFFBX,perec001,0,0,bonib001 singles. ,bonib001,0,
+bonib001 to 2B. ,00,4,peree002,bonib001,,,34,58,X,perec001,0,0,peree002 reaches on error. ,peree002,0,
+bonib001 scores. peree002 to 2B. ,22,4,weisw001,peree002,,,35,63,BFBFX,perec001,0,1,weisw001 singles. ,weisw001,0,
+peree002 to 3B. weisw001 to 2B. ,00,4,,weisw001,peree002,,36,64,X,perec001,1,0,Sacrifice bunt by maddg002.,maddg002,0,
+,10,4,,weisw001,peree002,,37,66,BX,perec001,1,0,,veraq001,0,F
+,32,4,jonea002,weisw001,peree002,,38,72,BBFFBB,perec001,0,0,jonea002 walks. ,jonea002,0,
+jonea002 to 2B. weisw001 out. ,00,4,jonec004,jonea002,peree002,,39,73,X,perec001,1,0,jonec004 reaches on fielder's choice. ,jonec004,0,
+,00,4,,,,,40,40,X,maddg002,1,0,belta001 grounds out. ,belta001,1,G
+,10,4,,,,,41,42,BX,maddg002,1,0,elstk001 grounds out. ,elstk001,1,G
+,01,4,,,,,42,44,SX,maddg002,1,0,,perec001,1,P
+,02,5,,,,,43,76,FFX,perec001,1,0,galaa001 grounds out. ,galaa001,0,G
+,11,5,,,,,44,79,BFX,perec001,1,0,jordb001 grounds out. ,jordb001,0,G
+,00,5,,,,,45,80,X,perec001,1,0,,bonib001,0,F
+,00,5,,,,,47,45,X,maddg002,1,0,hollt001 grounds out. ,hollt001,1,G
+,01,5,grudm001,,,,48,47,CX,maddg002,0,0,grudm001 singles. ,grudm001,1,
+,31,5,grudm001,,,,49,52,BBBCX,maddg002,1,0,,shefg001,1,
+grudm001 to 2B. ,00,5,,grudm001,,grees001,50,53,B,maddg002,0,0,Passed Ball. ,grees001,1,
+grudm001 scores. ,21,5,grees001,,,,51,57,BCBX,maddg002,0,1,grees001 singles. ,grees001,1,
+,12,5,grees001,,,,52,61,CBFX,maddg002,1,0,,karre001,1,
+,02,6,,,,,53,83,CSX,perec001,1,0,,peree002,0,P
+,32,6,,,,,54,89,BBCBCX,perec001,1,0,,furcr001,0,F
+,00,6,,,,,55,90,X,perec001,1,0,,maddg002,0,F
+,32,6,,,,,57,67,BBCBFX,maddg002,1,0,,hundt001,1,F
+,01,6,,,,,58,69,CX,maddg002,1,0,belta001 grounds out. ,belta001,1,G
+,01,6,,,,,59,71,CX,maddg002,1,0,elstk001 grounds out. ,elstk001,1,G
+,21,7,,,,,61,94,BCBX,perec001,1,0,,veraq001,0,F
+,12,7,,,,,62,98,FBSX,perec001,1,0,jonea002 grounds out. ,jonea002,0,G
+,32,7,,,,,63,105,BCBFBFX,perec001,1,0,,jonec004,0,F
+,01,7,,,,,65,73,FX,maddg002,1,0,hansd001 grounds out. ,hansd001,1,G
+,11,7,,,,,66,76,BCX,maddg002,0,1,hollt001 homers. ,hollt001,1,
+,00,7,,,,,67,77,X,maddg002,1,0,grudm001 grounds out. ,grudm001,1,G
+,12,7,,,,,68,81,SBFX,maddg002,1,0,,shefg001,1,L
+,22,8,galaa001,,,,70,6,BBFSFH,fettm001,0,0,galaa001 hit by pitch. ,galaa001,0,
+,11,8,,,,,71,9,FBX,fettm001,2,0,Double Play. ,jordb001,0,
+,12,8,,,,,72,13,SBSS,fettm001,1,0,bonib001 strikes out. ,bonib001,0,
+,11,8,grees001,,,,73,84,BSX,maddg002,0,0,grees001 singles. ,grees001,1,
+,12,8,grees001,,,,74,88,BFFS,maddg002,1,0,karre001 strikes out. ,karre001,1,
+,00,8,grees001,,,,75,89,X,maddg002,1,0,,hundt001,1,F
+,11,8,,grees001,,belta001,76,92,BCB,maddg002,0,0,grees001 steals 2B. ,belta001,1,
+,21,8,,grees001,,,77,96,BCBX,maddg002,1,0,belta001 grounds out. ,belta001,1,G
+,01,9,,,,,79,2,FX,shawj001,1,0,lopej001 grounds out. ,lopej001,0,G
+,12,9,,,,,80,6,BCFX,shawj001,1,0,furcr001 grounds out. ,furcr001,0,G
+,22,9,,,,,82,11,BCBSX,shawj001,1,0,joynw001 grounds out. ,joynw001,0,G

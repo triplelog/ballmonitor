@@ -1,0 +1,147 @@
+version,2
+info,visteam,PIT
+info,hometeam,FLO
+info,site,MIA01
+info,date,2000/04/19
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,davig901
+info,ump1b,joycj901
+info,ump2b,riekr901
+info,ump3b,emmep901
+info,pitches,pitches
+info,temp,78
+info,winddir,torf
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,177
+info,attendance,10911
+info,wp,ritct001
+info,lp,ferna001
+info,save,
+start,kendj001,"Jason Kendall",0,1,2
+start,mearp001,"Pat Meares",0,2,6
+start,gileb002,"Brian Giles",0,3,9
+start,younk001,"Kevin Young",0,4,3
+start,cordw001,"Wil Cordero",0,5,7
+start,morrw001,"Warren Morris",0,6,4
+start,ramia001,"Aramis Ramirez",0,7,5
+start,hermc001,"Chad Hermansen",0,8,8
+start,ritct001,"Todd Ritchie",0,9,1
+start,kotsm001,"Mark Kotsay",1,1,9
+start,gonza002,"Alex Gonzalez",1,2,6
+start,floyc001,"Cliff Floyd",1,3,7
+start,wilsp002,"Preston Wilson",1,4,8
+start,lowem001,"Mike Lowell",1,5,5
+start,millk005,"Kevin Millar",1,6,3
+start,clapc001,"Chris Clapinski",1,7,4
+start,redmm001,"Mike Redmond",1,8,2
+start,ferna001,"Alex Fernandez",1,9,1
+play,1,0,kendj001,12,CFBX,53/G
+play,1,0,mearp001,01,CX,8/F8D
+play,1,0,gileb002,10,BX,43/G
+play,1,1,kotsm001,32,BCFBBX,31/G
+play,1,1,gonza002,11,BCX,D7/7D
+play,1,1,floyc001,22,CBBFX,43/G.2-3
+play,1,1,wilsp002,32,BFFBFBS,K
+play,2,0,younk001,21,BBCX,7/F7
+play,2,0,cordw001,01,FX,9/F9
+play,2,0,morrw001,32,BBCFFBB,W
+play,2,0,ramia001,32,BFFBFBX,8/F8
+play,2,1,lowem001,31,BBFBX,D7
+play,2,1,millk005,12,SBFX,43/G.2-3
+play,2,1,clapc001,12,FBFC,K/C
+play,2,1,redmm001,11,BFX,43/G
+play,3,0,hermc001,22,CFBBX,S9/9S
+play,3,0,ritct001,02,CCFX,S8/8S.1-2
+play,3,0,kendj001,31,CBBBB,W.2-3;1-2
+play,3,0,mearp001,32,CBBSBX,2/FL
+play,3,0,gileb002,11,BFX,54(1)/FO.3-H;2-3
+play,3,0,younk001,10,BX,D9.3-H;1-H
+play,3,0,cordw001,32,CBFBBX,63/G
+play,3,1,ferna001,01,CX,6/P6
+play,3,1,kotsm001,01,SX,S9/9S
+play,3,1,gonza002,32,BBFFBFX,13/G.1-2
+play,3,1,floyc001,32,CSBBBC,K/C
+play,4,0,morrw001,22,BBCFX,43/G
+play,4,0,ramia001,00,X,9/F9
+play,4,0,hermc001,12,CFBC,K/C
+play,4,1,wilsp002,01,SX,S7
+play,4,1,lowem001,01,CX,7/F7
+play,4,1,millk005,12,CBSX,54(1)/FO
+play,4,1,clapc001,32,BBFBFX,S9/9S.1-3
+play,4,1,redmm001,00,X,S7.3-H;1-2
+play,4,1,ferna001,32,FBBBSS,K
+play,5,0,ritct001,02,CFX,9/F9
+play,5,0,kendj001,22,CFBBX,S7
+play,5,0,mearp001,01,FX,8/F8
+play,5,0,gileb002,00,C,SB2
+play,5,0,gileb002,32,CBBBFFS,K
+play,5,1,kotsm001,12,CBFX,63/G
+play,5,1,gonza002,02,FCX,S8.BX2(84)
+play,5,1,floyc001,12,BFCX,S9/9S
+play,5,1,wilsp002,32,FBBBSB,W.1-2
+play,5,1,lowem001,10,BX,54(1)/FO.2-3
+play,6,0,younk001,32,BBSFBX,43/G
+play,6,0,cordw001,32,CBBBFX,9/F9
+play,6,0,morrw001,30,BBBB,W
+play,6,0,ramia001,11,CBX,64(1)/FO
+play,6,1,millk005,21,CBBX,53/G
+play,6,1,clapc001,31,BBBCX,3/G
+play,6,1,redmm001,12,CFFBX,3/G
+play,7,0,hermc001,22,FBCBX,S8
+play,7,0,ritct001,10,BX,34/SH.1-2
+play,7,0,kendj001,31,BFBBB,W
+play,7,0,mearp001,21,BFBX,S8.2-H;1-3;B-2(TH)
+play,7,0,gileb002,00,,NP
+sub,almaa001,"Armando Almanza",1,9,1
+play,7,0,gileb002,12,FBCS,K
+play,7,0,younk001,00,,NP
+sub,boner001,"Ricky Bones",1,9,1
+play,7,0,younk001,12,FCBX,4/P4
+play,7,1,boner001,00,,NP
+sub,browb003,"Brant Brown",1,9,11
+play,7,1,browb003,11,BSX,4/P4
+play,7,1,kotsm001,12,CFBX,43/G
+play,7,1,gonza002,11,BSX,9/F9
+play,8,0,cordw001,00,,NP
+sub,loopb001,"Braden Looper",1,9,1
+play,8,0,cordw001,21,CBBX,53/G
+play,8,0,morrw001,31,LBBBB,W
+play,8,0,ramia001,00,X,53/G.1-2
+play,8,0,hermc001,02,FFX,63/G
+play,8,1,floyc001,00,,NP
+sub,chrij002,"Jason Christiansen",0,9,1
+play,8,1,floyc001,32,SBSFBBC,K/C
+play,8,1,wilsp002,12,BSFC,K/C
+play,8,1,lowem001,22,BFFBFX,5/FL
+play,9,0,chrij002,00,,NP
+sub,vandj001,"John Vander Wal",0,9,11
+play,9,0,vandj001,00,X,S
+play,9,0,kendj001,32,FFBBBFX,S.1-2
+play,9,0,mearp001,02,CCX,16(1)/FO.2-H(E6/TH)
+play,9,0,gileb002,10,BX,46(1)/FO
+play,9,0,younk001,22,FSBFBX,54(1)/FO
+play,9,1,millk005,00,,NP
+sub,willm005,"Mike Williams",0,9,1
+play,9,1,millk005,22,BBCFS,K
+play,9,1,clapc001,00,,NP
+sub,lee-d002,"Derrek Lee",1,7,11
+play,9,1,lee-d002,31,BBBCB,W
+play,9,1,redmm001,00,,NP
+sub,bautd001,"Danny Bautista",1,8,11
+play,9,1,bautd001,22,CSBBX,64(1)/FO
+play,9,1,loopb001,00,,NP
+sub,smitm004,"Mark Smith",1,9,11
+play,9,1,smitm004,02,FFS,K
+data,er,ritct001,1
+data,er,chrij002,0
+data,er,willm005,0
+data,er,ferna001,4
+data,er,almaa001,0
+data,er,boner001,0
+data,er,loopb001,1

@@ -1,0 +1,153 @@
+version,2
+info,visteam,BAL
+info,hometeam,PHI
+info,site,PHI12
+info,date,2000/07/09
+info,number,0
+info,starttime,1:35PM
+info,daynight,day
+info,usedh,false
+info,umphome,everm901
+info,ump1b,dimum901
+info,ump2b,gormb901
+info,ump3b,higgs901
+info,pitches,pitches
+info,temp,85
+info,winddir,tocf
+info,windspeed,15
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,181
+info,attendance,28100
+info,wp,milla001
+info,lp,branj001
+info,save,timlm001
+start,andeb001,"Brady Anderson",0,1,8
+start,bordm001,"Mike Bordick",0,2,6
+start,clarw001,"Will Clark",0,3,3
+start,bellj002,"Albert Belle",0,4,9
+start,surhb001,"B.J. Surhoff",0,5,7
+start,conij001,"Jeff Conine",0,6,5
+start,myerg001,"Greg Myers",0,7,2
+start,lewim001,"Mark Lewis",0,8,4
+start,erics001,"Scott Erickson",0,9,1
+start,gland001,"Doug Glanville",1,1,8
+start,gantr001,"Ron Gant",1,2,7
+start,abreb001,"Bobby Abreu",1,3,9
+start,roles001,"Scott Rolen",1,4,5
+start,liebm001,"Mike Lieberthal",1,5,2
+start,burrp001,"Pat Burrell",1,6,3
+start,jordk001,"Kevin Jordan",1,7,4
+start,relad001,"Desi Relaford",1,8,6
+start,coggd001,"Dave Coggin",1,9,1
+play,1,0,andeb001,01,CX,43/G
+play,1,0,bordm001,12,CCBFX,63/G
+play,1,0,clarw001,21,BCBX,8/F8
+play,1,1,gland001,01,CX,3/FL
+play,1,1,gantr001,20,BBX,E5/TH
+play,1,1,abreb001,00,B,OA.1X2(24)#
+play,1,1,abreb001,21,BFBX,T/89D
+play,1,1,roles001,31,BBBCB,W
+play,1,1,liebm001,20,BBX,D7/7S.3-H;1-H
+play,1,1,burrp001,12,CFBS,K
+play,2,0,bellj002,02,FCFFX,43/G
+play,2,0,surhb001,32,CBBBSB,W
+play,2,0,conij001,10,BX,64(1)3/GDP
+play,2,1,jordk001,20,BBX,43/G
+play,2,1,relad001,00,X,S7/7S
+play,2,1,coggd001,02,LSS,K
+play,2,1,gland001,00,X,S8.1-2
+play,2,1,gantr001,12,BFCX,63/G
+play,3,0,myerg001,32,SBFBBS,K
+play,3,0,lewim001,21,CBBX,D7
+play,3,0,erics001,12,CBSX,D9/9S.2-H
+play,3,0,andeb001,12,CBFX,43/G.2-3
+play,3,0,bordm001,20,BBX,S8/8S.3-H
+play,3,0,clarw001,21,BBCX,S9/9S.1-3
+play,3,0,bellj002,22,SBBFX,8/F8
+play,3,1,abreb001,22,CCBBFX,S8
+play,3,1,roles001,01,SX,S9/9S.1-3
+play,3,1,liebm001,00,X,53/G.3-H;1-2
+play,3,1,burrp001,00,X,9/F9.2-3
+play,3,1,jordk001,22,BFSBX,9/F9S
+play,4,0,surhb001,21,BFBX,E3/G
+play,4,0,conij001,32,BFBFBS,K+SB2
+play,4,0,myerg001,32,BBSFBX,S9.2-H(UR)
+play,4,0,lewim001,20,BBX,9/F9
+play,4,0,erics001,21,BSBX,6(1)/FO/G
+play,4,1,relad001,32,BBCCBC,K/C
+play,4,1,coggd001,21,BBCX,9/F9S
+play,4,1,gland001,11,CBX,6/P6
+play,5,0,andeb001,22,BBCSS,K
+play,5,0,bordm001,32,BSFBBX,S9
+play,5,0,clarw001,12,CBSX,8/F8
+play,5,0,bellj002,01,SX,D9.1-3
+play,5,0,surhb001,01,CX,9/F9
+play,5,1,gantr001,31,BBCBX,53/G
+play,5,1,abreb001,22,CBFBX,43/G
+play,5,1,roles001,01,FX,53/G
+play,6,0,conij001,00,X,4/P4
+play,6,0,myerg001,00,X,8/F8D
+play,6,0,lewim001,12,CCBC,K/C
+play,6,1,liebm001,01,FX,D7
+play,6,1,burrp001,22,BCFBB,SB3
+play,6,1,burrp001,32,BCFBBB,W
+play,6,1,jordk001,00,X,64(1)3/GDP.3-H
+play,6,1,relad001,32,FBBFBFX,S7
+play,6,1,coggd001,00,,NP
+sub,sefck001,"Kevin Sefcik",1,9,11
+play,6,1,sefck001,00,X,7/F7
+play,7,0,erics001,00,,NP
+sub,deshd001,"Delino DeShields",0,9,11
+play,7,0,deshd001,00,,NP
+sub,wardb001,"Bryan Ward",1,9,1
+play,7,0,deshd001,00,X,43/G
+play,7,0,andeb001,01,SX,5/FL
+play,7,0,bordm001,32,BCBBCFFFFX,S8
+play,7,0,clarw001,00,X,S9.1-3
+play,7,0,bellj002,00,,NP
+sub,brocc001,"Chris Brock",1,9,1
+play,7,0,bellj002,31,BBBFX,8/F8D
+play,7,1,gland001,00,,NP
+sub,milla001,"Alan Mills",0,9,1
+play,7,1,gland001,32,BBBCCB,W
+play,7,1,gantr001,32,BSCFBBS,K+SB2
+play,7,1,abreb001,30,IIII,IW
+play,7,1,roles001,12,BCFFX,8/F8S
+play,7,1,liebm001,32,BSBSBX,4/P4
+play,8,0,surhb001,01,FX,8/F8D
+play,8,0,conij001,02,CCS,K
+play,8,0,myerg001,02,CSX,S8
+play,8,0,lewim001,11,CBX,9/F9
+play,8,1,burrp001,12,BCSS,K
+play,8,1,jordk001,11,BSX,43/G
+play,8,1,relad001,10,BX,3/BG
+play,9,0,milla001,00,,NP
+sub,huntb001,"Brian R. Hunter",1,9,3
+play,9,0,milla001,00,,NP
+sub,bainh001,"Harold Baines",0,9,11
+play,9,0,bainh001,00,,NP
+sub,branj001,"Jeff Brantley",1,6,1
+play,9,0,bainh001,00,X,S9/9S
+play,9,0,andeb001,00,,NP
+sub,matol001,"Luis Matos",0,9,12
+play,9,0,andeb001,31,BBFBB,W.1-2
+play,9,0,bordm001,01,CX,54/SH.2-3;1-2
+play,9,0,clarw001,00,X,S8.3-H;2-H;B-2(THH)
+play,9,0,bellj002,21,BCBX,4/P4
+play,9,0,surhb001,20,BBX,2/FL
+play,9,1,huntb001,00,,NP
+sub,matol001,"Luis Matos",0,9,9
+play,9,1,huntb001,00,,NP
+sub,timlm001,"Mike Timlin",0,4,1
+play,9,1,huntb001,01,SX,2/FL
+play,9,1,gland001,22,BCBSFFS,K
+play,9,1,gantr001,02,CSS,K
+data,er,erics001,4
+data,er,milla001,0
+data,er,timlm001,0
+data,er,coggd001,2
+data,er,wardb001,0
+data,er,brocc001,0
+data,er,branj001,2

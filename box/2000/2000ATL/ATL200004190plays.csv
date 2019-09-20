@@ -1,0 +1,79 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,32,1,gland001,,,,0,8,CBFBFFBB,glavt001,0,0,gland001 walks. ,gland001,0,
+,22,1,,gland001,,gantr001,1,13,BCCBB,glavt001,0,0,gland001 steals 2B. ,gantr001,0,
+gland001 to 3B. ,32,1,gantr001,,gland001,,2,19,BCCBBX,glavt001,0,0,gantr001 singles. ,gantr001,0,
+gantr001 to 2B. ,02,1,,gantr001,gland001,,3,22,CSX,glavt001,1,0,abreb001 grounds out. ,abreb001,0,G
+,30,1,roles001,gantr001,gland001,,4,26,IIII,glavt001,0,0,roles001 intentionally walks. ,roles001,0,
+gland001 scores. gantr001 to 3B. roles001 out. ,01,1,brogr001,,gantr001,,5,28,FX,glavt001,1,1,brogr001 reaches on fielder's choice. ,brogr001,0,
+brogr001 to 2B. ,31,1,liebm001,brogr001,gantr001,,6,33,BFBBB,glavt001,0,0,liebm001 walks. ,liebm001,0,
+,32,1,liebm001,brogr001,gantr001,,7,39,BFBBFS,glavt001,1,0,moram001 strikes out. ,moram001,0,
+,22,1,veraq001,,,,8,5,BCFBX,wolfr001,0,0,veraq001 singles. ,veraq001,1,
+,22,1,,,,,9,10,CBCBX,wolfr001,2,0,Double Play. ,jonea002,1,
+,22,1,,,,,10,16,BFSBFX,wolfr001,1,0,jonec004 grounds out. ,jonec004,1,G
+,22,2,,,,,11,45,BCSBFX,glavt001,1,0,relad001 grounds out. ,relad001,0,G
+,21,2,wolfr001,,,,12,49,BCBX,glavt001,0,0,wolfr001 reaches on error. ,wolfr001,0,G
+wolfr001 to 2B. ,12,2,gland001,wolfr001,,,13,53,BCFX,glavt001,0,0,gland001 singles. ,gland001,0,
+,00,2,gland001,wolfr001,,,14,54,X,glavt001,1,0,,gantr001,0,
+,12,2,gland001,wolfr001,,,15,59,BCCFS,glavt001,1,0,abreb001 strikes out. ,abreb001,0,
+,02,2,,,,,16,19,CCS,wolfr001,1,0,jordb001 strikes out. ,jordb001,1,
+,21,2,galaa001,,,,17,23,BBFX,wolfr001,0,0,galaa001 singles. ,galaa001,1,
+,31,2,,,,,18,28,BBBCX,wolfr001,2,0,Double Play. ,lopej001,1,
+,32,3,,,,,19,65,CBFBBX,glavt001,1,0,,roles001,0,P
+,02,3,,,,,20,68,CCC,glavt001,1,0,brogr001 strikes out. ,brogr001,0,
+,01,3,,,,,21,70,FX,glavt001,1,0,liebm001 grounds out. ,liebm001,0,G
+,11,3,,,,,22,31,BSX,wolfr001,1,0,,sandr002,1,F
+,22,3,,,,,23,37,BCBCFS,wolfr001,1,0,weisw001 strikes out. ,weisw001,1,
+,00,3,,,,,24,38,X,wolfr001,1,0,,glavt001,1,L
+,22,4,moram001,,,,25,75,CBFBX,glavt001,0,0,moram001 singles. ,moram001,0,
+moram001 out. ,00,4,relad001,,,,26,76,X,glavt001,1,0,relad001 reaches on fielder's choice. ,relad001,0,
+,12,4,relad001,,,,27,80,BLLL,glavt001,1,0,wolfr001 strikes out. ,wolfr001,0,F
+,21,4,relad001,,,,28,84,BBCX,glavt001,1,0,,gland001,0,L
+,32,4,,,,,29,45,BBBCCFX,wolfr001,1,0,,veraq001,1,P
+,31,4,jonea002,,,,30,50,BCBBB,wolfr001,0,0,jonea002 walks. ,jonea002,1,
+,22,4,jonea002,,,,31,55,BFCBX,wolfr001,1,0,,jonec004,1,P
+jonea002 to 2B. ,31,4,jordb001,jonea002,,,32,60,FBBBB,wolfr001,0,0,jordb001 walks. ,jordb001,1,
+jonea002 scores. jordb001 to 2B. ,00,4,galaa001,jordb001,,,33,61,X,wolfr001,0,1,galaa001 singles. ,galaa001,1,
+,00,4,galaa001,jordb001,,,34,62,X,wolfr001,1,0,,lopej001,1,P
+,22,5,,,,,35,89,CBBFX,glavt001,1,0,,gantr001,0,L
+,00,5,,,,,36,90,X,glavt001,1,0,abreb001 grounds out. ,abreb001,0,G
+,32,5,roles001,,,,37,96,BBBCFB,glavt001,0,0,roles001 walks. ,roles001,0,
+,00,5,roles001,,,,38,97,X,glavt001,1,0,,brogr001,0,F
+,22,5,,,,,39,67,CBBFX,wolfr001,1,0,,sandr002,1,L
+,32,5,,,,,40,73,BBCFBX,wolfr001,1,0,,weisw001,1,
+,22,5,glavt001,,,,41,78,CBFBX,wolfr001,0,0,glavt001 singles. ,glavt001,1,
+,32,5,glavt001,,,,42,84,BBCBFX,wolfr001,1,0,,veraq001,1,F
+,21,6,liebm001,,,,43,101,CBBX,glavt001,0,0,liebm001 singles. ,liebm001,0,
+,00,6,,,,,44,102,X,glavt001,2,0,Double Play. ,moram001,0,
+,32,6,relad001,,,,45,108,BBCBSB,glavt001,0,0,relad001 walks. ,relad001,0,
+,12,6,relad001,,,,46,112,CCBX,glavt001,1,0,,wolfr001,0,F
+,10,6,jonea002,,,,47,86,BX,wolfr001,0,0,jonea002 singles. ,jonea002,1,
+jonea002 to 2B. ,00,6,,jonea002,,,48,87,X,wolfr001,1,0,,jonec004,1,F
+,12,6,jordb001,jonea002,,,49,92,SBFFH,wolfr001,0,0,jordb001 hit by pitch. ,jordb001,1,
+jonea002 to 3B. jordb001 to 2B. ,01,6,galaa001,jordb001,jonea002,,50,94,FH,wolfr001,0,0,galaa001 hit by pitch. ,galaa001,1,
+jonea002 scores. jordb001 scores. galaa001 to 2B. ,01,6,lopej001,galaa001,,,51,96,CX,wolfr001,0,2,lopej001 singles. ,lopej001,1,
+galaa001 to 3B. lopej001 out. ,22,6,sandr002,,galaa001,,52,101,BFSBX,wolfr001,1,0,sandr002 reaches on fielder's choice. ,sandr002,1,
+,12,6,sandr002,,galaa001,,53,106,BSFFX,wolfr001,1,0,weisw001 grounds out. ,weisw001,1,G
+,01,7,,,,,54,114,CX,glavt001,1,0,,gland001,0,F
+,22,7,,,,,55,119,FBFBX,glavt001,1,0,,gantr001,0,
+,01,7,,,,,56,121,CX,glavt001,1,0,abreb001 grounds out. ,abreb001,0,G
+,22,7,,,,,58,112,BCBFFX,wolfr001,1,0,,hubbt001,1,L
+,31,7,,,,,59,117,BBFBX,wolfr001,1,0,,veraq001,1,F
+,20,7,,,,,60,120,BBX,wolfr001,0,1,jonea002 homers. ,jonea002,1,
+,00,7,,,,,61,121,X,wolfr001,1,0,,jonec004,1,P
+,22,8,,,,,63,6,CBBCFX,remlm001,1,0,,roles001,0,L
+,10,8,,,,,64,8,BX,remlm001,1,0,brogr001 grounds out. ,brogr001,0,G
+,32,8,liebm001,,,,65,14,BSFBBB,remlm001,0,0,liebm001 walks. ,liebm001,0,
+,02,8,liebm001,,,,67,17,FFX,remlm001,1,0,jordk001 grounds out. ,jordk001,0,G
+jordb001 to 2B. ,21,8,,jordb001,,,70,4,BCBX,schrs001,0,0,jordb001 singles. ,jordb001,1,
+jordb001 scores. galaa001 to 2B. ,32,8,,galaa001,,,71,11,BBSBFFX,schrs001,0,1,galaa001 singles. ,galaa001,1,
+furcr001 scores. ,10,8,,,,,73,13,BX,schrs001,0,2,lopej001 homers. ,lopej001,1,
+,32,8,sandr002,,,,75,7,CFBBBFB,millt002,0,0,sandr002 walks. ,sandr002,1,
+sandr002 scores. ,11,8,,bonib001,,,77,10,CBX,millt002,0,1,bonib001 doubles. ,bonib001,1,
+bonib001 scores. ,01,8,joynw001,,,,79,12,FX,millt002,0,1,joynw001 singles. ,joynw001,1,
+joynw001 to 2B. ,32,8,veraq001,joynw001,,,80,18,BFCBBB,millt002,0,0,veraq001 walks. ,veraq001,1,
+joynw001 to 3B. ,00,8,veraq001,,joynw001,,81,19,X,millt002,1,0,,jonea002,1,F
+joynw001 scores. veraq001 to 2B. ,11,8,,veraq001,,,82,22,CBX,millt002,1,1,jonec004 grounds out. ,jonec004,1,G
+,01,8,,veraq001,,,83,24,SX,millt002,1,0,,jordb001,1,F
+,21,9,,,,,87,4,BCBX,mcmig001,1,0,relad001 grounds out. ,relad001,0,G
+,31,9,,,,,89,9,BBBCX,mcmig001,1,0,duceb001 grounds out. ,duceb001,0,G
+,12,9,,,,,90,13,CBFS,mcmig001,1,0,gland001 strikes out. ,gland001,0,

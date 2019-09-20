@@ -1,0 +1,132 @@
+version,2
+info,visteam,NYA
+info,hometeam,TOR
+info,site,TOR02
+info,date,2000/04/21
+info,number,0
+info,starttime,4:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,millb901
+info,ump1b,rungb901
+info,ump2b,shulj901
+info,ump3b,rapue901
+info,pitches,pitches
+info,temp,72
+info,winddir,torf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,140
+info,attendance,25921
+info,wp,carpc002
+info,lp,mendr001
+info,save,
+start,knobc001,"Chuck Knoblauch",0,1,4
+start,jeted001,"Derek Jeter",0,2,6
+start,oneip001,"Paul O'Neill",0,3,9
+start,willb002,"Bernie Williams",0,4,8
+start,martt002,"Tino Martinez",0,5,3
+start,leder001,"Ricky Ledee",0,6,7
+start,posaj001,"Jorge Posada",0,7,2
+start,spens001,"Shane Spencer",0,8,10
+start,bellc001,"Clay Bellinger",0,9,5
+start,mendr001,"Ramiro Mendoza",0,0,1
+start,cruzj004,"Jose Cruz",1,1,8
+start,bushh001,"Homer Bush",1,2,4
+start,mondr002,"Raul Mondesi",1,3,9
+start,delgc001,"Carlos Delgado",1,4,3
+start,fullb001,"Brad Fullmer",1,5,10
+start,batit001,"Tony Batista",1,6,5
+start,fletd001,"Darrin Fletcher",1,7,2
+start,cordm001,"Marty Cordova",1,8,7
+start,gonza001,"Alex S. Gonzalez",1,9,6
+start,carpc002,"Chris Carpenter",1,0,1
+play,1,0,knobc001,02,CCFX,S7/7S
+play,1,0,jeted001,00,X,16(1)3/GDP
+play,1,0,oneip001,22,FCBBS,K
+play,1,1,cruzj004,00,X,8/F8
+play,1,1,bushh001,01,CX,S
+play,1,1,mondr002,11,FBX,T7.1-H
+play,1,1,delgc001,02,CCFX,S7.3-H
+play,1,1,fullb001,11,CBX,S9/9S.1-2
+play,1,1,batit001,11,CBX,5(2)3/GDP
+play,2,0,willb002,00,X,43/G
+play,2,0,martt002,10,BX,43/G
+play,2,0,leder001,32,CBBBFX,63/G
+play,2,1,fletd001,02,CCX,7/F7
+play,2,1,cordm001,00,X,7/F7
+play,2,1,gonza001,21,BCBX,9/F9
+play,3,0,posaj001,02,CSX,8/F8D
+play,3,0,spens001,00,X,63/G
+play,3,0,bellc001,02,CFS,K
+play,3,1,cruzj004,22,BBFFX,6/L6
+play,3,1,bushh001,02,CFX,4/P4
+play,3,1,mondr002,22,CSBBX,6/P6
+play,4,0,knobc001,01,CX,43/G
+play,4,0,jeted001,10,BX,53/G
+play,4,0,oneip001,10,BX,63/G
+play,4,1,delgc001,31,BBSBX,HR/78
+play,4,1,fullb001,12,CFFBH,HP
+play,4,1,batit001,00,X,7/F7D
+play,4,1,fletd001,22,BCBFX,5/FL
+play,4,1,cordm001,00,H,HP.1-2
+play,4,1,gonza001,22,SBBSX,D7.2-H;1-H
+play,4,1,cruzj004,00,X,D8/8D.2-H
+play,4,1,bushh001,02,FSS,K
+play,5,0,willb002,21,BFBX,43/G
+play,5,0,martt002,00,H,HP
+play,5,0,leder001,12,FBFC,K/C
+play,5,0,posaj001,31,BFBBX,3/G
+play,5,1,mondr002,00,,NP
+sub,erdot001,"Todd Erdos",0,0,1
+play,5,1,mondr002,00,X,S
+play,5,1,delgc001,00,H,HP.1-2
+play,5,1,fullb001,00,X,8/F8D.2-3
+play,5,1,batit001,12,BFFX,3/FL
+play,5,1,fletd001,11,BFX,S8.3-H;1-2
+play,5,1,cordm001,12,SBFX,64(1)/FO.2-3
+play,6,0,spens001,01,FX,S7
+play,6,0,bellc001,01,CX,S7.1-2
+play,6,0,knobc001,00,X,8/L8
+play,6,0,jeted001,00,H,HP.2-3;1-2
+play,6,0,oneip001,00,X,S8/8S.3-H;2-H;1-2
+play,6,0,willb002,22,CBFBX,64(1)/FO.2-3
+play,6,0,martt002,00,C,CS2(26)
+play,6,1,gonza001,11,BFX,43/G
+play,6,1,cruzj004,00,X,5/FL
+play,6,1,bushh001,10,BX,D9
+play,6,1,mondr002,32,SSBBBS,K
+play,7,0,martt002,00,X,3/G
+play,7,0,leder001,00,X,43/G
+play,7,0,posaj001,21,BCBX,8/F8
+play,7,1,delgc001,00,,NP
+sub,stanm003,"Mike Stanton",0,0,1
+play,7,1,delgc001,02,CFFX,43/G
+play,7,1,fullb001,02,CCX,D7
+play,7,1,batit001,22,CBFBX,53/G
+play,7,1,fletd001,12,BSCFFX,43/G
+play,8,0,spens001,31,CBBBX,63/G
+play,8,0,bellc001,00,X,9/F9S
+play,8,0,knobc001,11,BCX,9/F9D
+play,8,1,cordm001,00,,NP
+sub,eined001,"Darrell Einertson",0,0,1
+play,8,1,cordm001,32,SBBBFB,W
+play,8,1,gonza001,00,X,S7/7S.1-2
+play,8,1,cruzj004,31,BBCBB,W.2-3;1-2
+play,8,1,bushh001,02,SFX,62(3)/FO.2-3;1-2
+play,8,1,mondr002,00,X,8/SF.3-H
+play,8,1,delgc001,00,,NP
+sub,watsa001,"Allen Watson",0,0,1
+play,8,1,delgc001,22,BBCFX,7/L7
+play,9,0,jeted001,11,SBX,D9/9D
+play,9,0,oneip001,11,CBX,43/G.2-3
+play,9,0,willb002,21,BFBX,1/G.3-H
+play,9,0,martt002,21,CBBX,43/G
+data,er,mendr001,6
+data,er,erdot001,1
+data,er,stanm003,0
+data,er,eined001,1
+data,er,watsa001,0
+data,er,carpc002,3

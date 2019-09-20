@@ -1,0 +1,89 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,02,1,,,,,0,3,CFC,bottk001,1,0,browa001 strikes out. ,browa001,0,
+,12,1,,,,,1,7,BCCX,bottk001,1,0,wehnj001 grounds out. ,wehnj001,0,G
+,02,1,kendj001,,,,2,10,CSX,bottk001,0,0,kendj001 singles. ,kendj001,0,
+,21,1,,kendj001,,vandj001,3,14,BCBB,bottk001,0,0,kendj001 steals 2B. ,vandj001,0,
+,32,1,vandj001,kendj001,,,4,20,BCBBCB,bottk001,0,0,vandj001 walks. ,vandj001,0,
+,12,1,vandj001,kendj001,,,5,25,CFBFX,bottk001,1,0,,younk001,0,F
+,22,1,,,,,6,5,BCBCX,ritct001,1,0,rollj001 grounds out. ,rollj001,1,G
+,21,1,gland001,,,,7,9,BCBX,ritct001,0,0,gland001 singles. ,gland001,1,
+gland001 to 2B. ,31,1,abreb001,gland001,,,8,14,CBBBX,ritct001,0,0,abreb001 singles. ,abreb001,1,
+gland001 scores. abreb001 scores. ,21,1,,,,,9,18,BFBX,ritct001,0,3,roles001 homers. ,roles001,1,
+,32,1,,,,,10,26,BFBBCFFS,ritct001,1,0,burrp001 strikes out. ,burrp001,1,
+,21,1,lee-t002,,,,11,30,BBFX,ritct001,0,0,lee-t002 singles. ,lee-t002,1,
+lee-t002 to 3B. ,11,1,andem003,,lee-t002,,12,33,CBX,ritct001,0,0,andem003 singles. ,andem003,1,
+,02,1,andem003,,lee-t002,,13,36,CSX,ritct001,1,0,,print001,1,F
+,21,2,,,,,15,4,BFBX,polic001,1,0,morrw001 grounds out. ,morrw001,0,G
+,21,2,browe001,,,,16,8,SBBX,polic001,0,0,browe001 singles. ,browe001,0,
+,01,2,,,,,17,10,SX,polic001,2,0,Double Play. ,mearp001,0,
+,21,2,,,,,18,40,BBCX,ritct001,1,0,polic001 grounds out. ,polic001,1,G
+,10,2,rollj001,,,,19,42,BX,ritct001,0,0,rollj001 singles. ,rollj001,1,
+,31,2,rollj001,,,,20,47,BBFBX,ritct001,1,0,,gland001,1,F
+rollj001 to 2B. ,21,2,,rollj001,,abreb001,21,51,BCBB,ritct001,0,0,Wild Pitch. ,abreb001,1,
+,31,2,abreb001,rollj001,,,22,56,BCBBB,ritct001,0,0,abreb001 walks. ,abreb001,1,
+,00,2,abreb001,rollj001,,,23,57,X,ritct001,1,0,roles001 grounds out. ,roles001,1,G
+,12,3,,,,,24,14,BFSC,polic001,1,0,ritct001 strikes out. ,ritct001,0,
+,10,3,browa001,,,,25,16,BX,polic001,0,0,browa001 singles. ,browa001,0,
+,01,3,browa001,,,,26,18,CX,polic001,1,0,,wehnj001,0,F
+browa001 to 2B. ,32,3,kendj001,browa001,,,27,24,BBBCFB,polic001,0,0,kendj001 walks. ,kendj001,0,
+browa001 scores. kendj001 to 3B. ,11,3,vandj001,,kendj001,,28,27,CBX,polic001,0,1,vandj001 singles. ,vandj001,0,
+kendj001 scores. vandj001 to 3B. ,10,3,younk001,,vandj001,,29,29,BX,polic001,0,1,younk001 singles. ,younk001,0,
+,00,3,younk001,,vandj001,,30,30,X,polic001,1,0,morrw001 grounds out. ,morrw001,0,G
+,21,3,,,,,31,61,CBBX,ritct001,1,0,burrp001 grounds out. ,burrp001,1,G
+,31,3,lee-t002,,,,32,66,FBBBB,ritct001,0,0,lee-t002 walks. ,lee-t002,1,
+lee-t002 out. ,01,3,andem003,,,,33,68,CX,ritct001,1,0,andem003 reaches on fielder's choice. ,andem003,1,
+,21,3,,andem003,,print001,34,72,FBBS,ritct001,0,0,andem003 steals 2B. ,print001,1,
+,22,3,,andem003,,,35,77,FBBSS,ritct001,1,0,print001 strikes out. ,print001,1,
+,31,4,,,,,36,35,BBFBX,polic001,1,0,,browe001,0,F
+,10,4,mearp001,,,,37,37,BX,polic001,0,0,mearp001 reaches on error. ,mearp001,0,G
+mearp001 to 2B. ,31,4,ritct001,mearp001,,,38,42,BBBCB,polic001,0,0,ritct001 walks. ,ritct001,0,
+mearp001 to 3B. ritct001 out. ,00,4,browa001,,mearp001,,39,43,X,polic001,1,0,browa001 reaches on fielder's choice. ,browa001,0,
+,12,4,browa001,,mearp001,,40,47,BSCX,polic001,1,0,wehnj001 grounds out. ,wehnj001,0,G
+,21,4,,,,,41,81,BBCX,ritct001,1,0,polic001 grounds out. ,polic001,1,G
+,32,4,,,,,42,87,CFBBBX,ritct001,1,0,rollj001 grounds out. ,rollj001,1,G
+,11,4,,,,,43,90,CBX,ritct001,1,0,gland001 grounds out. ,gland001,1,G
+,31,5,,,,,44,52,BBBCX,polic001,1,0,,kendj001,0,L
+,11,5,,,,,45,55,CBX,polic001,1,0,,vandj001,0,F
+,02,5,,,,,46,58,CCX,polic001,1,0,,younk001,0,F
+,00,5,,,abreb001,,47,91,X,ritct001,0,0,abreb001 triples. ,abreb001,1,
+,10,5,,,abreb001,,48,93,BX,ritct001,1,0,,roles001,1,
+,12,5,,,abreb001,,49,97,CBSX,ritct001,1,0,burrp001 grounds out. ,burrp001,1,G
+,00,5,,,abreb001,,50,98,X,ritct001,1,0,lee-t002 grounds out. ,lee-t002,1,G
+,32,6,morrw001,,,,51,65,FCBFBBB,polic001,0,0,morrw001 walks. ,morrw001,0,
+,32,6,,,,,52,71,BFBBFC,polic001,2,0,browe001 strikes out. morrw001 caught stealing. ,browe001,0,
+,12,6,,,,,53,75,CFBX,polic001,1,0,mearp001 grounds out. ,mearp001,0,G
+,22,6,,,,,54,104,CBBFFX,ritct001,1,0,,andem003,1,F
+,22,6,,print001,,,55,116,FCFFFBBFFFFX,ritct001,0,0,print001 doubles. ,print001,1,
+print001 to 3B. ,02,6,,,print001,,57,119,FFX,ritct001,1,0,duceb001 grounds out. ,duceb001,1,G
+print001 scores. ,10,6,rollj001,,,,58,121,BX,ritct001,0,1,rollj001 singles. ,rollj001,1,
+,01,6,rollj001,,,,59,123,CX,ritct001,1,0,gland001 grounds out. ,gland001,1,G
+,00,7,herna001,,,,62,1,X,brocc001,0,0,herna001 singles. ,herna001,0,
+herna001 out. ,20,7,browa001,,,,63,4,BBX,brocc001,1,0,browa001 reaches on fielder's choice. ,browa001,0,
+browa001 to 2B. ,30,7,wehnj001,browa001,,,64,8,BBBB,brocc001,0,0,wehnj001 walks. ,wehnj001,0,
+,12,7,wehnj001,browa001,,,65,12,CCBS,brocc001,1,0,kendj001 strikes out. ,kendj001,0,
+,32,7,wehnj001,browa001,,,66,18,BSBBSC,brocc001,1,0,vandj001 strikes out. ,vandj001,0,
+,02,7,,,,,68,3,CSS,loisr001,1,0,abreb001 strikes out. ,abreb001,1,
+,22,7,,,,,69,9,CBBFFS,loisr001,1,0,roles001 strikes out. ,roles001,1,
+,20,7,,,,,70,12,BBX,loisr001,1,0,burrp001 grounds out. ,burrp001,1,G
+younk001 to 1B. ,22,8,younk001,,,,72,5,BFSBS,padiv001,0,0,younk001 strikes out. Wild Pitch. ,younk001,0,
+younk001 scores. ,20,8,,morrw001,,,73,8,BBX,padiv001,0,1,morrw001 doubles. ,morrw001,0,
+morrw001 to 3B. ,10,8,,browe001,morrw001,,74,10,BX,padiv001,0,0,browe001 doubles. ,browe001,0,
+,32,8,,browe001,morrw001,,75,16,BBBCFS,padiv001,1,0,mearp001 strikes out. ,mearp001,0,
+,30,8,gileb002,browe001,morrw001,,77,20,IIII,padiv001,0,0,gileb002 intentionally walks. ,gileb002,0,
+morrw001 scores. browe001 scores. gileb002 to 3B. ,21,8,,browa001,gileb002,,78,24,FBBX,padiv001,0,2,browa001 doubles. ,browa001,0,
+nunea001 scores. browa001 to 3B. ,21,8,,,browa001,,81,4,BBSX,gomew001,1,1,Sacrifice bunt by wehnj001.,wehnj001,0,
+,00,8,,,browa001,,82,5,X,gomew001,1,0,kendj001 grounds out. ,kendj001,0,G
+,02,8,,lee-t002,,,84,4,CFFX,saues001,0,0,lee-t002 doubles. ,lee-t002,1,
+,31,8,huntb001,lee-t002,,,87,5,BCBBB,manzj001,0,0,huntb001 walks. ,huntb001,1,
+lee-t002 to 3B. huntb001 to 2B. ,00,8,,huntb001,lee-t002,,88,6,X,manzj001,1,0,Sacrifice bunt by print001.,print001,1,
+lee-t002 scores. taylr001 out. jordk001 to 1B. ,01,8,jordk001,,,,91,8,FX,manzj001,1,1,jordk001 hits into a fielder's choice. ,jordk001,1,
+,00,8,jordk001,,,,92,9,X,manzj001,1,0,,rollj001,1,F
+,22,9,,,,,95,6,CFBFBS,jacqt001,1,0,vandj001 strikes out. ,vandj001,0,
+younk001 out. ,32,9,,,,,96,15,BBFBFFFFX,jacqt001,1,0,younk001 singles. ,younk001,0,
+,12,9,ramia002,,,,99,4,FCBX,nickd001,0,0,ramia002 singles. ,ramia002,0,
+,01,9,ramia002,,,,100,6,SX,nickd001,1,0,browe001 grounds out. ,browe001,0,G
+,31,9,gland001,,,,103,5,BBBCB,willm005,0,0,gland001 walks. ,gland001,1,
+,31,9,,gland001,,abreb001,104,10,BBBCS,willm005,0,0,gland001 steals 2B. ,abreb001,1,
+gland001 to 3B. ,32,9,,,gland001,,105,16,BBBCSX,willm005,1,0,abreb001 grounds out. ,abreb001,1,G
+,30,9,,,gland001,,106,20,BBBX,willm005,1,0,roles001 grounds out. ,roles001,1,G
+,21,9,,,gland001,,107,24,FBBX,willm005,1,0,,burrp001,1,L

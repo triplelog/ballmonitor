@@ -1,0 +1,85 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,02,1,,,,,0,4,CFFX,rogek001,1,0,,longt002,0,P
+,10,1,,,,,1,6,BX,rogek001,1,0,,velar001,0,L
+,12,1,,,,,2,10,BCFS,rogek001,1,0,giamj001 strikes out. ,giamj001,0,
+,12,1,,,,,3,4,CCBC,muldm001,1,0,alicl001 strikes out. ,alicl001,1,
+,00,1,greer001,,,,4,5,X,muldm001,0,0,greer001 reaches on Error. ,greer001,1,G
+greer001 to 3B. ,21,1,palmr001,,greer001,,5,9,BBFX,muldm001,0,0,palmr001 singles. ,palmr001,1,
+greer001 scores. ,00,1,palmr001,,,,6,10,X,muldm001,1,1,rodri001 hits sacrifice fly. ,rodri001,1,
+palmr001 to 2B. ,32,1,segud001,palmr001,,,7,17,FFFBBBB,muldm001,0,0,segud001 walks. ,segud001,1,
+palmr001 scores. segud001 to 3B. ,01,1,,curtc001,segud001,,8,19,FX,muldm001,0,1,curtc001 doubles. ,curtc001,1,
+,30,1,kaplg001,curtc001,segud001,,9,23,IIII,muldm001,0,0,kaplg001 intentionally walks. ,kaplg001,1,
+segud001 scores. curtc001 scores. kaplg001 to 2B. ,20,1,lambm001,kaplg001,,,10,26,BBX,muldm001,0,2,lambm001 singles. ,lambm001,1,
+kaplg001 scores. lambm001 scores. ,00,1,,shels001,,,11,27,X,muldm001,0,2,shels001 doubles. ,shels001,1,
+shels001 scores. ,11,1,,alicl001,,,12,30,CBX,muldm001,0,1,alicl001 doubles. ,alicl001,1,
+,01,1,,alicl001,,,13,32,CX,muldm001,1,0,,greer001,1,
+,10,2,,,,,14,12,BX,rogek001,1,0,saeno001 grounds out. ,saeno001,0,G
+,31,2,grieb001,,,,15,17,BBFBB,rogek001,0,0,grieb001 walks. ,grieb001,0,
+,32,2,grieb001,,,,16,25,CBFBBFFX,rogek001,1,0,,jahaj001,0,
+grieb001 to 3B. ,10,2,,tejam001,grieb001,,17,27,BX,rogek001,0,0,tejam001 doubles. ,tejam001,0,
+grieb001 scores. tejam001 scores. ,31,2,giamj002,,,,18,32,BBFBX,rogek001,0,2,giamj002 singles. ,giamj002,0,
+giamj002 to 3B. hernr002 out. ,21,2,,,giamj002,,19,36,BBCX,rogek001,1,0,hernr002 singles. ,hernr002,0,
+,02,2,palmr001,,,,20,35,CCX,muldm001,0,0,palmr001 singles. ,palmr001,1,
+palmr001 to 2B. ,00,2,rodri001,palmr001,,,21,36,X,muldm001,0,0,rodri001 singles. ,rodri001,1,
+palmr001 to 3B. rodri001 to 2B. ,21,2,segud001,rodri001,palmr001,,22,40,BFBX,muldm001,0,0,segud001 singles. ,segud001,1,
+,12,2,segud001,rodri001,palmr001,,23,44,BCFS,muldm001,1,0,curtc001 strikes out. ,curtc001,1,
+,12,2,segud001,,palmr001,,24,48,CBFX,muldm001,2,0,Double Play. ,kaplg001,1,
+,11,3,,longt002,,,25,39,BCX,rogek001,0,0,longt002 doubles. ,longt002,0,
+longt002 to 3B. ,00,3,,,longt002,,26,40,X,rogek001,1,0,velar001 grounds out. ,velar001,0,G
+longt002 scores. ,00,3,giamj001,,,,27,41,X,rogek001,0,1,giamj001 singles. ,giamj001,0,
+giamj001 to 2B. ,02,3,saeno001,giamj001,,,28,44,CFX,rogek001,0,0,saeno001 singles. ,saeno001,0,
+,12,3,saeno001,giamj001,,,29,48,CBFS,rogek001,1,0,grieb001 strikes out. ,grieb001,0,
+giamj001 to 3B. saeno001 out. ,00,3,jahaj001,,giamj001,,30,49,X,rogek001,1,0,jahaj001 reaches on fielder's choice. ,jahaj001,0,
+,22,3,lambm001,,,,31,53,CBCBX,muldm001,0,0,lambm001 singles. ,lambm001,1,
+,22,3,lambm001,,,,32,59,CBFFBC,muldm001,1,0,shels001 strikes out. ,shels001,1,
+lambm001 to 2B. ,00,3,,lambm001,,,33,60,X,muldm001,1,0,alicl001 grounds out. ,alicl001,1,G
+lambm001 to 3B. ,12,3,greer001,,lambm001,,34,65,CSBFX,muldm001,0,0,greer001 singles. ,greer001,1,
+,01,3,greer001,,lambm001,,35,67,FX,muldm001,1,0,palmr001 grounds out. ,palmr001,1,G
+,12,4,,,,,36,53,BFCX,rogek001,1,0,tejam001 grounds out. ,tejam001,0,G
+,32,4,,giamj002,,,37,59,BBBCFX,rogek001,0,0,giamj002 doubles. ,giamj002,0,
+,00,4,,giamj002,,,38,60,X,rogek001,1,0,hernr002 grounds out. ,hernr002,0,G
+,11,4,,giamj002,,,39,63,BCX,rogek001,1,0,,longt002,0,F
+,12,4,,,,,40,71,CFBS,muldm001,1,0,rodri001 strikes out. ,rodri001,1,
+,21,4,,segud001,,,41,75,SBBX,muldm001,0,0,segud001 doubles. ,segud001,1,
+,32,4,,segud001,,,42,81,CBBBSX,muldm001,1,0,curtc001 grounds out. ,curtc001,1,G
+,01,4,,segud001,,,43,83,CX,muldm001,1,0,,kaplg001,1,F
+,11,5,,,,,44,66,BFX,rogek001,1,0,velar001 grounds out. ,velar001,0,G
+,21,5,,,,,45,70,CBBX,rogek001,1,0,giamj001 grounds out. ,giamj001,0,G
+,12,5,,,,,46,74,BFFS,rogek001,1,0,saeno001 strikes out. ,saeno001,0,
+,00,5,,,,,47,84,X,muldm001,1,0,,lambm001,1,F
+,10,5,,,,,48,86,BX,muldm001,1,0,shels001 grounds out. ,shels001,1,G
+,20,5,,,,,49,89,BBX,muldm001,1,0,alicl001 grounds out. ,alicl001,1,G
+,00,6,,,,,50,75,X,rogek001,1,0,,grieb001,0,
+,11,6,jahaj001,,,,51,78,BCX,rogek001,0,0,jahaj001 singles. ,jahaj001,0,
+jahaj001 to 2B. ,32,6,tejam001,jahaj001,,,52,84,SBBFBB,rogek001,0,0,tejam001 walks. ,tejam001,0,
+jahaj001 to 3B. tejam001 to 2B. ,10,6,giamj002,tejam001,jahaj001,,53,86,BX,rogek001,0,0,giamj002 singles. ,giamj002,0,
+,11,6,,tejam001,jahaj001,,54,89,BCX,rogek001,2,0,Double Play. ,hernr002,0,
+,32,6,,,,,55,97,BBCBCFFX,muldm001,1,0,greer001 grounds out. ,greer001,1,G
+,12,6,,,,,56,101,CBSS,muldm001,1,0,palmr001 strikes out. ,palmr001,1,
+,00,6,rodri001,,,,57,102,X,muldm001,0,0,rodri001 singles. ,rodri001,1,
+rodri001 to 2B. ,22,6,segud001,rodri001,,,58,107,CFBBX,muldm001,0,0,segud001 singles. ,segud001,1,
+,32,6,segud001,rodri001,,,59,114,SCBFBBC,muldm001,1,0,curtc001 strikes out. ,curtc001,1,
+,00,7,,,,,60,90,X,rogek001,1,0,,longt002,0,F
+,30,7,velar001,,,,61,94,BBBB,rogek001,0,0,velar001 walks. ,velar001,0,
+,21,7,velar001,,,,62,98,CBBX,rogek001,1,0,,giamj001,0,F
+,01,7,velar001,,,,63,100,CX,rogek001,1,0,,saeno001,0,F
+,21,7,,,,,64,118,BFBX,muldm001,1,0,kaplg001 grounds out. ,kaplg001,1,G
+,10,7,lambm001,,,,65,120,BX,muldm001,0,0,lambm001 singles. ,lambm001,1,
+,22,7,lambm001,,,,66,125,CFBBC,muldm001,1,0,shels001 strikes out. ,shels001,1,
+lambm001 to 2B. ,01,7,alicl001,lambm001,,,67,127,CX,muldm001,0,0,alicl001 singles. ,alicl001,1,
+lambm001 to 3B. alicl001 to 2B. ,32,7,greer001,alicl001,lambm001,,68,134,FFFBBBB,muldm001,0,0,greer001 walks. ,greer001,1,
+lambm001 scores. alicl001 scores. greer001 to 2B. ,10,7,palmr001,greer001,,,70,2,BX,tam-j001,0,2,palmr001 singles. ,palmr001,1,
+palmr001 to 2B. greer001 out. ,22,7,rodri001,palmr001,,,71,7,BBCFX,tam-j001,1,0,rodri001 reaches on fielder's choice. ,rodri001,1,
+,22,8,,,,,72,105,FBCBC,rogek001,1,0,grieb001 strikes out. ,grieb001,0,
+,00,8,,,,,73,106,X,rogek001,1,0,jahaj001 grounds out. ,jahaj001,0,G
+,20,8,,,,,74,109,BBX,rogek001,1,0,tejam001 grounds out. ,tejam001,0,G
+,21,8,,,,,76,4,BCBX,isrij001,1,0,,segud001,1,F
+,10,8,,,,,78,6,BX,isrij001,1,0,,martd002,1,
+,31,8,kaplg001,,,,79,11,BFBBX,isrij001,0,0,kaplg001 singles. ,kaplg001,1,
+,21,8,kaplg001,,,,80,15,BBCX,isrij001,1,0,,lambm001,1,F
+,22,9,,,,,82,114,CBBFX,rogek001,0,1,giamj002 homers. ,giamj002,0,
+,32,9,,,,,84,6,CCBBBC,crabt001,1,0,hernr002 strikes out. ,hernr002,0,
+,21,9,,longt002,,,85,10,BBCX,crabt001,0,0,longt002 doubles. ,longt002,0,
+,32,9,,longt002,,,86,17,CBBBFFX,crabt001,1,0,velar001 grounds out. ,velar001,0,G
+,30,9,giamj001,longt002,,,87,21,BBBB,crabt001,0,0,giamj001 walks. ,giamj001,0,
+,02,9,giamj001,longt002,,,89,3,CSS,zimmj001,1,0,saeno001 strikes out. ,saeno001,0,

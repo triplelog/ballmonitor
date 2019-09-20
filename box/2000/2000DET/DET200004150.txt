@@ -1,0 +1,131 @@
+version,2
+info,visteam,TBA
+info,hometeam,DET
+info,site,DET05
+info,date,2000/04/15
+info,number,0
+info,starttime,5:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,hudsm901
+info,ump1b,welkt901
+info,ump2b,scotd901
+info,ump3b,cedeg901
+info,pitches,pitches
+info,temp,76
+info,winddir,rtol
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,158
+info,attendance,25969
+info,wp,goodd001
+info,lp,weavj002
+info,save,
+start,willg001,"Gerald Williams",0,1,8
+start,martd002,"Dave Martinez",0,2,9
+start,cansj001,"Jose Canseco",0,3,10
+start,mcgrf001,"Fred McGriff",0,4,3
+start,vaugg001,"Greg Vaughn",0,5,7
+start,castv001,"Vinny Castilla",0,6,5
+start,flahj001,"John Flaherty",0,7,2
+start,stock001,"Kevin Stocker",0,8,6
+start,cairm001,"Miguel Cairo",0,9,4
+start,goodd001,"Dwight Gooden",0,0,1
+start,jeffg001,"Gregg Jefferies",1,1,4
+start,fickr001,"Robert Fick",1,2,2
+start,encaj001,"Juan Encarnacion",1,3,8
+start,gonzj002,"Juan Gonzalez",1,4,10
+start,higgb001,"Bobby Higginson",1,5,7
+start,palmd002,"Dean Palmer",1,6,5
+start,clart002,"Tony Clark",1,7,3
+start,garck002,"Karim Garcia",1,8,9
+start,cruzd001,"Deivi Cruz",1,9,6
+start,weavj002,"Jeff Weaver",1,0,1
+play,1,0,willg001,02,SCX,43/G
+play,1,0,martd002,00,X,S8
+play,1,0,cansj001,22,BBCFX,S9.1-3
+play,1,0,mcgrf001,00,X,9/SF.3-H
+play,1,0,vaugg001,32,BBSCBFFFS,K
+play,1,1,jeffg001,32,BBBCCX,S9
+play,1,1,fickr001,22,BFBCFX,4(B)3(1)/LDP
+play,1,1,encaj001,30,BBBB,W
+play,1,1,gonzj002,22,CBSBX,54(1)/FO
+play,2,0,castv001,02,CFS,K
+play,2,0,flahj001,22,BCBFS,K
+play,2,0,stock001,22,FFBBFX,8/F8D
+play,2,1,higgb001,02,CFX,8/F8D
+play,2,1,palmd002,31,CBBBX,2/FL
+play,2,1,clart002,12,FBFS,K
+play,3,0,cairm001,10,BX,S7
+play,3,0,willg001,01,FC,SB2.1-3(E2/TH2)
+play,3,0,willg001,02,FCS,K
+play,3,0,martd002,11,BFX,7/SF.3-H(UR)
+play,3,0,cansj001,32,FBBBFFX,23/G
+play,3,1,garck002,12,FFBX,43/G
+play,3,1,cruzd001,12,FBSFFC,K/C
+play,3,1,jeffg001,01,CX,E5/G
+play,3,1,fickr001,20,BBX,7/F7
+play,4,0,mcgrf001,32,FFBBBX,5/FL
+play,4,0,vaugg001,32,FBSFBFBFX,7/FL
+play,4,0,castv001,12,SFBX,53/G
+play,4,1,encaj001,10,BX,8/F8D
+play,4,1,gonzj002,22,SBBCS,K
+play,4,1,higgb001,32,CBBFBFFB,W
+play,4,1,palmd002,00,X,S9/9S.1-3
+play,4,1,clart002,00,X,43/G
+play,5,0,flahj001,12,SFBX,S9
+play,5,0,stock001,02,FFC,K/C
+play,5,0,cairm001,10,BX,S.1-2
+play,5,0,willg001,00,X,46(1)56(2)/BG4/GDP
+play,5,1,garck002,01,FX,S8
+play,5,1,cruzd001,11,BCX,54(1)3/GDP
+play,5,1,jeffg001,31,FBBBX,3/G
+play,6,0,martd002,00,X,S8
+play,6,0,cansj001,12,FCBX,9/F9
+play,6,0,mcgrf001,22,BCBF1,POCS2(1365)
+play,6,0,mcgrf001,32,BCBF1BC,K/C
+play,6,1,fickr001,22,BCCBX,9/F9
+play,6,1,encaj001,20,BBX,6/F6
+play,6,1,gonzj002,01,SX,D7
+play,6,1,higgb001,11,BSX,7/F7
+play,7,0,vaugg001,00,X,9/F9
+play,7,0,castv001,00,X,7/F7
+play,7,0,flahj001,11,CBX,163/G
+play,7,1,palmd002,00,,NP
+sub,mecij001,"Jim Mecir",0,0,1
+play,7,1,palmd002,11,CBX,S9/9S
+play,7,1,clart002,22,FBSBFS,K
+play,7,1,garck002,12,CBSX,46(1)3/GDP
+play,8,0,stock001,22,FBBFFX,T9
+play,8,0,cairm001,10,BX,S7.3-H
+play,8,0,willg001,00,,NP
+sub,andem002,"Matt Anderson",1,0,1
+play,8,0,willg001,01,FX,4/F4
+play,8,0,martd002,10,BX,S7.1-H(E7/TH);B-3
+play,8,0,cansj001,12,CSBS,K
+play,8,0,mcgrf001,30,BBII,IW
+play,8,0,vaugg001,10,BX,D/78D.3-H;1-H
+play,8,0,castv001,22,BBFFX,S.2-H
+play,8,0,flahj001,31,CBBBC,CS2(24)
+play,8,1,cruzd001,00,X,63/G
+play,8,1,jeffg001,22,CBBSFX,S8
+play,8,1,fickr001,32,BCBBCX,53/G.1-2
+play,8,1,encaj001,10,BX,8/F8
+play,9,0,flahj001,00,,NP
+sub,johnm004,"Mark J. Johnson",1,0,1
+play,9,0,flahj001,10,BX,8/F8
+play,9,0,stock001,31,FBBBX,2/P2
+play,9,0,cairm001,02,FFFFFX,63/G
+play,9,1,gonzj002,00,,NP
+sub,sparj001,"Jeff Sparks",0,0,1
+play,9,1,gonzj002,22,BCSBS,K23
+play,9,1,higgb001,21,BCBX,7/F7
+play,9,1,palmd002,12,CCBS,K23
+data,er,goodd001,0
+data,er,mecij001,0
+data,er,sparj001,0
+data,er,weavj002,3
+data,er,andem002,3
+data,er,johnm004,0

@@ -1,0 +1,76 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,00,1,,,,,0,1,X,clemm001,0,1,kotsm001 homers. ,kotsm001,0,
+,10,1,,,,,1,3,BX,clemm001,1,0,bergd002 grounds out. ,bergd002,0,G
+,11,1,,,,,2,6,BCX,clemm001,1,0,,floyc001,0,P
+,20,1,,,,,3,9,BBX,clemm001,1,0,,wilsp002,0,F
+,00,1,,,,,4,1,X,nunev001,1,0,,marta001,1,P
+,02,1,,jackd003,,,5,4,CCX,nunev001,0,0,jackd003 doubles. ,jackd003,1,
+,32,1,klesr001,jackd003,,,6,10,BBBFFB,nunev001,0,0,klesr001 walks. ,klesr001,1,
+,00,1,,klesr001,jackd003,nevip001,7,11,S,nunev001,0,0,jackd003 steals 3B. klesr001 steals 2B. ,nevip001,1,
+jackd003 scores. ,12,1,,klesr001,,,8,17,SFFFBX,nunev001,1,1,nevip001 hits sacrifice fly. ,nevip001,1,
+,12,1,,klesr001,,,9,21,CSBC,nunev001,1,0,owene001 strikes out. ,owene001,1,
+,01,2,,,,,10,11,CX,clemm001,1,0,,lowem001,0,L
+,21,2,,,,,11,15,CBBX,clemm001,1,0,lee-d002 grounds out. ,lee-d002,0,G
+,00,2,,,,,12,16,X,clemm001,1,0,gonza002 grounds out. ,gonza002,0,G
+,12,2,,,,,13,25,BCFX,nunev001,1,0,,boonb002,1,F
+,22,2,,,,,14,30,CBBSX,nunev001,1,0,hernc001 grounds out. ,hernc001,1,G
+,20,2,,,,,15,33,BBX,nunev001,1,0,,dehak001,1,L
+,11,3,,bakop001,,,16,19,FBX,clemm001,0,0,bakop001 doubles. ,bakop001,0,
+,22,3,,bakop001,,,17,24,BLBFL,clemm001,1,0,nunev001 strikes out. ,nunev001,0,F
+bakop001 to 3B. ,02,3,,,bakop001,,18,27,SFX,clemm001,1,0,kotsm001 grounds out. ,kotsm001,0,G
+,21,3,,,bakop001,,19,31,BBSX,clemm001,1,0,bergd002 grounds out. ,bergd002,0,G
+,10,3,,,,,20,35,BX,nunev001,1,0,clemm001 grounds out. ,clemm001,1,G
+,32,3,,,,,21,41,CBBCBS,nunev001,1,0,marta001 strikes out. ,marta001,1,
+,00,3,jackd003,,,,22,42,X,nunev001,0,0,jackd003 singles. ,jackd003,1,
+jackd003 scores. ,11,3,,klesr001,,,23,45,BFX,nunev001,0,1,klesr001 doubles. ,klesr001,1,
+klesr001 scores. ,32,3,,,,,24,52,BFFBBFX,nunev001,0,2,nevip001 homers. ,nevip001,1,
+,32,3,owene001,,,,25,59,FBBCFBX,nunev001,0,0,owene001 singles. ,owene001,1,
+,01,3,,owene001,,boonb002,26,61,CB,nunev001,0,0,owene001 steals 2B. ,boonb002,1,
+owene001 scores. boonb002 to 2B. ,11,3,,boonb002,,,27,64,CBX,nunev001,0,1,boonb002 singles. ,boonb002,1,
+,32,3,,boonb002,,,28,71,BBFCBFS,nunev001,1,0,hernc001 strikes out. ,hernc001,1,
+,21,4,floyc001,,,,29,35,BBCX,clemm001,0,0,floyc001 singles. ,floyc001,0,
+,22,4,floyc001,,,,30,40,SBSBS,clemm001,1,0,wilsp002 strikes out. ,wilsp002,0,
+,00,4,floyc001,,,,31,41,X,clemm001,1,0,,lowem001,0,F
+,22,4,floyc001,,,,32,47,BBSSFS,clemm001,1,0,lee-d002 strikes out. ,lee-d002,0,
+,22,4,,,,,33,76,BFLBS,nunev001,1,0,dehak001 strikes out. ,dehak001,1,
+,10,4,,,,,34,78,BX,nunev001,1,0,clemm001 grounds out. ,clemm001,1,G
+,11,4,marta001,,,,35,81,BSX,nunev001,0,0,marta001 singles. ,marta001,1,
+marta001 scores. ,21,4,,,,,36,85,BCBX,nunev001,0,2,jackd003 homers. ,jackd003,1,
+,00,4,,,,,37,86,X,nunev001,1,0,klesr001 grounds out. ,klesr001,1,G
+,11,5,,,,,38,50,CBX,clemm001,1,0,,gonza002,0,L
+,32,5,bakop001,,,,39,56,BBFBSB,clemm001,0,0,bakop001 walks. ,bakop001,0,
+bakop001 scores. ,12,5,,,,,40,60,SBSX,clemm001,0,2,nunev001 homers. ,nunev001,0,
+,22,5,,,,,41,65,CBCBX,clemm001,1,0,kotsm001 grounds out. ,kotsm001,0,G
+,12,5,,bergd002,,,42,69,CBSX,clemm001,0,0,bergd002 doubles. ,bergd002,0,
+,32,5,,bergd002,,,43,76,BCBSBFS,clemm001,1,0,floyc001 strikes out. ,floyc001,0,
+,00,5,nevip001,,,,44,87,X,nunev001,0,0,nevip001 singles. ,nevip001,1,
+,20,5,nevip001,,,,45,90,BBX,nunev001,1,0,,owene001,1,F
+,12,5,nevip001,,,,46,95,CBCFS,nunev001,1,0,boonb002 strikes out. ,boonb002,1,
+nevip001 out. ,20,5,hernc001,,,,47,98,BBX,nunev001,1,0,hernc001 reaches on fielder's choice. ,hernc001,1,
+,02,6,,,,,48,79,FFS,clemm001,1,0,wilsp002 strikes out. ,wilsp002,0,
+,11,6,,,,,49,82,BCX,clemm001,1,0,lowem001 grounds out. ,lowem001,0,G
+,32,6,lee-d002,,,,50,88,BBSFBB,clemm001,0,0,lee-d002 walks. ,lee-d002,0,
+lee-d002 out. ,01,6,gonza002,,,,51,90,CX,clemm001,1,0,gonza002 reaches on fielder's choice. ,gonza002,0,
+,00,6,,,,,52,99,X,nunev001,1,0,,dehak001,1,F
+,32,6,,,,,53,105,BBCCBS,nunev001,1,0,clemm001 strikes out. ,clemm001,1,
+,00,6,,,,,54,106,X,nunev001,0,1,marta001 homers. ,marta001,1,
+,31,6,,,,,55,111,BCBBX,nunev001,1,0,,jackd003,1,F
+,30,7,bakop001,,,,56,94,BBBB,clemm001,0,0,bakop001 walks. ,bakop001,0,
+bakop001 to 2B. ,21,7,browb003,bakop001,,,58,98,BCBX,clemm001,0,0,browb003 reaches on error. ,browb003,0,G
+,12,7,browb003,bakop001,,,59,102,BFCS,clemm001,1,0,kotsm001 strikes out. ,kotsm001,0,
+,02,7,browb003,bakop001,,,60,105,CSS,clemm001,1,0,bergd002 strikes out. ,bergd002,0,
+,21,7,browb003,bakop001,,,61,109,BBSX,clemm001,1,0,floyc001 grounds out. ,floyc001,0,G
+,21,7,,,,,64,4,CBBX,almaa001,1,0,,sprae001,1,F
+,12,7,,,,,65,9,SCFBX,almaa001,1,0,,nevip001,1,F
+,01,7,,,,,66,11,CX,almaa001,1,0,,owene001,1,L
+,11,8,,,,,68,112,BCX,clemm001,1,0,wilsp002 grounds out. ,wilsp002,0,G
+,00,8,,,,,69,113,X,clemm001,1,0,lowem001 grounds out. ,lowem001,0,G
+,02,8,,,,,70,117,CSFX,clemm001,1,0,lee-d002 grounds out. ,lee-d002,0,G
+,12,8,,,,,72,4,FFBX,darev001,1,0,,boonb002,1,F
+,31,8,hernc001,,,,73,9,BBBCX,darev001,0,0,hernc001 singles. ,hernc001,1,
+,11,8,hernc001,,,,74,12,SBX,darev001,1,0,,dehak001,1,F
+,01,8,hernc001,,,,76,14,CX,darev001,1,0,,gomec001,1,F
+,00,9,,,,,78,1,X,almac001,1,0,,gonza002,0,P
+,02,9,,,,,80,4,CFS,almac001,1,0,smitm004 strikes out. ,smitm004,0,
+,11,9,millk005,,,,82,7,CBX,almac001,0,0,millk005 singles. ,millk005,0,
+millk005 out. ,00,9,kotsm001,,,,84,1,X,whism001,1,0,kotsm001 reaches on fielder's choice. ,kotsm001,0,

@@ -1,0 +1,78 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,01,1,,,,,0,2,CX,david002,1,0,damoj001 grounds out. ,damoj001,0,G
+,21,1,sancr001,,,,1,6,BCBX,david002,0,0,sancr001 singles. ,sancr001,0,
+sancr001 to 3B. ,02,1,sweem002,,sancr001,,2,9,CCX,david002,0,0,sweem002 singles. ,sweem002,0,
+sweem002 to 2B. ,32,1,dye-j001,sweem002,sancr001,,3,16,FBBBFFB,david002,0,0,dye-j001 walks. ,dye-j001,0,
+sancr001 scores. ,20,1,dye-j001,sweem002,,,4,19,BBX,david002,1,1,beltc001 hits sacrifice fly. ,beltc001,0,
+,02,1,dye-j001,sweem002,,,5,22,FFS,david002,1,0,mccad001 strikes out. ,mccad001,0,
+,11,1,,,,,6,3,BCX,suzum001,1,0,alicl001 grounds out. ,alicl001,1,G
+,31,1,,,,,7,8,BBCBX,suzum001,1,0,,cataf001,1,P
+,01,1,,,,,8,10,CX,suzum001,0,1,palmr001 homers. ,palmr001,1,
+,31,1,,,,,9,15,BFBBX,suzum001,1,0,kaplg001 grounds out. ,kaplg001,1,G
+,11,2,,,,,10,25,BCX,david002,1,0,feblc001 grounds out. ,feblc001,0,G
+,21,2,,,,,11,29,CBBX,david002,1,0,ortih001 grounds out. ,ortih001,0,G
+,10,2,,,,,12,31,BX,david002,1,0,,delgw001,0,F
+,20,2,,,,,13,18,BBX,suzum001,1,0,,leder001,1,F
+,32,2,,,,,14,24,BCBBFS,suzum001,1,0,valdp001 strikes out. ,valdp001,1,
+,30,2,haseb001,,,,15,28,BBBB,suzum001,0,0,haseb001 walks. ,haseb001,1,
+haseb001 to 2B. ,00,2,lambm001,haseb001,,,16,29,X,suzum001,0,0,lambm001 singles. ,lambm001,1,
+,22,2,lambm001,haseb001,,,17,34,BFFBS,suzum001,1,0,clayr001 strikes out. ,clayr001,1,
+,31,3,damoj001,,,,18,36,BBBCB,david002,0,0,damoj001 walks. ,damoj001,0,
+,11,3,damoj001,,,,19,39,FBX,david002,1,0,,sancr001,0,F
+damoj001 to 2B. ,32,3,sweem002,damoj001,,,20,45,BBCBFB,david002,0,0,sweem002 walks. ,sweem002,0,
+damoj001 to 3B. sweem002 to 2B. ,32,3,dye-j001,sweem002,damoj001,,21,53,BFBFFBFB,david002,0,0,dye-j001 walks. ,dye-j001,0,
+,01,3,,sweem002,damoj001,,22,55,FX,david002,2,0,Double Play. ,beltc001,0,
+,00,3,,alicl001,,,23,35,X,suzum001,0,0,alicl001 doubles. ,alicl001,1,
+,12,3,,alicl001,,,24,39,CFBS,suzum001,1,0,cataf001 strikes out. ,cataf001,1,
+,30,3,palmr001,alicl001,,,25,43,IIII,suzum001,0,0,palmr001 intentionally walks. ,palmr001,1,
+alicl001 to 3B. palmr001 to 2B. ,31,3,kaplg001,palmr001,alicl001,,26,48,FBBBB,suzum001,0,0,kaplg001 walks. ,kaplg001,1,
+,00,3,kaplg001,palmr001,alicl001,,27,49,X,suzum001,1,0,,leder001,1,P
+alicl001 scores. palmr001 to 3B. kaplg001 to 2B. ,32,3,valdp001,kaplg001,palmr001,,28,56,CSBBBFB,suzum001,0,1,valdp001 walks. ,valdp001,1,
+,22,3,valdp001,kaplg001,palmr001,,29,61,BFBFC,suzum001,1,0,haseb001 strikes out. ,haseb001,1,
+,10,4,mccad001,,,,30,57,BX,david002,0,0,mccad001 singles. ,mccad001,0,
+,32,4,,,,,31,66,BCFFBFFBX,david002,2,0,Double Play. ,feblc001,0,
+,00,4,,,,,32,67,X,david002,1,0,,ortih001,0,F
+,02,4,,,,,33,64,CFC,suzum001,1,0,lambm001 strikes out. ,lambm001,1,
+,22,4,,,,,34,69,FBBFX,suzum001,1,0,,clayr001,1,F
+,22,4,,,,,35,74,CBFBX,suzum001,1,0,,alicl001,1,P
+,21,5,,,,,36,71,BCBX,david002,1,0,delgw001 grounds out. ,delgw001,0,G
+,22,5,,,,,37,76,SBFBX,david002,1,0,,damoj001,0,P
+,22,5,,,,,38,81,CLBBX,david002,1,0,sancr001 grounds out. ,sancr001,0,G
+,21,5,cataf001,,,,39,78,BFBX,suzum001,0,0,cataf001 singles. ,cataf001,1,
+,22,5,cataf001,,,,40,83,CBBFX,suzum001,1,0,,palmr001,1,F
+,00,5,,cataf001,,kaplg001,41,84,B,suzum001,0,0,cataf001 steals 2B. ,kaplg001,1,
+cataf001 to 3B. ,20,5,,,cataf001,,42,87,BBX,suzum001,1,0,kaplg001 grounds out. ,kaplg001,1,G
+,30,5,leder001,,cataf001,,43,91,BBBB,suzum001,0,0,leder001 walks. ,leder001,1,
+,12,5,,leder001,cataf001,valdp001,44,95,CBFB,suzum001,0,0,leder001 steals 2B. ,valdp001,1,
+,22,5,,leder001,cataf001,,45,101,CBFBFS,suzum001,1,0,valdp001 strikes out. ,valdp001,1,
+,00,6,,,,,46,82,X,david002,1,0,,sweem002,0,F
+,22,6,,,,,47,88,FBBFFX,david002,1,0,,dye-j001,0,
+,21,6,,,,,48,92,BBSX,david002,1,0,,beltc001,0,F
+,22,6,,,,,49,106,SBFBC,suzum001,1,0,haseb001 strikes out. ,haseb001,1,
+,00,6,,,,,50,107,X,suzum001,1,0,,lambm001,1,L
+,22,6,,,,,51,112,SBBFS,suzum001,1,0,clayr001 strikes out. ,clayr001,1,
+,10,7,,,,,52,94,BX,david002,1,0,mccad001 grounds out. ,mccad001,0,G
+,12,7,,,,,53,98,BFCC,david002,1,0,feblc001 strikes out. ,feblc001,0,
+,00,7,,,,,54,99,X,david002,1,0,ortih001 grounds out. ,ortih001,0,G
+,00,7,,,,,55,113,X,suzum001,1,0,,alicl001,1,F
+,02,7,cataf001,,,,56,117,CCFX,suzum001,0,0,cataf001 reaches on error. ,cataf001,1,G
+cataf001 to 2B. ,31,7,palmr001,cataf001,,,57,122,BCBBB,suzum001,0,0,palmr001 walks. ,palmr001,1,
+cataf001 scores. palmr001 to 2B. ,02,7,kaplg001,palmr001,,,58,125,CFX,suzum001,0,1,kaplg001 singles. ,kaplg001,1,
+palmr001 to 3B. ,11,7,kaplg001,,palmr001,,60,3,BSX,mulls002,1,0,,leder001,1,F
+palmr001 scores. kaplg001 to 2B. ,00,7,sierr001,kaplg001,,,62,4,X,mulls002,0,1,sierr001 singles. ,sierr001,1,
+,30,7,sierr001,kaplg001,,,63,8,BBBX,mulls002,1,0,haseb001 grounds out. ,haseb001,1,G
+,12,8,,,,,66,103,BFFX,david002,1,0,delgw001 grounds out. ,delgw001,0,G
+,31,8,damoj001,,,,67,108,BBBCB,david002,0,0,damoj001 walks. ,damoj001,0,
+,22,8,damoj001,,,,70,5,BFFBS,crabt001,1,0,browd002 strikes out. ,browd002,0,
+,01,8,damoj001,,,,71,7,CX,crabt001,1,0,sweem002 grounds out. ,sweem002,0,G
+,31,8,,,,,74,5,BBBCX,spolp001,1,0,lambm001 grounds out. ,lambm001,1,G
+,31,8,clayr001,,,,75,10,BBSBB,spolp001,0,0,clayr001 walks. ,clayr001,1,
+,10,8,,,,alicl001,76,12,B1,spolp001,1,0,clayr001 picked off. ,alicl001,1,
+,20,8,alicl001,,,,77,16,B1BX,spolp001,0,0,alicl001 singles. ,alicl001,1,
+alicl001 scores. ,10,8,,,,,79,18,BX,spolp001,0,2,curtc001 homers. ,curtc001,1,
+,31,8,palmr001,,,,80,23,BBBCB,spolp001,0,0,palmr001 walks. ,palmr001,1,
+palmr001 scores. ,21,8,,,,,81,27,BBCX,spolp001,0,2,kaplg001 homers. ,kaplg001,1,
+,22,8,,,,,82,32,BBCFC,spolp001,1,0,leder001 strikes out. ,leder001,1,
+,31,9,poses001,,,,84,12,BBBCX,crabt001,0,0,poses001 singles. ,poses001,0,
+,10,9,,,,,85,14,BX,crabt001,2,0,Double Play. ,beltc001,0,
+,01,9,,,,,86,16,CX,crabt001,1,0,mccad001 grounds out. ,mccad001,0,G

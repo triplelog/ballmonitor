@@ -1,0 +1,153 @@
+version,2
+info,visteam,CLE
+info,hometeam,BAL
+info,site,BAL12
+info,date,2000/07/29
+info,number,1
+info,starttime,1:25PM
+info,daynight,day
+info,usedh,true
+info,umphome,cuzzp901
+info,ump1b,mcclt901
+info,ump2b,cookr901
+info,ump3b,craft901
+info,pitches,pitches
+info,temp,84
+info,winddir,ltor
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,175
+info,attendance,47715
+info,wp,berej002
+info,lp,rappp001
+info,save,
+start,selbb001,"Bill Selby",0,1,7
+start,vizqo001,"Omar Vizquel",0,2,6
+start,alomr001,"Roberto Alomar",0,3,4
+start,ramim002,"Manny Ramirez",0,4,10
+start,thomj002,"Jim Thome",0,5,3
+start,frymt001,"Travis Fryman",0,6,5
+start,branr001,"Russell Branyan",0,7,9
+start,aloms001,"Sandy Alomar",0,8,2
+start,cabrj002,"Jolbert Cabrera",0,9,8
+start,berej002,"Jason Bere",0,0,1
+start,andeb001,"Brady Anderson",1,1,8
+start,deshd001,"Delino DeShields",1,2,4
+start,clarw001,"Will Clark",1,3,3
+start,bellj002,"Albert Belle",1,4,9
+start,surhb001,"B.J. Surhoff",1,5,7
+start,conij001,"Jeff Conine",1,6,5
+start,bainh001,"Harold Baines",1,7,10
+start,johnc002,"Charles Johnson",1,8,2
+start,coffi001,"Ivanon Coffie",1,9,6
+start,rappp001,"Pat Rapp",1,0,1
+play,1,0,selbb001,12,CBCX,43/G
+play,1,0,vizqo001,01,CX,S7/7S
+play,1,0,alomr001,32,BBCCBX,S.1-2
+play,1,0,ramim002,22,CBFFBFS,K
+play,1,0,thomj002,30,BBBB,W.2-3;1-2
+play,1,0,frymt001,22,CCBFBC,K/C
+play,1,1,andeb001,22,CFFBBS,K
+play,1,1,deshd001,01,CX,31/G
+play,1,1,clarw001,12,CBFS,K
+play,2,0,branr001,10,BX,8/F8
+play,2,0,aloms001,00,X,S7/7S
+play,2,0,cabrj002,11,CBX,S8.1-2
+play,2,0,selbb001,01,FX,36(1)/FO.2-3
+play,2,0,vizqo001,01,CX,S9.3-H;1-2
+play,2,0,alomr001,30,BBBB,W.2-3;1-2
+play,2,0,ramim002,32,FBBBSX,HR/9.3-H;2-H;1-H
+play,2,0,thomj002,11,CBX,43/G
+play,2,1,bellj002,20,BBX,63/G
+play,2,1,surhb001,32,CBBBFX,S8
+play,2,1,conij001,12,CBFFX,9/F9
+play,2,1,bainh001,10,BX,S9.1-2
+play,2,1,johnc002,32,CBBSBX,HR/7.2-H;1-H
+play,2,1,coffi001,21,BCBX,63/G
+play,3,0,frymt001,11,BFX,D7
+play,3,0,branr001,22,BBCSS,K
+play,3,0,aloms001,10,BX,53/G
+play,3,0,cabrj002,20,BBX,D7.2-H
+play,3,0,selbb001,12,BCCX,43/G
+play,3,1,andeb001,02,FCFFC,K/C
+play,3,1,deshd001,20,BBX,8/F8
+play,3,1,clarw001,12,BCCC,K/C
+play,4,0,vizqo001,11,BCX,S/78
+play,4,0,alomr001,01,LX,7/F7
+play,4,0,ramim002,21,BSBX,HR/7.1-H
+play,4,0,thomj002,31,CBBBB,W
+play,4,0,frymt001,22,FBBFC,K/C
+play,4,0,branr001,32,CBFBBX,3/G
+play,4,1,bellj002,01,FX,7/F7
+play,4,1,surhb001,01,CX,5/L5
+play,4,1,conij001,20,BBX,9/F9
+play,5,0,aloms001,00,,NP
+sub,molig001,"Gabe Molina",1,0,1
+play,5,0,aloms001,01,CX,5/L5
+play,5,0,cabrj002,22,CSBBFX,S9
+play,5,0,selbb001,01,SX,D9.1-3
+play,5,0,vizqo001,00,X,S7/7S.3-H;2-3
+play,5,0,alomr001,22,BCFBFX,S8.3-H;1-2
+play,5,0,ramim002,31,BBBCB,W.2-3;1-2
+play,5,0,thomj002,10,BX,S7.3-H;2-H;1-3(E7)
+play,5,0,frymt001,10,BX,9/SF.3-H(UR)
+play,5,0,branr001,22,SFBBC,K/C
+play,5,1,bainh001,00,X,3/G
+play,5,1,johnc002,22,SCBFBS,K
+play,5,1,coffi001,21,BCBX,S9
+play,5,1,andeb001,12,CBFFX,43/G
+play,6,0,aloms001,01,CX,43/G
+play,6,0,cabrj002,31,FBBBX,S8
+play,6,0,selbb001,11,BCX,8/F8
+play,6,0,vizqo001,00,X,5/FL
+play,6,1,deshd001,22,BCBFFX,3/G
+play,6,1,clarw001,11,BFX,8/F8
+play,6,1,bellj002,00,X,S8
+play,6,1,surhb001,00,X,63/G
+play,7,0,alomr001,00,,NP
+sub,conij001,"Jeff Conine",1,6,7
+play,7,0,alomr001,00,,NP
+sub,minor001,"Ryan Minor",1,5,5
+play,7,0,alomr001,00,,NP
+sub,moram002,"Melvin Mora",1,2,4
+play,7,0,alomr001,00,,NP
+sub,matol001,"Luis Matos",1,1,8
+play,7,0,alomr001,21,CBBX,S9
+play,7,0,ramim002,32,FBBBCB,W.1-2
+play,7,0,thomj002,00,X,5/FL
+play,7,0,frymt001,00,X,S8.2-H;1-2
+play,7,0,branr001,32,BBFBFS,K
+play,7,0,aloms001,00,X,4(1)/FO/G
+play,7,1,conij001,00,X,S8
+play,7,1,bainh001,12,BFCX,8/F8
+play,7,1,johnc002,12,SFBX,S8.1-2
+play,7,1,coffi001,32,FSBBBX,S7.2-3;1-2
+play,7,1,matol001,02,CFC,K/C
+play,7,1,moram002,11,BCX,46(1)/FO
+play,8,0,cabrj002,00,,NP
+sub,kohlr001,"Ryan Kohlmeier",1,0,1
+play,8,0,cabrj002,32,FBBFBX,S9
+com,"Debut game for Ryan Kohlmeier"
+play,8,0,selbb001,02,FFX,4/P4
+play,8,0,vizqo001,00,X,46(1)3/GDP
+play,8,1,clarw001,00,,NP
+sub,speij001,"Justin Speier",0,0,1
+play,8,1,clarw001,00,X,D9
+play,8,1,bellj002,00,X,13/G
+play,8,1,minor001,10,BX,9/F9
+play,8,1,conij001,12,CSBC,K/C
+play,9,0,alomr001,20,BBX,8/F8
+play,9,0,ramim002,12,CBFS,K
+play,9,0,thomj002,32,CCBBFBX,S8
+play,9,0,frymt001,31,BSBBB,W.1-2
+play,9,0,branr001,01,SX,6/P6
+play,9,1,bainh001,31,FBBBX,8/F8D
+play,9,1,johnc002,32,BFBBFB,W
+play,9,1,coffi001,00,X,54(1)3/GDP
+data,er,berej002,3
+data,er,speij001,0
+data,er,rappp001,8
+data,er,molig001,5
+data,er,kohlr001,0

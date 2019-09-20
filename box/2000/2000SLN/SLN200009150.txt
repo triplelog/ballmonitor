@@ -1,0 +1,125 @@
+version,2
+info,visteam,CHN
+info,hometeam,SLN
+info,site,STL09
+info,date,2000/09/15
+info,number,0
+info,starttime,7:10PM
+info,daynight,night
+info,usedh,false
+info,umphome,willc901
+info,ump1b,reynj901
+info,ump2b,drakr901
+info,ump3b,hirsj901
+info,pitches,pitches
+info,temp,71
+info,winddir,torf
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,149
+info,attendance,47186
+info,wp,jamem001
+info,lp,liebj001
+info,save,vered001
+start,ojeda001,"Augie Ojeda",0,1,4
+start,gutir001,"Ricky Gutierrez",0,2,6
+start,sosas001,"Sammy Sosa",0,3,9
+start,zulej001,"Julio Zuleta",0,4,3
+start,browr001,"Roosevelt Brown",0,5,7
+start,greew001,"Willie Greene",0,6,5
+start,reedj001,"Jeff Reed",0,7,2
+start,mattg002,"Gary Jr. Matthews",0,8,8
+start,liebj001,"Jon Lieber",0,9,1
+start,drewj001,"J.D. Drew",1,1,9
+start,polap001,"Placido Polanco",1,2,4
+start,edmoj001,"Jim Edmonds",1,3,8
+start,clarw001,"Will Clark",1,4,3
+start,tatif001,"Fernando Tatis",1,5,5
+start,paquc001,"Craig Paquette",1,6,7
+start,rente001,"Edgar Renteria",1,7,6
+start,marre001,"Eli Marrero",1,8,2
+start,reamb001,"Britt Reames",1,9,1
+play,1,0,ojeda001,12,BCFFFX,5/L5
+play,1,0,gutir001,30,BBBB,W
+play,1,0,sosas001,02,CSS,K
+play,1,0,zulej001,02,CCC,K/C
+play,1,1,drewj001,32,BCBBCX,S9/9S
+play,1,1,polap001,10,BX,46(1)3/GDP
+play,1,1,edmoj001,32,BCBBFC,K/C
+play,2,0,browr001,20,BBX,S8/8S
+play,2,0,greew001,10,BX,46(1)3/GDP
+play,2,0,reedj001,31,BBBCB,W
+play,2,0,mattg002,11,CBX,HR/89.1-H
+play,2,0,liebj001,12,BFFC,K/C
+play,2,1,clarw001,00,X,43/G
+play,2,1,tatif001,32,CBFBBX,9/F9
+play,2,1,paquc001,00,X,HR/89
+play,2,1,rente001,31,BBBCB,W
+play,2,1,marre001,00,X,3/G#
+play,3,0,ojeda001,01,CX,S9
+play,3,0,gutir001,00,B,CS2(243)
+play,3,0,gutir001,22,BCBFX,S
+play,3,0,sosas001,32,BSSBFBX,3/FL
+play,3,0,zulej001,01,FX,63/G
+play,3,1,reamb001,01,CX,63/G
+play,3,1,drewj001,11,CBX,3/P3
+play,3,1,polap001,31,BFBBX,9/F9D
+play,4,0,browr001,10,BX,D8/8D
+play,4,0,greew001,12,BCSX,3/L3
+play,4,0,reedj001,00,X,43/G.2-3
+play,4,0,mattg002,01,FX,63/G
+play,4,1,edmoj001,21,BCBX,HR/78
+play,4,1,clarw001,21,BCBX,7/L7
+play,4,1,tatif001,32,SBBBFX,7/L7
+play,4,1,paquc001,22,BSFBFFS,K
+play,5,0,liebj001,32,BBSCFBX,6/P6
+play,5,0,ojeda001,22,BBCCFFS,K
+play,5,0,gutir001,12,BCFS,K
+play,5,1,rente001,12,SBSS,K
+play,5,1,marre001,00,X,5/BP5
+play,5,1,reamb001,12,BCCX,9/F9
+play,6,0,sosas001,22,BBFSX,63/G
+play,6,0,zulej001,01,FX,D9
+play,6,0,browr001,12,CCBX,43/G
+play,6,0,greew001,32,SCBBFBX,13/G
+play,6,1,drewj001,32,BFBFFBFFS,K
+play,6,1,polap001,02,CSX,53/G
+play,6,1,edmoj001,31,BBCBB,W
+play,6,1,clarw001,11,BFX,9/L9
+play,7,0,reedj001,31,BBBCX,3/L3
+play,7,0,mattg002,12,CBFX,8/F8D
+play,7,0,liebj001,32,BFBFBX,3/G#
+play,7,1,tatif001,00,X,9/F9D
+play,7,1,paquc001,20,BBX,53/G
+play,7,1,rente001,22,CBBSS,K
+play,8,0,ojeda001,00,,NP
+sub,jamem001,"Mike James",1,9,1
+play,8,0,ojeda001,22,BBCSX,43/G
+play,8,0,gutir001,32,BBBCCS,K
+play,8,0,sosas001,12,CCBFX,53/G
+play,8,1,marre001,02,CFX,63/G
+play,8,1,jamem001,00,,NP
+sub,mcgwm001,"Mark McGwire",1,9,11
+play,8,1,mcgwm001,00,X,HR/7
+play,8,1,drewj001,00,X,3/G#
+play,8,1,polap001,22,CCBFBX,53/G
+play,9,0,zulej001,00,,NP
+sub,vered001,"Dave Veres",1,9,1
+play,9,0,zulej001,02,SSFS,K
+play,9,0,browr001,32,BBFFBS,K
+play,9,0,greew001,00,,NP
+sub,gracm001,"Mark Grace",0,6,11
+play,9,0,gracm001,32,CBFBBFB,W
+play,9,0,reedj001,00,,NP
+sub,meyec001,"Chad Meyers",0,6,12
+play,9,0,reedj001,12,SBSB,PB.1-2
+play,9,0,reedj001,32,SBSBFBB,W
+play,9,0,mattg002,00,,NP
+sub,husoj001,"Jeff Huson",0,7,12
+play,9,0,mattg002,32,BBSFBX,13/G
+data,er,liebj001,3
+data,er,reamb001,2
+data,er,jamem001,0
+data,er,vered001,0

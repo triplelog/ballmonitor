@@ -1,0 +1,75 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,12,1,,,,,0,4,BFFS,elars001,1,0,castl001 strikes out. ,castl001,0,
+,22,1,,,,,1,9,FBBFX,elars001,1,0,,gonza002,0,F
+,32,1,,,,,2,18,BBBCCFFFC,elars001,1,0,rodrh001 strikes out. ,rodrh001,0,
+,21,1,,,,,3,4,BFBX,dempr002,1,0,ceder001 grounds out. ,ceder001,1,G
+,21,1,,,,,4,8,CBBX,dempr002,1,0,spieb001 grounds out. ,spieb001,1,G
+,00,1,,,,,5,9,X,dempr002,1,0,bagwj001 grounds out. ,bagwj001,1,G
+,12,2,,,,,6,23,SBSFS,elars001,1,0,wilsp002 strikes out. ,wilsp002,0,
+,01,2,,,,,7,25,CX,elars001,1,0,,lowem001,0,F
+,11,2,,,,,8,28,FBX,elars001,1,0,smitm004 grounds out. ,smitm004,0,G
+,10,2,berkl001,,,,9,11,BX,dempr002,0,0,berkl001 singles. ,berkl001,1,
+,12,2,berkl001,,,,10,16,FBSFS,dempr002,1,0,hidar001 strikes out. ,hidar001,1,
+,22,2,berkl001,,,,11,21,CBBFS,dempr002,1,0,melum001 strikes out. ,melum001,1,
+,12,2,berkl001,,,,12,25,BFFX,dempr002,1,0,trubc001 grounds out. ,trubc001,1,G
+,21,3,,,,,13,32,BFBX,elars001,1,0,,lee-d002,0,F
+,02,3,,,,,14,35,CFX,elars001,1,0,redmm001 grounds out. ,redmm001,0,G
+,11,3,dempr002,,,,15,38,BFX,elars001,0,0,dempr002 singles. ,dempr002,0,
+dempr002 out. ,20,3,castl001,,,,16,41,BBX,elars001,1,0,castl001 reaches on fielder's choice. ,castl001,0,
+,00,3,,,,,17,26,X,dempr002,1,0,,lugoj001,1,F
+,32,3,,,,,18,32,CBBBFS,dempr002,1,0,elars001 strikes out. ,elars001,1,
+,02,3,,,,,19,35,CFC,dempr002,1,0,ceder001 strikes out. ,ceder001,1,
+,10,4,,,,,20,43,BX,elars001,0,1,gonza002 homers. ,gonza002,0,
+,31,4,rodrh001,,,,21,48,BBBSB,elars001,0,0,rodrh001 walks. ,rodrh001,0,
+rodrh001 to 2B. ,02,4,wilsp002,rodrh001,,,22,51,SFH,elars001,0,0,wilsp002 hit by pitch. ,wilsp002,0,
+rodrh001 to 3B. wilsp002 to 2B. ,12,4,lowem001,wilsp002,rodrh001,,23,55,CBFX,elars001,0,0,lowem001 singles. ,lowem001,0,
+rodrh001 scores. wilsp002 to 3B. lowem001 to 2B. ,22,4,smitm004,lowem001,wilsp002,,24,60,BCSBX,elars001,0,1,smitm004 singles. ,smitm004,0,
+smitm004 to 2B. lee-d002 to 1B. ,20,4,lee-d002,smitm004,,,25,63,BBX,elars001,2,0,Double Play. ,lee-d002,0,
+,22,4,lee-d002,smitm004,,,26,69,BFCFBX,elars001,1,0,redmm001 grounds out. ,redmm001,0,G
+,12,4,,,,,27,39,CSBS,dempr002,1,0,spieb001 strikes out. ,spieb001,1,
+,32,4,bagwj001,,,,28,46,CBSFBBB,dempr002,0,0,bagwj001 walks. ,bagwj001,1,
+,12,4,bagwj001,,,,29,50,BCFC,dempr002,1,0,berkl001 strikes out. ,berkl001,1,
+bagwj001 to 3B. ,21,4,,hidar001,bagwj001,,30,54,BFBX,dempr002,0,0,hidar001 doubles. ,hidar001,1,
+,30,4,melum001,hidar001,bagwj001,,31,58,BBBI,dempr002,0,0,melum001 intentionally walks. ,melum001,1,
+,12,4,melum001,hidar001,bagwj001,,32,62,SBSX,dempr002,1,0,,trubc001,1,F
+,12,5,,,,,33,74,CFBFS,elars001,1,0,dempr002 strikes out. ,dempr002,0,
+,11,5,,,,,34,77,CBX,elars001,1,0,castl001 grounds out. ,castl001,0,G
+,01,5,,,,,35,79,FX,elars001,1,0,,gonza002,0,P
+,12,5,,,,,36,66,CBFX,dempr002,0,1,lugoj001 homers. ,lugoj001,1,
+,01,5,,,,,37,68,SX,dempr002,1,0,,elars001,1,F
+,32,5,,,,,38,74,SBBBFX,dempr002,1,0,ceder001 grounds out. ,ceder001,1,G
+,32,5,spieb001,,,,39,81,BBCBFFB,dempr002,0,0,spieb001 walks. ,spieb001,1,
+spieb001 scores. ,32,5,,,,,40,87,BBCFBX,dempr002,0,2,bagwj001 homers. ,bagwj001,1,
+,31,5,berkl001,,,,41,92,CBBBX,dempr002,0,0,berkl001 singles. ,berkl001,1,
+,11,5,berkl001,,,,42,95,BCX,dempr002,1,0,,hidar001,1,
+,32,6,rodrh001,,,,43,86,FBSFBBX,elars001,0,0,rodrh001 singles. ,rodrh001,0,
+rodrh001 to 2B. ,00,6,wilsp002,rodrh001,,,44,87,X,elars001,0,0,wilsp002 singles. ,wilsp002,0,
+rodrh001 to 3B. ,20,6,,,rodrh001,,45,90,BBX,elars001,2,0,Double Play. ,lowem001,0,
+,22,6,,,rodrh001,,46,95,SBSBS,elars001,1,0,smitm004 strikes out. ,smitm004,0,
+,32,6,melum001,,,,47,101,BCFBBB,dempr002,0,0,melum001 walks. ,melum001,1,
+,11,6,melum001,,,,48,104,SBX,dempr002,1,0,,trubc001,1,F
+melum001 to 3B. lugoj001 out. ,00,6,,,melum001,,49,105,X,dempr002,1,0,lugoj001 singles. ,lugoj001,1,
+,01,6,,,melum001,,50,107,FX,dempr002,1,0,elars001 grounds out. ,elars001,1,G
+,21,7,,,,,51,99,SBBX,elars001,0,1,lee-d002 homers. ,lee-d002,0,
+,12,7,,,,,52,104,FBFFX,elars001,1,0,redmm001 grounds out. ,redmm001,0,G
+,11,7,,,,,54,107,BFX,elars001,1,0,millk005 grounds out. ,millk005,0,G
+,21,7,,,,,55,111,FBBX,elars001,1,0,,castl001,0,F
+,01,7,,,,,57,2,CX,almaa001,1,0,,ceder001,1,F
+,12,7,,,,,58,8,CCFFBS,almaa001,1,0,spieb001 strikes out. ,spieb001,1,
+,12,7,,,,,60,4,BCFS,miced001,1,0,bagwj001 strikes out. ,bagwj001,1,
+,20,8,,,,,61,114,BBX,elars001,1,0,gonza002 grounds out. ,gonza002,0,G
+,32,8,rodrh001,,,,62,121,BSBBFFB,elars001,0,0,rodrh001 walks. ,rodrh001,0,
+,10,8,fox-a001,,,,64,123,BX,elars001,1,0,,wilsp002,0,
+,02,8,fox-a001,,,,65,126,CFS,elars001,1,0,lowem001 strikes out. ,lowem001,0,
+,32,8,berkl001,,,,69,10,FBSBBB,miced001,0,0,berkl001 walks. ,berkl001,1,
+,11,8,barkg001,,,,71,13,SBX,miced001,1,0,,hidar001,1,P
+,00,8,,barkg001,,melum001,72,14,B,miced001,0,0,barkg001 steals 2B. ,melum001,1,
+,30,8,melum001,barkg001,,,73,18,BIII,miced001,0,0,melum001 intentionally walks. ,melum001,1,
+barkg001 scores. melum001 to 3B. ,20,8,trubc001,,melum001,,74,21,BBX,miced001,0,1,trubc001 singles. ,trubc001,1,
+melum001 scores. trubc001 to 3B. ,00,8,wardd002,,trubc001,,76,22,X,miced001,0,1,wardd002 singles. ,wardd002,1,
+trubc001 scores. wardd002 scores. ,00,8,,aloum001,,,78,23,X,miced001,0,2,aloum001 doubles. ,aloum001,1,
+aloum001 to 3B. ,11,8,,,aloum001,,79,26,BSX,miced001,1,0,ceder001 grounds out. ,ceder001,1,G
+,22,8,,,aloum001,,80,31,BCFBX,miced001,1,0,spieb001 grounds out. ,spieb001,1,G
+,02,9,,,,,85,3,CSS,doteo001,1,0,smitm004 strikes out. ,smitm004,0,
+,02,9,,,,,86,7,CCFX,doteo001,1,0,lee-d002 grounds out. ,lee-d002,0,G
+,22,9,,,,,87,14,FSBBFFX,doteo001,1,0,kotsm001 grounds out. ,kotsm001,0,G

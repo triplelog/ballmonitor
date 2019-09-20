@@ -1,0 +1,79 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,02,1,,,,,0,3,CCS,berej002,1,0,willg001 strikes out. ,willg001,0,
+,12,1,,,,,1,8,SSBFS,berej002,1,0,smitr003 strikes out. ,smitr003,0,
+,31,1,cox-s001,,,,2,13,BBBCB,berej002,0,0,cox-s001 walks. ,cox-s001,0,
+cox-s001 to 2B. ,32,1,mcgrf001,cox-s001,,,3,19,BBFSBB,berej002,0,0,mcgrf001 walks. ,mcgrf001,0,
+cox-s001 scores. mcgrf001 scores. ,00,1,,,,,4,20,X,berej002,0,3,vaugg001 homers. ,vaugg001,0,
+,01,1,castv001,,,,5,22,FX,berej002,0,0,castv001 singles. ,castv001,0,
+castv001 to 3B. ,20,1,difem001,,castv001,,6,25,BBX,berej002,0,0,difem001 singles. ,difem001,0,
+,12,1,difem001,,castv001,,7,29,BFFX,berej002,1,0,,tynej001,0,P
+,20,1,,,,,8,3,BBX,wilsp001,1,0,,loftk001,1,P
+,12,1,,,,,9,7,CFBX,wilsp001,1,0,vizqo001 grounds out. ,vizqo001,1,G
+,21,1,,,,,10,11,CBBX,wilsp001,1,0,alomr001 grounds out. ,alomr001,1,G
+,22,2,,,,,11,34,SBBCX,berej002,1,0,martf001 grounds out. ,martf001,0,G
+,00,2,,,,,12,35,X,berej002,1,0,,willg001,0,F
+,12,2,,,,,13,39,CSBS,berej002,1,0,smitr003 strikes out. ,smitr003,0,
+,32,2,,,,,14,17,BCBBFC,wilsp001,1,0,ramim002 strikes out. ,ramim002,1,
+,32,2,,,,,15,23,CSBBBS,wilsp001,1,0,thomj002 strikes out. ,thomj002,1,
+,02,2,,,,,16,26,FCS,wilsp001,1,0,segud001 strikes out. ,segud001,1,
+,12,3,,,,,17,43,CCBS,berej002,1,0,cox-s001 strikes out. ,cox-s001,0,
+,32,3,mcgrf001,,,,18,49,FBCBBB,berej002,0,0,mcgrf001 walks. ,mcgrf001,0,
+,11,3,mcgrf001,,,,19,52,SBX,berej002,1,0,,vaugg001,0,P
+mcgrf001 scores. ,01,3,,castv001,,,20,54,FX,berej002,0,1,castv001 doubles. ,castv001,0,
+,02,3,,castv001,,,21,57,CSS,berej002,1,0,difem001 strikes out. ,difem001,0,
+,32,3,frymt001,,,,22,33,BBSSFBB,wilsp001,0,0,frymt001 walks. ,frymt001,1,
+frymt001 to 2B. ,01,3,cordw001,frymt001,,,23,35,FH,wilsp001,0,0,cordw001 hit by pitch. ,cordw001,1,
+frymt001 to 3B. cordw001 out. ,20,3,aloms001,,frymt001,,24,38,BBX,wilsp001,1,0,aloms001 reaches on fielder's choice. ,aloms001,1,
+,21,3,,,frymt001,,25,42,BSBX,wilsp001,2,0,Double Play. ,loftk001,1,
+,10,4,,,,,26,59,BX,berej002,1,0,,tynej001,0,F
+,22,4,,,,,27,64,CBFBX,berej002,1,0,martf001 grounds out. ,martf001,0,G
+,02,4,,,,,28,69,FSFFS,berej002,1,0,willg001 strikes out. ,willg001,0,
+,32,4,,,,,29,48,BLBBCX,wilsp001,1,0,vizqo001 grounds out. ,vizqo001,1,G
+,32,4,alomr001,,,,30,56,CBBFFBFX,wilsp001,0,0,alomr001 singles. ,alomr001,1,
+alomr001 scores. ,22,4,,ramim002,,,31,61,BCCBX,wilsp001,0,1,ramim002 doubles. ,ramim002,1,
+,32,4,thomj002,ramim002,,,32,67,FBSBBB,wilsp001,0,0,thomj002 walks. ,thomj002,1,
+ramim002 scores. thomj002 to 3B. ,00,4,segud001,,thomj002,,33,68,X,wilsp001,0,1,segud001 singles. ,segud001,1,
+,11,4,segud001,,thomj002,,34,71,FBX,wilsp001,1,0,,frymt001,1,L
+,32,4,segud001,,thomj002,,35,77,BBFSBX,wilsp001,1,0,cordw001 grounds out. ,cordw001,1,G
+,12,5,,,,,36,73,BCSS,berej002,1,0,smitr003 strikes out. ,smitr003,0,
+,12,5,,,,,37,78,BCFFX,berej002,1,0,cox-s001 grounds out. ,cox-s001,0,G
+,30,5,mcgrf001,,,,38,82,BBBB,berej002,0,0,mcgrf001 walks. ,mcgrf001,0,
+mcgrf001 out. ,21,5,vaugg001,,,,39,86,SBBX,berej002,1,0,vaugg001 reaches on fielder's choice. ,vaugg001,0,
+,00,5,aloms001,,,,40,78,X,wilsp001,0,0,aloms001 singles. ,aloms001,1,
+,32,5,,aloms001,,,41,84,BLFBBS,wilsp001,1,0,loftk001 strikes out. aloms001 steals 2B. ,loftk001,1,
+aloms001 scores. vizqo001 to 2B. ,11,5,,vizqo001,,,42,87,CBX,wilsp001,0,1,vizqo001 reaches on error. ,vizqo001,1,
+,22,5,,vizqo001,,,43,92,BCCBX,wilsp001,1,0,,alomr001,1,F
+,01,5,,,vizqo001,ramim002,44,94,CB,wilsp001,0,0,vizqo001 steals 3B. ,ramim002,1,
+,22,5,,,vizqo001,,45,100,CBBFFC,wilsp001,1,0,ramim002 strikes out. ,ramim002,1,
+,11,6,,,,,46,89,BFX,berej002,1,0,castv001 grounds out. ,castv001,0,G
+,21,6,,,,,47,93,BBFX,berej002,1,0,,difem001,0,F
+,22,6,,,,,48,99,FSBFBX,berej002,1,0,,tynej001,0,F
+,00,6,,,,,50,1,X,fiort001,0,1,thomj002 homers. ,thomj002,1,
+,32,6,segud001,,,,51,8,BBBCSFB,fiort001,0,0,segud001 walks. ,segud001,1,
+segud001 to 2B. ,10,6,frymt001,segud001,,,52,10,BX,fiort001,0,0,frymt001 singles. ,frymt001,1,
+,12,6,frymt001,segud001,,,53,14,CBFX,fiort001,1,0,,cordw001,1,F
+segud001 to 3B. frymt001 to 2B. ,21,6,aloms001,frymt001,segud001,,54,18,BFBX,fiort001,0,0,aloms001 singles. ,aloms001,1,
+segud001 scores. frymt001 scores. aloms001 to 2B. ,12,6,loftk001,aloms001,,,55,22,BFSX,fiort001,0,2,loftk001 singles. ,loftk001,1,
+,10,6,loftk001,aloms001,,,56,24,BX,fiort001,1,0,,vizqo001,1,F
+aloms001 to 3B. loftk001 to 2B. ,31,6,alomr001,loftk001,aloms001,,57,29,CBBBB,fiort001,0,0,alomr001 walks. ,alomr001,1,
+aloms001 scores. loftk001 to 3B. alomr001 to 2B. ,11,6,,alomr001,loftk001,ramim002,58,32,BCB,fiort001,0,1,Passed Ball. ,ramim002,1,
+,21,6,,alomr001,loftk001,,59,36,BCBX,fiort001,1,0,ramim002 grounds out. ,ramim002,1,G
+,01,7,,,,,61,2,CX,karss001,1,0,martf001 grounds out. ,martf001,0,G
+,01,7,willg001,,,,62,4,SX,karss001,0,0,willg001 singles. ,willg001,0,
+,21,7,willg001,,,,63,8,CBBX,karss001,1,0,,smitr003,0,L
+,00,7,willg001,,,,64,9,X,karss001,1,0,,cox-s001,0,F
+,01,7,,thomj002,,,66,2,FX,wheed001,0,0,thomj002 doubles. ,thomj002,1,
+,30,7,segud001,thomj002,,,67,6,BBBB,wheed001,0,0,segud001 walks. ,segud001,1,
+,00,7,segud001,thomj002,,,68,7,X,wheed001,1,0,,frymt001,1,L
+segud001 to 2B. thomj002 out. ,02,7,cordw001,segud001,,,69,11,SFFX,wheed001,1,0,cordw001 reaches on fielder's choice. ,cordw001,1,
+segud001 to 3B. robed001 out. ,12,7,aloms001,,segud001,,71,16,BFFFX,wheed001,1,0,aloms001 reaches on fielder's choice. ,aloms001,1,
+,12,8,,,,,73,13,FBSC,karss001,1,0,mcgrf001 strikes out. ,mcgrf001,0,
+,00,8,,,,,74,14,X,karss001,1,0,,vaugg001,0,F
+,02,8,,,,,75,17,FSC,karss001,1,0,castv001 strikes out. ,castv001,0,
+,00,8,,,,,76,17,X,wheed001,1,0,,loftk001,1,F
+,01,8,,,,,77,19,CX,wheed001,1,0,,vizqo001,1,F
+,21,8,alomr001,,,,78,23,CBBX,wheed001,0,0,alomr001 reaches on error. ,alomr001,1,G
+,20,8,alomr001,,,,79,26,BBX,wheed001,1,0,,ramim002,1,
+,22,9,,,,,82,8,BCBFFFFX,wickb001,1,0,,difem001,0,P
+,21,9,,,,,83,12,BBCX,wickb001,1,0,tynej001 grounds out. ,tynej001,0,G
+,00,9,,,,,85,13,X,wickb001,1,0,johnr006 grounds out. ,johnr006,0,G

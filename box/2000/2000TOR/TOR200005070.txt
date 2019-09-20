@@ -1,0 +1,203 @@
+version,2
+info,visteam,CLE
+info,hometeam,TOR
+info,site,TOR02
+info,date,2000/05/07
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,hirsm901
+info,ump1b,lampi901
+info,ump2b,bellw901
+info,ump3b,iassd901
+info,pitches,pitches
+info,temp,72
+info,winddir,tolf
+info,windspeed,22
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,262
+info,attendance,19161
+info,wp,shuep001
+info,lp,gunde001
+info,save,karss001
+start,alomr001,"Roberto Alomar",0,1,4
+start,vizqo001,"Omar Vizquel",0,2,6
+start,justd001,"David Justice",0,3,10
+start,ramim002,"Manny Ramirez",0,4,9
+start,thomj002,"Jim Thome",0,5,3
+start,sexsr001,"Richie Sexson",0,6,7
+start,frymt001,"Travis Fryman",0,7,5
+start,diaze002,"Einar Diaz",0,8,2
+start,cabrj002,"Jolbert Cabrera",0,9,8
+start,wittb001,"Bobby Witt",0,0,1
+start,cruzj004,"Jose Cruz",1,1,8
+start,bushh001,"Homer Bush",1,2,4
+start,mondr002,"Raul Mondesi",1,3,9
+start,delgc001,"Carlos Delgado",1,4,3
+start,fullb001,"Brad Fullmer",1,5,10
+start,batit001,"Tony Batista",1,6,5
+start,cordm001,"Marty Cordova",1,7,7
+start,gonza001,"Alex S. Gonzalez",1,8,6
+start,casta001,"Alberto Castillo",1,9,2
+start,castf001,"Frank Castillo",1,0,1
+play,1,0,alomr001,22,CBFBS,K
+play,1,0,vizqo001,02,CFC,K/C
+play,1,0,justd001,32,BBCFFFBX,8/F8
+play,1,1,cruzj004,11,BCX,D/89D
+play,1,1,bushh001,01,LX,43/G.2-3
+play,1,1,mondr002,32,BFCBBFB,W
+play,1,1,delgc001,12,FFBX,S9/9S.3-H;1-3
+play,1,1,fullb001,21,BCBX,36(1)/FO.3-H
+play,1,1,batit001,31,CBBBB,W.1-2
+play,1,1,cordm001,11,BCX,S9.2-H;1X3(9562)
+play,2,0,ramim002,12,CCBC,K/C
+play,2,0,thomj002,00,X,13/G
+play,2,0,sexsr001,11,CBX,9/F9D
+play,2,1,gonza001,22,SBSFBS,K
+play,2,1,casta001,10,BX,9/F9
+play,2,1,cruzj004,21,BBCX,HR/9
+play,2,1,bushh001,10,BX,S
+play,2,1,mondr002,12,CBFX,HR/8.1-H
+play,2,1,delgc001,11,CBX,S9/9S
+play,2,1,fullb001,12,BCCX,D9.1-3
+play,2,1,batit001,00,,NP
+sub,reeds001,"Steve Reed",0,0,1
+play,2,1,batit001,11,CBX,7/L7
+play,3,0,frymt001,11,CBX,8/F8D
+play,3,0,diaze002,10,BX,8/F8
+play,3,0,cabrj002,12,CBCX,53/G
+play,3,1,cordm001,02,CCS,K
+play,3,1,gonza001,22,BBCCX,4/P4
+play,3,1,casta001,32,SBBFBX,63/G
+play,4,0,alomr001,31,BBBCB,W
+play,4,0,vizqo001,11,CBX,S.1-2
+play,4,0,justd001,10,BX,D9/9D.2-H;1-3
+play,4,0,ramim002,12,FCFBX,9/F9
+play,4,0,thomj002,22,CSFBFBC,K/C
+play,4,0,sexsr001,10,BX,S8/8S.3-H;2-H
+play,4,0,frymt001,11,CBX,S8/8S.1-2
+play,4,0,diaze002,01,CX,9/F9
+play,4,1,cruzj004,12,CFBS,K
+play,4,1,bushh001,02,CSX,63/G
+play,4,1,mondr002,31,BBSBB,W
+play,4,1,delgc001,00,,NP
+sub,martt003,"Tom Martin",0,0,1
+play,4,1,delgc001,32,BBCBFX,D9.1-H
+play,4,1,fullb001,00,X,S8.2-H
+play,4,1,batit001,22,FBBFX,S8/8S.1-2
+play,4,1,cordm001,00,X,6/L6
+play,5,0,cabrj002,12,CFBFX,9/L9
+play,5,0,alomr001,12,FCBX,8/L8
+play,5,0,vizqo001,32,CBBSBFB,W
+play,5,0,justd001,32,BCCBBFB,W.1-2
+play,5,0,ramim002,00,X,9/F9S
+play,5,1,gonza001,22,CBBSX,63/G
+play,5,1,casta001,22,CBFBS,K
+play,5,1,cruzj004,01,CX,43/G
+play,6,0,thomj002,12,BCCS,K
+play,6,0,sexsr001,32,CFBBBFC,K/C
+play,6,0,frymt001,32,BBBCFX,8/F8D
+play,6,1,bushh001,00,X,9/L9
+play,6,1,mondr002,00,X,53/G
+play,6,1,delgc001,12,CCFFFFBC,K/C
+play,7,0,diaze002,21,CBBX,53/G
+play,7,0,cabrj002,00,X,9/F9
+play,7,0,alomr001,22,BBFFX,S8/8S
+play,7,0,vizqo001,10,BB,SB2
+play,7,0,vizqo001,31,BBBCB,W
+play,7,0,justd001,00,,NP
+sub,borbp001,"Pedro Borbon",1,0,1
+play,7,0,justd001,02,CSX,HR/9.2-H;1-H
+play,7,0,ramim002,00,,NP
+sub,frasj001,"John Frascatore",1,0,1
+play,7,0,ramim002,00,X,9/F9
+play,7,1,fullb001,22,BFSBX,3/G
+play,7,1,batit001,00,,NP
+sub,kamis001,"Scott Kamieniecki",0,0,1
+play,7,1,batit001,12,CBCS,K
+play,7,1,cordm001,12,CBCS,K
+play,8,0,thomj002,11,FBX,3/L3
+play,8,0,sexsr001,10,BX,D9
+play,8,0,frymt001,12,CBSS,K
+play,8,0,diaze002,01,CX,8/L8
+play,8,1,gonza001,00,X,43/G
+play,8,1,casta001,00,X,63/G
+play,8,1,cruzj004,22,BBSFC,K/C
+play,9,0,cabrj002,00,,NP
+sub,wilse001,"Enrique Wilson",0,9,11
+play,9,0,wilse001,00,,NP
+sub,kochb001,"Billy Koch",1,0,1
+play,9,0,wilse001,11,BCX,31/G
+play,9,0,alomr001,00,X,7/L7
+play,9,0,vizqo001,11,BCX,S8/8S
+play,9,0,justd001,01,SB,DI.1-2
+play,9,0,justd001,21,SBBX,D9.2-H
+play,9,0,ramim002,01,SX,D8.2-H
+play,9,0,thomj002,30,IIII,IW
+play,9,0,sexsr001,01,FX,43/G
+play,9,1,bushh001,00,,NP
+sub,whitm001,"Mark Whiten",0,9,8
+play,9,1,bushh001,21,BBCX,S7/7S
+play,9,1,mondr002,22,CCBBX,54(1)/FO
+play,9,1,delgc001,00,,NP
+sub,rincr001,"Ricardo Rincon",0,0,1
+play,9,1,delgc001,12,FBFX,7/F7
+play,9,1,fullb001,01,FX,S.1-2
+play,9,1,batit001,00,,NP
+sub,shuep001,"Paul Shuey",0,0,1
+play,9,1,batit001,10,BS,SB3
+play,9,1,batit001,12,BSSX,31/G
+play,10,0,frymt001,21,CBBX,S7/7S
+play,10,0,diaze002,12,LFBX,3(B)3(1)/LDP
+play,10,0,whitm001,11,BCX,63/G
+play,10,1,cordm001,11,CBX,S
+play,10,1,gonza001,00,,NP
+sub,wised001,"Dewayne Wise",1,7,12
+play,10,1,gonza001,10,BX,14/SH.1-2
+play,10,1,casta001,00,,NP
+sub,fletd001,"Darrin Fletcher",1,9,11
+play,10,1,fletd001,11,BSX,43/G.2-3
+play,10,1,cruzj004,30,IIII,IW
+play,10,1,bushh001,00,B,DI.1-2
+play,10,1,bushh001,32,BBCBCS,K
+play,11,0,alomr001,00,,NP
+sub,wised001,"Dewayne Wise",1,7,7
+play,11,0,alomr001,00,,NP
+sub,fletd001,"Darrin Fletcher",1,9,2
+play,11,0,alomr001,00,,NP
+sub,gunde001,"Eric Gunderson",1,0,1
+play,11,0,alomr001,21,BBFX,7/L7
+play,11,0,vizqo001,00,X,S9
+play,11,0,justd001,11,CBX,64(1)3/GDP
+play,11,1,mondr002,32,SBBBFFS,K
+play,11,1,delgc001,22,FBCBX,13/G
+play,11,1,fullb001,30,BBBB,W
+play,11,1,batit001,12,FSBX,S7.1-2
+play,11,1,wised001,02,CCX,43/G
+play,12,0,ramim002,11,BFX,8/F8D
+play,12,0,thomj002,32,FBBFBB,W
+play,12,0,sexsr001,10,BX,S7/7S.1-2
+play,12,0,frymt001,32,CBSBBX,S/89S.2-H;1-3
+play,12,0,diaze002,11,BCX,43/G.3-H;1-2
+play,12,0,whitm001,11,BFX,63/G
+play,12,1,gonza001,00,,NP
+sub,karss001,"Steve Karsay",0,0,1
+play,12,1,gonza001,22,CCBBX,53/G
+play,12,1,fletd001,01,CX,S9
+play,12,1,cruzj004,12,SCBS,K
+play,12,1,bushh001,22,CCFFBBX,6(1)/FO/G
+data,er,wittb001,6
+data,er,reeds001,1
+data,er,martt003,1
+data,er,kamis001,0
+data,er,rincr001,0
+data,er,shuep001,0
+data,er,karss001,0
+data,er,castf001,5
+data,er,borbp001,1
+data,er,frasj001,0
+data,er,kochb001,2
+data,er,gunde001,2

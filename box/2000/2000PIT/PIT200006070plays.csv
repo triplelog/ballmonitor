@@ -1,0 +1,75 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,02,1,,,,,0,3,CFX,ritct001,1,0,easld001 grounds out. ,easld001,0,G
+,12,1,,,,,1,7,CBFX,ritct001,1,0,cruzd001 grounds out. ,cruzd001,0,G
+,10,1,,,,,2,9,BX,ritct001,1,0,encaj001 grounds out. ,encaj001,0,G
+,30,1,nunea001,,,,3,4,BBBB,nomoh001,0,0,nunea001 walks. ,nunea001,1,
+,22,1,nunea001,,,,4,10,BCBFFS,nomoh001,1,0,kendj001 strikes out. ,kendj001,1,
+nunea001 to 2B. ,00,1,cordw001,nunea001,,,5,11,X,nomoh001,0,0,cordw001 singles. ,cordw001,1,
+,22,1,cordw001,nunea001,,,6,16,BSBFX,nomoh001,1,0,,gileb002,1,P
+,22,1,cordw001,nunea001,,,7,21,CBBFS,nomoh001,1,0,vandj001 strikes out. ,vandj001,1,
+,10,2,,,,,8,11,BX,ritct001,1,0,,gonzj002,0,L
+,30,2,higgb001,,,,9,15,BBBB,ritct001,0,0,higgb001 walks. ,higgb001,0,
+higgb001 scores. ,00,2,,palmd002,,,10,16,X,ritct001,0,1,palmd002 doubles. ,palmd002,0,
+,02,2,,palmd002,,,11,19,FSS,ritct001,1,0,fickr001 strikes out. ,fickr001,0,
+,22,2,,palmd002,,,12,24,BFBCX,ritct001,1,0,ausmb001 grounds out. ,ausmb001,0,G
+,12,2,,,,,13,25,BFSS,nomoh001,1,0,younk001 strikes out. ,younk001,1,
+,10,2,,,,,14,27,BX,nomoh001,1,0,,sojol001,1,F
+,02,2,,,,,15,31,FCFC,nomoh001,1,0,benjm001 strikes out. ,benjm001,1,
+,02,3,,,,,16,27,FSX,ritct001,1,0,nomoh001 grounds out. ,nomoh001,0,G
+,10,3,easld001,,,,17,29,BX,ritct001,0,0,easld001 singles. ,easld001,0,
+easld001 scores. ,21,3,,cruzd001,,,18,33,BBFX,ritct001,0,1,cruzd001 doubles. ,cruzd001,0,
+,31,3,encaj001,cruzd001,,,19,38,BBCBB,ritct001,0,0,encaj001 walks. ,encaj001,0,
+,11,3,encaj001,cruzd001,,,20,41,SBX,ritct001,1,0,,gonzj002,0,F
+,11,3,encaj001,cruzd001,,,21,44,BFX,ritct001,1,0,,higgb001,0,P
+,02,3,,,,,22,34,FFS,nomoh001,1,0,ritct001 strikes out. ,ritct001,1,
+,10,3,nunea001,,,,23,36,BX,nomoh001,0,0,nunea001 singles. ,nunea001,1,
+nunea001 to 2B. ,12,3,kendj001,nunea001,,,24,40,BFFX,nomoh001,0,0,kendj001 singles. ,kendj001,1,
+nunea001 to 3B. kendj001 to 2B. ,00,3,cordw001,kendj001,nunea001,,25,41,X,nomoh001,0,0,cordw001 singles. ,cordw001,1,
+nunea001 scores. kendj001 to 3B. cordw001 to 2B. ,30,3,gileb002,cordw001,kendj001,,26,45,BBBB,nomoh001,0,1,gileb002 walks. ,gileb002,1,
+,31,3,gileb002,cordw001,kendj001,,27,50,BBBCX,nomoh001,1,0,,vandj001,1,
+,12,3,gileb002,cordw001,kendj001,,28,55,SBSFC,nomoh001,1,0,younk001 strikes out. ,younk001,1,
+,02,4,,,,,29,47,CFS,ritct001,1,0,palmd002 strikes out. ,palmd002,0,
+,11,4,,,,,30,50,BCX,ritct001,1,0,,fickr001,0,P
+,32,4,,ausmb001,,,31,56,CFBBBX,ritct001,0,0,ausmb001 doubles. ,ausmb001,0,
+,32,4,,ausmb001,,,32,62,BFBBCC,ritct001,1,0,nomoh001 strikes out. ,nomoh001,0,
+,32,4,,,,,33,61,BBFFBX,nomoh001,0,1,sojol001 homers. ,sojol001,1,
+,01,4,,,,,34,63,CX,nomoh001,1,0,,benjm001,1,F
+,00,4,ritct001,,,,35,64,X,nomoh001,0,0,ritct001 singles. ,ritct001,1,
+,00,4,ritct001,,,,36,65,X,nomoh001,1,0,,nunea001,1,F
+ritct001 to 2B. ,32,4,kendj001,ritct001,,,37,72,BBCBFFB,nomoh001,0,0,kendj001 walks. ,kendj001,1,
+ritct001 scores. kendj001 to 3B. cordw001 to 2B. ,32,4,,cordw001,kendj001,,38,78,FFBBBX,nomoh001,0,1,cordw001 singles. ,cordw001,1,
+,30,4,gileb002,cordw001,kendj001,,39,82,BBII,nomoh001,0,0,gileb002 intentionally walks. ,gileb002,1,
+,31,4,gileb002,cordw001,kendj001,,40,87,BBBCX,nomoh001,1,0,,vandj001,1,F
+,31,5,easld001,,,,41,67,BBBCX,ritct001,0,0,easld001 singles. ,easld001,0,
+,21,5,,,,,42,71,FBBX,ritct001,2,0,Double Play. ,cruzd001,0,
+,21,5,,,,,43,75,BSBX,ritct001,1,0,,encaj001,0,F
+,12,5,,,,,44,91,CBFX,nomoh001,1,0,,younk001,1,F
+,02,5,,,,,45,94,CCX,nomoh001,1,0,sojol001 grounds out. ,sojol001,1,G
+,00,5,,benjm001,,,46,95,X,nomoh001,0,0,benjm001 doubles. ,benjm001,1,
+,00,5,,benjm001,,,47,96,X,nomoh001,1,0,ritct001 grounds out. ,ritct001,1,G
+,12,6,,,,,48,79,CSBS,ritct001,1,0,gonzj002 strikes out. ,gonzj002,0,
+,12,6,,,,,49,85,FCBFFX,ritct001,1,0,,higgb001,0,P
+,02,6,,,,,50,88,CFS,ritct001,1,0,palmd002 strikes out. ,palmd002,0,
+,02,6,,,,,51,99,CSS,nomoh001,1,0,nunea001 strikes out. ,nunea001,1,
+,00,6,,,,,52,100,X,nomoh001,1,0,,kendj001,1,
+,12,6,,,,,53,104,FFBX,nomoh001,1,0,,cordw001,1,F
+,32,7,,,,,54,95,BCBBCFS,ritct001,1,0,fickr001 strikes out. ,fickr001,0,
+,21,7,,,,,55,99,BCBX,ritct001,1,0,ausmb001 grounds out. ,ausmb001,0,G
+,32,7,,,,,57,106,BFBBCFX,ritct001,1,0,,polol001,0,F
+,12,7,,,,,59,4,CFBX,nitkc001,1,0,gileb002 grounds out. ,gileb002,1,G
+,10,7,,,,,60,6,BX,nitkc001,1,0,,vandj001,1,F
+,32,7,,,,,61,12,CBSBBX,nitkc001,0,1,younk001 homers. ,younk001,1,
+,21,7,,,,,62,16,CBBX,nitkc001,1,0,sojol001 grounds out. ,sojol001,1,G
+,22,8,,,,,63,111,CBCBX,ritct001,1,0,easld001 grounds out. ,easld001,0,G
+,21,8,,,,,64,115,CBBX,ritct001,1,0,,cruzd001,0,F
+,11,8,,,,,65,118,CBX,ritct001,1,0,encaj001 grounds out. ,encaj001,0,G
+,32,8,,,,,66,23,BCSBFBS,nitkc001,1,0,benjm001 strikes out. ,benjm001,1,
+,22,8,,,,,70,6,CFFBBC,andem002,1,0,avenb001 strikes out. ,avenb001,1,
+,12,8,,,,,71,10,BCSS,andem002,1,0,nunea001 strikes out. ,nunea001,1,
+,11,9,,gonzj002,,,74,3,BCX,willm005,0,0,gonzj002 doubles. ,gonzj002,0,
+,32,9,,gonzj002,,,75,9,SBBBFX,willm005,1,0,,higgb001,0,F
+gonzj002 to 2B. ,00,9,palmd002,gonzj002,,,76,10,X,willm005,0,0,palmd002 singles. ,palmd002,0,
+gonzj002 scores. palmd002 to 3B. fickr001 to 2B. ,00,9,,fickr001,palmd002,,77,11,X,willm005,0,1,fickr001 singles. ,fickr001,0,
+,22,9,,fickr001,halts001,,79,17,BBFSFS,willm005,1,0,ausmb001 strikes out. ,ausmb001,0,
+,32,9,beckr002,fickr001,halts001,,80,23,BCBSBB,willm005,0,0,beckr002 walks. ,beckr002,0,
+,12,9,beckr002,fickr001,halts001,,81,27,BSSX,willm005,1,0,easld001 grounds out. ,easld001,0,G

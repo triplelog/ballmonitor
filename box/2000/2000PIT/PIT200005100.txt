@@ -1,0 +1,190 @@
+version,2
+info,visteam,NYN
+info,hometeam,PIT
+info,site,PIT07
+info,date,2000/05/10
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,froeb901
+info,ump1b,wintm901
+info,ump2b,culbf901
+info,ump3b,welkb901
+info,pitches,pitches
+info,temp,58
+info,winddir,tolf
+info,windspeed,13
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,209
+info,attendance,13711
+info,wp,silvj001
+info,lp,cookd001
+info,save,
+start,hendr001,"Rickey Henderson",0,1,7
+start,belld001,"Derek Bell",0,2,9
+start,alfoe001,"Edgardo Alfonzo",0,3,4
+start,piazm001,"Mike Piazza",0,4,2
+start,ventr001,"Robin Ventura",0,5,5
+start,zeilt001,"Todd Zeile",0,6,3
+start,moram002,"Melvin Mora",0,7,8
+start,ordor001,"Rey Ordonez",0,8,6
+start,reedr002,"Rick Reed",0,9,1
+start,browa001,"Adrian Brown",1,1,8
+start,morrw001,"Warren Morris",1,2,4
+start,kendj001,"Jason Kendall",1,3,2
+start,gileb002,"Brian Giles",1,4,9
+start,younk001,"Kevin Young",1,5,3
+start,cordw001,"Wil Cordero",1,6,7
+start,mearp001,"Pat Meares",1,7,6
+start,benjm001,"Mike Benjamin",1,8,5
+start,ritct001,"Todd Ritchie",1,9,1
+play,1,0,hendr001,32,BCCBBFX,S8
+play,1,0,belld001,00,B,SB2
+play,1,0,belld001,31,BBBCX,31/G.2-3
+play,1,0,alfoe001,10,BX,43/G.3-H
+play,1,0,piazm001,01,SX,8/F8D
+play,1,1,browa001,01,CX,7/F7
+play,1,1,morrw001,01,CX,13/G
+play,1,1,kendj001,21,BBCX,S8
+play,1,1,gileb002,10,BB,SB2
+play,1,1,gileb002,30,BBBX,8/F8
+play,2,0,ventr001,22,FCBBFC,K/C
+play,2,0,zeilt001,12,CBSC,K/C
+play,2,0,moram002,02,CCS,K
+play,2,1,younk001,01,FX,HR/7
+play,2,1,cordw001,00,X,S7/7S
+play,2,1,mearp001,22,CCBFBX,9/F9D
+play,2,1,benjm001,00,X,9/F9
+play,2,1,ritct001,00,X,S8.1-2
+play,2,1,browa001,10,BX,43/G
+play,3,0,ordor001,10,BX,63/G
+com,"ej,lamog101,M,froeb901,Balls and strikes"
+com,"Pirates manager Gene Lamont ejected by HP umpire Bruce Froemming in third"
+play,3,0,reedr002,22,FBBFH,HP
+play,3,0,hendr001,32,BCBBFB,W.1-2
+play,3,0,belld001,10,BX,13/G.2-3;1-2
+play,3,0,alfoe001,00,X,D9.3-H;2-H
+play,3,0,piazm001,10,BX,HR/78.2-H
+play,3,0,ventr001,20,BBX,HR/9
+play,3,0,zeilt001,10,BX,4/P4
+play,3,1,morrw001,01,CX,4/L4
+play,3,1,kendj001,01,CX,63/G
+play,3,1,gileb002,20,BBX,6/P6
+play,4,0,moram002,00,,NP
+sub,parrj002,"Jose Parra",1,9,1
+play,4,0,moram002,01,CX,3/G
+play,4,0,ordor001,10,BX,53/G
+play,4,0,reedr002,21,BFBX,S8
+play,4,0,hendr001,31,BCBBB,W.1-2
+play,4,0,belld001,31,BBFBB,W.2-3;1-2
+play,4,0,alfoe001,11,BCX,5/FL
+play,4,1,younk001,32,BBBCCX,9/L9
+play,4,1,cordw001,11,CBX,S8/8S
+play,4,1,mearp001,00,X,T9.1-H
+play,4,1,benjm001,01,SX,53/G
+play,4,1,parrj002,00,,NP
+sub,avenb001,"Bruce Aven",1,9,11
+play,4,1,avenb001,22,CCBBS,K
+play,5,0,piazm001,00,,NP
+sub,wallj001,"Jeff Wallace",1,9,1
+play,5,0,piazm001,12,BCSX,63/G
+play,5,0,ventr001,10,BX,43/G
+play,5,0,zeilt001,32,BCBBFB,W
+play,5,0,moram002,02,FCS,K
+play,5,1,browa001,12,CFBX,T9/9D
+play,5,1,morrw001,01,CX,43/G.3-H
+play,5,1,kendj001,00,X,63/G
+play,5,1,gileb002,21,CBBX,43/G
+play,6,0,ordor001,22,CCBBX,13/G
+play,6,0,reedr002,02,SFX,8/F8
+play,6,0,hendr001,32,CFFBBBX,S9
+play,6,0,belld001,12,CBSFFFS,K
+play,6,1,younk001,10,BX,S7/7S
+play,6,1,cordw001,20,BBX,HR/7.1-H
+play,6,1,mearp001,12,SBSX,S9
+play,6,1,benjm001,00,,NP
+sub,wendt001,"Turk Wendell",0,9,1
+play,6,1,benjm001,12,BFFFFX,7/F7
+play,6,1,wallj001,00,,NP
+sub,hermc001,"Chad Hermansen",1,9,11
+play,6,1,hermc001,00,C,BK.1-2
+play,6,1,hermc001,02,CSS,K
+play,6,1,browa001,20,BBX,D8/8D.2-H
+play,6,1,morrw001,00,,NP
+sub,cookd001,"Dennis Cook",0,9,1
+play,6,1,morrw001,22,FBFBS,K23
+play,7,0,alfoe001,00,,NP
+sub,silvj001,"Jose Silva",1,9,1
+play,7,0,alfoe001,22,CBSBS,K
+play,7,0,piazm001,12,BCSX,S9/9S
+play,7,0,ventr001,31,BFBBX,S9/9S.1-3
+play,7,0,zeilt001,30,BBBX,D7/7D.3-H;1-3
+play,7,0,moram002,00,C,CSH(25)
+play,7,0,moram002,31,CBIII,IW
+play,7,0,ordor001,22,CBFBS,K
+play,7,1,kendj001,10,BX,S8
+play,7,1,gileb002,00,H,HP.1-2
+play,7,1,younk001,00,,NP
+sub,mahop001,"Pat Mahomes",0,7,1
+play,7,1,younk001,00,,NP
+sub,paytj001,"Jay Payton",0,9,8
+play,7,1,younk001,22,FBBFFX,S8/8S.2-H;1-2
+play,7,1,cordw001,21,CBBX,S8.2-3;1-2
+play,7,1,mearp001,00,X,S9.3-H;2-3;1-2
+play,7,1,benjm001,00,,NP
+sub,vandj001,"John Vander Wal",1,8,11
+play,7,1,vandj001,12,CSBX,D7.3-H;2-H;1-3
+play,7,1,silvj001,00,,NP
+sub,sojol001,"Luis Sojo",1,9,11
+play,7,1,sojol001,21,FBBX,S8/8S.3-H;2-3
+play,7,1,browa001,00,,NP
+sub,rodrr004,"Rich Rodriguez",0,7,1
+play,7,1,browa001,21,BCBX,9/L9
+play,7,1,morrw001,02,SCS,K
+play,7,1,kendj001,32,BBCSBX,53/G
+play,8,0,paytj001,00,,NP
+sub,sojol001,"Luis Sojo",1,9,5
+play,8,0,paytj001,00,,NP
+sub,garcm002,"Mike Garcia",1,8,1
+play,8,0,paytj001,01,CX,53/G
+play,8,0,hendr001,32,CCBFBBX,3/G
+play,8,0,belld001,22,BFBFX,D7
+play,8,0,alfoe001,22,CBBFFX,S9.2-3
+play,8,0,piazm001,12,FSBB,WP.3-H;1-2
+play,8,0,piazm001,22,FSBBX,5/L5
+play,8,1,gileb002,00,,NP
+sub,franj001,"John Franco",0,7,1
+play,8,1,gileb002,02,CFX,S
+play,8,1,younk001,22,BFBFFX,S7.1-2
+play,8,1,cordw001,21,FBBX,D7/7D.2-H;1-H
+play,8,1,mearp001,32,BBSBFB,W
+play,8,1,garcm002,02,SFL,K/BF
+play,8,1,sojol001,12,BCFX,64(1)3/GDP
+play,9,0,ventr001,00,,NP
+sub,willm005,"Mike Williams",1,8,1
+play,9,0,ventr001,32,BCBBFFFB,W
+play,9,0,zeilt001,02,SSS,K
+play,9,0,franj001,00,,NP
+sub,franm001,"Matt Franco",0,7,11
+play,9,0,franm001,02,CSX,S9/9S.1-2
+play,9,0,ordor001,00,,NP
+sub,nunnj001,"Jon Nunnally",0,8,11
+play,9,0,nunnj001,32,BSBBCX,S.2-3;1-2
+play,9,0,paytj001,00,X,8/SF.3-H;2-3
+play,9,0,hendr001,10,BS,DI.1-2
+play,9,0,hendr001,21,BSBX,8/F8
+data,er,reedr002,6
+data,er,wendt001,0
+data,er,cookd001,2
+data,er,mahop001,3
+data,er,rodrr004,0
+data,er,franj001,2
+data,er,ritct001,6
+data,er,parrj002,0
+data,er,wallj001,0
+data,er,silvj001,1
+data,er,garcm002,1
+data,er,willm005,1

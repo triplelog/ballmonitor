@@ -1,0 +1,85 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,10,1,,,,,0,2,BX,harnp001,1,0,,abreb001,0,F
+,01,1,,,,,1,4,CX,harnp001,1,0,,gland001,0,F
+,11,1,,,,,2,7,FBX,harnp001,1,0,,roles001,0,F
+,12,1,,stync001,,,3,6,BCCFFX,wolfr001,0,0,stync001 doubles. ,stync001,1,
+stync001 to 3B. ,00,1,,,stync001,,4,7,X,wolfr001,1,0,,larkb001,1,F
+stync001 scores. ,32,1,grifk002,,,,5,13,CBBFBX,wolfr001,0,1,grifk002 singles. ,grifk002,1,
+,22,1,,,,,6,18,CFBBX,wolfr001,2,0,Double Play. ,bichd001,1,
+,12,2,,,,,7,11,CBFX,harnp001,1,0,,liebm001,0,
+,10,2,lee-t002,,,,8,13,BX,harnp001,0,0,lee-t002 singles. ,lee-t002,0,
+lee-t002 to 2B. ,01,2,burrp001,lee-t002,,,9,15,SX,harnp001,0,0,burrp001 singles. ,burrp001,0,
+lee-t002 to 3B. burrp001 out. ,22,2,andem003,,lee-t002,,10,24,CSFBFFBFX,harnp001,1,0,andem003 reaches on fielder's choice. ,andem003,0,
+lee-t002 scores. andem003 out. ,21,2,,peret003,,,11,28,BCBX,harnp001,1,1,peret003 doubles. ,peret003,0,
+,00,2,yound001,,,,12,19,X,wolfr001,0,0,yound001 singles. ,yound001,1,
+,10,2,yound001,,,,13,21,BX,wolfr001,1,0,,ochoa001,1,F
+,12,2,yound001,,,,14,26,CFBFS,wolfr001,1,0,castj004 strikes out. ,castj004,1,
+,22,2,,,,laruj001,15,31,SBSBB,wolfr001,1,0,yound001 caught stealing. ,laruj001,1,
+,30,3,wolfr001,,,,16,32,BBBB,harnp001,0,0,wolfr001 walks. ,wolfr001,0,
+,11,3,,,,,17,35,CBX,harnp001,2,0,Double Play. ,abreb001,0,
+,01,3,gland001,,,,18,37,CX,harnp001,0,0,gland001 singles. ,gland001,0,
+gland001 to 2B. ,01,3,,gland001,,roles001,19,39,F1,harnp001,0,0,Pickoff error. ,roles001,0,
+gland001 to 3B. ,12,3,,,gland001,roles001,20,44,F1CBB,harnp001,0,0,Wild Pitch. ,roles001,0,
+,22,3,,,gland001,,21,51,F1CBBFC,harnp001,1,0,roles001 strikes out. ,roles001,0,
+,22,3,,,,,22,37,BFSFBX,wolfr001,1,0,,laruj001,1,F
+,12,3,,harnp001,,,23,41,FBSX,wolfr001,0,0,harnp001 doubles. ,harnp001,1,
+harnp001 scores. ,22,3,,stync001,,,24,46,SBBCX,wolfr001,0,1,stync001 doubles. ,stync001,1,
+stync001 scores. ,00,3,,larkb001,,,25,47,X,wolfr001,0,1,larkb001 doubles. ,larkb001,1,
+,20,3,grifk002,larkb001,,,26,50,BBH,wolfr001,0,0,grifk002 hit by pitch. ,grifk002,1,
+larkb001 to 3B. grifk002 to 2B. ,30,3,bichd001,grifk002,larkb001,,27,54,BBBB,wolfr001,0,0,bichd001 walks. ,bichd001,1,
+larkb001 scores. grifk002 scores. bichd001 scores. ,00,3,,,,,28,55,X,wolfr001,0,4,yound001 homers. ,yound001,1,
+,20,3,,,,,29,58,BBX,wolfr001,1,0,,ochoa001,1,F
+,01,3,,,,,30,60,FX,wolfr001,1,0,castj004 grounds out. ,castj004,1,G
+,11,4,,,,,31,54,BFX,harnp001,1,0,liebm001 grounds out. ,liebm001,0,G
+,10,4,,lee-t002,,,32,56,BX,harnp001,0,0,lee-t002 doubles. ,lee-t002,0,
+,30,4,burrp001,lee-t002,,,33,60,BBBB,harnp001,0,0,burrp001 walks. ,burrp001,0,
+lee-t002 to 3B. burrp001 to 2B. ,00,4,andem003,burrp001,lee-t002,,34,61,X,harnp001,0,0,andem003 reaches on error. ,andem003,0,G
+lee-t002 scores. burrp001 to 3B. andem003 out. ,00,4,peret003,,burrp001,,35,62,X,harnp001,1,1,peret003 reaches on fielder's choice. ,peret003,0,
+,11,4,peret003,,burrp001,,37,65,BFX,harnp001,1,0,,duceb001,0,P
+,12,4,,,,,39,5,CBCFS,boydj001,1,0,laruj001 strikes out. ,laruj001,1,
+,01,4,,,,,40,7,CX,boydj001,1,0,harnp001 grounds out. ,harnp001,1,G
+,21,4,stync001,,,,41,11,BBFX,boydj001,0,0,stync001 singles. ,stync001,1,
+,10,4,,stync001,,larkb001,42,13,BB,boydj001,0,0,stync001 steals 2B. ,larkb001,1,
+,32,4,,stync001,,,43,20,BBSBSFS,boydj001,1,0,larkb001 strikes out. ,larkb001,1,
+,11,5,abreb001,,,,44,68,CBX,harnp001,0,0,abreb001 singles. ,abreb001,0,
+,01,5,abreb001,,,,45,70,CX,harnp001,1,0,,gland001,0,P
+abreb001 to 2B. ,10,5,roles001,abreb001,,,46,72,BX,harnp001,0,0,roles001 singles. ,roles001,0,
+,12,5,roles001,abreb001,,,47,76,BSFX,harnp001,1,0,,liebm001,0,F
+,22,5,roles001,abreb001,,,48,81,BSBCS,harnp001,1,0,lee-t002 strikes out. ,lee-t002,0,
+,20,5,,,,,49,23,BBX,boydj001,1,0,,grifk002,1,F
+,22,5,bichd001,,,,50,28,FFBBX,boydj001,0,0,bichd001 reaches on error. ,bichd001,1,G
+bichd001 to 3B. ,00,5,,yound001,bichd001,,51,29,X,boydj001,0,0,yound001 doubles. ,yound001,1,
+,30,5,ochoa001,yound001,bichd001,,52,33,IIII,boydj001,0,0,ochoa001 intentionally walks. ,ochoa001,1,
+,22,5,,yound001,bichd001,,53,38,CBSBX,boydj001,2,0,Double Play. ,castj004,1,
+,00,6,burrp001,,,,54,82,X,harnp001,0,0,burrp001 singles. ,burrp001,0,
+,11,6,burrp001,,,,55,85,LBX,harnp001,1,0,,andem003,0,F
+burrp001 scores. ,12,6,,peret003,,,56,89,FFBX,harnp001,0,1,peret003 doubles. ,peret003,0,
+,32,6,huntb001,peret003,,,58,96,BBCCBFB,harnp001,0,0,huntb001 walks. ,huntb001,0,
+peret003 to 3B. huntb001 to 2B. ,31,6,abreb001,huntb001,peret003,,59,101,BBFBB,harnp001,0,0,abreb001 walks. ,abreb001,0,
+peret003 scores. ,12,6,abreb001,huntb001,,,61,4,BCSX,sulls001,1,1,gland001 hits sacrifice fly. ,gland001,0,
+,00,6,abreb001,huntb001,,,62,5,X,sulls001,1,0,,roles001,0,F
+,10,6,,,,,64,2,BX,gomew001,1,0,laruj001 grounds out. ,laruj001,1,G
+,01,6,sulls001,,,,65,4,FX,gomew001,0,0,sulls001 singles. ,sulls001,1,
+,21,6,,,,,66,8,CBBX,gomew001,2,0,Double Play. ,stync001,1,
+,22,7,,,,,67,10,BFFBX,sulls001,1,0,liebm001 grounds out. ,liebm001,0,G
+,22,7,,,,,68,15,BCCBX,sulls001,1,0,,lee-t002,0,P
+,22,7,,,,,69,20,BFBFX,sulls001,1,0,burrp001 grounds out. ,burrp001,0,G
+,31,7,,,,,70,13,BBBCX,gomew001,1,0,larkb001 grounds out. ,larkb001,1,G
+,21,7,,grifk002,,,71,17,FBBX,gomew001,0,0,grifk002 doubles. ,grifk002,1,
+,01,7,,grifk002,,,72,19,FX,gomew001,1,0,,bichd001,1,P
+,30,7,yound001,grifk002,,,73,23,IIII,gomew001,0,0,yound001 intentionally walks. ,yound001,1,
+,00,7,yound001,grifk002,,,74,24,X,gomew001,1,0,,ochoa001,1,F
+,01,8,,,,,75,22,CX,sulls001,1,0,andem003 grounds out. ,andem003,0,G
+,00,8,,peret003,,,76,23,X,sulls001,0,0,peret003 doubles. ,peret003,0,
+peret003 to 3B. ,00,8,,,peret003,,78,24,X,sulls001,1,0,jordk001 grounds out. ,jordk001,0,G
+,32,8,abreb001,,peret003,,80,6,BBFSBB,reyed001,0,0,abreb001 walks. ,abreb001,0,
+,00,8,abreb001,,peret003,,83,1,X,gravd001,1,0,,gland001,0,F
+,21,8,,,,,85,4,BFBX,branj001,1,0,,castj004,1,F
+,20,8,,,,,86,7,BBX,branj001,1,0,laruj001 grounds out. ,laruj001,1,G
+,10,8,cases001,,,,87,9,BX,branj001,0,0,cases001 singles. ,cases001,1,
+cases001 to 2B. ,10,8,stync001,cases001,,,88,11,BX,branj001,0,0,stync001 singles. ,stync001,1,
+cases001 to 3B. stync001 to 2B. ,32,8,larkb001,stync001,cases001,,89,17,FBBBFB,branj001,0,0,larkb001 walks. ,larkb001,1,
+,11,8,larkb001,stync001,cases001,,90,20,BSX,branj001,1,0,,grifk002,1,F
+,21,9,roles001,,,,92,5,BBCX,gravd001,0,0,roles001 singles. ,roles001,0,
+,21,9,,,,,93,9,CBBX,gravd001,2,0,Double Play. ,liebm001,0,
+,12,9,,,,,94,13,BCCX,gravd001,1,0,lee-t002 grounds out. ,lee-t002,0,G

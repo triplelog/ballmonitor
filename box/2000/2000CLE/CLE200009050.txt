@@ -1,0 +1,146 @@
+version,2
+info,visteam,TBA
+info,hometeam,CLE
+info,site,CLE08
+info,date,2000/09/05
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,barrt901
+info,ump1b,randt901
+info,ump2b,monte901
+info,ump3b,laynj901
+info,howscored,park
+info,pitches,pitches
+info,temp,61
+info,winddir,fromrf
+info,windspeed,21
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,164
+info,attendance,42660
+info,wp,berej002
+info,lp,fiort001
+info,save,wickb001
+start,willg001,"Gerald Williams",0,1,8
+start,smitr003,"Bobby Smith",0,2,4
+start,cox-s001,"Steve Cox",0,3,9
+start,mcgrf001,"Fred McGriff",0,4,3
+start,vaugg001,"Greg Vaughn",0,5,10
+start,castv001,"Vinny Castilla",0,6,5
+start,difem001,"Mike DiFelice",0,7,2
+start,tynej001,"Jason Tyner",0,8,7
+start,martf001,"Felix Martinez",0,9,6
+start,wilsp001,"Paul Wilson",0,0,1
+start,loftk001,"Kenny Lofton",1,1,8
+start,vizqo001,"Omar Vizquel",1,2,6
+start,alomr001,"Roberto Alomar",1,3,4
+start,ramim002,"Manny Ramirez",1,4,9
+start,thomj002,"Jim Thome",1,5,10
+start,segud001,"David Segui",1,6,3
+start,frymt001,"Travis Fryman",1,7,5
+start,cordw001,"Wil Cordero",1,8,7
+start,aloms001,"Sandy Alomar",1,9,2
+start,berej002,"Jason Bere",1,0,1
+play,1,0,willg001,02,CCS,K
+play,1,0,smitr003,12,SSBFS,K
+play,1,0,cox-s001,31,BBBCB,W
+play,1,0,mcgrf001,32,BBFSBB,W.1-2
+play,1,0,vaugg001,00,X,HR/89.2-H;1-H
+play,1,0,castv001,01,FX,S9/9S
+play,1,0,difem001,20,BBX,S/89.1-3
+play,1,0,tynej001,12,BFFX,6/P6
+play,1,1,loftk001,20,BBX,4/P4
+play,1,1,vizqo001,12,CFBX,63/G
+play,1,1,alomr001,21,CBBX,43/G
+play,2,0,martf001,22,SBBCX,31/G
+play,2,0,willg001,00,X,8/F8
+play,2,0,smitr003,12,CSBS,K
+play,2,1,ramim002,32,BCBBFC,K/C
+play,2,1,thomj002,32,CSBBBS,K
+play,2,1,segud001,02,FCS,K
+play,3,0,cox-s001,12,CCBS,K
+play,3,0,mcgrf001,32,FBCBBB,W
+play,3,0,vaugg001,11,SBX,4/P4
+play,3,0,castv001,01,FX,D9.1-H
+play,3,0,difem001,02,CSS,K
+play,3,1,frymt001,32,BBSSFBB,W
+play,3,1,cordw001,01,FH,HP.1-2
+play,3,1,aloms001,20,BBX,54(1)/FO.2-3
+play,3,1,loftk001,21,BSBX,64(1)3/GDP
+play,4,0,tynej001,10,BX,8/F8
+play,4,0,martf001,22,CBFBX,43/G
+play,4,0,willg001,02,FSFFS,K
+play,4,1,vizqo001,32,BLBBCX,53/G
+play,4,1,alomr001,32,CBBFFBFX,S7
+play,4,1,ramim002,22,BCCBX,D9.1-H
+play,4,1,thomj002,32,FBSBBB,W
+play,4,1,segud001,00,X,S9.2-H;1-3
+play,4,1,frymt001,11,FBX,4/L4
+play,4,1,cordw001,32,BBFSBX,63/G
+play,5,0,smitr003,12,BCSS,K
+play,5,0,cox-s001,12,BCFFX,43/G
+play,5,0,mcgrf001,30,BBBB,W
+play,5,0,vaugg001,21,SBBX,54(1)/FO
+play,5,1,aloms001,00,X,S/78
+play,5,1,loftk001,32,BLFBBS,K+SB2
+play,5,1,vizqo001,11,CBX,E6/TH.2-H(UR);B-2
+play,5,1,alomr001,22,BCCBX,7/F7D
+play,5,1,ramim002,01,CB,SB3
+play,5,1,ramim002,22,CBBFFC,K/C
+play,6,0,castv001,11,BFX,63/G
+play,6,0,difem001,21,BBFX,7/F7
+play,6,0,tynej001,22,FSBFBX,7/F7
+play,6,1,thomj002,00,,NP
+sub,fiort001,"Tony Fiore",0,0,1
+play,6,1,thomj002,00,X,HR/9
+play,6,1,segud001,32,BBBCSFB,W
+play,6,1,frymt001,10,BX,S7/7S.1-2
+play,6,1,cordw001,12,CBFX,9/F9
+play,6,1,aloms001,21,BFBX,S8/8S.2-3;1-2
+play,6,1,loftk001,12,BFSX,S7/7S.3-H;2-H;1-2
+play,6,1,vizqo001,10,BX,8/F8S
+play,6,1,alomr001,31,CBBBB,W.2-3;1-2
+play,6,1,ramim002,11,BCB,PB.3-H(UR);2-3;1-2
+play,6,1,ramim002,21,BCBX,63/G
+play,7,0,martf001,00,,NP
+sub,karss001,"Steve Karsay",1,0,1
+play,7,0,martf001,01,CX,3/G
+play,7,0,willg001,01,SX,S8
+play,7,0,smitr003,21,CBBX,8/L8
+play,7,0,cox-s001,00,X,7/F7
+play,7,1,thomj002,00,,NP
+sub,wheed001,"Dan Wheeler",0,0,1
+play,7,1,thomj002,01,FX,D/89D
+play,7,1,segud001,30,BBBB,W
+play,7,1,frymt001,00,X,7/L7
+play,7,1,cordw001,02,SFFX,65(2)/FO.1-2
+play,7,1,aloms001,00,,NP
+sub,robed001,"Dave Roberts",1,8,12
+play,7,1,aloms001,12,BFFFX,54(1)/FO.2-3
+play,8,0,mcgrf001,00,,NP
+sub,robed001,"Dave Roberts",1,8,7
+play,8,0,mcgrf001,12,FBSC,K/C
+play,8,0,vaugg001,00,X,7/F7D
+play,8,0,castv001,02,FSC,K/C
+play,8,1,loftk001,00,X,8/F8D
+play,8,1,vizqo001,01,CX,9/F9
+play,8,1,alomr001,21,CBBX,E4/G
+play,8,1,ramim002,20,BBX,3/FL
+play,9,0,difem001,00,,NP
+sub,cabrj002,"Jolbert Cabrera",1,4,9
+play,9,0,difem001,00,,NP
+sub,wickb001,"Bob Wickman",1,0,1
+play,9,0,difem001,22,BCBFFFFX,6/P6
+play,9,0,tynej001,21,BBCX,43/G
+play,9,0,martf001,00,,NP
+sub,johnr006,"Russ Johnson",0,9,11
+play,9,0,johnr006,00,X,43/G
+data,er,wilsp001,2
+data,er,fiort001,3
+data,er,wheed001,0
+data,er,berej002,4
+data,er,karss001,0
+data,er,wickb001,0

@@ -1,0 +1,83 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,10,1,,,,,0,2,BX,schic002,1,0,castl001 grounds out. ,castl001,0,G
+,12,1,,,,,1,8,BCFFFX,schic002,1,0,kotsm001 grounds out. ,kotsm001,0,G
+,02,1,,,,,2,11,FCS,schic002,1,0,rodrh001 strikes out. ,rodrh001,0,
+,10,1,,,,,3,2,BX,dempr002,1,0,,womat001,1,
+,31,1,bellj001,,,,4,7,BBBCB,dempr002,0,0,bellj001 walks. ,bellj001,1,
+bellj001 to 3B. ,21,1,gonzl001,,bellj001,,5,11,CBBX,dempr002,0,0,gonzl001 reaches on error. ,gonzl001,1,
+,00,1,,,bellj001,,6,12,X,dempr002,2,0,Double Play. ,colbg001,1,
+,12,2,,,,,7,15,BSSX,schic002,1,0,,wilsp002,0,P
+,02,2,,,,,8,18,CFX,schic002,1,0,,lowem001,0,L
+,11,2,lee-d002,,,,9,21,CBX,schic002,0,0,lee-d002 singles. ,lee-d002,0,
+,00,2,lee-d002,,,,10,22,X,schic002,1,0,,gonza002,0,F
+,12,2,,,,,11,16,CBFX,dempr002,1,0,finls001 grounds out. ,finls001,1,G
+,12,2,,,,,12,20,CFBS,dempr002,1,0,willm003 strikes out. ,willm003,1,
+,12,2,,,,,13,24,BCSX,dempr002,1,0,bautd001 grounds out. ,bautd001,1,G
+,12,3,,,,,14,26,FBSX,schic002,1,0,,redmm001,0,F
+,11,3,,,,,15,29,CBX,schic002,1,0,dempr002 grounds out. ,dempr002,0,G
+,12,3,,,,,16,34,CLFBX,schic002,1,0,castl001 grounds out. ,castl001,0,G
+,22,3,,,,,17,30,BFFBFC,dempr002,1,0,milld002 strikes out. ,milld002,1,
+,02,3,,,,,18,33,FFS,dempr002,1,0,schic002 strikes out. ,schic002,1,
+,21,3,,,,,19,37,BBCX,dempr002,1,0,,womat001,1,P
+,01,4,kotsm001,,,,20,36,FX,schic002,0,0,kotsm001 singles. ,kotsm001,0,
+kotsm001 to 2B. ,12,4,rodrh001,kotsm001,,,21,40,FCBX,schic002,0,0,rodrh001 singles. ,rodrh001,0,
+kotsm001 to 3B. ,00,4,,,kotsm001,,22,41,X,schic002,2,0,Double Play. ,wilsp002,0,
+,02,4,,,kotsm001,,23,44,FFX,schic002,1,0,,lowem001,0,F
+,11,4,bellj001,,,,24,40,CBX,dempr002,0,0,bellj001 reaches on error. ,bellj001,1,G
+bellj001 to 2B. ,00,4,gonzl001,bellj001,,,25,41,X,dempr002,0,0,gonzl001 singles. ,gonzl001,1,
+bellj001 to 3B. gonzl001 to 2B. ,20,4,colbg001,gonzl001,bellj001,,26,44,BBX,dempr002,0,0,colbg001 singles. ,colbg001,1,
+,22,4,colbg001,gonzl001,bellj001,,27,49,FSBBS,dempr002,1,0,finls001 strikes out. ,finls001,1,
+bellj001 scores. gonzl001 to 3B. colbg001 to 2B. ,00,4,,colbg001,gonzl001,,28,50,X,dempr002,1,1,willm003 grounds out. ,willm003,1,G
+,00,4,,colbg001,gonzl001,,29,51,X,dempr002,1,0,bautd001 grounds out. ,bautd001,1,G
+,22,5,lee-d002,,,,30,49,CBFBX,schic002,0,0,lee-d002 singles. ,lee-d002,0,
+lee-d002 to 3B. gonza002 to 2B. ,11,5,,gonza002,lee-d002,,31,52,CBX,schic002,0,0,gonza002 singles. ,gonza002,0,
+lee-d002 scores. gonza002 to 3B. ,00,5,redmm001,,gonza002,,32,53,X,schic002,0,1,redmm001 singles. ,redmm001,0,
+redmm001 to 2B. ,00,5,,redmm001,gonza002,,33,54,X,schic002,1,0,Sacrifice bunt by dempr002.,dempr002,0,
+gonza002 scores. redmm001 to 3B. ,12,5,,,redmm001,,34,59,CBCFX,schic002,1,1,castl001 grounds out. ,castl001,0,G
+redmm001 scores. ,21,5,,kotsm001,,,35,63,FBBX,schic002,0,1,kotsm001 doubles. ,kotsm001,0,
+,22,5,,kotsm001,,,36,68,FBSBS,schic002,1,0,rodrh001 strikes out. ,rodrh001,0,
+,01,5,milld002,,,,37,53,SX,dempr002,0,0,milld002 singles. ,milld002,1,
+,02,5,milld002,,,,38,56,SLL,dempr002,1,0,schic002 strikes out. ,schic002,1,F
+,22,5,milld002,,,,39,64,SCFFBBFC,dempr002,1,0,womat001 strikes out. ,womat001,1,
+,22,5,milld002,,,,40,73,CBSFFFBFX,dempr002,1,0,,bellj001,1,F
+,00,6,,,,,41,69,X,schic002,0,1,wilsp002 homers. ,wilsp002,0,
+,21,6,,lowem001,,,42,73,BBFX,schic002,0,0,lowem001 doubles. ,lowem001,0,
+lowem001 scores. ,01,6,,,,,43,75,FX,schic002,0,2,lee-d002 homers. ,lee-d002,0,
+,02,6,,,,,44,78,FFS,schic002,1,0,gonza002 strikes out. ,gonza002,0,
+,00,6,,,,,45,79,X,schic002,1,0,,redmm001,0,F
+,00,6,,,,,46,80,X,schic002,1,0,dempr002 grounds out. ,dempr002,0,G
+,20,6,gonzl001,,,,47,76,BBX,dempr002,0,0,gonzl001 singles. ,gonzl001,1,
+gonzl001 to 2B. ,11,6,colbg001,gonzl001,,,48,79,BFX,dempr002,0,0,colbg001 singles. ,colbg001,1,
+,22,6,colbg001,gonzl001,,,49,84,CBBSS,dempr002,1,0,finls001 strikes out. ,finls001,1,
+,32,6,colbg001,gonzl001,,,50,90,BSBSBX,dempr002,1,0,,willm003,1,L
+,00,6,colbg001,gonzl001,,,51,91,X,dempr002,1,0,,bautd001,1,F
+,22,7,,,castl001,,53,6,BFBFFX,swing001,0,0,castl001 triples. ,castl001,0,
+castl001 scores. ,00,7,,,,,54,7,X,swing001,1,1,kotsm001 hits sacrifice fly. ,kotsm001,0,
+,22,7,,,,,55,12,BBSSS,swing001,1,0,rodrh001 strikes out. ,rodrh001,0,
+,00,7,wilsp002,,,,56,13,X,swing001,0,0,wilsp002 singles. ,wilsp002,0,
+wilsp002 to 2B. ,12,7,lowem001,wilsp002,,,59,5,BFSFX,sprir001,0,0,lowem001 singles. ,lowem001,0,
+,02,7,lowem001,wilsp002,,,60,8,FFX,sprir001,1,0,,lee-d002,0,F
+,00,7,,,,,62,92,X,dempr002,1,0,,milld002,1,F
+,12,7,,,,,63,96,BCSS,dempr002,1,0,delld001 strikes out. ,delld001,1,
+,21,7,,,womat001,,64,100,BBFX,dempr002,0,0,womat001 triples. ,womat001,1,
+,00,7,bellj001,,womat001,,65,101,H,dempr002,0,0,bellj001 hit by pitch. ,bellj001,1,
+bellj001 out. ,10,7,gonzl001,,womat001,,66,103,BX,dempr002,1,0,gonzl001 reaches on fielder's choice. ,gonzl001,1,
+,11,8,,,,,67,11,CBX,sprir001,1,0,,gonza002,0,F
+,12,8,,,,,68,15,BSFX,sprir001,1,0,,redmm001,0,L
+,00,8,,,,,69,16,X,sprir001,1,0,dempr002 grounds out. ,dempr002,0,G
+,01,8,,,,,70,105,CX,dempr002,1,0,,colbg001,1,F
+,00,8,finls001,,,,71,106,X,dempr002,0,0,finls001 singles. ,finls001,1,
+,00,8,finls001,,,,72,107,X,dempr002,1,0,,willm003,1,F
+finls001 to 3B. ,00,8,ryanr001,,finls001,,74,108,X,dempr002,0,0,ryanr001 singles. ,ryanr001,1,
+,22,8,ryanr001,,finls001,,75,113,CBFBS,dempr002,1,0,milld002 strikes out. ,milld002,1,
+,12,9,,,,,78,5,CCBFX,holmd001,1,0,castl001 grounds out. ,castl001,0,G
+,11,9,,kotsm001,,,79,8,BFX,holmd001,0,0,kotsm001 doubles. ,kotsm001,0,
+kotsm001 to 3B. ,01,9,smitm004,,kotsm001,,80,10,CX,holmd001,0,0,smitm004 singles. ,smitm004,0,
+kotsm001 scores. smitm004 scores. ,00,9,,,,,81,11,X,holmd001,0,3,wilsp002 homers. ,wilsp002,0,
+,02,9,lowem001,,,,82,14,CFH,holmd001,0,0,lowem001 hit by pitch. ,lowem001,0,
+,11,9,lowem001,,,,83,17,BCX,holmd001,1,0,,lee-d002,0,F
+lowem001 to 2B. ,00,9,gonza002,lowem001,,,84,18,X,holmd001,0,0,gonza002 singles. ,gonza002,0,
+,32,9,gonza002,lowem001,,,85,25,CBFBFBX,holmd001,1,0,,redmm001,0,
+,10,9,delld001,,,,87,2,BX,boner001,0,0,delld001 singles. ,delld001,1,
+,20,9,,,,,89,5,BBX,boner001,2,0,Double Play. ,counc001,1,
+,21,9,,,,,91,9,BFBX,boner001,1,0,cabra001 grounds out. ,cabra001,1,G

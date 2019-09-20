@@ -1,0 +1,127 @@
+version,2
+info,visteam,CLE
+info,hometeam,OAK
+info,site,OAK01
+info,date,2000/04/12
+info,number,0
+info,starttime,12:35PM
+info,daynight,day
+info,usedh,true
+info,umphome,reilm901
+info,ump1b,kellj901
+info,ump2b,coope901
+info,ump3b,diazl901
+info,pitches,pitches
+info,temp,64
+info,winddir,tolf
+info,windspeed,6
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,153
+info,attendance,14683
+info,wp,wrigj002
+info,lp,hereg001
+info,save,
+start,loftk001,"Kenny Lofton",0,1,8
+start,vizqo001,"Omar Vizquel",0,2,6
+start,alomr001,"Roberto Alomar",0,3,4
+start,ramim002,"Manny Ramirez",0,4,9
+start,thomj002,"Jim Thome",0,5,3
+start,sexsr001,"Richie Sexson",0,6,7
+start,justd001,"David Justice",0,7,10
+start,frymt001,"Travis Fryman",0,8,5
+start,diaze002,"Einar Diaz",0,9,2
+start,wrigj002,"Jaret Wright",0,0,1
+start,beckr002,"Rich Becker",1,1,8
+start,chave001,"Eric Chavez",1,2,5
+start,giamj001,"Jason Giambi",1,3,3
+start,staim001,"Matt Stairs",1,4,10
+start,giamj002,"Jeremy Giambi",1,5,9
+start,grieb001,"Ben Grieve",1,6,7
+start,tejam001,"Miguel Tejada",1,7,6
+start,fasas001,"Sal Fasano",1,8,2
+start,velaj001,"Jorge Velandia",1,9,4
+start,hereg001,"Gil Heredia",1,0,1
+play,1,0,loftk001,01,CX,8/F8
+play,1,0,vizqo001,02,LCX,8/F8
+play,1,0,alomr001,10,BX,3/G
+play,1,1,beckr002,32,BBCBCFX,5/L5
+play,1,1,chave001,22,BBSCX,9/F9
+play,1,1,giamj001,31,CBBBB,W
+play,1,1,staim001,11,BCX,7/F7
+play,2,0,ramim002,21,FBBX,S7/7S
+play,2,0,thomj002,22,FBFFBX,8/F8
+play,2,0,sexsr001,22,CBBSFC,K/C
+play,2,0,justd001,20,BBX,43/G
+play,2,1,giamj002,32,FFFBBBX,53/G
+play,2,1,grieb001,00,X,5/FL
+play,2,1,tejam001,12,FBSC,K/C
+play,3,0,frymt001,00,X,8/L8
+play,3,0,diaze002,11,BCX,53/G
+play,3,0,loftk001,22,CBBFC,K/C
+play,3,1,fasas001,12,SBFC,K/C
+play,3,1,velaj001,21,BFBX,9/F9
+play,3,1,beckr002,21,BBCX,S9
+play,3,1,chave001,22,BSCBFS,K
+play,4,0,vizqo001,12,CBFX,53/G
+play,4,0,alomr001,22,CBSBFX,3/G
+play,4,0,ramim002,00,X,8/F8D
+play,4,1,giamj001,32,BCBFBFB,W
+play,4,1,staim001,00,X,36(1)3/GDP
+play,4,1,giamj002,20,BBX,7/F7
+play,5,0,thomj002,32,BBBFFB,W
+play,5,0,sexsr001,00,X,9/F9
+play,5,0,justd001,32,BBFCBFB,W.1-2
+play,5,0,frymt001,10,BX,3(B)/BG3/DP.1X2(34);2-H(NR)
+com,"Originally E4, but changed, no RBI and no GDP"
+play,5,1,grieb001,21,BBFX,S8
+play,5,1,tejam001,21,BFBX,4/P4
+play,5,1,fasas001,12,FBFX,2/FL
+play,5,1,velaj001,12,FSBX,2/FL
+play,6,0,diaze002,12,CFBX,S7
+play,6,0,loftk001,00,X,64(1)3/GDP
+play,6,0,vizqo001,22,FBFBC,K/C
+play,6,1,beckr002,31,BBBCX,9/F9
+play,6,1,chave001,02,CCFS,K
+play,6,1,giamj001,22,BBFFFX,S9.BX2(96)
+play,7,0,alomr001,21,BBCX,S7
+play,7,0,ramim002,01,FX,D/78D.1-3
+play,7,0,thomj002,22,FSFFFBBFFFX,D/89D.3-H;2-H
+play,7,0,sexsr001,00,X,D/78.2-H
+play,7,0,justd001,00,,NP
+sub,joned001,"Doug Jones",1,0,1
+play,7,0,justd001,01,CX,8(B)5(2)/FDP
+play,7,0,frymt001,11,CBX,53/G
+play,7,1,staim001,12,CSBS,K
+play,7,1,giamj002,00,X,63/G
+play,7,1,grieb001,21,CBBX,S9
+play,7,1,tejam001,10,BX,3/FL
+play,8,0,diaze002,12,BCSFC,K/C
+play,8,0,loftk001,01,CX,7/F7
+play,8,0,vizqo001,12,CFFBFFS,K23
+play,8,1,fasas001,00,,NP
+sub,hernr002,"Ramon Hernandez",1,8,11
+play,8,1,hernr002,21,CBBX,43/G
+play,8,1,velaj001,00,,NP
+sub,menef001,"Frank Menechino",1,9,11
+play,8,1,menef001,22,SBFBS,K
+play,8,1,beckr002,10,BX,9/F9
+play,9,0,alomr001,00,,NP
+sub,hernr002,"Ramon Hernandez",1,8,2
+play,9,0,alomr001,00,,NP
+sub,menef001,"Frank Menechino",1,9,4
+play,9,0,alomr001,00,,NP
+sub,isrij001,"Jason Isringhausen",1,0,1
+play,9,0,alomr001,02,FCX,HR/9
+play,9,0,ramim002,22,FCBBS,K
+play,9,0,thomj002,02,CSS,K
+play,9,0,sexsr001,10,BX,S9
+play,9,0,justd001,02,CSX,7/FL
+play,9,1,chave001,00,X,3/L3
+play,9,1,giamj001,12,CFBX,S8
+play,9,1,staim001,32,BSBBFX,46(1)3/GDP
+data,er,wrigj002,0
+data,er,hereg001,4
+data,er,joned001,0
+data,er,isrij001,1

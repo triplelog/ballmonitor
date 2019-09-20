@@ -1,0 +1,158 @@
+version,2
+info,visteam,CIN
+info,hometeam,ATL
+info,site,ATL02
+info,date,2000/08/31
+info,number,0
+info,starttime,7:40PM
+info,daynight,night
+info,usedh,false
+info,umphome,wegnm901
+info,ump1b,reynj901
+info,ump2b,relic901
+info,ump3b,willc901
+info,pitches,pitches
+info,temp,71
+info,winddir,rtol
+info,windspeed,8
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,191
+info,attendance,38647
+info,wp,riedj001
+info,lp,millk004
+info,save,gravd001
+start,reesp001,"Pokey Reese",0,1,4
+start,stync001,"Chris Stynes",0,2,5
+start,grifk002,"Ken Griffey",0,3,8
+start,yound001,"Dmitri Young",0,4,7
+start,cases001,"Sean Casey",0,5,3
+start,tuckm001,"Michael Tucker",0,6,9
+start,santb001,"Benito Santiago",0,7,2
+start,sextc001,"Chris Sexton",0,8,6
+start,harnp001,"Pete Harnisch",0,9,1
+start,furcr001,"Rafael Furcal",1,1,6
+start,jonea002,"Andruw Jones",1,2,8
+start,jonec004,"Chipper Jones",1,3,5
+start,galaa001,"Andres Galarraga",1,4,3
+start,surhb001,"B.J. Surhoff",1,5,7
+start,lopej001,"Javy Lopez",1,6,2
+start,jordb001,"Brian Jordan",1,7,9
+start,lockk001,"Keith Lockhart",1,8,4
+start,millk004,"Kevin Millwood",1,9,1
+play,1,0,reesp001,22,BFBCX,63/G
+play,1,0,stync001,01,CX,63/G
+play,1,0,grifk002,32,BCBCBFFS,K
+play,1,1,furcr001,32,BCBBCB,W
+play,1,1,jonea002,01,FX,HR/78.1-H
+play,1,1,jonec004,32,FBFBBB,W
+play,1,1,galaa001,12,CBFC,K+CS2(24)/DP/C
+play,1,1,surhb001,11,BFX,7/F7
+play,2,0,yound001,02,CSS,K
+play,2,0,cases001,12,CBFS,K
+play,2,0,tuckm001,22,BSCBX,9/F9
+play,2,1,lopej001,00,X,6/L6
+play,2,1,jordb001,22,FBFFBS,K
+play,2,1,lockk001,10,BX,5/FL
+play,3,0,santb001,21,BBFX,7/L7
+play,3,0,sextc001,11,BCX,E6/TH
+play,3,0,harnp001,00,X,14/SH.1-2
+play,3,0,reesp001,01,CX,9/F9
+play,3,1,millk004,00,X,9/F9
+play,3,1,furcr001,11,CBX,13/G
+com,"$Harnisch struck on lower right leg; x-rays negative"
+play,3,1,jonea002,00,,NP
+sub,luebl001,"Larry Luebbers",0,9,1
+play,3,1,jonea002,02,SCFX,53/G
+play,4,0,stync001,00,X,8/F8
+play,4,0,grifk002,11,FBX,9/F9D
+play,4,0,yound001,12,FFBFS,K
+play,4,1,jonec004,10,BX,S7
+play,4,1,galaa001,32,SBBBSB,W.1-2
+play,4,1,surhb001,01,SX,5(2)3/GDP.1-2
+play,4,1,lopej001,10,BX,13/G
+play,5,0,cases001,22,FBBFX,S8
+play,5,0,tuckm001,00,X,7/F7
+play,5,0,santb001,32,BSCBBX,8/F8
+play,5,0,sextc001,00,X,S9.1-2
+play,5,0,luebl001,00,,NP
+sub,huntb002,"Brian L. Hunter",0,9,11
+play,5,0,huntb002,10,BX,63/G
+play,5,1,jordb001,00,,NP
+sub,riedj001,"John Riedling",0,9,1
+play,5,1,jordb001,12,BFSX,4/F4
+play,5,1,lockk001,21,CBBX,43/G
+play,5,1,millk004,32,BSSBBS,K
+play,6,0,reesp001,12,CBSX,S7/7S
+play,6,0,stync001,12,CFBX,D7/7D.1-3
+play,6,0,grifk002,10,BX,43/G.3-H;2-3
+play,6,0,yound001,00,X,S9/9S.3-H
+play,6,0,cases001,32,FFBFBBX,D8/8D.1-H
+play,6,0,tuckm001,21,FBBX,63/G
+play,6,0,santb001,21,BBFX,S7.2-H
+play,6,0,sextc001,11,CBB,SB2
+play,6,0,sextc001,31,CBBII,IW
+play,6,0,riedj001,00,,NP
+sub,kamis001,"Scott Kamieniecki",1,9,1
+play,6,0,riedj001,22,BBCFC,K/C
+play,6,1,furcr001,30,BBBB,W
+play,6,1,jonea002,12,CCBFH,HP.1-2
+play,6,1,jonec004,02,SSX,7(B)4(1)/FDP
+play,6,1,galaa001,32,BBFSBB,W
+play,6,1,surhb001,00,,NP
+sub,reyed001,"Dennys Reyes",0,9,1
+play,6,1,surhb001,12,BFSX,S8.2-H;1-2
+play,6,1,lopej001,00,,NP
+sub,sulls001,"Scott Sullivan",0,9,1
+play,6,1,lopej001,02,SSS,K
+play,7,0,reesp001,31,BCBBB,W
+play,7,0,stync001,00,,NP
+sub,mulht001,"Terry Mulholland",1,9,1
+play,7,0,stync001,02,CCX,7/F7
+play,7,0,grifk002,20,BBX,9/F9
+play,7,0,yound001,02,SCFB,SB2
+play,7,0,yound001,12,SCFBFX,4/P4
+play,7,1,jordb001,22,BFBFS,K
+play,7,1,lockk001,02,CSS,K
+play,7,1,mulht001,00,,NP
+sub,joynw001,"Wally Joyner",1,9,11
+play,7,1,joynw001,30,BBBB,W
+play,7,1,furcr001,00,,NP
+sub,weisw001,"Walt Weiss",1,9,12
+play,7,1,furcr001,30,BBBB,W.1-2
+play,7,1,jonea002,32,BBCBCB,W.2-3;1-2
+play,7,1,jonec004,12,BCCS,K
+play,8,0,cases001,00,,NP
+sub,rockj001,"John Rocker",1,9,1
+play,8,0,cases001,01,CX,3/L3
+play,8,0,tuckm001,02,SSS,K
+play,8,0,santb001,12,CFBX,5/L5
+play,8,1,galaa001,01,SX,63/G
+play,8,1,surhb001,22,CBBFX,S7
+play,8,1,lopej001,02,CFS,K
+play,8,1,jordb001,21,BSBX,3/FL
+play,9,0,sextc001,01,CX,7/F7
+play,9,0,sulls001,00,,NP
+sub,ochoa001,"Alex Ochoa",0,9,11
+play,9,0,ochoa001,02,CSX,7/F7D
+play,9,0,reesp001,11,BCX,S8
+play,9,0,stync001,02,CSB,SB2
+play,9,0,stync001,22,CSBBS,K
+play,9,1,lockk001,00,,NP
+sub,gravd001,"Danny Graves",0,9,1
+play,9,1,lockk001,32,BBCFBS,K
+play,9,1,rockj001,00,,NP
+sub,bonib001,"Bobby Bonilla",1,9,11
+play,9,1,bonib001,00,X,43/G
+play,9,1,furcr001,32,CBBBCX,53/G
+data,er,harnp001,2
+data,er,luebl001,0
+data,er,riedj001,1
+data,er,reyed001,0
+data,er,sulls001,0
+data,er,gravd001,0
+data,er,millk004,4
+data,er,kamis001,0
+data,er,mulht001,0
+data,er,rockj001,0

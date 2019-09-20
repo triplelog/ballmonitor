@@ -1,0 +1,156 @@
+version,2
+info,visteam,PIT
+info,hometeam,CIN
+info,site,CIN08
+info,date,2000/05/16
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,tscht901
+info,ump1b,meric901
+info,ump2b,gibsg901
+info,ump3b,ripps901
+info,pitches,pitches
+info,temp,68
+info,winddir,tocf
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,182
+info,attendance,26271
+info,wp,bellr003
+info,lp,ritct001
+info,save,
+start,browa001,"Adrian Brown",0,1,8
+start,morrw001,"Warren Morris",0,2,4
+start,kendj001,"Jason Kendall",0,3,2
+start,gileb002,"Brian Giles",0,4,9
+start,younk001,"Kevin Young",0,5,3
+start,vandj001,"John Vander Wal",0,6,7
+start,mearp001,"Pat Meares",0,7,6
+start,sojol001,"Luis Sojo",0,8,5
+start,ritct001,"Todd Ritchie",0,9,1
+start,reesp001,"Pokey Reese",1,1,4
+start,larkb001,"Barry Larkin",1,2,6
+start,grifk002,"Ken Griffey",1,3,8
+start,yound001,"Dmitri Young",1,4,7
+start,cases001,"Sean Casey",1,5,3
+start,taube001,"Eddie Taubensee",1,6,2
+start,boona001,"Aaron Boone",1,7,5
+start,tuckm001,"Michael Tucker",1,8,9
+start,bellr003,"Rob Bell",1,9,1
+play,1,0,browa001,01,CX,8/F8D
+play,1,0,morrw001,10,BX,S8
+play,1,0,kendj001,31,BBBCB,W.1-2
+play,1,0,gileb002,21,BBFX,46(1)3/GDP
+play,1,1,reesp001,11,BFX,53/G
+play,1,1,larkb001,11,CBX,9/F9
+play,1,1,grifk002,32,BBCBFS,K
+play,2,0,younk001,12,BFFX,5/P5
+play,2,0,vandj001,32,CBCBFFBS,K
+play,2,0,mearp001,32,BBCBSFX,63/G
+play,2,1,yound001,22,BBCCX,43/G
+play,2,1,cases001,32,BFCFBFBFFFB,W
+play,2,1,taube001,22,CSBBX,S8.1-3
+play,2,1,boona001,01,CX,8/SF.3-H
+play,2,1,tuckm001,01,FX,D9.1-3
+play,2,1,bellr003,02,SSS,K
+play,3,0,sojol001,32,BSBBFX,S7/7S
+play,3,0,ritct001,02,LLL,K/BF
+play,3,0,browa001,01,CX,36(1)/FO
+play,3,0,morrw001,00,B,SB2
+play,3,0,morrw001,30,BBBB,W
+play,3,0,kendj001,21,BBCX,8/F8S
+play,3,1,reesp001,01,CX,63/G
+play,3,1,larkb001,00,X,63/G
+play,3,1,grifk002,22,BBFFX,S9
+play,3,1,yound001,22,FFBFBFFX,43/G
+play,4,0,gileb002,32,BBCCBFFB,W
+play,4,0,younk001,12,FBSS,K
+play,4,0,vandj001,10,BX,S9.1-2
+play,4,0,mearp001,20,BBX,5(2)4(1)/GDP
+play,4,1,cases001,32,BCBBFFX,S
+play,4,1,taube001,22,BCFBX,S7.1-2
+play,4,1,boona001,00,X,S.2-3;1-2
+play,4,1,tuckm001,20,BBX,8/SF.3-H;2-3
+play,4,1,bellr003,01,SX,E2/TH.1-2
+play,4,1,reesp001,12,BCFS,K
+play,4,1,larkb001,10,BX,6/P6
+play,5,0,sojol001,00,X,7/FL
+play,5,0,ritct001,10,BX,S7
+play,5,0,browa001,32,BBBCCX,7/F7D
+play,5,0,morrw001,00,X,3/G
+play,5,1,grifk002,11,BCX,D7/7D
+play,5,1,yound001,22,FBFBX,S7.2-H
+play,5,1,cases001,10,BX,46(1)3/GDP
+play,5,1,taube001,31,BBBSX,S9/9S
+play,5,1,boona001,02,SSS,K
+play,6,0,kendj001,01,CX,D/78
+play,6,0,gileb002,00,X,9/F9D.2-3
+play,6,0,younk001,20,BBX,53/G.3-H
+play,6,0,vandj001,22,SCBBX,S7/7S
+play,6,0,mearp001,01,SX,3/P3
+play,6,1,tuckm001,00,,NP
+sub,manzj001,"Josias Manzanillo",0,9,1
+play,6,1,tuckm001,30,BBBB,W
+play,6,1,bellr003,01,SX,3/SH.1-2
+play,6,1,reesp001,12,CBSFX,9/F9D.2-3
+play,6,1,larkb001,30,BBBB,W
+play,6,1,grifk002,00,,NP
+sub,saues001,"Scott Sauerbeck",0,9,1
+play,6,1,grifk002,10,BC,SBH
+play,6,1,grifk002,11,BCB,BK.1-2
+play,6,1,grifk002,31,BCBBB,W
+play,6,1,yound001,10,BB,SB3;SB2
+play,6,1,yound001,30,BBII,IW
+play,6,1,cases001,11,BCX,43/G
+play,7,0,sojol001,00,,NP
+sub,sulls001,"Scott Sullivan",1,9,1
+play,7,0,sojol001,00,X,S8/8S
+play,7,0,saues001,00,,NP
+sub,browe001,"Emil Brown",0,9,11
+play,7,0,browe001,22,SBFFBS,K
+play,7,0,browa001,12,CBFFB,WP.1-2
+play,7,0,browa001,32,CBFFBBX,9/F9
+play,7,0,morrw001,10,BX,63/G
+play,7,1,taube001,00,,NP
+sub,wallj001,"Jeff Wallace",0,9,1
+play,7,1,taube001,22,BFCBX,S9
+play,7,1,boona001,22,BBCFX,9/F9
+play,7,1,tuckm001,00,X,D9.1-3
+play,7,1,sulls001,00,,NP
+sub,stync001,"Chris Stynes",1,9,11
+play,7,1,stync001,01,CX,3/P3
+play,7,1,reesp001,22,CBBCX,S7/7S.3-H;2-H;BX2(754)
+play,8,0,kendj001,00,,NP
+sub,wills002,"Scott Williamson",1,9,1
+play,8,0,kendj001,31,BBBCB,W
+play,8,0,gileb002,02,CFB,PB.1-2
+play,8,0,gileb002,12,CFBB,WP.2-3
+play,8,0,gileb002,22,CFBBX,43/G.3-H
+play,8,0,younk001,32,BBBCCS,K
+play,8,0,vandj001,21,BBCX,S8
+play,8,0,mearp001,21,CBBX,46(1)/FO
+play,8,1,larkb001,00,,NP
+sub,garcm002,"Mike Garcia",0,9,1
+play,8,1,larkb001,31,BBSBB,W
+play,8,1,grifk002,21,BFBX,6/P6
+play,8,1,yound001,31,BBFBC,CS2(26)
+play,8,1,yound001,32,BBFBCB,W
+play,8,1,cases001,00,X,46(1)/FO
+play,9,0,sojol001,11,BCX,S9
+play,9,0,garcm002,00,,NP
+sub,avenb001,"Bruce Aven",0,9,11
+play,9,0,avenb001,22,BCSFBX,7/F7
+play,9,0,browa001,22,BBCCS,K
+play,9,0,morrw001,12,CBCS,K
+data,er,ritct001,3
+data,er,manzj001,1
+data,er,saues001,0
+data,er,wallj001,2
+data,er,garcm002,0
+data,er,bellr003,1
+data,er,sulls001,0
+data,er,wills002,1

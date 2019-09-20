@@ -1,0 +1,145 @@
+version,2
+info,visteam,COL
+info,hometeam,SFN
+info,site,SFO03
+info,date,2000/05/06
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,false
+info,umphome,relic901
+info,ump1b,carlm901
+info,ump2b,demud901
+info,ump3b,eddid901
+info,pitches,pitches
+info,temp,57
+info,winddir,tolf
+info,windspeed,15
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,175
+info,attendance,40930
+info,wp,estes001
+info,lp,arror001
+info,save,
+start,huntb002,"Brian L. Hunter",0,1,8
+start,lansm001,"Mike Lansing",0,2,4
+start,walkl001,"Larry Walker",0,3,9
+start,cirij001,"Jeff Cirillo",0,4,5
+start,heltt001,"Todd Helton",0,5,3
+start,hammj001,"Jeffrey Hammonds",0,6,7
+start,peren001,"Neifi Perez",0,7,6
+start,servs002,"Scott Servais",0,8,2
+start,arror001,"Rolando Arrojo",0,9,1
+start,benam001,"Marvin Benard",1,1,8
+start,muelb001,"Bill Mueller",1,2,5
+start,snowj001,"J.T. Snow",1,3,3
+start,kentj001,"Jeff Kent",1,4,4
+start,burke001,"Ellis Burks",1,5,9
+start,riosa001,"Armando Rios",1,6,7
+start,martr003,"Ramon E. Martinez",1,7,6
+start,mirad001,"Doug Mirabelli",1,8,2
+start,estes001,"Shawn Estes",1,9,1
+play,1,0,huntb002,12,CFBFFX,43/G
+play,1,0,lansm001,00,X,S5/BG5
+play,1,0,walkl001,20,BBX,7/F7
+play,1,0,cirij001,00,X,53/G
+play,1,1,benam001,12,CFBC,K/C
+play,1,1,muelb001,20,BBX,31/G
+play,1,1,snowj001,31,BBBCX,43/G
+play,2,0,heltt001,00,X,6/P6
+play,2,0,hammj001,32,BBBCFX,S8
+play,2,0,peren001,00,X,S7/7S.1-2
+play,2,0,servs002,10,BB,SB3
+play,2,0,servs002,31,BBFBX,3/P3
+play,2,0,arror001,10,BX,43/G
+play,2,1,kentj001,22,BBSCX,S7
+play,2,1,burke001,22,CFFBFBS,K+SB2
+play,2,1,riosa001,12,BSCS,K
+play,2,1,martr003,31,BBCBB,W
+play,2,1,mirad001,01,CX,64(1)/FO
+play,3,0,huntb002,11,SBX,S
+play,3,0,lansm001,30,BBBB,W.1-2
+play,3,0,walkl001,11,BCX,9/F9
+play,3,0,cirij001,30,BBBC,SB3;SB2
+play,3,0,cirij001,31,BBBCB,W
+play,3,0,heltt001,11,BCX,6(1)3/GDP
+play,3,1,estes001,22,CCBBX,4/P4
+play,3,1,benam001,32,CBBFBB,W
+play,3,1,muelb001,21,BCBX,53/DP.1X3(36)
+com,"rounded base too far"
+play,4,0,hammj001,22,FFBBS,K
+play,4,0,peren001,12,BFLC,K/C
+play,4,0,servs002,10,BX,43/G
+play,4,1,snowj001,22,FBFBH,HP
+play,4,1,kentj001,30,BBBB,W.1-2
+play,4,1,burke001,31,BCBBX,15(2)3/GDP.1-2
+play,4,1,riosa001,01,FX,S.2-H(E4/TH)(UR)
+play,4,1,martr003,10,BX,8/F8
+play,5,0,arror001,00,X,53/G
+play,5,0,huntb002,11,CBX,S7.BX1(73)
+play,5,0,lansm001,00,X,S8
+play,5,0,walkl001,30,BBBB,W.1-2
+play,5,0,cirij001,01,CX,5(2)/FO.1-2
+play,5,1,mirad001,10,BX,S7/7S
+play,5,1,estes001,02,LFX,S8.1-2
+play,5,1,benam001,01,LX,8/F8.2-3
+play,5,1,muelb001,10,BX,8/SF.3-H
+play,5,1,snowj001,12,CSBC,K/C
+play,6,0,heltt001,22,CBCBX,D/78
+play,6,0,hammj001,00,X,53/G.2-3
+play,6,0,peren001,12,FCBFS,K
+play,6,0,servs002,10,BX,8/L8
+play,6,1,kentj001,22,BBFFX,T/89D
+play,6,1,burke001,00,H,HP
+play,6,1,riosa001,00,,NP
+sub,murrc001,"Calvin Murray",1,5,12
+play,6,1,riosa001,00,X,D9.3-H;1-3
+play,6,1,martr003,30,IIII,IW
+play,6,1,mirad001,11,BFX,S9.3-H;2-H;1-3
+play,6,1,estes001,00,,NP
+sub,whitg001,"Gabe White",0,9,1
+play,6,1,estes001,02,CFFFS,K
+play,6,1,benam001,12,CBSS,K
+play,6,1,muelb001,00,X,5/L5
+play,7,0,whitg001,00,,NP
+sub,benam001,"Marvin Benard",1,1,9
+play,7,0,whitg001,00,,NP
+sub,murrc001,"Calvin Murray",1,5,8
+play,7,0,whitg001,00,,NP
+sub,ledea001,"Aaron Ledesma",0,9,11
+play,7,0,ledea001,32,BBBCCC,K/C
+play,7,0,huntb002,22,BCBCX,9/F9
+play,7,0,lansm001,20,BBX,9/F9
+play,7,1,snowj001,00,,NP
+sub,dejem001,"Mike DeJean",0,9,1
+play,7,1,snowj001,12,CBFX,2/FL
+play,7,1,kentj001,11,CBX,S7
+play,7,1,murrc001,11,FBX,8/F8
+play,7,1,riosa001,11,BCB,SB2
+play,7,1,riosa001,31,BCBBB,W
+play,7,1,martr003,11,BFB,WP.2-3;1-2
+play,7,1,martr003,22,BFBFX,63/G
+play,8,0,walkl001,00,X,7/F7S
+play,8,0,cirij001,22,CBFBX,S7.BX2(74)
+play,8,0,heltt001,32,BCCBFBS,K
+play,8,1,mirad001,22,BBFCX,5/P5
+play,8,1,estes001,32,CBCBFBX,63/G
+play,8,1,benam001,32,BBSFBB,W
+play,8,1,muelb001,01,CX,D9.1-H
+play,8,1,snowj001,00,,NP
+sub,myerm001,"Mike Myers",0,9,1
+play,8,1,snowj001,22,CBBFFX,43/G
+play,9,0,hammj001,12,BCFS,K
+play,9,0,peren001,31,BBBCX,S8
+play,9,0,servs002,22,CBFBX,8/F8
+play,9,0,myerm001,00,,NP
+sub,shumt001,"Terry Shumpert",0,9,11
+play,9,0,shumt001,01,CB,DI.1-2
+play,9,0,shumt001,22,CBFBFX,53/G
+data,er,arror001,4
+data,er,whitg001,0
+data,er,dejem001,1
+data,er,myerm001,0
+data,er,estes001,0

@@ -1,0 +1,143 @@
+version,2
+info,visteam,PHI
+info,hometeam,HOU
+info,site,HOU03
+info,date,2000/05/25
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,eddid901
+info,ump1b,relic901
+info,ump2b,carlm901
+info,ump3b,demud901
+info,pitches,pitches
+info,temp,87
+info,winddir,rtol
+info,windspeed,15
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,171
+info,attendance,34736
+info,wp,elars001
+info,lp,ashba002
+info,save,slusj001
+start,gland001,"Doug Glanville",0,1,8
+start,gantr001,"Ron Gant",0,2,7
+start,abreb001,"Bobby Abreu",0,3,9
+start,liebm001,"Mike Lieberthal",0,4,2
+start,burrp001,"Pat Burrell",0,5,3
+start,jordk001,"Kevin Jordan",0,6,5
+start,moram001,"Mickey Morandini",0,7,4
+start,relad001,"Desi Relaford",0,8,6
+start,ashba002,"Andy Ashby",0,9,1
+start,ceder001,"Roger Cedeno",1,1,9
+start,biggc001,"Craig Biggio",1,2,4
+start,bagwj001,"Jeff Bagwell",1,3,3
+start,camik001,"Ken Caminiti",1,4,5
+start,aloum001,"Moises Alou",1,5,7
+start,hidar001,"Richard Hidalgo",1,6,8
+start,melum001,"Mitch Meluskey",1,7,2
+start,bogat001,"Tim Bogar",1,8,6
+start,elars001,"Scott Elarton",1,9,1
+play,1,0,gland001,11,BCX,S7/7S
+play,1,0,gantr001,02,FFX,3/FL
+play,1,0,abreb001,22,CFFBBFX,HR/9.1-H
+play,1,0,liebm001,22,CBBSX,43/G
+play,1,0,burrp001,12,BCCFS,K
+play,1,1,ceder001,01,CX,7/F7
+play,1,1,biggc001,02,CFFX,S9
+play,1,1,bagwj001,01,SX,HR/7.1-H
+play,1,1,camik001,32,BBBSFFFB,W
+play,1,1,aloum001,20,BBX,S7.1-3
+play,1,1,hidar001,21,BFBX,7/SF.3-H
+play,1,1,melum001,01,CX,43/G
+play,2,0,jordk001,01,CX,43/G
+play,2,0,moram001,12,CBFX,8/F8D
+play,2,0,relad001,12,CCBS,K
+play,2,1,bogat001,00,X,2/P2
+play,2,1,elars001,01,CX,53/G
+play,2,1,ceder001,20,BBX,63/G
+com,"ej,frant001,M,eddid901,Balls and strikes"
+com,"Phillies manager Terry Francona ejected by HP umpire Doug Eddings in third"
+play,3,0,ashba002,01,CX,4/P4
+play,3,0,gland001,11,CBX,S8/8S
+play,3,0,gantr001,00,X,13/G.1-2
+play,3,0,abreb001,01,CX,8/F8
+play,3,1,biggc001,22,CBBFX,4/P4
+play,3,1,bagwj001,12,CBSS,K
+play,3,1,camik001,01,CX,3/G#
+play,4,0,liebm001,00,X,5/L5
+play,4,0,burrp001,12,CBCX,9/F9
+play,4,0,jordk001,30,BBBB,W
+play,4,0,moram001,32,CBBCFBB,W.1-2
+play,4,0,relad001,00,X,T9.2-H;1-H
+play,4,0,ashba002,20,BBX,8/F8
+play,4,1,aloum001,12,FFBX,8/F8
+play,4,1,hidar001,22,FCBBX,HR/7
+play,4,1,melum001,22,BCBFX,S7
+play,4,1,bogat001,01,FX,S7.1-2
+play,4,1,elars001,00,X,13/SH.2-3;1-2#
+play,4,1,ceder001,12,BSFX,S.3-H;2-H(E3/TH)(UR)
+play,4,1,biggc001,00,,NP
+sub,spieb001,"Bill Spiers",1,1,12
+play,4,1,biggc001,22,BFBFX,7/F7D
+play,5,0,gland001,00,,NP
+sub,spieb001,"Bill Spiers",1,1,9
+play,5,0,gland001,02,CFFFFFS,K
+play,5,0,gantr001,10,BX,7/F7D
+play,5,0,abreb001,11,CBX,S9/9S
+play,5,0,liebm001,11,BFX,63/G
+play,5,1,bagwj001,02,SSX,S7/7S
+play,5,1,camik001,01,FX,HR/9.1-H
+play,5,1,aloum001,21,BBSX,53/G
+play,5,1,hidar001,32,BBCBFFX,7/F7
+play,5,1,melum001,00,X,43/G
+play,6,0,burrp001,22,BSFBX,HR/78
+play,6,0,jordk001,11,CBX,43/G
+play,6,0,moram001,00,X,3/G#
+play,6,0,relad001,21,BBCX,HR/9
+play,6,0,ashba002,00,,NP
+sub,duceb001,"Rob Ducey",0,9,11
+play,6,0,duceb001,32,BCBBFC,K/C
+play,6,1,bogat001,00,,NP
+sub,schrs001,"Steve Schrenk",0,9,1
+play,6,1,bogat001,01,CX,8/F8
+play,6,1,elars001,00,,NP
+sub,johnr006,"Russ Johnson",1,9,11
+play,6,1,johnr006,22,BFFBX,9/F9S
+play,6,1,spieb001,12,CBCFC,K/C
+play,7,0,gland001,00,,NP
+sub,slusj001,"Joe Slusarski",1,9,1
+play,7,0,gland001,02,CFFS,K
+play,7,0,gantr001,12,FCFBC,K/C
+play,7,0,abreb001,22,BBCFX,43/G
+play,7,1,biggc001,12,SBFFS,K
+play,7,1,bagwj001,12,BCCX,63/G
+play,7,1,camik001,22,BSBSS,K
+play,8,0,liebm001,10,BX,13/G
+play,8,0,burrp001,02,CSS,K
+play,8,0,jordk001,02,CSX,4/P4
+play,8,1,aloum001,00,,NP
+sub,boydj001,"Jason Boyd",0,9,1
+play,8,1,aloum001,31,BBFBB,W
+play,8,1,hidar001,10,BB,CS2(24)
+play,8,1,hidar001,31,BBCBX,D7/7D
+play,8,1,melum001,10,BX,HR/9.2-H
+play,8,1,bogat001,00,X,63/G
+play,8,1,slusj001,22,BFBSX,3/G#
+play,9,0,moram001,12,CBFFFFX,9/F9
+play,9,0,relad001,21,BBCX,D/78D
+play,9,0,boydj001,00,,NP
+sub,sefck001,"Kevin Sefcik",0,9,11
+play,9,0,sefck001,21,CBBX,43/G.2-3
+com,"ej,cottc101,C,relic901,Call at 1B"
+com,"Phillies coach (acting manager) Chuck Cottier ejected by"
+com,"1B umpire Charlie Reliford"
+play,9,0,gland001,11,BCX,63/G
+data,er,ashba002,7
+data,er,schrs001,0
+data,er,boydj001,2
+data,er,elars001,6
+data,er,slusj001,0

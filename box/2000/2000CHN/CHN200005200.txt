@@ -1,0 +1,152 @@
+version,2
+info,visteam,CIN
+info,hometeam,CHN
+info,site,CHI11
+info,date,2000/05/20
+info,number,0
+info,starttime,1:20PM
+info,daynight,day
+info,usedh,false
+info,umphome,reilm901
+info,ump1b,kellj901
+info,ump2b,coope901
+info,ump3b,diazl901
+info,pitches,pitches
+info,temp,64
+info,winddir,ltor
+info,windspeed,12
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,186
+info,attendance,39101
+info,wp,villr001
+info,lp,liebj001
+info,save,gravd001
+start,reesp001,"Pokey Reese",0,1,4
+start,larkb001,"Barry Larkin",0,2,6
+start,grifk002,"Ken Griffey",0,3,8
+start,yound001,"Dmitri Young",0,4,7
+start,cases001,"Sean Casey",0,5,3
+start,bichd001,"Dante Bichette",0,6,9
+start,taube001,"Eddie Taubensee",0,7,2
+start,boona001,"Aaron Boone",0,8,5
+start,villr001,"Ron Villone",0,9,1
+start,youne001,"Eric Young",1,1,4
+start,gutir001,"Ricky Gutierrez",1,2,6
+start,martd002,"Dave Martinez",1,3,3
+start,sosas001,"Sammy Sosa",1,4,9
+start,hillg001,"Glenallen Hill",1,5,7
+start,nievj002,"Jose Nieves",1,6,5
+start,bufod001,"Damon Buford",1,7,8
+start,giraj001,"Joe Girardi",1,8,2
+start,liebj001,"Jon Lieber",1,9,1
+play,1,0,reesp001,12,FCBX,1/L1
+play,1,0,larkb001,32,CFBBFBC,K/C
+play,1,0,grifk002,32,BBFBFB,W
+play,1,0,yound001,10,BX,D7.1-H
+play,1,0,cases001,01,CX,S7.2-H
+play,1,0,bichd001,12,CCFFBFFX,S7.1-2
+play,1,0,taube001,00,X,6/P6
+play,1,1,youne001,30,BBBB,W
+play,1,1,gutir001,22,CBFBX,9/F9
+play,1,1,martd002,01,CB,CS2(26)
+com,"ej,youne001,P,coope901,Call at 2B"
+com,"Eric Young ejected by 2B umpire Eric Cooper"
+play,1,1,martd002,22,CBSBX,3/G
+play,2,0,boona001,00,,NP
+sub,nievj002,"Jose Nieves",1,6,4
+play,2,0,boona001,00,,NP
+sub,greew001,"Willie Greene",1,1,5
+play,2,0,boona001,21,BBCX,HR/7
+play,2,0,villr001,01,FX,43/G
+play,2,0,reesp001,30,BBBB,W
+play,2,0,larkb001,01,CX,S7.1-H(E7);B-2
+play,2,0,grifk002,22,FCBFBFX,S9.2-H(UR)
+play,2,0,yound001,00,C,CS2(26)
+play,2,0,yound001,02,CSS,K
+play,2,1,sosas001,21,CBBX,9/F9
+play,2,1,hillg001,31,CBBBB,W
+play,2,1,nievj002,32,BCBBSB,W.1-2
+play,2,1,bufod001,32,BCSFBBFFX,3/P3
+play,2,1,giraj001,32,BBBCFX,9/L9
+play,3,0,cases001,12,BFCS,K
+play,3,0,bichd001,12,CBCX,3/G
+play,3,0,taube001,11,BCX,7/F7
+play,3,1,liebj001,11,BCX,31/G
+play,3,1,greew001,11,BFX,53/G
+play,3,1,gutir001,11,BCX,S/78
+play,3,1,martd002,10,BX,43/G
+play,4,0,boona001,10,BX,63/G
+play,4,0,villr001,22,FBBSX,5/L5
+play,4,0,reesp001,01,FX,8/F8S
+play,4,1,sosas001,22,CBFBFFFS,K
+play,4,1,hillg001,11,BFX,53/G
+play,4,1,nievj002,22,CCBBX,D9
+play,4,1,bufod001,31,BFBBX,7/L7
+play,5,0,larkb001,02,CFX,2/FL
+play,5,0,grifk002,31,CBBBB,W
+play,5,0,yound001,00,X,46(1)3/GDP
+play,5,1,giraj001,02,CSX,9/F9
+play,5,1,liebj001,22,BBCFX,S9
+play,5,1,greew001,11,BCX,D9.1-3
+play,5,1,gutir001,32,BCBFBS,K
+play,5,1,martd002,12,BCFX,9/L9
+play,6,0,cases001,01,CX,53/G
+play,6,0,bichd001,00,X,8/F8
+play,6,0,taube001,01,FX,3/G
+play,6,1,sosas001,10,BX,4/P4
+play,6,1,hillg001,12,FCBX,S7
+play,6,1,nievj002,00,X,8/F8
+play,6,1,bufod001,32,BSBSFBX,43/G
+play,7,0,boona001,11,CBX,7/F7
+play,7,0,villr001,11,CBX,43/G
+play,7,0,reesp001,22,CCBBS,K
+play,7,1,giraj001,11,BFX,S
+play,7,1,liebj001,00,,NP
+sub,zulej001,"Julio Zuleta",1,9,11
+play,7,1,zulej001,12,FFBX,S9.1-3
+play,7,1,greew001,11,FBX,S.3-3;1-2
+play,7,1,gutir001,32,BFFBBX,S8/8D.3-H;2-3;1-2
+play,7,1,martd002,00,,NP
+sub,wills002,"Scott Williamson",0,9,1
+play,7,1,martd002,32,BBFFBFFX,46(1)/FO.3-H;2-3
+play,7,1,sosas001,21,CBBX,8/SF.3-H
+play,7,1,hillg001,02,SFB,WP.1-2
+play,7,1,hillg001,12,SFBS,K
+play,8,0,larkb001,00,,NP
+sub,martd002,"Dave Martinez",1,3,7
+play,8,0,larkb001,00,,NP
+sub,zulej001,"Julio Zuleta",1,9,3
+play,8,0,larkb001,00,,NP
+sub,farnk001,"Kyle Farnsworth",1,5,1
+play,8,0,larkb001,10,BX,D7
+play,8,0,grifk002,12,CBFFFX,3/L3
+play,8,0,yound001,30,BBBB,W
+play,8,0,cases001,00,,NP
+sub,heref001,"Felix Heredia",1,5,1
+play,8,0,cases001,10,BX,6(1)3/GDP
+play,8,1,nievj002,02,SSX,43/G
+play,8,1,bufod001,12,CFFBS,K23
+play,8,1,giraj001,31,BBBCX,3/G
+play,9,0,bichd001,31,BBBCX,7/F7
+play,9,0,taube001,02,CCFS,K
+play,9,0,boona001,21,BCBX,S7/7S
+play,9,0,wills002,00,,NP
+sub,stync001,"Chris Stynes",0,9,11
+play,9,0,stync001,01,CX,7/F7
+play,9,1,zulej001,00,,NP
+sub,tuckm001,"Michael Tucker",0,6,9
+play,9,1,zulej001,00,,NP
+sub,gravd001,"Danny Graves",0,9,1
+play,9,1,zulej001,32,BBBCCX,63/G
+play,9,1,greew001,12,SBFS,K
+play,9,1,gutir001,01,SX,E6/TH1
+play,9,1,martd002,12,BCFFX,S.1-2
+play,9,1,sosas001,00,X,53/G
+data,er,villr001,3
+data,er,wills002,0
+data,er,gravd001,0
+data,er,liebj001,4
+data,er,farnk001,0
+data,er,heref001,0

@@ -1,0 +1,160 @@
+version,2
+info,visteam,BOS
+info,hometeam,BAL
+info,site,BAL12
+info,date,2000/07/20
+info,number,1
+info,starttime,1:35PM
+info,daynight,day
+info,usedh,true
+info,umphome,lampi901
+info,ump1b,morrd901
+info,ump2b,danlk901
+info,ump3b,barkl901
+info,pitches,pitches
+info,temp,81
+info,winddir,ltor
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,192
+info,attendance,42048
+info,wp,martr002
+info,lp,ponss001
+info,save,
+start,offej001,"Jose Offerman",0,1,3
+start,fryej001,"Jeff Frye",0,2,4
+start,everc001,"Carl Everett",0,3,8
+start,garcn001,"Nomar Garciaparra",0,4,6
+start,oleat001,"Troy O'Leary",0,5,7
+start,burkm001,"Morgan Burkhart",0,6,10
+start,sprae001,"Ed Sprague",0,7,5
+start,varij001,"Jason Varitek",0,8,2
+start,lewid001,"Darren Lewis",0,9,9
+start,martr002,"Ramon Martinez",0,0,1
+start,andeb001,"Brady Anderson",1,1,8
+start,bordm001,"Mike Bordick",1,2,6
+start,deshd001,"Delino DeShields",1,3,4
+start,bellj002,"Albert Belle",1,4,9
+start,surhb001,"B.J. Surhoff",1,5,7
+start,clarw001,"Will Clark",1,6,3
+start,bainh001,"Harold Baines",1,7,10
+start,myerg001,"Greg Myers",1,8,2
+start,coffi001,"Ivanon Coffie",1,9,5
+start,ponss001,"Sidney Ponson",1,0,1
+play,1,0,offej001,22,CBBFX,S8
+play,1,0,fryej001,02,CFS,K
+play,1,0,everc001,01,CX,HR/9.1-H
+play,1,0,garcn001,11,BFX,53/G
+play,1,0,oleat001,00,X,D7
+play,1,0,burkm001,02,SSS,K
+play,1,1,andeb001,00,,NP
+sub,offej001,"Jose Offerman",0,1,4
+play,1,1,andeb001,00,,NP
+sub,alexm001,"Manny Alexander",0,2,5
+play,1,1,andeb001,00,,NP
+sub,sprae001,"Ed Sprague",0,7,3
+play,1,1,andeb001,12,CCBX,7/F7
+play,1,1,bordm001,01,SX,S9
+play,1,1,deshd001,32,BBBCFB,W.1-2
+play,1,1,bellj002,20,BBC,SB3
+play,1,1,bellj002,21,BBCB,SB2
+play,1,1,bellj002,32,BBCBSB,W
+play,1,1,surhb001,00,X,5/FL
+play,1,1,clarw001,00,X,HR/9.3-H;2-H;1-H
+play,1,1,bainh001,31,CBBBB,W
+play,1,1,myerg001,32,SSBBBS,K
+play,2,0,sprae001,22,BSSBFX,D7
+play,2,0,varij001,12,FCBS,K
+play,2,0,lewid001,00,X,31/G.2-3
+play,2,0,offej001,12,FFBX,7/F7
+play,2,1,coffi001,22,BFBCX,43/G
+play,2,1,andeb001,01,CX,1/L1
+play,2,1,bordm001,01,FX,S7/7S
+play,2,1,deshd001,32,CBBBCX,7/F7
+play,3,0,alexm001,02,CSX,7/F7
+play,3,0,everc001,22,SSBBC,K/C
+play,3,0,garcn001,12,SSBX,4/P4
+play,3,1,bellj002,00,X,7/F7
+play,3,1,surhb001,22,CSBBX,3/G
+play,3,1,clarw001,02,FCX,S9/9S
+play,3,1,bainh001,12,BCSX,8/L8
+play,4,0,oleat001,30,BBBB,W
+play,4,0,burkm001,02,CFS,K
+play,4,0,sprae001,22,FFBFBS,K
+play,4,0,varij001,00,X,D9/9D.1-H
+play,4,0,lewid001,22,BCSBX,S9.2-H
+play,4,0,offej001,11,BCX,S7.1-2
+play,4,0,alexm001,01,CX,S8.2-H;1-2
+play,4,0,everc001,12,CFBS,K
+play,4,1,myerg001,22,BSFBC,K/C
+play,4,1,coffi001,32,SBFBBX,43/G
+play,4,1,andeb001,22,SSFBBX,63/G
+play,5,0,garcn001,00,X,T8/8D
+play,5,0,oleat001,12,BFFX,S9.3-H
+play,5,0,burkm001,22,BCFFBC,K/C
+play,5,0,sprae001,11,BFX,7/F7S
+play,5,0,varij001,00,X,HR/9.1-H
+play,5,0,lewid001,32,BBCBCC,K/C
+play,5,1,bordm001,32,CFBFBBS,K
+play,5,1,deshd001,32,FCBBBFS,K
+play,5,1,bellj002,32,BBFBFX,D7/7D
+play,5,1,surhb001,00,X,D/78D.2-H
+play,5,1,clarw001,32,BCBBSS,K
+play,6,0,offej001,00,,NP
+sub,molig001,"Gabe Molina",1,0,1
+play,6,0,offej001,11,CBX,9/F9D
+play,6,0,alexm001,00,X,8/F8
+play,6,0,everc001,22,CFFBBS,K
+play,6,1,bainh001,00,,NP
+sub,pichh001,"Hipolito Pichardo",0,0,1
+play,6,1,bainh001,01,FX,7/F7
+play,6,1,myerg001,02,FSFX,S8/8S
+play,6,1,coffi001,32,BBBCFFX,43/G.1-2
+play,6,1,andeb001,31,CBBBX,3/G
+play,7,0,garcn001,11,BFX,S
+play,7,0,oleat001,11,CBS,SB2
+play,7,0,oleat001,12,CBSX,S7.2-3
+play,7,0,burkm001,32,BSSBFBX,8/SF.3-H
+play,7,0,sprae001,00,X,6/P6
+play,7,0,varij001,02,FCX,S9.1-2
+play,7,0,lewid001,22,FBSFBC,K/C
+play,7,1,bordm001,32,BFBBFFFFFB,W
+play,7,1,deshd001,10,BX,S9/9S.1-2
+play,7,1,bellj002,00,X,S7.2-H;1-3
+play,7,1,surhb001,11,CBX,46(1)/FO.3-H
+play,7,1,clarw001,22,BBFFFX,36(1)/FO
+play,7,1,bainh001,00,,NP
+sub,garcr001,"Rich Garces",0,0,1
+play,7,1,bainh001,12,FCBFX,S/78.1-3
+play,7,1,myerg001,21,SBBX,3/G
+play,8,0,offej001,00,,NP
+sub,tromm001,"Mike Trombley",1,0,1
+play,8,0,offej001,02,CCX,8/F8
+play,8,0,alexm001,22,CCBBX,3/P3
+play,8,0,everc001,22,BBCSS,K+WP.B-1
+play,8,0,garcn001,32,BSBBFX,D7.1-3
+play,8,0,oleat001,01,SX,S8.3-H;2-H
+play,8,0,burkm001,32,CBBBSS,K
+play,8,1,coffi001,02,CCS,K
+play,8,1,andeb001,11,BFX,31/G
+play,8,1,bordm001,02,CCC,K/C
+play,9,0,sprae001,10,BX,S7/7S
+play,9,0,varij001,00,X,13/SH.1-2
+play,9,0,lewid001,00,X,8/F8
+play,9,0,offej001,01,CX,7/L7
+play,9,1,deshd001,00,,NP
+sub,cormr001,"Rheal Cormier",0,0,1
+play,9,1,deshd001,11,CBX,8/F8
+play,9,1,bellj002,00,X,43/G
+play,9,1,surhb001,21,BBCX,S8
+play,9,1,clarw001,01,CB,DI.1-2
+play,9,1,clarw001,11,CBX,13/G
+data,er,martr002,5
+data,er,pichh001,2
+data,er,garcr001,0
+data,er,cormr001,0
+data,er,ponss001,8
+data,er,molig001,1
+data,er,tromm001,2

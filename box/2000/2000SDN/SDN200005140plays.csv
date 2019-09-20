@@ -1,0 +1,67 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,01,1,,,,,0,2,CX,meadb001,0,1,womat001 homers. ,womat001,0,
+,10,1,,,,,1,4,BX,meadb001,1,0,harrl001 grounds out. ,harrl001,0,G
+,30,1,gonzl001,,,,2,8,BBBB,meadb001,0,0,gonzl001 walks. ,gonzl001,0,
+,22,1,gonzl001,,,,3,15,BSSFFBS,meadb001,1,0,durae001 strikes out. ,durae001,0,
+gonzl001 to 3B. ,01,1,finls001,,gonzl001,,4,17,CX,meadb001,0,0,finls001 singles. ,finls001,0,
+finls001 to 2B. ,32,1,lee-t002,finls001,gonzl001,,5,23,BBBCCB,meadb001,0,0,lee-t002 walks. ,lee-t002,0,
+,10,1,lee-t002,finls001,gonzl001,,6,25,BX,meadb001,1,0,,milld002,0,F
+,12,1,,,,,7,5,CCFBC,daalo001,1,0,owene001 strikes out. ,owene001,1,
+,11,1,river002,,,,8,8,CBX,daalo001,0,0,river002 singles. ,river002,1,
+,31,1,river002,,,,9,13,BCBBX,daalo001,1,0,,sprae001,1,F
+river002 to 2B. ,30,1,nevip001,river002,,,10,17,BBBB,daalo001,0,0,nevip001 walks. ,nevip001,1,
+,32,1,nevip001,river002,,,11,23,BBCFBX,daalo001,1,0,,boonb002,1,F
+,22,2,,,,,12,30,BBFCX,meadb001,1,0,friah001 grounds out. ,friah001,0,G
+,11,2,,,,,13,33,SBX,meadb001,1,0,daalo001 grounds out. ,daalo001,0,G
+,11,2,,,,,14,36,CBX,meadb001,1,0,,womat001,0,F
+,20,2,,,,,15,26,BBX,daalo001,1,0,,roskj001,1,
+,12,2,,,,,16,30,CSBX,daalo001,1,0,gonzw001 grounds out. ,gonzw001,1,G
+,21,2,gomec001,,,,17,34,BBCX,daalo001,0,0,gomec001 singles. ,gomec001,1,
+,10,2,gomec001,,,,18,36,BX,daalo001,1,0,meadb001 grounds out. ,meadb001,1,G
+,10,3,,,,,19,38,BX,meadb001,1,0,harrl001 grounds out. ,harrl001,0,G
+,00,3,,,,,20,39,X,meadb001,1,0,gonzl001 grounds out. ,gonzl001,0,G
+,11,3,,,,,21,42,BCX,meadb001,1,0,,durae001,0,F
+,11,3,,,,,22,39,CBX,daalo001,1,0,,owene001,1,F
+,22,3,,,,,23,44,CCBBS,daalo001,1,0,river002 strikes out. ,river002,1,
+,00,3,,,,,24,45,X,daalo001,1,0,,sprae001,1,F
+,00,4,,,,,25,43,X,meadb001,1,0,finls001 grounds out. ,finls001,0,G
+,02,4,,,,,26,46,CCS,meadb001,1,0,lee-t002 strikes out. ,lee-t002,0,
+,12,4,,,,,27,50,SSBX,meadb001,1,0,milld002 grounds out. ,milld002,0,G
+,01,4,,,,,28,47,CX,daalo001,1,0,,nevip001,1,F
+,02,4,,,,,29,50,CFS,daalo001,1,0,boonb002 strikes out. ,boonb002,1,
+,32,4,,,,,30,57,BBCCBFX,daalo001,1,0,roskj001 grounds out. ,roskj001,1,G
+,32,5,friah001,,,,31,56,CSBBBB,meadb001,0,0,friah001 walks. ,friah001,0,
+friah001 to 2B. ,10,5,,friah001,,,32,58,BX,meadb001,1,0,Sacrifice bunt by daalo001.,daalo001,0,
+friah001 to 3B. ,01,5,,,friah001,,33,60,CX,meadb001,1,0,,womat001,0,G
+,00,5,,,friah001,,34,61,X,meadb001,1,0,harrl001 grounds out. ,harrl001,0,G
+,02,5,,,,,35,60,FFX,daalo001,1,0,gonzw001 grounds out. ,gonzw001,1,G
+,00,5,,,,,36,61,X,daalo001,1,0,gomec001 grounds out. ,gomec001,1,G
+,12,5,,,,,37,65,FBCC,daalo001,1,0,meadb001 strikes out. ,meadb001,1,
+,00,6,,,,,38,62,X,meadb001,1,0,gonzl001 grounds out. ,gonzl001,0,G
+,22,6,,,,,39,69,BBSSFFX,meadb001,1,0,durae001 grounds out. ,durae001,0,G
+,20,6,,,,,40,72,BBX,meadb001,1,0,finls001 grounds out. ,finls001,0,G
+,00,6,,,,,41,66,X,daalo001,1,0,,owene001,1,F
+,11,6,river002,,,,42,69,SBX,daalo001,0,0,river002 reaches on error. ,river002,1,G
+river002 scores. ,00,6,,sprae001,,,43,70,X,daalo001,0,1,sprae001 doubles. ,sprae001,1,
+sprae001 scores. ,02,6,,nevip001,,,44,73,CFX,daalo001,0,1,nevip001 doubles. ,nevip001,1,
+nevip001 to 3B. ,11,6,,,nevip001,,45,76,CBX,daalo001,1,0,boonb002 grounds out. ,boonb002,1,G
+,32,6,roskj001,,nevip001,,46,83,CFBFBBB,daalo001,0,0,roskj001 walks. ,roskj001,1,
+nevip001 scores. dehak001 to 3B. ,01,6,gonzw001,,dehak001,,48,85,SX,daalo001,0,1,gonzw001 reaches on error. ,gonzw001,1,G
+,00,6,gonzw001,,dehak001,,49,86,X,daalo001,1,0,,gomec001,1,P
+,00,7,,,,,52,73,X,meadb001,1,0,,lee-t002,0,G
+,00,7,,,,,53,74,X,meadb001,1,0,,milld002,0,F
+,01,7,,,,,54,76,CX,meadb001,1,0,friah001 grounds out. ,friah001,0,G
+,12,7,,,,,55,90,BFCS,daalo001,1,0,meadb001 strikes out. ,meadb001,1,
+,11,7,,,,,56,93,BCX,daalo001,1,0,owene001 grounds out. ,owene001,1,G
+,11,7,,,,,57,96,CBX,daalo001,1,0,,river002,1,F
+,32,8,fox-a001,,,,59,82,BBCCBX,meadb001,0,0,fox-a001 reaches on error. ,fox-a001,0,G
+fox-a001 out. ,00,8,womat001,,,,60,83,X,meadb001,1,0,womat001 reaches on fielder's choice. ,womat001,0,
+womat001 to 2B. ,00,8,,womat001,,,61,84,X,meadb001,1,0,harrl001 grounds out. ,harrl001,0,G
+,11,8,,womat001,,,62,87,CBX,meadb001,1,0,,gonzl001,0,F
+,10,8,,,,,65,2,BX,padiv001,1,0,sprae001 grounds out. ,sprae001,1,G
+,32,8,,,,,66,8,SBBSBS,padiv001,1,0,nevip001 strikes out. ,nevip001,1,
+,12,8,boonb002,,,,67,14,CFFFBX,padiv001,0,0,boonb002 singles. ,boonb002,1,
+,21,8,boonb002,,,,68,18,BBFX,padiv001,1,0,dehak001 grounds out. ,dehak001,1,G
+,02,9,,,,,70,3,CFS,hofft001,1,0,durae001 strikes out. ,durae001,0,
+,00,9,,,,,71,4,X,hofft001,1,0,,finls001,0,
+,32,9,,,,,72,10,FBBCBC,hofft001,1,0,lee-t002 strikes out. ,lee-t002,0,

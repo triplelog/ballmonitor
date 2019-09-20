@@ -1,0 +1,147 @@
+version,2
+info,visteam,HOU
+info,hometeam,PHI
+info,site,PHI12
+info,date,2000/08/12
+info,number,0
+info,starttime,1:15PM
+info,daynight,day
+info,usedh,false
+info,umphome,gibsg901
+info,ump1b,drakr901
+info,ump2b,meric901
+info,ump3b,ripps901
+info,pitches,pitches
+info,temp,74
+info,winddir,torf
+info,windspeed,8
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,156
+info,attendance,21188
+info,wp,persr001
+info,lp,millw001
+info,save,branj001
+start,lugoj001,"Julio Lugo",0,1,4
+start,spieb001,"Bill Spiers",0,2,5
+start,bagwj001,"Jeff Bagwell",0,3,3
+start,hidar001,"Richard Hidalgo",0,4,8
+start,aloum001,"Moises Alou",0,5,9
+start,berkl001,"Lance Berkman",0,6,7
+start,euset001,"Tony Eusebio",0,7,2
+start,bogat001,"Tim Bogar",0,8,6
+start,millw001,"Wade Miller",0,9,1
+start,gland001,"Doug Glanville",1,1,8
+start,peret003,"Tomas Perez",1,2,6
+start,abreb001,"Bobby Abreu",1,3,9
+start,burrp001,"Pat Burrell",1,4,7
+start,lee-t002,"Travis Lee",1,5,3
+start,jordk001,"Kevin Jordan",1,6,5
+start,andem003,"Marlon Anderson",1,7,4
+start,print001,"Tom Prince",1,8,2
+start,persr001,"Robert Person",1,9,1
+play,1,0,lugoj001,01,CX,8/F8
+play,1,0,spieb001,31,BBCBX,S7
+play,1,0,bagwj001,12,BFSFX,D8/89D.1XH(862)
+play,1,0,hidar001,00,B,WP.2-3
+play,1,0,hidar001,10,BX,4/P4
+com,"2:22 rain delay in bottom first"
+play,1,1,gland001,22,BBCFFFFX,S7
+play,1,1,peret003,00,X,36(1)/FO
+play,1,1,abreb001,20,BBX,S7.1-2
+play,1,1,burrp001,31,BBCBX,S8.2-H;1-3;B-2(TH)
+play,1,1,lee-t002,30,BBBB,W
+play,1,1,jordk001,10,BX,52(3)/FO.2-3;1-2
+play,1,1,andem003,32,BFBSFBFFS,K
+play,2,0,aloum001,22,BFFFBC,K/C
+play,2,0,berkl001,12,FBFX,4/P4
+play,2,0,euset001,10,BX,S9/9D
+play,2,0,bogat001,22,CBBFFX,7/F7
+play,2,1,print001,31,BBFBB,W
+play,2,1,persr001,10,BX,14/SH.1-2
+play,2,1,gland001,11,BCX,13/G
+play,2,1,peret003,02,FFS,K
+play,3,0,millw001,00,X,D/78D
+play,3,0,lugoj001,10,BX,S.2-3
+play,3,0,spieb001,10,BX,8/SF/DP.3-H;1X2(83)
+play,3,0,bagwj001,32,BBSCBFB,W
+play,3,0,hidar001,22,BCBFFFFS,K
+play,3,1,abreb001,32,CBCBFBX,S8
+play,3,1,burrp001,31,BBSBB,W.1-2
+play,3,1,lee-t002,10,BX,7/F7
+play,3,1,jordk001,31,BBFBB,W.2-3;1-2
+play,3,1,andem003,00,X,S8.3-H;2-H;1-2
+play,3,1,print001,32,BBCFBS,K
+play,3,1,persr001,10,BX,64(1)/FO
+play,4,0,aloum001,12,FFBC,K/C
+com,"ej,aloum001,P,gibsg901,Balls and strikes"
+com,"Moises Alou ejected by HP umpire Greg Gibson"
+play,4,0,berkl001,32,SBBBFB,W
+play,4,0,euset001,02,FCX,16(1)3/GDP
+play,4,1,gland001,00,,NP
+sub,wardd002,"Daryle Ward",0,5,7
+play,4,1,gland001,00,,NP
+sub,berkl001,"Lance Berkman",0,6,9
+play,4,1,gland001,01,CX,4/FL
+play,4,1,peret003,32,FBBSBS,K
+play,4,1,abreb001,32,BFSFBBFS,K
+play,5,0,bogat001,20,BBX,53/G
+play,5,0,millw001,22,CBFBFC,K/C
+play,5,0,lugoj001,22,CCBBS,K
+play,5,1,burrp001,02,CSC,K/C
+play,5,1,lee-t002,12,FBFFC,K/C
+play,5,1,jordk001,10,BX,7/F7
+play,6,0,spieb001,20,BBX,6/P6
+play,6,0,bagwj001,31,BCBBX,8/F8
+play,6,0,hidar001,02,SFS,K
+play,6,1,andem003,31,BFBBX,S9
+play,6,1,print001,11,CBS,SB2.1-3(E2/TH2)
+play,6,1,print001,12,CBSX,63/G
+play,6,1,persr001,22,BFSBS,K
+play,6,1,gland001,22,BFFBS,K
+play,7,0,wardd002,02,SFX,43/G
+play,7,0,berkl001,00,X,9/F9
+play,7,0,euset001,20,BBX,9/F9D
+play,7,1,peret003,00,,NP
+sub,franw001,"Wayne Franklin",0,9,1
+play,7,1,peret003,12,BSFFS,K
+play,7,1,abreb001,12,BCSX,43/G
+play,7,1,burrp001,30,BBBX,53/G
+play,8,0,bogat001,00,,NP
+sub,sefck001,"Kevin Sefcik",1,4,7
+play,8,0,bogat001,31,CBBBX,3/P3
+play,8,0,franw001,00,,NP
+sub,cromt001,"Tripp Cromer",0,9,11
+play,8,0,cromt001,30,BBBB,W
+play,8,0,lugoj001,00,,NP
+sub,brocc001,"Chris Brock",1,9,1
+play,8,0,lugoj001,20,BBX,S7.1-2
+play,8,0,spieb001,20,BBX,S9.2-3;1-2
+play,8,0,bagwj001,01,CX,3/P3
+play,8,0,hidar001,01,CB,PB.3-H(UR);2-3;1-2
+play,8,0,hidar001,12,CBSC,K/C
+play,8,1,lee-t002,00,,NP
+sub,powej001,"Jay Powell",0,9,1
+play,8,1,lee-t002,30,BBBB,W
+play,8,1,jordk001,12,BCFFX,54(1)3/GDP
+play,8,1,andem003,10,BX,31/G
+play,9,0,wardd002,00,,NP
+sub,vosbe001,"Ed Vosberg",1,9,1
+play,9,0,wardd002,10,BX,43/G
+play,9,0,berkl001,32,BCBBSB,W
+play,9,0,euset001,00,,NP
+sub,branj001,"Jeff Brantley",1,9,1
+play,9,0,euset001,00,,NP
+sub,barkg001,"Glen Barker",0,6,12
+play,9,0,euset001,12,CBSC,K/C
+play,9,0,bogat001,00,,NP
+sub,miesm001,"Matt Mieske",0,8,11
+play,9,0,miesm001,00,B,CS2(24)
+data,er,millw001,3
+data,er,franw001,0
+data,er,powej001,0
+data,er,persr001,1
+data,er,brocc001,0
+data,er,vosbe001,0
+data,er,branj001,0

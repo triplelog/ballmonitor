@@ -1,0 +1,149 @@
+version,2
+info,visteam,MON
+info,hometeam,PIT
+info,site,PIT07
+info,date,2000/04/13
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,tscht901
+info,ump1b,meric901
+info,ump2b,gibsg901
+info,ump3b,ripps901
+info,pitches,pitches
+info,temp,53
+info,winddir,rtol
+info,windspeed,3
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,143
+info,attendance,11162
+info,wp,silvj001
+info,lp,urbiu001
+info,save,
+start,bergp001,"Peter Bergeron",0,1,8
+start,vidrj001,"Jose Vidro",0,2,4
+start,whitr001,"Rondell White",0,3,7
+start,guerv001,"Vladimir Guerrero",0,4,9
+start,stevl001,"Lee Stevens",0,5,3
+start,widgc001,"Chris Widger",0,6,2
+start,cabro001,"Orlando Cabrera",0,7,6
+start,barrm003,"Michael Barrett",0,8,5
+start,powej002,"Jeremy Powell",0,9,1
+start,kendj001,"Jason Kendall",1,1,2
+start,mearp001,"Pat Meares",1,2,6
+start,gileb002,"Brian Giles",1,3,9
+start,younk001,"Kevin Young",1,4,3
+start,vandj001,"John Vander Wal",1,5,7
+start,morrw001,"Warren Morris",1,6,4
+start,sojol001,"Luis Sojo",1,7,5
+start,browa001,"Adrian Brown",1,8,8
+start,ritct001,"Todd Ritchie",1,9,1
+play,1,0,bergp001,22,BBCFFS,K
+play,1,0,vidrj001,12,FBFX,7/FL
+play,1,0,whitr001,22,BCBSX,4/P4
+play,1,1,kendj001,12,BCCX,43/G
+play,1,1,mearp001,10,BX,9/F9
+play,1,1,gileb002,22,BBSCS,K
+play,2,0,guerv001,10,BX,S8
+play,2,0,stevl001,10,BC,CS2(26)
+play,2,0,stevl001,31,BCBBB,W
+play,2,0,widgc001,22,BFBFX,D7.1-H
+play,2,0,cabro001,11,BCX,63/G.2-3
+play,2,0,barrm003,00,X,9/F9
+play,2,1,younk001,00,X,7/L7
+play,2,1,vandj001,11,CBX,63/G
+play,2,1,morrw001,22,FBCBS,K23
+play,3,0,powej002,11,CBX,D8/8D
+play,3,0,bergp001,11,LBX,S8.2-3
+play,3,0,vidrj001,00,X,46(1)3/GDP.3-H
+play,3,0,whitr001,31,BFBBX,53/G
+play,3,1,sojol001,00,X,9/F9
+play,3,1,browa001,10,BX,S8
+play,3,1,ritct001,12,CLBL,K/BF
+play,3,1,kendj001,12,CBFB,SB2
+play,3,1,kendj001,32,CBFBBFB,W
+play,3,1,mearp001,01,CX,FC6.2XH(2);1-2;B-1#
+play,4,0,guerv001,00,X,D7
+play,4,0,stevl001,00,X,43/G.2-3
+play,4,0,widgc001,00,X,FC4.3XH(52);B-1
+play,4,0,cabro001,12,BFF1,PO1(13)
+play,4,1,gileb002,10,BX,8/F8D
+play,4,1,younk001,00,X,6/L6
+play,4,1,vandj001,12,BCSX,D7
+play,4,1,morrw001,10,BX,D/78.2-H
+play,4,1,sojol001,21,BCBX,8/F8
+play,5,0,cabro001,00,X,53/G
+play,5,0,barrm003,21,BCBX,6/L6
+play,5,0,powej002,21,CBBX,63/G
+play,5,1,browa001,10,BX,T9
+play,5,1,ritct001,02,SSS,K
+play,5,1,kendj001,02,CFX,9/SF.3-H
+play,5,1,mearp001,22,BFBCS,K
+play,6,0,bergp001,10,BX,7/F7
+play,6,0,vidrj001,32,BBFFBX,43/G
+play,6,0,whitr001,32,CBSBBX,43/G
+play,6,1,gileb002,11,CBX,3/G
+play,6,1,younk001,11,BCX,53/G
+play,6,1,vandj001,21,BBSX,7/F7
+play,7,0,guerv001,11,FBX,43/G
+play,7,0,stevl001,02,CSX,143/G
+play,7,0,widgc001,00,X,S
+play,7,0,cabro001,11,CBX,2/FL
+play,7,1,morrw001,00,,NP
+sub,klins002,"Steve Kline",0,9,1
+play,7,1,morrw001,01,SX,S9
+play,7,1,sojol001,32,BFBLBX,23/G.1-2
+play,7,1,browa001,10,BX,43/G.2-3
+play,7,1,ritct001,00,,NP
+sub,cordw001,"Wil Cordero",1,9,11
+play,7,1,cordw001,00,,NP
+sub,stris001,"Scott Strickland",0,7,1
+play,7,1,cordw001,00,,NP
+sub,blumg001,"Geoff Blum",0,9,6
+play,7,1,cordw001,22,CFBBFS,K
+play,8,0,barrm003,00,,NP
+sub,saues001,"Scott Sauerbeck",1,9,1
+play,8,0,barrm003,32,CBBCBC,K/C
+play,8,0,blumg001,12,BSSS,K
+play,8,0,bergp001,31,BBCBX,8/F8D
+play,8,1,kendj001,02,FFFX,S
+play,8,1,mearp001,02,CLS,K
+play,8,1,gileb002,10,BB,WP.1-2
+play,8,1,gileb002,32,BBCBCX,6/L6
+play,8,1,younk001,12,BFSC,K/C
+play,9,0,vidrj001,30,BBBB,W
+play,9,0,whitr001,00,,NP
+sub,silvj001,"Jose Silva",1,9,1
+play,9,0,whitr001,00,,NP
+sub,jonet004,"Terry Jones",0,2,12
+play,9,0,whitr001,11,BCX,S8.1-2
+play,9,0,guerv001,00,X,S8.2-H;1-2
+play,9,0,stevl001,12,BFFFC,K/C
+play,9,0,widgc001,00,X,4/P4
+play,9,0,stris001,00,,NP
+sub,guerw001,"Wilton Guerrero",0,7,11
+play,9,0,guerw001,21,BBSX,6(1)/FO/G.2-3
+play,9,1,vandj001,00,,NP
+sub,blumg001,"Geoff Blum",0,9,4
+play,9,1,vandj001,00,,NP
+sub,mordm001,"Mike Mordecai",0,2,6
+play,9,1,vandj001,00,,NP
+sub,urbiu001,"Ugueth Urbina",0,7,1
+play,9,1,vandj001,12,BCSS,K
+play,9,1,morrw001,32,BBFFBX,S8
+play,9,1,sojol001,00,X,8/F8
+play,9,1,browa001,11,CBX,S7/7S.1-2
+play,9,1,silvj001,00,,NP
+sub,avenb001,"Bruce Aven",1,9,11
+play,9,1,avenb001,00,X,S7.2-H;1-2
+play,9,1,kendj001,01,CX,S9.2-H;1-2
+data,er,powej002,2
+data,er,klins002,0
+data,er,stris001,0
+data,er,urbiu001,2
+data,er,ritct001,2
+data,er,saues001,1
+data,er,silvj001,0

@@ -1,0 +1,135 @@
+version,2
+info,visteam,BAL
+info,hometeam,ANA
+info,site,ANA01
+info,date,2000/09/08
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,cuzzp901
+info,ump1b,schrp901
+info,ump2b,mcclt901
+info,ump3b,rapue901
+info,pitches,pitches
+info,oscorer,munse701
+info,temp,72
+info,winddir,ltor
+info,windspeed,3
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,156
+info,attendance,30480
+info,wp,ortir002
+info,lp,rappp001
+info,save,perct001
+start,andeb001,"Brady Anderson",0,1,9
+start,hairj002,"Jerry Hairston",0,2,4
+start,deshd001,"Delino DeShields",0,3,7
+start,ripkc001,"Cal Ripken",0,4,5
+start,garck002,"Karim Garcia",0,5,10
+start,richc001,"Chris Richard",0,6,3
+start,fordb001,"Brook Fordyce",0,7,2
+start,lewim001,"Mark Lewis",0,8,6
+start,kingg001,"Eugene Kingsale",0,9,8
+start,rappp001,"Pat Rapp",0,0,1
+start,erstd001,"Darin Erstad",1,1,7
+start,spies001,"Scott Spiezio",1,2,10
+start,vaugm001,"Mo Vaughn",1,3,3
+start,salmt001,"Tim Salmon",1,4,9
+start,andeg001,"Garret Anderson",1,5,8
+start,glaut001,"Troy Glaus",1,6,5
+start,molib001,"Ben Molina",1,7,2
+start,kenna001,"Adam Kennedy",1,8,4
+start,gil-b001,"Benji Gil",1,9,6
+start,ortir002,"Ramon Ortiz",1,0,1
+play,1,0,andeb001,20,BBX,8/F8S
+play,1,0,hairj002,10,BX,63/G
+play,1,0,deshd001,12,SBCX,63/G
+play,1,1,erstd001,10,BX,13/G
+play,1,1,spies001,32,BBCFBB,W
+play,1,1,vaugm001,22,FBCBX,E3/G.1-3
+play,1,1,salmt001,12,SSBS,K
+play,1,1,andeg001,22,BSBFS,K
+play,2,0,ripkc001,12,CSBX,63/G
+play,2,0,garck002,12,CBSS,K
+play,2,0,richc001,20,BBX,9/L9
+play,2,1,glaut001,10,BX,7/F7D
+play,2,1,molib001,11,SBX,S8
+play,2,1,kenna001,02,CFX,S8.1-2
+play,2,1,gil-b001,22,BFFBX,9/F9
+play,2,1,erstd001,02,CFFX,S8/8S.2-H;1-3
+play,2,1,spies001,00,X,7/F7
+play,3,0,fordb001,12,SFFBS,K23
+play,3,0,lewim001,00,X,S9
+play,3,0,kingg001,11,BCX,9(B)3(1)/FDP
+play,3,1,vaugm001,12,FBSX,S8
+play,3,1,salmt001,21,CBBX,54(1)/FO
+play,3,1,andeg001,12,BFCX,7/F7
+play,3,1,glaut001,31,BCBBB,W.1-2
+play,3,1,molib001,01,FX,3/FL
+play,4,0,andeb001,30,BBBB,W
+play,4,0,hairj002,32,BBCBFB,W.1-2
+play,4,0,deshd001,02,CSX,5(2)3/GDP.1-2
+play,4,0,ripkc001,00,X,53/G
+play,4,1,kenna001,12,CCBX,S8
+play,4,1,gil-b001,11,BFS,SB2
+play,4,1,gil-b001,12,BFSFS,K
+play,4,1,erstd001,02,CFX,53/G.2-3
+play,4,1,spies001,10,BH,HP
+play,4,1,vaugm001,10,BX,6/L6
+play,5,0,garck002,02,SFFS,K
+play,5,0,richc001,31,BBBCX,HR/8
+play,5,0,fordb001,00,X,S/78S
+play,5,0,lewim001,02,SFS,K
+play,5,0,kingg001,22,CBBFX,46(1)/FO
+play,5,1,salmt001,11,CBX,8/F8
+play,5,1,andeg001,22,BFBFX,43/G
+play,5,1,glaut001,32,FBFFBBB,W
+play,5,1,molib001,00,X,8/F8
+play,6,0,andeb001,02,FFS,K
+play,6,0,hairj002,11,CBX,8/F8
+play,6,0,deshd001,10,BX,43/G
+play,6,1,kenna001,22,FFBBFFC,K/C
+play,6,1,gil-b001,11,SBX,HR/89
+play,6,1,erstd001,22,CCFBBFFS,K23
+play,6,1,spies001,32,CBBBFC,K/C
+play,7,0,ripkc001,00,X,8/F8D
+play,7,0,garck002,00,X,43/G
+play,7,0,richc001,32,CBBFBB,W
+play,7,0,fordb001,00,B,CS2(24)
+play,7,1,vaugm001,00,,NP
+sub,minor001,"Ryan Minor",0,4,5
+play,7,1,vaugm001,00,,NP
+sub,ryanb001,"B.J. Ryan",0,0,1
+play,7,1,vaugm001,32,CBBFBS,K
+play,7,1,salmt001,31,CBBBX,3/P3
+play,7,1,andeg001,00,X,13/G
+play,8,0,fordb001,22,CFFBBFX,53/G
+play,8,0,lewim001,21,FBBX,53/G
+play,8,0,kingg001,30,BBBB,W
+play,8,0,andeb001,11,BCB,SB2
+play,8,0,andeb001,00,,NP
+sub,holtm001,"Mike Holtz",1,0,1
+play,8,0,andeb001,32,BCBBCX,4/P4
+play,8,1,glaut001,00,,NP
+sub,tromm001,"Mike Trombley",0,0,1
+play,8,1,glaut001,12,CBCC,K/C
+play,8,1,molib001,00,X,2/FL
+play,8,1,kenna001,02,SSX,S7
+play,8,1,gil-b001,21,BBFS,SB2
+play,8,1,gil-b001,32,BBFSBC,K/C
+play,9,0,hairj002,00,,NP
+sub,perct001,"Troy Percival",1,0,1
+play,9,0,hairj002,12,BCFFFFFFX,9/F9
+play,9,0,deshd001,12,CCBS,K
+play,9,0,minor001,00,,NP
+sub,myerg001,"Greg Myers",0,4,11
+play,9,0,myerg001,22,BBSFX,43/G
+data,er,rappp001,2
+data,er,ryanb001,0
+data,er,tromm001,0
+data,er,ortir002,1
+data,er,holtm001,0
+data,er,perct001,0

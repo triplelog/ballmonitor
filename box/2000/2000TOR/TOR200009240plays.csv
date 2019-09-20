@@ -1,0 +1,76 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,00,1,tynej001,,,,0,1,X,tracs001,0,0,tynej001 singles. ,tynej001,0,G
+,10,1,,tynej001,,guilo001,1,3,BS,tracs001,0,0,tynej001 steals 2B. ,guilo001,0,
+,12,1,,tynej001,,,2,7,BSLX,tracs001,1,0,guilo001 grounds out. ,guilo001,0,G
+,22,1,,tynej001,,,3,12,BSBCC,tracs001,1,0,cox-s001 strikes out. ,cox-s001,0,
+,32,1,mcgrf001,tynej001,,,4,18,BBBFFB,tracs001,0,0,mcgrf001 walks. ,mcgrf001,0,
+,22,1,mcgrf001,tynej001,,,5,23,CSBBS,tracs001,1,0,timmo001 strikes out. ,timmo001,0,
+,02,1,,,,,6,3,CFC,harpt002,1,0,stews002 strikes out. ,stews002,1,
+,32,1,,,,,7,9,BFBBFX,harpt002,1,0,,gonza001,1,F
+,22,1,,,,,8,15,BSFBFX,harpt002,1,0,martd002 grounds out. ,martd002,1,G
+,22,2,,,,,9,28,BBFFX,tracs001,1,0,huffa001 grounds out. ,huffa001,0,G
+,22,2,,,,,10,33,BBFSX,tracs001,1,0,,flahj001,0,F
+,01,2,,,,,11,35,SX,tracs001,1,0,smitr003 grounds out. ,smitr003,0,G
+,32,2,,,,,12,21,BCBSBX,harpt002,1,0,delgc001 grounds out. ,delgc001,1,G
+,32,2,,,,,13,28,BFBBFFX,harpt002,1,0,,fullb001,1,F
+,10,2,,,,,14,30,BX,harpt002,1,0,,batit001,1,F
+,12,3,guilj001,,,,15,39,CSBX,tracs001,0,0,guilj001 singles. ,guilj001,0,
+guilj001 to 2B. ,00,3,,guilj001,,,16,40,X,tracs001,1,0,Sacrifice bunt by tynej001.,tynej001,0,
+guilj001 to 3B. ,11,3,,,guilj001,,17,43,FBX,tracs001,1,0,,guilo001,0,F
+,00,3,,,guilj001,,18,44,X,tracs001,1,0,,cox-s001,0,F
+,00,3,fletd001,,,,19,31,X,harpt002,0,0,fletd001 singles. ,fletd001,1,
+,01,3,fletd001,,,,20,33,SX,harpt002,1,0,,cruzj004,1,F
+,31,3,fletd001,,,,21,38,CBBBX,harpt002,1,0,,moram001,1,F
+,01,3,fletd001,,,,22,40,FX,harpt002,1,0,stews002 grounds out. ,stews002,1,G
+,30,4,mcgrf001,,,,23,48,BBBX,tracs001,0,0,mcgrf001 singles. ,mcgrf001,0,
+,02,4,,,,,24,53,FCFFX,tracs001,2,0,Double Play. ,timmo001,0,
+,32,4,huffa001,,,,25,59,BBBFFX,tracs001,0,0,huffa001 singles. ,huffa001,0,
+,22,4,huffa001,,,,26,64,SBBFX,tracs001,1,0,,flahj001,0,F
+,11,4,gonza001,,,,27,43,SBX,harpt002,0,0,gonza001 reaches on error. ,gonza001,1,G
+,22,4,gonza001,,,,28,49,CBBFFX,harpt002,1,0,,martd002,1,P
+gonza001 to 2B. ,01,4,,gonza001,,delgc001,29,51,FB,harpt002,0,0,Wild Pitch. ,delgc001,1,
+,32,4,delgc001,gonza001,,,30,57,FBFBBB,harpt002,0,0,delgc001 walks. ,delgc001,1,
+,10,4,delgc001,gonza001,,,31,59,BX,harpt002,1,0,,fullb001,1,F
+,22,4,delgc001,gonza001,,,32,64,FBBFX,harpt002,1,0,,batit001,1,P
+,21,5,,,,,33,68,CBBX,tracs001,1,0,,smitr003,0,F
+,21,5,,,,,34,72,CBBX,tracs001,1,0,,guilj001,0,F
+,01,5,,,,,35,74,CX,tracs001,1,0,,tynej001,0,L
+,32,5,,,,,36,71,BBBCSFX,harpt002,1,0,fletd001 grounds out. ,fletd001,1,G
+,22,5,,,,,37,76,SBBSX,harpt002,1,0,,cruzj004,1,P
+,00,5,,,,,38,77,X,harpt002,1,0,,moram001,1,F
+,00,6,guilo001,,,,39,75,X,tracs001,0,0,guilo001 singles. ,guilo001,0,
+guilo001 to 3B. ,22,6,cox-s001,,guilo001,,40,80,BSFBX,tracs001,0,0,cox-s001 singles. ,cox-s001,0,
+guilo001 scores. cox-s001 to 3B. ,00,6,mcgrf001,,cox-s001,,41,81,X,tracs001,0,1,mcgrf001 singles. ,mcgrf001,0,
+,12,6,mcgrf001,,cox-s001,,42,86,SFBFS,tracs001,1,0,timmo001 strikes out. ,timmo001,0,
+cox-s001 scores. mcgrf001 out. ,00,6,huffa001,,,,43,87,X,tracs001,1,1,huffa001 reaches on fielder's choice. ,huffa001,0,
+,00,6,huffa001,,,,44,88,X,tracs001,1,0,,flahj001,0,F
+,02,6,,,,,45,80,CFX,harpt002,1,0,stews002 grounds out. ,stews002,1,G
+,10,6,,,,,46,82,BX,harpt002,1,0,gonza001 grounds out. ,gonza001,1,G
+,12,6,,,,,47,87,BFSFX,harpt002,1,0,,martd002,1,
+,02,7,,,,,48,91,SFS,tracs001,1,0,smitr003 strikes out. ,smitr003,0,
+,10,7,,guilj001,,,49,93,BX,tracs001,0,0,guilj001 doubles. ,guilj001,0,
+,32,7,tynej001,guilj001,,,50,99,SBSBBB,tracs001,0,0,tynej001 walks. ,tynej001,0,
+,10,7,tynej001,guilj001,,,51,101,BX,tracs001,1,0,,guilo001,0,F
+,10,7,tynej001,guilj001,,,52,103,BX,tracs001,1,0,,cox-s001,0,F
+,22,7,,,,,53,92,BBFFS,harpt002,1,0,delgc001 strikes out. ,delgc001,1,
+,11,7,,,,,54,95,BFX,harpt002,1,0,fullb001 grounds out. ,fullb001,1,G
+,32,7,,batit001,,,55,102,BFFFBBX,harpt002,0,0,batit001 doubles. ,batit001,1,
+,02,7,,batit001,,,56,105,FCX,harpt002,1,0,fletd001 grounds out. ,fletd001,1,G
+,11,8,mcgrf001,,,,58,3,FBX,escok001,0,0,mcgrf001 singles. ,mcgrf001,0,
+,00,8,mcgrf001,,,,59,4,X,escok001,1,0,,timmo001,0,F
+mcgrf001 to 2B. ,00,8,huffa001,mcgrf001,,,60,5,X,escok001,0,0,huffa001 singles. ,huffa001,0,
+mcgrf001 scores. johnr006 scores. ,11,8,,,,,62,8,FBX,escok001,0,3,flahj001 homers. ,flahj001,0,
+,02,8,,,,,63,11,FFC,escok001,1,0,smitr003 strikes out. ,smitr003,0,
+,10,8,,,,,64,13,BX,escok001,1,0,,guilj001,0,
+,00,8,,,,,66,106,X,harpt002,1,0,,cruzj004,1,
+,12,8,,,,,67,110,CFBX,harpt002,1,0,,moram001,1,P
+,11,8,,,,,68,113,CBX,harpt002,1,0,,stews002,1,F
+,32,9,tynej001,,,,69,21,CBFBBFFX,escok001,0,0,tynej001 singles. ,tynej001,0,
+,02,9,tynej001,,,,70,24,FCX,escok001,1,0,,guilo001,0,F
+,00,9,tynej001,,,,71,25,X,escok001,1,0,,cox-s001,0,F
+tynej001 to 2B. ,32,9,mcgrf001,tynej001,,,72,31,BBBCSB,escok001,0,0,mcgrf001 walks. ,mcgrf001,0,
+tynej001 scores. mcgrf001 to 3B. ,01,9,timmo001,,mcgrf001,,73,33,CX,escok001,0,1,timmo001 singles. ,timmo001,0,
+,32,9,timmo001,,mcgrf001,,74,41,BCFBFBFX,escok001,1,0,,johnr006,0,F
+,12,9,,,,,75,117,CCBX,harpt002,1,0,gonza001 grounds out. ,gonza001,1,G
+,22,9,,,,,76,123,FCBBFS,harpt002,1,0,martd002 strikes out. ,martd002,1,
+,22,9,,,,,77,129,FBFBFX,harpt002,1,0,delgc001 grounds out. ,delgc001,1,G

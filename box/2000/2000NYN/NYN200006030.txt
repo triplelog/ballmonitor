@@ -1,0 +1,143 @@
+version,2
+info,visteam,TBA
+info,hometeam,NYN
+info,site,NYC17
+info,date,2000/06/03
+info,number,0
+info,starttime,7:10PM
+info,daynight,night
+info,usedh,false
+info,umphome,clara901
+info,ump1b,buckc901
+info,ump2b,reedr901
+info,ump3b,wendh902
+info,pitches,pitches
+info,temp,71
+info,winddir,rtol
+info,windspeed,6
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,181
+info,attendance,33694
+info,wp,leita001
+info,lp,tracs001
+info,save,benia001
+start,willg001,"Gerald Williams",0,1,8
+start,guilj001,"Jose Guillen",0,2,9
+start,vaugg001,"Greg Vaughn",0,3,7
+start,mcgrf001,"Fred McGriff",0,4,3
+start,castv001,"Vinny Castilla",0,5,5
+start,flahj001,"John Flaherty",0,6,2
+start,johnr006,"Russ Johnson",0,7,4
+start,martf001,"Felix Martinez",0,8,6
+start,tracs001,"Steve Trachsel",0,9,1
+start,moram002,"Melvin Mora",1,1,6
+start,belld001,"Derek Bell",1,2,9
+start,alfoe001,"Edgardo Alfonzo",1,3,4
+start,piazm001,"Mike Piazza",1,4,2
+start,ventr001,"Robin Ventura",1,5,5
+start,zeilt001,"Todd Zeile",1,6,3
+start,paytj001,"Jay Payton",1,7,8
+start,franm001,"Matt Franco",1,8,7
+start,leita001,"Al Leiter",1,9,1
+play,1,0,willg001,12,CCBS,K
+play,1,0,guilj001,10,BH,HP
+play,1,0,vaugg001,32,BCBSBB,W.1-2
+play,1,0,mcgrf001,22,SBCFBS,K
+play,1,0,castv001,22,BFBFX,64(1)/FO.2-3
+play,1,1,moram002,22,CBCBFC,K/C
+play,1,1,belld001,12,CCBX,63/G
+play,1,1,alfoe001,12,CCBX,63/G
+play,2,0,flahj001,22,CFBFBFS,K
+play,2,0,johnr006,01,CX,S9
+play,2,0,martf001,12,SFBS,K+SB2
+play,2,0,tracs001,32,CBBBCFX,13/G
+play,2,1,piazm001,00,X,4/P4
+play,2,1,ventr001,11,CBX,43/G
+play,2,1,zeilt001,11,CBX,S9/9S
+play,2,1,paytj001,12,BCSX,64(1)/FO
+play,3,0,willg001,11,FBX,7/F7
+play,3,0,guilj001,31,CBBBB,W
+play,3,0,vaugg001,32,BBFBFB,W.1-2
+play,3,0,mcgrf001,00,X,8/F8
+play,3,0,castv001,00,X,64(1)/FO.2-3
+play,3,1,franm001,32,CBBFBX,D9
+play,3,1,leita001,12,SLBS,K
+play,3,1,moram002,21,BCBX,9/F9
+play,3,1,belld001,12,CBSC,K/C
+play,4,0,flahj001,01,FX,63/G
+play,4,0,johnr006,01,FX,S9
+play,4,0,martf001,12,FFBX,9/F9
+play,4,0,tracs001,00,X,64(1)/FO
+play,4,1,alfoe001,32,CBFBBX,D7
+play,4,1,piazm001,22,BFBFX,63/G
+play,4,1,ventr001,22,BCCBX,13/G
+play,4,1,zeilt001,32,BBCCBX,D7/7D.2-H
+play,4,1,paytj001,10,BX,2/FL
+play,5,0,willg001,00,X,8/F8
+play,5,0,guilj001,32,BBCBCX,3/FL
+play,5,0,vaugg001,31,BBCBB,W
+play,5,0,mcgrf001,22,BBCFX,S9/9S.1-3
+play,5,0,castv001,12,BFFS,K
+play,5,1,franm001,01,FX,3/G
+play,5,1,leita001,02,SSC,K/C
+play,5,1,moram002,22,BCFBX,S8/8S.BX2(4)#
+play,6,0,flahj001,22,FFBBFFS,K
+play,6,0,johnr006,11,SBX,53/G
+play,6,0,martf001,12,FCBFFFFS,K
+play,6,1,belld001,00,X,43/G
+play,6,1,alfoe001,10,BX,63/G
+play,6,1,piazm001,11,BCX,4/L4
+play,7,0,tracs001,00,,NP
+sub,mcewj001,"Joe McEwing",1,8,7
+play,7,0,tracs001,12,SBFX,S/89S
+play,7,0,willg001,32,CBBSBX,3/P3
+play,7,0,guilj001,02,SFS,K
+play,7,0,vaugg001,30,BBBB,W.1-2
+play,7,0,mcgrf001,00,,NP
+sub,cookd001,"Dennis Cook",1,9,1
+play,7,0,mcgrf001,22,CBCBX,43/G
+play,7,1,ventr001,10,BX,31/G
+play,7,1,zeilt001,12,BFFC,K/C
+play,7,1,paytj001,00,X,S8
+play,7,1,mcewj001,00,B,SB2
+play,7,1,mcewj001,32,BFBBSB,W
+play,7,1,cookd001,00,,NP
+sub,harrl001,"Lenny Harris",1,9,11
+play,7,1,harrl001,00,X,6/L6
+play,8,0,castv001,00,,NP
+sub,franj001,"John Franco",1,9,1
+play,8,0,castv001,22,SSBBS,K
+play,8,0,flahj001,02,CSX,6/L6
+play,8,0,johnr006,22,FBCBX,13/G
+play,8,1,moram002,00,,NP
+sub,cairm001,"Miguel Cairo",0,9,4
+play,8,1,moram002,00,,NP
+sub,mecij001,"Jim Mecir",0,7,1
+play,8,1,moram002,12,BSFFS,K
+play,8,1,belld001,32,BCBBFS,K
+play,8,1,alfoe001,32,BCBFBB,W
+play,8,1,piazm001,10,BX,7/F7D
+play,9,0,martf001,00,,NP
+sub,winnr001,"Randy Winn",0,8,11
+badj,winnr001,R
+play,9,0,winnr001,00,,NP
+sub,benia001,"Armando Benitez",1,9,1
+badj,winnr001,R
+play,9,0,winnr001,22,CBBFS,K
+play,9,0,cairm001,21,BCBX,S8
+play,9,0,willg001,02,SCB,SB2
+play,9,0,willg001,12,SCBS,K
+play,9,0,guilj001,00,,NP
+sub,cox-s001,"Steve Cox",0,2,11
+play,9,0,cox-s001,30,BBBB,W
+play,9,0,vaugg001,00,,NP
+sub,guilo001,"Ozzie Guillen",0,2,12
+play,9,0,vaugg001,22,BFFFBC,K/C
+data,er,tracs001,1
+data,er,mecij001,0
+data,er,leita001,0
+data,er,cookd001,0
+data,er,franj001,0
+data,er,benia001,0

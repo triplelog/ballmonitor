@@ -1,0 +1,70 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,02,1,,,,,0,3,CFX,mercj001,1,0,mcmib001 grounds out. ,mcmib001,0,G
+,10,1,,,,,1,5,BX,mercj001,1,0,,encaj001,0,F
+,22,1,,,,,2,11,BFFBFC,mercj001,1,0,higgb001 strikes out. ,higgb001,0,
+,11,1,,,,,3,3,BFX,nomoh001,1,0,,andeb001,1,P
+,32,1,moram002,,,,4,9,CFBBBB,nomoh001,0,0,moram002 walks. ,moram002,1,
+,32,1,,moram002,,,5,15,FBBBFS,nomoh001,1,0,deshd001 strikes out. moram002 steals 2B. ,deshd001,1,
+,02,1,,moram002,,,6,18,SCX,nomoh001,1,0,bellj002 grounds out. ,bellj002,1,G
+,02,2,,,,,7,14,CFS,mercj001,1,0,gonzj002 strikes out. ,gonzj002,0,
+,20,2,,,,,8,17,BBX,mercj001,1,0,,palmd002,0,L
+,01,2,easld001,,,,9,19,CX,mercj001,0,0,easld001 singles. ,easld001,0,
+,11,2,easld001,,,,10,22,BCX,mercj001,1,0,,cruzd001,0,L
+,11,2,conij001,,,,11,21,BCX,nomoh001,0,0,conij001 singles. ,conij001,1,
+,22,2,conij001,,,,12,26,BBCSS,nomoh001,1,0,richc001 strikes out. ,richc001,1,
+,12,2,,,,,13,30,CFBX,nomoh001,2,0,Double Play. ,fordb001,1,
+,12,3,,,,,14,26,CBFS,mercj001,1,0,ausmb001 strikes out. ,ausmb001,0,
+,32,3,macij001,,,,15,33,BCBBCFB,mercj001,0,0,macij001 walks. ,macij001,0,
+,10,3,macij001,,,,16,35,BX,mercj001,1,0,,mcmib001,0,F
+,00,3,macij001,,,,17,36,X,mercj001,1,0,,encaj001,0,F
+,10,3,,lewim001,,,18,32,BX,nomoh001,0,0,lewim001 doubles. ,lewim001,1,
+,22,3,,,lewim001,,19,37,LBLBS,nomoh001,1,0,hairj002 strikes out. lewim001 steals 3B. ,hairj002,1,
+,22,3,,,lewim001,,20,45,FBFFFFBC,nomoh001,1,0,andeb001 strikes out. ,andeb001,1,
+,32,3,,,lewim001,,21,51,BCBBCX,nomoh001,1,0,,moram002,1,F
+,20,4,,,,,22,39,BBX,mercj001,1,0,,higgb001,0,F
+,12,4,,,,,23,43,BCCS,mercj001,1,0,gonzj002 strikes out. ,gonzj002,0,
+,00,4,,,,,24,44,X,mercj001,1,0,,palmd002,0,F
+,22,4,,,,,25,56,BCBFX,nomoh001,1,0,,deshd001,1,F
+,10,4,,,,,26,58,BX,nomoh001,1,0,,bellj002,1,F
+,32,4,,,,,27,65,BCBFFBS,nomoh001,1,0,conij001 strikes out. ,conij001,1,
+,21,5,,,,,28,48,BCBX,mercj001,1,0,easld001 grounds out. ,easld001,0,G
+,00,5,,,,,29,49,X,mercj001,1,0,cruzd001 grounds out. ,cruzd001,0,G
+,21,5,,,,,30,53,BCBX,mercj001,1,0,,ausmb001,0,F
+,32,5,richc001,,,,31,71,BBFBFB,nomoh001,0,0,richc001 walks. ,richc001,1,
+,00,5,,richc001,,fordb001,32,72,S,nomoh001,0,0,richc001 steals 2B. ,fordb001,1,
+richc001 to 3B. ,12,5,,,richc001,,33,77,SBFFX,nomoh001,1,0,fordb001 grounds out. ,fordb001,1,G
+richc001 scores. ,21,5,lewim001,,,,34,81,BBSX,nomoh001,0,1,lewim001 singles. ,lewim001,1,
+,11,5,lewim001,,,,35,84,CBX,nomoh001,1,0,,hairj002,1,L
+,12,5,,,,andeb001,36,88,CFBB,nomoh001,1,0,lewim001 caught stealing. ,andeb001,1,
+,21,6,,,,,37,57,BBCX,mercj001,1,0,macij001 grounds out. ,macij001,0,G
+,00,6,,,,,38,58,X,mercj001,1,0,,mcmib001,0,P
+,11,6,,,,,39,61,CBX,mercj001,1,0,,encaj001,0,P
+,32,6,andeb001,,,,40,95,BBCFFBB,nomoh001,0,0,andeb001 walks. ,andeb001,1,
+andeb001 to 2B. ,22,6,moram002,andeb001,,,41,100,BCBFX,nomoh001,0,0,moram002 singles. ,moram002,1,
+andeb001 to 3B. moram002 to 2B. ,02,6,deshd001,moram002,andeb001,,42,103,CSX,nomoh001,0,0,deshd001 singles. ,deshd001,1,
+andeb001 scores. moram002 scores. deshd001 to 2B. ,32,6,bellj002,deshd001,,,44,7,BBSSBFX,blaiw001,0,2,bellj002 singles. ,bellj002,1,
+deshd001 to 3B. bellj002 to 2B. ,01,6,conij001,bellj002,deshd001,,45,9,FX,blaiw001,0,0,conij001 singles. ,conij001,1,
+deshd001 scores. bellj002 to 3B. conij001 to 2B. ,12,6,richc001,conij001,bellj002,,47,4,FBFX,nitkc001,0,1,richc001 singles. ,richc001,1,
+,01,6,richc001,conij001,bellj002,,49,2,SX,andem002,1,0,,fordb001,1,L
+bellj002 scores. conij001 to 3B. richc001 to 2B. ,32,6,lewim001,richc001,conij001,,50,8,BBSBFB,andem002,0,1,lewim001 walks. ,lewim001,1,
+,01,6,,richc001,conij001,,51,10,CX,andem002,2,0,Double Play. ,hairj002,1,
+,11,7,,,,,52,64,CBX,mercj001,1,0,,higgb001,0,F
+,22,7,,,,,53,69,BCBFX,mercj001,1,0,gonzj002 grounds out. ,gonzj002,0,G
+,32,7,,,,,54,75,BCBBFX,mercj001,1,0,,palmd002,0,F
+,32,7,,,,,55,16,CBBBSX,andem002,1,0,,andeb001,1,F
+,01,7,moram002,,,,56,18,CX,andem002,0,0,moram002 singles. ,moram002,1,
+moram002 to 2B. ,32,7,deshd001,moram002,,,57,26,SBFFBFBB,andem002,0,0,deshd001 walks. ,deshd001,1,
+,01,7,deshd001,moram002,,,58,28,CX,andem002,1,0,,bellj002,1,F
+,12,7,deshd001,moram002,,,59,33,SSBFX,andem002,1,0,conij001 grounds out. ,conij001,1,G
+,22,8,,,,,60,81,CBCBFC,mercj001,1,0,easld001 strikes out. ,easld001,0,
+,01,8,,,,,61,83,CX,mercj001,1,0,,cruzd001,0,L
+,00,8,,,,,62,84,X,mercj001,0,1,ausmb001 homers. ,ausmb001,0,
+,01,8,,,,,63,86,CX,mercj001,1,0,,macij001,0,L
+,02,8,,,,,67,4,CCFS,berna001,1,0,richc001 strikes out. ,richc001,1,
+,11,8,,,,,68,7,CBX,berna001,1,0,,fordb001,1,P
+,21,8,lewim001,,,,69,11,BBCX,berna001,0,0,lewim001 singles. ,lewim001,1,
+lewim001 to 3B. ,32,8,hairj002,,lewim001,,70,18,BBBCFFX,berna001,0,0,hairj002 singles. ,hairj002,1,
+,10,8,hairj002,,lewim001,,71,20,BX,berna001,1,0,,andeb001,1,F
+,22,9,,,,,73,91,CFBBX,mercj001,1,0,,mcmib001,0,F
+,20,9,,,,,74,94,BBX,mercj001,1,0,,encaj001,0,F
+,21,9,,,,,75,98,BBCX,mercj001,1,0,higgb001 grounds out. ,higgb001,0,G

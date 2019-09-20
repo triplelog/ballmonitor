@@ -1,0 +1,152 @@
+version,2
+info,visteam,MON
+info,hometeam,SFN
+info,site,SFO03
+info,date,2000/04/30
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,false
+info,umphome,higgs901
+info,ump1b,katzt901
+info,ump2b,mealj901
+info,ump3b,younl901
+info,pitches,pitches
+info,temp,63
+info,winddir,unknown
+info,windspeed,7
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,172
+info,attendance,40930
+info,wp,stris001
+info,lp,johnj006
+info,save,urbiu001
+start,bergp001,"Peter Bergeron",0,1,8
+start,guerw001,"Wilton Guerrero",0,2,7
+start,vidrj001,"Jose Vidro",0,3,4
+start,guerv001,"Vladimir Guerrero",0,4,9
+start,stevl001,"Lee Stevens",0,5,3
+start,blumg001,"Geoff Blum",0,6,6
+start,widgc001,"Chris Widger",0,7,2
+start,barrm003,"Michael Barrett",0,8,5
+start,pavac001,"Carl Pavano",0,9,1
+start,benam001,"Marvin Benard",1,1,8
+start,muelb001,"Bill Mueller",1,2,5
+start,bondb001,"Barry Bonds",1,3,7
+start,kentj001,"Jeff Kent",1,4,4
+start,snowj001,"J.T. Snow",1,5,3
+start,riosa001,"Armando Rios",1,6,9
+start,aurir001,"Rich Aurilia",1,7,6
+start,mirad001,"Doug Mirabelli",1,8,2
+start,nathj001,"Joe Nathan",1,9,1
+play,1,0,bergp001,30,BBBB,W
+play,1,0,guerw001,11,CBX,6/P6
+play,1,0,vidrj001,01,CB,SB2.1-3(E2/TH2)
+play,1,0,vidrj001,21,CBBX,3/G.3-H(UR)
+play,1,0,guerv001,01,FX,6/P6
+play,1,1,benam001,10,BX,43/G
+play,1,1,muelb001,31,BCBBX,63/G
+play,1,1,bondb001,31,BBBCX,D9
+play,1,1,kentj001,31,BCBBB,W
+play,1,1,snowj001,11,CBX,43/G
+play,2,0,stevl001,31,BSBBX,3/G
+play,2,0,blumg001,30,BBBB,W
+play,2,0,widgc001,22,BCBSS,K
+play,2,0,barrm003,10,BX,8/F8
+play,2,1,riosa001,02,CFX,8/F8
+play,2,1,aurir001,32,CBBFBB,W
+play,2,1,mirad001,12,SBFX,S8.1-2
+play,2,1,nathj001,00,X,S/BG25.2-H(E1/TH);1-3;B-2
+play,2,1,benam001,21,BSBX,8/SF.3-H(UR)
+play,2,1,muelb001,22,BSFBX,3/G
+play,3,0,pavac001,32,BBBCCX,31/G
+play,3,0,bergp001,22,BFFBFFFFS,K
+play,3,0,guerw001,11,FBX,S8
+play,3,0,vidrj001,11,FBX,3/G
+play,3,1,bondb001,32,BBFBFB,W
+play,3,1,kentj001,22,CBBCB,SB2
+play,3,1,kentj001,32,CBBCBFFX,2/FL
+play,3,1,snowj001,00,X,7/F7
+play,3,1,riosa001,20,BBB,SB3
+play,3,1,riosa001,30,BBBB,W
+play,3,1,aurir001,01,CX,53/G
+play,4,0,guerv001,00,X,53/G
+play,4,0,stevl001,32,BFCBFBB,W
+play,4,0,blumg001,10,BX,9/L9
+play,4,0,widgc001,31,FBBBX,D/78.1-H
+play,4,0,barrm003,30,IIII,IW
+play,4,0,pavac001,00,X,43/G
+play,4,1,mirad001,00,X,8/F8
+play,4,1,nathj001,02,CCC,K/C
+play,4,1,benam001,30,BBBB,W
+play,4,1,muelb001,11,BCX,9/F9
+play,5,0,bergp001,02,LCS,K
+play,5,0,guerw001,00,X,8/F8
+play,5,0,vidrj001,32,BBBCFB,W
+play,5,0,guerv001,11,BCX,3/P3
+play,5,1,bondb001,20,BBX,HR/8
+play,5,1,kentj001,32,SBBSFBX,63/G
+play,5,1,snowj001,11,FBX,S7
+play,5,1,riosa001,20,BBX,8/F8
+play,5,1,aurir001,12,CFBFS,K
+play,6,0,stevl001,00,X,9/F9
+play,6,0,blumg001,31,CBBBX,3/G
+play,6,0,widgc001,00,X,9/F9
+play,6,1,mirad001,22,CCBFBFFFX,8/F8D
+play,6,1,nathj001,00,X,9/F9
+play,6,1,benam001,22,BSBFS,K
+play,7,0,barrm003,10,BX,HR/7
+play,7,0,pavac001,00,,NP
+sub,traca001,"Andy Tracy",0,9,11
+play,7,0,traca001,32,SFBBBX,2/FL
+play,7,0,bergp001,22,BFBFFS,K
+play,7,0,guerw001,12,CBFFX,43/G
+play,7,1,muelb001,00,,NP
+sub,jonet004,"Terry Jones",0,9,7
+play,7,1,muelb001,00,,NP
+sub,klins002,"Steve Kline",0,2,1
+play,7,1,muelb001,11,CBX,43/G
+play,7,1,bondb001,22,BBFSX,3/G
+play,7,1,kentj001,32,BCBFBB,W
+play,7,1,snowj001,02,CCX,D9.1-3
+play,7,1,riosa001,30,BBBX,8/P8
+play,8,0,vidrj001,00,X,9/F9D
+play,8,0,guerv001,00,X,T/78
+play,8,0,stevl001,30,IIII,IW
+play,8,0,blumg001,00,,NP
+sub,cabro001,"Orlando Cabrera",0,6,11
+play,8,0,cabro001,00,,NP
+sub,fulta001,"Aaron Fultz",1,9,1
+play,8,0,cabro001,01,CX,4/P4
+play,8,0,widgc001,00,,NP
+sub,johnj006,"John Johnstone",1,9,1
+play,8,0,widgc001,21,CBBX,53/G
+play,8,1,aurir001,00,,NP
+sub,cabro001,"Orlando Cabrera",0,6,6
+play,8,1,aurir001,00,,NP
+sub,stris001,"Scott Strickland",0,2,1
+play,8,1,aurir001,22,BFBFS,K
+play,8,1,mirad001,21,CBBX,9/F9D
+play,8,1,johnj006,02,CCS,K
+play,9,0,barrm003,20,BBX,9/F9S
+play,9,0,jonet004,00,X,S8
+play,9,0,bergp001,11,CBX,S8.1-3
+play,9,0,stris001,00,,NP
+sub,whitr001,"Rondell White",0,2,11
+play,9,0,whitr001,11,BFX,7/SF.3-H
+play,9,0,vidrj001,10,BX,63/G
+play,9,1,benam001,00,,NP
+sub,urbiu001,"Ugueth Urbina",0,2,1
+play,9,1,benam001,10,BX,53/G
+play,9,1,muelb001,02,FSFS,K
+play,9,1,bondb001,32,SFFBFBBB,W
+play,9,1,kentj001,20,BBX,8/F8S
+data,er,pavac001,2
+data,er,klins002,0
+data,er,stris001,0
+data,er,urbiu001,0
+data,er,nathj001,2
+data,er,fulta001,0
+data,er,johnj006,1

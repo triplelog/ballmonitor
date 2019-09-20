@@ -1,0 +1,147 @@
+version,2
+info,visteam,ATL
+info,hometeam,HOU
+info,site,HOU03
+info,date,2000/09/01
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,mcclt901
+info,ump1b,rapue901
+info,ump2b,cuzzp901
+info,ump3b,schrp901
+info,pitches,pitches
+info,temp,72
+info,winddir,fromlf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,172
+info,attendance,38845
+info,wp,limaj001
+info,lp,burkj001
+info,save,doteo001
+start,furcr001,"Rafael Furcal",0,1,4
+start,jonea002,"Andruw Jones",0,2,8
+start,jonec004,"Chipper Jones",0,3,5
+start,galaa001,"Andres Galarraga",0,4,3
+start,surhb001,"B.J. Surhoff",0,5,7
+start,lopej001,"Javy Lopez",0,6,2
+start,sandr002,"Reggie Sanders",0,7,9
+start,weisw001,"Walt Weiss",0,8,6
+start,burkj001,"John Burkett",0,9,1
+start,ceder001,"Roger Cedeno",1,1,7
+start,lugoj001,"Julio Lugo",1,2,6
+start,bagwj001,"Jeff Bagwell",1,3,3
+start,hidar001,"Richard Hidalgo",1,4,8
+start,aloum001,"Moises Alou",1,5,9
+start,spieb001,"Bill Spiers",1,6,4
+start,euset001,"Tony Eusebio",1,7,2
+start,trubc001,"Chris Truby",1,8,5
+start,limaj001,"Jose Lima",1,9,1
+play,1,0,furcr001,32,BBCFBB,W
+play,1,0,jonea002,21,BBCC,SB2
+play,1,0,jonea002,32,BBCCFFBX,53/G
+play,1,0,jonec004,00,X,43/G.2-3
+play,1,0,galaa001,30,BBBB,W
+play,1,0,surhb001,01,CX,S9/9S.3-H;1-2
+play,1,0,lopej001,11,BSX,43/G
+play,1,1,ceder001,00,X,S9/9S
+play,1,1,lugoj001,11,CBX,5/FL
+play,1,1,bagwj001,22,FSBBS,K+SB2
+play,1,1,hidar001,12,BCCC,K/C
+play,2,0,sandr002,32,FBBFBX,HR/7
+play,2,0,weisw001,11,CBX,43/G
+play,2,0,burkj001,11,BFX,63/G
+play,2,0,furcr001,22,BCCBX,8/F8D
+play,2,1,aloum001,10,BX,HR/7
+play,2,1,spieb001,20,BBX,8/L8
+play,2,1,euset001,12,BSSX,63/G
+play,2,1,trubc001,22,CSBBX,7/F7
+play,3,0,jonea002,22,BFSFBX,53/G
+play,3,0,jonec004,32,BBBCSX,3/G
+play,3,0,galaa001,02,SFX,S7/7S
+play,3,0,surhb001,00,X,D7/7D.1-3
+play,3,0,lopej001,12,CFBX,8/F8
+play,3,1,limaj001,11,BCX,53/G
+play,3,1,ceder001,12,CSBFC,K/C
+play,3,1,lugoj001,00,X,8/F8D
+play,4,0,sandr002,32,CBBFFBFX,9/F9
+play,4,0,weisw001,00,X,4/L4
+play,4,0,burkj001,12,BSSX,53/G
+play,4,1,bagwj001,00,X,S7
+play,4,1,hidar001,00,X,S7/7S.1-2
+play,4,1,aloum001,00,X,S/78.2-H;1-2
+play,4,1,spieb001,31,BSBBB,W.2-3;1-2
+play,4,1,euset001,10,BX,9/FL
+play,4,1,trubc001,10,BX,8/SF.3-H
+play,4,1,limaj001,10,BX,S8.2-3;1-2
+play,4,1,ceder001,22,BFFBC,K/C
+play,5,0,furcr001,12,CFFBX,S9
+play,5,0,jonea002,20,BBX,8/F8
+play,5,0,jonec004,22,BCBSX,5/P5
+play,5,0,galaa001,02,CFS,K
+play,5,1,lugoj001,32,CBBFFBFFFFS,K
+play,5,1,bagwj001,11,BSX,43/G
+play,5,1,hidar001,11,SBX,53/G
+play,6,0,surhb001,22,CSBFBC,K/C
+play,6,0,lopej001,01,CX,D7
+play,6,0,sandr002,12,FBSFX,7/L7
+play,6,0,weisw001,10,BX,1/L1
+play,6,1,aloum001,30,BBBB,W
+play,6,1,spieb001,32,BFBBSB,W.1-2
+play,6,1,euset001,00,,NP
+sub,ligtk001,"Kerry Ligtenberg",0,9,1
+play,6,1,euset001,32,CBBBSS,K
+play,6,1,trubc001,02,SFX,3/FL
+play,6,1,limaj001,00,,NP
+sub,wardd002,"Daryle Ward",1,9,11
+play,6,1,wardd002,11,BCX,9/F9D
+play,7,0,ligtk001,00,,NP
+sub,joynw001,"Wally Joyner",0,9,11
+play,7,0,joynw001,00,,NP
+sub,slusj001,"Joe Slusarski",1,9,1
+play,7,0,joynw001,00,X,7/F7
+play,7,0,furcr001,32,BCLBBX,6/P6
+play,7,0,jonea002,11,SBX,4/FL
+play,7,1,ceder001,00,,NP
+sub,remlm001,"Mike Remlinger",0,9,1
+play,7,1,ceder001,02,FSX,43/G
+play,7,1,lugoj001,32,BFBFBFFB,W
+play,7,1,bagwj001,31,CBBBB,W.1-2
+play,7,1,hidar001,02,FCS,K
+play,7,1,aloum001,12,SSBX,8/F8
+play,8,0,jonec004,00,X,S9
+play,8,0,galaa001,12,BSFFS,K
+play,8,0,surhb001,10,BX,31/G.1-2
+play,8,0,lopej001,00,,NP
+sub,melum001,"Mitch Meluskey",1,7,2
+com,"$Eusebio separated his right shoulder when he fell into the"
+com,"Houston dugout chasing a popup; out for season after surgery"
+play,8,0,lopej001,01,FX,8/F8D
+play,8,1,spieb001,00,,NP
+sub,mulht001,"Terry Mulholland",0,9,1
+play,8,1,spieb001,32,BCFBBFB,W
+play,8,1,melum001,12,BCLFS,K
+play,8,1,trubc001,11,BFX,7/F7D
+play,8,1,slusj001,00,,NP
+sub,berkl001,"Lance Berkman",1,9,11
+play,8,1,berkl001,10,BX,53/G
+play,9,0,sandr002,00,,NP
+sub,doteo001,"Octavio Dotel",1,9,1
+play,9,0,sandr002,32,BCBBCS,K
+play,9,0,weisw001,00,,NP
+sub,jordb001,"Brian Jordan",0,8,11
+play,9,0,jordb001,00,X,8/F8
+play,9,0,mulht001,00,,NP
+sub,bonib001,"Bobby Bonilla",0,9,11
+play,9,0,bonib001,22,BFFBX,5/FL
+data,er,burkj001,3
+data,er,ligtk001,0
+data,er,remlm001,0
+data,er,mulht001,0
+data,er,limaj001,2
+data,er,slusj001,0
+data,er,doteo001,0

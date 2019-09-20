@@ -1,0 +1,83 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,11,1,,,,,0,3,CBX,rekab001,1,0,,knobc001,0,F
+,00,1,,,,,1,4,X,rekab001,1,0,jeted001 grounds out. ,jeted001,0,G
+,20,1,,,,,2,7,BBX,rekab001,1,0,oneip001 grounds out. ,oneip001,0,G
+,32,1,,,,,3,8,BBCBCFFC,grimj001,1,0,winnr001 strikes out. ,winnr001,1,
+,32,1,,,,,4,14,BBCCBX,grimj001,1,0,cox-s001 grounds out. ,cox-s001,1,G
+,22,1,tramb001,,,,5,19,BCFBX,grimj001,0,0,tramb001 singles. ,tramb001,1,
+tramb001 to 3B. ,00,1,mcgrf001,,tramb001,,6,20,X,grimj001,0,0,mcgrf001 singles. ,mcgrf001,1,
+,32,1,mcgrf001,,tramb001,,7,27,SBBFBFS,grimj001,1,0,smitr003 strikes out. ,smitr003,1,
+,30,2,willb002,,,,8,11,BBBB,rekab001,0,0,willb002 walks. ,willb002,0,
+willb002 to 2B. ,02,2,justd001,willb002,,,9,14,CCX,rekab001,0,0,justd001 reaches 1B on Catcher's Interference. ,justd001,0,
+willb002 to 3B. justd001 to 2B. ,12,2,posaj001,justd001,willb002,,10,18,CFBX,rekab001,0,0,posaj001 singles. ,posaj001,0,
+willb002 scores. justd001 to 3B. posaj001 out. ,00,2,martt002,,justd001,,11,19,X,rekab001,1,1,martt002 reaches on fielder's choice. ,martt002,0,
+justd001 scores. martt002 to 2B. ,20,2,,martt002,,,12,22,BBX,rekab001,1,1,spens001 hits sacrifice fly. ,spens001,0,
+,31,2,,martt002,,,13,27,BFBBX,rekab001,1,0,,bross001,0,F
+,12,2,guilj001,,,,14,32,CCFBX,grimj001,0,0,guilj001 singles. ,guilj001,1,
+guilj001 to 2B. ,02,2,,guilj001,,,15,35,CFX,grimj001,1,0,difem001 grounds out. ,difem001,1,G
+,32,2,johnr006,guilj001,,,16,41,BFBBFB,grimj001,0,0,johnr006 walks. ,johnr006,1,
+guilj001 scores. johnr006 to 3B. ,00,2,martf001,,johnr006,,17,42,X,grimj001,0,1,martf001 singles. ,martf001,1,
+johnr006 scores. martf001 to 2B. ,00,2,winnr001,martf001,,,18,43,X,grimj001,0,1,winnr001 singles. ,winnr001,1,
+martf001 to 3B. winnr001 to 2B. ,00,2,,winnr001,martf001,,19,44,X,grimj001,1,0,cox-s001 grounds out. ,cox-s001,1,G
+,31,2,,winnr001,martf001,,20,49,SBBBX,grimj001,1,0,tramb001 grounds out. ,tramb001,1,G
+,01,3,,,,,21,29,FX,rekab001,1,0,knobc001 grounds out. ,knobc001,0,G
+,11,3,,,,,22,32,BCX,rekab001,1,0,jeted001 grounds out. ,jeted001,0,G
+,00,3,,,,,23,33,X,rekab001,1,0,oneip001 grounds out. ,oneip001,0,G
+,21,3,mcgrf001,,,,24,53,BBFX,grimj001,0,0,mcgrf001 singles. ,mcgrf001,1,
+,02,3,mcgrf001,,,,25,56,SSS,grimj001,1,0,smitr003 strikes out. ,smitr003,1,
+mcgrf001 to 2B. ,00,3,guilj001,mcgrf001,,,26,57,X,grimj001,0,0,guilj001 singles. ,guilj001,1,
+mcgrf001 to 3B. guilj001 to 2B. ,21,3,difem001,guilj001,mcgrf001,,27,61,BSBX,grimj001,0,0,difem001 singles. ,difem001,1,
+mcgrf001 scores. guilj001 scores. difem001 to 2B. ,22,3,johnr006,difem001,,,28,66,BFBFX,grimj001,0,2,johnr006 singles. ,johnr006,1,
+difem001 to 3B. johnr006 to 2B. ,31,3,martf001,johnr006,difem001,,30,5,BBBCB,dingc001,0,0,martf001 walks. ,martf001,1,
+,21,3,,johnr006,difem001,,31,9,BBCX,dingc001,2,0,Double Play. ,winnr001,1,
+,20,4,,,,,32,36,BBX,rekab001,1,0,willb002 grounds out. ,willb002,0,G
+,01,4,,,,,33,38,CX,rekab001,1,0,justd001 grounds out. ,justd001,0,G
+,32,4,posaj001,,,,34,44,CBCBBB,rekab001,0,0,posaj001 walks. ,posaj001,0,
+,11,4,posaj001,,,,35,47,BCX,rekab001,1,0,martt002 grounds out. ,martt002,0,G
+,32,4,,,,,36,15,BCFBBX,dingc001,1,0,cox-s001 grounds out. ,cox-s001,1,G
+,12,4,,,,,37,19,FCBS,dingc001,1,0,tramb001 strikes out. ,tramb001,1,
+,22,4,,,,,38,24,BBCSS,dingc001,1,0,mcgrf001 strikes out. ,mcgrf001,1,
+,00,5,,,,,39,48,X,rekab001,1,0,,spens001,0,
+,22,5,,bross001,,,40,54,BCBFFX,rekab001,0,0,bross001 doubles. ,bross001,0,
+bross001 to 3B. ,01,5,,,bross001,,41,56,CX,rekab001,1,0,knobc001 grounds out. ,knobc001,0,G
+,22,5,,,bross001,,42,61,BCBSS,rekab001,1,0,jeted001 strikes out. ,jeted001,0,
+,00,5,,,,,43,25,X,dingc001,1,0,smitr003 grounds out. ,smitr003,1,G
+,10,5,,,,,44,27,BX,dingc001,1,0,guilj001 grounds out. ,guilj001,1,G
+,12,5,difem001,,,,45,31,FBCX,dingc001,0,0,difem001 singles. ,difem001,1,
+difem001 to 2B. ,31,5,johnr006,difem001,,,46,36,BBCBB,dingc001,0,0,johnr006 walks. ,johnr006,1,
+,21,5,johnr006,difem001,,,47,40,CBBX,dingc001,1,0,martf001 grounds out. ,martf001,1,G
+,22,6,,,,,48,66,FBBCX,rekab001,1,0,,oneip001,0,F
+,32,6,willb002,,,,49,72,CFBBBX,rekab001,0,0,willb002 singles. ,willb002,0,
+,00,6,,,,,50,73,X,rekab001,2,0,Double Play. ,justd001,0,
+,11,6,,,,,52,3,CBX,stanm003,1,0,winnr001 grounds out. ,winnr001,1,G
+,22,6,cox-s001,,,,53,10,BFFBFFX,stanm003,0,0,cox-s001 singles. ,cox-s001,1,
+cox-s001 to 2B. ,30,6,tramb001,cox-s001,,,54,14,BBBB,stanm003,0,0,tramb001 walks. ,tramb001,1,
+cox-s001 to 3B. tramb001 to 2B. ,02,6,,tramb001,cox-s001,,55,18,FSFX,stanm003,1,0,mcgrf001 grounds out. ,mcgrf001,1,G
+,30,6,smitr003,tramb001,cox-s001,,56,22,BBBB,stanm003,0,0,smitr003 walks. ,smitr003,1,
+,10,6,smitr003,tramb001,cox-s001,,57,24,BX,stanm003,1,0,,guilj001,1,F
+,21,7,posaj001,,,,58,77,FBBX,rekab001,0,0,posaj001 singles. ,posaj001,0,
+posaj001 to 2B. ,02,7,,posaj001,,,59,81,CSFX,rekab001,1,0,martt002 grounds out. ,martt002,0,G
+,00,7,,posaj001,,,60,82,X,rekab001,1,0,,spens001,0,F
+,32,7,,posaj001,,,61,88,SSBBBX,rekab001,1,0,,bross001,0,F
+,32,7,,,,,62,32,FBBBSFFX,stanm003,1,0,,difem001,1,L
+,31,7,johnr006,,,,63,37,CBBBB,stanm003,0,0,johnr006 walks. ,johnr006,1,
+johnr006 to 2B. ,32,7,martf001,johnr006,,,64,44,BBSLFBB,stanm003,0,0,martf001 walks. ,martf001,1,
+johnr006 to 3B. martf001 out. ,00,7,winnr001,,johnr006,,65,45,X,stanm003,1,0,winnr001 reaches on fielder's choice. ,winnr001,1,
+,00,7,winnr001,,johnr006,,66,46,X,stanm003,1,0,cox-s001 grounds out. ,cox-s001,1,G
+,22,8,knobc001,,,,68,5,BCBFX,mecij001,0,0,knobc001 singles. ,knobc001,0,
+,12,8,knobc001,,,,69,9,LBFX,mecij001,1,0,,jeted001,0,F
+knobc001 to 2B. ,32,8,,knobc001,,,70,17,BBFFBFFX,mecij001,1,0,oneip001 grounds out. ,oneip001,0,G
+knobc001 scores. ,00,8,,,,,71,18,X,mecij001,0,2,willb002 homers. ,willb002,0,
+,22,8,,,,,72,24,CFFBBS,mecij001,1,0,justd001 strikes out. ,justd001,0,
+,11,8,,,,,74,3,CBX,nelsj001,1,0,tramb001 grounds out. ,tramb001,1,G
+,00,8,,mcgrf001,,,75,4,X,nelsj001,0,0,mcgrf001 doubles. ,mcgrf001,1,
+,31,8,smitr003,mcgrf001,,,76,9,BSBBB,nelsj001,0,0,smitr003 walks. ,smitr003,1,
+,32,8,smitr003,mcgrf001,,,77,16,FSBFBBS,nelsj001,1,0,guilj001 strikes out. ,guilj001,1,
+mcgrf001 to 3B. smitr003 to 2B. ,31,8,difem001,smitr003,mcgrf001,,78,21,CBBBB,nelsj001,0,0,difem001 walks. ,difem001,1,
+mcgrf001 scores. smitr003 to 3B. difem001 to 2B. ,30,8,johnr006,difem001,smitr003,,79,25,BBBB,nelsj001,0,1,johnr006 walks. ,johnr006,1,
+smitr003 scores. difem001 to 3B. johnr006 to 2B. ,32,8,martf001,johnr006,difem001,,81,6,BBBCCB,erdot001,0,1,martf001 walks. ,martf001,1,
+,12,8,martf001,johnr006,difem001,,82,11,CFBFX,erdot001,1,0,winnr001 grounds out. ,winnr001,1,G
+,01,9,,posaj001,,,84,2,CX,hernr001,0,0,posaj001 doubles. ,posaj001,0,
+,02,9,,posaj001,,,85,5,CCS,hernr001,1,0,martt002 strikes out. ,martt002,0,
+,00,9,,posaj001,,,86,6,X,hernr001,1,0,,spens001,0,L
+,22,9,,posaj001,,,87,11,BBFSS,hernr001,1,0,bross001 strikes out. ,bross001,0,

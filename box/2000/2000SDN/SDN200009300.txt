@@ -1,0 +1,170 @@
+version,2
+info,visteam,LAN
+info,hometeam,SDN
+info,site,SAN01
+info,date,2000/09/30
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,wintm901
+info,ump1b,vanvm901
+info,ump2b,froeb901
+info,ump3b,culbf901
+info,pitches,pitches
+info,temp,70
+info,winddir,ltor
+info,windspeed,6
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,190
+info,attendance,50267
+info,wp,gagne001
+info,lp,clemm001
+info,save,
+start,goodt001,"Tom Goodwin",0,1,8
+start,grudm001,"Mark Grudzielanek",0,2,4
+start,shefg001,"Gary Sheffield",0,3,7
+start,grees001,"Shawn Green",0,4,9
+start,karre001,"Eric Karros",0,5,3
+start,hundt001,"Todd Hundley",0,6,2
+start,hansd001,"Dave Hansen",0,7,5
+start,coraa001,"Alex Cora",0,8,6
+start,gagne001,"Eric Gagne",0,9,1
+start,jackd003,"Damian Jackson",1,1,4
+start,owene001,"Eric Owens",1,2,7
+start,klesr001,"Ryan Klesko",1,3,3
+start,nevip001,"Phil Nevin",1,4,5
+start,mabrj001,"John Mabry",1,5,9
+start,darrm001,"Mike Darr",1,6,8
+start,davib003,"Ben Davis",1,7,2
+start,relad001,"Desi Relaford",1,8,6
+start,clemm001,"Matt Clement",1,9,1
+play,1,0,goodt001,01,CX,7/F7
+play,1,0,grudm001,21,BCBX,8/F8
+play,1,0,shefg001,32,BBFBCB,W
+play,1,0,grees001,10,BX,D7.1-3
+play,1,0,karre001,30,BBBB,W
+play,1,0,hundt001,12,CFFBX,HR/9.3-H;2-H;1-H
+play,1,0,hansd001,12,CCFBX,43/G
+play,1,1,jackd003,12,FFBX,6/L6
+play,1,1,owene001,22,FCBBX,T/89
+play,1,1,klesr001,21,FBBX,43/G.3-H
+play,1,1,nevip001,00,H,HP
+play,1,1,mabrj001,02,SSS,K
+play,2,0,coraa001,22,FBBFFX,3/G
+play,2,0,gagne001,12,BSFS,K
+play,2,0,goodt001,32,BBBCSX,43/G
+play,2,1,darrm001,10,BX,9/F9
+play,2,1,davib003,32,FBBSBS,K
+play,2,1,relad001,12,CCFFBX,8/F8
+play,3,0,grudm001,12,CBSC,K/C
+play,3,0,shefg001,01,CX,53/G
+play,3,0,grees001,32,BBCBFS,K
+play,3,1,clemm001,02,CCFS,K
+play,3,1,jackd003,21,BBCX,S7/7S
+play,3,1,owene001,11,BCB,SB2
+play,3,1,owene001,32,BCBSBFFFX,9/F9
+play,3,1,klesr001,32,FBBFBFB,W
+play,3,1,nevip001,22,SBBSFS,K
+play,4,0,karre001,11,BFX,53/G
+play,4,0,hundt001,10,BX,31/G
+play,4,0,hansd001,12,BCCX,S8/8S
+play,4,0,coraa001,12,CBFFS,K
+play,4,1,mabrj001,22,CBBFX,8/F8
+play,4,1,darrm001,32,CBBBFX,D/89
+play,4,1,davib003,22,BCBFX,9/F9
+play,4,1,relad001,12,BSFC,K/C
+play,5,0,gagne001,01,CX,63/G
+play,5,0,goodt001,31,BBBCB,W
+play,5,0,grudm001,00,X,1/BP1
+play,5,0,shefg001,00,B,SB2
+play,5,0,shefg001,32,BCBSFBC,K/C
+play,5,1,clemm001,02,CSC,K/C
+play,5,1,jackd003,31,BBBCX,7/F7
+play,5,1,owene001,00,X,63/G
+play,6,0,grees001,10,BX,6/P6
+play,6,0,karre001,12,SSFBFFX,S7
+play,6,0,hundt001,21,BCBH,HP.1-2
+play,6,0,hansd001,31,CBBBB,W.2-3;1-2
+play,6,0,coraa001,00,X,D/89.3-H;2-H;1-3
+play,6,0,gagne001,02,FFC,K/C
+play,6,0,goodt001,21,CBBX,S7.3-H;2-H;B-2(THH)
+play,6,0,grudm001,00,,NP
+sub,cunnw001,"Will Cunnane",1,9,1
+play,6,0,grudm001,32,CBBBFX,S.2-3
+play,6,0,shefg001,12,CFBX,D/78D.3-H;1-3
+play,6,0,grees001,12,CBFX,E3/G.3-H(UR)(NR);2-3
+play,6,0,karre001,02,SFC,K/C
+play,6,1,klesr001,12,SFFFBX,63/G
+play,6,1,nevip001,01,FX,S8
+play,6,1,mabrj001,02,SFS,K
+play,6,1,darrm001,12,FFBFX,7/F7
+play,7,0,hundt001,00,,NP
+sub,vitij001,"Joe Vitiello",1,3,3
+play,7,0,hundt001,00,,NP
+sub,dehak001,"Kory DeHaan",1,5,9
+play,7,0,hundt001,00,,NP
+sub,alvag001,"Gabe Alvarez",1,4,5
+play,7,0,hundt001,00,,NP
+sub,erdot001,"Todd Erdos",1,9,1
+play,7,0,hundt001,00,X,31/G
+play,7,0,hansd001,22,CCBBX,8/F8
+play,7,0,coraa001,00,X,S/89
+play,7,0,gagne001,00,,NP
+sub,elstk001,"Kevin Elster",0,9,11
+play,7,0,elstk001,32,FBBBFFFFB,W.1-2
+play,7,0,goodt001,00,,NP
+sub,santf001,"F.P. Santangelo",0,9,12
+play,7,0,goodt001,12,SCFBS,K
+play,7,1,davib003,00,,NP
+sub,masao001,"Onan Masaoka",0,9,1
+play,7,1,davib003,12,BFFS,K
+play,7,1,relad001,22,FBBFC,K/C
+play,7,1,erdot001,00,,NP
+sub,nadyx001,"Xavier Nady",1,9,11
+play,7,1,nadyx001,22,CCBBX,S8
+com,"Debut game for Xavier Nady"
+play,7,1,jackd003,00,X,D7.1-H;B-3(THH)
+play,7,1,owene001,11,FBX,43/G
+play,8,0,grudm001,00,,NP
+sub,river002,"Ruben Rivera",1,2,8
+play,8,0,grudm001,00,,NP
+sub,dehak001,"Kory DeHaan",1,5,7
+play,8,0,grudm001,00,,NP
+sub,darrm001,"Mike Darr",1,6,9
+play,8,0,grudm001,00,,NP
+sub,almac001,"Carlos Almanzar",1,9,1
+play,8,0,grudm001,00,X,4/P4
+play,8,0,shefg001,32,BBSBSFFFX,2/FL
+play,8,0,grees001,22,FFBBS,K
+play,8,1,vitij001,00,,NP
+sub,avenb001,"Bruce Aven",0,3,7
+play,8,1,vitij001,32,CBBBFB,W
+play,8,1,alvag001,32,BFFBBX,7/F7
+play,8,1,dehak001,11,FBX,8/F8
+play,8,1,darrm001,01,SX,64(1)/FO
+play,9,0,karre001,00,,NP
+sub,carlb001,"Buddy Carlyle",1,9,1
+play,9,0,karre001,22,BFFFBX,63/G
+play,9,0,hundt001,02,CFFFX,31/G
+play,9,0,hansd001,32,BFFFBBFB,W
+play,9,0,coraa001,02,CCX,7/F7
+play,9,1,davib003,00,,NP
+sub,donnc001,"Chris Donnels",0,5,3
+play,9,1,davib003,00,,NP
+sub,reyea001,"Al Reyes",0,9,1
+play,9,1,davib003,00,X,9/F9
+play,9,1,relad001,22,CSBBX,7/F7
+play,9,1,carlb001,00,,NP
+sub,sprae001,"Ed Sprague",1,9,11
+play,9,1,sprae001,12,CBSS,K
+data,er,gagne001,1
+data,er,masao001,1
+data,er,reyea001,0
+data,er,clemm001,9
+data,er,cunnw001,0
+data,er,erdot001,0
+data,er,almac001,0
+data,er,carlb001,0

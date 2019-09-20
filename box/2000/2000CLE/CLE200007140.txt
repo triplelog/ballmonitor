@@ -1,0 +1,139 @@
+version,2
+info,visteam,PIT
+info,hometeam,CLE
+info,site,CLE08
+info,date,2000/07/14
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,dimum901
+info,ump1b,gormb901
+info,ump2b,everm901
+info,ump3b,crawj901
+info,pitches,pitches
+info,temp,65
+info,winddir,torf
+info,windspeed,3
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,163
+info,attendance,43046
+info,wp,finlc001
+info,lp,bensk001
+info,save,
+start,benjm001,"Mike Benjamin",0,1,4
+start,kendj001,"Jason Kendall",0,2,2
+start,cordw001,"Wil Cordero",0,3,7
+start,gileb002,"Brian Giles",0,4,8
+start,younk001,"Kevin Young",0,5,3
+start,ramia001,"Aramis Ramirez",0,6,5
+start,hermc001,"Chad Hermansen",0,7,9
+start,mearp001,"Pat Meares",0,8,6
+start,osikk001,"Keith Osik",0,9,10
+start,bensk001,"Kris Benson",0,0,1
+start,alomr001,"Roberto Alomar",1,1,4
+start,vizqo001,"Omar Vizquel",1,2,6
+start,leder001,"Ricky Ledee",1,3,7
+start,ramim002,"Manny Ramirez",1,4,10
+start,thomj002,"Jim Thome",1,5,3
+start,frymt001,"Travis Fryman",1,6,5
+start,branr001,"Russell Branyan",1,7,9
+start,loftk001,"Kenny Lofton",1,8,8
+start,aloms001,"Sandy Alomar",1,9,2
+start,finlc001,"Chuck Finley",1,0,1
+play,1,0,benjm001,00,X,8/F8
+play,1,0,kendj001,32,BCBCBX,D7/7D
+play,1,0,cordw001,22,BFCBFX,4/P4
+play,1,0,gileb002,22,CBBCX,31/G
+play,1,1,alomr001,21,CBBX,9/F9
+play,1,1,vizqo001,31,BBCBB,W
+play,1,1,leder001,00,X,46(1)3/GDP
+play,2,0,younk001,12,CBCX,7/F7
+play,2,0,ramia001,12,FBFX,3/P3
+play,2,0,hermc001,22,SBBSC,K/C
+play,2,1,ramim002,30,BBBX,S7
+play,2,1,thomj002,22,BCSFFBX,S9/9S.1-2
+play,2,1,frymt001,02,CSC,K/C
+play,2,1,branr001,12,SCBX,HR/8.2-H;1-H
+play,2,1,loftk001,12,CFBS,K
+play,2,1,aloms001,00,X,S9
+play,2,1,alomr001,12,CCBS,K
+play,3,0,mearp001,00,X,S7
+play,3,0,osikk001,31,BBFBB,W.1-2
+play,3,0,benjm001,21,LBBX,54/SH.2-3;1-2
+play,3,0,kendj001,21,BBFX,53/G.3-H;2-3
+play,3,0,cordw001,11,BSX,7/F7
+play,3,1,vizqo001,01,CX,7/L7
+play,3,1,leder001,32,BBCBSB,W
+play,3,1,ramim002,12,BSCS,K
+play,3,1,thomj002,10,BX,63/G
+play,4,0,gileb002,32,BSCFBBFX,3/G
+play,4,0,younk001,12,CBSX,HR/9
+play,4,0,ramia001,02,SCX,53/G
+play,4,0,hermc001,00,X,3/G
+play,4,1,frymt001,11,CBX,D7
+play,4,1,branr001,02,CCC,K/C
+play,4,1,loftk001,01,FB,WP.2-3
+play,4,1,loftk001,21,FBBX,S8.3-H
+play,4,1,aloms001,02,CFX,63/G.1-2
+play,4,1,alomr001,12,LBSS,K
+play,5,0,mearp001,01,FX,23/G
+play,5,0,osikk001,00,X,7/F7
+play,5,0,benjm001,22,CCBBS,K
+play,5,1,vizqo001,22,LBBSX,S9
+play,5,1,leder001,00,X,S8.1-3
+play,5,1,ramim002,00,X,S7/7S.3-H;1-2
+play,5,1,thomj002,00,,NP
+sub,wallj001,"Jeff Wallace",0,0,1
+play,5,1,thomj002,20,BBH,HP.2-3;1-2
+play,5,1,frymt001,11,CBX,9/SF.3-H
+play,5,1,branr001,00,B,WP.2-3;1-2
+play,5,1,branr001,31,BBBFX,9/SF.3-H
+play,5,1,loftk001,31,CBBBB,W
+play,5,1,aloms001,11,BCX,D9/9S.2-H;1-H
+play,5,1,alomr001,00,,NP
+sub,petec001,"Chris Peters",0,0,1
+play,5,1,alomr001,21,BFBX,13/G
+play,6,0,kendj001,02,CCX,8/F8
+play,6,0,cordw001,32,BBFBFX,63/G
+play,6,0,gileb002,21,BFBX,S8/8S
+play,6,0,younk001,32,FBBBFS,K
+play,6,1,vizqo001,11,CBX,9/F9
+play,6,1,leder001,22,BBCCC,K/C
+play,6,1,ramim002,32,CBBSFBS,K
+play,7,0,ramia001,12,CBSX,4/P4
+play,7,0,hermc001,22,CBSBS,K
+play,7,0,mearp001,32,BBFBFFFB,W
+play,7,0,osikk001,12,FBCFX,S/78.1-2
+play,7,0,benjm001,00,X,63/G
+play,7,1,thomj002,32,CBBSFBX,43/G
+play,7,1,frymt001,32,CBBFBX,S9
+play,7,1,branr001,00,,NP
+sub,ramia002,"Alex Ramirez",1,7,11
+play,7,1,ramia002,10,BX,64(1)3/GDP
+play,8,0,kendj001,00,,NP
+sub,ramia002,"Alex Ramirez",1,7,9
+play,8,0,kendj001,00,,NP
+sub,speij001,"Justin Speier",1,0,1
+play,8,0,kendj001,20,BBX,9/F9D
+play,8,0,cordw001,32,BFFBFFBX,7/F7
+play,8,0,gileb002,11,FBX,8/F8
+play,8,1,loftk001,00,,NP
+sub,willm005,"Mike Williams",0,0,1
+play,8,1,loftk001,12,BCFS,K
+play,8,1,aloms001,22,BFSBFS,K
+play,8,1,alomr001,00,X,13/G
+play,9,0,younk001,10,BX,HR/9
+play,9,0,ramia001,31,BBFBX,S7/7S
+play,9,0,hermc001,12,SBSS,K
+play,9,0,mearp001,10,BX,64(1)/FO
+play,9,0,osikk001,22,BCBCX,S7/7S.1-2
+play,9,0,benjm001,22,SFBBC,K/C
+data,er,bensk001,7
+data,er,wallj001,2
+data,er,petec001,0
+data,er,willm005,0
+data,er,finlc001,2
+data,er,speij001,1

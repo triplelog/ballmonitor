@@ -1,0 +1,70 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,00,1,,,,,0,1,X,damij001,1,0,,huntb002,0,P
+,12,1,,,,,1,5,CCBX,damij001,1,0,peren001 grounds out. ,peren001,0,G
+,30,1,walkl001,,,,2,9,BBBB,damij001,0,0,walkl001 walks. ,walkl001,0,
+walkl001 to 3B. ,11,1,hammj001,,walkl001,,3,12,FBX,damij001,0,0,hammj001 singles. ,hammj001,0,
+,12,1,hammj001,,walkl001,,4,18,FFFFBX,damij001,1,0,heltt001 grounds out. ,heltt001,0,G
+,11,1,,,,,5,3,CBX,yoshm001,1,0,,bellr002,1,
+,10,1,,,,,6,5,BX,yoshm001,1,0,,grism001,1,F
+,22,1,,,,,7,12,SSBFBFS,yoshm001,1,0,jenkg001 strikes out. ,jenkg001,1,
+,00,2,,,,,8,19,X,damij001,1,0,,walkt002,0,F
+,31,2,,,,,9,24,CBBBX,damij001,1,0,,shumt001,0,F
+,32,2,,,,,10,30,BBFBFX,damij001,1,0,petrb001 grounds out. ,petrb001,0,G
+,02,2,,,,,11,15,CFX,yoshm001,1,0,sexsr001 grounds out. ,sexsr001,1,G
+,31,2,burnj001,,,,12,20,BBBCB,yoshm001,0,0,burnj001 walks. ,burnj001,1,
+,22,2,burnj001,,,,13,25,SBFBS,yoshm001,1,0,hernj001 strikes out. ,hernj001,1,
+,00,2,burnj001,,,,14,26,X,yoshm001,1,0,casar001 grounds out. ,casar001,1,G
+,00,3,,,,,15,31,X,damij001,1,0,,yoshm001,0,P
+,01,3,,,,,16,33,CX,damij001,1,0,huntb002 grounds out. ,huntb002,0,G
+,02,3,,,,,17,36,FFX,damij001,1,0,,peren001,0,F
+,12,3,,,,,18,32,FSBFFX,yoshm001,1,0,,lopel002,1,F
+,11,3,,,,,19,35,BFX,yoshm001,1,0,damij001 grounds out. ,damij001,1,G
+,00,3,bellr002,,,,20,36,X,yoshm001,0,0,bellr002 singles. ,bellr002,1,
+bellr002 to 3B. ,00,3,grism001,,bellr002,,21,37,X,yoshm001,0,0,grism001 singles. ,grism001,1,
+,22,3,,grism001,bellr002,jenkg001,22,43,BBFSFB,yoshm001,0,0,grism001 steals 2B. ,jenkg001,1,
+,32,3,,grism001,bellr002,,23,50,BBFSFBS,yoshm001,1,0,jenkg001 strikes out. ,jenkg001,1,
+,00,4,,,,,24,37,X,damij001,1,0,walkl001 grounds out. ,walkl001,0,G
+,12,4,,,,,25,41,SFBX,damij001,1,0,,hammj001,0,
+,10,4,,,,,26,43,BX,damij001,0,1,heltt001 homers. ,heltt001,0,
+,22,4,,,,,27,48,BCBFC,damij001,1,0,walkt002 strikes out. ,walkt002,0,
+,12,4,,,,,28,54,SFBS,yoshm001,1,0,sexsr001 strikes out. ,sexsr001,1,
+,22,4,,,,,29,62,CSBFBFFS,yoshm001,1,0,burnj001 strikes out. ,burnj001,1,
+,00,4,,,,,30,63,X,yoshm001,1,0,hernj001 grounds out. ,hernj001,1,G
+,01,5,,shumt001,,,31,50,CX,damij001,0,0,shumt001 doubles. ,shumt001,0,
+,11,5,,shumt001,,,32,53,CBX,damij001,1,0,,petrb001,0,F
+,12,5,,shumt001,,,33,57,FBFX,damij001,1,0,yoshm001 grounds out. ,yoshm001,0,G
+,01,5,,shumt001,,,34,59,CX,damij001,1,0,,huntb002,0,
+,32,5,,,,,35,70,BFBBFFX,yoshm001,1,0,casar001 grounds out. ,casar001,1,G
+,12,5,,,,,36,75,CSFBX,yoshm001,1,0,,lopel002,1,F
+,00,5,,,,,37,76,X,yoshm001,0,1,damij001 homers. ,damij001,1,
+,20,5,,,,,38,79,BBX,yoshm001,1,0,,bellr002,1,F
+,12,6,,,,,39,63,CFBX,damij001,1,0,,peren001,0,F
+,21,6,,,,,40,67,CBBX,damij001,1,0,,walkl001,0,P
+,00,6,,,,,41,68,X,damij001,1,0,hammj001 grounds out. ,hammj001,0,G
+,00,6,,,,,42,80,X,yoshm001,1,0,grism001 grounds out. ,grism001,1,G
+,00,6,,,,,43,81,X,yoshm001,0,1,jenkg001 homers. ,jenkg001,1,
+,00,6,,,,,44,82,X,yoshm001,1,0,sexsr001 grounds out. ,sexsr001,1,G
+,21,6,,,,,45,86,CBBX,yoshm001,0,1,burnj001 homers. ,burnj001,1,
+,12,6,,,,,46,90,CCBX,yoshm001,1,0,,hernj001,1,L
+,01,7,,,,,47,70,CX,damij001,1,0,,heltt001,0,P
+,10,7,walkt002,,,,48,72,BX,damij001,0,0,walkt002 singles. ,walkt002,0,
+,02,7,walkt002,,,,49,75,CCX,damij001,1,0,,shumt001,0,F
+walkt002 to 2B. ,30,7,petrb001,walkt002,,,50,79,BBBB,damij001,0,0,petrb001 walks. ,petrb001,0,
+,22,7,petrb001,walkt002,,,52,84,BCCBC,damij001,1,0,goodt001 strikes out. ,goodt001,0,
+,11,7,,,,,54,3,CBX,carrg001,1,0,,casar001,1,F
+,01,7,,,,,55,5,CX,carrg001,1,0,lopel002 grounds out. ,lopel002,1,G
+,01,7,,,,,56,7,CX,carrg001,1,0,damij001 grounds out. ,damij001,1,G
+,02,8,,,,,57,87,CCX,damij001,1,0,huntb002 grounds out. ,huntb002,0,G
+,11,8,,,,,58,90,BFX,damij001,1,0,,peren001,0,F
+,00,8,,,,,59,91,X,damij001,1,0,,walkl001,0,F
+,12,8,,,,,60,11,CCBS,carrg001,1,0,bellr002 strikes out. ,bellr002,1,
+,00,8,,,,,61,12,X,carrg001,1,0,grism001 grounds out. ,grism001,1,G
+,32,8,jenkg001,,,,62,19,BBFFBFB,carrg001,0,0,jenkg001 walks. ,jenkg001,1,
+,12,8,jenkg001,,,,63,23,CCBS,carrg001,1,0,sexsr001 strikes out. ,sexsr001,1,
+,22,9,hammj001,,,,64,96,BBCFX,damij001,0,0,hammj001 singles. ,hammj001,0,
+hammj001 to 3B. ,01,9,heltt001,,hammj001,,65,98,CX,damij001,0,0,heltt001 singles. ,heltt001,0,
+hammj001 scores. heltt001 to 3B. ,02,9,walkt002,,heltt001,,66,101,FFX,damij001,0,1,walkt002 singles. ,walkt002,0,
+,10,9,walkt002,,heltt001,,68,2,BX,leskc001,1,0,,shumt001,0,P
+walkt002 to 2B. ,10,9,,walkt002,heltt001,,70,4,BX,leskc001,1,0,,maynb001,0,F
+,30,9,cirij001,walkt002,heltt001,,72,8,IIII,leskc001,0,0,cirij001 intentionally walks. ,cirij001,0,
+,22,9,cirij001,walkt002,heltt001,,73,13,CBFBX,leskc001,1,0,huntb002 grounds out. ,huntb002,0,G

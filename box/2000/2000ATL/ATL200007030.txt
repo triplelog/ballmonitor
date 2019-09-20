@@ -1,0 +1,168 @@
+version,2
+info,visteam,MON
+info,hometeam,ATL
+info,site,ATL02
+info,date,2000/07/03
+info,number,0
+info,starttime,7:40PM
+info,daynight,night
+info,usedh,false
+info,umphome,nelsj901
+info,ump1b,cousd901
+info,ump2b,marqa901
+info,ump3b,spiep901
+info,pitches,pitches
+info,temp,88
+info,winddir,tolf
+info,windspeed,12
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,178
+info,attendance,44302
+info,wp,armat002
+info,lp,mulht001
+info,save,
+start,guerw001,"Wilton Guerrero",0,1,8
+start,vidrj001,"Jose Vidro",0,2,4
+start,whitr001,"Rondell White",0,3,7
+start,guerv001,"Vladimir Guerrero",0,4,9
+start,stevl001,"Lee Stevens",0,5,3
+start,widgc001,"Chris Widger",0,6,2
+start,barrm003,"Michael Barrett",0,7,5
+start,cabro001,"Orlando Cabrera",0,8,6
+start,armat002,"Tony Armas",0,9,1
+start,veraq001,"Quilvio Veras",1,1,4
+start,jonea002,"Andruw Jones",1,2,8
+start,jonec004,"Chipper Jones",1,3,5
+start,joynw001,"Wally Joyner",1,4,3
+start,jordb001,"Brian Jordan",1,5,9
+start,lopej001,"Javy Lopez",1,6,2
+start,bonib001,"Bobby Bonilla",1,7,7
+start,weisw001,"Walt Weiss",1,8,6
+start,mulht001,"Terry Mulholland",1,9,1
+play,1,0,guerw001,01,CX,S
+play,1,0,vidrj001,21,BSBB,CS2(26)
+play,1,0,vidrj001,32,BSBBFB,W
+play,1,0,whitr001,32,FCBFFBFFBX,8/F8
+play,1,0,guerv001,12,FFBFS,K23
+play,1,1,veraq001,02,CFFS,K
+play,1,1,jonea002,11,BCX,53/G
+play,1,1,jonec004,10,BX,7/FL
+play,2,0,stevl001,12,FFBX,43/G
+play,2,0,widgc001,02,CFX,8/F8S
+play,2,0,barrm003,11,BCX,9/L9
+play,2,1,joynw001,21,SBBX,43/G
+play,2,1,jordb001,22,CSBBX,4/P4
+play,2,1,lopej001,00,X,63/G
+play,3,0,cabro001,00,X,S7/7S
+play,3,0,armat002,02,CLX,E2/SH.1-2
+play,3,0,guerw001,00,X,34/SH.2-3;1-2
+play,3,0,vidrj001,00,X,HR/8.3-H;2-H(UR)
+play,3,0,whitr001,22,SFBFBFS,K
+play,3,0,guerv001,02,CCX,43/G
+play,3,1,bonib001,11,CBX,43/G
+play,3,1,weisw001,31,BCBBB,W
+play,3,1,mulht001,00,X,34/SH.1-2
+play,3,1,veraq001,12,CFBX,3/G
+play,4,0,stevl001,11,BSX,S7/7S
+play,4,0,widgc001,12,BFFX,S7.1-2
+play,4,0,barrm003,12,FBFS,K
+play,4,0,cabro001,01,CX,8/F8D.2-3
+play,4,0,armat002,00,X,S9/9S.3-H;1-2
+play,4,0,guerw001,12,BSCFFX,54(1)/FO.2-3
+play,4,1,jonea002,21,BFBX,63/G
+play,4,1,jonec004,00,X,8/L8
+play,4,1,joynw001,31,BBCBX,S8
+play,4,1,jordb001,32,FBFBBB,W.1-2
+play,4,1,lopej001,22,BCBFX,S/78S.2-H;1-3
+play,4,1,bonib001,11,BSX,46(1)/FO
+play,5,0,vidrj001,32,BCCBBX,S9/9S
+play,5,0,whitr001,12,CBCX,S.1-2
+play,5,0,guerv001,10,BX,S7/7S.2-H;1-3;B-2(E7)
+play,5,0,stevl001,00,X,E3/G.3-H;2-3
+play,5,0,widgc001,12,BSCX,7/SF.3-H
+play,5,0,barrm003,21,FBBX,S/78.1-2
+play,5,0,cabro001,00,,NP
+sub,villi001,"Ismael Villegas",1,7,1
+play,5,0,cabro001,00,,NP
+sub,hubbt001,"Trenidad Hubbard",1,9,7
+play,5,0,cabro001,10,BX,HR/7.2-H(UR);1-H
+com,"Debut game for Ismael Villegas"
+play,5,0,armat002,12,CSBS,K
+play,5,0,guerw001,01,CX,13/G
+play,5,1,weisw001,11,CBX,31/G
+play,5,1,hubbt001,00,X,9/F9
+play,5,1,veraq001,01,CX,S7/7S
+play,5,1,jonea002,00,X,S8/78.1-3;B-2(E8)
+play,5,1,jonec004,01,FX,8/F8
+play,6,0,vidrj001,32,BCCBFFBFX,63/G
+play,6,0,whitr001,32,FBBSBC,K/C
+play,6,0,guerv001,11,CBH,HP
+play,6,0,stevl001,00,X,D9.1-3
+play,6,0,widgc001,30,BBBB,W
+play,6,0,barrm003,02,SSX,4/P4
+play,6,1,joynw001,02,FFX,9/F9D
+play,6,1,jordb001,00,,NP
+sub,sandr002,"Reggie Sanders",1,5,11
+play,6,1,sandr002,10,BX,S9
+play,6,1,lopej001,10,BC,DI.1-2
+play,6,1,lopej001,11,BCX,7/F7
+play,6,1,villi001,10,BS,DI.2-3
+play,6,1,villi001,22,BSBFX,63/G
+play,7,0,cabro001,00,,NP
+sub,sandr002,"Reggie Sanders",1,5,9
+play,7,0,cabro001,11,FBX,S9/9S
+play,7,0,armat002,00,X,53/G.1-2
+play,7,0,guerw001,00,X,8/L8
+play,7,0,vidrj001,32,BCBBCB,W
+play,7,0,whitr001,32,BFFBBX,HR/7.2-H;1-H
+play,7,0,guerv001,21,FBBX,63/G
+play,7,1,weisw001,00,,NP
+sub,jonet004,"Terry Jones",0,1,8
+play,7,1,weisw001,00,X,8/F8
+play,7,1,hubbt001,31,BBBCB,W
+play,7,1,veraq001,00,,NP
+sub,lockk001,"Keith Lockhart",1,1,11
+play,7,1,lockk001,32,CFBBFBB,W.1-2
+play,7,1,jonea002,00,,NP
+sub,liraf001,"Felipe Lira",0,9,1
+play,7,1,jonea002,12,CSFBFS,K
+play,7,1,jonec004,32,FSBBBX,7/F7
+play,8,0,stevl001,00,,NP
+sub,lockk001,"Keith Lockhart",1,1,4
+play,8,0,stevl001,00,,NP
+sub,stevd001,"Dave Stevens",1,7,1
+play,8,0,stevl001,31,BBBCB,W
+play,8,0,widgc001,00,X,D8/8D.1-H
+play,8,0,barrm003,20,BBX,9/L9
+play,8,0,cabro001,22,SFBBX,HR/7.2-H
+play,8,0,liraf001,22,SSBBS,K
+play,8,0,jonet004,32,CSFFBBBX,43/G
+play,8,1,joynw001,00,,NP
+sub,jonet004,"Terry Jones",0,1,7
+play,8,1,joynw001,00,,NP
+sub,bergp001,"Peter Bergeron",0,3,8
+play,8,1,joynw001,00,,NP
+sub,seguf001,"Fernando Seguignol",0,4,9
+play,8,1,joynw001,00,X,D7
+play,8,1,sandr002,11,CBX,2/FL
+play,8,1,lopej001,00,,NP
+sub,lunaf001,"Fernando Lunar",1,6,11
+play,8,1,lunaf001,12,BSSS,K
+play,8,1,stevd001,00,X,13/G
+play,9,0,vidrj001,00,,NP
+sub,lunaf001,"Fernando Lunar",1,6,2
+play,9,0,vidrj001,00,X,HR/9
+play,9,0,bergp001,00,X,13/G
+play,9,0,seguf001,21,CBBX,7/F7
+play,9,0,stevl001,00,X,S8
+play,9,0,widgc001,20,BBX,5/P5
+play,9,1,weisw001,12,FFBX,5/FL
+play,9,1,hubbt001,00,X,53/G
+play,9,1,lockk001,00,X,7/F7
+data,er,armat002,1
+data,er,liraf001,0
+data,er,mulht001,7
+data,er,villi001,4
+data,er,stevd001,4

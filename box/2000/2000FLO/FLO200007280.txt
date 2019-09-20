@@ -1,0 +1,138 @@
+version,2
+info,visteam,ARI
+info,hometeam,FLO
+info,site,MIA01
+info,date,2000/07/28
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,katzt901
+info,ump1b,higgs901
+info,ump2b,reynj901
+info,ump3b,willc901
+info,pitches,pitches
+info,temp,86
+info,winddir,tocf
+info,windspeed,3
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,152
+info,attendance,12548
+info,wp,schic002
+info,lp,cornr001
+info,save,mantm001
+start,womat001,"Tony Womack",0,1,6
+start,bautd001,"Danny Bautista",0,2,9
+start,gonzl001,"Luis Gonzalez",0,3,7
+start,willm003,"Matt D. Williams",0,4,5
+start,finls001,"Steve Finley",0,5,8
+start,durae001,"Erubiel Durazo",0,6,3
+start,bellj001,"Jay Bell",0,7,4
+start,milld002,"Damian Miller",0,8,2
+start,schic002,"Curt Schilling",0,9,1
+start,castl001,"Luis Castillo",1,1,4
+start,kotsm001,"Mark Kotsay",1,2,9
+start,floyc001,"Cliff Floyd",1,3,7
+start,wilsp002,"Preston Wilson",1,4,8
+start,lowem001,"Mike Lowell",1,5,5
+start,lee-d002,"Derrek Lee",1,6,3
+start,fox-a001,"Andy Fox",1,7,6
+start,castr002,"Ramon Castro",1,8,2
+start,cornr001,"Reid Cornelius",1,9,1
+play,1,0,womat001,12,CBCS,K
+play,1,0,bautd001,21,BCBX,S7
+play,1,0,gonzl001,12,BFSX,8/L8
+play,1,0,willm003,10,BX,D/78D.1-H
+play,1,0,finls001,01,CX,43/G
+play,1,1,castl001,22,CBCBX,13/G
+play,1,1,kotsm001,22,FBBCC,K/C
+play,1,1,floyc001,11,BFX,31/G
+play,2,0,durae001,20,BBX,43/G
+play,2,0,bellj001,00,X,53/G
+play,2,0,milld002,31,BSBBX,53/G
+play,2,1,wilsp002,12,CBSS,K
+play,2,1,lowem001,12,SBSFFS,K
+play,2,1,lee-d002,00,X,8/F8S
+play,3,0,schic002,00,X,D/78D
+play,3,0,womat001,01,L2,POCS3(165)
+play,3,0,womat001,11,L2BX,S/89S
+play,3,0,bautd001,10,BB,CS2(24)
+play,3,0,bautd001,22,BBCFX,3/P3
+play,3,1,fox-a001,00,X,8/F8
+play,3,1,castr002,11,CBX,S8/8S
+play,3,1,cornr001,00,X,34/SH.1-2
+play,3,1,castl001,31,BFBBB,W
+play,3,1,kotsm001,22,FCBFBX,13/G
+play,4,0,gonzl001,12,CFBFC,K/C
+play,4,0,willm003,11,BFX,7/F7
+play,4,0,finls001,12,CFBX,7/F7
+play,4,1,floyc001,32,BBBCCX,D/78
+play,4,1,wilsp002,10,BX,53/G
+play,4,1,lowem001,12,CCBX,8/F8.2-3
+play,4,1,lee-d002,01,CX,4/P4
+play,5,0,durae001,02,CCX,S
+play,5,0,bellj001,32,BBBCFFX,53/G.1-2
+play,5,0,milld002,30,BBBB,W
+play,5,0,schic002,01,LX,54/SH.2-3;1-2
+play,5,0,womat001,32,BFBBCX,E6/G.3-H(UR)(NR);2-H(UR)(NR)
+play,5,0,bautd001,01,CX,163/G
+play,5,1,fox-a001,01,CX,43/G
+play,5,1,castr002,21,BBFX,S
+play,5,1,cornr001,00,X,14/SH.1-2
+play,5,1,castl001,11,BFX,S7.2-H
+play,5,1,kotsm001,01,CX,S.1-2
+play,5,1,floyc001,31,FBBBB,W.2-3;1-2
+play,5,1,wilsp002,02,CSS,K
+play,6,0,gonzl001,32,BBBFFB,W
+play,6,0,willm003,31,BBBSX,9/F9
+play,6,0,finls001,22,CSBBS,K+CS2(26)/DP
+play,6,1,lowem001,00,X,9/F9S
+play,6,1,lee-d002,11,BCX,63/G
+play,6,1,fox-a001,02,CFC,K/C
+play,7,0,durae001,02,SFX,3/G
+play,7,0,bellj001,32,CBSBBB,W
+play,7,0,milld002,31,BSBBB,W.1-2
+play,7,0,schic002,00,X,14/SH.2-3;1-2
+play,7,0,womat001,00,,NP
+sub,darev001,"Vic Darensbourg",1,9,1
+play,7,0,womat001,12,BSSS,K
+play,7,1,castr002,21,BSBX,8/L8
+play,7,1,darev001,00,,NP
+sub,millk005,"Kevin Millar",1,9,11
+play,7,1,millk005,22,BCCBFX,7/F7D
+play,7,1,castl001,12,CBCFX,53/G
+play,8,0,bautd001,00,,NP
+sub,aybam001,"Manny Aybar",1,9,1
+play,8,0,bautd001,12,FBCFS,K
+play,8,0,gonzl001,12,CFBX,6/P6
+play,8,0,willm003,32,BFBBFB,W
+play,8,0,finls001,12,BFFFC,K/C
+play,8,1,kotsm001,00,X,5/FL
+play,8,1,floyc001,21,BBFX,S9/9S
+play,8,1,wilsp002,00,,NP
+sub,bergd002,"Dave Berg",1,3,12
+play,8,1,wilsp002,00,X,9/F9D
+play,8,1,lowem001,01,CX,9/F9
+play,9,0,durae001,00,,NP
+sub,bergd002,"Dave Berg",1,3,6
+play,9,0,durae001,00,,NP
+sub,fox-a001,"Andy Fox",1,7,7
+play,9,0,durae001,01,SX,8/F8
+play,9,0,bellj001,01,CX,6/L6
+play,9,0,milld002,31,CBBBB,W
+play,9,0,schic002,00,,NP
+sub,ryanr001,"Rob Ryan",0,9,11
+play,9,0,ryanr001,01,CX,D9.1-H
+play,9,0,womat001,00,X,8/F8S
+play,9,1,lee-d002,00,,NP
+sub,mantm001,"Matt Mantei",0,9,1
+play,9,1,lee-d002,22,BCBCFC,K/C
+play,9,1,fox-a001,02,CFS,K
+play,9,1,castr002,22,CBSBS,K
+data,er,schic002,1
+data,er,mantm001,0
+data,er,cornr001,1
+data,er,darev001,0
+data,er,aybam001,1

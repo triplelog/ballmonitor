@@ -1,0 +1,186 @@
+version,2
+info,visteam,SDN
+info,hometeam,CIN
+info,site,CIN08
+info,date,2000/05/11
+info,number,0
+info,starttime,12:35PM
+info,daynight,day
+info,usedh,false
+info,umphome,nelsj901
+info,ump1b,cousd901
+info,ump2b,marqa901
+info,ump3b,brinj901
+info,pitches,pitches
+info,temp,67
+info,winddir,rtol
+info,windspeed,16
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,194
+info,attendance,24825
+info,wp,gravd001
+info,lp,whism001
+info,save,
+start,owene001,"Eric Owens",0,1,9
+start,marta001,"Al Martin",0,2,7
+start,klesr001,"Ryan Klesko",0,3,3
+start,magad001,"Dave Magadan",0,4,5
+start,boonb002,"Bret Boone",0,5,4
+start,hernc001,"Carlos A. Hernandez",0,6,2
+start,jackd003,"Damian Jackson",0,7,6
+start,river002,"Ruben Rivera",0,8,8
+start,loper001,"Rodrigo Lopez",0,9,1
+start,reesp001,"Pokey Reese",1,1,4
+start,yound001,"Dmitri Young",1,2,7
+start,grifk002,"Ken Griffey",1,3,8
+start,taube001,"Eddie Taubensee",1,4,2
+start,bichd001,"Dante Bichette",1,5,9
+start,cases001,"Sean Casey",1,6,3
+start,boona001,"Aaron Boone",1,7,5
+start,castj004,"Juan Castro",1,8,6
+start,bellr003,"Rob Bell",1,9,1
+play,1,0,owene001,32,CFBFBBFX,43/G
+play,1,0,marta001,32,FSBBFBB,W
+play,1,0,klesr001,22,BBSCF1,PO1(E1).1-3
+play,1,0,klesr001,32,BBSCF1BS,K
+play,1,0,magad001,21,BCBX,D9.3-H
+play,1,0,boonb002,11,BCX,HR/7.2-H
+play,1,0,hernc001,21,FBBX,5/P5
+play,1,1,reesp001,10,BX,S8
+play,1,1,yound001,21,BBFX,8/F8
+play,1,1,grifk002,32,BBCFBS,K+SB2
+play,1,1,taube001,32,BFBBFX,S.2-3
+play,1,1,bichd001,21,BBFX,13/G
+play,2,0,jackd003,02,CCFX,S
+play,2,0,river002,11,FBX,8/F8D
+play,2,0,loper001,00,X,8/F8S
+play,2,0,owene001,01,CX,D9/9S.1-3
+play,2,0,marta001,12,FBSB,WP.3-H;2-3
+play,2,0,marta001,22,FBSBB,WP.3-H
+play,2,0,marta001,32,FBSBBFX,S9/9S
+play,2,0,klesr001,02,CFX,2/FL
+play,2,1,cases001,10,BX,HR/8
+play,2,1,boona001,02,CLX,S8
+play,2,1,castj004,10,BX,S7.1-2
+play,2,1,bellr003,00,,NP
+sub,morrh001,"Hal Morris",1,9,11
+play,2,1,morrh001,12,CCBX,D7/7S.2-H;1-3
+play,2,1,reesp001,00,,NP
+sub,palav001,"Vicente Palacios",0,9,1
+play,2,1,reesp001,22,CBBFFX,9/SF.3-H;2-3
+play,2,1,yound001,00,X,D7.3-H
+play,2,1,grifk002,01,FB,CS3(25)
+play,2,1,grifk002,11,FBX,8/F8
+play,3,0,magad001,00,,NP
+sub,aybam001,"Manny Aybar",1,9,1
+play,3,0,magad001,32,CBFBBFFFFFX,S8
+play,3,0,boonb002,20,BBX,9/F9
+play,3,0,hernc001,00,X,54(1)3/GDP
+play,3,1,taube001,12,BSCS,K
+play,3,1,bichd001,21,BCBX,HR/9
+play,3,1,cases001,21,CBBX,63/G
+play,3,1,boona001,32,BBBCFFX,4/P4
+play,4,0,jackd003,00,X,7/F7D
+play,4,0,river002,11,FBX,8/F8
+play,4,0,palav001,00,,NP
+sub,roskj001,"John Roskos",0,9,11
+play,4,0,roskj001,31,BBSBX,9/F9
+play,4,1,castj004,00,,NP
+sub,walkk001,"Kevin Walker",0,9,1
+play,4,1,castj004,11,CBX,53/G
+play,4,1,aybam001,11,BSX,3/G
+play,4,1,reesp001,12,BFFX,63/G
+play,5,0,owene001,00,X,63/G
+play,5,0,marta001,10,BX,43/G
+play,5,0,klesr001,01,CX,8/F8D
+play,5,1,yound001,22,BFBFX,9/F9
+play,5,1,grifk002,12,BFLX,HR/78
+play,5,1,taube001,22,FBFBS,K
+play,5,1,bichd001,30,BBBB,W
+play,5,1,cases001,01,CX,7/F7
+play,6,0,magad001,32,BCBBCX,S9
+play,6,0,boonb002,01,CX,HR7/IPHR.1-H
+com,"IPHR"
+play,6,0,hernc001,12,CFBX,8/F8
+play,6,0,jackd003,00,X,T9
+play,6,0,river002,00,,NP
+sub,sulls001,"Scott Sullivan",1,9,1
+play,6,0,river002,02,SSFX,S7/7S.3-H
+play,6,0,walkk001,00,X,2/FL
+play,6,0,owene001,01,FX,8/L8
+play,6,1,boona001,00,,NP
+sub,almac001,"Carlos Almanzar",0,9,1
+play,6,1,boona001,11,SBX,63/G
+play,6,1,castj004,32,SBFBBX,6/P6
+play,6,1,sulls001,00,,NP
+sub,stync001,"Chris Stynes",1,9,11
+play,6,1,stync001,32,BBBCCX,S7
+play,6,1,reesp001,02,SSS,K
+play,7,0,marta001,00,,NP
+sub,reyed001,"Dennys Reyes",1,9,1
+play,7,0,marta001,00,X,E1/G
+play,7,0,klesr001,31,BBSBB,W.1-2
+play,7,0,magad001,00,,NP
+sub,gomec001,"Chris Gomez",0,4,11
+play,7,0,gomec001,00,,NP
+sub,desse001,"Elmer Dessens",1,9,1
+play,7,0,gomec001,11,LBX,14/SH.2-3;1-2
+play,7,0,boonb002,30,IIII,IW
+play,7,0,hernc001,12,BCCX,32(3)/FO.2-3;1-2
+play,7,0,jackd003,30,BBBB,W.3-H(UR);2-3;1-2
+play,7,0,river002,21,BBCX,4/P4
+play,7,1,yound001,00,,NP
+sub,nevip001,"Phil Nevin",0,9,5
+play,7,1,yound001,00,,NP
+sub,walld002,"Donne Wall",0,4,1
+play,7,1,yound001,01,CX,63/G
+play,7,1,grifk002,32,CBBBCFB,W
+play,7,1,taube001,10,BX,S9.1-3
+play,7,1,bichd001,20,BBX,4/P4
+play,7,1,cases001,12,SSBX,S9.3-H;1-3
+play,7,1,boona001,00,X,S8.3-H;1-2
+play,7,1,castj004,32,BBBCFX,13/G
+play,8,0,nevip001,01,SX,9/F9
+play,8,0,owene001,21,BBCX,43/G
+play,8,0,marta001,01,FX,43/G
+play,8,1,desse001,00,,NP
+sub,tuckm001,"Michael Tucker",1,9,11
+play,8,1,tuckm001,00,,NP
+sub,myerr002,"Rodney Myers",0,4,1
+play,8,1,tuckm001,01,FX,S
+play,8,1,reesp001,00,B,WP.1-2
+play,8,1,reesp001,10,BX,S5/BG5.2-3
+play,8,1,yound001,00,,NP
+sub,whism001,"Matt Whisenant",0,9,1
+play,8,1,yound001,00,,NP
+sub,sprae001,"Ed Sprague",0,4,5
+play,8,1,yound001,01,CX,8/SF.3-H
+play,8,1,grifk002,11,BFX,43/G.1-2
+play,8,1,taube001,22,BBSCX,8/F8
+play,9,0,klesr001,00,,NP
+sub,tuckm001,"Michael Tucker",1,9,7
+play,9,0,klesr001,00,,NP
+sub,gravd001,"Danny Graves",1,2,1
+play,9,0,klesr001,00,X,5/L5
+play,9,0,sprae001,01,CX,3/G
+play,9,0,boonb002,32,CBBFBX,D9
+play,9,0,hernc001,10,BX,7/L7
+play,9,1,bichd001,32,BBCSBFB,W
+play,9,1,cases001,22,BBCSC,K/C
+play,9,1,boona001,10,BX,HR/9.1-H
+com,"$both Boones homer in the same game"
+data,er,loper001,4
+data,er,palav001,1
+data,er,walkk001,1
+data,er,almac001,0
+data,er,walld002,2
+data,er,myerr002,1
+data,er,whism001,2
+data,er,bellr003,5
+data,er,aybam001,3
+data,er,sulls001,0
+data,er,reyed001,0
+data,er,desse001,0
+data,er,gravd001,0

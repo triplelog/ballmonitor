@@ -1,0 +1,138 @@
+version,2
+info,visteam,MIL
+info,hometeam,ARI
+info,site,PHO01
+info,date,2000/08/22
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,meric901
+info,ump1b,ripps901
+info,ump2b,gibsg901
+info,ump3b,tscht901
+info,pitches,pitches
+info,temp,72
+info,winddir,torf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,171
+info,attendance,31057
+info,wp,damij001
+info,lp,guzmg001
+info,save,leskc001
+start,moutj001,"James Mouton",0,1,8
+start,lorem001,"Mark Loretta",0,2,6
+start,jenkg001,"Geoff Jenkins",0,3,7
+start,sexsr001,"Richie Sexson",0,4,3
+start,burnj001,"Jeromy Burnitz",0,5,9
+start,houst001,"Tyler Houston",0,6,5
+start,bellr002,"Ron Belliard",0,7,4
+start,blanh001,"Henry Blanco",0,8,2
+start,damij001,"Jeff D'Amico",0,9,1
+start,womat001,"Tony Womack",1,1,6
+start,bellj001,"Jay Bell",1,2,4
+start,gonzl001,"Luis Gonzalez",1,3,7
+start,willm003,"Matt D. Williams",1,4,5
+start,finls001,"Steve Finley",1,5,8
+start,colbg001,"Greg Colbrunn",1,6,3
+start,milld002,"Damian Miller",1,7,2
+start,bautd001,"Danny Bautista",1,8,9
+start,guzmg001,"Geraldo Guzman",1,9,1
+play,1,0,moutj001,22,CCBBS,K
+play,1,0,lorem001,32,CBBBCFB,W
+play,1,0,jenkg001,12,FFFBS,K
+play,1,0,sexsr001,22,BCSFFBS,K
+play,1,1,womat001,11,CBX,1/L1
+play,1,1,bellj001,21,CBBX,9/F9
+play,1,1,gonzl001,12,CFFBX,8/F8
+play,2,0,burnj001,22,FFBBX,S9
+play,2,0,houst001,20,BBX,S7.1-2
+play,2,0,bellr002,00,X,54(1)3/GDP.2-3
+play,2,0,blanh001,02,CFX,7/F7
+play,2,1,willm003,02,CFX,53/G
+play,2,1,finls001,01,CX,T9
+play,2,1,colbg001,12,FFBX,6/P6
+play,2,1,milld002,21,CBBX,9/F9
+play,3,0,damij001,21,BBCX,8/F8
+play,3,0,moutj001,22,BCFBFS,K
+play,3,0,lorem001,11,BCX,S9
+play,3,0,jenkg001,22,BCBSFFH,HP.1-2
+play,3,0,sexsr001,12,FFBFX,HR/7.2-H;1-H
+play,3,0,burnj001,00,X,8/F8
+play,3,1,bautd001,00,X,3/G
+play,3,1,guzmg001,22,SCBFBS,K
+play,3,1,womat001,01,CX,S7/7S
+play,3,1,bellj001,00,X,D8/8D.1-H
+play,3,1,gonzl001,02,CFX,31/G
+play,4,0,houst001,11,SBX,HR/9
+play,4,0,bellr002,12,FSBX,63/G
+play,4,0,blanh001,02,CSX,S7
+play,4,0,damij001,22,LLBBFX,54(1)3/GDP
+play,4,1,willm003,01,FX,3/FL
+play,4,1,finls001,22,BCSBS,K
+play,4,1,colbg001,31,BBSBB,W
+play,4,1,milld002,02,SFS,K
+play,5,0,moutj001,11,BFH,HP
+play,5,0,lorem001,32,BCBFFBB,W.1-2
+play,5,0,jenkg001,00,X,7(B)64(1)/FDP.2-3
+play,5,0,sexsr001,12,CBSS,K
+play,5,1,bautd001,22,BCBCX,63/G
+play,5,1,guzmg001,00,,NP
+sub,delld001,"David Dellucci",1,9,11
+play,5,1,delld001,00,X,3/G
+play,5,1,womat001,00,X,43/G
+play,6,0,burnj001,00,,NP
+sub,plesd001,"Dan Plesac",1,9,1
+play,6,0,burnj001,32,BBBCFX,43/G
+play,6,0,houst001,20,BBX,7/F7D
+play,6,0,bellr002,01,CX,43/G
+play,6,1,bellj001,02,CSS,K
+play,6,1,gonzl001,20,BBX,9/L9
+play,6,1,willm003,00,X,53/G
+play,7,0,blanh001,00,,NP
+sub,sprir001,"Russ Springer",1,9,1
+play,7,0,blanh001,00,X,9/F9
+play,7,0,damij001,21,CBBX,S7
+play,7,0,moutj001,32,SBBFBX,9/F9S
+play,7,0,lorem001,12,CBSX,54(1)/FO
+play,7,1,finls001,22,BBCSX,31/G
+play,7,1,colbg001,11,BFX,53/G
+play,7,1,milld002,11,BCX,43/G
+play,8,0,jenkg001,21,SBBX,S9
+play,8,0,sexsr001,31,BFBBB,W.1-2
+play,8,0,burnj001,12,CBSS,K
+play,8,0,houst001,02,CCFS,K
+play,8,0,bellr002,32,BFBBFFFS,K
+play,8,1,bautd001,11,CBX,S
+play,8,1,sprir001,00,,NP
+sub,counc001,"Craig Counsell",1,9,11
+play,8,1,counc001,00,X,53/SH.1-2
+play,8,1,womat001,00,X,43/G.2-3
+play,8,1,bellj001,10,BX,D7.3-H
+play,8,1,gonzl001,02,CSC,K/C
+play,9,0,blanh001,00,,NP
+sub,counc001,"Craig Counsell",1,9,4
+play,9,0,blanh001,00,,NP
+sub,morgm001,"Mike Morgan",1,2,1
+play,9,0,blanh001,31,BFBBX,63/G
+play,9,0,damij001,12,CBCS,K
+play,9,0,moutj001,12,CCBS,K
+play,9,1,willm003,00,X,4/P4
+play,9,1,finls001,11,BFX,8/F8
+play,9,1,colbg001,32,CBBBFX,D7/7D
+play,9,1,milld002,00,,NP
+sub,leskc001,"Curtis Leskanic",0,9,1
+play,9,1,milld002,12,CSBX,S7/7S.2-H
+play,9,1,bautd001,00,,NP
+sub,contj001,"Jason Conti",1,7,12
+play,9,1,bautd001,31,BBBCX,S7/7S.1-2
+play,9,1,counc001,22,BFBFX,31/G
+data,er,damij001,3
+data,er,leskc001,0
+data,er,guzmg001,4
+data,er,plesd001,0
+data,er,sprir001,0
+data,er,morgm001,0

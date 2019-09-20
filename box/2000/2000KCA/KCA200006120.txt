@@ -1,0 +1,140 @@
+version,2
+info,visteam,SEA
+info,hometeam,KCA
+info,site,KAN06
+info,date,2000/06/12
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,bonig901
+info,ump1b,millb901
+info,ump2b,mealj901
+info,ump3b,younl901
+info,pitches,pitches
+info,temp,82
+info,winddir,tocf
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,176
+info,attendance,18435
+info,wp,moyej001
+info,lp,batim001
+info,save,sasak001
+start,hendr001,"Rickey Henderson",0,1,7
+start,mclem001,"Mark McLemore",0,2,4
+start,rodra001,"Alex Rodriguez",0,3,6
+start,marte001,"Edgar Martinez",0,4,10
+start,olerj001,"John Olerud",0,5,3
+start,buhnj001,"Jay Buhner",0,6,9
+start,camem001,"Mike Cameron",0,7,8
+start,wilsd001,"Dan Wilson",0,8,2
+start,belld002,"David Bell",0,9,5
+start,moyej001,"Jamie Moyer",0,0,1
+start,damoj001,"Johnny Damon",1,1,7
+start,reboj001,"Jeff Reboulet",1,2,4
+start,sweem002,"Mike Sweeney",1,3,10
+start,dye-j001,"Jermaine Dye",1,4,9
+start,randj002,"Joe Randa",1,5,5
+start,mccad001,"David McCarty",1,6,3
+start,beltc001,"Carlos Beltran",1,7,8
+start,johnb002,"Brian Johnson",1,8,2
+start,sancr001,"Rey Sanchez",1,9,6
+start,batim001,"Miguel Batista",1,0,1
+play,1,0,hendr001,12,CBFFS,K
+play,1,0,mclem001,31,CBBBB,W
+play,1,0,rodra001,30,BBBB,W.1-2
+play,1,0,marte001,10,BX,HR/8.2-H;1-H
+play,1,0,olerj001,12,CBCX,43/G
+play,1,0,buhnj001,22,FBCBFS,K
+play,1,1,damoj001,31,CBBBX,3/G
+play,1,1,reboj001,32,BBCBCB,W
+play,1,1,sweem002,10,BX,4/P4
+play,1,1,dye-j001,10,BX,S9.1-3
+play,1,1,randj002,21,BSBX,S7/7S.3-H;1-2
+play,1,1,mccad001,22,CBSFBS,K
+play,2,0,camem001,12,SFBFX,S7
+play,2,0,wilsd001,00,B,CS2(24)
+play,2,0,wilsd001,21,BBCX,53/G
+play,2,0,belld002,32,BCBBFX,53/G
+play,2,1,beltc001,12,CCBC,K/C
+play,2,1,johnb002,02,CFX,63/G
+play,2,1,sancr001,21,FBBX,13/G
+play,3,0,hendr001,11,CBX,S9
+play,3,0,mclem001,01,CX,S7/7S.1-2
+play,3,0,rodra001,02,CSFS,K
+play,3,0,marte001,11,BCB,SB3;SB2
+play,3,0,marte001,21,BCBX,63/G.3-H
+play,3,0,olerj001,22,SBBCFFC,K/C
+play,3,1,damoj001,12,CFBX,S9
+play,3,1,reboj001,12,CCBFFX,S9/9S.1-3
+play,3,1,sweem002,10,BX,9/F9S
+play,3,1,dye-j001,32,CCBBBX,5/P5
+play,3,1,randj002,12,CCBX,7/F7
+play,4,0,buhnj001,12,FFBFC,K/C
+play,4,0,camem001,10,BX,S7
+play,4,0,wilsd001,10,BX,54(1)3/GDP
+play,4,1,mccad001,22,CBFBS,K
+play,4,1,beltc001,01,CX,43/G
+play,4,1,johnb002,01,FX,8/F8
+play,5,0,belld002,11,BFX,S8/8S
+play,5,0,hendr001,32,BBBCFX,13/G.1-2
+play,5,0,mclem001,01,CX,S8.2-H
+play,5,0,rodra001,12,SBFS,K
+play,5,0,marte001,00,C,CS2(24)
+play,5,1,sancr001,10,BX,13/G
+play,5,1,damoj001,32,BBBCFFFB,W
+play,5,1,reboj001,02,SFX,7/F7
+play,5,1,sweem002,00,X,4/P4
+play,6,0,marte001,10,BX,5/P5
+play,6,0,olerj001,01,CX,43/G
+play,6,0,buhnj001,32,BCBSFBB,W
+play,6,0,camem001,32,BBSFBB,W.1-2
+play,6,0,wilsd001,00,,NP
+sub,murrd002,"Dan Murray",1,0,1
+play,6,0,wilsd001,12,FBFX,43/G
+play,6,1,dye-j001,22,CBBFFX,7/F7
+play,6,1,randj002,10,BX,53/G
+play,6,1,mccad001,21,SBBX,53/G
+play,7,0,belld002,01,SX,53/G
+play,7,0,hendr001,32,BBFBFX,4/L4
+play,7,0,mclem001,22,BCFFBC,K/C
+play,7,1,beltc001,11,CBX,D7/7S
+play,7,1,johnb002,02,FCS,K
+play,7,1,sancr001,12,CSBS,K
+play,7,1,damoj001,21,BFBX,HR/9.2-H
+play,7,1,reboj001,00,,NP
+sub,panij001,"Jose Paniagua",0,0,1
+play,7,1,reboj001,00,X,8/F8
+play,8,0,rodra001,22,CBBCS,K
+play,8,0,marte001,30,BBBB,W
+play,8,0,olerj001,12,BCCS,K
+play,8,0,buhnj001,11,CBX,3/G
+play,8,1,sweem002,00,,NP
+sub,gipsc001,"Charles Gipson",0,6,9
+play,8,1,sweem002,10,BX,63/G
+play,8,1,dye-j001,21,CBBX,9/L9
+play,8,1,randj002,21,FBBX,8/F8
+play,9,0,camem001,30,BBBB,W
+play,9,0,wilsd001,00,X,14/SH.1-2
+play,9,0,belld002,00,B,WP.2-3
+play,9,0,belld002,12,BSFS,K
+play,9,0,hendr001,31,BBCBX,63/G
+play,9,1,mccad001,00,,NP
+sub,sasak001,"Kazuhiro Sasaki",0,0,1
+play,9,1,mccad001,12,BCCX,8/F8
+play,9,1,beltc001,02,CSC,K/C
+play,9,1,johnb002,00,,NP
+sub,poses001,"Scott Pose",1,8,11
+play,9,1,poses001,21,BCBX,S7
+play,9,1,sancr001,00,,NP
+sub,zaung001,"Gregg Zaun",1,9,11
+play,9,1,zaung001,00,B,DI.1-2
+play,9,1,zaung001,31,BBCBX,8/F8D
+data,er,moyej001,3
+data,er,panij001,0
+data,er,sasak001,0
+data,er,batim001,5
+data,er,murrd002,0

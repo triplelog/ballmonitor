@@ -1,0 +1,64 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,01,1,,,,,0,2,SX,halaj001,1,0,guzmc001 grounds out. ,guzmc001,0,G
+,00,1,,,,,1,3,X,halaj001,1,0,,canij001,0,F
+,11,1,,,,,2,6,CBX,halaj001,1,0,,lawtm002,0,L
+,12,1,,,,,3,4,CCBS,maysj001,1,0,camem001 strikes out. ,camem001,1,
+,32,1,belld002,,,,4,10,FBBCBX,maysj001,0,0,belld002 singles. ,belld002,1,
+belld002 to 2B. ,32,1,rodra001,belld002,,,5,16,BFBCBB,maysj001,0,0,rodra001 walks. ,rodra001,1,
+belld002 scores. rodra001 to 2B. ,12,1,olerj001,rodra001,,,6,20,BFFX,maysj001,0,1,olerj001 singles. ,olerj001,1,
+,01,1,olerj001,rodra001,,,7,22,FX,maysj001,1,0,,marte001,1,P
+,01,1,olerj001,rodra001,,,8,24,CX,maysj001,1,0,,buhnj001,1,
+,21,2,,,,,9,10,BCBX,halaj001,1,0,coomr001 grounds out. ,coomr001,0,G
+,20,2,huskb001,,,,10,13,BBX,halaj001,0,0,huskb001 singles. ,huskb001,0,
+,22,2,huskb001,,,,11,18,BBFFX,halaj001,1,0,,lecrm001,0,F
+,02,2,huskb001,,,,12,21,FSX,halaj001,1,0,huntt001 grounds out. ,huntt001,0,G
+,12,2,,,,,13,28,FCBX,maysj001,1,0,javis001 grounds out. ,javis001,1,G
+,32,2,,,,,14,38,CCBFBFFBFC,maysj001,1,0,lampt001 strikes out. ,lampt001,1,
+,22,2,,,,,15,44,FFBFBX,maysj001,1,0,,guilc001,1,F
+,00,3,,,,,16,22,X,halaj001,1,0,,jonej003,0,F
+,01,3,,,,,17,24,CX,halaj001,1,0,hockd001 grounds out. ,hockd001,0,G
+,20,3,,,,,18,27,BBX,halaj001,1,0,,guzmc001,0,P
+,11,3,camem001,,,,19,47,BCX,maysj001,0,0,camem001 singles. ,camem001,1,
+,11,3,camem001,,,,20,50,FBX,maysj001,1,0,,belld002,1,F
+camem001 to 2B. ,32,3,rodra001,camem001,,,21,58,BBFBFFFB,maysj001,0,0,rodra001 walks. ,rodra001,1,
+camem001 scores. rodra001 to 2B. ,32,3,,rodra001,,olerj001,22,65,BCFBBF1,maysj001,0,1,Pickoff error. ,olerj001,1,
+rodra001 scores. ,32,3,,olerj001,,,23,73,BCFBBF1X,maysj001,0,1,olerj001 doubles. ,olerj001,1,
+,12,3,,olerj001,,,24,77,BFSC,maysj001,1,0,marte001 strikes out. ,marte001,1,
+,11,3,,olerj001,,,25,80,BCX,maysj001,1,0,buhnj001 grounds out. ,buhnj001,1,G
+,00,4,,,,,26,28,X,halaj001,1,0,,canij001,0,F
+,22,4,,,,,27,33,BFFBX,halaj001,1,0,,lawtm002,0,F
+,11,4,,,,,28,36,BSX,halaj001,1,0,,coomr001,0,P
+,12,4,,,,,29,84,BFCC,maysj001,1,0,javis001 strikes out. ,javis001,1,
+,22,4,,,,,30,89,BBCFX,maysj001,1,0,,lampt001,1,F
+,01,4,,,,,31,91,FX,maysj001,1,0,,guilc001,1,F
+,22,5,huskb001,,,,32,41,CCBBX,halaj001,0,0,huskb001 singles. ,huskb001,0,
+,00,5,huskb001,,,,33,42,X,halaj001,1,0,,lecrm001,0,F
+,31,5,,,,,34,47,BBFBX,halaj001,2,0,Double Play. ,huntt001,0,
+,00,5,,,,,35,92,X,maysj001,1,0,,camem001,1,F
+,11,5,,,,,36,95,BCX,maysj001,1,0,belld002 grounds out. ,belld002,1,G
+,02,5,rodra001,,,,37,99,CCFX,maysj001,0,0,rodra001 singles. ,rodra001,1,
+,11,5,rodra001,,,,38,102,FBX,maysj001,1,0,olerj001 grounds out. ,olerj001,1,G
+,01,6,,,,,39,49,CX,halaj001,1,0,jonej003 grounds out. ,jonej003,0,G
+,12,6,,,,,40,53,CBFX,halaj001,1,0,,hockd001,0,F
+,11,6,,,,,41,56,CBX,halaj001,1,0,,guzmc001,0,F
+,01,6,,,,,42,104,CX,maysj001,0,1,marte001 homers. ,marte001,1,
+,32,6,,,,,43,110,CBSBBS,maysj001,1,0,buhnj001 strikes out. ,buhnj001,1,
+,02,6,,,,,44,113,FFX,maysj001,1,0,javis001 grounds out. ,javis001,1,G
+,00,6,,,,,45,114,X,maysj001,1,0,lampt001 grounds out. ,lampt001,1,G
+,12,7,,,,,46,60,BCSS,halaj001,1,0,canij001 strikes out. ,canij001,0,
+,21,7,lawtm002,,,,47,64,CBBX,halaj001,0,0,lawtm002 singles. ,lawtm002,0,
+,10,7,,,,,48,66,BX,halaj001,2,0,Double Play. ,coomr001,0,
+,11,7,,,,,49,117,CBX,maysj001,1,0,guilc001 grounds out. ,guilc001,1,G
+,32,7,,,,,50,124,CBCFBBS,maysj001,1,0,camem001 strikes out. ,camem001,1,
+,22,7,,,,,51,129,FBBCX,maysj001,1,0,,belld002,1,L
+,21,8,,,,,52,70,BFBX,halaj001,1,0,,huskb001,0,P
+,21,8,,,,,53,74,BBCX,halaj001,1,0,,lecrm001,0,L
+,00,8,,,,,54,75,X,halaj001,1,0,,huntt001,0,F
+,02,8,,,,,56,3,FFS,hawkl001,1,0,rodra001 strikes out. ,rodra001,1,
+,32,8,,,,,57,10,BBSBCFS,hawkl001,1,0,olerj001 strikes out. ,olerj001,1,
+,01,8,,,,,58,12,CX,hawkl001,1,0,,marte001,1,F
+,22,9,,,,,60,81,BCFFBX,halaj001,1,0,jonej003 grounds out. ,jonej003,0,G
+,00,9,hockd001,,,,61,82,X,halaj001,0,0,hockd001 singles. ,hockd001,0,
+hockd001 out. ,00,9,guzmc001,,,,62,83,X,halaj001,1,0,guzmc001 reaches on fielder's choice. ,guzmc001,0,
+guzmc001 to 2B. ,00,9,,guzmc001,,canij001,63,83,,halaj001,0,0,Balk. ,canij001,0,
+,12,9,,guzmc001,,,64,87,CFBC,halaj001,1,0,canij001 strikes out. ,canij001,0,

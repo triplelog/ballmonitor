@@ -1,0 +1,143 @@
+version,2
+info,visteam,DET
+info,hometeam,PIT
+info,site,PIT07
+info,date,2000/06/05
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,iassd901
+info,ump1b,hirsm901
+info,ump2b,bellw901
+info,ump3b,onorb901
+info,pitches,pitches
+info,temp,62
+info,winddir,tolf
+info,windspeed,2
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,173
+info,attendance,12479
+info,wp,cordf001
+info,lp,mlicd001
+info,save,
+start,beckr002,"Rich Becker",0,1,9
+start,fickr001,"Robert Fick",0,2,3
+start,encaj001,"Juan Encarnacion",0,3,8
+start,higgb001,"Bobby Higginson",0,4,7
+start,palmd002,"Dean Palmer",0,5,5
+start,easld001,"Damion Easley",0,6,4
+start,cruzd001,"Deivi Cruz",0,7,6
+start,cardj001,"Javier Cardona",0,8,2
+start,mlicd001,"Dave Mlicki",0,9,1
+start,morrw001,"Warren Morris",1,1,4
+start,kendj001,"Jason Kendall",1,2,2
+start,cordw001,"Wil Cordero",1,3,7
+start,gileb002,"Brian Giles",1,4,8
+start,vandj001,"John Vander Wal",1,5,9
+start,younk001,"Kevin Young",1,6,3
+start,mearp001,"Pat Meares",1,7,6
+start,sojol001,"Luis Sojo",1,8,5
+start,cordf001,"Francisco Cordova",1,9,1
+play,1,0,beckr002,12,CSFBX,8/F8
+play,1,0,fickr001,32,CFFBBBFX,53/G
+play,1,0,encaj001,12,SSBC,K/C
+play,1,1,morrw001,01,CX,3/G
+play,1,1,kendj001,11,CBX,3/FL
+play,1,1,cordw001,12,FCBX,S9
+play,1,1,gileb002,31,BCBBX,T9.1-H
+play,1,1,vandj001,32,BCFBBB,W
+play,1,1,younk001,22,BBFFFB,SB2
+play,1,1,younk001,32,BBFFFBC,K/C
+play,2,0,higgb001,02,SFX,S7
+play,2,0,palmd002,30,BBBX,D7.1-3
+play,2,0,easld001,12,CFBS,K
+play,2,0,cruzd001,02,FSX,5/L5
+play,2,0,cardj001,12,BSSS,K
+play,2,1,mearp001,01,CX,53/G
+play,2,1,sojol001,10,BX,43/G
+play,2,1,cordf001,12,SBSX,S9
+play,2,1,morrw001,32,BCBFBX,5/FL
+play,3,0,mlicd001,02,CSS,K
+play,3,0,beckr002,21,BCBX,23/G
+play,3,0,fickr001,22,FCBBX,3/G
+play,3,1,kendj001,22,BFBFX,8/F8
+play,3,1,cordw001,22,BSCBX,HR/7
+play,3,1,gileb002,30,BBBB,W
+play,3,1,vandj001,12,FBSC,K/C
+play,3,1,younk001,22,BSCFBX,FC6.1-2;B-1
+play,3,1,mearp001,12,SBFS,K
+play,4,0,encaj001,12,FBSS,K
+play,4,0,higgb001,21,BCBX,43/G
+play,4,0,palmd002,22,SBBFC,K/C
+play,4,1,sojol001,10,BX,7/F7
+play,4,1,cordf001,01,SX,63/G
+play,4,1,morrw001,32,BBBCFB,W
+play,4,1,kendj001,30,BBBB,W.1-2
+play,4,1,cordw001,01,CX,S.2-3;1-2
+play,4,1,gileb002,01,CX,E3/G.3-H(NR)(UR);2-3;1-2
+play,4,1,vandj001,00,X,6/P6
+play,5,0,easld001,00,,NP
+sub,benjm001,"Mike Benjamin",1,1,4
+play,5,0,easld001,10,BX,7/F7
+play,5,0,cruzd001,20,BBX,7/F7
+play,5,0,cardj001,20,BBX,S7/7S
+play,5,0,mlicd001,10,BX,64(1)/FO
+play,5,1,younk001,01,FX,S8
+play,5,1,mearp001,11,BCX,7/F7
+play,5,1,sojol001,10,BX,16(1)3/GDP
+play,6,0,beckr002,20,BBX,D9
+play,6,0,fickr001,10,BX,S9.2-3
+play,6,0,encaj001,01,SX,4/P4
+play,6,0,higgb001,31,BFBBB,W.1-2
+play,6,0,palmd002,32,SBBSBS,K
+play,6,0,easld001,22,BBCCX,54(1)/FO
+play,6,1,cordf001,31,BBBCB,W
+play,6,1,benjm001,02,LCS,K
+play,6,1,kendj001,11,BCX,54(1)/FO
+play,6,1,cordw001,00,X,64(1)/FO
+play,7,0,cruzd001,11,BFX,63/G
+play,7,0,cardj001,22,CFBBX,8/F8
+play,7,0,mlicd001,00,,NP
+sub,macij001,"Jose Macias",0,9,11
+play,7,0,macij001,12,BSFFX,7/F7
+play,7,1,gileb002,00,,NP
+sub,mcdia001,"Allen McDill",0,9,1
+play,7,1,gileb002,11,CBX,D7/7D
+play,7,1,vandj001,02,CCB,WP.2-3
+play,7,1,vandj001,12,CCBX,S9.3-H
+play,7,1,younk001,11,BCX,54(1)/FO
+play,7,1,mearp001,21,BFBH,HP.1-2
+play,7,1,sojol001,22,BCBFX,S7/7S.2-H;1-2
+play,7,1,cordf001,00,X,15(2)/FO.1-2
+play,7,1,benjm001,10,BX,8/F8D
+play,8,0,beckr002,00,,NP
+sub,browa001,"Adrian Brown",1,5,9
+play,8,0,beckr002,32,CBBFFBFB,W
+play,8,0,fickr001,32,CBCFFBBFX,S9.1-3
+play,8,0,encaj001,00,,NP
+sub,silvj001,"Jose Silva",1,9,1
+play,8,0,encaj001,11,BCX,9/SF.3-H
+play,8,0,higgb001,02,SFS,K
+play,8,0,palmd002,22,FBFBC,K/C
+play,8,1,kendj001,00,,NP
+sub,nitkc001,"C.J. Nitkowski",0,9,1
+play,8,1,kendj001,00,X,3/FL
+play,8,1,cordw001,11,FBH,HP
+play,8,1,gileb002,32,BCBBSC,K/C
+play,8,1,browa001,11,CBX,13/G
+play,9,0,easld001,02,CCX,S7
+play,9,0,cruzd001,22,BBFFX,9/F9
+play,9,0,cardj001,00,,NP
+sub,polol001,"Luis Polonia",0,8,11
+play,9,0,polol001,12,BSCFFS,K
+play,9,0,nitkc001,00,,NP
+sub,halts001,"Shane Halter",0,9,11
+play,9,0,halts001,22,CBSBC,K/C
+data,er,mlicd001,2
+data,er,mcdia001,2
+data,er,nitkc001,0
+data,er,cordf001,1
+data,er,silvj001,0

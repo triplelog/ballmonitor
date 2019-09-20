@@ -1,0 +1,75 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,02,1,,,,,0,5,CSFFS,mlicd001,1,0,stync001 strikes out. ,stync001,0,
+,01,1,larkb001,,,,1,7,CX,mlicd001,0,0,larkb001 singles. ,larkb001,0,
+,00,1,larkb001,,,,2,8,X,mlicd001,1,0,,grifk002,0,P
+,10,1,larkb001,,,,3,10,BX,mlicd001,1,0,,bichd001,0,F
+,11,1,polol001,,,,4,3,CBX,luebl001,0,0,polol001 singles. ,polol001,1,
+polol001 to 2B. ,00,1,,polol001,,beckr002,5,4,B,luebl001,0,0,Wild Pitch. ,beckr002,1,
+,32,1,beckr002,polol001,,,6,10,BBCFBB,luebl001,0,0,beckr002 walks. ,beckr002,1,
+polol001 to 3B. beckr002 to 2B. ,01,1,,beckr002,polol001,,7,12,CX,luebl001,1,0,higgb001 grounds out. ,higgb001,1,G
+,30,1,palmd002,beckr002,polol001,,8,16,BBBI,luebl001,0,0,palmd002 intentionally walks. ,palmd002,1,
+,01,1,,beckr002,polol001,,9,18,CX,luebl001,2,0,Double Play. ,cruzd001,1,
+,31,2,cases001,,,,10,15,BBBCX,mlicd001,0,0,cases001 singles. ,cases001,0,
+,00,2,cases001,,,,11,16,X,mlicd001,1,0,,yound001,0,F
+,01,2,cases001,,,,12,18,SX,mlicd001,1,0,,morrh001,0,F
+,21,2,cases001,,,,13,22,BSBX,mlicd001,1,0,,reesp001,0,
+,21,2,,,,,15,22,CBBX,luebl001,1,0,encaj001 grounds out. ,encaj001,1,G
+,11,2,,,,,16,25,BCX,luebl001,1,0,ausmb001 grounds out. ,ausmb001,1,G
+,10,2,easld001,,,,17,27,BX,luebl001,0,0,easld001 singles. ,easld001,1,
+,21,2,,easld001,,halts001,18,31,BCBB,luebl001,0,0,easld001 steals 2B. ,halts001,1,
+easld001 scores. ,32,2,halts001,,,,19,37,BCBBFX,luebl001,0,1,halts001 singles. ,halts001,1,
+halts001 to 3B. ,12,2,,polol001,halts001,,20,41,FCBX,luebl001,0,0,polol001 doubles. ,polol001,1,
+halts001 scores. polol001 scores. ,11,2,beckr002,,,,21,44,BCX,luebl001,0,2,beckr002 singles. ,beckr002,1,
+,00,2,beckr002,,,,22,45,X,luebl001,1,0,,higgb001,1,F
+,02,3,,,,,23,25,FFX,mlicd001,1,0,taube001 grounds out. ,taube001,0,G
+,01,3,,,,,24,27,SX,mlicd001,1,0,stync001 grounds out. ,stync001,0,G
+,00,3,,larkb001,,,25,28,X,mlicd001,0,0,larkb001 doubles. ,larkb001,0,
+,32,3,,larkb001,,,26,34,FBSBBS,mlicd001,1,0,grifk002 strikes out. ,grifk002,0,
+,12,3,,,,,27,49,BCFS,luebl001,1,0,palmd002 strikes out. ,palmd002,1,
+,10,3,,,,,28,51,BX,luebl001,1,0,,cruzd001,1,F
+,12,3,,,,,29,55,CBSX,luebl001,1,0,,encaj001,1,F
+,01,4,,,,,30,36,FX,mlicd001,1,0,bichd001 grounds out. ,bichd001,0,G
+,02,4,,,,,31,39,CCS,mlicd001,1,0,cases001 strikes out. ,cases001,0,
+,11,4,yound001,,,,32,42,BSX,mlicd001,0,0,yound001 singles. ,yound001,0,
+,00,4,yound001,,,,33,43,X,mlicd001,1,0,,morrh001,0,F
+,32,4,,,,,34,61,BBCBFX,luebl001,1,0,ausmb001 grounds out. ,ausmb001,1,G
+,10,4,,,easld001,,35,63,BX,luebl001,0,0,easld001 triples. ,easld001,1,
+,22,4,,,easld001,,36,68,BSBSX,luebl001,1,0,halts001 grounds out. ,halts001,1,G
+,00,4,,,easld001,,37,69,X,luebl001,1,0,,polol001,1,F
+,21,5,,,,,38,47,BBCX,mlicd001,1,0,,reesp001,0,F
+,32,5,taube001,,,,39,53,BBCSBB,mlicd001,0,0,taube001 walks. ,taube001,0,
+taube001 to 2B. ,10,5,stync001,taube001,,,40,55,BX,mlicd001,0,0,stync001 singles. ,stync001,0,
+,01,5,stync001,taube001,,,41,57,FX,mlicd001,1,0,,larkb001,0,F
+,31,5,stync001,taube001,,,42,62,BBBCX,mlicd001,1,0,,grifk002,0,F
+,00,5,,,,,43,70,X,luebl001,1,0,beckr002 grounds out. ,beckr002,1,G
+,22,5,,,,,44,75,BFSBX,luebl001,1,0,,higgb001,1,F
+,00,5,,,palmd002,,45,76,X,luebl001,0,0,palmd002 triples. ,palmd002,1,
+palmd002 out. ,10,5,,,,cruzd001,46,78,BB,luebl001,1,0,,cruzd001,1,
+,12,6,,bichd001,,,47,66,BFCX,mlicd001,0,0,bichd001 doubles. ,bichd001,0,
+bichd001 to 3B. ,01,6,,,bichd001,,48,68,SX,mlicd001,1,0,cases001 grounds out. ,cases001,0,G
+bichd001 scores. ,12,6,yound001,,,,49,72,BFSX,mlicd001,0,1,yound001 singles. ,yound001,0,
+yound001 out. ,10,6,morrh001,,,,50,74,BX,mlicd001,1,0,morrh001 reaches on fielder's choice. ,morrh001,0,
+,20,6,morrh001,,,,51,77,BBX,mlicd001,1,0,reesp001 grounds out. ,reesp001,0,G
+,22,6,,,,,52,83,FBBFX,luebl001,1,0,cruzd001 grounds out. ,cruzd001,1,G
+,12,6,,,,,53,88,BSFFX,luebl001,1,0,encaj001 grounds out. ,encaj001,1,G
+,22,6,,,,,54,93,CBBCX,luebl001,1,0,,ausmb001,1,F
+,10,7,taube001,,,,55,79,BX,mlicd001,0,0,taube001 singles. ,taube001,0,
+taube001 to 2B. ,21,7,,taube001,,,56,83,FBBX,mlicd001,1,0,stync001 grounds out. ,stync001,0,G
+,31,7,larkb001,taube001,,,57,88,BBBCB,mlicd001,0,0,larkb001 walks. ,larkb001,0,
+,11,7,larkb001,taube001,,,59,3,CBX,nitkc001,1,0,,grifk002,0,L
+,11,7,larkb001,taube001,,,60,6,BCX,nitkc001,1,0,bichd001 grounds out. ,bichd001,0,G
+,01,7,,,,,61,95,CX,luebl001,1,0,,easld001,1,G
+,10,7,,,,,62,97,BX,luebl001,1,0,halts001 grounds out. ,halts001,1,G
+,30,7,polol001,,,,63,101,BBBB,luebl001,0,0,polol001 walks. ,polol001,1,
+polol001 to 3B. ,20,7,magew001,,polol001,,66,3,BBX,reyed001,0,0,magew001 singles. ,magew001,1,
+,10,7,magew001,,polol001,,67,5,BX,reyed001,1,0,,higgb001,1,F
+,11,8,cases001,,,,70,3,CBX,brocd001,0,0,cases001 singles. ,cases001,0,
+,12,8,cases001,,,,71,7,BSSS,brocd001,1,0,yound001 strikes out. ,yound001,0,
+,00,8,cases001,,,,72,8,X,brocd001,1,0,,morrh001,0,F
+,32,8,cases001,,,,73,14,CSBBBS,brocd001,1,0,reesp001 strikes out. ,reesp001,0,
+,10,8,,,,,75,2,BX,sulls001,1,0,,palmd002,1,F
+,01,8,,,,,76,4,FX,sulls001,1,0,,cruzd001,1,F
+,01,8,,,,,77,6,CX,sulls001,1,0,encaj001 grounds out. ,encaj001,1,G
+,12,9,,,,,79,4,CFBX,jonet003,1,0,,taube001,0,P
+,32,9,stync001,,,,80,13,BBCFBFFFX,jonet003,0,0,stync001 singles. ,stync001,0,
+,00,9,,,,,81,14,X,jonet003,2,0,Double Play. ,larkb001,0,

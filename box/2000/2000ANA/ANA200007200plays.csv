@@ -1,0 +1,75 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,12,1,,,,,0,4,CBCS,ethes001,1,0,alicl001 strikes out. ,alicl001,0,
+,00,1,,,,,1,5,X,ethes001,1,0,greer001 grounds out. ,greer001,0,G
+,02,1,,,,,2,8,CCX,ethes001,1,0,,palmr001,0,F
+,12,1,,,,,3,4,CFBC,olivd001,1,0,erstd001 strikes out. ,erstd001,1,
+,21,1,,,,,4,8,CBBX,olivd001,1,0,,gil-b001,1,F
+,01,1,vaugm001,,,,5,10,FH,olivd001,0,0,vaugm001 hit by pitch. ,vaugm001,1,
+,01,1,vaugm001,,,,6,12,SX,olivd001,1,0,,glaut001,1,F
+,00,2,,,,,7,9,X,ethes001,1,0,rodri001 grounds out. ,rodri001,0,G
+,31,2,,,,,8,14,BSBBX,ethes001,1,0,,segud001,0,F
+,22,2,,,,,9,19,FBFBX,ethes001,1,0,,martd002,0,F
+,11,2,,,,,10,15,BFX,olivd001,1,0,,molib001,1,P
+,01,2,,,,,11,17,CX,olivd001,0,1,spies001 homers. ,spies001,1,
+,21,2,kenna001,,,,12,21,BBFX,olivd001,0,0,kenna001 singles. ,kenna001,1,
+kenna001 to 2B. ,00,2,cleme001,kenna001,,,13,22,X,olivd001,0,0,cleme001 singles. ,cleme001,1,
+,02,2,,kenna001,,,14,25,CCX,olivd001,2,0,Double Play. ,palmo001,1,
+,12,3,,,,,15,23,CBCX,ethes001,1,0,lambm001 grounds out. ,lambm001,0,G
+,22,3,,,,,16,28,CBBCS,ethes001,1,0,kaplg001 strikes out. ,kaplg001,0,
+,11,3,,,,,17,31,FBX,ethes001,1,0,,clayr001,0,F
+,10,3,,erstd001,,,18,27,BX,olivd001,0,0,erstd001 doubles. ,erstd001,1,
+,00,3,,erstd001,,,19,28,X,olivd001,1,0,,gil-b001,1,
+,32,3,vaugm001,erstd001,,,20,34,CBBBSB,olivd001,0,0,vaugm001 walks. ,vaugm001,1,
+erstd001 scores. vaugm001 to 3B. glaut001 to 2B. ,20,3,,glaut001,vaugm001,,21,37,BBX,olivd001,0,1,glaut001 singles. ,glaut001,1,
+vaugm001 scores. glaut001 to 3B. ,11,3,,,glaut001,,22,40,BFX,olivd001,1,1,molib001 grounds out. ,molib001,1,G
+,22,3,,,glaut001,,23,46,BFFFBX,olivd001,1,0,,spies001,1,F
+,12,4,alicl001,,,,24,37,FCBFFX,ethes001,0,0,alicl001 singles. ,alicl001,0,
+alicl001 to 2B. ,12,4,greer001,alicl001,,,25,41,CBFX,ethes001,0,0,greer001 reaches on error. ,greer001,0,G
+alicl001 to 3B. ,12,4,greer001,,alicl001,,26,45,BCFX,ethes001,1,0,,palmr001,0,F
+,32,4,greer001,,alicl001,,27,51,BFBSBX,ethes001,1,0,,rodri001,0,L
+,22,4,greer001,,alicl001,,28,57,BBCFFX,ethes001,1,0,,segud001,0,
+,11,4,,kenna001,,,29,49,CBX,olivd001,0,0,kenna001 doubles. ,kenna001,1,
+,10,4,,kenna001,,,30,51,BX,olivd001,1,0,,cleme001,1,F
+,12,4,,kenna001,,,31,56,FFBFX,olivd001,1,0,,palmo001,1,F
+kenna001 scores. ,32,4,erstd001,,,,32,62,BCBFBX,olivd001,0,1,erstd001 singles. ,erstd001,1,
+,22,4,erstd001,,,,33,67,FCBBC,olivd001,1,0,gil-b001 strikes out. ,gil-b001,1,
+,02,5,,,,,34,60,CCX,ethes001,1,0,,martd002,0,F
+,11,5,lambm001,,,,35,63,FBX,ethes001,0,0,lambm001 singles. ,lambm001,0,
+lambm001 to 2B. ,31,5,kaplg001,lambm001,,,36,68,BBBCX,ethes001,0,0,kaplg001 singles. ,kaplg001,0,
+,12,5,kaplg001,,,,37,72,BFFX,ethes001,2,0,Double Play. ,clayr001,0,
+,32,5,vaugm001,,,,38,74,BBSFFBB,olivd001,0,0,vaugm001 walks. ,vaugm001,1,
+,32,5,vaugm001,,,,39,84,BCBFFFBFFS,olivd001,1,0,glaut001 strikes out. ,glaut001,1,
+,00,5,vaugm001,,,,40,85,X,olivd001,1,0,,molib001,1,F
+,11,5,vaugm001,,,,41,88,SBX,olivd001,1,0,spies001 grounds out. ,spies001,1,G
+,00,6,,alicl001,,,42,73,X,ethes001,0,0,alicl001 doubles. ,alicl001,0,
+,10,6,,alicl001,,,43,75,BX,ethes001,1,0,,greer001,0,L
+alicl001 to 3B. ,12,6,,,alicl001,,44,80,CBFFX,ethes001,1,0,palmr001 grounds out. ,palmr001,0,G
+alicl001 scores. ,01,6,rodri001,,,,45,82,SX,ethes001,0,1,rodri001 singles. ,rodri001,0,
+,21,6,rodri001,,,,46,86,SBBX,ethes001,1,0,segud001 grounds out. ,segud001,0,G
+,11,6,,,,,48,3,SBX,cordf002,1,0,kenna001 grounds out. ,kenna001,1,G
+,12,6,,,,,49,7,BSSX,cordf002,1,0,,cleme001,1,F
+,32,6,,,,,50,13,BFFBBX,cordf002,1,0,palmo001 grounds out. ,palmo001,1,G
+,10,7,martd002,,,,51,88,BX,ethes001,0,0,martd002 singles. ,martd002,0,
+,01,7,,,,,52,90,CX,ethes001,2,0,Double Play. ,lambm001,0,
+,02,7,,,,,53,93,CFX,ethes001,1,0,,kaplg001,0,F
+,00,7,,,,,54,14,X,cordf002,1,0,,erstd001,1,F
+,01,7,gil-b001,,,,55,16,FX,cordf002,0,0,gil-b001 singles. ,gil-b001,1,
+gil-b001 to 2B. ,32,7,vaugm001,gil-b001,,,56,22,BBFBFB,cordf002,0,0,vaugm001 walks. ,vaugm001,1,
+gil-b001 to 3B. ,01,7,vaugm001,,gil-b001,,57,24,CX,cordf002,1,0,,glaut001,1,F
+,10,7,vaugm001,,gil-b001,,58,26,BX,cordf002,1,0,,molib001,1,F
+,32,8,clayr001,,,,59,101,BFBFFFBB,ethes001,0,0,clayr001 walks. ,clayr001,0,
+,10,8,clayr001,,,,60,103,BX,ethes001,1,0,,alicl001,0,F
+clayr001 to 2B. ,31,8,greer001,clayr001,,,61,108,CBBBB,ethes001,0,0,greer001 walks. ,greer001,0,
+,32,8,,clayr001,,,63,7,SBBBFFX,hases001,2,0,Double Play. ,palmr001,0,
+,20,8,spies001,,,,65,3,BBX,crabt001,0,0,spies001 singles. ,spies001,1,
+spies001 to 2B. kenna001 to 1B. ,10,8,kenna001,spies001,,,66,5,BX,crabt001,0,0,kenna001 hits into a fielder's choice. ,kenna001,1,
+spies001 to 3B. kenna001 to 2B. ,32,8,stock001,kenna001,spies001,,68,11,BLBBLB,crabt001,0,0,stock001 walks. ,stock001,1,
+spies001 scores. kenna001 to 3B. ,01,8,stock001,,kenna001,,69,13,SX,crabt001,1,1,palmo001 hits sacrifice fly. ,palmo001,1,
+kenna001 scores. stock001 to 3B. ,11,8,erstd001,,stock001,,70,16,FBX,crabt001,0,1,erstd001 reaches on error. ,erstd001,1,
+,00,8,erstd001,,stock001,,72,17,X,crabt001,1,0,,andeg001,1,
+erstd001 to 2B. ,31,8,vaugm001,erstd001,stock001,,73,22,SBBBB,crabt001,0,0,vaugm001 walks. ,vaugm001,1,
+,22,8,vaugm001,erstd001,stock001,,74,27,BCBFC,crabt001,1,0,glaut001 strikes out. ,glaut001,1,
+,01,9,,,,,77,9,FX,hases001,1,0,,rodri001,0,
+,11,9,,,,,78,12,CBX,hases001,1,0,segud001 grounds out. ,segud001,0,G
+,01,9,martd002,,,,79,14,CX,hases001,0,0,martd002 singles. ,martd002,0,
+,02,9,martd002,,,,80,17,CFS,hases001,1,0,lambm001 strikes out. ,lambm001,0,

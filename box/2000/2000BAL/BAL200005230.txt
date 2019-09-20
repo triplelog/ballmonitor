@@ -1,0 +1,138 @@
+version,2
+info,visteam,SEA
+info,hometeam,BAL
+info,site,BAL12
+info,date,2000/05/23
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,barrt901
+info,ump1b,laynj901
+info,ump2b,monte901
+info,ump3b,randt901
+info,pitches,pitches
+info,temp,73
+info,winddir,ltor
+info,windspeed,8
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,158
+info,attendance,37747
+info,wp,timlm001
+info,lp,mesaj001
+info,save,
+start,hendr001,"Rickey Henderson",0,1,7
+start,mclem001,"Mark McLemore",0,2,4
+start,rodra001,"Alex Rodriguez",0,3,6
+start,olerj001,"John Olerud",0,4,3
+start,marte001,"Edgar Martinez",0,5,10
+start,buhnj001,"Jay Buhner",0,6,9
+start,belld002,"David Bell",0,7,5
+start,wilsd001,"Dan Wilson",0,8,2
+start,camem001,"Mike Cameron",0,9,8
+start,mechg001,"Gil Meche",0,0,1
+start,andeb001,"Brady Anderson",1,1,8
+start,deshd001,"Delino DeShields",1,2,4
+start,surhb001,"B.J. Surhoff",1,3,7
+start,bellj002,"Albert Belle",1,4,9
+start,bainh001,"Harold Baines",1,5,10
+start,ripkc001,"Cal Ripken",1,6,5
+start,clarw001,"Will Clark",1,7,3
+start,johnc002,"Charles Johnson",1,8,2
+start,bordm001,"Mike Bordick",1,9,6
+start,rappp001,"Pat Rapp",1,0,1
+play,1,0,hendr001,12,BCFC,K/C
+play,1,0,mclem001,32,BCFBBX,43/G
+play,1,0,rodra001,12,SCFBFX,53/G
+play,1,1,andeb001,00,X,HR/8
+play,1,1,deshd001,32,BSFBFBS,K
+play,1,1,surhb001,01,CX,7/F7
+play,1,1,bellj002,31,BBFBX,9/F9S
+play,2,0,olerj001,22,BCCBX,43/G
+play,2,0,marte001,22,CBBFC,K/C
+play,2,0,buhnj001,00,X,S7
+play,2,0,belld002,22,BCFBS,K
+play,2,1,bainh001,22,BFBFX,HR/7
+play,2,1,ripkc001,20,BBX,4/FL
+play,2,1,clarw001,00,X,43/G
+play,2,1,johnc002,32,BBFFBX,S/78
+play,2,1,bordm001,20,BBX,6/P6
+play,3,0,wilsd001,11,BCX,43/G
+play,3,0,camem001,32,CFBFBBX,8/F8
+play,3,0,hendr001,21,CBBX,9/F9
+play,3,1,andeb001,22,FBSBC,K/C
+play,3,1,deshd001,10,BX,3/G
+play,3,1,surhb001,00,X,31/G
+play,4,0,mclem001,12,SBCC,K/C
+play,4,0,rodra001,30,BBBB,W
+play,4,0,olerj001,32,CCFFFBBBX,8/L8
+play,4,0,marte001,10,BX,S9.1-3
+play,4,0,buhnj001,10,BX,9/F9
+play,4,1,bellj002,31,BFBBX,53/G
+play,4,1,bainh001,22,CFBFBX,63/G
+play,4,1,ripkc001,20,BBX,8/F8D
+play,5,0,belld002,01,FX,6/L6
+play,5,0,wilsd001,01,CX,13/G
+play,5,0,camem001,31,BBSBX,S8
+play,5,0,hendr001,10,BX,9/F9
+play,5,1,clarw001,31,BCBBX,53/G
+play,5,1,johnc002,01,CX,13/G
+play,5,1,bordm001,31,BCBBB,W
+play,5,1,andeb001,22,BBSFFX,S8.1-3
+play,5,1,deshd001,12,SBSB,CSH(252)
+play,6,0,mclem001,01,CX,S9
+play,6,0,rodra001,02,FSX,9/F9
+play,6,0,olerj001,21,CBBX,7/F7D
+play,6,0,marte001,31,BBCBX,8/F8
+play,6,1,deshd001,11,CBX,8/F8
+play,6,1,surhb001,31,BFBBX,63/G
+play,6,1,bellj002,11,BCX,8/F8
+play,7,0,buhnj001,32,BBSFBFB,W
+play,7,0,belld002,10,BX,9/F9
+play,7,0,wilsd001,00,X,8/F8
+play,7,0,camem001,32,BFCFBBB,W.1-2
+play,7,0,hendr001,21,BCBX,8/F8
+play,7,1,bainh001,01,CX,43/G
+play,7,1,ripkc001,00,X,53/G
+play,7,1,clarw001,11,CBX,31/G
+play,8,0,mclem001,00,,NP
+sub,johnj007,"Jason Johnson",1,0,1
+play,8,0,mclem001,02,CCC,K/C
+play,8,0,rodra001,01,CX,S8
+play,8,0,olerj001,11,FBB,CS2(26)
+play,8,0,olerj001,32,FBBCBFFX,43/G
+play,8,1,johnc002,00,,NP
+sub,panij001,"Jose Paniagua",0,0,1
+play,8,1,johnc002,32,SSBBFBFFB,W
+play,8,1,bordm001,10,BX,6/P6
+play,8,1,andeb001,00,,NP
+sub,ramsr001,"Robert Ramsay",0,0,1
+play,8,1,andeb001,31,CBBBB,W.1-2
+play,8,1,deshd001,12,FCBC,K/C
+play,8,1,surhb001,10,BX,2/FL
+play,9,0,marte001,00,,NP
+sub,timlm001,"Mike Timlin",1,0,1
+play,9,0,marte001,11,BCX,S9
+play,9,0,buhnj001,00,,NP
+sub,mabrj001,"John Mabry",0,5,12
+play,9,0,buhnj001,02,SFFX,HR/78.1-H
+play,9,0,belld002,02,SCFX,S/78S
+play,9,0,wilsd001,10,BX,34/SH.1-2
+play,9,0,camem001,11,BCX,43/G.2-3
+play,9,0,hendr001,32,BBBCFB,W
+play,9,0,mclem001,00,B,DI.1-2
+play,9,0,mclem001,10,BX,13/G
+play,9,1,bellj002,00,,NP
+sub,mesaj001,"Jose Mesa",0,0,1
+play,9,1,bellj002,20,BBX,S9/9S
+play,9,1,bainh001,31,CBBBX,7/F7
+play,9,1,ripkc001,20,BBX,HR/7.1-H
+data,er,mechg001,2
+data,er,panij001,0
+data,er,ramsr001,0
+data,er,mesaj001,2
+data,er,rappp001,0
+data,er,johnj007,0
+data,er,timlm001,2

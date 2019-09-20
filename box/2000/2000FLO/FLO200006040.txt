@@ -1,0 +1,136 @@
+version,2
+info,visteam,TOR
+info,hometeam,FLO
+info,site,MIA01
+info,date,2000/06/04
+info,number,0
+info,starttime,4:05PM
+info,daynight,day
+info,usedh,false
+info,umphome,everm901
+info,ump1b,crawj901
+info,ump2b,dimum901
+info,ump3b,gormb901
+info,pitches,pitches
+info,temp,84
+info,winddir,fromrf
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,164
+info,attendance,11007
+info,wp,escok001
+info,lp,nunev001
+info,save,
+start,stews002,"Shannon Stewart",0,1,7
+start,grebc001,"Craig Grebeck",0,2,4
+start,mondr002,"Raul Mondesi",0,3,9
+start,delgc001,"Carlos Delgado",0,4,3
+start,fletd001,"Darrin Fletcher",0,5,2
+start,cruzj004,"Jose Cruz",0,6,8
+start,gonza001,"Alex S. Gonzalez",0,7,6
+start,woodc001,"Chris Woodward",0,8,5
+start,escok001,"Kelvim Escobar",0,9,1
+start,kotsm001,"Mark Kotsay",1,1,9
+start,bergd002,"Dave Berg",1,2,4
+start,floyc001,"Cliff Floyd",1,3,7
+start,wilsp002,"Preston Wilson",1,4,8
+start,lowem001,"Mike Lowell",1,5,5
+start,millk005,"Kevin Millar",1,6,3
+start,gonza002,"Alex Gonzalez",1,7,6
+start,bakop001,"Paul Bako",1,8,2
+start,nunev001,"Vladimir Nunez",1,9,1
+play,1,0,stews002,11,CBH,HP
+play,1,0,grebc001,10,BB,SB2
+play,1,0,grebc001,32,BBFBFB,W
+play,1,0,mondr002,21,BBSX,8/L8
+play,1,0,delgc001,30,BBBX,HR/7.2-H;1-H
+play,1,0,fletd001,02,CSX,S/78
+play,1,0,cruzj004,32,BBCFBS,K
+play,1,0,gonza001,12,FBCS,K
+play,1,1,kotsm001,10,BX,8/F8D
+play,1,1,bergd002,12,BFCX,13/G
+play,1,1,floyc001,10,BX,S8
+play,1,1,wilsp002,01,CC,SB2
+play,1,1,wilsp002,02,CCX,S7.2-H
+play,1,1,lowem001,00,B,SB2.1-3(E2/TH2)
+play,1,1,lowem001,20,BBX,S7.3-H
+play,1,1,millk005,22,BCCBX,4(1)/FO/G
+play,2,0,woodc001,01,CX,8/F8
+play,2,0,escok001,00,X,43/G
+play,2,0,stews002,10,BX,9/L9
+play,2,1,gonza002,12,BFSS,K
+play,2,1,bakop001,12,BSSS,K
+play,2,1,nunev001,12,CFBS,K
+play,3,0,grebc001,11,CBX,S7
+play,3,0,mondr002,22,BCBFC,K/C
+play,3,0,delgc001,22,BFBSX,S8.1-3
+play,3,0,fletd001,22,BFFBS,K
+play,3,0,cruzj004,10,BX,S9/9S.3-H;1-2
+play,3,0,gonza001,01,CX,D7.2-H;1XH(762)
+play,3,1,kotsm001,01,CX,S
+play,3,1,bergd002,00,X,13/G.1-2
+play,3,1,floyc001,11,CBX,8/L8
+play,3,1,wilsp002,31,BBCBB,W
+play,3,1,lowem001,11,BCX,8/F8
+play,4,0,woodc001,00,,NP
+sub,mahar001,"Ron Mahay",1,9,1
+play,4,0,woodc001,11,BCX,6/P6
+play,4,0,escok001,12,BFCS,K
+play,4,0,stews002,22,CFBFBX,43/G
+play,4,1,millk005,00,,NP
+sub,casta001,"Alberto Castillo",0,5,2
+play,4,1,millk005,32,CCBBBX,S9/9S
+play,4,1,gonza002,10,BB,PB.1-2
+play,4,1,gonza002,22,BBSSX,7/F7
+play,4,1,bakop001,12,CBFS,K
+play,4,1,mahar001,32,BSFFBBS,K
+play,5,0,grebc001,02,CCX,5/P5
+play,5,0,mondr002,12,BSCS,K
+play,5,0,delgc001,22,BCBFS,K
+play,5,1,kotsm001,21,BFBX,8/F8
+play,5,1,bergd002,02,CCC,K/C
+play,5,1,floyc001,12,CBCS,K
+play,6,0,casta001,10,BX,13/BG
+play,6,0,cruzj004,00,X,D7/7D
+play,6,0,gonza001,12,BSFC,K/C
+play,6,0,woodc001,30,IIII,IW
+play,6,0,escok001,01,SX,13/G
+play,6,1,wilsp002,11,BCX,8/F8
+play,6,1,lowem001,02,CCFFX,63/G
+play,6,1,millk005,12,CBFS,K
+play,7,0,stews002,00,X,D7.B-3(E7)
+play,7,0,grebc001,02,CCX,S7.3-H
+play,7,0,mondr002,22,SBSBX,3/P3
+play,7,0,delgc001,11,BCX,7/F7
+play,7,0,casta001,12,BCFX,S7.1-2
+play,7,0,cruzj004,00,X,3/FL
+play,7,1,gonza002,31,BFBBX,6/P6
+play,7,1,bakop001,12,BCCS,K
+play,7,1,mahar001,00,,NP
+sub,browb003,"Brant Brown",1,9,11
+play,7,1,browb003,12,BFSS,K
+play,8,0,gonza001,00,,NP
+sub,stroj001,"Joe Strong",1,9,1
+play,8,0,gonza001,10,BX,S9
+play,8,0,woodc001,00,X,53/G.1-2
+play,8,0,escok001,12,SSBS,K
+play,8,0,stews002,12,FBFX,S9/9S.2-H
+play,8,0,grebc001,10,BB,SB2
+play,8,0,grebc001,32,BBFBFB,W
+play,8,0,mondr002,02,SSX,13/G
+play,8,1,kotsm001,00,X,S8
+play,8,1,bergd002,22,FBBFFFX,S8.1-2
+play,8,1,floyc001,12,FBFX,7/F7
+play,8,1,wilsp002,00,X,64(1)3/GDP
+play,9,0,delgc001,00,X,13/G
+play,9,0,casta001,22,BSBCS,K
+play,9,0,cruzj004,32,BCBBCX,63/G
+play,9,1,lowem001,22,BFFBFFX,S8
+play,9,1,millk005,01,FX,54(1)3/GDP
+play,9,1,gonza002,10,BX,7/F7
+data,er,escok001,2
+data,er,nunev001,5
+data,er,mahar001,1
+data,er,stroj001,1

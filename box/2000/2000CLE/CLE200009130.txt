@@ -1,0 +1,174 @@
+version,2
+info,visteam,BOS
+info,hometeam,CLE
+info,site,CLE08
+info,date,2000/09/13
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,coope901
+info,ump1b,kellj901
+info,ump2b,reilm901
+info,ump3b,diazl901
+info,pitches,pitches
+info,temp,69
+info,winddir,fromcf
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,221
+info,attendance,42667
+info,wp,colob001
+info,lp,ohkat001
+info,save,
+start,nixot001,"Trot Nixon",0,1,9
+start,offej001,"Jose Offerman",0,2,4
+start,everc001,"Carl Everett",0,3,8
+start,garcn001,"Nomar Garciaparra",0,4,6
+start,oleat001,"Troy O'Leary",0,5,7
+start,bichd001,"Dante Bichette",0,6,10
+start,daubb001,"Brian Daubach",0,7,3
+start,varij001,"Jason Varitek",0,8,2
+start,merll001,"Lou Merloni",0,9,5
+start,ohkat001,"Tomo Ohka",0,0,1
+start,loftk001,"Kenny Lofton",1,1,8
+start,vizqo001,"Omar Vizquel",1,2,6
+start,alomr001,"Roberto Alomar",1,3,4
+start,ramim002,"Manny Ramirez",1,4,9
+start,thomj002,"Jim Thome",1,5,10
+start,segud001,"David Segui",1,6,3
+start,frymt001,"Travis Fryman",1,7,5
+start,branr001,"Russell Branyan",1,8,7
+start,diaze002,"Einar Diaz",1,9,2
+start,colob001,"Bartolo Colon",1,0,1
+play,1,0,nixot001,22,BCBCFFS,K
+play,1,0,offej001,01,CX,S7
+play,1,0,everc001,22,BCBFS,K
+play,1,0,garcn001,21,BBFX,S/78.1-2
+play,1,0,oleat001,02,CSFS,K
+play,1,1,loftk001,20,BBX,3/P3
+play,1,1,vizqo001,32,BCBBCX,S9/9S
+play,1,1,alomr001,22,BCBFX,S9/9S.1-2
+play,1,1,ramim002,12,BCFS,K
+com,"$infield shifted with Nomar to right of bag"
+play,1,1,thomj002,22,CFFBFBS,K
+play,2,0,bichd001,11,BCX,4/P4
+play,2,0,daubb001,31,CBBBB,W
+play,2,0,varij001,22,BBCCFFC,K/C
+play,2,0,merll001,31,BBCBB,W.1-2
+play,2,0,nixot001,22,CCBBX,7/F7
+play,2,1,segud001,02,CFFX,6/P6
+play,2,1,frymt001,32,CBSBBB,W
+play,2,1,branr001,11,BSX,HR/9.1-H
+play,2,1,diaze002,00,X,9/F9
+play,2,1,loftk001,11,CBX,S9/9S
+play,2,1,vizqo001,00,B,SB2
+play,2,1,vizqo001,21,BCBX,S8.2-H
+play,2,1,alomr001,22,BCBCX,3/G
+play,3,0,offej001,00,X,8/F8
+play,3,0,everc001,22,CBBCX,D7/7S
+play,3,0,garcn001,22,FBFBC,K/C
+play,3,0,oleat001,12,SFFBX,D9.2-H
+play,3,0,bichd001,01,FX,3/FL
+play,3,1,ramim002,01,CX,8/F8
+com,"$infield shifted with Nomar to right of bag and Merloni at SS"
+play,3,1,thomj002,32,CCBBBB,W
+play,3,1,segud001,01,FX,9/L9
+play,3,1,frymt001,00,X,6/P6
+play,4,0,daubb001,12,CFBX,5/FL
+play,4,0,varij001,12,CFBS,K
+play,4,0,merll001,00,X,S8
+play,4,0,nixot001,21,BBSX,4/P4
+play,4,1,branr001,32,BCFBBFC,K/C
+play,4,1,diaze002,02,CSX,S9/9S
+play,4,1,loftk001,01,CX,6/P6
+play,4,1,vizqo001,21,BSBB,SB2
+play,4,1,vizqo001,31,BSBBB,W
+play,4,1,alomr001,32,BBCBFFFFB,W.2-3;1-2
+play,4,1,ramim002,30,BBBX,D/89D.3-H;2-H;1-H
+play,4,1,thomj002,00,,NP
+sub,fassj001,"Jeff Fassero",0,0,1
+play,4,1,thomj002,10,BX,8/F8
+play,5,0,offej001,32,BBCCBX,8/F8
+play,5,0,everc001,31,BCBBB,W
+play,5,0,garcn001,00,X,FC4.1-3(E4/TH2);B-2
+play,5,0,oleat001,21,FBBX,53/G.3-H(UR)
+play,5,0,bichd001,22,BSFBFX,3/L3
+play,5,1,segud001,22,SSBBX,53/G
+play,5,1,frymt001,22,BFBCS,K
+play,5,1,branr001,00,X,S8
+play,5,1,diaze002,32,FFBBBS,K
+play,6,0,daubb001,12,BCCS,K
+play,6,0,varij001,21,FBBX,HR/9
+play,6,0,merll001,01,CX,53/G
+play,6,0,nixot001,22,CCBBFX,6/P6
+play,6,1,loftk001,00,,NP
+sub,carrh001,"Hector Carrasco",0,0,1
+play,6,1,loftk001,30,BBBB,W
+play,6,1,vizqo001,11,CBB,CS2(24)
+play,6,1,vizqo001,22,CBBFC,K/C
+play,6,1,alomr001,12,BCFS,K23
+play,7,0,offej001,00,X,43/G
+play,7,0,everc001,32,BBCSBFX,31/G
+play,7,0,garcn001,00,X,7/F7D
+play,7,1,ramim002,32,BCBFBFX,HR/8
+play,7,1,thomj002,31,BSBBB,W
+play,7,1,segud001,21,BFBX,HR/8.1-H
+play,7,1,frymt001,00,,NP
+sub,lee-s001,"Sang-Hoon Lee",0,0,1
+play,7,1,frymt001,32,BBBCSX,S7
+play,7,1,branr001,00,,NP
+sub,cabrj002,"Jolbert Cabrera",1,8,11
+play,7,1,cabrj002,02,SFX,7/F7D
+play,7,1,diaze002,22,CFFBFBX,S.1-2
+play,7,1,loftk001,02,CCH,HP.2-3;1-2
+play,7,1,vizqo001,00,,NP
+sub,robed001,"Dave Roberts",1,1,12
+play,7,1,vizqo001,20,BBX,7/SF.3-H;2-3
+play,7,1,alomr001,00,,NP
+sub,crour001,"Rick Croushore",0,0,1
+play,7,1,alomr001,31,BCBBB,W.1-2
+play,7,1,ramim002,00,X,4/P4
+play,8,0,oleat001,00,,NP
+sub,robed001,"Dave Roberts",1,1,7
+play,8,0,oleat001,00,,NP
+sub,mcdoj003,"John McDonald",1,3,4
+play,8,0,oleat001,00,,NP
+sub,cabrj002,"Jolbert Cabrera",1,8,8
+play,8,0,oleat001,00,,NP
+sub,rincr001,"Ricardo Rincon",1,0,1
+play,8,0,oleat001,02,FSX,43/G
+play,8,0,bichd001,01,CX,8/F8D
+play,8,0,daubb001,00,,NP
+sub,alcai001,"Israel Alcantara",0,7,11
+play,8,0,alcai001,00,X,4/P4
+play,8,1,thomj002,00,,NP
+sub,alcai001,"Israel Alcantara",0,7,3
+play,8,1,thomj002,00,,NP
+sub,hatts001,"Scott Hatteberg",0,8,2
+play,8,1,thomj002,00,,NP
+sub,sadld001,"Donnie Sadler",0,4,6
+play,8,1,thomj002,00,,NP
+sub,crawp001,"Paxton Crawford",0,0,1
+play,8,1,thomj002,10,BX,1/P1
+play,8,1,segud001,32,CFFBBBFX,7/F7
+play,8,1,frymt001,00,X,63/G
+play,9,0,hatts001,00,,NP
+sub,wickb001,"Bob Wickman",1,0,1
+play,9,0,hatts001,12,BSFC,K/C
+play,9,0,merll001,00,,NP
+sub,brogr001,"Rico Brogna",0,9,11
+play,9,0,brogr001,02,SFS,K
+play,9,0,nixot001,31,BBBCB,W
+play,9,0,offej001,01,CX,8/F8D
+data,er,ohkat001,6
+data,er,fassj001,0
+data,er,carrh001,3
+data,er,lee-s001,1
+data,er,crour001,0
+data,er,crawp001,0
+data,er,colob001,2
+data,er,rincr001,0
+data,er,wickb001,0

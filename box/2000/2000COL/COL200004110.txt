@@ -1,0 +1,145 @@
+version,2
+info,visteam,CIN
+info,hometeam,COL
+info,site,DEN02
+info,date,2000/04/11
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,cuzzp901
+info,ump1b,mcclt901
+info,ump2b,craft901
+info,ump3b,schrp901
+info,pitches,pitches
+info,temp,56
+info,winddir,fromrf
+info,windspeed,8
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,174
+info,attendance,40488
+info,wp,villr001
+info,lp,bohab001
+info,save,
+start,stync001,"Chris Stynes",0,1,4
+start,larkb001,"Barry Larkin",0,2,6
+start,grifk002,"Ken Griffey",0,3,8
+start,bichd001,"Dante Bichette",0,4,9
+start,yound001,"Dmitri Young",0,5,7
+start,taube001,"Eddie Taubensee",0,6,2
+start,boona001,"Aaron Boone",0,7,5
+start,cromd001,"David Cromer",0,8,3
+start,villr001,"Ron Villone",0,9,1
+start,huntb002,"Brian L. Hunter",1,1,8
+start,lansm001,"Mike Lansing",1,2,4
+start,walkl001,"Larry Walker",1,3,9
+start,cirij001,"Jeff Cirillo",1,4,5
+start,heltt001,"Todd Helton",1,5,3
+start,shumt001,"Terry Shumpert",1,6,7
+start,peren001,"Neifi Perez",1,7,6
+start,servs002,"Scott Servais",1,8,2
+start,bohab001,"Brian Bohanon",1,9,1
+play,1,0,stync001,11,CBX,D7
+play,1,0,larkb001,00,X,53/SH.2-3#
+play,1,0,grifk002,21,CBBX,8/SF.3-H
+play,1,0,bichd001,01,CX,9/L9
+play,1,1,huntb002,32,CFBBFFBFB,W
+play,1,1,lansm001,11,BCX,54(1)3/GDP
+play,1,1,walkl001,32,FBFBBS,K
+play,2,0,yound001,00,X,D7
+play,2,0,taube001,20,BBX,43/G.2-3
+play,2,0,boona001,21,BBCX,53/G
+play,2,0,cromd001,31,BCBBI,IW
+play,2,0,villr001,02,SCX,S9.3-H;1-2
+play,2,0,stync001,12,CCBC,K/C
+play,2,1,cirij001,31,BCBBB,W
+play,2,1,heltt001,22,CBCBS,K
+play,2,1,shumt001,02,FSFS,K
+play,2,1,peren001,12,CBSFFFFFX,8/F8
+play,3,0,larkb001,21,CBBX,S7/7S
+play,3,0,grifk002,12,FBFX,S8.1-2
+play,3,0,bichd001,20,BBX,9/FL.2-3;1-2
+play,3,0,yound001,00,X,HR/78.3-H;2-H
+play,3,0,taube001,00,X,7/L7
+play,3,0,boona001,12,BFFX,53/G
+play,3,1,servs002,01,FX,43/G
+play,3,1,bohab001,00,X,13/G
+play,3,1,huntb002,32,BFFBBX,S
+play,3,1,lansm001,21,FBBB,SB2
+play,3,1,lansm001,31,FBBBB,W
+play,3,1,walkl001,11,BCB,SB3;SB2.2-H(E6)
+play,3,1,walkl001,32,BCBBSX,S8.2-H
+play,3,1,cirij001,12,CSB1,PO1(13)
+play,4,0,cromd001,02,FCX,S9/9S
+play,4,0,villr001,01,LX,1/BP1
+play,4,0,stync001,11,BSX,S9/9S.1-2
+play,4,0,larkb001,00,X,S7/7S.2-3;1-2
+play,4,0,grifk002,00,,NP
+sub,whitg001,"Gabe White",1,9,1
+play,4,0,grifk002,01,CX,HR/9.3-H;2-H;1-H
+play,4,0,bichd001,21,CBBX,D7
+play,4,0,yound001,22,BFFFBX,6/P6
+play,4,0,taube001,12,CFBX,7/F7
+play,4,1,cirij001,11,CBX,53/G
+play,4,1,heltt001,11,BCX,3/FL
+play,4,1,shumt001,01,CX,5/FL
+play,5,0,boona001,12,CBCC,K/C
+play,5,0,cromd001,11,BCX,7/F7
+play,5,0,villr001,12,BSCFFS,K
+play,5,1,peren001,10,BX,7/F7
+play,5,1,servs002,12,CFFFBS,K
+play,5,1,whitg001,12,BCSX,7/F7
+play,6,0,stync001,11,CBX,63/G
+play,6,0,larkb001,11,CBX,9/L9
+play,6,0,grifk002,22,CCBBX,8/F8
+play,6,1,huntb002,32,CBBBCX,7/F7
+play,6,1,lansm001,32,CBBFFBX,53/G
+play,6,1,walkl001,31,CBBBX,S/78
+play,6,1,cirij001,00,X,9/F9
+play,7,0,bichd001,00,,NP
+sub,ledea001,"Aaron Ledesma",1,9,5
+play,7,0,bichd001,00,,NP
+sub,crour001,"Rick Croushore",1,4,1
+play,7,0,bichd001,11,BFX,4/P4
+play,7,0,yound001,00,X,S7
+play,7,0,taube001,12,FBFC,K/C
+play,7,0,boona001,12,BFSFS,K
+play,7,1,heltt001,20,BBX,D7/7D
+play,7,1,shumt001,30,BBBB,W
+play,7,1,peren001,01,CX,54(1)3/GDP.2-3
+play,7,1,servs002,20,BBX,6/L6
+play,8,0,cromd001,22,CSBBS,K
+play,8,0,villr001,00,,NP
+sub,morrh001,"Hal Morris",0,9,11
+play,8,0,morrh001,20,BBX,HR/7
+play,8,0,stync001,31,BBBCX,7/L7
+play,8,0,larkb001,31,BBBCX,63/G
+play,8,1,ledea001,00,,NP
+sub,aybam001,"Manny Aybar",0,9,1
+play,8,1,ledea001,01,FX,9/F9
+play,8,1,huntb002,12,CFBFFX,53/G
+play,8,1,lansm001,21,CBBX,D7/7D
+play,8,1,walkl001,00,X,D9.2-H
+play,8,1,crour001,00,,NP
+sub,bragd001,"Darren Bragg",1,4,11
+play,8,1,bragd001,12,BSFS,K
+play,9,0,grifk002,00,,NP
+sub,myerm001,"Mike Myers",1,4,1
+play,9,0,grifk002,32,CBSBBFS,K
+play,9,0,bichd001,22,BCBFX,8/F8
+play,9,0,yound001,21,BFBX,S7/7S
+play,9,0,taube001,10,BX,63/G
+play,9,1,heltt001,20,BBX,E3/G.B-2
+play,9,1,shumt001,21,BFBX,53/G
+play,9,1,peren001,12,CFBX,6/P6
+play,9,1,servs002,00,,NP
+sub,maynb001,"Brent Mayne",1,8,11
+play,9,1,maynb001,22,BBFFFX,31/G
+data,er,villr001,2
+data,er,aybam001,1
+data,er,bohab001,8
+data,er,whitg001,1
+data,er,crour001,1
+data,er,myerm001,0

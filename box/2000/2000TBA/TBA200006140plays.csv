@@ -1,0 +1,65 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,12,1,,,,,0,4,CBFS,lopea002,1,0,erstd001 strikes out. ,erstd001,0,
+,11,1,spies001,,,,1,7,CBX,lopea002,0,0,spies001 singles. ,spies001,0,
+spies001 to 2B. ,00,1,vaugm001,spies001,,,2,8,X,lopea002,0,0,vaugm001 singles. ,vaugm001,0,
+,12,1,vaugm001,spies001,,,3,12,SFBS,lopea002,1,0,salmt001 strikes out. ,salmt001,0,
+spies001 to 3B. vaugm001 out. ,12,1,andeg001,,spies001,,4,16,CFBX,lopea002,1,0,andeg001 reaches on fielder's choice. ,andeg001,0,
+,12,1,,,,,5,4,BCFX,coopb001,1,0,,winnr001,1,F
+guilj001 to 2B. ,00,1,,guilj001,,,6,5,X,coopb001,0,0,guilj001 reaches on error. ,guilj001,1,
+guilj001 to 3B. ,21,1,,,guilj001,,7,9,BBCX,coopb001,1,0,,vaugg001,1,F
+,20,1,,,guilj001,,8,12,BBX,coopb001,1,0,mcgrf001 grounds out. ,mcgrf001,1,G
+,12,2,,,,,9,21,CBFFS,lopea002,1,0,glaut001 strikes out. ,glaut001,0,
+,02,2,molib001,,,,10,25,FCFX,lopea002,0,0,molib001 singles. ,molib001,0,
+molib001 to 2B. ,00,2,kenna001,molib001,,,11,26,X,lopea002,0,0,kenna001 singles. ,kenna001,0,
+,01,2,,molib001,,,12,28,CX,lopea002,2,0,Double Play. ,gil-b001,0,
+,00,2,tramb001,,,,13,13,X,coopb001,0,0,tramb001 singles. ,tramb001,1,
+,11,2,,,,,14,16,CBX,coopb001,2,0,Double Play. ,flahj001,1,
+,02,2,,,,,15,19,CFS,coopb001,1,0,guilo001 strikes out. ,guilo001,1,
+,02,3,,,,,16,31,CSC,lopea002,1,0,erstd001 strikes out. ,erstd001,0,
+,20,3,,,,,17,34,BBX,lopea002,1,0,spies001 grounds out. ,spies001,0,G
+,02,3,,,,,18,37,FFC,lopea002,1,0,vaugm001 strikes out. ,vaugm001,0,
+,10,3,,,,,19,21,BX,coopb001,1,0,cairm001 grounds out. ,cairm001,1,G
+,01,3,,,,,20,23,CX,coopb001,1,0,martf001 grounds out. ,martf001,1,G
+,11,3,,,,,21,26,CBX,coopb001,1,0,winnr001 grounds out. ,winnr001,1,G
+,00,4,,,,,22,38,X,lopea002,1,0,salmt001 grounds out. ,salmt001,0,G
+,32,4,,,,,23,45,CBBFFBX,lopea002,1,0,andeg001 grounds out. ,andeg001,0,G
+,31,4,glaut001,,,,24,50,BFBBB,lopea002,0,0,glaut001 walks. ,glaut001,0,
+,00,4,glaut001,,,,25,51,X,lopea002,1,0,,molib001,0,F
+,01,4,,,,,26,28,CX,coopb001,1,0,guilj001 grounds out. ,guilj001,1,G
+vaugg001 out. ,20,4,,,,,27,31,BBX,coopb001,1,0,vaugg001 singles. ,vaugg001,1,
+,00,4,,,,,28,32,X,coopb001,1,0,mcgrf001 grounds out. ,mcgrf001,1,G
+,10,5,,,,,29,53,BX,lopea002,1,0,,kenna001,0,F
+,00,5,,,,,30,54,X,lopea002,1,0,,gil-b001,0,F
+,20,5,,,,,31,57,BBX,lopea002,1,0,,erstd001,0,F
+,21,5,,tramb001,,,32,36,CBBX,coopb001,0,0,tramb001 doubles. ,tramb001,1,
+tramb001 to 3B. ,21,5,,,tramb001,,33,40,BBFX,coopb001,1,0,flahj001 grounds out. ,flahj001,1,G
+,12,5,,,tramb001,,34,44,BCFX,coopb001,1,0,,guilo001,1,F
+,21,5,,,tramb001,,35,48,BBFX,coopb001,1,0,cairm001 grounds out. ,cairm001,1,G
+,12,6,,,,,36,62,CFBFX,lopea002,0,1,spies001 homers. ,spies001,0,
+,32,6,,,,,37,69,BBFFBFS,lopea002,1,0,vaugm001 strikes out. ,vaugm001,0,
+,12,6,,,,,38,75,CBCFFS,lopea002,1,0,salmt001 strikes out. ,salmt001,0,
+,22,6,,,,,39,81,FBFFBX,lopea002,1,0,,andeg001,0,F
+,10,6,,,,,40,50,BX,coopb001,1,0,,martf001,1,P
+,21,6,,,,,41,54,BBCX,coopb001,1,0,,winnr001,1,F
+,12,6,,,,,42,58,BFFS,coopb001,1,0,guilj001 strikes out. ,guilj001,1,
+,11,7,,,,,43,84,BCX,lopea002,1,0,glaut001 grounds out. ,glaut001,0,G
+,01,7,,,,,44,86,SX,lopea002,0,1,molib001 homers. ,molib001,0,
+,11,7,,,,,45,89,CBX,lopea002,1,0,,kenna001,0,P
+,01,7,,,,,46,91,CX,lopea002,1,0,gil-b001 grounds out. ,gil-b001,0,G
+,00,7,,,,,47,59,X,coopb001,1,0,,vaugg001,1,
+,30,7,mcgrf001,,,,48,63,BBBB,coopb001,0,0,mcgrf001 walks. ,mcgrf001,1,
+mcgrf001 out. tramb001 to 2B. ,11,7,,tramb001,,,49,66,BCX,coopb001,1,0,tramb001 singles. ,tramb001,1,
+,10,7,,tramb001,,,50,68,BX,coopb001,1,0,flahj001 grounds out. ,flahj001,1,G
+,01,8,,,,,51,93,FX,lopea002,1,0,,erstd001,0,P
+,01,8,spies001,,,,52,95,FX,lopea002,0,0,spies001 singles. ,spies001,0,
+,01,8,,,,,53,97,CX,lopea002,2,0,Double Play. ,vaugm001,0,
+,22,8,,,,,55,74,FSFBBS,coopb001,1,0,smitr003 strikes out. ,smitr003,1,
+,32,8,cairm001,,,,56,80,CBCBBX,coopb001,0,0,cairm001 singles. ,cairm001,1,
+,32,8,,cairm001,,,58,87,SBBSFBC,coopb001,1,0,cox-s001 strikes out. cairm001 steals 2B. ,cox-s001,1,
+,32,8,,cairm001,,,59,93,FBCBBX,coopb001,1,0,,winnr001,1,F
+,00,9,,,,,62,98,X,lopea002,1,0,salmt001 grounds out. ,salmt001,0,G
+,21,9,,,,,63,102,BBFX,lopea002,1,0,,andeg001,0,F
+,00,9,,,,,64,103,X,lopea002,1,0,glaut001 grounds out. ,glaut001,0,G
+,22,9,,,,,66,5,BCBFX,perct001,0,1,guilj001 homers. ,guilj001,1,
+,10,9,vaugg001,,,,67,7,BX,perct001,0,0,vaugg001 singles. ,vaugg001,1,
+difem001 scores. ,12,9,,,,,69,12,CSBFX,perct001,0,2,mcgrf001 homers. ,mcgrf001,1,

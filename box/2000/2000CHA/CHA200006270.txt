@@ -1,0 +1,152 @@
+version,2
+info,visteam,MIN
+info,hometeam,CHA
+info,site,CHI12
+info,date,2000/06/27
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,millb901
+info,ump1b,mealj901
+info,ump2b,younl901
+info,ump3b,klemj901
+info,pitches,pitches
+info,temp,76
+info,winddir,fromlf
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,187
+info,attendance,20283
+info,wp,maysj001
+info,lp,baldj002
+info,save,wellb002
+start,canij001,"Jay Canizaro",0,1,4
+start,hockd001,"Denny Hocking",0,2,9
+start,lawtm002,"Matt Lawton",0,3,7
+start,coomr001,"Ron Coomer",0,4,3
+start,ortid001,"David Ortiz",0,5,10
+start,koskc001,"Corey Koskie",0,6,5
+start,jensm001,"Marcus Jensen",0,7,2
+start,jonej003,"Jacque Jones",0,8,8
+start,guzmc001,"Cristian Guzman",0,9,6
+start,maysj001,"Joe Mays",0,0,1
+start,durhr001,"Ray Durham",1,1,4
+start,valej003,"Jose Valentin",1,2,6
+start,thomf001,"Frank Thomas",1,3,10
+start,ordom001,"Magglio Ordonez",1,4,9
+start,konep001,"Paul Konerko",1,5,3
+start,abboj002,"Jeff Abbott",1,6,8
+start,lee-c001,"Carlos Lee",1,7,7
+start,perrh001,"Herbert Perry",1,8,5
+start,johnm003,"Mark Johnson",1,9,2
+start,baldj002,"James Baldwin",1,0,1
+play,1,0,canij001,32,BCBBCB,W
+play,1,0,hockd001,01,CX,S9.1-2
+play,1,0,lawtm002,32,BBCCBB,W.2-3;1-2
+play,1,0,coomr001,12,CCBC,K/C
+play,1,0,ortid001,22,BSCFBFX,46(1)3/GDP
+play,1,1,durhr001,32,BBCBCX,D/78
+play,1,1,valej003,00,X,13/SH.2-3
+play,1,1,thomf001,22,FBBFB,WP.3-H
+play,1,1,thomf001,32,FBBFBFX,53/G
+play,1,1,ordom001,32,BBBCCX,S9
+play,1,1,konep001,32,CCBBBX,7/L7
+play,2,0,koskc001,11,CBX,S9/9S
+play,2,0,jensm001,00,X,D9.1-H
+play,2,0,jonej003,02,SFX,HR/7.2-H
+play,2,0,guzmc001,01,CX,D7
+play,2,0,canij001,32,SBBBFB,W
+play,2,0,hockd001,00,B,WP.2-3;1-2
+play,2,0,hockd001,32,BBBCCX,5/FL
+play,2,0,lawtm002,30,IIII,IW
+play,2,0,coomr001,00,X,D9/9S.3-H;2-H;1-3
+play,2,0,ortid001,22,CCBBFS,K
+play,2,0,koskc001,30,BBII,IW
+play,2,0,jensm001,00,X,5/FL
+play,2,1,abboj002,01,FX,D9
+play,2,1,lee-c001,20,BBX,63/G
+play,2,1,perrh001,12,CFBFX,53/G
+play,2,1,johnm003,00,X,6/P6
+play,3,0,jonej003,12,CFBC,K/C
+play,3,0,guzmc001,01,CX,S8
+play,3,0,canij001,02,FSFX,D/78.1-H
+play,3,0,hockd001,00,X,3/G.2-3
+play,3,0,lawtm002,10,BX,43/G
+play,3,1,durhr001,20,BBX,S9/9S
+play,3,1,valej003,01,CX,S.1-2
+play,3,1,thomf001,20,BBX,7/F7.2-3;1-2
+play,3,1,ordom001,12,CFBX,6/SF.3-H
+play,3,1,konep001,22,FCBBB,WP.2-3
+play,3,1,konep001,32,FCBBBS,K
+play,4,0,coomr001,00,X,4/L4
+play,4,0,ortid001,32,CSBFBFFBS,K
+play,4,0,koskc001,10,BX,8/F8
+play,4,1,abboj002,31,BBBCB,W
+play,4,1,lee-c001,01,CX,9/F9
+play,4,1,perrh001,22,BFBFX,7/F7
+play,4,1,johnm003,01,CX,7/FL
+play,5,0,jensm001,32,CBCBBX,S8
+play,5,0,jonej003,11,SBX,46(1)3/GDP
+play,5,0,guzmc001,00,X,S
+play,5,0,canij001,21,BFBB,CS2(24)
+play,5,1,durhr001,01,CX,D9/9S
+play,5,1,valej003,00,X,6/P6
+play,5,1,thomf001,02,CCX,8/F8
+play,5,1,ordom001,22,FFFBBFX,7/FL
+play,6,0,canij001,32,BBBCFX,43/G
+play,6,0,hockd001,10,BX,3/G
+play,6,0,lawtm002,00,X,63/G
+play,6,1,konep001,11,BCX,7/F7
+play,6,1,abboj002,20,BBX,53/G
+play,6,1,lee-c001,01,CX,S
+play,6,1,perrh001,00,X,7/F7
+play,7,0,coomr001,00,X,S9
+play,7,0,ortid001,00,,NP
+sub,penaj003,"Jesus Pena",1,0,1
+play,7,0,ortid001,01,CX,S8.1-2
+play,7,0,koskc001,00,X,15(2)/FO.1-2
+play,7,0,jensm001,12,BCCX,46(1)/FO.2-H(E6/TH1)(UR)
+play,7,0,jonej003,12,CFBX,63/G
+play,7,1,johnm003,32,BFBBFC,K/C
+play,7,1,durhr001,32,CCFBFBBB,W
+play,7,1,valej003,02,FFB,CS2(24)
+play,7,1,valej003,22,FFBBX,13/G
+play,8,0,guzmc001,00,,NP
+sub,simab001,"Bill Simas",1,0,1
+play,8,0,guzmc001,12,CBFX,43/G
+play,8,0,canij001,00,X,53/G
+play,8,0,hockd001,22,BCCFBC,K/C
+play,8,1,thomf001,22,FFFBBX,9/F9
+play,8,1,ordom001,00,X,D/78
+play,8,1,konep001,00,,NP
+sub,hawkl001,"LaTroy Hawkins",0,0,1
+play,8,1,konep001,11,CBB,WP.2-3
+play,8,1,konep001,21,CBBX,43/G.3-H
+play,8,1,abboj002,22,CBFBX,43/G
+play,9,0,lawtm002,00,,NP
+sub,beirk001,"Kevin Beirne",1,0,1
+play,9,0,lawtm002,22,SFFBBS,K
+play,9,0,coomr001,10,BX,63/G
+play,9,0,ortid001,12,CBCS,K
+play,9,1,lee-c001,02,FFFFFS,K
+play,9,1,perrh001,10,BX,S9
+play,9,1,johnm003,30,BBBB,W.1-2
+play,9,1,durhr001,32,CBBBSB,W.2-3;1-2
+play,9,1,valej003,00,,NP
+sub,guare001,"Eddie Guardado",0,0,1
+play,9,1,valej003,01,FX,4/P4
+play,9,1,thomf001,00,,NP
+sub,wellb002,"Bob Wells",0,0,1
+play,9,1,thomf001,32,BCSFFBFBFFFB,W.3-H;2-3;1-2
+play,9,1,ordom001,32,FBBBFX,7/L7
+data,er,maysj001,3
+data,er,hawkl001,1
+data,er,guare001,0
+data,er,wellb002,0
+data,er,baldj002,6
+data,er,penaj003,0
+data,er,simab001,0
+data,er,beirk001,0

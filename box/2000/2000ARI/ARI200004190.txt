@@ -1,0 +1,169 @@
+version,2
+info,visteam,COL
+info,hometeam,ARI
+info,site,PHO01
+info,date,2000/04/19
+info,number,0
+info,starttime,6:35PM
+info,daynight,night
+info,usedh,false
+info,umphome,monte901
+info,ump1b,randt901
+info,ump2b,barrt901
+info,ump3b,laynj901
+info,pitches,pitches
+info,temp,77
+info,winddir,ltor
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,180
+info,attendance,31237
+info,wp,morgm001
+info,lp,tavaj001
+info,save,kim-b001
+start,goodt001,"Tom Goodwin",0,1,8
+start,lansm001,"Mike Lansing",0,2,4
+start,walkl001,"Larry Walker",0,3,9
+start,cirij001,"Jeff Cirillo",0,4,5
+start,heltt001,"Todd Helton",0,5,3
+start,shumt001,"Terry Shumpert",0,6,7
+start,peren001,"Neifi Perez",0,7,6
+start,petrb001,"Ben Petrick",0,8,2
+start,astap001,"Pedro Astacio",0,9,1
+start,womat001,"Tony Womack",1,1,6
+start,bellj001,"Jay Bell",1,2,4
+start,gonzl001,"Luis Gonzalez",1,3,7
+start,durae001,"Erubiel Durazo",1,4,3
+start,finls001,"Steve Finley",1,5,8
+start,lee-t002,"Travis Lee",1,6,9
+start,fox-a001,"Andy Fox",1,7,5
+start,stink001,"Kelly Stinnett",1,8,2
+start,andeb002,"Brian Anderson",1,9,1
+play,1,0,goodt001,22,BCBFFX,3/G
+play,1,0,lansm001,32,BBFFFFBFX,9/F9D
+play,1,0,walkl001,00,X,S7
+play,1,0,cirij001,01,CX,3/G
+play,1,1,womat001,02,CFX,31/G
+play,1,1,bellj001,00,X,8/F8
+play,1,1,gonzl001,32,CBFBBFX,8/F8S
+play,2,0,heltt001,01,CX,4/L4
+play,2,0,shumt001,32,BLBFBX,8/F8S
+play,2,0,peren001,12,BFCX,43/G
+play,2,1,durae001,00,X,31/G
+play,2,1,finls001,20,BBX,D/78D
+play,2,1,lee-t002,12,CSBS,K
+play,2,1,fox-a001,10,BX,53/G
+play,3,0,petrb001,00,X,D8/8D
+play,3,0,astap001,11,FBX,24/SH.2-3
+play,3,0,goodt001,01,CX,S7.3-H
+play,3,0,lansm001,00,X,54(1)3/GDP
+play,3,1,stink001,01,CX,D9/9D
+play,3,1,andeb002,01,FX,FC1.2X3(15);B-1
+play,3,1,womat001,00,X,HR/9.1-H
+play,3,1,bellj001,21,BBCX,63/G
+play,3,1,gonzl001,32,BBCFBX,8/F8
+play,4,0,walkl001,00,X,S9
+play,4,0,cirij001,00,X,64(1)3/GDP
+play,4,0,heltt001,21,CBBX,D7/7D
+play,4,0,shumt001,20,BBX,T7.2-H
+play,4,0,peren001,12,CBCC,K/C
+play,4,1,durae001,32,BCBBFX,S7/7S
+play,4,1,finls001,10,BX,3/G.1-2
+play,4,1,lee-t002,10,BX,9/F9
+play,4,1,fox-a001,22,CFBFFBX,8/F8
+play,5,0,petrb001,22,BBCCS,K
+play,5,0,astap001,22,SFBBFX,9/F9D
+play,5,0,goodt001,01,CX,8/F8
+play,5,1,stink001,00,X,7/F7
+play,5,1,andeb002,10,BX,S8
+play,5,1,womat001,10,BX,8/F8
+play,5,1,bellj001,11,FBX,64(1)/FO
+play,6,0,lansm001,11,CBX,S/78
+play,6,0,walkl001,00,X,E4/G.1-2
+play,6,0,cirij001,01,CX,8/L8
+play,6,0,heltt001,31,BBCBB,W.2-3;1-2
+play,6,0,shumt001,10,BX,T7/7D.3-H;2-H(UR);1-H
+play,6,0,peren001,00,,NP
+sub,sprir001,"Russ Springer",1,9,1
+play,6,0,peren001,02,CFFX,FC6.3-H;B-1
+play,6,0,petrb001,22,CFBBFX,8(B)3(1)/FDP
+play,6,1,gonzl001,20,BBX,D/78D
+play,6,1,durae001,00,X,S8.2-H
+play,6,1,finls001,21,BBFX,9/F9D
+play,6,1,lee-t002,31,BBBCX,S8.1-2
+play,6,1,fox-a001,11,CBX,S8.2-H;1-2
+play,6,1,stink001,00,,NP
+sub,jimej001,"Jose Jimenez",0,9,1
+play,6,1,stink001,12,BFSS,K
+play,6,1,sprir001,00,,NP
+sub,harrl001,"Lenny Harris",1,9,11
+play,6,1,harrl001,01,FX,43/G
+play,7,0,jimej001,00,,NP
+sub,plesd001,"Dan Plesac",1,9,1
+com,"ej,buttb801,C,monte901,Balls and strikes"
+com,"D-Backs coach Brian Butterfield ejected by HP umpire Ed Montague in seventh"
+play,7,0,jimej001,12,FBCS,K
+play,7,0,goodt001,00,X,S5/BG5
+play,7,0,lansm001,21,BBFC,SB2
+play,7,0,lansm001,22,BBFCX,S.2-3
+play,7,0,walkl001,22,SSBBX,S8.3-H;1-3
+play,7,0,cirij001,22,BBFSX,3/FL
+play,7,0,heltt001,10,BX,8/F8
+play,7,1,womat001,01,CX,S9
+play,7,1,bellj001,32,BBCBCX,S9.1-3
+play,7,1,gonzl001,00,,NP
+sub,whitg001,"Gabe White",0,9,1
+play,7,1,gonzl001,10,BB,PB.3-H;1-2
+play,7,1,gonzl001,22,BBFCS,K
+play,7,1,durae001,00,,NP
+sub,colbg001,"Greg Colbrunn",1,4,11
+play,7,1,colbg001,02,CFFX,8/F8S
+play,7,1,finls001,01,SB,PB.2-3
+play,7,1,finls001,11,SBX,HR/8.3-H
+play,7,1,lee-t002,22,CBBFS,K
+play,8,0,shumt001,00,,NP
+sub,colbg001,"Greg Colbrunn",1,4,3
+play,8,0,shumt001,00,,NP
+sub,morgm001,"Mike Morgan",1,9,1
+play,8,0,shumt001,22,BBCSS,K
+play,8,0,peren001,01,CX,63/G
+play,8,0,petrb001,12,CFBX,63/G
+play,8,1,fox-a001,01,FX,63/G
+play,8,1,stink001,00,,NP
+sub,tavaj001,"Julian Tavarez",0,8,1
+play,8,1,stink001,00,,NP
+sub,maynb001,"Brent Mayne",0,9,2
+play,8,1,stink001,01,FX,E5/G
+play,8,1,morgm001,00,,NP
+sub,gilkb001,"Bernard Gilkey",1,9,11
+play,8,1,gilkb001,31,BBCBB,W.1-2
+play,8,1,womat001,00,,NP
+sub,friah001,"Hanley Frias",1,8,12
+play,8,1,womat001,01,FX,S7/7S.2-H(UR);1-2
+play,8,1,bellj001,10,BX,4(B)6(2)/LDP
+play,9,0,maynb001,00,,NP
+sub,milld002,"Damian Miller",1,8,2
+play,9,0,maynb001,00,,NP
+sub,swing001,"Greg Swindell",1,9,1
+play,9,0,maynb001,12,CBSX,E4/TH
+play,9,0,goodt001,21,BCBX,14/SH.1-2
+play,9,0,lansm001,00,,NP
+sub,kim-b001,"Byung-Hyun Kim",1,9,1
+play,9,0,lansm001,00,,NP
+sub,huntb002,"Brian L. Hunter",0,9,12
+play,9,0,lansm001,02,CCB,CS3(25)
+play,9,0,lansm001,32,CCBFBBB,W
+play,9,0,walkl001,32,BCBBCFX,S7.1-3
+play,9,0,cirij001,02,CSX,53/G
+data,er,astap001,4
+data,er,jimej001,2
+data,er,whitg001,1
+data,er,tavaj001,0
+data,er,andeb002,5
+data,er,sprir001,0
+data,er,plesd001,1
+data,er,morgm001,0
+data,er,swing001,0
+data,er,kim-b001,0

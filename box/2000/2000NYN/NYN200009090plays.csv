@@ -1,0 +1,82 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,12,1,,,,,0,4,CFBC,ruscg001,1,0,abreb001 strikes out. ,abreb001,0,
+,10,1,,,,,1,6,BX,ruscg001,1,0,,gland001,0,F
+,11,1,,,,,2,9,CBX,ruscg001,1,0,roles001 grounds out. ,roles001,0,G
+,11,1,,,,,3,3,BCX,persr001,1,0,,peret004,1,
+,10,1,,,,,4,5,BX,persr001,1,0,,belld001,1,L
+,32,1,alfoe001,,,,5,11,BSFBBB,persr001,0,0,alfoe001 walks. ,alfoe001,1,
+alfoe001 to 2B. ,12,1,piazm001,alfoe001,,,6,15,BSSX,persr001,0,0,piazm001 singles. ,piazm001,1,
+,32,1,piazm001,alfoe001,,,7,23,FCBFFBBX,persr001,1,0,,ventr001,1,L
+,12,2,,,,,8,13,CBSC,ruscg001,1,0,burrp001 strikes out. ,burrp001,0,
+,31,2,huntb001,,,,9,18,BBCBX,ruscg001,0,0,huntb001 singles. ,huntb001,0,
+huntb001 out. ,12,2,andem003,,,,10,22,CCBX,ruscg001,1,0,andem003 reaches on fielder's choice. ,andem003,0,
+,32,2,andem003,,,,11,28,BBCBFC,ruscg001,1,0,ariaa001 strikes out. ,ariaa001,0,
+,11,2,,,,,12,26,CBX,persr001,1,0,,zeilt001,1,F
+,22,2,,,,,13,33,BCFFFBC,persr001,1,0,hamid001 strikes out. ,hamid001,1,
+,22,2,,,,,14,39,CBBFFX,persr001,1,0,bordm001 grounds out. ,bordm001,1,G
+,22,3,print001,,,,15,33,CBBFX,ruscg001,0,0,print001 singles. ,print001,0,
+,12,3,print001,,,,16,37,SLBL,ruscg001,1,0,persr001 strikes out. ,persr001,0,F
+,22,3,print001,,,,17,42,BBCFX,ruscg001,1,0,,abreb001,0,L
+,22,3,print001,,,,18,47,BBCFX,ruscg001,1,0,,gland001,0,L
+,22,3,,,,,19,44,CFBBX,persr001,1,0,ruscg001 grounds out. ,ruscg001,1,G
+,11,3,peret004,,,,20,47,BCX,persr001,0,0,peret004 singles. ,peret004,1,
+,01,3,,,,,21,49,CX,persr001,2,0,Double Play. ,belld001,1,
+,22,4,,,,,22,53,BBSFFS,ruscg001,1,0,roles001 strikes out. ,roles001,0,
+,00,4,,,,,23,54,X,ruscg001,1,0,,burrp001,0,F
+,12,4,huntb001,,,,24,58,BCSX,ruscg001,0,0,huntb001 singles. ,huntb001,0,
+,20,4,huntb001,,,,25,61,BBX,ruscg001,1,0,andem003 grounds out. ,andem003,0,G
+,22,4,,,,,26,54,CBBFS,persr001,1,0,alfoe001 strikes out. ,alfoe001,1,
+,22,4,,,,,27,61,BSSBFFS,persr001,1,0,piazm001 strikes out. ,piazm001,1,
+,22,4,,,,,28,67,FBBFFC,persr001,1,0,ventr001 strikes out. ,ventr001,1,
+,11,5,,,,,29,64,BSX,ruscg001,1,0,,ariaa001,0,F
+,21,5,,,,,30,68,BBFX,ruscg001,1,0,,print001,0,L
+,22,5,persr001,,,,31,74,FCFBBX,ruscg001,0,0,persr001 singles. ,persr001,0,
+persr001 out. ,11,5,abreb001,,,,32,77,BCX,ruscg001,1,0,abreb001 reaches on fielder's choice. ,abreb001,0,
+,31,5,,,,,33,72,BFBBX,persr001,1,0,,zeilt001,1,F
+hamid001 out. ,20,5,,,,,34,75,BBX,persr001,1,0,hamid001 reaches on error. ,hamid001,1,F
+,11,5,,,,,35,78,BFX,persr001,1,0,bordm001 grounds out. ,bordm001,1,G
+,12,6,gland001,,,,36,81,CCBX,ruscg001,0,0,gland001 singles. ,gland001,0,
+,12,6,gland001,,,,37,85,FFBS,ruscg001,1,0,roles001 strikes out. ,roles001,0,
+,00,6,,gland001,,burrp001,38,86,B,ruscg001,0,0,gland001 steals 2B. ,burrp001,0,
+gland001 scores. ,22,6,,burrp001,,,39,91,BFCBX,ruscg001,0,1,burrp001 doubles. ,burrp001,0,
+,30,6,huntb001,burrp001,,,40,95,IIII,ruscg001,0,0,huntb001 intentionally walks. ,huntb001,0,
+burrp001 to 3B. huntb001 to 2B. ,01,6,andem003,huntb001,burrp001,,41,97,CX,ruscg001,0,0,andem003 singles. ,andem003,0,
+,00,6,andem003,huntb001,burrp001,,42,98,X,ruscg001,1,0,,ariaa001,0,P
+andem003 out. ,11,6,print001,huntb001,burrp001,,43,101,CBX,ruscg001,1,0,print001 reaches on fielder's choice. ,print001,0,
+,32,6,franm001,,,,45,87,BSFFBBFFB,persr001,0,0,franm001 walks. ,franm001,1,
+,11,6,franm001,,,,46,90,BCX,persr001,1,0,,peret004,1,P
+franm001 to 2B. ,20,6,,franm001,,,47,93,BBX,persr001,1,0,belld001 grounds out. ,belld001,1,G
+franm001 scores. ,20,6,,alfoe001,,,48,96,BBX,persr001,0,1,alfoe001 doubles. ,alfoe001,1,
+,00,6,,alfoe001,,,49,97,X,persr001,1,0,,piazm001,1,P
+,32,7,lee-t002,,,,52,6,CBFBBX,wendt001,0,0,lee-t002 singles. ,lee-t002,0,
+lee-t002 to 3B. ,31,7,,abreb001,lee-t002,,53,11,BBSBX,wendt001,0,0,abreb001 doubles. ,abreb001,0,
+lee-t002 scores. ,02,7,,abreb001,,,54,16,CFFFX,wendt001,1,1,gland001 hits sacrifice fly. ,gland001,0,
+,30,7,roles001,abreb001,,,55,20,IIII,wendt001,0,0,roles001 intentionally walks. ,roles001,0,
+abreb001 scores. roles001 to 2B. ,12,7,burrp001,roles001,,,56,24,FCBX,wendt001,0,1,burrp001 singles. ,burrp001,0,
+,01,7,burrp001,roles001,,,57,26,CX,wendt001,1,0,,huntb001,0,
+roles001 to 3B. burrp001 to 2B. ,00,7,andem003,burrp001,roles001,,59,1,X,cookd001,0,0,andem003 reaches on error. ,andem003,0,G
+,22,7,andem003,burrp001,roles001,,60,7,CFBFBS,cookd001,1,0,ariaa001 strikes out. ,ariaa001,0,
+,01,7,,,,,62,2,CX,jacqt001,1,0,ventr001 grounds out. ,ventr001,1,G
+,12,7,,,,,63,6,CBCC,jacqt001,1,0,zeilt001 strikes out. ,zeilt001,1,
+,21,7,,agbab001,,,67,4,BBFX,brocc001,0,0,agbab001 doubles. ,agbab001,1,
+,00,7,,agbab001,,,68,5,X,brocc001,1,0,,bordm001,1,P
+,01,8,,,,,70,9,SX,cookd001,1,0,print001 grounds out. ,print001,0,G
+,12,8,,,,,71,13,SSBS,cookd001,1,0,peret003 strikes out. ,peret003,0,
+,32,8,abreb001,,,,72,21,BSBCBFFX,cookd001,0,0,abreb001 singles. ,abreb001,0,
+,21,8,abreb001,,,,73,25,BBCX,cookd001,1,0,gland001 grounds out. ,gland001,0,G
+,10,8,,,,,77,2,BX,vosbe001,1,0,,paytj001,1,
+,12,8,,,,,80,4,LFBS,padiv001,1,0,mcewj001 strikes out. ,mcewj001,1,
+,00,8,,,,,81,5,X,padiv001,0,1,belld001 homers. ,belld001,1,
+,32,8,alfoe001,,,,82,11,BBBCFB,padiv001,0,0,alfoe001 walks. ,alfoe001,1,
+,12,8,alfoe001,,,,83,16,BSCFX,padiv001,1,0,,piazm001,1,P
+,22,9,,roles001,,,86,5,SBBFX,mahop001,0,0,roles001 doubles. ,roles001,0,
+,31,9,burrp001,roles001,,,88,5,BSBBB,benia001,0,0,burrp001 walks. ,burrp001,0,
+roles001 scores. sefck001 scores. ,22,9,,,,,90,10,LBFBX,benia001,0,3,huntb001 homers. ,huntb001,0,
+,11,9,,,,,91,13,BCX,benia001,1,0,andem003 grounds out. ,andem003,0,G
+,22,9,,,,,94,5,BCCBS,joneb004,1,0,duceb001 strikes out. ,duceb001,0,
+,31,9,print001,,,,95,10,CBBBB,joneb004,0,0,print001 walks. ,print001,0,
+,12,9,print001,,,,96,14,BFFX,joneb004,1,0,,peret003,0,F
+,31,9,,,,,99,5,BBCBX,branj001,1,0,ventr001 grounds out. ,ventr001,1,G
+,12,9,,,,,100,9,BCCX,branj001,1,0,,zeilt001,1,F
+,00,9,,,,,101,10,X,branj001,0,1,agbab001 homers. ,agbab001,1,
+,12,9,,,,,102,14,CSBS,branj001,1,0,bordm001 strikes out. ,bordm001,1,

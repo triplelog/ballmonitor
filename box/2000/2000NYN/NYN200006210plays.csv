@@ -1,0 +1,84 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,12,1,,,,,0,5,CBSFS,leita001,1,0,gland001 strikes out. ,gland001,0,
+,12,1,gantr001,,,,1,10,CSFBX,leita001,0,0,gantr001 singles. ,gantr001,0,
+gantr001 to 2B. ,30,1,roles001,gantr001,,,2,14,BBBB,leita001,0,0,roles001 walks. ,roles001,0,
+,02,1,,gantr001,,,3,17,CFX,leita001,2,0,Double Play. ,liebm001,0,
+,12,1,,,,,4,4,CFBC,schic002,1,0,moram002 strikes out. ,moram002,1,
+,32,1,,,,,5,10,BBBCSC,schic002,1,0,belld001 strikes out. ,belld001,1,
+,32,1,alfoe001,,,,6,16,CFBBBB,schic002,0,0,alfoe001 walks. ,alfoe001,1,
+alfoe001 scores. ,01,1,,,,,7,18,CX,schic002,0,2,piazm001 homers. ,piazm001,1,
+,12,1,,,,,8,24,SCFFBX,schic002,1,0,ventr001 grounds out. ,ventr001,1,G
+,01,2,,,,,9,19,CX,leita001,1,0,,jordk001,0,
+,12,2,,,,,10,23,FBFS,leita001,1,0,burrp001 strikes out. ,burrp001,0,
+,12,2,huntb001,,,,11,27,BFFX,leita001,0,0,huntb001 singles. ,huntb001,0,
+,01,2,huntb001,,,,12,29,CX,leita001,1,0,,ariaa001,0,P
+,21,2,zeilt001,,,,13,28,BBCX,schic002,0,0,zeilt001 singles. ,zeilt001,1,
+zeilt001 to 3B. ,02,2,,paytj001,zeilt001,,14,31,CFX,schic002,0,0,paytj001 doubles. ,paytj001,1,
+zeilt001 scores. paytj001 to 3B. ,00,2,,,paytj001,,15,32,X,schic002,1,1,tynej001 grounds out. ,tynej001,1,G
+,02,2,,,paytj001,,16,35,SFC,schic002,1,0,leita001 strikes out. ,leita001,1,
+,01,2,,,paytj001,,17,37,CX,schic002,1,0,,moram002,1,F
+,02,3,,,,,18,33,CFFC,leita001,1,0,schic002 strikes out. ,schic002,0,
+,32,3,gland001,,,,19,39,BFBBCX,leita001,0,0,gland001 reaches on error. ,gland001,0,
+gland001 to 3B. ,00,3,,gantr001,gland001,,20,40,X,leita001,0,0,gantr001 doubles. ,gantr001,0,
+,32,3,roles001,gantr001,gland001,,21,47,BBBCFFB,leita001,0,0,roles001 walks. ,roles001,0,
+gland001 scores. gantr001 scores. roles001 to 3B. ,11,3,,liebm001,roles001,,22,50,FBX,leita001,0,2,liebm001 doubles. ,liebm001,0,
+roles001 scores. ,00,3,,liebm001,,,23,51,X,leita001,1,1,jordk001 hits sacrifice fly. ,jordk001,0,
+,02,3,,liebm001,,,24,54,FSS,leita001,1,0,burrp001 strikes out. ,burrp001,0,
+,22,3,,,,,25,42,CCBBX,schic002,1,0,belld001 grounds out. ,belld001,1,G
+,21,3,,,,,26,46,BSBX,schic002,1,0,,alfoe001,1,F
+,00,3,,,,,27,47,X,schic002,1,0,piazm001 grounds out. ,piazm001,1,G
+,02,4,huntb001,,,,28,59,FCFFX,leita001,0,0,huntb001 singles. ,huntb001,0,
+,11,4,huntb001,,,,29,62,BCX,leita001,1,0,,ariaa001,0,L
+,00,4,huntb001,,,,30,63,X,leita001,1,0,,schic002,0,P
+huntb001 to 2B. ,00,4,,huntb001,,gland001,31,64,B,leita001,0,0,Wild Pitch. ,gland001,0,
+,21,4,,huntb001,,,32,68,BSBX,leita001,1,0,,gland001,0,F
+,32,4,,,,,33,53,CFBBBX,schic002,1,0,,ventr001,1,F
+,22,4,,,,,34,59,CCBBFX,schic002,1,0,zeilt001 grounds out. ,zeilt001,1,G
+,22,4,,,,,35,64,SBBSS,schic002,1,0,paytj001 strikes out. ,paytj001,1,
+,32,5,,,,,36,74,BBSFBS,leita001,1,0,gantr001 strikes out. ,gantr001,0,
+,32,5,roles001,,,,37,81,CFBBBFB,leita001,0,0,roles001 walks. ,roles001,0,
+,21,5,roles001,,,,38,85,BBCX,leita001,1,0,,liebm001,0,F
+,01,5,roles001,,,,39,87,CX,leita001,1,0,jordk001 grounds out. ,jordk001,0,G
+,32,5,,,,,40,72,CBBBCFFX,schic002,1,0,tynej001 grounds out. ,tynej001,1,G
+,12,5,leita001,,,,41,77,CFFBX,schic002,0,0,leita001 singles. ,leita001,1,
+leita001 to 2B. ,21,5,moram002,leita001,,,42,81,BCBX,schic002,0,0,moram002 singles. ,moram002,1,
+,11,5,moram002,leita001,,,43,84,FBX,schic002,1,0,,belld001,1,F
+,10,5,moram002,leita001,,,44,86,BX,schic002,1,0,,alfoe001,1,F
+,01,6,,,,,45,89,FX,leita001,0,1,burrp001 homers. ,burrp001,0,
+,22,6,,,,,46,94,SBBSS,leita001,1,0,huntb001 strikes out. ,huntb001,0,
+,12,6,,,,,47,98,BCFS,leita001,1,0,ariaa001 strikes out. ,ariaa001,0,
+,00,6,,,,,48,99,X,leita001,1,0,,schic002,0,F
+,22,6,,,,,49,93,CBFFFBC,schic002,1,0,piazm001 strikes out. ,piazm001,1,
+,11,6,,,,,50,96,CBX,schic002,1,0,,ventr001,1,F
+,21,6,,,,,51,100,BSBX,schic002,1,0,zeilt001 grounds out. ,zeilt001,1,G
+,01,7,,,,,52,101,CX,leita001,1,0,,gland001,0,F
+,20,7,,,,,53,104,BBX,leita001,0,1,gantr001 homers. ,gantr001,0,
+,22,7,roles001,,,,54,109,FBFBX,leita001,0,0,roles001 singles. ,roles001,0,
+,00,7,roles001,,,,56,1,X,wendt001,1,0,,liebm001,0,F
+roles001 to 2B. ,20,7,jordk001,roles001,,,57,4,BBX,wendt001,0,0,jordk001 singles. ,jordk001,0,
+,22,7,jordk001,roles001,,,58,9,BBCFX,wendt001,1,0,,burrp001,0,F
+,01,7,,,,,59,102,FX,schic002,1,0,,paytj001,1,G
+,12,7,,,,,60,106,FBFX,schic002,1,0,,tynej001,1,F
+,22,7,franm001,,,,62,113,CSBFBFX,schic002,0,0,franm001 singles. ,franm001,1,
+franm001 out. ,00,7,moram002,,,,63,114,X,schic002,1,0,moram002 reaches on fielder's choice. ,moram002,1,
+,22,8,,,,,65,5,CBBFX,cookd001,1,0,huntb001 grounds out. ,huntb001,0,G
+,22,8,,,,,66,11,BCBCFS,cookd001,1,0,ariaa001 strikes out. ,ariaa001,0,
+,22,8,,,,,68,16,BCBFX,cookd001,1,0,sefck001 grounds out. ,sefck001,0,G
+,31,8,belld001,,,,70,5,BBCBX,brocc001,0,0,belld001 singles. ,belld001,1,
+belld001 to 3B. ,32,8,alfoe001,,belld001,,71,15,CBCFFBBFFX,brocc001,0,0,alfoe001 singles. ,alfoe001,1,
+,32,8,,alfoe001,belld001,,72,22,BBFFFBS,brocc001,1,0,piazm001 strikes out. alfoe001 steals 2B. ,piazm001,1,
+belld001 scores. alfoe001 scores. ,21,8,ventr001,,,,74,4,BSBX,holzm001,0,2,ventr001 singles. ,ventr001,1,
+ventr001 to 2B. ,31,8,zeilt001,ventr001,,,76,5,BCBBX,gomew001,0,0,zeilt001 singles. ,zeilt001,1,
+,12,8,zeilt001,ventr001,,,77,10,CSBFS,gomew001,1,0,paytj001 strikes out. ,paytj001,1,
+,22,8,zeilt001,ventr001,,,78,15,BSBSX,gomew001,1,0,tynej001 grounds out. ,tynej001,1,G
+,32,9,gland001,,,,80,6,BBBCCX,franj001,0,0,gland001 singles. ,gland001,0,
+gland001 to 3B. ,22,9,,gantr001,gland001,,81,12,SBSBFX,franj001,0,0,gantr001 doubles. ,gantr001,0,
+,22,9,,gantr001,gland001,,82,17,BSBSS,franj001,1,0,roles001 strikes out. ,roles001,0,
+,30,9,liebm001,gantr001,gland001,,83,21,IIII,franj001,0,0,liebm001 intentionally walks. ,liebm001,0,
+gland001 scores. gantr001 to 3B. liebm001 to 2B. ,32,9,jordk001,liebm001,gantr001,,84,28,BBBCFFB,franj001,0,1,jordk001 walks. ,jordk001,0,
+gantr001 scores. liebm001 scores. jordk001 scores. ,22,9,,,,,87,5,CBBFX,benia001,0,4,burrp001 homers. ,burrp001,0,
+,11,9,,,,,88,8,BSX,benia001,1,0,,huntb001,0,P
+,11,9,,,,,90,3,BSX,rodrr004,1,0,,ariaa001,0,F
+,02,9,,,,,93,19,CFFS,gomew001,1,0,mcewj001 strikes out. ,mcewj001,1,
+,02,9,,,,,94,22,CLS,gomew001,1,0,moram002 strikes out. ,moram002,1,
+,10,9,,,,,95,24,BX,gomew001,1,0,belld001 grounds out. ,belld001,1,G

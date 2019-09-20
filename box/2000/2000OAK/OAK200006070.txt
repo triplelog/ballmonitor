@@ -1,0 +1,149 @@
+version,2
+info,visteam,SDN
+info,hometeam,OAK
+info,site,OAK01
+info,date,2000/06/07
+info,number,0
+info,starttime,12:35PM
+info,daynight,day
+info,usedh,true
+info,umphome,lampi901
+info,ump1b,guccc901
+info,ump2b,mealj901
+info,ump3b,younl901
+info,pitches,pitches
+info,temp,64
+info,winddir,fromcf
+info,windspeed,12
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,175
+info,attendance,23408
+info,wp,servs001
+info,lp,clemm001
+info,save,joned001
+start,river002,"Ruben Rivera",0,1,8
+start,marta001,"Al Martin",0,2,7
+start,gwynt001,"Tony Gwynn",0,3,10
+start,nevip001,"Phil Nevin",0,4,5
+start,sprae001,"Ed Sprague",0,5,9
+start,boonb002,"Bret Boone",0,6,4
+start,magad001,"Dave Magadan",0,7,3
+start,hernc001,"Carlos A. Hernandez",0,8,2
+start,gomec001,"Chris Gomez",0,9,6
+start,clemm001,"Matt Clement",0,0,1
+start,longt002,"Terrence Long",1,1,8
+start,velar001,"Randy Velarde",1,2,4
+start,giamj001,"Jason Giambi",1,3,3
+start,staim001,"Matt Stairs",1,4,10
+start,grieb001,"Ben Grieve",1,5,7
+start,giamj002,"Jeremy Giambi",1,6,9
+start,tejam001,"Miguel Tejada",1,7,6
+start,chave001,"Eric Chavez",1,8,5
+start,hernr002,"Ramon Hernandez",1,9,2
+start,muldm001,"Mark Mulder",1,0,1
+play,1,0,river002,00,X,53/G
+play,1,0,marta001,00,X,43/G
+play,1,0,gwynt001,30,BBBB,W
+play,1,0,nevip001,12,CFBFX,D9/9D.1-H
+play,1,0,sprae001,01,CX,HR/7.2-H
+play,1,0,boonb002,01,CX,63/G
+play,1,1,longt002,31,BBBCX,S9
+play,1,1,velar001,10,BX,4/FL
+play,1,1,giamj001,01,CX,S9.1-2
+play,1,1,staim001,20,BBX,S9.2-H;1X3(5);B-2#
+play,1,1,grieb001,22,BCSBX,63/G
+play,2,0,magad001,12,BCCFS,K
+play,2,0,hernc001,00,X,9/F9D
+play,2,0,gomec001,32,BBBCFX,43/G
+play,2,1,giamj002,30,BBBB,W
+play,2,1,tejam001,00,X,53/G.1-2
+play,2,1,chave001,02,CFFFS,K
+play,2,1,hernr002,31,BFBBB,W
+play,2,1,longt002,22,CBSBX,S7/7S.2-H;1-2
+play,2,1,velar001,32,BBBCCB,W.2-3;1-2
+play,2,1,giamj001,31,BBBCB,W.3-H;2-3;1-2
+play,2,1,staim001,20,BBX,31/G
+play,3,0,river002,32,BSBSBFB,W
+play,3,0,marta001,00,X,3/G.1-2
+play,3,0,gwynt001,11,FBX,S/78.2-H
+play,3,0,nevip001,10,BX,64(1)3/GDP
+play,3,1,grieb001,32,FBBSBX,31/G
+play,3,1,giamj002,00,X,7/L7
+play,3,1,tejam001,22,CBBFS,K
+play,4,0,sprae001,00,X,S9
+play,4,0,boonb002,00,X,4/P4
+play,4,0,magad001,10,BX,3/G.1-2
+play,4,0,hernc001,31,BBFBB,W
+play,4,0,gomec001,00,X,8/F8
+play,4,1,chave001,11,CBX,S/78
+play,4,1,hernr002,01,CX,13/SH.1-2
+play,4,1,longt002,32,CBBFBFB,W
+play,4,1,velar001,20,BBX,E5/G.2-3;1-2
+play,4,1,giamj001,12,SBCX,HR/9.3-H;2-H;1-H(UR)
+play,4,1,staim001,31,BBBCX,S9
+play,4,1,grieb001,00,,NP
+sub,kolbb001,"Brandon Kolb",0,0,1
+play,4,1,grieb001,12,CCBX,S7.1-2
+play,4,1,giamj002,32,BBBCCS,K
+play,4,1,tejam001,12,CFFBS,K
+play,5,0,river002,00,X,E5/G
+play,5,0,marta001,01,CX,1/P1
+play,5,0,gwynt001,21,BFBX,S9.1-3
+play,5,0,nevip001,00,,NP
+sub,servs001,"Scott Service",1,0,1
+play,5,0,nevip001,12,BCSX,54(1)3/GDP
+play,5,1,chave001,30,BBBB,W
+play,5,1,hernr002,11,CB1,PO1(E1).1-3
+play,5,1,hernr002,11,CB1X,S8.3-H
+play,5,1,longt002,11,BCX,6/P6
+play,5,1,velar001,22,CBFBX,64(1)/FO
+play,5,1,giamj001,11,BCX,D7.1XH(762)
+play,6,0,sprae001,10,BX,5/P5
+play,6,0,boonb002,01,CX,S7
+play,6,0,magad001,12,CCBS,K
+play,6,0,hernc001,00,X,7/F7S
+play,6,1,staim001,00,,NP
+sub,guzmd001,"Domingo Guzman",0,0,1
+play,6,1,staim001,10,BX,S9
+play,6,1,grieb001,31,BBBCX,54(1)/FO
+play,6,1,giamj002,11,BFH,HP.1-2
+play,6,1,tejam001,32,BBBCSB,W.2-3;1-2
+play,6,1,chave001,22,BFSBFFX,3(B)6(2)/LDP
+play,7,0,gomec001,00,X,S8
+play,7,0,river002,22,BCBCX,S.1-2
+play,7,0,marta001,32,BSBSBX,36(1)/FO.2-3
+play,7,0,gwynt001,30,BBBB,W.1-2
+play,7,0,nevip001,00,,NP
+sub,joned001,"Doug Jones",1,0,1
+play,7,0,nevip001,00,X,8/L8
+play,7,0,sprae001,22,CCFBBS,K
+play,7,1,hernr002,11,FBH,HP
+play,7,1,longt002,00,,NP
+sub,almac001,"Carlos Almanzar",0,0,1
+play,7,1,longt002,32,BBBCFX,13/G.1-2
+play,7,1,velar001,22,BCCFBS,K
+play,7,1,giamj001,22,BBCCX,HR/78.2-H
+play,7,1,staim001,22,FBBFC,K/C
+play,8,0,boonb002,01,CX,31/G
+play,8,0,magad001,11,CBX,7/F7
+play,8,0,hernc001,10,BX,S8
+play,8,0,gomec001,00,X,64(1)/FO
+play,8,1,grieb001,32,BCCBBC,K/C
+play,8,1,giamj002,10,BX,7/F7
+play,8,1,tejam001,01,CX,S/78
+play,8,1,chave001,00,X,3/G
+play,9,0,river002,00,,NP
+sub,chrir001,"Ryan Christenson",1,5,7
+play,9,0,river002,12,SCBX,63/G
+play,9,0,marta001,12,SBSFC,K/C
+play,9,0,gwynt001,12,CSFBX,S/78
+play,9,0,nevip001,00,X,54(1)/FO
+data,er,clemm001,6
+data,er,kolbb001,1
+data,er,guzmd001,1
+data,er,almac001,1
+data,er,muldm001,4
+data,er,servs001,0
+data,er,joned001,0

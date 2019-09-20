@@ -1,0 +1,156 @@
+version,2
+info,visteam,FLO
+info,hometeam,SFN
+info,site,SFO03
+info,date,2000/08/22
+info,number,0
+info,starttime,7:15PM
+info,daynight,night
+info,usedh,false
+info,umphome,everm901
+info,ump1b,danlk901
+info,ump2b,dimum901
+info,ump3b,gormb901
+info,pitches,pitches
+info,temp,62
+info,winddir,ltor
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,181
+info,attendance,40930
+info,wp,burna001
+info,lp,estes001
+info,save,alfoa001
+start,castl001,"Luis Castillo",0,1,4
+start,bergd002,"Dave Berg",0,2,6
+start,millk005,"Kevin Millar",0,3,7
+start,wilsp002,"Preston Wilson",0,4,8
+start,lowem001,"Mike Lowell",0,5,5
+start,lee-d002,"Derrek Lee",0,6,3
+start,smitm004,"Mark Smith",0,7,9
+start,castr002,"Ramon Castro",0,8,2
+start,burna001,"A.J. Burnett",0,9,1
+start,benam001,"Marvin Benard",1,1,8
+start,muelb001,"Bill Mueller",1,2,5
+start,bondb001,"Barry Bonds",1,3,7
+start,kentj001,"Jeff Kent",1,4,4
+start,snowj001,"J.T. Snow",1,5,3
+start,burke001,"Ellis Burks",1,6,9
+start,aurir001,"Rich Aurilia",1,7,6
+start,estab001,"Bobby Estalella",1,8,2
+start,estes001,"Shawn Estes",1,9,1
+play,1,0,castl001,32,BFBBSB,W
+play,1,0,bergd002,01,CX,S7.1-2
+play,1,0,millk005,31,BBBCB,W.2-3;1-2
+play,1,0,wilsp002,12,BSSX,12(3)/FO.2-3;1-2
+play,1,0,lowem001,20,BBX,D7/7D.3-H;2-H;1-3
+play,1,0,lee-d002,00,X,13/G.3-H;2-3
+play,1,0,smitm004,22,CCBBC,K/C
+play,1,1,benam001,12,BCSX,T/78
+play,1,1,muelb001,32,CBBFBB,W
+play,1,1,bondb001,31,BBCBX,16(1)3/GDP.3-H
+play,1,1,kentj001,10,BX,8/F8
+play,2,0,castr002,11,CBX,S/78S
+play,2,0,burna001,32,CLBBBX,24/SH.1-2
+play,2,0,castl001,00,X,FC1.2X3(82);B-1
+play,2,0,bergd002,00,X,4/L4
+play,2,1,snowj001,12,BCCFS,K
+play,2,1,burke001,22,CFBFBX,D7/7S
+play,2,1,aurir001,22,BCSBX,D7/7S.2-H
+play,2,1,estab001,11,SBX,S8.2XH(82)#
+play,2,1,estes001,22,BCSBX,53/G
+play,3,0,millk005,32,BCBBFFB,W
+play,3,0,wilsp002,00,X,S.1-2
+play,3,0,lowem001,22,BCBFFX,S7/7S.2-H;1-3
+play,3,0,lee-d002,22,CBSBS,K
+play,3,0,smitm004,11,BSX,S8/8S.3-H;1-2
+play,3,0,castr002,32,BSFBBX,64(1)3/GDP
+play,3,1,benam001,31,BBBCX,8/F8
+play,3,1,muelb001,31,BFBBB,W
+play,3,1,bondb001,22,BCFBS,K
+play,3,1,kentj001,32,FFBBBC,K/C
+play,4,0,burna001,32,BSCBBX,S8/8S
+play,4,0,castl001,31,BBFBX,S8.1-2
+play,4,0,bergd002,11,CBX,64(1)3/GDP.2-3
+play,4,0,millk005,11,CBX,HR/7.3-H
+play,4,0,wilsp002,00,,NP
+sub,fulta001,"Aaron Fultz",1,9,1
+play,4,0,wilsp002,21,FBBX,S7/7S
+play,4,0,lowem001,21,BBCX,8/F8
+play,4,1,snowj001,00,X,3/G
+play,4,1,burke001,10,BX,8/F8
+play,4,1,aurir001,12,CBCS,K
+play,5,0,lee-d002,22,CCBBC,K/C
+com,"ej,lee-d002,P,everm901,Balls and strikes"
+com,"Derrek Lee ejected by HP umpire Mike Everitt"
+play,5,0,smitm004,12,SCFBS,K
+play,5,0,castr002,10,BX,D/78D
+play,5,0,burna001,31,CBBBX,S8.2-3
+play,5,0,castl001,32,CBBBFX,3/G#
+play,5,1,estab001,00,,NP
+sub,millk005,"Kevin Millar",0,3,3
+play,5,1,estab001,00,,NP
+sub,kotsm001,"Mark Kotsay",0,6,9
+play,5,1,estab001,00,,NP
+sub,smitm004,"Mark Smith",0,7,7
+play,5,1,estab001,10,BX,63/G
+play,5,1,fulta001,22,BBCSX,43/G
+play,5,1,benam001,31,BBCBB,W
+play,5,1,muelb001,21,BBCX,8/F8
+play,6,0,bergd002,10,BX,S7/7S
+play,6,0,millk005,22,BCBFS,K
+play,6,0,wilsp002,12,BCFS,K
+play,6,0,lowem001,31,BCBBB,W.1-2
+play,6,0,kotsm001,00,X,4/L4
+play,6,1,bondb001,21,CBBX,7/F7D
+play,6,1,kentj001,32,SBCBFBFC,K/C
+play,6,1,snowj001,22,BBFFC,K/C
+play,7,0,smitm004,00,,NP
+sub,embra001,"Alan Embree",1,9,1
+play,7,0,smitm004,12,CBSC,K/C
+play,7,0,castr002,22,CFBFBX,8/F8
+play,7,0,burna001,22,BBCSX,53/BG
+play,7,1,burke001,21,BFBX,4/P4
+play,7,1,aurir001,11,SBX,7/F7
+play,7,1,estab001,22,BCCBC,K/C
+play,8,0,castl001,22,BCBFX,63/G
+play,8,0,bergd002,02,CSS,K
+play,8,0,millk005,10,BH,HP
+play,8,0,wilsp002,31,BBBCX,53/G
+play,8,1,embra001,00,,NP
+sub,cresf001,"Felipe Crespo",1,9,11
+play,8,1,cresf001,00,,NP
+sub,miced001,"Dan Miceli",0,9,1
+play,8,1,cresf001,12,CSFBX,S
+play,8,1,benam001,12,FBFX,6/P6
+play,8,1,muelb001,00,X,31/G.1-2
+play,8,1,bondb001,11,BCX,HR/7.2-H
+play,8,1,kentj001,00,X,S/78
+play,8,1,snowj001,02,CCX,7/L7
+play,9,0,lowem001,00,,NP
+sub,cresf001,"Felipe Crespo",1,9,3
+play,9,0,lowem001,00,,NP
+sub,henrd002,"Doug Henry",1,5,1
+play,9,0,lowem001,12,CBCS,K
+play,9,0,kotsm001,32,BBBCFFB,W
+play,9,0,smitm004,22,CBBFS,K
+play,9,0,castr002,22,CBCFBS,K
+play,9,1,burke001,00,,NP
+sub,fox-a001,"Andy Fox",0,9,7
+play,9,1,burke001,00,,NP
+sub,alfoa001,"Antonio Alfonseca",0,7,1
+play,9,1,burke001,21,CBBX,HR/78
+play,9,1,aurir001,11,BCX,63/G
+play,9,1,estab001,00,,NP
+sub,riosa001,"Armando Rios",1,8,11
+play,9,1,riosa001,11,BCX,7/L7
+play,9,1,cresf001,00,X,3/G
+data,er,burna001,2
+data,er,miced001,2
+data,er,alfoa001,1
+data,er,estes001,7
+data,er,fulta001,0
+data,er,embra001,0
+data,er,henrd002,0

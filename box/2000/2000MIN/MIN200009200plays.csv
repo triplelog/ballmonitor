@@ -1,0 +1,109 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,01,1,,,,,0,2,CX,romej001,1,0,alicl001 grounds out. ,alicl001,0,G
+,21,1,,,,,1,6,FBBX,romej001,1,0,grees002 grounds out. ,grees002,0,G
+,30,1,kaplg001,,,,2,10,BBBB,romej001,0,0,kaplg001 walks. ,kaplg001,0,
+,22,1,kaplg001,,,,3,15,FBBSX,romej001,1,0,sierr001 grounds out. ,sierr001,0,G
+,10,1,,,,,4,2,BX,david002,1,0,,guzmc001,1,F
+,30,1,rival001,,,,5,6,BBBB,david002,0,0,rival001 walks. ,rival001,1,
+,22,1,,,,,6,12,CBCFBX,david002,2,0,Double Play. ,barnj001,1,
+,12,2,,,,,7,19,BCSS,romej001,1,0,leder001 strikes out. ,leder001,0,
+,22,2,,,,,8,24,CSBBC,romej001,1,0,shels001 strikes out. ,shels001,0,
+,32,2,,,,,9,31,BSBFBFS,romej001,1,0,lambm001 strikes out. ,lambm001,0,
+,30,2,coomr001,,,,10,16,BBBB,david002,0,0,coomr001 walks. ,coomr001,1,
+,32,2,coomr001,,,,11,27,BBBCSFFFFFX,david002,1,0,,lecrm001,1,P
+,02,2,,,,,12,32,CSFFX,david002,2,0,Double Play. ,huntt001,1,
+,11,3,,,,,13,34,CBX,romej001,1,0,waszb001 grounds out. ,waszb001,0,G
+,22,3,,,,,14,40,SBFBFS,romej001,1,0,drank001 strikes out. ,drank001,0,
+,31,3,alicl001,,,,15,45,CBBBB,romej001,0,0,alicl001 walks. ,alicl001,0,
+alicl001 to 3B. ,10,3,grees002,,alicl001,,16,47,BX,romej001,0,0,grees002 singles. ,grees002,0,
+,00,3,grees002,,alicl001,,17,48,X,romej001,1,0,kaplg001 grounds out. ,kaplg001,0,G
+,32,3,buchb002,,,,18,38,CBBFBB,david002,0,0,buchb002 walks. ,buchb002,1,
+buchb002 to 2B. ,31,3,blakc001,buchb002,,,19,43,BCBBB,david002,0,0,blakc001 walks. ,blakc001,1,
+buchb002 to 3B. blakc001 to 2B. ,00,3,,blakc001,buchb002,,20,44,X,david002,1,0,Sacrifice bunt by moelc001.,moelc001,1,
+,11,3,,blakc001,buchb002,,21,47,FBX,david002,1,0,guzmc001 grounds out. ,guzmc001,1,G
+,00,3,,blakc001,buchb002,,22,48,X,david002,1,0,rival001 grounds out. ,rival001,1,G
+,12,4,sierr001,,,,23,52,FFBX,romej001,0,0,sierr001 singles. ,sierr001,0,
+,22,4,sierr001,,,,24,57,SFBBS,romej001,1,0,leder001 strikes out. ,leder001,0,
+,10,4,,,,,25,59,BX,romej001,2,0,Double Play. ,shels001,0,
+,32,4,,barnj001,,,26,55,BCCFBBX,david002,0,0,barnj001 doubles. ,barnj001,1,
+barnj001 to 3B. ,10,4,,,barnj001,,27,57,BX,david002,1,0,coomr001 grounds out. ,coomr001,1,G
+,02,4,,,barnj001,,28,60,FSS,david002,1,0,lecrm001 strikes out. ,lecrm001,1,
+barnj001 scores. ,00,4,huntt001,,,,29,61,X,david002,0,1,huntt001 singles. ,huntt001,1,
+huntt001 to 2B. ,20,4,buchb002,huntt001,,,30,64,BBX,david002,0,0,buchb002 singles. ,buchb002,1,
+,12,4,buchb002,huntt001,,,31,69,BCFFS,david002,1,0,blakc001 strikes out. ,blakc001,1,
+,01,5,,,,,32,61,CX,romej001,1,0,,lambm001,0,F
+,21,5,,,,,33,65,BBCX,romej001,1,0,,waszb001,0,F
+,02,5,,,,,34,68,SCS,romej001,1,0,drank001 strikes out. ,drank001,0,
+,11,5,,,,,35,72,FBX,david002,1,0,,moelc001,1,P
+,22,5,,,,,36,79,BCCFBFX,david002,1,0,,guzmc001,1,P
+,21,5,rival001,,,,37,83,BBFX,david002,0,0,rival001 singles. ,rival001,1,
+,11,5,rival001,,,,38,86,BFX,david002,1,0,,barnj001,1,F
+,11,6,alicl001,,,,39,71,CBX,romej001,0,0,alicl001 singles. ,alicl001,0,
+,01,6,alicl001,,,,40,73,LX,romej001,1,0,,grees002,0,P
+alicl001 to 2B. ,21,6,kaplg001,alicl001,,,41,77,BSBX,romej001,0,0,kaplg001 singles. ,kaplg001,0,
+,01,6,kaplg001,alicl001,,,42,79,FX,romej001,1,0,,sierr001,0,P
+alicl001 scores. kaplg001 to 2B. ,12,6,leder001,kaplg001,,,43,83,BFSX,romej001,0,1,leder001 singles. ,leder001,0,
+,00,6,leder001,kaplg001,,,44,84,X,romej001,1,0,,shels001,0,F
+,21,6,,,,,45,90,BFBX,david002,1,0,,coomr001,1,F
+,31,6,,lecrm001,,,46,95,BFBBX,david002,0,0,lecrm001 doubles. ,lecrm001,1,
+lecrm001 to 3B. ,00,6,,,lecrm001,huntt001,47,96,B,david002,0,0,Wild Pitch. ,huntt001,1,
+lecrm001 scores. ,12,6,huntt001,,,,48,100,BSFX,david002,0,1,huntt001 singles. ,huntt001,1,
+huntt001 to 2B. ,11,6,,huntt001,,buchb002,49,103,CBB,david002,0,0,Wild Pitch. ,buchb002,1,
+,31,6,buchb002,huntt001,,,50,108,CBBBB,david002,0,0,buchb002 walks. ,buchb002,1,
+huntt001 to 3B. buchb002 to 2B. ,10,6,blakc001,buchb002,huntt001,,51,110,BX,david002,0,0,blakc001 singles. ,blakc001,1,
+huntt001 scores. buchb002 to 3B. ,10,6,blakc001,,buchb002,,52,112,BX,david002,1,1,moelc001 hits sacrifice fly. ,moelc001,1,
+,01,6,blakc001,,buchb002,,53,114,CX,david002,1,0,guzmc001 grounds out. ,guzmc001,1,G
+,01,7,,,,,54,86,CX,romej001,1,0,lambm001 grounds out. ,lambm001,0,G
+,12,7,,,,,55,90,SFBS,romej001,1,0,waszb001 strikes out. ,waszb001,0,
+,32,7,,,,,56,102,BFBFFBFFFFFC,romej001,1,0,drank001 strikes out. ,drank001,0,
+,22,7,,,,,58,7,CBFBFFX,johnj008,1,0,,rival001,1,F
+,11,7,barnj001,,,,59,10,SBH,johnj008,0,0,barnj001 hit by pitch. ,barnj001,1,
+,00,7,,,,,60,11,X,johnj008,2,0,Double Play. ,coomr001,1,
+,32,8,,,,,62,6,FCBBBX,guare001,1,0,,alicl001,0,P
+,02,8,,,,,63,9,CCS,guare001,1,0,grees002 strikes out. ,grees002,0,
+,12,8,,,,,64,16,CSFFFBS,guare001,1,0,kaplg001 strikes out. ,kaplg001,0,
+,32,8,,,,,65,17,BBFBSS,johnj008,1,0,lecrm001 strikes out. ,lecrm001,1,
+,01,8,huntt001,,,,66,19,CH,johnj008,0,0,huntt001 hit by pitch. ,huntt001,1,
+,01,8,,huntt001,,buchb002,67,21,FB,johnj008,0,0,huntt001 steals 2B. ,buchb002,1,
+,31,8,buchb002,huntt001,,,68,26,FBBBB,johnj008,0,0,buchb002 walks. ,buchb002,1,
+,01,8,buchb002,huntt001,,,69,28,FX,johnj008,1,0,,blakc001,1,F
+huntt001 to 3B. buchb002 to 2B. ,21,8,moelc001,buchb002,huntt001,,70,32,BBFX,johnj008,0,0,moelc001 singles. ,moelc001,1,
+,11,8,moelc001,buchb002,huntt001,,71,35,BFX,johnj008,1,0,,guzmc001,1,F
+,10,9,sierr001,,,,72,18,BX,guare001,0,0,sierr001 singles. ,sierr001,0,
+,01,9,sierr001,,,,73,20,CX,guare001,1,0,,leder001,0,
+sierr001 scores. ,01,9,,,,,74,22,SX,guare001,0,2,shels001 homers. ,shels001,0,
+,32,9,curtc001,,,,76,28,BCBBCB,guare001,0,0,curtc001 walks. ,curtc001,0,
+curtc001 to 2B. ,32,9,waszb001,curtc001,,,77,34,FBFBBB,guare001,0,0,waszb001 walks. ,waszb001,0,
+curtc001 to 3B. waszb001 to 2B. ,01,9,,waszb001,curtc001,,80,2,FX,hawkl001,1,0,greer001 grounds out. ,greer001,0,G
+,21,9,,waszb001,curtc001,,81,6,BFBX,hawkl001,1,0,,alicl001,0,F
+,32,9,,,,,88,8,BBBCCFFC,crabt001,1,0,rival001 strikes out. ,rival001,1,
+,00,9,jonej003,,,,90,9,X,crabt001,0,0,jonej003 singles. ,jonej003,1,
+,12,9,jonej003,,,,91,13,FFBS,crabt001,1,0,coomr001 strikes out. ,coomr001,1,
+,12,9,jonej003,,,,93,17,CBFX,crabt001,1,0,,ortid001,1,F
+,11,10,,,,,95,9,BCX,hawkl001,1,0,,cataf001,0,F
+,00,10,,,,,96,10,X,hawkl001,1,0,kaplg001 grounds out. ,kaplg001,0,G
+,02,10,,,,,97,13,CFS,hawkl001,1,0,sierr001 strikes out. ,sierr001,0,
+,00,10,,,,,98,18,X,crabt001,1,0,huntt001 grounds out. ,huntt001,1,G
+,32,10,,,,,100,24,CFBBBX,crabt001,1,0,lawtm002 grounds out. ,lawtm002,1,G
+,32,10,koskc001,,,,102,31,BSBBSFB,crabt001,0,0,koskc001 walks. ,koskc001,1,
+koskc001 to 2B. ,00,10,,koskc001,,hockd001,104,32,S,crabt001,0,0,Passed Ball. ,hockd001,1,
+,11,10,,koskc001,,,105,35,SBX,crabt001,1,0,,hockd001,1,L
+,12,11,,leder001,,,109,21,FCFFBFFX,hawkl001,0,0,leder001 doubles. ,leder001,0,
+leder001 to 3B. ,00,11,,,leder001,,110,22,X,hawkl001,1,0,Sacrifice bunt by shels001.,shels001,0,
+leder001 scores. ,02,11,curtc001,,,,111,25,SSX,hawkl001,0,1,curtc001 singles. ,curtc001,0,
+,22,11,curtc001,,,,113,31,BBSCFX,hawkl001,1,0,,valdp001,0,
+,20,11,,,,clayr001,114,34,BB1,hawkl001,1,0,curtc001 picked off. ,clayr001,0,
+,10,11,,,guzmc001,,117,2,BX,wettj001,0,0,guzmc001 triples. ,guzmc001,1,
+guzmc001 scores. ,00,11,,,,,118,3,X,wettj001,1,1,rival001 hits sacrifice fly. ,rival001,1,
+,02,11,,,,,119,6,FSX,wettj001,1,0,jonej003 grounds out. ,jonej003,1,G
+,32,11,,,,,120,15,SCBFBBFFX,wettj001,1,0,coomr001 grounds out. ,coomr001,1,G
+,01,12,,,,,122,2,SX,millt001,1,0,clayr001 grounds out. ,clayr001,0,G
+,31,12,alicl001,,,,123,7,CBBBB,millt001,0,0,alicl001 walks. ,alicl001,0,
+palmr001 to 2B. ,32,12,cataf001,palmr001,,,125,17,SFBFFBBFFB,millt001,0,0,cataf001 walks. ,cataf001,0,
+,12,12,cataf001,palmr001,,,126,21,BSFS,millt001,1,0,kaplg001 strikes out. ,kaplg001,0,
+palmr001 scores. cataf001 to 3B. ,10,12,sierr001,,cataf001,,127,23,BX,millt001,0,1,sierr001 singles. ,sierr001,0,
+,11,12,,sierr001,,leder001,128,26,BSB,millt001,0,1,cataf001 steals Home. sierr001 steals 2B. ,leder001,0,
+,22,12,,sierr001,,,129,31,BSBFS,millt001,1,0,leder001 strikes out. ,leder001,0,
+,00,12,,,,,133,1,X,venam002,1,0,,ortid001,1,F
+,31,12,huntt001,,,,134,6,BBCBX,venam002,0,0,huntt001 singles. ,huntt001,1,
+,00,12,,,,,136,7,X,venam002,2,0,Double Play. ,canij001,1,

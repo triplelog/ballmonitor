@@ -1,0 +1,135 @@
+version,2
+info,visteam,MIN
+info,hometeam,TBA
+info,site,STP01
+info,date,2000/08/07
+info,number,0
+info,starttime,7:15PM
+info,daynight,night
+info,usedh,true
+info,umphome,timmt901
+info,ump1b,craft901
+info,ump2b,morrd901
+info,ump3b,fleta901
+info,pitches,pitches
+info,temp,72
+info,winddir,rtol
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,151
+info,attendance,14122
+info,wp,redmm002
+info,lp,rekab001
+info,save,guare001
+start,guzmc001,"Cristian Guzman",0,1,6
+start,canij001,"Jay Canizaro",0,2,4
+start,cummm001,"Midre Cummings",0,3,9
+start,coomr001,"Ron Coomer",0,4,3
+start,ortid001,"David Ortiz",0,5,10
+start,koskc001,"Corey Koskie",0,6,5
+start,huntt001,"Torii Hunter",0,7,8
+start,jonej003,"Jacque Jones",0,8,7
+start,moelc001,"Chad Moeller",0,9,2
+start,redmm002,"Mark Redman",0,0,1
+start,willg001,"Gerald Williams",1,1,8
+start,cairm001,"Miguel Cairo",1,2,4
+start,vaugg001,"Greg Vaughn",1,3,10
+start,mcgrf001,"Fred McGriff",1,4,3
+start,guilj001,"Jose Guillen",1,5,9
+start,johnr006,"Russ Johnson",1,6,5
+start,cox-s001,"Steve Cox",1,7,7
+start,difem001,"Mike DiFelice",1,8,2
+start,martf001,"Felix Martinez",1,9,6
+start,rekab001,"Bryan Rekar",1,0,1
+play,1,0,guzmc001,21,BCBX,T7
+play,1,0,canij001,01,FX,9/F9S
+play,1,0,cummm001,11,SBX,43/G.3-H
+play,1,0,coomr001,32,CBSBBX,S9
+play,1,0,ortid001,00,B,WP.1-2
+play,1,0,ortid001,11,BCX,43/G
+play,1,1,willg001,21,CBBX,13/G
+play,1,1,cairm001,01,CX,D/78
+play,1,1,vaugg001,31,FBBBB,W
+play,1,1,mcgrf001,01,CX,13/G.2-3;1-2
+play,1,1,guilj001,22,SBBFS,K
+play,2,0,koskc001,20,BBX,S9/9S
+play,2,0,huntt001,31,CBBBX,S7/7S.1-2
+play,2,0,jonej003,00,X,7/L7
+play,2,0,moelc001,00,X,64(1)3/GDP
+play,2,1,johnr006,31,CBBBX,S7
+play,2,1,cox-s001,21,FBBX,6/FL
+play,2,1,difem001,12,SBFFS,K
+play,2,1,martf001,02,CCFX,63/G
+play,3,0,guzmc001,00,X,7/L7
+play,3,0,canij001,11,CBX,63/G
+play,3,0,cummm001,22,SBFBX,43/G
+play,3,1,willg001,22,CBBCFX,6/P6
+play,3,1,cairm001,32,BBCCFBX,13/G
+play,3,1,vaugg001,32,BBFFBS,K
+play,4,0,coomr001,00,X,S8/8S
+play,4,0,ortid001,10,BX,S8.1-2
+play,4,0,koskc001,00,X,8/F8
+play,4,0,huntt001,20,BBX,S9.2-3;1-2
+play,4,0,jonej003,21,BSBX,43/G.3-H;2-3;1-2
+play,4,0,moelc001,12,CCBS,K
+play,4,1,mcgrf001,32,BCBCBS,K
+play,4,1,guilj001,12,SSBC,K/C
+play,4,1,johnr006,32,CBBCFFBB,W
+play,4,1,cox-s001,22,BCBF1,POCS2(136)
+play,5,0,guzmc001,21,BBCX,3/G
+play,5,0,canij001,01,CH,HP
+play,5,0,cummm001,11,BCX,46(1)3/GDP
+play,5,1,cox-s001,00,X,8/F8D
+play,5,1,difem001,32,SBSBFBS,K
+play,5,1,martf001,10,BX,9/F9
+play,6,0,coomr001,01,CX,8/F8
+play,6,0,ortid001,31,BBBFB,W
+play,6,0,koskc001,01,FX,HR/9.1-H
+play,6,0,huntt001,00,X,8/L8
+play,6,0,jonej003,22,FCBBS,K
+play,6,1,willg001,22,BCCBX,53/G
+play,6,1,cairm001,12,BSFX,8/F8
+play,6,1,vaugg001,12,CFFBS,K
+play,7,0,moelc001,12,FCBS,K
+play,7,0,guzmc001,11,BCX,43/G
+play,7,0,canij001,22,SBFBX,S9
+play,7,0,cummm001,00,X,46(1)/FO
+play,7,1,mcgrf001,00,X,31/G
+play,7,1,guilj001,22,BFBSX,43/G
+play,7,1,johnr006,32,CFBBBS,K
+play,8,0,coomr001,10,BX,63/G
+play,8,0,ortid001,02,CCX,63/G
+play,8,0,koskc001,20,BBX,E3/G.B-2
+play,8,0,huntt001,11,BFX,43/G
+play,8,1,cox-s001,22,CBBCX,43/G
+play,8,1,difem001,02,CSS,K
+play,8,1,martf001,00,,NP
+sub,mccrq001,"Quinton McCracken",1,9,11
+play,8,1,mccrq001,01,CX,9/L9
+play,9,0,jonej003,00,,NP
+sub,guilo001,"Ozzie Guillen",1,9,6
+play,9,0,jonej003,01,CX,31/G
+play,9,0,moelc001,01,SX,E6/TH
+play,9,0,guzmc001,00,X,41/G.1-2
+play,9,0,canij001,31,CBBBB,W
+play,9,0,cummm001,00,X,64(1)/FO.2-3
+play,9,1,willg001,00,X,3/FL
+play,9,1,cairm001,01,CX,4/L4
+play,9,1,vaugg001,00,X,S8/8S
+play,9,1,mcgrf001,01,CB,DI.1-2
+play,9,1,mcgrf001,11,CBX,S9/9S.2-H
+play,9,1,guilj001,00,,NP
+sub,hawkl001,"LaTroy Hawkins",0,0,1
+play,9,1,guilj001,32,BFBBSX,S.1-3(E6)
+play,9,1,johnr006,32,BCCBFFFBX,S8/8S.3-H;1-3
+play,9,1,cox-s001,00,,NP
+sub,guare001,"Eddie Guardado",0,0,1
+play,9,1,cox-s001,00,,NP
+sub,flahj001,"John Flaherty",1,7,11
+play,9,1,flahj001,02,FSX,9/F9
+data,er,redmm002,2
+data,er,hawkl001,0
+data,er,guare001,0
+data,er,rekab001,4

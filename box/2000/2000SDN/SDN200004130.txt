@@ -1,0 +1,142 @@
+version,2
+info,visteam,ARI
+info,hometeam,SDN
+info,site,SAN01
+info,date,2000/04/13
+info,number,0
+info,starttime,2:05PM
+info,daynight,day
+info,usedh,false
+info,umphome,eddid901
+info,ump1b,carlm901
+info,ump2b,demud901
+info,ump3b,relic901
+info,pitches,pitches
+info,temp,73
+info,winddir,torf
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,165
+info,attendance,28131
+info,wp,andeb002
+info,lp,hitcs001
+info,save,morgm001
+start,friah001,"Hanley Frias",0,1,6
+start,bellj001,"Jay Bell",0,2,4
+start,gonzl001,"Luis Gonzalez",0,3,7
+start,colbg001,"Greg Colbrunn",0,4,3
+start,finls001,"Steve Finley",0,5,8
+start,gilkb001,"Bernard Gilkey",0,6,9
+start,klasd001,"Danny Klassen",0,7,5
+start,milld002,"Damian Miller",0,8,2
+start,andeb002,"Brian Anderson",0,9,1
+start,marta001,"Al Martin",1,1,7
+start,jackd003,"Damian Jackson",1,2,6
+start,owene001,"Eric Owens",1,3,8
+start,nevip001,"Phil Nevin",1,4,5
+start,sprae001,"Ed Sprague",1,5,3
+start,boonb002,"Bret Boone",1,6,4
+start,roskj001,"John Roskos",1,7,9
+start,gonzw001,"Wiki Gonzalez",1,8,2
+start,hitcs001,"Sterling Hitchcock",1,9,1
+play,1,0,friah001,32,CBBFBFX,53/G
+play,1,0,bellj001,10,BX,S5/BG5
+play,1,0,gonzl001,00,B,SB2
+play,1,0,gonzl001,32,BSBBCS,K
+play,1,0,colbg001,31,BBBCB,W
+play,1,0,finls001,20,BBX,E3/G.2-3;1-2
+play,1,0,gilkb001,10,BX,4/FL
+play,1,1,marta001,20,BBX,S
+play,1,1,jackd003,12,CBLS,K
+play,1,1,owene001,01,C1,POCS2(136)
+play,1,1,owene001,01,C1X,13/G
+play,2,0,klasd001,01,CX,7/F7
+play,2,0,milld002,22,BCFBC,K/C
+play,2,0,andeb002,11,CBX,13/G
+play,2,1,nevip001,12,FBFS,K
+play,2,1,sprae001,10,BX,S9/9S
+play,2,1,boonb002,10,BX,64(1)3/GDP
+play,3,0,friah001,00,X,5/FL
+play,3,0,bellj001,12,FBFC,K/C
+play,3,0,gonzl001,01,CX,7/F7
+play,3,1,roskj001,12,CSBS,K
+play,3,1,gonzw001,30,BBBX,D7/7D
+play,3,1,hitcs001,02,CCX,53/G
+play,3,1,marta001,12,CSBH,HP
+play,3,1,jackd003,21,BBFX,13/G
+play,4,0,colbg001,32,FFBBBB,W
+play,4,0,finls001,10,BX,HR/9.1-H
+play,4,0,gilkb001,22,BBSCX,D9
+play,4,0,klasd001,12,FCBX,S8/8S.2-H
+play,4,0,milld002,32,BBFCBS,K+CS2(24)/DP
+play,4,0,andeb002,12,SBSX,23/G
+play,4,1,owene001,00,X,S9
+play,4,1,nevip001,00,X,HR/9.1-H
+play,4,1,sprae001,01,CX,5/FL
+play,4,1,boonb002,32,FBBBCS,K
+play,4,1,roskj001,21,BBFX,9/F9S
+play,5,0,friah001,01,CX,8/F8
+play,5,0,bellj001,31,BFBBX,7/F7
+play,5,0,gonzl001,12,CSBS,K
+play,5,1,gonzw001,22,BBFFX,8/F8
+play,5,1,hitcs001,12,CFBC,K/C
+play,5,1,marta001,00,X,S9
+play,5,1,jackd003,11,BS1,POCS2(136)
+play,6,0,colbg001,00,X,D9.B-3(E9)
+play,6,0,finls001,21,BBFX,HR/8.3-H
+play,6,0,gilkb001,21,BBCX,9/F9
+play,6,0,klasd001,02,CCS,K
+play,6,0,milld002,12,CBCFX,8/F8
+play,6,1,jackd003,32,BBCBCX,6/F6
+play,6,1,owene001,11,BCX,9/F9S
+play,6,1,nevip001,01,CX,HR/7
+play,6,1,sprae001,00,X,D7
+play,6,1,boonb002,00,X,7/F7D
+play,7,0,andeb002,01,LX,53/G
+play,7,0,friah001,32,CBBCBX,E4/G
+play,7,0,bellj001,31,BBCBX,S.1-2
+play,7,0,gonzl001,32,BFBFBFS,K
+play,7,0,colbg001,12,CCBX,6/F6
+play,7,1,roskj001,12,CBFFFX,3/FL
+play,7,1,gonzw001,21,BSBX,S8/8S
+play,7,1,hitcs001,00,,NP
+sub,davib003,"Ben Davis",1,9,11
+play,7,1,davib003,32,BBCBSS,K
+play,7,1,marta001,32,CBSFBBS,K
+play,8,0,finls001,00,,NP
+sub,cunnw001,"Will Cunnane",1,9,1
+play,8,0,finls001,32,BCBFBX,43/G
+play,8,0,gilkb001,00,,NP
+sub,lee-t002,"Travis Lee",0,6,11
+play,8,0,lee-t002,12,BCFS,K
+play,8,0,klasd001,10,BX,E6/G
+play,8,0,milld002,21,BCBX,S9.1-2
+play,8,0,andeb002,00,,NP
+sub,harrl001,"Lenny Harris",0,9,11
+play,8,0,harrl001,10,BX,63/G
+play,8,1,jackd003,00,,NP
+sub,lee-t002,"Travis Lee",0,6,9
+play,8,1,jackd003,00,,NP
+sub,morgm001,"Mike Morgan",0,9,1
+play,8,1,jackd003,12,CBSX,S8
+play,8,1,owene001,01,CB,SB2.1-3(E2/TH2)
+play,8,1,owene001,12,CBSX,43/G.3-H
+play,8,1,nevip001,21,BBSX,63/G
+play,8,1,sprae001,10,BX,63/G
+play,9,0,friah001,12,SSBS,K
+play,9,0,bellj001,32,BBFFFBX,S7/7S
+play,9,0,gonzl001,00,,NP
+sub,whism001,"Matt Whisenant",1,9,1
+play,9,0,gonzl001,31,BFBBB,W.1-2
+play,9,0,colbg001,22,SBFFBX,54(1)/FO.2-3
+play,9,0,finls001,01,FX,13/G
+play,9,1,boonb002,12,CFBS,K
+play,9,1,roskj001,02,FCC,K/C
+play,9,1,gonzw001,11,CBX,8/F8
+data,er,andeb002,3
+data,er,morgm001,1
+data,er,hitcs001,5
+data,er,cunnw001,0
+data,er,whism001,0

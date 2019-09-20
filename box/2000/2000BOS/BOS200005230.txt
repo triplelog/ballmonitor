@@ -1,0 +1,140 @@
+version,2
+info,visteam,TOR
+info,hometeam,BOS
+info,site,BOS07
+info,date,2000/05/23
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,vanvm901
+info,ump1b,nelsj901
+info,ump2b,cousd901
+info,ump3b,marqa901
+info,pitches,pitches
+info,temp,54
+info,winddir,rtol
+info,windspeed,14
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,175
+info,attendance,33402
+info,wp,carpc002
+info,lp,martp001
+info,save,kochb001
+start,stews002,"Shannon Stewart",0,1,7
+start,grebc001,"Craig Grebeck",0,2,4
+start,mondr002,"Raul Mondesi",0,3,9
+start,delgc001,"Carlos Delgado",0,4,3
+start,fullb001,"Brad Fullmer",0,5,10
+start,batit001,"Tony Batista",0,6,5
+start,fletd001,"Darrin Fletcher",0,7,2
+start,cruzj004,"Jose Cruz",0,8,8
+start,gonza001,"Alex S. Gonzalez",0,9,6
+start,carpc002,"Chris Carpenter",0,0,1
+start,offej001,"Jose Offerman",1,1,4
+start,valej002,"John Valentin",1,2,5
+start,nixot001,"Trot Nixon",1,3,9
+start,daubb001,"Brian Daubach",1,4,10
+start,everc001,"Carl Everett",1,5,8
+start,stanm002,"Mike Stanley",1,6,3
+start,oleat001,"Troy O'Leary",1,7,7
+start,varij001,"Jason Varitek",1,8,2
+start,sadld001,"Donnie Sadler",1,9,6
+start,martp001,"Pedro Martinez",1,0,1
+play,1,0,stews002,10,BX,S8
+play,1,0,grebc001,02,CCX,S9/9S.1-2
+play,1,0,mondr002,02,CSX,64(1)/FO.2-3
+play,1,0,delgc001,02,SCB,WP.3-H;1-2
+play,1,0,delgc001,12,SCBX,8/F8
+play,1,0,fullb001,02,FSS,K
+play,1,1,offej001,32,CBFBBB,W
+play,1,1,valej002,20,BBX,S9.1-3
+play,1,1,nixot001,21,BFBX,46(1)3/GDP.3-H
+play,1,1,daubb001,31,BBCBX,43/G
+play,2,0,batit001,12,BSFFX,7/F7
+play,2,0,fletd001,11,BFX,8/F8
+play,2,0,cruzj004,00,X,6/P6
+play,2,1,everc001,22,CFFBBH,HP
+play,2,1,stanm002,11,CBB,CS2(24)
+play,2,1,stanm002,22,CBBFX,63/G
+play,2,1,oleat001,10,BX,3/G
+play,3,0,gonza001,00,X,S7/7S
+play,3,0,stews002,10,BX,S.1-2
+play,3,0,grebc001,30,BBBB,W.2-3;1-2
+play,3,0,mondr002,00,X,4/P4
+play,3,0,delgc001,12,BSSX,8/SF.3-H
+play,3,0,fullb001,22,SBSBC,K/C
+play,3,1,varij001,00,X,S9
+play,3,1,sadld001,22,CBBCFX,13/G.1-2
+play,3,1,offej001,00,X,43/G.2-3
+play,3,1,valej002,00,X,8/F8S
+play,4,0,batit001,00,X,HR/7
+play,4,0,fletd001,22,BBSFS,K
+play,4,0,cruzj004,32,BBBCSB,W
+play,4,0,gonza001,32,CBBCBS,K+SB2
+play,4,0,stews002,00,X,63/G
+play,4,1,nixot001,00,X,8/F8S
+play,4,1,daubb001,21,BCBX,S7
+play,4,1,everc001,32,BBFBCB,W.1-2
+play,4,1,stanm002,32,BFFBBS,K
+play,4,1,oleat001,31,BBBCB,W.2-3;1-2
+play,4,1,varij001,32,BCFBBX,7/F7
+play,5,0,grebc001,12,BCSC,K/C
+play,5,0,mondr002,00,X,7/F7S
+play,5,0,delgc001,11,BFX,41/G
+play,5,1,sadld001,32,BBCBCFX,D/78D
+play,5,1,offej001,11,CBX,63/G
+play,5,1,valej002,32,BCSBBFFFX,8/F8D
+play,5,1,nixot001,01,CX,8/F8
+play,6,0,fullb001,10,BX,E6/TH
+play,6,0,batit001,00,X,S7.1-2
+play,6,0,fletd001,12,FFFFBX,14(1)3/GDP.2-3
+play,6,0,cruzj004,12,CBSS,K
+play,6,1,daubb001,00,X,S9/9S
+play,6,1,everc001,10,BX,S7.1-2
+play,6,1,stanm002,12,FBFC,K/C
+play,6,1,oleat001,32,SBBFBX,41/G.2-3;1-2
+play,6,1,varij001,31,BBCBB,W
+play,6,1,sadld001,30,BBBB,W.3-H;2-3;1-2
+play,6,1,offej001,00,,NP
+sub,quanp001,"Paul Quantrill",0,0,1
+play,6,1,offej001,12,BCFX,3/G
+play,7,0,gonza001,12,BCSX,8/F8
+play,7,0,stews002,01,CX,53/G
+play,7,0,grebc001,12,CBCX,S7
+play,7,0,mondr002,31,CBBBX,53/G
+play,7,1,valej002,12,CCBX,8/F8D
+play,7,1,nixot001,00,,NP
+sub,borbp001,"Pedro Borbon",0,0,1
+play,7,1,nixot001,21,BFBX,3/G
+play,7,1,daubb001,20,BBX,7/F7
+play,8,0,delgc001,31,BBBFB,W
+play,8,0,fullb001,12,BCFX,8/F8
+play,8,0,batit001,22,CFBBFFS,K
+play,8,0,fletd001,11,BFX,9/F9
+play,8,1,everc001,00,,NP
+sub,frasj001,"John Frascatore",0,0,1
+play,8,1,everc001,01,CX,S7
+play,8,1,stanm002,22,BFBSS,K
+play,8,1,oleat001,11,BCX,64(1)3/GDP
+play,9,0,cruzj004,00,,NP
+sub,garcr001,"Rich Garces",1,0,1
+play,9,0,cruzj004,22,CBBFS,K
+play,9,0,gonza001,02,CCFFS,K
+play,9,0,stews002,12,SBFX,4/P4
+play,9,1,varij001,00,,NP
+sub,kochb001,"Billy Koch",0,0,1
+play,9,1,varij001,32,FBSBBC,K/C
+play,9,1,sadld001,10,BX,S9/9S
+play,9,1,offej001,11,BCX,S9/9S.1-2
+play,9,1,valej002,32,FFBBBX,2/FL
+play,9,1,nixot001,10,BX,1/G
+data,er,carpc002,2
+data,er,quanp001,0
+data,er,borbp001,0
+data,er,frasj001,0
+data,er,kochb001,0
+data,er,martp001,3
+data,er,garcr001,0

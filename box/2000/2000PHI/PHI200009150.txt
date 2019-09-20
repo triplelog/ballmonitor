@@ -1,0 +1,156 @@
+version,2
+info,visteam,FLO
+info,hometeam,PHI
+info,site,PHI12
+info,date,2000/09/15
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,danlk901
+info,ump1b,everm901
+info,ump2b,hollm901
+info,ump3b,gormb901
+info,pitches,pitches
+info,temp,70
+info,winddir,tocf
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,175
+info,attendance,13064
+info,wp,persr001
+info,lp,burna001
+info,save,
+start,castl001,"Luis Castillo",0,1,4
+start,kotsm001,"Mark Kotsay",0,2,8
+start,floyc001,"Cliff Floyd",0,3,7
+start,lowem001,"Mike Lowell",0,4,5
+start,rodrh001,"Henry Rodriguez",0,5,9
+start,lee-d002,"Derrek Lee",0,6,3
+start,fox-a001,"Andy Fox",0,7,6
+start,castr002,"Ramon Castro",0,8,2
+start,burna001,"A.J. Burnett",0,9,1
+start,andem003,"Marlon Anderson",1,1,4
+start,gland001,"Doug Glanville",1,2,8
+start,lee-t002,"Travis Lee",1,3,3
+start,roles001,"Scott Rolen",1,4,5
+start,burrp001,"Pat Burrell",1,5,7
+start,duceb001,"Rob Ducey",1,6,9
+start,peret003,"Tomas Perez",1,7,6
+start,print001,"Tom Prince",1,8,2
+start,persr001,"Robert Person",1,9,1
+play,1,0,castl001,12,CBCX,S8/8S
+play,1,0,kotsm001,12,BSSFX,S/78S.1-3;B-2(TH3)
+play,1,0,floyc001,12,BCCX,43/G.3-H;2-3
+play,1,0,lowem001,12,CBSFX,8/SF.3-H
+play,1,0,rodrh001,20,BBX,8/F8D
+play,1,1,andem003,10,BX,S/78
+play,1,1,gland001,01,CX,54(1)3/GDP
+play,1,1,lee-t002,32,BBFCBX,E6/G
+play,1,1,roles001,21,CBBX,9/F9
+play,2,0,lee-d002,32,BCBFBX,53/G
+play,2,0,fox-a001,12,CBSS,K
+play,2,0,castr002,10,BX,7/L7
+play,2,1,burrp001,32,SBSBBFX,D/89
+play,2,1,duceb001,30,BBBB,W
+play,2,1,peret003,02,FSX,3/G.2-3;1-2
+play,2,1,print001,11,CBX,63/G.3-H
+play,2,1,persr001,22,BBCCB,WP.2-3
+play,2,1,persr001,32,BBCCBFB,W
+play,2,1,andem003,00,X,63/G
+play,3,0,burna001,01,CX,S7/7S
+play,3,0,castl001,11,CBX,8/L8
+play,3,0,kotsm001,32,BCBSFBB,W.1-2
+play,3,0,floyc001,12,BSFC,K/C
+play,3,0,lowem001,20,BBX,6/P6
+play,3,1,gland001,02,FCFX,13/G
+play,3,1,lee-t002,00,X,8/F8
+com,"$Rolen left with a stiff back"
+play,3,1,roles001,00,,NP
+sub,jordk001,"Kevin Jordan",1,4,11
+play,3,1,jordk001,01,CX,53/G
+play,4,0,rodrh001,00,,NP
+sub,jordk001,"Kevin Jordan",1,4,5
+play,4,0,rodrh001,00,X,5/FL
+play,4,0,lee-d002,02,CCS,K
+play,4,0,fox-a001,22,CBFBC,K/C
+play,4,1,burrp001,31,BCBBX,HR/7
+play,4,1,duceb001,00,X,43/G
+play,4,1,peret003,12,CBFX,5/FL
+play,4,1,print001,32,BCBBCS,K
+play,5,0,castr002,32,BSBCBS,K
+play,5,0,burna001,12,BFCC,K/C
+play,5,0,castl001,01,CX,3/G
+play,5,1,persr001,12,CBFS,K
+play,5,1,andem003,21,BCBX,7/F7D
+play,5,1,gland001,01,CX,T7/7S
+play,5,1,lee-t002,30,BBBB,W
+play,5,1,jordk001,10,BX,D/89.3-H;1-H
+play,5,1,burrp001,31,CBBBB,W
+play,5,1,duceb001,21,BBCX,S9.2-H;1-3
+play,5,1,peret003,30,BBBB,W.1-2
+play,5,1,print001,32,BCBCBC,K/C
+play,6,0,kotsm001,10,BX,HR/9
+play,6,0,floyc001,00,X,9/F9S
+play,6,0,lowem001,32,BCFFFBBX,7/F7D
+play,6,0,rodrh001,32,CBSBBS,K
+play,6,1,persr001,00,X,8/F8
+play,6,1,andem003,31,CBBBB,W
+play,6,1,gland001,01,CX,9/F9S
+play,6,1,lee-t002,11,CBX,8/F8
+play,7,0,lee-d002,02,CCC,K/C
+play,7,0,fox-a001,12,BFFS,K+WP.B-1
+play,7,0,castr002,00,X,8/F8S
+play,7,0,burna001,00,,NP
+sub,wilsp002,"Preston Wilson",0,9,11
+play,7,0,wilsp002,12,CFBB,WP.1-2
+play,7,0,wilsp002,32,CFBBFFBS,K
+play,7,1,jordk001,00,,NP
+sub,boner001,"Ricky Bones",0,9,1
+play,7,1,jordk001,12,BCSX,13/G
+play,7,1,burrp001,12,CSBX,43/G
+play,7,1,duceb001,12,CBCC,K/C
+play,8,0,castl001,31,BCBBB,W
+play,8,0,kotsm001,00,,NP
+sub,vosbe001,"Ed Vosberg",1,9,1
+play,8,0,kotsm001,32,BBBCCB,W.1-2
+play,8,0,floyc001,32,SFBBBFS,K
+play,8,0,lowem001,00,,NP
+sub,padiv001,"Vicente Padilla",1,9,1
+play,8,0,lowem001,12,FBFX,3/L3
+play,8,0,rodrh001,00,X,43/G
+play,8,1,peret003,22,SBBLX,S/78S
+play,8,1,print001,02,LLFC,K/C
+play,8,1,padiv001,00,,NP
+sub,huntb001,"Brian R. Hunter",1,9,11
+play,8,1,huntb001,00,B,WP.1-2
+play,8,1,huntb001,32,BBCBFB,W
+play,8,1,andem003,00,,NP
+sub,darev001,"Vic Darensbourg",0,5,1
+play,8,1,andem003,00,,NP
+sub,smitm004,"Mark Smith",0,9,9
+play,8,1,andem003,32,BFFFBBFB,W.2-3;1-2
+play,8,1,gland001,00,,NP
+sub,loopb001,"Braden Looper",0,5,1
+play,8,1,gland001,11,CBX,52(3)/FO.2-3;1-2
+play,8,1,lee-t002,20,BBX,S8/8S.3-H;2-H;1X3(85)#
+play,9,0,lee-d002,00,,NP
+sub,branj001,"Jeff Brantley",1,9,1
+play,9,0,lee-d002,11,BCX,HR/7
+play,9,0,fox-a001,12,BFCX,43/G
+play,9,0,castr002,00,,NP
+sub,millk005,"Kevin Millar",0,8,11
+play,9,0,millk005,22,SBSBC,K/C
+play,9,0,smitm004,12,CCBFX,S7/7S
+play,9,0,castl001,00,X,S5/BG5.1-2
+play,9,0,kotsm001,22,BBCCFX,54(1)/FO.2-3
+data,er,burna001,5
+data,er,boner001,2
+data,er,darev001,0
+data,er,loopb001,0
+data,er,persr001,3
+data,er,vosbe001,0
+data,er,padiv001,0
+data,er,branj001,1

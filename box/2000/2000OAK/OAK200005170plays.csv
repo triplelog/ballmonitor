@@ -1,0 +1,81 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,21,1,,,,,0,4,CBBX,olivo001,1,0,,damoj001,0,F
+,10,1,,,,,1,6,BX,olivo001,1,0,,feblc001,0,F
+,31,1,,,,,2,11,BBBCX,olivo001,1,0,,sweem002,0,F
+,01,1,,,,,3,2,CX,batim001,1,0,,longt002,1,L
+,31,1,,,,,4,7,CBBBX,batim001,1,0,,velar001,1,F
+,32,1,giamj001,,,,5,13,CBBBFB,batim001,0,0,giamj001 walks. ,giamj001,1,
+giamj001 to 2B. ,10,1,grieb001,giamj001,,,6,15,BX,batim001,0,0,grieb001 singles. ,grieb001,1,
+giamj001 to 3B. grieb001 out. ,01,1,saeno001,,giamj001,,7,17,CX,batim001,1,0,saeno001 reaches on fielder's choice. ,saeno001,1,G
+,00,2,,,,,8,12,X,olivo001,1,0,quinm001 grounds out. ,quinm001,0,G
+,01,2,,,,,9,14,CX,olivo001,1,0,,randj002,0,
+,21,2,,,,,10,18,CBBX,olivo001,1,0,,mccad001,0,F
+,21,2,,,,,11,21,CBBX,batim001,1,0,staim001 grounds out. ,staim001,1,G
+,32,2,giamj002,,,,12,27,BBCFBB,batim001,0,0,giamj002 walks. ,giamj002,1,
+,11,2,giamj002,,,,13,30,CBX,batim001,1,0,,tejam001,1,F
+,22,2,giamj002,,,,14,35,SBFBS,batim001,1,0,hernr002 strikes out. ,hernr002,1,
+,20,3,,,,,15,21,BBX,olivo001,1,0,,beltc001,0,L
+,10,3,,,,,16,23,BX,olivo001,1,0,,fabrj001,0,L
+,00,3,,,,,17,24,X,olivo001,1,0,,reboj001,0,L
+longt002 to 2B. ,10,3,,longt002,,,18,37,BX,batim001,0,0,longt002 reaches on error. ,longt002,1,F
+,32,3,velar001,longt002,,,19,45,CCFBBFBB,batim001,0,0,velar001 walks. ,velar001,1,
+longt002 to 3B. velar001 to 2B. ,12,3,,velar001,longt002,giamj001,20,49,CBFB,batim001,0,0,Wild Pitch. ,giamj001,1,
+longt002 scores. velar001 to 3B. ,32,3,giamj001,,velar001,,21,55,CBFBBB,batim001,0,1,giamj001 walks. Wild Pitch. ,giamj001,1,
+velar001 scores. ,01,3,,,,,22,57,CX,batim001,2,1,Double Play. ,grieb001,1,
+,00,3,,,,,23,58,X,batim001,1,0,,saeno001,1,P
+,22,4,,,,,24,29,BBCCX,olivo001,1,0,,damoj001,0,
+,32,4,feblc001,,,,25,35,BBCFBB,olivo001,0,0,feblc001 walks. ,feblc001,0,
+,02,4,feblc001,,,,26,38,CFX,olivo001,1,0,,sweem002,0,F
+feblc001 to 3B. ,22,4,,,feblc001,quinm001,27,44,BFFFBB,olivo001,0,0,feblc001 steals 2B. ,quinm001,0,
+,32,4,,,feblc001,,28,55,BFFFBBFFFFS,olivo001,1,0,quinm001 strikes out. ,quinm001,0,
+,11,4,,,,,29,61,BSX,batim001,1,0,staim001 grounds out. ,staim001,1,G
+,30,4,giamj002,,,,30,65,BBBB,batim001,0,0,giamj002 walks. ,giamj002,1,
+giamj002 to 2B. ,00,4,tejam001,giamj002,,,31,66,X,batim001,0,0,tejam001 singles. ,tejam001,1,
+giamj002 scores. tejam001 to 2B. ,11,4,hernr002,tejam001,,,32,69,SBX,batim001,0,1,hernr002 singles. ,hernr002,1,
+,32,4,,tejam001,,,33,76,BBFBFFX,batim001,2,0,Double Play. ,longt002,1,
+,22,5,,,,,34,61,BCSBFX,olivo001,1,0,,randj002,0,L
+,12,5,,,,,35,65,SCBS,olivo001,1,0,mccad001 strikes out. ,mccad001,0,
+,00,5,,beltc001,,,36,66,X,olivo001,0,0,beltc001 doubles. ,beltc001,0,
+,11,5,,beltc001,,,37,69,BCX,olivo001,1,0,fabrj001 grounds out. ,fabrj001,0,G
+,01,5,,,,,38,78,CX,batim001,1,0,velar001 grounds out. ,velar001,1,G
+,31,5,giamj001,,,,39,83,BBBCB,batim001,0,0,giamj001 walks. ,giamj001,1,
+,00,5,giamj001,,,,40,84,X,batim001,1,0,,grieb001,1,F
+,02,5,giamj001,,,,41,88,CSFX,batim001,1,0,saeno001 grounds out. ,saeno001,1,G
+,12,6,reboj001,,,,42,73,BCSX,olivo001,0,0,reboj001 singles. ,reboj001,0,
+reboj001 to 2B. ,31,6,damoj001,reboj001,,,43,78,BBBCB,olivo001,0,0,damoj001 walks. ,damoj001,0,
+reboj001 to 3B. damoj001 to 2B. ,00,6,feblc001,damoj001,reboj001,,44,79,X,olivo001,0,0,feblc001 singles. ,feblc001,0,G
+reboj001 scores. damoj001 to 3B. feblc001 to 2B. ,11,6,sweem002,feblc001,damoj001,,45,82,FBX,olivo001,0,1,sweem002 singles. ,sweem002,0,
+,02,6,sweem002,feblc001,damoj001,,46,85,FFS,olivo001,1,0,quinm001 strikes out. ,quinm001,0,
+damoj001 scores. feblc001 to 3B. sweem002 to 2B. ,31,6,randj002,sweem002,feblc001,,47,90,CBBBX,olivo001,0,1,randj002 reaches on error. ,randj002,0,G
+feblc001 scores. sweem002 to 3B. ,00,6,randj002,,sweem002,,48,91,X,olivo001,1,1,mccad001 hits sacrifice fly. ,mccad001,0,
+sweem002 scores. randj002 to 3B. ,00,6,beltc001,,randj002,,49,92,X,olivo001,0,1,beltc001 singles. ,beltc001,0,
+,12,6,beltc001,,randj002,,51,4,CBCX,sauvr001,1,0,,fabrj001,0,F
+,32,6,staim001,,,,52,94,BBCBSB,batim001,0,0,staim001 walks. ,staim001,1,
+,12,6,staim001,,,,53,98,BCSS,batim001,1,0,giamj002 strikes out. ,giamj002,1,
+,20,6,,,,,54,101,BBX,batim001,2,0,Double Play. ,tejam001,1,
+,22,7,,,,,56,6,CCBFBX,tam-j001,1,0,,reboj001,0,P
+damoj001 to 2B. ,01,7,,damoj001,,,57,8,FX,tam-j001,0,0,damoj001 singles. ,damoj001,0,G
+,22,7,,damoj001,,,58,13,BBSFX,tam-j001,1,0,feblc001 grounds out. ,feblc001,0,G
+,30,7,sweem002,damoj001,,,59,17,IIII,tam-j001,0,0,sweem002 intentionally walks. ,sweem002,0,
+,12,7,sweem002,,,quinm001,60,21,SBC2,tam-j001,1,0,damoj001 picked off. ,quinm001,0,
+,31,7,hernr002,,,,62,5,BCBBX,bottr001,0,0,hernr002 reaches on error. ,hernr002,1,G
+hernr002 out. ,01,7,longt002,,,,63,7,CX,bottr001,1,0,longt002 reaches on fielder's choice. ,longt002,1,
+longt002 out. ,22,7,velar001,,,,64,12,BFBCX,bottr001,1,0,velar001 reaches on fielder's choice. ,velar001,1,
+velar001 to 2B. ,30,7,giamj001,velar001,,,65,16,BBBB,bottr001,0,0,giamj001 walks. ,giamj001,1,
+,12,7,giamj001,velar001,,,66,20,CCBS,bottr001,1,0,grieb001 strikes out. ,grieb001,1,
+,12,8,quinm001,,,,67,25,BCFX,tam-j001,0,0,quinm001 singles. ,quinm001,0,
+,12,8,quinm001,,,,68,29,FBFX,tam-j001,1,0,,randj002,0,F
+quinm001 out. ,22,8,mccad001,,,,69,34,CBBFX,tam-j001,1,0,mccad001 reaches on fielder's choice. ,mccad001,0,
+,00,8,mccad001,,,,70,35,X,tam-j001,1,0,beltc001 grounds out. ,beltc001,0,G
+,21,8,,,,,73,24,BCBX,bottr001,1,0,saeno001 grounds out. ,saeno001,1,G
+,10,8,,,,,74,26,BX,bottr001,1,0,,staim001,1,
+giamj002 to 2B. ,11,8,,giamj002,,,75,29,SBX,bottr001,0,0,giamj002 reaches on error. ,giamj002,1,G
+,12,8,,giamj002,,,76,34,FCFBS,bottr001,1,0,tejam001 strikes out. ,tejam001,1,
+,00,9,,,,,78,1,X,isrij001,1,0,,fabrj001,0,F
+,32,9,,,,,79,7,BBCBCX,isrij001,1,0,reboj001 grounds out. ,reboj001,0,G
+damoj001 to 3B. ,01,9,,,damoj001,,80,9,CX,isrij001,0,0,damoj001 singles. ,damoj001,0,
+,31,9,,,damoj001,,82,14,BBFBX,isrij001,1,0,,sancr001,0,F
+,12,9,,,,,86,39,CBSFX,bottr001,1,0,,chave001,1,P
+,12,9,,,,,87,43,BSCX,bottr001,1,0,longt002 grounds out. ,longt002,1,G
+,32,9,velar001,,,,88,51,CCBBFBFB,bottr001,0,0,velar001 walks. ,velar001,1,
+,22,9,velar001,,,,90,6,BBCFFC,spraj001,1,0,giamj001 strikes out. ,giamj001,1,

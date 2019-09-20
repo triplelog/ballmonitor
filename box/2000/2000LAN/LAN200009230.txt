@@ -1,0 +1,115 @@
+version,2
+info,visteam,SDN
+info,hometeam,LAN
+info,site,LOS03
+info,date,2000/09/23
+info,number,0
+info,starttime,7:10PM
+info,daynight,night
+info,usedh,false
+info,umphome,herna901
+info,ump1b,fostm901
+info,ump2b,kulpr901
+info,ump3b,marsr901
+info,pitches,pitches
+info,temp,71
+info,winddir,ltor
+info,windspeed,7
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,141
+info,attendance,40623
+info,wp,browk001
+info,lp,willw001
+info,save,
+start,jackd003,"Damian Jackson",0,1,4
+start,relad001,"Desi Relaford",0,2,6
+start,klesr001,"Ryan Klesko",0,3,3
+start,nevip001,"Phil Nevin",0,4,5
+start,darrm001,"Mike Darr",0,5,9
+start,owene001,"Eric Owens",0,6,7
+start,gonzw001,"Wiki Gonzalez",0,7,2
+start,river002,"Ruben Rivera",0,8,8
+start,willw001,"Woody Williams",0,9,1
+start,goodt001,"Tom Goodwin",1,1,8
+start,grudm001,"Mark Grudzielanek",1,2,4
+start,grees001,"Shawn Green",1,3,9
+start,karre001,"Eric Karros",1,4,3
+start,hundt001,"Todd Hundley",1,5,2
+start,belta001,"Adrian Beltre",1,6,5
+start,avenb001,"Bruce Aven",1,7,7
+start,coraa001,"Alex Cora",1,8,6
+start,browk001,"Kevin Brown",1,9,1
+play,1,0,jackd003,22,SFBBS,K
+play,1,0,relad001,10,BX,8/F8
+play,1,0,klesr001,10,BX,3/FL
+play,1,1,goodt001,12,FFBFX,S7
+play,1,1,grudm001,22,FBCBFX,46(1)3/GDP
+play,1,1,grees001,22,BSBCX,5/P5
+play,2,0,nevip001,21,CBBX,63/G
+play,2,0,darrm001,11,FBX,7/L7
+play,2,0,owene001,32,BBSCBX,31/G
+play,2,1,karre001,02,CCX,8/F8
+play,2,1,hundt001,02,CSS,K
+play,2,1,belta001,32,CBBCBX,S/89
+play,2,1,avenb001,12,CSBC,K/C
+play,3,0,gonzw001,10,BX,9/F9D
+play,3,0,river002,12,SBSC,K/C
+play,3,0,willw001,02,CFC,K/C
+play,3,1,coraa001,22,BSCBC,K/C
+play,3,1,browk001,02,CSS,K
+play,3,1,goodt001,22,SSFBBC,K/C
+play,4,0,jackd003,12,CBSS,K
+play,4,0,relad001,32,CBFBFBFB,W
+play,4,0,klesr001,02,CFB,SB2
+play,4,0,klesr001,22,CFBBX,S9.2-H
+play,4,0,nevip001,02,SSX,43/G.1-2
+play,4,0,darrm001,02,SSS,K
+play,4,1,grudm001,32,BCCBBFX,43/G
+play,4,1,grees001,21,BFBX,S
+play,4,1,karre001,10,BX,7/L7
+play,4,1,hundt001,31,BCBBX,5/FL
+play,5,0,owene001,10,BX,9/F9
+play,5,0,gonzw001,00,X,63/G
+play,5,0,river002,02,SFFC,K/C
+play,5,1,belta001,31,BCBBB,W
+play,5,1,avenb001,00,X,4/P4
+play,5,1,coraa001,12,CSBX,3/G.1-2
+play,5,1,browk001,12,BCSFS,K
+play,6,0,willw001,22,FCBBFS,K
+play,6,0,jackd003,12,CBSFC,K/C
+play,6,0,relad001,21,BCBX,7/F7
+play,6,1,goodt001,12,CBSX,E3/G
+play,6,1,grudm001,01,CX,S8.1-H(E8/TH)(UR);B-3
+play,6,1,grees001,11,SBX,S7.3-H(UR)
+play,6,1,karre001,10,BX,6/P6
+play,6,1,hundt001,01,SX,5/P5
+play,6,1,belta001,01,CX,7/F7D
+play,7,0,klesr001,11,BCX,31/G
+play,7,0,nevip001,11,BSX,63/G
+play,7,0,darrm001,01,CX,63/G
+play,7,1,avenb001,12,FSBS,K
+play,7,1,coraa001,02,CCX,31/G
+play,7,1,browk001,02,LCFS,K
+play,8,0,owene001,22,CSBFBFFC,K/C
+play,8,0,gonzw001,21,BCBX,63/G
+play,8,0,river002,00,,NP
+sub,mabrj001,"John Mabry",0,8,11
+play,8,0,mabrj001,02,CSS,K
+play,8,1,goodt001,00,,NP
+sub,darrm001,"Mike Darr",0,5,8
+play,8,1,goodt001,00,,NP
+sub,mabrj001,"John Mabry",0,8,9
+play,8,1,goodt001,22,CFBBC,K/C
+play,8,1,grudm001,20,BBX,3/P3
+play,8,1,grees001,32,CBBBFX,31/G
+play,9,0,willw001,00,,NP
+sub,sprae001,"Ed Sprague",0,9,11
+play,9,0,sprae001,22,FBFBS,K
+play,9,0,jackd003,12,CBSFFX,D7
+play,9,0,relad001,10,BC,SB3
+play,9,0,relad001,32,BCFBFFBFC,K/C
+play,9,0,klesr001,22,BSBFC,K/C
+data,er,willw001,0
+data,er,browk001,1

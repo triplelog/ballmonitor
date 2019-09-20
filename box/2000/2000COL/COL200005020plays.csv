@@ -1,0 +1,83 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,12,1,,,,,0,4,BCCX,karls001,1,0,,cabro001,0,F
+,20,1,,,,,1,7,BBX,karls001,1,0,bergp001 grounds out. ,bergp001,0,G
+,11,1,,,,,2,10,CBX,karls001,1,0,,whitr001,0,F
+,12,1,goodt001,,,,3,4,BCCX,powej002,0,0,goodt001 singles. ,goodt001,1,
+,10,1,,,,,4,6,BX,powej002,2,0,Double Play. ,lansm001,1,
+,32,1,walkl001,,,,5,13,CFBFBBB,powej002,0,0,walkl001 walks. ,walkl001,1,
+walkl001 to 2B. ,32,1,cirij001,walkl001,,,6,19,CFBBBB,powej002,0,0,cirij001 walks. ,cirij001,1,
+walkl001 to 3B. cirij001 to 2B. ,32,1,heltt001,cirij001,walkl001,,7,26,CBFBFBB,powej002,0,0,heltt001 walks. ,heltt001,1,
+walkl001 scores. cirij001 scores. heltt001 scores. ,02,1,,,,,8,29,CFX,powej002,0,4,hammj001 homers. ,hammj001,1,
+,11,1,,,,,9,32,CBX,powej002,1,0,peren001 grounds out. ,peren001,1,G
+,22,2,,,,,10,16,FSBFBX,karls001,1,0,,guerv001,0,F
+,02,2,,,,,11,19,FCS,karls001,1,0,vidrj001 strikes out. ,vidrj001,0,
+,32,2,,,,,12,26,FBBSBFX,karls001,1,0,stevl001 grounds out. ,stevl001,0,G
+,12,2,,,,,13,36,CBSX,powej002,1,0,,maynb001,1,L
+,10,2,karls001,,,,14,38,BX,powej002,0,0,karls001 singles. ,karls001,1,
+,21,2,karls001,,,,15,42,CBBX,powej002,1,0,,goodt001,1,P
+karls001 scores. ,01,2,,,,,16,44,CX,powej002,0,2,lansm001 homers. ,lansm001,1,
+,01,2,,,,,17,46,FX,powej002,1,0,,walkl001,1,L
+,00,3,barrm003,,,,18,27,X,karls001,0,0,barrm003 singles. ,barrm003,0,
+,02,3,barrm003,,,,19,30,CCC,karls001,1,0,websl001 strikes out. ,websl001,0,
+,02,3,barrm003,,,,20,33,FSL,karls001,1,0,powej002 strikes out. ,powej002,0,F
+barrm003 to 2B. ,30,3,cabro001,barrm003,,,21,37,BBBB,karls001,0,0,cabro001 walks. ,cabro001,0,
+,22,3,cabro001,barrm003,,,22,43,SBBFFX,karls001,1,0,,bergp001,0,F
+,31,3,cirij001,,,,23,51,BBBCX,powej002,0,0,cirij001 singles. ,cirij001,1,
+,00,3,cirij001,,,,24,52,X,powej002,1,0,,heltt001,1,F
+cirij001 out. hammj001 to 2B. ,11,3,,hammj001,,,25,55,BSX,powej002,1,0,hammj001 singles. ,hammj001,1,
+hammj001 scores. ,01,3,,peren001,,,26,57,FX,powej002,0,1,peren001 doubles. ,peren001,1,
+,00,3,,peren001,,,27,58,X,powej002,1,0,maynb001 grounds out. ,maynb001,1,G
+,20,4,whitr001,,,,28,46,BBX,karls001,0,0,whitr001 singles. ,whitr001,0,
+whitr001 to 2B. ,30,4,guerv001,whitr001,,,29,50,BBBB,karls001,0,0,guerv001 walks. ,guerv001,0,
+whitr001 scores. guerv001 to 2B. ,00,4,vidrj001,guerv001,,,30,51,X,karls001,0,1,vidrj001 singles. ,vidrj001,0,
+guerv001 to 3B. ,12,4,,,guerv001,,31,55,CBSX,karls001,2,0,Double Play. ,stevl001,0,
+,10,4,,,guerv001,,32,57,BX,karls001,1,0,,barrm003,0,
+,32,4,,,,,33,64,CBBFBX,powej002,1,0,,karls001,1,F
+,10,4,,,,,34,66,BX,powej002,0,1,goodt001 homers. ,goodt001,1,
+,22,4,lansm001,,,,35,72,CBBCFX,powej002,0,0,lansm001 singles. ,lansm001,1,
+,00,4,lansm001,,,,37,1,X,blanm001,1,0,,walkl001,1,F
+,32,4,lansm001,,,,38,7,BBFFBX,blanm001,1,0,cirij001 grounds out. ,cirij001,1,G
+,00,5,websl001,,,,39,58,X,karls001,0,0,websl001 singles. ,websl001,0,
+,12,5,websl001,,,,40,62,BCSS,karls001,1,0,blanm001 strikes out. ,blanm001,0,
+websl001 to 2B. ,01,5,cabro001,websl001,,,41,64,FX,karls001,0,0,cabro001 singles. ,cabro001,0,
+websl001 to 3B. cabro001 out. ,00,5,bergp001,,websl001,,42,65,X,karls001,1,0,bergp001 reaches on fielder's choice. ,bergp001,0,
+websl001 scores. bergp001 to 2B. ,01,5,whitr001,bergp001,,,43,67,FX,karls001,0,1,whitr001 singles. ,whitr001,0,
+,32,5,whitr001,bergp001,,,44,73,BFFBBX,karls001,1,0,,guerv001,0,F
+,32,5,heltt001,,,,45,14,BBBCCFB,blanm001,0,0,heltt001 walks. ,heltt001,1,
+,22,5,heltt001,,,,46,20,BSSBFC,blanm001,1,0,hammj001 strikes out. ,hammj001,1,
+,10,5,heltt001,,,,47,22,BX,blanm001,1,0,,peren001,1,L
+,10,5,heltt001,,,,48,24,BX,blanm001,1,0,,maynb001,1,F
+,31,6,vidrj001,,,,49,78,BBBCX,karls001,0,0,vidrj001 singles. ,vidrj001,0,
+vidrj001 scores. ,11,6,,stevl001,,,50,81,CBX,karls001,0,1,stevl001 doubles. ,stevl001,0,
+,11,6,,stevl001,,,51,84,BFX,karls001,1,0,barrm003 grounds out. ,barrm003,0,G
+,12,6,,stevl001,,,52,88,CCBS,karls001,1,0,websl001 strikes out. ,websl001,0,
+stevl001 scores. ,12,6,guerw001,,,,54,92,CBFX,karls001,0,1,guerw001 singles. ,guerw001,0,
+,32,6,guerw001,,,,55,102,CBFBFBFFFX,karls001,1,0,,cabro001,0,F
+,01,6,ledea001,,,,58,2,CH,telfa001,0,0,ledea001 hit by pitch. ,ledea001,1,
+ledea001 to 2B. ,21,6,,ledea001,,,59,6,BFBX,telfa001,1,0,goodt001 grounds out. ,goodt001,1,G
+,31,6,lansm001,ledea001,,,60,11,BBFBB,telfa001,0,0,lansm001 walks. ,lansm001,1,
+,00,6,,ledea001,,,61,12,X,telfa001,2,0,Double Play. ,walkl001,1,
+,00,7,,,,,63,1,X,belis001,1,0,,bergp001,0,G
+,21,7,,,,,64,5,BBFX,belis001,1,0,,whitr001,0,F
+,12,7,,,,,65,10,BCSFX,belis001,1,0,,guerv001,0,F
+,32,7,cirij001,,,,66,19,CCFBBBB,telfa001,0,0,cirij001 walks. ,cirij001,1,
+,22,7,cirij001,,,,68,5,FLBBS,klins002,1,0,heltt001 strikes out. ,heltt001,1,
+,00,7,,,,,69,6,X,klins002,2,0,Double Play. ,hammj001,1,
+,12,8,,,,,70,14,BSCX,belis001,1,0,vidrj001 grounds out. ,vidrj001,0,G
+,01,8,,,,,71,16,SX,belis001,1,0,,stevl001,0,F
+,22,8,,,,,72,21,BCBCX,belis001,1,0,barrm003 grounds out. ,barrm003,0,G
+,00,8,peren001,,,,75,1,X,stris001,0,0,peren001 singles. ,peren001,1,
+peren001 scores. ,02,8,,,,,76,4,FFX,stris001,0,2,maynb001 homers. ,maynb001,1,
+,22,8,bragd001,,,,78,11,SFBBFFX,stris001,0,0,bragd001 reaches on error. ,bragd001,1,G
+bragd001 scores. ,10,8,,,goodt001,,79,13,BX,stris001,0,1,goodt001 triples. ,goodt001,1,
+,30,8,lansm001,,goodt001,,80,17,BBBB,stris001,0,0,lansm001 walks. ,lansm001,1,
+goodt001 scores. ,11,8,lansm001,,,,81,20,FBX,stris001,1,1,walkl001 hits sacrifice fly. ,walkl001,1,
+,32,8,lansm001,,,,82,26,BFBCBX,stris001,1,0,,cirij001,1,L
+lansm001 to 3B. ,32,8,heltt001,,lansm001,,83,36,SBBSFFFFBX,stris001,0,0,heltt001 singles. ,heltt001,1,
+,11,8,heltt001,,lansm001,,86,3,BSX,rigbb001,1,0,shumt001 grounds out. ,shumt001,1,G
+,22,9,,,,,90,5,FBFBX,dejem001,1,0,websl001 grounds out. ,websl001,0,G
+,12,9,,,,,91,11,CBFFFX,dejem001,0,1,coqut001 homers. ,coqut001,0,
+,00,9,,,,,92,12,X,dejem001,1,0,cabro001 grounds out. ,cabro001,0,G
+bergp001 to 2B. ,11,9,,bergp001,,,93,15,FBX,dejem001,0,0,bergp001 reaches on error. ,bergp001,0,F
+bergp001 scores. ,01,9,jonet004,,,,95,17,CX,dejem001,0,1,jonet004 singles. ,jonet004,0,
+jonet004 out. ,00,9,guerv001,,,,96,18,X,dejem001,1,0,guerv001 reaches on fielder's choice. ,guerv001,0,

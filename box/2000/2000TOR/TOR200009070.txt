@@ -1,0 +1,141 @@
+version,2
+info,visteam,SEA
+info,hometeam,TOR
+info,site,TOR02
+info,date,2000/09/07
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,hollm901
+info,ump1b,onorb901
+info,ump2b,bellw901
+info,ump3b,iassd901
+info,pitches,pitches
+info,temp,76
+info,winddir,tocf
+info,windspeed,16
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,188
+info,attendance,17571
+info,wp,garcf002
+info,lp,tracs001
+info,save,
+start,hendr001,"Rickey Henderson",0,1,7
+start,marta001,"Al Martin",0,2,9
+start,rodra001,"Alex Rodriguez",0,3,6
+start,marte001,"Edgar Martinez",0,4,10
+start,olerj001,"John Olerud",0,5,3
+start,camem001,"Mike Cameron",0,6,8
+start,guilc001,"Carlos Guillen",0,7,5
+start,wilsd001,"Dan Wilson",0,8,2
+start,mclem001,"Mark McLemore",0,9,4
+start,garcf002,"Freddy An. Garcia",0,0,1
+start,stews002,"Shannon Stewart",1,1,7
+start,gonza001,"Alex S. Gonzalez",1,2,6
+start,martd002,"Dave Martinez",1,3,9
+start,delgc001,"Carlos Delgado",1,4,3
+start,fullb001,"Brad Fullmer",1,5,10
+start,batit001,"Tony Batista",1,6,5
+start,fletd001,"Darrin Fletcher",1,7,2
+start,cruzj004,"Jose Cruz",1,8,8
+start,moram001,"Mickey Morandini",1,9,4
+start,tracs001,"Steve Trachsel",1,0,1
+play,1,0,hendr001,01,CX,S7/7S
+play,1,0,marta001,02,SSS,K
+play,1,0,rodra001,21,BBFX,54(1)3/GDP
+play,1,1,stews002,00,X,9/F9S
+play,1,1,gonza001,10,BX,53/G
+play,1,1,martd002,12,BCFX,4/P4
+play,2,0,marte001,12,BCFX,63/G
+play,2,0,olerj001,10,BX,S9
+play,2,0,camem001,32,BFBBFFFX,S7.1-2
+play,2,0,guilc001,01,CX,5/FL
+play,2,0,wilsd001,12,FBSS,K
+play,2,1,delgc001,31,BBBSB,W
+play,2,1,fullb001,12,CFBX,8/F8
+play,2,1,batit001,12,BSSS,K
+play,2,1,fletd001,30,BBBB,W.1-2
+play,2,1,cruzj004,22,BSFBX,8/F8
+play,3,0,mclem001,32,BCBFBFX,8/F8
+play,3,0,hendr001,11,SBX,9/F9
+play,3,0,marta001,10,BX,43/G
+play,3,1,moram001,30,BBBB,W
+play,3,1,stews002,32,BBBCFS,K+SB2
+play,3,1,gonza001,02,CSS,K
+play,3,1,martd002,00,X,FC5.2X3(5X);B-1#
+play,4,0,rodra001,22,FBCBX,5/L5
+play,4,0,marte001,22,BBCSX,3/FL
+play,4,0,olerj001,11,CBX,31/G
+play,4,1,delgc001,30,BBBX,43/G
+play,4,1,fullb001,32,CSBFBBFFX,43/G
+play,4,1,batit001,22,SFBBS,K
+play,5,0,camem001,12,CCBX,D7/7D
+play,5,0,guilc001,31,BBBCB,W
+play,5,0,wilsd001,11,BLX,14/SH.2-3;1-2
+play,5,0,mclem001,11,SBX,D9.3-H;2-H
+play,5,0,hendr001,00,X,D7.2-H
+play,5,0,marta001,00,X,8/F8D
+play,5,0,rodra001,21,BSBX,7/L7
+play,5,1,fletd001,22,CFBFBX,S9/9S
+play,5,1,cruzj004,31,BBBCX,46(1)3/GDP
+play,5,1,moram001,00,X,S8
+play,5,1,stews002,21,BBFX,53/G
+play,6,0,marte001,12,CFBX,13/G
+play,6,0,olerj001,01,CX,S7
+play,6,0,camem001,12,CCBC,K/C
+play,6,0,guilc001,32,FSBBFBFFFX,43/G
+play,6,1,gonza001,12,CBFS,K
+play,6,1,martd002,01,CX,43/G
+play,6,1,delgc001,30,BBBB,W
+play,6,1,fullb001,20,BBX,43/G
+play,7,0,wilsd001,12,FFBFX,9/F9D
+play,7,0,mclem001,32,CBSBBX,31/G
+play,7,0,hendr001,10,BX,5/P5
+play,7,1,batit001,32,BCFBBB,W
+play,7,1,fletd001,01,CX,64(1)3/GDP
+play,7,1,cruzj004,30,BBBB,W
+play,7,1,moram001,10,BC,SB2
+play,7,1,moram001,22,BCCBX,4/P4
+play,8,0,marta001,01,CX,HR/9
+play,8,0,rodra001,12,FFFBX,D8/8D
+play,8,0,marte001,00,,NP
+sub,quanp001,"Paul Quantrill",1,0,1
+play,8,0,marte001,20,BBX,43/G.2-3
+play,8,0,olerj001,30,IIII,IW
+play,8,0,camem001,31,SBBBX,64(1)3/GDP
+play,8,1,stews002,00,,NP
+sub,gipsc001,"Charles Gipson",0,2,9
+play,8,1,stews002,01,CX,9/F9
+play,8,1,gonza001,12,SBFS,K
+play,8,1,martd002,21,CBBX,43/G
+play,9,0,guilc001,00,,NP
+sub,kochb001,"Billy Koch",1,0,1
+play,9,0,guilc001,22,BBFCFX,D9/9D
+play,9,0,wilsd001,12,BFFS,K
+play,9,0,mclem001,20,BBX,S/89.2-H
+play,9,0,hendr001,32,CSBFFBBB,W.1-2
+play,9,0,gipsc001,10,BX,E5/TH.2-3;1-2
+play,9,0,rodra001,32,FBBBSX,63/G.3-H(UR);2-3;1-2
+play,9,0,marte001,21,BBCX,D/89.3-H(UR);2-H(UR)
+play,9,0,olerj001,00,,NP
+sub,guthm001,"Mark Guthrie",1,0,1
+play,9,0,olerj001,00,,NP
+sub,leshb001,"Brian Lesher",0,4,12
+play,9,0,olerj001,01,CX,63/G
+play,9,1,delgc001,00,,NP
+sub,panij001,"Jose Paniagua",0,0,1
+play,9,1,delgc001,00,,NP
+sub,ibanr001,"Raul Ibanez",0,1,7
+play,9,1,delgc001,12,CFBX,53/G
+play,9,1,fullb001,10,BX,7/F7
+play,9,1,batit001,00,X,HR/78
+play,9,1,fletd001,02,SFX,63/G
+data,er,garcf002,0
+data,er,panij001,1
+data,er,tracs001,4
+data,er,quanp001,0
+data,er,kochb001,1
+data,er,guthm001,0

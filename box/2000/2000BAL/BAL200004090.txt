@@ -1,0 +1,157 @@
+version,2
+info,visteam,DET
+info,hometeam,BAL
+info,site,BAL12
+info,date,2000/04/09
+info,number,0
+info,starttime,1:35PM
+info,daynight,day
+info,usedh,true
+info,umphome,danlk901
+info,ump1b,fleta901
+info,ump2b,mckej901
+info,ump3b,morrd901
+info,pitches,pitches
+info,temp,52
+info,winddir,rtol
+info,windspeed,20
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,195
+info,attendance,42178
+info,wp,mercj001
+info,lp,nitkc001
+info,save,
+start,polol001,"Luis Polonia",0,1,9
+start,jeffg001,"Gregg Jefferies",0,2,10
+start,higgb001,"Bobby Higginson",0,3,7
+start,palmd002,"Dean Palmer",0,4,5
+start,ausmb001,"Brad Ausmus",0,5,2
+start,fickr001,"Robert Fick",0,6,3
+start,easld001,"Damion Easley",0,7,4
+start,encaj001,"Juan Encarnacion",0,8,8
+start,cruzd001,"Deivi Cruz",0,9,6
+start,nitkc001,"C.J. Nitkowski",0,0,1
+start,amarr001,"Rich Amaral",1,1,8
+start,deshd001,"Delino DeShields",1,2,4
+start,surhb001,"B.J. Surhoff",1,3,7
+start,bellj002,"Albert Belle",1,4,9
+start,conij001,"Jeff Conine",1,5,3
+start,ripkc001,"Cal Ripken",1,6,5
+start,clarw001,"Will Clark",1,7,10
+start,moraw001,"Willie Morales",1,8,2
+start,bordm001,"Mike Bordick",1,9,6
+start,mercj001,"Jose Mercedes",1,0,1
+play,1,0,polol001,32,CBBBCFX,T9/9D
+play,1,0,jeffg001,32,CBBSBB,W
+play,1,0,higgb001,10,BX,E3/TH.3-H(NR);1-3;B-2
+play,1,0,palmd002,12,CSBS,K
+play,1,0,ausmb001,31,BFBBX,S9/9S.3-H;2-3
+play,1,0,fickr001,32,BCBBFFFX,S/78.3-H(UR);1-3
+play,1,0,easld001,00,,NP
+sub,halts001,"Shane Halter",0,7,11
+play,1,0,halts001,02,FSS,K
+play,1,0,encaj001,12,SFFFFBFFFX,3/P3
+play,1,1,amarr001,00,,NP
+sub,halts001,"Shane Halter",0,7,4
+play,1,1,amarr001,22,BFCBFX,3/G
+play,1,1,deshd001,32,BFBBCS,K
+play,1,1,surhb001,12,CBCX,S8/8S
+play,1,1,bellj002,21,CBBX,S7/7S.1-2
+play,1,1,conij001,21,BBSX,E8/F.2-H(UR);1-H(UR)(NR);B-3
+play,1,1,ripkc001,32,CSBBBX,13/G
+play,2,0,cruzd001,11,BCX,8/L8
+play,2,0,polol001,30,BBBB,W
+play,2,0,jeffg001,31,BBBCB,W.1-2
+play,2,0,higgb001,21,CBBX,9/F9.2-3
+play,2,0,palmd002,21,BCBX,3/FL
+play,2,1,clarw001,22,BBSSX,E3/G
+play,2,1,moraw001,00,X,S8/8S.1-2
+com,"Debut game for Willie Morales"
+play,2,1,bordm001,22,BSSBFFFX,S7.2-H(UR);1-2
+play,2,1,amarr001,20,BBX,S7/7S.2-3;1-2
+play,2,1,deshd001,21,BSBX,S7.3-H;2-H;1-2
+play,2,1,surhb001,02,FFC,K/C
+play,2,1,bellj002,21,BBCB,SB3;SB2
+play,2,1,bellj002,31,BBCBB,W
+play,2,1,conij001,11,BFX,S9/9S.3-H;2-3;1-2
+play,2,1,ripkc001,32,CFBBBFB,W.3-H;2-3;1-2
+play,2,1,clarw001,22,CBBFX,7/SF.3-H(UR)
+play,2,1,moraw001,22,BCBCS,K
+play,3,0,ausmb001,12,CCBFFFFX,8/F8
+play,3,0,fickr001,22,CBBCX,S9/9S
+play,3,0,halts001,21,BFBX,S8.1-3
+play,3,0,encaj001,00,X,54(1)3/GDP
+play,3,1,bordm001,21,CBBX,8/F8
+play,3,1,amarr001,10,BX,63/G
+play,3,1,deshd001,01,CX,S
+play,3,1,surhb001,10,BC,SB2
+play,3,1,surhb001,32,BCBBCFS,K
+play,4,0,cruzd001,01,CX,8/F8
+play,4,0,polol001,12,CSBX,8/F8
+play,4,0,jeffg001,11,BFX,S8
+play,4,0,higgb001,00,X,3/G
+play,4,1,bellj002,00,X,S9
+play,4,1,conij001,00,X,S7/7S.1-2
+play,4,1,ripkc001,12,FBFFFS,K
+play,4,1,clarw001,00,X,D9.2-H;1-H
+play,4,1,moraw001,00,,NP
+sub,blaiw001,"Willie Blair",0,0,1
+play,4,1,moraw001,22,BSBFFX,S7/7S.2-3
+play,4,1,bordm001,00,X,8/SF.3-H
+play,4,1,amarr001,32,BFBBFX,S7.1-2
+play,4,1,deshd001,32,BBBCCX,7/L7
+play,5,0,palmd002,00,X,HR/7
+play,5,0,ausmb001,32,FBBBCX,53/G
+play,5,0,fickr001,02,CFFFFS,K
+play,5,0,halts001,11,BFX,53/G
+play,5,1,surhb001,01,CX,4/L4
+play,5,1,bellj002,20,BBX,8/F8D
+play,5,1,conij001,32,CBFBBX,63/G
+play,6,0,encaj001,00,,NP
+sub,worrt002,"Tim Worrell",1,0,1
+play,6,0,encaj001,00,X,HR/8
+play,6,0,cruzd001,10,BX,9/F9
+play,6,0,polol001,02,FCX,9/F9
+play,6,0,jeffg001,22,CFFBBS,K
+play,6,1,ripkc001,00,X,43/G
+play,6,1,clarw001,22,CCBBX,31/G
+play,6,1,moraw001,12,CCBX,7/F7
+play,7,0,higgb001,22,CBCBX,D9/9S
+play,7,0,palmd002,21,SBBX,9/F9
+play,7,0,ausmb001,22,CCBBX,D9/9S.2-H
+play,7,0,fickr001,12,BCCS,K
+play,7,0,halts001,12,CBFX,8/F8D
+play,7,1,bordm001,00,,NP
+sub,pattd001,"Danny Patterson",0,0,1
+play,7,1,bordm001,01,CX,43/G
+play,7,1,amarr001,10,BX,S7
+play,7,1,deshd001,32,BBBCCX,43/G.1-2
+play,7,1,surhb001,10,BX,3/G
+play,8,0,encaj001,00,,NP
+sub,groob001,"Buddy Groom",1,0,1
+play,8,0,encaj001,00,,NP
+sub,garcj001,"Jesse Garcia",1,2,4
+play,8,0,encaj001,02,CFX,3E1/G
+play,8,0,cruzd001,02,CCX,54(1)3/GDP
+play,8,0,polol001,00,X,13/G
+play,8,1,bellj002,00,,NP
+sub,jonet003,"Todd Jones",0,0,1
+play,8,1,bellj002,00,X,D7/7S
+play,8,1,conij001,11,BFX,S.2-2
+play,8,1,ripkc001,10,BX,7/F7
+play,8,1,clarw001,32,BSBBCS,K+CS3(25)/DP
+play,9,0,jeffg001,00,,NP
+sub,tromm001,"Mike Trombley",1,0,1
+play,9,0,jeffg001,21,BCBX,31/G
+play,9,0,higgb001,22,BCCBS,K
+play,9,0,palmd002,21,CBBX,9/F9
+data,er,nitkc001,7
+data,er,blaiw001,0
+data,er,pattd001,0
+data,er,jonet003,0
+data,er,mercj001,3
+data,er,worrt002,2
+data,er,groob001,0
+data,er,tromm001,0

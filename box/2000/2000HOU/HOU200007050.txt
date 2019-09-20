@@ -1,0 +1,179 @@
+version,2
+info,visteam,ARI
+info,hometeam,HOU
+info,site,HOU03
+info,date,2000/07/05
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,laynj901
+info,ump1b,barrt901
+info,ump2b,randt901
+info,ump3b,monte901
+info,pitches,pitches
+info,temp,72
+info,winddir,unknown
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,230
+info,attendance,36218
+info,wp,morgm001
+info,lp,valdm001
+info,save,kim-b001
+start,womat001,"Tony Womack",0,1,6
+start,bellj001,"Jay Bell",0,2,4
+start,gonzl001,"Luis Gonzalez",0,3,7
+start,finls001,"Steve Finley",0,4,8
+start,lee-t002,"Travis Lee",0,5,3
+start,contj001,"Jason Conti",0,6,9
+start,milld002,"Damian Miller",0,7,2
+start,klasd001,"Danny Klassen",0,8,5
+start,figun001,"Nelson Figueroa",0,9,1
+start,spieb001,"Bill Spiers",1,1,5
+start,biggc001,"Craig Biggio",1,2,4
+start,bagwj001,"Jeff Bagwell",1,3,3
+start,berkl001,"Lance Berkman",1,4,9
+start,aloum001,"Moises Alou",1,5,7
+start,hidar001,"Richard Hidalgo",1,6,8
+start,lugoj001,"Julio Lugo",1,7,6
+start,euset001,"Tony Eusebio",1,8,2
+start,reyns001,"Shane Reynolds",1,9,1
+play,1,0,womat001,22,CBFBS,K
+play,1,0,bellj001,01,CX,63/G
+play,1,0,gonzl001,21,CBBX,D9.B-3(E9)
+play,1,0,finls001,22,CCBBX,S9.3-H
+play,1,0,lee-t002,00,B,SB2
+play,1,0,lee-t002,32,BFBCBC,K/C
+play,1,1,spieb001,32,BCBBCC,K/C
+play,1,1,biggc001,02,CFC,K/C
+play,1,1,bagwj001,12,BCFX,S7
+play,1,1,berkl001,32,BFBBCFX,HR/9.1-H
+play,1,1,aloum001,31,BBBCX,53/G
+play,2,0,contj001,21,FBBX,7/F7D
+play,2,0,milld002,10,BX,HR/7
+play,2,0,klasd001,31,BCBBB,W
+play,2,0,figun001,00,X,14/SH.1-2
+play,2,0,womat001,12,BCFX,43/G
+play,2,1,hidar001,11,CBX,53/G
+play,2,1,lugoj001,10,BX,13/BG
+play,2,1,euset001,02,CCX,43/G
+play,3,0,bellj001,02,FCX,S7
+play,3,0,gonzl001,01,CX,S9/9S.1-2
+play,3,0,finls001,22,BBFFX,S9/9S.2-3;1-2
+play,3,0,lee-t002,10,BX,S7.3-H;2-3;1-2
+play,3,0,contj001,00,X,FC4.3-H;2-3;1-2;B-1
+play,3,0,milld002,22,BSFBX,52(3)/FO.2-3;1-2
+play,3,0,klasd001,00,X,52(3)/FO.2-3;1-2
+play,3,0,figun001,02,CSFC,K/C
+play,3,1,reyns001,00,X,D9/9D
+play,3,1,spieb001,31,BBBCX,41/G.2-3
+play,3,1,biggc001,11,BFX,9/SF.3-H
+play,3,1,bagwj001,31,BCBBB,W
+play,3,1,berkl001,31,BBBCB,W.1-2
+play,3,1,aloum001,00,X,HR/78.2-H;1-H
+play,3,1,hidar001,01,CX,53/G
+play,4,0,womat001,02,CSX,7/F7
+play,4,0,bellj001,22,CFBBX,13/G
+play,4,0,gonzl001,20,BBX,3/G
+play,4,1,lugoj001,02,FSC,K/C
+play,4,1,euset001,10,BX,9/F9
+play,4,1,reyns001,31,BFBBX,63/G
+com,"$the roof was opened"
+play,5,0,finls001,11,BCX,31/G
+play,5,0,lee-t002,00,X,31/G
+play,5,0,contj001,21,BFBX,4/L4
+play,5,1,spieb001,00,,NP
+sub,bautd001,"Danny Bautista",0,9,9
+play,5,1,spieb001,00,,NP
+sub,morgm001,"Mike Morgan",0,6,1
+play,5,1,spieb001,01,CX,6/L6
+play,5,1,biggc001,01,CX,6/P6
+play,5,1,bagwj001,32,BFFBBFFB,W
+play,5,1,berkl001,21,CBBX,D/78.1-H;B-H(E2/TH)
+play,5,1,aloum001,00,X,S7
+play,5,1,hidar001,10,BX,8/F8D
+play,6,0,milld002,10,BX,D7/7S
+play,6,0,klasd001,31,BBCBB,W
+play,6,0,bautd001,12,FBCFX,54(1)/FO.2-3
+play,6,0,womat001,31,BBCBX,S7/7S.3-H;1-2
+play,6,0,bellj001,31,BFBBX,8/F8.2-3;1-2
+play,6,0,gonzl001,32,BCBFBC,K/C
+play,6,1,lugoj001,11,CBX,S
+play,6,1,euset001,00,B,CS2(26)
+play,6,1,euset001,32,BFSBBX,8/F8D
+play,6,1,reyns001,00,,NP
+sub,wardd002,"Daryle Ward",1,9,11
+play,6,1,wardd002,01,FX,7/F7D
+play,7,0,finls001,00,,NP
+sub,cabrj001,"Jose Cabrera",1,9,1
+play,7,0,finls001,21,BBCX,D/78
+play,7,0,lee-t002,22,SBSBFX,D7/7D.2-H
+play,7,0,morgm001,00,,NP
+sub,counc001,"Craig Counsell",0,6,11
+play,7,0,counc001,00,X,S8.2-H
+play,7,0,milld002,00,,NP
+sub,valdm001,"Marc Valdes",1,9,1
+play,7,0,milld002,12,BFSX,E5/TH.1-3
+play,7,0,klasd001,12,CFFBFX,FC5.3XH(52);1-3;B-2#
+play,7,0,bautd001,12,FBSFX,63/G.3-H(UR)
+play,7,0,womat001,00,X,S9.2-H(UR)
+play,7,0,bellj001,10,BB,SB2
+play,7,0,bellj001,22,BBCFFS,K
+play,7,1,spieb001,00,,NP
+sub,counc001,"Craig Counsell",0,6,4
+play,7,1,spieb001,00,,NP
+sub,padiv001,"Vicente Padilla",0,2,1
+play,7,1,spieb001,12,BFFC,K/C
+play,7,1,biggc001,10,BX,S8
+play,7,1,bagwj001,21,BSBX,S7.1-2
+play,7,1,berkl001,32,SFBFFFFBBFB,W.2-3;1-2
+play,7,1,aloum001,10,BX,64(1)3/GDP
+play,8,0,gonzl001,32,CBBFBX,T/78D
+play,8,0,finls001,31,BBBSB,W
+play,8,0,lee-t002,21,BBFX,43/G.3-H;1-2
+play,8,0,counc001,30,BBBB,W
+play,8,0,milld002,00,X,S9/9S.2-H;1-3;B-2(TH)
+play,8,0,klasd001,00,,NP
+sub,henrd002,"Doug Henry",1,4,1
+play,8,0,klasd001,00,,NP
+sub,spieb001,"Bill Spiers",1,1,9
+play,8,0,klasd001,00,,NP
+sub,trubc001,"Chris Truby",1,9,5
+play,8,0,klasd001,12,BCFFS,K
+play,8,0,bautd001,22,BBFSFX,53/G
+play,8,1,hidar001,00,,NP
+sub,friah001,"Hanley Frias",0,2,4
+play,8,1,hidar001,00,,NP
+sub,counc001,"Craig Counsell",0,6,5
+play,8,1,hidar001,00,,NP
+sub,kim-b001,"Byung-Hyun Kim",0,8,1
+play,8,1,hidar001,30,BBBB,W
+play,8,1,lugoj001,32,BBBCFS,K+SB2
+play,8,1,euset001,02,FCH,HP
+play,8,1,trubc001,32,BSBBSX,3/FL
+play,8,1,spieb001,31,CBBBX,7/F7S
+play,9,0,womat001,22,CBFBFFX,9/F9
+play,9,0,friah001,22,CBFBFFC,K/C
+play,9,0,gonzl001,00,X,HR/9
+play,9,0,finls001,21,CBBX,4/P4
+play,9,1,biggc001,32,BCBBFB,W
+play,9,1,bagwj001,00,B,SB2
+play,9,1,bagwj001,11,BCS,SB3
+play,9,1,bagwj001,22,BCSBX,2/P2
+play,9,1,henrd002,00,,NP
+sub,melum001,"Mitch Meluskey",1,4,11
+play,9,1,melum001,32,BSBBSFB,W
+play,9,1,aloum001,00,X,S/78.3-H;1-3
+play,9,1,hidar001,22,SBFFBFS,K
+play,9,1,lugoj001,22,BBCFFS,K
+data,er,figun001,6
+data,er,morgm001,2
+data,er,padiv001,0
+data,er,kim-b001,1
+data,er,reyns001,5
+data,er,cabrj001,2
+data,er,valdm001,2
+data,er,henrd002,1

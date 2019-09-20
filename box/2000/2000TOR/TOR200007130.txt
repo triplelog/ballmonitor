@@ -1,0 +1,143 @@
+version,2
+info,visteam,PHI
+info,hometeam,TOR
+info,site,TOR02
+info,date,2000/07/13
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,danlk901
+info,ump1b,lampi901
+info,ump2b,morrd901
+info,ump3b,mckej901
+info,pitches,pitches
+info,temp,73
+info,winddir,tolf
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,159
+info,attendance,22163
+info,wp,schic002
+info,lp,carpc002
+info,save,branj001
+start,gland001,"Doug Glanville",0,1,8
+start,gantr001,"Ron Gant",0,2,7
+start,abreb001,"Bobby Abreu",0,3,9
+start,roles001,"Scott Rolen",0,4,5
+start,liebm001,"Mike Lieberthal",0,5,2
+start,burrp001,"Pat Burrell",0,6,3
+start,duceb001,"Rob Ducey",0,7,10
+start,moram001,"Mickey Morandini",0,8,4
+start,relad001,"Desi Relaford",0,9,6
+start,schic002,"Curt Schilling",0,0,1
+start,stews002,"Shannon Stewart",1,1,7
+start,bushh001,"Homer Bush",1,2,4
+start,mondr002,"Raul Mondesi",1,3,9
+start,delgc001,"Carlos Delgado",1,4,3
+start,fullb001,"Brad Fullmer",1,5,10
+start,batit001,"Tony Batista",1,6,5
+start,fletd001,"Darrin Fletcher",1,7,2
+start,cruzj004,"Jose Cruz",1,8,8
+start,woodc001,"Chris Woodward",1,9,6
+start,carpc002,"Chris Carpenter",1,0,1
+play,1,0,gland001,22,CSBBFX,3/FL
+play,1,0,gantr001,22,CBBCFC,K/C
+play,1,0,abreb001,12,CCBFS,K
+play,1,1,stews002,22,CFBBX,8/F8D
+play,1,1,bushh001,12,BCFX,8/F8
+play,1,1,mondr002,01,CX,53/G
+play,2,0,roles001,01,CX,8/F8
+play,2,0,liebm001,32,BBBCFX,S8
+play,2,0,burrp001,21,BBCX,D9.1-3
+play,2,0,duceb001,32,SBBBSFFFX,5/P5
+play,2,0,moram001,21,CBBX,D9.3-H;2-H
+play,2,0,relad001,12,CFBX,S9.2-H
+play,2,0,gland001,12,CSBS,K
+play,2,1,delgc001,10,BX,3/G
+play,2,1,fullb001,11,CBX,HR/9
+play,2,1,batit001,10,BX,63/G
+play,2,1,fletd001,01,CX,7/F7
+play,3,0,gantr001,32,BBFSBFX,HR/7
+play,3,0,abreb001,11,BCX,63/G
+play,3,0,roles001,11,CBX,53/G
+play,3,0,liebm001,30,BBBX,7/L7
+play,3,1,cruzj004,01,FX,8/F8
+play,3,1,woodc001,10,BX,8/F8D
+play,3,1,stews002,10,BX,8/F89D
+play,4,0,burrp001,22,BSCBX,43/G
+play,4,0,duceb001,00,X,8/F8
+play,4,0,moram001,22,FBCBC,K/C
+play,4,1,bushh001,11,CBX,43/G
+play,4,1,mondr002,00,X,63/G
+play,4,1,delgc001,01,CX,HR/78
+play,4,1,fullb001,11,BFX,31/G
+play,5,0,relad001,12,CBCX,43/G
+play,5,0,gland001,00,X,13/G
+play,5,0,gantr001,00,X,63/G
+play,5,1,batit001,10,BX,HR/7
+play,5,1,fletd001,22,BCBFX,7/F78
+play,5,1,cruzj004,12,CFBS,K
+play,5,1,woodc001,12,CBFX,4/L4
+play,6,0,abreb001,11,CBX,S
+play,6,0,roles001,11,BSB,CS2(24)
+play,6,0,roles001,31,BSBBX,D9
+play,6,0,liebm001,10,BX,63/G.2-3
+play,6,0,burrp001,01,CX,53/G
+play,6,1,stews002,32,BCFBBX,43/G
+play,6,1,bushh001,10,BX,S
+play,6,1,mondr002,00,X,D9.1-3
+play,6,1,delgc001,30,IIII,IW
+play,6,1,fullb001,00,X,4(1)3/GDP
+play,7,0,duceb001,22,CBSFFBX,43/G
+play,7,0,moram001,12,BFFX,43/G
+play,7,0,relad001,00,X,8/F89S
+play,7,1,batit001,32,FBBBFX,9/F9
+play,7,1,fletd001,12,FBFFFFFX,6/P6
+play,7,1,cruzj004,11,BSX,3/G
+play,8,0,gland001,21,BCBX,63/G
+play,8,0,gantr001,00,X,S5/BG5
+play,8,0,abreb001,12,FBSX,D9.1-3
+play,8,0,roles001,30,IIII,IW
+play,8,0,liebm001,10,BX,43/G.3-H;2-3;1-2
+play,8,0,burrp001,01,CX,HR/8.3-H;2-H
+play,8,0,duceb001,30,BBBB,W
+play,8,0,moram001,00,,NP
+sub,borbp001,"Pedro Borbon",1,0,1
+play,8,0,moram001,22,BCSBFFS,K
+play,8,1,woodc001,00,,NP
+sub,huntb001,"Brian R. Hunter",0,6,3
+play,8,1,woodc001,00,,NP
+sub,brocc001,"Chris Brock",0,0,1
+play,8,1,woodc001,00,,NP
+sub,grebc001,"Craig Grebeck",1,9,11
+play,8,1,grebc001,12,BCFX,63/G
+play,8,1,stews002,22,BFBFX,9/F9
+play,8,1,bushh001,00,X,7/L7
+play,9,0,relad001,00,,NP
+sub,grebc001,"Craig Grebeck",1,9,6
+play,9,0,relad001,00,,NP
+sub,quanp001,"Paul Quantrill",1,0,1
+play,9,0,relad001,01,CX,8/F8
+play,9,0,gland001,01,FX,4/L4
+play,9,0,gantr001,11,CBX,D/78D
+play,9,0,abreb001,32,CBCBBFB,W
+play,9,0,roles001,21,BBFX,8/F8
+play,9,1,mondr002,32,FBBBFB,W
+play,9,1,delgc001,32,CBBFFBB,W.1-2
+play,9,1,fullb001,00,,NP
+sub,greet003,"Todd Greene",1,5,11
+play,9,1,greet003,00,X,46(1)3/GDP.2-3
+play,9,1,batit001,11,CBX,HR/9.3-H
+play,9,1,fletd001,10,BX,S7
+play,9,1,cruzj004,00,,NP
+sub,branj001,"Jeff Brantley",0,0,1
+play,9,1,cruzj004,20,BBX,8/F8
+data,er,schic002,3
+data,er,brocc001,2
+data,er,branj001,0
+data,er,carpc002,8
+data,er,borbp001,0
+data,er,quanp001,0

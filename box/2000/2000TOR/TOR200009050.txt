@@ -1,0 +1,138 @@
+version,2
+info,visteam,SEA
+info,hometeam,TOR
+info,site,TOR02
+info,date,2000/09/05
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,bellw901
+info,ump1b,iassd901
+info,ump2b,hollm901
+info,ump3b,onorb901
+info,pitches,pitches
+info,temp,72
+info,winddir,ltor
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,172
+info,attendance,21128
+info,wp,rhoda001
+info,lp,escok001
+info,save,sasak001
+start,hendr001,"Rickey Henderson",0,1,7
+start,mclem001,"Mark McLemore",0,2,4
+start,rodra001,"Alex Rodriguez",0,3,6
+start,marte001,"Edgar Martinez",0,4,10
+start,olerj001,"John Olerud",0,5,3
+start,buhnj001,"Jay Buhner",0,6,9
+start,camem001,"Mike Cameron",0,7,8
+start,olivj001,"Joe Oliver",0,8,2
+start,belld002,"David Bell",0,9,5
+start,selea001,"Aaron Sele",0,0,1
+start,stews002,"Shannon Stewart",1,1,7
+start,gonza001,"Alex S. Gonzalez",1,2,6
+start,martd002,"Dave Martinez",1,3,9
+start,delgc001,"Carlos Delgado",1,4,3
+start,fullb001,"Brad Fullmer",1,5,10
+start,batit001,"Tony Batista",1,6,5
+start,fletd001,"Darrin Fletcher",1,7,2
+start,cruzj004,"Jose Cruz",1,8,8
+start,moram001,"Mickey Morandini",1,9,4
+start,carpc002,"Chris Carpenter",1,0,1
+play,1,0,hendr001,00,X,5/L5
+play,1,0,mclem001,32,CBCBBFB,W
+play,1,0,rodra001,10,BX,S7.1-2
+play,1,0,marte001,30,BBBB,W.2-3;1-2
+play,1,0,olerj001,02,CCX,3/G.3-H;2-3;1-2
+play,1,0,buhnj001,00,X,53/G
+play,1,1,stews002,12,CBFS,K
+play,1,1,gonza001,22,BBCCX,53/G
+play,1,1,martd002,32,BFBFBX,8/F8
+play,2,0,camem001,32,FBBBFB,W
+play,2,0,olivj001,01,CX,S8.1-3
+play,2,0,belld002,00,X,S7.3-H;1-2
+play,2,0,hendr001,11,CBX,9(B)64(1)/FDP.2-3
+play,2,0,mclem001,12,FCBC,K/C
+play,2,1,delgc001,31,BCBBB,W
+play,2,1,fullb001,11,FBX,8/F8
+play,2,1,batit001,22,CBFBB,WP.1-2
+play,2,1,batit001,32,CBFBBB,W
+play,2,1,fletd001,02,CFS,K
+play,2,1,cruzj004,02,CFX,S9.2-3;1-2
+play,2,1,moram001,20,BBX,S9.3-H;2-H;1-3
+play,2,1,stews002,12,BCFX,4/P4
+play,3,0,rodra001,31,CBBBB,W
+play,3,0,marte001,01,CX,64(1)3/GDP
+play,3,0,olerj001,32,FBCBFBX,S9
+play,3,0,buhnj001,22,FCBBX,D/89D.1-H
+play,3,0,camem001,22,CSBBX,8/F8
+play,3,1,gonza001,11,BCX,41/G
+play,3,1,martd002,11,BCX,63/G
+play,3,1,delgc001,00,X,S8
+play,3,1,fullb001,32,BFBBFFX,S7.1-3
+play,3,1,batit001,32,SBBBFFX,53/G
+play,4,0,olivj001,32,CFBBBFX,6/P6
+play,4,0,belld002,11,BFX,7/F7
+play,4,0,hendr001,12,CBCX,6/P6
+play,4,1,fletd001,12,BCFX,31/G
+play,4,1,cruzj004,00,X,7/F7
+play,4,1,moram001,22,BBFCS,K
+play,5,0,mclem001,00,X,43/G
+play,5,0,rodra001,11,CBX,31/G
+play,5,0,marte001,22,CBFBX,D/78
+play,5,0,olerj001,32,FCBBBB,W
+play,5,0,buhnj001,31,FBBBX,63/G
+play,5,1,stews002,10,BX,13/G
+play,5,1,gonza001,00,X,D7/7D
+play,5,1,martd002,32,CBBBFX,43/G.2-3
+play,5,1,delgc001,30,BBBI,IW
+play,5,1,fullb001,10,BX,S/78.3-H;1-3
+play,5,1,batit001,01,CX,7/F7D
+play,6,0,camem001,01,CX,9/F9
+play,6,0,olivj001,00,X,3/G
+play,6,0,belld002,10,BX,63/G
+play,6,1,fletd001,00,X,5/P5
+play,6,1,cruzj004,01,FH,HP
+play,6,1,moram001,22,CFBBS,K+SB2
+play,6,1,stews002,00,X,8/F8
+play,7,0,hendr001,30,BBBB,W
+play,7,0,mclem001,20,BBX,2/BP2
+play,7,0,rodra001,12,CCBX,64(1)3/GDP
+play,7,1,gonza001,12,FCBC,K/C
+play,7,1,martd002,00,,NP
+sub,rhoda001,"Arthur Rhodes",0,0,1
+play,7,1,martd002,11,CBX,7/F7
+play,7,1,delgc001,01,FX,3/G
+play,8,0,marte001,00,,NP
+sub,escok001,"Kelvim Escobar",1,0,1
+play,8,0,marte001,32,BCBBSX,S7
+play,8,0,olerj001,00,,NP
+sub,marta001,"Al Martin",0,4,12
+play,8,0,olerj001,11,BFX,6E3.1-2
+play,8,0,buhnj001,20,BBX,14/SH.2-3;1-2
+play,8,0,camem001,12,BCCFFX,8/SF.3-H(UR)
+play,8,0,olivj001,11,BFX,5/L5
+play,8,1,fullb001,21,BSBX,63/G
+play,8,1,batit001,10,BX,13/G
+play,8,1,fletd001,22,BBCFX,63/G
+play,9,0,belld002,02,CCFC,K/C
+play,9,0,hendr001,32,CBBBFX,53/G
+play,9,0,mclem001,21,FBBX,8/F8
+play,9,1,cruzj004,00,,NP
+sub,ibanr001,"Raul Ibanez",0,1,7
+play,9,1,cruzj004,00,,NP
+sub,gipsc001,"Charles Gipson",0,6,9
+play,9,1,cruzj004,00,,NP
+sub,sasak001,"Kazuhiro Sasaki",0,0,1
+play,9,1,cruzj004,11,CBX,7/F7
+play,9,1,moram001,00,X,43/G
+play,9,1,stews002,01,CX,53/G
+data,er,selea001,3
+data,er,rhoda001,0
+data,er,sasak001,0
+data,er,carpc002,3
+data,er,escok001,0

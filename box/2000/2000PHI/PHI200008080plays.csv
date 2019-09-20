@@ -1,0 +1,87 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,21,1,,,,,0,4,CBBX,daalo001,1,0,,owene001,0,F
+,22,1,,,,,1,11,SSBBFFX,daalo001,1,0,,river002,0,P
+,10,1,,,,,2,13,BX,daalo001,1,0,,boonb002,0,P
+,12,1,,,,,3,4,CFBX,tollb001,1,0,gland001 grounds out. ,gland001,1,G
+,12,1,abreb001,,,,4,8,CFBX,tollb001,0,0,abreb001 singles. ,abreb001,1,
+abreb001 to 2B. ,01,1,roles001,abreb001,,,5,10,CX,tollb001,0,0,roles001 singles. ,roles001,1,
+abreb001 scores. ,01,1,,roles001,,liebm001,6,12,FB,tollb001,0,1,abreb001 steals 3B. roles001 steals 2B. ,liebm001,1,
+,11,1,,roles001,,,7,15,FBX,tollb001,1,0,,liebm001,1,
+,00,1,,roles001,,,8,16,X,tollb001,1,0,lee-t002 grounds out. ,lee-t002,1,G
+,00,2,,,,,9,14,X,daalo001,1,0,,nevip001,0,F
+,22,2,,,,,10,20,CBFFBX,daalo001,1,0,,vitij001,0,F
+,32,2,davib003,,,,11,30,CFBBFBFFFB,daalo001,0,0,davib003 walks. ,davib003,0,
+,01,2,davib003,,,,12,32,FX,daalo001,1,0,,relad001,0,
+,10,2,,,,,13,18,BX,tollb001,0,1,burrp001 homers. ,burrp001,1,
+,21,2,,,,,14,22,CBBX,tollb001,1,0,,andem003,1,F
+,00,2,peret003,,,,15,23,X,tollb001,0,0,peret003 singles. ,peret003,1,G
+,02,2,peret003,,,,16,26,SLS,tollb001,1,0,daalo001 strikes out. ,daalo001,1,
+peret003 to 2B. ,00,2,gland001,peret003,,,17,27,X,tollb001,0,0,gland001 singles. ,gland001,1,G
+,12,2,gland001,peret003,,,18,31,BCCX,tollb001,1,0,,abreb001,1,F
+,12,3,,,,,19,41,CCFBFFFFS,daalo001,1,0,jackd003 strikes out. ,jackd003,0,
+,12,3,,,,,20,45,BCFS,daalo001,1,0,tollb001 strikes out. ,tollb001,0,
+,10,3,owene001,,,,21,47,BX,daalo001,0,0,owene001 singles. ,owene001,0,
+,22,3,owene001,,,,22,52,FBBFS,daalo001,1,0,river002 strikes out. ,river002,0,
+,12,3,roles001,,,,23,39,CFFFFFBX,tollb001,0,0,roles001 singles. ,roles001,1,
+roles001 to 2B. ,00,3,liebm001,roles001,,,24,40,X,tollb001,0,0,liebm001 singles. ,liebm001,1,
+,32,3,liebm001,roles001,,,25,46,BBBCFX,tollb001,1,0,,lee-t002,1,P
+,11,3,liebm001,,roles001,burrp001,26,49,CBB,tollb001,0,0,roles001 steals 3B. ,burrp001,1,
+liebm001 to 2B. ,31,3,burrp001,liebm001,roles001,,27,54,CBBBB,tollb001,0,0,burrp001 walks. ,burrp001,1,
+roles001 scores. liebm001 to 3B. burrp001 out. ,22,3,andem003,,liebm001,,28,59,BFFBX,tollb001,1,1,andem003 reaches on fielder's choice. ,andem003,1,
+andem003 to 2B. ,30,3,peret003,andem003,liebm001,,29,63,BBBB,tollb001,0,0,peret003 walks. ,peret003,1,
+,00,3,peret003,andem003,liebm001,,30,64,X,tollb001,1,0,,daalo001,1,P
+,02,4,,,,,31,56,CCFX,daalo001,1,0,,boonb002,0,F
+,22,4,,nevip001,,,32,62,CBFBFX,daalo001,0,0,nevip001 doubles. ,nevip001,0,
+,00,4,,nevip001,,,33,63,X,daalo001,1,0,,vitij001,0,F
+,32,4,davib003,nevip001,,,34,69,BBCFBB,daalo001,0,0,davib003 walks. ,davib003,0,
+,21,4,davib003,nevip001,,,35,73,BBSX,daalo001,1,0,,relad001,0,L
+,12,4,gland001,,,,36,68,FBFX,tollb001,0,0,gland001 singles. ,gland001,1,
+gland001 scores. ,10,4,,abreb001,,,37,70,BX,tollb001,0,1,abreb001 doubles. ,abreb001,1,
+,12,4,,,,,38,75,CFFBX,tollb001,2,0,Double Play. ,roles001,1,
+,22,4,liebm001,,,,39,81,BBFFFX,tollb001,0,0,liebm001 singles. ,liebm001,1,
+,10,4,liebm001,,,,40,83,BX,tollb001,1,0,,lee-t002,1,P
+,00,5,,,,,41,74,X,daalo001,1,0,,jackd003,0,
+,12,5,,,,,42,78,CCBS,daalo001,1,0,tollb001 strikes out. ,tollb001,0,
+,22,5,,,,,43,83,CBFBS,daalo001,1,0,owene001 strikes out. ,owene001,0,
+,22,5,burrp001,,,,44,88,BCBCX,tollb001,0,0,burrp001 singles. ,burrp001,1,
+,00,5,,,,,45,89,X,tollb001,2,0,Double Play. ,andem003,1,
+,10,5,,,,,46,91,BX,tollb001,1,0,,peret003,1,F
+,12,6,river002,,,,47,87,SCBX,daalo001,0,0,river002 singles. ,river002,0,
+,01,6,river002,,,,48,89,CX,daalo001,1,0,,boonb002,0,L
+river002 to 2B. ,32,6,nevip001,river002,,,49,95,BBSBCX,daalo001,0,0,nevip001 singles. ,nevip001,0,
+river002 scores. nevip001 to 3B. ,12,6,,vitij001,nevip001,,50,101,CSBFFX,daalo001,0,1,vitij001 doubles. ,vitij001,0,
+nevip001 scores. vitij001 scores. ,10,6,,davib003,,,51,103,BX,daalo001,0,2,davib003 doubles. ,davib003,0,
+davib003 to 3B. ,21,6,,,davib003,,52,107,CBBX,daalo001,1,0,relad001 grounds out. ,relad001,0,G
+,32,6,jackd003,,davib003,,53,113,BBFSBB,daalo001,0,0,jackd003 walks. ,jackd003,0,
+,01,6,jackd003,,davib003,,55,115,FX,daalo001,1,0,,mabrj001,0,L
+,22,6,,,,,58,5,FBBFC,erdot001,1,0,sefck001 strikes out. ,sefck001,1,
+,12,6,,,,,59,9,BFFS,erdot001,1,0,gland001 strikes out. ,gland001,1,
+,00,6,,,,,60,10,X,erdot001,0,1,abreb001 homers. ,abreb001,1,
+,21,6,,,,,61,14,BBCX,erdot001,1,0,,roles001,1,F
+,10,7,,,,,63,2,BX,gomew001,1,0,owene001 grounds out. ,owene001,0,G
+,22,7,,,,,64,8,BSSBFX,gomew001,1,0,,river002,0,P
+,32,7,,,,,65,14,CBBBSX,gomew001,1,0,,boonb002,0,F
+,02,7,,,,,66,17,CCX,erdot001,1,0,liebm001 grounds out. ,liebm001,1,G
+,30,7,lee-t002,,,,67,21,BBBB,erdot001,0,0,lee-t002 walks. ,lee-t002,1,
+,00,7,,lee-t002,,burrp001,68,22,B,erdot001,0,0,lee-t002 steals 2B. ,burrp001,1,
+,30,7,burrp001,lee-t002,,,69,26,BIII,erdot001,0,0,burrp001 intentionally walks. ,burrp001,1,
+,21,7,burrp001,lee-t002,,,70,30,BSBX,erdot001,1,0,,andem003,1,
+,01,7,burrp001,lee-t002,,,71,32,CX,erdot001,1,0,peret003 grounds out. ,peret003,1,G
+,02,8,,nevip001,,,72,17,CFX,gomew001,0,0,nevip001 doubles. ,nevip001,0,
+,31,8,klesr001,nevip001,,,75,5,BBSBB,vosbe001,0,0,klesr001 walks. ,klesr001,0,
+,11,8,klesr001,nevip001,,,76,8,LBX,vosbe001,1,0,,davib003,0,L
+nevip001 to 3B. klesr001 to 2B. ,31,8,gonzw001,klesr001,nevip001,,78,13,BCBBB,vosbe001,0,0,gonzw001 walks. ,gonzw001,0,
+nevip001 scores. klesr001 to 3B. dehak001 to 2B. ,32,8,jackd003,dehak001,klesr001,,80,20,FBBFBFX,vosbe001,0,1,jackd003 singles. ,jackd003,0,
+,32,8,jackd003,dehak001,klesr001,,82,26,BFSBBC,vosbe001,1,0,magad001 strikes out. ,magad001,0,
+,32,8,jackd003,dehak001,klesr001,,85,6,BCBCBC,brocc001,1,0,owene001 strikes out. ,owene001,0,
+,32,8,ariaa001,,,,91,7,CBFBBFB,walkk001,0,0,ariaa001 walks. ,ariaa001,1,
+ariaa001 to 2B. ,01,8,,ariaa001,,,92,9,LX,walkk001,1,0,Sacrifice bunt by gland001.,gland001,1,
+,01,8,,ariaa001,,,93,11,CX,walkk001,1,0,,abreb001,1,F
+,32,8,roles001,ariaa001,,,94,17,BCBBSB,walkk001,0,0,roles001 walks. ,roles001,1,
+ariaa001 scores. roles001 to 3B. ,32,8,liebm001,,roles001,,95,23,BBCBSX,walkk001,0,1,liebm001 singles. ,liebm001,1,
+liebm001 to 2B. ,31,8,lee-t002,liebm001,roles001,,96,28,CBBBB,walkk001,0,0,lee-t002 walks. ,lee-t002,1,
+roles001 scores. liebm001 scores. lee-t002 scores. ,02,8,,,,,97,31,FSX,walkk001,0,4,burrp001 homers. ,burrp001,1,
+,12,8,,,,,98,35,CFBX,walkk001,1,0,andem003 grounds out. ,andem003,1,G
+,22,9,,,,,101,5,BFBFS,branj001,1,0,river002 strikes out. ,river002,0,
+,22,9,,,,,102,13,FBFFFFBS,branj001,1,0,boonb002 strikes out. ,boonb002,0,
+,02,9,,,,,104,16,CFS,branj001,1,0,darrm001 strikes out. ,darrm001,0,

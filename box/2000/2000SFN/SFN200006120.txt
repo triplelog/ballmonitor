@@ -1,0 +1,152 @@
+version,2
+info,visteam,CIN
+info,hometeam,SFN
+info,site,SFO03
+info,date,2000/06/12
+info,number,0
+info,starttime,7:15PM
+info,daynight,night
+info,usedh,false
+info,umphome,roe-r901
+info,ump1b,rungb901
+info,ump2b,rapue901
+info,ump3b,shulj901
+info,pitches,pitches
+info,temp,71
+info,winddir,torf
+info,windspeed,13
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,174
+info,attendance,40930
+info,wp,nathj001
+info,lp,bellr003
+info,save,
+start,reesp001,"Pokey Reese",0,1,4
+start,larkb001,"Barry Larkin",0,2,6
+start,grifk002,"Ken Griffey",0,3,8
+start,tuckm001,"Michael Tucker",0,4,9
+start,yound001,"Dmitri Young",0,5,7
+start,cases001,"Sean Casey",0,6,3
+start,boona001,"Aaron Boone",0,7,5
+start,taube001,"Eddie Taubensee",0,8,2
+start,bellr003,"Rob Bell",0,9,1
+start,benam001,"Marvin Benard",1,1,8
+start,muelb001,"Bill Mueller",1,2,5
+start,bondb001,"Barry Bonds",1,3,7
+start,kentj001,"Jeff Kent",1,4,4
+start,snowj001,"J.T. Snow",1,5,3
+start,burke001,"Ellis Burks",1,6,9
+start,martr003,"Ramon E. Martinez",1,7,6
+start,estab001,"Bobby Estalella",1,8,2
+start,nathj001,"Joe Nathan",1,9,1
+play,1,0,reesp001,22,BCFBX,6/P6
+play,1,0,larkb001,32,BBBCCX,8/F8
+play,1,0,grifk002,22,CBBFX,D9
+play,1,0,tuckm001,00,X,7/F7
+play,1,1,benam001,31,CBBBB,W
+play,1,1,muelb001,01,CX,43/G.1-2
+play,1,1,bondb001,20,BBX,41/G.2-3
+play,1,1,kentj001,31,BBCBB,W
+play,1,1,snowj001,10,BX,3/G
+play,2,0,yound001,20,BBX,13/G
+play,2,0,cases001,02,CFFX,S7
+play,2,0,boona001,00,X,6/P6
+play,2,0,taube001,31,BBBCX,3/P3
+play,2,1,burke001,31,BFBBB,W
+play,2,1,martr003,21,BSBX,64(1)3/GDP
+play,2,1,estab001,01,CX,HR/7
+play,2,1,nathj001,01,CX,9/L9
+play,3,0,bellr003,12,BCFS,K
+play,3,0,reesp001,00,X,8/F8S
+play,3,0,larkb001,21,BFBX,5/L5
+play,3,1,benam001,20,BBX,3/G
+play,3,1,muelb001,31,BBBCB,W
+play,3,1,bondb001,32,FBBSBB,W.1-2
+play,3,1,kentj001,22,SFFBBFX,D8/8D.2-H;1XH(842);B-3(THH)
+play,3,1,snowj001,22,CCBFFBX,3/G
+play,4,0,grifk002,31,BBBCB,W
+play,4,0,tuckm001,00,B,WP.1-2
+play,4,0,tuckm001,10,BX,43/G.2-3
+play,4,0,yound001,00,X,S8.3-H
+play,4,0,cases001,00,X,S8.1-2
+play,4,0,boona001,10,BX,54(1)3/GDP
+play,4,1,burke001,10,BX,HR/78
+play,4,1,martr003,32,BBFFBFX,63/G
+play,4,1,estab001,32,FFBBBB,W
+play,4,1,nathj001,02,LLB,SB2
+play,4,1,nathj001,12,LLBX,53/G
+play,4,1,benam001,31,BBFBX,HR/8.2-H
+play,4,1,muelb001,11,CBX,31/G
+play,5,0,taube001,12,CFBC,K/C
+play,5,0,bellr003,00,,NP
+sub,cromd001,"David Cromer",0,9,11
+play,5,0,cromd001,11,BFX,43/G
+play,5,0,reesp001,12,BCFX,S7/7S
+play,5,0,larkb001,30,BBBB,W.1-2
+play,5,0,grifk002,22,BFBFX,7/F7
+play,5,1,bondb001,00,,NP
+sub,sulls001,"Scott Sullivan",0,9,1
+play,5,1,bondb001,22,CBBSX,7/F7
+play,5,1,kentj001,32,SBBCBB,W
+play,5,1,snowj001,12,CFBFX,S9.1-2
+play,5,1,burke001,11,CBX,D7.2-H;1-3
+play,5,1,martr003,00,X,5/FL
+play,5,1,estab001,30,IIII,IW
+play,5,1,nathj001,22,BBCSC,K/C
+play,6,0,tuckm001,32,BFSBBX,S/78
+play,6,0,yound001,10,BX,64(1)3/GDP
+play,6,0,cases001,01,FX,3/G
+play,6,1,benam001,22,BBCCX,S8
+play,6,1,muelb001,22,BFCBFX,7/F7
+play,6,1,bondb001,20,BBX,7/F7
+play,6,1,kentj001,21,CBBX,S9/9S.1-3
+play,6,1,snowj001,32,BFFFBBX,D9.3-H;1-H
+play,6,1,burke001,21,CBBX,S/78.2-H
+play,6,1,martr003,12,CBFX,4/FL
+play,7,0,boona001,00,,NP
+sub,benam001,"Marvin Benard",1,1,9
+play,7,0,boona001,00,,NP
+sub,murrc001,"Calvin Murray",1,6,8
+play,7,0,boona001,22,FFBBFFFS,K
+play,7,0,taube001,00,X,31/G
+play,7,0,sulls001,00,,NP
+sub,morrh001,"Hal Morris",0,9,11
+play,7,0,morrh001,21,BBFX,S9
+play,7,0,reesp001,11,CBX,7/L7
+play,7,1,estab001,00,,NP
+sub,reyed001,"Dennys Reyes",0,9,1
+play,7,1,estab001,11,CBX,63/G
+play,7,1,nathj001,32,BBCFBX,HR/8
+play,7,1,benam001,02,CFFS,K
+play,7,1,muelb001,22,BFFBS,K
+play,8,0,larkb001,00,,NP
+sub,davir002,"Russ Davis",1,2,5
+play,8,0,larkb001,00,,NP
+sub,riosa001,"Armando Rios",1,3,7
+play,8,0,larkb001,31,BBBCX,8/F8
+play,8,0,grifk002,22,FBBCS,K
+play,8,0,tuckm001,22,CBSBX,8/F8
+play,8,1,riosa001,12,BCSC,K/C
+play,8,1,kentj001,00,,NP
+sub,cresf001,"Felipe Crespo",1,4,11
+play,8,1,cresf001,01,FX,53/G
+play,8,1,snowj001,12,SBSC,K/C
+play,9,0,yound001,00,,NP
+sub,cresf001,"Felipe Crespo",1,4,4
+play,9,0,yound001,00,,NP
+sub,embra001,"Alan Embree",1,9,1
+play,9,0,yound001,00,X,9/F9
+play,9,0,cases001,11,CBX,63/G
+play,9,0,boona001,32,BFBBFFB,W
+play,9,0,taube001,10,BX,D9.1-H
+play,9,0,reyed001,00,,NP
+sub,stync001,"Chris Stynes",0,9,11
+play,9,0,stync001,22,FBCFBX,S8.2-H
+play,9,0,reesp001,01,CX,64(1)/FO
+data,er,bellr003,5
+data,er,sulls001,4
+data,er,reyed001,1
+data,er,nathj001,1
+data,er,embra001,2

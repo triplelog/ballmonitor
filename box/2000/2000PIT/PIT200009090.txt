@@ -1,0 +1,161 @@
+version,2
+info,visteam,CIN
+info,hometeam,PIT
+info,site,PIT07
+info,date,2000/09/09
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,gormb901
+info,ump1b,danlk901
+info,ump2b,everm901
+info,ump3b,dimum901
+info,pitches,pitches
+info,temp,80
+info,winddir,torf
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,205
+info,attendance,34590
+info,wp,parrs001
+info,lp,bensk001
+info,save,gravd001
+start,reesp001,"Pokey Reese",0,1,4
+start,tuckm001,"Michael Tucker",0,2,9
+start,grifk002,"Ken Griffey",0,3,8
+start,yound001,"Dmitri Young",0,4,7
+start,cases001,"Sean Casey",0,5,3
+start,stync001,"Chris Stynes",0,6,5
+start,santb001,"Benito Santiago",0,7,2
+start,sextc001,"Chris Sexton",0,8,6
+start,parrs001,"Steve Parris",0,9,1
+start,browa001,"Adrian Brown",1,1,8
+start,kendj001,"Jason Kendall",1,2,2
+start,gileb002,"Brian Giles",1,3,7
+start,vandj001,"John Vander Wal",1,4,9
+start,morrw001,"Warren Morris",1,5,4
+start,osikk001,"Keith Osik",1,6,5
+start,herna001,"Alex Hernandez",1,7,3
+start,mearp001,"Pat Meares",1,8,6
+start,bensk001,"Kris Benson",1,9,1
+play,1,0,reesp001,12,BFCS,K
+play,1,0,tuckm001,32,FFBFFBBB,W
+play,1,0,grifk002,01,CC,CS2(26)
+play,1,0,grifk002,02,CCX,S
+play,1,0,yound001,12,BSFFX,46(1)/FO
+play,1,1,browa001,22,CFBBFX,S
+play,1,1,kendj001,31,BBSBX,9/F9
+play,1,1,gileb002,31,BSBBB,W.1-2
+play,1,1,vandj001,02,CCX,D7/7D.2-H;1-3
+play,1,1,morrw001,00,B,PB.3-H;2-3
+play,1,1,morrw001,11,BCX,D/78.3-H
+play,1,1,osikk001,32,BCBBCB,W
+play,1,1,herna001,22,CFBBX,3/G.2-3;1-2
+play,1,1,mearp001,30,IIII,IW
+play,1,1,bensk001,02,CSC,K/C
+play,2,0,cases001,01,CX,43/G
+play,2,0,stync001,11,BFX,S8
+play,2,0,santb001,12,SFBS,K
+play,2,0,sextc001,22,FBBFB,CS2(24)
+play,2,1,browa001,00,X,S7/7S
+play,2,1,kendj001,31,BBBCB,W.1-2
+play,2,1,gileb002,22,FBFBFX,6/P6
+play,2,1,vandj001,12,CFBC,K/C
+play,2,1,morrw001,02,CFS,K
+play,3,0,sextc001,10,BX,S9/9S
+play,3,0,parrs001,02,LFX,34/SH.1-2
+play,3,0,reesp001,30,BBBB,W
+play,3,0,tuckm001,12,FSBX,S8.2-3;1-2
+play,3,0,grifk002,10,BX,9/SF.3-H;2-3
+play,3,0,yound001,11,BSX,64(1)/FO
+play,3,1,osikk001,00,X,63/G
+play,3,1,herna001,22,FBSFBFFFS,K
+play,3,1,mearp001,32,BFSBBX,8/F8
+play,4,0,cases001,01,CX,HR/7
+play,4,0,stync001,10,BX,7/F7
+play,4,0,santb001,02,FFFS,K
+play,4,0,sextc001,01,CX,S
+play,4,0,parrs001,10,BX,S/89.1-3
+play,4,0,reesp001,12,FBSFC,K/C
+play,4,1,bensk001,12,FBFC,K/C
+play,4,1,browa001,12,CFBX,43/G
+play,4,1,kendj001,01,FX,63/G
+play,5,0,tuckm001,12,FFFBFFFX,S
+play,5,0,grifk002,10,BX,S9/9S.1-3
+play,5,0,yound001,00,X,3(B)3(1)/GDP.3-3
+com,"clearly 3 unassisted GDP"
+play,5,0,cases001,30,IIII,IW
+play,5,0,stync001,10,BX,S8.3-H;1-2
+play,5,0,santb001,00,X,53/G
+play,5,1,gileb002,01,CX,S8
+play,5,1,vandj001,02,CFX,43(B)64(1)/GDP
+play,5,1,morrw001,00,X,S9
+play,5,1,osikk001,32,BCBCBB,W.1-2
+play,5,1,herna001,12,FBCS,K
+play,6,0,sextc001,00,X,9/F9
+play,6,0,parrs001,02,CSS,K
+play,6,0,reesp001,22,CBSBS,K
+play,6,1,mearp001,22,BCBFX,D7
+play,6,1,bensk001,10,BX,54/SH.2-3
+play,6,1,browa001,32,BBBCFFX,9/L9
+play,6,1,kendj001,31,BBFBX,6/P6
+play,7,0,tuckm001,00,X,63/G
+play,7,0,grifk002,12,FFBX,S8
+play,7,0,yound001,20,BBX,HR/8.1-H
+play,7,0,cases001,02,CFX,3/G
+play,7,0,stync001,02,FCX,63/G
+play,7,1,gileb002,22,BFCBX,6/P6
+play,7,1,vandj001,12,CBFX,D7/7S
+play,7,1,morrw001,00,,NP
+sub,reyed001,"Dennys Reyes",0,9,1
+play,7,1,morrw001,00,,NP
+sub,ramia002,"Alex Ramirez",1,5,11
+play,7,1,ramia002,22,SBBFX,D/89.2-H
+play,7,1,osikk001,00,,NP
+sub,sulls001,"Scott Sullivan",0,9,1
+play,7,1,osikk001,02,CSFFH,HP
+play,7,1,herna001,22,BSFBFFFX,9/L9
+play,7,1,mearp001,22,BCCBC,K/C
+play,8,0,santb001,00,,NP
+sub,nunea001,"Abraham O. Nunez",1,9,4
+play,8,0,santb001,00,,NP
+sub,loisr001,"Rich Loiselle",1,5,1
+play,8,0,santb001,12,FBSFS,K
+play,8,0,sextc001,21,CBBX,13/G
+play,8,0,sulls001,00,,NP
+sub,clarb003,"Brady Clark",0,9,11
+play,8,0,clarb003,11,CBX,53/G
+play,8,1,nunea001,00,,NP
+sub,riedj001,"John Riedling",0,9,1
+play,8,1,nunea001,02,CSS,K
+play,8,1,browa001,12,BCFC,K/C
+play,8,1,kendj001,22,SBBSS,K
+play,9,0,reesp001,22,BFBFFX,7/F7
+play,9,0,tuckm001,00,,NP
+sub,wallj001,"Jeff Wallace",1,5,1
+play,9,0,tuckm001,32,CBSBFFBX,HR/9
+play,9,0,grifk002,12,BCSS,K
+play,9,0,yound001,21,BBSX,D9
+play,9,0,cases001,00,,NP
+sub,bartk001,"Kimera Bartee",0,4,12
+play,9,0,cases001,02,CSX,13/G
+play,9,1,gileb002,00,,NP
+sub,ochoa001,"Alex Ochoa",0,9,7
+play,9,1,gileb002,00,,NP
+sub,gravd001,"Danny Graves",0,4,1
+play,9,1,gileb002,22,BCBFFFS,K
+play,9,1,vandj001,22,BCFBX,3/G
+play,9,1,wallj001,00,,NP
+sub,wilse001,"Enrique Wilson",1,5,11
+play,9,1,wilse001,10,BX,43/G
+data,er,parrs001,4
+data,er,reyed001,0
+data,er,sulls001,0
+data,er,riedj001,0
+data,er,gravd001,0
+data,er,bensk001,5
+data,er,loisr001,0
+data,er,wallj001,1

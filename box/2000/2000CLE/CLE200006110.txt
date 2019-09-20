@@ -1,0 +1,214 @@
+version,2
+info,visteam,CIN
+info,hometeam,CLE
+info,site,CLE08
+info,date,2000/06/11
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,mcclt901
+info,ump1b,craft901
+info,ump2b,schrp901
+info,ump3b,cuzzp901
+info,pitches,pitches
+info,temp,84
+info,winddir,ltor
+info,windspeed,9
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,278
+info,attendance,43036
+info,wp,aybam001
+info,lp,kamis001
+info,save,
+start,reesp001,"Pokey Reese",0,1,4
+start,larkb001,"Barry Larkin",0,2,10
+start,grifk002,"Ken Griffey",0,3,8
+start,bichd001,"Dante Bichette",0,4,9
+start,yound001,"Dmitri Young",0,5,3
+start,boona001,"Aaron Boone",0,6,5
+start,stync001,"Chris Stynes",0,7,7
+start,santb001,"Benito Santiago",0,8,2
+start,castj004,"Juan Castro",0,9,6
+start,villr001,"Ron Villone",0,0,1
+start,loftk001,"Kenny Lofton",1,1,8
+start,vizqo001,"Omar Vizquel",1,2,6
+start,frymt001,"Travis Fryman",1,3,5
+start,justd001,"David Justice",1,4,9
+start,sexsr001,"Richie Sexson",1,5,3
+start,aloms001,"Sandy Alomar",1,6,2
+start,thomj002,"Jim Thome",1,7,10
+start,ramia002,"Alex Ramirez",1,8,7
+start,wilse001,"Enrique Wilson",1,9,4
+start,finlc001,"Chuck Finley",1,0,1
+play,1,0,reesp001,11,CBX,9/F9
+play,1,0,larkb001,22,CBBFX,8/F8
+play,1,0,grifk002,31,BBCBX,9/F9
+play,1,1,loftk001,32,BCCBBB,W
+play,1,1,vizqo001,22,BBCFS,K
+play,1,1,frymt001,32,CCBBBB,W.1-2
+play,1,1,justd001,00,B,WP.2-3;1-2
+play,1,1,justd001,11,BCX,3(B)6(2)/LDP
+play,2,0,bichd001,22,CSBBX,S9
+play,2,0,yound001,22,BCCBX,3/G.1-2
+play,2,0,boona001,22,BSBFX,9/F9
+play,2,0,stync001,22,BCSBS,K
+play,2,1,sexsr001,20,BBX,S5.B-2(E5/TH1)
+play,2,1,aloms001,31,BFBBB,W
+play,2,1,thomj002,32,BCSBBFFFX,S9.2-H;1-2
+play,2,1,ramia002,00,X,8/F8
+play,2,1,wilse001,12,FBSFB,WP.2-3
+play,2,1,wilse001,22,FBSFBFX,53/G.1-2
+play,2,1,loftk001,21,BBFX,S8.3-H;2-3
+play,2,1,vizqo001,01,SX,5/P5
+play,3,0,santb001,01,FX,53/G
+play,3,0,castj004,00,X,53/G
+play,3,0,reesp001,31,CBBBX,53/G
+play,3,1,frymt001,31,BFBBB,W
+play,3,1,justd001,00,X,S9/9S.1-3
+play,3,1,sexsr001,00,X,54(1)3/GDP.3-H
+play,3,1,aloms001,21,BFBX,8/F8
+play,4,0,larkb001,10,BX,8/F8D
+play,4,0,grifk002,21,BCBX,3/L3
+play,4,0,bichd001,01,SX,53/G
+play,4,1,thomj002,00,,NP
+sub,tuckm001,"Michael Tucker",0,4,9
+play,4,1,thomj002,32,BFBBSX,7/F7
+play,4,1,ramia002,22,BBFFX,7/F7D
+play,4,1,wilse001,01,SX,S9
+play,4,1,loftk001,21,BCBB,SB2
+play,4,1,loftk001,31,BCBBB,W
+play,4,1,vizqo001,00,X,9/F9
+play,5,0,yound001,00,X,63/G
+play,5,0,boona001,31,BBCBB,W
+play,5,0,stync001,12,FBFFX,5/L5
+play,5,0,santb001,01,CX,53/G
+play,5,1,frymt001,12,BFFS,K
+play,5,1,justd001,22,CFBBFX,31/G
+play,5,1,sexsr001,10,BX,5/P5
+play,6,0,castj004,21,BFBX,8/F8
+play,6,0,reesp001,22,CSBBFS,K
+play,6,0,larkb001,00,X,6/L6
+play,6,1,aloms001,00,X,S8/8S
+play,6,1,thomj002,32,BFCBBC,K/C
+play,6,1,ramia002,10,BX,D7.1-3
+play,6,1,wilse001,10,BX,7/SF.3-H
+play,6,1,loftk001,01,CX,S.2-3
+play,6,1,vizqo001,01,CX,53/G
+play,7,0,grifk002,00,X,9/F9
+play,7,0,tuckm001,11,BCX,43/G
+play,7,0,yound001,00,X,8/F8
+play,7,1,frymt001,00,,NP
+sub,desse001,"Elmer Dessens",0,0,1
+play,7,1,frymt001,00,X,8/F8
+play,7,1,justd001,12,BFFX,43/G
+play,7,1,sexsr001,21,BCBX,HR/8
+play,7,1,aloms001,11,BFX,S/78
+play,7,1,thomj002,21,BCBX,46(1)/FO
+play,8,0,boona001,00,X,D/78
+play,8,0,stync001,11,BCX,S8.2-3
+play,8,0,santb001,01,FB,WP.1-2
+play,8,0,santb001,32,FBFBBFB,W.3-H(PB);2-3
+play,8,0,castj004,00,,NP
+sub,reeds001,"Steve Reed",1,0,1
+play,8,0,castj004,01,SX,7/SF.3-H
+play,8,0,reesp001,10,BX,46(1)/FO
+play,8,0,larkb001,00,X,S7.1-2
+play,8,0,grifk002,00,,NP
+sub,speij001,"Justin Speier",1,0,1
+play,8,0,grifk002,20,BBX,HR/8.2-H;1-H
+play,8,0,tuckm001,32,CBBBCFFFX,6/P6
+play,8,1,ramia002,00,,NP
+sub,gravd001,"Danny Graves",0,0,1
+play,8,1,ramia002,20,BBX,S7/7S
+play,8,1,wilse001,00,,NP
+sub,cabrj002,"Jolbert Cabrera",1,8,12
+play,8,1,wilse001,00,X,14/SH.1-2
+play,8,1,loftk001,10,BX,S.2-3
+play,8,1,vizqo001,11,BCX,FC3.3XH(32);1-2;B-1#
+play,8,1,frymt001,32,BBFSBFX,7/F7
+play,9,0,yound001,00,,NP
+sub,cabrj002,"Jolbert Cabrera",1,8,7
+play,9,0,yound001,32,BFSFBBX,4/L4
+play,9,0,boona001,12,BFSFX,8/F8
+play,9,0,stync001,21,BCBX,7/F7
+play,9,1,justd001,00,,NP
+sub,taube001,"Eddie Taubensee",0,8,2
+play,9,1,justd001,22,FBBFX,9/F9
+play,9,1,sexsr001,12,CBSFFFFS,K
+play,9,1,aloms001,32,BBBCSX,4/P4
+play,10,0,taube001,00,,NP
+sub,brewj001,"Jamie Brewington",1,0,1
+play,10,0,taube001,10,BX,31/G
+play,10,0,castj004,12,BCSS,K
+play,10,0,reesp001,32,CBBBSS,K
+play,10,1,thomj002,32,BBSSBX,7/F7D
+play,10,1,cabrj002,00,,NP
+sub,branr001,"Russell Branyan",1,8,11
+play,10,1,branr001,32,BFBSBB,W
+play,10,1,wilse001,22,CBFBX,S7/7S.1-2
+play,10,1,loftk001,00,,NP
+sub,alomr001,"Roberto Alomar",1,8,12
+play,10,1,loftk001,32,FBBFBFFB,W.2-3;1-2
+play,10,1,vizqo001,31,BBCBX,12(3)3/GDP
+play,11,0,larkb001,00,,NP
+sub,frymt001,"Travis Fryman",1,3,3
+play,11,0,larkb001,00,,NP
+sub,sexsr001,"Richie Sexson",1,5,7
+play,11,0,larkb001,00,,NP
+sub,alomr001,"Roberto Alomar",1,8,4
+play,11,0,larkb001,00,,NP
+sub,wilse001,"Enrique Wilson",1,9,5
+play,11,0,larkb001,31,BBCBX,63/G
+play,11,0,grifk002,31,BBCBB,W
+play,11,0,tuckm001,00,X,S9.1-3
+play,11,0,yound001,10,BX,FC5.1-2;B-1
+play,11,0,boona001,12,FSBFFFFFX,2/FL
+play,11,0,stync001,20,BBX,8/F8D
+play,11,1,frymt001,00,,NP
+sub,wills002,"Scott Williamson",0,0,1
+play,11,1,frymt001,01,FX,5/P5
+play,11,1,justd001,22,SBSBS,K
+play,11,1,sexsr001,11,BCX,4/P4
+play,12,0,taube001,00,,NP
+sub,kamis001,"Scott Kamieniecki",1,0,1
+play,12,0,taube001,22,BCBFX,43/G
+play,12,0,castj004,32,BFSBBFB,W
+play,12,0,reesp001,32,CFBFBFBX,8/F8
+play,12,0,larkb001,20,BBX,9/FL
+play,12,1,aloms001,00,,NP
+sub,aybam001,"Manny Aybar",0,0,1
+play,12,1,aloms001,12,BCSS,K
+play,12,1,thomj002,32,BSSBBB,W
+play,12,1,alomr001,21,BBFX,2/FL
+play,12,1,wilse001,00,X,8/F8
+play,13,0,grifk002,20,BBX,S9/9S
+play,13,0,tuckm001,11,LBX,S4/BG4.1-3;B-2(E4/TH)
+play,13,0,yound001,30,IIII,IW
+play,13,0,boona001,00,X,S7.3-H;2-H;1-2
+play,13,0,stync001,00,X,13/SH.2-3;1-2
+play,13,0,taube001,30,IIII,IW
+play,13,0,castj004,00,,NP
+sub,cases001,"Sean Casey",0,9,11
+play,13,0,cases001,21,BBFX,46(1)3/GDP
+play,13,1,loftk001,00,,NP
+sub,larkb001,"Barry Larkin",0,2,6
+play,13,1,loftk001,00,,NP
+sub,aybam001,"Manny Aybar",0,9,1
+play,13,1,loftk001,21,CBBX,43/G
+play,13,1,vizqo001,32,BBCFBX,7/F7
+play,13,1,frymt001,10,BX,S7
+play,13,1,justd001,00,B,DI.1-2
+play,13,1,justd001,32,BCSBBS,K
+data,er,villr001,4
+data,er,desse001,1
+data,er,gravd001,0
+data,er,wills002,0
+data,er,aybam001,0
+data,er,finlc001,3
+data,er,reeds001,1
+data,er,speij001,1
+data,er,brewj001,0
+data,er,kamis001,2

@@ -1,0 +1,157 @@
+version,2
+info,visteam,MIL
+info,hometeam,ARI
+info,site,PHO01
+info,date,2000/05/28
+info,number,0
+info,starttime,1:35PM
+info,daynight,day
+info,usedh,false
+info,umphome,hirsm901
+info,ump1b,bellw901
+info,ump2b,onorb901
+info,ump3b,iassd901
+info,pitches,pitches
+info,temp,72
+info,winddir,unknown
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,217
+info,attendance,35121
+info,wp,wickb001
+info,lp,swing001
+info,save,
+start,bellr002,"Ron Belliard",0,1,4
+start,lorem001,"Mark Loretta",0,2,6
+start,burnj001,"Jeromy Burnitz",0,3,9
+start,hayec001,"Charlie Hayes",0,4,3
+start,hernj001,"Jose Hernandez",0,5,5
+start,grism001,"Marquis Grissom",0,6,8
+start,moutj001,"James Mouton",0,7,7
+start,blanh001,"Henry Blanco",0,8,2
+start,wrigj001,"Jamey Wright",0,9,1
+start,womat001,"Tony Womack",1,1,6
+start,bellj001,"Jay Bell",1,2,4
+start,gonzl001,"Luis Gonzalez",1,3,7
+start,willm003,"Matt D. Williams",1,4,5
+start,finls001,"Steve Finley",1,5,8
+start,durae001,"Erubiel Durazo",1,6,3
+start,wardt001,"Turner Ward",1,7,9
+start,stink001,"Kelly Stinnett",1,8,2
+start,andeb002,"Brian Anderson",1,9,1
+play,1,0,bellr002,11,BCX,13/G
+play,1,0,lorem001,32,BBBCCX,8/F8
+play,1,0,burnj001,12,CFBFFC,K/C
+play,1,1,womat001,12,BFSFFS,K
+play,1,1,bellj001,11,CBX,23/G
+play,1,1,gonzl001,30,BBBB,W
+play,1,1,willm003,12,CBFX,8/F8
+play,2,0,hayec001,21,FBBX,D/89D
+play,2,0,hernj001,11,BCX,S.2-2
+play,2,0,grism001,22,CBFBFX,9/SF.2-H
+play,2,0,moutj001,12,SBFX,64(1)3/GDP
+play,2,1,finls001,11,BCX,D9
+play,2,1,durae001,01,CH,HP
+play,2,1,wardt001,20,BBX,D9/89D.2-H;1XH(962)
+play,2,1,stink001,02,CCS,K23
+play,2,1,andeb002,32,CBBBCX,43/G
+play,3,0,blanh001,22,CCBBS,K
+play,3,0,wrigj001,00,X,9/F9S
+play,3,0,bellr002,12,SCBS,K
+play,3,1,womat001,31,BCBBX,S
+play,3,1,bellj001,12,CBSX,S8.1-3
+play,3,1,gonzl001,32,BFBFFBFB,W.1-2
+play,3,1,willm003,22,BFFBS,K
+play,3,1,finls001,32,BBFBSS,K
+play,3,1,durae001,21,SBBX,S9/9S.3-H;2-H;1-2
+play,3,1,wardt001,22,BSBCS,K
+play,4,0,lorem001,01,CX,9/F9
+play,4,0,burnj001,32,FSBBBFX,S9
+play,4,0,hayec001,22,CBFBX,S.1-2
+play,4,0,hernj001,01,CX,9/F9D.2-3
+play,4,0,grism001,32,SFBBBX,D7/7S.3-H;1-3
+play,4,0,moutj001,00,X,13/BG
+play,4,1,stink001,02,FCX,S9/9S
+play,4,1,andeb002,10,BX,6(1)3/GDP
+play,4,1,womat001,32,BBCBFFX,S7
+play,4,1,bellj001,11,CBB,CS2(24)
+play,5,0,blanh001,22,CFBFBX,63/G
+play,5,0,wrigj001,12,SBFC,K/C
+play,5,0,bellr002,21,BBCX,S5/BG5
+play,5,0,lorem001,11,CBX,64(1)/FO
+play,5,1,bellj001,11,BCX,8/F8
+play,5,1,gonzl001,10,BX,63/G
+play,5,1,willm003,21,CBBX,4/P4
+play,6,0,burnj001,12,FBCX,S7/7S
+play,6,0,hayec001,00,X,S7.1-2
+play,6,0,hernj001,11,FBX,64(1)3/GDP.2-3
+play,6,0,grism001,00,X,8/F8
+play,6,1,finls001,00,X,43/G
+play,6,1,durae001,11,BCX,43/G
+play,6,1,wardt001,21,BBCX,3/G
+play,7,0,moutj001,22,FCBFBFS,K
+play,7,0,blanh001,00,X,7/F7
+play,7,0,wrigj001,00,,NP
+sub,berrs001,"Sean Berry",0,9,11
+play,7,0,berrs001,32,CBBBSS,K
+play,7,1,stink001,00,,NP
+sub,woods001,"Steve Woodard",0,9,1
+play,7,1,stink001,32,BBSSBFB,W
+play,7,1,andeb002,00,X,9/F9
+play,7,1,womat001,02,CSB,WP.1-2
+play,7,1,womat001,12,CSBS,K23
+play,7,1,bellj001,00,X,4/P4
+play,8,0,bellr002,22,BCBCL,K/BF
+play,8,0,lorem001,32,BCBBCFFX,8/F8
+play,8,0,burnj001,02,CSFX,HR/9
+play,8,0,hayec001,00,,NP
+sub,kim-b001,"Byung-Hyun Kim",1,9,1
+play,8,0,hayec001,02,SCS,K
+play,8,1,gonzl001,12,BCFH,HP
+play,8,1,willm003,02,FFH,HP.1-2
+play,8,1,finls001,12,CSBX,7/F7
+play,8,1,durae001,32,BBSBFFC,K+CS3(25)/DP/C
+play,9,0,hernj001,12,CBFS,K
+play,9,0,grism001,32,BCBSBS,K
+play,9,0,moutj001,11,BSX,3/P3
+play,9,1,wardt001,01,FX,13/BG
+play,9,1,stink001,22,BBCCS,K
+play,9,1,kim-b001,00,,NP
+sub,harrl001,"Lenny Harris",1,9,11
+play,9,1,harrl001,02,CFFX,5/FL
+play,10,0,blanh001,00,,NP
+sub,mantm001,"Matt Mantei",1,9,1
+play,10,0,blanh001,22,CCBFBFFX,4/P4
+play,10,0,woods001,00,,NP
+sub,sweem001,"Mark Sweeney",0,9,11
+play,10,0,sweem001,31,BCBBX,2/FL
+play,10,0,bellr002,22,CBBCFFS,K
+play,10,1,womat001,00,,NP
+sub,wickb001,"Bob Wickman",0,9,1
+play,10,1,womat001,01,CX,13/G
+play,10,1,bellj001,22,CCFBBFC,K/C
+play,10,1,gonzl001,32,BBBCCFS,K
+play,11,0,lorem001,00,,NP
+sub,swing001,"Greg Swindell",1,9,1
+play,11,0,lorem001,12,CBFFX,5/L5
+play,11,0,burnj001,12,CCBX,63/G
+play,11,0,hayec001,31,SBBBB,W
+play,11,0,hernj001,12,CFBFX,S.1-2
+play,11,0,grism001,12,CCBX,S7/7S.2-H;1-3
+play,11,0,moutj001,12,FBSS,K
+play,11,1,willm003,01,FX,4/P4
+play,11,1,finls001,12,CBFFX,4/P4
+play,11,1,durae001,11,CBX,S
+play,11,1,wardt001,00,,NP
+sub,fox-a001,"Andy Fox",1,6,12
+play,11,1,wardt001,22,CBBFFB,SB2
+play,11,1,wardt001,32,CBBFFBX,5/P5
+data,er,wrigj001,3
+data,er,woods001,0
+data,er,wickb001,0
+data,er,andeb002,3
+data,er,kim-b001,0
+data,er,mantm001,0
+data,er,swing001,1

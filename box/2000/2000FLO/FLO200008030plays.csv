@@ -1,0 +1,75 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,01,1,,,,,0,2,CX,sancj001,1,0,lugoj001 grounds out. ,lugoj001,0,G
+,00,1,bogat001,,,,1,3,X,sancj001,0,0,bogat001 singles. ,bogat001,0,
+,12,1,bogat001,,,,2,7,CSBX,sancj001,1,0,,bagwj001,0,F
+,22,1,bogat001,,,,3,12,CFBBS,sancj001,1,0,hidar001 strikes out. ,hidar001,0,
+,11,1,,,,,4,3,CBX,poweb001,1,0,castl001 grounds out. ,castl001,1,G
+,32,1,kotsm001,,,,5,9,BBCBFX,poweb001,0,0,kotsm001 singles. ,kotsm001,1,
+,12,1,kotsm001,,,,6,13,FFBX,poweb001,1,0,,rodrh001,1,F
+kotsm001 to 2B. ,01,1,wilsp002,kotsm001,,,7,15,CX,poweb001,0,0,wilsp002 singles. ,wilsp002,1,
+,11,1,wilsp002,kotsm001,,,8,18,BSX,poweb001,1,0,,lee-d002,1,P
+,00,2,aloum001,,,,9,13,X,sancj001,0,0,aloum001 singles. ,aloum001,0,
+aloum001 to 2B. ,12,2,berkl001,aloum001,,,10,17,BCFX,sancj001,0,0,berkl001 singles. ,berkl001,0,
+aloum001 to 3B. berkl001 to 2B. ,31,2,trubc001,berkl001,aloum001,,11,22,BFBBB,sancj001,0,0,trubc001 walks. ,trubc001,0,
+aloum001 scores. ,00,2,trubc001,berkl001,,,12,23,X,sancj001,1,1,chavr001 hits sacrifice fly. ,chavr001,0,
+berkl001 to 3B. trubc001 to 2B. ,01,2,poweb001,trubc001,berkl001,,13,25,CX,sancj001,0,0,poweb001 singles. ,poweb001,0,
+,10,2,,trubc001,berkl001,,14,27,BX,sancj001,2,0,Double Play. ,lugoj001,0,
+,02,2,fox-a001,,,,15,21,CFH,poweb001,0,0,fox-a001 hit by pitch. ,fox-a001,1,
+,01,2,,,,,16,23,FX,poweb001,2,0,Double Play. ,bergd002,1,
+,02,2,,,,,17,26,CFX,poweb001,1,0,redmm001 grounds out. ,redmm001,1,G
+,02,3,,,,,18,30,SSS,sancj001,1,0,bogat001 strikes out. ,bogat001,0,
+,00,3,,,,,19,31,X,sancj001,1,0,,bagwj001,0,
+,12,3,,,,,20,36,BSFFS,sancj001,1,0,hidar001 strikes out. ,hidar001,0,
+,00,3,,,,,21,27,X,poweb001,1,0,,sancj001,1,F
+,32,3,castl001,,,,22,33,BCCBBX,poweb001,0,0,castl001 singles. ,castl001,1,
+,00,3,,castl001,,kotsm001,23,34,B,poweb001,0,0,castl001 steals 2B. ,kotsm001,1,
+,22,3,,castl001,,,24,39,BCCBS,poweb001,1,0,kotsm001 strikes out. ,kotsm001,1,
+,22,3,,castl001,,,25,45,BCSFBS,poweb001,1,0,rodrh001 strikes out. ,rodrh001,1,
+,00,4,,,,,26,37,X,sancj001,1,0,,aloum001,0,F
+,31,4,berkl001,,,,27,42,CBBBB,sancj001,0,0,berkl001 walks. ,berkl001,0,
+,31,4,berkl001,,,,28,47,BBSBX,sancj001,1,0,,trubc001,0,
+,10,4,berkl001,,,,29,49,BX,sancj001,1,0,chavr001 grounds out. ,chavr001,0,G
+,32,4,wilsp002,,,,30,51,BCBSBB,poweb001,0,0,wilsp002 walks. ,wilsp002,1,
+,10,4,,wilsp002,,lee-d002,31,53,BS,poweb001,0,0,wilsp002 steals 2B. ,lee-d002,1,
+,22,4,,wilsp002,,,32,58,BSFBS,poweb001,1,0,lee-d002 strikes out. ,lee-d002,1,
+wilsp002 scores. ,00,4,fox-a001,,,,33,59,X,poweb001,0,1,fox-a001 singles. ,fox-a001,1,
+,00,4,,fox-a001,,bergd002,34,60,B,poweb001,0,0,fox-a001 steals 2B. ,bergd002,1,
+fox-a001 scores. ,10,4,bergd002,,,,35,62,BX,poweb001,0,1,bergd002 singles. ,bergd002,1,
+,00,4,bergd002,,,,36,63,X,poweb001,1,0,,redmm001,1,L
+,01,4,bergd002,,,,37,65,CX,poweb001,1,0,,sancj001,1,G
+,01,5,,,,,38,51,SX,sancj001,1,0,,poweb001,0,L
+,21,5,,,,,39,55,BBCX,sancj001,1,0,,lugoj001,0,F
+,02,5,,,,,40,58,FSS,sancj001,1,0,bogat001 strikes out. ,bogat001,0,
+,00,5,castl001,,,,41,66,X,poweb001,0,0,castl001 singles. ,castl001,1,
+,10,5,,,,,42,68,BX,poweb001,2,0,Double Play. ,kotsm001,1,
+,00,5,,,,,43,69,X,poweb001,1,0,,rodrh001,1,F
+,10,6,bagwj001,,,,44,60,BX,sancj001,0,0,bagwj001 singles. ,bagwj001,0,
+bagwj001 out. ,22,6,hidar001,,,,45,67,BFCFFBX,sancj001,1,0,hidar001 reaches on fielder's choice. ,hidar001,0,
+hidar001 scores. ,00,6,,,,,46,68,X,sancj001,0,2,aloum001 homers. ,aloum001,0,
+,02,6,,,,,47,71,CSS,sancj001,1,0,berkl001 strikes out. ,berkl001,0,
+,22,6,,,,,48,76,BBFFS,sancj001,1,0,trubc001 strikes out. ,trubc001,0,
+,00,6,,,,,49,70,X,poweb001,1,0,wilsp002 grounds out. ,wilsp002,1,G
+,02,6,lee-d002,,,,50,74,CFFX,poweb001,0,0,lee-d002 singles. ,lee-d002,1,
+lee-d002 to 2B. ,02,6,fox-a001,lee-d002,,,51,77,CCX,poweb001,0,0,fox-a001 singles. ,fox-a001,1,
+lee-d002 to 3B. fox-a001 to 2B. ,01,6,bergd002,fox-a001,lee-d002,,52,79,CX,poweb001,0,0,bergd002 singles. ,bergd002,1,
+lee-d002 scores. ,00,6,bergd002,fox-a001,,,53,80,X,poweb001,1,1,redmm001 hits sacrifice fly. ,redmm001,1,
+,10,6,bergd002,fox-a001,,,55,82,BX,poweb001,1,0,,smitm004,1,F
+,01,7,,,,,57,2,LX,loopb001,1,0,chavr001 grounds out. ,chavr001,0,G
+,31,7,,,,,59,7,CBBBX,loopb001,1,0,,spieb001,0,L
+,12,7,,,,,60,11,CFBX,loopb001,1,0,lugoj001 grounds out. ,lugoj001,0,G
+,01,7,,,,,63,2,CX,franw001,1,0,,castl001,1,F
+,00,7,,,,,64,3,X,franw001,1,0,,kotsm001,1,F
+,00,7,,,,,65,4,X,franw001,1,0,rodrh001 grounds out. ,rodrh001,1,G
+,21,8,,,,,66,15,BFBX,loopb001,1,0,bogat001 grounds out. ,bogat001,0,G
+,01,8,bagwj001,,,,67,17,CX,loopb001,0,0,bagwj001 reaches on error. ,bagwj001,0,
+bagwj001 to 2B. ,10,8,hidar001,bagwj001,,,68,19,BX,loopb001,0,0,hidar001 reaches on error. ,hidar001,0,G
+,00,8,hidar001,,,,69,20,X,loopb001,2,0,Double Play. ,aloum001,0,
+,12,8,,,,,71,4,FSBX,slusj001,1,0,,wilsp002,1,
+,20,8,lee-d002,,,,72,7,BBX,slusj001,0,0,lee-d002 singles. ,lee-d002,1,
+lee-d002 to 3B. ,00,8,fox-a001,,lee-d002,,73,8,X,slusj001,0,0,fox-a001 singles. ,fox-a001,1,
+lee-d002 scores. ,12,8,fox-a001,,,,74,12,SFBX,slusj001,1,1,bergd002 hits sacrifice fly. ,bergd002,1,
+,10,8,,fox-a001,,redmm001,75,14,BB,slusj001,0,0,fox-a001 steals 2B. ,redmm001,1,
+,21,8,,fox-a001,,,76,18,BBFX,slusj001,1,0,,redmm001,1,F
+,01,9,,,,,80,2,FX,alfoa001,1,0,berkl001 grounds out. ,berkl001,0,G
+,22,9,,,,,81,7,CBFBX,alfoa001,1,0,trubc001 grounds out. ,trubc001,0,G
+,00,9,,,,,83,8,X,alfoa001,1,0,,wardd002,0,P

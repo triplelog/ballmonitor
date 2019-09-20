@@ -1,0 +1,139 @@
+version,2
+info,visteam,BOS
+info,hometeam,NYA
+info,site,NYC16
+info,date,2000/06/14
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,morrd901
+info,ump1b,fichm901
+info,ump2b,danlk901
+info,ump3b,katzt901
+info,pitches,pitches
+info,temp,59
+info,winddir,ltor
+info,windspeed,7
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,178
+info,attendance,54834
+info,wp,grimj001
+info,lp,waket001
+info,save,rivem002
+start,offej001,"Jose Offerman",0,1,3
+start,fryej001,"Jeff Frye",0,2,4
+start,nixot001,"Trot Nixon",0,3,9
+start,garcn001,"Nomar Garciaparra",0,4,6
+start,everc001,"Carl Everett",0,5,8
+start,daubb001,"Brian Daubach",0,6,10
+start,lewid001,"Darren Lewis",0,7,7
+start,varij001,"Jason Varitek",0,8,2
+start,veraw001,"Wilton Veras",0,9,5
+start,martp001,"Pedro Martinez",0,0,1
+start,knobc001,"Chuck Knoblauch",1,1,4
+start,jeted001,"Derek Jeter",1,2,6
+start,oneip001,"Paul O'Neill",1,3,9
+start,willb002,"Bernie Williams",1,4,8
+start,martt002,"Tino Martinez",1,5,3
+start,posaj001,"Jorge Posada",1,6,2
+start,leder001,"Ricky Ledee",1,7,7
+start,spens001,"Shane Spencer",1,8,10
+start,bross001,"Scott Brosius",1,9,5
+start,clemr001,"Roger Clemens",1,0,1
+play,1,0,offej001,22,CBFFBX,7/L7
+play,1,0,fryej001,01,CX,S9
+play,1,0,nixot001,32,CCBBBB,W.1-2
+play,1,0,garcn001,31,BBBCB,W.2-3;1-2
+play,1,0,everc001,10,BX,4/P4
+play,1,0,daubb001,32,BBCCBFX,5/P5
+play,1,1,knobc001,12,BCFX,D7
+play,1,1,jeted001,12,CFFBFS,K
+play,1,1,oneip001,10,BX,S.2-3
+play,1,1,willb002,10,BH,HP.1-2
+play,1,1,martt002,02,CSS,K
+play,1,1,posaj001,32,BBCBFB,W.3-H;2-3;1-2
+play,1,1,leder001,02,CSX,5/P5
+play,2,0,lewid001,00,,NP
+sub,mendr001,"Ramiro Mendoza",1,0,1
+play,2,0,lewid001,12,BFFX,8/F8
+play,2,0,varij001,21,BBCX,43/G
+play,2,0,veraw001,11,BFX,43/G
+play,2,1,spens001,01,CX,63/G
+play,2,1,bross001,32,SBFFBBFFFX,63/G
+play,2,1,knobc001,12,CBFFS,K
+play,3,0,offej001,30,BBBB,W
+play,3,0,fryej001,22,FBSBFX,64(1)/FO
+play,3,0,nixot001,31,CBBBX,9/L9
+play,3,0,garcn001,00,X,63/G
+play,3,1,jeted001,22,BFBFC,K/C
+play,3,1,oneip001,22,FSBBX,S8
+play,3,1,willb002,02,CC1,PO1(13)
+play,3,1,willb002,02,CC1X,43/G
+play,4,0,everc001,11,FBX,S7
+play,4,0,daubb001,12,FBSS,K
+play,4,0,lewid001,12,CFBX,8/F8S
+play,4,0,varij001,21,BBSX,S.1-2
+play,4,0,veraw001,22,FBFBX,64(1)/FO.2-3
+play,4,1,martt002,11,BFX,S8
+play,4,1,posaj001,01,CX,46(1)3/GDP
+play,4,1,leder001,11,CBX,3/G
+play,5,0,offej001,31,BBCBX,9/F9
+play,5,0,fryej001,12,BFCX,9/F9
+play,5,0,nixot001,11,FBX,S
+play,5,0,garcn001,01,FX,S7/7S.1-2
+play,5,0,everc001,22,CBBFS,K
+play,5,1,spens001,12,BSCX,53/G
+play,5,1,bross001,10,BX,D9
+play,5,1,knobc001,32,FSFFBBBS,K
+play,5,1,jeted001,00,X,63/G
+play,6,0,daubb001,12,CSBS,K
+play,6,0,lewid001,01,LX,S9/9S
+play,6,0,varij001,00,X,8/L8
+play,6,0,veraw001,12,CBSX,S9.1-3
+play,6,0,offej001,01,FX,46(1)/FO
+play,6,1,oneip001,10,BX,D/78
+play,6,1,willb002,22,BSCBC,K/C
+play,6,1,martt002,22,CFBBX,43/G.2-3
+play,6,1,posaj001,31,BBBCB,W
+play,6,1,leder001,02,SCFC,K/C
+play,7,0,fryej001,22,CBBFX,53/G
+play,7,0,nixot001,32,BBCSFBS,K
+play,7,0,garcn001,00,X,HR/7
+play,7,0,everc001,10,BX,S7.B-2(E7)
+play,7,0,daubb001,30,IIII,IW
+play,7,0,lewid001,00,,NP
+sub,grimj001,"Jason Grimsley",1,0,1
+play,7,0,lewid001,11,CBB,SB3
+play,7,0,lewid001,21,CBBX,64(1)/FO
+play,7,1,spens001,00,,NP
+sub,waket001,"Tim Wakefield",0,0,1
+play,7,1,spens001,01,CX,D9
+play,7,1,bross001,12,LFBS,K
+play,7,1,knobc001,20,BBB,PB.2-3
+play,7,1,knobc001,32,BBBCFS,K23
+play,7,1,jeted001,22,BBFFX,4/L4
+play,8,0,varij001,11,BFX,3/G
+play,8,0,veraw001,30,BBBB,W
+play,8,0,offej001,10,BX,46(1)3/GDP
+com,"ej,offej001,P,danlk901,Call at 2B"
+com,"Jose Offerman ejected by 2B umpire Kerwin Danley"
+play,8,1,oneip001,00,,NP
+sub,stanm002,"Mike Stanley",0,1,3
+play,8,1,oneip001,31,BBCBX,3/G
+play,8,1,willb002,11,CBX,9/F9
+play,8,1,martt002,10,BX,HR/9
+play,8,1,posaj001,22,BFFFBS,K
+play,9,0,fryej001,00,,NP
+sub,rivem002,"Mariano Rivera",1,0,1
+play,9,0,fryej001,12,BCFX,S8
+play,9,0,nixot001,32,BBCBFC,K+CS2(26)/DP/C
+play,9,0,garcn001,21,BBCX,13/G
+data,er,martp001,1
+data,er,waket001,1
+data,er,clemr001,0
+data,er,mendr001,1
+data,er,grimj001,0
+data,er,rivem002,0

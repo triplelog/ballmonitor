@@ -1,0 +1,151 @@
+version,2
+info,visteam,NYA
+info,hometeam,BAL
+info,site,BAL12
+info,date,2000/07/24
+info,number,0
+info,starttime,7:35PM
+info,daynight,night
+info,usedh,true
+info,umphome,culbf901
+info,ump1b,fleta901
+info,ump2b,wintm901
+info,ump3b,welkb901
+info,pitches,pitches
+info,temp,75
+info,winddir,ltor
+info,windspeed,7
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,194
+info,attendance,47450
+info,wp,clemr001
+info,lp,parrj003
+info,save,rivem002
+start,knobc001,"Chuck Knoblauch",0,1,4
+start,jeted001,"Derek Jeter",0,2,6
+start,willb002,"Bernie Williams",0,3,8
+start,hillg001,"Glenallen Hill",0,4,10
+start,posaj001,"Jorge Posada",0,5,2
+start,justd001,"David Justice",0,6,9
+start,bross001,"Scott Brosius",0,7,5
+start,thomr004,"Ryan Thompson",0,8,7
+start,bellc001,"Clay Bellinger",0,9,3
+start,clemr001,"Roger Clemens",0,0,1
+start,andeb001,"Brady Anderson",1,1,8
+start,bordm001,"Mike Bordick",1,2,6
+start,deshd001,"Delino DeShields",1,3,4
+start,bellj002,"Albert Belle",1,4,9
+start,surhb001,"B.J. Surhoff",1,5,7
+start,clarw001,"Will Clark",1,6,3
+start,johnc002,"Charles Johnson",1,7,2
+start,bainh001,"Harold Baines",1,8,10
+start,coffi001,"Ivanon Coffie",1,9,5
+start,parrj003,"John Parrish",1,0,1
+play,1,0,knobc001,22,CBBFC,K/C
+com,"Debut game for John Parrish"
+play,1,0,jeted001,12,CBCS,K
+play,1,0,willb002,02,CFS,K
+play,1,1,andeb001,22,BCSBX,S9
+play,1,1,bordm001,32,BBCFFBX,S7.1-3
+play,1,1,deshd001,21,BCBX,4(1)/FO/G.3-H
+play,1,1,bellj002,00,X,9/L9
+play,1,1,surhb001,11,CBB,SB2
+play,1,1,surhb001,32,CBBFBFFX,53/G
+play,2,0,hillg001,10,BX,HR/7
+play,2,0,posaj001,32,BSBFBS,K
+play,2,0,justd001,00,X,9/F9D
+play,2,0,bross001,11,BSX,9/F9S
+play,2,1,clarw001,02,SFH,HP
+play,2,1,johnc002,31,BBBCX,D9.1-H
+play,2,1,bainh001,12,BCFC,K/C
+play,2,1,coffi001,31,BCBBB,W
+play,2,1,andeb001,12,BCSS,K
+play,2,1,bordm001,12,CBSC,K/C
+play,3,0,thomr004,31,FBBBB,W
+play,3,0,bellc001,22,CBBFX,D/78D.1-3
+play,3,0,knobc001,10,BX,8/SF.3-H;2-3
+play,3,0,jeted001,11,FBX,S8/8S.3-H
+play,3,0,willb002,00,X,13/G.1-2
+play,3,0,hillg001,00,X,E5/G.2-H(UR)
+play,3,0,posaj001,22,SBBSC,K/C
+play,3,1,deshd001,11,BCX,S8
+play,3,1,bellj002,12,CBCFB,SB2
+play,3,1,bellj002,22,CBCFBX,53/G
+play,3,1,surhb001,00,X,7/F7
+play,3,1,clarw001,01,CX,S7.2-H
+play,3,1,johnc002,22,BCFBS,K
+play,4,0,justd001,32,CSBBFFBX,7/F7S
+play,4,0,bross001,00,X,63/G
+play,4,0,thomr004,10,BX,3/FL
+play,4,1,bainh001,32,BBCBFB,W
+play,4,1,coffi001,30,BBBB,W.1-2
+play,4,1,andeb001,21,SBBX,9/L9
+play,4,1,bordm001,01,FX,54(1)3/GDP
+play,5,0,bellc001,12,FBCS,K
+play,5,0,knobc001,01,CX,53/G
+play,5,0,jeted001,32,SBBSBX,53/G
+play,5,1,deshd001,22,FCFBBFFX,63/G
+play,5,1,bellj002,00,X,63/G
+play,5,1,surhb001,11,FBX,63/G
+play,6,0,willb002,21,BBSX,53/G
+play,6,0,hillg001,12,CBSS,K
+play,6,0,posaj001,32,BBCSBS,K
+play,6,1,clarw001,32,SBBBFFB,W
+play,6,1,johnc002,02,SSX,S9/9S.1-2
+play,6,1,bainh001,01,SX,8/F8S
+play,6,1,coffi001,12,CSBFS,K
+play,6,1,andeb001,31,BCBBB,W.2-3;1-2
+play,6,1,bordm001,12,SSBFS,K
+play,7,0,justd001,32,BCFBBS,K
+play,7,0,bross001,32,BBCBFFFB,W
+play,7,0,thomr004,12,CBSX,S9/9S.1-2
+play,7,0,bellc001,12,BFCX,3/FL
+play,7,0,knobc001,12,CBCX,6(1)/FO/G.2-3
+play,7,1,deshd001,00,,NP
+sub,vizcj001,"Jose Vizcaino",0,1,4
+play,7,1,deshd001,00,,NP
+sub,stanm003,"Mike Stanton",0,0,1
+play,7,1,deshd001,00,X,2/FL
+play,7,1,bellj002,11,CBX,8/F8
+play,7,1,surhb001,11,BFX,7/F7S
+play,8,0,jeted001,00,,NP
+sub,tromm001,"Mike Trombley",1,0,1
+play,8,0,jeted001,22,BFBSX,9/F9D
+play,8,0,willb002,01,CX,7/F7
+play,8,0,hillg001,31,BBBCX,4/P4
+play,8,1,clarw001,32,BCBFBS,K
+play,8,1,johnc002,22,BFBSS,K
+play,8,1,bainh001,00,,NP
+sub,conij001,"Jeff Conine",1,8,11
+play,8,1,conij001,00,,NP
+sub,rivem002,"Mariano Rivera",0,0,1
+play,8,1,conij001,22,CBCBFX,9/F9
+play,9,0,posaj001,12,CBSX,8/F8D
+play,9,0,justd001,20,BBX,S9
+play,9,0,bross001,10,BX,5/L5
+play,9,0,thomr004,00,,NP
+sub,oneip001,"Paul O'Neill",0,8,11
+play,9,0,oneip001,32,BBBCSB,W.1-2
+play,9,0,bellc001,00,,NP
+sub,martt002,"Tino Martinez",0,9,11
+play,9,0,martt002,00,,NP
+sub,groob001,"Buddy Groom",1,0,1
+play,9,0,martt002,12,CBFS,K
+play,9,1,coffi001,00,,NP
+sub,justd001,"David Justice",0,6,7
+play,9,1,coffi001,00,,NP
+sub,oneip001,"Paul O'Neill",0,8,9
+play,9,1,coffi001,00,,NP
+sub,martt002,"Tino Martinez",0,9,3
+play,9,1,coffi001,02,SFX,43/G
+play,9,1,andeb001,22,BCCBX,5/FL
+play,9,1,bordm001,31,BBFBB,W
+play,9,1,deshd001,32,BBBCSFC,K/C
+data,er,clemr001,3
+data,er,stanm003,0
+data,er,rivem002,0
+data,er,parrj003,3
+data,er,tromm001,0
+data,er,groob001,0

@@ -1,0 +1,141 @@
+version,2
+info,visteam,MIN
+info,hometeam,HOU
+info,site,HOU03
+info,date,2000/06/06
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,shulj901
+info,ump1b,millb901
+info,ump2b,rungb901
+info,ump3b,rapue901
+info,pitches,pitches
+info,temp,85
+info,winddir,tolf
+info,windspeed,12
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,152
+info,attendance,35075
+info,wp,santj003
+info,lp,limaj001
+info,save,guare001
+start,hockd001,"Denny Hocking",0,1,4
+start,guzmc001,"Cristian Guzman",0,2,6
+start,lawtm002,"Matt Lawton",0,3,7
+start,ortid001,"David Ortiz",0,4,3
+start,buchb002,"Brian Buchanan",0,5,9
+start,koskc001,"Corey Koskie",0,6,5
+start,lecrm001,"Matt LeCroy",0,7,2
+start,jonej003,"Jacque Jones",0,8,8
+start,milte001,"Eric Milton",0,9,1
+start,biggc001,"Craig Biggio",1,1,4
+start,lugoj001,"Julio Lugo",1,2,9
+start,bagwj001,"Jeff Bagwell",1,3,3
+start,camik001,"Ken Caminiti",1,4,5
+start,aloum001,"Moises Alou",1,5,7
+start,hidar001,"Richard Hidalgo",1,6,8
+start,euset001,"Tony Eusebio",1,7,2
+start,bogat001,"Tim Bogar",1,8,6
+start,limaj001,"Jose Lima",1,9,1
+play,1,0,hockd001,32,CBCBBFX,31/G
+play,1,0,guzmc001,22,CBBSX,6/P6
+play,1,0,lawtm002,32,BBCSBFFB,W
+play,1,0,ortid001,01,FX,3/G
+play,1,1,biggc001,01,CX,S
+play,1,1,lugoj001,00,X,53/SH.1-2
+play,1,1,bagwj001,10,BX,5/L5
+play,1,1,camik001,32,BBFBFX,2/FL
+play,2,0,buchb002,22,CBBSS,K
+play,2,0,koskc001,22,BSSBS,K
+play,2,0,lecrm001,22,SBFBS,K
+play,2,1,aloum001,01,FX,D7
+play,2,1,hidar001,01,FX,9/F9.2-3
+play,2,1,euset001,12,BFSS,K
+play,2,1,bogat001,32,BBSBCB,W
+play,2,1,limaj001,22,BBCSS,K
+play,3,0,jonej003,02,CFX,6/L6
+play,3,0,milte001,00,,NP
+sub,canij001,"Jay Canizaro",0,9,11
+play,3,0,canij001,01,CX,63/G
+play,3,0,hockd001,22,BBCFFFX,43/G
+play,3,1,biggc001,00,,NP
+sub,santj003,"Johan Santana",0,9,1
+play,3,1,biggc001,32,FBBCBB,W
+play,3,1,lugoj001,20,BBX,8/F8
+play,3,1,bagwj001,11,BCX,8/F8D
+play,3,1,camik001,01,FX,D7/7D.1-H
+play,3,1,aloum001,11,FBX,8/F8
+play,4,0,guzmc001,01,CX,7/F7
+play,4,0,lawtm002,01,CX,S8
+play,4,0,ortid001,22,BCBFX,9/F9
+play,4,0,buchb002,12,CFBC,K/C
+play,4,1,hidar001,22,BBSFX,8/F8
+play,4,1,euset001,12,BSFFS,K
+play,4,1,bogat001,10,BX,3/G
+play,5,0,koskc001,01,CX,31/G
+play,5,0,lecrm001,32,BSCBBB,W
+play,5,0,jonej003,12,BSFX,7/F7D
+play,5,0,santj003,00,X,43/G
+play,5,1,limaj001,12,SFBS,K
+play,5,1,biggc001,00,X,8/F8D
+play,5,1,lugoj001,32,CBFBBX,7/F7D
+play,6,0,hockd001,22,LFBFBX,43/G
+play,6,0,guzmc001,10,BX,7/F7
+play,6,0,lawtm002,12,CFBX,43/G
+play,6,1,bagwj001,02,CSX,S7
+play,6,1,camik001,22,FFBBFFS,K
+play,6,1,aloum001,01,FX,8/F8D
+play,6,1,hidar001,11,BFX,S/78.1-3
+play,6,1,euset001,11,SBX,53/G
+play,7,0,ortid001,21,SBBX,D9
+play,7,0,buchb002,31,BBBCX,53/G
+play,7,0,koskc001,12,SFBFC,K/C
+play,7,0,lecrm001,00,X,8/F8
+play,7,1,bogat001,00,X,7/F7
+play,7,1,limaj001,12,SFBX,63/G
+play,7,1,biggc001,32,BCFBFBB,W
+play,7,1,lugoj001,00,X,8/F8
+play,8,0,jonej003,00,X,S9
+play,8,0,santj003,00,,NP
+sub,cummm001,"Midre Cummings",0,9,11
+play,8,0,cummm001,12,BCSX,S7.1-2
+play,8,0,hockd001,21,BBFX,13/SH.2-3;1-2
+play,8,0,guzmc001,00,,NP
+sub,perey001,"Yorkis Perez",1,9,1
+play,8,0,guzmc001,11,CBX,FC6.2X3(654);3-H;B-1
+play,8,0,lawtm002,22,CBBCX,D8/78.1-H
+play,8,0,ortid001,32,SBBSBX,S9.2-H
+play,8,0,buchb002,00,,NP
+sub,valdm001,"Marc Valdes",1,9,1
+play,8,0,buchb002,01,FX,63/G
+play,8,1,bagwj001,00,,NP
+sub,wellb002,"Bob Wells",0,9,1
+play,8,1,bagwj001,21,CBBX,3/P3
+play,8,1,camik001,11,CBX,7/F7
+play,8,1,aloum001,01,FX,8/F8
+play,9,0,koskc001,00,X,31/G
+play,9,0,lecrm001,22,BCBFX,5/FL
+play,9,0,jonej003,02,SFC,K/C
+play,9,1,hidar001,00,,NP
+sub,guare001,"Eddie Guardado",0,9,1
+play,9,1,hidar001,21,BCBX,S8
+play,9,1,euset001,00,,NP
+sub,melum001,"Mitch Meluskey",1,7,11
+play,9,1,melum001,11,BFX,9/F9
+play,9,1,bogat001,00,,NP
+sub,miesm001,"Matt Mieske",1,8,11
+play,9,1,miesm001,02,CCS,K
+play,9,1,valdm001,00,,NP
+sub,berkl001,"Lance Berkman",1,9,11
+play,9,1,berkl001,02,SCS,K
+data,er,milte001,0
+data,er,santj003,1
+data,er,wellb002,0
+data,er,guare001,0
+data,er,limaj001,2
+data,er,perey001,1
+data,er,valdm001,0

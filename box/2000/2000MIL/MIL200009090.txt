@@ -1,0 +1,168 @@
+version,2
+info,visteam,SLN
+info,hometeam,MIL
+info,site,MIL05
+info,date,2000/09/09
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,guccc901
+info,ump1b,davig901
+info,ump2b,riekr901
+info,ump3b,emmep901
+info,pitches,pitches
+info,temp,76
+info,winddir,tolf
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,210
+info,attendance,25095
+info,wp,vered001
+info,lp,acevj001
+info,save,
+start,drewj001,"J.D. Drew",0,1,9
+start,mcgwm001,"Mark McGwire",0,2,4
+start,edmoj001,"Jim Edmonds",0,3,8
+start,clarw001,"Will Clark",0,4,3
+start,lankr001,"Ray Lankford",0,5,7
+start,tatif001,"Fernando Tatis",0,6,5
+start,rente001,"Edgar Renteria",0,7,6
+start,mathm001,"Mike Matheny",0,8,2
+start,hentp001,"Pat Hentgen",0,9,1
+start,grism001,"Marquis Grissom",1,1,8
+start,lorem001,"Mark Loretta",1,2,6
+start,jenkg001,"Geoff Jenkins",1,3,7
+start,sexsr001,"Richie Sexson",1,4,3
+start,burnj001,"Jeromy Burnitz",1,5,9
+start,hernj001,"Jose Hernandez",1,6,5
+start,casar001,"Raul Casanova",1,7,2
+start,lopel002,"Luis Lopez",1,8,4
+start,haynj001,"Jimmy Haynes",1,9,1
+play,1,0,drewj001,02,SSFX,S9
+play,1,0,mcgwm001,01,FX,6/P6
+play,1,0,edmoj001,22,CCBBFX,D/89.1-H
+play,1,0,clarw001,20,BBX,7/F7
+play,1,0,lankr001,32,BSBSBFFB,W
+play,1,0,tatif001,01,CX,64(1)/FO.2-3
+play,1,1,grism001,00,,NP
+sub,polap001,"Placido Polanco",0,2,4
+play,1,1,grism001,01,FX,43/G
+play,1,1,lorem001,31,BBCBB,W
+play,1,1,jenkg001,02,CCS,K
+play,1,1,sexsr001,30,BBBB,W.1-2
+play,1,1,burnj001,01,CX,T9.2-H;1-H
+play,1,1,hernj001,01,CX,S8.3-H
+play,1,1,casar001,11,CBX,6/L6
+play,2,0,rente001,32,CCFBFBBX,S/89
+play,2,0,mathm001,10,BX,S7/7S.1-2
+play,2,0,hentp001,00,X,56(2)4(B)/BG/GDP.1-2
+play,2,0,drewj001,20,BBB,WP.2-3
+play,2,0,drewj001,32,BBBCFB,W
+play,2,0,polap001,10,BX,43/G
+play,2,1,lopel002,12,CBCFS,K
+play,2,1,haynj001,01,SX,8/F8
+play,2,1,grism001,21,BCBX,S8
+play,2,1,lorem001,30,BBBB,W.1-2
+play,2,1,jenkg001,32,SBBBFX,9/L9
+play,3,0,edmoj001,10,BX,S8
+play,3,0,clarw001,22,FBCBX,7/F7S
+play,3,0,lankr001,00,X,S.1-2
+play,3,0,tatif001,00,X,S9/89.2-H;1-H(E9/TH);B-3
+play,3,0,rente001,10,BX,S9.3-H
+play,3,0,mathm001,00,X,S.1-2
+play,3,0,hentp001,10,BS,CS3(25)
+play,3,0,hentp001,11,BSX,54(1)/FO
+play,3,1,sexsr001,01,CX,9/F9
+play,3,1,burnj001,01,CX,2/FL
+play,3,1,hernj001,21,CBBX,3/FL
+play,4,0,drewj001,01,CX,6/P6
+play,4,0,polap001,20,BBX,31/G
+play,4,0,edmoj001,00,X,43/G
+play,4,1,casar001,12,CBCFFS,K
+play,4,1,lopel002,11,BFX,S7
+play,4,1,haynj001,01,CX,34/SH.1-2
+play,4,1,grism001,10,BX,S.2-3
+play,4,1,lorem001,21,BBCX,54(1)/FO
+play,5,0,clarw001,32,FBFBBX,43/G
+play,5,0,lankr001,22,BCBSX,5/FL
+play,5,0,tatif001,22,BBCFH,HP
+play,5,0,rente001,10,BX,8/F8
+play,5,1,jenkg001,31,BBBCB,W
+play,5,1,sexsr001,12,SBSX,D7/7S.1-H
+play,5,1,burnj001,22,BCBCS,K
+play,5,1,hernj001,22,BSFFBX,S8.2XH(82);B-2(THH)
+play,5,1,casar001,32,CBFBBFX,43/G
+play,6,0,mathm001,01,FX,HR/7
+play,6,0,hentp001,02,CFS,K
+play,6,0,drewj001,10,BX,S7
+play,6,0,polap001,22,FBFBFB,SB2.1-3(E2/TH2)
+play,6,0,polap001,32,FBFBFBX,S/78.3-H
+play,6,0,edmoj001,00,,NP
+sub,delov001,"Valerio De Los Santos",1,9,1
+play,6,0,edmoj001,12,CBCFFX,36(1)/FO
+play,6,0,clarw001,00,X,S9/9S.1-2
+play,6,0,lankr001,32,BBFBFS,K
+play,6,1,lopel002,10,BX,3/G
+play,6,1,delov001,00,,NP
+sub,sweem001,"Mark Sweeney",1,9,11
+play,6,1,sweem001,02,CFX,7/F7
+play,6,1,grism001,22,FCBBX,63/G
+play,7,0,tatif001,00,,NP
+sub,stule001,"Everett Stull",1,9,1
+play,7,0,tatif001,32,CCFBBBX,9/FL
+play,7,0,rente001,02,SCX,63/G
+play,7,0,mathm001,32,BSBSBX,63/G
+play,7,1,lorem001,00,,NP
+sub,paquc001,"Craig Paquette",0,9,5
+play,7,1,lorem001,00,,NP
+sub,morrm001,"Matt Morris",0,6,1
+play,7,1,lorem001,22,BBCFX,13/G
+play,7,1,jenkg001,11,SBX,D8/8D
+play,7,1,sexsr001,20,BBX,E5/G
+play,7,1,burnj001,32,CBBFFFBX,4/P4
+play,7,1,hernj001,12,BFCX,S9/9S.2XH(92);1-2
+play,8,0,paquc001,01,CX,S8
+play,8,0,drewj001,11,BSX,7/F7
+play,8,0,polap001,00,B,WP.1-2
+play,8,0,polap001,31,BBCBB,W
+play,8,0,edmoj001,00,,NP
+sub,kingr001,"Ray King",1,9,1
+play,8,0,edmoj001,12,CCBFS,K
+play,8,0,clarw001,32,BBCSBX,7/F7
+play,8,1,casar001,11,BCX,D8/8D
+play,8,1,lopel002,02,FFFX,HR/9.2-H
+play,8,1,kingr001,00,,NP
+sub,houst001,"Tyler Houston",1,9,11
+play,8,1,houst001,12,CBCS,K
+com,"ej,houst001,P,guccc901,Balls and strikes"
+com,"Tyler Houston ejected by HP umpire Chris Guccione"
+play,8,1,grism001,00,X,8/F8
+play,8,1,lorem001,32,BFBFFFBX,S7/7S
+play,8,1,jenkg001,00,,NP
+sub,vered001,"Dave Veres",0,4,1
+play,8,1,jenkg001,00,,NP
+sub,peree001,"Eduardo Perez",0,6,3
+play,8,1,jenkg001,02,SFX,43/G
+play,9,0,lankr001,00,,NP
+sub,acevj001,"Juan Acevedo",1,9,1
+play,9,0,lankr001,11,BSX,HR/9
+play,9,0,peree001,10,BX,7/F7
+play,9,0,rente001,00,X,63/G
+play,9,0,mathm001,12,BCSFX,63/G
+play,9,1,sexsr001,22,CBBCS,K
+play,9,1,burnj001,32,CBBFBB,W
+play,9,1,hernj001,00,,NP
+sub,moutj001,"James Mouton",1,5,12
+play,9,1,hernj001,12,CSBX,3/G.1-2
+play,9,1,casar001,02,CSFFX,31/G
+data,er,hentp001,4
+data,er,morrm001,2
+data,er,vered001,0
+data,er,haynj001,6
+data,er,delov001,0
+data,er,stule001,0
+data,er,kingr001,0
+data,er,acevj001,1

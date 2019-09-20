@@ -1,0 +1,162 @@
+version,2
+info,visteam,PHI
+info,hometeam,HOU
+info,site,HOU03
+info,date,2000/04/08
+info,number,0
+info,starttime,2:05PM
+info,daynight,day
+info,usedh,false
+info,umphome,joycj901
+info,ump1b,riekr901
+info,ump2b,emmep901
+info,ump3b,davig901
+info,pitches,pitches
+info,temp,67
+info,winddir,ltor
+info,windspeed,15
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,186
+info,attendance,39018
+info,wp,maddm002
+info,lp,brocc001
+info,save,wagnb001
+start,gland001,"Doug Glanville",0,1,8
+start,gantr001,"Ron Gant",0,2,7
+start,abreb001,"Bobby Abreu",0,3,9
+start,roles001,"Scott Rolen",0,4,5
+start,brogr001,"Rico Brogna",0,5,3
+start,moram001,"Mickey Morandini",0,6,4
+start,print001,"Tom Prince",0,7,2
+start,peret003,"Tomas Perez",0,8,6
+start,brocc001,"Chris Brock",0,9,1
+start,biggc001,"Craig Biggio",1,1,4
+start,ceder001,"Roger Cedeno",1,2,8
+start,bagwj001,"Jeff Bagwell",1,3,3
+start,camik001,"Ken Caminiti",1,4,5
+start,aloum001,"Moises Alou",1,5,9
+start,hidar001,"Richard Hidalgo",1,6,7
+start,melum001,"Mitch Meluskey",1,7,2
+start,bogat001,"Tim Bogar",1,8,6
+start,goodd001,"Dwight Gooden",1,9,1
+play,1,0,gland001,10,BX,HR/78
+play,1,0,gantr001,11,BFX,13/G
+play,1,0,abreb001,20,BBX,7/F7
+play,1,0,roles001,22,CBFBS,K
+play,1,1,biggc001,32,BCFBBX,D9
+play,1,1,ceder001,12,LSBFX,43/G.2-3
+play,1,1,bagwj001,02,SFS,K
+play,1,1,camik001,32,CBBSBX,2/FL
+play,2,0,brogr001,32,CBFBBFFX,D9
+play,2,0,moram001,31,BBBCB,W
+play,2,0,print001,11,BFX,43(B)637(1)/GDP.2-3#
+play,2,0,peret003,32,BBBCFB,W
+play,2,0,brocc001,32,BBCSFBX,9/F9
+play,2,1,aloum001,12,FBCX,53/G
+play,2,1,hidar001,11,CBX,S7/7D
+play,2,1,melum001,11,CBX,S/78.1-3
+play,2,1,bogat001,11,SBX,T9.3-H;1-H
+play,2,1,goodd001,02,FFX,3/L3
+play,2,1,biggc001,12,CFBFX,8/F8
+play,3,0,gland001,30,BBBB,W
+play,3,0,gantr001,10,BX,7/F7
+play,3,0,abreb001,12,CBCB,WP.1-2
+play,3,0,abreb001,32,CBCBBX,S8.2-H
+play,3,0,roles001,21,BSBX,6/L6
+play,3,0,brogr001,10,BX,3/G
+play,3,1,ceder001,31,BBCBX,7/F7
+play,3,1,bagwj001,21,CBBX,S8
+play,3,1,camik001,31,BBBFX,HR/9.1-H
+play,3,1,aloum001,32,CBBFBFFFX,63/G
+play,3,1,hidar001,22,FBBFFX,4/P4
+play,4,0,moram001,00,X,S7/7S
+play,4,0,print001,20,BBB,SB2.1-3(E2/TH2)
+play,4,0,print001,30,BBBX,53/G
+play,4,0,peret003,21,FBBX,D9/9D.3-H
+play,4,0,brocc001,22,SBBCX,D9.2-H
+play,4,0,gland001,01,SX,8/L8
+play,4,0,gantr001,01,CB,WP.2-3
+play,4,0,gantr001,12,CBFX,53/G
+play,4,1,melum001,22,BBCCS,K
+play,4,1,bogat001,12,FCBFX,23/G
+play,4,1,goodd001,00,,NP
+sub,johnr006,"Russ Johnson",1,9,11
+play,4,1,johnr006,00,X,7/F7
+play,5,0,abreb001,00,,NP
+sub,maddm002,"Mike Maddux",1,9,1
+play,5,0,abreb001,10,BX,8/F8
+play,5,0,roles001,00,X,8/F8D
+play,5,0,brogr001,11,BCX,9/L9
+play,5,1,biggc001,30,BBBB,W
+play,5,1,ceder001,31,BBCBC,SB2.1-3(E2/TH2)
+play,5,1,ceder001,32,BBCBCB,W
+play,5,1,bagwj001,00,X,7/F7S
+play,5,1,camik001,00,B,SB2
+play,5,1,camik001,32,BBFCFFBFB,W
+play,5,1,aloum001,00,,NP
+sub,bullk001,"Kirk Bullinger",0,9,1
+play,5,1,aloum001,10,BX,S7.3-H;2-H;1-2
+play,5,1,hidar001,10,BX,8/F8D.2-3
+play,5,1,melum001,10,BX,7/L7
+play,6,0,moram001,02,CFH,HP
+play,6,0,print001,21,FBBX,S9.1-3
+play,6,0,peret003,32,LBBSBFX,S8.3-H;1-2
+play,6,0,bullk001,00,,NP
+sub,duceb001,"Rob Ducey",0,9,11
+play,6,0,duceb001,00,,NP
+sub,cabrj001,"Jose Cabrera",1,7,1
+play,6,0,duceb001,00,,NP
+sub,bakop001,"Paul Bako",1,9,2
+play,6,0,duceb001,22,CBSFBFX,S/BR.2-3;1X2(4)
+play,6,0,gland001,12,FFBS,K
+play,6,0,gantr001,00,X,9/F9
+play,6,1,bogat001,00,,NP
+sub,telea001,"Amaury Telemaco",0,9,1
+play,6,1,bogat001,00,X,2/FL
+play,6,1,bakop001,01,SX,8/F8D
+play,6,1,biggc001,12,CSBC,K/C
+play,7,0,abreb001,32,BBBCFS,K
+play,7,0,roles001,11,BCX,S8/8S
+play,7,0,brogr001,00,,NP
+sub,perey001,"Yorkis Perez",1,7,1
+play,7,0,brogr001,00,X,4(B)3(1)/LDP
+play,7,1,ceder001,32,BBBCCX,T9
+play,7,1,bagwj001,01,SX,6/L6
+play,7,1,camik001,11,SBX,8/SF.3-H
+play,7,1,aloum001,10,BX,HR/7
+play,7,1,hidar001,21,BBCX,S8
+play,7,1,perey001,02,FSS,K
+play,8,0,moram001,11,BFX,S9/9S
+play,8,0,print001,00,,NP
+sub,jordk001,"Kevin Jordan",0,7,11
+play,8,0,jordk001,00,,NP
+sub,henrd002,"Doug Henry",1,7,1
+play,8,0,jordk001,10,BX,46(1)3/GDP
+play,8,0,peret003,12,FSBS,K23
+play,8,1,bogat001,00,,NP
+sub,liebm001,"Mike Lieberthal",0,7,2
+play,8,1,bogat001,00,,NP
+sub,ariaa001,"Alex Arias",0,9,6
+play,8,1,bogat001,00,,NP
+sub,aldrs001,"Scott Aldred",0,8,1
+play,8,1,bogat001,22,FBCBX,S8/8S
+play,8,1,bakop001,02,FCC,K/C
+play,8,1,biggc001,12,BCCX,64(1)/FO
+play,8,1,ceder001,11,BFX,13/G
+play,9,0,ariaa001,00,,NP
+sub,wagnb001,"Billy Wagner",1,7,1
+play,9,0,ariaa001,11,SBX,3/FL
+play,9,0,gland001,01,CX,6/L6
+play,9,0,gantr001,02,CFFX,8/F8
+data,er,brocc001,6
+data,er,bullk001,0
+data,er,telea001,2
+data,er,aldrs001,0
+data,er,goodd001,4
+data,er,maddm002,1
+data,er,cabrj001,0
+data,er,perey001,0
+data,er,henrd002,0
+data,er,wagnb001,0

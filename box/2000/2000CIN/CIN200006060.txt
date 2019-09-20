@@ -1,0 +1,181 @@
+version,2
+info,visteam,CHA
+info,hometeam,CIN
+info,site,CIN08
+info,date,2000/06/06
+info,number,0
+info,starttime,7:35PM
+info,daynight,night
+info,usedh,false
+info,umphome,demud901
+info,ump1b,eddid901
+info,ump2b,relic901
+info,ump3b,carlm901
+info,pitches,pitches
+info,temp,71
+info,winddir,rtol
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,224
+info,attendance,28908
+info,wp,eldrc001
+info,lp,villr001
+info,save,
+start,durhr001,"Ray Durham",0,1,4
+start,graft001,"Tony Graffanino",0,2,6
+start,thomf001,"Frank Thomas",0,3,3
+start,ordom001,"Magglio Ordonez",0,4,9
+start,lee-c001,"Carlos Lee",0,5,7
+start,abboj002,"Jeff Abbott",0,6,8
+start,perrh001,"Herbert Perry",0,7,5
+start,fordb001,"Brook Fordyce",0,8,2
+start,eldrc001,"Cal Eldred",0,9,1
+start,reesp001,"Pokey Reese",1,1,4
+start,larkb001,"Barry Larkin",1,2,6
+start,grifk002,"Ken Griffey",1,3,8
+start,bichd001,"Dante Bichette",1,4,9
+start,tuckm001,"Michael Tucker",1,5,7
+start,cases001,"Sean Casey",1,6,3
+start,boona001,"Aaron Boone",1,7,5
+start,taube001,"Eddie Taubensee",1,8,2
+start,villr001,"Ron Villone",1,9,1
+play,1,0,durhr001,12,CCBFH,HP
+play,1,0,graft001,22,BBFCX,4/P4
+play,1,0,thomf001,31,BCBBB,W.1-2
+play,1,0,ordom001,30,BBBB,W.2-3;1-2
+play,1,0,lee-c001,02,CSX,D7/7S.3-H;2-H;1-3
+play,1,0,abboj002,32,FSFBBBFX,S/78.3-H;2-H
+play,1,0,perrh001,32,CBBBSFS,K
+play,1,0,fordb001,32,BBBCFFX,8/F8D
+play,1,1,reesp001,01,CX,43/G
+play,1,1,larkb001,22,BCCBX,S9
+play,1,1,grifk002,32,BBSFFFBB,W.1-2
+play,1,1,bichd001,00,X,4(1)/FO/G.2-3
+play,1,1,tuckm001,22,BCFBX,53/G
+play,2,0,eldrc001,32,CFBBBFFB,W
+play,2,0,durhr001,00,X,9/F9D
+play,2,0,graft001,01,SX,D9/9D.1-3
+play,2,0,thomf001,02,CFFX,HR/7.3-H;2-H
+play,2,0,ordom001,00,,NP
+sub,aybam001,"Manny Aybar",1,9,1
+play,2,0,ordom001,00,X,9/F9
+play,2,0,lee-c001,22,FCBBFFS,K
+play,2,1,cases001,11,BFX,6/L6
+play,2,1,boona001,22,FBFBX,63/G
+play,2,1,taube001,22,FBBSFX,31/G
+play,3,0,abboj002,02,FCS,K
+play,3,0,perrh001,21,FBBX,8/F8D
+play,3,0,fordb001,12,SCBX,43/G
+play,3,1,aybam001,32,CBCBBB,W
+play,3,1,reesp001,21,BBFX,8/F8
+play,3,1,larkb001,32,BBCBFX,64(1)3/GDP
+play,4,0,eldrc001,21,BBCX,43/G
+play,4,0,durhr001,22,BSBCFX,D9/9D
+play,4,0,graft001,32,BCSBFFBS,K
+play,4,0,thomf001,00,B,WP.2-3
+play,4,0,thomf001,32,BCSBBX,4/FL
+play,4,1,grifk002,32,CBFBBX,8/F8D
+play,4,1,bichd001,12,BCSX,E6/TH1.B-2
+play,4,1,tuckm001,00,X,S8.2-H(UR)
+play,4,1,cases001,12,BFCFFX,46(1)3/GDP
+play,5,0,ordom001,21,BBFX,S8
+play,5,0,lee-c001,30,BBBB,W.1-2
+play,5,0,abboj002,12,BFFS,K
+play,5,0,perrh001,00,X,16(1)/FO.2-3
+play,5,0,fordb001,01,FX,8/L8
+play,5,1,boona001,11,CBX,S
+play,5,1,taube001,12,CSBX,1(B)3(1)/LDP
+play,5,1,aybam001,10,BX,43/G
+play,6,0,eldrc001,01,CX,S
+play,6,0,durhr001,11,BCX,23/G.1-2
+play,6,0,graft001,00,X,143/G.2-3
+play,6,0,thomf001,01,FX,D/78D.3-H
+play,6,0,ordom001,00,X,S9.2-3
+play,6,0,lee-c001,02,CFX,S7.3-H;1-2
+play,6,0,abboj002,20,BBX,D/89D.2-H;1-3
+play,6,0,perrh001,10,BX,8/F8
+play,6,1,reesp001,20,BBX,9/F9
+play,6,1,larkb001,31,CBBBB,W
+play,6,1,grifk002,22,CBCBX,163/G.1-2
+play,6,1,bichd001,00,X,7/F7
+play,7,0,fordb001,00,,NP
+sub,castj004,"Juan Castro",1,2,6
+play,7,0,fordb001,00,,NP
+sub,stync001,"Chris Stynes",1,1,4
+play,7,0,fordb001,00,,NP
+sub,tuckm001,"Michael Tucker",1,5,8
+play,7,0,fordb001,00,,NP
+sub,yound001,"Dmitri Young",1,9,7
+play,7,0,fordb001,00,,NP
+sub,sulls001,"Scott Sullivan",1,3,1
+play,7,0,fordb001,00,X,S7
+play,7,0,eldrc001,11,BCX,E4/G.1-3
+play,7,0,durhr001,22,BSCBX,D7.3-H;1-3
+play,7,0,graft001,10,BX,S8.3-H(UR);2-3
+play,7,0,thomf001,12,CBSS,K
+play,7,0,ordom001,10,BX,9/SF.3-H(UR)
+play,7,0,lee-c001,12,FBSX,D7/7S.1-3
+play,7,0,abboj002,00,X,9/F9D
+play,7,1,tuckm001,02,FFFS,K
+play,7,1,cases001,32,FBFFBBB,W
+play,7,1,boona001,02,SSX,D/89D.1-3
+play,7,1,taube001,32,BBFBFB,W
+play,7,1,yound001,00,,NP
+sub,lowes001,"Sean Lowe",0,9,1
+play,7,1,yound001,32,BFFBFFBFX,D/78.3-H;2-H;1-3
+play,7,1,stync001,01,CX,HR/78.3-H;2-H
+play,7,1,castj004,11,CBX,D7/7S
+play,7,1,sulls001,00,,NP
+sub,morrh001,"Hal Morris",1,3,11
+play,7,1,morrh001,31,CBBBB,W
+play,7,1,bichd001,00,,NP
+sub,singc001,"Chris Singleton",0,9,8
+play,7,1,bichd001,00,,NP
+sub,simab001,"Bill Simas",0,6,1
+play,7,1,bichd001,12,FFFBX,46(1)3/GDP
+play,8,0,perrh001,00,,NP
+sub,reyed001,"Dennys Reyes",1,3,1
+play,8,0,perrh001,20,BBX,S9
+play,8,0,fordb001,00,X,S9.1-3
+play,8,0,singc001,30,BBBB,W.1-2
+play,8,0,durhr001,11,BFX,64(1)3/GDP.3-H;2-3
+play,8,0,graft001,10,BX,4/P4
+play,8,1,tuckm001,31,CBBBX,S9
+play,8,1,cases001,12,BCFS,K
+play,8,1,boona001,11,CBX,64(1)3/GDP
+play,9,0,thomf001,32,CBBFBB,W
+play,9,0,ordom001,32,FSFBBBB,W.1-2
+play,9,0,lee-c001,32,BBBCCX,S7.2-H;1-3;B-2(E7)
+play,9,0,simab001,00,,NP
+sub,konep001,"Paul Konerko",0,6,11
+play,9,0,konep001,21,BFBX,S9.3-H;2-3
+play,9,0,perrh001,02,FSX,36(1)/FO.3-H
+play,9,0,fordb001,21,BCBX,8/F8D
+play,9,0,singc001,02,SSS,K
+play,9,1,taube001,00,,NP
+sub,beirk001,"Kevin Beirne",0,6,1
+play,9,1,taube001,00,X,S9
+play,9,1,yound001,31,FBBBB,W.1-2
+play,9,1,stync001,32,BCCFBBX,S7.2-3;1-2
+play,9,1,castj004,12,FBFB,WP.3-H;2-3;1-2
+play,9,1,castj004,32,FBFBBB,W
+play,9,1,reyed001,00,,NP
+sub,santb001,"Benito Santiago",1,3,11
+play,9,1,santb001,00,,NP
+sub,penaj003,"Jesus Pena",0,6,1
+play,9,1,santb001,11,CBX,S7.3-H;2-3;1-2
+play,9,1,bichd001,31,BBBCX,HR/7.3-H;2-H;1-H
+play,9,1,tuckm001,32,SBSBBX,8/F8
+play,9,1,cases001,00,X,7/FL
+play,9,1,boona001,12,CBSC,K/C
+data,er,eldrc001,3
+data,er,lowes001,2
+data,er,simab001,0
+data,er,beirk001,4
+data,er,penaj003,2
+data,er,villr001,7
+data,er,aybam001,3
+data,er,sulls001,1
+data,er,reyed001,4

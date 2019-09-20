@@ -1,0 +1,159 @@
+version,2
+info,visteam,MON
+info,hometeam,SFN
+info,site,SFO03
+info,date,2000/04/28
+info,number,0
+info,starttime,7:35PM
+info,daynight,night
+info,usedh,false
+info,umphome,mealj901
+info,ump1b,younl901
+info,ump2b,higgs901
+info,ump3b,katzt901
+info,pitches,pitches
+info,temp,57
+info,winddir,fromrf
+info,windspeed,18
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,187
+info,attendance,40930
+info,wp,telfa001
+info,lp,ortir001
+info,save,
+start,bergp001,"Peter Bergeron",0,1,8
+start,vidrj001,"Jose Vidro",0,2,4
+start,guerw001,"Wilton Guerrero",0,3,7
+start,guerv001,"Vladimir Guerrero",0,4,9
+start,stevl001,"Lee Stevens",0,5,3
+start,barrm003,"Michael Barrett",0,6,5
+start,widgc001,"Chris Widger",0,7,2
+start,cabro001,"Orlando Cabrera",0,8,6
+start,irabh001,"Hideki Irabu",0,9,1
+start,benam001,"Marvin Benard",1,1,8
+start,muelb001,"Bill Mueller",1,2,5
+start,bondb001,"Barry Bonds",1,3,7
+start,kentj001,"Jeff Kent",1,4,4
+start,burke001,"Ellis Burks",1,5,9
+start,snowj001,"J.T. Snow",1,6,3
+start,aurir001,"Rich Aurilia",1,7,6
+start,estab001,"Bobby Estalella",1,8,2
+start,ortir001,"Russ Ortiz",1,9,1
+play,1,0,bergp001,00,X,D8/8S
+play,1,0,vidrj001,22,CFBBX,S8/8S.2-H
+play,1,0,guerw001,02,CLX,43/G.1-2
+play,1,0,guerv001,02,SSX,53/G
+play,1,0,stevl001,32,BBBCSS,K
+play,1,1,benam001,00,X,S5/BG5
+play,1,1,muelb001,10,BB,SB2
+play,1,1,muelb001,20,BBX,D/78D.2-H
+play,1,1,bondb001,12,SBFX,6/P6
+play,1,1,kentj001,11,FBX,13/G.2-3
+play,1,1,burke001,01,CX,53/G
+play,2,0,barrm003,32,BBBCFFB,W
+play,2,0,widgc001,10,BX,7/F7
+play,2,0,cabro001,22,BBFFX,9/F9
+play,2,0,irabh001,12,CBSS,K
+play,2,1,snowj001,11,CBX,S8
+play,2,1,aurir001,11,CBX,64(1)3/GDP
+play,2,1,estab001,12,SFBS,K
+play,3,0,bergp001,32,BCFBBX,3/P3
+play,3,0,vidrj001,01,CX,D7
+play,3,0,guerw001,01,CX,63/G
+play,3,0,guerv001,02,FSS,K
+play,3,1,ortir001,31,BBCBX,63/G
+play,3,1,benam001,12,BLFX,S9
+play,3,1,muelb001,00,X,S9/9S.1-2
+play,3,1,bondb001,12,CBFFFX,9/F9.2-3
+play,3,1,kentj001,01,CX,53/G
+play,4,0,stevl001,22,BSBFFFC,K/C
+play,4,0,barrm003,21,FBBX,3/P3
+play,4,0,widgc001,11,BFX,3/FL
+play,4,1,burke001,12,BFFX,S7/7S
+play,4,1,snowj001,02,FFFFC,K/C
+play,4,1,aurir001,22,BSBFS,K
+play,4,1,estab001,22,BFBFFS,K
+play,5,0,cabro001,32,BCBBCFFX,63/G
+play,5,0,irabh001,02,SSS,K
+play,5,0,bergp001,32,BBCCBB,W
+play,5,0,vidrj001,00,B,CS2(26)
+play,5,1,ortir001,01,CX,63/G
+play,5,1,benam001,11,BFX,7/F7
+play,5,1,muelb001,01,CX,S7/7S
+play,5,1,bondb001,01,FX,5/P5
+play,6,0,vidrj001,32,CFBBBFX,13/G
+play,6,0,guerw001,31,BSBBB,W
+play,6,0,guerv001,02,SSX,6/P6
+play,6,0,stevl001,31,SBBBX,8/F8D
+play,6,1,kentj001,00,X,D/89D
+play,6,1,burke001,00,X,T/89D.2-H
+play,6,1,snowj001,10,BX,7/SF.3-H
+play,6,1,aurir001,00,X,43/G
+play,6,1,estab001,32,BBSSBB,W
+play,6,1,ortir001,00,X,43/G
+play,7,0,barrm003,21,BCBX,S
+play,7,0,widgc001,11,BFX,HR/78.1-H
+play,7,0,cabro001,10,BX,43/G
+play,7,0,irabh001,00,,NP
+sub,traca001,"Andy Tracy",0,9,11
+play,7,0,traca001,11,BCX,53/G
+play,7,0,bergp001,00,X,7/F7
+play,7,1,benam001,00,,NP
+sub,telfa001,"Anthony Telford",0,9,1
+play,7,1,benam001,10,BX,7/F7
+play,7,1,muelb001,12,CCBX,43/G
+play,7,1,bondb001,21,CBBX,7/F7
+play,8,0,vidrj001,10,BX,S9/9S
+play,8,0,guerw001,32,FBSBBB,W.1-2
+play,8,0,guerv001,00,,NP
+sub,rodrf002,"Felix Rodriguez",1,9,1
+play,8,0,guerv001,30,BBBB,W.2-3;1-2
+play,8,0,stevl001,00,,NP
+sub,fulta001,"Aaron Fultz",1,9,1
+play,8,0,stevl001,32,BBBCFX,S9/9S.3-H;2-H;1-3
+play,8,0,barrm003,30,BBBB,W.1-2
+play,8,0,widgc001,00,,NP
+sub,johnj006,"John Johnstone",1,9,1
+play,8,0,widgc001,31,BBCBX,D7.3-H;2-H;1-H
+play,8,0,cabro001,12,CBFX,53/G.2-3
+play,8,0,telfa001,00,,NP
+sub,blumg001,"Geoff Blum",0,9,11
+play,8,0,blumg001,12,BFCX,9/SF.3-H
+play,8,0,bergp001,11,CBX,3/G
+play,8,1,kentj001,00,,NP
+sub,jonet004,"Terry Jones",0,3,7
+play,8,1,kentj001,00,,NP
+sub,stris001,"Scott Strickland",0,9,1
+play,8,1,kentj001,12,BCSX,7/F7D
+play,8,1,burke001,10,BX,S6
+com,"DWS: originally scored E6"
+play,8,1,snowj001,10,BX,S/78.1-2
+play,8,1,aurir001,00,,NP
+sub,murrc001,"Calvin Murray",1,5,12
+play,8,1,aurir001,21,SBBX,3/FL
+play,8,1,estab001,10,BX,5(2)/FO.1-2
+play,9,0,vidrj001,00,,NP
+sub,benam001,"Marvin Benard",1,1,9
+play,9,0,vidrj001,00,,NP
+sub,murrc001,"Calvin Murray",1,5,8
+play,9,0,vidrj001,00,,NP
+sub,martr003,"Ramon E. Martinez",1,9,6
+play,9,0,vidrj001,00,,NP
+sub,embra001,"Alan Embree",1,7,1
+play,9,0,vidrj001,22,FBBFS,K
+play,9,0,jonet004,02,CSC,K/C
+play,9,0,guerv001,12,FSBFFFH,HP
+play,9,0,stevl001,02,FSX,8/F8
+play,9,1,martr003,02,CCX,9/F9
+play,9,1,benam001,31,FBBBX,7/F7
+play,9,1,muelb001,00,X,53/G
+data,er,irabh001,3
+data,er,telfa001,0
+data,er,stris001,0
+data,er,ortir001,5
+data,er,rodrf002,1
+data,er,fulta001,2
+data,er,johnj006,1
+data,er,embra001,0

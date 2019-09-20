@@ -1,0 +1,143 @@
+version,2
+info,visteam,SEA
+info,hometeam,DET
+info,site,DET05
+info,date,2000/08/23
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,barkl901
+info,ump1b,rungb901
+info,ump2b,lampi901
+info,ump3b,roe-r901
+info,pitches,pitches
+info,temp,80
+info,winddir,tolf
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,187
+info,attendance,32356
+info,wp,cruzn001
+info,lp,rhoda001
+info,save,jonet003
+start,hendr001,"Rickey Henderson",0,1,7
+start,olerj001,"John Olerud",0,2,3
+start,rodra001,"Alex Rodriguez",0,3,6
+start,marte001,"Edgar Martinez",0,4,10
+start,marta001,"Al Martin",0,5,9
+start,camem001,"Mike Cameron",0,6,8
+start,guilc001,"Carlos Guillen",0,7,5
+start,wilsd001,"Dan Wilson",0,8,2
+start,mclem001,"Mark McLemore",0,9,4
+start,abbop001,"Paul Abbott",0,0,1
+start,mcmib001,"Billy McMillon",1,1,10
+start,encaj001,"Juan Encarnacion",1,2,8
+start,higgb001,"Bobby Higginson",1,3,7
+start,gonzj002,"Juan Gonzalez",1,4,9
+start,palmd002,"Dean Palmer",1,5,3
+start,easld001,"Damion Easley",1,6,4
+start,cruzd001,"Deivi Cruz",1,7,6
+start,ausmb001,"Brad Ausmus",1,8,2
+start,macij001,"Jose Macias",1,9,5
+start,nomoh001,"Hideo Nomo",1,0,1
+play,1,0,hendr001,02,CCX,3/G
+play,1,0,olerj001,10,BX,7/F7
+play,1,0,rodra001,21,SBBX,S5
+com,"originally scored single, then E5, then single"
+play,1,0,marte001,02,CSS,K
+play,1,1,mcmib001,22,BCBFS,K
+play,1,1,encaj001,00,X,S8
+play,1,1,higgb001,10,BX,46(1)/FO
+play,1,1,gonzj002,10,BX,S7.1-2
+play,1,1,palmd002,00,X,8/F8
+play,2,0,marta001,21,BFBX,7/F7
+play,2,0,camem001,10,BX,53/G
+play,2,0,guilc001,22,SBBFX,D7
+play,2,0,wilsd001,01,FX,D7.2-H
+play,2,0,mclem001,12,CCBFFX,43/G
+play,2,1,easld001,10,BX,7/F7
+play,2,1,cruzd001,11,SBX,8/F8
+play,2,1,ausmb001,22,CBCFBX,9/F9
+play,3,0,hendr001,12,CBFX,S
+play,3,0,olerj001,01,CB,SB2
+play,3,0,olerj001,22,CBCBS,K
+play,3,0,rodra001,21,CBBX,D9.2-H
+play,3,0,marte001,10,BC,CS3(25)
+play,3,0,marte001,12,BCCX,HR/78
+play,3,0,marta001,12,CBFS,K
+play,3,1,macij001,12,BSFX,3/G
+play,3,1,mcmib001,11,BSX,43/G
+play,3,1,encaj001,21,BFBX,63/G
+play,4,0,camem001,10,BX,8/F8
+play,4,0,guilc001,11,BFX,7/F7
+play,4,0,wilsd001,32,BBFBFFB,W
+play,4,0,mclem001,00,B,CS2(26)
+play,4,1,higgb001,01,CX,8/F8
+play,4,1,gonzj002,12,BSCFFS,K
+play,4,1,palmd002,01,SX,8/F8
+play,5,0,mclem001,12,CFBS,K
+play,5,0,hendr001,10,BX,D/78
+play,5,0,olerj001,00,X,63/G.2-3
+play,5,0,rodra001,30,BBBB,W
+play,5,0,marte001,12,BCCS,K
+play,5,1,easld001,20,BBX,8/F8
+play,5,1,cruzd001,32,BBCFBX,8/F8
+play,5,1,ausmb001,32,FCBBBFX,S8
+play,5,1,macij001,22,CSBBC,K/C
+play,6,0,marta001,11,CBX,43/G
+play,6,0,camem001,20,BBX,8/F8
+play,6,0,guilc001,21,BBCX,7/F7
+play,6,1,mcmib001,20,BBX,D7
+play,6,1,encaj001,21,BBFX,S8/8S.2-H
+play,6,1,higgb001,32,FBBCBS,K+SB2.1-3(E2/TH2)
+play,6,1,gonzj002,02,FFX,9/F9
+play,6,1,palmd002,32,BBBFCFB,W
+play,6,1,easld001,21,CBBX,9/F9
+play,7,0,wilsd001,10,BX,D/78
+play,7,0,mclem001,22,CBFBS,K
+play,7,0,hendr001,11,BFX,S7.2-3
+play,7,0,olerj001,00,,NP
+sub,nitkc001,"C.J. Nitkowski",1,0,1
+play,7,0,olerj001,11,CBX,43/G.3-H;1-2
+play,7,0,rodra001,00,,NP
+sub,cruzn001,"Nelson Cruz",1,0,1
+play,7,0,rodra001,21,BBCX,8/F8
+play,7,1,cruzd001,22,BFFBX,D7
+play,7,1,ausmb001,20,BBX,9/F9.2-3
+play,7,1,macij001,00,,NP
+sub,rhoda001,"Arthur Rhodes",0,0,1
+play,7,1,macij001,12,CFFFBX,S9.3-H
+play,7,1,mcmib001,00,,NP
+sub,magew001,"Wendell Magee",1,1,11
+play,7,1,magew001,10,BX,S9.1-2
+play,7,1,encaj001,02,SFX,T9.2-H;1-H
+play,7,1,higgb001,22,SBCBX,S7.3-H
+play,7,1,gonzj002,00,,NP
+sub,mesaj001,"Jose Mesa",0,0,1
+play,7,1,gonzj002,00,X,S9.1-3
+play,7,1,palmd002,02,SCFX,9/SF.3-H;1-2
+play,7,1,easld001,31,BBBCX,8/F8
+play,8,0,marte001,32,BCBCBFFS,K
+play,8,0,marta001,22,BCFBX,43/G
+play,8,0,camem001,11,BCX,HR/9
+play,8,0,guilc001,11,BCX,5/L5
+play,8,1,cruzd001,10,BX,8/F8
+play,8,1,ausmb001,32,BBSBCFS,K23
+play,8,1,macij001,12,FFBX,43/G
+play,9,0,wilsd001,00,,NP
+sub,jonet003,"Todd Jones",1,0,1
+play,9,0,wilsd001,00,,NP
+sub,javis001,"Stan Javier",0,8,11
+play,9,0,javis001,02,SSX,43/G
+play,9,0,mclem001,00,X,S
+play,9,0,hendr001,10,BX,64(1)3/GDP
+data,er,abbop001,2
+data,er,rhoda001,4
+data,er,mesaj001,0
+data,er,nomoh001,4
+data,er,nitkc001,0
+data,er,cruzn001,1
+data,er,jonet003,0

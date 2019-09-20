@@ -1,0 +1,86 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,02,1,cataf001,,,,0,4,CFFX,garcf002,0,0,cataf001 singles. ,cataf001,0,
+cataf001 to 2B. ,10,1,,cataf001,,,1,6,BX,garcf002,1,0,clayr001 grounds out. ,clayr001,0,G
+cataf001 to 3B. ,11,1,,,cataf001,,2,9,BCX,garcf002,1,0,palmr001 grounds out. ,palmr001,0,G
+,21,1,,,cataf001,,3,13,BCBX,garcf002,1,0,curtc001 grounds out. ,curtc001,0,G
+,11,1,,,,,4,3,BCX,david002,1,0,hendr001 grounds out. ,hendr001,1,G
+,11,1,camem001,,,,5,6,BSX,david002,0,0,camem001 singles. ,camem001,1,G
+camem001 to 2B. ,32,1,rodra001,camem001,,,6,13,CBCBFBB,david002,0,0,rodra001 walks. ,rodra001,1,
+,01,1,rodra001,camem001,,,7,15,CX,david002,1,0,,marte001,1,F
+,32,1,rodra001,camem001,,,8,21,BCBBFX,david002,1,0,olerj001 grounds out. ,olerj001,1,G
+,30,2,leder001,,,,9,17,BBBB,garcf002,0,0,leder001 walks. ,leder001,0,
+leder001 to 2B. ,10,2,sierr001,leder001,,,10,19,BX,garcf002,0,0,sierr001 singles. ,sierr001,0,
+,22,2,sierr001,leder001,,,11,24,CBFBS,garcf002,1,0,lambm001 strikes out. ,lambm001,0,
+leder001 to 3B. sierr001 to 2B. ,31,2,,sierr001,leder001,,12,29,BBSBX,garcf002,1,0,knorr001 grounds out. ,knorr001,0,G
+leder001 scores. sierr001 to 3B. ,21,2,grees002,,sierr001,,13,33,CBBX,garcf002,0,1,grees002 singles. ,grees002,0,
+,02,2,grees002,,sierr001,,14,36,FFX,garcf002,1,0,cataf001 grounds out. ,cataf001,0,G
+,02,2,,,,,15,24,CFS,david002,1,0,buhnj001 strikes out. ,buhnj001,1,
+,22,2,belld002,,,,16,30,CBFBFX,david002,0,0,belld002 singles. ,belld002,1,
+belld002 to 3B. ,22,2,wilsd001,,belld002,,17,35,BFBFX,david002,0,0,wilsd001 singles. ,wilsd001,1,
+belld002 scores. wilsd001 to 2B. ,01,2,mclem001,wilsd001,,,18,37,CX,david002,0,1,mclem001 singles. ,mclem001,1,G
+wilsd001 to 3B. mclem001 to 2B. ,30,2,hendr001,mclem001,wilsd001,,19,41,BBBB,david002,0,0,hendr001 walks. ,hendr001,1,
+wilsd001 scores. ,12,2,hendr001,mclem001,,,20,46,SBFFX,david002,1,1,camem001 hits sacrifice fly. ,camem001,1,
+,22,2,hendr001,mclem001,,,21,51,BCBFS,david002,1,0,rodra001 strikes out. ,rodra001,1,
+,01,3,,,,,22,38,CX,garcf002,1,0,clayr001 grounds out. ,clayr001,0,G
+,00,3,,,,,23,39,X,garcf002,1,0,palmr001 grounds out. ,palmr001,0,G
+,31,3,curtc001,,,,24,44,BBBCB,garcf002,0,0,curtc001 walks. ,curtc001,0,
+,01,3,,curtc001,,leder001,25,46,SC,garcf002,0,0,curtc001 steals 2B. ,leder001,0,
+curtc001 scores. ,02,3,leder001,,,,26,49,SCX,garcf002,0,1,leder001 singles. ,leder001,0,
+,10,3,leder001,,,,27,51,BX,garcf002,1,0,,sierr001,0,F
+,22,3,,,,,28,57,BFBCFS,david002,1,0,marte001 strikes out. ,marte001,1,
+,12,3,,,,,29,61,CBCS,david002,1,0,olerj001 strikes out. ,olerj001,1,
+,22,3,,,,,30,66,BCBFC,david002,1,0,buhnj001 strikes out. ,buhnj001,1,
+,22,4,lambm001,,,,31,56,BCSBX,garcf002,0,0,lambm001 singles. ,lambm001,0,
+lambm001 to 2B. ,00,4,,lambm001,,,32,57,X,garcf002,1,0,Sacrifice bunt by knorr001.,knorr001,0,
+,22,4,,lambm001,,,33,62,BCBCS,garcf002,1,0,grees002 strikes out. ,grees002,0,
+,01,4,,lambm001,,,34,64,CX,garcf002,1,0,cataf001 grounds out. ,cataf001,0,G
+,20,4,,,,,35,69,BBX,david002,0,1,belld002 homers. ,belld002,1,
+,30,4,wilsd001,,,,36,73,BBBB,david002,0,0,wilsd001 walks. ,wilsd001,1,
+wilsd001 to 2B. ,00,4,,wilsd001,,,37,74,X,david002,1,0,Sacrifice bunt by mclem001.,mclem001,1,
+,32,4,,wilsd001,,,38,80,BBBCCX,david002,1,0,,hendr001,1,P
+wilsd001 scores. camem001 out. ,21,4,,,,,39,84,FBBX,david002,1,1,camem001 singles. ,camem001,1,
+,12,5,,,,,40,68,FCBS,garcf002,1,0,clayr001 strikes out. ,clayr001,0,
+,00,5,,,,,41,69,X,garcf002,1,0,palmr001 grounds out. ,palmr001,0,G
+,02,5,,,,,42,72,CCS,garcf002,1,0,curtc001 strikes out. ,curtc001,0,
+,00,5,,,,,43,85,X,david002,1,0,rodra001 grounds out. ,rodra001,1,G
+,30,5,marte001,,,,44,89,BBBB,david002,0,0,marte001 walks. ,marte001,1,
+,12,5,marte001,,,,45,93,SSBS,david002,1,0,olerj001 strikes out. ,olerj001,1,
+,32,5,marte001,,,,46,100,SBBCFBX,david002,1,0,,buhnj001,1,P
+,22,6,,,,,47,77,BBCFC,garcf002,1,0,leder001 strikes out. ,leder001,0,
+,22,6,,,,,48,82,CFBBS,garcf002,1,0,sierr001 strikes out. ,sierr001,0,
+,21,6,lambm001,,,,49,86,FBBX,garcf002,0,0,lambm001 singles. ,lambm001,0,
+lambm001 scores. ,11,6,,knorr001,,,50,89,FBX,garcf002,0,1,knorr001 doubles. ,knorr001,0,
+,32,6,grees002,knorr001,,,51,96,SCBBFBB,garcf002,0,0,grees002 walks. ,grees002,0,
+,12,6,grees002,knorr001,,,52,100,SCBX,garcf002,1,0,,cataf001,0,F
+,12,6,belld002,,,,53,104,BFFX,david002,0,0,belld002 singles. ,belld002,1,
+belld002 out. ,00,6,wilsd001,,,,55,1,X,johnj008,1,0,wilsd001 reaches on fielder's choice. ,wilsd001,1,
+wilsd001 scores. ,12,6,,mclem001,,,56,5,FCBX,johnj008,0,1,mclem001 doubles. ,mclem001,1,
+mclem001 out. ,32,6,hendr001,,,,57,11,BBCBCX,johnj008,1,0,hendr001 singles. ,hendr001,1,
+hendr001 to 3B. ,01,6,,,hendr001,camem001,58,13,CB,johnj008,0,0,hendr001 steals 2B. ,camem001,1,
+,21,6,,,hendr001,,59,17,CBBX,johnj008,1,0,camem001 grounds out. ,camem001,1,G
+,02,7,,clayr001,,,62,4,FFFX,panij001,0,0,clayr001 doubles. ,clayr001,0,
+clayr001 to 3B. ,00,7,,,clayr001,,63,5,X,panij001,1,0,,palmr001,0,F
+clayr001 scores. ,01,7,curtc001,,,,64,7,FX,panij001,0,1,curtc001 singles. ,curtc001,0,
+,12,7,curtc001,,,,65,11,CFBS,panij001,1,0,leder001 strikes out. ,leder001,0,
+curtc001 to 2B. ,30,7,sierr001,curtc001,,,66,15,BBBB,panij001,0,0,sierr001 walks. ,sierr001,0,
+,10,7,sierr001,curtc001,,,67,17,BX,panij001,1,0,lambm001 grounds out. ,lambm001,0,G
+,22,7,,,,,68,22,BCSBS,johnj008,1,0,rodra001 strikes out. ,rodra001,1,
+,31,7,marte001,,,,69,27,BBFBB,johnj008,0,0,marte001 walks. ,marte001,1,
+marte001 to 2B. ,10,7,olerj001,marte001,,,71,2,BX,venam002,0,0,olerj001 singles. ,olerj001,1,
+,22,7,olerj001,marte001,,,73,5,FFBBS,zimmj001,1,0,buhnj001 strikes out. ,buhnj001,1,
+,32,7,olerj001,marte001,,,74,12,SCBBFBX,zimmj001,1,0,,belld002,1,F
+,32,8,,,,,78,26,CFBBBFFFC,panij001,1,0,alicl001 strikes out. ,alicl001,0,
+,02,8,grees002,,,,79,29,CCX,panij001,0,0,grees002 reaches on error. ,grees002,0,G
+grees002 to 2B. ,02,8,cataf001,grees002,,,80,32,FCH,panij001,0,0,cataf001 hit by pitch. ,cataf001,0,
+grees002 to 3B. cataf001 to 2B. ,32,8,clayr001,cataf001,grees002,,82,11,SBFFFBFFBFB,sasak001,0,0,clayr001 walks. ,clayr001,0,
+,10,8,clayr001,cataf001,grees002,,83,13,BX,sasak001,1,0,,palmr001,0,F
+,02,8,clayr001,cataf001,grees002,,84,16,FFS,sasak001,1,0,curtc001 strikes out. ,curtc001,0,
+,02,8,,wilsd001,,,86,15,FCX,zimmj001,0,0,wilsd001 doubles. ,wilsd001,1,
+marta001 to 3B. ,22,8,,,marta001,,88,21,LCBFBX,zimmj001,1,0,,mclem001,1,F
+,30,8,javis001,,marta001,,90,25,BIII,zimmj001,0,0,javis001 intentionally walks. ,javis001,1,
+,02,8,javis001,,marta001,,92,3,SCC,crabt001,1,0,camem001 strikes out. ,camem001,1,
+marta001 scores. javis001 to 2B. ,02,8,,javis001,,rodra001,93,6,SFB,crabt001,0,1,Passed Ball. ,rodra001,1,
+,32,8,,javis001,,,94,13,SFBFBBS,crabt001,1,0,rodra001 strikes out. ,rodra001,1,
+,00,9,,,,,98,17,X,sasak001,1,0,,leder001,0,L
+,22,9,,,,,99,22,CSBBS,sasak001,1,0,sierr001 strikes out. ,sierr001,0,
+,00,9,,,,,100,23,X,sasak001,1,0,,lambm001,0,F

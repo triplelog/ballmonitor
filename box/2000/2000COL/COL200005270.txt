@@ -1,0 +1,158 @@
+version,2
+info,visteam,PIT
+info,hometeam,COL
+info,site,DEN02
+info,date,2000/05/27
+info,number,0
+info,starttime,2:05PM
+info,daynight,day
+info,usedh,false
+info,umphome,welkt901
+info,ump1b,hudsm901
+info,ump2b,cedeg901
+info,ump3b,scotd901
+info,pitches,pitches
+info,temp,76
+info,winddir,rtol
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,170
+info,attendance,42184
+info,wp,whitg001
+info,lp,chrij002
+info,save,
+start,morrw001,"Warren Morris",0,1,4
+start,kendj001,"Jason Kendall",0,2,2
+start,cordw001,"Wil Cordero",0,3,7
+start,gileb002,"Brian Giles",0,4,8
+start,younk001,"Kevin Young",0,5,3
+start,avenb001,"Bruce Aven",0,6,9
+start,mearp001,"Pat Meares",0,7,6
+start,sojol001,"Luis Sojo",0,8,5
+start,ritct001,"Todd Ritchie",0,9,1
+start,goodt001,"Tom Goodwin",1,1,8
+start,lansm001,"Mike Lansing",1,2,4
+start,cirij001,"Jeff Cirillo",1,3,5
+start,heltt001,"Todd Helton",1,4,3
+start,hammj001,"Jeffrey Hammonds",1,5,9
+start,carpb001,"Bubba Carpenter",1,6,7
+start,maynb001,"Brent Mayne",1,7,2
+start,peren001,"Neifi Perez",1,8,6
+start,karls001,"Scott Karl",1,9,1
+play,1,0,morrw001,02,CSS,K
+play,1,0,kendj001,22,FFFBBX,S7
+play,1,0,cordw001,22,FFBBX,S8.1-2
+play,1,0,gileb002,11,BCX,S8.2-H;1-2
+play,1,0,younk001,00,X,5(2)3/GDP
+play,1,1,goodt001,10,BX,8/F8
+play,1,1,lansm001,10,BX,43/G
+play,1,1,cirij001,32,BFBBCFB,W
+play,1,1,heltt001,01,CX,S8.1-3;BX2(854)
+play,2,0,avenb001,00,X,S
+play,2,0,mearp001,21,BFBX,S7/7S.1-3
+play,2,0,sojol001,10,BX,8/SF.3-H;1-2
+play,2,0,ritct001,00,X,3/G.2-3
+play,2,0,morrw001,22,FCBBX,63/G
+play,2,1,hammj001,00,X,63/G
+play,2,1,carpb001,32,BSCBFFFBFB,W
+play,2,1,maynb001,11,CBX,4/L4
+play,2,1,peren001,10,BX,6(1)/FO/G
+play,3,0,kendj001,02,CFX,S9/9S
+play,3,0,cordw001,00,X,HR/7.1-H
+play,3,0,gileb002,01,FX,13/G
+play,3,0,younk001,20,BBX,8/F8D
+play,3,0,avenb001,20,BBX,53/G
+play,3,1,karls001,32,CFBBBX,5/FL
+play,3,1,goodt001,02,CSS,K
+play,3,1,lansm001,10,BX,9/F9
+play,4,0,mearp001,12,SCBX,43/G
+play,4,0,sojol001,31,CBBBX,4/P4
+play,4,0,ritct001,00,X,9/F9
+play,4,1,cirij001,11,CBX,63/G
+play,4,1,heltt001,11,BFX,S7/7S
+play,4,1,hammj001,12,CSBFX,9/F9S
+play,4,1,carpb001,22,BCBCS,K
+play,5,0,morrw001,00,,NP
+sub,bragd001,"Darren Bragg",1,5,9
+play,5,0,morrw001,12,BCSFX,53/G
+play,5,0,kendj001,31,BBBCX,D9
+play,5,0,cordw001,30,IIII,IW
+play,5,0,gileb002,01,FX,36(1)/FO.2-3
+play,5,0,younk001,00,X,S9/9S.3-H;1-2
+play,5,0,avenb001,00,,NP
+sub,tavaj001,"Julian Tavarez",1,9,1
+play,5,0,avenb001,12,CBCX,53/G
+play,5,1,maynb001,00,X,S8/8S
+play,5,1,peren001,11,CBX,7/F7
+play,5,1,tavaj001,00,X,24/SH.1-2
+play,5,1,goodt001,32,CBCBBB,W
+play,5,1,lansm001,21,BCBX,S/78.2-H;1-3
+play,5,1,cirij001,00,X,S8.3-H;1-3
+play,5,1,heltt001,22,BCCFFBFFFX,HR/7.3-H;1-H
+play,5,1,bragd001,32,BFBBFB,W
+play,5,1,carpb001,00,,NP
+sub,saues001,"Scott Sauerbeck",0,6,1
+play,5,1,carpb001,00,,NP
+sub,vandj001,"John Vander Wal",0,9,9
+play,5,1,carpb001,12,BCCS,K
+play,6,0,mearp001,01,CX,S
+play,6,0,sojol001,21,BSBX,9/F9
+play,6,0,vandj001,11,CBX,46(1)3/GDP
+play,6,1,maynb001,01,CX,31/G
+play,6,1,peren001,10,BX,S8/8S
+play,6,1,tavaj001,01,LX,16(1)/FO
+play,6,1,goodt001,00,X,S9/9S.1-2
+play,6,1,lansm001,00,X,3/G
+play,7,0,morrw001,32,BBCBCFB,W
+play,7,0,kendj001,32,CBBBCFX,S9/9S.1-3
+play,7,0,cordw001,12,CSBX,6(1)3/GDP.3-H
+play,7,0,gileb002,00,X,D9
+play,7,0,younk001,02,FFB,WP.2-3
+play,7,0,younk001,12,FFBS,K
+play,7,1,cirij001,32,BBFBCFS,K
+play,7,1,heltt001,31,BBBCB,W
+play,7,1,bragd001,00,,NP
+sub,shumt001,"Terry Shumpert",1,5,11
+play,7,1,shumt001,00,,NP
+sub,silvj001,"Jose Silva",0,6,1
+play,7,1,shumt001,01,CX,S9/9S.1-2
+play,7,1,carpb001,00,,NP
+sub,huntb002,"Brian L. Hunter",1,6,11
+play,7,1,huntb002,00,,NP
+sub,chrij002,"Jason Christiansen",0,5,1
+play,7,1,huntb002,00,,NP
+sub,vandj001,"John Vander Wal",0,9,3
+play,7,1,huntb002,00,,NP
+sub,browa001,"Adrian Brown",0,6,9
+play,7,1,huntb002,30,BBBB,W.2-3;1-2
+play,7,1,maynb001,12,SBSFB,WP.3-H;2-3;1-2
+play,7,1,maynb001,22,SBSFBS,K
+play,7,1,peren001,10,BX,3/G
+play,8,0,browa001,00,,NP
+sub,shumt001,"Terry Shumpert",1,5,7
+play,8,0,browa001,00,,NP
+sub,huntb002,"Brian L. Hunter",1,6,9
+play,8,0,browa001,12,CCBX,53/G
+play,8,0,mearp001,12,CFBS,K
+play,8,0,sojol001,20,BBX,63/G
+play,8,1,tavaj001,00,,NP
+sub,ledea001,"Aaron Ledesma",1,9,11
+play,8,1,ledea001,00,X,43/G
+play,8,1,goodt001,32,CCBBBB,W
+play,8,1,lansm001,12,CBSS,K+SB2
+play,8,1,cirij001,12,BFSFS,K
+play,9,0,vandj001,00,,NP
+sub,whitg001,"Gabe White",1,9,1
+play,9,0,vandj001,02,CSS,K
+play,9,0,morrw001,22,FBSBX,5/L5
+play,9,0,kendj001,12,CSBX,8/F8
+play,9,1,heltt001,00,X,HR/9
+data,er,ritct001,5
+data,er,saues001,1
+data,er,silvj001,0
+data,er,chrij002,1
+data,er,karls001,5
+data,er,tavaj001,1
+data,er,whitg001,0

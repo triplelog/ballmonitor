@@ -1,0 +1,152 @@
+version,2
+info,visteam,ANA
+info,hometeam,BOS
+info,site,BOS07
+info,date,2000/08/22
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,fichm901
+info,ump1b,cousd901
+info,ump2b,mealj901
+info,ump3b,marqa901
+info,pitches,pitches
+info,temp,77
+info,winddir,fromrf
+info,windspeed,9
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,166
+info,attendance,33163
+info,wp,merck001
+info,lp,waket001
+info,save,
+start,palmo001,"Orlando Palmeiro",0,1,7
+start,stock001,"Kevin Stocker",0,2,6
+start,vaugm001,"Mo Vaughn",0,3,3
+start,salmt001,"Tim Salmon",0,4,9
+start,andeg001,"Garret Anderson",0,5,8
+start,glaut001,"Troy Glaus",0,6,5
+start,molib001,"Ben Molina",0,7,2
+start,kenna001,"Adam Kennedy",0,8,4
+start,gantr001,"Ron Gant",0,9,10
+start,merck001,"Kent Mercker",0,0,1
+start,offej001,"Jose Offerman",1,1,4
+start,merll001,"Lou Merloni",1,2,5
+start,everc001,"Carl Everett",1,3,8
+start,garcn001,"Nomar Garciaparra",1,4,6
+start,oleat001,"Troy O'Leary",1,5,7
+start,gilkb001,"Bernard Gilkey",1,6,10
+start,varij001,"Jason Varitek",1,7,2
+start,daubb001,"Brian Daubach",1,8,3
+start,lewid001,"Darren Lewis",1,9,9
+start,waket001,"Tim Wakefield",1,0,1
+play,1,0,palmo001,12,CBCX,D7
+play,1,0,stock001,00,X,13/SH.2-3
+play,1,0,vaugm001,12,FCBX,5/FL
+play,1,0,salmt001,12,FBFX,S7.3-H
+play,1,0,andeg001,00,B,OA.1X2(24)#
+play,1,1,offej001,10,BX,8/F8
+play,1,1,merll001,30,BBBB,W
+play,1,1,everc001,01,CX,S8.1-2
+play,1,1,garcn001,32,BBSCFBX,5/FL
+play,1,1,oleat001,10,BX,8/F8
+play,2,0,andeg001,00,X,S
+play,2,0,glaut001,22,BSBCX,D7.1-3
+play,2,0,molib001,12,FFFBH,HP
+play,2,0,kenna001,20,BBX,46(1)/FO.3-H;2-3
+play,2,0,gantr001,32,BFFBBFB,W.1-2
+play,2,0,palmo001,32,CBBCFBX,S7/7S.3-H;2-H;1-2
+play,2,0,stock001,12,CBFX,3/G.2-3;1-2
+play,2,0,vaugm001,02,SFFX,7/F7
+play,2,1,gilkb001,00,X,63/G
+play,2,1,varij001,22,CBCBX,S
+play,2,1,daubb001,30,BBBB,W.1-2
+play,2,1,lewid001,11,BCX,3/P3
+play,2,1,offej001,10,BX,S7.2-3;1-2
+play,2,1,merll001,22,CBSBC,K/C
+play,3,0,salmt001,01,CX,7/F7
+play,3,0,andeg001,01,CX,6/P6
+play,3,0,glaut001,32,BBBCCB,W
+play,3,0,molib001,10,BX,8/F8
+play,3,1,everc001,01,CX,8/F8
+play,3,1,garcn001,10,BX,8/F8
+play,3,1,oleat001,00,X,D/89D
+play,3,1,gilkb001,11,BCX,D7.2-H
+play,3,1,varij001,11,CBX,8/F8D
+play,4,0,kenna001,11,CBX,7/F7
+play,4,0,gantr001,00,X,63/G
+play,4,0,palmo001,02,CCX,43/G
+play,4,1,daubb001,12,CFBS,K23
+play,4,1,lewid001,00,X,S
+play,4,1,offej001,32,BBCBFX,S8.1-2
+play,4,1,merll001,00,X,D7.2-H;1-3
+play,4,1,everc001,22,BCBCFX,63/G.3-H
+play,4,1,garcn001,30,IIII,IW
+play,4,1,oleat001,21,BCBX,D8/78.2-H;1XH(862)
+play,5,0,stock001,12,FBSX,7/F7
+play,5,0,vaugm001,10,BX,S/89
+play,5,0,salmt001,00,X,S7.1-2
+play,5,0,andeg001,01,FX,S9/9S.2-H;1-3;B-2(TH)
+play,5,0,glaut001,11,CBX,D7.3-H;2-H
+play,5,0,molib001,00,,NP
+sub,pichh001,"Hipolito Pichardo",1,0,1
+play,5,0,molib001,20,BBX,63/G.2-3
+play,5,0,kenna001,11,CBB,WP.3-H
+play,5,0,kenna001,32,CBBBFB,W
+play,5,0,gantr001,00,X,D/89D.1-H
+play,5,0,palmo001,10,BX,D7.2-H
+play,5,0,stock001,10,BX,63/G
+play,5,1,gilkb001,21,BCBX,7/F7
+play,5,1,varij001,20,BBX,8/F8
+play,5,1,daubb001,00,X,63/G
+play,6,0,vaugm001,12,SBSS,K
+play,6,0,salmt001,32,BSBBFS,K
+play,6,0,andeg001,32,BBFFBX,9/F9
+play,6,1,lewid001,31,BBCBB,W
+play,6,1,offej001,11,BCX,64(1)3/GDP
+play,6,1,merll001,12,CCBX,53/G
+play,7,0,glaut001,00,,NP
+sub,florb001,"Bryce Florie",1,0,1
+play,7,0,glaut001,22,BBSCX,D7
+play,7,0,molib001,10,BX,3/G.2-3
+play,7,0,kenna001,21,FBBX,8/SF.3-H
+play,7,0,gantr001,22,SBFBS,K
+play,7,1,everc001,00,,NP
+sub,levia001,"Al Levine",0,0,1
+play,7,1,everc001,12,CBFFS,K
+play,7,1,garcn001,10,BX,63/G
+play,7,1,oleat001,20,BBX,43/G
+play,8,0,palmo001,00,,NP
+sub,hatts001,"Scott Hatteberg",1,7,2
+play,8,0,palmo001,12,CCBX,S8/8S
+play,8,0,stock001,01,CX,46(1)3/GDP
+play,8,0,vaugm001,22,BBFFS,K
+play,8,1,gilkb001,00,,NP
+sub,brogr001,"Rico Brogna",1,6,11
+play,8,1,brogr001,21,SBBX,43/G
+play,8,1,hatts001,22,CCBFBX,7/F7
+play,8,1,daubb001,12,BCSS,K
+play,9,0,salmt001,00,,NP
+sub,alexm001,"Manny Alexander",1,4,6
+play,9,0,salmt001,32,BSBSBX,53/G
+play,9,0,andeg001,32,FSBFBBX,S9
+play,9,0,glaut001,00,X,7/F7
+play,9,0,molib001,01,FX,54(1)/FO
+play,9,1,lewid001,00,,NP
+sub,potel001,"Lou Pote",0,0,1
+play,9,1,lewid001,00,,NP
+sub,palmo001,"Orlando Palmeiro",0,1,9
+play,9,1,lewid001,00,,NP
+sub,spies001,"Scott Spiezio",0,4,7
+play,9,1,lewid001,01,CX,43/G
+play,9,1,offej001,32,CBBBCS,K
+play,9,1,merll001,01,SX,43/G
+data,er,merck001,4
+data,er,levia001,0
+data,er,potel001,0
+data,er,waket001,8
+data,er,pichh001,2
+data,er,florb001,1

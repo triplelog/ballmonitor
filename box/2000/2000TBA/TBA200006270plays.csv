@@ -1,0 +1,85 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,22,1,,,,,0,6,CFBBFX,tracs001,1,0,,stews002,0,L
+,21,1,,,,,1,10,CBBX,tracs001,1,0,grebc001 grounds out. ,grebc001,0,G
+,32,1,batit001,,,,2,18,CBBFFBFB,tracs001,0,0,batit001 walks. ,batit001,0,
+batit001 to 3B. ,10,1,delgc001,,batit001,,3,20,BX,tracs001,0,0,delgc001 singles. ,delgc001,0,
+,01,1,delgc001,,batit001,,4,22,CX,tracs001,1,0,,fullb001,0,P
+,30,1,winnr001,,,,5,4,.BBBB,escok001,0,0,winnr001 walks. ,winnr001,1,
+winnr001 to 3B. ,31,1,cox-s001,,winnr001,,6,9,BBBCX,escok001,0,0,cox-s001 singles. ,cox-s001,1,
+cox-s001 to 2B. ,11,1,tramb001,cox-s001,winnr001,,7,12,BCH,escok001,0,0,tramb001 hit by pitch. ,tramb001,1,
+winnr001 scores. cox-s001 scores. tramb001 to 3B. ,12,1,mcgrf001,,tramb001,,8,16,BSCX,escok001,0,2,mcgrf001 singles. ,mcgrf001,1,
+,02,1,mcgrf001,,tramb001,,9,19,CFX,escok001,1,0,,flahj001,1,
+,02,1,mcgrf001,,tramb001,,10,23,CFFC,escok001,1,0,smitr003 strikes out. ,smitr003,1,
+,12,1,mcgrf001,,tramb001,,11,27,CBSX,escok001,1,0,,guilj001,1,F
+,22,2,cruzj004,,,,12,28,LBSFBX,tracs001,0,0,cruzj004 singles. ,cruzj004,0,
+,02,2,cruzj004,,,,13,32,FSFX,tracs001,1,0,,cordm001,0,F
+cruzj004 to 2B. ,01,2,,cruzj004,,,14,34,CX,tracs001,1,0,casta001 grounds out. ,casta001,0,G
+,31,2,woodc001,cruzj004,,,15,39,BBBCB,tracs001,0,0,woodc001 walks. ,woodc001,0,
+,00,2,woodc001,cruzj004,,,16,40,X,tracs001,1,0,,stews002,0,F
+,00,2,,,,,17,28,X,escok001,1,0,,guilo001,1,P
+,22,2,martf001,,,,18,34,BBCCFX,escok001,0,0,martf001 singles. ,martf001,1,
+martf001 out. ,11,2,winnr001,,,,19,37,BCX,escok001,1,0,winnr001 reaches on fielder's choice. ,winnr001,1,
+,21,2,,,,cox-s001,20,41,BCBS,escok001,1,0,winnr001 caught stealing. ,cox-s001,1,
+,12,3,grebc001,,,,21,44,FCBX,tracs001,0,0,grebc001 singles. ,grebc001,0,
+,31,3,grebc001,,,,22,49,BFBBX,tracs001,1,0,,batit001,0,P
+grebc001 to 3B. ,02,3,delgc001,,grebc001,,23,52,FCX,tracs001,0,0,delgc001 singles. ,delgc001,0,
+grebc001 scores. ,00,3,delgc001,,,,24,53,X,tracs001,1,1,fullb001 hits sacrifice fly. ,fullb001,0,
+delgc001 to 2B. ,32,3,cruzj004,delgc001,,,25,59,SBFBBB,tracs001,0,0,cruzj004 walks. ,cruzj004,0,
+delgc001 to 3B. cruzj004 to 2B. ,32,3,cordm001,cruzj004,delgc001,,26,65,CBBBCB,tracs001,0,0,cordm001 walks. ,cordm001,0,
+,22,3,cordm001,cruzj004,delgc001,,27,71,CBFFBS,tracs001,1,0,casta001 strikes out. ,casta001,0,
+,32,3,,,,,28,48,SBBSBFX,escok001,1,0,cox-s001 grounds out. ,cox-s001,1,G
+,31,3,,,,,29,53,CBBBX,escok001,1,0,tramb001 grounds out. ,tramb001,1,G
+,21,3,mcgrf001,,,,30,57,BBCX,escok001,0,0,mcgrf001 singles. ,mcgrf001,1,
+,10,3,mcgrf001,,,,31,59,BX,escok001,1,0,,flahj001,1,L
+,10,4,,,,,32,73,BX,tracs001,1,0,,woodc001,0,L
+,31,4,stews002,,,,33,78,CBBBX,tracs001,0,0,stews002 singles. ,stews002,0,
+,11,4,,,,grebc001,34,81,BFB,tracs001,1,0,stews002 caught stealing. ,grebc001,0,
+,22,4,,,,,35,86,BFBFX,tracs001,1,0,grebc001 grounds out. ,grebc001,0,G
+,00,4,smitr003,,,,36,60,X,escok001,0,0,smitr003 singles. ,smitr003,1,
+smitr003 to 3B. ,10,4,,guilj001,smitr003,,37,62,BX,escok001,0,0,guilj001 doubles. ,guilj001,1,
+,31,4,guilo001,guilj001,smitr003,,38,67,BBBCB,escok001,0,0,guilo001 walks. ,guilo001,1,
+,02,4,guilo001,guilj001,smitr003,,39,70,CSS,escok001,1,0,martf001 strikes out. ,martf001,1,
+smitr003 scores. guilj001 to 3B. guilo001 to 2B. ,20,4,winnr001,guilo001,guilj001,,40,73,BBX,escok001,0,1,winnr001 reaches on error. ,winnr001,1,G
+guilj001 scores. guilo001 scores. winnr001 scores. ,00,4,,,,,41,74,X,escok001,0,4,cox-s001 homers. ,cox-s001,1,
+,22,4,,tramb001,,,42,79,CBSBX,escok001,0,0,tramb001 doubles. ,tramb001,1,
+tramb001 scores. ,31,4,mcgrf001,,,,43,84,BBSBX,escok001,0,1,mcgrf001 singles. ,mcgrf001,1,
+mcgrf001 to 2B. ,12,4,flahj001,mcgrf001,,,45,4,BSFX,dewim001,0,0,flahj001 singles. ,flahj001,1,
+mcgrf001 to 3B. ,22,4,flahj001,,mcgrf001,,46,11,BSCFFBX,dewim001,1,0,,smitr003,1,F
+mcgrf001 scores. flahj001 to 2B. ,21,4,,flahj001,,guilj001,47,15,BFBB,dewim001,0,1,Wild Pitch. ,guilj001,1,
+,32,4,,flahj001,,,48,21,BFBBCX,dewim001,1,0,,guilj001,1,F
+,21,5,,,,,49,90,SBBX,tracs001,1,0,,batit001,0,
+,31,5,,,,,50,95,BCBBX,tracs001,1,0,delgc001 grounds out. ,delgc001,0,G
+,00,5,,,,,51,96,X,tracs001,1,0,fullb001 grounds out. ,fullb001,0,G
+,01,5,,,,,52,23,FX,dewim001,1,0,guilo001 grounds out. ,guilo001,1,G
+,31,5,,,,,53,28,BBBCX,dewim001,1,0,martf001 grounds out. ,martf001,1,G
+,21,5,winnr001,,,,54,32,BBCX,dewim001,0,0,winnr001 singles. ,winnr001,1,
+winnr001 out. ,21,5,cox-s001,,,,55,36,CBBX,dewim001,1,0,cox-s001 reaches on fielder's choice. ,cox-s001,1,
+,02,6,cruzj004,,,,56,99,FCX,tracs001,0,0,cruzj004 singles. ,cruzj004,0,
+cruzj004 to 2B. ,00,6,cordm001,cruzj004,,,57,100,X,tracs001,0,0,cordm001 singles. ,cordm001,0,
+cruzj004 to 3B. ,11,6,,,cruzj004,,58,103,BFX,tracs001,2,0,Double Play. ,casta001,0,
+,20,6,,,cruzj004,,59,106,BBX,tracs001,1,0,,woodc001,0,F
+,01,6,tramb001,,,,61,38,CH,dewim001,0,0,tramb001 hit by pitch. ,tramb001,1,
+tramb001 to 2B. ,30,6,mcgrf001,tramb001,,,62,42,BBBB,dewim001,0,0,mcgrf001 walks. ,mcgrf001,1,
+,10,6,mcgrf001,tramb001,,,63,44,BX,dewim001,1,0,,flahj001,1,P
+,01,6,mcgrf001,tramb001,,,64,46,FX,dewim001,1,0,,smitr003,1,P
+tramb001 to 3B. mcgrf001 to 2B. ,11,6,guilj001,mcgrf001,tramb001,,65,49,BCH,dewim001,0,0,guilj001 hit by pitch. ,guilj001,1,
+tramb001 scores. mcgrf001 scores. guilj001 to 3B. ,01,6,guilo001,,guilj001,,66,51,FX,dewim001,0,2,guilo001 singles. ,guilo001,1,
+,00,6,guilo001,,guilj001,,67,52,X,dewim001,1,0,martf001 grounds out. ,martf001,1,G
+,00,7,,,,,69,1,X,whitr002,1,0,,stews002,0,L
+,22,7,,,,,70,8,BCCFBFX,whitr002,1,0,grebc001 grounds out. ,grebc001,0,G
+,10,7,batit001,,,,71,10,BX,whitr002,0,0,batit001 singles. ,batit001,0,
+,00,7,batit001,,,,72,11,X,whitr002,1,0,,delgc001,0,F
+,02,7,,,,,74,3,SCS,painl001,1,0,winnr001 strikes out. ,winnr001,1,
+,22,7,,cox-s001,,,75,8,BBSCX,painl001,0,0,cox-s001 doubles. ,cox-s001,1,
+,02,7,,cox-s001,,,76,11,SCX,painl001,1,0,,tramb001,1,F
+,12,7,,cox-s001,,,78,16,BSCFX,painl001,1,0,,johnr006,1,F
+,22,8,,,,,82,9,BSBSFFFFS,sturt001,1,0,fullb001 strikes out. ,fullb001,0,
+,32,8,,,,,83,15,FBCBBX,sturt001,1,0,,cruzj004,0,F
+,32,8,,,,,84,24,CCBFBBFFX,sturt001,1,0,,cordm001,0,P
+,01,8,,,,,86,18,CX,painl001,1,0,flahj001 grounds out. ,flahj001,1,G
+,22,8,,,,,87,23,SBBSC,painl001,1,0,smitr003 strikes out. ,smitr003,1,
+,31,8,,,,,88,28,BBFBX,painl001,1,0,guilj001 grounds out. ,guilj001,1,G
+,22,9,,,,,90,6,CFBFBX,mecij001,1,0,greec002 grounds out. ,greec002,0,G
+,20,9,,,,,91,9,BBX,mecij001,1,0,woodc001 grounds out. ,woodc001,0,G
+,00,9,greet003,,,,92,10,X,mecij001,0,0,greet003 singles. ,greet003,0,
+,10,9,greet003,,,,93,12,BX,mecij001,1,0,,grebc001,0,F

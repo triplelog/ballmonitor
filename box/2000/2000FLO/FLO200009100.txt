@@ -1,0 +1,211 @@
+version,2
+info,visteam,ARI
+info,hometeam,FLO
+info,site,MIA01
+info,date,2000/09/10
+info,number,0
+info,starttime,4:05PM
+info,daynight,day
+info,usedh,false
+info,umphome,buckc901
+info,ump1b,reedr901
+info,ump2b,wendh902
+info,ump3b,clara901
+info,pitches,pitches
+info,temp,84
+info,winddir,fromrf
+info,windspeed,3
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,247
+info,attendance,13117
+info,wp,loopb001
+info,lp,sprir001
+info,save,
+start,womat001,"Tony Womack",0,1,6
+start,bellj001,"Jay Bell",0,2,4
+start,gonzl001,"Luis Gonzalez",0,3,7
+start,colbg001,"Greg Colbrunn",0,4,3
+start,finls001,"Steve Finley",0,5,8
+start,willm003,"Matt D. Williams",0,6,5
+start,bautd001,"Danny Bautista",0,7,9
+start,stink001,"Kelly Stinnett",0,8,2
+start,johnr005,"Randy Johnson",0,9,1
+start,castl001,"Luis Castillo",1,1,4
+start,bergd002,"Dave Berg",1,2,6
+start,millk005,"Kevin Millar",1,3,7
+start,wilsp002,"Preston Wilson",1,4,8
+start,lowem001,"Mike Lowell",1,5,5
+start,lee-d002,"Derrek Lee",1,6,3
+start,smitm004,"Mark Smith",1,7,9
+start,redmm001,"Mike Redmond",1,8,2
+start,smitc001,"Chuck Smith",1,9,1
+play,1,0,womat001,11,CBX,4/L4
+play,1,0,bellj001,22,BFBSS,K
+play,1,0,gonzl001,10,BX,8/F8
+play,1,1,castl001,22,BBCCS,K
+play,1,1,bergd002,11,BSX,S8
+play,1,1,millk005,12,BCFS,K
+play,1,1,wilsp002,11,CBX,43/G
+play,2,0,colbg001,30,BBBB,W
+play,2,0,finls001,12,CCBS,K
+play,2,0,willm003,31,BBBFX,S7/7S.1-2
+play,2,0,bautd001,00,X,3/P3
+play,2,0,stink001,22,BSBSS,K
+play,2,1,lowem001,12,BFSS,K
+play,2,1,lee-d002,22,BCBSFS,K
+play,2,1,smitm004,02,SCS,K
+play,3,0,johnr005,12,CSBS,K
+play,3,0,womat001,32,BBCBFFB,W
+play,3,0,bellj001,02,FFX,46(1)3/GDP
+play,3,1,redmm001,12,BFCX,9/L9
+play,3,1,smitc001,11,BCX,S7/7S
+play,3,1,castl001,12,CBSX,36(1)/FO
+play,3,1,bergd002,11,BS1,POCS2(136)
+play,4,0,gonzl001,31,BFBBB,W
+play,4,0,colbg001,10,BX,64(1)3/GDP
+play,4,0,finls001,22,BBCFX,43/G
+play,4,1,bergd002,22,BCFBS,K
+play,4,1,millk005,32,BCBBFB,W
+play,4,1,wilsp002,12,CSBS,K
+play,4,1,lowem001,12,BFFS,K
+com,"$Johnson's 3000th strikeout; only the second lefty to"
+com,"reach this mark (Steve Carlton)"
+play,5,0,willm003,02,CFX,9/F9
+play,5,0,bautd001,32,CBBFBS,K
+play,5,0,stink001,12,BCSS,K
+play,5,1,lee-d002,02,CCS,K
+play,5,1,smitm004,22,BFSBX,S
+play,5,1,redmm001,11,BCX,S9/9S.1-3
+play,5,1,smitc001,00,X,E1/TH.3-H;1-2
+play,5,1,castl001,11,BFX,3/G.2-3;1-2#
+play,5,1,bergd002,01,SX,D7/7D.3-H(UR);2-H(UR)
+play,5,1,millk005,22,BCBCX,5/P5
+play,6,0,johnr005,32,CBBBCB,W
+play,6,0,womat001,12,CBFX,3/P3
+play,6,0,bellj001,12,BSCFX,D7/7D.1-3
+play,6,0,gonzl001,20,BBX,7/SF.3-H
+play,6,0,colbg001,22,SFFBBFX,HR/78.2-H
+play,6,0,finls001,11,CBX,8/F8
+play,6,1,wilsp002,12,CBFS,K
+play,6,1,lowem001,31,BBBCB,W
+play,6,1,lee-d002,12,BFSFB,SB2
+play,6,1,lee-d002,22,BFSFBS,K23.2-3(PB)
+play,6,1,smitm004,22,FFBBS,K
+play,7,0,willm003,00,X,63/G
+play,7,0,bautd001,22,BBCCS,K
+play,7,0,stink001,22,BSBCX,9/F9
+play,7,1,redmm001,12,BCSX,S/89
+play,7,1,smitc001,00,,NP
+sub,clapc001,"Chris Clapinski",1,9,11
+play,7,1,clapc001,00,,NP
+sub,fox-a001,"Andy Fox",1,8,12
+play,7,1,clapc001,12,BLLL,K/BF
+play,7,1,castl001,12,CBCFB,CS2(26)
+play,7,1,castl001,32,CBCFBBFFC,K/C
+play,8,0,johnr005,00,,NP
+sub,castr002,"Ramon Castro",1,8,2
+play,8,0,johnr005,00,,NP
+sub,delld001,"David Dellucci",0,9,11
+play,8,0,delld001,00,,NP
+sub,miced001,"Dan Miceli",1,9,1
+play,8,0,delld001,00,X,3/G#
+play,8,0,womat001,32,BCBBFFX,7/FL
+play,8,0,bellj001,12,FSBX,6/P6
+play,8,1,bergd002,00,,NP
+sub,rodrh001,"Henry Rodriguez",1,2,11
+play,8,1,rodrh001,00,,NP
+sub,kim-b001,"Byung-Hyun Kim",0,9,1
+play,8,1,rodrh001,12,SBSC,K/C
+play,8,1,millk005,00,,NP
+sub,floyc001,"Cliff Floyd",1,3,11
+play,8,1,floyc001,12,BCCS,K23
+play,8,1,wilsp002,31,BBBCB,W
+play,8,1,lowem001,22,SBBFX,8/F8
+play,9,0,gonzl001,00,,NP
+sub,floyc001,"Cliff Floyd",1,3,7
+play,9,0,gonzl001,00,,NP
+sub,gonza002,"Alex Gonzalez",1,2,6
+play,9,0,gonzl001,11,CBX,43/G
+play,9,0,colbg001,31,BBBCX,8/F8
+play,9,0,finls001,01,CX,8/F8
+play,9,1,lee-d002,02,CSX,8/F8
+play,9,1,smitm004,22,BSSBS,K
+play,9,1,castr002,30,BBBB,W
+play,9,1,miced001,00,,NP
+sub,rolin001,"Nathan Rolison",1,9,11
+play,9,1,rolin001,00,,NP
+sub,ozunp001,"Pablo Ozuna",1,8,12
+play,9,1,rolin001,32,BFBFBS,K
+play,10,0,willm003,00,,NP
+sub,marta002,"Sandy Martinez",1,8,2
+play,10,0,willm003,00,,NP
+sub,alfoa001,"Antonio Alfonseca",1,9,1
+play,10,0,willm003,01,FX,S7/7D
+play,10,0,bautd001,00,,NP
+sub,counc001,"Craig Counsell",0,6,12
+play,10,0,bautd001,01,LX,3/SH.1-2#
+play,10,0,stink001,00,,NP
+sub,ryanr001,"Rob Ryan",0,8,11
+play,10,0,ryanr001,22,SBBSFX,6/P6
+play,10,0,kim-b001,00,,NP
+sub,contj001,"Jason Conti",0,9,11
+play,10,0,contj001,01,FX,8/F8
+play,10,1,castl001,00,,NP
+sub,counc001,"Craig Counsell",0,6,5
+play,10,1,castl001,00,,NP
+sub,milld002,"Damian Miller",0,8,2
+play,10,1,castl001,00,,NP
+sub,swing001,"Greg Swindell",0,9,1
+play,10,1,castl001,22,CSBBX,S9
+play,10,1,gonza002,00,X,13/SH.1-2#
+play,10,1,floyc001,22,FBBSX,43/G.2-3
+play,10,1,wilsp002,00,,NP
+sub,morgm001,"Mike Morgan",0,9,1
+play,10,1,wilsp002,32,BCBFBS,K
+play,11,0,womat001,12,BCSFS,K
+play,11,0,bellj001,30,BBBB,W
+play,11,0,gonzl001,01,FX,43/G.1-2
+play,11,0,colbg001,12,SFBS,K
+play,11,1,lowem001,31,CBBBB,W
+play,11,1,lee-d002,32,CSBFBBX,9/F9
+play,11,1,smitm004,10,BX,54(1)/FO
+play,11,1,marta002,00,,NP
+sub,plesd001,"Dan Plesac",0,9,1
+play,11,1,marta002,12,BSFS,K
+play,12,0,finls001,00,,NP
+sub,kotsm001,"Mark Kotsay",1,9,9
+play,12,0,finls001,00,,NP
+sub,almaa001,"Armando Almanza",1,7,1
+play,12,0,finls001,02,SCX,43/G
+play,12,0,counc001,00,,NP
+sub,miesm001,"Matt Mieske",0,6,11
+play,12,0,miesm001,00,,NP
+sub,loopb001,"Braden Looper",1,7,1
+play,12,0,miesm001,32,BBBCSB,W
+play,12,0,bautd001,12,SBFC,K/C
+play,12,0,milld002,30,BBBB,W.1-2
+play,12,0,plesd001,00,,NP
+sub,friah001,"Hanley Frias",0,9,11
+play,12,0,friah001,22,FBCBS,K
+play,12,1,kotsm001,00,,NP
+sub,friah001,"Hanley Frias",0,9,5
+play,12,1,kotsm001,00,,NP
+sub,sprir001,"Russ Springer",0,6,1
+play,12,1,kotsm001,01,SX,S3/BG3
+play,12,1,castl001,00,X,13/SH.1-2#
+play,12,1,gonza002,02,CSFS,K
+play,12,1,floyc001,30,IIII,IW
+play,12,1,wilsp002,12,BFCFFX,S9.2-H;1-2
+data,er,johnr005,1
+data,er,kim-b001,0
+data,er,swing001,0
+data,er,morgm001,0
+data,er,plesd001,0
+data,er,sprir001,1
+data,er,smitc001,3
+data,er,miced001,0
+data,er,alfoa001,0
+data,er,almaa001,0
+data,er,loopb001,0

@@ -1,0 +1,83 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,10,1,,,,,0,2,BX,ruetk001,1,0,,hendr001,0,L
+,11,1,,,,,1,5,CBX,ruetk001,1,0,,belld002,0,L
+,00,1,,,,,2,6,X,ruetk001,0,1,rodra001 homers. ,rodra001,0,
+,12,1,,,,,3,11,BCCFX,ruetk001,1,0,,marte001,0,F
+,22,1,,,,,4,5,CFBBX,halaj001,1,0,murrc001 grounds out. ,murrc001,1,G
+,00,1,,davir002,,,5,6,X,halaj001,0,0,davir002 doubles. ,davir002,1,
+,31,1,bondb001,davir002,,,6,11,BCBBB,halaj001,0,0,bondb001 walks. ,bondb001,1,
+davir002 scores. bondb001 to 3B. ,22,1,kentj001,,bondb001,,7,17,CSBBFX,halaj001,0,1,kentj001 singles. ,kentj001,1,
+kentj001 to 2B. ,32,1,burke001,kentj001,bondb001,,8,23,BCFBBB,halaj001,0,0,burke001 walks. ,burke001,1,
+,22,1,,kentj001,bondb001,,9,28,FBFBX,halaj001,2,0,Double Play. ,aurir001,1,
+,01,2,buhnj001,,,,10,13,CX,ruetk001,0,0,buhnj001 singles. ,buhnj001,0,
+buhnj001 out. ,22,2,camem001,,,,11,18,CBBFX,ruetk001,1,0,camem001 reaches on fielder's choice. ,camem001,0,
+,21,2,,,,,12,22,CBBX,ruetk001,2,0,Double Play. ,wilsd001,0,
+,32,2,snowj001,,,,13,34,BCFBBX,halaj001,0,0,snowj001 singles. ,snowj001,1,
+,00,2,,,,,14,35,X,halaj001,2,0,Double Play. ,mirad001,1,
+,12,2,ruetk001,,,,15,39,BCSX,halaj001,0,0,ruetk001 singles. ,ruetk001,1,
+ruetk001 to 2B. ,22,2,murrc001,ruetk001,,,16,44,BFBFX,halaj001,0,0,murrc001 singles. ,murrc001,1,
+ruetk001 to 3B. murrc001 to 2B. ,00,2,davir002,murrc001,ruetk001,,17,45,X,halaj001,0,0,davir002 singles. ,davir002,1,
+,22,2,davir002,murrc001,ruetk001,,18,50,BCFBS,halaj001,1,0,bondb001 strikes out. ,bondb001,1,
+,12,3,,,,,19,26,CCBC,ruetk001,1,0,mclem001 strikes out. ,mclem001,0,
+,22,3,,,,,20,31,CBBCS,ruetk001,1,0,halaj001 strikes out. ,halaj001,0,
+,32,3,hendr001,,,,21,37,BBCBCX,ruetk001,0,0,hendr001 singles. ,hendr001,0,
+hendr001 to 3B. ,22,3,belld002,,hendr001,,22,42,BCSBX,ruetk001,0,0,belld002 singles. ,belld002,0,
+,31,3,belld002,,hendr001,,23,47,BBSBX,ruetk001,1,0,,rodra001,0,F
+,12,3,kentj001,,,,24,54,CBFX,halaj001,0,0,kentj001 singles. ,kentj001,1,
+kentj001 to 2B. ,12,3,,kentj001,,burke001,25,59,FFBFB,halaj001,0,0,Wild Pitch. ,burke001,1,
+kentj001 to 3B. ,22,3,,,kentj001,burke001,26,65,FFBFB+2,halaj001,0,0,Pickoff error. ,burke001,1,
+,32,3,burke001,,kentj001,,27,74,FFBFB+2BFB,halaj001,0,0,burke001 walks. ,burke001,1,
+kentj001 scores. ,00,3,burke001,,,,28,75,X,halaj001,1,1,aurir001 hits sacrifice fly. ,aurir001,1,
+burke001 to 2B. ,21,3,snowj001,burke001,,,29,79,BSBX,halaj001,0,0,snowj001 singles. ,snowj001,1,
+burke001 scores. snowj001 to 2B. ,12,3,mirad001,snowj001,,,30,83,CCBX,halaj001,0,1,mirad001 singles. ,mirad001,1,
+snowj001 to 3B. mirad001 to 2B. ,00,3,,mirad001,snowj001,,31,84,X,halaj001,1,0,Sacrifice bunt by ruetk001.,ruetk001,1,
+snowj001 scores. mirad001 to 3B. ,21,3,murrc001,,mirad001,,32,88,BBFX,halaj001,0,1,murrc001 reaches on error. ,murrc001,1,G
+mirad001 scores. murrc001 to 2B. ,10,3,davir002,murrc001,,,33,90,BX,halaj001,0,1,davir002 singles. ,davir002,1,
+,00,3,davir002,murrc001,,,34,91,X,halaj001,1,0,bondb001 grounds out. ,bondb001,1,G
+,12,4,,,,,35,51,CBCX,ruetk001,1,0,,marte001,0,F
+,20,4,,,,,36,54,BBX,ruetk001,1,0,,buhnj001,0,F
+,12,4,,,,,37,58,BSCS,ruetk001,1,0,camem001 strikes out. ,camem001,0,
+,00,4,,,,,39,1,X,rodrf001,1,0,,kentj001,1,F
+,00,4,,,,,40,2,X,rodrf001,0,1,burke001 homers. ,burke001,1,
+,12,4,,,,,41,6,CBCS,rodrf001,1,0,aurir001 strikes out. ,aurir001,1,
+,22,4,,,,,42,11,BCFBX,rodrf001,0,1,snowj001 homers. ,snowj001,1,
+,10,4,,,,,43,13,BX,rodrf001,1,0,,mirad001,1,L
+,22,5,wilsd001,,,,44,63,CBFBX,ruetk001,0,0,wilsd001 singles. ,wilsd001,0,
+,21,5,wilsd001,,,,45,67,CBBX,ruetk001,1,0,,mclem001,0,F
+,32,5,wilsd001,,,,46,74,BBCCFBS,ruetk001,1,0,rodrf001 strikes out. ,rodrf001,0,
+,11,5,wilsd001,,,,47,77,CBX,ruetk001,1,0,,hendr001,0,F
+,12,5,ruetk001,,,,48,17,CFBX,rodrf001,0,0,ruetk001 singles. ,ruetk001,1,
+ruetk001 out. ,12,5,murrc001,,,,49,21,CBFX,rodrf001,1,0,murrc001 reaches on fielder's choice. ,murrc001,1,
+murrc001 scores. ,00,5,,,,davir002,50,22,1,rodrf001,0,1,Pickoff error. ,davir002,1,
+,22,5,,,,,51,29,1BSBFFS,rodrf001,1,0,davir002 strikes out. ,davir002,1,
+,30,5,bondb001,,,,52,33,BBII,rodrf001,0,0,bondb001 intentionally walks. ,bondb001,1,
+bondb001 to 2B. ,31,5,kentj001,bondb001,,,53,38,BCBBX,rodrf001,0,0,kentj001 singles. ,kentj001,1,
+,10,5,kentj001,bondb001,,,54,40,BX,rodrf001,1,0,,burke001,1,F
+,21,6,,,,,55,81,CBBX,ruetk001,1,0,belld002 grounds out. ,belld002,0,G
+,22,6,,,,,56,86,BCBFX,ruetk001,1,0,,rodra001,0,F
+,32,6,marte001,,,,57,92,CBBBFB,ruetk001,0,0,marte001 walks. ,marte001,0,
+,12,6,marte001,,,,58,96,BFFX,ruetk001,1,0,,buhnj001,0,P
+,10,6,,,,,59,42,BX,rodrf001,1,0,,aurir001,1,
+,21,6,,,,,60,46,CBBX,rodrf001,1,0,,snowj001,1,F
+,22,6,,,,,61,51,BCSBS,rodrf001,1,0,mirad001 strikes out. ,mirad001,1,
+,32,7,,,,,62,102,CBBSBX,ruetk001,1,0,,camem001,0,F
+,31,7,wilsd001,,,,63,107,CBBBB,ruetk001,0,0,wilsd001 walks. ,wilsd001,0,
+wilsd001 to 2B. ,00,7,mclem001,wilsd001,,,64,108,X,ruetk001,0,0,mclem001 singles. ,mclem001,0,
+,22,7,mclem001,wilsd001,,,66,114,BCFFBX,ruetk001,1,0,,javis001,0,F
+wilsd001 scores. mclem001 to 3B. ,12,7,hendr001,,mclem001,,67,118,CBCX,ruetk001,0,1,hendr001 singles. ,hendr001,0,
+,32,7,hendr001,,mclem001,,71,7,CBCFBBS,rodrf002,1,0,olerj001 strikes out. ,olerj001,0,
+,11,7,,,,,75,3,BCX,mesaj001,1,0,,martr003,1,F
+,22,7,,,,,76,9,BCSFBS,mesaj001,1,0,murrc001 strikes out. ,murrc001,1,
+,02,7,,,,,77,13,FFFS,mesaj001,1,0,davir002 strikes out. ,davir002,1,
+,32,8,,,,,80,15,BCBBFFFX,rodrf002,1,0,,rodra001,0,F
+,32,8,marte001,,,,81,21,BSBBFX,rodrf002,0,0,marte001 singles. ,marte001,0,
+,01,8,gipsc001,,,,83,23,FX,rodrf002,1,0,,buhnj001,0,
+gipsc001 to 2B. ,30,8,camem001,gipsc001,,,84,27,BBBB,rodrf002,0,0,camem001 walks. ,camem001,0,
+,12,8,camem001,gipsc001,,,85,31,FSBX,rodrf002,1,0,,wilsd001,0,F
+,10,8,,benam001,,,89,2,BX,panij001,0,0,benam001 doubles. ,benam001,1,
+benam001 to 3B. ,11,8,,,benam001,,90,5,BCX,panij001,1,0,,kentj001,1,F
+benam001 scores. ,32,8,riosa001,,,,91,13,BFCBBFFX,panij001,0,1,riosa001 singles. ,riosa001,1,
+,22,8,,,,,93,18,BBCCX,panij001,2,0,Double Play. ,muelb001,1,
+,11,9,,,,,95,3,BCX,johnj006,1,0,mclem001 grounds out. ,mclem001,0,G
+,21,9,,,,,96,7,BBCX,johnj006,1,0,javis001 grounds out. ,javis001,0,G
+,12,9,,,,,98,12,SFFBX,johnj006,1,0,lampt001 grounds out. ,lampt001,0,G

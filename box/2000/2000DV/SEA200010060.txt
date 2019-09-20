@@ -1,0 +1,145 @@
+version,2
+info,visteam,CHA
+info,hometeam,SEA
+info,date,2000/10/06
+info,site,SEA03
+info,number,0
+info,starttime,0:00PM
+info,daynight,day
+info,usedh,true
+info,umphome,mcclt901
+info,ump1b,schrp901
+info,ump2b,clara901
+info,ump3b,nelsj901
+info,umplf,welkt901
+info,umprf,meric901
+info,inputter,"DWS"
+info,howscored,park
+info,pitches,pitches
+info,temp,66
+info,winddir,ltor
+info,windspeed,7
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,160
+info,attendance,48010
+info,wp,panij001
+info,lp,wunsk001
+info,save,
+start,durhr001,"Ray Durham",0,1,4
+start,valej003,"Jose Valentin",0,2,6
+start,thomf001,"Frank Thomas",0,3,3
+start,ordom001,"Magglio Ordonez",0,4,9
+start,bainh001,"Harold Baines",0,5,10
+start,johnc002,"Charles Johnson",0,6,2
+start,perrh001,"Herbert Perry",0,7,5
+start,lee-c001,"Carlos Lee",0,8,7
+start,singc001,"Chris Singleton",0,9,8
+start,baldj002,"James Baldwin",0,0,1
+start,camem001,"Mike Cameron",1,1,8
+start,ibanr001,"Raul Ibanez",1,2,9
+start,rodra001,"Alex Rodriguez",1,3,6
+start,marte001,"Edgar Martinez",1,4,10
+start,olerj001,"John Olerud",1,5,3
+start,javis001,"Stan Javier",1,6,7
+start,belld002,"David Bell",1,7,5
+start,olivj001,"Joe Oliver",1,8,2
+start,mclem001,"Mark McLemore",1,9,4
+start,selea001,"Aaron Sele",1,0,1
+play,1,0,durhr001,31,FBBBB,W
+play,1,0,valej003,00,X,43/SH.1-2#
+play,1,0,thomf001,30,BBBB,W
+play,1,0,ordom001,22,FBBCX,16(1)3/GDP
+play,1,1,camem001,11,CBX,53/G
+play,1,1,ibanr001,12,CFBFX,43/G
+play,1,1,rodra001,22,BCSBX,9/F9
+play,2,0,bainh001,10,BX,D7/7L
+play,2,0,johnc002,00,X,8/F8.2-3
+play,2,0,perrh001,10,BX,8/SF.3-H
+play,2,0,lee-c001,02,FFX,8/F8
+play,2,1,marte001,00,X,S7
+play,2,1,olerj001,20,BBX,7/F7
+play,2,1,javis001,01,CX,5/FL
+play,2,1,belld002,11,CBX,7/F7DW
+play,3,0,singc001,11,FBX,3/G
+play,3,0,durhr001,22,BFBCFX,3/G
+play,3,0,valej003,12,CCBS,K
+play,3,1,olivj001,32,BCBCBFC,K/C
+play,3,1,mclem001,10,BX,6/P6
+play,3,1,camem001,22,CFBBX,63/G
+play,4,0,thomf001,32,BCSBBX,7/F7S
+play,4,0,ordom001,22,BCFBX,S7
+play,4,0,bainh001,22,FSBBX,46(1)3/GDP
+play,4,1,ibanr001,12,SSBX,S7
+play,4,1,rodra001,00,X,13/SH/BG23.1-2
+play,4,1,marte001,01,CX,63/G6M.2-3
+play,4,1,olerj001,31,BBBCB,W
+play,4,1,javis001,02,LFX,S4/G4M.3-H;1-2
+play,4,1,belld002,21,BCBX,5(2)/FO.1-2
+play,5,0,johnc002,32,BBCBCX,8/F8S
+play,5,0,perrh001,32,BCBSBB,W
+play,5,0,lee-c001,22,FBFBFX,8/F8
+play,5,0,singc001,11,BFX,3/G
+play,5,1,olivj001,00,X,9/F9
+play,5,1,mclem001,31,BBBCX,7/F7S
+play,5,1,camem001,01,CX,9/F9
+play,6,0,durhr001,10,BX,5/L5
+play,6,0,valej003,00,X,8/L8
+play,6,0,thomf001,00,X,63/G
+play,6,1,ibanr001,10,BX,5/P5S
+play,6,1,rodra001,00,X,53/G5S
+play,6,1,marte001,32,BCBCBB,W
+play,6,1,olerj001,32,BFCFFFFBBFFB,W.1-2
+play,6,1,javis001,22,BCSBFFFS,K
+play,7,0,ordom001,11,BFX,3/FL
+play,7,0,bainh001,00,X,3/G
+play,7,0,johnc002,32,FBBBFX,6/L6
+play,7,1,belld002,00,,NP
+sub,howrb001,"Bobby Howry",0,0,1
+play,7,1,belld002,22,SBBCFX,S7
+play,7,1,olivj001,00,X,14/SH/BG23.1-2
+play,7,1,mclem001,02,CCS,K
+play,7,1,camem001,22,BSCBX,63/G
+play,8,0,perrh001,22,SFBFBX,S9
+play,8,0,lee-c001,00,,NP
+sub,graft001,"Tony Graffanino",0,7,12
+play,8,0,lee-c001,10,1B1>X,9/F9
+play,8,0,singc001,00,,NP
+sub,rhoda001,"Arthur Rhodes",1,0,1
+play,8,0,singc001,00,,NP
+sub,konep001,"Paul Konerko",0,9,11
+play,8,0,konep001,01,CX,4(1)3/GDP
+play,8,1,ibanr001,00,,NP
+sub,graft001,"Tony Graffanino",0,7,5
+play,8,1,ibanr001,00,,NP
+sub,chrim002,"McKay Christensen",0,9,8
+play,8,1,ibanr001,22,BBCFX,63/G
+play,8,1,rodra001,12,CBFS,K
+play,8,1,marte001,12,CBFS,K
+play,9,0,durhr001,12,SBSS,K
+play,9,0,valej003,02,FFC,K/C
+play,9,0,thomf001,00,,NP
+sub,panij001,"Jose Paniagua",1,0,1
+play,9,0,thomf001,32,BBBFFFB,W
+play,9,0,ordom001,22,BCBSS,K
+play,9,1,olerj001,00,,NP
+sub,wunsk001,"Kelly Wunsch",0,0,1
+play,9,1,olerj001,31,BBCBX,S1.B-2(E1/TH1)
+play,9,1,javis001,00,,NP
+sub,foulk001,"Keith Foulke",0,0,1
+play,9,1,javis001,00,,NP
+sub,hendr001,"Rickey Henderson",1,5,12
+play,9,1,javis001,00,X,53/SH/BG25.2-3
+com,"$infield and outfield in"
+play,9,1,belld002,30,BBBB,W
+play,9,1,olivj001,00,,NP
+sub,guilc001,"Carlos Guillen",1,8,11
+play,9,1,guilc001,01,FX,S/BG3.3-H(UR);1-2
+data,er,baldj002,1
+data,er,howrb001,0
+data,er,wunsk001,0
+data,er,foulk001,0
+data,er,selea001,1
+data,er,rhoda001,0
+data,er,panij001,0

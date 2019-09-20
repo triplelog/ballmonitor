@@ -1,0 +1,137 @@
+version,2
+info,visteam,TEX
+info,hometeam,BOS
+info,site,BOS07
+info,date,2000/08/20
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,onorb901
+info,ump1b,hirsm901
+info,ump2b,iassd901
+info,ump3b,bellw901
+info,pitches,pitches
+info,temp,68
+info,winddir,tocf
+info,windspeed,2
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,171
+info,attendance,32467
+info,wp,david002
+info,lp,fassj001
+info,save,
+start,curtc001,"Chad Curtis",0,1,10
+start,greer001,"Rusty Greer",0,2,7
+start,kaplg001,"Gabe Kapler",0,3,8
+start,palmr001,"Rafael Palmeiro",0,4,3
+start,haseb001,"Bill Haselman",0,5,2
+start,leder001,"Ricky Ledee",0,6,9
+start,clayr001,"Royce Clayton",0,7,6
+start,cataf001,"Frank Catalanotto",0,8,4
+start,shels001,"Scott Sheldon",0,9,5
+start,david002,"Doug Davis",0,0,1
+start,offej001,"Jose Offerman",1,1,3
+start,gilkb001,"Bernard Gilkey",1,2,10
+start,everc001,"Carl Everett",1,3,8
+start,garcn001,"Nomar Garciaparra",1,4,6
+start,oleat001,"Troy O'Leary",1,5,7
+start,merll001,"Lou Merloni",1,6,5
+start,varij001,"Jason Varitek",1,7,2
+start,lansm001,"Mike Lansing",1,8,4
+start,lewid001,"Darren Lewis",1,9,9
+start,fassj001,"Jeff Fassero",1,0,1
+play,1,0,curtc001,21,BFBX,3/P3
+play,1,0,greer001,10,BX,3/G
+play,1,0,kaplg001,12,CFBS,K
+play,1,1,offej001,32,BCBFBX,S7/7S
+play,1,1,gilkb001,02,FCH,HP.1-2
+play,1,1,everc001,10,BX,S7.2-3;1-2
+play,1,1,garcn001,12,CBFS,K
+play,1,1,oleat001,00,X,64(1)/FO.3-H;2-3
+play,1,1,merll001,22,BFBFX,64(1)/FO
+play,2,0,palmr001,11,BCX,6/P6
+play,2,0,haseb001,02,CCX,43/G
+play,2,0,leder001,01,CX,63/G
+play,2,1,varij001,32,BBBCFFB,W
+play,2,1,lansm001,01,FX,54(1)3/GDP
+play,2,1,lewid001,11,BCX,S8
+play,2,1,offej001,10,BC,CS2(26)
+play,3,0,clayr001,21,BCBX,3/G
+play,3,0,cataf001,00,X,53/BG
+play,3,0,shels001,12,FCBX,13/G
+play,3,1,offej001,12,CFBX,13/G
+play,3,1,gilkb001,22,CBFFFBX,D8
+play,3,1,everc001,10,BX,53/G
+play,3,1,garcn001,30,IIII,IW
+play,3,1,oleat001,11,BCX,163/G
+play,4,0,curtc001,21,BFBX,9/L9
+play,4,0,greer001,22,BCBFFX,43/G
+play,4,0,kaplg001,00,X,53/G
+play,4,1,merll001,02,CFX,31/G
+play,4,1,varij001,10,BX,6/P6
+play,4,1,lansm001,11,BCX,53/G
+play,5,0,palmr001,22,CBBCX,S8
+play,5,0,haseb001,00,X,7/F7
+play,5,0,leder001,21,BFBX,S.1-2
+play,5,0,clayr001,20,BBX,S9.2-3;1-2
+play,5,0,cataf001,00,X,D7.3-H;2-H;1-3
+play,5,0,shels001,11,FBX,7/SF.3-H
+play,5,0,curtc001,02,CSS,K
+play,5,1,lewid001,00,X,S9
+play,5,1,offej001,31,CBBBB,W.1-2
+play,5,1,gilkb001,00,X,9/F9
+play,5,1,everc001,00,X,8/F8
+play,5,1,garcn001,12,FBSS,K
+play,6,0,greer001,31,BBFBX,T9/9D
+play,6,0,kaplg001,30,BBBB,W
+play,6,0,palmr001,22,FBCBX,S8/8S.3-H;1-2
+play,6,0,haseb001,00,,NP
+sub,beckr001,"Rod Beck",1,0,1
+play,6,0,haseb001,00,X,S7.2-3;1-2
+play,6,0,leder001,12,SBFS,K
+play,6,0,clayr001,32,BBCSBB,W.3-H;2-3;1-2
+play,6,0,cataf001,00,X,46(1)/FO.3-H;2-3
+play,6,0,shels001,02,SSS,K
+play,6,1,oleat001,32,CFBBBFFX,6/P6
+play,6,1,merll001,31,BBBCX,8/F8
+play,6,1,varij001,00,X,S7/7S
+play,6,1,lansm001,02,CSC,K/C
+play,7,0,curtc001,12,CBFC,K/C
+play,7,0,greer001,32,SBBBCX,S8
+play,7,0,kaplg001,01,CX,9/F9
+play,7,0,palmr001,22,CBBSB,SB2
+play,7,0,palmr001,32,CBBSBX,43/G
+play,7,1,lewid001,00,X,S7
+play,7,1,offej001,12,CBFFX,54(1)/FO
+play,7,1,gilkb001,22,BBFSX,8/F8
+play,7,1,everc001,12,CBFX,53/G
+play,8,0,haseb001,00,,NP
+sub,cormr001,"Rheal Cormier",1,0,1
+play,8,0,haseb001,21,CBBX,D8/8D
+play,8,0,leder001,31,BCBBB,W
+play,8,0,clayr001,00,X,64(1)3/GDP.2-3
+play,8,0,cataf001,31,CBBBB,W
+play,8,0,shels001,01,CX,46(1)/FO
+play,8,1,garcn001,12,BCFX,S8
+play,8,1,oleat001,00,X,S8/8S.1-2
+play,8,1,merll001,12,FFBX,46(1)3/GDP.2-3
+play,8,1,varij001,12,BFFS,K+PB.3-H(UR);B-1
+play,8,1,lansm001,22,SBFBS,K
+play,9,0,curtc001,00,,NP
+sub,florb001,"Bryce Florie",1,0,1
+play,9,0,curtc001,00,X,31/G
+play,9,0,greer001,22,CCBFFBX,43/G
+play,9,0,kaplg001,00,X,8/F8D
+play,9,1,lewid001,01,CX,63/G
+play,9,1,offej001,32,BBBCCB,W
+play,9,1,gilkb001,32,CBBBCX,8/F8
+play,9,1,everc001,21,BBCS,DI.1-2
+play,9,1,everc001,22,BBCSX,2/FL
+data,er,david002,1
+data,er,fassj001,6
+data,er,beckr001,0
+data,er,cormr001,0
+data,er,florb001,0

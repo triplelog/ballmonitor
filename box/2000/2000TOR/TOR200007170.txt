@@ -1,0 +1,189 @@
+version,2
+info,visteam,NYN
+info,hometeam,TOR
+info,site,TOR02
+info,date,2000/07/17
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,mcclt901
+info,ump1b,craft901
+info,ump2b,cuzzp901
+info,ump3b,schrp901
+info,pitches,pitches
+info,temp,77
+info,winddir,tolf
+info,windspeed,8
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,252
+info,attendance,23129
+info,wp,franj001
+info,lp,borbp001
+info,save,benia001
+start,harrl001,"Lenny Harris",0,1,5
+start,belld001,"Derek Bell",0,2,9
+start,alfoe001,"Edgardo Alfonzo",0,3,4
+start,piazm001,"Mike Piazza",0,4,10
+start,zeilt001,"Todd Zeile",0,5,3
+start,paytj001,"Jay Payton",0,6,8
+start,pratt001,"Todd Pratt",0,7,2
+start,mcewj001,"Joe McEwing",0,8,7
+start,moram002,"Melvin Mora",0,9,6
+start,reedr002,"Rick Reed",0,0,1
+start,stews002,"Shannon Stewart",1,1,7
+start,bushh001,"Homer Bush",1,2,4
+start,mondr002,"Raul Mondesi",1,3,9
+start,delgc001,"Carlos Delgado",1,4,3
+start,fullb001,"Brad Fullmer",1,5,10
+start,batit001,"Tony Batista",1,6,5
+start,fletd001,"Darrin Fletcher",1,7,2
+start,cruzj004,"Jose Cruz",1,8,8
+start,woodc001,"Chris Woodward",1,9,6
+start,cocop001,"Pasqual Coco",1,0,1
+play,1,0,harrl001,31,CBBBB,W
+com,"Debut game for Pasqual Coco"
+play,1,0,belld001,12,FSFBX,9/F9S
+play,1,0,alfoe001,21,BBCB,SB2
+play,1,0,alfoe001,31,BBCBX,63/G.2-3
+play,1,0,piazm001,11,CBX,63/G
+play,1,1,stews002,31,BBBCB,W
+play,1,1,bushh001,12,FBFX,64(1)/FO
+play,1,1,mondr002,02,FFFFB,SB2
+play,1,1,mondr002,22,FFFFBBX,53/G
+play,1,1,delgc001,21,BBFX,HR/9.2-H
+play,1,1,fullb001,02,CFFX,S8
+play,1,1,batit001,21,BBCX,7/F7
+play,2,0,zeilt001,11,CBX,6/L6
+play,2,0,paytj001,21,BBFX,8/L8
+play,2,0,pratt001,31,BCBBB,W
+play,2,0,mcewj001,00,X,HR/7.1-H
+play,2,0,moram002,31,BBBCB,W
+play,2,0,harrl001,32,BSBSBX,S.1-2
+play,2,0,belld001,02,CFX,5/FL
+play,2,1,fletd001,20,BBX,HR/9
+play,2,1,cruzj004,00,X,D/78D
+play,2,1,woodc001,22,BLSBX,13/G
+play,2,1,stews002,10,BX,3/P3
+play,2,1,bushh001,02,CSS,K23
+play,3,0,alfoe001,21,BCBX,43/G
+play,3,0,piazm001,22,BSBFS,K
+play,3,0,zeilt001,01,CX,S6.B-2(E6/TH1)
+play,3,0,paytj001,31,FBBBB,W
+play,3,0,pratt001,30,BBBB,W.2-3;1-2
+play,3,0,mcewj001,11,SBX,3/P3
+play,3,1,mondr002,10,BX,53/G
+play,3,1,delgc001,31,CBBBB,W
+play,3,1,fullb001,30,BBBB,W.1-2
+play,3,1,batit001,21,SBBX,54(1)/FO.2-H(E4/TH1);B-2
+play,3,1,fletd001,11,CBX,S8.2-H(UR);B-2(THH)
+play,3,1,cruzj004,30,IIII,IW
+play,3,1,woodc001,02,CCS,K
+play,4,0,moram002,32,CBLBBS,K
+play,4,0,harrl001,02,CSFX,T9
+play,4,0,belld001,02,SFB,WP.3-H
+play,4,0,belld001,22,SFBBX,53/G
+play,4,0,alfoe001,32,BBCBCX,9/F9
+play,4,1,stews002,20,BBX,63/G
+play,4,1,bushh001,22,CCBBX,9/F9
+play,4,1,mondr002,32,SCBBBS,K
+play,5,0,piazm001,01,FX,D8/8D
+play,5,0,zeilt001,12,BCFH,HP
+play,5,0,paytj001,00,,NP
+sub,quanp001,"Paul Quantrill",1,0,1
+play,5,0,paytj001,30,BBBB,W.2-3;1-2
+play,5,0,pratt001,02,CFS,K
+play,5,0,mcewj001,21,BCBX,3/G.3-H;2-3;1-2
+play,5,0,moram002,00,X,63/G
+play,5,1,delgc001,32,BBCBFX,63/G
+play,5,1,fullb001,21,BCBX,7/F7
+play,5,1,batit001,30,BBBB,W
+play,5,1,fletd001,32,BBBFCFX,43/G
+play,6,0,harrl001,12,CCBFX,5/L5
+play,6,0,belld001,01,FX,9/F9D
+play,6,0,alfoe001,22,CFBBX,S9
+play,6,0,piazm001,00,X,64(1)/FO
+play,6,1,cruzj004,00,,NP
+sub,mahop001,"Pat Mahomes",0,0,1
+play,6,1,cruzj004,31,BCBBB,W
+play,6,1,woodc001,01,LX,16(1)/FO
+play,6,1,stews002,12,SSBS,K
+play,6,1,bushh001,00,X,8/F8
+play,7,0,zeilt001,00,,NP
+sub,frasj001,"John Frascatore",1,0,1
+play,7,0,zeilt001,11,BCX,9/F9
+play,7,0,paytj001,00,X,S9
+play,7,0,pratt001,12,BSFX,64(1)3/GDP
+play,7,1,mondr002,12,SFBFX,9/F9
+play,7,1,delgc001,30,BBBB,W
+play,7,1,fullb001,00,,NP
+sub,cookd001,"Dennis Cook",0,0,1
+play,7,1,fullb001,22,SBFBFFX,36(1)/FO
+play,7,1,batit001,11,BFX,7/F7D
+play,8,0,mcewj001,21,BBCX,7/F7
+play,8,0,moram002,00,X,9/F9
+play,8,0,harrl001,00,X,S/78
+play,8,0,belld001,02,SSB,SB2
+play,8,0,belld001,32,SSBBBFX,S8.2-H
+play,8,0,alfoe001,12,BFSX,7/F7
+play,8,1,fletd001,11,FBX,43/G
+play,8,1,cruzj004,20,BBX,9/F9
+play,8,1,woodc001,10,BX,3/G
+play,9,0,piazm001,00,,NP
+sub,kochb001,"Billy Koch",1,0,1
+play,9,0,piazm001,22,BBSCX,9/F9
+play,9,0,zeilt001,32,BSBFBS,K
+play,9,0,paytj001,32,BBFBSX,9/L9
+play,9,1,stews002,00,,NP
+sub,wendt001,"Turk Wendell",0,0,1
+play,9,1,stews002,12,CSBX,53/G
+play,9,1,bushh001,12,CCBX,8/F8D
+play,9,1,mondr002,31,BFBBB,W
+play,9,1,delgc001,00,,NP
+sub,franj001,"John Franco",0,0,1
+play,9,1,delgc001,01,CB,SB2
+play,9,1,delgc001,31,CBIII,IW
+play,9,1,fullb001,01,FX,5/P5
+play,10,0,pratt001,00,,NP
+sub,borbp001,"Pedro Borbon",1,0,1
+play,10,0,pratt001,02,CSS,K
+play,10,0,mcewj001,01,CX,8/F8
+play,10,0,moram002,11,CBX,63/G
+play,10,1,batit001,12,SBFX,5/P5
+play,10,1,fletd001,22,FCBBFS,K
+play,10,1,cruzj004,02,SSS,K
+play,11,0,harrl001,00,,NP
+sub,agbab001,"Benny Agbayani",0,1,11
+play,11,0,agbab001,01,CX,S
+play,11,0,belld001,32,LCFBFBBB,W.1-2
+play,11,0,alfoe001,31,CBBBB,W.2-3;1-2
+play,11,0,piazm001,10,BX,46(1)/FO.3-H;2-3
+play,11,0,zeilt001,21,BBFX,S9.3-H;1-2
+play,11,0,paytj001,00,,NP
+sub,painl001,"Lance Painter",1,0,1
+play,11,0,paytj001,21,BCBX,8/F8
+play,11,0,pratt001,32,FBCBBX,63/G
+play,11,1,woodc001,00,,NP
+sub,lambd001,"David Lamb",0,1,5
+play,11,1,woodc001,00,,NP
+sub,benia001,"Armando Benitez",0,0,1
+play,11,1,woodc001,00,,NP
+sub,grebc001,"Craig Grebeck",1,9,11
+play,11,1,grebc001,31,BBCBB,W
+play,11,1,stews002,12,CFBX,3/FL
+play,11,1,bushh001,22,BFBSS,K
+play,11,1,mondr002,12,BCSC,K/C
+data,er,reedr002,4
+data,er,mahop001,0
+data,er,cookd001,0
+data,er,wendt001,0
+data,er,franj001,0
+data,er,benia001,0
+data,er,cocop001,4
+data,er,quanp001,0
+data,er,frasj001,1
+data,er,kochb001,0
+data,er,borbp001,2
+data,er,painl001,0

@@ -1,0 +1,76 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,12,1,,,,,0,4,BFFX,millw001,1,0,,benam001,0,F
+,22,1,,,,,1,9,CCBBS,millw001,1,0,davir002 strikes out. ,davir002,0,
+,12,1,,,,,2,13,FBCX,millw001,1,0,bondb001 grounds out. ,bondb001,0,G
+,00,1,ceder001,,,,3,1,X,hernl003,0,0,ceder001 reaches on error. ,ceder001,1,G
+,02,1,ceder001,,,,4,4,CFX,hernl003,1,0,,lugoj001,1,F
+ceder001 to 3B. ,02,1,bagwj001,,ceder001,,5,7,SFX,hernl003,0,0,bagwj001 singles. ,bagwj001,1,
+ceder001 scores. bagwj001 to 2B. ,00,1,hidar001,bagwj001,,,6,8,X,hernl003,0,1,hidar001 singles. ,hidar001,1,
+bagwj001 to 3B. ,31,1,hidar001,,bagwj001,,7,13,BFBBX,hernl003,1,0,,aloum001,1,F
+bagwj001 scores. hidar001 to 2B. ,31,1,melum001,hidar001,,,8,18,CBBBX,hernl003,0,1,melum001 singles. ,melum001,1,
+,02,1,melum001,hidar001,,,9,21,CFS,hernl003,1,0,trubc001 strikes out. ,trubc001,1,
+,10,2,,,,,10,15,BX,millw001,1,0,,kentj001,0,F
+,12,2,,,,,11,19,BFFC,millw001,1,0,snowj001 strikes out. ,snowj001,0,
+,32,2,riosa001,,,,12,25,CFBBBX,millw001,0,0,riosa001 singles. ,riosa001,0,
+,00,2,riosa001,,,,13,26,X,millw001,1,0,,aurir001,0,P
+,32,2,,,,,14,27,BCBFBX,hernl003,1,0,bogat001 grounds out. ,bogat001,1,G
+,00,2,,,,,15,28,X,hernl003,1,0,millw001 grounds out. ,millw001,1,G
+,32,2,ceder001,,,,16,34,CBBFBB,hernl003,0,0,ceder001 walks. ,ceder001,1,
+ceder001 to 2B. ,00,2,lugoj001,ceder001,,,17,35,X,hernl003,0,0,lugoj001 singles. ,lugoj001,1,
+,22,2,lugoj001,ceder001,,,18,40,CCBBS,hernl003,1,0,bagwj001 strikes out. ,bagwj001,1,
+,11,3,,,,,19,29,CBX,millw001,1,0,estab001 grounds out. ,estab001,0,G
+,22,3,,,,,20,35,SBBFFX,millw001,1,0,hernl003 grounds out. ,hernl003,0,G
+,01,3,benam001,,,,21,37,CX,millw001,0,0,benam001 singles. ,benam001,0,
+,12,3,,benam001,,davir002,22,41,BSSB,millw001,0,0,benam001 steals 2B. ,davir002,0,
+,22,3,,benam001,,,23,46,BSSBS,millw001,1,0,davir002 strikes out. ,davir002,0,
+,20,3,,,,,24,43,BBX,hernl003,1,0,,hidar001,1,F
+,00,3,,,,,25,44,X,hernl003,1,0,,aloum001,1,F
+,22,3,,,,,26,49,BCBCX,hernl003,1,0,melum001 grounds out. ,melum001,1,G
+,10,4,,,,,27,48,BX,millw001,1,0,,bondb001,0,F
+,11,4,kentj001,,,,28,51,FBX,millw001,0,0,kentj001 singles. ,kentj001,0,
+,00,4,,,,snowj001,29,52,B,millw001,1,0,kentj001 caught stealing. ,snowj001,0,
+,20,4,,,,,30,55,BBX,millw001,1,0,snowj001 grounds out. ,snowj001,0,G
+,31,4,,,,,31,54,FBBBX,hernl003,1,0,trubc001 grounds out. ,trubc001,1,G
+,01,4,,bogat001,,,32,56,FX,hernl003,0,0,bogat001 doubles. ,bogat001,1,
+,22,4,,bogat001,,,33,61,FBBSC,hernl003,1,0,millw001 strikes out. ,millw001,1,
+,22,4,,bogat001,,,34,66,CBBCC,hernl003,1,0,ceder001 strikes out. ,ceder001,1,
+,21,5,,,,,35,59,BCBX,millw001,1,0,,riosa001,0,F
+,22,5,,,,,36,64,CBFBX,millw001,1,0,,aurir001,0,
+,02,5,,,,,37,67,SCX,millw001,1,0,,estab001,0,L
+,11,5,,,,,38,69,BCX,hernl003,1,0,lugoj001 grounds out. ,lugoj001,1,G
+,12,5,,,,,39,73,SFBS,hernl003,1,0,bagwj001 strikes out. ,bagwj001,1,
+,32,5,,,,,40,79,BBCBFX,hernl003,1,0,,hidar001,1,P
+,01,6,,,,,41,69,FX,millw001,1,0,hernl003 grounds out. ,hernl003,0,G
+,00,6,,,,,42,70,X,millw001,1,0,,benam001,0,L
+,21,6,,,,,43,74,BFBX,millw001,1,0,,davir002,0,L
+,12,6,,,,,44,85,FBFFFX,hernl003,1,0,,aloum001,1,F
+,12,6,,,,,45,89,SFBS,hernl003,1,0,melum001 strikes out. ,melum001,1,
+,00,6,trubc001,,,,46,90,X,hernl003,0,0,trubc001 singles. ,trubc001,1,
+,00,6,trubc001,,,,47,91,X,hernl003,1,0,,bogat001,1,F
+,10,7,,,,,48,76,BX,millw001,0,1,bondb001 homers. ,bondb001,0,
+,10,7,,kentj001,,,49,78,BX,millw001,0,0,kentj001 doubles. ,kentj001,0,
+kentj001 scores. ,12,7,,snowj001,,,50,82,CBCX,millw001,0,1,snowj001 doubles. ,snowj001,0,
+snowj001 to 3B. riosa001 out. ,21,7,,,snowj001,,51,86,BBSX,millw001,1,0,riosa001 singles. ,riosa001,0,
+,30,7,aurir001,,snowj001,,52,90,BBBB,millw001,0,0,aurir001 walks. ,aurir001,0,
+,00,7,aurir001,,snowj001,,53,91,X,millw001,1,0,,estab001,0,
+,22,7,aurir001,,snowj001,,54,96,SBSBS,millw001,1,0,hernl003 strikes out. ,hernl003,0,
+,21,7,,,,,55,95,BCBX,hernl003,1,0,,millw001,1,F
+,32,7,,,,,56,101,BBFBCX,hernl003,1,0,ceder001 grounds out. ,ceder001,1,G
+,32,7,lugoj001,,,,57,109,CFBBFBFB,hernl003,0,0,lugoj001 walks. ,lugoj001,1,
+,32,7,lugoj001,,,,58,116,SBSBFBS,hernl003,1,0,bagwj001 strikes out. ,bagwj001,1,
+,21,8,,,,,59,100,BCBX,millw001,1,0,,benam001,0,
+,01,8,,,,,60,102,CX,millw001,1,0,,davir002,0,
+,11,8,,,,,61,105,CBX,millw001,1,0,,bondb001,0,F
+,11,8,,,,,62,119,CBX,hernl003,1,0,hidar001 grounds out. ,hidar001,1,G
+,00,8,aloum001,,,,63,120,X,hernl003,0,0,aloum001 singles. ,aloum001,1,
+,21,8,aloum001,,,,64,124,FBBX,hernl003,1,0,,melum001,1,
+,01,8,aloum001,,,,65,126,CX,hernl003,1,0,,trubc001,1,P
+,00,9,kentj001,,,,66,106,X,millw001,0,0,kentj001 singles. ,kentj001,0,
+,32,9,,,,,67,113,BFCBBFC,millw001,2,0,snowj001 strikes out. kentj001 caught stealing. ,snowj001,0,
+,20,9,,,,,68,116,BBX,millw001,0,1,riosa001 homers. ,riosa001,0,
+,32,9,,,,,69,122,CBSBBX,millw001,1,0,,aurir001,0,F
+,32,9,,,,,74,6,SBSBBS,nen-r001,1,0,wardd002 strikes out. ,wardd002,1,
+,21,9,,,,,76,10,BCBX,nen-r001,1,0,berkl001 grounds out. ,berkl001,1,G
+,20,9,ceder001,,,,77,13,BBX,nen-r001,0,0,ceder001 singles. ,ceder001,1,
+,00,9,,ceder001,,lugoj001,78,14,B,nen-r001,0,0,ceder001 steals 2B. ,lugoj001,1,
+,12,9,,ceder001,,,79,18,BFSS,nen-r001,1,0,lugoj001 strikes out. ,lugoj001,1,

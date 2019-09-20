@@ -1,0 +1,176 @@
+version,2
+info,visteam,ANA
+info,hometeam,MIN
+info,site,MIN03
+info,date,2000/09/16
+info,number,0
+info,starttime,6:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,cousd901
+info,ump1b,marqa901
+info,ump2b,nelsj901
+info,ump3b,brinj901
+info,pitches,pitches
+info,temp,72
+info,winddir,unknown
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,212
+info,attendance,10078
+info,wp,hases001
+info,lp,hawkl001
+info,save,perct001
+start,erstd001,"Darin Erstad",0,1,8
+start,glaut001,"Troy Glaus",0,2,5
+start,salmt001,"Tim Salmon",0,3,10
+start,vaugm001,"Mo Vaughn",0,4,3
+start,gantr001,"Ron Gant",0,5,7
+start,andeg001,"Garret Anderson",0,6,9
+start,molib001,"Ben Molina",0,7,2
+start,kenna001,"Adam Kennedy",0,8,4
+start,gil-b001,"Benji Gil",0,9,6
+start,schos001,"Scott Schoeneweis",0,0,1
+start,hockd001,"Denny Hocking",1,1,6
+start,rival001,"Luis Rivas",1,2,4
+start,lawtm002,"Matt Lawton",1,3,9
+start,coomr001,"Ron Coomer",1,4,3
+start,ortid001,"David Ortiz",1,5,10
+start,koskc001,"Corey Koskie",1,6,5
+start,barnj001,"John Barnes",1,7,8
+start,jonej003,"Jacque Jones",1,8,7
+start,moelc001,"Chad Moeller",1,9,2
+start,santj003,"Johan Santana",1,0,1
+play,1,0,erstd001,31,BBBCX,4/P4
+play,1,0,glaut001,01,CX,S7/7S
+play,1,0,salmt001,02,CSX,5(B)3(1)/LDP
+play,1,1,hockd001,12,BCCX,4/L4
+play,1,1,rival001,20,BBX,S8
+com,"Debut game for Luis Rivas"
+play,1,1,lawtm002,01,CX,5(B)3(1)/LDP
+play,2,0,vaugm001,22,BCBFS,K
+play,2,0,gantr001,00,X,S
+play,2,0,andeg001,11,BSX,S8.1-3
+play,2,0,molib001,22,CBFFBX,S9/9S.3-H;1-2
+play,2,0,kenna001,31,BBFBX,46(1)3/GDP
+play,2,1,coomr001,31,CBBBX,43/G
+play,2,1,ortid001,32,BCBFBB,W
+play,2,1,koskc001,10,BX,46(1)/FO
+play,2,1,barnj001,31,CBBBB,W.1-2
+com,"Debut game for John Barnes"
+play,2,1,jonej003,22,CBSBS,K
+play,3,0,gil-b001,01,SX,63/G
+play,3,0,erstd001,20,BBX,3/G
+play,3,0,glaut001,12,CSBFS,K
+play,3,1,moelc001,00,X,T/89
+play,3,1,hockd001,11,BFX,9/SF.3-H
+play,3,1,rival001,31,SBBBX,4/P4
+play,3,1,lawtm002,32,BCBCBS,K
+play,4,0,salmt001,22,CBBSX,S9/9S
+play,4,0,vaugm001,22,BSBSX,46(1)3/GDP
+play,4,0,gantr001,32,SBCBBX,9/F9
+play,4,1,coomr001,01,SH,HP
+play,4,1,ortid001,31,BBBFX,S9.1-2
+play,4,1,koskc001,12,BCSX,S8.2-H;1-2
+play,4,1,barnj001,00,X,S8.2-H;1-3
+play,4,1,jonej003,01,SX,64(1)/FO.3-H
+play,4,1,moelc001,22,BFBFB,SB2
+play,4,1,moelc001,32,BFBFBB,W
+play,4,1,hockd001,22,SSBBX,4/P4
+play,4,1,rival001,22,FCBBX,53/G
+play,5,0,andeg001,10,BX,8/F8
+play,5,0,molib001,00,X,43/G
+play,5,0,kenna001,11,CBX,7/FL
+play,5,1,lawtm002,01,CH,HP
+play,5,1,coomr001,11,CBX,7/F7
+play,5,1,ortid001,01,CX,S9/9S.1-3
+play,5,1,koskc001,32,CBFBBX,S7/7S.3-H;1-3
+play,5,1,barnj001,00,,NP
+sub,webeb001,"Ben Weber",0,0,1
+play,5,1,barnj001,12,BSFX,6(1)3/GDP
+play,6,0,gil-b001,12,CBSX,4/L4
+play,6,0,erstd001,21,BCBX,S8
+play,6,0,glaut001,31,CBBBB,W.1-2
+play,6,0,salmt001,00,,NP
+sub,wellb002,"Bob Wells",1,0,1
+play,6,0,salmt001,32,BSFFBBS,K
+play,6,0,vaugm001,10,BX,HR/9.2-H;1-H
+play,6,0,gantr001,32,CCBBFBX,4/P4
+play,6,1,jonej003,21,BBFX,63/G
+play,6,1,moelc001,22,SCBBC,K/C
+play,6,1,hockd001,32,BCCBBX,E6/G
+play,6,1,rival001,12,BCCS,K
+play,7,0,andeg001,00,,NP
+sub,barnj001,"John Barnes",1,7,9
+play,7,0,andeg001,00,,NP
+sub,huntt001,"Torii Hunter",1,3,8
+play,7,0,andeg001,11,BFX,S9
+play,7,0,molib001,01,CX,S8/8S.1-3
+play,7,0,kenna001,11,BCX,8/F8
+play,7,0,gil-b001,00,,NP
+sub,spies001,"Scott Spiezio",0,9,11
+play,7,0,spies001,10,BX,8/SF.3-H
+play,7,0,erstd001,00,X,63/G
+play,7,1,huntt001,00,,NP
+sub,stock001,"Kevin Stocker",0,9,6
+play,7,1,huntt001,32,CFBBFBFFFFX,S8
+play,7,1,coomr001,10,BX,E4/TH.1-3
+play,7,1,ortid001,00,,NP
+sub,holtm001,"Mike Holtz",0,0,1
+play,7,1,ortid001,12,BSSS,K
+play,7,1,koskc001,11,BSX,9/SF.3-H(UR)
+play,7,1,barnj001,00,,NP
+sub,hases001,"Shigetoshi Hasegawa",0,0,1
+play,7,1,barnj001,12,SFBS,K
+play,8,0,glaut001,00,,NP
+sub,guare001,"Eddie Guardado",1,0,1
+play,8,0,glaut001,32,BCBFFFFBB,W
+play,8,0,salmt001,22,FBFBFC,K/C
+play,8,0,vaugm001,12,SSBX,7/F7S
+com,"ej,guare001,P,cousd901,Balls and strikes"
+com,"Eddie Guardado ejected by HP umprie Derryl Cousins"
+play,8,0,gantr001,00,,NP
+sub,hawkl001,"LaTroy Hawkins",1,0,1
+play,8,0,gantr001,22,FBCBB,WP.1-2
+play,8,0,gantr001,32,FBCBBB,W
+com,"ej,hawkl001,P,cousd901,Balls and strikes"
+com,"LaTroy Hawkins ejected by HP umpire Derryl Cousins"
+play,8,0,andeg001,00,,NP
+sub,millt001,"Travis Miller",1,0,1
+play,8,0,andeg001,12,CBFFX,S.2-3;1-2
+play,8,0,molib001,02,CFX,S9.3-H;2-H;1-3
+play,8,0,kenna001,01,CX,7/F7
+play,8,1,jonej003,10,BX,3/L3
+play,8,1,moelc001,00,,NP
+sub,canij001,"Jay Canizaro",1,9,11
+play,8,1,canij001,22,BFBSS,K
+play,8,1,hockd001,21,BBFX,43/G
+play,9,0,stock001,00,,NP
+sub,piera001,"A.J. Pierzynski",1,9,2
+play,9,0,stock001,01,SX,6/P6
+play,9,0,erstd001,22,BBCFX,S/78S
+play,9,0,glaut001,00,,NP
+sub,cresj001,"Jack Cressend",1,0,1
+play,9,0,glaut001,01,FX,64(1)/FO
+play,9,0,salmt001,22,BSBCX,S9.1-3
+play,9,0,vaugm001,31,SBBBX,8/F8D
+play,9,1,rival001,00,,NP
+sub,guzmc001,"Cristian Guzman",1,2,11
+play,9,1,guzmc001,00,,NP
+sub,perct001,"Troy Percival",0,0,1
+play,9,1,guzmc001,02,CFS,K
+play,9,1,huntt001,22,SBSBFS,K
+play,9,1,coomr001,10,BX,63/G
+data,er,schos001,5
+data,er,webeb001,0
+data,er,holtm001,0
+data,er,hases001,0
+data,er,perct001,0
+data,er,santj003,3
+data,er,wellb002,2
+data,er,guare001,1
+data,er,hawkl001,1
+data,er,millt001,0
+data,er,cresj001,0

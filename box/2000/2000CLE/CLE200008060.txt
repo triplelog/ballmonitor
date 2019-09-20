@@ -1,0 +1,146 @@
+version,2
+info,visteam,ANA
+info,hometeam,CLE
+info,site,CLE08
+info,date,2000/08/06
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,iassd901
+info,ump1b,cookr901
+info,ump2b,bellw901
+info,ump3b,onorb901
+info,pitches,pitches
+info,temp,75
+info,winddir,unknown
+info,windspeed,12
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,196
+info,attendance,43133
+info,wp,colob001
+info,lp,coopb001
+info,save,wickb001
+start,erstd001,"Darin Erstad",0,1,7
+start,palmo001,"Orlando Palmeiro",0,2,10
+start,vaugm001,"Mo Vaughn",0,3,3
+start,salmt001,"Tim Salmon",0,4,9
+start,andeg001,"Garret Anderson",0,5,8
+start,glaut001,"Troy Glaus",0,6,5
+start,molib001,"Ben Molina",0,7,2
+start,kenna001,"Adam Kennedy",0,8,4
+start,stock001,"Kevin Stocker",0,9,6
+start,coopb001,"Brian Cooper",0,0,1
+start,loftk001,"Kenny Lofton",1,1,8
+start,vizqo001,"Omar Vizquel",1,2,6
+start,alomr001,"Roberto Alomar",1,3,4
+start,thomj002,"Jim Thome",1,4,10
+start,segud001,"David Segui",1,5,3
+start,cordw001,"Wil Cordero",1,6,7
+start,frymt001,"Travis Fryman",1,7,5
+start,selbb001,"Bill Selby",1,8,9
+start,diaze002,"Einar Diaz",1,9,2
+start,colob001,"Bartolo Colon",1,0,1
+com,"start of game delayed by rain"
+play,1,0,erstd001,22,BFFBFFFFX,7/F7S
+play,1,0,palmo001,11,CBX,5/FL
+play,1,0,vaugm001,22,CBCBC,K/C
+play,1,1,loftk001,21,BBCX,8/F8
+play,1,1,vizqo001,02,CFFC,K/C
+play,1,1,alomr001,12,BLCX,HR/9
+play,1,1,thomj002,10,BX,HR/9
+play,1,1,segud001,10,BX,43/G
+play,2,0,salmt001,32,FBFBBX,S9
+play,2,0,andeg001,21,BCBX,36(1)/FO
+play,2,0,glaut001,22,CSBBX,S8.1-2
+play,2,0,molib001,01,CH,HP.2-3;1-2
+play,2,0,kenna001,10,BX,4/P/IF.3-H(E4);2-3
+com,"$infield fly dropped by Roberto Alomar"
+play,2,0,stock001,00,X,D7/7D.3-H;1-3
+play,2,0,erstd001,12,BCFX,7/L7
+play,2,1,cordw001,32,FBCBBFFX,7/F7
+play,2,1,frymt001,32,FBBBFB,W
+play,2,1,selbb001,31,BBBCB,W.1-2
+play,2,1,diaze002,01,SX,3/G.2-3;1-2
+play,2,1,loftk001,01,CX,7/L7
+play,3,0,palmo001,30,BBBB,W
+play,3,0,vaugm001,11,BCX,S9.1-2
+play,3,0,salmt001,12,FBSFS,K
+play,3,0,andeg001,10,BX,7/F7
+play,3,0,glaut001,02,CCS,K
+play,3,1,vizqo001,01,CX,8/F8
+play,3,1,alomr001,01,CX,HR/9
+play,3,1,thomj002,00,X,D9
+play,3,1,segud001,30,BBBB,W
+play,3,1,cordw001,20,BBX,4/P4
+play,3,1,frymt001,32,CBFBFBFFX,9/F9
+play,4,0,molib001,32,BFBBSB,W
+play,4,0,kenna001,01,CX,S8.1-2
+play,4,0,stock001,01,SX,34/SH.2-3;1-2
+play,4,0,erstd001,00,X,6/L6
+play,4,0,palmo001,32,CBBFFBX,9/F9
+play,4,1,selbb001,02,CCX,S9
+play,4,1,diaze002,01,CX,HR/7.1-H
+play,4,1,loftk001,12,BCCX,4/P4
+play,4,1,vizqo001,11,CBX,D7
+play,4,1,alomr001,32,BCCBBX,43/G.2-3
+play,4,1,thomj002,00,,NP
+sub,alvaj002,"Juan Alvarez",0,0,1
+play,4,1,thomj002,00,X,7/F7D
+play,5,0,vaugm001,31,BBCBB,W
+play,5,0,salmt001,21,BBCX,54(1)3/GDP
+play,5,0,andeg001,11,CBX,S7/7S
+play,5,0,glaut001,32,CBBBSB,W.1-2
+play,5,0,molib001,12,FBFS,K
+play,5,1,segud001,00,,NP
+sub,wisem001,"Matt Wise",0,0,1
+play,5,1,segud001,22,BFCBS,K
+play,5,1,cordw001,12,CSBS,K
+play,5,1,frymt001,31,BBBCX,D/78
+play,5,1,selbb001,02,FSX,7/F7
+play,6,0,kenna001,11,BCX,13/G
+play,6,0,stock001,02,CCX,43/G
+play,6,0,erstd001,22,BFFBS,K
+play,6,1,diaze002,00,,NP
+sub,holtm001,"Mike Holtz",0,0,1
+play,6,1,diaze002,12,CBFS,K
+play,6,1,loftk001,11,BCX,63/G
+play,6,1,vizqo001,01,CX,13/G
+play,7,0,palmo001,12,BCFS,K
+play,7,0,vaugm001,00,X,8/F8
+play,7,0,salmt001,22,FFBBS,K
+play,7,1,alomr001,22,BCFBS,K
+play,7,1,thomj002,12,SBCS,K
+play,7,1,segud001,10,BX,S8
+play,7,1,cordw001,00,,NP
+sub,potel001,"Lou Pote",0,0,1
+play,7,1,cordw001,22,BBSFX,6/P6
+play,8,0,andeg001,00,,NP
+sub,cabrj002,"Jolbert Cabrera",1,8,9
+play,8,0,andeg001,31,BCBBB,W
+play,8,0,glaut001,00,,NP
+sub,shuep001,"Paul Shuey",1,0,1
+play,8,0,glaut001,22,BBCSC,K/C
+play,8,0,molib001,01,FX,S8.1-2
+play,8,0,kenna001,12,CFBFFS,K
+play,8,0,stock001,12,CFBS,K
+play,8,1,frymt001,12,BFCX,7/F7S
+play,8,1,cabrj002,12,BFCX,E4/TH.B-2
+play,8,1,diaze002,11,BCX,D/78.2-3
+play,8,1,loftk001,10,BX,43/G
+play,8,1,vizqo001,11,CBX,13/G
+play,9,0,erstd001,00,,NP
+sub,wickb001,"Bob Wickman",1,0,1
+play,9,0,erstd001,11,CBX,3/G
+play,9,0,palmo001,02,CCX,53/G
+play,9,0,vaugm001,12,BFFC,K/C
+data,er,coopb001,5
+data,er,alvaj002,0
+data,er,wisem001,0
+data,er,holtm001,0
+data,er,potel001,0
+data,er,colob001,2
+data,er,shuep001,0
+data,er,wickb001,0

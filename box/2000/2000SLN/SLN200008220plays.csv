@@ -1,0 +1,84 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,12,1,browa001,,,,0,4,CCBX,kiled001,0,0,browa001 reaches on error. ,browa001,0,G
+,22,1,,browa001,,kendj001,1,12,BBFFFFFB,kiled001,0,0,browa001 steals 2B. ,kendj001,0,
+,32,1,,browa001,,,2,21,BBFFFFFBX,kiled001,1,0,,kendj001,0,P
+,31,1,gileb002,browa001,,,3,26,BBBFB,kiled001,0,0,gileb002 walks. ,gileb002,0,
+,11,1,gileb002,browa001,,,4,29,BCX,kiled001,1,0,,younk001,0,F
+,21,1,gileb002,browa001,,,5,33,BCBX,kiled001,1,0,,vandj001,0,F
+,32,1,vinaf001,,,,6,6,BBCBCH,serad001,0,0,vinaf001 hit by pitch. ,vinaf001,1,
+vinaf001 to 2B. ,11,1,dunss001,vinaf001,,,7,9,CBX,serad001,0,0,dunss001 singles. ,dunss001,1,
+vinaf001 to 3B. ,31,1,dunss001,,vinaf001,,8,14,BBBCX,serad001,1,0,,edmoj001,1,L
+,21,1,,,vinaf001,,9,18,CBBX,serad001,2,0,Double Play. ,davie001,1,
+,22,2,ramia001,,,,10,39,BCFBFX,kiled001,0,0,ramia001 singles. ,ramia001,0,
+,00,2,ramia001,,,,11,40,X,kiled001,1,0,,morrw001,0,F
+ramia001 to 2B. ,00,2,wilse001,ramia001,,,12,41,X,kiled001,0,0,wilse001 singles. ,wilse001,0,
+ramia001 to 3B. wilse001 to 2B. ,00,2,,wilse001,ramia001,,13,42,X,kiled001,1,0,Sacrifice bunt by serad001.,serad001,0,
+,01,2,,wilse001,ramia001,,14,44,CX,kiled001,1,0,,browa001,0,
+,02,2,,,,,15,21,LCS,serad001,1,0,tatif001 strikes out. ,tatif001,1,
+,00,2,clarw001,,,,16,22,X,serad001,0,0,clarw001 singles. ,clarw001,1,
+,02,2,clarw001,,,,17,25,LCS,serad001,1,0,rente001 strikes out. ,rente001,1,
+clarw001 to 3B. ,31,2,mathm001,,clarw001,,18,30,BBSBX,serad001,0,0,mathm001 singles. ,mathm001,1,
+mathm001 out. ,00,2,kiled001,,clarw001,,19,31,X,serad001,1,0,kiled001 reaches on fielder's choice. ,kiled001,1,
+,01,3,,,,,20,46,FX,kiled001,1,0,kendj001 grounds out. ,kendj001,0,G
+,12,3,,,,,21,50,CFBC,kiled001,1,0,gileb002 strikes out. ,gileb002,0,
+,31,3,,,,,22,55,BBFBX,kiled001,1,0,younk001 grounds out. ,younk001,0,G
+,00,3,vinaf001,,,,23,32,H,serad001,0,0,vinaf001 hit by pitch. ,vinaf001,1,
+,11,3,vinaf001,,,,24,35,BCX,serad001,1,0,,dunss001,1,F
+vinaf001 to 2B. ,31,3,edmoj001,vinaf001,,,25,40,CBBBB,serad001,0,0,edmoj001 walks. ,edmoj001,1,
+vinaf001 scores. edmoj001 out. ,02,3,davie001,,,,26,43,FFX,serad001,1,1,davie001 singles. ,davie001,1,
+davie001 to 2B. ,32,3,tatif001,davie001,,,27,50,FBBBCFB,serad001,0,0,tatif001 walks. ,tatif001,1,
+,02,3,tatif001,davie001,,,28,55,SFFFC,serad001,1,0,clarw001 strikes out. ,clarw001,1,
+,12,4,,,,,29,59,FBCX,kiled001,1,0,vandj001 grounds out. ,vandj001,0,G
+,22,4,,ramia001,,,30,65,BCFFBX,kiled001,0,0,ramia001 doubles. ,ramia001,0,
+,00,4,,ramia001,,,31,66,X,kiled001,1,0,,morrw001,0,F
+,30,4,wilse001,ramia001,,,32,70,IIII,kiled001,0,0,wilse001 intentionally walks. ,wilse001,0,
+,00,4,wilse001,ramia001,,,33,71,X,kiled001,1,0,serad001 grounds out. ,serad001,0,G
+,00,4,,rente001,,,34,56,X,serad001,0,0,rente001 doubles. ,rente001,1,
+rente001 scores. ,22,4,mathm001,,,,35,61,BBFFX,serad001,0,1,mathm001 singles. ,mathm001,1,
+mathm001 to 2B. ,00,4,,mathm001,,,36,62,X,serad001,1,0,Sacrifice bunt by kiled001.,kiled001,1,
+,12,4,,mathm001,,,37,67,FFFBX,serad001,1,0,,vinaf001,1,F
+,00,4,,mathm001,,,38,68,X,serad001,1,0,dunss001 grounds out. ,dunss001,1,G
+,00,5,browa001,,,,39,72,X,kiled001,0,0,browa001 singles. ,browa001,0,
+,12,5,browa001,,,,40,77,BCFFC,kiled001,1,0,kendj001 strikes out. ,kendj001,0,
+browa001 scores. ,32,5,,,,,41,83,BBCBSX,kiled001,0,2,gileb002 homers. ,gileb002,0,
+,00,5,,,,,42,84,X,kiled001,1,0,,younk001,0,F
+,02,5,,,,,43,87,FSC,kiled001,1,0,vandj001 strikes out. ,vandj001,0,
+,22,5,,,,,44,73,BSFBS,serad001,1,0,edmoj001 strikes out. ,edmoj001,1,
+,32,5,davie001,,,,45,80,BCBFFBB,serad001,0,0,davie001 walks. ,davie001,1,
+,01,5,davie001,,,,46,82,SX,serad001,1,0,,tatif001,1,F
+,22,5,davie001,,,,47,89,FBFBFFS,serad001,1,0,clarw001 strikes out. ,clarw001,1,
+,00,6,,,,,48,88,X,kiled001,1,0,,ramia001,0,L
+,12,6,,,,,49,93,CBCFC,kiled001,1,0,morrw001 strikes out. ,morrw001,0,
+,20,6,,,,,50,96,BBX,kiled001,1,0,,wilse001,0,F
+,32,6,,,,,52,7,BBCBCFX,manzj001,1,0,,rente001,1,F
+,11,6,,,,,53,10,BLX,manzj001,1,0,mathm001 grounds out. ,mathm001,1,G
+,02,6,,,,,54,13,FCS,manzj001,1,0,kiled001 strikes out. ,kiled001,1,
+,10,7,,,,,56,98,BX,kiled001,0,1,ramia002 homers. ,ramia002,0,
+,11,7,browa001,,,,57,101,CBX,kiled001,0,0,browa001 singles. ,browa001,0,
+browa001 to 2B. ,31,7,kendj001,browa001,,,58,106,BBBCX,kiled001,0,0,kendj001 singles. ,kendj001,0,
+,10,7,kendj001,browa001,,,59,108,BX,kiled001,1,0,,gileb002,0,
+browa001 scores. kendj001 out. younk001 to 3B. ,00,7,,,younk001,,60,109,X,kiled001,1,1,younk001 doubles. ,younk001,0,
+younk001 scores. ,02,7,,,,,61,112,CSX,kiled001,0,2,vandj001 homers. ,vandj001,0,
+,12,7,ramia001,,,,62,116,CCBX,kiled001,0,0,ramia001 singles. ,ramia001,0,
+,10,7,ramia001,,,,64,2,BX,stecg001,1,0,morrw001 grounds out. ,morrw001,0,G
+,22,7,,,,,67,5,BCBFX,saues001,1,0,vinaf001 grounds out. ,vinaf001,1,G
+,11,7,dunss001,,,,68,8,BSX,saues001,0,0,dunss001 singles. ,dunss001,1,
+,32,7,dunss001,,,,69,15,FCBBBFC,saues001,1,0,edmoj001 strikes out. ,edmoj001,1,
+dunss001 out. ,01,7,davie001,,,,70,17,FX,saues001,1,0,davie001 reaches on fielder's choice. ,davie001,1,
+,10,8,,,,,71,4,BX,stecg001,1,0,,wilse001,0,L
+,12,8,,,,,72,8,CBSX,stecg001,1,0,ramia002 grounds out. ,ramia002,0,G
+,00,8,,,,,73,9,X,stecg001,1,0,browa001 grounds out. ,browa001,0,G
+,12,8,,,,,74,21,CBFC,saues001,1,0,tatif001 strikes out. ,tatif001,1,
+,12,8,clarw001,,,,75,25,BSSX,saues001,0,0,clarw001 singles. ,clarw001,1,
+clarw001 to 2B. ,01,8,rente001,clarw001,,,76,27,CX,saues001,0,0,rente001 singles. ,rente001,1,
+,22,8,rente001,clarw001,,,77,32,CBSBC,saues001,1,0,mathm001 strikes out. ,mathm001,1,
+,32,8,rente001,clarw001,,,79,39,BBBCCFX,saues001,1,0,polap001 grounds out. ,polap001,1,G
+,01,9,,,,,81,2,CX,benea002,1,0,,kendj001,0,L
+,31,9,gileb002,,,,82,7,BBBCB,benea002,0,0,gileb002 walks. ,gileb002,0,
+,32,9,gileb002,,,,83,13,BCFBBX,benea002,1,0,,younk001,0,P
+gileb002 to 2B. ,32,9,browe001,gileb002,,,85,19,BBCBSB,benea002,0,0,browe001 walks. ,browe001,0,
+gileb002 to 3B. browe001 out. ,10,9,ramia001,,gileb002,,86,21,BX,benea002,1,0,ramia001 reaches on fielder's choice. ,ramia001,0,
+,00,9,vinaf001,,,,88,1,X,willm005,0,0,vinaf001 singles. ,vinaf001,1,
+,01,9,,,,,89,3,FX,willm005,2,0,Double Play. ,dunss001,1,
+,11,9,edmoj001,,,,90,6,SBH,willm005,0,0,edmoj001 hit by pitch. ,edmoj001,1,
+edmoj001 out. ,11,9,davie001,,,,91,9,CBX,willm005,1,0,davie001 reaches on fielder's choice. ,davie001,1,

@@ -1,0 +1,156 @@
+version,2
+info,visteam,TEX
+info,hometeam,SFN
+info,site,SFO03
+info,date,2000/07/17
+info,number,0
+info,starttime,7:15PM
+info,daynight,night
+info,usedh,false
+info,umphome,timmt901
+info,ump1b,ripps901
+info,ump2b,tscht901
+info,ump3b,meric901
+info,pitches,pitches
+info,temp,61
+info,winddir,rtol
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,188
+info,attendance,40930
+info,wp,hernl003
+info,lp,david002
+info,save,nen-r001
+start,alicl001,"Luis Alicea",0,1,4
+start,greer001,"Rusty Greer",0,2,7
+start,palmr001,"Rafael Palmeiro",0,3,3
+start,rodri001,"Ivan Rodriguez",0,4,2
+start,martd002,"Dave Martinez",0,5,9
+start,lambm001,"Mike Lamb",0,6,5
+start,kaplg001,"Gabe Kapler",0,7,8
+start,clayr001,"Royce Clayton",0,8,6
+start,glynr001,"Ryan Glynn",0,9,1
+start,benam001,"Marvin Benard",1,1,8
+start,martr003,"Ramon E. Martinez",1,2,4
+start,bondb001,"Barry Bonds",1,3,7
+start,burke001,"Ellis Burks",1,4,9
+start,snowj001,"J.T. Snow",1,5,3
+start,aurir001,"Rich Aurilia",1,6,6
+start,muelb001,"Bill Mueller",1,7,5
+start,estab001,"Bobby Estalella",1,8,2
+start,hernl003,"Livan Hernandez",1,9,1
+play,1,0,alicl001,11,BFX,5/FL
+play,1,0,greer001,10,BX,D9
+play,1,0,palmr001,21,BBSX,HR/7.2-H
+play,1,0,rodri001,02,CFC,K/C
+play,1,0,martd002,32,BSCBBS,K
+play,1,1,benam001,22,BBCCFX,43/G
+play,1,1,martr003,10,BX,63/G
+play,1,1,bondb001,31,CBBBB,W
+play,1,1,burke001,32,CCBBBB,W.1-2
+play,1,1,snowj001,22,BBCFX,36(1)/FO.2-3
+play,2,0,lambm001,22,BCSBX,S7
+play,2,0,kaplg001,32,CFBBBC,K+CS2(26)/DP/C
+play,2,0,clayr001,01,CX,3/FL
+play,2,1,aurir001,12,CFBX,D7
+play,2,1,muelb001,31,CBBBX,43/G.2-3
+play,2,1,estab001,02,FFX,63/G.3-H
+play,2,1,hernl003,11,BFX,43/G
+play,3,0,glynr001,12,CSFBFS,K
+play,3,0,alicl001,01,CX,43/G
+play,3,0,greer001,30,BBBB,W
+play,3,0,palmr001,22,CBFBX,64(1)/FO
+play,3,1,benam001,10,BX,HR/8
+play,3,1,martr003,00,X,9/F9
+play,3,1,bondb001,00,X,43/G
+play,3,1,burke001,32,CBCBBB,W
+play,3,1,snowj001,00,X,HR/8.1-H
+play,3,1,aurir001,31,BBBCX,3/G
+play,4,0,rodri001,10,BX,E5/TH
+play,4,0,martd002,11,CBX,16(1)3/GDP
+play,4,0,lambm001,31,BBCBX,S9/9S
+play,4,0,kaplg001,02,FFX,53/G
+play,4,1,muelb001,12,CBFX,43/G
+play,4,1,estab001,00,X,13/G
+play,4,1,hernl003,00,X,D/78
+play,4,1,benam001,32,CBBBCB,W
+play,4,1,martr003,10,BX,9/F9
+play,5,0,clayr001,00,X,13/G
+play,5,0,glynr001,11,BFX,31/G
+play,5,0,alicl001,22,BCBFC,K/C
+play,5,1,bondb001,01,CX,4/L4
+play,5,1,burke001,10,BX,53/G
+play,5,1,snowj001,02,FFX,S8
+play,5,1,aurir001,22,FSBBC,K/C
+play,6,0,greer001,10,BX,43/G
+play,6,0,palmr001,21,BFBX,9/F9
+play,6,0,rodri001,11,BFX,7/F7
+play,6,1,muelb001,10,BX,D7
+play,6,1,estab001,32,BCBBSB,W
+play,6,1,hernl003,11,BLX,4(1)3/GDP.2-3
+play,6,1,benam001,00,,NP
+sub,venam002,"Mike Venafro",0,9,1
+play,6,1,benam001,00,X,1/BP1
+play,7,0,martd002,22,BFCBFX,S9
+play,7,0,lambm001,00,X,S7.1-2
+play,7,0,kaplg001,32,FBFBBX,S/89S.2-3;1-2
+play,7,0,clayr001,22,BCFBX,36(1)/FO.3-H;2-3
+play,7,0,venam002,00,,NP
+sub,segud001,"David Segui",0,9,11
+play,7,0,segud001,00,X,D9/9S.3-H;1-3
+play,7,0,alicl001,32,BBSBFX,8/SF.3-H
+play,7,0,greer001,21,BBCX,8/F8D
+play,7,1,martr003,00,,NP
+sub,david002,"Doug Davis",0,9,1
+play,7,1,martr003,12,CBFFX,53/G
+play,7,1,bondb001,32,BBFBFB,W
+play,7,1,burke001,00,X,S7.1-2
+play,7,1,snowj001,10,BX,HR/78.2-H;1-H
+play,7,1,aurir001,20,BBX,8/F8
+play,7,1,muelb001,00,X,S9/9S
+play,7,1,estab001,01,SX,E5/G.1-2
+play,7,1,hernl003,00,,NP
+sub,cordf002,"Francisco Cordero",0,9,1
+play,7,1,hernl003,00,,NP
+sub,riosa001,"Armando Rios",1,9,11
+play,7,1,riosa001,32,BCBFBX,6/P6
+play,8,0,palmr001,00,,NP
+sub,rodrf002,"Felix Rodriguez",1,9,1
+play,8,0,palmr001,32,CBBFBX,7/FL
+play,8,0,rodri001,10,BX,D9
+play,8,0,martd002,02,CSS,K
+play,8,0,lambm001,22,FBFBS,K
+play,8,1,benam001,32,FBBCBX,13/G
+play,8,1,martr003,22,CBBCX,S9/9S
+play,8,1,bondb001,20,BBX,S9/9D.1-3
+play,8,1,burke001,20,BBX,D7.3-H;1-3
+play,8,1,snowj001,30,IIII,IW
+play,8,1,aurir001,00,,NP
+sub,crabt001,"Tim Crabtree",0,9,1
+play,8,1,aurir001,00,X,8/SF.3-H
+play,8,1,muelb001,02,SFX,S7.2-H;1-2
+play,8,1,estab001,01,SX,63/G
+play,9,0,kaplg001,00,,NP
+sub,johnj006,"John Johnstone",1,9,1
+play,9,0,kaplg001,01,CX,4/P4
+play,9,0,clayr001,32,BBFFBB,W
+play,9,0,crabt001,00,,NP
+sub,cataf001,"Frank Catalanotto",0,9,11
+play,9,0,cataf001,31,FBBBX,S9/9S.1-3
+play,9,0,alicl001,10,BX,D9/9S.3-H;1-3
+play,9,0,greer001,00,,NP
+sub,nen-r001,"Robb Nen",1,9,1
+play,9,0,greer001,00,X,D7/7D.3-H;2-H
+play,9,0,palmr001,12,CSBX,9/F9
+play,9,0,rodri001,12,BSSFS,K
+data,er,glynr001,4
+data,er,venam002,0
+data,er,david002,3
+data,er,cordf002,3
+data,er,crabt001,0
+data,er,hernl003,5
+data,er,rodrf002,0
+data,er,johnj006,3
+data,er,nen-r001,0

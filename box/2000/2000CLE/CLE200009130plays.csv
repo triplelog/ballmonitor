@@ -1,0 +1,85 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,22,1,,,,,0,7,BCBCFFS,colob001,1,0,nixot001 strikes out. ,nixot001,0,
+,01,1,offej001,,,,1,9,CX,colob001,0,0,offej001 singles. ,offej001,0,
+,22,1,offej001,,,,2,14,BCBFS,colob001,1,0,everc001 strikes out. ,everc001,0,
+offej001 to 2B. ,21,1,garcn001,offej001,,,3,18,BBFX,colob001,0,0,garcn001 singles. ,garcn001,0,
+,02,1,garcn001,offej001,,,4,22,CSFS,colob001,1,0,oleat001 strikes out. ,oleat001,0,
+,20,1,,,,,5,3,BBX,ohkat001,1,0,,loftk001,1,P
+,32,1,vizqo001,,,,6,9,BCBBCX,ohkat001,0,0,vizqo001 singles. ,vizqo001,1,
+vizqo001 to 2B. ,22,1,alomr001,vizqo001,,,7,14,BCBFX,ohkat001,0,0,alomr001 singles. ,alomr001,1,
+,12,1,alomr001,vizqo001,,,8,18,BCFS,ohkat001,1,0,ramim002 strikes out. ,ramim002,1,
+,22,1,alomr001,vizqo001,,,9,25,CFFBFBS,ohkat001,1,0,thomj002 strikes out. ,thomj002,1,
+,11,2,,,,,10,25,BCX,colob001,1,0,,bichd001,0,P
+,31,2,daubb001,,,,11,30,CBBBB,colob001,0,0,daubb001 walks. ,daubb001,0,
+,22,2,daubb001,,,,12,37,BBCCFFC,colob001,1,0,varij001 strikes out. ,varij001,0,
+daubb001 to 2B. ,31,2,merll001,daubb001,,,13,42,BBCBB,colob001,0,0,merll001 walks. ,merll001,0,
+,22,2,merll001,daubb001,,,14,47,CCBBX,colob001,1,0,,nixot001,0,F
+,02,2,,,,,15,29,CFFX,ohkat001,1,0,,segud001,1,P
+,32,2,frymt001,,,,16,35,CBSBBB,ohkat001,0,0,frymt001 walks. ,frymt001,1,
+frymt001 scores. ,11,2,,,,,17,38,BSX,ohkat001,0,2,branr001 homers. ,branr001,1,
+,00,2,,,,,18,39,X,ohkat001,1,0,,diaze002,1,F
+,11,2,loftk001,,,,19,42,CBX,ohkat001,0,0,loftk001 singles. ,loftk001,1,
+,00,2,,loftk001,,vizqo001,20,43,B,ohkat001,0,0,loftk001 steals 2B. ,vizqo001,1,
+loftk001 scores. ,21,2,vizqo001,,,,21,47,BCBX,ohkat001,0,1,vizqo001 singles. ,vizqo001,1,
+,22,2,vizqo001,,,,22,52,BCBCX,ohkat001,1,0,alomr001 grounds out. ,alomr001,1,G
+,00,3,,,,,23,48,X,colob001,1,0,,offej001,0,F
+,22,3,,everc001,,,24,53,CBBCX,colob001,0,0,everc001 doubles. ,everc001,0,
+,22,3,,everc001,,,25,58,FBFBC,colob001,1,0,garcn001 strikes out. ,garcn001,0,
+everc001 scores. ,12,3,,oleat001,,,26,63,SFFBX,colob001,0,1,oleat001 doubles. ,oleat001,0,
+,01,3,,oleat001,,,27,65,FX,colob001,1,0,,bichd001,0,
+,01,3,,,,,28,54,CX,ohkat001,1,0,,ramim002,1,F
+,32,3,thomj002,,,,29,60,CCBBBB,ohkat001,0,0,thomj002 walks. ,thomj002,1,
+,01,3,thomj002,,,,30,62,FX,ohkat001,1,0,,segud001,1,L
+,00,3,thomj002,,,,31,63,X,ohkat001,1,0,,frymt001,1,P
+,12,4,,,,,32,69,CFBX,colob001,1,0,,daubb001,0,
+,12,4,,,,,33,73,CFBS,colob001,1,0,varij001 strikes out. ,varij001,0,
+,00,4,merll001,,,,34,74,X,colob001,0,0,merll001 singles. ,merll001,0,
+,21,4,merll001,,,,35,78,BBSX,colob001,1,0,,nixot001,0,P
+,32,4,,,,,36,70,BCFBBFC,ohkat001,1,0,branr001 strikes out. ,branr001,1,
+,02,4,diaze002,,,,37,73,CSX,ohkat001,0,0,diaze002 singles. ,diaze002,1,
+,01,4,diaze002,,,,38,75,CX,ohkat001,1,0,,loftk001,1,P
+,21,4,,diaze002,,vizqo001,39,79,BSBB,ohkat001,0,0,diaze002 steals 2B. ,vizqo001,1,
+,31,4,vizqo001,diaze002,,,40,84,BSBBB,ohkat001,0,0,vizqo001 walks. ,vizqo001,1,
+diaze002 to 3B. vizqo001 to 2B. ,32,4,alomr001,vizqo001,diaze002,,41,93,BBCBFFFFB,ohkat001,0,0,alomr001 walks. ,alomr001,1,
+diaze002 scores. vizqo001 scores. alomr001 scores. ,30,4,,ramim002,,,42,97,BBBX,ohkat001,0,3,ramim002 doubles. ,ramim002,1,
+,10,4,,ramim002,,,44,2,BX,fassj001,1,0,,thomj002,1,F
+,32,5,,,,,45,84,BBCCBX,colob001,1,0,,offej001,0,F
+,31,5,everc001,,,,46,89,BCBBB,colob001,0,0,everc001 walks. ,everc001,0,
+everc001 to 3B. garcn001 to 2B. ,00,5,,garcn001,everc001,,47,90,X,colob001,0,0,garcn001 hits into a fielder's choice. ,garcn001,0,
+everc001 scores. ,21,5,,garcn001,,,48,94,FBBX,colob001,1,1,oleat001 grounds out. ,oleat001,0,G
+,22,5,,garcn001,,,49,100,BSFBFX,colob001,1,0,,bichd001,0,L
+,22,5,,,,,50,7,SSBBX,fassj001,1,0,segud001 grounds out. ,segud001,1,G
+,22,5,,,,,51,12,BFBCS,fassj001,1,0,frymt001 strikes out. ,frymt001,1,
+,00,5,branr001,,,,52,13,X,fassj001,0,0,branr001 singles. ,branr001,1,
+,32,5,branr001,,,,53,19,FFBBBS,fassj001,1,0,diaze002 strikes out. ,diaze002,1,
+,12,6,,,,,54,104,BCCS,colob001,1,0,daubb001 strikes out. ,daubb001,0,
+,21,6,,,,,55,108,FBBX,colob001,0,1,varij001 homers. ,varij001,0,
+,01,6,,,,,56,110,CX,colob001,1,0,merll001 grounds out. ,merll001,0,G
+,22,6,,,,,57,116,CCBBFX,colob001,1,0,,nixot001,0,P
+,30,6,loftk001,,,,59,4,BBBB,carrh001,0,0,loftk001 walks. ,loftk001,1,
+,11,6,,,,vizqo001,60,7,CBB,carrh001,1,0,loftk001 caught stealing. ,vizqo001,1,
+,22,6,,,,,61,12,CBBFC,carrh001,1,0,vizqo001 strikes out. ,vizqo001,1,
+,12,6,,,,,62,16,BCFS,carrh001,1,0,alomr001 strikes out. ,alomr001,1,
+,00,7,,,,,63,117,X,colob001,1,0,offej001 grounds out. ,offej001,0,G
+,32,7,,,,,64,124,BBCSBFX,colob001,1,0,everc001 grounds out. ,everc001,0,G
+,00,7,,,,,65,125,X,colob001,1,0,,garcn001,0,F
+,32,7,,,,,66,23,BCBFBFX,carrh001,0,1,ramim002 homers. ,ramim002,1,
+,31,7,thomj002,,,,67,28,BSBBB,carrh001,0,0,thomj002 walks. ,thomj002,1,
+thomj002 scores. ,21,7,,,,,68,32,BFBX,carrh001,0,2,segud001 homers. ,segud001,1,
+,32,7,frymt001,,,,70,6,BBBCSX,lee-s001,0,0,frymt001 singles. ,frymt001,1,
+,02,7,frymt001,,,,72,9,SFX,lee-s001,1,0,,cabrj002,1,F
+frymt001 to 2B. ,22,7,diaze002,frymt001,,,73,16,CFFBFBX,lee-s001,0,0,diaze002 singles. ,diaze002,1,
+frymt001 to 3B. diaze002 to 2B. ,02,7,loftk001,diaze002,frymt001,,74,19,CCH,lee-s001,0,0,loftk001 hit by pitch. ,loftk001,1,
+frymt001 scores. diaze002 to 3B. ,20,7,robed001,,diaze002,,76,22,BBX,lee-s001,1,1,vizqo001 hits sacrifice fly. ,vizqo001,1,
+robed001 to 2B. ,31,7,alomr001,robed001,diaze002,,78,5,BCBBB,crour001,0,0,alomr001 walks. ,alomr001,1,
+,00,7,alomr001,robed001,diaze002,,79,6,X,crour001,1,0,,ramim002,1,P
+,02,8,,,,,84,3,FSX,rincr001,1,0,oleat001 grounds out. ,oleat001,0,G
+,01,8,,,,,85,5,CX,rincr001,1,0,,bichd001,0,F
+,00,8,,,,,87,6,X,rincr001,1,0,,alcai001,0,P
+,10,8,,,,,92,2,BX,crawp001,1,0,,thomj002,1,P
+,32,8,,,,,93,10,CFFBBBFX,crawp001,1,0,,segud001,1,F
+,00,8,,,,,94,11,X,crawp001,1,0,frymt001 grounds out. ,frymt001,1,G
+,12,9,,,,,96,4,BSFC,wickb001,1,0,hatts001 strikes out. ,hatts001,0,
+,02,9,,,,,98,7,SFS,wickb001,1,0,brogr001 strikes out. ,brogr001,0,
+,31,9,nixot001,,,,99,12,BBBCB,wickb001,0,0,nixot001 walks. ,nixot001,0,
+,01,9,nixot001,,,,100,14,CX,wickb001,1,0,,offej001,0,F

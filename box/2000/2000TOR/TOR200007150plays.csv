@@ -1,0 +1,74 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,02,1,,,,,0,4,CFFX,welld001,1,0,,gland001,0,F
+,11,1,,,,,1,7,FBX,welld001,1,0,gantr001 grounds out. ,gantr001,0,G
+,02,1,,,,,2,10,CCS,welld001,1,0,abreb001 strikes out. ,abreb001,0,
+,11,1,,,,,3,3,BSX,chenb001,1,0,stews002 grounds out. ,stews002,1,G
+,02,1,,,,,4,6,CFX,chenb001,1,0,,grebc001,1,F
+,11,1,,,,,5,9,BSX,chenb001,1,0,mondr002 grounds out. ,mondr002,1,G
+,12,2,,,,,6,14,FSBX,welld001,0,1,roles001 homers. ,roles001,0,
+,22,2,,,,,7,21,BBCFFFX,welld001,1,0,liebm001 grounds out. ,liebm001,0,G
+,20,2,,,,,8,24,BBX,welld001,1,0,burrp001 grounds out. ,burrp001,0,G
+,00,2,,,,,9,25,X,welld001,1,0,,jordk001,0,L
+,02,2,,,,,10,13,FCFX,chenb001,1,0,delgc001 grounds out. ,delgc001,1,G
+,20,2,batit001,,,,11,16,BBX,chenb001,0,0,batit001 singles. ,batit001,1,
+batit001 to 3B. ,10,2,fullb001,,batit001,,12,18,BX,chenb001,0,0,fullb001 singles. ,fullb001,1,
+,00,2,fullb001,,batit001,,13,19,X,chenb001,1,0,,cruzj004,1,F
+,31,2,fullb001,,batit001,,14,24,BBBCX,chenb001,1,0,,fletd001,1,F
+,11,3,,,,,15,28,BFX,welld001,1,0,,huntb001,0,P
+,21,3,,,,,16,32,BCBX,welld001,1,0,ariaa001 grounds out. ,ariaa001,0,G
+,22,3,,,,,17,37,BBCFX,welld001,1,0,,gland001,0,F
+,12,3,,,,,18,28,BFCS,chenb001,1,0,bushh001 strikes out. ,bushh001,1,
+,22,3,,,,,19,34,CBFFBS,chenb001,1,0,stews002 strikes out. ,stews002,1,
+,32,3,grebc001,,,,20,40,CBBFBX,chenb001,0,0,grebc001 singles. ,grebc001,1,
+,32,3,grebc001,,,,21,47,SBFBBFX,chenb001,1,0,mondr002 grounds out. ,mondr002,1,G
+,22,4,gantr001,,,,22,42,SBFBX,welld001,0,0,gantr001 singles. ,gantr001,0,
+,10,4,gantr001,,,,23,44,BX,welld001,1,0,,abreb001,0,F
+gantr001 scores. ,00,4,,roles001,,,24,45,X,welld001,0,1,roles001 doubles. ,roles001,0,
+,02,4,liebm001,roles001,,,25,48,SSH,welld001,0,0,liebm001 hit by pitch. ,liebm001,0,
+,02,4,liebm001,roles001,,,26,51,CFS,welld001,1,0,burrp001 strikes out. ,burrp001,0,
+roles001 scores. liebm001 to 2B. ,22,4,jordk001,liebm001,,,27,58,CFBFBFX,welld001,0,1,jordk001 singles. ,jordk001,0,
+,11,4,jordk001,liebm001,,,28,61,SBX,welld001,1,0,,huntb001,0,P
+,32,4,,,,,29,53,BBCBFC,chenb001,1,0,delgc001 strikes out. ,delgc001,1,
+,12,4,,,,,30,57,FFBX,chenb001,1,0,,batit001,1,F
+,00,4,,,,,31,58,X,chenb001,1,0,,fullb001,1,F
+,01,5,,ariaa001,,,32,63,CX,welld001,0,0,ariaa001 doubles. ,ariaa001,0,
+ariaa001 to 3B. ,10,5,gland001,,ariaa001,,33,65,BX,welld001,0,0,gland001 singles. ,gland001,0,
+ariaa001 scores. ,10,5,gland001,,,,34,67,BX,welld001,1,1,gantr001 hits sacrifice fly. ,gantr001,0,
+,10,5,gland001,,,,35,69,BX,welld001,1,0,,abreb001,0,F
+,12,5,gland001,,,,36,73,BCFS,welld001,1,0,roles001 strikes out. ,roles001,0,
+,20,5,,,,,37,61,BBX,chenb001,1,0,,cruzj004,1,P
+,10,5,,,,,38,63,BX,chenb001,1,0,,fletd001,1,L
+,11,5,,,,,39,66,BFX,chenb001,1,0,bushh001 grounds out. ,bushh001,1,G
+,02,6,,,,,40,76,CFC,welld001,1,0,liebm001 strikes out. ,liebm001,0,
+,32,6,burrp001,,,,41,82,FBBBFB,welld001,0,0,burrp001 walks. ,burrp001,0,
+,00,6,,,,,42,83,X,welld001,2,0,Double Play. ,jordk001,0,
+,10,6,,,,,44,2,BX,schrs001,1,0,stews002 grounds out. ,stews002,1,G
+,31,6,grebc001,,,,45,7,BBBCB,schrs001,0,0,grebc001 walks. ,grebc001,1,
+grebc001 to 3B. ,21,6,,mondr002,grebc001,,46,11,SBBX,schrs001,0,0,mondr002 doubles. ,mondr002,1,
+grebc001 scores. mondr002 to 3B. ,21,6,,,mondr002,,47,15,CBBX,schrs001,1,1,delgc001 grounds out. ,delgc001,1,G
+mondr002 scores. ,10,6,,,,,48,17,BX,schrs001,0,2,batit001 homers. ,batit001,1,
+,12,6,,,,,50,4,CBSS,vosbe001,1,0,fullb001 strikes out. ,fullb001,1,
+,10,7,,,,,51,85,BX,welld001,1,0,,huntb001,0,
+,02,7,,,,,52,88,CSS,welld001,1,0,ariaa001 strikes out. ,ariaa001,0,
+,22,7,gland001,,,,53,93,CBFBX,welld001,0,0,gland001 singles. ,gland001,0,
+gland001 scores. ,11,7,,,,,54,96,SBX,welld001,0,2,gantr001 homers. ,gantr001,0,
+,12,7,,,,,55,100,CFBX,welld001,1,0,abreb001 grounds out. ,abreb001,0,G
+,00,7,,,,,56,5,X,vosbe001,1,0,cruzj004 grounds out. ,cruzj004,1,G
+,32,7,,,,,57,12,CBBBFFX,vosbe001,1,0,fletd001 grounds out. ,fletd001,1,G
+,11,7,,,,,59,3,FBX,brocc001,1,0,,bushh001,1,F
+,22,8,roles001,,,,61,5,CBBFX,quanp001,0,0,roles001 singles. ,roles001,0,
+,10,8,,roles001,,liebm001,62,7,BB,quanp001,0,0,roles001 steals 2B. ,liebm001,0,
+,31,8,liebm001,roles001,,,63,12,BBCBB,quanp001,0,0,liebm001 walks. ,liebm001,0,
+roles001 scores. liebm001 to 3B. burrp001 out. ,00,8,,,liebm001,,64,13,X,quanp001,1,1,burrp001 singles. ,burrp001,0,
+,00,8,,,liebm001,,65,14,X,quanp001,1,0,,jordk001,0,L
+,22,8,,,liebm001,,66,19,CCBBX,quanp001,1,0,huntb001 grounds out. ,huntb001,0,G
+,01,8,,,,,67,5,FX,brocc001,1,0,stews002 grounds out. ,stews002,1,G
+,00,8,,,,,68,6,X,brocc001,1,0,grebc001 grounds out. ,grebc001,1,G
+,21,8,,,,,69,10,BFBX,brocc001,1,0,mondr002 grounds out. ,mondr002,1,G
+,02,9,,,,,70,22,CFC,quanp001,1,0,ariaa001 strikes out. ,ariaa001,0,
+,00,9,,gland001,,,71,23,X,quanp001,0,0,gland001 doubles. ,gland001,0,
+,22,9,,gland001,,,72,28,CFBBC,quanp001,1,0,gantr001 strikes out. ,gantr001,0,
+,00,9,,gland001,,,73,29,X,quanp001,1,0,,abreb001,0,F
+,20,9,,,,,75,3,BBX,wardb001,1,0,delgc001 grounds out. ,delgc001,1,G
+,21,9,,,,,76,7,BCBX,wardb001,1,0,,batit001,1,P
+,02,9,,,,,77,10,CSS,wardb001,1,0,fullb001 strikes out. ,fullb001,1,

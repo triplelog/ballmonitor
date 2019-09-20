@@ -1,0 +1,122 @@
+version,2
+info,visteam,ANA
+info,hometeam,DET
+info,site,DET05
+info,date,2000/09/06
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,froeb901
+info,ump1b,wintm901
+info,ump2b,welkb901
+info,ump3b,culbf901
+info,pitches,pitches
+info,temp,69
+info,winddir,tolf
+info,windspeed,7
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,152
+info,attendance,20937
+info,wp,schos001
+info,lp,spars001
+info,save,perct001
+start,erstd001,"Darin Erstad",0,1,7
+start,spies001,"Scott Spiezio",0,2,3
+start,vaugm001,"Mo Vaughn",0,3,10
+start,salmt001,"Tim Salmon",0,4,9
+start,andeg001,"Garret Anderson",0,5,8
+start,glaut001,"Troy Glaus",0,6,5
+start,kenna001,"Adam Kennedy",0,7,4
+start,molib001,"Ben Molina",0,8,2
+start,stock001,"Kevin Stocker",0,9,6
+start,schos001,"Scott Schoeneweis",0,0,1
+start,easld001,"Damion Easley",1,1,4
+start,encaj001,"Juan Encarnacion",1,2,8
+start,higgb001,"Bobby Higginson",1,3,7
+start,palmd002,"Dean Palmer",1,4,10
+start,magew001,"Wendell Magee",1,5,9
+start,cruzd001,"Deivi Cruz",1,6,6
+start,ausmb001,"Brad Ausmus",1,7,2
+start,macij001,"Jose Macias",1,8,5
+start,halts001,"Shane Halter",1,9,3
+start,spars001,"Steve Sparks",1,0,1
+play,1,0,erstd001,12,CBFX,43/G
+play,1,0,spies001,11,CBX,3/G
+play,1,0,vaugm001,22,BBCSS,K
+play,1,1,easld001,02,CCS,K
+play,1,1,encaj001,10,BX,63/G
+play,1,1,higgb001,32,BFFBFBX,43/G
+play,2,0,salmt001,21,CBBX,3/FL
+play,2,0,andeg001,00,X,S9
+play,2,0,glaut001,20,BBX,D7/7S.1-3
+play,2,0,kenna001,11,SBX,FC3.3XH(32);2-3;B-1#
+play,2,0,molib001,12,CFBFFFX,7/F7
+play,2,1,palmd002,22,FBFBFC,K/C
+play,2,1,magew001,12,FBCS,K
+play,2,1,cruzd001,21,BBFX,8/F8
+play,3,0,stock001,31,BBBCB,W
+play,3,0,erstd001,21,CBBX,4/L4
+play,3,0,spies001,32,BBCBFFX,D9/9S.1-3
+play,3,0,vaugm001,00,X,43/G.3-H;2-3
+play,3,0,salmt001,32,BSBSBC,K/C
+play,3,1,ausmb001,22,BBCCX,S9/9S
+play,3,1,macij001,22,CCBBX,5/L5
+play,3,1,halts001,11,CBX,64(1)3/GDP
+play,4,0,andeg001,00,X,7/F7
+play,4,0,glaut001,21,BCBX,8/F8
+play,4,0,kenna001,00,X,S
+play,4,0,molib001,10,BX,9/L9
+play,4,1,easld001,32,CBBCBX,63/G
+play,4,1,encaj001,10,BX,31/G
+play,4,1,higgb001,32,BFBFBX,13/G
+play,5,0,stock001,10,BX,43/G
+play,5,0,erstd001,12,CBFX,8/F8
+play,5,0,spies001,10,BX,S9/9S
+play,5,0,vaugm001,32,BBFBFB,W.1-2
+play,5,0,salmt001,10,BX,64(1)/FO.2-3
+play,5,1,palmd002,11,BSX,9/F9
+play,5,1,magew001,32,BCBSBFX,13/G
+play,5,1,cruzd001,01,CX,3/FL
+play,6,0,andeg001,01,CX,3/G
+play,6,0,glaut001,21,BSBX,D7/7D
+play,6,0,kenna001,01,CX,3/G.2-3
+play,6,0,molib001,12,BFSX,9/F9
+play,6,1,ausmb001,10,BX,9/L9
+play,6,1,macij001,22,BBCFFC,K/C
+play,6,1,halts001,00,X,63/G
+play,7,0,stock001,12,BFCX,13/G
+play,7,0,erstd001,02,CCS,K
+play,7,0,spies001,11,BCX,4/P4
+play,7,1,easld001,32,CBCBBB,W
+play,7,1,encaj001,21,BFBX,4/P4
+play,7,1,higgb001,20,BBX,S9.1-3
+play,7,1,palmd002,32,BBSFBB,W.1-2
+play,7,1,magew001,32,BCBFBFS,K
+play,7,1,cruzd001,10,BX,65(2)/FO.1-2
+play,8,0,vaugm001,31,BBSBX,9/L9
+play,8,0,salmt001,31,BBBCX,6/P6
+play,8,0,andeg001,21,BSBX,S9
+play,8,0,glaut001,31,BCBBC,CS2(24)
+play,8,1,ausmb001,21,BCBX,13/G
+play,8,1,macij001,02,CSFX,53/G
+play,8,1,halts001,12,CFBS,K
+play,9,0,glaut001,00,,NP
+sub,pattd001,"Danny Patterson",1,0,1
+play,9,0,glaut001,10,BX,D8
+play,9,0,kenna001,00,X,13/SH.2-3
+play,9,0,molib001,00,S,CSH(251)
+play,9,0,molib001,02,SCX,S
+play,9,0,stock001,12,CBCX,43/G
+play,9,1,easld001,00,,NP
+sub,perct001,"Troy Percival",0,0,1
+play,9,1,easld001,32,BFBFBB,W
+play,9,1,encaj001,11,CBX,14/SH.1-2
+play,9,1,higgb001,00,X,9/F9.2-3
+play,9,1,palmd002,12,CFBS,K
+data,er,schos001,0
+data,er,perct001,0
+data,er,spars001,1
+data,er,pattd001,0

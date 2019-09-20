@@ -1,0 +1,158 @@
+version,2
+info,visteam,BAL
+info,hometeam,DET
+info,site,DET05
+info,date,2000/08/10
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,meric901
+info,ump1b,ripps901
+info,ump2b,gibsg901
+info,ump3b,drakr901
+info,pitches,pitches
+info,temp,75
+info,winddir,tolf
+info,windspeed,12
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,171
+info,attendance,40093
+info,wp,spars001
+info,lp,ponss001
+info,save,
+start,andeb001,"Brady Anderson",0,1,7
+start,moram002,"Melvin Mora",0,2,6
+start,deshd001,"Delino DeShields",0,3,4
+start,bellj002,"Albert Belle",0,4,10
+start,conij001,"Jeff Conine",0,5,9
+start,richc001,"Chris Richard",0,6,3
+start,myerg001,"Greg Myers",0,7,2
+start,minor001,"Ryan Minor",0,8,5
+start,matol001,"Luis Matos",0,9,8
+start,ponss001,"Sidney Ponson",0,0,1
+start,beckr002,"Rich Becker",1,1,8
+start,mcmib001,"Billy McMillon",1,2,9
+start,higgb001,"Bobby Higginson",1,3,7
+start,gonzj002,"Juan Gonzalez",1,4,10
+start,cruzd001,"Deivi Cruz",1,5,6
+start,easld001,"Damion Easley",1,6,4
+start,macij001,"Jose Macias",1,7,5
+start,halts001,"Shane Halter",1,8,3
+start,cardj001,"Javier Cardona",1,9,2
+start,spars001,"Steve Sparks",1,0,1
+play,1,0,andeb001,02,CFC,K/C
+play,1,0,moram002,30,BBBX,8/L8
+play,1,0,deshd001,22,CBCBX,S9
+play,1,0,bellj002,12,CFBFX,53/G
+play,1,1,beckr002,01,CX,S7
+play,1,1,mcmib001,12,FFFBX,53/G.1-2
+play,1,1,higgb001,32,BBCBFX,S9.2-H
+play,1,1,gonzj002,02,FSS,K
+play,1,1,cruzd001,01,SX,6/L6
+play,2,0,conij001,30,BBBB,W
+play,2,0,richc001,01,CX,23/G.1-2
+play,2,0,myerg001,31,BBFBX,7/F7
+play,2,0,minor001,12,BFSS,K
+play,2,1,easld001,00,X,S
+play,2,1,macij001,00,X,7/F7
+play,2,1,halts001,32,BBFFFBFS,K+SB2
+play,2,1,cardj001,32,BBBCFS,K
+play,3,0,matol001,20,BBX,43/G
+play,3,0,andeb001,20,BBX,S8
+play,3,0,moram002,22,CFBBX,54(1)/FO
+play,3,0,deshd001,31,BBCBX,HR/9.1-H
+play,3,0,bellj002,01,CX,3/FL
+play,3,1,beckr002,32,BBCFBB,W
+play,3,1,mcmib001,01,CX,S9.1-3
+play,3,1,higgb001,10,BX,S9.3-H;1-2
+play,3,1,gonzj002,12,BFSX,S6.2-H(E6/TH);1-3;B-2
+play,3,1,cruzd001,00,X,8/SF.3-H;2-3
+play,3,1,easld001,32,BCFFBBB,W
+play,3,1,macij001,00,X,S9.3-H;1-2
+play,3,1,halts001,02,CLX,9/F9.2-3
+play,3,1,cardj001,21,BCBX,3/FL
+play,4,0,conij001,00,X,13/G
+play,4,0,richc001,12,BFFX,S8
+play,4,0,myerg001,20,BBX,16(1)3/GDP
+play,4,1,beckr002,32,BCBFBB,W
+play,4,1,mcmib001,12,CBFX,8/F8
+play,4,1,higgb001,22,BBFFS,K
+play,4,1,gonzj002,00,X,D9.1-H
+play,4,1,cruzd001,10,BX,8/F8
+play,5,0,minor001,12,FBFS,K
+play,5,0,matol001,32,FBSBBX,8/F8
+play,5,0,andeb001,10,BX,7/F7
+play,5,1,easld001,00,,NP
+sub,johnj007,"Jason Johnson",0,0,1
+play,5,1,easld001,32,BFFBFBB,W
+play,5,1,macij001,20,BBC,SB2
+play,5,1,macij001,21,BBCX,S5/BG5.2-3
+play,5,1,halts001,22,CFFBFBX,E5/G.3-H;1-2
+play,5,1,cardj001,12,SFBS,K
+play,5,1,beckr002,00,X,S9.2-H;1-3
+play,5,1,mcmib001,12,FBFS,K
+play,5,1,higgb001,12,BFFX,D/78D.3-H(UR);1-H(UR)
+play,5,1,gonzj002,01,CX,63/G
+play,6,0,moram002,21,BBCX,E5/G
+play,6,0,deshd001,11,BCX,9/F9
+play,6,0,bellj002,11,BFX,8/F8
+play,6,0,conij001,20,BBX,3/G
+play,6,1,cruzd001,32,BBFBCFFX,8/F8
+play,6,1,easld001,12,CCBX,D/78D
+play,6,1,macij001,00,,NP
+sub,hubbt001,"Trenidad Hubbard",0,1,7
+play,6,1,macij001,10,BX,7/F7
+play,6,1,halts001,31,BSBBB,W
+play,6,1,cardj001,00,X,64(1)/FO.2-3
+play,7,0,richc001,01,CX,31/G
+play,7,0,myerg001,00,X,3/G
+play,7,0,minor001,02,CFC,K/C
+play,7,1,beckr002,00,,NP
+sub,coffi001,"Ivanon Coffie",0,2,6
+play,7,1,beckr002,00,,NP
+sub,lewim001,"Mark Lewis",0,3,4
+play,7,1,beckr002,00,,NP
+sub,ryanb001,"B.J. Ryan",0,0,1
+play,7,1,beckr002,31,CBBBB,W
+play,7,1,mcmib001,01,CX,64(1)/FO
+play,7,1,higgb001,31,BCBBB,W.1-2
+play,7,1,gonzj002,00,,NP
+sub,magew001,"Wendell Magee",1,3,12
+play,7,1,gonzj002,00,X,S7.2-H;1-H(E7);B-2
+play,7,1,cruzd001,32,BBBCFC,K/C
+play,7,1,easld001,20,BBX,HR/7.2-H
+play,7,1,macij001,01,FX,3/P3
+play,8,0,matol001,00,,NP
+sub,magew001,"Wendell Magee",1,3,7
+play,8,0,matol001,00,,NP
+sub,alled001,"Dusty Allen",1,8,3
+play,8,0,matol001,00,X,7/F7
+play,8,0,hubbt001,00,X,8/F8
+play,8,0,coffi001,00,,NP
+sub,nitkc001,"C.J. Nitkowski",1,0,1
+play,8,0,coffi001,02,CSFFX,4/P4
+play,8,1,alled001,00,,NP
+sub,mcelc001,"Chuck McElroy",0,0,1
+play,8,1,alled001,22,SBSFBS,K
+play,8,1,cardj001,02,SFFX,9/F9
+play,8,1,beckr002,01,CX,31/G
+play,9,0,lewim001,00,,NP
+sub,jonet003,"Todd Jones",1,0,1
+play,9,0,lewim001,01,CX,D7
+play,9,0,bellj002,02,CFFX,4/P4
+play,9,0,conij001,12,BSFX,S8/8S.2-3
+play,9,0,richc001,12,FBFFFX,7/SF.3-H
+play,9,0,myerg001,00,,NP
+sub,cruzn001,"Nelson Cruz",1,0,1
+play,9,0,myerg001,00,X,53/G
+data,er,ponss001,6
+data,er,johnj007,2
+data,er,ryanb001,4
+data,er,mcelc001,0
+data,er,spars001,2
+data,er,nitkc001,0
+data,er,jonet003,1
+data,er,cruzn001,0

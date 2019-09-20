@@ -1,0 +1,131 @@
+version,2
+info,visteam,SDN
+info,hometeam,ARI
+info,site,PHO01
+info,date,2000/05/05
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,vanvm901
+info,ump1b,reedr901
+info,ump2b,wendh902
+info,ump3b,clara901
+info,pitches,pitches
+info,temp,90
+info,winddir,rtol
+info,windspeed,4
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,148
+info,attendance,42297
+info,wp,johnr005
+info,lp,hitcs001
+info,save,
+start,jackd003,"Damian Jackson",0,1,6
+start,owene001,"Eric Owens",0,2,9
+start,roskj001,"John Roskos",0,3,7
+start,nevip001,"Phil Nevin",0,4,5
+start,sprae001,"Ed Sprague",0,5,3
+start,boonb002,"Bret Boone",0,6,4
+start,hernc001,"Carlos A. Hernandez",0,7,2
+start,river002,"Ruben Rivera",0,8,8
+start,hitcs001,"Sterling Hitchcock",0,9,1
+start,friah001,"Hanley Frias",1,1,6
+start,bellj001,"Jay Bell",1,2,4
+start,gonzl001,"Luis Gonzalez",1,3,7
+start,colbg001,"Greg Colbrunn",1,4,3
+start,finls001,"Steve Finley",1,5,8
+start,gilkb001,"Bernard Gilkey",1,6,9
+start,milld002,"Damian Miller",1,7,2
+start,klasd001,"Danny Klassen",1,8,5
+start,johnr005,"Randy Johnson",1,9,1
+play,1,0,jackd003,22,BBCSFS,K
+play,1,0,owene001,12,CBSC,K/C
+play,1,0,roskj001,10,BX,8/F8
+play,1,1,friah001,22,BCCFFBX,HR/78
+play,1,1,bellj001,10,BX,9/F9S
+play,1,1,gonzl001,01,CX,8/F8
+play,1,1,colbg001,30,BBBB,W
+play,1,1,finls001,01,CH,HP.1-2
+play,1,1,gilkb001,22,CBCBX,9/F9
+play,2,0,nevip001,22,SCBFFBFFS,K
+play,2,0,sprae001,12,CBCFS,K
+play,2,0,boonb002,31,BSBBB,W
+play,2,0,hernc001,00,X,3/G
+play,2,1,milld002,10,BX,HR/78
+play,2,1,klasd001,11,CBX,HR/7
+play,2,1,johnr005,12,SBFH,HP
+play,2,1,friah001,01,CX,3/FL
+play,2,1,bellj001,32,CBBCBFX,8/F8D
+play,2,1,gonzl001,00,X,43/G
+play,3,0,river002,10,BX,4/FL
+play,3,0,hitcs001,32,BCCFBBS,K
+play,3,0,jackd003,31,BBBCB,W
+play,3,0,owene001,02,FSS,K
+play,3,1,colbg001,20,BBX,HR/7
+play,3,1,finls001,10,BX,43/G
+play,3,1,gilkb001,00,X,E5/TH1.B-2
+play,3,1,milld002,32,CBFBBX,8(B)6(2)/LDP
+play,4,0,roskj001,12,BCCFS,K
+play,4,0,nevip001,12,CCBS,K
+play,4,0,sprae001,00,X,63/G
+play,4,1,klasd001,20,BBX,9/F9
+play,4,1,johnr005,12,BFSS,K
+play,4,1,friah001,10,BX,63/G
+play,5,0,boonb002,12,SCFBS,K
+play,5,0,hernc001,00,X,63/G
+play,5,0,river002,32,SBBSBS,K
+play,5,1,bellj001,32,FBBSBB,W
+play,5,1,gonzl001,01,CX,8/F8
+play,5,1,colbg001,00,B,SB2
+play,5,1,colbg001,31,BBBCX,7/F7
+play,5,1,finls001,31,BBCBX,9/F9
+play,6,0,hitcs001,00,,NP
+sub,gomec001,"Chris Gomez",0,9,11
+play,6,0,gomec001,00,X,S8
+play,6,0,jackd003,11,CBX,8/F8
+play,6,0,owene001,22,FBCFBX,E6/G.1-2
+play,6,0,roskj001,00,X,E6/G.2-3;1-2
+play,6,0,nevip001,31,FBBBB,W.3-H(UR);2-3;1-2
+play,6,0,sprae001,11,BCX,S7.3-H(UR);2-3;1-2
+play,6,0,boonb002,11,CBX,64(1)3/GDP
+play,6,1,gilkb001,00,,NP
+sub,palav001,"Vicente Palacios",0,9,1
+play,6,1,gilkb001,22,CFBBFS,K
+play,6,1,milld002,32,BBSBFFB,W
+play,6,1,klasd001,11,FBX,8/F8D
+play,6,1,johnr005,01,CX,S9.1-2
+play,6,1,friah001,22,FBFBS,K
+play,7,0,hernc001,22,BCSFBFFFX,7/F7
+play,7,0,river002,00,X,9/FL
+play,7,0,palav001,00,,NP
+sub,gonzw001,"Wiki Gonzalez",0,9,11
+play,7,0,gonzw001,12,CFBX,63/G
+play,7,1,bellj001,00,,NP
+sub,almac001,"Carlos Almanzar",0,9,1
+play,7,1,bellj001,12,FFBFX,4/L4
+play,7,1,gonzl001,11,BFX,4/P4
+play,7,1,colbg001,11,BSX,8/F8
+play,8,0,jackd003,12,FFBX,D9/9S
+play,8,0,owene001,21,BBFX,S.2-2
+play,8,0,roskj001,01,SX,54(1)3/GDP.2-3
+play,8,0,nevip001,20,BBX,53/G
+play,8,1,finls001,00,,NP
+sub,walkk001,"Kevin Walker",0,9,1
+play,8,1,finls001,20,BBX,S9
+play,8,1,gilkb001,22,FFBBS,K
+play,8,1,milld002,10,BX,S7.1-2
+play,8,1,klasd001,22,BFCFBX,9/F9.2-3
+play,8,1,johnr005,00,X,S9.3-H;1-2
+play,8,1,friah001,01,FX,3/G
+play,9,0,sprae001,00,X,HR/8
+play,9,0,boonb002,21,BBCX,4/P4
+play,9,0,hernc001,01,CX,63/G
+play,9,0,river002,12,FSBS,K
+data,er,hitcs001,4
+data,er,palav001,0
+data,er,almac001,0
+data,er,walkk001,1
+data,er,johnr005,1

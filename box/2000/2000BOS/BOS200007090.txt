@@ -1,0 +1,136 @@
+version,2
+info,visteam,ATL
+info,hometeam,BOS
+info,site,BOS07
+info,date,2000/07/09
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,buckc901
+info,ump1b,reedr901
+info,ump2b,wendh902
+info,ump3b,clara901
+info,pitches,pitches
+info,temp,79
+info,winddir,tolf
+info,windspeed,20
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,149
+info,attendance,33018
+info,wp,waket001
+info,lp,millk004
+info,save,
+start,veraq001,"Quilvio Veras",0,1,4
+start,jonea002,"Andruw Jones",0,2,8
+start,jonec004,"Chipper Jones",0,3,5
+start,jordb001,"Brian Jordan",0,4,9
+start,galaa001,"Andres Galarraga",0,5,3
+start,joynw001,"Wally Joyner",0,6,10
+start,lopej001,"Javy Lopez",0,7,2
+start,sandr002,"Reggie Sanders",0,8,7
+start,weisw001,"Walt Weiss",0,9,6
+start,millk004,"Kevin Millwood",0,0,1
+start,offej001,"Jose Offerman",1,1,4
+start,fryej001,"Jeff Frye",1,2,9
+start,daubb001,"Brian Daubach",1,3,3
+start,garcn001,"Nomar Garciaparra",1,4,6
+start,everc001,"Carl Everett",1,5,8
+start,oleat001,"Troy O'Leary",1,6,7
+start,burkm001,"Morgan Burkhart",1,7,10
+start,varij001,"Jason Varitek",1,8,2
+start,sprae001,"Ed Sprague",1,9,5
+start,waket001,"Tim Wakefield",1,0,1
+badj,veraq001,R
+play,1,0,veraq001,32,BBBCCC,K/C
+play,1,0,jonea002,01,CX,3/FL
+play,1,0,jonec004,22,FCFBFBX,63/G
+play,1,1,offej001,22,BCBSFX,S7
+play,1,1,fryej001,02,CSFX,46(1)3/GDP
+play,1,1,daubb001,32,BCFBBS,K
+play,2,0,jordb001,10,BX,53/G
+play,2,0,galaa001,10,BX,8/F8
+play,2,0,joynw001,10,BX,S9
+play,2,0,lopej001,02,FFFC,K/C
+play,2,1,garcn001,30,BBBB,W
+play,2,1,everc001,01,CX,4/P4
+play,2,1,oleat001,21,BBFX,S8.1-2
+play,2,1,burkm001,31,BBFBB,W.2-3;1-2
+play,2,1,varij001,00,X,S7.3-H;2-3;1-2
+play,2,1,sprae001,32,BBBCFX,3/FL
+play,2,1,offej001,02,CFX,9/F9
+play,3,0,sandr002,20,BBX,HR/7
+play,3,0,weisw001,30,BBBB,W
+badj,veraq001,R
+play,3,0,veraq001,32,BBBCCFX,9/F9
+play,3,0,jonea002,01,FX,7/F7
+play,3,0,jonec004,00,X,8/F8
+play,3,1,fryej001,01,CX,7/F7
+play,3,1,daubb001,22,FBCBX,5/FL
+play,3,1,garcn001,10,BX,HR/78
+play,3,1,everc001,02,FSC,K/C
+play,4,0,jordb001,12,CFBX,63/G
+play,4,0,galaa001,20,BBX,S8
+play,4,0,joynw001,11,BCX,46(1)3/GDP
+play,4,1,oleat001,31,BBBCX,7/F7
+play,4,1,burkm001,10,BX,S9
+play,4,1,varij001,00,X,S9.1-2
+play,4,1,sprae001,00,X,9/F9
+play,4,1,offej001,21,BFBX,T9.2-H;1-H
+play,4,1,fryej001,11,BFX,6/P6
+play,5,0,lopej001,00,X,S7
+play,5,0,sandr002,32,FFBBBX,8/F8
+play,5,0,weisw001,02,CFB,PB.1-2
+play,5,0,weisw001,12,CFBFX,3/G.2-3
+badj,veraq001,R
+play,5,0,veraq001,12,BSFX,S7.3-H
+play,5,0,jonea002,00,B,SB2
+play,5,0,jonea002,12,BSFS,K
+play,5,1,daubb001,00,X,T8
+play,5,1,garcn001,12,SSBX,HR/78.3-H
+play,5,1,everc001,02,SSX,S8
+play,5,1,oleat001,00,,NP
+sub,chenb001,"Bruce Chen",0,0,1
+play,5,1,oleat001,00,X,7/F7
+play,5,1,burkm001,00,X,6/P6
+play,5,1,varij001,11,FBX,D7.1-H
+play,5,1,sprae001,12,CCBS,K
+play,6,0,jonec004,02,CFX,8/F8
+play,6,0,jordb001,00,X,8/F8
+play,6,0,galaa001,32,SBSBBX,7/F7
+play,6,1,offej001,12,CSFBFFX,63/G
+play,6,1,fryej001,00,X,53/G
+play,6,1,daubb001,12,CBSX,S9
+play,6,1,garcn001,00,X,64(1)/FO
+play,7,0,joynw001,02,CFX,9/F9
+play,7,0,lopej001,00,X,S7
+play,7,0,sandr002,12,CCBX,5/P5
+play,7,0,weisw001,31,FBBBX,43/G
+play,7,1,everc001,00,,NP
+sub,marqj001,"Jason Marquis",0,0,1
+play,7,1,everc001,22,CBSFBX,4/L4
+play,7,1,oleat001,00,X,63/G
+play,7,1,burkm001,31,CBBBX,S9
+play,7,1,varij001,01,CX,3/G
+play,8,0,veraq001,00,,NP
+sub,garcr001,"Rich Garces",1,0,1
+play,8,0,veraq001,22,CCBBS,K
+play,8,0,jonea002,22,CBCFFBX,4/P4
+play,8,0,jonec004,02,CFX,7/F7
+play,8,1,sprae001,10,BX,43/G
+play,8,1,offej001,22,CBBFX,13/G
+play,8,1,fryej001,22,CBSBX,S8
+play,8,1,daubb001,22,CBFBS,K
+play,9,0,jordb001,00,,NP
+sub,lowed001,"Derek Lowe",1,0,1
+play,9,0,jordb001,10,BX,63/G
+play,9,0,galaa001,12,BSCFC,K/C
+play,9,0,joynw001,00,X,13/G
+data,er,millk004,7
+data,er,chenb001,0
+data,er,marqj001,0
+data,er,waket001,2
+data,er,garcr001,0
+data,er,lowed001,0

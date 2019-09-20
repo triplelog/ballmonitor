@@ -1,0 +1,145 @@
+version,2
+info,visteam,DET
+info,hometeam,OAK
+info,site,OAK01
+info,date,2000/08/12
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,barrt901
+info,ump1b,monte901
+info,ump2b,randt901
+info,ump3b,fichm901
+info,pitches,pitches
+info,temp,71
+info,winddir,torf
+info,windspeed,7
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,181
+info,attendance,25713
+info,wp,hudst001
+info,lp,berna001
+info,save,
+start,beckr002,"Rich Becker",0,1,8
+start,mcmib001,"Billy McMillon",0,2,10
+start,higgb001,"Bobby Higginson",0,3,7
+start,gonzj002,"Juan Gonzalez",0,4,9
+start,palmd002,"Dean Palmer",0,5,3
+start,easld001,"Damion Easley",0,6,4
+start,ausmb001,"Brad Ausmus",0,7,2
+start,macij001,"Jose Macias",0,8,5
+start,cruzd001,"Deivi Cruz",0,9,6
+start,berna001,"Adam Bernero",0,0,1
+start,velar001,"Randy Velarde",1,1,4
+start,tejam001,"Miguel Tejada",1,2,6
+start,giamj001,"Jason Giambi",1,3,10
+start,grieb001,"Ben Grieve",1,4,7
+start,longt002,"Terrence Long",1,5,8
+start,stanm002,"Mike Stanley",1,6,3
+start,staim001,"Matt Stairs",1,7,9
+start,chave001,"Eric Chavez",1,8,5
+start,hernr002,"Ramon Hernandez",1,9,2
+start,hudst001,"Tim Hudson",1,0,1
+play,1,0,beckr002,00,X,43/G
+play,1,0,mcmib001,11,CBX,43/G
+play,1,0,higgb001,11,CBX,43/G
+play,1,1,velar001,12,BCSX,63/G
+play,1,1,tejam001,12,CCBX,53/G
+play,1,1,giamj001,22,BBCSFX,8/F8D
+play,2,0,gonzj002,02,CSX,S9
+play,2,0,palmd002,00,X,43/G.1-2
+play,2,0,easld001,00,X,8/F8
+play,2,0,ausmb001,30,BBBB,W
+play,2,0,macij001,12,SBFX,3/G
+play,2,1,grieb001,12,CFBS,K
+play,2,1,longt002,11,CBX,S8/8S
+play,2,1,stanm002,01,CX,D7.1-3
+play,2,1,staim001,02,FCX,7/SF.3-H
+play,2,1,chave001,32,FFBBFBFX,7/F7
+play,3,0,cruzd001,12,CBFX,43/G
+play,3,0,beckr002,00,X,53/G
+play,3,0,mcmib001,12,BFSX,13/G
+play,3,1,hernr002,21,FBBX,63/G
+play,3,1,velar001,20,BBX,8/F8D
+play,3,1,tejam001,32,CBCBBFB,W
+play,3,1,giamj001,32,BBCSFBX,HR/9.1-H
+play,3,1,grieb001,00,X,7/F7
+play,4,0,higgb001,01,FX,4/P4
+play,4,0,gonzj002,00,H,HP
+play,4,0,palmd002,32,CSBBBX,8/F8
+play,4,0,easld001,31,BSBBB,W.1-2
+play,4,0,ausmb001,22,BBCCX,3/G
+play,4,1,longt002,22,CCFFBBX,43/G
+play,4,1,stanm002,31,BBBCB,W
+play,4,1,staim001,02,CCX,46(1)3/GDP
+play,5,0,macij001,01,CX,2/FL
+play,5,0,cruzd001,21,BBCX,3/G
+play,5,0,beckr002,22,BSSBS,K
+play,5,1,chave001,22,CBFFBX,S8/8S
+play,5,1,hernr002,11,BFX,4(1)3/GDP
+play,5,1,velar001,11,CBX,S7
+play,5,1,tejam001,00,X,D7.1-H
+play,5,1,giamj001,32,CCBBBFB,W
+play,5,1,grieb001,00,,NP
+sub,nitkc001,"C.J. Nitkowski",0,0,1
+play,5,1,grieb001,22,CBBFS,K
+play,6,0,mcmib001,11,CBX,3/FL
+play,6,0,higgb001,32,BBBCFS,K
+play,6,0,gonzj002,12,SFBS,K
+play,6,1,longt002,12,CCBX,S7
+play,6,1,stanm002,12,CBFX,D7.1-3
+play,6,1,staim001,00,X,8/SF.3-H;2-3
+play,6,1,chave001,21,BBCX,FC3.3-H;B-1
+play,6,1,hernr002,00,,NP
+sub,andem002,"Matt Anderson",0,0,1
+play,6,1,hernr002,01,CS,CS2(24)
+play,6,1,hernr002,32,CSBFFBFFBX,5/FL
+play,7,0,palmd002,01,CX,HR/8
+play,7,0,easld001,02,FCX,S8/8S
+play,7,0,ausmb001,00,X,S8/8S.1-2
+play,7,0,macij001,22,BSFFBX,S7.2-3;1-2
+play,7,0,cruzd001,00,,NP
+sub,mecij001,"Jim Mecir",1,0,1
+play,7,0,cruzd001,01,CX,S7.3-H;2-3;1-2
+play,7,0,beckr002,12,CFBS,K
+play,7,0,mcmib001,00,X,S.3-H;2-3;1-2
+play,7,0,higgb001,22,CFBFBX,43/G.3-H;2-3;1-2
+play,7,0,gonzj002,22,CBSBFX,63/G
+play,7,1,velar001,11,BCX,63/G
+play,7,1,tejam001,32,CBBBSX,S7
+play,7,1,giamj001,30,BBBB,W.1-2
+play,7,1,grieb001,01,FX,HR/9.2-H;1-H
+play,7,1,longt002,22,FBSBFFX,D9
+play,7,1,stanm002,02,CSS,K
+play,7,1,staim001,12,FFBC,K/C
+play,8,0,palmd002,00,,NP
+sub,chrir001,"Ryan Christenson",1,4,7
+play,8,0,palmd002,11,CBX,S7
+play,8,0,easld001,12,CBSH,HP.1-2
+play,8,0,ausmb001,11,BCX,54(1)3/GDP.2-3
+play,8,0,macij001,12,BFFFX,13/G
+play,8,1,chave001,00,H,HP
+play,8,1,hernr002,22,BBSSS,K
+play,8,1,velar001,00,,NP
+sub,spars001,"Steve Sparks",0,0,1
+play,8,1,velar001,21,BBCX,4(1)/FO/G.B-2(E4/TH1)
+play,8,1,tejam001,32,BBFBFFX,9/F9
+play,9,0,cruzd001,00,,NP
+sub,isrij001,"Jason Isringhausen",1,0,1
+play,9,0,cruzd001,31,BBCBB,W
+play,9,0,beckr002,32,CBSBBC,K/C
+play,9,0,mcmib001,00,,DI.1-2
+play,9,0,mcmib001,01,CB,WP.2-3
+play,9,0,mcmib001,22,CBBFFFX,S9.3-H
+play,9,0,higgb001,12,CCFBC,K/C
+play,9,0,gonzj002,02,CFX,64(1)/FO
+data,er,berna001,4
+data,er,nitkc001,2
+data,er,andem002,3
+data,er,spars001,0
+data,er,hudst001,4
+data,er,mecij001,0
+data,er,isrij001,1

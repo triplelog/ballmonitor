@@ -1,0 +1,155 @@
+version,2
+info,visteam,MIN
+info,hometeam,ANA
+info,site,ANA01
+info,date,2000/06/24
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,higgs901
+info,ump1b,cousd901
+info,ump2b,marqa901
+info,ump3b,nelsj901
+info,pitches,pitches
+info,oscorer,munse701
+info,temp,75
+info,winddir,ltor
+info,windspeed,4
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,188
+info,attendance,28917
+info,wp,milte001
+info,lp,bottk001
+info,save,
+start,jonej003,"Jacque Jones",0,1,8
+start,guzmc001,"Cristian Guzman",0,2,6
+start,lawtm002,"Matt Lawton",0,3,7
+start,coomr001,"Ron Coomer",0,4,3
+start,ortid001,"David Ortiz",0,5,10
+start,koskc001,"Corey Koskie",0,6,5
+start,hockd001,"Denny Hocking",0,7,9
+start,jensm001,"Marcus Jensen",0,8,2
+start,canij001,"Jay Canizaro",0,9,4
+start,milte001,"Eric Milton",0,0,1
+start,erstd001,"Darin Erstad",1,1,7
+start,gil-b001,"Benji Gil",1,2,6
+start,vaugm001,"Mo Vaughn",1,3,3
+start,salmt001,"Tim Salmon",1,4,9
+start,andeg001,"Garret Anderson",1,5,8
+start,glaut001,"Troy Glaus",1,6,10
+start,spies001,"Scott Spiezio",1,7,5
+start,kenna001,"Adam Kennedy",1,8,4
+start,walbm001,"Matt Walbeck",1,9,2
+start,bottk001,"Kent Bottenfield",1,0,1
+play,1,0,jonej003,12,BCCX,43/G
+play,1,0,guzmc001,02,CLC,K/C
+play,1,0,lawtm002,30,BBBB,W
+play,1,0,coomr001,00,1,POCS2(1363)
+play,1,1,erstd001,32,CBFBFFBS,K
+play,1,1,gil-b001,10,BX,D/78
+play,1,1,vaugm001,31,SBBBB,W
+play,1,1,salmt001,32,FFBBBFFS,K+CS3(25)/DP
+play,2,0,coomr001,12,CBCC,K/C
+play,2,0,ortid001,31,BBBCB,W
+play,2,0,koskc001,00,X,S8.1-2
+play,2,0,hockd001,01,CX,D9/9D.2-H;1-3
+play,2,0,jensm001,21,BBFX,D7.3-H;2-H
+play,2,0,canij001,02,LCX,S7.2-3
+play,2,0,jonej003,22,SBFBS,K
+play,2,0,guzmc001,01,FX,5/FL
+play,2,1,andeg001,10,BX,HR/8
+play,2,1,glaut001,32,FBFBFFBX,HR/7
+play,2,1,spies001,00,X,HR/7
+play,2,1,kenna001,00,X,1/P1
+play,2,1,walbm001,00,X,63/G
+play,2,1,erstd001,12,BFFFS,K
+play,3,0,lawtm002,22,BFFBFX,4/L4
+play,3,0,coomr001,00,X,3/FL
+play,3,0,ortid001,32,BBFFBB,W
+play,3,0,koskc001,00,X,64(1)/FO
+play,3,1,gil-b001,12,CCBX,D9
+play,3,1,vaugm001,10,BX,4/L4
+play,3,1,salmt001,01,CX,63/G
+play,3,1,andeg001,01,CX,S8.2-H;B-2(THH)
+play,3,1,glaut001,10,BX,FC5.2X3(5X);B-1#
+play,4,0,hockd001,02,LCFX,53/G
+play,4,0,jensm001,32,CFFBBBB,W
+play,4,0,canij001,22,BBFSX,9/F9D
+play,4,0,jonej003,00,X,HR/7.1-H
+play,4,0,guzmc001,22,FCFFBBX,S9
+play,4,0,lawtm002,11,FBX,43/G
+play,4,1,spies001,02,FFC,K/C
+play,4,1,kenna001,00,X,7/F7S
+play,4,1,walbm001,10,BX,8/F8
+play,5,0,coomr001,01,CX,9/L9
+play,5,0,ortid001,32,CFBBBFS,K
+play,5,0,koskc001,20,BBX,HR/78
+play,5,0,hockd001,00,X,7/F7
+play,5,1,erstd001,10,BX,S9
+play,5,1,gil-b001,12,BSCX,4/L4
+play,5,1,vaugm001,00,X,8/L8D
+play,5,1,salmt001,32,CBBBFFC,K/C
+play,6,0,jensm001,00,,NP
+sub,holtm001,"Mike Holtz",1,0,1
+play,6,0,jensm001,32,FBCFBBFB,W
+play,6,0,canij001,11,BCX,S9.1-2
+play,6,0,jonej003,00,X,14/SH.2-3;1-2
+play,6,0,guzmc001,12,CBSFX,63/G
+play,6,0,lawtm002,32,BCCBFBS,K
+play,6,1,andeg001,31,BBBCX,8/F8S
+play,6,1,glaut001,01,CX,S7
+play,6,1,spies001,02,CCFFS,K
+play,6,1,kenna001,00,X,9/F9
+play,7,0,coomr001,00,X,53/G
+play,7,0,ortid001,32,CBCBBX,D/89D
+play,7,0,koskc001,12,BFCS,K
+play,7,0,hockd001,30,IIII,IW
+play,7,0,jensm001,10,BX,D/78.2-H;1-H
+play,7,0,canij001,00,,NP
+sub,fyhrm001,"Mike Fyhrie",1,0,1
+play,7,0,canij001,11,BSX,63/G
+play,7,1,walbm001,01,CX,9/F9
+play,7,1,erstd001,02,CFX,23/G
+play,7,1,gil-b001,31,BSBBX,S7
+play,7,1,vaugm001,21,SBBX,3/G
+play,8,0,jonej003,00,X,S9
+play,8,0,guzmc001,01,FX,46(1)/FO
+play,8,0,lawtm002,10,BX,46(1)3/GDP
+play,8,1,salmt001,00,,NP
+sub,hawkl001,"LaTroy Hawkins",0,0,1
+play,8,1,salmt001,12,BFFFS,K
+play,8,1,andeg001,11,BSX,43/G
+play,8,1,glaut001,00,,NP
+sub,cleme001,"Edgard Clemente",1,6,11
+play,8,1,cleme001,10,BX,53/G
+play,9,0,coomr001,00,,NP
+sub,hases001,"Shigetoshi Hasegawa",1,0,1
+play,9,0,coomr001,12,CBFFX,D7
+play,9,0,ortid001,01,SX,43/G.2-3
+play,9,0,koskc001,20,BBX,S8.3-H
+play,9,0,hockd001,12,CCBX,S9.1-3
+play,9,0,jensm001,22,SBCBX,64(1)/FO.3-H
+play,9,0,canij001,00,X,S9.1-2
+play,9,0,jonej003,00,X,S8/8S.2-H;1-3
+play,9,0,guzmc001,00,,NP
+sub,turnd001,"Derrick Turnbow",1,0,1
+play,9,0,guzmc001,01,FX,8/F8
+play,9,1,spies001,01,CX,S9
+play,9,1,kenna001,11,CBX,4/L4
+play,9,1,walbm001,32,BBBCFFFX,D9.1-3
+play,9,1,erstd001,31,BBFBX,43/G.3-H;2-3
+play,9,1,gil-b001,32,BBFBFB,W
+play,9,1,vaugm001,00,,NP
+sub,guare001,"Eddie Guardado",0,0,1
+play,9,1,vaugm001,00,X,9/F9
+data,er,milte001,4
+data,er,hawkl001,1
+data,er,guare001,0
+data,er,bottk001,6
+data,er,holtm001,2
+data,er,fyhrm001,0
+data,er,hases001,3
+data,er,turnd001,0

@@ -1,0 +1,155 @@
+version,2
+info,visteam,HOU
+info,hometeam,SLN
+info,site,STL09
+info,date,2000/06/30
+info,number,0
+info,starttime,7:10PM
+info,daynight,night
+info,usedh,false
+info,umphome,lampi901
+info,ump1b,welkt901
+info,ump2b,reynj901
+info,ump3b,wegnm901
+info,pitches,pitches
+info,temp,69
+info,winddir,fromlf
+info,windspeed,8
+info,fieldcond,unknown
+info,precip,rain
+info,sky,cloudy
+info,timeofgame,199
+info,attendance,46262
+info,wp,benea002
+info,lp,holtc001
+info,save,vered001
+start,lugoj001,"Julio Lugo",0,1,6
+start,biggc001,"Craig Biggio",0,2,4
+start,bagwj001,"Jeff Bagwell",0,3,3
+start,hidar001,"Richard Hidalgo",0,4,8
+start,aloum001,"Moises Alou",0,5,7
+start,berkl001,"Lance Berkman",0,6,9
+start,melum001,"Mitch Meluskey",0,7,2
+start,trubc001,"Chris Truby",0,8,5
+start,holtc001,"Chris Holt",0,9,1
+start,rente001,"Edgar Renteria",1,1,6
+start,drewj001,"J.D. Drew",1,2,9
+start,edmoj001,"Jim Edmonds",1,3,8
+start,mcgwm001,"Mark McGwire",1,4,3
+start,lankr001,"Ray Lankford",1,5,7
+start,tatif001,"Fernando Tatis",1,6,5
+start,mathm001,"Mike Matheny",1,7,2
+start,polap001,"Placido Polanco",1,8,4
+start,ankir001,"Rick Ankiel",1,9,1
+play,1,0,lugoj001,12,CBSFFS,K
+play,1,0,biggc001,21,BBCX,43/G
+play,1,0,bagwj001,32,BFSBBX,S9
+play,1,0,hidar001,32,CCBBBX,43/G
+play,1,1,rente001,22,CBFFBFX,63/G
+play,1,1,drewj001,01,CX,S9/9S
+play,1,1,edmoj001,22,SFBBX,S9/9S.1-3;B-2(E6)
+play,1,1,mcgwm001,32,BSBFBB,W
+play,1,1,lankr001,10,BX,8/SF.3-H
+play,1,1,tatif001,31,BSBBX,54(1)/FO.2-3
+play,2,0,aloum001,32,FBSBBX,S8
+play,2,0,berkl001,30,BBBB,W.1-2
+play,2,0,melum001,22,CBCFBS,K
+play,2,0,trubc001,22,CBSBFX,S9.2-H;1-3
+play,2,0,holtc001,02,LLL,K/BF
+play,2,0,lugoj001,02,CSC,K/C
+play,2,1,mathm001,10,BX,63/G
+play,2,1,polap001,22,SCBBX,3/L3
+play,2,1,ankir001,00,X,D/78
+play,2,1,rente001,00,X,43/G
+play,3,0,biggc001,32,CBBFBB,W
+play,3,0,bagwj001,21,FBBX,63/G.1-2
+play,3,0,hidar001,10,BX,S8.2-H
+play,3,0,aloum001,01,FX,S9/9S.1-2
+play,3,0,berkl001,11,SBX,9/F9.2-3
+play,3,0,melum001,01,CX,64(1)/FO
+play,3,1,drewj001,11,CBX,S9
+play,3,1,edmoj001,31,BFBBB,W.1-2
+play,3,1,mcgwm001,00,X,64(1)3/GDP.2-3
+play,3,1,lankr001,22,CCBBX,3/G
+play,4,0,trubc001,01,SX,S8
+play,4,0,holtc001,12,LSFBFB,WP.1-2
+com,"originally scored as SB2"
+play,4,0,holtc001,32,LSFBFBBB,W
+play,4,0,lugoj001,11,BLX,54/SH.2-3;1-2
+play,4,0,biggc001,11,BFX,E1/G.3-H(NR)(UR);2-3;B-2
+play,4,0,bagwj001,22,CBBFX,8/SF.3-H(UR);2-3(E8)
+play,4,0,hidar001,22,BCFFBC,K/C
+play,4,1,tatif001,12,BFFX,S8
+play,4,1,mathm001,01,LX,43/G.1-2
+play,4,1,polap001,22,CFBBX,43/G.2-3
+play,4,1,ankir001,02,CFX,S8.3-H
+play,4,1,rente001,22,CBFFFBFFFFX,S7.1-2
+play,4,1,drewj001,12,FFBFC,K/C
+play,5,0,aloum001,00,,NP
+sub,benea002,"Alan Benes",1,9,1
+play,5,0,aloum001,10,BX,4/P4
+play,5,0,berkl001,00,X,7/L7
+play,5,0,melum001,11,BFX,8/F8
+play,5,1,edmoj001,32,BCBBFC,K/C
+play,5,1,mcgwm001,10,BX,HR/7
+play,5,1,lankr001,32,BFSBFFBFFFS,K
+play,5,1,tatif001,12,BCCS,K
+play,6,0,trubc001,12,CBFS,K
+play,6,0,holtc001,32,FSBFBFFBB,W
+play,6,0,lugoj001,22,BFBSFX,8/F8
+play,6,0,biggc001,12,BCFX,6(1)/FO/G
+play,6,1,mathm001,01,CX,S7/7S
+play,6,1,polap001,11,LBX,34/SH.1-2
+play,6,1,benea002,00,,NP
+sub,paquc001,"Craig Paquette",1,9,11
+play,6,1,paquc001,21,SBBX,S8.2-3
+play,6,1,rente001,01,FX,S9.3-H;1-2
+play,6,1,drewj001,00,C,BK.2-3;1-2
+play,6,1,drewj001,31,CBBBB,W
+play,6,1,edmoj001,00,,NP
+sub,perey001,"Yorkis Perez",0,9,1
+play,6,1,edmoj001,01,FX,8/SF.3-H
+play,6,1,mcgwm001,00,,NP
+sub,henrd002,"Doug Henry",0,9,1
+play,6,1,mcgwm001,32,BBSBCX,63/G
+play,7,0,bagwj001,00,,NP
+sub,paquc001,"Craig Paquette",1,9,5
+play,7,0,bagwj001,00,,NP
+sub,morrm001,"Matt Morris",1,6,1
+play,7,0,bagwj001,32,CBBFBX,4/P4
+play,7,0,hidar001,22,BSFBX,63/G
+play,7,0,aloum001,11,CBX,E4/G
+play,7,0,berkl001,11,FBC,SB2
+play,7,0,berkl001,12,FBCS,K
+play,7,1,lankr001,00,X,D9/9D
+play,7,1,morrm001,20,BBX,164/SH.2-3
+play,7,1,mathm001,32,CBCBBS,K
+play,7,1,polap001,12,CBCC,K/C
+play,8,0,melum001,32,BBBCSB,W
+play,8,0,trubc001,00,,NP
+sub,barkg001,"Glen Barker",0,7,12
+play,8,0,trubc001,00,,NP
+sub,vered001,"Dave Veres",1,6,1
+play,8,0,trubc001,11,FBX,6(1)3/GDP
+play,8,0,henrd002,00,,NP
+sub,wardd002,"Daryle Ward",0,9,11
+play,8,0,wardd002,22,BSBCS,K
+play,8,1,paquc001,00,,NP
+sub,euset001,"Tony Eusebio",0,7,2
+play,8,1,paquc001,00,,NP
+sub,cabrj001,"Jose Cabrera",0,9,1
+play,8,1,paquc001,00,X,S8
+play,8,1,rente001,11,BFX,34/SH.1-2
+play,8,1,drewj001,32,BBCSFFBS,K
+play,8,1,edmoj001,21,BBF2,PO2(16)
+play,9,0,lugoj001,00,X,63/G
+play,9,0,biggc001,22,SSBBS,K
+play,9,0,bagwj001,22,CBBSX,8/F8
+data,er,holtc001,5
+data,er,perey001,0
+data,er,henrd002,0
+data,er,cabrj001,0
+data,er,ankir001,2
+data,er,benea002,0
+data,er,morrm001,0
+data,er,vered001,0

@@ -1,0 +1,139 @@
+version,2
+info,visteam,NYN
+info,hometeam,ARI
+info,site,PHO01
+info,date,2000/08/04
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,younl901
+info,ump1b,drakr901
+info,ump2b,millb901
+info,ump3b,mealj901
+info,pitches,pitches
+info,temp,72
+info,winddir,tolf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,169
+info,attendance,41832
+info,wp,reedr002
+info,lp,johnr005
+info,save,cookd001
+start,bordm001,"Mike Bordick",0,1,6
+start,belld001,"Derek Bell",0,2,9
+start,alfoe001,"Edgardo Alfonzo",0,3,4
+start,piazm001,"Mike Piazza",0,4,2
+start,zeilt001,"Todd Zeile",0,5,3
+start,agbab001,"Benny Agbayani",0,6,7
+start,paytj001,"Jay Payton",0,7,8
+start,mcewj001,"Joe McEwing",0,8,5
+start,reedr002,"Rick Reed",0,9,1
+start,womat001,"Tony Womack",1,1,6
+start,bellj001,"Jay Bell",1,2,4
+start,gonzl001,"Luis Gonzalez",1,3,7
+start,willm003,"Matt D. Williams",1,4,5
+start,finls001,"Steve Finley",1,5,8
+start,cabra001,"Alex Cabrera",1,6,3
+start,contj001,"Jason Conti",1,7,9
+start,stink001,"Kelly Stinnett",1,8,2
+start,johnr005,"Randy Johnson",1,9,1
+play,1,0,bordm001,10,BX,8/F8
+play,1,0,belld001,02,CSS,K
+play,1,0,alfoe001,00,X,S8
+play,1,0,piazm001,12,BCFS,K
+play,1,1,womat001,12,CCBFX,43/G
+play,1,1,bellj001,02,FCX,4/P4
+play,1,1,gonzl001,21,CBBX,7/F7
+play,2,0,zeilt001,10,BX,43/G
+play,2,0,agbab001,01,CX,53/G
+play,2,0,paytj001,32,BBCFFFBX,D7/7S
+play,2,0,mcewj001,31,BBBCX,D9.2-H
+play,2,0,reedr002,12,SBFS,K
+play,2,1,willm003,11,BCX,9/F9
+play,2,1,finls001,22,BFBFX,S/78
+play,2,1,cabra001,00,X,64(1)/FO
+play,2,1,contj001,32,BBSBFFFFS,K
+play,3,0,bordm001,32,BBFBCX,S7
+play,3,0,belld001,12,CBFC,K/C
+play,3,0,alfoe001,12,CCFFBX,8/F8
+play,3,0,piazm001,12,CBFFX,S8.1-3
+play,3,0,zeilt001,02,CFS,K
+play,3,1,stink001,21,BBFX,4/P4
+play,3,1,johnr005,20,BBX,8/F8
+play,3,1,womat001,11,CBX,S8
+play,3,1,bellj001,10,BX,8/F8
+play,4,0,agbab001,01,CX,D7
+play,4,0,paytj001,00,X,S9.2-3
+play,4,0,mcewj001,20,BBX,9/SF.3-H
+play,4,0,reedr002,01,CX,54/SH.1-2
+play,4,0,bordm001,01,SB,WP.2-3
+play,4,0,bordm001,32,SBBCFBB,W
+play,4,0,belld001,32,BSBCBFFFX,E6/G.3-H(UR)(NR);1-2
+play,4,0,alfoe001,30,BBBB,W.2-3;1-2
+play,4,0,piazm001,12,FBFFFX,S7.3-H(UR);2-H(UR);1-2
+play,4,0,zeilt001,00,,NP
+sub,sprir001,"Russ Springer",1,9,1
+play,4,0,zeilt001,00,X,8/F8
+play,4,1,gonzl001,22,BSBFFX,63/G
+play,4,1,willm003,01,FX,4/P4
+play,4,1,finls001,11,BCX,S9
+play,4,1,cabra001,11,BFX,4/P4
+play,5,0,agbab001,12,BSFH,HP
+play,5,0,paytj001,10,BX,8/F8
+play,5,0,mcewj001,01,CX,3/P3
+play,5,0,reedr002,01,SX,13/BG
+play,5,1,contj001,00,,NP
+sub,tramb001,"Bubba Trammell",0,6,7
+play,5,1,contj001,12,BCFS,K
+play,5,1,stink001,21,FBBX,63/G
+play,5,1,sprir001,01,CX,43/G
+play,6,0,bordm001,20,BBX,3/FL
+play,6,0,belld001,12,CBFS,K
+play,6,0,alfoe001,10,BX,63/G
+play,6,1,womat001,01,CX,8/F8
+play,6,1,bellj001,02,CCX,43/G
+play,6,1,gonzl001,01,CX,7/F7S
+play,7,0,piazm001,02,SSC,K/C
+play,7,0,zeilt001,22,CFBBC,K/C
+play,7,0,tramb001,12,SFBC,K/C
+play,7,1,willm003,00,X,53/G
+play,7,1,finls001,11,BCX,8/F8D
+play,7,1,cabra001,22,CSBBS,K
+play,8,0,paytj001,00,,NP
+sub,plesd001,"Dan Plesac",1,9,1
+play,8,0,paytj001,02,SFX,53/G
+play,8,0,mcewj001,12,CSBFX,S8
+play,8,0,reedr002,01,SX,14/SH.1-2
+play,8,0,bordm001,31,BCBBX,63/G
+play,8,1,contj001,00,X,3/BP3
+play,8,1,stink001,02,CFX,S9/9S
+play,8,1,plesd001,00,,NP
+sub,ryanr001,"Rob Ryan",1,9,11
+play,8,1,ryanr001,12,BCCC,K/C
+play,8,1,womat001,00,X,S7.1-2
+play,8,1,bellj001,21,BBFX,S7.2-H;1-2
+play,8,1,gonzl001,00,,NP
+sub,cookd001,"Dennis Cook",0,9,1
+play,8,1,gonzl001,00,C,SB3;SB2
+play,8,1,gonzl001,11,CBX,43/G
+play,9,0,belld001,00,,NP
+sub,morgm001,"Mike Morgan",1,9,1
+play,9,0,belld001,00,X,S9
+play,9,0,alfoe001,01,CX,S.1-2
+play,9,0,piazm001,12,CFBS,K
+play,9,0,zeilt001,30,BBBB,W.2-3;1-2
+play,9,0,tramb001,00,X,41/G.3-H;2-3;1-2
+play,9,0,paytj001,12,CBSX,8/F8
+play,9,1,willm003,32,BBSFBX,7/F7
+play,9,1,finls001,22,CBSBS,K
+play,9,1,cabra001,22,BFSBX,4/P4
+data,er,reedr002,1
+data,er,cookd001,0
+data,er,johnr005,2
+data,er,sprir001,0
+data,er,plesd001,0
+data,er,morgm001,1

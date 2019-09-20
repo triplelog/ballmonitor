@@ -1,0 +1,155 @@
+version,2
+info,visteam,SLN
+info,hometeam,HOU
+info,site,HOU03
+info,date,2000/04/10
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,onorb901
+info,ump1b,iassd901
+info,ump2b,hirsm901
+info,ump3b,bellw901
+info,pitches,pitches
+info,temp,70
+info,winddir,rtol
+info,windspeed,14
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,183
+info,attendance,36324
+info,wp,hentp001
+info,lp,limaj001
+info,save,vered001
+start,vinaf001,"Fernando Vina",0,1,4
+start,rente001,"Edgar Renteria",0,2,6
+start,lankr001,"Ray Lankford",0,3,7
+start,mcgwm001,"Mark McGwire",0,4,3
+start,edmoj001,"Jim Edmonds",0,5,8
+start,tatif001,"Fernando Tatis",0,6,5
+start,mathm001,"Mike Matheny",0,7,2
+start,drewj001,"J.D. Drew",0,8,9
+start,hentp001,"Pat Hentgen",0,9,1
+start,biggc001,"Craig Biggio",1,1,4
+start,ceder001,"Roger Cedeno",1,2,8
+start,bagwj001,"Jeff Bagwell",1,3,3
+start,wardd002,"Daryle Ward",1,4,7
+start,hidar001,"Richard Hidalgo",1,5,9
+start,spieb001,"Bill Spiers",1,6,5
+start,melum001,"Mitch Meluskey",1,7,2
+start,bogat001,"Tim Bogar",1,8,6
+start,limaj001,"Jose Lima",1,9,1
+play,1,0,vinaf001,00,X,8/F8
+play,1,0,rente001,31,BBCBB,W
+play,1,0,lankr001,01,CB,SB2
+play,1,0,lankr001,22,CBFBFX,43/G.2-3
+play,1,0,mcgwm001,22,CSBBFX,HR/78.3-H
+play,1,0,edmoj001,21,FBBX,S9
+play,1,0,tatif001,01,CC,SB2
+play,1,0,tatif001,12,CCBS,K
+play,1,1,biggc001,00,X,53/G
+play,1,1,ceder001,12,BCFS,K23
+play,1,1,bagwj001,20,BBX,7/F7S
+play,2,0,mathm001,22,CSBBS,K
+play,2,0,drewj001,10,BX,S9/9D.BX2(96)
+play,2,0,hentp001,00,X,43/G
+play,2,1,wardd002,21,BFBX,HR/7
+play,2,1,hidar001,31,BBBCX,4/FL
+play,2,1,spieb001,11,BCX,63/G
+play,2,1,melum001,32,CBCBBC,K/C
+play,3,0,vinaf001,00,X,S3/BG3
+play,3,0,rente001,01,CX,HR/7.1-H
+play,3,0,lankr001,32,SBCBBX,HR/7
+play,3,0,mcgwm001,22,BCBSC,K/C
+play,3,0,edmoj001,31,BBBFB,W
+play,3,0,tatif001,32,BBBSSS,K
+play,3,0,mathm001,02,SSS,K
+play,3,1,bogat001,01,CX,53/G
+play,3,1,limaj001,02,CFS,K
+play,3,1,biggc001,30,BBBB,W
+play,3,1,ceder001,32,BCFBBFB,W.1-2
+play,3,1,bagwj001,32,CBCBFFBX,9/F9D
+play,4,0,drewj001,32,BCBFBFX,6/L6
+play,4,0,hentp001,12,CSBS,K
+play,4,0,vinaf001,01,CX,7/L7
+play,4,1,wardd002,21,CBBX,13/G
+play,4,1,hidar001,02,FCX,5/L5
+play,4,1,spieb001,00,X,43/G
+play,5,0,rente001,21,BBSX,8/F8D
+play,5,0,lankr001,22,CBBCX,3/FL
+play,5,0,mcgwm001,11,FBX,8/F8
+play,5,1,melum001,22,CBBFC,K/C
+play,5,1,bogat001,12,BCCX,63/G
+play,5,1,limaj001,02,SFS,K
+play,6,0,edmoj001,20,BBX,D7/7D
+play,6,0,tatif001,22,SBBSS,K
+play,6,0,mathm001,21,FBBX,163/G.2-3
+play,6,0,drewj001,30,IIII,IW
+play,6,0,hentp001,20,BBX,9/F9
+play,6,1,biggc001,00,,NP
+sub,paquc001,"Craig Paquette",0,6,5
+play,6,1,biggc001,22,BFBCX,HR/7
+play,6,1,ceder001,00,X,13/G
+play,6,1,bagwj001,00,X,S7
+play,6,1,wardd002,01,CX,8/F8D
+play,6,1,hidar001,00,B,CS2(24)
+play,7,0,vinaf001,00,X,D9
+play,7,0,rente001,11,SBX,43/G.2-3
+play,7,0,lankr001,12,SBFC,K/C
+play,7,0,mcgwm001,11,CBX,2/FL
+play,7,1,hidar001,01,CX,HR/7
+play,7,1,spieb001,00,,NP
+sub,mohlm001,"Mike Mohler",0,3,1
+play,7,1,spieb001,00,,NP
+sub,dunss001,"Shawon Dunston",0,9,7
+play,7,1,spieb001,10,BX,3/G
+play,7,1,melum001,11,CBX,3/G
+play,7,1,bogat001,11,SBX,4/FL
+play,8,0,edmoj001,00,,NP
+sub,cabrj001,"Jose Cabrera",1,9,1
+play,8,0,edmoj001,32,FBCBBFFX,D8/8D
+play,8,0,paquc001,00,X,T/78D.2-H
+play,8,0,mathm001,22,BCBFX,1/L1
+play,8,0,drewj001,01,SX,HR/78.3-H
+play,8,0,dunss001,22,BFFBS,K
+play,8,0,vinaf001,02,SSH,HP
+play,8,0,rente001,12,FFFBB,SB2.1-3(E2/TH2)
+play,8,0,rente001,22,FFFBBX,8/F8
+play,8,1,cabrj001,00,,NP
+sub,johnr006,"Russ Johnson",1,9,11
+play,8,1,johnr006,11,BFX,53/G
+play,8,1,biggc001,32,BBBCCB,W
+play,8,1,ceder001,22,SBBFFX,S7.1-2
+play,8,1,bagwj001,00,,NP
+sub,sloch001,"Heathcliff Slocumb",0,2,1
+play,8,1,bagwj001,00,,NP
+sub,polap001,"Placido Polanco",0,3,6
+play,8,1,bagwj001,00,X,D/78D.2-H;1-H
+play,8,1,wardd002,10,BX,HR/9.2-H
+play,8,1,hidar001,22,BSBCC,K/C
+play,8,1,spieb001,00,X,4/L4
+play,9,0,polap001,00,,NP
+sub,powej001,"Jay Powell",1,9,1
+play,9,0,polap001,31,BBCBX,S
+play,9,0,mcgwm001,12,FBFC,K/C
+play,9,0,edmoj001,00,X,S8/8S.1-3
+play,9,0,paquc001,00,X,3(B)3(1)/LDP
+play,9,1,melum001,00,,NP
+sub,vered001,"Dave Veres",0,2,1
+play,9,1,melum001,12,CSBS,K
+play,9,1,bogat001,02,FFX,6/L6
+play,9,1,powej001,00,,NP
+sub,aloum001,"Moises Alou",1,9,11
+play,9,1,aloum001,22,CBFBFFH,HP
+play,9,1,biggc001,00,,NP
+sub,barkg001,"Glen Barker",1,9,12
+play,9,1,biggc001,00,B,CS2(24)
+data,er,hentp001,3
+data,er,mohlm001,2
+data,er,sloch001,2
+data,er,vered001,0
+data,er,limaj001,5
+data,er,cabrj001,3
+data,er,powej001,0

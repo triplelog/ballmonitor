@@ -1,0 +1,79 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,12,1,,,,,0,4,CSBX,bottk001,1,0,,alicl001,0,F
+,11,1,,,,,1,7,CBX,bottk001,1,0,greer001 grounds out. ,greer001,0,G
+,01,1,,,,,2,9,CX,bottk001,1,0,,palmr001,0,F
+,12,1,,,,,3,4,CFBX,rogek001,1,0,erstd001 grounds out. ,erstd001,1,G
+,00,1,stock001,,,,4,5,X,rogek001,0,0,stock001 singles. ,stock001,1,
+,12,1,stock001,,,,5,9,FSBC,rogek001,1,0,vaugm001 strikes out. ,vaugm001,1,
+,00,1,,,,glaut001,6,10,1,rogek001,1,0,stock001 picked off. ,glaut001,1,
+,12,2,rodri001,,,,7,14,SFBFX,bottk001,0,0,rodri001 singles. ,rodri001,0,
+rodri001 to 2B. ,22,2,segud001,rodri001,,,8,19,BCBCX,bottk001,0,0,segud001 singles. ,segud001,0,
+,20,2,segud001,rodri001,,,9,22,BBX,bottk001,1,0,,martd002,0,F
+rodri001 to 3B. segud001 to 2B. ,11,2,,segud001,rodri001,,10,25,BCX,bottk001,1,0,lambm001 grounds out. ,lambm001,0,G
+,10,2,,segud001,rodri001,,11,27,BX,bottk001,1,0,,kaplg001,0,P
+,32,2,glaut001,,,,12,16,CBBFBX,rogek001,0,0,glaut001 reaches on error. ,glaut001,1,
+glaut001 out. ,22,2,andeg001,,,,13,21,FFBBX,rogek001,1,0,andeg001 reaches on fielder's choice. ,andeg001,1,
+,10,2,andeg001,,,,14,23,BX,rogek001,1,0,,molib001,1,F
+andeg001 out. ,21,2,gil-b001,,,,15,27,BBSX,rogek001,1,0,gil-b001 reaches on fielder's choice. ,gil-b001,1,
+,01,3,,,,,16,29,FX,bottk001,1,0,,clayr001,0,F
+,32,3,alicl001,,,,17,35,CBFBBB,bottk001,0,0,alicl001 walks. ,alicl001,0,
+,11,3,,,,,18,38,BCX,bottk001,2,0,Double Play. ,greer001,0,
+,32,3,,,,,19,35,BFFBBFFS,rogek001,1,0,spies001 strikes out. ,spies001,1,
+,20,3,,,,,20,38,BBX,rogek001,1,0,,cleme001,1,F
+,32,3,,,,,21,44,FBBBSX,rogek001,1,0,erstd001 grounds out. ,erstd001,1,G
+,32,4,palmr001,,,,22,44,FBBFBB,bottk001,0,0,palmr001 walks. ,palmr001,0,
+palmr001 out. ,00,4,rodri001,,,,23,45,X,bottk001,1,0,rodri001 reaches on fielder's choice. ,rodri001,0,
+rodri001 to 2B. ,11,4,,rodri001,,,24,48,FBX,bottk001,1,0,segud001 grounds out. ,segud001,0,G
+rodri001 scores. martd002 to 2B. ,22,4,,martd002,,,25,53,FBBFX,bottk001,0,1,martd002 singles. ,martd002,0,
+,00,4,,martd002,,,26,54,X,bottk001,1,0,lambm001 grounds out. ,lambm001,0,G
+,22,4,,,,,27,49,FBBFC,rogek001,1,0,stock001 strikes out. ,stock001,1,
+,32,4,vaugm001,,,,28,55,BCBFBB,rogek001,0,0,vaugm001 walks. ,vaugm001,1,
+,01,4,,,,,29,57,CX,rogek001,2,0,Double Play. ,glaut001,1,
+,22,5,kaplg001,,,,30,59,CBCBX,bottk001,0,0,kaplg001 singles. ,kaplg001,0,
+kaplg001 to 2B. ,00,5,,kaplg001,,,31,60,X,bottk001,1,0,Sacrifice bunt by clayr001.,clayr001,0,
+,32,5,,kaplg001,,,32,67,CBCBBFX,bottk001,1,0,,alicl001,0,L
+,31,5,greer001,kaplg001,,,33,72,BBBCB,bottk001,0,0,greer001 walks. ,greer001,0,
+,00,5,greer001,kaplg001,,,34,73,X,bottk001,1,0,,palmr001,0,L
+,21,5,,,,,35,61,BCBX,rogek001,1,0,,andeg001,1,F
+,22,5,,,,,36,69,CBCFBFFX,rogek001,0,1,molib001 homers. ,molib001,1,
+,12,5,gil-b001,,,,37,74,FSBFX,rogek001,0,0,gil-b001 singles. ,gil-b001,1,
+gil-b001 to 3B. ,00,5,spies001,,gil-b001,,38,75,X,rogek001,0,0,spies001 singles. ,spies001,1,
+,22,5,spies001,,gil-b001,,39,80,BSBFC,rogek001,1,0,cleme001 strikes out. ,cleme001,1,
+,32,5,spies001,,gil-b001,,40,86,CFBBBS,rogek001,1,0,erstd001 strikes out. ,erstd001,1,
+,12,6,,rodri001,,,41,78,BSFFX,bottk001,0,0,rodri001 doubles. ,rodri001,0,
+rodri001 to 3B. ,10,6,,,rodri001,,42,80,BX,bottk001,1,0,segud001 grounds out. ,segud001,0,G
+rodri001 scores. ,01,6,martd002,,,,43,82,CX,bottk001,0,1,martd002 singles. ,martd002,0,
+,00,6,,,,lambm001,44,83,S,bottk001,1,0,martd002 caught stealing. ,lambm001,0,
+,02,6,,,,,45,86,SSX,bottk001,1,0,lambm001 grounds out. ,lambm001,0,G
+,00,6,,,,,46,87,X,rogek001,1,0,,stock001,1,P
+,02,6,,,,,47,90,SFS,rogek001,1,0,vaugm001 strikes out. ,vaugm001,1,
+,11,6,glaut001,,,,48,93,BFX,rogek001,0,0,glaut001 singles. ,glaut001,1,
+,02,6,,,,andeg001,49,97,CFF1,rogek001,1,0,glaut001 picked off. ,andeg001,1,
+,00,7,,,,,50,87,X,bottk001,0,1,kaplg001 homers. ,kaplg001,0,
+,11,7,clayr001,,,,51,90,CBX,bottk001,0,0,clayr001 singles. ,clayr001,0,
+,22,7,clayr001,,,,52,96,LLFBBX,bottk001,1,0,,alicl001,0,F
+clayr001 out. ,20,7,greer001,,,,53,99,BBX,bottk001,1,0,greer001 reaches on fielder's choice. ,greer001,0,
+,11,7,greer001,,,,54,102,BCX,bottk001,1,0,,palmr001,0,F
+,32,7,andeg001,,,,55,106,BBBCCFFFX,rogek001,0,0,andeg001 singles. ,andeg001,1,
+andeg001 to 2B. ,12,7,,andeg001,,,56,110,CBCX,rogek001,1,0,molib001 grounds out. ,molib001,1,G
+,11,7,,andeg001,,,57,113,SBX,rogek001,1,0,gil-b001 grounds out. ,gil-b001,1,G
+andeg001 scores. ,32,7,spies001,,,,58,119,FBBBSX,rogek001,0,1,spies001 singles. ,spies001,1,
+spies001 to 3B. ,20,7,,cleme001,spies001,,59,122,BBX,rogek001,0,0,cleme001 doubles. ,cleme001,1,
+,30,7,erstd001,cleme001,spies001,,61,4,IIII,david002,0,0,erstd001 intentionally walks. ,erstd001,1,
+,01,7,erstd001,cleme001,spies001,,62,6,CX,david002,1,0,stock001 grounds out. ,stock001,1,G
+,02,8,,,,,64,8,FFFFFFFX,holtm001,1,0,rodri001 grounds out. ,rodri001,0,G
+,12,8,,,,,65,12,BFSS,holtm001,1,0,segud001 strikes out. ,segud001,0,
+curtc001 out. ,22,8,,,,,67,17,FBBCX,holtm001,1,0,curtc001 singles. ,curtc001,0,
+,11,8,vaugm001,,,,69,9,CBX,david002,0,0,vaugm001 singles. ,vaugm001,1,
+,22,8,,,,,72,5,BCBFX,zimmj001,2,0,Double Play. ,glaut001,1,
+,01,8,andeg001,,,,73,7,CX,zimmj001,0,0,andeg001 singles. ,andeg001,1,
+andeg001 to 2B. ,00,8,molib001,andeg001,,,74,8,X,zimmj001,0,0,molib001 singles. ,molib001,1,
+,12,8,molib001,andeg001,,,76,12,CBCX,zimmj001,1,0,,kenna001,1,F
+,02,9,,,,,78,20,CCS,holtm001,1,0,lambm001 strikes out. ,lambm001,0,
+,31,9,kaplg001,,,,80,5,BCBBX,fyhrm001,0,0,kaplg001 singles. ,kaplg001,0,
+kaplg001 to 2B. ,00,9,,kaplg001,,,81,6,X,fyhrm001,1,0,clayr001 grounds out. ,clayr001,0,G
+,00,9,,kaplg001,,,82,7,X,fyhrm001,1,0,alicl001 grounds out. ,alicl001,0,G
+,02,9,spies001,,,,85,6,CFFFFX,wettj001,0,0,spies001 singles. ,spies001,1,
+spies001 to 2B. ,01,9,,spies001,,,87,8,CX,wettj001,1,0,palmo001 grounds out. ,palmo001,1,G
+,11,9,,spies001,,,88,11,CBX,wettj001,1,0,,erstd001,1,L
+spies001 out. ,20,9,stock001,,,,89,14,BBX,wettj001,1,0,stock001 singles. ,stock001,1,

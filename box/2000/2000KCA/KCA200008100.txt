@@ -1,0 +1,165 @@
+version,2
+info,visteam,TOR
+info,hometeam,KCA
+info,site,KAN06
+info,date,2000/08/10
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,everm901
+info,ump1b,danlk901
+info,ump2b,gormb901
+info,ump3b,dimum901
+info,pitches,pitches
+info,temp,93
+info,winddir,tolf
+info,windspeed,3
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,191
+info,attendance,18188
+info,wp,carpc002
+info,lp,fussc001
+info,save,
+start,stews002,"Shannon Stewart",0,1,7
+start,gonza001,"Alex S. Gonzalez",0,2,6
+start,martd002,"Dave Martinez",0,3,9
+start,delgc001,"Carlos Delgado",0,4,3
+start,fullb001,"Brad Fullmer",0,5,10
+start,batit001,"Tony Batista",0,6,5
+start,fletd001,"Darrin Fletcher",0,7,2
+start,cruzj004,"Jose Cruz",0,8,8
+start,grebc001,"Craig Grebeck",0,9,4
+start,welld001,"David Wells",0,0,1
+start,damoj001,"Johnny Damon",1,1,8
+start,feblc001,"Carlos Febles",1,2,4
+start,sweem002,"Mike Sweeney",1,3,10
+start,dye-j001,"Jermaine Dye",1,4,9
+start,randj002,"Joe Randa",1,5,5
+start,quinm001,"Mark Quinn",1,6,7
+start,mccad001,"David McCarty",1,7,3
+start,ortih001,"Hector Ortiz",1,8,2
+start,ordal001,"Luis Ordaz",1,9,6
+start,meadb001,"Brian Meadows",1,0,1
+play,1,0,stews002,00,X,S7
+play,1,0,gonza001,00,X,S5/BG5.1-2
+play,1,0,martd002,00,X,S8.2-H;1-2
+play,1,0,delgc001,31,BFBBX,D/78.2-H;1-H
+play,1,0,fullb001,30,BBBB,W
+play,1,0,batit001,10,BX,6(B)4(2)/LDP
+play,1,0,fletd001,22,BFCBX,6/P6
+play,1,1,damoj001,02,CCX,S8
+play,1,1,feblc001,01,CX,8/F8
+play,1,1,sweem002,00,X,3/FL
+play,1,1,dye-j001,01,FX,D7/7S.1-H
+play,1,1,randj002,10,BX,S7.2-H
+play,1,1,quinm001,22,FSBBX,HR/7.1-H
+play,1,1,mccad001,22,CBBSX,53/G
+play,2,0,cruzj004,02,FSX,3/G
+play,2,0,grebc001,12,CBFC,K/C
+play,2,0,stews002,32,BFSBFBFS,K
+play,2,1,ortih001,12,CFBFX,8/F8
+play,2,1,ordal001,01,CX,43/G
+play,2,1,damoj001,11,BCX,D9/9S
+play,2,1,feblc001,01,FX,53/G
+play,3,0,gonza001,00,X,7/F7
+play,3,0,martd002,01,FX,6/P6
+play,3,0,delgc001,12,CSBX,43/G
+play,3,1,sweem002,12,BCCX,S9
+play,3,1,dye-j001,00,X,9/F9D
+play,3,1,randj002,10,BX,D/78.1-H
+play,3,1,quinm001,00,X,S7.2-3
+play,3,1,mccad001,21,BBCX,3/FL
+play,3,1,ortih001,10,BX,S7/7S.3-H;1-2
+play,3,1,ordal001,10,BX,64(1)/FO.2-3
+play,4,0,fullb001,02,CSFX,31/G
+play,4,0,batit001,20,BBX,HR/7
+play,4,0,fletd001,10,BX,43/G
+play,4,0,cruzj004,32,BBCBFX,D9
+play,4,0,grebc001,11,BFX,D9/9D.2-H
+play,4,0,stews002,11,BSX,HR/7.2-H
+play,4,0,gonza001,00,,NP
+sub,fussc001,"Chris Fussell",1,0,1
+play,4,0,gonza001,12,CBCFS,K
+play,4,1,damoj001,00,X,S4/BG4
+play,4,1,feblc001,00,X,2/BINT.1-1
+com,"$Carlos Febles called for interference for running into his own batted ball"
+play,4,1,sweem002,00,X,63/G.1-2
+play,4,1,dye-j001,21,BCBX,D9/9D.2-H
+play,4,1,randj002,00,,NP
+sub,carpc002,"Chris Carpenter",0,0,1
+play,4,1,randj002,00,X,63/G
+play,5,0,martd002,30,BBBB,W
+play,5,0,delgc001,20,BBX,3/G.1-2
+play,5,0,fullb001,02,CFFC,K/C
+play,5,0,batit001,10,BX,S8.2-H;B-2(THH)
+play,5,0,fletd001,11,CBX,3/G
+play,5,1,quinm001,02,CCS,K
+play,5,1,mccad001,02,CFC,K/C
+play,5,1,ortih001,11,BCX,S8
+play,5,1,ordal001,11,CBX,46(1)/FO
+play,6,0,cruzj004,32,BBBCFFB,W
+play,6,0,grebc001,00,X,7/F7
+play,6,0,stews002,22,BCBFB,SB2
+play,6,0,stews002,32,BCBFBS,K
+com,"ej,fregj101,M,everm901,Checked swing"
+com,"Blue Jays Manager Jim Fregosi ejected by HP umpire Mike Everitt"
+play,6,0,gonza001,01,SX,D/89D.2-H
+play,6,0,martd002,00,,NP
+sub,byrdt001,"Tim Byrdak",1,0,1
+play,6,0,martd002,12,FBFFFFX,S8.2-H
+play,6,0,delgc001,21,BFBX,S7.1-2
+play,6,0,fullb001,12,FBFX,HR/9.2-H;1-H
+play,6,0,batit001,00,,NP
+sub,spraj001,"Jerry Spradlin",1,0,1
+play,6,0,batit001,10,BX,5/FL
+play,6,1,damoj001,32,BCBFBX,63/G
+play,6,1,feblc001,22,CBSBFFC,K/C
+play,6,1,sweem002,22,FBFBX,8/F8
+play,7,0,fletd001,12,CFFBS,K
+play,7,0,cruzj004,00,X,S2/BG2
+play,7,0,grebc001,10,BH,HP.1-2
+play,7,0,stews002,00,B,WP.2-3;1-2
+play,7,0,stews002,31,BBBCX,S9.3-H;2-3
+play,7,0,gonza001,12,BCSX,S9.3-H;1-2
+play,7,0,martd002,00,X,9/F9D
+play,7,0,delgc001,02,CSX,7/F7
+play,7,1,dye-j001,10,BX,9/F9
+play,7,1,randj002,22,CBFBX,63/G
+play,7,1,quinm001,31,BBSBX,D/78
+play,7,1,mccad001,02,FFS,K
+play,8,0,fullb001,00,,NP
+sub,dunwt001,"Todd Dunwoody",1,1,8
+play,8,0,fullb001,00,,NP
+sub,poses001,"Scott Pose",1,4,9
+play,8,0,fullb001,00,,NP
+sub,reboj001,"Jeff Reboulet",1,5,5
+play,8,0,fullb001,11,SBX,8/F8
+play,8,0,batit001,22,CFBBX,S8/8S
+play,8,0,fletd001,10,BX,36(1)/FO
+play,8,0,cruzj004,00,X,8/F8
+play,8,1,ortih001,22,CBCBC,K/C
+play,8,1,ordal001,11,SBX,3/G
+play,8,1,dunwt001,12,FBCX,43/G
+play,9,0,grebc001,00,,NP
+sub,bottr001,"Ricky Bottalico",1,0,1
+play,9,0,grebc001,22,BSBFC,K/C
+play,9,0,stews002,21,BFBX,63/G
+play,9,0,gonza001,32,BCCBBX,E5/G
+play,9,0,martd002,12,FFBS,K
+play,9,1,feblc001,00,,NP
+sub,kochb001,"Billy Koch",0,0,1
+play,9,1,feblc001,00,X,43/G
+play,9,1,sweem002,22,BFFBS,K
+play,9,1,poses001,00,X,S7
+play,9,1,reboj001,00,X,13/G
+data,er,welld001,7
+data,er,carpc002,0
+data,er,kochb001,0
+data,er,meadb001,7
+data,er,fussc001,3
+data,er,byrdt001,3
+data,er,spraj001,2
+data,er,bottr001,0

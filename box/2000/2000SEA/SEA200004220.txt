@@ -1,0 +1,133 @@
+version,2
+info,visteam,KCA
+info,hometeam,SEA
+info,site,SEA03
+info,date,2000/04/22
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,katzt901
+info,ump1b,mealj901
+info,ump2b,younl901
+info,ump3b,bonig901
+info,pitches,pitches
+info,temp,54
+info,winddir,tolf
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,153
+info,attendance,38200
+info,wp,tomkb001
+info,lp,witaj001
+info,save,sasak001
+start,damoj001,"Johnny Damon",0,1,8
+start,feblc001,"Carlos Febles",0,2,4
+start,sweem002,"Mike Sweeney",0,3,3
+start,dye-j001,"Jermaine Dye",0,4,9
+start,quinm001,"Mark Quinn",0,5,10
+start,randj002,"Joe Randa",0,6,5
+start,poses001,"Scott Pose",0,7,7
+start,johnb002,"Brian Johnson",0,8,2
+start,sancr001,"Rey Sanchez",0,9,6
+start,witaj001,"Jay Witasick",0,0,1
+start,mclem001,"Mark McLemore",1,1,4
+start,javis001,"Stan Javier",1,2,8
+start,rodra001,"Alex Rodriguez",1,3,6
+start,olerj001,"John Olerud",1,4,3
+start,ibanr001,"Raul Ibanez",1,5,7
+start,buhnj001,"Jay Buhner",1,6,9
+start,lampt001,"Tom Lampkin",1,7,10
+start,belld002,"David Bell",1,8,5
+start,wilsd001,"Dan Wilson",1,9,2
+start,tomkb001,"Brett Tomko",1,0,1
+play,1,0,damoj001,32,CSBFBBX,S7
+play,1,0,feblc001,21,CBBX,9/F9
+play,1,0,sweem002,10,BX,54(1)3/GDP
+play,1,1,mclem001,32,BBBCFFX,9/F9
+play,1,1,javis001,12,CCBFX,E1/G
+play,1,1,rodra001,00,B,WP.1-2
+play,1,1,rodra001,32,BFBFBFX,9/F9
+play,1,1,olerj001,12,BCFC,K/C
+play,2,0,dye-j001,22,BCFBFFFC,K/C
+play,2,0,quinm001,32,FBBBFS,K
+play,2,0,randj002,00,X,S
+play,2,0,poses001,22,CBSBS,K
+play,2,1,ibanr001,11,CBX,S
+play,2,1,buhnj001,22,CBBFX,43/G.1-2
+play,2,1,lampt001,22,BSFFFBFX,HR/9.2-H
+play,2,1,belld002,00,X,8/F8
+play,2,1,wilsd001,10,BX,9/F9
+play,3,0,johnb002,11,CBX,6/P6
+play,3,0,sancr001,11,BFX,63/G
+play,3,0,damoj001,22,CBBCS,K
+play,3,1,mclem001,32,BFBBFC,K/C
+play,3,1,javis001,22,BBCCFFX,7/L7
+play,3,1,rodra001,22,BBCSC,K/C
+play,4,0,feblc001,22,CBFBS,K
+play,4,0,sweem002,31,BBCBX,53/G
+play,4,0,dye-j001,11,BSX,HR/78
+play,4,0,quinm001,22,CBCBX,63/G
+play,4,1,olerj001,12,BSSFX,S7
+play,4,1,ibanr001,00,X,46(1)/FO
+play,4,1,buhnj001,22,CBSBX,D7.1-H
+play,4,1,lampt001,11,CBX,D9.2-H
+play,4,1,belld002,02,CCS,K
+play,4,1,wilsd001,22,CBSBFS,K
+play,5,0,randj002,22,CBBCX,53/G
+play,5,0,poses001,22,BSFBS,K
+play,5,0,johnb002,12,BFFS,K
+play,5,1,mclem001,00,,NP
+sub,poses001,"Scott Pose",0,7,8
+play,5,1,mclem001,00,,NP
+sub,mccad001,"David McCarty",0,1,7
+play,5,1,mclem001,31,CBBBX,31/G
+play,5,1,javis001,00,X,4/L4
+play,5,1,rodra001,20,BBX,S7
+play,5,1,olerj001,31,BBBCB,W.1-2
+play,5,1,ibanr001,02,SFX,2/FL
+play,6,0,sancr001,11,BCX,63/G
+play,6,0,mccad001,10,BX,63/G
+play,6,0,feblc001,32,BFSBBX,43/G
+play,6,1,buhnj001,00,,NP
+sub,spraj001,"Jerry Spradlin",0,0,1
+play,6,1,buhnj001,11,BCX,7/F7
+play,6,1,lampt001,22,BBFSS,K
+play,6,1,belld002,10,BX,63/G
+play,7,0,sweem002,20,BBX,S7
+play,7,0,dye-j001,00,,NP
+sub,abbop001,"Paul Abbott",1,0,1
+play,7,0,dye-j001,21,FBBX,6/P6
+play,7,0,quinm001,12,BCSFX,64(1)3/GDP
+play,7,1,wilsd001,02,CSX,53/G
+play,7,1,mclem001,32,CFFBBBS,K
+play,7,1,javis001,12,BFCFX,D/78
+play,7,1,rodra001,20,BBX,2/FL
+play,8,0,randj002,31,CBBBB,W
+play,8,0,poses001,12,FBSFFX,64(1)/FO
+play,8,0,johnb002,02,CSS,K
+play,8,0,sancr001,10,BX,9/F9
+play,8,1,olerj001,00,,NP
+sub,reicd001,"Dan Reichert",0,0,1
+play,8,1,olerj001,22,CFBBC,K/C
+play,8,1,ibanr001,10,BX,63/G
+play,8,1,buhnj001,12,BCFS,K
+play,9,0,mccad001,00,,NP
+sub,javis001,"Stan Javier",1,2,9
+play,9,0,mccad001,00,,NP
+sub,gipsc001,"Charles Gipson",1,6,8
+play,9,0,mccad001,00,,NP
+sub,sasak001,"Kazuhiro Sasaki",1,0,1
+play,9,0,mccad001,11,BCX,HR/7
+play,9,0,feblc001,32,BBCFFBX,53/G
+play,9,0,sweem002,22,BBCFX,53/G
+play,9,0,dye-j001,31,BCBBX,S8/8S
+play,9,0,quinm001,11,BCX,8/F8
+data,er,witaj001,4
+data,er,spraj001,0
+data,er,reicd001,0
+data,er,tomkb001,1
+data,er,abbop001,0
+data,er,sasak001,1

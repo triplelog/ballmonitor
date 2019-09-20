@@ -1,0 +1,145 @@
+version,2
+info,visteam,BOS
+info,hometeam,ATL
+info,site,ATL02
+info,date,2000/06/11
+info,number,0
+info,starttime,1:10PM
+info,daynight,day
+info,usedh,false
+info,umphome,hirsm901
+info,ump1b,bellw901
+info,ump2b,onorb901
+info,ump3b,iassd901
+info,pitches,pitches
+info,temp,86
+info,winddir,tocf
+info,windspeed,3
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,173
+info,attendance,47437
+info,wp,garcr001
+info,lp,seanr001
+info,save,lowed001
+start,offej001,"Jose Offerman",0,1,3
+start,fryej001,"Jeff Frye",0,2,4
+start,garcn001,"Nomar Garciaparra",0,3,6
+start,everc001,"Carl Everett",0,4,8
+start,oleat001,"Troy O'Leary",0,5,7
+start,varij001,"Jason Varitek",0,6,2
+start,alexm001,"Manny Alexander",0,7,5
+start,lewid001,"Darren Lewis",0,8,9
+start,martr002,"Ramon Martinez",0,9,1
+start,veraq001,"Quilvio Veras",1,1,4
+start,jonea002,"Andruw Jones",1,2,8
+start,jonec004,"Chipper Jones",1,3,5
+start,joynw001,"Wally Joyner",1,4,3
+start,jordb001,"Brian Jordan",1,5,9
+start,lopej001,"Javy Lopez",1,6,2
+start,sandr002,"Reggie Sanders",1,7,7
+start,furcr001,"Rafael Furcal",1,8,6
+start,glavt001,"Tom Glavine",1,9,1
+play,1,0,offej001,32,CBBBCFFB,W
+play,1,0,fryej001,22,BBCFC,K/C
+play,1,0,garcn001,21,BCBX,D9.1-H
+badj,everc001,L
+play,1,0,everc001,12,CCBX,D7.2-H
+play,1,0,oleat001,11,CBX,43/G.2-3
+play,1,0,varij001,22,BCBCX,6/P6
+play,1,1,veraq001,11,CBX,43/G
+play,1,1,jonea002,11,BFX,63/G
+play,1,1,jonec004,00,X,S7
+play,1,1,joynw001,30,BBBB,W.1-2
+play,1,1,jordb001,32,BCBFBX,53/G
+play,2,0,alexm001,02,CFC,K/C
+play,2,0,lewid001,12,CBFX,7/L7
+play,2,0,martr002,11,CBX,3/G
+play,2,1,lopej001,02,SSFC,K/C
+play,2,1,sandr002,02,CCC,K/C
+play,2,1,furcr001,01,CX,43/G
+play,3,0,offej001,10,BX,63/G
+play,3,0,fryej001,12,BCFC,K/C
+play,3,0,garcn001,00,X,9/F9
+play,3,1,glavt001,01,CX,43/G
+play,3,1,veraq001,11,BFX,43/G
+play,3,1,jonea002,12,FBFFX,43/G
+badj,everc001,L
+play,4,0,everc001,22,FBBCX,S
+play,4,0,oleat001,00,X,1(B)3(1)/LDP
+play,4,0,varij001,11,SBX,9/F9
+play,4,1,jonec004,01,CX,43/G
+play,4,1,joynw001,22,BSBFX,7/F7
+play,4,1,jordb001,01,FX,5/L5
+play,5,0,alexm001,10,BX,S/78
+play,5,0,lewid001,32,BBBCCC,K/C
+play,5,0,martr002,02,SSL,K/BF
+play,5,0,offej001,32,BCBFBB,W.1-2
+play,5,0,fryej001,12,CBCFFC,K/C
+play,5,1,lopej001,12,SBCC,K/C
+play,5,1,sandr002,00,X,13/G
+play,5,1,furcr001,00,X,43/G
+play,6,0,garcn001,00,X,S7
+badj,everc001,L
+play,6,0,everc001,30,BBBB,W.1-2
+play,6,0,oleat001,10,BX,4(1)3/GDP.2-3
+play,6,0,varij001,22,CFBFBX,43/G
+play,6,1,glavt001,12,BFFC,K/C
+play,6,1,veraq001,31,BSBBX,D9
+play,6,1,jonea002,12,CCBX,43/G.2-3
+play,6,1,jonec004,31,BBBFB,W
+play,6,1,joynw001,00,X,S8/8S.3-H;1-3
+play,6,1,jordb001,20,BBX,64(1)/FO
+play,7,0,alexm001,22,CCBBX,53/G
+play,7,0,lewid001,00,X,9/F9S
+play,7,0,martr002,10,BX,63/G
+play,7,1,lopej001,12,CSFBX,S8
+play,7,1,sandr002,21,BBCX,S7.1-2
+play,7,1,furcr001,00,X,54/SH.2-3;1-2
+play,7,1,glavt001,00,,NP
+sub,galaa001,"Andres Galarraga",1,9,11
+play,7,1,galaa001,30,IIII,IW
+play,7,1,veraq001,00,,NP
+sub,garcr001,"Rich Garces",0,9,1
+play,7,1,veraq001,11,FBX,64(1)/FO.3-H;2-3
+play,7,1,jonea002,02,CCFS,K
+play,8,0,offej001,00,,NP
+sub,seanr001,"Rudy Seanez",1,9,1
+play,8,0,offej001,02,CSX,D8.B-H(E8)
+play,8,0,fryej001,12,BFFX,S
+play,8,0,garcn001,30,BBBB,W.1-2
+play,8,0,everc001,00,,NP
+sub,chenb001,"Bruce Chen",1,9,1
+play,8,0,everc001,00,X,9/F9.2-3
+play,8,0,oleat001,22,BBFSX,8/SF.3-H
+play,8,0,varij001,30,BBBB,W.1-2
+play,8,0,alexm001,10,BX,6/P6
+play,8,1,jonec004,22,CBSBX,D/89D
+play,8,1,joynw001,00,,NP
+sub,veraw001,"Wilton Veras",0,9,5
+play,8,1,joynw001,00,,NP
+sub,lowed001,"Derek Lowe",0,7,1
+play,8,1,joynw001,00,X,13/G.2-3
+play,8,1,jordb001,32,BFBFFBX,63/G.3-H
+play,8,1,lopej001,22,CBBSS,K
+play,9,0,lewid001,02,SCX,S8/8S
+play,9,0,veraw001,00,X,34/SH.1-2
+play,9,0,offej001,11,SBB,SB3
+play,9,0,offej001,21,SBBB,BK.3-H
+play,9,0,offej001,31,SBBBB,W
+play,9,0,fryej001,00,,NP
+sub,wengd001,"Don Wengert",1,9,1
+play,9,0,fryej001,02,CFX,54(1)3/GDP
+play,9,1,sandr002,22,CBSBS,K
+play,9,1,furcr001,21,BCBX,S
+play,9,1,wengd001,00,,NP
+sub,lockk001,"Keith Lockhart",1,9,11
+play,9,1,lockk001,22,BFFBFX,46(1)3/GDP
+data,er,martr002,2
+data,er,garcr001,1
+data,er,lowed001,0
+data,er,glavt001,2
+data,er,seanr001,2
+data,er,chenb001,1
+data,er,wengd001,0

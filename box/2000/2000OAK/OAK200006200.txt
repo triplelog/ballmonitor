@@ -1,0 +1,131 @@
+version,2
+info,visteam,BAL
+info,hometeam,OAK
+info,site,OAK01
+info,date,2000/06/20
+info,number,0
+info,starttime,12:35PM
+info,daynight,day
+info,usedh,true
+info,umphome,cousd901
+info,ump1b,marqa901
+info,ump2b,nelsj901
+info,ump3b,higgs901
+info,pitches,pitches
+info,temp,68
+info,winddir,tolf
+info,windspeed,6
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,158
+info,attendance,20337
+info,wp,hudst001
+info,lp,ponss001
+info,save,isrij001
+start,deshd001,"Delino DeShields",0,1,4
+start,bordm001,"Mike Bordick",0,2,6
+start,clarw001,"Will Clark",0,3,3
+start,bellj002,"Albert Belle",0,4,9
+start,surhb001,"B.J. Surhoff",0,5,7
+start,ripkc001,"Cal Ripken",0,6,5
+start,bainh001,"Harold Baines",0,7,10
+start,myerg001,"Greg Myers",0,8,2
+start,matol001,"Luis Matos",0,9,8
+start,ponss001,"Sidney Ponson",0,0,1
+start,longt002,"Terrence Long",1,1,8
+start,velar001,"Randy Velarde",1,2,4
+start,giamj001,"Jason Giambi",1,3,3
+start,grieb001,"Ben Grieve",1,4,7
+start,jahaj001,"John Jaha",1,5,10
+start,staim001,"Matt Stairs",1,6,9
+start,tejam001,"Miguel Tejada",1,7,6
+start,chave001,"Eric Chavez",1,8,5
+start,hernr002,"Ramon Hernandez",1,9,2
+start,hudst001,"Tim Hudson",1,0,1
+play,1,0,deshd001,00,X,3/G
+play,1,0,bordm001,21,CBBX,9/F9
+play,1,0,clarw001,12,SFFFFBC,K/C
+play,1,1,longt002,02,CSC,K/C
+play,1,1,velar001,31,BBBCB,W
+play,1,1,giamj001,11,BFX,6/P6
+play,1,1,grieb001,11,BCX,4/L4
+play,2,0,bellj002,00,X,9/F9
+play,2,0,surhb001,20,BBX,9/F9D
+play,2,0,ripkc001,01,SX,53/G
+play,2,1,jahaj001,32,CCFBBBS,K
+play,2,1,staim001,20,BBX,6/FL
+play,2,1,tejam001,12,BCFS,K
+play,3,0,bainh001,11,BFX,HR/9
+play,3,0,myerg001,00,X,S9
+play,3,0,matol001,22,CBLBFX,64(1)3/GDP
+play,3,0,deshd001,01,SX,63/G
+play,3,1,chave001,20,BBX,8/F8
+play,3,1,hernr002,02,CFC,K/C
+play,3,1,longt002,00,X,S8
+play,3,1,velar001,32,BCBCBB,W.1-2
+play,3,1,giamj001,21,BCBX,S9.2-H;1-3
+play,3,1,grieb001,12,SFFBS,K
+play,4,0,bordm001,11,BFX,43/G
+play,4,0,clarw001,01,FX,8/F8
+play,4,0,bellj002,00,X,8/F8
+play,4,1,jahaj001,22,CBBFS,K
+play,4,1,staim001,11,CBX,7/F7
+play,4,1,tejam001,11,BFX,S9/9S
+play,4,1,chave001,00,X,3/G
+play,5,0,surhb001,00,X,S9
+play,5,0,ripkc001,00,S,SB2.1-3(E2/TH2)
+play,5,0,ripkc001,12,SFFBX,43/G.3-H
+play,5,0,bainh001,32,BSCBBC,K/C
+play,5,0,myerg001,22,FFBBX,S7/7S
+play,5,0,matol001,22,SCBBS,K
+play,5,1,hernr002,10,BX,S8
+play,5,1,longt002,00,X,7/F7D
+play,5,1,velar001,32,BCBBCX,8/F8
+play,5,1,giamj001,12,BCSX,7/F7S
+play,6,0,deshd001,31,BBCBX,7/F7
+play,6,0,bordm001,22,CBFBX,S
+play,6,0,clarw001,00,X,HR/8.1-H
+play,6,0,bellj002,00,X,9/F9
+play,6,0,surhb001,30,BBBX,7/F7
+play,6,1,grieb001,11,CBX,HR/9
+play,6,1,jahaj001,22,SBSBS,K
+play,6,1,staim001,11,FBX,S9
+play,6,1,tejam001,12,CFFBS,K
+play,6,1,chave001,01,CX,HR/9.1-H
+play,6,1,hernr002,12,SFBX,7/F7
+play,7,0,ripkc001,01,FX,63/G
+play,7,0,bainh001,00,X,13/G
+play,7,0,myerg001,10,BX,43/G
+play,7,1,longt002,02,CFX,7/FL
+play,7,1,velar001,10,BX,8/F8D
+play,7,1,giamj001,11,CBX,5/FL
+play,8,0,matol001,22,CFBBX,43/G
+play,8,0,deshd001,00,X,63/G
+play,8,0,bordm001,32,CCBBBX,HR/7
+play,8,0,clarw001,00,X,S9/9S
+play,8,0,bellj002,12,FBFB,WP.1-2
+play,8,0,bellj002,22,FBFBFX,13/G
+play,8,1,grieb001,10,BX,7/F7
+play,8,1,jahaj001,02,CSS,K
+play,8,1,staim001,30,BBBX,HR/9
+play,8,1,tejam001,32,BCBFFBFFB,W
+play,8,1,chave001,30,BBBB,W.1-2
+play,8,1,hernr002,00,,NP
+sub,maduc001,"Calvin Maduro",0,0,1
+play,8,1,hernr002,31,BFBBX,HR/8.2-H;1-H
+play,8,1,longt002,32,CBBFBFB,W
+play,8,1,velar001,10,BX,9/F9
+play,9,0,surhb001,00,,NP
+sub,isrij001,"Jason Isringhausen",1,0,1
+play,9,0,surhb001,00,,NP
+sub,chrir001,"Ryan Christenson",1,4,7
+play,9,0,surhb001,21,CBBX,S9
+play,9,0,ripkc001,10,BX,8/F8
+play,9,0,bainh001,02,FFFB,SB2
+play,9,0,bainh001,12,FFFBFFX,3/G.2-3
+play,9,0,myerg001,22,BFFBFS,K
+data,er,ponss001,7
+data,er,maduc001,1
+data,er,hudst001,5
+data,er,isrij001,0

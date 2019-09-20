@@ -1,0 +1,164 @@
+version,2
+info,visteam,TBA
+info,hometeam,TOR
+info,site,TOR02
+info,date,2000/09/23
+info,number,0
+info,starttime,4:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,riekr901
+info,ump1b,guccc901
+info,ump2b,davig901
+info,ump3b,emmep901
+info,pitches,pitches
+info,temp,72
+info,winddir,ltor
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,183
+info,attendance,24473
+info,wp,kochb001
+info,lp,endet001
+info,save,
+start,tynej001,"Jason Tyner",0,1,8
+start,winnr001,"Randy Winn",0,2,7
+start,cox-s001,"Steve Cox",0,3,10
+start,mcgrf001,"Fred McGriff",0,4,3
+start,huffa001,"Aubrey Huff",0,5,5
+start,timmo001,"Ozzie Timmons",0,6,9
+start,smitr003,"Bobby Smith",0,7,4
+start,difem001,"Mike DiFelice",0,8,2
+start,martf001,"Felix Martinez",0,9,6
+start,rekab001,"Bryan Rekar",0,0,1
+start,stews002,"Shannon Stewart",1,1,7
+start,gonza001,"Alex S. Gonzalez",1,2,6
+start,mondr002,"Raul Mondesi",1,3,9
+start,delgc001,"Carlos Delgado",1,4,3
+start,fullb001,"Brad Fullmer",1,5,10
+start,batit001,"Tony Batista",1,6,5
+start,fletd001,"Darrin Fletcher",1,7,2
+start,cruzj004,"Jose Cruz",1,8,8
+start,grebc001,"Craig Grebeck",1,9,4
+start,hallr001,"Roy Halladay",1,0,1
+play,1,0,tynej001,11,CBX,43/G
+play,1,0,winnr001,22,CBBCX,7/F7
+play,1,0,cox-s001,32,BBFBFFX,S8
+play,1,0,mcgrf001,11,BCX,HR/89.1-H
+com,"$McGriff's 200th AL homer; only second player with 200 in each"
+com,"league (Frank Robinson)"
+play,1,0,huffa001,22,CBBCS,K
+play,1,1,stews002,12,BFCFX,63/G
+play,1,1,gonza001,22,BCCBS,K
+play,1,1,mondr002,10,BX,S
+play,1,1,delgc001,22,BFFBFX,5/FL
+play,2,0,timmo001,02,CCFX,D7
+play,2,0,smitr003,00,X,S9.2-3
+play,2,0,difem001,00,X,46(1)3/GDP.3-H
+play,2,0,martf001,12,BSSS,K+WP.B-1
+play,2,0,tynej001,21,BBCB,CS2(24)
+play,2,1,fullb001,22,BBFCFFFS,K
+play,2,1,batit001,32,CFFBBBX,53/G
+play,2,1,fletd001,12,FSBX,8/F8D
+play,3,0,tynej001,12,BCCX,63/G
+play,3,0,winnr001,31,BBBCX,43/G
+play,3,0,cox-s001,32,SCBBBS,K
+play,3,1,cruzj004,02,FSS,K
+play,3,1,grebc001,30,BBBB,W
+play,3,1,stews002,00,X,46(1)/FO
+play,3,1,gonza001,02,SSX,S/89S.1-3
+play,3,1,mondr002,21,BBSX,7/F7
+play,4,0,mcgrf001,22,BCBFX,S9
+play,4,0,huffa001,31,BBBCB,W.1-2
+play,4,0,timmo001,11,BCX,HR/7.2-H;1-H
+play,4,0,smitr003,00,,NP
+sub,painl001,"Lance Painter",1,0,1
+play,4,0,smitr003,00,X,43/G
+play,4,0,difem001,11,BCX,D7
+play,4,0,martf001,22,FBBSX,7/F7
+play,4,0,tynej001,22,BBCFX,4/L4
+play,4,1,delgc001,20,BBX,6/P6
+play,4,1,fullb001,00,X,S8
+play,4,1,batit001,31,CBBBB,W.1-2
+play,4,1,fletd001,11,BFX,S8.2-3;1-2
+play,4,1,cruzj004,22,FBBCFFX,S8.3-H;2-3;1-2
+play,4,1,grebc001,10,BX,46(1)/FO.3-H;2-3
+play,4,1,stews002,11,BSX,6/P6
+play,5,0,winnr001,12,CBFC,K/C
+play,5,0,cox-s001,22,CFBBS,K
+play,5,0,mcgrf001,00,X,8/F8D
+play,5,1,gonza001,00,X,53/G
+play,5,1,mondr002,12,BCFFFS,K
+play,5,1,delgc001,31,BBBCB,W
+play,5,1,fullb001,12,CFFFBX,S.1-2
+play,5,1,batit001,22,BFSBX,54(1)/FO
+play,6,0,huffa001,21,SBBX,43/G
+play,6,0,timmo001,32,CBBBFX,53/G
+play,6,0,smitr003,11,BFX,8/L8
+play,6,1,fletd001,00,,NP
+sub,creed001,"Doug Creek",0,0,1
+play,6,1,fletd001,20,BBX,S/89
+play,6,1,cruzj004,21,BBFX,D7/7D.1-H(E7/TH);B-H(NR)
+play,6,1,grebc001,22,BFBCFS,K
+play,6,1,stews002,20,BBX,HR/7
+play,6,1,gonza001,00,,NP
+sub,wheed001,"Dan Wheeler",0,0,1
+play,6,1,gonza001,31,BBBCB,W
+play,6,1,mondr002,00,X,14(1)3/GDP
+play,7,0,difem001,10,BX,D9
+play,7,0,martf001,10,BX,53/SH.2-3#
+play,7,0,tynej001,21,FBBX,63/G
+play,7,0,winnr001,30,BBBB,W
+play,7,0,cox-s001,00,,NP
+sub,guthm001,"Mark Guthrie",1,0,1
+play,7,0,cox-s001,22,CBSBX,8/F8
+play,7,1,delgc001,22,BBFSFX,63/G
+play,7,1,fullb001,21,CBBX,8/F8
+play,7,1,batit001,22,BBFFS,K
+play,8,0,mcgrf001,10,BX,6/P6
+play,8,0,huffa001,12,CBCFX,S7
+play,8,0,timmo001,00,,NP
+sub,quanp001,"Paul Quantrill",1,0,1
+play,8,0,timmo001,00,,NP
+sub,johnr006,"Russ Johnson",0,5,12
+play,8,0,timmo001,02,CCX,53/G.1-2
+play,8,0,smitr003,01,FX,53/G
+play,8,1,fletd001,00,,NP
+sub,johnr006,"Russ Johnson",0,5,5
+play,8,1,fletd001,00,,NP
+sub,yan-e001,"Esteban Yan",0,0,1
+play,8,1,fletd001,12,FBFS,K
+play,8,1,cruzj004,00,X,S8
+play,8,1,grebc001,00,,NP
+sub,martd002,"Dave Martinez",1,9,11
+play,8,1,martd002,01,FX,S8/8S.1-2
+play,8,1,stews002,31,BBBCX,8/F8.2-3
+play,8,1,gonza001,02,CSFX,S7.3-H;1-2
+play,8,1,mondr002,12,BFFS,K
+play,9,0,difem001,00,,NP
+sub,moram001,"Mickey Morandini",1,3,4
+play,9,0,difem001,00,,NP
+sub,martd002,"Dave Martinez",1,9,9
+play,9,0,difem001,00,,NP
+sub,kochb001,"Billy Koch",1,0,1
+play,9,0,difem001,02,CSX,8/F8
+play,9,0,martf001,22,CFBFBX,5/L5
+play,9,0,tynej001,00,X,43/G
+play,9,1,delgc001,00,,NP
+sub,endet001,"Trevor Enders",0,0,1
+play,9,1,delgc001,01,CX,3/G
+play,9,1,fullb001,22,BCBSS,K
+play,9,1,batit001,32,BFFBBFB,W
+play,9,1,fletd001,10,BX,D7.1-H
+data,er,rekab001,2
+data,er,creed001,3
+data,er,wheed001,0
+data,er,yan-e001,1
+data,er,endet001,1
+data,er,hallr001,6
+data,er,painl001,0
+data,er,guthm001,0
+data,er,quanp001,0
+data,er,kochb001,0

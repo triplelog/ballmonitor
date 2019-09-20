@@ -1,0 +1,166 @@
+version,2
+info,visteam,DET
+info,hometeam,TBA
+info,site,STP01
+info,date,2000/07/03
+info,number,0
+info,starttime,7:15PM
+info,daynight,night
+info,usedh,true
+info,umphome,younl901
+info,ump1b,klemj901
+info,ump2b,barkl901
+info,ump3b,craft901
+info,pitches,pitches
+info,temp,72
+info,winddir,ltor
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,195
+info,attendance,15709
+info,wp,pattd001
+info,lp,hernr001
+info,save,jonet003
+start,polol001,"Luis Polonia",0,1,10
+start,beckr002,"Rich Becker",0,2,9
+start,higgb001,"Bobby Higginson",0,3,7
+start,palmd002,"Dean Palmer",0,4,5
+start,easld001,"Damion Easley",0,5,4
+start,fickr001,"Robert Fick",0,6,3
+start,ausmb001,"Brad Ausmus",0,7,2
+start,encaj001,"Juan Encarnacion",0,8,8
+start,cruzd001,"Deivi Cruz",0,9,6
+start,blaiw001,"Willie Blair",0,0,1
+start,winnr001,"Randy Winn",1,1,8
+start,willg001,"Gerald Williams",1,2,10
+start,tramb001,"Bubba Trammell",1,3,7
+start,mcgrf001,"Fred McGriff",1,4,3
+start,smitr003,"Bobby Smith",1,5,4
+start,castv001,"Vinny Castilla",1,6,5
+start,guilj001,"Jose Guillen",1,7,9
+start,difem001,"Mike DiFelice",1,8,2
+start,martf001,"Felix Martinez",1,9,6
+start,yan-e001,"Esteban Yan",1,0,1
+play,1,0,polol001,01,CX,43/G
+play,1,0,beckr002,31,BBBCB,W
+play,1,0,higgb001,12,BSSX,8/F8
+play,1,0,palmd002,12,SBCS,K
+play,1,1,winnr001,32,CBBBCX,3/G
+play,1,1,willg001,11,BFX,D9
+play,1,1,tramb001,22,CCBBX,7/F7
+play,1,1,mcgrf001,31,BFBBX,8/F8
+play,2,0,easld001,02,CFS,K
+play,2,0,fickr001,22,BBCFC,K/C
+play,2,0,ausmb001,22,BFSBX,S8
+play,2,0,encaj001,00,X,6/P6
+play,2,1,smitr003,00,X,3/P3
+play,2,1,castv001,00,X,8/F8
+play,2,1,guilj001,32,FBFFBBS,K
+play,3,0,cruzd001,11,BFX,D9
+play,3,0,polol001,00,X,23/SH.2-3
+play,3,0,beckr002,00,X,8/SF.3-H
+play,3,0,higgb001,22,BSBFX,D9
+play,3,0,palmd002,11,BFX,9/F9
+play,3,1,difem001,10,BX,43/G
+play,3,1,martf001,31,BBCBB,W
+play,3,1,winnr001,21,LBBX,S7.1-2
+play,3,1,willg001,10,BX,43/G.2-3;1-2
+play,3,1,tramb001,11,FBX,D9.3-H;2-H
+play,3,1,mcgrf001,12,BFCFC,K/C
+play,4,0,easld001,21,BBFX,7/L7
+play,4,0,fickr001,11,FBX,S7
+play,4,0,ausmb001,02,CFFX,9/F9
+play,4,0,encaj001,21,CBBX,S8.1-2
+play,4,0,cruzd001,20,BBX,D8.2-H;1-H
+play,4,0,polol001,11,BFX,8/F8
+play,4,1,smitr003,12,FFBS,K23
+play,4,1,castv001,10,BX,63/G
+play,4,1,guilj001,30,BBBB,W
+play,4,1,difem001,22,FSBBFX,HR/8.1-H
+play,4,1,martf001,00,X,D9/9D
+play,4,1,winnr001,12,BCCS,K
+play,5,0,beckr002,00,X,D9
+play,5,0,higgb001,32,BBBFSX,9/F9D.2-3
+play,5,0,palmd002,20,BBX,S7.3-H;BX2(74)
+play,5,0,easld001,01,CX,63/G
+play,5,1,willg001,11,BCX,S8
+play,5,1,tramb001,11,CBX,3/P3
+play,5,1,mcgrf001,12,FBSX,8/F8
+play,5,1,smitr003,22,BFBFX,64(1)/FO
+play,6,0,fickr001,00,,NP
+sub,creed001,"Doug Creek",1,0,1
+play,6,0,fickr001,21,BBCX,7/FL
+play,6,0,ausmb001,20,BBX,9/F9
+play,6,0,encaj001,00,X,D9
+play,6,0,cruzd001,31,BBCBB,W
+play,6,0,polol001,32,CBCBBFX,5/P5
+play,6,1,castv001,00,,NP
+sub,cruzn001,"Nelson Cruz",0,0,1
+play,6,1,castv001,00,X,53/G
+play,6,1,guilj001,12,FBSFX,63/G
+play,6,1,difem001,31,BBBCX,8/F8
+play,7,0,beckr002,32,BCBFBB,W
+play,7,0,higgb001,22,BCBFX,9/F9
+play,7,0,palmd002,00,,NP
+sub,mecij001,"Jim Mecir",1,0,1
+play,7,0,palmd002,12,BFCX,64(1)3/GDP
+play,7,1,martf001,32,BBCBCX,3/G
+play,7,1,winnr001,00,H,HP
+play,7,1,willg001,31,FBBB1,PO1(13)
+play,7,1,willg001,31,FBBB1B,W
+play,7,1,tramb001,02,CSS,K
+play,8,0,easld001,10,BX,5/FL
+play,8,0,fickr001,12,FLBX,5/FL
+play,8,0,ausmb001,32,CBBBCB,W
+play,8,0,encaj001,10,BB,SB2
+play,8,0,encaj001,20,BBX,9/F9D
+play,8,1,mcgrf001,00,,NP
+sub,andem002,"Matt Anderson",0,0,1
+play,8,1,mcgrf001,22,BSBSX,S7
+play,8,1,smitr003,11,CBX,64(1)3/GDP
+play,8,1,castv001,32,SBBBFX,8/F8
+play,9,0,cruzd001,00,,NP
+sub,hernr001,"Roberto Hernandez",1,0,1
+play,9,0,cruzd001,00,X,63/G
+play,9,0,polol001,02,CSX,S8
+play,9,0,beckr002,21,BFBC,CS2(26)
+play,9,0,beckr002,22,BFBCFC,K/C
+play,9,1,guilj001,11,BFX,63/G
+play,9,1,difem001,31,BBBCB,W
+play,9,1,martf001,00,,NP
+sub,cox-s001,"Steve Cox",1,9,11
+play,9,1,cox-s001,00,,NP
+sub,cairm001,"Miguel Cairo",1,8,12
+play,9,1,cox-s001,30,BBBB,W.1-2
+play,9,1,winnr001,00,,NP
+sub,pattd001,"Danny Patterson",0,0,1
+play,9,1,winnr001,00,,NP
+sub,guilo001,"Ozzie Guillen",1,9,12
+play,9,1,winnr001,00,X,3/G.2-3;1-2
+play,9,1,willg001,02,CSS,K
+play,10,0,higgb001,00,,NP
+sub,guilo001,"Ozzie Guillen",1,9,6
+play,10,0,higgb001,00,,NP
+sub,flahj001,"John Flaherty",1,8,2
+play,10,0,higgb001,20,BBX,6/L6
+play,10,0,palmd002,22,CCBBFS,K
+play,10,0,easld001,21,FBBX,HR/8
+play,10,0,fickr001,00,X,8/F8
+play,10,1,tramb001,00,,NP
+sub,jonet003,"Todd Jones",0,0,1
+play,10,1,tramb001,32,SBBBFB,W
+play,10,1,mcgrf001,12,CFBB,PB.1-2
+play,10,1,mcgrf001,32,CFBBBFS,K
+play,10,1,smitr003,22,BSBFC,K/C
+play,10,1,castv001,02,SSFS,K
+data,er,blaiw001,4
+data,er,cruzn001,0
+data,er,andem002,0
+data,er,pattd001,0
+data,er,jonet003,0
+data,er,yan-e001,4
+data,er,creed001,0
+data,er,mecij001,0
+data,er,hernr001,1

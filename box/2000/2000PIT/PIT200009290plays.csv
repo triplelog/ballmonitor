@@ -1,0 +1,99 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,01,1,,,,,0,2,CX,serad001,1,0,youne001 grounds out. ,youne001,0,G
+,11,1,,,,,1,5,CBX,serad001,1,0,,gutir001,0,F
+,12,1,,,,,2,9,BSFC,serad001,1,0,sosas001 strikes out. ,sosas001,0,
+,21,1,,,,,3,4,BBCX,spraj001,1,0,,benjm001,1,P
+,02,1,,,,,4,7,CFS,spraj001,1,0,kendj001 strikes out. ,kendj001,1,
+,00,1,gileb002,,,,5,8,X,spraj001,0,0,gileb002 singles. ,gileb002,1,
+gileb002 to 3B. ,22,1,vandj001,,gileb002,,6,13,BBSCX,spraj001,0,0,vandj001 singles. ,vandj001,1,
+vandj001 to 2B. ,32,1,osikk001,vandj001,gileb002,,7,19,CBCBBB,spraj001,0,0,osikk001 walks. ,osikk001,1,
+,00,1,osikk001,vandj001,gileb002,,8,20,X,spraj001,1,0,,morrw001,1,F
+,00,2,,zulej001,,,9,10,X,serad001,0,0,zulej001 doubles. ,zulej001,0,
+zulej001 to 3B. ,11,2,,,zulej001,,10,13,SBX,serad001,1,0,andrs001 grounds out. ,andrs001,0,G
+,10,2,,,zulej001,,11,15,BX,serad001,1,0,,bufod001,0,L
+,31,2,mattg002,,zulej001,,12,20,SBBBB,serad001,0,0,mattg002 walks. ,mattg002,0,
+,00,2,mattg002,,zulej001,,13,21,X,serad001,1,0,,giraj001,0,L
+,22,2,browe001,,,,14,27,FBCFBFH,spraj001,0,0,browe001 hit by pitch. ,browe001,1,
+,11,2,,browe001,,herna001,15,30,BFS,spraj001,0,0,browe001 steals 2B. ,herna001,1,
+,32,2,,browe001,,,16,36,BFSBBS,spraj001,1,0,herna001 strikes out. ,herna001,1,
+browe001 scores. ,12,2,serad001,,,,17,40,CSBX,spraj001,0,1,serad001 singles. ,serad001,1,
+,22,2,serad001,,,,18,45,CBBFS,spraj001,1,0,benjm001 strikes out. ,benjm001,1,
+serad001 to 2B. ,11,2,kendj001,serad001,,,19,48,BCX,spraj001,0,0,kendj001 singles. ,kendj001,1,
+serad001 to 3B. kendj001 to 2B. ,31,2,gileb002,kendj001,serad001,,20,53,BBSBB,spraj001,0,0,gileb002 walks. ,gileb002,1,
+serad001 scores. kendj001 scores. gileb002 to 3B. ,01,2,vandj001,,gileb002,,21,55,SX,spraj001,0,2,vandj001 singles. ,vandj001,1,
+,10,2,,,gileb002,osikk001,22,57,B+1,spraj001,1,0,vandj001 picked off. ,osikk001,1,
+,12,3,,,,,23,25,CSBS,serad001,1,0,spraj001 strikes out. ,spraj001,0,
+,10,3,,,,,24,27,BX,serad001,1,0,,youne001,0,P
+,02,3,gutir001,,,,25,30,CFX,serad001,0,0,gutir001 singles. ,gutir001,0,
+,31,3,gutir001,,,,26,35,BFBBX,serad001,1,0,,sosas001,0,P
+,22,3,osikk001,,,,27,62,BCBFX,spraj001,0,0,osikk001 singles. ,osikk001,1,
+,00,3,osikk001,,,,28,63,X,spraj001,1,0,,morrw001,1,F
+osikk001 to 3B. ,00,3,,browe001,osikk001,,29,64,X,spraj001,0,0,browe001 doubles. ,browe001,1,
+osikk001 scores. browe001 to 3B. herna001 to 1B. ,00,3,herna001,,browe001,,30,65,X,spraj001,0,1,herna001 hits into a fielder's choice. ,herna001,1,
+herna001 to 2B. ,00,3,,herna001,browe001,,31,66,X,spraj001,1,0,Sacrifice bunt by serad001.,serad001,1,
+,20,3,,herna001,browe001,,32,69,BBX,spraj001,1,0,benjm001 grounds out. ,benjm001,1,G
+,10,4,zulej001,,,,33,37,BX,serad001,0,0,zulej001 singles. ,zulej001,0,
+zulej001 to 2B. ,02,4,andrs001,zulej001,,,34,40,CSX,serad001,0,0,andrs001 singles. ,andrs001,0,
+zulej001 to 3B. andrs001 to 2B. ,31,4,bufod001,andrs001,zulej001,,35,45,CBBBB,serad001,0,0,bufod001 walks. ,bufod001,0,
+zulej001 scores. andrs001 scores. bufod001 to 2B. ,02,4,mattg002,bufod001,,,36,48,CCX,serad001,0,2,mattg002 singles. ,mattg002,0,
+bufod001 to 3B. mattg002 to 2B. ,00,4,giraj001,mattg002,bufod001,,37,49,X,serad001,0,0,giraj001 singles. ,giraj001,0,G
+bufod001 scores. mattg002 to 3B. giraj001 to 2B. ,22,4,,giraj001,mattg002,,39,55,CFBFBX,serad001,1,1,meyec001 grounds out. ,meyec001,0,G
+mattg002 out. youne001 to 1B. ,32,4,youne001,giraj001,,,40,62,CBBFBFX,serad001,1,0,youne001 hits into a fielder's choice. ,youne001,0,
+,00,4,youne001,giraj001,,,41,63,X,serad001,1,0,gutir001 grounds out. ,gutir001,0,G
+,01,4,,,,,43,2,CX,farnk001,1,0,,kendj001,1,P
+,32,4,gileb002,,,,44,8,FBBCBB,farnk001,0,0,gileb002 walks. ,gileb002,1,
+,22,4,gileb002,,,,45,13,BCBFS,farnk001,1,0,vandj001 strikes out. ,vandj001,1,
+gileb002 to 2B. ,00,4,,gileb002,,osikk001,46,14,B,farnk001,0,0,Wild Pitch. ,osikk001,1,
+,30,4,osikk001,gileb002,,,47,18,BBBB,farnk001,0,0,osikk001 walks. ,osikk001,1,
+,10,4,osikk001,gileb002,,,48,20,BX,farnk001,1,0,morrw001 grounds out. ,morrw001,1,G
+,01,5,,sosas001,,,49,65,CX,serad001,0,0,sosas001 doubles. ,sosas001,0,
+sosas001 to 3B. ,20,5,,,sosas001,,50,68,BBX,serad001,1,0,zulej001 grounds out. ,zulej001,0,G
+sosas001 scores. ,12,5,,andrs001,,,51,72,BSFX,serad001,0,1,andrs001 doubles. ,andrs001,0,
+,11,5,,andrs001,,,53,3,FBX,wilkm001,1,0,bufod001 grounds out. ,bufod001,0,G
+,21,5,,andrs001,,,54,7,FBBX,wilkm001,1,0,mattg002 grounds out. ,mattg002,0,G
+,31,5,browe001,,,,56,25,BCBBB,farnk001,0,0,browe001 walks. ,browe001,1,
+browe001 to 2B. ,20,5,herna001,browe001,,,57,28,BBX,farnk001,0,0,herna001 singles. ,herna001,1,
+,12,5,herna001,browe001,,,58,32,CBLL,farnk001,1,0,wilkm001 strikes out. ,wilkm001,1,F
+browe001 to 3B. herna001 to 2B. ,00,5,,herna001,browe001,,59,33,X,farnk001,1,0,benjm001 grounds out. ,benjm001,1,G
+,02,5,,herna001,browe001,,60,36,CSS,farnk001,1,0,kendj001 strikes out. ,kendj001,1,
+,30,6,reedj001,,,,61,11,BBBB,wilkm001,0,0,reedj001 walks. ,reedj001,0,
+,22,6,reedj001,,,,62,16,BCBCS,wilkm001,1,0,farnk001 strikes out. ,farnk001,0,
+reedj001 to 2B. ,00,6,youne001,reedj001,,,63,17,X,wilkm001,0,0,youne001 singles. ,youne001,0,
+reedj001 to 3B. youne001 to 2B. ,00,6,,youne001,reedj001,gutir001,64,18,B,wilkm001,0,0,Wild Pitch. ,gutir001,0,
+,22,6,,youne001,reedj001,,65,25,BCSBFFS,wilkm001,1,0,gutir001 strikes out. ,gutir001,0,
+,01,6,,youne001,reedj001,,66,27,FX,wilkm001,1,0,sosas001 grounds out. ,sosas001,0,G
+,31,6,gileb002,,,,67,41,FBBBB,farnk001,0,0,gileb002 walks. ,gileb002,1,
+gileb002 to 2B. ,32,6,vandj001,gileb002,,,68,47,BBFSBB,farnk001,0,0,vandj001 walks. ,vandj001,1,
+,22,6,vandj001,gileb002,,,70,5,BBCLX,rains001,1,0,,osikk001,1,F
+,31,6,vandj001,gileb002,,,71,10,BBBCX,rains001,1,0,,morrw001,1,F
+gileb002 to 3B. vandj001 to 2B. ,31,6,browe001,vandj001,gileb002,,72,15,BSBBB,rains001,0,0,browe001 walks. ,browe001,1,
+,22,6,browe001,vandj001,gileb002,,73,20,BSBFS,rains001,1,0,herna001 strikes out. ,herna001,1,
+,12,7,,zulej001,,,74,31,FSBX,wilkm001,0,0,zulej001 doubles. ,zulej001,0,
+,30,7,andrs001,zulej001,,,75,35,BBBB,wilkm001,0,0,andrs001 walks. ,andrs001,0,
+,12,7,andrs001,zulej001,,,76,39,SBFX,wilkm001,1,0,,bufod001,0,F
+zulej001 to 3B. andrs001 to 2B. ,10,7,,andrs001,zulej001,,77,41,BX,wilkm001,1,0,mattg002 grounds out. ,mattg002,0,G
+,11,7,,andrs001,zulej001,,78,44,SBX,wilkm001,1,0,,reedj001,0,F
+,31,7,browa001,,,,80,25,BBBCB,rains001,0,0,browa001 walks. ,browa001,1,
+browa001 to 2B. ,00,7,,browa001,,,81,26,X,rains001,1,0,Sacrifice bunt by benjm001.,benjm001,1,
+browa001 scores. ,01,7,,,,,82,28,CX,rains001,1,1,kendj001 grounds out. ,kendj001,1,G
+,22,7,,,,,85,7,SFBFFBX,ohmaw001,1,0,gileb002 grounds out. ,gileb002,1,G
+,22,8,,,,,89,6,FBBSFS,loisr001,1,0,pattc001 strikes out. ,pattc001,0,
+,32,8,youne001,,,,90,12,BBCFBB,loisr001,0,0,youne001 walks. ,youne001,0,
+,12,8,,youne001,,gutir001,91,16,CBSB,loisr001,0,0,youne001 steals 2B. ,gutir001,0,
+,32,8,,youne001,,,92,24,CBSBFFBS,loisr001,1,0,gutir001 strikes out. ,gutir001,0,
+,30,8,sosas001,youne001,,,93,28,IIII,loisr001,0,0,sosas001 intentionally walks. ,sosas001,0,
+youne001 to 3B. sosas001 to 2B. ,12,8,,sosas001,youne001,zulej001,94,32,CFBB,loisr001,0,0,Wild Pitch. ,zulej001,0,
+,22,8,,sosas001,youne001,,95,37,CFBBS,loisr001,1,0,zulej001 strikes out. ,zulej001,0,
+,22,8,,,,,96,12,SBSBX,ohmaw001,1,0,,vandj001,1,F
+,11,8,osikk001,,,,97,15,CBX,ohmaw001,0,0,osikk001 singles. ,osikk001,1,
+osikk001 to 2B. ,00,8,morrw001,osikk001,,,98,16,X,ohmaw001,0,0,morrw001 singles. ,morrw001,1,
+wehnj001 to 3B. morrw001 to 2B. ,32,8,browe001,morrw001,wehnj001,,100,22,BBCBSB,ohmaw001,0,0,browe001 walks. ,browe001,1,
+wehnj001 scores. morrw001 to 3B. browe001 to 2B. ,22,8,hyzda001,browe001,morrw001,,104,5,SBSBX,worrt002,0,1,hyzda001 singles. ,hyzda001,1,
+morrw001 scores. browe001 scores. hyzda001 to 2B. ,00,8,browa001,hyzda001,,,105,6,X,worrt002,0,2,browa001 singles. ,browa001,1,
+,01,8,browa001,hyzda001,,,106,8,CX,worrt002,1,0,,benjm001,1,F
+hyzda001 out. browa001 to 2B. ,12,8,kendj001,browa001,,,107,12,BSFX,worrt002,1,0,kendj001 singles. ,kendj001,1,
+,31,9,andrs001,,,,110,5,BBSBB,willm005,0,0,andrs001 walks. ,andrs001,0,
+husoj001 to 2B. ,32,9,gracm001,husoj001,,,112,11,BCSBBB,willm005,0,0,gracm001 walks. ,gracm001,0,
+,02,9,gracm001,husoj001,,,113,14,CSS,willm005,1,0,mattg002 strikes out. ,mattg002,0,
+,22,9,gracm001,husoj001,,,114,19,BSBFX,willm005,1,0,,reedj001,0,F
+,12,9,gracm001,husoj001,,,115,24,FBFFX,willm005,1,0,pattc001 grounds out. ,pattc001,0,G

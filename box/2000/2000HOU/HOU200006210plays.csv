@@ -1,0 +1,85 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,02,1,,,,,0,4,CFFS,doteo001,1,0,hollt001 strikes out. ,hollt001,0,
+,12,1,grudm001,,,,1,8,BCFX,doteo001,0,0,grudm001 singles. ,grudm001,0,
+grudm001 to 2B. ,00,1,shefg001,grudm001,,,2,9,X,doteo001,0,0,shefg001 singles. ,shefg001,0,
+grudm001 scores. shefg001 to 3B. ,12,1,grees001,,shefg001,,3,15,CCFFBX,doteo001,0,1,grees001 singles. ,grees001,0,
+,22,1,grees001,,shefg001,,4,20,SSBBS,doteo001,1,0,karre001 strikes out. ,karre001,0,
+shefg001 scores. grees001 to 2B. ,00,1,,grees001,,belta001,5,21,1,doteo001,0,1,Pickoff error. ,belta001,0,
+,02,1,,grees001,,,6,25,1CSS,doteo001,1,0,belta001 strikes out. ,belta001,0,
+,22,1,,,,,7,5,BCCBX,perec001,1,0,barkg001 grounds out. ,barkg001,1,G
+,32,1,biggc001,,,,8,12,BBBCCFB,perec001,0,0,biggc001 walks. ,biggc001,1,
+,00,1,biggc001,,,,9,13,X,perec001,1,0,,bagwj001,1,P
+biggc001 to 2B. ,32,1,berkl001,biggc001,,,10,19,CBBBFB,perec001,0,0,berkl001 walks. ,berkl001,1,
+biggc001 scores. berkl001 to 3B. aloum001 to 2B. ,00,1,,aloum001,berkl001,,11,20,X,perec001,0,1,aloum001 singles. ,aloum001,1,
+,00,1,,aloum001,berkl001,,12,21,X,perec001,1,0,lugoj001 grounds out. ,lugoj001,1,G
+,30,2,kreuc001,,,,13,29,BBBB,doteo001,0,0,kreuc001 walks. ,kreuc001,0,
+,22,2,kreuc001,,,,14,34,CCBBS,doteo001,1,0,elstk001 strikes out. ,elstk001,0,
+kreuc001 to 2B. ,00,2,,kreuc001,,,15,35,X,doteo001,1,0,Sacrifice bunt by perec001.,perec001,0,
+,10,2,,kreuc001,,,16,37,BX,doteo001,1,0,,hollt001,0,F
+,31,2,,,,,17,26,BBFBX,perec001,1,0,,euset001,1,F
+,12,2,,,,,18,30,SFBX,perec001,1,0,,trubc001,1,F
+,12,2,,,,,19,38,SCBFFFFC,perec001,1,0,doteo001 strikes out. ,doteo001,1,
+,12,3,,,,,20,41,BCFX,doteo001,1,0,,grudm001,0,F
+,12,3,,,,,21,45,BFFX,doteo001,0,1,shefg001 homers. ,shefg001,0,
+,02,3,,,,,22,48,FFX,doteo001,1,0,,grees001,0,F
+,01,3,karre001,,,,23,50,SX,doteo001,0,0,karre001 reaches on error. ,karre001,0,
+karre001 to 3B. ,00,3,,belta001,karre001,,24,51,X,doteo001,0,0,belta001 doubles. ,belta001,0,
+,11,3,kreuc001,belta001,karre001,,25,54,SBH,doteo001,0,0,kreuc001 hit by pitch. ,kreuc001,0,
+kreuc001 to 2B. belta001 out. ,00,3,elstk001,kreuc001,karre001,,26,55,X,doteo001,1,0,elstk001 reaches on fielder's choice. ,elstk001,0,
+,01,3,,,,,27,40,CX,perec001,0,1,barkg001 homers. ,barkg001,1,
+,32,3,biggc001,,,,28,47,SBBCBFB,perec001,0,0,biggc001 walks. ,biggc001,1,
+,12,3,,,,,29,51,FCBX,perec001,2,0,Double Play. ,bagwj001,1,
+,00,3,,,,,30,52,X,perec001,1,0,berkl001 grounds out. ,berkl001,1,G
+,32,4,,,,,31,63,FBBBCFFS,doteo001,1,0,perec001 strikes out. ,perec001,0,
+,11,4,hollt001,,,,32,66,BCX,doteo001,0,0,hollt001 singles. ,hollt001,0,
+,01,4,hollt001,,,,33,68,SX,doteo001,1,0,,grudm001,0,
+,02,4,hollt001,,,,34,73,SFFFS,doteo001,1,0,shefg001 strikes out. ,shefg001,0,
+,10,4,aloum001,,,,35,54,BX,perec001,0,0,aloum001 singles. ,aloum001,1,
+aloum001 scores. ,02,4,,,,,36,57,FFX,perec001,0,2,lugoj001 homers. ,lugoj001,1,
+,00,4,,,,,37,58,X,perec001,1,0,euset001 grounds out. ,euset001,1,G
+,00,4,trubc001,,,,38,59,X,perec001,0,0,trubc001 singles. ,trubc001,1,
+trubc001 out. ,00,4,doteo001,,,,39,60,X,perec001,1,0,doteo001 reaches on fielder's choice. ,doteo001,1,
+doteo001 to 3B. ,22,4,,barkg001,doteo001,,40,65,FCBBX,perec001,0,0,barkg001 doubles. ,barkg001,1,
+,00,4,biggc001,barkg001,doteo001,,41,66,H,perec001,0,0,biggc001 hit by pitch. ,biggc001,1,
+doteo001 scores. barkg001 scores. biggc001 to 3B. ,11,4,,bagwj001,biggc001,,42,69,BCX,perec001,0,2,bagwj001 doubles. ,bagwj001,1,
+,22,4,,bagwj001,biggc001,,44,5,BSFBS,osuna002,1,0,berkl001 strikes out. ,berkl001,1,
+,12,5,,grees001,,,45,77,BCFX,doteo001,0,0,grees001 doubles. ,grees001,0,
+,00,5,,grees001,,,46,78,X,doteo001,1,0,,karre001,0,P
+,01,5,,grees001,,,47,80,FX,doteo001,1,0,,belta001,0,F
+,32,5,,grees001,,,48,89,SSFBBFFBX,doteo001,1,0,,kreuc001,0,L
+,22,5,,,,,49,12,FCFBBFX,osuna002,1,0,,aloum001,1,F
+,32,5,,,,,50,19,CBBSFBX,osuna002,1,0,,lugoj001,1,F
+,22,5,,,,,51,24,FBBSX,osuna002,1,0,,euset001,1,F
+,32,6,elstk001,,,,52,98,CFBFFBBFB,doteo001,0,0,elstk001 walks. ,elstk001,0,
+,01,6,,,,,53,100,FX,doteo001,2,0,Double Play. ,osuna002,0,
+,10,6,,,,,54,102,BX,doteo001,1,0,,hollt001,0,L
+,22,6,,,,,55,29,BSBSS,osuna002,1,0,trubc001 strikes out. ,trubc001,1,
+,22,6,,,,,56,34,SBBCC,osuna002,1,0,doteo001 strikes out. ,doteo001,1,
+,22,6,,,,,57,40,CBFBFS,osuna002,1,0,barkg001 strikes out. ,barkg001,1,
+,01,7,,grudm001,,,58,104,CX,doteo001,0,0,grudm001 doubles. ,grudm001,0,
+grudm001 to 3B. ,00,7,shefg001,,grudm001,,59,105,X,doteo001,0,0,shefg001 singles. ,shefg001,0,
+grudm001 scores. ,00,7,shefg001,,,,60,106,X,doteo001,1,1,grees001 hits sacrifice fly. ,grees001,0,
+shefg001 scores. ,11,7,,,,,61,109,FBX,doteo001,0,2,karre001 homers. ,karre001,0,
+,00,7,,,,,62,110,X,doteo001,1,0,,belta001,0,L
+,31,7,kreuc001,,,,63,115,BSBBX,doteo001,0,0,kreuc001 singles. ,kreuc001,0,
+kreuc001 to 2B. ,00,7,elstk001,kreuc001,,,65,1,X,cabrj001,0,0,elstk001 singles. ,elstk001,0,
+,10,7,elstk001,kreuc001,,,67,3,BX,cabrj001,1,0,,hansd001,0,F
+,21,7,,,,,69,4,BBCX,hergm001,1,0,biggc001 grounds out. ,biggc001,1,G
+,02,7,,,,,70,7,FFC,hergm001,1,0,bagwj001 strikes out. ,bagwj001,1,
+,31,7,berkl001,,,,71,12,BFBBB,hergm001,0,0,berkl001 walks. ,berkl001,1,
+berkl001 to 2B. ,21,7,,berkl001,,aloum001,72,16,BFBB,hergm001,0,0,Passed Ball. ,aloum001,1,
+,31,7,aloum001,berkl001,,,73,21,BFBBI,hergm001,0,0,aloum001 intentionally walks. ,aloum001,1,
+berkl001 to 3B. aloum001 out. ,11,7,lugoj001,,berkl001,,74,24,CBX,hergm001,1,0,lugoj001 reaches on fielder's choice. ,lugoj001,1,
+,00,8,,,,,75,4,X,cabrj001,1,0,,hollt001,0,F
+,10,8,,,,,76,6,BX,cabrj001,1,0,,grudm001,0,F
+,11,8,,,,,77,9,BFX,cabrj001,0,1,shefg001 homers. ,shefg001,0,
+,11,8,,,,,78,12,BFX,cabrj001,1,0,,grees001,0,F
+,32,8,,,,,80,30,BCCBBX,hergm001,1,0,,melum001,1,F
+,20,8,,,,,81,33,BBX,hergm001,1,0,trubc001 grounds out. ,trubc001,1,G
+,21,8,,,,,83,37,BBFX,hergm001,1,0,,wardd002,1,F
+,22,9,,,,,86,5,BFFBX,henrd002,1,0,karre001 grounds out. ,karre001,0,G
+,22,9,,,,,87,10,BSBSX,henrd002,1,0,belta001 grounds out. ,belta001,0,G
+,32,9,,,,,88,18,BBFCFBFS,henrd002,1,0,kreuc001 strikes out. ,kreuc001,0,
+,21,9,,,,,89,41,BBCX,hergm001,1,0,barkg001 grounds out. ,barkg001,1,G
+,22,9,,,,,90,46,BFBFC,hergm001,1,0,biggc001 strikes out. ,biggc001,1,
+,01,9,,,,,91,48,CX,hergm001,1,0,,bagwj001,1,F

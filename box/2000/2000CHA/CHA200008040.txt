@@ -1,0 +1,155 @@
+version,2
+info,visteam,OAK
+info,hometeam,CHA
+info,site,CHI12
+info,date,2000/08/04
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,riekr901
+info,ump1b,emmep901
+info,ump2b,guccc901
+info,ump3b,davig901
+info,pitches,pitches
+info,temp,85
+info,winddir,tolf
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,202
+info,attendance,30019
+info,wp,appik001
+info,lp,sirom001
+info,save,isrij001
+start,longt002,"Terrence Long",0,1,8
+start,velar001,"Randy Velarde",0,2,4
+start,giamj001,"Jason Giambi",0,3,3
+start,piata001,"Adam Piatt",0,4,9
+start,stanm002,"Mike Stanley",0,5,10
+start,grieb001,"Ben Grieve",0,6,7
+start,tejam001,"Miguel Tejada",0,7,6
+start,chave001,"Eric Chavez",0,8,5
+start,fasas001,"Sal Fasano",0,9,2
+start,appik001,"Kevin Appier",0,0,1
+start,durhr001,"Ray Durham",1,1,4
+start,valej003,"Jose Valentin",1,2,6
+start,thomf001,"Frank Thomas",1,3,3
+start,ordom001,"Magglio Ordonez",1,4,9
+start,bainh001,"Harold Baines",1,5,10
+start,perrh001,"Herbert Perry",1,6,5
+start,lee-c001,"Carlos Lee",1,7,7
+start,singc001,"Chris Singleton",1,8,8
+start,johnc002,"Charles Johnson",1,9,2
+start,sirom001,"Mike Sirotka",1,0,1
+play,1,0,longt002,32,BCBBFFFFB,W
+play,1,0,velar001,01,CX,9/F9
+play,1,0,giamj001,32,BCBFBFFX,9/F9
+play,1,0,piata001,22,BCBFFFS,K
+play,1,1,durhr001,11,CBX,6/P6
+play,1,1,valej003,31,BBBCB,W
+play,1,1,thomf001,32,BSFBBFX,S.1-3
+play,1,1,ordom001,01,FX,54(1)3/GDP
+play,2,0,stanm002,12,CCBFS,K
+play,2,0,grieb001,32,BSBBCB,W
+play,2,0,tejam001,00,X,16(1)/FO
+play,2,0,chave001,32,BCBFBX,43/G
+play,2,1,bainh001,20,BBX,6/P6
+play,2,1,perrh001,10,BX,D7/7S
+play,2,1,lee-c001,31,BBCBX,63/G
+play,2,1,singc001,00,X,63/G
+play,3,0,fasas001,22,BFFFBX,8/F8S
+play,3,0,longt002,11,BCX,S8
+play,3,0,velar001,21,BCBX,54(1)3/GDP
+play,3,1,johnc002,31,BBBCX,63/G
+play,3,1,durhr001,31,CBBBB,W
+play,3,1,valej003,32,FFBBFBFX,HR/9.1-H
+play,3,1,thomf001,11,BFH,HP
+play,3,1,ordom001,02,CSX,4(B)3(1)/LDP
+play,4,0,giamj001,21,BCBX,6/P6
+play,4,0,piata001,20,BBX,53/G
+play,4,0,stanm002,32,BBBCFC,K/C
+play,4,1,bainh001,00,X,S7/7S
+play,4,1,perrh001,31,CBBBX,9/F9D
+play,4,1,lee-c001,32,BBBCFX,7/F7D
+play,4,1,singc001,22,BCFBFFX,5/P5
+play,5,0,grieb001,21,BBCX,3/G
+play,5,0,tejam001,21,BBCX,S7/7S
+play,5,0,chave001,22,BCSFBX,7/F7
+play,5,0,fasas001,02,SFS,K
+play,5,1,johnc002,22,CSBBS,K
+play,5,1,durhr001,32,FBBFBFB,W
+play,5,1,valej003,00,B,CS2(26)
+play,5,1,valej003,21,BCBX,43/G
+play,6,0,longt002,11,BFX,S8/8S
+play,6,0,velar001,31,CBBBB,W.1-2
+play,6,0,giamj001,22,BCBFX,HR/8.2-H;1-H
+play,6,0,piata001,12,CSBS,K
+play,6,0,stanm002,21,BSBX,S9
+play,6,0,grieb001,10,BX,3(B)3(1)/LDP
+play,6,1,thomf001,00,X,8/F8
+play,6,1,ordom001,10,BX,S7
+play,6,1,bainh001,31,CBBBX,9/L9
+play,6,1,perrh001,22,SSBBFFX,8/F8
+play,7,0,tejam001,10,BX,53/G
+play,7,0,chave001,22,BBFFC,K/C
+play,7,0,fasas001,32,BFCBBS,K
+play,7,1,lee-c001,01,CX,S
+play,7,1,singc001,22,CBBLB,WP.1-2
+play,7,1,singc001,32,CBBLBS,K
+play,7,1,johnc002,32,SBBBCFFB,W
+play,7,1,durhr001,00,,NP
+sub,magnm001,"Mike Magnante",0,0,1
+play,7,1,durhr001,11,BSX,64(1)3/GDP
+play,8,0,longt002,00,,NP
+sub,wunsk001,"Kelly Wunsch",1,0,1
+play,8,0,longt002,21,SBBX,D9
+play,8,0,velar001,12,CSBX,43/G.2-3
+play,8,0,giamj001,00,H,HP
+play,8,0,piata001,00,,NP
+sub,simab001,"Bill Simas",1,0,1
+play,8,0,piata001,00,,NP
+sub,staim001,"Matt Stairs",0,4,11
+play,8,0,staim001,32,CBBSFBFX,3/G.3-H;1-2
+play,8,0,stanm002,22,CSBBX,63/G
+play,8,1,valej003,00,,NP
+sub,staim001,"Matt Stairs",0,4,9
+play,8,1,valej003,00,X,D7/7S
+play,8,1,thomf001,00,,NP
+sub,mecij001,"Jim Mecir",0,0,1
+play,8,1,thomf001,22,BCBCX,3/FL.2-3
+play,8,1,ordom001,00,X,8/SF.3-H
+play,8,1,bainh001,32,BBCFBX,7/F7
+play,9,0,grieb001,31,CBBBX,S9
+play,9,0,tejam001,00,,NP
+sub,chrir001,"Ryan Christenson",0,6,12
+play,9,0,tejam001,31,BBBCB,W.1-2
+play,9,0,chave001,00,X,D9.2-H;1-3
+play,9,0,fasas001,00,,NP
+sub,buehm001,"Mark Buehrle",1,0,1
+play,9,0,fasas001,00,,NP
+sub,giamj002,"Jeremy Giambi",0,9,11
+play,9,0,giamj002,02,FCX,8/F8S
+play,9,0,longt002,22,CFBFBS,K
+play,9,0,velar001,21,BFBX,8/F8
+play,9,1,perrh001,00,,NP
+sub,chrir001,"Ryan Christenson",0,6,7
+play,9,1,perrh001,00,,NP
+sub,isrij001,"Jason Isringhausen",0,0,1
+play,9,1,perrh001,00,,NP
+sub,hernr002,"Ramon Hernandez",0,9,2
+play,9,1,perrh001,21,BBCX,S9
+play,9,1,lee-c001,01,CX,53/G.1-2
+play,9,1,singc001,00,,NP
+sub,konep001,"Paul Konerko",1,8,11
+play,9,1,konep001,10,BX,63/G
+play,9,1,johnc002,12,CBSC,K/C
+data,er,appik001,2
+data,er,magnm001,1
+data,er,mecij001,0
+data,er,isrij001,0
+data,er,sirom001,3
+data,er,wunsk001,1
+data,er,simab001,1
+data,er,buehm001,0

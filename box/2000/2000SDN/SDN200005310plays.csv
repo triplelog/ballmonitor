@@ -1,0 +1,87 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,10,1,,,,,0,2,BX,loper001,1,0,,bellr002,0,F
+,22,1,,,,,1,7,CBCBX,loper001,1,0,lorem001 grounds out. ,lorem001,0,G
+,12,1,,,,,2,11,FBSX,loper001,1,0,burnj001 grounds out. ,burnj001,0,G
+,21,1,,,,,3,4,FBBX,snydj001,1,0,owene001 grounds out. ,owene001,1,G
+,01,1,,,marta001,,4,6,FX,snydj001,0,0,marta001 triples. ,marta001,1,
+,30,1,gwynt001,,marta001,,5,10,BBBB,snydj001,0,0,gwynt001 walks. ,gwynt001,1,
+,02,1,gwynt001,,marta001,,6,14,FCFC,snydj001,1,0,nevip001 strikes out. ,nevip001,1,
+gwynt001 to 2B. ,31,1,klesr001,gwynt001,marta001,,7,19,BCBBB,snydj001,0,0,klesr001 walks. ,klesr001,1,
+,01,1,klesr001,gwynt001,marta001,,8,21,CX,snydj001,1,0,,boonb002,1,
+,00,2,jenkg001,,,,9,12,X,loper001,0,0,jenkg001 singles. ,jenkg001,0,
+,01,2,jenkg001,,,,10,14,CX,loper001,1,0,,hayec001,0,F
+jenkg001 out. ,11,2,hernj001,,,,11,17,BCX,loper001,1,0,hernj001 reaches on fielder's choice. ,hernj001,0,
+,22,2,hernj001,,,,12,22,FFBBS,loper001,1,0,grism001 strikes out. ,grism001,0,
+,32,2,hernc001,,,,13,28,FBBCBFB,snydj001,0,0,hernc001 walks. ,hernc001,1,
+hernc001 to 2B. ,32,2,jackd003,hernc001,,,14,36,FCFBFBBB,snydj001,0,0,jackd003 walks. ,jackd003,1,
+,02,2,jackd003,hernc001,,,15,39,FSS,snydj001,1,0,loper001 strikes out. ,loper001,1,
+hernc001 to 3B. jackd003 to 2B. ,10,2,owene001,jackd003,hernc001,,16,41,BX,snydj001,0,0,owene001 reaches on error. ,owene001,1,
+hernc001 scores. ,01,2,owene001,jackd003,,,17,43,SX,snydj001,1,1,marta001 hits sacrifice fly. ,marta001,1,
+,02,2,owene001,jackd003,,,18,46,CFX,snydj001,1,0,gwynt001 grounds out. ,gwynt001,1,G
+,21,3,,,,,19,26,BFBX,loper001,1,0,,blanh001,0,F
+,12,3,,,,,20,30,BCSC,loper001,1,0,snydj001 strikes out. ,snydj001,0,
+,01,3,,,,,21,32,CX,loper001,1,0,,bellr002,0,F
+,22,3,,,,,22,51,BSBFX,snydj001,1,0,nevip001 grounds out. ,nevip001,1,G
+,10,3,,,,,23,53,BX,snydj001,1,0,klesr001 grounds out. ,klesr001,1,G
+,21,3,,,,,24,57,BSBX,snydj001,1,0,boonb002 grounds out. ,boonb002,1,G
+,21,4,lorem001,,,,25,36,BBCX,loper001,0,0,lorem001 singles. ,lorem001,0,G
+,32,4,,,,,26,43,BBFBFFX,loper001,2,0,Double Play. ,burnj001,0,
+,21,4,jenkg001,,,,27,47,FBBX,loper001,0,0,jenkg001 singles. ,jenkg001,0,
+,02,4,jenkg001,,,,28,50,CFS,loper001,1,0,hayec001 strikes out. ,hayec001,0,
+,31,4,hernc001,,,,29,62,BBFBB,snydj001,0,0,hernc001 walks. ,hernc001,1,
+,12,4,hernc001,,,,30,67,SBFFX,snydj001,1,0,,jackd003,1,F
+,01,4,,,,loper001,31,69,FS,snydj001,1,0,hernc001 caught stealing. ,loper001,1,
+,22,4,,,,,32,74,FSBBX,snydj001,1,0,loper001 grounds out. ,loper001,1,G
+,22,5,hernj001,,,,33,55,BFBFX,loper001,0,0,hernj001 singles. ,hernj001,0,
+,10,5,,,,,34,57,BX,loper001,2,0,Double Play. ,grism001,0,
+,10,5,,blanh001,,,35,59,BX,loper001,0,0,blanh001 doubles. ,blanh001,0,
+,01,5,,blanh001,,,36,61,FX,loper001,1,0,snydj001 grounds out. ,snydj001,0,G
+,01,5,,,,,37,76,CX,snydj001,1,0,,owene001,1,P
+,32,5,marta001,,,,38,82,BFBBFB,snydj001,0,0,marta001 walks. ,marta001,1,
+marta001 to 3B. ,00,5,gwynt001,,marta001,,39,83,X,snydj001,0,0,gwynt001 singles. ,gwynt001,1,
+marta001 scores. gwynt001 to 2B. ,32,5,nevip001,gwynt001,,,40,89,FBFBBX,snydj001,0,1,nevip001 singles. ,nevip001,1,
+gwynt001 scores. nevip001 to 3B. ,20,5,,klesr001,nevip001,,41,92,BBX,snydj001,0,1,klesr001 doubles. ,klesr001,1,
+,30,5,boonb002,klesr001,nevip001,,42,96,IIII,snydj001,0,0,boonb002 intentionally walks. ,boonb002,1,
+nevip001 scores. klesr001 to 3B. boonb002 to 2B. ,30,5,hernc001,boonb002,klesr001,,44,4,BBBB,woods001,0,1,hernc001 walks. ,hernc001,1,
+klesr001 scores. boonb002 to 3B. ,00,5,hernc001,,boonb002,,45,5,X,woods001,1,1,jackd003 hits sacrifice fly. ,jackd003,1,
+,12,5,hernc001,,boonb002,,46,9,BCFS,woods001,1,0,loper001 strikes out. ,loper001,1,
+,32,6,bellr002,,,,49,67,CBBCBB,loper001,0,0,bellr002 walks. ,bellr002,0,
+,12,6,bellr002,,,,50,71,CBCC,loper001,1,0,lorem001 strikes out. ,lorem001,0,
+bellr002 to 2B. ,30,6,burnj001,bellr002,,,51,75,BBBB,loper001,0,0,burnj001 walks. ,burnj001,0,
+bellr002 scores. burnj001 to 3B. ,12,6,jenkg001,,burnj001,,52,81,BFSFFX,loper001,0,1,jenkg001 singles. ,jenkg001,0,
+jenkg001 to 2B. ,31,6,hayec001,jenkg001,burnj001,,54,5,BBCBB,whitm002,0,0,hayec001 walks. ,hayec001,0,
+burnj001 scores. jenkg001 to 3B. hayec001 out. ,02,6,hernj001,,jenkg001,,55,8,SCX,whitm002,1,1,hernj001 reaches on fielder's choice. ,hernj001,0,
+jenkg001 scores. hernj001 scores. ,21,6,,grism001,,,56,12,BFBX,whitm002,0,2,grism001 doubles. ,grism001,0,
+,21,6,,grism001,,,57,16,FBBX,whitm002,1,0,,blanh001,0,F
+,22,6,,,,,58,14,BCCBX,woods001,1,0,owene001 grounds out. ,owene001,1,G
+,32,6,marta001,,,,59,21,FBBBFFB,woods001,0,0,marta001 walks. ,marta001,1,
+marta001 to 3B. ,20,6,river002,,marta001,,60,24,BBX,woods001,0,0,river002 singles. ,river002,1,
+,10,6,river002,,marta001,,61,26,BX,woods001,1,0,,nevip001,1,F
+river002 to 2B. ,32,6,klesr001,river002,marta001,,63,7,BBBCCFB,delov001,0,0,klesr001 walks. ,klesr001,1,
+klesr001 to 2B. river002 out. ,00,6,boonb002,klesr001,marta001,,66,1,X,weatd001,1,0,boonb002 reaches on fielder's choice. ,boonb002,1,
+,32,7,,,,,68,6,BBBCFX,boehb001,0,1,casar001 homers. ,casar001,0,
+,21,7,bellr002,,,,69,10,BCBX,boehb001,0,0,bellr002 singles. ,bellr002,0,
+,02,7,bellr002,,,,70,13,FFX,boehb001,1,0,,lorem001,0,F
+,12,7,,bellr002,,burnj001,72,4,CBCB,walkk001,0,0,bellr002 steals 2B. ,burnj001,0,
+,32,7,,bellr002,,,73,10,CBCBBS,walkk001,1,0,burnj001 strikes out. ,burnj001,0,
+bellr002 to 3B. jenkg001 to 2B. ,11,7,,jenkg001,bellr002,,74,13,BFX,walkk001,0,0,jenkg001 singles. ,jenkg001,0,
+,30,7,hayec001,jenkg001,bellr002,,75,17,BBBI,walkk001,0,0,hayec001 intentionally walks. ,hayec001,0,
+hayec001 out. ,11,7,hernj001,jenkg001,bellr002,,77,3,CBX,almac001,1,0,hernj001 reaches on fielder's choice. ,hernj001,0,G
+,32,7,,hernc001,,,78,8,CBCBFBX,weatd001,0,0,hernc001 doubles. ,hernc001,1,
+hernc001 scores. ,32,7,,jackd003,,,79,14,BBLBCX,weatd001,0,1,jackd003 doubles. ,jackd003,1,
+jackd003 scores. ,22,7,,magad001,,,81,19,BBFCX,weatd001,0,1,magad001 doubles. ,magad001,1,
+magad001 to 3B. ,12,7,,,magad001,,82,23,CSBX,weatd001,1,0,owene001 grounds out. ,owene001,1,G
+,31,7,marta001,,magad001,,83,28,BCBII,weatd001,0,0,marta001 intentionally walks. ,marta001,1,
+magad001 scores. marta001 scores. ,32,7,,,river002,,84,36,BCFBFBFX,weatd001,0,2,river002 triples. ,river002,1,
+,00,7,,,river002,,86,1,X,leskc001,1,0,nevip001 grounds out. ,nevip001,1,G
+,30,7,klesr001,,river002,,87,5,IIII,leskc001,0,0,klesr001 intentionally walks. ,klesr001,1,
+,12,7,klesr001,,river002,,88,9,CBFX,leskc001,1,0,,boonb002,1,F
+,10,8,,,,,91,2,BX,walld002,1,0,,grism001,0,F
+,00,8,,,,,93,3,X,walld002,1,0,,sweem001,0,F
+,22,8,,,,,94,8,BCBSC,walld002,1,0,casar001 strikes out. ,casar001,0,
+,00,8,,,,,96,1,X,wickb001,1,0,,hernc001,1,P
+,21,8,,,,,97,5,BCBX,wickb001,1,0,,jackd003,1,P
+,22,8,,,,,98,11,BCBFFX,wickb001,1,0,,magad001,1,F
+,12,9,,,,,99,12,CBSX,walld002,1,0,bellr002 grounds out. ,bellr002,0,G
+,00,9,,,,,100,13,X,walld002,1,0,lorem001 grounds out. ,lorem001,0,G
+,22,9,,,,,101,18,BSFBX,walld002,1,0,burnj001 grounds out. ,burnj001,0,G

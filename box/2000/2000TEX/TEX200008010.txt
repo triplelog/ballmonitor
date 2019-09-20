@@ -1,0 +1,140 @@
+version,2
+info,visteam,CHA
+info,hometeam,TEX
+info,site,ARL02
+info,date,2000/08/01
+info,number,0
+info,starttime,7:35PM
+info,daynight,night
+info,usedh,true
+info,umphome,everm901
+info,ump1b,spiep901
+info,ump2b,gormb901
+info,ump3b,dimum901
+info,pitches,pitches
+info,temp,97
+info,winddir,fromcf
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,162
+info,attendance,37784
+info,wp,howrb001
+info,lp,wettj001
+info,save,
+start,durhr001,"Ray Durham",0,1,4
+start,valej003,"Jose Valentin",0,2,6
+start,thomf001,"Frank Thomas",0,3,3
+start,ordom001,"Magglio Ordonez",0,4,9
+start,bainh001,"Harold Baines",0,5,10
+start,perrh001,"Herbert Perry",0,6,5
+start,lee-c001,"Carlos Lee",0,7,7
+start,singc001,"Chris Singleton",0,8,8
+start,johnc002,"Charles Johnson",0,9,2
+start,baldj002,"James Baldwin",0,0,1
+start,alicl001,"Luis Alicea",1,1,4
+start,cataf001,"Frank Catalanotto",1,2,10
+start,greer001,"Rusty Greer",1,3,7
+start,palmr001,"Rafael Palmeiro",1,4,3
+start,kaplg001,"Gabe Kapler",1,5,8
+start,leder001,"Ricky Ledee",1,6,9
+start,haseb001,"Bill Haselman",1,7,2
+start,lambm001,"Mike Lamb",1,8,5
+start,clayr001,"Royce Clayton",1,9,6
+start,glynr001,"Ryan Glynn",1,0,1
+play,1,0,durhr001,12,CFBX,7/F7
+play,1,0,valej003,30,BBBB,W
+play,1,0,thomf001,10,BX,64(1)3/GDP
+play,1,1,alicl001,01,FX,S
+play,1,1,cataf001,20,BBX,6(1)3/GDP
+play,1,1,greer001,21,BCBX,31/G
+play,2,0,ordom001,00,X,3/FL
+play,2,0,bainh001,32,CBBCBX,3/G
+play,2,0,perrh001,20,BBX,S8/8S
+play,2,0,lee-c001,31,BBCBX,7/F7S
+play,2,1,palmr001,02,CFX,E5/G
+play,2,1,kaplg001,22,CBBFX,54(1)/FO
+play,2,1,leder001,02,CCX,6(1)3/GDP
+play,3,0,singc001,11,BCX,D9
+play,3,0,johnc002,31,CBBBB,W
+play,3,0,durhr001,00,X,13/SH.2-3;1-2
+play,3,0,valej003,00,X,S9.3-H;2-3
+play,3,0,thomf001,12,BFCFFX,9/F9S
+play,3,0,ordom001,22,CCBFBC,K/C
+play,3,1,haseb001,21,BBCX,4/P4
+play,3,1,lambm001,11,CBX,S
+play,3,1,clayr001,22,CBFFBFX,S7/7S.1-2
+play,3,1,alicl001,11,BFX,7/F7
+play,3,1,cataf001,01,FX,8/F8
+play,4,0,bainh001,20,BBX,S/78
+play,4,0,perrh001,10,BX,9/F9D
+play,4,0,lee-c001,12,CCBX,64(1)3/GDP
+play,4,1,greer001,00,X,7/F7
+play,4,1,palmr001,22,SBFBC,K/C
+play,4,1,kaplg001,12,CBSFX,63/G
+play,5,0,singc001,32,CBBBCFX,31/G
+play,5,0,johnc002,32,BCBFBFS,K
+play,5,0,durhr001,00,X,S/78
+play,5,0,valej003,21,CBBX,64(1)/FO
+play,5,1,leder001,20,BBX,53/G
+play,5,1,haseb001,32,CCBBBX,D7/7S
+play,5,1,lambm001,22,CBSFBX,S7.2-H
+play,5,1,clayr001,12,BFFC,K/C
+play,5,1,alicl001,32,BBSFBS,K
+play,6,0,thomf001,32,CFBFFBFBX,D9
+play,6,0,ordom001,32,BFBFBX,9/F9.2-3
+play,6,0,bainh001,01,CX,43/G
+play,6,0,perrh001,00,X,53/G
+play,6,1,cataf001,02,CCS,K
+play,6,1,greer001,30,BBBB,W
+play,6,1,palmr001,00,X,9/F9
+play,6,1,kaplg001,02,SFX,9/F9
+play,7,0,lee-c001,10,BX,2/FL
+play,7,0,singc001,12,FFBX,63/G
+play,7,0,johnc002,20,BBX,6/P6
+play,7,1,leder001,00,X,8/F8
+play,7,1,haseb001,02,FSS,K
+play,7,1,lambm001,12,BFFX,9/F9
+play,8,0,durhr001,00,,NP
+sub,david002,"Doug Davis",1,0,1
+play,8,0,durhr001,12,BCSS,K
+play,8,0,valej003,02,SCX,S9
+play,8,0,thomf001,00,,NP
+sub,zimmj001,"Jeff Zimmerman",1,0,1
+play,8,0,thomf001,10,BC,SB2
+play,8,0,thomf001,22,BCBFX,43/G.2-3
+play,8,0,ordom001,31,BSBBX,D7.3-H
+play,8,0,bainh001,00,X,S8.2-H
+play,8,0,perrh001,00,X,S9.1-2
+play,8,0,lee-c001,12,BCFX,9/F9
+play,8,1,clayr001,31,BBBCB,W
+play,8,1,alicl001,01,CX,8/F8
+play,8,1,cataf001,01,FX,S7.1-2
+play,8,1,greer001,00,,NP
+sub,wunsk001,"Kelly Wunsch",0,0,1
+play,8,1,greer001,20,BBX,16(1)/FO.2-3
+play,8,1,palmr001,31,CBBBB,W.1-2
+play,8,1,kaplg001,00,,NP
+sub,howrb001,"Bobby Howry",0,0,1
+play,8,1,kaplg001,12,CBFFX,S7.3-H;2-H;1X3(75)#
+play,9,0,singc001,00,,NP
+sub,wettj001,"John Wetteland",1,0,1
+play,9,0,singc001,22,BBCSS,K
+play,9,0,johnc002,00,X,HR/7
+play,9,0,durhr001,00,X,S7
+play,9,0,valej003,11,CBB,CS2(24)
+play,9,0,valej003,22,CBBFS,K
+play,9,1,leder001,00,X,8/F8S
+play,9,1,haseb001,31,BBFBB,W
+play,9,1,lambm001,00,,NP
+sub,grees002,"Scarborough Green",1,7,12
+play,9,1,lambm001,00,B,CS2(24)
+play,9,1,lambm001,22,BFCFBS,K
+data,er,baldj002,3
+data,er,wunsk001,0
+data,er,howrb001,0
+data,er,glynr001,1
+data,er,david002,1
+data,er,zimmj001,1
+data,er,wettj001,1

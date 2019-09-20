@@ -1,0 +1,132 @@
+version,2
+info,visteam,TEX
+info,hometeam,CLE
+info,site,CLE08
+info,date,2000/04/16
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,bonig901
+info,ump1b,katzt901
+info,ump2b,mealj901
+info,ump3b,younl901
+info,pitches,pitches
+info,temp,47
+info,winddir,ltor
+info,windspeed,6
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,161
+info,attendance,40626
+info,wp,finlc001
+info,lp,wettj001
+info,save,
+start,clayr001,"Royce Clayton",0,1,6
+start,curtc001,"Chad Curtis",0,2,7
+start,rodri001,"Ivan Rodriguez",0,3,2
+start,palmr001,"Rafael Palmeiro",0,4,3
+start,segud001,"David Segui",0,5,10
+start,mater001,"Ruben Mateo",0,6,8
+start,kaplg001,"Gabe Kapler",0,7,9
+start,alicl001,"Luis Alicea",0,8,4
+start,evant001,"Tom Evans",0,9,5
+start,loaie001,"Esteban Loaiza",0,0,1
+start,cruzj003,"Jacob Cruz",1,1,8
+start,vizqo001,"Omar Vizquel",1,2,6
+start,alomr001,"Roberto Alomar",1,3,4
+start,ramim002,"Manny Ramirez",1,4,9
+start,thomj002,"Jim Thome",1,5,3
+start,sexsr001,"Richie Sexson",1,6,7
+start,justd001,"David Justice",1,7,10
+start,frymt001,"Travis Fryman",1,8,5
+start,diaze002,"Einar Diaz",1,9,2
+start,finlc001,"Chuck Finley",1,0,1
+play,1,0,clayr001,30,BBBB,W
+play,1,0,curtc001,12,CCBS,K
+play,1,0,rodri001,00,X,46(1)3/GDP
+play,1,1,cruzj003,11,BCX,7/F7S
+play,1,1,vizqo001,32,CBBBCFB,W
+play,1,1,alomr001,01,CX,6/P6
+play,1,1,ramim002,32,CBBFBS,K
+play,2,0,palmr001,21,BBFX,8/F8
+play,2,0,segud001,31,BBSBB,W
+play,2,0,mater001,20,BBX,8/F8
+play,2,0,kaplg001,02,CSS,K
+play,2,1,thomj002,12,CBSC,K/C
+play,2,1,sexsr001,02,CSFS,K
+play,2,1,justd001,31,BBSBB,W
+play,2,1,frymt001,00,X,8/F8
+com,"SS ADDED 3 ALICEA BADJ 12/19/00"
+badj,alicl001,L
+play,3,0,alicl001,21,.BCBX,S
+play,3,0,evant001,22,CCBBS,K
+play,3,0,clayr001,12,BSFS,K
+play,3,0,curtc001,12,CFBB,SB2
+play,3,0,curtc001,22,CFBBS,K+PB.2-3;B-1
+play,3,0,rodri001,10,BX,S8/8S.3-H(UR);1-2
+play,3,0,palmr001,32,BBBCSC,K/C
+play,3,1,diaze002,32,SBSFBBX,7/F7
+play,3,1,cruzj003,32,CFBBBX,3/G
+play,3,1,vizqo001,11,BCX,6/P6
+play,4,0,segud001,00,X,53/G
+play,4,0,mater001,12,FBSX,S
+play,4,0,kaplg001,12,CSBS,K
+badj,alicl001,L
+play,4,0,alicl001,10,B1,PO1(E1).1-2
+badj,alicl001,L
+play,4,0,alicl001,10,B1X,4/P4
+play,4,1,alomr001,32,BCBBCX,5/P5
+play,4,1,ramim002,22,BCFBS,K
+play,4,1,thomj002,01,SX,63/G
+play,5,0,evant001,02,CCS,K
+play,5,0,clayr001,00,X,E1/G
+play,5,0,curtc001,00,X,S7.1-2
+play,5,0,rodri001,02,FSX,8/FDP.2X3(85)
+play,5,1,sexsr001,22,BCSBFS,K
+play,5,1,justd001,21,FBBX,D/89D
+play,5,1,frymt001,20,BBX,53/G
+play,5,1,diaze002,02,CCX,13/G
+play,6,0,palmr001,00,X,3/G
+play,6,0,segud001,10,BX,43/G
+play,6,0,mater001,10,BX,53/G
+play,6,1,cruzj003,20,BBX,3/G
+play,6,1,vizqo001,22,BCCBC,K/C
+play,6,1,alomr001,12,BCCS,K
+play,7,0,kaplg001,32,BBFFFBS,K
+badj,alicl001,L
+play,7,0,alicl001,32,CBBFBC,K/C
+play,7,0,evant001,22,BCBFC,K/C
+play,7,1,ramim002,02,FSC,K/C
+play,7,1,thomj002,32,BCBSBS,K
+play,7,1,sexsr001,12,BSFFS,K
+play,8,0,clayr001,10,BX,9/F9
+play,8,0,curtc001,31,BCBBB,W
+play,8,0,rodri001,00,X,53/G.1-2
+play,8,0,palmr001,12,BCSB,CS3(25)
+play,8,1,justd001,02,FFX,43/G
+play,8,1,frymt001,21,BFBX,S7
+play,8,1,diaze002,00,,NP
+sub,aloms001,"Sandy Alomar",1,9,11
+play,8,1,aloms001,00,,NP
+sub,zimmj001,"Jeff Zimmerman",0,0,1
+play,8,1,aloms001,31,BSBBX,4/P4
+play,8,1,cruzj003,32,FBFFBBFB,W.1-2
+play,8,1,vizqo001,32,BBBCSS,K
+play,9,0,palmr001,00,,NP
+sub,aloms001,"Sandy Alomar",1,9,2
+play,9,0,palmr001,02,FSS,K
+play,9,0,segud001,32,BSFBBFS,K
+play,9,0,mater001,32,CBBSBX,S8
+play,9,0,kaplg001,30,BBBB,W.1-2
+play,9,0,alicl001,00,X,8/F8
+play,9,1,alomr001,00,,NP
+sub,wettj001,"John Wetteland",0,0,1
+play,9,1,alomr001,00,X,43/G
+play,9,1,ramim002,32,BFFBBX,HR/8
+play,9,1,thomj002,22,BBFFX,HR/9
+data,er,loaie001,0
+data,er,zimmj001,0
+data,er,wettj001,2
+data,er,finlc001,0

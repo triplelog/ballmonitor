@@ -1,0 +1,150 @@
+version,2
+info,visteam,LAN
+info,hometeam,HOU
+info,site,HOU03
+info,date,2000/06/21
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,tscht901
+info,ump1b,meric901
+info,ump2b,gibsg901
+info,ump3b,ripps901
+info,pitches,pitches
+info,temp,72
+info,winddir,rtol
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,187
+info,attendance,35356
+info,wp,hergm001
+info,lp,cabrj001
+info,save,
+start,hollt001,"Todd Hollandsworth",0,1,8
+start,grudm001,"Mark Grudzielanek",0,2,4
+start,shefg001,"Gary Sheffield",0,3,7
+start,grees001,"Shawn Green",0,4,9
+start,karre001,"Eric Karros",0,5,3
+start,belta001,"Adrian Beltre",0,6,5
+start,kreuc001,"Chad Kreuter",0,7,2
+start,elstk001,"Kevin Elster",0,8,6
+start,perec001,"Carlos Perez",0,9,1
+start,barkg001,"Glen Barker",1,1,8
+start,biggc001,"Craig Biggio",1,2,4
+start,bagwj001,"Jeff Bagwell",1,3,3
+start,berkl001,"Lance Berkman",1,4,9
+start,aloum001,"Moises Alou",1,5,7
+start,lugoj001,"Julio Lugo",1,6,6
+start,euset001,"Tony Eusebio",1,7,2
+start,trubc001,"Chris Truby",1,8,5
+start,doteo001,"Octavio Dotel",1,9,1
+play,1,0,hollt001,02,CFFS,K
+play,1,0,grudm001,12,BCFX,S9
+play,1,0,shefg001,00,X,S7.1-2
+play,1,0,grees001,12,CCFFBX,S9.2-H;1-3
+play,1,0,karre001,22,SSBBS,K
+play,1,0,belta001,00,1,PO1(E1).3-H(UR);1-2
+play,1,0,belta001,02,1CSS,K23
+play,1,1,barkg001,22,BCCBX,63/G
+play,1,1,biggc001,32,BBBCCFB,W
+play,1,1,bagwj001,00,X,6/P6
+play,1,1,berkl001,32,CBBBFB,W.1-2
+play,1,1,aloum001,00,X,S7.2-H;1-3(E7);B-2
+play,1,1,lugoj001,00,X,53/G
+play,2,0,kreuc001,30,BBBB,W
+play,2,0,elstk001,22,CCBBS,K
+play,2,0,perec001,00,X,54/SH.1-2
+play,2,0,hollt001,10,BX,7/F7
+play,2,1,euset001,31,BBFBX,9/F9
+play,2,1,trubc001,12,SFBX,9/F9
+play,2,1,doteo001,12,SCBFFFFC,K/C
+play,3,0,grudm001,12,BCFX,9/F9
+play,3,0,shefg001,12,BFFX,HR/8
+play,3,0,grees001,02,FFX,8/F8
+play,3,0,karre001,01,SX,E6/TH
+play,3,0,belta001,00,X,D/78D.1-3
+play,3,0,kreuc001,11,SBH,HP
+play,3,0,elstk001,00,X,5(2)/FO.1-2
+play,3,1,barkg001,01,CX,HR/7
+play,3,1,biggc001,32,SBBCBFB,W
+play,3,1,bagwj001,12,FCBX,14(1)3/GDP
+play,3,1,berkl001,00,X,53/G
+play,4,0,perec001,32,FBBBCFFS,K
+play,4,0,hollt001,11,BCX,S9
+play,4,0,grudm001,01,SX,4/FL
+play,4,0,shefg001,02,SFFFS,K
+play,4,1,aloum001,10,BX,S8
+play,4,1,lugoj001,02,FFX,HR/7.1-H
+play,4,1,euset001,00,X,53/G
+play,4,1,trubc001,00,X,S7
+play,4,1,doteo001,00,X,16(1)/FO
+play,4,1,barkg001,22,FCBBX,D7/7D.1-3
+play,4,1,biggc001,00,H,HP
+play,4,1,bagwj001,11,BCX,D7/7D.3-H;2-H;1-3
+play,4,1,berkl001,00,,NP
+sub,osuna002,"Antonio Osuna",0,9,1
+play,4,1,berkl001,22,BSFBS,K
+play,5,0,grees001,12,BCFX,D/78S
+play,5,0,karre001,00,X,3/P3
+play,5,0,belta001,01,FX,8/F8D
+play,5,0,kreuc001,32,SSFBBFFBX,6/L6
+play,5,1,aloum001,22,FCFBBFX,9/F9
+play,5,1,lugoj001,32,CBBSFBX,9/F9
+play,5,1,euset001,22,FBBSX,9/F9
+com,"$the roof was opened"
+play,6,0,elstk001,32,CFBFFBBFB,W
+play,6,0,osuna002,01,FX,16(1)3/GDP
+play,6,0,hollt001,10,BX,7/L7
+play,6,1,trubc001,22,BSBSS,K
+play,6,1,doteo001,22,SBBCC,K/C
+play,6,1,barkg001,22,CBFBFS,K
+play,7,0,grudm001,01,CX,D7
+play,7,0,shefg001,00,X,S8.2-3
+play,7,0,grees001,00,X,8/SF.3-H
+play,7,0,karre001,11,FBX,HR/7.1-H
+play,7,0,belta001,00,X,5/L5
+play,7,0,kreuc001,31,BSBBX,S8
+play,7,0,elstk001,00,,NP
+sub,cabrj001,"Jose Cabrera",1,9,1
+play,7,0,elstk001,00,X,S9/9S.1-2
+play,7,0,osuna002,00,,NP
+sub,hansd001,"Dave Hansen",0,9,11
+play,7,0,hansd001,10,BX,8/F8S
+play,7,1,biggc001,00,,NP
+sub,hergm001,"Matt Herges",0,9,1
+play,7,1,biggc001,21,BBCX,63/G
+play,7,1,bagwj001,02,FFC,K/C
+play,7,1,berkl001,31,BFBBB,W
+play,7,1,aloum001,21,BFBB,PB.1-2
+play,7,1,aloum001,31,BFBBI,IW
+play,7,1,lugoj001,11,CBX,54(1)/FO.2-3
+play,8,0,hollt001,00,X,8/F8
+play,8,0,grudm001,10,BX,9/F9
+play,8,0,shefg001,11,BFX,HR/7
+play,8,0,grees001,11,BFX,8/F8D
+play,8,1,euset001,00,,NP
+sub,melum001,"Mitch Meluskey",1,7,11
+play,8,1,melum001,32,BCCBBX,7/F7
+play,8,1,trubc001,20,BBX,43/G
+play,8,1,cabrj001,00,,NP
+sub,wardd002,"Daryle Ward",1,9,11
+play,8,1,wardd002,21,BBFX,9/F9
+play,9,0,karre001,00,,NP
+sub,melum001,"Mitch Meluskey",1,7,2
+play,9,0,karre001,00,,NP
+sub,henrd002,"Doug Henry",1,9,1
+play,9,0,karre001,22,BFFBX,63/G
+play,9,0,belta001,22,BSBSX,43/G
+play,9,0,kreuc001,32,BBFCFBFS,K
+play,9,1,barkg001,21,BBCX,13/G
+play,9,1,biggc001,22,BFBFC,K/C
+play,9,1,bagwj001,01,CX,8/F8
+data,er,perec001,6
+data,er,osuna002,0
+data,er,hergm001,0
+data,er,doteo001,5
+data,er,cabrj001,1
+data,er,henrd002,0

@@ -1,0 +1,175 @@
+version,2
+info,visteam,PIT
+info,hometeam,HOU
+info,site,HOU03
+info,date,2000/09/15
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,timmt901
+info,ump1b,eddid901
+info,ump2b,relic901
+info,ump3b,hodgm901
+info,pitches,pitches
+info,temp,72
+info,winddir,rtol
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,204
+info,attendance,32661
+info,wp,poweb001
+info,lp,skrmm001
+info,save,slusj001
+start,browa001,"Adrian Brown",0,1,8
+start,kendj001,"Jason Kendall",0,2,2
+start,gileb002,"Brian Giles",0,3,7
+start,vandj001,"John Vander Wal",0,4,9
+start,younk001,"Kevin Young",0,5,3
+start,morrw001,"Warren Morris",0,6,4
+start,osikk001,"Keith Osik",0,7,5
+start,mearp001,"Pat Meares",0,8,6
+start,andej002,"Jimmy Anderson",0,9,1
+start,lugoj001,"Julio Lugo",1,1,4
+start,melum001,"Mitch Meluskey",1,2,2
+start,bagwj001,"Jeff Bagwell",1,3,3
+start,hidar001,"Richard Hidalgo",1,4,8
+start,aloum001,"Moises Alou",1,5,9
+start,berkl001,"Lance Berkman",1,6,7
+start,trubc001,"Chris Truby",1,7,5
+start,bogat001,"Tim Bogar",1,8,6
+start,mcknt001,"Tony McKnight",1,9,1
+play,1,0,browa001,12,CBCS,K
+play,1,0,kendj001,32,BCBBSFS,K
+play,1,0,gileb002,02,CFX,6/P6
+play,1,1,lugoj001,11,CBX,43/G
+play,1,1,melum001,32,CBBCBS,K
+play,1,1,bagwj001,21,BBCX,63/G
+play,2,0,vandj001,31,BBBCX,HR/8
+play,2,0,younk001,32,FBFBBFFB,W
+play,2,0,morrw001,01,CX,S9/9S.1-2
+play,2,0,osikk001,02,CSFH,HP.2-3;1-2
+play,2,0,mearp001,12,BCFFFX,D/78.3-H;2-H;1-3
+play,2,0,andej002,00,X,3/P3
+play,2,0,browa001,11,FBX,S8.3-H;2-H
+play,2,0,kendj001,00,,NP
+sub,lines001,"Scott Linebrink",1,9,1
+play,2,0,kendj001,21,BBCX,S8/8S.1-3
+play,2,0,gileb002,12,SBFFC,K/C
+play,2,0,vandj001,02,CSFS,K
+play,2,1,hidar001,32,CBFBBX,S8
+play,2,1,aloum001,00,X,64(1)/FO
+play,2,1,berkl001,12,CBFB,WP.1-2
+play,2,1,berkl001,32,CBFBBB,W
+play,2,1,trubc001,11,BFX,T8.2-H;1-H
+play,2,1,bogat001,22,CBBFFX,63/G.3-H
+play,2,1,lines001,02,CSX,S9/9S
+play,2,1,lugoj001,12,SCBFX,E6/G.1-2
+play,2,1,melum001,00,X,S/BR.2X3(5);1-2
+play,3,0,younk001,32,BCCBBFX,5/L5
+play,3,0,morrw001,02,CFFX,S9
+play,3,0,osikk001,21,BFBX,S7/7S.1-2
+play,3,0,mearp001,30,BBBX,5/FL
+play,3,0,andej002,12,BSSS,K
+play,3,1,bagwj001,10,BX,9/F9
+play,3,1,hidar001,21,BBFX,63/G
+play,3,1,aloum001,00,X,D7
+play,3,1,berkl001,11,FBX,D9.2-H
+play,3,1,trubc001,01,SX,HR/7.2-H
+play,3,1,bogat001,01,FX,43/G
+play,4,0,browa001,12,BCFX,43/G
+play,4,0,kendj001,10,BX,D7
+play,4,0,gileb002,21,CBBX,HR/7.2-H
+play,4,0,vandj001,01,SX,S8
+play,4,0,younk001,00,,NP
+sub,greej001,"Jason Green",1,9,1
+play,4,0,younk001,12,SFBS,K
+play,4,0,morrw001,01,CB,SB2
+play,4,0,morrw001,11,CBX,43/G
+play,4,1,greej001,00,,NP
+sub,ceder001,"Roger Cedeno",1,9,11
+play,4,1,ceder001,00,,NP
+sub,skrmm001,"Matt Skrmetta",0,9,1
+play,4,1,ceder001,01,FX,8/F8
+play,4,1,lugoj001,12,BCFS,K
+play,4,1,melum001,11,CBX,63/G
+play,5,0,osikk001,00,,NP
+sub,poweb001,"Brian Powell",1,9,1
+play,5,0,osikk001,31,BBFBX,7/F7
+play,5,0,mearp001,12,CFBX,8/F8
+play,5,0,skrmm001,12,BCSS,K
+play,5,1,bagwj001,00,X,S7
+play,5,1,hidar001,10,BX,S8/78.1X3(85);B-2(TH3)
+play,5,1,aloum001,22,CBBCX,HR/7.2-H
+play,5,1,berkl001,01,CX,7/F7
+play,5,1,trubc001,21,BBSX,3/P3
+com,"$the roof was opened"
+play,6,0,browa001,12,BCCX,3/G
+play,6,0,kendj001,32,BBCFBX,53/G
+play,6,0,gileb002,22,BCCBX,8/F8
+play,6,1,bogat001,00,,NP
+sub,smitb003,"Brian Smith",0,9,1
+play,6,1,bogat001,02,CFFX,8/F8S
+play,6,1,poweb001,00,,NP
+sub,spieb001,"Bill Spiers",1,9,11
+play,6,1,spieb001,31,SBBBX,63/G
+play,6,1,lugoj001,30,BBBB,W
+play,6,1,melum001,01,SB,SB2.1-3(E6)
+play,6,1,melum001,22,SBFFFBX,S9.3-H
+play,6,1,bagwj001,00,X,9/F9
+play,7,0,vandj001,00,,NP
+sub,valdm001,"Marc Valdes",1,9,1
+play,7,0,vandj001,22,BBSSX,63/G
+play,7,0,younk001,32,BFBSBFFFS,K
+play,7,0,morrw001,31,CBBBX,8/F8S
+play,7,1,hidar001,32,FFBBBFX,D/78D
+play,7,1,aloum001,20,BBX,3/FL
+play,7,1,berkl001,00,,NP
+sub,wallj001,"Jeff Wallace",0,9,1
+play,7,1,berkl001,30,BBBB,W
+play,7,1,trubc001,11,CBX,8/F8
+play,7,1,bogat001,01,CX,S9.2-H;1-3
+play,7,1,valdm001,00,,NP
+sub,zoske001,"Eddie Zosky",1,9,11
+play,7,1,zoske001,00,X,6/L6
+play,8,0,osikk001,00,,NP
+sub,slusj001,"Joe Slusarski",1,9,1
+play,8,0,osikk001,02,FFS,K
+play,8,0,mearp001,12,CBSX,53/G
+play,8,0,wallj001,00,,NP
+sub,wilse001,"Enrique Wilson",0,9,11
+play,8,0,wilse001,00,X,S7
+play,8,0,browa001,00,X,3/G
+play,8,1,lugoj001,00,,NP
+sub,loisr001,"Rich Loiselle",0,9,1
+play,8,1,lugoj001,11,BCX,D9
+play,8,1,melum001,10,BX,13/G
+play,8,1,bagwj001,11,BFX,S8.2-H;B-2(THH)
+play,8,1,hidar001,01,CX,S7/7S.2-3
+play,8,1,aloum001,11,SBX,D/78.3-H;1-H
+play,8,1,berkl001,01,FX,S7.2-3
+play,8,1,trubc001,10,BX,D7.3-H;1-3
+play,8,1,bogat001,22,BFBCX,FC4.3-H;2-3;B-2(E4/TH)
+play,8,1,slusj001,12,FBFX,23/G.3-H;2-3
+play,8,1,lugoj001,21,FBBX,53/G
+play,9,0,kendj001,00,,NP
+sub,hidar001,"Richard Hidalgo",1,4,9
+play,9,0,kendj001,00,,NP
+sub,barkg001,"Glen Barker",1,5,8
+play,9,0,kendj001,20,BBX,7/F7
+play,9,0,gileb002,10,BX,S7/7D
+play,9,0,vandj001,22,CCBBS,K
+play,9,0,younk001,01,CX,54(1)/FO
+data,er,andej002,6
+data,er,skrmm001,2
+data,er,smitb003,2
+data,er,wallj001,0
+data,er,loisr001,6
+data,er,mcknt001,5
+data,er,lines001,2
+data,er,greej001,0
+data,er,poweb001,0
+data,er,valdm001,0
+data,er,slusj001,0

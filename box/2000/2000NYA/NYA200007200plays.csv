@@ -1,0 +1,80 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,00,1,,,,,0,1,X,petta001,1,0,,easld001,0,F
+,31,1,,,,,1,6,BFBBX,petta001,1,0,,halts001,0,F
+,21,1,,,,,2,10,CBBX,petta001,1,0,,higgb001,0,F
+,32,1,knobc001,,,,3,7,CFBBBFB,blaiw001,0,0,knobc001 walks. ,knobc001,1,
+,10,1,,,,,4,9,BX,blaiw001,2,0,Double Play. ,jeted001,1,
+,21,1,oneip001,,,,5,13,BFBX,blaiw001,0,0,oneip001 singles. ,oneip001,1,
+,10,1,oneip001,,,,6,15,BX,blaiw001,1,0,,willb002,1,F
+,32,2,,,,,7,16,BBFFBS,petta001,1,0,palmd002 strikes out. ,palmd002,0,
+,11,2,,,,,8,19,BCX,petta001,1,0,,magew001,0,F
+,01,2,cruzd001,,,,9,21,CX,petta001,0,0,cruzd001 singles. ,cruzd001,0,
+,32,2,cruzd001,,,,10,27,SSBBBC,petta001,1,0,encaj001 strikes out. ,encaj001,0,
+,20,2,,,,,11,18,BBX,blaiw001,0,1,justd001 homers. ,justd001,1,
+,31,2,martt002,,,,12,23,CBBBB,blaiw001,0,0,martt002 walks. ,martt002,1,
+martt002 scores. ,20,2,,,,,13,26,BBX,blaiw001,0,2,posaj001 homers. ,posaj001,1,
+,00,2,,,,,14,27,X,blaiw001,1,0,,josef001,1,F
+,10,2,,,,,15,29,BX,blaiw001,1,0,,bross001,1,F
+,01,2,knobc001,,,,16,31,CX,blaiw001,0,0,knobc001 singles. ,knobc001,1,
+,22,2,knobc001,,,,17,36,FBFBS,blaiw001,1,0,jeted001 strikes out. ,jeted001,1,
+,12,3,,,,,18,32,FCFBC,petta001,1,0,morrh001 strikes out. ,morrh001,0,
+,12,3,,,,,19,36,FFBC,petta001,1,0,cardj001 strikes out. ,cardj001,0,
+,21,3,,easld001,,,20,40,CBBX,petta001,0,0,easld001 doubles. ,easld001,0,
+,12,3,,easld001,,,21,44,BCFS,petta001,1,0,halts001 strikes out. ,halts001,0,
+,01,3,oneip001,,,,22,38,FX,blaiw001,0,0,oneip001 singles. ,oneip001,1,
+,00,3,,,,willb002,23,39,C,blaiw001,1,0,oneip001 caught stealing. ,willb002,1,
+,01,3,,,,,24,41,CX,blaiw001,1,0,,willb002,1,
+,22,3,,,,,25,46,FBBFS,blaiw001,1,0,justd001 strikes out. ,justd001,1,
+,20,4,,,,,26,47,BBX,petta001,1,0,higgb001 grounds out. ,higgb001,0,G
+,02,4,,,,,27,50,SFX,petta001,1,0,,palmd002,0,P
+,32,4,,,,,28,57,BBBCSFX,petta001,1,0,,magew001,0,F
+,12,4,,,,,29,50,SBFX,blaiw001,1,0,martt002 grounds out. ,martt002,1,G
+,32,4,,,,,30,56,BBBCSX,blaiw001,1,0,,posaj001,1,F
+,31,4,josef001,,,,31,61,SBBBB,blaiw001,0,0,josef001 walks. ,josef001,1,
+,20,4,josef001,,,,32,64,BBX,blaiw001,1,0,,bross001,1,P
+,11,5,,,,,33,60,BFX,petta001,1,0,cruzd001 grounds out. ,cruzd001,0,G
+,11,5,,,,,34,63,BSX,petta001,1,0,encaj001 grounds out. ,encaj001,0,G
+,02,5,morrh001,,,,35,66,CCX,petta001,0,0,morrh001 singles. ,morrh001,0,
+,12,5,morrh001,,,,36,70,CBSS,petta001,1,0,cardj001 strikes out. ,cardj001,0,
+,32,5,knobc001,,,,37,70,BCBBFB,blaiw001,0,0,knobc001 walks. ,knobc001,1,
+,10,5,knobc001,,,,38,72,BX,blaiw001,1,0,,jeted001,1,F
+knobc001 to 2B. ,22,5,oneip001,knobc001,,,39,77,FBCBX,blaiw001,0,0,oneip001 singles. ,oneip001,1,
+,00,5,oneip001,knobc001,,,40,78,X,blaiw001,1,0,,willb002,1,F
+knobc001 to 3B. oneip001 to 2B. ,32,5,justd001,oneip001,knobc001,,41,84,BCFBBB,blaiw001,0,0,justd001 walks. ,justd001,1,
+,11,5,justd001,oneip001,knobc001,,42,87,BFX,blaiw001,1,0,,martt002,1,P
+,31,6,easld001,,,,43,75,BBBCB,petta001,0,0,easld001 walks. ,easld001,0,
+easld001 to 2B. ,31,6,halts001,easld001,,,44,80,BBBCB,petta001,0,0,halts001 walks. ,halts001,0,
+easld001 scores. halts001 to 2B. ,12,6,higgb001,halts001,,,45,84,CBSX,petta001,0,1,higgb001 singles. ,higgb001,0,
+,12,6,higgb001,halts001,,,46,88,FCBS,petta001,1,0,palmd002 strikes out. ,palmd002,0,
+,12,6,higgb001,halts001,,,47,92,BCFC,petta001,1,0,magew001 strikes out. ,magew001,0,
+halts001 scores. higgb001 to 3B. cruzd001 to 2B. ,20,6,,cruzd001,higgb001,,48,95,BBX,petta001,0,1,cruzd001 singles. ,cruzd001,0,
+higgb001 scores. cruzd001 scores. ,11,6,encaj001,,,,49,98,CBX,petta001,0,2,encaj001 singles. ,encaj001,0,
+,11,6,encaj001,,,,50,101,SBX,petta001,1,0,morrh001 grounds out. ,morrh001,0,G
+,00,6,,,,,51,88,X,blaiw001,1,0,posaj001 grounds out. ,posaj001,1,G
+,01,6,,,,,52,90,CX,blaiw001,1,0,josef001 grounds out. ,josef001,1,G
+,32,6,,,,,53,96,BBFFBX,blaiw001,1,0,,bross001,1,F
+,12,7,,,,,54,106,CBFFS,petta001,1,0,cardj001 strikes out. ,cardj001,0,
+,32,7,easld001,,,,55,112,FBBFBB,petta001,0,0,easld001 walks. ,easld001,0,
+,22,7,easld001,,,,56,118,FBBFFS,petta001,1,0,halts001 strikes out. ,halts001,0,
+,01,7,easld001,,,,57,120,CX,petta001,1,0,,higgb001,0,P
+,00,7,,knobc001,,,58,97,X,blaiw001,0,0,knobc001 doubles. ,knobc001,1,
+,00,7,,knobc001,,,59,98,X,blaiw001,1,0,,jeted001,1,L
+,00,7,oneip001,knobc001,,,61,1,X,nitkc001,0,0,oneip001 reaches on error. ,oneip001,1,
+knobc001 to 3B. oneip001 out. ,01,7,willb002,,knobc001,,62,3,CX,nitkc001,1,0,willb002 reaches on fielder's choice. ,willb002,1,
+,11,7,willb002,,knobc001,,63,6,BCX,nitkc001,1,0,justd001 grounds out. ,justd001,1,G
+,32,8,,,,,65,7,CBSBBFX,nelsj001,1,0,palmd002 grounds out. ,palmd002,0,G
+,22,8,,,,,67,12,BCBCC,nelsj001,1,0,beckr002 strikes out. ,beckr002,0,
+,01,8,,cruzd001,,,68,14,CX,nelsj001,0,0,cruzd001 doubles. ,cruzd001,0,
+cruzd001 scores. ,32,8,encaj001,,,,69,20,BCFBBX,nelsj001,0,1,encaj001 singles. ,encaj001,0,
+,22,8,,encaj001,,morrh001,71,11,BCCFFFFFFBB,stanm003,0,0,encaj001 steals 2B. ,morrh001,0,
+,32,8,,encaj001,,,72,23,BCCFFFFFFBBC,stanm003,1,0,morrh001 strikes out. ,morrh001,0,
+,21,8,,,,,75,4,FBBX,brocd001,1,0,,martt002,1,F
+,32,8,posaj001,,,,76,10,SBCBBB,brocd001,0,0,posaj001 walks. ,posaj001,1,
+,11,8,,,,,77,13,SBX,brocd001,2,0,Double Play. ,josef001,1,
+,21,9,,,,,80,4,LBBX,grimj001,1,0,,polol001,0,F
+,00,9,,,,,81,5,X,grimj001,1,0,easld001 grounds out. ,easld001,0,G
+,02,9,,,,,82,9,CSFX,grimj001,1,0,halts001 grounds out. ,halts001,0,G
+,01,9,,,,,85,2,CX,jonet003,1,0,,bross001,1,F
+,32,9,knobc001,,,,86,9,BBCFFBB,jonet003,0,0,knobc001 walks. ,knobc001,1,
+knobc001 to 2B. ,31,9,jeted001,knobc001,,,87,14,BBBCX,jonet003,0,0,jeted001 singles. ,jeted001,1,
+,10,9,,knobc001,,,88,16,BX,jonet003,2,0,Double Play. ,oneip001,1,

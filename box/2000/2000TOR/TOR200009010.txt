@@ -1,0 +1,153 @@
+version,2
+info,visteam,OAK
+info,hometeam,TOR
+info,site,TOR02
+info,date,2000/09/01
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,reynj901
+info,ump1b,relic901
+info,ump2b,willc901
+info,ump3b,wegnm901
+info,pitches,pitches
+info,temp,85
+info,winddir,ltor
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,183
+info,attendance,22187
+info,wp,frasj001
+info,lp,joned001
+info,save,
+start,velar001,"Randy Velarde",0,1,4
+start,longt002,"Terrence Long",0,2,8
+start,tejam001,"Miguel Tejada",0,3,6
+start,grieb001,"Ben Grieve",0,4,10
+start,staim001,"Matt Stairs",0,5,9
+start,piata001,"Adam Piatt",0,6,7
+start,chave001,"Eric Chavez",0,7,5
+start,valdm002,"Mario Valdez",0,8,3
+start,hernr002,"Ramon Hernandez",0,9,2
+start,muldm001,"Mark Mulder",0,0,1
+start,stews002,"Shannon Stewart",1,1,7
+start,gonza001,"Alex S. Gonzalez",1,2,6
+start,martd002,"Dave Martinez",1,3,9
+start,delgc001,"Carlos Delgado",1,4,3
+start,batit001,"Tony Batista",1,5,5
+start,greet003,"Todd Greene",1,6,10
+start,cruzj004,"Jose Cruz",1,7,8
+start,fletd001,"Darrin Fletcher",1,8,2
+start,grebc001,"Craig Grebeck",1,9,4
+start,hamij002,"Joey Hamilton",1,0,1
+play,1,0,velar001,20,BBX,8/F8
+play,1,0,longt002,11,CBX,D/89
+play,1,0,tejam001,12,CBFFX,63/G.2-3
+play,1,0,grieb001,12,BFSX,8/F8S
+play,1,1,stews002,31,BBBCX,63/G
+play,1,1,gonza001,12,CCFBX,S
+play,1,1,martd002,00,B,WP.1-2
+play,1,1,martd002,10,BX,S7.2-3
+play,1,1,delgc001,12,CCBB,CS2(26)
+play,1,1,delgc001,22,CCBBS,K
+play,2,0,staim001,32,BBBCCX,D/89
+play,2,0,piata001,31,BBCBX,S9.2-3
+play,2,0,chave001,22,BBSFFX,FC3.3XH(32);1-2;B-1#
+play,2,0,valdm002,01,CX,7/F7
+play,2,0,hernr002,12,BFFX,S9.2-H;1-3
+play,2,0,velar001,02,CFB,SBH;SB2
+play,2,0,velar001,12,CFB+2,PO2(E6).2-3
+com,"clearly E6/TH, presumably trying to get runner at home"
+play,2,0,velar001,22,CFB+2BX,S8.3-H
+play,2,0,longt002,01,CX,S9.1-3
+play,2,0,tejam001,11,CBX,63/G
+play,2,1,batit001,12,FFBC,K/C
+play,2,1,greet003,10,BX,D9
+play,2,1,cruzj004,31,BFBBX,D/78D.2-H
+play,2,1,fletd001,10,BX,S7.2-H
+play,2,1,grebc001,22,BCBFC,K/C
+play,2,1,stews002,01,SX,D9/9S.1-3
+play,2,1,gonza001,21,SBBX,63/G
+play,3,0,grieb001,12,BSSFX,8/F8
+play,3,0,staim001,00,X,S8
+play,3,0,piata001,01,CX,54(1)/FO
+play,3,0,chave001,10,BX,S.1-2
+play,3,0,valdm002,02,CCX,5/FL
+play,3,1,martd002,10,BX,6/P6
+play,3,1,delgc001,32,BBFFBB,W
+play,3,1,batit001,21,BBFX,8/F8
+play,3,1,greet003,32,BBFBFB,W.1-2
+play,3,1,cruzj004,10,BX,5(2)/FO.1-2
+play,4,0,hernr002,12,CBCX,D/78
+play,4,0,velar001,01,LX,63/G
+play,4,0,longt002,22,CBFBS,K
+play,4,0,tejam001,00,X,9/F9
+play,4,1,fletd001,32,BCFBBB,W
+play,4,1,grebc001,22,BCFBX,9/F9
+play,4,1,stews002,12,FBFS,K
+play,4,1,gonza001,00,X,8/F8
+play,5,0,grieb001,11,CBX,43/G
+play,5,0,staim001,22,BSBCC,K/C
+play,5,0,piata001,00,X,S7
+play,5,0,chave001,20,BBX,4/P4
+play,5,1,martd002,22,BCBFX,S8
+play,5,1,delgc001,11,BCX,D7.1-3
+play,5,1,batit001,00,X,FC5.3XH(52);B-1#
+play,5,1,greet003,00,X,64(1)3/GDP
+play,6,0,valdm002,12,BFFS,K
+play,6,0,hernr002,00,X,8/F8
+play,6,0,velar001,01,CX,13/G
+play,6,1,cruzj004,12,CBFFC,K/C
+play,6,1,fletd001,10,BX,S8
+play,6,1,grebc001,32,SFBBBFB,W.1-2
+play,6,1,stews002,00,,NP
+sub,tam-j001,"Jeff Tam",0,0,1
+play,6,1,stews002,02,FFX,S7/7S.2-H;1-3
+play,6,1,gonza001,32,BBCBFB,W.1-2
+play,6,1,martd002,00,,NP
+sub,magnm001,"Mike Magnante",0,0,1
+play,6,1,martd002,10,BX,7/F7S
+play,6,1,delgc001,11,CBX,8/L8
+play,7,0,longt002,12,CBFX,5/P5
+play,7,0,tejam001,00,X,53/G
+play,7,0,grieb001,32,BBSBSX,3/G
+play,7,1,batit001,22,BCFBS,K
+play,7,1,greet003,11,BFX,8/F8
+play,7,1,cruzj004,21,BBFX,8/F8S
+play,8,0,staim001,00,,NP
+sub,stanm002,"Mike Stanley",0,5,11
+play,8,0,stanm002,00,,NP
+sub,guthm001,"Mark Guthrie",1,0,1
+play,8,0,stanm002,00,X,9/F9
+play,8,0,piata001,32,BSBBFS,K
+play,8,0,chave001,22,BCCBS,K
+play,8,1,fletd001,00,,NP
+sub,chrir001,"Ryan Christenson",0,5,9
+play,8,1,fletd001,22,BCBFFX,S7/7S
+play,8,1,grebc001,00,,NP
+sub,wised001,"Dewayne Wise",1,8,12
+play,8,1,grebc001,00,X,14/SH.1-2
+play,8,1,stews002,00,,NP
+sub,joned001,"Doug Jones",0,0,1
+play,8,1,stews002,01,FX,9/F9S
+play,8,1,gonza001,01,SX,63/G
+play,9,0,valdm002,00,,NP
+sub,casta001,"Alberto Castillo",1,8,2
+play,9,0,valdm002,22,FBBFX,7/F7
+play,9,0,hernr002,00,,NP
+sub,frasj001,"John Frascatore",1,0,1
+play,9,0,hernr002,22,CSBBX,9/F9
+play,9,0,velar001,22,CBFBX,43/G
+play,9,1,martd002,32,BBFCBX,S8
+play,9,1,delgc001,02,FCX,S8/8S.1-2
+play,9,1,batit001,11,FBX,S7.2-H;1-2
+data,er,muldm001,3
+data,er,tam-j001,0
+data,er,magnm001,0
+data,er,joned001,1
+data,er,hamij002,3
+data,er,guthm001,0
+data,er,frasj001,0

@@ -1,0 +1,90 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,00,1,,,,,0,1,X,tollb001,1,0,,erstd001,0,
+,22,1,,,,,1,6,BBCCS,tollb001,1,0,palmo001 strikes out. ,palmo001,0,
+,12,1,,,,,2,10,CBFS,tollb001,1,0,vaugm001 strikes out. ,vaugm001,0,
+,01,1,,,,,3,2,CX,hillk001,1,0,,owene001,1,F
+,20,1,marta001,,,,4,5,BBX,hillk001,0,0,marta001 singles. ,marta001,1,
+,00,1,marta001,,,,5,6,X,hillk001,1,0,,klesr001,1,F
+,12,1,marta001,,,,6,10,CCBS,hillk001,1,0,nevip001 strikes out. ,nevip001,1,
+,10,2,,,,,7,12,BX,tollb001,1,0,andeg001 grounds out. ,andeg001,0,G
+,30,2,glaut001,,,,8,16,BBBB,tollb001,0,0,glaut001 walks. ,glaut001,0,
+glaut001 to 2B. ,01,2,molib001,glaut001,,,9,18,CH,tollb001,0,0,molib001 hit by pitch. ,molib001,0,
+glaut001 to 3B. ,10,2,molib001,,glaut001,,10,20,BX,tollb001,1,0,,kenna001,0,F
+molib001 out. ,11,2,gil-b001,,glaut001,,11,23,BSX,tollb001,1,0,gil-b001 reaches on fielder's choice. ,gil-b001,0,
+,31,2,boonb002,,,,12,15,CBBBX,hillk001,0,0,boonb002 reaches on error. ,boonb002,1,
+,00,2,,,,davib003,13,16,C,hillk001,1,0,boonb002 caught stealing. ,davib003,1,
+,02,2,,,,,14,19,CSC,hillk001,1,0,davib003 strikes out. ,davib003,1,
+,31,2,river002,,,,15,24,BSBBX,hillk001,0,0,river002 singles. ,river002,1,
+,32,2,river002,,,,16,32,BBBCCFFS,hillk001,1,0,jackd003 strikes out. ,jackd003,1,
+,22,3,,,,,17,32,CCFFFBBFX,tollb001,1,0,hillk001 grounds out. ,hillk001,0,G
+,12,3,,,,,18,36,CBFS,tollb001,1,0,erstd001 strikes out. ,erstd001,0,
+,01,3,,palmo001,,,19,38,CX,tollb001,0,0,palmo001 doubles. ,palmo001,0,
+,02,3,,palmo001,,,20,41,CFS,tollb001,1,0,vaugm001 strikes out. ,vaugm001,0,
+,00,3,,,,,21,33,X,hillk001,1,0,,tollb001,1,
+,02,3,,,,,22,36,CCS,hillk001,1,0,owene001 strikes out. ,owene001,1,
+,32,3,,,,,23,44,BCBFBFFX,hillk001,0,1,marta001 homers. ,marta001,1,
+,32,3,,,,,24,51,BFFFBBC,hillk001,1,0,klesr001 strikes out. ,klesr001,1,
+,01,4,,,,,25,43,SX,tollb001,0,1,andeg001 homers. ,andeg001,0,
+,01,4,glaut001,,,,26,45,CH,tollb001,0,0,glaut001 hit by pitch. ,glaut001,0,
+,00,4,glaut001,,,,27,46,X,tollb001,1,0,,molib001,0,F
+,21,4,,,,kenna001,28,50,BCB1,tollb001,1,0,glaut001 picked off. ,kenna001,0,
+,22,4,,,,,29,56,BCB1CC,tollb001,1,0,kenna001 strikes out. ,kenna001,0,
+,31,4,,,,,30,56,BFBBX,hillk001,1,0,,nevip001,1,F
+,22,4,,,,,31,61,BCBFS,hillk001,1,0,boonb002 strikes out. ,boonb002,1,
+,32,4,,davib003,,,32,71,BCSFBBFFFX,hillk001,0,0,davib003 doubles. ,davib003,1,
+,12,4,,davib003,,,33,75,BSFX,hillk001,1,0,river002 grounds out. ,river002,1,G
+,22,5,,,,,34,61,BFBCX,tollb001,1,0,,gil-b001,0,
+,11,5,,,,,35,64,FBX,tollb001,1,0,hillk001 grounds out. ,hillk001,0,G
+,22,5,,,,,36,70,CFBFBX,tollb001,0,1,erstd001 homers. ,erstd001,0,
+,02,5,,,,,37,74,CFFX,tollb001,1,0,palmo001 grounds out. ,palmo001,0,G
+,22,5,,,,,38,80,CBSBX,hillk001,1,0,,jackd003,1,F
+,12,5,,,,,39,84,BCSS,hillk001,1,0,tollb001 strikes out. ,tollb001,1,
+,10,5,,,,,40,86,BX,hillk001,1,0,owene001 grounds out. ,owene001,1,G
+,22,6,,,,,41,79,CFBBX,tollb001,1,0,,vaugm001,0,F
+,00,6,,,,,42,80,X,tollb001,1,0,andeg001 grounds out. ,andeg001,0,G
+,02,6,,,,,43,83,CFX,tollb001,1,0,glaut001 grounds out. ,glaut001,0,G
+,11,6,,,,,44,89,CBX,hillk001,1,0,,marta001,1,L
+,30,6,klesr001,,,,45,93,BBBB,hillk001,0,0,klesr001 walks. ,klesr001,1,
+,11,6,,,,nevip001,46,96,FBB,hillk001,1,0,klesr001 caught stealing. ,nevip001,1,
+,32,6,nevip001,,,,47,102,FBBSBB,hillk001,0,0,nevip001 walks. ,nevip001,1,
+,12,6,nevip001,,,,48,106,CBFS,hillk001,1,0,boonb002 strikes out. ,boonb002,1,
+,00,7,,,,,49,84,X,tollb001,1,0,,molib001,0,F
+,10,7,kenna001,,,,50,86,BX,tollb001,0,0,kenna001 singles. ,kenna001,0,
+kenna001 to 2B. ,00,7,,kenna001,,gil-b001,51,86,,tollb001,0,0,Balk. ,gil-b001,0,
+kenna001 to 3B. ,01,7,,,kenna001,,52,88,CX,tollb001,1,0,gil-b001 grounds out. ,gil-b001,0,G
+,00,7,,,kenna001,,54,89,X,tollb001,1,0,,spies001,0,F
+,02,7,,,,,56,3,CSS,petkm001,1,0,davib003 strikes out. ,davib003,1,
+,01,7,,,,,57,5,SX,petkm001,1,0,river002 grounds out. ,river002,1,G
+,22,7,jackd003,,,,58,10,BBCCX,petkm001,0,0,jackd003 singles. ,jackd003,1,
+jackd003 to 3B. ,21,7,magad001,,jackd003,,60,14,BBCX,petkm001,0,0,magad001 singles. ,magad001,1,
+magad001 out. ,00,7,owene001,,jackd003,,61,15,X,petkm001,1,0,owene001 reaches on fielder's choice. ,owene001,1,
+,31,8,erstd001,,,,63,5,CBBBB,walkk001,0,0,erstd001 walks. ,erstd001,0,
+erstd001 to 2B. ,02,8,palmo001,erstd001,,,64,9,LFFX,walkk001,0,0,palmo001 singles. ,palmo001,0,
+,12,8,palmo001,erstd001,,,65,13,CSBS,walkk001,1,0,vaugm001 strikes out. ,vaugm001,0,
+erstd001 to 3B. palmo001 to 2B. ,12,8,andeg001,palmo001,erstd001,,66,17,BSCX,walkk001,0,0,andeg001 singles. ,andeg001,0,
+,20,8,andeg001,,erstd001,,67,20,BBX,walkk001,2,0,Double Play. ,glaut001,0,
+,12,8,,,,,69,4,SCBX,hases001,1,0,marta001 grounds out. ,marta001,1,G
+,12,8,,,,,70,8,FFBC,hases001,1,0,klesr001 strikes out. ,klesr001,1,
+,12,8,,,,,71,13,BCFFX,hases001,1,0,nevip001 grounds out. ,nevip001,1,G
+,22,9,,,,,73,6,FFBBFX,whitm002,1,0,molib001 grounds out. ,molib001,0,G
+,02,9,,,,,74,9,SSS,whitm002,1,0,kenna001 strikes out. ,kenna001,0,
+,11,9,,,,,75,12,FBX,whitm002,1,0,,gil-b001,0,
+,22,9,,,,,77,5,BCBSC,perct001,1,0,boonb002 strikes out. ,boonb002,1,
+,12,9,,,,,78,9,CFBS,perct001,1,0,davib003 strikes out. ,davib003,1,
+,02,9,,,,,79,12,CSX,perct001,0,1,river002 homers. ,river002,1,
+,00,9,,,,,80,13,X,perct001,1,0,,jackd003,1,P
+,22,10,,,,,84,5,BCSBC,hofft001,1,0,stock001 strikes out. ,stock001,0,
+,01,10,,,,,85,7,CX,hofft001,1,0,erstd001 grounds out. ,erstd001,0,G
+,01,10,,,,,86,9,FX,hofft001,1,0,palmo001 grounds out. ,palmo001,0,G
+,12,10,,,,,88,5,CFBFC,levia001,1,0,nichk001 strikes out. ,nichk001,1,
+,31,10,,,,,89,10,BBBCX,levia001,1,0,owene001 grounds out. ,owene001,1,G
+,10,10,,,,,90,12,BX,levia001,1,0,,marta001,1,F
+,02,11,,,,,91,13,CCFS,hofft001,1,0,vaugm001 strikes out. ,vaugm001,0,
+,22,11,,,,,92,18,CFBBX,hofft001,1,0,andeg001 grounds out. ,andeg001,0,G
+,22,11,,,glaut001,,93,23,FFBBX,hofft001,0,0,glaut001 triples. ,glaut001,0,
+glaut001 scores. ,00,11,,,,molib001,94,24,S,hofft001,0,1,Wild Pitch. ,molib001,0,
+,01,11,,,,,95,26,SX,hofft001,1,0,,molib001,0,F
+,00,11,,,,,96,13,X,levia001,1,0,klesr001 grounds out. ,klesr001,1,G
+,12,11,,,,,97,17,CBSS,levia001,1,0,nevip001 strikes out. ,nevip001,1,
+,11,11,boonb002,,,,98,20,CBX,levia001,0,0,boonb002 singles. ,boonb002,1,
+,10,11,boonb002,,,,99,22,BX,levia001,1,0,,davib003,1,F

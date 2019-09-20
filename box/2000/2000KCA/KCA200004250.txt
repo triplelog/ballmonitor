@@ -1,0 +1,152 @@
+version,2
+info,visteam,TBA
+info,hometeam,KCA
+info,site,KAN06
+info,date,2000/04/25
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,diazl901
+info,ump1b,reilm901
+info,ump2b,kellj901
+info,ump3b,coope901
+info,pitches,pitches
+info,temp,65
+info,winddir,rtol
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,199
+info,attendance,14677
+info,wp,reicd001
+info,lp,lopea002
+info,save,
+start,willg001,"Gerald Williams",0,1,8
+start,martd002,"Dave Martinez",0,2,9
+start,vaugg001,"Greg Vaughn",0,3,7
+start,mcgrf001,"Fred McGriff",0,4,3
+start,castv001,"Vinny Castilla",0,5,5
+start,flahj001,"John Flaherty",0,6,2
+start,tramb001,"Bubba Trammell",0,7,10
+start,stock001,"Kevin Stocker",0,8,6
+start,cairm001,"Miguel Cairo",0,9,4
+start,tracs001,"Steve Trachsel",0,0,1
+start,damoj001,"Johnny Damon",1,1,7
+start,feblc001,"Carlos Febles",1,2,4
+start,sweem002,"Mike Sweeney",1,3,10
+start,dye-j001,"Jermaine Dye",1,4,9
+start,beltc001,"Carlos Beltran",1,5,8
+start,randj002,"Joe Randa",1,6,5
+start,mccad001,"David McCarty",1,7,3
+start,johnb002,"Brian Johnson",1,8,2
+start,sancr001,"Rey Sanchez",1,9,6
+start,fussc001,"Chris Fussell",1,0,1
+play,1,0,willg001,22,CBFBX,S
+play,1,0,martd002,31,BLBBB,W.1-2
+play,1,0,vaugg001,10,BX,54(1)/FO.2-3
+play,1,0,mcgrf001,00,X,D9.3-H;1-3
+play,1,0,castv001,11,BSX,FC6.3-H;2X3(65);B-1
+play,1,0,flahj001,21,BBFX,S9.1-2
+play,1,0,tramb001,00,X,54(1)/FO.2-3
+play,1,1,damoj001,21,BBCX,7/F7
+play,1,1,feblc001,32,BCBBCB,W
+play,1,1,sweem002,10,BX,S8.1-3
+play,1,1,dye-j001,22,FFFBBFFX,D7.3-H;1-3
+play,1,1,beltc001,01,FX,7/F7S
+play,1,1,randj002,00,X,9/F9
+play,2,0,stock001,22,BBCFFS,K
+play,2,0,cairm001,01,CX,9/F9
+play,2,0,willg001,01,CX,S7
+play,2,0,martd002,21,BCBX,6/P6
+play,2,1,mccad001,22,CFBBX,S8
+play,2,1,johnb002,12,FBFX,4/L4
+play,2,1,sancr001,00,X,4/P4
+play,2,1,damoj001,32,CFBBBX,S.1-2
+play,2,1,feblc001,00,X,9/F9
+play,3,0,vaugg001,32,BFCFFBFBFFB,W
+play,3,0,mcgrf001,31,BBBFX,13/G.1-2
+play,3,0,castv001,31,BBFBB,W
+play,3,0,flahj001,32,BBBCFFB,W.2-3;1-2
+play,3,0,tramb001,00,,NP
+sub,suzum001,"Mac Suzuki",1,0,1
+play,3,0,tramb001,31,BBBCB,W.3-H;2-3;1-2
+play,3,0,stock001,02,CFFS,K
+play,3,0,cairm001,01,FX,S8.3-H;2-H;1-3;B-2(E8/TH)
+play,3,0,willg001,21,SBBX,7/F7
+play,3,1,sweem002,00,X,S5/BG5
+play,3,1,dye-j001,01,CX,HR/7.1-H
+play,3,1,beltc001,00,X,S8
+play,3,1,randj002,10,BX,3/FL
+play,3,1,mccad001,01,CX,1(B)3(1)/LDP
+play,4,0,martd002,01,CX,6/P6
+play,4,0,vaugg001,01,CX,53/G
+play,4,0,mcgrf001,00,X,S9
+play,4,0,castv001,30,BBBX,64(1)/FO
+play,4,1,johnb002,22,BBFFX,S9
+play,4,1,sancr001,10,BX,54(1)/FO
+play,4,1,damoj001,10,BX,8/F8
+play,4,1,feblc001,00,X,54(1)/FO
+play,5,0,flahj001,00,X,7/F7
+play,5,0,tramb001,02,FSS,K
+play,5,0,stock001,21,FBBX,S8
+play,5,0,cairm001,01,CX,S7/7S.1-2
+play,5,0,willg001,02,SSS,K
+play,5,1,sweem002,12,CFBS,K
+play,5,1,dye-j001,31,BBBCX,D9
+play,5,1,beltc001,32,SBBBFS,K
+play,5,1,randj002,10,BX,HR/7.2-H
+play,5,1,mccad001,31,BBBCB,W
+play,5,1,johnb002,00,,NP
+sub,whitr002,"Rick White",0,0,1
+play,5,1,johnb002,22,CCBBC,K/C
+play,6,0,martd002,11,CBX,S7
+play,6,0,vaugg001,32,BBBFFFFX,5/FL
+play,6,0,mcgrf001,00,,NP
+sub,reicd001,"Dan Reichert",1,0,1
+play,6,0,mcgrf001,00,X,46(1)3/GDP
+play,6,1,sancr001,01,CX,63/G
+play,6,1,damoj001,32,BBBCCFB,W
+play,6,1,feblc001,32,CCBBBX,63/G.1-2
+play,6,1,sweem002,11,SBX,63/G
+play,7,0,castv001,22,BBSCX,63/G
+play,7,0,flahj001,31,FBBBX,63/G
+play,7,0,tramb001,00,X,43/G
+play,7,1,dye-j001,22,BCBFFX,S8
+play,7,1,beltc001,01,CX,7/F7
+play,7,1,randj002,10,BX,3/FL
+play,7,1,mccad001,31,BSBBX,54(1)/FO
+play,8,0,stock001,31,BBBCB,W
+play,8,0,cairm001,00,X,36(1)/FO
+play,8,0,willg001,02,SSS,K
+play,8,0,martd002,00,C,SB2
+play,8,0,martd002,11,CBX,43/G
+play,8,1,johnb002,01,FX,D9
+play,8,1,sancr001,00,,NP
+sub,ordal001,"Luis Ordaz",1,8,12
+play,8,1,sancr001,00,X,54/SH.2-3
+play,8,1,damoj001,21,BCBX,8/SF.3-H
+play,8,1,feblc001,00,X,S9
+play,8,1,sweem002,20,BBX,64(1)/FO
+play,9,0,vaugg001,00,,NP
+sub,fabrj001,"Jorge Fabregas",1,8,2
+play,9,0,vaugg001,22,CBBFX,HR/7
+play,9,0,mcgrf001,10,BX,8/F8
+play,9,0,castv001,32,BBSBFS,K
+play,9,0,flahj001,22,BSFFBFS,K
+play,9,1,dye-j001,00,,NP
+sub,lopea002,"Albie Lopez",0,0,1
+play,9,1,dye-j001,02,SFX,53/G
+play,9,1,beltc001,31,BFBBB,W
+play,9,1,randj002,00,B,SB2
+play,9,1,randj002,30,BIII,IW
+play,9,1,mccad001,00,,NP
+sub,quinm001,"Mark Quinn",1,7,11
+play,9,1,quinm001,00,X,E1/TH.2-H(UR);1-3
+data,er,tracs001,5
+data,er,whitr002,1
+data,er,lopea002,0
+data,er,fussc001,5
+data,er,suzum001,0
+data,er,reicd001,1

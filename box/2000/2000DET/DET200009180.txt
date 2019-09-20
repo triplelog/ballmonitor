@@ -1,0 +1,139 @@
+version,2
+info,visteam,CHA
+info,hometeam,DET
+info,site,DET05
+info,date,2000/09/18
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,hirsj901
+info,ump1b,willc901
+info,ump2b,wegnm901
+info,ump3b,reynj901
+info,pitches,pitches
+info,temp,73
+info,winddir,tolf
+info,windspeed,9
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,162
+info,attendance,22718
+info,wp,weavj002
+info,lp,barcl001
+info,save,jonet003
+start,durhr001,"Ray Durham",0,1,4
+start,valej003,"Jose Valentin",0,2,6
+start,thomf001,"Frank Thomas",0,3,10
+start,ordom001,"Magglio Ordonez",0,4,9
+start,lee-c001,"Carlos Lee",0,5,7
+start,konep001,"Paul Konerko",0,6,3
+start,perrh001,"Herbert Perry",0,7,5
+start,singc001,"Chris Singleton",0,8,8
+start,johnc002,"Charles Johnson",0,9,2
+start,parqj001,"Jim Parque",0,0,1
+start,easld001,"Damion Easley",1,1,4
+start,encaj001,"Juan Encarnacion",1,2,8
+start,higgb001,"Bobby Higginson",1,3,7
+start,gonzj002,"Juan Gonzalez",1,4,10
+start,palmd002,"Dean Palmer",1,5,5
+start,cruzd001,"Deivi Cruz",1,6,6
+start,magew001,"Wendell Magee",1,7,9
+start,ausmb001,"Brad Ausmus",1,8,2
+start,alled001,"Dusty Allen",1,9,3
+start,weavj002,"Jeff Weaver",1,0,1
+com,"ej,joshv101,C,hirsj901,Balls and strikes"
+com,"White Sox coach Von Joshua ejected by HP umpire John Hirschbeck sometime in game"
+play,1,0,durhr001,32,BFBFBFX,8/F8
+play,1,0,valej003,20,BBX,8/F8
+play,1,0,thomf001,20,BBX,8/F8
+play,1,1,easld001,00,X,7/F7
+play,1,1,encaj001,01,CX,T9
+play,1,1,higgb001,02,CCS,K
+play,1,1,gonzj002,22,CFBBS,K
+play,2,0,ordom001,10,BX,3/G
+play,2,0,lee-c001,02,CCFFC,K/C
+play,2,0,konep001,20,BBX,63/G
+play,2,1,palmd002,11,CBX,9/L9
+play,2,1,cruzd001,02,CCX,7/F7
+play,2,1,magew001,32,CFBBBFX,53/G
+play,3,0,perrh001,22,BBCFS,K
+play,3,0,singc001,01,FX,8/F8
+play,3,0,johnc002,10,BX,2/FL
+play,3,1,ausmb001,00,X,8/F8D
+play,3,1,alled001,11,BCX,D9
+play,3,1,easld001,02,CCX,63/G.2-3
+play,3,1,encaj001,11,BFX,43/G
+play,4,0,durhr001,11,CBX,5/L5
+play,4,0,valej003,32,BSBFFBX,9/F9
+play,4,0,thomf001,00,X,3/P3
+play,4,1,higgb001,32,CBBBFX,7/F7
+play,4,1,gonzj002,22,BFBFFX,S7
+play,4,1,palmd002,12,BFCX,S9.1-3
+play,4,1,cruzd001,22,FBBFH,HP.1-2
+play,4,1,magew001,00,X,8/SF.3-H;2-3
+play,4,1,ausmb001,30,BBBB,W.1-2
+play,4,1,alled001,12,CFBC,K/C
+play,5,0,ordom001,11,BSX,43/G
+play,5,0,lee-c001,32,CCFFBFFFFFBFFBB,W
+play,5,0,konep001,00,X,HR/7.1-H
+play,5,0,perrh001,00,X,43/G
+play,5,0,singc001,12,BFFX,8/F8
+play,5,1,easld001,12,CBFX,S
+play,5,1,encaj001,32,BFBBFB,W.1-2
+play,5,1,higgb001,00,X,6/P6
+play,5,1,gonzj002,01,FX,64(1)3/GDP
+play,6,0,johnc002,22,BSBSS,K
+play,6,0,durhr001,01,CX,7/F7
+play,6,0,valej003,20,BBX,3/G
+play,6,1,palmd002,32,BBCBFB,W
+play,6,1,cruzd001,21,FBBX,64(1)3/GDP
+play,6,1,magew001,01,LX,S
+play,6,1,ausmb001,10,BX,S7/7S.1-2
+play,6,1,alled001,12,BFFC,K/C
+play,7,0,thomf001,32,CBCFBFBX,D7
+play,7,0,ordom001,11,BFX,8/F8
+play,7,0,lee-c001,22,CFBBC,K/C
+play,7,0,konep001,00,X,9/F9S
+play,7,1,easld001,00,,NP
+sub,barcl001,"Lorenzo Barcelo",0,0,1
+play,7,1,easld001,22,CCBFBX,4/P4
+play,7,1,encaj001,12,CCBX,D7/7S
+play,7,1,higgb001,32,BCBFFBFB,W
+play,7,1,gonzj002,11,BSX,S9/9S.2-H;1XH(9E2)(UR);B-2
+play,7,1,palmd002,02,CSC,K/C
+play,7,1,cruzd001,02,CSS,K
+play,8,0,perrh001,11,SBX,S7/7S
+play,8,0,singc001,11,CBX,16(1)/FO
+play,8,0,johnc002,22,BBFCS,K
+play,8,0,durhr001,02,CFN,BK.1-2
+play,8,0,durhr001,22,CFBBC,K/C
+play,8,1,magew001,00,,NP
+sub,howrb001,"Bobby Howry",0,0,1
+play,8,1,magew001,00,,NP
+sub,beckr002,"Rich Becker",1,7,11
+play,8,1,beckr002,12,SSBC,K/C
+play,8,1,ausmb001,31,BBBCX,S/89
+play,8,1,alled001,00,,NP
+sub,mcmib001,"Billy McMillon",1,9,11
+play,8,1,mcmib001,01,FX,S8/8S.1-3
+play,8,1,easld001,00,,NP
+sub,lindr001,"Rodney Lindsey",1,9,12
+play,8,1,easld001,01,LX,T/78D.3-H;1-H
+play,8,1,encaj001,10,BX,3/L3
+play,8,1,higgb001,20,BBX,5/P5
+play,9,0,valej003,00,,NP
+sub,beckr002,"Rich Becker",1,7,9
+play,9,0,valej003,00,,NP
+sub,morrh001,"Hal Morris",1,9,3
+play,9,0,valej003,00,,NP
+sub,jonet003,"Todd Jones",1,0,1
+play,9,0,valej003,02,CFX,9/F9
+play,9,0,thomf001,00,X,8/F8
+play,9,0,ordom001,32,CBBBCX,43/G
+data,er,parqj001,1
+data,er,barcl001,1
+data,er,howrb001,2
+data,er,weavj002,2
+data,er,jonet003,0

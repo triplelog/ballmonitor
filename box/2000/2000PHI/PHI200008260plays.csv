@@ -1,0 +1,77 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,10,1,,murrc001,,,0,2,BX,wolfr001,0,0,murrc001 doubles. ,murrc001,0,
+,22,1,,murrc001,,,1,8,BFBCFS,wolfr001,1,0,muelb001 strikes out. ,muelb001,0,
+,12,1,,murrc001,,,2,12,FBSC,wolfr001,1,0,bondb001 strikes out. ,bondb001,0,
+,30,1,kentj001,murrc001,,,3,16,BBBB,wolfr001,0,0,kentj001 walks. ,kentj001,0,
+,02,1,kentj001,murrc001,,,4,19,CCS,wolfr001,1,0,burke001 strikes out. ,burke001,0,
+,32,1,abreb001,,,,5,8,CBSFBFBB,ruetk001,0,0,abreb001 walks. ,abreb001,1,
+,00,1,,,,,6,9,X,ruetk001,2,0,Double Play. ,gland001,1,
+,12,1,roles001,,,,7,13,BCCX,ruetk001,0,0,roles001 singles. ,roles001,1,
+,21,1,roles001,,,,8,17,BBCX,ruetk001,1,0,liebm001 grounds out. ,liebm001,1,G
+,32,2,aurir001,,,,9,25,BBCBSB,wolfr001,0,0,aurir001 walks. ,aurir001,0,
+aurir001 to 2B. ,31,2,martr003,aurir001,,,10,30,BFBBX,wolfr001,0,0,martr003 singles. ,martr003,0,
+,32,2,martr003,aurir001,,,11,40,BCBFFBFFFX,wolfr001,1,0,,mirad001,0,F
+aurir001 to 3B. martr003 to 2B. ,00,2,,martr003,aurir001,,12,41,X,wolfr001,1,0,Sacrifice bunt by ruetk001.,ruetk001,0,
+,02,2,,martr003,aurir001,,13,44,CFS,wolfr001,1,0,murrc001 strikes out. ,murrc001,0,
+,20,2,,,,,14,20,BBX,ruetk001,1,0,burrp001 grounds out. ,burrp001,1,G
+,00,2,,,,,15,21,X,ruetk001,1,0,,huntb001,1,F
+,10,2,andem003,,,,16,23,BX,ruetk001,0,0,andem003 singles. ,andem003,1,
+andem003 to 2B. ,10,2,peret003,andem003,,,17,25,BX,ruetk001,0,0,peret003 singles. ,peret003,1,
+,12,2,peret003,andem003,,,18,29,CBSS,ruetk001,1,0,wolfr001 strikes out. ,wolfr001,1,
+,31,3,muelb001,,,,19,49,BSBBB,wolfr001,0,0,muelb001 walks. ,muelb001,0,
+,32,3,muelb001,,,,20,56,BSBCFBS,wolfr001,1,0,bondb001 strikes out. ,bondb001,0,
+muelb001 to 2B. ,31,3,kentj001,muelb001,,,21,61,BFBBB,wolfr001,0,0,kentj001 walks. ,kentj001,0,
+muelb001 out. kentj001 to 2B. ,22,3,burke001,kentj001,,,22,68,BFFFBFX,wolfr001,1,0,burke001 singles. ,burke001,0,
+kentj001 to 3B. burke001 to 2B. ,00,3,aurir001,burke001,kentj001,,23,69,X,wolfr001,0,0,aurir001 singles. ,aurir001,0,
+aurir001 out. ,00,3,martr003,burke001,kentj001,,24,70,X,wolfr001,1,0,martr003 reaches on fielder's choice. ,martr003,0,
+,10,3,abreb001,,,,25,31,BX,ruetk001,0,0,abreb001 singles. ,abreb001,1,
+abreb001 to 3B. ,22,3,gland001,,abreb001,,26,38,CBFFBFX,ruetk001,0,0,gland001 singles. ,gland001,1,
+,32,3,gland001,,abreb001,,27,49,CBFFBBFFFFS,ruetk001,1,0,roles001 strikes out. ,roles001,1,
+,00,3,gland001,,abreb001,,28,50,X,ruetk001,1,0,,liebm001,1,F
+abreb001 scores. gland001 scores. ,32,3,,burrp001,,,29,56,BBCSBX,ruetk001,0,2,burrp001 doubles. ,burrp001,1,
+burrp001 scores. ,12,3,huntb001,,,,30,60,CCBX,ruetk001,0,1,huntb001 singles. ,huntb001,1,
+,02,3,huntb001,,,,31,64,CCFC,ruetk001,1,0,andem003 strikes out. ,andem003,1,
+,10,4,mirad001,,,,32,72,BX,wolfr001,0,0,mirad001 singles. ,mirad001,0,
+mirad001 to 2B. ,00,4,,mirad001,,,33,73,X,wolfr001,1,0,Sacrifice bunt by ruetk001.,ruetk001,0,
+mirad001 to 3B. ,20,4,murrc001,,mirad001,,34,76,BBX,wolfr001,0,0,murrc001 singles. ,murrc001,0,
+murrc001 to 2B. ,32,4,muelb001,murrc001,mirad001,,35,84,CBBBSFFB,wolfr001,0,0,muelb001 walks. ,muelb001,0,
+mirad001 scores. murrc001 to 3B. muelb001 to 2B. ,11,4,,muelb001,murrc001,,36,87,SBX,wolfr001,1,1,bondb001 hits sacrifice fly. ,bondb001,0,
+,22,4,kentj001,muelb001,murrc001,,37,92,SBBSH,wolfr001,0,0,kentj001 hit by pitch. ,kentj001,0,
+,12,4,kentj001,muelb001,murrc001,,38,97,CCBFX,wolfr001,1,0,burke001 grounds out. ,burke001,0,G
+,32,4,,,,,39,70,CSBBBS,ruetk001,1,0,peret003 strikes out. ,peret003,1,
+,12,4,wolfr001,,,,40,74,CBFX,ruetk001,0,0,wolfr001 singles. ,wolfr001,1,
+,11,4,wolfr001,,,,41,77,BCX,ruetk001,1,0,,abreb001,1,F
+wolfr001 to 2B. ,12,4,gland001,wolfr001,,,42,81,CFBX,ruetk001,0,0,gland001 singles. ,gland001,1,
+wolfr001 scores. gland001 scores. ,10,4,,,roles001,,43,83,BX,ruetk001,0,2,roles001 triples. ,roles001,1,
+,22,4,,,roles001,,44,88,CBFBX,ruetk001,1,0,liebm001 grounds out. ,liebm001,1,G
+,11,5,,,,,45,100,CBX,wolfr001,1,0,,aurir001,0,F
+,10,5,,,,,46,102,BX,wolfr001,1,0,,martr003,0,F
+,21,5,,,,,47,106,BFBX,wolfr001,1,0,,mirad001,0,P
+,12,5,,,,,49,4,BCCS,nathj001,1,0,burrp001 strikes out. ,burrp001,1,
+,21,5,,,,,50,8,CBBX,nathj001,1,0,,huntb001,1,P
+,22,5,,,,,51,13,FSBBX,nathj001,1,0,,andem003,1,F
+,21,6,,nathj001,,,52,110,BCBX,wolfr001,0,0,nathj001 doubles. ,nathj001,0,
+nathj001 scores. ,21,6,,murrc001,,,53,114,BBFX,wolfr001,0,1,murrc001 doubles. ,murrc001,0,
+,22,6,,,murrc001,muelb001,54,120,BFFBFB,wolfr001,0,0,murrc001 steals 3B. ,muelb001,0,
+,32,6,,,murrc001,,55,130,BFFBFBFFFS,wolfr001,1,0,muelb001 strikes out. ,muelb001,0,
+,12,6,,,murrc001,,56,134,BFCS,wolfr001,1,0,bondb001 strikes out. ,bondb001,0,
+,22,6,,,murrc001,,57,140,BCSBFX,wolfr001,1,0,kentj001 grounds out. ,kentj001,0,G
+,21,6,,,,,58,17,BBSX,nathj001,1,0,,peret003,1,P
+,11,6,,,,,60,20,CBX,nathj001,1,0,,duceb001,1,F
+,20,6,,,,,61,23,BBX,nathj001,1,0,abreb001 grounds out. ,abreb001,1,G
+,12,7,,,,,63,4,SCBS,padiv001,1,0,burke001 strikes out. ,burke001,0,
+,32,7,,,,,64,10,BBCCBS,padiv001,1,0,aurir001 strikes out. ,aurir001,0,
+,22,7,,,,,65,15,CCBBX,padiv001,1,0,,martr003,0,P
+,11,7,gland001,,,,66,26,BFX,nathj001,0,0,gland001 singles. ,gland001,1,
+,12,7,gland001,,,,67,30,CFBS,nathj001,1,0,roles001 strikes out. ,roles001,1,
+,12,7,,,,liebm001,68,35,BFFFB,nathj001,1,0,gland001 caught stealing. ,liebm001,1,
+,22,7,,,,,69,41,BFFFBS,nathj001,1,0,liebm001 strikes out. ,liebm001,1,
+,21,8,,,,,71,19,BBCX,padiv001,1,0,benam001 grounds out. ,benam001,0,G
+,01,8,,,,,73,21,FX,padiv001,1,0,,cresf001,0,F
+,12,8,,,,,74,25,CFBS,padiv001,1,0,murrc001 strikes out. ,murrc001,0,
+,32,8,burrp001,,,,77,6,CBBCBB,henrd002,0,0,burrp001 walks. ,burrp001,1,
+,12,8,,,,,79,10,CSBX,henrd002,2,0,Double Play. ,huntb001,1,
+,22,8,,,,,80,15,BFBSS,henrd002,1,0,andem003 strikes out. ,andem003,1,
+,01,9,,,,,83,2,CX,branj001,1,0,,muelb001,0,F
+,11,9,,,,,84,5,CBX,branj001,1,0,,bondb001,0,F
+,12,9,,,,,85,9,SBFS,branj001,1,0,kentj001 strikes out. ,kentj001,0,

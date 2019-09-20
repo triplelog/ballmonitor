@@ -1,0 +1,81 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,12,1,,,,,0,7,CBFFFFX,ritct001,1,0,reesp001 grounds out. ,reesp001,0,G
+stync001 to 1B. ,02,1,stync001,,,,1,10,CCS,ritct001,0,0,stync001 strikes out. Passed Ball. ,stync001,0,
+stync001 out. ,00,1,grifk002,,,,2,11,X,ritct001,1,0,grifk002 reaches on fielder's choice. ,grifk002,0,
+,22,1,grifk002,,,,3,16,CBBFX,ritct001,1,0,cases001 grounds out. ,cases001,0,G
+,22,1,,,,,4,6,CBBFFS,wills002,1,0,browa001 strikes out. ,browa001,1,
+,21,1,kendj001,,,,5,10,BBCX,wills002,0,0,kendj001 singles. ,kendj001,1,
+,11,1,,,,,6,13,CBX,wills002,2,0,Double Play. ,gileb002,1,
+,32,2,,,,,7,22,BBFBFX,ritct001,1,0,yound001 grounds out. ,yound001,0,G
+,02,2,,,,,8,26,SSFX,ritct001,1,0,tuckm001 grounds out. ,tuckm001,0,G
+,02,2,,,,,9,29,CCS,ritct001,1,0,santb001 strikes out. ,santb001,0,
+,32,2,vandj001,,,,10,19,CBBSBB,wills002,0,0,vandj001 walks. ,vandj001,1,
+,20,2,vandj001,,,,11,22,BBX,wills002,1,0,,wilse001,1,F
+vandj001 to 3B. morrw001 to 2B. ,00,2,,morrw001,vandj001,,12,23,X,wills002,0,0,morrw001 singles. ,morrw001,1,
+,00,2,,morrw001,vandj001,,13,24,X,wills002,1,0,,herna001,1,L
+vandj001 scores. morrw001 to 3B. ,00,2,,,morrw001,nunea001,14,25,B,wills002,0,1,Wild Pitch. ,nunea001,1,
+,31,2,nunea001,,morrw001,,15,30,BBFBI,wills002,0,0,nunea001 intentionally walks. ,nunea001,1,
+,32,2,nunea001,,morrw001,,16,36,BBCFBX,wills002,1,0,ritct001 grounds out. ,ritct001,1,G
+,32,3,,,,,17,36,FCBBFBX,ritct001,1,0,,sextc001,0,F
+,32,3,,,,,18,44,BSCFBBFC,ritct001,1,0,wills002 strikes out. ,wills002,0,
+,21,3,reesp001,,,,19,48,CBBX,ritct001,0,0,reesp001 singles. ,reesp001,0,
+reesp001 to 2B. ,00,3,,reesp001,,stync001,20,49,B,ritct001,0,0,Wild Pitch. ,stync001,0,
+,32,3,,reesp001,,,21,58,BBFFFFBFX,ritct001,1,0,,stync001,0,P
+,31,3,browa001,,,,22,41,FBBBB,wills002,0,0,browa001 walks. ,browa001,1,
+browa001 scores. ,21,3,,kendj001,,,23,45,CBBX,wills002,0,1,kendj001 doubles. ,kendj001,1,
+,30,3,gileb002,kendj001,,,24,49,BBBB,wills002,0,0,gileb002 walks. ,gileb002,1,
+,32,3,gileb002,kendj001,,,25,55,BBBCSX,wills002,1,0,,vandj001,1,P
+,21,3,gileb002,kendj001,,,26,59,FBBX,wills002,1,0,,wilse001,1,F
+,01,3,gileb002,kendj001,,,27,61,FX,wills002,1,0,,morrw001,1,F
+,12,4,grifk002,,,,28,65,CFFFFBX,ritct001,0,0,grifk002 singles. ,grifk002,0,
+grifk002 scores. ,10,4,,,,,29,67,BX,ritct001,0,2,cases001 homers. ,cases001,0,
+,10,4,,,,,30,69,BX,ritct001,1,0,,yound001,0,F
+,32,4,tuckm001,,,,31,75,BBBCCB,ritct001,0,0,tuckm001 walks. ,tuckm001,0,
+,00,4,tuckm001,,,,32,76,X,ritct001,1,0,,santb001,0,F
+tuckm001 out. ,11,4,sextc001,,,,33,79,BFX,ritct001,1,0,sextc001 reaches on fielder's choice. ,sextc001,0,
+,22,4,,,,,34,67,BFFBFX,wills002,0,1,herna001 homers. ,herna001,1,
+,01,4,nunea001,,,,35,69,FX,wills002,0,0,nunea001 singles. ,nunea001,1,
+nunea001 to 2B. ,11,4,,nunea001,,,36,72,BFX,wills002,1,0,Sacrifice bunt by ritct001.,ritct001,1,
+nunea001 to 3B. ,11,4,,,nunea001,,37,75,FBX,wills002,1,0,browa001 grounds out. ,browa001,1,G
+nunea001 scores. ,31,4,,kendj001,,,38,80,CBBBX,wills002,0,1,kendj001 doubles. ,kendj001,1,
+,32,4,,kendj001,,,40,6,BBFFBS,merch002,1,0,gileb002 strikes out. ,gileb002,1,
+,32,5,,,,,41,86,BBCSFBS,ritct001,1,0,merch002 strikes out. ,merch002,0,
+,12,5,,reesp001,,,42,90,CBFX,ritct001,0,0,reesp001 doubles. ,reesp001,0,
+,02,5,,reesp001,,,43,94,FSFS,ritct001,1,0,stync001 strikes out. ,stync001,0,
+reesp001 scores. ,22,5,,grifk002,,,44,99,BCSBX,ritct001,0,1,grifk002 doubles. ,grifk002,0,
+,00,5,,grifk002,,,45,100,X,ritct001,1,0,,cases001,0,F
+,32,5,,,,,46,12,CBBSBS,merch002,1,0,vandj001 strikes out. ,vandj001,1,
+,21,5,wilse001,,,,47,16,BSBX,merch002,0,0,wilse001 singles. ,wilse001,1,
+wilse001 to 2B. ,01,5,,wilse001,,morrw001,48,18,CB,merch002,0,0,Wild Pitch. ,morrw001,1,
+,32,5,morrw001,wilse001,,,49,26,CBBBSFFB,merch002,0,0,morrw001 walks. ,morrw001,1,
+,02,5,morrw001,wilse001,,,50,29,FSS,merch002,1,0,herna001 strikes out. ,herna001,1,
+,31,5,morrw001,wilse001,,,51,34,BBBCX,merch002,1,0,nunea001 grounds out. ,nunea001,1,G
+,11,6,,,,,52,103,BFX,ritct001,1,0,yound001 grounds out. ,yound001,0,G
+,32,6,,,,,53,113,FBFBFFBFFX,ritct001,1,0,tuckm001 grounds out. ,tuckm001,0,G
+,20,6,,,,,54,116,BBX,ritct001,1,0,santb001 grounds out. ,santb001,0,G
+,32,6,,,,,56,40,BBBFSX,merch002,1,0,wehnj001 grounds out. ,wehnj001,1,G
+,12,6,browa001,,,,57,44,BFSX,merch002,0,0,browa001 singles. ,browa001,1,
+,02,6,browa001,,,,60,3,CFS,sulls001,1,0,kendj001 strikes out. ,kendj001,1,
+,22,6,browa001,,,,61,8,FCBBX,sulls001,1,0,,gileb002,1,P
+,21,7,,,,,63,4,BCBX,loisr001,1,0,,sextc001,0,F
+,12,7,,,,,64,8,FBFS,loisr001,1,0,ochoa001 strikes out. ,ochoa001,0,
+,30,7,reesp001,,,,65,12,BBBB,loisr001,0,0,reesp001 walks. ,reesp001,0,
+,02,7,reesp001,,,,66,15,CFX,loisr001,1,0,stync001 grounds out. ,stync001,0,G
+,10,7,,,,,67,10,BX,sulls001,1,0,,vandj001,1,F
+,01,7,,,,,68,12,FX,sulls001,1,0,,wilse001,1,F
+,11,7,morrw001,,,,69,15,BFX,sulls001,0,0,morrw001 singles. ,morrw001,1,
+,12,7,morrw001,,,,70,19,SFBS,sulls001,1,0,herna001 strikes out. ,herna001,1,
+,11,8,,,,,72,3,BCX,saues001,1,0,,grifk002,0,P
+,11,8,,,cases001,,73,6,CBX,saues001,0,0,cases001 triples. ,cases001,0,
+,10,8,,,huntb002,,75,8,BX,saues001,1,0,yound001 grounds out. ,yound001,0,G
+,11,8,,,huntb002,,77,11,SBX,saues001,1,0,,bellm003,0,P
+,01,8,nunea001,,,,81,2,FX,riedj001,0,0,nunea001 reaches on error. ,nunea001,1,G
+nunea001 to 2B. ,01,8,,nunea001,,,83,4,CX,riedj001,1,0,Sacrifice bunt by mearp001.,mearp001,1,
+nunea001 scores. ,02,8,,browa001,,,84,7,CSX,riedj001,0,1,browa001 doubles. ,browa001,1,
+,11,8,,browa001,,,85,10,CBX,riedj001,1,0,,kendj001,1,F
+,31,8,gileb002,browa001,,,86,15,BCBBB,riedj001,0,0,gileb002 walks. ,gileb002,1,
+browa001 scores. gileb002 scores. ,10,8,,vandj001,,,87,17,BX,riedj001,0,2,vandj001 doubles. ,vandj001,1,
+,21,8,,vandj001,,,88,21,BBFX,riedj001,1,0,wilse001 grounds out. ,wilse001,1,G
+,11,9,santb001,,,,90,3,BFX,willm005,0,0,santb001 singles. ,santb001,0,
+santb001 out. ,01,9,sextc001,,,,91,5,SX,willm005,1,0,sextc001 reaches on fielder's choice. ,sextc001,0,
+,12,9,,,,,92,10,BSFFX,willm005,2,0,Double Play. ,ochoa001,0,

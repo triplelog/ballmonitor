@@ -1,0 +1,101 @@
+version,2
+info,visteam,FLO
+info,hometeam,COL
+info,site,DEN02
+info,date,2000/09/23
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,false
+info,umphome,barrt901
+info,ump1b,randt901
+info,ump2b,monte901
+info,ump3b,laynj901
+info,pitches,pitches
+info,temp,44
+info,winddir,fromlf
+info,windspeed,12
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,111
+info,attendance,36355
+info,wp,smitc001
+info,lp,wasdj001
+info,save,
+start,bergd002,"Dave Berg",0,1,4
+start,kotsm001,"Mark Kotsay",0,2,9
+start,millk005,"Kevin Millar",0,3,7
+start,wilsp002,"Preston Wilson",0,4,8
+start,lowem001,"Mike Lowell",0,5,5
+start,lee-d002,"Derrek Lee",0,6,3
+start,fox-a001,"Andy Fox",0,7,6
+start,redmm001,"Mike Redmond",0,8,2
+start,smitc001,"Chuck Smith",0,9,1
+start,shumt001,"Terry Shumpert",1,1,7
+start,peren001,"Neifi Perez",1,2,6
+start,cirij001,"Jeff Cirillo",1,3,5
+start,heltt001,"Todd Helton",1,4,3
+start,hollt001,"Todd Hollandsworth",1,5,8
+start,huskb001,"Butch Huskey",1,6,9
+start,walkt002,"Todd Walker",1,7,4
+start,maynb001,"Brent Mayne",1,8,2
+start,wasdj001,"John Wasdin",1,9,1
+com,"38 minute rain delay in the seventh"
+play,1,0,bergd002,02,CFFFC,K/C
+play,1,0,kotsm001,21,BBFX,9/F9D
+play,1,0,millk005,22,FSBBX,63/G
+play,1,1,shumt001,12,BFSX,63/G
+play,1,1,peren001,31,BFBBX,5/FL
+play,1,1,cirij001,21,BBCX,7/F7
+play,2,0,wilsp002,22,FFBFBFS,K
+play,2,0,lowem001,01,CX,S8/8S
+play,2,0,lee-d002,00,X,8/F8D
+play,2,0,fox-a001,00,X,S/89.1-3
+play,2,0,redmm001,02,CCFS,K
+play,2,1,heltt001,22,BCCFFBX,43/G
+play,2,1,hollt001,30,BBBB,W
+play,2,1,huskb001,22,BCFBFS,K+SB2
+play,2,1,walkt002,31,CBBBB,W
+play,2,1,maynb001,12,SBFX,7/F7
+play,3,0,smitc001,12,CSBS,K
+play,3,0,bergd002,02,CCFS,K
+play,3,0,kotsm001,32,FBBBFX,3/G
+play,3,1,wasdj001,02,FFS,K
+play,3,1,shumt001,01,CX,S8/8S
+play,3,1,peren001,12,BFFS,K
+play,3,1,cirij001,10,B1,POCS2(134)
+play,4,0,millk005,00,X,13/G
+play,4,0,wilsp002,00,X,D/89
+play,4,0,lowem001,00,X,S7.2-H
+play,4,0,lee-d002,01,CB,SB2
+play,4,0,lee-d002,11,CBX,D9.2-H
+play,4,0,fox-a001,21,CBBX,63/G.2-3
+play,4,0,redmm001,30,IIII,IW
+play,4,0,smitc001,02,CFS,K
+play,4,1,cirij001,00,X,9/FL
+play,4,1,heltt001,32,BCBCBB,W
+play,4,1,hollt001,12,BFSS,K
+play,4,1,huskb001,10,BX,8/F8
+play,5,0,bergd002,02,FCS,K
+play,5,0,kotsm001,12,FBSX,8/F8
+play,5,0,millk005,02,CFC,K/C
+play,5,1,walkt002,32,CFFBBBB,W
+play,5,1,maynb001,01,CX,64(1)3/GDP
+play,5,1,wasdj001,22,CBFBFX,S8
+play,5,1,shumt001,02,CCC,K/C
+play,6,0,wilsp002,00,X,HR/78
+play,6,0,lowem001,12,BFSC,K/C
+play,6,0,lee-d002,01,FX,7/F7D
+play,6,0,fox-a001,01,CX,9/F9D
+play,6,1,peren001,10,BX,13/G
+play,6,1,cirij001,22,CBCBX,63/G
+play,6,1,heltt001,31,BFBBX,5/FL
+play,7,0,redmm001,00,X,8/F8
+play,7,0,smitc001,22,FBBFC,K/C
+play,7,0,bergd002,02,FCS,K
+play,7,1,hollt001,32,FBBCBX,D9
+play,7,1,huskb001,10,BX,D9/9D.2-H
+com,"game called for rain"
+data,er,smitc001,1
+data,er,wasdj001,3

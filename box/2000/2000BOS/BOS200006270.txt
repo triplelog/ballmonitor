@@ -1,0 +1,194 @@
+version,2
+info,visteam,BAL
+info,hometeam,BOS
+info,site,BOS07
+info,date,2000/06/27
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,welkt901
+info,ump1b,reynj901
+info,ump2b,wegnm901
+info,ump3b,lampi901
+info,pitches,pitches
+info,temp,72
+info,winddir,tolf
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,223
+info,attendance,32813
+info,wp,tromm001
+info,lp,lowed001
+info,save,groob001
+start,andeb001,"Brady Anderson",0,1,8
+start,bordm001,"Mike Bordick",0,2,6
+start,deshd001,"Delino DeShields",0,3,4
+start,bellj002,"Albert Belle",0,4,9
+start,conij001,"Jeff Conine",0,5,3
+start,surhb001,"B.J. Surhoff",0,6,7
+start,ripkc001,"Cal Ripken",0,7,5
+start,clarw001,"Will Clark",0,8,10
+start,johnc002,"Charles Johnson",0,9,2
+start,mussm001,"Mike Mussina",0,0,1
+start,offej001,"Jose Offerman",1,1,4
+start,fryej001,"Jeff Frye",1,2,9
+start,daubb001,"Brian Daubach",1,3,7
+start,garcn001,"Nomar Garciaparra",1,4,6
+start,burkm001,"Morgan Burkhart",1,5,10
+start,stanm002,"Mike Stanley",1,6,3
+start,hatts001,"Scott Hatteberg",1,7,2
+start,alexm001,"Manny Alexander",1,8,5
+start,pridc001,"Curtis Pride",1,9,8
+start,schop001,"Pete Schourek",1,0,1
+play,1,0,andeb001,32,BBFCFBX,3/FL
+play,1,0,bordm001,12,FBFX,D9/9S
+play,1,0,deshd001,11,CBX,43/G.2-3
+play,1,0,bellj002,22,CBBFC,K/C
+play,1,1,offej001,22,CBCBFS,K
+play,1,1,fryej001,12,CFBFFFX,53/G
+play,1,1,daubb001,12,FSBC,K/C
+play,2,0,conij001,31,BBBCX,S
+play,2,0,surhb001,12,BCCX,13/G.1-2
+play,2,0,ripkc001,01,CX,3/P3
+play,2,0,clarw001,32,BCSBBS,K
+play,2,1,garcn001,21,CBBX,S9
+play,2,1,burkm001,12,CFBX,S9.1-2
+com,"Debut game for Morgan Burkhart"
+play,2,1,stanm002,22,SCBBS,K
+play,2,1,hatts001,32,CFBBFBFC,K/C
+play,2,1,alexm001,10,BX,46(1)/FO.2-3
+play,3,0,johnc002,00,X,E5/G
+play,3,0,andeb001,01,CX,16(1)3/GDP
+play,3,0,bordm001,02,CCS,K
+play,3,1,pridc001,22,BFSBX,3/G
+play,3,1,offej001,02,FCX,53/G
+play,3,1,fryej001,22,BFBCS,K+WP.B-1
+play,3,1,daubb001,22,BFSBX,7/F7
+play,4,0,deshd001,11,CBX,63/G
+play,4,0,bellj002,22,CBCBS,K
+play,4,0,conij001,32,SSBBFBB,W
+play,4,0,surhb001,01,C1,POCS2(136)
+play,4,1,garcn001,12,BSFX,9/F9
+play,4,1,burkm001,32,BSBBFX,8/F8
+play,4,1,stanm002,12,SBCS,K
+play,5,0,surhb001,12,CBFFX,31/G
+play,5,0,ripkc001,10,BX,6/P6
+play,5,0,clarw001,32,BCCBBB,W
+play,5,0,johnc002,10,BX,43/G
+play,5,1,hatts001,11,CBX,53/G
+play,5,1,alexm001,22,BBCCS,K
+play,5,1,pridc001,22,CBFBX,S8/8S
+play,5,1,offej001,12,BCFX,43/G
+play,6,0,andeb001,12,BCSFFX,43/G
+play,6,0,bordm001,01,FX,7/F7
+play,6,0,deshd001,00,X,S8
+play,6,0,bellj002,20,BBS,CS2(24)
+play,6,1,fryej001,02,CCC,K/C
+play,6,1,daubb001,21,BFBX,8/F8D
+play,6,1,garcn001,02,FFX,S
+play,6,1,burkm001,30,BBBB,W.1-2
+play,6,1,stanm002,12,BCFFS,K
+play,7,0,bellj002,21,BBFX,8/F8
+play,7,0,conij001,22,CBCBX,43/G
+play,7,0,surhb001,00,X,S9/9S
+play,7,0,ripkc001,32,BFBBFX,63/G
+play,7,1,hatts001,32,BCFBFBX,S8/8S
+play,7,1,alexm001,00,X,34/SH.1-2
+play,7,1,pridc001,22,BBFCS,K
+play,7,1,offej001,31,BFBBX,S9.2-H;BX2(936463)
+com,"GG: might really be 93643, but that doesn't change anything"
+play,8,0,clarw001,00,,NP
+sub,alcai001,"Israel Alcantara",1,3,7
+play,8,0,clarw001,00,,NP
+sub,garcr001,"Rich Garces",1,0,1
+play,8,0,clarw001,32,FBBSBFFFX,S9
+play,8,0,johnc002,00,,NP
+sub,matol001,"Luis Matos",0,8,12
+play,8,0,johnc002,12,BCSS,K
+play,8,0,andeb001,00,,NP
+sub,cormr001,"Rheal Cormier",1,0,1
+play,8,0,andeb001,10,BX,5(B)3(1)/LDP
+play,8,1,fryej001,00,,NP
+sub,timlm001,"Mike Timlin",0,0,1
+play,8,1,fryej001,32,BBBCCFX,63/G
+play,8,1,alcai001,22,FBFBS,K
+play,8,1,garcn001,12,BSSX,63/G
+play,9,0,bordm001,00,,NP
+sub,lowed001,"Derek Lowe",1,0,1
+play,9,0,bordm001,22,BBCCS,K
+play,9,0,deshd001,00,X,D7/7D
+play,9,0,bellj002,01,CX,S8.2-H;B-2(THH)
+play,9,0,conij001,10,BX,8/F8
+play,9,0,surhb001,30,IIII,IW
+play,9,0,ripkc001,12,CSFBS,K
+play,9,1,burkm001,00,X,S9
+play,9,1,stanm002,10,BX,34/SH.1-2
+play,9,1,hatts001,30,IIII,IW
+play,9,1,alexm001,00,,NP
+sub,varij001,"Jason Varitek",1,8,11
+play,9,1,varij001,22,SBBFFX,6/P6
+play,9,1,pridc001,00,,NP
+sub,mcelc001,"Chuck McElroy",0,0,1
+play,9,1,pridc001,00,,NP
+sub,lewid001,"Darren Lewis",1,9,11
+play,9,1,lewid001,30,BBBB,W.2-3;1-2
+play,9,1,offej001,00,,NP
+sub,tromm001,"Mike Trombley",0,0,1
+play,9,1,offej001,00,,NP
+sub,veraw001,"Wilton Veras",1,9,12
+play,9,1,offej001,22,FBFBX,3/G
+play,10,0,matol001,00,,NP
+sub,lowed001,"Derek Lowe",1,8,1
+play,10,0,matol001,00,,NP
+sub,fryej001,"Jeff Frye",1,2,8
+play,10,0,matol001,00,,NP
+sub,alcai001,"Israel Alcantara",1,3,9
+play,10,0,matol001,00,,NP
+sub,burkm001,"Morgan Burkhart",1,5,7
+play,10,0,matol001,00,,NP
+sub,veraw001,"Wilton Veras",1,9,5
+play,10,0,matol001,00,,NP
+sub,bainh001,"Harold Baines",0,8,11
+play,10,0,bainh001,11,CBX,S
+play,10,0,johnc002,00,,NP
+sub,lewim001,"Mark Lewis",0,8,12
+play,10,0,johnc002,32,CBBFBFFX,HR/7.1-H
+play,10,0,andeb001,00,,NP
+sub,florb001,"Bryce Florie",1,8,1
+play,10,0,andeb001,32,CBBBFX,9/F9D
+play,10,0,bordm001,22,FFBBX,E6/G
+play,10,0,deshd001,00,X,43/G.1-2
+play,10,0,bellj002,30,IIII,IW
+play,10,0,conij001,00,X,S.2-3;1-2
+play,10,0,surhb001,00,X,S/78.3-H(UR);2-H(UR);1-3
+play,10,0,ripkc001,10,BX,FC5/TH2.3-H(UR);1-2;B-1
+com,"throw to second too late"
+play,10,0,lewim001,00,,NP
+sub,erics001,"Scott Erickson",0,7,12
+play,10,0,lewim001,00,X,65(2)/FO.1-2
+play,10,1,fryej001,00,,NP
+sub,lewim001,"Mark Lewis",0,8,5
+play,10,1,fryej001,00,,NP
+sub,milla001,"Alan Mills",0,7,1
+play,10,1,fryej001,12,CFBS,K
+play,10,1,alcai001,21,BFBX,S7
+play,10,1,garcn001,10,BX,HR/78.1-H
+play,10,1,burkm001,10,BX,8/F8
+play,10,1,stanm002,12,SSFBFFFFX,S8
+play,10,1,hatts001,00,,NP
+sub,groob001,"Buddy Groom",0,7,1
+play,10,1,hatts001,12,CBCFFFS,K
+data,er,mussm001,1
+data,er,timlm001,0
+data,er,mcelc001,0
+data,er,tromm001,0
+data,er,milla001,2
+data,er,groob001,0
+data,er,schop001,0
+data,er,garcr001,0
+data,er,cormr001,0
+data,er,lowed001,3
+data,er,florb001,0

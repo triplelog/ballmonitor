@@ -1,0 +1,143 @@
+version,2
+info,visteam,OAK
+info,hometeam,TBA
+info,site,STP01
+info,date,2000/05/25
+info,number,0
+info,starttime,7:15PM
+info,daynight,night
+info,usedh,true
+info,umphome,cookr901
+info,ump1b,willc901
+info,ump2b,reynj901
+info,ump3b,wegnm901
+info,pitches,pitches
+info,temp,72
+info,winddir,ltor
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,173
+info,attendance,13251
+info,wp,hereg001
+info,lp,yan-e001
+info,save,isrij001
+start,longt002,"Terrence Long",0,1,8
+start,velar001,"Randy Velarde",0,2,4
+start,giamj001,"Jason Giambi",0,3,10
+start,grieb001,"Ben Grieve",0,4,7
+start,saeno001,"Olmedo Saenz",0,5,3
+start,staim001,"Matt Stairs",0,6,9
+start,tejam001,"Miguel Tejada",0,7,6
+start,chave001,"Eric Chavez",0,8,5
+start,hernr002,"Ramon Hernandez",0,9,2
+start,hereg001,"Gil Heredia",0,0,1
+start,willg001,"Gerald Williams",1,1,8
+start,mccrq001,"Quinton McCracken",1,2,7
+start,vaugg001,"Greg Vaughn",1,3,10
+start,mcgrf001,"Fred McGriff",1,4,3
+start,guilj001,"Jose Guillen",1,5,9
+start,castv001,"Vinny Castilla",1,6,5
+start,difem001,"Mike DiFelice",1,7,2
+start,guilo001,"Ozzie Guillen",1,8,6
+start,cairm001,"Miguel Cairo",1,9,4
+start,yan-e001,"Esteban Yan",1,0,1
+play,1,0,longt002,02,CFX,63/G
+play,1,0,velar001,32,BBBCCB,W
+play,1,0,giamj001,21,BFBX,9/F9
+play,1,0,grieb001,10,BX,7/F7
+play,1,1,willg001,02,CLC,K/C
+play,1,1,mccrq001,32,BCBFBB,W
+play,1,1,vaugg001,32,BSFBFBX,S7.1-3
+play,1,1,mcgrf001,30,BBBX,3(B)6(1)/GDP
+play,2,0,saeno001,00,X,HR/7
+play,2,0,staim001,11,CBX,5/P5
+play,2,0,tejam001,22,CBCBS,K
+play,2,0,chave001,10,BX,8/F8
+play,2,1,guilj001,12,BFFX,8/F8
+play,2,1,castv001,10,BX,8/F8
+play,2,1,difem001,31,CBBBX,53/G
+play,3,0,hernr002,12,FFBS,K
+play,3,0,longt002,11,BFX,S9/9S
+play,3,0,velar001,02,CFX,46(1)3/GDP
+play,3,1,guilo001,32,BBCCBX,63/G
+play,3,1,cairm001,21,BCBX,53/G
+play,3,1,willg001,11,FBX,S7/7S
+play,3,1,mccrq001,21,CBBC,CS2(26)
+play,4,0,giamj001,00,H,HP
+play,4,0,grieb001,21,BBCX,D7/7D.1-3
+play,4,0,saeno001,30,BBBX,T/78D.3-H;2-H
+play,4,0,staim001,20,BBX,3/G
+play,4,0,tejam001,11,BFX,S8.3-H
+play,4,0,chave001,00,X,D9.1-3
+play,4,0,hernr002,11,CBX,163/G.3-H;2-3
+play,4,0,longt002,01,FX,8/F8
+play,4,1,mccrq001,22,BCSBS,K
+play,4,1,vaugg001,32,FBFBBX,63/G
+play,4,1,mcgrf001,32,BBBFCB,W
+play,4,1,guilj001,21,FBBX,64(1)/FO
+play,5,0,velar001,32,CSBBBX,S8
+play,5,0,giamj001,12,SBCFS,K
+play,5,0,grieb001,00,C,SB2
+play,5,0,grieb001,22,CBSBB,WP.2-H(E2/TH3)
+play,5,0,grieb001,32,CBSBBX,S7
+play,5,0,saeno001,00,,NP
+sub,whitr002,"Rick White",1,0,1
+play,5,0,saeno001,31,BFBBX,4/P4
+play,5,0,staim001,22,BFBFFX,7/F7
+play,5,1,castv001,00,X,53/G
+play,5,1,difem001,12,CFBX,9/F9
+play,5,1,guilo001,00,X,8/F8
+play,6,0,tejam001,21,CBBX,63/G
+play,6,0,chave001,02,CCX,8/F8
+play,6,0,hernr002,31,BBBCX,5/P5
+play,6,1,cairm001,12,CCBS,K
+play,6,1,willg001,11,CBX,D7
+play,6,1,mccrq001,01,FX,13/G
+play,6,1,vaugg001,12,CBSX,D7.2-H
+play,6,1,mcgrf001,10,BX,6/L6
+play,7,0,longt002,02,FCX,8/F8D
+play,7,0,velar001,01,CX,53/G
+play,7,0,giamj001,32,BFFBFBX,7/F7
+play,7,1,guilj001,02,CFFX,9/F9
+play,7,1,castv001,00,X,6/P6
+play,7,1,difem001,21,CBBX,S8
+play,7,1,guilo001,21,BBCX,3/G
+play,8,0,grieb001,00,,NP
+sub,guthm001,"Mark Guthrie",1,0,1
+play,8,0,grieb001,22,CBBCFS,K
+play,8,0,saeno001,20,BBX,8/F8
+play,8,0,staim001,02,CCS,K
+play,8,1,cairm001,00,,NP
+sub,matht002,"T.J. Mathews",0,0,1
+play,8,1,cairm001,00,,NP
+sub,chrir001,"Ryan Christenson",0,4,7
+play,8,1,cairm001,01,CX,S7
+play,8,1,willg001,12,BCFFS,K
+play,8,1,mccrq001,21,FBBX,16(1)/FO
+play,8,1,vaugg001,00,X,HR/7.1-H
+play,8,1,mcgrf001,00,,NP
+sub,magnm001,"Mike Magnante",0,0,1
+play,8,1,mcgrf001,32,BBBCFX,31/G
+play,9,0,tejam001,00,,NP
+sub,taylb001,"Billy Taylor",1,0,1
+play,9,0,tejam001,12,LBCS,K
+play,9,0,chave001,00,X,13/G
+play,9,0,hernr002,00,X,63/G
+play,9,1,guilj001,00,,NP
+sub,isrij001,"Jason Isringhausen",0,0,1
+play,9,1,guilj001,11,BCX,43/G
+play,9,1,castv001,22,SBSBX,13/G
+play,9,1,difem001,22,BSCFFFBX,D7
+play,9,1,guilo001,00,,NP
+sub,cox-s001,"Steve Cox",1,8,11
+play,9,1,cox-s001,32,BCFBFBFS,K
+data,er,hereg001,1
+data,er,matht002,2
+data,er,magnm001,0
+data,er,isrij001,0
+data,er,yan-e001,6
+data,er,whitr002,0
+data,er,guthm001,0
+data,er,taylb001,0

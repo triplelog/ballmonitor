@@ -1,0 +1,169 @@
+version,2
+info,visteam,LAN
+info,hometeam,MON
+info,site,MON02
+info,date,2000/04/05
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,danlk901
+info,ump1b,fleta901
+info,ump2b,mckej901
+info,ump3b,morrd901
+info,pitches,pitches
+info,temp,72
+info,winddir,rtol
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,178
+info,attendance,8867
+info,wp,telfa001
+info,lp,shawj001
+info,save,
+start,hollt001,"Todd Hollandsworth",0,1,8
+start,grudm001,"Mark Grudzielanek",0,2,4
+start,shefg001,"Gary Sheffield",0,3,7
+start,grees001,"Shawn Green",0,4,9
+start,karre001,"Eric Karros",0,5,3
+start,belta001,"Adrian Beltre",0,6,5
+start,kreuc001,"Chad Kreuter",0,7,2
+start,vizcj001,"Jose Vizcaino",0,8,6
+start,herso001,"Orel Hershiser",0,9,1
+start,bergp001,"Peter Bergeron",1,1,8
+start,vidrj001,"Jose Vidro",1,2,4
+start,whitr001,"Rondell White",1,3,7
+start,guerv001,"Vladimir Guerrero",1,4,9
+start,stevl001,"Lee Stevens",1,5,3
+start,barrm003,"Michael Barrett",1,6,5
+start,websl001,"Lenny Webster",1,7,2
+start,cabro001,"Orlando Cabrera",1,8,6
+start,vazqj001,"Javier Vazquez",1,9,1
+play,1,0,hollt001,10,BX,D7
+play,1,0,grudm001,10,BX,53/G
+play,1,0,shefg001,01,CX,T8/8D.2-H
+play,1,0,grees001,02,CCS,K
+play,1,0,karre001,12,CFBS,K
+play,1,1,bergp001,32,BBBCSX,S
+play,1,1,vidrj001,01,LX,D9.1-H
+play,1,1,whitr001,12,SFBX,53/G
+play,1,1,guerv001,11,FBX,S7.2-3
+play,1,1,stevl001,11,CBX,S.3-H;1-2
+play,1,1,barrm003,12,CSBX,46(1)3/GDP
+play,2,0,belta001,31,BBBCX,S8/8S
+play,2,0,kreuc001,10,BX,8/F8
+play,2,0,vizcj001,12,BCCFFFX,S7.1-2
+play,2,0,herso001,01,CX,7/F7
+play,2,0,hollt001,00,X,7/F7
+play,2,1,websl001,22,BFSBC,K/C
+play,2,1,cabro001,22,BCSBX,53/G
+play,2,1,vazqj001,12,CCBS,K
+play,3,0,grudm001,12,CBSX,8/F8
+play,3,0,shefg001,00,X,9/F9
+play,3,0,grees001,22,CFFBBS,K
+play,3,1,bergp001,01,CX,13/G
+play,3,1,vidrj001,21,BBCX,D9
+play,3,1,whitr001,01,CX,53/G
+play,3,1,guerv001,30,IIII,IW
+play,3,1,stevl001,11,BFX,7/F7D
+play,4,0,karre001,32,BBCBCS,K
+play,4,0,belta001,11,CBX,D9/9D
+play,4,0,kreuc001,12,BSFS,K
+play,4,0,vizcj001,30,IIII,IW
+play,4,0,herso001,00,X,5(2)/FO.1-2
+play,4,1,barrm003,22,BCFBFX,5/P5
+play,4,1,websl001,11,BCX,53/G
+play,4,1,cabro001,12,CBCFC,K/C
+play,5,0,hollt001,00,X,43/G
+play,5,0,grudm001,10,BX,S8
+play,5,0,shefg001,02,FFX,9/F9
+play,5,0,grees001,00,X,S9.1-2
+play,5,0,karre001,02,SCX,9/F9
+play,5,1,vazqj001,30,BBBB,W
+play,5,1,bergp001,00,X,S3/BG3.1-2
+play,5,1,vidrj001,00,X,15(2)/FO.1-2
+play,5,1,whitr001,22,SBFFBS,K
+play,5,1,guerv001,00,H,HP.2-3;1-2
+play,5,1,stevl001,11,BFX,S7.3-H;2-H;1-3;B-2(TH)
+com,"DWS: changed from double to match Elias"
+play,5,1,barrm003,22,BSBFX,53/G
+play,6,0,belta001,01,SX,HR/7
+play,6,0,kreuc001,00,X,7/F7
+play,6,0,vizcj001,00,X,7/F7
+play,6,0,herso001,00,,NP
+sub,santf001,"F.P. Santangelo",0,9,11
+play,6,0,santf001,01,CX,63/G
+play,6,1,websl001,00,,NP
+sub,hergm001,"Matt Herges",0,9,1
+play,6,1,websl001,01,SX,43/G
+play,6,1,cabro001,22,BCFBX,53/G
+play,6,1,vazqj001,22,BCCBFX,E5/TH
+play,6,1,bergp001,20,BBX,43/G
+play,7,0,hollt001,30,BBBB,W
+play,7,0,grudm001,01,CX,13/G.1-2
+play,7,0,shefg001,02,CFX,9/F9
+play,7,0,grees001,22,BSCBX,13/G
+play,7,1,vidrj001,22,SFBBX,9/F9
+play,7,1,whitr001,32,BFBFBB,W
+play,7,1,guerv001,10,BX,64(1)3/GDP
+play,8,0,karre001,00,,NP
+sub,stris001,"Scott Strickland",1,9,1
+play,8,0,karre001,02,CCX,143/G
+play,8,0,belta001,22,BSBFFFX,3/FL
+play,8,0,kreuc001,10,BX,S8
+play,8,0,vizcj001,00,,NP
+sub,urbiu001,"Ugueth Urbina",1,9,1
+play,8,0,vizcj001,32,FBBBFB,W.1-2
+play,8,0,hergm001,00,,NP
+sub,hansd001,"Dave Hansen",0,9,11
+play,8,0,hansd001,01,CX,HR/9.2-H;1-H
+play,8,0,hollt001,12,BCFS,K
+play,8,1,stevl001,00,,NP
+sub,masao001,"Onan Masaoka",0,9,1
+play,8,1,stevl001,31,BBBCB,W
+play,8,1,barrm003,00,,NP
+sub,jonet004,"Terry Jones",1,5,12
+play,8,1,barrm003,00,,NP
+sub,fettm001,"Mike Fetters",0,9,1
+play,8,1,barrm003,00,X,34/SH.1-2
+play,8,1,websl001,00,,NP
+sub,guerw001,"Wilton Guerrero",1,7,11
+play,8,1,guerw001,31,BBCBX,43/G.2-3
+play,8,1,cabro001,00,,NP
+sub,blumg001,"Geoff Blum",1,8,11
+play,8,1,blumg001,32,BCBBCS,K
+play,9,0,grudm001,00,,NP
+sub,widgc001,"Chris Widger",1,5,2
+play,9,0,grudm001,00,,NP
+sub,blumg001,"Geoff Blum",1,8,6
+play,9,0,grudm001,00,,NP
+sub,coqut001,"Trace Coquillette",1,9,5
+play,9,0,grudm001,00,,NP
+sub,mordm001,"Mike Mordecai",1,6,3
+play,9,0,grudm001,00,,NP
+sub,telfa001,"Anthony Telford",1,7,1
+play,9,0,grudm001,01,CX,S
+play,9,0,shefg001,01,FX,54(1)3/GDP
+play,9,0,grees001,11,SBX,S8/8S
+play,9,0,karre001,12,FBSFX,2/FL
+play,9,1,coqut001,00,,NP
+sub,hollt001,"Todd Hollandsworth",0,1,7
+play,9,1,coqut001,00,,NP
+sub,whitd001,"Devon White",0,9,8
+play,9,1,coqut001,00,,NP
+sub,shawj001,"Jeff Shaw",0,3,1
+play,9,1,coqut001,22,CBFBX,S8/8S
+play,9,1,bergp001,11,LBX,S3/BG3.1-2
+play,9,1,vidrj001,00,X,E4/G.2-3;1-2
+play,9,1,whitr001,12,BCFFX,S8.3-H;2-H(UR);1-2
+data,er,herso001,4
+data,er,hergm001,0
+data,er,masao001,0
+data,er,fettm001,0
+data,er,shawj001,1
+data,er,vazqj001,2
+data,er,stris001,1
+data,er,urbiu001,2
+data,er,telfa001,0

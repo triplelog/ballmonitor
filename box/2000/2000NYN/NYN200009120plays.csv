@@ -1,0 +1,79 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,10,1,,colll001,,,0,2,BX,joneb003,0,0,colll001 doubles. ,colll001,0,
+,01,1,,colll001,,,1,4,CX,joneb003,1,0,lorem001 grounds out. ,lorem001,0,G
+,12,1,,colll001,,,2,9,FBSFS,joneb003,1,0,jenkg001 strikes out. ,jenkg001,0,
+,31,1,sexsr001,colll001,,,3,14,BBBSB,joneb003,0,0,sexsr001 walks. ,sexsr001,0,
+colll001 scores. sexsr001 to 3B. ,20,1,burnj001,,sexsr001,,4,17,BBX,joneb003,0,1,burnj001 singles. ,burnj001,0,
+,12,1,burnj001,,sexsr001,,5,21,BCFX,joneb003,1,0,hernj001 grounds out. ,hernj001,0,G
+,01,1,,,,,6,2,CX,snydj001,1,0,,agbab001,1,P
+,12,1,belld001,,,,7,6,BCCX,snydj001,0,0,belld001 singles. ,belld001,1,
+,11,1,belld001,,,,8,9,BFX,snydj001,1,0,,alfoe001,1,F
+belld001 to 3B. ,22,1,ventr001,,belld001,,9,14,CCBBX,snydj001,0,0,ventr001 singles. ,ventr001,1,
+,11,1,ventr001,,belld001,,10,17,CBX,snydj001,1,0,zeilt001 grounds out. ,zeilt001,1,G
+,00,2,,,,,11,22,X,joneb003,1,0,houst001 grounds out. ,houst001,0,G
+,22,2,,,,,12,27,CSBBX,joneb003,1,0,,bellr002,0,L
+,02,2,,,,,13,30,FCC,joneb003,1,0,snydj001 strikes out. ,snydj001,0,
+,22,2,,,,,14,22,CBSBX,snydj001,1,0,,paytj001,1,
+,32,2,pratt001,,,,15,28,BBSBSB,snydj001,0,0,pratt001 walks. ,pratt001,1,
+pratt001 to 2B. ,22,2,abbok002,pratt001,,,16,33,SBFBX,snydj001,0,0,abbok002 singles. ,abbok002,1,
+pratt001 scores. abbok002 to 3B. joneb003 to 2B. ,20,2,,joneb003,abbok002,,17,36,BBX,snydj001,0,1,joneb003 reaches on error. ,joneb003,1,
+abbok002 scores. joneb003 scores. agbab001 scores. ,01,2,,,,,18,38,CX,snydj001,0,3,agbab001 singles. ,agbab001,1,
+,20,2,,,,,19,41,BBX,snydj001,1,0,belld001 grounds out. ,belld001,1,G
+,00,2,,,,,20,42,X,snydj001,1,0,alfoe001 grounds out. ,alfoe001,1,G
+,12,3,colll001,,,,21,34,CBSX,joneb003,0,0,colll001 singles. ,colll001,0,
+colll001 to 2B. ,11,3,,colll001,,,22,37,CBX,joneb003,1,0,lorem001 grounds out. ,lorem001,0,G
+colll001 scores. ,22,3,,jenkg001,,,23,42,FBBCX,joneb003,0,1,jenkg001 doubles. ,jenkg001,0,
+,32,3,,jenkg001,,,24,48,BBBCSX,joneb003,1,0,,sexsr001,0,
+,12,3,,jenkg001,,,25,52,CBCX,joneb003,1,0,,burnj001,0,P
+,22,3,,,,,26,47,BBFSS,snydj001,1,0,ventr001 strikes out. ,ventr001,1,
+,22,3,zeilt001,,,,27,52,BBSSX,snydj001,0,0,zeilt001 singles. ,zeilt001,1,
+,02,3,zeilt001,,,,28,57,CFFFS,snydj001,1,0,paytj001 strikes out. ,paytj001,1,
+zeilt001 to 2B. ,12,3,,zeilt001,,pratt001,29,61,SBCB,snydj001,0,0,Wild Pitch. ,pratt001,1,
+,32,3,pratt001,zeilt001,,,30,67,SBCBBB,snydj001,0,0,pratt001 walks. ,pratt001,1,
+zeilt001 scores. pratt001 out. ,12,3,abbok002,,,,31,71,FCBX,snydj001,1,1,abbok002 singles. ,abbok002,1,
+,22,4,,,,,32,57,BCBFS,joneb003,1,0,hernj001 strikes out. ,hernj001,0,
+,20,4,,,,,33,60,BBX,joneb003,1,0,,houst001,0,F
+,02,4,,,,,34,63,CCX,joneb003,1,0,bellr002 grounds out. ,bellr002,0,G
+,02,4,,,,,35,74,CFC,snydj001,1,0,joneb003 strikes out. ,joneb003,1,
+,01,4,,,,,36,76,SX,snydj001,1,0,agbab001 grounds out. ,agbab001,1,G
+,22,4,,,,,37,81,BFSBS,snydj001,1,0,belld001 strikes out. ,belld001,1,
+,12,5,,,,,38,67,CBCS,joneb003,1,0,snydj001 strikes out. ,snydj001,0,
+,10,5,,,,,39,69,BX,joneb003,1,0,colll001 grounds out. ,colll001,0,G
+,12,5,,,,,40,73,BCCS,joneb003,1,0,lorem001 strikes out. ,lorem001,0,
+,32,5,alfoe001,,,,41,87,CBBBFB,snydj001,0,0,alfoe001 walks. ,alfoe001,1,
+,01,5,alfoe001,,,,42,89,FX,snydj001,1,0,,ventr001,1,F
+alfoe001 to 2B. ,30,5,zeilt001,alfoe001,,,43,93,BBBX,snydj001,0,0,zeilt001 singles. ,zeilt001,1,
+alfoe001 scores. zeilt001 to 3B. ,32,5,paytj001,,zeilt001,,44,99,BCFBBX,snydj001,0,1,paytj001 singles. ,paytj001,1,
+zeilt001 scores. paytj001 to 2B. ,11,5,pratt001,paytj001,,,45,102,BFX,snydj001,0,1,pratt001 singles. ,pratt001,1,
+,12,5,pratt001,paytj001,,,47,4,BFFS,stule001,1,0,abbok002 strikes out. ,abbok002,1,
+paytj001 to 3B. pratt001 to 2B. joneb003 to 1B. ,02,5,joneb003,pratt001,paytj001,,48,7,FCS,stule001,0,0,joneb003 strikes out. Wild Pitch. ,joneb003,1,
+,10,5,joneb003,pratt001,paytj001,,49,9,BX,stule001,1,0,,agbab001,1,
+,22,6,,,,,50,80,FCFBBFX,joneb003,1,0,,jenkg001,0,
+,00,6,,,,,51,81,X,joneb003,1,0,sexsr001 grounds out. ,sexsr001,0,G
+,02,6,burnj001,,,,52,84,FCX,joneb003,0,0,burnj001 singles. ,burnj001,0,
+,01,6,burnj001,,,,53,86,CX,joneb003,1,0,,hernj001,0,F
+,22,6,belld001,,,,54,14,SBCBX,stule001,0,0,belld001 singles. ,belld001,1,
+belld001 to 3B. ,22,6,alfoe001,,belld001,,55,20,BCFBFX,stule001,0,0,alfoe001 singles. ,alfoe001,1,
+alfoe001 to 2B. ,00,6,,alfoe001,belld001,,56,21,X,stule001,1,0,,ventr001,1,F
+,30,6,zeilt001,alfoe001,belld001,,57,25,IIII,stule001,0,0,zeilt001 intentionally walks. ,zeilt001,1,
+belld001 scores. alfoe001 to 3B. zeilt001 out. ,10,6,paytj001,,alfoe001,,58,27,BX,stule001,1,1,paytj001 reaches on fielder's choice. ,paytj001,1,
+,12,6,paytj001,,alfoe001,,59,31,SBSS,stule001,1,0,pratt001 strikes out. ,pratt001,1,
+,32,7,,houst001,,,60,92,FBBBFX,joneb003,0,0,houst001 doubles. ,houst001,0,
+houst001 to 3B. ,00,7,,,houst001,,61,93,X,joneb003,1,0,bellr002 grounds out. ,bellr002,0,G
+,32,7,sweem001,,houst001,,63,100,CBBBFFB,joneb003,0,0,sweem001 walks. ,sweem001,0,
+,11,7,,,houst001,,64,103,BCX,joneb003,2,0,Double Play. ,colll001,0,
+,02,7,,,,,66,3,FSC,delov001,1,0,abbok002 strikes out. ,abbok002,1,
+,22,7,,,,,67,9,BBCFFX,delov001,1,0,joneb003 grounds out. ,joneb003,1,G
+,02,7,,,,,68,12,CFX,delov001,0,1,agbab001 homers. ,agbab001,1,
+,11,7,,,,,69,15,FBX,delov001,1,0,belld001 grounds out. ,belld001,1,G
+,10,8,,lorem001,,,70,105,BX,joneb003,0,0,lorem001 doubles. ,lorem001,0,
+lorem001 to 3B. ,01,8,,,lorem001,,71,107,CX,joneb003,1,0,,jenkg001,0,F
+,01,8,,,lorem001,,72,109,CX,joneb003,1,0,sexsr001 grounds out. ,sexsr001,0,G
+,02,8,,,lorem001,,73,112,CFX,joneb003,1,0,,burnj001,0,P
+,21,8,,,,,75,19,BBCX,delov001,0,1,alfoe001 homers. ,alfoe001,1,
+,12,8,,,,,76,23,BFSC,delov001,1,0,ventr001 strikes out. ,ventr001,1,
+,01,8,,,,,77,25,CX,delov001,1,0,,zeilt001,1,F
+,00,8,,,,,78,26,X,delov001,1,0,,paytj001,1,F
+,22,9,,,,,81,6,FBFFBS,mahop001,1,0,hernj001 strikes out. ,hernj001,0,
+,12,9,,,,,82,11,BFFFX,mahop001,1,0,,houst001,0,P
+,02,9,,,,,84,3,FCS,franj001,1,0,bellr002 strikes out. ,bellr002,0,

@@ -1,0 +1,146 @@
+version,2
+info,visteam,FLO
+info,hometeam,PIT
+info,site,PIT07
+info,date,2000/06/16
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,younl901
+info,ump1b,bonig901
+info,ump2b,millb901
+info,ump3b,mealj901
+info,pitches,pitches
+info,temp,84
+info,winddir,tolf
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,172
+info,attendance,29737
+info,wp,cornr001
+info,lp,cordf001
+info,save,loopb001
+start,castl001,"Luis Castillo",0,1,4
+start,kotsm001,"Mark Kotsay",0,2,9
+start,floyc001,"Cliff Floyd",0,3,7
+start,wilsp002,"Preston Wilson",0,4,8
+start,lowem001,"Mike Lowell",0,5,5
+start,lee-d002,"Derrek Lee",0,6,3
+start,gonza002,"Alex Gonzalez",0,7,6
+start,bakop001,"Paul Bako",0,8,2
+start,cornr001,"Reid Cornelius",0,9,1
+start,morrw001,"Warren Morris",1,1,4
+start,kendj001,"Jason Kendall",1,2,2
+start,cordw001,"Wil Cordero",1,3,7
+start,gileb002,"Brian Giles",1,4,8
+start,younk001,"Kevin Young",1,5,3
+start,avenb001,"Bruce Aven",1,6,9
+start,mearp001,"Pat Meares",1,7,6
+start,benjm001,"Mike Benjamin",1,8,5
+start,cordf001,"Francisco Cordova",1,9,1
+play,1,0,castl001,22,CBSFFBS,K
+play,1,0,kotsm001,32,FBFBBFX,63/G
+play,1,0,floyc001,01,FX,S9/9S
+play,1,0,wilsp002,10,BC,BK.1-2
+play,1,0,wilsp002,32,BCBBCS,K
+play,1,1,morrw001,10,BX,7/F7
+play,1,1,kendj001,11,BCX,53/G
+play,1,1,cordw001,10,BX,63/G
+play,2,0,lowem001,32,BBCBFB,W
+play,2,0,lee-d002,22,BBCFC,K/C
+play,2,0,gonza002,31,BBCBX,D7.1-3
+play,2,0,bakop001,21,BFBX,3/G
+play,2,0,cornr001,10,BX,7/F7
+play,2,1,gileb002,22,CBBSX,8/F8
+play,2,1,younk001,00,X,8/F8
+play,2,1,avenb001,12,CCBX,53/G
+play,3,0,castl001,31,BFBBB,W
+play,3,0,kotsm001,20,BBC,SB2
+play,3,0,kotsm001,21,BBCX,31/G.2-3
+play,3,0,floyc001,00,X,S9/9S.3-H
+play,3,0,wilsp002,00,1,PO1(13)
+play,3,0,wilsp002,12,1CSBC,K/C
+play,3,1,mearp001,31,BBCBB,W
+play,3,1,benjm001,10,BX,9/L9
+play,3,1,cordf001,10,BX,64(1)3/GDP
+play,4,0,lowem001,20,BBX,D9
+play,4,0,lee-d002,10,BX,HR/78.2-H
+play,4,0,gonza002,20,BBX,8/F8
+play,4,0,bakop001,12,FBFX,S9
+play,4,0,cornr001,00,X,43/G.1-2
+play,4,0,castl001,21,BBFF,FLE3
+com,"DV: need one - this is last moment"
+play,4,0,castl001,22,BBFFX,53/G
+play,4,1,morrw001,00,X,63/G
+play,4,1,kendj001,32,BCSBBFX,63/G
+play,4,1,cordw001,01,CX,7/F7
+play,5,0,kotsm001,00,X,9/F9S
+play,5,0,floyc001,11,BFX,E3/G
+play,5,0,wilsp002,21,BBFX,S7.1-2
+play,5,0,lowem001,32,CBFBBB,W.2-3;1-2
+play,5,0,lee-d002,10,BX,HR/78.3-H(UR);2-H;1-H
+play,5,0,gonza002,00,,NP
+sub,petec001,"Chris Peters",1,9,1
+play,5,0,gonza002,21,BBFX,7/F7
+play,5,0,bakop001,12,BSSS,K
+play,5,1,gileb002,10,BX,S7/7S
+play,5,1,younk001,12,FBFH,HP.1-2
+play,5,1,avenb001,12,BFFB,WP.2-3;1-2
+play,5,1,avenb001,22,BFFBX,D7.3-H;2-H
+play,5,1,mearp001,21,BBCX,53/G.2-3
+play,5,1,benjm001,00,X,FC5.3XH(52);B-1#
+play,5,1,petec001,12,SSBS,K
+play,6,0,cornr001,10,BX,8/F8
+play,6,0,castl001,21,BBFX,9/L9
+play,6,0,kotsm001,10,BX,43/G
+play,6,1,morrw001,20,BBX,S9/9S
+play,6,1,kendj001,31,BBBCX,64(1)/FO
+play,6,1,cordw001,10,BX,S7.1-2
+play,6,1,gileb002,01,FX,S9/9S.2-H;1-2
+play,6,1,younk001,00,,NP
+sub,boner001,"Ricky Bones",0,9,1
+play,6,1,younk001,31,BBBCB,W.2-3;1-2
+play,6,1,avenb001,31,BCBBX,64(1)3/GDP
+play,7,0,floyc001,00,X,S9
+play,7,0,wilsp002,12,BCSS,K
+play,7,0,lowem001,10,BC,SB2
+play,7,0,lowem001,11,BCX,53/G
+play,7,0,lee-d002,32,CBSFBBX,53/G
+play,7,1,mearp001,12,FBFFX,S9
+play,7,1,benjm001,10,BX,54(1)3/GDP
+play,7,1,petec001,00,,NP
+sub,nunea001,"Abraham O. Nunez",1,9,11
+play,7,1,nunea001,00,X,43/G
+play,8,0,gonza002,00,,NP
+sub,wilkm001,"Marc Wilkins",1,9,1
+play,8,0,gonza002,12,CFBX,13/G
+play,8,0,bakop001,32,BFBSFBFFFFFFS,K
+play,8,0,boner001,10,BX,43/G
+play,8,1,morrw001,12,BCCX,53/G
+play,8,1,kendj001,11,CBX,9/F9
+play,8,1,cordw001,32,BCFBFBX,S/78.B-2(E7)
+play,8,1,gileb002,10,BX,S8.2-3
+play,8,1,younk001,00,,NP
+sub,loopb001,"Braden Looper",0,9,1
+play,8,1,younk001,20,BBX,53/G
+play,9,0,castl001,00,,NP
+sub,wallj001,"Jeff Wallace",1,9,1
+play,9,0,castl001,32,CFBBBFB,W
+play,9,0,kotsm001,31,SBBBX,E4/G.1-2
+play,9,0,floyc001,12,SBSX,S9.2-H(UR);1-3
+play,9,0,wilsp002,12,BCSC,K/C
+play,9,0,lowem001,11,BCX,4/L4
+play,9,0,lee-d002,10,BX,54(1)/FO
+play,9,1,avenb001,10,BX,43/G
+play,9,1,mearp001,20,BBX,63/G
+play,9,1,benjm001,22,BSBSFS,K
+data,er,cornr001,3
+data,er,boner001,0
+data,er,loopb001,0
+data,er,cordf001,6
+data,er,petec001,0
+data,er,wilkm001,0
+data,er,wallj001,0

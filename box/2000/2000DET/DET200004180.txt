@@ -1,0 +1,139 @@
+version,2
+info,visteam,BOS
+info,hometeam,DET
+info,site,DET05
+info,date,2000/04/18
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,mcclt901
+info,ump1b,craft901
+info,ump2b,schrp901
+info,ump3b,cuzzp901
+info,pitches,pitches
+info,temp,55
+info,winddir,fromlf
+info,windspeed,8
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,154
+info,attendance,21632
+info,wp,schop001
+info,lp,mlicd001
+info,save,lowed001
+start,offej001,"Jose Offerman",0,1,4
+start,nixot001,"Trot Nixon",0,2,9
+start,daubb001,"Brian Daubach",0,3,10
+start,garcn001,"Nomar Garciaparra",0,4,6
+start,oleat001,"Troy O'Leary",0,5,7
+start,everc001,"Carl Everett",0,6,8
+start,stanm002,"Mike Stanley",0,7,3
+start,hatts001,"Scott Hatteberg",0,8,2
+start,veraw001,"Wilton Veras",0,9,5
+start,schop001,"Pete Schourek",0,0,1
+start,jeffg001,"Gregg Jefferies",1,1,4
+start,ausmb001,"Brad Ausmus",1,2,2
+start,higgb001,"Bobby Higginson",1,3,7
+start,gonzj002,"Juan Gonzalez",1,4,10
+start,palmd002,"Dean Palmer",1,5,5
+start,encaj001,"Juan Encarnacion",1,6,8
+start,clart002,"Tony Clark",1,7,3
+start,magew001,"Wendell Magee",1,8,9
+start,cruzd001,"Deivi Cruz",1,9,6
+start,mlicd001,"Dave Mlicki",1,0,1
+play,1,0,offej001,11,BCX,7/F7
+play,1,0,nixot001,01,CX,HR/9
+play,1,0,daubb001,01,CX,31/G
+play,1,0,garcn001,11,CBX,63/G
+play,1,1,jeffg001,01,CX,S9
+play,1,1,ausmb001,21,BBCS,CS2(24)
+play,1,1,ausmb001,22,BBCSS,K
+play,1,1,higgb001,22,BCCBX,9/F9
+play,2,0,oleat001,20,BBX,9/FL
+play,2,0,everc001,22,CBBSFS,K
+play,2,0,stanm002,32,CBBBFB,W
+play,2,0,hatts001,22,BCFBB,WP.1-2
+play,2,0,hatts001,32,BCFBBC,K/C
+play,2,1,gonzj002,32,CSBBFFFBX,4/P4
+play,2,1,palmd002,12,BFFX,8/F8
+play,2,1,encaj001,11,BFX,S7
+play,2,1,clart002,02,FCS,K
+play,3,0,veraw001,00,X,13/G
+play,3,0,offej001,10,BX,8/F8
+play,3,0,nixot001,11,BCX,D9
+play,3,0,daubb001,12,BCFS,K
+play,3,1,magew001,11,BFX,S5/BG5
+play,3,1,cruzd001,01,CX,S8.1-2
+play,3,1,jeffg001,22,FBBFX,54(1)3/GDP.2-3
+play,3,1,ausmb001,32,BCBFBB,W
+play,3,1,higgb001,00,X,5/FL
+play,4,0,garcn001,01,FX,S
+play,4,0,oleat001,10,BX,D9/9S.1-3
+play,4,0,everc001,01,FH,HP
+play,4,0,stanm002,00,X,8/SF.3-H;2-3;1-2
+play,4,0,hatts001,20,BBX,8/SF.3-H
+play,4,0,veraw001,02,SSS,K
+play,4,1,gonzj002,01,SX,13/G
+play,4,1,palmd002,00,X,43/G
+play,4,1,encaj001,32,BBFFFBX,9/FL
+play,5,0,offej001,00,X,43/G
+play,5,0,nixot001,10,BX,31/G
+play,5,0,daubb001,02,SFS,K
+play,5,1,clart002,12,FBCC,K/C
+play,5,1,magew001,01,SX,7/F7
+play,5,1,cruzd001,20,BBX,7/F7D
+play,6,0,garcn001,12,FFBX,53/G
+play,6,0,oleat001,22,BCBFX,43/G
+play,6,0,everc001,32,SBBCBX,9/F9
+play,6,1,jeffg001,11,BCX,53/G
+play,6,1,ausmb001,12,CBFX,7/F7
+play,6,1,higgb001,21,FBBX,D9
+play,6,1,gonzj002,32,SSBBBFX,63/G
+play,7,0,stanm002,01,SX,3/FL
+play,7,0,hatts001,31,BBBCB,W
+play,7,0,veraw001,00,X,1/G.1-2
+play,7,0,offej001,32,BCFBBC,K/C
+play,7,1,palmd002,21,CBBX,8/F8
+play,7,1,encaj001,21,BBCX,S9
+play,7,1,clart002,12,SSBC,K/C
+play,7,1,magew001,00,X,54(1)/FO
+play,8,0,nixot001,00,X,8/F8
+play,8,0,daubb001,00,X,3/P3
+play,8,0,garcn001,30,BBBB,W
+play,8,0,oleat001,01,FX,8/F8
+play,8,1,cruzd001,00,,NP
+sub,lowed001,"Derek Lowe",0,0,1
+play,8,1,cruzd001,00,,NP
+sub,fickr001,"Robert Fick",1,9,11
+play,8,1,fickr001,01,CX,7/F7
+play,8,1,jeffg001,30,BBBB,W
+play,8,1,ausmb001,21,CBBX,64(1)/FO
+play,8,1,higgb001,22,CBCBS,K
+play,9,0,everc001,00,,NP
+sub,halts001,"Shane Halter",1,9,6
+play,9,0,everc001,00,X,S7
+play,9,0,stanm002,00,,NP
+sub,pattd001,"Danny Patterson",1,0,1
+play,9,0,stanm002,31,CBBBX,S7.1-2
+play,9,0,hatts001,20,BBX,S8.2-H;1-3
+play,9,0,veraw001,00,X,S.3-H;1-2
+play,9,0,offej001,00,,NP
+sub,poolj001,"Jim Poole",1,0,1
+play,9,0,offej001,00,X,S7.2-H;1-2
+play,9,0,nixot001,10,BX,8/F8.2-3
+play,9,0,daubb001,10,BX,7/SF.3-H
+play,9,0,garcn001,00,,NP
+sub,blaiw001,"Willie Blair",1,0,1
+play,9,0,garcn001,01,SX,S7.1-2
+play,9,0,oleat001,31,BCBBX,3/G
+play,9,1,gonzj002,32,CCBBFBX,3/G
+play,9,1,palmd002,00,X,31/G
+play,9,1,encaj001,32,BSBSBS,K
+data,er,schop001,0
+data,er,lowed001,0
+data,er,mlicd001,4
+data,er,pattd001,3
+data,er,poolj001,0
+data,er,blaiw001,0

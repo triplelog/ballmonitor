@@ -1,0 +1,81 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,12,1,,,,,0,4,CBSS,ankir001,1,0,lugoj001 strikes out. ,lugoj001,0,
+,32,1,,,,,1,10,BBBCFS,ankir001,1,0,bogat001 strikes out. ,bogat001,0,
+,32,1,,,,,2,16,BSSBBS,ankir001,1,0,bagwj001 strikes out. ,bagwj001,0,
+,12,1,,,,,3,6,CBFFFS,holtc001,1,0,vinaf001 strikes out. ,vinaf001,1,
+,10,1,,,,,4,8,BX,holtc001,1,0,,paquc001,1,
+,11,1,,,,,5,11,BCX,holtc001,1,0,edmoj001 grounds out. ,edmoj001,1,G
+,31,2,,,,,6,21,BFBBX,ankir001,1,0,hidar001 grounds out. ,hidar001,0,G
+,11,2,,,,,7,24,CBX,ankir001,1,0,aloum001 grounds out. ,aloum001,0,G
+,32,2,berkl001,,,,8,31,CFBFBBB,ankir001,0,0,berkl001 walks. ,berkl001,0,
+,01,2,,,,trubc001,9,33,FB,ankir001,1,0,berkl001 caught stealing. ,trubc001,0,
+,10,2,,lankr001,,,10,13,BX,holtc001,0,0,lankr001 doubles. ,lankr001,1,
+,21,2,,lankr001,,,11,17,BCBX,holtc001,1,0,,tatif001,1,P
+,01,2,,lankr001,,,12,19,FX,holtc001,1,0,,drewj001,1,F
+,10,2,,lankr001,,,13,21,BX,holtc001,1,0,rente001 grounds out. ,rente001,1,G
+,12,3,,,,,14,37,CBCC,ankir001,1,0,trubc001 strikes out. ,trubc001,0,
+,22,3,,,,,15,43,FBFFBX,ankir001,1,0,chavr001 grounds out. ,chavr001,0,G
+,12,3,,,,,16,47,CBFS,ankir001,1,0,holtc001 strikes out. ,holtc001,0,
+,01,3,mathm001,,,,17,23,CX,holtc001,0,0,mathm001 singles. ,mathm001,1,
+,02,3,mathm001,,,,18,26,LCS,holtc001,1,0,ankir001 strikes out. ,ankir001,1,
+mathm001 to 2B. ,00,3,vinaf001,mathm001,,,19,27,X,holtc001,0,0,vinaf001 singles. ,vinaf001,1,
+mathm001 to 3B. vinaf001 to 2B. ,00,3,paquc001,vinaf001,mathm001,,20,28,X,holtc001,0,0,paquc001 singles. ,paquc001,1,
+mathm001 scores. vinaf001 scores. paquc001 scores. ,32,3,,,,,21,34,CBBFBX,holtc001,0,4,edmoj001 homers. ,edmoj001,1,
+,00,3,,,,,22,35,X,holtc001,0,1,lankr001 homers. ,lankr001,1,
+,32,3,,,,,23,41,SBSBBS,holtc001,1,0,tatif001 strikes out. ,tatif001,1,
+,00,3,,,,,24,42,X,holtc001,1,0,,drewj001,1,F
+,20,4,,,,,25,50,BBX,ankir001,1,0,,lugoj001,0,L
+,01,4,bogat001,,,,26,52,FX,ankir001,0,0,bogat001 reaches on error. ,bogat001,0,G
+,22,4,bogat001,,,,27,57,BSFBS,ankir001,1,0,bagwj001 strikes out. ,bagwj001,0,
+,00,4,bogat001,,,,28,58,X,ankir001,1,0,hidar001 grounds out. ,hidar001,0,G
+,32,4,rente001,,,,29,48,SBBBFB,holtc001,0,0,rente001 walks. ,rente001,1,
+,12,4,,rente001,,mathm001,30,52,SBSB,holtc001,0,0,rente001 steals 2B. ,mathm001,1,
+rente001 to 3B. ,32,4,,,rente001,,31,59,SBSBBFX,holtc001,1,0,mathm001 grounds out. ,mathm001,1,G
+,32,4,,,rente001,,32,66,BFBFBFX,holtc001,1,0,,ankir001,1,P
+rente001 scores. ,02,4,vinaf001,,,,33,71,SFFFX,holtc001,0,1,vinaf001 singles. ,vinaf001,1,
+vinaf001 to 2B. ,11,4,,vinaf001,,paquc001,34,74,CBB,holtc001,0,0,Wild Pitch. ,paquc001,1,
+vinaf001 scores. ,22,4,,,,,35,80,CBBSFX,holtc001,0,2,paquc001 homers. ,paquc001,1,
+,32,4,edmoj001,,,,36,86,BBBCFB,holtc001,0,0,edmoj001 walks. ,edmoj001,1,
+,32,4,edmoj001,,,,37,93,CCBBBFS,holtc001,1,0,lankr001 strikes out. ,lankr001,1,
+,00,5,aloum001,,,,38,59,X,ankir001,0,0,aloum001 singles. ,aloum001,0,
+,00,5,aloum001,,,,39,60,X,ankir001,1,0,,berkl001,0,F
+aloum001 to 2B. ,21,5,trubc001,aloum001,,,40,64,BSBX,ankir001,0,0,trubc001 singles. ,trubc001,0,
+aloum001 scores. trubc001 to 3B. chavr001 to 2B. ,12,5,,chavr001,trubc001,,41,69,FCBFX,ankir001,0,1,chavr001 singles. ,chavr001,0,
+trubc001 scores. ,21,5,,chavr001,,,43,73,BCBX,ankir001,1,1,gintk001 hits sacrifice fly. ,gintk001,0,
+,12,5,,chavr001,,,44,78,FCFBS,ankir001,1,0,lugoj001 strikes out. ,lugoj001,0,
+,12,5,,,,,46,6,BCFFFS,poweb001,1,0,tatif001 strikes out. ,tatif001,1,
+,32,5,,,,,47,13,BSBBFFX,poweb001,1,0,,drewj001,1,F
+,01,5,,,,,48,15,CX,poweb001,1,0,,rente001,1,F
+,10,6,,,,,49,80,BX,ankir001,1,0,bogat001 grounds out. ,bogat001,0,G
+,12,6,,,,,50,84,BSSS,ankir001,1,0,bagwj001 strikes out. ,bagwj001,0,
+,20,6,,,,,51,87,BBX,ankir001,0,1,hidar001 homers. ,hidar001,0,
+,11,6,,,,,52,90,FBX,ankir001,1,0,aloum001 grounds out. ,aloum001,0,G
+,01,6,,,,,53,17,CX,poweb001,1,0,,mathm001,1,F
+,11,6,,,,,54,20,SBX,poweb001,1,0,,ankir001,1,F
+,11,6,,,,,55,23,BCX,poweb001,1,0,,vinaf001,1,P
+,31,7,,,,,56,95,FBBBX,ankir001,1,0,,berkl001,0,F
+,30,7,trubc001,,,,57,99,BBBB,ankir001,0,0,trubc001 walks. ,trubc001,0,
+,01,7,,,,,58,101,CX,ankir001,2,0,Double Play. ,chavr001,0,
+,20,7,,,,,59,26,BBX,poweb001,0,1,paquc001 homers. ,paquc001,1,
+,22,7,,,,,60,31,BCBFC,poweb001,1,0,edmoj001 strikes out. ,edmoj001,1,
+,01,7,,,,,61,33,CX,poweb001,0,1,lankr001 homers. ,lankr001,1,
+,32,7,tatif001,,,,63,11,SSBFFBFFBFB,meacr001,0,0,tatif001 walks. ,tatif001,1,
+tatif001 to 3B. ,02,7,drewj001,,tatif001,,64,14,FSX,meacr001,0,0,drewj001 singles. ,drewj001,1,
+tatif001 scores. drewj001 to 2B. ,32,7,,drewj001,,,65,20,CCBBBX,meacr001,1,1,rente001 grounds out. ,rente001,1,G
+,22,7,,drewj001,,,66,27,SBSFFBX,meacr001,1,0,mathm001 grounds out. ,mathm001,1,G
+,21,8,ceder001,,,,69,4,BBCX,morrm001,0,0,ceder001 singles. ,ceder001,0,
+ceder001 out. ,01,8,lugoj001,,,,70,6,CX,morrm001,1,0,lugoj001 reaches on fielder's choice. ,lugoj001,0,
+lugoj001 to 2B. ,32,8,bogat001,lugoj001,,,71,13,SBFBBFB,morrm001,0,0,bogat001 walks. ,bogat001,0,
+lugoj001 scores. bogat001 to 3B. ,22,8,,bagwj001,bogat001,,72,19,BSSFBX,morrm001,0,1,bagwj001 doubles. ,bagwj001,0,
+,10,8,,bagwj001,bogat001,,73,21,BX,morrm001,1,0,,hidar001,0,
+bogat001 scores. bagwj001 scores. ,22,8,aloum001,,,,74,26,BSBFX,morrm001,0,2,aloum001 singles. ,aloum001,0,
+,00,8,aloum001,,,,75,27,X,morrm001,1,0,,berkl001,0,F
+,12,8,mcgwm001,,,,80,4,BFSH,lines001,0,0,mcgwm001 hit by pitch. ,mcgwm001,1,
+satul001 to 2B. ,01,8,vinaf001,satul001,,,82,6,FH,lines001,0,0,vinaf001 hit by pitch. ,vinaf001,1,
+,22,8,vinaf001,satul001,,,83,13,CFBBFFX,lines001,1,0,,paquc001,1,
+,22,8,vinaf001,,,,84,18,BBSCX,lines001,2,0,Double Play. ,edmoj001,1,
+,10,9,,,,,87,2,BX,timlm001,1,0,ensbm001 grounds out. ,ensbm001,0,G
+,22,9,chavr001,,,,88,7,SBBFX,timlm001,0,0,chavr001 singles. ,chavr001,0,
+chavr001 to 2B. ,22,9,ceder001,chavr001,,,89,13,CBCFBX,timlm001,0,0,ceder001 singles. ,ceder001,0,
+,11,9,ceder001,chavr001,,,90,16,BFX,timlm001,1,0,,lugoj001,0,F
+,11,9,ceder001,chavr001,,,91,19,BFX,timlm001,1,0,,bogat001,0,L

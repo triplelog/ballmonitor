@@ -1,0 +1,146 @@
+version,2
+info,visteam,TOR
+info,hometeam,ANA
+info,site,ANA01
+info,date,2000/04/11
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,marqa901
+info,ump1b,brinj901
+info,ump2b,nelsj901
+info,ump3b,cousd901
+info,pitches,pitches
+info,oscorer,munse701
+info,temp,66
+info,winddir,ltor
+info,windspeed,2
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,193
+info,attendance,15229
+info,wp,ortir002
+info,lp,escok001
+info,save,perct001
+start,stews002,"Shannon Stewart",0,1,7
+start,bushh001,"Homer Bush",0,2,4
+start,mondr002,"Raul Mondesi",0,3,9
+start,delgc001,"Carlos Delgado",0,4,3
+start,fullb001,"Brad Fullmer",0,5,10
+start,batit001,"Tony Batista",0,6,5
+start,fletd001,"Darrin Fletcher",0,7,2
+start,cruzj004,"Jose Cruz",0,8,8
+start,gonza001,"Alex S. Gonzalez",0,9,6
+start,escok001,"Kelvim Escobar",0,0,1
+start,erstd001,"Darin Erstad",1,1,7
+start,kenna001,"Adam Kennedy",1,2,4
+start,vaugm001,"Mo Vaughn",1,3,3
+start,salmt001,"Tim Salmon",1,4,9
+start,andeg001,"Garret Anderson",1,5,8
+start,glaut001,"Troy Glaus",1,6,5
+start,spies001,"Scott Spiezio",1,7,10
+start,molib001,"Ben Molina",1,8,2
+start,gil-b001,"Benji Gil",1,9,6
+start,ortir002,"Ramon Ortiz",1,0,1
+play,1,0,stews002,31,BSBBB,W
+play,1,0,bushh001,01,CC,CS2(26)
+play,1,0,bushh001,02,CCX,S
+play,1,0,mondr002,11,BSX,7/F7
+play,1,0,delgc001,31,BBFBB,W.1-2
+play,1,0,fullb001,00,,BK.2-3;1-2
+play,1,0,fullb001,02,CSS,K
+play,1,1,erstd001,12,CBFX,S
+play,1,1,kenna001,32,BFCFBBX,64(1)3/GDP
+play,1,1,vaugm001,32,CBBCFBB,W
+play,1,1,salmt001,32,BBSFBX,13/G
+play,2,0,batit001,12,BSCFC,K/C
+play,2,0,fletd001,20,BBX,8/F8
+play,2,0,cruzj004,31,BBBCX,3/G
+play,2,1,andeg001,10,BX,D9
+play,2,1,glaut001,32,CBBFFBX,S.2-H
+play,2,1,spies001,12,BCFS,K+CS2(26)/DP
+play,2,1,molib001,31,BBBCB,W
+play,2,1,gil-b001,32,BBSBSFX,S9.1-3
+play,2,1,erstd001,21,BFBX,HR/9.3-H;1-H
+play,2,1,kenna001,01,CX,8/F8
+play,3,0,gonza001,21,BSBX,S8
+play,3,0,stews002,31,BSBBB,W.1-2
+play,3,0,bushh001,00,X,23/SH.2-3;1-2
+play,3,0,mondr002,12,BCFS,K
+play,3,0,delgc001,32,BBFSBS,K
+play,3,1,vaugm001,32,SBSFBFBX,HR/7
+play,3,1,salmt001,11,CBX,D8/8D
+play,3,1,andeg001,00,X,43/G.2-3
+play,3,1,glaut001,22,CBCBFC,K/C
+play,3,1,spies001,32,BFBBFB,W
+play,3,1,molib001,01,FX,8/F8
+play,4,0,fullb001,00,X,D9
+play,4,0,batit001,12,FBFX,S8.2-3
+play,4,0,fletd001,11,BSX,FC3.3XH(32);1-2;B-1
+play,4,0,cruzj004,32,BBCBFX,4(B)6(2)/LDP
+play,4,1,gil-b001,01,CX,D7
+play,4,1,erstd001,11,BFX,43/G.2-3
+play,4,1,kenna001,00,,NP
+sub,painl001,"Lance Painter",0,0,1
+play,4,1,kenna001,01,CX,FC2/DP.3XH(2);BX1(23)
+play,5,0,gonza001,21,BBCX,9/F9S
+play,5,0,stews002,21,BCBX,S8
+play,5,0,bushh001,00,X,9/F9
+play,5,0,mondr002,00,X,HR/7.1-H
+play,5,0,delgc001,00,X,D/78
+play,5,0,fullb001,31,BBCBB,W
+play,5,0,batit001,10,B+2,PO2(26)
+play,5,1,vaugm001,32,BBBCSFX,43/G
+play,5,1,salmt001,00,X,7/F7
+play,5,1,andeg001,32,CBBFBS,K
+play,6,0,batit001,00,,NP
+sub,hases001,"Shigetoshi Hasegawa",1,0,1
+play,6,0,batit001,22,CBCBFX,53/G
+play,6,0,fletd001,01,SX,8/F8
+play,6,0,cruzj004,31,BBSBB,W
+play,6,0,gonza001,20,BBX,E5/TH.1-2
+play,6,0,stews002,02,CFC,K/C
+play,6,1,glaut001,20,BBX,63/G
+play,6,1,spies001,11,BFX,8/F8D
+play,6,1,molib001,10,BX,8/F8
+play,7,0,bushh001,12,FFBFFFS,K
+play,7,0,mondr002,22,CBBCX,S7
+play,7,0,delgc001,00,,NP
+sub,merck001,"Kent Mercker",1,0,1
+play,7,0,delgc001,22,BBSFFH,HP.1-2
+play,7,0,fullb001,32,CBBFBX,46(1)/FO.2-3
+play,7,0,batit001,00,,NP
+sub,potel001,"Lou Pote",1,0,1
+play,7,0,batit001,22,SCBBB,WP.3-H;1-2
+play,7,0,batit001,32,SCBBBB,W
+play,7,0,fletd001,11,CBX,5/FL
+play,7,1,gil-b001,00,,NP
+sub,borbp001,"Pedro Borbon",0,0,1
+play,7,1,gil-b001,11,BCX,13/G
+play,7,1,erstd001,32,BCBBFFFFFFX,9/F9
+play,7,1,kenna001,10,BX,8/F8
+play,8,0,cruzj004,20,BBX,T9
+play,8,0,gonza001,22,BCSBS,K
+play,8,0,stews002,12,BFSX,S8.3-H
+play,8,0,bushh001,00,X,4(1)3/GDP
+play,8,1,vaugm001,00,,NP
+sub,kochb001,"Billy Koch",0,0,1
+play,8,1,vaugm001,11,BSX,63/G
+play,8,1,salmt001,31,BBCBX,63/G
+play,8,1,andeg001,00,X,43/G
+play,9,0,mondr002,00,,NP
+sub,perct001,"Troy Percival",1,0,1
+play,9,0,mondr002,32,BCBBFS,K
+play,9,0,delgc001,12,CBFS,K
+play,9,0,fullb001,12,BCFS,K
+data,er,escok001,5
+data,er,painl001,0
+data,er,borbp001,0
+data,er,kochb001,0
+data,er,ortir002,2
+data,er,hases001,1
+data,er,merck001,0
+data,er,potel001,1
+data,er,perct001,0

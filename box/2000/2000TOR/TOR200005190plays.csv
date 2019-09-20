@@ -1,0 +1,77 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,00,1,,,,,0,1,X,escok001,1,0,durhr001 grounds out. ,durhr001,0,G
+,02,1,,,,,1,4,CFS,escok001,1,0,valej003 strikes out. ,valej003,0,
+,32,1,,,,,2,10,FFBBBC,escok001,1,0,thomf001 strikes out. ,thomf001,0,
+,02,1,,,,,3,3,CSC,sirom001,1,0,stews002 strikes out. ,stews002,1,
+,21,1,,,,,4,7,BBSX,sirom001,1,0,,cruzj004,1,
+,11,1,,,,,5,10,CBX,sirom001,1,0,,mondr002,1,P
+,12,2,,,,,6,15,CBSFS,escok001,1,0,ordom001 strikes out. ,ordom001,0,
+,22,2,,,,,7,20,CBCBS,escok001,1,0,konep001 strikes out. ,konep001,0,
+,02,2,,,,,8,24,SFFS,escok001,1,0,singc001 strikes out. ,singc001,0,
+,12,2,delgc001,,,,9,16,BCFFFX,sirom001,0,0,delgc001 singles. ,delgc001,1,
+,02,2,delgc001,,,,10,19,CFS,sirom001,1,0,batit001 strikes out. ,batit001,1,
+delgc001 to 2B. ,21,2,cordm001,delgc001,,,11,23,BBFX,sirom001,0,0,cordm001 singles. ,cordm001,1,
+,00,2,cordm001,delgc001,,,12,24,X,sirom001,1,0,,gonza001,1,F
+delgc001 to 3B. cordm001 out. ,10,2,casta001,,delgc001,,13,26,BX,sirom001,1,0,casta001 reaches on fielder's choice. ,casta001,1,
+,31,3,,lee-c001,,,14,29,BBCBX,escok001,0,0,lee-c001 doubles. ,lee-c001,0,
+,12,3,,lee-c001,,,15,33,CSBS,escok001,1,0,nortg001 strikes out. ,nortg001,0,
+,32,3,johnm003,lee-c001,,,16,41,FBCFBFBB,escok001,0,0,johnm003 walks. ,johnm003,0,
+lee-c001 scores. johnm003 scores. ,02,3,,durhr001,,,17,44,CFX,escok001,0,2,durhr001 doubles. ,durhr001,0,
+,32,3,valej003,durhr001,,,18,50,BFBBFB,escok001,0,0,valej003 walks. ,valej003,0,
+durhr001 scores. valej003 scores. ,10,3,,,,,19,52,BX,escok001,0,3,thomf001 homers. ,thomf001,0,
+,12,3,ordom001,,,,20,56,CBCX,escok001,0,0,ordom001 singles. ,ordom001,0,
+,12,3,,ordom001,,,21,61,BCFFS,escok001,1,0,konep001 strikes out. ordom001 steals 2B. ,konep001,0,
+,02,3,,ordom001,,,22,64,CCX,escok001,1,0,,singc001,0,P
+,32,3,bushh001,,,,23,32,CBSBBB,sirom001,0,0,bushh001 walks. ,bushh001,1,
+bushh001 to 2B. ,00,3,,bushh001,,stews002,24,33,B,sirom001,0,0,Wild Pitch. ,stews002,1,
+,22,3,,bushh001,,,25,38,BCBFS,sirom001,1,0,stews002 strikes out. ,stews002,1,
+bushh001 to 3B. ,00,3,cruzj004,,bushh001,,26,39,X,sirom001,0,0,cruzj004 singles. ,cruzj004,1,
+,22,3,,,bushh001,,27,44,CBBFX,sirom001,2,0,Double Play. ,mondr002,1,
+,12,4,,,,,28,69,BCCFX,escok001,1,0,,lee-c001,0,L
+,22,4,,,,,29,74,CFBBX,escok001,1,0,nortg001 grounds out. ,nortg001,0,G
+,02,4,,,,,30,77,CCX,escok001,1,0,,johnm003,0,F
+,21,4,,,,,31,48,FBBX,sirom001,1,0,delgc001 grounds out. ,delgc001,1,G
+,32,4,batit001,,,,32,54,BBSSBB,sirom001,0,0,batit001 walks. ,batit001,1,
+batit001 to 3B. ,00,4,,cordm001,batit001,,33,55,X,sirom001,0,0,cordm001 doubles. ,cordm001,1,
+,32,4,,cordm001,batit001,,34,61,BFBBCX,sirom001,1,0,,gonza001,1,P
+,21,4,,cordm001,batit001,,35,65,BCBX,sirom001,1,0,casta001 grounds out. ,casta001,1,G
+,32,5,,,,,36,83,CBBCBS,escok001,1,0,durhr001 strikes out. ,durhr001,0,
+,32,5,,,,,37,90,BBCFBFS,escok001,1,0,valej003 strikes out. ,valej003,0,
+,02,5,,,,,38,94,CFFX,escok001,1,0,,thomf001,0,F
+,12,5,,,,,39,69,FBSS,sirom001,1,0,bushh001 strikes out. ,bushh001,1,
+,00,5,stews002,,,,40,70,X,sirom001,0,0,stews002 singles. ,stews002,1,
+,22,5,,,,,41,76,CBSFBX,sirom001,2,0,Double Play. ,cruzj004,1,
+,30,6,ordom001,,,,42,98,BBBB,escok001,0,0,ordom001 walks. ,ordom001,0,
+ordom001 to 2B. ,32,6,,ordom001,,,43,104,BBBCFX,escok001,1,0,konep001 grounds out. ,konep001,0,G
+ordom001 to 3B. ,02,6,,,ordom001,,44,107,FFX,escok001,1,0,singc001 grounds out. ,singc001,0,G
+,21,6,,,ordom001,,45,111,BCBX,escok001,1,0,,lee-c001,0,F
+,00,6,,mondr002,,,46,77,X,sirom001,0,0,mondr002 doubles. ,mondr002,1,
+mondr002 to 3B. ,00,6,,,mondr002,,47,78,X,sirom001,1,0,,delgc001,1,F
+mondr002 scores. ,12,6,,,,,48,82,FBFX,sirom001,1,1,batit001 grounds out. ,batit001,1,G
+,21,6,,,,,49,86,BBFX,sirom001,1,0,,cordm001,1,F
+,10,7,,,,,50,113,BX,escok001,1,0,nortg001 grounds out. ,nortg001,0,G
+,22,7,,johnm003,,,51,118,CBBSX,escok001,0,0,johnm003 doubles. ,johnm003,0,
+johnm003 to 3B. ,00,7,,,johnm003,,52,119,X,escok001,1,0,durhr001 grounds out. ,durhr001,0,G
+,11,7,,,johnm003,,53,122,SBX,escok001,1,0,valej003 grounds out. ,valej003,0,G
+,00,7,,gonza001,,,54,87,X,sirom001,0,0,gonza001 doubles. ,gonza001,1,
+,00,7,,gonza001,,,55,88,X,sirom001,1,0,,casta001,1,L
+gonza001 to 3B. ,22,7,,,gonza001,bushh001,56,94,BBCCFB,sirom001,0,0,Wild Pitch. ,bushh001,1,
+gonza001 scores. ,32,7,,,,,57,102,BBCCFBFX,sirom001,1,1,bushh001 grounds out. ,bushh001,1,G
+,31,7,,,,,58,107,BBBCX,sirom001,1,0,stews002 grounds out. ,stews002,1,G
+,02,8,,,,,60,3,CCX,quanp001,1,0,thomf001 grounds out. ,thomf001,0,G
+,22,8,,,,,61,8,BCCBX,quanp001,1,0,ordom001 grounds out. ,ordom001,0,G
+,11,8,,,,,62,11,BCX,quanp001,1,0,konep001 grounds out. ,konep001,0,G
+,00,8,,cruzj004,,,64,1,X,wunsk001,0,0,cruzj004 doubles. ,cruzj004,1,
+,12,8,,cruzj004,,,65,5,FBSX,wunsk001,1,0,mondr002 grounds out. ,mondr002,1,G
+cruzj004 scores. ,10,8,delgc001,,,,66,7,BX,wunsk001,0,1,delgc001 singles. ,delgc001,1,
+delgc001 to 2B. ,00,8,batit001,delgc001,,,68,1,X,foulk001,0,0,batit001 singles. ,batit001,1,
+,12,8,batit001,delgc001,,,70,6,BCSFS,foulk001,1,0,fullb001 strikes out. ,fullb001,1,
+delgc001 to 3B. batit001 to 2B. ,32,8,gonza001,batit001,delgc001,,71,12,BBCBCB,foulk001,0,0,gonza001 walks. ,gonza001,1,
+,12,8,gonza001,batit001,delgc001,,73,19,SFFBFFS,foulk001,1,0,fletd001 strikes out. ,fletd001,1,
+,21,9,,,,,75,15,BBCX,quanp001,1,0,singc001 grounds out. ,singc001,0,G
+,11,9,,,,,76,18,FBX,quanp001,1,0,,lee-c001,0,F
+,10,9,,,,,77,20,BX,quanp001,1,0,,nortg001,0,F
+,10,9,,,,,78,21,BX,foulk001,1,0,,bushh001,1,L
+,01,9,stews002,,,,79,23,CX,foulk001,0,0,stews002 singles. ,stews002,1,
+,12,9,stews002,,,,80,28,CBFFS,foulk001,1,0,cruzj004 strikes out. ,cruzj004,1,
+,10,9,stews002,,,,81,30,BX,foulk001,1,0,,mondr002,1,P

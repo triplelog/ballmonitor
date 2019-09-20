@@ -1,0 +1,82 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,01,1,,,,,0,2,CX,mussm001,1,0,erstd001 grounds out. ,erstd001,0,G
+,12,1,,,,,1,7,CCFBS,mussm001,1,0,kenna001 strikes out. ,kenna001,0,
+,00,1,,,,,2,8,X,mussm001,1,0,vaugm001 grounds out. ,vaugm001,0,G
+,22,1,andeb001,,,,3,5,BCBFX,hillk001,0,0,andeb001 reaches on error. ,andeb001,1,G
+,20,1,,andeb001,,deshd001,4,8,BBB,hillk001,0,0,andeb001 steals 2B. ,deshd001,1,
+,30,1,deshd001,andeb001,,,5,12,BBBB,hillk001,0,0,deshd001 walks. ,deshd001,1,
+,12,1,deshd001,andeb001,,,6,16,CSBC,hillk001,1,0,surhb001 strikes out. ,surhb001,1,
+,32,1,deshd001,,,,7,23,CFBFBBS,hillk001,2,0,bellj002 strikes out. andeb001 caught stealing. ,bellj002,1,
+,22,2,,,,,8,14,CFBBFX,mussm001,1,0,salmt001 grounds out. ,salmt001,0,G
+,12,2,,,,,9,18,CBFS,mussm001,1,0,andeg001 strikes out. ,andeg001,0,
+,31,2,glaut001,,,,10,23,BCBBB,mussm001,0,0,glaut001 walks. ,glaut001,0,
+,22,2,,glaut001,,spies001,11,28,FBBCB,mussm001,0,0,glaut001 steals 2B. ,spies001,0,
+glaut001 scores. spies001 to 2B. ,32,2,,spies001,,,12,35,FBBCBFX,mussm001,0,1,spies001 singles. ,spies001,0,
+,02,2,,spies001,,,13,38,FFX,mussm001,1,0,molib001 grounds out. ,molib001,0,G
+,00,2,,,,,14,24,X,hillk001,1,0,,bainh001,1,F
+,11,2,,,,,15,27,BCX,hillk001,1,0,,conij001,1,F
+,21,2,,,,,16,31,CBBX,hillk001,1,0,,lewim001,1,
+,12,3,,,,,17,42,CBSC,mussm001,1,0,gil-b001 strikes out. ,gil-b001,0,
+,32,3,,,,,18,49,BCBBFFC,mussm001,1,0,erstd001 strikes out. ,erstd001,0,
+,00,3,,,,,19,50,X,mussm001,1,0,,kenna001,0,P
+,32,3,johnc002,,,,20,37,CBFBBX,hillk001,0,0,johnc002 singles. ,johnc002,1,
+johnc002 to 2B. ,21,3,,johnc002,,,21,41,BSBX,hillk001,1,0,bordm001 grounds out. ,bordm001,1,G
+,32,3,andeb001,johnc002,,,22,48,BFBSFBB,hillk001,0,0,andeb001 walks. ,andeb001,1,
+johnc002 to 3B. andeb001 to 2B. ,32,3,deshd001,andeb001,johnc002,,23,56,CCBFBBFX,hillk001,0,0,deshd001 singles. ,deshd001,1,
+johnc002 scores. andeb001 to 3B. deshd001 to 2B. ,01,3,surhb001,deshd001,andeb001,,24,58,CX,hillk001,0,1,surhb001 singles. ,surhb001,1,
+andeb001 scores. deshd001 to 3B. ,12,3,surhb001,,deshd001,,25,62,CBSX,hillk001,1,1,bellj002 hits sacrifice fly. ,bellj002,1,
+deshd001 scores. surhb001 to 2B. ,00,3,bainh001,surhb001,,,26,63,X,hillk001,0,1,bainh001 singles. ,bainh001,1,
+surhb001 to 3B. bainh001 to 2B. ,30,3,conij001,bainh001,surhb001,,27,67,BBBB,hillk001,0,0,conij001 walks. ,conij001,1,
+,12,3,conij001,bainh001,surhb001,,28,71,BFFS,hillk001,1,0,lewim001 strikes out. ,lewim001,1,
+,21,4,,,,,29,54,BBSX,mussm001,0,1,vaugm001 homers. ,vaugm001,0,
+,02,4,,,,,30,57,SFS,mussm001,1,0,salmt001 strikes out. ,salmt001,0,
+,10,4,andeg001,,,,31,59,BX,mussm001,0,0,andeg001 singles. ,andeg001,0,
+andeg001 to 3B. ,01,4,glaut001,,andeg001,,32,61,CX,mussm001,0,0,glaut001 singles. ,glaut001,0,
+andeg001 scores. glaut001 scores. ,00,4,,spies001,,,33,62,X,mussm001,0,2,spies001 doubles. ,spies001,0,
+spies001 scores. ,01,4,,molib001,,,34,64,FX,mussm001,0,1,molib001 doubles. ,molib001,0,
+molib001 to 3B. ,12,4,gil-b001,,molib001,,35,68,BSSX,mussm001,0,0,gil-b001 singles. ,gil-b001,0,
+molib001 out. ,11,4,gil-b001,,,,36,71,CBX,mussm001,2,0,,erstd001,0,
+,12,4,,,,,37,75,SSBC,hillk001,1,0,johnc002 strikes out. ,johnc002,1,
+,32,4,bordm001,,,,38,81,BBCBCX,hillk001,0,0,bordm001 singles. ,bordm001,1,
+bordm001 scores. ,01,4,,,,,39,83,FX,hillk001,0,2,andeb001 homers. ,andeb001,1,
+,32,4,deshd001,,,,40,90,CBBSBFX,hillk001,0,0,deshd001 singles. ,deshd001,1,
+,10,4,deshd001,,,,41,92,BX,hillk001,1,0,,surhb001,1,F
+,12,4,deshd001,,,,42,96,FBFX,hillk001,1,0,,bellj002,1,F
+,00,5,,,kenna001,,43,72,X,mussm001,0,0,kenna001 triples. ,kenna001,0,
+kenna001 scores. ,00,5,,,,,44,73,X,mussm001,1,1,vaugm001 grounds out. ,vaugm001,0,G
+,32,5,salmt001,,,,45,82,BCFFFBBFB,mussm001,0,0,salmt001 walks. ,salmt001,0,
+,12,5,,,,,47,4,BSFX,maduc001,2,0,Double Play. ,andeg001,0,
+,10,5,,,,,48,98,BX,hillk001,1,0,bainh001 grounds out. ,bainh001,1,G
+conij001 out. ,11,5,,,,,49,101,BCX,hillk001,1,0,conij001 singles. ,conij001,1,
+,21,5,,,,,50,105,BFBX,hillk001,1,0,lewim001 grounds out. ,lewim001,1,G
+,32,6,,,,,51,10,BSBFBS,maduc001,1,0,glaut001 strikes out. ,glaut001,0,
+,22,6,,,,,52,15,CBBCX,maduc001,1,0,,spies001,0,F
+,22,6,molib001,,,,53,21,BBSFFX,maduc001,0,0,molib001 singles. ,molib001,0,
+,22,6,molib001,,,,54,26,BSCBS,maduc001,1,0,gil-b001 strikes out. ,gil-b001,0,
+,00,6,,,,,56,1,X,weave001,1,0,,johnc002,1,F
+,32,6,bordm001,,,,57,7,BBCFBB,weave001,0,0,bordm001 walks. ,bordm001,1,
+,22,6,bordm001,,,,58,12,CSBBS,weave001,1,0,andeb001 strikes out. ,andeb001,1,
+,32,6,bordm001,,,,59,20,FBBBSFFX,weave001,1,0,deshd001 grounds out. ,deshd001,1,G
+,21,7,,,,,60,30,BBFX,maduc001,1,0,,erstd001,0,F
+,11,7,,,,,61,33,BFX,maduc001,1,0,,kenna001,0,F
+,12,7,,,,,62,38,BFFFC,maduc001,1,0,vaugm001 strikes out. ,vaugm001,0,
+,21,7,,,,,63,24,BCBX,weave001,1,0,,surhb001,1,F
+,11,7,,,,,64,27,SBX,weave001,1,0,bellj002 grounds out. ,bellj002,1,G
+,12,7,,,,,65,31,BFFS,weave001,1,0,bainh001 strikes out. ,bainh001,1,
+,12,8,,,,,66,42,BSFX,maduc001,0,1,salmt001 homers. ,salmt001,0,
+,02,8,,,,,67,46,FCFS,maduc001,1,0,andeg001 strikes out. ,andeg001,0,
+,32,8,glaut001,,,,68,52,SBBCBB,maduc001,0,0,glaut001 walks. ,glaut001,0,
+glaut001 to 2B. ,31,8,spies001,glaut001,,,69,57,SBBBB,maduc001,0,0,spies001 walks. ,spies001,0,
+glaut001 to 3B. spies001 to 2B. ,11,8,,spies001,glaut001,,71,3,FBX,groob001,1,0,molib001 grounds out. ,molib001,0,G
+glaut001 scores. spies001 out. ,00,8,gil-b001,,,,72,4,X,groob001,1,1,gil-b001 singles. ,gil-b001,0,
+,22,8,,,,,74,5,CBCBX,hases001,1,0,conij001 grounds out. ,conij001,1,G
+,10,8,,,,,75,7,BX,hases001,1,0,,lewim001,1,F
+,20,8,,,,,76,10,BBX,hases001,1,0,johnc002 grounds out. ,johnc002,1,G
+,22,9,,,,,78,5,BBCCX,tromm001,1,0,erstd001 grounds out. ,erstd001,0,G
+,21,9,,,,,79,9,FBBX,tromm001,1,0,,kenna001,0,P
+,11,9,,,,,80,12,BSX,tromm001,1,0,vaugm001 grounds out. ,vaugm001,0,G
+,12,9,,,,,84,16,CSBFFS,hases001,1,0,bordm001 strikes out. ,bordm001,1,
+,00,9,,,,,85,17,X,hases001,1,0,andeb001 grounds out. ,andeb001,1,G
+,00,9,deshd001,,,,86,18,X,hases001,0,0,deshd001 singles. ,deshd001,1,
+deshd001 to 2B. ,10,9,,deshd001,,surhb001,87,20,BB,hases001,0,0,deshd001 to 2B on defensive indifference. ,surhb001,1,
+,32,9,,deshd001,,,88,26,BBCSBX,hases001,1,0,,surhb001,1,F

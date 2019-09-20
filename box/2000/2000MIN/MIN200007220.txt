@@ -1,0 +1,155 @@
+version,2
+info,visteam,CLE
+info,hometeam,MIN
+info,site,MIN03
+info,date,2000/07/22
+info,number,0
+info,starttime,6:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,wendh902
+info,ump1b,clara901
+info,ump2b,buckc901
+info,ump3b,reedr901
+info,pitches,pitches
+info,temp,72
+info,winddir,torf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,196
+info,attendance,14108
+info,wp,santj003
+info,lp,davik001
+info,save,wellb002
+start,loftk001,"Kenny Lofton",0,1,8
+start,vizqo001,"Omar Vizquel",0,2,6
+start,thomj002,"Jim Thome",0,3,3
+start,ramim002,"Manny Ramirez",0,4,10
+start,frymt001,"Travis Fryman",0,5,5
+start,branr001,"Russell Branyan",0,6,9
+start,aloms001,"Sandy Alomar",0,7,2
+start,sexsr001,"Richie Sexson",0,8,7
+start,cabrj002,"Jolbert Cabrera",0,9,4
+start,drewt001,"Tim Drew",0,0,1
+start,guzmc001,"Cristian Guzman",1,1,6
+start,hockd001,"Denny Hocking",1,2,4
+start,lawtm002,"Matt Lawton",1,3,7
+start,coomr001,"Ron Coomer",1,4,3
+start,ortid001,"David Ortiz",1,5,10
+start,koskc001,"Corey Koskie",1,6,5
+start,allec001,"Chad Allen",1,7,9
+start,jonej003,"Jacque Jones",1,8,8
+start,jensm001,"Marcus Jensen",1,9,2
+start,lincm001,"Mike Lincoln",1,0,1
+com,"$Roberto Alomar out with a sore left ankle"
+play,1,0,loftk001,00,X,63/G
+play,1,0,vizqo001,30,BBBB,W
+play,1,0,thomj002,32,CCBBBX,7/F7S
+play,1,0,ramim002,21,BFBX,HR/7.1-H
+play,1,0,frymt001,21,BCBX,7/F7D
+play,1,1,guzmc001,01,CX,7/F7S
+play,1,1,hockd001,31,BBBCX,S9
+play,1,1,lawtm002,02,CFX,S/89S.1-2
+play,1,1,coomr001,11,CBX,D9.2-H;1-3
+play,1,1,ortid001,12,CBSX,S7.3-H;2-3
+play,1,1,koskc001,30,BBBB,W.1-2
+play,1,1,allec001,02,CFX,9/SF.3-H
+play,1,1,jonej003,00,X,S8.2-H;1-3
+play,1,1,jensm001,32,BFBCBB,W.1-2
+play,1,1,guzmc001,02,FFC,K/C
+play,2,0,branr001,20,BBX,S9/9S
+play,2,0,aloms001,32,CBBBFFFB,W.1-2
+play,2,0,sexsr001,22,CFBFFBFFX,64(1)3/GDP.2-3
+play,2,0,cabrj002,01,CX,63/G
+play,2,1,hockd001,22,CCBBX,S
+play,2,1,lawtm002,22,CBBFS,K+CS2(26)/DP
+play,2,1,coomr001,22,CBSBX,S8
+play,2,1,ortid001,31,BFBBX,S9.1-3
+play,2,1,koskc001,31,BBCBX,43/G
+play,3,0,loftk001,32,CFBFBBX,8/F8
+play,3,0,vizqo001,11,BCX,S8
+play,3,0,thomj002,22,BFSBX,6(1)3/GDP
+play,3,1,allec001,32,SBCBBX,S8
+play,3,1,jonej003,12,CBFX,S7.1-2
+play,3,1,jensm001,12,CBFX,64(1)/FO.2-3
+play,3,1,guzmc001,20,BBX,8/SF/DP.3-H;1X2(836)
+play,4,0,ramim002,30,BBBB,W
+play,4,0,frymt001,01,CX,S8.1-2
+play,4,0,branr001,10,BX,S9.2-3;1-2
+play,4,0,aloms001,02,FFS,K
+play,4,0,sexsr001,20,BBX,HR/7.3-H;2-H;1-H
+play,4,0,cabrj002,00,,NP
+sub,santj003,"Johan Santana",1,0,1
+play,4,0,cabrj002,31,BBSBB,W
+play,4,0,loftk001,31,BCBBB,W.1-2
+play,4,0,vizqo001,22,CBBFS,K
+play,4,0,thomj002,22,BSBCS,K
+play,4,1,hockd001,00,,NP
+sub,davik001,"Kane Davis",0,0,1
+play,4,1,hockd001,00,X,9/F9
+play,4,1,lawtm002,32,CSBBBX,43/G
+play,4,1,coomr001,10,BX,S8
+play,4,1,ortid001,12,BFCX,D/89D.1-3
+play,4,1,koskc001,00,,BK.3-H;2-3
+play,4,1,koskc001,00,X,D7.3-H
+play,4,1,allec001,01,CX,S7.2-H;BX2(754)
+play,5,0,ramim002,31,BFBBB,W
+play,5,0,frymt001,00,X,7/F7S
+play,5,0,branr001,00,X,9/F9
+play,5,0,aloms001,01,CX,D7/7D.1-3
+play,5,0,sexsr001,10,BX,4/P4
+play,5,1,jonej003,00,X,S9
+play,5,1,jensm001,22,FBFBFC,K+SB2/C
+play,5,1,guzmc001,32,BFBBSB,W
+play,5,1,hockd001,00,X,36(1)/FO.2-3
+play,5,1,lawtm002,00,,NP
+sub,cairc001,"Cameron Cairncross",0,0,1
+play,5,1,lawtm002,12,CSBX,E6/G.3-H(UR)(NR);1-2
+play,5,1,coomr001,21,BBFX,D7.2-H(UR);1XH(762)
+play,6,0,cabrj002,01,FX,3/P3
+play,6,0,loftk001,30,BBBB,W
+play,6,0,vizqo001,01,CX,43/G.1-2
+play,6,0,thomj002,01,FH,HP
+play,6,0,ramim002,00,,NP
+sub,carrh001,"Hector Carrasco",1,0,1
+play,6,0,ramim002,32,CSBBBS,K
+play,6,1,ortid001,22,CBBCFS,K
+play,6,1,koskc001,11,BFX,S8
+play,6,1,allec001,00,X,64(1)3/GDP
+play,7,0,frymt001,12,SFBFS,K
+play,7,0,branr001,12,SBFS,K
+play,7,0,aloms001,10,BX,8/F8
+play,7,1,jonej003,22,BBFSFX,3/G
+play,7,1,jensm001,00,X,S8
+play,7,1,guzmc001,01,SX,54(1)/FO
+play,7,1,hockd001,01,CB,SB2
+play,7,1,hockd001,22,CBCBFX,9/L9
+play,8,0,sexsr001,10,BX,S8
+play,8,0,cabrj002,12,CCBX,S9.1-2
+play,8,0,loftk001,00,,NP
+sub,guare001,"Eddie Guardado",1,0,1
+play,8,0,loftk001,32,BBBCFX,7/F7
+play,8,0,vizqo001,00,X,S8.2-3;1-2
+play,8,0,thomj002,12,SFBC,K/C
+play,8,0,ramim002,00,,NP
+sub,wellb002,"Bob Wells",1,0,1
+play,8,0,ramim002,00,X,8/F8D
+play,8,1,lawtm002,00,,NP
+sub,navaj001,"Jaime Navarro",0,0,1
+play,8,1,lawtm002,32,CFBFBFFFFBX,7/F7
+play,8,1,coomr001,12,BFCX,43/G
+play,8,1,ortid001,22,BFBFS,K
+play,9,0,frymt001,12,CBFFX,13/G
+play,9,0,branr001,12,BFSFS,K
+play,9,0,aloms001,01,FX,3/L3
+data,er,drewt001,5
+data,er,davik001,3
+data,er,cairc001,0
+data,er,navaj001,0
+data,er,lincm001,6
+data,er,santj003,0
+data,er,carrh001,0
+data,er,guare001,0
+data,er,wellb002,0

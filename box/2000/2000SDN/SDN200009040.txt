@@ -1,0 +1,141 @@
+version,2
+info,visteam,MIL
+info,hometeam,SDN
+info,site,SAN01
+info,date,2000/09/04
+info,number,0
+info,starttime,6:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,tscht901
+info,ump1b,meric901
+info,ump2b,ripps901
+info,ump3b,gibsg901
+info,pitches,pitches
+info,temp,75
+info,winddir,tocf
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,151
+info,attendance,15183
+info,wp,davet001
+info,lp,kingr001
+info,save,hofft001
+start,grism001,"Marquis Grissom",0,1,8
+start,lorem001,"Mark Loretta",0,2,6
+start,jenkg001,"Geoff Jenkins",0,3,7
+start,sexsr001,"Richie Sexson",0,4,3
+start,burnj001,"Jeromy Burnitz",0,5,9
+start,houst001,"Tyler Houston",0,6,5
+start,lopel002,"Luis Lopez",0,7,4
+start,blanh001,"Henry Blanco",0,8,2
+start,wrigj001,"Jamey Wright",0,9,1
+start,jackd003,"Damian Jackson",1,1,4
+start,relad001,"Desi Relaford",1,2,6
+start,klesr001,"Ryan Klesko",1,3,3
+start,nevip001,"Phil Nevin",1,4,5
+start,mabrj001,"John Mabry",1,5,9
+start,darrm001,"Mike Darr",1,6,7
+start,river002,"Ruben Rivera",1,7,8
+start,gonzw001,"Wiki Gonzalez",1,8,2
+start,tollb001,"Brian Tollberg",1,9,1
+play,1,0,grism001,11,CBX,8/F8
+play,1,0,lorem001,11,BCX,9/F9
+play,1,0,jenkg001,32,BCBCBS,K
+play,1,1,jackd003,22,CBFBX,S7/7S
+play,1,1,relad001,00,X,43/G.1-2
+play,1,1,klesr001,01,CX,43/G.2-3
+play,1,1,nevip001,00,H,HP
+play,1,1,mabrj001,11,SBX,S9.3-H;1-2
+play,1,1,darrm001,01,CX,7/F7
+play,2,0,sexsr001,10,BX,63/G
+play,2,0,burnj001,30,BBBX,S9/9S
+play,2,0,houst001,01,CX,S9/9S.1-2
+play,2,0,lopel002,12,FBFFS,K
+play,2,0,blanh001,11,BCX,6/P6
+play,2,1,river002,32,BBBCFB,W
+play,2,1,gonzw001,02,CCS,K
+play,2,1,tollb001,00,X,34/SH.1-2
+play,2,1,jackd003,21,BBCX,S7.2-H
+play,2,1,relad001,02,CCX,E3/G.1-3
+play,2,1,klesr001,10,BX,6/P6
+play,3,0,wrigj001,02,SFC,K/C
+play,3,0,grism001,22,BBFFFFFX,9/F9
+play,3,0,lorem001,10,BX,2/FL
+play,3,1,nevip001,10,BX,43/G
+play,3,1,mabrj001,21,BBCX,S/89
+play,3,1,darrm001,02,CFS,K
+play,3,1,river002,00,X,8/F8
+play,4,0,jenkg001,11,BCX,3/G
+play,4,0,sexsr001,01,SX,S/78
+play,4,0,burnj001,30,BBBB,W.1-2
+play,4,0,houst001,22,CFBBS,K
+play,4,0,lopel002,00,X,4/L4
+play,4,1,gonzw001,01,FX,9/F9
+play,4,1,tollb001,02,FCX,3/G
+play,4,1,jackd003,12,BCFFX,S8
+play,4,1,relad001,00,X,7/F7
+play,5,0,blanh001,22,BCCBFX,7/F7
+play,5,0,wrigj001,02,CSX,53/G
+play,5,0,grism001,11,BCX,63/G
+play,5,1,klesr001,11,BFX,43/G
+play,5,1,nevip001,32,BCBSBX,43/G
+play,5,1,mabrj001,32,BBSFBX,8/F8D
+play,6,0,lorem001,30,BBBB,W
+play,6,0,jenkg001,22,FFBBS,K
+play,6,0,sexsr001,31,FBBBB,W.1-2
+play,6,0,burnj001,12,BCCS,K
+play,6,0,houst001,11,CBX,HR/9.2-H;1-H
+play,6,0,lopel002,00,X,13/G
+play,6,1,darrm001,12,SBFC,K/C
+play,6,1,river002,00,X,9/L9
+play,6,1,gonzw001,02,FSX,53/G
+play,7,0,blanh001,21,FBBX,7/FL
+play,7,0,wrigj001,02,SFC,K/C
+play,7,0,grism001,12,BSCC,K/C
+com,"ej,grism001,P,tscht901,Balls and strikes"
+com,"Marquis Grissom ejected by HP umpire Tim Tschida"
+play,7,1,tollb001,00,,NP
+sub,moutj001,"James Mouton",0,1,8
+play,7,1,tollb001,00,,NP
+sub,magad001,"Dave Magadan",1,9,11
+play,7,1,magad001,32,BBBCCS,K
+play,7,1,jackd003,32,CBBFBS,K
+play,7,1,relad001,12,CFBS,K
+play,8,0,lorem001,00,,NP
+sub,davet001,"Tom Davey",1,9,1
+play,8,0,lorem001,11,BCX,63/G
+play,8,0,jenkg001,10,BX,S/89
+play,8,0,sexsr001,22,BCSBFX,3(B)3(1)/LDP
+play,8,1,klesr001,00,,NP
+sub,colll001,"Lou Collier",0,3,7
+play,8,1,klesr001,21,FBBX,43/G
+play,8,1,nevip001,00,X,D9
+play,8,1,mabrj001,00,,NP
+sub,kingr001,"Ray King",0,9,1
+play,8,1,mabrj001,00,,NP
+sub,sprae001,"Ed Sprague",1,5,11
+play,8,1,sprae001,22,CBSBC,K/C
+play,8,1,darrm001,30,BBBB,W
+play,8,1,river002,11,BCB,WP.2-3;1-2
+play,8,1,river002,21,BCBX,S5.3-H;2-H(E5/TH)(UR);B-2
+play,8,1,gonzw001,00,,NP
+sub,weatd001,"David Weathers",0,9,1
+play,8,1,gonzw001,21,BBCX,53/G
+play,9,0,burnj001,00,,NP
+sub,darrm001,"Mike Darr",1,6,9
+play,9,0,burnj001,00,,NP
+sub,owene001,"Eric Owens",1,9,7
+play,9,0,burnj001,00,,NP
+sub,hofft001,"Trevor Hoffman",1,5,1
+play,9,0,burnj001,12,CBFS,K
+play,9,0,houst001,21,SBBX,7/FL
+play,9,0,lopel002,02,CFS,K
+data,er,wrigj001,3
+data,er,kingr001,0
+data,er,weatd001,0
+data,er,tollb001,3
+data,er,davet001,0
+data,er,hofft001,0

@@ -1,0 +1,158 @@
+version,2
+info,visteam,MIN
+info,hometeam,TEX
+info,site,ARL02
+info,date,2000/06/22
+info,number,0
+info,starttime,7:35PM
+info,daynight,night
+info,usedh,true
+info,umphome,welkb901
+info,ump1b,culbf901
+info,ump2b,froeb901
+info,ump3b,wintm901
+info,pitches,pitches
+info,temp,89
+info,winddir,fromrf
+info,windspeed,13
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,178
+info,attendance,31320
+info,wp,hawkl001
+info,lp,crabt001
+info,save,wellb002
+start,canij001,"Jay Canizaro",0,1,4
+start,guzmc001,"Cristian Guzman",0,2,6
+start,lawtm002,"Matt Lawton",0,3,7
+start,coomr001,"Ron Coomer",0,4,3
+start,huskb001,"Butch Huskey",0,5,9
+start,koskc001,"Corey Koskie",0,6,10
+start,maxwj001,"Jason Maxwell",0,7,5
+start,moelc001,"Chad Moeller",0,8,2
+start,jonej003,"Jacque Jones",0,9,8
+start,maysj001,"Joe Mays",0,0,1
+start,cataf001,"Frank Catalanotto",1,1,4
+start,greer001,"Rusty Greer",1,2,7
+start,rodri001,"Ivan Rodriguez",1,3,2
+start,palmr001,"Rafael Palmeiro",1,4,3
+start,segud001,"David Segui",1,5,10
+start,martd002,"Dave Martinez",1,6,9
+start,lambm001,"Mike Lamb",1,7,5
+start,kaplg001,"Gabe Kapler",1,8,8
+start,clayr001,"Royce Clayton",1,9,6
+start,perim001,"Matt Perisho",1,0,1
+play,1,0,canij001,22,BCBSX,8/L8
+play,1,0,guzmc001,12,CBSX,8/F8
+play,1,0,lawtm002,01,CX,7/F7
+play,1,1,cataf001,02,CFX,43/G
+play,1,1,greer001,00,X,S8
+play,1,1,rodri001,00,X,9/F9
+play,1,1,palmr001,21,CBBX,3/G
+play,2,0,coomr001,21,BSBX,HR/7
+play,2,0,huskb001,11,CBX,7/L7
+play,2,0,koskc001,11,CBX,43/G
+play,2,0,maxwj001,22,BCFFFBFC,K/C
+play,2,1,segud001,11,FBX,8/F8
+play,2,1,martd002,00,X,S8
+play,2,1,lambm001,01,CX,S7.1-2
+play,2,1,kaplg001,20,BBX,8/F8
+play,2,1,clayr001,22,CBSBX,8/F8
+play,3,0,moelc001,10,BX,S7/7S
+play,3,0,jonej003,01,FX,S9/9S.1-2
+play,3,0,canij001,22,BBFFFX,46(1)/FO.2-3
+play,3,0,guzmc001,10,BX,FC5.3XH(52);1-2;B-1#
+play,3,0,lawtm002,00,X,9/F9
+play,3,1,cataf001,10,BX,S8
+play,3,1,greer001,01,CB,SB2.1-3(E2/TH2)
+play,3,1,greer001,32,CBCFBFBS,K
+play,3,1,rodri001,12,BFFS,K
+play,3,1,palmr001,00,X,S9.3-H
+play,3,1,segud001,02,FCX,43/G
+play,4,0,coomr001,00,X,8/F8
+play,4,0,huskb001,01,CX,E4/G
+play,4,0,koskc001,22,BBCFS,K
+play,4,0,maxwj001,22,SFBFBX,7/F7
+play,4,1,martd002,01,FX,13/G
+play,4,1,lambm001,12,BSCS,K
+play,4,1,kaplg001,31,CBBBB,W
+play,4,1,clayr001,10,BX,63/G
+play,5,0,moelc001,32,SFFBBBX,53/G
+play,5,0,jonej003,12,CBCS,K
+play,5,0,canij001,31,BBCBB,W
+play,5,0,guzmc001,11,BFX,53/G
+play,5,1,cataf001,00,X,53/G
+play,5,1,greer001,21,CBBX,31/G
+play,5,1,rodri001,02,FSX,HR/9
+play,5,1,palmr001,32,CBBFBX,53/G
+play,6,0,lawtm002,21,BCBX,S7
+play,6,0,coomr001,10,BX,23/G.1-2
+play,6,0,huskb001,22,FBFBX,43/G.2-3
+play,6,0,koskc001,00,X,S5/BG5.3-H
+play,6,0,maxwj001,32,BBCBCX,53/G
+play,6,1,segud001,11,CBX,43/G
+play,6,1,martd002,22,CBFFFBS,K
+play,6,1,lambm001,32,BSBCBX,S8
+play,6,1,kaplg001,00,X,4/P4
+play,7,0,moelc001,12,LFFBS,K
+play,7,0,jonej003,31,BFBBB,W
+play,7,0,canij001,10,BB,CS2(24)
+play,7,0,canij001,32,BBCCBX,53/G
+play,7,1,clayr001,01,FX,63/G
+play,7,1,cataf001,10,BX,9/F9
+play,7,1,greer001,31,CBBBX,S8
+play,7,1,rodri001,30,BBBB,W.1-2
+play,7,1,palmr001,21,BFBX,6/P6
+play,8,0,guzmc001,00,,NP
+sub,crabt001,"Tim Crabtree",1,0,1
+play,8,0,guzmc001,02,CFFS,K
+play,8,0,lawtm002,00,X,43/G
+play,8,0,coomr001,01,CX,43/G
+play,8,1,segud001,00,,NP
+sub,millt001,"Travis Miller",0,0,1
+play,8,1,segud001,32,FSBBBB,W
+play,8,1,martd002,00,,NP
+sub,curtc001,"Chad Curtis",1,6,11
+play,8,1,curtc001,00,,NP
+sub,grees002,"Scarborough Green",1,5,12
+play,8,1,curtc001,22,FFFBBFC,K/C
+play,8,1,lambm001,00,X,4/P4
+play,8,1,kaplg001,00,,NP
+sub,hawkl001,"LaTroy Hawkins",0,0,1
+play,8,1,kaplg001,10,BX,43/G
+play,9,0,huskb001,00,,NP
+sub,curtc001,"Chad Curtis",1,6,9
+play,9,0,huskb001,01,CX,D9
+play,9,0,koskc001,10,BX,8/F8
+play,9,0,maxwj001,00,,NP
+sub,hockd001,"Denny Hocking",0,7,11
+play,9,0,hockd001,32,CBSBBFB,W
+play,9,0,moelc001,11,BCX,43/G.2-H(NR);1-2
+com,"DWS: this play appears to be correct"
+play,9,0,jonej003,30,IIII,IW
+play,9,0,canij001,32,BBFBFB,W.2-3;1-2
+play,9,0,guzmc001,00,,NP
+sub,venam002,"Mike Venafro",1,0,1
+play,9,0,guzmc001,11,CBX,43/G
+play,9,1,clayr001,00,,NP
+sub,hockd001,"Denny Hocking",0,7,5
+play,9,1,clayr001,00,,NP
+sub,alicl001,"Luis Alicea",1,9,11
+play,9,1,alicl001,32,CSBBBFB,W
+play,9,1,cataf001,00,,NP
+sub,guare001,"Eddie Guardado",0,0,1
+play,9,1,cataf001,00,X,53/SH.1-2#
+play,9,1,greer001,22,BCBFFX,S9.2-3
+play,9,1,rodri001,00,,NP
+sub,wellb002,"Bob Wells",0,0,1
+play,9,1,rodri001,01,FX,6/P6
+play,9,1,palmr001,00,X,8/F8
+data,er,maysj001,2
+data,er,millt001,0
+data,er,hawkl001,0
+data,er,guare001,0
+data,er,wellb002,0
+data,er,perim001,2
+data,er,crabt001,1
+data,er,venam002,0

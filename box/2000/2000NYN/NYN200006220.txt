@@ -1,0 +1,138 @@
+version,2
+info,visteam,PHI
+info,hometeam,NYN
+info,site,NYC17
+info,date,2000/06/22
+info,number,0
+info,starttime,7:10PM
+info,daynight,night
+info,usedh,false
+info,umphome,danlk901
+info,ump1b,katzt901
+info,ump2b,morrd901
+info,ump3b,fichm901
+info,pitches,pitches
+info,temp,83
+info,winddir,tolf
+info,windspeed,9
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,161
+info,attendance,21005
+info,wp,ruscg001
+info,lp,polic001
+info,save,cookd001
+start,gland001,"Doug Glanville",0,1,8
+start,gantr001,"Ron Gant",0,2,7
+start,abreb001,"Bobby Abreu",0,3,9
+start,roles001,"Scott Rolen",0,4,5
+start,liebm001,"Mike Lieberthal",0,5,2
+start,burrp001,"Pat Burrell",0,6,3
+start,jordk001,"Kevin Jordan",0,7,4
+start,ariaa001,"Alex Arias",0,8,6
+start,polic001,"Cliff Politte",0,9,1
+start,moram002,"Melvin Mora",1,1,6
+start,belld001,"Derek Bell",1,2,9
+start,alfoe001,"Edgardo Alfonzo",1,3,4
+start,ventr001,"Robin Ventura",1,4,5
+start,zeilt001,"Todd Zeile",1,5,3
+start,paytj001,"Jay Payton",1,6,8
+start,pratt001,"Todd Pratt",1,7,2
+start,agbab001,"Benny Agbayani",1,8,7
+start,ruscg001,"Glendon Rusch",1,9,1
+play,1,0,gland001,32,BBCFBFB,W
+play,1,0,gantr001,32,BCFBBS,K+SB2
+play,1,0,abreb001,32,BBFFBX,S7.2-H
+play,1,0,roles001,02,CCX,S9.1-2
+play,1,0,liebm001,32,BCBFBX,S7.2-H;1-2
+play,1,0,burrp001,22,SSBFBX,9/F9.2-3
+play,1,0,jordk001,01,CX,64(1)/FO
+play,1,1,moram002,21,BBCX,8/F8
+play,1,1,belld001,20,BBX,HR/78
+play,1,1,alfoe001,21,BCBX,9/F9
+play,1,1,ventr001,21,BBCX,3/G
+play,2,0,ariaa001,12,CBCX,63/G
+play,2,0,polic001,02,CFC,K/C
+play,2,0,gland001,00,X,53/BG
+play,2,1,zeilt001,21,CBBX,9/F9
+play,2,1,paytj001,12,BCCX,9/F9
+play,2,1,pratt001,12,CSBX,53/G
+play,3,0,gantr001,02,CCC,K/C
+play,3,0,abreb001,12,CBFX,43/G
+play,3,0,roles001,21,CBBX,3/FL
+play,3,1,agbab001,32,BBCSBX,9/F9
+play,3,1,ruscg001,12,CBCX,3/G
+play,3,1,moram002,22,CBSBS,K
+play,4,0,liebm001,02,SCX,S8/8S
+play,4,0,burrp001,22,CBBSX,4/P4
+play,4,0,jordk001,12,CBFX,3/FL
+play,4,0,ariaa001,11,BCX,S8.1-2
+play,4,0,polic001,00,X,9/F9
+play,4,1,belld001,30,BBBB,W
+play,4,1,alfoe001,11,BCX,9/F9
+play,4,1,ventr001,00,X,7/F7
+play,4,1,zeilt001,22,BBCFX,D7/7D.1-3
+play,4,1,paytj001,31,BCBBB,W
+play,4,1,pratt001,22,BSBSC,K/C
+play,5,0,gland001,11,CBX,63/G
+play,5,0,gantr001,00,X,S7
+play,5,0,abreb001,01,CX,36(1)/FO
+play,5,0,roles001,22,BBFFX,6/P6
+play,5,1,agbab001,12,CFBX,2/FL
+play,5,1,ruscg001,02,CFC,K/C
+play,5,1,moram002,22,FFBBX,HR/9
+play,5,1,belld001,22,CBBCC,K/C
+play,6,0,liebm001,22,BSBCFX,63/G
+play,6,0,burrp001,22,BSBCFS,K
+play,6,0,jordk001,12,CBCX,8/F8
+play,6,1,alfoe001,21,BBCX,53/G
+play,6,1,ventr001,21,BCBX,D9
+play,6,1,zeilt001,21,BBCX,13/G
+play,6,1,paytj001,20,BBX,HR/9.2-H
+play,6,1,pratt001,12,SBFX,7/F7
+play,7,0,ariaa001,01,CX,E5/G
+play,7,0,polic001,00,,NP
+sub,huntb001,"Brian R. Hunter",0,9,11
+play,7,0,huntb001,22,CBBFX,S7.1-2
+play,7,0,gland001,12,FFBFX,15(2)/FO.1-2
+play,7,0,gantr001,22,CFBBS,K
+play,7,0,abreb001,12,CCBX,7/F7
+play,7,1,agbab001,00,,NP
+sub,schrs001,"Steve Schrenk",0,9,1
+play,7,1,agbab001,12,BCCS,K
+play,7,1,ruscg001,00,,NP
+sub,harrl001,"Lenny Harris",1,9,11
+play,7,1,harrl001,00,X,D9
+play,7,1,moram002,12,CFBFX,8/F8D.2-3
+play,7,1,belld001,11,CBX,S.3-H
+play,7,1,alfoe001,32,CBBCFBS,K
+play,8,0,roles001,00,,NP
+sub,mcewj001,"Joe McEwing",1,8,7
+play,8,0,roles001,00,,NP
+sub,wendt001,"Turk Wendell",1,9,1
+play,8,0,roles001,11,CBX,HR/7
+play,8,0,liebm001,30,BBBB,W
+play,8,0,burrp001,00,B,PB.1-2
+play,8,0,burrp001,10,BX,E5/TH.2-3;B-2
+play,8,0,jordk001,32,BFCBBX,7/SF.3-H(UR)
+play,8,0,ariaa001,22,BBCCFX,4/P4
+play,8,0,schrs001,00,,NP
+sub,sefck001,"Kevin Sefcik",0,9,11
+play,8,0,sefck001,01,CX,43/G
+play,8,1,ventr001,00,,NP
+sub,wardb001,"Bryan Ward",0,9,1
+play,8,1,ventr001,00,X,3/G
+play,8,1,zeilt001,11,CBX,7/F7D
+play,8,1,paytj001,00,X,8/F8
+play,9,0,gland001,02,CFFFX,8/F8
+play,9,0,gantr001,22,CSBBC,K/C
+play,9,0,abreb001,00,,NP
+sub,cookd001,"Dennis Cook",1,9,1
+play,9,0,abreb001,11,BCX,31/G
+data,er,polic001,4
+data,er,schrs001,1
+data,er,wardb001,0
+data,er,ruscg001,2
+data,er,wendt001,1
+data,er,cookd001,0

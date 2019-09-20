@@ -1,0 +1,145 @@
+version,2
+info,visteam,TOR
+info,hometeam,DET
+info,site,DET05
+info,date,2000/06/12
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,eddid901
+info,ump1b,relic901
+info,ump2b,carlm901
+info,ump3b,demud901
+info,pitches,pitches
+info,temp,64
+info,winddir,fromlf
+info,windspeed,8
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,175
+info,attendance,21779
+info,wp,castf001
+info,lp,nomoh001
+info,save,kochb001
+start,stews002,"Shannon Stewart",0,1,7
+start,bushh001,"Homer Bush",0,2,4
+start,batit001,"Tony Batista",0,3,5
+start,delgc001,"Carlos Delgado",0,4,3
+start,fullb001,"Brad Fullmer",0,5,10
+start,cruzj004,"Jose Cruz",0,6,8
+start,cordm001,"Marty Cordova",0,7,9
+start,gonza001,"Alex S. Gonzalez",0,8,6
+start,casta001,"Alberto Castillo",0,9,2
+start,castf001,"Frank Castillo",0,0,1
+start,polol001,"Luis Polonia",1,1,10
+start,ausmb001,"Brad Ausmus",1,2,2
+start,higgb001,"Bobby Higginson",1,3,7
+start,gonzj002,"Juan Gonzalez",1,4,9
+start,palmd002,"Dean Palmer",1,5,5
+start,easld001,"Damion Easley",1,6,4
+start,encaj001,"Juan Encarnacion",1,7,8
+start,clart002,"Tony Clark",1,8,3
+start,cruzd001,"Deivi Cruz",1,9,6
+start,nomoh001,"Hideo Nomo",1,0,1
+play,1,0,stews002,12,BCCX,8/F8
+play,1,0,bushh001,31,BBBCX,53/G
+play,1,0,batit001,01,CX,7/F7
+play,1,1,polol001,02,CCX,7/F7
+play,1,1,ausmb001,12,FFFBX,53/G
+play,1,1,higgb001,02,FCS,K
+play,2,0,delgc001,12,CSFBC,K/C
+play,2,0,fullb001,22,BFFBFS,K
+play,2,0,cruzj004,22,BCFBFX,3/G
+play,2,1,gonzj002,22,FBBCX,D9
+play,2,1,palmd002,22,FBBSX,8/F8
+play,2,1,easld001,21,BCBX,31/G.2-3
+play,2,1,encaj001,32,BBCFBFX,63/G
+play,3,0,cordm001,11,CBX,31/G
+play,3,0,gonza001,22,BBFCFX,D7
+play,3,0,casta001,32,FSBBBB,W
+play,3,0,stews002,00,B,WP.2-3;1-2
+play,3,0,stews002,11,BCX,D/89D.3-H;2-H
+play,3,0,bushh001,10,BX,8/F8
+play,3,0,batit001,12,CSBX,S7/7S.2-H
+play,3,0,delgc001,12,BCCX,5/P5
+play,3,1,clart002,11,CBX,3/G#
+play,3,1,cruzd001,12,CFBX,43/G
+play,3,1,polol001,11,FBX,9/F9D
+play,4,0,fullb001,00,X,HR/9
+play,4,0,cruzj004,01,FX,43/G
+play,4,0,cordm001,10,BX,6/P6
+play,4,0,gonza001,22,BBCFX,5/FL
+play,4,1,ausmb001,00,X,5/L5
+play,4,1,higgb001,11,BCX,43/G
+play,4,1,gonzj002,00,X,7/F7S
+play,5,0,casta001,12,CCBFX,63/G
+play,5,0,stews002,22,BCFBFS,K
+play,5,0,bushh001,12,SBCFFX,S9
+play,5,0,batit001,00,X,5/FL
+play,5,1,palmd002,32,CBFBBX,9/F9D
+play,5,1,easld001,20,BBX,S7/7S
+play,5,1,encaj001,10,BX,8/F8
+play,5,1,clart002,32,BBFSBX,3/G
+play,6,0,delgc001,22,BBCFX,31/G
+play,6,0,fullb001,00,X,7/F7S
+play,6,0,cruzj004,22,CBFBS,K
+play,6,1,cruzd001,00,X,D7/7D
+play,6,1,polol001,01,CX,43/G.2-3
+play,6,1,ausmb001,00,X,53/G
+play,6,1,higgb001,20,BBX,HR/9.3-H
+play,6,1,gonzj002,02,CCS,K
+play,7,0,cordm001,00,X,2/FL
+play,7,0,gonza001,00,X,D7/7D
+play,7,0,casta001,32,CBCBBC,K/C
+play,7,0,stews002,00,B,WP.2-3
+play,7,0,stews002,32,BCBSBS,K
+play,7,1,palmd002,21,BBSX,53/G
+play,7,1,easld001,12,CBSS,K
+play,7,1,encaj001,31,FBBBX,S7
+play,7,1,clart002,11,CBB,SB2
+play,7,1,clart002,32,CBBFBS,K
+play,8,0,bushh001,32,CBCBBS,K
+play,8,0,batit001,12,FBFS,K
+play,8,0,delgc001,32,BCSBBX,S
+play,8,0,fullb001,00,,NP
+sub,nitkc001,"C.J. Nitkowski",1,0,1
+play,8,0,fullb001,20,BBX,D7/7S.1-3
+play,8,0,cruzj004,22,BFFFBX,13/G
+play,8,1,cruzd001,00,,NP
+sub,beckr002,"Rich Becker",1,9,11
+play,8,1,beckr002,00,,NP
+sub,quanp001,"Paul Quantrill",0,0,1
+play,8,1,beckr002,12,FCBC,K/C
+play,8,1,polol001,11,LBX,43/G
+play,8,1,ausmb001,32,CBCBBX,S8
+play,8,1,higgb001,00,,NP
+sub,borbp001,"Pedro Borbon",0,0,1
+play,8,1,higgb001,31,BFBBX,S7/7S.1-2
+play,8,1,gonzj002,00,,NP
+sub,kochb001,"Billy Koch",0,0,1
+play,8,1,gonzj002,22,BSBFS,K
+play,9,0,cordm001,00,,NP
+sub,halts001,"Shane Halter",1,9,6
+play,9,0,cordm001,00,,NP
+sub,pattd001,"Danny Patterson",1,0,1
+play,9,0,cordm001,00,,NP
+sub,mondr002,"Raul Mondesi",0,7,11
+play,9,0,mondr002,01,CX,53/G
+play,9,0,gonza001,32,SBBCBFFS,K
+play,9,0,casta001,02,FFX,S9
+play,9,0,stews002,02,FFX,S8.1-2
+play,9,0,bushh001,02,CSS,K
+play,9,1,palmd002,00,,NP
+sub,mondr002,"Raul Mondesi",0,7,9
+play,9,1,palmd002,11,BCX,S8
+play,9,1,easld001,00,X,54(1)3/GDP
+play,9,1,encaj001,02,CFX,53/G
+data,er,castf001,2
+data,er,quanp001,0
+data,er,borbp001,0
+data,er,kochb001,0
+data,er,nomoh001,4
+data,er,nitkc001,0
+data,er,pattd001,0

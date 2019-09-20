@@ -1,0 +1,172 @@
+version,2
+info,visteam,BOS
+info,hometeam,MIN
+info,site,MIN03
+info,date,2000/07/03
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,carlm901
+info,ump1b,demud901
+info,ump2b,eddid901
+info,ump3b,cookr901
+info,pitches,pitches
+info,temp,72
+info,winddir,unknown
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,224
+info,attendance,13128
+info,wp,pichh001
+info,lp,lincm001
+info,save,lowed001
+start,offej001,"Jose Offerman",0,1,4
+start,fryej001,"Jeff Frye",0,2,9
+start,burkm001,"Morgan Burkhart",0,3,10
+start,daubb001,"Brian Daubach",0,4,3
+start,everc001,"Carl Everett",0,5,8
+start,oleat001,"Troy O'Leary",0,6,7
+start,sprae001,"Ed Sprague",0,7,5
+start,varij001,"Jason Varitek",0,8,2
+start,alexm001,"Manny Alexander",0,9,6
+start,martr002,"Ramon Martinez",0,0,1
+start,canij001,"Jay Canizaro",1,1,4
+start,guzmc001,"Cristian Guzman",1,2,6
+start,lawtm002,"Matt Lawton",1,3,7
+start,coomr001,"Ron Coomer",1,4,3
+start,koskc001,"Corey Koskie",1,5,5
+start,hockd001,"Denny Hocking",1,6,9
+start,ortid001,"David Ortiz",1,7,10
+start,moelc001,"Chad Moeller",1,8,2
+start,jonej003,"Jacque Jones",1,9,8
+start,lincm001,"Mike Lincoln",1,0,1
+play,1,0,offej001,22,CBFBX,S9
+play,1,0,fryej001,11,BCX,S9/9S.1-2
+play,1,0,burkm001,21,CBBX,46(1)3/GDP.2-3
+play,1,0,daubb001,02,CSS,K
+play,1,1,canij001,32,CBBFBX,D9
+play,1,1,guzmc001,02,FFX,9/F9D.2-3
+play,1,1,lawtm002,30,BBBB,W
+play,1,1,coomr001,11,CBX,D9.3-H;1-3
+play,1,1,koskc001,32,SBBBCB,W
+play,1,1,hockd001,11,FBX,6/P6
+play,1,1,ortid001,30,BBBB,W.3-H;2-3;1-2
+play,1,1,moelc001,21,BCBX,3/P3
+play,2,0,everc001,32,BCBFBB,W
+play,2,0,oleat001,11,BCX,S.1-2
+play,2,0,sprae001,11,CBX,64(1)3/GDP.2-3
+play,2,0,varij001,32,BFBCBX,S7/7S.3-H
+play,2,0,alexm001,02,CCC,K/C
+play,2,1,jonej003,01,CX,S8
+play,2,1,canij001,11,CBX,S7.1-2
+play,2,1,guzmc001,10,BX,8/F8D.2-3
+play,2,1,lawtm002,02,CCX,4/L4
+play,2,1,coomr001,01,CX,53/G
+play,3,0,offej001,00,X,7/F7
+play,3,0,fryej001,31,BBBCX,63/G
+play,3,0,burkm001,21,BBCX,S9/9S
+play,3,0,daubb001,11,BCX,3/G
+play,3,1,koskc001,30,BBBB,W
+play,3,1,hockd001,20,BBX,D9/9D.1-3
+play,3,1,ortid001,12,BCFX,8/SF.3-H
+play,3,1,moelc001,01,SX,63/G.2-3
+play,3,1,jonej003,10,BX,9/L9
+play,4,0,everc001,32,BCBBFFFFX,HR/9
+play,4,0,oleat001,00,X,HR/9
+play,4,0,sprae001,32,BBSSBB,W
+play,4,0,varij001,00,X,HR/9.1-H
+play,4,0,alexm001,30,BBBB,W
+play,4,0,offej001,00,,NP
+sub,ryanj001,"Jay Ryan",1,0,1
+play,4,0,offej001,11,BCX,64(1)/FO
+play,4,0,fryej001,22,BBCFB,WP.1-2
+play,4,0,fryej001,32,BBCFBB,W
+play,4,0,burkm001,21,BCBX,HR/9.2-H;1-H
+play,4,0,daubb001,32,BBCBFB,W
+play,4,0,everc001,22,BBCFX,D9.1-3
+play,4,0,oleat001,00,,NP
+sub,carrh001,"Hector Carrasco",1,0,1
+play,4,0,oleat001,11,CBX,D7.3-H;2-H
+play,4,0,sprae001,01,CX,63/G
+play,4,0,varij001,11,BFX,7/F7
+play,4,1,canij001,12,CBFX,S8
+play,4,1,guzmc001,00,X,S9/9S.1-2
+play,4,1,lawtm002,31,BBBCX,D7/7D.2-H;1-3
+play,4,1,coomr001,00,,NP
+sub,pichh001,"Hipolito Pichardo",0,0,1
+play,4,1,coomr001,20,BBX,S.3-H;2-3
+play,4,1,koskc001,00,X,S9.3-H;1-2
+play,4,1,hockd001,11,BFX,23/G.2-3;1-2
+play,4,1,ortid001,12,BCFX,7/SF.3-H
+play,4,1,moelc001,22,CFBBFFFS,K
+play,5,0,alexm001,22,BBCCFS,K23
+play,5,0,offej001,00,X,9/F9D
+play,5,0,fryej001,21,CBBX,S9
+play,5,0,burkm001,01,FB,WP.1-2
+play,5,0,burkm001,32,FBBSFBB,W
+play,5,0,daubb001,02,CFB,WP.2-3;1-2
+play,5,0,daubb001,12,CFBS,K
+play,5,1,jonej003,32,SFBBBX,43/G
+play,5,1,canij001,12,SFBX,63/G
+play,5,1,guzmc001,31,BBFBB,W
+play,5,1,lawtm002,01,CH,HP.1-2
+play,5,1,coomr001,02,CFX,31/G
+play,6,0,everc001,02,CFS,K
+play,6,0,oleat001,00,X,7/F7
+play,6,0,sprae001,02,FCS,K
+play,6,1,koskc001,00,,NP
+sub,cormr001,"Rheal Cormier",0,0,1
+play,6,1,koskc001,10,BX,S7
+play,6,1,hockd001,32,BFFBBX,63/G.1-2
+play,6,1,ortid001,00,,NP
+sub,huskb001,"Butch Huskey",1,7,11
+play,6,1,huskb001,10,BX,13/G.2-3
+play,6,1,moelc001,32,BFCBFBC,K/C
+play,7,0,varij001,31,BBFBB,W
+play,7,0,alexm001,00,,NP
+sub,millt001,"Travis Miller",1,0,1
+play,7,0,alexm001,11,CBX,T/78.1-H
+play,7,0,offej001,32,BCCFBBX,53/G
+play,7,0,fryej001,02,CCS,K
+play,7,0,burkm001,32,BBCCBFS,K
+play,7,1,jonej003,02,SCS,K
+play,7,1,canij001,00,X,5/P5
+play,7,1,guzmc001,01,CX,8/F8D
+play,8,0,daubb001,00,,NP
+sub,maxwj001,"Jason Maxwell",1,1,4
+play,8,0,daubb001,02,SSX,S9/9S
+play,8,0,everc001,22,CBBCX,3/P3
+play,8,0,oleat001,32,FBFBBX,8/F8D
+play,8,0,sprae001,20,BBX,8/F8S
+play,8,1,lawtm002,22,SCBBX,43/G
+play,8,1,coomr001,21,SBBX,43/G
+play,8,1,koskc001,32,CBBSBX,D9
+play,8,1,hockd001,11,BSX,S9.2-H
+play,8,1,huskb001,00,,NP
+sub,lowed001,"Derek Lowe",0,0,1
+play,8,1,huskb001,00,,NP
+sub,cummm001,"Midre Cummings",1,7,11
+play,8,1,cummm001,01,CX,43/G
+play,9,0,varij001,00,,NP
+sub,santj003,"Johan Santana",1,0,1
+play,9,0,varij001,22,BFFBS,K
+play,9,0,alexm001,32,BBFFBS,K
+play,9,0,offej001,10,BX,S7/7S
+play,9,0,fryej001,12,CCBS,K
+play,9,1,moelc001,00,,NP
+sub,jensm001,"Marcus Jensen",1,8,11
+play,9,1,jensm001,11,CBX,43/G
+play,9,1,jonej003,01,SX,3/G
+play,9,1,maxwj001,22,SBCBC,K/C
+data,er,martr002,6
+data,er,pichh001,1
+data,er,cormr001,1
+data,er,lowed001,0
+data,er,lincm001,6
+data,er,ryanj001,4
+data,er,carrh001,1
+data,er,millt001,0
+data,er,santj003,0

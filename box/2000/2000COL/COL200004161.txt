@@ -1,0 +1,155 @@
+version,2
+info,visteam,SLN
+info,hometeam,COL
+info,site,DEN02
+info,date,2000/04/16
+info,number,1
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,false
+info,umphome,diazl901
+info,ump1b,timmt901
+info,ump2b,kellj901
+info,ump3b,coope901
+info,pitches,pitches
+info,temp,62
+info,winddir,tolf
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,173
+info,attendance,43029
+info,wp,hentp001
+info,lp,arror001
+info,save,
+start,vinaf001,"Fernando Vina",0,1,4
+start,polap001,"Placido Polanco",0,2,6
+start,edmoj001,"Jim Edmonds",0,3,3
+start,howat001,"Thomas Howard",0,4,9
+start,lankr001,"Ray Lankford",0,5,7
+start,tatif001,"Fernando Tatis",0,6,5
+start,drewj001,"J.D. Drew",0,7,8
+start,mathm001,"Mike Matheny",0,8,2
+start,hentp001,"Pat Hentgen",0,9,1
+start,goodt001,"Tom Goodwin",1,1,8
+start,lansm001,"Mike Lansing",1,2,4
+start,walkl001,"Larry Walker",1,3,9
+start,cirij001,"Jeff Cirillo",1,4,5
+start,heltt001,"Todd Helton",1,5,3
+start,bragd001,"Darren Bragg",1,6,7
+start,peren001,"Neifi Perez",1,7,6
+start,maynb001,"Brent Mayne",1,8,2
+start,arror001,"Rolando Arrojo",1,9,1
+play,1,0,vinaf001,22,CCBBX,4/P4
+play,1,0,polap001,10,BX,HR/7
+play,1,0,edmoj001,00,X,7/F7
+play,1,0,howat001,21,BBFX,HR/9
+play,1,0,lankr001,22,CFBFBX,7/L7
+play,1,1,goodt001,12,BCCX,43/G
+play,1,1,lansm001,11,BFX,63/G
+play,1,1,walkl001,11,BSX,63/G
+play,2,0,tatif001,32,CBBBFS,K
+play,2,0,drewj001,02,FCS,K
+play,2,0,mathm001,22,BFBFC,K/C
+play,2,1,cirij001,01,CX,8/F8
+play,2,1,heltt001,00,X,HR/9
+play,2,1,bragd001,31,FBBBB,W
+play,2,1,peren001,22,FFBFBC,K/C
+play,2,1,maynb001,10,BC,CS2(26)
+play,3,0,hentp001,00,X,5/P5
+play,3,0,vinaf001,12,CFBX,S7/7S
+play,3,0,polap001,02,CCFX,43/G.1-2
+play,3,0,edmoj001,31,BBCBB,W
+play,3,0,howat001,11,CBX,S8.2-H;1-3
+play,3,0,lankr001,31,BBSBB,W.1-2
+play,3,0,tatif001,00,H,HP.3-H;2-3;1-2
+play,3,0,drewj001,12,FSBX,D9.3-H;2-H;1-H
+play,3,0,mathm001,02,CCS,K
+play,3,1,maynb001,21,BCBX,S8
+play,3,1,arror001,00,X,34/SH.1-2
+play,3,1,goodt001,22,BCBFS,K
+play,3,1,lansm001,21,BBCX,9/F9S
+play,4,0,hentp001,11,CBX,143/G
+play,4,0,vinaf001,32,BFFBBFB,W
+play,4,0,polap001,10,BX,S7.1-3
+play,4,0,edmoj001,10,BX,46(1)/FO.3-H
+play,4,0,howat001,22,BBFFS,K
+play,4,1,walkl001,22,BCBFX,53/G
+play,4,1,cirij001,21,BSBX,S7
+play,4,1,heltt001,31,CBBBX,4/P4
+play,4,1,bragd001,11,BSX,8/F8D
+play,5,0,lankr001,00,,NP
+sub,whitg001,"Gabe White",1,9,1
+play,5,0,lankr001,12,SSFBX,5/FL
+play,5,0,tatif001,32,CBBBFFFFFX,5/L5
+play,5,0,drewj001,12,SFBH,HP
+play,5,0,mathm001,12,FSBS,K
+play,5,1,peren001,22,CBFBX,7/F7
+play,5,1,maynb001,22,FBBFFC,K/C
+play,5,1,whitg001,02,CFFS,K
+play,6,0,hentp001,12,SFBX,S/78
+play,6,0,vinaf001,02,CFFX,7/F7
+play,6,0,polap001,00,X,6/P6
+play,6,0,edmoj001,02,SFC,K/C
+play,6,1,goodt001,21,CBBX,S8/8S
+play,6,1,lansm001,10,BX,46(1)3/GDP
+play,6,1,walkl001,22,FBFBFX,S9
+play,6,1,cirij001,31,CBBBX,D7.1-3
+play,6,1,heltt001,22,CBFBFX,S8.3-H;2-H
+play,6,1,bragd001,00,,NP
+sub,shumt001,"Terry Shumpert",1,6,11
+play,6,1,shumt001,00,,NP
+sub,mohlm001,"Mike Mohler",0,9,1
+play,6,1,shumt001,10,BX,46(1)/FO
+play,7,0,howat001,00,,NP
+sub,shumt001,"Terry Shumpert",1,6,7
+play,7,0,howat001,00,,NP
+sub,dunss001,"Shawon Dunston",0,4,11
+play,7,0,dunss001,12,CFBX,7/F7D
+play,7,0,lankr001,01,CX,7/F7S
+play,7,0,tatif001,00,X,D7
+play,7,0,drewj001,00,,NP
+sub,paquc001,"Craig Paquette",0,7,11
+play,7,0,paquc001,32,BBFBFS,K
+play,7,1,peren001,00,,NP
+sub,edmoj001,"Jim Edmonds",0,3,8
+play,7,1,peren001,00,,NP
+sub,dunss001,"Shawon Dunston",0,4,9
+play,7,1,peren001,00,,NP
+sub,paquc001,"Craig Paquette",0,7,3
+play,7,1,peren001,21,BBCX,63/G
+play,7,1,maynb001,20,BBX,S9
+play,7,1,whitg001,00,,NP
+sub,ledea001,"Aaron Ledesma",1,9,11
+play,7,1,ledea001,10,BX,54(1)3/GDP
+play,8,0,mathm001,00,,NP
+sub,dipoj001,"Jerry Dipoto",1,9,1
+play,8,0,mathm001,11,BFX,7/F7
+play,8,0,mohlm001,00,,NP
+sub,davie001,"Eric Davis",0,9,11
+play,8,0,davie001,00,X,E6/G
+play,8,0,vinaf001,01,FX,4/P4
+play,8,0,polap001,11,BCX,S/78.1-3
+play,8,0,edmoj001,22,BSBSFC,K/C
+play,8,1,goodt001,00,,NP
+sub,sloch001,"Heathcliff Slocumb",0,9,1
+play,8,1,goodt001,10,BX,43/G
+play,8,1,lansm001,11,CBX,D/78
+play,8,1,walkl001,00,X,43/G.2-3
+play,8,1,cirij001,01,CX,53/G
+play,9,0,dunss001,12,CBFC,K/C
+play,9,0,lankr001,01,FX,S8/8S
+play,9,0,tatif001,22,BCBCX,9/F9S
+play,9,0,paquc001,10,BX,D9.1-H
+play,9,0,mathm001,30,IIII,IW
+play,9,0,sloch001,32,BCCBBC,K/C
+play,9,1,heltt001,21,CBBX,63/G
+play,9,1,shumt001,01,CX,8/F8
+play,9,1,peren001,11,BCX,43/G
+data,er,hentp001,3
+data,er,mohlm001,0
+data,er,sloch001,0
+data,er,arror001,8
+data,er,whitg001,0
+data,er,dipoj001,1

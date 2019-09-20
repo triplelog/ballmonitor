@@ -1,0 +1,85 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,10,1,,,,,0,2,BX,neagd001,1,0,hendr001 grounds out. ,hendr001,0,G
+,12,1,guilc001,,,,1,7,CBSFX,neagd001,0,0,guilc001 singles. ,guilc001,0,
+,32,1,guilc001,,,,2,14,CFBBFBX,neagd001,1,0,,rodra001,0,F
+,32,1,guilc001,,,,3,20,BCBFBC,neagd001,1,0,marte001 strikes out. ,marte001,0,
+,10,1,,,,,4,2,BX,halaj001,1,0,,jeted001,1,F
+,00,1,,,,,5,3,X,halaj001,1,0,posaj001 grounds out. ,posaj001,1,G
+,22,1,,oneip001,,,6,8,BBSFX,halaj001,0,0,oneip001 doubles. ,oneip001,1,
+,20,1,,oneip001,,,7,11,BBX,halaj001,1,0,willb002 grounds out. ,willb002,1,G
+,11,2,olerj001,,,,8,23,BCH,neagd001,0,0,olerj001 hit by pitch. ,olerj001,0,
+olerj001 to 2B. ,00,2,buhnj001,olerj001,,,9,24,X,neagd001,0,0,buhnj001 singles. ,buhnj001,0,
+,02,2,buhnj001,olerj001,,,10,27,CLC,neagd001,1,0,camem001 strikes out. ,camem001,0,
+,21,2,buhnj001,olerj001,,,11,31,BFBX,neagd001,1,0,,belld002,0,F
+,30,2,buhnj001,olerj001,,,12,35,BBBX,neagd001,1,0,,wilsd001,0,F
+,10,2,,,,,13,13,BX,halaj001,0,1,justd001 homers. ,justd001,1,
+,00,2,hillg001,,,,14,14,X,halaj001,0,0,hillg001 singles. ,hillg001,1,
+,00,2,hillg001,,,,15,15,X,halaj001,1,0,,bross001,1,F
+,02,2,hillg001,,,,16,18,CCS,halaj001,1,0,turnc001 strikes out. ,turnc001,1,
+,00,2,hillg001,,,,17,19,X,halaj001,1,0,,vizcj001,1,P
+,30,3,hendr001,,,,18,39,BBBB,neagd001,0,0,hendr001 walks. ,hendr001,0,
+,02,3,,hendr001,,guilc001,19,42,CFB,neagd001,0,0,hendr001 steals 2B. ,guilc001,0,
+hendr001 to 3B. ,12,3,,,hendr001,,20,47,CFBFX,neagd001,1,0,guilc001 grounds out. ,guilc001,0,G
+hendr001 scores. ,22,3,,,,,21,53,FBBSFX,neagd001,1,1,rodra001 hits sacrifice fly. ,rodra001,0,
+,22,3,,,,,22,58,BFFBX,neagd001,1,0,,marte001,0,F
+,32,3,,,,,23,26,BFCBFBX,halaj001,1,0,,jeted001,1,L
+,32,3,,,,,24,33,CFBBBFX,halaj001,1,0,posaj001 grounds out. ,posaj001,1,G
+,11,3,oneip001,,,,25,36,BFX,halaj001,0,0,oneip001 singles. ,oneip001,1,
+,00,3,,oneip001,,willb002,26,37,C,halaj001,0,0,oneip001 steals 2B. ,willb002,1,
+,02,3,,oneip001,,,27,40,CFX,halaj001,1,0,willb002 grounds out. ,willb002,1,G
+,12,4,,,,,28,62,CBFC,neagd001,1,0,olerj001 strikes out. ,olerj001,0,
+,21,4,buhnj001,,,,29,66,BSBX,neagd001,0,0,buhnj001 singles. ,buhnj001,0,
+buhnj001 to 3B. ,12,4,,camem001,buhnj001,,30,71,CBCFX,neagd001,0,0,camem001 doubles. ,camem001,0,
+buhnj001 scores. camem001 to 3B. ,32,4,,,camem001,,31,77,CFBBBX,neagd001,1,1,belld002 hits sacrifice fly. ,belld002,0,
+,00,4,,,camem001,,32,78,X,neagd001,1,0,,wilsd001,0,F
+,30,4,,,,,33,44,BBBX,halaj001,0,1,justd001 homers. ,justd001,1,
+,00,4,,,,,34,45,X,halaj001,1,0,,hillg001,1,F
+,00,4,,bross001,,,35,46,X,halaj001,0,0,bross001 doubles. ,bross001,1,
+bross001 to 3B. ,21,4,,,bross001,,36,50,BFBX,halaj001,1,0,turnc001 grounds out. ,turnc001,1,G
+,11,4,,,bross001,,37,53,CBX,halaj001,1,0,vizcj001 grounds out. ,vizcj001,1,G
+,22,5,,,,,38,85,BCFBFFX,neagd001,1,0,hendr001 grounds out. ,hendr001,0,G
+,02,5,,,,,39,88,SFX,neagd001,1,0,guilc001 grounds out. ,guilc001,0,G
+,21,5,,,,,40,92,BCBX,neagd001,0,1,rodra001 homers. ,rodra001,0,
+,01,5,marte001,,,,41,94,FX,neagd001,0,0,marte001 singles. ,marte001,0,
+,00,5,marte001,,,,42,95,X,neagd001,1,0,,olerj001,0,L
+,01,5,,,,,43,55,CX,halaj001,1,0,,jeted001,1,F
+,21,5,,,,,44,59,FBBX,halaj001,1,0,,posaj001,1,F
+,11,5,,,,,45,62,CBX,halaj001,1,0,,oneip001,1,F
+,01,6,buhnj001,,,,46,97,SX,neagd001,0,0,buhnj001 singles. ,buhnj001,0,
+,22,6,buhnj001,,,,47,102,BBFCX,neagd001,1,0,,camem001,0,F
+buhnj001 to 2B. ,01,6,belld002,buhnj001,,,48,104,CX,neagd001,0,0,belld002 singles. ,belld002,0,
+,00,6,belld002,buhnj001,,,49,105,X,neagd001,1,0,,wilsd001,0,P
+buhnj001 to 3B. belld002 to 2B. ,32,6,hendr001,belld002,buhnj001,,50,111,CFBBBB,neagd001,0,0,hendr001 walks. ,hendr001,0,
+buhnj001 scores. belld002 scores. hendr001 scores. ,32,6,,,,,51,118,BBCBCFX,neagd001,0,4,guilc001 homers. ,guilc001,0,
+,00,6,rodra001,,,,52,119,X,neagd001,0,0,rodra001 singles. ,rodra001,0,
+rodra001 to 2B. ,30,6,marte001,rodra001,,,54,4,BBBH,grimj001,0,0,marte001 hit by pitch. ,marte001,0,
+,32,6,marte001,rodra001,,,55,10,BBBCFX,grimj001,1,0,,olerj001,0,F
+,10,6,,,,,56,64,BX,halaj001,1,0,willb002 grounds out. ,willb002,1,G
+,32,6,,,,,57,75,BFSFFBFBFFC,halaj001,1,0,justd001 strikes out. ,justd001,1,
+,20,6,,,,,58,78,BBX,halaj001,0,1,hillg001 homers. ,hillg001,1,
+,32,6,,,,,59,84,BCBCBX,halaj001,1,0,bross001 grounds out. ,bross001,1,G
+,10,7,,,,,61,2,BX,goodd001,0,1,buhnj001 homers. ,buhnj001,0,
+,10,7,,,,,62,4,BX,goodd001,1,0,,camem001,0,F
+,22,7,,,,,63,9,BCFBX,goodd001,1,0,belld002 grounds out. ,belld002,0,G
+,22,7,wilsd001,,,,64,14,CBFBX,goodd001,0,0,wilsd001 singles. ,wilsd001,0,
+,00,7,wilsd001,,,,65,15,X,goodd001,1,0,,hendr001,0,F
+,21,7,,,,,66,88,BBCX,halaj001,1,0,turnc001 grounds out. ,turnc001,1,G
+,12,7,vizcj001,,,,67,92,BSLX,halaj001,0,0,vizcj001 singles. ,vizcj001,1,
+vizcj001 to 2B. ,12,7,jeted001,vizcj001,,,68,98,CCFFBX,halaj001,0,0,jeted001 singles. ,jeted001,1,
+vizcj001 to 3B. jeted001 to 2B. ,31,7,posaj001,jeted001,vizcj001,,70,5,BBBCB,rhoda001,0,0,posaj001 walks. ,posaj001,1,
+vizcj001 scores. ,10,7,posaj001,jeted001,,,71,7,BX,rhoda001,1,1,oneip001 hits sacrifice fly. ,oneip001,1,
+,21,7,posaj001,jeted001,,,72,11,BBFX,rhoda001,1,0,,willb002,1,F
+,21,8,,,,,74,4,BFBX,nelsj001,1,0,guilc001 grounds out. ,guilc001,0,G
+,12,8,rodra001,,,,75,8,BCFX,nelsj001,0,0,rodra001 singles. ,rodra001,0,
+,22,8,,,,,76,14,BCFFBX,nelsj001,2,0,Double Play. ,marte001,0,
+,12,8,,,,,78,5,CFBFC,panij001,1,0,justd001 strikes out. ,justd001,1,
+,12,8,hillg001,,,,79,10,FSBFX,panij001,0,0,hillg001 singles. ,hillg001,1,
+hillg001 out. ,00,8,bross001,,,,80,11,X,panij001,1,0,bross001 reaches on fielder's choice. ,bross001,1,
+,02,8,bross001,,,,82,14,CCX,panij001,1,0,,martt002,1,L
+,22,9,,,,,86,7,BCCBFFC,stanm003,1,0,olerj001 strikes out. ,olerj001,0,
+,02,9,,,,,87,10,CSS,stanm003,1,0,buhnj001 strikes out. ,buhnj001,0,
+,21,9,,,,,88,14,BFBX,stanm003,1,0,,camem001,0,F
+,22,9,,,,,90,6,BCBSFS,sasak001,1,0,vizcj001 strikes out. ,vizcj001,1,
+,00,9,,,,,91,7,X,sasak001,1,0,jeted001 grounds out. ,jeted001,1,G
+,32,9,,,,,92,14,BFSBFBX,sasak001,0,1,posaj001 homers. ,posaj001,1,
+,00,9,,,,,93,15,X,sasak001,1,0,oneip001 grounds out. ,oneip001,1,G

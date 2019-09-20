@@ -1,0 +1,163 @@
+version,2
+info,visteam,MON
+info,hometeam,FLO
+info,site,MIA01
+info,date,2000/07/23
+info,number,0
+info,starttime,4:05PM
+info,daynight,day
+info,usedh,false
+info,umphome,welkb901
+info,ump1b,culbf901
+info,ump2b,froeb901
+info,ump3b,drakr901
+info,pitches,pitches
+info,temp,90
+info,winddir,ltor
+info,windspeed,9
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,215
+info,attendance,11307
+info,wp,vazqj001
+info,lp,sancj001
+info,save,stris001
+start,bradm001,"Milton Bradley",0,1,8
+start,guerw001,"Wilton Guerrero",0,2,9
+start,traca001,"Andy Tracy",0,3,3
+start,vidrj001,"Jose Vidro",0,4,4
+start,blumg001,"Geoff Blum",0,5,5
+start,seguf001,"Fernando Seguignol",0,6,7
+start,delat001,"Tomas De La Rosa",0,7,6
+start,websl001,"Lenny Webster",0,8,2
+start,vazqj001,"Javier Vazquez",0,9,1
+start,castl001,"Luis Castillo",1,1,4
+start,kotsm001,"Mark Kotsay",1,2,9
+start,smitm004,"Mark Smith",1,3,7
+start,wilsp002,"Preston Wilson",1,4,8
+start,lowem001,"Mike Lowell",1,5,5
+start,lee-d002,"Derrek Lee",1,6,3
+start,bergd002,"Dave Berg",1,7,6
+start,redmm001,"Mike Redmond",1,8,2
+start,sancj001,"Jesus Sanchez",1,9,1
+play,1,0,bradm001,00,X,D9/9D
+play,1,0,guerw001,10,BX,S3/BG3.2-2
+play,1,0,traca001,00,X,9/F9
+play,1,0,vidrj001,21,BCBX,FC1.2-3;1-2;B-1
+play,1,0,blumg001,21,BBFX,S9.3-H;2-3;1-2
+play,1,0,seguf001,10,BX,S9.3-H;2-3;1-2;BX1(93)
+play,1,0,delat001,11,CBX,53/G
+play,1,1,castl001,22,BFCBFFFX,S7.B-2(E7)
+play,1,1,kotsm001,01,CX,S5/BG5.2-3
+play,1,1,smitm004,02,CFX,6/P6
+play,1,1,wilsp002,02,SCFS,K
+play,1,1,lowem001,30,BBBB,W.1-2
+play,1,1,lee-d002,21,BFBX,S9.3-H;2-H;1-3;BX2(954)
+play,2,0,websl001,32,CBBBFX,8/F8
+play,2,0,vazqj001,11,CBX,S8/8S
+play,2,0,bradm001,10,BX,S9.1-2
+play,2,0,guerw001,11,FBX,3/P3
+play,2,0,traca001,21,SBBB,PB.2-3;1-2
+play,2,0,traca001,31,SBBBB,W
+play,2,0,vidrj001,12,FBFFS,K
+play,2,1,bergd002,22,FBFBX,9/F9
+play,2,1,redmm001,12,CSFFFFBFX,53/G
+play,2,1,sancj001,02,SFS,K
+play,3,0,blumg001,12,BCFX,9/F9
+play,3,0,seguf001,01,FX,HR/7
+play,3,0,delat001,20,BBX,S7
+play,3,0,websl001,11,CBX,S/78.1-3
+play,3,0,vazqj001,00,X,24/SH.1-2
+play,3,0,bradm001,22,BBCFS,K
+play,3,1,castl001,00,X,S5/BG5
+play,3,1,kotsm001,12,CCBX,53/G.1-2
+play,3,1,smitm004,32,BBFFBFB,W
+play,3,1,wilsp002,22,SBCBX,46(1)/FO.2-3
+play,3,1,lowem001,01,CX,53/G
+play,4,0,guerw001,22,FFBFBX,53/G
+play,4,0,traca001,00,,NP
+sub,fox-a001,"Andy Fox",1,2,9
+play,4,0,traca001,12,BSCS,K
+play,4,0,vidrj001,01,CX,S8/8S
+play,4,0,blumg001,20,BBX,8/F8
+play,4,1,lee-d002,12,CCBX,E6/TH1
+play,4,1,bergd002,11,CBX,7/F7
+play,4,1,redmm001,11,BCX,S9.1-3
+play,4,1,sancj001,12,BSSFFX,S9/9S.3-H(UR);1-3
+play,4,1,castl001,32,BBBCSS,K
+play,4,1,fox-a001,00,X,6(1)/FO/G
+play,5,0,seguf001,01,FX,4/P4
+play,5,0,delat001,32,CBBFBFX,8/F8D
+play,5,0,websl001,31,CBBBB,W
+play,5,0,vazqj001,12,CFBX,E5/TH.1-3;B-2
+play,5,0,bradm001,21,CBBX,S9.3-H(UR);2-H(UR)
+play,5,0,guerw001,00,C,SB2
+play,5,0,guerw001,11,CBX,D7.2-H(UR)
+play,5,0,traca001,30,BBBB,W
+play,5,0,vidrj001,32,SBFBBX,8/F8
+play,5,1,smitm004,32,CCBBBX,7/F7
+play,5,1,wilsp002,32,CBBCBX,D7/7D
+play,5,1,lowem001,30,BBBB,W
+play,5,1,lee-d002,11,CBX,64(1)3/GDP
+play,6,0,blumg001,12,CFBX,HR/7
+play,6,0,seguf001,32,BFBSFBX,S7
+play,6,0,delat001,00,,NP
+sub,millk005,"Kevin Millar",1,9,3
+play,6,0,delat001,00,,NP
+sub,miced001,"Dan Miceli",1,6,1
+play,6,0,delat001,21,BBCX,4/P4
+play,6,0,websl001,10,BX,9/F9
+play,6,0,vazqj001,12,BFCS,K
+play,6,1,bergd002,12,BCCS,K23
+play,6,1,redmm001,22,BSBFX,D9.B-3(E9)
+play,6,1,millk005,00,X,63/G.3-H(UR)
+play,6,1,castl001,00,X,63/G
+play,7,0,bradm001,00,X,13/G
+play,7,0,guerw001,01,CX,S9
+play,7,0,traca001,00,X,S8/8S.1-2
+play,7,0,vidrj001,32,BBCSBFFX,8/F8
+play,7,0,blumg001,02,CFFFX,6/P6
+play,7,1,fox-a001,00,,NP
+sub,bergp001,"Peter Bergeron",0,6,7
+play,7,1,fox-a001,00,,NP
+sub,blumg001,"Geoff Blum",0,5,3
+play,7,1,fox-a001,00,,NP
+sub,mordm001,"Mike Mordecai",0,9,5
+play,7,1,fox-a001,00,,NP
+sub,telfa001,"Anthony Telford",0,3,1
+play,7,1,fox-a001,01,CX,S9
+play,7,1,smitm004,01,CX,D/78D.1-H
+play,7,1,wilsp002,22,SCBBS,K
+play,7,1,lowem001,11,BFX,53/G
+play,7,1,miced001,00,,NP
+sub,gonza002,"Alex Gonzalez",1,6,11
+play,7,1,gonza002,11,CBX,S8.2-H
+play,7,1,bergd002,00,B,PB.1-2
+play,7,1,bergd002,00,,NP
+sub,stris001,"Scott Strickland",0,3,1
+play,7,1,bergd002,32,BFBFBB,W
+play,7,1,redmm001,22,BCSBS,K
+play,8,0,bergp001,00,,NP
+sub,loopb001,"Braden Looper",1,6,1
+play,8,0,bergp001,21,CBBX,13/G
+play,8,0,delat001,00,X,S
+play,8,0,websl001,01,SX,43/G.1-2
+play,8,0,mordm001,20,BBX,53/G
+play,8,1,millk005,00,,NP
+sub,widgc001,"Chris Widger",0,8,2
+play,8,1,millk005,32,BBFBSC,K/C
+play,8,1,castl001,32,SCFFBBFBX,63/G
+play,8,1,fox-a001,32,SFFBBBC,K/C
+play,9,0,bradm001,02,CCS,K
+play,9,0,guerw001,12,CCBFS,K
+play,9,0,stris001,22,BBFCFC,K/C
+play,9,1,smitm004,01,FX,6/P6
+play,9,1,wilsp002,12,CSBS,K
+play,9,1,lowem001,12,CFBX,9/F9
+data,er,vazqj001,2
+data,er,telfa001,2
+data,er,stris001,0
+data,er,sancj001,4
+data,er,miced001,0
+data,er,loopb001,0

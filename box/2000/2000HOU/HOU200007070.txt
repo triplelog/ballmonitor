@@ -1,0 +1,140 @@
+version,2
+info,visteam,KCA
+info,hometeam,HOU
+info,site,HOU03
+info,date,2000/07/07
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,scotd901
+info,ump1b,hudsm901
+info,ump2b,packs901
+info,ump3b,cedeg901
+info,pitches,pitches
+info,temp,72
+info,winddir,ltor
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,164
+info,attendance,36840
+info,wp,elars001
+info,lp,steib002
+info,save,
+start,damoj001,"Johnny Damon",0,1,8
+start,sancr001,"Rey Sanchez",0,2,6
+start,sweem002,"Mike Sweeney",0,3,3
+start,dye-j001,"Jermaine Dye",0,4,9
+start,quinm001,"Mark Quinn",0,5,7
+start,randj002,"Joe Randa",0,6,5
+start,fabrj001,"Jorge Fabregas",0,7,2
+start,ordal001,"Luis Ordaz",0,8,4
+start,steib002,"Blake Stein",0,9,1
+start,lugoj001,"Julio Lugo",1,1,6
+start,biggc001,"Craig Biggio",1,2,4
+start,bagwj001,"Jeff Bagwell",1,3,3
+start,berkl001,"Lance Berkman",1,4,9
+start,aloum001,"Moises Alou",1,5,7
+start,hidar001,"Richard Hidalgo",1,6,8
+start,melum001,"Mitch Meluskey",1,7,2
+start,trubc001,"Chris Truby",1,8,5
+start,elars001,"Scott Elarton",1,9,1
+play,1,0,damoj001,02,CLX,7/F7D
+play,1,0,sancr001,10,BX,4/L4
+play,1,0,sweem002,02,CFS,K
+play,1,1,lugoj001,12,CFBX,43/G
+play,1,1,biggc001,21,BBCX,9/L9
+play,1,1,bagwj001,32,CSBBBFFS,K
+play,2,0,dye-j001,12,CSBX,8/F8
+play,2,0,quinm001,11,BFX,3/L3
+play,2,0,randj002,32,CBBSBB,W
+play,2,0,fabrj001,11,FBX,8/F8
+play,2,1,berkl001,12,FFBC,K/C
+play,2,1,aloum001,32,BBFBSFX,63/G
+play,2,1,hidar001,11,FBH,HP
+play,2,1,melum001,21,BCBB,CS2(26)
+play,3,0,ordal001,12,CBCS,K
+play,3,0,steib002,12,CBSC,K/C
+play,3,0,damoj001,31,BBCBB,W
+play,3,0,sancr001,22,BFBCS,K
+play,3,1,melum001,21,FBBX,63/G
+play,3,1,trubc001,00,X,63/G
+play,3,1,elars001,01,CX,S7/7S
+play,3,1,lugoj001,22,BFFFBX,D7/7D.1-3
+play,3,1,biggc001,12,BCFB,WP.3-H;2-3
+play,3,1,biggc001,32,BCFBFBX,HR/7.3-H
+play,3,1,bagwj001,32,CBBFBX,5/L5
+play,4,0,sweem002,02,LFX,43/G
+play,4,0,dye-j001,02,CFFX,8/F8
+play,4,0,quinm001,32,SFBFBBC,K/C
+play,4,1,berkl001,32,SFFBBBB,W
+play,4,1,aloum001,01,FX,9/F9D
+play,4,1,hidar001,20,BBX,8/F8S
+play,4,1,melum001,00,X,S8.1-2
+play,4,1,trubc001,02,SCS,K
+com,"$the roof was opened"
+play,5,0,randj002,00,X,63/G
+play,5,0,fabrj001,10,BX,HR/9
+play,5,0,ordal001,02,CCS,K
+play,5,0,steib002,12,BSCS,K
+play,5,1,elars001,31,FBBBX,S9/9S
+play,5,1,lugoj001,00,X,S1/BG1.1-2
+play,5,1,biggc001,22,CSBBX,5(2)/FO.1-2
+play,5,1,bagwj001,01,CX,HR/7.2-H;1-H
+play,5,1,berkl001,31,CBBBB,W
+play,5,1,aloum001,22,BSBFS,K
+play,5,1,hidar001,12,CSBB,SB2
+play,5,1,hidar001,32,CSBBBC,K/C
+play,6,0,damoj001,12,CBFX,7/F7
+play,6,0,sancr001,02,CCC,K/C
+play,6,0,sweem002,10,BX,3/FL
+play,6,1,melum001,00,,NP
+sub,damij002,"Jeff D'Amico",0,9,1
+play,6,1,melum001,11,CBX,HR/7
+play,6,1,trubc001,01,FX,9/F9D
+play,6,1,elars001,00,X,63/G
+play,6,1,lugoj001,11,BSX,63/G
+play,7,0,dye-j001,01,SX,S7/7S
+play,7,0,quinm001,00,X,31/G.1-2
+play,7,0,randj002,22,FFFBBX,13/G.2-3
+play,7,0,fabrj001,12,CFFBX,9/F9
+play,7,1,biggc001,32,BCSBBB,W
+play,7,1,bagwj001,31,SBBBB,W.1-2
+play,7,1,berkl001,11,FBX,S9/9S.2-H;1-2;BX2(4)#
+play,7,1,aloum001,31,BBBCX,53/G
+play,7,1,hidar001,32,BBBCSX,D7.2-H
+play,7,1,melum001,22,FBSBX,63/G
+play,8,0,ordal001,00,,NP
+sub,wardd002,"Daryle Ward",1,3,3
+play,8,0,ordal001,00,,NP
+sub,bogat001,"Tim Bogar",1,2,4
+play,8,0,ordal001,00,X,S8
+play,8,0,damij002,00,,NP
+sub,dunwt001,"Todd Dunwoody",0,9,11
+play,8,0,dunwt001,22,CFBBFFX,E4/G.1-3
+play,8,0,damoj001,11,CBX,6(1)/FO/G.3-H(UR);B-2(E6/TH1)
+play,8,0,sancr001,32,BFFBBX,E6/G
+play,8,0,sweem002,00,X,S8.2-3;1-2
+play,8,0,dye-j001,00,,NP
+sub,valdm001,"Marc Valdes",1,9,1
+play,8,0,dye-j001,11,BCX,8/SF.3-H(UR);2-3
+play,8,0,quinm001,00,B,DI.1-2
+play,8,0,quinm001,11,BFX,S7.3-H(UR);2-H(UR)
+play,8,0,randj002,12,FBCS,K
+play,8,1,trubc001,00,,NP
+sub,santj002,"Jose Santiago",0,9,1
+play,8,1,trubc001,10,BX,63/G
+play,8,1,valdm001,22,BBFCS,K
+play,8,1,lugoj001,12,CSFBC,K/C
+play,9,0,fabrj001,01,CX,S7
+play,9,0,ordal001,00,X,46(1)3/GDP
+play,9,0,santj002,00,,NP
+sub,poses001,"Scott Pose",0,9,11
+play,9,0,poses001,22,BBCFS,K
+data,er,steib002,6
+data,er,damij002,3
+data,er,santj002,0
+data,er,elars001,1
+data,er,valdm001,0

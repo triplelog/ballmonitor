@@ -1,0 +1,210 @@
+version,2
+info,visteam,CIN
+info,hometeam,LAN
+info,site,LOS03
+info,date,2000/05/22
+info,number,0
+info,starttime,7:10PM
+info,daynight,night
+info,usedh,false
+info,umphome,iassd901
+info,ump1b,hirsm901
+info,ump2b,bellw901
+info,ump3b,onorb901
+info,pitches,pitches
+info,temp,74
+info,winddir,ltor
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,275
+info,attendance,31000
+info,wp,hergm001
+info,lp,aybam001
+info,save,
+start,reesp001,"Pokey Reese",0,1,4
+start,larkb001,"Barry Larkin",0,2,6
+start,grifk002,"Ken Griffey",0,3,8
+start,yound001,"Dmitri Young",0,4,7
+start,bichd001,"Dante Bichette",0,5,9
+start,cases001,"Sean Casey",0,6,3
+start,taube001,"Eddie Taubensee",0,7,2
+start,boona001,"Aaron Boone",0,8,5
+start,neagd001,"Denny Neagle",0,9,1
+start,santf001,"F.P. Santangelo",1,1,8
+start,grudm001,"Mark Grudzielanek",1,2,4
+start,grees001,"Shawn Green",1,3,9
+start,shefg001,"Gary Sheffield",1,4,7
+start,karre001,"Eric Karros",1,5,3
+start,belta001,"Adrian Beltre",1,6,5
+start,hundt001,"Todd Hundley",1,7,2
+start,elstk001,"Kevin Elster",1,8,6
+start,dreid001,"Darren Dreifort",1,9,1
+play,1,0,reesp001,20,BBX,63/G
+play,1,0,larkb001,12,BFFX,53/G
+play,1,0,grifk002,12,CSBS,K
+play,1,1,santf001,10,BX,7/L7
+play,1,1,grudm001,00,X,9/F9
+play,1,1,grees001,21,CBBX,HR/9
+play,1,1,shefg001,32,BCSBBX,9/F9
+play,2,0,yound001,20,BBX,7/F7
+play,2,0,bichd001,11,BCX,13/G
+play,2,0,cases001,21,BBFX,9/F9
+play,2,1,karre001,21,CBBX,HR/7
+play,2,1,belta001,22,CFBBX,8/F8
+play,2,1,hundt001,32,CBBBSFB,W
+play,2,1,elstk001,10,BX,9/F9
+play,2,1,dreid001,02,SSC,K/C
+play,3,0,taube001,32,BSFBBFX,S9/9S
+play,3,0,boona001,31,BBBCX,8/F8
+play,3,0,neagd001,10,BX,26(1)/FO
+play,3,0,reesp001,31,BBBCX,E6/TH.1-2
+play,3,0,larkb001,00,X,9/F9
+play,3,1,santf001,10,BX,7/F7
+play,3,1,grudm001,10,BX,3/G
+play,3,1,grees001,22,BCFFBS,K
+play,4,0,grifk002,02,CFX,31/G
+play,4,0,yound001,00,X,3/G
+play,4,0,bichd001,00,X,S7
+play,4,0,cases001,21,BBFX,7/F7
+play,4,1,shefg001,21,SBBX,53/G
+play,4,1,karre001,11,BCX,3/P3
+play,4,1,belta001,00,X,4/P4
+play,5,0,taube001,00,X,53/G
+play,5,0,boona001,01,CX,43/G
+play,5,0,neagd001,12,SFBC,K/C
+play,5,1,hundt001,11,BCX,5/L5
+play,5,1,elstk001,00,X,7/F7
+play,5,1,dreid001,22,FSBBS,K
+play,6,0,reesp001,02,CSX,S8
+play,6,0,larkb001,00,B,BK.1-2
+play,6,0,larkb001,10,BX,S7.2-H
+play,6,0,grifk002,32,BCBFFFBS,K+SB2
+play,6,0,yound001,10,BX,43/G.2-3
+play,6,0,bichd001,01,FX,43/G
+play,6,1,santf001,01,CX,53/G
+play,6,1,grudm001,22,CBCFBX,S8
+play,6,1,grees001,12,BFFFX,S9.1-2
+play,6,1,shefg001,21,BBCX,64(1)3/GDP
+play,7,0,cases001,12,BSFC,K/C
+play,7,0,taube001,22,CCBFBX,6/L6
+play,7,0,boona001,00,X,7/F7
+play,7,1,karre001,00,X,8/F8
+play,7,1,belta001,10,BX,7/F7
+play,7,1,hundt001,22,CSBFBS,K
+play,8,0,neagd001,00,,NP
+sub,tuckm001,"Michael Tucker",0,9,11
+play,8,0,tuckm001,01,CX,HR/8
+play,8,0,reesp001,00,X,D7/7D
+play,8,0,larkb001,00,X,2/FL
+play,8,0,grifk002,20,BBX,9/F9
+play,8,0,yound001,21,CBBS,SB3
+play,8,0,yound001,22,CBBSX,7/F7
+play,8,1,elstk001,00,,NP
+sub,tuckm001,"Michael Tucker",0,9,7
+play,8,1,elstk001,00,,NP
+sub,wills002,"Scott Williamson",0,4,1
+play,8,1,elstk001,02,SSC,K/C
+play,8,1,dreid001,00,,NP
+sub,hansd001,"Dave Hansen",1,9,11
+play,8,1,hansd001,22,SBCBFX,6/P6
+play,8,1,santf001,00,,NP
+sub,hollt001,"Todd Hollandsworth",1,1,11
+play,8,1,hollt001,11,CBX,6/P6
+play,9,0,bichd001,00,,NP
+sub,hollt001,"Todd Hollandsworth",1,1,8
+play,9,0,bichd001,00,,NP
+sub,adamt001,"Terry Adams",1,9,1
+play,9,0,bichd001,32,FFBFBFBS,K
+play,9,0,cases001,00,X,13/G
+play,9,0,taube001,10,BX,43/G
+play,9,1,grudm001,22,BBCFX,S9
+play,9,1,grees001,20,BBX,9/F9
+play,9,1,shefg001,12,CCBS,K
+play,9,1,karre001,22,FBBFS,K
+play,10,0,boona001,10,BX,9/F9
+play,10,0,tuckm001,31,BBBCX,3/G
+play,10,0,reesp001,11,CBX,8/F8
+play,10,1,belta001,00,,NP
+sub,ochoa001,"Alex Ochoa",0,4,7
+play,10,1,belta001,00,,NP
+sub,sulls001,"Scott Sullivan",0,9,1
+play,10,1,belta001,32,BBCFFFBC,K/C
+play,10,1,hundt001,20,BBX,S9
+play,10,1,elstk001,11,BCX,D/78D.1-3
+play,10,1,adamt001,00,,NP
+sub,vizcj001,"Jose Vizcaino",1,9,11
+play,10,1,vizcj001,30,IIII,IW
+play,10,1,hollt001,00,,NP
+sub,gravd001,"Danny Graves",0,9,1
+play,10,1,hollt001,11,CBX,12(3)3/GDP
+play,11,0,larkb001,00,,NP
+sub,shawj001,"Jeff Shaw",1,9,1
+play,11,0,larkb001,20,BBX,4/P4
+play,11,0,grifk002,00,X,7/F7
+play,11,0,ochoa001,00,X,S
+play,11,0,bichd001,10,BS,SB2
+play,11,0,bichd001,12,BSSX,D7.2-H
+play,11,0,cases001,22,BFBFS,K
+play,11,1,grudm001,31,BBFBB,W
+play,11,1,grees001,00,X,S8.1-3
+play,11,1,shefg001,31,BBBCB,W.1-2
+play,11,1,karre001,10,BX,8/SF.3-H
+play,11,1,belta001,21,BBFX,54(1)3/GDP
+play,12,0,taube001,00,,NP
+sub,berrg001,"Geronimo Berroa",1,4,7
+play,12,0,taube001,21,BFBX,S9
+play,12,0,boona001,02,LLC,K/C
+play,12,0,gravd001,00,,NP
+sub,morrh001,"Hal Morris",0,9,11
+play,12,0,morrh001,20,BBX,13/G.1-2
+play,12,0,reesp001,32,BCBBSB,W
+play,12,0,larkb001,31,BBCBX,4/L4
+play,12,1,hundt001,00,,NP
+sub,desse001,"Elmer Dessens",0,9,1
+play,12,1,hundt001,22,CBFBFX,63/G
+play,12,1,elstk001,32,CBFBFBS,K
+play,12,1,shawj001,00,,NP
+sub,perec001,"Carlos Perez",1,9,11
+play,12,1,perec001,12,SFBC,K/C
+play,13,0,grifk002,00,,NP
+sub,hergm001,"Matt Herges",1,9,1
+play,13,0,grifk002,11,BCX,63/G
+play,13,0,ochoa001,10,BX,63/G
+play,13,0,bichd001,00,X,4/P4
+play,13,1,hollt001,21,BBFX,8/F8
+play,13,1,grudm001,22,CFFFBBX,S9.B-2(E9)
+play,13,1,grees001,30,IIII,IW
+play,13,1,berrg001,22,CSBBS,K
+play,13,1,karre001,11,FBB,WP.2-3;1-2
+play,13,1,karre001,32,FBBBFFB,W
+play,13,1,belta001,00,X,9/F9
+play,14,0,cases001,02,CSS,K
+play,14,0,taube001,21,FBBX,43/G
+play,14,0,boona001,00,X,S7/7S
+play,14,0,desse001,00,C,SB2
+play,14,0,desse001,00,,NP
+sub,stync001,"Chris Stynes",0,9,11
+play,14,0,stync001,01,CX,23/G
+play,14,1,hundt001,00,,NP
+sub,aybam001,"Manny Aybar",0,9,1
+play,14,1,hundt001,31,BBBCB,W
+play,14,1,elstk001,00,X,3/SH.1-2
+play,14,1,hergm001,00,,NP
+sub,kreuc001,"Chad Kreuter",1,9,11
+play,14,1,kreuc001,01,SB,WP.2-3
+play,14,1,kreuc001,32,SBCBFFFFFBFB,W
+play,14,1,hollt001,01,SS,WP.1-2
+play,14,1,hollt001,32,SSIIII,IW
+play,14,1,grudm001,00,X,E2/G.3-H(UR)(NR);2-3;1-2
+data,er,neagd001,2
+data,er,wills002,0
+data,er,sulls001,0
+data,er,gravd001,1
+data,er,desse001,0
+data,er,aybam001,0
+data,er,dreid001,2
+data,er,adamt001,0
+data,er,shawj001,1
+data,er,hergm001,0

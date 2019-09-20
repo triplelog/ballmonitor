@@ -1,0 +1,181 @@
+version,2
+info,visteam,SFN
+info,hometeam,HOU
+info,site,HOU03
+info,date,2000/06/24
+info,number,0
+info,starttime,3:05PM
+info,daynight,day
+info,usedh,false
+info,umphome,froeb901
+info,ump1b,wintm901
+info,ump2b,welkb901
+info,ump3b,culbf901
+info,pitches,pitches
+info,temp,75
+info,winddir,unknown
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,223
+info,attendance,42708
+info,wp,nathj001
+info,lp,reyns001
+info,save,
+start,benam001,"Marvin Benard",0,1,8
+start,muelb001,"Bill Mueller",0,2,5
+start,bondb001,"Barry Bonds",0,3,7
+start,kentj001,"Jeff Kent",0,4,4
+start,snowj001,"J.T. Snow",0,5,3
+start,burke001,"Ellis Burks",0,6,9
+start,martr003,"Ramon E. Martinez",0,7,6
+start,mirad001,"Doug Mirabelli",0,8,2
+start,nathj001,"Joe Nathan",0,9,1
+start,spieb001,"Bill Spiers",1,1,4
+start,barkg001,"Glen Barker",1,2,8
+start,bagwj001,"Jeff Bagwell",1,3,3
+start,berkl001,"Lance Berkman",1,4,9
+start,aloum001,"Moises Alou",1,5,7
+start,melum001,"Mitch Meluskey",1,6,2
+start,lugoj001,"Julio Lugo",1,7,6
+start,trubc001,"Chris Truby",1,8,5
+start,reyns001,"Shane Reynolds",1,9,1
+play,1,0,benam001,01,CX,43/G
+play,1,0,muelb001,11,CBX,7/F7S
+play,1,0,bondb001,30,BBBB,W
+play,1,0,kentj001,01,CX,S9.1-3
+play,1,0,snowj001,12,BCSC,K/C
+play,1,1,spieb001,11,BCX,4/P4
+play,1,1,barkg001,12,SBCS,K
+play,1,1,bagwj001,32,BBCFBC,K/C
+play,2,0,burke001,11,CBX,T8/8D
+play,2,0,martr003,32,CBBBCX,S8.3-H
+play,2,0,mirad001,32,BCCBBS,K
+play,2,0,nathj001,00,X,34/SH.1-2
+play,2,0,benam001,01,SX,3/G
+play,2,1,berkl001,12,BFFX,9/F9
+play,2,1,aloum001,00,X,S7
+play,2,1,melum001,12,CFBX,S7.1-2
+play,2,1,lugoj001,21,SBBX,8/F8D.2-3;1-2
+play,2,1,trubc001,10,BX,3/FL
+play,3,0,muelb001,02,CFX,S7
+play,3,0,bondb001,01,CX,8/F8
+play,3,0,kentj001,01,FX,S8.1-2
+play,3,0,snowj001,32,CFBBFBB,W.2-3;1-2
+play,3,0,burke001,00,X,E5/G.3-H;2-3;1-2
+play,3,0,martr003,02,CSX,D7.3-H;2-H;1-3
+play,3,0,mirad001,10,BX,HR/9.3-H(UR);2-H
+play,3,0,nathj001,22,BBCSS,K
+play,3,0,benam001,22,CBCBFX,S
+play,3,0,muelb001,21,SBBX,S9.1-2
+play,3,0,bondb001,31,BFBBB,W.2-3;1-2
+play,3,0,kentj001,12,FFBX,S7.3-H(UR);2-3;1-2
+play,3,0,snowj001,00,,NP
+sub,maddm002,"Mike Maddux",1,9,1
+play,3,0,snowj001,02,FCFFC,K/C
+play,3,1,maddm002,12,BCCS,K
+play,3,1,spieb001,31,BBBCB,W
+play,3,1,barkg001,00,X,53/G.1-2
+play,3,1,bagwj001,31,BBBCB,W
+play,3,1,berkl001,22,BCBFX,43/G
+play,4,0,burke001,20,BBX,HR/7
+play,4,0,martr003,00,X,S7
+play,4,0,mirad001,01,CX,S9.1-3
+play,4,0,nathj001,11,FBX,9/SF.3-H
+play,4,0,benam001,10,BX,8/F8
+play,4,0,muelb001,11,BCX,43/G
+play,4,1,aloum001,00,,NP
+sub,benam001,"Marvin Benard",0,1,9
+play,4,1,aloum001,00,,NP
+sub,murrc001,"Calvin Murray",0,6,8
+play,4,1,aloum001,32,BFBFBX,S7/7D
+play,4,1,melum001,20,BBX,7/L7
+play,4,1,lugoj001,01,FX,S9.1-3
+play,4,1,trubc001,21,BFBX,S9.3-H;1-2
+play,4,1,maddm002,00,,NP
+sub,miesm001,"Matt Mieske",1,9,11
+play,4,1,miesm001,01,CX,8/F8
+play,4,1,spieb001,31,BBCBB,W.2-3;1-2
+play,4,1,barkg001,00,X,31/G
+play,5,0,bondb001,00,,NP
+sub,cabrj001,"Jose Cabrera",1,9,1
+play,5,0,bondb001,00,X,7/F7D
+play,5,0,kentj001,22,BFCBX,D/89D
+play,5,0,snowj001,12,SBCFS,K
+play,5,0,murrc001,01,CX,3/FL
+play,5,1,bagwj001,30,BBBB,W
+play,5,1,berkl001,11,CBX,S9.1-2
+play,5,1,aloum001,11,BSX,S7/7D.2-H;1-2
+play,5,1,melum001,21,BCBX,7/F78S
+play,5,1,lugoj001,21,CBBX,S8.2-3;1-2
+play,5,1,trubc001,00,X,D7.3-H;2-H;1-3
+play,5,1,cabrj001,00,,NP
+sub,wardd002,"Daryle Ward",1,9,11
+play,5,1,wardd002,32,BCBBSFFS,K
+play,5,1,spieb001,22,BFCBFFS,K
+play,6,0,martr003,00,,NP
+sub,valdm001,"Marc Valdes",1,9,1
+play,6,0,martr003,10,BX,8/F8
+play,6,0,mirad001,12,CBCX,D7
+play,6,0,nathj001,10,BX,63/G.2-3
+play,6,0,benam001,32,CBBBCB,W
+play,6,0,muelb001,10,BX,S7.3-H;1-2
+play,6,0,bondb001,12,CFBX,3/G
+play,6,1,barkg001,22,BBFSFX,9/F9
+play,6,1,bagwj001,00,X,53/G
+play,6,1,berkl001,20,BBX,43/G
+play,7,0,kentj001,32,CFBBFBX,7/F7
+play,7,0,snowj001,01,CX,S7/7S
+play,7,0,murrc001,12,BFFX,8/F8
+play,7,0,martr003,10,BX,54(1)/FO
+play,7,1,aloum001,00,,NP
+sub,johnj006,"John Johnstone",0,9,1
+play,7,1,aloum001,00,X,S7
+play,7,1,melum001,12,FFBX,S9.1-2
+play,7,1,lugoj001,22,BBCCFX,16(1)3/GDP.2-3
+play,7,1,trubc001,10,BX,8/F89D
+play,8,0,mirad001,10,BX,D9
+play,8,0,johnj006,00,,NP
+sub,cresf001,"Felipe Crespo",0,9,11
+play,8,0,cresf001,00,X,S8/8S.2-3
+play,8,0,benam001,31,BCBBX,S7.3-H;1-2
+play,8,0,muelb001,00,,NP
+sub,slusj001,"Joe Slusarski",1,9,1
+play,8,0,muelb001,00,X,46(1)3/GDP.2-3
+play,8,0,bondb001,32,SSBBBB,W
+play,8,0,kentj001,20,BBX,8/F8
+play,8,1,slusj001,00,,NP
+sub,cresf001,"Felipe Crespo",0,9,7
+play,8,1,slusj001,00,,NP
+sub,embra001,"Alan Embree",0,3,1
+play,8,1,slusj001,00,,NP
+sub,euset001,"Tony Eusebio",1,9,11
+play,8,1,euset001,32,BFFFBFFBS,K
+play,8,1,spieb001,22,BFBFFFX,S8
+play,8,1,barkg001,22,BBFFS,K
+play,8,1,bagwj001,11,FBX,9/L9
+play,9,0,snowj001,00,,NP
+sub,bogat001,"Tim Bogar",1,9,1
+play,9,0,snowj001,00,X,HR/9
+play,9,0,murrc001,21,BFBX,63/G
+play,9,0,martr003,32,BBFBFFB,W
+play,9,0,mirad001,00,X,D/78.1-3
+play,9,0,cresf001,12,BSSS,K
+play,9,0,benam001,10,BX,9/F9
+play,9,1,berkl001,00,,NP
+sub,fulta001,"Aaron Fultz",0,3,1
+play,9,1,berkl001,12,BFSS,K
+play,9,1,aloum001,00,X,8/F8
+play,9,1,melum001,31,BBCBB,W
+play,9,1,lugoj001,22,BFSBFS,K
+data,er,nathj001,4
+data,er,johnj006,0
+data,er,embra001,0
+data,er,fulta001,0
+data,er,reyns001,6
+data,er,maddm002,2
+data,er,cabrj001,0
+data,er,valdm001,2
+data,er,slusj001,0
+data,er,bogat001,1

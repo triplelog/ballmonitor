@@ -1,0 +1,200 @@
+version,2
+info,visteam,LAN
+info,hometeam,SLN
+info,site,STL09
+info,date,2000/06/23
+info,number,0
+info,starttime,7:10PM
+info,daynight,night
+info,usedh,false
+info,umphome,wendh902
+info,ump1b,clara901
+info,ump2b,buckc901
+info,ump3b,reedr901
+info,pitches,pitches
+info,temp,90
+info,winddir,rtol
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,247
+info,attendance,48395
+info,wp,stecg001
+info,lp,shawj001
+info,save,
+start,hollt001,"Todd Hollandsworth",0,1,8
+start,grudm001,"Mark Grudzielanek",0,2,4
+start,shefg001,"Gary Sheffield",0,3,7
+start,grees001,"Shawn Green",0,4,9
+start,karre001,"Eric Karros",0,5,3
+start,belta001,"Adrian Beltre",0,6,5
+start,kreuc001,"Chad Kreuter",0,7,2
+start,coraa001,"Alex Cora",0,8,6
+start,parkc002,"Chan Ho Park",0,9,1
+start,dunss001,"Shawon Dunston",1,1,6
+start,drewj001,"J.D. Drew",1,2,9
+start,edmoj001,"Jim Edmonds",1,3,8
+start,mcgwm001,"Mark McGwire",1,4,3
+start,lankr001,"Ray Lankford",1,5,7
+start,paquc001,"Craig Paquette",1,6,5
+start,mathm001,"Mike Matheny",1,7,2
+start,polap001,"Placido Polanco",1,8,4
+start,benea001,"Andy Benes",1,9,1
+com,"rain delays of 22 minutes in the 11th and 19 minutes"
+com,"in the 12th"
+play,1,0,hollt001,02,CFS,K
+play,1,0,grudm001,11,BFX,8/F8
+play,1,0,shefg001,00,X,HR/78
+play,1,0,grees001,12,CCBC,K/C
+play,1,1,dunss001,31,BBBCB,W
+play,1,1,drewj001,30,BBBB,W.1-2
+play,1,1,edmoj001,32,BBCBSFFFB,W.2-3;1-2
+play,1,1,mcgwm001,21,BSBX,S7.3-H;2-H;1-2
+play,1,1,lankr001,12,FBCX,64(1)3/GDP.2-3
+play,1,1,paquc001,32,FSBBBB,W
+play,1,1,mathm001,00,X,53/G
+play,2,0,karre001,12,CBFS,K
+play,2,0,belta001,21,BBSX,HR/7
+play,2,0,kreuc001,32,BBFSBB,W
+play,2,0,coraa001,22,CBSBS,K
+play,2,0,parkc002,32,SBBFFFBX,S8.1-2
+play,2,0,hollt001,31,CBBBX,5/FL
+play,2,1,polap001,11,BFX,143/G
+play,2,1,benea001,12,FCBS,K
+play,2,1,dunss001,02,CSS,K
+play,3,0,grudm001,22,BBCSC,K/C
+play,3,0,shefg001,32,BCSBFBB,W
+play,3,0,grees001,00,X,3(B)6(1)/GDP
+play,3,1,drewj001,11,CBX,5/FL
+play,3,1,edmoj001,20,BBX,S9
+play,3,1,mcgwm001,00,X,5/P5
+play,3,1,lankr001,02,FSS,K
+play,4,0,karre001,21,BBCX,2/FL
+play,4,0,belta001,01,FX,D7
+play,4,0,kreuc001,32,BCBFBB,W
+play,4,0,coraa001,12,SBSS,K
+play,4,0,parkc002,11,BFX,S9.2XH(92);1-2
+play,4,1,paquc001,11,BSX,53/G
+play,4,1,mathm001,00,X,53/G
+play,4,1,polap001,21,CBBX,4/P4
+play,5,0,hollt001,22,BCBFX,8/F8S
+play,5,0,grudm001,00,X,43/G
+play,5,0,shefg001,32,BBBCCX,13/G
+play,5,1,benea001,02,CFS,K
+play,5,1,dunss001,30,BBBB,W
+play,5,1,drewj001,21,BCBX,HR/78.1-H
+play,5,1,edmoj001,10,BX,8/F8D
+play,5,1,mcgwm001,22,BFBFC,K/C
+play,6,0,grees001,00,,NP
+sub,rente001,"Edgar Renteria",1,1,6
+play,6,0,grees001,22,FBFBC,K/C
+play,6,0,karre001,00,X,9/F9S
+play,6,0,belta001,22,CSBBX,4/L4
+play,6,1,lankr001,22,CBCBX,31/G
+play,6,1,paquc001,10,BX,D7
+play,6,1,mathm001,02,SFS,K
+play,6,1,polap001,01,FX,63/G
+play,7,0,kreuc001,12,BSCS,K
+play,7,0,coraa001,02,CSS,K
+play,7,0,parkc002,00,,NP
+sub,santf001,"F.P. Santangelo",0,9,11
+play,7,0,santf001,22,SCBBS,K
+play,7,1,benea001,00,,NP
+sub,davie001,"Eric Davis",1,9,11
+play,7,1,davie001,00,,NP
+sub,masao001,"Onan Masaoka",0,9,1
+play,7,1,davie001,31,CBBBB,W
+play,7,1,rente001,12,LLFBX,54(1)3/GDP
+play,7,1,drewj001,30,BBBB,W
+play,7,1,edmoj001,11,CBB,SB2
+play,7,1,edmoj001,22,CBBFS,K
+play,8,0,hollt001,00,,NP
+sub,morrm001,"Matt Morris",1,9,1
+play,8,0,hollt001,01,LX,D8/8D
+play,8,0,grudm001,00,X,S9.2-3
+play,8,0,shefg001,32,BCBCBX,4/FL
+play,8,0,grees001,20,BBX,HR/78.3-H;1-H
+play,8,0,karre001,00,X,53/G
+play,8,0,belta001,20,BBX,6/L6
+play,8,1,mcgwm001,00,,NP
+sub,hergm001,"Matt Herges",0,9,1
+play,8,1,mcgwm001,11,BFX,HR/8
+play,8,1,lankr001,12,FBSS,K
+play,8,1,paquc001,10,BX,63/G
+play,8,1,mathm001,02,CFS,K
+play,9,0,kreuc001,32,SBSBBB,W
+play,9,0,coraa001,00,,NP
+sub,lodup001,"Paul LoDuca",0,7,12
+play,9,0,coraa001,00,X,14/SH.1-2
+play,9,0,hergm001,00,,NP
+sub,hansd001,"Dave Hansen",0,9,11
+play,9,0,hansd001,32,FBBFBX,13/G.2-3
+play,9,0,hollt001,22,BCFBX,3/G
+play,9,1,polap001,00,,NP
+sub,lodup001,"Paul LoDuca",0,7,2
+play,9,1,polap001,00,,NP
+sub,fettm001,"Mike Fetters",0,9,1
+play,9,1,polap001,22,CBBSS,K
+play,9,1,morrm001,00,,NP
+sub,howat001,"Thomas Howard",1,9,11
+play,9,1,howat001,01,CX,43/G
+play,9,1,rente001,31,FBBBB,W
+play,9,1,drewj001,12,BSSS,K
+play,10,0,grudm001,00,,NP
+sub,vered001,"Dave Veres",1,9,1
+play,10,0,grudm001,32,BBCFBX,53/G
+play,10,0,shefg001,31,BBBCB,W
+play,10,0,grees001,31,BBFBB,W.1-2
+play,10,0,karre001,02,CSS,K
+play,10,0,belta001,21,BBCX,5(2)/FO.1-2
+play,10,1,edmoj001,00,,NP
+sub,leyrj001,"Jim Leyritz",0,9,3
+play,10,1,edmoj001,00,,NP
+sub,osuna002,"Antonio Osuna",0,5,1
+play,10,1,edmoj001,31,BCBBB,W
+play,10,1,mcgwm001,10,BX,8/F8
+play,10,1,lankr001,32,BSBBFB,W.1-2
+play,10,1,paquc001,00,X,7/F7
+play,10,1,mathm001,02,SSFS,K
+play,11,0,lodup001,01,CX,HR/7
+play,11,0,coraa001,22,FFFBBFX,D9
+play,11,0,leyrj001,00,,NP
+sub,suttl001,"Larry Sutton",1,9,7
+play,11,0,leyrj001,00,,NP
+sub,stecg001,"Gene Stechschulte",1,5,1
+play,11,0,leyrj001,30,BBBB,W
+play,11,0,hollt001,01,SB,PB.2-3;1-2
+play,11,0,hollt001,22,SBFBS,K
+play,11,0,grudm001,12,SBFX,FC6.3XH(96);2-3;B-1
+play,11,0,shefg001,01,FX,4/P4
+play,11,1,polap001,00,,NP
+sub,gilbs001,"Shawn Gilbert",0,5,7
+play,11,1,polap001,00,,NP
+sub,shawj001,"Jeff Shaw",0,3,1
+play,11,1,polap001,00,X,S9/9S
+play,11,1,suttl001,00,X,13/SH.1-2
+play,11,1,rente001,20,BBX,9/F9
+play,11,1,drewj001,31,BCBBX,S9.2-H;BX2(94)#
+play,12,0,grees001,12,CBFFX,43/G
+play,12,0,gilbs001,20,BBX,9/F9
+play,12,0,belta001,30,BBBB,W
+play,12,0,lodup001,22,BFBFX,13/G
+play,12,1,edmoj001,00,X,D7
+play,12,1,mcgwm001,30,IIII,IW
+play,12,1,stecg001,00,,NP
+sub,marre001,"Eli Marrero",1,5,11
+play,12,1,marre001,11,LBX,25(2)/FO.1-2
+play,12,1,paquc001,00,,NP
+sub,jamem001,"Mike James",1,4,12
+play,12,1,paquc001,22,BFBFFX,HR/78.2-H;1-H
+data,er,parkc002,4
+data,er,masao001,0
+data,er,hergm001,1
+data,er,fettm001,0
+data,er,osuna002,0
+data,er,shawj001,4
+data,er,benea001,2
+data,er,morrm001,3
+data,er,vered001,1
+data,er,stecg001,0

@@ -1,0 +1,82 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,01,1,,,,,0,2,CX,eldrc001,1,0,,vinaf001,0,F
+,10,1,,,,,1,4,BX,eldrc001,1,0,,rente001,0,P
+,32,1,edmoj001,,,,2,10,CBBBCB,eldrc001,0,0,edmoj001 walks. ,edmoj001,0,
+,01,1,edmoj001,,,,3,12,FX,eldrc001,1,0,,tatif001,0,F
+,00,1,durhr001,,,,4,1,X,stepg001,0,0,durhr001 singles. ,durhr001,1,
+,21,1,durhr001,,,,5,5,BCBX,stepg001,1,0,,valej003,1,F
+durhr001 scores. ,10,1,,,,,6,7,BX,stepg001,0,2,thomf001 homers. ,thomf001,1,
+,00,1,,,,,7,8,X,stepg001,1,0,,ordom001,1,F
+,12,1,,,,,8,12,CCBX,stepg001,1,0,,konep001,1,F
+,32,2,lankr001,,,,9,18,FBBFBB,eldrc001,0,0,lankr001 walks. ,lankr001,0,
+lankr001 to 2B. ,00,2,howat001,lankr001,,,10,19,X,eldrc001,0,0,howat001 singles. ,howat001,0,
+lankr001 to 3B. howat001 to 2B. ,00,2,,howat001,lankr001,,11,20,X,eldrc001,1,0,peree001 grounds out. ,peree001,0,G
+,11,2,,howat001,lankr001,,12,23,BFX,eldrc001,1,0,,mathm001,0,P
+,31,2,,howat001,lankr001,,13,28,BFBBX,eldrc001,1,0,,dunss001,0,F
+,12,2,,,,,14,16,FBFX,stepg001,1,0,,singc001,1,P
+,00,2,,,,,15,17,X,stepg001,1,0,,lee-c001,1,F
+,11,2,perrh001,,,,16,20,BSX,stepg001,0,0,perrh001 singles. ,perrh001,1,
+,21,2,perrh001,,,,17,24,BCBX,stepg001,1,0,,fordb001,1,F
+,00,3,vinaf001,,,,18,29,H,eldrc001,0,0,vinaf001 hit by pitch. ,vinaf001,0,
+vinaf001 to 2B. ,10,3,rente001,vinaf001,,,19,31,BX,eldrc001,0,0,rente001 reaches on error. ,rente001,0,G
+,22,3,rente001,vinaf001,,,20,38,BCFFBFC,eldrc001,1,0,edmoj001 strikes out. ,edmoj001,0,
+,31,3,rente001,vinaf001,,,21,43,BBCBX,eldrc001,1,0,,tatif001,0,F
+vinaf001 scores. rente001 to 3B. ,11,3,lankr001,,rente001,,22,46,BCX,eldrc001,0,1,lankr001 singles. ,lankr001,0,
+,32,3,lankr001,,rente001,,23,55,CSBBFFFBS,eldrc001,1,0,howat001 strikes out. ,howat001,0,
+,31,3,,,,,24,29,FBBBX,stepg001,1,0,durhr001 grounds out. ,durhr001,1,G
+,12,3,valej003,,,,25,33,BCFX,stepg001,0,0,valej003 singles. ,valej003,1,
+,22,3,,,,,26,38,BCFBX,stepg001,2,0,Double Play. ,thomf001,1,
+,12,4,peree001,,,,27,59,CCBX,eldrc001,0,0,peree001 singles. ,peree001,0,
+,00,4,peree001,,,,28,60,X,eldrc001,1,0,,mathm001,0,F
+peree001 to 2B. ,00,4,,peree001,,,29,61,X,eldrc001,1,0,Sacrifice bunt by dunss001.,dunss001,0,
+,30,4,vinaf001,peree001,,,30,65,BBBB,eldrc001,0,0,vinaf001 walks. ,vinaf001,0,
+,01,4,vinaf001,peree001,,,31,67,SX,eldrc001,1,0,rente001 grounds out. ,rente001,0,G
+,22,4,,,,,32,44,CFBBFX,stepg001,1,0,,ordom001,1,P
+,32,4,,,,,33,51,CSBBFBX,stepg001,1,0,,konep001,1,F
+,22,4,,,,,34,58,FFBFFBX,stepg001,1,0,,singc001,1,F
+,22,5,,,,,35,72,BCFBX,eldrc001,0,1,edmoj001 homers. ,edmoj001,0,
+,32,5,tatif001,,,,36,78,CFBBBX,eldrc001,0,0,tatif001 singles. ,tatif001,0,
+,12,5,tatif001,,,,37,82,CBFS,eldrc001,1,0,lankr001 strikes out. ,lankr001,0,
+,22,5,tatif001,,,,38,87,CFBBC,eldrc001,1,0,howat001 strikes out. ,howat001,0,
+,32,5,tatif001,,,,40,7,BBFCFBX,simab001,1,0,peree001 grounds out. ,peree001,0,G
+,00,5,,,,,41,59,X,stepg001,1,0,,lee-c001,1,
+,02,5,,,,,42,63,CCFS,stepg001,1,0,perrh001 strikes out. ,perrh001,1,
+,00,5,,,,,43,64,X,stepg001,1,0,fordb001 grounds out. ,fordb001,1,G
+,32,6,,,,,44,14,FCBBFBX,simab001,1,0,mathm001 grounds out. ,mathm001,0,G
+,21,6,,,,,45,18,BFBX,simab001,1,0,,dunss001,0,F
+,21,6,vinaf001,,,,46,22,BBCX,simab001,0,0,vinaf001 singles. ,vinaf001,0,
+vinaf001 to 2B. ,31,6,rente001,vinaf001,,,47,27,BCBBB,simab001,0,0,rente001 walks. ,rente001,0,
+,22,6,rente001,vinaf001,,,49,7,FCBBFFC,wunsk001,1,0,edmoj001 strikes out. ,edmoj001,0,
+,21,6,durhr001,,,,50,68,CBBX,stepg001,0,0,durhr001 singles. ,durhr001,1,
+durhr001 to 2B. ,10,6,,durhr001,,,51,70,BX,stepg001,1,0,Sacrifice bunt by valej003.,valej003,1,
+,31,6,thomf001,durhr001,,,52,75,BBCBB,stepg001,0,0,thomf001 walks. ,thomf001,1,
+,10,6,,durhr001,,,53,77,BX,stepg001,2,0,Double Play. ,ordom001,1,
+,02,7,tatif001,,,,54,10,CFH,wunsk001,0,0,tatif001 hit by pitch. ,tatif001,0,
+tatif001 scores. ,22,7,,,lankr001,,55,15,CBBFX,wunsk001,0,1,lankr001 triples. ,lankr001,0,
+lankr001 scores. ,10,7,davie001,,,,57,17,BX,wunsk001,0,1,davie001 singles. ,davie001,0,
+davie001 to 2B. ,10,7,,davie001,,,59,2,BX,lowes001,1,0,Sacrifice bunt by peree001.,peree001,0,
+davie001 to 3B. ,12,7,,,davie001,,60,6,BFFX,lowes001,1,0,mathm001 grounds out. ,mathm001,0,G
+,10,7,,,davie001,,61,8,BX,lowes001,1,0,dunss001 grounds out. ,dunss001,0,G
+,00,7,,,,,62,78,X,stepg001,1,0,konep001 grounds out. ,konep001,1,G
+,21,7,,,,,63,82,BCBX,stepg001,1,0,,singc001,1,F
+,12,7,,,,,64,87,BCCFX,stepg001,1,0,lee-c001 grounds out. ,lee-c001,1,G
+,12,8,,,,,65,15,CSFFBFX,lowes001,1,0,vinaf001 grounds out. ,vinaf001,0,G
+,00,8,rente001,,,,66,16,X,lowes001,0,0,rente001 singles. ,rente001,0,
+rente001 to 2B. ,31,8,edmoj001,rente001,,,67,21,BBBCB,lowes001,0,0,edmoj001 walks. ,edmoj001,0,
+rente001 to 3B. edmoj001 to 2B. ,00,8,tatif001,edmoj001,rente001,,68,22,H,lowes001,0,0,tatif001 hit by pitch. ,tatif001,0,
+,12,8,paquc001,edmoj001,rente001,,71,4,SBSC,howrb001,1,0,lankr001 strikes out. ,lankr001,0,
+rente001 scores. edmoj001 to 3B. paquc001 to 2B. ,31,8,davie001,paquc001,edmoj001,,72,9,BCBBB,howrb001,0,1,davie001 walks. ,davie001,0,
+edmoj001 scores. paquc001 scores. davie001 scores. ,01,8,,,,,73,11,CX,howrb001,0,4,peree001 homers. ,peree001,0,
+,02,8,,,,,74,14,CSX,howrb001,1,0,mathm001 grounds out. ,mathm001,0,G
+,00,8,perrh001,,,,76,88,X,stepg001,0,0,perrh001 singles. ,perrh001,1,
+,11,8,perrh001,,,,77,91,BCX,stepg001,1,0,,fordb001,1,
+,21,8,perrh001,,,,78,95,CBBX,stepg001,1,0,,durhr001,1,L
+,12,8,perrh001,,,,79,99,BFCS,stepg001,1,0,valej003 strikes out. ,valej003,1,
+,32,9,dunss001,,,,81,6,BFBBCX,penaj003,0,0,dunss001 singles. ,dunss001,0,
+,22,9,dunss001,,,,82,11,BBCFX,penaj003,1,0,,vinaf001,0,L
+,00,9,,,,,83,12,X,penaj003,2,0,Double Play. ,rente001,0,
+,31,9,thomf001,,,,85,5,BCBBX,benea002,0,0,thomf001 singles. ,thomf001,1,
+thomf001 to 2B. ,32,9,ordom001,thomf001,,,86,12,BBSFFBB,benea002,0,0,ordom001 walks. ,ordom001,1,
+thomf001 scores. ordom001 to 3B. ,32,9,konep001,,ordom001,,87,19,BFBBFFX,benea002,0,1,konep001 singles. ,konep001,1,
+ordom001 scores. ,12,9,konep001,,,,89,6,BSSFFX,vered001,1,1,singc001 hits sacrifice fly. ,singc001,1,
+,32,9,,,,,90,12,BBBCFX,vered001,2,0,Double Play. ,lee-c001,1,

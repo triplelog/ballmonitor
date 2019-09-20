@@ -1,0 +1,81 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,12,1,,,,,0,5,FSBFX,reedr002,1,0,,colll001,0,F
+,22,1,,,,,1,10,CBFBC,reedr002,1,0,lorem001 strikes out. ,lorem001,0,
+,12,1,,,,,2,14,CCBC,reedr002,1,0,jenkg001 strikes out. ,jenkg001,0,
+,32,1,,,,,3,9,CCBBFBFFX,rigdp001,1,0,,agbab001,1,F
+,21,1,,,,,4,13,CBBX,rigdp001,1,0,,belld001,1,
+,12,1,,,,,5,17,CCBX,rigdp001,1,0,alfoe001 grounds out. ,alfoe001,1,G
+,00,2,,,,,6,15,X,reedr002,0,1,sexsr001 homers. ,sexsr001,0,
+,22,2,,,,,7,20,FCBBX,reedr002,1,0,,burnj001,0,
+,11,2,hayec001,,,,8,23,BCX,reedr002,0,0,hayec001 reaches on error. ,hayec001,0,
+,10,2,,,,,9,25,BX,reedr002,2,0,Double Play. ,bellr002,0,
+,01,2,,,,,10,19,CX,rigdp001,1,0,piazm001 grounds out. ,piazm001,1,G
+,32,2,,,,,11,26,FBBFBFX,rigdp001,0,1,franm001 homers. ,franm001,1,
+,12,2,,,,,12,31,CCFBX,rigdp001,1,0,,zeilt001,1,F
+,00,2,,,,,13,32,X,rigdp001,1,0,,paytj001,1,F
+,10,3,,,,,14,27,BX,reedr002,1,0,casar001 grounds out. ,casar001,0,G
+,21,3,rigdp001,,,,15,31,BBCX,reedr002,0,0,rigdp001 singles. ,rigdp001,0,
+rigdp001 to 2B. ,22,3,colll001,rigdp001,,,16,37,FBCFBX,reedr002,0,0,colll001 singles. ,colll001,0,
+rigdp001 scores. colll001 scores. ,32,3,,lorem001,,,17,46,BFBFBFFFX,reedr002,0,2,lorem001 doubles. ,lorem001,0,
+,12,3,,lorem001,,,18,51,FBFFC,reedr002,1,0,jenkg001 strikes out. ,jenkg001,0,
+lorem001 to 3B. ,00,3,sexsr001,,lorem001,,19,52,X,reedr002,0,0,sexsr001 singles. ,sexsr001,0,
+,00,3,sexsr001,,lorem001,,20,53,X,reedr002,1,0,,burnj001,0,F
+,32,3,,,,,21,38,CBBCBS,rigdp001,1,0,bordm001 strikes out. ,bordm001,1,
+,10,3,,,,,22,40,BX,rigdp001,1,0,,reedr002,1,F
+,10,3,,,,,23,42,BX,rigdp001,0,1,agbab001 homers. ,agbab001,1,
+,11,3,belld001,,,,24,45,CBX,rigdp001,0,0,belld001 singles. ,belld001,1,
+belld001 to 2B. ,31,3,alfoe001,belld001,,,25,50,BBBCB,rigdp001,0,0,alfoe001 walks. ,alfoe001,1,
+belld001 to 3B. alfoe001 to 2B. ,31,3,piazm001,alfoe001,belld001,,26,55,BBBCB,rigdp001,0,0,piazm001 walks. ,piazm001,1,
+,01,3,piazm001,alfoe001,belld001,,27,57,CX,rigdp001,1,0,franm001 grounds out. ,franm001,1,G
+,00,4,,,,,28,54,X,reedr002,1,0,hayec001 grounds out. ,hayec001,0,G
+,12,4,,,,,29,58,CFBX,reedr002,1,0,,bellr002,0,F
+,00,4,,,,,30,59,X,reedr002,1,0,,casar001,0,F
+,31,4,,,,,31,62,BCBBX,rigdp001,1,0,zeilt001 grounds out. ,zeilt001,1,G
+,00,4,,,,,32,63,X,rigdp001,1,0,paytj001 grounds out. ,paytj001,1,G
+,10,4,,,,,33,65,BX,rigdp001,1,0,bordm001 grounds out. ,bordm001,1,G
+,12,5,,,,,34,63,BCSS,reedr002,1,0,rigdp001 strikes out. ,rigdp001,0,
+,12,5,,,,,35,67,CFBX,reedr002,1,0,colll001 grounds out. ,colll001,0,G
+,10,5,,,,,36,69,BX,reedr002,1,0,lorem001 grounds out. ,lorem001,0,G
+,12,5,,,,,37,70,CBFFS,rigdp001,1,0,reedr002 strikes out. ,reedr002,1,
+,22,5,,,,,38,76,BBFCFX,rigdp001,1,0,agbab001 grounds out. ,agbab001,1,G
+,01,5,belld001,,,,39,78,SX,rigdp001,0,0,belld001 singles. ,belld001,1,
+,12,5,belld001,,,,40,82,FBFS,rigdp001,1,0,alfoe001 strikes out. ,alfoe001,1,
+,32,6,,jenkg001,,,41,75,CBBBFX,reedr002,0,0,jenkg001 doubles. ,jenkg001,0,
+,02,6,,jenkg001,,,42,79,CCFS,reedr002,1,0,sexsr001 strikes out. ,sexsr001,0,
+,30,6,burnj001,jenkg001,,,43,83,IIII,reedr002,0,0,burnj001 intentionally walks. ,burnj001,0,
+jenkg001 to 3B. burnj001 to 2B. ,01,6,hayec001,burnj001,jenkg001,,44,85,CX,reedr002,0,0,hayec001 singles. ,hayec001,0,
+jenkg001 scores. burnj001 to 3B. hayec001 to 2B. ,11,6,bellr002,hayec001,burnj001,,45,88,CBX,reedr002,0,1,bellr002 singles. ,bellr002,0,
+burnj001 scores. hayec001 to 3B. bellr002 to 2B. ,00,6,,bellr002,hayec001,,46,89,X,reedr002,1,1,casar001 hits sacrifice fly. ,casar001,0,
+,02,6,,bellr002,hayec001,,47,92,CFS,reedr002,1,0,rigdp001 strikes out. ,rigdp001,0,
+,21,6,,,,,48,86,BSBX,rigdp001,1,0,,piazm001,1,F
+,30,6,franm001,,,,49,90,BBBB,rigdp001,0,0,franm001 walks. ,franm001,1,
+,11,6,,,,,50,93,CBX,rigdp001,2,0,Double Play. ,zeilt001,1,
+colll001 to 2B. ,22,7,,colll001,,,53,5,FCBBX,joneb004,0,0,colll001 singles. ,colll001,0,
+colll001 out. lorem001 to 1B. ,00,7,lorem001,,,,54,6,X,joneb004,1,0,lorem001 hits into a fielder's choice. ,lorem001,0,
+lorem001 to 2B. ,00,7,jenkg001,lorem001,,,55,7,X,joneb004,0,0,jenkg001 singles. ,jenkg001,0,
+,22,7,jenkg001,lorem001,,,56,12,FFBBS,joneb004,1,0,sexsr001 strikes out. ,sexsr001,0,
+,12,7,jenkg001,lorem001,,,57,16,CSBX,joneb004,1,0,,burnj001,0,F
+,21,7,paytj001,,,,58,97,BSBX,rigdp001,0,0,paytj001 singles. ,paytj001,1,
+,00,7,paytj001,,,,59,98,X,rigdp001,1,0,,bordm001,1,
+paytj001 out. ,02,7,harrl001,,,,60,101,CSX,rigdp001,1,0,harrl001 reaches on fielder's choice. ,harrl001,1,
+,22,7,harrl001,,,,62,5,FBSBX,weatd001,1,0,,agbab001,1,F
+,10,8,hayec001,,,,63,18,BX,joneb004,0,0,hayec001 singles. ,hayec001,0,
+hayec001 to 2B. ,32,8,bellr002,hayec001,,,64,24,BSFBBB,joneb004,0,0,bellr002 walks. ,bellr002,0,
+bellr002 to 2B. hayec001 out. ,10,8,casar001,bellr002,,,65,26,BX,joneb004,1,0,casar001 reaches on fielder's choice. ,casar001,0,
+,12,8,casar001,bellr002,,,67,30,CFBX,joneb004,1,0,,echea001,0,F
+bellr002 to 3B. casar001 to 2B. ,31,8,colll001,casar001,bellr002,,68,35,BBBCB,joneb004,0,0,colll001 walks. ,colll001,0,
+bellr002 scores. casar001 to 3B. colll001 to 2B. ,11,8,lorem001,colll001,casar001,,69,38,BCH,joneb004,0,1,lorem001 hit by pitch. ,lorem001,0,
+casar001 scores. colll001 to 3B. lorem001 to 2B. ,30,8,jenkg001,lorem001,colll001,,71,4,BBBB,rodrr004,0,1,jenkg001 walks. ,jenkg001,0,
+,32,8,jenkg001,lorem001,colll001,,72,11,BBCFBFC,rodrr004,1,0,sexsr001 strikes out. ,sexsr001,0,
+,00,8,,,,,74,1,X,acevj001,1,0,,belld001,1,F
+,01,8,,,,,75,3,CX,acevj001,1,0,alfoe001 grounds out. ,alfoe001,1,G
+,01,8,,,,,76,5,CX,acevj001,1,0,,piazm001,1,F
+,10,9,,,,,77,13,BX,rodrr004,1,0,,burnj001,0,F
+,21,9,,,,,78,17,BCBX,rodrr004,0,1,hayec001 homers. ,hayec001,0,
+,21,9,,,,,79,21,BBCX,rodrr004,1,0,,bellr002,0,F
+,12,9,,,,,80,25,SBCX,rodrr004,1,0,casar001 grounds out. ,casar001,0,G
+,01,9,franm001,,,,83,7,CX,acevj001,0,0,franm001 singles. ,franm001,1,
+franm001 to 3B. ,32,9,hamid001,,franm001,,85,14,CBFBBFX,acevj001,0,0,hamid001 singles. ,hamid001,1,
+,00,9,hamid001,,franm001,,86,15,X,acevj001,1,0,,paytj001,1,P
+hamid001 to 2B. ,01,9,,hamid001,franm001,,88,17,FX,acevj001,1,0,peret004 grounds out. ,peret004,1,G
+,02,9,,hamid001,franm001,,89,22,CSFFX,acevj001,1,0,,harrl001,1,F

@@ -1,0 +1,71 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,02,1,,,,,0,3,FCS,escok001,1,0,willg001 strikes out. ,willg001,0,
+,32,1,,,,,1,9,FCBBBX,escok001,1,0,cox-s001 grounds out. ,cox-s001,0,G
+,22,1,,,,,2,14,BSBFS,escok001,1,0,vaugg001 strikes out. ,vaugg001,0,
+,01,1,stews002,,,,3,2,CX,lopea002,0,0,stews002 singles. ,stews002,1,
+,11,1,,stews002,,grebc001,4,5,CBB,lopea002,0,0,stews002 steals 2B. ,grebc001,1,
+,32,1,,stews002,,,5,11,CBBFBX,lopea002,1,0,grebc001 grounds out. ,grebc001,1,G
+,32,1,mondr002,stews002,,,6,19,CBBBFFFB,lopea002,0,0,mondr002 walks. ,mondr002,1,
+stews002 scores. mondr002 scores. ,00,1,,delgc001,,,7,20,X,lopea002,0,2,delgc001 doubles. ,delgc001,1,
+delgc001 scores. ,00,1,,fullb001,,,8,21,X,lopea002,0,1,fullb001 doubles. ,fullb001,1,
+,01,1,,fullb001,,,9,23,CX,lopea002,1,0,,batit001,1,
+,20,1,,fullb001,,,10,26,BBX,lopea002,1,0,fletd001 grounds out. ,fletd001,1,G
+,01,2,,,,,11,16,CX,escok001,1,0,,mcgrf001,0,F
+,32,2,,,,,12,22,FBSBBC,escok001,1,0,cansj001 strikes out. ,cansj001,0,
+,00,2,,,,,13,23,X,escok001,1,0,castv001 grounds out. ,castv001,0,G
+,12,2,,,,,14,30,BCFS,lopea002,1,0,cruzj004 strikes out. ,cruzj004,1,
+,11,2,,,,,15,33,CBX,lopea002,1,0,woodc001 grounds out. ,woodc001,1,G
+,11,2,,,,,16,36,BCX,lopea002,1,0,stews002 grounds out. ,stews002,1,G
+,12,3,,,,,17,28,SFFBS,escok001,1,0,flahj001 strikes out. ,flahj001,0,
+,10,3,cairm001,,,,18,30,BX,escok001,0,0,cairm001 singles. ,cairm001,0,
+,22,3,cairm001,,,,19,35,BBFFS,escok001,1,0,martf001 strikes out. ,martf001,0,
+,00,3,,cairm001,,willg001,20,36,B,escok001,0,0,cairm001 steals 2B. ,willg001,0,
+,12,3,,cairm001,,,21,42,BSSFFS,escok001,1,0,willg001 strikes out. ,willg001,0,
+,11,3,,,,,22,39,FBX,lopea002,1,0,,grebc001,1,P
+,22,3,,,,,23,44,FBBSS,lopea002,1,0,mondr002 strikes out. ,mondr002,1,
+,11,3,,,,,24,47,BSX,lopea002,1,0,delgc001 grounds out. ,delgc001,1,G
+,21,4,,,,,25,46,BBFX,escok001,1,0,cox-s001 grounds out. ,cox-s001,0,G
+,00,4,,,,,26,47,X,escok001,1,0,,vaugg001,0,P
+,31,4,mcgrf001,,,,27,52,BCBBB,escok001,0,0,mcgrf001 walks. ,mcgrf001,0,
+mcgrf001 scores. ,12,4,,,,,28,56,CBSX,escok001,0,2,cansj001 homers. ,cansj001,0,
+,11,4,,,,,29,59,BSX,escok001,1,0,,castv001,0,F
+,10,4,,,,,30,49,BX,lopea002,1,0,fullb001 grounds out. ,fullb001,1,G
+,10,4,,,,,31,51,BX,lopea002,1,0,,batit001,1,F
+,10,4,fletd001,,,,32,53,BX,lopea002,0,0,fletd001 singles. ,fletd001,1,
+fletd001 to 2B. ,01,4,,fletd001,,cruzj004,33,55,SB,lopea002,0,0,Wild Pitch. ,cruzj004,1,
+,32,4,cruzj004,fletd001,,,34,61,SBBFBB,lopea002,0,0,cruzj004 walks. ,cruzj004,1,
+,02,4,cruzj004,fletd001,,,35,64,CSS,lopea002,1,0,woodc001 strikes out. ,woodc001,1,
+,00,5,,,,,36,60,X,escok001,1,0,,flahj001,0,F
+,31,5,,,,,37,65,CBBBX,escok001,1,0,,cairm001,0,P
+,30,5,martf001,,,,38,69,BBBB,escok001,0,0,martf001 walks. ,martf001,0,
+,21,5,,martf001,,willg001,39,73,BBSS,escok001,0,0,martf001 steals 2B. ,willg001,0,
+,22,5,,martf001,,,40,78,BBSSS,escok001,1,0,willg001 strikes out. ,willg001,0,
+,32,5,stews002,,,,41,70,BFFBBB,lopea002,0,0,stews002 walks. ,stews002,1,
+stews002 to 2B. ,12,5,grebc001,stews002,,,42,75,CBFFX,lopea002,0,0,grebc001 singles. ,grebc001,1,
+,11,5,grebc001,stews002,,,43,78,FBX,lopea002,1,0,,mondr002,1,P
+stews002 to 3B. grebc001 to 2B. ,21,5,delgc001,grebc001,stews002,,44,82,BBCX,lopea002,0,0,delgc001 singles. ,delgc001,1,
+stews002 scores. ,11,5,delgc001,grebc001,,,45,85,BFX,lopea002,1,1,fullb001 hits sacrifice fly. ,fullb001,1,
+,00,5,delgc001,grebc001,,,46,86,X,lopea002,1,0,,batit001,1,
+,20,6,,,,,47,81,BBX,escok001,1,0,,cox-s001,0,F
+,12,6,,,,,48,85,FSBS,escok001,1,0,vaugg001 strikes out. ,vaugg001,0,
+,00,6,,,,,49,86,X,escok001,1,0,mcgrf001 grounds out. ,mcgrf001,0,G
+,12,6,,,,,50,90,CFBX,lopea002,1,0,,fletd001,1,L
+,12,6,,,,,51,94,FSBX,lopea002,1,0,cruzj004 grounds out. ,cruzj004,1,G
+,02,6,woodc001,,,,52,97,SFX,lopea002,0,0,woodc001 singles. ,woodc001,1,
+,12,6,woodc001,,,,53,101,FBFX,lopea002,1,0,,stews002,1,F
+,32,7,cansj001,,,,54,92,CCBBBB,escok001,0,0,cansj001 walks. ,cansj001,0,
+,11,7,,,,,55,95,BSX,escok001,2,0,Double Play. ,castv001,0,
+,22,7,,,,,56,102,FBSFBFX,escok001,1,0,,flahj001,0,F
+,12,7,grebc001,,,,57,105,CFBX,lopea002,0,0,grebc001 singles. ,grebc001,1,
+,00,7,,,,,58,106,X,lopea002,2,0,Double Play. ,mondr002,1,
+,32,7,,,,,59,112,CBBFBX,lopea002,1,0,delgc001 grounds out. ,delgc001,1,G
+,02,8,,,,,60,105,CFX,escok001,1,0,,cairm001,0,
+,30,8,martf001,,,,61,109,BBBB,escok001,0,0,martf001 walks. ,martf001,0,
+,00,8,,,,,62,110,X,escok001,2,0,Double Play. ,willg001,0,
+,10,8,,,,,63,114,BX,lopea002,0,1,fullb001 homers. ,fullb001,1,
+,02,8,,,,,64,117,FCX,lopea002,1,0,,batit001,1,F
+,10,8,,,,,65,119,BX,lopea002,1,0,fletd001 grounds out. ,fletd001,1,G
+,11,8,,,,,66,122,BSX,lopea002,1,0,cruzj004 grounds out. ,cruzj004,1,G
+,12,9,,,,,68,4,CFBX,kochb001,1,0,cox-s001 grounds out. ,cox-s001,0,G
+,02,9,,,,,69,7,SFC,kochb001,1,0,vaugg001 strikes out. ,vaugg001,0,
+,12,9,,,,,70,11,BSFX,kochb001,1,0,,mcgrf001,0,F

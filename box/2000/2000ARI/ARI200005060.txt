@@ -1,0 +1,147 @@
+version,2
+info,visteam,SDN
+info,hometeam,ARI
+info,site,PHO01
+info,date,2000/05/06
+info,number,0
+info,starttime,1:35PM
+info,daynight,day
+info,usedh,false
+info,umphome,reedr901
+info,ump1b,wendh902
+info,ump2b,clara901
+info,ump3b,vanvm901
+info,pitches,pitches
+info,temp,72
+info,winddir,tocf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,163
+info,attendance,36827
+info,wp,andeb002
+info,lp,loper001
+info,save,
+start,marta001,"Al Martin",0,1,7
+start,jackd003,"Damian Jackson",0,2,6
+start,owene001,"Eric Owens",0,3,9
+start,nevip001,"Phil Nevin",0,4,5
+start,sprae001,"Ed Sprague",0,5,3
+start,boonb002,"Bret Boone",0,6,4
+start,gonzw001,"Wiki Gonzalez",0,7,2
+start,river002,"Ruben Rivera",0,8,8
+start,loper001,"Rodrigo Lopez",0,9,1
+start,womat001,"Tony Womack",1,1,6
+start,bellj001,"Jay Bell",1,2,4
+start,gonzl001,"Luis Gonzalez",1,3,7
+start,durae001,"Erubiel Durazo",1,4,3
+start,finls001,"Steve Finley",1,5,8
+start,lee-t002,"Travis Lee",1,6,9
+start,stink001,"Kelly Stinnett",1,7,2
+start,fox-a001,"Andy Fox",1,8,5
+start,andeb002,"Brian Anderson",1,9,1
+play,1,0,marta001,00,X,13/G
+play,1,0,jackd003,32,BCBFFBB,W
+play,1,0,owene001,20,BBX,6/L6
+play,1,0,nevip001,10,BX,46(1)/FO
+play,1,1,womat001,11,BCX,3/G
+play,1,1,bellj001,20,BBX,7/L7
+play,1,1,gonzl001,30,BBBB,W
+play,1,1,durae001,22,BCFB1,PO1(13)
+play,2,0,sprae001,11,CBX,HR/7
+play,2,0,boonb002,21,BBFX,S8
+play,2,0,gonzw001,22,BSBFB,SB2
+play,2,0,gonzw001,32,BSBFBX,9/F9D.2-3
+play,2,0,river002,01,SX,6/L6
+play,2,0,loper001,32,BCFBBS,K
+play,2,1,durae001,20,BBX,HR/8
+play,2,1,finls001,11,BCX,D9
+play,2,1,lee-t002,31,BBFBB,W
+play,2,1,stink001,20,BBX,S7/7S.2-H;1-2
+play,2,1,fox-a001,10,BX,S7/7S.2-3;1-2
+play,2,1,andeb002,00,X,7/SF.3-H
+play,2,1,womat001,22,FFFBFBX,FC4.2-3;1-2;B-1
+play,2,1,bellj001,22,CBCFBFX,S8.3-H;2-H;1-3
+play,2,1,gonzl001,21,BFBX,16(1)/FO.3-H
+play,2,1,durae001,31,BBSBX,S8.1-2
+play,2,1,finls001,00,,NP
+sub,walkk001,"Kevin Walker",0,9,1
+play,2,1,finls001,11,CBX,3/G
+play,3,0,marta001,21,BBCX,6/L6
+play,3,0,jackd003,12,CCBX,7/F7
+play,3,0,owene001,22,BCBFX,63/G
+play,3,1,lee-t002,00,X,3/G
+play,3,1,stink001,11,BFX,9/F9
+play,3,1,fox-a001,22,CBSBC,K/C
+com,"ej,smitd001,C,reedr901,Balls and strikes (from bench)"
+com,"Padres coach Dave Smith ejected by HP umpire Reed in fourth from bench"
+play,4,0,nevip001,10,BX,S8
+play,4,0,sprae001,10,BX,D7.1-3
+play,4,0,boonb002,00,X,HR/8.3-H;2-H
+play,4,0,gonzw001,22,CBFBX,8/F8D
+play,4,0,river002,12,FBFX,63/G
+play,4,0,walkk001,11,CBX,63/G
+play,4,1,andeb002,11,SBX,S9
+play,4,1,womat001,22,BBFFFX,S7.1-2
+play,4,1,bellj001,11,CBX,S8.2-3;1-2
+play,4,1,gonzl001,10,BX,4/P4
+play,4,1,durae001,31,BBFBB,W.3-H;2-3;1-2
+play,4,1,finls001,22,SBBSX,8/SF.3-H;2-3
+play,4,1,lee-t002,00,X,8/F8
+play,5,0,marta001,00,X,3/G
+play,5,0,jackd003,01,CX,3/BP3
+play,5,0,owene001,11,CBX,63/G
+play,5,1,stink001,00,,NP
+sub,palav001,"Vicente Palacios",0,9,1
+play,5,1,stink001,01,SX,4/P4
+play,5,1,fox-a001,12,CBCFX,13/G
+play,5,1,andeb002,11,BFX,63/G
+play,6,0,nevip001,31,BCBBX,S9
+play,6,0,sprae001,01,SX,S9/9S.1-3
+play,6,0,boonb002,02,CSX,4(B)3(1)/LDP
+play,6,0,gonzw001,00,X,7/F7
+play,6,1,womat001,00,X,S8/8S
+play,6,1,bellj001,00,X,8/F8S
+play,6,1,gonzl001,00,B,CS2(26)
+play,6,1,gonzl001,31,BCBBB,W
+play,6,1,durae001,00,X,8/F8D
+play,7,0,river002,00,X,9/F9S
+play,7,0,palav001,00,,NP
+sub,roskj001,"John Roskos",0,9,11
+play,7,0,roskj001,12,CFBFX,63/G
+play,7,0,marta001,21,CBBX,13/G
+play,7,1,finls001,00,,NP
+sub,whism001,"Matt Whisenant",0,9,1
+play,7,1,finls001,32,CBBFBB,W
+play,7,1,lee-t002,12,CBCFX,6/P6
+play,7,1,stink001,22,BFFBX,S7.1-2
+play,7,1,fox-a001,01,CX,46(1)/FO.2-3
+play,7,1,andeb002,00,,NP
+sub,colbg001,"Greg Colbrunn",1,9,11
+play,7,1,colbg001,20,BBX,D7.3-H;1-H
+play,7,1,womat001,11,BSX,43/G
+play,8,0,jackd003,00,,NP
+sub,kim-b001,"Byung-Hyun Kim",1,9,1
+play,8,0,jackd003,02,CSC,K/C
+play,8,0,owene001,12,FBCFFS,K
+play,8,0,nevip001,02,FCS,K
+play,8,1,bellj001,00,,NP
+sub,myerr002,"Rodney Myers",0,9,1
+play,8,1,bellj001,32,BBCFBX,53/G
+play,8,1,gonzl001,22,BSFBX,43/G
+play,8,1,durae001,32,CSBBBS,K
+play,9,0,sprae001,00,,NP
+sub,sprir001,"Russ Springer",1,9,1
+play,9,0,sprae001,12,BFCX,HR/7
+play,9,0,boonb002,21,BCBX,3/FL
+play,9,0,gonzw001,12,CFBFFX,9/F9D
+play,9,0,river002,22,BSBFFS,K
+data,er,loper001,6
+data,er,walkk001,2
+data,er,palav001,0
+data,er,whism001,2
+data,er,myerr002,0
+data,er,andeb002,4
+data,er,kim-b001,0
+data,er,sprir001,1

@@ -1,0 +1,143 @@
+version,2
+info,visteam,ATL
+info,hometeam,BOS
+info,site,BOS07
+info,date,2000/07/08
+info,number,0
+info,starttime,5:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,clara901
+info,ump1b,buckc901
+info,ump2b,reedr901
+info,ump3b,wendh902
+info,pitches,pitches
+info,temp,77
+info,winddir,ltor
+info,windspeed,20
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,176
+info,attendance,33311
+info,wp,mulht001
+info,lp,martr002
+info,save,
+start,veraq001,"Quilvio Veras",0,1,4
+start,jonea002,"Andruw Jones",0,2,8
+start,jonec004,"Chipper Jones",0,3,5
+start,jordb001,"Brian Jordan",0,4,9
+start,galaa001,"Andres Galarraga",0,5,3
+start,joynw001,"Wally Joyner",0,6,10
+start,lopej001,"Javy Lopez",0,7,2
+start,bonib001,"Bobby Bonilla",0,8,7
+start,weisw001,"Walt Weiss",0,9,6
+start,mulht001,"Terry Mulholland",0,0,1
+start,offej001,"Jose Offerman",1,1,4
+start,fryej001,"Jeff Frye",1,2,9
+start,everc001,"Carl Everett",1,3,8
+start,garcn001,"Nomar Garciaparra",1,4,6
+start,burkm001,"Morgan Burkhart",1,5,10
+start,oleat001,"Troy O'Leary",1,6,7
+start,varij001,"Jason Varitek",1,7,2
+start,sprae001,"Ed Sprague",1,8,5
+start,daubb001,"Brian Daubach",1,9,3
+start,martr002,"Ramon Martinez",1,0,1
+play,1,0,veraq001,10,BX,7/F7
+play,1,0,jonea002,32,CBCBFBC,K/C
+play,1,0,jonec004,31,FBBBB,W
+play,1,0,jordb001,00,C,CS2(24)
+play,1,1,offej001,32,BBCFBX,9/F9
+play,1,1,fryej001,02,CCFX,53/G
+play,1,1,everc001,01,SX,63/G
+play,2,0,jordb001,01,CX,D7
+play,2,0,galaa001,22,BSFBS,K
+play,2,0,joynw001,22,CBSBX,S.2-3
+play,2,0,lopej001,02,FFFX,S7.3-H;1-2
+play,2,0,bonib001,22,CBSBS,K
+play,2,0,weisw001,31,BSBBX,9/F9
+play,2,1,garcn001,00,X,D9
+play,2,1,burkm001,10,BX,43/G.2-3
+play,2,1,oleat001,01,SX,13/G
+play,2,1,varij001,21,BBCX,63/G
+play,3,0,veraq001,31,BBBCB,W
+play,3,0,jonea002,01,CX,63/G.1-2
+play,3,0,jonec004,10,BX,8/F8D.2-3
+play,3,0,jordb001,12,CBSFX,63/G
+play,3,1,sprae001,31,BBBCX,8/F8
+play,3,1,daubb001,00,X,5/FL
+play,3,1,offej001,12,BCSX,9/F9
+play,4,0,galaa001,00,X,2/FL
+play,4,0,joynw001,32,BBFFFBFFX,7/F7
+play,4,0,lopej001,02,CFX,7/F7
+play,4,1,fryej001,32,BCCBFBX,S7
+play,4,1,everc001,31,BBFBX,S7.1-2
+play,4,1,garcn001,00,X,5(2)3/GDP.1-2
+play,4,1,burkm001,22,FBFBFS,K
+play,5,0,bonib001,11,CBX,43/G
+play,5,0,weisw001,12,BCFX,3/G
+play,5,0,veraq001,32,CFFFBBBB,W
+play,5,0,jonea002,00,X,63/G
+play,5,1,oleat001,02,CCX,S9
+play,5,1,varij001,00,1,PO1(13)
+play,5,1,varij001,00,1X,D9
+play,5,1,sprae001,11,BFX,53/G
+play,5,1,daubb001,00,X,8/F8
+play,6,0,jonec004,00,X,63/G
+play,6,0,jordb001,11,FBX,43/G
+play,6,0,galaa001,32,CBSFBBB,W
+play,6,0,joynw001,12,SBCFFB,SB2
+play,6,0,joynw001,32,SBCFFBBX,41/G
+play,6,1,offej001,01,SX,8/F8
+play,6,1,fryej001,21,CBBX,S7
+play,6,1,everc001,11,FBX,S9.1-3
+play,6,1,garcn001,01,CX,9/SF.3-H
+play,6,1,burkm001,00,X,8/F8
+play,7,0,lopej001,00,X,S7
+play,7,0,bonib001,31,BBSBB,W.1-2
+play,7,0,weisw001,00,,NP
+sub,sandr002,"Reggie Sanders",0,8,12
+play,7,0,weisw001,00,,NP
+sub,cormr001,"Rheal Cormier",1,0,1
+play,7,0,weisw001,00,X,2/FL
+play,7,0,veraq001,01,CX,S7.2-3;1-2
+play,7,0,jonea002,00,,NP
+sub,florb001,"Bryce Florie",1,0,1
+play,7,0,jonea002,12,CBFS,K
+play,7,0,jonec004,32,BFFBBB,W.3-H;2-3;1-2
+play,7,0,jordb001,12,SSBS,K
+play,7,1,oleat001,00,,NP
+sub,sandr002,"Reggie Sanders",0,8,7
+play,7,1,oleat001,11,BFX,8/F8
+play,7,1,varij001,00,X,63/G
+play,7,1,sprae001,32,CBFFFBBFC,K/C
+play,8,0,galaa001,21,CBBX,S7
+play,8,0,joynw001,00,,NP
+sub,fassj001,"Jeff Fassero",1,0,1
+play,8,0,joynw001,20,BBX,4/P4
+play,8,0,lopej001,12,BCFX,HR/7.1-H
+play,8,0,sandr002,00,X,53/G
+play,8,0,weisw001,21,BCBX,63/G
+play,8,1,daubb001,12,CFBFS,K23
+play,8,1,offej001,22,CBFBX,53/G
+play,8,1,fryej001,12,BSFX,53/G
+play,9,0,veraq001,12,CBCX,6/P6
+play,9,0,jonea002,11,FBX,HR/7
+play,9,0,jonec004,31,BCBBX,S8
+play,9,0,jordb001,00,,NP
+sub,wasdj001,"John Wasdin",1,0,1
+play,9,0,jordb001,01,SX,S7.1-2
+play,9,0,galaa001,32,BBSBSS,K+SB3;SB2
+play,9,0,joynw001,32,BBBCFC,K/C
+play,9,1,everc001,00,,NP
+sub,rockj001,"John Rocker",0,0,1
+play,9,1,everc001,22,CFBBS,K
+play,9,1,garcn001,22,SCBFFBX,7/F7
+play,9,1,burkm001,00,X,13/G
+data,er,mulht001,1
+data,er,rockj001,0
+data,er,martr002,2
+data,er,cormr001,0
+data,er,florb001,1
+data,er,fassj001,2
+data,er,wasdj001,0

@@ -1,0 +1,171 @@
+version,2
+info,visteam,SDN
+info,hometeam,SFN
+info,site,SFO03
+info,date,2000/09/07
+info,number,0
+info,starttime,7:15PM
+info,daynight,night
+info,usedh,false
+info,umphome,scotd901
+info,ump1b,cedeg901
+info,ump2b,hudsm901
+info,ump3b,welkt901
+info,pitches,pitches
+info,temp,75
+info,winddir,torf
+info,windspeed,8
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,166
+info,attendance,40930
+info,wp,estes001
+info,lp,clemm001
+info,save,
+start,jackd003,"Damian Jackson",0,1,4
+start,owene001,"Eric Owens",0,2,9
+start,river002,"Ruben Rivera",0,3,8
+start,sprae001,"Ed Sprague",0,4,7
+start,vitij001,"Joe Vitiello",0,5,3
+start,larog001,"Greg LaRocca",0,6,5
+start,relad001,"Desi Relaford",0,7,6
+start,davib003,"Ben Davis",0,8,2
+start,clemm001,"Matt Clement",0,9,1
+start,benam001,"Marvin Benard",1,1,8
+start,muelb001,"Bill Mueller",1,2,5
+start,bondb001,"Barry Bonds",1,3,7
+start,kentj001,"Jeff Kent",1,4,4
+start,snowj001,"J.T. Snow",1,5,3
+start,burke001,"Ellis Burks",1,6,9
+start,aurir001,"Rich Aurilia",1,7,6
+start,estab001,"Bobby Estalella",1,8,2
+start,estes001,"Shawn Estes",1,9,1
+play,1,0,jackd003,00,X,3/FL
+play,1,0,owene001,12,CFBX,13/G
+play,1,0,river002,12,BCSC,K/C
+play,1,1,benam001,22,BCCBFS,K
+play,1,1,muelb001,10,BX,31/G
+play,1,1,bondb001,21,CBBX,43/G
+play,2,0,sprae001,10,BX,S9
+play,2,0,vitij001,21,BSBX,S9/G34.1-2
+play,2,0,larog001,12,BFCX,46(1)3/GDP.2-3
+com,"Debut game for Greg LaRocca"
+play,2,0,relad001,21,BCBX,63/G
+play,2,1,kentj001,10,BX,5/P5
+play,2,1,snowj001,31,BCBBB,W
+play,2,1,burke001,12,BSCS,K
+play,2,1,aurir001,11,BFX,S5/BG25.1-2
+play,2,1,estab001,31,CBBBB,W.2-3;1-2
+play,2,1,estes001,21,BCBX,3/FL
+play,3,0,davib003,12,FCBS,K
+play,3,0,clemm001,22,CBFBS,K
+play,3,0,jackd003,12,BCSFS,K
+play,3,1,benam001,00,X,D9/L9D
+play,3,1,muelb001,00,X,53/SH/BG25.2-3
+play,3,1,bondb001,10,BX,HR/89.3-H
+play,3,1,kentj001,32,BFBBFB,W
+play,3,1,snowj001,00,X,4/L4
+play,3,1,burke001,22,CFBBS,K
+play,4,0,owene001,10,BX,53/G
+play,4,0,river002,22,CBSBX,53/G56S
+play,4,0,sprae001,01,CX,S7/G56
+play,4,0,vitij001,11,CBX,64(1)/FO
+play,4,1,aurir001,11,BFX,S8/78
+play,4,1,estab001,01,SB,WP.1-2
+play,4,1,estab001,12,SBFS,K
+play,4,1,estes001,01,CX,7/F78
+play,4,1,benam001,32,CBBBSFS,K
+play,5,0,larog001,01,FX,S8
+play,5,0,relad001,22,CFBBX,3/FL
+play,5,0,davib003,11,CBX,16(1)3/GDP
+play,5,1,muelb001,32,CBBFFBB,W
+play,5,1,bondb001,31,BBFBB,W.1-2
+play,5,1,kentj001,11,FBX,9/F9.2-3
+play,5,1,snowj001,10,BX,S9/G34.3-H;1-2
+play,5,1,burke001,00,X,54(1)/FO.2-3
+play,5,1,aurir001,01,CX,63/G
+play,6,0,clemm001,22,BCBFFC,K/C
+play,6,0,jackd003,31,BBCBX,S6/G6M
+play,6,0,owene001,20,BBX,343/G3.1-2
+com,"$the ball caromed off Snow's glove to Kent"
+play,6,0,river002,11,CBX,63/G56
+play,6,1,estab001,32,BBBCCB,W
+play,6,1,estes001,00,X,34/SH/BG23.1-2
+play,6,1,benam001,31,BCBBX,S8.2-H
+play,6,1,muelb001,10,BB,SB2
+play,6,1,muelb001,21,BBCX,S4.2-3
+play,6,1,bondb001,00,,NP
+sub,erdot001,"Todd Erdos",0,9,1
+play,6,1,bondb001,30,BBBX,FC3.3-H;1-2;B-1
+play,6,1,kentj001,32,FBFFBBX,S7.2-H;1-2
+play,6,1,snowj001,20,BBX,S9.2-H;1-2
+play,6,1,burke001,22,BBCFX,HR/78.2-H;1-H
+play,6,1,aurir001,32,BFBFBC,K/C
+play,6,1,estab001,32,BFCBFBX,HR/7
+play,6,1,estes001,12,BCCX,6/P5D
+play,7,0,sprae001,00,,NP
+sub,felip001,"Pedro Feliz",1,2,5
+play,7,0,sprae001,00,,NP
+sub,riosa001,"Armando Rios",1,3,9
+play,7,0,sprae001,00,,NP
+sub,meloj001,"Juan Melo",1,4,4
+play,7,0,sprae001,00,,NP
+sub,cresf001,"Felipe Crespo",1,5,3
+play,7,0,sprae001,00,,NP
+sub,lowet001,"Terrell Lowery",1,6,7
+play,7,0,sprae001,00,,NP
+sub,martr003,"Ramon E. Martinez",1,7,6
+play,7,0,sprae001,30,BBBB,W
+play,7,0,vitij001,32,CBBBFS,K
+play,7,0,larog001,12,BCFC,K/C
+play,7,0,relad001,22,CFBBC,K/C
+play,7,1,benam001,00,,NP
+sub,larog001,"Greg LaRocca",0,6,6
+play,7,1,benam001,00,,NP
+sub,alvag001,"Gabe Alvarez",0,9,5
+play,7,1,benam001,00,,NP
+sub,almac001,"Carlos Almanzar",0,7,1
+play,7,1,benam001,32,CFBFBBX,D7/7D
+play,7,1,felip001,11,BCX,S5/G25.2-3
+play,7,1,riosa001,01,FX,43/G.3-H;1-2
+play,7,1,meloj001,01,SX,S8/89.2-H
+play,7,1,cresf001,20,BBX,E3/G.1-2
+play,7,1,lowet001,12,BCSS,K
+play,7,1,martr003,21,BFBX,S1.2-3;1-2
+play,7,1,estab001,00,,NP
+sub,servs002,"Scott Servais",1,8,11
+play,7,1,servs002,10,BX,9/F9
+play,8,0,davib003,00,,NP
+sub,servs002,"Scott Servais",1,8,2
+play,8,0,davib003,00,,NP
+sub,murrc001,"Calvin Murray",1,9,8
+play,8,0,davib003,00,,NP
+sub,deltm001,"Miguel Del Toro",1,1,1
+play,8,0,davib003,10,BX,7/F7L
+play,8,0,alvag001,12,FCBX,9/F9
+play,8,0,jackd003,12,CBFS,K
+play,8,1,murrc001,00,,NP
+sub,sprae001,"Ed Sprague",0,4,4
+play,8,1,murrc001,00,,NP
+sub,dehak001,"Kory DeHaan",0,7,7
+play,8,1,murrc001,00,,NP
+sub,davet001,"Tom Davey",0,1,1
+play,8,1,murrc001,00,X,3/P3
+play,8,1,deltm001,00,,NP
+sub,minod001,"Damon Minor",1,1,11
+play,8,1,minod001,21,BSBX,8/F8
+play,8,1,felip001,11,BSX,S6
+play,8,1,riosa001,22,FCBBX,43/G
+play,9,0,owene001,00,,NP
+sub,voger001,"Ryan Vogelsong",1,1,1
+play,9,0,owene001,12,CFBX,63/G
+play,9,0,river002,12,FBSC,K/C
+play,9,0,sprae001,11,BCX,43/G
+data,er,clemm001,6
+data,er,erdot001,5
+data,er,almac001,2
+data,er,davet001,0
+data,er,estes001,0
+data,er,deltm001,0
+data,er,voger001,0

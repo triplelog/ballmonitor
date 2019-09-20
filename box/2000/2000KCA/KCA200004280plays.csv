@@ -1,0 +1,88 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,12,1,,,,,0,4,BCCX,witaj001,1,0,mclem001 grounds out. ,mclem001,0,G
+,32,1,javis001,,,,1,15,BCCFBFFFBFB,witaj001,0,0,javis001 walks. ,javis001,0,
+javis001 to 2B. ,32,1,rodra001,javis001,,,2,21,BCBBFB,witaj001,0,0,rodra001 walks. ,rodra001,0,
+javis001 scores. rodra001 scores. ,32,1,olerj001,,,,3,28,CFFBBBX,witaj001,0,2,olerj001 singles. ,olerj001,0,
+,11,1,,,,,4,31,FBX,witaj001,2,0,Double Play. ,buhnj001,0,
+,32,1,damoj001,,,,5,6,CBFBBX,tomkb001,0,0,damoj001 singles. ,damoj001,1,
+damoj001 to 2B. ,00,1,,damoj001,,,6,7,X,tomkb001,1,0,Sacrifice bunt by feblc001.,feblc001,1,
+,32,1,,damoj001,,,7,14,BBFBCFX,tomkb001,1,0,sweem002 grounds out. ,sweem002,1,G
+,31,1,dye-j001,damoj001,,,8,19,BBCBB,tomkb001,0,0,dye-j001 walks. ,dye-j001,1,
+damoj001 scores. dye-j001 scores. ,20,1,,,beltc001,,9,22,BBX,tomkb001,0,2,beltc001 triples. ,beltc001,1,
+beltc001 scores. ,01,1,randj002,,,,10,24,CX,tomkb001,0,1,randj002 singles. ,randj002,1,
+randj002 to 2B. ,00,1,,randj002,,quinm001,11,25,B,tomkb001,0,0,Wild Pitch. ,quinm001,1,
+,32,1,,randj002,,,12,33,BBFSFFBX,tomkb001,1,0,,quinm001,1,F
+,32,2,lampt001,,,,13,37,BBCCBX,witaj001,0,0,lampt001 singles. ,lampt001,0,
+lampt001 to 2B. ,32,2,ibanr001,lampt001,,,14,43,BCBCBX,witaj001,0,0,ibanr001 singles. ,ibanr001,0,
+lampt001 to 3B. ,12,2,,,lampt001,,15,47,CLBX,witaj001,2,0,Double Play. ,wilsd001,0,
+,32,2,guilc001,,lampt001,,16,58,CBBSFFFFFBB,witaj001,0,0,guilc001 walks. ,guilc001,0,
+,32,2,guilc001,,lampt001,,17,65,BCBBSFX,witaj001,1,0,mclem001 grounds out. ,mclem001,0,G
+,00,2,,,,,18,34,X,tomkb001,1,0,,fabrj001,1,L
+,11,2,,,,,19,37,BFX,tomkb001,1,0,,sancr001,1,P
+,11,2,,,,,20,40,BCX,tomkb001,1,0,,damoj001,1,F
+,12,3,,,,,21,69,CBFX,witaj001,1,0,javis001 grounds out. ,javis001,0,G
+,11,3,rodra001,,,,22,72,CBX,witaj001,0,0,rodra001 singles. ,rodra001,0,
+,22,3,rodra001,,,,23,77,BCFBX,witaj001,1,0,,olerj001,0,F
+,12,3,rodra001,,,,24,81,SFBC,witaj001,1,0,buhnj001 strikes out. ,buhnj001,0,
+,32,3,,,,,25,46,BBCFBX,tomkb001,1,0,,feblc001,1,F
+,11,3,sweem002,,,,26,49,FBX,tomkb001,0,0,sweem002 singles. ,sweem002,1,
+,01,3,sweem002,,,,27,51,CX,tomkb001,1,0,,dye-j001,1,P
+sweem002 to 3B. ,00,3,beltc001,,sweem002,,28,52,X,tomkb001,0,0,beltc001 singles. ,beltc001,1,
+beltc001 to 2B. ,31,3,randj002,beltc001,sweem002,,29,57,BCBBB,tomkb001,0,0,randj002 walks. ,randj002,1,
+randj002 out. ,10,3,quinm001,beltc001,sweem002,,30,59,BX,tomkb001,1,0,quinm001 reaches on fielder's choice. ,quinm001,1,
+,00,4,,,,,31,82,X,witaj001,1,0,,lampt001,0,F
+,30,4,ibanr001,,,,32,86,BBBB,witaj001,0,0,ibanr001 walks. ,ibanr001,0,
+ibanr001 to 2B. ,00,4,,ibanr001,,,33,87,X,witaj001,1,0,wilsd001 grounds out. ,wilsd001,0,G
+,02,4,,ibanr001,,,34,90,CCC,witaj001,1,0,guilc001 strikes out. ,guilc001,0,
+,01,4,,,,,35,61,CX,tomkb001,1,0,fabrj001 grounds out. ,fabrj001,1,G
+,11,4,,,,,36,64,FBX,tomkb001,1,0,sancr001 grounds out. ,sancr001,1,G
+,11,4,,,,,37,67,CBX,tomkb001,1,0,,damoj001,1,F
+,32,5,mclem001,,,,38,97,CCBBBFB,witaj001,0,0,mclem001 walks. ,mclem001,0,
+mclem001 to 2B. ,11,5,javis001,mclem001,,,39,100,CBX,witaj001,0,0,javis001 singles. ,javis001,0,
+,12,5,javis001,mclem001,,,41,4,FBCX,batim001,1,0,,rodra001,0,F
+,31,5,javis001,mclem001,,,42,9,BBBCX,batim001,1,0,,olerj001,0,F
+,10,5,javis001,mclem001,,,43,11,BX,batim001,1,0,,buhnj001,0,
+,21,5,,,,,44,71,CBBX,tomkb001,1,0,,feblc001,1,F
+,31,5,sweem002,,,,45,76,BBBCB,tomkb001,0,0,sweem002 walks. ,sweem002,1,
+,02,5,sweem002,,,,46,79,FFC,tomkb001,1,0,dye-j001 strikes out. ,dye-j001,1,
+,10,5,sweem002,,,,47,81,BX,tomkb001,1,0,,beltc001,1,L
+,01,6,lampt001,,,,48,13,CX,batim001,0,0,lampt001 singles. ,lampt001,0,
+lampt001 to 2B. ,32,6,,lampt001,,,49,19,CBBFBX,batim001,1,0,ibanr001 grounds out. ,ibanr001,0,G
+,22,6,,lampt001,,,50,24,BBCSS,batim001,1,0,wilsd001 strikes out. ,wilsd001,0,
+,10,6,,lampt001,,,51,26,BX,batim001,1,0,guilc001 grounds out. ,guilc001,0,G
+,12,6,,,,,52,85,CBFC,tomkb001,1,0,randj002 strikes out. ,randj002,1,
+,00,6,,,,,53,86,X,tomkb001,1,0,quinm001 grounds out. ,quinm001,1,G
+,12,6,,,,,54,90,CFBC,tomkb001,1,0,fabrj001 strikes out. ,fabrj001,1,
+,30,7,mclem001,,,,55,30,BBBB,batim001,0,0,mclem001 walks. ,mclem001,0,
+,11,7,,,,,56,33,BCX,batim001,2,0,Double Play. ,javis001,0,
+,32,7,rodra001,,,,57,39,BBFFBB,batim001,0,0,rodra001 walks. ,rodra001,0,
+,02,7,rodra001,,,,58,42,CFS,batim001,1,0,olerj001 strikes out. ,olerj001,0,
+,10,7,,sancr001,,,59,92,BX,tomkb001,0,0,sancr001 doubles. ,sancr001,1,
+sancr001 to 3B. ,11,7,,,sancr001,,60,95,CBX,tomkb001,1,0,Sacrifice bunt by damoj001.,damoj001,1,
+sancr001 to 3B. ,11,7,feblc001,,sancr001,,61,98,CBX,tomkb001,0,0,feblc001 singles. ,feblc001,1,
+sancr001 scores. ,20,7,feblc001,,,,62,101,BBX,tomkb001,1,1,sweem002 hits sacrifice fly. ,sweem002,1,
+,21,7,,feblc001,,dye-j001,63,105,BFBB,tomkb001,0,0,feblc001 steals 2B. ,dye-j001,1,
+feblc001 scores. ,32,7,dye-j001,,,,64,111,BFBBFX,tomkb001,0,1,dye-j001 singles. ,dye-j001,1,
+dye-j001 to 2B. ,31,7,beltc001,dye-j001,,,66,5,CBBBB,panij001,0,0,beltc001 walks. ,beltc001,1,
+dye-j001 scores. beltc001 to 3B. ,22,7,randj002,,beltc001,,67,12,FFBFFBX,panij001,0,1,randj002 singles. ,randj002,1,
+,32,7,randj002,,beltc001,,68,18,CFBBBS,panij001,1,0,quinm001 strikes out. ,quinm001,1,
+,31,8,buhnj001,,,,69,47,BBCBB,batim001,0,0,buhnj001 walks. ,buhnj001,0,
+buhnj001 to 2B. ,32,8,,buhnj001,,,70,55,BCBFFBFX,batim001,1,0,lampt001 grounds out. ,lampt001,0,G
+buhnj001 to 3B. ,21,8,,,buhnj001,,71,59,BCBX,batim001,1,0,ibanr001 grounds out. ,ibanr001,0,G
+,22,8,,,buhnj001,,72,64,FBBCX,batim001,1,0,wilsd001 grounds out. ,wilsd001,0,G
+,12,8,fabrj001,,,,73,22,BFCX,panij001,0,0,fabrj001 singles. ,fabrj001,1,
+fabrj001 out. ,21,8,sancr001,,,,74,26,BBFX,panij001,1,0,sancr001 reaches on fielder's choice. ,sancr001,1,
+sancr001 to 3B. ,10,8,,damoj001,sancr001,,75,28,BX,panij001,0,0,damoj001 doubles. ,damoj001,1,
+sancr001 scores. damoj001 scores. ,00,8,feblc001,,,,76,29,X,panij001,0,2,feblc001 singles. ,feblc001,1,
+feblc001 to 2B. ,01,8,,feblc001,,sweem002,77,31,CB,panij001,0,0,Wild Pitch. ,sweem002,1,
+,12,8,sweem002,feblc001,,,78,35,CBFH,panij001,0,0,sweem002 hit by pitch. ,sweem002,1,
+,01,8,sweem002,feblc001,,,79,37,CX,panij001,1,0,,dye-j001,1,F
+,12,8,sweem002,feblc001,,,80,42,BFCFX,panij001,1,0,beltc001 grounds out. ,beltc001,1,G
+,22,9,,,,,83,5,BCCBC,rakej001,1,0,guilc001 strikes out. ,guilc001,0,
+,22,9,,,,,84,10,BCBFC,rakej001,1,0,mclem001 strikes out. ,mclem001,0,
+,32,9,javis001,,,,85,18,CSBBBFFX,rakej001,0,0,javis001 singles. ,javis001,0,
+javis001 scores. ,00,9,,,,,86,19,X,rakej001,0,2,rodra001 homers. ,rodra001,0,
+,32,9,olerj001,,,,87,25,CBBCBB,rakej001,0,0,olerj001 walks. ,olerj001,0,
+olerj001 to 2B. ,31,9,buhnj001,olerj001,,,88,30,CBBBB,rakej001,0,0,buhnj001 walks. ,buhnj001,0,
+olerj001 scores. buhnj001 to 3B. ,00,9,lampt001,,buhnj001,,90,1,X,bottr001,0,1,lampt001 singles. ,lampt001,0,
+,32,9,lampt001,,buhnj001,,91,8,BBCFBFX,bottr001,1,0,,ibanr001,0,

@@ -1,0 +1,75 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,02,1,,,,,0,3,CCS,herno001,1,0,hockd001 strikes out. ,hockd001,0,
+,11,1,guzmc001,,,,1,6,CBX,herno001,0,0,guzmc001 reaches on error. ,guzmc001,0,G
+,00,1,,,,lawtm002,2,7,C,herno001,1,0,guzmc001 caught stealing. ,lawtm002,0,
+,01,1,lawtm002,,,,3,9,CX,herno001,0,0,lawtm002 singles. ,lawtm002,0,
+,22,1,lawtm002,,,,4,14,BBFSS,herno001,1,0,coomr001 strikes out. ,coomr001,0,
+,21,1,jeted001,,,,5,4,BFBX,radkb001,0,0,jeted001 singles. ,jeted001,1,
+,12,1,jeted001,,,,6,8,CBSS,radkb001,1,0,posaj001 strikes out. ,posaj001,1,
+jeted001 scores. ,11,1,,,,,7,11,CBX,radkb001,0,2,oneip001 homers. ,oneip001,1,
+,32,1,,,,,8,17,CFBBBX,radkb001,1,0,willb002 grounds out. ,willb002,1,G
+,20,1,justd001,,,,9,20,BBX,radkb001,0,0,justd001 singles. ,justd001,1,
+,32,1,justd001,,,,10,27,BCBFBFX,radkb001,1,0,,martt002,1,P
+,01,2,,,,,11,16,CX,herno001,1,0,,ortid001,0,F
+,11,2,,,,,12,19,BSX,herno001,1,0,,koskc001,0,F
+,10,2,,,,,13,21,BX,herno001,1,0,,huntt001,0,F
+,32,2,,,,,14,36,CSBBFFFBS,radkb001,1,0,cansj001 strikes out. ,cansj001,1,
+,32,2,sojol001,,,,15,42,BBFBFX,radkb001,0,0,sojol001 singles. ,sojol001,1,
+,31,2,sojol001,,,,16,47,BFBBX,radkb001,1,0,,vizcj001,1,F
+,00,2,sojol001,,,,17,48,X,radkb001,1,0,jeted001 grounds out. ,jeted001,1,G
+,11,3,,,,,18,24,BFX,herno001,1,0,,jonej003,0,F
+,21,3,,,,,19,28,BCBX,herno001,1,0,,piera001,0,
+,12,3,,,,,20,34,CFFBFX,herno001,1,0,hockd001 grounds out. ,hockd001,0,G
+,20,3,,posaj001,,,21,51,BBX,radkb001,0,0,posaj001 doubles. ,posaj001,1,
+,01,3,,posaj001,,,22,53,FX,radkb001,1,0,,oneip001,1,L
+posaj001 to 3B. ,20,3,,,posaj001,,23,56,BBX,radkb001,1,0,willb002 grounds out. ,willb002,1,G
+,21,3,,,posaj001,,24,60,CBBX,radkb001,1,0,justd001 grounds out. ,justd001,1,G
+,22,4,,,,,25,45,CCFBFBFFFFS,herno001,1,0,guzmc001 strikes out. ,guzmc001,0,
+,02,4,,,,,26,48,CCC,herno001,1,0,lawtm002 strikes out. ,lawtm002,0,
+,22,4,,,,,27,55,FSFBBFX,herno001,1,0,coomr001 grounds out. ,coomr001,0,G
+,00,4,,,,,28,61,X,radkb001,0,1,martt002 homers. ,martt002,1,
+,02,4,,,,,29,64,FFX,radkb001,1,0,,cansj001,1,F
+,11,4,sojol001,,,,30,67,BCX,radkb001,0,0,sojol001 singles. ,sojol001,1,
+sojol001 to 2B. ,00,4,vizcj001,sojol001,,,31,68,X,radkb001,0,0,vizcj001 singles. ,vizcj001,1,
+sojol001 to 3B. vizcj001 to 2B. ,32,4,jeted001,vizcj001,sojol001,,32,75,CBFBBFB,radkb001,0,0,jeted001 walks. ,jeted001,1,
+,10,4,jeted001,vizcj001,sojol001,,33,77,BX,radkb001,1,0,,posaj001,1,L
+,00,4,jeted001,vizcj001,sojol001,,34,78,X,radkb001,1,0,,oneip001,1,P
+,10,5,,ortid001,,,35,57,BX,herno001,0,0,ortid001 doubles. ,ortid001,0,
+,00,5,,ortid001,,,36,58,X,herno001,1,0,,koskc001,0,F
+,20,5,,ortid001,,,37,61,BBX,herno001,1,0,,huntt001,0,F
+ortid001 scores. ,11,5,,jonej003,,,38,64,CBX,herno001,0,1,jonej003 doubles. ,jonej003,0,
+,10,5,,jonej003,,,39,66,BX,herno001,1,0,,piera001,0,F
+,01,5,,,,,40,80,CX,radkb001,0,1,willb002 homers. ,willb002,1,
+,11,5,,,,,41,83,BFX,radkb001,1,0,justd001 grounds out. ,justd001,1,G
+,12,5,,,,,42,87,BSSX,radkb001,1,0,martt002 grounds out. ,martt002,1,G
+,32,5,cansj001,,,,43,93,CBBBSB,radkb001,0,0,cansj001 walks. ,cansj001,1,
+,02,5,cansj001,,,,44,97,FCFX,radkb001,1,0,,sojol001,1,P
+,00,6,,,,,45,67,X,herno001,1,0,,hockd001,0,F
+,12,6,,,,,46,71,BCFS,herno001,1,0,guzmc001 strikes out. ,guzmc001,0,
+,21,6,,,,,47,75,BFBX,herno001,1,0,,lawtm002,0,L
+,31,6,,,,,48,102,BBFBX,radkb001,1,0,vizcj001 grounds out. ,vizcj001,1,G
+,00,6,,,,,49,103,X,radkb001,1,0,jeted001 grounds out. ,jeted001,1,G
+,02,6,,posaj001,,,50,106,CCX,radkb001,0,0,posaj001 doubles. ,posaj001,1,
+posaj001 to 3B. ,01,6,,,posaj001,oneip001,51,108,CB,radkb001,0,0,Wild Pitch. ,oneip001,1,
+,21,6,,,posaj001,,52,112,CBBX,radkb001,1,0,oneip001 grounds out. ,oneip001,1,G
+,01,7,,,,,53,77,FX,herno001,1,0,,coomr001,0,F
+,22,7,,,,,54,83,CFBBFX,herno001,0,1,ortid001 homers. ,ortid001,0,
+,11,7,,koskc001,,,55,86,BCX,herno001,0,0,koskc001 doubles. ,koskc001,0,
+,11,7,,koskc001,,,56,89,BCX,herno001,1,0,,huntt001,0,P
+,02,7,,koskc001,,,57,92,SFS,herno001,1,0,jonej003 strikes out. ,jonej003,0,
+,32,7,willb002,,,,58,123,FBBCFFBFFFB,radkb001,0,0,willb002 walks. ,willb002,1,
+,21,7,willb002,,,,60,4,BFBX,millt001,1,0,,justd001,1,F
+willb002 to 2B. ,31,7,martt002,willb002,,,61,9,CBBBX,millt001,0,0,martt002 reaches on error. ,martt002,1,G
+,22,7,martt002,willb002,,,63,6,CBFBFS,wellb002,1,0,cansj001 strikes out. ,cansj001,1,
+,12,7,martt002,willb002,,,64,10,CCBX,wellb002,1,0,,sojol001,1,F
+,10,8,,,,,68,94,BX,herno001,1,0,,canij001,0,P
+,00,8,,,,,69,95,X,herno001,1,0,,hockd001,0,G
+,02,8,,,,,70,98,CCX,herno001,1,0,guzmc001 grounds out. ,guzmc001,0,G
+,10,8,,,,,72,12,BX,wellb002,1,0,,vizcj001,1,F
+,20,8,,,,,73,15,BBX,wellb002,1,0,,jeted001,1,F
+,00,8,,,,,74,16,X,wellb002,1,0,,posaj001,1,F
+,22,9,,,,,77,5,CCBBS,rivem002,1,0,lawtm002 strikes out. ,lawtm002,0,
+,12,9,,,,,78,9,CFBX,rivem002,1,0,coomr001 grounds out. ,coomr001,0,G
+,00,9,ortid001,,,,79,10,X,rivem002,0,0,ortid001 singles. ,ortid001,0,
+maxwj001 to 2B. ,10,9,,maxwj001,,koskc001,81,12,BS,rivem002,0,0,maxwj001 to 2B on defensive indifference. ,koskc001,0,
+,12,9,,maxwj001,,,82,17,BSSFX,rivem002,1,0,koskc001 grounds out. ,koskc001,0,G

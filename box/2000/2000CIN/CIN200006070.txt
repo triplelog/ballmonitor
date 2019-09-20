@@ -1,0 +1,164 @@
+version,2
+info,visteam,CHA
+info,hometeam,CIN
+info,site,CIN08
+info,date,2000/06/07
+info,number,0
+info,starttime,12:35PM
+info,daynight,day
+info,usedh,false
+info,umphome,eddid901
+info,ump1b,relic901
+info,ump2b,carlm901
+info,ump3b,demud901
+info,pitches,pitches
+info,temp,72
+info,winddir,fromcf
+info,windspeed,3
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,201
+info,attendance,31023
+info,wp,parqj001
+info,lp,bellr003
+info,save,foulk001
+start,valej003,"Jose Valentin",0,1,6
+start,graft001,"Tony Graffanino",0,2,4
+start,lee-c001,"Carlos Lee",0,3,7
+start,konep001,"Paul Konerko",0,4,3
+start,singc001,"Chris Singleton",0,5,8
+start,abboj002,"Jeff Abbott",0,6,9
+start,nortg001,"Greg Norton",0,7,5
+start,fordb001,"Brook Fordyce",0,8,2
+start,parqj001,"Jim Parque",0,9,1
+start,reesp001,"Pokey Reese",1,1,4
+start,larkb001,"Barry Larkin",1,2,6
+start,grifk002,"Ken Griffey",1,3,8
+start,bichd001,"Dante Bichette",1,4,9
+start,yound001,"Dmitri Young",1,5,3
+start,stync001,"Chris Stynes",1,6,7
+start,boona001,"Aaron Boone",1,7,5
+start,santb001,"Benito Santiago",1,8,2
+start,bellr003,"Rob Bell",1,9,1
+play,1,0,valej003,02,CCS,K
+play,1,0,graft001,00,X,8/F8
+play,1,0,lee-c001,32,CBBBFFFFX,T8
+com,"DV chg from S8.B-3(E8) and another on 6-9"
+play,1,0,konep001,01,FX,2/FL
+play,1,1,reesp001,21,CBBX,S9/9S
+play,1,1,larkb001,01,CX,D9.1-3
+play,1,1,grifk002,01,CX,HR/7.3-H;2-H
+play,1,1,bichd001,02,CFX,43/G
+play,1,1,yound001,22,BCSBS,K
+play,1,1,stync001,30,BBBB,W
+play,1,1,boona001,00,1,POCS2(136)
+play,2,0,singc001,00,X,D9
+play,2,0,abboj002,00,X,53/G
+play,2,0,nortg001,11,FBX,63/G.2-3
+play,2,0,fordb001,12,SBSC,K/C
+play,2,1,boona001,31,BBFBX,8/L8
+play,2,1,santb001,11,BCX,53/G
+play,2,1,bellr003,12,CBSS,K
+play,3,0,parqj001,12,CBSS,K
+play,3,0,valej003,20,BBX,8/F8
+play,3,0,graft001,11,CBX,S7
+play,3,0,lee-c001,02,CCS,K
+play,3,1,reesp001,20,BBX,8/F8
+play,3,1,larkb001,22,CCBBX,S7/7S
+play,3,1,grifk002,32,BBCFBS,K+SB2
+play,3,1,bichd001,12,BFSFS,K
+play,4,0,konep001,31,CBBBX,D/78
+play,4,0,singc001,00,X,2/FL
+play,4,0,abboj002,00,X,D7.2-H
+play,4,0,nortg001,32,CBBSFBB,W
+play,4,0,fordb001,22,BBFFFX,16(1)/FO.2-3
+play,4,0,parqj001,00,X,8/F8
+play,4,1,yound001,12,SSFBX,43/G
+play,4,1,stync001,22,CFBBS,K
+play,4,1,boona001,32,CBFBBX,E5/G
+play,4,1,santb001,20,BBS,SB2
+play,4,1,santb001,31,BBSII,IW
+play,4,1,bellr003,02,SCS,K
+play,5,0,valej003,01,CX,9/F9
+play,5,0,graft001,31,BBCBB,W
+play,5,0,lee-c001,01,FX,3/G.1-2
+play,5,0,konep001,30,BBBX,8/F8S
+play,5,1,reesp001,32,BBCCBX,S8
+play,5,1,larkb001,00,B,WP.1-2
+play,5,1,larkb001,12,BCSX,5/L5
+play,5,1,grifk002,10,BX,63/G.2-3
+play,5,1,bichd001,12,SFBS,K
+play,6,0,singc001,12,CBFS,K
+play,6,0,abboj002,11,BFX,S
+play,6,0,nortg001,12,CBFB,WP.1-2
+play,6,0,nortg001,22,CBFBB,WP.2-3
+play,6,0,nortg001,32,CBFBBB,W
+play,6,0,fordb001,11,BFX,54(1)/FO.3-H
+play,6,0,parqj001,00,,NP
+sub,thomf001,"Frank Thomas",0,9,11
+play,6,0,thomf001,11,BCX,HR/7.1-H
+play,6,0,valej003,11,BCX,S7
+play,6,0,graft001,10,BX,64(1)/FO
+play,6,1,yound001,00,,NP
+sub,lowes001,"Sean Lowe",0,9,1
+play,6,1,yound001,22,FBBFX,43/G
+play,6,1,stync001,01,CX,S/78S
+play,6,1,boona001,21,BCBX,7/F7
+play,6,1,santb001,00,H,HP.1-2
+play,6,1,bellr003,00,,NP
+sub,cromd001,"David Cromer",1,9,11
+play,6,1,cromd001,00,,NP
+sub,wunsk001,"Kelly Wunsch",0,9,1
+play,6,1,cromd001,32,FBBFBS,K
+play,7,0,lee-c001,00,,NP
+sub,wills002,"Scott Williamson",1,9,1
+play,7,0,lee-c001,11,FBX,8/F8D
+play,7,0,konep001,31,BBFBB,W
+play,7,0,singc001,31,FBBBX,S9/9S.1-3
+play,7,0,abboj002,32,BBBCFFX,D7.3-H;1-H
+play,7,0,nortg001,30,BBBB,W
+play,7,0,fordb001,00,,NP
+sub,desse001,"Elmer Dessens",1,9,1
+play,7,0,fordb001,12,FSBX,63/G.2-3;1-2
+play,7,0,wunsk001,00,,NP
+sub,ordom001,"Magglio Ordonez",0,9,11
+play,7,0,ordom001,11,BFX,8/F8S
+play,7,1,reesp001,00,,NP
+sub,simab001,"Bill Simas",0,9,1
+play,7,1,reesp001,32,BCBFBX,8/F8S
+play,7,1,larkb001,20,BBX,2/P2
+play,7,1,grifk002,32,CBBSFBB,W
+play,7,1,bichd001,22,CBFBFX,64(1)/FO
+play,8,0,valej003,12,CCBFS,K
+play,8,0,graft001,00,X,S5/BG5
+play,8,0,lee-c001,11,CBB,CS2(24)
+play,8,0,lee-c001,32,CBBBSX,4/P4
+play,8,1,yound001,00,,NP
+sub,howrb001,"Bobby Howry",0,9,1
+play,8,1,yound001,12,FFBS,K
+play,8,1,stync001,22,BSSBS,K
+play,8,1,boona001,22,BFFBC,K/C
+play,9,0,konep001,32,BCFFBBB,W
+play,9,0,singc001,20,BB+1,PO1(E2).1-3
+play,9,0,singc001,20,BB+1X,5/FL
+play,9,0,abboj002,12,CSBS,K
+play,9,0,nortg001,22,BCFFBFX,63/G
+play,9,1,santb001,00,,NP
+sub,foulk001,"Keith Foulke",0,9,1
+play,9,1,santb001,12,SSFFBX,T/89S
+play,9,1,desse001,00,,NP
+sub,tuckm001,"Michael Tucker",1,9,11
+play,9,1,tuckm001,00,X,4/P4
+play,9,1,reesp001,10,BX,S7.3-H
+play,9,1,larkb001,10,BX,64(1)/FO
+play,9,1,grifk002,00,X,9/F9
+data,er,parqj001,3
+data,er,lowes001,0
+data,er,wunsk001,0
+data,er,simab001,0
+data,er,howrb001,0
+data,er,foulk001,1
+data,er,bellr003,4
+data,er,wills002,2
+data,er,desse001,0

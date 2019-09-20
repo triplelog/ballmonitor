@@ -1,0 +1,149 @@
+version,2
+info,visteam,ATL
+info,hometeam,NYN
+info,site,NYC17
+info,date,2000/07/02
+info,number,0
+info,starttime,1:10PM
+info,daynight,day
+info,usedh,false
+info,umphome,scotd901
+info,ump1b,hudsm901
+info,ump2b,cedeg901
+info,ump3b,froeb901
+info,pitches,pitches
+info,temp,85
+info,winddir,rtol
+info,windspeed,2
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,168
+info,attendance,45261
+info,wp,glavt001
+info,lp,ruscg001
+info,save,
+start,veraq001,"Quilvio Veras",0,1,4
+start,jonea002,"Andruw Jones",0,2,8
+start,jordb001,"Brian Jordan",0,3,9
+start,galaa001,"Andres Galarraga",0,4,3
+start,lopej001,"Javy Lopez",0,5,2
+start,sandr002,"Reggie Sanders",0,6,7
+start,weisw001,"Walt Weiss",0,7,6
+start,lockk001,"Keith Lockhart",0,8,5
+start,glavt001,"Tom Glavine",0,9,1
+start,moram002,"Melvin Mora",1,1,6
+start,belld001,"Derek Bell",1,2,9
+start,alfoe001,"Edgardo Alfonzo",1,3,4
+start,piazm001,"Mike Piazza",1,4,2
+start,zeilt001,"Todd Zeile",1,5,3
+start,ventr001,"Robin Ventura",1,6,5
+start,agbab001,"Benny Agbayani",1,7,7
+start,mcewj001,"Joe McEwing",1,8,8
+start,ruscg001,"Glendon Rusch",1,9,1
+play,1,0,veraq001,12,CBCFX,S8/8S
+play,1,0,jonea002,01,F1,POCS2(13634)
+play,1,0,jonea002,12,F1BCX,8/F8
+play,1,0,jordb001,11,BCX,43/G
+play,1,1,moram002,01,CX,S5/BG5
+play,1,1,belld001,00,X,1(B)3(1)/LDP
+play,1,1,alfoe001,21,CBBX,43/G
+play,2,0,galaa001,20,BBX,S7/7S
+play,2,0,lopej001,22,FCBBS,K
+play,2,0,sandr002,22,CFBBX,D9.1-3
+play,2,0,weisw001,12,FSBX,7/SF.3-H
+play,2,0,lockk001,00,X,S9/9S.2-H
+play,2,0,glavt001,00,X,S7.1-2
+play,2,0,veraq001,10,BX,D/78.2-H;1-H
+play,2,0,jonea002,12,CBCFFFS,K
+play,2,1,piazm001,11,CBX,9/F9D
+play,2,1,zeilt001,11,BCX,3/P3
+play,2,1,ventr001,22,BFBCX,3/P3
+play,3,0,jordb001,10,BX,8/F8
+play,3,0,galaa001,10,BX,9/F9D
+play,3,0,lopej001,22,SFBBX,HR/7
+play,3,0,sandr002,22,FBSBX,53/G
+play,3,1,agbab001,12,CCBX,6/P6
+play,3,1,mcewj001,02,CSFX,8/F8S
+play,3,1,ruscg001,12,CCFBFX,63/G
+play,4,0,weisw001,01,CX,S
+play,4,0,lockk001,12,CFBX,4(1)3/GDP
+play,4,0,glavt001,12,CCBS,K
+play,4,1,moram002,32,BFBCBFS,K
+play,4,1,belld001,32,CCBFBBB,W
+play,4,1,alfoe001,21,CBBX,8/F8
+play,4,1,piazm001,32,BBSBCFX,63/G
+play,5,0,veraq001,22,BCBCC,K/C
+play,5,0,jonea002,10,BX,S8
+play,5,0,jordb001,11,CBX,S.1-2
+play,5,0,galaa001,21,BBFX,3/P3
+play,5,0,lopej001,00,X,S8/8S.2-H;1-3
+play,5,0,sandr002,02,SSS,K
+play,5,1,zeilt001,32,BCBFFBX,S/78
+play,5,1,ventr001,32,CBFBBFX,E6/TH.1-2
+play,5,1,agbab001,12,CBCX,5(2)3/GDP.1-2
+play,5,1,mcewj001,02,CFS,K
+play,6,0,weisw001,20,BBX,S7
+play,6,0,lockk001,00,X,S7.1-2
+play,6,0,glavt001,00,,NP
+sub,camme001,"Eric Cammack",1,8,1
+play,6,0,glavt001,00,,NP
+sub,belld001,"Derek Bell",1,2,8
+play,6,0,glavt001,00,,NP
+sub,harrl001,"Lenny Harris",1,9,7
+play,6,0,glavt001,00,,NP
+sub,agbab001,"Benny Agbayani",1,7,9
+play,6,0,glavt001,00,X,15(2)/FO.1-2
+play,6,0,veraq001,31,BBBCB,W.2-3;1-2
+play,6,0,jonea002,11,BCX,9/SF.3-H;2-3
+play,6,0,jordb001,10,BB,SB2
+play,6,0,jordb001,30,BBBB,W
+play,6,0,galaa001,02,SSC,K/C
+play,6,1,harrl001,01,CX,43/G
+play,6,1,moram002,00,X,3/FL
+play,6,1,belld001,32,CBCBBS,K
+play,7,0,lopej001,22,BFFBFX,7/F7
+play,7,0,sandr002,11,BCX,53/G
+play,7,0,weisw001,00,X,9/L9
+play,7,1,alfoe001,22,BCFBC,K/C
+play,7,1,piazm001,21,BFBX,HR/9
+play,7,1,zeilt001,22,CBCBX,HR/7
+play,7,1,ventr001,32,CBFBBFX,S8/8S
+play,7,1,agbab001,00,X,9/F9
+play,7,1,camme001,00,,NP
+sub,pratt001,"Todd Pratt",1,8,11
+play,7,1,pratt001,10,BX,64(1)/FO
+play,8,0,lockk001,00,,NP
+sub,mannj001,"Jim Mann",1,8,1
+play,8,0,lockk001,00,X,9/F9
+play,8,0,glavt001,00,,NP
+sub,joynw001,"Wally Joyner",0,9,11
+play,8,0,joynw001,12,BSFX,S8
+play,8,0,veraq001,01,FX,36(1)/FO
+play,8,0,jonea002,10,BB,SB2
+play,8,0,jonea002,21,BBCX,D7/7D.2-H
+play,8,0,jordb001,20,BBX,D7.2-H
+play,8,0,galaa001,00,X,4/P4
+play,8,1,harrl001,00,,NP
+sub,joynw001,"Wally Joyner",0,9,3
+play,8,1,harrl001,00,,NP
+sub,marqj001,"Jason Marquis",0,4,1
+play,8,1,harrl001,32,CFFBBBB,W
+play,8,1,moram002,22,CCFBBX,8/F8
+play,8,1,belld001,12,FBCX,8/F8
+play,8,1,alfoe001,31,FBBBX,8/F8
+play,9,0,lopej001,21,BBFX,HR/78
+play,9,0,sandr002,31,BBSBX,4/P4
+play,9,0,weisw001,21,BCBX,7/F7
+play,9,0,lockk001,32,BBFBCB,W
+play,9,0,joynw001,10,BX,8/F8
+play,9,1,piazm001,30,BBBB,W
+play,9,1,zeilt001,01,CX,46(1)3/GDP
+play,9,1,ventr001,00,,NP
+sub,franm001,"Matt Franco",1,6,11
+play,9,1,franm001,11,BCX,41/G
+data,er,glavt001,2
+data,er,marqj001,0
+data,er,ruscg001,7
+data,er,camme001,0
+data,er,mannj001,3

@@ -1,0 +1,175 @@
+version,2
+info,visteam,TBA
+info,hometeam,FLO
+info,site,MIA01
+info,date,2000/07/09
+info,number,0
+info,starttime,4:05PM
+info,daynight,day
+info,usedh,false
+info,umphome,laynj901
+info,ump1b,barrt901
+info,ump2b,randt901
+info,ump3b,monte901
+info,pitches,pitches
+info,temp,82
+info,winddir,rtol
+info,windspeed,7
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,188
+info,attendance,11907
+info,wp,sancj001
+info,lp,creed001
+info,save,alfoa001
+start,willg001,"Gerald Williams",0,1,8
+start,cairm001,"Miguel Cairo",0,2,4
+start,vaugg001,"Greg Vaughn",0,3,7
+start,mcgrf001,"Fred McGriff",0,4,3
+start,tramb001,"Bubba Trammell",0,5,9
+start,castv001,"Vinny Castilla",0,6,5
+start,difem001,"Mike DiFelice",0,7,2
+start,martf001,"Felix Martinez",0,8,6
+start,ruper001,"Ryan Rupe",0,9,1
+start,castl001,"Luis Castillo",1,1,4
+start,bergd002,"Dave Berg",1,2,6
+start,floyc001,"Cliff Floyd",1,3,7
+start,wilsp002,"Preston Wilson",1,4,8
+start,millk005,"Kevin Millar",1,5,3
+start,smitm004,"Mark Smith",1,6,9
+start,fox-a001,"Andy Fox",1,7,5
+start,bakop001,"Paul Bako",1,8,2
+start,sancj001,"Jesus Sanchez",1,9,1
+com,"1:45 rain delay in the seventh"
+play,1,0,willg001,22,SCBFBFFFS,K
+play,1,0,cairm001,21,BFBX,8/F8
+play,1,0,vaugg001,30,BBBB,W
+play,1,0,mcgrf001,01,CX,HR/9.1-H
+play,1,0,tramb001,32,FBBBCX,4/L4
+play,1,1,castl001,01,CX,S
+play,1,1,bergd002,11,CBX,S8.1-3;B-2(E8)
+play,1,1,floyc001,00,X,HR/9.3-H;2-H
+play,1,1,wilsp002,10,BX,63/G
+play,1,1,millk005,01,CH,HP
+play,1,1,smitm004,32,BBBCCFB,W.1-2
+play,1,1,fox-a001,02,FFX,S7.2-3;1-2
+play,1,1,bakop001,10,BX,5(B)4(2)/LDP
+play,2,0,castv001,00,X,6/L6
+play,2,0,difem001,12,CCFBX,9/F9
+play,2,0,martf001,12,BCCS,K
+play,2,1,sancj001,22,FCFBBX,7/F7
+play,2,1,castl001,00,X,53/G
+play,2,1,bergd002,12,CBCFH,HP
+play,2,1,floyc001,30,BBBB,W.1-2
+play,2,1,wilsp002,01,CX,7/F7
+play,3,0,ruper001,10,BX,43/G
+play,3,0,willg001,11,CBX,3/G
+play,3,0,cairm001,12,CCBX,4/P4
+play,3,1,millk005,11,CBX,D7
+play,3,1,smitm004,00,B,WP.2-3
+play,3,1,smitm004,10,BX,8/F8S
+play,3,1,fox-a001,31,BFBBB,W
+play,3,1,bakop001,10,BX,8/SF.3-H
+play,3,1,sancj001,02,SSFX,S9.1-2
+play,3,1,castl001,32,CBFBFFBB,W.2-3;1-2
+play,3,1,bergd002,00,,NP
+sub,creed001,"Doug Creek",0,9,1
+play,3,1,bergd002,02,FCC,K/C
+play,4,0,vaugg001,00,X,HR/7
+play,4,0,mcgrf001,02,CSX,D9
+play,4,0,tramb001,20,BBX,E5/G.2-3
+play,4,0,castv001,00,X,8/SF.3-H(UR)
+play,4,0,difem001,00,X,54(1)/FO
+play,4,0,martf001,22,CFBBFC,K/C
+play,4,1,floyc001,21,BCBX,S8
+play,4,1,wilsp002,11,FBB,SB2
+play,4,1,wilsp002,32,FBBBFX,D/78.2-H
+play,4,1,millk005,32,CCFFBBBX,7/F7
+play,4,1,smitm004,32,CBCBBFB,W+SB3
+play,4,1,fox-a001,12,BCFS,K
+play,4,1,bakop001,11,CB+3,CSH(E2).3-H(UR);1-3
+play,4,1,bakop001,12,CB+3CS,K
+play,5,0,creed001,00,,NP
+sub,johnr006,"Russ Johnson",0,9,11
+play,5,0,johnr006,10,BX,S7
+play,5,0,willg001,00,X,S8.1-3
+play,5,0,cairm001,01,FX,8/SF.3-H
+play,5,0,vaugg001,32,CBBFBX,54(1)3/GDP
+play,5,1,sancj001,00,,NP
+sub,johnr006,"Russ Johnson",0,9,4
+play,5,1,sancj001,00,,NP
+sub,lowem001,"Mike Lowell",1,9,11
+play,5,1,lowem001,00,,NP
+sub,yan-e001,"Esteban Yan",0,2,1
+play,5,1,lowem001,12,BSFX,7/F7
+play,5,1,castl001,22,CCBBFX,S7
+play,5,1,bergd002,12,FBFH,HP.1-2
+play,5,1,floyc001,22,BBSCS,K
+play,5,1,wilsp002,10,BX,HR/8.2-H;1-H
+play,5,1,millk005,00,X,D7
+play,5,1,smitm004,02,FCFS,K
+play,6,0,mcgrf001,00,,NP
+sub,pennb002,"Brad Penny",1,9,1
+play,6,0,mcgrf001,22,CFBBFS,K
+play,6,0,tramb001,02,CFX,63/G
+play,6,0,castv001,00,X,63/G
+play,6,1,fox-a001,00,,NP
+sub,guilj001,"Jose Guillen",0,2,9
+play,6,1,fox-a001,00,,NP
+sub,guthm001,"Mark Guthrie",0,5,1
+play,6,1,fox-a001,00,X,13/G
+play,6,1,bakop001,12,CBSX,4/P4
+play,6,1,pennb002,20,BBX,3/P3
+play,7,0,difem001,12,BFCX,63/G
+play,7,0,martf001,00,X,S7
+play,7,0,johnr006,30,BBBB,W.1-2
+play,7,0,willg001,10,BX,HR/8.2-H;1-H
+play,7,0,guilj001,00,X,S9
+play,7,0,vaugg001,30,BBBX,8/F8D.1-2
+play,7,0,mcgrf001,00,,NP
+sub,darev001,"Vic Darensbourg",1,9,1
+play,7,0,mcgrf001,00,X,8/F8
+play,7,1,castl001,11,BCX,43/G
+play,7,1,bergd002,12,CBFFS,K
+play,7,1,floyc001,12,BCFX,S
+play,7,1,wilsp002,21,CBBX,S9.1-2
+play,7,1,millk005,00,X,S9.2-H;1-3
+play,7,1,smitm004,00,X,64(1)/FO
+play,8,0,guthm001,00,,NP
+sub,lee-d002,"Derrek Lee",1,5,3
+play,8,0,guthm001,00,,NP
+sub,winnr001,"Randy Winn",0,5,11
+play,8,0,winnr001,01,SX,1/L1
+play,8,0,castv001,00,X,53/G
+play,8,0,difem001,22,BBSFFX,D9
+play,8,0,martf001,00,,NP
+sub,alfoa001,"Antonio Alfonseca",1,6,1
+play,8,0,martf001,00,,NP
+sub,kotsm001,"Mark Kotsay",1,9,9
+play,8,0,martf001,00,,NP
+sub,cox-s001,"Steve Cox",0,8,11
+play,8,0,cox-s001,01,FX,S9.2-H
+play,8,0,johnr006,01,CX,63/G
+play,8,1,fox-a001,00,,NP
+sub,guilo001,"Ozzie Guillen",0,5,6
+play,8,1,fox-a001,00,,NP
+sub,mecij001,"Jim Mecir",0,8,1
+play,8,1,fox-a001,00,X,43/G
+play,8,1,bakop001,02,CCS,K
+play,8,1,kotsm001,32,BBBCFB,W
+play,8,1,castl001,12,BCCB,SB2
+play,8,1,castl001,22,BCCBX,3/G
+play,9,0,willg001,01,CX,63/G
+play,9,0,guilj001,02,CCX,9/F9
+play,9,0,vaugg001,32,SBFBBFX,S7
+play,9,0,mcgrf001,10,BX,7/F7D
+data,er,ruper001,4
+data,er,creed001,1
+data,er,yan-e001,3
+data,er,guthm001,1
+data,er,mecij001,0
+data,er,sancj001,4
+data,er,pennb002,3
+data,er,darev001,1
+data,er,alfoa001,0

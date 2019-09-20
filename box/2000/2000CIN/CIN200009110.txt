@@ -1,0 +1,167 @@
+version,2
+info,visteam,CHN
+info,hometeam,CIN
+info,site,CIN08
+info,date,2000/09/11
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,reedr901
+info,ump1b,wendh902
+info,ump2b,clara901
+info,ump3b,buckc901
+info,pitches,pitches
+info,temp,70
+info,winddir,tocf
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,176
+info,attendance,22532
+info,wp,harnp001
+info,lp,garid001
+info,save,gravd001
+start,meyec001,"Chad Meyers",0,1,4
+start,gutir001,"Ricky Gutierrez",0,2,6
+start,sosas001,"Sammy Sosa",0,3,9
+start,gracm001,"Mark Grace",0,4,3
+start,zulej001,"Julio Zuleta",0,5,7
+start,bufod001,"Damon Buford",0,6,8
+start,nievj002,"Jose Nieves",0,7,5
+start,giraj001,"Joe Girardi",0,8,2
+start,garid001,"Daniel Garibay",0,9,1
+start,reesp001,"Pokey Reese",1,1,4
+start,ochoa001,"Alex Ochoa",1,2,9
+start,grifk002,"Ken Griffey",1,3,8
+start,yound001,"Dmitri Young",1,4,7
+start,cases001,"Sean Casey",1,5,3
+start,stync001,"Chris Stynes",1,6,5
+start,castj004,"Juan Castro",1,7,6
+start,laruj001,"Jason LaRue",1,8,2
+start,harnp001,"Pete Harnisch",1,9,1
+play,1,0,meyec001,02,CFS,K
+play,1,0,gutir001,00,X,43/G
+play,1,0,sosas001,32,SSBBBC,K/C
+play,1,1,reesp001,21,BCBX,9/F9
+play,1,1,ochoa001,11,CBX,9/F9D
+play,1,1,grifk002,22,FBBCFFFX,5/P5
+play,2,0,gracm001,22,CFBBX,D9/9S
+play,2,0,zulej001,22,FSBBS,K
+play,2,0,bufod001,32,BBSFBFB,W
+play,2,0,nievj002,11,FBX,9/F9
+play,2,0,giraj001,00,X,9/F9D
+play,2,1,yound001,01,FX,S7/7S
+play,2,1,cases001,22,CFFFBBB,WP.1-2
+play,2,1,cases001,32,CFFFBBBS,K
+play,2,1,stync001,30,BBBB,W
+play,2,1,castj004,02,CFX,D7/7D.2-H;1-3
+play,2,1,laruj001,32,BFBBCX,HR/7.3-H;2-H
+play,2,1,harnp001,10,BX,63/G
+play,2,1,reesp001,11,CBX,63/G
+play,3,0,garid001,12,BSFX,43/G
+play,3,0,meyec001,00,X,8/F8
+play,3,0,gutir001,32,BFBFBS,K
+play,3,1,ochoa001,20,BBX,53/G
+play,3,1,grifk002,12,SCBS,K
+play,3,1,yound001,31,BBFBX,53/G
+play,4,0,sosas001,00,X,HR/7
+play,4,0,gracm001,11,CBX,S8
+play,4,0,zulej001,12,FSBS,K
+play,4,0,bufod001,01,SX,S8.1-2
+play,4,0,nievj002,32,SBBSBFB,W.2-3;1-2
+play,4,0,giraj001,10,BX,9/SF.3-H;2-3
+play,4,0,garid001,10,BX,S9/9S.3-H;1-2
+play,4,0,meyec001,22,FFFBFBX,64(1)/FO.2-3
+play,4,1,cases001,10,BX,43/G
+play,4,1,stync001,01,CX,S9
+play,4,1,castj004,00,X,D9.1-3
+play,4,1,laruj001,21,BCBX,D7/7S.3-H;2-H
+play,4,1,harnp001,22,FBFBX,63/G
+play,4,1,reesp001,22,BBCFX,63/G
+play,5,0,gutir001,32,BBFBFFFX,4/P4
+play,5,0,sosas001,12,CSFBX,D9/9D
+play,5,0,gracm001,22,BCBFX,S9/9S.2-2
+com,"apparently a pop that wouldn't let Sosa advance"
+play,5,0,zulej001,11,BFX,D/89.2-H;1-H;BX3(5)#
+play,5,0,bufod001,11,CBX,43/G
+play,5,1,ochoa001,00,,NP
+sub,browr001,"Roosevelt Brown",0,9,7
+play,5,1,ochoa001,00,,NP
+sub,vanpt001,"Todd Van Poppel",0,5,1
+play,5,1,ochoa001,00,X,53/G
+play,5,1,grifk002,12,CFBX,S9
+play,5,1,yound001,31,FBBBB,W.1-2
+play,5,1,cases001,11,BFX,46(1)3/GDP
+play,6,0,nievj002,00,,NP
+sub,sulls001,"Scott Sullivan",1,9,1
+play,6,0,nievj002,22,BBCFC,K/C
+play,6,0,giraj001,01,CX,9/F9
+play,6,0,browr001,01,FX,D9
+play,6,0,meyec001,12,CBFB,WP.2-3
+play,6,0,meyec001,22,CBFBX,4/P4
+play,6,1,stync001,01,CX,9/F9
+play,6,1,castj004,00,X,53/G
+play,6,1,laruj001,32,BCBCFBX,3/G
+play,7,0,gutir001,22,BFBFX,7/F7
+play,7,0,sosas001,21,BSBX,S9/9S
+play,7,0,gracm001,22,BFBCX,9/F9
+play,7,0,vanpt001,00,,NP
+sub,greew001,"Willie Greene",0,5,11
+play,7,0,greew001,22,BCFBX,7/F7
+play,7,1,sulls001,00,,NP
+sub,cromd001,"David Cromer",1,9,11
+play,7,1,cromd001,00,,NP
+sub,rains001,"Steve Rain",0,5,1
+play,7,1,cromd001,00,X,3/L3
+play,7,1,reesp001,22,BBCFS,K
+play,7,1,ochoa001,11,BFX,HR/7
+play,7,1,grifk002,30,BBBB,W
+play,7,1,yound001,11,BFX,D7.1XH(762)
+com,"$Griffey strained his left hamstring as he rounded 3B and crashed into"
+com,"catcher Girardi"
+play,8,0,bufod001,00,,NP
+sub,ochoa001,"Alex Ochoa",1,2,7
+play,8,0,bufod001,00,,NP
+sub,huntb002,"Brian L. Hunter",1,3,8
+play,8,0,bufod001,00,,NP
+sub,tuckm001,"Michael Tucker",1,9,9
+play,8,0,bufod001,00,,NP
+sub,riedj001,"John Riedling",1,4,1
+play,8,0,bufod001,32,BBCBCS,K
+play,8,0,nievj002,21,BBCX,S
+play,8,0,giraj001,12,CBSS,K
+play,8,0,browr001,10,BX,S7.1-2
+play,8,0,meyec001,00,,NP
+sub,gloar001,"Ross Gload",0,1,11
+play,8,0,gloar001,12,BFSS,K23
+play,8,1,cases001,00,,NP
+sub,youne001,"Eric Young",0,5,4
+play,8,1,cases001,00,,NP
+sub,gloar001,"Ross Gload",0,1,7
+play,8,1,cases001,00,,NP
+sub,worrt002,"Tim Worrell",0,9,1
+play,8,1,cases001,32,BBSBFS,K
+play,8,1,stync001,12,SSBX,43/G
+play,8,1,castj004,01,CX,53/G
+play,9,0,gutir001,00,,NP
+sub,gravd001,"Danny Graves",1,4,1
+play,9,0,gutir001,32,BCBFBB,W
+play,9,0,sosas001,22,CBBSS,K
+play,9,0,gracm001,21,BBCX,S9/9S.1-2
+play,9,0,youne001,12,CFBFS,K
+play,9,0,bufod001,00,,NP
+sub,reedj001,"Jeff Reed",0,6,11
+play,9,0,reedj001,00,X,S8/8S.2-H;1-2
+play,9,0,nievj002,00,,NP
+sub,mattg002,"Gary Jr. Matthews",0,6,12
+play,9,0,nievj002,12,BFCS,K
+data,er,garid001,6
+data,er,vanpt001,0
+data,er,rains001,1
+data,er,worrt002,0
+data,er,harnp001,5
+data,er,sulls001,0
+data,er,riedj001,0
+data,er,gravd001,1

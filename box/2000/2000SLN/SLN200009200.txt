@@ -1,0 +1,156 @@
+version,2
+info,visteam,HOU
+info,hometeam,SLN
+info,site,STL09
+info,date,2000/09/20
+info,number,0
+info,starttime,7:10PM
+info,daynight,night
+info,usedh,false
+info,umphome,fostm901
+info,ump1b,kulpr901
+info,ump2b,marsr901
+info,ump3b,herna901
+info,pitches,pitches
+info,temp,59
+info,winddir,tocf
+info,windspeed,9
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,173
+info,attendance,38653
+info,wp,ankir001
+info,lp,holtc001
+info,save,
+start,lugoj001,"Julio Lugo",0,1,4
+start,bogat001,"Tim Bogar",0,2,6
+start,bagwj001,"Jeff Bagwell",0,3,3
+start,hidar001,"Richard Hidalgo",0,4,8
+start,aloum001,"Moises Alou",0,5,9
+start,berkl001,"Lance Berkman",0,6,7
+start,trubc001,"Chris Truby",0,7,5
+start,chavr001,"Raul Chavez",0,8,2
+start,holtc001,"Chris Holt",0,9,1
+start,vinaf001,"Fernando Vina",1,1,4
+start,paquc001,"Craig Paquette",1,2,3
+start,edmoj001,"Jim Edmonds",1,3,8
+start,lankr001,"Ray Lankford",1,4,7
+start,tatif001,"Fernando Tatis",1,5,5
+start,drewj001,"J.D. Drew",1,6,9
+start,rente001,"Edgar Renteria",1,7,6
+start,mathm001,"Mike Matheny",1,8,2
+start,ankir001,"Rick Ankiel",1,9,1
+play,1,0,lugoj001,12,CBSS,K
+play,1,0,bogat001,32,BBBCFS,K
+play,1,0,bagwj001,32,BSSBBS,K
+play,1,1,vinaf001,12,CBFFFS,K
+play,1,1,paquc001,10,BX,3/FL
+play,1,1,edmoj001,11,BCX,43/G
+play,2,0,hidar001,31,BFBBX,63/G
+play,2,0,aloum001,11,CBX,63/G
+play,2,0,berkl001,32,CFBFBBB,W
+play,2,0,trubc001,01,FB,CS2(23)
+play,2,1,lankr001,10,BX,D/78
+play,2,1,tatif001,21,BCBX,4/P4
+play,2,1,drewj001,01,FX,7/F7
+play,2,1,rente001,10,BX,13/G
+play,3,0,trubc001,12,CBCC,K/C
+play,3,0,chavr001,22,FBFFBX,43/G
+play,3,0,holtc001,12,CBFS,K
+play,3,1,mathm001,01,CX,S7
+play,3,1,ankir001,02,LCS,K
+play,3,1,vinaf001,00,X,S7.1-2
+play,3,1,paquc001,00,X,S7.2-3;1-2
+play,3,1,edmoj001,32,CBBFBX,HR/9.3-H;2-H;1-H
+play,3,1,lankr001,00,X,HR/8
+play,3,1,tatif001,32,SBSBBS,K
+play,3,1,drewj001,00,X,7/F7D
+play,4,0,lugoj001,20,BBX,9/L9
+play,4,0,bogat001,01,FX,E1/G
+play,4,0,bagwj001,22,BSFBS,K
+play,4,0,hidar001,00,X,13/G
+play,4,1,rente001,32,SBBBFB,W
+play,4,1,mathm001,12,SBSB,SB2
+play,4,1,mathm001,32,SBSBBFX,13/G.2-3
+play,4,1,ankir001,32,BFBFBFX,4/P4
+play,4,1,vinaf001,02,SFFFX,S9.3-H
+play,4,1,paquc001,11,CBB,WP.1-2
+play,4,1,paquc001,22,CBBSFX,HR/7.2-H
+play,4,1,edmoj001,32,BBBCFB,W
+play,4,1,lankr001,32,CCBBBFS,K
+play,5,0,aloum001,00,X,S9
+play,5,0,berkl001,00,X,9/F9D
+play,5,0,trubc001,21,BSBX,S7.1-2
+play,5,0,chavr001,12,FCBFX,S9/9S.2-H;1-3(E4/TH);B-2
+play,5,0,holtc001,00,,NP
+sub,gintk001,"Keith Ginter",0,9,11
+play,5,0,gintk001,21,BCBX,7/SF.3-H(UR)
+com,"Debut game for Keith Ginter"
+play,5,0,lugoj001,12,FCFBS,K
+play,5,1,tatif001,00,,NP
+sub,poweb001,"Brian Powell",0,9,1
+play,5,1,tatif001,12,BCFFFS,K
+play,5,1,drewj001,32,BSBBFFX,7/F7
+play,5,1,rente001,01,CX,9/F9S
+play,6,0,bogat001,10,BX,63/G
+play,6,0,bagwj001,12,BSSS,K
+play,6,0,hidar001,20,BBX,HR/8
+play,6,0,aloum001,11,FBX,63/G
+play,6,1,mathm001,01,CX,8/F8
+play,6,1,ankir001,11,SBX,7/F7
+play,6,1,vinaf001,11,BCX,4/P4
+play,7,0,berkl001,31,FBBBX,9/F9
+play,7,0,trubc001,30,BBBB,W
+play,7,0,chavr001,01,CX,54(1)3/GDP
+play,7,1,paquc001,20,BBX,HR/8
+play,7,1,edmoj001,22,BCBFC,K/C
+play,7,1,lankr001,01,CX,HR/78
+play,7,1,tatif001,00,,NP
+sub,meacr001,"Rusty Meacham",0,9,1
+play,7,1,tatif001,32,SSBFFBFFBFB,W
+play,7,1,drewj001,02,FSX,S9/9S.1-3
+play,7,1,rente001,32,CCBBBX,53/G.3-H;1-2
+play,7,1,mathm001,22,SBSFFBX,23/G
+play,8,0,meacr001,00,,NP
+sub,ceder001,"Roger Cedeno",0,9,11
+play,8,0,ceder001,00,,NP
+sub,morrm001,"Matt Morris",1,9,1
+play,8,0,ceder001,21,BBCX,S8
+play,8,0,lugoj001,01,CX,46(1)/FO
+play,8,0,bogat001,32,SBFBBFB,W.1-2
+play,8,0,bagwj001,22,BSSFBX,D7.2-H;1-3
+play,8,0,hidar001,10,BX,3/FL
+play,8,0,aloum001,22,BSBFX,S8.3-H;2-H
+play,8,0,berkl001,00,X,7/F7
+play,8,1,morrm001,00,,NP
+sub,ceder001,"Roger Cedeno",0,9,7
+play,8,1,morrm001,00,,NP
+sub,berkl001,"Lance Berkman",0,6,9
+play,8,1,morrm001,00,,NP
+sub,mcgwm001,"Mark McGwire",1,9,11
+play,8,1,mcgwm001,00,,NP
+sub,lines001,"Scott Linebrink",0,5,1
+play,8,1,mcgwm001,12,BFSH,HP
+play,8,1,vinaf001,00,,NP
+sub,satul001,"Luis Saturria",1,9,12
+play,8,1,vinaf001,01,FH,HP.1-2
+play,8,1,paquc001,22,CFBBFFX,3/FL
+play,8,1,edmoj001,22,BBSCX,4(B)4(2)/LDP
+play,9,0,trubc001,00,,NP
+sub,timlm001,"Mike Timlin",1,9,1
+play,9,0,trubc001,00,,NP
+sub,ensbm001,"Morgan Ensberg",0,7,11
+play,9,0,ensbm001,10,BX,63/G
+com,"Debut game for Morgan Ensberg"
+play,9,0,chavr001,22,SBBFX,S
+play,9,0,ceder001,22,CBCFBX,S7.1-2
+play,9,0,lugoj001,11,BFX,8/F8
+play,9,0,bogat001,11,BFX,4/L4
+data,er,holtc001,8
+data,er,poweb001,2
+data,er,meacr001,1
+data,er,lines001,0
+data,er,ankir001,2
+data,er,morrm001,3
+data,er,timlm001,0

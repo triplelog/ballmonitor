@@ -1,0 +1,161 @@
+version,2
+info,visteam,PIT
+info,hometeam,SFN
+info,site,SFO03
+info,date,2000/08/03
+info,number,0
+info,starttime,7:15PM
+info,daynight,night
+info,usedh,false
+info,umphome,scotd901
+info,ump1b,hudsm901
+info,ump2b,cedeg901
+info,ump3b,welkt901
+info,pitches,pitches
+info,temp,67
+info,winddir,rtol
+info,windspeed,14
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,190
+info,attendance,40930
+info,wp,ortir001
+info,lp,cordf001
+info,save,
+start,morrw001,"Warren Morris",0,1,4
+start,kendj001,"Jason Kendall",0,2,2
+start,vandj001,"John Vander Wal",0,3,7
+start,gileb002,"Brian Giles",0,4,8
+start,younk001,"Kevin Young",0,5,3
+start,ramia001,"Aramis Ramirez",0,6,5
+start,ramia002,"Alex Ramirez",0,7,9
+start,mearp001,"Pat Meares",0,8,6
+start,cordf001,"Francisco Cordova",0,9,1
+start,benam001,"Marvin Benard",1,1,8
+start,muelb001,"Bill Mueller",1,2,5
+start,bondb001,"Barry Bonds",1,3,7
+start,kentj001,"Jeff Kent",1,4,4
+start,snowj001,"J.T. Snow",1,5,3
+start,burke001,"Ellis Burks",1,6,9
+start,aurir001,"Rich Aurilia",1,7,6
+start,estab001,"Bobby Estalella",1,8,2
+start,ortir001,"Russ Ortiz",1,9,1
+play,1,0,morrw001,22,CBFBX,S8
+play,1,0,kendj001,02,CFH,HP.1-2
+play,1,0,vandj001,01,CB,WP.2-3;1-2
+play,1,0,vandj001,31,CBBBB,W
+play,1,0,gileb002,32,BCBCBC,K/C
+play,1,0,younk001,12,CBFX,9/SF.3-H
+play,1,0,ramia001,31,CBBBB,W.2-3;1-2
+play,1,0,ramia002,12,CBSS,K
+play,1,1,benam001,11,BCX,D7
+play,1,1,muelb001,22,BBFFFFFS,K
+play,1,1,bondb001,22,FBSBC,K/C
+play,1,1,kentj001,10,BX,HR/7.2-H
+play,1,1,snowj001,01,CX,43/G
+play,2,0,mearp001,11,BFX,63/G
+play,2,0,cordf001,12,CCFBFS,K
+play,2,0,morrw001,22,BBFSX,S7/7S
+play,2,0,kendj001,22,BCFFBFFFX,S8.1-2
+play,2,0,vandj001,12,CBSS,K
+play,2,1,burke001,22,CBCBFFC,K/C
+play,2,1,aurir001,10,BX,D7
+play,2,1,estab001,22,FSBBS,K
+play,2,1,ortir001,12,BSSX,S.2-3
+play,2,1,benam001,00,X,13/G
+play,3,0,gileb002,01,CX,7/F7D
+play,3,0,younk001,01,CX,9/F9
+play,3,0,ramia001,01,SX,6/L6
+play,3,1,muelb001,01,FX,S7
+play,3,1,bondb001,00,X,S9.1-2
+play,3,1,kentj001,32,CFBBBFX,D7/7S.2-H;1-H
+play,3,1,snowj001,12,BSCX,S8.2-3
+play,3,1,burke001,31,BBSBX,9/SF.3-H
+play,3,1,aurir001,20,BBX,S8.1-2
+play,3,1,estab001,12,CBFX,53/G.2-3;1-2
+play,3,1,ortir001,01,CX,3/FL
+play,4,0,ramia002,02,SCS,K
+play,4,0,mearp001,02,FSC,K/C
+play,4,0,cordf001,12,BFFFFX,153/G
+play,4,1,benam001,12,LBLX,D9
+play,4,1,muelb001,01,FX,3/G.2-3
+play,4,1,bondb001,30,IIII,IW
+play,4,1,kentj001,02,FSX,D/78.3-H;1-H
+play,4,1,snowj001,22,BFFFBB,WP.2-3
+play,4,1,snowj001,32,BFFFBBB,W
+play,4,1,burke001,00,,NP
+sub,wilkm001,"Marc Wilkins",0,9,1
+play,4,1,burke001,22,BBFSX,64(1)3/GDP
+play,5,0,morrw001,00,X,S8
+play,5,0,kendj001,32,BBCCFBB,W.1-2
+play,5,0,vandj001,22,BCSBS,K
+play,5,0,gileb002,02,CCFX,7/F7
+play,5,0,younk001,32,BBFBFC,K/C
+play,5,1,aurir001,00,X,7/F7
+play,5,1,estab001,12,FSBX,53/G
+play,5,1,ortir001,10,BX,8/F8
+play,6,0,ramia001,00,X,7/F7
+play,6,0,ramia002,11,BCX,8/F8
+play,6,0,mearp001,02,CFFS,K
+play,6,1,benam001,32,CBBBCFB,W
+play,6,1,muelb001,32,BBBCSFB,W.1-2
+play,6,1,bondb001,00,X,3/FL
+play,6,1,kentj001,32,CBCBFBB,W.2-3;1-2
+play,6,1,snowj001,21,BCBX,8/SF.3-H
+play,6,1,burke001,21,BBFX,46(1)/FO.2-3
+play,7,0,wilkm001,00,,NP
+sub,wilse001,"Enrique Wilson",0,9,11
+play,7,0,wilse001,22,BCCBC,K/C
+play,7,0,morrw001,01,CX,53/G
+play,7,0,kendj001,22,CBFBX,S
+play,7,0,vandj001,00,,NP
+sub,riosa001,"Armando Rios",1,9,9
+play,7,0,vandj001,00,,NP
+sub,fulta001,"Aaron Fultz",1,6,1
+play,7,0,vandj001,12,FSBX,13/G
+play,7,1,aurir001,00,,NP
+sub,saues001,"Scott Sauerbeck",0,9,1
+play,7,1,aurir001,32,BCBCFBB,W
+play,7,1,estab001,12,SBCS,K
+play,7,1,riosa001,31,BBBCX,HR/9.1-H
+play,7,1,benam001,12,BCFC,K/C
+play,7,1,muelb001,12,CFBX,7/F7D
+play,8,0,gileb002,00,,NP
+sub,cresf001,"Felipe Crespo",1,3,7
+play,8,0,gileb002,12,CFBS,K
+play,8,0,younk001,00,X,63/G
+play,8,0,ramia001,20,BBX,S7/7S
+play,8,0,ramia002,12,SBSS,K
+play,8,1,cresf001,00,,NP
+sub,browe001,"Emil Brown",0,4,8
+play,8,1,cresf001,00,,NP
+sub,willm005,"Mike Williams",0,9,1
+play,8,1,cresf001,22,BBSFS,K
+play,8,1,kentj001,22,SBBSC,K/C
+play,8,1,snowj001,00,,NP
+sub,davir002,"Russ Davis",1,5,11
+play,8,1,davir002,02,CSC,K/C
+play,9,0,mearp001,00,,NP
+sub,benam001,"Marvin Benard",1,1,7
+play,9,0,mearp001,00,,NP
+sub,cresf001,"Felipe Crespo",1,3,3
+play,9,0,mearp001,00,,NP
+sub,martr003,"Ramon E. Martinez",1,4,4
+play,9,0,mearp001,00,,NP
+sub,murrc001,"Calvin Murray",1,6,8
+play,9,0,mearp001,00,,NP
+sub,deltm001,"Miguel Del Toro",1,5,1
+play,9,0,mearp001,31,BBBCX,HR/7
+play,9,0,willm005,00,,NP
+sub,avenb001,"Bruce Aven",0,9,11
+play,9,0,avenb001,00,X,8/F8
+play,9,0,morrw001,00,X,9/F9
+play,9,0,kendj001,22,BCCBS,K23
+data,er,cordf001,7
+data,er,wilkm001,1
+data,er,saues001,2
+data,er,willm005,0
+data,er,ortir001,1
+data,er,fulta001,0
+data,er,deltm001,1

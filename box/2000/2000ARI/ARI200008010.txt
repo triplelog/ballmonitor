@@ -1,0 +1,139 @@
+version,2
+info,visteam,ATL
+info,hometeam,ARI
+info,site,PHO01
+info,date,2000/08/01
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,emmep901
+info,ump1b,davig901
+info,ump2b,guccc901
+info,ump3b,riekr901
+info,pitches,pitches
+info,temp,72
+info,winddir,unknown
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,156
+info,attendance,35138
+info,wp,millk004
+info,lp,swing001
+info,save,remlm001
+start,furcr001,"Rafael Furcal",0,1,6
+start,jonea002,"Andruw Jones",0,2,8
+start,jonec004,"Chipper Jones",0,3,5
+start,jordb001,"Brian Jordan",0,4,9
+start,galaa001,"Andres Galarraga",0,5,3
+start,surhb001,"B.J. Surhoff",0,6,7
+start,lopej001,"Javy Lopez",0,7,2
+start,lockk001,"Keith Lockhart",0,8,4
+start,millk004,"Kevin Millwood",0,9,1
+start,womat001,"Tony Womack",1,1,6
+start,bellj001,"Jay Bell",1,2,4
+start,gonzl001,"Luis Gonzalez",1,3,7
+start,willm003,"Matt D. Williams",1,4,5
+start,finls001,"Steve Finley",1,5,8
+start,cabra001,"Alex Cabrera",1,6,3
+start,contj001,"Jason Conti",1,7,9
+start,milld002,"Damian Miller",1,8,2
+start,reyna001,"Armando Reynoso",1,9,1
+play,1,0,furcr001,12,CBSX,8/F8
+play,1,0,jonea002,32,BBCBSC,K/C
+play,1,0,jonec004,01,CX,S9/9S
+play,1,0,jordb001,21,BBCX,9/F9
+play,1,1,womat001,12,CBSS,K
+play,1,1,bellj001,22,CBBSX,6/L6
+play,1,1,gonzl001,22,BBCFFFX,9/F9
+play,2,0,galaa001,22,BFFBS,K
+play,2,0,surhb001,32,CSFBBBFX,D/89D
+play,2,0,lopej001,22,FBBFH,HP
+play,2,0,lockk001,12,CBFFC,K/C
+play,2,0,millk004,12,SBFC,K/C
+play,2,1,willm003,01,CX,63/G
+play,2,1,finls001,01,CX,8/F8
+play,2,1,cabra001,01,FX,9/F9
+play,3,0,furcr001,10,BX,6/P6
+play,3,0,jonea002,21,BFBX,S7
+play,3,0,jonec004,11,BFX,9/L9.1-2(E9/TH)
+play,3,0,jordb001,22,BFFBX,53/G
+play,3,1,contj001,02,SFFS,K
+play,3,1,milld002,31,BCBBX,8/F8
+play,3,1,reyna001,11,CBX,9/F9
+play,4,0,galaa001,00,X,S8
+play,4,0,surhb001,22,CCFBBFX,9/F9
+play,4,0,lopej001,20,BBX,9/F9S
+play,4,0,lockk001,02,CSX,7/F7
+play,4,1,womat001,11,BCX,13/BG
+play,4,1,bellj001,11,BCX,8/F8
+play,4,1,gonzl001,12,CBSS,K
+play,5,0,millk004,00,X,3/FL
+play,5,0,furcr001,22,CBSBFS,K
+play,5,0,jonea002,20,BBX,9/F9S
+play,5,1,willm003,00,X,3/P3
+play,5,1,finls001,12,BCCX,S8
+play,5,1,cabra001,12,FFBX,6(1)3/GDP
+play,6,0,jonec004,00,X,8/F8
+play,6,0,jordb001,02,SFX,43/G
+play,6,0,galaa001,11,CBX,8/F8
+play,6,1,contj001,22,BCBCS,K
+play,6,1,milld002,20,BBX,9/FL
+play,6,1,reyna001,00,X,8/F8S
+play,7,0,surhb001,01,CX,53/G
+play,7,0,lopej001,11,BFX,9/F9D
+play,7,0,lockk001,01,CX,5/FL
+play,7,1,womat001,02,CCFX,7/F7
+play,7,1,bellj001,31,BFBBB,W
+play,7,1,gonzl001,11,CBX,D/78D.1-H;B-3(THH)
+play,7,1,willm003,20,BBX,7/SF.3-H
+play,7,1,finls001,12,BFSX,8/F8
+play,8,0,millk004,00,,NP
+sub,joynw001,"Wally Joyner",0,9,11
+play,8,0,joynw001,11,FBX,S7
+play,8,0,furcr001,00,,NP
+sub,lombg001,"George Lombard",0,9,12
+play,8,0,furcr001,31,CBBBX,7/F7
+play,8,0,jonea002,12,FBSX,HR/7.1-H
+com,"$disputed fan interference"
+play,8,0,jonec004,00,,NP
+sub,swing001,"Greg Swindell",1,9,1
+play,8,0,jonec004,11,BCX,D7
+play,8,0,jordb001,00,,NP
+sub,ruffj001,"Johnny Ruffin",1,9,1
+play,8,0,jordb001,01,SX,HR/7.2-H
+play,8,0,galaa001,02,SFS,K
+play,8,0,surhb001,02,FSX,43/G
+play,8,1,cabra001,00,,NP
+sub,ligtk001,"Kerry Ligtenberg",0,9,1
+play,8,1,cabra001,11,BSX,9/L9
+play,8,1,contj001,01,CX,6/P6
+play,8,1,milld002,02,FFS,K
+play,9,0,lopej001,00,X,63/G
+play,9,0,lockk001,22,BFFBS,K
+play,9,0,ligtk001,00,,NP
+sub,bonib001,"Bobby Bonilla",0,9,11
+play,9,0,bonib001,00,X,9/F9
+play,9,1,ruffj001,00,,NP
+sub,rockj001,"John Rocker",0,9,1
+play,9,1,ruffj001,00,,NP
+sub,bautd001,"Danny Bautista",1,9,11
+play,9,1,bautd001,31,CBBBB,W
+play,9,1,womat001,00,,NP
+sub,colbg001,"Greg Colbrunn",1,1,11
+play,9,1,colbg001,02,CCX,8/F8
+play,9,1,bellj001,30,BBBB,W.1-2
+play,9,1,gonzl001,00,,NP
+sub,remlm001,"Mike Remlinger",0,9,1
+play,9,1,gonzl001,10,BX,8/F8.2-3
+play,9,1,willm003,12,CFFBX,9/FL
+com,"$great sliding catch to end game"
+data,er,millk004,2
+data,er,ligtk001,0
+data,er,rockj001,0
+data,er,remlm001,0
+data,er,reyna001,2
+data,er,swing001,1
+data,er,ruffj001,1

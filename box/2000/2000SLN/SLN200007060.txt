@@ -1,0 +1,173 @@
+version,2
+info,visteam,CIN
+info,hometeam,SLN
+info,site,STL09
+info,date,2000/07/06
+info,number,0
+info,starttime,7:10PM
+info,daynight,night
+info,usedh,false
+info,umphome,herna901
+info,ump1b,fostm901
+info,ump2b,kulpr901
+info,ump3b,marsr901
+info,pitches,pitches
+info,temp,92
+info,winddir,rtol
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,203
+info,attendance,43287
+info,wp,desse001
+info,lp,ankir001
+info,save,
+start,stync001,"Chris Stynes",0,1,5
+start,larkb001,"Barry Larkin",0,2,6
+start,grifk002,"Ken Griffey",0,3,8
+start,bichd001,"Dante Bichette",0,4,9
+start,yound001,"Dmitri Young",0,5,3
+start,ochoa001,"Alex Ochoa",0,6,7
+start,reesp001,"Pokey Reese",0,7,4
+start,santb001,"Benito Santiago",0,8,2
+start,ferno001,"Osvaldo Fernandez",0,9,1
+start,vinaf001,"Fernando Vina",1,1,4
+start,rente001,"Edgar Renteria",1,2,6
+start,lankr001,"Ray Lankford",1,3,7
+start,mcgwm001,"Mark McGwire",1,4,3
+start,davie001,"Eric Davis",1,5,9
+start,tatif001,"Fernando Tatis",1,6,5
+start,drewj001,"J.D. Drew",1,7,8
+start,mcdok001,"Keith McDonald",1,8,2
+start,ankir001,"Rick Ankiel",1,9,1
+play,1,0,stync001,31,BBBCX,9/F9
+play,1,0,larkb001,22,CBBFFS,K
+play,1,0,grifk002,32,BCBSBFFX,6/P6
+play,1,1,vinaf001,11,BCX,3/G
+play,1,1,rente001,01,CX,S5/BG5
+play,1,1,lankr001,01,SX,S9/9S.1-3
+play,1,1,mcgwm001,00,X,S7/7S.3-H;1-3
+play,1,1,davie001,21,CBBX,53/G.3-H;1-2
+play,1,1,tatif001,32,BFCBBB,W
+play,1,1,drewj001,22,BFSBC,K/C
+play,2,0,bichd001,02,CSH,HP
+play,2,0,yound001,00,,NP
+sub,tuckm001,"Michael Tucker",0,4,12
+play,2,0,yound001,12,BFCB,WP.1-2
+play,2,0,yound001,22,BFCBFX,S7.2-3
+play,2,0,ochoa001,11,FBX,D9.3-H;1-3
+play,2,0,reesp001,21,BBFB,WP.3-H;2-3
+play,2,0,reesp001,31,BBFBX,63/G.3-H
+play,2,0,santb001,22,BFBFS,K
+play,2,0,ferno001,12,CFBS,K
+play,2,1,mcdok001,00,,NP
+sub,tuckm001,"Michael Tucker",0,4,9
+play,2,1,mcdok001,10,BX,HR/7
+com,"$homer in first two major league at bats"
+play,2,1,ankir001,22,BFFBX,43/G
+play,2,1,vinaf001,00,X,S7
+play,2,1,rente001,22,BBCFX,S7/7S.1-2
+play,2,1,lankr001,00,,NP
+sub,desse001,"Elmer Dessens",0,9,1
+play,2,1,lankr001,10,BX,8/F8D.2-3
+play,2,1,mcgwm001,11,BSX,64(1)/FO
+play,3,0,stync001,00,X,S8
+play,3,0,larkb001,01,FB,WP.1-2
+play,3,0,larkb001,31,FBBBB,W
+play,3,0,grifk002,12,BFSS,K
+play,3,0,tuckm001,32,SCBBFBX,7/F7S
+play,3,0,yound001,12,BFFFX,D7.2-H;1-H(E4)(UR)
+play,3,0,ochoa001,22,FBBFX,9/F9
+play,3,1,davie001,31,CBBBX,7/F7
+play,3,1,tatif001,32,BFBBSX,D9
+play,3,1,drewj001,02,SCB,WP.2-3
+play,3,1,drewj001,22,SCBFFBS,K
+play,3,1,mcdok001,30,BBBB,W
+play,3,1,ankir001,10,BX,64(1)/FO
+play,4,0,reesp001,00,,NP
+sub,paquc001,"Craig Paquette",1,4,3
+play,4,0,reesp001,01,CX,7/F7
+play,4,0,santb001,10,BX,63/G
+play,4,0,desse001,12,CBSFFS,K
+play,4,1,vinaf001,00,X,D/89D
+play,4,1,rente001,32,CBBCBX,7/F7
+play,4,1,lankr001,12,SCBFX,3/G.2-3
+play,4,1,paquc001,00,X,8/F8D
+play,5,0,stync001,32,CBCFBFBX,HR/7
+play,5,0,larkb001,10,BX,8/F8
+play,5,0,grifk002,12,FFBS,K
+play,5,0,tuckm001,12,CCFBS,K
+play,5,1,davie001,12,CFBS,K
+play,5,1,tatif001,12,CFBX,E8/F.B-2
+play,5,1,drewj001,11,CBX,S9/9S.2-3
+play,5,1,mcdok001,12,CCBX,3/G.3-H(UR);1-2
+play,5,1,ankir001,02,CSS,K
+play,6,0,yound001,00,,NP
+sub,benea002,"Alan Benes",1,9,1
+play,6,0,yound001,10,BX,43/G
+play,6,0,ochoa001,12,BFFFX,S8
+play,6,0,reesp001,02,FSB,SB2
+play,6,0,reesp001,12,FSBFX,D7/7D.2-H
+play,6,0,santb001,11,CBX,8/L8
+play,6,0,desse001,12,CBCFX,9/F9
+play,6,1,vinaf001,11,BCX,3/G
+play,6,1,rente001,11,CBX,43/G
+play,6,1,lankr001,22,BSSBFX,HR/8
+play,6,1,paquc001,02,FFC,K/C
+play,7,0,stync001,32,BCCBBX,S
+play,7,0,larkb001,02,CFC,K/C
+play,7,0,grifk002,12,SBFX,64(1)/FO
+play,7,0,tuckm001,32,BBCFBB,W.1-2
+play,7,0,yound001,31,BBBFX,S8.2-H;1-3
+play,7,0,ochoa001,12,FBFX,8/L8
+play,7,1,davie001,32,BFBBFX,S8
+play,7,1,tatif001,00,,NP
+sub,sulls001,"Scott Sullivan",0,9,1
+play,7,1,tatif001,11,FBX,9/F9
+play,7,1,drewj001,02,CSS,K
+play,7,1,mcdok001,22,BBSFS,K
+play,8,0,reesp001,00,,NP
+sub,jamem001,"Mike James",1,9,1
+play,8,0,reesp001,11,BCX,7/F7S
+play,8,0,santb001,00,X,53/G
+play,8,0,sulls001,12,FBFX,3/FL
+play,8,1,jamem001,00,,NP
+sub,howat001,"Thomas Howard",1,9,11
+play,8,1,howat001,12,CBSFS,K
+play,8,1,vinaf001,00,X,7/L7
+play,8,1,rente001,10,BX,7/F7S
+play,9,0,stync001,00,,NP
+sub,sloch001,"Heathcliff Slocumb",1,9,1
+play,9,0,stync001,12,BFCFS,K
+play,9,0,larkb001,00,X,S9
+play,9,0,grifk002,02,CFFX,S9/9S.1-2
+play,9,0,tuckm001,22,BCBFX,D9/9D.2-H;1-3
+play,9,0,yound001,30,IIII,IW
+play,9,0,ochoa001,00,X,D7.3-H;2-H;1-H
+play,9,0,reesp001,12,CBFFX,3/P3
+play,9,0,santb001,01,SX,4/P4
+play,9,1,lankr001,00,,NP
+sub,stync001,"Chris Stynes",0,1,7
+play,9,1,lankr001,00,,NP
+sub,tuckm001,"Michael Tucker",0,4,8
+play,9,1,lankr001,00,,NP
+sub,ochoa001,"Alex Ochoa",0,6,9
+play,9,1,lankr001,00,,NP
+sub,castj004,"Juan Castro",0,9,5
+play,9,1,lankr001,00,,NP
+sub,reyed001,"Dennys Reyes",0,3,1
+play,9,1,lankr001,22,BFBSX,HR/9
+play,9,1,paquc001,12,CBSX,S7
+play,9,1,davie001,02,FSS,K
+play,9,1,tatif001,20,BBX,9/L9
+play,9,1,drewj001,00,B,DI.1-2
+play,9,1,drewj001,12,BCSS,K
+data,er,ferno001,3
+data,er,desse001,1
+data,er,sulls001,0
+data,er,reyed001,1
+data,er,ankir001,5
+data,er,benea002,2
+data,er,jamem001,0
+data,er,sloch001,4

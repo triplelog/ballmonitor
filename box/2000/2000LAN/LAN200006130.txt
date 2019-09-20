@@ -1,0 +1,129 @@
+version,2
+info,visteam,ARI
+info,hometeam,LAN
+info,site,LOS03
+info,date,2000/06/13
+info,number,0
+info,starttime,7:10PM
+info,daynight,night
+info,usedh,false
+info,umphome,randt901
+info,ump1b,barrt901
+info,ump2b,laynj901
+info,ump3b,monte901
+info,pitches,pitches
+info,temp,78
+info,winddir,ltor
+info,windspeed,11
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,150
+info,attendance,34067
+info,wp,parkc002
+info,lp,morgm001
+info,save,
+start,womat001,"Tony Womack",0,1,6
+start,bellj001,"Jay Bell",0,2,4
+start,gonzl001,"Luis Gonzalez",0,3,7
+start,finls001,"Steve Finley",0,4,8
+start,lee-t002,"Travis Lee",0,5,3
+start,wardt001,"Turner Ward",0,6,9
+start,milld002,"Damian Miller",0,7,2
+start,counc001,"Craig Counsell",0,8,5
+start,morgm001,"Mike Morgan",0,9,1
+start,santf001,"F.P. Santangelo",1,1,8
+start,grudm001,"Mark Grudzielanek",1,2,4
+start,shefg001,"Gary Sheffield",1,3,7
+start,grees001,"Shawn Green",1,4,9
+start,karre001,"Eric Karros",1,5,3
+start,hansd001,"Dave Hansen",1,6,5
+start,kreuc001,"Chad Kreuter",1,7,2
+start,coraa001,"Alex Cora",1,8,6
+start,parkc002,"Chan Ho Park",1,9,1
+play,1,0,womat001,21,BBCX,7/F7
+play,1,0,bellj001,00,X,6/P6
+play,1,0,gonzl001,11,CBX,7/F7
+play,1,1,santf001,31,BCBBB,W
+play,1,1,grudm001,00,X,9/FL
+play,1,1,shefg001,21,BBSX,HR/8.1-H
+play,1,1,grees001,21,CBBX,31/G
+play,1,1,karre001,02,CFX,S8
+play,1,1,hansd001,22,CBBCC,K/C
+play,2,0,finls001,22,CFBBX,7/F7
+play,2,0,lee-t002,00,X,D9/9S
+play,2,0,wardt001,01,FX,6/P6
+play,2,0,milld002,11,CBX,53/G
+play,2,1,kreuc001,22,BCCBFC,K/C
+play,2,1,coraa001,02,CCX,S
+play,2,1,parkc002,00,X,E3/SH.1-2
+play,2,1,santf001,01,LX,46(1)/FO.2-3
+play,2,1,grudm001,11,CBX,53/G
+play,3,0,counc001,31,BBCBB,W
+play,3,0,morgm001,00,X,14/SH.1-2
+play,3,0,womat001,11,BFX,S1/BG1.2X3(5)#
+play,3,0,bellj001,21,BSBX,6/P6
+play,3,1,shefg001,12,FFBX,6/P6
+play,3,1,grees001,21,BBFX,S8
+play,3,1,karre001,00,X,54(1)3/GDP
+play,4,0,gonzl001,01,CX,S9
+play,4,0,finls001,12,CBFX,3/FL
+play,4,0,lee-t002,20,BBX,46(1)3/GDP
+play,4,1,hansd001,10,BX,S8
+play,4,1,kreuc001,11,BFX,46(1)3/GDP
+play,4,1,coraa001,21,BBCX,63/G
+play,5,0,wardt001,10,BX,43/G
+play,5,0,milld002,10,BX,HR/7
+play,5,0,counc001,32,CBSFBBX,43/G
+play,5,0,morgm001,22,BBCSX,63/G
+play,5,1,parkc002,01,CX,9/F9
+play,5,1,santf001,10,BX,S9
+play,5,1,grudm001,12,CBCX,D9.1-H
+play,5,1,shefg001,30,BBBB,W
+play,5,1,grees001,31,BCBBX,54(1)/FO.2-H(E4/TH1)
+play,5,1,karre001,22,CFBBB,SB2
+play,5,1,karre001,32,CFBBBX,S.2-3
+play,5,1,hansd001,00,,NP
+sub,swing001,"Greg Swindell",0,9,1
+play,5,1,hansd001,00,,NP
+sub,elstk001,"Kevin Elster",1,6,11
+play,5,1,elstk001,32,CBBBSFX,7/L7
+play,6,0,womat001,00,,NP
+sub,elstk001,"Kevin Elster",1,6,5
+play,6,0,womat001,02,CFX,53/G
+play,6,0,bellj001,12,CBCFS,K
+play,6,0,gonzl001,20,BBX,43/G
+play,6,1,kreuc001,00,X,9/F9
+play,6,1,coraa001,12,CBCS,K
+play,6,1,parkc002,02,CCS,K
+play,7,0,finls001,22,BBCFS,K
+play,7,0,lee-t002,20,BBX,6/P6
+play,7,0,wardt001,21,BFBX,43/G
+play,7,1,santf001,11,BFX,9/F9
+play,7,1,grudm001,00,,NP
+sub,sprir001,"Russ Springer",0,9,1
+play,7,1,grudm001,11,BCX,S9
+play,7,1,shefg001,12,CCBB,SB2.1-3(WP)
+play,7,1,shefg001,32,CCBBFBX,9/SF.3-H
+play,7,1,grees001,32,BBFBFS,K
+play,8,0,milld002,02,CSS,K23
+play,8,0,counc001,11,BCX,S9/9S
+play,8,0,sprir001,00,,NP
+sub,friah001,"Hanley Frias",0,9,11
+play,8,0,friah001,31,CBBBX,53/G.1-2
+play,8,0,womat001,22,BBCFX,7/FL
+play,8,1,karre001,00,,NP
+sub,mantm001,"Matt Mantei",0,9,1
+play,8,1,karre001,21,FBBX,HR/7
+play,8,1,elstk001,11,BFX,9/F9D
+play,8,1,kreuc001,31,BBBCB,W
+play,8,1,coraa001,02,SCS,K
+play,8,1,parkc002,12,FFBS,K
+play,9,0,bellj001,22,BCBFX,8/F8
+play,9,0,gonzl001,01,CX,3/G
+play,9,0,finls001,22,BCBFS,K
+data,er,morgm001,4
+data,er,swing001,0
+data,er,sprir001,1
+data,er,mantm001,1
+data,er,parkc002,1

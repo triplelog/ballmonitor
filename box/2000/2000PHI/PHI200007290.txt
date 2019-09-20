@@ -1,0 +1,133 @@
+version,2
+info,visteam,LAN
+info,hometeam,PHI
+info,site,PHI12
+info,date,2000/07/29
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,packs901
+info,ump1b,nelsj901
+info,ump2b,cousd901
+info,ump3b,marqa901
+info,pitches,pitches
+info,temp,81
+info,winddir,rtol
+info,windspeed,6
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,187
+info,attendance,35189
+info,wp,polic001
+info,lp,browk001
+info,save,branj001
+start,hollt001,"Todd Hollandsworth",0,1,8
+start,grudm001,"Mark Grudzielanek",0,2,4
+start,shefg001,"Gary Sheffield",0,3,7
+start,grees001,"Shawn Green",0,4,9
+start,karre001,"Eric Karros",0,5,3
+start,hundt001,"Todd Hundley",0,6,2
+start,belta001,"Adrian Beltre",0,7,5
+start,coraa001,"Alex Cora",0,8,6
+start,browk001,"Kevin Brown",0,9,1
+start,gland001,"Doug Glanville",1,1,8
+start,moram001,"Mickey Morandini",1,2,4
+start,abreb001,"Bobby Abreu",1,3,9
+start,roles001,"Scott Rolen",1,4,5
+start,brogr001,"Rico Brogna",1,5,3
+start,gantr001,"Ron Gant",1,6,7
+start,benng001,"Gary Bennett",1,7,2
+start,relad001,"Desi Relaford",1,8,6
+start,polic001,"Cliff Politte",1,9,1
+play,1,0,hollt001,11,BCX,43/G
+play,1,0,grudm001,32,CBBBFX,53/G
+play,1,0,shefg001,32,FBBFFFBB,W
+play,1,0,grees001,01,FX,9/L9
+play,1,1,gland001,22,BFBSX,S9
+play,1,1,moram001,32,LBBCFBFX,S8.1-3
+play,1,1,abreb001,32,CFBBBS,K
+play,1,1,roles001,01,FX,46(1)/FO.3-H
+play,1,1,brogr001,22,CBFBX,D7.1-3
+play,1,1,gantr001,22,CFBBX,53/G
+play,2,0,karre001,22,BBCFC,K/C
+play,2,0,hundt001,30,BBBB,W
+play,2,0,belta001,30,BBBB,W.1-2
+play,2,0,coraa001,22,CBSBS,K
+play,2,0,browk001,02,CFS,K
+play,2,1,benng001,12,CBFFC,K/C
+play,2,1,relad001,11,CBX,43/G
+play,2,1,polic001,22,BBCCC,K/C
+play,3,0,hollt001,12,BCSFFX,9/F9
+play,3,0,grudm001,01,CX,9/F9
+play,3,0,shefg001,32,CBBCBFX,7/F7
+play,3,1,gland001,01,CX,8/F8
+play,3,1,moram001,21,CBBX,6/L6
+play,3,1,abreb001,11,CBX,31/G
+play,4,0,grees001,10,BX,43/G
+play,4,0,karre001,22,CCBBFS,K
+play,4,0,hundt001,00,X,S9
+play,4,0,belta001,11,BCX,3/FL
+play,4,1,roles001,32,BFCBFBFFFB,W
+play,4,1,brogr001,10,BX,64(1)3/GDP
+play,4,1,gantr001,32,CBCBBB,W
+play,4,1,benng001,01,CX,64(1)/FO
+play,5,0,coraa001,22,BBCFX,S
+play,5,0,browk001,02,CSX,14/SH.1-2
+play,5,0,hollt001,12,FBFX,9/F9
+play,5,0,grudm001,22,SCBBX,3/L3
+play,5,1,relad001,11,BCX,63/G
+play,5,1,polic001,22,BCSBFX,D9
+play,5,1,gland001,30,BBBB,W
+play,5,1,moram001,22,CFBBFX,D9.2-H;1-3
+play,5,1,abreb001,21,BBCX,43/G.3-H;2-3
+play,5,1,roles001,11,BSX,53/G
+play,6,0,shefg001,22,CFBBX,8/F8D
+play,6,0,grees001,11,CBX,S8
+play,6,0,karre001,01,SX,8/F8S
+play,6,0,hundt001,02,CFX,8/F8
+play,6,1,brogr001,32,CBBFBFS,K
+play,6,1,gantr001,02,CSS,K
+play,6,1,benng001,00,X,D9
+play,6,1,relad001,30,IIII,IW
+play,6,1,polic001,11,FBX,43/G
+play,7,0,belta001,12,BCFS,K
+play,7,0,coraa001,21,BBCX,13/G
+play,7,0,browk001,00,,NP
+sub,donnc001,"Chris Donnels",0,9,11
+play,7,0,donnc001,22,CFBBX,S7
+play,7,0,hollt001,12,CBFS,K
+play,7,1,gland001,00,,NP
+sub,hergm001,"Matt Herges",0,9,1
+play,7,1,gland001,00,X,43/G
+play,7,1,moram001,12,BSFX,6/L6
+play,7,1,abreb001,20,BBX,7/F7
+play,8,0,grudm001,00,,NP
+sub,padiv001,"Vicente Padilla",1,9,1
+play,8,0,grudm001,32,BCCBBS,K
+play,8,0,shefg001,12,BCCX,S
+play,8,0,grees001,21,BFBX,S7.1-2
+play,8,0,karre001,21,BFBX,8/F8S
+play,8,0,hundt001,32,BBSCFBB,W.2-3;1-2
+play,8,0,belta001,12,CFBFX,64(1)/FO
+play,8,1,roles001,02,CCX,53/G
+play,8,1,brogr001,31,BCBBX,S8
+play,8,1,gantr001,22,BCCFBS,K
+play,8,1,benng001,01,CS,WP.1-2
+play,8,1,benng001,12,CSBFFX,43/G
+play,9,0,coraa001,00,,NP
+sub,hansd001,"Dave Hansen",0,8,11
+play,9,0,hansd001,00,,NP
+sub,branj001,"Jeff Brantley",1,9,1
+play,9,0,hansd001,32,BBBCCB,W
+play,9,0,hergm001,00,,NP
+sub,whitd001,"Devon White",0,9,11
+play,9,0,whitd001,21,CBBX,2/FL
+play,9,0,hollt001,22,CBBCS,K
+play,9,0,grudm001,00,X,3/FL
+data,er,browk001,3
+data,er,hergm001,0
+data,er,polic001,0
+data,er,padiv001,0
+data,er,branj001,0

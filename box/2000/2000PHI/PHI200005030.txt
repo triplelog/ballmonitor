@@ -1,0 +1,139 @@
+version,2
+info,visteam,CIN
+info,hometeam,PHI
+info,site,PHI12
+info,date,2000/05/03
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,gormb901
+info,ump1b,everm901
+info,ump2b,crawj901
+info,ump3b,dimum901
+info,pitches,pitches
+info,temp,71
+info,winddir,tocf
+info,windspeed,7
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,147
+info,attendance,23260
+info,wp,byrdp001
+info,lp,parrs001
+info,save,
+start,reesp001,"Pokey Reese",0,1,4
+start,cases001,"Sean Casey",0,2,3
+start,grifk002,"Ken Griffey",0,3,8
+start,yound001,"Dmitri Young",0,4,7
+start,bichd001,"Dante Bichette",0,5,9
+start,taube001,"Eddie Taubensee",0,6,2
+start,boona001,"Aaron Boone",0,7,5
+start,dawkt001,"Travis Dawkins",0,8,6
+start,parrs001,"Steve Parris",0,9,1
+start,gland001,"Doug Glanville",1,1,8
+start,gantr001,"Ron Gant",1,2,7
+start,abreb001,"Bobby Abreu",1,3,9
+start,roles001,"Scott Rolen",1,4,5
+start,brogr001,"Rico Brogna",1,5,3
+start,liebm001,"Mike Lieberthal",1,6,2
+start,moram001,"Mickey Morandini",1,7,4
+start,ariaa001,"Alex Arias",1,8,6
+start,byrdp001,"Paul Byrd",1,9,1
+play,1,0,reesp001,32,SCBBBX,9/F9
+play,1,0,cases001,32,BFFBBX,7/F7D
+play,1,0,grifk002,01,CX,63/G
+play,1,1,gland001,22,BFBFX,S
+play,1,1,gantr001,10,BX,8/F8
+play,1,1,abreb001,32,BBBCFX,46(1)3/GDP
+play,2,0,yound001,02,CFC,K/C
+play,2,0,bichd001,00,X,2/FL
+play,2,0,taube001,11,BFX,D9/9S
+play,2,0,boona001,32,BBSFFBX,2/FL
+play,2,1,roles001,21,CBBX,S8
+play,2,1,brogr001,32,BFBSBX,S7.1-2
+play,2,1,liebm001,01,SX,64(1)3/GDP.2-3
+play,2,1,moram001,22,BCBCX,3/G
+play,3,0,dawkt001,00,X,7/F7
+play,3,0,parrs001,12,CBSC,K/C
+play,3,0,reesp001,01,CX,8/F8S
+play,3,1,ariaa001,32,BBCFBX,S/78
+play,3,1,byrdp001,00,X,14/SH.1-2
+play,3,1,gland001,12,CBFS,K
+play,3,1,gantr001,02,CSB,WP.2-3
+play,3,1,gantr001,12,CSBX,8/F8
+play,4,0,cases001,00,X,43/G
+play,4,0,grifk002,32,FBCBBC,K/C
+play,4,0,yound001,22,FFBFBX,5/FL
+play,4,1,abreb001,32,CBBBFB,W
+play,4,1,roles001,00,X,S9/9S.1-3
+play,4,1,brogr001,12,SBSX,E4/TH.3-H;1-H(UR);B-2
+play,4,1,liebm001,22,BCBFX,8/F8
+play,4,1,moram001,02,FFS,K
+play,4,1,ariaa001,32,CSBBBFS,K
+play,5,0,bichd001,32,BCBSBX,7/F7
+play,5,0,taube001,00,X,S9
+play,5,0,boona001,00,X,13/G.1-2
+play,5,0,dawkt001,32,BCBFBX,53/G
+play,5,1,byrdp001,31,BBBCB,W
+play,5,1,gland001,12,BFLFFS,K
+play,5,1,gantr001,31,BBSBX,S9.1-2
+play,5,1,abreb001,12,CFBX,D7.2-H;1-H;BX3(5)#
+play,5,1,roles001,22,BFBFX,13/G
+play,6,0,parrs001,00,,NP
+sub,stync001,"Chris Stynes",0,9,11
+play,6,0,stync001,21,BFBX,53/G
+play,6,0,reesp001,11,BCX,63/G
+play,6,0,cases001,31,BBSBB,W
+play,6,0,grifk002,02,SCS,K
+play,6,1,brogr001,00,,NP
+sub,aybam001,"Manny Aybar",0,9,1
+play,6,1,brogr001,12,FSBX,31/G
+play,6,1,liebm001,22,FSBBX,S9/9S
+play,6,1,moram001,12,FBFX,3(B)6(1)/GDP
+play,7,0,yound001,00,X,8/F8
+play,7,0,bichd001,01,CX,63/G
+play,7,0,taube001,10,BX,HR/9
+play,7,0,boona001,01,CX,7/F7S
+play,7,1,ariaa001,01,CX,S
+play,7,1,byrdp001,00,,NP
+sub,sefck001,"Kevin Sefcik",1,9,11
+play,7,1,sefck001,32,FBBFFBB,W.1-2
+play,7,1,gland001,00,X,54/SH.2-3;1-2
+play,7,1,gantr001,10,BX,63/G
+play,7,1,abreb001,00,,NP
+sub,reyed001,"Dennys Reyes",0,9,1
+play,7,1,abreb001,22,BCSBFB,WP.3-H;2-3
+play,7,1,abreb001,32,BCSBFBS,K
+play,8,0,dawkt001,00,,NP
+sub,sefck001,"Kevin Sefcik",1,9,7
+play,8,0,dawkt001,00,,NP
+sub,morrh001,"Hal Morris",0,8,11
+play,8,0,morrh001,00,,NP
+sub,gomew001,"Wayne Gomes",1,2,1
+play,8,0,morrh001,30,BBBB,W
+play,8,0,reyed001,00,,NP
+sub,tuckm001,"Michael Tucker",0,9,11
+play,8,0,tuckm001,22,BCBFS,K
+play,8,0,reesp001,31,BBBCB,W.1-2
+play,8,0,cases001,31,BCBBX,E6/G.2-H(UR);1-3
+play,8,0,grifk002,00,X,4(1)3/GDP
+play,8,1,roles001,00,,NP
+sub,morrh001,"Hal Morris",0,8,3
+play,8,1,roles001,00,,NP
+sub,castj004,"Juan Castro",0,9,6
+play,8,1,roles001,00,,NP
+sub,desse001,"Elmer Dessens",0,2,1
+play,8,1,roles001,11,BCX,8/F8
+play,8,1,brogr001,22,BCCBS,K
+play,8,1,liebm001,00,X,53/G
+play,9,0,yound001,10,BX,S
+play,9,0,bichd001,12,BCFS,K
+play,9,0,taube001,00,X,46(1)3/GDP
+data,er,parrs001,3
+data,er,aybam001,1
+data,er,reyed001,0
+data,er,desse001,0
+data,er,byrdp001,1
+data,er,gomew001,0

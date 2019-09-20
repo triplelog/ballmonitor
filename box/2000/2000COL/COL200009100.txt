@@ -1,0 +1,167 @@
+version,2
+info,visteam,LAN
+info,hometeam,COL
+info,site,DEN02
+info,date,2000/09/10
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,false
+info,umphome,lampi901
+info,ump1b,shulj901
+info,ump2b,fichm901
+info,ump3b,roe-r901
+info,pitches,pitches
+info,temp,83
+info,winddir,tolf
+info,windspeed,6
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,185
+info,attendance,36273
+info,wp,dreid001
+info,lp,astap001
+info,save,hergm001
+start,goodt001,"Tom Goodwin",0,1,8
+start,grudm001,"Mark Grudzielanek",0,2,4
+start,shefg001,"Gary Sheffield",0,3,7
+start,grees001,"Shawn Green",0,4,9
+start,karre001,"Eric Karros",0,5,3
+start,hundt001,"Todd Hundley",0,6,2
+start,belta001,"Adrian Beltre",0,7,5
+start,coraa001,"Alex Cora",0,8,6
+start,dreid001,"Darren Dreifort",0,9,1
+start,pierj002,"Juan Pierre",1,1,8
+start,peren001,"Neifi Perez",1,2,6
+start,heltt001,"Todd Helton",1,3,3
+start,hammj001,"Jeffrey Hammonds",1,4,9
+start,walkt002,"Todd Walker",1,5,4
+start,cirij001,"Jeff Cirillo",1,6,5
+start,hollt001,"Todd Hollandsworth",1,7,7
+start,maynb001,"Brent Mayne",1,8,2
+start,astap001,"Pedro Astacio",1,9,1
+play,1,0,goodt001,00,X,D9
+play,1,0,grudm001,12,BFCX,S8.2-H
+play,1,0,shefg001,01,FX,S8.1-3
+play,1,0,grees001,02,CCS,K
+play,1,0,karre001,11,SBX,6(1)3/GDP
+play,1,1,pierj002,31,BFBBB,W
+play,1,1,peren001,21,BCBX,7/F7
+play,1,1,heltt001,22,BBCFX,7/F7D
+play,1,1,hammj001,00,B,WP.1-2
+play,1,1,hammj001,11,BCX,63/G
+play,2,0,hundt001,11,BFX,S9
+play,2,0,belta001,30,BBBB,W.1-2
+play,2,0,coraa001,10,BX,7/F7D.2-3;1-2
+play,2,0,dreid001,31,BCBBB,W
+play,2,0,goodt001,10,BX,S7.3-H;2-H;1-2
+play,2,0,grudm001,10,BX,E3/G.2-H;1-3;B-2
+play,2,0,shefg001,20,BBX,S/89.3-H;2-H(UR)
+play,2,0,grees001,00,,NP
+sub,jarvk001,"Kevin Jarvis",1,9,1
+play,2,0,grees001,21,BCB1,POCS2(16)
+play,2,0,grees001,32,BCB1FBB,W
+play,2,0,karre001,01,FX,3/FL
+play,2,1,walkt002,32,CSFBBBFC,K/C
+play,2,1,cirij001,32,BCSBBFFS,K
+play,2,1,hollt001,02,CCFFS,K
+play,3,0,hundt001,11,FBX,8/F8
+play,3,0,belta001,02,CSS,K
+play,3,0,coraa001,22,BCBFX,3/G
+play,3,1,maynb001,21,CBBX,43/G
+play,3,1,jarvk001,31,BSBBB,W
+play,3,1,pierj002,30,BBBB,W.1-2
+play,3,1,peren001,12,BCCC,K/C
+play,3,1,heltt001,11,CBX,63/G
+play,4,0,dreid001,02,FFS,K
+play,4,0,goodt001,12,BFSFFX,43/G
+play,4,0,grudm001,11,FBX,8/F8
+play,4,1,hammj001,31,BFBBB,W
+play,4,1,walkt002,30,BBBB,W.1-2
+play,4,1,cirij001,12,BCFX,S8.2-H;1-2
+play,4,1,hollt001,12,SSBS,K
+play,4,1,maynb001,00,X,3/G.2-3;1-2#
+play,4,1,jarvk001,00,,NP
+sub,melha001,"Adam Melhuse",1,9,11
+play,4,1,melha001,11,BSX,43/G
+play,5,0,shefg001,00,,NP
+sub,walkp001,"Pete Walker",1,9,1
+play,5,0,shefg001,32,CBFBBB,W
+play,5,0,grees001,21,SBBX,D/89.1-H
+com,"ej,bellb001,M,lampi901,Call at HP"
+com,"Rockies manager Buddy Bell ejected by HP umpire Ian Lamplugh"
+play,5,0,karre001,22,BBSFFS,K
+play,5,0,hundt001,22,CBBFX,D9.2-H
+play,5,0,belta001,01,CX,53/G
+play,5,0,coraa001,30,BBBB,W
+play,5,0,dreid001,12,CSBFX,53/G
+play,5,1,pierj002,01,CX,S
+play,5,1,peren001,02,FSFS,K
+play,5,1,heltt001,00,X,E6/TH.1-2
+play,5,1,hammj001,01,SX,63/G.2-3;1-2
+play,5,1,walkt002,12,SSFBFX,8/F8D
+play,6,0,goodt001,01,CX,S
+play,6,0,grudm001,10,BC,SB2
+play,6,0,grudm001,22,BCBFX,9/F9D.2-3
+play,6,0,shefg001,22,BCCBX,S9.3-H
+play,6,0,grees001,11,BCX,3/L3
+play,6,0,karre001,00,X,S8.1-2
+play,6,0,hundt001,11,FBX,HR/89.2-H;1-H
+play,6,0,belta001,00,,NP
+sub,fryej001,"Jeff Frye",1,9,4
+play,6,0,belta001,00,,NP
+sub,housc001,"Craig House",1,5,1
+play,6,0,belta001,30,BBBB,W
+play,6,0,coraa001,21,BCBX,46(1)/FO
+play,6,1,cirij001,00,,NP
+sub,donnc001,"Chris Donnels",0,5,3
+play,6,1,cirij001,00,,NP
+sub,lodup001,"Paul LoDuca",0,3,7
+play,6,1,cirij001,00,,NP
+sub,branj002,"Jeff Branson",0,9,6
+play,6,1,cirij001,00,,NP
+sub,hergm001,"Matt Herges",0,8,1
+play,6,1,cirij001,31,BBBFX,9/F9D
+play,6,1,hollt001,00,X,7/F7
+play,6,1,maynb001,21,BCBX,43/G
+play,7,0,branj002,00,,NP
+sub,penae001,"Elvis Pena",1,2,6
+play,7,0,branj002,00,,NP
+sub,huskb001,"Butch Huskey",1,3,3
+play,7,0,branj002,00,,NP
+sub,hollt001,"Todd Hollandsworth",1,7,9
+play,7,0,branj002,00,,NP
+sub,mendc001,"Carlos Mendoza",1,4,7
+play,7,0,branj002,00,X,8/F8
+play,7,0,goodt001,12,FFBX,13/G
+play,7,0,grudm001,12,CCBX,53/G
+play,7,1,fryej001,31,BCBBX,S7
+play,7,1,pierj002,00,X,6/P6
+play,7,1,penae001,00,X,7/F7D
+play,7,1,huskb001,02,CSX,53/G
+play,8,0,lodup001,21,FBBX,9/F9
+play,8,0,grees001,22,SBSBS,K
+play,8,0,donnc001,12,FBSS,K
+play,8,1,mendc001,00,X,53/G
+play,8,1,housc001,00,,NP
+sub,shumt001,"Terry Shumpert",1,5,11
+play,8,1,shumt001,20,BBX,4/P4
+play,8,1,cirij001,11,BCX,S
+play,8,1,hollt001,11,CBX,S9.1-2
+play,8,1,maynb001,32,BSBBFFX,9/F9
+play,9,0,hundt001,00,,NP
+sub,carrg001,"Giovanni Carrara",1,5,1
+play,9,0,hundt001,12,CBCS,K
+play,9,0,belta001,12,CFBX,53/G
+play,9,0,hergm001,10,BX,8/F8
+play,9,1,fryej001,12,BSFFX,6/L6
+play,9,1,pierj002,10,BX,4/L4
+play,9,1,penae001,11,BCX,43/G
+data,er,dreid001,1
+data,er,hergm001,0
+data,er,astap001,5
+data,er,jarvk001,0
+data,er,walkp001,6
+data,er,housc001,0
+data,er,carrg001,0

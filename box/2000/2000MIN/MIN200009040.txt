@@ -1,0 +1,147 @@
+version,2
+info,visteam,BAL
+info,hometeam,MIN
+info,site,MIN03
+info,date,2000/09/04
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,clara901
+info,ump1b,buckc901
+info,ump2b,reedr901
+info,ump3b,wendh902
+info,pitches,pitches
+info,temp,72
+info,winddir,ltor
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,181
+info,attendance,8373
+info,wp,mercj001
+info,lp,redmm002
+info,save,kohlr001
+start,andeb001,"Brady Anderson",0,1,9
+start,hairj002,"Jerry Hairston",0,2,4
+start,deshd001,"Delino DeShields",0,3,7
+start,conij001,"Jeff Conine",0,4,5
+start,ripkc001,"Cal Ripken",0,5,10
+start,fordb001,"Brook Fordyce",0,6,2
+start,richc001,"Chris Richard",0,7,3
+start,lewim001,"Mark Lewis",0,8,6
+start,kingg001,"Eugene Kingsale",0,9,8
+start,mercj001,"Jose Mercedes",0,0,1
+start,hockd001,"Denny Hocking",1,1,4
+start,guzmc001,"Cristian Guzman",1,2,6
+start,lawtm002,"Matt Lawton",1,3,9
+start,coomr001,"Ron Coomer",1,4,3
+start,ortid001,"David Ortiz",1,5,10
+start,koskc001,"Corey Koskie",1,6,5
+start,huntt001,"Torii Hunter",1,7,8
+start,jonej003,"Jacque Jones",1,8,7
+start,piera001,"A.J. Pierzynski",1,9,2
+start,redmm002,"Mark Redman",1,0,1
+play,1,0,andeb001,22,CBBSS,K
+play,1,0,hairj002,32,BBBCCFS,K23
+play,1,0,deshd001,32,FBCBFBX,S8
+play,1,0,conij001,12,FSB1,PO1(13)
+play,1,1,hockd001,11,SBX,6/L6
+play,1,1,guzmc001,32,BCBBSX,D7.BX3(765)
+play,1,1,lawtm002,11,CBX,S7
+play,1,1,coomr001,32,CBBFFBFX,53/G
+play,2,0,conij001,10,BX,S7
+play,2,0,ripkc001,01,FX,53/G.1-2
+play,2,0,fordb001,11,BCX,8/F8
+play,2,0,richc001,00,X,8/F8
+play,2,1,ortid001,22,BCSBX,7/F7
+play,2,1,koskc001,10,BX,8/F8
+play,2,1,huntt001,01,FX,4/P4
+play,3,0,lewim001,11,SBX,9/F9
+play,3,0,kingg001,10,BX,63/G
+play,3,0,andeb001,11,BCX,8/F8
+play,3,1,jonej003,02,FCFFX,5/FL
+play,3,1,piera001,22,SBCBS,K
+play,3,1,hockd001,12,CFFFBX,S7
+play,3,1,guzmc001,32,BCBBSB,W.1-2
+play,3,1,lawtm002,11,CBX,43/G
+play,4,0,hairj002,02,CFFX,S7
+play,4,0,deshd001,20,BBX,S7.1-2
+play,4,0,conij001,10,BX,14(1)3/GDP.2-3
+play,4,0,ripkc001,22,CFBBX,S8.3-H
+play,4,0,fordb001,21,BBSX,9/F9
+play,4,1,coomr001,10,BX,8/F8
+play,4,1,ortid001,12,CCFBX,HR/9
+play,4,1,koskc001,02,CSS,K
+play,4,1,huntt001,12,SCBX,T8/8D
+play,4,1,jonej003,22,SSFBBC,K/C
+play,5,0,richc001,20,BBX,8/F8
+play,5,0,lewim001,00,X,S8
+play,5,0,kingg001,02,CSX,7/F7
+play,5,0,andeb001,21,CBBB,SB2
+play,5,0,andeb001,32,CBBBCX,S8.2-H;B-2(THH)
+play,5,0,hairj002,10,BX,43/G
+play,5,1,piera001,01,CX,43/G
+play,5,1,hockd001,31,CBBBX,8/F8
+play,5,1,guzmc001,12,FBCX,63/G
+play,6,0,deshd001,10,BX,S8
+play,6,0,conij001,20,BBX,4/P4
+play,6,0,ripkc001,22,CBFBFFX,13/G.1-2
+play,6,0,fordb001,31,BBSBX,43/G
+play,6,1,lawtm002,00,X,7/F7
+play,6,1,coomr001,01,CX,9/F9
+play,6,1,ortid001,32,BBFBCFFFX,3/L3
+play,7,0,richc001,11,BFX,8/F8
+play,7,0,lewim001,12,CFBS,K
+play,7,0,kingg001,32,CBSFBBX,6/P6
+play,7,1,koskc001,22,BBCFFC,K/C
+play,7,1,huntt001,21,BBFX,S7/7S
+play,7,1,jonej003,22,BBSFS,K
+play,7,1,piera001,01,FX,S7.1-2
+play,7,1,hockd001,00,,NP
+sub,groob001,"Buddy Groom",0,0,1
+play,7,1,hockd001,22,CBBSX,9/F9
+play,8,0,andeb001,00,,NP
+sub,wellb002,"Bob Wells",1,0,1
+play,8,0,andeb001,22,BCBCX,D9/9D
+play,8,0,hairj002,01,LX,3/SH.2-3
+play,8,0,deshd001,30,IIII,IW
+play,8,0,conij001,00,X,8/SF.3-H
+play,8,0,ripkc001,21,CBBX,8/F8
+play,8,1,guzmc001,02,FFFX,D7
+play,8,1,lawtm002,00,X,63/G.2-3
+play,8,1,coomr001,10,BX,E4/G.3-H
+play,8,1,ortid001,12,CBFX,64(1)/FO
+play,8,1,koskc001,00,,NP
+sub,canij001,"Jay Canizaro",1,6,11
+play,8,1,canij001,00,,NP
+sub,maxwj001,"Jason Maxwell",1,5,12
+play,8,1,canij001,00,X,46(1)/FO
+play,9,0,fordb001,00,,NP
+sub,hockd001,"Denny Hocking",1,1,5
+play,9,0,fordb001,00,,NP
+sub,canij001,"Jay Canizaro",1,6,4
+play,9,0,fordb001,00,,NP
+sub,cresj001,"Jack Cressend",1,0,1
+play,9,0,fordb001,12,BFCFX,9/F9
+play,9,0,richc001,20,BBX,9/F9
+play,9,0,lewim001,10,BX,53/G
+play,9,1,huntt001,00,,NP
+sub,hubbt001,"Trenidad Hubbard",0,3,7
+play,9,1,huntt001,00,,NP
+sub,kohlr001,"Ryan Kohlmeier",0,0,1
+play,9,1,huntt001,32,BBBCSX,S8
+play,9,1,jonej003,02,SFX,46(1)/FO
+play,9,1,piera001,12,FBSX,S/78.1-3
+play,9,1,hockd001,00,,NP
+sub,buchb002,"Brian Buchanan",1,9,12
+play,9,1,hockd001,31,BBBCB,W.1-2
+play,9,1,guzmc001,12,BFFFS,K
+play,9,1,lawtm002,22,CFBFFBX,8/F8
+data,er,mercj001,1
+data,er,groob001,1
+data,er,kohlr001,0
+data,er,redmm002,2
+data,er,wellb002,1
+data,er,cresj001,0

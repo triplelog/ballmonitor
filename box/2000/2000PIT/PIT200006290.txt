@@ -1,0 +1,156 @@
+version,2
+info,visteam,CHN
+info,hometeam,PIT
+info,site,PIT07
+info,date,2000/06/29
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,mckej901
+info,ump1b,fichm901
+info,ump2b,katzt901
+info,ump3b,morrd901
+info,pitches,pitches
+info,temp,66
+info,winddir,rtol
+info,windspeed,8
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,167
+info,attendance,19531
+info,wp,wilkm001
+info,lp,worrt002
+info,save,
+start,youne001,"Eric Young",0,1,4
+start,gutir001,"Ricky Gutierrez",0,2,6
+start,sosas001,"Sammy Sosa",0,3,9
+start,gracm001,"Mark Grace",0,4,3
+start,nievj002,"Jose Nieves",0,5,5
+start,browb003,"Brant Brown",0,6,7
+start,bufod001,"Damon Buford",0,7,8
+start,giraj001,"Joe Girardi",0,8,2
+start,tapak001,"Kevin Tapani",0,9,1
+start,morrw001,"Warren Morris",1,1,4
+start,kendj001,"Jason Kendall",1,2,2
+start,avenb001,"Bruce Aven",1,3,7
+start,gileb002,"Brian Giles",1,4,8
+start,younk001,"Kevin Young",1,5,3
+start,vandj001,"John Vander Wal",1,6,9
+start,ramia001,"Aramis Ramirez",1,7,5
+start,mearp001,"Pat Meares",1,8,6
+start,silvj001,"Jose Silva",1,9,1
+com,"40 minute rain delay in 7th"
+play,1,0,youne001,02,CFFX,S9
+play,1,0,gutir001,11,CBX,46(1)3/GDP
+play,1,0,sosas001,31,BBBCB,W
+play,1,0,gracm001,31,BBCBX,43/G
+play,1,1,morrw001,32,BSSBFBFFFFB,W
+play,1,1,kendj001,12,CSBX,64(1)/FO
+play,1,1,avenb001,22,FBFBFFB,SB2
+play,1,1,avenb001,32,FBFBFFBS,K
+play,1,1,gileb002,12,FSFBX,3/P3
+play,2,0,nievj002,02,CSX,63/G
+play,2,0,browb003,12,CBFX,5/FL
+play,2,0,bufod001,02,CFS,K
+play,2,1,younk001,32,CSFBBBS,K
+play,2,1,vandj001,00,X,163/G
+play,2,1,ramia001,01,FX,3/L3
+play,3,0,giraj001,32,BBCFFFBB,W
+play,3,0,tapak001,00,X,1/BP1
+play,3,0,youne001,02,FCX,S9.1-2
+play,3,0,gutir001,22,FBBFX,7/F7
+play,3,0,sosas001,31,BBFBX,E6/TH.2-H(UR);1-3;B-2
+play,3,0,gracm001,00,X,8/F8
+play,3,1,mearp001,10,BX,S
+play,3,1,silvj001,11,BFX,16(1)4/BG1/GDP
+play,3,1,morrw001,12,FBSS,K
+play,4,0,nievj002,00,,NP
+sub,cordw001,"Wil Cordero",1,3,7
+play,4,0,nievj002,10,BX,43/G
+play,4,0,browb003,32,CFBBFFBX,7/F7
+play,4,0,bufod001,10,BX,S
+play,4,0,giraj001,31,FBBBX,6/P6
+play,4,1,kendj001,12,CSBFX,3/G
+play,4,1,cordw001,32,BFBSBS,K
+play,4,1,gileb002,22,BCFBC,K/C
+play,5,0,tapak001,01,CX,43/G
+play,5,0,youne001,20,BBX,63/G
+play,5,0,gutir001,31,BSBBX,43/G
+play,5,1,younk001,10,BX,HR/78
+play,5,1,vandj001,20,BBX,9/F9
+play,5,1,ramia001,00,X,53/G
+play,5,1,mearp001,12,BCFX,13/G
+play,6,0,sosas001,12,BFFS,K
+play,6,0,gracm001,31,BBBCX,3/G
+play,6,0,nievj002,12,CBFX,S
+play,6,0,browb003,00,X,HR/9.1-H
+play,6,0,bufod001,11,BFX,7/F7S
+play,6,1,silvj001,00,,NP
+sub,nunea001,"Abraham O. Nunez",1,9,11
+play,6,1,nunea001,00,X,8/F8
+play,6,1,morrw001,22,CFBBFS,K
+play,6,1,kendj001,32,BBCFFBFB,W
+play,6,1,cordw001,00,B,SB2.1-3(E2/TH2)
+play,6,1,cordw001,10,BX,S.3-H(UR)
+play,6,1,gileb002,01,FX,43/G
+play,7,0,giraj001,00,,NP
+sub,manzj001,"Josias Manzanillo",1,9,1
+play,7,0,giraj001,00,X,S
+play,7,0,tapak001,00,,NP
+sub,husoj001,"Jeff Huson",0,9,11
+play,7,0,husoj001,12,BLLFX,64(1)3/GDP
+play,7,0,youne001,21,BBCX,53/G
+play,7,1,younk001,00,,NP
+sub,vanpt001,"Todd Van Poppel",0,9,1
+play,7,1,younk001,32,CFBBBS,K
+play,7,1,vandj001,12,BCCS,K
+play,7,1,ramia001,12,FFBS,K
+play,8,0,gutir001,01,CX,53/G
+play,8,0,sosas001,00,X,HR/8
+play,8,0,gracm001,31,BBCBX,9/F9
+play,8,0,nievj002,12,CSBFX,13/G
+play,8,1,mearp001,12,CBFS,K
+play,8,1,manzj001,00,,NP
+sub,sojol001,"Luis Sojo",1,9,11
+play,8,1,sojol001,00,X,3/G
+play,8,1,morrw001,01,CX,E6/G
+play,8,1,kendj001,20,BBX,HR/78.1-H(UR);B-H(UR)
+play,8,1,cordw001,02,FCFFX,8/F8
+play,9,0,browb003,00,,NP
+sub,chrij002,"Jason Christiansen",1,9,1
+play,9,0,browb003,11,BSX,7/F7S
+play,9,0,bufod001,22,BFSBS,K
+play,9,0,giraj001,22,BCBFC,K/C
+play,9,1,gileb002,00,,NP
+sub,heref001,"Felix Heredia",0,9,1
+play,9,1,gileb002,20,BBX,9/F9D
+play,9,1,younk001,22,BFBSX,8/F8
+play,9,1,vandj001,32,FBFBBS,K
+play,10,0,heref001,00,,NP
+sub,greew001,"Willie Greene",0,9,11
+play,10,0,greew001,00,,NP
+sub,wilkm001,"Marc Wilkins",1,9,1
+play,10,0,greew001,11,BFX,8/F8
+play,10,0,youne001,32,BCBBCX,43/G
+play,10,0,gutir001,31,BBBCB,W
+play,10,0,sosas001,32,BFBSBB,W.1-2
+play,10,0,gracm001,10,BX,9/F9D
+play,10,1,ramia001,00,,NP
+sub,worrt002,"Tim Worrell",0,9,1
+play,10,1,ramia001,22,CCBFBX,53/G
+play,10,1,mearp001,22,BBFSX,S7
+play,10,1,wilkm001,00,,NP
+sub,benjm001,"Mike Benjamin",1,9,11
+play,10,1,benjm001,22,BBCFX,D7.1-3
+play,10,1,morrw001,30,IIII,IW
+play,10,1,kendj001,01,CX,S7.3-H;2-3;1-2
+data,er,tapak001,1
+data,er,vanpt001,0
+data,er,heref001,0
+data,er,worrt002,1
+data,er,silvj001,2
+data,er,manzj001,1
+data,er,chrij002,0
+data,er,wilkm001,0

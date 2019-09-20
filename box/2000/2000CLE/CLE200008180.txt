@@ -1,0 +1,166 @@
+version,2
+info,visteam,SEA
+info,hometeam,CLE
+info,site,CLE08
+info,date,2000/08/18
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,meric901
+info,ump1b,ripps901
+info,ump2b,gibsg901
+info,ump3b,tscht901
+info,pitches,pitches
+info,temp,70
+info,winddir,fromcf
+info,windspeed,9
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,233
+info,attendance,43126
+info,wp,karss001
+info,lp,rhoda001
+info,save,
+start,hendr001,"Rickey Henderson",0,1,7
+start,marta001,"Al Martin",0,2,8
+start,rodra001,"Alex Rodriguez",0,3,6
+start,marte001,"Edgar Martinez",0,4,10
+start,olerj001,"John Olerud",0,5,3
+start,javis001,"Stan Javier",0,6,9
+start,guilc001,"Carlos Guillen",0,7,5
+start,wilsd001,"Dan Wilson",0,8,2
+start,belld002,"David Bell",0,9,4
+start,abbop001,"Paul Abbott",0,0,1
+start,loftk001,"Kenny Lofton",1,1,8
+start,vizqo001,"Omar Vizquel",1,2,6
+start,alomr001,"Roberto Alomar",1,3,4
+start,ramim002,"Manny Ramirez",1,4,9
+start,thomj002,"Jim Thome",1,5,10
+start,segud001,"David Segui",1,6,3
+start,frymt001,"Travis Fryman",1,7,5
+start,cordw001,"Wil Cordero",1,8,7
+start,aloms001,"Sandy Alomar",1,9,2
+start,colob001,"Bartolo Colon",1,0,1
+play,1,0,hendr001,22,BFBCX,43/G
+play,1,0,marta001,22,BFBFFX,HR/9
+play,1,0,rodra001,22,CBFBFFS,K
+play,1,0,marte001,32,CCFFFBBBB,W
+play,1,0,olerj001,32,BCBBFB,W.1-2
+play,1,0,javis001,00,X,3/G
+play,1,1,loftk001,11,BFX,S5/BG5
+play,1,1,vizqo001,21,BBCX,9/F9
+play,1,1,alomr001,22,BCSFFBX,D9.1-H
+play,1,1,ramim002,11,BFX,S/78.2-3
+play,1,1,thomj002,32,BBCBFFB,W.1-2
+play,1,1,segud001,01,CX,46(1)3/GDP
+play,2,0,guilc001,10,BX,8/F8
+play,2,0,wilsd001,12,CBSX,63/G
+play,2,0,belld002,20,BBX,S8
+play,2,0,hendr001,10,BX,8/F8
+play,2,1,frymt001,10,BX,53/G
+play,2,1,cordw001,22,BFSBS,K
+play,2,1,aloms001,11,BSX,9/F9
+play,3,0,marta001,20,BBX,43/G
+play,3,0,rodra001,20,BBX,7/F7
+play,3,0,marte001,21,CBBX,S7
+play,3,0,olerj001,00,X,43/G
+play,3,1,loftk001,12,CBFX,3/G
+play,3,1,vizqo001,21,CBBX,63/G
+play,3,1,alomr001,32,BBFBCB,W
+play,3,1,ramim002,32,BSBFBB,W.1-2
+play,3,1,thomj002,32,BBBCFB,W.2-3;1-2
+play,3,1,segud001,10,BX,D9.3-H;2-H;1-3
+play,3,1,frymt001,30,BBBX,E5/G.3-H(NR)(UR);2-H(NR)(UR)
+com,"originally scored E5, then S, then E5!"
+play,3,1,cordw001,00,X,54(1)/FO
+play,4,0,javis001,02,CCX,7/F7
+play,4,0,guilc001,31,BFBBB,W
+play,4,0,wilsd001,11,FBX,D7/7D.1-3
+play,4,0,belld002,12,CBFS,K.3-H(PB)(UR);2-3;B-1
+play,4,0,hendr001,02,CCS,K
+play,4,0,marta001,22,CCBBX,43/G
+play,4,1,aloms001,10,BX,S7
+play,4,1,loftk001,00,X,53/SH.1-2
+play,4,1,vizqo001,30,BBBB,W
+play,4,1,alomr001,21,BBCX,7/F7D
+play,4,1,ramim002,00,X,S7.2-H;1-2
+play,4,1,thomj002,11,BSX,43/G
+play,5,0,rodra001,30,BBBB,W
+play,5,0,marte001,22,BBCCX,S9.1-H(E9);B-2
+play,5,0,olerj001,10,BX,D7.2-H
+play,5,0,javis001,02,FCC,K/C
+play,5,0,guilc001,22,LCFFBBFX,HR/9.2-H
+play,5,0,wilsd001,22,SCBFBS,K
+play,5,0,belld002,31,BBBCX,S
+play,5,0,hendr001,00,,NP
+sub,speij001,"Justin Speier",1,0,1
+play,5,0,hendr001,21,SBBX,7/F7D
+play,5,1,segud001,00,,NP
+sub,garcf002,"Freddy An. Garcia",0,0,1
+play,5,1,segud001,02,FCFX,7/F7
+play,5,1,frymt001,32,BBCSFBFS,K
+play,5,1,cordw001,12,CBSS,K23
+play,6,0,marta001,02,SSFS,K
+play,6,0,rodra001,20,BBX,7/F7D
+play,6,0,marte001,31,CBBBX,HR/9
+play,6,0,olerj001,22,CCBBX,D7/7D
+play,6,0,javis001,32,CBBSBX,S.2-3
+play,6,0,guilc001,22,CBBFFFFX,8/F8
+play,6,1,aloms001,00,,NP
+sub,camem001,"Mike Cameron",0,2,8
+play,6,1,aloms001,01,CX,53/G
+play,6,1,loftk001,21,BFBX,9/L9
+play,6,1,vizqo001,32,CBBFFBX,7/F7
+play,7,0,wilsd001,21,CBBX,HR/9
+play,7,0,belld002,10,BX,D7/7D
+play,7,0,hendr001,00,,NP
+sub,reeds001,"Steve Reed",1,0,1
+play,7,0,hendr001,32,CBBFBX,S8/8S.2-3
+play,7,0,camem001,11,FBS,CS2(24)
+play,7,0,camem001,22,FBSBS,K
+play,7,0,rodra001,21,BBSX,8/F8
+play,7,1,alomr001,01,CX,13/G
+play,7,1,ramim002,11,BFX,D9
+play,7,1,thomj002,30,BBBB,W
+play,7,1,segud001,31,BFBBX,46(1)3/GDP
+play,8,0,marte001,10,BX,43/G
+play,8,0,olerj001,00,,NP
+sub,martt003,"Tom Martin",1,0,1
+play,8,0,olerj001,31,BBBCB,W
+play,8,0,javis001,12,LBFX,9/F9
+play,8,0,guilc001,10,BX,46(1)/FO
+play,8,1,frymt001,00,,NP
+sub,panij001,"Jose Paniagua",0,0,1
+play,8,1,frymt001,10,BX,S8
+play,8,1,cordw001,11,BSX,8/F8
+play,8,1,aloms001,22,BFFFBFS,K
+play,8,1,loftk001,00,,NP
+sub,rhoda001,"Arthur Rhodes",0,0,1
+play,8,1,loftk001,32,CBBBFFFX,HR/78.1-H
+play,8,1,vizqo001,01,CX,63/G
+play,9,0,wilsd001,00,,NP
+sub,karss001,"Steve Karsay",1,0,1
+play,9,0,wilsd001,02,CCS,K
+play,9,0,belld002,22,SBSFBS,K
+play,9,0,hendr001,12,CCBFFX,13/G
+play,9,1,alomr001,32,CBSBBB,W
+play,9,1,ramim002,01,CX,E5/G.1-3;B-2
+play,9,1,thomj002,31,SBBBB,W
+play,9,1,segud001,22,BSSBX,9/F9
+play,9,1,frymt001,00,,NP
+sub,selbb001,"Bill Selby",1,5,12
+play,9,1,frymt001,00,,NP
+sub,sasak001,"Kazuhiro Sasaki",0,0,1
+play,9,1,frymt001,01,CX,S7.3-H;2-3;1-2
+data,er,abbop001,4
+data,er,garcf002,0
+data,er,panij001,1
+data,er,rhoda001,2
+data,er,sasak001,0
+data,er,colob001,5
+data,er,speij001,2
+data,er,reeds001,0
+data,er,martt003,0
+data,er,karss001,0

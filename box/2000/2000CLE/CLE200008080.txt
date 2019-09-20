@@ -1,0 +1,149 @@
+version,2
+info,visteam,TEX
+info,hometeam,CLE
+info,site,CLE08
+info,date,2000/08/08
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,lampi901
+info,ump1b,shulj901
+info,ump2b,roe-r901
+info,ump3b,rungb901
+info,pitches,pitches
+info,temp,81
+info,winddir,ltor
+info,windspeed,14
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,176
+info,attendance,43238
+info,wp,rogek001
+info,lp,berej002
+info,save,
+start,alicl001,"Luis Alicea",0,1,4
+start,cataf001,"Frank Catalanotto",0,2,10
+start,greer001,"Rusty Greer",0,3,7
+start,palmr001,"Rafael Palmeiro",0,4,3
+start,kaplg001,"Gabe Kapler",0,5,8
+start,leder001,"Ricky Ledee",0,6,9
+start,haseb001,"Bill Haselman",0,7,2
+start,lambm001,"Mike Lamb",0,8,5
+start,clayr001,"Royce Clayton",0,9,6
+start,rogek001,"Kenny Rogers",0,0,1
+start,loftk001,"Kenny Lofton",1,1,8
+start,vizqo001,"Omar Vizquel",1,2,6
+start,alomr001,"Roberto Alomar",1,3,4
+start,segud001,"David Segui",1,4,10
+start,frymt001,"Travis Fryman",1,5,5
+start,thomj002,"Jim Thome",1,6,3
+start,cordw001,"Wil Cordero",1,7,7
+start,aloms001,"Sandy Alomar",1,8,2
+start,cabrj002,"Jolbert Cabrera",1,9,9
+start,berej002,"Jason Bere",1,0,1
+play,1,0,alicl001,10,BX,S/78
+play,1,0,cataf001,22,CCBFBX,S7.1-2
+play,1,0,greer001,21,BCBX,S.2-3;1-2
+play,1,0,palmr001,32,CBSBBX,5/FL
+play,1,0,kaplg001,22,FBCBX,D7/7S.3-H;2-H;1-3
+play,1,0,leder001,10,BX,31/G.3-H;2-3
+play,1,0,haseb001,12,BCSS,K
+play,1,1,loftk001,11,FBX,D9/9S
+play,1,1,vizqo001,02,CFX,8/F8
+play,1,1,alomr001,30,BBBB,W
+play,1,1,segud001,01,CX,46(1)3/GDP
+play,2,0,lambm001,12,SCFBX,S8
+play,2,0,clayr001,12,CBFFFX,9/FL
+play,2,0,alicl001,10,BX,3(B)6(1)/GDP
+play,2,1,frymt001,32,BBFFBFB,W
+play,2,1,thomj002,32,BCBBFFFB,W.1-2
+play,2,1,cordw001,01,CX,16(1)3/GDP.2-3
+play,2,1,aloms001,10,BX,S7.3-H
+play,2,1,cabrj002,21,BFBX,64(1)/FO
+play,3,0,cataf001,10,BX,D7
+play,3,0,greer001,00,X,3/G.2-3
+play,3,0,palmr001,00,I,WP.3-H
+play,3,0,palmr001,12,ISSX,43/G
+play,3,0,kaplg001,01,CX,D8/8D
+play,3,0,leder001,11,FBX,S8.2-H
+play,3,0,haseb001,00,B,WP.1-2
+play,3,0,haseb001,12,BFSX,43/G
+play,3,1,loftk001,21,BCBX,8/F8
+play,3,1,vizqo001,31,BBBCB,W
+play,3,1,alomr001,10,BX,54(1)/FO
+play,3,1,segud001,22,FFBBFS,K
+play,4,0,lambm001,00,X,S
+play,4,0,clayr001,22,BLLBS,K
+play,4,0,alicl001,10,BX,T/78.1-H
+play,4,0,cataf001,00,,NP
+sub,brewj001,"Jamie Brewington",1,0,1
+play,4,0,cataf001,10,BX,7/SF.3-H
+play,4,0,greer001,22,BFBCX,43/G
+play,4,1,frymt001,21,BCBX,S
+play,4,1,thomj002,12,BSSX,D/78.1-3
+play,4,1,cordw001,00,X,4(B)4(2)/LDP
+play,4,1,aloms001,00,X,5/P5
+play,5,0,palmr001,20,BBX,7/F7
+play,5,0,kaplg001,22,BCFFBFS,K
+play,5,0,leder001,22,SBBFX,S9
+play,5,0,haseb001,10,BX,64(1)/FO
+play,5,1,cabrj002,12,SCBX,S7
+play,5,1,loftk001,00,X,6/P6
+play,5,1,vizqo001,10,BX,63/G.1-2
+play,5,1,alomr001,32,BCFBBFFFX,7/F7
+play,6,0,lambm001,21,BBFX,9/F9
+play,6,0,clayr001,32,SBBFBFX,63/G
+play,6,0,alicl001,22,CFBBX,43/G
+play,6,1,segud001,01,CX,63/G
+play,6,1,frymt001,02,CSX,7/F7D
+play,6,1,thomj002,22,BSBFS,K
+play,7,0,cataf001,00,X,S9
+play,7,0,greer001,10,BX,HR/9.1-H
+play,7,0,palmr001,21,BCBX,S
+play,7,0,kaplg001,00,,NP
+sub,reeds001,"Steve Reed",1,0,1
+play,7,0,kaplg001,20,BBX,64(1)3/GDP
+play,7,0,leder001,12,SBCX,9/F9
+play,7,1,cordw001,12,BCSX,63/G
+play,7,1,aloms001,20,BBX,D7/7S
+play,7,1,cabrj002,01,SX,8/F8
+play,7,1,loftk001,00,,NP
+sub,perrc001,"Chan Perry",1,1,11
+play,7,1,perrc001,02,CSS,K
+play,8,0,haseb001,00,,NP
+sub,perrc001,"Chan Perry",1,1,9
+play,8,0,haseb001,00,,NP
+sub,cabrj002,"Jolbert Cabrera",1,9,8
+play,8,0,haseb001,22,CCBBX,7/F7D
+play,8,0,lambm001,11,CBX,31/G
+play,8,0,clayr001,00,X,9/F9
+play,8,1,vizqo001,12,CFBX,9/F9
+play,8,1,alomr001,00,X,13/G
+play,8,1,segud001,11,SBX,D9
+play,8,1,frymt001,00,X,D7.2-H
+play,8,1,thomj002,01,FX,43/G
+play,9,0,alicl001,00,,NP
+sub,martt003,"Tom Martin",1,0,1
+play,9,0,alicl001,00,,NP
+sub,selbb001,"Bill Selby",1,3,4
+play,9,0,alicl001,12,FBCX,S8
+play,9,0,cataf001,02,CCX,S9/9S.1-2
+play,9,0,greer001,12,CBFX,13/G.2-3;1-2
+play,9,0,palmr001,10,BX,S9.3-H;2-H
+play,9,0,kaplg001,32,BCBFBS,K
+play,9,0,leder001,22,CBBFFX,S7.1-2
+play,9,0,haseb001,32,SCFBFBBFB,W.2-3;1-2
+play,9,0,lambm001,20,BBX,31/G
+play,9,1,cordw001,00,,NP
+sub,cubid001,"Darwin Cubillan",0,0,1
+play,9,1,cordw001,12,BCFS,K
+play,9,1,aloms001,20,BBX,S.BX2(4)#
+play,9,1,cabrj002,00,X,63/G
+data,er,rogek001,2
+data,er,cubid001,0
+data,er,berej002,7
+data,er,brewj001,2
+data,er,reeds001,0
+data,er,martt003,2

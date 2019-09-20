@@ -1,0 +1,141 @@
+version,2
+info,visteam,SLN
+info,hometeam,NYN
+info,site,NYC17
+info,date,2000/07/28
+info,number,0
+info,starttime,7:10PM
+info,daynight,night
+info,usedh,false
+info,umphome,eddid901
+info,ump1b,relic901
+info,ump2b,carlm901
+info,ump3b,demud901
+info,pitches,pitches
+info,temp,74
+info,winddir,tocf
+info,windspeed,7
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,178
+info,attendance,42396
+info,wp,leita001
+info,lp,hentp001
+info,save,benia001
+start,vinaf001,"Fernando Vina",0,1,4
+start,polap001,"Placido Polanco",0,2,6
+start,edmoj001,"Jim Edmonds",0,3,8
+start,tatif001,"Fernando Tatis",0,4,5
+start,davie001,"Eric Davis",0,5,9
+start,lankr001,"Ray Lankford",0,6,7
+start,peree001,"Eduardo Perez",0,7,3
+start,mathm001,"Mike Matheny",0,8,2
+start,hentp001,"Pat Hentgen",0,9,1
+start,harrl001,"Lenny Harris",1,1,5
+start,belld001,"Derek Bell",1,2,9
+start,alfoe001,"Edgardo Alfonzo",1,3,4
+start,piazm001,"Mike Piazza",1,4,2
+start,zeilt001,"Todd Zeile",1,5,3
+start,agbab001,"Benny Agbayani",1,6,7
+start,paytj001,"Jay Payton",1,7,8
+start,abbok002,"Kurt Abbott",1,8,6
+start,leita001,"Al Leiter",1,9,1
+play,1,0,vinaf001,12,CBFFFX,43/G
+play,1,0,polap001,00,X,4/P4
+play,1,0,edmoj001,22,CSBBFC,K/C
+play,1,1,harrl001,21,BBCX,S8/8S
+play,1,1,belld001,00,X,9/F9
+play,1,1,alfoe001,11,CBX,4(B)3(1)/LDP
+play,2,0,tatif001,22,CBCFBS,K
+play,2,0,davie001,30,BBBB,W
+play,2,0,lankr001,22,FBBFC,K/C
+play,2,0,peree001,12,SFBS,K
+play,2,1,piazm001,31,BBCBX,S7/7S
+play,2,1,zeilt001,32,BCCBBB,W.1-2
+play,2,1,agbab001,00,X,D9/9D.2-H;1-3
+play,2,1,paytj001,21,BCBX,43/G.3-H;2-3
+play,2,1,abbok002,11,BSX,8/F8S.3XH(8E2)(UR)
+play,2,1,leita001,00,X,43/G
+play,3,0,mathm001,21,BBCX,53/G
+play,3,0,hentp001,21,BCBX,13/G
+play,3,0,vinaf001,00,X,5/P5
+play,3,1,harrl001,01,FX,D9
+play,3,1,belld001,00,X,43/G.2-3
+play,3,1,alfoe001,02,CCS,K
+play,3,1,piazm001,30,BBBB,W
+play,3,1,zeilt001,11,BCX,64(1)/FO
+play,4,0,polap001,32,CBFBBFX,43/G
+play,4,0,edmoj001,01,CX,6/L6
+play,4,0,tatif001,22,BBSFX,7/F7
+play,4,1,agbab001,32,BCFBBB,W
+play,4,1,paytj001,01,FX,8/L8
+play,4,1,abbok002,00,X,S7/7S.1-2
+play,4,1,leita001,01,LX,2/BP2
+play,4,1,harrl001,12,CCBFS,K
+play,5,0,davie001,32,BCBBCFS,K
+play,5,0,lankr001,22,CCBBC,K/C
+play,5,0,peree001,10,BX,53/G
+play,5,1,belld001,22,CCBBC,K/C
+play,5,1,alfoe001,10,BX,53/G
+play,5,1,piazm001,10,BX,43/G
+play,6,0,mathm001,01,CX,S8
+play,6,0,hentp001,00,X,14/SH.1-2
+play,6,0,vinaf001,01,CX,13/BG.2-3
+play,6,0,polap001,00,X,S9/9S.3-H
+play,6,0,edmoj001,22,FBFFBX,7/F7
+play,6,1,zeilt001,11,BCX,D9
+play,6,1,agbab001,31,BBBCB,W
+play,6,1,paytj001,31,CBBBX,9/F9.2-3
+play,6,1,abbok002,32,BBFBSS,K+SB2
+play,6,1,leita001,32,BBCBCX,43/G
+play,7,0,tatif001,32,BFBFFBC,K/C
+play,7,0,davie001,12,SFBX,S7/7S
+play,7,0,lankr001,32,CSBBBB,W.1-2
+play,7,0,peree001,32,BCFBBFFX,E6/G.2-3;1-2
+play,7,0,mathm001,22,CSFBBS,K
+play,7,0,hentp001,00,,NP
+sub,paquc001,"Craig Paquette",0,9,11
+play,7,0,paquc001,10,BX,4/P4
+play,7,1,harrl001,00,,NP
+sub,morrm001,"Matt Morris",0,9,1
+play,7,1,harrl001,22,CBFBX,S8/8S
+play,7,1,belld001,21,FBBB,CS2(24)
+play,7,1,belld001,32,FBBBFX,S7/7S
+play,7,1,alfoe001,12,SFBFX,D7.1-3
+play,7,1,piazm001,30,IIII,IW
+play,7,1,zeilt001,22,BCFBFS,K
+play,7,1,agbab001,01,FX,12(3)/FO.2-3;1-2
+play,8,0,vinaf001,00,,NP
+sub,mcewj001,"Joe McEwing",1,6,7
+play,8,0,vinaf001,00,,NP
+sub,franj001,"John Franco",1,9,1
+play,8,0,vinaf001,12,BCCX,S7
+play,8,0,polap001,12,FBCS,K
+play,8,0,edmoj001,12,FFBX,S9/9S.1-3
+play,8,0,tatif001,00,,NP
+sub,wendt001,"Turk Wendell",1,9,1
+play,8,0,tatif001,01,C1,PO1(13)
+play,8,0,tatif001,01,C1X,E5/TH1.3-H(NR)(UR)
+play,8,0,davie001,22,CBBFS,K
+play,8,1,paytj001,01,CX,7/F7D
+play,8,1,abbok002,01,FX,4/P4
+play,8,1,wendt001,00,,NP
+sub,franm001,"Matt Franco",1,9,11
+play,8,1,franm001,22,BCFBFX,6/P6
+play,9,0,lankr001,00,,NP
+sub,benia001,"Armando Benitez",1,9,1
+play,9,0,lankr001,01,CX,53/G
+play,9,0,peree001,12,CBSS,K
+play,9,0,mathm001,00,,NP
+sub,drewj001,"J.D. Drew",0,8,11
+play,9,0,drewj001,32,CBBSBB,W
+play,9,0,morrm001,00,,NP
+sub,howat001,"Thomas Howard",0,9,11
+play,9,0,howat001,12,CFBFX,46(1)/FO
+data,er,hentp001,2
+data,er,morrm001,0
+data,er,leita001,1
+data,er,franj001,0
+data,er,wendt001,0
+data,er,benia001,0

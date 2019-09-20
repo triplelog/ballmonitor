@@ -1,0 +1,132 @@
+version,2
+info,visteam,HOU
+info,hometeam,DET
+info,site,DET05
+info,date,2000/07/13
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,mcclt901
+info,ump1b,craft901
+info,ump2b,cuzzp901
+info,ump3b,fichm901
+info,pitches,pitches
+info,temp,81
+info,winddir,tolf
+info,windspeed,12
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,155
+info,attendance,30226
+info,wp,moehb001
+info,lp,reyns001
+info,save,
+start,lugoj001,"Julio Lugo",0,1,6
+start,biggc001,"Craig Biggio",0,2,4
+start,bagwj001,"Jeff Bagwell",0,3,3
+start,berkl001,"Lance Berkman",0,4,9
+start,aloum001,"Moises Alou",0,5,7
+start,hidar001,"Richard Hidalgo",0,6,8
+start,melum001,"Mitch Meluskey",0,7,2
+start,wardd002,"Daryle Ward",0,8,10
+start,trubc001,"Chris Truby",0,9,5
+start,reyns001,"Shane Reynolds",0,0,1
+start,polol001,"Luis Polonia",1,1,10
+start,beckr002,"Rich Becker",1,2,9
+start,higgb001,"Bobby Higginson",1,3,7
+start,palmd002,"Dean Palmer",1,4,5
+start,clart002,"Tony Clark",1,5,3
+start,easld001,"Damion Easley",1,6,4
+start,ausmb001,"Brad Ausmus",1,7,2
+start,encaj001,"Juan Encarnacion",1,8,8
+start,cruzd001,"Deivi Cruz",1,9,6
+start,moehb001,"Brian Moehler",1,0,1
+play,1,0,lugoj001,22,CBFBX,D/78
+play,1,0,biggc001,00,X,13/SH.2-3
+play,1,0,bagwj001,30,BBBB,W
+play,1,0,berkl001,02,FCX,46(1)3/GDP
+play,1,1,polol001,12,CFBX,S9
+play,1,1,beckr002,10,BX,D7/7D.1-H
+play,1,1,higgb001,10,BX,3/G.2-3
+play,1,1,palmd002,00,X,S7.3-H
+play,1,1,clart002,01,FX,E5/G.1-3
+play,1,1,easld001,02,FCC,K/C
+play,1,1,ausmb001,21,BBCX,13/G
+play,2,0,aloum001,00,X,S9
+play,2,0,hidar001,10,BX,54(1)3/GDP
+play,2,0,melum001,21,CBBX,S
+play,2,0,wardd002,02,CFX,S9.1-2
+play,2,0,trubc001,10,BX,8/L8
+play,2,1,encaj001,01,CX,8/F8
+play,2,1,cruzd001,01,CX,53/G
+play,2,1,polol001,11,BFX,8/F8
+play,3,0,lugoj001,00,X,63/G
+play,3,0,biggc001,22,CFBFBX,1/L1
+play,3,0,bagwj001,01,CX,1/L1
+play,3,1,beckr002,31,BBCBB,W
+play,3,1,higgb001,31,BFBBB,W.1-2
+play,3,1,palmd002,01,CX,S7.2-H;1-2
+play,3,1,clart002,02,FSS,K
+play,3,1,easld001,01,FX,54(1)3/GDP
+play,4,0,berkl001,00,X,D9/9D
+play,4,0,aloum001,21,BSBX,3/G.2-3
+play,4,0,hidar001,10,BX,FC5.3XH(52);B-1#
+play,4,0,melum001,10,BB,SB2.1-3(E6)
+play,4,0,melum001,30,BBBB,W
+play,4,0,wardd002,01,CX,S7.3-H;1-2
+play,4,0,trubc001,22,FBBFS,K
+play,4,1,ausmb001,00,H,HP
+play,4,1,encaj001,00,X,S9.1-H(E9);B-2
+play,4,1,cruzd001,20,BBX,S9.2-3
+play,4,1,polol001,00,X,8/SF.3-H
+play,4,1,beckr002,11,CBX,D7.1-3
+play,4,1,higgb001,00,,NP
+sub,slusj001,"Joe Slusarski",0,0,1
+play,4,1,higgb001,12,BFFFX,S9.3-H;2-3
+play,4,1,palmd002,02,FFX,S7.3-H;1-3
+play,4,1,clart002,00,X,46(1)3/GDP
+play,5,0,lugoj001,02,CFX,4/P4
+play,5,0,biggc001,11,BSX,S8
+play,5,0,bagwj001,11,FBX,8/F8
+play,5,0,berkl001,01,CX,9/F9
+play,5,1,easld001,02,FCFS,K
+play,5,1,ausmb001,01,FX,63/G
+play,5,1,encaj001,00,X,53/G
+play,6,0,aloum001,10,BX,53/G
+play,6,0,hidar001,00,X,S7
+play,6,0,melum001,11,FBX,4(1)3/GDP
+play,6,1,cruzd001,01,FX,8/F8
+play,6,1,polol001,11,CBX,63/G
+play,6,1,beckr002,10,BX,3/G
+play,7,0,wardd002,02,FFX,9/F9
+play,7,0,trubc001,00,X,8/L8
+play,7,0,lugoj001,01,CX,S7
+play,7,0,biggc001,32,BBBCFX,8/F8
+play,7,1,higgb001,20,BBX,9/F9
+play,7,1,palmd002,22,CBFBFS,K
+play,7,1,clart002,20,BBX,S8
+play,7,1,easld001,21,BSBX,7/F7
+play,8,0,bagwj001,20,BBX,3/FL
+play,8,0,berkl001,32,CBBBFX,S7
+play,8,0,aloum001,00,X,S8.1-3
+play,8,0,hidar001,22,CBBFFFX,54(1)/FO.3-H
+play,8,0,melum001,31,BBBCX,7/F7
+play,8,1,ausmb001,00,,NP
+sub,cabrj001,"Jose Cabrera",0,0,1
+play,8,1,ausmb001,00,X,S9
+play,8,1,encaj001,22,BFSBFS,K
+play,8,1,cruzd001,10,BX,D9/9D.1-3
+play,8,1,polol001,32,BFFBFFBX,8/SF.3-H;2-3
+play,8,1,beckr002,31,BFBBB,W
+play,8,1,higgb001,32,BFBCBS,K
+play,9,0,wardd002,00,,NP
+sub,halts001,"Shane Halter",1,5,3
+play,9,0,wardd002,02,FFFX,43/G
+play,9,0,trubc001,22,BCBCX,9/P9
+play,9,0,lugoj001,20,BBX,8/F8
+data,er,reyns001,7
+data,er,slusj001,0
+data,er,cabrj001,1
+data,er,moehb001,2

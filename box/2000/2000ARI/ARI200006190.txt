@@ -1,0 +1,143 @@
+version,2
+info,visteam,SDN
+info,hometeam,ARI
+info,site,PHO01
+info,date,2000/06/19
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,demud901
+info,ump1b,eddid901
+info,ump2b,relic901
+info,ump3b,carlm901
+info,pitches,pitches
+info,temp,72
+info,winddir,tolf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,168
+info,attendance,37336
+info,wp,padiv001
+info,lp,kolbb001
+info,save,
+start,owene001,"Eric Owens",0,1,9
+start,river002,"Ruben Rivera",0,2,8
+start,sprae001,"Ed Sprague",0,3,3
+start,nevip001,"Phil Nevin",0,4,5
+start,boonb002,"Bret Boone",0,5,4
+start,hernc001,"Carlos A. Hernandez",0,6,2
+start,jackd003,"Damian Jackson",0,7,7
+start,gomec001,"Chris Gomez",0,8,6
+start,spens002,"Stan Spencer",0,9,1
+start,womat001,"Tony Womack",1,1,6
+start,bellj001,"Jay Bell",1,2,4
+start,gonzl001,"Luis Gonzalez",1,3,7
+start,willm003,"Matt D. Williams",1,4,5
+start,finls001,"Steve Finley",1,5,8
+start,colbg001,"Greg Colbrunn",1,6,3
+start,lee-t002,"Travis Lee",1,7,9
+start,milld002,"Damian Miller",1,8,2
+start,johnr005,"Randy Johnson",1,9,1
+play,1,0,owene001,32,BBCSBX,D8
+com,"originally scored S8.B-2(E8)"
+play,1,0,river002,22,FSBBS,K
+play,1,0,sprae001,31,BBCBX,6/P6
+play,1,0,nevip001,00,C,CS3(25)
+play,1,1,womat001,01,CX,9/F9
+play,1,1,bellj001,21,BCBX,9/F9S
+play,1,1,gonzl001,30,BBBB,W
+play,1,1,willm003,10,BX,64(1)/FO
+play,2,0,nevip001,11,BCX,8/F8
+play,2,0,boonb002,00,X,8/F8
+play,2,0,hernc001,10,BX,63/G
+play,2,1,finls001,11,BCX,8/L8
+play,2,1,colbg001,02,CFFX,6/P6
+play,2,1,lee-t002,10,BX,7/FL
+play,3,0,jackd003,21,BFBX,D/78
+play,3,0,gomec001,32,CFBFBBX,63/G.2-3
+play,3,0,spens002,02,CSS,K
+play,3,0,owene001,22,BCFFBX,31/G
+play,3,1,milld002,02,FFC,K/C
+play,3,1,johnr005,01,CX,S9
+play,3,1,womat001,00,X,S8.1-2
+play,3,1,bellj001,22,CBSBS,K
+play,3,1,gonzl001,00,X,S9.2-3;1-2
+play,3,1,willm003,11,CBX,63/G
+play,4,0,river002,22,FCBBS,K
+play,4,0,sprae001,12,BFFFS,K
+play,4,0,nevip001,10,BX,HR/78
+play,4,0,boonb002,22,BCCBS,K
+play,4,1,finls001,21,BCBX,43/G
+play,4,1,colbg001,32,BFFFBFBFB,W
+play,4,1,lee-t002,01,CX,9/F9
+play,4,1,milld002,01,SX,64(1)/FO
+play,5,0,hernc001,31,BCBBX,8/F8D
+play,5,0,jackd003,31,BCBBB,W
+play,5,0,gomec001,01,FC,SB2
+play,5,0,gomec001,02,FCS,K
+play,5,0,spens002,01,FN,BK.2-3
+play,5,0,spens002,02,FFS,K23
+play,5,1,johnr005,02,CSX,43/G
+play,5,1,womat001,11,BCX,9/F9
+play,5,1,bellj001,32,BBBCFFFFB,W
+play,5,1,gonzl001,12,BFSB,CS2(26)
+play,6,0,owene001,02,CFS,K
+play,6,0,river002,11,SBX,S8
+play,6,0,sprae001,00,X,S7.1-2
+play,6,0,nevip001,01,FX,D9/89D.2-H;1XH(942)
+play,6,0,boonb002,00,X,7/FL
+play,6,1,gonzl001,00,,NP
+sub,reyec001,"Carlos Reyes",0,9,1
+play,6,1,gonzl001,20,BBX,43/G
+play,6,1,willm003,12,FBFX,S8
+play,6,1,finls001,00,X,7/F7
+play,6,1,colbg001,11,BCH,HP.1-2
+play,6,1,lee-t002,21,BFBX,8/F8
+play,7,0,hernc001,10,BX,7/F7D
+play,7,0,jackd003,32,CBBCFFBB,W
+play,7,0,gomec001,20,BBX,6(B)3(1)/LDP
+play,7,1,milld002,22,FSBBS,K
+play,7,1,johnr005,00,,NP
+sub,counc001,"Craig Counsell",1,9,11
+play,7,1,counc001,10,BX,53/G
+play,7,1,womat001,12,CBSX,6/P6
+play,8,0,reyec001,00,,NP
+sub,marta001,"Al Martin",0,9,11
+play,8,0,marta001,00,,NP
+sub,padiv001,"Vicente Padilla",1,9,1
+play,8,0,marta001,21,BFBX,43/G
+play,8,0,owene001,22,BBCFC,K/C
+play,8,0,river002,21,FBBX,43/G
+play,8,1,bellj001,00,,NP
+sub,whitm002,"Matt Whiteside",0,9,1
+play,8,1,bellj001,32,BCBBCB,W
+play,8,1,gonzl001,12,FBFFX,S9.1-2
+play,8,1,willm003,22,BBSFC,K/C
+play,8,1,finls001,00,X,S9.2-H;1-2
+play,8,1,colbg001,00,,NP
+sub,kolbb001,"Brandon Kolb",0,9,1
+play,8,1,colbg001,22,BBFCB,WP.2-3;1-2
+play,8,1,colbg001,32,BBFCBB,W
+play,8,1,lee-t002,00,X,46(1)/FO.3-H;2-3
+play,8,1,milld002,00,X,64(1)/FO
+play,9,0,sprae001,22,CBSBX,43/G
+play,9,0,nevip001,12,SSBS,K
+play,9,0,boonb002,11,FBX,9/F9
+play,9,1,padiv001,00,,NP
+sub,bautd001,"Danny Bautista",1,9,11
+play,9,1,bautd001,21,BFBX,S
+play,9,1,womat001,20,BBX,2/FL
+play,9,1,bellj001,32,SBSBBX,13/G.1-2
+play,9,1,gonzl001,30,IIII,IW.2-3(WP)
+play,9,1,willm003,22,BBFFB,DI.1-2
+play,9,1,willm003,32,BBFFBB,W
+play,9,1,finls001,31,BBBCB,W.3-H;2-3;1-2
+data,er,spens002,0
+data,er,reyec001,0
+data,er,whitm002,2
+data,er,kolbb001,1
+data,er,johnr005,2
+data,er,padiv001,0

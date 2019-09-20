@@ -1,0 +1,142 @@
+version,2
+info,visteam,SLN
+info,hometeam,MON
+info,site,MON02
+info,date,2000/08/01
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,fleta901
+info,ump1b,higgs901
+info,ump2b,danlk901
+info,ump3b,herna901
+info,pitches,pitches
+info,temp,72
+info,winddir,rtol
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,153
+info,attendance,9818
+info,wp,moort001
+info,lp,ankir001
+info,save,
+start,vinaf001,"Fernando Vina",0,1,4
+start,rente001,"Edgar Renteria",0,2,6
+start,dunss001,"Shawon Dunston",0,3,8
+start,tatif001,"Fernando Tatis",0,4,5
+start,peree001,"Eduardo Perez",0,5,3
+start,lankr001,"Ray Lankford",0,6,7
+start,hernc001,"Carlos A. Hernandez",0,7,2
+start,paquc001,"Craig Paquette",0,8,9
+start,ankir001,"Rick Ankiel",0,9,1
+start,bradm001,"Milton Bradley",1,1,8
+start,vidrj001,"Jose Vidro",1,2,4
+start,seguf001,"Fernando Seguignol",1,3,7
+start,guerv001,"Vladimir Guerrero",1,4,9
+start,stevl001,"Lee Stevens",1,5,3
+start,blumg001,"Geoff Blum",1,6,5
+start,widgc001,"Chris Widger",1,7,2
+start,delat001,"Tomas De La Rosa",1,8,6
+start,moort001,"Trey Moore",1,9,1
+play,1,0,vinaf001,01,CX,53/G
+play,1,0,rente001,11,SBX,6/P6
+play,1,0,dunss001,12,CBFS,K
+play,1,1,bradm001,32,BBFSBFS,K
+play,1,1,vidrj001,32,BSSBFFBX,S8
+play,1,1,seguf001,21,CBBX,53/G.1-2
+play,1,1,guerv001,30,IIII,IW
+play,1,1,stevl001,32,CBSFFBBX,7/F7
+play,2,0,tatif001,02,SSS,K
+play,2,0,peree001,30,BBBB,W.B-2(WP)
+play,2,0,lankr001,12,BSCFS,K
+play,2,0,hernc001,11,BFX,8/F8
+play,2,1,blumg001,32,CSBBBFX,9/L9
+play,2,1,widgc001,20,BBX,S8
+play,2,1,delat001,32,BCBFFBFB,W.1-2
+play,2,1,moort001,02,LCX,36(1)/FO.2-3
+play,2,1,bradm001,00,X,64(1)/FO
+play,3,0,paquc001,00,X,9/F9
+play,3,0,ankir001,31,FBBBB,W
+play,3,0,vinaf001,31,BBBCB,W.1-2
+play,3,0,rente001,02,CFC,K/C
+play,3,0,dunss001,12,CBFFX,6/P6
+play,3,1,vidrj001,12,BFCFX,53/G
+play,3,1,seguf001,12,BFFFS,K
+play,3,1,guerv001,12,SSFFBS,K
+play,4,0,tatif001,32,FBBFFFFFFBFS,K
+play,4,0,peree001,02,FFX,53/G
+play,4,0,lankr001,32,BCCBFBFS,K
+play,4,1,stevl001,30,BBBB,W
+play,4,1,blumg001,02,CCS,K
+play,4,1,widgc001,21,SBBX,S9/9S.1-3(E9)
+play,4,1,delat001,10,BX,1(B)5(3)/FDP
+play,5,0,hernc001,31,BCBBX,31/G
+play,5,0,paquc001,02,CFX,S/78
+play,5,0,ankir001,02,CCFS,K
+play,5,0,vinaf001,21,BBCX,S8.1-2
+play,5,0,rente001,12,FBFFS,K
+play,5,1,moort001,00,,NP
+sub,guerw001,"Wilton Guerrero",1,9,11
+play,5,1,guerw001,12,BFFX,6/L6
+play,5,1,bradm001,10,BX,S8
+play,5,1,vidrj001,31,BBBCX,S.1-2
+play,5,1,seguf001,11,CBX,65(2)/FO.1-2
+play,5,1,guerv001,00,X,HR/78.2-H;1-H
+play,5,1,stevl001,02,CFS,K
+play,6,0,dunss001,00,,NP
+sub,bergp001,"Peter Bergeron",1,9,7
+play,6,0,dunss001,00,,NP
+sub,drewj001,"J.D. Drew",0,3,11
+play,6,0,drewj001,00,,NP
+sub,telfa001,"Anthony Telford",1,3,1
+play,6,0,drewj001,00,X,7/F7
+play,6,0,tatif001,22,BBCFX,S9
+play,6,0,peree001,10,BX,54(1)/FO
+play,6,0,lankr001,01,FX,6/P6
+play,6,1,blumg001,00,,NP
+sub,drewj001,"J.D. Drew",0,3,8
+play,6,1,blumg001,00,,NP
+sub,clarw001,"Will Clark",0,9,3
+play,6,1,blumg001,00,,NP
+sub,morrm001,"Matt Morris",0,5,1
+play,6,1,blumg001,22,BBCSS,K
+play,6,1,widgc001,12,BFCX,31/G
+play,6,1,delat001,12,BFCS,K
+play,7,0,hernc001,02,CFS,K
+play,7,0,paquc001,21,BSBX,53/G
+play,7,0,clarw001,32,SBCBFFBX,D/89D
+play,7,0,vinaf001,01,CX,4/P4
+play,7,1,bergp001,32,BSBBCB,W
+play,7,1,bradm001,10,BS,CS2(26)
+play,7,1,bradm001,31,BSBBX,43/G
+play,7,1,vidrj001,00,X,S8
+play,7,1,telfa001,00,,NP
+sub,traca001,"Andy Tracy",1,3,11
+play,7,1,traca001,20,BBX,T8/8D.1-H
+play,7,1,guerv001,30,BBBB,W
+play,7,1,stevl001,31,BBBFX,6/P6
+play,8,0,rente001,00,,NP
+sub,klins002,"Steve Kline",1,3,1
+play,8,0,rente001,22,BCBFX,8/F8D
+play,8,0,drewj001,12,CFBS,K
+play,8,0,tatif001,00,X,63/G
+play,8,1,blumg001,00,,NP
+sub,timlm001,"Mike Timlin",0,5,1
+play,8,1,blumg001,01,CX,S9/9S
+play,8,1,widgc001,12,SBSX,64(1)3/GDP
+play,8,1,delat001,20,BBX,63/G
+play,9,0,timlm001,00,,NP
+sub,polap001,"Placido Polanco",0,5,11
+play,9,0,polap001,02,CFFX,53/G
+play,9,0,lankr001,22,BBFCS,K
+play,9,0,hernc001,11,BFX,D/78
+play,9,0,paquc001,22,CBFBS,K
+data,er,ankir001,3
+data,er,morrm001,1
+data,er,timlm001,0
+data,er,moort001,0
+data,er,telfa001,0
+data,er,klins002,0

@@ -1,0 +1,73 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,01,1,,,,,0,2,CX,villr001,1,0,vinaf001 grounds out. ,vinaf001,0,G
+,00,1,,,,,1,3,X,villr001,1,0,,rente001,0,F
+,11,1,edmoj001,,,,2,6,BCX,villr001,0,0,edmoj001 singles. ,edmoj001,0,
+,21,1,edmoj001,,,,3,10,CBBX,villr001,1,0,,mcgwm001,0,P
+,22,1,reesp001,,,,4,5,CBCBX,benea001,0,0,reesp001 singles. ,reesp001,1,
+reesp001 to 2B. ,11,1,cases001,reesp001,,,5,8,CBX,benea001,0,0,cases001 singles. ,cases001,1,
+reesp001 scores. cases001 to 3B. ,20,1,grifk002,,cases001,,6,11,BBX,benea001,0,1,grifk002 singles. ,grifk002,1,
+,10,1,grifk002,,cases001,,7,13,BX,benea001,1,0,,yound001,1,
+,20,1,,,cases001,,8,16,BBX,benea001,2,0,Double Play. ,taube001,1,
+,22,2,,,,,9,16,FBBCFS,villr001,1,0,lankr001 strikes out. ,lankr001,0,
+,12,2,,paquc001,,,10,21,CBFFX,villr001,0,0,paquc001 doubles. ,paquc001,0,
+,00,2,,paquc001,,,11,22,X,villr001,1,0,,drewj001,0,F
+,00,2,,paquc001,,,12,23,X,villr001,1,0,mathm001 grounds out. ,mathm001,0,G
+,11,2,bichd001,,,,13,19,CBX,benea001,0,0,bichd001 singles. ,bichd001,1,
+,01,2,bichd001,,,,14,21,CX,benea001,1,0,,boona001,1,F
+bichd001 out. ,21,2,castj004,,,,15,25,BCBX,benea001,1,0,castj004 reaches on fielder's choice. ,castj004,1,
+,10,2,castj004,,,,16,27,BX,benea001,1,0,,villr001,1,F
+,22,3,,,,,17,29,BCBFFX,villr001,1,0,,benea001,0,F
+,00,3,,,,,18,30,X,villr001,1,0,,vinaf001,0,F
+,01,3,rente001,,,,19,32,CX,villr001,0,0,rente001 singles. ,rente001,0,
+,20,3,,,,edmoj001,20,35,BB1,villr001,1,0,rente001 picked off. ,edmoj001,0,
+,31,3,,,,,21,32,CBBBX,benea001,1,0,,reesp001,1,F
+,10,3,,,,,22,34,BX,benea001,1,0,,cases001,1,F
+,00,3,,,,,23,35,X,benea001,1,0,,grifk002,1,F
+,00,4,,,,,24,36,X,villr001,0,1,edmoj001 homers. ,edmoj001,0,
+,31,4,,,,,25,41,BBFBX,villr001,0,1,mcgwm001 homers. ,mcgwm001,0,
+,01,4,,,,,26,43,CX,villr001,1,0,lankr001 grounds out. ,lankr001,0,G
+,32,4,paquc001,,,,27,51,SBFBBFFB,villr001,0,0,paquc001 walks. ,paquc001,0,
+,02,4,paquc001,,,,28,54,FSS,villr001,1,0,drewj001 strikes out. ,drewj001,0,
+,21,4,paquc001,,,,29,58,BBFX,villr001,1,0,,mathm001,0,
+,00,4,yound001,,,,30,36,X,benea001,0,0,yound001 singles. ,yound001,1,
+,20,4,,,,,31,39,BBX,benea001,2,0,Double Play. ,taube001,1,
+,00,4,bichd001,,,,32,40,X,benea001,0,0,bichd001 singles. ,bichd001,1,
+,01,4,,bichd001,,boona001,33,42,CB,benea001,0,0,bichd001 steals 2B. ,boona001,1,
+bichd001 out. boona001 to 1B. ,11,4,boona001,,,,34,45,CBX,benea001,1,0,boona001 hits into a fielder's choice. ,boona001,1,
+,32,5,,,,,35,64,BBCFBX,villr001,1,0,benea001 grounds out. ,benea001,0,G
+,10,5,,,,,36,66,BX,villr001,1,0,,vinaf001,0,F
+,21,5,,,,,37,70,BBCX,villr001,1,0,,rente001,0,F
+,32,5,,castj004,,,38,51,BBCFBX,benea001,0,0,castj004 doubles. ,castj004,1,
+castj004 to 3B. ,00,5,,,castj004,,39,52,X,benea001,1,0,Sacrifice bunt by villr001.,villr001,1,
+castj004 scores. ,12,5,,,,,40,56,CFBX,benea001,1,1,reesp001 hits sacrifice fly. ,reesp001,1,
+,20,5,,,,,41,59,BBX,benea001,1,0,cases001 grounds out. ,cases001,1,G
+,32,6,edmoj001,,,,42,76,BCBBCB,villr001,0,0,edmoj001 walks. ,edmoj001,0,
+edmoj001 to 2B. ,30,6,mcgwm001,edmoj001,,,43,80,BBBB,villr001,0,0,mcgwm001 walks. ,mcgwm001,0,
+,22,6,mcgwm001,edmoj001,,,44,85,FCBBS,villr001,1,0,lankr001 strikes out. ,lankr001,0,
+,01,6,mcgwm001,edmoj001,,,45,87,CX,villr001,1,0,,paquc001,0,L
+,12,6,mcgwm001,edmoj001,,,46,92,CCFBX,villr001,1,0,,drewj001,0,P
+,21,6,,,,,47,63,BBFX,benea001,0,1,grifk002 homers. ,grifk002,1,
+,22,6,,,,,48,68,FCBBX,benea001,1,0,,yound001,1,F
+,00,6,,,,,49,69,X,benea001,1,0,taube001 grounds out. ,taube001,1,G
+,22,6,,,,,50,74,BFFBX,benea001,1,0,,bichd001,1,F
+,21,7,,,,,51,96,FBBX,villr001,1,0,,mathm001,0,F
+,32,7,,,,,53,102,BCBBSS,villr001,1,0,davie001 strikes out. ,davie001,0,
+,00,7,vinaf001,,,,54,103,H,villr001,0,0,vinaf001 hit by pitch. ,vinaf001,0,
+,12,7,vinaf001,,,,57,4,BCSS,wills002,1,0,rente001 strikes out. ,rente001,0,
+,20,7,,,,,59,3,BBX,sloch001,1,0,,boona001,1,L
+,01,7,,,,,60,5,CX,sloch001,1,0,castj004 grounds out. ,castj004,1,G
+,02,7,tuckm001,,,,61,9,CSFH,sloch001,0,0,tuckm001 hit by pitch. ,tuckm001,1,
+,01,7,tuckm001,,,,62,11,CX,sloch001,1,0,reesp001 grounds out. ,reesp001,1,G
+,22,8,,,,,63,9,BBCSX,wills002,1,0,edmoj001 grounds out. ,edmoj001,0,G
+,11,8,,,,,64,12,BFX,wills002,1,0,mcgwm001 grounds out. ,mcgwm001,0,G
+,32,8,,,,,65,19,SBSBBFS,wills002,1,0,lankr001 strikes out. ,lankr001,0,
+,30,8,cases001,,,,67,4,BBBB,mohlm001,0,0,cases001 walks. ,cases001,1,
+cases001 to 2B. ,02,8,,cases001,,grifk002,68,7,CCB,mohlm001,0,0,Wild Pitch. ,grifk002,1,
+,12,8,,cases001,,,69,11,CCBC,mohlm001,1,0,grifk002 strikes out. ,grifk002,1,
+,12,8,,cases001,,,70,15,BSSS,mohlm001,1,0,yound001 strikes out. ,yound001,1,
+,22,8,,cases001,,,71,20,CCBBS,mohlm001,1,0,taube001 strikes out. ,taube001,1,
+,12,9,,,,,73,23,CFBC,wills002,1,0,paquc001 strikes out. ,paquc001,0,
+,01,9,drewj001,,,,74,25,CX,wills002,0,0,drewj001 singles. ,drewj001,0,
+drewj001 to 2B. ,02,9,howat001,drewj001,,,76,28,CSX,wills002,0,0,howat001 singles. ,howat001,0,
+drewj001 to 3B. marre001 out. ,12,9,suttl001,,drewj001,,79,32,CBCX,wills002,1,0,suttl001 reaches on fielder's choice. ,suttl001,0,G
+,11,9,suttl001,,drewj001,,80,35,FBX,wills002,1,0,,vinaf001,0,

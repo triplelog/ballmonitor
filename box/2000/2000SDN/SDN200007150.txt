@@ -1,0 +1,125 @@
+version,2
+info,visteam,SEA
+info,hometeam,SDN
+info,site,SAN01
+info,date,2000/07/15
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,wolfj901
+info,ump1b,roe-r901
+info,ump2b,rungb901
+info,ump3b,rapue901
+info,pitches,pitches
+info,temp,73
+info,winddir,torf
+info,windspeed,6
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,138
+info,attendance,43532
+info,wp,willw001
+info,lp,selea001
+info,save,hofft001
+start,mclem001,"Mark McLemore",0,1,4
+start,belld002,"David Bell",0,2,5
+start,camem001,"Mike Cameron",0,3,8
+start,olerj001,"John Olerud",0,4,3
+start,buhnj001,"Jay Buhner",0,5,9
+start,mabrj001,"John Mabry",0,6,7
+start,wilsd001,"Dan Wilson",0,7,2
+start,guilc001,"Carlos Guillen",0,8,6
+start,selea001,"Aaron Sele",0,9,1
+start,owene001,"Eric Owens",1,1,9
+start,marta001,"Al Martin",1,2,7
+start,klesr001,"Ryan Klesko",1,3,3
+start,nevip001,"Phil Nevin",1,4,5
+start,boonb002,"Bret Boone",1,5,4
+start,gonzw001,"Wiki Gonzalez",1,6,2
+start,river002,"Ruben Rivera",1,7,8
+start,jackd003,"Damian Jackson",1,8,6
+start,willw001,"Woody Williams",1,9,1
+play,1,0,mclem001,21,BBCX,D9
+play,1,0,belld002,21,FBBX,9/FDP.2X3(95)
+play,1,0,camem001,12,BFFC,K/C
+play,1,1,owene001,00,X,S9
+play,1,1,marta001,31,BBFBB,W.1-2
+play,1,1,klesr001,12,BCCX,8/F8
+play,1,1,nevip001,22,BCBFX,D7.2-H;1-H;B-3(THH)
+play,1,1,boonb002,02,SFC,K/C
+play,1,1,gonzw001,12,CCBX,63/G
+play,2,0,olerj001,12,CCBX,7/F7
+play,2,0,buhnj001,02,CSS,K
+play,2,0,mabrj001,12,BCFFX,43/G
+play,2,1,river002,11,CBX,S8
+play,2,1,jackd003,00,X,T9.1-H
+play,2,1,willw001,20,BBX,S8.3-H
+play,2,1,owene001,11,CBX,54(1)/FO
+play,2,1,marta001,31,BFBBS,CS2(24)
+play,2,1,marta001,32,BFBBSS,K
+play,3,0,wilsd001,11,BCX,S8
+play,3,0,guilc001,10,BX,46(1)3/GDP
+play,3,0,selea001,12,BFCFX,3/G
+play,3,1,klesr001,02,CFS,K
+play,3,1,nevip001,10,BX,S9
+play,3,1,boonb002,12,CSBS,K
+play,3,1,gonzw001,20,BBX,64(1)/FO
+play,4,0,mclem001,22,BFBCC,K/C
+play,4,0,belld002,22,CBFBX,53/G
+play,4,0,camem001,00,X,D/78
+play,4,0,olerj001,32,BSBCFBB,W
+play,4,0,buhnj001,12,FCBS,K
+play,4,1,river002,32,CBBCBS,K
+play,4,1,jackd003,32,BCBCBX,43/G
+play,4,1,willw001,12,CCBC,K/C
+play,5,0,mabrj001,02,FSS,K
+play,5,0,wilsd001,22,BFFBFFX,9/F9
+play,5,0,guilc001,12,CCBFX,13/G
+play,5,1,owene001,12,BCCS,K
+play,5,1,marta001,22,FBBSX,3/G
+play,5,1,klesr001,30,BBBB,W
+play,5,1,nevip001,20,BBX,9/F9
+play,6,0,selea001,00,,NP
+sub,javis001,"Stan Javier",0,9,11
+play,6,0,javis001,32,BCCBFBFFX,1/L1
+play,6,0,mclem001,00,X,43/G
+play,6,0,belld002,01,CX,6/P6
+play,6,1,boonb002,00,,NP
+sub,mabrj001,"John Mabry",0,6,5
+play,6,1,boonb002,00,,NP
+sub,javis001,"Stan Javier",0,9,7
+play,6,1,boonb002,00,,NP
+sub,tomkb001,"Brett Tomko",0,2,1
+play,6,1,boonb002,00,X,3/FL
+play,6,1,gonzw001,11,FBX,53/G
+play,6,1,river002,22,BCFFFBFC,K/C
+play,7,0,camem001,11,CBX,3/P3
+play,7,0,olerj001,21,BFBX,43/G
+play,7,0,buhnj001,31,BBBCB,W
+play,7,0,mabrj001,22,FBSBX,D9.1-H
+play,7,0,wilsd001,12,FBSX,4/P4
+play,7,1,jackd003,32,BBSBCX,43/G
+play,7,1,willw001,22,FSBBS,K
+play,7,1,owene001,10,BX,53/G
+play,8,0,guilc001,32,BLBFFBFB,W
+play,8,0,javis001,00,,NP
+sub,walld002,"Donne Wall",1,9,1
+play,8,0,javis001,12,CBFX,6/P6
+play,8,0,mclem001,21,BBCX,36(1)3/GDP
+play,8,1,marta001,00,X,7/F7
+play,8,1,klesr001,00,X,3/G
+play,8,1,nevip001,20,BBX,43/G
+play,9,0,tomkb001,00,,NP
+sub,ibanr001,"Raul Ibanez",0,2,11
+play,9,0,ibanr001,00,,NP
+sub,hofft001,"Trevor Hoffman",1,9,1
+play,9,0,ibanr001,32,BBCBCX,9/F9
+play,9,0,camem001,02,CCFS,K
+play,9,0,olerj001,02,CSC,K/C
+data,er,selea001,4
+data,er,tomkb001,0
+data,er,willw001,1
+data,er,walld002,0
+data,er,hofft001,0

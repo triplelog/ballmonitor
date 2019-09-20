@@ -1,0 +1,138 @@
+version,2
+info,visteam,ATL
+info,hometeam,HOU
+info,site,HOU03
+info,date,2000/05/28
+info,number,0
+info,starttime,2:05PM
+info,daynight,day
+info,usedh,false
+info,umphome,kulpr901
+info,ump1b,herna901
+info,ump2b,timmt901
+info,ump3b,fostm901
+info,pitches,pitches
+info,temp,72
+info,winddir,ltor
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,157
+info,attendance,42777
+info,wp,valdm001
+info,lp,seanr001
+info,save,wagnb001
+start,veraq001,"Quilvio Veras",0,1,4
+start,jonea002,"Andruw Jones",0,2,8
+start,jonec004,"Chipper Jones",0,3,5
+start,galaa001,"Andres Galarraga",0,4,3
+start,jordb001,"Brian Jordan",0,5,9
+start,lopej001,"Javy Lopez",0,6,2
+start,bonib001,"Bobby Bonilla",0,7,7
+start,weisw001,"Walt Weiss",0,8,6
+start,millk004,"Kevin Millwood",0,9,1
+start,biggc001,"Craig Biggio",1,1,4
+start,berkl001,"Lance Berkman",1,2,9
+start,bagwj001,"Jeff Bagwell",1,3,3
+start,camik001,"Ken Caminiti",1,4,5
+start,hidar001,"Richard Hidalgo",1,5,8
+start,wardd002,"Daryle Ward",1,6,7
+start,melum001,"Mitch Meluskey",1,7,2
+start,lugoj001,"Julio Lugo",1,8,6
+start,holtc001,"Chris Holt",1,9,1
+play,1,0,veraq001,32,BCFBBFX,S8
+play,1,0,jonea002,31,BBCBX,HR/7.1-H
+play,1,0,jonec004,00,X,43/G
+play,1,0,galaa001,00,X,S9
+play,1,0,jordb001,21,BBSX,64(1)3/GDP
+play,1,1,biggc001,12,BCFS,K
+play,1,1,berkl001,22,CSBBX,D9
+play,1,1,bagwj001,11,BFX,8/F8
+play,1,1,camik001,00,X,S7.2-H;B-2(E7/THH)
+play,1,1,hidar001,22,BSCBX,8/F8
+play,2,0,lopej001,32,BFFBFFBFFFFB,W
+play,2,0,bonib001,00,X,7/F7
+play,2,0,weisw001,12,FFBS,K
+play,2,0,millk004,12,SBFS,K
+play,2,1,wardd002,21,CBBX,7/F7
+play,2,1,melum001,32,CBBBFFFB,W
+play,2,1,lugoj001,10,BX,46(1)/FO
+play,2,1,holtc001,02,FSFC,K/C
+play,3,0,veraq001,11,BFX,53/G
+play,3,0,jonea002,00,X,S8
+play,3,0,jonec004,30,BBBB,W.1-2
+play,3,0,galaa001,12,BSFC,K/C
+play,3,0,jordb001,01,FX,9/F9D
+play,3,1,biggc001,12,SBFFFS,K
+play,3,1,berkl001,00,X,13/G
+play,3,1,bagwj001,22,BFBFX,D7/7D
+play,3,1,camik001,32,CBBSBFC,K/C
+play,4,0,lopej001,01,SX,HR/9
+play,4,0,bonib001,12,FCBFS,K
+play,4,0,weisw001,00,X,3/G
+play,4,0,millk004,02,SFS,K
+play,4,1,hidar001,21,BFBX,9/F9
+play,4,1,wardd002,12,SBFS,K
+play,4,1,melum001,02,CFS,K
+play,5,0,veraq001,31,BBBCB,W
+play,5,0,jonea002,12,SCBB,SB2
+play,5,0,jonea002,22,SCBBX,53/G.2-3
+play,5,0,jonec004,30,BBBB,W
+play,5,0,galaa001,22,SFBBS,K
+play,5,0,jordb001,22,BCSBFX,64(1)/FO
+play,5,1,lugoj001,21,BCBX,8/F8
+play,5,1,holtc001,00,X,8/F8S
+play,5,1,biggc001,32,BBCFBB,W
+play,5,1,berkl001,11,CBX,4/L4
+play,6,0,lopej001,11,BCX,D7
+play,6,0,bonib001,32,BBFBFFFFS,K
+play,6,0,weisw001,30,BBBX,31/G.2-3
+play,6,0,millk004,02,SSS,K
+play,6,1,bagwj001,00,,NP
+sub,sandr002,"Reggie Sanders",0,7,7
+play,6,1,bagwj001,01,SX,3/P3
+play,6,1,camik001,22,BBCFC,K/C
+play,6,1,hidar001,00,X,9/F9D
+play,7,0,veraq001,00,,NP
+sub,slusj001,"Joe Slusarski",1,9,1
+play,7,0,veraq001,21,FBBX,43/G
+play,7,0,jonea002,00,X,63/G
+play,7,0,jonec004,21,CBBX,8/F8
+play,7,1,wardd002,02,CFFX,53/G
+play,7,1,melum001,21,BFBX,43/G
+play,7,1,lugoj001,32,BFSBBB,W
+play,7,1,slusj001,00,,NP
+sub,spieb001,"Bill Spiers",1,9,11
+play,7,1,spieb001,01,FX,8/F8
+play,8,0,galaa001,00,,NP
+sub,valdm001,"Marc Valdes",1,9,1
+play,8,0,galaa001,00,X,S/78
+play,8,0,jordb001,22,SBFBS,K
+play,8,0,lopej001,01,CX,9/F9
+play,8,0,sandr002,10,BX,8/F8
+play,8,1,biggc001,00,,NP
+sub,seanr001,"Rudy Seanez",0,9,1
+play,8,1,biggc001,12,BCSS,K
+play,8,1,berkl001,00,X,HR/7
+play,8,1,bagwj001,32,BBSBSB,W
+play,8,1,camik001,10,BX,HR/9.1-H
+play,8,1,hidar001,00,X,7/F7
+play,8,1,wardd002,22,SBBFX,43/G
+play,9,0,weisw001,00,,NP
+sub,wagnb001,"Billy Wagner",1,9,1
+play,9,0,weisw001,00,,NP
+sub,furcr001,"Rafael Furcal",0,8,11
+play,9,0,furcr001,31,CBBBB,W
+play,9,0,seanr001,00,,NP
+sub,hubbt001,"Trenidad Hubbard",0,9,11
+play,9,0,hubbt001,02,SSS,K
+play,9,0,veraq001,01,FX,9/F9D
+play,9,0,jonea002,22,BFBFX,S.1-2
+play,9,0,jonec004,30,BBBX,5/FL
+data,er,millk004,1
+data,er,seanr001,3
+data,er,holtc001,3
+data,er,slusj001,0
+data,er,valdm001,0
+data,er,wagnb001,0

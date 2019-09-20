@@ -1,0 +1,134 @@
+version,2
+info,visteam,TEX
+info,hometeam,CLE
+info,site,CLE08
+info,date,2000/08/07
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,rungb901
+info,ump1b,lampi901
+info,ump2b,shulj901
+info,ump3b,roe-r901
+info,pitches,pitches
+info,temp,79
+info,winddir,ltor
+info,windspeed,7
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,165
+info,attendance,43258
+info,wp,reeds001
+info,lp,hellr001
+info,save,wickb001
+start,alicl001,"Luis Alicea",0,1,4
+start,cataf001,"Frank Catalanotto",0,2,10
+start,greer001,"Rusty Greer",0,3,7
+start,palmr001,"Rafael Palmeiro",0,4,3
+start,kaplg001,"Gabe Kapler",0,5,8
+start,leder001,"Ricky Ledee",0,6,9
+start,haseb001,"Bill Haselman",0,7,2
+start,lambm001,"Mike Lamb",0,8,5
+start,clayr001,"Royce Clayton",0,9,6
+start,hellr001,"Rick Helling",0,0,1
+start,loftk001,"Kenny Lofton",1,1,8
+start,vizqo001,"Omar Vizquel",1,2,6
+start,alomr001,"Roberto Alomar",1,3,4
+start,thomj002,"Jim Thome",1,4,10
+start,segud001,"David Segui",1,5,3
+start,cordw001,"Wil Cordero",1,6,7
+start,frymt001,"Travis Fryman",1,7,5
+start,selbb001,"Bill Selby",1,8,9
+start,aloms001,"Sandy Alomar",1,9,2
+start,woods001,"Steve Woodard",1,0,1
+play,1,0,alicl001,11,CBX,7/F7
+play,1,0,cataf001,12,CCBX,9/F9
+play,1,0,greer001,11,CBX,3/G
+play,1,1,loftk001,21,BBSX,53/BG
+play,1,1,vizqo001,22,CCFBBX,S9
+play,1,1,alomr001,32,CBBBFFFX,7/F7
+play,1,1,thomj002,20,BBX,S/78.1-3
+play,1,1,segud001,11,BCX,4/P4
+play,2,0,palmr001,22,FBBFX,S8
+play,2,0,kaplg001,22,BSCBFFFX,46(1)3/GDP
+play,2,0,leder001,02,CSC,K/C
+play,2,1,cordw001,11,BCX,5/P5
+play,2,1,frymt001,32,CBBBFX,9/F9D
+play,2,1,selbb001,10,BX,31/G
+play,3,0,haseb001,22,BCSBS,K
+play,3,0,lambm001,12,CCBX,13/G
+play,3,0,clayr001,32,CBBBCX,53/G
+play,3,1,aloms001,00,X,S7
+play,3,1,loftk001,12,CBCFC,K/C
+play,3,1,vizqo001,01,CX,9/F9
+play,3,1,alomr001,12,BCCFX,64(1)/FO
+play,4,0,alicl001,21,CBBX,S9
+play,4,0,cataf001,01,CX,8/F8
+play,4,0,greer001,00,X,1(B)3(1)/LDP
+play,4,1,thomj002,22,CCBBC,K/C
+play,4,1,segud001,01,CX,53/G
+play,4,1,cordw001,12,SSBFX,4/P4
+play,5,0,palmr001,11,CBX,S9
+play,5,0,kaplg001,12,BFFFFX,S8.1-2
+play,5,0,leder001,01,LX,7/F7D
+play,5,0,haseb001,02,SCC,K/C
+play,5,0,lambm001,31,SBBBB,W.2-3;1-2
+play,5,0,clayr001,32,BSCBFFFFBFS,K
+play,5,1,frymt001,11,BCX,9/F9
+play,5,1,selbb001,20,BBX,7/F7S
+play,5,1,aloms001,10,BX,8/F8D
+play,6,0,alicl001,21,CBBX,2/FL
+play,6,0,cataf001,00,X,63/G
+play,6,0,greer001,01,CX,D7
+play,6,0,palmr001,30,IIII,IW
+play,6,0,kaplg001,32,SFBBBB,W.2-3;1-2
+play,6,0,leder001,00,,NP
+sub,martt003,"Tom Martin",1,0,1
+play,6,0,leder001,00,,NP
+sub,curtc001,"Chad Curtis",0,6,11
+play,6,0,curtc001,32,SBBBCX,63/G
+play,6,1,loftk001,00,,NP
+sub,curtc001,"Chad Curtis",0,6,9
+play,6,1,loftk001,12,BFCX,8/F8
+play,6,1,vizqo001,12,CFBFX,31/G
+play,6,1,alomr001,22,CBCBC,K/C
+play,7,0,haseb001,00,,NP
+sub,reeds001,"Steve Reed",1,0,1
+play,7,0,haseb001,12,BCCX,63/G
+play,7,0,lambm001,02,CFX,43/G
+play,7,0,clayr001,12,CSBX,9/F9
+play,7,1,thomj002,32,CFBBBB,W
+play,7,1,segud001,00,X,9/F9
+play,7,1,cordw001,32,BCCBBX,S9.1-3
+play,7,1,frymt001,11,BCX,9/SF.3-H;1-2
+play,7,1,selbb001,00,X,8/F8
+play,8,0,alicl001,00,,NP
+sub,cabrj002,"Jolbert Cabrera",1,8,9
+play,8,0,alicl001,00,,NP
+sub,karss001,"Steve Karsay",1,0,1
+play,8,0,alicl001,02,CFC,K/C
+play,8,0,cataf001,00,X,1/G
+play,8,0,greer001,30,BBBB,W
+play,8,0,palmr001,22,BCBCX,13/G
+play,8,1,aloms001,00,,NP
+sub,venam002,"Mike Venafro",0,0,1
+play,8,1,aloms001,32,BBFFBFFFFC,K/C
+play,8,1,loftk001,22,CBBFFFC,K/C
+play,8,1,vizqo001,20,BBX,S
+play,8,1,alomr001,00,X,S9.1-2
+play,8,1,thomj002,01,CX,S7.2-H;1-2
+play,8,1,segud001,12,BCFFX,8/F8
+play,9,0,kaplg001,00,,NP
+sub,wickb001,"Bob Wickman",1,0,1
+play,9,0,kaplg001,32,CBBFBX,53/G
+play,9,0,curtc001,32,BCCBFBX,9/F9
+play,9,0,haseb001,32,BBCSFFBX,8/F8
+data,er,hellr001,1
+data,er,venam002,1
+data,er,woods001,0
+data,er,martt003,0
+data,er,reeds001,0
+data,er,karss001,0
+data,er,wickb001,0

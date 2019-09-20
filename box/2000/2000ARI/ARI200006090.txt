@@ -1,0 +1,152 @@
+version,2
+info,visteam,ANA
+info,hometeam,ARI
+info,site,PHO01
+info,date,2000/06/09
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,welkt901
+info,ump1b,scotd901
+info,ump2b,hudsm901
+info,ump3b,cedeg901
+info,pitches,pitches
+info,temp,86
+info,winddir,ltor
+info,windspeed,7
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,165
+info,attendance,39468
+info,wp,johnr005
+info,lp,coopb001
+info,save,kim-b001
+start,erstd001,"Darin Erstad",0,1,8
+start,stock001,"Kevin Stocker",0,2,6
+start,vaugm001,"Mo Vaughn",0,3,3
+start,salmt001,"Tim Salmon",0,4,9
+start,glaut001,"Troy Glaus",0,5,5
+start,molib001,"Ben Molina",0,6,2
+start,cleme001,"Edgard Clemente",0,7,7
+start,gil-b001,"Benji Gil",0,8,4
+start,coopb001,"Brian Cooper",0,9,1
+start,womat001,"Tony Womack",1,1,6
+start,bellj001,"Jay Bell",1,2,4
+start,gonzl001,"Luis Gonzalez",1,3,7
+start,willm003,"Matt D. Williams",1,4,5
+start,finls001,"Steve Finley",1,5,8
+start,wardt001,"Turner Ward",1,6,9
+start,lee-t002,"Travis Lee",1,7,3
+start,stink001,"Kelly Stinnett",1,8,2
+start,johnr005,"Randy Johnson",1,9,1
+play,1,0,erstd001,12,BCCS,K
+play,1,0,stock001,12,FBCFS,K
+play,1,0,vaugm001,02,SSC,K/C
+play,1,1,womat001,02,CCH,HP
+play,1,1,bellj001,21,CBBX,3/FL
+play,1,1,gonzl001,20,BBX,S9.1-3
+play,1,1,willm003,32,BFBCFB1,POCS2(136)
+play,1,1,willm003,32,BFBCFB1X,53/G
+play,2,0,salmt001,22,CSBBFX,63/G
+play,2,0,glaut001,22,BCCFFBX,HR/7
+play,2,0,molib001,11,CBX,7/F7
+play,2,0,cleme001,32,CBBFBFS,K
+play,2,1,finls001,21,CBBX,7/F7
+play,2,1,wardt001,32,CBBBCB,W
+play,2,1,lee-t002,12,CBSX,43/G.1-2
+play,2,1,stink001,30,IIII,IW
+play,2,1,johnr005,20,BBX,53/G
+play,3,0,gil-b001,22,SBFBX,9/F9S
+play,3,0,coopb001,12,BFSS,K
+play,3,0,erstd001,11,BSH,HP
+play,3,0,stock001,01,SB,SB2.1-3(E2/TH2)
+play,3,0,stock001,21,SBBX,5/P5
+play,3,1,womat001,02,FCX,7/F7
+play,3,1,bellj001,20,BBX,8/F8
+play,3,1,gonzl001,31,BBBCX,43/G
+play,4,0,vaugm001,21,CBBX,S9
+play,4,0,salmt001,01,CX,4(1)3/GDP
+play,4,0,glaut001,30,BBBB,W
+play,4,0,molib001,00,C,CS2(24)
+play,4,1,willm003,00,X,S/78
+play,4,1,finls001,32,CBBSBFFFB,W.1-2
+play,4,1,wardt001,01,LX,7/F7S
+play,4,1,lee-t002,00,X,E3/TH.2-3;1-2
+play,4,1,stink001,11,BFX,54(1)3/GDP
+play,5,0,molib001,22,FBBFS,K
+play,5,0,cleme001,32,CCBFFBBX,4/P4
+play,5,0,gil-b001,11,BCX,6/P6
+play,5,1,johnr005,10,BX,8/F8S
+play,5,1,womat001,22,BCBFFFX,T9
+play,5,1,bellj001,32,BCBFBX,S7.3-H
+play,5,1,gonzl001,00,X,HR/78.1-H
+play,5,1,willm003,32,BBBCCX,13/G
+play,5,1,finls001,00,X,D9
+play,5,1,wardt001,00,X,E3/TH1.2-H(UR)
+play,5,1,lee-t002,32,FBFBBFFS,K
+play,6,0,coopb001,00,,NP
+sub,spies001,"Scott Spiezio",0,9,11
+play,6,0,spies001,22,FCFFBBX,S8
+play,6,0,erstd001,21,BBCX,E4/TH.1-2
+play,6,0,stock001,12,BFCC,K/C
+play,6,0,vaugm001,22,FBFBC,K/C
+play,6,0,salmt001,10,BX,4/L4
+play,6,1,stink001,00,,NP
+sub,weave001,"Eric Weaver",0,9,1
+play,6,1,stink001,02,CCFX,7/F7
+play,6,1,johnr005,00,,NP
+sub,friah001,"Hanley Frias",1,9,11
+play,6,1,friah001,20,BBX,S9
+play,6,1,womat001,00,X,7/F7
+play,6,1,bellj001,21,CBBC,SB2
+play,6,1,bellj001,32,CBBCBX,7/F7S
+play,7,0,glaut001,00,,NP
+sub,padiv001,"Vicente Padilla",1,9,1
+play,7,0,glaut001,22,SCBBFFS,K
+play,7,0,molib001,10,BX,6/P6
+play,7,0,cleme001,00,,NP
+sub,palmo001,"Orlando Palmeiro",0,7,11
+play,7,0,palmo001,22,CBBCX,D/89D
+play,7,0,gil-b001,00,,NP
+sub,kenna001,"Adam Kennedy",0,8,11
+play,7,0,kenna001,01,CX,4/P4
+play,7,1,gonzl001,00,,NP
+sub,erstd001,"Darin Erstad",0,1,7
+play,7,1,gonzl001,00,,NP
+sub,kenna001,"Adam Kennedy",0,8,4
+play,7,1,gonzl001,00,,NP
+sub,andeg001,"Garret Anderson",0,9,8
+play,7,1,gonzl001,00,,NP
+sub,holtm001,"Mike Holtz",0,7,1
+play,7,1,gonzl001,22,CBSBS,K
+play,7,1,willm003,30,BBBB,W
+play,7,1,finls001,01,CX,5/FL
+play,7,1,wardt001,10,BX,53/G
+play,8,0,andeg001,00,,NP
+sub,plesd001,"Dan Plesac",1,9,1
+play,8,0,andeg001,00,X,7/F7S
+play,8,0,erstd001,22,BBCSFFX,7/F7
+play,8,0,stock001,12,CBCS,K
+play,8,1,lee-t002,32,BCBFBX,S9.BX2(96)
+play,8,1,stink001,02,FSS,K
+play,8,1,plesd001,00,,NP
+sub,gilkb001,"Bernard Gilkey",1,9,11
+play,8,1,gilkb001,00,,NP
+sub,potel001,"Lou Pote",0,7,1
+play,8,1,gilkb001,00,X,7/F7D
+play,9,0,vaugm001,00,,NP
+sub,kim-b001,"Byung-Hyun Kim",1,9,1
+play,9,0,vaugm001,22,FFFBBX,S/78S
+play,9,0,salmt001,21,FBBX,9/F9S
+play,9,0,glaut001,12,BCSX,7/F7S
+play,9,0,molib001,11,CBX,13/G
+data,er,coopb001,3
+data,er,weave001,0
+data,er,holtm001,0
+data,er,potel001,0
+data,er,johnr005,1
+data,er,padiv001,0
+data,er,plesd001,0
+data,er,kim-b001,0

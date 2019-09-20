@@ -1,0 +1,146 @@
+version,2
+info,visteam,ANA
+info,hometeam,OAK
+info,site,OAK01
+info,date,2000/09/26
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,wintm901
+info,ump1b,vanvm901
+info,ump2b,froeb901
+info,ump3b,culbf901
+info,pitches,pitches
+info,temp,56
+info,winddir,torf
+info,windspeed,13
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,163
+info,attendance,22234
+info,wp,hudst001
+info,lp,schos001
+info,save,
+start,erstd001,"Darin Erstad",0,1,7
+start,palmo001,"Orlando Palmeiro",0,2,9
+start,vaugm001,"Mo Vaughn",0,3,3
+start,salmt001,"Tim Salmon",0,4,10
+start,andeg001,"Garret Anderson",0,5,8
+start,glaut001,"Troy Glaus",0,6,5
+start,molib001,"Ben Molina",0,7,2
+start,kenna001,"Adam Kennedy",0,8,4
+start,stock001,"Kevin Stocker",0,9,6
+start,schos001,"Scott Schoeneweis",0,0,1
+start,longt002,"Terrence Long",1,1,8
+start,velar001,"Randy Velarde",1,2,4
+start,giamj001,"Jason Giambi",1,3,3
+start,saeno001,"Olmedo Saenz",1,4,10
+start,tejam001,"Miguel Tejada",1,5,6
+start,grieb001,"Ben Grieve",1,6,7
+start,piata001,"Adam Piatt",1,7,9
+start,chave001,"Eric Chavez",1,8,5
+start,hernr002,"Ramon Hernandez",1,9,2
+start,hudst001,"Tim Hudson",1,0,1
+play,1,0,erstd001,11,CBX,S8/8S
+play,1,0,palmo001,21,BBCX,D9.1-H
+play,1,0,vaugm001,10,BX,3/L3
+play,1,0,salmt001,22,CFBBFS,K
+play,1,0,andeg001,02,SCX,S8/8S.2-H
+play,1,0,glaut001,00,X,54(1)/FO
+play,1,1,longt002,22,BCFBS,K
+play,1,1,velar001,20,BBX,63/G
+play,1,1,giamj001,32,CBBFBB,W
+play,1,1,saeno001,31,BBBCB,W.1-2
+play,1,1,tejam001,10,BX,S9/9S.2-H;1-2
+play,1,1,grieb001,30,BBBB,W.2-3;1-2
+play,1,1,piata001,31,CBBBB,W.3-H;2-3;1-2
+play,1,1,chave001,32,BBCCBFFB,W.3-H;2-3;1-2
+play,1,1,hernr002,12,BCCX,S7/7S.3-H;2-H;1-2
+play,1,1,longt002,12,BCFC,K/C
+play,2,0,molib001,11,BFX,63/G
+play,2,0,kenna001,21,CBBX,43/G
+play,2,0,stock001,01,CX,43/G
+play,2,1,velar001,01,CX,8/F8
+play,2,1,giamj001,12,CBSS,K
+play,2,1,saeno001,30,BBBB,W
+play,2,1,tejam001,10,BX,HR/78.1-H
+play,2,1,grieb001,10,BX,6/L6
+play,3,0,erstd001,02,CCX,31/G
+play,3,0,palmo001,22,BBCCX,9/F9
+play,3,0,vaugm001,22,FFBBS,K
+play,3,1,piata001,00,,NP
+sub,potel001,"Lou Pote",0,0,1
+play,3,1,piata001,22,BBCFS,K
+play,3,1,chave001,11,FBX,3/G
+play,3,1,hernr002,32,CBBCFFBX,S8/8S
+play,3,1,longt002,12,BFCS,K
+play,4,0,salmt001,22,BBCFX,63/G
+play,4,0,andeg001,00,X,43/G
+play,4,0,glaut001,02,CFC,K/C
+play,4,1,velar001,10,BX,43/G
+play,4,1,giamj001,02,CSS,K
+play,4,1,saeno001,00,,NP
+sub,staim001,"Matt Stairs",1,4,11
+play,4,1,staim001,01,CX,9/L9
+play,5,0,molib001,12,CBSX,4/L4
+play,5,0,kenna001,01,FX,8/F8
+play,5,0,stock001,12,CBSS,K
+play,5,1,tejam001,22,CCFBBFFS,K
+play,5,1,grieb001,32,CBSBBB,W
+play,5,1,piata001,12,BFFB,WP.1-2
+play,5,1,piata001,32,BFFBBB,W
+play,5,1,chave001,32,BCBBFFC,K/C
+play,5,1,hernr002,12,BCSS,K
+play,6,0,erstd001,01,CX,3/L3
+play,6,0,palmo001,32,CCBBBX,43/G
+play,6,0,vaugm001,32,CBFBFBB,W
+play,6,0,salmt001,21,SBBX,D9.1-3
+play,6,0,andeg001,32,BBSFBS,K
+play,6,1,longt002,00,,NP
+sub,wardb001,"Bryan Ward",0,0,1
+play,6,1,longt002,01,CX,43/G
+play,6,1,velar001,10,BX,4/P4
+play,6,1,giamj001,00,X,31/G
+play,7,0,glaut001,22,SSBBX,63/G
+play,7,0,molib001,11,BCX,63/G
+play,7,0,kenna001,31,BFBBX,S9
+play,7,0,stock001,11,BCX,63/G
+play,7,1,staim001,32,BFCBFBX,3/G
+play,7,1,tejam001,21,BFBX,3/G
+play,7,1,grieb001,32,CBBBFB,W
+play,7,1,piata001,00,,NP
+sub,chrir001,"Ryan Christenson",1,6,12
+play,7,1,piata001,00,X,9/F9
+play,8,0,erstd001,00,,NP
+sub,chrir001,"Ryan Christenson",1,6,7
+play,8,0,erstd001,00,,NP
+sub,portb001,"Bo Porter",1,7,9
+play,8,0,erstd001,21,BFBX,43/G
+play,8,0,palmo001,12,CFBX,43/G
+play,8,0,vaugm001,20,BBX,43/G
+play,8,1,chave001,00,,NP
+sub,alvaj002,"Juan Alvarez",0,0,1
+play,8,1,chave001,01,SX,S7/7S
+play,8,1,hernr002,11,BFX,S8/8S.1-2
+play,8,1,longt002,10,BX,S7.2-3;1-2
+play,8,1,velar001,10,BX,52(3)51(2)/GDP.1-2;B-1
+play,8,1,giamj001,01,CX,HR/9.2-H;1-H
+play,8,1,staim001,31,BBFBB,W
+play,8,1,tejam001,31,BSBBX,8/F8
+play,9,0,salmt001,00,,NP
+sub,servs001,"Scott Service",1,0,1
+play,9,0,salmt001,12,CSBX,D7
+play,9,0,andeg001,00,,NP
+sub,baugj001,"Justin Baughman",0,4,12
+play,9,0,andeg001,32,BSBFBFX,43/G.2-3
+play,9,0,glaut001,01,CX,S/78.3-H
+play,9,0,molib001,11,BCX,3/FL
+play,9,0,kenna001,12,BCFS,K
+data,er,schos001,7
+data,er,potel001,0
+data,er,wardb001,0
+data,er,alvaj002,3
+data,er,hudst001,2
+data,er,servs001,1

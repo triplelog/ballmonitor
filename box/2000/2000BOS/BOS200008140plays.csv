@@ -1,0 +1,83 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,12,1,,,,,0,5,FFBFS,martp001,1,0,willg001 strikes out. ,willg001,0,
+,22,1,,,,,1,12,CBSBFFS,martp001,1,0,cairm001 strikes out. ,cairm001,0,
+,32,1,,,,,2,18,BBSCBC,martp001,1,0,vaugg001 strikes out. ,vaugg001,0,
+,22,1,nixot001,,,,3,5,CBCBX,eilad001,0,0,nixot001 reaches on error. ,nixot001,1,G
+,11,1,nixot001,,,,4,8,CBX,eilad001,1,0,,varij001,1,F
+,12,1,nixot001,,,,5,14,CFBFFX,eilad001,1,0,,everc001,1,F
+,00,1,nixot001,,,,6,15,X,eilad001,1,0,,garcn001,1,F
+,12,2,,,,,7,22,FSBS,martp001,1,0,mcgrf001 strikes out. ,mcgrf001,0,
+,11,2,,,,,8,25,BCX,martp001,1,0,guilj001 grounds out. ,guilj001,0,G
+,31,2,cox-s001,,,,9,30,CBBBX,martp001,0,0,cox-s001 singles. ,cox-s001,0,
+,22,2,cox-s001,,,,10,35,BCBCS,martp001,1,0,flahj001 strikes out. ,flahj001,0,
+,22,2,,,,,11,20,BBFFX,eilad001,1,0,,daubb001,1,F
+,00,2,merll001,,,,12,21,X,eilad001,0,0,merll001 singles. ,merll001,1,
+,32,2,,merll001,,,13,29,BCBCFBFS,eilad001,1,0,hatts001 strikes out. merll001 steals 2B. ,hatts001,1,
+,01,2,,merll001,,,14,31,CX,eilad001,1,0,lansm001 grounds out. ,lansm001,1,G
+,12,3,,,,,15,39,FFBX,martp001,1,0,huffa001 grounds out. ,huffa001,0,G
+,01,3,guilo001,,,,16,41,FX,martp001,0,0,guilo001 singles. ,guilo001,0,
+guilo001 to 3B. ,10,3,willg001,,guilo001,,17,43,BX,martp001,0,0,willg001 singles. ,willg001,0,
+guilo001 scores. willg001 scores. ,01,3,,,,,18,45,FX,martp001,0,3,cairm001 homers. ,cairm001,0,
+,01,3,,,,,19,47,CX,martp001,1,0,,vaugg001,0,F
+,00,3,mcgrf001,,,,20,48,X,martp001,0,0,mcgrf001 singles. ,mcgrf001,0,
+mcgrf001 to 2B. ,01,3,guilj001,mcgrf001,,,21,50,FH,martp001,0,0,guilj001 hit by pitch. ,guilj001,0,
+,12,3,guilj001,mcgrf001,,,22,54,CSBS,martp001,1,0,cox-s001 strikes out. ,cox-s001,0,
+,12,3,,,,,23,35,BCCC,eilad001,1,0,lewid001 strikes out. ,lewid001,1,
+,00,3,,,,,24,36,X,eilad001,1,0,nixot001 grounds out. ,nixot001,1,G
+,22,3,,,,,25,44,CFFFFBBX,eilad001,1,0,varij001 grounds out. ,varij001,1,G
+,11,4,,,,,26,57,FBX,martp001,1,0,,flahj001,0,F
+,00,4,,huffa001,,,27,58,X,martp001,0,0,huffa001 doubles. ,huffa001,0,
+huffa001 to 3B. ,11,4,,,huffa001,,28,61,SBX,martp001,1,0,guilo001 grounds out. ,guilo001,0,G
+,10,4,,,huffa001,,29,63,BX,martp001,1,0,willg001 grounds out. ,willg001,0,G
+,01,4,,everc001,,,30,46,CX,eilad001,0,0,everc001 doubles. ,everc001,1,
+,11,4,,everc001,,,31,49,CBX,eilad001,1,0,,garcn001,1,F
+,01,4,,everc001,,,32,51,CX,eilad001,1,0,daubb001 grounds out. ,daubb001,1,G
+,02,4,,everc001,,,33,54,CFX,eilad001,1,0,merll001 grounds out. ,merll001,1,G
+,01,5,cairm001,,,,35,2,CX,pichh001,0,0,cairm001 singles. ,cairm001,0,
+,00,5,,,,vaugg001,36,3,B,pichh001,1,0,cairm001 caught stealing. ,vaugg001,0,
+,22,5,,,,,37,8,BBSSS,pichh001,1,0,vaugg001 strikes out. ,vaugg001,0,
+,32,5,mcgrf001,,,,38,16,SCBFBBFX,pichh001,0,0,mcgrf001 singles. ,mcgrf001,0,
+,32,5,mcgrf001,,,,39,22,BBBFFS,pichh001,1,0,guilj001 strikes out. ,guilj001,0,
+,01,5,,,,,40,56,CX,eilad001,1,0,hatts001 grounds out. ,hatts001,1,G
+,10,5,,,,,41,58,BX,eilad001,1,0,,lansm001,1,L
+,11,5,lewid001,,,,42,61,FBX,eilad001,0,0,lewid001 singles. ,lewid001,1,
+lewid001 to 3B. ,20,5,nixot001,,lewid001,,43,64,BBX,eilad001,0,0,nixot001 singles. ,nixot001,1,
+,00,5,nixot001,,lewid001,,44,65,X,eilad001,1,0,varij001 grounds out. ,varij001,1,G
+,01,6,,,,,45,24,SX,pichh001,1,0,cox-s001 grounds out. ,cox-s001,0,G
+,11,6,,,,,46,27,BCX,pichh001,1,0,,flahj001,0,F
+,12,6,,,,,47,31,CFBS,pichh001,1,0,huffa001 strikes out. ,huffa001,0,
+,31,6,everc001,,,,50,70,CBBBX,eilad001,0,0,everc001 singles. ,everc001,1,
+everc001 to 3B. ,10,6,,,everc001,garcn001,51,72,BC,eilad001,0,0,everc001 steals 2B. ,garcn001,1,
+everc001 scores. garcn001 to 2B. ,21,6,,garcn001,,,52,76,BCBX,eilad001,0,1,garcn001 reaches on error. ,garcn001,1,
+garcn001 scores. ,22,6,,daubb001,,,53,81,BBCCX,eilad001,0,1,daubb001 doubles. ,daubb001,1,
+daubb001 to 3B. ,00,6,,,daubb001,,55,1,X,yan-e001,1,0,Sacrifice bunt by merll001.,merll001,1,
+daubb001 scores. ,12,6,,,,,56,5,BCSX,yan-e001,1,1,hatts001 hits sacrifice fly. ,hatts001,1,
+,22,6,lansm001,,,,57,13,BFFFFBFX,yan-e001,0,0,lansm001 reaches on error. ,lansm001,1,G
+lansm001 to 3B. ,01,6,lewid001,,lansm001,,58,15,CX,yan-e001,0,0,lewid001 singles. ,lewid001,1,
+,21,6,lewid001,,lansm001,,59,19,BBSX,yan-e001,1,0,,nixot001,1,F
+,12,7,,,,,61,4,BCFX,beckr001,1,0,guilo001 grounds out. ,guilo001,0,G
+,12,7,,,,,62,8,BCFS,beckr001,1,0,willg001 strikes out. ,willg001,0,
+,12,7,,,,,63,12,CCBC,beckr001,1,0,cairm001 strikes out. ,cairm001,0,
+,00,7,,,,,64,20,X,yan-e001,1,0,,varij001,1,
+,32,7,,,,,65,27,BCBFFBS,yan-e001,1,0,everc001 strikes out. ,everc001,1,
+,12,7,,,,,66,31,BFSS,yan-e001,1,0,garcn001 strikes out. ,garcn001,1,
+,31,8,vaugg001,,,,67,17,FBBBB,beckr001,0,0,vaugg001 walks. ,vaugg001,0,
+vaugg001 to 2B. ,10,8,mcgrf001,vaugg001,,,68,19,BX,beckr001,0,0,mcgrf001 singles. ,mcgrf001,0,
+,10,8,mcgrf001,vaugg001,,,69,21,BX,beckr001,1,0,,guilj001,0,F
+,12,8,,vaugg001,,,70,25,SBFX,beckr001,2,0,Double Play. ,johnr006,0,
+,32,8,daubb001,,,,71,38,FBBSBFX,yan-e001,0,0,daubb001 singles. ,daubb001,1,
+brogr001 to 2B. ,00,8,,brogr001,,,73,39,X,yan-e001,1,0,Sacrifice bunt by merll001.,merll001,1,
+,32,8,,brogr001,,,74,45,BCBFBX,yan-e001,1,0,,hatts001,1,F
+,11,8,,brogr001,,,75,48,BCX,yan-e001,1,0,lansm001 grounds out. ,lansm001,1,G
+,22,9,,,,,78,6,SBBCFS,lowed001,1,0,flahj001 strikes out. ,flahj001,0,
+,02,9,,,,,79,10,CCFX,lowed001,1,0,tynej001 grounds out. ,tynej001,0,G
+,11,9,guilo001,,,,80,13,FBX,lowed001,0,0,guilo001 singles. ,guilo001,0,
+guilo001 to 3B. willg001 to 2B. ,11,9,,willg001,guilo001,,81,16,FBX,lowed001,0,0,willg001 singles. ,willg001,0,
+,20,9,,willg001,guilo001,,82,19,BBX,lowed001,1,0,cairm001 grounds out. ,cairm001,0,G
+,00,9,lewid001,,,,84,1,H,taylb001,0,0,lewid001 hit by pitch. ,lewid001,1,
+,10,9,,lewid001,,nixot001,85,3,BC,taylb001,0,0,lewid001 steals 2B. ,nixot001,1,
+lewid001 to 3B. ,32,9,,,lewid001,,86,9,BCBBCX,taylb001,1,0,,nixot001,1,F
+,12,9,,,lewid001,,87,13,BFSS,taylb001,1,0,varij001 strikes out. ,varij001,1,
+,30,9,everc001,,lewid001,,88,17,IIII,taylb001,0,0,everc001 intentionally walks. ,everc001,1,
+everc001 to 2B. ,30,9,garcn001,everc001,lewid001,,89,21,IIII,taylb001,0,0,garcn001 intentionally walks. ,garcn001,1,
+lewid001 scores. everc001 scores. garcn001 scores. ,22,9,,,,,90,26,BFCBX,taylb001,0,4,brogr001 homers. ,brogr001,1,

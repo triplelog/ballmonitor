@@ -1,0 +1,155 @@
+version,2
+info,visteam,TEX
+info,hometeam,ANA
+info,site,ANA01
+info,date,2000/07/19
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,eddid901
+info,ump1b,relic901
+info,ump2b,carlm901
+info,ump3b,demud901
+info,pitches,pitches
+info,oscorer,munse701
+info,temp,82
+info,winddir,rtol
+info,windspeed,2
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,195
+info,attendance,20083
+info,wp,rogek001
+info,lp,bottk001
+info,save,wettj001
+start,alicl001,"Luis Alicea",0,1,4
+start,greer001,"Rusty Greer",0,2,7
+start,palmr001,"Rafael Palmeiro",0,3,10
+start,rodri001,"Ivan Rodriguez",0,4,2
+start,segud001,"David Segui",0,5,3
+start,martd002,"Dave Martinez",0,6,9
+start,lambm001,"Mike Lamb",0,7,5
+start,kaplg001,"Gabe Kapler",0,8,8
+start,clayr001,"Royce Clayton",0,9,6
+start,rogek001,"Kenny Rogers",0,0,1
+start,erstd001,"Darin Erstad",1,1,7
+start,stock001,"Kevin Stocker",1,2,6
+start,vaugm001,"Mo Vaughn",1,3,10
+start,glaut001,"Troy Glaus",1,4,5
+start,andeg001,"Garret Anderson",1,5,8
+start,molib001,"Ben Molina",1,6,2
+start,gil-b001,"Benji Gil",1,7,4
+start,spies001,"Scott Spiezio",1,8,3
+start,cleme001,"Edgard Clemente",1,9,9
+start,bottk001,"Kent Bottenfield",1,0,1
+play,1,0,alicl001,12,CSBX,7/F7
+play,1,0,greer001,11,CBX,63/G
+play,1,0,palmr001,01,CX,8/F8
+play,1,1,erstd001,12,CFBX,31/G
+play,1,1,stock001,00,X,S7
+play,1,1,vaugm001,12,FSBC,K/C
+play,1,1,glaut001,00,1,POCS2(134)
+play,2,0,rodri001,12,SFBFX,S9
+play,2,0,segud001,22,BCBCX,S8.1-2
+play,2,0,martd002,20,BBX,7/F7
+play,2,0,lambm001,11,BCX,53/G.2-3;1-2
+play,2,0,kaplg001,10,BX,4/P4
+play,2,1,glaut001,32,CBBFBX,E5/TH
+play,2,1,andeg001,22,FFBBX,26(1)/FO
+play,2,1,molib001,10,BX,8/F8
+play,2,1,gil-b001,21,BBSX,64(1)/FO
+play,3,0,clayr001,01,FX,7/F7
+play,3,0,alicl001,32,CBFBBB,W
+play,3,0,greer001,11,BCX,4(1)3/GDP
+play,3,1,spies001,32,BFFBBFFS,K
+play,3,1,cleme001,20,BBX,9/F9
+play,3,1,erstd001,32,FBBBSX,3/G
+play,4,0,palmr001,32,FBBFBB,W
+play,4,0,rodri001,00,X,54(1)/FO
+play,4,0,segud001,11,FBX,13/G.1-2
+play,4,0,martd002,22,FBBFX,S8.2-H;B-2(THH)
+play,4,0,lambm001,00,X,41/G
+play,4,1,stock001,22,FBBFC,K/C
+play,4,1,vaugm001,32,BCBFBB,W
+play,4,1,glaut001,01,CX,54(1)3/GDP
+play,5,0,kaplg001,22,CBCBX,S7
+play,5,0,clayr001,00,X,13/SH.1-2
+play,5,0,alicl001,32,CBCBBFX,8/L8
+play,5,0,greer001,31,BBBCB,W
+play,5,0,palmr001,00,X,7/L7
+play,5,1,andeg001,21,BCBX,7/F7
+play,5,1,molib001,22,CBCFBFFX,HR/7
+play,5,1,gil-b001,12,FSBFX,S7
+play,5,1,spies001,00,X,S9.1-3
+play,5,1,cleme001,22,BSBFC,K/C
+play,5,1,erstd001,32,CFBBBS,K
+play,6,0,rodri001,12,BSFFX,D7
+play,6,0,segud001,10,BX,3/G.2-3
+play,6,0,martd002,01,CX,S9.3-H
+play,6,0,lambm001,00,S,CS2(263)
+play,6,0,lambm001,02,SSX,31/G
+play,6,1,stock001,00,X,4/P4
+play,6,1,vaugm001,02,SFS,K
+play,6,1,glaut001,11,BFX,S7
+play,6,1,andeg001,02,CFF1,POCS2(136)
+play,7,0,kaplg001,00,X,HR/9
+play,7,0,clayr001,11,CBX,S8
+play,7,0,alicl001,22,LLFBBX,7/F7
+play,7,0,greer001,20,BBX,64(1)/FO
+play,7,0,palmr001,11,BCX,9/F9D
+play,7,1,andeg001,32,BBBCCFFFX,S
+play,7,1,molib001,12,CBCX,53/G.1-2
+play,7,1,gil-b001,11,SBX,63/G
+play,7,1,spies001,32,FBBBSX,S7.2-H
+play,7,1,cleme001,20,BBX,D7.1-3
+play,7,1,erstd001,00,,NP
+sub,david002,"Doug Davis",0,0,1
+play,7,1,erstd001,30,IIII,IW
+play,7,1,stock001,01,CX,43/G
+play,8,0,rodri001,00,,NP
+sub,holtm001,"Mike Holtz",1,0,1
+play,8,0,rodri001,02,FFFFFFFX,53/G
+play,8,0,segud001,12,BFSS,K
+play,8,0,martd002,00,,NP
+sub,curtc001,"Chad Curtis",0,6,11
+play,8,0,curtc001,22,FBBCX,S8.BX2(84)
+play,8,1,vaugm001,00,,NP
+sub,curtc001,"Chad Curtis",0,6,9
+play,8,1,vaugm001,11,CBX,S7
+play,8,1,glaut001,00,,NP
+sub,salmt001,"Tim Salmon",1,3,12
+play,8,1,glaut001,00,,NP
+sub,zimmj001,"Jeff Zimmerman",0,0,1
+play,8,1,glaut001,22,BCBFX,64(1)3/GDP
+play,8,1,andeg001,01,CX,S9
+play,8,1,molib001,00,X,S7.1-2
+play,8,1,gil-b001,00,,NP
+sub,kenna001,"Adam Kennedy",1,7,11
+play,8,1,kenna001,12,CBCX,8/F8
+play,9,0,lambm001,00,,NP
+sub,kenna001,"Adam Kennedy",1,7,4
+play,9,0,lambm001,02,CCS,K
+play,9,0,kaplg001,00,,NP
+sub,fyhrm001,"Mike Fyhrie",1,0,1
+play,9,0,kaplg001,31,BCBBX,S7
+play,9,0,clayr001,00,X,63/G.1-2
+play,9,0,alicl001,00,X,3/G
+play,9,1,spies001,00,,NP
+sub,grees002,"Scarborough Green",0,6,9
+play,9,1,spies001,00,,NP
+sub,wettj001,"John Wetteland",0,0,1
+play,9,1,spies001,02,CFFFFX,S
+play,9,1,cleme001,00,,NP
+sub,palmo001,"Orlando Palmeiro",1,9,11
+play,9,1,palmo001,01,CX,43/G.1-2
+play,9,1,erstd001,11,CBX,4/L4
+play,9,1,stock001,20,BBX,S9.2XH(92)
+data,er,rogek001,2
+data,er,david002,0
+data,er,zimmj001,0
+data,er,wettj001,0
+data,er,bottk001,3
+data,er,holtm001,0
+data,er,fyhrm001,0

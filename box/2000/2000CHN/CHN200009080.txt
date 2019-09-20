@@ -1,0 +1,193 @@
+version,2
+info,visteam,HOU
+info,hometeam,CHN
+info,site,CHI11
+info,date,2000/09/08
+info,number,0
+info,starttime,2:20PM
+info,daynight,day
+info,usedh,false
+info,umphome,laynj901
+info,ump1b,barrt901
+info,ump2b,randt901
+info,ump3b,monte901
+info,pitches,pitches
+info,temp,74
+info,winddir,tolf
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,215
+info,attendance,34439
+info,wp,millw001
+info,lp,tapak001
+info,save,doteo001
+start,ceder001,"Roger Cedeno",0,1,7
+start,lugoj001,"Julio Lugo",0,2,4
+start,bagwj001,"Jeff Bagwell",0,3,3
+start,hidar001,"Richard Hidalgo",0,4,8
+start,aloum001,"Moises Alou",0,5,9
+start,melum001,"Mitch Meluskey",0,6,2
+start,trubc001,"Chris Truby",0,7,5
+start,bogat001,"Tim Bogar",0,8,6
+start,millw001,"Wade Miller",0,9,1
+start,youne001,"Eric Young",1,1,4
+start,gutir001,"Ricky Gutierrez",1,2,6
+start,sosas001,"Sammy Sosa",1,3,9
+start,gracm001,"Mark Grace",1,4,3
+start,gloar001,"Ross Gload",1,5,7
+start,bufod001,"Damon Buford",1,6,8
+start,greew001,"Willie Greene",1,7,5
+start,giraj001,"Joe Girardi",1,8,2
+start,tapak001,"Kevin Tapani",1,9,1
+play,1,0,ceder001,30,BBBB,W
+play,1,0,lugoj001,12,CSBFX,S7.1-2
+play,1,0,bagwj001,12,BFFB,SB3;SB2
+play,1,0,bagwj001,32,BFFBBFB,W
+play,1,0,hidar001,00,X,D/78D.3-H;2-H;1-H
+play,1,0,aloum001,11,BFX,S7.2-3
+play,1,0,melum001,00,X,S9.3-H;1-2
+play,1,0,trubc001,12,BSFS,K
+play,1,0,bogat001,01,FX,64(1)3/GDP
+play,1,1,youne001,21,BBCX,4/P4
+play,1,1,gutir001,31,BBBCX,53/G
+play,1,1,sosas001,22,CFBBX,63/G
+play,2,0,millw001,22,BCBFX,3/G
+play,2,0,ceder001,10,BX,8/F8
+play,2,0,lugoj001,21,BBCX,S1/BG1
+play,2,0,bagwj001,12,FCBX,6/P6
+play,2,1,gracm001,32,CBBBCFX,7/F7
+play,2,1,gloar001,12,CCBS,K
+play,2,1,bufod001,32,BFFBBB,W
+play,2,1,greew001,02,FFS,K
+play,3,0,hidar001,32,CCBFBBB,W
+play,3,0,aloum001,21,CBBX,S/78.1-3
+play,3,0,melum001,22,BBCCC,K/C
+play,3,0,trubc001,00,X,8/SF.3-H
+play,3,0,bogat001,11,CBX,S8.1-2
+play,3,0,millw001,00,X,63/G
+play,3,1,giraj001,00,,NP
+sub,berkl001,"Lance Berkman",0,5,9
+play,3,1,giraj001,32,BFBFBC,K/C
+play,3,1,tapak001,30,BBBB,W
+play,3,1,youne001,32,BBCFBX,S7/7S.1-2
+play,3,1,gutir001,02,FCC,K/C
+play,3,1,sosas001,32,SFBBBFFFB,W.2-3;1-2
+play,3,1,gracm001,10,BX,43/G
+play,4,0,ceder001,20,BBX,HR/78
+play,4,0,lugoj001,11,CBX,S8
+play,4,0,bagwj001,00,B,CS2(24)
+play,4,0,bagwj001,11,BCX,S7
+play,4,0,hidar001,00,,NP
+sub,arnoj001,"Jamie Arnold",1,9,1
+play,4,0,hidar001,00,X,S7.1-2
+play,4,0,berkl001,32,FBBFBFX,8/F8
+play,4,0,melum001,32,FBCBFBX,S9.2-H;1-3
+play,4,0,trubc001,00,X,S8.3-H;1-3
+play,4,0,bogat001,31,BBSBB,W.1-2
+play,4,0,millw001,10,BX,S9.3-H;2-H;1-3
+play,4,0,ceder001,00,,NP
+sub,rains001,"Steve Rain",1,9,1
+play,4,0,ceder001,22,FBCBX,63/G
+play,4,1,gloar001,00,,NP
+sub,chavr001,"Raul Chavez",0,6,2
+play,4,1,gloar001,31,BCBBB,W
+play,4,1,bufod001,11,BCX,64(1)3/GDP
+play,4,1,greew001,10,BX,8/F8
+play,5,0,lugoj001,21,FBBX,9/F9S
+play,5,0,bagwj001,10,BX,63/G
+play,5,0,hidar001,12,FBFS,K
+play,5,1,giraj001,22,BSCBS,K
+play,5,1,rains001,32,BBBCCS,K
+play,5,1,youne001,00,X,63/G
+play,6,0,berkl001,00,,NP
+sub,mahom001,"Mike Mahoney",1,8,2
+play,6,0,berkl001,11,BSX,7/F7
+com,"Debut game for Mike Mahoney"
+play,6,0,chavr001,32,FCBBBX,HR/7
+play,6,0,trubc001,31,BBFBB,W
+play,6,0,bogat001,31,BBBCX,64(1)3/GDP
+play,6,1,gutir001,31,BBBCX,HR/8
+play,6,1,sosas001,32,SFFFBBBX,53/G
+play,6,1,gracm001,00,,NP
+sub,zulej001,"Julio Zuleta",1,4,11
+play,6,1,zulej001,11,BFH,HP
+play,6,1,gloar001,00,X,S8.1-3
+play,6,1,bufod001,02,CFX,HR/7.3-H;1-H
+play,6,1,greew001,21,BBFX,HR/7
+play,6,1,mahom001,00,,NP
+sub,cabrj001,"Jose Cabrera",0,9,1
+play,6,1,mahom001,02,CSX,43/G
+play,6,1,rains001,00,,NP
+sub,husoj001,"Jeff Huson",1,9,11
+play,6,1,husoj001,01,SX,7/F7
+play,7,0,cabrj001,00,,NP
+sub,zulej001,"Julio Zuleta",1,4,3
+play,7,0,cabrj001,00,,NP
+sub,farnk001,"Kyle Farnsworth",1,9,1
+play,7,0,cabrj001,32,BBCBCS,K
+play,7,0,ceder001,12,BCCFC,K/C
+play,7,0,lugoj001,00,X,S8
+play,7,0,bagwj001,10,BX,64(1)/FO
+play,7,1,youne001,12,CFBFX,S8
+play,7,1,gutir001,10,BB,SB2.1-3(E2/TH2)
+play,7,1,gutir001,32,BBCFBFB,W
+play,7,1,sosas001,12,CFBX,HR/89.3-H;1-H
+play,7,1,zulej001,00,,NP
+sub,valdm001,"Marc Valdes",0,9,1
+play,7,1,zulej001,02,SFX,63/G
+play,7,1,gloar001,01,FX,E6/G
+play,7,1,bufod001,01,CX,3/P3
+play,7,1,greew001,01,CX,9/F9
+play,8,0,hidar001,00,,NP
+sub,andrs001,"Shane Andrews",1,9,5
+play,8,0,hidar001,00,,NP
+sub,spraj001,"Jerry Spradlin",1,7,1
+play,8,0,hidar001,12,CBCX,S8/8S
+play,8,0,berkl001,00,X,S8.1-3
+play,8,0,chavr001,01,CB,WP.3-H;1-2
+play,8,0,chavr001,22,CBBSS,K
+play,8,0,trubc001,00,B,SB3
+play,8,0,trubc001,20,BBX,8/SF.3-H
+play,8,0,bogat001,22,FBBFFFC,K/C
+play,8,1,mahom001,11,BCH,HP
+play,8,1,andrs001,32,BFFBBB,W.1-2
+play,8,1,youne001,00,,NP
+sub,slusj001,"Joe Slusarski",0,7,1
+play,8,1,youne001,00,,NP
+sub,spieb001,"Bill Spiers",0,9,5
+play,8,1,youne001,02,FLFX,64(1)/FO.2-3
+play,8,1,gutir001,02,FSFB,SB2
+play,8,1,gutir001,12,FSFBS,K
+play,8,1,sosas001,30,IIII,IW
+play,8,1,zulej001,11,SBX,D7/7D.3-H;2-H;1-3
+play,8,1,gloar001,12,BFSX,3/G
+play,9,0,spieb001,00,,NP
+sub,browr001,"Roosevelt Brown",1,7,7
+play,9,0,spieb001,00,,NP
+sub,worrt002,"Tim Worrell",1,5,1
+play,9,0,spieb001,11,CBX,43/G
+play,9,0,ceder001,00,X,S8
+play,9,0,lugoj001,21,FBBX,S8.1-2
+play,9,0,bagwj001,22,SBFBX,4(1)3/GDP
+play,9,1,bufod001,11,BCX,S7
+play,9,1,browr001,22,BCBFS,K
+play,9,1,mahom001,00,,NP
+sub,reedj001,"Jeff Reed",1,8,11
+play,9,1,reedj001,22,CSBBX,S9/9S.1-3
+play,9,1,andrs001,00,,NP
+sub,doteo001,"Octavio Dotel",0,7,1
+play,9,1,andrs001,22,FFBBS,K
+play,9,1,youne001,12,BSFFFX,53/G
+data,er,millw001,5
+data,er,cabrj001,3
+data,er,valdm001,2
+data,er,slusj001,0
+data,er,doteo001,0
+data,er,tapak001,7
+data,er,arnoj001,3
+data,er,rains001,1
+data,er,farnk001,0
+data,er,spraj001,2
+data,er,worrt002,0

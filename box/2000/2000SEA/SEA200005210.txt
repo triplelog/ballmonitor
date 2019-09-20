@@ -1,0 +1,152 @@
+version,2
+info,visteam,TBA
+info,hometeam,SEA
+info,site,SEA03
+info,date,2000/05/21
+info,number,0
+info,starttime,1:35PM
+info,daynight,day
+info,usedh,true
+info,umphome,froeb901
+info,ump1b,wintm901
+info,ump2b,culbf901
+info,ump3b,welkb901
+info,pitches,pitches
+info,temp,66
+info,winddir,rtol
+info,windspeed,11
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,189
+info,attendance,45264
+info,wp,selea001
+info,lp,tracs001
+info,save,
+start,willg001,"Gerald Williams",0,1,8
+start,castv001,"Vinny Castilla",0,2,5
+start,vaugg001,"Greg Vaughn",0,3,7
+start,cansj001,"Jose Canseco",0,4,10
+start,cox-s001,"Steve Cox",0,5,3
+start,tramb001,"Bubba Trammell",0,6,9
+start,flahj001,"John Flaherty",0,7,2
+start,stock001,"Kevin Stocker",0,8,6
+start,cairm001,"Miguel Cairo",0,9,4
+start,tracs001,"Steve Trachsel",0,0,1
+start,hendr001,"Rickey Henderson",1,1,7
+start,mclem001,"Mark McLemore",1,2,4
+start,rodra001,"Alex Rodriguez",1,3,6
+start,olerj001,"John Olerud",1,4,3
+start,marte001,"Edgar Martinez",1,5,10
+start,buhnj001,"Jay Buhner",1,6,9
+start,belld002,"David Bell",1,7,5
+start,wilsd001,"Dan Wilson",1,8,2
+start,camem001,"Mike Cameron",1,9,8
+start,selea001,"Aaron Sele",1,0,1
+play,1,0,willg001,00,X,8/F8
+play,1,0,castv001,32,SBCBBX,9/F9
+play,1,0,vaugg001,10,BX,2/FL
+play,1,1,hendr001,01,CX,HR/7
+play,1,1,mclem001,11,CBX,8/F8
+play,1,1,rodra001,21,BFBX,8/F8
+play,1,1,olerj001,22,CBBCX,S7
+play,1,1,marte001,11,BFX,S7.1-2
+play,1,1,buhnj001,11,SBX,S8/8S.2-H;1-2
+play,1,1,belld002,22,BFBFFFX,S7.2XH(72);1-2
+play,2,0,cansj001,30,BBBB,W
+play,2,0,cox-s001,21,CBBX,S8.1-2
+play,2,0,tramb001,01,CX,S7.2-H;1-3
+play,2,0,flahj001,00,X,8/SF.3-H
+play,2,0,stock001,11,CBX,S3/BG3.1-2
+play,2,0,cairm001,02,CFX,54(1)3/GDP
+play,2,1,wilsd001,32,CBBFBFFX,S8/8S
+play,2,1,camem001,22,BCBFFC,K/C
+play,2,1,hendr001,02,CSX,7/F7
+play,2,1,mclem001,31,BBCBB,W.1-2
+play,2,1,rodra001,11,CBX,8/F8D
+play,3,0,willg001,00,X,4/P4
+play,3,0,castv001,02,SSS,K23
+play,3,0,vaugg001,30,BBBX,63/G
+play,3,1,olerj001,00,X,D7
+play,3,1,marte001,32,BFFBFBX,63/G
+play,3,1,buhnj001,21,BBCX,8/F8D
+play,3,1,belld002,01,CX,4/P4
+play,4,0,cansj001,12,CSFBS,K
+play,4,0,cox-s001,30,BBBB,W
+play,4,0,tramb001,10,BX,9/F9
+play,4,0,flahj001,32,FBFBBX,8/F8
+play,4,1,wilsd001,11,BCX,HR/7
+play,4,1,camem001,31,BBCBX,HR/9
+play,4,1,hendr001,22,CBSBX,8/F8
+play,4,1,mclem001,11,BCX,43/G
+play,4,1,rodra001,01,CX,S9
+play,4,1,olerj001,30,BBBC,SB2
+play,4,1,olerj001,31,BBBCB,W
+play,4,1,marte001,00,,NP
+sub,lidlc001,"Cory Lidle",0,0,1
+play,4,1,marte001,31,BFBBX,8/F8
+play,5,0,stock001,32,BCFBBB,W
+play,5,0,cairm001,02,CCX,6/P6
+play,5,0,willg001,01,CB,CS2(24)
+play,5,0,willg001,32,CBFBBFS,K
+play,5,1,buhnj001,10,BX,4/P4
+play,5,1,belld002,12,BCCC,K/C
+play,5,1,wilsd001,10,BX,53/G
+play,6,0,castv001,22,BSBFS,K
+play,6,0,vaugg001,32,BBFCBC,K/C
+play,6,0,cansj001,10,BX,S9
+play,6,0,cox-s001,00,X,64(1)/FO
+play,6,1,camem001,32,LFBBFBS,K
+play,6,1,hendr001,32,CBBBFFFX,S8
+play,6,1,mclem001,01,CX,D8/8D.1-H
+play,6,1,rodra001,01,CX,D8/8D.2-H
+play,6,1,olerj001,00,,NP
+sub,guthm001,"Mark Guthrie",0,0,1
+play,6,1,olerj001,21,BBFB,CS3(25)
+play,6,1,olerj001,32,BBFBCX,S7
+play,6,1,marte001,00,,NP
+sub,whitr002,"Rick White",0,0,1
+play,6,1,marte001,10,BX,HR/7.1-H
+play,6,1,buhnj001,32,BSBBCFB,W
+play,6,1,belld002,22,FFBBX,54(1)/FO
+play,7,0,tramb001,02,SSX,13/G
+play,7,0,flahj001,11,BSX,S8
+play,7,0,stock001,01,FX,S9.1-2
+play,7,0,cairm001,00,X,S8.2-3;1-2
+play,7,0,willg001,00,X,D9.3-H;2-H;1-3
+play,7,0,castv001,00,,NP
+sub,rhoda001,"Arthur Rhodes",1,0,1
+play,7,0,castv001,30,BBBB,W
+play,7,0,vaugg001,22,SFBBFFFS,K
+play,7,0,cansj001,12,FBSFS,K
+play,7,1,wilsd001,21,BCBX,9/F9D
+play,7,1,camem001,01,CX,9/F9
+play,7,1,hendr001,00,X,53/G
+play,8,0,cox-s001,00,,NP
+sub,mccrq001,"Quinton McCracken",0,5,11
+play,8,0,mccrq001,22,CBCBX,S9
+play,8,0,tramb001,32,BFBFBFS,K
+play,8,0,flahj001,00,X,8/F8
+play,8,0,stock001,12,BCSFX,3/FL
+play,8,1,mclem001,00,,NP
+sub,guilo001,"Ozzie Guillen",0,5,3
+play,8,1,mclem001,11,CBX,3/G
+play,8,1,rodra001,10,BX,53/G
+play,8,1,olerj001,20,BBX,S8
+play,8,1,marte001,11,BCX,3/FL
+play,9,0,cairm001,00,,NP
+sub,ibanr001,"Raul Ibanez",1,6,9
+play,9,0,cairm001,00,,NP
+sub,sasak001,"Kazuhiro Sasaki",1,0,1
+play,9,0,cairm001,32,CSBFBFFFBB,W
+play,9,0,willg001,01,FX,S7.1-2
+play,9,0,castv001,10,BX,8/F8.2-3
+play,9,0,vaugg001,20,BBX,23/G.1-2
+play,9,0,cansj001,22,BSSBS,K
+data,er,tracs001,4
+data,er,lidlc001,2
+data,er,guthm001,1
+data,er,whitr002,1
+data,er,selea001,4
+data,er,rhoda001,0
+data,er,sasak001,0

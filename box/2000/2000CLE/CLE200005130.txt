@@ -1,0 +1,181 @@
+version,2
+info,visteam,KCA
+info,hometeam,CLE
+info,site,CLE08
+info,date,2000/05/13
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,hirsj901
+info,ump1b,fichm901
+info,ump2b,hudsm901
+info,ump3b,welkt901
+info,pitches,pitches
+info,temp,64
+info,winddir,ltor
+info,windspeed,8
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,245
+info,attendance,40689
+info,wp,reeds001
+info,lp,reicd001
+info,save,
+start,damoj001,"Johnny Damon",0,1,7
+start,feblc001,"Carlos Febles",0,2,4
+start,sweem002,"Mike Sweeney",0,3,3
+start,dye-j001,"Jermaine Dye",0,4,9
+start,randj002,"Joe Randa",0,5,5
+start,quinm001,"Mark Quinn",0,6,10
+start,beltc001,"Carlos Beltran",0,7,8
+start,fabrj001,"Jorge Fabregas",0,8,2
+start,sancr001,"Rey Sanchez",0,9,6
+start,suppj001,"Jeff Suppan",0,0,1
+start,loftk001,"Kenny Lofton",1,1,8
+start,vizqo001,"Omar Vizquel",1,2,6
+start,alomr001,"Roberto Alomar",1,3,4
+start,ramim002,"Manny Ramirez",1,4,9
+start,thomj002,"Jim Thome",1,5,10
+start,justd001,"David Justice",1,6,7
+start,frymt001,"Travis Fryman",1,7,5
+start,sexsr001,"Richie Sexson",1,8,3
+start,aloms001,"Sandy Alomar",1,9,2
+start,burbd001,"Dave Burba",1,0,1
+play,1,0,damoj001,02,CLX,7/F7
+play,1,0,feblc001,22,CBSBX,D7/7D
+play,1,0,sweem002,32,CBSBFBX,D7/7D.2-H
+play,1,0,dye-j001,02,CFS,K
+play,1,0,randj002,32,BBFCBS,K
+play,1,1,loftk001,32,BFFBBX,53/G
+play,1,1,vizqo001,00,X,S2/BG2.B-2(E2/TH1)
+play,1,1,alomr001,22,CBCBFX,8/L8.2-3
+play,1,1,ramim002,11,BFX,5/L5
+play,2,0,quinm001,22,BSSBX,63/G
+play,2,0,beltc001,00,X,7/F7
+play,2,0,fabrj001,11,CBX,43/G
+play,2,1,thomj002,10,BX,43/G
+play,2,1,justd001,32,CBCBBX,43/G
+play,2,1,frymt001,10,BX,S8/8S
+play,2,1,sexsr001,12,BCCS,K
+play,3,0,sancr001,01,CX,8/F8
+play,3,0,damoj001,00,X,43/G
+play,3,0,feblc001,11,FBX,S
+play,3,0,sweem002,00,B,SB2
+play,3,0,sweem002,30,BBBC,WP.2-3
+play,3,0,sweem002,31,BBBCB,W
+play,3,0,dye-j001,22,BSCBFFFFFX,S8.3-H;1-2
+play,3,0,randj002,22,BSBFS,K
+play,3,1,aloms001,10,BX,63/G
+play,3,1,loftk001,12,CFBS,K23
+play,3,1,vizqo001,22,BCCBC,K/C
+play,4,0,quinm001,32,FBBBCC,K/C
+play,4,0,beltc001,12,BSSS,K
+play,4,0,fabrj001,32,CBBCBFS,K
+play,4,1,alomr001,02,CLX,8/F8D
+play,4,1,ramim002,32,FBFBBS,K
+play,4,1,thomj002,32,BBBFFX,43/G
+play,5,0,sancr001,32,FCBBBB,W
+play,5,0,damoj001,01,LX,6/P6
+play,5,0,feblc001,01,LX,S7/7S.1-2
+play,5,0,sweem002,21,BBCX,8/F8
+play,5,0,dye-j001,31,BBBCB,W.2-3;1-2
+play,5,0,randj002,02,SCX,D9/9S.3-H;2-H;1XH(92)
+play,5,1,justd001,21,CBBX,S
+play,5,1,frymt001,12,FFBC,K/C
+play,5,1,sexsr001,00,X,S9.1-2
+play,5,1,aloms001,22,BFBSX,8/F8D
+play,5,1,loftk001,00,X,S.2-3;1-2
+play,5,1,vizqo001,21,BBCX,S8/8S.3-H;2-H;1-3
+play,5,1,alomr001,10,BC,SB2
+play,5,1,alomr001,32,BCBBFFS,K
+play,6,0,quinm001,22,SBBSS,K
+play,6,0,beltc001,02,SCC,K/C
+play,6,0,fabrj001,22,LFBBC,K/C
+play,6,1,ramim002,12,CBFFFS,K
+play,6,1,thomj002,32,CFBBBX,8/F8
+play,6,1,justd001,11,CBX,13/G
+play,7,0,sancr001,10,BX,S9/9S
+play,7,0,damoj001,31,BBFBB,W.1-2
+play,7,0,feblc001,10,BX,53/SH.2-3;1-2
+play,7,0,sweem002,00,X,9/SF.3-H;2-3
+play,7,0,dye-j001,00,X,63/G
+play,7,1,frymt001,10,BX,9/L9
+play,7,1,sexsr001,12,SSBC,K/C
+play,7,1,aloms001,01,SX,53/G
+play,8,0,randj002,00,,NP
+sub,depas001,"Sean DePaula",1,0,1
+play,8,0,randj002,32,BCSBBB,W
+play,8,0,quinm001,12,SCBC,K/C
+play,8,0,beltc001,12,BSFX,64(1)/FO
+play,8,0,fabrj001,00,X,S9/9S.1-3
+play,8,0,sancr001,12,SSFBFB,SB2
+play,8,0,sancr001,22,SSFBFBFX,3/L3
+play,8,1,loftk001,12,CFBC,K/C
+play,8,1,vizqo001,30,BBBB,W
+play,8,1,alomr001,00,X,43/G.1-2
+play,8,1,ramim002,00,X,D7.2-H
+play,8,1,thomj002,00,,NP
+sub,spraj001,"Jerry Spradlin",0,0,1
+play,8,1,thomj002,12,CBSFX,D8/8D.2-H
+play,8,1,justd001,00,,NP
+sub,cabrj002,"Jolbert Cabrera",1,5,12
+play,8,1,justd001,31,BBBCB,W
+play,8,1,frymt001,22,BBSFS,K
+play,9,0,damoj001,01,CX,31/G
+play,9,0,feblc001,10,BX,53/G
+play,9,0,sweem002,12,FBCFFX,7/F7
+play,9,1,sexsr001,00,,NP
+sub,bottr001,"Ricky Bottalico",0,0,1
+play,9,1,sexsr001,00,,NP
+sub,mccad001,"David McCarty",0,3,3
+play,9,1,sexsr001,32,BFFBBX,HR/8
+play,9,1,aloms001,02,CFC,K/C
+play,9,1,loftk001,30,BBBB,W
+play,9,1,vizqo001,32,CBFFBBX,3/G.1-2
+play,9,1,alomr001,32,BBBSCS,K
+play,10,0,dye-j001,00,,NP
+sub,karss001,"Steve Karsay",1,0,1
+play,10,0,dye-j001,01,CX,53/G
+play,10,0,randj002,12,CBCC,K/C
+play,10,0,quinm001,12,CBSFC,K/C
+play,10,1,ramim002,11,BCX,S9
+play,10,1,cabrj002,00,X,36(1)/FO
+play,10,1,justd001,12,BCSX,7/F7
+play,10,1,frymt001,10,BX,8/F8
+play,11,0,beltc001,22,CFBBS,K
+play,11,0,fabrj001,10,BX,7/F7
+play,11,0,sancr001,22,CBCBS,K
+play,11,1,sexsr001,22,CBBFX,13/G
+play,11,1,aloms001,02,SSX,43/G
+play,11,1,loftk001,32,BBFCFBFFB,W
+play,11,1,vizqo001,11,CBB,CS2(26)
+play,12,0,damoj001,00,,NP
+sub,reeds001,"Steve Reed",1,0,1
+play,12,0,damoj001,32,BFBCBFFB,W
+play,12,0,feblc001,00,,BK.1-2
+play,12,0,feblc001,01,CX,14/SH.2-3
+play,12,0,mccad001,00,X,D7/7D.3-H
+play,12,0,dye-j001,00,X,53/G
+play,12,0,randj002,00,X,1/P1
+play,12,1,vizqo001,00,,NP
+sub,reicd001,"Dan Reichert",0,0,1
+play,12,1,vizqo001,12,LFBX,7/L7
+play,12,1,alomr001,01,CX,S
+play,12,1,ramim002,30,BBBB,W.1-2
+play,12,1,cabrj002,00,,NP
+sub,wilse001,"Enrique Wilson",1,5,11
+play,12,1,wilse001,31,BBBCB,W.2-3;1-2
+play,12,1,justd001,00,,NP
+sub,santj002,"Jose Santiago",0,0,1
+play,12,1,justd001,22,BCFBX,S7.3-H;2-H;1-2
+data,er,suppj001,4
+data,er,spraj001,0
+data,er,bottr001,1
+data,er,reicd001,2
+data,er,santj002,0
+data,er,burbd001,5
+data,er,depas001,0
+data,er,karss001,0
+data,er,reeds001,1

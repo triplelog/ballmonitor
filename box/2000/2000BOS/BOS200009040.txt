@@ -1,0 +1,127 @@
+version,2
+info,visteam,SEA
+info,hometeam,BOS
+info,site,BOS07
+info,date,2000/09/04
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,younl901
+info,ump1b,katzt901
+info,ump2b,millb901
+info,ump3b,mealj901
+info,pitches,pitches
+info,temp,69
+info,winddir,rtol
+info,windspeed,9
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,156
+info,attendance,32619
+info,wp,martp001
+info,lp,moyej001
+info,save,
+start,mclem001,"Mark McLemore",0,1,4
+start,marta001,"Al Martin",0,2,7
+start,rodra001,"Alex Rodriguez",0,3,6
+start,marte001,"Edgar Martinez",0,4,10
+start,olerj001,"John Olerud",0,5,3
+start,javis001,"Stan Javier",0,6,9
+start,camem001,"Mike Cameron",0,7,8
+start,wilsd001,"Dan Wilson",0,8,2
+start,guilc001,"Carlos Guillen",0,9,5
+start,moyej001,"Jamie Moyer",0,0,1
+start,lewid001,"Darren Lewis",1,1,9
+start,offej001,"Jose Offerman",1,2,3
+start,everc001,"Carl Everett",1,3,8
+start,garcn001,"Nomar Garciaparra",1,4,6
+start,bichd001,"Dante Bichette",1,5,10
+start,oleat001,"Troy O'Leary",1,6,7
+start,varij001,"Jason Varitek",1,7,2
+start,sadld001,"Donnie Sadler",1,8,4
+start,alexm001,"Manny Alexander",1,9,5
+start,martp001,"Pedro Martinez",1,0,1
+play,1,0,mclem001,00,X,7/F7D
+play,1,0,marta001,02,FCX,9/F9D
+play,1,0,rodra001,22,BCCBS,K
+play,1,1,lewid001,00,X,13/BG
+play,1,1,offej001,32,CBFBBC,K/C
+badj,everc001,L
+play,1,1,everc001,12,BCCS,K
+play,2,0,marte001,32,BBFBFX,S9
+play,2,0,olerj001,32,BBFSBX,S7/7S.1-2
+play,2,0,javis001,12,LBFX,7/F7
+play,2,0,camem001,10,BX,8/F8
+play,2,0,wilsd001,02,FSFS,K
+play,2,1,garcn001,01,SX,53/G
+play,2,1,bichd001,11,BSX,3/G
+play,2,1,oleat001,22,BBFSX,7/F7
+play,3,0,guilc001,12,CBSX,7/F7
+play,3,0,mclem001,32,BSBBSFFB,W
+play,3,0,marta001,00,X,7/F7D
+play,3,0,rodra001,12,CBCFS,K
+play,3,1,varij001,20,BBX,53/G
+play,3,1,sadld001,10,BX,E3/G
+play,3,1,alexm001,12,CBFX,S7.1-2
+play,3,1,lewid001,31,BBCBB,W.2-3;1-2
+play,3,1,offej001,20,BBX,T8/8D.3-H(UR);2-H;1-H
+badj,everc001,L
+play,3,1,everc001,00,X,D7/7D.3-H
+play,3,1,garcn001,00,X,S9/9S.2-H
+play,3,1,bichd001,22,CCFFBBX,64(1)3/GDP
+play,4,0,marte001,01,CX,S8/8S
+play,4,0,olerj001,21,CBBX,7/F7
+play,4,0,javis001,00,X,7/F7
+play,4,0,camem001,02,CCB,SB2
+play,4,0,camem001,22,CCBBX,S.2-3
+play,4,0,wilsd001,02,SFC,K/C
+play,4,1,oleat001,12,CBFX,5/P5
+play,4,1,varij001,11,BSX,63/G
+play,4,1,sadld001,12,BCFS,K
+play,5,0,guilc001,12,FFBC,K/C
+play,5,0,mclem001,32,CBBBFFX,9/F9
+play,5,0,marta001,02,CSS,K
+play,5,1,alexm001,00,X,9/F9
+play,5,1,lewid001,12,BCFX,5/P5
+play,5,1,offej001,31,BCBBX,63/G
+play,6,0,rodra001,21,SBBX,53/G
+play,6,0,marte001,31,BBBCX,63/G
+play,6,0,olerj001,02,CFFC,K/C
+badj,everc001,L
+play,6,1,everc001,11,BFX,9/F9S
+play,6,1,garcn001,32,BBCBFS,K
+play,6,1,bichd001,22,FSBFFBC,K/C
+play,7,0,javis001,22,CBLBFFFS,K
+play,7,0,camem001,10,BX,HR/78
+play,7,0,wilsd001,22,BFBFFS,K
+play,7,0,guilc001,11,BCX,9/F9
+play,7,1,oleat001,21,CBBX,5/P5
+play,7,1,varij001,00,X,D/89D
+play,7,1,sadld001,10,BX,4/P4
+play,7,1,alexm001,31,BSBBB,W
+play,7,1,lewid001,11,BFX,4/P4
+play,8,0,mclem001,11,BSX,D/89
+play,8,0,marta001,00,X,63/G
+play,8,0,rodra001,02,CFC,K/C
+play,8,0,marte001,02,FFFS,K
+play,8,1,offej001,00,,NP
+sub,mesaj001,"Jose Mesa",0,0,1
+play,8,1,offej001,31,CBBBX,7/F7
+play,8,1,everc001,21,BSBX,6/P6
+play,8,1,garcn001,10,BX,S7/7S
+play,8,1,bichd001,01,CX,S9/9S.1-3
+play,8,1,oleat001,32,CBFBBFX,5/P5
+play,9,0,olerj001,00,,NP
+sub,brogr001,"Rico Brogna",1,2,3
+play,9,0,olerj001,00,,NP
+sub,lowed001,"Derek Lowe",1,0,1
+play,9,0,olerj001,11,CBX,D7/7S
+play,9,0,javis001,10,BX,7/F7
+play,9,0,camem001,01,CX,53/G
+play,9,0,wilsd001,12,BFFC,K/C
+data,er,moyej001,4
+data,er,mesaj001,0
+data,er,martp001,1
+data,er,lowed001,0

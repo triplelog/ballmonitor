@@ -1,0 +1,171 @@
+version,2
+info,visteam,MIN
+info,hometeam,ANA
+info,site,ANA01
+info,date,2000/06/26
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,marqa901
+info,ump1b,nelsj901
+info,ump2b,higgs901
+info,ump3b,cousd901
+info,pitches,pitches
+info,oscorer,munse701
+info,temp,88
+info,winddir,ltor
+info,windspeed,4
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,221
+info,attendance,18768
+info,wp,radkb001
+info,lp,washj001
+info,save,
+start,canij001,"Jay Canizaro",0,1,4
+start,guzmc001,"Cristian Guzman",0,2,6
+start,lawtm002,"Matt Lawton",0,3,7
+start,coomr001,"Ron Coomer",0,4,3
+start,huskb001,"Butch Huskey",0,5,10
+start,cummm001,"Midre Cummings",0,6,9
+start,hockd001,"Denny Hocking",0,7,8
+start,moelc001,"Chad Moeller",0,8,2
+start,maxwj001,"Jason Maxwell",0,9,5
+start,radkb001,"Brad Radke",0,0,1
+start,erstd001,"Darin Erstad",1,1,7
+start,palmo001,"Orlando Palmeiro",1,2,9
+start,vaugm001,"Mo Vaughn",1,3,3
+start,salmt001,"Tim Salmon",1,4,10
+start,andeg001,"Garret Anderson",1,5,8
+start,molib001,"Ben Molina",1,6,2
+start,spies001,"Scott Spiezio",1,7,5
+start,kenna001,"Adam Kennedy",1,8,4
+start,baugj001,"Justin Baughman",1,9,6
+start,washj001,"Jarrod Washburn",1,0,1
+play,1,0,canij001,12,BFFFX,53/G
+play,1,0,guzmc001,31,BBCBX,53/G
+play,1,0,lawtm002,00,X,7/F7
+play,1,1,erstd001,01,CX,S7
+play,1,1,palmo001,00,X,E5/G.1-2
+play,1,1,vaugm001,21,BFBX,6/P6
+play,1,1,salmt001,32,SFBBBB,W.2-3;1-2
+play,1,1,andeg001,12,BCFFX,4/P4
+play,1,1,molib001,00,X,63/G
+play,2,0,coomr001,12,FBFX,S8
+play,2,0,huskb001,12,BCSX,7/F7S
+play,2,0,cummm001,01,SX,D9/9D.1-3
+play,2,0,hockd001,12,BCFX,S7.3-H;2-H;B-2(THH)
+play,2,0,moelc001,32,CBFBBFX,S9.2-H
+play,2,0,maxwj001,31,CBBBB,W.1-2
+play,2,0,canij001,31,FBBBX,S9/9S.2-H;1-3
+play,2,0,guzmc001,12,FBFX,8/SF.3-H
+play,2,0,lawtm002,00,B,CS2(26)
+play,2,1,spies001,12,CFFFBS,K
+play,2,1,kenna001,01,SX,8/L8
+play,2,1,baugj001,02,CFFFX,S8/8S
+play,2,1,erstd001,00,B,SB2
+play,2,1,erstd001,20,BBX,3/L3
+play,3,0,lawtm002,22,BFFBFX,HR/9
+play,3,0,coomr001,10,BX,HR/78
+play,3,0,huskb001,12,CSBC,K/C
+play,3,0,cummm001,22,CBFFBX,43/G
+play,3,0,hockd001,22,CBBSS,K
+play,3,1,palmo001,11,BCX,T9
+play,3,1,vaugm001,01,SX,13/G.3-H
+play,3,1,salmt001,01,CX,63/G
+play,3,1,andeg001,22,BCBFFFS,K
+play,4,0,moelc001,12,CCBFFFX,S7
+play,4,0,maxwj001,32,BBFFBFS,K+SB2
+play,4,0,canij001,00,,NP
+sub,potel001,"Lou Pote",1,0,1
+play,4,0,canij001,22,CBCFBX,E5/TH.2-3
+play,4,0,guzmc001,22,BFBCS,K
+play,4,0,lawtm002,00,X,S7.3-H(UR);1-2
+play,4,0,coomr001,22,CBBSX,S9/9S.2-H(UR);1-3
+play,4,0,huskb001,22,BBCFS,K
+play,4,1,molib001,01,CX,7/F7
+play,4,1,spies001,22,CCBBF,FLE2
+com,"DV: need one this inning"
+play,4,1,spies001,22,CCBBFX,7/F7
+play,4,1,kenna001,22,FCBFBX,3/G
+play,5,0,cummm001,10,BX,43/G
+play,5,0,hockd001,22,CCBBC,K/C
+play,5,0,moelc001,32,CBCBBB,W
+play,5,0,maxwj001,32,FBCFBFBFX,3/L3
+play,5,1,baugj001,11,CBX,7/F7
+play,5,1,erstd001,11,BFX,S8/8S
+play,5,1,palmo001,12,CFBFX,D9.1-H
+play,5,1,vaugm001,11,SBX,9/F9D.2-3
+play,5,1,salmt001,12,FBCH,HP
+play,5,1,andeg001,00,X,3/G
+play,6,0,canij001,00,,NP
+sub,turnd001,"Derrick Turnbow",1,0,1
+play,6,0,canij001,20,BBX,HR/78
+play,6,0,guzmc001,32,BFFBBS,K
+play,6,0,lawtm002,30,BBBB,W
+play,6,0,coomr001,32,BBCFFBB,W.1-2
+play,6,0,huskb001,02,CCFS,K
+play,6,0,cummm001,12,BFFX,9/F9
+play,6,1,molib001,00,,NP
+sub,hockd001,"Denny Hocking",0,7,9
+play,6,1,molib001,00,,NP
+sub,jonej003,"Jacque Jones",0,6,8
+play,6,1,molib001,01,CX,8/F8D
+play,6,1,spies001,31,FBBBB,W
+play,6,1,kenna001,10,BX,S9.1-2
+play,6,1,baugj001,21,BFBX,7/F7
+play,6,1,erstd001,11,CBX,43/G
+play,7,0,hockd001,00,,NP
+sub,cleme001,"Edgard Clemente",1,1,7
+play,7,0,hockd001,00,,NP
+sub,walbm001,"Matt Walbeck",1,3,3
+play,7,0,hockd001,10,BX,S8/8S
+play,7,0,moelc001,10,BX,9/F9
+play,7,0,maxwj001,10,BX,54(1)3/GDP
+play,7,1,palmo001,00,,NP
+sub,millt001,"Travis Miller",0,0,1
+play,7,1,palmo001,00,X,6/L6
+play,7,1,walbm001,21,BCBX,53/G
+play,7,1,salmt001,11,BFX,9/F9
+play,8,0,canij001,32,BCCBBB,W
+play,8,0,guzmc001,32,BSBBCB,W.1-2
+play,8,0,lawtm002,22,FBBCX,5(2)/FO.1-2
+play,8,0,coomr001,02,CFFS,K
+play,8,0,huskb001,00,X,64(1)/FO.2-3
+play,8,1,andeg001,00,,NP
+sub,carrh001,"Hector Carrasco",0,0,1
+play,8,1,andeg001,10,BX,HR/9
+play,8,1,molib001,32,CSFBBFBFB,W
+play,8,1,spies001,11,BFX,T9.1-H
+play,8,1,kenna001,11,BCX,S8/8S.3-H
+play,8,1,baugj001,00,C,DI.1-2
+play,8,1,baugj001,12,CCBX,8/F8S
+play,8,1,cleme001,32,SBBBFX,S7.2-H
+play,8,1,palmo001,00,,NP
+sub,wellb002,"Bob Wells",0,0,1
+play,8,1,palmo001,12,FBCS,K
+play,8,1,walbm001,22,CBCFFBX,9/F9
+play,9,0,jonej003,00,,NP
+sub,fyhrm001,"Mike Fyhrie",1,0,1
+play,9,0,jonej003,02,CFC,K/C
+play,9,0,hockd001,22,BCSBS,K
+play,9,0,moelc001,01,SX,S9
+play,9,0,maxwj001,22,CCBBX,8/F8
+play,9,1,salmt001,21,BFBX,E6/TH
+play,9,1,andeg001,00,,NP
+sub,guare001,"Eddie Guardado",0,0,1
+play,9,1,andeg001,11,BFX,D9/9D.1-3
+play,9,1,molib001,01,FX,8/F8S
+play,9,1,spies001,32,FSBBFFBX,2/FL
+play,9,1,kenna001,12,SSBX,7/F7
+data,er,radkb001,2
+data,er,millt001,0
+data,er,carrh001,4
+data,er,wellb002,0
+data,er,guare001,0
+data,er,washj001,7
+data,er,potel001,0
+data,er,turnd001,1
+data,er,fyhrm001,0

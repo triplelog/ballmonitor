@@ -1,0 +1,81 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,11,1,,,,,0,3,CBX,neagd001,1,0,,huntb002,0,P
+,22,1,,,,,1,8,CBFBX,neagd001,1,0,lansm001 grounds out. ,lansm001,0,G
+,32,1,,,walkl001,,2,14,BFBCBX,neagd001,0,0,walkl001 triples. ,walkl001,0,
+,32,1,,,walkl001,,3,20,CBLBBS,neagd001,1,0,cirij001 strikes out. ,cirij001,0,
+,32,1,,,,,4,7,CSFBBBX,arror001,1,0,reesp001 grounds out. ,reesp001,1,G
+,32,1,,,,,5,13,BCBBFX,arror001,1,0,larkb001 grounds out. ,larkb001,1,G
+,00,1,grifk002,,,,6,14,X,arror001,0,0,grifk002 singles. ,grifk002,1,
+grifk002 to 2B. ,31,1,bichd001,grifk002,,,7,19,BBBCB,arror001,0,0,bichd001 walks. ,bichd001,1,
+,01,1,bichd001,grifk002,,,8,21,FX,arror001,1,0,yound001 grounds out. ,yound001,1,G
+,21,2,,,,,9,24,BBCX,neagd001,1,0,heltt001 grounds out. ,heltt001,0,G
+,32,2,hammj001,,,,10,31,BBSSFBB,neagd001,0,0,hammj001 walks. ,hammj001,0,
+,22,2,hammj001,,,,11,36,BBCFC,neagd001,1,0,servs002 strikes out. ,servs002,0,
+,11,2,hammj001,,,,12,39,FBX,neagd001,1,0,,peren001,0,P
+,22,2,,,,,13,26,BFBCX,arror001,1,0,cases001 grounds out. ,cases001,1,G
+,11,2,,,,,14,29,BCX,arror001,1,0,boona001 grounds out. ,boona001,1,G
+,12,2,,,,,15,33,CFBC,arror001,1,0,santb001 strikes out. ,santb001,1,
+,12,3,,,,,16,45,SSFBFS,neagd001,1,0,arror001 strikes out. ,arror001,0,
+,32,3,,,,,17,51,BBBCSS,neagd001,1,0,huntb002 strikes out. ,huntb002,0,
+,32,3,,,,,18,57,BCBFBX,neagd001,1,0,lansm001 grounds out. ,lansm001,0,G
+,12,3,,,,,19,38,FCBFC,arror001,1,0,neagd001 strikes out. ,neagd001,1,
+,11,3,reesp001,,,,20,41,CBX,arror001,0,0,reesp001 singles. ,reesp001,1,
+reesp001 to 3B. ,00,3,larkb001,,reesp001,,21,42,X,arror001,0,0,larkb001 singles. ,larkb001,1,
+,32,3,,larkb001,reesp001,,22,48,BFFBBS,arror001,1,0,grifk002 strikes out. larkb001 steals 2B. ,grifk002,1,
+reesp001 scores. larkb001 scores. ,22,3,,bichd001,,,23,54,CSBBFX,arror001,0,2,bichd001 doubles. ,bichd001,1,
+,00,3,,bichd001,,,24,55,X,arror001,1,0,yound001 grounds out. ,yound001,1,G
+,32,4,walkl001,,,,25,65,FSBBFFBX,neagd001,0,0,walkl001 singles. ,walkl001,0,
+,11,4,walkl001,,,,26,68,BFX,neagd001,1,0,,cirij001,0,F
+walkl001 out. ,00,4,,heltt001,,,27,69,X,neagd001,1,0,heltt001 doubles. ,heltt001,0,
+heltt001 scores. ,21,4,hammj001,,,,28,73,BFBX,neagd001,0,1,hammj001 singles. ,hammj001,0,
+hammj001 to 3B. ,01,4,,servs002,hammj001,,29,75,FX,neagd001,0,0,servs002 doubles. ,servs002,0,
+,30,4,peren001,servs002,hammj001,,30,79,IIII,neagd001,0,0,peren001 intentionally walks. ,peren001,0,
+hammj001 scores. servs002 scores. peren001 to 3B. ,00,4,arror001,,peren001,,31,80,X,neagd001,0,2,arror001 singles. ,arror001,0,
+,01,4,arror001,,peren001,,32,82,CX,neagd001,1,0,huntb002 grounds out. ,huntb002,0,G
+,12,4,cases001,,,,33,59,BSFH,arror001,0,0,cases001 hit by pitch. ,cases001,1,
+cases001 to 3B. boona001 to 2B. ,00,4,,boona001,cases001,,34,60,X,arror001,0,0,boona001 reaches on error. ,boona001,1,F
+,21,4,,boona001,cases001,,35,64,FBBX,arror001,1,0,,santb001,1,P
+cases001 scores. boona001 to 3B. ,11,4,,,boona001,,36,67,FBX,arror001,1,1,neagd001 grounds out. ,neagd001,1,G
+,22,4,,,boona001,,37,73,FBFBFS,arror001,1,0,reesp001 strikes out. ,reesp001,1,
+,00,5,,,,,38,83,X,neagd001,1,0,,lansm001,0,F
+,12,5,,,,,39,87,CSBX,neagd001,1,0,,walkl001,0,
+,10,5,,,,,40,89,BX,neagd001,1,0,,cirij001,0,L
+,00,5,,,,,41,74,X,arror001,1,0,,larkb001,1,P
+,11,5,,,,,42,77,BFX,arror001,1,0,,grifk002,1,F
+,32,5,bichd001,,,,43,83,CBCBBX,arror001,0,0,bichd001 singles. ,bichd001,1,
+bichd001 to 2B. ,01,5,yound001,bichd001,,,44,85,CX,arror001,0,0,yound001 singles. ,yound001,1,
+bichd001 scores. yound001 to 3B. ,02,5,,cases001,yound001,,45,89,CFFX,arror001,0,1,cases001 doubles. ,cases001,1,
+,22,5,,cases001,yound001,,46,95,BBCCFX,arror001,1,0,,boona001,1,F
+,10,6,,,,,47,91,BX,neagd001,1,0,,heltt001,0,F
+,32,6,,,,,48,97,SBBBCC,neagd001,1,0,hammj001 strikes out. ,hammj001,0,
+,22,6,servs002,,,,49,102,BSBFX,neagd001,0,0,servs002 singles. ,servs002,0,
+,12,6,servs002,,,,50,107,CBFFX,neagd001,1,0,peren001 grounds out. ,peren001,0,G
+,22,6,,santb001,,,51,101,BCCBFX,arror001,0,0,santb001 doubles. ,santb001,1,
+,01,6,,santb001,,,52,103,LX,arror001,1,0,,neagd001,1,
+santb001 to 3B. ,11,6,,,santb001,,53,106,CBX,arror001,1,0,,reesp001,1,F
+,00,6,,,santb001,,54,107,X,arror001,1,0,larkb001 grounds out. ,larkb001,1,G
+,02,7,shumt001,,,,56,110,CFX,neagd001,0,0,shumt001 singles. ,shumt001,0,
+shumt001 to 2B. ,11,7,,shumt001,,,57,113,BCX,neagd001,1,0,Sacrifice bunt by huntb002.,huntb002,0,
+,00,7,,shumt001,,,58,114,X,neagd001,1,0,,lansm001,0,L
+,22,7,,shumt001,,,59,119,BBCCC,neagd001,1,0,walkl001 strikes out. ,walkl001,0,
+,11,7,,,,,61,3,BCX,tavaj001,1,0,grifk002 grounds out. ,grifk002,1,G
+,11,7,,,,,62,6,BSX,tavaj001,1,0,,bichd001,1,F
+,22,7,,,,,63,11,BBFFX,tavaj001,1,0,,yound001,1,F
+,32,8,cirij001,,,,66,8,CFBFFBBB,wills002,0,0,cirij001 walks. ,cirij001,0,
+cirij001 to 2B. ,02,8,,cirij001,,heltt001,67,11,SSB,wills002,0,0,Wild Pitch. ,heltt001,0,
+cirij001 to 3B. ,32,8,,,cirij001,,68,18,SSBBFBX,wills002,1,0,heltt001 grounds out. ,heltt001,0,G
+,12,8,,,cirij001,,69,22,FFBS,wills002,1,0,hammj001 strikes out. ,hammj001,0,
+,31,8,maynb001,,cirij001,,71,27,BBBCB,wills002,0,0,maynb001 walks. ,maynb001,0,
+cirij001 scores. maynb001 to 3B. ,22,8,peren001,,maynb001,,72,32,BBSCX,wills002,0,1,peren001 singles. ,peren001,0,
+maynb001 scores. peren001 scores. ,22,8,bragd001,,,,74,37,CFBBX,wills002,0,2,bragd001 singles. ,bragd001,0,
+,01,8,bragd001,,,,75,39,CX,wills002,1,0,,huntb002,0,F
+,22,8,,,,,78,6,FBFFBS,whitg001,1,0,cases001 strikes out. ,cases001,1,
+,00,8,,,,,79,7,X,whitg001,1,0,,boona001,1,F
+,01,8,,,,,80,9,SX,whitg001,1,0,,santb001,1,
+,00,9,,,,,82,1,X,sulls001,1,0,,lansm001,0,F
+,01,9,,walkl001,,,83,3,SX,sulls001,0,0,walkl001 doubles. ,walkl001,0,
+,01,9,,,,,84,5,CX,sulls001,2,0,Double Play. ,cirij001,0,
+,00,9,ochoa001,,,,87,1,X,jimej001,0,0,ochoa001 reaches on error. ,ochoa001,1,
+ochoa001 out. ,22,9,reesp001,,,,88,7,CFFBBX,jimej001,1,0,reesp001 reaches on fielder's choice. ,reesp001,1,
+,10,9,reesp001,,,,89,9,BX,jimej001,1,0,,larkb001,1,F
+,10,9,reesp001,,,,90,11,BX,jimej001,1,0,,grifk002,1,L

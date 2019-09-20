@@ -1,0 +1,134 @@
+version,2
+info,visteam,CIN
+info,hometeam,SDN
+info,site,SAN01
+info,date,2000/06/17
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,false
+info,umphome,marqa901
+info,ump1b,nelsj901
+info,ump2b,higgs901
+info,ump3b,cousd901
+info,pitches,pitches
+info,temp,75
+info,winddir,torf
+info,windspeed,6
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,163
+info,attendance,40730
+info,wp,walkk001
+info,lp,villr001
+info,save,hofft001
+start,reesp001,"Pokey Reese",0,1,4
+start,larkb001,"Barry Larkin",0,2,6
+start,grifk002,"Ken Griffey",0,3,8
+start,bichd001,"Dante Bichette",0,4,9
+start,yound001,"Dmitri Young",0,5,7
+start,cases001,"Sean Casey",0,6,3
+start,boona001,"Aaron Boone",0,7,5
+start,santb001,"Benito Santiago",0,8,2
+start,villr001,"Ron Villone",0,9,1
+start,owene001,"Eric Owens",1,1,9
+start,marta001,"Al Martin",1,2,7
+start,sprae001,"Ed Sprague",1,3,3
+start,nevip001,"Phil Nevin",1,4,5
+start,boonb002,"Bret Boone",1,5,4
+start,hernc001,"Carlos A. Hernandez",1,6,2
+start,river002,"Ruben Rivera",1,7,8
+start,jackd003,"Damian Jackson",1,8,6
+start,eatoa001,"Adam Eaton",1,9,1
+play,1,0,reesp001,22,BCCBS,K
+play,1,0,larkb001,31,BBCBB,W
+play,1,0,grifk002,22,CBFBX,46(1)/FO
+play,1,0,bichd001,12,BCFS,K
+play,1,1,owene001,11,CBX,9/F9
+play,1,1,marta001,00,X,43/G
+play,1,1,sprae001,21,BBSX,8/F8
+play,2,0,yound001,01,CX,S7
+play,2,0,cases001,32,BCFBBX,63/G.1-2
+play,2,0,boona001,22,FBFBS,K
+play,2,0,santb001,31,CBBBB,W
+play,2,0,villr001,01,SX,53/G
+play,2,1,nevip001,32,SSBBBFS,K
+play,2,1,boonb002,31,BBSBX,4/L4
+play,2,1,hernc001,32,BCSFBFBX,53/G
+play,3,0,reesp001,02,CFX,7/F7
+play,3,0,larkb001,11,BCX,9/F9
+play,3,0,grifk002,00,X,HR/9
+play,3,0,bichd001,11,BFX,S
+play,3,0,yound001,00,X,54(1)/FO
+play,3,1,river002,32,BFBBSS,K
+play,3,1,jackd003,12,SSBFX,63/G
+play,3,1,eatoa001,32,CBBBCFB,W
+play,3,1,owene001,22,CFBBX,43/G
+play,4,0,cases001,22,BFFBX,5/L5
+play,4,0,boona001,02,CCC,K/C
+play,4,0,santb001,20,BBX,63/G
+play,4,1,marta001,10,BX,63/G
+play,4,1,sprae001,10,BX,7/F7
+play,4,1,nevip001,10,BX,8/F8
+play,5,0,villr001,22,FFBBS,K
+play,5,0,reesp001,00,X,S8
+play,5,0,larkb001,32,BBFBFS,K+SB2
+play,5,0,grifk002,30,BIII,IW
+play,5,0,bichd001,10,BX,3/G
+play,5,1,boonb002,32,CBBCFBB,W
+play,5,1,hernc001,31,BBFBX,54(1)3/GDP
+play,5,1,river002,10,BX,HR/7
+play,5,1,jackd003,01,FX,13/G
+play,6,0,yound001,12,BFCFFX,3/G
+play,6,0,cases001,32,BBBCCX,S9
+play,6,0,boona001,01,CX,8/F8
+play,6,0,santb001,11,BFX,3/FL
+play,6,1,eatoa001,02,CFS,K
+play,6,1,owene001,11,CBX,S9
+play,6,1,marta001,12,FBCX,46(1)3/GDP
+play,7,0,villr001,11,BCX,8/F8
+play,7,0,reesp001,12,BFCX,63/G
+play,7,0,larkb001,01,CX,53/G
+play,7,1,sprae001,10,BX,S9
+play,7,1,nevip001,11,FBX,54(1)3/GDP
+play,7,1,boonb002,31,CBBBX,63/G
+play,8,0,grifk002,32,BCBCBB,W
+play,8,0,bichd001,31,SBBBS,CS2(24)
+play,8,0,bichd001,32,SBBBSS,K
+play,8,0,yound001,32,BSFBBB,W
+play,8,0,cases001,00,,NP
+sub,walkk001,"Kevin Walker",1,9,1
+play,8,0,cases001,32,BBBCCX,43/G
+play,8,1,hernc001,11,BFX,8/F8
+play,8,1,river002,10,BX,S8
+play,8,1,jackd003,00,1,PO1(E1).1-2
+play,8,1,jackd003,32,1BCBBSFFFFB,W
+play,8,1,walkk001,00,,NP
+sub,gomec001,"Chris Gomez",1,9,11
+play,8,1,gomec001,00,,NP
+sub,wills002,"Scott Williamson",0,6,1
+play,8,1,gomec001,00,,NP
+sub,yound001,"Dmitri Young",0,5,3
+play,8,1,gomec001,00,,NP
+sub,tuckm001,"Michael Tucker",0,9,7
+play,8,1,gomec001,00,,NP
+sub,gwynt001,"Tony Gwynn",1,9,11
+play,8,1,gwynt001,31,BBBCX,S8.2-H;1-2
+play,8,1,owene001,00,,NP
+sub,dehak001,"Kory DeHaan",1,9,12
+play,8,1,owene001,00,X,S8.2-H;1-2
+play,8,1,marta001,12,FBCS,K
+play,8,1,sprae001,22,CBBCFFS,K
+play,9,0,boona001,00,,NP
+sub,hofft001,"Trevor Hoffman",1,9,1
+play,9,0,boona001,11,BCX,8/F8
+play,9,0,santb001,00,,NP
+sub,taube001,"Eddie Taubensee",0,8,11
+play,9,0,taube001,12,BCCS,K
+play,9,0,tuckm001,12,CCBS,K
+data,er,villr001,3
+data,er,wills002,0
+data,er,eatoa001,1
+data,er,walkk001,0
+data,er,hofft001,0

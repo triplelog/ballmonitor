@@ -1,0 +1,124 @@
+version,2
+info,visteam,DET
+info,hometeam,TOR
+info,site,TOR02
+info,date,2000/06/21
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,buckc901
+info,ump1b,reedr901
+info,ump2b,wendh902
+info,ump3b,clara901
+info,pitches,pitches
+info,temp,73
+info,winddir,rtol
+info,windspeed,22
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,149
+info,attendance,18125
+info,wp,escok001
+info,lp,moehb001
+info,save,
+start,easld001,"Damion Easley",0,1,4
+start,ausmb001,"Brad Ausmus",0,2,2
+start,higgb001,"Bobby Higginson",0,3,7
+start,gonzj002,"Juan Gonzalez",0,4,9
+start,palmd002,"Dean Palmer",0,5,10
+start,clart002,"Tony Clark",0,6,3
+start,encaj001,"Juan Encarnacion",0,7,8
+start,cruzd001,"Deivi Cruz",0,8,6
+start,halts001,"Shane Halter",0,9,5
+start,moehb001,"Brian Moehler",0,0,1
+start,stews002,"Shannon Stewart",1,1,7
+start,gonza001,"Alex S. Gonzalez",1,2,6
+start,mondr002,"Raul Mondesi",1,3,9
+start,delgc001,"Carlos Delgado",1,4,3
+start,fullb001,"Brad Fullmer",1,5,10
+start,batit001,"Tony Batista",1,6,5
+start,cruzj004,"Jose Cruz",1,7,8
+start,casta001,"Alberto Castillo",1,8,2
+start,bushh001,"Homer Bush",1,9,4
+start,escok001,"Kelvim Escobar",1,0,1
+play,1,0,easld001,02,CFX,S7/7S
+play,1,0,ausmb001,30,BBBB,W.1-2
+play,1,0,higgb001,12,CBSC,K/C
+play,1,0,gonzj002,22,CFBFBX,46(1)3/GDP
+play,1,1,stews002,32,BBBCSC,K/C
+play,1,1,gonza001,32,BFBBSX,43/G
+play,1,1,mondr002,00,X,53/G
+play,2,0,palmd002,21,BBFX,S7
+play,2,0,clart002,12,CCBFX,36(1)3/GDP
+play,2,0,encaj001,12,CBSC,K/C
+play,2,1,delgc001,31,BBCBB,W
+play,2,1,fullb001,10,BX,64(1)3/GDP
+play,2,1,batit001,12,CBFX,4/L4
+play,3,0,cruzd001,31,BSBBB,W
+play,3,0,halts001,32,BBFFFBX,S7/7S.1-2
+play,3,0,easld001,02,CLX,54(1)/FO.2-3
+play,3,0,ausmb001,31,BBBCB,W.1-2
+play,3,0,higgb001,20,BBX,6/P6
+play,3,0,gonzj002,01,CX,5(2)/FO.1-2
+play,3,1,cruzj004,12,FBCC,K/C
+play,3,1,casta001,00,X,9/F9D
+play,3,1,bushh001,01,CX,5/L5
+play,4,0,palmd002,12,FFBS,K23
+play,4,0,clart002,22,CSFBFBS,K
+play,4,0,encaj001,32,BFBFFBX,53/G
+play,4,1,stews002,00,X,S9/9S
+play,4,1,gonza001,01,LX,8/F8
+play,4,1,mondr002,00,X,S.1-2
+play,4,1,delgc001,02,CFX,9/F9.2-3
+play,4,1,fullb001,00,,BK.3-H;1-2
+play,4,1,fullb001,00,X,4/L4
+play,5,0,cruzd001,20,BBX,63/G
+play,5,0,halts001,32,BCFBFBX,7/F7
+play,5,0,easld001,00,X,43/G
+play,5,1,batit001,22,BBSCX,S7
+play,5,1,cruzj004,22,FBFBC,K/C
+play,5,1,casta001,11,CBX,9/FL
+play,5,1,bushh001,00,X,S9.1-2
+play,5,1,stews002,00,X,HR/7.2-H;1-H
+play,5,1,gonza001,32,BBCBCX,S
+play,5,1,mondr002,02,CSB,SB2
+play,5,1,mondr002,12,CSBFFC,K/C
+play,6,0,ausmb001,12,BCFX,7/F7
+play,6,0,higgb001,21,BBFX,D7
+play,6,0,gonzj002,01,CB,WP.2-3
+play,6,0,gonzj002,11,CBX,53/G
+play,6,0,palmd002,01,CX,8/F8
+play,6,1,delgc001,12,CBCX,3/G
+play,6,1,fullb001,12,FFBX,S8
+play,6,1,batit001,10,BX,8/F8D
+play,6,1,cruzj004,10,BX,63/G
+play,7,0,clart002,32,BBSFBFX,7/F7
+play,7,0,encaj001,01,FX,53/G
+play,7,0,cruzd001,01,FX,53/G
+play,7,1,casta001,01,CX,3/G
+play,7,1,bushh001,10,BX,S7/7S
+play,7,1,stews002,10,BX,S7.1-2
+play,7,1,gonza001,30,BBBB,W.2-3;1-2
+play,7,1,mondr002,00,,NP
+sub,andem002,"Matt Anderson",0,0,1
+play,7,1,mondr002,11,BSX,8/SF/DP.3-H;2X3(835)
+play,8,0,halts001,21,BBCX,53/G
+play,8,0,easld001,22,CSBBX,7/FL
+play,8,0,ausmb001,00,X,63/G
+play,8,1,delgc001,32,SCBBBX,HR/9
+play,8,1,fullb001,12,CSFBS,K
+play,8,1,batit001,00,,NP
+sub,jonet003,"Todd Jones",0,0,1
+play,8,1,batit001,21,FBBX,S9/9S
+play,8,1,cruzj004,02,FFX,9/F9
+play,8,1,casta001,10,BX,S9.1-3
+play,8,1,bushh001,12,BSSFS,K
+play,9,0,higgb001,22,BBCFC,K/C
+play,9,0,gonzj002,10,BX,5/L5
+play,9,0,palmd002,22,CFBBS,K
+data,er,moehb001,5
+data,er,andem002,1
+data,er,jonet003,0
+data,er,escok001,0

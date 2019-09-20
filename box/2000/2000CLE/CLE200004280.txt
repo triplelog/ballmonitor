@@ -1,0 +1,144 @@
+version,2
+info,visteam,BOS
+info,hometeam,CLE
+info,site,CLE08
+info,date,2000/04/28
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,gibsg901
+info,ump1b,ripps901
+info,ump2b,tscht901
+info,ump3b,meric901
+info,pitches,pitches
+info,temp,54
+info,winddir,fromcf
+info,windspeed,13
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,174
+info,attendance,42885
+info,wp,burbd001
+info,lp,schop001
+info,save,karss001
+start,offej001,"Jose Offerman",0,1,4
+start,nixot001,"Trot Nixon",0,2,9
+start,daubb001,"Brian Daubach",0,3,10
+start,garcn001,"Nomar Garciaparra",0,4,6
+start,oleat001,"Troy O'Leary",0,5,7
+start,everc001,"Carl Everett",0,6,8
+start,stanm002,"Mike Stanley",0,7,3
+start,hatts001,"Scott Hatteberg",0,8,2
+start,veraw001,"Wilton Veras",0,9,5
+start,schop001,"Pete Schourek",0,0,1
+start,vizqo001,"Omar Vizquel",1,1,6
+start,frymt001,"Travis Fryman",1,2,5
+start,alomr001,"Roberto Alomar",1,3,4
+start,ramim002,"Manny Ramirez",1,4,9
+start,justd001,"David Justice",1,5,7
+start,sexsr001,"Richie Sexson",1,6,10
+start,thomj002,"Jim Thome",1,7,3
+start,diaze002,"Einar Diaz",1,8,2
+start,cruzj003,"Jacob Cruz",1,9,8
+start,burbd001,"Dave Burba",1,0,1
+play,1,0,offej001,21,BSBX,9/F9D
+play,1,0,nixot001,22,BBCFX,S9
+play,1,0,daubb001,31,BSBBB,W.1-2
+play,1,0,garcn001,22,CFBBS,K
+play,1,0,oleat001,12,BCCS,K
+play,1,1,vizqo001,22,CBCBX,53/G
+play,1,1,frymt001,00,X,9/F9D
+play,1,1,alomr001,00,X,8/L8
+play,2,0,everc001,22,BCSBFS,K
+play,2,0,stanm002,32,BFBSBB,W
+play,2,0,hatts001,20,BBX,8/F8
+play,2,0,veraw001,10,BX,64(1)/FO
+play,2,1,ramim002,22,BFCFFBS,K
+play,2,1,justd001,11,BCX,9/F9D
+play,2,1,sexsr001,11,BFX,63/G
+play,3,0,offej001,12,FCBX,63/G
+play,3,0,nixot001,31,BBBCX,D9/9S
+play,3,0,daubb001,11,BFX,13/G.2-3
+play,3,0,garcn001,12,CSBFX,S7.3-H
+play,3,0,oleat001,21,BBSX,9/F9D
+play,3,1,thomj002,01,CX,S7
+play,3,1,diaze002,11,CBB,PB.1-2
+play,3,1,diaze002,32,CBBFBX,43/G.2-3
+play,3,1,cruzj003,32,BBBSCB,W
+play,3,1,vizqo001,00,X,64(1)3/GDP
+play,4,0,everc001,00,X,7/F7S
+play,4,0,stanm002,22,CBBCX,S/78S
+play,4,0,hatts001,31,BBFBB,W.1-2
+play,4,0,veraw001,00,X,54(1)/FO.2-3
+play,4,0,offej001,31,BCBBX,63/G
+play,4,1,frymt001,10,BX,HR/7
+play,4,1,alomr001,12,BSFX,53/G
+play,4,1,ramim002,01,CX,8/F8D
+play,4,1,justd001,22,BCBSX,63/G
+play,5,0,nixot001,31,BCBBB,W
+play,5,0,daubb001,32,SBSBBB,W.1-2
+play,5,0,garcn001,00,X,S.2-3;1-2
+play,5,0,oleat001,01,SX,9/SF.3-H;2-3
+play,5,0,everc001,12,BSFX,S8.3-H;1-2
+play,5,0,stanm002,11,CBX,5(B)4(2)/LDP
+play,5,1,sexsr001,10,BX,S8
+play,5,1,thomj002,12,SBCS,K
+play,5,1,diaze002,32,BBBCFX,43/G.1-2
+play,5,1,cruzj003,10,BX,53/G
+play,6,0,hatts001,12,CSBX,8/F8
+play,6,0,veraw001,12,CSBFX,63/G
+play,6,0,offej001,10,BX,5/L5
+play,6,1,vizqo001,12,CBSX,63/G
+play,6,1,frymt001,10,BX,D/89D
+play,6,1,alomr001,12,CFBX,S9.2-3
+play,6,1,ramim002,20,BBX,S7/7S.3-H;1-2
+play,6,1,justd001,00,,NP
+sub,cormr001,"Rheal Cormier",0,0,1
+play,6,1,justd001,11,BFX,S9/9S.2-H;1-3(E2)
+play,6,1,sexsr001,32,FBCFFBBX,8/F8S
+play,6,1,thomj002,10,BX,S9/9S.3-H;1-2
+play,6,1,diaze002,00,,NP
+sub,waket001,"Tim Wakefield",0,0,1
+play,6,1,diaze002,02,CFX,13/G
+play,7,0,nixot001,00,,NP
+sub,rincr001,"Ricardo Rincon",1,0,1
+play,7,0,nixot001,22,BCBFS,K
+play,7,0,daubb001,22,BFCBC,K/C
+play,7,0,garcn001,00,,NP
+sub,kamis001,"Scott Kamieniecki",1,0,1
+play,7,0,garcn001,01,CX,9/F9
+play,7,1,cruzj003,31,BBBCB,W
+play,7,1,vizqo001,12,CBCS,K
+play,7,1,frymt001,20,BBX,4/P4
+badj,alomr001,R
+play,7,1,alomr001,11,BCB,SB2
+badj,alomr001,R
+play,7,1,alomr001,22,BCBFX,63/G
+play,8,0,oleat001,00,,NP
+sub,shuep001,"Paul Shuey",1,0,1
+play,8,0,oleat001,11,BFX,7/F7D
+play,8,0,everc001,00,X,6/P6
+play,8,0,stanm002,12,BCCX,8/F8S
+play,8,1,ramim002,32,FBBFBFX,4/P4
+play,8,1,justd001,32,BBCCBFX,9/F9
+play,8,1,sexsr001,12,FBFC,K/C
+play,9,0,hatts001,00,,NP
+sub,karss001,"Steve Karsay",1,0,1
+play,9,0,hatts001,22,CCFBBX,7/F7
+play,9,0,veraw001,00,,NP
+sub,varij001,"Jason Varitek",0,9,11
+play,9,0,varij001,22,BBFSX,S/78
+play,9,0,offej001,00,,NP
+sub,alexm001,"Manny Alexander",0,9,12
+play,9,0,offej001,22,CBBCX,4(1)/FO/G
+play,9,0,nixot001,12,BCFX,13/G
+data,er,schop001,4
+data,er,cormr001,0
+data,er,waket001,0
+data,er,burbd001,3
+data,er,rincr001,0
+data,er,kamis001,0
+data,er,shuep001,0
+data,er,karss001,0

@@ -1,0 +1,195 @@
+version,2
+info,visteam,NYN
+info,hometeam,MON
+info,site,MON02
+info,date,2000/09/16
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,guccc901
+info,ump1b,lampi901
+info,ump2b,emmep901
+info,ump3b,riekr901
+info,pitches,pitches
+info,temp,72
+info,winddir,ltor
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,202
+info,attendance,9045
+info,wp,reedr002
+info,lp,hermd001
+info,save,
+start,agbab001,"Benny Agbayani",0,1,7
+start,hamid001,"Darryl Hamilton",0,2,9
+start,alfoe001,"Edgardo Alfonzo",0,3,4
+start,ventr001,"Robin Ventura",0,4,5
+start,zeilt001,"Todd Zeile",0,5,3
+start,paytj001,"Jay Payton",0,6,8
+start,pratt001,"Todd Pratt",0,7,2
+start,bordm001,"Mike Bordick",0,8,6
+start,reedr002,"Rick Reed",0,9,1
+start,bergp001,"Peter Bergeron",1,1,8
+start,blumg001,"Geoff Blum",1,2,5
+start,seguf001,"Fernando Seguignol",1,3,7
+start,guerv001,"Vladimir Guerrero",1,4,9
+start,vidrj001,"Jose Vidro",1,5,4
+start,traca001,"Andy Tracy",1,6,3
+start,cabro001,"Orlando Cabrera",1,7,6
+start,schnb001,"Brian Schneider",1,8,2
+start,hermd001,"Dustin Hermanson",1,9,1
+play,1,0,agbab001,21,BBFH,HP
+play,1,0,hamid001,11,CBX,S7/7S.1-2
+play,1,0,alfoe001,12,CCBFX,S7.2-H;1-2
+play,1,0,ventr001,32,CCBBBFFB,W.2-3;1-2
+play,1,0,zeilt001,01,CX,8/F8
+play,1,0,paytj001,22,FBFBFX,9/F9
+play,1,0,pratt001,12,BFCX,54(1)/FO
+play,1,1,bergp001,11,BCX,3/G
+play,1,1,blumg001,32,BBBCFX,S9
+play,1,1,seguf001,02,CFX,13/G.1-2
+play,1,1,guerv001,30,BBBX,2/FL
+play,2,0,bordm001,21,BBFX,9/FL
+play,2,0,reedr002,00,X,9/F9
+play,2,0,agbab001,00,X,9/F9
+play,2,1,vidrj001,22,CBCBX,S
+play,2,1,traca001,00,X,8/F8
+play,2,1,cabro001,31,BBCBX,63/G.1-2
+play,2,1,schnb001,22,BCCBS,K
+play,3,0,hamid001,02,CCX,8/F8
+play,3,0,alfoe001,01,FX,53/G
+play,3,0,ventr001,10,BX,S8
+play,3,0,zeilt001,21,CBBX,53/G
+play,3,1,hermd001,02,CCS,K
+play,3,1,bergp001,12,BFCC,K/C
+play,3,1,blumg001,31,BBCBX,7/F7
+play,4,0,paytj001,22,BSBSX,S7/7S
+play,4,0,pratt001,21,SBBX,5/L5
+play,4,0,bordm001,32,FBBFBX,8/F8
+play,4,0,reedr002,21,BBCX,S/89.1-3
+play,4,0,agbab001,31,BBBFX,E8/F.3-H(NR)(UR);1-3;B-2
+play,4,0,hamid001,11,BFX,S9/9S.3-H(UR);2-3
+play,4,0,alfoe001,21,CBBX,HR/7.3-H(UR);1-H(UR);B-H(UR)
+play,4,0,ventr001,32,BBBCCX,HR/9.B-H(UR)
+play,4,0,zeilt001,31,BBSBB,W
+play,4,0,paytj001,00,X,D/78.1-3
+play,4,0,pratt001,00,,NP
+sub,santj001,"Julio Santana",1,9,1
+play,4,0,pratt001,32,CSBBBX,8/F8
+play,4,1,seguf001,22,BCCBFS,K
+play,4,1,guerv001,12,BFFX,8/F8
+play,4,1,vidrj001,11,BSX,S8
+play,4,1,traca001,22,CBCBX,S9.1-3
+play,4,1,cabro001,11,BSX,64(1)/FO
+play,5,0,bordm001,00,X,8/F8
+play,5,0,reedr002,11,CBX,9/F9
+play,5,0,agbab001,22,BFFBFS,K
+play,5,1,schnb001,22,BFBCC,K/C
+play,5,1,santj001,00,,NP
+sub,coqut001,"Trace Coquillette",1,9,11
+play,5,1,coqut001,22,CBBFX,53/G
+play,5,1,bergp001,32,BBFCFBX,S9/9S
+play,5,1,blumg001,11,BCX,D9.1-H
+play,5,1,seguf001,22,SBSBS,K
+play,6,0,hamid001,00,,NP
+sub,coqut001,"Trace Coquillette",1,9,7
+play,6,0,hamid001,00,,NP
+sub,forss001,"Scott Forster",1,3,1
+play,6,0,hamid001,00,,NP
+sub,tramb001,"Bubba Trammell",0,2,11
+play,6,0,tramb001,12,BFSFS,K
+play,6,0,alfoe001,02,CSS,K
+play,6,0,ventr001,21,BBCX,9/F9
+play,6,1,guerv001,00,,NP
+sub,tramb001,"Bubba Trammell",0,2,9
+play,6,1,guerv001,02,CSS,K
+play,6,1,vidrj001,00,X,7/F7
+play,6,1,traca001,22,BBCFFX,S9
+play,6,1,cabro001,01,CX,D/78.1-H
+play,6,1,schnb001,32,BCBBFC,K/C
+play,7,0,zeilt001,22,CFBBX,HR/7
+play,7,0,paytj001,01,FX,7/F7
+play,7,0,pratt001,32,CFBFBBX,S9/9S
+play,7,0,bordm001,30,BBBB,W.1-2
+play,7,0,reedr002,00,,NP
+sub,mcewj001,"Joe McEwing",0,9,11
+play,7,0,mcewj001,31,BBCBB,W.2-3;1-2
+play,7,0,agbab001,00,,NP
+sub,motag001,"Guillermo Mota",1,7,1
+play,7,0,agbab001,00,,NP
+sub,blumg001,"Geoff Blum",1,2,6
+play,7,0,agbab001,00,,NP
+sub,nunnt001,"Talmadge Nunnari",1,3,3
+play,7,0,agbab001,00,,NP
+sub,traca001,"Andy Tracy",1,6,5
+play,7,0,agbab001,01,CX,8/SF.3-H
+play,7,0,tramb001,11,BCX,64(1)/FO.2-3
+play,7,1,coqut001,00,,NP
+sub,mcewj001,"Joe McEwing",0,9,7
+play,7,1,coqut001,00,,NP
+sub,whitr002,"Rick White",0,1,1
+play,7,1,coqut001,02,FCX,9/F9
+play,7,1,bergp001,32,CFBBFBB,W
+play,7,1,blumg001,11,CBS,PB.1-2
+play,7,1,blumg001,12,CBSX,S7.2-3
+play,7,1,nunnt001,12,FBCX,8/SF.3-H(UR);1-2
+play,7,1,guerv001,01,FH,HP
+play,7,1,vidrj001,00,,NP
+sub,jonet004,"Terry Jones",1,4,12
+badj,vidrj001,R
+play,7,1,vidrj001,02,SFS,K
+play,8,0,alfoe001,00,,NP
+sub,jonet004,"Terry Jones",1,4,7
+play,8,0,alfoe001,00,,NP
+sub,coqut001,"Trace Coquillette",1,9,9
+play,8,0,alfoe001,00,,NP
+sub,blumg001,"Geoff Blum",1,2,4
+play,8,0,alfoe001,00,,NP
+sub,delat001,"Tomas De La Rosa",1,7,6
+play,8,0,alfoe001,00,,NP
+sub,valey001,"Yohanny Valera",1,8,2
+play,8,0,alfoe001,00,,NP
+sub,klins002,"Steve Kline",1,5,1
+play,8,0,alfoe001,10,BX,S
+play,8,0,ventr001,00,X,S9.1-2
+play,8,0,zeilt001,12,CFBX,64(1)3/GDP.2-3
+play,8,0,paytj001,00,X,S.3-H
+com,"ej,klins002,P,lampi901,Call at 1B"
+com,"Steve Kline ejected by 1B umpire Ian Lamplugh"
+play,8,0,pratt001,00,,NP
+sub,powej002,"Jeremy Powell",1,5,1
+play,8,0,pratt001,00,X,9/F9
+play,8,1,traca001,00,,NP
+sub,franm001,"Matt Franco",0,1,5
+play,8,1,traca001,00,,NP
+sub,mahop001,"Pat Mahomes",0,4,1
+play,8,1,traca001,11,BCX,43/G
+play,8,1,delat001,31,LBBBB,W
+play,8,1,valey001,12,BFCS,K
+play,8,1,coqut001,22,BSBFFS,K23
+play,9,0,bordm001,01,CX,7/F7
+play,9,0,mcewj001,32,BBCBSX,7/F7
+play,9,0,franm001,32,BBFBCS,K
+play,9,1,bergp001,00,,NP
+sub,velaj001,"Jorge Velandia",0,3,4
+play,9,1,bergp001,11,BCX,S8
+play,9,1,blumg001,02,CFC,K/C
+play,9,1,nunnt001,31,FBBBB,W.1-2
+play,9,1,jonet004,11,BFX,S7.2-3;1-2
+play,9,1,powej002,00,,NP
+sub,guerw001,"Wilton Guerrero",1,5,11
+play,9,1,guerw001,11,FBX,64(1)/FO.3-H;2-3
+play,9,1,traca001,12,BCSFB,DI.1-2
+play,9,1,traca001,22,BCSFBX,8/F8
+data,er,reedr002,2
+data,er,whitr002,0
+data,er,mahop001,1
+data,er,hermd001,1
+data,er,santj001,0
+data,er,forss001,2
+data,er,motag001,0
+data,er,klins002,1
+data,er,powej002,0

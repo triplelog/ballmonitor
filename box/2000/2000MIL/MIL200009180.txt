@@ -1,0 +1,136 @@
+version,2
+info,visteam,CHN
+info,hometeam,MIL
+info,site,MIL05
+info,date,2000/09/18
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,coope901
+info,ump1b,kellj901
+info,ump2b,reilm901
+info,ump3b,diazl901
+info,pitches,pitches
+info,temp,80
+info,winddir,rtol
+info,windspeed,8
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,154
+info,attendance,21367
+info,wp,damij001
+info,lp,vanpt001
+info,save,leskc001
+start,youne001,"Eric Young",0,1,4
+start,ojeda001,"Augie Ojeda",0,2,6
+start,sosas001,"Sammy Sosa",0,3,9
+start,gracm001,"Mark Grace",0,4,3
+start,andrs001,"Shane Andrews",0,5,5
+start,browr001,"Roosevelt Brown",0,6,7
+start,bufod001,"Damon Buford",0,7,8
+start,reedj001,"Jeff Reed",0,8,2
+start,vanpt001,"Todd Van Poppel",0,9,1
+start,grism001,"Marquis Grissom",1,1,8
+start,lorem001,"Mark Loretta",1,2,6
+start,jenkg001,"Geoff Jenkins",1,3,7
+start,sexsr001,"Richie Sexson",1,4,3
+start,burnj001,"Jeromy Burnitz",1,5,9
+start,hernj001,"Jose Hernandez",1,6,5
+start,bellr002,"Ron Belliard",1,7,4
+start,casar001,"Raul Casanova",1,8,2
+start,damij001,"Jeff D'Amico",1,9,1
+play,1,0,youne001,10,BX,8/F8
+play,1,0,ojeda001,12,BCFX,S7/7S
+play,1,0,sosas001,02,SSS,K
+play,1,0,gracm001,00,X,43/G
+play,1,1,grism001,22,CBSBS,K
+play,1,1,lorem001,32,CFBBFFBFFFB,W
+play,1,1,jenkg001,02,CFB,WP.1-2
+play,1,1,jenkg001,32,CFBBBS,K
+play,1,1,sexsr001,11,CBX,8/F8S
+play,2,0,andrs001,12,FBFC,K/C
+play,2,0,browr001,11,CBX,6/FL
+play,2,0,bufod001,11,CBX,23/G
+play,2,1,burnj001,22,BFBSFS,K
+play,2,1,hernj001,02,CFFFS,K
+play,2,1,bellr002,12,BCCS,K
+play,3,0,reedj001,00,X,S9
+play,3,0,vanpt001,00,X,16(1)/FO
+play,3,0,youne001,11,CBX,46(1)3/GDP
+play,3,1,casar001,32,CCFFBBBX,7/F7
+play,3,1,damij001,10,BX,53/G
+play,3,1,grism001,00,X,S8
+play,3,1,lorem001,00,X,D7.1-H
+play,3,1,jenkg001,02,CSS,K
+play,4,0,ojeda001,21,BBCX,7/F7
+play,4,0,sosas001,00,,NP
+sub,pattc001,"Corey Patterson",0,3,11
+com,"Sosa leaves with tightness in back"
+play,4,0,pattc001,12,FBFX,8/F8
+com,"Debut game for Corey Patterson"
+play,4,0,gracm001,30,BBBB,W
+play,4,0,andrs001,30,BBBX,8/F8S
+play,4,1,sexsr001,00,,NP
+sub,pattc001,"Corey Patterson",0,3,8
+play,4,1,sexsr001,00,,NP
+sub,bufod001,"Damon Buford",0,7,9
+play,4,1,sexsr001,32,BBBFSFX,4/P4
+play,4,1,burnj001,22,CBBSFS,K
+play,4,1,hernj001,00,X,S7
+play,4,1,bellr002,01,CX,13/G
+play,5,0,browr001,11,BFX,7/F7
+play,5,0,bufod001,12,FCBFS,K
+play,5,0,reedj001,22,CBBCS,K
+play,5,1,casar001,12,BCSFFFX,6/L6
+play,5,1,damij001,12,BFFX,63/G
+play,5,1,grism001,00,X,53/G
+play,6,0,vanpt001,02,FCS,K
+play,6,0,youne001,31,BCBBX,S9.BX2(96)
+play,6,0,ojeda001,10,BX,43/G
+play,6,1,lorem001,22,CFBBX,D9
+play,6,1,jenkg001,22,SBFBFFX,6/P6
+play,6,1,sexsr001,02,SCS,K
+play,6,1,burnj001,30,BBBB,W
+play,6,1,hernj001,00,,NP
+sub,spraj001,"Jerry Spradlin",0,9,1
+play,6,1,hernj001,32,CBSBBX,9/F9
+play,7,0,pattc001,22,BCFBFS,K
+play,7,0,gracm001,01,CX,31/G
+play,7,0,andrs001,02,CFX,63/G
+play,7,1,bellr002,31,CBBBX,S8
+play,7,1,casar001,01,FX,E9/F.1-3;BX2(4)#
+play,7,1,damij001,00,X,9/SF.3-H(UR)
+play,7,1,grism001,01,FX,43/G
+play,8,0,browr001,22,BFFBS,K
+play,8,0,bufod001,10,BX,53/G
+play,8,0,reedj001,10,BX,7/F7
+play,8,1,lorem001,00,,NP
+sub,rains001,"Steve Rain",0,9,1
+play,8,1,lorem001,31,BBCBB,W
+play,8,1,jenkg001,00,,NP
+sub,heref001,"Felix Heredia",0,9,1
+play,8,1,jenkg001,00,X,8/F8S
+play,8,1,sexsr001,12,CSBS,K
+play,8,1,burnj001,32,BBFCBX,4/L4
+play,9,0,heref001,00,,NP
+sub,mattg002,"Gary Jr. Matthews",0,9,11
+play,9,0,mattg002,12,BCFX,43/G
+play,9,0,youne001,31,BBCBB,W
+play,9,0,ojeda001,00,,NP
+sub,greew001,"Willie Greene",0,2,11
+play,9,0,greew001,30,BBBB,W.1-2
+play,9,0,pattc001,00,,NP
+sub,leskc001,"Curtis Leskanic",1,9,1
+play,9,0,pattc001,00,,NP
+sub,meyec001,"Chad Meyers",0,2,12
+play,9,0,pattc001,12,CBFS,K
+play,9,0,gracm001,01,CX,S8.2-H;1-2
+play,9,0,andrs001,12,SSBX,9/F9
+data,er,vanpt001,1
+data,er,spraj001,0
+data,er,rains001,0
+data,er,heref001,0
+data,er,damij001,1
+data,er,leskc001,0

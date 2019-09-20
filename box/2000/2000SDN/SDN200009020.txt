@@ -1,0 +1,158 @@
+version,2
+info,visteam,PIT
+info,hometeam,SDN
+info,site,SAN01
+info,date,2000/09/02
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,ripps901
+info,ump1b,gibsg901
+info,ump2b,tscht901
+info,ump3b,meric901
+info,pitches,pitches
+info,temp,70
+info,winddir,torf
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,180
+info,attendance,33358
+info,wp,ritct001
+info,lp,clemm001
+info,save,saues001
+start,browa001,"Adrian Brown",0,1,8
+start,kendj001,"Jason Kendall",0,2,2
+start,gileb002,"Brian Giles",0,3,7
+start,vandj001,"John Vander Wal",0,4,9
+start,morrw001,"Warren Morris",0,5,4
+start,herna001,"Alex Hernandez",0,6,3
+start,osikk001,"Keith Osik",0,7,5
+start,nunea001,"Abraham O. Nunez",0,8,6
+start,ritct001,"Todd Ritchie",0,9,1
+start,jackd003,"Damian Jackson",1,1,4
+start,relad001,"Desi Relaford",1,2,6
+start,klesr001,"Ryan Klesko",1,3,3
+start,nevip001,"Phil Nevin",1,4,5
+start,mabrj001,"John Mabry",1,5,9
+start,darrm001,"Mike Darr",1,6,7
+start,river002,"Ruben Rivera",1,7,8
+start,willg002,"George Williams",1,8,2
+start,clemm001,"Matt Clement",1,9,1
+play,1,0,browa001,01,CX,S8/8S
+play,1,0,kendj001,22,BCBFFB,SB2
+play,1,0,kendj001,32,BCBFFBB,W
+play,1,0,gileb002,01,CX,7/F7
+play,1,0,vandj001,30,BBBB,W.2-3;1-2
+play,1,0,morrw001,00,X,43/G.3-H;2-3;1-2
+play,1,0,herna001,10,BX,7/F7
+play,1,1,jackd003,32,BBBCCX,S7
+play,1,1,relad001,12,BCFX,9/F9
+play,1,1,klesr001,00,X,43/G.1-2
+play,1,1,nevip001,02,CSFS,K
+play,2,0,osikk001,20,BBX,63/G
+play,2,0,nunea001,02,FFX,3/G
+play,2,0,ritct001,11,BSX,S
+play,2,0,browa001,32,BFBBCB,W.1-2
+play,2,0,kendj001,11,CBX,6/L6
+play,2,1,mabrj001,12,CBFX,D/89
+play,2,1,darrm001,01,FX,FC1.2X3(15);B-1#
+play,2,1,river002,01,CB,OA.1X2(24)#
+play,2,1,river002,11,CBX,53/G
+play,3,0,gileb002,32,BCBBFB,W
+play,3,0,vandj001,10,BX,S8.1-3
+play,3,0,morrw001,20,BBB,WP.3-H;1-2
+play,3,0,morrw001,30,BBBB,W
+play,3,0,herna001,32,BBBCSS,K+SB3;SB2
+play,3,0,osikk001,01,SH,HP
+play,3,0,nunea001,00,X,S.3-H;2-3;1-2
+play,3,0,ritct001,22,BSSBC,K/C
+play,3,0,browa001,12,BCSS,K
+play,3,1,willg002,22,CBBFC,K/C
+play,3,1,clemm001,12,CSBFFS,K
+play,3,1,jackd003,32,BBFFBFX,53/G
+play,4,0,kendj001,31,BCBBB,W
+play,4,0,gileb002,00,X,8/F8
+play,4,0,vandj001,00,X,46(1)3/GDP
+play,4,1,relad001,12,BFFS,K
+play,4,1,klesr001,01,CX,S9/9S
+com,"ej,bochb002,M,gibsg901,Call at 1B"
+com,"Padres Manager Bruce Bochy ejected by 1B umpire Greg Gibson"
+play,4,1,nevip001,10,BX,1(B)3(1)/LDP
+play,5,0,morrw001,32,BBBCFFB,W
+play,5,0,herna001,01,SX,8/F8
+play,5,0,osikk001,02,CFS,K.1-2(WP)
+play,5,0,nunea001,02,CCS,K23
+play,5,1,mabrj001,11,BFX,6/L6
+play,5,1,darrm001,12,CBFX,D7
+play,5,1,river002,00,X,63/G
+play,5,1,willg002,02,FSFX,HR/89.2-H
+play,5,1,clemm001,21,BBCX,63/G
+play,6,0,ritct001,10,BX,9/F9
+play,6,0,browa001,01,CX,43/G
+play,6,0,kendj001,21,CBBX,53/G
+play,6,1,jackd003,22,CBBCX,S8
+play,6,1,relad001,00,X,S7/7S.1-2
+play,6,1,klesr001,32,BFFFBBB,W.2-3;1-2
+play,6,1,nevip001,00,X,64(1)/FO.3-H;2-3
+play,6,1,mabrj001,00,X,7/F7S
+play,6,1,darrm001,01,FX,4/L4
+play,7,0,gileb002,32,CSBBBB,W
+play,7,0,vandj001,00,,NP
+sub,walkk001,"Kevin Walker",1,5,1
+play,7,0,vandj001,00,,NP
+sub,darrm001,"Mike Darr",1,6,9
+play,7,0,vandj001,00,,NP
+sub,owene001,"Eric Owens",1,9,7
+play,7,0,vandj001,01,CX,9/F9
+play,7,0,morrw001,12,FBSX,D9/9D.1-3
+play,7,0,herna001,00,,NP
+sub,ramia002,"Alex Ramirez",0,6,11
+play,7,0,ramia002,30,BBBI,IW
+play,7,0,osikk001,00,,NP
+sub,almac001,"Carlos Almanzar",1,5,1
+play,7,0,osikk001,21,BBFX,S7.3-H;2-3;1-2
+play,7,0,nunea001,32,BFBFBX,S9.3-H;2-H;1-2
+play,7,0,ritct001,00,,NP
+sub,mearp001,"Pat Meares",0,9,11
+play,7,0,mearp001,32,BBBCCFFFFB,W.2-3;1-2
+play,7,0,browa001,00,,NP
+sub,erdot001,"Todd Erdos",1,5,1
+play,7,0,browa001,11,FBX,12(3)/FO.2-3;1-2
+play,7,0,kendj001,12,CFBFFX,9/F9
+play,7,1,river002,00,,NP
+sub,vandj001,"John Vander Wal",0,4,3
+play,7,1,river002,00,,NP
+sub,ramia002,"Alex Ramirez",0,6,9
+play,7,1,river002,00,,NP
+sub,wilkm001,"Marc Wilkins",0,9,1
+play,7,1,river002,01,CX,9/F9
+play,7,1,willg002,22,BBCFFFH,HP
+play,7,1,owene001,10,BX,46(1)3/GDP
+play,8,0,gileb002,00,X,9/F9
+play,8,0,vandj001,31,BCBBX,3/G
+play,8,0,morrw001,10,BX,7/F7
+play,8,1,jackd003,10,BX,9/F9
+play,8,1,relad001,12,BCCX,6/P6
+play,8,1,klesr001,00,X,5/P5
+play,9,0,ramia002,12,BSSFFFC,K/C
+play,9,0,osikk001,21,BFBX,S8
+play,9,0,nunea001,00,X,7/F7
+play,9,0,wilkm001,12,BCFFS,K
+play,9,1,nevip001,01,CX,S8
+play,9,1,erdot001,00,,NP
+sub,magad001,"Dave Magadan",1,5,11
+play,9,1,magad001,00,,NP
+sub,saues001,"Scott Sauerbeck",0,9,1
+play,9,1,magad001,21,BCBX,7/F7
+play,9,1,darrm001,12,FBSC,K/C
+play,9,1,river002,12,BSSFS,K
+data,er,ritct001,3
+data,er,wilkm001,0
+data,er,saues001,0
+data,er,clemm001,4
+data,er,walkk001,2
+data,er,almac001,0
+data,er,erdot001,0

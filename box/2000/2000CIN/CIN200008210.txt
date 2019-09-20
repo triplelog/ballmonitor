@@ -1,0 +1,158 @@
+version,2
+info,visteam,PHI
+info,hometeam,CIN
+info,site,CIN08
+info,date,2000/08/21
+info,number,0
+info,starttime,7:35PM
+info,daynight,night
+info,usedh,false
+info,umphome,kellj901
+info,ump1b,diazl901
+info,ump2b,vanvm901
+info,ump3b,klemj901
+info,pitches,pitches
+info,temp,79
+info,winddir,fromrf
+info,windspeed,3
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,173
+info,attendance,21558
+info,wp,harnp001
+info,lp,wolfr001
+info,save,gravd001
+start,abreb001,"Bobby Abreu",0,1,9
+start,gland001,"Doug Glanville",0,2,8
+start,roles001,"Scott Rolen",0,3,5
+start,liebm001,"Mike Lieberthal",0,4,2
+start,lee-t002,"Travis Lee",0,5,3
+start,burrp001,"Pat Burrell",0,6,7
+start,andem003,"Marlon Anderson",0,7,4
+start,peret003,"Tomas Perez",0,8,6
+start,wolfr001,"Randy Wolf",0,9,1
+start,stync001,"Chris Stynes",1,1,5
+start,larkb001,"Barry Larkin",1,2,6
+start,grifk002,"Ken Griffey",1,3,8
+start,bichd001,"Dante Bichette",1,4,9
+start,yound001,"Dmitri Young",1,5,3
+start,ochoa001,"Alex Ochoa",1,6,7
+start,castj004,"Juan Castro",1,7,4
+start,laruj001,"Jason LaRue",1,8,2
+start,harnp001,"Pete Harnisch",1,9,1
+play,1,0,abreb001,10,BX,7/F7
+play,1,0,gland001,01,CX,9/F9
+play,1,0,roles001,11,FBX,8/F8
+play,1,1,stync001,12,BCCFFX,D9
+play,1,1,larkb001,00,X,9/F9.2-3
+play,1,1,grifk002,32,CBBFBX,S7.3-H
+play,1,1,bichd001,22,CFBBX,6(1)3/GDP
+play,2,0,liebm001,12,CBFX,3/FL
+play,2,0,lee-t002,10,BX,S9
+play,2,0,burrp001,01,SX,S7.1-2
+play,2,0,andem003,22,CSFBFFBFX,46(1)/FO.2-3
+play,2,0,peret003,21,BCBX,D9.3-H;1XH(962)
+play,2,1,yound001,00,X,S9
+play,2,1,ochoa001,10,BX,8/F8D
+play,2,1,castj004,12,CFBFS,K
+play,2,1,laruj001,22,SBSBB,CS2(24)
+play,3,0,wolfr001,30,BBBB,W
+play,3,0,abreb001,11,CBX,46(1)3/GDP
+play,3,0,gland001,01,CX,S
+play,3,0,roles001,01,F1,PO1(E3).1-2
+play,3,0,roles001,12,F1CBB,WP.2-3
+play,3,0,roles001,22,F1CBBFC,K/C
+play,3,1,laruj001,22,BFSFBX,9/F9
+play,3,1,harnp001,12,FBSX,D/78
+play,3,1,stync001,22,SBBCX,D9.2-H
+play,3,1,larkb001,00,X,D7.2-H
+com,"$Larkin's 2000th career hit"
+play,3,1,grifk002,20,BBH,HP
+play,3,1,bichd001,30,BBBB,W.2-3;1-2
+play,3,1,yound001,00,X,HR/7.3-H;2-H;1-H
+play,3,1,ochoa001,20,BBX,8/F8
+play,3,1,castj004,01,FX,63/G
+play,4,0,liebm001,11,BFX,63/G
+play,4,0,lee-t002,10,BX,D9/9D
+play,4,0,burrp001,30,BBBB,W
+play,4,0,andem003,00,X,E4/G.2-3;1-2
+play,4,0,peret003,00,X,36(1)/FO.3-H(UR);2-3
+play,4,0,wolfr001,00,,NP
+sub,duceb001,"Rob Ducey",0,9,11
+play,4,0,duceb001,11,BFX,4/P4
+play,4,1,laruj001,00,,NP
+sub,boydj001,"Jason Boyd",0,9,1
+play,4,1,laruj001,12,CBCFS,K
+play,4,1,harnp001,01,CX,53/G
+play,4,1,stync001,21,BBFX,S7
+play,4,1,larkb001,10,BB,SB2
+play,4,1,larkb001,32,BBSBSFS,K
+play,5,0,abreb001,11,CBX,S
+play,5,0,gland001,01,CX,6/P6
+play,5,0,roles001,10,BX,S9.1-2
+play,5,0,liebm001,12,BSFX,7/F7
+play,5,0,lee-t002,22,BSBCS,K
+play,5,1,grifk002,20,BBX,9/F9
+play,5,1,bichd001,22,FFBBX,E5/G
+play,5,1,yound001,00,X,D7.1-3
+play,5,1,ochoa001,30,IIII,IW
+play,5,1,castj004,22,CBSBX,64(1)3/GDP
+play,6,0,burrp001,00,X,S9
+play,6,0,andem003,11,LBX,7/F7
+play,6,0,peret003,12,FFBX,D9/9D.1-H
+play,6,0,boydj001,00,,NP
+sub,huntb001,"Brian R. Hunter",0,9,11
+play,6,0,huntb001,32,BBCCBFB,W
+play,6,0,abreb001,31,BBFBB,W.2-3;1-2
+play,6,0,gland001,00,,NP
+sub,sulls001,"Scott Sullivan",1,9,1
+play,6,0,gland001,12,BCSX,7/SF.3-H
+play,6,0,roles001,00,X,8/F8
+play,6,1,laruj001,00,,NP
+sub,gomew001,"Wayne Gomes",0,9,1
+play,6,1,laruj001,10,BX,53/G
+play,6,1,sulls001,01,FX,S
+play,6,1,stync001,21,CBBX,64(1)3/GDP
+play,7,0,liebm001,22,BFFBX,53/G
+play,7,0,lee-t002,22,BCCBX,6/P6
+play,7,0,burrp001,22,BFBFX,63/G
+play,7,1,larkb001,31,BBBCX,53/G
+play,7,1,grifk002,21,FBBX,D9
+play,7,1,bichd001,01,FX,6/P6
+play,7,1,yound001,30,IIII,IW
+play,7,1,ochoa001,00,X,7/F7D
+play,8,0,andem003,01,CX,13/G
+play,8,0,peret003,00,X,D7
+play,8,0,gomew001,00,,NP
+sub,jordk001,"Kevin Jordan",0,9,11
+play,8,0,jordk001,00,X,63/G.2-3
+play,8,0,abreb001,00,,NP
+sub,reyed001,"Dennys Reyes",1,9,1
+play,8,0,abreb001,32,BBFSBB,W
+play,8,0,gland001,00,,NP
+sub,cases001,"Sean Casey",1,9,3
+play,8,0,gland001,00,,NP
+sub,gravd001,"Danny Graves",1,5,1
+play,8,0,gland001,00,X,8/F8
+play,8,1,castj004,00,,NP
+sub,branj001,"Jeff Brantley",0,9,1
+play,8,1,castj004,21,BFBX,9/F9
+play,8,1,laruj001,20,BBX,53/G
+play,8,1,cases001,10,BX,S8
+play,8,1,stync001,10,BX,S.1-2
+play,8,1,larkb001,32,FBBBFB,W.2-3;1-2
+play,8,1,grifk002,11,BSX,7/F7
+play,9,0,roles001,00,,NP
+sub,tuckm001,"Michael Tucker",1,4,9
+play,9,0,roles001,21,BBCX,S9
+play,9,0,liebm001,21,CBBX,14(1)3/GDP
+play,9,0,lee-t002,12,BCCX,63/G
+data,er,wolfr001,7
+data,er,boydj001,0
+data,er,gomew001,0
+data,er,branj001,0
+data,er,harnp001,3
+data,er,sulls001,0
+data,er,reyed001,0
+data,er,gravd001,0

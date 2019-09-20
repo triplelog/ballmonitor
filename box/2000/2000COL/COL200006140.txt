@@ -1,0 +1,141 @@
+version,2
+info,visteam,HOU
+info,hometeam,COL
+info,site,DEN02
+info,date,2000/06/14
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,brinj901
+info,ump1b,nelsj901
+info,ump2b,cousd901
+info,ump3b,marqa901
+info,pitches,pitches
+info,temp,74
+info,winddir,fromlf
+info,windspeed,6
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,173
+info,attendance,42010
+info,wp,slusj001
+info,lp,astap001
+info,save,
+start,biggc001,"Craig Biggio",0,1,4
+start,berkl001,"Lance Berkman",0,2,9
+start,bagwj001,"Jeff Bagwell",0,3,3
+start,camik001,"Ken Caminiti",0,4,5
+start,aloum001,"Moises Alou",0,5,7
+start,hidar001,"Richard Hidalgo",0,6,8
+start,euset001,"Tony Eusebio",0,7,2
+start,bogat001,"Tim Bogar",0,8,6
+start,holtc001,"Chris Holt",0,9,1
+start,goodt001,"Tom Goodwin",1,1,8
+start,lansm001,"Mike Lansing",1,2,4
+start,walkl001,"Larry Walker",1,3,7
+start,cirij001,"Jeff Cirillo",1,4,5
+start,heltt001,"Todd Helton",1,5,3
+start,hammj001,"Jeffrey Hammonds",1,6,9
+start,maynb001,"Brent Mayne",1,7,2
+start,peren001,"Neifi Perez",1,8,6
+start,astap001,"Pedro Astacio",1,9,1
+play,1,0,biggc001,21,BBCX,D/78
+play,1,0,berkl001,00,X,43/G.2-3
+play,1,0,bagwj001,12,FBFX,S8.3-H
+play,1,0,camik001,10,BX,5/FL
+play,1,0,aloum001,30,BBBX,9/F9
+play,1,1,goodt001,32,CBBFBS,K
+play,1,1,lansm001,31,CBBBX,S8
+play,1,1,walkl001,12,BFFS,K
+play,1,1,cirij001,10,BX,64(1)/FO
+play,2,0,hidar001,32,CCBBBFX,2/FL
+play,2,0,euset001,00,X,S8.B-2(E8)
+play,2,0,bogat001,11,CBX,7/F7
+play,2,0,holtc001,02,CSS,K
+play,2,1,heltt001,00,X,S8
+play,2,1,hammj001,11,BFX,D7/7D.1-H
+play,2,1,maynb001,20,BBX,S.2-3
+play,2,1,peren001,02,CCFX,46(1)3/GDP.3-H
+play,2,1,astap001,02,FCS,K
+play,3,0,biggc001,02,CSX,31/G
+play,3,0,berkl001,22,FBCBFX,41/G
+play,3,0,bagwj001,01,SX,HR/9
+play,3,0,camik001,22,BFBFX,43/G
+play,3,1,goodt001,12,CSBX,7/FL
+play,3,1,lansm001,11,CBX,53/G
+play,3,1,walkl001,00,X,D/78
+play,3,1,cirij001,32,CBBBSB,W
+play,3,1,heltt001,31,BBFBB,W.2-3;1-2
+play,3,1,hammj001,31,BFBBB,W.3-H;2-3;1-2
+play,3,1,maynb001,11,BCX,4/L4
+play,4,0,aloum001,22,CFBBFX,7/F7
+play,4,0,hidar001,32,BBSSFBFFB,W
+play,4,0,euset001,11,BFB,SB2
+play,4,0,euset001,31,BFBBX,63/G
+play,4,0,bogat001,30,IIII,IW
+play,4,0,holtc001,32,FBBBCS,K
+play,4,1,peren001,10,BX,43/G
+play,4,1,astap001,12,CSBX,13/G
+play,4,1,goodt001,10,BX,63/G
+play,5,0,biggc001,10,BX,8/F8
+play,5,0,berkl001,10,BX,HR/9
+play,5,0,bagwj001,10,BX,43/G
+play,5,0,camik001,00,X,7/F7
+play,5,1,lansm001,21,FBBX,S8
+play,5,1,walkl001,22,LBSBX,8/F8D.1-2
+play,5,1,cirij001,00,X,T/78D.2-H
+play,5,1,heltt001,30,BBII,IW
+play,5,1,hammj001,11,CBX,6(1)3/GDP
+play,6,0,aloum001,21,BCBX,HR/9
+play,6,0,hidar001,21,BBSX,S8
+play,6,0,euset001,11,BFX,9/F9
+play,6,0,bogat001,11,BCX,6(1)3/GDP
+play,6,1,maynb001,32,CBBCFBS,K
+play,6,1,peren001,02,CCX,8/F8
+play,6,1,astap001,22,CSBBFX,53/G
+play,7,0,holtc001,00,,NP
+sub,spieb001,"Bill Spiers",0,9,11
+play,7,0,spieb001,22,BCCBX,S9
+play,7,0,biggc001,10,BS,SB2
+play,7,0,biggc001,11,BSX,13/SH.2-3
+play,7,0,berkl001,21,BBFX,5/FL
+play,7,0,bagwj001,10,BX,53/G
+play,7,1,goodt001,00,,NP
+sub,slusj001,"Joe Slusarski",0,9,1
+play,7,1,goodt001,11,LBX,63/G
+play,7,1,lansm001,00,X,9/FL
+play,7,1,walkl001,00,X,8/F8
+play,8,0,camik001,32,CBBBFFB,W
+play,8,0,aloum001,00,X,HR/7.1-H
+play,8,0,hidar001,00,,NP
+sub,belis001,"Stan Belinda",1,9,1
+play,8,0,hidar001,12,FBCX,HR/7
+play,8,0,euset001,21,BFBX,HR/9
+play,8,0,bogat001,12,BSFFC,K/C
+play,8,0,slusj001,02,CSS,K
+play,8,0,biggc001,22,BCBFC,K/C
+play,8,1,cirij001,00,,NP
+sub,barkg001,"Glen Barker",0,6,8
+play,8,1,cirij001,21,BFBX,53/G
+play,8,1,heltt001,22,BBFCS,K
+play,8,1,hammj001,00,X,S8
+play,8,1,maynb001,22,BBCFB,WP.1-2
+play,8,1,maynb001,32,BBCFBFS,K
+play,9,0,berkl001,00,,NP
+sub,myerm001,"Mike Myers",1,9,1
+play,9,0,berkl001,32,BBBCFX,31/G
+play,9,0,bagwj001,30,BBBB,W
+play,9,0,camik001,21,BSBX,54(1)/FO
+play,9,0,aloum001,31,BBCBX,8/F8
+play,9,1,peren001,22,CBFBS,K
+play,9,1,myerm001,00,,NP
+sub,bragd001,"Darren Bragg",1,9,11
+play,9,1,bragd001,01,FX,8/F8
+play,9,1,goodt001,11,BCX,6/P6
+data,er,holtc001,4
+data,er,slusj001,0
+data,er,astap001,6
+data,er,belis001,2
+data,er,myerm001,0

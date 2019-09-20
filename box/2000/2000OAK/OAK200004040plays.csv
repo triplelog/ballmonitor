@@ -1,0 +1,67 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,02,1,,,,,0,4,CSFX,hudst001,1,0,polol001 grounds out. ,polol001,0,G
+,32,1,,,,,1,10,BBFBSS,hudst001,1,0,ausmb001 strikes out. ,ausmb001,0,
+,12,1,,,,,2,14,CCBX,hudst001,1,0,,higgb001,0,F
+,21,1,,,,,3,4,CBBX,nitkc001,1,0,,chrir001,1,
+,10,1,tejam001,,,,4,6,BX,nitkc001,0,0,tejam001 singles. ,tejam001,1,
+,11,1,,,,,5,9,CBX,nitkc001,2,0,Double Play. ,giamj001,1,
+,22,2,,,,,6,19,BFCBS,hudst001,1,0,palmd002 strikes out. ,palmd002,0,
+,12,2,,,,,7,23,CBSS,hudst001,1,0,clart002 strikes out. ,clart002,0,
+,01,2,,,,,8,25,CX,hudst001,1,0,easld001 grounds out. ,easld001,0,G
+,21,2,,,,,9,13,CBBX,nitkc001,1,0,jahaj001 grounds out. ,jahaj001,1,G
+,02,2,,,,,10,16,CSC,nitkc001,1,0,staim001 strikes out. ,staim001,1,
+,22,2,,,,,11,22,CFBBFS,nitkc001,1,0,grieb001 strikes out. ,grieb001,1,
+,22,3,,,,,12,32,FBSFFBS,hudst001,1,0,fickr001 strikes out. ,fickr001,0,
+,00,3,,,,,13,33,X,hudst001,1,0,,encaj001,0,P
+,32,3,,,,,14,39,CSBBBS,hudst001,1,0,cruzd001 strikes out. ,cruzd001,0,
+,21,3,,,,,15,26,BFBX,nitkc001,1,0,,hernr002,1,F
+,22,3,,,,,16,32,SSBBFC,nitkc001,1,0,chave001 strikes out. ,chave001,1,
+,32,3,,,menef001,,17,38,BCBBFX,nitkc001,0,0,menef001 triples. ,menef001,1,
+,22,3,,,menef001,,18,43,SBBFS,nitkc001,1,0,chrir001 strikes out. ,chrir001,1,
+,10,4,,,,,19,41,BX,hudst001,1,0,polol001 grounds out. ,polol001,0,G
+,30,4,ausmb001,,,,20,45,BBBB,hudst001,0,0,ausmb001 walks. ,ausmb001,0,
+,00,4,ausmb001,,,,21,46,X,hudst001,1,0,,higgb001,0,F
+ausmb001 to 2B. ,31,4,palmd002,ausmb001,,,22,51,SBBBB,hudst001,0,0,palmd002 walks. ,palmd002,0,
+,10,4,palmd002,ausmb001,,,23,53,BX,hudst001,1,0,,clart002,0,F
+,32,4,,,,,24,49,CBBBCX,nitkc001,1,0,,tejam001,1,F
+,02,4,,,,,25,52,CFC,nitkc001,1,0,giamj001 strikes out. ,giamj001,1,
+,31,4,jahaj001,,,,26,57,BSBBB,nitkc001,0,0,jahaj001 walks. ,jahaj001,1,
+jahaj001 to 3B. ,22,4,staim001,,jahaj001,,27,62,CBBSX,nitkc001,0,0,staim001 singles. ,staim001,1,
+jahaj001 scores. staim001 to 3B. ,32,4,grieb001,,staim001,,28,68,BCBBCX,nitkc001,0,1,grieb001 singles. ,grieb001,1,
+,12,4,grieb001,,staim001,,29,72,CBSX,nitkc001,1,0,hernr002 grounds out. ,hernr002,1,G
+,32,5,easld001,,,,30,59,BBSSBB,hudst001,0,0,easld001 walks. ,easld001,0,
+easld001 to 2B. ,11,5,,easld001,,,31,62,CBX,hudst001,1,0,fickr001 grounds out. ,fickr001,0,G
+,32,5,,easld001,,,32,72,BSFBBFFFFS,hudst001,1,0,encaj001 strikes out. ,encaj001,0,
+,32,5,,easld001,,,33,78,FBSBBX,hudst001,1,0,cruzd001 grounds out. ,cruzd001,0,G
+,00,5,chave001,,,,34,73,X,nitkc001,0,0,chave001 reaches on error. ,chave001,1,G
+chave001 out. ,00,5,menef001,,,,35,74,X,nitkc001,1,0,menef001 reaches on fielder's choice. ,menef001,1,
+menef001 to 2B. ,30,5,chrir001,menef001,,,36,78,BBBB,nitkc001,0,0,chrir001 walks. ,chrir001,1,
+menef001 to 3B. chrir001 to 2B. ,32,5,tejam001,chrir001,menef001,,37,84,CBSBBB,nitkc001,0,0,tejam001 walks. ,tejam001,1,
+menef001 scores. chrir001 scores. tejam001 out. ,32,5,giamj001,,,,38,90,BBBCSX,nitkc001,1,2,giamj001 reaches on fielder's choice. ,giamj001,1,
+,32,5,giamj001,,,,39,99,CBBCFFBFX,nitkc001,1,0,,jahaj001,1,P
+,22,6,,,,,40,83,BCBSX,hudst001,1,0,polol001 grounds out. ,polol001,0,G
+,11,6,,,,,41,86,BFX,hudst001,1,0,ausmb001 grounds out. ,ausmb001,0,G
+,12,6,,,,,42,90,CBFS,hudst001,1,0,higgb001 strikes out. ,higgb001,0,
+,22,6,,,,,43,105,BCBCFS,nitkc001,1,0,staim001 strikes out. ,staim001,1,
+,22,6,,,,,44,110,BCCBS,nitkc001,1,0,grieb001 strikes out. ,grieb001,1,
+,12,6,,,,,45,114,CFBX,nitkc001,1,0,,hernr002,1,F
+,22,7,,,,,46,96,CSBBFC,hudst001,1,0,palmd002 strikes out. ,palmd002,0,
+,21,7,,clart002,,,47,100,BBSX,hudst001,0,0,clart002 doubles. ,clart002,0,
+clart002 to 3B. ,01,7,,,clart002,,48,102,FX,hudst001,1,0,easld001 grounds out. ,easld001,0,G
+,01,7,,,clart002,,49,104,CX,hudst001,1,0,,fickr001,0,F
+,00,7,chave001,,,,51,1,X,pattd001,0,0,chave001 singles. ,chave001,1,
+,02,7,chave001,,,,52,5,CLFX,pattd001,1,0,,menef001,1,F
+,10,7,,,,,53,7,BX,pattd001,2,0,Double Play. ,chrir001,1,
+,32,8,,,,,55,8,CFFFBBBS,matht002,1,0,encaj001 strikes out. ,encaj001,0,
+,00,8,,,,,56,9,X,matht002,1,0,,cruzd001,0,F
+,01,8,,,,,57,11,CX,matht002,1,0,polol001 grounds out. ,polol001,0,G
+,02,8,,,,,59,3,CSS,andem002,1,0,tejam001 strikes out. ,tejam001,1,
+,30,8,giamj001,,,,60,7,BBBB,andem002,0,0,giamj001 walks. ,giamj001,1,
+,22,8,giamj001,,,,61,13,CSBBFC,andem002,1,0,jahaj001 strikes out. ,jahaj001,1,
+,21,8,giamj001,,,,63,4,CBBX,poolj001,1,0,staim001 grounds out. ,staim001,1,G
+,22,9,,,,,66,5,BCBFC,isrij001,1,0,ausmb001 strikes out. ,ausmb001,0,
+,11,9,,,,,67,8,CBX,isrij001,1,0,,higgb001,0,F
+,32,9,palmd002,,,,68,15,CBSBFBB,isrij001,0,0,palmd002 walks. ,palmd002,0,
+palmd002 to 3B. ,00,9,clart002,,palmd002,,69,16,X,isrij001,0,0,clart002 singles. ,clart002,0,
+palmd002 scores. clart002 to 2B. ,00,9,,clart002,,easld001,70,17,B,isrij001,0,1,Passed Ball. ,easld001,0,
+,22,9,,clart002,,,71,22,BSSBS,isrij001,1,0,easld001 strikes out. ,easld001,0,

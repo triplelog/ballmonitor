@@ -1,0 +1,146 @@
+version,2
+info,visteam,MON
+info,hometeam,TOR
+info,site,TOR02
+info,date,2000/06/11
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,kellj901
+info,ump1b,coope901
+info,ump2b,diazl901
+info,ump3b,reilm901
+info,pitches,pitches
+info,temp,72
+info,winddir,tocf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,186
+info,attendance,25838
+info,wp,kochb001
+info,lp,motag001
+info,save,
+start,guerw001,"Wilton Guerrero",0,1,10
+start,vidrj001,"Jose Vidro",0,2,4
+start,whitr001,"Rondell White",0,3,7
+start,guerv001,"Vladimir Guerrero",0,4,9
+start,widgc001,"Chris Widger",0,5,2
+start,stevl001,"Lee Stevens",0,6,3
+start,cabro001,"Orlando Cabrera",0,7,6
+start,coqut001,"Trace Coquillette",0,8,5
+start,jonet004,"Terry Jones",0,9,8
+start,hermd001,"Dustin Hermanson",0,0,1
+start,stews002,"Shannon Stewart",1,1,7
+start,bushh001,"Homer Bush",1,2,4
+start,mondr002,"Raul Mondesi",1,3,9
+start,delgc001,"Carlos Delgado",1,4,3
+start,fullb001,"Brad Fullmer",1,5,10
+start,batit001,"Tony Batista",1,6,5
+start,cruzj004,"Jose Cruz",1,7,8
+start,gonza001,"Alex S. Gonzalez",1,8,6
+start,casta001,"Alberto Castillo",1,9,2
+start,welld001,"David Wells",1,0,1
+play,1,0,guerw001,01,CX,3/G
+play,1,0,vidrj001,00,X,S9
+play,1,0,whitr001,32,CSBBBFS,K
+play,1,0,guerv001,01,SH,HP.1-2
+play,1,0,widgc001,21,FBBX,9/F9D
+play,1,1,stews002,22,BSBCX,43/G
+play,1,1,bushh001,02,SSFX,63/G
+play,1,1,mondr002,32,BSSBBS,K
+play,2,0,stevl001,20,BBX,D/78D
+play,2,0,cabro001,02,FFX,S9/9S.2-3
+play,2,0,coqut001,22,BCFBS,K
+play,2,0,jonet004,10,BX,D7.3-H;1-H
+play,2,0,guerw001,12,BCFS,K
+play,2,0,vidrj001,02,CFS,K
+play,2,1,delgc001,02,CCFX,HR/9
+play,2,1,fullb001,10,BX,S9.B-2(E8)
+play,2,1,batit001,10,BX,D7.2-H
+play,2,1,cruzj004,12,BCSC,K/C
+play,2,1,gonza001,11,CBX,63/G.2-3
+play,2,1,casta001,21,BSBX,D/78.3-H
+play,2,1,stews002,10,BX,9/F9
+play,3,0,whitr001,21,BFBX,S8/8S
+play,3,0,guerv001,12,FBSX,54(1)/FO
+play,3,0,widgc001,12,CBCFFB,CS2(2E4)
+play,3,0,widgc001,22,CBCFFBS,K
+play,3,0,stevl001,22,BFSBB,SB3
+play,3,0,stevl001,32,BFSBBS,K
+play,3,1,bushh001,02,CFFX,3/G
+play,3,1,mondr002,11,BCX,S
+play,3,1,delgc001,21,BCBX,46(1)3/GDP
+play,4,0,cabro001,00,X,S8
+play,4,0,coqut001,02,SSFS,K.1-2(WP)
+play,4,0,jonet004,00,X,FC1.2X3(15);B-2#
+play,4,0,guerw001,00,X,S8/8S.2-H
+play,4,0,vidrj001,22,BBCSS,K
+play,4,1,fullb001,00,X,7/F7
+play,4,1,batit001,12,BFFS,K
+play,4,1,cruzj004,32,SBBSFBX,4/P4
+play,5,0,whitr001,12,BSCS,K
+play,5,0,guerv001,01,SX,D9
+play,5,0,widgc001,30,BBBB,W
+play,5,0,stevl001,12,BSSS,K
+play,5,0,cabro001,32,SBBBCB,W.2-3;1-2
+play,5,0,coqut001,02,CFFFFX,54(1)/FO
+play,5,1,gonza001,01,CX,63/G
+play,5,1,casta001,01,CX,43/G
+play,5,1,stews002,22,CBBSX,53/G
+play,6,0,jonet004,20,BBX,43/G
+play,6,0,guerw001,12,CBFX,3/G
+play,6,0,vidrj001,01,SX,S9
+play,6,0,whitr001,12,CFBX,S9/9S.1-2
+play,6,0,guerv001,31,FBBBX,43/G
+play,6,1,bushh001,01,FX,3/FL
+play,6,1,mondr002,22,FBCBS,K
+play,6,1,delgc001,30,BBBB,W
+play,6,1,fullb001,22,FBSFFBX,13/G
+play,7,0,widgc001,10,BX,S8
+play,7,0,stevl001,10,BB,CS2(263)
+play,7,0,stevl001,21,BBCX,D/78
+play,7,0,cabro001,21,BSBX,7/F7S
+play,7,0,coqut001,02,CFS,K23
+play,7,1,batit001,00,,NP
+sub,motag001,"Guillermo Mota",0,0,1
+play,7,1,batit001,10,BX,2/FL
+play,7,1,cruzj004,22,SCBFFFBX,9/F9S
+play,7,1,gonza001,31,SBBBB,W
+play,7,1,casta001,22,SFBBX,43/G
+play,8,0,jonet004,00,,NP
+sub,kochb001,"Billy Koch",1,0,1
+play,8,0,jonet004,12,FCBS,K
+play,8,0,guerw001,12,BFFS,K
+play,8,0,vidrj001,20,BBX,S7
+play,8,0,whitr001,01,FB,CS2(24)
+play,8,1,stews002,01,FX,63/G
+play,8,1,bushh001,31,BBBCB,W
+play,8,1,mondr002,11,BFX,S9/9S.1-2
+play,8,1,delgc001,00,,NP
+sub,morad001,"David Moraga",0,0,1
+play,8,1,delgc001,32,SBBBCX,S9.2-H;1-2
+com,"Debut game for David Moraga"
+play,8,1,fullb001,21,BBFB,WP.2-3;1-2
+play,8,1,fullb001,31,BBFBB,W
+play,8,1,batit001,00,,NP
+sub,liraf001,"Felipe Lira",0,0,1
+play,8,1,batit001,00,X,HR/7.3-H;2-H;1-H
+play,8,1,cruzj004,10,BX,3/G
+play,8,1,gonza001,01,CX,S7
+play,8,1,casta001,30,BBBB,W.1-2
+play,8,1,stews002,00,,NP
+sub,skrmm001,"Matt Skrmetta",0,0,1
+play,8,1,stews002,00,X,7/F7D
+play,9,0,whitr001,11,FBX,8/F8
+play,9,0,guerv001,22,BCBFFS,K
+play,9,0,widgc001,02,CSFS,K
+data,er,hermd001,3
+data,er,motag001,2
+data,er,morad001,2
+data,er,liraf001,1
+data,er,skrmm001,0
+data,er,welld001,3
+data,er,kochb001,0

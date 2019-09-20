@@ -1,0 +1,138 @@
+version,2
+info,visteam,HOU
+info,hometeam,ARI
+info,site,PHO01
+info,date,2000/06/26
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,onorb901
+info,ump1b,iassd901
+info,ump2b,hirsm901
+info,ump3b,bellw901
+info,pitches,pitches
+info,temp,72
+info,winddir,ltor
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,164
+info,attendance,31388
+info,wp,reyna001
+info,lp,doteo001
+info,save,kim-b001
+start,lugoj001,"Julio Lugo",0,1,6
+start,biggc001,"Craig Biggio",0,2,4
+start,bagwj001,"Jeff Bagwell",0,3,3
+start,berkl001,"Lance Berkman",0,4,9
+start,aloum001,"Moises Alou",0,5,7
+start,euset001,"Tony Eusebio",0,6,2
+start,trubc001,"Chris Truby",0,7,5
+start,barkg001,"Glen Barker",0,8,8
+start,doteo001,"Octavio Dotel",0,9,1
+start,womat001,"Tony Womack",1,1,6
+start,bellj001,"Jay Bell",1,2,4
+start,gonzl001,"Luis Gonzalez",1,3,7
+start,durae001,"Erubiel Durazo",1,4,3
+start,finls001,"Steve Finley",1,5,8
+start,lee-t002,"Travis Lee",1,6,9
+start,klasd001,"Danny Klassen",1,7,5
+start,milld002,"Damian Miller",1,8,2
+start,reyna001,"Armando Reynoso",1,9,1
+play,1,0,lugoj001,31,BBCBX,63/G
+play,1,0,biggc001,12,BCFX,3/P3
+play,1,0,bagwj001,21,BBCX,7/F7
+play,1,1,womat001,02,CFS,K
+play,1,1,bellj001,31,BCBBX,9/F9
+play,1,1,gonzl001,02,CFS,K
+play,2,0,berkl001,00,X,S8
+play,2,0,aloum001,01,SX,9/F9
+play,2,0,euset001,22,BFFBX,64(1)3/GDP
+play,2,1,durae001,32,BBCSFBFB,W
+play,2,1,finls001,22,BCBFFS,K
+play,2,1,lee-t002,21,BFBX,S9/9S.1-3
+play,2,1,klasd001,22,BBSFB,SB2
+play,2,1,klasd001,32,BBSFBFFC,K/C
+play,2,1,milld002,21,BSBX,9/F9
+play,3,0,trubc001,00,X,4/P4
+play,3,0,barkg001,22,LCBFBS,K
+play,3,0,doteo001,11,BFX,63/G
+play,3,1,reyna001,12,CCBS,K
+play,3,1,womat001,22,BFBFC,K/C
+play,3,1,bellj001,02,SCS,K
+play,4,0,lugoj001,01,CX,53/G
+play,4,0,biggc001,11,BFX,53/G
+play,4,0,bagwj001,12,CCBX,4/L4
+play,4,1,gonzl001,32,CBBBFFB,W
+play,4,1,durae001,22,BFBFX,7/F7
+play,4,1,finls001,12,CSBS,K
+play,4,1,lee-t002,22,BFBFS,K
+play,5,0,berkl001,00,X,HR/9
+play,5,0,aloum001,00,X,53/G
+play,5,0,euset001,01,CX,7/F7D
+play,5,0,trubc001,01,CX,63/G
+play,5,1,klasd001,22,FBCFBFX,HR/9
+play,5,1,milld002,12,BCCFS,K
+play,5,1,reyna001,32,BBCSBB,W
+play,5,1,womat001,22,BCBFFS,K
+play,5,1,bellj001,11,BSX,43/G
+play,6,0,barkg001,12,CFBC,K/C
+play,6,0,doteo001,21,FBBX,13/G
+play,6,0,lugoj001,21,BCBX,S8/8S
+play,6,0,biggc001,02,SFX,S8.1-3
+play,6,0,bagwj001,01,CX,9/F9
+play,6,1,gonzl001,00,X,HR/7
+play,6,1,durae001,22,SBBSX,8/F8
+play,6,1,finls001,11,BSX,D/78D
+play,6,1,lee-t002,02,CSS,K
+play,6,1,klasd001,01,FB,WP.2-3
+play,6,1,klasd001,22,FBSBX,S8.3-H
+play,6,1,milld002,01,CB,PB.1-2
+play,6,1,milld002,11,CBX,D7.2-H
+play,6,1,reyna001,02,FSS,K
+play,7,0,berkl001,22,CFBBX,31/G
+play,7,0,aloum001,22,BFBSX,8/F8
+play,7,0,euset001,21,CBBX,3/L3
+play,7,1,womat001,00,,NP
+sub,valdm001,"Marc Valdes",0,9,1
+play,7,1,womat001,12,CSBX,7/F7
+play,7,1,bellj001,22,BCSBS,K
+play,7,1,gonzl001,10,BX,7/F7
+play,8,0,trubc001,02,SFX,S8
+play,8,0,barkg001,00,X,36(1)/FO
+play,8,0,valdm001,00,,NP
+sub,wardd002,"Daryle Ward",0,9,11
+play,8,0,wardd002,00,,NP
+sub,kim-b001,"Byung-Hyun Kim",1,9,1
+play,8,0,wardd002,00,B,SB2
+play,8,0,wardd002,32,BCCBFBFS,K
+play,8,0,lugoj001,22,CBCFBS,K
+play,8,1,durae001,00,,NP
+sub,bautd001,"Danny Bautista",1,4,11
+play,8,1,bautd001,00,,NP
+sub,perey001,"Yorkis Perez",0,9,1
+play,8,1,bautd001,21,BFBX,D8/8D
+play,8,1,finls001,21,BBFX,FC3.2X3(35);B-1#
+play,8,1,lee-t002,00,,NP
+sub,cabra001,"Alex Cabrera",1,6,11
+play,8,1,cabra001,11,FBX,HR/7.1-H
+com,"Debut game for Alex Cabrera"
+com,"$homer in first at bat in majors"
+play,8,1,klasd001,02,CFX,63/G
+play,8,1,milld002,31,BBFBB,W
+play,8,1,kim-b001,31,CBBBB,W.1-2
+play,8,1,womat001,00,X,8/F8
+play,9,0,biggc001,00,,NP
+sub,cabra001,"Alex Cabrera",1,6,3
+play,9,0,biggc001,00,,NP
+sub,bautd001,"Danny Bautista",1,4,9
+play,9,0,biggc001,12,BCFS,K
+play,9,0,bagwj001,01,SX,3/P3
+play,9,0,berkl001,02,CFFFS,K
+data,er,doteo001,4
+data,er,valdm001,0
+data,er,perey001,2
+data,er,reyna001,1
+data,er,kim-b001,0

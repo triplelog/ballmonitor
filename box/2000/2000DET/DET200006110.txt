@@ -1,0 +1,138 @@
+version,2
+info,visteam,SLN
+info,hometeam,DET
+info,site,DET05
+info,date,2000/06/11
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,gormb901
+info,ump1b,vanvm901
+info,ump2b,everm901
+info,ump3b,dimum901
+info,pitches,pitches
+info,temp,82
+info,winddir,tolf
+info,windspeed,15
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,158
+info,attendance,38139
+info,wp,hentp001
+info,lp,mlicd001
+info,save,
+start,vinaf001,"Fernando Vina",0,1,4
+start,rente001,"Edgar Renteria",0,2,6
+start,edmoj001,"Jim Edmonds",0,3,8
+start,mcgwm001,"Mark McGwire",0,4,3
+start,lankr001,"Ray Lankford",0,5,10
+start,dunss001,"Shawon Dunston",0,6,7
+start,drewj001,"J.D. Drew",0,7,9
+start,mathm001,"Mike Matheny",0,8,2
+start,polap001,"Placido Polanco",0,9,5
+start,hentp001,"Pat Hentgen",0,0,1
+start,polol001,"Luis Polonia",1,1,10
+start,beckr002,"Rich Becker",1,2,8
+start,higgb001,"Bobby Higginson",1,3,7
+start,gonzj002,"Juan Gonzalez",1,4,9
+start,palmd002,"Dean Palmer",1,5,5
+start,ausmb001,"Brad Ausmus",1,6,2
+start,easld001,"Damion Easley",1,7,4
+start,fickr001,"Robert Fick",1,8,3
+start,halts001,"Shane Halter",1,9,6
+start,mlicd001,"Dave Mlicki",1,0,1
+play,1,0,vinaf001,11,BCX,13/G
+play,1,0,rente001,11,BCX,63/G
+play,1,0,edmoj001,32,FBFBBX,S
+play,1,0,mcgwm001,12,CCBX,HR/9.1-H
+play,1,0,lankr001,32,CBBBSX,D8
+play,1,0,dunss001,00,X,S7.2-H
+play,1,0,drewj001,01,FX,43/G
+play,1,1,polol001,00,X,8/F8
+play,1,1,beckr002,31,CBBBB,W
+play,1,1,higgb001,01,CX,46(1)/FO
+play,1,1,gonzj002,10,BX,8/F8
+play,2,0,mathm001,02,FCX,D/78
+play,2,0,polap001,00,X,S8.2-3
+play,2,0,vinaf001,22,BFSFBS,K
+play,2,0,rente001,00,X,S7.3-H;1-2
+play,2,0,edmoj001,31,BBBCX,HR/7.2-H;1-H
+play,2,0,mcgwm001,11,BSX,D/78
+play,2,0,lankr001,00,,NP
+sub,mcdia001,"Allen McDill",1,0,1
+play,2,0,lankr001,32,BCBBSC,K/C
+play,2,0,dunss001,22,FBBFC,K/C
+play,2,1,palmd002,11,CBX,E6/G
+play,2,1,ausmb001,22,BFBFFX,9/L9
+play,2,1,easld001,21,FBBX,54(1)3/GDP
+play,3,0,drewj001,00,X,7/F7D
+play,3,0,mathm001,22,CFFFBBC,K/C
+play,3,0,polap001,21,BBFX,43/G
+play,3,1,fickr001,00,X,8/F8
+play,3,1,halts001,21,BBCX,63/G
+play,3,1,polol001,22,BBCFFX,6/P6
+play,4,0,vinaf001,11,BSX,63/G
+play,4,0,rente001,12,CCBX,7/F7
+play,4,0,edmoj001,32,BBFFFBFFFS,K
+play,4,1,beckr002,02,CCS,K
+play,4,1,higgb001,12,BCFX,53/G
+play,4,1,gonzj002,11,CBX,4/P4
+play,5,0,mcgwm001,00,,NP
+sub,blaiw001,"Willie Blair",1,0,1
+play,5,0,mcgwm001,11,FBX,9/F9
+play,5,0,lankr001,00,,NP
+sub,davie001,"Eric Davis",0,5,11
+play,5,0,davie001,12,FBFS,K
+play,5,0,dunss001,01,CX,7/F7
+play,5,1,palmd002,32,CBBCBFFX,9/F9
+play,5,1,ausmb001,10,BX,63/G
+play,5,1,easld001,21,BCBX,9/F9
+play,6,0,drewj001,00,,NP
+sub,nitkc001,"C.J. Nitkowski",1,0,1
+play,6,0,drewj001,32,BBCSBFX,7/F7
+play,6,0,mathm001,12,FFBX,63/G
+play,6,0,polap001,11,FBX,13/G
+play,6,1,fickr001,12,CCBS,K
+play,6,1,halts001,00,X,53/G
+play,6,1,polol001,20,BBX,9/F9
+play,7,0,vinaf001,32,FBFBBFFFX,8/F8
+play,7,0,rente001,00,X,D7
+play,7,0,edmoj001,22,CBSBS,K
+play,7,0,mcgwm001,30,IIII,IW
+play,7,0,davie001,00,,NP
+sub,andem002,"Matt Anderson",1,0,1
+play,7,0,davie001,12,CSBC,K/C
+play,7,1,beckr002,10,BX,3/G
+play,7,1,higgb001,02,CFX,S9
+play,7,1,gonzj002,31,BFBBX,S7.1-2
+play,7,1,palmd002,12,CFBFS,K
+play,7,1,ausmb001,21,BBCX,S9.2-H;1-2
+play,7,1,easld001,20,BBX,D9.2-H;1-H
+play,7,1,fickr001,10,BX,9/F9D
+play,8,0,dunss001,02,SSS,K
+play,8,0,drewj001,32,BCFBBX,13/G
+play,8,0,mathm001,11,CBX,63/G
+play,8,1,halts001,00,,NP
+sub,morrm001,"Matt Morris",0,0,1
+play,8,1,halts001,12,BFFX,53/G
+play,8,1,polol001,11,CBX,D/78
+play,8,1,beckr002,21,BFBX,7/L7
+play,8,1,higgb001,31,BBFBB,W
+play,8,1,gonzj002,10,BX,64(1)/FO.2-3
+play,9,0,polap001,21,BFBX,43/G
+play,9,0,vinaf001,32,BCBFBB,W
+play,9,0,rente001,00,X,S9.1-2
+play,9,0,edmoj001,22,BCBFS,K
+play,9,0,mcgwm001,32,FBFBBS,K
+play,9,1,palmd002,22,FBBFFX,S8
+play,9,1,ausmb001,20,BBX,54(1)3/GDP
+play,9,1,easld001,12,CBFX,6/P6
+data,er,hentp001,3
+data,er,morrm001,0
+data,er,mlicd001,7
+data,er,mcdia001,0
+data,er,blaiw001,0
+data,er,nitkc001,0
+data,er,andem002,0

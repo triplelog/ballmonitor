@@ -1,0 +1,209 @@
+version,2
+info,visteam,CHN
+info,hometeam,CIN
+info,site,CIN08
+info,date,2000/04/09
+info,number,0
+info,starttime,1:15PM
+info,daynight,day
+info,usedh,false
+info,umphome,willc901
+info,ump1b,wegnm901
+info,ump2b,reynj901
+info,ump3b,hirsj901
+info,pitches,pitches
+info,temp,42
+info,winddir,tocf
+info,windspeed,14
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,250
+info,attendance,37798
+info,wp,gravd001
+info,lp,karcm001
+info,save,
+start,youne001,"Eric Young",0,1,4
+start,gutir001,"Ricky Gutierrez",0,2,6
+start,sosas001,"Sammy Sosa",0,3,9
+start,gracm001,"Mark Grace",0,4,3
+start,hillg001,"Glenallen Hill",0,5,7
+start,andrs001,"Shane Andrews",0,6,5
+start,bufod001,"Damon Buford",0,7,8
+start,giraj001,"Joe Girardi",0,8,2
+start,downs001,"Scott Downs",0,9,1
+start,reesp001,"Pokey Reese",1,1,4
+start,larkb001,"Barry Larkin",1,2,6
+start,grifk002,"Ken Griffey",1,3,8
+start,yound001,"Dmitri Young",1,4,3
+start,bichd001,"Dante Bichette",1,5,9
+start,ochoa001,"Alex Ochoa",1,6,7
+start,lewim001,"Mark Lewis",1,7,5
+start,santb001,"Benito Santiago",1,8,2
+start,neagd001,"Denny Neagle",1,9,1
+play,1,0,youne001,22,BLBFX,6/F6
+com,"Debut game for Scott Downs"
+play,1,0,gutir001,12,BCLX,8/F8
+play,1,0,sosas001,00,X,HR/9
+play,1,0,gracm001,31,BBCBX,HR/9
+play,1,0,hillg001,00,X,9/F9
+play,1,1,reesp001,30,BBBB,W
+play,1,1,larkb001,32,CCBFBFFBC,K+CS2(26)/DP/C
+play,1,1,grifk002,11,CBX,43/G
+play,2,0,andrs001,32,BCBFBFB,W
+play,2,0,bufod001,00,X,S7.1-2
+play,2,0,giraj001,11,CBX,54(1)/FO.2-3
+play,2,0,downs001,01,LX,53/G.1-2
+play,2,0,youne001,22,SBBFX,63/G
+play,2,1,yound001,10,BX,7/F7D
+play,2,1,bichd001,31,BBCBB,W
+play,2,1,ochoa001,11,BSX,9/F9S
+play,2,1,lewim001,12,CCFBX,54(1)/FO
+play,3,0,gutir001,32,CBBFBFX,7/F7
+play,3,0,sosas001,32,BBCCBB,W
+play,3,0,gracm001,21,CBBX,9/F9D
+play,3,0,hillg001,00,X,9/F9
+play,3,1,santb001,01,CX,8/F8
+play,3,1,neagd001,22,BBCFC,K/C
+play,3,1,reesp001,01,CX,D/78D
+play,3,1,larkb001,10,BX,63/G
+play,4,0,andrs001,02,FCS,K
+play,4,0,bufod001,01,CX,8/L8
+play,4,0,giraj001,00,X,8/L8
+play,4,1,grifk002,32,FBBBCFS,K
+play,4,1,yound001,01,CX,63/G
+play,4,1,bichd001,31,CBBBB,W
+play,4,1,ochoa001,12,CBCFX,8/F8
+play,5,0,downs001,01,CX,13/G
+play,5,0,youne001,00,X,7/F7D
+play,5,0,gutir001,02,CCX,D7
+play,5,0,sosas001,30,IIII,IW
+play,5,0,gracm001,10,BX,9/F9
+play,5,1,lewim001,10,BX,9/F9
+play,5,1,santb001,00,X,D8/78D.B-3(E8)
+play,5,1,neagd001,00,,NP
+sub,taube001,"Eddie Taubensee",1,8,12
+play,5,1,neagd001,21,BCBX,43/G
+play,5,1,reesp001,22,BBCFFX,13/G
+play,6,0,hillg001,00,,NP
+sub,taube001,"Eddie Taubensee",1,8,2
+play,6,0,hillg001,31,FBBBX,HR/7
+play,6,0,andrs001,21,BCBX,9/F9D
+play,6,0,bufod001,02,CFX,D9
+play,6,0,giraj001,30,BBBB,W
+play,6,0,downs001,12,CSBS,K
+play,6,0,youne001,22,BBFFX,D/78.2-H;1-H
+play,6,0,gutir001,00,X,D9.2-H
+play,6,0,sosas001,00,,NP
+sub,aybam001,"Manny Aybar",1,9,1
+play,6,0,sosas001,32,CBFBBB,W
+play,6,0,gracm001,22,BFBFX,7/F7
+play,6,1,larkb001,00,,NP
+sub,broct001,"Tarrik Brock",0,5,7
+play,6,1,larkb001,32,CBFBBB,W
+play,6,1,grifk002,20,BBX,HR/9.1-H
+play,6,1,yound001,10,BX,8/F8D
+play,6,1,bichd001,02,CFFS,K
+play,6,1,ochoa001,10,BX,HR/8
+play,6,1,lewim001,00,X,63/G
+play,7,0,broct001,32,CCBFBBB,W
+play,7,0,andrs001,01,CX,S7.1-2
+play,7,0,bufod001,10,BX,64(1)/FO.2-3
+play,7,0,giraj001,12,BCSS,K
+play,7,0,downs001,02,FFS,K
+play,7,1,taube001,01,CX,31/G
+play,7,1,aybam001,00,,NP
+sub,stync001,"Chris Stynes",1,9,11
+play,7,1,stync001,21,BBCX,S
+play,7,1,reesp001,31,FBBBB,W.1-2
+play,7,1,larkb001,31,BCBBB,W.2-3;1-2
+play,7,1,grifk002,00,,NP
+sub,heref001,"Felix Heredia",0,9,1
+play,7,1,grifk002,22,BSBFX,3/P3
+play,7,1,yound001,12,FCBFS,K
+play,8,0,youne001,00,,NP
+sub,sulls001,"Scott Sullivan",1,9,1
+play,8,0,youne001,21,BBCX,S8/8S
+play,8,0,gutir001,00,X,13/SH.1-2
+play,8,0,sosas001,21,BSBX,S8.2XH(82);B-2(THH)
+play,8,0,gracm001,30,IIII,IW
+play,8,0,broct001,32,SSBBFFBS,K
+play,8,1,bichd001,00,,NP
+sub,willb001,"Brian Williams",0,9,1
+play,8,1,bichd001,32,BCBFFFBB,W
+play,8,1,ochoa001,00,X,D9/9S.1-3
+play,8,1,lewim001,00,,NP
+sub,tuckm001,"Michael Tucker",1,7,11
+play,8,1,tuckm001,00,,NP
+sub,garid001,"Daniel Garibay",0,9,1
+play,8,1,tuckm001,00,,NP
+sub,boona001,"Aaron Boone",1,7,11
+play,8,1,boona001,22,FBSFBX,9/SF.3-H;2-3
+com,"Debut game for Daniel Garibay"
+play,8,1,taube001,00,X,7/SF.3-H
+play,8,1,sulls001,00,,NP
+sub,cromd001,"David Cromer",1,9,11
+play,8,1,cromd001,01,CX,E6/G
+play,8,1,reesp001,32,BCBBFX,S7.1-2
+play,8,1,larkb001,00,,NP
+sub,aguir001,"Rick Aguilera",0,9,1
+play,8,1,larkb001,00,X,S9.2-H(UR);1-3
+play,8,1,grifk002,30,IIII,IW.1-2
+play,8,1,yound001,22,FBFBX,5/P5
+play,9,0,andrs001,00,,NP
+sub,boona001,"Aaron Boone",1,7,5
+play,9,0,andrs001,00,,NP
+sub,cromd001,"David Cromer",1,9,3
+play,9,0,andrs001,00,,NP
+sub,reyed001,"Dennys Reyes",1,4,1
+play,9,0,andrs001,01,FX,9/F9
+play,9,0,bufod001,22,BBSCS,K
+play,9,0,giraj001,00,X,S7/78.BX2(74)
+com,"ej,giraj001,P,reynj901,Call at 2B"
+com,"Joe Girardi ejected by 2B umpire Jim Reynolds"
+play,9,1,bichd001,00,,NP
+sub,reedj001,"Jeff Reed",0,8,2
+play,9,1,bichd001,11,CBX,13/G
+play,9,1,ochoa001,12,SBSS,K
+play,9,1,boona001,32,BFBBFS,K
+play,10,0,aguir001,00,,NP
+sub,nievj002,"Jose Nieves",0,9,11
+play,10,0,nievj002,30,BBBB,W
+play,10,0,youne001,31,BBCBX,14/SH.1-2
+play,10,0,gutir001,00,,NP
+sub,gravd001,"Danny Graves",1,4,1
+play,10,0,gutir001,12,CBCX,4/P4
+play,10,0,sosas001,02,CSC,K/C
+play,10,1,taube001,00,,NP
+sub,karcm001,"Matt Karchner",0,9,1
+play,10,1,taube001,11,CBX,7/F7D
+play,10,1,cromd001,00,X,E4/TH1
+play,10,1,reesp001,32,BFFFFBBFX,53/G.1-2
+play,10,1,larkb001,10,BX,63/G
+play,11,0,gracm001,22,CFBBX,E4/TH1
+play,11,0,broct001,12,BLSL,K/BF
+play,11,0,andrs001,32,CBCBBB,W.1-2
+play,11,0,bufod001,32,BBCCFBX,S7.2-H(UR);1-2
+play,11,0,reedj001,12,SSFBC,K/C
+play,11,0,karcm001,11,FBB,WP.2-3;1-2
+play,11,0,karcm001,31,FBBBB,W
+play,11,0,youne001,11,BFX,9/F9
+play,11,1,grifk002,31,BFBBB,W
+play,11,1,gravd001,00,,NP
+sub,morrh001,"Hal Morris",1,4,11
+play,11,1,morrh001,00,X,E5/TH/SH.1-H(NR);B-2
+play,11,1,bichd001,00,,NP
+sub,parrs001,"Steve Parris",1,4,12
+play,11,1,bichd001,01,FX,43/G.2-3
+play,11,1,ochoa001,10,BX,S7.3-H(UR)
+data,er,downs001,3
+data,er,heref001,0
+data,er,willb001,2
+data,er,garid001,0
+data,er,aguir001,0
+data,er,karcm001,1
+data,er,neagd001,6
+data,er,aybam001,0
+data,er,sulls001,0
+data,er,reyed001,0
+data,er,gravd001,0

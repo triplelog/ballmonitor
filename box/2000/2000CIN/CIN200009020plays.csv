@@ -1,0 +1,82 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,12,1,,,,,0,4,BFCX,villr001,1,0,bradm001 grounds out. ,bradm001,0,G
+,21,1,,,,,1,8,CBBX,villr001,1,0,,mordm001,0,P
+,10,1,,,,,2,10,BX,villr001,1,0,,vidrj001,0,F
+,31,1,reesp001,,,,3,5,CBBBB,moort001,0,0,reesp001 walks. ,reesp001,1,
+reesp001 out. ,12,1,stync001,,,,4,9,BCFX,moort001,1,0,stync001 reaches on fielder's choice. ,stync001,1,
+stync001 scores. ,02,1,,grifk002,,,5,12,CFX,moort001,0,1,grifk002 doubles. ,grifk002,1,
+,31,1,yound001,grifk002,,,6,17,BBBFB,moort001,0,0,yound001 walks. ,yound001,1,
+grifk002 to 2B. yound001 out. ,11,1,cases001,grifk002,,,7,20,CBX,moort001,1,0,cases001 singles. ,cases001,1,
+grifk002 to 3B. cases001 to 2B. ,31,1,ochoa001,cases001,grifk002,,8,25,BBBCB,moort001,0,0,ochoa001 walks. ,ochoa001,1,
+,12,1,ochoa001,cases001,grifk002,,9,29,CFBX,moort001,1,0,sextc001 grounds out. ,sextc001,1,G
+,10,2,,,guerv001,,10,12,BX,villr001,0,0,guerv001 triples. ,guerv001,0,
+guerv001 scores. ,11,2,,,,,11,15,BCX,villr001,1,1,stevl001 grounds out. ,stevl001,0,G
+,00,2,,,,,12,16,X,villr001,1,0,seguf001 grounds out. ,seguf001,0,G
+,00,2,,,,,13,17,X,villr001,1,0,cabro001 grounds out. ,cabro001,0,G
+,10,2,,,,,14,31,BX,moort001,1,0,,laruj001,1,F
+,01,2,,,,,15,33,FX,moort001,1,0,villr001 grounds out. ,villr001,1,G
+,11,2,,,,,16,36,CBX,moort001,1,0,reesp001 grounds out. ,reesp001,1,G
+,11,3,,barrm003,,,17,20,CBX,villr001,0,0,barrm003 doubles. ,barrm003,0,
+barrm003 to 3B. ,01,3,,,barrm003,,18,22,CX,villr001,1,0,Sacrifice bunt by moort001.,moort001,0,
+,32,3,bradm001,,barrm003,,19,30,FBBBFFFB,villr001,0,0,bradm001 walks. ,bradm001,0,
+barrm003 scores. bradm001 to 2B. ,11,3,mordm001,bradm001,,,20,33,SBX,villr001,0,1,mordm001 reaches on error. ,mordm001,0,
+,00,3,,bradm001,,,21,34,X,villr001,2,0,Double Play. ,vidrj001,0,
+,31,3,stync001,,,,22,41,FBBBB,moort001,0,0,stync001 walks. ,stync001,1,
+stync001 to 2B. ,01,3,grifk002,stync001,,,23,43,CH,moort001,0,0,grifk002 hit by pitch. ,grifk002,1,
+stync001 to 3B. grifk002 to 2B. ,00,3,yound001,grifk002,stync001,,24,44,X,moort001,0,0,yound001 singles. ,yound001,1,
+stync001 scores. grifk002 to 3B. yound001 out. ,22,3,cases001,,grifk002,,25,49,BSCBX,moort001,1,1,cases001 reaches on fielder's choice. ,cases001,1,
+cases001 to 2B. ,31,3,ochoa001,cases001,grifk002,,26,54,SBBBB,moort001,0,0,ochoa001 walks. ,ochoa001,1,
+,31,3,,cases001,grifk002,,28,5,BBBCX,liraf001,2,0,Double Play. ,sextc001,1,
+,21,4,,,,,29,38,BBCX,villr001,1,0,guerv001 grounds out. ,guerv001,0,G
+,00,4,,,,,30,39,X,villr001,1,0,stevl001 grounds out. ,stevl001,0,G
+,10,4,,,,,31,41,BX,villr001,1,0,,seguf001,0,F
+,12,4,,,,,32,10,FSFBS,liraf001,1,0,laruj001 strikes out. ,laruj001,1,
+,00,4,,,,,33,11,X,liraf001,1,0,,villr001,1,P
+,01,4,,,,,34,13,CX,liraf001,1,0,reesp001 grounds out. ,reesp001,1,G
+,01,5,,,,,35,43,CX,villr001,1,0,,cabro001,0,P
+,30,5,barrm003,,,,36,47,BBBB,villr001,0,0,barrm003 walks. ,barrm003,0,
+barrm003 to 2B. ,00,5,,barrm003,,,37,48,X,villr001,1,0,Sacrifice bunt by liraf001.,liraf001,0,
+barrm003 scores. ,20,5,,,bradm001,,38,51,BBX,villr001,0,1,bradm001 triples. ,bradm001,0,
+,32,5,mordm001,,bradm001,,39,58,BBCSFBB,villr001,0,0,mordm001 walks. ,mordm001,0,
+,01,5,mordm001,,bradm001,,40,60,SX,villr001,1,0,,vidrj001,0,F
+,32,5,stync001,,,,41,20,BFBFBFX,liraf001,0,0,stync001 singles. ,stync001,1,
+stync001 to 3B. ,21,5,,grifk002,stync001,,42,24,CBBX,liraf001,0,0,grifk002 doubles. ,grifk002,1,
+stync001 scores. grifk002 to 3B. ,31,5,,,grifk002,,43,29,BBBCX,liraf001,1,1,yound001 hits sacrifice fly. ,yound001,1,
+grifk002 scores. ,00,5,,,,,44,30,X,liraf001,1,1,cases001 hits sacrifice fly. ,cases001,1,
+,12,5,,,,,45,35,CSFBX,liraf001,1,0,ochoa001 grounds out. ,ochoa001,1,G
+,31,6,guerv001,,,,46,65,BFBBB,villr001,0,0,guerv001 walks. ,guerv001,0,
+,01,6,,,,,47,67,FX,villr001,2,0,Double Play. ,stevl001,0,
+,01,6,seguf001,,,,48,69,SX,villr001,0,0,seguf001 singles. ,seguf001,0,
+seguf001 to 3B. ,20,6,,cabro001,seguf001,,49,72,BBX,villr001,0,0,cabro001 doubles. ,cabro001,0,
+,30,6,barrm003,cabro001,seguf001,,50,76,IIII,villr001,0,0,barrm003 intentionally walks. ,barrm003,0,
+seguf001 scores. cabro001 to 3B. barrm003 to 2B. ,10,6,guerw001,barrm003,cabro001,,52,78,BX,villr001,0,1,guerw001 singles. ,guerw001,0,
+cabro001 scores. barrm003 scores. guerw001 to 2B. ,10,6,bradm001,guerw001,,,53,80,BX,villr001,0,2,bradm001 singles. ,bradm001,0,
+,21,6,bradm001,guerw001,,,56,4,CBBX,sulls001,1,0,mordm001 grounds out. ,mordm001,0,G
+,00,6,,,,,59,1,X,telfa001,1,0,,sextc001,1,F
+,32,6,,,,,60,9,SFBFFBBS,telfa001,1,0,laruj001 strikes out. ,laruj001,1,
+,02,6,,,,,61,13,SFFS,telfa001,1,0,tuckm001 strikes out. ,tuckm001,1,
+,12,7,,,,,62,8,FFBX,sulls001,1,0,,vidrj001,0,
+guerv001 to 3B. ,10,7,,,guerv001,,63,10,BX,sulls001,0,0,guerv001 singles. ,guerv001,0,
+,02,7,,,guerv001,,64,13,FFX,sulls001,1,0,,stevl001,0,F
+,12,7,,,guerv001,,65,17,CFBS,sulls001,1,0,jonet004 strikes out. ,jonet004,0,
+,01,7,,,,,66,15,SX,telfa001,1,0,,reesp001,1,F
+,12,7,,,,,67,19,CFBX,telfa001,1,0,,stync001,1,F
+,32,7,,,,,68,28,BCSBFBFFS,telfa001,1,0,grifk002 strikes out. ,grifk002,1,
+,21,8,,,,,70,4,BBCX,wohlm001,1,0,cabro001 grounds out. ,cabro001,0,G
+,00,8,,,,,71,5,X,wohlm001,1,0,,barrm003,0,
+,10,8,,,,,73,7,BX,wohlm001,0,1,traca001 homers. ,traca001,0,
+,31,8,,,,,74,12,LBBBX,wohlm001,1,0,,bradm001,0,L
+,10,8,,,,,76,2,BX,klins002,1,0,,yound001,1,F
+,10,8,,,,,77,4,BX,klins002,1,0,cases001 grounds out. ,cases001,1,G
+,20,8,,,,,79,7,BBX,klins002,0,1,bellm003 homers. ,bellm003,1,
+,32,8,,,,,80,13,BBBCCX,klins002,1,0,sextc001 grounds out. ,sextc001,1,G
+,11,9,,,,,82,3,BCX,luebl001,1,0,,mordm001,0,F
+,10,9,vidrj001,,,,83,5,BX,luebl001,0,0,vidrj001 singles. ,vidrj001,0,
+vidrj001 scores. ,22,9,,,,,84,11,SFBBFX,luebl001,0,2,guerv001 homers. ,guerv001,0,
+,31,9,stevl001,,,,85,16,BBBCB,luebl001,0,0,stevl001 walks. ,stevl001,0,
+stevl001 to 3B. ,00,9,,jonet004,stevl001,,87,1,X,reyed001,0,0,jonet004 doubles. ,jonet004,0,
+,00,9,,jonet004,stevl001,,88,2,X,reyed001,1,0,,cabro001,0,L
+,01,9,,jonet004,stevl001,,89,4,FX,reyed001,1,0,,barrm003,0,
+,12,9,,,,,92,4,CSBS,stris001,1,0,santb001 strikes out. ,santb001,1,
+,22,9,,,,,93,9,CBFBX,stris001,1,0,,tuckm001,1,P
+,22,9,,,,,94,14,SCBBS,stris001,1,0,reesp001 strikes out. ,reesp001,1,

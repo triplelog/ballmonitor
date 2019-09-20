@@ -1,0 +1,160 @@
+version,2
+info,visteam,CIN
+info,hometeam,LAN
+info,site,LOS03
+info,date,2000/04/16
+info,number,0
+info,starttime,1:10PM
+info,daynight,day
+info,usedh,false
+info,umphome,relic901
+info,ump1b,eddid901
+info,ump2b,carlm901
+info,ump3b,demud901
+info,pitches,pitches
+info,temp,71
+info,winddir,rtol
+info,windspeed,14
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,198
+info,attendance,52594
+info,wp,parrs001
+info,lp,parkc002
+info,save,gravd001
+start,reesp001,"Pokey Reese",0,1,4
+start,larkb001,"Barry Larkin",0,2,6
+start,grifk002,"Ken Griffey",0,3,8
+start,taube001,"Eddie Taubensee",0,4,2
+start,yound001,"Dmitri Young",0,5,7
+start,cromd001,"David Cromer",0,6,3
+start,tuckm001,"Michael Tucker",0,7,9
+start,lewim001,"Mark Lewis",0,8,5
+start,parrs001,"Steve Parris",0,9,1
+start,hollt001,"Todd Hollandsworth",1,1,8
+start,santf001,"F.P. Santangelo",1,2,4
+start,shefg001,"Gary Sheffield",1,3,7
+start,grees001,"Shawn Green",1,4,9
+start,karre001,"Eric Karros",1,5,3
+start,belta001,"Adrian Beltre",1,6,5
+start,kreuc001,"Chad Kreuter",1,7,2
+start,vizcj001,"Jose Vizcaino",1,8,6
+start,parkc002,"Chan Ho Park",1,9,1
+play,1,0,reesp001,22,BBFFFS,K
+play,1,0,larkb001,12,BFFS,K
+play,1,0,grifk002,01,FX,S9
+play,1,0,taube001,32,CBCBBB,W.1-2
+play,1,0,yound001,02,CCS,K
+play,1,1,hollt001,22,BSCBX,43/G
+play,1,1,santf001,02,CFX,4/P4
+play,1,1,shefg001,21,CBBX,53/G
+play,2,0,cromd001,11,BCX,D/78
+play,2,0,tuckm001,00,X,43/G.2-3
+play,2,0,lewim001,22,BSBCFX,E5/G.3-H(NR)(UR)
+play,2,0,parrs001,00,X,34/SH.1-2
+play,2,0,reesp001,01,CX,43/G
+play,2,1,grees001,22,CBBFX,6/L6
+play,2,1,karre001,31,BBBCB,W
+play,2,1,belta001,01,CX,14(1)3/GDP
+play,3,0,larkb001,01,FX,9/F9D
+play,3,0,grifk002,12,FCBX,9/F9
+play,3,0,taube001,32,FBBBCFX,31/G
+play,3,1,kreuc001,32,BCBSFBB,W
+play,3,1,vizcj001,01,CX,E5/G.1-2
+play,3,1,parkc002,20,BBX,5/FL
+play,3,1,hollt001,00,X,8/F8
+play,3,1,santf001,02,CSB,WP.2-3;1-2
+play,3,1,santf001,32,CSBBBFFB,W
+play,3,1,shefg001,01,FX,8/F8
+play,4,0,yound001,22,CBBFFX,8/F8
+play,4,0,cromd001,01,FH,HP
+play,4,0,tuckm001,11,FBX,HR/9.1-H
+play,4,0,lewim001,01,FX,7/F7
+play,4,0,parrs001,12,FBCC,K/C
+play,4,1,grees001,31,BBBCX,D9/9S
+play,4,1,karre001,01,CX,53/G
+play,4,1,belta001,11,BFX,53/G.2-3
+play,4,1,kreuc001,31,BBCBB,W
+play,4,1,vizcj001,21,FBBX,6/FL
+play,5,0,reesp001,31,BSBBB,W
+play,5,0,larkb001,22,CFBB1,PO1(13)
+play,5,0,larkb001,32,CFBB1FBFX,43/G
+play,5,0,grifk002,30,BBBX,9/F9D
+play,5,1,parkc002,01,SX,8/F8
+play,5,1,hollt001,32,BBCFBX,13/G
+play,5,1,santf001,12,CFBX,7/F7
+play,6,0,taube001,11,FBX,7/F7
+play,6,0,yound001,00,X,E7/F.B-2
+play,6,0,cromd001,21,FBBX,13/G
+play,6,0,tuckm001,30,IIII,IW
+play,6,0,lewim001,10,BX,9/F9
+play,6,1,shefg001,00,,NP
+sub,morrh001,"Hal Morris",0,6,3
+play,6,1,shefg001,00,,NP
+sub,boona001,"Aaron Boone",0,8,5
+play,6,1,shefg001,10,BX,HR/7
+play,6,1,grees001,30,BBBX,D9/9D
+play,6,1,karre001,11,CBX,53/G
+play,6,1,belta001,12,FBSX,53/DP.2X3(31)
+play,7,0,parrs001,00,,NP
+sub,ochoa001,"Alex Ochoa",0,9,11
+play,7,0,ochoa001,11,BFX,S9
+play,7,0,reesp001,00,,NP
+sub,harnp001,"Pete Harnisch",0,9,12
+play,7,0,reesp001,00,X,14/SH.1-2
+play,7,0,larkb001,32,BFCBBFX,43/G.2-3
+play,7,0,grifk002,11,FBX,8/F8
+play,7,1,kreuc001,00,,NP
+sub,wills002,"Scott Williamson",0,9,1
+play,7,1,kreuc001,30,BBBB,W
+play,7,1,vizcj001,12,CFFBS,K
+play,7,1,parkc002,00,,NP
+sub,hansd001,"Dave Hansen",1,9,11
+play,7,1,hansd001,32,BCBFBFX,S7.1-2
+play,7,1,hollt001,32,BCSBBS,K
+play,7,1,santf001,12,BFFH,HP.2-3;1-2
+play,7,1,shefg001,32,BBCSBS,K
+play,8,0,taube001,00,,NP
+sub,willj002,"Jeff Williams",1,9,1
+play,8,0,taube001,12,FFBX,HR/9
+play,8,0,yound001,01,SX,S9
+play,8,0,morrh001,22,FFBBS,K
+play,8,0,tuckm001,32,SFBBFBFB,W.1-2
+play,8,0,boona001,00,,NP
+sub,hergm001,"Matt Herges",1,9,1
+play,8,0,boona001,21,FBBX,D/78S.2-H;1-3
+play,8,0,wills002,00,,NP
+sub,bichd001,"Dante Bichette",0,9,11
+play,8,0,bichd001,02,SFS,K
+play,8,0,reesp001,22,CFBBX,9/F9
+play,8,1,grees001,00,,NP
+sub,aybam001,"Manny Aybar",0,9,1
+play,8,1,grees001,31,CBBBX,HR/9
+play,8,1,karre001,22,BBFFS,K
+play,8,1,belta001,00,X,2/FL
+play,8,1,kreuc001,31,CBBBB,W
+play,8,1,vizcj001,12,CBFFFX,T9.1-H
+play,8,1,hergm001,00,,NP
+sub,whitd001,"Devon White",1,9,11
+play,8,1,whitd001,00,,NP
+sub,gravd001,"Danny Graves",0,9,1
+play,8,1,whitd001,00,X,7/F7
+play,9,0,larkb001,00,,NP
+sub,adamt001,"Terry Adams",1,9,1
+play,9,0,larkb001,11,BSX,43/G
+play,9,0,grifk002,31,BCBBB,W
+play,9,0,taube001,20,BBX,46(1)/FO
+play,9,0,yound001,11,BFX,7/F7
+play,9,1,hollt001,30,BBBB,W
+play,9,1,santf001,11,CBX,8/F8
+play,9,1,shefg001,00,X,8/F8
+play,9,1,grees001,32,CBBFFBFX,13/G
+data,er,parrs001,1
+data,er,wills002,0
+data,er,aybam001,2
+data,er,gravd001,0
+data,er,parkc002,2
+data,er,willj002,2
+data,er,hergm001,0
+data,er,adamt001,0

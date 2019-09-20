@@ -1,0 +1,234 @@
+version,2
+info,visteam,BAL
+info,hometeam,CLE
+info,site,CLE08
+info,date,2000/09/03
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,shulj901
+info,ump1b,rungb901
+info,ump2b,lampi901
+info,ump3b,cookr901
+info,pitches,pitches
+info,temp,77
+info,winddir,fromlf
+info,windspeed,6
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,317
+info,attendance,42630
+info,wp,cairc001
+info,lp,tromm001
+info,save,
+start,andeb001,"Brady Anderson",0,1,8
+start,hairj002,"Jerry Hairston",0,2,4
+start,deshd001,"Delino DeShields",0,3,7
+start,bellj002,"Albert Belle",0,4,9
+start,conij001,"Jeff Conine",0,5,5
+start,ripkc001,"Cal Ripken",0,6,10
+start,richc001,"Chris Richard",0,7,3
+start,fordb001,"Brook Fordyce",0,8,2
+start,lewim001,"Mark Lewis",0,9,6
+start,spurj001,"Jay Spurgeon",0,0,1
+start,loftk001,"Kenny Lofton",1,1,8
+start,vizqo001,"Omar Vizquel",1,2,6
+start,alomr001,"Roberto Alomar",1,3,4
+start,ramim002,"Manny Ramirez",1,4,9
+start,thomj002,"Jim Thome",1,5,10
+start,segud001,"David Segui",1,6,3
+start,frymt001,"Travis Fryman",1,7,5
+start,cordw001,"Wil Cordero",1,8,7
+start,aloms001,"Sandy Alomar",1,9,2
+start,woods001,"Steve Woodard",1,0,1
+play,1,0,andeb001,22,BCCFFBX,9/F9D
+play,1,0,hairj002,12,CBCS,K
+play,1,0,deshd001,21,BFBX,143/G
+play,1,1,loftk001,32,BFLFBBFX,S9
+play,1,1,vizqo001,22,CBCFBB,SB2
+play,1,1,vizqo001,32,CBCFBBFFX,9/F9.2-3
+play,1,1,alomr001,12,BCCFX,13/G
+play,1,1,ramim002,31,BBBCB,W
+play,1,1,thomj002,32,FFFBFBBX,S9.3-H;1-3
+play,1,1,segud001,12,BCSX,7/F7
+play,2,0,bellj002,32,CFBBBB,W
+play,2,0,conij001,00,X,7/F7
+play,2,0,ripkc001,12,FFBS,K
+play,2,0,richc001,22,SSBBX,T/89.1-H
+play,2,0,fordb001,11,CBX,D7/7S.3-H
+play,2,0,lewim001,22,FCBBX,8/F8
+play,2,1,frymt001,02,CFS,K
+play,2,1,cordw001,22,BBFFC,K/C
+play,2,1,aloms001,10,BX,53/G
+play,3,0,andeb001,32,CSBBBX,8/F8D
+play,3,0,hairj002,12,FCBX,7/L7
+play,3,0,deshd001,20,BBX,53/G
+play,3,1,loftk001,20,BBX,S9
+play,3,1,vizqo001,00,B,SB2
+play,3,1,vizqo001,31,BFBBB,W
+play,3,1,alomr001,01,LB,SB3
+play,3,1,alomr001,11,LB+1,PO1(E2).3-H;1-2
+play,3,1,alomr001,11,LB+1X,23/SH.2-3
+play,3,1,ramim002,01,FX,9/F9S
+play,3,1,thomj002,11,BFX,S9.3-H
+play,3,1,segud001,31,BFBBX,S9.1-3
+play,3,1,frymt001,01,SB,WP.3-H;1-2
+play,3,1,frymt001,11,SBX,D/89.2-H
+play,3,1,cordw001,10,BX,3/G
+play,4,0,bellj002,01,SX,S
+play,4,0,conij001,11,CBX,8/F8
+play,4,0,ripkc001,02,SFX,D9.1-3
+play,4,0,richc001,20,BBX,HR/7.3-H;2-H
+play,4,0,fordb001,32,CBBSBFX,HR/9
+play,4,0,lewim001,11,BFX,8/F8D
+play,4,0,andeb001,00,,NP
+sub,browj003,"Jim Brower",1,0,1
+play,4,0,andeb001,32,BCCBFBX,S9
+play,4,0,hairj002,01,CB,SB2
+play,4,0,hairj002,32,CBBFFFBFX,D9.2-H
+play,4,0,deshd001,32,FBBBCX,63/G
+play,4,1,aloms001,00,,NP
+sub,johnj007,"Jason Johnson",0,0,1
+play,4,1,aloms001,31,BBBCX,E6/G.B-2
+play,4,1,loftk001,11,BFX,S1/BG1.2-3
+play,4,1,vizqo001,00,B,SB2
+play,4,1,vizqo001,21,BCBX,S9.3-H(UR);2-H
+play,4,1,alomr001,32,BCBCBX,S9/9S.1-3
+play,4,1,ramim002,01,FH,HP.1-2
+play,4,1,thomj002,12,CFBH,HP.3-H;2-3;1-2
+play,4,1,segud001,02,CFS,K
+play,4,1,frymt001,00,X,64(1)3/GDP
+play,5,0,bellj002,31,BBFBX,53/G
+play,5,0,conij001,22,BBFFFX,S8
+play,5,0,ripkc001,22,CCBBX,7/F7
+play,5,0,richc001,01,FX,53/G
+play,5,1,cordw001,12,FCBX,9/F9D
+play,5,1,aloms001,12,BCCX,43/G
+play,5,1,loftk001,22,BSCFBX,8/F8S
+play,6,0,fordb001,32,FBFBBX,3/FL
+play,6,0,lewim001,02,SCS,K
+play,6,0,andeb001,12,CBFC,K/C
+play,6,1,vizqo001,31,BBBCB,W
+play,6,1,alomr001,11,BCX,S7.1-2
+play,6,1,ramim002,01,CX,4/P4
+play,6,1,thomj002,00,,NP
+sub,mcelc001,"Chuck McElroy",0,0,1
+play,6,1,thomj002,10,BX,D9/9S.2-H;1-H
+play,6,1,segud001,11,FBB,WP.2-3
+play,6,1,segud001,31,FBBBB,W
+play,6,1,frymt001,01,FX,S7/7S.3-H;1-2
+play,6,1,cordw001,20,BBX,46(1)3/GDP
+play,7,0,hairj002,30,BBBB,W
+play,7,0,deshd001,00,,NP
+sub,rincr001,"Ricardo Rincon",1,0,1
+play,7,0,deshd001,21,BBCX,46(1)3/GDP
+play,7,0,bellj002,00,,NP
+sub,reeds001,"Steve Reed",1,0,1
+play,7,0,bellj002,32,BBSFFBFX,S7/7S
+play,7,0,conij001,12,CBCFX,D7.1-3
+play,7,0,ripkc001,00,,NP
+sub,shuep001,"Paul Shuey",1,0,1
+play,7,0,ripkc001,11,FBX,D7.3-H;2-H
+play,7,0,richc001,00,,NP
+sub,matol001,"Luis Matos",0,6,12
+play,7,0,richc001,10,BX,HR/89.2-H
+play,7,0,fordb001,12,SCFFBS,K
+play,7,1,aloms001,00,,NP
+sub,diaze002,"Einar Diaz",1,9,11
+play,7,1,diaze002,11,BCX,S/89
+play,7,1,loftk001,00,X,54(1)/FO
+play,7,1,vizqo001,20,BBB,SB2
+play,7,1,vizqo001,30,BBBB,W
+play,7,1,alomr001,12,BCFS,K
+play,7,1,ramim002,00,,NP
+sub,milla001,"Alan Mills",0,0,1
+play,7,1,ramim002,30,BBBB,W.2-3;1-2
+play,7,1,thomj002,00,,NP
+sub,ryanb001,"B.J. Ryan",0,0,1
+play,7,1,thomj002,20,BBX,6/P6
+play,8,0,lewim001,00,,NP
+sub,diaze002,"Einar Diaz",1,9,2
+play,8,0,lewim001,32,BSBFBS,K
+play,8,0,andeb001,10,BX,63/G
+play,8,0,hairj002,00,X,S7/7S
+play,8,0,deshd001,12,SSBB,CS2(26)
+play,8,1,segud001,11,BCX,8/L8
+play,8,1,frymt001,32,BCBBFB,W
+play,8,1,cordw001,22,BFSBFX,4(1)3/GDP
+play,9,0,deshd001,00,,NP
+sub,wickb001,"Bob Wickman",1,0,1
+play,9,0,deshd001,00,X,43/G
+play,9,0,bellj002,22,BCFBX,53/G
+play,9,0,conij001,11,BFX,4/P4
+play,9,1,diaze002,12,CFBX,S
+play,9,1,loftk001,02,CSS,K
+play,9,1,vizqo001,20,BBX,5(B)3(1)/LDP
+play,10,0,matol001,00,,NP
+sub,kingg001,"Eugene Kingsale",0,6,11
+play,10,0,kingg001,00,X,63/G
+play,10,0,richc001,32,BBBFFX,D9
+play,10,0,fordb001,00,X,43/G.2-3
+play,10,0,lewim001,32,CCBBBFX,43/G
+play,10,1,alomr001,00,,NP
+sub,tromm001,"Mike Trombley",0,0,1
+play,10,1,alomr001,12,CFBS,K23
+play,10,1,ramim002,31,BSBBX,S8
+play,10,1,thomj002,00,,NP
+sub,cabrj002,"Jolbert Cabrera",1,4,12
+play,10,1,thomj002,32,BBBCFS,K+SB2
+play,10,1,segud001,30,IIII,IW
+play,10,1,frymt001,22,CBSBFX,9/F9
+play,11,0,andeb001,00,,NP
+sub,cabrj002,"Jolbert Cabrera",1,4,9
+play,11,0,andeb001,00,,NP
+sub,nichc002,"Chris Nichting",1,0,1
+play,11,0,andeb001,32,BCBCBX,7/F7
+play,11,0,hairj002,22,CBFFFBFX,13/G
+play,11,0,deshd001,20,BBX,D/78
+play,11,0,bellj002,30,IIII,IW
+play,11,0,conij001,00,X,64(1)/FO
+play,11,1,cordw001,01,CX,S
+play,11,1,diaze002,00,,NP
+sub,robed001,"Dave Roberts",1,8,12
+play,11,1,diaze002,00,X,14/SH.1-2
+play,11,1,loftk001,31,BBLBI,IW
+play,11,1,vizqo001,01,CX,8/F8D.2-3
+play,11,1,alomr001,30,BIII,IW.1-2
+play,11,1,cabrj002,00,,NP
+sub,selbb001,"Bill Selby",1,4,11
+play,11,1,selbb001,10,BX,8/L8
+play,12,0,kingg001,00,,NP
+sub,selbb001,"Bill Selby",1,4,9
+play,12,0,kingg001,00,,NP
+sub,robed001,"Dave Roberts",1,8,7
+play,12,0,kingg001,21,CBBX,43/G
+play,12,0,richc001,11,CBX,9/F9
+play,12,0,fordb001,22,BBCFC,K/C
+play,12,1,thomj002,20,BBX,8/F8D
+play,12,1,segud001,21,BCBX,D/78
+play,12,1,frymt001,10,BX,8/F8.2-3
+play,12,1,robed001,32,BCFBFBS,K
+play,13,0,lewim001,02,FCS,K
+play,13,0,andeb001,00,,NP
+sub,cairc001,"Cameron Cairncross",1,0,1
+play,13,0,andeb001,12,BCCX,43/G
+play,13,0,hairj002,31,BBBCB,W
+play,13,0,deshd001,11,BC1,POCS2(136)
+play,13,1,diaze002,11,BFX,6/P6
+play,13,1,loftk001,10,BX,HR/9
+data,er,spurj001,5
+data,er,johnj007,4
+data,er,mcelc001,1
+data,er,milla001,0
+data,er,ryanb001,0
+data,er,tromm001,1
+data,er,woods001,6
+data,er,browj003,1
+data,er,rincr001,0
+data,er,reeds001,2
+data,er,shuep001,2
+data,er,wickb001,0
+data,er,nichc002,0
+data,er,cairc001,0

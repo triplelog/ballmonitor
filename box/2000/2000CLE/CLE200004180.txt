@@ -1,0 +1,156 @@
+version,2
+info,visteam,OAK
+info,hometeam,CLE
+info,site,CLE08
+info,date,2000/04/18
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,scotd901
+info,ump1b,cedeg901
+info,ump2b,hudsm901
+info,ump3b,fichm901
+info,pitches,pitches
+info,temp,46
+info,winddir,ltor
+info,windspeed,3
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,187
+info,attendance,40551
+info,wp,muldm001
+info,lp,nagyc001
+info,save,isrij001
+start,chrir001,"Ryan Christenson",0,1,8
+start,tejam001,"Miguel Tejada",0,2,6
+start,giamj001,"Jason Giambi",0,3,10
+start,saeno001,"Olmedo Saenz",0,4,3
+start,staim001,"Matt Stairs",0,5,9
+start,grieb001,"Ben Grieve",0,6,7
+start,fasas001,"Sal Fasano",0,7,2
+start,chave001,"Eric Chavez",0,8,5
+start,velaj001,"Jorge Velandia",0,9,4
+start,muldm001,"Mark Mulder",0,0,1
+start,vizqo001,"Omar Vizquel",1,1,6
+start,frymt001,"Travis Fryman",1,2,5
+start,alomr001,"Roberto Alomar",1,3,4
+start,ramim002,"Manny Ramirez",1,4,9
+start,thomj002,"Jim Thome",1,5,10
+start,sexsr001,"Richie Sexson",1,6,3
+start,justd001,"David Justice",1,7,7
+start,ramia002,"Alex Ramirez",1,8,8
+start,aloms001,"Sandy Alomar",1,9,2
+start,nagyc001,"Charles Nagy",1,0,1
+play,1,0,chrir001,21,BBCX,63/G
+com,"Debut game for Mark Mulder"
+play,1,0,tejam001,01,CX,53/G
+play,1,0,giamj001,22,CBSBX,5/P5
+play,1,1,vizqo001,01,CX,9/F9S
+play,1,1,frymt001,32,FFBBBX,63/G
+play,1,1,alomr001,01,CX,S7
+play,1,1,ramim002,21,CBBX,HR/9.1-H
+play,1,1,thomj002,12,CFBS,K
+play,2,0,saeno001,11,FBX,D7
+play,2,0,staim001,31,BBBCX,3/G.2-3
+play,2,0,grieb001,00,X,4/L4
+play,2,0,fasas001,22,BCSBS,K
+play,2,1,sexsr001,22,BSBCS,K
+play,2,1,justd001,32,BCBBSFB,W
+play,2,1,ramia002,12,SSBFFC,K/C
+play,2,1,aloms001,02,FCX,13/G
+play,3,0,chave001,00,X,43/G
+play,3,0,velaj001,22,BBSCS,K
+play,3,0,chrir001,01,CX,3/G
+play,3,1,vizqo001,32,CBBBCB,W
+play,3,1,frymt001,00,X,8(B)3(1)/FDP
+play,3,1,alomr001,30,BBBB,W
+play,3,1,ramim002,12,CBCX,64(1)/FO
+play,4,0,tejam001,00,,NP
+sub,diaze002,"Einar Diaz",1,9,2
+play,4,0,tejam001,10,BX,D7/7D
+play,4,0,giamj001,32,BCBFBS,K
+play,4,0,saeno001,11,CBX,T8/8D.2-H
+play,4,0,staim001,00,X,3/G.3-H
+play,4,0,grieb001,32,BCBBFB,W
+play,4,0,fasas001,01,FX,13/G
+play,4,1,thomj002,11,BSX,63/G
+play,4,1,sexsr001,00,X,S7/7S
+play,4,1,justd001,32,BFFFBBX,46(1)3/GDP
+play,5,0,chave001,20,BBX,S9
+play,5,0,velaj001,21,CBBX,53/G.1-2
+play,5,0,chrir001,22,CSBBX,S7/7S.2-H
+play,5,0,tejam001,11,CBX,S9.1-2
+play,5,0,giamj001,12,CBCS,K
+play,5,0,saeno001,12,CSBS,K
+play,5,1,ramia002,20,BBX,6/P6
+play,5,1,diaze002,31,BBBCX,S8
+play,5,1,vizqo001,12,BCFS,K
+play,5,1,frymt001,02,CCX,HR/7.1-H
+play,5,1,alomr001,32,BCBBFS,K
+play,6,0,staim001,31,BBFBB,W
+play,6,0,grieb001,32,CBBBCFS,K+SB2
+play,6,0,fasas001,00,X,8/F8S
+play,6,0,chave001,30,BBII,IW
+play,6,0,velaj001,00,,NP
+sub,jahaj001,"John Jaha",0,9,11
+play,6,0,jahaj001,31,CBBBB,W.2-3;1-2
+play,6,0,chrir001,00,,NP
+sub,menef001,"Frank Menechino",0,9,12
+play,6,0,chrir001,02,CSX,S/78.3-H;2-H;1-3
+play,6,0,tejam001,00,,NP
+sub,kamis001,"Scott Kamieniecki",1,0,1
+play,6,0,tejam001,21,CBBX,S7/7S.3-H;1-2
+play,6,0,giamj001,11,BFX,43/G
+play,6,1,ramim002,00,,NP
+sub,menef001,"Frank Menechino",0,9,4
+play,6,1,ramim002,32,BBCBSX,53/G
+play,6,1,thomj002,22,BCSBC,K/C
+play,6,1,sexsr001,22,BCBSX,63/G
+play,7,0,saeno001,10,BX,9/F9S
+play,7,0,staim001,22,CBCBC,K/C
+play,7,0,grieb001,32,BBBCCC,K/C
+play,7,1,justd001,00,,NP
+sub,magnm001,"Mike Magnante",0,0,1
+play,7,1,justd001,00,X,53/G
+play,7,1,ramia002,11,CBX,53/G
+play,7,1,diaze002,21,CBBX,7/F7
+play,8,0,fasas001,00,X,13/G
+play,8,0,chave001,30,BBBB,W
+play,8,0,menef001,12,FBCS,K
+play,8,0,chrir001,22,CBBCX,31/G
+play,8,1,vizqo001,00,,NP
+sub,matht002,"T.J. Mathews",0,0,1
+play,8,1,vizqo001,21,BCBX,5/P5
+play,8,1,frymt001,11,BCX,S9
+play,8,1,alomr001,11,CBX,5/P5
+play,8,1,ramim002,00,,NP
+sub,isrij001,"Jason Isringhausen",0,0,1
+play,8,1,ramim002,11,BSX,64(1)/FO
+play,9,0,tejam001,00,,NP
+sub,reeds001,"Steve Reed",1,0,1
+play,9,0,tejam001,32,BBBCFFB,W
+play,9,0,giamj001,12,FBCX,HR/9.1-H
+play,9,0,saeno001,01,CX,E5/TH
+play,9,0,staim001,00,,NP
+sub,martt003,"Tom Martin",1,0,1
+play,9,0,staim001,12,BCFC,K/C
+play,9,0,grieb001,32,BBBCCB,W.1-2
+play,9,0,fasas001,32,CSFFBFBFBB,W.2-3;1-2
+play,9,0,chave001,00,X,46(1)3/GDP
+play,9,1,thomj002,22,BBCFX,D9
+play,9,1,sexsr001,31,BCBBX,63/G
+play,9,1,justd001,00,X,S9/9S.2-H
+play,9,1,ramia002,10,BX,S7.1-2
+play,9,1,diaze002,01,CH,HP.2-3;1-2
+play,9,1,vizqo001,11,CBX,8/F8
+play,9,1,frymt001,11,CBX,6/P6
+data,er,muldm001,4
+data,er,magnm001,0
+data,er,matht002,0
+data,er,isrij001,1
+data,er,nagyc001,6
+data,er,kamis001,0
+data,er,reeds001,2
+data,er,martt003,0

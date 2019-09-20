@@ -1,0 +1,173 @@
+version,2
+info,visteam,CLE
+info,hometeam,BOS
+info,site,BOS07
+info,date,2000/09/19
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,emmep901
+info,ump1b,riekr901
+info,ump2b,guccc901
+info,ump3b,davig901
+info,pitches,pitches
+info,temp,74
+info,winddir,tolf
+info,windspeed,20
+info,fieldcond,unknown
+info,precip,rain
+info,sky,cloudy
+info,timeofgame,206
+info,attendance,32512
+info,wp,beckr001
+info,lp,nagyc001
+info,save,lowed001
+start,loftk001,"Kenny Lofton",0,1,8
+start,vizqo001,"Omar Vizquel",0,2,6
+start,alomr001,"Roberto Alomar",0,3,4
+start,ramim002,"Manny Ramirez",0,4,9
+start,thomj002,"Jim Thome",0,5,3
+start,frymt001,"Travis Fryman",0,6,5
+start,selbb001,"Bill Selby",0,7,7
+start,branr001,"Russell Branyan",0,8,10
+start,aloms001,"Sandy Alomar",0,9,2
+start,nagyc001,"Charles Nagy",0,0,1
+start,nixot001,"Trot Nixon",1,1,9
+start,offej001,"Jose Offerman",1,2,4
+start,varij001,"Jason Varitek",1,3,2
+start,garcn001,"Nomar Garciaparra",1,4,6
+start,oleat001,"Troy O'Leary",1,5,7
+start,bichd001,"Dante Bichette",1,6,10
+start,daubb001,"Brian Daubach",1,7,3
+start,merll001,"Lou Merloni",1,8,5
+start,lewid001,"Darren Lewis",1,9,8
+start,ohkat001,"Tomo Ohka",1,0,1
+com,"10 minute rain delay in seventh"
+play,1,0,loftk001,20,BBX,7/F7
+play,1,0,vizqo001,00,X,9/F9
+play,1,0,alomr001,02,CCC,K/C
+play,1,1,nixot001,12,BCCX,8/F8
+play,1,1,offej001,21,BCBX,S9
+play,1,1,varij001,31,BBCBX,S7.1-2
+play,1,1,garcn001,32,BFFBBB,W.2-3;1-2
+play,1,1,oleat001,00,X,12(3)/FO.2-3;1-2
+play,1,1,bichd001,10,BX,8/F8
+play,2,0,ramim002,11,BCX,D7
+play,2,0,thomj002,31,BBSBB,W.2-3(WP)
+play,2,0,frymt001,21,BFBX,9/SF.3-H
+play,2,0,selbb001,21,BCBX,S9.1-2
+play,2,0,branr001,10,BX,9/F9.2-3
+play,2,0,aloms001,21,CBBX,64(1)/FO
+play,2,1,daubb001,32,BCFBBX,8/F8D
+play,2,1,merll001,21,BFBX,53/G
+play,2,1,lewid001,10,BX,8/L8
+play,3,0,loftk001,02,LFX,S9
+play,3,0,vizqo001,00,B,SB2
+play,3,0,vizqo001,10,BB,WP.2-3
+play,3,0,vizqo001,20,BBX,13/G
+play,3,0,alomr001,10,BX,43/G
+play,3,0,ramim002,32,CSBFFBFBC,K/C
+play,3,1,nixot001,20,BBX,S8
+play,3,1,offej001,20,BBX,7/F7
+play,3,1,varij001,30,BBBB,W.1-2
+play,3,1,garcn001,10,BX,T8/8D.2-H;1-H
+play,3,1,oleat001,01,CX,43/G
+play,3,1,bichd001,00,X,HR/7.3-H
+play,3,1,daubb001,10,BX,31/G
+play,4,0,thomj002,12,FSBC,K/C
+play,4,0,frymt001,32,FCBBBX,S/78
+play,4,0,selbb001,00,X,36(1)/FO
+play,4,0,branr001,11,BSX,S9.1-2
+play,4,0,aloms001,31,BBBCB,W.2-3;1-2
+play,4,0,loftk001,02,FSFX,8/F8
+play,4,1,merll001,01,CX,6/L6
+play,4,1,lewid001,22,CSBBFX,D7
+play,4,1,nixot001,00,X,S8/8S.2-H
+play,4,1,offej001,00,,NP
+sub,speij001,"Justin Speier",0,0,1
+play,4,1,offej001,21,BCBX,D7/7D.1-3
+play,4,1,varij001,00,X,8/SF.3-H;2-3
+play,4,1,garcn001,30,IIII,IW
+play,4,1,oleat001,02,FSX,8/F8
+play,5,0,vizqo001,00,,NP
+sub,pichh001,"Hipolito Pichardo",1,0,1
+play,5,0,vizqo001,11,CBX,S8
+play,5,0,alomr001,01,CX,S/78.1-2
+play,5,0,ramim002,32,CBBFBFFX,43/G.2-3;1-2
+play,5,0,thomj002,30,BBBX,7/SF.3-H
+play,5,0,frymt001,21,BBFX,S9.2-H
+play,5,0,selbb001,12,CSFBS,K
+play,5,1,bichd001,32,BBCFBX,7/F7
+play,5,1,daubb001,22,BFFBX,7/F7D
+play,5,1,merll001,32,CFFBBBX,S8
+play,5,1,lewid001,12,FCBS,K
+play,6,0,branr001,32,FBSBBFS,K
+play,6,0,aloms001,20,BBX,53/G
+play,6,0,loftk001,22,CFBFBFX,43/G
+play,6,1,nixot001,00,,NP
+sub,cairc001,"Cameron Cairncross",0,0,1
+play,6,1,nixot001,22,CBBFS,K
+play,6,1,offej001,00,X,S8
+play,6,1,varij001,00,X,3/P3
+play,6,1,garcn001,00,,NP
+sub,reeds001,"Steve Reed",0,0,1
+play,6,1,garcn001,31,BBBCB,W.1-2
+play,6,1,oleat001,12,BCFFX,D8.2-H;1-3
+play,6,1,bichd001,22,SBFBX,8/F8S
+play,7,0,vizqo001,00,,NP
+sub,cormr001,"Rheal Cormier",1,0,1
+play,7,0,vizqo001,11,BCX,4/L4
+play,7,0,alomr001,02,CCX,S
+play,7,0,ramim002,00,,NP
+sub,garcr001,"Rich Garces",1,0,1
+play,7,0,ramim002,10,BX,13/G.1-2
+play,7,0,thomj002,22,BBFFB,DI.2-3
+play,7,0,thomj002,32,BBFFBS,K+WP.3-H;B-1
+com,"$long discussion about this play; Thome appeared to be struck"
+com,"by the ball on the back foot on checked swing but 3B umpire"
+com,"Davis said swing"
+play,7,0,frymt001,31,BBCBX,3/FL
+play,7,1,daubb001,11,BSX,7/F7
+play,7,1,merll001,02,CFX,S9
+play,7,1,lewid001,11,BSX,9/F9
+play,7,1,nixot001,00,,NP
+sub,rincr001,"Ricardo Rincon",0,0,1
+play,7,1,nixot001,31,BBBCB,W.1-2
+play,7,1,offej001,10,BX,4(1)/FO/G.2-3
+play,8,0,selbb001,00,,NP
+sub,sadld001,"Donnie Sadler",1,2,4
+play,8,0,selbb001,00,,NP
+sub,beckr001,"Rod Beck",1,0,1
+play,8,0,selbb001,22,FBFBX,43/G
+play,8,0,branr001,02,FSS,K
+play,8,0,aloms001,22,BFCBX,S8.B-2(E8)
+play,8,0,loftk001,01,CX,8/F8
+play,8,1,varij001,00,,NP
+sub,karss001,"Steve Karsay",0,0,1
+play,8,1,varij001,10,BX,5/FL
+play,8,1,garcn001,22,BBSFS,K
+play,8,1,oleat001,11,FBX,8/F8
+play,9,0,vizqo001,00,,NP
+sub,lowed001,"Derek Lowe",1,0,1
+play,9,0,vizqo001,00,,NP
+sub,brogr001,"Rico Brogna",1,7,3
+play,9,0,vizqo001,00,,NP
+sub,alexm001,"Manny Alexander",1,8,5
+play,9,0,vizqo001,32,BBCBLX,S8
+play,9,0,alomr001,12,BCFX,64(1)/FO
+play,9,0,ramim002,00,X,63/G.1-3
+play,9,0,thomj002,32,CCBFBFBB,W
+play,9,0,frymt001,02,CSFC,K/C
+data,er,nagyc001,6
+data,er,speij001,0
+data,er,cairc001,1
+data,er,reeds001,0
+data,er,rincr001,0
+data,er,karss001,0
+data,er,ohkat001,1
+data,er,pichh001,2
+data,er,cormr001,1
+data,er,garcr001,0
+data,er,beckr001,0
+data,er,lowed001,0

@@ -1,0 +1,154 @@
+version,2
+info,visteam,ANA
+info,hometeam,CHA
+info,site,CHI12
+info,date,2000/04/14
+info,number,0
+info,starttime,6:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,meric901
+info,ump1b,gibsg901
+info,ump2b,ripps901
+info,ump3b,tscht901
+info,pitches,pitches
+info,temp,73
+info,winddir,rtol
+info,windspeed,15
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,205
+info,attendance,38912
+info,wp,sirom001
+info,lp,hillk001
+info,save,
+start,erstd001,"Darin Erstad",0,1,7
+start,kenna001,"Adam Kennedy",0,2,4
+start,vaugm001,"Mo Vaughn",0,3,3
+start,salmt001,"Tim Salmon",0,4,9
+start,andeg001,"Garret Anderson",0,5,8
+start,glaut001,"Troy Glaus",0,6,5
+start,cleme001,"Edgard Clemente",0,7,10
+start,molib001,"Ben Molina",0,8,2
+start,gil-b001,"Benji Gil",0,9,6
+start,hillk001,"Ken Hill",0,0,1
+start,durhr001,"Ray Durham",1,1,4
+start,nortg001,"Greg Norton",1,2,3
+start,thomf001,"Frank Thomas",1,3,10
+start,ordom001,"Magglio Ordonez",1,4,9
+start,konep001,"Paul Konerko",1,5,5
+start,singc001,"Chris Singleton",1,6,8
+start,lee-c001,"Carlos Lee",1,7,7
+start,wilsc002,"Craig Wilson",1,8,6
+start,johnm003,"Mark Johnson",1,9,2
+start,sirom001,"Mike Sirotka",1,0,1
+play,1,0,erstd001,21,BFBX,D7/7S
+play,1,0,kenna001,12,LFBX,S9/9S.2-3
+play,1,0,vaugm001,01,CX,7/F7S
+play,1,0,salmt001,32,BBFFFBFX,4/P4
+play,1,0,andeg001,11,CBB,PB.1-2
+play,1,0,andeg001,32,CBBBCFB,W
+play,1,0,glaut001,22,CBSFFBFFC,K/C
+play,1,1,durhr001,02,CCX,1/L1
+play,1,1,nortg001,32,CFBBBFX,13/G
+play,1,1,thomf001,31,BCBBX,HR/9
+play,1,1,ordom001,20,BBX,S9
+play,1,1,konep001,22,CBBFB,WP.1-2
+play,1,1,konep001,32,CBBFBFFFX,63/G
+play,2,0,cleme001,00,X,9/F9
+play,2,0,molib001,20,BBX,9/F9
+play,2,0,gil-b001,10,BX,S7
+play,2,0,erstd001,02,CFX,7/FL
+play,2,1,singc001,32,BCBFBX,43/G
+play,2,1,lee-c001,12,BSFH,HP
+play,2,1,wilsc002,00,X,S9.1-3
+play,2,1,johnm003,31,BBBCB,W.1-2
+play,2,1,durhr001,32,BCBFBX,7/SF.3-H
+play,2,1,nortg001,10,BX,D/89D.2-H;1-H
+play,2,1,thomf001,32,BCCBBX,7/L7
+play,3,0,kenna001,00,X,S9
+play,3,0,vaugm001,12,CBFFX,7/F7
+play,3,0,salmt001,32,BBBCFFS,K+SB2
+play,3,0,andeg001,22,FFBBX,7/F7S
+play,3,1,ordom001,11,FBX,53/G
+play,3,1,konep001,20,BBX,9/F9
+play,3,1,singc001,32,FBBCBFS,K
+play,4,0,glaut001,31,BBFBX,63/G
+play,4,0,cleme001,22,CBBFX,8/F8
+play,4,0,molib001,01,FX,63/G
+play,4,1,lee-c001,30,BBBB,W
+play,4,1,wilsc002,31,BCBBX,S9.1-3
+play,4,1,johnm003,10,BX,9/F9S
+play,4,1,durhr001,12,BSCX,7/SF.3-H;1-2
+play,4,1,nortg001,00,,NP
+sub,levia001,"Al Levine",0,0,1
+play,4,1,nortg001,22,BFBCS,K
+play,5,0,gil-b001,22,BSBFX,9/F9
+play,5,0,erstd001,32,CCBFBBX,D9/9S
+play,5,0,kenna001,22,CCBFBX,S/78.2-H
+play,5,0,vaugm001,21,SBBX,36(1)3/GDP
+play,5,1,thomf001,12,SBCX,S8/8S
+play,5,1,ordom001,12,CFFBX,31/G.1-2
+play,5,1,konep001,31,CBBBX,D7.2-H
+play,5,1,singc001,10,BX,FC1.2X3(165);B-2
+play,5,1,lee-c001,21,BBCX,S8.2-H
+play,5,1,wilsc002,10,BX,43/G
+play,6,0,salmt001,21,BBFX,D7
+play,6,0,andeg001,12,BSCFX,63/G.2-3
+play,6,0,glaut001,00,,NP
+sub,lowes001,"Sean Lowe",1,0,1
+play,6,0,glaut001,12,SBFS,K
+play,6,0,cleme001,00,,NP
+sub,spies001,"Scott Spiezio",0,7,11
+play,6,0,spies001,10,BX,8/F8
+play,6,1,johnm003,31,BBCBX,3/G
+play,6,1,durhr001,11,BSX,43/G
+play,6,1,nortg001,32,BSBSBFFX,43/G
+play,7,0,molib001,01,FX,S8/8S
+play,7,0,gil-b001,11,LBX,D/78.1-3
+play,7,0,erstd001,00,,NP
+sub,wunsk001,"Kelly Wunsch",1,0,1
+play,7,0,erstd001,32,BCBBFFX,3/G.3-H;2-3
+play,7,0,kenna001,12,CCFFBS,K
+play,7,0,vaugm001,32,BSCBFBFS,K
+play,7,1,thomf001,00,,NP
+sub,potel001,"Lou Pote",0,0,1
+play,7,1,thomf001,32,BBFCBC,K/C
+play,7,1,ordom001,32,BBCFBS,K
+play,7,1,konep001,32,FCBBBX,HR/9
+play,7,1,singc001,22,BBFCS,K
+play,8,0,salmt001,00,,NP
+sub,eyres001,"Scott Eyre",1,0,1
+play,8,0,salmt001,00,X,D/89D
+play,8,0,andeg001,22,BBFFX,HR/9.2-H
+play,8,0,glaut001,00,X,S7
+play,8,0,spies001,00,,NP
+sub,foulk001,"Keith Foulke",1,0,1
+play,8,0,spies001,32,BBBCCFFS,K
+play,8,0,molib001,00,,NP
+sub,palmo001,"Orlando Palmeiro",0,8,11
+play,8,0,palmo001,12,FBSFS,K
+play,8,0,gil-b001,22,BSBSS,K
+play,8,1,lee-c001,00,,NP
+sub,walbm001,"Matt Walbeck",0,8,2
+play,8,1,lee-c001,10,BX,9/F9
+play,8,1,wilsc002,12,CFBX,S
+play,8,1,johnm003,32,BBBCFX,S7/7S.1-3
+play,8,1,durhr001,20,BBX,S9.3-H;1-2
+play,8,1,nortg001,11,FBX,6(1)3/GDP
+play,9,0,erstd001,00,,NP
+sub,singc001,"Chris Singleton",1,6,7
+play,9,0,erstd001,00,,NP
+sub,chrim002,"McKay Christensen",1,7,8
+play,9,0,erstd001,32,CFFBBBS,K
+play,9,0,kenna001,02,FCFX,43/G
+play,9,0,vaugm001,12,BCSX,8/F8
+data,er,hillk001,5
+data,er,levia001,2
+data,er,potel001,2
+data,er,sirom001,1
+data,er,lowes001,1
+data,er,wunsk001,0
+data,er,eyres001,2
+data,er,foulk001,0

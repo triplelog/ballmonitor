@@ -1,0 +1,143 @@
+version,2
+info,visteam,ARI
+info,hometeam,OAK
+info,site,OAK01
+info,date,2000/07/09
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,culbf901
+info,ump1b,froeb901
+info,ump2b,wintm901
+info,ump3b,welkb901
+info,pitches,pitches
+info,temp,66
+info,winddir,torf
+info,windspeed,8
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,180
+info,attendance,25513
+info,wp,johnr005
+info,lp,hereg001
+info,save,mantm001
+start,womat001,"Tony Womack",0,1,6
+start,bellj001,"Jay Bell",0,2,4
+start,gonzl001,"Luis Gonzalez",0,3,7
+start,finls001,"Steve Finley",0,4,8
+start,colbg001,"Greg Colbrunn",0,5,10
+start,contj001,"Jason Conti",0,6,9
+start,lee-t002,"Travis Lee",0,7,3
+start,milld002,"Damian Miller",0,8,2
+start,counc001,"Craig Counsell",0,9,5
+start,johnr005,"Randy Johnson",0,0,1
+start,chrir001,"Ryan Christenson",1,1,8
+start,velar001,"Randy Velarde",1,2,4
+start,giamj001,"Jason Giambi",1,3,3
+start,saeno001,"Olmedo Saenz",1,4,10
+start,grieb001,"Ben Grieve",1,5,7
+start,tejam001,"Miguel Tejada",1,6,6
+start,staim001,"Matt Stairs",1,7,9
+start,hernr002,"Ramon Hernandez",1,8,2
+start,menef001,"Frank Menechino",1,9,5
+start,hereg001,"Gil Heredia",1,0,1
+play,1,0,womat001,22,BFSBFX,3/G
+play,1,0,bellj001,32,CFBBFFBFX,8/F8
+play,1,0,gonzl001,10,BX,S9
+play,1,0,finls001,12,BFCX,43/G
+play,1,1,chrir001,12,CCBS,K
+play,1,1,velar001,12,FBCX,53/G
+play,1,1,giamj001,32,BBBCFFX,S7
+play,1,1,saeno001,12,FBSS,K
+play,2,0,colbg001,01,CX,43/G
+play,2,0,contj001,00,X,S9
+play,2,0,lee-t002,11,CBX,D9.1-H
+play,2,0,milld002,22,FCBBX,63/G.2-3
+play,2,0,counc001,30,BBBB,W
+play,2,0,womat001,00,X,S/78.3-H;1-2
+play,2,0,bellj001,20,BBX,63/G
+play,2,1,grieb001,01,CX,43/G
+play,2,1,tejam001,12,CCBFFC,K/C
+play,2,1,staim001,22,CBBSC,K/C
+play,3,0,gonzl001,01,CX,5/P5
+play,3,0,finls001,22,CBBCX,7/F7
+play,3,0,colbg001,22,BSBCX,S9
+play,3,0,contj001,22,BSBCX,D9.1-3
+play,3,0,lee-t002,30,IIII,IW
+play,3,0,milld002,00,X,9/L9
+play,3,1,hernr002,00,X,53/G
+play,3,1,menef001,22,BCBCS,K
+play,3,1,chrir001,22,CBCBS,K
+play,4,0,counc001,22,BCBFFFX,5/P5
+play,4,0,womat001,11,BCX,S3/BG3
+play,4,0,bellj001,22,BFCBX,53/G.1-2
+play,4,0,gonzl001,32,BBBFCX,3/G
+play,4,1,velar001,12,CCBFC,K/C
+play,4,1,giamj001,32,CBFBBS,K
+play,4,1,saeno001,10,BX,S7
+play,4,1,grieb001,02,CSX,S7.1-2
+play,4,1,tejam001,32,BSSBBB,W.2-3;1-2
+play,4,1,staim001,22,CBBCX,S8.3-H;2-H;1-3
+play,4,1,hernr002,32,BSBBCS,K
+play,5,0,finls001,01,CX,7/F7
+play,5,0,colbg001,10,BX,S8/8S
+play,5,0,contj001,22,BBSSX,4/L4.1-2(E4/TH1)
+play,5,0,lee-t002,32,BFBSBB,W
+play,5,0,milld002,00,X,S9.2XH(9E2)(UR);1-3;B-2
+play,5,0,counc001,22,CBFBX,9/L9
+play,5,1,menef001,12,CBFFC,K/C
+play,5,1,chrir001,12,BCCX,9/F9
+play,5,1,velar001,31,BBCBX,D9
+play,5,1,giamj001,10,BX,4/L4
+play,6,0,womat001,00,X,S9
+play,6,0,bellj001,10,BX,5(B)3(1)/LDP
+play,6,0,gonzl001,00,X,43/G
+play,6,1,saeno001,02,CFX,63/G
+play,6,1,grieb001,31,BBBCB,W
+play,6,1,tejam001,10,BX,8/F8
+play,6,1,staim001,32,CBBCBC,K/C
+play,7,0,finls001,00,X,HR/9
+play,7,0,colbg001,00,,NP
+sub,matht002,"T.J. Mathews",1,0,1
+play,7,0,colbg001,11,CBX,6/P6
+play,7,0,contj001,32,BBBCCX,7/F7
+play,7,0,lee-t002,22,CBFBS,K
+play,7,1,hernr002,02,SFFS,K
+play,7,1,menef001,12,BSSS,K
+play,7,1,chrir001,31,FBBBX,53/G
+play,8,0,milld002,00,X,D7/7D
+play,8,0,counc001,02,CCX,9/F9
+play,8,0,womat001,11,BCX,4/L4
+play,8,0,bellj001,02,CSFFX,53/G
+play,8,1,velar001,00,,NP
+sub,morgm001,"Mike Morgan",0,0,1
+play,8,1,velar001,11,BCX,4/L4
+play,8,1,giamj001,21,CBBX,7/L7
+play,8,1,saeno001,22,CCBBX,S
+play,8,1,grieb001,00,,NP
+sub,hudst001,"Tim Hudson",1,4,12
+play,8,1,grieb001,10,BX,6(1)/FO/G
+play,9,0,gonzl001,00,,NP
+sub,joned001,"Doug Jones",1,0,1
+play,9,0,gonzl001,00,X,43/G
+play,9,0,finls001,11,FBX,S8/8S
+play,9,0,colbg001,02,SFC,K/C
+play,9,0,contj001,02,SCS,K
+play,9,1,tejam001,31,BBBCB,W
+play,9,1,staim001,00,,NP
+sub,mantm001,"Matt Mantei",0,0,1
+play,9,1,staim001,22,BFFBS,K
+play,9,1,hernr002,00,,NP
+sub,giamj002,"Jeremy Giambi",1,8,11
+play,9,1,giamj002,02,SCS,K
+play,9,1,menef001,00,,NP
+sub,chave001,"Eric Chavez",1,9,11
+play,9,1,chave001,12,CBSS,K
+data,er,johnr005,2
+data,er,morgm001,0
+data,er,mantm001,0
+data,er,hereg001,3
+data,er,matht002,0
+data,er,joned001,0

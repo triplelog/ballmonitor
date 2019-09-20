@@ -1,0 +1,74 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,02,1,knobc001,,,,0,5,CFFFX,mlicd001,0,0,knobc001 singles. ,knobc001,0,
+,00,1,knobc001,,,,1,6,X,mlicd001,1,0,,leder001,0,F
+,00,1,knobc001,,,,2,7,X,mlicd001,1,0,,oneip001,0,F
+knobc001 to 3B. ,10,1,willb002,,knobc001,,3,9,BX,mlicd001,0,0,willb002 singles. ,willb002,0,
+,10,1,willb002,,knobc001,,4,11,BX,mlicd001,1,0,martt002 grounds out. ,martt002,0,G
+,31,1,beckr002,,,,5,5,BBBCB,coned001,0,0,beckr002 walks. ,beckr002,1,
+beckr002 to 2B. ,11,1,,beckr002,,,6,8,BCX,coned001,1,0,ausmb001 grounds out. ,ausmb001,1,G
+,10,1,,beckr002,,,7,10,BX,coned001,1,0,,encaj001,1,L
+,21,1,,beckr002,,,8,14,CBBX,coned001,1,0,,gonzj002,1,L
+,32,2,posaj001,,,,9,18,CBBFBFB,mlicd001,0,0,posaj001 walks. ,posaj001,0,
+posaj001 to 2B. ,00,2,spens001,posaj001,,,10,19,X,mlicd001,0,0,spens001 singles. ,spens001,0,
+posaj001 to 3B. spens001 to 2B. ,00,2,,spens001,posaj001,,11,20,X,mlicd001,1,0,bross001 grounds out. ,bross001,0,G
+posaj001 out. bellc001 to 1B. ,22,2,bellc001,spens001,,,12,25,CBSBX,mlicd001,1,0,bellc001 hits into a fielder's choice. ,bellc001,0,
+,01,2,bellc001,spens001,,,13,27,CX,mlicd001,1,0,knobc001 grounds out. ,knobc001,0,G
+,01,2,,,,,14,16,CX,coned001,1,0,,polol001,1,F
+,01,2,,,,,15,18,CX,coned001,1,0,,palmd002,1,F
+,32,2,jeffg001,,,,16,24,CBBFBB,coned001,0,0,jeffg001 walks. ,jeffg001,1,
+jeffg001 to 3B. macij001 to 2B. ,22,2,,macij001,jeffg001,,17,29,CBFBX,coned001,0,0,macij001 singles. ,macij001,1,
+,00,2,,macij001,jeffg001,,18,30,X,coned001,1,0,,cruzd001,1,F
+,32,3,,,,,19,34,FCBFBBS,mlicd001,1,0,leder001 strikes out. ,leder001,0,
+,10,3,,,,,20,36,BX,mlicd001,1,0,oneip001 grounds out. ,oneip001,0,G
+,00,3,,,,,21,37,X,mlicd001,1,0,,willb002,0,F
+,31,3,,,,,22,35,BCBBX,coned001,1,0,,beckr002,1,
+,00,3,,ausmb001,,,23,36,X,coned001,0,0,ausmb001 doubles. ,ausmb001,1,
+,01,3,,ausmb001,,,24,38,CX,coned001,1,0,encaj001 grounds out. ,encaj001,1,G
+ausmb001 scores. gonzj002 to 2B. ,01,3,,gonzj002,,,25,40,CX,coned001,0,1,gonzj002 singles. ,gonzj002,1,
+,21,3,,gonzj002,,,26,44,BSBX,coned001,1,0,,polol001,1,F
+,30,4,,,,,27,41,BBBX,mlicd001,1,0,martt002 grounds out. ,martt002,0,G
+,32,4,,,,,28,48,BCCBFBS,mlicd001,1,0,posaj001 strikes out. ,posaj001,0,
+,12,4,,,,,29,53,SBCFX,mlicd001,1,0,,spens001,0,F
+,00,4,,,,,30,45,X,coned001,1,0,,palmd002,1,F
+,21,4,,,,,31,49,BBCX,coned001,1,0,,jeffg001,1,P
+,22,4,,,,,32,55,BBCFFX,coned001,1,0,,macij001,1,F
+,12,5,,,,,33,57,CBCX,mlicd001,1,0,bross001 grounds out. ,bross001,0,G
+,01,5,,,,,34,59,SX,mlicd001,1,0,bellc001 grounds out. ,bellc001,0,G
+,11,5,,,,,35,62,BCX,mlicd001,1,0,,knobc001,0,P
+,00,5,,cruzd001,,,36,56,X,coned001,0,0,cruzd001 doubles. ,cruzd001,1,
+cruzd001 to 3B. ,00,5,,,cruzd001,beckr002,37,57,B,coned001,0,0,Passed Ball. ,beckr002,1,
+,10,5,,,cruzd001,,38,59,BX,coned001,1,0,beckr002 grounds out. ,beckr002,1,G
+,01,5,ausmb001,,cruzd001,,39,61,CH,coned001,0,0,ausmb001 hit by pitch. ,ausmb001,1,
+cruzd001 scores. ausmb001 to 2B. ,00,5,encaj001,ausmb001,,,40,62,X,coned001,0,1,encaj001 singles. ,encaj001,1,
+,10,5,encaj001,ausmb001,,,41,64,BX,coned001,1,0,,gonzj002,1,P
+,22,5,encaj001,ausmb001,,,42,69,BBCFX,coned001,1,0,polol001 grounds out. ,polol001,1,G
+,21,6,,,,,43,66,CBBX,mlicd001,1,0,leder001 grounds out. ,leder001,0,G
+,12,6,,,,,44,70,BFSS,mlicd001,1,0,oneip001 strikes out. ,oneip001,0,
+,12,6,,,,,45,74,BCCS,mlicd001,1,0,willb002 strikes out. ,willb002,0,
+,12,6,,,,,46,73,SBFS,coned001,1,0,palmd002 strikes out. ,palmd002,1,
+,20,6,,jeffg001,,,47,76,BBX,coned001,0,0,jeffg001 doubles. ,jeffg001,1,
+,32,6,,jeffg001,,,48,82,FBBBCX,coned001,1,0,,macij001,1,F
+,00,6,,jeffg001,,,49,83,X,coned001,1,0,,cruzd001,1,F
+,22,7,,,,,50,81,BCFFFBX,mlicd001,1,0,,martt002,0,F
+,11,7,,,,,51,84,BFX,mlicd001,1,0,posaj001 grounds out. ,posaj001,0,G
+,11,7,spens001,,,,52,87,BFX,mlicd001,0,0,spens001 singles. ,spens001,0,
+,10,7,spens001,,,,53,89,BX,mlicd001,1,0,bross001 grounds out. ,bross001,0,G
+,32,7,,,,,54,90,BCBFFBS,coned001,1,0,beckr002 strikes out. ,beckr002,1,
+,02,7,ausmb001,,,,55,93,CFX,coned001,0,0,ausmb001 singles. ,ausmb001,1,
+ausmb001 to 2B. ,00,7,encaj001,ausmb001,,,56,94,X,coned001,0,0,encaj001 singles. ,encaj001,1,
+ausmb001 to 3B. ,00,7,encaj001,,ausmb001,,57,95,X,coned001,1,0,,gonzj002,1,F
+,21,7,encaj001,,ausmb001,,58,99,BBFX,coned001,1,0,,polol001,1,F
+,32,8,,,,,60,95,BBBCCX,mlicd001,1,0,johnl001 grounds out. ,johnl001,0,G
+,11,8,,,,,61,98,CBX,mlicd001,1,0,knobc001 grounds out. ,knobc001,0,G
+,11,8,,,,,62,101,BFX,mlicd001,1,0,leder001 grounds out. ,leder001,0,G
+,32,8,palmd002,,,,65,11,CBSBBFFFFFB,nelsj001,0,0,palmd002 walks. ,palmd002,1,
+,32,8,palmd002,,,,66,18,CBFBFBX,nelsj001,1,0,,jeffg001,1,F
+palmd002 to 2B. ,31,8,macij001,palmd002,,,67,23,BBCBB,nelsj001,0,0,macij001 walks. ,macij001,1,
+,02,8,macij001,palmd002,,,68,26,CFX,nelsj001,1,0,,cruzd001,1,F
+,22,8,macij001,palmd002,,,70,5,CBBCS,stanm003,1,0,beckr002 strikes out. ,beckr002,1,
+,02,9,,,,,71,104,FLX,mlicd001,1,0,,oneip001,0,F
+,01,9,,,,,72,106,CX,mlicd001,1,0,willb002 grounds out. ,willb002,0,G
+,32,9,martt002,,,,73,112,BBCFBB,mlicd001,0,0,martt002 walks. ,martt002,0,
+martt002 to 2B. ,30,9,posaj001,martt002,,,74,116,BBBB,mlicd001,0,0,posaj001 walks. ,posaj001,0,
+martt002 scores. posaj001 to 3B. ,11,9,spens001,,posaj001,,76,3,BFX,jonet003,0,1,spens001 singles. ,spens001,0,
+,22,9,spens001,,posaj001,,77,9,CCBFBX,jonet003,1,0,,bross001,0,F

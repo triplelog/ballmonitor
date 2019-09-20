@@ -1,0 +1,190 @@
+version,2
+info,visteam,ATL
+info,hometeam,ARI
+info,site,PHO01
+info,date,2000/09/16
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,false
+info,umphome,iassd901
+info,ump1b,bellw901
+info,ump2b,onorb901
+info,ump3b,hirsm901
+info,pitches,pitches
+info,temp,72
+info,winddir,unknown
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,210
+info,attendance,41470
+info,wp,burkj001
+info,lp,stott001
+info,save,rockj001
+start,furcr001,"Rafael Furcal",0,1,6
+start,jonea002,"Andruw Jones",0,2,8
+start,jonec004,"Chipper Jones",0,3,5
+start,jordb001,"Brian Jordan",0,4,9
+start,galaa001,"Andres Galarraga",0,5,3
+start,lopej001,"Javy Lopez",0,6,2
+start,sandr002,"Reggie Sanders",0,7,7
+start,lockk001,"Keith Lockhart",0,8,4
+start,burkj001,"John Burkett",0,9,1
+start,womat001,"Tony Womack",1,1,6
+start,bautd001,"Danny Bautista",1,2,8
+start,gonzl001,"Luis Gonzalez",1,3,7
+start,colbg001,"Greg Colbrunn",1,4,3
+start,delld001,"David Dellucci",1,5,9
+start,willm003,"Matt D. Williams",1,6,5
+start,counc001,"Craig Counsell",1,7,4
+start,stink001,"Kelly Stinnett",1,8,2
+start,stott001,"Todd Stottlemyre",1,9,1
+play,1,0,furcr001,11,CBX,63/G
+play,1,0,jonea002,10,BX,9/F9
+play,1,0,jonec004,11,CBX,63/G
+play,1,1,womat001,32,BBBCFB,W
+play,1,1,bautd001,12,CBSB,SB2
+play,1,1,bautd001,22,CBSBFX,7/F7D
+play,1,1,gonzl001,01,CX,43/G.2-3
+play,1,1,colbg001,11,CBX,S8.3-H
+play,1,1,delld001,21,CBBX,8/F8S
+play,2,0,jordb001,02,SCX,S8
+play,2,0,galaa001,00,,BK.1-2
+play,2,0,galaa001,22,SBFBFFFS,K+WP.2-3;B-1
+play,2,0,lopej001,11,BSX,4(B)3(1)/LDP
+play,2,0,sandr002,00,X,HR/89.3-H
+play,2,0,lockk001,31,BFBBB,W
+play,2,0,burkj001,10,BX,53/G
+play,2,1,willm003,12,CBCFX,S8
+play,2,1,counc001,32,BBFCBX,S9.1-3
+play,2,1,stink001,22,CBFBX,S.3-H;1-2
+play,2,1,stott001,11,BCX,54(1)/FO.2-3
+play,2,1,womat001,01,SX,8/SF.3-H
+play,2,1,bautd001,11,BSX,64(1)/FO
+play,3,0,furcr001,31,BCBBB,W
+play,3,0,jonea002,00,X,13/G.1-2
+play,3,0,jonec004,11,FBX,D9/9S.2-H
+play,3,0,jordb001,01,SH,HP
+play,3,0,galaa001,00,S,SB3
+play,3,0,galaa001,01,SX,43/G.3-H;1-2
+play,3,0,lopej001,01,FX,S9.2-H
+play,3,0,sandr002,00,X,HR/7.1-H
+play,3,0,lockk001,20,BBX,63/G
+play,3,1,gonzl001,00,X,43/G
+play,3,1,colbg001,21,BBFX,53/G
+play,3,1,delld001,22,CBBFX,D7
+play,3,1,willm003,02,CFX,53/G
+play,4,0,burkj001,00,,NP
+sub,contj001,"Jason Conti",1,9,9
+play,4,0,burkj001,00,,NP
+sub,sprir001,"Russ Springer",1,5,1
+play,4,0,burkj001,01,FX,43/G
+play,4,0,furcr001,12,BFFFS,K
+play,4,0,jonea002,32,SBBFBFX,D7
+play,4,0,jonec004,30,BBII,IW
+play,4,0,jordb001,22,BFCBS,K
+play,4,1,counc001,22,BCBFX,43/G
+play,4,1,stink001,11,BCX,S7
+play,4,1,contj001,01,LX,9/F9
+play,4,1,womat001,00,X,41/G
+play,5,0,galaa001,22,BCSBS,K
+play,5,0,lopej001,21,BBFX,9/FL
+play,5,0,sandr002,32,CBBFBB,W
+play,5,0,lockk001,00,B,SB2
+play,5,0,lockk001,30,BBII,IW
+play,5,0,burkj001,11,FBX,S9.2-H;1-3
+play,5,0,furcr001,22,CFFBBFX,HR/9.3-H;1-H
+play,5,0,jonea002,00,,NP
+sub,holmd001,"Darren Holmes",1,5,1
+play,5,0,jonea002,00,X,4/P4
+play,5,1,bautd001,11,CBX,3/FL
+play,5,1,gonzl001,00,X,5/FL
+play,5,1,colbg001,32,BBFFBX,8/F8
+play,6,0,jonec004,11,BFX,S7
+play,6,0,jordb001,00,,NP
+sub,helmw001,"Wes Helms",0,3,12
+play,6,0,jordb001,32,BBBCFX,S9.1-2
+play,6,0,galaa001,21,CBBX,S9.2-3;1-2
+play,6,0,lopej001,01,CX,6/P6
+play,6,0,sandr002,11,CBX,5(2)3/GDP
+play,6,1,holmd001,00,,NP
+sub,helmw001,"Wes Helms",0,3,5
+play,6,1,holmd001,00,,NP
+sub,ryanr001,"Rob Ryan",1,5,11
+play,6,1,ryanr001,12,FBFC,K/C
+play,6,1,willm003,00,X,13/G
+play,6,1,counc001,22,CBFBC,K/C
+play,7,0,lockk001,00,,NP
+sub,klasd001,"Danny Klassen",1,5,5
+play,7,0,lockk001,00,,NP
+sub,guzmg001,"Geraldo Guzman",1,6,1
+play,7,0,lockk001,32,BCFBBX,43/G
+play,7,0,burkj001,10,BX,9/F9
+play,7,0,furcr001,32,CBBCBFB,W
+play,7,0,jonea002,21,BCBX,S7.1-2
+play,7,0,helmw001,12,CBFS,K
+play,7,1,stink001,00,,NP
+sub,lombg001,"George Lombard",0,4,9
+play,7,1,stink001,21,CBBX,63/G
+play,7,1,contj001,01,CX,D7
+play,7,1,womat001,02,FFX,9/F9D.2-3
+play,7,1,bautd001,21,BCBX,D/89D.3-H
+play,7,1,gonzl001,00,,NP
+sub,remlm001,"Mike Remlinger",0,9,1
+play,7,1,gonzl001,11,CBX,8/F8S
+play,8,0,lombg001,02,FCS,K
+play,8,0,galaa001,22,CBSBX,HR/78
+play,8,0,lopej001,01,FX,D/89
+play,8,0,sandr002,22,BBCFS,K
+play,8,0,lockk001,00,X,8/F8D
+play,8,1,colbg001,02,CSS,K
+play,8,1,klasd001,21,CBBX,8/F8S
+play,8,1,guzmg001,00,,NP
+sub,cabra001,"Alex Cabrera",1,6,11
+play,8,1,cabra001,22,CBSBX,63/G
+play,9,0,remlm001,00,,NP
+sub,bautd001,"Danny Bautista",1,2,7
+play,9,0,remlm001,00,,NP
+sub,barar001,"Rod Barajas",1,3,2
+play,9,0,remlm001,00,,NP
+sub,cabra001,"Alex Cabrera",1,6,9
+play,9,0,remlm001,00,,NP
+sub,contj001,"Jason Conti",1,9,8
+play,9,0,remlm001,00,,NP
+sub,morgm001,"Mike Morgan",1,8,1
+play,9,0,remlm001,00,,NP
+sub,surhb001,"B.J. Surhoff",0,9,11
+play,9,0,surhb001,20,BBX,43/G
+play,9,0,furcr001,21,BCBX,7/F7
+play,9,0,jonea002,12,BSCFS,K
+play,9,1,counc001,00,,NP
+sub,hubbm001,"Mike Hubbard",0,6,2
+play,9,1,counc001,00,,NP
+sub,kamis001,"Scott Kamieniecki",0,9,1
+play,9,1,counc001,02,CFX,D7
+play,9,1,morgm001,00,,NP
+sub,miesm001,"Matt Mieske",1,8,11
+play,9,1,miesm001,22,BBCSX,S.2-3
+play,9,1,contj001,02,CCFX,T9/9D.3-H;1-H
+play,9,1,womat001,21,BBCX,T/89D.3-H
+play,9,1,bautd001,00,X,S/89S.3-H
+play,9,1,barar001,00,,NP
+sub,mulht001,"Terry Mulholland",0,9,1
+play,9,1,barar001,12,CSBX,HR/78.1-H
+play,9,1,colbg001,00,,NP
+sub,rockj001,"John Rocker",0,9,1
+play,9,1,colbg001,22,BCBFS,K
+play,9,1,klasd001,22,BCBSC,K/C
+play,9,1,cabra001,02,SFS,K
+data,er,burkj001,4
+data,er,remlm001,0
+data,er,kamis001,5
+data,er,mulht001,1
+data,er,rockj001,0
+data,er,stott001,7
+data,er,sprir001,4
+data,er,holmd001,0
+data,er,guzmg001,1
+data,er,morgm001,0

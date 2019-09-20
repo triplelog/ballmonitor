@@ -1,0 +1,171 @@
+version,2
+info,visteam,BOS
+info,hometeam,BAL
+info,site,BAL12
+info,date,2000/05/11
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,cuzzp901
+info,ump1b,craft901
+info,ump2b,mcclt901
+info,ump3b,schrp901
+info,pitches,pitches
+info,temp,82
+info,winddir,rtol
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,212
+info,attendance,43619
+info,wp,cormr001
+info,lp,mercj001
+info,save,
+start,offej001,"Jose Offerman",0,1,4
+start,nixot001,"Trot Nixon",0,2,9
+start,daubb001,"Brian Daubach",0,3,3
+start,garcn001,"Nomar Garciaparra",0,4,6
+start,everc001,"Carl Everett",0,5,8
+start,oleat001,"Troy O'Leary",0,6,7
+start,stanm002,"Mike Stanley",0,7,10
+start,varij001,"Jason Varitek",0,8,2
+start,veraw001,"Wilton Veras",0,9,5
+start,waket001,"Tim Wakefield",0,0,1
+start,andeb001,"Brady Anderson",1,1,8
+start,deshd001,"Delino DeShields",1,2,4
+start,surhb001,"B.J. Surhoff",1,3,7
+start,bellj002,"Albert Belle",1,4,9
+start,bainh001,"Harold Baines",1,5,10
+start,ripkc001,"Cal Ripken",1,6,5
+start,conij001,"Jeff Conine",1,7,3
+start,johnc002,"Charles Johnson",1,8,2
+start,bordm001,"Mike Bordick",1,9,6
+start,rappp001,"Pat Rapp",1,0,1
+play,1,0,offej001,00,X,S7
+play,1,0,nixot001,32,BCBBFB,W.1-2
+play,1,0,daubb001,32,CBBFBB,W.2-3;1-2
+play,1,0,garcn001,02,CFFX,46(1)/FO.3-H;2-3
+play,1,0,everc001,02,SFX,S7/7S.3-H;1-2
+play,1,0,oleat001,00,X,36(1)/FO.2-3
+play,1,0,stanm002,12,CSBS,K
+play,1,1,andeb001,00,,NP
+sub,sheea001,"Andy Sheets",0,4,6
+play,1,1,andeb001,32,BBBCFX,HR/9
+play,1,1,deshd001,32,BBFBFB,W
+play,1,1,surhb001,31,BBBCB,W.1-2
+play,1,1,bellj002,00,X,54(1)3/GDP.2-3
+play,1,1,bainh001,32,BBFBFB,W
+play,1,1,ripkc001,01,CX,64(1)/FO
+play,2,0,varij001,12,CBFS,K
+play,2,0,veraw001,02,CSX,43/G
+play,2,0,offej001,21,BFBX,9/L9
+play,2,1,conij001,22,CCBFBX,63/G
+play,2,1,johnc002,31,BBBCX,8/F8
+play,2,1,bordm001,00,X,D7
+play,2,1,andeb001,12,SBCX,7/F7
+play,3,0,nixot001,32,CBBFBS,K
+play,3,0,daubb001,20,BBX,S9
+play,3,0,sheea001,12,SFFBS,K
+play,3,0,everc001,32,CBBCBX,D7/7D.1-3
+play,3,0,oleat001,31,BBCBB,W
+play,3,0,stanm002,32,BBFFFBFB,W.3-H;2-3;1-2
+play,3,0,varij001,32,CBBCFBFC,K/C
+play,3,1,deshd001,22,CBBCX,53/G
+play,3,1,surhb001,11,CBX,S9
+play,3,1,bellj002,31,CBBBX,6/FL
+play,3,1,bainh001,11,BSC,SB2
+play,3,1,bainh001,12,BSCS,K23
+play,4,0,veraw001,02,FFX,S8
+play,4,0,offej001,00,X,54(1)/FO
+play,4,0,nixot001,12,CBFFX,S8.1-2
+play,4,0,daubb001,32,BBSBFX,S8.2-H;1-2
+play,4,0,sheea001,00,,NP
+sub,mercj001,"Jose Mercedes",1,0,1
+play,4,0,sheea001,11,BFX,36(1)/FO.2-3
+play,4,0,everc001,32,SBBBFB,W.1-2
+play,4,0,oleat001,02,CFFX,7/F7
+play,4,1,ripkc001,12,CFBX,HR/7
+play,4,1,conij001,10,BX,6/P6
+play,4,1,johnc002,21,BBCX,D7/7D
+play,4,1,bordm001,32,BBCFFBB,W
+play,4,1,andeb001,01,CX,D8/8D.2-H;1-H
+play,4,1,deshd001,22,FBSFBX,9/F9D.2-3
+play,4,1,surhb001,00,,NP
+sub,cormr001,"Rheal Cormier",0,0,1
+play,4,1,surhb001,02,CFC,K/C
+play,5,0,stanm002,10,BX,63/G
+play,5,0,varij001,11,BFX,S7
+play,5,0,veraw001,12,SCBFFX,2/FL
+play,5,0,offej001,12,FBCX,46(1)/FO
+play,5,1,bellj002,22,FBBCFX,43/G
+play,5,1,bainh001,32,CBFBFFBX,9/F9
+play,5,1,ripkc001,11,BCX,63/G
+play,6,0,nixot001,00,X,D9/9D
+play,6,0,daubb001,01,FX,3/G.2-3
+play,6,0,sheea001,22,FSBBX,S7/7S.3-H
+play,6,0,everc001,01,FX,HR/9.1-H
+play,6,0,oleat001,32,BFFBBX,D9
+play,6,0,stanm002,00,,NP
+sub,ryanb001,"B.J. Ryan",1,0,1
+play,6,0,stanm002,10,BX,4/P4
+play,6,0,varij001,30,BBBB,W
+play,6,0,veraw001,22,BFBFX,D7.2-H;1-H;B-3(E6/TH)
+play,6,0,offej001,02,CCB,WP.3-H(UR)
+play,6,0,offej001,32,CCBBBS,K
+play,6,1,conij001,32,SBSBFBX,4/P4
+play,6,1,johnc002,12,CBCFS,K
+play,6,1,bordm001,11,BCX,9/F9
+play,7,0,nixot001,32,CBBBFX,S7
+play,7,0,daubb001,32,FFBBBB,W.1-2
+play,7,0,sheea001,11,CBX,8/F8.2-3
+play,7,0,everc001,01,SX,54(1)/FO.3-H
+play,7,0,oleat001,02,CSX,5/FL
+play,7,1,andeb001,00,,NP
+sub,lewid001,"Darren Lewis",0,5,8
+play,7,1,andeb001,00,,NP
+sub,yount001,"Tim Young",0,0,1
+play,7,1,andeb001,12,CFBS,K
+play,7,1,deshd001,32,BSSBBC,K/C
+play,7,1,surhb001,00,,NP
+sub,amarr001,"Rich Amaral",1,3,11
+play,7,1,amarr001,21,BCBX,63/G
+play,8,0,stanm002,00,,NP
+sub,minor001,"Ryan Minor",1,9,5
+play,8,0,stanm002,00,,NP
+sub,amarr001,"Rich Amaral",1,3,7
+play,8,0,stanm002,00,,NP
+sub,lewim001,"Mark Lewis",1,6,6
+play,8,0,stanm002,00,,NP
+sub,maduc001,"Calvin Maduro",1,0,1
+play,8,0,stanm002,32,BCBBFB,W
+play,8,0,varij001,32,SBFBBX,7/F7D
+play,8,0,veraw001,00,X,54(1)/FO
+play,8,0,offej001,22,BBCFX,S7.1-2
+play,8,0,nixot001,01,CX,8/F8D
+play,8,1,bellj002,21,BFBX,D9
+play,8,1,bainh001,02,CFX,8/F8
+play,8,1,lewim001,21,BFBX,3/FL
+play,8,1,conij001,12,FBFC,K/C
+play,9,0,daubb001,00,,NP
+sub,tromm001,"Mike Trombley",1,0,1
+play,9,0,daubb001,02,SSX,9/F9
+play,9,0,sheea001,11,CBX,13/G
+play,9,0,lewid001,01,FX,S9/9S
+play,9,0,oleat001,22,CBFBS,K
+play,9,1,johnc002,00,,NP
+sub,wasdj001,"John Wasdin",0,0,1
+play,9,1,johnc002,02,FFX,D7/7S
+play,9,1,minor001,22,FBBSS,K
+play,9,1,andeb001,02,FFX,63/G.2-3
+play,9,1,deshd001,31,FBBBX,4/P4
+data,er,waket001,4
+data,er,cormr001,0
+data,er,yount001,0
+data,er,wasdj001,0
+data,er,rappp001,4
+data,er,mercj001,4
+data,er,ryanb001,2
+data,er,maduc001,0
+data,er,tromm001,0

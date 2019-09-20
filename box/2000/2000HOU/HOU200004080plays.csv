@@ -1,0 +1,82 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,10,1,,,,,0,2,BX,goodd001,0,1,gland001 homers. ,gland001,0,
+,11,1,,,,,1,5,BFX,goodd001,1,0,gantr001 grounds out. ,gantr001,0,G
+,20,1,,,,,2,8,BBX,goodd001,1,0,,abreb001,0,F
+,22,1,,,,,3,13,CBFBS,goodd001,1,0,roles001 strikes out. ,roles001,0,
+,32,1,,biggc001,,,4,6,BCFBBX,brocc001,0,0,biggc001 doubles. ,biggc001,1,
+biggc001 to 3B. ,12,1,,,biggc001,,5,11,LSBFX,brocc001,1,0,ceder001 grounds out. ,ceder001,1,G
+,02,1,,,biggc001,,6,14,SFS,brocc001,1,0,bagwj001 strikes out. ,bagwj001,1,
+,32,1,,,biggc001,,7,20,CBBSBX,brocc001,1,0,,camik001,1,
+,32,2,,brogr001,,,8,21,CBFBBFFX,goodd001,0,0,brogr001 doubles. ,brogr001,0,
+,31,2,moram001,brogr001,,,9,26,BBBCB,goodd001,0,0,moram001 walks. ,moram001,0,
+brogr001 to 3B. ,11,2,,,brogr001,,10,29,BFX,goodd001,2,0,Double Play. ,print001,0,
+,32,2,peret003,,brogr001,,11,35,BBBCFB,goodd001,0,0,peret003 walks. ,peret003,0,
+,32,2,peret003,,brogr001,,12,42,BBCSFBX,goodd001,1,0,,brocc001,0,F
+,12,2,,,,,13,24,FBCX,brocc001,1,0,aloum001 grounds out. ,aloum001,1,G
+,11,2,hidar001,,,,14,27,CBX,brocc001,0,0,hidar001 singles. ,hidar001,1,
+hidar001 to 3B. ,11,2,melum001,,hidar001,,15,30,CBX,brocc001,0,0,melum001 singles. ,melum001,1,
+hidar001 scores. melum001 scores. ,11,2,,,bogat001,,16,33,SBX,brocc001,0,2,bogat001 triples. ,bogat001,1,
+,02,2,,,bogat001,,17,36,FFX,brocc001,1,0,,goodd001,1,L
+,12,2,,,bogat001,,18,41,CFBFX,brocc001,1,0,,biggc001,1,F
+,30,3,gland001,,,,19,46,BBBB,goodd001,0,0,gland001 walks. ,gland001,0,
+,10,3,gland001,,,,20,48,BX,goodd001,1,0,,gantr001,0,F
+gland001 to 2B. ,12,3,,gland001,,abreb001,21,52,CBCB,goodd001,0,0,Wild Pitch. ,abreb001,0,
+gland001 scores. ,32,3,abreb001,,,,22,58,CBCBBX,goodd001,0,1,abreb001 singles. ,abreb001,0,
+,21,3,abreb001,,,,23,62,BSBX,goodd001,1,0,,roles001,0,L
+,10,3,abreb001,,,,24,64,BX,goodd001,1,0,brogr001 grounds out. ,brogr001,0,G
+,31,3,,,,,25,46,BBCBX,brocc001,1,0,,ceder001,1,F
+,21,3,bagwj001,,,,26,50,CBBX,brocc001,0,0,bagwj001 singles. ,bagwj001,1,
+bagwj001 scores. ,31,3,,,,,27,55,BBBFX,brocc001,0,2,camik001 homers. ,camik001,1,
+,32,3,,,,,28,64,CBBFBFFFX,brocc001,1,0,aloum001 grounds out. ,aloum001,1,G
+,22,3,,,,,29,70,FBBFFX,brocc001,1,0,,hidar001,1,P
+,00,4,moram001,,,,30,65,X,goodd001,0,0,moram001 singles. ,moram001,0,
+moram001 to 3B. ,20,4,,,moram001,print001,31,68,BBB,goodd001,0,0,moram001 steals 2B. ,print001,0,
+,30,4,,,moram001,,32,72,BBBX,goodd001,1,0,print001 grounds out. ,print001,0,G
+moram001 scores. ,21,4,,peret003,,,33,76,FBBX,goodd001,0,1,peret003 doubles. ,peret003,0,
+peret003 scores. ,22,4,,brocc001,,,34,81,SBBCX,goodd001,0,1,brocc001 doubles. ,brocc001,0,
+,01,4,,brocc001,,,35,83,SX,goodd001,1,0,,gland001,0,L
+brocc001 to 3B. ,01,4,,,brocc001,gantr001,36,85,CB,goodd001,0,0,Wild Pitch. ,gantr001,0,
+,12,4,,,brocc001,,37,89,CBFX,goodd001,1,0,gantr001 grounds out. ,gantr001,0,G
+,22,4,,,,,38,75,BBCCS,brocc001,1,0,melum001 strikes out. ,melum001,1,
+,12,4,,,,,39,80,FCBFX,brocc001,1,0,bogat001 grounds out. ,bogat001,1,G
+,00,4,,,,,41,81,X,brocc001,1,0,,johnr006,1,F
+,10,5,,,,,43,2,BX,maddm002,1,0,,abreb001,0,F
+,00,5,,,,,44,3,X,maddm002,1,0,,roles001,0,F
+,11,5,,,,,45,6,BCX,maddm002,1,0,,brogr001,0,L
+,30,5,biggc001,,,,46,85,BBBB,brocc001,0,0,biggc001 walks. ,biggc001,1,
+biggc001 to 3B. ,31,5,,,biggc001,ceder001,47,90,BBCBC,brocc001,0,0,biggc001 steals 2B. ,ceder001,1,
+,32,5,ceder001,,biggc001,,48,96,BBCBCB,brocc001,0,0,ceder001 walks. ,ceder001,1,
+,00,5,ceder001,,biggc001,,49,97,X,brocc001,1,0,,bagwj001,1,F
+,00,5,,ceder001,biggc001,camik001,50,98,B,brocc001,0,0,ceder001 steals 2B. ,camik001,1,
+,32,5,camik001,ceder001,biggc001,,51,107,BBFCFFBFB,brocc001,0,0,camik001 walks. ,camik001,1,
+biggc001 scores. ceder001 scores. camik001 to 2B. ,10,5,aloum001,camik001,,,53,2,BX,bullk001,0,2,aloum001 singles. ,aloum001,1,
+camik001 to 3B. ,10,5,aloum001,,camik001,,54,4,BX,bullk001,1,0,,hidar001,1,F
+,10,5,aloum001,,camik001,,55,6,BX,bullk001,1,0,,melum001,1,L
+,02,6,moram001,,,,56,9,CFH,maddm002,0,0,moram001 hit by pitch. ,moram001,0,
+moram001 to 3B. ,21,6,print001,,moram001,,57,13,FBBX,maddm002,0,0,print001 singles. ,print001,0,
+moram001 scores. print001 to 2B. ,32,6,peret003,print001,,,58,20,LBBSBFX,maddm002,0,1,peret003 singles. ,peret003,0,
+print001 to 3B. peret003 out. ,22,6,duceb001,,print001,,62,7,CBSFBFX,cabrj001,1,0,duceb001 singles. ,duceb001,0,
+,12,6,duceb001,,print001,,63,11,FFBS,cabrj001,1,0,gland001 strikes out. ,gland001,0,
+,00,6,duceb001,,print001,,64,12,X,cabrj001,1,0,,gantr001,0,F
+,00,6,,,,,66,1,X,telea001,1,0,,bogat001,1,
+,01,6,,,,,67,3,SX,telea001,1,0,,bakop001,1,F
+,12,6,,,,,68,7,CSBC,telea001,1,0,biggc001 strikes out. ,biggc001,1,
+,32,7,,,,,69,18,BBBCFS,cabrj001,1,0,abreb001 strikes out. ,abreb001,0,
+,11,7,roles001,,,,70,21,BCX,cabrj001,0,0,roles001 singles. ,roles001,0,
+,00,7,,,,,72,1,X,perey001,2,0,Double Play. ,brogr001,0,
+,32,7,,,ceder001,,73,13,BBBCCX,telea001,0,0,ceder001 triples. ,ceder001,1,
+,01,7,,,ceder001,,74,15,SX,telea001,1,0,,bagwj001,1,L
+ceder001 scores. ,11,7,,,,,75,18,SBX,telea001,1,1,camik001 hits sacrifice fly. ,camik001,1,
+,10,7,,,,,76,20,BX,telea001,0,1,aloum001 homers. ,aloum001,1,
+,21,7,hidar001,,,,77,24,BBCX,telea001,0,0,hidar001 singles. ,hidar001,1,
+,02,7,hidar001,,,,78,27,FSS,telea001,1,0,perey001 strikes out. ,perey001,1,
+,11,8,moram001,,,,79,4,BFX,perey001,0,0,moram001 singles. ,moram001,0,
+,10,8,,,,,82,2,BX,henrd002,2,0,Double Play. ,jordk001,0,
+,12,8,,,,,83,6,FSBS,henrd002,1,0,peret003 strikes out. ,peret003,0,
+,22,8,bogat001,,,,87,5,FBCBX,aldrs001,0,0,bogat001 singles. ,bogat001,1,
+,02,8,bogat001,,,,88,8,FCC,aldrs001,1,0,bakop001 strikes out. ,bakop001,1,
+bogat001 out. ,12,8,biggc001,,,,89,12,BCCX,aldrs001,1,0,biggc001 reaches on fielder's choice. ,biggc001,1,
+,11,8,biggc001,,,,90,15,BFX,aldrs001,1,0,ceder001 grounds out. ,ceder001,1,G
+,11,9,,,,,92,3,SBX,wagnb001,1,0,,ariaa001,0,
+,01,9,,,,,93,5,CX,wagnb001,1,0,,gland001,0,L
+,02,9,,,,,94,9,CFFX,wagnb001,1,0,,gantr001,0,F

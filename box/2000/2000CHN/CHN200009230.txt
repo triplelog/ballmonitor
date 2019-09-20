@@ -1,0 +1,198 @@
+version,2
+info,visteam,SLN
+info,hometeam,CHN
+info,site,CHI11
+info,date,2000/09/23
+info,number,0
+info,starttime,3:05PM
+info,daynight,day
+info,usedh,false
+info,umphome,schrp901
+info,ump1b,cuzzp901
+info,ump2b,rapue901
+info,ump3b,mcclt901
+info,pitches,pitches
+info,temp,64
+info,winddir,ltor
+info,windspeed,16
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,213
+info,attendance,38168
+info,wp,reamb001
+info,lp,natij001
+info,save,morrm001
+start,polap001,"Placido Polanco",0,1,4
+start,paquc001,"Craig Paquette",0,2,7
+start,davie001,"Eric Davis",0,3,9
+start,tatif001,"Fernando Tatis",0,4,5
+start,peree001,"Eduardo Perez",0,5,3
+start,rente001,"Edgar Renteria",0,6,6
+start,hernc001,"Carlos A. Hernandez",0,7,2
+start,satul001,"Luis Saturria",0,8,8
+start,reamb001,"Britt Reames",0,9,1
+start,youne001,"Eric Young",1,1,4
+start,gutir001,"Ricky Gutierrez",1,2,6
+start,gracm001,"Mark Grace",1,3,3
+start,browr001,"Roosevelt Brown",1,4,7
+start,andrs001,"Shane Andrews",1,5,5
+start,pattc001,"Corey Patterson",1,6,8
+start,bufod001,"Damon Buford",1,7,9
+start,giraj001,"Joe Girardi",1,8,2
+start,natij001,"Joey Nation",1,9,1
+play,1,0,polap001,31,BBCBB,W
+com,"Debut game for Joey Nation"
+play,1,0,paquc001,20,BB1,POCS2(136)
+play,1,0,paquc001,31,BB1FBB,W
+play,1,0,davie001,22,CSBBC,K/C
+play,1,0,tatif001,31,BBBCB,W.1-2
+play,1,0,peree001,12,BCSS,K
+play,1,1,youne001,01,CX,E6/G
+play,1,1,gutir001,31,BCBBB,W.1-2
+play,1,1,gracm001,30,BBBB,W.2-3;1-2
+play,1,1,browr001,10,BX,7/F7
+play,1,1,andrs001,11,FBB,PB.3-H(UR);2-3;1-2
+play,1,1,andrs001,22,FBBCX,8/SF.3-H(UR);2-3
+play,1,1,pattc001,11,BCX,9/F9
+play,2,0,rente001,12,BSCX,D7
+play,2,0,hernc001,22,FBFBFX,S8.2-H
+play,2,0,satul001,10,BX,8/F8D
+play,2,0,reamb001,10,BX,S3/BG3.1-2
+play,2,0,polap001,00,X,HR/89.2-H;1-H
+play,2,0,paquc001,10,BX,7/F7
+play,2,0,davie001,22,BBFFS,K
+play,2,1,bufod001,01,CX,9/F9
+play,2,1,giraj001,11,BSX,43/G
+play,2,1,natij001,12,CCBX,S9
+play,2,1,youne001,32,BFBFBX,7/F7
+play,3,0,tatif001,32,SBBFBC,K/C
+play,3,0,peree001,01,SH,HP
+play,3,0,rente001,31,BBCBB,W.1-2
+play,3,0,hernc001,00,X,9/F9
+play,3,0,satul001,12,SBCS,K
+play,3,1,gutir001,21,BBCX,D9/9D
+play,3,1,gracm001,11,BCX,53/G
+play,3,1,browr001,32,CBBFBS,K
+play,3,1,andrs001,11,BFX,53/G
+play,4,0,reamb001,01,CX,S9
+play,4,0,polap001,32,BSCBBX,54(1)3/GDP
+play,4,0,paquc001,22,BCBSS,K
+play,4,1,pattc001,01,CX,53/G
+play,4,1,bufod001,32,CBBCBS,K
+play,4,1,giraj001,01,FX,3/G
+play,5,0,davie001,21,BBCX,S8
+play,5,0,tatif001,10,BX,54(1)3/GDP
+play,5,0,peree001,02,CSX,7/F7
+play,5,1,natij001,21,CBBX,9/F9
+play,5,1,youne001,22,CFBBFX,63/G
+play,5,1,gutir001,10,BX,8/F8
+play,6,0,rente001,32,BCBFBB,W
+play,6,0,hernc001,32,BBFBFFFB,W.1-2
+play,6,0,satul001,20,BBX,7/F7.2-3
+play,6,0,reamb001,00,,NP
+sub,spraj001,"Jerry Spradlin",1,9,1
+play,6,0,reamb001,00,,NP
+sub,suttl001,"Larry Sutton",0,9,11
+play,6,0,suttl001,00,B,SB2
+play,6,0,suttl001,10,BX,FC3.3XH(32);2-3;B-1#
+play,6,0,polap001,21,CBBX,S8.3-H;1-2
+play,6,0,paquc001,00,X,46(1)/FO.2-3
+play,6,1,gracm001,00,,NP
+sub,jamem001,"Mike James",0,9,1
+play,6,1,gracm001,10,BX,3/G
+play,6,1,browr001,32,FBFBBB,W
+play,6,1,andrs001,32,SBBCBFFFX,3/FL
+play,6,1,pattc001,01,FX,E7/F.1-3;B-2
+play,6,1,bufod001,01,CX,63/G
+play,7,0,davie001,02,FSX,S8
+play,7,0,tatif001,00,,NP
+sub,drewj001,"J.D. Drew",0,3,12
+play,7,0,tatif001,12,CBFS,K
+play,7,0,peree001,10,BX,S9/9S.1-3
+play,7,0,rente001,10,BX,5(B)3(1)/LDP
+play,7,1,giraj001,00,,NP
+sub,drewj001,"J.D. Drew",0,3,9
+play,7,1,giraj001,11,BFX,S9
+play,7,1,spraj001,00,,NP
+sub,gloar001,"Ross Gload",1,9,11
+play,7,1,gloar001,00,,NP
+sub,timlm001,"Mike Timlin",0,5,1
+play,7,1,gloar001,00,,NP
+sub,clarw001,"Will Clark",0,9,3
+play,7,1,gloar001,12,CBFS,K
+play,7,1,youne001,32,BBCFBB,W.1-2
+play,7,1,gutir001,11,CBX,9/F9S
+play,7,1,gracm001,32,FBBBFX,S/89.2-H;1-3
+com,"$Grace's 1000th career RBI"
+play,7,1,browr001,00,,NP
+sub,chrij002,"Jason Christiansen",0,5,1
+play,7,1,browr001,00,,NP
+sub,zulej001,"Julio Zuleta",1,4,11
+play,7,1,zulej001,12,CBFS,K
+play,8,0,hernc001,00,,NP
+sub,mattg002,"Gary Jr. Matthews",1,9,7
+play,8,0,hernc001,00,,NP
+sub,farnk001,"Kyle Farnsworth",1,4,1
+play,8,0,hernc001,21,CBBX,D9
+play,8,0,satul001,00,,NP
+sub,edmoj001,"Jim Edmonds",0,8,11
+play,8,0,edmoj001,00,,NP
+sub,ohmaw001,"William Ohman",1,4,1
+play,8,0,edmoj001,30,BBBB,W
+play,8,0,clarw001,00,,NP
+sub,mcgwm001,"Mark McGwire",0,9,11
+play,8,0,mcgwm001,20,BBB,WP.2-3;1-2
+play,8,0,mcgwm001,30,BBBI,IW
+play,8,0,polap001,00,,NP
+sub,marre001,"Eli Marrero",0,9,12
+play,8,0,polap001,21,BCBX,62(3)/FO.2-3;1-2
+play,8,0,paquc001,00,,NP
+sub,rains001,"Steve Rain",1,4,1
+play,8,0,paquc001,00,X,FC4/GDP.3-H;1X2(46);2X3(65649);B-1#
+com,"$GDP since both retired runners forced"
+play,8,1,andrs001,00,,NP
+sub,edmoj001,"Jim Edmonds",0,8,8
+play,8,1,andrs001,00,,NP
+sub,marre001,"Eli Marrero",0,9,3
+play,8,1,andrs001,12,CFBX,S7
+play,8,1,pattc001,22,BSBCS,K
+play,8,1,bufod001,00,,NP
+sub,morrm001,"Matt Morris",0,1,1
+play,8,1,bufod001,00,,NP
+sub,vinaf001,"Fernando Vina",0,5,4
+play,8,1,bufod001,11,BFX,E6/G.1-3(E6)
+play,8,1,giraj001,00,,NP
+sub,reedj001,"Jeff Reed",1,8,11
+play,8,1,reedj001,22,BFFBS,K
+play,8,1,mattg002,32,BBFBFFX,S8.3-H(UR);1-3
+play,8,1,youne001,21,BBCC,SB2.3-H(E2/TH)(UR)
+play,8,1,youne001,22,BBCCX,53/G
+play,9,0,drewj001,00,,NP
+sub,reedj001,"Jeff Reed",1,8,2
+play,9,0,drewj001,00,,NP
+sub,heref001,"Felix Heredia",1,1,1
+play,9,0,drewj001,00,,NP
+sub,nievj002,"Jose Nieves",1,4,4
+play,9,0,drewj001,12,CBCX,3/G
+play,9,0,tatif001,20,BBX,8/F8S
+play,9,0,vinaf001,21,BBCX,8/F8
+play,9,1,gutir001,21,FBBX,53/G
+play,9,1,gracm001,32,CBFBBX,D9/9D
+play,9,1,nievj002,00,,NP
+sub,greew001,"Willie Greene",1,4,11
+play,9,1,greew001,00,,NP
+sub,meyec001,"Chad Meyers",1,3,12
+play,9,1,greew001,01,CX,63/G
+play,9,1,andrs001,02,SCX,53/G
+data,er,reamb001,0
+data,er,jamem001,1
+data,er,timlm001,0
+data,er,chrij002,0
+data,er,morrm001,0
+data,er,natij001,5
+data,er,spraj001,0
+data,er,farnk001,1
+data,er,ohmaw001,0
+data,er,rains001,0
+data,er,heref001,0

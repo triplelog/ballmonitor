@@ -1,0 +1,166 @@
+version,2
+info,visteam,SLN
+info,hometeam,SDN
+info,site,SAN01
+info,date,2000/06/12
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,cedeg901
+info,ump1b,welkt901
+info,ump2b,scotd901
+info,ump3b,hudsm901
+info,pitches,pitches
+info,temp,71
+info,winddir,tocf
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,211
+info,attendance,23359
+info,wp,benea001
+info,lp,clemm001
+info,save,
+start,vinaf001,"Fernando Vina",0,1,4
+start,rente001,"Edgar Renteria",0,2,6
+start,edmoj001,"Jim Edmonds",0,3,8
+start,mcgwm001,"Mark McGwire",0,4,3
+start,howat001,"Thomas Howard",0,5,9
+start,drewj001,"J.D. Drew",0,6,7
+start,mathm001,"Mike Matheny",0,7,2
+start,polap001,"Placido Polanco",0,8,5
+start,benea001,"Andy Benes",0,9,1
+start,owene001,"Eric Owens",1,1,9
+start,marta001,"Al Martin",1,2,7
+start,klesr001,"Ryan Klesko",1,3,3
+start,nevip001,"Phil Nevin",1,4,5
+start,river002,"Ruben Rivera",1,5,8
+start,boonb002,"Bret Boone",1,6,4
+start,gonzw001,"Wiki Gonzalez",1,7,2
+start,jackd003,"Damian Jackson",1,8,6
+start,clemm001,"Matt Clement",1,9,1
+com,"Protest=H"
+play,1,0,vinaf001,02,CFX,3/G
+play,1,0,rente001,00,X,13/G
+play,1,0,edmoj001,31,BCBBB,W
+play,1,0,mcgwm001,00,X,S7.1-2
+play,1,0,howat001,01,CX,S7.2-H;1-2
+play,1,0,drewj001,21,BCBH,HP.2-3;1-2
+play,1,0,mathm001,12,CBFS,K
+play,1,1,owene001,22,CCBFBX,63/G
+play,1,1,marta001,12,CCBFS,K
+play,1,1,klesr001,22,CBCBS,K
+play,2,0,polap001,01,CX,S
+play,2,0,benea001,21,BFBX,3/FL
+play,2,0,vinaf001,22,BFFFFFBX,E1/TH.1-2
+play,2,0,rente001,12,BCFS,K
+play,2,0,edmoj001,02,SFFS,K
+play,2,1,nevip001,00,X,63/G
+play,2,1,river002,32,BBBCCS,K
+play,2,1,boonb002,32,BBCBSX,8/F8
+play,3,0,mcgwm001,32,BCBBSB,W
+play,3,0,howat001,02,FFX,7/FL
+play,3,0,drewj001,20,BBX,6(1)3/GDP
+play,3,1,gonzw001,12,CCBX,S8
+play,3,1,jackd003,32,SBBCBFX,S9.1-2
+play,3,1,clemm001,00,X,43/G.2-3;1-2
+play,3,1,owene001,22,BBFFX,D9.3-H;2-H
+play,3,1,marta001,30,BBBB,W
+play,3,1,klesr001,22,CFBBS,K
+play,3,1,nevip001,21,BBCX,54(1)/FO.2-3
+play,4,0,mathm001,32,BLBBSB,W
+play,4,0,polap001,10,BX,9/F9
+play,4,0,benea001,32,CSBBBB,W.1-2
+play,4,0,vinaf001,21,BCBX,S9.2-3;1-2
+play,4,0,rente001,00,X,12(3)3/GDP
+play,4,1,river002,12,SSBFS,K
+play,4,1,boonb002,22,SCBBFFS,K
+play,4,1,gonzw001,12,CFBX,S7/7S
+play,4,1,jackd003,12,CSFFBFC,K/C
+play,5,0,edmoj001,32,BCBBCB,W
+play,5,0,mcgwm001,32,BBBCCX,9/F9
+play,5,0,howat001,12,CFBX,43/G.1-2
+play,5,0,drewj001,00,X,43/G
+play,5,1,clemm001,12,BCFS,K
+play,5,1,owene001,01,CX,53/G
+play,5,1,marta001,01,FX,7/F7
+play,6,0,mathm001,00,X,D/89D
+play,6,0,polap001,02,LFX,S4.2-H(E4/TH1);B-3
+com,"$game protested as throw hit towel in front of dugout"
+com,"and the umpires ruled it was in dugout"
+play,6,0,benea001,12,SBFS,K23
+play,6,0,vinaf001,21,SBBX,9/SF.3-H(UR)
+play,6,0,rente001,02,CFS,K
+play,6,1,klesr001,10,BX,HR/7
+play,6,1,nevip001,00,X,D9/9D
+play,6,1,river002,32,SBBBFS,K
+play,6,1,boonb002,22,BBSSS,K
+play,6,1,gonzw001,30,BBBB,W
+play,6,1,jackd003,32,BFBBCX,4/L4
+play,7,0,edmoj001,32,BBBCCB,W
+play,7,0,mcgwm001,20,BBX,HR/7.1-H
+play,7,0,howat001,00,,NP
+sub,almac001,"Carlos Almanzar",1,9,1
+play,7,0,howat001,01,SX,43/G
+play,7,0,drewj001,02,FFFX,8/F8S
+play,7,0,mathm001,21,BBSX,E6/TH
+play,7,0,polap001,02,SFX,9/F9
+play,7,1,almac001,00,,NP
+sub,magad001,"Dave Magadan",1,9,11
+play,7,1,magad001,00,,NP
+sub,sloch001,"Heathcliff Slocumb",0,9,1
+play,7,1,magad001,01,CX,13/G
+play,7,1,owene001,00,X,S
+play,7,1,marta001,00,,NP
+sub,orosj001,"Jesse Orosco",0,5,1
+play,7,1,marta001,00,,NP
+sub,davie001,"Eric Davis",0,9,9
+play,7,1,marta001,00,,NP
+sub,sprae001,"Ed Sprague",1,2,11
+play,7,1,sprae001,21,BCBB,SB2
+play,7,1,sprae001,32,BCBBCS,K
+play,7,1,klesr001,32,BBBSCB,W
+play,7,1,nevip001,00,,NP
+sub,benea002,"Alan Benes",0,5,1
+play,7,1,nevip001,31,BBBCX,9/F9
+play,8,0,davie001,00,,NP
+sub,sprae001,"Ed Sprague",1,2,7
+play,8,0,davie001,00,,NP
+sub,reyec001,"Carlos Reyes",1,9,1
+play,8,0,davie001,00,X,6/L6
+play,8,0,vinaf001,12,LBFFS,K
+play,8,0,rente001,11,CBX,E5/TH.B-2
+play,8,0,edmoj001,11,BCX,7/F7D
+play,8,1,river002,02,FCC,K/C
+play,8,1,boonb002,32,BCBBFX,8/F8
+play,8,1,gonzw001,22,SFBBX,S9
+play,8,1,jackd003,00,B,WP.1-2
+play,8,1,jackd003,22,BCFBX,13/G
+play,9,0,mcgwm001,01,SX,4/L4
+play,9,0,benea002,00,,NP
+sub,suttl001,"Larry Sutton",0,5,11
+play,9,0,suttl001,12,CSBX,S9
+play,9,0,drewj001,02,SFX,7/F7S
+play,9,0,mathm001,11,CBX,HR/78.1-H
+play,9,0,polap001,00,X,S9
+play,9,0,davie001,00,,NP
+sub,kolbb001,"Brandon Kolb",1,9,1
+play,9,0,davie001,00,X,64(1)/FO
+play,9,1,kolbb001,00,,NP
+sub,dehak001,"Kory DeHaan",1,9,11
+play,9,1,dehak001,00,,NP
+sub,vered001,"Dave Veres",0,5,1
+play,9,1,dehak001,22,BBCFX,7/F7S
+play,9,1,owene001,21,BCBX,13/G
+play,9,1,sprae001,32,SBSBBC,K/C
+data,er,benea001,3
+data,er,sloch001,0
+data,er,orosj001,0
+data,er,benea002,0
+data,er,vered001,0
+data,er,clemm001,4
+data,er,almac001,0
+data,er,reyec001,2
+data,er,kolbb001,0

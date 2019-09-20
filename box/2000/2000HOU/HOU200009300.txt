@@ -1,0 +1,165 @@
+version,2
+info,visteam,MIL
+info,hometeam,HOU
+info,site,HOU03
+info,date,2000/09/30
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,ripps901
+info,ump1b,tscht901
+info,ump2b,meric901
+info,ump3b,gibsg901
+info,pitches,pitches
+info,temp,82
+info,winddir,torf
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,173
+info,attendance,42161
+info,wp,millw001
+info,lp,haynj001
+info,save,doteo001
+start,grism001,"Marquis Grissom",0,1,8
+start,lopel002,"Luis Lopez",0,2,4
+start,jenkg001,"Geoff Jenkins",0,3,7
+start,sexsr001,"Richie Sexson",0,4,3
+start,burnj001,"Jeromy Burnitz",0,5,9
+start,houst001,"Tyler Houston",0,6,5
+start,hernj001,"Jose Hernandez",0,7,6
+start,browk004,"Kevin L. Brown",0,8,2
+start,haynj001,"Jimmy Haynes",0,9,1
+start,lugoj001,"Julio Lugo",1,1,6
+start,melum001,"Mitch Meluskey",1,2,2
+start,bagwj001,"Jeff Bagwell",1,3,3
+start,berkl001,"Lance Berkman",1,4,7
+start,hidar001,"Richard Hidalgo",1,5,8
+start,wardd002,"Daryle Ward",1,6,9
+start,trubc001,"Chris Truby",1,7,5
+start,gintk001,"Keith Ginter",1,8,4
+start,millw001,"Wade Miller",1,9,1
+play,1,0,grism001,10,BX,6/P6MD
+play,1,0,lopel002,11,CBX,3/P3L
+play,1,0,jenkg001,11,FBX,4/P3D
+play,1,1,lugoj001,32,BFFBBX,D8/8LS
+play,1,1,melum001,12,BCSX,7/F7D
+play,1,1,bagwj001,01,CX,6/P4MS
+play,1,1,berkl001,02,FCFX,6/P56D
+play,2,0,sexsr001,32,CSBBBB,W
+play,2,0,burnj001,12,FBFX,9/F9D
+play,2,0,houst001,02,CFC,K/C
+play,2,0,hernj001,11,CBX,54(1)/FO
+play,2,1,hidar001,32,BBFFBB,W
+play,2,1,wardd002,01,FX,T8/8RXD.1-H
+com,"$one hop onto the hill in center"
+play,2,1,trubc001,01,FX,53/G
+play,2,1,gintk001,12,BCFX,S8/G6M.3-H
+com,"$first ML hit"
+play,2,1,millw001,12,LBLL,K/BF
+play,2,1,lugoj001,21,BBCX,T9/89XD.1-H
+play,2,1,melum001,10,BX,3/3F
+play,3,0,browk004,00,X,9/F9LM
+play,3,0,haynj001,12,BSSS,K
+play,3,0,grism001,11,FBX,S8/8RM
+play,3,0,lopel002,01,FB,SB2
+play,3,0,lopel002,22,FBBFFFX,S8/G4M.2-H
+play,3,0,jenkg001,12,SSBS,K
+play,3,1,bagwj001,10,BX,13/G15S
+play,3,1,berkl001,11,BFX,63/G6
+play,3,1,hidar001,32,CBBSBFB,W
+play,3,1,wardd002,12,FBSX,S7/G56.1-2
+play,3,1,trubc001,12,SBFS,K23
+play,4,0,sexsr001,00,X,7/F78XD
+play,4,0,burnj001,32,BCBBFB,W
+play,4,0,houst001,00,X,D9/89.1-3
+play,4,0,hernj001,22,BSCBX,FC1/G25/R2.3-H;2-3;B-1
+play,4,0,browk004,12,FSFFBFS,K
+play,4,0,haynj001,00,X,53/G5S
+play,4,1,gintk001,22,BFBFC,K/C
+play,4,1,millw001,02,FCS,K
+play,4,1,lugoj001,32,BBCFBB,W
+play,4,1,melum001,00,X,8/F8RXD
+play,5,0,grism001,01,FX,63/G
+play,5,0,lopel002,12,CFBC,K/C
+play,5,0,jenkg001,01,FX,S7/L7S
+play,5,0,sexsr001,22,BSFBC,K/C
+play,5,1,bagwj001,01,FX,53/G
+play,5,1,berkl001,21,BSBX,D8/89S
+play,5,1,hidar001,00,X,S7.2-H;B-2(THH)
+play,5,1,wardd002,11,SBX,3/L3
+play,5,1,trubc001,10,BX,2/P2RF
+play,6,0,burnj001,11,SBX,5/FL
+play,6,0,houst001,00,X,S9
+play,6,0,hernj001,10,BX,64(1)3/GDP
+play,6,1,gintk001,32,CSBBBX,HR/78
+com,"$first home run"
+play,6,1,millw001,00,X,9/F9
+play,6,1,lugoj001,10,BX,S7
+play,6,1,melum001,10,BX,16(1)3/GDP
+play,7,0,browk004,12,BFSFC,K/C
+play,7,0,haynj001,00,,NP
+sub,sweem001,"Mark Sweeney",0,9,11
+play,7,0,sweem001,20,BBX,DGR/89
+play,7,0,grism001,01,CX,43/G.2-3
+play,7,0,lopel002,12,BFFX,43/G
+play,7,1,bagwj001,00,,NP
+sub,stule001,"Everett Stull",0,9,1
+play,7,1,bagwj001,01,FX,HR/9
+play,7,1,berkl001,20,BBX,HR/78
+play,7,1,hidar001,32,BCSBFBFX,63/G
+play,7,1,wardd002,02,FFFFS,K
+play,7,1,trubc001,32,CBBFBX,63/G
+play,8,0,jenkg001,00,,NP
+sub,hidar001,"Richard Hidalgo",1,5,9
+play,8,0,jenkg001,00,,NP
+sub,barkg001,"Glen Barker",1,6,8
+play,8,0,jenkg001,01,CX,S8
+play,8,0,sexsr001,32,BBCFFBB,W.1-2
+play,8,0,burnj001,00,,NP
+sub,franw001,"Wayne Franklin",1,9,1
+play,8,0,burnj001,00,X,9/F89S
+play,8,0,houst001,00,,NP
+sub,hayec001,"Charlie Hayes",0,6,11
+play,8,0,hayec001,00,,NP
+sub,slusj001,"Joe Slusarski",1,7,1
+play,8,0,hayec001,00,,NP
+sub,spieb001,"Bill Spiers",1,9,5
+play,8,0,hayec001,32,BCBCBX,S7/G56.2-H;1-2
+play,8,0,hernj001,12,CBFX,31/G.2-3;1-2
+play,8,0,browk004,00,,NP
+sub,casar001,"Raul Casanova",0,8,11
+play,8,0,casar001,00,X,D8/78D.3-H;2-H
+play,8,0,stule001,00,,NP
+sub,echea001,"Angel Echevarria",0,9,11
+play,8,0,echea001,00,X,FC5.2X3(5);B-1
+play,8,1,gintk001,00,,NP
+sub,hayec001,"Charlie Hayes",0,6,5
+play,8,1,gintk001,00,,NP
+sub,casar001,"Raul Casanova",0,8,2
+play,8,1,gintk001,00,,NP
+sub,leskc001,"Curtis Leskanic",0,9,1
+play,8,1,gintk001,10,BX,7/F7LM
+play,8,1,spieb001,31,CBBBB,W
+play,8,1,lugoj001,20,BBX,8/F8RS
+play,8,1,melum001,02,SSX,23/G2L
+play,9,0,grism001,32,BBSBSFX,S7/G6M
+play,9,0,lopel002,00,X,43/G.1-2
+play,9,0,jenkg001,00,,NP
+sub,doteo001,"Octavio Dotel",1,7,1
+play,9,0,jenkg001,12,BFFFFS,K+WP.2-3;B-1
+play,9,0,sexsr001,12,BFS1,POCS2(136)
+play,9,0,sexsr001,12,BFS1X,S8/89S.3-H
+play,9,0,burnj001,00,,NP
+sub,peres001,"Santiago Perez",0,4,12
+play,9,0,burnj001,32,BBFBFFB,W.1-2
+play,9,0,hayec001,02,SCS,K
+data,er,haynj001,5
+data,er,stule001,2
+data,er,leskc001,0
+data,er,millw001,4
+data,er,franw001,0
+data,er,slusj001,2
+data,er,doteo001,0

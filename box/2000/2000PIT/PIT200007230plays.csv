@@ -1,0 +1,69 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,10,1,,,,,0,2,BX,ritct001,1,0,gland001 grounds out. ,gland001,0,G
+,22,1,,,,,1,7,CBBFX,ritct001,1,0,moram001 grounds out. ,moram001,0,G
+,12,1,,abreb001,,,2,11,BCFX,ritct001,0,0,abreb001 doubles. ,abreb001,0,
+,12,1,,abreb001,,,3,15,BCFX,ritct001,1,0,roles001 grounds out. ,roles001,0,G
+,10,1,,,,,4,2,BX,schic002,1,0,,morrw001,1,F
+,31,1,kendj001,,,,5,7,BBBCB,schic002,0,0,kendj001 walks. ,kendj001,1,
+,00,1,,,,,6,8,X,schic002,2,0,Double Play. ,cordw001,1,
+,11,2,burrp001,,,,7,18,SBX,ritct001,0,0,burrp001 singles. ,burrp001,0,
+,32,2,burrp001,,,,8,25,BBBCFFX,ritct001,1,0,,duceb001,0,F
+burrp001 to 3B. ,12,2,ariaa001,,burrp001,,9,29,BFFX,ritct001,0,0,ariaa001 singles. ,ariaa001,0,
+,31,2,,ariaa001,burrp001,print001,10,34,BBBCS,ritct001,0,0,ariaa001 steals 2B. ,print001,0,
+burrp001 scores. ariaa001 scores. ,32,2,,,,,11,40,BBBCSX,ritct001,0,3,print001 homers. ,print001,0,
+,11,2,schic002,,,,12,43,BFX,ritct001,0,0,schic002 singles. ,schic002,0,
+schic002 to 2B. ,00,2,,schic002,,gland001,13,44,B,ritct001,0,0,Wild Pitch. ,gland001,0,
+,31,2,,schic002,,,14,49,BBBCX,ritct001,1,0,,gland001,0,F
+,02,2,,schic002,,,15,52,LFX,ritct001,1,0,,moram001,0,F
+,12,2,,,,,16,12,BFCX,schic002,1,0,,gileb002,1,
+,00,2,,,,,17,13,X,schic002,1,0,vandj001 grounds out. ,vandj001,1,G
+,10,2,,,,,18,15,BX,schic002,1,0,,browe001,1,F
+,02,3,,,,,19,55,CFC,ritct001,1,0,abreb001 strikes out. ,abreb001,0,
+,12,3,,,,,20,59,BFCS,ritct001,1,0,roles001 strikes out. ,roles001,0,
+,12,3,,,,,21,65,CSFFBX,ritct001,1,0,burrp001 grounds out. ,burrp001,0,G
+,10,3,ramia001,,,,22,17,BX,schic002,0,0,ramia001 singles. ,ramia001,1,
+,21,3,ramia001,,,,23,21,FBBX,schic002,1,0,,benjm001,1,F
+,22,3,ramia001,,,,24,26,LCBBS,schic002,1,0,ritct001 strikes out. ,ritct001,1,
+,21,3,ramia001,,,,25,30,CBBX,schic002,1,0,,morrw001,1,F
+,31,4,,,,,26,70,BCBBX,ritct001,1,0,duceb001 grounds out. ,duceb001,0,G
+,11,4,,,,,27,73,BFX,ritct001,1,0,,ariaa001,0,P
+,10,4,,,,,28,75,BX,ritct001,1,0,,print001,0,
+,22,4,,,,,29,36,CBFFBS,schic002,1,0,kendj001 strikes out. ,kendj001,1,
+,01,4,,,,,30,38,CX,schic002,1,0,,cordw001,1,P
+,21,4,,,,,31,42,BCBX,schic002,1,0,,gileb002,1,F
+,11,5,,,,,32,78,BCX,ritct001,1,0,schic002 grounds out. ,schic002,0,G
+,11,5,gland001,,,,33,81,BCX,ritct001,0,0,gland001 singles. ,gland001,0,
+,22,5,gland001,,,,34,86,CBBFS,ritct001,1,0,moram001 strikes out. ,moram001,0,
+,00,5,,,,abreb001,35,87,1,ritct001,1,0,gland001 picked off. ,abreb001,0,
+vandj001 out. ,21,5,,,,,36,46,BBCX,schic002,1,0,vandj001 reaches on error. ,vandj001,1,F
+,20,5,,,,,37,49,BBX,schic002,1,0,,browe001,1,F
+,20,5,,,,,38,52,BBX,schic002,1,0,ramia001 grounds out. ,ramia001,1,G
+,32,6,,,,,39,93,FFBBBS,ritct001,1,0,abreb001 strikes out. ,abreb001,0,
+,01,6,,,,,40,95,FX,ritct001,1,0,roles001 grounds out. ,roles001,0,G
+,02,6,,,,,41,98,CCC,ritct001,1,0,burrp001 strikes out. ,burrp001,0,
+,22,6,,,,,42,57,BFBSC,schic002,1,0,benjm001 strikes out. ,benjm001,1,
+,00,6,ritct001,,,,43,58,X,schic002,0,0,ritct001 singles. ,ritct001,1,
+ritct001 to 2B. ,10,6,morrw001,ritct001,,,44,60,BX,schic002,0,0,morrw001 singles. ,morrw001,1,
+ritct001 to 3B. morrw001 out. ,00,6,kendj001,,ritct001,,45,61,X,schic002,1,0,kendj001 reaches on fielder's choice. ,kendj001,1,
+kendj001 to 2B. ,32,6,cordw001,kendj001,ritct001,,46,67,BBBCFB,schic002,0,0,cordw001 walks. ,cordw001,1,
+ritct001 scores. kendj001 to 3B. cordw001 to 2B. ,30,6,gileb002,cordw001,kendj001,,47,71,BBBB,schic002,0,1,gileb002 walks. ,gileb002,1,
+,12,6,gileb002,cordw001,kendj001,,48,76,BCSFS,schic002,1,0,vandj001 strikes out. ,vandj001,1,
+,00,7,,,,,49,99,X,ritct001,1,0,,duceb001,0,F
+,02,7,,,,,50,102,CSX,ritct001,1,0,ariaa001 grounds out. ,ariaa001,0,G
+,21,7,,,,,51,106,BBFX,ritct001,0,1,print001 homers. ,print001,0,
+,21,7,,,,,52,110,BBFX,ritct001,1,0,,schic002,0,L
+,22,7,,,,,53,82,BBCCFS,schic002,1,0,browe001 strikes out. ,browe001,1,
+,12,7,,,,,54,87,BCSFC,schic002,1,0,ramia001 strikes out. ,ramia001,1,
+,21,7,,,,,55,91,CBBX,schic002,1,0,,benjm001,1,F
+,12,8,,,,,57,5,BSFFS,saues001,1,0,gland001 strikes out. ,gland001,0,
+,01,8,,,,,58,7,CX,saues001,1,0,moram001 grounds out. ,moram001,0,G
+,01,8,,,,,59,9,CX,saues001,1,0,abreb001 grounds out. ,abreb001,0,G
+,02,8,,,,,61,94,CSX,schic002,1,0,nunea001 grounds out. ,nunea001,1,G
+,11,8,,,,,62,97,CBX,schic002,1,0,,morrw001,1,F
+,01,8,,,,,63,99,CX,schic002,1,0,,kendj001,1,L
+,11,9,,,,,65,3,BCX,manzj001,1,0,,roles001,0,F
+,00,9,,,,,66,4,X,manzj001,1,0,,burrp001,0,F
+,10,9,,,,,67,6,BX,manzj001,1,0,,duceb001,0,L
+,01,9,,,,,70,101,CX,schic002,1,0,cordw001 grounds out. ,cordw001,1,G
+,22,9,,,,,71,106,CBBCX,schic002,1,0,,gileb002,1,F
+,12,9,,,,,72,110,BCSX,schic002,1,0,,vandj001,1,F

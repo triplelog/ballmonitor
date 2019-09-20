@@ -1,0 +1,182 @@
+version,2
+info,visteam,NYN
+info,hometeam,CHN
+info,site,CHI11
+info,date,2000/06/14
+info,number,0
+info,starttime,1:20PM
+info,daynight,day
+info,usedh,false
+info,umphome,wintm901
+info,ump1b,welkb901
+info,ump2b,froeb901
+info,ump3b,culbf901
+info,pitches,pitches
+info,temp,72
+info,winddir,ltor
+info,windspeed,14
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,220
+info,attendance,38625
+info,wp,ruscg001
+info,lp,garid001
+info,save,benia001
+start,moram002,"Melvin Mora",0,1,6
+start,belld001,"Derek Bell",0,2,9
+start,piazm001,"Mike Piazza",0,3,2
+start,zeilt001,"Todd Zeile",0,4,3
+start,ventr001,"Robin Ventura",0,5,5
+start,paytj001,"Jay Payton",0,6,8
+start,agbab001,"Benny Agbayani",0,7,7
+start,mcewj001,"Joe McEwing",0,8,4
+start,hampm001,"Mike Hampton",0,9,1
+start,youne001,"Eric Young",1,1,4
+start,giraj001,"Joe Girardi",1,2,2
+start,sosas001,"Sammy Sosa",1,3,9
+start,gracm001,"Mark Grace",1,4,3
+start,hillg001,"Glenallen Hill",1,5,7
+start,bufod001,"Damon Buford",1,6,8
+start,meyec001,"Chad Meyers",1,7,5
+start,ojeda001,"Augie Ojeda",1,8,6
+start,downs001,"Scott Downs",1,9,1
+com,"rain delays of 35 minutes in the first, 1:58 in the second"
+com,"and 50 minutes in the fourth"
+play,1,0,moram002,02,CSX,8/F8S
+play,1,0,belld001,30,BBBB,W
+play,1,0,piazm001,22,BFFBFFFX,8/F8
+play,1,0,zeilt001,32,BCCFFBBFS,K
+play,1,1,youne001,00,X,S
+play,1,1,giraj001,32,CBBFBF1,POCS2(136)
+play,1,1,giraj001,32,CBBFBF1B,W
+play,1,1,sosas001,32,CBCBBFX,S9/9S.1-2
+play,1,1,gracm001,22,FBBCX,S9/9S.2-H;1-2
+play,1,1,hillg001,22,SFBFBS,K
+play,1,1,bufod001,12,CFBS,K
+play,2,0,ventr001,21,BCBX,HR/9
+play,2,0,paytj001,12,BCFFX,S
+play,2,0,agbab001,01,CX,3/FL
+play,2,0,mcewj001,12,BFFFX,9/L9
+play,2,0,hampm001,32,FSBFBFFFBX,3/FL
+play,2,1,meyec001,00,,NP
+sub,mahop001,"Pat Mahomes",0,9,1
+play,2,1,meyec001,11,CBX,2/BP2
+play,2,1,ojeda001,01,CX,HR/9
+play,2,1,downs001,00,,NP
+sub,woodk002,"Kerry Wood",1,9,11
+play,2,1,woodk002,02,SFFS,K
+play,2,1,youne001,31,BBBCB,W
+play,2,1,giraj001,11,BFX,S7/7S.1-2
+play,2,1,sosas001,32,BBSBFX,8/F8
+play,3,0,moram002,00,,NP
+sub,garid001,"Daniel Garibay",1,9,1
+play,3,0,moram002,01,CX,53/G
+play,3,0,belld001,32,BBFFBS,K
+play,3,0,piazm001,22,CBSFBX,43/G
+play,3,1,gracm001,22,CCFBBX,9/F9
+play,3,1,hillg001,32,SSBBFBS,K
+play,3,1,bufod001,22,FBBFX,43/G
+play,4,0,zeilt001,32,BBBCFX,S
+play,4,0,ventr001,22,BBCCX,E4/G.1-2
+play,4,0,paytj001,32,CBFBBX,9/F9.2-3
+play,4,0,agbab001,02,SFX,7/SF.3-H(UR)
+play,4,0,mcewj001,10,BX,43/G
+play,4,1,meyec001,00,,NP
+sub,ruscg001,"Glendon Rusch",0,8,1
+play,4,1,meyec001,00,,NP
+sub,abbok002,"Kurt Abbott",0,9,4
+play,4,1,meyec001,00,X,D7/7S
+play,4,1,ojeda001,31,BBBCB,W
+play,4,1,garid001,11,CBX,54/SH.2-3;1-2
+play,4,1,youne001,12,CFFBX,4/SF.3-H
+play,4,1,giraj001,32,CBFBBX,S9/9S.2-H
+play,4,1,sosas001,30,BBBX,S8/8S.1-2
+play,4,1,gracm001,00,X,43/G
+play,5,0,abbok002,22,CBFBS,K
+play,5,0,moram002,22,CSBBX,S9
+play,5,0,belld001,02,FSS,K
+play,5,0,piazm001,02,SCX,HR/7.1-H
+play,5,0,zeilt001,20,BBX,D7
+play,5,0,ventr001,32,BBBCCX,3/G
+play,5,1,hillg001,22,FFFBFBC,K/C
+play,5,1,bufod001,12,BCFX,63/G
+play,5,1,meyec001,12,CBSC,K/C
+play,6,0,paytj001,21,BCBX,D7/7S
+play,6,0,agbab001,22,BBFSX,3/P3
+play,6,0,ruscg001,00,,NP
+sub,pratt001,"Todd Pratt",0,8,11
+play,6,0,pratt001,12,CBSX,E5/G
+play,6,0,abbok002,21,BCBX,D7/7S.2-H;1-3
+play,6,0,moram002,00,,NP
+sub,greew001,"Willie Greene",1,9,5
+play,6,0,moram002,00,,NP
+sub,karcm001,"Matt Karchner",1,7,1
+play,6,0,moram002,12,BCFX,D/78D.3-H(UR);2-H
+play,6,0,belld001,00,B,WP.2-3
+play,6,0,belld001,30,BBBX,63/G
+play,6,0,piazm001,20,BBX,S9.3-H(TUR)
+play,6,0,zeilt001,12,CBFX,D7.1-3
+play,6,0,ventr001,30,BBBB,W
+play,6,0,paytj001,01,SX,54(1)/FO
+play,6,1,ojeda001,00,,NP
+sub,wendt001,"Turk Wendell",0,8,1
+play,6,1,ojeda001,02,CFX,43/G
+play,6,1,greew001,00,X,7/F7
+play,6,1,youne001,02,CCX,T9/9D.BXH(96251)
+play,7,0,agbab001,32,BCBCFBX,HR/8
+play,7,0,wendt001,00,X,9/F9D
+play,7,0,abbok002,21,BFBX,8/F8
+play,7,0,moram002,22,SSBBC,K/C
+play,7,1,giraj001,11,BCX,S7/7S
+play,7,1,sosas001,12,BCCX,54(1)/FO
+play,7,1,gracm001,32,CBCBBX,D/78D.1-3
+play,7,1,hillg001,00,X,S8.3-H;2-3
+play,7,1,bufod001,01,CX,7/F7
+play,7,1,karcm001,00,,NP
+sub,mattg002,"Gary Jr. Matthews",1,7,11
+play,7,1,mattg002,31,BBBCB,W.1-2
+play,7,1,ojeda001,00,,NP
+sub,cookd001,"Dennis Cook",0,8,1
+play,7,1,ojeda001,22,BFFBX,S7.3-H;2-H;1-2
+play,7,1,greew001,11,BFX,S8.2-H;1-2
+play,7,1,youne001,32,BBCBFB,W.2-3;1-2
+play,7,1,giraj001,00,,NP
+sub,franj001,"John Franco",0,8,1
+play,7,1,giraj001,32,BCSFBBX,63/G
+play,8,0,belld001,00,,NP
+sub,worrt002,"Tim Worrell",1,7,1
+play,8,0,belld001,00,X,S7
+play,8,0,piazm001,00,X,4/P4
+play,8,0,zeilt001,32,BBFBCX,63/G.1-2
+play,8,0,ventr001,30,IIII,IW
+play,8,0,paytj001,31,CBBBX,3/P3
+play,8,1,sosas001,22,BCBCS,K
+play,8,1,gracm001,22,BCCFBX,43/G
+play,8,1,hillg001,00,,NP
+sub,benia001,"Armando Benitez",0,4,1
+play,8,1,hillg001,00,,NP
+sub,franm001,"Matt Franco",0,8,3
+play,8,1,hillg001,00,X,8/F8D
+play,9,0,agbab001,12,CBCX,HR/7
+play,9,0,franm001,00,X,8/F8D
+play,9,0,abbok002,12,FBSS,K
+play,9,0,moram002,22,BCFFBX,8/F8
+play,9,1,bufod001,21,BCBX,5/FL
+play,9,1,worrt002,00,,NP
+sub,browb003,"Brant Brown",1,7,11
+play,9,1,browb003,22,BCSFFBC,K/C
+play,9,1,ojeda001,00,,NP
+sub,rodrh001,"Henry Rodriguez",1,8,11
+play,9,1,rodrh001,12,SBCS,K
+data,er,hampm001,1
+data,er,mahop001,1
+data,er,ruscg001,2
+data,er,wendt001,4
+data,er,cookd001,0
+data,er,franj001,0
+data,er,benia001,0
+data,er,downs001,1
+data,er,garid001,4
+data,er,karcm001,2
+data,er,worrt002,1

@@ -1,0 +1,144 @@
+version,2
+info,visteam,BAL
+info,hometeam,TOR
+info,site,TOR02
+info,date,2000/07/22
+info,number,0
+info,starttime,4:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,wintm901
+info,ump1b,fichm901
+info,ump2b,barrt901
+info,ump3b,randt901
+info,pitches,pitches
+info,temp,72
+info,winddir,ltor
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,159
+info,attendance,27585
+info,wp,mercj001
+info,lp,loaie001
+info,save,
+start,andeb001,"Brady Anderson",0,1,8
+start,bordm001,"Mike Bordick",0,2,6
+start,deshd001,"Delino DeShields",0,3,4
+start,bellj002,"Albert Belle",0,4,9
+start,surhb001,"B.J. Surhoff",0,5,7
+start,clarw001,"Will Clark",0,6,3
+start,johnc002,"Charles Johnson",0,7,2
+start,bainh001,"Harold Baines",0,8,10
+start,coffi001,"Ivanon Coffie",0,9,5
+start,mercj001,"Jose Mercedes",0,0,1
+start,stews002,"Shannon Stewart",1,1,7
+start,bushh001,"Homer Bush",1,2,4
+start,batit001,"Tony Batista",1,3,5
+start,delgc001,"Carlos Delgado",1,4,3
+start,fullb001,"Brad Fullmer",1,5,10
+start,cruzj004,"Jose Cruz",1,6,8
+start,cordm001,"Marty Cordova",1,7,9
+start,casta001,"Alberto Castillo",1,8,2
+start,gonza001,"Alex S. Gonzalez",1,9,6
+start,loaie001,"Esteban Loaiza",1,0,1
+play,1,0,andeb001,01,FH,HP
+play,1,0,bordm001,31,BBBCS,CS2(24)
+play,1,0,bordm001,32,BBBCSFB,W
+play,1,0,deshd001,02,FCX,8/F8
+play,1,0,bellj002,11,BCX,D9.1-H
+play,1,0,surhb001,32,BBBCCX,43/G
+play,1,1,stews002,12,CFFBFX,53/G
+play,1,1,bushh001,01,FX,4/L4
+play,1,1,batit001,21,BBFX,S/78
+play,1,1,delgc001,02,CFFX,D7.1-3
+play,1,1,fullb001,21,SBBX,3/G
+play,2,0,clarw001,10,BX,S9/9S
+play,2,0,johnc002,22,SBSBS,K
+play,2,0,bainh001,32,CFBBFBX,D7/7D.1-3
+play,2,0,coffi001,01,FX,3/G.3-H;2-3
+play,2,0,andeb001,00,X,7/F7S
+play,2,1,cruzj004,21,SBBX,3/G
+play,2,1,cordm001,01,FX,53/G
+play,2,1,casta001,22,BCCBS,K
+play,3,0,bordm001,01,CX,S7
+play,3,0,deshd001,32,BBBCCFFX,3/FL
+play,3,0,bellj002,10,BX,D7/7S.1-3
+play,3,0,surhb001,01,SX,E3/TH.3-H;2-H;B-2
+com,"DV - 2nd run has to be UR"
+play,3,0,clarw001,02,FSX,7/F7S
+play,3,0,johnc002,01,CX,D7/7D.2-H(UR)
+play,3,0,bainh001,02,FFS,K
+play,3,1,gonza001,02,SSFFX,S9
+play,3,1,stews002,10,BX,6(1)3/GDP
+play,3,1,bushh001,20,BBX,S8
+play,3,1,batit001,12,BFFX,S8.1-3
+play,3,1,delgc001,02,CCX,6/L6
+play,4,0,coffi001,21,BBCX,63/G
+play,4,0,andeb001,22,BFFFBH,HP
+play,4,0,bordm001,22,CBFBX,46(1)3/GDP
+play,4,1,fullb001,00,X,43/G
+play,4,1,cruzj004,32,FBSBBB,W
+play,4,1,cordm001,10,BX,8/F8
+play,4,1,casta001,21,BBCX,7/F7
+play,5,0,deshd001,22,BCBCX,S
+play,5,0,bellj002,11,FBX,6/P6
+play,5,0,surhb001,31,BBFBC,SB2
+play,5,0,surhb001,32,BBFBCX,S7.2-H
+play,5,0,clarw001,00,X,S9/9S.1-2
+play,5,0,johnc002,02,SSFFS,K
+play,5,0,bainh001,10,BX,43/G
+play,5,1,gonza001,32,CBBBFFX,S7
+play,5,1,stews002,02,FSX,13/G.1-2
+play,5,1,bushh001,00,X,63/G
+play,5,1,batit001,12,CBFS,K
+play,6,0,coffi001,00,,NP
+sub,carpc002,"Chris Carpenter",1,0,1
+play,6,0,coffi001,22,BCBCX,43/G
+play,6,0,andeb001,02,FSS,K
+play,6,0,bordm001,10,BX,7/F7
+play,6,1,delgc001,11,BCX,3/G
+play,6,1,fullb001,00,X,HR/9
+play,6,1,cruzj004,11,BFX,3/G
+play,6,1,cordm001,12,CCBFFX,4/P4
+play,7,0,deshd001,31,BBFBX,9/F9S
+play,7,0,bellj002,32,BCCBFFBX,9/F9
+play,7,0,surhb001,10,BX,7/F7
+play,7,1,casta001,10,BX,8/F8
+play,7,1,gonza001,10,BX,7/F7
+play,7,1,stews002,11,FBX,63/G
+play,8,0,clarw001,12,CBCS,K
+play,8,0,johnc002,32,CBBFBX,63/G
+play,8,0,bainh001,00,X,S9
+play,8,0,coffi001,10,BX,D9/9S.1-3
+play,8,0,andeb001,01,CX,S7/7S.3-H;2-H
+play,8,0,bordm001,11,CBX,7/F7
+play,8,1,bushh001,00,,NP
+sub,milla001,"Alan Mills",0,0,1
+play,8,1,bushh001,00,X,S8
+play,8,1,batit001,12,CBFS,K
+play,8,1,delgc001,20,BBX,3/G.1-2
+play,8,1,fullb001,11,BCX,8/F8D
+play,9,0,deshd001,00,,NP
+sub,quanp001,"Paul Quantrill",1,0,1
+play,9,0,deshd001,11,FBX,31/G
+play,9,0,bellj002,21,CBBX,63/G
+play,9,0,surhb001,00,X,S7
+play,9,0,clarw001,00,X,53/G
+play,9,1,cruzj004,00,,NP
+sub,matol001,"Luis Matos",0,4,9
+play,9,1,cruzj004,00,,NP
+sub,mcelc001,"Chuck McElroy",0,0,1
+play,9,1,cruzj004,10,BX,8/F8
+play,9,1,cordm001,32,CCBBBX,HR/7
+play,9,1,casta001,00,,NP
+sub,greet003,"Todd Greene",1,8,11
+play,9,1,greet003,01,FX,7/F7S
+play,9,1,gonza001,31,BCBBX,63/G
+data,er,mercj001,1
+data,er,milla001,0
+data,er,mcelc001,1
+data,er,loaie001,5
+data,er,carpc002,2
+data,er,quanp001,0

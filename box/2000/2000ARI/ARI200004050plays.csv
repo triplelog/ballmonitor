@@ -1,0 +1,84 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,21,1,,,,,0,4,BFBX,stott001,1,0,,gland001,0,L
+,11,1,,,,,1,7,CBX,stott001,1,0,gantr001 grounds out. ,gantr001,0,G
+,20,1,,,,,2,10,BBX,stott001,1,0,abreb001 grounds out. ,abreb001,0,G
+,11,1,,,womat001,,3,3,BCX,byrdp001,0,0,womat001 triples. ,womat001,1,
+womat001 scores. ,01,1,,,,,4,5,FX,byrdp001,1,1,bellj001 hits sacrifice fly. ,bellj001,1,
+,30,1,gonzl001,,,,5,9,BBBB,byrdp001,0,0,gonzl001 walks. ,gonzl001,1,
+gonzl001 to 2B. ,32,1,durae001,gonzl001,,,6,18,CBFBFBFFB,byrdp001,0,0,durae001 walks. ,durae001,1,
+gonzl001 scores. durae001 to 3B. ,22,1,finls001,,durae001,,7,24,BCBSFX,byrdp001,0,1,finls001 singles. ,finls001,1,
+finls001 to 2B. ,32,1,lee-t002,finls001,durae001,,8,30,BBBCSB,byrdp001,0,0,lee-t002 walks. ,lee-t002,1,
+durae001 scores. finls001 scores. lee-t002 scores. ,01,1,,,,,9,32,FX,byrdp001,0,4,harrl001 homers. ,harrl001,1,
+,12,1,,,,,10,44,BFSFFFFFFFFX,byrdp001,1,0,,stink001,1,F
+,32,1,stott001,,,,11,50,CCBBBB,byrdp001,0,0,stott001 walks. ,stott001,1,
+,12,1,stott001,,,,13,4,FFBS,telea001,1,0,womat001 strikes out. ,womat001,1,
+,00,2,,,,,14,11,X,stott001,0,1,roles001 homers. ,roles001,0,
+,11,2,brogr001,,,,15,14,CBX,stott001,0,0,brogr001 singles. ,brogr001,0,
+brogr001 to 2B. ,20,2,liebm001,brogr001,,,16,17,BBX,stott001,0,0,liebm001 singles. ,liebm001,0,
+brogr001 scores. liebm001 to 3B. ,20,2,moram001,,liebm001,,17,20,BBX,stott001,0,1,moram001 singles. ,moram001,0,
+liebm001 scores. ,10,2,,,,,18,22,BX,stott001,2,1,Double Play. ,relad001,0,
+,32,2,telea001,,,,19,28,CBSBBB,stott001,0,0,telea001 walks. ,telea001,0,
+telea001 to 3B. ,01,2,gland001,,telea001,,20,30,LX,stott001,0,0,gland001 singles. ,gland001,0,
+,00,2,,gland001,telea001,gantr001,21,31,B,stott001,0,0,gland001 steals 2B. ,gantr001,0,
+,22,2,,gland001,telea001,,22,36,BBCSC,stott001,1,0,gantr001 strikes out. ,gantr001,0,
+,20,2,,,,,23,7,BBX,telea001,1,0,bellj001 grounds out. ,bellj001,1,G
+,32,2,,gonzl001,,,24,13,BBFBFX,telea001,0,0,gonzl001 doubles. ,gonzl001,1,
+gonzl001 to 3B. ,10,2,,,gonzl001,,25,15,BX,telea001,1,0,durae001 grounds out. ,durae001,1,G
+,02,2,,,gonzl001,,26,18,CCX,telea001,1,0,,finls001,1,F
+,31,3,abreb001,,,,27,41,BBBCB,stott001,0,0,abreb001 walks. ,abreb001,0,
+,12,3,,abreb001,,roles001,28,46,BFCFB,stott001,0,0,abreb001 steals 2B. ,roles001,0,
+,22,3,,abreb001,,,29,52,BFCFBS,stott001,1,0,roles001 strikes out. ,roles001,0,
+,21,3,,abreb001,,,30,56,BFBX,stott001,1,0,,brogr001,0,F
+,12,3,,abreb001,,,31,60,BCFS,stott001,1,0,liebm001 strikes out. ,liebm001,0,
+,32,3,lee-t002,,,,32,24,SCBBBB,telea001,0,0,lee-t002 walks. ,lee-t002,1,
+lee-t002 to 2B. ,32,3,harrl001,lee-t002,,,33,30,CBBBFB,telea001,0,0,harrl001 walks. ,harrl001,1,
+lee-t002 scores. harrl001 scores. ,21,3,,stink001,,,34,34,BBFX,telea001,0,2,stink001 doubles. ,stink001,1,
+,02,3,,stink001,,,35,37,FCS,telea001,1,0,stott001 strikes out. ,stott001,1,
+stink001 to 3B. ,12,3,,,stink001,,36,43,CBCFFX,telea001,1,0,womat001 grounds out. ,womat001,1,G
+,32,3,bellj001,,stink001,,37,51,BFBCBFFB,telea001,0,0,bellj001 walks. ,bellj001,1,
+,12,3,bellj001,,stink001,,38,55,BFCS,telea001,1,0,gonzl001 strikes out. ,gonzl001,1,
+,00,4,moram001,,,,39,61,X,stott001,0,0,moram001 reaches on error. ,moram001,0,G
+,22,4,moram001,,,,40,66,CBBFX,stott001,1,0,,relad001,0,F
+moram001 to 2B. ,32,4,duceb001,moram001,,,42,75,BBFFBFFFB,stott001,0,0,duceb001 walks. ,duceb001,0,
+,02,4,duceb001,moram001,,,43,79,SFFS,stott001,1,0,gland001 strikes out. ,gland001,0,
+,31,4,duceb001,moram001,,,44,84,BBSBX,stott001,1,0,,gantr001,0,F
+,30,4,durae001,,,,46,4,BBBB,millt002,0,0,durae001 walks. ,durae001,1,
+durae001 to 2B. ,12,4,,durae001,,,47,8,CBCX,millt002,1,0,finls001 grounds out. ,finls001,1,G
+durae001 to 3B. ,10,4,,,durae001,,48,10,BX,millt002,1,0,lee-t002 grounds out. ,lee-t002,1,G
+,11,4,,,durae001,,49,13,SBX,millt002,1,0,harrl001 grounds out. ,harrl001,1,G
+,22,5,,,,,50,90,CBBCFX,stott001,1,0,,abreb001,0,F
+,01,5,,roles001,,,51,92,FX,stott001,0,0,roles001 doubles. ,roles001,0,
+,21,5,,roles001,,,52,96,FBBX,stott001,1,0,,brogr001,0,F
+,20,5,,roles001,,,53,99,BBX,stott001,1,0,,liebm001,0,F
+,10,5,,,,,54,15,BX,millt002,1,0,,stink001,1,F
+,32,5,,,,,56,21,BBCBFS,millt002,1,0,gilkb001 strikes out. ,gilkb001,1,
+,01,5,,,,,57,23,CX,millt002,1,0,,womat001,1,
+,00,6,,,,,59,1,X,morgm001,1,0,moram001 grounds out. ,moram001,0,G
+,22,6,,,,,60,6,BBCFX,morgm001,1,0,,relad001,0,L
+,01,6,,,,,62,8,CX,morgm001,1,0,,sefck001,0,P
+,11,6,bellj001,,,,64,3,FBX,aldrs001,0,0,bellj001 singles. ,bellj001,1,
+,10,6,bellj001,,,,65,5,BX,aldrs001,1,0,,gonzl001,1,F
+,32,6,bellj001,,,,66,11,CBBBFX,aldrs001,1,0,,durae001,1,F
+,12,6,bellj001,,,,67,15,FFBS,aldrs001,1,0,finls001 strikes out. ,finls001,1,
+,00,7,gland001,,,,68,9,X,morgm001,0,0,gland001 singles. ,gland001,0,
+gland001 to 2B. ,22,7,gantr001,gland001,,,69,14,CBCBX,morgm001,0,0,gantr001 singles. ,gantr001,0,
+gland001 to 3B. ,10,7,,,gland001,,70,16,BX,morgm001,2,0,Double Play. ,abreb001,0,
+,12,7,,,gland001,,71,20,CCBS,morgm001,1,0,roles001 strikes out. ,roles001,0,
+,01,7,,,,,73,2,FX,gomew001,0,1,lee-t002 homers. ,lee-t002,1,
+,00,7,,,,,74,3,X,gomew001,1,0,,harrl001,1,F
+,22,7,stink001,,,,75,9,BSSBFX,gomew001,0,0,stink001 singles. ,stink001,1,
+stink001 to 2B. ,01,7,morgm001,stink001,,,76,11,SX,gomew001,0,0,morgm001 singles. ,morgm001,1,
+,12,7,,stink001,,,77,16,FBSFX,gomew001,2,0,Double Play. ,womat001,1,
+,31,8,,,,,78,25,BBBCX,morgm001,1,0,brogr001 grounds out. ,brogr001,0,G
+,12,8,,,,,79,30,CSBFC,morgm001,1,0,liebm001 strikes out. ,liebm001,0,
+,12,8,,,,,80,34,CBCX,morgm001,1,0,moram001 grounds out. ,moram001,0,G
+,22,8,,,,,83,8,BBCFFFFS,bullk001,1,0,bellj001 strikes out. ,bellj001,1,
+,20,8,gonzl001,,,,84,11,BBX,bullk001,0,0,gonzl001 singles. ,gonzl001,1,
+gonzl001 to 2B. ,32,8,durae001,gonzl001,,,85,18,CBBFBFX,bullk001,0,0,durae001 singles. ,durae001,1,
+gonzl001 scores. durae001 to 3B. ,11,8,finls001,,durae001,,86,21,BFX,bullk001,0,1,finls001 singles. ,finls001,1,
+durae001 scores. ,21,8,finls001,,,,87,25,BCBX,bullk001,1,1,lee-t002 hits sacrifice fly. ,lee-t002,1,
+,21,8,finls001,,,,88,29,BBCX,bullk001,1,0,harrl001 grounds out. ,harrl001,1,G
+,12,9,,,,,89,38,CBFX,morgm001,1,0,relad001 grounds out. ,relad001,0,G
+,11,9,ariaa001,,,,91,41,CBX,morgm001,0,0,ariaa001 singles. ,ariaa001,0,
+,32,9,ariaa001,,,,92,47,CBBBCX,morgm001,1,0,,gland001,0,F
+,10,9,ariaa001,,,,93,49,BX,morgm001,1,0,gantr001 grounds out. ,gantr001,0,G

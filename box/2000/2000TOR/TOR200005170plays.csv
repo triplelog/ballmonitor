@@ -1,0 +1,78 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,00,1,offej001,,,,0,1,X,carpc002,0,0,offej001 reaches on error. ,offej001,0,G
+offej001 to 3B. ,32,1,,,offej001,,1,8,LBCFBBX,carpc002,1,0,lewid001 grounds out. ,lewid001,0,G
+offej001 scores. ,01,1,,nixot001,,,2,10,CX,carpc002,0,1,nixot001 doubles. ,nixot001,0,
+nixot001 to 3B. ,12,1,,,nixot001,,3,14,CBCX,carpc002,1,0,daubb001 grounds out. ,daubb001,0,G
+nixot001 scores. ,00,1,,,,everc001,4,15,B,carpc002,0,1,Passed Ball. ,everc001,0,
+,12,1,,,,,5,20,BCSFS,carpc002,1,0,everc001 strikes out. ,everc001,0,
+,12,1,,,,,6,4,BFCX,martp001,1,0,,stews002,1,
+,22,1,,,,,7,9,BBFSX,martp001,1,0,cruzj004 grounds out. ,cruzj004,1,G
+,12,1,,,,,8,13,CCBC,martp001,1,0,mondr002 strikes out. ,mondr002,1,
+,00,2,,,,,9,21,X,carpc002,1,0,,oleat001,0,L
+,22,2,,,,,10,27,BBFCFX,carpc002,1,0,,veraw001,0,F
+,22,2,,,,,11,32,CFBBS,carpc002,1,0,hatts001 strikes out. ,hatts001,0,
+,02,2,,delgc001,,,12,17,SFFX,martp001,0,0,delgc001 doubles. ,delgc001,1,
+,01,2,fullb001,delgc001,,,13,19,SH,martp001,0,0,fullb001 hit by pitch. ,fullb001,1,
+,22,2,fullb001,delgc001,,,14,24,BSFBS,martp001,1,0,batit001 strikes out. ,batit001,1,
+,00,2,,delgc001,,,15,25,X,martp001,2,0,Double Play. ,fletd001,1,
+,10,3,sadld001,,,,16,34,BX,carpc002,0,0,sadld001 singles. ,sadld001,0,
+,01,3,sadld001,,,,17,36,FX,carpc002,1,0,,offej001,0,F
+sadld001 to 2B. ,10,3,lewid001,sadld001,,,18,38,BX,carpc002,0,0,lewid001 singles. ,lewid001,0,
+sadld001 scores. lewid001 to 3B. ,21,3,,nixot001,lewid001,,19,42,FBBX,carpc002,0,1,nixot001 doubles. ,nixot001,0,
+nixot001 out. daubb001 to 1B. ,00,3,daubb001,,lewid001,,20,43,X,carpc002,1,0,daubb001 hits into a fielder's choice. ,daubb001,0,
+lewid001 scores. daubb001 to 2B. ,00,3,everc001,daubb001,,,21,44,X,carpc002,0,1,everc001 singles. ,everc001,0,
+daubb001 scores. everc001 to 3B. ,01,3,oleat001,,everc001,,22,46,CX,carpc002,0,1,oleat001 singles. ,oleat001,0,
+everc001 scores. oleat001 to 3B. ,00,3,veraw001,,oleat001,,23,47,X,carpc002,0,1,veraw001 singles. ,veraw001,0,
+,32,3,veraw001,,oleat001,,24,53,BBSSBS,carpc002,1,0,hatts001 strikes out. ,hatts001,0,
+,12,3,,,,,27,29,CBFC,martp001,1,0,gonza001 strikes out. ,gonza001,1,
+,02,3,bushh001,,,,28,32,FSH,martp001,0,0,bushh001 hit by pitch. ,bushh001,1,
+,20,3,bushh001,,,,29,35,BBX,martp001,1,0,,stews002,1,F
+,32,3,bushh001,,,,30,41,BSSBBC,martp001,1,0,cruzj004 strikes out. ,cruzj004,1,
+,11,4,,,,,31,56,CBX,carpc002,1,0,sadld001 grounds out. ,sadld001,0,G
+,12,4,,,,,32,61,BCCFC,carpc002,1,0,offej001 strikes out. ,offej001,0,
+,32,4,,,,,33,68,BSBSFBX,carpc002,1,0,,alexm001,0,
+,22,4,,,,,34,46,FBBSX,martp001,1,0,,mondr002,1,L
+,32,4,delgc001,,,,35,52,BSBCBB,martp001,0,0,delgc001 walks. ,delgc001,1,
+delgc001 to 2B. ,00,4,fullb001,delgc001,,,36,53,X,martp001,0,0,fullb001 singles. ,fullb001,1,
+,01,4,,delgc001,,,37,55,SX,martp001,2,0,Double Play. ,batit001,1,
+,00,5,,,,,38,69,X,carpc002,1,0,nixot001 grounds out. ,nixot001,0,G
+,01,5,daubb001,,,,39,71,CX,carpc002,0,0,daubb001 singles. ,daubb001,0,
+,22,5,daubb001,,,,40,76,SBSBS,carpc002,1,0,everc001 strikes out. ,everc001,0,
+,10,5,daubb001,,,,41,78,BX,carpc002,1,0,,oleat001,0,P
+,22,5,,,,,42,60,BBFSS,martp001,1,0,fletd001 strikes out. ,fletd001,1,
+,21,5,,,,,43,64,BBCX,martp001,1,0,gonza001 grounds out. ,gonza001,1,G
+,12,5,,,,,44,69,CFBFS,martp001,1,0,bushh001 strikes out. ,bushh001,1,
+,21,6,veraw001,,,,45,82,BFBX,carpc002,0,0,veraw001 singles. ,veraw001,0,
+,10,6,,,,,46,84,BX,carpc002,2,0,Double Play. ,hatts001,0,
+,31,6,,sadld001,,,47,89,CBBBX,carpc002,0,0,sadld001 doubles. ,sadld001,0,
+,22,6,,sadld001,,,48,94,CBBFS,carpc002,1,0,offej001 strikes out. ,offej001,0,
+,11,6,stews002,,,,49,72,CBX,martp001,0,0,stews002 singles. ,stews002,1,
+,01,6,,,,,50,74,FX,martp001,2,0,Double Play. ,cruzj004,1,
+,00,6,,,,,51,75,X,martp001,1,0,,mondr002,1,F
+,10,7,,,,,52,96,BX,carpc002,1,0,,alexm001,0,F
+,22,7,,,,,53,101,BSCBC,carpc002,1,0,nixot001 strikes out. ,nixot001,0,
+,21,7,,,,,54,105,BBCX,carpc002,1,0,,daubb001,0,
+,32,7,delgc001,,,,55,81,BCBBFB,martp001,0,0,delgc001 walks. ,delgc001,1,
+,00,7,delgc001,,,,56,82,X,martp001,1,0,,fullb001,1,F
+,02,7,delgc001,,,,57,87,CSFFX,martp001,1,0,,batit001,1,F
+,12,7,delgc001,,,,58,91,FBFX,martp001,1,0,,fletd001,1,P
+,00,8,everc001,,,,60,1,X,gunde001,0,0,everc001 singles. ,everc001,0,
+everc001 to 2B. ,00,8,oleat001,everc001,,,61,2,X,gunde001,0,0,oleat001 reaches on error. ,oleat001,0,
+oleat001 to 2B. everc001 out. ,01,8,veraw001,oleat001,,,62,4,SX,gunde001,1,0,veraw001 reaches on fielder's choice. ,veraw001,0,
+oleat001 scores. veraw001 to 2B. ,10,8,hatts001,veraw001,,,63,6,BX,gunde001,0,1,hatts001 singles. ,hatts001,0,
+veraw001 to 3B. hatts001 to 2B. ,00,8,sadld001,hatts001,veraw001,,64,7,X,gunde001,0,0,sadld001 singles. ,sadld001,0,
+veraw001 scores. hatts001 to 3B. sadld001 to 2B. ,12,8,offej001,sadld001,hatts001,,65,13,CCFBFX,gunde001,0,1,offej001 singles. ,offej001,0,
+,32,8,offej001,sadld001,hatts001,,67,6,BBBCFS,munrp001,1,0,alexm001 strikes out. ,alexm001,0,
+,22,8,offej001,sadld001,hatts001,,68,12,CBBCFX,munrp001,1,0,,nixot001,0,
+,02,8,,,,,70,3,CSX,roseb002,1,0,gonza001 grounds out. ,gonza001,1,G
+,22,8,,,,,71,8,FBFBX,roseb002,1,0,bushh001 grounds out. ,bushh001,1,G
+,11,8,stews002,,,,72,11,FBX,roseb002,0,0,stews002 singles. ,stews002,1,
+,21,8,stews002,,,,73,15,BCBX,roseb002,1,0,,cruzj004,1,
+,02,9,,,,,75,3,FSS,kochb001,1,0,daubb001 strikes out. ,daubb001,0,
+,12,9,everc001,,,,76,8,SSBFX,kochb001,0,0,everc001 singles. ,everc001,0,
+,22,9,sheea001,,,,78,13,BBFFS,kochb001,1,0,oleat001 strikes out. ,oleat001,0,
+,12,9,sheea001,,,,79,17,CBSX,kochb001,1,0,veraw001 grounds out. ,veraw001,0,G
+,30,9,mondr002,,,,81,4,BBBB,yount001,0,0,mondr002 walks. ,mondr002,1,
+,22,9,mondr002,,,,82,10,CBSBFS,yount001,1,0,delgc001 strikes out. ,delgc001,1,
+,22,9,mondr002,,,,83,15,CBBSS,yount001,1,0,fullb001 strikes out. ,fullb001,1,
+,01,9,mondr002,,,,84,17,SX,yount001,1,0,,batit001,1,F

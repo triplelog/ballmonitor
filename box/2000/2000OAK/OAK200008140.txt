@@ -1,0 +1,146 @@
+version,2
+info,visteam,CLE
+info,hometeam,OAK
+info,site,OAK01
+info,date,2000/08/14
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,coope901
+info,ump1b,vanvm901
+info,ump2b,reilm901
+info,ump3b,kellj901
+info,pitches,pitches
+info,temp,68
+info,winddir,torf
+info,windspeed,12
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,188
+info,attendance,12799
+info,wp,appik001
+info,lp,berej002
+info,save,
+start,loftk001,"Kenny Lofton",0,1,8
+start,vizqo001,"Omar Vizquel",0,2,6
+start,alomr001,"Roberto Alomar",0,3,4
+start,thomj002,"Jim Thome",0,4,3
+start,segud001,"David Segui",0,5,10
+start,cordw001,"Wil Cordero",0,6,7
+start,frymt001,"Travis Fryman",0,7,5
+start,selbb001,"Bill Selby",0,8,9
+start,aloms001,"Sandy Alomar",0,9,2
+start,berej002,"Jason Bere",0,0,1
+start,velar001,"Randy Velarde",1,1,4
+start,tejam001,"Miguel Tejada",1,2,6
+start,giamj001,"Jason Giambi",1,3,3
+start,grieb001,"Ben Grieve",1,4,7
+start,longt002,"Terrence Long",1,5,8
+start,stanm002,"Mike Stanley",1,6,10
+start,staim001,"Matt Stairs",1,7,9
+start,chave001,"Eric Chavez",1,8,5
+start,hernr002,"Ramon Hernandez",1,9,2
+start,appik001,"Kevin Appier",1,0,1
+play,1,0,loftk001,10,BX,5/FL
+play,1,0,vizqo001,21,CBBX,6/L6
+play,1,0,alomr001,20,BBX,7/F7
+play,1,1,velar001,02,CCX,63/G
+play,1,1,tejam001,00,X,S7/7S
+play,1,1,giamj001,32,SBBSBFFX,S9.1-3
+play,1,1,grieb001,11,BCX,36(1)3/GDP.3-H
+play,2,0,thomj002,02,SFC,K/C
+play,2,0,segud001,01,FX,S7/7S
+play,2,0,cordw001,22,CSBBX,54(1)/FO
+play,2,0,frymt001,32,CSBBFBB,W.1-2
+play,2,0,selbb001,00,X,9/F9S
+play,2,1,longt002,31,BBBCX,T9
+play,2,1,stanm002,21,BSBX,8/SF.3-H
+play,2,1,staim001,22,FBBSS,K
+play,2,1,chave001,12,SBSFS,K
+play,3,0,aloms001,00,X,63/G
+play,3,0,loftk001,01,CX,9/F9D
+play,3,0,vizqo001,11,BCX,S9
+play,3,0,alomr001,32,BBCCBB,W.1-2
+play,3,0,thomj002,10,BX,43/G
+play,3,1,hernr002,32,CBBCBX,3/FL
+play,3,1,velar001,01,CX,S5.B-3(E5/TH1)
+play,3,1,tejam001,02,CFX,S9.3-H(UR)
+play,3,1,giamj001,32,CCBBBS,K
+play,3,1,grieb001,10,BX,9/F9
+play,4,0,segud001,00,,NP
+sub,giamj002,"Jeremy Giambi",1,3,3
+com,"$Jason Giambi left with strained left shoulder"
+play,4,0,segud001,32,CBSBBFFX,S8
+play,4,0,cordw001,02,SCX,16(1)3/GDP
+play,4,0,frymt001,31,BCBBB,W
+play,4,0,selbb001,12,CSBX,S/78.1-2
+play,4,0,aloms001,20,BBX,8/L8
+com,"great diving catch, Long injured rib, left game"
+play,4,1,longt002,02,CCX,S8
+play,4,1,stanm002,32,CSFBFBFBX,S/78.1-3
+play,4,1,staim001,00,X,46(1)/FO.3-H
+play,4,1,chave001,21,BBCX,HR/8.1-H
+play,4,1,hernr002,12,BCCFX,63/G
+play,4,1,velar001,22,BCSBFX,7/L7
+play,5,0,loftk001,00,,NP
+sub,chrir001,"Ryan Christenson",1,5,8
+play,5,0,loftk001,01,LX,8/F8
+play,5,0,vizqo001,12,CSBX,43/G
+play,5,0,alomr001,01,CX,HR/9
+play,5,0,thomj002,01,CX,D/89D
+play,5,0,segud001,31,BBBCB,W
+play,5,0,cordw001,32,BBBCFS,K
+play,5,1,tejam001,00,,NP
+sub,martt003,"Tom Martin",0,0,1
+play,5,1,tejam001,22,BSFBX,7/F7D
+play,5,1,giamj002,02,CSX,3/G
+play,5,1,grieb001,02,CCS,K
+play,6,0,frymt001,32,BFBBFFX,3/FL
+play,6,0,selbb001,22,CBBSS,K
+play,6,0,aloms001,11,CBX,S/78
+play,6,0,loftk001,32,BSBBFX,7/F7
+play,6,1,chrir001,10,BX,8/F8
+play,6,1,stanm002,20,BBX,HR/9
+play,6,1,staim001,00,X,S9
+play,6,1,chave001,21,BFBX,S8.1-2
+play,6,1,hernr002,00,,NP
+sub,brewj001,"Jamie Brewington",0,0,1
+play,6,1,hernr002,02,SCX,S9/9S.2-H;1-2
+play,6,1,velar001,10,BX,9/F9
+play,6,1,tejam001,22,CBBSFFX,4/P4
+play,7,0,vizqo001,31,BCBBX,S/78
+play,7,0,alomr001,00,,NP
+sub,mecij001,"Jim Mecir",1,0,1
+play,7,0,alomr001,02,SCS,K
+play,7,0,thomj002,32,BBCBFB,W.1-2
+play,7,0,segud001,02,FCC,K/C
+play,7,0,cordw001,22,BSCBFS,K
+play,7,1,giamj002,00,,NP
+sub,cabrj002,"Jolbert Cabrera",0,2,6
+play,7,1,giamj002,00,,NP
+sub,selbb001,"Bill Selby",0,8,4
+play,7,1,giamj002,00,,NP
+sub,perrc001,"Chan Perry",0,3,9
+play,7,1,giamj002,32,FFFBBFFBX,S
+play,7,1,grieb001,12,BFCX,16(1)3/GDP
+play,7,1,chrir001,11,BCX,7/F7
+play,8,0,frymt001,01,CX,13/G
+play,8,0,selbb001,32,BCBBSS,K
+play,8,0,aloms001,00,X,E5/TH
+play,8,0,loftk001,12,SBCX,6(1)/FO/G
+play,8,1,stanm002,20,BBX,63/G
+play,8,1,staim001,22,FBFBS,K
+play,8,1,chave001,22,BFFBS,K
+play,9,0,cabrj002,00,,NP
+sub,joned001,"Doug Jones",1,0,1
+play,9,0,cabrj002,12,BSSX,7/F7
+play,9,0,perrc001,12,CBSFS,K
+play,9,0,thomj002,22,BCFBS,K
+data,er,berej002,5
+data,er,martt003,2
+data,er,brewj001,0
+data,er,appik001,1
+data,er,mecij001,0
+data,er,joned001,0

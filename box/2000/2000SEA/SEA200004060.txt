@@ -1,0 +1,145 @@
+version,2
+info,visteam,BOS
+info,hometeam,SEA
+info,site,SEA03
+info,date,2000/04/06
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,cousd901
+info,ump1b,marqa901
+info,ump2b,brinj901
+info,ump3b,nelsj901
+info,pitches,pitches
+info,temp,50
+info,winddir,ltor
+info,windspeed,4
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,186
+info,attendance,25121
+info,wp,mesaj001
+info,lp,florb001
+info,save,sasak001
+start,offej001,"Jose Offerman",0,1,4
+start,nixot001,"Trot Nixon",0,2,9
+start,everc001,"Carl Everett",0,3,8
+start,garcn001,"Nomar Garciaparra",0,4,6
+start,oleat001,"Troy O'Leary",0,5,7
+start,stanm002,"Mike Stanley",0,6,3
+start,daubb001,"Brian Daubach",0,7,10
+start,varij001,"Jason Varitek",0,8,2
+start,alexm001,"Manny Alexander",0,9,5
+start,fassj001,"Jeff Fassero",0,0,1
+start,mclem001,"Mark McLemore",1,1,7
+start,javis001,"Stan Javier",1,2,10
+start,rodra001,"Alex Rodriguez",1,3,6
+start,olerj001,"John Olerud",1,4,3
+start,buhnj001,"Jay Buhner",1,5,9
+start,camem001,"Mike Cameron",1,6,8
+start,belld002,"David Bell",1,7,4
+start,wilsd001,"Dan Wilson",1,8,2
+start,guilc001,"Carlos Guillen",1,9,5
+start,selea001,"Aaron Sele",1,0,1
+play,1,0,offej001,22,BFSBFS,K23
+play,1,0,nixot001,31,BBBCX,7/F7D
+play,1,0,everc001,32,CBBBCB,W
+play,1,0,garcn001,11,CBX,S7.1-2
+play,1,0,oleat001,12,BCCX,9/L9
+play,1,1,mclem001,31,CBBBB,W
+play,1,1,javis001,02,CF1,POCS2(164)
+play,1,1,javis001,02,CF1X,43/G
+play,1,1,rodra001,31,BCBBB,W
+play,1,1,olerj001,31,BBBCX,3/G
+play,2,0,stanm002,31,CBBBB,W
+play,2,0,daubb001,00,X,7/F7
+play,2,0,varij001,32,CBCBBX,43(B)6(1)/GDP
+play,2,1,buhnj001,00,X,S9
+play,2,1,camem001,32,BBBCFFX,46(1)3/GDP
+play,2,1,belld002,01,CX,43/G
+play,3,0,alexm001,12,CBSX,43/G
+play,3,0,offej001,32,CBBBFS,K
+play,3,0,nixot001,10,BX,HR/9
+play,3,0,everc001,22,BSBCX,S9/9S
+play,3,0,garcn001,22,CSBFBFS,K
+play,3,1,wilsd001,32,CFBBBX,8/F8
+play,3,1,guilc001,32,CBFBFBX,63/G
+play,3,1,mclem001,30,BBBB,W
+play,3,1,javis001,22,CCBBB,SB2
+play,3,1,javis001,32,CCBBBFB,W
+play,3,1,rodra001,32,BBBCSB,W.2-3;1-2
+play,3,1,olerj001,22,FBBFX,8/F8
+play,4,0,oleat001,00,X,43/G
+play,4,0,stanm002,22,BCFBX,7/F7
+play,4,0,daubb001,11,CBX,S7
+play,4,0,varij001,31,SBBBX,8/F8D
+play,4,1,buhnj001,12,SBFX,63/G
+play,4,1,camem001,01,CX,8/F8D
+play,4,1,belld002,01,FX,S9
+play,4,1,wilsd001,00,X,13/G
+play,5,0,alexm001,00,X,9/F9
+play,5,0,offej001,32,CBBSBB,W
+play,5,0,nixot001,22,BBCCX,46(1)3/GDP
+play,5,1,guilc001,11,CBX,53/G
+play,5,1,mclem001,32,CFBBBS,K
+play,5,1,javis001,31,BBBCB,W
+play,5,1,rodra001,12,SCFBX,D7.1-H
+play,5,1,olerj001,32,CSFBBBX,53/G
+play,6,0,everc001,31,FBBBX,S9
+play,6,0,garcn001,21,BCBX,53/G.1-2
+play,6,0,oleat001,32,BCBFFBX,63/G.2-3
+play,6,0,stanm002,30,BBBB,W
+play,6,0,daubb001,11,CBX,S9/9S.3-H;1-2
+play,6,0,varij001,21,BCBX,7/F7
+play,6,1,buhnj001,00,,NP
+sub,florb001,"Bryce Florie",0,0,1
+play,6,1,buhnj001,22,BFSBC,K/C
+play,6,1,camem001,21,CBBX,53/G
+play,6,1,belld002,00,X,3/FL
+play,7,0,alexm001,00,,NP
+sub,mesaj001,"Jose Mesa",1,0,1
+play,7,0,alexm001,01,CX,13/G
+play,7,0,offej001,10,BX,8/F8
+play,7,0,nixot001,22,BSFBS,K
+play,7,1,wilsd001,31,BBCBB,W
+play,7,1,guilc001,02,LLS,K
+play,7,1,mclem001,30,BBBB,W.1-2
+play,7,1,javis001,22,CSBBFX,S7.2-3;1-2
+play,7,1,rodra001,11,BCX,E4/G.3-H;2-3;1-2
+play,7,1,olerj001,00,,NP
+sub,cormr001,"Rheal Cormier",0,0,1
+play,7,1,olerj001,00,X,3/G.3-H(UR);2-3;1-2
+play,7,1,buhnj001,10,BX,5/P5
+play,8,0,everc001,00,,NP
+sub,gipsc001,"Charles Gipson",1,5,9
+play,8,0,everc001,11,SBX,S9
+play,8,0,garcn001,22,BBFCX,S.1-2
+play,8,0,oleat001,00,,NP
+sub,rhoda001,"Arthur Rhodes",1,0,1
+play,8,0,oleat001,12,SBSX,7/F7S
+play,8,0,stanm002,22,BCSFBX,8/F8
+play,8,0,daubb001,00,,NP
+sub,gaetg001,"Gary Gaetti",0,7,11
+play,8,0,gaetg001,12,SSBS,K
+play,8,1,camem001,10,BX,HR/9
+play,8,1,belld002,11,FBX,HR/9
+play,8,1,wilsd001,00,X,3/G
+play,8,1,guilc001,10,BX,9/F9D
+play,8,1,mclem001,01,CX,S8/8S
+play,8,1,javis001,10,B1,POCS2(136)
+play,9,0,varij001,00,,NP
+sub,sasak001,"Kazuhiro Sasaki",1,0,1
+play,9,0,varij001,22,CCBBFFS,K
+play,9,0,alexm001,00,,NP
+sub,hatts001,"Scott Hatteberg",0,9,11
+play,9,0,hatts001,32,BBBCFS,K
+play,9,0,offej001,02,CCC,K/C
+data,er,fassj001,1
+data,er,florb001,1
+data,er,cormr001,2
+data,er,selea001,2
+data,er,mesaj001,0
+data,er,rhoda001,0
+data,er,sasak001,0

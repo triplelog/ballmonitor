@@ -1,0 +1,160 @@
+version,2
+info,visteam,NYA
+info,hometeam,CLE
+info,site,CLE08
+info,date,2000/05/20
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,mealj901
+info,ump1b,younl901
+info,ump2b,bonig901
+info,ump3b,katzt901
+info,pitches,pitches
+info,temp,49
+info,winddir,ltor
+info,windspeed,8
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,218
+info,attendance,42583
+info,wp,shuep001
+info,lp,nelsj001
+info,save,
+start,knobc001,"Chuck Knoblauch",0,1,4
+start,willb002,"Bernie Williams",0,2,8
+start,oneip001,"Paul O'Neill",0,3,9
+start,spens001,"Shane Spencer",0,4,7
+start,posaj001,"Jorge Posada",0,5,3
+start,leyrj001,"Jim Leyritz",0,6,10
+start,turnc001,"Chris Turner",0,7,2
+start,bross001,"Scott Brosius",0,8,5
+start,soria001,"Alfonso Soriano",0,9,6
+start,coned001,"David Cone",0,0,1
+start,loftk001,"Kenny Lofton",1,1,8
+start,vizqo001,"Omar Vizquel",1,2,6
+start,alomr001,"Roberto Alomar",1,3,4
+start,ramim002,"Manny Ramirez",1,4,9
+start,thomj002,"Jim Thome",1,5,3
+start,frymt001,"Travis Fryman",1,6,5
+start,sexsr001,"Richie Sexson",1,7,7
+start,wilse001,"Enrique Wilson",1,8,10
+start,diaze002,"Einar Diaz",1,9,2
+start,finlc001,"Chuck Finley",1,0,1
+play,1,0,knobc001,12,CCBX,D7
+play,1,0,willb002,00,X,S.2-3
+play,1,0,oneip001,12,CCFBS,K
+play,1,0,spens001,32,BCBFBX,7/SF.3-H
+play,1,0,posaj001,02,CFX,D/78.1-3
+play,1,0,leyrj001,30,BBBB,W
+play,1,0,turnc001,32,CBBSFFBFFX,9/L9
+play,1,1,loftk001,12,CFBX,43/G
+play,1,1,vizqo001,31,BBBCB,W
+play,1,1,alomr001,01,CB,SB2
+play,1,1,alomr001,22,CBBCS,K
+play,1,1,ramim002,21,BBCX,9/F9S
+play,2,0,bross001,12,BCCX,53/G
+play,2,0,soria001,01,CX,S
+play,2,0,knobc001,10,BC,SB2
+play,2,0,knobc001,32,BCCBBC,K/C
+play,2,0,willb002,00,X,9/F9
+play,2,1,thomj002,12,CSBFX,6/P6
+play,2,1,frymt001,12,BCFX,13/G
+play,2,1,sexsr001,22,BSCBFX,S/78
+play,2,1,wilse001,21,CBBX,S/78.1-2
+play,2,1,diaze002,01,CX,54(1)/FO.2-3
+play,3,0,oneip001,12,CFBS,K
+play,3,0,spens001,11,FBX,S8/8S
+play,3,0,posaj001,32,BSSBBS,K
+play,3,0,leyrj001,22,BSSBB,WP.1-2
+play,3,0,leyrj001,32,BSSBBFB,W
+play,3,0,turnc001,31,BCBBB,W.2-3;1-2
+play,3,0,bross001,22,CBCBX,63/G
+play,3,1,loftk001,10,BX,9/F9D
+play,3,1,vizqo001,30,BBBB,W
+play,3,1,alomr001,10,BB,CS2(26)
+play,3,1,alomr001,31,BBBFX,S7/7S
+play,3,1,ramim002,21,CBBB,SB2
+play,3,1,ramim002,31,CBBBB,W
+play,3,1,thomj002,12,BSSFS,K
+play,4,0,soria001,12,CCBFX,9/F9
+play,4,0,knobc001,11,BCX,D8/8D
+play,4,0,willb002,32,BBFBCX,63/G
+play,4,0,oneip001,00,X,S9/9S.2-H
+play,4,0,spens001,00,,NP
+sub,johnl001,"Lance Johnson",0,4,11
+play,4,0,johnl001,22,BCBCB,WP.1-2
+play,4,0,johnl001,32,BCBCBC,K/C
+play,4,1,frymt001,00,,NP
+sub,johnl001,"Lance Johnson",0,4,7
+play,4,1,frymt001,12,BCFX,S5.B-2(E5/TH1)
+play,4,1,sexsr001,22,BSBCX,63/G.2-3
+play,4,1,wilse001,32,BBBCFX,8/F8S
+play,4,1,diaze002,11,CBX,6/L6
+play,5,0,posaj001,32,BBCBCB,W
+play,5,0,leyrj001,02,FCX,9(B)43(1)/LDP
+play,5,0,turnc001,01,CX,53/G
+play,5,1,loftk001,22,LBSBS,K
+play,5,1,vizqo001,32,CBBBCB,W
+play,5,1,alomr001,21,BCBX,9(B)2(1)/LDP
+com,"DV: 92 is correct"
+play,6,0,bross001,12,CBCC,K/C
+play,6,0,soria001,11,FBX,9/F9D
+play,6,0,knobc001,21,BCBX,9/F9D
+play,6,1,ramim002,32,CSBBBS,K
+play,6,1,thomj002,12,BCFS,K
+play,6,1,frymt001,01,CX,9/F9
+play,7,0,willb002,11,CBX,S9
+play,7,0,oneip001,30,BBBX,7/F7D
+play,7,0,johnl001,12,CBFX,46(1)/FO
+play,7,0,posaj001,00,1,PO1(E1).1-2
+play,7,0,posaj001,31,1BBSBB,W
+play,7,0,leyrj001,00,,NP
+sub,depas001,"Sean DePaula",1,0,1
+play,7,0,leyrj001,01,CX,64(1)/FO.2-3
+play,7,1,sexsr001,01,CX,HR/78
+play,7,1,wilse001,31,CBBBX,D/78
+play,7,1,diaze002,01,LX,34/SH.2-3
+play,7,1,loftk001,00,,NP
+sub,stanm003,"Mike Stanton",0,0,1
+play,7,1,loftk001,02,CSX,7/SF.3-H
+play,7,1,vizqo001,11,BFX,3/L3
+play,8,0,turnc001,00,,NP
+sub,martt002,"Tino Martinez",0,7,11
+play,8,0,martt002,22,BFBFX,S/78
+play,8,0,bross001,20,BBX,8/F8D
+play,8,0,soria001,02,SSFS,K
+play,8,0,knobc001,22,BBCCB,SB2
+play,8,0,knobc001,32,BBCCBS,K
+play,8,1,alomr001,00,,NP
+sub,posaj001,"Jorge Posada",0,5,2
+play,8,1,alomr001,00,,NP
+sub,martt002,"Tino Martinez",0,7,3
+play,8,1,alomr001,12,CBSS,K
+play,8,1,ramim002,00,,NP
+sub,nelsj001,"Jeff Nelson",0,0,1
+play,8,1,ramim002,31,CBBBB,W
+play,8,1,thomj002,12,BSSX,S/78.1-3
+play,8,1,frymt001,32,BCFBFBX,5(B)3(1)/LDP
+play,9,0,willb002,00,,NP
+sub,shuep001,"Paul Shuey",1,0,1
+play,9,0,willb002,12,BCFX,31/G
+play,9,0,oneip001,22,BFFBS,K
+play,9,0,johnl001,22,BBCFC,K/C
+play,9,1,sexsr001,12,BSSS,K
+play,9,1,wilse001,32,BBBCFB,W
+play,9,1,diaze002,02,CFX,9/F9S
+play,9,1,loftk001,30,BBBB,W.1-2
+play,9,1,vizqo001,00,,NP
+sub,cabrj002,"Jolbert Cabrera",1,8,12
+play,9,1,vizqo001,10,BB,WP.2-3;1-2
+play,9,1,vizqo001,30,BBBB,W
+play,9,1,alomr001,32,BCFBBB,W.3-H;2-3;1-2
+data,er,coned001,2
+data,er,stanm003,0
+data,er,nelsj001,1
+data,er,finlc001,2
+data,er,depas001,0
+data,er,shuep001,0

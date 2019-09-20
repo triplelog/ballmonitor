@@ -1,0 +1,79 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,01,1,,,,,0,2,CX,holtc001,1,0,gland001 grounds out. ,gland001,0,G
+,12,1,gantr001,,,,1,6,SBFH,holtc001,0,0,gantr001 hit by pitch. ,gantr001,0,
+,01,1,gantr001,,,,2,8,CX,holtc001,1,0,,abreb001,0,L
+,11,1,gantr001,,,,3,11,BCX,holtc001,1,0,roles001 grounds out. ,roles001,0,G
+,11,1,ceder001,,,,4,3,FBX,wolfr001,0,0,ceder001 singles. ,ceder001,1,
+,00,1,,,,,5,4,X,wolfr001,2,0,Double Play. ,biggc001,1,
+,12,1,,,,,6,9,BCSFS,wolfr001,1,0,bagwj001 strikes out. ,bagwj001,1,
+,00,2,liebm001,,,,7,12,X,holtc001,0,0,liebm001 singles. ,liebm001,0,
+,10,2,,,,,8,14,BX,holtc001,2,0,Double Play. ,jordk001,0,
+,31,2,moram001,,,,9,19,CBBBB,holtc001,0,0,moram001 walks. ,moram001,0,
+moram001 to 3B. ,22,2,,relad001,moram001,,10,24,BCFBX,holtc001,0,0,relad001 doubles. ,relad001,0,
+moram001 scores. relad001 scores. ,00,2,wolfr001,,,,11,25,X,holtc001,0,2,wolfr001 singles. ,wolfr001,0,
+,02,2,wolfr001,,,,12,28,CSX,holtc001,1,0,gland001 grounds out. ,gland001,0,G
+,11,2,,,,,13,12,BSX,wolfr001,1,0,,camik001,1,F
+,12,2,aloum001,,,,14,20,FFFFBFFX,wolfr001,0,0,aloum001 singles. ,aloum001,1,
+aloum001 to 2B. ,12,2,hidar001,aloum001,,,15,24,CBCX,wolfr001,0,0,hidar001 singles. ,hidar001,1,
+,10,2,hidar001,aloum001,,,16,26,BX,wolfr001,1,0,,euset001,1,F
+aloum001 scores. hidar001 to 3B. ,20,2,,bogat001,hidar001,,17,29,BBX,wolfr001,0,1,bogat001 doubles. ,bogat001,1,
+hidar001 scores. bogat001 scores. holtc001 to 2B. ,22,2,,holtc001,,,18,36,BCFBFFX,wolfr001,0,2,holtc001 singles. ,holtc001,1,
+,21,2,,holtc001,,,19,40,BCBX,wolfr001,1,0,ceder001 grounds out. ,ceder001,1,G
+,01,3,,,,,20,30,SX,holtc001,1,0,gantr001 grounds out. ,gantr001,0,G
+,10,3,,abreb001,,,21,32,BX,holtc001,0,0,abreb001 doubles. ,abreb001,0,
+abreb001 out. ,11,3,roles001,,,,22,35,FBX,holtc001,1,0,roles001 singles. ,roles001,0,
+,02,3,roles001,,,,23,39,SFFX,holtc001,1,0,,liebm001,0,F
+,32,3,,,,,24,46,CBBBCX,wolfr001,1,0,biggc001 grounds out. ,biggc001,1,G
+,11,3,,,,,25,49,BFX,wolfr001,1,0,bagwj001 grounds out. ,bagwj001,1,G
+,30,3,camik001,,,,26,53,BBBB,wolfr001,0,0,camik001 walks. ,camik001,1,
+camik001 scores. ,11,3,,,,,27,56,FBX,wolfr001,0,2,aloum001 homers. ,aloum001,1,
+,11,3,hidar001,,,,28,59,BCX,wolfr001,0,0,hidar001 singles. ,hidar001,1,
+hidar001 scores. ,20,3,,euset001,,,29,62,BBX,wolfr001,0,1,euset001 doubles. ,euset001,1,
+,12,3,,euset001,,,30,66,CCBX,wolfr001,1,0,,bogat001,1,F
+,01,4,,,,,31,41,CX,holtc001,1,0,,jordk001,0,F
+,22,4,moram001,,,,32,46,BCBFX,holtc001,0,0,moram001 singles. ,moram001,0,
+moram001 to 2B. ,10,4,,moram001,,,33,48,BX,holtc001,1,0,relad001 grounds out. ,relad001,0,G
+,32,4,pritc001,moram001,,,35,54,FFBBBB,holtc001,0,0,pritc001 walks. ,pritc001,0,
+pritc001 to 2B. moram001 out. ,11,4,gland001,pritc001,,,36,57,SBX,holtc001,1,0,gland001 reaches on fielder's choice. ,gland001,0,
+,00,4,,,,,40,1,X,schrs001,1,0,holtc001 grounds out. ,holtc001,1,G
+,21,4,,,,,41,5,BFBX,schrs001,1,0,ceder001 grounds out. ,ceder001,1,G
+,02,4,,,,,42,8,CSC,schrs001,1,0,biggc001 strikes out. ,biggc001,1,
+,12,5,,,,,43,61,CSBC,holtc001,1,0,gantr001 strikes out. ,gantr001,0,
+,22,5,,,,,44,67,BCFBFX,holtc001,1,0,,abreb001,0,
+,11,5,,,,,45,70,BSX,holtc001,1,0,,huntb001,0,F
+,32,5,,,,,46,14,BCBBCX,schrs001,1,0,bagwj001 grounds out. ,bagwj001,1,G
+,00,5,,,,,47,15,X,schrs001,1,0,,camik001,1,
+,32,5,,,,,48,21,CBBCBX,schrs001,1,0,,aloum001,1,F
+,12,6,,,,,49,75,BFFFC,holtc001,1,0,liebm001 strikes out. ,liebm001,0,
+,21,6,,,,,50,79,BFBX,holtc001,1,0,,jordk001,0,F
+,22,6,,,,,51,85,BFCBFX,holtc001,1,0,moram001 grounds out. ,moram001,0,G
+,32,6,,,,,52,27,FFBBBX,schrs001,1,0,hidar001 grounds out. ,hidar001,1,G
+,01,6,,euset001,,,53,29,CX,schrs001,0,0,euset001 doubles. ,euset001,1,
+,22,6,,euset001,,,54,34,SFBBS,schrs001,1,0,bogat001 strikes out. ,bogat001,1,
+,32,6,,euset001,,,55,41,BCSBBFX,schrs001,1,0,holtc001 grounds out. ,holtc001,1,G
+,02,7,relad001,,,,56,88,CCX,holtc001,0,0,relad001 singles. ,relad001,0,
+relad001 to 2B. ,32,7,duceb001,relad001,,,58,94,FBBBFB,holtc001,0,0,duceb001 walks. ,duceb001,0,
+,22,7,duceb001,relad001,,,59,99,CSBBS,holtc001,1,0,gland001 strikes out. ,gland001,0,
+,02,7,duceb001,relad001,,,60,102,CFS,holtc001,1,0,gantr001 strikes out. ,gantr001,0,
+,32,7,duceb001,relad001,,,61,108,FBBBFS,holtc001,1,0,abreb001 strikes out. ,abreb001,0,
+,12,7,ceder001,,,,63,4,CBCX,boydj001,0,0,ceder001 singles. ,ceder001,1,
+ceder001 to 3B. ,10,7,,,ceder001,biggc001,64,6,BC,boydj001,0,0,ceder001 steals 2B. ,biggc001,1,
+ceder001 scores. ,22,7,biggc001,,,,65,12,BCSBFX,boydj001,0,1,biggc001 singles. ,biggc001,1,
+biggc001 to 2B. ,02,7,bagwj001,biggc001,,,66,15,CFX,boydj001,0,0,bagwj001 singles. ,bagwj001,1,
+biggc001 to 3B. bagwj001 to 2B. ,20,7,,bagwj001,biggc001,,67,18,BBX,boydj001,1,0,camik001 grounds out. ,camik001,1,G
+,30,7,aloum001,bagwj001,biggc001,,68,22,IIII,boydj001,0,0,aloum001 intentionally walks. ,aloum001,1,
+biggc001 scores. bagwj001 to 3B. aloum001 to 2B. ,31,7,hidar001,aloum001,bagwj001,,69,27,BBFBB,boydj001,0,1,hidar001 walks. ,hidar001,1,
+,01,7,,aloum001,bagwj001,,70,29,FX,boydj001,2,0,Double Play. ,euset001,1,
+,12,8,,,,,71,112,CCBS,holtc001,1,0,huntb001 strikes out. ,huntb001,0,
+,32,8,,,,,72,121,FBBSBFFFS,holtc001,1,0,liebm001 strikes out. ,liebm001,0,
+,21,8,,,,,73,125,BCBX,holtc001,1,0,jordk001 grounds out. ,jordk001,0,G
+,30,8,bogat001,,,,75,4,BBBB,aldrs001,0,0,bogat001 walks. ,bogat001,1,
+,12,8,bogat001,,,,76,8,SBLL,aldrs001,1,0,holtc001 strikes out. ,holtc001,1,F
+bogat001 scores. ,00,8,,,,,77,9,X,aldrs001,0,2,ceder001 homers. ,ceder001,1,
+,12,8,biggc001,,,,78,13,BCFX,aldrs001,0,0,biggc001 reaches on error. ,biggc001,1,
+biggc001 out. ,11,8,bagwj001,,,,79,16,BSX,aldrs001,1,0,bagwj001 reaches on fielder's choice. ,bagwj001,1,
+,10,8,bagwj001,,,,80,18,BX,aldrs001,1,0,,camik001,1,L
+,10,9,moram001,,,,81,127,BX,holtc001,0,0,moram001 singles. ,moram001,0,
+,21,9,,,,,82,131,BBCX,holtc001,2,0,Double Play. ,relad001,0,
+,30,9,sefck001,,,,84,135,BBBB,holtc001,0,0,sefck001 walks. ,sefck001,0,
+sefck001 out. ,01,9,gland001,,,,85,137,CX,holtc001,1,0,gland001 reaches on fielder's choice. ,gland001,0,

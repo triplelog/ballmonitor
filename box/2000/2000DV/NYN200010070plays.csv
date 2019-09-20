@@ -1,0 +1,110 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,12,1,,,,,0,5,CFFBS,reedr002,1,0,benam001 strikes out. ,benam001,0,
+,20,1,,,,,1,8,BBX,reedr002,1,0,,muelb001,0,F
+,00,1,,,,,2,9,X,reedr002,1,0,,bondb001,0,F
+,01,1,,,,,3,2,CX,ortir001,1,0,peret004 grounds out. ,peret004,1,G
+,32,1,,,,,4,12,BCSBFFBFFX,ortir001,1,0,,alfoe001,1,F
+,22,1,,,,,5,17,CCBBS,ortir001,1,0,piazm001 strikes out. ,piazm001,1,
+,11,2,kentj001,,,,6,12,CBX,reedr002,0,0,kentj001 singles. ,kentj001,0,
+,22,2,kentj001,,,,7,18,CSFBBX,reedr002,1,0,,burke001,0,F
+kentj001 to 3B. ,32,2,snowj001,,kentj001,,8,24,CBBFBX,reedr002,0,0,snowj001 singles. ,snowj001,0,
+,02,2,snowj001,,kentj001,,9,27,CSS,reedr002,1,0,aurir001 strikes out. ,aurir001,0,
+,22,2,snowj001,,kentj001,,10,35,BCSFFBFS,reedr002,1,0,estab001 strikes out. ,estab001,0,
+,30,2,ventr001,,,,11,21,BBBB,ortir001,0,0,ventr001 walks. ,ventr001,1,
+,32,2,ventr001,,,,12,27,BCCBBX,ortir001,1,0,,agbab001,1,L
+,00,2,ventr001,,,,13,28,X,ortir001,1,0,,paytj001,1,F
+,31,2,ventr001,,,,14,33,CBBBX,ortir001,1,0,,zeilt001,1,F
+,12,3,,,,,15,40,CCFBX,reedr002,1,0,ortir001 grounds out. ,ortir001,0,G
+,12,3,,,,,16,44,CCBS,reedr002,1,0,benam001 strikes out. ,benam001,0,
+,32,3,,muelb001,,,17,50,BSFBBX,reedr002,0,0,muelb001 doubles. ,muelb001,0,
+,30,3,bondb001,muelb001,,,18,54,BBBI,reedr002,0,0,bondb001 intentionally walks. ,bondb001,0,
+,01,3,bondb001,muelb001,,,19,56,FX,reedr002,1,0,kentj001 grounds out. ,kentj001,0,G
+,02,3,,,,,20,36,FCX,ortir001,1,0,,bordm001,1,F
+,10,3,,,,,21,38,BX,ortir001,1,0,reedr002 grounds out. ,reedr002,1,G
+,00,3,,,,,22,39,X,ortir001,1,0,,peret004,1,F
+,12,4,burke001,,,,23,60,BCCX,reedr002,0,0,burke001 singles. ,burke001,0,
+burke001 to 2B. ,00,4,snowj001,burke001,,,24,61,X,reedr002,0,0,snowj001 singles. ,snowj001,0,
+,00,4,snowj001,burke001,,,25,62,X,reedr002,1,0,,aurir001,0,
+burke001 scores. snowj001 to 2B. ,32,4,estab001,snowj001,,,26,69,CBFBFBX,reedr002,0,1,estab001 singles. ,estab001,0,
+estab001 to 2B. snowj001 out. ,00,4,ortir001,estab001,,,27,70,X,reedr002,1,0,ortir001 reaches on fielder's choice. ,ortir001,0,
+estab001 scores. ortir001 to 3B. ,21,4,benam001,,ortir001,,28,74,SBBX,reedr002,0,1,benam001 singles. ,benam001,0,
+,00,4,benam001,,ortir001,,29,75,X,reedr002,1,0,,muelb001,0,F
+,32,4,alfoe001,,,,30,46,BCBFBFB,ortir001,0,0,alfoe001 walks. ,alfoe001,1,
+,32,4,,,,,31,52,BSFBBC,ortir001,2,0,piazm001 strikes out. alfoe001 caught stealing. ,piazm001,1,
+,22,4,,,,,32,57,BCBCS,ortir001,1,0,ventr001 strikes out. ,ventr001,1,
+,12,5,,,,,33,79,SBFX,reedr002,1,0,,bondb001,0,F
+,32,5,,,,,34,85,CFBBBC,reedr002,1,0,kentj001 strikes out. ,kentj001,0,
+,30,5,burke001,,,,35,89,BBBB,reedr002,0,0,burke001 walks. ,burke001,0,
+,22,5,burke001,,,,36,95,BFBCFX,reedr002,1,0,,snowj001,0,L
+,22,5,,,,,37,62,SCBBX,ortir001,1,0,,agbab001,1,F
+,32,5,,,,,38,69,SCBFBBS,ortir001,1,0,paytj001 strikes out. ,paytj001,1,
+,21,5,,,,,39,73,FBBX,ortir001,1,0,,zeilt001,1,F
+,12,6,,,,,40,99,BFSX,reedr002,1,0,,aurir001,0,F
+,10,6,,,,,41,101,BX,reedr002,1,0,,estab001,0,P
+,02,6,,,,,42,105,CCFC,reedr002,1,0,ortir001 strikes out. ,ortir001,0,
+,30,6,bordm001,,,,43,77,BBBB,ortir001,0,0,bordm001 walks. ,bordm001,1,
+bordm001 to 3B. ,31,6,hamid001,,bordm001,,45,82,CBBBX,ortir001,0,0,hamid001 singles. ,hamid001,1,
+bordm001 scores. hamid001 to 2B. ,11,6,peret004,hamid001,,,46,85,CBX,ortir001,0,1,peret004 singles. ,peret004,1,
+hamid001 to 3B. peret004 to 2B. ,32,6,,peret004,hamid001,,47,91,BCBBSX,ortir001,1,0,alfoe001 grounds out. ,alfoe001,1,G
+,30,6,piazm001,peret004,hamid001,,48,95,IIII,ortir001,0,0,piazm001 intentionally walks. ,piazm001,1,
+,10,6,,peret004,hamid001,,50,2,BX,embra001,2,0,Double Play. ,ventr001,1,
+,32,7,benam001,,,,52,6,LBBBSB,cookd001,0,0,benam001 walks. ,benam001,0,
+benam001 to 2B. ,00,7,,benam001,,,53,7,X,cookd001,1,0,Sacrifice bunt by muelb001.,muelb001,0,
+benam001 to 3B. ,31,7,,,benam001,,54,12,BFBBX,cookd001,1,0,bondb001 grounds out. ,bondb001,0,G
+,02,7,,,benam001,,56,3,CSS,wendt001,1,0,kentj001 strikes out. ,kentj001,0,
+,22,7,,,,,58,5,CFBBX,henrd002,1,0,agbab001 grounds out. ,agbab001,1,G
+,00,7,,,,,59,6,X,henrd002,1,0,paytj001 grounds out. ,paytj001,1,G
+,12,7,,,,,60,10,CBSC,henrd002,1,0,zeilt001 strikes out. ,zeilt001,1,
+,32,8,burke001,,,,61,10,BFFBFBB,wendt001,0,0,burke001 walks. ,burke001,0,
+,22,8,burke001,,,,62,19,CFBBFFFFC,wendt001,1,0,snowj001 strikes out. ,snowj001,0,
+,02,8,burke001,,,,63,22,CCS,wendt001,1,0,aurir001 strikes out. ,aurir001,0,
+,01,8,burke001,,,,64,24,FX,wendt001,1,0,estab001 grounds out. ,estab001,0,G
+,02,8,bordm001,,,,65,13,CFH,henrd002,0,0,bordm001 hit by pitch. ,bordm001,1,
+bordm001 out. ,01,8,harrl001,,,,67,15,LX,henrd002,1,0,harrl001 reaches on fielder's choice. ,harrl001,1,
+,11,8,harrl001,,,,68,18,BCX,henrd002,1,0,,peret004,1,P
+,00,8,,harrl001,,alfoe001,71,1,C,nen-r001,0,0,harrl001 steals 2B. ,alfoe001,1,
+harrl001 scores. ,11,8,,alfoe001,,,72,4,CBX,nen-r001,0,1,alfoe001 doubles. ,alfoe001,1,
+,22,8,,alfoe001,,,73,10,BFCFBS,nen-r001,1,0,piazm001 strikes out. ,piazm001,1,
+,22,9,martr003,,,,75,6,BBCFFX,franj001,0,0,martr003 singles. ,martr003,0,
+martr003 out. ,10,9,benam001,,,,76,8,BX,franj001,1,0,benam001 reaches on fielder's choice. ,benam001,0,
+,20,9,benam001,,,,77,11,BBX,franj001,1,0,,muelb001,0,F
+,22,9,benam001,,,,78,16,CSBBS,franj001,1,0,bondb001 strikes out. ,bondb001,0,
+,12,9,,,,,79,14,FBFX,nen-r001,1,0,,ventr001,1,F
+,02,9,,,,,80,17,FSC,nen-r001,1,0,agbab001 strikes out. ,agbab001,1,
+,11,9,paytj001,,,,81,20,CBX,nen-r001,0,0,paytj001 singles. ,paytj001,1,
+,22,9,,paytj001,,zeilt001,82,25,BBCFB,nen-r001,0,0,paytj001 steals 2B. ,zeilt001,1,
+,32,9,zeilt001,paytj001,,,83,31,BBCFBB,nen-r001,0,0,zeilt001 walks. ,zeilt001,1,
+,02,9,zeilt001,paytj001,,,84,34,SSS,nen-r001,1,0,bordm001 strikes out. ,bordm001,1,
+,12,10,kentj001,,,,87,4,SSBX,benia001,0,0,kentj001 singles. ,kentj001,0,
+kentj001 to 2B. ,32,10,,kentj001,,,88,10,BFBBFX,benia001,1,0,burke001 grounds out. ,burke001,0,G
+,30,10,snowj001,kentj001,,,89,14,IIII,benia001,0,0,snowj001 intentionally walks. ,snowj001,0,
+kentj001 to 3B. ,32,10,snowj001,,kentj001,,91,20,SBBSBX,benia001,1,0,,riosa001,0,F
+,31,10,snowj001,,kentj001,,93,25,BBBCX,benia001,1,0,,cresf001,0,F
+,22,10,,,,,96,6,FBFBFS,rodrf002,1,0,abbok002 strikes out. ,abbok002,1,
+,10,10,,,,,97,8,BX,rodrf002,1,0,,peret004,1,F
+,11,10,,,,,98,11,CBX,rodrf002,1,0,,alfoe001,1,F
+,12,11,,,,,99,29,BCCS,benia001,1,0,martr003 strikes out. ,martr003,0,
+,22,11,,,,,100,34,CBLBS,benia001,1,0,benam001 strikes out. ,benam001,0,
+,32,11,,,,,101,40,CBBBFS,benia001,1,0,muelb001 strikes out. ,muelb001,0,
+,22,11,piazm001,,,,102,18,CSBBFFX,rodrf002,0,0,piazm001 singles. ,piazm001,1,
+mcewj001 to 2B. ,00,11,ventr001,mcewj001,,,104,19,X,rodrf002,0,0,ventr001 singles. ,ventr001,1,
+,22,11,ventr001,mcewj001,,,105,28,LCFFBFBFX,rodrf002,1,0,,agbab001,1,F
+,22,11,ventr001,mcewj001,,,106,38,BFSFFBFFFS,rodrf002,1,0,paytj001 strikes out. ,paytj001,1,
+mcewj001 to 3B. ventr001 to 2B. ,30,11,zeilt001,ventr001,mcewj001,,107,42,BBBB,rodrf002,0,0,zeilt001 walks. ,zeilt001,1,
+,22,11,zeilt001,ventr001,mcewj001,,109,47,FBFBX,rodrf002,1,0,,pratt001,1,F
+,32,12,bondb001,,,,114,6,BBFBCB,whitr002,0,0,bondb001 walks. ,bondb001,0,
+,02,12,bondb001,,,,115,9,CCC,whitr002,1,0,kentj001 strikes out. ,kentj001,0,
+,12,12,bondb001,,,,116,13,CBCS,whitr002,1,0,burke001 strikes out. ,burke001,0,
+bondb001 to 2B. ,32,12,snowj001,bondb001,,,117,19,CBBBFB,whitr002,0,0,snowj001 walks. ,snowj001,0,
+,01,12,snowj001,bondb001,,,118,21,CX,whitr002,1,0,,mirad001,0,F
+,00,12,,,,,122,1,X,fulta001,1,0,abbok002 grounds out. ,abbok002,1,G
+,21,12,,,,,123,5,BBCX,fulta001,1,0,peret004 grounds out. ,peret004,1,G
+,20,12,alfoe001,,,,124,8,BBX,fulta001,0,0,alfoe001 singles. ,alfoe001,1,
+alfoe001 out. ,32,12,mcewj001,,,,125,14,BBBCCX,fulta001,1,0,mcewj001 singles. ,mcewj001,1,
+,12,13,,,,,126,25,CCBC,whitr002,1,0,murrc001 strikes out. ,murrc001,0,
+,32,13,martr003,,,,127,31,CBCBBX,whitr002,0,0,martr003 singles. ,martr003,0,
+,12,13,martr003,,,,128,35,SFBS,whitr002,1,0,benam001 strikes out. ,benam001,0,
+martr003 to 2B. ,21,13,muelb001,martr003,,,129,39,CBBX,whitr002,0,0,muelb001 singles. ,muelb001,0,
+,00,13,muelb001,martr003,,,130,40,X,whitr002,1,0,,bondb001,0,P
+,20,13,,,,,131,17,BBX,fulta001,1,0,ventr001 grounds out. ,ventr001,1,G
+,10,13,,,,,132,19,BX,fulta001,0,1,agbab001 homers. ,agbab001,1,

@@ -1,0 +1,148 @@
+version,2
+info,visteam,COL
+info,hometeam,NYN
+info,site,NYC17
+info,date,2000/08/16
+info,number,0
+info,starttime,7:10PM
+info,daynight,night
+info,usedh,false
+info,umphome,rungb901
+info,ump1b,lampi901
+info,ump2b,shulj901
+info,ump3b,barkl901
+info,pitches,pitches
+info,temp,71
+info,winddir,fromrf
+info,windspeed,11
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,159
+info,attendance,29832
+info,wp,bohab001
+info,lp,ruscg001
+info,save,whitg001
+start,fryej001,"Jeff Frye",0,1,4
+start,peren001,"Neifi Perez",0,2,6
+start,cirij001,"Jeff Cirillo",0,3,5
+start,heltt001,"Todd Helton",0,4,3
+start,hammj001,"Jeffrey Hammonds",0,5,8
+start,walkl001,"Larry Walker",0,6,9
+start,huskb001,"Butch Huskey",0,7,7
+start,petrb001,"Ben Petrick",0,8,2
+start,bohab001,"Brian Bohanon",0,9,1
+start,agbab001,"Benny Agbayani",1,1,7
+start,belld001,"Derek Bell",1,2,9
+start,alfoe001,"Edgardo Alfonzo",1,3,4
+start,piazm001,"Mike Piazza",1,4,2
+start,zeilt001,"Todd Zeile",1,5,3
+start,ventr001,"Robin Ventura",1,6,5
+start,paytj001,"Jay Payton",1,7,8
+start,abbok002,"Kurt Abbott",1,8,6
+start,ruscg001,"Glendon Rusch",1,9,1
+play,1,0,fryej001,02,CCC,K/C
+play,1,0,peren001,00,X,HR/78
+play,1,0,cirij001,22,BBCSC,K/C
+play,1,0,heltt001,32,BFBBCC,K/C
+play,1,1,agbab001,02,CCX,E4/G.B-2
+play,1,1,belld001,30,BBBB,W
+play,1,1,alfoe001,11,CBX,S7/7S.2-H(UR);1-2
+play,1,1,piazm001,02,FFC,K/C
+play,1,1,zeilt001,11,FBX,54(1)3/GDP
+play,2,0,hammj001,10,BX,5/P5
+play,2,0,walkl001,00,X,63/G
+play,2,0,huskb001,21,CBBX,63/G
+play,2,1,ventr001,00,X,6/P6
+play,2,1,paytj001,10,BX,9/F9D
+play,2,1,abbok002,10,BX,7/F7
+play,3,0,petrb001,00,X,S
+play,3,0,bohab001,01,LX,5/FL
+play,3,0,fryej001,21,CBBX,64(1)3/GDP
+play,3,1,ruscg001,02,CFX,41/G
+play,3,1,agbab001,10,BX,8/F8
+play,3,1,belld001,12,FCBC,K/C
+play,4,0,peren001,00,X,13/BG
+play,4,0,cirij001,00,X,9/L9
+play,4,0,heltt001,22,BCCFBX,8/F8
+play,4,1,alfoe001,32,BBFFBS,K
+play,4,1,piazm001,22,BFFFBX,63/G
+play,4,1,zeilt001,01,CX,S7
+play,4,1,ventr001,00,X,9/L9
+play,5,0,hammj001,22,CBFBX,9/F9
+play,5,0,walkl001,32,BBBCFB,W
+play,5,0,huskb001,00,X,S9/9S.1-3
+play,5,0,petrb001,02,CSS,K
+play,5,0,bohab001,02,FCX,6/P6
+play,5,1,paytj001,22,FBSBX,S
+play,5,1,abbok002,22,BCSBX,54(1)3/GDP
+play,5,1,ruscg001,01,CX,43/G
+play,6,0,fryej001,32,CBCBBX,13/G
+play,6,0,peren001,21,BFBX,S7
+play,6,0,cirij001,00,,NP
+sub,shumt001,"Terry Shumpert",0,3,11
+play,6,0,shumt001,02,FSX,9/F9
+play,6,0,heltt001,00,H,HP.1-2
+play,6,0,hammj001,21,BCBX,S/78.2-H;1-3
+play,6,0,walkl001,22,CBCBFFFB,SB2
+play,6,0,walkl001,32,CBCBFFFBX,S7.3-H;2-H
+play,6,0,huskb001,01,CB,SB2
+play,6,0,huskb001,11,CBX,53/G
+play,6,1,agbab001,00,,NP
+sub,shumt001,"Terry Shumpert",0,3,5
+play,6,1,agbab001,10,BX,S7
+play,6,1,belld001,12,FBFC,K/C
+play,6,1,alfoe001,21,BCBX,4/P4
+play,6,1,piazm001,12,SBFS,K
+play,7,0,petrb001,20,BBX,9/FL
+play,7,0,bohab001,12,CCBFC,K/C
+play,7,0,fryej001,00,X,S9/9S
+play,7,0,peren001,00,B,SB2
+play,7,0,peren001,10,BX,63/G
+play,7,1,zeilt001,12,BCCX,43/G
+play,7,1,ventr001,32,BCBBCX,3/G
+play,7,1,paytj001,00,X,9/L9
+play,8,0,shumt001,22,BCFBX,S7
+play,8,0,heltt001,02,CCX,D7.1-3
+play,8,0,hammj001,00,,NP
+sub,whitr002,"Rick White",1,9,1
+play,8,0,hammj001,01,FX,S/78.3-H;2-H
+play,8,0,walkl001,11,FBX,8/F8
+play,8,0,huskb001,00,X,8/F8
+play,8,0,petrb001,32,CCFBBFFBFB,W.1-2
+play,8,0,bohab001,22,CBFBX,S9.2-H;1-3
+play,8,0,fryej001,32,BBFBCX,7/L7
+play,8,1,abbok002,00,,NP
+sub,hammj001,"Jeffrey Hammonds",0,5,7
+play,8,1,abbok002,00,,NP
+sub,pierj002,"Juan Pierre",0,7,8
+play,8,1,abbok002,00,X,HR/7
+play,8,1,whitr002,00,,NP
+sub,tramb001,"Bubba Trammell",1,9,11
+play,8,1,tramb001,22,BBFFC,K/C
+play,8,1,agbab001,02,CCX,9/F9
+play,8,1,belld001,32,CBBSBB,W
+play,8,1,alfoe001,22,CBBCX,HR/7.1-H
+play,8,1,piazm001,00,,NP
+sub,dejem001,"Mike DeJean",0,9,1
+play,8,1,piazm001,02,SFFX,S7/7S
+play,8,1,zeilt001,22,BBCFX,D9.1-H
+play,8,1,ventr001,00,,NP
+sub,whitg001,"Gabe White",0,9,1
+play,8,1,ventr001,02,FSC,K/C
+play,9,0,peren001,00,,NP
+sub,cookd001,"Dennis Cook",1,9,1
+play,9,0,peren001,00,X,43/G
+play,9,0,shumt001,02,SCX,43/G
+play,9,0,heltt001,32,FBBBCS,K
+play,9,1,paytj001,12,FFBFFC,K/C
+play,9,1,abbok002,32,BFLBBX,8/F8
+play,9,1,cookd001,00,,NP
+sub,pratt001,"Todd Pratt",1,9,11
+play,9,1,pratt001,32,CBBBSFFFS,K
+data,er,bohab001,3
+data,er,dejem001,1
+data,er,whitg001,0
+data,er,ruscg001,6
+data,er,whitr002,1
+data,er,cookd001,0

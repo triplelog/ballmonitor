@@ -1,0 +1,241 @@
+version,2
+info,visteam,ATL
+info,hometeam,COL
+info,site,DEN02
+info,date,2000/08/22
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,monte901
+info,ump1b,laynj901
+info,ump2b,barrt901
+info,ump3b,randt901
+info,pitches,pitches
+info,temp,78
+info,winddir,ltor
+info,windspeed,12
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,266
+info,attendance,41707
+info,wp,maynb001
+info,lp,rockj001
+info,save,
+start,furcr001,"Rafael Furcal",0,1,6
+start,jonea002,"Andruw Jones",0,2,8
+start,jonec004,"Chipper Jones",0,3,5
+start,surhb001,"B.J. Surhoff",0,4,7
+start,galaa001,"Andres Galarraga",0,5,3
+start,jordb001,"Brian Jordan",0,6,9
+start,lopej001,"Javy Lopez",0,7,2
+start,lockk001,"Keith Lockhart",0,8,4
+start,burkj001,"John Burkett",0,9,1
+start,pierj002,"Juan Pierre",1,1,8
+start,peren001,"Neifi Perez",1,2,6
+start,heltt001,"Todd Helton",1,3,3
+start,hammj001,"Jeffrey Hammonds",1,4,9
+start,walkt002,"Todd Walker",1,5,4
+start,cirij001,"Jeff Cirillo",1,6,5
+start,hollt001,"Todd Hollandsworth",1,7,7
+start,petrb001,"Ben Petrick",1,8,2
+start,yoshm001,"Masato Yoshii",1,9,1
+play,1,0,furcr001,32,BCBBSFB,W
+play,1,0,jonea002,00,X,8/F8D
+play,1,0,jonec004,01,SB,SB2.1-3(E2/TH2)
+play,1,0,jonec004,32,SBBBFX,13/G
+play,1,0,surhb001,31,BFBBB,W
+play,1,0,galaa001,10,BX,64(1)/FO
+play,1,1,pierj002,10,BX,S8
+play,1,1,peren001,01,CX,8/F8S
+play,1,1,heltt001,00,X,8/F8D
+play,1,1,hammj001,20,BBC,SB2
+play,1,1,hammj001,32,BBCCBB,W
+play,1,1,walkt002,30,BBBX,T/89D.2-H;1-H
+play,1,1,cirij001,12,CCFBC,K/C
+play,2,0,jordb001,02,CFS,K
+play,2,0,lopej001,32,CBBFBFX,S8/8S
+play,2,0,lockk001,31,BFBBX,S9.1-2
+play,2,0,burkj001,00,X,1/BP1
+play,2,0,furcr001,00,X,64(1)/FO.2-3
+play,2,1,hollt001,12,BCSX,S
+play,2,1,petrb001,12,CBFFX,S9.1-3
+play,2,1,yoshm001,00,X,14/SH.1-2
+play,2,1,pierj002,11,CBX,9/SF.3-H;2-3
+play,2,1,peren001,22,BBCFFX,8/F8
+play,3,0,jonea002,00,X,S8
+play,3,0,jonec004,00,B,SB2
+play,3,0,jonec004,10,BX,43/G.2-3
+play,3,0,surhb001,00,X,7/SF.3-H
+play,3,0,galaa001,00,X,63/G
+play,3,1,heltt001,10,BX,63/G
+play,3,1,hammj001,10,BX,13/G
+play,3,1,walkt002,32,BBFFBFX,3/L3
+play,4,0,jordb001,00,X,53/G
+play,4,0,lopej001,01,CX,63/G
+play,4,0,lockk001,22,BCSBX,S/89
+play,4,0,burkj001,22,BFFBX,53/G
+play,4,1,cirij001,12,FFBX,D7/7S
+play,4,1,hollt001,12,FBSX,S.2-3
+play,4,1,petrb001,32,SCBBFBFX,S.3-H;1-2
+play,4,1,yoshm001,01,LX,54/SH.2-3;1-2
+play,4,1,pierj002,02,FLFC,K/C
+play,4,1,peren001,10,BX,D/89D.3-H;2-H
+play,4,1,heltt001,30,IIII,IW
+play,4,1,hammj001,22,BCCBC,K/C
+play,5,0,furcr001,21,BCBX,8/F8
+play,5,0,jonea002,01,FX,HR/89
+play,5,0,jonec004,00,X,S/78
+play,5,0,surhb001,22,BCBFFX,D/89D.1-H
+play,5,0,galaa001,32,BSBFBX,S8.2-H
+play,5,0,jordb001,10,BX,6/P6
+play,5,0,lopej001,10,BX,13/G
+play,5,1,walkt002,20,BBX,43/G
+play,5,1,cirij001,10,BX,63/G
+play,5,1,hollt001,00,X,8/F8
+play,6,0,lockk001,00,,NP
+sub,dejem001,"Mike DeJean",1,9,1
+play,6,0,lockk001,22,CBFBS,K
+play,6,0,burkj001,00,X,43/G
+play,6,0,furcr001,22,CCBBX,63/G
+play,6,1,petrb001,22,CBBSFX,43/G
+play,6,1,dejem001,00,X,63/G
+play,6,1,pierj002,01,CX,S8/8S
+play,6,1,peren001,00,,NP
+sub,mulht001,"Terry Mulholland",0,9,1
+play,6,1,peren001,00,C,CS2(24)
+play,7,0,jonea002,22,BFBFS,K
+play,7,0,jonec004,00,X,HR/8
+play,7,0,surhb001,32,BCBFBB,W
+play,7,0,galaa001,11,BSS,SB2
+play,7,0,galaa001,12,BSSX,S7.2-3
+play,7,0,jordb001,00,,NP
+sub,jimej001,"Jose Jimenez",1,9,1
+play,7,0,jordb001,01,CX,1/L1
+play,7,0,lopej001,22,BCBFX,S.3-H;1-2
+play,7,0,lockk001,10,BX,46(1)/FO.2-3
+play,7,1,peren001,00,X,S7
+play,7,1,heltt001,12,LCBX,46(1)3/GDP
+play,7,1,hammj001,22,FBBFC,K/C
+play,8,0,mulht001,00,,NP
+sub,joynw001,"Wally Joyner",0,9,11
+play,8,0,joynw001,20,BBX,6/L6
+play,8,0,furcr001,22,FBFBFX,43/G
+play,8,0,jonea002,21,BFBX,3/G#
+play,8,1,walkt002,00,,NP
+sub,remlm001,"Mike Remlinger",0,9,1
+play,8,1,walkt002,00,,NP
+sub,shumt001,"Terry Shumpert",1,5,11
+play,8,1,shumt001,11,BSX,8/F8
+play,8,1,cirij001,22,BBCFFC,K/C
+play,8,1,hollt001,12,BCFX,23/G
+play,9,0,jonec004,00,,NP
+sub,shumt001,"Terry Shumpert",1,5,4
+play,9,0,jonec004,00,,NP
+sub,whitg001,"Gabe White",1,9,1
+play,9,0,jonec004,11,BFX,S7
+play,9,0,surhb001,00,X,3/SH.1-2#
+play,9,0,galaa001,30,IIII,IW
+play,9,0,jordb001,00,X,64(1)3/GDP
+play,9,1,petrb001,00,,NP
+sub,ligtk001,"Kerry Ligtenberg",0,9,1
+play,9,1,petrb001,11,CBX,63/G
+play,9,1,whitg001,00,,NP
+sub,fryej001,"Jeff Frye",1,9,11
+play,9,1,fryej001,22,CBFBX,S7
+play,9,1,pierj002,22,BBSFX,46(1)/FO
+play,9,1,peren001,21,CBBX,S9.1-3
+play,9,1,heltt001,30,IIII,IW.1-2
+play,9,1,hammj001,12,SFFBFFX,9/FL
+play,10,0,lopej001,00,,NP
+sub,housc001,"Craig House",1,9,1
+play,10,0,lopej001,00,X,9/FL
+play,10,0,lockk001,31,BCBBX,S8
+play,10,0,ligtk001,00,,NP
+sub,bonib001,"Bobby Bonilla",0,9,11
+play,10,0,bonib001,00,,NP
+sub,sandr002,"Reggie Sanders",0,8,12
+play,10,0,bonib001,32,BSFBBB,W.1-2
+play,10,0,furcr001,00,,NP
+sub,weisw001,"Walt Weiss",0,9,12
+play,10,0,furcr001,00,,NP
+sub,choub001,"Bobby Chouinard",1,9,1
+play,10,0,furcr001,00,X,64(1)/FO.2-3
+play,10,0,jonea002,10,BX,53/G
+play,10,1,shumt001,00,,NP
+sub,furcr001,"Rafael Furcal",0,1,4
+play,10,1,shumt001,00,,NP
+sub,weisw001,"Walt Weiss",0,9,6
+play,10,1,shumt001,00,,NP
+sub,kamis001,"Scott Kamieniecki",0,8,1
+play,10,1,shumt001,31,BBCBB,W
+play,10,1,cirij001,00,X,26(1)3/BG/GDP
+play,10,1,hollt001,22,CBFBC,K/C
+play,11,0,jonec004,00,,NP
+sub,myerm001,"Mike Myers",1,9,1
+play,11,0,jonec004,11,CBX,43/G
+play,11,0,surhb001,22,CBSBFS,K
+play,11,0,galaa001,00,,NP
+sub,wasdj001,"John Wasdin",1,7,1
+play,11,0,galaa001,00,,NP
+sub,huskb001,"Butch Huskey",1,9,7
+play,11,0,galaa001,32,BFSBFBH,HP
+com,"ej,galaa001,P,monte901,Charging mound after HBP"
+com,"ej,bellb001,M,monte901,Intentional HBP"
+com,"ej,wasdj001,P,monte901,Intentional HBP"
+com,"$Andres Galarraga charged the mound;"
+com,"Galarraga, John Wasdin & Rockies manager Buddy Bell ejected"
+com,"by HP umpire Ed Montague"
+play,11,0,jordb001,00,,NP
+sub,bohab001,"Brian Bohanon",1,7,1
+play,11,0,jordb001,00,,NP
+sub,ashba002,"Andy Ashby",0,5,12
+play,11,0,jordb001,31,FBBBB,W.1-2
+play,11,0,lopej001,22,CFBBX,7/F7
+play,11,1,petrb001,00,,NP
+sub,bakop001,"Paul Bako",0,5,3
+play,11,1,petrb001,00,X,S8/8S
+play,11,1,huskb001,12,BCFX,64(1)3/GDP
+play,11,1,pierj002,00,X,13/G
+play,12,0,kamis001,00,,NP
+sub,maynb001,"Brent Mayne",1,7,1
+play,12,0,kamis001,00,,NP
+sub,glavt001,"Tom Glavine",0,8,11
+com,"$Brent Mayne is first non-pitcher to win a game since 1968"
+com,"(Rocky Colavito)"
+play,12,0,glavt001,22,CBCFBX,13/G
+play,12,0,weisw001,10,BX,8/F8
+play,12,0,furcr001,01,CX,S8/8S
+play,12,0,jonea002,00,B,WP.1-2
+play,12,0,jonea002,31,BFBBB,W
+play,12,0,jonec004,00,X,53/G
+play,12,1,peren001,00,,NP
+sub,rockj001,"John Rocker",0,8,1
+play,12,1,peren001,12,FCBFX,S8
+play,12,1,heltt001,00,X,S9.1-3
+play,12,1,hammj001,11,BSX,8/L8
+play,12,1,shumt001,00,,NP
+sub,belis001,"Stan Belinda",0,8,1
+play,12,1,shumt001,02,FFC,K/C
+play,12,1,cirij001,30,IIII,IW.1-2
+play,12,1,maynb001,00,,NP
+sub,melha001,"Adam Melhuse",1,7,11
+play,12,1,melha001,00,X,S7.3-H;2-3;1-2
+data,er,burkj001,6
+data,er,mulht001,0
+data,er,remlm001,0
+data,er,ligtk001,0
+data,er,kamis001,0
+data,er,rockj001,1
+data,er,belis001,0
+data,er,yoshm001,4
+data,er,dejem001,2
+data,er,jimej001,0
+data,er,whitg001,0
+data,er,housc001,0
+data,er,choub001,0
+data,er,myerm001,0
+data,er,wasdj001,0
+data,er,bohab001,0
+data,er,maynb001,0

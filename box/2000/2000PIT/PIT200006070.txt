@@ -1,0 +1,138 @@
+version,2
+info,visteam,DET
+info,hometeam,PIT
+info,site,PIT07
+info,date,2000/06/07
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,bellw901
+info,ump1b,onorb901
+info,ump2b,iassd901
+info,ump3b,hirsm901
+info,pitches,pitches
+info,temp,72
+info,winddir,rtol
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,163
+info,attendance,15067
+info,wp,ritct001
+info,lp,nomoh001
+info,save,willm005
+start,easld001,"Damion Easley",0,1,4
+start,cruzd001,"Deivi Cruz",0,2,6
+start,encaj001,"Juan Encarnacion",0,3,8
+start,gonzj002,"Juan Gonzalez",0,4,9
+start,higgb001,"Bobby Higginson",0,5,7
+start,palmd002,"Dean Palmer",0,6,5
+start,fickr001,"Robert Fick",0,7,3
+start,ausmb001,"Brad Ausmus",0,8,2
+start,nomoh001,"Hideo Nomo",0,9,1
+start,nunea001,"Abraham O. Nunez",1,1,4
+start,kendj001,"Jason Kendall",1,2,2
+start,cordw001,"Wil Cordero",1,3,7
+start,gileb002,"Brian Giles",1,4,8
+start,vandj001,"John Vander Wal",1,5,9
+start,younk001,"Kevin Young",1,6,3
+start,sojol001,"Luis Sojo",1,7,5
+start,benjm001,"Mike Benjamin",1,8,6
+start,ritct001,"Todd Ritchie",1,9,1
+play,1,0,easld001,02,CFX,53/G
+play,1,0,cruzd001,12,CBFX,63/G
+play,1,0,encaj001,10,BX,13/G
+play,1,1,nunea001,30,BBBB,W
+play,1,1,kendj001,22,BCBFFS,K
+play,1,1,cordw001,00,X,S7/7S.1-2
+play,1,1,gileb002,22,BSBFX,6/P6
+play,1,1,vandj001,22,CBBFS,K
+play,2,0,gonzj002,10,BX,7/L7
+play,2,0,higgb001,30,BBBB,W
+play,2,0,palmd002,00,X,D8/8D.1-H
+play,2,0,fickr001,02,FSS,K
+play,2,0,ausmb001,22,BFBCX,53/G
+play,2,1,younk001,12,BFSS,K
+play,2,1,sojol001,10,BX,8/F8
+play,2,1,benjm001,02,FCFC,K/C
+play,3,0,nomoh001,02,FSX,13/G
+play,3,0,easld001,10,BX,S
+play,3,0,cruzd001,21,BBFX,D7/7D.1-H
+play,3,0,encaj001,31,BBCBB,W
+play,3,0,gonzj002,11,SBX,8/F8
+play,3,0,higgb001,11,BFX,3/P3
+play,3,1,ritct001,02,FFS,K
+play,3,1,nunea001,10,BX,S
+play,3,1,kendj001,12,BFFX,S9.1-2
+play,3,1,cordw001,00,X,S7.2-3;1-2
+play,3,1,gileb002,30,BBBB,W.3-H;2-3;1-2
+play,3,1,vandj001,31,BBBCX,5/FL
+play,3,1,younk001,12,SBSFC,K/C
+play,4,0,palmd002,02,CFS,K
+play,4,0,fickr001,11,BCX,6/P6
+play,4,0,ausmb001,32,CFBBBX,D9
+play,4,0,nomoh001,32,BFBBCC,K/C
+play,4,1,sojol001,32,BBFFBX,HR/78
+play,4,1,benjm001,01,CX,7/F7
+play,4,1,ritct001,00,X,S8
+play,4,1,nunea001,00,X,9/F9
+play,4,1,kendj001,32,BBCBFFB,W.1-2
+play,4,1,cordw001,32,FFBBBX,S7.2-H;1-3;B-2(TH)
+play,4,1,gileb002,30,BBII,IW
+play,4,1,vandj001,31,BBBCX,8/F8D
+play,5,0,easld001,31,BBBCX,S8
+play,5,0,cruzd001,21,FBBX,46(1)3/GDP
+play,5,0,encaj001,21,BSBX,9/F9S
+play,5,1,younk001,12,CBFX,9/F9
+play,5,1,sojol001,02,CCX,63/G
+play,5,1,benjm001,00,X,D/78
+play,5,1,ritct001,00,X,43/G
+play,6,0,gonzj002,12,CSBS,K
+play,6,0,higgb001,12,FCBFFX,5/P5
+play,6,0,palmd002,02,CFS,K
+play,6,1,nunea001,02,CSS,K
+play,6,1,kendj001,00,X,2/FL
+play,6,1,cordw001,12,FFBX,9/F9
+play,7,0,fickr001,32,BCBBCFS,K
+play,7,0,ausmb001,21,BCBX,63/G
+play,7,0,nomoh001,00,,NP
+sub,polol001,"Luis Polonia",0,9,11
+play,7,0,polol001,32,BFBBCFX,8/F8
+play,7,1,gileb002,00,,NP
+sub,nitkc001,"C.J. Nitkowski",0,9,1
+play,7,1,gileb002,12,CFBX,13/G
+play,7,1,vandj001,10,BX,7/F7
+play,7,1,younk001,32,CBSBBX,HR/8
+play,7,1,sojol001,21,CBBX,13/G
+play,8,0,easld001,22,CBCBX,63/G
+play,8,0,cruzd001,21,CBBX,9/F9
+play,8,0,encaj001,11,CBX,43/G
+play,8,1,benjm001,32,BCSBFBS,K
+play,8,1,ritct001,00,,NP
+sub,avenb001,"Bruce Aven",1,9,11
+play,8,1,avenb001,00,,NP
+sub,andem002,"Matt Anderson",0,3,1
+play,8,1,avenb001,00,,NP
+sub,beckr002,"Rich Becker",0,9,8
+play,8,1,avenb001,22,CFFBBC,K/C
+play,8,1,nunea001,12,BCSS,K
+play,9,0,gonzj002,00,,NP
+sub,browa001,"Adrian Brown",1,5,9
+play,9,0,gonzj002,00,,NP
+sub,willm005,"Mike Williams",1,9,1
+play,9,0,gonzj002,11,BCX,D9
+play,9,0,higgb001,32,SBBBFX,9/F9
+play,9,0,palmd002,00,X,S.2-2
+play,9,0,fickr001,00,X,S8.2-H;1-3;B-2(TH)
+play,9,0,ausmb001,00,,NP
+sub,halts001,"Shane Halter",0,6,12
+play,9,0,ausmb001,22,BBFSFS,K
+play,9,0,beckr002,32,BCBSBB,W
+play,9,0,easld001,12,BSSX,63/G
+data,er,nomoh001,3
+data,er,nitkc001,1
+data,er,andem002,0
+data,er,ritct001,2
+data,er,willm005,1

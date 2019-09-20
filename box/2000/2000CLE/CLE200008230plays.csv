@@ -1,0 +1,84 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,32,1,,,,,0,6,CBBFBC,colob001,1,0,menef001 strikes out. ,menef001,0,
+,01,1,longt002,,,,1,8,CX,colob001,0,0,longt002 singles. ,longt002,0,
+longt002 to 2B. ,22,1,tejam001,longt002,,,2,13,BBFCX,colob001,0,0,tejam001 singles. ,tejam001,0,
+longt002 scores. tejam001 to 3B. ,10,1,,grieb001,tejam001,,3,15,BX,colob001,0,1,grieb001 doubles. ,grieb001,0,
+,22,1,,grieb001,tejam001,,4,20,SFBBC,colob001,1,0,stanm002 strikes out. ,stanm002,0,
+,30,1,staim001,grieb001,tejam001,,5,24,IIII,colob001,0,0,staim001 intentionally walks. ,staim001,0,
+tejam001 scores. grieb001 scores. staim001 to 3B. ,01,1,,piata001,staim001,,6,26,CX,colob001,0,2,piata001 doubles. ,piata001,0,
+,21,1,,piata001,staim001,,7,30,BBCX,colob001,1,0,,chave001,0,P
+,20,1,,,,,8,3,BBX,hudst001,1,0,,loftk001,1,F
+,22,1,,,,,9,8,BBCFC,hudst001,1,0,vizqo001 strikes out. ,vizqo001,1,
+,11,1,,,,,10,11,CBX,hudst001,1,0,,alomr001,1,F
+,01,2,,,,,11,32,CX,colob001,1,0,,hernr002,0,F
+,21,2,,,,,12,36,BSBX,colob001,1,0,menef001 grounds out. ,menef001,0,G
+,00,2,longt002,,,,13,37,X,colob001,0,0,longt002 singles. ,longt002,0,
+,11,2,longt002,,,,14,40,CBX,colob001,1,0,,tejam001,0,
+,02,2,,,,,15,15,CCFX,hudst001,1,0,,ramim002,1,L
+,01,2,,,,,16,17,FX,hudst001,0,1,thomj002 homers. ,thomj002,1,
+,10,2,,,,,17,19,BX,hudst001,1,0,segud001 grounds out. ,segud001,1,G
+,32,2,,,,,18,25,BBCFBS,hudst001,1,0,frymt001 strikes out. ,frymt001,1,
+,20,3,,,,,19,43,BBX,colob001,1,0,,grieb001,0,F
+,31,3,stanm002,,,,20,48,CBBBB,colob001,0,0,stanm002 walks. ,stanm002,0,
+stanm002 to 2B. ,31,3,staim001,stanm002,,,21,53,BBSBB,colob001,0,0,staim001 walks. ,staim001,0,
+,02,3,staim001,stanm002,,,22,57,CCFC,colob001,1,0,piata001 strikes out. ,piata001,0,
+,01,3,staim001,stanm002,,,23,59,SX,colob001,1,0,,chave001,0,F
+,01,3,,,,,24,27,CX,hudst001,1,0,cordw001 grounds out. ,cordw001,1,G
+,12,3,,,,,25,31,SFBS,hudst001,1,0,diaze002 strikes out. ,diaze002,1,
+,22,3,,,,,26,36,BCBFX,hudst001,1,0,loftk001 grounds out. ,loftk001,1,G
+,11,4,,,,,27,62,BCX,colob001,1,0,hernr002 grounds out. ,hernr002,0,G
+,22,4,,,,,28,67,SBCBC,colob001,1,0,menef001 strikes out. ,menef001,0,
+,20,4,,,,,29,70,BBX,colob001,1,0,longt002 grounds out. ,longt002,0,G
+,00,4,,,,,30,37,X,hudst001,1,0,vizqo001 grounds out. ,vizqo001,1,G
+,31,4,,,,,31,42,CBBBX,hudst001,1,0,alomr001 grounds out. ,alomr001,1,G
+,00,4,ramim002,,,,32,43,X,hudst001,0,0,ramim002 singles. ,ramim002,1,
+,12,4,ramim002,,,,33,47,CBFS,hudst001,1,0,thomj002 strikes out. ,thomj002,1,
+,11,5,,,,,34,73,FBX,colob001,1,0,,tejam001,0,F
+,20,5,,,,,35,76,BBX,colob001,1,0,grieb001 grounds out. ,grieb001,0,G
+,32,5,stanm002,,,,36,82,BBSBFB,colob001,0,0,stanm002 walks. ,stanm002,0,
+stanm002 to 2B. ,31,5,staim001,stanm002,,,37,87,BBBCB,colob001,0,0,staim001 walks. ,staim001,0,
+,20,5,staim001,stanm002,,,38,90,BBX,colob001,1,0,piata001 grounds out. ,piata001,0,G
+,10,5,segud001,,,,39,49,BX,hudst001,0,0,segud001 singles. ,segud001,1,
+segud001 to 2B. ,11,5,frymt001,segud001,,,40,52,CBX,hudst001,0,0,frymt001 singles. ,frymt001,1,
+segud001 to 3B. frymt001 to 2B. ,32,5,cordw001,frymt001,segud001,,41,58,CFBBBB,hudst001,0,0,cordw001 walks. ,cordw001,1,
+frymt001 to 3B. cordw001 to 2B. segud001 out. ,01,5,diaze002,cordw001,frymt001,,42,60,SX,hudst001,1,0,diaze002 reaches on fielder's choice. ,diaze002,1,
+frymt001 scores. cordw001 scores. diaze002 to 3B. ,00,5,,loftk001,diaze002,,43,61,X,hudst001,0,2,loftk001 doubles. ,loftk001,1,
+diaze002 scores. loftk001 scores. ,00,5,vizqo001,,,,44,62,X,hudst001,0,2,vizqo001 singles. ,vizqo001,1,
+,21,5,,,,,45,66,CBBX,hudst001,2,0,Double Play. ,alomr001,1,
+,12,6,,,,,46,95,CCBFS,colob001,1,0,chave001 strikes out. ,chave001,0,
+,12,6,,hernr002,,,47,100,BFFFX,colob001,0,0,hernr002 doubles. ,hernr002,0,
+,30,6,menef001,hernr002,,,49,4,BBBB,shuep001,0,0,menef001 walks. ,menef001,0,
+hernr002 to 3B. menef001 to 2B. ,00,6,,menef001,hernr002,,50,5,X,shuep001,1,0,longt002 grounds out. ,longt002,0,G
+hernr002 scores. menef001 scores. ,11,6,,tejam001,,,51,8,BFX,shuep001,0,2,tejam001 doubles. ,tejam001,0,
+,31,6,grieb001,tejam001,,,52,13,BCBBB,shuep001,0,0,grieb001 walks. ,grieb001,0,
+tejam001 to 3B. grieb001 out. ,22,6,stanm002,,tejam001,,53,18,BCBFX,shuep001,1,0,stanm002 reaches on fielder's choice. ,stanm002,0,
+,22,6,,,,,54,71,CBBFS,hudst001,1,0,ramim002 strikes out. ,ramim002,1,
+,32,6,thomj002,,,,55,77,BCFBBX,hudst001,0,0,thomj002 singles. ,thomj002,1,
+thomj002 scores. ,10,6,,segud001,,,56,79,BX,hudst001,0,1,segud001 doubles. ,segud001,1,
+segud001 scores. ,22,6,,frymt001,,,58,5,BFBFX,joned001,0,1,frymt001 doubles. ,frymt001,1,
+frymt001 out. cordw001 to 1B. ,01,6,cordw001,,,,59,7,CX,joned001,1,0,cordw001 hits into a fielder's choice. ,cordw001,1,
+cordw001 to 2B. ,21,6,diaze002,cordw001,,,60,11,BBCX,joned001,0,0,diaze002 singles. ,diaze002,1,
+,00,6,diaze002,cordw001,,,61,12,X,joned001,1,0,,loftk001,1,F
+,32,7,,,,,62,24,CBSBBX,shuep001,1,0,staim001 grounds out. ,staim001,0,G
+,32,7,,piata001,,,63,32,BCBFFBFX,shuep001,0,0,piata001 doubles. ,piata001,0,
+,00,7,,piata001,,,66,1,X,rincr001,1,0,,byrne001,0,F
+,12,7,,piata001,,,68,4,BCCX,karss001,1,0,hernr002 grounds out. ,hernr002,0,G
+,10,7,,,,,72,2,BX,magnm001,1,0,,vizqo001,1,F
+,22,7,alomr001,,,,73,11,CSBFFFBFX,magnm001,0,0,alomr001 singles. ,alomr001,1,
+alomr001 to 2B. ,00,7,ramim002,alomr001,,,74,12,X,magnm001,0,0,ramim002 singles. ,ramim002,1,
+,12,7,cabrj002,alomr001,,,76,16,FFBS,magnm001,1,0,thomj002 strikes out. ,thomj002,1,
+alomr001 to 3B. cabrj002 out. ,00,7,segud001,,alomr001,,77,17,X,magnm001,1,0,segud001 reaches on fielder's choice. ,segud001,1,
+,22,8,menef001,,,,79,9,BBCFX,karss001,0,0,menef001 singles. ,menef001,0,
+,22,8,menef001,,,,80,15,CFBBFC,karss001,1,0,longt002 strikes out. ,longt002,0,
+menef001 to 2B. ,30,8,tejam001,menef001,,,81,19,BBBB,karss001,0,0,tejam001 walks. ,tejam001,0,
+menef001 to 3B. tejam001 to 2B. ,31,8,grieb001,tejam001,menef001,,82,24,BBBCB,karss001,0,0,grieb001 walks. ,grieb001,0,
+,02,8,grieb001,tejam001,menef001,,83,27,CSC,karss001,1,0,stanm002 strikes out. ,stanm002,0,
+,20,8,grieb001,tejam001,menef001,,84,30,BBX,karss001,1,0,staim001 grounds out. ,staim001,0,G
+,30,8,frymt001,,,,86,4,BBBB,mecij001,0,0,frymt001 walks. ,frymt001,1,
+,11,8,frymt001,,,,87,7,CBX,mecij001,1,0,,cordw001,1,F
+frymt001 out. ,12,8,diaze002,,,,88,11,CBFX,mecij001,1,0,diaze002 reaches on fielder's choice. ,diaze002,1,
+,20,8,diaze002,,,,89,14,BBX,mecij001,1,0,,loftk001,1,F
+,22,9,,,,,91,8,BBCCFFFX,wickb001,1,0,piata001 grounds out. ,piata001,0,G
+,01,9,,,,,92,10,CX,wickb001,1,0,,byrne001,0,F
+,02,9,hernr002,,,,93,14,CSFX,wickb001,0,0,hernr002 singles. ,hernr002,0,
+,02,9,hernr002,,,,94,17,CSX,wickb001,1,0,menef001 grounds out. ,menef001,0,G

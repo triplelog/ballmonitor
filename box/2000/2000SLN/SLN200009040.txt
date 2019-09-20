@@ -1,0 +1,148 @@
+version,2
+info,visteam,MON
+info,hometeam,SLN
+info,site,STL09
+info,date,2000/09/04
+info,number,0
+info,starttime,1:10PM
+info,daynight,day
+info,usedh,false
+info,umphome,vanvm901
+info,ump1b,reilm901
+info,ump2b,diazl901
+info,ump3b,coope901
+info,pitches,pitches
+info,temp,78
+info,winddir,rtol
+info,windspeed,9
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,175
+info,attendance,39704
+info,wp,hentp001
+info,lp,vazqj001
+info,save,vered001
+start,bradm001,"Milton Bradley",0,1,8
+start,bergp001,"Peter Bergeron",0,2,7
+start,vidrj001,"Jose Vidro",0,3,4
+start,guerv001,"Vladimir Guerrero",0,4,9
+start,stevl001,"Lee Stevens",0,5,3
+start,blumg001,"Geoff Blum",0,6,5
+start,cabro001,"Orlando Cabrera",0,7,6
+start,barrm003,"Michael Barrett",0,8,2
+start,vazqj001,"Javier Vazquez",0,9,1
+start,polap001,"Placido Polanco",1,1,4
+start,drewj001,"J.D. Drew",1,2,8
+start,davie001,"Eric Davis",1,3,9
+start,clarw001,"Will Clark",1,4,3
+start,tatif001,"Fernando Tatis",1,5,5
+start,lankr001,"Ray Lankford",1,6,7
+start,rente001,"Edgar Renteria",1,7,6
+start,mathm001,"Mike Matheny",1,8,2
+start,hentp001,"Pat Hentgen",1,9,1
+play,1,0,bradm001,32,CBBBFX,6/P6
+play,1,0,bergp001,32,BFBFBFFFFFB,W
+play,1,0,vidrj001,10,BX,9/F9
+play,1,0,guerv001,00,B,CS2(24)
+play,1,1,polap001,00,X,63/G
+play,1,1,drewj001,10,BX,8/F8
+play,1,1,davie001,02,CCFS,K
+play,2,0,guerv001,12,CFFFBX,53/G
+play,2,0,stevl001,00,X,43/G
+play,2,0,blumg001,12,CBFFX,S9
+play,2,0,cabro001,22,FBBFX,54(1)/FO
+play,2,1,clarw001,30,BBBB,W
+play,2,1,tatif001,12,CSBS,K
+play,2,1,lankr001,32,BBFBFS,K+SB2
+play,2,1,rente001,10,BX,3/G
+play,3,0,barrm003,01,CX,S5/BG5
+play,3,0,vazqj001,00,X,34/SH.1-2
+play,3,0,bradm001,30,BBBB,W
+play,3,0,bergp001,12,BCFC,K/C
+play,3,0,vidrj001,32,BBBCFB,W.2-3;1-2
+play,3,0,guerv001,32,BCBBFS,K
+com,"ej,guerv001,P,vanvm901,Balls and strikes"
+com,"Vlad Guerrero ejected by HP umpire Mike Vanvleet"
+play,3,1,mathm001,00,,NP
+sub,seguf001,"Fernando Seguignol",0,4,9
+play,3,1,mathm001,22,SBCBFC,K/C
+play,3,1,hentp001,02,CCFFS,K23
+play,3,1,polap001,01,CX,9/F9
+play,4,0,stevl001,02,CCS,K
+play,4,0,blumg001,11,BFX,S9
+play,4,0,cabro001,00,X,7/L7
+play,4,0,barrm003,11,BSX,3/L3
+play,4,1,drewj001,22,SBBCX,S9
+play,4,1,davie001,30,BBBB,W.1-2
+play,4,1,clarw001,01,CX,7/F7
+play,4,1,tatif001,32,CBBBCX,9/F9
+play,4,1,lankr001,31,FBBBB,W.2-3;1-2
+play,4,1,rente001,00,X,T/89.3-H;2-H;1-H
+play,4,1,mathm001,30,BIII,IW
+play,4,1,hentp001,31,BBBCX,63/G
+play,5,0,vazqj001,22,BCCFBX,S
+play,5,0,bradm001,00,X,6(1)3/GDP
+play,5,0,bergp001,32,BCFFBBFX,T9
+play,5,0,vidrj001,00,X,9/F9
+play,5,1,polap001,00,X,S8
+play,5,1,drewj001,32,SBSBBS,K+SB2
+play,5,1,davie001,22,CFBBX,43/G.2-3
+play,5,1,clarw001,12,CBFS,K
+play,6,0,seguf001,00,X,5/FL
+play,6,0,stevl001,22,FBFBFX,S9
+play,6,0,blumg001,12,BCCX,43/G.1-2
+play,6,0,cabro001,00,X,43/G
+play,6,1,tatif001,32,CBCFBBS,K23
+play,6,1,lankr001,32,CBSFBBC,K/C
+play,6,1,rente001,02,CFX,S7
+play,6,1,mathm001,21,SBBB,SB2
+play,6,1,mathm001,31,SBBBB,W
+play,6,1,hentp001,22,BFCBC,K/C
+play,7,0,barrm003,31,BBCBX,S7
+play,7,0,vazqj001,00,,NP
+sub,jonet004,"Terry Jones",0,9,11
+play,7,0,jonet004,01,FX,54(1)/FO
+play,7,0,bradm001,31,BFBBC,CS2(24)
+play,7,0,bradm001,32,BFBBCX,31/G
+play,7,1,polap001,00,,NP
+sub,traca001,"Andy Tracy",0,5,3
+play,7,1,polap001,00,,NP
+sub,motag001,"Guillermo Mota",0,9,1
+play,7,1,polap001,02,CFX,31/G
+play,7,1,drewj001,22,FBBFS,K
+play,7,1,davie001,22,BCFBX,S8/8S
+play,7,1,clarw001,01,CX,7/F7
+play,8,0,bergp001,00,,NP
+sub,benea001,"Andy Benes",1,9,1
+play,8,0,bergp001,02,CCX,D/89
+play,8,0,vidrj001,20,BBX,6/P6
+play,8,0,seguf001,10,BX,HR/9.2-H
+play,8,0,traca001,00,,NP
+sub,chrij002,"Jason Christiansen",1,9,1
+play,8,0,traca001,21,BSBX,9/F9
+play,8,0,blumg001,00,,NP
+sub,paquc001,"Craig Paquette",1,9,9
+play,8,0,blumg001,00,,NP
+sub,vered001,"Dave Veres",1,3,1
+play,8,0,blumg001,02,CSFS,K
+play,8,1,tatif001,32,BBCFFBB,W
+play,8,1,lankr001,32,FSBFBBFX,8/F8
+play,8,1,rente001,11,BFX,53/G.1-2
+play,8,1,mathm001,00,X,S9.2-H
+play,8,1,paquc001,22,BFBFFX,53/G
+play,9,0,cabro001,00,,NP
+sub,drewj001,"J.D. Drew",1,2,9
+play,9,0,cabro001,00,,NP
+sub,edmoj001,"Jim Edmonds",1,9,8
+play,9,0,cabro001,10,BX,9/F9
+play,9,0,barrm003,01,FX,9/F9
+play,9,0,motag001,00,,NP
+sub,guerw001,"Wilton Guerrero",0,9,11
+play,9,0,guerw001,12,SBSX,9/F9
+data,er,vazqj001,3
+data,er,motag001,1
+data,er,hentp001,0
+data,er,benea001,2
+data,er,chrij002,0
+data,er,vered001,0

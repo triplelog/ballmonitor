@@ -1,0 +1,77 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,10,1,,,,,0,2,BX,tapak001,1,0,,veraq001,0,F
+,32,1,,,,,1,8,BBFBSX,tapak001,1,0,jonea002 grounds out. ,jonea002,0,G
+,31,1,jonec004,,,,2,13,BFBBB,tapak001,0,0,jonec004 walks. ,jonec004,0,
+,22,1,jonec004,,,,3,18,CBBSC,tapak001,1,0,galaa001 strikes out. ,galaa001,0,
+,10,1,youne001,,,,4,2,BX,glavt001,0,0,youne001 singles. ,youne001,1,
+,00,1,,youne001,,giraj001,5,3,C,glavt001,0,0,youne001 steals 2B. ,giraj001,1,
+youne001 to 3B. ,01,1,,,youne001,,6,5,CX,glavt001,1,0,Sacrifice bunt by giraj001.,giraj001,1,
+,30,1,gracm001,,youne001,,7,9,BBBB,glavt001,0,0,gracm001 walks. ,gracm001,1,
+,32,1,gracm001,,youne001,,8,17,CBBSFFBS,glavt001,1,0,sosas001 strikes out. ,sosas001,1,
+,00,1,gracm001,,youne001,,9,18,X,glavt001,1,0,hillg001 grounds out. ,hillg001,1,G
+,00,2,jordb001,,,,10,19,X,tapak001,0,0,jordb001 singles. ,jordb001,0,
+,10,2,,,,,11,21,BX,tapak001,2,0,Double Play. ,lopej001,0,
+,30,2,,,,,12,25,BBBX,tapak001,1,0,sandr002 grounds out. ,sandr002,0,G
+,02,2,,,,,13,21,CSS,glavt001,1,0,greew001 strikes out. ,greew001,1,
+,12,2,,,,,14,25,CBFC,glavt001,1,0,bufod001 strikes out. ,bufod001,1,
+,12,2,,,,,15,29,CBFX,glavt001,1,0,,husoj001,1,
+,02,3,furcr001,,,,16,28,CSX,tapak001,0,0,furcr001 singles. ,furcr001,0,
+,00,3,furcr001,,,,17,29,X,tapak001,1,0,,glavt001,0,P
+,12,3,,,,,18,33,CCBS,tapak001,2,0,veraq001 strikes out. furcr001 caught stealing. ,veraq001,0,
+,00,3,,,,,19,30,X,glavt001,1,0,tapak001 grounds out. ,tapak001,1,G
+,01,3,youne001,,,,20,32,CX,glavt001,0,0,youne001 singles. ,youne001,1,
+,02,3,,youne001,,giraj001,21,35,FCB,glavt001,0,0,youne001 steals 2B. ,giraj001,1,
+youne001 scores. ,32,3,,giraj001,,,22,42,FCBFBBX,glavt001,0,1,giraj001 doubles. ,giraj001,1,
+giraj001 scores. ,12,3,gracm001,,,,23,46,CBSX,glavt001,0,1,gracm001 singles. ,gracm001,1,
+,22,3,gracm001,,,,24,54,BBSCFFFS,glavt001,1,0,sosas001 strikes out. ,sosas001,1,
+,31,3,gracm001,,,,25,59,CBBBX,glavt001,1,0,,hillg001,1,F
+,22,4,,,,,26,38,CBCBS,tapak001,1,0,jonea002 strikes out. ,jonea002,0,
+,00,4,,,,,27,39,X,tapak001,1,0,jonec004 grounds out. ,jonec004,0,G
+,22,4,,,,,28,45,CBBFFX,tapak001,1,0,,galaa001,0,L
+,32,4,greew001,,,,29,66,BFBSBFB,glavt001,0,0,greew001 walks. ,greew001,1,
+,00,4,,greew001,,bufod001,30,67,S,glavt001,0,0,greew001 steals 2B. ,bufod001,1,
+greew001 scores. ,12,4,,,,,31,73,SSFFBX,glavt001,0,2,bufod001 homers. ,bufod001,1,
+,22,4,,,,,32,78,CCBBX,glavt001,1,0,husoj001 grounds out. ,husoj001,1,G
+,22,4,,,,,33,83,BCSBC,glavt001,1,0,tapak001 strikes out. ,tapak001,1,
+,22,4,youne001,,,,34,91,FCBFBFFX,glavt001,0,0,youne001 singles. ,youne001,1,G
+,01,4,,youne001,,giraj001,35,93,SB,glavt001,0,0,youne001 to 2B on CS Error. ,giraj001,1,
+,32,4,giraj001,,youne001,,36,99,SBFBBB,glavt001,0,0,giraj001 walks. youne001 steals 3B. ,giraj001,1,
+,01,4,giraj001,,youne001,,37,101,CX,glavt001,1,0,,gracm001,1,
+,22,5,,,,,38,50,BFBCX,tapak001,1,0,jordb001 grounds out. ,jordb001,0,G
+,00,5,,,,,39,51,X,tapak001,1,0,lopej001 grounds out. ,lopej001,0,G
+,12,5,,,,,40,55,BCFC,tapak001,1,0,sandr002 strikes out. ,sandr002,0,
+,30,5,sosas001,,,,41,105,BBBB,glavt001,0,0,sosas001 walks. ,sosas001,1,
+,22,5,sosas001,,,,42,110,SSBBC,glavt001,1,0,hillg001 strikes out. ,hillg001,1,
+,31,5,,sosas001,,greew001,43,115,BBFBS,glavt001,0,0,sosas001 steals 2B. ,greew001,1,
+,32,5,,sosas001,,,44,121,BBFBSC,glavt001,1,0,greew001 strikes out. ,greew001,1,
+,30,5,bufod001,sosas001,,,45,125,IIII,glavt001,0,0,bufod001 intentionally walks. ,bufod001,1,
+,00,5,bufod001,sosas001,,,46,126,X,glavt001,1,0,husoj001 grounds out. ,husoj001,1,G
+,22,6,,,,,47,60,CBSBS,tapak001,1,0,furcr001 strikes out. ,furcr001,0,
+,12,6,,,,,49,64,BCCX,tapak001,1,0,,lockk001,0,
+,02,6,,,,,50,67,CFX,tapak001,1,0,,veraq001,0,F
+,10,6,,,,,52,2,BX,ligtk001,1,0,,tapak001,1,P
+,21,6,,youne001,,,53,6,CBBX,ligtk001,0,0,youne001 doubles. ,youne001,1,
+youne001 scores. ,11,6,,giraj001,,,54,9,CBX,ligtk001,0,1,giraj001 doubles. ,giraj001,1,
+,22,6,,giraj001,,,55,14,SBBCX,ligtk001,1,0,,gracm001,1,F
+,30,6,sosas001,giraj001,,,56,18,IIII,ligtk001,0,0,sosas001 intentionally walks. ,sosas001,1,
+,12,6,sosas001,giraj001,,,57,22,CSBS,ligtk001,1,0,hillg001 strikes out. ,hillg001,1,
+,32,7,jonea002,,,,59,73,BBBCCX,tapak001,0,0,jonea002 singles. ,jonea002,0,
+jonea002 to 2B. ,22,7,jonec004,jonea002,,,60,78,BCBFX,tapak001,0,0,jonec004 singles. ,jonec004,0,
+jonea002 scores. jonec004 scores. ,12,7,,,,,61,83,CFBFX,tapak001,0,3,galaa001 homers. ,galaa001,0,
+,12,7,,,,,62,87,SBCX,tapak001,1,0,jordb001 grounds out. ,jordb001,0,G
+,31,7,lopej001,,,,63,92,BCBBB,tapak001,0,0,lopej001 walks. ,lopej001,0,
+,21,7,,,,,64,96,BBSX,tapak001,2,0,Double Play. ,sandr002,0,
+,22,7,,,,,66,5,FBBSX,chenb001,1,0,,greew001,1,F
+,32,7,,bufod001,,,67,11,BCCBBX,chenb001,0,0,bufod001 doubles. ,bufod001,1,
+,10,7,,bufod001,,,68,13,BX,chenb001,1,0,,husoj001,1,F
+,12,7,,bufod001,,,70,17,CSBS,chenb001,1,0,zulej001 strikes out. ,zulej001,1,
+,22,8,,,,,72,6,BSCFBS,vanpt001,1,0,furcr001 strikes out. ,furcr001,0,
+,32,8,,,,,74,12,SBBBSC,vanpt001,1,0,joynw001 strikes out. ,joynw001,0,
+,32,8,veraq001,,,,75,18,CCBBBX,vanpt001,0,0,veraq001 singles. ,veraq001,0,
+,02,8,veraq001,,,,76,21,CFS,vanpt001,1,0,jonea002 strikes out. ,jonea002,0,
+,22,8,,,,,78,5,BFCBX,seanr001,1,0,,youne001,1,F
+,22,8,,,,,79,11,BFCBFX,seanr001,1,0,giraj001 grounds out. ,giraj001,1,G
+,00,8,,,,,80,12,X,seanr001,1,0,,gracm001,1,F
+,12,9,,,,,82,4,BCSC,heref001,1,0,jonec004 strikes out. ,jonec004,0,
+,11,9,,,,,84,3,SBX,aguir001,1,0,,galaa001,0,F
+,10,9,,,,,85,5,BX,aguir001,1,0,,jordb001,0,F

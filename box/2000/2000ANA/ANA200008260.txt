@@ -1,0 +1,165 @@
+version,2
+info,visteam,CLE
+info,hometeam,ANA
+info,site,ANA01
+info,date,2000/08/26
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,davig901
+info,ump1b,guccc901
+info,ump2b,emmep901
+info,ump3b,packs901
+info,pitches,pitches
+info,oscorer,munse701
+info,temp,79
+info,winddir,ltor
+info,windspeed,4
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,224
+info,attendance,37697
+info,wp,berej002
+info,lp,schos001
+info,save,
+start,loftk001,"Kenny Lofton",0,1,8
+start,vizqo001,"Omar Vizquel",0,2,6
+start,alomr001,"Roberto Alomar",0,3,4
+start,ramim002,"Manny Ramirez",0,4,9
+start,segud001,"David Segui",0,5,3
+start,frymt001,"Travis Fryman",0,6,5
+start,thomj002,"Jim Thome",0,7,10
+start,cordw001,"Wil Cordero",0,8,7
+start,aloms001,"Sandy Alomar",0,9,2
+start,berej002,"Jason Bere",0,0,1
+start,erstd001,"Darin Erstad",1,1,10
+start,stock001,"Kevin Stocker",1,2,6
+start,vaugm001,"Mo Vaughn",1,3,3
+start,salmt001,"Tim Salmon",1,4,9
+start,andeg001,"Garret Anderson",1,5,8
+start,glaut001,"Troy Glaus",1,6,5
+start,kenna001,"Adam Kennedy",1,7,4
+start,molib001,"Ben Molina",1,8,2
+start,gantr001,"Ron Gant",1,9,7
+start,schos001,"Scott Schoeneweis",1,0,1
+play,1,0,loftk001,12,CFBS,K
+play,1,0,vizqo001,11,CBX,53/G
+play,1,0,alomr001,22,CFBFBX,D7
+play,1,0,ramim002,21,BFBX,53/G
+play,1,1,erstd001,22,CBFBC,K/C
+play,1,1,stock001,31,BBBCB,W
+play,1,1,vaugm001,22,BCFBFS,K
+play,1,1,salmt001,22,BCBCX,9/F9
+play,2,0,segud001,20,BBX,9/F9
+play,2,0,frymt001,21,BFBX,63/G
+play,2,0,thomj002,10,BX,43/G
+play,2,1,andeg001,01,FX,S9
+play,2,1,glaut001,02,SCS,K
+play,2,1,kenna001,21,BCBX,8/F8
+play,2,1,molib001,21,BSBX,53/G
+play,3,0,cordw001,32,BFFBBX,53/G
+play,3,0,aloms001,11,BFX,43/G
+play,3,0,loftk001,00,X,13/G
+play,3,1,gantr001,32,BCBBSB,W
+play,3,1,erstd001,02,CFX,36(1)/FO
+play,3,1,stock001,20,BBX,8/F8
+play,3,1,vaugm001,22,BFCBFS,K
+play,4,0,vizqo001,11,FBX,S9
+play,4,0,alomr001,21,BFBX,E1/TH.1-3
+play,4,0,ramim002,10,BX,8/SF.3-H
+play,4,0,segud001,10,BX,D/78D.1-H
+play,4,0,frymt001,12,CSBX,43/G.2-3
+play,4,0,thomj002,00,X,23/G
+play,4,1,salmt001,31,BFBBB,W
+play,4,1,andeg001,02,CSX,S/78.1-3
+play,4,1,glaut001,02,CSX,64(1)/FO.3-H
+play,4,1,kenna001,31,BBFBB,W.1-2
+play,4,1,molib001,00,X,9/F9.2-3
+play,4,1,gantr001,22,BLFBS,K
+play,5,0,cordw001,10,BX,D/89D
+play,5,0,aloms001,30,BBBB,W
+play,5,0,loftk001,22,CBBLX,7/FL
+play,5,0,vizqo001,20,BBX,46(1)3/GDP
+play,5,1,erstd001,10,BX,9/F9
+play,5,1,stock001,11,BCX,9/F9
+play,5,1,vaugm001,12,SFBS,K
+play,6,0,alomr001,02,CFX,3/P3
+play,6,0,ramim002,12,FBFX,D/78
+play,6,0,segud001,22,CBSBFX,63/G.2-3
+play,6,0,frymt001,32,BBFFFFBB,W
+play,6,0,thomj002,10,BX,S/89.3-H;1-3
+play,6,0,cordw001,22,FSBBX,S.3-H;1-2
+play,6,0,aloms001,00,X,54(1)/FO.2-3
+play,6,1,salmt001,31,FBBBX,S7
+play,6,1,andeg001,01,FX,S9/9S.1-2
+play,6,1,glaut001,12,SBCS,K
+play,6,1,kenna001,12,BCFFX,8/F8
+play,6,1,molib001,30,BBBB,W.2-3;1-2
+play,6,1,gantr001,00,,NP
+sub,shuep001,"Paul Shuey",0,0,1
+play,6,1,gantr001,22,BSSBS,K
+play,7,0,loftk001,31,BBBCX,S/89
+play,7,0,vizqo001,01,CB,SB2
+play,7,0,vizqo001,31,CBBBB,W
+play,7,0,alomr001,00,,NP
+sub,petkm001,"Mark Petkovsek",1,0,1
+play,7,0,alomr001,00,X,8/F8
+play,7,0,ramim002,22,FBBSFH,HP.2-3;1-2
+play,7,0,segud001,00,X,64(1)/FO.3-H;2-3
+play,7,0,frymt001,22,BCCBFX,S.3-H;1-3
+play,7,0,thomj002,00,,NP
+sub,alvaj002,"Juan Alvarez",1,0,1
+play,7,0,thomj002,22,CSBBX,43/G
+play,7,1,erstd001,01,CX,43/G
+play,7,1,stock001,32,FBSFBBX,43/G
+play,7,1,vaugm001,01,SX,8/F8
+play,8,0,cordw001,00,,NP
+sub,potel001,"Lou Pote",1,0,1
+play,8,0,cordw001,01,CX,E3/G
+play,8,0,aloms001,00,,NP
+sub,cabrj002,"Jolbert Cabrera",0,8,12
+play,8,0,aloms001,12,CCBX,S.1-2
+play,8,0,loftk001,11,BFX,16(1)3/GDP.2-3
+play,8,0,vizqo001,31,BBBCX,S/78.3-H(UR)
+play,8,0,alomr001,22,CFBBX,6/L6
+play,8,1,salmt001,00,,NP
+sub,cabrj002,"Jolbert Cabrera",0,8,7
+play,8,1,salmt001,31,BBBCB,W
+play,8,1,andeg001,32,BBFFBFFX,S8.1-3
+play,8,1,glaut001,00,,NP
+sub,karss001,"Steve Karsay",0,0,1
+play,8,1,glaut001,12,CSBFFX,S/78.3-H;1-2
+play,8,1,kenna001,12,SCBS,K
+play,8,1,molib001,10,BX,S9.2-3;1-2
+play,8,1,gantr001,32,CSBBBB,W.3-H;2-3;1-2
+play,8,1,erstd001,00,X,S7/7S.3-H;2-3;1-2
+play,8,1,stock001,32,BSCFBBFX,8/SF.3-H
+play,8,1,vaugm001,00,,NP
+sub,rincr001,"Ricardo Rincon",0,0,1
+play,8,1,vaugm001,31,BCBBX,13/G
+play,9,0,ramim002,00,,NP
+sub,perct001,"Troy Percival",1,0,1
+play,9,0,ramim002,32,BBFBSB,W
+play,9,0,segud001,22,BFFBX,9/F9
+play,9,0,frymt001,01,SX,HR/7.1-H
+play,9,0,thomj002,32,BBCBCX,43/G
+play,9,0,cabrj002,01,CX,2/FL
+play,9,1,salmt001,00,,NP
+sub,wickb001,"Bob Wickman",0,0,1
+play,9,1,salmt001,11,BFX,S7
+play,9,1,andeg001,02,FFFS,K
+play,9,1,glaut001,11,FBB,DI.1-2
+play,9,1,glaut001,31,FBBBX,7/F7
+play,9,1,kenna001,22,BFBSFX,43/G
+data,er,berej002,1
+data,er,shuep001,2
+data,er,karss001,2
+data,er,rincr001,0
+data,er,wickb001,0
+data,er,schos001,6
+data,er,petkm001,0
+data,er,alvaj002,0
+data,er,potel001,0
+data,er,perct001,2

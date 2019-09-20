@@ -1,0 +1,131 @@
+version,2
+info,visteam,CHA
+info,hometeam,BOS
+info,site,BOS07
+info,date,2000/05/08
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,laynj901
+info,ump1b,monte901
+info,ump2b,randt901
+info,ump3b,barrt901
+info,pitches,pitches
+info,temp,66
+info,winddir,tocf
+info,windspeed,18
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,151
+info,attendance,23468
+info,wp,roseb002
+info,lp,sturt001
+info,save,lowed001
+start,durhr001,"Ray Durham",0,1,4
+start,valej003,"Jose Valentin",0,2,6
+start,thomf001,"Frank Thomas",0,3,10
+start,ordom001,"Magglio Ordonez",0,4,9
+start,konep001,"Paul Konerko",0,5,3
+start,singc001,"Chris Singleton",0,6,8
+start,lee-c001,"Carlos Lee",0,7,7
+start,nortg001,"Greg Norton",0,8,5
+start,johnm003,"Mark Johnson",0,9,2
+start,sturt001,"Tanyon Sturtze",0,0,1
+start,offej001,"Jose Offerman",1,1,10
+start,nixot001,"Trot Nixon",1,2,9
+start,daubb001,"Brian Daubach",1,3,3
+start,garcn001,"Nomar Garciaparra",1,4,6
+start,oleat001,"Troy O'Leary",1,5,7
+start,everc001,"Carl Everett",1,6,8
+start,varij001,"Jason Varitek",1,7,2
+start,fryej001,"Jeff Frye",1,8,4
+start,veraw001,"Wilton Veras",1,9,5
+start,roseb002,"Brian Rose",1,0,1
+play,1,0,durhr001,11,BSX,43/G
+play,1,0,valej003,00,X,7/F7
+play,1,0,thomf001,12,CCBX,63/G
+play,1,1,offej001,22,CFBBX,S9
+play,1,1,nixot001,01,SX,S8.1-2
+play,1,1,daubb001,10,BX,S8.2-3;1-2
+play,1,1,garcn001,32,BBFBFX,8/SF.3-H;2-3
+play,1,1,oleat001,21,BFBX,3(B)6(1)/GDP
+play,2,0,ordom001,01,FX,43/G
+play,2,0,konep001,22,BBCFC,K/C
+play,2,0,singc001,31,BBFBX,63/G
+play,2,1,everc001,22,BCBFS,K
+play,2,1,varij001,01,CX,8/F8
+play,2,1,fryej001,02,CCX,43/G
+play,3,0,lee-c001,32,BCBBCFFX,9/F9S
+play,3,0,nortg001,12,SSFBX,2/FL
+play,3,0,johnm003,00,X,7/F7D
+play,3,1,veraw001,32,BCBCBB,W
+play,3,1,offej001,11,LBX,43/G.1-2
+play,3,1,nixot001,21,BBFX,5/FL
+play,3,1,daubb001,32,CBBBCFFFX,D8/8D.2-H
+play,3,1,garcn001,10,BX,8/F8D
+play,4,0,durhr001,11,CBX,D7
+play,4,0,valej003,01,FX,13/SH.2-3
+play,4,0,thomf001,00,X,9/SF.3-H
+play,4,0,ordom001,32,BBFBFX,D/78D
+play,4,0,konep001,20,BBX,7/F7
+play,4,1,oleat001,32,BBFFBX,9/F9
+play,4,1,everc001,10,BX,HR/9
+play,4,1,varij001,22,CBCBX,S9
+play,4,1,fryej001,00,X,64(1)3/GDP
+play,5,0,singc001,12,BSFFC,K/C
+play,5,0,lee-c001,11,BCX,8/F8S
+play,5,0,nortg001,32,BBSFBX,43/G
+play,5,1,veraw001,31,BBFBX,S8
+play,5,1,offej001,00,X,46(1)3/GDP
+play,5,1,nixot001,02,CCX,7/F7
+play,6,0,johnm003,22,BCSBX,7/F7D
+play,6,0,durhr001,10,BX,T9
+play,6,0,valej003,22,CBBSFX,S.3-3
+play,6,0,thomf001,12,CSBX,4/SF.3-H
+play,6,0,ordom001,02,FFFB,CS2(24)
+play,6,1,daubb001,00,,NP
+sub,wunsk001,"Kelly Wunsch",0,0,1
+play,6,1,daubb001,12,FBSFS,K
+play,6,1,garcn001,10,BX,8/F8
+play,6,1,oleat001,22,FBBFS,K
+play,7,0,ordom001,00,,NP
+sub,waket001,"Tim Wakefield",1,0,1
+play,7,0,ordom001,12,FBCFX,9/F9
+play,7,0,konep001,22,BBCFX,5/FL
+play,7,0,singc001,10,BX,S9/9S
+play,7,0,lee-c001,01,CX,D7.1-3
+play,7,0,nortg001,12,CFBS,K
+play,7,1,everc001,00,,NP
+sub,foulk001,"Keith Foulke",0,0,1
+play,7,1,everc001,32,BCSBBX,4/P4
+play,7,1,varij001,32,BCBBFB,W
+play,7,1,fryej001,00,S,CS2(243)
+play,7,1,fryej001,02,SCS,K
+play,8,0,johnm003,12,CSBFX,6/P6
+play,8,0,durhr001,20,BBX,13/G
+play,8,0,valej003,31,BBFBB,W
+play,8,0,thomf001,00,,NP
+sub,lowed001,"Derek Lowe",1,0,1
+play,8,0,thomf001,11,CBX,S7/7S.1-2
+play,8,0,ordom001,11,BFX,6(1)/FO/G.2-3
+play,8,1,veraw001,11,CBX,S9
+play,8,1,offej001,10,BX,3/SH.1-2
+play,8,1,nixot001,02,CFS,K
+play,8,1,daubb001,12,BCCFS,K
+play,9,0,konep001,32,FBBCBX,S7
+play,9,0,singc001,00,,NP
+sub,paulj001,"Josh Paul",0,5,12
+play,9,0,singc001,00,X,13/SH.1-2
+play,9,0,lee-c001,11,BFX,53/G
+play,9,0,nortg001,30,BBBB,W
+play,9,0,johnm003,00,,NP
+sub,perrh001,"Herbert Perry",0,9,11
+play,9,0,perrh001,02,SFX,5(2)/FO.1-2
+data,er,sturt001,3
+data,er,wunsk001,0
+data,er,foulk001,0
+data,er,roseb002,2
+data,er,waket001,0
+data,er,lowed001,0

@@ -1,0 +1,85 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,02,1,,,,,0,3,CLC,daalo001,1,0,huntb002 strikes out. ,huntb002,0,
+,31,1,lansm001,,,,1,8,BFBBX,daalo001,0,0,lansm001 singles. ,lansm001,0,
+lansm001 to 2B. ,00,1,walkl001,lansm001,,,2,9,X,daalo001,0,0,walkl001 singles. ,walkl001,0,G
+lansm001 to 3B. walkl001 to 2B. ,00,1,cirij001,walkl001,lansm001,,3,10,X,daalo001,0,0,cirij001 singles. ,cirij001,0,G
+lansm001 scores. walkl001 scores. cirij001 to 2B. ,22,1,heltt001,cirij001,,,4,16,CBBFFX,daalo001,0,2,heltt001 singles. ,heltt001,0,
+cirij001 scores. heltt001 to 3B. ,11,1,,shumt001,heltt001,,5,19,CBX,daalo001,0,1,shumt001 doubles. ,shumt001,0,
+heltt001 scores. shumt001 to 3B. ,00,1,,,shumt001,,6,20,X,daalo001,1,1,peren001 hits sacrifice fly. ,peren001,0,
+,30,1,servs002,,shumt001,,7,24,IIII,daalo001,0,0,servs002 intentionally walks. ,servs002,0,
+shumt001 scores. servs002 to 2B. ,02,1,yoshm001,servs002,,,8,27,FFX,daalo001,0,1,yoshm001 singles. ,yoshm001,0,
+,10,1,yoshm001,servs002,,,9,29,BX,daalo001,1,0,,huntb002,0,P
+,21,1,friah001,,,,10,4,CBBX,yoshm001,0,0,friah001 singles. ,friah001,1,
+,22,1,,friah001,,bellj001,11,10,BFSFBB,yoshm001,0,0,friah001 steals 2B. ,bellj001,1,
+friah001 to 3B. ,32,1,,,friah001,,12,17,BFSFBBX,yoshm001,1,0,,bellj001,1,F
+,20,1,,,friah001,,13,20,BBX,yoshm001,1,0,,gonzl001,1,P
+,10,1,,,friah001,,14,22,BX,yoshm001,1,0,,durae001,1,F
+,01,2,,,,,15,31,CX,daalo001,1,0,,lansm001,0,F
+,32,2,,,,,16,37,BBCBCS,daalo001,1,0,walkl001 strikes out. ,walkl001,0,
+,20,2,cirij001,,,,17,40,BBH,daalo001,0,0,cirij001 hit by pitch. ,cirij001,0,
+,00,2,cirij001,,,,18,41,X,daalo001,1,0,heltt001 grounds out. ,heltt001,0,G
+,21,2,,,,,19,26,CBBX,yoshm001,1,0,finls001 grounds out. ,finls001,1,G
+,02,2,,,,,20,31,FFFFX,yoshm001,1,0,lee-t002 grounds out. ,lee-t002,1,G
+,10,2,,,,,21,33,BX,yoshm001,1,0,,harrl001,1,F
+,21,3,,,,,22,45,BCBX,daalo001,1,0,shumt001 grounds out. ,shumt001,0,G
+,12,3,,,,,23,49,CCBX,daalo001,1,0,peren001 grounds out. ,peren001,0,G
+,01,3,servs002,,,,24,51,CX,daalo001,0,0,servs002 singles. ,servs002,0,
+servs002 to 2B. ,12,3,yoshm001,servs002,,,25,57,FSBFFX,daalo001,0,0,yoshm001 singles. ,yoshm001,0,
+servs002 to 3B. yoshm001 to 2B. ,21,3,huntb002,yoshm001,servs002,,26,61,BCBX,daalo001,0,0,huntb002 singles. ,huntb002,0,
+,01,3,huntb002,yoshm001,servs002,,27,63,CX,daalo001,1,0,lansm001 grounds out. ,lansm001,0,G
+,02,3,,,,,28,36,CFS,yoshm001,1,0,stink001 strikes out. ,stink001,1,
+,11,3,,,,,29,39,BFX,yoshm001,1,0,,daalo001,1,F
+,00,3,,,,,30,40,X,yoshm001,1,0,friah001 grounds out. ,friah001,1,G
+,00,4,,,,,31,64,X,daalo001,1,0,walkl001 grounds out. ,walkl001,0,G
+,21,4,,,,,32,68,BBFX,daalo001,1,0,,cirij001,0,F
+,10,4,,,,,33,70,BX,daalo001,1,0,heltt001 grounds out. ,heltt001,0,G
+,32,4,bellj001,,,,34,46,BCCBBX,yoshm001,0,0,bellj001 singles. ,bellj001,1,
+,01,4,bellj001,,,,35,48,CX,yoshm001,1,0,,gonzl001,1,F
+,02,4,bellj001,,,,36,51,SSS,yoshm001,1,0,durae001 strikes out. ,durae001,1,
+bellj001 to 3B. finls001 to 2B. ,01,4,,finls001,bellj001,,37,53,CX,yoshm001,0,0,finls001 singles. ,finls001,1,
+,12,4,,finls001,bellj001,,38,57,BCFX,yoshm001,1,0,lee-t002 grounds out. ,lee-t002,1,G
+,01,5,,,shumt001,,39,72,CX,daalo001,0,0,shumt001 triples. ,shumt001,0,
+,10,5,,,shumt001,,40,74,BX,daalo001,1,0,,peren001,0,F
+,30,5,servs002,,shumt001,,41,78,IIII,daalo001,0,0,servs002 intentionally walks. ,servs002,0,
+,00,5,,,shumt001,,42,79,X,daalo001,2,0,Double Play. ,yoshm001,0,
+,10,5,harrl001,,,,43,59,BX,yoshm001,0,0,harrl001 singles. ,harrl001,1,
+,01,5,,,,,44,61,FX,yoshm001,2,0,Double Play. ,stink001,1,
+,12,5,,,,,45,66,FBFFX,yoshm001,1,0,daalo001 grounds out. ,daalo001,1,G
+,00,6,huntb002,,,,46,80,X,daalo001,0,0,huntb002 singles. ,huntb002,0,
+,11,6,,huntb002,,lansm001,47,83,BFB,daalo001,0,0,huntb002 steals 2B. ,lansm001,0,
+huntb002 to 3B. ,21,6,lansm001,,huntb002,,48,87,BFBX,daalo001,0,0,lansm001 singles. ,lansm001,0,
+huntb002 scores. lansm001 out. ,01,6,walkl001,,,,49,89,SX,daalo001,1,1,walkl001 reaches on fielder's choice. ,walkl001,0,
+walkl001 to 2B. ,10,6,cirij001,walkl001,,,50,91,BX,daalo001,0,0,cirij001 reaches on error. ,cirij001,0,G
+walkl001 scores. cirij001 to 3B. ,32,6,heltt001,,cirij001,,51,97,BBCBCX,daalo001,0,1,heltt001 singles. ,heltt001,0,
+cirij001 scores. heltt001 to 2B. ,20,6,,heltt001,,,53,3,BBX,morgm001,1,1,shumt001 grounds out. ,shumt001,0,G
+,31,6,,heltt001,,,54,8,BBBCX,morgm001,1,0,peren001 grounds out. ,peren001,0,G
+,10,6,,,,,55,68,BX,yoshm001,1,0,,friah001,1,F
+,22,6,bellj001,,,,56,73,FBFBX,yoshm001,0,0,bellj001 singles. ,bellj001,1,
+,22,6,bellj001,,,,57,79,BFBCFX,yoshm001,1,0,,gonzl001,1,F
+bellj001 to 2B. ,31,6,durae001,bellj001,,,58,84,BBBCB,yoshm001,0,0,durae001 walks. ,durae001,1,
+bellj001 scores. durae001 to 2B. ,00,6,finls001,durae001,,,59,85,X,yoshm001,0,1,finls001 singles. ,finls001,1,
+,10,6,finls001,durae001,,,60,87,BX,yoshm001,1,0,lee-t002 grounds out. ,lee-t002,1,G
+,12,7,,,,,61,12,CBCX,morgm001,1,0,servs002 grounds out. ,servs002,0,G
+,21,7,,,,,62,16,CBBX,morgm001,1,0,yoshm001 grounds out. ,yoshm001,0,G
+,22,7,,,,,63,21,BCBFX,morgm001,1,0,,huntb002,0,L
+,02,7,,,,,64,90,CFX,yoshm001,1,0,,harrl001,1,
+,00,7,,,,,65,91,X,yoshm001,1,0,,stink001,1,F
+,32,7,gilkb001,,,,67,99,BCBFFBFX,yoshm001,0,0,gilkb001 singles. ,gilkb001,1,
+gilkb001 to 2B. ,31,7,friah001,gilkb001,,,68,104,BCBBB,yoshm001,0,0,friah001 walks. ,friah001,1,
+,22,7,friah001,gilkb001,,,69,112,CSBBFFFX,yoshm001,1,0,,bellj001,1,F
+,32,8,lansm001,,,,71,6,BBFBFB,sprir001,0,0,lansm001 walks. ,lansm001,0,
+lansm001 out. ,12,8,walkl001,,,,72,10,FBSX,sprir001,1,0,walkl001 reaches on fielder's choice. ,walkl001,0,
+walkl001 scores. ,12,8,,cirij001,,,73,14,CBSX,sprir001,0,1,cirij001 doubles. ,cirij001,0,
+cirij001 to 3B. ,21,8,,,cirij001,,74,18,FBBX,sprir001,1,0,heltt001 grounds out. ,heltt001,0,G
+,12,8,,,cirij001,,75,23,BFFFS,sprir001,1,0,shumt001 strikes out. ,shumt001,0,
+,01,8,,,,,79,2,CX,myerm001,1,0,,gonzl001,1,F
+,12,8,,,,,81,6,BFFC,myerm001,1,0,colbg001 strikes out. ,colbg001,1,
+,11,8,,,,,82,9,BCX,myerm001,1,0,finls001 grounds out. ,finls001,1,G
+,21,9,,,,,89,4,BFBX,kim-b001,1,0,peren001 grounds out. ,peren001,0,G
+,11,9,servs002,,,,90,7,FBX,kim-b001,0,0,servs002 singles. ,servs002,0,
+,10,9,servs002,,,,91,9,BX,kim-b001,1,0,,goodt001,0,F
+servs002 to 2B. ,21,9,huntb002,servs002,,,92,13,CBBX,kim-b001,0,0,huntb002 reaches on error. ,huntb002,0,G
+,12,9,huntb002,servs002,,,93,19,CBSFFS,kim-b001,1,0,lansm001 strikes out. ,lansm001,0,
+,02,9,,,,,96,4,CFFC,jimej001,1,0,lee-t002 strikes out. ,lee-t002,1,
+,32,9,harrl001,,,,97,10,BSBBFX,jimej001,0,0,harrl001 singles. ,harrl001,1,
+,00,9,,,,,98,11,X,jimej001,2,0,Double Play. ,stink001,1,

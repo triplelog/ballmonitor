@@ -1,0 +1,140 @@
+version,2
+info,visteam,BOS
+info,hometeam,TOR
+info,site,TOR02
+info,date,2000/06/23
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,scotd901
+info,ump1b,hudsm901
+info,ump2b,cedeg901
+info,ump3b,welkt901
+info,pitches,pitches
+info,temp,70
+info,winddir,torf
+info,windspeed,11
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,153
+info,attendance,28198
+info,wp,castf001
+info,lp,wasdj001
+info,save,kochb001
+start,lewid001,"Darren Lewis",0,1,7
+start,fryej001,"Jeff Frye",0,2,4
+start,nixot001,"Trot Nixon",0,3,9
+start,garcn001,"Nomar Garciaparra",0,4,10
+start,everc001,"Carl Everett",0,5,8
+start,daubb001,"Brian Daubach",0,6,3
+start,varij001,"Jason Varitek",0,7,2
+start,alexm001,"Manny Alexander",0,8,6
+start,veraw001,"Wilton Veras",0,9,5
+start,wasdj001,"John Wasdin",0,0,1
+start,stews002,"Shannon Stewart",1,1,7
+start,gonza001,"Alex S. Gonzalez",1,2,6
+start,mondr002,"Raul Mondesi",1,3,9
+start,delgc001,"Carlos Delgado",1,4,3
+start,fullb001,"Brad Fullmer",1,5,10
+start,batit001,"Tony Batista",1,6,5
+start,cruzj004,"Jose Cruz",1,7,8
+start,casta001,"Alberto Castillo",1,8,2
+start,bushh001,"Homer Bush",1,9,4
+start,castf001,"Frank Castillo",1,0,1
+play,1,0,lewid001,32,CBCBBFB,W
+play,1,0,fryej001,12,CCBB,CS2(26)
+play,1,0,fryej001,22,CCBBFC,K/C
+play,1,0,nixot001,21,FBBX,HR/9
+play,1,0,garcn001,01,SX,8/F8
+play,1,1,stews002,30,BBBB,W
+play,1,1,gonza001,22,CCBBS,K
+play,1,1,mondr002,10,BB,SB2.1-3(E2/TH2)
+play,1,1,mondr002,20,BBX,3/FL
+play,1,1,delgc001,22,BCBSX,7/F7
+play,2,0,everc001,11,BCX,HR/9
+play,2,0,daubb001,12,CFBX,13/G
+play,2,0,varij001,32,BBBCFB,W
+play,2,0,alexm001,12,CCBX,S8.1-2
+play,2,0,veraw001,22,BFCBS,K
+play,2,0,lewid001,00,X,43/G
+play,2,1,fullb001,12,CFBX,HR/9
+play,2,1,batit001,22,BBFFC,K/C
+play,2,1,cruzj004,00,X,43/G
+play,2,1,casta001,31,BBBCX,D9
+play,2,1,bushh001,12,SBFX,S8.2-H
+play,2,1,stews002,10,BB,SB2
+play,2,1,stews002,21,BBFX,8/F8
+play,3,0,fryej001,11,CBX,63/G
+play,3,0,nixot001,01,CX,S9
+play,3,0,garcn001,00,X,64(1)/FO
+play,3,0,everc001,22,FBBCX,5/FL
+play,3,1,gonza001,12,CBCFX,S8
+play,3,1,mondr002,00,X,HR/7.1-H
+play,3,1,delgc001,31,BBCBX,8/F8D
+play,3,1,fullb001,21,BCBX,3/G
+play,3,1,batit001,02,SCFFS,K
+play,4,0,daubb001,12,CBSS,K
+play,4,0,varij001,22,BCSBFFX,43/G
+play,4,0,alexm001,01,CX,53/G
+play,4,1,cruzj004,11,SBX,HR/9
+play,4,1,casta001,22,SBCBX,13/G
+play,4,1,bushh001,22,BBCSX,63/G
+play,4,1,stews002,21,SBBX,S8/78S.BX2(84)
+play,5,0,veraw001,01,CX,13/G
+play,5,0,lewid001,00,X,43/G
+play,5,0,fryej001,22,CBCBX,4/L4
+play,5,1,gonza001,00,,NP
+sub,florb001,"Bryce Florie",0,0,1
+play,5,1,gonza001,22,BSBSX,63/G
+play,5,1,mondr002,22,BCFBX,13/G
+play,5,1,delgc001,22,BBSFX,S/78
+play,5,1,fullb001,02,FFX,S7.1-2
+play,5,1,batit001,11,FBX,3/FL
+play,6,0,nixot001,02,CFX,8/F8
+play,6,0,garcn001,00,X,9/F9S
+play,6,0,everc001,02,CSX,5/FL
+play,6,1,cruzj004,00,,NP
+sub,waket001,"Tim Wakefield",0,0,1
+play,6,1,cruzj004,10,BX,5/FL
+play,6,1,casta001,22,CBFBFFC,K23/C
+play,6,1,bushh001,00,X,63/G
+play,7,0,daubb001,10,BX,2/FL
+play,7,0,varij001,00,X,7/F7D
+play,7,0,alexm001,02,FCS,K
+play,7,1,stews002,02,CSX,53/G
+play,7,1,gonza001,11,BCX,8/F8
+play,7,1,mondr002,11,CBX,4/P4
+play,8,0,veraw001,10,BX,8/F8S
+play,8,0,lewid001,32,BCCBBX,D7
+play,8,0,fryej001,01,CX,D9.2-H
+play,8,0,nixot001,00,,NP
+sub,borbp001,"Pedro Borbon",1,0,1
+play,8,0,nixot001,11,BCX,FC6.2X3(65);B-1
+play,8,0,garcn001,00,,NP
+sub,pridc001,"Curtis Pride",0,3,12
+play,8,0,garcn001,00,,NP
+sub,kochb001,"Billy Koch",1,0,1
+play,8,0,garcn001,31,BBBCB,W.1-2
+play,8,0,everc001,00,X,D9.2-H;1-3
+play,8,0,daubb001,32,BCFBBB,W
+play,8,0,varij001,21,BBCX,7/F7S
+play,8,1,delgc001,00,,NP
+sub,lewid001,"Darren Lewis",0,1,9
+play,8,1,delgc001,00,,NP
+sub,pridc001,"Curtis Pride",0,3,7
+play,8,1,delgc001,30,BBBB,W
+play,8,1,fullb001,10,BX,9/F9
+play,8,1,batit001,00,X,14(1)3/GDP
+play,9,0,alexm001,22,CCBBX,53/G
+play,9,0,veraw001,00,,NP
+sub,hatts001,"Scott Hatteberg",0,9,11
+play,9,0,hatts001,12,BFCS,K
+play,9,0,lewid001,12,BCCX,43/G
+data,er,wasdj001,5
+data,er,florb001,0
+data,er,waket001,0
+data,er,castf001,4
+data,er,borbp001,0
+data,er,kochb001,0

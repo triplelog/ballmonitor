@@ -1,0 +1,184 @@
+version,2
+info,visteam,TBA
+info,hometeam,NYN
+info,site,NYC17
+info,date,2000/06/04
+info,number,0
+info,starttime,1:10PM
+info,daynight,day
+info,usedh,false
+info,umphome,buckc901
+info,ump1b,reedr901
+info,ump2b,wendh902
+info,ump3b,clara901
+info,pitches,pitches
+info,temp,71
+info,winddir,tocf
+info,windspeed,6
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,190
+info,attendance,43610
+info,wp,yan-e001
+info,lp,joneb003
+info,save,
+start,willg001,"Gerald Williams",0,1,8
+start,johnr006,"Russ Johnson",0,2,5
+start,vaugg001,"Greg Vaughn",0,3,7
+start,mcgrf001,"Fred McGriff",0,4,3
+start,cox-s001,"Steve Cox",0,5,9
+start,flahj001,"John Flaherty",0,6,2
+start,cairm001,"Miguel Cairo",0,7,4
+start,martf001,"Felix Martinez",0,8,6
+start,yan-e001,"Esteban Yan",0,9,1
+start,mcewj001,"Joe McEwing",1,1,7
+start,abbok002,"Kurt Abbott",1,2,6
+start,alfoe001,"Edgardo Alfonzo",1,3,4
+start,piazm001,"Mike Piazza",1,4,2
+start,ventr001,"Robin Ventura",1,5,5
+start,zeilt001,"Todd Zeile",1,6,3
+start,paytj001,"Jay Payton",1,7,8
+start,mcgur001,"Ryan McGuire",1,8,9
+start,joneb003,"Bobby J. Jones",1,9,1
+play,1,0,willg001,00,X,D9
+play,1,0,johnr006,01,CX,9/F9.2-3
+play,1,0,vaugg001,32,BFBCBC,K/C
+play,1,0,mcgrf001,32,BBBFCFC,K/C
+play,1,1,mcewj001,11,BFX,S5/BG5
+play,1,1,abbok002,12,FFBX,6(B)3(1)/LDP
+play,1,1,alfoe001,00,X,8/F8
+play,2,0,cox-s001,22,CBBFFX,8/F8D
+play,2,0,flahj001,30,BBBB,W
+play,2,0,cairm001,21,BBFX,8/F8
+play,2,0,martf001,12,SFBX,HR/9.1-H
+com,"$first homer in majors"
+play,2,0,yan-e001,00,X,HR/7
+com,"$homer on first pitch in major leagues"
+play,2,0,willg001,02,CCFX,9/F9
+play,2,1,piazm001,30,BBBB,W
+play,2,1,ventr001,00,X,7/F7
+play,2,1,zeilt001,21,BCBX,5/FL
+play,2,1,paytj001,00,X,HR/7.1-H
+play,2,1,mcgur001,31,BBBCB,W
+play,2,1,joneb003,00,X,53/G
+play,3,0,johnr006,00,X,9/F9
+play,3,0,vaugg001,32,BBSBSC,K/C
+play,3,0,mcgrf001,32,BCBSFBS,K
+play,3,1,mcewj001,22,CFBFBFS,K
+play,3,1,abbok002,02,CSH,HP
+play,3,1,alfoe001,11,CBX,7/F7
+play,3,1,piazm001,10,BX,D7.1-H
+play,3,1,ventr001,21,FBBX,8/F8
+play,4,0,cox-s001,31,BBBCX,3/G
+play,4,0,flahj001,22,FFBFBFX,63/G
+play,4,0,cairm001,31,CBBBX,8/F8
+play,4,1,zeilt001,02,CCX,S9
+play,4,1,paytj001,12,CBCX,54(1)/FO
+play,4,1,mcgur001,12,SFFBX,3/G.1-2
+play,4,1,joneb003,22,BBCSX,43/G
+play,5,0,martf001,10,BX,S9
+play,5,0,yan-e001,01,LX,34/SH.1-2
+play,5,0,willg001,11,BCX,63/G.2-3
+play,5,0,johnr006,00,X,63/G
+play,5,1,mcewj001,21,BFBX,T9
+play,5,1,abbok002,02,FFFFFS,K
+play,5,1,alfoe001,01,SH,HP
+play,5,1,piazm001,12,BSFX,9/SF.3-H;1-2
+play,5,1,ventr001,02,SSS,K
+play,6,0,vaugg001,00,X,S
+play,6,0,mcgrf001,30,BBBB,W.1-2
+play,6,0,cox-s001,10,BX,36(1)/FO.2-3
+play,6,0,flahj001,11,BFX,S/78.3-H;1-2
+play,6,0,cairm001,32,FBBBFB,W.2-3;1-2
+play,6,0,martf001,00,,NP
+sub,mahop001,"Pat Mahomes",1,9,1
+play,6,0,martf001,31,BBCBB,W.3-H;2-3;1-2
+play,6,0,yan-e001,00,,NP
+sub,guilj001,"Jose Guillen",0,9,11
+play,6,0,guilj001,22,FBSBX,53/G.3-H;2-3;1-2
+play,6,0,willg001,11,CBX,D/78.3-H;2-H
+play,6,0,johnr006,22,BBFFC,K/C
+play,6,1,zeilt001,00,,NP
+sub,guilj001,"Jose Guillen",0,9,9
+play,6,1,zeilt001,00,,NP
+sub,whitr002,"Rick White",0,5,1
+play,6,1,zeilt001,11,CBX,8/F8D
+play,6,1,paytj001,00,X,S
+play,6,1,mcgur001,10,BX,6(1)3/GDP
+play,7,0,vaugg001,00,,NP
+sub,moram002,"Melvin Mora",1,9,9
+play,7,0,vaugg001,00,,NP
+sub,rodrr004,"Rich Rodriguez",1,8,1
+play,7,0,vaugg001,10,BX,53/G
+play,7,0,mcgrf001,20,BBX,9/F9
+play,7,0,whitr002,00,,NP
+sub,winnr001,"Randy Winn",0,5,11
+play,7,0,winnr001,21,BCBX,63/G
+play,7,1,moram002,00,,NP
+sub,winnr001,"Randy Winn",0,5,7
+play,7,1,moram002,00,,NP
+sub,mecij001,"Jim Mecir",0,3,1
+play,7,1,moram002,11,BCX,53/G
+play,7,1,mcewj001,01,CX,63/G
+play,7,1,abbok002,22,BCCBFFS,K
+play,8,0,flahj001,11,SBX,13/G
+play,8,0,cairm001,01,CH,HP
+play,8,0,martf001,00,X,E6/TH.1-3;B-2
+play,8,0,guilj001,12,BFFH,HP
+play,8,0,willg001,21,CBBX,8/SF.3-H(UR);2-3
+play,8,0,johnr006,02,CFFX,S7.3-H(UR);1-2
+play,8,0,mecij001,00,,NP
+sub,tramb001,"Bubba Trammell",0,3,11
+play,8,0,tramb001,12,FBFX,HR/78.2-H(UR);1-H(UR);B-H(UR)
+play,8,0,mcgrf001,22,BSCBX,S9
+play,8,0,winnr001,11,BSX,S7/7S.1-2
+play,8,0,flahj001,20,BBX,8/F8
+play,8,1,alfoe001,00,,NP
+sub,agbab001,"Benny Agbayani",1,3,11
+play,8,1,agbab001,00,,NP
+sub,creed001,"Doug Creek",0,3,1
+play,8,1,agbab001,22,BBSCS,K
+play,8,1,piazm001,00,,NP
+sub,pratt001,"Todd Pratt",1,4,11
+play,8,1,pratt001,30,BBBB,W
+play,8,1,ventr001,00,,NP
+sub,harrl001,"Lenny Harris",1,5,11
+play,8,1,harrl001,22,BFBSFX,13/G.1-2
+play,8,1,zeilt001,12,CFFFBFX,8/F8
+play,9,0,cairm001,00,,NP
+sub,mcewj001,"Joe McEwing",1,1,4
+play,9,0,cairm001,00,,NP
+sub,pratt001,"Todd Pratt",1,4,2
+play,9,0,cairm001,00,,NP
+sub,agbab001,"Benny Agbayani",1,3,7
+play,9,0,cairm001,00,,NP
+sub,harrl001,"Lenny Harris",1,5,5
+play,9,0,cairm001,00,,NP
+sub,wendt001,"Turk Wendell",1,8,1
+play,9,0,cairm001,01,CX,9/L9
+play,9,0,martf001,22,FBCBFC,K/C
+play,9,0,guilj001,11,FBX,S9
+play,9,0,willg001,20,BBX,D7.1-H
+play,9,0,johnr006,10,BX,S/78.2-H
+play,9,0,creed001,00,,NP
+sub,guilo001,"Ozzie Guillen",0,3,11
+play,9,0,guilo001,00,X,8/F8
+play,9,1,paytj001,00,,NP
+sub,sturt001,"Tanyon Sturtze",0,3,1
+play,9,1,paytj001,00,X,D7
+play,9,1,wendt001,00,,NP
+sub,franm001,"Matt Franco",1,8,11
+play,9,1,franm001,00,X,S9.2-H
+play,9,1,moram002,02,CFX,54(1)/FO
+play,9,1,mcewj001,22,CFBFFBX,S9.1-2
+play,9,1,abbok002,00,X,54(1)3/GDP
+data,er,yan-e001,4
+data,er,whitr002,0
+data,er,mecij001,0
+data,er,creed001,0
+data,er,sturt001,1
+data,er,joneb003,7
+data,er,mahop001,1
+data,er,rodrr004,0
+data,er,wendt001,2

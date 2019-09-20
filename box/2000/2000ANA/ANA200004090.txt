@@ -1,0 +1,134 @@
+version,2
+info,visteam,BOS
+info,hometeam,ANA
+info,site,ANA01
+info,date,2000/04/09
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,kellj901
+info,ump1b,coope901
+info,ump2b,diazl901
+info,ump3b,reilm901
+info,pitches,pitches
+info,oscorer,munse701
+info,temp,70
+info,winddir,ltor
+info,windspeed,7
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,164
+info,attendance,35847
+info,wp,martp001
+info,lp,bottk001
+info,save,
+start,offej001,"Jose Offerman",0,1,4
+start,nixot001,"Trot Nixon",0,2,9
+start,daubb001,"Brian Daubach",0,3,10
+start,garcn001,"Nomar Garciaparra",0,4,6
+start,oleat001,"Troy O'Leary",0,5,7
+start,everc001,"Carl Everett",0,6,8
+start,stanm002,"Mike Stanley",0,7,3
+start,varij001,"Jason Varitek",0,8,2
+start,alexm001,"Manny Alexander",0,9,5
+start,martp001,"Pedro Martinez",0,0,1
+start,erstd001,"Darin Erstad",1,1,7
+start,kenna001,"Adam Kennedy",1,2,4
+start,vaugm001,"Mo Vaughn",1,3,10
+start,salmt001,"Tim Salmon",1,4,9
+start,andeg001,"Garret Anderson",1,5,8
+start,glaut001,"Troy Glaus",1,6,5
+start,spies001,"Scott Spiezio",1,7,3
+start,walbm001,"Matt Walbeck",1,8,2
+start,gil-b001,"Benji Gil",1,9,6
+start,bottk001,"Kent Bottenfield",1,0,1
+play,1,0,offej001,32,BBBCFB,W
+play,1,0,nixot001,12,CBFX,9/F9
+play,1,0,daubb001,21,BFBX,9/F9
+play,1,0,garcn001,00,X,S8/8S.1-2
+play,1,0,oleat001,12,CFBFX,7/L7
+play,1,1,erstd001,22,SBSBX,S/78
+play,1,1,kenna001,00,X,36(1)/FO
+play,1,1,vaugm001,21,BBCS,SB2
+play,1,1,vaugm001,22,BBCSFX,43/G.2-3
+play,1,1,salmt001,22,CBBCS,K
+play,2,0,everc001,22,CFBBX,8/F8
+play,2,0,stanm002,12,CBSFX,8/F8
+play,2,0,varij001,10,BX,6/P6
+play,2,1,andeg001,22,CFBFBS,K
+play,2,1,glaut001,02,FFS,K
+play,2,1,spies001,12,CBSS,K
+play,3,0,alexm001,22,BSBSS,K
+play,3,0,offej001,12,SFBX,8/F8
+play,3,0,nixot001,22,BBCFC,K/C
+play,3,1,walbm001,12,SBFX,S8/8S
+play,3,1,gil-b001,00,X,14/SH.1-2
+play,3,1,erstd001,21,BBCX,43/G.2-3
+play,3,1,kenna001,32,BSSBFBX,8/F8D
+play,4,0,daubb001,22,CCBBS,K
+play,4,0,garcn001,00,X,7/F7
+play,4,0,oleat001,02,SCFX,HR/8
+play,4,0,everc001,00,X,HR/9
+play,4,0,stanm002,21,BFBX,63/G
+play,4,1,vaugm001,10,BX,13/G
+play,4,1,salmt001,01,FX,S/78.B-2(E7)
+play,4,1,andeg001,02,FSC,K/C
+play,4,1,glaut001,32,BCSBBS,K
+play,5,0,varij001,02,CCS,K
+play,5,0,alexm001,12,FBFX,D/78
+play,5,0,offej001,30,BBBB,W
+play,5,0,nixot001,32,BBBCCX,31/G.2-3;1-2
+play,5,0,daubb001,22,FFBBX,63/G
+play,5,1,spies001,32,SBSBBC,K/C
+play,5,1,walbm001,22,BFCBFFS,K
+play,5,1,gil-b001,00,X,S9
+play,5,1,erstd001,22,CBCBS,K
+play,6,0,garcn001,30,BBBB,W
+play,6,0,oleat001,12,CFBX,S9/9S.1-3
+play,6,0,everc001,32,FBCBBX,7/SF.3-H
+play,6,0,stanm002,10,BS,CS2(24)
+play,6,0,stanm002,32,BSBBFB,W
+play,6,0,varij001,01,FX,7/F7
+play,6,1,kenna001,21,CBBX,6/P6
+play,6,1,vaugm001,12,CSBS,K
+play,6,1,salmt001,12,CBSC,K/C
+play,7,0,alexm001,00,,NP
+sub,levia001,"Al Levine",1,0,1
+play,7,0,alexm001,32,BBBCCFX,9/F9
+play,7,0,offej001,01,CX,7/F7
+play,7,0,nixot001,32,CBFBBX,HR/9
+play,7,0,daubb001,11,CBX,43/G
+play,7,1,andeg001,22,CSBBX,163/G
+play,7,1,glaut001,12,CCBC,K/C
+play,7,1,spies001,21,BSBX,3/G
+play,8,0,garcn001,00,X,63/G
+play,8,0,oleat001,32,FBBBFX,HR/9
+play,8,0,everc001,21,BBFX,8/F8D
+play,8,0,stanm002,02,CFX,S
+play,8,0,varij001,31,BBCBX,S7/7S.1-2
+play,8,0,alexm001,00,,NP
+sub,fyhrm001,"Mike Fyhrie",1,0,1
+play,8,0,alexm001,22,BBCFX,54(1)/FO.2-3
+play,8,1,walbm001,00,X,13/G
+play,8,1,gil-b001,01,SX,S
+play,8,1,erstd001,11,BCB,SB2
+play,8,1,erstd001,31,BCBBB,W
+play,8,1,kenna001,00,,NP
+sub,lowed001,"Derek Lowe",0,0,1
+play,8,1,kenna001,10,BX,S8.2-H;1-3;B-2(E8/TH)
+play,8,1,vaugm001,12,CSBS,K
+play,8,1,salmt001,22,SBSBX,53/G
+play,9,0,offej001,22,CBFBX,43/G
+play,9,0,nixot001,02,CCS,K
+play,9,0,daubb001,12,CCFBS,K
+play,9,1,andeg001,11,CBX,3/G
+play,9,1,glaut001,12,CFBS,K
+play,9,1,spies001,00,X,HR/8
+play,9,1,walbm001,22,CBFBFX,63/G
+data,er,martp001,1
+data,er,lowed001,1
+data,er,bottk001,3
+data,er,levia001,2
+data,er,fyhrm001,0

@@ -1,0 +1,203 @@
+version,2
+info,visteam,SLN
+info,hometeam,COL
+info,site,DEN02
+info,date,2000/04/16
+info,number,2
+info,starttime,6:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,reilm901
+info,ump1b,kellj901
+info,ump2b,coope901
+info,ump3b,timmt901
+info,pitches,pitches
+info,temp,58
+info,winddir,tolf
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,259
+info,attendance,35095
+info,wp,jimej001
+info,lp,mohlm001
+info,save,whitg001
+start,vinaf001,"Fernando Vina",0,1,4
+start,rente001,"Edgar Renteria",0,2,6
+start,tatif001,"Fernando Tatis",0,3,5
+start,davie001,"Eric Davis",0,4,9
+start,edmoj001,"Jim Edmonds",0,5,8
+start,dunss001,"Shawon Dunston",0,6,7
+start,paquc001,"Craig Paquette",0,7,3
+start,marre001,"Eli Marrero",0,8,2
+start,stepg001,"Garrett Stephenson",0,9,1
+start,huntb002,"Brian L. Hunter",1,1,8
+start,shumt001,"Terry Shumpert",1,2,4
+start,walkl001,"Larry Walker",1,3,9
+start,heltt001,"Todd Helton",1,4,3
+start,bragd001,"Darren Bragg",1,5,7
+start,ledea001,"Aaron Ledesma",1,6,5
+start,peren001,"Neifi Perez",1,7,6
+start,servs002,"Scott Servais",1,8,2
+start,bohab001,"Brian Bohanon",1,9,1
+play,1,0,vinaf001,02,CFX,S7
+play,1,0,rente001,32,BBCBSB,W.1-2
+play,1,0,tatif001,02,FSC,K/C
+play,1,0,davie001,10,BB,CS2(24).2-3
+play,1,0,davie001,31,BBBCB,W
+play,1,0,edmoj001,21,BBFX,HR/8.3-H;1-H
+play,1,0,dunss001,00,X,63/G
+play,1,1,huntb002,32,CBBFBFFC,K/C
+play,1,1,shumt001,00,X,S8
+play,1,1,walkl001,20,BBX,8/F8
+play,1,1,heltt001,22,CFBBX,S7.1-3
+play,1,1,bragd001,32,BFBCBFB,W.1-2
+play,1,1,ledea001,00,X,D/78D.3-H;2-H;1-H
+play,1,1,peren001,11,CBX,3/G
+play,2,0,paquc001,22,BFSBX,D9/9D
+play,2,0,marre001,01,CX,D8/8D.2-H
+play,2,0,stepg001,00,X,3/BP3
+play,2,0,vinaf001,30,BBBB,W
+play,2,0,rente001,12,BFFS,K
+play,2,0,tatif001,11,BSX,S9.2-H;1-3
+play,2,0,davie001,31,BBSBB,W.1-2
+play,2,0,edmoj001,12,CBSX,3/G
+play,2,1,servs002,00,X,S8
+play,2,1,bohab001,12,SSBS,K
+play,2,1,huntb002,01,FX,8/L8
+play,2,1,shumt001,02,CSX,7/F7D
+play,3,0,dunss001,01,CX,9/F9
+play,3,0,paquc001,22,BFSBX,53/G
+play,3,0,marre001,11,FBX,HR/78
+play,3,0,stepg001,02,CFFFC,K/C
+play,3,1,walkl001,11,CBX,S9
+play,3,1,heltt001,30,BBBB,W.1-2
+play,3,1,bragd001,01,CX,43(B)6(1)/GDP.2-3
+play,3,1,ledea001,22,BFBFX,8/F8
+play,4,0,vinaf001,11,BCX,D9
+play,4,0,rente001,32,LBSBBB,W
+play,4,0,tatif001,00,,NP
+sub,crour001,"Rick Croushore",1,9,1
+play,4,0,tatif001,12,BSCS,K
+play,4,0,davie001,02,SCX,64(1)/FO.2-3
+play,4,0,edmoj001,01,FB,WP.3-H;1-2
+play,4,0,edmoj001,31,FBIII,IW
+play,4,0,dunss001,11,BSX,8/F8
+play,4,1,peren001,12,CBCX,D9/9D
+play,4,1,servs002,11,BCH,HP
+play,4,1,crour001,00,X,E5/TH/SH.2-H(NR)(UR);1-3;B-2
+play,4,1,huntb002,01,CX,53/G
+play,4,1,shumt001,21,BFBX,3/FL
+play,4,1,walkl001,00,,BK.3-H(UR);2-3
+play,4,1,walkl001,12,FCBS,K
+play,5,0,paquc001,12,CSBFFFX,9/F9
+play,5,0,marre001,32,BBCBFX,2/FL
+play,5,0,stepg001,12,BFCC,K/C
+play,5,1,heltt001,21,BFBX,8/F8D
+play,5,1,bragd001,32,BBBCSC,K/C
+play,5,1,ledea001,22,CFBBX,63/G
+play,6,0,vinaf001,22,BBCFX,S9
+play,6,0,rente001,12,BFFX,S8.1-3
+play,6,0,tatif001,00,B,SB2
+play,6,0,tatif001,22,BBSFX,63/G.3-H;2-3
+play,6,0,davie001,12,FFBFX,S9.3-H
+play,6,0,edmoj001,21,BCBX,S9.1-2
+play,6,0,dunss001,00,,NP
+sub,lankr001,"Ray Lankford",0,6,11
+play,6,0,lankr001,00,,NP
+sub,jimej001,"Jose Jimenez",1,6,1
+play,6,0,lankr001,00,,NP
+sub,cirij001,"Jeff Cirillo",1,9,5
+play,6,0,lankr001,22,SBFBS,K
+play,6,0,paquc001,00,X,64(1)/FO.2-3
+play,6,1,peren001,00,,NP
+sub,lankr001,"Ray Lankford",0,6,7
+play,6,1,peren001,31,BCBBX,D9
+play,6,1,servs002,30,BBBB,W
+play,6,1,cirij001,00,,NP
+sub,polap001,"Placido Polanco",0,9,3
+play,6,1,cirij001,00,,NP
+sub,waind001,"David Wainhouse",0,7,1
+play,6,1,cirij001,12,CCBFX,D7.2-H;1-H
+play,6,1,huntb002,00,X,13/SH.2-3
+play,6,1,shumt001,31,BBBCB,W
+play,6,1,walkl001,00,,NP
+sub,mohlm001,"Mike Mohler",0,7,1
+play,6,1,walkl001,30,BBBB,W.1-2
+play,6,1,heltt001,21,CBBX,S9/9S.3-H;2-H;1-3
+play,6,1,bragd001,00,,NP
+sub,mantj001,"Jeff Manto",1,5,11
+play,6,1,mantj001,00,X,D7.3-H;1-3
+play,6,1,jimej001,00,,NP
+sub,goodt001,"Tom Goodwin",1,6,11
+play,6,1,goodt001,00,X,7/F7
+play,6,1,peren001,30,BBBB,W
+play,6,1,servs002,31,BCBBX,S7.3-H;2-H;1-3
+play,6,1,cirij001,00,,NP
+sub,jamem001,"Mike James",0,7,1
+play,6,1,cirij001,31,CBBBB,W.1-2
+play,6,1,huntb002,02,CCX,S.3-H;2-3;1-2
+play,6,1,shumt001,32,BCBBSX,6/L6
+play,7,0,marre001,00,,NP
+sub,huntb002,"Brian L. Hunter",1,1,7
+play,7,0,marre001,00,,NP
+sub,goodt001,"Tom Goodwin",1,6,8
+play,7,0,marre001,00,,NP
+sub,belis001,"Stan Belinda",1,5,1
+play,7,0,marre001,22,BCCBC,K/C
+play,7,0,polap001,32,BBCCBFFS,K
+play,7,0,vinaf001,10,BX,S8
+play,7,0,rente001,11,CBX,S7/7S.1-2
+play,7,0,tatif001,01,CX,8/F8
+play,7,1,walkl001,00,X,S9
+play,7,1,heltt001,32,BBSFBB,W.1-2
+play,7,1,belis001,02,SLL,K/BF
+play,7,1,goodt001,10,BX,46(1)/FO.2-3
+play,7,1,peren001,02,CCX,8/F8
+play,8,0,davie001,22,BBCFX,S8
+play,8,0,edmoj001,00,,NP
+sub,myerm001,"Mike Myers",1,5,1
+play,8,0,edmoj001,32,CBBBSS,K
+play,8,0,lankr001,22,CBBFFS,K
+play,8,0,jamem001,00,,NP
+sub,howat001,"Thomas Howard",0,7,11
+play,8,0,howat001,30,BBBB,W.1-2
+play,8,0,marre001,00,,NP
+sub,tavaj001,"Julian Tavarez",1,5,1
+play,8,0,marre001,21,SBBX,4/P4
+play,8,1,servs002,00,,NP
+sub,vered001,"Dave Veres",0,7,1
+play,8,1,servs002,32,BBBCFS,K
+play,8,1,cirij001,11,BSX,53/G
+play,8,1,huntb002,11,CBX,S7
+play,8,1,shumt001,11,BFB,SB2
+play,8,1,shumt001,21,BFBX,S9/9S.2-H
+play,8,1,walkl001,01,FX,7/F7
+play,9,0,polap001,21,BBCX,S8/8S
+play,9,0,vinaf001,21,BCBX,S8.1-2
+play,9,0,rente001,21,BBCX,D9.2-H;1-3
+play,9,0,tatif001,12,BCFS,K
+play,9,0,davie001,31,BBCBB,W
+play,9,0,edmoj001,00,,NP
+sub,whitg001,"Gabe White",1,5,1
+play,9,0,edmoj001,21,BSBX,8/SF.3-H;2-3
+play,9,0,lankr001,01,CB,DI.1-2
+play,9,0,lankr001,32,CBBBSB,W
+play,9,0,vered001,00,,NP
+sub,mathm001,"Mike Matheny",0,7,11
+play,9,0,mathm001,32,BSSFBFBFFB,W.3-H;2-3;1-2
+play,9,0,marre001,22,SCBBFH,HP.3-H;2-3;1-2
+play,9,0,polap001,00,X,9/L9
+data,er,stepg001,5
+data,er,waind001,2
+data,er,mohlm001,4
+data,er,jamem001,0
+data,er,vered001,1
+data,er,bohab001,7
+data,er,crour001,2
+data,er,jimej001,0
+data,er,belis001,0
+data,er,myerm001,0
+data,er,tavaj001,4
+data,er,whitg001,0

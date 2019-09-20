@@ -1,0 +1,145 @@
+version,2
+info,visteam,PIT
+info,hometeam,CIN
+info,site,CIN08
+info,date,2000/08/20
+info,number,0
+info,starttime,1:15PM
+info,daynight,day
+info,usedh,false
+info,umphome,timmt901
+info,ump1b,morrd901
+info,ump2b,packs901
+info,ump3b,fleta901
+info,pitches,pitches
+info,temp,74
+info,winddir,ltor
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,172
+info,attendance,32545
+info,wp,silvj001
+info,lp,desse001
+info,save,
+start,browe001,"Emil Brown",0,1,8
+start,kendj001,"Jason Kendall",0,2,2
+start,gileb002,"Brian Giles",0,3,7
+start,younk001,"Kevin Young",0,4,3
+start,wilse001,"Enrique Wilson",0,5,5
+start,morrw001,"Warren Morris",0,6,4
+start,ramia002,"Alex Ramirez",0,7,9
+start,mearp001,"Pat Meares",0,8,6
+start,silvj001,"Jose Silva",0,9,1
+start,stync001,"Chris Stynes",1,1,5
+start,larkb001,"Barry Larkin",1,2,6
+start,grifk002,"Ken Griffey",1,3,8
+start,bichd001,"Dante Bichette",1,4,9
+start,cases001,"Sean Casey",1,5,3
+start,yound001,"Dmitri Young",1,6,7
+start,santb001,"Benito Santiago",1,7,2
+start,castj004,"Juan Castro",1,8,4
+start,desse001,"Elmer Dessens",1,9,1
+play,1,0,browe001,32,BBFFBB,W
+play,1,0,kendj001,00,X,S7.1-2
+play,1,0,gileb002,00,X,4(1)3/GDP.2-3
+play,1,0,younk001,11,CBX,S/89.3-H
+play,1,0,wilse001,00,X,S.1-2
+play,1,0,morrw001,22,BSFFBFS,K
+play,1,1,stync001,32,FBSBFBB,W
+play,1,1,larkb001,02,CFX,64(1)3/GDP
+play,1,1,grifk002,02,FCX,S/89
+play,1,1,bichd001,11,BCX,S8.1-3
+play,1,1,cases001,22,CCBFBX,D9.3-H;1-3
+play,1,1,yound001,32,BCBSBX,S7.3-H;2-H;B-2(THH)
+play,1,1,santb001,22,BSBFX,63/G
+play,2,0,ramia002,12,SSFFBX,53/G
+play,2,0,mearp001,22,SSBFFFBS,K
+play,2,0,silvj001,10,BX,63/G
+play,2,1,castj004,10,BX,53/G
+play,2,1,desse001,32,BBBCCB,W
+play,2,1,stync001,12,FBCX,13/G.1-2
+play,2,1,larkb001,12,CBCFFX,3/FL
+play,3,0,browe001,12,FSBS,K
+play,3,0,kendj001,30,BBBB,W
+play,3,0,gileb002,10,BX,D/89.1-H
+play,3,0,younk001,10,BX,43/G.2-3
+play,3,0,wilse001,22,FBSBS,K
+play,3,1,grifk002,00,X,7/F7S
+play,3,1,bichd001,02,CFX,3/FL
+play,3,1,cases001,01,CX,6/P6
+play,4,0,morrw001,32,BBFCBB,W
+play,4,0,ramia002,00,X,8/F8
+play,4,0,mearp001,22,BBFSX,6/P6
+play,4,0,silvj001,32,BSBBSS,K
+play,4,1,yound001,00,X,43/G
+play,4,1,santb001,00,X,8/F8
+play,4,1,castj004,01,CX,S8
+play,4,1,desse001,32,BFBBCX,43/G
+play,5,0,browe001,30,BBBB,W
+play,5,0,kendj001,30,BBBB,W.1-2
+play,5,0,gileb002,12,CBFX,D7.2-H;1-H
+play,5,0,younk001,00,X,53/G
+play,5,0,wilse001,02,CSX,S8.2-H
+play,5,0,morrw001,00,,NP
+sub,villr001,"Ron Villone",1,9,1
+play,5,0,morrw001,20,BBX,8/F8
+play,5,0,ramia002,22,BBFFX,3/P3
+play,5,1,stync001,22,BBCFS,K
+play,5,1,larkb001,10,BX,43/G
+play,5,1,grifk002,11,BFX,D7/7D
+play,5,1,bichd001,22,FSBFFBX,63/G
+play,6,0,mearp001,12,CCBX,3/L3
+play,6,0,silvj001,22,SBFBC,K/C
+play,6,0,browe001,12,BFFS,K
+play,6,1,cases001,00,X,S9/9S
+play,6,1,yound001,02,FFS,K
+play,6,1,santb001,12,CSBFX,7/F7
+play,6,1,castj004,10,BX,S8.1-2
+play,6,1,villr001,00,,NP
+sub,tuckm001,"Michael Tucker",1,9,11
+play,6,1,tuckm001,00,,NP
+sub,wallj001,"Jeff Wallace",0,9,1
+play,6,1,tuckm001,12,FSBS,K
+play,7,0,kendj001,00,,NP
+sub,wohlm001,"Mark Wohlers",1,9,1
+play,7,0,kendj001,01,CX,63/G
+play,7,0,gileb002,22,BCBFS,K+PB.B-1
+play,7,0,younk001,22,BBFSX,43/G.1-2
+play,7,0,wilse001,00,X,4/P4
+play,7,1,stync001,00,,NP
+sub,benjm001,"Mike Benjamin",0,9,5
+play,7,1,stync001,00,,NP
+sub,wilkm001,"Marc Wilkins",0,5,1
+play,7,1,stync001,01,CX,S8
+play,7,1,larkb001,00,X,5/FL
+play,7,1,grifk002,00,,NP
+sub,saues001,"Scott Sauerbeck",0,5,1
+play,7,1,grifk002,22,BSSBX,46(1)3/GDP
+play,8,0,morrw001,11,SBX,D9
+play,8,0,ramia002,10,BX,53/SH.2-3
+play,8,0,mearp001,21,BBFX,9/SF.3-H
+play,8,0,benjm001,02,SCS,K
+play,8,1,bichd001,11,BCX,7/L7
+play,8,1,cases001,12,BSSS,K
+play,8,1,yound001,00,X,6/L6
+play,9,0,browe001,01,FX,4/P4
+play,9,0,kendj001,11,CBX,8/F8
+play,9,0,gileb002,21,SBBX,HR/9
+play,9,0,younk001,00,X,8/F8D
+play,9,1,santb001,00,,NP
+sub,willm005,"Mike Williams",0,5,1
+play,9,1,santb001,01,SX,8/F8
+play,9,1,castj004,22,FBBCS,K
+play,9,1,wohlm001,00,,NP
+sub,ochoa001,"Alex Ochoa",1,9,11
+play,9,1,ochoa001,22,BFBFFX,4/P4
+data,er,silvj001,3
+data,er,wallj001,0
+data,er,wilkm001,0
+data,er,saues001,0
+data,er,willm005,0
+data,er,desse001,5
+data,er,villr001,0
+data,er,wohlm001,2

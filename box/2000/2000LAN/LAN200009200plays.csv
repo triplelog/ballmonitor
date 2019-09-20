@@ -1,0 +1,71 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,22,1,,,,,0,5,BCBFS,dreid001,1,0,womat001 strikes out. ,womat001,0,
+,12,1,counc001,,,,1,9,CBFX,dreid001,0,0,counc001 singles. ,counc001,0,
+,02,1,counc001,,,,2,13,CFFC,dreid001,1,0,gonzl001 strikes out. ,gonzl001,0,
+,11,1,,,,colbg001,3,16,BFC,dreid001,1,0,counc001 caught stealing. ,colbg001,0,
+,12,1,,,,,4,4,CSBS,johnr005,1,0,goodt001 strikes out. ,goodt001,1,
+,22,1,,,grudm001,,5,9,CBBCX,johnr005,0,0,grudm001 triples. ,grudm001,1,
+,12,1,,,grudm001,,6,13,BFSS,johnr005,1,0,grees001 strikes out. ,grees001,1,
+,32,1,,,grudm001,,7,19,BBBCSC,johnr005,1,0,karre001 strikes out. ,karre001,1,
+,32,2,colbg001,,,,8,23,SBBCFBX,dreid001,0,0,colbg001 singles. ,colbg001,0,
+,00,2,,,,,9,24,X,dreid001,2,0,Double Play. ,delld001,0,
+,00,2,willm003,,,,10,25,X,dreid001,0,0,willm003 singles. ,willm003,0,
+,12,2,willm003,,,,11,30,CFFBS,dreid001,1,0,contj001 strikes out. ,contj001,0,
+,32,2,,,,,12,26,BCFBBFX,johnr005,1,0,,belta001,1,F
+,12,2,,,,,13,30,FBFC,johnr005,1,0,avenb001 strikes out. ,avenb001,1,
+,12,2,,,,,14,35,FBFFC,johnr005,1,0,lodup001 strikes out. ,lodup001,1,
+,22,3,,,,,15,35,BBCFS,dreid001,1,0,stink001 strikes out. ,stink001,0,
+,02,3,,,,,16,39,CCFS,dreid001,1,0,johnr005 strikes out. ,johnr005,0,
+,01,3,womat001,,,,17,41,CX,dreid001,0,0,womat001 singles. ,womat001,0,
+womat001 to 3B. ,31,3,counc001,,womat001,,18,46,BCBBX,dreid001,0,0,counc001 singles. ,counc001,0,
+,10,3,counc001,,womat001,,19,48,BX,dreid001,1,0,,gonzl001,0,L
+,31,3,,,,,20,40,BBCBX,johnr005,1,0,,bocah001,1,F
+,02,3,,,,,21,43,SSS,johnr005,1,0,dreid001 strikes out. ,dreid001,1,
+,22,3,,,,,22,49,CCBFBX,johnr005,1,0,,goodt001,1,F
+,01,4,,,,,23,50,CX,dreid001,1,0,colbg001 grounds out. ,colbg001,0,G
+,22,4,,,,,24,55,FBBSX,dreid001,1,0,delld001 grounds out. ,delld001,0,G
+,01,4,,,,,25,57,CX,dreid001,1,0,willm003 grounds out. ,willm003,0,G
+,32,4,grudm001,,,,26,57,BCFBFBFB,johnr005,0,0,grudm001 walks. ,grudm001,1,
+grudm001 to 2B. ,31,4,grees001,grudm001,,,27,62,BBFBX,johnr005,0,0,grees001 singles. ,grees001,1,
+grees001 to 2B. ,32,4,,grees001,,,28,70,BBFBFFFS,johnr005,2,0,karre001 strikes out. grudm001 caught stealing. ,karre001,1,
+,31,4,belta001,,grees001,,29,75,BBBCB,johnr005,0,0,belta001 walks. grees001 steals 3B. ,belta001,1,
+,00,4,belta001,,grees001,,30,76,X,johnr005,1,0,avenb001 grounds out. ,avenb001,1,G
+,00,5,,,,,31,58,X,dreid001,1,0,,contj001,0,F
+,02,5,,,,,32,61,CFX,dreid001,1,0,stink001 grounds out. ,stink001,0,G
+,01,5,,,,,33,63,CX,dreid001,1,0,johnr005 grounds out. ,johnr005,0,G
+,12,5,,,,,34,82,CSFBFX,johnr005,1,0,lodup001 grounds out. ,lodup001,1,G
+,31,5,bocah001,,,,35,87,CBBBX,johnr005,0,0,bocah001 singles. ,bocah001,1,
+,00,5,bocah001,,,,36,88,X,johnr005,1,0,,dreid001,1,F
+bocah001 to 2B. ,11,5,goodt001,bocah001,,,37,91,BCX,johnr005,0,0,goodt001 singles. ,goodt001,1,
+,12,5,goodt001,bocah001,,,38,95,CCBC,johnr005,1,0,grudm001 strikes out. ,grudm001,1,
+,21,6,,,,,39,67,BCBX,dreid001,1,0,,womat001,0,P
+,22,6,,,,,40,72,CBBCX,dreid001,1,0,counc001 grounds out. ,counc001,0,G
+,32,6,,,,,41,78,BFBBFS,dreid001,1,0,gonzl001 strikes out. ,gonzl001,0,
+,22,6,,,,,42,100,BSCBX,johnr005,1,0,,grees001,1,F
+,12,6,,,,,43,104,BCCX,johnr005,1,0,,karre001,1,F
+,12,6,belta001,,,,44,108,CCBX,johnr005,0,0,belta001 singles. ,belta001,1,
+,21,6,,,,avenb001,45,112,BSBB,johnr005,1,0,belta001 caught stealing. ,avenb001,1,
+,11,7,,,,,46,81,BFX,dreid001,1,0,,colbg001,0,F
+,20,7,,,,,47,84,BBX,dreid001,1,0,delld001 grounds out. ,delld001,0,G
+,02,7,,,,,48,87,SFX,dreid001,1,0,willm003 grounds out. ,willm003,0,G
+,22,7,,,,,49,118,FSBFBX,johnr005,1,0,,avenb001,1,P
+,01,7,,,,,50,120,CX,johnr005,1,0,,lodup001,1,F
+,22,7,,,,,51,125,BCSBX,johnr005,1,0,bocah001 grounds out. ,bocah001,1,G
+,22,8,,,,,52,92,BCFBS,dreid001,1,0,contj001 strikes out. ,contj001,0,
+,02,8,stink001,,,,53,95,SSX,dreid001,0,0,stink001 singles. ,stink001,0,
+,31,8,,,,ryanr001,56,100,BBBCS,dreid001,1,0,friah001 caught stealing. ,ryanr001,0,
+,32,8,ryanr001,,,,57,106,BBBCSB,dreid001,0,0,ryanr001 walks. ,ryanr001,0,
+ryanr001 to 2B. ,00,8,womat001,ryanr001,,,58,107,X,dreid001,0,0,womat001 singles. ,womat001,0,
+finls001 to 3B. womat001 to 2B. ,32,8,counc001,womat001,finls001,,60,113,CBBBCB,dreid001,0,0,counc001 walks. ,counc001,0,
+,22,8,counc001,womat001,finls001,,62,5,FBCBS,adamt001,1,0,gonzl001 strikes out. ,gonzl001,0,
+,02,8,,,,,66,3,SCX,plesd001,1,0,,elstk001,1,
+,00,8,goodt001,,,,67,4,X,plesd001,0,0,goodt001 singles. ,goodt001,1,G
+,10,8,,goodt001,,grudm001,68,6,BB,plesd001,0,0,goodt001 steals 2B. ,grudm001,1,
+,32,8,,goodt001,,,69,12,BBCFBX,plesd001,1,0,grudm001 grounds out. ,grudm001,1,G
+,12,8,,goodt001,,,70,16,CFBS,plesd001,1,0,grees001 strikes out. ,grees001,1,
+,22,9,colbg001,,,,74,6,BFFBFX,hergm001,0,0,colbg001 singles. ,colbg001,0,
+,00,9,bautd001,,,,76,7,X,hergm001,1,0,,delld001,0,P
+bautd001 to 2B. ,02,9,willm003,bautd001,,,77,10,FCX,hergm001,0,0,willm003 singles. ,willm003,0,
+,22,9,willm003,bautd001,,,78,15,BFFBX,hergm001,1,0,,contj001,0,P
+,22,9,willm003,bautd001,,,79,21,BCFBFS,hergm001,1,0,milld002 strikes out. ,milld002,0,
+,20,9,,,,,86,3,BBX,kim-b001,0,1,karre001 homers. ,karre001,1,

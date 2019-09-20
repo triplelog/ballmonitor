@@ -1,0 +1,121 @@
+version,2
+info,visteam,ARI
+info,hometeam,SFN
+info,site,SFO03
+info,date,2000/04/14
+info,number,0
+info,starttime,7:35PM
+info,daynight,night
+info,usedh,false
+info,umphome,nelsj901
+info,ump1b,cousd901
+info,ump2b,marqa901
+info,ump3b,brinj901
+info,howscored,park
+info,pitches,pitches
+info,temp,59
+info,winddir,tocf
+info,windspeed,16
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,152
+info,attendance,40930
+info,wp,johnr005
+info,lp,hernl003
+info,save,
+start,womat001,"Tony Womack",0,1,6
+start,bellj001,"Jay Bell",0,2,4
+start,gonzl001,"Luis Gonzalez",0,3,7
+start,durae001,"Erubiel Durazo",0,4,3
+start,finls001,"Steve Finley",0,5,8
+start,lee-t002,"Travis Lee",0,6,9
+start,harrl001,"Lenny Harris",0,7,5
+start,milld002,"Damian Miller",0,8,2
+start,johnr005,"Randy Johnson",0,9,1
+start,murrc001,"Calvin Murray",1,1,8
+start,muelb001,"Bill Mueller",1,2,5
+start,bondb001,"Barry Bonds",1,3,7
+start,kentj001,"Jeff Kent",1,4,4
+start,burke001,"Ellis Burks",1,5,9
+start,davir002,"Russ Davis",1,6,3
+start,aurir001,"Rich Aurilia",1,7,6
+start,mirad001,"Doug Mirabelli",1,8,2
+start,hernl003,"Livan Hernandez",1,9,1
+play,1,0,womat001,12,CBFS,K
+play,1,0,bellj001,00,X,53/G
+play,1,0,gonzl001,31,BFBBX,D/78D
+play,1,0,durae001,02,CCX,8/F8
+play,1,1,murrc001,12,SBFS,K
+play,1,1,muelb001,12,BCSFS,K
+play,1,1,bondb001,20,BBX,8/F8D
+play,2,0,finls001,22,CFBBX,43/G
+play,2,0,lee-t002,10,BX,HR/9
+play,2,0,harrl001,10,BX,53/G
+play,2,0,milld002,12,BSCX,3/G
+play,2,1,kentj001,12,FFBS,K
+play,2,1,burke001,22,CBBSC,K/C
+play,2,1,davir002,01,CX,53/G
+play,3,0,johnr005,12,CBFS,K
+play,3,0,womat001,10,BX,3/L3
+play,3,0,bellj001,01,CX,4/P4
+play,3,1,aurir001,00,X,53/G
+play,3,1,mirad001,00,X,63/G
+play,3,1,hernl003,00,X,43/G
+play,4,0,gonzl001,32,BBFFBB,W
+play,4,0,durae001,31,BCBBX,8/F8D
+play,4,0,finls001,00,X,46(1)3/GDP
+play,4,1,murrc001,21,BCBX,S8
+play,4,1,muelb001,22,FBBSFS,K
+play,4,1,bondb001,00,X,8/F8
+play,4,1,kentj001,11,BSB,SB2
+play,4,1,kentj001,32,BSBFBS,K
+play,5,0,lee-t002,20,BBX,63/G
+play,5,0,harrl001,22,CBFBS,K
+play,5,0,milld002,01,CX,S8
+play,5,0,johnr005,01,CX,S9/9S.1-3
+play,5,0,womat001,02,CFX,46(1)/FO
+play,5,1,burke001,02,FCFX,6/P6
+play,5,1,davir002,00,X,53/G
+play,5,1,aurir001,22,BCSBS,K
+play,6,0,bellj001,22,CBSFFFBC,K/C
+play,6,0,gonzl001,12,CSBX,7/F7D
+play,6,0,durae001,00,X,S9
+play,6,0,finls001,10,BX,8/F8S
+play,6,1,mirad001,02,CCX,43/G
+play,6,1,hernl003,10,BX,13/G
+play,6,1,murrc001,02,CSFX,S7
+play,6,1,muelb001,12,CBFX,D7.1-H
+play,6,1,bondb001,01,CX,8/F8D
+play,7,0,lee-t002,32,BBBCSB,W
+play,7,0,harrl001,10,BX,7/F7D
+play,7,0,milld002,01,CX,9/F9
+play,7,0,johnr005,12,BFSX,9/F9D
+play,7,1,kentj001,32,BBFCBS,K
+play,7,1,burke001,22,BFSBC,K/C
+play,7,1,davir002,12,BFCS,K
+play,8,0,womat001,01,SX,63/G
+play,8,0,bellj001,12,FCBFC,K/C
+play,8,0,gonzl001,32,FCBFBBX,43/G
+play,8,1,aurir001,00,X,8/F8
+play,8,1,mirad001,22,FBBSC,K/C
+play,8,1,hernl003,20,BBX,S8/8S
+play,8,1,murrc001,22,BBFSX,S.1-2
+play,8,1,muelb001,00,X,13/G
+play,9,0,durae001,00,,NP
+sub,snowj001,"J.T. Snow",1,6,3
+play,9,0,durae001,30,BBBX,S9
+play,9,0,finls001,00,,NP
+sub,friah001,"Hanley Frias",0,4,12
+play,9,0,finls001,01,LX,14/SH.1-2
+play,9,0,lee-t002,10,BX,S.2-3
+play,9,0,harrl001,12,CFBFX,FC1.3XH(125);1-2;B-1
+play,9,0,milld002,10,BX,D7.2-H;1-H
+play,9,0,johnr005,22,BBCSX,31/G
+play,9,1,bondb001,00,,NP
+sub,colbg001,"Greg Colbrunn",0,4,3
+play,9,1,bondb001,01,CX,3/G
+play,9,1,kentj001,22,CSBBX,8/F8
+play,9,1,burke001,21,BBCX,53/G
+data,er,johnr005,1
+data,er,hernl003,3

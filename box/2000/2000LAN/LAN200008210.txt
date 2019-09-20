@@ -1,0 +1,133 @@
+version,2
+info,visteam,MON
+info,hometeam,LAN
+info,site,LOS03
+info,date,2000/08/21
+info,number,0
+info,starttime,7:10PM
+info,daynight,night
+info,usedh,false
+info,umphome,cuzzp901
+info,ump1b,schrp901
+info,ump2b,mcclt901
+info,ump3b,higgs901
+info,pitches,pitches
+info,temp,76
+info,winddir,ltor
+info,windspeed,6
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,173
+info,attendance,32053
+info,wp,hermd001
+info,lp,hergm001
+info,save,stris001
+start,bergp001,"Peter Bergeron",0,1,7
+start,bradm001,"Milton Bradley",0,2,8
+start,vidrj001,"Jose Vidro",0,3,4
+start,guerv001,"Vladimir Guerrero",0,4,9
+start,stevl001,"Lee Stevens",0,5,3
+start,blumg001,"Geoff Blum",0,6,5
+start,cabro001,"Orlando Cabrera",0,7,6
+start,barrm003,"Michael Barrett",0,8,2
+start,hermd001,"Dustin Hermanson",0,9,1
+start,goodt001,"Tom Goodwin",1,1,8
+start,grudm001,"Mark Grudzielanek",1,2,4
+start,shefg001,"Gary Sheffield",1,3,7
+start,grees001,"Shawn Green",1,4,9
+start,karre001,"Eric Karros",1,5,3
+start,hundt001,"Todd Hundley",1,6,2
+start,belta001,"Adrian Beltre",1,7,5
+start,coraa001,"Alex Cora",1,8,6
+start,hergm001,"Matt Herges",1,9,1
+play,1,0,bergp001,00,X,63/G
+play,1,0,bradm001,32,CBFBBB,W
+play,1,0,vidrj001,12,CFBX,4(1)3/GDP
+play,1,1,goodt001,32,BBBCCB,W
+play,1,1,grudm001,12,CBFX,7/F7
+play,1,1,shefg001,01,CX,64(1)3/GDP
+play,2,0,guerv001,12,CBSFFX,S/78
+play,2,0,stevl001,00,X,8/F8
+play,2,0,blumg001,12,CBFX,5/L5
+play,2,0,cabro001,02,CFFB,CS2(24)
+play,2,1,grees001,11,CBX,S7
+play,2,1,karre001,01,CX,8/F8
+play,2,1,hundt001,32,CBCBBX,63/G.1-2
+play,2,1,belta001,31,BCBBB,W
+play,2,1,coraa001,22,BSFBX,63/G
+play,3,0,cabro001,10,BX,HR/7
+play,3,0,barrm003,22,CBBFX,63/G
+play,3,0,hermd001,00,X,63/G
+play,3,0,bergp001,02,CSFC,K/C
+play,3,1,hergm001,32,SBBFFBX,43/G
+play,3,1,goodt001,22,BFSFBC,K/C
+play,3,1,grudm001,12,CBFX,63/G
+play,4,0,bradm001,00,X,S7
+play,4,0,vidrj001,22,SBSFBB,SB2
+play,4,0,vidrj001,32,SBSFBBB,W
+play,4,0,guerv001,22,BCBFS,K
+play,4,0,stevl001,11,BFX,S8/8S.2-H;1-2
+play,4,0,blumg001,10,BX,43/G.2-3;1-2
+play,4,0,cabro001,32,BBBCFB,W
+play,4,0,barrm003,00,X,9/F9
+play,4,1,shefg001,21,BBCX,S/89
+play,4,1,grees001,11,BFX,8/F8D
+play,4,1,karre001,00,X,54(1)3/GDP
+play,5,0,hermd001,00,X,6/P6
+play,5,0,bergp001,21,BFBX,S8
+play,5,0,bradm001,21,SBBB,CS2(24)
+play,5,0,bradm001,31,SBBBX,9/F9
+play,5,1,hundt001,00,X,8/F8
+play,5,1,belta001,22,CBBSFFX,D/89
+play,5,1,coraa001,02,FCFX,S.2-3
+play,5,1,hergm001,02,LLX,53/SH.1-2
+play,5,1,goodt001,02,CSFX,23/G
+play,6,0,vidrj001,32,BSFBBB,W
+play,6,0,guerv001,00,X,D9.1-3
+play,6,0,stevl001,02,SSS,K
+play,6,0,blumg001,11,BCX,8/SF.3-H;2-3
+play,6,0,cabro001,01,CX,S7/7S.3-H
+play,6,0,barrm003,21,BBFB,SB2
+play,6,0,barrm003,31,BBFBI,IW
+play,6,0,hermd001,22,CBCFBFC,K/C
+play,6,1,grudm001,22,CBFBX,8/F8
+play,6,1,shefg001,10,BX,5/FL
+play,6,1,grees001,20,BBX,5/FL
+play,7,0,bergp001,00,,NP
+sub,osuna002,"Antonio Osuna",1,9,1
+play,7,0,bergp001,11,CBX,7/F7
+play,7,0,bradm001,11,BSX,8/F8
+play,7,0,vidrj001,32,BBBCSFX,S
+play,7,0,guerv001,00,X,6/P6
+play,7,1,karre001,22,BBCFX,8/F8D
+play,7,1,hundt001,00,X,S9
+play,7,1,belta001,11,BCX,4/P4
+play,7,1,coraa001,02,CFFX,63/G
+play,8,0,stevl001,12,BFFC,K/C
+play,8,0,blumg001,21,FBBX,S7
+play,8,0,cabro001,32,SBBBFS,K+CS2(26)/DP
+play,8,1,osuna002,00,,NP
+sub,hansd001,"Dave Hansen",1,9,11
+play,8,1,hansd001,32,CBBBCC,K/C
+play,8,1,goodt001,02,SCX,S
+play,8,1,grudm001,02,FCX,3(B)3(1)/GDP
+com,"This appears to be GDP 3 unassisted"
+play,9,0,barrm003,00,,NP
+sub,shawj001,"Jeff Shaw",1,9,1
+play,9,0,barrm003,00,X,8/F8
+play,9,0,hermd001,02,CFC,K/C
+play,9,0,bergp001,00,X,13/G
+play,9,1,shefg001,10,BX,53/G
+play,9,1,grees001,11,BSX,7/F7
+play,9,1,karre001,12,CFFBX,D/89
+play,9,1,hundt001,22,FBBSFX,S9/9S.2-H
+play,9,1,belta001,00,,NP
+sub,stris001,"Scott Strickland",0,9,1
+play,9,1,belta001,01,FB,DI.1-2
+play,9,1,belta001,22,FBSFBFS,K
+data,er,hermd001,1
+data,er,stris001,0
+data,er,hergm001,4
+data,er,osuna002,0
+data,er,shawj001,0

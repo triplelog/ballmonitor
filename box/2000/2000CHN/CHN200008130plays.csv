@@ -1,0 +1,75 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,11,1,,,,,0,3,CBX,quevr001,1,0,stync001 grounds out. ,stync001,0,G
+,02,1,,,,,1,6,CCS,quevr001,1,0,larkb001 strikes out. ,larkb001,0,
+,21,1,,,,,2,10,CBBX,quevr001,1,0,,grifk002,0,
+,21,1,,,,,3,4,CBBX,parrs001,1,0,,youne001,1,F
+,12,1,gutir001,,,,4,8,BCFX,parrs001,0,0,gutir001 singles. ,gutir001,1,
+gutir001 to 2B. ,01,1,,gutir001,,gracm001,5,10,FB,parrs001,0,0,Wild Pitch. ,gracm001,1,
+gutir001 to 3B. ,12,1,,,gutir001,,6,14,FBCX,parrs001,1,0,,gracm001,1,F
+,32,1,,,gutir001,,7,20,BCBSBS,parrs001,1,0,sosas001 strikes out. ,sosas001,1,
+,32,2,bichd001,,,,8,16,BFBBFX,quevr001,0,0,bichd001 singles. ,bichd001,0,
+bichd001 to 2B. ,10,2,cases001,bichd001,,,9,18,BX,quevr001,0,0,cases001 singles. ,cases001,0,
+,12,2,cases001,bichd001,,,10,22,SBFS,quevr001,1,0,yound001 strikes out. ,yound001,0,
+bichd001 scores. cases001 out. reesp001 to 3B. ,10,2,,,reesp001,,11,24,BX,quevr001,1,1,reesp001 doubles. ,reesp001,0,
+,30,2,laruj001,,reesp001,,12,28,BBII,quevr001,0,0,laruj001 intentionally walks. ,laruj001,0,
+,22,2,laruj001,,reesp001,,13,33,BBCSS,quevr001,1,0,parrs001 strikes out. ,parrs001,0,
+,11,2,,whitr001,,,14,23,CBX,parrs001,0,0,whitr001 doubles. ,whitr001,1,
+whitr001 to 3B. ,21,2,,,whitr001,,15,27,BFBX,parrs001,1,0,mattg002 grounds out. ,mattg002,1,G
+,12,2,,,whitr001,,16,31,FBSX,parrs001,1,0,,reedj001,1,P
+,30,2,nievj002,,whitr001,,17,35,IIII,parrs001,0,0,nievj002 intentionally walks. ,nievj002,1,
+,02,2,nievj002,,whitr001,,18,39,SFFC,parrs001,1,0,quevr001 strikes out. ,quevr001,1,
+,00,3,stync001,,,,19,34,X,quevr001,0,0,stync001 reaches on error. ,stync001,0,G
+,00,3,stync001,,,,20,35,X,quevr001,1,0,,larkb001,0,F
+stync001 to 2B. ,12,3,,stync001,,,21,39,BFFX,quevr001,1,0,grifk002 grounds out. ,grifk002,0,G
+,21,3,,stync001,,,22,43,BBCX,quevr001,1,0,,bichd001,0,F
+,00,3,,,,,23,40,X,parrs001,1,0,,youne001,1,F
+,12,3,,,,,24,44,CBCX,parrs001,1,0,gutir001 grounds out. ,gutir001,1,G
+,22,3,,,,,25,50,CBBFFX,parrs001,1,0,gracm001 grounds out. ,gracm001,1,G
+,11,4,,,,,26,46,CBX,quevr001,0,1,cases001 homers. ,cases001,0,
+,00,4,,,,,27,47,X,quevr001,1,0,yound001 grounds out. ,yound001,0,G
+,32,4,,,,,28,53,CBBBFX,quevr001,1,0,,reesp001,0,L
+,32,4,laruj001,,,,29,61,BBCBCFFB,quevr001,0,0,laruj001 walks. ,laruj001,0,
+,02,4,laruj001,,,,30,64,SCS,quevr001,1,0,parrs001 strikes out. ,parrs001,0,
+,22,4,,,,,31,55,BCSBX,parrs001,1,0,,sosas001,1,
+,00,4,whitr001,,,,32,56,X,parrs001,0,0,whitr001 singles. ,whitr001,1,
+,10,4,,,,,33,58,BX,parrs001,2,0,Double Play. ,mattg002,1,
+,10,5,,,,,34,66,BX,quevr001,1,0,stync001 grounds out. ,stync001,0,G
+,20,5,,larkb001,,,35,69,BBX,quevr001,0,0,larkb001 doubles. ,larkb001,0,
+,10,5,grifk002,larkb001,,,36,71,BH,quevr001,0,0,grifk002 hit by pitch. ,grifk002,0,
+larkb001 to 3B. grifk002 to 2B. ,30,5,bichd001,grifk002,larkb001,,37,75,BBBB,quevr001,0,0,bichd001 walks. ,bichd001,0,
+larkb001 scores. grifk002 to 3B. bichd001 to 2B. ,00,5,cases001,bichd001,grifk002,,38,76,H,quevr001,0,1,cases001 hit by pitch. ,cases001,0,
+,12,5,,bichd001,grifk002,,39,80,BFSX,quevr001,2,0,Double Play. ,yound001,0,
+,02,5,,,,,40,61,FCS,parrs001,1,0,reedj001 strikes out. ,reedj001,1,
+,01,5,,,,,41,63,CX,parrs001,1,0,,nievj002,1,F
+,00,5,quevr001,,,,42,64,X,parrs001,0,0,quevr001 singles. ,quevr001,1,
+,20,5,quevr001,,,,43,67,BBX,parrs001,1,0,,youne001,1,F
+,20,6,,,,,44,83,BBX,quevr001,1,0,,reesp001,0,F
+,22,6,,,,,45,88,BBFFX,quevr001,1,0,laruj001 grounds out. ,laruj001,0,G
+,22,6,,,,,46,93,BCBSC,quevr001,1,0,parrs001 strikes out. ,parrs001,0,
+,32,6,gutir001,,,,47,74,CBBBCFB,parrs001,0,0,gutir001 walks. ,gutir001,1,
+,00,6,gutir001,,,,48,75,X,parrs001,1,0,,gracm001,1,F
+,11,6,gutir001,,,,49,78,CBX,parrs001,1,0,,sosas001,1,
+,32,6,gutir001,,,,50,84,BBFSBX,parrs001,1,0,whitr001 grounds out. ,whitr001,1,G
+,00,7,,,,,51,94,X,quevr001,1,0,stync001 grounds out. ,stync001,0,G
+,11,7,,,,,52,97,CBX,quevr001,1,0,,larkb001,0,
+,11,7,,,,,53,100,CBX,quevr001,1,0,grifk002 grounds out. ,grifk002,0,G
+,10,7,,,,,54,86,BX,parrs001,1,0,,mattg002,1,P
+,10,7,reedj001,,,,55,88,BX,parrs001,0,0,reedj001 singles. ,reedj001,1,
+,00,7,,,,,56,89,X,parrs001,2,0,Double Play. ,nievj002,1,
+,32,8,,,,,59,7,CBFFBBX,farnk001,1,0,,bichd001,0,F
+,31,8,cases001,,,,60,12,BBBCX,farnk001,0,0,cases001 singles. ,cases001,0,
+,22,8,cases001,,,,61,17,FFBBS,farnk001,1,0,yound001 strikes out. ,yound001,0,
+,11,8,cases001,,,,62,20,CBX,farnk001,1,0,,reesp001,0,F
+,02,8,,,,,64,92,CFX,parrs001,1,0,,bufod001,1,F
+,12,8,youne001,,,,65,96,CCBX,parrs001,0,0,youne001 singles. ,youne001,1,
+youne001 to 2B. ,31,8,gutir001,youne001,,,66,101,BBBCB,parrs001,0,0,gutir001 walks. ,gutir001,1,
+,00,8,gutir001,youne001,,,67,102,X,parrs001,1,0,,gracm001,1,F
+youne001 to 3B. gutir001 to 2B. ,30,8,sosas001,gutir001,youne001,,68,106,BBBB,parrs001,0,0,sosas001 walks. ,sosas001,1,
+,22,8,sosas001,gutir001,youne001,,71,5,BBCSS,sulls001,1,0,whitr001 strikes out. ,whitr001,1,
+,22,9,,,,,72,26,FBSFBS,farnk001,1,0,laruj001 strikes out. ,laruj001,0,
+,02,9,,,,,73,30,FSFS,farnk001,1,0,ochoa001 strikes out. ,ochoa001,0,
+,10,9,,,,,74,32,BX,farnk001,1,0,stync001 grounds out. ,stync001,0,G
+,32,9,,,,,76,14,BCSFBFBFX,sulls001,1,0,,browb003,1,F
+,12,9,,,,,77,18,BCFS,sulls001,1,0,reedj001 strikes out. ,reedj001,1,
+,11,9,greew001,,,,79,21,CBX,sulls001,0,0,greew001 singles. ,greew001,1,
+,22,9,greew001,,,,80,27,BBCSFX,sulls001,1,0,,bufod001,1,P

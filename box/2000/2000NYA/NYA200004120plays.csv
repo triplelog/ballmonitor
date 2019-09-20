@@ -1,0 +1,85 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,22,1,,,,,0,6,CFBBFC,coned001,1,0,clayr001 strikes out. ,clayr001,0,
+,22,1,greer001,,,,1,11,FBSBX,coned001,0,0,greer001 singles. ,greer001,0,
+greer001 to 2B. ,12,1,rodri001,greer001,,,2,16,SBFFX,coned001,0,0,rodri001 singles. ,rodri001,0,
+,12,1,,greer001,,,3,20,FSBX,coned001,2,0,Double Play. ,palmr001,0,
+,21,1,,,,,4,4,BBCX,olivd001,1,0,knobc001 grounds out. ,knobc001,1,G
+,22,1,,,,,5,9,BCBSC,olivd001,1,0,jeted001 strikes out. ,jeted001,1,
+,11,1,oneip001,,,,6,12,FBX,olivd001,0,0,oneip001 singles. ,oneip001,1,
+,22,1,oneip001,,,,7,17,BBFCC,olivd001,1,0,willb002 strikes out. ,willb002,1,
+,00,2,segud001,,,,8,21,X,coned001,0,0,segud001 singles. ,segud001,0,
+,10,2,,,,,9,23,BX,coned001,2,0,Double Play. ,mater001,0,
+,11,2,,,,,10,26,CBX,coned001,1,0,,cataf001,0,L
+,11,2,,martt002,,,11,20,CBX,olivd001,0,0,martt002 doubles. ,martt002,1,
+,22,2,,martt002,,,12,26,FCBBFX,olivd001,1,0,,spens001,1,P
+martt002 to 3B. ,21,2,,,martt002,,13,30,BFBX,olivd001,1,0,posaj001 grounds out. ,posaj001,1,G
+,02,2,,,martt002,,14,33,CSC,olivd001,1,0,kellb002 strikes out. ,kellb002,1,
+,31,3,kaplg001,,,,15,31,FBBBB,coned001,0,0,kaplg001 walks. ,kaplg001,0,
+,11,3,,,,alicl001,16,34,CBB,coned001,1,0,kaplg001 caught stealing. ,alicl001,0,
+,22,3,,,,,17,39,CBBCS,coned001,1,0,alicl001 strikes out. ,alicl001,0,
+,01,3,,clayr001,,,18,41,LX,coned001,0,0,clayr001 doubles. ,clayr001,0,
+,30,3,greer001,clayr001,,,19,45,BBBB,coned001,0,0,greer001 walks. ,greer001,0,
+clayr001 scores. greer001 to 3B. ,22,3,rodri001,,greer001,,20,50,FBFBX,coned001,0,1,rodri001 singles. ,rodri001,0,
+rodri001 to 2B. ,32,3,palmr001,rodri001,greer001,,21,56,BSBFBB,coned001,0,0,palmr001 walks. ,palmr001,0,
+greer001 scores. rodri001 to 3B. palmr001 to 2B. ,31,3,segud001,palmr001,rodri001,,22,61,SBBBB,coned001,0,1,segud001 walks. ,segud001,0,
+,22,3,segud001,palmr001,rodri001,,23,68,BFSFFBS,coned001,1,0,mater001 strikes out. ,mater001,0,
+,11,3,,,,,24,36,CBX,olivd001,1,0,soria001 grounds out. ,soria001,1,G
+,11,3,,knobc001,,,25,39,CBX,olivd001,0,0,knobc001 doubles. ,knobc001,1,
+knobc001 to 3B. ,12,3,,,knobc001,,26,43,BCFX,olivd001,1,0,jeted001 grounds out. ,jeted001,1,G
+,02,3,,,knobc001,,27,46,CCX,olivd001,1,0,,oneip001,1,L
+,11,4,cataf001,,,,28,71,FBX,coned001,0,0,cataf001 singles. ,cataf001,0,
+,10,4,cataf001,,,,29,73,BX,coned001,1,0,,kaplg001,0,F
+cataf001 to 2B. ,12,4,alicl001,cataf001,,,30,78,FFFBH,coned001,0,0,alicl001 hit by pitch. ,alicl001,0,
+,20,4,alicl001,cataf001,,,31,81,BBX,coned001,1,0,,clayr001,0,L
+,12,4,alicl001,cataf001,,,32,86,SBSFS,coned001,1,0,greer001 strikes out. ,greer001,0,
+,31,4,,,,,33,51,BSBBX,olivd001,1,0,willb002 grounds out. ,willb002,1,G
+,32,4,martt002,,,,34,61,BCBCBFFFFX,olivd001,0,0,martt002 singles. ,martt002,1,
+,30,4,martt002,,,,35,65,BBBX,olivd001,1,0,,spens001,1,F
+,20,4,martt002,,,,36,68,BBX,olivd001,1,0,posaj001 grounds out. ,posaj001,1,G
+,22,5,,,,,37,91,BFFBX,coned001,1,0,,rodri001,0,F
+,21,5,,,,,38,95,BBFX,coned001,1,0,palmr001 grounds out. ,palmr001,0,G
+,11,5,segud001,,,,39,98,BFX,coned001,0,0,segud001 singles. ,segud001,0,
+,11,5,segud001,,,,40,101,BCX,coned001,1,0,,mater001,0,F
+,10,5,kellb002,,,,41,70,BX,olivd001,0,0,kellb002 singles. ,kellb002,1,
+,10,5,kellb002,,,,42,72,BX,olivd001,1,0,,soria001,1,P
+kellb002 to 2B. ,21,5,knobc001,kellb002,,,43,76,BCBX,olivd001,0,0,knobc001 singles. ,knobc001,1,
+kellb002 scores. knobc001 to 3B. ,32,5,jeted001,,knobc001,,44,83,BSSBFBX,olivd001,0,1,jeted001 singles. ,jeted001,1,
+,10,5,jeted001,,knobc001,,45,85,BX,olivd001,1,0,,oneip001,1,P
+knobc001 scores. jeted001 scores. ,10,5,,,,,46,87,BX,olivd001,0,3,willb002 homers. ,willb002,1,
+,21,5,,,,,47,91,BBCX,olivd001,1,0,,martt002,1,F
+,22,6,cataf001,,,,48,109,BBCCFFFX,coned001,0,0,cataf001 singles. ,cataf001,0,
+evant001 to 2B. ,31,6,kaplg001,evant001,,,50,114,BFBBB,coned001,0,0,kaplg001 walks. ,kaplg001,0,
+,00,6,kaplg001,evant001,,,52,1,X,grimj001,1,0,,alicl001,0,L
+evant001 to 3B. kaplg001 to 2B. ,22,6,,kaplg001,evant001,,53,6,BBCFX,grimj001,1,0,clayr001 grounds out. ,clayr001,0,G
+evant001 scores. kaplg001 scores. ,00,6,,greer001,,,54,7,X,grimj001,0,2,greer001 doubles. ,greer001,0,
+,22,6,,greer001,,,55,13,BBCFFX,grimj001,1,0,rodri001 grounds out. ,rodri001,0,G
+,32,6,,,,,59,8,BBCCBFFX,cordf002,1,0,,spens001,1,P
+,31,6,posaj001,,,,60,13,BBCBB,cordf002,0,0,posaj001 walks. ,posaj001,1,
+,32,6,,posaj001,,,62,20,BBCCFBS,cordf002,1,0,leder001 strikes out. posaj001 steals 2B. ,leder001,1,
+posaj001 scores. johnl001 to 2B. ,00,6,,johnl001,,,64,21,X,cordf002,0,1,johnl001 reaches on error. ,johnl001,1,F
+,30,6,knobc001,johnl001,,,65,25,BBBB,cordf002,0,0,knobc001 walks. ,knobc001,1,
+,12,6,knobc001,johnl001,,,66,29,BFFX,cordf002,1,0,jeted001 grounds out. ,jeted001,1,G
+,32,7,palmr001,,,,70,7,FBBCFBB,stanm003,0,0,palmr001 walks. ,palmr001,0,
+palmr001 to 2B. ,10,7,segud001,palmr001,,,71,9,BX,stanm003,0,0,segud001 singles. ,segud001,0,
+palmr001 scores. segud001 to 3B. ,11,7,mater001,,segud001,,73,3,BCX,nelsj001,0,1,mater001 reaches on error. ,mater001,0,
+segud001 scores. ,20,7,,,,,74,6,BBX,nelsj001,2,1,Double Play. ,evant001,0,
+,12,7,,,,,75,10,CSBS,nelsj001,1,0,kaplg001 strikes out. ,kaplg001,0,
+,00,7,oneip001,,,,77,1,X,munom001,0,0,oneip001 singles. ,oneip001,1,
+oneip001 to 3B. ,10,7,willb002,,oneip001,,78,3,BX,munom001,0,0,willb002 singles. ,willb002,1,
+oneip001 scores. willb002 scores. ,20,7,,,martt002,,79,6,BBX,munom001,0,2,martt002 triples. ,martt002,1,
+,01,7,,,martt002,,81,2,CX,crabt001,1,0,spens001 grounds out. ,spens001,1,G
+,30,7,,,martt002,,82,6,BBBX,crabt001,1,0,posaj001 grounds out. ,posaj001,1,G
+martt002 scores. ,22,7,leder001,,,,84,5,FSBBX,venam002,0,1,leder001 singles. ,leder001,1,
+leder001 to 2B. ,20,7,delgw001,leder001,,,85,8,BBX,venam002,0,0,delgw001 singles. ,delgw001,1,
+,21,7,delgw001,leder001,,,87,4,BCBX,zimmj001,1,0,,knobc001,1,P
+,31,8,,,,,88,15,BBBCX,nelsj001,1,0,,alicl001,0,F
+,00,8,,,,,89,16,X,nelsj001,1,0,clayr001 grounds out. ,clayr001,0,G
+,02,8,,,,,90,20,CFFS,nelsj001,1,0,greer001 strikes out. ,greer001,0,
+,32,8,,,,,91,11,BFBFFBS,zimmj001,1,0,jeted001 strikes out. ,jeted001,1,
+,22,8,,,,,92,19,SCBBFFFS,zimmj001,1,0,oneip001 strikes out. ,oneip001,1,
+,32,8,,,,,93,25,FBBCBS,zimmj001,1,0,willb002 strikes out. ,willb002,1,
+,02,9,,,,,95,3,FFX,rivem002,1,0,,rodri001,0,F
+,31,9,palmr001,,,,96,8,BBBCB,rivem002,0,0,palmr001 walks. ,palmr001,0,
+,02,9,palmr001,,,,97,11,FFS,rivem002,1,0,segud001 strikes out. ,segud001,0,
+palmr001 to 2B. ,00,9,,palmr001,,mater001,98,12,S,rivem002,0,0,palmr001 to 2B on defensive indifference. ,mater001,0,
+,02,9,,palmr001,,,99,16,SSFS,rivem002,1,0,mater001 strikes out. ,mater001,0,

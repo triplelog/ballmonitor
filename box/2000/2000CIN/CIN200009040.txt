@@ -1,0 +1,143 @@
+version,2
+info,visteam,NYN
+info,hometeam,CIN
+info,site,CIN08
+info,date,2000/09/04
+info,number,0
+info,starttime,1:15PM
+info,daynight,day
+info,usedh,false
+info,umphome,barkl901
+info,ump1b,cousd901
+info,ump2b,nelsj901
+info,ump3b,timmt901
+info,pitches,pitches
+info,temp,82
+info,winddir,tocf
+info,windspeed,9
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,185
+info,attendance,26571
+info,wp,desse001
+info,lp,leita001
+info,save,
+start,peret004,"Timoniel Perez",0,1,9
+start,bordm001,"Mike Bordick",0,2,6
+start,alfoe001,"Edgardo Alfonzo",0,3,4
+start,piazm001,"Mike Piazza",0,4,2
+start,ventr001,"Robin Ventura",0,5,5
+start,zeilt001,"Todd Zeile",0,6,3
+start,paytj001,"Jay Payton",0,7,8
+start,hamid001,"Darryl Hamilton",0,8,7
+start,leita001,"Al Leiter",0,9,1
+start,reesp001,"Pokey Reese",1,1,4
+start,stync001,"Chris Stynes",1,2,5
+start,grifk002,"Ken Griffey",1,3,8
+start,yound001,"Dmitri Young",1,4,3
+start,ochoa001,"Alex Ochoa",1,5,9
+start,santb001,"Benito Santiago",1,6,2
+start,huntb002,"Brian L. Hunter",1,7,7
+start,sextc001,"Chris Sexton",1,8,6
+start,desse001,"Elmer Dessens",1,9,1
+play,1,0,peret004,01,CX,D/78
+play,1,0,bordm001,22,FBBFS,K
+play,1,0,alfoe001,11,BCX,13/G
+play,1,0,piazm001,00,X,9/F9D
+play,1,1,reesp001,01,CX,8/L8
+play,1,1,stync001,00,H,HP
+play,1,1,grifk002,22,BBSFX,HR/78.1-H
+play,1,1,yound001,00,X,43/G
+play,1,1,ochoa001,01,SX,43/G
+play,2,0,ventr001,22,BBCFC,K/C
+play,2,0,zeilt001,30,BBBB,W
+play,2,0,paytj001,32,BBFBFFX,54(1)/FO
+play,2,0,hamid001,12,CCBX,E3/G.1-2
+play,2,0,leita001,02,CFC,K/C
+play,2,1,santb001,01,CX,D7/7D
+play,2,1,huntb002,00,X,13/SH.2-3
+play,2,1,sextc001,00,X,FC3.3XH(32);B-1#
+play,2,1,desse001,12,FFBC,K/C
+play,3,0,peret004,00,X,6/P6
+play,3,0,bordm001,32,BBCFBX,63/G
+play,3,0,alfoe001,21,FBBX,8/F8
+play,3,1,reesp001,22,BBCCFX,S/78
+play,3,1,stync001,12,FFBC,K+SB2/C
+play,3,1,grifk002,21,BBCX,43/G.2-3
+play,3,1,yound001,00,X,S9/9S.3-H
+play,3,1,ochoa001,11,BFX,53/G
+play,4,0,piazm001,22,CBBFX,S7
+play,4,0,ventr001,01,FX,8/F8
+play,4,0,zeilt001,22,CBCFBC,K/C
+play,4,0,paytj001,00,X,4/L4
+play,4,1,santb001,22,FSBBX,9/F9D
+play,4,1,huntb002,32,CCBBFBFFFX,63/G
+play,4,1,sextc001,22,BCFBX,53/G
+play,5,0,hamid001,11,BCX,D9
+play,5,0,leita001,10,BX,54/SH.2-3
+play,5,0,peret004,12,FFFFBX,9/SF.3-H
+play,5,0,bordm001,10,BX,5/P5
+play,5,1,desse001,12,FCBX,1/G
+play,5,1,reesp001,22,CBFBFFX,43/G
+play,5,1,stync001,30,BBBB,W
+play,5,1,grifk002,31,BFBBB,W.1-2
+play,5,1,yound001,01,FX,3/L3
+play,6,0,alfoe001,31,BBBCB,W
+play,6,0,piazm001,32,FFBBFBB,W.1-2
+play,6,0,ventr001,00,X,9/F9S
+play,6,0,zeilt001,22,CFBFBX,7/F7
+play,6,0,paytj001,12,CBFX,13/G
+play,6,1,ochoa001,22,FBFBFX,1/P1
+play,6,1,santb001,30,BBBB,W
+play,6,1,huntb002,31,BBBCC,SB2
+play,6,1,huntb002,32,BBBCCC,K/C
+play,6,1,sextc001,00,X,D8/8D.2-H
+play,6,1,desse001,02,FFFX,43/G
+play,7,0,hamid001,11,BCX,63/G
+play,7,0,leita001,00,,NP
+sub,franm001,"Matt Franco",0,9,11
+play,7,0,franm001,01,FX,6/P6
+play,7,0,peret004,32,CBBBCX,D/78
+play,7,0,bordm001,00,,NP
+sub,sulls001,"Scott Sullivan",1,9,1
+play,7,0,bordm001,31,BFBBX,8/F8
+play,7,1,reesp001,00,,NP
+sub,camme001,"Eric Cammack",0,9,1
+play,7,1,reesp001,12,CCBFS,K
+play,7,1,stync001,32,BBCFBFB,W
+play,7,1,grifk002,00,,NP
+sub,rodrr004,"Rich Rodriguez",0,9,1
+play,7,1,grifk002,00,B,SB2
+play,7,1,grifk002,31,BBBCX,3/G.2-3
+play,7,1,yound001,11,BCX,8/F8
+play,8,0,alfoe001,21,BCBX,8/F8
+play,8,0,piazm001,20,BBX,HR/7
+play,8,0,ventr001,11,CBX,7/F7
+play,8,0,zeilt001,11,BCX,53/G
+play,8,1,ochoa001,22,BCBFFX,9/F9
+play,8,1,santb001,01,FX,S9/9S
+play,8,1,huntb002,32,BBBCFFX,S8.1-3
+play,8,1,sextc001,00,,NP
+sub,mahop001,"Pat Mahomes",0,9,1
+play,8,1,sextc001,00,X,13/SH.3-H;1-2
+play,8,1,sulls001,00,,NP
+sub,tuckm001,"Michael Tucker",1,9,11
+play,8,1,tuckm001,31,BBBCB,W
+play,8,1,reesp001,12,FBSFX,S9/9S.2-H;1-3
+play,8,1,stync001,00,X,8/F8
+play,9,0,paytj001,00,,NP
+sub,gravd001,"Danny Graves",1,9,1
+play,9,0,paytj001,00,X,43/G
+play,9,0,hamid001,11,CBX,8/F8
+play,9,0,mahop001,00,,NP
+sub,harrl001,"Lenny Harris",0,9,11
+play,9,0,harrl001,00,X,S7/7S
+play,9,0,peret004,01,CX,64(1)/FO
+data,er,leita001,4
+data,er,camme001,0
+data,er,rodrr004,2
+data,er,mahop001,0
+data,er,desse001,1
+data,er,sulls001,1
+data,er,gravd001,0

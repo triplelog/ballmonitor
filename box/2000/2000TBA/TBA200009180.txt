@@ -1,0 +1,147 @@
+version,2
+info,visteam,SEA
+info,hometeam,TBA
+info,site,STP01
+info,date,2000/09/18
+info,number,0
+info,starttime,7:15PM
+info,daynight,night
+info,usedh,true
+info,umphome,gormb901
+info,ump1b,fichm901
+info,ump2b,crawj901
+info,ump3b,dimum901
+info,pitches,pitches
+info,temp,72
+info,winddir,tolf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,164
+info,attendance,13129
+info,wp,panij001
+info,lp,hernr001
+info,save,
+start,hendr001,"Rickey Henderson",0,1,7
+start,camem001,"Mike Cameron",0,2,8
+start,rodra001,"Alex Rodriguez",0,3,6
+start,marte001,"Edgar Martinez",0,4,10
+start,olerj001,"John Olerud",0,5,3
+start,buhnj001,"Jay Buhner",0,6,9
+start,guilc001,"Carlos Guillen",0,7,5
+start,wilsd001,"Dan Wilson",0,8,2
+start,belld002,"David Bell",0,9,4
+start,abbop001,"Paul Abbott",0,0,1
+start,willg001,"Gerald Williams",1,1,8
+start,cairm001,"Miguel Cairo",1,2,4
+start,cox-s001,"Steve Cox",1,3,7
+start,mcgrf001,"Fred McGriff",1,4,3
+start,vaugg001,"Greg Vaughn",1,5,10
+start,huffa001,"Aubrey Huff",1,6,5
+start,guilj001,"Jose Guillen",1,7,9
+start,difem001,"Mike DiFelice",1,8,2
+start,martf001,"Felix Martinez",1,9,6
+start,rekab001,"Bryan Rekar",1,0,1
+play,1,0,hendr001,22,CBCBC,K/C
+play,1,0,camem001,12,CFBS,K
+play,1,0,rodra001,22,FFBFBC,K/C
+play,1,1,willg001,02,CFX,D7/7S
+play,1,1,cairm001,32,BLBBFFX,8/F8
+play,1,1,cox-s001,31,BBBCX,5/FL
+play,1,1,mcgrf001,32,BBCBFS,K
+play,2,0,marte001,02,CFX,7/F7
+play,2,0,olerj001,10,BX,13/G
+play,2,0,buhnj001,32,BSBCBC,K/C
+play,2,1,vaugg001,00,X,63/G
+play,2,1,huffa001,11,CBX,7/F7
+play,2,1,guilj001,00,X,3/FL
+play,3,0,guilc001,11,BSX,43/G
+play,3,0,wilsd001,11,CBX,5/L5
+play,3,0,belld002,10,BX,D/78D
+play,3,0,hendr001,12,FFBS,K
+play,3,1,difem001,21,BBCX,4/P4
+play,3,1,martf001,10,BX,S
+play,3,1,willg001,00,X,9/F9
+play,3,1,cairm001,00,X,8/F8S
+play,4,0,camem001,32,CCBBBS,K
+play,4,0,rodra001,10,BX,D7/7S
+play,4,0,marte001,00,X,S8.2-H
+play,4,0,olerj001,10,BX,D/78D.1-3
+play,4,0,buhnj001,31,BCBBX,FC6.3XH(62);B-1#
+play,4,0,guilc001,00,X,D7.2-H;1-H
+play,4,0,wilsd001,12,SBFS,K
+play,4,1,cox-s001,11,BFX,D9/9S
+play,4,1,mcgrf001,02,FSX,43/G.2-3
+play,4,1,vaugg001,02,FFH,HP
+play,4,1,huffa001,11,BFX,S9/9S.3-H;1-3
+play,4,1,guilj001,00,H,HP.1-2
+play,4,1,difem001,20,BBX,9/F9
+play,4,1,martf001,11,CBX,7/FL
+play,5,0,belld002,10,BX,S8
+play,5,0,hendr001,20,BBX,54(1)3/GDP
+play,5,0,camem001,20,BBX,S7.BX2(74)
+play,5,1,willg001,12,BCFX,4/P4
+play,5,1,cairm001,12,CBFX,7/F7D
+play,5,1,cox-s001,11,CBX,53/G
+play,6,0,rodra001,10,BX,6/P6
+play,6,0,marte001,32,BBFBSB,W
+play,6,0,olerj001,21,BBFX,S8.1-2
+play,6,0,buhnj001,20,BBX,9/F9
+play,6,0,guilc001,22,BBFSS,K
+play,6,1,mcgrf001,22,BSCFBX,31/G
+play,6,1,vaugg001,21,BFBX,HR/78
+play,6,1,huffa001,10,BX,53/G
+play,6,1,guilj001,12,BCSS,K+WP.B-1
+play,6,1,difem001,12,FBSX,D/78D.1-H
+play,6,1,martf001,00,X,6/P6
+play,7,0,wilsd001,11,BCX,143/G
+play,7,0,belld002,12,BCCS,K
+play,7,0,hendr001,00,X,13/G
+play,7,1,willg001,32,BSBCFBFFB,W
+play,7,1,cairm001,00,B,CS2(26)
+play,7,1,cairm001,10,BX,S7
+play,7,1,cox-s001,00,,NP
+sub,rhoda001,"Arthur Rhodes",0,0,1
+play,7,1,cox-s001,00,X,64(1)3/GDP
+play,8,0,camem001,00,,NP
+sub,yan-e001,"Esteban Yan",1,0,1
+play,8,0,camem001,12,CFBS,K
+play,8,0,rodra001,02,SSS,K
+play,8,0,marte001,12,CBFS,K
+play,8,1,mcgrf001,22,SCBBC,K/C
+play,8,1,vaugg001,31,BFBBB,W
+play,8,1,huffa001,22,BBCFX,8/F8
+play,8,1,guilj001,00,,NP
+sub,panij001,"Jose Paniagua",0,0,1
+play,8,1,guilj001,22,FFBBFS,K
+play,9,0,olerj001,00,,NP
+sub,hernr001,"Roberto Hernandez",1,0,1
+play,9,0,olerj001,32,BBBCFX,43/G
+play,9,0,buhnj001,21,CBBX,DGR/7
+com,"$Buhner's fly stuck in the catwalk 150 feet up"
+play,9,0,guilc001,00,,NP
+sub,gipsc001,"Charles Gipson",0,6,12
+play,9,0,guilc001,32,BBCBFB,W.2-3(WP)
+play,9,0,wilsd001,00,,NP
+sub,javis001,"Stan Javier",0,8,11
+play,9,0,javis001,00,X,D7/G5L.3-H;1-3
+play,9,0,belld002,11,LBX,53/G
+play,9,0,hendr001,12,BFFX,9/F9S
+play,9,1,difem001,00,,NP
+sub,gipsc001,"Charles Gipson",0,6,9
+play,9,1,difem001,00,,NP
+sub,ibanr001,"Raul Ibanez",0,8,7
+play,9,1,difem001,00,,NP
+sub,olivj001,"Joe Oliver",0,1,2
+play,9,1,difem001,12,CFBFS,K
+play,9,1,martf001,00,,NP
+sub,castv001,"Vinny Castilla",1,9,11
+play,9,1,castv001,12,BFFX,53/G
+play,9,1,willg001,10,BX,53/G
+data,er,abbop001,3
+data,er,rhoda001,0
+data,er,panij001,0
+data,er,rekab001,3
+data,er,yan-e001,0
+data,er,hernr001,1

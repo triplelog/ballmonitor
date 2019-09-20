@@ -1,0 +1,153 @@
+version,2
+info,visteam,SLN
+info,hometeam,CHN
+info,site,CHI11
+info,date,2000/08/14
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,everm901
+info,ump1b,danlk901
+info,ump2b,gormb901
+info,ump3b,dimum901
+info,pitches,pitches
+info,temp,83
+info,winddir,tolf
+info,windspeed,14
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,176
+info,attendance,39124
+info,wp,liebj001
+info,lp,benea001
+info,save,
+start,vinaf001,"Fernando Vina",0,1,4
+start,drewj001,"J.D. Drew",0,2,9
+start,edmoj001,"Jim Edmonds",0,3,8
+start,clarw001,"Will Clark",0,4,3
+start,lankr001,"Ray Lankford",0,5,7
+start,tatif001,"Fernando Tatis",0,6,5
+start,rente001,"Edgar Renteria",0,7,6
+start,hernc001,"Carlos A. Hernandez",0,8,2
+start,benea001,"Andy Benes",0,9,1
+start,youne001,"Eric Young",1,1,4
+start,gutir001,"Ricky Gutierrez",1,2,6
+start,sosas001,"Sammy Sosa",1,3,9
+start,gracm001,"Mark Grace",1,4,3
+start,whitr001,"Rondell White",1,5,7
+start,bufod001,"Damon Buford",1,6,8
+start,giraj001,"Joe Girardi",1,7,2
+start,husoj001,"Jeff Huson",1,8,5
+start,liebj001,"Jon Lieber",1,9,1
+play,1,0,vinaf001,02,CFX,S9
+play,1,0,drewj001,32,BBSSBFX,D9/9D.1-3
+play,1,0,edmoj001,00,X,7/F7
+play,1,0,clarw001,22,FBCBX,31/G.3-H;2-3
+play,1,0,lankr001,22,CSBBFC,K/C
+play,1,1,youne001,21,BCBX,63/G
+play,1,1,gutir001,01,CX,8/F8
+play,1,1,sosas001,32,BBCBFB,W
+play,1,1,gracm001,01,CX,13/G
+play,2,0,tatif001,00,X,D/78D
+play,2,0,rente001,00,X,53/G
+play,2,0,hernc001,22,CCBBS,K
+play,2,0,benea001,00,X,53/G
+play,2,1,whitr001,10,BX,S7/7S
+play,2,1,bufod001,02,CFS,K
+play,2,1,giraj001,10,BX,64(1)/FO
+play,2,1,husoj001,11,CBX,8/F8
+play,3,0,vinaf001,10,BX,43/G
+play,3,0,drewj001,00,X,53/G
+play,3,0,edmoj001,22,FCBBC,K/C
+play,3,1,liebj001,02,SCC,K/C
+play,3,1,youne001,21,CBBX,8/F8
+play,3,1,gutir001,01,CX,53/G
+play,4,0,clarw001,00,X,S7
+play,4,0,lankr001,11,FBX,7/F7
+play,4,0,tatif001,02,CFS,K
+play,4,0,rente001,12,SBFX,S7/7S.1-2
+play,4,0,hernc001,21,BBFX,S9.2-H;1-3
+play,4,0,benea001,32,CCBBFBC,K/C
+play,4,1,sosas001,10,BX,63/G
+play,4,1,gracm001,31,CBBBX,D9/9LD
+play,4,1,whitr001,11,BCX,S5/G5S.2-3
+com,"$right down the line and might have rolled foul if not picked up"
+play,4,1,bufod001,12,CBCB,WP.1-2
+play,4,1,bufod001,32,CBCBBB,W
+play,4,1,giraj001,12,BSSX,43/G.3-H;2-3;1-2
+play,4,1,husoj001,31,*BCBBX,D7.3-H;2-H
+play,4,1,liebj001,12,SCBX,D7.2-H
+play,4,1,youne001,22,BFBSFX,4/L4
+play,5,0,vinaf001,11,BCX,143/G
+play,5,0,drewj001,32,BFBBFX,3/G
+play,5,0,edmoj001,00,X,3/G
+play,5,1,gutir001,22,CBCBX,53/G
+play,5,1,sosas001,00,X,HR/7
+play,5,1,gracm001,22,CFBBFX,7/F7
+play,5,1,whitr001,32,BBFBFB,W
+play,5,1,bufod001,12,SBCB,CS2(24)
+play,6,0,clarw001,00,X,D9
+play,6,0,lankr001,21,SBBX,8/F8.2-3
+play,6,0,tatif001,32,CBSBBFFB,W
+play,6,0,rente001,00,X,S9.3-H;1-3
+play,6,0,hernc001,02,CFX,7/F7S
+play,6,0,benea001,00,,NP
+sub,davie001,"Eric Davis",0,9,11
+play,6,0,davie001,32,CBBFBS,K
+play,6,1,bufod001,00,,NP
+sub,jamem001,"Mike James",0,9,1
+play,6,1,bufod001,10,BX,8/F8S
+play,6,1,giraj001,12,BSFS,K
+play,6,1,husoj001,10,BX,43/G
+play,7,0,vinaf001,00,,NP
+sub,greew001,"Willie Greene",1,9,5
+play,7,0,vinaf001,00,,NP
+sub,heref001,"Felix Heredia",1,8,1
+play,7,0,vinaf001,22,CBSBX,8/F8
+play,7,0,drewj001,00,,NP
+sub,dunss001,"Shawon Dunston",0,2,11
+play,7,0,dunss001,22,BBCFS,K
+play,7,0,edmoj001,22,CFBBC,K/C
+play,7,1,greew001,00,,NP
+sub,dunss001,"Shawon Dunston",0,2,9
+play,7,1,greew001,00,X,31/G
+play,7,1,youne001,21,BBCX,S5/BG5
+play,7,1,gutir001,01,CB,SB2
+play,7,1,gutir001,12,CBFFX,63/G
+play,7,1,sosas001,30,IIII,IW
+play,7,1,gracm001,01,SX,S9.2XH(92);1-2
+play,8,0,clarw001,10,BX,3/G
+play,8,0,lankr001,10,BX,7/F7
+play,8,0,tatif001,00,,NP
+sub,worrt002,"Tim Worrell",1,8,1
+play,8,0,tatif001,31,BBBCB,W
+play,8,0,rente001,11,CBX,54(1)/FO
+play,8,1,whitr001,00,,NP
+sub,polap001,"Placido Polanco",0,9,5
+play,8,1,whitr001,00,,NP
+sub,timlm001,"Mike Timlin",0,6,1
+play,8,1,whitr001,00,X,S9
+play,8,1,bufod001,12,BSSX,S7/7S.1-2
+play,8,1,giraj001,00,X,13/SH.2-3;1-2
+play,8,1,worrt002,00,,NP
+sub,browb003,"Brant Brown",1,8,11
+play,8,1,browb003,01,FX,S8/8S.3-H;2-3
+play,8,1,greew001,00,B,SB2
+play,8,1,greew001,30,BBBB,W
+play,8,1,youne001,32,CBBFBX,9/SF.3-H;2-3;1-2
+play,8,1,gutir001,12,BCFFFFFH,HP
+play,8,1,sosas001,10,BX,2/FL
+play,9,0,hernc001,00,,NP
+sub,aguir001,"Rick Aguilera",1,8,1
+play,9,0,hernc001,22,CCBBFH,HP
+play,9,0,polap001,21,BCBX,54(1)3/GDP
+play,9,0,vinaf001,22,CFFBBS,K
+data,er,benea001,5
+data,er,jamem001,0
+data,er,timlm001,2
+data,er,liebj001,3
+data,er,heref001,0
+data,er,worrt002,0
+data,er,aguir001,0

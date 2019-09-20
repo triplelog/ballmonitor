@@ -1,0 +1,146 @@
+version,2
+info,visteam,FLO
+info,hometeam,CIN
+info,site,CIN08
+info,date,2000/05/28
+info,number,0
+info,starttime,1:15PM
+info,daynight,day
+info,usedh,false
+info,umphome,wegnm901
+info,ump1b,vanvm901
+info,ump2b,willc901
+info,ump3b,reynj901
+info,pitches,pitches
+info,temp,64
+info,winddir,unknown
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,172
+info,attendance,36754
+info,wp,dempr002
+info,lp,sulls001
+info,save,alfoa001
+start,castl001,"Luis Castillo",0,1,4
+start,bergd002,"Dave Berg",0,2,6
+start,floyc001,"Cliff Floyd",0,3,7
+start,wilsp002,"Preston Wilson",0,4,8
+start,millk005,"Kevin Millar",0,5,5
+start,lee-d002,"Derrek Lee",0,6,3
+start,bautd001,"Danny Bautista",0,7,9
+start,redmm001,"Mike Redmond",0,8,2
+start,dempr002,"Ryan Dempster",0,9,1
+start,reesp001,"Pokey Reese",1,1,4
+start,larkb001,"Barry Larkin",1,2,6
+start,grifk002,"Ken Griffey",1,3,8
+start,bichd001,"Dante Bichette",1,4,9
+start,yound001,"Dmitri Young",1,5,7
+start,taube001,"Eddie Taubensee",1,6,2
+start,cases001,"Sean Casey",1,7,3
+start,boona001,"Aaron Boone",1,8,5
+start,neagd001,"Denny Neagle",1,9,1
+play,1,0,castl001,11,BFX,63/G
+play,1,0,bergd002,12,SCBS,K
+play,1,0,floyc001,21,CBBX,S8
+play,1,0,wilsp002,30,BBBB,W.1-2
+play,1,0,millk005,12,BCFX,4/P4
+play,1,1,reesp001,32,CBFBBX,53/G
+play,1,1,larkb001,02,CCX,S9/9S
+play,1,1,grifk002,30,BBBB,W.1-2
+play,1,1,bichd001,22,CFFBFFBX,6/P6
+play,1,1,yound001,10,BX,D7.2-H;1-3
+play,1,1,taube001,32,BCBBFS,K23
+play,2,0,lee-d002,10,BX,7/F7
+play,2,0,bautd001,12,BCCC,K/C
+play,2,0,redmm001,30,BBBB,W
+play,2,0,dempr002,00,X,46(1)/FO
+play,2,1,cases001,12,BCSC,K/C
+play,2,1,boona001,02,SSS,K
+play,2,1,neagd001,22,SBFFBFX,S8.B-2(E8)
+play,2,1,reesp001,10,BX,53/G
+play,3,0,castl001,11,BCX,S4/BG4
+play,3,0,bergd002,01,SB,SB2
+play,3,0,bergd002,31,SBBBB,W
+play,3,0,floyc001,22,BCSBS,K
+play,3,0,wilsp002,32,FFBBBFS,K+SB3;SB2
+play,3,0,millk005,22,FFBBX,53/G
+play,3,1,larkb001,22,BFFBX,S8
+play,3,1,grifk002,22,BCBCX,8/F8
+play,3,1,bichd001,00,X,S7/7S.1-2
+play,3,1,yound001,12,SBFS,K
+play,3,1,taube001,00,X,6(1)/FO/G.2-3
+play,4,0,lee-d002,32,CBBBCX,5/P5
+play,4,0,bautd001,12,BFFX,63/G
+play,4,0,redmm001,11,CBX,43/G
+play,4,1,cases001,00,X,8/F8
+play,4,1,boona001,11,BSX,5/L5
+play,4,1,neagd001,00,X,7/F7
+play,5,0,dempr002,02,SCC,K/C
+play,5,0,castl001,21,CBBX,4/P4
+play,5,0,bergd002,01,CX,S9
+play,5,0,floyc001,22,BCBFS,K
+play,5,1,reesp001,12,CBCS,K
+play,5,1,larkb001,10,BX,6/P6
+play,5,1,grifk002,10,BX,43/G
+play,6,0,wilsp002,02,FCX,53/G
+play,6,0,millk005,32,BCFBFBB,W
+play,6,0,lee-d002,02,SFS,K
+play,6,0,bautd001,10,BX,4/P4
+play,6,1,bichd001,11,CBX,8/F8D
+play,6,1,yound001,31,CBBBB,W
+play,6,1,taube001,32,CBBFBX,6(B)3(1)/LDP
+play,7,0,redmm001,12,BFFFX,43/G
+play,7,0,dempr002,02,LSFX,53/G
+play,7,0,castl001,01,CX,S/78
+play,7,0,bergd002,22,SCBBB,SB2
+play,7,0,bergd002,32,SCBBBFFX,8/F8
+play,7,1,cases001,32,BBBCSFX,S7
+play,7,1,boona001,00,X,S1/BG1.1-2
+play,7,1,neagd001,11,BLX,7/F7
+play,7,1,reesp001,20,BBX,8/F8
+play,7,1,larkb001,01,CX,S.2-3;1-2
+play,7,1,grifk002,22,SBCBS,K
+play,8,0,floyc001,12,BSFX,S9/9S
+play,8,0,wilsp002,00,,NP
+sub,sulls001,"Scott Sullivan",1,9,1
+play,8,0,wilsp002,12,BCSS,K
+play,8,0,millk005,10,BX,S7.1-3
+play,8,0,lee-d002,02,CSB,PB.1-2
+play,8,0,lee-d002,12,CSBS,K
+play,8,0,bautd001,12,BFCX,HR/7.3-H;2-H
+play,8,0,redmm001,12,CFBX,63/G
+play,8,1,bichd001,00,,NP
+sub,bergd002,"Dave Berg",0,2,5
+play,8,1,bichd001,00,,NP
+sub,gonza002,"Alex Gonzalez",0,5,6
+play,8,1,bichd001,00,X,53/P4
+play,8,1,yound001,10,BX,3/G
+play,8,1,taube001,10,BX,S8
+play,8,1,cases001,00,,NP
+sub,darev001,"Vic Darensbourg",0,9,1
+play,8,1,cases001,22,BCBCS,K
+play,9,0,darev001,00,,NP
+sub,kotsm001,"Mark Kotsay",0,9,11
+play,9,0,kotsm001,10,BX,D9
+play,9,0,castl001,12,BLLL,K/BF
+play,9,0,bergd002,12,FSBFX,8/F8
+play,9,0,floyc001,30,IIII,IW
+play,9,0,wilsp002,02,CSFS,K
+play,9,1,boona001,00,,NP
+sub,bautd001,"Danny Bautista",0,7,7
+play,9,1,boona001,00,,NP
+sub,kotsm001,"Mark Kotsay",0,9,9
+play,9,1,boona001,00,,NP
+sub,alfoa001,"Antonio Alfonseca",0,3,1
+play,9,1,boona001,12,CFBS,K
+play,9,1,sulls001,00,,NP
+sub,tuckm001,"Michael Tucker",1,9,11
+play,9,1,tuckm001,00,X,S
+play,9,1,reesp001,02,CSFX,64(1)3/GDP
+data,er,dempr002,1
+data,er,darev001,0
+data,er,alfoa001,0
+data,er,neagd001,1
+data,er,sulls001,2

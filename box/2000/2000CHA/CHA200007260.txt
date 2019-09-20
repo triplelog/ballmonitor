@@ -1,0 +1,160 @@
+version,2
+info,visteam,KCA
+info,hometeam,CHA
+info,site,CHI12
+info,date,2000/07/26
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,tscht901
+info,ump1b,gibsg901
+info,ump2b,meric901
+info,ump3b,timmt901
+info,pitches,pitches
+info,temp,81
+info,winddir,tocf
+info,windspeed,18
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,190
+info,attendance,26615
+info,wp,spraj001
+info,lp,howrb001
+info,save,bottr001
+start,damoj001,"Johnny Damon",0,1,10
+start,sancr001,"Rey Sanchez",0,2,6
+start,sweem002,"Mike Sweeney",0,3,3
+start,dye-j001,"Jermaine Dye",0,4,9
+start,randj002,"Joe Randa",0,5,5
+start,quinm001,"Mark Quinn",0,6,7
+start,dunwt001,"Todd Dunwoody",0,7,8
+start,zaung001,"Gregg Zaun",0,8,2
+start,reboj001,"Jeff Reboulet",0,9,4
+start,reicd001,"Dan Reichert",0,0,1
+start,durhr001,"Ray Durham",1,1,4
+start,graft001,"Tony Graffanino",1,2,6
+start,thomf001,"Frank Thomas",1,3,10
+start,ordom001,"Magglio Ordonez",1,4,9
+start,perrh001,"Herbert Perry",1,5,5
+start,nortg001,"Greg Norton",1,6,3
+start,lee-c001,"Carlos Lee",1,7,7
+start,abboj002,"Jeff Abbott",1,8,8
+start,johnm003,"Mark Johnson",1,9,2
+start,baldj002,"James Baldwin",1,0,1
+play,1,0,damoj001,21,BBCX,13/G
+play,1,0,sancr001,02,CCX,S
+play,1,0,sweem002,01,CX,5/P5
+play,1,0,dye-j001,11,CBX,HR/7.1-H
+play,1,0,randj002,22,BCCBX,63/G
+play,1,1,durhr001,30,BBBB,W
+play,1,1,graft001,12,CSBFS,K
+play,1,1,thomf001,22,CBBCX,53/G.1-2
+play,1,1,ordom001,22,SBBCB,WP.2-3
+play,1,1,ordom001,32,SBBCBX,9/F9
+play,2,0,quinm001,00,X,4/P4
+play,2,0,dunwt001,22,CBBFX,43/G
+play,2,0,zaung001,22,BFCFBX,8/F8
+play,2,1,perrh001,32,BSBFBFX,53/G
+play,2,1,nortg001,12,SCFBX,43/G
+play,2,1,lee-c001,00,X,53/G
+play,3,0,reboj001,01,FX,43/G
+play,3,0,damoj001,22,CSBBX,6/P6
+play,3,0,sancr001,20,BBX,D/78
+play,3,0,sweem002,00,X,43/G
+play,3,1,abboj002,01,SX,S
+play,3,1,johnm003,00,X,6(1)3/GDP
+play,3,1,durhr001,30,BBBB,W
+play,3,1,graft001,21,BBFX,63/G
+play,4,0,dye-j001,32,BBCBFX,9/F9D
+play,4,0,randj002,00,X,S
+play,4,0,quinm001,01,SX,HR/7.1-H
+play,4,0,dunwt001,02,CFFX,S9
+play,4,0,zaung001,31,BCBBX,7/F7
+play,4,0,reboj001,11,CBB,SB2
+play,4,0,reboj001,32,CBBSBS,K
+play,4,1,thomf001,31,BBBCB,W
+play,4,1,ordom001,20,BBX,54(1)3/GDP
+play,4,1,perrh001,20,BBX,63/G
+play,5,0,damoj001,22,BBCFFS,K
+play,5,0,sancr001,02,CCFX,43/G
+play,5,0,sweem002,31,BBBCH,HP
+play,5,0,dye-j001,32,BCFBBFFX,4/FL
+play,5,1,nortg001,31,BCBBX,31/G
+play,5,1,lee-c001,32,BBCBCB,W
+play,5,1,abboj002,01,CX,S8.1-2
+play,5,1,johnm003,00,X,13/SH.2-3;1-2#
+play,5,1,durhr001,32,BBBCCB,W
+play,5,1,graft001,00,X,64(1)/FO
+play,6,0,randj002,12,CBFX,3/FL
+play,6,0,quinm001,02,SFFS,K
+play,6,0,dunwt001,02,CCFC,K/C
+play,6,1,thomf001,00,X,D7
+play,6,1,ordom001,02,FCX,E2/TH.2-3
+play,6,1,perrh001,20,BBX,S9.3-H;1-2
+play,6,1,nortg001,21,BBFX,S8.2-H(UR);1-2
+play,6,1,lee-c001,30,BBBB,W.2-3;1-2
+play,6,1,abboj002,00,,NP
+sub,larka001,"Andy Larkin",0,0,1
+play,6,1,abboj002,12,BSCX,64(1)3/GDP.3-H(UR);2-3
+play,6,1,johnm003,00,,NP
+sub,konep001,"Paul Konerko",1,9,11
+play,6,1,konep001,11,BCX,S8.3-H(UR)
+play,6,1,durhr001,00,,NP
+sub,fordb001,"Brook Fordyce",1,9,12
+play,6,1,durhr001,10,BX,8/F8
+play,7,0,zaung001,00,,NP
+sub,fordb001,"Brook Fordyce",1,9,2
+play,7,0,zaung001,01,FX,9/F9
+play,7,0,reboj001,22,BFBSX,43/G
+play,7,0,damoj001,01,CX,43/G
+play,7,1,graft001,10,BX,53/G
+play,7,1,thomf001,22,CBBSC,K/C
+play,7,1,ordom001,10,BX,63/G
+play,8,0,sancr001,00,,NP
+sub,howrb001,"Bobby Howry",1,0,1
+play,8,0,sancr001,22,CFBFFBFX,4/P4
+play,8,0,sweem002,22,CSBBFX,63/G
+play,8,0,dye-j001,32,BBBCCS,K
+play,8,1,perrh001,01,CX,HR/7
+play,8,1,nortg001,32,CSBBBB,W
+play,8,1,lee-c001,00,,NP
+sub,spraj001,"Jerry Spradlin",0,0,1
+play,8,1,lee-c001,10,BX,63/G.1-2
+play,8,1,abboj002,22,SFBBS,K
+play,8,1,fordb001,22,SBCBX,8/F8
+play,9,0,randj002,00,,NP
+sub,singc001,"Chris Singleton",1,8,8
+play,9,0,randj002,00,X,8/F8
+play,9,0,quinm001,22,BCBFFS,K
+play,9,0,dunwt001,12,CBFX,S
+play,9,0,zaung001,32,BFBBFFB,W.1-2
+play,9,0,reboj001,00,,NP
+sub,mccad001,"David McCarty",0,9,11
+play,9,0,mccad001,00,,NP
+sub,foulk001,"Keith Foulke",1,0,1
+play,9,0,mccad001,00,X,S7.2-H;1-2
+play,9,0,damoj001,00,,NP
+sub,feblc001,"Carlos Febles",0,9,12
+play,9,0,damoj001,02,CFFFX,D9.2-H;1-3
+play,9,0,sancr001,00,X,S9.3-H;2-3
+play,9,0,sweem002,12,BFFX,4/L4
+play,9,1,durhr001,00,,NP
+sub,feblc001,"Carlos Febles",0,9,4
+play,9,1,durhr001,01,CX,43/G
+play,9,1,graft001,00,,NP
+sub,valej003,"Jose Valentin",1,2,11
+play,9,1,valej003,22,FBBFX,HR/9
+play,9,1,thomf001,32,BFCBBFC,K/C
+play,9,1,ordom001,11,SBX,S/78
+play,9,1,perrh001,00,,NP
+sub,bottr001,"Ricky Bottalico",0,0,1
+play,9,1,perrh001,00,X,9/F9
+data,er,reicd001,1
+data,er,larka001,1
+data,er,spraj001,1
+data,er,bottr001,0
+data,er,baldj002,4
+data,er,howrb001,2
+data,er,foulk001,1

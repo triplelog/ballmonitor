@@ -1,0 +1,146 @@
+version,2
+info,visteam,PHI
+info,hometeam,MON
+info,site,MON02
+info,date,2000/05/11
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,herna901
+info,ump1b,timmt901
+info,ump2b,fostm901
+info,ump3b,kulpr901
+info,pitches,pitches
+info,temp,72
+info,winddir,tocf
+info,windspeed,0
+info,fieldcond,dry
+info,precip,none
+info,sky,dome
+info,timeofgame,159
+info,attendance,8311
+info,wp,wolfr001
+info,lp,pavac001
+info,save,gomew001
+start,sefck001,"Kevin Sefcik",0,1,8
+start,relad001,"Desi Relaford",0,2,6
+start,abreb001,"Bobby Abreu",0,3,9
+start,roles001,"Scott Rolen",0,4,5
+start,jordk001,"Kevin Jordan",0,5,3
+start,gantr001,"Ron Gant",0,6,7
+start,moram001,"Mickey Morandini",0,7,4
+start,print001,"Tom Prince",0,8,2
+start,wolfr001,"Randy Wolf",0,9,1
+start,jonet004,"Terry Jones",1,1,8
+start,vidrj001,"Jose Vidro",1,2,4
+start,whitr001,"Rondell White",1,3,7
+start,guerv001,"Vladimir Guerrero",1,4,9
+start,widgc001,"Chris Widger",1,5,2
+start,stevl001,"Lee Stevens",1,6,3
+start,barrm003,"Michael Barrett",1,7,5
+start,cabro001,"Orlando Cabrera",1,8,6
+start,pavac001,"Carl Pavano",1,9,1
+play,1,0,sefck001,22,BFFBS,K
+play,1,0,relad001,02,CFFH,HP
+play,1,0,abreb001,02,CFC,K/C
+play,1,0,roles001,01,SH,HP.1-2
+play,1,0,jordk001,02,CFFFX,T9.2-H;1-H
+play,1,0,gantr001,21,BCBX,7/F7D
+play,1,1,jonet004,22,BCBFFX,3/G
+play,1,1,vidrj001,22,BBCSFFS,K
+play,1,1,whitr001,22,BFFFBS,K
+play,2,0,moram001,32,BFBCBX,3/P3
+play,2,0,print001,12,CBSS,K
+play,2,0,wolfr001,22,CSBFBS,K
+play,2,1,guerv001,12,SBSFS,K
+play,2,1,widgc001,10,BX,9/L9
+play,2,1,stevl001,30,BBBB,W
+play,2,1,barrm003,00,X,46(1)/FO
+play,3,0,sefck001,12,FBCX,43/G
+play,3,0,relad001,01,CX,E6/G
+play,3,0,abreb001,12,FBCFS,K
+play,3,0,roles001,00,X,D7.1-H(UR)
+play,3,0,jordk001,31,BBBCX,13/G
+play,3,1,cabro001,12,CBCX,9/F9
+play,3,1,pavac001,11,BFX,S7/7S
+play,3,1,jonet004,12,CFFBX,S8.1-2
+play,3,1,vidrj001,02,CFX,HR/7.2-H;1-H
+play,3,1,whitr001,00,X,13/G
+play,3,1,guerv001,22,BFBSX,S7
+play,3,1,widgc001,22,BCBSFX,7/FL
+play,4,0,gantr001,00,X,3/P3
+play,4,0,moram001,32,CBFBFBB,W
+play,4,0,print001,01,FX,54(1)3/GDP
+play,4,1,stevl001,32,BCSBBX,8/F8
+play,4,1,barrm003,21,BBCX,4/P4
+play,4,1,cabro001,10,BX,D7.B-H(E7)(UR)
+play,4,1,pavac001,02,SFC,K/C
+play,5,0,wolfr001,02,CCC,K/C
+play,5,0,sefck001,00,X,53/G
+play,5,0,relad001,12,CBFX,43/G
+play,5,1,jonet004,11,BCX,8/F8
+play,5,1,vidrj001,21,CBBX,S8
+play,5,1,whitr001,22,CCBBS,K
+play,5,1,guerv001,12,FSBS,K
+play,6,0,abreb001,01,CX,S7
+play,6,0,roles001,02,FFS,K+SB2
+play,6,0,jordk001,12,CFFBX,4/L4
+play,6,0,gantr001,32,FBBBSX,8/F8S
+play,6,1,widgc001,02,CFX,8/F8
+play,6,1,stevl001,22,BSFBX,D9/9D
+play,6,1,barrm003,31,BBSBB,W
+play,6,1,cabro001,21,BBFX,9/F9.2-3
+play,6,1,pavac001,02,FFFS,K
+play,7,0,moram001,01,CX,S9
+play,7,0,print001,00,X,D7.1-H
+play,7,0,wolfr001,00,,NP
+sub,duceb001,"Rob Ducey",0,9,11
+play,7,0,duceb001,11,BFX,7/F7
+play,7,0,sefck001,12,CBFX,3/G.2-3
+play,7,0,relad001,31,BCBBB,W
+play,7,0,abreb001,00,,NP
+sub,blanm001,"Matt Blank",1,9,1
+play,7,0,abreb001,31,BCBBX,E5/G.3-H(NR)(UR);1X3(5)#
+play,7,1,jonet004,00,,NP
+sub,branj001,"Jeff Brantley",0,9,1
+play,7,1,jonet004,12,BCCX,6/P6
+play,7,1,vidrj001,32,BCBBCX,S9
+play,7,1,whitr001,01,CX,8/F8
+play,7,1,guerv001,10,BX,9/F9
+play,8,0,roles001,00,,NP
+sub,telfa001,"Anthony Telford",1,9,1
+play,8,0,roles001,12,BFFS,K
+play,8,0,jordk001,32,BCCFBFBS,K
+play,8,0,gantr001,11,BCX,S8
+play,8,0,moram001,00,X,T9.1-H
+play,8,0,print001,10,BX,63/G
+play,8,1,widgc001,12,BSSX,9/F9
+play,8,1,stevl001,10,BX,53/G
+play,8,1,barrm003,10,BX,4/P4
+play,9,0,branj001,00,,NP
+sub,gland001,"Doug Glanville",0,9,11
+play,9,0,gland001,22,BCBFS,K23
+play,9,0,sefck001,02,FCFX,D7/7D
+play,9,0,relad001,00,X,7/F7
+play,9,0,abreb001,31,BFBBB,W
+play,9,0,roles001,12,SBCFS,K
+play,9,1,cabro001,00,,NP
+sub,gland001,"Doug Glanville",0,9,8
+play,9,1,cabro001,00,,NP
+sub,gomew001,"Wayne Gomes",0,1,1
+play,9,1,cabro001,32,BBBCCB,W
+play,9,1,telfa001,00,,NP
+sub,traca001,"Andy Tracy",1,9,11
+play,9,1,traca001,12,BSCS,K
+play,9,1,jonet004,00,,NP
+sub,blumg001,"Geoff Blum",1,1,11
+play,9,1,blumg001,00,B,PB.1-2
+play,9,1,blumg001,31,BBSBX,3/G.2-3
+play,9,1,vidrj001,10,BX,43/G
+data,er,wolfr001,3
+data,er,branj001,0
+data,er,gomew001,0
+data,er,pavac001,3
+data,er,blanm001,0
+data,er,telfa001,1

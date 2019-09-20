@@ -1,0 +1,152 @@
+version,2
+info,visteam,HOU
+info,hometeam,CHN
+info,site,CHI11
+info,date,2000/05/03
+info,number,0
+info,starttime,1:20PM
+info,daynight,day
+info,usedh,false
+info,umphome,scotd901
+info,ump1b,welkt901
+info,ump2b,cedeg901
+info,ump3b,fichm901
+info,pitches,pitches
+info,temp,65
+info,winddir,fromrf
+info,windspeed,14
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,157
+info,attendance,26828
+info,wp,liebj001
+info,lp,holtc001
+info,save,aguir001
+start,biggc001,"Craig Biggio",0,1,4
+start,berkl001,"Lance Berkman",0,2,9
+start,bagwj001,"Jeff Bagwell",0,3,3
+start,camik001,"Ken Caminiti",0,4,5
+start,hidar001,"Richard Hidalgo",0,5,8
+start,wardd002,"Daryle Ward",0,6,7
+start,euset001,"Tony Eusebio",0,7,2
+start,bogat001,"Tim Bogar",0,8,6
+start,holtc001,"Chris Holt",0,9,1
+start,youne001,"Eric Young",1,1,4
+start,gutir001,"Ricky Gutierrez",1,2,6
+start,gracm001,"Mark Grace",1,3,3
+start,sosas001,"Sammy Sosa",1,4,9
+start,rodrh001,"Henry Rodriguez",1,5,7
+start,greew001,"Willie Greene",1,6,5
+start,reedj001,"Jeff Reed",1,7,2
+start,bufod001,"Damon Buford",1,8,8
+start,liebj001,"Jon Lieber",1,9,1
+play,1,0,biggc001,21,BBCX,7/F7
+play,1,0,berkl001,02,CCFC,K/C
+play,1,0,bagwj001,22,BBFCS,K
+play,1,1,youne001,11,CBX,HR/7
+play,1,1,gutir001,12,BFCX,53/G
+play,1,1,gracm001,02,CFX,S8
+play,1,1,sosas001,12,BFFB,WP.1-2
+play,1,1,sosas001,22,BFFBC,K/C
+play,1,1,rodrh001,00,X,D7/7S.2-H
+play,1,1,greew001,30,BBBB,W
+play,1,1,reedj001,32,CCBBBFFB,W.2-3;1-2
+play,1,1,bufod001,22,FBFFBX,S7.3-H;2-H;1-2
+play,1,1,liebj001,10,BX,S8.2-3;1-2
+play,1,1,youne001,12,CBCX,64(1)/FO
+play,2,0,camik001,11,BCX,S8
+play,2,0,hidar001,12,SSBX,4/P4
+play,2,0,wardd002,32,FBFBFBB,W.1-2
+play,2,0,euset001,02,CFX,54(1)/FO.2-3
+play,2,0,bogat001,01,SX,64(1)/FO
+play,2,1,gutir001,31,BCBBB,W
+play,2,1,gracm001,22,BCBFX,8/F8
+play,2,1,sosas001,30,BBBB,W.1-2
+play,2,1,rodrh001,11,BFX,8/F8
+play,2,1,greew001,10,BX,3/G
+play,3,0,holtc001,02,SSS,K
+play,3,0,biggc001,32,BBBCCB,W
+play,3,0,berkl001,00,B,SB2
+play,3,0,berkl001,12,BFFFFX,8/F8.2-3
+play,3,0,bagwj001,10,BX,9/F9
+play,3,1,reedj001,20,BBX,53/G
+play,3,1,bufod001,32,CFBBBX,13/G
+play,3,1,liebj001,00,X,63/G
+play,4,0,camik001,02,SSFC,K/C
+play,4,0,hidar001,11,CBX,HR/7
+play,4,0,wardd002,02,CFX,53/G
+play,4,0,euset001,12,CBSC,K/C
+play,4,1,youne001,12,BFLH,HP
+play,4,1,gutir001,11,BC1,PO1(13)
+play,4,1,gutir001,11,BC1X,S4
+com,"DWS: originally E4"
+play,4,1,gracm001,01,CX,46(1)/FO
+play,4,1,sosas001,00,X,S8.1-2
+play,4,1,rodrh001,10,BX,8/L8
+play,5,0,bogat001,00,X,43/G
+play,5,0,holtc001,21,BCBX,S
+play,5,0,biggc001,11,BCX,D9.1-3
+play,5,0,berkl001,00,X,S8.3-H;2-H
+play,5,0,bagwj001,01,CX,54(1)/FO
+play,5,0,camik001,31,BBBFB,W.1-2
+play,5,0,hidar001,02,CCX,9/L9
+play,5,1,greew001,20,BBX,9/F9
+play,5,1,reedj001,10,BX,43/G
+play,5,1,bufod001,32,FBBSFBS,K
+play,6,0,wardd002,22,BFBCFFX,43/G
+play,6,0,euset001,11,SBX,63/G
+play,6,0,bogat001,01,SX,53/G
+play,6,1,liebj001,21,BBCX,7/F7
+play,6,1,youne001,22,BCBFX,43/G
+play,6,1,gutir001,01,CX,43/G
+play,7,0,holtc001,00,,NP
+sub,spieb001,"Bill Spiers",0,9,11
+play,7,0,spieb001,11,BCX,43/G
+play,7,0,biggc001,02,CSS,K
+play,7,0,berkl001,00,X,5/P5
+play,7,1,gracm001,00,,NP
+sub,powej001,"Jay Powell",0,9,1
+play,7,1,gracm001,11,FBX,8/P8
+play,7,1,sosas001,10,BX,9/F9D
+play,7,1,rodrh001,01,CX,8/F8
+play,8,0,bagwj001,02,SFFS,K
+play,8,0,camik001,00,X,43/G
+play,8,0,hidar001,22,SBBFFX,S
+play,8,0,wardd002,10,BB,WP.1-2
+play,8,0,wardd002,30,BBII,IW
+play,8,0,euset001,00,,NP
+sub,farnk001,"Kyle Farnsworth",1,9,1
+play,8,0,euset001,00,,NP
+sub,melum001,"Mitch Meluskey",0,7,11
+play,8,0,melum001,00,,NP
+sub,lugoj001,"Julio Lugo",0,6,12
+play,8,0,melum001,11,CBX,E4/G.2-3;1-2
+play,8,0,bogat001,00,,NP
+sub,miesm001,"Matt Mieske",0,8,11
+play,8,0,miesm001,22,FBFBFS,K
+play,8,1,greew001,00,,NP
+sub,lugoj001,"Julio Lugo",0,6,6
+play,8,1,greew001,00,,NP
+sub,melum001,"Mitch Meluskey",0,7,2
+play,8,1,greew001,00,,NP
+sub,miesm001,"Matt Mieske",0,8,7
+play,8,1,greew001,32,BBFCBS,K
+play,8,1,reedj001,31,BFBBX,3/G
+play,8,1,bufod001,22,BCFBX,43/G
+play,9,0,powej001,00,,NP
+sub,andrs001,"Shane Andrews",1,9,5
+play,9,0,powej001,00,,NP
+sub,aguir001,"Rick Aguilera",1,6,1
+play,9,0,powej001,00,,NP
+sub,ceder001,"Roger Cedeno",0,9,11
+play,9,0,ceder001,12,CBFS,K
+play,9,0,biggc001,21,CBBX,S7
+play,9,0,berkl001,22,CBBSX,5/P5
+play,9,0,bagwj001,11,BCX,S7.1-2
+play,9,0,camik001,32,SBBBFFS,K
+data,er,holtc001,4
+data,er,powej001,0
+data,er,liebj001,3
+data,er,farnk001,0
+data,er,aguir001,0

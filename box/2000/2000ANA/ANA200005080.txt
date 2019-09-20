@@ -1,0 +1,166 @@
+version,2
+info,visteam,OAK
+info,hometeam,ANA
+info,site,ANA01
+info,date,2000/05/08
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,clara901
+info,ump1b,vanvm901
+info,ump2b,buckc901
+info,ump3b,wendh902
+info,pitches,pitches
+info,oscorer,munse701
+info,temp,67
+info,winddir,ltor
+info,windspeed,7
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,217
+info,attendance,15034
+info,wp,petkm001
+info,lp,matht002
+info,save,perct001
+start,longt002,"Terrence Long",0,1,8
+start,velar001,"Randy Velarde",0,2,4
+start,giamj001,"Jason Giambi",0,3,3
+start,staim001,"Matt Stairs",0,4,10
+start,grieb001,"Ben Grieve",0,5,7
+start,tejam001,"Miguel Tejada",0,6,6
+start,giamj002,"Jeremy Giambi",0,7,9
+start,hernr002,"Ramon Hernandez",0,8,2
+start,chave001,"Eric Chavez",0,9,5
+start,priea001,"Ariel Prieto",0,0,1
+start,erstd001,"Darin Erstad",1,1,7
+start,kenna001,"Adam Kennedy",1,2,4
+start,vaugm001,"Mo Vaughn",1,3,3
+start,salmt001,"Tim Salmon",1,4,9
+start,andeg001,"Garret Anderson",1,5,8
+start,glaut001,"Troy Glaus",1,6,5
+start,spies001,"Scott Spiezio",1,7,10
+start,molib001,"Ben Molina",1,8,2
+start,disag001,"Gary DiSarcina",1,9,6
+start,ortir002,"Ramon Ortiz",1,0,1
+play,1,0,longt002,31,BFBBX,8/L8
+play,1,0,velar001,20,BBX,E5/G
+play,1,0,giamj001,21,BBCX,HR/9.1-H(UR)
+play,1,0,staim001,11,CBX,S9/9S
+play,1,0,grieb001,12,SBFX,36(1)3/GDP
+play,1,1,erstd001,12,CCBFFS,K
+play,1,1,kenna001,22,BFSBX,S8
+play,1,1,vaugm001,32,FBFBBX,D7.1-H
+play,1,1,salmt001,00,X,53/G
+play,1,1,andeg001,00,X,8/F8
+play,2,0,tejam001,22,CBBFS,K
+play,2,0,giamj002,20,BBX,3/G
+play,2,0,hernr002,02,CCS,K
+play,2,1,glaut001,21,CBBX,S/78
+play,2,1,spies001,10,BX,3/G.1-2
+play,2,1,molib001,00,X,S8.2-3
+play,2,1,disag001,10,BX,D7/78.3-H;1-H;BX3(7615)
+play,2,1,erstd001,00,X,63/G
+play,3,0,chave001,32,FSBBBFFX,63/G
+play,3,0,longt002,12,BFSS,K
+play,3,0,velar001,10,BX,63/G
+play,3,1,kenna001,02,CFFX,S
+play,3,1,vaugm001,02,SFS,K
+play,3,1,salmt001,00,1,PO1(13)
+play,3,1,salmt001,10,1BX,D9
+play,3,1,andeg001,32,BCBBFX,9/L9
+play,4,0,giamj001,20,BBX,13/G
+play,4,0,staim001,32,CBFBBB,W
+play,4,0,grieb001,32,BBBCFFB,W.1-2
+play,4,0,tejam001,32,SFBBBFX,4/P4
+play,4,0,giamj002,01,FX,HR/9.2-H;1-H
+com,"$both Giambis homer in the game"
+play,4,0,hernr002,21,CBBX,S
+play,4,0,chave001,00,X,S9/9S.1-3
+play,4,0,longt002,10,BX,HR/9.3-H;1-H
+play,4,0,velar001,30,BBBB,W
+play,4,0,giamj001,00,,NP
+sub,levia001,"Al Levine",1,0,1
+play,4,0,giamj001,01,CX,8/F8
+play,4,1,glaut001,22,BBCCFX,S9
+play,4,1,spies001,22,CBBFX,3/FL
+play,4,1,molib001,01,FX,9/F9
+play,4,1,disag001,21,CBBX,S9/9S.1-3
+play,4,1,erstd001,01,CX,S7/7S.3-H;1-2
+play,4,1,kenna001,32,CBBFFFBFFX,3/G
+play,5,0,staim001,21,CBBX,3/G
+play,5,0,grieb001,21,CBBX,63/G
+play,5,0,tejam001,10,BX,E6/TH
+play,5,0,giamj002,11,CBX,3/G
+play,5,1,vaugm001,00,X,HR/9
+play,5,1,salmt001,00,,NP
+sub,vizcl001,"Luis Vizcaino",0,0,1
+play,5,1,salmt001,12,BCSS,K
+play,5,1,andeg001,02,CFFX,3/G
+play,5,1,glaut001,32,CBBFBX,S7
+play,5,1,spies001,00,X,43/G
+play,6,0,hernr002,00,,NP
+sub,gil-b001,"Benji Gil",1,9,6
+play,6,0,hernr002,32,BFBBCB,W
+play,6,0,chave001,22,BCBSX,54(1)/FO
+play,6,0,longt002,21,BCBX,S7.1-2
+play,6,0,velar001,22,CCBBFC,K/C
+play,6,0,giamj001,01,CX,43/G
+play,6,1,molib001,00,X,8/F8
+play,6,1,gil-b001,32,BFSBBB,W
+play,6,1,erstd001,22,BCFFBX,S7.1-2
+play,6,1,kenna001,02,SFS,K
+play,6,1,vaugm001,22,BSSBX,HR/9.2-H;1-H
+play,6,1,salmt001,22,BFFFFBX,7/L7
+play,7,0,staim001,00,,NP
+sub,holtm001,"Mike Holtz",1,0,1
+play,7,0,staim001,32,BBBCFS,K
+play,7,0,grieb001,02,CCX,S8
+play,7,0,tejam001,22,CBSBX,8/F8D
+play,7,0,giamj002,12,CCBB,SB2
+play,7,0,giamj002,32,CCBBBFX,E3/G.2-3
+play,7,0,hernr002,00,,NP
+sub,petkm001,"Mark Petkovsek",1,0,1
+play,7,0,hernr002,32,CBBBFC,K/C
+play,7,1,andeg001,00,,NP
+sub,matht002,"T.J. Mathews",0,0,1
+play,7,1,andeg001,02,CCX,6/L6
+play,7,1,glaut001,01,CX,D/78
+play,7,1,spies001,21,FBBB,WP.2-3
+play,7,1,spies001,31,FBBBI,IW
+play,7,1,molib001,00,X,7/SF.3-H
+play,7,1,gil-b001,00,X,S5/BG5.1-2
+play,7,1,erstd001,22,CSBFFBS,K
+play,8,0,chave001,12,BCCX,63/G
+play,8,0,longt002,02,CFC,K/C
+play,8,0,velar001,11,CBX,S9/9S
+play,8,0,giamj001,02,CCS,K
+play,8,1,kenna001,00,,NP
+sub,magnm001,"Mike Magnante",0,0,1
+play,8,1,kenna001,22,BFBFX,S7
+play,8,1,vaugm001,30,BBBC,SB2
+play,8,1,vaugm001,32,BBBCSX,7/F7
+play,8,1,salmt001,30,IIII,IW
+play,8,1,andeg001,10,BX,31/G.2-3;1-2
+play,8,1,glaut001,30,IIII,IW
+play,8,1,spies001,01,SX,53/G
+play,9,0,staim001,00,,NP
+sub,perct001,"Troy Percival",1,0,1
+play,9,0,staim001,21,BCBX,7/F7
+play,9,0,grieb001,32,BBFSBFX,D9
+play,9,0,tejam001,00,,NP
+sub,saeno001,"Olmedo Saenz",0,6,11
+play,9,0,saeno001,00,,NP
+sub,chrir001,"Ryan Christenson",0,5,12
+play,9,0,saeno001,12,CCFBC,K/C
+play,9,0,giamj002,22,FBFBS,K
+data,er,priea001,5
+data,er,vizcl001,3
+data,er,matht002,1
+data,er,magnm001,0
+data,er,ortir002,7
+data,er,levia001,0
+data,er,holtm001,0
+data,er,petkm001,0
+data,er,perct001,0

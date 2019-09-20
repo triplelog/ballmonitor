@@ -1,0 +1,145 @@
+version,2
+info,visteam,ARI
+info,hometeam,CHN
+info,site,CHI11
+info,date,2000/04/30
+info,number,0
+info,starttime,1:20PM
+info,daynight,day
+info,usedh,false
+info,umphome,millb901
+info,ump1b,rungb901
+info,ump2b,shulj901
+info,ump3b,rapue901
+info,pitches,pitches
+info,temp,59
+info,winddir,tocf
+info,windspeed,7
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,163
+info,attendance,37274
+info,wp,johnr005
+info,lp,lorra001
+info,save,
+start,friah001,"Hanley Frias",0,1,6
+start,bellj001,"Jay Bell",0,2,4
+start,gonzl001,"Luis Gonzalez",0,3,7
+start,colbg001,"Greg Colbrunn",0,4,3
+start,finls001,"Steve Finley",0,5,8
+start,gilkb001,"Bernard Gilkey",0,6,9
+start,stink001,"Kelly Stinnett",0,7,2
+start,klasd001,"Danny Klassen",0,8,5
+start,johnr005,"Randy Johnson",0,9,1
+start,youne001,"Eric Young",1,1,4
+start,gutir001,"Ricky Gutierrez",1,2,6
+start,gracm001,"Mark Grace",1,3,3
+start,sosas001,"Sammy Sosa",1,4,9
+start,hillg001,"Glenallen Hill",1,5,7
+start,nievj002,"Jose Nieves",1,6,5
+start,bufod001,"Damon Buford",1,7,8
+start,giraj001,"Joe Girardi",1,8,2
+start,lorra001,"Andrew Lorraine",1,9,1
+play,1,0,friah001,11,BCX,8/F8
+play,1,0,bellj001,01,CX,HR/7
+play,1,0,gonzl001,32,BBFBSFFC,K/C
+play,1,0,colbg001,22,CFFBFBX,S9
+play,1,0,finls001,12,FSFBS,K
+play,1,1,youne001,01,CX,9/L9
+play,1,1,gutir001,21,BFBX,43/G
+play,1,1,gracm001,01,CX,S8
+play,1,1,sosas001,21,BBSX,9/F9
+play,2,0,gilkb001,00,X,3/FL
+play,2,0,stink001,02,CCS,K
+play,2,0,klasd001,22,BCBFX,8/L8
+play,2,1,hillg001,22,BSBFS,K
+play,2,1,nievj002,12,CSBX,53/G
+play,2,1,bufod001,32,BSCBBX,S
+play,2,1,giraj001,11,BF1,POCS2(136)
+play,3,0,johnr005,01,CX,63/G
+play,3,0,friah001,01,CX,4/P4
+play,3,0,bellj001,32,BFBCFBC,K/C
+play,3,1,giraj001,12,CBFS,K
+play,3,1,lorra001,12,FSBC,K/C
+play,3,1,youne001,32,BCBCBS,K
+play,4,0,gonzl001,30,BBBB,W
+play,4,0,colbg001,21,BBCX,8/L8
+play,4,0,finls001,00,X,S.1-2
+play,4,0,gilkb001,32,CSBBBFB,W.2-3;1-2
+play,4,0,stink001,12,BFSC,K/C
+play,4,0,klasd001,22,SBBFX,S.3-H;2-3;1-2
+play,4,0,johnr005,10,BX,S8.3-H;2-H;1-2
+play,4,0,friah001,32,SBFBBFX,63/G
+play,4,1,gutir001,32,BBCBSX,9/F9
+play,4,1,gracm001,30,BBBB,W
+play,4,1,sosas001,11,SBX,9/F9
+play,4,1,hillg001,22,FBBSFS,K23
+play,5,0,bellj001,00,,NP
+sub,garid001,"Daniel Garibay",1,9,1
+play,5,0,bellj001,22,BFBFX,S8
+play,5,0,gonzl001,01,C1,POCS2(136)
+play,5,0,gonzl001,12,C1BSFC,K/C
+play,5,0,colbg001,12,BCFS,K
+play,5,1,nievj002,10,BX,D/78
+play,5,1,bufod001,02,FSFS,K
+play,5,1,giraj001,02,CFFS,K
+play,5,1,garid001,00,,NP
+sub,andrs001,"Shane Andrews",1,9,11
+play,5,1,andrs001,22,CBBCS,K
+play,6,0,finls001,00,,NP
+sub,andrs001,"Shane Andrews",1,9,5
+play,6,0,finls001,00,,NP
+sub,karcm001,"Matt Karchner",1,6,1
+play,6,0,finls001,11,BSX,8/F8S
+play,6,0,gilkb001,32,BBFSBFX,S8
+play,6,0,stink001,20,BBX,9/F9
+play,6,0,klasd001,10,BX,54(1)/FO
+play,6,1,youne001,22,BCBSFX,63/G
+play,6,1,gutir001,02,CCX,63/G
+play,6,1,gracm001,31,BBBCX,43/G
+play,7,0,johnr005,12,SFBS,K
+play,7,0,friah001,20,BBX,13/G
+play,7,0,bellj001,10,BX,53/G
+play,7,1,sosas001,32,BFBBFB,W
+play,7,1,hillg001,02,FSS,K
+play,7,1,karcm001,00,,NP
+sub,browr001,"Roosevelt Brown",1,6,11
+play,7,1,browr001,02,CFS,K
+play,7,1,bufod001,22,BCSBFFFX,S9.1-2
+play,7,1,giraj001,00,X,S.2-3;1-2
+play,7,1,andrs001,22,BBSCC,K/C
+play,8,0,gonzl001,00,,NP
+sub,heref001,"Felix Heredia",1,6,1
+play,8,0,gonzl001,20,BBX,7/F7S
+play,8,0,colbg001,32,BSSFBBX,53/G
+play,8,0,finls001,22,BCBSX,S9
+play,8,0,gilkb001,02,SCFB,WP.1-2
+play,8,0,gilkb001,12,SCFBX,HR/7.2-H
+play,8,0,stink001,12,CSBX,6/P6
+play,8,1,youne001,00,,NP
+sub,morgm001,"Mike Morgan",0,9,1
+play,8,1,youne001,22,CBCBFX,S9
+play,8,1,gutir001,01,CX,64(1)3/GDP
+play,8,1,gracm001,22,FBFBFFX,8/F8D
+play,9,0,klasd001,00,,NP
+sub,farnk001,"Kyle Farnsworth",1,6,1
+play,9,0,klasd001,02,CCC,K/C
+play,9,0,morgm001,21,CBBX,S8
+play,9,0,friah001,01,FX,S9.1-2
+play,9,0,bellj001,11,SBX,S7.2-3;1-2
+play,9,0,gonzl001,20,BBX,7(B)4(2)/LDP
+play,9,1,sosas001,32,CFBBBC,K/C
+com,"ej,sosas001,P,millb901,Called third strike"
+com,"Sammy Sosa ejected by HP umpire Bill Miller"
+play,9,1,hillg001,31,BBBCX,63/G
+play,9,1,farnk001,00,,NP
+sub,greew001,"Willie Greene",1,6,11
+play,9,1,greew001,21,BBCX,3/G
+data,er,johnr005,0
+data,er,morgm001,0
+data,er,lorra001,4
+data,er,garid001,0
+data,er,karcm001,0
+data,er,heref001,2
+data,er,farnk001,0

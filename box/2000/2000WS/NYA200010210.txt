@@ -1,0 +1,206 @@
+version,2
+info,visteam,NYN
+info,hometeam,NYA
+info,date,2000/10/21
+info,site,NYC16
+info,number,0
+info,starttime,8:13PM
+info,daynight,night
+info,usedh,true
+info,umphome,monte901
+info,ump1b,relic901
+info,ump2b,kellj901
+info,ump3b,welkt901
+info,umplf,mcclt901
+info,umprf,crawj901
+info,inputter,"DWS"
+info,howscored,park
+info,pitches,pitches
+info,temp,68
+info,winddir,unknown
+info,windspeed,6
+info,fieldcond,dry
+info,precip,none
+info,sky,sunny
+info,timeofgame,291
+info,attendance,55913
+info,wp,stanm003
+info,lp,wendt001
+info,save,
+start,peret004,"Timoniel Perez",0,1,9
+start,alfoe001,"Edgardo Alfonzo",0,2,4
+start,piazm001,"Mike Piazza",0,3,10
+start,zeilt001,"Todd Zeile",0,4,3
+start,ventr001,"Robin Ventura",0,5,5
+start,agbab001,"Benny Agbayani",0,6,7
+start,paytj001,"Jay Payton",0,7,8
+start,pratt001,"Todd Pratt",0,8,2
+start,bordm001,"Mike Bordick",0,9,6
+start,leita001,"Al Leiter",0,0,1
+start,knobc001,"Chuck Knoblauch",1,1,10
+start,jeted001,"Derek Jeter",1,2,6
+start,justd001,"David Justice",1,3,7
+start,willb002,"Bernie Williams",1,4,8
+start,martt002,"Tino Martinez",1,5,3
+start,posaj001,"Jorge Posada",1,6,2
+start,oneip001,"Paul O'Neill",1,7,9
+start,bross001,"Scott Brosius",1,8,5
+start,vizcj001,"Jose Vizcaino",1,9,4
+start,petta001,"Andy Pettitte",1,0,1
+com,"$the longest game (by time) in World Series history;"
+com,"only one game longer (by innings): 10/9/1916 was 14"
+com,"innings; 51st extra inning game in World Series history"
+play,1,0,peret004,32,BBBCCX,43/G4
+play,1,0,alfoe001,22,FFBBFFFX,9/L89M
+play,1,0,piazm001,31,BBFBX,9/F9D
+play,1,1,knobc001,22,BCCFBX,8/L8RM
+play,1,1,jeted001,12,CSBS,K
+play,1,1,justd001,21,CBBX,7/F7LS
+play,2,0,zeilt001,11,BCX,S7/L78S
+play,2,0,ventr001,22,SCFFBFB1S,K
+play,2,0,agbab001,02,CFFC,K/C
+play,2,0,paytj001,00,1X,8/F8RXD
+play,2,1,willb002,12,CBCX,63/G6
+play,2,1,martt002,21,BBCX,S9/G4M
+play,2,1,posaj001,11,CBX,54(1)/FO/G5
+play,2,1,oneip001,32,CBFB*B>F>X,S8/L89M.1-3
+play,2,1,bross001,22,BBCFX,3/G3S
+play,3,0,pratt001,02,CCH,HP
+play,3,0,bordm001,01,CX,13/SH/BG23.1-2
+play,3,0,peret004,10,BX,5/P5S
+play,3,0,alfoe001,01,CX,63/G56
+play,3,1,vizcj001,12,BCCS,K
+play,3,1,knobc001,32,BCBBFB,W
+play,3,1,jeted001,01,S1,POCS2(136)
+play,3,1,jeted001,22,S1BBFX,53/G5L
+play,4,0,piazm001,00,X,S8/G6M
+play,4,0,zeilt001,11,CB>1,POCS2(136)
+play,4,0,zeilt001,11,CB>1X,53/G25
+play,4,0,ventr001,22,FBSBX,13/G15S
+play,4,1,justd001,32,BBBCFX,9/F9D
+play,4,1,willb002,12,CCBFS,K
+play,4,1,martt002,12,CBFS,K
+play,5,0,agbab001,00,X,D7/G5L
+play,5,0,paytj001,21,BBFX,2/G2R
+com,"$Jay Payton never moved out of the batter's box and"
+com,"argued that he ball was foul even though clearly fair"
+play,5,0,pratt001,02,FFC,K/C
+play,5,0,bordm001,02,CFS,K
+play,5,1,posaj001,22,CBSBS,K
+play,5,1,oneip001,31,BBFBX,7/F7LM
+play,5,1,bross001,22,BFBFX,63/G6MS
+play,6,0,peret004,21,BBCX,S8/G4M
+play,6,0,alfoe001,21,F111BB1X,4/P3
+play,6,0,piazm001,12,1FBS1X,8/F89D
+play,6,0,zeilt001,02,C1SX,D7/F7LDW.1XH(762)
+com,"$the ball hit the top of the padding and came back onto"
+com,"the field; the Mets thought it was a homer and cruised;"
+com,"Timo Perez then started running again but was out by 3 steps"
+play,6,1,vizcj001,00,X,S6/G56D
+play,6,1,knobc001,00,X,14(1)/FO/BG13S
+play,6,1,jeted001,30,B1B111BB,W.1-2
+play,6,1,justd001,11,CBX,D8/F78XD.2-H;1-H
+play,6,1,willb002,30,IIII,IW
+play,6,1,martt002,22,CFBFBX,3/G3S.2-3;1-2
+play,6,1,posaj001,00,X,8/F8RD
+play,7,0,ventr001,21,BCBX,4/P34D
+play,7,0,agbab001,00,X,S9/G34
+play,7,0,paytj001,00,X,S8/G4M.1-2
+play,7,0,pratt001,32,BBBCC>F>B,W.2-3;1-2
+play,7,0,bordm001,00,,NP
+sub,tramb001,"Bubba Trammell",0,9,11
+play,7,0,tramb001,11,BSX,S7/L5D.3-H;2-H;1-2
+play,7,0,peret004,00,X,13/BG23.2-3;1-2
+play,7,0,alfoe001,00,,NP
+sub,nelsj001,"Jeff Nelson",1,0,1
+play,7,0,alfoe001,22,SBBCX,S5/G56S.3-H;2-3
+play,7,0,piazm001,02,CSX,8/F8LS
+play,7,1,oneip001,00,,NP
+sub,abbok002,"Kurt Abbott",0,9,6
+play,7,1,oneip001,12,CBFFFC,K/C
+play,7,1,bross001,02,CFX,S8/G6M
+play,7,1,vizcj001,32,SB1B1SFB>F1>X,53/G5L.1-2
+play,7,1,knobc001,22,BCBCFFS,K
+play,8,0,zeilt001,01,CX,4/P34D
+play,8,0,ventr001,32,BBFSBFX,2/P2RF
+play,8,0,agbab001,10,BX,9/F89XD
+play,8,1,jeted001,00,,NP
+sub,franj001,"John Franco",0,0,1
+play,8,1,jeted001,00,,NP
+sub,mcewj001,"Joe McEwing",0,6,7
+play,8,1,jeted001,32,BBCFBX,S8/L8LS
+play,8,1,justd001,12,C1CB1X,8/F8RS
+play,8,1,willb002,10,11B1X,9/F9LM
+play,8,1,martt002,11,1BC111X,8/F8LXD
+play,9,0,paytj001,00,,NP
+sub,rivem002,"Mariano Rivera",1,0,1
+play,9,0,paytj001,02,FFX,9/F89D
+play,9,0,pratt001,01,CH,HP
+play,9,0,abbok002,01,CX,D9/L9DW.1-3
+play,9,0,peret004,12,BCFFFX,43/G4S
+play,9,0,alfoe001,12,CBFS,K
+play,9,1,posaj001,00,,NP
+sub,benia001,"Armando Benitez",0,0,1
+play,9,1,posaj001,22,BBCSFFX,8/F89XD
+play,9,1,oneip001,32,BSCFFBBFFB,W
+play,9,1,bross001,00,,NP
+sub,polol001,"Luis Polonia",1,8,11
+play,9,1,polol001,10,BX,S9/L9S.1-2
+play,9,1,vizcj001,21,CBBX,S7/L7S/R5.2-3;1-2
+play,9,1,knobc001,11,CBX,7/SF/F7D.3-H
+play,9,1,jeted001,12,CCBS,K
+play,10,0,piazm001,00,,NP
+sub,sojol001,"Luis Sojo",1,8,5
+play,10,0,piazm001,22,BCSBFC,K/C
+play,10,0,zeilt001,22,CBFFBFFC,K/C
+play,10,0,ventr001,11,CBX,8/F8RXD
+play,10,1,justd001,00,,NP
+sub,cookd001,"Dennis Cook",0,0,1
+play,10,1,justd001,31,BSBBB,W
+play,10,1,willb002,30,11BBBB,W.1-2
+play,10,1,martt002,00,,NP
+sub,bellc001,"Clay Bellinger",1,3,12
+play,10,1,martt002,00,,NP
+sub,ruscg001,"Glendon Rusch",0,0,1
+play,10,1,martt002,01,CB,WP.2-3;1-2
+com,"$infield and outfield in"
+play,10,1,martt002,11,CBX,7/F6D
+play,10,1,posaj001,30,IIII,IW
+play,10,1,oneip001,00,X,46(1)3/GDP/G4M
+play,11,0,mcewj001,00,,NP
+sub,bellc001,"Clay Bellinger",1,3,7
+play,11,0,mcewj001,00,,NP
+sub,stanm003,"Mike Stanton",1,0,1
+play,11,0,mcewj001,01,CX,8/F8LS
+play,11,0,paytj001,12,BCSFX,53/G5
+play,11,0,pratt001,12,SBSS,K
+play,11,1,sojol001,01,CX,43/G4M
+play,11,1,vizcj001,01,LX,S9/F89D/R53
+play,11,1,knobc001,22,F1B1F1BF1FX,2/P2RF
+play,11,1,jeted001,32,SBBFBB,W+WP.1-3;B-2
+play,11,1,bellc001,00,,NP
+sub,wendt001,"Turk Wendell",0,0,1
+play,11,1,bellc001,00,,NP
+sub,hillg001,"Glenallen Hill",1,3,11
+play,11,1,hillg001,12,BFFX,9/F89S
+play,12,0,abbok002,00,,NP
+sub,hillg001,"Glenallen Hill",1,3,7
+play,12,0,abbok002,11,BSX,8/F8RM
+play,12,0,peret004,02,CCFS,K
+play,12,0,alfoe001,22,BSBSS,K
+play,12,1,willb002,12,BCFX,43/G4
+play,12,1,martt002,21,BFBX,S9/L4D
+play,12,1,posaj001,00,X,D8/G4M.1-3
+play,12,1,oneip001,30,IIII,IW
+play,12,1,sojol001,01,CX,2/P2LF
+play,12,1,vizcj001,00,X,S7/L7LS.3-H;2-3;1-2
+data,er,leita001,2
+data,er,franj001,0
+data,er,benia001,1
+data,er,cookd001,0
+data,er,ruscg001,0
+data,er,wendt001,1
+data,er,petta001,3
+data,er,nelsj001,0
+data,er,rivem002,0
+data,er,stanm003,0

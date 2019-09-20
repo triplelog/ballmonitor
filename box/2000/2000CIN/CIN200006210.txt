@@ -1,0 +1,153 @@
+version,2
+info,visteam,COL
+info,hometeam,CIN
+info,site,CIN08
+info,date,2000/06/21
+info,number,0
+info,starttime,7:35PM
+info,daynight,night
+info,usedh,false
+info,umphome,bellw901
+info,ump1b,onorb901
+info,ump2b,iassd901
+info,ump3b,hirsm901
+info,pitches,pitches
+info,temp,78
+info,winddir,tocf
+info,windspeed,12
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,194
+info,attendance,23580
+info,wp,tavaj001
+info,lp,wills002
+info,save,jimej001
+start,huntb002,"Brian L. Hunter",0,1,8
+start,lansm001,"Mike Lansing",0,2,4
+start,walkl001,"Larry Walker",0,3,7
+start,cirij001,"Jeff Cirillo",0,4,5
+start,heltt001,"Todd Helton",0,5,3
+start,hammj001,"Jeffrey Hammonds",0,6,9
+start,servs002,"Scott Servais",0,7,2
+start,peren001,"Neifi Perez",0,8,6
+start,arror001,"Rolando Arrojo",0,9,1
+start,reesp001,"Pokey Reese",1,1,4
+start,larkb001,"Barry Larkin",1,2,6
+start,grifk002,"Ken Griffey",1,3,8
+start,bichd001,"Dante Bichette",1,4,9
+start,yound001,"Dmitri Young",1,5,7
+start,cases001,"Sean Casey",1,6,3
+start,boona001,"Aaron Boone",1,7,5
+start,santb001,"Benito Santiago",1,8,2
+start,neagd001,"Denny Neagle",1,9,1
+play,1,0,huntb002,11,CBX,4/P4
+play,1,0,lansm001,22,CBFBX,63/G
+play,1,0,walkl001,32,BFBCBX,T9
+play,1,0,cirij001,32,CBLBBS,K
+play,1,1,reesp001,32,CSFBBBX,53/G
+play,1,1,larkb001,32,BCBBFX,13/G
+play,1,1,grifk002,00,X,S9
+play,1,1,bichd001,31,BBBCB,W.1-2
+play,1,1,yound001,01,FX,53/G
+play,2,0,heltt001,21,BBCX,43/G
+play,2,0,hammj001,32,BBSSFBB,W
+play,2,0,servs002,22,BBCFC,K/C
+play,2,0,peren001,11,FBX,6/P6
+play,2,1,cases001,22,BFBCX,41/G
+play,2,1,boona001,11,BCX,43/G
+play,2,1,santb001,12,CFBC,K/C
+play,3,0,arror001,12,SSFBFS,K
+play,3,0,huntb002,32,BBBCSS,K
+play,3,0,lansm001,32,BCBFBX,53/G
+play,3,1,neagd001,12,FCBFC,K/C
+play,3,1,reesp001,11,CBX,S8
+play,3,1,larkb001,00,X,S9.1-3
+play,3,1,grifk002,32,BFFBBS,K+SB2
+play,3,1,bichd001,22,CSBBFX,D7.3-H;2-H
+play,3,1,yound001,00,X,31/G
+play,4,0,walkl001,32,FSBBFFBX,S7
+play,4,0,cirij001,11,BFX,8/F8
+play,4,0,heltt001,00,X,D8/78.1XH(862)
+play,4,0,hammj001,21,BFBX,S7.2-H
+play,4,0,servs002,01,FX,D9.1-3
+play,4,0,peren001,30,IIII,IW
+play,4,0,arror001,00,X,S9.3-H;2-H;1-3
+play,4,0,huntb002,01,CX,43/G
+play,4,1,cases001,12,BSFH,HP
+play,4,1,boona001,00,X,E8/F.1-3;B-2
+play,4,1,santb001,21,FBBX,4/P4
+play,4,1,neagd001,11,FBX,43/G.3-H(UR);2-3
+play,4,1,reesp001,22,FBFBFS,K
+play,5,0,lansm001,00,X,8/F8D
+play,5,0,walkl001,12,CSBX,5/FL
+play,5,0,cirij001,10,BX,9/L9
+play,5,1,larkb001,00,X,4/P4
+play,5,1,grifk002,11,BFX,8/F8D
+play,5,1,bichd001,32,CBCBBX,S9
+play,5,1,yound001,01,CX,S.1-2
+play,5,1,cases001,02,CFFX,D9.2-H;1-3
+play,5,1,boona001,22,BBCCFX,8/F8
+play,6,0,heltt001,10,BX,7/F7S
+play,6,0,hammj001,32,SBBBCC,K/C
+play,6,0,servs002,22,BSBFX,S9
+play,6,0,peren001,12,CBFFX,3/G
+play,6,1,santb001,22,BCCBFX,D9
+play,6,1,neagd001,01,LX,2/FL
+play,6,1,reesp001,11,CBX,9/F9.2-3
+play,6,1,larkb001,00,X,63/G
+play,7,0,arror001,00,,NP
+sub,shumt001,"Terry Shumpert",0,9,11
+play,7,0,shumt001,02,CFX,S8
+play,7,0,huntb002,11,BCX,14/SH.1-2
+play,7,0,lansm001,00,X,6/L6
+play,7,0,walkl001,22,BBCCC,K/C
+play,7,1,grifk002,00,,NP
+sub,tavaj001,"Julian Tavarez",0,9,1
+play,7,1,grifk002,11,BCX,43/G
+play,7,1,bichd001,11,BSX,9/F9
+play,7,1,yound001,22,BBFFX,7/F7
+play,8,0,cirij001,00,,NP
+sub,tuckm001,"Michael Tucker",1,9,7
+play,8,0,cirij001,00,,NP
+sub,wills002,"Scott Williamson",1,5,1
+play,8,0,cirij001,32,CFBFFBBB,W
+play,8,0,heltt001,02,SSB,WP.1-2
+play,8,0,heltt001,32,SSBBFBX,3/G.2-3
+play,8,0,hammj001,12,FFBS,K
+play,8,0,servs002,00,,NP
+sub,maynb001,"Brent Mayne",0,7,11
+com,"May have subbed earlier without PH"
+play,8,0,maynb001,31,BBBCB,W
+play,8,0,peren001,22,BBSCX,S/78.3-H;1-3
+play,8,0,tavaj001,00,,NP
+sub,bragd001,"Darren Bragg",0,9,11
+play,8,0,bragd001,22,CFBBX,S8.3-H;1-H(E8/TH)(UR)
+play,8,0,huntb002,01,CX,9/F9
+play,8,1,cases001,00,,NP
+sub,maynb001,"Brent Mayne",0,7,2
+play,8,1,cases001,00,,NP
+sub,whitg001,"Gabe White",0,9,1
+play,8,1,cases001,22,FBFFBS,K23
+play,8,1,boona001,00,X,7/F7D
+play,8,1,santb001,01,SX,3/FL
+play,9,0,lansm001,00,,NP
+sub,sulls001,"Scott Sullivan",1,5,1
+play,9,0,lansm001,00,X,9/F9
+play,9,0,walkl001,01,SX,D/78
+play,9,0,cirij001,01,CX,8(B)4(2)/LDP
+play,9,1,tuckm001,00,,NP
+sub,ochoa001,"Alex Ochoa",1,9,11
+play,9,1,ochoa001,00,,NP
+sub,jimej001,"Jose Jimenez",0,9,1
+play,9,1,ochoa001,00,X,E5/TH
+play,9,1,reesp001,22,CFFBBX,64(1)/FO
+play,9,1,larkb001,10,BX,8/F8
+play,9,1,grifk002,10,BX,7/L7
+data,er,arror001,3
+data,er,tavaj001,0
+data,er,whitg001,0
+data,er,jimej001,0
+data,er,neagd001,3
+data,er,wills002,2
+data,er,sulls001,0

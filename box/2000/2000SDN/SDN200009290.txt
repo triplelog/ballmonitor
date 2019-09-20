@@ -1,0 +1,125 @@
+version,2
+info,visteam,LAN
+info,hometeam,SDN
+info,site,SAN01
+info,date,2000/09/29
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,culbf901
+info,ump1b,wintm901
+info,ump2b,vanvm901
+info,ump3b,froeb901
+info,pitches,pitches
+info,temp,70
+info,winddir,torf
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,139
+info,attendance,40382
+info,wp,parkc002
+info,lp,willw001
+info,save,
+start,goodt001,"Tom Goodwin",0,1,8
+start,grudm001,"Mark Grudzielanek",0,2,4
+start,shefg001,"Gary Sheffield",0,3,7
+start,grees001,"Shawn Green",0,4,9
+start,karre001,"Eric Karros",0,5,3
+start,donnc001,"Chris Donnels",0,6,5
+start,kreuc001,"Chad Kreuter",0,7,2
+start,coraa001,"Alex Cora",0,8,6
+start,parkc002,"Chan Ho Park",0,9,1
+start,owene001,"Eric Owens",1,1,7
+start,relad001,"Desi Relaford",1,2,6
+start,klesr001,"Ryan Klesko",1,3,3
+start,nevip001,"Phil Nevin",1,4,5
+start,mabrj001,"John Mabry",1,5,9
+start,river002,"Ruben Rivera",1,6,8
+start,gonzw001,"Wiki Gonzalez",1,7,2
+start,larog001,"Greg LaRocca",1,8,4
+start,willw001,"Woody Williams",1,9,1
+play,1,0,goodt001,12,FBFX,E4/G
+play,1,0,grudm001,32,BFCBBC,K/C
+play,1,0,shefg001,12,BFFB,SB2
+play,1,0,shefg001,22,BFFBS,K
+play,1,0,grees001,00,X,S8.2-H(UR)
+play,1,0,karre001,02,CFFFX,53/G
+play,1,1,owene001,10,BX,8/F8
+play,1,1,relad001,32,CSBBBC,K/C
+play,1,1,klesr001,12,FBCS,K
+play,2,0,donnc001,00,X,1/G
+play,2,0,kreuc001,02,CSFC,K/C
+play,2,0,coraa001,12,CCBS,K
+play,2,1,nevip001,00,X,13/G
+play,2,1,mabrj001,02,CCFS,K
+play,2,1,river002,12,SBSS,K
+play,3,0,parkc002,00,X,9/F9D
+play,3,0,goodt001,31,BBSBX,8/F8D
+play,3,0,grudm001,12,FFBX,S8
+play,3,0,shefg001,22,CBFBFX,7/L7
+play,3,1,gonzw001,31,BBBCX,9/F9
+play,3,1,larog001,22,BBCSS,K
+play,3,1,willw001,30,BBBB,W
+play,3,1,owene001,22,CBFBS,K
+play,4,0,grees001,31,BBSBX,4/P4
+play,4,0,karre001,01,SX,53/G
+play,4,0,donnc001,30,BBBB,W
+play,4,0,kreuc001,12,FBFS,K
+play,4,1,relad001,22,CSBBFX,31/G
+play,4,1,klesr001,11,BCX,13/G
+play,4,1,nevip001,01,CX,S8
+play,4,1,mabrj001,01,FX,8/F8
+play,5,0,coraa001,31,BFBBX,4/L4
+play,5,0,parkc002,22,SSBBS,K
+play,5,0,goodt001,12,CFBS,K
+play,5,1,river002,11,SBX,53/G
+play,5,1,gonzw001,22,BCBSS,K23
+play,5,1,larog001,02,CSX,S
+play,5,1,willw001,12,CFBS,K
+play,6,0,grudm001,01,SX,63/G
+play,6,0,shefg001,12,CBFX,S8
+play,6,0,grees001,11,BFX,4/P4
+play,6,0,karre001,01,FX,53/G
+play,6,1,owene001,00,X,9/F9
+play,6,1,relad001,00,X,31/G
+play,6,1,klesr001,01,CX,63/G
+play,7,0,donnc001,21,BBFX,7/F7
+play,7,0,kreuc001,12,CCBC,K/C
+play,7,0,coraa001,10,BX,7/F7
+play,7,1,nevip001,02,SFS,K
+play,7,1,mabrj001,22,BFBFFS,K
+play,7,1,river002,32,BSSBBC,K/C
+play,8,0,parkc002,32,BBBCFX,HR/9
+play,8,0,goodt001,01,CX,43/G
+play,8,0,grudm001,01,CX,63/G
+play,8,0,shefg001,00,X,HR/7
+com,"$43rd homer of season to tie Snider's franchise record"
+play,8,0,grees001,00,X,T9
+play,8,0,karre001,32,BSBFBX,3/P3
+play,8,1,gonzw001,00,,NP
+sub,donnc001,"Chris Donnels",0,6,7
+play,8,1,gonzw001,00,,NP
+sub,branj002,"Jeff Branson",0,3,5
+play,8,1,gonzw001,22,SCFBBS,K
+play,8,1,larog001,21,SBBX,63/G
+play,8,1,willw001,00,,NP
+sub,vitij001,"Joe Vitiello",1,9,11
+play,8,1,vitij001,32,BBBCFFX,31/G
+play,9,0,donnc001,00,,NP
+sub,elstk001,"Kevin Elster",0,6,11
+play,9,0,elstk001,00,,NP
+sub,maurd001,"Dave Maurer",1,9,1
+play,9,0,elstk001,20,BBX,3/FL
+play,9,0,kreuc001,32,SBBCBS,K
+play,9,0,coraa001,12,CSFBX,43/G
+play,9,1,owene001,00,,NP
+sub,avenb001,"Bruce Aven",0,6,7
+play,9,1,owene001,22,CBBSFX,53/G
+play,9,1,relad001,22,CCBBS,K
+play,9,1,klesr001,00,X,7/F7
+data,er,parkc002,0
+data,er,willw001,2
+data,er,maurd001,0

@@ -1,0 +1,85 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,01,1,hendr001,,,,0,2,CX,hernl003,0,0,hendr001 singles. ,hendr001,0,
+hendr001 out. ,12,1,mclem001,,,,1,6,CBFX,hernl003,1,0,mclem001 reaches on fielder's choice. ,mclem001,0,
+mclem001 scores. ,00,1,,rodra001,,,2,7,X,hernl003,0,1,rodra001 doubles. ,rodra001,0,
+,30,1,olerj001,rodra001,,,3,11,BBBB,hernl003,0,0,olerj001 walks. ,olerj001,0,
+,01,1,olerj001,rodra001,,,4,13,FX,hernl003,1,0,,buhnj001,0,
+,21,1,olerj001,rodra001,,,5,17,CBBX,hernl003,1,0,lampt001 grounds out. ,lampt001,0,G
+,32,1,benam001,,,,6,10,CCFBBBFFFB,selea001,0,0,benam001 walks. ,benam001,1,
+benam001 to 3B. ,21,1,martr003,,benam001,,7,14,CBBX,selea001,0,0,martr003 singles. ,martr003,1,
+benam001 scores. martr003 to 2B. ,30,1,,martr003,,,8,18,BBBX,selea001,1,1,bondb001 hits sacrifice fly. ,bondb001,1,
+,12,1,,martr003,,,9,22,CCBX,selea001,1,0,,kentj001,1,F
+,21,1,,martr003,,,10,26,BFBX,selea001,1,0,snowj001 grounds out. ,snowj001,1,G
+,11,2,camem001,,,,11,20,BSX,hernl003,0,0,camem001 singles. ,camem001,0,
+,00,2,,,,,12,21,X,hernl003,2,0,Double Play. ,mabrj001,0,
+,12,2,,,,,13,25,CBCX,hernl003,1,0,selea001 grounds out. ,selea001,0,G
+,00,2,,,,,14,27,X,selea001,1,0,muelb001 grounds out. ,muelb001,1,G
+,20,2,,,,,15,30,BBX,selea001,1,0,,riosa001,1,F
+,00,2,,,,,16,31,X,selea001,1,0,,estab001,1,F
+,22,3,,,,,17,30,CBCBX,hernl003,1,0,hendr001 grounds out. ,hendr001,0,G
+,10,3,,mclem001,,,18,32,BX,hernl003,0,0,mclem001 doubles. ,mclem001,0,
+mclem001 to 3B. ,11,3,,,mclem001,rodra001,19,35,BCB,hernl003,0,0,Passed Ball. ,rodra001,0,
+mclem001 scores. ,21,3,,rodra001,,,20,39,BCBX,hernl003,0,1,rodra001 doubles. ,rodra001,0,
+,30,3,olerj001,rodra001,,,21,43,BBBB,hernl003,0,0,olerj001 walks. ,olerj001,0,
+rodra001 to 3B. olerj001 to 2B. ,32,3,buhnj001,olerj001,rodra001,,22,49,BSBBCB,hernl003,0,0,buhnj001 walks. ,buhnj001,0,
+,32,3,buhnj001,olerj001,,,23,56,CBFBFBX,hernl003,2,0,Double Play. ,lampt001,0,
+,10,3,,,,,24,33,BX,selea001,1,0,hernl003 grounds out. ,hernl003,1,G
+,12,3,benam001,,,,25,37,CCBX,selea001,0,0,benam001 singles. ,benam001,1,
+benam001 to 3B. ,00,3,,martr003,benam001,,26,38,X,selea001,0,0,martr003 doubles. ,martr003,1,
+,30,3,bondb001,martr003,benam001,,27,42,IIII,selea001,0,0,bondb001 intentionally walks. ,bondb001,1,
+benam001 scores. ,00,3,bondb001,martr003,,,28,43,X,selea001,1,1,kentj001 hits sacrifice fly. ,kentj001,1,
+,32,3,bondb001,martr003,,,29,49,BBCBFS,selea001,1,0,snowj001 strikes out. ,snowj001,1,
+,00,4,,,,,30,57,X,hernl003,1,0,,camem001,0,F
+,32,4,mabrj001,,,,31,63,BCBFBX,hernl003,0,0,mabrj001 singles. ,mabrj001,0,
+mabrj001 to 2B. ,00,4,,mabrj001,,,32,64,X,hernl003,1,0,Sacrifice bunt by selea001.,selea001,0,
+,22,4,,mabrj001,,,33,69,BFBFX,hernl003,1,0,hendr001 grounds out. ,hendr001,0,G
+,22,4,,,,,34,55,BCFBFX,selea001,1,0,muelb001 grounds out. ,muelb001,1,G
+,22,4,,,,,35,60,FBBFS,selea001,1,0,riosa001 strikes out. ,riosa001,1,
+,00,4,estab001,,,,36,61,X,selea001,0,0,estab001 singles. ,estab001,1,
+estab001 to 2B. ,10,4,hernl003,estab001,,,37,63,BX,selea001,0,0,hernl003 singles. ,hernl003,1,
+,32,4,hernl003,estab001,,,38,69,BFBBFX,selea001,1,0,,benam001,1,F
+,11,5,,,,,39,72,BFX,hernl003,1,0,,mclem001,0,F
+,22,5,,,,,40,77,BCFBS,hernl003,1,0,rodra001 strikes out. ,rodra001,0,
+,32,5,,,,,41,83,BBCSBX,hernl003,1,0,olerj001 grounds out. ,olerj001,0,G
+,11,5,,,,,42,72,BCX,selea001,1,0,martr003 grounds out. ,martr003,1,G
+,22,5,,,,,43,77,CCBBC,selea001,1,0,bondb001 strikes out. ,bondb001,1,
+,22,5,,,,,44,83,BBCCFX,selea001,1,0,kentj001 grounds out. ,kentj001,1,G
+,11,6,,,,,45,86,CBX,hernl003,1,0,buhnj001 grounds out. ,buhnj001,0,G
+,32,6,lampt001,,,,46,93,CBBSFBB,hernl003,0,0,lampt001 walks. ,lampt001,0,
+lampt001 to 2B. ,32,6,camem001,lampt001,,,47,99,BBBCSB,hernl003,0,0,camem001 walks. ,camem001,0,
+lampt001 out. camem001 to 2B. ,01,6,mabrj001,camem001,,,48,101,CX,hernl003,1,0,mabrj001 singles. ,mabrj001,0,
+,12,6,mabrj001,camem001,,,49,107,CCBFFX,hernl003,1,0,selea001 grounds out. ,selea001,0,G
+,12,6,snowj001,,,,50,88,CBCFX,selea001,0,0,snowj001 singles. ,snowj001,1,
+,11,6,,,,,51,91,BCX,selea001,2,0,Double Play. ,muelb001,1,
+,31,6,,,,,52,96,BBBFX,selea001,1,0,,riosa001,1,F
+,12,7,,,,,53,111,CFBC,hernl003,1,0,hendr001 strikes out. ,hendr001,0,
+,22,7,,,,,54,116,CBFBX,hernl003,1,0,mclem001 grounds out. ,mclem001,0,G
+,31,7,rodra001,,,,55,121,BCBBB,hernl003,0,0,rodra001 walks. ,rodra001,0,
+rodra001 to 3B. ,22,7,olerj001,,rodra001,,56,126,CCBBX,hernl003,0,0,olerj001 singles. ,olerj001,0,
+olerj001 to 2B. ,32,7,buhnj001,olerj001,rodra001,,57,133,CCBBFBB,hernl003,0,0,buhnj001 walks. ,buhnj001,0,
+rodra001 scores. olerj001 scores. buhnj001 scores. ,12,7,,,lampt001,,58,137,BCFX,hernl003,0,3,lampt001 triples. ,lampt001,0,
+,22,7,,,lampt001,,62,5,BCBFC,rodrf002,1,0,camem001 strikes out. ,camem001,0,
+,22,7,,,,,65,6,SBSBFX,rhoda001,1,0,,estab001,1,F
+,12,7,,,,,66,10,CBFC,rhoda001,1,0,murrc001 strikes out. ,murrc001,1,
+,12,7,,,,,67,15,BLSFC,rhoda001,1,0,benam001 strikes out. ,benam001,1,
+,32,8,,,,,68,11,CSBBBS,rodrf002,1,0,mabrj001 strikes out. ,mabrj001,0,
+,32,8,ibanr001,,,,69,17,BBBCFB,rodrf002,0,0,ibanr001 walks. ,ibanr001,0,
+ibanr001 to 2B. ,32,8,hendr001,ibanr001,,,70,24,BBCSFBB,rodrf002,0,0,hendr001 walks. ,hendr001,0,
+ibanr001 scores. hendr001 to 3B. ,32,8,mclem001,,hendr001,,71,30,FFBBBX,rodrf002,0,1,mclem001 singles. ,mclem001,0,
+hendr001 scores. mclem001 to 2B. ,30,8,rodra001,mclem001,,,73,4,BBBX,fulta001,0,1,rodra001 singles. ,rodra001,0,
+mclem001 to 3B. rodra001 to 2B. ,31,8,olerj001,rodra001,mclem001,,74,9,SBBBB,fulta001,0,0,olerj001 walks. ,olerj001,0,
+mclem001 scores. rodra001 to 3B. olerj001 to 2B. ,11,8,,olerj001,rodra001,,76,12,CBX,fulta001,1,1,marte001 hits sacrifice fly. ,marte001,0,
+,31,8,,olerj001,rodra001,,78,17,BBCBX,fulta001,1,0,,wilsd001,0,F
+,22,8,,,,,82,8,CSBBFFFX,mesaj001,1,0,,martr003,1,F
+,22,8,,,,,83,13,BSBCS,mesaj001,1,0,bondb001 strikes out. ,bondb001,1,
+,32,8,,,,,84,20,FBSFBBS,mesaj001,1,0,kentj001 strikes out. ,kentj001,1,
+,00,9,camem001,,,,87,1,X,gardm001,0,0,camem001 singles. ,camem001,0,
+camem001 to 2B. ,01,9,belld002,camem001,,,88,3,CX,gardm001,0,0,belld002 singles. ,belld002,0,
+camem001 to 3B. ,32,9,belld002,,camem001,,89,10,BCFBFBX,gardm001,1,0,,ibanr001,0,F
+belld002 to 2B. ,32,9,hendr001,belld002,camem001,,90,16,BBBCCB,gardm001,0,0,hendr001 walks. ,hendr001,0,
+camem001 scores. belld002 to 3B. ,32,9,hendr001,,belld002,,91,23,BBCFBFX,gardm001,1,1,mclem001 hits sacrifice fly. ,mclem001,0,
+,11,9,hendr001,,belld002,,92,26,BCX,gardm001,1,0,,rodra001,0,P
+,10,9,snowj001,,,,93,22,BX,mesaj001,0,0,snowj001 singles. ,snowj001,1,
+,22,9,snowj001,,,,94,27,BCFBS,mesaj001,1,0,muelb001 strikes out. ,muelb001,1,
+,02,9,snowj001,,,,95,30,CCS,mesaj001,1,0,cresf001 strikes out. ,cresf001,1,
+,12,9,snowj001,,,,96,34,SFBS,mesaj001,1,0,estab001 strikes out. ,estab001,1,

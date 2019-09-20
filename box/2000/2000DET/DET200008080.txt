@@ -1,0 +1,127 @@
+version,2
+info,visteam,BAL
+info,hometeam,DET
+info,site,DET05
+info,date,2000/08/08
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,true
+info,umphome,gibsg901
+info,ump1b,drakr901
+info,ump2b,meric901
+info,ump3b,ripps901
+info,pitches,pitches
+info,temp,81
+info,winddir,tolf
+info,windspeed,17
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,152
+info,attendance,30190
+info,wp,moehb001
+info,lp,rappp001
+info,save,
+start,andeb001,"Brady Anderson",0,1,7
+start,moram002,"Melvin Mora",0,2,6
+start,deshd001,"Delino DeShields",0,3,4
+start,bellj002,"Albert Belle",0,4,9
+start,conij001,"Jeff Conine",0,5,10
+start,richc001,"Chris Richard",0,6,3
+start,fordb001,"Brook Fordyce",0,7,2
+start,minor001,"Ryan Minor",0,8,5
+start,matol001,"Luis Matos",0,9,8
+start,rappp001,"Pat Rapp",0,0,1
+start,easld001,"Damion Easley",1,1,4
+start,mcmib001,"Billy McMillon",1,2,10
+start,higgb001,"Bobby Higginson",1,3,7
+start,gonzj002,"Juan Gonzalez",1,4,9
+start,palmd002,"Dean Palmer",1,5,5
+start,morrh001,"Hal Morris",1,6,3
+start,encaj001,"Juan Encarnacion",1,7,8
+start,ausmb001,"Brad Ausmus",1,8,2
+start,cruzd001,"Deivi Cruz",1,9,6
+start,moehb001,"Brian Moehler",1,0,1
+play,1,0,andeb001,31,SBBBB,W
+play,1,0,moram002,11,CBX,D9/9D.1-3
+play,1,0,deshd001,21,CBBX,8/F8S
+play,1,0,bellj002,10,BX,4/P4
+play,1,0,conij001,21,BCBX,63/G
+play,1,1,easld001,02,CFH,HP
+play,1,1,mcmib001,22,FBBCFX,46(1)3/GDP
+play,1,1,higgb001,22,BCBCX,S8
+play,1,1,gonzj002,02,CFFS,K
+play,2,0,richc001,02,CSC,K/C
+play,2,0,fordb001,22,CBBFX,S8
+play,2,0,minor001,12,CCFBX,S8.1-2
+play,2,0,matol001,02,CFS,K
+play,2,0,andeb001,12,FFBX,8/F8D
+play,2,1,palmd002,10,BX,63/G
+play,2,1,morrh001,30,BBBB,W
+play,2,1,encaj001,12,CFBC,K/C
+play,2,1,ausmb001,12,CBFX,S9.1-2
+play,2,1,cruzd001,01,CB,WP.2-3;1-2
+play,2,1,cruzd001,11,CBX,3/P3
+play,3,0,moram002,32,CBBBCX,S8
+play,3,0,deshd001,00,X,S8.1-3;B-2(TH3)
+play,3,0,bellj002,01,CX,53/G.3-H;2-3
+play,3,0,conij001,01,FX,53/G
+play,3,0,richc001,01,SX,31/G
+play,3,1,easld001,11,BCX,9/F9S
+play,3,1,mcmib001,22,BBFCFX,43/G
+play,3,1,higgb001,32,BBFBFB,W
+play,3,1,gonzj002,32,BFBFFFBX,7/F7
+play,4,0,fordb001,11,BFX,63/G
+play,4,0,minor001,00,X,43/G
+play,4,0,matol001,02,CFC,K/C
+play,4,1,palmd002,01,CX,D7
+play,4,1,morrh001,00,X,6/P6
+play,4,1,encaj001,01,SX,3/G.2-3
+play,4,1,ausmb001,00,X,8/F8
+play,5,0,andeb001,00,X,8/L8
+play,5,0,moram002,32,CBFFFBBFX,S7
+play,5,0,deshd001,00,X,64(1)3/GDP
+play,5,1,cruzd001,01,CX,S8
+play,5,1,easld001,32,LBBBCB,W.1-2
+play,5,1,mcmib001,00,X,C/E2.2-3;1-2
+play,5,1,higgb001,12,CBFS,K
+play,5,1,gonzj002,10,BX,D9/9D.3-H;2-H;1-3
+play,5,1,palmd002,12,FBFX,7/SF.3-H(UR)
+play,5,1,morrh001,12,FBFFX,63/G
+play,6,0,bellj002,10,BX,2/FL
+play,6,0,conij001,00,X,53/G
+play,6,0,richc001,00,X,63/G
+play,6,1,encaj001,12,FBSFS,K
+play,6,1,ausmb001,22,BBCFX,6/L6
+play,6,1,cruzd001,20,BBX,7/FL
+play,7,0,fordb001,00,X,S9
+play,7,0,minor001,00,X,6/L6
+play,7,0,matol001,10,BX,8/F8
+play,7,0,andeb001,01,CX,43/G
+play,7,1,easld001,00,X,HR/7
+play,7,1,mcmib001,31,BBBCX,3/G
+play,7,1,higgb001,00,X,43/G
+play,7,1,gonzj002,32,BFBBFFB,W
+play,7,1,palmd002,22,BFFBS,K
+play,8,0,moram002,11,CBX,S7
+play,8,0,deshd001,02,CCS,K
+play,8,0,bellj002,02,CSS,K
+play,8,0,conij001,02,CSC,K/C
+play,8,1,morrh001,00,,NP
+sub,magew001,"Wendell Magee",1,6,11
+play,8,1,magew001,00,,NP
+sub,mcelc001,"Chuck McElroy",0,0,1
+play,8,1,magew001,22,SBCBX,4/P4
+play,8,1,encaj001,11,SBX,S8
+play,8,1,ausmb001,10,BX,54(1)3/GDP
+play,9,0,richc001,00,,NP
+sub,palmd002,"Dean Palmer",1,5,3
+play,9,0,richc001,00,,NP
+sub,halts001,"Shane Halter",1,6,5
+play,9,0,richc001,12,BCSS,K
+play,9,0,fordb001,22,BCFBFFFX,8/F8S
+play,9,0,minor001,01,CX,8/F8
+data,er,rappp001,3
+data,er,mcelc001,0
+data,er,moehb001,1

@@ -1,0 +1,156 @@
+version,2
+info,visteam,SFN
+info,hometeam,PIT
+info,site,PIT07
+info,date,2000/08/28
+info,number,0
+info,starttime,7:05PM
+info,daynight,night
+info,usedh,false
+info,umphome,cousd901
+info,ump1b,mealj901
+info,ump2b,nelsj901
+info,ump3b,barkl901
+info,pitches,pitches
+info,temp,78
+info,winddir,ltor
+info,windspeed,8
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,overcast
+info,timeofgame,169
+info,attendance,15125
+info,wp,embra001
+info,lp,saues001
+info,save,nen-r001
+start,benam001,"Marvin Benard",0,1,8
+start,muelb001,"Bill Mueller",0,2,5
+start,bondb001,"Barry Bonds",0,3,7
+start,kentj001,"Jeff Kent",0,4,4
+start,snowj001,"J.T. Snow",0,5,3
+start,burke001,"Ellis Burks",0,6,9
+start,aurir001,"Rich Aurilia",0,7,6
+start,estab001,"Bobby Estalella",0,8,2
+start,estes001,"Shawn Estes",0,9,1
+start,browa001,"Aaron Brown",1,1,8
+start,kendj001,"Jason Kendall",1,2,2
+start,gileb002,"Brian Giles",1,3,7
+start,younk001,"Kevin Young",1,4,3
+start,ramia001,"Aramis Ramirez",1,5,5
+start,browe001,"Emil Brown",1,6,9
+start,wilse001,"Enrique Wilson",1,7,4
+start,mearp001,"Pat Meares",1,8,6
+start,ritct001,"Todd Ritchie",1,9,1
+play,1,0,benam001,10,BX,S9
+play,1,0,muelb001,11,CBX,S9.1-2
+play,1,0,bondb001,32,FBCFFBFBFB,W.2-3;1-2
+play,1,0,kentj001,22,BCBSS,K
+play,1,0,snowj001,12,BCCFFC,K/C
+play,1,0,burke001,20,BBX,D7/G5L.3-H;2-H;1-H;B-3(E6/TH)
+play,1,0,aurir001,00,,NP
+sub,wilse001,"Enrique Wilson",1,7,5
+play,1,0,aurir001,00,,NP
+sub,morrw001,"Warren Morris",1,5,4
+com,"$Aramis Ramirez out for season with subluxation of left"
+com,"shoulder, suffered while diving for Burks' double"
+play,1,0,aurir001,02,CSS,K
+play,1,1,browa001,32,BBBCCFB,W
+play,1,1,kendj001,00,X,S7/7S.1-2
+play,1,1,gileb002,22,BCBFX,16(1)3/GDP.2-3
+play,1,1,younk001,30,BBBB,W
+play,1,1,morrw001,31,BBBCB,W.1-2
+play,1,1,browe001,00,B,WP.3-H
+play,1,1,browe001,10,B+1,PO1(E2).2-H(UR);1-3
+play,1,1,browe001,12,B+1SSS,K
+play,2,0,estab001,02,FCX,4/P4
+play,2,0,estes001,11,CBX,4/P4
+play,2,0,benam001,31,CBBBB,W
+play,2,0,muelb001,21,FBBX,T/89.1-H
+play,2,0,bondb001,00,X,13/G
+play,2,1,wilse001,01,CX,S
+play,2,1,mearp001,10,BX,S.1-3(E6)
+play,2,1,ritct001,02,LSS,K
+play,2,1,browa001,10,BX,S9.3-H;1-3
+play,2,1,kendj001,30,BBBB,W.1-2
+play,2,1,gileb002,21,CBBX,5/P5
+play,2,1,younk001,22,FBCBFFC,K/C
+play,3,0,kentj001,02,FFFFFFS,K
+play,3,0,snowj001,01,CX,5/FL
+play,3,0,burke001,01,SX,63/G
+play,3,1,morrw001,30,BBBB,W
+play,3,1,browe001,01,SB,PB.1-2
+play,3,1,browe001,12,SBSS,K+SB3
+play,3,1,wilse001,32,BBSSBX,S8.3-H
+play,3,1,mearp001,11,BFX,16(1)3/GDP
+play,4,0,aurir001,10,BX,S
+play,4,0,estab001,01,SX,8/F8D
+play,4,0,estes001,10,BX,34/SH.1-2
+play,4,0,benam001,30,BBBB,W
+play,4,0,muelb001,01,CX,8/F8
+play,4,1,ritct001,22,FBSBFX,53/G
+play,4,1,browa001,12,BCFC,K/C
+play,4,1,kendj001,32,BBFSBFS,K
+play,5,0,bondb001,11,BFX,D/78
+play,5,0,kentj001,12,FSFBX,9/F9.2-3
+play,5,0,snowj001,31,BBBCB,W
+play,5,0,burke001,11,BCX,64(1)3/GDP
+play,5,1,gileb002,31,BBCBB,W
+play,5,1,younk001,00,X,64(1)3/GDP
+play,5,1,morrw001,10,BX,7/F7
+play,6,0,aurir001,12,CCBX,7/F7
+play,6,0,estab001,12,FBSC,K/C
+play,6,0,estes001,12,CBFFS,K
+play,6,1,browe001,22,FBCBS,K
+play,6,1,wilse001,32,BFBBFS,K
+play,6,1,mearp001,12,BCFS,K
+play,7,0,benam001,11,LBX,143/G
+play,7,0,muelb001,00,X,8/F8
+play,7,0,bondb001,31,CBBBB,W
+play,7,0,kentj001,01,SX,46(1)/FO
+play,7,1,ritct001,00,,NP
+sub,ramia002,"Alex Ramirez",1,9,11
+play,7,1,ramia002,12,BFFC,K/C
+play,7,1,browa001,10,BX,8/F8
+play,7,1,kendj001,22,FCBBX,43/G
+play,8,0,snowj001,00,,NP
+sub,loisr001,"Rich Loiselle",1,9,1
+play,8,0,snowj001,10,BX,E6/G
+play,8,0,burke001,31,CBBBB,W.1-2
+play,8,0,aurir001,22,CFBBX,7/F7
+play,8,0,estab001,22,BBSSFS,K
+play,8,0,estes001,00,,NP
+sub,cresf001,"Felipe Crespo",0,9,11
+play,8,0,cresf001,00,,NP
+sub,saues001,"Scott Sauerbeck",1,9,1
+play,8,0,cresf001,22,BCSBFFS,K
+play,8,1,gileb002,00,,NP
+sub,embra001,"Alan Embree",0,9,1
+play,8,1,gileb002,32,CBBBCB,W
+play,8,1,younk001,10,BX,16(1)3/GDP
+play,8,1,morrw001,20,BBX,7/F7
+play,9,0,benam001,00,,NP
+sub,davir002,"Russ Davis",0,1,11
+play,9,0,davir002,10,BX,HR/7
+play,9,0,muelb001,12,CFBFX,S
+play,9,0,bondb001,30,BBBB,W.1-2
+play,9,0,kentj001,00,X,8/F8.2-3
+play,9,0,snowj001,12,CBCS,K
+play,9,0,burke001,21,BFBX,63/G
+play,9,1,browe001,00,,NP
+sub,murrc001,"Calvin Murray",0,1,8
+play,9,1,browe001,00,,NP
+sub,riosa001,"Armando Rios",0,9,9
+play,9,1,browe001,00,,NP
+sub,nen-r001,"Robb Nen",0,6,1
+play,9,1,browe001,22,CSBFBS,K
+play,9,1,wilse001,01,CX,D9
+play,9,1,mearp001,32,BBBCFS,K
+play,9,1,saues001,00,,NP
+sub,vandj001,"John Vander Wal",1,9,11
+play,9,1,vandj001,02,SSFS,K
+data,er,estes001,3
+data,er,embra001,0
+data,er,nen-r001,0
+data,er,ritct001,4
+data,er,loisr001,0
+data,er,saues001,1

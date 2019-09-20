@@ -1,0 +1,115 @@
+advance_str,count_on_batter,inning,on-1,on-2,on-3,on-B,order,pitch_count,pitch_str,pitcher,play_outs,play_runs,play_str,player_id,team,trajectory
+,01,1,,,,,0,2,CX,moyej001,1,0,,stews002,0,L
+,22,1,,,,,1,7,CBCBX,moyej001,1,0,grebc001 grounds out. ,grebc001,0,G
+,20,1,,,,,2,10,BBX,moyej001,1,0,,cruzj004,0,L
+,22,1,,,,,3,8,CFBBFFFX,castf001,1,0,,javis001,1,F
+,12,1,,,,,4,12,CBFS,castf001,1,0,guilc001 strikes out. ,guilc001,1,
+,22,1,,,,,5,17,CBFBX,castf001,1,0,rodra001 grounds out. ,rodra001,1,G
+,32,2,,,,,6,16,CBBCBX,moyej001,1,0,delgc001 grounds out. ,delgc001,0,G
+,21,2,,,,,7,20,SBBX,moyej001,1,0,,batit001,0,F
+,30,2,greet003,,,,8,24,BBBB,moyej001,0,0,greet003 walks. ,greet003,0,
+greet003 out. ,01,2,cordm001,,,,9,26,CX,moyej001,1,0,cordm001 reaches on fielder's choice. ,cordm001,0,
+,02,2,,,,,10,20,FFS,castf001,1,0,marte001 strikes out. ,marte001,1,
+,21,2,olerj001,,,,11,24,CBBX,castf001,0,0,olerj001 singles. ,olerj001,1,
+,12,2,olerj001,,,,12,28,CFBS,castf001,1,0,camem001 strikes out. ,camem001,1,
+,02,2,olerj001,,,,13,32,SFFS,castf001,1,0,ibanr001 strikes out. ,ibanr001,1,
+,11,3,,,,,14,29,BFX,moyej001,1,0,,casta001,0,P
+,22,3,,,,,15,35,CFFBBX,moyej001,1,0,gonza001 grounds out. ,gonza001,0,G
+,12,3,stews002,,,,16,39,SFBX,moyej001,0,0,stews002 singles. ,stews002,0,
+,01,3,,,,grebc001,17,41,FB,moyej001,1,0,stews002 caught stealing. ,grebc001,0,
+,22,3,,,,,18,37,CBBSX,castf001,0,1,olivj001 homers. ,olivj001,1,
+,30,3,mclem001,,,,19,41,BBBB,castf001,0,0,mclem001 walks. ,mclem001,1,
+mclem001 to 2B. ,00,3,,mclem001,,,20,42,X,castf001,1,0,javis001 grounds out. ,javis001,1,G
+,22,3,,mclem001,,,21,47,BSSBS,castf001,1,0,guilc001 strikes out. ,guilc001,1,
+,32,3,rodra001,mclem001,,,22,55,BSBBCFFB,castf001,0,0,rodra001 walks. ,rodra001,1,
+mclem001 to 3B. rodra001 to 2B. ,30,3,marte001,rodra001,mclem001,,23,59,BBBB,castf001,0,0,marte001 walks. ,marte001,1,
+mclem001 scores. rodra001 scores. marte001 to 3B. ,21,3,,olerj001,marte001,,24,63,BBCX,castf001,0,2,olerj001 doubles. ,olerj001,1,
+,32,3,,olerj001,marte001,,26,69,BBSBCX,castf001,1,0,,camem001,1,F
+,12,4,grebc001,,,,27,45,CFBX,moyej001,0,0,grebc001 singles. ,grebc001,0,
+,22,4,grebc001,,,,28,50,CBBFX,moyej001,1,0,,cruzj004,0,F
+grebc001 to 3B. ,21,4,,delgc001,grebc001,,29,54,BSBX,moyej001,0,0,delgc001 doubles. ,delgc001,0,
+grebc001 scores. ,12,4,,delgc001,,,30,60,BCSFFX,moyej001,1,1,batit001 grounds out. ,batit001,0,G
+,01,4,,delgc001,,,31,62,SX,moyej001,1,0,,greet003,0,F
+,00,4,ibanr001,,,,32,70,X,castf001,0,0,ibanr001 singles. ,ibanr001,1,G
+,21,4,,,,,33,74,BFBX,castf001,2,0,Double Play. ,olivj001,1,
+,00,4,,,,,34,75,X,castf001,1,0,,mclem001,1,
+,32,5,,,,,35,68,BBBCCX,moyej001,1,0,cordm001 grounds out. ,cordm001,0,G
+,32,5,casta001,,,,36,74,SBFBBB,moyej001,0,0,casta001 walks. ,casta001,0,
+casta001 to 2B. ,11,5,gonza001,casta001,,,37,77,BCX,moyej001,0,0,gonza001 singles. ,gonza001,0,
+casta001 scores. gonza001 to 3B. ,32,5,,duceb001,gonza001,,38,83,CBBCBX,moyej001,0,1,duceb001 doubles. ,duceb001,0,
+gonza001 scores. duceb001 scores. ,00,5,grebc001,,,,39,84,X,moyej001,0,2,grebc001 singles. ,grebc001,0,
+,02,5,grebc001,,,,40,87,FFC,moyej001,1,0,cruzj004 strikes out. ,cruzj004,0,
+,11,5,grebc001,,,,41,90,FBX,moyej001,1,0,delgc001 grounds out. ,delgc001,0,G
+,12,5,,,,,42,79,FBFX,castf001,1,0,,javis001,1,L
+,22,5,,,,,43,85,CBFBFS,castf001,1,0,guilc001 strikes out. ,guilc001,1,
+,01,5,rodra001,,,,44,87,CX,castf001,0,0,rodra001 singles. ,rodra001,1,
+rodra001 to 2B. ,21,5,marte001,rodra001,,,45,91,BBFX,castf001,0,0,marte001 singles. ,marte001,1,
+,12,5,marte001,rodra001,,,46,95,CFBS,castf001,1,0,olerj001 strikes out. ,olerj001,1,
+,12,6,,,,,47,94,SFBC,moyej001,1,0,batit001 strikes out. ,batit001,0,
+,21,6,,,,,48,98,SBBX,moyej001,0,1,greet003 homers. ,greet003,0,
+,32,6,,,,,49,106,CSFFBBBS,moyej001,1,0,cordm001 strikes out. ,cordm001,0,
+,32,6,casta001,,,,50,112,CBBBCB,moyej001,0,0,casta001 walks. ,casta001,0,
+,00,6,casta001,,,,51,113,X,moyej001,1,0,,gonza001,0,P
+,32,6,,,,,52,103,BBBCFFFX,castf001,1,0,,camem001,1,F
+,22,6,,ibanr001,,,53,108,BFBSX,castf001,0,0,ibanr001 doubles. ,ibanr001,1,
+ibanr001 scores. ,11,6,,olivj001,,,54,111,FBX,castf001,0,1,olivj001 doubles. ,olivj001,1,
+olivj001 to 3B. ,21,6,,,olivj001,,56,4,CBBX,frasj001,1,0,mclem001 grounds out. ,mclem001,1,G
+olivj001 scores. ,22,6,javis001,,,,57,11,SFBFBFX,frasj001,0,1,javis001 singles. ,javis001,1,
+,01,6,,,,guilc001,58,13,CB,frasj001,1,0,javis001 caught stealing. ,guilc001,1,
+,32,7,,,,,60,6,CBFBBS,rhoda001,1,0,duceb001 strikes out. ,duceb001,0,
+,02,7,,,,,61,9,SCS,rhoda001,1,0,grebc001 strikes out. ,grebc001,0,
+,22,7,,,,,62,14,FSBBC,rhoda001,1,0,cruzj004 strikes out. ,cruzj004,0,
+,10,7,,,,,63,15,BX,frasj001,1,0,guilc001 grounds out. ,guilc001,1,G
+,21,7,rodra001,,,,64,19,BCBH,frasj001,0,0,rodra001 hit by pitch. ,rodra001,1,
+,01,7,,,,,65,21,FX,frasj001,2,0,Double Play. ,marte001,1,
+,02,8,,,,,66,17,CSS,rhoda001,1,0,delgc001 strikes out. ,delgc001,0,
+,02,8,,,,,68,3,SSS,panij001,1,0,batit001 strikes out. ,batit001,0,
+,22,8,,,,,69,10,BCFFFBS,panij001,1,0,greet003 strikes out. ,greet003,0,
+,01,8,,,,,71,2,CX,borbp001,1,0,olerj001 grounds out. ,olerj001,1,G
+,32,8,camem001,,,,73,6,CBCBBB,quanp001,0,0,camem001 walks. ,camem001,1,
+,12,8,,,,ibanr001,74,10,FFB+1,quanp001,1,0,camem001 picked off. ,ibanr001,1,
+,12,8,ibanr001,,,,75,15,FFB+1X,quanp001,0,0,ibanr001 singles. ,ibanr001,1,
+ibanr001 to 3B. ,12,8,,olivj001,ibanr001,,76,19,BCCX,quanp001,0,0,olivj001 doubles. ,olivj001,1,
+,21,8,,olivj001,ibanr001,,77,23,FBBX,quanp001,1,0,,mclem001,1,L
+,01,9,,,,,78,12,SX,panij001,1,0,,cordm001,0,F
+,12,9,,,,,79,16,CFBS,panij001,1,0,casta001 strikes out. ,casta001,0,
+,12,9,,,,,80,21,CBCFX,panij001,1,0,gonza001 grounds out. ,gonza001,0,G
+,12,9,javis001,,,,82,4,CSBX,kochb001,0,0,javis001 singles. ,javis001,1,
+hendr001 to 2B. ,10,9,,hendr001,,,84,6,BX,kochb001,1,0,Sacrifice bunt by guilc001.,guilc001,1,
+,30,9,rodra001,hendr001,,,85,10,IIII,kochb001,0,0,rodra001 intentionally walks. ,rodra001,1,
+,21,9,rodra001,hendr001,,,86,14,BFBX,kochb001,1,0,,marte001,1,P
+rodra001 to 2B. hendr001 out. ,01,9,olerj001,rodra001,,,87,16,CX,kochb001,1,0,olerj001 reaches on fielder's choice. ,olerj001,1,
+,02,10,,,,,90,3,CSS,sasak001,1,0,duceb001 strikes out. ,duceb001,0,
+,32,10,grebc001,,,,91,10,SBSBFBB,sasak001,0,0,grebc001 walks. ,grebc001,0,
+,22,10,,bushh001,,,93,16,FBBSFS,sasak001,1,0,cruzj004 strikes out. bushh001 steals 2B. ,cruzj004,0,
+,30,10,delgc001,bushh001,,,94,20,IIII,sasak001,0,0,delgc001 intentionally walks. ,delgc001,0,
+,12,10,delgc001,bushh001,,,95,24,BSCS,sasak001,1,0,batit001 strikes out. ,batit001,0,
+,10,10,camem001,,,,98,2,BX,painl001,0,0,camem001 singles. ,camem001,1,
+camem001 to 2B. ,22,10,ibanr001,camem001,,,99,8,CBSBFH,painl001,0,0,ibanr001 hit by pitch. ,ibanr001,1,
+camem001 to 3B. ibanr001 to 2B. ,00,10,,ibanr001,camem001,,100,9,X,painl001,1,0,Sacrifice bunt by olivj001.,olivj001,1,
+,30,10,buhnj001,ibanr001,camem001,,102,13,IIII,painl001,0,0,buhnj001 intentionally walks. ,buhnj001,1,
+,22,10,buhnj001,ibanr001,camem001,,103,19,SBFBFS,painl001,1,0,hendr001 strikes out. ,hendr001,1,
+,22,10,buhnj001,ibanr001,camem001,,105,24,BCFBX,painl001,1,0,,belld002,1,F
+,11,11,fullb001,,,,110,3,CBX,tomkb001,0,0,fullb001 singles. ,fullb001,0,
+fullb001 to 2B. ,31,11,cordm001,fullb001,,,111,8,BBBCB,tomkb001,0,0,cordm001 walks. ,cordm001,0,
+,31,11,cordm001,fullb001,,,112,13,BBBCX,tomkb001,1,0,,casta001,0,P
+,32,11,cordm001,fullb001,,,113,19,BCBBSX,tomkb001,1,0,,gonza001,0,P
+,22,11,cordm001,fullb001,,,114,24,BSSBX,tomkb001,1,0,,duceb001,0,F
+,32,11,,,,,115,30,SFBBBS,painl001,1,0,rodra001 strikes out. ,rodra001,1,
+,31,11,marte001,,,,116,35,BBBSB,painl001,0,0,marte001 walks. ,marte001,1,
+,01,11,,,,,117,37,CX,painl001,2,0,Double Play. ,olerj001,1,
+,11,12,bushh001,,,,118,27,BCX,tomkb001,0,0,bushh001 singles. ,bushh001,0,
+,02,12,bushh001,,,,119,30,SFX,tomkb001,1,0,,cruzj004,0,L
+,20,12,bushh001,,,,120,33,BBX,tomkb001,1,0,,delgc001,0,P
+,32,12,bushh001,,,,121,43,BBBFSFFFFS,tomkb001,1,0,batit001 strikes out. ,batit001,0,
+,00,12,,,,,122,38,X,painl001,1,0,camem001 grounds out. ,camem001,1,G
+,32,12,ibanr001,,,,123,44,BBBCSB,painl001,0,0,ibanr001 walks. ,ibanr001,1,
+ibanr001 to 2B. ,00,12,,ibanr001,,,124,45,X,painl001,1,0,olivj001 grounds out. ,olivj001,1,G
+,12,12,,ibanr001,,,125,49,BFFS,painl001,1,0,mabrj001 strikes out. ,mabrj001,1,
+,32,13,,,,,126,49,SBBFBX,tomkb001,1,0,,fullb001,0,
+,11,13,,,,,127,52,BFX,tomkb001,1,0,cordm001 grounds out. ,cordm001,0,G
+,02,13,,,,,128,56,CSFS,tomkb001,1,0,casta001 strikes out. ,casta001,0,
+,12,13,hendr001,,,,130,4,CBFX,hallr001,0,0,hendr001 singles. ,hendr001,1,
+hendr001 to 2B. belld002 to 1B. ,00,13,belld002,hendr001,,,131,5,X,hallr001,0,0,belld002 hits into a fielder's choice. ,belld002,1,
+hendr001 to 3B. belld002 to 2B. ,21,13,rodra001,belld002,hendr001,,132,9,BBCX,hallr001,0,0,rodra001 singles. ,rodra001,1,
+hendr001 scores. belld002 to 3B. rodra001 to 2B. ,21,13,marte001,rodra001,belld002,,133,13,BFBX,hallr001,0,1,marte001 singles. ,marte001,1,

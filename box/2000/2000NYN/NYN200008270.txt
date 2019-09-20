@@ -1,0 +1,122 @@
+version,2
+info,visteam,ARI
+info,hometeam,NYN
+info,site,NYC17
+info,date,2000/08/27
+info,number,0
+info,starttime,1:10PM
+info,daynight,day
+info,usedh,false
+info,umphome,brinj901
+info,ump1b,cousd901
+info,ump2b,mealj901
+info,ump3b,marqa901
+info,pitches,pitches
+info,temp,78
+info,winddir,tolf
+info,windspeed,5
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,149
+info,attendance,42277
+info,wp,hampm001
+info,lp,reyna001
+info,save,benia001
+start,bautd001,"Danny Bautista",0,1,9
+start,bellj001,"Jay Bell",0,2,4
+start,gonzl001,"Luis Gonzalez",0,3,7
+start,willm003,"Matt D. Williams",0,4,5
+start,colbg001,"Greg Colbrunn",0,5,3
+start,finls001,"Steve Finley",0,6,8
+start,stink001,"Kelly Stinnett",0,7,2
+start,friah001,"Hanley Frias",0,8,6
+start,reyna001,"Armando Reynoso",0,9,1
+start,agbab001,"Benny Agbayani",1,1,7
+start,hamid001,"Darryl Hamilton",1,2,9
+start,alfoe001,"Edgardo Alfonzo",1,3,4
+start,piazm001,"Mike Piazza",1,4,2
+start,ventr001,"Robin Ventura",1,5,5
+start,zeilt001,"Todd Zeile",1,6,3
+start,paytj001,"Jay Payton",1,7,8
+start,bordm001,"Mike Bordick",1,8,6
+start,hampm001,"Mike Hampton",1,9,1
+play,1,0,bautd001,11,BCX,4/P4
+play,1,0,bellj001,22,BSBSX,S8/8S
+play,1,0,gonzl001,01,CB,SB2
+play,1,0,gonzl001,11,CBX,63/G.2-3
+play,1,0,willm003,21,BSBX,43/G
+play,1,1,agbab001,32,BBBCFX,9/F9D
+play,1,1,hamid001,20,BBX,23/G
+play,1,1,alfoe001,02,CSC,K/C
+play,2,0,colbg001,00,X,31/G
+play,2,0,finls001,22,BCBFX,S7
+play,2,0,stink001,12,BCCX,54(1)/FO
+play,2,0,friah001,30,BBBB,W.1-2
+play,2,0,reyna001,12,BCFS,K
+play,2,1,piazm001,12,CBFX,8/F8D
+play,2,1,ventr001,21,FBBX,9/F9
+play,2,1,zeilt001,02,FCX,4/P4
+play,3,0,bautd001,11,FBX,13/BG
+play,3,0,bellj001,01,CX,5/L5
+play,3,0,gonzl001,10,BX,13/G
+play,3,1,paytj001,01,CX,S7
+play,3,1,bordm001,21,BBFX,16(1)3/GDP
+play,3,1,hampm001,12,BCCL,K/BF
+play,4,0,willm003,22,BFBCFX,7/F7
+play,4,0,colbg001,32,CBBSBFFX,9/F9
+play,4,0,finls001,22,CBBSX,3/G
+play,4,1,agbab001,10,BX,HR/7
+play,4,1,hamid001,32,CBBFBX,63/G
+play,4,1,alfoe001,00,X,5/P5
+play,4,1,piazm001,10,BX,4/P4
+play,5,0,stink001,31,BBFBB,W
+play,5,0,friah001,32,BBBCCX,43/G.1-2
+play,5,0,reyna001,01,FX,53/G
+play,5,0,bautd001,22,CBSBX,S9.2-H
+play,5,0,bellj001,00,1,POCS2(136)
+play,5,1,ventr001,21,SBBX,8/F8D
+play,5,1,zeilt001,11,CBX,53/G
+play,5,1,paytj001,11,CBX,9/F9
+play,6,0,bellj001,11,CBX,9/F9
+play,6,0,gonzl001,00,X,63/G
+play,6,0,willm003,30,BBBX,53/G
+play,6,1,bordm001,12,CBFFX,4/P4
+play,6,1,hampm001,01,CX,8/F8
+play,6,1,agbab001,11,CBX,9/F9
+play,7,0,colbg001,11,BFX,43/G
+play,7,0,finls001,10,BX,43/G
+play,7,0,stink001,22,CBBSX,3/L3
+play,7,1,hamid001,32,FCBBBX,8/F8
+play,7,1,alfoe001,12,CBFX,S7
+play,7,1,piazm001,11,BCX,S8.1-2
+play,7,1,ventr001,31,BSBBB,W.2-3;1-2
+play,7,1,zeilt001,22,CBFBX,64(1)/FO.3-H;2-3
+play,7,1,paytj001,00,,NP
+sub,milld002,"Damian Miller",0,9,2
+play,7,1,paytj001,00,,NP
+sub,kim-b001,"Byung-Hyun Kim",0,7,1
+play,7,1,paytj001,22,BBSFFX,2/FL
+play,8,0,friah001,22,CSBBS,K
+play,8,0,milld002,22,CBFBS,K
+play,8,0,bautd001,10,BX,9/F9
+play,8,1,bordm001,22,BCFFFBS,K
+play,8,1,hampm001,00,,NP
+sub,harrl001,"Lenny Harris",1,9,11
+play,8,1,harrl001,22,BBFSC,K/C
+play,8,1,agbab001,32,BBBCCS,K
+play,9,0,bellj001,00,,NP
+sub,mcewj001,"Joe McEwing",1,9,7
+play,9,0,bellj001,00,,NP
+sub,benia001,"Armando Benitez",1,1,1
+play,9,0,bellj001,11,BCX,7/F7D
+play,9,0,gonzl001,22,BBFCX,E8/F
+play,9,0,willm003,22,SFBBFFFS,K
+play,9,0,colbg001,00,,NP
+sub,womat001,"Tony Womack",0,3,12
+play,9,0,colbg001,11,FBS,SB2
+play,9,0,colbg001,12,FBSFS,K
+data,er,reyna001,2
+data,er,kim-b001,0
+data,er,hampm001,1
+data,er,benia001,0

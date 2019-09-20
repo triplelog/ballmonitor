@@ -1,0 +1,141 @@
+version,2
+info,visteam,DET
+info,hometeam,KCA
+info,site,KAN06
+info,date,2000/07/02
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,true
+info,umphome,culbf901
+info,ump1b,packs901
+info,ump2b,wintm901
+info,ump3b,welkb901
+info,pitches,pitches
+info,temp,90
+info,winddir,ltor
+info,windspeed,6
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,170
+info,attendance,17500
+info,wp,nomoh001
+info,lp,suzum001
+info,save,jonet003
+start,polol001,"Luis Polonia",0,1,9
+start,beckr002,"Rich Becker",0,2,8
+start,higgb001,"Bobby Higginson",0,3,7
+start,gonzj002,"Juan Gonzalez",0,4,10
+start,clart002,"Tony Clark",0,5,3
+start,palmd002,"Dean Palmer",0,6,5
+start,easld001,"Damion Easley",0,7,4
+start,ausmb001,"Brad Ausmus",0,8,2
+start,halts001,"Shane Halter",0,9,6
+start,nomoh001,"Hideo Nomo",0,0,1
+start,damoj001,"Johnny Damon",1,1,10
+start,reboj001,"Jeff Reboulet",1,2,4
+start,sweem002,"Mike Sweeney",1,3,3
+start,dye-j001,"Jermaine Dye",1,4,9
+start,quinm001,"Mark Quinn",1,5,7
+start,randj002,"Joe Randa",1,6,5
+start,beltc001,"Carlos Beltran",1,7,8
+start,zaung001,"Gregg Zaun",1,8,2
+start,ordal001,"Luis Ordaz",1,9,6
+start,suzum001,"Mac Suzuki",1,0,1
+play,1,0,polol001,32,BBCFBX,HR/9
+play,1,0,beckr002,12,SBCX,7/F7
+play,1,0,higgb001,02,CCS,K
+play,1,0,gonzj002,00,X,3/FL
+play,1,1,damoj001,20,BBX,S9
+play,1,1,reboj001,22,BCCBS,K+CS2(26)/DP
+com,"ej,muset101,M,wintm901,Call at 2B (Bumped umpire)"
+com,"Royals manager Tony Muser ejected by 2B umpire Mike Winters"
+play,1,1,sweem002,21,BFBX,9/F9
+play,2,0,clart002,22,CBBCFFFS,K
+play,2,0,palmd002,02,CCS,K
+play,2,0,easld001,00,X,S9
+play,2,0,ausmb001,00,C,SB2
+play,2,0,ausmb001,01,CX,3/FL
+play,2,1,dye-j001,22,BBFFFS,K
+play,2,1,quinm001,00,X,T/89D
+play,2,1,randj002,00,X,3/FL
+play,2,1,beltc001,32,FBBBFS,K
+play,3,0,halts001,22,BFBFC,K/C
+play,3,0,polol001,12,FBFX,3/G
+play,3,0,beckr002,32,BCBBCB,W
+play,3,0,higgb001,32,CBFBBS,K
+play,3,1,zaung001,22,CBBSX,3/L3
+play,3,1,ordal001,12,BFFX,63/G
+play,3,1,damoj001,02,CCS,K
+play,4,0,gonzj002,31,BSBBB,W
+play,4,0,clart002,12,BSFS,K
+play,4,0,palmd002,20,BBX,8/F8D
+play,4,0,easld001,32,BFBFBFB,W.1-2
+play,4,0,ausmb001,32,CBBSBC,K/C
+play,4,1,reboj001,11,FBX,53/G
+play,4,1,sweem002,11,CBX,9/F9D
+play,4,1,dye-j001,00,X,13/G
+play,5,0,halts001,00,X,4/P4
+play,5,0,polol001,10,BX,8/F8
+play,5,0,beckr002,20,BBX,43/G
+play,5,1,quinm001,32,CBBCBFB,W
+play,5,1,randj002,20,BBX,8/F8D
+play,5,1,beltc001,00,X,6/P6
+play,5,1,zaung001,02,CFC,K/C
+play,6,0,higgb001,32,CCBFBBX,T/78D
+play,6,0,gonzj002,12,BCFX,S8.3-H
+play,6,0,clart002,11,CBX,7/F7
+play,6,0,palmd002,12,FCFBS,K
+play,6,0,easld001,20,BBX,54(1)/FO
+play,6,1,ordal001,00,,NP
+sub,fickr001,"Robert Fick",0,5,3
+play,6,1,ordal001,00,X,63/G
+play,6,1,damoj001,32,BBCBCS,K
+play,6,1,reboj001,02,FCC,K/C
+play,7,0,ausmb001,10,BX,9/F9
+play,7,0,halts001,32,BBBCFX,8/F8
+play,7,0,polol001,01,FX,4/L4
+play,7,1,sweem002,00,,NP
+sub,magew001,"Wendell Magee",0,1,9
+play,7,1,sweem002,01,FX,7/F7
+play,7,1,dye-j001,31,CBBBX,5/L5
+play,7,1,quinm001,10,BX,7/F7
+play,8,0,beckr002,32,CBBFBB,W
+play,8,0,higgb001,00,,NP
+sub,spraj001,"Jerry Spradlin",1,0,1
+play,8,0,higgb001,00,X,7/F7
+play,8,0,gonzj002,10,BX,S8.1-2
+play,8,0,fickr001,32,BBBFCFX,7/F7
+play,8,0,palmd002,21,SBBX,43/G
+play,8,1,randj002,10,BX,S9
+play,8,1,beltc001,00,,NP
+sub,brocd001,"Doug Brocail",0,0,1
+play,8,1,beltc001,12,CBCX,46(1)/FO
+play,8,1,zaung001,30,BBBB,W.1-2
+play,8,1,ordal001,00,,NP
+sub,mccad001,"David McCarty",1,9,11
+play,8,1,mccad001,22,CBFBFX,9/F9.2-3
+play,8,1,damoj001,32,BBCFBFB,W.1-2
+play,8,1,reboj001,00,,NP
+sub,poses001,"Scott Pose",1,2,11
+play,8,1,poses001,22,FBBFFFFS,K
+play,9,0,easld001,00,,NP
+sub,fabrj001,"Jorge Fabregas",1,9,2
+play,9,0,easld001,00,,NP
+sub,zaung001,"Gregg Zaun",1,8,4
+play,9,0,easld001,00,,NP
+sub,sancr001,"Rey Sanchez",1,2,6
+play,9,0,easld001,10,BX,D7
+play,9,0,ausmb001,00,X,53/SH.2-3
+play,9,0,halts001,12,FSBX,9(B)2(3)/LDP
+play,9,1,sweem002,00,,NP
+sub,jonet003,"Todd Jones",0,0,1
+play,9,1,sweem002,21,BBSX,63/G
+play,9,1,dye-j001,02,SFFS,K
+play,9,1,quinm001,02,CFS,K
+data,er,nomoh001,0
+data,er,brocd001,0
+data,er,jonet003,0
+data,er,suzum001,2
+data,er,spraj001,0

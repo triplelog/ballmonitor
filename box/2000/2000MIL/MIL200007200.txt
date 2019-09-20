@@ -1,0 +1,144 @@
+version,2
+info,visteam,PIT
+info,hometeam,MIL
+info,site,MIL05
+info,date,2000/07/20
+info,number,0
+info,starttime,1:05PM
+info,daynight,day
+info,usedh,false
+info,umphome,packs901
+info,ump1b,nelsj901
+info,ump2b,cousd901
+info,ump3b,marqa901
+info,pitches,pitches
+info,temp,69
+info,winddir,tolf
+info,windspeed,10
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,sunny
+info,timeofgame,159
+info,attendance,29389
+info,wp,silvj001
+info,lp,haynj001
+info,save,
+start,morrw001,"Warren Morris",0,1,4
+start,benjm001,"Mike Benjamin",0,2,5
+start,cordw001,"Wil Cordero",0,3,7
+start,gileb002,"Brian Giles",0,4,8
+start,avenb001,"Bruce Aven",0,5,9
+start,vandj001,"John Vander Wal",0,6,3
+start,mearp001,"Pat Meares",0,7,6
+start,osikk001,"Keith Osik",0,8,2
+start,silvj001,"Jose Silva",0,9,1
+start,bellr002,"Ron Belliard",1,1,4
+start,grism001,"Marquis Grissom",1,2,8
+start,jenkg001,"Geoff Jenkins",1,3,7
+start,hayec001,"Charlie Hayes",1,4,5
+start,burnj001,"Jeromy Burnitz",1,5,9
+start,houst001,"Tyler Houston",1,6,3
+start,lopel002,"Luis Lopez",1,7,6
+start,blanh001,"Henry Blanco",1,8,2
+start,haynj001,"Jimmy Haynes",1,9,1
+play,1,0,morrw001,10,BX,8/F8
+play,1,0,benjm001,10,BX,8/F8
+play,1,0,cordw001,00,X,S9/9S
+play,1,0,gileb002,31,BBCBX,HR/9.1-H
+play,1,0,avenb001,21,BFBX,4/P4
+play,1,1,bellr002,11,BCX,43/G
+play,1,1,grism001,01,CX,53/G
+play,1,1,jenkg001,22,BBFFC,K/C
+play,2,0,vandj001,12,CCBX,5/FL
+play,2,0,mearp001,12,BFCS,K
+play,2,0,osikk001,12,CBCX,43/G
+play,2,1,hayec001,12,BCCC,K/C
+play,2,1,burnj001,31,BCBBB,W
+play,2,1,houst001,00,X,S7/7S.1-2
+play,2,1,lopel002,30,BBBB,W.2-3;1-2
+play,2,1,blanh001,20,BBX,6/P6
+play,2,1,haynj001,02,FCX,64(1)/FO
+play,3,0,silvj001,21,BSBX,43/G
+play,3,0,morrw001,10,BX,3/G
+play,3,0,benjm001,20,BBX,HR/7
+play,3,0,cordw001,21,BBFX,9/F9S
+play,3,1,bellr002,11,BCX,T7
+play,3,1,grism001,22,BBSFFS,K
+play,3,1,jenkg001,00,X,HR/9.3-H
+play,3,1,hayec001,32,CSBBBB,W
+play,3,1,burnj001,21,CBBX,31/G.1-2
+play,3,1,houst001,22,CBSBX,31/G
+com,"ej,houst001,P,nelsj901,Call at 1B"
+com,"Tyler Houston ejected by 1B umpire Jeff Nelson"
+play,4,0,gileb002,00,,NP
+sub,echea001,"Angel Echevarria",1,6,3
+play,4,0,gileb002,31,BFBBB,W
+play,4,0,avenb001,10,BX,7/F7
+play,4,0,vandj001,20,BBX,53/G.1-2
+play,4,0,mearp001,21,BBCX,S8.2-H
+play,4,0,osikk001,10,BX,S7.1-3
+play,4,0,silvj001,12,CSFBC,K/C
+play,4,1,lopel002,02,CFX,63/G
+play,4,1,blanh001,10,BX,3/P3
+play,4,1,haynj001,01,FX,43/G
+play,5,0,morrw001,00,X,S9
+play,5,0,benjm001,00,X,13/SH.1-2
+play,5,0,cordw001,00,X,D8/8D.2-H
+play,5,0,gileb002,30,IIII,IW
+play,5,0,avenb001,00,X,7/F7
+play,5,0,vandj001,00,,NP
+sub,delov001,"Valerio De Los Santos",1,9,1
+play,5,0,vandj001,31,BCBBB,W.2-3;1-2
+play,5,0,mearp001,02,FFFX,3/FL
+play,5,1,bellr002,00,X,53/G
+play,5,1,grism001,00,X,S9/9S
+play,5,1,jenkg001,02,FFS,K
+play,5,1,hayec001,22,SSBFBX,3/G
+play,6,0,osikk001,10,BX,43/G
+play,6,0,silvj001,12,SBFS,K
+play,6,0,morrw001,10,BX,S/78
+play,6,0,benjm001,30,BBBB,W.1-2
+play,6,0,cordw001,32,SFBBBX,D8/8D.2-H;1-H
+play,6,0,gileb002,32,BBCBCB,W
+play,6,0,avenb001,00,,NP
+sub,weatd001,"David Weathers",1,9,1
+play,6,0,avenb001,12,BCCX,D9/9D.2-H;1-H
+play,6,0,vandj001,32,BBCFBFS,K
+play,6,1,burnj001,22,SBCBS,K
+play,6,1,echea001,22,CBCBX,43/G
+play,6,1,lopel002,00,X,63/G
+play,7,0,mearp001,10,BX,63/G
+play,7,0,osikk001,11,CBX,43/G
+play,7,0,silvj001,12,CBFS,K
+play,7,1,blanh001,22,CCBBFX,4/P4
+play,7,1,weatd001,00,,NP
+sub,jonec002,"Chris C. Jones",1,9,11
+play,7,1,jonec002,11,SBX,53/G
+play,7,1,bellr002,32,CBBBCX,53/G
+play,8,0,morrw001,00,,NP
+sub,acevj001,"Juan Acevedo",1,9,1
+play,8,0,morrw001,12,BCCX,6/P6
+play,8,0,benjm001,00,X,S8
+play,8,0,cordw001,12,BCFB,WP.1-2
+play,8,0,cordw001,22,BCFBFS,K
+play,8,0,gileb002,22,BBFFFFS,K
+play,8,1,grism001,22,BFFBFX,4/L4
+play,8,1,jenkg001,02,SFFX,3/G
+play,8,1,hayec001,11,CBX,9/F9S
+play,9,0,avenb001,00,,NP
+sub,kingr001,"Ray King",1,9,1
+play,9,0,avenb001,02,FFX,S7/7S
+play,9,0,vandj001,20,BBX,46(1)3/GDP
+play,9,0,mearp001,00,X,9/F9
+play,9,1,burnj001,00,,NP
+sub,saues001,"Scott Sauerbeck",0,9,1
+play,9,1,burnj001,32,CBBBFX,S9
+play,9,1,echea001,22,BSSBX,7/F7
+play,9,1,lopel002,01,CX,6(1)3/GDP
+data,er,silvj001,2
+data,er,saues001,0
+data,er,haynj001,5
+data,er,delov001,4
+data,er,weatd001,0
+data,er,acevj001,0
+data,er,kingr001,0

@@ -1,0 +1,168 @@
+version,2
+info,visteam,FLO
+info,hometeam,CIN
+info,site,CIN08
+info,date,2000/08/06
+info,number,0
+info,starttime,1:15PM
+info,daynight,day
+info,usedh,false
+info,umphome,fichm901
+info,ump1b,laynj901
+info,ump2b,monte901
+info,ump3b,randt901
+info,pitches,pitches
+info,temp,77
+info,winddir,rtol
+info,windspeed,9
+info,fieldcond,unknown
+info,precip,unknown
+info,sky,cloudy
+info,timeofgame,199
+info,attendance,39815
+info,wp,aybam001
+info,lp,gravd001
+info,save,loopb001
+start,clapc001,"Chris Clapinski",0,1,4
+start,kotsm001,"Mark Kotsay",0,2,8
+start,rodrh001,"Henry Rodriguez",0,3,7
+start,smitm004,"Mark Smith",0,4,9
+start,lowem001,"Mike Lowell",0,5,5
+start,lee-d002,"Derrek Lee",0,6,3
+start,fox-a001,"Andy Fox",0,7,6
+start,castr002,"Ramon Castro",0,8,2
+start,smitc001,"Chuck Smith",0,9,1
+start,stync001,"Chris Stynes",1,1,5
+start,castj004,"Juan Castro",1,2,6
+start,grifk002,"Ken Griffey",1,3,8
+start,bichd001,"Dante Bichette",1,4,9
+start,cases001,"Sean Casey",1,5,3
+start,tuckm001,"Michael Tucker",1,6,7
+start,santb001,"Benito Santiago",1,7,2
+start,reesp001,"Pokey Reese",1,8,4
+start,wills002,"Scott Williamson",1,9,1
+play,1,0,clapc001,32,BBBCSB,W
+play,1,0,kotsm001,00,X,HR/9.1-H
+play,1,0,rodrh001,31,FBBBX,8/F8
+play,1,0,smitm004,12,SFBS,K
+play,1,0,lowem001,22,CBBFC,K/C
+play,1,1,stync001,11,BCX,S7/7S
+play,1,1,castj004,00,X,S7/7S.1-2
+play,1,1,grifk002,02,CSX,S8/8S.2-H;1-3
+play,1,1,bichd001,12,CBFS,K
+play,1,1,cases001,12,BFSS,K
+play,1,1,tuckm001,02,SSS,K
+play,2,0,lee-d002,31,SBBBB,W
+play,2,0,fox-a001,32,BBFBCFB,W.1-2
+play,2,0,castr002,20,BBX,D7.2-H;1-3
+play,2,0,smitc001,02,FSX,63/G
+play,2,0,clapc001,31,BFBBX,8/F8.3-H(E2)(UR);2-3
+play,2,0,kotsm001,21,BBFX,2/FL
+play,2,1,santb001,01,FX,8/F8D
+play,2,1,reesp001,12,CSFBS,K
+play,2,1,wills002,22,FBCBX,S9
+play,2,1,stync001,00,X,64(1)/FO
+play,3,0,rodrh001,21,CBBX,8/F8
+play,3,0,smitm004,32,CFFBBBS,K
+play,3,0,lowem001,02,CCS,K
+play,3,1,castj004,21,FBBX,S7
+play,3,1,grifk002,00,X,S1/BG1.1-3(E1)
+play,3,1,bichd001,10,BX,9/SF.3-H
+play,3,1,cases001,10,BX,4(1)/FO/G
+play,3,1,tuckm001,31,BBCBX,S.1-2
+play,3,1,santb001,20,BBX,D/78D.2-H;1-H
+play,3,1,reesp001,30,IIII,IW
+play,3,1,wills002,02,CCS,K
+play,4,0,lee-d002,11,FBX,4/P4
+play,4,0,fox-a001,22,BBFSS,K
+play,4,0,castr002,01,CX,4/P4
+play,4,1,stync001,00,X,53/G
+play,4,1,castj004,00,X,3/FL
+play,4,1,grifk002,12,BCCS,K
+play,5,0,smitc001,02,SSX,S9/9S
+play,5,0,clapc001,10,BX,S9/9S.1-2
+play,5,0,kotsm001,00,X,S9.2-H;1-2
+play,5,0,rodrh001,10,BX,D9/9D.2-H;1-3
+play,5,0,smitm004,00,,NP
+sub,sulls001,"Scott Sullivan",1,9,1
+play,5,0,smitm004,12,BSSS,K
+play,5,0,lowem001,31,BFBBI,IW
+play,5,0,lee-d002,32,BSCBBX,3/FL
+play,5,0,fox-a001,12,BSFC,K/C
+play,5,1,bichd001,12,FBSFX,S9
+play,5,1,cases001,32,CBBFBX,S8/8S.1-2
+play,5,1,tuckm001,02,FFS,K
+play,5,1,santb001,32,BCBFBFFB,W.2-3;1-2
+play,5,1,reesp001,01,FX,64(1)3/GDP
+play,6,0,castr002,01,CX,53/G
+play,6,0,smitc001,00,X,3/BG#
+play,6,0,clapc001,32,BCFBFBFB,W
+play,6,0,kotsm001,10,BX,7/F7
+play,6,1,sulls001,00,,NP
+sub,kiesb001,"Brooks Kieschnick",1,9,11
+play,6,1,kiesb001,20,BBX,3/G#
+play,6,1,stync001,02,FFX,7/F7
+play,6,1,castj004,21,BFBX,8/F8
+play,7,0,rodrh001,00,,NP
+sub,villr001,"Ron Villone",1,9,1
+play,7,0,rodrh001,10,BX,7/F7
+play,7,0,smitm004,32,SBBBCX,7/F7
+play,7,0,lowem001,01,CX,63/G
+play,7,1,grifk002,31,BSBBB,W
+play,7,1,bichd001,10,BX,D7.1-3
+play,7,1,cases001,00,,NP
+sub,darev001,"Vic Darensbourg",0,4,1
+play,7,1,cases001,00,,NP
+sub,kotsm001,"Mark Kotsay",0,2,9
+play,7,1,cases001,00,,NP
+sub,wilsp002,"Preston Wilson",0,9,8
+play,7,1,cases001,31,BBSBB,W
+play,7,1,tuckm001,00,,NP
+sub,yound001,"Dmitri Young",1,6,11
+play,7,1,yound001,00,,NP
+sub,aybam001,"Manny Aybar",0,4,1
+play,7,1,yound001,11,BFX,S8.3-H;2-H;1-2
+play,7,1,santb001,00,X,5(2)/FO.1-2
+play,7,1,reesp001,01,CX,9/F9
+play,7,1,villr001,00,,NP
+sub,ochoa001,"Alex Ochoa",1,9,11
+play,7,1,ochoa001,01,CX,63/G
+play,8,0,lee-d002,00,,NP
+sub,yound001,"Dmitri Young",1,6,7
+play,8,0,lee-d002,00,,NP
+sub,gravd001,"Danny Graves",1,9,1
+play,8,0,lee-d002,22,BCCBX,HR/7
+play,8,0,fox-a001,11,BFX,HR/9
+play,8,0,castr002,10,BX,9/F9
+play,8,0,wilsp002,12,SFBS,K
+play,8,0,clapc001,20,BBX,4/P4
+play,8,1,stync001,11,BFX,43/G
+play,8,1,castj004,11,BFX,5/P5
+play,8,1,grifk002,00,X,8/F8
+play,9,0,kotsm001,11,BCX,13/G
+play,9,0,rodrh001,11,FBX,7/F7
+play,9,0,aybam001,00,,NP
+sub,millk005,"Kevin Millar",0,4,11
+play,9,0,millk005,21,BCBX,E6/TH1.B-2
+play,9,0,lowem001,00,,NP
+sub,sancj001,"Jesus Sanchez",0,4,12
+play,9,0,lowem001,11,CBX,D7/7D.2-H(UR)
+play,9,0,lee-d002,00,X,9/F9
+play,9,1,bichd001,00,,NP
+sub,almaa001,"Armando Almanza",0,4,1
+play,9,1,bichd001,31,BCBBB,W
+play,9,1,cases001,30,BBBB,W.1-2
+play,9,1,yound001,00,,NP
+sub,loopb001,"Braden Looper",0,4,1
+play,9,1,yound001,22,BCSBFFS,K
+play,9,1,santb001,22,BFFBFC,K/C
+play,9,1,reesp001,21,BFBX,9/F9
+data,er,smitc001,6
+data,er,darev001,0
+data,er,aybam001,0
+data,er,almaa001,0
+data,er,loopb001,0
+data,er,wills002,5
+data,er,sulls001,0
+data,er,villr001,0
+data,er,gravd001,2
