@@ -16,7 +16,7 @@ class BoxScore extends HTMLElement {
   	var _this = this;
     this.gameid = this.getAttribute('src');
     if (this.gameid == null) {return 0;}
-  	var url = 'box/2000ATL/'+this.gameid+'batterbox.csv';
+  	var url = 'box/2000/2000'+this.gameid.substring(0,3)+'/'+this.gameid+'batterbox.csv';
 	var jsonFile = new XMLHttpRequest();
     jsonFile.open("GET",url,true);
     jsonFile.send();
@@ -26,7 +26,7 @@ class BoxScore extends HTMLElement {
             _this.offbox(Papa.parse(jsonFile.responseText).data);
         }
      }
-    var url2 = 'box/2000ATL/'+this.gameid+'pitcherbox.csv';
+    var url2 = 'box/2000/2000'+this.gameid.substring(0,3)+'/'+this.gameid+'pitcherbox.csv';
 	var jsonFile2 = new XMLHttpRequest();
     jsonFile2.open("GET",url2,true);
     jsonFile2.send();
@@ -37,7 +37,7 @@ class BoxScore extends HTMLElement {
         }
      }
     
-    var url4 = 'box/2000ATL/'+this.gameid+'.txt';
+    var url4 = 'box/2000/2000'+this.gameid.substring(0,3)+'/'+this.gameid+'.txt';
 	var jsonFile4 = new XMLHttpRequest();
     jsonFile4.open("GET",url4,true);
     jsonFile4.send();
@@ -65,7 +65,7 @@ class BoxScore extends HTMLElement {
   		else if (gameinfo[i][1] == 'hometeam') {hometeam = gameinfo[i][2];}
   	}
   	
-  	var url = 'box/2000ATL/'+this.gameid+'plays.csv';
+  	var url = 'box/2000/2000'+this.gameid.substring(0,3)+'/'+this.gameid+'plays.csv';
 	var jsonFile = new XMLHttpRequest();
     jsonFile.open("GET",url,true);
     jsonFile.send();
