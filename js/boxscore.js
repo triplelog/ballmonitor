@@ -65,6 +65,7 @@ class BoxScore extends HTMLElement {
   }
   
   linescore(gameinfo) {
+  	var _this = this;
   	var awayteam = "Away";
 	var hometeam = "Home";
   	for (var i=0;i<gameinfo.length;i++){
@@ -76,7 +77,7 @@ class BoxScore extends HTMLElement {
 	var jsonFile = new XMLHttpRequest();
     jsonFile.open("GET",url,true);
     jsonFile.send();
-
+	
     jsonFile.onreadystatechange = function() {
         if (jsonFile.readyState== 4 && jsonFile.status == 200) {
             var linescoreRaw = Papa.parse(jsonFile.responseText).data;
