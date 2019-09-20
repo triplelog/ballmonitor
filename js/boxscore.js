@@ -120,6 +120,7 @@ class BoxScore extends HTMLElement {
 	var currentOrder = 0;
 	var currentClass = 1;
 	for (var i=1;i<batterarray.length;i++){
+		if (batterarray[i].length < 10){continue;}
 		var tr = document.createElement('tr');
 		if (currentOrder != batterarray[i][2]) {
 			currentOrder = batterarray[i][2];
@@ -128,7 +129,7 @@ class BoxScore extends HTMLElement {
 			tr.classList.add("tr1");
 		}
 		else {
-			batterarray[i][0]='\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0'+batterarray[i][0];
+			batterarray[i][0]='\u00A0\u00A0\u00A0\u00A0\u00A0'+batterarray[i][0];
 			tr.classList.add("tr2");
 		}
 		
