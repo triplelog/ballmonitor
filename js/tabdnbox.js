@@ -27,7 +27,7 @@ class TabDNBox extends HTMLElement {
     this.currentFilter = "";
     this.pivotMode = "pivotcol";
     
-    this.ws = new WebSocket('wss://tabdn.com:8080');
+    this.ws = new WebSocket('ws://tabdn.com:8080');
     
     
 	this.ws.onmessage = function(evt){
