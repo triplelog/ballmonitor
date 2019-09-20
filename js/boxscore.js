@@ -124,10 +124,11 @@ class BoxScore extends HTMLElement {
 		if (currentOrder != batterarray[i][2]) {
 			currentOrder = batterarray[i][2];
 			currentClass = 3 - currentClass;
+			batterarray[i][0]=batterarray[i][2]+'. '+batterarray[i][0];
 			tr.classList.add("tr1");
 		}
 		else {
-			batterarray[i][0]='\u00A0'+batterarray[i][0];
+			batterarray[i][0]='\u00A0\u00A0\u00A0\u00A0\u00A0\u00A0'+batterarray[i][0];
 			tr.classList.add("tr2");
 		}
 		
@@ -159,7 +160,7 @@ class BoxScore extends HTMLElement {
   	tbodya.innerHTML = '';
   	theadh.innerHTML = '';
   	tbodyh.innerHTML = '';
-  	['Name','PA','AB','H','BB','R','RBI','K'].forEach(x => {
+  	['Name','IPouts','H','BB','R','ER','K'].forEach(x => {
   		var th = document.createElement('th');
 		th.textContent = x;
 		theada.appendChild(th);
@@ -173,16 +174,9 @@ class BoxScore extends HTMLElement {
 	var currentClass = 1;
 	for (var i=1;i<pitcherarray.length;i++){
 		var tr = document.createElement('tr');
-		if (currentOrder != pitcherarray[i][2]) {
-			currentOrder = pitcherarray[i][2];
-			currentClass = 3 - currentClass;
-			tr.classList.add("tr1");
-		}
-		else {
-			pitcherarray[i][0]='\u00A0'+pitcherarray[i][0];
-			tr.classList.add("tr2");
-		}
-		[0,4,5,6,7,8,9,10].forEach( x => {
+		tr.classList.add("tr1");
+
+		[0,2,3,4,5,6,8].forEach( x => {
 			var td = document.createElement('td');
 			td.textContent = pitcherarray[i][x];
 			tr.appendChild(td);
@@ -190,11 +184,11 @@ class BoxScore extends HTMLElement {
 		tr.addEventListener('click', e => {alert(e.target.parentNode.id);});
 		
 		if (pitcherarray[i][1]==0) {
-			tr.id = 'offbox_A-'+i;
+			tr.id = 'pitchbox_A-'+i;
 			tbodya.appendChild(tr);
 		}
 		else {
-			tr.id = 'offbox_H-'+i;
+			tr.id = 'pitchbox_H-'+i;
 			tbodyh.appendChild(tr);
 		}
 	}
