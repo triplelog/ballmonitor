@@ -127,6 +127,8 @@ class BoxScore extends HTMLElement {
 				  }
 				  else if (linescoreRaw[i][13] && linescoreRaw[i][13].indexOf('homers') > -1) {
 					totals[halfIndex%2][1] += 1;
+					if (halfIndex%2 == 0){_this.shadowRoot.querySelector('#away-extra').textContent += 'HR: '+linescoreRaw[i][13];}
+					else if (halfIndex%2 == 1){_this.shadowRoot.querySelector('#home-extra').textContent += 'HR: '+linescoreRaw[i][13];}
 				  }
 				  else if (linescoreRaw[i][13] && linescoreRaw[i][13].indexOf('error') > -1) {
 					totals[1 - (halfIndex%2)][2] += 1;
@@ -146,7 +148,7 @@ class BoxScore extends HTMLElement {
 	  
 	  
 			var th = document.createElement('th');
-			th.textContent = 'Team';
+			th.textContent = '';
 			thead.appendChild(th);
 			var td = document.createElement('td');
 			td.textContent = linescorearray[0][0];
