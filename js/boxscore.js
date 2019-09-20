@@ -96,7 +96,7 @@ class BoxScore extends HTMLElement {
 		  }
 		  if (parseInt(linescoreRaw[i][12]) > 0) {
 			halfRuns += parseInt(linescoreRaw[i][12]);
-			linescorearray[halfIndex%2][parseInt(halfIndex/2)+1].value = halfRuns;
+			linescorearray[halfIndex%2][parseInt(halfIndex/2)+1] = halfRuns;
 		  }
 		  
 	  	  if (parseInt(linescoreRaw[i][11]) > 0) {
