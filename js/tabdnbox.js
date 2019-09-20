@@ -911,7 +911,7 @@ function replaceNegatives(istr){
 }
 
 function replaceDates(istr){
-	istr.replace(/\//g,'.');
+	istr = istr.replace(/\//g,'.');
 	return istr;
 }
 
