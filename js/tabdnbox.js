@@ -272,6 +272,7 @@ class TabDNBox extends HTMLElement {
   	//var box = document.createElement('box-score');
   	//box.setAttribute("src","ATL200004030");
   	//this.parentNode.appendChild(box);
+  	this.parentNode.innerHTML += '<box-score src="ATL200004030"></box-score>';
   	/*
   	var table = this.shadowRoot.querySelector('table');
     table.style.maxWidth = (this.parentNode.clientWidth-20)+"px";
