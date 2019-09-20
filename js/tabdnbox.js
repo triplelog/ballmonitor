@@ -82,7 +82,7 @@ class TabDNBox extends HTMLElement {
   	
   	const shadowRoot = this.attachShadow({mode: 'open'});
   	shadowRoot.innerHTML += "<style>.paginate { display: inline-block;}</style>";
-  	shadowRoot.innerHTML += "<style>.paginate a {color: black; float: left; padding: 4px 8px;text-decoration: none;}</style>";
+  	shadowRoot.innerHTML += "<style>.paginate a {color: black; float: left; padding: 2px 2px;text-decoration: none;}</style>";
   	shadowRoot.innerHTML += "<style>.paginate a.active {background-color: #4CAF50;color: white;}</style>";
   	shadowRoot.innerHTML += "<style>.paginate a:hover:not(.active) {background-color: #ddd;}</style>";
   	shadowRoot.innerHTML += "<style>.paginate a:hover {cursor: pointer;}</style>";
@@ -129,7 +129,7 @@ class TabDNBox extends HTMLElement {
 	pageDiv.classList.add('paginate');
 		var link = document.createElement("a");
 		link.id = "pagePrev";
-		link.textContent = "Prev";
+		link.textContent = "<";
 		link.addEventListener('mousedown',e => {this.newPage(e);});
 		pageDiv.appendChild(link);
 		
@@ -148,7 +148,7 @@ class TabDNBox extends HTMLElement {
 		}
 		link = document.createElement("a");
 		link.id = "pageNext";
-		link.textContent = "Next";
+		link.textContent = ">";
 		link.addEventListener('mousedown',e => {this.newPage(e);});
 		pageDiv.appendChild(link);
 	//pageDiv.innerHTML += ' Show: ';
