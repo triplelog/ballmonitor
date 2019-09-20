@@ -82,7 +82,7 @@ class TabDNBox extends HTMLElement {
   	
   	const shadowRoot = this.attachShadow({mode: 'open'});
   	shadowRoot.innerHTML += "<style>.paginate { display: inline-block;}</style>";
-  	shadowRoot.innerHTML += "<style>.paginate a {color: black; float: left; padding: 2px 2px;text-decoration: none;}</style>";
+  	shadowRoot.innerHTML += "<style>.paginate a {color: black; float: left; padding: 2px 4px;text-decoration: none;}</style>";
   	shadowRoot.innerHTML += "<style>.paginate a.active {background-color: #4CAF50;color: white;}</style>";
   	shadowRoot.innerHTML += "<style>.paginate a:hover:not(.active) {background-color: #ddd;}</style>";
   	shadowRoot.innerHTML += "<style>.paginate a:hover {cursor: pointer;}</style>";
@@ -491,14 +491,14 @@ class TabDNBox extends HTMLElement {
 		var diff = this.endRow - this.startRow;
 		this.endRow += diff;
 		this.startRow += diff;
-		cpage++;
+		cpage = this.startRow / diff + 1;
 	}
 	else if (pageId == 'Prev') {
 		var diff = this.endRow - this.startRow;
 		if (this.startRow >= diff){
 			this.endRow -= diff;
 			this.startRow -= diff;
-			cpage--;
+			cpage = this.startRow / diff + 1;
 		}
 		else {
 			this.startRow = 0;
