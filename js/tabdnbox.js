@@ -270,7 +270,7 @@ class TabDNBox extends HTMLElement {
   
   addData(retmess) {
   	var box = document.createElement('box-score');
-  	box.src = "ATL200004030";
+  	box.setAttribute("src","ATL200004030");
   	this.parentNode.appendChild(box);
   	/*
   	var table = this.shadowRoot.querySelector('table');
