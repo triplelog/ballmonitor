@@ -39,15 +39,10 @@ class PlayerStats extends HTMLElement {
   	var tbodya = offboxa.querySelector('tbody');
   	theada.innerHTML = '';
   	tbodya.innerHTML = '';
-  	theadh.innerHTML = '';
-  	tbodyh.innerHTML = '';
   	['Name','PA','AB','H','BB','R','RBI','K'].forEach(x => {
   		var th = document.createElement('th');
 		th.textContent = x;
 		theada.appendChild(th);
-		th = document.createElement('th');
-		th.textContent = x;
-		theadh.appendChild(th);
 	});
 	console.log(batterarray);
 	
@@ -63,6 +58,7 @@ class PlayerStats extends HTMLElement {
 			td.textContent = batterarray[i][x];
 			tr.appendChild(td);
 		});
+		tbodya.appendChild(tr);
 
 	}
   }
