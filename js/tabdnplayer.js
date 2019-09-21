@@ -70,8 +70,6 @@ class TabDNBox extends HTMLElement {
 				_this.usecache = false;
 				var jsonmessage = {'command':'load'};
 				_this.ws.send(JSON.stringify(jsonmessage));
-				var jsonmessage = { command: 'filter', formula: 'c28_4/1/2000_c28_9/1/2000@##>##<&' };
-				_this.ws.send(JSON.stringify(jsonmessage));
 				
 			}
 		}
@@ -272,19 +270,21 @@ class TabDNBox extends HTMLElement {
   }
   
   addData(retmess) {
-  	var boxes = document.querySelectorAll('box-score');
+  	var boxes = document.querySelectorAll('player-stats');
   	var i = 0;
   	for (var ii=0;ii*2 + 1<retmess[0].length;ii++) {
   		this.colInfo[parseInt(retmess[0][ii*2 + 1])]=retmess[0][ii*2];
   	}
   	for (var ii=1;ii<retmess.length;ii++) {
   		if (boxes.length > ii - 1){
-  			boxes[ii-1].setAttribute("src",retmess[ii][1]);
+  			//boxes[ii-1].setAttribute("src",retmess[ii][1]);
+  			boxes[ii-1].setAttribute("src","aaroh101battingstats");
   			boxes[ii-1].chgsrc();
   		}
   		else {
-  			var box = document.createElement('box-score');
-  			box.setAttribute("src",retmess[ii][1]);
+  			var box = document.createElement('player-stats');
+  			//box.setAttribute("src",retmess[ii][1]);
+  			box.setAttribute("src","aaroh101battingstats");
   			box.chgsrc();
   			this.parentNode.appendChild(box);
   		}

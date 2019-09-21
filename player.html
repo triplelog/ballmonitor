@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Ball Monitor</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css">
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>-->
+
+    
+
+</head>
+
+<body>
+	<template id="player">
+		<style>
+			#stats-location {
+				flex: 1;
+				padding: 5px;
+				font-size: .8rem;
+				line-height: .8rem;
+				margin-left:auto; 
+				margin-right:auto;
+			}
+			#awayoff-location{
+				border-style: solid; border-width: 0px 1px 0px 0px;
+				
+			}
+			#away-info, #home-info {
+				flex: 1 0 25%;
+			}
+			#linescore-location {
+				flex: 2 0 50%;
+			}
+			#linescore-location table{
+				margin-left:auto; 
+				margin-right:auto;
+			}
+			#container {
+				width: 500px;
+			}
+			.tr1 td {border-style: dashed; border-width: 1px 0px 0px 0px;}
+			.tr2 td {border-style: dashed; border-width: 0px 0px 0px 0px;}
+		</style>
+		<div id="container">
+		  <div style="display: flex;">
+			<div id="away-info">
+				Away team name
+			</div>
+			<div id="linescore-location">
+				<table>
+					<thead>
+						<tr>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+						</tr>
+						<tr>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<div id="home-info">
+				Home team name
+			</div>
+		  </div>
+
+		  <div style="display: flex;">
+			<div id="stats-location">
+				<table>
+					<thead>
+						<tr>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+					<tfoot>
+						<tr>
+						</tr>
+					</tfoot>
+				</table>
+				<hr>
+				<div id="regular-extra">
+				</div>
+			</div>
+		  </div>
+
+		  <div style="display: flex;">
+			<div id="poststats-location">
+				<table>
+					<thead>
+						<tr>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+					<tfoot>
+						<tr>
+						</tr>
+					</tfoot>
+				</table>
+				<hr>
+				<div id="post-extra">
+				</div>
+			</div>
+		  </div>
+		</div>
+	</template>
+	<header style="border: 0px solid black; background: rgb(255,255,255); background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(45,253,123,0.8757878151260504) 100%);">
+	  <a href="index.html" class="logo"><img src="img/logo.png" style="max-width: 150px; vertical-align:middle;"/></a>
+	  <a href="player.html" class="button" style="background: rgba(245, 238, 236,0);">Players</a>
+	  <a href="team.html" class="button" style="background: rgba(245, 238, 236,0);">Teams</a>
+	  <a href="league.html" class="button" style="background: rgba(245, 238, 236,0);">Leagues</a>
+	  <a href="boxscore.html" class="button" style="background: rgba(245, 238, 236,0);">Box Scores</a>
+	</header>
+	<div id="content">
+		<tabdn-player style="display: inline-block;" src="xl09p" autoload="true"></tabdn-player>
+		<player-stats></player-stats>
+	</div>
+			
+	  <script src="js/papaparse.min.js"></script>
+	  <script src="js/player.js"></script>
+	  <script src="js/tabdnplayer.js"></script>
+	  
+
+
+</body>
+
+</html>
