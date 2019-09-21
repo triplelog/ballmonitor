@@ -1,4 +1,4 @@
-class BoxScore extends HTMLElement {
+class PlayerStats extends HTMLElement {
   
 
   constructor() {
@@ -31,10 +31,6 @@ class BoxScore extends HTMLElement {
         }
      }
     
-     
-     
-     
-	
   }
   
   stats(statarray) {
@@ -75,6 +71,6 @@ class BoxScore extends HTMLElement {
   
 }
 
-customElements.define('box-score', BoxScore);
+customElements.define('player-stats', PlayerStats);
 
 
