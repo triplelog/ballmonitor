@@ -1,4 +1,4 @@
-class TabDNBox extends HTMLElement {
+class TabDNPlayer extends HTMLElement {
   
 
   constructor() {
@@ -790,7 +790,7 @@ class TabDNBox extends HTMLElement {
   
 }
 
-customElements.define('tabdn-box', TabDNBox);
+customElements.define('tabdn-player', TabDNPlayer);
 
 function after10(lks,ntel) {
 	ntel.moveHeader(lks);
