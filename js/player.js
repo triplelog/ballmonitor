@@ -19,8 +19,8 @@ class BoxScore extends HTMLElement {
   chgsrc() {
   	var _this = this;
     this.playerid = this.getAttribute('src');
-    if (this.gameid == null) {return 0;}
-  	var url = 'player/'+this.playerid.substring(0,3)+'.csv';
+    if (this.playerid == null) {return 0;}
+  	var url = 'player/'+this.playerid+'.csv';
 	var jsonFile = new XMLHttpRequest();
     jsonFile.open("GET",url,true);
     jsonFile.send();
