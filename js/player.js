@@ -44,18 +44,18 @@ class PlayerStats extends HTMLElement {
 		th.textContent = x;
 		theada.appendChild(th);
 	});
-	console.log(batterarray);
+	console.log(statarray);
 	
 	var currentOrder = 0;
 	var currentClass = 1;
-	for (var i=1;i<batterarray.length;i++){
-		if (batterarray[i].length < 10){continue;}
+	for (var i=1;i<statarray.length;i++){
+		if (statarray[i].length < 10){continue;}
 		var tr = document.createElement('tr');
 		tr.classList.add("tr1");
 		
 		[0,4,5,6,7,8,9,10].forEach( x => {
 			var td = document.createElement('td');
-			td.textContent = batterarray[i][x];
+			td.textContent = statarray[i][x];
 			tr.appendChild(td);
 		});
 		tbodya.appendChild(tr);
