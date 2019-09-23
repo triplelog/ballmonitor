@@ -55,10 +55,7 @@
 		</style>
 		<div id="container">
 		  <div style="display: flex;">
-			<div id="away-info">
-				Away team name
-			</div>
-			<div id="linescore-location">
+			<div id="info-location">
 				<table>
 					<thead>
 						<tr>
@@ -71,9 +68,6 @@
 						</tr>
 					</tbody>
 				</table>
-			</div>
-			<div id="home-info">
-				Home team name
 			</div>
 		  </div>
 
@@ -127,7 +121,9 @@
 	</header>
 	<div id="content">
 		<tabdn-player style="display: inline-block;" src="xl09p" autoload="true"></tabdn-player>
-		<player-stats></player-stats>
+		<player-stats>
+			<tabdn-sort column="17" />
+		</player-stats>
 	</div>
 			
 	  <script src="js/papaparse.min.js"></script>
