@@ -36,7 +36,7 @@ class BoxScore extends HTMLElement {
     jsonFile2.open("GET",url2,true);
     jsonFile2.send();
 	jsonFile2.onloadend = function() {
-		if(jsonFile2.status == 404) 
+		if(jsonFile2.status == 404) {
 			console.log("hi");
 		}
 	}
