@@ -98,7 +98,6 @@ class BoxScore extends HTMLElement {
 			
 			var pbpLength = linescoreRaw.length;
 			  var linescorearray = [[awayteam],[hometeam]];
-			  console.log(linescorearray);
 			  var currentTeam = '1';
 			  var halfRuns = 0;
 			  var halfIndex = -1;
@@ -216,7 +215,6 @@ class BoxScore extends HTMLElement {
 		th.textContent = x;
 		theadh.appendChild(th);
 	});
-	console.log(batterarray);
 	
 	var currentOrder = 0;
 	var currentClass = 1;
@@ -270,7 +268,6 @@ class BoxScore extends HTMLElement {
 		th.textContent = x;
 		theadh.appendChild(th);
 	});
-	console.log(pitcherarray);
 	
 	var currentOrder = 0;
 	var currentClass = 1;
