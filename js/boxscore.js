@@ -11,7 +11,6 @@ class BoxScore extends HTMLElement {
     let templateContent = template.content;
     
     const shadowRoot = this.attachShadow({mode: 'open'}).appendChild(templateContent.cloneNode(true));
-    this.style.display = 'none';
     this.chgsrc();
 
 	
