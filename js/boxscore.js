@@ -9,7 +9,7 @@ class BoxScore extends HTMLElement {
 	this.chgsrc();
 	let template = document.getElementById('boxscore');
     let templateContent = template.content;
-
+    
     const shadowRoot = this.attachShadow({mode: 'open'}).appendChild(templateContent.cloneNode(true));
 
 	
@@ -19,7 +19,8 @@ class BoxScore extends HTMLElement {
   chgsrc() {
   	var _this = this;
     this.gameid = this.getAttribute('src');
-    if (this.gameid == null) {return 0;}
+    if (this.gameid == null) {this.style.display = 'none'; return 0;}
+    else {this.style.display = 'inline-block';}
   	var url = 'box/2000/2000'+this.gameid.substring(0,3)+'/'+this.gameid+'batterbox.csv';
 	var jsonFile = new XMLHttpRequest();
     jsonFile.open("GET",url,true);
