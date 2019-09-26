@@ -19,7 +19,6 @@ class PlayerStats extends HTMLElement {
   chgsrc() {
   	var _this = this;
     this.playerid = this.getAttribute('src');
-    console.log(this);
     if (this.playerid == null) {return 0;}
   	var url = 'player/'+this.playerid+'.csv';
 	var jsonFile = new XMLHttpRequest();
