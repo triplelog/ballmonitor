@@ -27,8 +27,12 @@ class BoxScore extends HTMLElement {
     jsonFile.send();
 
     jsonFile.onreadystatechange = function() {
-        if (jsonFile.readyState== 4 && jsonFile.status == 200) {
+        if(jsonFile4.status == 404) {
+			_this.style.display = 'none';
+		}
+		else if (jsonFile.status == 200) {
             _this.offbox(Papa.parse(jsonFile.responseText).data);
+            _this.style.display = 'inline-block';
         }
      }
     var url2 = 'box/2000/2000'+this.gameid.substring(0,3)+'/'+this.gameid+'pitcherbox.csv';
@@ -52,8 +56,12 @@ class BoxScore extends HTMLElement {
     jsonFile4.send();
 
     jsonFile4.onreadystatechange = function() {
-        if (jsonFile4.readyState== 4 && jsonFile4.status == 200) {
+        if(jsonFile4.status == 404) {
+			_this.style.display = 'none';
+		}
+		else if (jsonFile4.status == 200) {
             _this.linescore(Papa.parse(jsonFile4.responseText).data);
+            _this.style.display = 'inline-block';
         }
      }
      
