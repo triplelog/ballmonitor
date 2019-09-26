@@ -41,7 +41,7 @@ class BoxScore extends HTMLElement {
 		}
 		else if (jsonFile2.status == 200) {
             _this.pitchbox(Papa.parse(jsonFile2.responseText).data);
-            this.style.display = 'inline-block';
+            _this.style.display = 'inline-block';
         }
 	}
 
