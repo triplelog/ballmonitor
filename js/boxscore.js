@@ -38,12 +38,11 @@ class BoxScore extends HTMLElement {
 		if(jsonFile2.status == 404) {
 			console.log("hi");
 		}
-	}
-    jsonFile2.onreadystatechange = function() {
-        if (jsonFile2.readyState== 4 && jsonFile2.status == 200) {
+		else if (jsonFile2.status == 200) {
             _this.pitchbox(Papa.parse(jsonFile2.responseText).data);
         }
-     }
+	}
+
     
     var url4 = 'box/2000/2000'+this.gameid.substring(0,3)+'/'+this.gameid+'.txt';
 	var jsonFile4 = new XMLHttpRequest();

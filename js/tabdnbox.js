@@ -106,7 +106,7 @@ class TabDNBox extends HTMLElement {
   	table.style.overflowX = "auto";
   	table.style.maxHeight = "100vh";
   	table.style.margin = "0px";
-  	table.style.border = "1px dashed blue";
+  	//table.style.border = "1px dashed blue";
   	table.style.display = "block";
   	table.addEventListener("scroll",e => {this.scrollTable(e);});
   	//this.appendChild(table);
