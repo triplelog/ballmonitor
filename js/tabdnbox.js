@@ -51,7 +51,7 @@ class TabDN extends HTMLElement {
 				_this.addData(JSON.parse(evt.data));
 				var d = new Date();
 				var n = d.getTime();
-				console.log(n);
+				console.log('real data:',n);
 			}
 			else{
 				_this.retdata = JSON.parse(evt.data);
@@ -72,9 +72,6 @@ class TabDN extends HTMLElement {
 				_this.usecache = false;
 				var jsonmessage = {'command':'load'};
 				_this.ws.send(JSON.stringify(jsonmessage));
-				var d = new Date();
-				var n = d.getTime();
-				console.log('filter',n);
 				var jsonmessage = { command: 'filter', formula: 'c28_4/1/2000_c28_9/1/2000@##>##<&' };
 				_this.ws.send(JSON.stringify(jsonmessage));
 				
@@ -393,6 +390,9 @@ class TabDN extends HTMLElement {
   newPage(e) {	
 	var pageId = e.target.id.substring(4,);
 	var cpage = 1;
+	var d = new Date();
+	var n = d.getTime();
+	console.log('new page:',n);
 
 	if (pageId == 'Next'){
 		var diff = this.endRow - this.startRow;
