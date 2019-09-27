@@ -346,10 +346,10 @@ class TabDNBox extends TabDN {
 			var filterButton = document.createElement("button");
 			filterButton.classList.add('filterButton');
 			filterButton.textContent = 'Filter';
-			filterButton.addEventListener("mouseover", e => {this.newFilter(e,0);});
-			filterButton.addEventListener("mousedown", e => {this.newFilter(e,1);});
-			filterButton.addEventListener("mouseout", e => {this.newFilter(e,2);});
-			filterButton.addEventListener("mouseup", e => {this.newFilter(e,3);});
+			filterButton.addEventListener("mouseover", e => {this.boxFilter(e,0);});
+			filterButton.addEventListener("mousedown", e => {this.boxFilter(e,1);});
+			filterButton.addEventListener("mouseout", e => {this.boxFilter(e,2);});
+			filterButton.addEventListener("mouseup", e => {this.boxFilter(e,3);});
 			filterDiv.appendChild(filterButton);
 		filterDiv.style.display = 'inline-block';
 		filterDiv.id = "filterDiv";
@@ -376,7 +376,47 @@ class TabDNBox extends TabDN {
 
   	}
   	
-  	
+  	boxFilter(e,x) {
+		//if (this.currentTable != 'main'){return 0;}
+		let rawFormula = "(DATE>4/1/2000 AND DATE<9/1/2000) AND (" + this.shadowRoot.querySelector("#filterFormula").value+")";
+		if (rawFormula == '' || rawFormula == this.currentFilter){return 0;}
+		var filterFormula;
+		try {
+			filterFormula = postfixify(rawFormula,this.colInfo);
+		}
+		catch (e) {
+			return 0;
+		}
+	
+		if (this.usecache){
+			this.usecache = false;
+			var jsonmessage = {'command':'load'};
+			this.ws.send(JSON.stringify(jsonmessage));
+		}
+	
+		if (x == 0){//mouseover Filter button
+			var jsonmessage = {'command':'filter','formula':filterFormula};
+			this.ws.send(JSON.stringify(jsonmessage));
+			this.showit = false;
+			this.foundit = false;
+		}
+		else if (x == 1){//mousedown
+		
+		}
+		else if (x == 3){//mouseup
+			if (this.foundit){
+				this.addData(this.retdata);
+				this.showit = true;
+			}
+			else {
+				this.showit = true;
+				this.foundit = true;
+			}
+			this.shadowRoot.querySelector("#filterFormula").value = "";
+			this.currentFilter = rawFormula;
+		}
+
+	}
 	
 	
 }
