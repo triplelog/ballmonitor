@@ -21,9 +21,6 @@ class BoxScore extends HTMLElement {
   	var _this = this;
     this.gameid = this.getAttribute('src');
     if (this.gameid == null) {return 0;}
-    var d = new Date();
-	var n = d.getTime();
-	console.log('chgsrc start:',this.gameid, ",",n);
   	var url = 'box/2000/2000'+this.gameid.substring(0,3)+'/'+this.gameid+'batterbox.csv';
 	var jsonFile = new XMLHttpRequest();
     jsonFile.open("GET",url,true);
@@ -42,22 +39,13 @@ class BoxScore extends HTMLElement {
 	var jsonFile2 = new XMLHttpRequest();
     jsonFile2.open("GET",url2,true);
     jsonFile2.send();
-    var d = new Date();
-	var n = d.getTime();
-	console.log('chgsrc sent pb:',this.gameid, ",",n);
 	jsonFile2.onloadend = function() {
 		if(jsonFile2.status == 404) {
 			_this.style.display = 'none';
 		}
 		else if (jsonFile2.status == 200) {
-			var d = new Date();
-			var n = d.getTime();
-			console.log('got pb:',this.gameid, ",",n);
             _this.pitchbox(Papa.parse(jsonFile2.responseText).data);
             _this.style.display = 'inline-block';
-            var d = new Date();
-			var n = d.getTime();
-			console.log('display pb:',this.gameid, ",",n);
         }
 	}
 
