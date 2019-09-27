@@ -820,12 +820,17 @@ function replaceDates(istr){
 	for (var i=0;i<istr.length-3;i++) {
 		if (istr[i] == '/'){
 			if (istr[i+3]=='/'){
-				if (parseInt(istr.substring(i+1,i+3)) > 0 && parseInt(istr.substring(i+1,i+3)) < 33 && parseInt(istr.substring(i+1,i+3)).toString() == istr.substring(i+1,i+3)){istr[i]='.'; istr[i+3]='.';}
+				if (parseInt(istr.substring(i+1,i+3)) > 0 && parseInt(istr.substring(i+1,i+3)) < 33 && parseInt(istr.substring(i+1,i+3)).toString() == istr.substring(i+1,i+3)){
+					istr[i]='.'; istr[i+3]='.';
+				}
 			}
 			else if (istr[i+2]=='/'){
-				if (parseInt(istr.substring(i+1,i+2)).toString() == istr.substring(i+1,i+2)){istr[i]='.'; istr[i+2]='.';}
+				console.log(i, istr.substring(i+1,i+2), parseInt(istr.substring(i+1,i+2)));
+				if (parseInt(istr.substring(i+1,i+2)).toString() == istr.substring(i+1,i+2)){
+					istr[i]='.'; istr[i+2]='.';
+				}
 			}
-			console.log(i, istr);
+			
 		}
 		console.log(istr);
 	}
