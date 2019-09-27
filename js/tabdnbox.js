@@ -686,11 +686,17 @@ class TabDNBox extends TabDN {
 	}
 	
 	addData(retmess) {
+		var d = new Date();
+		var n = d.getTime();
+		console.log('adding:',n);
 		var boxes = document.querySelectorAll('box-score');
 		var i = 0;
 		for (var ii=0;ii*2 + 1<retmess[0].length;ii++) {
 			this.colInfo[parseInt(retmess[0][ii*2 + 1])]=retmess[0][ii*2];
 		}
+		var d = new Date();
+		var n = d.getTime();
+		console.log('adding some:',n);
 		for (var ii=1;ii<retmess.length;ii++) {
 			if (boxes.length > ii - 1){
 				boxes[ii-1].setAttribute("src",retmess[ii][2]);
@@ -703,6 +709,9 @@ class TabDNBox extends TabDN {
 				this.parentNode.appendChild(box);
 			}
 		}
+		var d = new Date();
+		var n = d.getTime();
+		console.log('added:',n);
 
   	}
 	
