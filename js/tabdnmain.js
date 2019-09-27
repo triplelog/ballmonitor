@@ -7,9 +7,7 @@ class TabDN extends HTMLElement {
 	
 	var _this = this;
 	this.colInfo = {};
-    this.createTable();
-    this.addPaginate();
-    //this.addButtons();
+    
     this.startRow = 0;
     this.endRow = 10;
     this.usecache = true;

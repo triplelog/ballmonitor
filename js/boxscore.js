@@ -314,8 +314,12 @@ class TabDNBox extends TabDN {
 		super();    
 	
 		var _this = this;
+		this.createTable();
+    	//this.addPaginate();
+    	//this.addButtons();
 		this.addSortBox();
 		this.addFilterBox();
+		
 	}
 	
 	addSortBox() {
