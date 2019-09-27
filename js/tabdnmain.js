@@ -821,19 +821,16 @@ function replaceDates(istr){
 		if (istr[i] == '/'){
 			if (istr[i+3]=='/'){
 				if (parseInt(istr.substring(i+1,i+3)) > 0 && parseInt(istr.substring(i+1,i+3)) < 33 && parseInt(istr.substring(i+1,i+3)).toString() == istr.substring(i+1,i+3)){
-					istr[i]='.'; istr[i+3]='.';
+					istr = istr.substring(0,i) + "." + istr.substring(i+1,i+3) + "." + istr.substring(i+4);
 				}
 			}
 			else if (istr[i+2]=='/'){
 				if (parseInt(istr.substring(i+1,i+2)).toString() == istr.substring(i+1,i+2)){
-					istr[i]='.'; istr[i+2]='.';
 					istr = istr.substring(0,i) + "." + istr.substring(i+1,i+2) + "." + istr.substring(i+3);
-					console.log(istr);
 				}
 			}
 			
 		}
-		console.log(istr);
 	}
 	return istr;
 }
@@ -855,13 +852,9 @@ function postfixify(input_str,colInfo) {
 	input_str = input_str.replace(/--/g,'+');
 	//input_str = replaceDecimals(input_str);
 	input_str = replaceNegatives(input_str);
-	console.log(input_str);
 	input_str = replaceDates(input_str);
-	console.log(input_str);
 	var twoparts = makePost(input_str);
 	//Convert column names
-	console.log(twoparts[0]);
-	console.log(twoparts[1]);
 	var firstpart = twoparts[0].split(",");
 	for (var i=0;i<firstpart.length;i++){
 		if (parseInt(firstpart[i]).toString() != firstpart[i]){
