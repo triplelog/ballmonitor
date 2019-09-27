@@ -26,7 +26,7 @@ class BoxScore extends HTMLElement {
     jsonFile.open("GET",url,true);
     jsonFile.send();
 
-    jsonFile.onreadystatechange = function() {
+    jsonFile.onloadend = function() {
         if(jsonFile4.status == 404) {
 			_this.style.display = 'none';
 		}
@@ -55,7 +55,7 @@ class BoxScore extends HTMLElement {
     jsonFile4.open("GET",url4,true);
     jsonFile4.send();
 
-    jsonFile4.onreadystatechange = function() {
+    jsonFile4.onloadend = function() {
         if(jsonFile4.status == 404) {
 			_this.style.display = 'none';
 		}
