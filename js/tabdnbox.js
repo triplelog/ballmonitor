@@ -279,7 +279,6 @@ class TabDNBox extends HTMLElement {
   	}
   	for (var ii=1;ii<retmess.length;ii++) {
   		if (boxes.length > ii - 1){
-  			console.log(retmess[1][0],retmess[ii][2]);
   			boxes[ii-1].setAttribute("src",retmess[ii][2]);
   			boxes[ii-1].chgsrc();
   		}
