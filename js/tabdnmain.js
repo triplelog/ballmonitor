@@ -847,7 +847,9 @@ function postfixify(input_str,colInfo) {
 	input_str = input_str.replace(/--/g,'+');
 	//input_str = replaceDecimals(input_str);
 	input_str = replaceNegatives(input_str);
+	console.log(input_str);
 	input_str = replaceDates(input_str);
+	console.log(input_str);
 	var twoparts = makePost(input_str);
 	//Convert column names
 	console.log(twoparts[0]);
