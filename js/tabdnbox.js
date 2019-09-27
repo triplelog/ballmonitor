@@ -792,6 +792,16 @@ class TabDN extends HTMLElement {
   
 }
 
+class TabDNBox extends TabDN {
+
+	constructor() {
+    super();    
+    
+	
+	var _this = this;
+	}
+}
+
 customElements.define('tabdn-box', TabDNBox);
 
 function after10(lks,ntel) {
@@ -879,15 +889,7 @@ function makePost(infixexpr) {
 
 }
 
-class TabDNBox extends TabDN {
 
-	constructor() {
-    super();    
-    
-	
-	var _this = this;
-	}
-}
 
 function replaceDecimals(istr){
 	dindex = istr.indexOf('.');
