@@ -69,4 +69,39 @@ class PlayerStats extends HTMLElement {
 
 customElements.define('player-stats', PlayerStats);
 
+class TabDNPlayer extends TabDN {
+
+	constructor() {
+		super();    
+	
+		var _this = this;
+	}
+	
+	 addData(retmess) {
+		var boxes = document.querySelectorAll('player-stats');
+		var i = 0;
+		for (var ii=0;ii*2 + 1<retmess[0].length;ii++) {
+			this.colInfo[parseInt(retmess[0][ii*2 + 1])]=retmess[0][ii*2];
+		}
+		for (var ii=1;ii<retmess.length;ii++) {
+			if (boxes.length > ii - 1){
+				//boxes[ii-1].setAttribute("src",retmess[ii][1]);
+				boxes[ii-1].setAttribute("src","aaroh101battingstats");
+				boxes[ii-1].chgsrc();
+			}
+			else {
+				var box = document.createElement('player-stats');
+				//box.setAttribute("src",retmess[ii][1]);
+				box.setAttribute("src","aaroh101battingstats");
+				box.chgsrc();
+				this.parentNode.appendChild(box);
+			}
+		}
+
+    }
+	
+	
+}
+
+customElements.define('tabdn-player', TabDNPlayer);
 
