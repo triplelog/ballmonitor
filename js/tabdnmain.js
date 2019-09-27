@@ -827,7 +827,9 @@ function replaceDates(istr){
 			else if (istr[i+2]=='/'){
 				console.log(i, istr.substring(i+1,i+2), parseInt(istr.substring(i+1,i+2)));
 				if (parseInt(istr.substring(i+1,i+2)).toString() == istr.substring(i+1,i+2)){
+					console.log(i);
 					istr[i]='.'; istr[i+2]='.';
+					console.log(istr, istr[i]);
 				}
 			}
 			
