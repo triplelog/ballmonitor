@@ -273,125 +273,7 @@ class TabDN extends HTMLElement {
 	this.shadowRoot.appendChild(opDiv);
   }
   
-  addData(retmess) {
-  	var boxes = document.querySelectorAll('box-score');
-  	var i = 0;
-  	for (var ii=0;ii*2 + 1<retmess[0].length;ii++) {
-  		this.colInfo[parseInt(retmess[0][ii*2 + 1])]=retmess[0][ii*2];
-  	}
-  	for (var ii=1;ii<retmess.length;ii++) {
-  		if (boxes.length > ii - 1){
-  			boxes[ii-1].setAttribute("src",retmess[ii][2]);
-  			boxes[ii-1].chgsrc();
-  		}
-  		else {
-  			var box = document.createElement('box-score');
-  			box.setAttribute("src",retmess[ii][2]);
-  			box.chgsrc();
-  			this.parentNode.appendChild(box);
-  		}
-  	}
-
-  	
-  	
-  	
-  	/*
-  	var table = this.shadowRoot.querySelector('table');
-    table.style.maxWidth = (this.parentNode.clientWidth-20)+"px";
-    table.style.maxHeight = (this.parentNode.clientHeight-40)+"px";
-    this.style.maxWidth = (this.parentNode.clientWidth-20)+"px";
-    this.style.maxHeight = (this.parentNode.clientHeight-1)+"px";
-	
-	if (retmess[0][0].substring(0,5)=="Pivot"){
-		this.currentTable = "pivot@" + retmess[0][0].substring(6,retmess[0][0].length-2);
-		retmess[0][0] = "Rk";
-	}
-	var thead = this.shadowRoot.querySelector('thead');
-	const headrow = thead.querySelector('tr');
-	const headers = headrow.querySelectorAll('th');
-	for (var ii=0;ii*2 + 1<Math.max(retmess[0].length,headers.length*2 + 1);ii++) {
-		if (ii*2 + 1 < retmess[0].length && ii < headers.length) {
-			headers[ii].querySelector('button').textContent = retmess[0][ii*2];
-			headers[ii].id = "cHeader"+retmess[0][ii*2 + 1];
-			headers[ii].style.display = 'table-cell';
-			this.colInfo[parseInt(retmess[0][ii*2 + 1])]=retmess[0][ii*2];
-		}
-		else if (ii < headers.length) {
-			headers[ii].style.display = 'none';
-		}
-		else if (ii*2 + 1 < retmess[0].length) {
-			var headerCell = document.createElement("th");
-			var newHeader = document.createElement("button");
-			newHeader.textContent = retmess[0][ii*2];
-			newHeader.style.display = 'inline-block';
-  			newHeader.style.height = '100%';
-  			newHeader.style.width = '100%';
-			newHeader.addEventListener('mouseover',e => {this.mousehead(e,0);});
-			newHeader.addEventListener('mousedown',e => {this.mousehead(e,1);});
-			newHeader.addEventListener('mouseout',e => {this.mousehead(e,2);});
-			newHeader.addEventListener('mouseup',e => {this.mousehead(e,3);});
-			newHeader.setAttribute("draggable","true");
-			newHeader.addEventListener('dragstart',e => {this.dragColumn(e,0);});
-			newHeader.addEventListener("dragover", e => {e.preventDefault();});
-  			newHeader.addEventListener("drop", e => {e.preventDefault(); this.dropColumn(e,1);});
-			headerCell.id = "cHeader"+retmess[0][ii*2 + 1];
-			headerCell.style.display = 'table-cell';
-			headerCell.classList.add("th-sm");
-			this.colInfo[parseInt(retmess[0][ii*2 + 1])]=retmess[0][ii*2];
-			headerCell.appendChild(newHeader);
-			headrow.appendChild(headerCell);
-		}
-		else {
-			break;
-		}
-	}
-	
-	var tbody = this.shadowRoot.querySelector('tbody');
-	var rows = tbody.querySelectorAll('tr');
-	for (var i=0;i<retmess.length-1;i++){
-		if (rows.length <= i) {
-			var newrow = document.createElement('tr');
-			newrow.addEventListener("dragover", e => {e.preventDefault();});
-  			newrow.addEventListener("drop", e => {e.preventDefault(); this.dropColumn(e,0);});
-			tbody.appendChild(newrow);
-		}
-	}
-	rows = tbody.querySelectorAll('tr');
-	for (var i=0;i<rows.length;i++){
-		if (retmess.length-1 <= i) {
-			rows[i].style.display = 'none';
-		}
-		else {
-			rows[i].style.display = 'table-row';
-		}
-	}
-	
-	for (var i=0;i<retmess.length-1;i++){
-
-		const results = rows[i].querySelectorAll('td');
-		for (var ii=0;ii<Math.max(retmess[i+1].length,results.length);ii++) {
-			if (ii < retmess[i+1].length && ii < results.length) {
-				results[ii].textContent = retmess[i+1][ii]; //add one because of header
-				results[ii].style.display = 'table-cell';
-			}
-			else if (ii < results.length) {
-				results[ii].style.display = 'none';
-			}
-			else if (ii < retmess[i+1].length) {
-				var newResult = document.createElement("td");
-				newResult.textContent = retmess[i+1][ii];
-				newResult.style.display = 'table-cell';
-				newResult.id = 'cell-'+i+'-'+ii;
-				newResult.addEventListener("click",e => {this.cellClick(e,0);});
-				rows[i].appendChild(newResult);
-			}
-			else {
-				break;
-			}
-		}
-	}
-	*/
-  }
+  
   
   addFoot(retmess) {
 	
@@ -795,11 +677,132 @@ class TabDN extends HTMLElement {
 class TabDNBox extends TabDN {
 
 	constructor() {
-    super();    
-    
+		super();    
 	
-	var _this = this;
+		var _this = this;
 	}
+	
+	addData(retmess) {
+		var boxes = document.querySelectorAll('box-score');
+		var i = 0;
+		for (var ii=0;ii*2 + 1<retmess[0].length;ii++) {
+			this.colInfo[parseInt(retmess[0][ii*2 + 1])]=retmess[0][ii*2];
+		}
+		for (var ii=1;ii<retmess.length;ii++) {
+			if (boxes.length > ii - 1){
+				boxes[ii-1].setAttribute("src",retmess[ii][2]);
+				boxes[ii-1].chgsrc();
+			}
+			else {
+				var box = document.createElement('box-score');
+				box.setAttribute("src",retmess[ii][2]);
+				box.chgsrc();
+				this.parentNode.appendChild(box);
+			}
+		}
+
+	
+	
+	
+		/*
+		var table = this.shadowRoot.querySelector('table');
+		table.style.maxWidth = (this.parentNode.clientWidth-20)+"px";
+		table.style.maxHeight = (this.parentNode.clientHeight-40)+"px";
+		this.style.maxWidth = (this.parentNode.clientWidth-20)+"px";
+		this.style.maxHeight = (this.parentNode.clientHeight-1)+"px";
+	
+		if (retmess[0][0].substring(0,5)=="Pivot"){
+			this.currentTable = "pivot@" + retmess[0][0].substring(6,retmess[0][0].length-2);
+			retmess[0][0] = "Rk";
+		}
+		var thead = this.shadowRoot.querySelector('thead');
+		const headrow = thead.querySelector('tr');
+		const headers = headrow.querySelectorAll('th');
+		for (var ii=0;ii*2 + 1<Math.max(retmess[0].length,headers.length*2 + 1);ii++) {
+			if (ii*2 + 1 < retmess[0].length && ii < headers.length) {
+				headers[ii].querySelector('button').textContent = retmess[0][ii*2];
+				headers[ii].id = "cHeader"+retmess[0][ii*2 + 1];
+				headers[ii].style.display = 'table-cell';
+				this.colInfo[parseInt(retmess[0][ii*2 + 1])]=retmess[0][ii*2];
+			}
+			else if (ii < headers.length) {
+				headers[ii].style.display = 'none';
+			}
+			else if (ii*2 + 1 < retmess[0].length) {
+				var headerCell = document.createElement("th");
+				var newHeader = document.createElement("button");
+				newHeader.textContent = retmess[0][ii*2];
+				newHeader.style.display = 'inline-block';
+				newHeader.style.height = '100%';
+				newHeader.style.width = '100%';
+				newHeader.addEventListener('mouseover',e => {this.mousehead(e,0);});
+				newHeader.addEventListener('mousedown',e => {this.mousehead(e,1);});
+				newHeader.addEventListener('mouseout',e => {this.mousehead(e,2);});
+				newHeader.addEventListener('mouseup',e => {this.mousehead(e,3);});
+				newHeader.setAttribute("draggable","true");
+				newHeader.addEventListener('dragstart',e => {this.dragColumn(e,0);});
+				newHeader.addEventListener("dragover", e => {e.preventDefault();});
+				newHeader.addEventListener("drop", e => {e.preventDefault(); this.dropColumn(e,1);});
+				headerCell.id = "cHeader"+retmess[0][ii*2 + 1];
+				headerCell.style.display = 'table-cell';
+				headerCell.classList.add("th-sm");
+				this.colInfo[parseInt(retmess[0][ii*2 + 1])]=retmess[0][ii*2];
+				headerCell.appendChild(newHeader);
+				headrow.appendChild(headerCell);
+			}
+			else {
+				break;
+			}
+		}
+	
+		var tbody = this.shadowRoot.querySelector('tbody');
+		var rows = tbody.querySelectorAll('tr');
+		for (var i=0;i<retmess.length-1;i++){
+			if (rows.length <= i) {
+				var newrow = document.createElement('tr');
+				newrow.addEventListener("dragover", e => {e.preventDefault();});
+				newrow.addEventListener("drop", e => {e.preventDefault(); this.dropColumn(e,0);});
+				tbody.appendChild(newrow);
+			}
+		}
+		rows = tbody.querySelectorAll('tr');
+		for (var i=0;i<rows.length;i++){
+			if (retmess.length-1 <= i) {
+				rows[i].style.display = 'none';
+			}
+			else {
+				rows[i].style.display = 'table-row';
+			}
+		}
+	
+		for (var i=0;i<retmess.length-1;i++){
+
+			const results = rows[i].querySelectorAll('td');
+			for (var ii=0;ii<Math.max(retmess[i+1].length,results.length);ii++) {
+				if (ii < retmess[i+1].length && ii < results.length) {
+					results[ii].textContent = retmess[i+1][ii]; //add one because of header
+					results[ii].style.display = 'table-cell';
+				}
+				else if (ii < results.length) {
+					results[ii].style.display = 'none';
+				}
+				else if (ii < retmess[i+1].length) {
+					var newResult = document.createElement("td");
+					newResult.textContent = retmess[i+1][ii];
+					newResult.style.display = 'table-cell';
+					newResult.id = 'cell-'+i+'-'+ii;
+					newResult.addEventListener("click",e => {this.cellClick(e,0);});
+					rows[i].appendChild(newResult);
+				}
+				else {
+					break;
+				}
+			}
+		}
+		*/
+  	}
+	
+	
 }
 
 customElements.define('tabdn-box', TabDNBox);
