@@ -1,4 +1,6 @@
-class TabDNBox extends HTMLElement {
+
+
+class TabDN extends HTMLElement {
   
 
   constructor() {
@@ -875,6 +877,16 @@ function makePost(infixexpr) {
 	intstr = intstr.substring(0,intstr.length-1)
 	return [intstr,expstr]
 
+}
+
+class TabDNBox extends TabDN {
+
+	constructor() {
+    super();    
+    
+	
+	var _this = this;
+	}
 }
 
 function replaceDecimals(istr){
