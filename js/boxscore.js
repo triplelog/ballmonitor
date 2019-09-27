@@ -381,13 +381,14 @@ class TabDNBox extends TabDN {
 		let rawFormula = "(DATE>4/1/2000 AND DATE<9/1/2000) AND (" + this.shadowRoot.querySelector("#filterFormula").value+")";
 		if (rawFormula == '' || rawFormula == this.currentFilter){return 0;}
 		var filterFormula;
+		console.log(rawFormula);
 		try {
 			filterFormula = postfixify(rawFormula,this.colInfo);
 		}
 		catch (e) {
 			return 0;
 		}
-	
+		console.log(filterFormula);
 		if (this.usecache){
 			this.usecache = false;
 			var jsonmessage = {'command':'load'};
