@@ -433,21 +433,12 @@ class TabDNBox extends TabDN {
 			boxes[1].setAttribute("psrc",this.boxscores[this.boxindex]);
 			boxes[1].chgsrc();
 		}
-		else if (n > 0 && n < this.boxscores.length){
-			this.boxindex = n;
+		else if (parseInt(n) > 0 && parseInt(n) < this.boxscores.length){
+			this.boxindex = parseInt(n);
 			var boxes = document.querySelectorAll('box-score');
 			boxes[0].setAttribute("src",this.boxscores[this.boxindex]);
 			boxes[0].setAttribute("nsrc",this.boxscores[this.boxindex+1]);
 			boxes[0].setAttribute("psrc",this.boxscores[this.boxindex-1]);
-			console.log(this.boxindex);
-			console.log(this.boxscores[this.boxindex]);
-			console.log(boxes[0].getAttribute("src"));
-			console.log(this.boxindex+1);
-			console.log(this.boxscores[this.boxindex+1]);
-			console.log(boxes[0].getAttribute("nsrc"));
-			console.log(this.boxindex-1);
-			console.log(this.boxscores[this.boxindex-1]);
-			console.log(boxes[0].getAttribute("psrc"));
 			boxes[0].chgsrc();
 			boxes[1].setAttribute("src",this.boxscores[this.boxindex+1]);
 			boxes[1].setAttribute("nsrc",this.boxscores[this.boxindex+2]);
