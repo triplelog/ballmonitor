@@ -311,7 +311,7 @@ class BoxScore extends HTMLElement {
 			td.textContent = batterarray[i][x];
 			tr.appendChild(td);
 		});
-		tr.addEventListener('click', e => {alert(e.target.parentNode.id);});
+		tr.addEventListener('click', e => {this.tippyHalf(e);});
 		
 		if (batterarray[i][1]==0) {
 			tr.id = 'offbox_A-'+i;
@@ -374,6 +374,13 @@ class BoxScore extends HTMLElement {
 			tbodyh.appendChild(tr);
 		}
 	}
+  }
+  
+  tippyHalf(e) {
+  	console.log(e.target.parentNode);
+  	tippy(e.target.parentNode, {
+	  content: 'Tooltip',
+	})
   }
   
 	
