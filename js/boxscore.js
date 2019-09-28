@@ -339,7 +339,7 @@ class TabDNBox extends TabDN {
 			sortButton.addEventListener("mouseover", e => {this.newSort(e,0);});
 			sortButton.addEventListener("mousedown", e => {this.newSort(e,1);});
 			sortButton.addEventListener("mouseout", e => {this.newSort(e,2);});
-			sortButton.addEventListener("mouseup", e => {this.nextBox();});
+			sortButton.addEventListener("mouseup", e => {this.newSort(e,3);});
 			sortDiv.appendChild(sortButton);
 		sortDiv.style.display = 'inline-block';
 		sortDiv.id = "sortDiv";
