@@ -320,6 +320,10 @@ class TabDNBox extends TabDN {
 		this.addSortBox();
 		this.addFilterBox();
 		
+		
+		
+		this.boxscores = [];
+		
 	}
 	
 	addSortBox() {
@@ -362,22 +366,17 @@ class TabDNBox extends TabDN {
 	addData(retmess) {
 		var boxes = document.querySelectorAll('box-score');
 		var i = 0;
+		this.boxscores = [];
 		for (var ii=0;ii*2 + 1<retmess[0].length;ii++) {
 			this.colInfo[parseInt(retmess[0][ii*2 + 1])]=retmess[0][ii*2];
 		}
 		for (var ii=1;ii<retmess.length;ii++) {
-			if (boxes.length > ii - 1){
-				boxes[ii-1].setAttribute("src",retmess[ii][2]);
-				boxes[ii-1].chgsrc();
-			}
-			else {
-				var box = document.createElement('box-score');
-				box.setAttribute("src",retmess[ii][2]);
-				box.chgsrc();
-				this.parentNode.appendChild(box);
-			}
+			this.boxscores.push(retmess[ii][2]);
 		}
-
+		boxes[0].setAttribute("src",this.boxscores[0]);
+		boxes[0].chgsrc();
+		boxes[1].setAttribute("src",this.boxscores[1]);
+		boxes[1].chgsrc();
   	}
   	
   	boxFilter(e,x) {
