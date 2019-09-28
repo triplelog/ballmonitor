@@ -252,7 +252,7 @@ class BoxScore extends HTMLElement {
 		td.textContent = linescorearray[0][i];
 		td.id = 'pbpHalf_A-'+i;
 		tippy(td, {
-		  content: playarray[0][i-1][0],
+		  content: playarray[0][i-1],
 		})
 		//td.addEventListener('click', e => {alert(e.target.id);});
 		row1.appendChild(td);
@@ -260,7 +260,7 @@ class BoxScore extends HTMLElement {
 		td.textContent = linescorearray[1][i];
 		td.id = 'pbpHalf_H-'+i;
 		tippy(td, {
-		  content: playarray[1][i-1][0],
+		  content: playarray[1][i-1],
 		})
 		//td.addEventListener('click', e => {alert(e.target.id);});
 		row2.appendChild(td);
