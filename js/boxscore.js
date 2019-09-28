@@ -21,7 +21,7 @@ class BoxScore extends HTMLElement {
   	var _this = this;
     this.gameid = this.getAttribute('src');
     if (this.gameid == null) {return 0;}
-    _this.style.display = 'none';
+    _this.style.opacity = 0;
     var returnedFiles = 0;
   	var url = 'box/2000/2000'+this.gameid.substring(0,3)+'/'+this.gameid+'batterbox.csv';
 	var jsonFile = new XMLHttpRequest();
@@ -30,12 +30,12 @@ class BoxScore extends HTMLElement {
 
     jsonFile.onloadend = function() {
         if(jsonFile4.status == 404) {
-			_this.style.display = 'none';
+			_this.style.opacity = 0;
 		}
 		else if (jsonFile.status == 200) {
             _this.offbox(Papa.parse(jsonFile.responseText).data);
             returnedFiles++;
-            if (returnedFiles == 3) {_this.style.display = 'inline-block';}
+            if (returnedFiles == 3) {_this.style.opacity = 1;}
         }
      }
     var url2 = 'box/2000/2000'+this.gameid.substring(0,3)+'/'+this.gameid+'pitcherbox.csv';
@@ -44,12 +44,12 @@ class BoxScore extends HTMLElement {
     jsonFile2.send();
 	jsonFile2.onloadend = function() {
 		if(jsonFile2.status == 404) {
-			_this.style.display = 'none';
+			_this.style.opacity = 0;
 		}
 		else if (jsonFile2.status == 200) {
             _this.pitchbox(Papa.parse(jsonFile2.responseText).data);
             returnedFiles++;
-            if (returnedFiles == 3) {_this.style.display = 'inline-block';}
+            if (returnedFiles == 3) {_this.style.opacity = 1;}
         }
 	}
 
@@ -61,12 +61,12 @@ class BoxScore extends HTMLElement {
 
     jsonFile4.onloadend = function() {
         if(jsonFile4.status == 404) {
-			_this.style.display = 'none';
+			_this.style.opacity = 0;
 		}
 		else if (jsonFile4.status == 200) {
             _this.linescore(Papa.parse(jsonFile4.responseText).data);
             returnedFiles++;
-            if (returnedFiles == 3) {_this.style.display = 'inline-block';}
+            if (returnedFiles == 3) {_this.style.opacity = 1;}
         }
      }
      
