@@ -472,12 +472,16 @@ class TabDNBox extends TabDN {
 		
 	}
 	prevBox() {
-		if (this.boxindex-2 >=0){
-			this.boxindex-=2;
+		if (this.boxindex-1 >=0){
+			this.boxindex--;
 			var boxes = document.querySelectorAll('box-score');
 			boxes[0].setAttribute("src",this.boxscores[this.boxindex]);
+			boxes[0].setAttribute("nsrc",this.boxscores[this.boxindex+1]);
+			boxes[0].setAttribute("psrc",this.boxscores[this.boxindex-1]);
 			boxes[0].chgsrc();
 			boxes[1].setAttribute("src",this.boxscores[this.boxindex+1]);
+			boxes[1].setAttribute("nsrc",this.boxscores[this.boxindex+2]);
+			boxes[1].setAttribute("psrc",this.boxscores[this.boxindex]);
 			boxes[1].chgsrc();
 		}
 	}
