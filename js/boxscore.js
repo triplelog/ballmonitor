@@ -131,6 +131,7 @@ class BoxScore extends HTMLElement {
 	 }
   }
   loadinfo(gameid,todisplay=false){
+  	var _this = this;
   	var url = 'box/2000/2000'+gameid.substring(0,3)+'/'+gameid+'.txt';
 	var jsonFile3 = new XMLHttpRequest();
 	jsonFile3.open("GET",url,true);
@@ -152,6 +153,7 @@ class BoxScore extends HTMLElement {
 	 }
   }
   loadplays(gameid,todisplay=false){
+  	var _this = this;
   	var url = 'box/2000/2000'+gameid.substring(0,3)+'/'+gameid+'plays.csv';
 	var jsonFile4 = new XMLHttpRequest();
 	jsonFile4.open("GET",url,true);
