@@ -33,18 +33,21 @@ class BoxScore extends HTMLElement {
     this.style.opacity = 0;
     if (!dataBoxes.hasOwnProperty(this.dataFiles.current.id)){
     	dataBoxes[this.dataFiles.current.id]={};
+    }
+    if (!dataBoxes[this.dataFiles.current.id].hasOwnProperty('batters')){
     	this.loadbatters(this.dataFiles.current.id,true);
+    }
+    else{_this.offbox(dataBoxes[this.dataFiles.current.id].batters);}
+    if (!dataBoxes[this.dataFiles.current.id].hasOwnProperty('pitchers')){
     	this.loadpitchers(this.dataFiles.current.id,true);
+    }
+    else{_this.pitchbox(dataBoxes[this.dataFiles.current.id].pitchers);}
+    if (!dataBoxes[this.dataFiles.current.id].hasOwnProperty('plays') || !dataBoxes[this.dataFiles.current.id].hasOwnProperty('info')){
     	this.loadinfo(this.dataFiles.current.id,true);
-    	_this.style.opacity = 1;
     }
-    else {
-    	_this.offbox(dataBoxes[this.dataFiles.current.id].batters);
-    	_this.pitchbox(dataBoxes[this.dataFiles.current.id].pitchers);
-    	_this.linescore(dataBoxes[this.dataFiles.current.id].info);
-    	_this.fillscore(dataBoxes[this.dataFiles.current.id].plays,awayteam,hometeam);
-    	_this.style.opacity = 1;
-    }
+    else{_this.linescore(dataBoxes[this.dataFiles.current.id].info); _this.fillscore(dataBoxes[this.dataFiles.current.id].plays,awayteam,hometeam);}
+    this.style.opacity = 1;
+    
     
     if (!dataBoxes.hasOwnProperty(this.dataFiles.next.id)){
     	dataBoxes[this.dataFiles.next.id]={};
