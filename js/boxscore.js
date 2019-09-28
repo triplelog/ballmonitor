@@ -45,7 +45,16 @@ class BoxScore extends HTMLElement {
     if (!dataBoxes[this.dataFiles.current.id].hasOwnProperty('plays') || !dataBoxes[this.dataFiles.current.id].hasOwnProperty('info')){
     	this.loadinfo(this.dataFiles.current.id,true);
     }
-    else{this.fillscore(dataBoxes[this.dataFiles.current.id].plays,"A","H");}
+    else{
+    	var awayteam = "Away";
+		var hometeam = "Home";
+		var gameinfo = dataBoxes[this.dataFiles.current.id].info;
+		for (var i=0;i<gameinfo.length;i++){
+			if (gameinfo[i][1] == 'visteam') {awayteam = gameinfo[i][2];}
+			else if (gameinfo[i][1] == 'hometeam') {hometeam = gameinfo[i][2];}
+		}
+  		this.fillscore(dataBoxes[this.dataFiles.current.id].plays,awayteam,hometeam);
+  	}
     this.style.opacity = 1;
     
     
@@ -284,15 +293,19 @@ class BoxScore extends HTMLElement {
 		if (currentOrder != batterarray[i][2]) {
 			currentOrder = batterarray[i][2];
 			currentClass = 3 - currentClass;
-			batterarray[i][0]=batterarray[i][2]+'. '+batterarray[i][0];
+			var td = document.createElement('td');
+			td.textContent = batterarray[i][2]+'. '+batterarray[i][0];
+			tr.appendChild(td);
 			tr.classList.add("tr1");
 		}
 		else {
-			batterarray[i][0]='\u00A0\u00A0\u00A0\u00A0\u00A0'+batterarray[i][0];
+			var td = document.createElement('td');
+			td.textContent = '\u00A0\u00A0\u00A0\u00A0'+batterarray[i][0];
+			tr.appendChild(td);
 			tr.classList.add("tr2");
 		}
 		
-		[0,4,5,6,7,8,9,10].forEach( x => {
+		[4,5,6,7,8,9,10].forEach( x => {
 			var td = document.createElement('td');
 			td.textContent = batterarray[i][x];
 			tr.appendChild(td);
