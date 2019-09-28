@@ -143,12 +143,7 @@ class BoxScore extends HTMLElement {
 		}
 		else if (jsonFile3.status == 200) {
 			_this.dataFiles.current.info = Papa.parse(jsonFile3.responseText).data;
-			if (todisplay){
-				_this.linescore(_this.dataFiles.current.info);
-				if (_this.dataFiles.current.hasOwnProperty('batters') && _this.dataFiles.current.hasOwnProperty('plays') && _this.dataFiles.current.hasOwnProperty('pitchers')){
-					_this.style.opacity = 1;
-				}
-			}
+			_this.linescore(_this.dataFiles.current.info,todisplay);
 		}
 	 }
   }
@@ -171,7 +166,7 @@ class BoxScore extends HTMLElement {
 		}
 	 }
   }
-  linescore(gameinfo) {
+  linescore(gameinfo,todisplay=false) {
   	var _this = this;
   	var awayteam = "Away";
 	var hometeam = "Home";
@@ -181,9 +176,9 @@ class BoxScore extends HTMLElement {
   	}
   	
   	if (!this.dataFiles.current.hasOwnProperty('plays')){
-  		this.loadplays(this.dataFiles.current.id,awayteam,hometeam,true);
+  		this.loadplays(this.dataFiles.current.id,awayteam,hometeam,todisplay);
 	}
-	else {
+	else if (todisplay){
 		_this.fillscore(_this.dataFiles.current.plays,awayteam,hometeam);
 		if (_this.dataFiles.current.hasOwnProperty('batters') && _this.dataFiles.current.hasOwnProperty('info') && _this.dataFiles.current.hasOwnProperty('pitchers')){
 			_this.style.opacity = 1;
