@@ -45,7 +45,7 @@ class BoxScore extends HTMLElement {
     if (!dataBoxes[this.dataFiles.current.id].hasOwnProperty('plays') || !dataBoxes[this.dataFiles.current.id].hasOwnProperty('info')){
     	this.loadinfo(this.dataFiles.current.id,true);
     }
-    else{this.linescore(this.dataFiles.current.id,dataBoxes[this.dataFiles.current.id].info); this.fillscore(dataBoxes[this.dataFiles.current.id].plays,awayteam,hometeam);}
+    else{this.fillscore(dataBoxes[this.dataFiles.current.id].plays,"A","H");}
     this.style.opacity = 1;
     
     
