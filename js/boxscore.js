@@ -21,6 +21,7 @@ class BoxScore extends HTMLElement {
   	var _this = this;
     this.gameid = this.getAttribute('src');
     if (this.gameid == null) {return 0;}
+    _this.style.display = 'none';
   	var url = 'box/2000/2000'+this.gameid.substring(0,3)+'/'+this.gameid+'batterbox.csv';
 	var jsonFile = new XMLHttpRequest();
     jsonFile.open("GET",url,true);
