@@ -144,7 +144,7 @@ class BoxScore extends HTMLElement {
   	}
   	
   	if (!this.dataFiles.current.hasOwnProperty('plays')){
-		var url = 'box/2000/2000'+this.gameid.substring(0,3)+'/'+this.gameid+'plays.csv';
+		var url = 'box/2000/2000'+this.dataFiles.current.id.substring(0,3)+'/'+this.dataFiles.current.id+'plays.csv';
 		var jsonFile = new XMLHttpRequest();
 		jsonFile.open("GET",url,true);
 		jsonFile.send();
