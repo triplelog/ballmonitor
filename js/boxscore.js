@@ -54,16 +54,16 @@ class BoxScore extends HTMLElement {
     this.style.opacity = 0;
     if (!this.dataFiles.current.hasOwnProperty('batters')){
     	var url = 'box/2000/2000'+this.dataFiles.current.id.substring(0,3)+'/'+this.dataFiles.current.id+'batterbox.csv';
-		var jsonFile = new XMLHttpRequest();
-		jsonFile.open("GET",url,true);
-		jsonFile.send();
+		var jsonFile2 = new XMLHttpRequest();
+		jsonFile2.open("GET",url,true);
+		jsonFile2.send();
 
-		jsonFile.onloadend = function() {
-			if(jsonFile.status == 404) {
+		jsonFile2.onloadend = function() {
+			if(jsonFile2.status == 404) {
 				_this.style.opacity = 0;
 			}
-			else if (jsonFile.status == 200) {
-				_this.dataFiles.current.batters = Papa.parse(jsonFile.responseText).data;
+			else if (jsonFile2.status == 200) {
+				_this.dataFiles.current.batters = Papa.parse(jsonFile2.responseText).data;
 				_this.offbox(_this.dataFiles.current.batters);
 				if (_this.dataFiles.current.hasOwnProperty('pitchers') && _this.dataFiles.current.hasOwnProperty('plays') && _this.dataFiles.current.hasOwnProperty('info')){
 					_this.style.opacity = 1;
@@ -79,17 +79,16 @@ class BoxScore extends HTMLElement {
     }
     if (!this.dataFiles.current.hasOwnProperty('pitchers')){
     	var url = 'box/2000/2000'+this.dataFiles.current.id.substring(0,3)+'/'+this.dataFiles.current.id+'pitcherbox.csv';
-		var jsonFile = new XMLHttpRequest();
-		jsonFile.open("GET",url,true);
-		jsonFile.send();
+		var jsonFile1 = new XMLHttpRequest();
+		jsonFile1.open("GET",url,true);
+		jsonFile1.send();
 
-		jsonFile.onloadend = function() {
-			if(jsonFile.status == 404) {
+		jsonFile1.onloadend = function() {
+			if(jsonFile1.status == 404) {
 				_this.style.opacity = 0;
 			}
-			else if (jsonFile.status == 200) {
-				_this.dataFiles.current.pitchers = Papa.parse(jsonFile.responseText).data;
-				console.log(_this.dataFiles.current.pitchers);
+			else if (jsonFile1.status == 200) {
+				_this.dataFiles.current.pitchers = Papa.parse(jsonFile1.responseText).data;
 				_this.pitchbox(_this.dataFiles.current.pitchers);
 				if (_this.dataFiles.current.hasOwnProperty('batters') && _this.dataFiles.current.hasOwnProperty('plays') && _this.dataFiles.current.hasOwnProperty('info')){
 					_this.style.opacity = 1;
@@ -105,16 +104,16 @@ class BoxScore extends HTMLElement {
     }
     if (!this.dataFiles.current.hasOwnProperty('info')){
     	var url = 'box/2000/2000'+this.dataFiles.current.id.substring(0,3)+'/'+this.dataFiles.current.id+'.txt';
-		var jsonFile = new XMLHttpRequest();
-		jsonFile.open("GET",url,true);
-		jsonFile.send();
+		var jsonFile3 = new XMLHttpRequest();
+		jsonFile3.open("GET",url,true);
+		jsonFile3.send();
 
-		jsonFile.onloadend = function() {
-			if(jsonFile.status == 404) {
+		jsonFile3.onloadend = function() {
+			if(jsonFile3.status == 404) {
 				_this.style.opacity = 0;
 			}
-			else if (jsonFile.status == 200) {
-				_this.dataFiles.current.info = Papa.parse(jsonFile.responseText).data;
+			else if (jsonFile3.status == 200) {
+				_this.dataFiles.current.info = Papa.parse(jsonFile3.responseText).data;
 				_this.linescore(_this.dataFiles.current.info);
 				if (_this.dataFiles.current.hasOwnProperty('batters') && _this.dataFiles.current.hasOwnProperty('plays') && _this.dataFiles.current.hasOwnProperty('pitchers')){
 					_this.style.opacity = 1;
@@ -146,13 +145,13 @@ class BoxScore extends HTMLElement {
   	
   	if (!this.dataFiles.current.hasOwnProperty('plays')){
 		var url = 'box/2000/2000'+this.dataFiles.current.id.substring(0,3)+'/'+this.dataFiles.current.id+'plays.csv';
-		var jsonFile = new XMLHttpRequest();
-		jsonFile.open("GET",url,true);
-		jsonFile.send();
+		var jsonFile4 = new XMLHttpRequest();
+		jsonFile4.open("GET",url,true);
+		jsonFile4.send();
 	
-		jsonFile.onreadystatechange = function() {
-			if (jsonFile.readyState== 4 && jsonFile.status == 200) {
-				_this.dataFiles.current.plays = Papa.parse(jsonFile.responseText).data;
+		jsonFile4.onreadystatechange = function() {
+			if (jsonFile4.readyState== 4 && jsonFile4.status == 200) {
+				_this.dataFiles.current.plays = Papa.parse(jsonFile4.responseText).data;
 				_this.fillscore(_this.dataFiles.current.plays,awayteam,hometeam);
 				if (_this.dataFiles.current.hasOwnProperty('batters') && _this.dataFiles.current.hasOwnProperty('info') && _this.dataFiles.current.hasOwnProperty('pitchers')){
 					_this.style.opacity = 1;
