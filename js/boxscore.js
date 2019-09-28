@@ -347,6 +347,7 @@ class TabDNBox extends TabDN {
 	}
 	nextBox() {
 		this.boxindex+=2;
+		var boxes = document.querySelectorAll('box-score');
 		boxes[0].setAttribute("src",this.boxscores[this.boxindex]);
 		boxes[0].chgsrc();
 		boxes[1].setAttribute("src",this.boxscores[this.boxindex+1]);
