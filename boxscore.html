@@ -27,11 +27,9 @@
   		opacity: 0;
   		margin-left: auto;
   		margin-right: auto;
-  		top:0px;
   	}
-  	#content button {
-  		display: inline-block;
-  		top:0px;
+  	#content #chgpage {
+  		display: block;
   	}
   </style>
     
@@ -173,10 +171,14 @@
 	</header>
 	<div id="content">
 		<tabdn-box style="display: block;" src="xl09p" autoload="true"></tabdn-box>
-		<button onmousedown="boxButtonClick(-1)">Prev</button>
+		<div id="chgpage">
+			<button onmousedown="boxButtonClick(-1)">Prev</button>
+			<input type="range" />
+			<button onmousedown="boxButtonClick(1)">Next</button>
+		</div>
 		<box-score></box-score>
 		<box-score></box-score>
-		<button onmousedown="boxButtonClick(1)">Next</button>
+		
 	</div>
 			
 	  <script src="js/papaparse.min.js"></script>
