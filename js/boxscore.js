@@ -62,23 +62,7 @@ class BoxScore extends HTMLElement {
 		}
     }
     if (!this.dataFiles.current.hasOwnProperty('pitchers')){
-    	var url = 'box/2000/2000'+this.dataFiles.current.id.substring(0,3)+'/'+this.dataFiles.current.id+'pitcherbox.csv';
-		var jsonFile1 = new XMLHttpRequest();
-		jsonFile1.open("GET",url,true);
-		jsonFile1.send();
-
-		jsonFile1.onloadend = function() {
-			if(jsonFile1.status == 404) {
-				_this.style.opacity = 0;
-			}
-			else if (jsonFile1.status == 200) {
-				_this.dataFiles.current.pitchers = Papa.parse(jsonFile1.responseText).data;
-				_this.pitchbox(_this.dataFiles.current.pitchers);
-				if (_this.dataFiles.current.hasOwnProperty('batters') && _this.dataFiles.current.hasOwnProperty('plays') && _this.dataFiles.current.hasOwnProperty('info')){
-					_this.style.opacity = 1;
-				}
-			}
-		 }
+    	this.loadpitchers(this.dataFiles.current.id,true);
     }
     else {
     	_this.pitchbox(_this.dataFiles.current.pitchers);
@@ -87,23 +71,7 @@ class BoxScore extends HTMLElement {
 		}
     }
     if (!this.dataFiles.current.hasOwnProperty('info')){
-    	var url = 'box/2000/2000'+this.dataFiles.current.id.substring(0,3)+'/'+this.dataFiles.current.id+'.txt';
-		var jsonFile3 = new XMLHttpRequest();
-		jsonFile3.open("GET",url,true);
-		jsonFile3.send();
-
-		jsonFile3.onloadend = function() {
-			if(jsonFile3.status == 404) {
-				_this.style.opacity = 0;
-			}
-			else if (jsonFile3.status == 200) {
-				_this.dataFiles.current.info = Papa.parse(jsonFile3.responseText).data;
-				_this.linescore(_this.dataFiles.current.info);
-				if (_this.dataFiles.current.hasOwnProperty('batters') && _this.dataFiles.current.hasOwnProperty('plays') && _this.dataFiles.current.hasOwnProperty('pitchers')){
-					_this.style.opacity = 1;
-				}
-			}
-		 }
+    	this.loadinfo(this.dataFiles.current.id,true);
     }
     else {
     	_this.linescore(_this.dataFiles.current.info);
@@ -140,6 +108,67 @@ class BoxScore extends HTMLElement {
 		}
 	 }
   }
+  loadpitchers(gameid,todisplay=false){
+  	var _this = this;
+  	var url = 'box/2000/2000'+gameid.substring(0,3)+'/'+gameid+'pitcherbox.csv';
+	var jsonFile1 = new XMLHttpRequest();
+	jsonFile1.open("GET",url,true);
+	jsonFile1.send();
+
+	jsonFile1.onloadend = function() {
+		if(jsonFile1.status == 404) {
+			_this.style.opacity = 0;
+		}
+		else if (jsonFile1.status == 200) {
+			_this.dataFiles.current.pitchers = Papa.parse(jsonFile1.responseText).data;
+			if (todisplay){
+				_this.pitchbox(_this.dataFiles.current.pitchers);
+				if (_this.dataFiles.current.hasOwnProperty('batters') && _this.dataFiles.current.hasOwnProperty('plays') && _this.dataFiles.current.hasOwnProperty('info')){
+					_this.style.opacity = 1;
+				}
+			}
+		}
+	 }
+  }
+  loadinfo(gameid,todisplay=false){
+  	var url = 'box/2000/2000'+gameid.substring(0,3)+'/'+gameid+'.txt';
+	var jsonFile3 = new XMLHttpRequest();
+	jsonFile3.open("GET",url,true);
+	jsonFile3.send();
+
+	jsonFile3.onloadend = function() {
+		if(jsonFile3.status == 404) {
+			_this.style.opacity = 0;
+		}
+		else if (jsonFile3.status == 200) {
+			_this.dataFiles.current.info = Papa.parse(jsonFile3.responseText).data;
+			if (todisplay){
+				_this.linescore(_this.dataFiles.current.info);
+				if (_this.dataFiles.current.hasOwnProperty('batters') && _this.dataFiles.current.hasOwnProperty('plays') && _this.dataFiles.current.hasOwnProperty('pitchers')){
+					_this.style.opacity = 1;
+				}
+			}
+		}
+	 }
+  }
+  loadplays(gameid,todisplay=false){
+  	var url = 'box/2000/2000'+gameid.substring(0,3)+'/'+gameid+'plays.csv';
+	var jsonFile4 = new XMLHttpRequest();
+	jsonFile4.open("GET",url,true);
+	jsonFile4.send();
+
+	jsonFile4.onreadystatechange = function() {
+		if (jsonFile4.readyState== 4 && jsonFile4.status == 200) {
+			_this.dataFiles.current.plays = Papa.parse(jsonFile4.responseText).data;
+			if (todisplay){
+				_this.fillscore(_this.dataFiles.current.plays,awayteam,hometeam);
+				if (_this.dataFiles.current.hasOwnProperty('batters') && _this.dataFiles.current.hasOwnProperty('info') && _this.dataFiles.current.hasOwnProperty('pitchers')){
+					_this.style.opacity = 1;
+				}
+			}
+		}
+	 }
+  }
   linescore(gameinfo) {
   	var _this = this;
   	var awayteam = "Away";
@@ -150,20 +179,7 @@ class BoxScore extends HTMLElement {
   	}
   	
   	if (!this.dataFiles.current.hasOwnProperty('plays')){
-		var url = 'box/2000/2000'+this.dataFiles.current.id.substring(0,3)+'/'+this.dataFiles.current.id+'plays.csv';
-		var jsonFile4 = new XMLHttpRequest();
-		jsonFile4.open("GET",url,true);
-		jsonFile4.send();
-	
-		jsonFile4.onreadystatechange = function() {
-			if (jsonFile4.readyState== 4 && jsonFile4.status == 200) {
-				_this.dataFiles.current.plays = Papa.parse(jsonFile4.responseText).data;
-				_this.fillscore(_this.dataFiles.current.plays,awayteam,hometeam);
-				if (_this.dataFiles.current.hasOwnProperty('batters') && _this.dataFiles.current.hasOwnProperty('info') && _this.dataFiles.current.hasOwnProperty('pitchers')){
-					_this.style.opacity = 1;
-				}
-			}
-		 }
+  		this.loadplays(this.dataFiles.current.id,true);
 	}
 	else {
 		_this.fillscore(_this.dataFiles.current.plays,awayteam,hometeam);
