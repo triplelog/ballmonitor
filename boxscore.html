@@ -173,7 +173,7 @@
 		<tabdn-box style="display: block;" src="xl09p" autoload="true"></tabdn-box>
 		<div id="chgpage">
 			<button onmousedown="boxButtonClick(-1)">Prev</button>
-			<input type="range" />
+			<input type="range" onchange="skipPage()" id="rangePage" value="0" min="0" max="161"/>
 			<button onmousedown="boxButtonClick(1)">Next</button>
 		</div>
 		<box-score></box-score>
@@ -188,6 +188,10 @@
 	  	function boxButtonClick(n) {
 	  		if (n==-1){document.querySelector('tabdn-box').prevBox();}
 	  		else if (n==1){document.querySelector('tabdn-box').nextBox();}
+	  	}
+	  	function skipPage() {
+	  		console.log(document.querySelector('#rangePage').value);
+	  		document.querySelector('tabdn-box').nextBox(document.querySelector('#rangePage').value);
 	  	}
 	  </script>
 

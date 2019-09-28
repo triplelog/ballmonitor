@@ -70,6 +70,9 @@ class TabDN extends HTMLElement {
 				_this.ws.send(JSON.stringify(jsonmessage));
 				var jsonmessage = { command: 'filter', formula: 'c28_4/1/2000_c28_9/1/2000@##>##<&' };
 				_this.ws.send(JSON.stringify(jsonmessage));
+				_this.endRow = 162;
+				var jsonmessage = {'command':'print','startrow':_this.startRow,'endrow':_this.endRow};
+				_this.ws.send(JSON.stringify(jsonmessage));
 				
 			}
 		}
