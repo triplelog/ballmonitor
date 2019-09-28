@@ -170,6 +170,7 @@ class BoxScore extends HTMLElement {
   }
   
   fillscore(linescoreRaw) {
+  	var _this = this;
 	var linescore = _this.shadowRoot.querySelector('#linescore-location');
 	var thead = linescore.querySelector('thead').querySelector('tr');
 	var row1 = linescore.querySelector('tbody').querySelectorAll('tr')[0];
