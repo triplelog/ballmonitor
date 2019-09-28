@@ -18,15 +18,16 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css">
   <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>-->
   <style>
-  	#content {
-  		
+  	#content #boxes {
+  		display: flex;
+		flex-direction: row;
+		background-color: DodgerBlue;
+		justify-content: center;
   	}
-  	#content box-score {
+  	#content #boxes box-score {
   		border: 1px solid black;
-  		display: inline-block;
   		opacity: 0;
-  		margin-left: auto;
-  		margin-right: auto;
+	  	margin: 10px;
   	}
   	#content #chgpage {
   		display: block;
@@ -176,8 +177,10 @@
 			<input type="range" onchange="skipPage()" id="rangePage" value="0" min="0" max="161"/>
 			<button onmousedown="boxButtonClick(1)">Next</button>
 		</div>
-		<box-score></box-score>
-		<box-score></box-score>
+		<div id="boxes">
+			<box-score></box-score>
+			<box-score></box-score>
+		</div>
 		
 	</div>
 			
