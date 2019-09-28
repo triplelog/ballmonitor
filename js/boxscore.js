@@ -152,7 +152,7 @@ class BoxScore extends HTMLElement {
 		}
 	 }
   }
-  loadplays(gameid,todisplay=false){
+  loadplays(gameid,awayteam,hometeam,todisplay=false){
   	var _this = this;
   	var url = 'box/2000/2000'+gameid.substring(0,3)+'/'+gameid+'plays.csv';
 	var jsonFile4 = new XMLHttpRequest();
@@ -181,7 +181,7 @@ class BoxScore extends HTMLElement {
   	}
   	
   	if (!this.dataFiles.current.hasOwnProperty('plays')){
-  		this.loadplays(this.dataFiles.current.id,true);
+  		this.loadplays(this.dataFiles.current.id,awayteam,hometeam,true);
 	}
 	else {
 		_this.fillscore(_this.dataFiles.current.plays,awayteam,hometeam);
