@@ -216,7 +216,8 @@
 	  		document.querySelector('tabdn-box').nextBox(document.querySelector('#rangePage').value);
 	  	}
 	  	function toggle(id) {
-	  		var el = document.querySelector('#'+id);
+	  		console.log(id);
+	  		var el = document.getElementById(id);
 	  		el.classList.toggle('hidden');
 	  	}
 	  </script>
