@@ -47,11 +47,13 @@ class BoxScore extends HTMLElement {
     }
     
     if (!dataBoxes.hasOwnProperty(this.dataFiles.next.id)){
+    	dataBoxes[this.dataFiles.next.id]={};
     	this.loadbatters(this.dataFiles.next.id,false);
     	this.loadpitchers(this.dataFiles.next.id,false);
     	this.loadinfo(this.dataFiles.next.id,false);
     }
     if (!dataBoxes.hasOwnProperty(this.dataFiles.prev.id)){
+    	dataBoxes[this.dataFiles.prev.id]={};
     	this.loadbatters(this.dataFiles.prev.id,false);
     	this.loadpitchers(this.dataFiles.prev.id,false);
     	this.loadinfo(this.dataFiles.prev.id,false);
