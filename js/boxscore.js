@@ -99,6 +99,9 @@ class BoxScore extends HTMLElement {
     if (!this.dataFiles.prev.hasOwnProperty('info')){
     	this.loadinfo(this.dataFiles.prev.id,false);
     }
+    console.log("P",this.dataFiles.prev);
+    console.log("C",this.dataFiles.current);
+    console.log("N",this.dataFiles.next);
 
 
      
