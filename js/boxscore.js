@@ -56,6 +56,7 @@ class BoxScore extends HTMLElement {
     	this.loadbatters(this.dataFiles.current.id,true);
     }
     else {
+    	console.log("already loaded",this.dataFiles.current.id);
     	_this.offbox(_this.dataFiles.current.batters);
 		if (_this.dataFiles.current.hasOwnProperty('pitchers') && _this.dataFiles.current.hasOwnProperty('plays') && _this.dataFiles.current.hasOwnProperty('info')){
 			_this.style.opacity = 1;
@@ -88,6 +89,15 @@ class BoxScore extends HTMLElement {
     }
     if (!this.dataFiles.next.hasOwnProperty('info')){
     	this.loadinfo(this.dataFiles.next.id,false);
+    }
+    if (!this.dataFiles.prev.hasOwnProperty('batters')){
+    	this.loadbatters(this.dataFiles.prev.id,false);
+    }
+    if (!this.dataFiles.prev.hasOwnProperty('pitchers')){
+    	this.loadpitchers(this.dataFiles.prev.id,false);
+    }
+    if (!this.dataFiles.prev.hasOwnProperty('info')){
+    	this.loadinfo(this.dataFiles.prev.id,false);
     }
 
 
