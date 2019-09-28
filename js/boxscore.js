@@ -89,6 +89,7 @@ class BoxScore extends HTMLElement {
 			}
 			else if (jsonFile.status == 200) {
 				_this.dataFiles.current.pitchers = Papa.parse(jsonFile.responseText).data;
+				console.log(_this.dataFiles.current.pitchers);
 				_this.pitchbox(_this.dataFiles.current.pitchers);
 				if (_this.dataFiles.current.hasOwnProperty('batters') && _this.dataFiles.current.hasOwnProperty('plays') && _this.dataFiles.current.hasOwnProperty('info')){
 					_this.style.opacity = 1;
