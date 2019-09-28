@@ -171,6 +171,7 @@ class BoxScore extends HTMLElement {
 
 	var pbpLength = linescoreRaw.length;
 	  var linescorearray = [[awayteam],[hometeam]];
+	  var playarray = [[],[]];
 	  var currentTeam = '1';
 	  var halfRuns = 0;
 	  var halfIndex = -1;
@@ -183,14 +184,20 @@ class BoxScore extends HTMLElement {
 			halfRuns = 0;
 			halfIndex += 1;
 			linescorearray[0].push(0);
+			playarray[0].push([linescoreRaw[i][13]]);
 			currentouts = 0;
 		  }
 		  else if (linescoreRaw[i][15] == '1' && currentTeam == '0') {
 			halfRuns = 0;
 			halfIndex += 1;
 			linescorearray[1].push(0);
+			playarray[1].push([linescoreRaw[i][13]]);
 			currentouts = 0;
 		  }
+		  else {
+		  	playarray[halfIndex%2][parseInt(halfIndex/2)].push(linescoreRaw[i][13]);
+		  }
+		  
 		  if (parseInt(linescoreRaw[i][12]) > 0) {
 			halfRuns += parseInt(linescoreRaw[i][12]);
 			linescorearray[halfIndex%2][parseInt(halfIndex/2)+1] = halfRuns;
@@ -244,12 +251,18 @@ class BoxScore extends HTMLElement {
 		td = document.createElement('td');
 		td.textContent = linescorearray[0][i];
 		td.id = 'pbpHalf_A-'+i;
-		td.addEventListener('click', e => {alert(e.target.id);});
+		tippy(td, {
+		  content: playarray[0][i-1][0],
+		})
+		//td.addEventListener('click', e => {alert(e.target.id);});
 		row1.appendChild(td);
 		td = document.createElement('td');
 		td.textContent = linescorearray[1][i];
 		td.id = 'pbpHalf_H-'+i;
-		td.addEventListener('click', e => {alert(e.target.id);});
+		tippy(td, {
+		  content: playarray[1][i-1][0],
+		})
+		//td.addEventListener('click', e => {alert(e.target.id);});
 		row2.appendChild(td);
 	}
 	['R','H','E'].forEach( x => {
