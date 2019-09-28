@@ -65,6 +65,8 @@
 			}
 			#linescore-location {
 				flex: 2 0 50%;
+				font-size: .8rem;
+				line-height: .8rem;
 			}
 			#linescore-location table{
 				margin-left:auto; 
@@ -140,7 +142,7 @@
 				</table>
 				<hr>
 				<div id="home-extra-header">
-					Extra Base Hits:<button onclick="toggle('home-extra')" id="home-extra-button">X</button>
+					Extra Base Hits:<button id="home-extra-button">X</button>
 				</div>
 				<div id="home-extra">
 				</div>
@@ -190,8 +192,9 @@
 	  
 	</header>
 	<div id="content">
-		<tabdn-box style="display: block;" src="xl09p" autoload="true"></tabdn-box>
+		
 		<div id="chgpage">
+			<tabdn-box style="display: block;" src="xl09p" autoload="true"></tabdn-box>
 			<button onmousedown="boxButtonClick(-1)">Prev</button>
 			<input type="range" onchange="skipPage()" id="rangePage" value="0" min="0" max="161"/>
 			<button onmousedown="boxButtonClick(1)">Next</button>
@@ -214,12 +217,6 @@
 	  	function skipPage() {
 	  		console.log(document.querySelector('#rangePage').value);
 	  		document.querySelector('tabdn-box').nextBox(document.querySelector('#rangePage').value);
-	  	}
-	  	function toggle(id) {
-	  		console.log(id);
-	  		var el = document.getElementById(id);
-	  		console.log(el);
-	  		el.classList.toggle('hidden');
 	  	}
 	  </script>
 
