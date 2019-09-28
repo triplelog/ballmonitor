@@ -22,90 +22,40 @@ class BoxScore extends HTMLElement {
   
   chgsrc() {
   	var _this = this;
+  	//Need deep copies of these objects!
   	if (this.getAttribute('src') == null) {return 0;}
   	else {
-  		if (this.getAttribute('src') == this.dataFiles.prev.id) {
-  			if (this.getAttribute('nsrc') == this.dataFiles.current.id) {
-  				this.dataFiles.next = this.dataFiles.current;
-  			}
-  			else {
-  				this.dataFiles.next = {id:this.getAttribute('nsrc')};
-  			}
-  			this.dataFiles.current = this.dataFiles.prev;
-  			this.dataFiles.prev = {id:this.getAttribute('psrc')};
-  		}
-  		else if (this.getAttribute('src') == this.dataFiles.next.id) {
-  			if (this.getAttribute('psrc') == this.dataFiles.current.id) {
-  				this.dataFiles.prev = this.dataFiles.current;
-  			}
-  			else {
-  				this.dataFiles.prev = {id:this.getAttribute('psrc')};
-  			}
-  			this.dataFiles.current = this.dataFiles.next;
-  			this.dataFiles.next = {id:this.getAttribute('nsrc')};
-  		}
-  		else {
-  			this.dataFiles.prev = {id:this.getAttribute('psrc')};
-  			this.dataFiles.next = {id:this.getAttribute('nsrc')};
-  			this.dataFiles.current = {id:this.getAttribute('src')};
-  		}
+  		this.dataFiles.prev.id = this.getAttribute('psrc');
+  		this.dataFiles.current.id = this.getAttribute('src');
+  		this.dataFiles.next.id = this.getAttribute('nsrc');
   	}
     
     this.style.opacity = 0;
-    if (!this.dataFiles.current.hasOwnProperty('batters')){
+    if (!dataBoxes.hasOwnProperty(this.dataFiles.current.id)){
+    	dataBoxes[this.dataFiles.current.id]={};
     	this.loadbatters(this.dataFiles.current.id,true);
-    }
-    else {
-    	console.log("already loaded",this.dataFiles.current.id);
-    	_this.offbox(_this.dataFiles.current.batters);
-		if (_this.dataFiles.current.hasOwnProperty('pitchers') && _this.dataFiles.current.hasOwnProperty('plays') && _this.dataFiles.current.hasOwnProperty('info')){
-			_this.style.opacity = 1;
-		}
-    }
-    if (!this.dataFiles.current.hasOwnProperty('pitchers')){
     	this.loadpitchers(this.dataFiles.current.id,true);
-    }
-    else {
-    	_this.pitchbox(_this.dataFiles.current.pitchers);
-		if (_this.dataFiles.current.hasOwnProperty('batters') && _this.dataFiles.current.hasOwnProperty('plays') && _this.dataFiles.current.hasOwnProperty('info')){
-			_this.style.opacity = 1;
-		}
-    }
-    if (!this.dataFiles.current.hasOwnProperty('info')){
     	this.loadinfo(this.dataFiles.current.id,true);
+    	_this.style.opacity = 1;
     }
     else {
-    	_this.linescore(_this.dataFiles.current.info);
-		if (_this.dataFiles.current.hasOwnProperty('batters') && _this.dataFiles.current.hasOwnProperty('plays') && _this.dataFiles.current.hasOwnProperty('pitchers')){
-			_this.style.opacity = 1;
-		}
+    	_this.offbox(dataBoxes[this.dataFiles.current.id].batters);
+    	_this.pitchbox(dataBoxes[this.dataFiles.current.id].pitchers);
+    	_this.linescore(dataBoxes[this.dataFiles.current.id].info);
+    	_this.fillscore(dataBoxes[this.dataFiles.current.id].plays,awayteam,hometeam);
+    	_this.style.opacity = 1;
     }
     
-    if (!this.dataFiles.next.hasOwnProperty('batters')){
+    if (!dataBoxes.hasOwnProperty(this.dataFiles.next.id)){
     	this.loadbatters(this.dataFiles.next.id,false);
-    }
-    if (!this.dataFiles.next.hasOwnProperty('pitchers')){
     	this.loadpitchers(this.dataFiles.next.id,false);
-    }
-    if (!this.dataFiles.next.hasOwnProperty('info')){
     	this.loadinfo(this.dataFiles.next.id,false);
     }
-    if (!this.dataFiles.prev.hasOwnProperty('batters')){
+    if (!dataBoxes.hasOwnProperty(this.dataFiles.prev.id)){
     	this.loadbatters(this.dataFiles.prev.id,false);
-    }
-    if (!this.dataFiles.prev.hasOwnProperty('pitchers')){
     	this.loadpitchers(this.dataFiles.prev.id,false);
-    }
-    if (!this.dataFiles.prev.hasOwnProperty('info')){
     	this.loadinfo(this.dataFiles.prev.id,false);
-    }
-    console.log("P",this.dataFiles.prev);
-    console.log("C",this.dataFiles.current);
-    console.log("N",this.dataFiles.next);
-
-
-     
-     
+    }     
      
 	
   }
@@ -122,12 +72,9 @@ class BoxScore extends HTMLElement {
 			_this.style.opacity = 0;
 		}
 		else if (jsonFile2.status == 200) {
-			_this.dataFiles.current.batters = Papa.parse(jsonFile2.responseText).data;
+			dataBoxes[gameid].batters = Papa.parse(jsonFile2.responseText).data;
 			if (todisplay){
-				_this.offbox(_this.dataFiles.current.batters);
-				if (_this.dataFiles.current.hasOwnProperty('pitchers') && _this.dataFiles.current.hasOwnProperty('plays') && _this.dataFiles.current.hasOwnProperty('info')){
-					_this.style.opacity = 1;
-				}
+				_this.offbox(dataBoxes[gameid].batters);
 			}
 		}
 	 }
@@ -144,12 +91,9 @@ class BoxScore extends HTMLElement {
 			_this.style.opacity = 0;
 		}
 		else if (jsonFile1.status == 200) {
-			_this.dataFiles.current.pitchers = Papa.parse(jsonFile1.responseText).data;
+			dataBoxes[gameid].pitchers = Papa.parse(jsonFile1.responseText).data;
 			if (todisplay){
-				_this.pitchbox(_this.dataFiles.current.pitchers);
-				if (_this.dataFiles.current.hasOwnProperty('batters') && _this.dataFiles.current.hasOwnProperty('plays') && _this.dataFiles.current.hasOwnProperty('info')){
-					_this.style.opacity = 1;
-				}
+				_this.pitchbox(dataBoxes[gameid].pitchers);
 			}
 		}
 	 }
@@ -166,8 +110,8 @@ class BoxScore extends HTMLElement {
 			_this.style.opacity = 0;
 		}
 		else if (jsonFile3.status == 200) {
-			_this.dataFiles.current.info = Papa.parse(jsonFile3.responseText).data;
-			_this.linescore(_this.dataFiles.current.info,todisplay);
+			dataBoxes[gameid].info = Papa.parse(jsonFile3.responseText).data;
+			_this.linescore(gameid,dataBoxes[gameid].info,todisplay);
 		}
 	 }
   }
@@ -180,18 +124,14 @@ class BoxScore extends HTMLElement {
 
 	jsonFile4.onreadystatechange = function() {
 		if (jsonFile4.readyState== 4 && jsonFile4.status == 200) {
-			_this.dataFiles.current.plays = Papa.parse(jsonFile4.responseText).data;
+			dataBoxes[gameid].plays = Papa.parse(jsonFile4.responseText).data;
 			if (todisplay){
-				_this.fillscore(_this.dataFiles.current.plays,awayteam,hometeam);
-				if (_this.dataFiles.current.hasOwnProperty('batters') && _this.dataFiles.current.hasOwnProperty('info') && _this.dataFiles.current.hasOwnProperty('pitchers')){
-					_this.style.opacity = 1;
-				}
+				_this.fillscore(dataBoxes[gameid].plays,awayteam,hometeam);
 			}
 		}
 	 }
   }
-  linescore(gameinfo,todisplay=false) {
-  	var _this = this;
+  linescore(gameid,gameinfo,todisplay=false) {
   	var awayteam = "Away";
 	var hometeam = "Home";
   	for (var i=0;i<gameinfo.length;i++){
@@ -199,17 +139,8 @@ class BoxScore extends HTMLElement {
   		else if (gameinfo[i][1] == 'hometeam') {hometeam = gameinfo[i][2];}
   	}
   	
-  	if (!this.dataFiles.current.hasOwnProperty('plays')){
-  		this.loadplays(this.dataFiles.current.id,awayteam,hometeam,todisplay);
-	}
-	else if (todisplay){
-		_this.fillscore(_this.dataFiles.current.plays,awayteam,hometeam);
-		if (_this.dataFiles.current.hasOwnProperty('batters') && _this.dataFiles.current.hasOwnProperty('info') && _this.dataFiles.current.hasOwnProperty('pitchers')){
-			_this.style.opacity = 1;
-		}
-	}
-  	
-  	
+  	this.loadplays(gameid,awayteam,hometeam,todisplay);
+
   }
   
   fillscore(linescoreRaw,awayteam,hometeam) {
@@ -583,6 +514,7 @@ class TabDNBox extends TabDN {
 	
 }
 
+var dataBoxes = {};
 customElements.define('tabdn-box', TabDNBox);
 
 
