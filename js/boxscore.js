@@ -442,6 +442,12 @@ class TabDNBox extends TabDN {
 			console.log(this.boxindex);
 			console.log(this.boxscores[this.boxindex]);
 			console.log(boxes[0].getAttribute("src"));
+			console.log(this.boxindex+1);
+			console.log(this.boxscores[this.boxindex+1]);
+			console.log(boxes[0].getAttribute("nsrc"));
+			console.log(this.boxindex-1);
+			console.log(this.boxscores[this.boxindex-1]);
+			console.log(boxes[0].getAttribute("psrc"));
 			boxes[0].chgsrc();
 			boxes[1].setAttribute("src",this.boxscores[this.boxindex+1]);
 			boxes[1].setAttribute("nsrc",this.boxscores[this.boxindex+2]);
