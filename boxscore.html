@@ -23,19 +23,13 @@
   	}
   	#content box-score {
   		border: 1px solid black;
-  		float: left;
+  		display: inline-block;
   		opacity: 0;
   		margin-left: auto;
   		margin-right: auto;
   	}
-  	#superheader {
-  		position: fixed;
-  		top: 0px;
-  		height: 5px;
-  		background: rgba(102,204,204,1);
-  		width: 100%;
-  		left: 0px;
-  		z-index: -1;
+  	#content button {
+  		display: inline-block;
   	}
   </style>
     
@@ -175,7 +169,6 @@
 	  <a href="boxscore.html" class="button" style="background: rgba(245, 238, 236,0);">Games</a>
 	  
 	</header>
-	<div id="superheader">.....................</div>
 	<div id="content">
 		<tabdn-box style="display: block;" src="xl09p" autoload="true"></tabdn-box>
 		<button onclick="boxButtonClick(-1)">Prev</button>
