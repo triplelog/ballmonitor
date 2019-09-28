@@ -22,6 +22,7 @@ class BoxScore extends HTMLElement {
     this.gameid = this.getAttribute('src');
     if (this.gameid == null) {return 0;}
     _this.style.display = 'none';
+    var returnedFiles = 0;
   	var url = 'box/2000/2000'+this.gameid.substring(0,3)+'/'+this.gameid+'batterbox.csv';
 	var jsonFile = new XMLHttpRequest();
     jsonFile.open("GET",url,true);
@@ -33,7 +34,8 @@ class BoxScore extends HTMLElement {
 		}
 		else if (jsonFile.status == 200) {
             _this.offbox(Papa.parse(jsonFile.responseText).data);
-            _this.style.display = 'inline-block';
+            returnedFiles++;
+            if (returnedFiles == 3) {_this.style.display = 'inline-block';}
         }
      }
     var url2 = 'box/2000/2000'+this.gameid.substring(0,3)+'/'+this.gameid+'pitcherbox.csv';
@@ -46,7 +48,8 @@ class BoxScore extends HTMLElement {
 		}
 		else if (jsonFile2.status == 200) {
             _this.pitchbox(Papa.parse(jsonFile2.responseText).data);
-            _this.style.display = 'inline-block';
+            returnedFiles++;
+            if (returnedFiles == 3) {_this.style.display = 'inline-block';}
         }
 	}
 
@@ -62,7 +65,8 @@ class BoxScore extends HTMLElement {
 		}
 		else if (jsonFile4.status == 200) {
             _this.linescore(Papa.parse(jsonFile4.responseText).data);
-            _this.style.display = 'inline-block';
+            returnedFiles++;
+            if (returnedFiles == 3) {_this.style.display = 'inline-block';}
         }
      }
      
