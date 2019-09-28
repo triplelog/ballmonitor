@@ -323,6 +323,7 @@ class TabDNBox extends TabDN {
 		
 		
 		this.boxscores = [];
+		this.boxindex = 0;
 		
 	}
 	
@@ -338,11 +339,18 @@ class TabDNBox extends TabDN {
 			sortButton.addEventListener("mouseover", e => {this.newSort(e,0);});
 			sortButton.addEventListener("mousedown", e => {this.newSort(e,1);});
 			sortButton.addEventListener("mouseout", e => {this.newSort(e,2);});
-			sortButton.addEventListener("mouseup", e => {this.newSort(e,3);});
+			sortButton.addEventListener("mouseup", e => {this.nextBox();});
 			sortDiv.appendChild(sortButton);
 		sortDiv.style.display = 'inline-block';
 		sortDiv.id = "sortDiv";
 		this.shadowRoot.appendChild(sortDiv);
+	}
+	nextBox() {
+		this.boxindex+=2;
+		boxes[0].setAttribute("src",this.boxscores[this.boxindex]);
+		boxes[0].chgsrc();
+		boxes[1].setAttribute("src",this.boxscores[this.boxindex+1]);
+		boxes[1].chgsrc();
 	}
 	
 	addFilterBox() {
