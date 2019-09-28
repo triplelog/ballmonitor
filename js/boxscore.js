@@ -152,7 +152,7 @@ class BoxScore extends HTMLElement {
 		jsonFile.onreadystatechange = function() {
 			if (jsonFile.readyState== 4 && jsonFile.status == 200) {
 				_this.dataFiles.current.plays = Papa.parse(jsonFile.responseText).data;
-				_this.fillscore(_this.dataFiles.current.plays);
+				_this.fillscore(_this.dataFiles.current.plays,awayteam,hometeam);
 				if (_this.dataFiles.current.hasOwnProperty('batters') && _this.dataFiles.current.hasOwnProperty('info') && _this.dataFiles.current.hasOwnProperty('pitchers')){
 					_this.style.opacity = 1;
 				}
@@ -160,7 +160,7 @@ class BoxScore extends HTMLElement {
 		 }
 	}
 	else {
-		_this.fillscore(_this.dataFiles.current.plays);
+		_this.fillscore(_this.dataFiles.current.plays,awayteam,hometeam);
 		if (_this.dataFiles.current.hasOwnProperty('batters') && _this.dataFiles.current.hasOwnProperty('info') && _this.dataFiles.current.hasOwnProperty('pitchers')){
 			_this.style.opacity = 1;
 		}
@@ -169,7 +169,7 @@ class BoxScore extends HTMLElement {
   	
   }
   
-  fillscore(linescoreRaw) {
+  fillscore(linescoreRaw,awayteam,hometeam) {
   	var _this = this;
 	var linescore = _this.shadowRoot.querySelector('#linescore-location');
 	var thead = linescore.querySelector('thead').querySelector('tr');
