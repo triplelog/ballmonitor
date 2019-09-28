@@ -59,7 +59,7 @@ class BoxScore extends HTMLElement {
 		jsonFile.send();
 
 		jsonFile.onloadend = function() {
-			if(jsonFile4.status == 404) {
+			if(jsonFile.status == 404) {
 				_this.style.opacity = 0;
 			}
 			else if (jsonFile.status == 200) {
@@ -84,7 +84,7 @@ class BoxScore extends HTMLElement {
 		jsonFile.send();
 
 		jsonFile.onloadend = function() {
-			if(jsonFile4.status == 404) {
+			if(jsonFile.status == 404) {
 				_this.style.opacity = 0;
 			}
 			else if (jsonFile.status == 200) {
@@ -109,7 +109,7 @@ class BoxScore extends HTMLElement {
 		jsonFile.send();
 
 		jsonFile.onloadend = function() {
-			if(jsonFile4.status == 404) {
+			if(jsonFile.status == 404) {
 				_this.style.opacity = 0;
 			}
 			else if (jsonFile.status == 200) {
