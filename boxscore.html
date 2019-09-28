@@ -28,6 +28,14 @@
   		margin-left: auto;
   		margin-right: auto;
   	}
+  	#superheader {
+  		position: fixed;
+  		top: -5px;
+  		height: 5px;
+  		background: red;
+  		width: 200px;
+  		left: 0px;
+  	}
   </style>
     
 
@@ -166,6 +174,7 @@
 	  <a href="boxscore.html" class="button" style="background: rgba(245, 238, 236,0);">Games</a>
 	  
 	</header>
+	<div id="superheader">Hi</div>
 	<div id="content">
 		<tabdn-box style="display: block;" src="xl09p" autoload="true"></tabdn-box>
 		<button onclick="boxButtonClick(-1)">Prev</button>
