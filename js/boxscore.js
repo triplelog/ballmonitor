@@ -79,6 +79,17 @@ class BoxScore extends HTMLElement {
 			_this.style.opacity = 1;
 		}
     }
+    
+    if (!this.dataFiles.next.hasOwnProperty('batters')){
+    	this.loadbatters(this.dataFiles.next.id,false);
+    }
+    if (!this.dataFiles.next.hasOwnProperty('pitchers')){
+    	this.loadpitchers(this.dataFiles.next.id,false);
+    }
+    if (!this.dataFiles.next.hasOwnProperty('info')){
+    	this.loadinfo(this.dataFiles.next.id,false);
+    }
+
 
      
      
