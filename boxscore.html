@@ -73,12 +73,11 @@
 			#container {
 				width: 500px;
 			}
-			#home-extra {
-				border: 1px dotted black;
-				width: 85%;
-				display: inline-block;
+			#home-extra.hidden {
+				display: none;
 			}
 			#home-extra-button {
+				float: right;
 				width: 10%;
 			}
 			.tr1 td {border-style: dashed; border-width: 1px 0px 0px 0px;}
@@ -140,9 +139,12 @@
 					</tfoot>
 				</table>
 				<hr>
+				<div id="home-extra-header">
+					Extra Base Hits:<button onclick="toggle('home-extra')" id="home-extra-button">X</button>
+				</div>
 				<div id="home-extra">
 				</div>
-				<button id="home-extra-button">X</button>
+				
 			</div>
 		  </div>
 
@@ -212,6 +214,10 @@
 	  	function skipPage() {
 	  		console.log(document.querySelector('#rangePage').value);
 	  		document.querySelector('tabdn-box').nextBox(document.querySelector('#rangePage').value);
+	  	}
+	  	function toggle(id) {
+	  		var el = document.querySelector('#'+id);
+	  		el.classList.toggle('hidden');
 	  	}
 	  </script>
 
