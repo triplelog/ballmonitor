@@ -78,8 +78,6 @@ class TabDNPlayer extends TabDN {
 		this.createTable();
     	//this.addPaginate();
     	//this.addButtons();
-		this.addSortBox();
-		this.addFilterBox();
 	}
 	
 	 addData(retmess) {
