@@ -68,6 +68,7 @@ class PlayerStats extends HTMLElement {
 
 	}
 	for(year in years){
+		if (year == 'total'){continue;}
 		var tr = document.createElement('tr');
 		tr.classList.add("tr1");
 		var td = document.createElement('td');
