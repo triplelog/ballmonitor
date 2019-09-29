@@ -51,7 +51,7 @@ class PlayerStats extends HTMLElement {
 	var years = {};
 	for (var i=1;i<statarray.length;i++){
 		if (statarray[i].length < 10){continue;}
-		year = statarray[i][0].substring(0,4);
+		var year = statarray[i][0].substring(0,4);
 		if (years.hasOwnProperty(year)){
 			
 		}
