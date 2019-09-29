@@ -48,7 +48,7 @@ class PlayerStats extends HTMLElement {
 	
 	var currentOrder = 0;
 	var currentClass = 1;
-	var years = {};
+	var years = {total:[0,0,0,0,0,0,0]};
 	for (var i=1;i<statarray.length;i++){
 		if (statarray[i].length < 10){continue;}
 		var year = statarray[i][0].substring(0,4);
@@ -62,6 +62,7 @@ class PlayerStats extends HTMLElement {
 		var ii = 0;
 		[4,5,6,7,8,9,10].forEach( x => {
 			years[year][ii] += parseInt(statarray[i][x]);
+			years.total[ii] += parseInt(statarray[i][x]);
 			ii++;
 		});
 
@@ -81,6 +82,19 @@ class PlayerStats extends HTMLElement {
 
 		tbodya.appendChild(tr);
 	}
+	var tr = document.createElement('tr');
+	tr.classList.add("tr1");
+	var td = document.createElement('td');
+	td.textContent = 'Total';
+	tr.appendChild(td);
+	[0,1,2,3,4,5,6].forEach( x => {
+		td = document.createElement('td');
+		td.textContent = years.total[x];
+		tr.appendChild(td);
+	});
+	
+
+	tbodya.appendChild(tr);
   }
   
 	
