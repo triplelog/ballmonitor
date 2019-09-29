@@ -263,8 +263,12 @@ class BoxScore extends HTMLElement {
 		td = document.createElement('td');
 		td.textContent = linescorearray[1][i];
 		td.id = 'pbpHalf_H-'+i;
+		contentstr = '';
+		for (var ii=0;ii<playarray[1][i-1].length;ii++){
+			contentstr += playarray[1][i-1][ii] + '<br>';
+		}
 		tippy(td, {
-		  content: playarray[1][i-1],
+		  content: contentstr,
 		})
 		//td.addEventListener('click', e => {alert(e.target.id);});
 		row2.appendChild(td);

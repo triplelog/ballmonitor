@@ -83,7 +83,7 @@ class TabDNPlayer extends TabDN {
 		for (var ii=0;ii*2 + 1<retmess[0].length;ii++) {
 			this.colInfo[parseInt(retmess[0][ii*2 + 1])]=retmess[0][ii*2];
 		}
-		for (var ii=1;ii<retmess.length;ii++) {
+		for (var ii=1;ii<2;ii++) {
 			if (boxes.length > ii - 1){
 				//boxes[ii-1].setAttribute("src",retmess[ii][1]);
 				boxes[ii-1].setAttribute("src","aaroh101battingstats");
