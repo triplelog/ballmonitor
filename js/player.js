@@ -61,7 +61,7 @@ class PlayerStats extends HTMLElement {
 		
 		var ii = 0;
 		[4,5,6,7,8,9,10].forEach( x => {
-			if (parseInt(statarray[i][27])!=1) {
+			if (parseInt(statarray[i][27])==1) {
 				years[year][ii] += parseInt(statarray[i][x]);
 				years.total[ii] += parseInt(statarray[i][x]);
 			}
@@ -93,6 +93,77 @@ class PlayerStats extends HTMLElement {
 	[0,1,2,3,4,5,6].forEach( x => {
 		td = document.createElement('td');
 		td.textContent = years.total[x];
+		tr.appendChild(td);
+	});
+	
+	this.playerStats = statarray;
+	this.seasonstats(1957);
+	tbodya.appendChild(tr);
+  }
+  
+  seasonstats(seasonYear) {
+  	var statarray = this.playerStats;
+  	var offboxa = this.shadowRoot.querySelector('#season-location');
+  	var theada = offboxa.querySelector('thead').querySelector('tr');
+  	var tbodya = offboxa.querySelector('tbody');
+  	theada.innerHTML = '';
+  	tbodya.innerHTML = '';
+  	['Name','PA','AB','H','BB','R','RBI','K'].forEach(x => {
+  		var th = document.createElement('th');
+		th.textContent = x;
+		theada.appendChild(th);
+	});
+	console.log(statarray);
+	
+	var currentOrder = 0;
+	var currentClass = 1;
+	var months = {total:[0,0,0,0,0,0,0]};
+	for (var i=1;i<statarray.length;i++){
+		if (statarray[i].length < 10){continue;}
+		var year = statarray[i][0].substring(0,4);
+		if (parseInt(year) != parseInt(seasonYear)){continue;}
+		var month = statarray[i][0].substring(4,6);
+		if (months.hasOwnProperty(month)){
+			
+		}
+		else {
+			months[month] = [0,0,0,0,0,0,0];
+		}
+		
+		var ii = 0;
+		[4,5,6,7,8,9,10].forEach( x => {
+			if (parseInt(statarray[i][27])==1) {
+				months[month][ii] += parseInt(statarray[i][x]);
+				months.total[ii] += parseInt(statarray[i][x]);
+			}
+			ii++;
+		});
+
+	}
+	for(month in months){
+		if (month == 'total'){continue;}
+		var tr = document.createElement('tr');
+		tr.classList.add("tr1");
+		var td = document.createElement('td');
+		td.textContent = month;
+		tr.appendChild(td);
+		[0,1,2,3,4,5,6].forEach( x => {
+			td = document.createElement('td');
+			td.textContent = years[year][x];
+			tr.appendChild(td);
+		});
+		
+
+		tbodya.appendChild(tr);
+	}
+	var tr = document.createElement('tr');
+	tr.classList.add("tr1");
+	var td = document.createElement('td');
+	td.textContent = 'Total';
+	tr.appendChild(td);
+	[0,1,2,3,4,5,6].forEach( x => {
+		td = document.createElement('td');
+		td.textContent = months.total[x];
 		tr.appendChild(td);
 	});
 	
