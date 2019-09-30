@@ -877,3 +877,4 @@ function postfixify(input_str,colInfo) {
 	var fullstr = firstpart.join("_")+'@'+twoparts[1];
 	return fullstr;
 }
+var monthnames = ["","January","February","March","April","May","June","July","August","September","October","November","December"];

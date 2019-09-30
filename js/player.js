@@ -96,21 +96,32 @@ class PlayerStats extends HTMLElement {
 	});
 	
 	this.playerStats = statarray;
-	this.seasonstats(1957);
+	this.seasonstats(parseInt(statarray[1][0].substring(0,4)));
 	tbodya.appendChild(tr);
   }
   
   seasonstats(seasonYear) {
   	var statarray = this.playerStats;
+  	var statobjects = {};
   	var offboxa = this.shadowRoot.querySelector('#season-location');
   	var theada = offboxa.querySelector('thead').querySelector('tr');
   	var tbodya = offboxa.querySelector('tbody');
   	theada.innerHTML = '';
   	tbodya.innerHTML = '';
-  	['Name','PA','AB','H','BB','R','RBI','K'].forEach(x => {
-  		var th = document.createElement('th');
-		th.textContent = x;
+  	
+  	var th = document.createElement('th');
+	th.textContent = 'Month';
+	theada.appendChild(th);
+
+  	[['PA','PA'],['AB','AB'],['H','H'],['BB','BB'],['R','R'],['RBI','RBI'],['K','K']].forEach(x => {
+  		th = document.createElement('th');
+		th.textContent = x[1];
 		theada.appendChild(th);
+		for (var i = 0;i<statarray[0].length;i++){
+			if (statarray[0][i]==x[0]){
+				statobjects[x[0]]=i;
+			}
+		}
 	});
 	var currentOrder = 0;
 	var currentClass = 1;
@@ -128,13 +139,13 @@ class PlayerStats extends HTMLElement {
 		}
 		
 		var ii = 0;
-		[4,5,6,7,8,9,10].forEach( x => {
+		for (stat in statobjects) {
 			if (parseInt(statarray[i][27])==1) {
-				months[month][ii] += parseInt(statarray[i][x]);
-				months.total[ii] += parseInt(statarray[i][x]);
+				months[month][ii] += parseInt(statarray[i][statobjects[stat]]);
+				months.total[ii] += parseInt(statarray[i][statobjects[stat]]);
 			}
 			ii++;
-		});
+		}
 
 	}
 	for(month in months){
@@ -142,13 +153,15 @@ class PlayerStats extends HTMLElement {
 		var tr = document.createElement('tr');
 		tr.classList.add("tr1");
 		var td = document.createElement('td');
-		td.textContent = month;
+		td.textContent = monthnames[parseInt(month)];
 		tr.appendChild(td);
-		[0,1,2,3,4,5,6].forEach( x => {
+		var ii = 0;
+		for (stat in statobjects) {
 			td = document.createElement('td');
-			td.textContent = months[month][x];
+			td.textContent = months[month][ii];
 			tr.appendChild(td);
-		});
+			ii++
+		}
 		
 
 		tbodya.appendChild(tr);
