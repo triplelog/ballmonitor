@@ -68,7 +68,7 @@ class PlayerStats extends HTMLElement {
 		});
 
 	}
-	for(year in years){
+	for(var year in years){
 		if (year == 'total'){continue;}
 		var tr = document.createElement('tr');
 		tr.classList.add("tr1");
@@ -140,7 +140,7 @@ class PlayerStats extends HTMLElement {
 		}
 		
 		var ii = 0;
-		for(stat in statobjects) {
+		for(var stat in statobjects) {
 			if (parseInt(statarray[i][27])==1) {
 				months[month][ii] += parseInt(statarray[i][statobjects[stat]]);
 				months.total[ii] += parseInt(statarray[i][statobjects[stat]]);
@@ -157,7 +157,7 @@ class PlayerStats extends HTMLElement {
 		td.textContent = monthnames[parseInt(month)];
 		tr.appendChild(td);
 		var ii = 0;
-		for (stat in statobjects) {
+		for (var stat in statobjects) {
 			td = document.createElement('td');
 			td.textContent = months[month][ii];
 			tr.appendChild(td);
