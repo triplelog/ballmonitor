@@ -34,7 +34,7 @@ class PlayerStats extends HTMLElement {
   }
   
   stats(statarray) {
-  	var offboxa = this.shadowRoot.querySelector('#stats-location');
+  	var offboxa = this.shadowRoot.querySelector('#career-location');
   	var theada = offboxa.querySelector('thead').querySelector('tr');
   	var tbodya = offboxa.querySelector('tbody');
   	theada.innerHTML = '';
