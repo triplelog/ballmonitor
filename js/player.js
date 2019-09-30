@@ -44,7 +44,6 @@ class PlayerStats extends HTMLElement {
 		th.textContent = x;
 		theada.appendChild(th);
 	});
-	console.log(statarray);
 	
 	var currentOrder = 0;
 	var currentClass = 1;
@@ -113,8 +112,6 @@ class PlayerStats extends HTMLElement {
 		th.textContent = x;
 		theada.appendChild(th);
 	});
-	console.log(statarray);
-	
 	var currentOrder = 0;
 	var currentClass = 1;
 	var months = {total:[0,0,0,0,0,0,0]};
@@ -149,7 +146,7 @@ class PlayerStats extends HTMLElement {
 		tr.appendChild(td);
 		[0,1,2,3,4,5,6].forEach( x => {
 			td = document.createElement('td');
-			td.textContent = years[year][x];
+			td.textContent = months[month][x];
 			tr.appendChild(td);
 		});
 		
