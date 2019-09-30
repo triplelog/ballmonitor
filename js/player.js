@@ -120,6 +120,7 @@ class PlayerStats extends HTMLElement {
 		for (var i = 0;i<statarray[0].length;i++){
 			if (statarray[0][i]==x[0]){
 				statobjects[x[0]]=i;
+				break;
 			}
 		}
 	});
