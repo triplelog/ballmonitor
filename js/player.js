@@ -87,10 +87,12 @@ class PlayerStats extends HTMLElement {
 		var td = document.createElement('td');
 		td.textContent = year;
 		tr.appendChild(td);
+		var ii = 0;
 		for (var stat in statobjects) {
 			td = document.createElement('td');
-			td.textContent = years[year][x];
+			td.textContent = years[year][ii];
 			tr.appendChild(td);
+			ii++;
 		}
 		
 
@@ -175,7 +177,7 @@ class PlayerStats extends HTMLElement {
 			td = document.createElement('td');
 			td.textContent = months[month][ii];
 			tr.appendChild(td);
-			ii++
+			ii++;
 		}
 		
 
