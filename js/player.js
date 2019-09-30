@@ -61,7 +61,7 @@ class PlayerStats extends HTMLElement {
 		
 		var ii = 0;
 		[4,5,6,7,8,9,10].forEach( x => {
-			if (statarray[i][27]==0) {
+			if (parseInt(statarray[i][27])==1) {
 				years[year][ii] += parseInt(statarray[i][x]);
 				years.total[ii] += parseInt(statarray[i][x]);
 			}
