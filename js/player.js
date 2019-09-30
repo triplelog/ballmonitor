@@ -45,8 +45,8 @@ class PlayerStats extends HTMLElement {
   		}
   	}
   	this.displayStats.push([cid,cid]);
-  	stats(this.playerStats);
-  	seasonstats(this.currentYear);
+  	this.stats(this.playerStats);
+  	this.seasonstats(this.currentYear);
   }
   
   stats(statarray) {
