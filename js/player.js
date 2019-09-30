@@ -61,8 +61,10 @@ class PlayerStats extends HTMLElement {
 		
 		var ii = 0;
 		[4,5,6,7,8,9,10].forEach( x => {
-			years[year][ii] += parseInt(statarray[i][x]);
-			years.total[ii] += parseInt(statarray[i][x]);
+			if (statarray[i][28]==0) {
+				years[year][ii] += parseInt(statarray[i][x]);
+				years.total[ii] += parseInt(statarray[i][x]);
+			}
 			ii++;
 		});
 
@@ -121,6 +123,7 @@ class TabDNPlayer extends TabDN {
 		for (var ii=0;ii*2 + 1<retmess[0].length;ii++) {
 			this.colInfo[parseInt(retmess[0][ii*2 + 1])]=retmess[0][ii*2];
 		}
+		console.log(this.colInfo);
 		for (var ii=1;ii<2;ii++) {
 			if (players.length > ii - 1){
 				//boxes[ii-1].setAttribute("src",retmess[ii][1]);
