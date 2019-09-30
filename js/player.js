@@ -139,7 +139,7 @@ class PlayerStats extends HTMLElement {
 		}
 		
 		var ii = 0;
-		for (stat in statobjects) {
+		for(stat in statobjects) {
 			if (parseInt(statarray[i][27])==1) {
 				months[month][ii] += parseInt(statarray[i][statobjects[stat]]);
 				months.total[ii] += parseInt(statarray[i][statobjects[stat]]);
