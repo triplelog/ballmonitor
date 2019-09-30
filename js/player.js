@@ -39,10 +39,22 @@ class PlayerStats extends HTMLElement {
   	var tbodya = offboxa.querySelector('tbody');
   	theada.innerHTML = '';
   	tbodya.innerHTML = '';
-  	['Name','PA','AB','H','BB','R','RBI','K'].forEach(x => {
-  		var th = document.createElement('th');
-		th.textContent = x;
+  	var statobjects = {};
+  	
+  	var th = document.createElement('th');
+	th.textContent = 'Month';
+	theada.appendChild(th);
+
+  	[['PA','PA'],['AB','AB'],['H','H'],['BB','BB'],['R','R'],['RBI','RBI'],['K','K']].forEach(x => {
+  		th = document.createElement('th');
+		th.textContent = x[1];
 		theada.appendChild(th);
+		for (var i = 0;i<statarray[0].length;i++){
+			if (statarray[0][i]==x[0]){
+				statobjects[x[0]]=i;
+				break;
+			}
+		}
 	});
 	
 	var currentOrder = 0;
@@ -59,13 +71,13 @@ class PlayerStats extends HTMLElement {
 		}
 		
 		var ii = 0;
-		[4,5,6,7,8,9,10].forEach( x => {
+		for(var stat in statobjects) {
 			if (parseInt(statarray[i][27])==1) {
-				years[year][ii] += parseInt(statarray[i][x]);
-				years.total[ii] += parseInt(statarray[i][x]);
+				years[year]][ii] += parseInt(statarray[i][statobjects[stat]]);
+				years.total[ii] += parseInt(statarray[i][statobjects[stat]]);
 			}
 			ii++;
-		});
+		}
 
 	}
 	for(var year in years){
@@ -75,11 +87,11 @@ class PlayerStats extends HTMLElement {
 		var td = document.createElement('td');
 		td.textContent = year;
 		tr.appendChild(td);
-		[0,1,2,3,4,5,6].forEach( x => {
+		for (var stat in statobjects) {
 			td = document.createElement('td');
 			td.textContent = years[year][x];
 			tr.appendChild(td);
-		});
+		}
 		
 
 		tbodya.appendChild(tr);
@@ -89,11 +101,13 @@ class PlayerStats extends HTMLElement {
 	var td = document.createElement('td');
 	td.textContent = 'Total';
 	tr.appendChild(td);
-	[0,1,2,3,4,5,6].forEach( x => {
+	var ii = 0;
+	for (var stat in statobjects) {
 		td = document.createElement('td');
-		td.textContent = years.total[x];
+		td.textContent =  years.total[ii];
 		tr.appendChild(td);
-	});
+		ii++;
+	}
 	
 	this.playerStats = statarray;
 	this.seasonstats(parseInt(statarray[1][0].substring(0,4)));
@@ -172,11 +186,13 @@ class PlayerStats extends HTMLElement {
 	var td = document.createElement('td');
 	td.textContent = 'Total';
 	tr.appendChild(td);
-	[0,1,2,3,4,5,6].forEach( x => {
+	var ii = 0;
+	for (var stat in statobjects) {
 		td = document.createElement('td');
-		td.textContent = months.total[x];
+		td.textContent = months.total[ii];
 		tr.appendChild(td);
-	});
+		ii++;
+	}
 	
 
 	tbodya.appendChild(tr);
