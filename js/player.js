@@ -11,7 +11,11 @@ class PlayerStats extends HTMLElement {
     let templateContent = template.content;
 
     const shadowRoot = this.attachShadow({mode: 'open'}).appendChild(templateContent.cloneNode(true));
-
+	this.displayStats = [['PA','PA'],['AB','AB'],['H','H'],['BB','BB'],['R','R'],['RBI','RBI'],['K','K'],['HR','HR']];
+  	this.zeroStats = [];
+  	for (var i=0;i<this.displayStats.length;i++){
+  		this.zeroStats.push(0);
+  	}
 	
 
   }
@@ -41,11 +45,12 @@ class PlayerStats extends HTMLElement {
   	tbodya.innerHTML = '';
   	var statobjects = {};
   	
+  	
   	var th = document.createElement('th');
 	th.textContent = 'Month';
 	theada.appendChild(th);
 
-  	[['PA','PA'],['AB','AB'],['H','H'],['BB','BB'],['R','R'],['RBI','RBI'],['K','K'],['HR','HR']].forEach(x => {
+  	this.displayStats.forEach(x => {
   		th = document.createElement('th');
 		th.textContent = x[1];
 		theada.appendChild(th);
@@ -59,7 +64,7 @@ class PlayerStats extends HTMLElement {
 	
 	var currentOrder = 0;
 	var currentClass = 1;
-	var years = {total:[0,0,0,0,0,0,0]};
+	var years = {total:this.zeroStats.slice()};
 	for (var i=1;i<statarray.length;i++){
 		if (statarray[i].length < 10){continue;}
 		var year = statarray[i][0].substring(0,4);
@@ -67,7 +72,7 @@ class PlayerStats extends HTMLElement {
 			
 		}
 		else {
-			years[year] = [0,0,0,0,0,0,0];
+			years[year] = this.zeroStats.slice();
 		}
 		
 		var ii = 0;
@@ -129,7 +134,7 @@ class PlayerStats extends HTMLElement {
 	th.textContent = 'Month';
 	theada.appendChild(th);
 
-  	[['PA','PA'],['AB','AB'],['H','H'],['BB','BB'],['R','R'],['RBI','RBI'],['K','K'],['HR','HR']].forEach(x => {
+  	this.displayStats.forEach(x => {
   		th = document.createElement('th');
 		th.textContent = x[1];
 		theada.appendChild(th);
@@ -142,7 +147,7 @@ class PlayerStats extends HTMLElement {
 	});
 	var currentOrder = 0;
 	var currentClass = 1;
-	var months = {total:[0,0,0,0,0,0,0]};
+	var months = {total:this.zeroStats.slice()};
 	for (var i=1;i<statarray.length;i++){
 		if (statarray[i].length < 10){continue;}
 		var year = statarray[i][0].substring(0,4);
@@ -152,7 +157,7 @@ class PlayerStats extends HTMLElement {
 			
 		}
 		else {
-			months[month] = [0,0,0,0,0,0,0];
+			months[month] = this.zeroStats.slice();
 		}
 		
 		var ii = 0;
