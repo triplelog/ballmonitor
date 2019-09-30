@@ -31,10 +31,22 @@ class PlayerStats extends HTMLElement {
 
     jsonFile.onreadystatechange = function() {
         if (jsonFile.readyState== 4 && jsonFile.status == 200) {
-            _this.stats(Papa.parse(jsonFile.responseText).data);
+            _this.playerStats = Papa.parse(jsonFile.responseText).data;
+            _this.addColumn("1B");
         }
      }
     
+  }
+  
+  addColumn(cid) {
+  	for (var i=0;i<this.displayStats.length;i++){
+  		if (this.displayStats[i][0] == cid){
+  			return 0;
+  		}
+  	}
+  	this.displayStats.push([cid,cid]);
+  	stats(this.playerStats);
+  	seasonstats(this.currentYear);
   }
   
   stats(statarray) {
@@ -47,7 +59,7 @@ class PlayerStats extends HTMLElement {
   	
   	
   	var th = document.createElement('th');
-	th.textContent = 'Month';
+	th.textContent = 'Year';
 	theada.appendChild(th);
 
   	this.displayStats.forEach(x => {
@@ -123,6 +135,7 @@ class PlayerStats extends HTMLElement {
   
   seasonstats(seasonYear) {
   	var statarray = this.playerStats;
+  	this.currentYear = seasonYear;
   	var statobjects = {};
   	var offboxa = this.shadowRoot.querySelector('#season-location');
   	var theada = offboxa.querySelector('thead').querySelector('tr');
