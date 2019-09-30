@@ -45,7 +45,7 @@ class PlayerStats extends HTMLElement {
 	th.textContent = 'Month';
 	theada.appendChild(th);
 
-  	[['PA','PA'],['AB','AB'],['H','H'],['BB','BB'],['R','R'],['RBI','RBI'],['K','K']].forEach(x => {
+  	[['PA','PA'],['AB','AB'],['H','H'],['BB','BB'],['R','R'],['RBI','RBI'],['K','K'],['HR','HR']].forEach(x => {
   		th = document.createElement('th');
 		th.textContent = x[1];
 		theada.appendChild(th);
@@ -129,7 +129,7 @@ class PlayerStats extends HTMLElement {
 	th.textContent = 'Month';
 	theada.appendChild(th);
 
-  	[['PA','PA'],['AB','AB'],['H','H'],['BB','BB'],['R','R'],['RBI','RBI'],['K','K']].forEach(x => {
+  	[['PA','PA'],['AB','AB'],['H','H'],['BB','BB'],['R','R'],['RBI','RBI'],['K','K'],['HR','HR']].forEach(x => {
   		th = document.createElement('th');
 		th.textContent = x[1];
 		theada.appendChild(th);
@@ -223,7 +223,6 @@ class TabDNPlayer extends TabDN {
 		for (var ii=0;ii*2 + 1<retmess[0].length;ii++) {
 			this.colInfo[parseInt(retmess[0][ii*2 + 1])]=retmess[0][ii*2];
 		}
-		console.log(this.colInfo);
 		for (var ii=1;ii<2;ii++) {
 			if (players.length > ii - 1){
 				//boxes[ii-1].setAttribute("src",retmess[ii][1]);
