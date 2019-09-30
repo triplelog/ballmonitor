@@ -11,7 +11,7 @@ class PlayerStats extends HTMLElement {
     let templateContent = template.content;
 
     const shadowRoot = this.attachShadow({mode: 'open'}).appendChild(templateContent.cloneNode(true));
-	this.displayStats = [['PA','PA'],['AB','AB'],['H','H'],['BB','BB'],['R','R'],['RBI','RBI'],['K','K'],['HR','HR']];
+	this.displayStats = [['PA','PA'],['AB','AB'],['H','H'],['BB','BB'],['RBI','RBI'],['R','R'],['K','K'],['HR','HR']];
   	this.zeroStats = [];
   	for (var i=0;i<this.displayStats.length;i++){
   		this.zeroStats.push(0);
