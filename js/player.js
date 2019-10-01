@@ -142,7 +142,16 @@ class PlayerStats extends HTMLElement {
 		theada.appendChild(th);
 		var cols = x[0].split('@')[0].split('_');
 		for (var ii=0;ii<cols.length;ii++){
-			statobjects.push(parseInt(cols[ii].substring(1,)));
+			var ncol = parseInt(cols[ii].substring(1,));
+			for (var iii=0;iii<statobjects.length;iii++) {
+				if (ncol == statobjects[iii]) {
+					break;
+				}
+				else if (iii == statobjects.length-1){
+					statobjects.push(ncol);
+				}
+			}
+			
 		}
 	});
 	
