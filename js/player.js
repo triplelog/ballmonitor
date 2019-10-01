@@ -64,8 +64,10 @@ class PlayerStats extends HTMLElement {
             _this.addColumn("AB","AB","0");
             _this.addColumn("H/AB","AVG","=3");
             _this.addColumn("AVG+1","AAA","=3");
-            _this.addColumn("HR/AB","HRP","=3");
             _this.sortInfo = [[0,-1,'AVG'],[0,1,'']];
+            _this.stats(0);
+  			_this.stats(_this.currentYear);
+            _this.addColumn("HR/AB","HRP","=3");
             _this.stats(0);
   			_this.stats(_this.currentYear);
   		}
