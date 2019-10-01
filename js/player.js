@@ -18,7 +18,7 @@ class PlayerStats extends HTMLElement {
   	}
   	var ncbutton = this.shadowRoot.querySelector('#newcol');
   	tippy(ncbutton, {
-	  content: 'Name:<input type="text" /><br />Formula:<input type="text" /><br />Format:<input type="text" /><br /><button onclick="this.hide();">Submit</button><button>Cancel</button>',
+	  content: 'Name:<input type="text" /><br />Formula:<input type="text" /><br />Format:<input type="text" /><br /><button onclick="this.parentNode.parentNode.parentNode.hide();">Submit</button><button>Cancel</button>',
 	  interactive: true,
 	  trigger: "click",
 	  hideOnClick: false,
