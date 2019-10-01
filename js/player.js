@@ -22,6 +22,11 @@ class PlayerStats extends HTMLElement {
 	  trigger: "click",
 	  hideOnClick: false,
 	  placement: "bottom",
+	  onCreate(instance) {
+		console.log(_this.shadowRoot.querySelector('#tippyColumnButton'));
+		_this.shadowRoot.querySelector('#tippyColumnButton').addEventListener("click", e => {_this.tippyColumn.hide();});
+       
+	  },
 	  
 	});
   	
@@ -53,9 +58,7 @@ class PlayerStats extends HTMLElement {
             _this.sortInfo = [[0,-1,'AVG'],[0,1,'']];
             _this.stats(0);
   			_this.stats(_this.currentYear);
-  			console.log(_this.shadowRoot.querySelector('#tippyColumnButton'));
-			_this.shadowRoot.querySelector('#tippyColumnButton').addEventListener("click", e => {_this.tippyColumn.hide();});
-        }
+  		}
      }
     
   }
