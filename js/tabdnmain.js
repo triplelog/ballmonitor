@@ -892,6 +892,7 @@ function solvepostfixjs(a,x) {
 		}
 		stack.push(0);
 	}
+	console.log(a,x,intArray);
 
 
 
