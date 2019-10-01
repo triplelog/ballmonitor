@@ -877,14 +877,14 @@ function postfixify(input_str,colInfo) {
 	var fullstr = firstpart.join("_")+'@'+twoparts[1];
 	return fullstr;
 }
-function solvepostfixjs(years[year],x[0]) {
-	var exp = x[0].split('@')[1];
+function solvepostfixjs(a,x) {
+	var exp = x.split('@')[1];
 	var stack = [];
-	var rawArray = x[0].split('@')[0].split('_');
+	var rawArray = x.split('@')[0].split('_');
 	var intArray = [];
 	for (var i=0;i< rawArray.length;i++){
 		if (rawArray[0] = 'c'){
-			intArray.push(years[year][parseInt(rawArray.substring(1,))]);
+			intArray.push(a[parseInt(rawArray.substring(1,))]);
 		}
 		else {
 			intArray.push(parseInt(rawArray.substring(0,)));

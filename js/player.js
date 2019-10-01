@@ -119,7 +119,7 @@ class PlayerStats extends HTMLElement {
 			td = document.createElement('td');
 			td.textContent = solvepostfixjs(years[year],x[0]);
 			tr.appendChild(td);
-		}
+		});
 		
 
 		tbodya.appendChild(tr);
