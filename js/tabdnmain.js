@@ -925,12 +925,15 @@ function solvepostfixjs(a,x) {
 }
 function roundFixed(x,n=3,full=false) {
 	var xFixed = Number.parseFloat(x).toFixed(n);
-	if (full) {return xFixed;}
+	if (full) {
+		var di = xFixed.indexOf('.');
+		if (di == 1 && xFixed[0] == '0'){xFixed = xFixed.substring(1);}
+		return xFixed;
+	}
 	else {
 		var di = xFixed.indexOf('.');
 		if (di < 0){return xFixed;}
 		if (di == 1 && xFixed[0] == '0'){xFixed = xFixed.substring(1);}
-		console.log(xFixed);
 		var xfl = xFixed.length;
 		for (var i=xfl-1;i>=0;i--){
 			if (xFixed[i] == '0') {xFixed = xFixed.substring(0,i);}
