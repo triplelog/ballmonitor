@@ -92,6 +92,7 @@ class PlayerStats extends HTMLElement {
 		tippy(th, {
 		  content: contentstr,
 		  trigger: "click",
+		  hideOnClick: "false",
 		})
 		theada.appendChild(th);
 		var cols = x[0].split('@')[0].split('_');
