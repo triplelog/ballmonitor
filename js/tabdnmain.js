@@ -878,17 +878,19 @@ function postfixify(input_str,colInfo) {
 	return fullstr;
 }
 function solvepostfixjs(a,x) {
+	console.log(a);
+	console.log(x);
 	var exp = x.split('@')[1];
 	var stack = [];
 	var rawArray = x.split('@')[0].split('_');
 	var intArray = [];
 
 	for (var i=0;i< rawArray.length;i++){
-		if (rawArray[0] = 'c'){
-			intArray.push(a[parseInt(rawArray.substring(1,))]);
+		if (rawArray[i][0] = 'c'){
+			intArray.push(a[parseInt(rawArray[i].substring(1,))]);
 		}
 		else {
-			intArray.push(parseInt(rawArray.substring(0,)));
+			intArray.push(parseInt(rawArray[i].substring(0,)));
 		}
 		stack.push(0);
 	}
