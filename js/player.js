@@ -36,6 +36,7 @@ class PlayerStats extends HTMLElement {
             _this.addColumn("H","H");
             _this.addColumn("AB","AB");
             _this.addColumn("H/AB","AVG");
+            _this.addColumn("AVG+1","AAA");
             _this.stats(0);
   			_this.stats(_this.currentYear);
         }
@@ -136,7 +137,8 @@ class PlayerStats extends HTMLElement {
 		
 		this.displayStats.forEach(x => {
 			td = document.createElement('td');
-			td.textContent = solvepostfixjs(years[year],x[0]);
+			var nc = parseInt(postfixify(x[1],this.colInfo).split['@'][0].substring(1,));
+			td.textContent, years[year] = solvepostfixjs(years[year],x[0],nc);
 			tr.appendChild(td);
 		});
 		
@@ -151,7 +153,8 @@ class PlayerStats extends HTMLElement {
 	var ii = 0;
 	this.displayStats.forEach(x => {
 		td = document.createElement('td');
-		td.textContent =  solvepostfixjs(years.total,x[0]);
+		var nc = parseInt(postfixify(x[1],this.colInfo).split['@'][0].substring(1,));
+		td.textContent, years.total =  solvepostfixjs(years.total,x[0],nc);
 		tr.appendChild(td);
 		ii++;
 	});

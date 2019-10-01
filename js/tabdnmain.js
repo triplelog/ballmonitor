@@ -877,7 +877,7 @@ function postfixify(input_str,colInfo) {
 	var fullstr = firstpart.join("_")+'@'+twoparts[1];
 	return fullstr;
 }
-function solvepostfixjs(a,x) {
+function solvepostfixjs(a,x,c) {
 	var exp = x.split('@')[1];
 	var stack = [];
 	var rawArray = x.split('@')[0].split('_');
@@ -920,8 +920,8 @@ function solvepostfixjs(a,x) {
     } 
 
 
-
-	return stack[0];
+	a[c] = stack[0];
+	return stack[0],a;
 
 }
 var monthnames = ["","January","February","March","April","May","June","July","August","September","October","November","December"];
