@@ -137,7 +137,6 @@ class PlayerStats extends HTMLElement {
 			var nc = parseInt(postfixify(x[1],this.colInfo).split('@')[0].substring(1,));
 			var ncd = solvepostfixjs(years[year],x[0]);
 			years[year][nc] = ncd;
-			console.log(x);
 			if (x[3][0] == '='){
 				oneyear.push([ncd,roundFixed(ncd,parseInt(x[3].substring(1)),true)]);
 			}
