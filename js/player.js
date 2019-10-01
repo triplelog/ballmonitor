@@ -66,6 +66,9 @@ class PlayerStats extends HTMLElement {
   	if (this.sortInfo[x][2] == e.target.textContent){
   		this.sortInfo[x][1] = -1*this.sortInfo[x][1];
   	}
+  	else {
+  		this.sortInfo[x][1] = -1;
+  	}
   	this.sortInfo[x][2] = e.target.textContent;
   	this.stats(0);
   	this.stats(this.currentYear);
@@ -92,9 +95,11 @@ class PlayerStats extends HTMLElement {
   	var th = document.createElement('th');
   	if (seasonYear != 0){
 		th.textContent = 'Month';
+		th.addEventListener("click", e => {this.sortBy(e,1);});
 	}
 	else {
 		th.textContent = 'Year';
+		th.addEventListener("click", e => {this.sortBy(e,0);});
 	}
 	theada.appendChild(th);
   	this.displayStats.forEach(x => {
@@ -149,7 +154,7 @@ class PlayerStats extends HTMLElement {
 	
 	for(var year in years){
 		if (year == 'total'){continue;}
-		var oneyear = [[year,year]];
+		var oneyear = [[parseInt(year),year]];
 		if (seasonYear != 0){oneyear[0][1] = monthnames[parseInt(year)];}
 		var i = 1;
 		this.displayStats.forEach(x => {
