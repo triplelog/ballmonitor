@@ -138,7 +138,9 @@ class PlayerStats extends HTMLElement {
 		this.displayStats.forEach(x => {
 			td = document.createElement('td');
 			var nc = parseInt(postfixify(x[1],this.colInfo).split('@')[0].substring(1,));
-			td.textContent, years[year] = solvepostfixjs(years[year],x[0],nc);
+			var ncd = solvepostfixjs(years[year],x[0])
+			td.textContent = ncd;
+			years[year][nc] = ncd;
 			tr.appendChild(td);
 		});
 		
@@ -154,7 +156,9 @@ class PlayerStats extends HTMLElement {
 	this.displayStats.forEach(x => {
 		td = document.createElement('td');
 		var nc = parseInt(postfixify(x[1],this.colInfo).split('@')[0].substring(1,));
-		td.textContent, years.total =  solvepostfixjs(years.total,x[0],nc);
+		var ncd = solvepostfixjs(years.total,x[0])
+		td.textContent = ncd;
+		years.total[nc] = ncd;
 		tr.appendChild(td);
 		ii++;
 	});
