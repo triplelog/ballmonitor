@@ -47,9 +47,9 @@ class PlayerStats extends HTMLElement {
   	this.zeroStats.push(0);
   	this.colInfo = {};
   	for (var i = 0;i<this.playerStats[0].length;i++){
-  		colInfo[i] = this.playerStats[0][i];
+  		this.colInfo[i] = this.playerStats[0][i];
 	}
-  	console.log(postfixify("H/AB"));
+  	console.log(postfixify("H/AB",this.colInfo));
   	this.displayStats.push([cformula,cname]);
   	this.stats(this.playerStats);
   	this.seasonstats(this.currentYear);
