@@ -877,4 +877,50 @@ function postfixify(input_str,colInfo) {
 	var fullstr = firstpart.join("_")+'@'+twoparts[1];
 	return fullstr;
 }
+function solvepostfixjs(years[year],x[0]) {
+	var exp = x[0].split('@')[1];
+	var stack = [];
+	var rawArray = x[0].split('@')[0].split('_');
+	var intArray = [];
+	for (var i=0;i< rawArray.length;i++){
+		if (rawArray[0] = 'c'){
+			intArray.push(years[year][parseInt(rawArray.substring(1,))]);
+		}
+		else {
+			intArray.push(parseInt(rawArray.substring(0,)));
+		}
+		stack.push(0);
+	}
+
+
+	int i;
+  	int currentIndex = 0;
+  	int arrayIndex = 0;
+
+    for (i = 0; i<exp.length; i++) 
+    { 
+        if (exp[i] == '#') {
+        	stack[currentIndex] = intArray[arrayIndex];
+        	currentIndex++;
+        	arrayIndex++;
+  
+        } else 
+        { 
+            switch (exp[i]) 
+            { 
+	            case '+': stack[currentIndex - 2] = stack[currentIndex - 2] + stack[currentIndex - 1]; break; 
+	            case '-': stack[currentIndex - 2] = stack[currentIndex - 2] - stack[currentIndex - 1]; break; 
+	            case '*': stack[currentIndex - 2] = stack[currentIndex - 2] * stack[currentIndex - 1]; break; 
+	            case '/': stack[currentIndex - 2] = stack[currentIndex - 2] / stack[currentIndex - 1]; break;
+	            
+            } 
+            currentIndex--;
+        } 
+    } 
+
+
+
+	return stack[0];
+
+}
 var monthnames = ["","January","February","March","April","May","June","July","August","September","October","November","December"];

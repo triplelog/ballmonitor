@@ -11,7 +11,7 @@ class PlayerStats extends HTMLElement {
     let templateContent = template.content;
 
     const shadowRoot = this.attachShadow({mode: 'open'}).appendChild(templateContent.cloneNode(true));
-	this.displayStats = [['PA','PA'],['AB','AB'],['H','H'],['BB','BB'],['RBI','RBI'],['R','R'],['K','K'],['HR','HR']];
+	this.displayStats = [];
   	this.zeroStats = [];
   	for (var i=0;i<this.displayStats.length;i++){
   		this.zeroStats.push(0);
@@ -32,7 +32,7 @@ class PlayerStats extends HTMLElement {
     jsonFile.onreadystatechange = function() {
         if (jsonFile.readyState== 4 && jsonFile.status == 200) {
             _this.playerStats = Papa.parse(jsonFile.responseText).data;
-            _this.addColumn("1B","1B");
+            _this.addColumn("H/AB","AVG");
         }
      }
     
@@ -40,17 +40,19 @@ class PlayerStats extends HTMLElement {
   
   addColumn(cformula,cname) {
   	for (var i=0;i<this.displayStats.length;i++){
-  		if (this.displayStats[i][0] == cformula || this.displayStats[i][1] == cname){
+  		if (this.displayStats[i][1] == cname){
   			return 0;
   		}
   	}
-  	this.zeroStats.push(0);
   	this.colInfo = {};
   	for (var i = 0;i<this.playerStats[0].length;i++){
   		this.colInfo[i] = this.playerStats[0][i];
 	}
-  	console.log(postfixify("H/AB",this.colInfo));
-  	this.displayStats.push([cformula,cname]);
+  	console.log(postfixify(cformula,this.colInfo));
+  	this.displayStats.push([postfixify(cformula,this.colInfo),cname]);
+  	if (postfixify(cformula,this.colInfo).split('_').length>1){
+  		this.colInfo[i] = cname;
+  	}
   	this.stats(this.playerStats);
   	this.seasonstats(this.currentYear);
   }
@@ -61,28 +63,29 @@ class PlayerStats extends HTMLElement {
   	var tbodya = offboxa.querySelector('tbody');
   	theada.innerHTML = '';
   	tbodya.innerHTML = '';
-  	var statobjects = {};
+  	var statobjects = [];
   	
   	
   	var th = document.createElement('th');
 	th.textContent = 'Year';
 	theada.appendChild(th);
-
   	this.displayStats.forEach(x => {
   		th = document.createElement('th');
 		th.textContent = x[1];
 		theada.appendChild(th);
-		for (var i = 0;i<statarray[0].length;i++){
-			if (statarray[0][i]==x[0]){
-				statobjects[x[0]]=i;
-				break;
-			}
+		var cols = x[0].split('@')[0].split('_');
+		for (var ii=0;ii<cols.length;ii++){
+			statobjects.push(parseInt(cols[ii].substring(1,)));
 		}
 	});
 	
 	var currentOrder = 0;
 	var currentClass = 1;
-	var years = {total:this.zeroStats.slice()};
+	
+	var years = {total:{}};
+	for (var ii=0;ii<statobjects.length;ii++){
+		years.total =  0;
+	}
 	for (var i=1;i<statarray.length;i++){
 		if (statarray[i].length < 10){continue;}
 		var year = statarray[i][0].substring(0,4);
@@ -90,16 +93,17 @@ class PlayerStats extends HTMLElement {
 			
 		}
 		else {
-			years[year] = this.zeroStats.slice();
+			years[year] = {};
+			for (var ii=0;ii<statobjects.length;ii++){
+				years[year][statobjects[ii]] =  0;
+			}
 		}
 		
-		var ii = 0;
-		for(var stat in statobjects) {
-			if (parseInt(statarray[i][27])==1) {
-				years[year][ii] += parseInt(statarray[i][statobjects[stat]]);
-				years.total[ii] += parseInt(statarray[i][statobjects[stat]]);
+		for (var ii=0;ii<statobjects.length;ii++){
+			if (parseInt(statarray[i][27])==1 && statobjects[ii] < statarray[i].length) {
+				years[year][statobjects[ii]] += parseInt(statarray[i][statobjects[ii]]);
+				years.total[statobjects[ii]] += parseInt(statarray[i][statobjects[ii]]);
 			}
-			ii++;
 		}
 
 	}
@@ -110,12 +114,11 @@ class PlayerStats extends HTMLElement {
 		var td = document.createElement('td');
 		td.textContent = year;
 		tr.appendChild(td);
-		var ii = 0;
-		for (var stat in statobjects) {
+		
+		this.displayStats.forEach(x => {
 			td = document.createElement('td');
-			td.textContent = years[year][ii];
+			td.textContent = solvepostfixjs(years[year],x[0]);
 			tr.appendChild(td);
-			ii++;
 		}
 		
 
