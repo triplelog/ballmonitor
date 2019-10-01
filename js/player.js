@@ -137,11 +137,12 @@ class PlayerStats extends HTMLElement {
 			var nc = parseInt(postfixify(x[1],this.colInfo).split('@')[0].substring(1,));
 			var ncd = solvepostfixjs(years[year],x[0]);
 			years[year][nc] = ncd;
+			console.log(x);
 			if (x[3][0] == '='){
-				oneyear.push([ncd,roundFixed(ncd,parseInt(x[3][0].substring(1)),true)]);
+				oneyear.push([ncd,roundFixed(ncd,parseInt(x[3].substring(1)),true)]);
 			}
 			else {
-				oneyear.push([ncd,roundFixed(ncd,parseInt(x[3][0]),false)]);
+				oneyear.push([ncd,roundFixed(ncd,parseInt(x[3]),false)]);
 			}
 			if (seasonYear == 0 && x[1] == this.sortInfo[0][2]){this.sortInfo[0][0] = i;}
 			else if (seasonYear != 0 && x[1] == this.sortInfo[1][2]){this.sortInfo[1][0] = i;}
