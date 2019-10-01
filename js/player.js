@@ -32,9 +32,12 @@ class PlayerStats extends HTMLElement {
     jsonFile.onreadystatechange = function() {
         if (jsonFile.readyState== 4 && jsonFile.status == 200) {
             _this.playerStats = Papa.parse(jsonFile.responseText).data;
+            _this.currentYear = parseInt(_this.playerStats[1][0].substring(0,4));
             _this.addColumn("H","H");
             _this.addColumn("AB","AB");
             _this.addColumn("H/AB","AVG");
+            _this.stats(0);
+  			_this.stats(_this.currentYear);
         }
      }
     
@@ -55,8 +58,7 @@ class PlayerStats extends HTMLElement {
   	if (postfixify(cformula,this.colInfo).split('_').length>1){
   		this.colInfo[i] = cname;
   	}
-  	this.stats(0);
-  	this.stats(this.currentYear);
+  	
   }
   
   stats(seasonYear=0) {
