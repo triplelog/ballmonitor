@@ -154,8 +154,6 @@ class PlayerStats extends HTMLElement {
 		ii++;
 	}
 	
-	this.playerStats = statarray;
-	this.seasonstats(parseInt(statarray[1][0].substring(0,4)));
 	tbodya.appendChild(tr);
   }
   
