@@ -923,4 +923,19 @@ function solvepostfixjs(a,x) {
 	return stack[0];
 
 }
+function roundFixed(x,n=3,full=false) {
+	var xFixed = Number.parseFloat(x).toFixed(n);
+	if (full) {return xFixed;}
+	else {
+		var di = xFixed.indexOf('.');
+		if (di < 0){return xFixed;}
+		for (var i=xFixed.length-1;i>=0;i--){
+			if (xFixed[i] == '0') {xFixed = xFixed.substring(,i);}
+			else if (xFixed[i] == '.' && i > 0) {xFixed = xFixed.substring(,i); return xFixed;}
+			else if (xFixed[i] == '.' && i == 0) {return "0";}
+			else {return xFixed;}
+		}
+		return xFixed;
+	}
+}
 var monthnames = ["","January","February","March","April","May","June","July","August","September","October","November","December"];

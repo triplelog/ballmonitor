@@ -157,7 +157,7 @@ class PlayerStats extends HTMLElement {
 		tr.classList.add("tr1");
 		for (var ii=0;ii<orderedData[i].length;ii++){
 			var td = document.createElement('td');
-			td.textContent = Number.parseFloat(orderedData[i][ii]).toFixed(3);
+			td.textContent =  roundFixed(orderedData[i][ii],3,true);
 			tr.appendChild(td);
 		}
 		tbodya.appendChild(tr);
@@ -172,7 +172,7 @@ class PlayerStats extends HTMLElement {
 		td = document.createElement('td');
 		var nc = parseInt(postfixify(x[1],this.colInfo).split('@')[0].substring(1,));
 		var ncd = solvepostfixjs(years.total,x[0])
-		td.textContent = Number.parseFloat(ncd).toFixed(3);
+		td.textContent = roundFixed(ncd,3,false);
 		years.total[nc] = ncd;
 		tr.appendChild(td);
 		ii++;
