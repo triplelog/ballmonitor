@@ -88,12 +88,6 @@ class PlayerStats extends HTMLElement {
   	this.displayStats.forEach(x => {
   		th = document.createElement('th');
 		th.textContent = x[1];
-		var contentstr = "Name:<input type='text' value='"+x[1]+"'/><br />Formula:<input type='text' value='"+x[2]+"' />";
-		tippy(th, {
-		  content: contentstr,
-		  trigger: "click",
-		  hideOnClick: "false",
-		})
 		theada.appendChild(th);
 		var cols = x[0].split('@')[0].split('_');
 		for (var ii=0;ii<cols.length;ii++){
@@ -133,24 +127,27 @@ class PlayerStats extends HTMLElement {
 		}
 
 	}
+	var orderedData = [];
 	for(var year in years){
 		if (year == 'total'){continue;}
+		var oneyear = [year];
+		this.displayStats.forEach(x => {
+			var nc = parseInt(postfixify(x[1],this.colInfo).split('@')[0].substring(1,));
+			var ncd = solvepostfixjs(years[year],x[0]);
+			years[year][nc] = ncd;
+			oneyear.push(ncd);
+		});
+		orderedData.push(oneyear);
+	}
+	orderedData.sort((a, b) => a[1] - b[1]);
+	for(var i=0;i<orderedData.length;i++){
 		var tr = document.createElement('tr');
 		tr.classList.add("tr1");
-		var td = document.createElement('td');
-		td.textContent = year;
-		tr.appendChild(td);
-		
-		this.displayStats.forEach(x => {
-			td = document.createElement('td');
-			var nc = parseInt(postfixify(x[1],this.colInfo).split('@')[0].substring(1,));
-			var ncd = solvepostfixjs(years[year],x[0])
-			td.textContent = ncd;
-			years[year][nc] = ncd;
+		for (var ii=0;ii<orderedData[i].length;ii++){
+			var td = document.createElement('td');
+			td.textContent = orderedData[i][ii];
 			tr.appendChild(td);
-		});
-		
-
+		}
 		tbodya.appendChild(tr);
 	}
 	var tr = document.createElement('tr');
