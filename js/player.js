@@ -131,7 +131,8 @@ class PlayerStats extends HTMLElement {
 	this.sortInfo = [[0,-1,'AVG'],[0,1,'']];
 	for(var year in years){
 		if (year == 'total'){continue;}
-		var oneyear = [year];
+		var oneyear = [[year,year]];
+		if (seasonYear != 0){oneyear[0][1] = monthnames[year];}
 		var i = 1;
 		this.displayStats.forEach(x => {
 			var nc = parseInt(postfixify(x[1],this.colInfo).split('@')[0].substring(1,));
