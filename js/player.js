@@ -63,7 +63,7 @@ class PlayerStats extends HTMLElement {
   }
   sortBy(e) {
   	this.sortInfo[0][2] = e.target.textContent;
-  	console.log(this.sortInfo)9;
+  	console.log(this.sortInfo);
   	this.stats(0);
   	this.stats(this.currentYear);
   }
