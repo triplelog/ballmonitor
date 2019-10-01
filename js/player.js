@@ -14,10 +14,6 @@ class PlayerStats extends HTMLElement {
 
     const shadowRoot = this.attachShadow({mode: 'open'}).appendChild(templateContent.cloneNode(true));
 	this.displayStats = [];
-  	this.zeroStats = [];
-  	for (var i=0;i<this.displayStats.length;i++){
-  		this.zeroStats.push(0);
-  	}
   	
   	var ncbutton = this.shadowRoot.querySelector('#newcol');
   	this.tippyColumn = tippy(ncbutton, {
