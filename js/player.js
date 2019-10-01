@@ -18,10 +18,10 @@ class PlayerStats extends HTMLElement {
   	}
   	var ncbutton = this.shadowRoot.querySelector('#newcol');
   	tippy(ncbutton, {
-	  content: 'Name:<input type="text" /><br />Formula:<input type="text" /><br />Format:<input type="text" />',
+	  content: 'Name:<input type="text" /><br />Formula:<input type="text" /><br />Format:<input type="text" /><br /><button>Submit</button>',
 	  interactive: true,
 	  trigger: "click",
-	  hideOnClick: false,
+	  placement: "bottom",
 	  
 	});
 	
