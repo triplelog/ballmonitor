@@ -172,7 +172,7 @@ class PlayerStats extends HTMLElement {
 		td = document.createElement('td');
 		var nc = parseInt(postfixify(x[1],this.colInfo).split('@')[0].substring(1,));
 		var ncd = solvepostfixjs(years.total,x[0])
-		td.textContent = ncd;
+		td.textContent = Number.parseFloat(ncd).toFixed(3);
 		years.total[nc] = ncd;
 		tr.appendChild(td);
 		ii++;
