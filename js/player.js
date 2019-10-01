@@ -26,8 +26,8 @@ class PlayerStats extends HTMLElement {
 	  
 	});
 	
-	console.log(this.shadowRoot.querySelector('#tippyColumn'));
-
+	console.log(this.shadowRoot.querySelector('#tippyColumnButton'));
+	this.shadowRoot.querySelector('#tippyColumnButton').addEventListener("click", e => {this.tippyColumn.hide();});
   }
   
   chgsrc() {
