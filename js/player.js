@@ -157,7 +157,7 @@ class PlayerStats extends HTMLElement {
 		tr.classList.add("tr1");
 		for (var ii=0;ii<orderedData[i].length;ii++){
 			var td = document.createElement('td');
-			td.textContent = orderedData[i][ii].toFixed(3);
+			td.textContent = Number.parseFloat(orderedData[i][ii]).toFixed(3);
 			tr.appendChild(td);
 		}
 		tbodya.appendChild(tr);
