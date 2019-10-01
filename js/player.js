@@ -24,8 +24,7 @@ class PlayerStats extends HTMLElement {
 	  placement: "bottom",
 	  onMount(instance) {
 		console.log(_this.shadowRoot.querySelector('#tippyColumnButton'));
-		_this.shadowRoot.querySelector('#tippyColumnButton').addEventListener("click", e => {this.hide();});
-       
+		_this.shadowRoot.querySelector('#tippyColumnButton').addEventListener("click", e => {_this.newcolumn(e);});
 	  },
 	  
 	});
@@ -37,6 +36,10 @@ class PlayerStats extends HTMLElement {
 	
   }
   
+  newcolumn(e) {
+  	console.log(e.target.parentNode);
+  	_this.tippyColumn.hide();
+  }
   chgsrc() {
   	var _this = this;
     this.playerid = this.getAttribute('src');
