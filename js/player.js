@@ -63,8 +63,10 @@ class PlayerStats extends HTMLElement {
   	
   }
   sortBy(e,x) {
+  	if (this.sortInfo[x][2] == e.target.textContent){
+  		this.sortInfo[x][1] = -1*this.sortInfo[x][1];
+  	}
   	this.sortInfo[x][2] = e.target.textContent;
-  	console.log(this.sortInfo);
   	this.stats(0);
   	this.stats(this.currentYear);
   }
@@ -75,6 +77,10 @@ class PlayerStats extends HTMLElement {
   	if (seasonYear != 0){
 		this.currentYear = seasonYear;
 		offboxa = this.shadowRoot.querySelector('#season-location');
+		this.sortInfo[1][0] = 0;
+  	}
+  	else {
+  		this.sortInfo[0][0] = 0;
   	}
   	var theada = offboxa.querySelector('thead').querySelector('tr');
   	var tbodya = offboxa.querySelector('tbody');
