@@ -132,7 +132,7 @@ class PlayerStats extends HTMLElement {
 	for(var year in years){
 		if (year == 'total'){continue;}
 		var oneyear = [[year,year]];
-		if (seasonYear != 0){oneyear[0][1] = monthnames[year];}
+		if (seasonYear != 0){oneyear[0][1] = monthnames[parseInt(year)];}
 		var i = 1;
 		this.displayStats.forEach(x => {
 			var nc = parseInt(postfixify(x[1],this.colInfo).split('@')[0].substring(1,));
