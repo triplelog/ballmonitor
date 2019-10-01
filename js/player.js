@@ -17,7 +17,7 @@ class PlayerStats extends HTMLElement {
   	
   	var ncbutton = this.shadowRoot.querySelector('#newcol');
   	this.tippyColumn = tippy(ncbutton, {
-	  content: 'Name:<input type="text" /><br />Formula:<input type="text" /><br />Format:<input type="text" /><br /><button id="tippyColumnButton">Submit</button><button>Cancel</button>',
+	  content: 'Name:<input type="text" id="colName"/><br />Formula:<input type="text" id="colFormula"/><br />Format:<input type="text" id="colFormat" /><br /><button id="tippyColumnButton">Submit</button><button>Cancel</button>',
 	  interactive: true,
 	  trigger: "click",
 	  hideOnClick: false,
@@ -37,8 +37,14 @@ class PlayerStats extends HTMLElement {
   }
   
   newcolumn(e) {
-  	console.log(e.target.parentNode);
-  	_this.tippyColumn.hide();
+  	var tippyNode = e.target.parentNode;
+  	console.log(tippyNode.querySelector('#colName').value);
+  	console.log(tippyNode.querySelector('#colFormula').value);
+  	console.log(tippyNode.querySelector('#colFormat').value);
+  	this.addColumn(tippyNode.querySelector('#colFormula').value,tippyNode.querySelector('#colName').value,"=3");
+    this.stats(0);
+  	this.stats(this.currentYear);
+  	this.tippyColumn.hide();
   }
   chgsrc() {
   	var _this = this;
