@@ -929,9 +929,10 @@ function roundFixed(x,n=3,full=false) {
 	else {
 		var di = xFixed.indexOf('.');
 		if (di < 0){return xFixed;}
-		for (var i=xFixed.length-1;i>=0;i--){
-			if (xFixed[i] == '0') {xFixed = xFixed.substring(,i);}
-			else if (xFixed[i] == '.' && i > 0) {xFixed = xFixed.substring(,i); return xFixed;}
+		var xfl = xFixed.length;
+		for (var i=xfl-1;i>=0;i--){
+			if (xFixed[i] == '0') {xFixed = xFixed.substring(0,i);}
+			else if (xFixed[i] == '.' && i > 0) {xFixed = xFixed.substring(0,i); return xFixed;}
 			else if (xFixed[i] == '.' && i == 0) {return "0";}
 			else {return xFixed;}
 		}
