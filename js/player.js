@@ -84,7 +84,7 @@ class PlayerStats extends HTMLElement {
 	
 	var years = {total:{}};
 	for (var ii=0;ii<statobjects.length;ii++){
-		years.total =  0;
+		years.total[statobjects[ii]] =  0;
 	}
 	for (var i=1;i<statarray.length;i++){
 		if (statarray[i].length < 10){continue;}
