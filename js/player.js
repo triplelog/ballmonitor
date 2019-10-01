@@ -146,6 +146,7 @@ class PlayerStats extends HTMLElement {
 			for (var iii=0;iii<statobjects.length+1;iii++) {
 				if (iii == statobjects.length){
 					statobjects.push(ncol);
+					break;
 				}
 				else if (ncol == statobjects[iii]) {
 					break;
