@@ -55,7 +55,7 @@ class PlayerStats extends HTMLElement {
   		this.colInfo[i] = this.playerStats[0][i];
 	}
   	console.log(postfixify(cformula,this.colInfo));
-  	this.displayStats.push([postfixify(cformula,this.colInfo),cname]);
+  	this.displayStats.push([postfixify(cformula,this.colInfo),cname,cFormula]);
   	if (postfixify(cformula,this.colInfo).split('_').length>1){
   		this.playerStats[0].push(cname);
   	}
@@ -88,8 +88,9 @@ class PlayerStats extends HTMLElement {
   	this.displayStats.forEach(x => {
   		th = document.createElement('th');
 		th.textContent = x[1];
+		var contentstr = "Name:<input type='text' value='"+x[1]+"'/><br />Formula:<input type='text' value='"+x[2]+"' />";
 		tippy(th, {
-		  content: x[1],
+		  content: contentstr,
 		  trigger: "click",
 		})
 		theada.appendChild(th);
