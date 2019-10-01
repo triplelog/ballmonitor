@@ -20,6 +20,8 @@ class PlayerStats extends HTMLElement {
   	tippy(ncbutton, {
 	  content: 'Name:<input type="text" /><br />Formula:<input type="text" /><br />Format:<input type="text" />',
 	  interactive: true,
+	  trigger: "click",
+	  hideOnClick: false,
 	  
 	});
 	
