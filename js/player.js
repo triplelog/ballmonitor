@@ -57,7 +57,7 @@ class PlayerStats extends HTMLElement {
   	console.log(postfixify(cformula,this.colInfo));
   	this.displayStats.push([postfixify(cformula,this.colInfo),cname]);
   	if (postfixify(cformula,this.colInfo).split('_').length>1){
-  		this.colInfo[i] = cname;
+  		this.playerStats[0].push(cname);
   	}
   	
   }
