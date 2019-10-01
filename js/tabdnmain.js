@@ -882,6 +882,7 @@ function solvepostfixjs(a,x) {
 	var stack = [];
 	var rawArray = x.split('@')[0].split('_');
 	var intArray = [];
+
 	for (var i=0;i< rawArray.length;i++){
 		if (rawArray[0] = 'c'){
 			intArray.push(a[parseInt(rawArray.substring(1,))]);
@@ -893,11 +894,11 @@ function solvepostfixjs(a,x) {
 	}
 
 
-	int i;
-  	int currentIndex = 0;
-  	int arrayIndex = 0;
 
-    for (i = 0; i<exp.length; i++) 
+  	var currentIndex = 0;
+  	var arrayIndex = 0;
+
+    for (var i = 0; i<exp.length; i++) 
     { 
         if (exp[i] == '#') {
         	stack[currentIndex] = intArray[arrayIndex];
