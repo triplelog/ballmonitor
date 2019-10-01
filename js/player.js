@@ -137,11 +137,7 @@ class PlayerStats extends HTMLElement {
 		
 		this.displayStats.forEach(x => {
 			td = document.createElement('td');
-			console.log(x[1]);
-			console.log(postfixify(x[1],this.colInfo));
-			console.log(postfixify(x[1],this.colInfo).split['@']);
-			console.log(postfixify(x[1],this.colInfo).split['@'][0]);
-			var nc = parseInt(postfixify(x[1],this.colInfo).split['@'][0].substring(1,));
+			var nc = parseInt(postfixify(x[1],this.colInfo).split('@')[0].substring(1,));
 			td.textContent, years[year] = solvepostfixjs(years[year],x[0],nc);
 			tr.appendChild(td);
 		});
@@ -157,7 +153,7 @@ class PlayerStats extends HTMLElement {
 	var ii = 0;
 	this.displayStats.forEach(x => {
 		td = document.createElement('td');
-		var nc = parseInt(postfixify(x[1],this.colInfo).split['@'][0].substring(1,));
+		var nc = parseInt(postfixify(x[1],this.colInfo).split('@')[0].substring(1,));
 		td.textContent, years.total =  solvepostfixjs(years.total,x[0],nc);
 		tr.appendChild(td);
 		ii++;
