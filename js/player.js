@@ -23,7 +23,7 @@ class PlayerStats extends HTMLElement {
 	  hideOnClick: false,
 	  placement: "bottom",
 	  onMount(instance) {
-		console.log(_this.shadowRoot.querySelector('#tippyColumnButton'));
+		console.log(this.querySelector('#tippyColumnButton'));
 		_this.shadowRoot.querySelector('#tippyColumnButton').addEventListener("click", e => {_this.tippyColumn.hide();});
        
 	  },
