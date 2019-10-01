@@ -93,7 +93,7 @@ class PlayerStats extends HTMLElement {
   	this.displayStats.forEach(x => {
   		th = document.createElement('th');
 		th.textContent = x[1];
-		th.addEventListener( e => {this.sortBy(e);});
+		th.addEventListener("click", e => {this.sortBy(e);});
 		theada.appendChild(th);
 		var cols = x[0].split('@')[0].split('_');
 		for (var ii=0;ii<cols.length;ii++){
