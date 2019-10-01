@@ -6,6 +6,16 @@ class PlayerStats extends HTMLElement {
     
 	
 	var _this = this;
+	var ncbutton = this.shadowRoot.querySelector('#newcol');
+  	this.tippyColumn = tippy(ncbutton, {
+	  content: 'Name:<input type="text" /><br />Formula:<input type="text" /><br />Format:<input type="text" /><br /><button id="tippyColumnButton">Submit</button><button>Cancel</button>',
+	  interactive: true,
+	  trigger: "click",
+	  hideOnClick: false,
+	  placement: "bottom",
+	  
+	});
+	
 	this.chgsrc();
 	let template = document.getElementById('player');
     let templateContent = template.content;
@@ -16,24 +26,16 @@ class PlayerStats extends HTMLElement {
   	for (var i=0;i<this.displayStats.length;i++){
   		this.zeroStats.push(0);
   	}
-  	var ncbutton = this.shadowRoot.querySelector('#newcol');
-  	this.tippyColumn = tippy(ncbutton, {
-	  content: 'Name:<input type="text" /><br />Formula:<input type="text" /><br />Format:<input type="text" /><br /><button id="tippyColumnButton">Submit</button><button>Cancel</button>',
-	  interactive: true,
-	  trigger: "click",
-	  hideOnClick: false,
-	  placement: "bottom",
-	  
-	});
+  	
 	
-	console.log(this.shadowRoot.querySelector('#tippyColumnButton'));
-	this.shadowRoot.querySelector('#tippyColumnButton').addEventListener("click", e => {this.tippyColumn.hide();});
+	
   }
   
   chgsrc() {
   	var _this = this;
     this.playerid = this.getAttribute('src');
     if (this.playerid == null) {return 0;}
+    
   	var url = 'player/'+this.playerid+'.csv';
 	var jsonFile = new XMLHttpRequest();
     jsonFile.open("GET",url,true);
@@ -50,6 +52,8 @@ class PlayerStats extends HTMLElement {
             _this.sortInfo = [[0,-1,'AVG'],[0,1,'']];
             _this.stats(0);
   			_this.stats(_this.currentYear);
+  			console.log(_this.shadowRoot.querySelector('#tippyColumnButton'));
+			_this.shadowRoot.querySelector('#tippyColumnButton').addEventListener("click", e => {_this.tippyColumn.hide();});
         }
      }
     
