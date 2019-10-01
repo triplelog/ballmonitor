@@ -33,10 +33,10 @@ class PlayerStats extends HTMLElement {
         if (jsonFile.readyState== 4 && jsonFile.status == 200) {
             _this.playerStats = Papa.parse(jsonFile.responseText).data;
             _this.currentYear = parseInt(_this.playerStats[1][0].substring(0,4));
-            _this.addColumn("H","H");
-            _this.addColumn("AB","AB");
-            _this.addColumn("H/AB","AVG");
-            _this.addColumn("AVG+1","AAA");
+            _this.addColumn("H","H","0");
+            _this.addColumn("AB","AB","0");
+            _this.addColumn("H/AB","AVG","=3");
+            _this.addColumn("AVG+1","AAA","=3");
             _this.stats(0);
   			_this.stats(_this.currentYear);
         }
@@ -44,7 +44,7 @@ class PlayerStats extends HTMLElement {
     
   }
   
-  addColumn(cformula,cname) {
+  addColumn(cformula,cname,cdisplay) {
   	for (var i=0;i<this.displayStats.length;i++){
   		if (this.displayStats[i][1] == cname){
   			return 0;
@@ -55,7 +55,7 @@ class PlayerStats extends HTMLElement {
   		this.colInfo[i] = this.playerStats[0][i];
 	}
   	console.log(postfixify(cformula,this.colInfo));
-  	this.displayStats.push([postfixify(cformula,this.colInfo),cname,cformula]);
+  	this.displayStats.push([postfixify(cformula,this.colInfo),cname,cformula,cdisplay]);
   	if (postfixify(cformula,this.colInfo).split('_').length>1){
   		this.playerStats[0].push(cname);
   	}
@@ -137,7 +137,12 @@ class PlayerStats extends HTMLElement {
 			var nc = parseInt(postfixify(x[1],this.colInfo).split('@')[0].substring(1,));
 			var ncd = solvepostfixjs(years[year],x[0]);
 			years[year][nc] = ncd;
-			oneyear.push(ncd);
+			if (x[3][0] == '='){
+				oneyear.push([ncd,roundFixed(ncd,parseInt(x[3][0].substring(1)),true)]);
+			}
+			else {
+				oneyear.push([ncd,roundFixed(ncd,parseInt(x[3][0]),false)]);
+			}
 			if (seasonYear == 0 && x[1] == this.sortInfo[0][2]){this.sortInfo[0][0] = i;}
 			else if (seasonYear != 0 && x[1] == this.sortInfo[1][2]){this.sortInfo[1][0] = i;}
 			i++;
@@ -145,19 +150,19 @@ class PlayerStats extends HTMLElement {
 		orderedData.push(oneyear);
 	}
 	if (seasonYear == 0) {
-		if (this.sortInfo[0][1] == -1){orderedData.sort((a, b) => b[this.sortInfo[0][0]] - a[this.sortInfo[0][0]]);}
-		else {orderedData.sort((a, b) => a[this.sortInfo[0][0]] - b[this.sortInfo[0][0]]);}
+		if (this.sortInfo[0][1] == -1){orderedData.sort((a, b) => b[this.sortInfo[0][0]][0] - a[this.sortInfo[0][0]][0]);}
+		else {orderedData.sort((a, b) => a[this.sortInfo[0][0]][0] - b[this.sortInfo[0][0]][0]);}
 	}
 	else {
-		if (this.sortInfo[1][1] == -1){orderedData.sort((a, b) => b[this.sortInfo[1][0]] - a[this.sortInfo[1][0]]);}
-		else {orderedData.sort((a, b) => a[this.sortInfo[1][0]] - b[this.sortInfo[1][0]]);}
+		if (this.sortInfo[1][1] == -1){orderedData.sort((a, b) => b[this.sortInfo[1][0]][0] - a[this.sortInfo[1][0]][0]);}
+		else {orderedData.sort((a, b) => a[this.sortInfo[1][0]][0] - b[this.sortInfo[1][0]][0]);}
 	}
 	for(var i=0;i<orderedData.length;i++){
 		var tr = document.createElement('tr');
 		tr.classList.add("tr1");
 		for (var ii=0;ii<orderedData[i].length;ii++){
 			var td = document.createElement('td');
-			td.textContent =  roundFixed(orderedData[i][ii],3,true);
+			td.textContent =  orderedData[i][ii][1];
 			tr.appendChild(td);
 		}
 		tbodya.appendChild(tr);
