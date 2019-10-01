@@ -884,16 +884,14 @@ function solvepostfixjs(a,x) {
 	var intArray = [];
 
 	for (var i=0;i< rawArray.length;i++){
-		if (rawArray[i][0] = 'c'){
+		if (rawArray[i][0] == 'c'){
 			intArray.push(a[parseInt(rawArray[i].substring(1,))]);
 		}
 		else {
-			intArray.push(parseInt(rawArray[i].substring(0,)));
+			intArray.push(parseFloat(rawArray[i].substring(0,)));
 		}
 		stack.push(0);
 	}
-	console.log(a,x,intArray);
-
 
 
   	var currentIndex = 0;
