@@ -32,6 +32,8 @@ class PlayerStats extends HTMLElement {
     jsonFile.onreadystatechange = function() {
         if (jsonFile.readyState== 4 && jsonFile.status == 200) {
             _this.playerStats = Papa.parse(jsonFile.responseText).data;
+            _this.addColumn("H","H");
+            _this.addColumn("AB","AB");
             _this.addColumn("H/AB","AVG");
         }
      }
@@ -53,12 +55,18 @@ class PlayerStats extends HTMLElement {
   	if (postfixify(cformula,this.colInfo).split('_').length>1){
   		this.colInfo[i] = cname;
   	}
-  	this.stats(this.playerStats);
-  	this.seasonstats(this.currentYear);
+  	this.stats(0);
+  	this.stats(this.currentYear);
   }
   
-  stats(statarray) {
+  stats(seasonYear=0) {
+    var statarray = this.playerStats;
+    
   	var offboxa = this.shadowRoot.querySelector('#career-location');
+  	if (seasonYear != 0){
+		this.currentYear = seasonYear;
+		offboxa = this.shadowRoot.querySelector('#season-location');
+  	}
   	var theada = offboxa.querySelector('thead').querySelector('tr');
   	var tbodya = offboxa.querySelector('tbody');
   	theada.innerHTML = '';
@@ -67,7 +75,12 @@ class PlayerStats extends HTMLElement {
   	
   	
   	var th = document.createElement('th');
-	th.textContent = 'Year';
+  	if (seasonYear != 0){
+		th.textContent = 'Month';
+	}
+	else {
+		th.textContent = 'Year';
+	}
 	theada.appendChild(th);
   	this.displayStats.forEach(x => {
   		th = document.createElement('th');
@@ -88,7 +101,11 @@ class PlayerStats extends HTMLElement {
 	}
 	for (var i=1;i<statarray.length;i++){
 		if (statarray[i].length < 10){continue;}
+		if (seasonYear != 0 && parseInt(statarray[i][0].substring(0,4)) != parseInt(seasonYear)){continue;}
 		var year = statarray[i][0].substring(0,4);
+		if (seasonYear != 0){
+			year = statarray[i][0].substring(4,6);
+		}
 		if (years.hasOwnProperty(year)){
 			
 		}
@@ -142,90 +159,6 @@ class PlayerStats extends HTMLElement {
 	tbodya.appendChild(tr);
   }
   
-  seasonstats(seasonYear) {
-  	var statarray = this.playerStats;
-  	this.currentYear = seasonYear;
-  	var statobjects = {};
-  	var offboxa = this.shadowRoot.querySelector('#season-location');
-  	var theada = offboxa.querySelector('thead').querySelector('tr');
-  	var tbodya = offboxa.querySelector('tbody');
-  	theada.innerHTML = '';
-  	tbodya.innerHTML = '';
-  	
-  	var th = document.createElement('th');
-	th.textContent = 'Month';
-	theada.appendChild(th);
-
-  	this.displayStats.forEach(x => {
-  		th = document.createElement('th');
-		th.textContent = x[1];
-		theada.appendChild(th);
-		for (var i = 0;i<statarray[0].length;i++){
-			if (statarray[0][i]==x[0]){
-				statobjects[x[0]]=i;
-				break;
-			}
-		}
-	});
-	var currentOrder = 0;
-	var currentClass = 1;
-	var months = {total:this.zeroStats.slice()};
-	for (var i=1;i<statarray.length;i++){
-		if (statarray[i].length < 10){continue;}
-		var year = statarray[i][0].substring(0,4);
-		if (parseInt(year) != parseInt(seasonYear)){continue;}
-		var month = statarray[i][0].substring(4,6);
-		if (months.hasOwnProperty(month)){
-			
-		}
-		else {
-			months[month] = this.zeroStats.slice();
-		}
-		
-		var ii = 0;
-		for(var stat in statobjects) {
-			if (parseInt(statarray[i][27])==1) {
-				months[month][ii] += parseInt(statarray[i][statobjects[stat]]);
-				months.total[ii] += parseInt(statarray[i][statobjects[stat]]);
-			}
-			ii++;
-		}
-
-	}
-	for(month in months){
-		if (month == 'total'){continue;}
-		var tr = document.createElement('tr');
-		tr.classList.add("tr1");
-		var td = document.createElement('td');
-		td.textContent = monthnames[parseInt(month)];
-		tr.appendChild(td);
-		var ii = 0;
-		for (var stat in statobjects) {
-			td = document.createElement('td');
-			td.textContent = months[month][ii];
-			tr.appendChild(td);
-			ii++;
-		}
-		
-
-		tbodya.appendChild(tr);
-	}
-	var tr = document.createElement('tr');
-	tr.classList.add("tr1");
-	var td = document.createElement('td');
-	td.textContent = 'Total';
-	tr.appendChild(td);
-	var ii = 0;
-	for (var stat in statobjects) {
-		td = document.createElement('td');
-		td.textContent = months.total[ii];
-		tr.appendChild(td);
-		ii++;
-	}
-	
-
-	tbodya.appendChild(tr);
-  }
   
 	
   
