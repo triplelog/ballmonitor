@@ -128,6 +128,7 @@ class PlayerStats extends HTMLElement {
 
 	}
 	var orderedData = [];
+	this.sortInfo = [[1,-1,''],[0,1,'']];
 	for(var year in years){
 		if (year == 'total'){continue;}
 		var oneyear = [year];
@@ -139,7 +140,14 @@ class PlayerStats extends HTMLElement {
 		});
 		orderedData.push(oneyear);
 	}
-	orderedData.sort((a, b) => a[1] - b[1]);
+	if (seasonYear == 0) {
+		if (this.sortInfo[0][1] == -1){orderedData.sort((a, b) => b[this.sortInfo[0][0]] - a[this.sortInfo[0][0]]);}
+		else {orderedData.sort((a, b) => a[this.sortInfo[0][0]] - b[this.sortInfo[0][0]]);}
+	}
+	else {
+		if (this.sortInfo[1][1] == -1){orderedData.sort((a, b) => b[this.sortInfo[1][0]] - a[this.sortInfo[1][0]]);}
+		else {orderedData.sort((a, b) => a[this.sortInfo[1][0]] - b[this.sortInfo[1][0]]);}
+	}
 	for(var i=0;i<orderedData.length;i++){
 		var tr = document.createElement('tr');
 		tr.classList.add("tr1");
