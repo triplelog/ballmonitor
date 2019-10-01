@@ -149,12 +149,12 @@ class PlayerStats extends HTMLElement {
 	td.textContent = 'Total';
 	tr.appendChild(td);
 	var ii = 0;
-	for (var stat in statobjects) {
+	this.displayStats.forEach(x => {
 		td = document.createElement('td');
-		td.textContent =  years.total[ii];
+		td.textContent =  solvepostfixjs(years.total,x[0]);
 		tr.appendChild(td);
 		ii++;
-	}
+	});
 	
 	tbodya.appendChild(tr);
   }

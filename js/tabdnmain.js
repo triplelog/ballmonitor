@@ -878,8 +878,6 @@ function postfixify(input_str,colInfo) {
 	return fullstr;
 }
 function solvepostfixjs(a,x) {
-	console.log(a);
-	console.log(x);
 	var exp = x.split('@')[1];
 	var stack = [];
 	var rawArray = x.split('@')[0].split('_');
