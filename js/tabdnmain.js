@@ -929,6 +929,7 @@ function roundFixed(x,n=3,full=false) {
 	else {
 		var di = xFixed.indexOf('.');
 		if (di < 0){return xFixed;}
+		if (di == 1 && xFixed[0] == '0'){xFixed = xFixed.substring(1);}
 		var xfl = xFixed.length;
 		for (var i=xfl-1;i>=0;i--){
 			if (xFixed[i] == '0') {xFixed = xFixed.substring(0,i);}
