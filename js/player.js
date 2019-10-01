@@ -16,6 +16,12 @@ class PlayerStats extends HTMLElement {
   	for (var i=0;i<this.displayStats.length;i++){
   		this.zeroStats.push(0);
   	}
+  	var ncbutton = this.shadowRoot.querySelector('#newcol');
+  	tippy(ncbutton, {
+	  content: 'Name:<input type="text" /><br />Formula:<input type="text" /><br />Format:<input type="text" />',
+	  interactive: true,
+	  
+	});
 	
 
   }
@@ -77,6 +83,7 @@ class PlayerStats extends HTMLElement {
     var statarray = this.playerStats;
     
   	var offboxa = this.shadowRoot.querySelector('#career-location');
+  	
   	if (seasonYear != 0){
 		this.currentYear = seasonYear;
 		offboxa = this.shadowRoot.querySelector('#season-location');
