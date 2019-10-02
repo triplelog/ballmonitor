@@ -195,13 +195,10 @@ class TabDNTeam extends TabDN {
 					_this.ws.send(JSON.stringify(jsonmessage));
 					var jsonmessage = {'command':'print','startrow':_this.startRow,'endrow':_this.endRow};
 					_this.ws.send(JSON.stringify(jsonmessage));
-					/*
-					var jsonmessage = {'command':'display','column':e.dataTransfer.getData("text").substring(7,),'location':'-3'};
-					if (x == 1){
-						jsonmessage.location = e.target.parentNode.id.substring(7,);
-					}
+					
+					var jsonmessage = {'command':'display','column':'3','location':'-3'};
 					this.ws.send(JSON.stringify(jsonmessage));
-					*/
+					
 				
 				}
 			}
