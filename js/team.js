@@ -182,6 +182,31 @@ class TabDNTeam extends TabDN {
 		this.createTable();
     	this.addPaginate();
     	this.addButtons();
+    	this.ws.onopen = function(){
+			var jsonmessage = {'command':'create','src':_this.getAttribute('src')};
+			_this.ws.send(JSON.stringify(jsonmessage));
+			if (_this.getAttribute('autoload')){
+				if (_this.usecache){
+					_this.usecache = false;
+					var jsonmessage = {'command':'load'};
+					_this.ws.send(JSON.stringify(jsonmessage));
+					
+					var jsonmessage = { command: 'filter', formula: 'c4_ATL@##=' };
+					_this.ws.send(JSON.stringify(jsonmessage));
+					var jsonmessage = {'command':'print','startrow':_this.startRow,'endrow':_this.endRow};
+					_this.ws.send(JSON.stringify(jsonmessage));
+					/*
+					var jsonmessage = {'command':'display','column':e.dataTransfer.getData("text").substring(7,),'location':'-3'};
+					if (x == 1){
+						jsonmessage.location = e.target.parentNode.id.substring(7,);
+					}
+					this.ws.send(JSON.stringify(jsonmessage));
+					*/
+				
+				}
+			}
+		};
+    	
 	}
 	
 	 addData(retmess) {

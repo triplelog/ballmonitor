@@ -58,7 +58,7 @@ class TabDN extends HTMLElement {
 		}
 	};
 	
-	
+	/*
 	this.ws.onopen = function(){
 		var jsonmessage = {'command':'create','src':_this.getAttribute('src')};
 		_this.ws.send(JSON.stringify(jsonmessage));
@@ -74,19 +74,19 @@ class TabDN extends HTMLElement {
 					var jsonmessage = {'command':'print','startrow':_this.startRow,'endrow':_this.endRow};
 					_this.ws.send(JSON.stringify(jsonmessage));
 				}
-				/*
+				
 				else if (_this.tagName == "tabdn-team"){
 					var jsonmessage = { command: 'filter', formula: 'c4_ATL@##=' };
 					_this.ws.send(JSON.stringify(jsonmessage));
 					var jsonmessage = {'command':'print','startrow':_this.startRow,'endrow':_this.endRow};
 					_this.ws.send(JSON.stringify(jsonmessage));
-				}*/
+				}
 				
 				
 			}
 		}
 	};
-	
+	*/
 	
 
   }
