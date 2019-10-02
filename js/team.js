@@ -196,7 +196,7 @@ class TabDNTeam extends TabDN {
 					var jsonmessage = {'command':'print','startrow':_this.startRow,'endrow':_this.endRow};
 					_this.ws.send(JSON.stringify(jsonmessage));
 					
-					var jsonmessage = {'command':'display','column':'3','location':'-3'};
+					var jsonmessage = {'command':'display','column':'3|5','location':'-3'};
 					_this.ws.send(JSON.stringify(jsonmessage));
 					
 				
