@@ -451,23 +451,36 @@ class TabDNBox extends TabDN {
 	}
 	
 	chgBoxes() {
+		var filters = "(DATE>4/1/2000 AND DATE<9/1/2000)";
+		
 		var team1 = this.shadowRoot.querySelector("#team1");
 		var team1H = this.shadowRoot.querySelector("#home1");
 		var team1A = this.shadowRoot.querySelector("#away1");
 		var team2 = this.shadowRoot.querySelector("#team2");
 		var team2H = this.shadowRoot.querySelector("#home2");
 		var team2A = this.shadowRoot.querySelector("#away2");
-		var filters = "(DATE>4/1/2000 AND DATE<9/1/2000)";
 		if (team1.value.length > 0){
-			if (team1H.checked && team1A.checked){filters += " AND (TEAM=="+team1.value+")";}
-			else if (team1H.checked){filters += " AND (TEAM=="+team1.value+" AND LOC==1)";}
-			else if (team1A.checked){filters += " AND (TEAM=="+team1.value+" AND LOC==0)";}
+			if (team1H.checked && team1A.checked){filters += " AND (TEAM=="+team1.value+" OR OPP=="+team1.value+")";}
+			else if (team1H.checked){filters += " AND ((TEAM=="+team1.value+" AND LOC==1) OR (OPP=="+team1.value+" AND LOC==0))";}
+			else if (team1A.checked){filters += " AND ((TEAM=="+team1.value+" AND LOC==0) OR (OPP=="+team1.value+" AND LOC==1))";}
 		}
 		if (team2.value.length > 0){
-			if (team2H.checked && team2A.checked){filters += " AND (OPP=="+team2.value+")";}
-			else if (team2H.checked){filters += " AND (OPP=="+team2.value+" AND LOC==0)";}
-			else if (team2A.checked){filters += " AND (OPP=="+team2.value+" AND LOC==1)";}
+			if (team2H.checked && team2A.checked){filters += " AND (TEAM=="+team2.value+" OR OPP=="+team2.value+")";}
+			else if (team2H.checked){filters += " AND ((OPP=="+team2.value+" AND LOC==0) OR (TEAM=="+team1.value+" AND LOC==1))";}
+			else if (team2A.checked){filters += " AND ((OPP=="+team2.value+" AND LOC==1) OR (TEAM=="+team1.value+" AND LOC==0))";}
 		}
+		var dates = this.shadowRoot.querySelector("#dates").value.split('-');
+		if (dates.length == 2){
+			filters += " AND (DATE>="+dates[0]+")";
+			filters += " AND (DATE<="+dates[1]+")";
+		}
+		else if (dates.length == 1){
+			if (dates[0].length > 0){
+				filters += " AND (DATE=="+dates[0]+")";
+			}
+		}
+		
+		
 		console.log(filters);
 		var filterFormula = postfixify(filters,this.colInfo);
 		var jsonmessage = {'command':'filter','formula':filterFormula};
