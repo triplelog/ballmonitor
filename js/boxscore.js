@@ -487,7 +487,6 @@ class TabDNBox extends TabDN {
 		this.ws.send(JSON.stringify(jsonmessage));
 		
 		var sort = this.shadowRoot.querySelector('input[name="sort"]:checked').value;
-		console.log(this.colInfo);
 		if (sort == "newest"){
 			var jsonmessage = {'command':'pivot','pivotcol':'2','sort':'x28','columns':[]};
 			this.ws.send(JSON.stringify(jsonmessage));
@@ -503,6 +502,11 @@ class TabDNBox extends TabDN {
 			//this.ws.send(JSON.stringify(jsonmessage));
 			jsonmessage = {'command':'switch','type':'main'};
 			this.ws.send(JSON.stringify(jsonmessage));
+		}
+		else if (sort == "custom"){
+			var sortType = this.shadowRoot.querySelector('#sortType');
+			console.log(sortType);
+			console.log(sortType.value);
 		}
 		
 		
