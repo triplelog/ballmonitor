@@ -252,8 +252,10 @@ class BoxScore extends HTMLElement {
 		td.textContent = linescorearray[0][i];
 		td.id = 'pbpHalf_A-'+i;
 		var contentstr = '';
-		for (var ii=0;ii<playarray[0][i-1].length;ii++){
-			contentstr += playarray[0][i-1][ii] + '<br>';
+		if (i-1 < playarray[0].length){
+			for (var ii=0;ii<playarray[0][i-1].length;ii++){
+				contentstr += playarray[0][i-1][ii] + '<br>';
+			}
 		}
 		tippy(td, {
 		  content: contentstr,
@@ -264,8 +266,10 @@ class BoxScore extends HTMLElement {
 		td.textContent = linescorearray[1][i];
 		td.id = 'pbpHalf_H-'+i;
 		contentstr = '';
-		for (var ii=0;ii<playarray[1][i-1].length;ii++){
-			contentstr += playarray[1][i-1][ii] + '<br>';
+		if (i-1 < playarray[1].length){
+			for (var ii=0;ii<playarray[1][i-1].length;ii++){
+				contentstr += playarray[1][i-1][ii] + '<br>';
+			}
 		}
 		tippy(td, {
 		  content: contentstr,
@@ -448,8 +452,22 @@ class TabDNBox extends TabDN {
 	
 	chgBoxes() {
 		var team1 = this.shadowRoot.querySelector("#team1");
+		var team1H = this.shadowRoot.querySelector("#home1");
+		var team1A = this.shadowRoot.querySelector("#away1");
+		var team2 = this.shadowRoot.querySelector("#team2");
+		var team2H = this.shadowRoot.querySelector("#home2");
+		var team2A = this.shadowRoot.querySelector("#away2");
 		var filters = "(DATE>4/1/2000 AND DATE<9/1/2000)";
-		if (team1.value.length > 0){filters += " AND (TEAM=="+team1.value+" OR OPP=="+team1.value+")";}
+		if (team1.value.length > 0){
+			if (team1H.checked && team1A.checked){filters += " AND (TEAM=="+team1.value+")";}
+			else if (team1H.checked){filters += " AND (TEAM=="+team1.value+" AND LOC==1)";}
+			else if (team1A.checked){filters += " AND (TEAM=="+team1.value+" AND LOC==0)";}
+		}
+		if (team2.value.length > 0){
+			if (team2H.checked && team2A.checked){filters += " AND (OPP=="+team1.value+")";}
+			else if (team2H.checked){filters += " AND (OPP=="+team1.value+" AND LOC==0)";}
+			else if (team2A.checked){filters += " AND (OPP=="+team1.value+" AND LOC==1)";}
+		}
 		console.log(filters);
 		var filterFormula = postfixify(filters,this.colInfo);
 		var jsonmessage = {'command':'filter','formula':filterFormula};
