@@ -480,7 +480,7 @@ class SeasonStandings extends HTMLElement {
 						myData[leagues[i]+divisions[ii]][iii][4] = ((maxWL - (myData[leagues[i]+divisions[ii]][iii][1]-myData[leagues[i]+divisions[ii]][iii][2]))/2).toFixed(1);
 					}
 				}
-				createDivision(leagues[i]+divisions[ii],leagues[i]+divisions[ii],myData[leagues[i]+divisions[ii]]);
+				this.createDivision(leagues[i]+divisions[ii],leagues[i]+divisions[ii],myData[leagues[i]+divisions[ii]]);
 			}
 		}
 	
