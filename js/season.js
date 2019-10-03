@@ -628,7 +628,7 @@ class SeasonStandings extends HTMLElement {
 			}
 		}
 	
-	updateStandings();
+	this.updateStandings();
 	}
   
   
