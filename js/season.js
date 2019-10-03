@@ -273,12 +273,60 @@ class SeasonStandings extends HTMLElement {
     const shadowRoot = this.attachShadow({mode: 'open'}).appendChild(templateContent.cloneNode(true));
   	
   	//this.chgsrc();
-  	
+  	this.fullSchedule = {};
+	this.dateList = [];
+	this.teamData = {};
+
+  	this.loadData(2018);
+  	this.addGame(2);
   	this.createDivision('NLEAST','NL East',[[0,0,0,0,0,0,0,0,0]]);
   	
 	
 	
   }
+  
+  loadData(year) {
+  		/*
+		d3.json("data/years/"+year+"Data.json").then(function(data) {
+			leagues = data['leagues'];
+			divisions = data['divisions'];
+			fullSchedule = data['games'];
+			teams = data['teams'];
+			dateList = [];
+			dateRev = {};
+			dateLen = Object.keys(fullSchedule).length;
+			pvalues = [];
+			chmonth = 7;
+		
+			var initialDate = dateLen;
+			if (date.length > 4){
+				initialDate = 0;
+			}
+		
+
+			for (var i=0;i<dateLen;i++) {
+				dateList.push([Object.keys(fullSchedule)[i],0]);
+				hmonth = parseInt(Object.keys(fullSchedule)[i].substring(4,6))*2+parseInt(Math.min(parseInt(Object.keys(fullSchedule)[i].substring(6,8)),29)/16);
+				if (hmonth > chmonth) {
+					pvalues.push(i);
+					chmonth = hmonth;
+				}
+				dateRev[Object.keys(fullSchedule)[i]] = i;
+				if (date > Object.keys(fullSchedule)[i]) {
+					initialDate = i;
+				}
+			}
+		
+		
+			createStandings(year);
+			updateSlider(initialDate);
+		
+
+	  
+		});
+		*/
+	
+	}
   
   createDivision(divID,divName,divData) {
 		var columns = [divName,'W','L','PCT','GB','Last 10','RS','RA','ExpW-L'];
@@ -336,181 +384,131 @@ class SeasonStandings extends HTMLElement {
     
   }
   
-  addColumn(cformula,cname,cdisplay) {
-  	for (var i=0;i<this.displayStats.length;i++){
-  		if (this.displayStats[i][1] == cname){
-  			return 0;
-  		}
-  	}
-  	this.colInfo = {};
-  	for (var i = 0;i<this.playerStats[0].length;i++){
-  		this.colInfo[i] = this.playerStats[0][i];
-	}
-  	console.log(postfixify(cformula,this.colInfo));
-  	this.displayStats.push([postfixify(cformula,this.colInfo),cname,cformula,cdisplay]);
-  	if (postfixify(cformula,this.colInfo).split('_').length>1){
-  		this.playerStats[0].push(cname);
-  	}
-  	
-  }
-  sortBy(e,x) {
-  	if (this.sortInfo[x][2] == e.target.textContent){
-  		this.sortInfo[x][1] = -1*this.sortInfo[x][1];
-  	}
-  	else {
-  		this.sortInfo[x][1] = -1;
-  	}
-  	this.sortInfo[x][2] = e.target.textContent;
-  	this.stats(0);
-  	this.stats(this.currentYear);
-  }
-  stats(seasonYear=0) {
-    var statarray = this.playerStats;
-    
-  	var offboxa = this.shadowRoot.querySelector('#career-location');
-  	
-  	if (seasonYear != 0){
-		this.currentYear = seasonYear;
-		offboxa = this.shadowRoot.querySelector('#season-location');
-		this.sortInfo[1][0] = 0;
-  	}
-  	else {
-  		this.sortInfo[0][0] = 0;
-  	}
-  	var theada = offboxa.querySelector('thead').querySelector('tr');
-  	var tbodya = offboxa.querySelector('tbody');
-  	theada.innerHTML = '';
-  	tbodya.innerHTML = '';
-  	var statobjects = [];
-  	
-  	
-  	var th = document.createElement('th');
-  	if (seasonYear != 0){
-		th.textContent = 'Month';
-		th.addEventListener("click", e => {this.sortBy(e,1);});
-	}
-	else {
-		th.textContent = 'Year';
-		th.addEventListener("click", e => {this.sortBy(e,0);});
-	}
-	theada.appendChild(th);
-  	this.displayStats.forEach(x => {
-  		th = document.createElement('th');
-		th.textContent = x[1];
-		if (seasonYear == 0) {
-			th.addEventListener("click", e => {this.sortBy(e,0);});
-		}
-		else {
-			th.addEventListener("click", e => {this.sortBy(e,1);});
-		}
-		theada.appendChild(th);
-		var cols = x[0].split('@')[0].split('_');
-		for (var ii=0;ii<cols.length;ii++){
-			var ncol = parseInt(cols[ii].substring(1,));
-			for (var iii=0;iii<statobjects.length+1;iii++) {
-				if (iii == statobjects.length){
-					statobjects.push(ncol);
-					break;
-				}
-				else if (ncol == statobjects[iii]) {
-					break;
-				}
-			}
-			
-		}
-	});
+  
+  addGame(dateIndex,dateStart=0){
+		var dateList = this.dateList;
+		var fullSchedule = this.fullSchedule;
+		var teamData = this.teamData;
+		for (var di=dateStart;di<dateIndex;di++){
+			if (dateList[di][1]<1) {
+				var schedule = fullSchedule[dateList[di][0]];
 	
-	var currentOrder = 0;
-	var currentClass = 1;
-	
-	var years = {total:{}};
-	for (var ii=0;ii<statobjects.length;ii++){
-		years.total[statobjects[ii]] =  0;
-	}
-	for (var i=1;i<statarray.length;i++){
-		if (statarray[i].length < 10){continue;}
-		if (seasonYear != 0 && parseInt(statarray[i][0].substring(0,4)) != parseInt(seasonYear)){continue;}
-		var year = statarray[i][0].substring(0,4);
-		if (seasonYear != 0){
-			year = statarray[i][0].substring(4,6);
-		}
-		if (years.hasOwnProperty(year)){
-			
-		}
-		else {
-			years[year] = {};
-			for (var ii=0;ii<statobjects.length;ii++){
-				years[year][statobjects[ii]] =  0;
-			}
-		}
-		
-		for (var ii=0;ii<statobjects.length;ii++){
-			if (parseInt(statarray[i][27])==1 && statobjects[ii] < statarray[i].length) {
-				years[year][statobjects[ii]] += parseInt(statarray[i][statobjects[ii]]);
-				years.total[statobjects[ii]] += parseInt(statarray[i][statobjects[ii]]);
-			}
-		}
+				for (var i=0;i<schedule.length;i++){
 
-	}
-	var orderedData = [];
-	
-	for(var year in years){
-		if (year == 'total'){continue;}
-		var oneyear = [[parseInt(year),year]];
-		if (seasonYear != 0){oneyear[0][1] = monthnames[parseInt(year)];}
-		var i = 1;
-		this.displayStats.forEach(x => {
-			var nc = parseInt(postfixify(x[1],this.colInfo).split('@')[0].substring(1,));
-			var ncd = solvepostfixjs(years[year],x[0]);
-			years[year][nc] = ncd;
-			if (x[3][0] == '='){
-				oneyear.push([ncd,roundFixed(ncd,parseInt(x[3].substring(1)),true)]);
+					var runs1 = schedule[i]['vruns'];
+					var runs2 = schedule[i]['hruns'];
+					var k = 5.0;
+					var probHomeWin = 1.0/(1.0+ Math.pow(10.0,(teamData[schedule[i]['vteam']]['elo']-teamData[schedule[i]['hteam']]['elo'])/400.0));
+					var sprsv = 1.0/(1.0+Math.pow((runs2+1.0)/(runs1+1.0),1.4));
+					var sprsh = 1.0/(1.0+Math.pow((runs1+1.0)/(runs2+1.0),1.4));
+				
+					teamData[schedule[i]['hteam']]['sprs'] += -400*Math.log(1/sprsh-1)/Math.log(10)-12;
+					teamData[schedule[i]['vteam']]['sprs'] += -400*Math.log(1/sprsv-1)/Math.log(10)+12;
+				
+					if (runs1>runs2){
+						teamData[schedule[i]['vteam']]['wins']+=1;
+						teamData[schedule[i]['hteam']]['losses']+=1;
+						teamData[schedule[i]['vteam']]['last10'].push(1);
+						teamData[schedule[i]['hteam']]['last10'].push(0);
+						teamData[schedule[i]['vteam']]['elo'] = teamData[schedule[i]['vteam']]['elo'] + k*probHomeWin;
+						teamData[schedule[i]['hteam']]['elo'] = teamData[schedule[i]['hteam']]['elo'] - k*probHomeWin;
+					}
+					else if (runs2>runs1){
+						teamData[schedule[i]['hteam']]['wins']+=1;
+						teamData[schedule[i]['vteam']]['losses']+=1;
+						teamData[schedule[i]['vteam']]['last10'].push(0);
+						teamData[schedule[i]['hteam']]['last10'].push(1);
+						teamData[schedule[i]['vteam']]['elo'] = teamData[schedule[i]['vteam']]['elo'] - k*(1-probHomeWin);
+						teamData[schedule[i]['hteam']]['elo'] = teamData[schedule[i]['hteam']]['elo'] + k*(1-probHomeWin);
+					}
+					teamData[schedule[i]['vteam']]['runs']+=runs1;
+					teamData[schedule[i]['hteam']]['allowed']+=runs1;
+					teamData[schedule[i]['hteam']]['runs']+=runs2;
+					teamData[schedule[i]['vteam']]['allowed']+=runs2;
+				
+					if (teamData[schedule[i]['vteam']]['wins']+teamData[schedule[i]['vteam']]['losses'] > 0 && teamData[schedule[i]['hteam']]['wins']+teamData[schedule[i]['hteam']]['losses'] > 0) {
+						teamData[schedule[i]['hteam']]['sprsos'] += teamData[schedule[i]['vteam']]['sprs']/(teamData[schedule[i]['vteam']]['wins']+teamData[schedule[i]['vteam']]['losses']);
+						teamData[schedule[i]['vteam']]['sprsos'] += teamData[schedule[i]['hteam']]['sprs']/(teamData[schedule[i]['hteam']]['wins']+teamData[schedule[i]['hteam']]['losses']);
+					}
+				
+				}
+			
+				dateList[di][1]=1;
+			
+			
+			
 			}
-			else {
-				oneyear.push([ncd,roundFixed(ncd,parseInt(x[3]),false)]);
-			}
-			if (seasonYear == 0 && x[1] == this.sortInfo[0][2]){this.sortInfo[0][0] = i;}
-			else if (seasonYear != 0 && x[1] == this.sortInfo[1][2]){this.sortInfo[1][0] = i;}
-			i++;
-		});
-		orderedData.push(oneyear);
-	}
-	if (seasonYear == 0) {
-		if (this.sortInfo[0][1] == -1){orderedData.sort((a, b) => b[this.sortInfo[0][0]][0] - a[this.sortInfo[0][0]][0]);}
-		else {orderedData.sort((a, b) => a[this.sortInfo[0][0]][0] - b[this.sortInfo[0][0]][0]);}
-	}
-	else {
-		if (this.sortInfo[1][1] == -1){orderedData.sort((a, b) => b[this.sortInfo[1][0]][0] - a[this.sortInfo[1][0]][0]);}
-		else {orderedData.sort((a, b) => a[this.sortInfo[1][0]][0] - b[this.sortInfo[1][0]][0]);}
-	}
-	for(var i=0;i<orderedData.length;i++){
-		var tr = document.createElement('tr');
-		tr.classList.add("tr1");
-		for (var ii=0;ii<orderedData[i].length;ii++){
-			var td = document.createElement('td');
-			td.textContent =  orderedData[i][ii][1];
-			tr.appendChild(td);
 		}
-		tbodya.appendChild(tr);
-	}
-	var tr = document.createElement('tr');
-	tr.classList.add("tr1");
-	var td = document.createElement('td');
-	td.textContent = 'Total';
-	tr.appendChild(td);
-	var ii = 0;
-	this.displayStats.forEach(x => {
-		td = document.createElement('td');
-		var nc = parseInt(postfixify(x[1],this.colInfo).split('@')[0].substring(1,));
-		var ncd = solvepostfixjs(years.total,x[0])
-		td.textContent = roundFixed(ncd,3,false);
-		years.total[nc] = ncd;
-		tr.appendChild(td);
-		ii++;
-	});
+		for (var di=dateIndex;di<dateLen;di++){
+			if (dateList[di][1]==1) {
+				var schedule = fullSchedule[dateList[di][0]];
 	
-	tbodya.appendChild(tr);
-  }
+				for (var i=0;i<schedule.length;i++){
+
+					var runs1 = schedule[i]['vruns'];
+					var runs2 = schedule[i]['hruns'];
+				
+					var sprsv = 1.0/(1.0+Math.pow((runs2+1.0)/(runs1+1.0),1.8));
+					var sprsh = 1.0/(1.0+Math.pow((runs1+1.0)/(runs2+1.0),1.8));
+				
+					teamData[schedule[i]['hteam']]['sprs'] -= -400*Math.log(1/sprsh-1)/Math.log(10);
+					teamData[schedule[i]['vteam']]['sprs'] -= -400*Math.log(1/sprsv-1)/Math.log(10);
+				
+					if (runs1>runs2){
+						teamData[schedule[i]['vteam']]['wins']-=1;
+						teamData[schedule[i]['hteam']]['losses']-=1;
+					
+					}
+					else if (runs2>runs1){
+						teamData[schedule[i]['hteam']]['wins']-=1;
+						teamData[schedule[i]['vteam']]['losses']-=1;
+					}
+					teamData[schedule[i]['vteam']]['runs']-=runs1;
+					teamData[schedule[i]['hteam']]['allowed']-=runs1;
+					teamData[schedule[i]['hteam']]['runs']-=runs2;
+					teamData[schedule[i]['vteam']]['allowed']-=runs2;
+					teamData[schedule[i]['vteam']]['last10'].splice(teamData[schedule[i]['vteam']]['last10'].length-1,1);
+					teamData[schedule[i]['hteam']]['last10'].splice(teamData[schedule[i]['hteam']]['last10'].length-1,1);
+				
+					teamData[schedule[i]['hteam']]['sprsos'] -= teamData[schedule[i]['vteam']]['sprs']/(teamData[schedule[i]['vteam']]['wins']+teamData[schedule[i]['vteam']]['losses']);
+					teamData[schedule[i]['vteam']]['sprsos'] -= teamData[schedule[i]['hteam']]['sprs']/(teamData[schedule[i]['hteam']]['wins']+teamData[schedule[i]['hteam']]['losses']);
+				
+				}
+			
+				dateList[di][1]=0;
+			}
+		}
+		for (var di=0;di<dateStart;di++){
+			if (dateList[di][1]==1) {
+				var schedule = fullSchedule[dateList[di][0]];
+	
+				for (var i=0;i<schedule.length;i++){
+
+					var runs1 = schedule[i]['vruns'];
+					var runs2 = schedule[i]['hruns'];
+				
+					if (runs1>runs2){
+						teamData[schedule[i]['vteam']]['wins']-=1;
+						teamData[schedule[i]['hteam']]['losses']-=1;
+					
+					}
+					else if (runs2>runs1){
+						teamData[schedule[i]['hteam']]['wins']-=1;
+						teamData[schedule[i]['vteam']]['losses']-=1;
+					}
+					teamData[schedule[i]['vteam']]['runs']-=runs1;
+					teamData[schedule[i]['hteam']]['allowed']-=runs1;
+					teamData[schedule[i]['hteam']]['runs']-=runs2;
+					teamData[schedule[i]['vteam']]['allowed']-=runs2;
+					teamData[schedule[i]['vteam']]['last10'].splice(teamData[schedule[i]['vteam']]['last10'].length-1,1);
+					teamData[schedule[i]['hteam']]['last10'].splice(teamData[schedule[i]['hteam']]['last10'].length-1,1);
+				}
+			
+				dateList[di][1]=0;
+			}
+		}
+	
+	}
   
   
 	
