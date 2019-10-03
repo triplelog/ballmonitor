@@ -447,6 +447,8 @@ class TabDNBox extends TabDN {
 		this.shadowRoot.querySelector("#team2").addEventListener("input", e => {this.chgTeam(e)});
 		this.shadowRoot.querySelector("#batterSort").addEventListener("click", e => {this.chgSort(e)});
 		this.shadowRoot.querySelector("#pitcherSort").addEventListener("click", e => {this.chgSort(e)});
+		this.shadowRoot.querySelector("#oldestSort").addEventListener("click", e => {this.chgSort(e)});
+		this.shadowRoot.querySelector("#newestSort").addEventListener("click", e => {this.chgSort(e)});
 		
 		this.boxscores = [];
 		this.boxindex = 0;
@@ -455,25 +457,51 @@ class TabDNBox extends TabDN {
 	}
 	
 	chgSort(e) {
-		console.log(e.target);
-		console.log(e.target.checked);
-		if (e.target.checked){
+		if (this.shadowRoot.querySelector('#batterSort').checked || this.shadowRoot.querySelector('#pitcherSort').checked){
 			this.shadowRoot.querySelector('#customSort').style.display = 'block';
+		}
+		else {
+			this.shadowRoot.querySelector('#customSort').style.display = 'none';
 		}
 	}
 	chgTeam(e) {
-		var teamSpot = e.target.id;
-		var teamID = e.target.value;
-		console.log(teamSpot,teamID);
-		if (teamSpot == 'team1'){
+		var team1 = this.shadowRoot.querySelector("#team1").value;
+		var team2 = this.shadowRoot.querySelector("#team2").value;
+		if (team1.length > 2){
 			var team1Drop = this.shadowRoot.querySelector('#team1Dropdown');
 			team1Drop.style.display = 'inline-block';
-			team1Drop.textContent = teamID;
+			team1Drop.textContent = team1;
+			if (team2.length < 3) {
+				var team2Drop = this.shadowRoot.querySelector('#team2Dropdown');
+				team2Drop.style.display = 'inline-block';
+				team2Drop.textContent = team1+"'s OPP";
+			}
+			else {
+				var team2Drop = this.shadowRoot.querySelector('#team2Dropdown');
+				team2Drop.style.display = 'inline-block';
+				team2Drop.textContent = team2;
+			}
 		}
-		else {
+		else if (team2.length > 2){
 			var team2Drop = this.shadowRoot.querySelector('#team2Dropdown');
 			team2Drop.style.display = 'inline-block';
-			team2Drop.textContent = teamID;
+			team2Drop.textContent = team2;
+			if (team1.length < 3) {
+				var team1Drop = this.shadowRoot.querySelector('#team1Dropdown');
+				team1Drop.style.display = 'inline-block';
+				team1Drop.textContent = team2+"'s OPP";
+			}
+			else {
+				var team1Drop = this.shadowRoot.querySelector('#team1Dropdown');
+				team1Drop.style.display = 'inline-block';
+				team1Drop.textContent = team1;
+			}
+		}
+		else {
+			var team1Drop = this.shadowRoot.querySelector('#team1Dropdown');
+			team1Drop.style.display = 'none';
+			var team2Drop = this.shadowRoot.querySelector('#team2Dropdown');
+			team2Drop.style.display = 'none';
 		}
 		
 	}
