@@ -442,7 +442,7 @@ class SeasonStandings extends HTMLElement {
 				myData[leagues[i]+divisions[ii]]=[];
 				for (var iii=0;iii<teams[leagues[i]][divisions[ii]].length;iii++) {
 
-					teamrow = [teams[leagues[i]][divisions[ii]][iii],teamData[teams[leagues[i]][divisions[ii]][iii]]['wins'],teamData[teams[leagues[i]][divisions[ii]][iii]]['losses'],0,'-',teamData[teams[leagues[i]][divisions[ii]][iii]]['last10'],teamData[teams[leagues[i]][divisions[ii]][iii]]['runs'],teamData[teams[leagues[i]][divisions[ii]][iii]]['allowed'],'0-0'];
+					var teamrow = [teams[leagues[i]][divisions[ii]][iii],teamData[teams[leagues[i]][divisions[ii]][iii]]['wins'],teamData[teams[leagues[i]][divisions[ii]][iii]]['losses'],0,'-',teamData[teams[leagues[i]][divisions[ii]][iii]]['last10'],teamData[teams[leagues[i]][divisions[ii]][iii]]['runs'],teamData[teams[leagues[i]][divisions[ii]][iii]]['allowed'],'0-0'];
 					if (teamrow[1]+teamrow[2] > 0) {
 						teamrow[3] = (teamrow[1]/(teamrow[1]+teamrow[2])).toFixed(3);
 					}
