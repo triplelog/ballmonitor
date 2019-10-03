@@ -9,7 +9,7 @@ class SeasonStats extends HTMLElement {
 	
 	
 	
-	let template = document.getElementById('season');
+	let template = document.getElementById('stats');
     let templateContent = template.content;
 
     const shadowRoot = this.attachShadow({mode: 'open'}).appendChild(templateContent.cloneNode(true));
@@ -32,48 +32,10 @@ class SeasonStats extends HTMLElement {
   	
   	this.chgsrc();
   	
-  	this.createDivision('NLEAST','NL East',[[0,0,0,0,0,0,0,0,0]]);
   	
 	
 	
   }
-  
-  createDivision(divID,divName,divData) {
-		var columns = [divName,'W','L','PCT','GB','Last 10','RS','RA','ExpW-L'];
-	
-		var leagueDiv = this.shadowRoot.querySelector('#'+divID.substring(0,2));
-		var divDiv = document.createElement('div');
-		//divDiv.classList.add('col');
-		divDiv.id = divID;
-		leagueDiv.appendChild(divDiv);
-						
-		var table = document.createElement('table');
-		var thead = document.createElement('thead');
-		var tbody = document.createElement('tbody');
-		tbody.id = divID+'Body';
-		var tr = document.createElement('tr');
-		for (var i=0;i<columns.length;i++){
-			var th = document.createElement('th');
-			th.textContent = columns[i];
-			tr.appendChild(th);
-		}
-		thead.appendChild(tr);
-		
-		for (var ii=0;ii<divData.length;ii++){
-			tr = document.createElement('tr');
-			for (var i=0;i<divData[ii].length;i++){
-				var td = document.createElement('td');
-				td.textContent = divData[ii][i];
-				tr.appendChild(td);
-			}
-			tbody.appendChild(tr);
-		}
-		
-		table.appendChild(thead);
-		table.appendChild(tbody);
-		divDiv.appendChild(table);
-
-	}
   
   newcolumn(e) {
   	var tippyNode = e.target.parentNode;
@@ -294,6 +256,269 @@ class SeasonStats extends HTMLElement {
 
 customElements.define('season-stats', SeasonStats);
 
+class SeasonStandings extends HTMLElement {
+  
+
+  constructor() {
+    super();    
+    
+	
+	var _this = this;
+	
+	
+	
+	let template = document.getElementById('standings');
+    let templateContent = template.content;
+
+    const shadowRoot = this.attachShadow({mode: 'open'}).appendChild(templateContent.cloneNode(true));
+  	
+  	//this.chgsrc();
+  	
+  	this.createDivision('NLEAST','NL East',[[0,0,0,0,0,0,0,0,0]]);
+  	
+	
+	
+  }
+  
+  createDivision(divID,divName,divData) {
+		var columns = [divName,'W','L','PCT','GB','Last 10','RS','RA','ExpW-L'];
+	
+		var leagueDiv = this.shadowRoot.querySelector('#'+divID.substring(0,2));
+		var divDiv = document.createElement('div');
+		//divDiv.classList.add('col');
+		divDiv.id = divID;
+		leagueDiv.appendChild(divDiv);
+						
+		var table = document.createElement('table');
+		var thead = document.createElement('thead');
+		var tbody = document.createElement('tbody');
+		tbody.id = divID+'Body';
+		var tr = document.createElement('tr');
+		for (var i=0;i<columns.length;i++){
+			var th = document.createElement('th');
+			th.textContent = columns[i];
+			tr.appendChild(th);
+		}
+		thead.appendChild(tr);
+		
+		for (var ii=0;ii<divData.length;ii++){
+			tr = document.createElement('tr');
+			for (var i=0;i<divData[ii].length;i++){
+				var td = document.createElement('td');
+				td.textContent = divData[ii][i];
+				tr.appendChild(td);
+			}
+			tbody.appendChild(tr);
+		}
+		
+		table.appendChild(thead);
+		table.appendChild(tbody);
+		divDiv.appendChild(table);
+
+	}
+  
+  chgsrc() {
+  	var _this = this;
+    this.playerid = this.getAttribute('src');
+    if (this.playerid == null) {return 0;}
+    
+  	var url = 'player/'+this.playerid+'.csv';
+	var jsonFile = new XMLHttpRequest();
+    jsonFile.open("GET",url,true);
+    jsonFile.send();
+
+    jsonFile.onreadystatechange = function() {
+        if (jsonFile.readyState== 4 && jsonFile.status == 200) {
+            _this.playerStats = Papa.parse(jsonFile.responseText).data;
+            
+  		}
+     }
+    
+  }
+  
+  addColumn(cformula,cname,cdisplay) {
+  	for (var i=0;i<this.displayStats.length;i++){
+  		if (this.displayStats[i][1] == cname){
+  			return 0;
+  		}
+  	}
+  	this.colInfo = {};
+  	for (var i = 0;i<this.playerStats[0].length;i++){
+  		this.colInfo[i] = this.playerStats[0][i];
+	}
+  	console.log(postfixify(cformula,this.colInfo));
+  	this.displayStats.push([postfixify(cformula,this.colInfo),cname,cformula,cdisplay]);
+  	if (postfixify(cformula,this.colInfo).split('_').length>1){
+  		this.playerStats[0].push(cname);
+  	}
+  	
+  }
+  sortBy(e,x) {
+  	if (this.sortInfo[x][2] == e.target.textContent){
+  		this.sortInfo[x][1] = -1*this.sortInfo[x][1];
+  	}
+  	else {
+  		this.sortInfo[x][1] = -1;
+  	}
+  	this.sortInfo[x][2] = e.target.textContent;
+  	this.stats(0);
+  	this.stats(this.currentYear);
+  }
+  stats(seasonYear=0) {
+    var statarray = this.playerStats;
+    
+  	var offboxa = this.shadowRoot.querySelector('#career-location');
+  	
+  	if (seasonYear != 0){
+		this.currentYear = seasonYear;
+		offboxa = this.shadowRoot.querySelector('#season-location');
+		this.sortInfo[1][0] = 0;
+  	}
+  	else {
+  		this.sortInfo[0][0] = 0;
+  	}
+  	var theada = offboxa.querySelector('thead').querySelector('tr');
+  	var tbodya = offboxa.querySelector('tbody');
+  	theada.innerHTML = '';
+  	tbodya.innerHTML = '';
+  	var statobjects = [];
+  	
+  	
+  	var th = document.createElement('th');
+  	if (seasonYear != 0){
+		th.textContent = 'Month';
+		th.addEventListener("click", e => {this.sortBy(e,1);});
+	}
+	else {
+		th.textContent = 'Year';
+		th.addEventListener("click", e => {this.sortBy(e,0);});
+	}
+	theada.appendChild(th);
+  	this.displayStats.forEach(x => {
+  		th = document.createElement('th');
+		th.textContent = x[1];
+		if (seasonYear == 0) {
+			th.addEventListener("click", e => {this.sortBy(e,0);});
+		}
+		else {
+			th.addEventListener("click", e => {this.sortBy(e,1);});
+		}
+		theada.appendChild(th);
+		var cols = x[0].split('@')[0].split('_');
+		for (var ii=0;ii<cols.length;ii++){
+			var ncol = parseInt(cols[ii].substring(1,));
+			for (var iii=0;iii<statobjects.length+1;iii++) {
+				if (iii == statobjects.length){
+					statobjects.push(ncol);
+					break;
+				}
+				else if (ncol == statobjects[iii]) {
+					break;
+				}
+			}
+			
+		}
+	});
+	
+	var currentOrder = 0;
+	var currentClass = 1;
+	
+	var years = {total:{}};
+	for (var ii=0;ii<statobjects.length;ii++){
+		years.total[statobjects[ii]] =  0;
+	}
+	for (var i=1;i<statarray.length;i++){
+		if (statarray[i].length < 10){continue;}
+		if (seasonYear != 0 && parseInt(statarray[i][0].substring(0,4)) != parseInt(seasonYear)){continue;}
+		var year = statarray[i][0].substring(0,4);
+		if (seasonYear != 0){
+			year = statarray[i][0].substring(4,6);
+		}
+		if (years.hasOwnProperty(year)){
+			
+		}
+		else {
+			years[year] = {};
+			for (var ii=0;ii<statobjects.length;ii++){
+				years[year][statobjects[ii]] =  0;
+			}
+		}
+		
+		for (var ii=0;ii<statobjects.length;ii++){
+			if (parseInt(statarray[i][27])==1 && statobjects[ii] < statarray[i].length) {
+				years[year][statobjects[ii]] += parseInt(statarray[i][statobjects[ii]]);
+				years.total[statobjects[ii]] += parseInt(statarray[i][statobjects[ii]]);
+			}
+		}
+
+	}
+	var orderedData = [];
+	
+	for(var year in years){
+		if (year == 'total'){continue;}
+		var oneyear = [[parseInt(year),year]];
+		if (seasonYear != 0){oneyear[0][1] = monthnames[parseInt(year)];}
+		var i = 1;
+		this.displayStats.forEach(x => {
+			var nc = parseInt(postfixify(x[1],this.colInfo).split('@')[0].substring(1,));
+			var ncd = solvepostfixjs(years[year],x[0]);
+			years[year][nc] = ncd;
+			if (x[3][0] == '='){
+				oneyear.push([ncd,roundFixed(ncd,parseInt(x[3].substring(1)),true)]);
+			}
+			else {
+				oneyear.push([ncd,roundFixed(ncd,parseInt(x[3]),false)]);
+			}
+			if (seasonYear == 0 && x[1] == this.sortInfo[0][2]){this.sortInfo[0][0] = i;}
+			else if (seasonYear != 0 && x[1] == this.sortInfo[1][2]){this.sortInfo[1][0] = i;}
+			i++;
+		});
+		orderedData.push(oneyear);
+	}
+	if (seasonYear == 0) {
+		if (this.sortInfo[0][1] == -1){orderedData.sort((a, b) => b[this.sortInfo[0][0]][0] - a[this.sortInfo[0][0]][0]);}
+		else {orderedData.sort((a, b) => a[this.sortInfo[0][0]][0] - b[this.sortInfo[0][0]][0]);}
+	}
+	else {
+		if (this.sortInfo[1][1] == -1){orderedData.sort((a, b) => b[this.sortInfo[1][0]][0] - a[this.sortInfo[1][0]][0]);}
+		else {orderedData.sort((a, b) => a[this.sortInfo[1][0]][0] - b[this.sortInfo[1][0]][0]);}
+	}
+	for(var i=0;i<orderedData.length;i++){
+		var tr = document.createElement('tr');
+		tr.classList.add("tr1");
+		for (var ii=0;ii<orderedData[i].length;ii++){
+			var td = document.createElement('td');
+			td.textContent =  orderedData[i][ii][1];
+			tr.appendChild(td);
+		}
+		tbodya.appendChild(tr);
+	}
+	var tr = document.createElement('tr');
+	tr.classList.add("tr1");
+	var td = document.createElement('td');
+	td.textContent = 'Total';
+	tr.appendChild(td);
+	var ii = 0;
+	this.displayStats.forEach(x => {
+		td = document.createElement('td');
+		var nc = parseInt(postfixify(x[1],this.colInfo).split('@')[0].substring(1,));
+		var ncd = solvepostfixjs(years.total,x[0])
+		td.textContent = roundFixed(ncd,3,false);
+		years.total[nc] = ncd;
+		tr.appendChild(td);
+		ii++;
+	});
+	
+	tbodya.appendChild(tr);
+  }
+  
+  
+	
+  
+}
+
+customElements.define('season-standings', SeasonStandings);
+
 class TabDNSeason extends TabDN {
 
 	constructor() {
@@ -319,6 +544,7 @@ class TabDNSeason extends TabDN {
 	
 	
 	 addData(retmess) {
+	 	/*
 		var players = document.querySelectorAll('season-stats');
 		var i = 0;
 		for (var ii=0;ii*2 + 1<retmess[0].length;ii++) {
@@ -338,6 +564,7 @@ class TabDNSeason extends TabDN {
 				this.parentNode.appendChild(player);
 			}
 		}
+		*/
 
     }
 	
