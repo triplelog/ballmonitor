@@ -431,8 +431,14 @@ class TabDNBox extends TabDN {
 	}
 	
 	chgBoxes() {
-		var paramDiv = this.shadowRoot.querySelector("#team1");
-		console.log(paramDiv.value);
+		var team1 = this.shadowRoot.querySelector("#team1");
+		var filters = "(DATE>4/1/2000 AND DATE<9/1/2000)";
+		if (team1.value.length > 0){filters += " AND (TEAM=="+team1.value+" OR OPP=="+team1.value+")";}
+		console.log(filters);
+		var filterFormula = postfixify(filters,this.colInfo);
+		var jsonmessage = {'command':'filter','formula':filterFormula};
+		this.ws.send(JSON.stringify(jsonmessage));
+
 	}
 	nextBox(n=-1) {
 		if (n == -1 && this.boxindex+1 < this.boxscores.length){
