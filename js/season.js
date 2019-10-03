@@ -32,9 +32,48 @@ class SeasonStats extends HTMLElement {
   	
   	this.chgsrc();
   	
+  	this.createDivision('NLEAST','NL East',[[0,0,0,0,0,0,0,0,0]]);
+  	
 	
 	
   }
+  
+  createDivision(divID,divName,divData) {
+		var columns = [divName,'W','L','PCT','GB','Last 10','RS','RA','ExpW-L'];
+	
+		var leagueDiv = this.shadowRoot.querySelector('#'+divID.substring(0,2));
+		var divDiv = document.createElement('div');
+		//divDiv.classList.add('col');
+		divDiv.id = divID;
+		leagueDiv.appendChild(divDiv);
+						
+		var table = document.createElement('table');
+		var thead = document.createElement('thead');
+		var tbody = document.createElement('tbody');
+		tbody.id = divID+'Body';
+		var tr = document.createElement('tr');
+		for (var i=0;i<columns.length;i++){
+			var th = document.createElement('th');
+			th.textContent = columns[i];
+			tr.appendChild(th);
+		}
+		thead.appendChild(tr);
+		
+		for (var ii=0;ii<divData.length;ii++){
+			tr = document.createElement('tr');
+			for (var i=0;i<divData[ii].length;i++){
+				var td = document.createElement('td');
+				td.textContent = divData[ii][i];
+				tr.appendChild(td);
+			}
+			tbody.appendChild(tr);
+		}
+		
+		table.appendChild(thead);
+		table.appendChild(tbody);
+		divDiv.appendChild(table);
+
+	}
   
   newcolumn(e) {
   	var tippyNode = e.target.parentNode;
@@ -277,6 +316,7 @@ class TabDNSeason extends TabDN {
 			}
 		};
 	}
+	
 	
 	 addData(retmess) {
 		var players = document.querySelectorAll('season-stats');
