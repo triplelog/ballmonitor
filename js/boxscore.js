@@ -495,9 +495,10 @@ class TabDNBox extends TabDN {
 			this.ws.send(JSON.stringify(jsonmessage));
 		}
 		else if (sort == "oldest"){
-			if (dates[0].length > 0){
-				filters += " AND (DATE=="+dates[0]+")";
-			}
+			var jsonmessage = {'command':'pivot','pivotcol':'2','sort':'x28','columns':[]};
+			this.ws.send(JSON.stringify(jsonmessage));
+			jsonmessage = {'command':'print','type':'pivot@1'};
+			this.ws.send(JSON.stringify(jsonmessage));
 		}
 		
 		
