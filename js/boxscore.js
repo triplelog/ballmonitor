@@ -464,9 +464,9 @@ class TabDNBox extends TabDN {
 			else if (team1A.checked){filters += " AND (TEAM=="+team1.value+" AND LOC==0)";}
 		}
 		if (team2.value.length > 0){
-			if (team2H.checked && team2A.checked){filters += " AND (OPP=="+team1.value+")";}
-			else if (team2H.checked){filters += " AND (OPP=="+team1.value+" AND LOC==0)";}
-			else if (team2A.checked){filters += " AND (OPP=="+team1.value+" AND LOC==1)";}
+			if (team2H.checked && team2A.checked){filters += " AND (OPP=="+team2.value+")";}
+			else if (team2H.checked){filters += " AND (OPP=="+team2.value+" AND LOC==0)";}
+			else if (team2A.checked){filters += " AND (OPP=="+team2.value+" AND LOC==1)";}
 		}
 		console.log(filters);
 		var filterFormula = postfixify(filters,this.colInfo);
