@@ -443,6 +443,8 @@ class TabDNBox extends TabDN {
 		const shadowRoot = this.attachShadow({mode: 'open'}).appendChild(templateContent.cloneNode(true));
 		
 		this.shadowRoot.querySelector("#submitChg").addEventListener("mousedown", e => {this.chgBoxes()});
+		this.shadowRoot.querySelector("#team1").addEventListener("input", e => {this.chgTeam(e)});
+		this.shadowRoot.querySelector("#team2").addEventListener("input", e => {this.chgTeam(e)});
 		
 		this.boxscores = [];
 		this.boxindex = 0;
@@ -450,6 +452,11 @@ class TabDNBox extends TabDN {
 		
 	}
 	
+	chgTeam(e) {
+		var teamSpot = e.target.id;
+		var teamID = e.target.value;
+		console.log(teamSpot,teamID);
+	}
 	chgBoxes() {
 		var filters = "(DATE>4/1/2000 AND DATE<9/1/2000)";
 		
