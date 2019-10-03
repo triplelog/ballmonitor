@@ -313,7 +313,7 @@ class SeasonStandings extends HTMLElement {
 			}
 			*/
 
-			for (var i=0;i<dateLen;i++) {
+			for (var i=0;i<_this.dateLen;i++) {
 				_this.dateList.push([Object.keys(_this.fullSchedule)[i],0]);
 				/*
 				hmonth = parseInt(Object.keys(_this.fullSchedule)[i].substring(4,6))*2+parseInt(Math.min(parseInt(Object.keys(_this.fullSchedule)[i].substring(6,8)),29)/16);
