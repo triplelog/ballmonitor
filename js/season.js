@@ -300,7 +300,8 @@ class SeasonStandings extends HTMLElement {
 			var leagues = _this.leagues;
 			var divisions = _this.divisions;
 			_this.fullSchedule = data['games'];
-			var teams = data['teams'];
+			_this.teams = data['teams'];
+			var teams = _this.teams;
 			_this.dateList = [];
 			var dateRev = {};
 			_this.dateLen = Object.keys(_this.fullSchedule).length;
@@ -434,6 +435,7 @@ class SeasonStandings extends HTMLElement {
 		var myData = {};
 		var leagues = this.leagues;
 		var divisions = this.divisions;
+		var teams = this.teams;
 		var teamData = this.teamData;
 		for (var i=0; i < leagues.length; i++) {
 			for (var ii=0;ii<divisions.length;ii++) {
