@@ -445,6 +445,8 @@ class TabDNBox extends TabDN {
 		this.shadowRoot.querySelector("#submitChg").addEventListener("mousedown", e => {this.chgBoxes()});
 		this.shadowRoot.querySelector("#team1").addEventListener("input", e => {this.chgTeam(e)});
 		this.shadowRoot.querySelector("#team2").addEventListener("input", e => {this.chgTeam(e)});
+		this.shadowRoot.querySelector("#batterSort").addEventListener("click", e => {this.chgSort(e)});
+		this.shadowRoot.querySelector("#pitcherSort").addEventListener("click", e => {this.chgSort(e)});
 		
 		this.boxscores = [];
 		this.boxindex = 0;
@@ -452,10 +454,26 @@ class TabDNBox extends TabDN {
 		
 	}
 	
+	chgSort(e) {
+		if (e.target.checked){
+			this.shadowRoot.querySelector('#customSort').display = 'block';
+		}
+	}
 	chgTeam(e) {
 		var teamSpot = e.target.id;
 		var teamID = e.target.value;
 		console.log(teamSpot,teamID);
+		if (teamSpot == 'team1'){
+			var team1Drop = this.shadowRoot.querySelector('#team1Dropdown');
+			team1Drop.style.display = 'inline-block';
+			team1Drop.textContent = teamID;
+		}
+		else {
+			var team2Drop = this.shadowRoot.querySelector('#team2Dropdown');
+			team2Drop.style.display = 'inline-block';
+			team2Drop.textContent = teamID;
+		}
+		
 	}
 	chgBoxes() {
 		var filters = "(DATE>4/1/2000 AND DATE<9/1/2000)";
