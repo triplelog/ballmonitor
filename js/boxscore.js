@@ -489,7 +489,7 @@ class TabDNBox extends TabDN {
 		var sort = this.shadowRoot.querySelector('input[name="sort"]:checked').value;
 		console.log(this.colInfo);
 		if (sort == "newest"){
-			var jsonmessage = {'command':'pivot','pivotcol':'1','sort':'x5','columns':'x6'};
+			var jsonmessage = {'command':'pivot','pivotcol':'2','sort':'x28','columns':[]};
 			this.ws.send(JSON.stringify(jsonmessage));
 			jsonmessage = {'command':'print'};
 			this.ws.send(JSON.stringify(jsonmessage));
@@ -551,11 +551,18 @@ class TabDNBox extends TabDN {
 		var boxes = document.querySelectorAll('box-score');
 		var i = 0;
 		this.boxscores = [];
-		for (var ii=0;ii*2 + 1<retmess[0].length;ii++) {
-			this.colInfo[parseInt(retmess[0][ii*2 + 1])]=retmess[0][ii*2];
+		if (retmess[1].length > 20){ //Is full table
+			for (var ii=0;ii*2 + 1<retmess[0].length;ii++) {
+				this.colInfo[parseInt(retmess[0][ii*2 + 1])]=retmess[0][ii*2];
+			}
+			for (var ii=1;ii<retmess.length;ii++) {
+				this.boxscores.push(retmess[ii][2]);
+			}
 		}
-		for (var ii=1;ii<retmess.length;ii++) {
-			this.boxscores.push(retmess[ii][2]);
+		else { //Is pivot table
+			for (var ii=1;ii<retmess.length;ii++) {
+				this.boxscores.push(retmess[ii][1]);
+			}
 		}
 		boxes[0].setAttribute("src",this.boxscores[0]);
 		boxes[0].setAttribute("nsrc",this.boxscores[1]);
