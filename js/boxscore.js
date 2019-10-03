@@ -534,11 +534,36 @@ class TabDNBox extends TabDN {
 		
 		var dates = this.shadowRoot.querySelector("#dates").value.split('-');
 		if (dates.length == 2){
-			filters += " AND (DATE>="+dates[0]+")";
-			filters += " AND (DATE<="+dates[1]+")";
+			if (dates[0].length == 4){
+				filters += " AND (DATE>=01/01/"+dates[0]+")";
+			}
+			else if (dates[0].length == 7 && dates[0][2] == '/') {
+				filters += " AND (DATE>="+dates[0].substring(0,2)+"/01/"+dates[0].substring(3)+")";
+			}
+			else {
+				filters += " AND (DATE>="+dates[0]+")";
+			}
+			if (dates[1].length == 4){
+				filters += " AND (DATE<=12/31/"+dates[1]+")";
+			}
+			else if (dates[1].length == 7 && dates[1][2] == '/') {
+				filters += " AND (DATE<="+dates[1].substring(0,2)+"/31/"+dates[1].substring(3)+")";
+			}
+			else {
+				filters += " AND (DATE<="+dates[1]+")";
+			}
+
 		}
 		else if (dates.length == 1){
-			if (dates[0].length > 0){
+			if (dates[0].length == 4){
+				filters += " AND (DATE>=01/01/"+dates[0]+")";
+				filters += " AND (DATE<=12/31/"+dates[0]+")";
+			}
+			else if (dates[0].length == 7 && dates[0][2] == '/') {
+				filters += " AND (DATE>="+dates[0].substring(0,2)+"/01/"+dates[0].substring(3)+")";
+				filters += " AND (DATE<="+dates[0].substring(0,2)+"/31/"+dates[0].substring(3)+")";
+			}
+			else {
 				filters += " AND (DATE=="+dates[0]+")";
 			}
 		}
