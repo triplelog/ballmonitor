@@ -507,7 +507,7 @@ class TabDNBox extends TabDN {
 			var sortType = this.shadowRoot.querySelector('#sortType');
 			var col = this.shadowRoot.querySelector('#sortFormula').value; 
 			if (sortType.value == 'max'){
-				var colid = postfixify(col,this.colInfo).split('_')[0];
+				var colid = postfixify(col,this.colInfo).split('@')[0].split('_')[0].substring(1);
 				var jsonmessage = {'command':'pivot','pivotcol':'2','sort':'x'+colid,'columns':[]};
 				this.ws.send(JSON.stringify(jsonmessage));
 				jsonmessage = {'command':'print'};
@@ -516,7 +516,7 @@ class TabDNBox extends TabDN {
 				this.ws.send(JSON.stringify(jsonmessage));
 			}
 			else if (sortType.value == 'sum'){
-				var colid = postfixify(col,this.colInfo).split('_')[0];
+				var colid = postfixify(col,this.colInfo).split('@')[0].split('_')[0].substring(1);
 				var jsonmessage = {'command':'pivot','pivotcol':'2','sort':'s'+colid,'columns':[]};
 				this.ws.send(JSON.stringify(jsonmessage));
 				jsonmessage = {'command':'print'};
@@ -525,7 +525,7 @@ class TabDNBox extends TabDN {
 				this.ws.send(JSON.stringify(jsonmessage));
 			}
 			else if (sortType.value == 'min'){
-				var colid = postfixify(col,this.colInfo).split('_')[0];
+				var colid = postfixify(col,this.colInfo).split('@')[0].split('_')[0].substring(1);
 				var jsonmessage = {'command':'pivot','pivotcol':'2','sort':'n'+colid,'columns':[]};
 				this.ws.send(JSON.stringify(jsonmessage));
 				jsonmessage = {'command':'print'};
@@ -534,7 +534,7 @@ class TabDNBox extends TabDN {
 				this.ws.send(JSON.stringify(jsonmessage));
 			}
 			else if (sortType.value == 'count'){
-				var colid = postfixify(col,this.colInfo).split('@')[0].split('_')[0];
+				var colid = postfixify(col,this.colInfo);
 				var jsonmessage = {'command':'pivot','pivotcol':'2','sort':'c'+colid,'columns':[]};
 				this.ws.send(JSON.stringify(jsonmessage));
 				jsonmessage = {'command':'print'};
