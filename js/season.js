@@ -286,7 +286,68 @@ class SeasonStandings extends HTMLElement {
   }
   
   loadData(year) {
-  		/*
+  	var _this = this;
+  	var url = 'seasons/2018Data.json';
+	var jsonFile = new XMLHttpRequest();
+    jsonFile.open("GET",url,true);
+    jsonFile.send();
+
+    jsonFile.onreadystatechange = function() {
+        if (jsonFile.readyState== 4 && jsonFile.status == 200) {
+            var data = JSON.parse(jsonFile.responseText);
+            var leagues = data['leagues'];
+			var divisions = data['divisions'];
+			_this.fullSchedule = data['games'];
+			var teams = data['teams'];
+			_this.dateList = [];
+			var dateRev = {};
+			_this.dateLen = Object.keys(_this.fullSchedule).length;
+			/*
+			pvalues = [];
+			chmonth = 7;
+			*/
+			_this.initialDate = _this.dateLen;
+			/*
+			if (date.length > 4){
+				initialDate = 0;
+			}
+			*/
+
+			for (var i=0;i<dateLen;i++) {
+				_this.dateList.push([Object.keys(_this.fullSchedule)[i],0]);
+				/*
+				hmonth = parseInt(Object.keys(_this.fullSchedule)[i].substring(4,6))*2+parseInt(Math.min(parseInt(Object.keys(_this.fullSchedule)[i].substring(6,8)),29)/16);
+				if (hmonth > chmonth) {
+					pvalues.push(i);
+					chmonth = hmonth;
+				}
+				dateRev[Object.keys(_this.fullSchedule)[i]] = i;
+				if (date > Object.keys(_this.fullSchedule)[i]) {
+					initialDate = i;
+				}
+				*/
+			}
+			
+			_this.teamData = {};
+			var myData = {};
+	
+	
+			for (var i=0; i < leagues.length; i++) {
+				for (var ii=0;ii<divisions.length;ii++) {
+					myData[leagues[i]+divisions[ii]]=[];
+					for (var iii=0;iii<teams[leagues[i]][divisions[ii]].length;iii++) {
+						_this.teamData[teams[leagues[i]][divisions[ii]][iii]] = {'wins':0,'losses':0,'runs':0,'allowed':0,'elo':1500,'sprs':0,'sprsos':0,'last10':[]};
+				
+						var teamrow = [teams[leagues[i]][divisions[ii]][iii],0,0,0,'-',[],0,0,'0-0'];
+						myData[leagues[i]+divisions[ii]].push(teamrow);
+				
+					}
+					_this.createDivision(leagues[i]+divisions[ii],leagues[i]+divisions[ii],myData[leagues[i]+divisions[ii]]);
+				}
+			}
+  		}
+     }
+     /*
 		d3.json("data/years/"+year+"Data.json").then(function(data) {
 			leagues = data['leagues'];
 			divisions = data['divisions'];
