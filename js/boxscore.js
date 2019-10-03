@@ -507,7 +507,35 @@ class TabDNBox extends TabDN {
 			var sortType = this.shadowRoot.querySelector('#sortType');
 			var col = this.shadowRoot.querySelector('#sortFormula').value; 
 			if (sortType.value == 'max'){
-				var jsonmessage = {'command':'pivot','pivotcol':'2','sort':'x'+col,'columns':[]};
+				var colid = postfixify(col,this.colInfo).split('_')[0];
+				var jsonmessage = {'command':'pivot','pivotcol':'2','sort':'x'+colid,'columns':[]};
+				this.ws.send(JSON.stringify(jsonmessage));
+				jsonmessage = {'command':'print'};
+				this.ws.send(JSON.stringify(jsonmessage));
+				jsonmessage = {'command':'switch','type':'main'};
+				this.ws.send(JSON.stringify(jsonmessage));
+			}
+			else if (sortType.value == 'sum'){
+				var colid = postfixify(col,this.colInfo).split('_')[0];
+				var jsonmessage = {'command':'pivot','pivotcol':'2','sort':'s'+colid,'columns':[]};
+				this.ws.send(JSON.stringify(jsonmessage));
+				jsonmessage = {'command':'print'};
+				this.ws.send(JSON.stringify(jsonmessage));
+				jsonmessage = {'command':'switch','type':'main'};
+				this.ws.send(JSON.stringify(jsonmessage));
+			}
+			else if (sortType.value == 'min'){
+				var colid = postfixify(col,this.colInfo).split('_')[0];
+				var jsonmessage = {'command':'pivot','pivotcol':'2','sort':'n'+colid,'columns':[]};
+				this.ws.send(JSON.stringify(jsonmessage));
+				jsonmessage = {'command':'print'};
+				this.ws.send(JSON.stringify(jsonmessage));
+				jsonmessage = {'command':'switch','type':'main'};
+				this.ws.send(JSON.stringify(jsonmessage));
+			}
+			else if (sortType.value == 'count'){
+				var colid = postfixify(col,this.colInfo).split('@')[0].split('_')[0];
+				var jsonmessage = {'command':'pivot','pivotcol':'2','sort':'c'+colid,'columns':[]};
 				this.ws.send(JSON.stringify(jsonmessage));
 				jsonmessage = {'command':'print'};
 				this.ws.send(JSON.stringify(jsonmessage));
@@ -571,6 +599,7 @@ class TabDNBox extends TabDN {
 			for (var ii=0;ii*2 + 1<retmess[0].length;ii++) {
 				this.colInfo[parseInt(retmess[0][ii*2 + 1])]=retmess[0][ii*2];
 			}
+			return 0;
 			for (var ii=1;ii<retmess.length;ii++) {
 				this.boxscores.push(retmess[ii][2]);
 			}

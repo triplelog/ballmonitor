@@ -570,9 +570,9 @@ class TabDN extends HTMLElement {
 			if (pivotColumns[i][1] != 'c' && this.colInfo[ii].toUpperCase() == pivotColumns[i][0]) {colIDs.push(pivotColumns[i][1]+ii);}
 		}
 	}
-	if (pivotSort[1] == 'c'){sortID = pivotSort[0].replace('@','|');}
+	if (pivotSort[1] == 'c'){sortID = 'c'+pivotSort[0];}
 	for (var i=0;i<pivotColumns.length;i++) {
-		if (pivotColumns[i][1] == 'c') {colIDs.push(pivotColumns[i][0].replace('@','|'));}
+		if (pivotColumns[i][1] == 'c') {colIDs.push('c'+pivotColumns[i][0]);}
 	}
 	if (pivotID < 0){return 0;}
 	
