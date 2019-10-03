@@ -449,7 +449,8 @@ class TabDNBox extends TabDN {
 		this.shadowRoot.querySelector("#pitcherSort").addEventListener("click", e => {this.chgSort(e)});
 		this.shadowRoot.querySelector("#oldestSort").addEventListener("click", e => {this.chgSort(e)});
 		this.shadowRoot.querySelector("#newestSort").addEventListener("click", e => {this.chgSort(e)});
-		
+		var input = this.shadowRoot.querySelector("#team1");
+		new Awesomplete(input, {list: ['Braves','Cubs']});
 		this.boxscores = [];
 		this.boxindex = 0;
 		
