@@ -559,7 +559,7 @@ class SeasonStandings extends HTMLElement {
 			
 			}
 		}
-		for (var di=dateIndex;di<dateLen;di++){
+		for (var di=dateIndex;di<this.dateLen;di++){
 			if (dateList[di][1]==1) {
 				var schedule = fullSchedule[dateList[di][0]];
 	
