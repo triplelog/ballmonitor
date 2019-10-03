@@ -469,39 +469,39 @@ class TabDNBox extends TabDN {
 		var team2 = this.shadowRoot.querySelector("#team2").value;
 		if (team1.length > 2){
 			var team1Drop = this.shadowRoot.querySelector('#team1Dropdown');
-			team1Drop.style.display = 'inline-block';
+			team1Drop.disabled = false;
 			team1Drop.textContent = team1;
 			if (team2.length < 3) {
 				var team2Drop = this.shadowRoot.querySelector('#team2Dropdown');
-				team2Drop.style.display = 'inline-block';
+				team2Drop.disabled = false;
 				team2Drop.textContent = team1+"'s OPP";
 			}
 			else {
 				var team2Drop = this.shadowRoot.querySelector('#team2Dropdown');
-				team2Drop.style.display = 'inline-block';
+				team2Drop.disabled = false;
 				team2Drop.textContent = team2;
 			}
 		}
 		else if (team2.length > 2){
 			var team2Drop = this.shadowRoot.querySelector('#team2Dropdown');
-			team2Drop.style.display = 'inline-block';
+			team2Drop.disabled = false;
 			team2Drop.textContent = team2;
 			if (team1.length < 3) {
 				var team1Drop = this.shadowRoot.querySelector('#team1Dropdown');
-				team1Drop.style.display = 'inline-block';
+				team1Drop.disabled = false;
 				team1Drop.textContent = team2+"'s OPP";
 			}
 			else {
 				var team1Drop = this.shadowRoot.querySelector('#team1Dropdown');
-				team1Drop.style.display = 'inline-block';
+				team1Drop.disabled = false;
 				team1Drop.textContent = team1;
 			}
 		}
 		else {
 			var team1Drop = this.shadowRoot.querySelector('#team1Dropdown');
-			team1Drop.style.display = 'none';
+			team1Drop.disabled = true;
 			var team2Drop = this.shadowRoot.querySelector('#team2Dropdown');
-			team2Drop.style.display = 'none';
+			team2Drop.disabled = true;
 		}
 		
 	}
