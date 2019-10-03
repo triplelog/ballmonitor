@@ -336,6 +336,8 @@ class SeasonStandings extends HTMLElement {
 	
 	
 			for (var i=0; i < leagues.length; i++) {
+				var leagueDiv = _this.shadowRoot.querySelector('#'+leagues[i]);
+				leagueDiv.innerHTML = '';
 				for (var ii=0;ii<divisions.length;ii++) {
 					myData[leagues[i]+divisions[ii]]=[];
 					for (var iii=0;iii<teams[leagues[i]][divisions[ii]].length;iii++) {
@@ -345,6 +347,10 @@ class SeasonStandings extends HTMLElement {
 						myData[leagues[i]+divisions[ii]].push(teamrow);
 				
 					}
+					
+					var divDiv = document.createElement('div');
+					divDiv.id = leagues[i]+divisions[ii];
+					leagueDiv.appendChild(divDiv);
 					_this.createDivision(leagues[i]+divisions[ii],leagues[i]+divisions[ii],myData[leagues[i]+divisions[ii]]);
 				}
 			}
@@ -396,12 +402,8 @@ class SeasonStandings extends HTMLElement {
   createDivision(divID,divName,divData) {
 		var columns = [divName,'W','L','PCT','GB','Last 10','RS','RA','ExpW-L'];
 	
-		var leagueDiv = this.shadowRoot.querySelector('#'+divID.substring(0,2));
-		leagueDiv.innerHTML = '';
-		var divDiv = document.createElement('div');
-		//divDiv.classList.add('col');
-		divDiv.id = divID;
-		leagueDiv.appendChild(divDiv);
+		var divDiv = this.shadowRoot.querySelector('#'+divID);
+		divDiv.innerHTML = '';
 						
 		var table = document.createElement('table');
 		var thead = document.createElement('thead');
