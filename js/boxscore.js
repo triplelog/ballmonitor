@@ -455,8 +455,10 @@ class TabDNBox extends TabDN {
 	}
 	
 	chgSort(e) {
+		console.log(e.target);
+		console.log(e.target.checked);
 		if (e.target.checked){
-			this.shadowRoot.querySelector('#customSort').display = 'block';
+			this.shadowRoot.querySelector('#customSort').style.display = 'block';
 		}
 	}
 	chgTeam(e) {
