@@ -185,12 +185,13 @@
 		</div>
 	</template>
 	<template id="choosebox">
-		<div>
+		<div id="formData">
 			Team:<input type="text" id="team1"></input><input type="checkbox" id="home1" checked>H</input><input type="checkbox" id="away1" checked>A</input><br />
 			Team:<input type="text" id="team2"></input><input type="checkbox" id="home2" checked>H</input><input type="checkbox" id="away2" checked>A</input><br />
-			Date(s):<input type="text"></input><br />
-			Sort:<input type="radio" checked>Recent First</input><input type="radio">Oldest First</input><input type="radio"></input><select><option>Max</option><option>Sum</option><option>Countif</option><option>Min</option></select><input type="text"></input><br />
+			Date(s):<input type="text" id="dates"></input><br />
+			Sort:<input type="radio" name="sort" checked>Newest</input><input type="radio" name="sort">Oldest</input><input type="radio" name="sort"></input><select id="sortType"><option value="sum">Sum</option><option value="count">Countif</option><option value="max">Max</option><option value="min">Min</option></select><input type="text" id="sortFormula"></input><br />
 			<!--Filter:<input type="radio" checked>Date</input><input type="radio"></input><select><option>Max</option><option>Sum</option><option>Countif</option><option>Min</option></select><input type="text"></input><br />-->
+			<button id="submitChg">Submit</button>
 		</div>
 	</template>
 	<header style="border: 0px solid black; background: rgb(255,255,255); background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(102,204,204,1) 100%);">
