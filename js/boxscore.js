@@ -466,9 +466,10 @@ class TabDNBox extends TabDN {
 		}
 		if (team2.value.length > 0){
 			if (team2H.checked && team2A.checked){filters += " AND (TEAM=="+team2.value+" OR OPP=="+team2.value+")";}
-			else if (team2H.checked){filters += " AND ((OPP=="+team2.value+" AND LOC==0) OR (TEAM=="+team1.value+" AND LOC==1))";}
-			else if (team2A.checked){filters += " AND ((OPP=="+team2.value+" AND LOC==1) OR (TEAM=="+team1.value+" AND LOC==0))";}
+			else if (team2H.checked){filters += " AND ((OPP=="+team2.value+" AND LOC==0) OR (TEAM=="+team2.value+" AND LOC==1))";}
+			else if (team2A.checked){filters += " AND ((OPP=="+team2.value+" AND LOC==1) OR (TEAM=="+team2.value+" AND LOC==0))";}
 		}
+		
 		var dates = this.shadowRoot.querySelector("#dates").value.split('-');
 		if (dates.length == 2){
 			filters += " AND (DATE>="+dates[0]+")";
@@ -480,11 +481,27 @@ class TabDNBox extends TabDN {
 			}
 		}
 		
-		
 		console.log(filters);
 		var filterFormula = postfixify(filters,this.colInfo);
 		var jsonmessage = {'command':'filter','formula':filterFormula};
 		this.ws.send(JSON.stringify(jsonmessage));
+		
+		var sort = this.shadowRoot.querySelector('input[name="sort"]:checked').value;
+		console.log(this.colInfo);
+		if (sort == "newest"){
+			var jsonmessage = {'command':'pivot','pivotcol':'1','sort':'x5','columns':'x6'};
+			this.ws.send(JSON.stringify(jsonmessage));
+			jsonmessage = {'command':'print'};
+			this.ws.send(JSON.stringify(jsonmessage));
+		}
+		else if (sort == "oldest"){
+			if (dates[0].length > 0){
+				filters += " AND (DATE=="+dates[0]+")";
+			}
+		}
+		
+		
+		
 
 	}
 	nextBox(n=-1) {
