@@ -509,6 +509,8 @@ class TabDNBox extends TabDN {
 			if (sortType.value == 'max'){
 				var jsonmessage = {'command':'pivot','pivotcol':'2','sort':'x'+col,'columns':[]};
 				this.ws.send(JSON.stringify(jsonmessage));
+				jsonmessage = {'command':'print'};
+				this.ws.send(JSON.stringify(jsonmessage));
 				jsonmessage = {'command':'switch','type':'main'};
 				this.ws.send(JSON.stringify(jsonmessage));
 			}
