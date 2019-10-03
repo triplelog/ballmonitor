@@ -348,7 +348,7 @@ class SeasonStandings extends HTMLElement {
 					_this.createDivision(leagues[i]+divisions[ii],leagues[i]+divisions[ii],myData[leagues[i]+divisions[ii]]);
 				}
 			}
-			_this.addGame(2);
+			_this.addGame(100);
   		}
      }
      /*
