@@ -295,8 +295,10 @@ class SeasonStandings extends HTMLElement {
     jsonFile.onreadystatechange = function() {
         if (jsonFile.readyState== 4 && jsonFile.status == 200) {
             var data = JSON.parse(jsonFile.responseText);
-            var leagues = data['leagues'];
-			var divisions = data['divisions'];
+            _this.leagues = data['leagues'];
+			_this.divisions = data['divisions'];
+			var leagues = _this.leagues;
+			var divisions = _this.divisions;
 			_this.fullSchedule = data['games'];
 			var teams = data['teams'];
 			_this.dateList = [];
@@ -345,6 +347,7 @@ class SeasonStandings extends HTMLElement {
 					_this.createDivision(leagues[i]+divisions[ii],leagues[i]+divisions[ii],myData[leagues[i]+divisions[ii]]);
 				}
 			}
+			_this.addGame(2);
   		}
      }
      /*
@@ -393,6 +396,7 @@ class SeasonStandings extends HTMLElement {
 		var columns = [divName,'W','L','PCT','GB','Last 10','RS','RA','ExpW-L'];
 	
 		var leagueDiv = this.shadowRoot.querySelector('#'+divID.substring(0,2));
+		leagueDiv.innerHTML = '';
 		var divDiv = document.createElement('div');
 		//divDiv.classList.add('col');
 		divDiv.id = divID;
@@ -424,6 +428,61 @@ class SeasonStandings extends HTMLElement {
 		table.appendChild(tbody);
 		divDiv.appendChild(table);
 
+	}
+	
+  updateStandings() {
+		var myData = {};
+		var leagues = this.leagues;
+		var divisions = this.divisions;
+		var teamData = this.teamData;
+		for (var i=0; i < leagues.length; i++) {
+			for (var ii=0;ii<divisions.length;ii++) {
+				myData[leagues[i]+divisions[ii]]=[];
+				for (var iii=0;iii<teams[leagues[i]][divisions[ii]].length;iii++) {
+
+					teamrow = [teams[leagues[i]][divisions[ii]][iii],teamData[teams[leagues[i]][divisions[ii]][iii]]['wins'],teamData[teams[leagues[i]][divisions[ii]][iii]]['losses'],0,'-',teamData[teams[leagues[i]][divisions[ii]][iii]]['last10'],teamData[teams[leagues[i]][divisions[ii]][iii]]['runs'],teamData[teams[leagues[i]][divisions[ii]][iii]]['allowed'],'0-0'];
+					if (teamrow[1]+teamrow[2] > 0) {
+						teamrow[3] = (teamrow[1]/(teamrow[1]+teamrow[2])).toFixed(3);
+					}
+					if (teamrow[5].length > 10) {
+						teamrow[5] = teamData[teams[leagues[i]][divisions[ii]][iii]]['last10'].slice(teamData[teams[leagues[i]][divisions[ii]][iii]]['last10'].length-10,teamData[teams[leagues[i]][divisions[ii]][iii]]['last10'].length);
+					}
+					if (teamrow[6] > 0) {
+					
+						var expwp = 1.0/(1.0+Math.pow(teamrow[7]/teamrow[6],1.83));
+						var expwins = Math.round(expwp * (teamrow[1]+teamrow[2])).toFixed(0);
+						var explosses = (teamrow[1]+teamrow[2] - expwins).toFixed(0);
+						teamrow[8] = expwins + '-' + explosses;
+					
+						var sprsm = teamData[teams[leagues[i]][divisions[ii]][iii]]['sprs'];//*2/3+teamData[teams[leagues[i]][divisions[ii]][iii]]['sprsos']/3;
+						expwp = 1.0/(1.0+Math.pow(10.0,(0-sprsm/(teamrow[1]+teamrow[2]))/400));
+						expwins = Math.round(expwp * (teamrow[1]+teamrow[2])).toFixed(0);
+						explosses = (teamrow[1]+teamrow[2] - expwins).toFixed(0);
+						//teamrow[9] = expwins + '-' + explosses;
+					}
+					else {
+						var expwp = 0.0;
+						teamrow[8] =  '0-' + teamrow[2];
+						//teamrow[9] =  '0-' + teamrow[2];
+					}
+					myData[leagues[i]+divisions[ii]].push(teamrow);
+				
+				}
+				myData[leagues[i]+divisions[ii]].sort(function(a, b){return b[1] - b[2] - a[1] + a[2]});
+				var maxWL = myData[leagues[i]+divisions[ii]][0][1]-myData[leagues[i]+divisions[ii]][0][2];
+				for (var iii=0;iii<teams[leagues[i]][divisions[ii]].length;iii++) {
+					if (myData[leagues[i]+divisions[ii]][iii][1]-myData[leagues[i]+divisions[ii]][iii][2] >= maxWL) {
+						myData[leagues[i]+divisions[ii]][iii][4] = '-';
+					}
+					else {
+						myData[leagues[i]+divisions[ii]][iii][4] = ((maxWL - (myData[leagues[i]+divisions[ii]][iii][1]-myData[leagues[i]+divisions[ii]][iii][2]))/2).toFixed(1);
+					}
+				}
+				createDivision(leagues[i]+divisions[ii],leagues[i]+divisions[ii],myData[leagues[i]+divisions[ii]]);
+			}
+		}
+	
+	
 	}
   
   chgsrc() {
@@ -569,6 +628,7 @@ class SeasonStandings extends HTMLElement {
 			}
 		}
 	
+	updateStandings();
 	}
   
   
