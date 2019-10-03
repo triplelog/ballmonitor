@@ -414,11 +414,13 @@ class TabDNBox extends TabDN {
 		super();    
 	
 		var _this = this;
-		this.createTable();
+		//this.createTable();
     	//this.addPaginate();
     	//this.addButtons();
-		this.addSortBox();
-		this.addFilterBox();
+		let template = document.getElementById('choosebox');
+		let templateContent = template.content;
+	
+		const shadowRoot = this.attachShadow({mode: 'open'}).appendChild(templateContent.cloneNode(true));
 		
 		
 		
@@ -428,24 +430,7 @@ class TabDNBox extends TabDN {
 		
 	}
 	
-	addSortBox() {
-		var sortDiv = document.createElement("div");
-			var sortFormula = document.createElement("input");
-			sortFormula.setAttribute("type","text");
-			sortFormula.id = "sortFormula";
-			sortDiv.appendChild(sortFormula);
-			var sortButton = document.createElement("button");
-			sortButton.classList.add('sortButton');
-			sortButton.textContent = 'Sort';
-			sortButton.addEventListener("mouseover", e => {this.newSort(e,0);});
-			sortButton.addEventListener("mousedown", e => {this.newSort(e,1);});
-			sortButton.addEventListener("mouseout", e => {this.newSort(e,2);});
-			sortButton.addEventListener("mouseup", e => {this.newSort(e,3);});
-			sortDiv.appendChild(sortButton);
-		sortDiv.style.display = 'inline-block';
-		sortDiv.id = "sortDiv";
-		this.shadowRoot.appendChild(sortDiv);
-	}
+	
 	nextBox(n=-1) {
 		if (n == -1 && this.boxindex+1 < this.boxscores.length){
 			this.boxindex++;
@@ -488,24 +473,7 @@ class TabDNBox extends TabDN {
 		}
 	}
 	
-	addFilterBox() {
-		var filterDiv = document.createElement("div");
-			var filterFormula = document.createElement("input");
-			filterFormula.setAttribute("type","text");
-			filterFormula.id = "filterFormula";
-			filterDiv.appendChild(filterFormula);
-			var filterButton = document.createElement("button");
-			filterButton.classList.add('filterButton');
-			filterButton.textContent = 'Filter';
-			filterButton.addEventListener("mouseover", e => {this.boxFilter(e,0);});
-			filterButton.addEventListener("mousedown", e => {this.boxFilter(e,1);});
-			filterButton.addEventListener("mouseout", e => {this.boxFilter(e,2);});
-			filterButton.addEventListener("mouseup", e => {this.boxFilter(e,3);});
-			filterDiv.appendChild(filterButton);
-		filterDiv.style.display = 'inline-block';
-		filterDiv.id = "filterDiv";
-		this.shadowRoot.appendChild(filterDiv);
-	}
+
 	addData(retmess) {
 		var boxes = document.querySelectorAll('box-score');
 		var i = 0;
