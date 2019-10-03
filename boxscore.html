@@ -195,11 +195,11 @@
 			}
 		</style>
 		<div id="formData">
-			Team:<input type="text" id="team1"></input><input type="checkbox" id="home1" checked>H</input><input type="checkbox" id="away1" checked>A</input><br />
-			Team:<input type="text" id="team2"></input><input type="checkbox" id="home2" checked>H</input><input type="checkbox" id="away2" checked>A</input><br />
+			<label for="team1">Team 1</label><input type="text" id="team1"></input><input type="checkbox" id="home1" checked>H</input><input type="checkbox" id="away1" checked>A</input><br />
+			<label for="team2">Team 2</label><input type="text" id="team2"></input><input type="checkbox" id="home2" checked>H</input><input type="checkbox" id="away2" checked>A</input><br />
 			Date(s):<input type="text" id="dates"></input><br />
 			Sort:<input type="radio" value="newest" id="newestSort" name="sort" checked>Newest</input><input type="radio" value="oldest" id="oldestSort" name="sort">Oldest</input><input type="radio" value="batter" id="batterSort" name="sort">B Stats</input><input type="radio" value="pitcher" id="pitcherSort" name="sort">P Stats</input><br />
-			<div id="customSort"><select id="sortType"><option value="sum">Sum</option><option value="count">Countif</option><option value="max">Max</option><option value="min">Min</option></select><input type="text" id="sortFormula"></input><select id="sortType"><option value="both">Both Teams</option><option value="team1" id="team1Dropdown" disabled="true">Team 1</option><option value="team2" id="team2Dropdown">Team 2</option><option value="either">Either Team</option><option value="home">Home Team</option><option value="away">Away Team</option></select></div><br />
+			<div id="customSort"><select id="sortType"><option value="sum">Sum</option><option value="count">Countif</option><option value="max">Max</option><option value="min">Min</option></select><input type="text" id="sortFormula"></input><select id="sortType"><option value="both">Both Teams</option><option value="team1" id="team1Dropdown" disabled="true">Team 1</option><option value="team2" id="team2Dropdown" disabled="true">Team 2</option><option value="either">Either Team</option><option value="home">Home Team</option><option value="away">Away Team</option></select></div><br />
 			<!--Filter:<input type="radio" checked>Date</input><input type="radio"></input><select><option>Max</option><option>Sum</option><option>Countif</option><option>Min</option></select><input type="text"></input><br />-->
 			<button id="submitChg">Submit</button>
 		</div>

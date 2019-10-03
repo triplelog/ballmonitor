@@ -500,8 +500,10 @@ class TabDNBox extends TabDN {
 		else {
 			var team1Drop = this.shadowRoot.querySelector('#team1Dropdown');
 			team1Drop.disabled = true;
+			team1Drop.textContent = "Team 1";
 			var team2Drop = this.shadowRoot.querySelector('#team2Dropdown');
 			team2Drop.disabled = true;
+			team2Drop.textContent = "Team 2";
 		}
 		
 	}
