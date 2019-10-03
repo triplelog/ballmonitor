@@ -491,16 +491,16 @@ class TabDNBox extends TabDN {
 		if (sort == "newest"){
 			var jsonmessage = {'command':'pivot','pivotcol':'2','sort':'x28','columns':[]};
 			this.ws.send(JSON.stringify(jsonmessage));
-			jsonmessage = {'command':'print','type':'pivot@0'};
-			this.ws.send(JSON.stringify(jsonmessage));
+			//jsonmessage = {'command':'print','type':'pivot@0'};
+			//this.ws.send(JSON.stringify(jsonmessage));
 			jsonmessage = {'command':'switch','type':'main'};
 			this.ws.send(JSON.stringify(jsonmessage));
 		}
 		else if (sort == "oldest"){
 			var jsonmessage = {'command':'pivot','pivotcol':'2','sort':'x28','columns':[]};
 			this.ws.send(JSON.stringify(jsonmessage));
-			jsonmessage = {'command':'print','type':'pivot@0'};
-			this.ws.send(JSON.stringify(jsonmessage));
+			//jsonmessage = {'command':'print','type':'pivot@0'};
+			//this.ws.send(JSON.stringify(jsonmessage));
 			jsonmessage = {'command':'switch','type':'main'};
 			this.ws.send(JSON.stringify(jsonmessage));
 		}
