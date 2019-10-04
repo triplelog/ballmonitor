@@ -684,7 +684,10 @@ class TabDNSeason extends TabDN {
 		var i = 0;
 		if (type == 'multi'){
 			console.log(retmess);
-			var leaderDiv = this.shadowRoot.querySelector('#statLeaders');
+			var leaderDiv = players[0].querySelector('#statLeaders');
+			console.log(leaderDiv);
+			leaderDiv = players[0].shadowRoot.querySelector('#statLeaders');
+			console.log(leaderDiv);
 			for (var stat in retmess) {
 				var table = document.createElement('table');
 				var tr = document.createElement('tr');
