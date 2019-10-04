@@ -291,9 +291,8 @@ class SeasonStandings extends HTMLElement {
   }
   
   updateSlider() {
-  	var bothV = this.shadowRoot.querySelector('#slider').value.split(',');
   	var lowerV = parseInt(this.shadowRoot.querySelector('#slider').valueLow);
-  	var upperV = parseInt(bothV[1]);
+  	var upperV = parseInt(this.shadowRoot.querySelector('#slider').valueHigh);
   	this.addGame(upperV,lowerV);
   }
   loadData(year) {
