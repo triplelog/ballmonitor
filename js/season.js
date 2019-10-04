@@ -282,14 +282,20 @@ class SeasonStandings extends HTMLElement {
   	//this.createDivision('NLEAST','NL East',[[0,0,0,0,0,0,0,0,0]]);
   	multirange(this.shadowRoot.querySelector('#slider'));
   	
-  	this.shadowRoot.querySelectorAll('#slider')[0].addEventListener("input",e => {console.log(this.shadowRoot.querySelector('#slider').value);});
-  	this.shadowRoot.querySelectorAll('#slider')[1].addEventListener("input",e => {console.log(this.shadowRoot.querySelector('#slider').value);});
+  	this.shadowRoot.querySelectorAll('#slider')[0].addEventListener("input",e => {this.updateSlider();});
+  	this.shadowRoot.querySelectorAll('#slider')[1].addEventListener("input",e => {this.updateSlider();});
   	
   	
 	
 	
   }
   
+  updateSlider() {
+  	var bothV = this.shadowRoot.querySelector('#slider').value.split(',');
+  	var lowerV = parseInt(bothV[0]);
+  	var upperV = parseInt(bothV[1]);
+  	this.addGame(upperV,lowerV);
+  }
   loadData(year) {
   	var _this = this;
   	var url = 'seasons/2018Data.json';
