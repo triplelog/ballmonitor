@@ -280,7 +280,7 @@ class SeasonStandings extends HTMLElement {
   	this.loadData(2018);
   	//this.addGame(2);
   	//this.createDivision('NLEAST','NL East',[[0,0,0,0,0,0,0,0,0]]);
-  	
+  	multirange(this.querySelector('#slider'));
   	
 	
 	
