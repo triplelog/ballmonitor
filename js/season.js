@@ -677,12 +677,14 @@ class TabDNSeason extends TabDN {
 	
 	
 	 addData(retmess) {
-	 	/*
+	 	
 		var players = document.querySelectorAll('season-stats');
 		var i = 0;
 		for (var ii=0;ii*2 + 1<retmess[0].length;ii++) {
 			this.colInfo[parseInt(retmess[0][ii*2 + 1])]=retmess[0][ii*2];
 		}
+		console.log(retmess[1]);
+		/*
 		for (var ii=1;ii<2;ii++) {
 			if (players.length > ii - 1){
 				//boxes[ii-1].setAttribute("src",retmess[ii][1]);
