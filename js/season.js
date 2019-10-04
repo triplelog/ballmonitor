@@ -684,9 +684,9 @@ class TabDNSeason extends TabDN {
 		endDate += 17652;
 		console.log(endDate);
 		var jsonmessage = { command: 'filter', formula: 'c28_/17652_c28_/'+endDate+'@##>##<&' };
-		_this.ws.send(JSON.stringify(jsonmessage));
+		this.ws.send(JSON.stringify(jsonmessage));
 		jsonmessage = {'command':'multisort'};
-		_this.ws.send(JSON.stringify(jsonmessage));
+		this.ws.send(JSON.stringify(jsonmessage));
 	}
 	 addData(retmess,type='single') {
 	 	
