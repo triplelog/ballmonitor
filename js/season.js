@@ -281,7 +281,9 @@ class SeasonStandings extends HTMLElement {
   	//this.addGame(2);
   	//this.createDivision('NLEAST','NL East',[[0,0,0,0,0,0,0,0,0]]);
   	multirange(this.shadowRoot.querySelector('#slider'));
-  	console.log(this.shadowRoot.querySelector('#slider').value);
+  	
+  	this.shadowRoot.querySelector('#slider').addEventListener("change",e => {console.log(this.shadowRoot.querySelector('#slider').value);});
+  	
   	
 	
 	
