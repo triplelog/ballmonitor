@@ -133,11 +133,11 @@
 	<template id="standings">
 		<style>
 			#container {
-				display: flex;
+				display: block;
 				border: 1px solid black;
 			}
 			#standingsHead, #standingsFoot {
-				display: flex;
+				display: block;
 				border: 1px solid red;
 			}
 			#NL, #AL {
@@ -145,13 +145,16 @@
 				font-size: .9rem;
 				line-height: .9rem;
 			}
+			.headButton {
+				float: right;
+			}
 		</style>
-		<div id="standingsHead">2018 Standings</div>
+		<div id="standingsHead"><span style="text-align: center;">2018 Standings</span><button class="headButton">Playoffs</button><button class="headButton">Wild Card</button></div>
 		<div id="container">
 		  <div id="NL"></div>
 		  <div id="AL"></div>
 		</div>
-		<div id="standingsFoot">Slider</div>
+		<div id="standingsFoot"><input type="range" /></div>
 	</template>
 	<!--<div>Standings</div>
 	<div>Stat leaders by ind and team</div>
