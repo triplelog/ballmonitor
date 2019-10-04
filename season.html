@@ -138,6 +138,9 @@
 			}
 			#standingsHead, #standingsFoot {
 				display: flex;
+				justify-content: flex-start;
+			    flex-direction: row;
+			    align-items: center;
 				border: 1px solid red;
 			}
 			#NL, #AL {
@@ -146,10 +149,10 @@
 				line-height: .9rem;
 			}
 			.headButton {
-				float: right;
+				margin-left: auto;
 			}
 		</style>
-		<div id="standingsHead"><span style="text-align: center;">2018 Standings</span><button class="headButton">Playoffs</button><button class="headButton">Wild Card</button></div>
+		<div id="standingsHead">2018 Standings<button class="headButton">Playoffs</button><button class="headButton">Wild Card</button></div>
 		<div id="container">
 		  <div id="NL"></div>
 		  <div id="AL"></div>
