@@ -696,7 +696,7 @@ class TabDNSeason extends TabDN {
 				for (i=0;i<retmess[stat].length;i++){
 					tr = document.createElement('tr');
 					
-					td = document.createElement('td');
+					var td = document.createElement('td');
 					td.textContent = retmess[stat][i][0];
 					tr.appendChild(td);
 					
