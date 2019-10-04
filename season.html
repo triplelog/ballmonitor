@@ -130,10 +130,15 @@
 		  </div>
 		</div>
 	</template>
-	<template id="standings" style="width: 66%;">
+	<template id="standings">
 		<style>
 			#container {
 				display: flex;
+				border: 1px solid black;
+			}
+			#standingsHead, #standingsFoot {
+				display: flex;
+				border: 1px solid red;
 			}
 			#NL, #AL {
 				flex: 1;
@@ -141,10 +146,12 @@
 				line-height: .9rem;
 			}
 		</style>
+		<div id="standingsHead">2018 Standings</div>
 		<div id="container">
 		  <div id="NL"></div>
 		  <div id="AL"></div>
 		</div>
+		<div id="standingsFoot">Slider</div>
 	</template>
 	<!--<div>Standings</div>
 	<div>Stat leaders by ind and team</div>
