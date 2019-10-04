@@ -294,6 +294,7 @@ class SeasonStandings extends HTMLElement {
   	var lowerV = parseInt(this.shadowRoot.querySelector('#slider').valueLow);
   	var upperV = parseInt(this.shadowRoot.querySelector('#slider').valueHigh);
   	this.addGame(upperV,lowerV);
+  	document.querySelector('tabdn-season').filterLeaders(upperV);
   }
   loadData(year) {
   	var _this = this;
@@ -670,16 +671,23 @@ class TabDNSeason extends TabDN {
 					_this.usecache = false;
 					var jsonmessage = {'command':'load'};
 					_this.ws.send(JSON.stringify(jsonmessage));
-					var jsonmessage = { command: 'filter', formula: 'c28_/17532_c28_12/1/2018@##>##<&' };
+					jsonmessage = { command: 'filter', formula: 'c28_/17532_c28_12/1/2018@##>##<&' };
 					_this.ws.send(JSON.stringify(jsonmessage));
-					var jsonmessage = {'command':'multisort'};
+					jsonmessage = {'command':'multisort'};
 					_this.ws.send(JSON.stringify(jsonmessage));
 				}
 			}
 		};
 	}
 	
-	
+	filterLeaders(endDate){
+		endDate += 17652;
+		console.log(endDate);
+		var jsonmessage = { command: 'filter', formula: 'c28_/17652_c28_/'+endDate+'@##>##<&' };
+		_this.ws.send(JSON.stringify(jsonmessage));
+		jsonmessage = {'command':'multisort'};
+		_this.ws.send(JSON.stringify(jsonmessage));
+	}
 	 addData(retmess,type='single') {
 	 	
 		var players = document.querySelectorAll('season-stats');
