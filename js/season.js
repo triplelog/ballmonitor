@@ -684,10 +684,7 @@ class TabDNSeason extends TabDN {
 		var i = 0;
 		if (type == 'multi'){
 			console.log(retmess);
-			var leaderDiv = players[0].querySelector('#statLeaders');
-			console.log(leaderDiv);
-			leaderDiv = players[0].shadowRoot.querySelector('#statLeaders');
-			console.log(leaderDiv);
+			var leaderDiv = players[0].shadowRoot.querySelector('#statLeaders');
 			for (var stat in retmess) {
 				var table = document.createElement('table');
 				var tr = document.createElement('tr');
@@ -696,19 +693,24 @@ class TabDNSeason extends TabDN {
 				th.textContent = stat;
 				tr.appendChild(th);
 				table.appendChild(tr);
+				for (i=0;i<retmess[stat].length;i++){
+					tr = document.createElement('tr');
+					
+					td = document.createElement('td');
+					td.textContent = retmess[stat][i][0];
+					tr.appendChild(td);
+					
+					td = document.createElement('td');
+					td.textContent = retmess[stat][i][1];
+					tr.appendChild(td);
+					
+					table.appendChild(tr);
+				}
+				
 				leaderDiv.appendChild(table);
 			}
 			
-			/*
-			<table class="statLeaders">
-				<tr><th colspan="2">Homeruns</th></tr>
-				<tr><td>Name</td><td>Value</td></tr>
-				<tr><td>Name</td><td>Value</td></tr>
-				<tr><td>Name</td><td>Value</td></tr>
-				<tr><td>Name</td><td>Value</td></tr>
-				<tr><td>Name</td><td>Value</td></tr>
-			</table>
-			*/
+
 		}
 		else {
 			for (var ii=0;ii*2 + 1<retmess[0].length;ii++) {
