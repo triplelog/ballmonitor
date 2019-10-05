@@ -66,6 +66,7 @@ class SeasonStats extends HTMLElement {
 			}
   		}
   	}
+  	console.log(this.leaderColumns);
   }
   
   chgsrc() {
