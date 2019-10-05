@@ -14,6 +14,7 @@ class SeasonStats extends HTMLElement {
 
     const shadowRoot = this.attachShadow({mode: 'open'}).appendChild(templateContent.cloneNode(true));
 	this.displayStats = [];
+	this.leaderColumns = [];
   	
   	var ncbutton = this.shadowRoot.querySelector('#newcol');
   	this.tippyColumn = tippy(ncbutton, {
@@ -47,6 +48,26 @@ class SeasonStats extends HTMLElement {
   	this.stats(this.currentYear);
   	this.tippyColumn.hide();
   }
+  
+  buttonAdded(){
+  	var button = this.shadowRoot.querySelector('#chgLeaderColumns');
+  	button.addEventListener("click", e => {this.chgLeaderColumns();});
+  }
+  
+  chgLeaderColumns() {
+  	var allChecks = this.shadowRoot.querySelectorAll('input[type="checkbox"]');
+  	this.leaderColumns = [];
+  	for (var i=0;i<allChecks.length;i++){
+  		if (allChecks[i].checked && allChecks[i].id){
+			var splitID = allChecks[i].id.split('_');
+			if (splitID[0] == 'stat'){
+				var checkID = parseInt(splitID[1]);
+				this.leaderColumns.push(checkID);
+			}
+  		}
+  	}
+  }
+  
   chgsrc() {
   	var _this = this;
     this.playerid = this.getAttribute('src');
@@ -675,20 +696,23 @@ class TabDNSeason extends TabDN {
 					_this.ws.send(JSON.stringify(jsonmessage));
 					jsonmessage = { command: 'filter', formula: 'c28_/17532_c28_12/1/2018@##>##<&' };
 					_this.ws.send(JSON.stringify(jsonmessage));
-					jsonmessage = {'command':'multisort'};
+					jsonmessage = {'command':'multisort', 'columns':[7,8,9]};
 					_this.ws.send(JSON.stringify(jsonmessage));
 				}
 			}
 		};
 	}
 	
+	
 	filterLeaders(endDate){
 		endDate += 17652;
 		var jsonmessage = { command: 'filter', formula: 'c28_/17652_c28_/'+endDate+'@##>##<&' };
 		this.ws.send(JSON.stringify(jsonmessage));
-		jsonmessage = {'command':'multisort'};
+		console.log(this.columnLeaders);
+		jsonmessage = {'command':'multisort', 'columns':this.columnLeaders};
 		this.ws.send(JSON.stringify(jsonmessage));
 	}
+	
 	 addData(retmess,type='single') {
 	 	
 		var players = document.querySelectorAll('season-stats');
@@ -729,6 +753,7 @@ class TabDNSeason extends TabDN {
 				this.colInfo[parseInt(retmess[0][ii*2 + 1])]=retmess[0][ii*2];
 			}
 			var editCols = players[0].shadowRoot.querySelector('#statsEdit');
+			editCols.innerHTML = '';
 			for (var col in this.colInfo){
 				var input = document.createElement('input');
 				input.type = "checkbox";
@@ -739,6 +764,12 @@ class TabDNSeason extends TabDN {
 				editCols.appendChild(input);
 				editCols.appendChild(label);
 			}
+			var button = document.createElement('button');
+			button.textContent = 'Submit';
+			button.id = "chgLeaderColumns";
+			
+			editCols.appendChild(button);
+			players[0].buttonAdded();
 		}
 		
 		/*
