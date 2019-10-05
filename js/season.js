@@ -66,6 +66,7 @@ class SeasonStats extends HTMLElement {
 			}
   		}
   	}
+  	document.querySelector('tabdn-season').leaderColumns = this.leaderColumns;
   	console.log(this.leaderColumns);
   }
   
@@ -702,6 +703,7 @@ class TabDNSeason extends TabDN {
 				}
 			}
 		};
+		this.columnLeaders = [];
 	}
 	
 	
