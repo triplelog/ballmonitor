@@ -54,16 +54,11 @@ class TabDN extends HTMLElement {
 			}
 		}
 		else if (evt.data[0] == '{'){
-			if (_this.showit) {
-				_this.addData(JSON.parse(evt.data),'multi');
-				var d = new Date();
-				var n = d.getTime();
-				console.log('real data:',n);
-			}
-			else{
-				_this.retdata = JSON.parse(evt.data);
-				_this.foundit = true;
-			}
+			_this.addData(JSON.parse(evt.data),'multi');
+			var d = new Date();
+			var n = d.getTime();
+			console.log('real data:',n);
+
 		}
 		else{
 			alert("Bad Message");
