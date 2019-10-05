@@ -285,6 +285,8 @@ class SeasonStandings extends HTMLElement {
   	this.shadowRoot.querySelectorAll('#slider')[0].addEventListener("input",e => {this.updateSlider();});
   	this.shadowRoot.querySelectorAll('#slider')[1].addEventListener("input",e => {this.updateSlider();});
   	
+  	this.tabdnSeason = document.querySelector('tabdn-season');
+  	
   	
 	
 	
@@ -294,7 +296,7 @@ class SeasonStandings extends HTMLElement {
   	var lowerV = parseInt(this.shadowRoot.querySelector('#slider').valueLow);
   	var upperV = parseInt(this.shadowRoot.querySelector('#slider').valueHigh);
   	this.addGame(upperV,lowerV);
-  	document.querySelector('tabdn-season').filterLeaders(upperV);
+  	this.tabdnSeason.filterLeaders(upperV);
   }
   loadData(year) {
   	var _this = this;
@@ -682,7 +684,6 @@ class TabDNSeason extends TabDN {
 	
 	filterLeaders(endDate){
 		endDate += 17652;
-		console.log(endDate);
 		var jsonmessage = { command: 'filter', formula: 'c28_/17652_c28_/'+endDate+'@##>##<&' };
 		this.ws.send(JSON.stringify(jsonmessage));
 		jsonmessage = {'command':'multisort'};
