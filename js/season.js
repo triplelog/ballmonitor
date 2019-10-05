@@ -66,7 +66,7 @@ class SeasonStats extends HTMLElement {
 			}
   		}
   	}
-  	document.querySelector('tabdn-season').leaderColumns = this.leaderColumns;
+  	document.querySelector('tabdn-season').setLeaderColumns(this.leaderColumns);
   	console.log(this.leaderColumns);
   }
   
@@ -706,7 +706,10 @@ class TabDNSeason extends TabDN {
 		this.columnLeaders = [];
 	}
 	
-	
+	setLeaderColumns(array){
+		this.columnLeaders = array;
+		
+	}
 	filterLeaders(endDate){
 		endDate += 17652;
 		var jsonmessage = { command: 'filter', formula: 'c28_/17652_c28_/'+endDate+'@##>##<&' };
