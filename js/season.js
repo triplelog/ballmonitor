@@ -729,7 +729,7 @@ class TabDNSeason extends TabDN {
 				this.colInfo[parseInt(retmess[0][ii*2 + 1])]=retmess[0][ii*2];
 			}
 			var editCols = players[0].shadowRoot.querySelector('#statsEdit');
-			for (col in this.colInfo){
+			for (var col in this.colInfo){
 				var input = document.createElement('input');
 				input.type = "checkbox";
 				input.id = "stat_"+col;
