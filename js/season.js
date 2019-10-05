@@ -728,7 +728,17 @@ class TabDNSeason extends TabDN {
 			for (var ii=0;ii*2 + 1<retmess[0].length;ii++) {
 				this.colInfo[parseInt(retmess[0][ii*2 + 1])]=retmess[0][ii*2];
 			}
-			console.log(retmess[1]);
+			var editCols = players[0].shadowRoot.querySelector('#statsEdit');
+			for (col in this.colInfo){
+				var input = document.createElement('input');
+				input.type = "checkbox";
+				input.id = "stat_"+col;
+				var label = document.createElement('label');
+				label.setAttribute('for',"stat_"+col);
+				label.textContent = this.colInfo[col];
+				editCols.appendChild(input);
+				editCols.appendChild(label);
+			}
 		}
 		
 		/*

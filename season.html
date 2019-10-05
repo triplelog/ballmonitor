@@ -53,33 +53,27 @@
 			#statLeaders table {
 				border: 1px solid black;
 			}
+			#statsHead {
+				display: block;
+				border: 1px solid red;
+				text-align: center;
+			}
+			#statsEdit {
+				display: block;
+				border: 1px solid red;
+				text-align: center;
+			}
 			.tr1 td {border-style: dashed; border-width: 1px 0px 0px 0px;}
 			.tr2 td {border-style: dashed; border-width: 0px 0px 0px 0px;}
 		</style>
 		<div id="container">
+		  <div id="statsHead">2018 Stat Leaders <button>Edit</button><button>Hide</button></div>
+		  <div id="statsEdit"></div>
 		  <div style="display: flex;" id="statLeaders">
 			
 		  </div>
 
 		  <div style="display: flex;">
-			<div id="career-location">
-				<!--<button>Reg</button><button>Post</button><button id="newcol">New</button>-->
-				<table>
-					<thead>
-						<tr>
-						</tr>
-					</thead>
-					<tbody>
-					</tbody>
-					<tfoot>
-						<tr>
-						</tr>
-					</tfoot>
-				</table>
-				<hr>
-				<div id="regular-extra">
-				</div>
-			</div>
 			<div id="season-location">
 				<table>
 					<thead>
@@ -95,26 +89,6 @@
 				</table>
 				<hr>
 				<div id="regular-extra">
-				</div>
-			</div>
-		  </div>
-
-		  <div style="display: flex;">
-			<div id="leaderboard-location">
-				<table>
-					<thead>
-						<tr>
-						</tr>
-					</thead>
-					<tbody>
-					</tbody>
-					<tfoot>
-						<tr>
-						</tr>
-					</tfoot>
-				</table>
-				<hr>
-				<div id="leader-extra">
 				</div>
 			</div>
 		  </div>
