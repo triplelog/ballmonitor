@@ -63,6 +63,11 @@
 			}
 			.tr1 td {border-style: dashed; border-width: 1px 0px 0px 0px;}
 			.tr2 td {border-style: dashed; border-width: 0px 0px 0px 0px;}
+			.paginate { display: inline-block;}
+		    .paginate a {color: black; float: left; padding: 2px 4px;text-decoration: none;}
+			.paginate a.active {background-color: #4CAF50;color: white;}
+			.paginate a:hover:not(.active) {background-color: #ddd;}
+			.paginate a:hover {cursor: pointer;}
 		</style>
 		<div id="container">
 		  <div id="statsHead">2018 Stat Leaders <button>Edit</button><button>Hide</button></div>
@@ -91,6 +96,9 @@
 			</div>
 		  </div>
 		  <div id="statsHead">2018 Sortable Stats <button>Edit</button><button>Hide</button></div>
+		  <div id="sortableStats">
+		  	<table></table>
+		  </div>
 		</div>
 	</template>
 	<template id="standings">

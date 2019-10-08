@@ -13,6 +13,7 @@ class SeasonStats extends HTMLElement {
     let templateContent = template.content;
 
     const shadowRoot = this.attachShadow({mode: 'open'}).appendChild(templateContent.cloneNode(true));
+    this.sortableTable();
 	this.displayStats = [];
 	this.leaderColumns = [];
   	
@@ -37,6 +38,128 @@ class SeasonStats extends HTMLElement {
 	
   }
   
+  sortableTable() {
+		var table = document.createElement('table');
+			var thead = document.createElement('thead');
+				var tr = document.createElement('tr');
+				tr.style.display = "table-row";
+				tr.style.background ='white';
+				thead.appendChild(tr);
+			thead.style.background ='white';
+			table.appendChild(thead);
+			var tbody = document.createElement('tbody');
+			table.appendChild(tbody);
+			var tfoot = document.createElement('tfoot');
+			table.appendChild(tfoot);
+		table.style.overflowY = "auto";
+		table.style.overflowX = "auto";
+		table.style.maxHeight = "100vh";
+		table.style.margin = "0px";
+		//table.style.border = "1px dashed blue";
+		table.style.display = "block";
+		table.addEventListener("scroll",e => {this.scrollTable(e);});
+		//this.appendChild(table);
+		this.shadowRoot.querySelector('#sortableStats').appendChild(table);
+	
+	  }
+  
+  sortableData(retmess) {
+		var table = this.shadowRoot.querySelector('#sortableStats').querySelector('table');
+		table.style.maxWidth = (this.parentNode.clientWidth-20)+"px";
+		table.style.maxHeight = (this.parentNode.clientHeight-40)+"px";
+		this.style.maxWidth = (this.parentNode.clientWidth-20)+"px";
+		this.style.maxHeight = (this.parentNode.clientHeight-1)+"px";
+	
+		if (retmess[0][0].substring(0,5)=="Pivot"){
+			this.currentTable = "pivot@" + retmess[0][0].substring(6,retmess[0][0].length-2);
+			retmess[0][0] = "Rk";
+		}
+		var thead = this.shadowRoot.querySelector('thead');
+		const headrow = thead.querySelector('tr');
+		const headers = headrow.querySelectorAll('th');
+		for (var ii=0;ii*2 + 1<Math.max(retmess[0].length,headers.length*2 + 1);ii++) {
+			if (ii*2 + 1 < retmess[0].length && ii < headers.length) {
+				headers[ii].querySelector('button').textContent = retmess[0][ii*2];
+				headers[ii].id = "cHeader"+retmess[0][ii*2 + 1];
+				headers[ii].style.display = 'table-cell';
+				this.colInfo[parseInt(retmess[0][ii*2 + 1])]=retmess[0][ii*2];
+			}
+			else if (ii < headers.length) {
+				headers[ii].style.display = 'none';
+			}
+			else if (ii*2 + 1 < retmess[0].length) {
+				var headerCell = document.createElement("th");
+				var newHeader = document.createElement("button");
+				newHeader.textContent = retmess[0][ii*2];
+				newHeader.style.display = 'inline-block';
+				newHeader.style.height = '100%';
+				newHeader.style.width = '100%';
+				newHeader.addEventListener('mouseover',e => {this.mousehead(e,0);});
+				newHeader.addEventListener('mousedown',e => {this.mousehead(e,1);});
+				newHeader.addEventListener('mouseout',e => {this.mousehead(e,2);});
+				newHeader.addEventListener('mouseup',e => {this.mousehead(e,3);});
+				newHeader.setAttribute("draggable","true");
+				newHeader.addEventListener('dragstart',e => {this.dragColumn(e,0);});
+				newHeader.addEventListener("dragover", e => {e.preventDefault();});
+				newHeader.addEventListener("drop", e => {e.preventDefault(); this.dropColumn(e,1);});
+				headerCell.id = "cHeader"+retmess[0][ii*2 + 1];
+				headerCell.style.display = 'table-cell';
+				headerCell.classList.add("th-sm");
+				this.colInfo[parseInt(retmess[0][ii*2 + 1])]=retmess[0][ii*2];
+				headerCell.appendChild(newHeader);
+				headrow.appendChild(headerCell);
+			}
+			else {
+				break;
+			}
+		}
+	
+		var tbody = this.shadowRoot.querySelector('tbody');
+		var rows = tbody.querySelectorAll('tr');
+		for (var i=0;i<retmess.length-1;i++){
+			if (rows.length <= i) {
+				var newrow = document.createElement('tr');
+				newrow.addEventListener("dragover", e => {e.preventDefault();});
+				newrow.addEventListener("drop", e => {e.preventDefault(); this.dropColumn(e,0);});
+				tbody.appendChild(newrow);
+			}
+		}
+		rows = tbody.querySelectorAll('tr');
+		for (var i=0;i<rows.length;i++){
+			if (retmess.length-1 <= i) {
+				rows[i].style.display = 'none';
+			}
+			else {
+				rows[i].style.display = 'table-row';
+			}
+		}
+	
+		for (var i=0;i<retmess.length-1;i++){
+
+			const results = rows[i].querySelectorAll('td');
+			for (var ii=0;ii<Math.max(retmess[i+1].length,results.length);ii++) {
+				if (ii < retmess[i+1].length && ii < results.length) {
+					results[ii].textContent = retmess[i+1][ii]; //add one because of header
+					results[ii].style.display = 'table-cell';
+				}
+				else if (ii < results.length) {
+					results[ii].style.display = 'none';
+				}
+				else if (ii < retmess[i+1].length) {
+					var newResult = document.createElement("td");
+					newResult.textContent = retmess[i+1][ii];
+					newResult.style.display = 'table-cell';
+					newResult.id = 'cell-'+i+'-'+ii;
+					newResult.addEventListener("click",e => {this.cellClick(e,0);});
+					rows[i].appendChild(newResult);
+				}
+				else {
+					break;
+				}
+			}
+		}
+    }
+    
   newcolumn(e) {
   	var tippyNode = e.target.parentNode;
   	this.addColumn(tippyNode.querySelector('#colFormula').value,tippyNode.querySelector('#colName').value,"=3");
@@ -787,7 +910,7 @@ class TabDNSeason extends TabDN {
 			
 			editCols.appendChild(button);
 			players[0].buttonAdded();
-			console.log(retmess);
+			players[0].sortableData(retmess);
 		}
 		
 		/*
@@ -808,6 +931,9 @@ class TabDNSeason extends TabDN {
 		*/
 
     }
+    
+    
+    
 	
 	
 }
