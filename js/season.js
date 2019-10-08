@@ -24,7 +24,6 @@ class SeasonStats extends HTMLElement {
 	  hideOnClick: false,
 	  placement: "bottom",
 	  onMount(instance) {
-		console.log(_this.shadowRoot.querySelector('#tippyColumnButton'));
 		_this.shadowRoot.querySelector('#tippyColumnButton').addEventListener("click", e => {_this.newcolumn(e);});
 	  },
 	  
@@ -40,9 +39,6 @@ class SeasonStats extends HTMLElement {
   
   newcolumn(e) {
   	var tippyNode = e.target.parentNode;
-  	console.log(tippyNode.querySelector('#colName').value);
-  	console.log(tippyNode.querySelector('#colFormula').value);
-  	console.log(tippyNode.querySelector('#colFormat').value);
   	this.addColumn(tippyNode.querySelector('#colFormula').value,tippyNode.querySelector('#colName').value,"=3");
     this.stats(0);
   	this.stats(this.currentYear);
@@ -68,7 +64,6 @@ class SeasonStats extends HTMLElement {
   		}
   	}
   	document.querySelector('tabdn-season').setLeaderColumns(this.leaderColumns);
-  	console.log(this.leaderColumns);
   }
   
   chgsrc() {
@@ -107,7 +102,6 @@ class SeasonStats extends HTMLElement {
   	for (var i = 0;i<this.playerStats[0].length;i++){
   		this.colInfo[i] = this.playerStats[0][i];
 	}
-  	console.log(postfixify(cformula,this.colInfo));
   	this.displayStats.push([postfixify(cformula,this.colInfo),cname,cformula,cdisplay]);
   	if (postfixify(cformula,this.colInfo).split('_').length>1){
   		this.playerStats[0].push(cname);
@@ -727,6 +721,10 @@ class TabDNSeason extends TabDN {
 		console.log(this.columnLeaders);
 		jsonmessage = {'command':'multisort', 'columns':this.columnLeaders};
 		this.ws.send(JSON.stringify(jsonmessage));
+		jsonmessage = {'command':'switch','type':'main'};
+		this.ws.send(JSON.stringify(jsonmessage));
+		jsonmessage = {'command':'print'};
+		this.ws.send(JSON.stringify(jsonmessage));
 	}
 	
 	 addData(retmess,type='single') {
@@ -789,6 +787,7 @@ class TabDNSeason extends TabDN {
 			
 			editCols.appendChild(button);
 			players[0].buttonAdded();
+			console.log(retmess);
 		}
 		
 		/*
