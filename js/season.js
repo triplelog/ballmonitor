@@ -776,6 +776,9 @@ class TabDNSeason extends TabDN {
 				var label = document.createElement('label');
 				label.setAttribute('for',"stat_"+col);
 				label.textContent = this.colInfo[col];
+				if (parseInt(col)>4 && parseInt(col)<15){
+					input.setAtrribute('checked','true');
+				}
 				editCols.appendChild(input);
 				editCols.appendChild(label);
 			}
