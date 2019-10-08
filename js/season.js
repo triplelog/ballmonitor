@@ -105,7 +105,6 @@ class SeasonStats extends HTMLElement {
 				headerCell.id = "cHeader"+retmess[0][ii*2 + 1];
 				headerCell.style.display = 'table-cell';
 				headerCell.classList.add("th-sm");
-				this.colInfo[parseInt(retmess[0][ii*2 + 1])]=retmess[0][ii*2];
 				headerCell.appendChild(newHeader);
 				headrow.appendChild(headerCell);
 			}
