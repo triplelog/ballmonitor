@@ -729,7 +729,7 @@ class TabDNSeason extends TabDN {
 		var jsonmessage = { command: 'filter', formula: 'c28_'+startDate+'_c28_'+endDate+'@##>##<&' };
 		this.ws.send(JSON.stringify(jsonmessage));
 		console.log(this.columnLeaders);
-		jsonmessage = {'command':'multisort', 'columns':this.columnLeaders, 'formulas':['c7+c8']};
+		jsonmessage = {'command':'multisort', 'columns':this.columnLeaders, 'formulas':['c7_c8@##+']};
 		this.ws.send(JSON.stringify(jsonmessage));
 		jsonmessage = {'command':'switch','type':'pivot@0'};
 		this.ws.send(JSON.stringify(jsonmessage));
