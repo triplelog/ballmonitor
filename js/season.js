@@ -715,8 +715,8 @@ class TabDNSeason extends TabDN {
 		
 	}
 	filterLeaders(endDate,startDate){
-		endDate = endDate.substring(4,6)+'/'+endDate.substring(6,8)+'/'endDate.substring(0,4);
-		startDate = startDate.substring(4,6)+'/'+startDate.substring(6,8)+'/'startDate.substring(0,4);
+		endDate = endDate.substring(4,6)+'/'+endDate.substring(6,8)+'/'+endDate.substring(0,4);
+		startDate = startDate.substring(4,6)+'/'+startDate.substring(6,8)+'/'+startDate.substring(0,4);
 		
 		var jsonmessage = { command: 'filter', formula: 'c28_'+startDate+'_c28_'+endDate+'@##>##<&' };
 		this.ws.send(JSON.stringify(jsonmessage));
