@@ -15,6 +15,7 @@ class SeasonStats extends HTMLElement {
     const shadowRoot = this.attachShadow({mode: 'open'}).appendChild(templateContent.cloneNode(true));
 	this.displayStats = [];
 	this.leaderColumns = [];
+	this.leaderFormulas = [];
   	
   	var ncbutton = this.shadowRoot.querySelector('#newcol');
   	this.tippyColumn = tippy(ncbutton, {
@@ -52,10 +53,12 @@ class SeasonStats extends HTMLElement {
   	button.addEventListener("click", e => {this.chgLeaderColumns();});
   	this.chgLeaderColumns();
   }
+
   
   chgLeaderColumns() {
   	var allChecks = this.shadowRoot.querySelectorAll('input[type="checkbox"]');
   	this.leaderColumns = [];
+  	this.leaderFormulas = [];
   	for (var i=0;i<allChecks.length;i++){
   		if (allChecks[i].checked && allChecks[i].id){
 			var splitID = allChecks[i].id.split('_');
@@ -63,9 +66,13 @@ class SeasonStats extends HTMLElement {
 				var checkID = parseInt(splitID[1]);
 				this.leaderColumns.push(checkID);
 			}
+			else if (splitID[0] == 'formula'){
+				var checkID = splitID[1];
+				this.leaderFormulas.push(checkID);
+			}
   		}
   	}
-  	document.querySelector('tabdn-season').setLeaderColumns(this.leaderColumns);
+  	document.querySelector('tabdn-season').setLeaderColumns(this.leaderColumns,this.leaderFormulas);
   }
   
   chgsrc() {
@@ -718,8 +725,14 @@ class TabDNSeason extends TabDN {
 		this.columnLeaders = [];
 	}
 	
-	setLeaderColumns(array){
+	setLeaderColumns(array,array2=[]){
 		this.columnLeaders = array;
+		if (array2.length>0){
+			for (var i=0;i<array2.length;i++){
+				array2[i] = postfixify(array2[i],this.colInfo);
+			}
+		}
+		this.columnFormulas = array2;
 		
 	}
 	filterLeaders(endDate,startDate){
@@ -728,8 +741,7 @@ class TabDNSeason extends TabDN {
 		
 		var jsonmessage = { command: 'filter', formula: 'c28_'+startDate+'_c28_'+endDate+'@##>##<&' };
 		this.ws.send(JSON.stringify(jsonmessage));
-		console.log(this.columnLeaders);
-		jsonmessage = {'command':'multisort', 'columns':this.columnLeaders, 'formulas':['c7_c8@##+']};
+		jsonmessage = {'command':'multisort', 'columns':this.columnLeaders, 'formulas':this.columnFormulas};
 		this.ws.send(JSON.stringify(jsonmessage));
 		jsonmessage = {'command':'switch','type':'pivot@0'};
 		this.ws.send(JSON.stringify(jsonmessage));
@@ -911,12 +923,25 @@ class TabDNSeason extends TabDN {
 				editCols.appendChild(input);
 				editCols.appendChild(label);
 			}
+			for (var col in this.formulaInfo){
+				var input = document.createElement('input');
+				input.type = "checkbox";
+				input.id = "formula_"+'HR+1B';
+				var label = document.createElement('label');
+				label.setAttribute('for',input.id);
+				label.textContent = 'HR+1B';//this.formulaInfo[col];
+				input.setAttribute('checked','true');
+				editCols.appendChild(input);
+				editCols.appendChild(label);
+			}
 			var button = document.createElement('button');
 			button.textContent = 'Submit';
 			button.id = "chgLeaderColumns";
 			
 			editCols.appendChild(button);
 			players[0].buttonAdded();
+			
+			players[0].chgLeaderColumns();
 			this.sortableData(retmess);
 		}
 		
