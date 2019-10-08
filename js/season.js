@@ -52,6 +52,7 @@ class SeasonStats extends HTMLElement {
   buttonAdded(){
   	var button = this.shadowRoot.querySelector('#chgLeaderColumns');
   	button.addEventListener("click", e => {this.chgLeaderColumns();});
+  	this.chgLeaderColumns();
   }
   
   chgLeaderColumns() {
@@ -776,7 +777,7 @@ class TabDNSeason extends TabDN {
 				var label = document.createElement('label');
 				label.setAttribute('for',"stat_"+col);
 				label.textContent = this.colInfo[col];
-				if (parseInt(col)>4 && parseInt(col)<15){
+				if (parseInt(col)>2 && parseInt(col)<15){
 					input.setAttribute('checked','true');
 				}
 				editCols.appendChild(input);
