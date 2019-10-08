@@ -723,6 +723,7 @@ class TabDNSeason extends TabDN {
 			}
 		};
 		this.columnLeaders = [];
+		this.columnFormulas = [];
 	}
 	
 	setLeaderColumns(array,array2=[]){
@@ -908,6 +909,7 @@ class TabDNSeason extends TabDN {
 			for (var ii=0;ii*2 + 1<retmess[0].length;ii++) {
 				this.colInfo[parseInt(retmess[0][ii*2 + 1])]=retmess[0][ii*2];
 			}
+			this.formulaInfo = ['a'];
 			var editCols = players[0].shadowRoot.querySelector('#statsEdit');
 			editCols.innerHTML = '';
 			for (var col in this.colInfo){
