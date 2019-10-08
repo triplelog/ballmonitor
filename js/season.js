@@ -315,7 +315,7 @@ class SeasonStandings extends HTMLElement {
   	var lowerV = parseInt(this.shadowRoot.querySelector('#slider').valueLow);
   	var upperV = parseInt(this.shadowRoot.querySelector('#slider').valueHigh);
   	this.addGame(upperV,lowerV);
-  	this.tabdnSeason.filterLeaders(this.dateList[upperV][0],this.dateList[lowerV][0]);
+  	this.tabdnSeason.filterLeaders(this.dateList[Math.min(upperV,this.dateList.length-1)][0],this.dateList[lowerV][0]);
   }
   loadData(year) {
   	var _this = this;
@@ -729,7 +729,7 @@ class TabDNSeason extends TabDN {
 		var jsonmessage = { command: 'filter', formula: 'c28_'+startDate+'_c28_'+endDate+'@##>##<&' };
 		this.ws.send(JSON.stringify(jsonmessage));
 		console.log(this.columnLeaders);
-		jsonmessage = {'command':'multisort', 'columns':this.columnLeaders};
+		jsonmessage = {'command':'multisort', 'columns':this.columnLeaders, 'formulas':['c7+c8']};
 		this.ws.send(JSON.stringify(jsonmessage));
 		jsonmessage = {'command':'switch','type':'pivot@0'};
 		this.ws.send(JSON.stringify(jsonmessage));
