@@ -693,8 +693,8 @@ class TabDNSeason extends TabDN {
 
 		const shadowRoot = this.attachShadow({mode: 'open'}).appendChild(templateContent.cloneNode(true));
 		this.sortableTable();
-    	//this.addPaginate();
-    	//this.addButtons();
+    	this.addPaginate();
+    	this.addButtons();
     	
     	this.ws.onopen = function(){
 			var jsonmessage = {'command':'create','src':_this.getAttribute('src')};
