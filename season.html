@@ -63,11 +63,7 @@
 			}
 			.tr1 td {border-style: dashed; border-width: 1px 0px 0px 0px;}
 			.tr2 td {border-style: dashed; border-width: 0px 0px 0px 0px;}
-			.paginate { display: inline-block;}
-		    .paginate a {color: black; float: left; padding: 2px 4px;text-decoration: none;}
-			.paginate a.active {background-color: #4CAF50;color: white;}
-			.paginate a:hover:not(.active) {background-color: #ddd;}
-			.paginate a:hover {cursor: pointer;}
+			
 		</style>
 		<div id="container">
 		  <div id="statsHead">2018 Stat Leaders <button>Edit</button><button>Hide</button></div>
@@ -94,10 +90,6 @@
 				<div id="regular-extra">
 				</div>
 			</div>
-		  </div>
-		  <div id="statsHead">2018 Sortable Stats <button>Edit</button><button>Hide</button></div>
-		  <div id="sortableStats">
-		  	<table></table>
 		  </div>
 		</div>
 	</template>
@@ -181,6 +173,43 @@
 		</div>
 		<div id="standingsFoot"><input id="slider" type="range" multiple value="0,80" /><button class="headButton">Playoffs</button><button class="headButton">Wild Card</button></div>
 	</template>
+	<template id="sortableStats">
+		<style>
+			#container {
+				display: flex;
+				border: 1px solid black;
+			}
+			#standingsHead {
+				display: block;
+				border: 1px solid red;
+				text-align: center;
+			}
+			#standingsFoot {
+				display: block;
+				border: 1px solid red;
+			}
+			#NL, #AL {
+				flex: 1;
+				font-size: .9rem;
+				line-height: .9rem;
+			}
+			.headButton {
+				margin-right: 0px;
+			}
+			#slider {
+				width: 500px;
+			}
+			.paginate { display: inline-block;}
+		    .paginate a {color: black; float: left; padding: 2px 4px;text-decoration: none;}
+			.paginate a.active {background-color: #4CAF50;color: white;}
+			.paginate a:hover:not(.active) {background-color: #ddd;}
+			.paginate a:hover {cursor: pointer;}
+			
+
+		</style>
+		<div id="statsHead">2018 Sortable Stats <button>Edit</button><button>Hide</button></div>
+
+	</template>
 	<!--<div>Standings</div>
 	<div>Stat leaders by ind and team</div>
 	<div>Sortable Stats</div>-->
@@ -194,9 +223,10 @@
 	  
 	</header>
 	<div id="content">
-		<tabdn-season style="display: inline-block;" src="xl09p" autoload="true"></tabdn-season>
+		
 		<season-standings></season-standings>
 		<season-stats></season-stats>
+		<tabdn-season style="display: inline-block;" src="xl09p" autoload="true"></tabdn-season>
 	</div>
 	
 	  <script src="https://unpkg.com/popper.js@1"></script>
