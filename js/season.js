@@ -708,8 +708,8 @@ class TabDNSeason extends TabDN {
 					_this.ws.send(JSON.stringify(jsonmessage));
 					jsonmessage = {'command':'multisort', 'columns':[7,8,9]};
 					_this.ws.send(JSON.stringify(jsonmessage));
-					jsonmessage = {'command':'switch','type':'main'};
-					_this.ws.send(JSON.stringify(jsonmessage));
+					//jsonmessage = {'command':'switch','type':'main'};
+					//_this.ws.send(JSON.stringify(jsonmessage));
 					jsonmessage = {'command':'print'};
 					_this.ws.send(JSON.stringify(jsonmessage));
 				}
@@ -731,8 +731,8 @@ class TabDNSeason extends TabDN {
 		console.log(this.columnLeaders);
 		jsonmessage = {'command':'multisort', 'columns':this.columnLeaders};
 		this.ws.send(JSON.stringify(jsonmessage));
-		jsonmessage = {'command':'switch','type':'main'};
-		this.ws.send(JSON.stringify(jsonmessage));
+		//jsonmessage = {'command':'switch','type':'main'};
+		//this.ws.send(JSON.stringify(jsonmessage));
 		jsonmessage = {'command':'print'};
 		this.ws.send(JSON.stringify(jsonmessage));
 	}
