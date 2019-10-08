@@ -303,7 +303,7 @@ class SeasonStandings extends HTMLElement {
   	this.loadData(2018);
   	//this.addGame(2);
   	//this.createDivision('NLEAST','NL East',[[0,0,0,0,0,0,0,0,0]]);
-  	multirange(this.shadowRoot.querySelector('#slider'));
+  	
   	
   	this.shadowRoot.querySelectorAll('#slider')[0].addEventListener("input",e => {this.updateSlider();});
   	this.shadowRoot.querySelectorAll('#slider')[1].addEventListener("input",e => {this.updateSlider();});
@@ -319,8 +319,7 @@ class SeasonStandings extends HTMLElement {
   	var lowerV = parseInt(this.shadowRoot.querySelector('#slider').valueLow);
   	var upperV = parseInt(this.shadowRoot.querySelector('#slider').valueHigh);
   	this.addGame(upperV,lowerV);
-  	console.log(this.dateList[upperV]);
-  	this.tabdnSeason.filterLeaders(upperV,lowerV);
+  	this.tabdnSeason.filterLeaders(this.dateList[upperV][0],this.dateList[lowerV][0]);
   }
   loadData(year) {
   	var _this = this;
@@ -367,6 +366,10 @@ class SeasonStandings extends HTMLElement {
 				}
 				*/
 			}
+			
+			var slider = this.shadowRoot.querySelector('#slider');
+			slider.setAttribute('value','0,50');
+			multirange(slider);
 			
 			_this.teamData = {};
 			var myData = {};
@@ -711,9 +714,11 @@ class TabDNSeason extends TabDN {
 		this.columnLeaders = array;
 		
 	}
-	filterLeaders(endDate){
-		endDate += 17652;
-		var jsonmessage = { command: 'filter', formula: 'c28_/17652_c28_/'+endDate+'@##>##<&' };
+	filterLeaders(endDate,startDate){
+		endDate = endDate.substring(4,6)+'/'+endDate.substring(6,8)+'/'endDate.substring(0,4);
+		startDate = startDate.substring(4,6)+'/'+startDate.substring(6,8)+'/'startDate.substring(0,4);
+		
+		var jsonmessage = { command: 'filter', formula: 'c28_'+startDate+'_c28_'+endDate+'@##>##<&' };
 		this.ws.send(JSON.stringify(jsonmessage));
 		console.log(this.columnLeaders);
 		jsonmessage = {'command':'multisort', 'columns':this.columnLeaders};
