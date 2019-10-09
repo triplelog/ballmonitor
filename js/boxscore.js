@@ -554,7 +554,7 @@ class TabDNBox extends TabDN {
 			}
 
 		}
-		else if (dates.length == 1){
+		else if (dates.length == 1 && dates[0].length > 1){
 			if (dates[0].length == 4){
 				filters += " AND (DATE>=01/01/"+dates[0]+")";
 				filters += " AND (DATE<=12/31/"+dates[0]+")";
