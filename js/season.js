@@ -873,7 +873,7 @@ class TabDNSeason extends TabDN {
 	chgFormula(e){
 		var colid = parseInt(e.target.id.split('_')[1]);
 		this.formulaInfo[colid] = e.target.value;
-		document.querySelectorAll('season-stats').chgLeaderColumns();	
+		document.querySelector('season-stats').chgLeaderColumns();	
 	}
 	
 	 addData(retmess,type='single') {
@@ -911,6 +911,9 @@ class TabDNSeason extends TabDN {
 			
 
 		}
+		else if (this.colInfo){
+			this.sortableData(retmess);
+		}
 		else {
 			for (var ii=0;ii*2 + 1<retmess[0].length;ii++) {
 				this.colInfo[parseInt(retmess[0][ii*2 + 1])]=retmess[0][ii*2];
@@ -936,7 +939,7 @@ class TabDNSeason extends TabDN {
 				var input = document.createElement('input');
 				input.type = "checkbox";
 				input.id = "check_"+ii;
-				input.setAttribute('checked','false');
+				input.removeAttribute('checked');
 				editCols.appendChild(input);
 				input = document.createElement('input');
 				input.id = "formula_"+ii;
