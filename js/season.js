@@ -764,6 +764,7 @@ class TabDNSeason extends TabDN {
 			var urlParams = new URLSearchParams(window.location.search);
     		if (urlParams.has('columns')){
 				jsonmessage['message'] = urlParams.get('columns');
+				console.log('hiiii');
 			}
 			_this.ws.send(JSON.stringify(jsonmessage));
 			if (_this.getAttribute('autoload')){
