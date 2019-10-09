@@ -785,7 +785,7 @@ class TabDNSeason extends TabDN {
 		
 	}
 	filterTeam(team){
-		var jsonmessage = { command: 'filter', formula: 'c22_'+team+'c28_'+this.startDate+'_c28_'+this.endDate+'@##=##>##<&&' };
+		var jsonmessage = { command: 'filter', formula: 'c22_'+team+'_c28_'+this.startDate+'_c28_'+this.endDate+'@##=##>##<&&' };
 		this.ws.send(JSON.stringify(jsonmessage));
 		jsonmessage = {'command':'multisort', 'columns':this.columnLeaders, 'formulas':this.columnFormulas};
 		this.ws.send(JSON.stringify(jsonmessage));
