@@ -724,7 +724,7 @@ class TabDNSeason extends TabDN {
 		};
 		this.columnLeaders = [];
 		this.columnFormulas = [];
-		this.formulaInfo = [''];
+		this.formulaInfo = ['',''];
 		this.gotCols = false;
 	}
 	
