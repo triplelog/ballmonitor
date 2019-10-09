@@ -477,6 +477,7 @@ class SeasonStandings extends HTMLElement {
 			tr = document.createElement('tr');
 			for (var i=0;i<divData[ii].length;i++){
 				var td = document.createElement('td');
+				if (i>0){td.style.textAlign = 'right';}
 				if (columns[i] != 'Last 10'){
 					td.textContent = divData[ii][i];
 				}
