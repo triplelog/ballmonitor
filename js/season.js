@@ -733,7 +733,14 @@ class TabDNSeason extends TabDN {
 		console.log(array2, this.colInfo);
 		if (array2.length>0){
 			for (var i=0;i<array2.length;i++){
-				array2[i] = postfixify(array2[i],this.colInfo);
+				var twoparts = array2[i].split(':');
+				if (twoparts.length > 1){
+					array2[i] = twoparts[0]+':'+postfixify(twoparts[1],this.colInfo);
+				}
+				else {
+					array2[i] = twoparts[0]+':'+postfixify(twoparts[0],this.colInfo);
+				}
+				
 			}
 		}
 		console.log(array2);
