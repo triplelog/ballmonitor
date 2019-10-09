@@ -303,8 +303,13 @@ class SeasonStandings extends HTMLElement {
   	this.fullSchedule = {};
 	this.dateList = [];
 	this.teamData = {};
-
-  	this.loadData(2018);
+	var year = window.location.search.split();
+	var urlParams = new URLSearchParams(window.location.search);
+	var year = 2018;
+	if (urlParams.has('year')){
+		year = parseInt(urlParams.get('year'));
+	}
+  	this.loadData(year);
   	//this.addGame(2);
   	//this.createDivision('NLEAST','NL East',[[0,0,0,0,0,0,0,0,0]]);
   	
@@ -326,6 +331,7 @@ class SeasonStandings extends HTMLElement {
   }
   loadData(year) {
   	var _this = this;
+  	alert(year);
   	var url = 'seasons/2018Data.json';
 	var jsonFile = new XMLHttpRequest();
     jsonFile.open("GET",url,true);
@@ -451,7 +457,7 @@ class SeasonStandings extends HTMLElement {
 	
 		var divDiv = this.shadowRoot.querySelector('#'+divID);
 		divDiv.classList.add('division-div');
-		divDiv.innerHTML = '<div class="divName"><h3>'+divName+'</h3></div>';
+		divDiv.innerHTML = '<div class="divName"><b>'+divName+'</b></div>';
 						
 		var table = document.createElement('table');
 		table.classList.add('division-table');
