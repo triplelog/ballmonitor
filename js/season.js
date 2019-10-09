@@ -306,10 +306,18 @@ class SeasonStandings extends HTMLElement {
 	var year = window.location.search.split();
 	var urlParams = new URLSearchParams(window.location.search);
 	var year = 2018;
+	var startdate = 0;
+	var enddate = -1;
 	if (urlParams.has('year')){
 		year = parseInt(urlParams.get('year'));
 	}
-  	this.loadData(year);
+	if (urlParams.has('start')){
+		startdate = parseInt(urlParams.get('start'));
+	}
+	if (urlParams.has('end')){
+		enddate = parseInt(urlParams.get('end'));
+	}
+  	this.loadData(year,startdate,enddate);
   	//this.addGame(2);
   	//this.createDivision('NLEAST','NL East',[[0,0,0,0,0,0,0,0,0]]);
   	
@@ -329,9 +337,8 @@ class SeasonStandings extends HTMLElement {
   	this.addGame(upperV,lowerV);
   	this.tabdnSeason.filterLeaders(this.dateList[Math.min(upperV,this.dateList.length-1)][0],this.dateList[lowerV][0]);
   }
-  loadData(year) {
+  loadData(year,startDate=0,endDate=-1) {
   	var _this = this;
-  	alert(year);
   	var url = 'seasons/2018Data.json';
 	var jsonFile = new XMLHttpRequest();
     jsonFile.open("GET",url,true);
@@ -407,7 +414,12 @@ class SeasonStandings extends HTMLElement {
 					_this.createDivision(leagues[i]+divisions[ii],leagues[i]+divisions[ii],myData[leagues[i]+divisions[ii]]);
 				}
 			}
-			_this.addGame(100);
+			
+			if (enddate < startdate){_this.addGame(_this.dateLen,startdate);}
+			else {_this.addGame(enddate,startdate);}
+			
+			
+			
   		}
      }
      /*
