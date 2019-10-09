@@ -815,14 +815,13 @@ class TabDNSeason extends TabDN {
 				newHeader.style.display = 'inline-block';
 				newHeader.style.height = '100%';
 				newHeader.style.width = '100%';
-				newHeader.addEventListener('mouseover',e => {this.mousehead(e,0);});
-				newHeader.addEventListener('mousedown',e => {this.mousehead(e,1);});
-				newHeader.addEventListener('mouseout',e => {this.mousehead(e,2);});
-				newHeader.addEventListener('mouseup',e => {this.mousehead(e,3);});
+				newHeader.addEventListener('click',e => {this.sortPivot(e);});
+				/*
 				newHeader.setAttribute("draggable","true");
 				newHeader.addEventListener('dragstart',e => {this.dragColumn(e,0);});
 				newHeader.addEventListener("dragover", e => {e.preventDefault();});
 				newHeader.addEventListener("drop", e => {e.preventDefault(); this.dropColumn(e,1);});
+				*/
 				headerCell.id = "cHeader"+retmess[0][ii*2 + 1];
 				headerCell.style.display = 'table-cell';
 				headerCell.classList.add("th-sm");
@@ -878,6 +877,16 @@ class TabDNSeason extends TabDN {
 				}
 			}
 		}
+    }
+    
+    sortPivot(e) {
+    	console.log(e.target.id);
+    	var jsonmessage = {'command':'pivot','pivotcol':1,'sort':'s7', 'columns':this.columnLeaders, 'formulas':this.columnFormulas};
+		this.ws.send(JSON.stringify(jsonmessage));
+		jsonmessage = {'command':'switch','type':'pivot@0'};
+		this.ws.send(JSON.stringify(jsonmessage));
+		jsonmessage = {'command':'print'};
+		this.ws.send(JSON.stringify(jsonmessage));
     }
 	chgFormula(e){
 		var colid = parseInt(e.target.id.split('_')[1]);
