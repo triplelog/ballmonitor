@@ -66,8 +66,8 @@ class SeasonStats extends HTMLElement {
 				var checkID = parseInt(splitID[1]);
 				this.leaderColumns.push(checkID);
 			}
-			else if (splitID[0] == 'formula'){
-				var checkID = splitID[1];
+			else if (splitID[0] == 'check'){
+				var checkID = this.shadowRoot.querySelector('#formula_'+splitID[1]).value;
 				this.leaderFormulas.push(checkID);
 			}
   		}
@@ -936,6 +936,22 @@ class TabDNSeason extends TabDN {
 				editCols.appendChild(input);
 				editCols.appendChild(label);
 			}
+			
+			var input = document.createElement('input');
+			input.type = "checkbox";
+			input.id = "check_1";
+			input.setAttribute('checked','true');
+			editCols.appendChild(input);
+			
+			input = document.createElement('input');
+			input.type = "text";
+			input.id = "formula_1";
+			input.addEventListener("input",e => {players[0].chgLeaderColumns();});
+			
+			
+			editCols.appendChild(input);
+				
+				
 			var button = document.createElement('button');
 			button.textContent = 'Submit';
 			button.id = "chgLeaderColumns";
