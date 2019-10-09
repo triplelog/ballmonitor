@@ -466,9 +466,9 @@ class SeasonStandings extends HTMLElement {
 			if (i==3){th.style.width = '3rem'; th.style.border = '1px solid black';}
 			if (i==8){th.style.width = '3.5rem'; th.style.border = '1px solid black';}
 			if (i==4){th.style.width = '2.5rem'; th.style.border = '1px solid black';}
-			if (i==0){th.style.width = '5.0rem'; th.style.border = '1px solid black';}
+			if (i==0){th.style.width = '5.5rem'; th.style.border = '1px solid black';}
 			if (i==6 || i==7){th.style.width = '2rem'; th.style.border = '1px solid black';}
-			if (i==5){th.style.width = '9rem'; th.style.border = '1px solid black';}
+			if (i==5){th.style.width = '8.5rem'; th.style.border = '1px solid black';}
 			tr.appendChild(th);
 		}
 		thead.appendChild(tr);
@@ -478,6 +478,10 @@ class SeasonStandings extends HTMLElement {
 			for (var i=0;i<divData[ii].length;i++){
 				var td = document.createElement('td');
 				if (i>0){td.style.textAlign = 'right';}
+				else {
+					td.id = 'team_'+divData[ii][i];
+					td.addEventListener('click', e => {this.teamClick(e);});
+				}
 				if (columns[i] != 'Last 10'){
 					if (i == 3 && divData[ii][i][0] == '0'){
 						td.textContent = divData[ii][i].substring(1);
@@ -506,6 +510,9 @@ class SeasonStandings extends HTMLElement {
 
 	}
 	
+  teamClick(e) {
+  	alert(e.target.id);
+  }
   updateStandings() {
 		var myData = {};
 		var leagues = this.leagues;
