@@ -880,7 +880,7 @@ class TabDNSeason extends TabDN {
     }
     
     sortPivot(e) {
-    	console.log(e.target.id);
+    	console.log(e.target.parentNode.id.substring(7));
     	var jsonmessage = {'command':'pivot','pivotcol':1,'sort':'s7', 'columns':this.columnLeaders, 'formulas':this.columnFormulas};
 		this.ws.send(JSON.stringify(jsonmessage));
 		jsonmessage = {'command':'switch','type':'pivot@0'};
