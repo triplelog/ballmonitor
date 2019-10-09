@@ -797,7 +797,6 @@ class TabDNSeason extends TabDN {
 				headers[ii].querySelector('button').textContent = retmess[0][ii*2];
 				headers[ii].id = "cHeader"+retmess[0][ii*2 + 1];
 				headers[ii].style.display = 'table-cell';
-				this.colInfo[parseInt(retmess[0][ii*2 + 1])]=retmess[0][ii*2];
 			}
 			else if (ii < headers.length) {
 				headers[ii].style.display = 'none';
