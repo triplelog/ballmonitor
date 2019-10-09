@@ -723,7 +723,7 @@ class TabDNSeason extends TabDN {
 			}
 		};
 		this.columnLeaders = [];
-		this.columnFormulas = [];
+		this.columnFormulas = [''];
 	}
 	
 	setLeaderColumns(array,array2=[]){
@@ -869,6 +869,11 @@ class TabDNSeason extends TabDN {
 			}
 		}
     }
+	chgFormula(e){
+		var colid = parseInt(e.target.id.split('_')[1]);
+		this.formulaInfo[colid] = e.target.value;
+		document.querySelectorAll('season-stats').chgLeaderColumns();	
+	}
 	
 	 addData(retmess,type='single') {
 	 	
@@ -925,28 +930,21 @@ class TabDNSeason extends TabDN {
 				editCols.appendChild(input);
 				editCols.appendChild(label);
 			}
+			var ii = 0;
 			for (var col in this.formulaInfo){
 				var input = document.createElement('input');
 				input.type = "checkbox";
-				input.id = "formula_"+'HR+1B';
-				var label = document.createElement('label');
-				label.setAttribute('for',input.id);
-				label.textContent = 'HR+1B';//this.formulaInfo[col];
-				input.setAttribute('checked','true');
+				input.id = "check_"+ii;
+				input.setAttribute('checked','false');
 				editCols.appendChild(input);
-				editCols.appendChild(label);
+				input = document.createElement('input');
+				input.id = "formula_"+ii;
+				input.value = this.formulaInfo[col];
+				input.addEventListener("input",e => {this.chgFormula(e);});
+				editCols.appendChild(input);
+				ii++;
 			}
 			
-			var input = document.createElement('input');
-			input.type = "checkbox";
-			input.id = "check_1";
-			input.setAttribute('checked','true');
-			editCols.appendChild(input);
-			
-			input = document.createElement('input');
-			input.type = "text";
-			input.id = "formula_1";
-			input.addEventListener("input",e => {players[0].chgLeaderColumns();});
 			
 			
 			editCols.appendChild(input);
