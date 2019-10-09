@@ -479,7 +479,12 @@ class SeasonStandings extends HTMLElement {
 				var td = document.createElement('td');
 				if (i>0){td.style.textAlign = 'right';}
 				if (columns[i] != 'Last 10'){
-					td.textContent = divData[ii][i];
+					if (i == 3 && divData[ii][i][0] == '0'){
+						td.textContent = divData[ii][i].substring(1);
+					}
+					else {
+						td.textContent = divData[ii][i];
+					}
 				}
 				else {
 					var contentstr = '';
