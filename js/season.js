@@ -462,6 +462,7 @@ class SeasonStandings extends HTMLElement {
 		for (var i=0;i<columns.length;i++){
 			var th = document.createElement('th');
 			th.textContent = columns[i];
+			if (i==1){th.style.width = '2rem'; th.style.border = '1px solid black';}
 			tr.appendChild(th);
 		}
 		thead.appendChild(tr);
