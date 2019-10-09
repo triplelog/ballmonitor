@@ -511,8 +511,10 @@ class SeasonStandings extends HTMLElement {
 	}
 	
   teamClick(e) {
-  	alert(e.target.id);
+  	var team = e.target.id.substring(5);
+  	this.tabdnSeason.filterTeam(team);
   }
+  
   updateStandings() {
 		var myData = {};
 		var leagues = this.leagues;
@@ -759,6 +761,8 @@ class TabDNSeason extends TabDN {
 		this.columnFormulas = [];
 		this.formulaInfo = ['',''];
 		this.gotCols = false;
+		this.startDate = '01/01/1905';
+		this.endDate = '12/31/2020';
 	}
 	
 	setLeaderColumns(array,array2=[]){
@@ -780,9 +784,21 @@ class TabDNSeason extends TabDN {
 		this.columnFormulas = array2;
 		
 	}
+	filterTeam(team){
+		var jsonmessage = { command: 'filter', formula: 'c22_'+team+'c28_'+this.startDate+'_c28_'+this.endDate+'@##=##>##<&&' };
+		this.ws.send(JSON.stringify(jsonmessage));
+		jsonmessage = {'command':'multisort', 'columns':this.columnLeaders, 'formulas':this.columnFormulas};
+		this.ws.send(JSON.stringify(jsonmessage));
+		jsonmessage = {'command':'switch','type':'pivot@0'};
+		this.ws.send(JSON.stringify(jsonmessage));
+		jsonmessage = {'command':'print'};
+		this.ws.send(JSON.stringify(jsonmessage));
+	}
+	
 	filterLeaders(endDate,startDate){
-		endDate = endDate.substring(4,6)+'/'+endDate.substring(6,8)+'/'+endDate.substring(0,4);
-		startDate = startDate.substring(4,6)+'/'+startDate.substring(6,8)+'/'+startDate.substring(0,4);
+		
+		this.endDate = endDate.substring(4,6)+'/'+endDate.substring(6,8)+'/'+endDate.substring(0,4);
+		this.startDate = startDate.substring(4,6)+'/'+startDate.substring(6,8)+'/'+startDate.substring(0,4);
 		
 		var jsonmessage = { command: 'filter', formula: 'c28_'+startDate+'_c28_'+endDate+'@##>##<&' };
 		this.ws.send(JSON.stringify(jsonmessage));
