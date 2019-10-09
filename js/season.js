@@ -794,10 +794,10 @@ class TabDNSeason extends TabDN {
 	}
 	
 	adjustColumns(data){
-		if (_this.usecache){
-			_this.usecache = false;
+		if (this.usecache){
+			this.usecache = false;
 			var jsonmessage = {'command':'load'};
-			_this.ws.send(JSON.stringify(jsonmessage));
+			this.ws.send(JSON.stringify(jsonmessage));
 		}
 		this.columnLeaders = data;
 		var jsonmessage = {'command':'multisort', 'columns':this.columnLeaders, 'formulas':this.columnFormulas};
