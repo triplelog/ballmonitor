@@ -415,8 +415,9 @@ class SeasonStandings extends HTMLElement {
 				}
 			}
 			
-			if (enddate < startdate){_this.addGame(_this.dateLen,startdate);}
-			else {_this.addGame(enddate,startdate);}
+
+			if (endDate < startDate){_this.addGame(_this.dateLen,startDate);}
+			else {_this.addGame(endDate,startDate);}
 			
 			
 			
