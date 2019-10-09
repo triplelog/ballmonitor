@@ -881,7 +881,7 @@ class TabDNSeason extends TabDN {
     
     sortPivot(e) {
     	var sortCol = parseInt(e.target.parentNode.id.substring(7));
-    	var jsonmessage = {'command':'pivot','pivotcol':1,'sort':this.columnLeaders[sortCol], 'columns':this.columnLeaders, 'formulas':this.columnFormulas};
+    	var jsonmessage = {'command':'pivot','pivotcol':1,'sort':'=c7@#', 'columns':this.columnLeaders, 'formulas':this.columnFormulas};
 		this.ws.send(JSON.stringify(jsonmessage));
 		jsonmessage = {'command':'switch','type':'pivot@0'};
 		this.ws.send(JSON.stringify(jsonmessage));
