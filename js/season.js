@@ -725,6 +725,7 @@ class TabDNSeason extends TabDN {
 		this.columnLeaders = [];
 		this.columnFormulas = [];
 		this.formulaInfo = [''];
+		this.gotCols = false;
 	}
 	
 	setLeaderColumns(array,array2=[]){
@@ -911,13 +912,14 @@ class TabDNSeason extends TabDN {
 			
 
 		}
-		else if (this.colInfo){
+		else if (this.gotCols){
 			this.sortableData(retmess);
 		}
 		else {
 			for (var ii=0;ii*2 + 1<retmess[0].length;ii++) {
 				this.colInfo[parseInt(retmess[0][ii*2 + 1])]=retmess[0][ii*2];
 			}
+			this.gotCols = true;
 
 			var editCols = players[0].shadowRoot.querySelector('#statsEdit');
 			editCols.innerHTML = '';
