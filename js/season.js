@@ -764,7 +764,6 @@ class TabDNSeason extends TabDN {
 			var urlParams = new URLSearchParams(window.location.search);
     		if (urlParams.has('columns')){
 				jsonmessage['message'] = urlParams.get('columns');
-				console.log('hiiii');
 			}
 			_this.ws.send(JSON.stringify(jsonmessage));
 			if (_this.getAttribute('autoload')){
@@ -774,12 +773,16 @@ class TabDNSeason extends TabDN {
 					_this.ws.send(JSON.stringify(jsonmessage));
 					jsonmessage = { command: 'filter', formula: 'c28_/17532_c28_12/1/2018@##>##<&' };
 					_this.ws.send(JSON.stringify(jsonmessage));
-					jsonmessage = {'command':'multisort', 'columns':['s7','s8','s9']};
-					_this.ws.send(JSON.stringify(jsonmessage));
-					jsonmessage = {'command':'switch','type':'pivot@0'};
-					_this.ws.send(JSON.stringify(jsonmessage));
-					jsonmessage = {'command':'print'};
-					_this.ws.send(JSON.stringify(jsonmessage));
+					if (urlParams.has('columns')){
+					}
+					else {
+						jsonmessage = {'command':'multisort', 'columns':['s7','s8','s9']};
+						_this.ws.send(JSON.stringify(jsonmessage));
+						jsonmessage = {'command':'switch','type':'pivot@0'};
+						_this.ws.send(JSON.stringify(jsonmessage));
+						jsonmessage = {'command':'print'};
+						_this.ws.send(JSON.stringify(jsonmessage));
+					}
 				}
 			}
 		};
