@@ -482,6 +482,7 @@ class SeasonStandings extends HTMLElement {
 				}
 				else {
 					var contentstr = '';
+					td.style.fontSize = '.5rem';
 					for (var iii=0;iii<divData[ii][i].length;iii++){
 						if (divData[ii][i][iii]==0){contentstr += '❌';}
 						else {contentstr += '✅';}
