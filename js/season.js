@@ -450,7 +450,8 @@ class SeasonStandings extends HTMLElement {
 		var columns = ['','W','L','PCT','GB','Last 10','RS','RA','ExpW-L'];
 	
 		var divDiv = this.shadowRoot.querySelector('#'+divID);
-		divDiv.innerHTML = '<h2>'+divName+'</h2>';
+		divDiv.classList.add('division-div');
+		divDiv.innerHTML = '<div class="divName">a</div>';
 						
 		var table = document.createElement('table');
 		table.classList.add('division-table');
