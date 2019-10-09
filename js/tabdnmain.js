@@ -41,6 +41,18 @@ class TabDN extends HTMLElement {
 				
 			}
 		}
+		else if (evt.data.substring(0,7) == 'columns') {
+			if (2 == 2) {
+				console.log(evt.data.substring(7,evt.data.length));
+				_this.adjustColumns(JSON.parse(evt.data.substring(7,evt.data.length)));
+				var d = new Date();
+				var n = d.getTime();
+				console.log(n);
+			}
+			else{
+				
+			}
+		}
 		else if (evt.data[0] == '['){
 			if (_this.showit) {
 				_this.addData(JSON.parse(evt.data));

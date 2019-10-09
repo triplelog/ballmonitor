@@ -303,7 +303,6 @@ class SeasonStandings extends HTMLElement {
   	this.fullSchedule = {};
 	this.dateList = [];
 	this.teamData = {};
-	var year = window.location.search.split();
 	var urlParams = new URLSearchParams(window.location.search);
 	var year = 2018;
 	var startdate = 0;
@@ -317,6 +316,7 @@ class SeasonStandings extends HTMLElement {
 	if (urlParams.has('end')){
 		enddate = parseInt(urlParams.get('end'));
 	}
+	
   	this.loadData(year,startdate,enddate);
   	//this.addGame(2);
   	//this.createDivision('NLEAST','NL East',[[0,0,0,0,0,0,0,0,0]]);
@@ -382,10 +382,12 @@ class SeasonStandings extends HTMLElement {
 				}
 				*/
 			}
+			if (endDate < startDate){endDate = _this.dateLen};
 			
 			var slider = _this.shadowRoot.querySelector('#slider');
-			slider.setAttribute('value','0,'+_this.dateLen);
+			slider.setAttribute('value','0,'+endDate);
 			slider.setAttribute('min','0');
+			
 			slider.setAttribute('max',_this.dateLen);
 			multirange(slider);
 			_this.shadowRoot.querySelectorAll('#slider')[0].addEventListener("input",e => {_this.updateSlider();});
@@ -416,8 +418,7 @@ class SeasonStandings extends HTMLElement {
 			}
 			
 
-			if (endDate < startDate){_this.addGame(_this.dateLen,startDate);}
-			else {_this.addGame(endDate,startDate);}
+			_this.addGame(endDate,startDate);
 			
 			
 			
@@ -756,9 +757,14 @@ class TabDNSeason extends TabDN {
 		this.sortableTable();
     	this.addPaginate(false);
     	//this.addButtons();
-    	
+    	this.columnLeaders = [];
+		this.columnFormulas = [];
     	this.ws.onopen = function(){
 			var jsonmessage = {'command':'create','src':_this.getAttribute('src')};
+			var urlParams = new URLSearchParams(window.location.search);
+    		if (urlParams.has('columns')){
+				jsonmessage['message'] = urlParams.get('columns');
+			}
 			_this.ws.send(JSON.stringify(jsonmessage));
 			if (_this.getAttribute('autoload')){
 				if (_this.usecache){
@@ -776,14 +782,27 @@ class TabDNSeason extends TabDN {
 				}
 			}
 		};
-		this.columnLeaders = [];
-		this.columnFormulas = [];
+		
 		this.formulaInfo = ['',''];
 		this.gotCols = false;
 		this.startDate = '01/01/1905';
 		this.endDate = '12/31/2020';
 	}
 	
+	adjustColumns(data){
+		if (_this.usecache){
+			_this.usecache = false;
+			var jsonmessage = {'command':'load'};
+			_this.ws.send(JSON.stringify(jsonmessage));
+		}
+		this.columnLeaders = data;
+		var jsonmessage = {'command':'multisort', 'columns':this.columnLeaders, 'formulas':this.columnFormulas};
+		this.ws.send(JSON.stringify(jsonmessage));
+		jsonmessage = {'command':'switch','type':'pivot@0'};
+		this.ws.send(JSON.stringify(jsonmessage));
+		jsonmessage = {'command':'print'};
+		this.ws.send(JSON.stringify(jsonmessage));
+	}
 	setLeaderColumns(array,array2=[]){
 		this.columnLeaders = array;
 		console.log(array2, this.colInfo);
