@@ -451,7 +451,7 @@ class SeasonStandings extends HTMLElement {
 	
 		var divDiv = this.shadowRoot.querySelector('#'+divID);
 		divDiv.classList.add('division-div');
-		divDiv.innerHTML = '<div class="divName">a</div>';
+		divDiv.innerHTML = '<div class="divName">'+divName+'</div>';
 						
 		var table = document.createElement('table');
 		table.classList.add('division-table');
