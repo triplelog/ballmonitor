@@ -144,7 +144,7 @@ class TabDN extends HTMLElement {
   	
   }
   
-  addPaginate() {
+  addPaginate(dropdown=true) {
   	var pageDiv = document.createElement("div");
 	pageDiv.classList.add('paginate');
 		var link = document.createElement("a");
@@ -180,38 +180,40 @@ class TabDN extends HTMLElement {
 	perPage.addEventListener("input",e => {this.setPerPage(e,0);});
 	pageDiv.appendChild(perPage);
 	
-	var modeDropdown = document.createElement("select");
-  		var option = document.createElement("option");
-  		option.value = "sort";
-  		option.textContent = "Sort";
-  		modeDropdown.appendChild(option);
-  		
-  		option = document.createElement("option");
-  		option.value = "newcol";
-  		option.textContent = "New Column";
-  		modeDropdown.appendChild(option);
-  		
-  		option = document.createElement("option");
-  		option.value = "pivot";
-  		option.textContent = "Pivot Table";
-  		modeDropdown.appendChild(option);
-  		
-  		option = document.createElement("option");
-  		option.value = "filter";
-  		option.textContent = "Filter";
-  		modeDropdown.appendChild(option);
-  		
-  		option = document.createElement("option");
-  		option.value = "sum";
-  		option.textContent = "Sums, ...";
-  		modeDropdown.appendChild(option);
-  		
-  		option = document.createElement("option");
-  		option.value = "arrange";
-  		option.textContent = "Arrange";
-  		modeDropdown.appendChild(option);
-  	modeDropdown.addEventListener("change", e => {this.chgMode(e,0);});
-	pageDiv.appendChild(modeDropdown);
+	if (dropdown){
+		var modeDropdown = document.createElement("select");
+			var option = document.createElement("option");
+			option.value = "sort";
+			option.textContent = "Sort";
+			modeDropdown.appendChild(option);
+		
+			option = document.createElement("option");
+			option.value = "newcol";
+			option.textContent = "New Column";
+			modeDropdown.appendChild(option);
+		
+			option = document.createElement("option");
+			option.value = "pivot";
+			option.textContent = "Pivot Table";
+			modeDropdown.appendChild(option);
+		
+			option = document.createElement("option");
+			option.value = "filter";
+			option.textContent = "Filter";
+			modeDropdown.appendChild(option);
+		
+			option = document.createElement("option");
+			option.value = "sum";
+			option.textContent = "Sums, ...";
+			modeDropdown.appendChild(option);
+		
+			option = document.createElement("option");
+			option.value = "arrange";
+			option.textContent = "Arrange";
+			modeDropdown.appendChild(option);
+		modeDropdown.addEventListener("change", e => {this.chgMode(e,0);});
+		pageDiv.appendChild(modeDropdown);
+	}
 	
 	this.shadowRoot.appendChild(pageDiv);
 	

@@ -447,12 +447,13 @@ class SeasonStandings extends HTMLElement {
 	}
   
   createDivision(divID,divName,divData) {
-		var columns = [divName,'W','L','PCT','GB','Last 10','RS','RA','ExpW-L'];
+		var columns = ['','W','L','PCT','GB','Last 10','RS','RA','ExpW-L'];
 	
 		var divDiv = this.shadowRoot.querySelector('#'+divID);
-		divDiv.innerHTML = '';
+		divDiv.innerHTML = '<h2>'+divName+'</h2>';
 						
 		var table = document.createElement('table');
+		table.classList.add('division-table');
 		var thead = document.createElement('thead');
 		var tbody = document.createElement('tbody');
 		tbody.id = divID+'Body';
@@ -700,8 +701,8 @@ class TabDNSeason extends TabDN {
 
 		const shadowRoot = this.attachShadow({mode: 'open'}).appendChild(templateContent.cloneNode(true));
 		this.sortableTable();
-    	this.addPaginate();
-    	this.addButtons();
+    	this.addPaginate(false);
+    	//this.addButtons();
     	
     	this.ws.onopen = function(){
 			var jsonmessage = {'command':'create','src':_this.getAttribute('src')};
