@@ -730,11 +730,13 @@ class TabDNSeason extends TabDN {
 	
 	setLeaderColumns(array,array2=[]){
 		this.columnLeaders = array;
+		console.log(array2, this.colInfo);
 		if (array2.length>0){
 			for (var i=0;i<array2.length;i++){
 				array2[i] = postfixify(array2[i],this.colInfo);
 			}
 		}
+		console.log(array2);
 		this.columnFormulas = array2;
 		
 	}
