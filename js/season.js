@@ -64,7 +64,7 @@ class SeasonStats extends HTMLElement {
 			var splitID = allChecks[i].id.split('_');
 			if (splitID[0] == 'stat'){
 				var checkID = parseInt(splitID[1]);
-				this.leaderColumns.push(checkID);
+				this.leaderColumns.push('s'+checkID);
 			}
 			else if (splitID[0] == 'check'){
 				var checkID = this.shadowRoot.querySelector('#formula_'+splitID[1]).value;
