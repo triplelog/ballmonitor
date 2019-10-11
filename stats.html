@@ -37,7 +37,7 @@
   display: inline-block;
   height: 26px;
   width: 140px;
-  margin: 20px auto;
+  margin: 5px auto;
   background: rgba(0, 0, 0, 0.25);
   border-radius: 3px;
   -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
@@ -149,6 +149,7 @@
   margin: 0 auto;
   padding: 0 1rem;
   display: inline-block;
+  border: 1px solid black;
 }
 [type='text'], select, textarea {
   display: block;
@@ -160,6 +161,11 @@
   border: 1px solid #cdcdcd;
   border-radius: 4px;
   font-size: 0.95rem;
+}
+#hideOptions {
+	position: absolute;
+	top:0px;
+	right:0px;
 }
 
 
@@ -294,6 +300,7 @@
 	</header>
 	<div id="content">
 		<div id="formData">
+			<button id="hideOptions">X</button>
 			<div class="switch">
 			  <input type="radio" class="switch-input" name="borp" value="batting" id="batting" checked>
 			  <label for="batting" class="switch-label switch-label-off">Batting</label>
@@ -317,9 +324,8 @@
 			  <label for="team" class="switch-label switch-label-third">By Team</label>
 			  <span class="switch-selection"></span>
 			</div>
+			Years:<input type="range" id="years"></input>
 			Columns:<input type="text" id="columns"></input>
-			Teams:<input type="text" id="teams"></input>
-			Years:<input type="text" id="years"></input>
 			Filter:<input type="text" id="years" placeholder="stats formula"></input>
 			<button id="submitChg">Submit</button>
 		</div>
