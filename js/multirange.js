@@ -77,6 +77,8 @@ var multirange = function(input) {
 		// Get the distance to both high and low values in the range
 		var highDiff = input.valueHigh - clickValue;
 		var lowDiff = Math.abs(input.valueLow - clickValue);
+		alert(highDiff);
+		alert(lowDiff);
 
 		if (isInverted? highDiff < lowDiff : lowDiff < highDiff) {
 			// The low value is closer to the click point than the high value
