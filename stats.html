@@ -155,7 +155,7 @@
 }
 [type='text'], [type='range'], select, textarea {
   display: block;
-  padding: 0.5rem;
+  padding: 0rem;
   background: transparent;
   vertical-align: middle;
   width: 100%;
@@ -163,6 +163,10 @@
   border: 1px solid #cdcdcd;
   border-radius: 4px;
   font-size: 0.95rem;
+}
+[type='range'] {
+  width: 95%;
+  max-width: 95%;
 }
 #hideOptions {
 	position: absolute;
@@ -342,10 +346,7 @@
 	  <script src="js/papaparse.min.js"></script>
 	  <script src="js/tabdnmain.js"></script>
 	  <script src="js/stats.js"></script>
-	  <script>
-	  	var input = document.querySelector('input[name=columns]');
-		new Tagify(input);
-	  </script>
+
 	  
 	  
 
