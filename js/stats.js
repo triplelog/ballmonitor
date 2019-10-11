@@ -398,3 +398,9 @@ tagify.on('add', onAddTag)
 function onAddTag(e) {
 	alert(e);
 }
+function onRemoveTag(e) {
+	alert(e);
+}
+function onTagEdit(e) {
+	alert(e);
+}
