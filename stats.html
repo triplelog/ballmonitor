@@ -36,7 +36,7 @@
   position: relative;
   display: inline-block;
   height: 26px;
-  width: 120px;
+  width: 140px;
   margin: 20px auto;
   background: rgba(0, 0, 0, 0.25);
   border-radius: 3px;
@@ -44,19 +44,19 @@
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
 }
 .switch-three {
-  width: 180px;
+  width: 210px;
 }
 
 .switch-label {
   position: relative;
   z-index: 2;
   float: left;
-  width: 58px;
+  width: 68px;
   line-height: 26px;
-  font-size: 11px;
-  color: rgba(255, 255, 255, 0.35);
+  font-size: .8rem;
+  color: rgba(255, 255, 255, 0.95);
   text-align: center;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.45);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.95);
   cursor: pointer;
 }
 .switch-label:active {
@@ -94,11 +94,11 @@
   transition-property: color, text-shadow;
 }
 .switch-input:checked + .switch-label-on ~ .switch-selection {
-  left: 60px;
+  left: 70px;
   /* Note: left: 50%; doesn't transition in WebKit */
 }
 .switch-input:checked + .switch-label-third ~ .switch-selection {
-  left: 120px;
+  left: 140px;
   /* Note: left: 50%; doesn't transition in WebKit */
 }
 
@@ -300,7 +300,8 @@
 			  <label for="team" class="switch-label switch-label-third">By Team</label>
 			  <span class="switch-selection"></span>
 			</div>
-			<button>Choose Columns</button>
+			Columns:<input type="text" id="columns"></input>
+			Years:<input type="text" id="years"></input>
 			<button>Filter By Year, team, stats, etc...</button>
 			<button id="submitChg">Submit</button>
 		</div>
