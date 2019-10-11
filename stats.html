@@ -25,96 +25,39 @@
 	 	--can-toggle-inactive-text: gray;
 	 }
 
-  
-	  input[type="checkbox"] {
 	
-		&[disabled] ~ label {
-		  color: rgba(var(--can-toggle-off-color), 0.5);
-		}
-	
-		&:focus ~ label, &:hover ~ label {
-		  .toggle-switch {
+		input[type="checkbox"]:focus ~ label, &:hover ~ label.toggle-switch {
 			background-color: var(--can-toggle-off-color);
-			&:after { color: darken(var(--can-toggle-off-color), 10%); }
-		  }
 		}
-		&:hover ~label { color: darken(var(--can-toggle-off-color), 5%); }
-		&:checked {
-		  ~ label {
-			&:hover { color: darken(var(--can-toggle-on-color), 3%); }
+		input[type="checkbox"]:focus ~ label, &:hover ~ label.toggle-switch:after {
+			color: darken(var(--can-toggle-off-color), 10%);
+		}
 		
-			.toggle-switch {
+		input[type="checkbox"]:hover ~label { color: darken(var(--can-toggle-off-color), 5%); }
+		input[type="checkbox"]:checked ~ label:hover{
+			color: darken(var(--can-toggle-on-color), 3%);
+		  }
+		input[type="checkbox"]:checked ~ label.toggle-switch{
 			  background-color: lighten(var(--can-toggle-on-color), 5%);
-			  &:after { color: darken(var(--can-toggle-on-color), 5%); }
-			}
+		  }
+		input[type="checkbox"]:checked ~ label.toggle-switch:after{
+			  color: darken(var(--can-toggle-on-color), 5%);
 		  }
 	  
-		  &:focus, &:hover {
-			~ label {
-			  .toggle-switch {
+		  input[type="checkbox"]:focus ~ label.toggle-switch, input[type="checkbox"]:hover ~ label.toggle-switch {
 				background-color: var(--can-toggle-on-color);
-				&:after { color: darken(var(--can-toggle-on-color), 10%); }
-			  }
-			} 
 		  }
-		}
-	  }
-  
-	  label {
-	
-		.can-toggle__label-text { flex: 1; }
-	
-		.toggle-switch {
-		  transition: background-color 0.3s $can-toggle-transition;
-		  background: lighten(var(--can-toggle-off-color), 5%);
-		  &:before { color: var(--can-toggle-inactive-text); }
-		  &:after {
-			// Autoprefixer choked here, so making the prefixes explicit
-			//-webkit-transition: -webkit-transform 0.3s $can-toggle-transition;
-			//transition: transform 0.3s $can-toggle-transition;
-			color: var(--can-toggle-off-color); 
+		  input[type="checkbox"]:focus ~ label.toggle-switch:after, input[type="checkbox"]:hover ~ label.toggle-switch:after {
+			color: darken(var(--can-toggle-on-color), 10%);
 		  }
-		}
-	
-	  }
 
 
-	.can-toggle {
-	  position: relative;
-	  *, *:before, *:after { box-sizing: border-box; }
-	  //overflow: hidden;
   
 	  input[type="checkbox"] {
 		opacity: 0;
 		position: absolute;
 		top: 0; left: 0;
-	
-		&[disabled] ~ label {
-		  pointer-events: none;
-		  .toggle-switch { opacity: 0.4; }
-		}
-	
-		&:checked {
-		  ~ label {
-		
-			.toggle-switch {
-		  
-			  &:before {
-				content: attr(data-unchecked);
-				left: 0;
-			  }
-		
-			  &:after {
-				content: attr(data-checked);
-			  }  
-			}
-		  }
-	  
-		  &:focus, &:hover {
-			~ label {
-			} 
-		  }
-		}
+
 	  }
   
 	  label {
@@ -148,8 +91,6 @@
 		  }
     
 
-  
-	}
 	</style>
     
 
@@ -281,7 +222,7 @@
 			<div class="can-toggle demo-rebrand-1">
 			  <input id="d" type="checkbox">
 			  <label for="d">
-				<div class="toggle-switch" data-checked="Good" data-unchecked="Bad"></div>
+				<div class="toggle-switch"></div>
 			  </label>
 			</div>
 			<button>Batting</button><button>Pitching</button>
