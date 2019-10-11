@@ -419,7 +419,7 @@ multirange(slider);
 var colInfo = {10:'HR'};
 function validateFilter() {
 	var tabdnStats = document.querySelector('tabdn-stats');
-	var filterFormula = document.querySelector('#filter');
+	var filterFormula = document.querySelector('#filter').value;
 	//Validate Filter by postfixifying
 }
 
@@ -444,14 +444,19 @@ function submitOptions() {
 	}
 	console.log(filter);
 	//Get Filters
-	var filterFormula = document.querySelector('#filter');
+	var filterFormula = document.querySelector('#filter').value;
 	if (filterFormula.length > 0){
 		if (filter.length > 0){filter += ' AND ';}
 		filter += postfixify(filterFormula,colInfo);
 	}
 	console.log(filter);
 	var cors = document.querySelectorAll('input[name=cors]');
-	console.log(cors);
+	for (var i=0;i<cors.length;i++){
+		if (cors[i].checked){
+			console.log(cors[i].id);
+		}
+	}
+
 	//Get Toggles
 	//submit
 }
