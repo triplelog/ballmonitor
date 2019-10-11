@@ -287,10 +287,10 @@ class TabDNStats extends TabDN {
 	}
 	
 	chgYears(startYear,endYear=2020) {
-		alert(startYear);
+		console.log(startYear);
 	}
 	chgFilter(filterFormula){
-		alert(filterFormula);
+		console.log(filterFormula);
 	}
 	 addData(retmess) {
 		var table = this.shadowRoot.querySelector('table');
@@ -435,7 +435,6 @@ function chgYears() {
 
 function chgFilter() {
 	var tabdnStats = document.querySelector('tabdn-stats');
-	console.log(tabdnStats);
 	var filterFormula = document.querySelector('#filter');
 	tabdnStats.chgFilter(filterFormula);
 }
