@@ -397,9 +397,7 @@ customElements.define('tabdn-stats', TabDNStats);
 
 var input = document.querySelector('input[name=columns]');
 var tagify = new Tagify(input);
-tagify.on('add', onAddTag)
-  .on('remove', onRemoveTag)
-  .on('edit', onTagEdit);
+tagify.on('add', onAddTag);
   
 function onAddTag(e) {
 	console.log(e.detail.data.value);
