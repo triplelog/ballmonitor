@@ -132,7 +132,7 @@
 		  position: relative;
 	  
 		  &:before {
-			content: attr(data-checked);
+			content: 'Good';
 			position: absolute;
 			top: 0;
 			text-transform: uppercase;
@@ -140,7 +140,7 @@
 		  }
 	  
 		  &:after {
-			content: attr(data-unchecked);
+			content: 'Bad';
 			position: absolute;
 			z-index: 5;
 			text-transform: uppercase;
@@ -288,7 +288,6 @@
 			  <input id="d" type="checkbox">
 			  <label for="d">
 				<div class="toggle-switch" data-checked="Good" data-unchecked="Bad"></div>
-				<div class="can-toggle__label-text">.can-toggle.demo-rebrand-1</div>
 			  </label>
 			</div>
 			<button>Batting</button><button>Pitching</button>
