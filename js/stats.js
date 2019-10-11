@@ -396,7 +396,7 @@ tagify.on('add', onAddTag)
   .on('edit', onTagEdit);
   
 function onAddTag(e) {
-	alert(e.detail);
+	console.log(e.detail);
 }
 function onRemoveTag(e) {
 	alert(e);
