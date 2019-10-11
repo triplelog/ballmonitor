@@ -435,6 +435,7 @@ function chgYears() {
 
 function chgFilter() {
 	var tabdnStats = document.querySelector('tabdn-stats');
+	console.log(tabdnStats);
 	var filterFormula = document.querySelector('#filter');
 	tabdnStats.chgFilter(filterFormula);
 }
