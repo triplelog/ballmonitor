@@ -262,9 +262,8 @@ class TabDNStats extends TabDN {
 	
 		var _this = this;
 		this.createTable();
-    	//this.addPaginate();
-    	//this.addButtons();
-    	
+    	this.addPaginate();
+    	this.addButtons();
     	this.ws.onopen = function(){
 			var jsonmessage = {'command':'create','src':_this.getAttribute('src')};
 			_this.ws.send(JSON.stringify(jsonmessage));
@@ -273,29 +272,113 @@ class TabDNStats extends TabDN {
 					_this.usecache = false;
 					var jsonmessage = {'command':'load'};
 					_this.ws.send(JSON.stringify(jsonmessage));
+					
+					jsonmessage = {'command':'print','startrow':_this.startRow,'endrow':_this.endRow};
+					_this.ws.send(JSON.stringify(jsonmessage));
+					
+					jsonmessage = {'command':'display','column':'3|4|5|18|19|20|21|22','location':'-3'};
+					_this.ws.send(JSON.stringify(jsonmessage));
+					
+				
 				}
 			}
 		};
+    	
 	}
 	
 	 addData(retmess) {
-		var players = document.querySelectorAll('stats-stats');
-		var i = 0;
-		for (var ii=0;ii*2 + 1<retmess[0].length;ii++) {
-			this.colInfo[parseInt(retmess[0][ii*2 + 1])]=retmess[0][ii*2];
+		var table = this.shadowRoot.querySelector('table');
+		table.style.maxWidth = (this.parentNode.clientWidth-20)+"px";
+		table.style.maxHeight = (this.parentNode.clientHeight-40)+"px";
+		this.style.maxWidth = (this.parentNode.clientWidth-20)+"px";
+		this.style.maxHeight = (this.parentNode.clientHeight-1)+"px";
+	
+		if (retmess[0][0].substring(0,5)=="Pivot"){
+			this.currentTable = "pivot@" + retmess[0][0].substring(6,retmess[0][0].length-2);
+			retmess[0][0] = "Rk";
 		}
-		for (var ii=1;ii<2;ii++) {
-			if (players.length > ii - 1){
-				//boxes[ii-1].setAttribute("src",retmess[ii][1]);
-				players[ii-1].setAttribute("src","aaroh101battingstats");
-				players[ii-1].chgsrc();
+		var thead = this.shadowRoot.querySelector('thead');
+		const headrow = thead.querySelector('tr');
+		const headers = headrow.querySelectorAll('th');
+		for (var ii=0;ii*2 + 1<Math.max(retmess[0].length,headers.length*2 + 1);ii++) {
+			if (ii*2 + 1 < retmess[0].length && ii < headers.length) {
+				headers[ii].querySelector('button').textContent = retmess[0][ii*2];
+				headers[ii].id = "cHeader"+retmess[0][ii*2 + 1];
+				headers[ii].style.display = 'table-cell';
+				this.colInfo[parseInt(retmess[0][ii*2 + 1])]=retmess[0][ii*2];
+			}
+			else if (ii < headers.length) {
+				headers[ii].style.display = 'none';
+			}
+			else if (ii*2 + 1 < retmess[0].length) {
+				var headerCell = document.createElement("th");
+				var newHeader = document.createElement("button");
+				newHeader.textContent = retmess[0][ii*2];
+				newHeader.style.display = 'inline-block';
+				newHeader.style.height = '100%';
+				newHeader.style.width = '100%';
+				newHeader.addEventListener('mouseover',e => {this.mousehead(e,0);});
+				newHeader.addEventListener('mousedown',e => {this.mousehead(e,1);});
+				newHeader.addEventListener('mouseout',e => {this.mousehead(e,2);});
+				newHeader.addEventListener('mouseup',e => {this.mousehead(e,3);});
+				newHeader.setAttribute("draggable","true");
+				newHeader.addEventListener('dragstart',e => {this.dragColumn(e,0);});
+				newHeader.addEventListener("dragover", e => {e.preventDefault();});
+				newHeader.addEventListener("drop", e => {e.preventDefault(); this.dropColumn(e,1);});
+				headerCell.id = "cHeader"+retmess[0][ii*2 + 1];
+				headerCell.style.display = 'table-cell';
+				headerCell.classList.add("th-sm");
+				this.colInfo[parseInt(retmess[0][ii*2 + 1])]=retmess[0][ii*2];
+				headerCell.appendChild(newHeader);
+				headrow.appendChild(headerCell);
 			}
 			else {
-				var player = document.createElement('stats-stats');
-				//box.setAttribute("src",retmess[ii][1]);
-				player.setAttribute("src","aaroh101battingstats");
-				player.chgsrc();
-				this.parentNode.appendChild(player);
+				break;
+			}
+		}
+	
+		var tbody = this.shadowRoot.querySelector('tbody');
+		var rows = tbody.querySelectorAll('tr');
+		for (var i=0;i<retmess.length-1;i++){
+			if (rows.length <= i) {
+				var newrow = document.createElement('tr');
+				newrow.addEventListener("dragover", e => {e.preventDefault();});
+				newrow.addEventListener("drop", e => {e.preventDefault(); this.dropColumn(e,0);});
+				tbody.appendChild(newrow);
+			}
+		}
+		rows = tbody.querySelectorAll('tr');
+		for (var i=0;i<rows.length;i++){
+			if (retmess.length-1 <= i) {
+				rows[i].style.display = 'none';
+			}
+			else {
+				rows[i].style.display = 'table-row';
+			}
+		}
+	
+		for (var i=0;i<retmess.length-1;i++){
+
+			const results = rows[i].querySelectorAll('td');
+			for (var ii=0;ii<Math.max(retmess[i+1].length,results.length);ii++) {
+				if (ii < retmess[i+1].length && ii < results.length) {
+					results[ii].textContent = retmess[i+1][ii]; //add one because of header
+					results[ii].style.display = 'table-cell';
+				}
+				else if (ii < results.length) {
+					results[ii].style.display = 'none';
+				}
+				else if (ii < retmess[i+1].length) {
+					var newResult = document.createElement("td");
+					newResult.textContent = retmess[i+1][ii];
+					newResult.style.display = 'table-cell';
+					newResult.id = 'cell-'+i+'-'+ii;
+					newResult.addEventListener("click",e => {this.cellClick(e,0);});
+					rows[i].appendChild(newResult);
+				}
+				else {
+					break;
+				}
 			}
 		}
 
