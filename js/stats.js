@@ -405,6 +405,6 @@ function onTagEdit(e) {
 	alert(e);
 }
 
-dragula([document.querySelector('tagify')], {
+dragula([document.querySelector('.tagify')], {
   removeOnSpill: false
 });
