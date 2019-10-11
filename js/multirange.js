@@ -72,7 +72,7 @@ var multirange = function(input) {
 		// Find the horizontal position that was clicked (as a percentage of the element's width)
 		var clickPoint = evt.offsetX / this.offsetWidth;
 		// Map the percentage to a value in the range (note, assumes a min value of 0)
-		var clickValue = (max - min) * clickPoint;
+		var clickValue = (max - min) * clickPoint + min;
 
 		// Get the distance to both high and low values in the range
 		var highDiff = input.valueHigh - clickValue;
