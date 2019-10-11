@@ -405,6 +405,11 @@ function onTagEdit(e) {
 	alert(e);
 }
 
-dragula([document.querySelector('.tagify')], {
+var drake = dragula([document.querySelector('.tagify')], {
   removeOnSpill: false
 });
+drake.on('drop', moveTag);
+
+function moveTag(el, target, source, sibling) {
+	console.log(el, target, source, sibling);
+}
