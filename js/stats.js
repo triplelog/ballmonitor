@@ -413,3 +413,10 @@ drake.on('drop', moveTag);
 function moveTag(el, target, source, sibling) {
 	console.log(el.getAttribute('title'), sibling.getAttribute('title'));
 }
+
+var slider = _this.shadowRoot.querySelector('#years');
+slider.setAttribute('value','1900,2020');
+slider.setAttribute('min','1900');
+
+slider.setAttribute('max','2020');
+multirange(slider);

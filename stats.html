@@ -18,6 +18,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css">
   <link rel="stylesheet" href="css/tagify.css">
   <link rel="stylesheet" href="css/dragula.css">
+  <link rel="stylesheet" href="css/multirange.css">
   <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>-->
 
 	<style>
@@ -331,7 +332,7 @@
 			  <label for="team" class="switch-label switch-label-third">By Team</label>
 			  <span class="switch-selection"></span>
 			</div>
-			Years:<input type="range" id="years"></input>
+			Years:<input id="years" type="range" multiple value="1900,2020" />
 			Columns:<span class="icon-help"></span><input name='columns' value='tag1, tag2' />
 			Filter:<span class="icon-help"></span><input type="text" id="years" placeholder="HR>=500..."></input>
 			<button id="submitChg">Submit</button>
@@ -345,6 +346,7 @@
 	  <script src="https://unpkg.com/tippy.js@5"></script>
 	  <script src="js/tagify.js"></script>
 	  <script src="js/dragula.js"></script>
+	  <script src="js/multirange.js"></script>
 	  <script src="js/papaparse.min.js"></script>
 	  <script src="js/tabdnmain.js"></script>
 	  <script src="js/stats.js"></script>
