@@ -23,7 +23,7 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-label {
+.switch-label {
   margin: 0;
   padding: 0;
   border: 0;
@@ -31,10 +31,6 @@ label {
   font: inherit;
   vertical-align: baseline;
 }
-
-
-
-
 
 .switch {
   position: relative;
@@ -272,13 +268,18 @@ label {
 		<div id="formData">
 			<div class="switch">
 			  <input type="radio" class="switch-input" name="view" value="week" id="week" checked>
-			  <label for="week" class="switch-label switch-label-off">ON</label>
+			  <label for="week" class="switch-label switch-label-off">Batting</label>
 			  <input type="radio" class="switch-input" name="view" value="month" id="month">
-			  <label for="month" class="switch-label switch-label-on">OFF</label>
+			  <label for="month" class="switch-label switch-label-on">Pitching</label>
 			  <span class="switch-selection"></span>
 			</div>
-			<button>Batting</button><button>Pitching</button>
-			<button>Career</button><button>Season</button>
+			<div class="switch">
+			  <input type="radio" class="switch-input" name="view" value="week" id="week" checked>
+			  <label for="week" class="switch-label switch-label-off">Career</label>
+			  <input type="radio" class="switch-input" name="view" value="month" id="month">
+			  <label for="month" class="switch-label switch-label-on">Season</label>
+			  <span class="switch-selection"></span>
+			</div>
 			<button>Yearly Leaders</button><button>Team Records</button>
 			<button>Choose Columns</button>
 			<button>Filter By Year, team, stats, etc...</button>
