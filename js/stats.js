@@ -286,6 +286,12 @@ class TabDNStats extends TabDN {
     	
 	}
 	
+	chgYears(startYear,endYear=2020) {
+		alert(startYear);
+	}
+	chgFilter(filterFormula){
+		alert(filterFormula);
+	}
 	 addData(retmess) {
 		var table = this.shadowRoot.querySelector('table');
 		table.style.maxWidth = (this.parentNode.clientWidth-20)+"px";
@@ -420,3 +426,15 @@ slider.setAttribute('min','1900');
 
 slider.setAttribute('max','2020');
 multirange(slider);
+
+function chgYears() {
+	var tabdnStats = document.querySelector('tabdn-stats');
+	var startYear = slider.valueLow;
+	tabdnStats.chgYears(startYear);
+}
+
+function chgFilter() {
+	var tabdnStats = document.querySelector('tabdn-stats');
+	var filterFormula = document.querySelector('#filter');
+	tabdnStats.chgFilter(filterFormula);
+}
