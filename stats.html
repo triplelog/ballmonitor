@@ -16,6 +16,7 @@
   <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css">
+  <link rel="stylesheet" href="css/tagify.css">
   <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>-->
 
 	<style>
@@ -326,8 +327,8 @@
 			  <span class="switch-selection"></span>
 			</div>
 			Years:<input type="range" id="years"></input>
-			Columns:<input type="text" id="columns"></input>
-			Filter:<input type="text" id="years" placeholder="stats formula"></input>
+			Columns:<span class="icon-help"></span><input type="text" name='columns' value='tag1, tag2' />
+			Filter:<span class="icon-help"></span><input type="text" id="years" placeholder="HR>=500..."></input>
 			<button id="submitChg">Submit</button>
 			<button id="hideOptions">Hide</button>
 		</div>
@@ -337,9 +338,14 @@
 	</div>
 	  <script src="https://unpkg.com/popper.js@1"></script>
 	  <script src="https://unpkg.com/tippy.js@5"></script>
+	  <script src="js/tagify.js"></script>
 	  <script src="js/papaparse.min.js"></script>
 	  <script src="js/tabdnmain.js"></script>
 	  <script src="js/stats.js"></script>
+	  <script>
+	  	var input = document.querySelector('input[name=columns]');
+		new Tagify(input);
+	  </script>
 	  
 	  
 
