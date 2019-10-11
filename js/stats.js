@@ -411,5 +411,5 @@ var drake = dragula([document.querySelector('.tagify')], {
 drake.on('drop', moveTag);
 
 function moveTag(el, target, source, sibling) {
-	console.log(el, target, source, sibling);
+	console.log(el.getAttribute('title'), sibling.getAttribute('title'));
 }
