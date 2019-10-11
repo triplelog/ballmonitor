@@ -70,6 +70,9 @@
   padding-right: 2px;
 }
 
+.switch-label-third {
+  padding-right: 2px;
+}
 
 .switch-input {
   display: none;
@@ -91,6 +94,10 @@
 }
 .switch-input:checked + .switch-label-on ~ .switch-selection {
   left: 60px;
+  /* Note: left: 50%; doesn't transition in WebKit */
+}
+.switch-input:checked + .switch-label-third ~ .switch-selection {
+  left: 120px;
   /* Note: left: 50%; doesn't transition in WebKit */
 }
 
@@ -289,7 +296,7 @@
 			  <input type="radio" class="switch-input" name="yort" value="year" id="year">
 			  <label for="year" class="switch-label switch-label-on">By Year</label>
 			  <input type="radio" class="switch-input" name="yort" value="team" id="team">
-			  <label for="team" class="switch-label switch-label-on">By Team</label>
+			  <label for="team" class="switch-label switch-label-third">By Team</label>
 			  <span class="switch-selection"></span>
 			</div>
 			<button>Choose Columns</button>
