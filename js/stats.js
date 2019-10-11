@@ -262,8 +262,8 @@ class TabDNStats extends TabDN {
 	
 		var _this = this;
 		this.createTable();
-    	this.addPaginate();
-    	this.addButtons();
+    	this.addPaginate(false);
+    	//this.addButtons();
     	this.ws.onopen = function(){
 			var jsonmessage = {'command':'create','src':_this.getAttribute('src')};
 			_this.ws.send(JSON.stringify(jsonmessage));

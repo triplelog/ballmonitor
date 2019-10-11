@@ -165,7 +165,7 @@
 }
 #hideOptions {
 	position: absolute;
-	top:0px;
+	bottom:0px;
 	right:0px;
 }
 
@@ -301,7 +301,7 @@
 	</header>
 	<div id="content">
 		<div id="formData">
-			<button id="hideOptions">X</button>
+			
 			<div class="switch">
 			  <input type="radio" class="switch-input" name="borp" value="batting" id="batting" checked>
 			  <label for="batting" class="switch-label switch-label-off">Batting</label>
@@ -329,6 +329,7 @@
 			Columns:<input type="text" id="columns"></input>
 			Filter:<input type="text" id="years" placeholder="stats formula"></input>
 			<button id="submitChg">Submit</button>
+			<button id="hideOptions">Hide</button>
 		</div>
 		<tabdn-stats style="display: inline-block;" src="xl09p" autoload="true"></tabdn-stats>
 		<!--<stats-stats>
