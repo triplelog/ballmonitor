@@ -122,16 +122,18 @@
 		position: relative;
 		display: flex;
 		align-items: center;
+	  }
 	
-		.can-toggle__label-text { 
+		label.can-toggle__label-text { 
 		  flex: 1;
 		  padding-left: 32px;
 		}
 	
-		.toggle-switch {
+		label.toggle-switch {
 		  position: relative;
+		  }
 	  
-		  &:before {
+		  label.toggle-switch:before {
 			content: 'Good';
 			position: absolute;
 			top: 0;
@@ -139,7 +141,7 @@
 			text-align: center;
 		  }
 	  
-		  &:after {
+		  label.toggle-switch:after {
 			content: 'Bad';
 			position: absolute;
 			z-index: 5;
@@ -148,10 +150,6 @@
 			background: white;
 			transform: translate3d(0,0,0);
 		  }
-
-		}
-	
-	  }
     
 
   
