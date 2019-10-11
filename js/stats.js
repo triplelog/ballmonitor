@@ -428,7 +428,7 @@ function submitOptions() {
 	var tagNodes = document.querySelector('.tagify').childNodes;
 	var tags = [];
 	for (var i=0;i<tagNodes.length;i++){
-		if (tagNodes[i].tagName == 'tag'){
+		if (tagNodes[i].tagName == 'TAG'){
 			tags.push(tagNodes[i].title);
 		}
 	}
@@ -450,7 +450,7 @@ function submitOptions() {
 		filter += postfixify(filterFormula,colInfo);
 	}
 	console.log(filter);
-	var cors = document.querySelector('input[name=cors].checked');
+	var cors = document.querySelectorAll('input[name=cors]');
 	console.log(cors);
 	//Get Toggles
 	//submit
