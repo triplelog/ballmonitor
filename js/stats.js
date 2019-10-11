@@ -400,7 +400,7 @@ var tagify = new Tagify(input);
 tagify.on('add', onAddTag);
   
 function onAddTag(e) {
-	console.log(e.detail.data.value);
+	//console.log(e.detail.data.value);
 	//Validate Tag by postfixifying
 }
 
@@ -416,6 +416,7 @@ slider.setAttribute('min','1900');
 slider.setAttribute('max','2020');
 multirange(slider);
 
+var colInfo = {10:'HR'};
 function validateFilter() {
 	var tabdnStats = document.querySelector('tabdn-stats');
 	var filterFormula = document.querySelector('#filter');
@@ -427,7 +428,9 @@ function submitOptions() {
 	var tagNodes = document.querySelector('.tagify').childNodes;
 	var tags = [];
 	for (var i=0;i<tagNodes.length;i++){
-		tags.push(tagNodes[i].title);
+		if (tagNodes[i].tagName == 'tag'){
+			tags.push(tagNodes[i].title);
+		}
 	}
 	console.log(tags)
 	//Get Years
@@ -439,8 +442,16 @@ function submitOptions() {
 		if (filter.length > 0){filter += ' AND ';}
 		filter += '(yearCol<='+slider.valueHigh+')';
 	}
-	console.log(filter)
+	console.log(filter);
 	//Get Filters
+	var filterFormula = document.querySelector('#filter');
+	if (filterFormula.length > 0){
+		if (filter.length > 0){filter += ' AND ';}
+		filter += postfixify(filterFormula,colInfo);
+	}
+	console.log(filter);
+	var cors = document.querySelector('input[name=cors].checked');
+	console.log(cors);
 	//Get Toggles
 	//submit
 }
