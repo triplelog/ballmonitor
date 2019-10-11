@@ -403,12 +403,7 @@ tagify.on('add', onAddTag)
   
 function onAddTag(e) {
 	console.log(e.detail.data.value);
-}
-function onRemoveTag(e) {
-	alert(e);
-}
-function onTagEdit(e) {
-	alert(e);
+	//Validate Tag by postfixifying
 }
 
 var drake = dragula([document.querySelector('.tagify')], {
@@ -416,9 +411,6 @@ var drake = dragula([document.querySelector('.tagify')], {
 });
 drake.on('drop', moveTag);
 
-function moveTag(el, target, source, sibling) {
-	console.log(el.getAttribute('title'), sibling.getAttribute('title'));
-}
 
 var slider = document.querySelector('#years');
 slider.setAttribute('value','1900,2020');
@@ -427,14 +419,35 @@ slider.setAttribute('min','1900');
 slider.setAttribute('max','2020');
 multirange(slider);
 
-function chgYears() {
-	var tabdnStats = document.querySelector('tabdn-stats');
-	var startYear = slider.valueLow;
-	tabdnStats.chgYears(startYear);
-}
-
-function chgFilter() {
+function validateFilter() {
 	var tabdnStats = document.querySelector('tabdn-stats');
 	var filterFormula = document.querySelector('#filter');
-	tabdnStats.chgFilter(filterFormula);
+	//Validate Filter by postfixifying
+}
+
+function submitOptions() {
+	//Get tags
+	var tagNodes = document.querySelector('.tagify').childNodes;
+	var tags = [];
+	for (var i=0;i<tagNodes.length;i++){
+		tags.push(tagNodes[i].title);
+	}
+	console.log(tags)
+	//Get Years
+	var filter = '';
+	if (parseInt(slider.valueLow) > 1900){
+		filter += '(yearCol>='+slider.valueLow+')';
+	}
+	if (parseInt(slider.valueHigh) < 2020){
+		if (filter.length > 0){filter += ' AND ';}
+		filter += '(yearCol<='+slider.valueHigh+')';
+	}
+	console.log(filter)
+	//Get Filters
+	//Get Toggles
+	//submit
+}
+
+function hideOptions() {
+
 }

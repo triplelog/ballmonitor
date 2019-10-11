@@ -331,11 +331,11 @@
 			  <label for="team" class="switch-label switch-label-third">By Team</label>
 			  <span class="switch-selection"></span>
 			</div>
-			Years:<input id="years" type="range" multiple value="1900,2020" oninput="chgYears()" />
+			Years:<input id="years" type="range" multiple value="1900,2020"/>
 			Columns:<span class="icon-help"></span><input name='columns' value='tag1, tag2' />
-			Filter:<span class="icon-help"></span><input type="text" id="filter" placeholder="HR>=500..." oninput="chgFilter()"></input>
-			<button id="submitChg">Submit</button>
-			<button id="hideOptions">Hide</button>
+			Filter:<span class="icon-help"></span><input type="text" id="filter" placeholder="HR>=500..." oninput="validateFilter()"></input>
+			<button id="submitChg" onclick="submitOptions()">Submit</button>
+			<button id="hideOptions" onclick="hideOptions()">Hide</button>
 		</div>
 		<tabdn-stats style="display: inline-block;" src="xl09p" autoload="true"></tabdn-stats>
 		<!--<stats-stats>
