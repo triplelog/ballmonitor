@@ -1073,6 +1073,15 @@ class TabDNSeason extends TabDN {
 			
 			players[0].chgLeaderColumns();
 			this.sortableData(retmess);
+			
+			button = document.createElement('button');
+			button.textContent = 'Save';
+			button.addEventListener('click',e => {var jsonmessage = {'command':'save'}; this.ws.send(JSON.stringify(jsonmessage));});
+			
+			editCols.appendChild(button);
+			
+			
+			
 		}
 		
 		/*
