@@ -407,7 +407,6 @@ function onAddTag(e) {
 var drake = dragula([document.querySelector('.tagify')], {
   removeOnSpill: false
 });
-drake.on('drop', moveTag);
 
 
 var slider = document.querySelector('#years');
