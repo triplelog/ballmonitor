@@ -155,7 +155,7 @@
   border: 1px solid black;
   position: relative;
 }
-[type='text'], [type='range'], select, textarea {
+[type='text'], #rangeHolder, select, textarea {
   display: block;
   padding: .5rem 0rem;
   background: transparent;
@@ -166,10 +166,7 @@
   border-radius: 4px;
   font-size: 0.95rem;
 }
-[type='range'] {
-  width: 240px;
-  max-width: 240px;
-}
+
 #hideOptions {
 	position: absolute;
 	bottom:0px;
@@ -335,7 +332,7 @@
 			  <label for="team" class="switch-label switch-label-third">By Team</label>
 			  <span class="switch-selection"></span>
 			</div>
-			Years:<input id="years" type="range" multiple value="1900,2020"/>
+			Years:<span id="rangeHolder"><input id="years" type="range" multiple value="1900,2020"/></span>
 			Columns:<span class="icon-help"></span><input name='columns' value='tag1, tag2' />
 			Filter:<span class="icon-help"></span><input type="text" id="filter" placeholder="HR>=500..." oninput="validateFilter()"></input>
 			<button id="submitChg" onclick="submitOptions()">Submit</button>
