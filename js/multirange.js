@@ -98,7 +98,7 @@ var multirange = function(input) {
 }
 
 multirange.init = function() {
-	[].slice.call(document.querySelectorAll("input[type=range][multiple]:not(.multirange)")).forEach(multirange);
+	//[].slice.call(document.querySelectorAll("input[type=range][multiple]:not(.multirange)")).forEach(multirange);
 }
 
 if (typeof module === "undefined") {

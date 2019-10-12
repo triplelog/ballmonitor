@@ -464,7 +464,7 @@ function submitOptions() {
 	var filterFormula = document.querySelector('#filter').value;
 	if (filterFormula.length > 0){
 		if (filter.length > 0){filter += ' AND ';}
-		filter += postfixify(filterFormula,colInfo);
+		filter += '(' + postfixify(filterFormula,colInfo) + ')';
 	}
 	//console.log(filter);
 	//Get Toggles
