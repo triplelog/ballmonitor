@@ -363,7 +363,7 @@ class TabDNStats extends TabDN {
 				break;
 			}
 		}
-		console.log(JSON.stringify(this.colInfo));
+
 		var tbody = this.shadowRoot.querySelector('tbody');
 		var rows = tbody.querySelectorAll('tr');
 		for (var i=0;i<retmess.length-1;i++){
@@ -442,6 +442,10 @@ function validateFilter() {
 	var tabdnStats = document.querySelector('tabdn-stats');
 	var filterFormula = document.querySelector('#filter').value;
 	//Validate Filter by postfixifying
+	if (filterFormula.length == 0){
+		document.querySelector('#filter').style.border = '1px solid black';
+		return;
+	}
 	if (postfixify(filterFormula,colInfo,false)){
 		document.querySelector('#filter').style.border = '1px solid green';
 	}
