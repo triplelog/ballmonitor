@@ -445,10 +445,10 @@ function onAddTag(e) {
 }
 
 function onTagEdit(e) {
-	alert('hi');
+	console.log('hi');
 }
 function onTagInput(e) {
-	console.log('hi');
+	console.log(e.detail);
 }
 
 var drake = dragula([document.querySelector('.tagify')], {
