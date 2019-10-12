@@ -263,6 +263,7 @@ class TabDNStats extends TabDN {
 		var _this = this;
 		this.createTable();
     	this.addPaginate(false);
+    	this.addOptions();
     	//this.addButtons();
     	this.ws.onopen = function(){
 			var jsonmessage = {'command':'create','src':_this.getAttribute('src')};
@@ -286,12 +287,18 @@ class TabDNStats extends TabDN {
     	
 	}
 	
-	chgYears(startYear,endYear=2020) {
-		console.log(startYear);
+	addOptions() {
+		var pageDiv = this.shadowRoot.querySelector('#perPage').parentNode;
+		var editButton = document.createElement('button');
+		editButton.textContent = 'Options';
+		editButton.style.display = 'none';
+		editButton.id = 'editButton';
+		pageDiv.appendChild(editButton);
 	}
-	chgFilter(filterFormula){
-		console.log(filterFormula);
+	showOptions() {
+		this.shadowRoot.querySelector('#editButton').style.display = 'inline-block';
 	}
+	
 	 addData(retmess) {
 		var table = this.shadowRoot.querySelector('table');
 		table.style.maxWidth = (this.parentNode.clientWidth-20)+"px";
@@ -462,5 +469,7 @@ function submitOptions() {
 }
 
 function hideOptions() {
-	document.getElementById('hideOptions').classList.add('hidden');
+	document.getElementById('formData').classList.add('hidden');
+	var tabdnStats = document.querySelector('tabdn-stats');
+	tabdnStats.showOptions();
 }
