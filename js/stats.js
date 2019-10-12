@@ -428,6 +428,7 @@ function onAddTag(e) {
 	if (tagFormula.indexOf(':')>-1){
 		newColumns[tagFormula.split(':')[0]] = tagFormula.split(':')[1];
 		e.detail.tag.title = tagFormula.split(':')[0];
+		e.detail.tag.setAttribute('title',tagFormula.split(':')[0]);
 		tagFormula = tagFormula.split(':')[1];
 	}
 	if (postfixify(tagFormula,colInfo,false)){
@@ -445,9 +446,9 @@ function onAddTag(e) {
 }
 
 function onTagClick(e) {
-	e.detail.tag.title = 'abc';
+	e.detail.tag.setAttribute('title','abc');
 }
-function onTagInput(e) {
+function onTagEdit(e) {
 	console.log(e.detail);
 }
 
