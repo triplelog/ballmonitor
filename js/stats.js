@@ -437,7 +437,7 @@ slider.setAttribute('min','1900');
 slider.setAttribute('max','2020');
 multirange(slider);
 
-var colInfo = {5:'HR'};
+var colInfo = {6:'HR'};
 function validateFilter() {
 	var tabdnStats = document.querySelector('tabdn-stats');
 	var filterFormula = document.querySelector('#filter').value;
