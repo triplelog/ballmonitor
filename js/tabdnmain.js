@@ -866,7 +866,7 @@ function replaceDates(istr){
 	return istr;
 }
 
-function postfixify(input_str,colInfo) {
+function postfixify(input_str,colInfo,strAllowed=true) {
 	input_str = input_str.toUpperCase();
 	input_str = input_str.replace(/\sAND\s/g,'&');
 	input_str = input_str.replace(/\sOR\s/g,'|');
@@ -898,6 +898,7 @@ function postfixify(input_str,colInfo) {
 				}
 			}
 			if (!isColumn){
+				if (!strAllowed){return false;}
 				if ( (firstpart[i].match(/\./g) || []).length > 1) {firstpart[i] = firstpart[i].replace(/\./g,'/')};
 			}
 		}

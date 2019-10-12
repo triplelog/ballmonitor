@@ -437,11 +437,17 @@ slider.setAttribute('min','1900');
 slider.setAttribute('max','2020');
 multirange(slider);
 
-var colInfo = {6:'R'};
+var colInfo = {"1":"pid","2":"game","3":"IPouts","4":"H","5":"BB","6":"R","7":"ER","8":"PC","9":"K","10":"HR","11":"1B","12":"2B","13":"3B","14":"WP","15":"HBP","16":"PA","17":"AB","18":"BK","19":"SH","20":"SF","21":"IBB","22":"team","23":"opp","24":"loc","25":"age","26":"bloc","27":"regpost","28":"date","-1":"Rk"};
 function validateFilter() {
 	var tabdnStats = document.querySelector('tabdn-stats');
 	var filterFormula = document.querySelector('#filter').value;
 	//Validate Filter by postfixifying
+	if (postfixify(filterFormula,colInfo,false)){
+		document.querySelector('#filter').style.border = '1px solid green';
+	}
+	else {
+		document.querySelector('#filter').style.border = '1px solid red';
+	}
 }
 
 function submitOptions() {
