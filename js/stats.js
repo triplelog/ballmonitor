@@ -418,7 +418,7 @@ customElements.define('tabdn-stats', TabDNStats);
 
 var input = document.querySelector('input[name=columns]');
 var tagify = new Tagify(input);
-tagify.on('add', onAddTag).on('edit', onTagEdit);
+tagify.on('add', onAddTag).on('click', onTagEdit).on('input', onTagInput);
 
 var newColumns = {};
 function onAddTag(e) {
@@ -446,6 +446,9 @@ function onAddTag(e) {
 
 function onTagEdit(e) {
 	alert('hi');
+}
+function onTagInput(e) {
+	console.log('hi');
 }
 
 var drake = dragula([document.querySelector('.tagify')], {
