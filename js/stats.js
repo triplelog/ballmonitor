@@ -432,15 +432,15 @@ function onAddTag(e) {
 	}
 	if (postfixify(tagFormula,colInfo,false)){
 		if (postfixify(tagFormula,colInfo,false).split('@')[1] == '#'){
-			e.detail.tag.style.background = 'rgba(0,0,255,.1)';
+			e.detail.tag.style.border = '0px';
 		}
 		else {
-			e.detail.tag.style.background = 'rgba(0,255,0,.1)';
+			e.detail.tag.style.border = '1px solid green';
 			newColumns[tagFormula] = tagFormula;
 		}
 	}
 	else {
-		e.detail.tag.style.background = 'rgba(255,0,0,.1)';
+		e.detail.tag.style.border = '1px solid red';
 	}
 }
 
