@@ -443,14 +443,14 @@ function validateFilter() {
 	var filterFormula = document.querySelector('#filter').value;
 	//Validate Filter by postfixifying
 	if (filterFormula.length == 0){
-		document.querySelector('#filter').style.border = '1px solid black';
+		document.querySelector('#filter').style.background = 'rgba(0,0,0,0)';
 		return;
 	}
 	if (postfixify(filterFormula,colInfo,false)){
-		document.querySelector('#filter').style.border = '1px solid green';
+		document.querySelector('#filter').style.background = 'rgba(0,255,0,.5)';
 	}
 	else {
-		document.querySelector('#filter').style.border = '1px solid red';
+		document.querySelector('#filter').style.background = 'rgba(255,0,0,.5)';
 	}
 }
 
