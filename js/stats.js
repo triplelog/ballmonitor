@@ -418,7 +418,7 @@ customElements.define('tabdn-stats', TabDNStats);
 
 var input = document.querySelector('input[name=columns]');
 var tagify = new Tagify(input);
-tagify.on('add', onAddTag).on('click', onTagClick);
+tagify.on('add', onAddTag).on('click', onTagClick).on('edit', onAddTag);
 
 var newColumns = {};
 function onAddTag(e) {
@@ -445,8 +445,7 @@ function onAddTag(e) {
 }
 
 function onTagClick(e) {
-	console.log(e.detail.tag);
-	e.detail.tag.querySelector('.tagify__tag-text').textContent = 'abc';
+	e.detail.tag.querySelector('.tagify__tag-text').textContent = e.detail.data.value;
 }
 function onTagEdit(e) {
 	console.log(e.detail);
