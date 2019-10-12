@@ -418,22 +418,34 @@ customElements.define('tabdn-stats', TabDNStats);
 
 var input = document.querySelector('input[name=columns]');
 var tagify = new Tagify(input);
-tagify.on('add', onAddTag);
-  
+tagify.on('add', onAddTag).on('edit', onTagEdit);
+
+var newColumns = {};
 function onAddTag(e) {
 
 	var tagFormula = e.detail.data.value;
 	//Validate Filter by postfixifying
-	if (tagFormula.length == 0){
-		e.detail.tag.style.border = '0px';
-		return;
+	if (tagFormula.indexOf(':')>-1){
+		newColumns[tagFormula.split(':')[0]] = tagFormula.split(':')[1];
+		e.detail.tag.title = tagFormula.split(':')[0];
+		tagFormula = tagFormula.split(':')[1];
 	}
 	if (postfixify(tagFormula,colInfo,false)){
-		e.detail.tag.style.border = '1px solid green';
+		if (postfixify(tagFormula,colInfo,false).split('@')[1] == '#'){
+			e.detail.tag.style.background = 'rgba(0,0,255,.1)';
+		}
+		else {
+			e.detail.tag.style.background = 'rgba(0,255,0,.1)';
+			newColumns[tagFormula] = tagFormula;
+		}
 	}
 	else {
-		e.detail.tag.style.border = '1px solid red';
+		e.detail.tag.style.background = 'rgba(255,0,0,.1)';
 	}
+}
+
+function onTagEdit(e) {
+	alert('hi');
 }
 
 var drake = dragula([document.querySelector('.tagify')], {
