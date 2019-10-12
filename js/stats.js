@@ -427,7 +427,7 @@ function onAddTag(e) {
 	//Validate Filter by postfixifying
 	if (tagFormula.indexOf(':')>-1){
 		newColumns[tagFormula.split(':')[0]] = tagFormula.split(':')[1];
-		e.detail.tag.setAttribute('title',tagFormula.split(':')[0]);
+		e.detail.tag.setAttribute('value',tagFormula.split(':')[0]);
 		tagFormula = tagFormula.split(':')[1];
 	}
 	if (postfixify(tagFormula,colInfo,false)){
@@ -446,7 +446,7 @@ function onAddTag(e) {
 
 function onTagClick(e) {
 	console.log(e.detail.tag);
-	e.detail.tag.setAttribute('title','abc');
+	e.detail.tag.setAttribute('value','abc');
 }
 function onTagEdit(e) {
 	console.log(e.detail);
