@@ -287,16 +287,26 @@ class TabDNStats extends TabDN {
     	
 	}
 	
+	sendOptions(tags,filter,toggles) {
+		console.log(tags);
+		console.log(filter);
+		console.log(toggles);
+	}
 	addOptions() {
 		var pageDiv = this.shadowRoot.querySelector('#perPage').parentNode;
 		var editButton = document.createElement('button');
 		editButton.textContent = 'Options';
 		editButton.style.display = 'none';
 		editButton.id = 'editButton';
+		editButton.addEventListener('click',e => {this.showOptions();});
 		pageDiv.appendChild(editButton);
 	}
-	showOptions() {
+	hideOptions() {
 		this.shadowRoot.querySelector('#editButton').style.display = 'inline-block';
+	}
+	showOptions() {
+		this.shadowRoot.querySelector('#editButton').style.display = 'none';
+		document.querySelector('#formData').classList.remove('hidden');
 	}
 	
 	 addData(retmess) {
@@ -439,7 +449,7 @@ function submitOptions() {
 			tags.push(tagNodes[i].title);
 		}
 	}
-	console.log(tags)
+	//console.log(tags)
 	//Get Years
 	var filter = '';
 	if (parseInt(slider.valueLow) > 1900){
@@ -449,27 +459,46 @@ function submitOptions() {
 		if (filter.length > 0){filter += ' AND ';}
 		filter += '(yearCol<='+slider.valueHigh+')';
 	}
-	console.log(filter);
+
 	//Get Filters
 	var filterFormula = document.querySelector('#filter').value;
 	if (filterFormula.length > 0){
 		if (filter.length > 0){filter += ' AND ';}
 		filter += postfixify(filterFormula,colInfo);
 	}
-	console.log(filter);
+	//console.log(filter);
+	//Get Toggles
+	var toggles = [];
+	var borp = document.querySelectorAll('input[name=borp]');
+	for (var i=0;i<borp.length;i++){
+		if (borp[i].checked){
+			toggles.push(borp[i].id);
+			break;
+		}
+	}
 	var cors = document.querySelectorAll('input[name=cors]');
 	for (var i=0;i<cors.length;i++){
 		if (cors[i].checked){
-			console.log(cors[i].id);
+			toggles.push(cors[i].id);
+			break;
 		}
 	}
-
-	//Get Toggles
-	//submit
+	var yort = document.querySelectorAll('input[name=yort]');
+	for (var i=0;i<yort.length;i++){
+		if (yort[i].checked){
+			toggles.push(yort[i].id);
+			break;
+		}
+	}
+	//Submit
+	var tabdnStats = document.querySelector('tabdn-stats');
+	tabdnStats.sendOptions(tags,filter,toggles);
+	
+	
 }
 
 function hideOptions() {
 	document.getElementById('formData').classList.add('hidden');
 	var tabdnStats = document.querySelector('tabdn-stats');
-	tabdnStats.showOptions();
+	tabdnStats.hideOptions();
 }
