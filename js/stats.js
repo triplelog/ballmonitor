@@ -363,7 +363,7 @@ class TabDNStats extends TabDN {
 				break;
 			}
 		}
-		console.log(this.colInfo);
+		console.log(JSON.stringify(this.colInfo));
 		var tbody = this.shadowRoot.querySelector('tbody');
 		var rows = tbody.querySelectorAll('tr');
 		for (var i=0;i<retmess.length-1;i++){
