@@ -418,7 +418,7 @@ customElements.define('tabdn-stats', TabDNStats);
 
 var input = document.querySelector('input[name=columns]');
 var tagify = new Tagify(input);
-tagify.on('add', onAddTag).on('click', onTagEdit).on('input', onTagInput);
+tagify.on('add', onAddTag).on('click', onTagClick);
 
 var newColumns = {};
 function onAddTag(e) {
@@ -444,8 +444,8 @@ function onAddTag(e) {
 	}
 }
 
-function onTagEdit(e) {
-	console.log('hi');
+function onTagClick(e) {
+	e.detail.tag.title = 'abc';
 }
 function onTagInput(e) {
 	console.log(e.detail);
