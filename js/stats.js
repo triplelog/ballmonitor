@@ -457,19 +457,20 @@ function submitOptions() {
 	//Get Years
 	var filter = '';
 	if (parseInt(slider.valueLow) > 1900){
-		filter += '(yearCol>='+slider.valueLow+')';
+		filter += '(YEAR>='+slider.valueLow+')';
 	}
 	if (parseInt(slider.valueHigh) < 2020){
 		if (filter.length > 0){filter += ' AND ';}
-		filter += '(yearCol<='+slider.valueHigh+')';
+		filter += '(YEAR<='+slider.valueHigh+')';
 	}
 
 	//Get Filters
 	var filterFormula = document.querySelector('#filter').value;
 	if (filterFormula.length > 0){
 		if (filter.length > 0){filter += ' AND ';}
-		filter += '(' + postfixify(filterFormula,colInfo) + ')';
+		filter += '(' + filterFormula + ')';
 	}
+	filter = postfixify(filter,colInfo)
 	//console.log(filter);
 	//Get Toggles
 	var toggles = [];
