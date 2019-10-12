@@ -426,7 +426,7 @@ function onAddTag(e) {
 	var tagFormula = e.detail.data.value;
 	//Validate Filter by postfixifying
 	if (tagFormula.indexOf(':')>-1){
-		newColumns[tagFormula.split(':')[0]] = tagFormula.split(':')[1];\
+		newColumns[tagFormula.split(':')[0]] = tagFormula.split(':')[1];
 		e.detail.tag.setAttribute('title',tagFormula.split(':')[0]);
 		tagFormula = tagFormula.split(':')[1];
 	}
