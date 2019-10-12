@@ -291,6 +291,10 @@ class TabDNStats extends TabDN {
 		console.log(tags);
 		console.log(filter);
 		console.log(toggles);
+		var jsonmessage = {'command':'filter','formula':filter};
+		this.ws.send(JSON.stringify(jsonmessage));
+		jsonmessage = {'command':'print','startrow':this.startRow,'endrow':this.endRow};
+		this.ws.send(JSON.stringify(jsonmessage));
 	}
 	addOptions() {
 		var pageDiv = this.shadowRoot.querySelector('#perPage').parentNode;
