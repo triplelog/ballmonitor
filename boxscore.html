@@ -443,15 +443,7 @@
 			  background-image: -o-linear-gradient(top, #e0dd94, #c4bb61);
 			  background-image: linear-gradient(top, #e0dd94, #c4bb61);
 			}
-			#formData {
-			  max-width: 250px;
-			  margin: 0 auto;
-			  padding: 0 1rem;
-			  display: inline-block;
-			  border: 1px solid black;
-			  position: relative;
-			}
-			#formData .switch {
+			.switch {
 				display: block;
 				vertical-align: middle;
 			}
@@ -571,7 +563,7 @@
 					}
 
 		</style>
-		<div id="formData">
+
 			<label for="team1">Team 1 <input type="checkbox" id="home1" checked>Home</input><input type="checkbox" id="away1" checked>Away</input></label><input id="team1" type="text"/>
 			<label for="team2">Team 2 <input type="checkbox" id="home2" checked>Home</input><input type="checkbox" id="away2" checked>Away</input></label><input type="text" id="team2"/>
 			Date(s):<input type="text" id="dates"></input>
@@ -598,7 +590,7 @@
 			<!--Filter:<input type="radio" checked>Date</input><input type="radio"></input><select><option>Max</option><option>Sum</option><option>Countif</option><option>Min</option></select><input type="text"></input><br />-->
 			<button id="submitChg">Submit</button>
 			
-		</div>
+
 	</template>
 	<header style="border: 0px solid black; background: rgb(255,255,255); background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(102,204,204,1) 100%);">
 	  <a href="index.html" class="logo"><img src="img/logo.png" style="max-width: 150px; vertical-align:middle;"/></a>
@@ -609,7 +601,7 @@
 	  <a href="boxscore.html" class="button" style="background: rgba(245, 238, 236,0);">Games</a>
 	  
 	</header>
-	<div id="content">
+	<!--<div id="content">
 		
 		<div id="chgpage">
 			<tabdn-box style="display: block;" src="xl09p" autoload="true"></tabdn-box>
@@ -622,6 +614,19 @@
 			<box-score></box-score>
 		</div>
 		
+	</div>-->
+	<div id="content">
+		<div id="formData">
+			<tabdn-box style="display: block;" src="xl09p" autoload="true"></tabdn-box>
+		</div>
+		<div id="boxes">
+			
+			<button onmousedown="boxButtonClick(-1)">Prev</button>
+			<input type="range" onchange="skipPage()" id="rangePage" value="0" min="0" max="161"/>
+			<button onmousedown="boxButtonClick(1)">Next</button>
+			<box-score></box-score>
+			<box-score></box-score>
+		</div>
 	</div>
 	
 	  <script src="https://unpkg.com/popper.js@1"></script>
