@@ -40,6 +40,135 @@
   	#content #chgpage input{
   		width: 50%;
   	}
+  	.switch-label {
+	  margin: 0;
+	  padding: 0;
+	  border: 0;
+	  font-size: 100%;
+	  font: inherit;
+	  vertical-align: baseline;
+	}
+
+	.switch {
+	  position: relative;
+	  display: inline-block;
+	  height: 26px;
+	  width: 140px;
+	  margin: 5px auto;
+	  background: rgba(0, 0, 0, 0.25);
+	  border-radius: 3px;
+	  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+	  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+	}
+	.switch-three {
+	  width: 210px;
+	}
+
+	.switch-label {
+	  position: relative;
+	  z-index: 2;
+	  float: left;
+	  width: 68px;
+	  line-height: 26px;
+	  font-size: .8rem;
+	  color: rgba(255, 255, 255, 0.95);
+	  text-align: center;
+	  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.95);
+	  cursor: pointer;
+	}
+	.switch-label:active {
+	  font-weight: bold;
+	}
+
+	.switch-label-off {
+	  padding-left: 2px;
+	}
+
+	.switch-label-on {
+	  padding-right: 2px;
+	}
+
+	.switch-label-third {
+	  padding-right: 2px;
+	}
+
+	.switch-input {
+	  display: none;
+	}
+	.switch-input:checked + .switch-label {
+	  font-weight: bold;
+	  color: rgba(0, 0, 0, 0.65);
+	  text-shadow: 0 1px rgba(255, 255, 255, 0.25);
+	  -webkit-transition: 0.15s ease-out;
+	  -moz-transition: 0.15s ease-out;
+	  -ms-transition: 0.15s ease-out;
+	  -o-transition: 0.15s ease-out;
+	  transition: 0.15s ease-out;
+	  -webkit-transition-property: color, text-shadow;
+	  -moz-transition-property: color, text-shadow;
+	  -ms-transition-property: color, text-shadow;
+	  -o-transition-property: color, text-shadow;
+	  transition-property: color, text-shadow;
+	}
+	.switch-input:checked + .switch-label-on ~ .switch-selection {
+	  left: 70px;
+	  /* Note: left: 50%; doesn't transition in WebKit */
+	}
+	.switch-input:checked + .switch-label-third ~ .switch-selection {
+	  left: 140px;
+	  /* Note: left: 50%; doesn't transition in WebKit */
+	}
+
+	.switch-selection {
+	  position: absolute;
+	  z-index: 1;
+	  top: 2px;
+	  left: 2px;
+	  display: block;
+	  width: 68px;
+	  height: 22px;
+	  border-radius: 3px;
+	  background-color: #65bd63;
+	  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9dd993), color-stop(100%, #65bd63));
+	  background-image: -webkit-linear-gradient(top, #9dd993, #65bd63);
+	  background-image: -moz-linear-gradient(top, #9dd993, #65bd63);
+	  background-image: -ms-linear-gradient(top, #9dd993, #65bd63);
+	  background-image: -o-linear-gradient(top, #9dd993, #65bd63);
+	  background-image: linear-gradient(top, #9dd993, #65bd63);
+	  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px rgba(0, 0, 0, 0.2);
+	  box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px rgba(0, 0, 0, 0.2);
+	  -webkit-transition: left 0.15s ease-out;
+	  -moz-transition: left 0.15s ease-out;
+	  -ms-transition: left 0.15s ease-out;
+	  -o-transition: left 0.15s ease-out;
+	  transition: left 0.15s ease-out;
+	}
+	.switch-blue .switch-selection {
+	  background-color: #3aa2d0;
+	  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4fc9ee), color-stop(100%, #3aa2d0));
+	  background-image: -webkit-linear-gradient(top, #4fc9ee, #3aa2d0);
+	  background-image: -moz-linear-gradient(top, #4fc9ee, #3aa2d0);
+	  background-image: -ms-linear-gradient(top, #4fc9ee, #3aa2d0);
+	  background-image: -o-linear-gradient(top, #4fc9ee, #3aa2d0);
+	  background-image: linear-gradient(top, #4fc9ee, #3aa2d0);
+	}
+	.switch-yellow .switch-selection {
+	  background-color: #c4bb61;
+	  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e0dd94), color-stop(100%, #c4bb61));
+	  background-image: -webkit-linear-gradient(top, #e0dd94, #c4bb61);
+	  background-image: -moz-linear-gradient(top, #e0dd94, #c4bb61);
+	  background-image: -ms-linear-gradient(top, #e0dd94, #c4bb61);
+	  background-image: -o-linear-gradient(top, #e0dd94, #c4bb61);
+	  background-image: linear-gradient(top, #e0dd94, #c4bb61);
+	}
+	#formData {
+	  max-width: 250px;
+	  margin: 0 auto;
+	  padding: 0 1rem;
+	  display: inline-block;
+	  border: 1px solid black;
+	  position: relative;
+	}
   	
   </style>
     
@@ -193,10 +322,134 @@
 			#team1Dropdown, #team2Dropdown {
 				display: none;
 			}
+			.switch-label {
+			  margin: 0;
+			  padding: 0;
+			  border: 0;
+			  font-size: 100%;
+			  font: inherit;
+			  vertical-align: baseline;
+			}
+
+			.switch {
+			  position: relative;
+			  display: inline-block;
+			  height: 26px;
+			  width: 140px;
+			  margin: 5px auto;
+			  background: rgba(0, 0, 0, 0.25);
+			  border-radius: 3px;
+			  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+			  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+			}
+			.switch-three {
+			  width: 210px;
+			}
+
+			.switch-label {
+			  position: relative;
+			  z-index: 2;
+			  float: left;
+			  width: 68px;
+			  line-height: 26px;
+			  font-size: .8rem;
+			  color: rgba(255, 255, 255, 0.95);
+			  text-align: center;
+			  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.95);
+			  cursor: pointer;
+			}
+			.switch-label:active {
+			  font-weight: bold;
+			}
+
+			.switch-label-off {
+			  padding-left: 2px;
+			}
+
+			.switch-label-on {
+			  padding-right: 2px;
+			}
+
+			.switch-label-third {
+			  padding-right: 2px;
+			}
+
+			.switch-input {
+			  display: none;
+			}
+			.switch-input:checked + .switch-label {
+			  font-weight: bold;
+			  color: rgba(0, 0, 0, 0.65);
+			  text-shadow: 0 1px rgba(255, 255, 255, 0.25);
+			  -webkit-transition: 0.15s ease-out;
+			  -moz-transition: 0.15s ease-out;
+			  -ms-transition: 0.15s ease-out;
+			  -o-transition: 0.15s ease-out;
+			  transition: 0.15s ease-out;
+			  -webkit-transition-property: color, text-shadow;
+			  -moz-transition-property: color, text-shadow;
+			  -ms-transition-property: color, text-shadow;
+			  -o-transition-property: color, text-shadow;
+			  transition-property: color, text-shadow;
+			}
+			.switch-input:checked + .switch-label-on ~ .switch-selection {
+			  left: 70px;
+			  /* Note: left: 50%; doesn't transition in WebKit */
+			}
+			.switch-input:checked + .switch-label-third ~ .switch-selection {
+			  left: 140px;
+			  /* Note: left: 50%; doesn't transition in WebKit */
+			}
+
+			.switch-selection {
+			  position: absolute;
+			  z-index: 1;
+			  top: 2px;
+			  left: 2px;
+			  display: block;
+			  width: 68px;
+			  height: 22px;
+			  border-radius: 3px;
+			  background-color: #65bd63;
+			  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #9dd993), color-stop(100%, #65bd63));
+			  background-image: -webkit-linear-gradient(top, #9dd993, #65bd63);
+			  background-image: -moz-linear-gradient(top, #9dd993, #65bd63);
+			  background-image: -ms-linear-gradient(top, #9dd993, #65bd63);
+			  background-image: -o-linear-gradient(top, #9dd993, #65bd63);
+			  background-image: linear-gradient(top, #9dd993, #65bd63);
+			  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px rgba(0, 0, 0, 0.2);
+			  box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px rgba(0, 0, 0, 0.2);
+			  -webkit-transition: left 0.15s ease-out;
+			  -moz-transition: left 0.15s ease-out;
+			  -ms-transition: left 0.15s ease-out;
+			  -o-transition: left 0.15s ease-out;
+			  transition: left 0.15s ease-out;
+			}
+			.switch-blue .switch-selection {
+			  background-color: #3aa2d0;
+			  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4fc9ee), color-stop(100%, #3aa2d0));
+			  background-image: -webkit-linear-gradient(top, #4fc9ee, #3aa2d0);
+			  background-image: -moz-linear-gradient(top, #4fc9ee, #3aa2d0);
+			  background-image: -ms-linear-gradient(top, #4fc9ee, #3aa2d0);
+			  background-image: -o-linear-gradient(top, #4fc9ee, #3aa2d0);
+			  background-image: linear-gradient(top, #4fc9ee, #3aa2d0);
+			}
+			.switch-yellow .switch-selection {
+			  background-color: #c4bb61;
+			  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e0dd94), color-stop(100%, #c4bb61));
+			  background-image: -webkit-linear-gradient(top, #e0dd94, #c4bb61);
+			  background-image: -moz-linear-gradient(top, #e0dd94, #c4bb61);
+			  background-image: -ms-linear-gradient(top, #e0dd94, #c4bb61);
+			  background-image: -o-linear-gradient(top, #e0dd94, #c4bb61);
+			  background-image: linear-gradient(top, #e0dd94, #c4bb61);
+			}
 			#formData {
 			  max-width: 250px;
 			  margin: 0 auto;
 			  padding: 0 1rem;
+			  display: inline-block;
+			  border: 1px solid black;
+			  position: relative;
 			}
 			[type='text'], select, textarea {
 			  display: block;
@@ -318,10 +571,20 @@
 			<label for="team1">Team 1 <input type="checkbox" id="home1" checked>Home</input><input type="checkbox" id="away1" checked>Away</input></label><input id="team1" type="text"/>
 			<label for="team2">Team 2 <input type="checkbox" id="home2" checked>Home</input><input type="checkbox" id="away2" checked>Away</input></label><input type="text" id="team2"/>
 			Date(s):<input type="text" id="dates"></input>
-			Sort:<input type="radio" value="newest" id="newestSort" name="sort" checked>Newest</input><input type="radio" value="oldest" id="oldestSort" name="sort">Oldest</input><input type="radio" value="batter" id="batterSort" name="sort">B Stats</input><input type="radio" value="pitcher" id="pitcherSort" name="sort">P Stats</input>
+			Sort:
+			<div class="switch switch-three">
+			  <input type="radio" class="switch-input" name="sort" value="newest" id="newestSort" checked>
+			  <label for="newestSort" class="switch-label switch-label-off">Newest</label>
+			  <input type="radio" class="switch-input" name="sort" value="oldest" id="oldestSort">
+			  <label for="oldestSort" class="switch-label switch-label-on">Oldest</label>
+			  <input type="radio" class="switch-input" name="sort" value="batter" id="batterSort">
+			  <label for="batterSort" class="switch-label switch-label-third">Stats</label>
+			  <span class="switch-selection"></span>
+			</div>
 			<div id="customSort"><select id="sortType"><option value="sum">Sum</option><option value="count">Countif</option><option value="max">Max</option><option value="min">Min</option></select><input type="text" id="sortFormula"></input><select id="sortType"><option value="both">Both Teams</option><option value="team1" id="team1Dropdown" disabled="true">Team 1</option><option value="team2" id="team2Dropdown" disabled="true">Team 2</option><option value="either">Either Team</option><option value="home">Home Team</option><option value="away">Away Team</option></select></div>
 			<!--Filter:<input type="radio" checked>Date</input><input type="radio"></input><select><option>Max</option><option>Sum</option><option>Countif</option><option>Min</option></select><input type="text"></input><br />-->
 			<button id="submitChg">Submit</button>
+			
 		</div>
 	</template>
 	<header style="border: 0px solid black; background: rgb(255,255,255); background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(102,204,204,1) 100%);">
