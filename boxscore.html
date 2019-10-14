@@ -167,12 +167,17 @@
 	  background-image: linear-gradient(top, #e0dd94, #c4bb61);
 	}
 	#formData {
-	  max-width: 250px;
+	  width: 250px;
 	  margin: 0 auto;
 	  padding: 0 1rem;
 	  display: inline-block;
 	  border: 1px solid black;
 	  position: relative;
+	}
+	#scheduleSlider {
+		width: 100%;
+		border: 1px solid blue;
+		top:0px;
 	}
   	
   </style>
@@ -625,10 +630,11 @@
 			<tabdn-box style="display: block;" src="xl09p" autoload="true"></tabdn-box>
 		</div>
 		<div id="otherPart">
-			
-			<button onmousedown="boxButtonClick(-1)">Prev</button>
-			<input type="range" onchange="skipPage()" id="rangePage" value="0" min="0" max="161"/>
-			<button onmousedown="boxButtonClick(1)">Next</button>
+			<div id="scheduleSlider">
+				<button onmousedown="boxButtonClick(-1)">Prev</button>
+				<input type="range" onchange="skipPage()" id="rangePage" value="0" min="0" max="161"/>
+				<button onmousedown="boxButtonClick(1)">Next</button>
+			</div>
 			<div id="boxes">
 				<box-score></box-score>
 				<box-score></box-score>
