@@ -447,8 +447,7 @@ class TabDNBox extends TabDN {
 		this.shadowRoot.querySelector("#team2").addEventListener("input", e => {this.chgTeam()});
 		this.shadowRoot.querySelector("#team1").addEventListener("change", e => {this.chgTeam()});
 		this.shadowRoot.querySelector("#team2").addEventListener("change", e => {this.chgTeam()});
-		this.shadowRoot.querySelector("#batterSort").addEventListener("click", e => {this.chgSort(e)});
-		this.shadowRoot.querySelector("#pitcherSort").addEventListener("click", e => {this.chgSort(e)});
+		this.shadowRoot.querySelector("#statsSort").addEventListener("click", e => {this.chgSort(e)});
 		this.shadowRoot.querySelector("#oldestSort").addEventListener("click", e => {this.chgSort(e)});
 		this.shadowRoot.querySelector("#newestSort").addEventListener("click", e => {this.chgSort(e)});
 		var input1 = this.shadowRoot.querySelector("#team1");
@@ -462,7 +461,7 @@ class TabDNBox extends TabDN {
 	}
 	
 	chgSort(e) {
-		if (this.shadowRoot.querySelector('#batterSort').checked || this.shadowRoot.querySelector('#pitcherSort').checked){
+		if (this.shadowRoot.querySelector('#statsSort').checked){
 			this.shadowRoot.querySelector('#customSort').style.display = 'block';
 		}
 		else {
@@ -590,7 +589,7 @@ class TabDNBox extends TabDN {
 			jsonmessage = {'command':'switch','type':'main'};
 			this.ws.send(JSON.stringify(jsonmessage));
 		}
-		else if (sort == "custom"){
+		else if (sort == "stats"){
 			var sortType = this.shadowRoot.querySelector('#sortType');
 			var col = this.shadowRoot.querySelector('#sortFormula').value; 
 			if (sortType.value == 'max'){

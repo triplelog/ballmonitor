@@ -581,11 +581,20 @@
 			  <label for="newestSort" class="switch-label switch-label-off">Newest</label>
 			  <input type="radio" class="switch-input" name="sort" value="oldest" id="oldestSort">
 			  <label for="oldestSort" class="switch-label switch-label-on">Oldest</label>
-			  <input type="radio" class="switch-input" name="sort" value="batter" id="batterSort">
-			  <label for="batterSort" class="switch-label switch-label-third">Stats</label>
+			  <input type="radio" class="switch-input" name="sort" value="stats" id="statsSort">
+			  <label for="statsSort" class="switch-label switch-label-third">Stats</label>
 			  <span class="switch-selection"></span>
 			</div>
-			<div id="customSort"><select id="sortType"><option value="sum">Sum</option><option value="count">Countif</option><option value="max">Max</option><option value="min">Min</option></select><input type="text" id="sortFormula"></input><select id="sortType"><option value="both">Both Teams</option><option value="team1" id="team1Dropdown" disabled="true">Team 1</option><option value="team2" id="team2Dropdown" disabled="true">Team 2</option><option value="either">Either Team</option><option value="home">Home Team</option><option value="away">Away Team</option></select></div>
+			<div id="customSort">
+				<div class="switch">
+				  <input type="radio" class="switch-input" name="borp" value="batting" id="battingSort" checked>
+				  <label for="battingSort" class="switch-label switch-label-off">Batting</label>
+				  <input type="radio" class="switch-input" name="borp" value="pitching" id="pitchingSort">
+				  <label for="pitchingSort" class="switch-label switch-label-on">Pitching</label>
+				  <span class="switch-selection"></span>
+				</div>
+				<select id="sortType"><option value="sum">Sum</option><option value="count">Countif</option><option value="max">Max</option><option value="min">Min</option></select><input type="text" id="sortFormula"></input><select id="sortType"><option value="both">Both Teams</option><option value="team1" id="team1Dropdown" disabled="true">Team 1</option><option value="team2" id="team2Dropdown" disabled="true">Team 2</option><option value="either">Either Team</option><option value="home">Home Team</option><option value="away">Away Team</option></select>
+			</div>
 			<!--Filter:<input type="radio" checked>Date</input><input type="radio"></input><select><option>Max</option><option>Sum</option><option>Countif</option><option>Min</option></select><input type="text"></input><br />-->
 			<button id="submitChg">Submit</button>
 			
