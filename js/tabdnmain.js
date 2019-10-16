@@ -54,6 +54,7 @@ class TabDN extends HTMLElement {
 			}
 		}
 		else if (evt.data[0] == '['){
+			console.log(evt.data);
 			if (_this.showit) {
 				_this.addData(JSON.parse(evt.data));
 				var d = new Date();
