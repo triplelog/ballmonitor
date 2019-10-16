@@ -294,6 +294,11 @@ class TabDNStats extends TabDN {
 		
 		if (Object.keys(newColumns).length>0){
 			console.log(newColumns);
+			for (var i in newColumns) {
+				var colFormula = postfixify(newColumns[i],this.colInfo)+'@'+i;
+				var jsonmessage = {'command':'addcol','formula':colFormula};
+				this.ws.send(JSON.stringify(jsonmessage));
+			}
 		}
 		var tagstr = '1|2';
 		for (var i=0;i<tags.length;i++){
