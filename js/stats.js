@@ -365,7 +365,7 @@ class TabDNStats extends TabDN {
 				break;
 			}
 		}
-
+		console.log(JSON.stringify(this.colInfo));
 		var tbody = this.shadowRoot.querySelector('tbody');
 		var rows = tbody.querySelectorAll('tr');
 		for (var i=0;i<retmess.length-1;i++){
@@ -465,6 +465,7 @@ slider.setAttribute('min','1900');
 slider.setAttribute('max','2020');
 multirange(slider);
 
+//var colInfo = {"1":"pid","2":"game","3":"IPouts","4":"H","5":"BB","6":"R","7":"ER","8":"PC","9":"K","10":"HR","11":"1B","12":"2B","13":"3B","14":"WP","15":"HBP","16":"PA","17":"AB","18":"BK","19":"SH","20":"SF","21":"IBB","22":"team","23":"opp","24":"loc","25":"age","26":"bloc","27":"regpost","28":"date","-1":"Rk"};
 var colInfo = {"1":"pid","2":"game","3":"IPouts","4":"H","5":"BB","6":"R","7":"ER","8":"PC","9":"K","10":"HR","11":"1B","12":"2B","13":"3B","14":"WP","15":"HBP","16":"PA","17":"AB","18":"BK","19":"SH","20":"SF","21":"IBB","22":"team","23":"opp","24":"loc","25":"age","26":"bloc","27":"regpost","28":"date","-1":"Rk"};
 
 
