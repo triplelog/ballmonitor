@@ -9,12 +9,13 @@ class CareerStats extends HTMLElement {
 	
 	
 	
-	let template = document.getElementById('player');
+	let template = document.getElementById('career');
     let templateContent = template.content;
 
     const shadowRoot = this.attachShadow({mode: 'open'}).appendChild(templateContent.cloneNode(true));
 	this.displayStats = [];
   	
+  	/*
   	var ncbutton = this.shadowRoot.querySelector('#newcol');
   	this.tippyColumn = tippy(ncbutton, {
 	  content: 'Name:<input type="text" id="colName"/><br />Formula:<input type="text" id="colFormula"/><br />Format:<input type="text" id="colFormat" /><br /><button id="tippyColumnButton">Submit</button><button>Cancel</button>',
@@ -28,6 +29,7 @@ class CareerStats extends HTMLElement {
 	  },
 	  
 	});
+	*/
   	
   	
   	this.chgsrc();
