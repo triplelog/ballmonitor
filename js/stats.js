@@ -291,11 +291,18 @@ class TabDNStats extends TabDN {
 		console.log(tags);
 		console.log(filter);
 		console.log(toggles);
+		var tagstr = '1|2|';
+		for (var i=0;i<tags.length;i++){
+			tagstr += postfixify(tags[i],this.colInfo).split('@')[0].substring(1);
+		}
+
+		var jsonmessage = {'command':'display','column':tagstr,'location':'-4'};
+		_this.ws.send(JSON.stringify(jsonmessage));
 		if (filter.length>2){
 			var jsonmessage = {'command':'filter','formula':filter};
 			this.ws.send(JSON.stringify(jsonmessage));
 		}
-		var jsonmessage = {'command':'print','startrow':this.startRow,'endrow':this.endRow};
+		jsonmessage = {'command':'print','startrow':this.startRow,'endrow':this.endRow};
 		this.ws.send(JSON.stringify(jsonmessage));
 	}
 	addOptions() {
