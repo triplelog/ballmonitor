@@ -509,11 +509,9 @@ class BestGames extends HTMLElement {
 	var _this = this;
 	
 	
-	
-	let template = document.getElementById('game');
-    let templateContent = template.content;
 
-    const shadowRoot = this.attachShadow({mode: 'open'}).appendChild(templateContent.cloneNode(true));
+
+    const shadowRoot = this.attachShadow({mode: 'open'});
 	this.displayStats = [];  	
   	
   	this.chgsrc();
