@@ -148,7 +148,7 @@
   border: 1px solid black;
   position: relative;
 }
-[type='text'], #rangeHolder, select, textarea {
+[type='text'], select, textarea {
   display: block;
   padding: .5rem 0rem;
   background: transparent;
@@ -159,8 +159,12 @@
   border-radius: 4px;
   font-size: 0.95rem;
 }
-#rangeHolder {
+#formData .switch {
   border: 0px solid #cdcdcd;
+  display: block;
+  padding: .5rem 0rem;
+  background: transparent;
+  vertical-align: middle;
 }
 [type='range'] {
   width: 200px;
@@ -301,6 +305,10 @@
 	<div id="content">
 		<div id="formData">
 			
+			
+			<!--Years:<span id="rangeHolder"><input id="years" type="range" multiple value="1900,2020"/></span>-->
+			Player(s):<span class="icon-help"></span><input name='name' value='' />
+			Columns:<span class="icon-help"></span><input name='columns' value='R, ER' />
 			<div class="switch">
 			  <input type="radio" class="switch-input" name="borp" value="batting" id="batting" checked>
 			  <label for="batting" class="switch-label switch-label-off">Regular</label>
@@ -308,9 +316,6 @@
 			  <label for="pitching" class="switch-label switch-label-on">Post</label>
 			  <span class="switch-selection"></span>
 			</div>
-			<!--Years:<span id="rangeHolder"><input id="years" type="range" multiple value="1900,2020"/></span>-->
-			Player(s):<span class="icon-help"></span><input name='name' value='' />
-			Columns:<span class="icon-help"></span><input name='columns' value='R, ER' />
 			<!--Filter:<span class="icon-help"></span><input type="text" id="filter" placeholder="HR>=500..." oninput="validateFilter()"></input>-->
 			<button id="submitChg" onclick="submitOptions()">Submit</button>
 			<button id="hideOptions" onclick="hideOptions()">Hide</button>
