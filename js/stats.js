@@ -443,8 +443,8 @@ function onAddTag(e) {
 		e.detail.tag.querySelector('.tagify__tag-text').textContent = tagFormula.split(':')[0];
 		tagFormula = tagFormula.split(':')[1];
 	}
-	if (postfixify(tagFormula,colInfo,false)){
-		if (postfixify(tagFormula,colInfo,false).split('@')[1] == '#'){
+	if (postfixify(tagFormula,colInfoB,false)){
+		if (postfixify(tagFormula,colInfoB,false).split('@')[1] == '#'){
 			e.detail.tag.style.border = '0px';
 		}
 		else {
