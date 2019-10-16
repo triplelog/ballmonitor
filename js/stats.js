@@ -319,6 +319,7 @@ class TabDNStats extends TabDN {
 			}
 		}
 		
+		
 
 		
 	}
@@ -573,6 +574,7 @@ function submitOptions() {
 	//Submit
 	var tabdnStats = document.querySelector('tabdn-stats');
 	tabdnStats.sendOptions(tags,filter,toggles,newColumns);
+	newColumns = {};
 	
 	
 }
