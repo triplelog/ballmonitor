@@ -297,7 +297,7 @@ class TabDNStats extends TabDN {
 		}
 
 		var jsonmessage = {'command':'display','column':tagstr,'location':'-4'};
-		_this.ws.send(JSON.stringify(jsonmessage));
+		this.ws.send(JSON.stringify(jsonmessage));
 		if (filter.length>2){
 			var jsonmessage = {'command':'filter','formula':filter};
 			this.ws.send(JSON.stringify(jsonmessage));
