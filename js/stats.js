@@ -461,13 +461,16 @@ var drake = dragula([document.querySelector('.tagify')], {
 var slider = document.querySelector('#years');
 slider.setAttribute('value','1900,2020');
 slider.setAttribute('min','1900');
-
 slider.setAttribute('max','2020');
+slider.addEventListener('input',changeYear);
 multirange(slider);
 
 var colInfoP = {"1":"pid","2":"game","3":"IPouts","4":"H","5":"BB","6":"R","7":"ER","8":"PC","9":"K","10":"HR","11":"1B","12":"2B","13":"3B","14":"WP","15":"HBP","16":"PA","17":"AB","18":"BK","19":"SH","20":"SF","21":"IBB","22":"team","23":"opp","24":"loc","25":"age","26":"bloc","27":"regpost","28":"date"};
 var colInfoB = {"1":"playerID","2":"yearID","3":"stint","4":"teamID","5":"lgID","6":"G","7":"AB","8":"R","9":"H","10":"2B","11":"3B","12":"HR","13":"RBI","14":"SB","15":"CS","16":"BB","17":"SO","18":"IBB","19":"HBP","20":"SH","21":"SF","22":"GIDP"};
 
+function changeYear() {
+	console.log(slider.valueLow,slider.valueHigh);
+}
 
 function validateFilter() {
 	var filterFormula = document.querySelector('#filter').value;
@@ -497,11 +500,11 @@ function submitOptions() {
 	//Get Years
 	var filter = '';
 	if (parseInt(slider.valueLow) > 1900){
-		filter += '(YEAR>='+slider.valueLow+')';
+		filter += '(YEARID>='+slider.valueLow+')';
 	}
 	if (parseInt(slider.valueHigh) < 2020){
 		if (filter.length > 0){filter += ' AND ';}
-		filter += '(YEAR<='+slider.valueHigh+')';
+		filter += '(YEARID<='+slider.valueHigh+')';
 	}
 
 	//Get Filters
