@@ -291,9 +291,9 @@ class TabDNStats extends TabDN {
 		console.log(tags);
 		console.log(filter);
 		console.log(toggles);
-		var tagstr = '1|2|';
+		var tagstr = '1|2';
 		for (var i=0;i<tags.length;i++){
-			tagstr += postfixify(tags[i],this.colInfo).split('@')[0].substring(1);
+			tagstr += '|'+postfixify(tags[i],this.colInfo).split('@')[0].substring(1);
 		}
 
 		var jsonmessage = {'command':'display','column':tagstr,'location':'-4'};
