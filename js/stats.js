@@ -476,7 +476,7 @@ function validateFilter() {
 		document.querySelector('#filter').style.background = 'rgba(0,0,0,0)';
 		return;
 	}
-	if (postfixify(filterFormula,colInfo,false)){
+	if (postfixify(filterFormula,colInfoB,false)){
 		document.querySelector('#filter').style.background = 'rgba(0,255,0,.1)';
 	}
 	else {
@@ -510,7 +510,7 @@ function submitOptions() {
 		if (filter.length > 0){filter += ' AND ';}
 		filter += '(' + filterFormula + ')';
 	}
-	filter = postfixify(filter,colInfo)
+	filter = postfixify(filter,colInfoB)
 	//console.log(filter);
 	//Get Toggles
 	var toggles = [];
