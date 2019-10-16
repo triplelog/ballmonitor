@@ -302,7 +302,11 @@ class TabDNStats extends TabDN {
 		}
 		var tagstr = '1|2';
 		for (var i=0;i<tags.length;i++){
-			tagstr += '|'+postfixify(tags[i],this.colInfo).split('@')[0].substring(1);
+			var possCol = postfixify(tags[i],this.colInfo).split('@')[0].substring(1);
+			if (parseInt(possCol).toString() == possCol){
+				tagstr += '|'+possCol;
+			}
+			
 		}
 
 		var jsonmessage = {'command':'display','column':tagstr,'location':'-4'};
@@ -381,7 +385,7 @@ class TabDNStats extends TabDN {
 				break;
 			}
 		}
-		//console.log(JSON.stringify(this.colInfo));
+		console.log(JSON.stringify(this.colInfo));
 		var tbody = this.shadowRoot.querySelector('tbody');
 		var rows = tbody.querySelectorAll('tr');
 		for (var i=0;i<retmess.length-1;i++){
