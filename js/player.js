@@ -512,16 +512,42 @@ class BestGames extends HTMLElement {
 
 
     const shadowRoot = this.attachShadow({mode: 'open'});
-	this.displayStats = [];  	
+	this.defaultStats = {'HR':[[1,2,3],[3,4,5]]};  	
   	
-  	this.chgsrc();
+  	this.chgsrc(this.defaultStats);
   	
 	
 	
   }
   
-  chgsrc() {
-  	var table = document.createElement('table');
+  chgsrc(retmess) {
+  	var leaderDiv = this.shadowRoot;
+	leaderDiv.innerHTML = '';
+	for (var stat in retmess) {
+		var table = document.createElement('table');
+		var tr = document.createElement('tr');
+		var th = document.createElement('th');
+		th.setAttribute('colspan','2');
+		th.textContent = stat;
+		tr.appendChild(th);
+		table.appendChild(tr);
+		for (i=0;i<retmess[stat].length;i++){
+			tr = document.createElement('tr');
+			
+			var td = document.createElement('td');
+			td.textContent = retmess[stat][i][0];
+			tr.appendChild(td);
+			
+			td = document.createElement('td');
+			td.textContent = retmess[stat][i][1];
+			tr.appendChild(td);
+			
+			table.appendChild(tr);
+		}
+		
+		leaderDiv.appendChild(table);
+	}
+  	
   }
   
   
