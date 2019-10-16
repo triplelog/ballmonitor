@@ -98,7 +98,6 @@ class CareerStats extends HTMLElement {
   	}
   	this.sortInfo[x][2] = e.target.textContent;
   	this.stats(0);
-  	this.stats(this.currentYear);
   }
   stats(seasonYear=0) {
     var statarray = this.playerStats;
@@ -500,6 +499,39 @@ class GameStats extends HTMLElement {
 
 customElements.define('game-stats', GameStats);
 
+class BestGames extends HTMLElement {
+  
+
+  constructor() {
+    super();    
+    
+	
+	var _this = this;
+	
+	
+	
+	let template = document.getElementById('game');
+    let templateContent = template.content;
+
+    const shadowRoot = this.attachShadow({mode: 'open'}).appendChild(templateContent.cloneNode(true));
+	this.displayStats = [];  	
+  	
+  	this.chgsrc();
+  	
+	
+	
+  }
+  
+  chgsrc() {
+  	var table = document.createElement('table');
+  }
+  
+  
+	
+  
+}
+
+customElements.define('best-games', BestGames);
 /*
 class TabDNPlayer extends TabDN {
 
@@ -557,5 +589,7 @@ function setCareer(pid) {
 	var careerStats = document.querySelector('career-stats');
 	careerStats.setAttribute("src",pid+"battingstats");
 	careerStats.chgsrc();
+	
+	var bestGames = document.querySelector('best-games');
 }
 
