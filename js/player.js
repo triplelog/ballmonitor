@@ -255,6 +255,7 @@ class PlayerStats extends HTMLElement {
 
 customElements.define('player-stats', PlayerStats);
 
+/*
 class TabDNPlayer extends TabDN {
 
 	constructor() {
@@ -305,4 +306,4 @@ class TabDNPlayer extends TabDN {
 }
 
 customElements.define('tabdn-player', TabDNPlayer);
-
+*/
