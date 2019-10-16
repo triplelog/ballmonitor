@@ -449,7 +449,9 @@ function onAddTag(e) {
 		}
 		else {
 			e.detail.tag.style.border = '1px solid green';
-			newColumns[tagFormula] = tagFormula;
+			if (tagFormula == e.detail.data.value) {
+				newColumns[tagFormula] = tagFormula;
+			}
 		}
 	}
 	else {
