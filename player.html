@@ -180,7 +180,7 @@
 </head>
 
 <body>
-	<template id="player">
+	<template id="career">
 		<style>
 			#career-location, #season-location {
 				flex: 1;
@@ -314,12 +314,20 @@
 			  <span class="switch-selection"></span>
 			</div>
 			<!--Filter:<span class="icon-help"></span><input type="text" id="filter" placeholder="HR>=500..." oninput="validateFilter()"></input>-->
-			<button id="submitChg" onclick="submitOptions()">Submit</button>
+			<button id="submitChg" onclick="setCareer('aaroh101')">Submit</button>
 			<button id="hideOptions" onclick="hideOptions()">Hide</button>
 		</div>
 		<!--<tabdn-player style="display: inline-block;" src="xl09p" autoload="true"></tabdn-player>-->
+		<div id="careerDiv">
+			<career-stats></career-stats>
+		</div>
+		<div id="best-games">
 		
-		<player-stats></player-stats>
+		</div>
+		<div id="leaderboard-location">
+		
+		</div>
+		<!--<career-stats></career-stats>-->
 	</div>
 	  <script src="https://unpkg.com/popper.js@1"></script>
 	  <script src="https://unpkg.com/tippy.js@5"></script>

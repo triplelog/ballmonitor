@@ -1,4 +1,4 @@
-class PlayerStats extends HTMLElement {
+class CareerStats extends HTMLElement {
   
 
   constructor() {
@@ -253,7 +253,7 @@ class PlayerStats extends HTMLElement {
   
 }
 
-customElements.define('player-stats', PlayerStats);
+customElements.define('career-stats', CareerStats);
 
 /*
 class TabDNPlayer extends TabDN {
@@ -307,3 +307,10 @@ class TabDNPlayer extends TabDN {
 
 customElements.define('tabdn-player', TabDNPlayer);
 */
+
+function setCareer(pid) {
+	var careerStats = document.querySelector('career-stats');
+	careerStats.setAttribute("src",pid+"battingstats");
+	careerStats.chgsrc();
+}
+
