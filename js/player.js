@@ -531,7 +531,7 @@ class BestGames extends HTMLElement {
 		th.textContent = stat;
 		tr.appendChild(th);
 		table.appendChild(tr);
-		for (i=0;i<retmess[stat].length;i++){
+		for (var i=0;i<retmess[stat].length;i++){
 			tr = document.createElement('tr');
 			
 			var td = document.createElement('td');
