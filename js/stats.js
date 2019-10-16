@@ -292,7 +292,7 @@ class TabDNStats extends TabDN {
 		console.log(filter);
 		console.log(toggles);
 		
-		if (newColumns.length>0){
+		if (Object.keys(newColumns).length>0){
 			console.log(newColumns);
 		}
 		var tagstr = '1|2';
@@ -506,7 +506,11 @@ function submitOptions() {
 	var tags = [];
 	for (var i=0;i<tagNodes.length;i++){
 		if (tagNodes[i].tagName == 'TAG'){
-			tags.push(tagNodes[i].title);
+			var colTitle = tagNodes[i].title;
+			if (colTitle.indexOf(':')>-1){
+				colTitle = colTitle.split(':')[0];
+			}
+			tags.push(colTitle);
 		}
 	}
 	//console.log(tags)
