@@ -292,14 +292,6 @@ class TabDNStats extends TabDN {
 		console.log(filter);
 		console.log(toggles);
 		
-		if (Object.keys(newColumns).length>0){
-			console.log(newColumns);
-			for (var i in newColumns) {
-				var colFormula = postfixify(newColumns[i],this.colInfo)+'@'+i;
-				var jsonmessage = {'command':'addcol','formula':colFormula};
-				this.ws.send(JSON.stringify(jsonmessage));
-			}
-		}
 		var tagstr = '1|2';
 		for (var i=0;i<tags.length;i++){
 			var possCol = postfixify(tags[i],this.colInfo).split('@')[0].substring(1);
@@ -308,7 +300,6 @@ class TabDNStats extends TabDN {
 			}
 			
 		}
-
 		var jsonmessage = {'command':'display','column':tagstr,'location':'-4'};
 		this.ws.send(JSON.stringify(jsonmessage));
 		if (filter.length>2){
@@ -317,6 +308,19 @@ class TabDNStats extends TabDN {
 		}
 		jsonmessage = {'command':'print','startrow':this.startRow,'endrow':this.endRow};
 		this.ws.send(JSON.stringify(jsonmessage));
+		
+		
+		if (Object.keys(newColumns).length>0){
+			console.log(newColumns);
+			for (var i in newColumns) {
+				var colFormula = postfixify(newColumns[i],this.colInfo)+'@'+i;
+				var jsonmessage = {'command':'addcol','formula':colFormula};
+				this.ws.send(JSON.stringify(jsonmessage));
+			}
+		}
+		
+
+		
 	}
 	addOptions() {
 		var pageDiv = this.shadowRoot.querySelector('#perPage').parentNode;
@@ -385,7 +389,7 @@ class TabDNStats extends TabDN {
 				break;
 			}
 		}
-		console.log(JSON.stringify(this.colInfo));
+		//console.log(JSON.stringify(this.colInfo));
 		var tbody = this.shadowRoot.querySelector('tbody');
 		var rows = tbody.querySelectorAll('tr');
 		for (var i=0;i<retmess.length-1;i++){
