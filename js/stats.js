@@ -334,7 +334,7 @@ class TabDNStats extends TabDN {
 				}
 				else {
 					//pivotFormulas.push(postfixify(tags[i],this.colInfo));
-					pivotFormulas.push('c12_c9@##+');
+					pivotFormulas.push('HH:c12_c9@##+');
 				}
 			
 			}
