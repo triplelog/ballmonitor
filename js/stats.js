@@ -333,8 +333,10 @@ class TabDNStats extends TabDN {
 					else {pivotCols.push('s'+possCol);}
 				}
 				else {
-					//pivotFormulas.push(postfixify(tags[i],this.colInfo));
-					pivotFormulas.push('HH:c12_c9@##+');
+					var tagN = tags[i];
+					console.log(tagN);
+					pivotFormulas.push(tagN+':'+postfixify(allFormulas[tags[i]],this.colInfo));
+					//pivotFormulas.push('HH:c12_c9@##+');
 				}
 			
 			}
@@ -475,12 +477,14 @@ var tagify = new Tagify(input);
 tagify.on('add', onAddTag).on('click', onTagClick).on('edit', onAddTag);
 
 var newColumns = {};
+var allFormulas = {};
 function onAddTag(e) {
 
 	var tagFormula = e.detail.data.value;
 	//Validate Filter by postfixifying
 	if (tagFormula.indexOf(':')>-1){
 		newColumns[tagFormula.split(':')[0]] = tagFormula.split(':')[1];
+		allFormulas[tagFormula.split(':')[0]] = tagFormula.split(':')[1];
 		e.detail.tag.querySelector('.tagify__tag-text').textContent = tagFormula.split(':')[0];
 		tagFormula = tagFormula.split(':')[1];
 	}
@@ -492,6 +496,7 @@ function onAddTag(e) {
 			e.detail.tag.style.border = '1px solid green';
 			if (tagFormula == e.detail.data.value) {
 				newColumns[tagFormula] = tagFormula;
+				allFormulas[tagFormula] = tagFormula;
 			}
 		}
 	}
