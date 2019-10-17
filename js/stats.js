@@ -292,33 +292,59 @@ class TabDNStats extends TabDN {
 		console.log(filter);
 		console.log(toggles);
 		
-		var tagstr = '1|2';
-		for (var i=0;i<tags.length;i++){
-			var possCol = postfixify(tags[i],this.colInfo).split('@')[0].substring(1);
-			if (parseInt(possCol).toString() == possCol){
-				tagstr += '|'+possCol;
-			}
+		if (toggles[1]=='season'){
+			var tagstr = '1|2';
+			for (var i=0;i<tags.length;i++){
+				var possCol = postfixify(tags[i],this.colInfo).split('@')[0].substring(1);
+				if (parseInt(possCol).toString() == possCol){
+					tagstr += '|'+possCol;
+				}
 			
-		}
-		var jsonmessage = {'command':'display','column':tagstr,'location':'-4'};
-		this.ws.send(JSON.stringify(jsonmessage));
-		if (filter.length>2){
-			var jsonmessage = {'command':'filter','formula':filter};
+			}
+		
+			var jsonmessage = {'command':'display','column':tagstr,'location':'-4'};
 			this.ws.send(JSON.stringify(jsonmessage));
-		}
-		jsonmessage = {'command':'print','startrow':this.startRow,'endrow':this.endRow};
-		this.ws.send(JSON.stringify(jsonmessage));
-		
-		
-		if (Object.keys(newColumns).length>0){
-			console.log(newColumns);
-			for (var i in newColumns) {
-				var colFormula = postfixify(newColumns[i],this.colInfo)+'@'+i;
-				var jsonmessage = {'command':'addcol','formula':colFormula};
+			if (filter.length>2){
+				var jsonmessage = {'command':'filter','formula':filter};
 				this.ws.send(JSON.stringify(jsonmessage));
 			}
-		}
+			jsonmessage = {'command':'print','startrow':this.startRow,'endrow':this.endRow};
+			this.ws.send(JSON.stringify(jsonmessage));
 		
+		
+			if (Object.keys(newColumns).length>0){
+				console.log(newColumns);
+				for (var i in newColumns) {
+					var colFormula = postfixify(newColumns[i],this.colInfo)+'@'+i;
+					var jsonmessage = {'command':'addcol','formula':colFormula};
+					this.ws.send(JSON.stringify(jsonmessage));
+				}
+			}
+		}
+		else {
+			var pivotCols = [];
+			var pivotFormulas = [];
+			var sortCol = 's';
+			for (var i=0;i<tags.length;i++){
+				var possCol = postfixify(tags[i],this.colInfo).split('@')[0].substring(1);
+				if (parseInt(possCol).toString() == possCol){
+					
+					if (sortCol == 's'){sortCol += possCol;}
+					else {pivotCols.push('s'+possCol);}
+				}
+				else {
+					pivotFormulas.push(postfixify(tags[i],this.colInfo));
+				}
+			
+			}
+
+			var jsonmessage = {'command':'pivot','pivotcol':1,'sort':sortCol, 'columns':pivotCols, 'formulas':pivotFormulas};
+			this.ws.send(JSON.stringify(jsonmessage));
+			jsonmessage = {'command':'switch','type':'pivot@0'};
+			this.ws.send(JSON.stringify(jsonmessage));
+			jsonmessage = {'command':'print'};
+			this.ws.send(JSON.stringify(jsonmessage));
+		}
 		
 
 		
