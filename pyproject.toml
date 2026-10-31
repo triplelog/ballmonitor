@@ -16,10 +16,11 @@ data = [  # `ballmonitor fetch` plus the models that run on numpy/pandas/parquet
   "scipy>=1.11",  # ncaaf_recruiting's Plackett-Luce fit
   "pypdf>=4",  # ranked_choice: PHWA (NHL) ballot PDFs
   "scikit-learn>=1.5",  # bvp_similarity (StandardScaler, nearest neighbours)
+  "beautifulsoup4>=4",  # race_podium: model.py imports its results-page parser
 ]
 ml = ["lightgbm>=4.5"]
 ingest = [  # one-off data ingest scripts (and their tests); not needed to run models or build the site
-  "requests>=2", "beautifulsoup4>=4",  # race_podium/ingest.py, ncaaf_recruiting/ingest_class.py, triple_play places
+  "requests>=2",  # ncaaf_recruiting/ingest_class.py, triple_play places
   "sportsdataverse>=0.0.39",  # ncaaf_recruiting 247Sports/On3 scrapers
   "rdata>=0.11",  # triple_play build: CRAN Lahman .rda files
 ]
