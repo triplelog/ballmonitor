@@ -21,6 +21,10 @@ on:
     paths:
       - 'ballmonitor/models/**'
       - 'ballmonitor/web/**'
+      - 'ballmonitor/core/**'
+      - 'ballmonitor/games/**'
+      - 'ballmonitor/new27K/**'
+      - 'pyproject.toml'
       - '.github/workflows/daily-build.yml'
 
 # Permissions for deploying to GitHub Pages
