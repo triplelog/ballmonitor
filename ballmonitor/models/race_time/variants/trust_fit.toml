@@ -1,0 +1,8 @@
+# Aggressive trust in runner's personal multi-race slope (curve method)
+[meta]
+description = "Curve method (v0.4.0) trusting the runner's observed speed-endurance slope with minimal shrinkage toward the prior."
+
+[params]
+method = "curve"
+fit_weight = 0.95
+shrinkage_prior_strength = 0.5

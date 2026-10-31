@@ -1,0 +1,582 @@
+[meta]
+title = "College football game replay"
+version = "0.4.0"
+status = "draft"  # stub | draft | calibrated
+question = "How should a finished college football game be paced into a ~60-second replay, and which plays swung ESPN's win probability most?"
+description = """
+Reads a finished game's play-by-play and ESPN's win probability from ESPN's public summary
+API, measures each play's swing in the home team's win probability, and turns the game into
+a timed timeline for a short vertical replay video. By default (structure = "sections") the
+game is cut into ~10 sections at the peaks and valleys of the win-probability curve; each
+section gets a title and a one-to-two sentence summary written from the play text, its key
+plays (every score, plus turnovers and big plays) are held on screen and the rest flash by.
+structure = "plays" keeps the v0.2.0 per-play pacing with quiet drives collapsed.
+"""
+assumptions = [
+  "Win probability is ESPN's own in-game model, taken as published; this model does not estimate it.",
+  "A play's swing is ESPN home win probability after the play minus after the previous play (pregame WP before the first).",
+  "Timeouts and period-end markers are dropped; any WP change on them is folded into the previous play.",
+  "Chart (default): every score gets a card, then the biggest swings; the vertical axis is warped (busy stretches stretched, quiet ones squeezed), so it is not proportional to game time.",
+  "structure = sections: boundaries sit at WP peaks/valleys confirmed by a reversal of section_min_reversal, nudged to just after a score, turnover or drive change; long one-way stretches are split at their biggest swing or score.",
+  "Section titles and summaries are generated from ESPN's play text with fixed patterns (no AI); unusual play text falls back to the play type.",
+  "structure = plays only: a quiet drive (no highlight, every play's |swing| below drive_collapse_max_swing) is shown as one quick event summarising the drive.",
+  "Plays with no published WP keep the previous value (zero swing). ESPN WP glitches pass through.",
+  "Scores change only on ESPN scoring plays (other plays' running score is unreliable) and carry forward.",
+  "ESPN's site API is public but unofficial and can change without notice; personal use only.",
+]
+
+# ------------------------------------------------------------------ structure
+
+[params.structure]
+value = "chart"
+description = "How the game is shown: 'chart' = vertical WP chart down the left, annotated plays revealed one at a time on the right, time axis warped around them (v0.4.0); 'sections' = ~n_sections WP sections with titles/summaries (v0.3.0); 'plays' = every play paced on its own, quiet drives collapsed (v0.2.0)."
+source = "Judgement (user request, v0.4.0); variants chapters (sections) and plays_only keep the earlier layouts."
+choices = ["chart", "sections", "plays"]
+
+# ------------------------------------------------------------------ video timeline
+
+[params.duration_sec]
+value = 60.0
+description = "Total video length: intro + plays + outro. The `duration_sec` input overrides it."
+unit = "s"
+source = "Judgement (user choice, v0.2.0): 60 s default; the short_cut variant gives 30 s."
+range = [5.0, 180.0]
+
+[params.intro_sec]
+value = 1.5
+description = "Opening card (teams, records, pregame win probability) before the first play."
+unit = "s"
+source = "Judgement."
+range = [0.0, 10.0]
+
+[params.outro_sec]
+value = 2.5
+description = "Closing card (final score, win-probability chart) after the last play."
+unit = "s"
+source = "Judgement."
+range = [0.0, 10.0]
+
+[params.fps]
+value = 30
+description = "Frames per second the renderer should use (passed through in extras.timeline)."
+unit = "fps"
+source = "Judgement: standard short-video frame rate."
+range = [12, 60]
+
+[params.width]
+value = 1080
+description = "Video width in pixels (vertical 9:16)."
+unit = "px"
+source = "Judgement: YouTube Shorts / Reels resolution."
+range = [360, 2160]
+
+[params.height]
+value = 1920
+description = "Video height in pixels (vertical 9:16)."
+unit = "px"
+source = "Judgement: YouTube Shorts / Reels resolution."
+range = [640, 3840]
+
+# ------------------------------------------------------------------ pacing
+
+[params.min_play_sec]
+value = 0.08
+description = "Floor: every kept play is on screen at least this long (1.5 frames at 30 fps)."
+unit = "s"
+source = "Judgement: ~190 plays x 0.05 s ~ 9.5 s of 'flash-by' leaves ~16 s for the big plays."
+range = [0.0, 2.0]
+
+[params.max_play_sec]
+value = 5.0
+description = "Cap: no single play is held longer than this."
+unit = "s"
+source = "Judgement."
+range = [0.1, 20.0]
+
+[params.base_weight]
+value = 0.0
+description = "Weight every play gets regardless of swing (raise it to give ordinary plays more than the floor)."
+source = "Judgement."
+range = [0.0, 10.0]
+
+[params.swing_k]
+value = 10.0
+description = "Weight per unit of |swing|^swing_power."
+source = "Judgement: tuned by eye on the three bundled games."
+range = [0.0, 1000.0]
+
+[params.swing_power]
+value = 2.0
+description = "Exponent on |swing|; above 1 concentrates time on the very biggest swings."
+source = "Judgement: tuned by eye on the three bundled games."
+range = [0.1, 4.0]
+
+[params.scoring_bonus]
+value = 0.15
+description = "Extra weight for a scoring play (so touchdowns in a blowout still register)."
+source = "Judgement."
+range = [0.0, 10.0]
+
+[params.turnover_bonus]
+value = 0.1
+description = "Extra weight for a turnover (interception, lost fumble, downs, blocked kick)."
+source = "Judgement."
+range = [0.0, 10.0]
+
+[params.highlight_bonus]
+value = 3.0
+description = "Extra weight for a highlight play, so the highlights are the plays held longest."
+source = "Judgement."
+range = [0.0, 20.0]
+
+[params.highlight_count]
+value = 10
+description = "Maximum number of highlight plays (the largest |swing| plays)."
+source = "Judgement: 5-8 held plays read well in 30 s."
+range = [0, 20]
+
+[params.highlight_min_swing]
+value = 0.01
+description = "A play must swing home WP by at least this much to be a highlight."
+source = "Judgement: low enough that even a blowout gets highlights."
+range = [0.0, 1.0]
+
+[params.big_play_swing]
+value = 0.10
+description = "Non-scoring, non-turnover plays with |swing| at least this get the headline BIG PLAY."
+source = "Judgement."
+range = [0.0, 1.0]
+
+[params.drop_types]
+value = ["Timeout", "End", "Official", "Two minute"]
+description = "Non-plays: an ESPN play type starting with one of these (case-insensitive, hyphens read as spaces) is dropped from the timeline; its WP change is folded into the previous play. Covers Timeout, End Period, End of Half/Regulation/Game, Official Timeout, Two-minute warning."
+source = "ESPN play type texts seen in 2026 summaries."
+
+[params.short_text_chars]
+value = 90
+description = "Maximum length of a play's cleaned short_text."
+unit = "chars"
+source = "Judgement: fits two lines on a 1080-px-wide card."
+range = [30, 200]
+
+# ------------------------------------------------------------------ data
+
+[params.allow_network]
+value = true
+description = "Download games that are not bundled or cached (ESPN public API)."
+source = "Judgement."
+
+[params.fetch_timeout_sec]
+value = 20.0
+description = "Network timeout for ESPN requests."
+unit = "s"
+source = "Judgement."
+range = [1.0, 120.0]
+
+[params.fallback_color]
+value = "#444444"
+description = "Team color used when ESPN gives none."
+source = "Judgement."
+
+[params.fallback_alt_color]
+value = "#dddddd"
+description = "Team alternate color used when ESPN gives none."
+source = "Judgement."
+
+[params.unranked_rank]
+value = 99
+description = "ESPN encodes 'unranked' as this rank (or higher); reported as null."
+source = "ESPN scoreboard/summary convention (curatedRank 99)."
+range = [26, 1000]
+
+# ------------------------------------------------------------------ formulas
+
+[params.drive_collapse_max_swing]
+value = 0.10
+description = "A drive is collapsed into one event when it has no highlight and every play's |swing| is below this (0 = never collapse)."
+unit = "WP"
+source = "Judgement (v0.2.0): same line as big_play_swing, so a drive with no BIG PLAY-sized swing is one event."
+range = [0.0, 1.0]
+
+[params.drive_collapse_min_plays]
+value = 2
+description = "Only drives with at least this many plays are collapsed (single-play drives stay as plays)."
+source = "Judgement (v0.2.0)."
+range = [1, 20]
+
+[params.min_drive_sec]
+value = 0.6
+description = "Screen-time floor for a collapsed drive: long enough to read the one-line summary."
+unit = "s"
+source = "Judgement (v0.2.0): readable at a glance."
+range = [0.05, 5.0]
+
+[params.drive_base]
+value = 0.0
+description = "Base weight of a collapsed drive in formula drive_weight (0 = drives sit at their floor unless they moved WP)."
+source = "Judgement (v0.2.0)."
+range = [0.0, 5.0]
+
+[formulas.drive_weight]
+expr = "drive_base + swing_k * abs_swing ** swing_power + scoring_bonus * scoring + turnover_bonus * turnover"
+description = "Relative screen time of a collapsed drive (abs_swing = the drive's net swing), clamped to [min_drive_sec, max_play_sec]."
+variables = ["abs_swing", "scoring", "turnover", "n_plays"]
+
+[formulas.play_weight]
+expr = "base_weight + swing_k * abs_swing ** swing_power + scoring_bonus * scoring + turnover_bonus * turnover + highlight_bonus * highlight"
+description = "Relative screen time of a play before scaling to the body length and clamping to [min_play_sec, max_play_sec]. scoring/turnover/highlight are 0 or 1."
+variables = ["abs_swing", "scoring", "turnover", "highlight"]
+
+# ------------------------------------------------------------------ sections: segmentation (structure = sections)
+
+[params.n_sections]
+value = 10
+description = "Target number of sections. Pivots beyond it raise the reversal threshold; fewer are topped up by splitting. Can end higher only when a section has more than section_max_scores scores."
+source = "Judgement (user request, v0.3.0): about 10 sections in 60 s."
+range = [1, 30]
+
+[params.section_min_reversal]
+value = 0.08
+description = "A WP peak or valley (WP sampled at allowed boundaries: new drive, after a score/turnover) becomes a section boundary once home WP has reversed from it by at least this much."
+unit = "WP"
+source = "Judgement (v0.3.0): tuned by eye on the three bundled games; below the BIG PLAY line (0.10) so two-score runs separate."
+range = [0.005, 1.0]
+
+[params.section_reversal_growth]
+value = 1.15
+description = "When the zig-zag finds more than n_sections - 1 pivots, the reversal threshold is multiplied by this until it does not."
+source = "Judgement (v0.3.0)."
+range = [1.01, 3.0]
+
+[params.min_section_plays]
+value = 3
+description = "A split never leaves fewer plays than this on either side (zig-zag sections may be shorter)."
+unit = "plays"
+source = "Judgement (v0.3.0)."
+range = [1, 30]
+
+[params.section_max_scores]
+value = 3
+description = "A section with more scoring plays than this is split between scores (keeps summaries short; key_plays holds at most 4)."
+source = "Judgement (v0.3.0): three scores fit one 180-character summary."
+range = [1, 4]
+
+[params.split_length_k]
+value = 0.6
+description = "In formula split_priority: weight of a section's share of all plays (long sections get split first)."
+source = "Judgement (v0.3.0)."
+range = [0.0, 10.0]
+
+[params.split_scores_k]
+value = 0.05
+description = "In formula split_priority: weight per scoring play in the section."
+source = "Judgement (v0.3.0)."
+range = [0.0, 10.0]
+
+[params.split_boundary_k]
+value = 0.04
+description = "In formula split_score: weight of the boundary_pref of a split point, against the |swing| of the play just before it."
+source = "Judgement (v0.3.0): a score outranks a non-scoring swing up to ~0.12."
+range = [0.0, 10.0]
+
+[formulas.boundary_pref]
+expr = "3 * scoring + 2 * turnover + new_drive"
+description = "How good a section boundary is, judged on the play before it: right after a score (3), a turnover (2), or where a new ESPN drive starts (1). Variables are 0 or 1."
+variables = ["scoring", "turnover", "new_drive"]
+
+[formulas.split_priority]
+expr = "abs_swing + split_length_k * n_plays / total_plays + split_scores_k * n_scores"
+description = "Which section to split next (highest first): its net |swing|, share of plays and number of scores."
+variables = ["abs_swing", "n_plays", "total_plays", "n_scores"]
+
+[formulas.split_score]
+expr = "abs_swing + split_boundary_k * pref"
+description = "Where to split a section: after the play with the largest |swing|, preferring spots right after a score / turnover / at a new drive (pref = boundary_pref)."
+variables = ["abs_swing", "pref"]
+
+# ------------------------------------------------------------------ sections: key plays and text
+
+[params.section_highlight_count]
+value = 4
+description = "structure = sections: number of highlight plays (largest |swing|, at least highlight_min_swing); the renderer gives them a full card. (highlight_count is used by structure = plays.)"
+source = "Judgement (user request, v0.3.0)."
+range = [0, 10]
+
+[params.section_key_plays]
+value = 3
+description = "Key plays per section (held on screen): every scoring play, then highlights, then other notable plays up to this many. Scoring plays and highlights may exceed it up to the hard cap of 4."
+source = "Judgement (user request, v0.3.0): about 3 key plays."
+range = [1, 4]
+
+[params.key_turnover_bonus]
+value = 0.10
+description = "In formula key_weight: bonus for a turnover (interception, lost fumble, downs, blocked/missed kick)."
+source = "Judgement (v0.3.0): enough to make every turnover notable."
+range = [0.0, 1.0]
+
+[params.key_kick_bonus]
+value = 0.05
+description = "In formula key_weight: extra bonus for a blocked or missed field goal / blocked punt."
+source = "Judgement (v0.3.0)."
+range = [0.0, 1.0]
+
+[params.key_long_bonus]
+value = 0.06
+description = "In formula key_weight: bonus for a pass or run gaining at least long_play_yards."
+source = "Judgement (v0.3.0)."
+range = [0.0, 1.0]
+
+[params.long_play_yards]
+value = 25
+description = "A pass or run gaining at least this many yards is a 'long play'."
+unit = "yards"
+source = "Judgement (v0.3.0): a common 'explosive play' cut-off is 20+ yards passing, 10-15+ rushing; 25 keeps only the big ones."
+range = [5, 99]
+
+[params.key_min_weight]
+value = 0.06
+description = "A non-scoring play needs key_weight at least this to be a key play (and named in the summary)."
+source = "Judgement (v0.3.0)."
+range = [0.0, 1.0]
+
+[formulas.key_weight]
+expr = "abs_swing + key_turnover_bonus * turnover + key_kick_bonus * kick + key_long_bonus * long_play"
+description = "How notable a non-scoring play is (ranks key plays and the moments named in the summary). turnover/kick/long_play are 0 or 1."
+variables = ["abs_swing", "turnover", "kick", "long_play"]
+
+[params.summary_max_chars]
+value = 180
+description = "Maximum length of a section summary; longer drafts drop player names, use abbreviations, then drop non-scoring moments (scores are always named)."
+unit = "chars"
+source = "Judgement (user request, v0.3.0)."
+range = [80, 400]
+
+[params.section_title_chars]
+value = 40
+description = "Maximum length of a section title (team abbreviations are used if the short name does not fit)."
+unit = "chars"
+source = "Judgement (user request, v0.3.0)."
+range = [20, 80]
+
+[params.section_note_chars]
+value = 71
+description = "Text report only: the 'Sections' outcome notes are the summary cut to this length (one line in 78 columns); the full summary is in the steps and extras."
+unit = "chars"
+source = "Judgement: 78 columns minus the 7-character note indent."
+range = [20, 400]
+
+[params.quiet_deep_yards]
+value = 35
+description = "A section with no score or notable play mentions the deepest drive if it reached within this many yards of the end zone."
+unit = "yards"
+source = "Judgement (v0.3.0)."
+range = [0, 99]
+
+[params.section_end_deep_yards]
+value = 20
+description = "A section that ends mid-drive this close to the end zone says so in its summary ('Syracuse drives to the UNC 3')."
+unit = "yards"
+source = "Judgement (v0.3.0): the red zone."
+range = [0, 99]
+
+[params.title_momentum_swing]
+value = 0.15
+description = "A section whose net |swing| is at least this toward a team that did not score in it is titled after that team's turnover / deep drive / momentum, not the other team's score."
+unit = "WP"
+source = "Judgement (v0.3.0)."
+range = [0.0, 1.0]
+
+[params.title_close_wp]
+value = 0.85
+description = "The last section is titled 'X holds on' / 'X seals it' only if the winner's WP at its start was at most this (the game was still in doubt)."
+unit = "WP"
+source = "Judgement (v0.3.0)."
+range = [0.5, 1.0]
+
+[params.late_game_sec]
+value = 300
+description = "'Late' = 4th quarter with at most this much game clock left, or overtime (used by titles and the section_late_bonus)."
+unit = "s"
+source = "Judgement (v0.3.0)."
+range = [0, 900]
+
+# ------------------------------------------------------------------ sections: timing
+
+[params.min_section_sec]
+value = 3.0
+description = "Screen-time floor per section (raised automatically if its plays need more: title + min_play_sec per other play + key_min_sec per key play)."
+unit = "s"
+source = "Judgement (v0.3.0): enough to read a title and see one held play."
+range = [0.5, 30.0]
+
+[params.max_section_sec]
+value = 9.0
+description = "Screen-time cap per section (raised to the largest floor if needed)."
+unit = "s"
+source = "Judgement (v0.3.0)."
+range = [1.0, 60.0]
+
+[params.section_title_sec]
+value = 0.6
+description = "Lead-in at the start of each section (added to its first play) while the renderer shows the section title and summary."
+unit = "s"
+source = "Judgement (user request, v0.3.0)."
+range = [0.0, 5.0]
+
+[params.section_base]
+value = 1.0
+description = "In formula section_weight: weight every section gets."
+source = "Judgement (v0.3.0)."
+range = [0.0, 10.0]
+
+[params.section_swing_k]
+value = 3.0
+description = "In formula section_weight: weight per unit of the section's net |swing|."
+source = "Judgement (v0.3.0): tuned by eye on the bundled games."
+range = [0.0, 50.0]
+
+[params.section_score_bonus]
+value = 0.4
+description = "In formula section_weight: weight per scoring play, so every score gets room."
+source = "Judgement (v0.3.0)."
+range = [0.0, 10.0]
+
+[params.section_play_k]
+value = 0.03
+description = "In formula section_weight: weight per play, so long sections (whose ordinary plays each need min_play_sec) keep time for their key plays."
+source = "Judgement (v0.3.0): ~min_play_sec / scale."
+range = [0.0, 1.0]
+
+[params.section_late_bonus]
+value = 0.3
+description = "In formula section_weight: extra weight for a section ending late (see late_game_sec)."
+source = "Judgement (v0.3.0)."
+range = [0.0, 10.0]
+
+[formulas.section_weight]
+expr = "section_base + section_swing_k * abs_swing + section_score_bonus * n_scores + section_play_k * n_plays + section_late_bonus * late"
+description = "Relative screen time of a section before scaling to the body and clamping to [floor, max_section_sec]. late is 0 or 1."
+variables = ["abs_swing", "n_scores", "n_plays", "late"]
+
+[params.section_rest_share]
+value = 0.25
+description = "Share of a section's time (after the title lead-in) for its non-key plays, each clamped to [min_play_sec, rest_play_max_sec]."
+source = "Judgement (v0.3.0)."
+range = [0.0, 0.9]
+
+[params.rest_play_max_sec]
+value = 0.3
+description = "Cap per non-key play inside a section (so ordinary plays never look held)."
+unit = "s"
+source = "Judgement (v0.3.0)."
+range = [0.01, 2.0]
+
+[params.key_min_sec]
+value = 0.6
+description = "Floor per key play inside a section."
+unit = "s"
+source = "Judgement (v0.3.0): long enough to read a score card."
+range = [0.05, 5.0]
+
+[params.hold_swing_k]
+value = 4.0
+description = "In formula key_hold_weight: weight per unit of the key play's |swing|."
+source = "Judgement (v0.3.0)."
+range = [0.0, 50.0]
+
+[params.hold_score_bonus]
+value = 1.0
+description = "In formula key_hold_weight: bonus for a scoring play (every score is emphasised)."
+source = "Judgement (v0.3.0)."
+range = [0.0, 10.0]
+
+[params.hold_highlight_bonus]
+value = 1.0
+description = "In formula key_hold_weight: bonus for a highlight play (shown with a full card)."
+source = "Judgement (v0.3.0)."
+range = [0.0, 10.0]
+
+[formulas.key_hold_weight]
+expr = "1 + hold_swing_k * abs_swing + hold_score_bonus * scoring + hold_highlight_bonus * highlight"
+description = "How a section's key plays split its held time (floor key_min_sec). scoring/highlight are 0 or 1."
+variables = ["abs_swing", "scoring", "highlight"]
+
+# ------------------------------------------------------------------ structure = chart (v0.4.0)
+
+[params.chart_cards]
+value = 14
+description = "structure = chart: number of annotated plays (cards). Every scoring play first (the most important ones if there are more scores than cards), then the most important other plays."
+source = "Judgement (v0.4.0): ~14 two-line cards fill a 1080x1920 frame without crowding."
+range = [1, 24]
+
+[params.chart_min_swing]
+value = 0.03
+description = "structure = chart: a non-scoring play needs at least this |swing| to get a card."
+source = "Judgement (v0.4.0): below ~3 points of WP a play is noise; a blowout shows fewer cards rather than filler."
+range = [0.0, 1.0]
+
+[params.chart_score_bonus]
+value = 0.05
+description = "structure = chart: importance added to a scoring play (formula chart_importance)."
+source = "Judgement (v0.4.0): scores already always get a card; this gives them a longer pause and a better chance at a large card."
+range = [0.0, 1.0]
+
+[params.chart_large_cards]
+value = 4
+description = "structure = chart: the most important cards get a large card (more room on the chart and on the right)."
+source = "Judgement (v0.4.0)."
+range = [0, 24]
+
+[params.chart_large_units]
+value = 1.7
+description = "structure = chart: vertical room of a large card, relative to a normal card (1)."
+source = "Judgement (v0.4.0)."
+range = [1.0, 4.0]
+
+[params.chart_margin_units]
+value = 0.35
+description = "structure = chart: room above the first card and below the last, in card units; the plays before the first card and after the last are squeezed into it."
+source = "Judgement (v0.4.0)."
+range = [0.0, 3.0]
+
+[params.chart_reveal_k]
+value = 6.0
+description = "structure = chart: extra pause per unit of importance (formula chart_reveal_weight)."
+source = "Judgement (v0.4.0): a 0.25 swing gets about 2.5x the pause of a quiet card."
+range = [0.0, 50.0]
+
+[params.chart_large_bonus]
+value = 0.5
+description = "structure = chart: extra pause weight for a large card (formula chart_reveal_weight)."
+source = "Judgement (v0.4.0)."
+range = [0.0, 10.0]
+
+[params.chart_min_reveal_sec]
+value = 2.2
+description = "structure = chart: shortest time a card is on screen before the next one appears."
+unit = "s"
+source = "Judgement (v0.4.0): long enough to read a one-line card."
+range = [0.2, 20.0]
+
+[params.chart_max_reveal_sec]
+value = 7.0
+description = "structure = chart: longest pause on one card."
+unit = "s"
+source = "Judgement (v0.4.0)."
+range = [0.5, 30.0]
+
+[params.chart_draw_share]
+value = 0.25
+description = "structure = chart: share of each card's time spent drawing the line down to its play; the rest is the pause on the card."
+source = "Judgement (v0.4.0)."
+range = [0.05, 0.9]
+
+[formulas.chart_importance]
+expr = "abs_swing + chart_score_bonus * scoring + key_turnover_bonus * turnover + key_long_bonus * long_play"
+description = "structure = chart: how important a play is (picks cards, large cards and pause length). scoring/turnover/long_play are 0 or 1."
+variables = ["abs_swing", "scoring", "turnover", "long_play"]
+
+[formulas.chart_reveal_weight]
+expr = "1 + chart_reveal_k * importance + chart_large_bonus * large"
+description = "structure = chart: relative time on a card before scaling to the body and clamping to [chart_min_reveal_sec, chart_max_reveal_sec]. large is 0 or 1."
+variables = ["importance", "scoring", "large"]

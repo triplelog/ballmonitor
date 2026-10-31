@@ -1,0 +1,391 @@
+[meta]
+title = "Batter vs. Pitcher Similarity Matchup"
+version = "0.3.0"
+status = "calibrated"
+question = "What is the expected performance (xwOBA, K%, BB%) when this batter faces this pitcher?"
+description = """
+Predicts batter vs. pitcher matchup outcomes by blending a regressed platoon Log5 baseline,
+pooled matchups between similar pitchers and similar batters, shrunk direct BvP history and a
+count-by-count micro-simulation whose rates are measured league averages.
+"""
+assumptions = [
+  "Direct BvP history with small sample sizes (< 50 PA) is mostly random variance and heavily regressed.",
+  "Player rates are regressed to the league average, and platoon splits to the player's overall rate, before they are combined.",
+  "Pitchers with similar repertoires, velocity, and count strategies induce similar outcomes against comparable batters.",
+  "Profiles are 2021-2025 career aggregates with no recency weighting or aging.",
+  "The xwOBA range is for what a handful of PAs will show, so it is wide; most of it is sampling noise.",
+]
+
+[params.k_pitchers]
+value = 8
+description = "Number of similar pitchers to include in the pitcher peer pool."
+unit = "pitchers"
+source = "Judgement (not tuned; RESEARCH.md tunes the pool's weight instead)."
+range = [3, 25]
+
+[params.k_batters]
+value = 12
+description = "Number of similar batters to include in the batter peer pool."
+unit = "batters"
+source = "Judgement (not tuned; RESEARCH.md tunes the pool's weight instead)."
+range = [3, 35]
+
+[params.bvp_shrinkage_n0]
+value = 250.0
+description = "Sample size constant (N0) for direct BvP history shrinkage."
+unit = "PA"
+source = "Chosen on 2025 matchups (tables from 2021-2024), walk-forward; reported on 2026 in RESEARCH.md section 2."
+range = [10.0, 5000.0]
+
+[params.archetype_shrinkage_m0]
+value = 350.0
+description = "Effective sample size constant (M0) for archetype pooled matchup shrinkage."
+unit = "PA"
+source = "Chosen on 2025 matchups (tables from 2021-2024), walk-forward; reported on 2026 in RESEARCH.md section 2."
+range = [50.0, 5000.0]
+
+[params.max_archetype_weight]
+value = 0.1
+description = "Maximum weight given to the archetype pool versus the baseline talent expectation."
+source = "Chosen on 2025 matchups (tables from 2021-2024), walk-forward; reported on 2026 in RESEARCH.md section 2."
+range = [0.0, 0.85]
+
+[params.microsim_weight]
+value = 0.2
+description = "Weight given to the count micro-simulation in the xwOBA estimate."
+unit = "weight"
+source = "Chosen on 2025 matchups (tables from 2021-2024), walk-forward; reported on 2026 in RESEARCH.md section 2."
+range = [0.0, 1.0]
+
+[params.microsim_weight_rates]
+value = 0.0
+description = "Weight given to the count micro-simulation in the K% and BB% estimates."
+unit = "weight"
+source = "Chosen on 2025 matchups (tables from 2021-2024), walk-forward; reported on 2026 in RESEARCH.md section 2."
+range = [0.0, 1.0]
+
+[params.regress_xwoba_pa]
+value = 800.0
+description = "PA of league average added when regressing a player's xwOBA (overall to league, then platoon split to overall). 1 = essentially no regression."
+unit = "PA"
+source = "Chosen on 2025 matchups (tables from 2021-2024), walk-forward; reported on 2026 in RESEARCH.md section 2."
+range = [1.0, 5000.0]
+
+[params.regress_k_pa]
+value = 400.0
+description = "PA of league average added when regressing a player's K% (overall to league, then platoon split to overall)."
+unit = "PA"
+source = "Chosen on 2025 matchups (tables from 2021-2024), walk-forward; reported on 2026 in RESEARCH.md section 2."
+range = [1.0, 5000.0]
+
+[params.regress_bb_pa]
+value = 200.0
+description = "PA of league average added when regressing a player's BB% (overall only; no platoon split)."
+unit = "PA"
+source = "Chosen on 2025 matchups (tables from 2021-2024), walk-forward; reported on 2026 in RESEARCH.md section 2."
+range = [1.0, 5000.0]
+
+[params.league_xwoba]
+value = 0.3163
+description = "League average expected wOBA per plate appearance (the Log5 reference and regression target)."
+unit = "wOBA"
+source = "Measured from 2021-2025 Statcast pitches by research.py (RESEARCH.md section 1)."
+range = [0.280, 0.360]
+
+[params.league_k_pct]
+value = 0.2279
+description = "League average strikeout rate per plate appearance."
+source = "Measured from 2021-2025 Statcast pitches by research.py (RESEARCH.md section 1)."
+range = [0.150, 0.350]
+
+[params.league_bb_pct]
+value = 0.0816
+description = "League average walk rate per plate appearance."
+source = "Measured from 2021-2025 Statcast pitches by research.py (RESEARCH.md section 1)."
+range = [0.040, 0.150]
+
+# ── xwOBA range (MODEL.md step 9) ────────────────────────────────────────────
+
+[params.interval_level]
+value = 0.80
+description = "Coverage level of the xwOBA range."
+source = "Convention used across ballmonitor."
+range = [0.5, 0.95]
+
+[params.interval_pa]
+value = 3
+description = "Number of PAs the xwOBA range is for when the input `pa` is not given (a starter faces a hitter about 3 times a game)."
+unit = "PA"
+source = "Judgement (typical times a starter faces a batter in one game)."
+range = [1, 100]
+
+[params.per_pa_xwoba_sd]
+value = 0.25
+description = "Effective standard deviation of a single PA's xwOBA for the range (the raw SD is about 0.37, but one PA's xwOBA is lumpy, so a normal band with it over-covers)."
+unit = "wOBA"
+source = "Fitted on 2025 matchups so each PA bucket covers about 80% (walk-forward); 2026 coverage in RESEARCH.md section 3."
+range = [0.2, 0.6]
+
+[params.interval_talent_sd]
+value = 0.15
+description = "Spread added in quadrature to the per-PA noise in the range. Fitted for coverage, so it also absorbs the non-normal shape of small samples; it is not a measured talent uncertainty."
+unit = "wOBA"
+source = "Fitted on 2025 matchups so each PA bucket covers about 80% (walk-forward); 2026 coverage in RESEARCH.md section 3."
+range = [0.0, 0.3]
+
+# ── count micro-simulation (MODEL.md step 7) ─────────────────────────────────
+# league rates per count group: first = 0-0; even = 1-0, 0-1, 1-1;
+# behind = 2-0, 3-0, 2-1, 3-1; two = any count with two strikes
+
+[params.league_f_swing_pct]
+value = 0.3132
+description = "League swing rate on 0-0 pitches; the batter's own rate divided by this scales his 0-0 zone swing rate."
+source = "Measured from 2021-2025 Statcast pitches by research.py (RESEARCH.md section 1)."
+range = [0.15, 0.45]
+
+[params.league_z_swing_pct]
+value = 0.6754
+description = "League swing rate at in-zone pitches; the batter's own rate divided by this scales his zone swing rate in the other counts."
+source = "Measured from 2021-2025 Statcast pitches by research.py (RESEARCH.md section 1)."
+range = [0.4, 0.9]
+
+[params.league_chase_pct]
+value = 0.2847
+description = "League swing rate at out-of-zone pitches; Log5 reference for the matchup chase factor."
+source = "Measured from 2021-2025 Statcast pitches by research.py (RESEARCH.md section 1)."
+range = [0.15, 0.45]
+
+[params.league_whiff_pct]
+value = 0.2348
+description = "League whiffs per swing; Log5 reference for the matchup whiff factor."
+source = "Measured from 2021-2025 Statcast pitches by research.py (RESEARCH.md section 1)."
+range = [0.1, 0.4]
+
+[params.ms_first_zone_swing]
+value = 0.4503
+description = "League swing rate at in-zone pitches on 0-0."
+source = "Measured from 2021-2025 Statcast pitches by research.py (RESEARCH.md section 1)."
+range = [0.0, 1.0]
+
+[params.ms_first_chase]
+value = 0.1568
+description = "League swing rate at out-of-zone pitches on 0-0."
+source = "Measured from 2021-2025 Statcast pitches by research.py (RESEARCH.md section 1)."
+range = [0.0, 1.0]
+
+[params.ms_first_whiff]
+value = 0.2479
+description = "League whiffs per swing on 0-0."
+source = "Measured from 2021-2025 Statcast pitches by research.py (RESEARCH.md section 1)."
+range = [0.0, 1.0]
+
+[params.ms_first_cs_zone]
+value = 0.9177
+description = "Share of taken in-zone pitches called strikes on 0-0."
+source = "Measured from 2021-2025 Statcast pitches by research.py (RESEARCH.md section 1)."
+range = [0.0, 1.0]
+
+[params.ms_first_cs_out]
+value = 0.0872
+description = "Share of taken out-of-zone pitches called strikes on 0-0."
+source = "Measured from 2021-2025 Statcast pitches by research.py (RESEARCH.md section 1)."
+range = [0.0, 1.0]
+
+[params.ms_even_zone_swing]
+value = 0.7079
+description = "League swing rate at in-zone pitches in 1-0, 0-1 and 1-1 counts."
+source = "Measured from 2021-2025 Statcast pitches by research.py (RESEARCH.md section 1)."
+range = [0.0, 1.0]
+
+[params.ms_even_chase]
+value = 0.275
+description = "League swing rate at out-of-zone pitches in 1-0, 0-1 and 1-1 counts."
+source = "Measured from 2021-2025 Statcast pitches by research.py (RESEARCH.md section 1)."
+range = [0.0, 1.0]
+
+[params.ms_even_whiff]
+value = 0.2484
+description = "League whiffs per swing in 1-0, 0-1 and 1-1 counts."
+source = "Measured from 2021-2025 Statcast pitches by research.py (RESEARCH.md section 1)."
+range = [0.0, 1.0]
+
+[params.ms_even_cs_zone]
+value = 0.8714
+description = "Share of taken in-zone pitches called strikes in 1-0, 0-1 and 1-1 counts."
+source = "Measured from 2021-2025 Statcast pitches by research.py (RESEARCH.md section 1)."
+range = [0.0, 1.0]
+
+[params.ms_even_cs_out]
+value = 0.0546
+description = "Share of taken out-of-zone pitches called strikes in 1-0, 0-1 and 1-1 counts."
+source = "Measured from 2021-2025 Statcast pitches by research.py (RESEARCH.md section 1)."
+range = [0.0, 1.0]
+
+[params.ms_behind_zone_swing]
+value = 0.6537
+description = "League swing rate at in-zone pitches when the pitcher is behind (2-0, 3-0, 2-1, 3-1)."
+source = "Measured from 2021-2025 Statcast pitches by research.py (RESEARCH.md section 1)."
+range = [0.0, 1.0]
+
+[params.ms_behind_chase]
+value = 0.2563
+description = "League swing rate at out-of-zone pitches when the pitcher is behind."
+source = "Measured from 2021-2025 Statcast pitches by research.py (RESEARCH.md section 1)."
+range = [0.0, 1.0]
+
+[params.ms_behind_whiff]
+value = 0.2049
+description = "League whiffs per swing when the pitcher is behind."
+source = "Measured from 2021-2025 Statcast pitches by research.py (RESEARCH.md section 1)."
+range = [0.0, 1.0]
+
+[params.ms_behind_cs_zone]
+value = 0.917
+description = "Share of taken in-zone pitches called strikes when the pitcher is behind."
+source = "Measured from 2021-2025 Statcast pitches by research.py (RESEARCH.md section 1)."
+range = [0.0, 1.0]
+
+[params.ms_behind_cs_out]
+value = 0.0919
+description = "Share of taken out-of-zone pitches called strikes when the pitcher is behind."
+source = "Measured from 2021-2025 Statcast pitches by research.py (RESEARCH.md section 1)."
+range = [0.0, 1.0]
+
+[params.ms_two_zone_swing]
+value = 0.8879
+description = "League swing rate at in-zone pitches with two strikes."
+source = "Measured from 2021-2025 Statcast pitches by research.py (RESEARCH.md section 1)."
+range = [0.0, 1.0]
+
+[params.ms_two_chase]
+value = 0.3914
+description = "League swing rate at out-of-zone pitches with two strikes."
+source = "Measured from 2021-2025 Statcast pitches by research.py (RESEARCH.md section 1)."
+range = [0.0, 1.0]
+
+[params.ms_two_whiff]
+value = 0.2264
+description = "League whiffs per swing with two strikes."
+source = "Measured from 2021-2025 Statcast pitches by research.py (RESEARCH.md section 1)."
+range = [0.0, 1.0]
+
+[params.ms_two_cs_zone]
+value = 0.7771
+description = "Share of taken in-zone pitches called strike three with two strikes."
+source = "Measured from 2021-2025 Statcast pitches by research.py (RESEARCH.md section 1)."
+range = [0.0, 1.0]
+
+[params.ms_two_cs_out]
+value = 0.0224
+description = "Share of taken out-of-zone pitches called strike three with two strikes."
+source = "Measured from 2021-2025 Statcast pitches by research.py (RESEARCH.md section 1)."
+range = [0.0, 1.0]
+
+[params.ms_foul_share]
+value = 0.5119
+description = "Share of swings with contact that go foul (the rest end the PA as balls in play)."
+source = "Measured from 2021-2025 Statcast pitches by research.py (RESEARCH.md section 1)."
+range = [0.0, 0.9]
+
+[params.woba_bb_weight]
+value = 0.69
+description = "wOBA value of a walk, used to turn walk probability into xwOBA and to strip walks out of the batter's xwOBA."
+unit = "wOBA"
+source = "FanGraphs Guts! wOBA weights: unintentional BB about 0.69-0.70 in 2021-2025. DRAFT: verify exact season values."
+range = [0.5, 0.9]
+
+[params.ms_xwoba_offset]
+value = -0.021
+description = "Constant added to the micro-simulation xwOBA (covers hit-by-pitches, which the chain ignores, and its overall bias)."
+unit = "wOBA"
+source = "Chosen on 2025 matchups (tables from 2021-2024), walk-forward; reported on 2026 in RESEARCH.md section 2."
+range = [-0.1, 0.1]
+
+[params.ms_bip_xwoba_min]
+value = 0.280
+description = "Lower clip on the batter's xwOBA per ball in play used by the micro-simulation (guards batters with few PAs)."
+unit = "wOBA"
+source = "Judgement (plausibility clamp)."
+range = [0.1, 0.5]
+
+[params.ms_bip_xwoba_max]
+value = 0.55
+description = "Upper clip on the batter's xwOBA per ball in play used by the micro-simulation (Aaron Judge's is about 0.60)."
+unit = "wOBA"
+source = "Chosen on 2025 matchups (tables from 2021-2024), walk-forward; reported on 2026 in RESEARCH.md section 2."
+range = [0.3, 0.8]
+
+# ── plausibility clamps on the final estimates ───────────────────────────────
+
+[params.xwoba_min]
+value = 0.150
+description = "Lowest expected xwOBA the model will report."
+unit = "wOBA"
+source = "Judgement (plausibility clamp)."
+range = [0.0, 0.3]
+
+[params.xwoba_max]
+value = 0.550
+description = "Highest expected xwOBA the model will report."
+unit = "wOBA"
+source = "Judgement (plausibility clamp)."
+range = [0.4, 1.0]
+
+[params.k_pct_min]
+value = 0.03
+description = "Lowest strikeout probability the model will report."
+source = "Judgement (plausibility clamp)."
+range = [0.0, 0.2]
+
+[params.k_pct_max]
+value = 0.60
+description = "Highest strikeout probability the model will report."
+source = "Judgement (plausibility clamp)."
+range = [0.3, 1.0]
+
+[params.bb_pct_min]
+value = 0.01
+description = "Lowest walk probability the model will report."
+source = "Judgement (plausibility clamp)."
+range = [0.0, 0.1]
+
+[params.bb_pct_max]
+value = 0.35
+description = "Highest walk probability the model will report."
+source = "Judgement (plausibility clamp)."
+range = [0.1, 1.0]
+
+[formulas.regress]
+expr = "(x * n + prior * n0) / (n + n0)"
+description = "Regression to a prior: n PA at the observed rate x plus n0 PA at the prior rate."
+variables = ["x", "n", "prior", "n0"]
+
+[formulas.log5]
+expr = "(pb * pp / pl) / ((pb * pp / pl) + ((1.0 - pb) * (1.0 - pp) / (1.0 - pl)))"
+description = "Bill James Log5 odds formula combining batter rate, pitcher rate, and league average."
+variables = ["pb", "pp", "pl"]
+
+[formulas.bvp_weight]
+expr = "n_direct / (n_direct + bvp_shrinkage_n0)"
+description = "Shrinkage weight for direct BvP history."
+variables = ["n_direct"]
+
+[formulas.archetype_weight]
+expr = "min(max_archetype_weight, (1.0 - w_direct) * (eff_n / (eff_n + archetype_shrinkage_m0)))"
+description = "Shrinkage weight given to the pooled archetype matchup."
+variables = ["w_direct", "eff_n"]
+
+[formulas.blend_estimate]
+expr = "w_direct * y_direct + w_arch * y_arch + (1.0 - w_direct - w_arch) * y_baseline"
+description = "Three-tier hierarchical blend of direct BvP, archetype pool, and Log5 baseline."
+variables = ["w_direct", "y_direct", "w_arch", "y_arch", "y_baseline"]
+
+[formulas.final_microsim_blend]
+expr = "(1.0 - w_ms) * y_archetype_blend + w_ms * y_microsim"
+description = "Blends the shrinkage estimate with the count micro-simulation; w_ms is microsim_weight for xwOBA and microsim_weight_rates for K% and BB%."
+variables = ["w_ms", "y_archetype_blend", "y_microsim"]
+
+[formulas.interval_half_width]
+expr = "z * sqrt(interval_talent_sd ** 2 + per_pa_xwoba_sd ** 2 / n_pa)"
+description = "Half-width of the range for the xwOBA observed over n_pa PAs: talent uncertainty plus per-PA sampling noise, z from interval_level."
+variables = ["z", "n_pa"]

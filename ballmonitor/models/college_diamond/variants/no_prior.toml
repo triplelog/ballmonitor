@@ -1,0 +1,5 @@
+description = "No preseason prior: ratings start every season at the D-I average (ridge toward 0). Much worse early in the season (RESEARCH.md)."
+
+[params]
+baseball_prior_carry = 0.0
+softball_prior_carry = 0.0

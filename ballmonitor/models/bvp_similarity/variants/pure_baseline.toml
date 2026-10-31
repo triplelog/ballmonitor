@@ -1,0 +1,7 @@
+description = "Control: regressed platoon Log5 baseline, with archetype pooling and micro-simulation off and direct BvP history shrunk hard (N0 = 5000 PA, so it still gets a small weight)."
+
+[params]
+max_archetype_weight = 0.0
+bvp_shrinkage_n0 = 5000.0
+microsim_weight = 0.0
+microsim_weight_rates = 0.0

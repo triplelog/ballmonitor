@@ -1,0 +1,6 @@
+# The v0.4.0 default method, kept for comparison
+[meta]
+description = "v0.4.0 method: log-quadratic curve (slope 1.057), Empirical Bayes personal slope, off-day and recency weighting, fitness transfer, and a symmetric log-normal sigma model (base 9.5% + 5%/doubling + 6%/year). Test: MAPE 9.63%, 50/80/95% coverage 59/82/92% (RESEARCH_BANDS.md)."
+
+[params]
+method = "curve"

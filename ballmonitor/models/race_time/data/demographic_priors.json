@@ -1,0 +1,58 @@
+{
+  "_note": "Built by pipeline.py from TRAIN-split runners only: median per-runner Riegel slope over race pairs within 120 days.",
+  "global": {
+    "beta1": 1.0893,
+    "sigma_beta1": 0.0865,
+    "count": 11721
+  },
+  "F_25-34": {
+    "beta1": 1.0838,
+    "sigma_beta1": 0.0894,
+    "count": 1712
+  },
+  "F_35-49": {
+    "beta1": 1.0806,
+    "sigma_beta1": 0.0848,
+    "count": 2570
+  },
+  "F_50-64": {
+    "beta1": 1.0776,
+    "sigma_beta1": 0.0802,
+    "count": 1072
+  },
+  "F_65+": {
+    "beta1": 1.0729,
+    "sigma_beta1": 0.0704,
+    "count": 131
+  },
+  "F_<25": {
+    "beta1": 1.1007,
+    "sigma_beta1": 0.094,
+    "count": 778
+  },
+  "M_25-34": {
+    "beta1": 1.0976,
+    "sigma_beta1": 0.085,
+    "count": 1236
+  },
+  "M_35-49": {
+    "beta1": 1.0949,
+    "sigma_beta1": 0.0861,
+    "count": 1960
+  },
+  "M_50-64": {
+    "beta1": 1.0908,
+    "sigma_beta1": 0.0816,
+    "count": 1120
+  },
+  "M_65+": {
+    "beta1": 1.0962,
+    "sigma_beta1": 0.0784,
+    "count": 263
+  },
+  "M_<25": {
+    "beta1": 1.1087,
+    "sigma_beta1": 0.0918,
+    "count": 879
+  }
+}

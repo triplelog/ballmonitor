@@ -1,0 +1,148 @@
+# 2024 National Champion Tennessee Volunteers schedule
+# Matches, dates, and opponents are automatically classified into:
+# - Postseason (Omaha CWS / June) -> 1.50x weight
+# - Conference (SEC rivalries: Kentucky, LSU, Vanderbilt) -> 1.30x weight
+# - Weekend series (Friday-Sunday non-conference: Texas Tech) -> 1.25x weight
+# - Midweek games (Tuesday-Wednesday non-conference: Tennessee Tech, Western Carolina) -> 0.75x weight
+# PLACEHOLDER: margins are illustrative and do not all match real results (e.g. CWS
+# Finals Game 3 was a 6-5 Tennessee win); opponent ratings partly from
+# data/college_baseball_2024_standings.csv. DRAFT, verify before citing.
+team = "Tennessee Volunteers"
+sport = "college_baseball"
+baseline = "bubble"
+
+# Men's College World Series in Omaha (Auto-detected as Postseason via dates & CWS notes)
+[[games]]
+opponent = "Texas A&M Aggies"
+opponent_rating = 4.45
+margin = 5
+location = "neutral"
+date = "2024-06-24"
+notes = "CWS Championship Series Game 3"
+
+[[games]]
+opponent = "Texas A&M Aggies"
+opponent_rating = 4.45
+margin = 2
+location = "neutral"
+date = "2024-06-23"
+notes = "CWS Championship Series Game 2"
+
+[[games]]
+opponent = "Texas A&M Aggies"
+opponent_rating = 4.45
+margin = -4
+location = "neutral"
+date = "2024-06-22"
+notes = "CWS Championship Series Game 1"
+
+[[games]]
+opponent = "Florida State Seminoles"
+opponent_rating = 3.52
+margin = 1
+location = "neutral"
+date = "2024-06-14"
+notes = "Omaha CWS Opening Round"
+
+[[games]]
+opponent = "Florida State Seminoles"
+opponent_rating = 3.52
+margin = 5
+location = "neutral"
+date = "2024-06-19"
+notes = "Omaha CWS Semifinal"
+
+[[games]]
+opponent = "North Carolina Tar Heels"
+opponent_rating = 3.64
+margin = 5
+location = "neutral"
+date = "2024-06-16"
+notes = "Omaha CWS Bracket"
+
+# SEC Conference Weekend Series (Auto-detected as SEC Matchups)
+[[games]]
+opponent = "Kentucky Wildcats"
+opponent_rating = 2.34
+margin = 2
+location = "away"
+date = "2024-04-19"
+
+[[games]]
+opponent = "Kentucky Wildcats"
+opponent_rating = 2.34
+margin = 7
+location = "away"
+date = "2024-04-20"
+
+[[games]]
+opponent = "Kentucky Wildcats"
+opponent_rating = 2.34
+margin = -2
+location = "away"
+date = "2024-04-21"
+
+[[games]]
+opponent = "LSU Tigers"
+opponent_rating = 2.11
+margin = 3
+location = "home"
+date = "2024-04-12"
+
+[[games]]
+opponent = "LSU Tigers"
+opponent_rating = 2.11
+margin = 2
+location = "home"
+date = "2024-04-13"
+
+[[games]]
+opponent = "LSU Tigers"
+opponent_rating = 2.11
+margin = 4
+location = "home"
+date = "2024-04-14"
+
+[[games]]
+opponent = "Vanderbilt Commodores"
+opponent_rating = 1.44
+margin = 4
+location = "away"
+date = "2024-05-10"
+
+[[games]]
+opponent = "Vanderbilt Commodores"
+opponent_rating = 1.44
+margin = 1
+location = "away"
+date = "2024-05-11"
+
+[[games]]
+opponent = "Vanderbilt Commodores"
+opponent_rating = 1.44
+margin = -3
+location = "away"
+date = "2024-05-12"
+
+# Marquee Opening Weekend Tournament (Auto-detected as Weekend Non-Conference via Friday date)
+[[games]]
+opponent = "Texas Tech Red Raiders"
+opponent_rating = 1.50
+margin = 4
+location = "neutral"
+date = "2024-02-16"
+
+# Midweek Non-Conference Games (Auto-detected as Midweek via Tuesday dates)
+[[games]]
+opponent = "Tennessee Tech Golden Eagles"
+opponent_rating = -1.20
+margin = 9
+location = "home"
+date = "2024-04-16"
+
+[[games]]
+opponent = "Western Carolina Catamounts"
+opponent_rating = -0.80
+margin = 11
+location = "home"
+date = "2024-04-23"

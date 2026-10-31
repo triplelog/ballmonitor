@@ -1,0 +1,617 @@
+{
+ "seasons": {
+  "baseball 2015": {
+   "di_teams": 301,
+   "games": 8116,
+   "game_types": {
+    "R": 7670,
+    "C": 310,
+    "N": 136
+   },
+   "games_per_team_pre_ncaa": {
+    "min": 36,
+    "p10": 46,
+    "median": 54,
+    "max": 62
+   },
+   "record_diff_vs_wn": null,
+   "selection": "2015-05-25",
+   "source": null,
+   "membership_anchor": 2021,
+   "membership_inferred_changes": 18
+  },
+  "baseball 2016": {
+   "di_teams": 300,
+   "games": 8310,
+   "game_types": {
+    "R": 7834,
+    "C": 338,
+    "N": 138
+   },
+   "games_per_team_pre_ncaa": {
+    "min": 36,
+    "p10": 49,
+    "median": 55,
+    "max": 61
+   },
+   "record_diff_vs_wn": null,
+   "selection": "2016-05-30",
+   "source": null,
+   "membership_anchor": 2021,
+   "membership_inferred_changes": 15
+  },
+  "baseball 2017": {
+   "di_teams": 299,
+   "games": 8229,
+   "game_types": {
+    "R": 7759,
+    "C": 332,
+    "N": 138
+   },
+   "games_per_team_pre_ncaa": {
+    "min": 37,
+    "p10": 48,
+    "median": 55,
+    "max": 62
+   },
+   "record_diff_vs_wn": null,
+   "selection": "2017-05-29",
+   "source": null,
+   "membership_anchor": 2021,
+   "membership_inferred_changes": 13
+  },
+  "baseball 2018": {
+   "di_teams": 297,
+   "games": 8088,
+   "game_types": {
+    "R": 7635,
+    "C": 315,
+    "N": 138
+   },
+   "games_per_team_pre_ncaa": {
+    "min": 36,
+    "p10": 47,
+    "median": 54,
+    "max": 62
+   },
+   "record_diff_vs_wn": null,
+   "selection": "2018-05-28",
+   "source": null,
+   "membership_anchor": 2021,
+   "membership_inferred_changes": 9
+  },
+  "baseball 2019": {
+   "di_teams": 299,
+   "games": 8211,
+   "game_types": {
+    "R": 7758,
+    "C": 315,
+    "N": 138
+   },
+   "games_per_team_pre_ncaa": {
+    "min": 31,
+    "p10": 49,
+    "median": 55,
+    "max": 62
+   },
+   "record_diff_vs_wn": null,
+   "selection": "2019-05-27",
+   "source": null,
+   "membership_anchor": 2021,
+   "membership_inferred_changes": 7
+  },
+  "baseball 2021": {
+   "di_teams": 291,
+   "games": 7154,
+   "game_types": {
+    "R": 6727,
+    "C": 288,
+    "N": 139
+   },
+   "games_per_team_pre_ncaa": {
+    "min": 20,
+    "p10": 37,
+    "median": 50,
+    "max": 61
+   },
+   "record_diff_vs_wn": {
+    "exact": 284,
+    "within_2": 286,
+    "n": 291,
+    "median": 0
+   },
+   "selection": "2021-05-31",
+   "source": null,
+   "membership_anchor": null,
+   "membership_inferred_changes": 0
+  },
+  "baseball 2022": {
+   "di_teams": 301,
+   "games": 8234,
+   "game_types": {
+    "R": 7758,
+    "C": 335,
+    "N": 141
+   },
+   "games_per_team_pre_ncaa": {
+    "min": 36,
+    "p10": 48,
+    "median": 55,
+    "max": 62
+   },
+   "record_diff_vs_wn": {
+    "exact": 281,
+    "within_2": 299,
+    "n": 300,
+    "median": 0
+   },
+   "selection": "2022-05-30",
+   "source": null,
+   "membership_anchor": null,
+   "membership_inferred_changes": 0
+  },
+  "baseball 2023": {
+   "di_teams": 305,
+   "games": 8366,
+   "game_types": {
+    "R": 7908,
+    "C": 321,
+    "N": 137
+   },
+   "games_per_team_pre_ncaa": {
+    "min": 34,
+    "p10": 48,
+    "median": 55,
+    "max": 62
+   },
+   "record_diff_vs_wn": {
+    "exact": 293,
+    "within_2": 305,
+    "n": 305,
+    "median": 0
+   },
+   "selection": "2023-05-29",
+   "source": null,
+   "membership_anchor": null,
+   "membership_inferred_changes": 0
+  },
+  "baseball 2024": {
+   "di_teams": 305,
+   "games": 8377,
+   "game_types": {
+    "R": 7889,
+    "C": 355,
+    "N": 133
+   },
+   "games_per_team_pre_ncaa": {
+    "min": 38,
+    "p10": 49,
+    "median": 55,
+    "max": 62
+   },
+   "record_diff_vs_wn": {
+    "exact": 292,
+    "within_2": 305,
+    "n": 305,
+    "median": 0
+   },
+   "selection": "2024-05-27",
+   "source": null,
+   "membership_anchor": null,
+   "membership_inferred_changes": 0
+  },
+  "baseball 2025": {
+   "di_teams": 307,
+   "games": 8409,
+   "game_types": {
+    "R": 7960,
+    "C": 313,
+    "N": 136
+   },
+   "games_per_team_pre_ncaa": {
+    "min": 34,
+    "p10": 49,
+    "median": 55,
+    "max": 62
+   },
+   "record_diff_vs_wn": {
+    "exact": 296,
+    "within_2": 303,
+    "n": 307,
+    "median": 0
+   },
+   "selection": "2025-05-26",
+   "source": null,
+   "membership_anchor": null,
+   "membership_inferred_changes": 0
+  },
+  "baseball 2026": {
+   "di_teams": 308,
+   "games": 8437,
+   "game_types": {
+    "R": 8002,
+    "C": 302,
+    "N": 133
+   },
+   "games_per_team_pre_ncaa": {
+    "min": 37,
+    "p10": 48,
+    "median": 55,
+    "max": 62
+   },
+   "record_diff_vs_wn": {
+    "exact": 307,
+    "within_2": 308,
+    "n": 308,
+    "median": 0
+   },
+   "selection": "2026-05-25",
+   "source": null,
+   "membership_anchor": null,
+   "membership_inferred_changes": 0
+  },
+  "softball 2015": {
+   "di_teams": 217,
+   "games": 3093,
+   "game_types": {
+    "R": 2943,
+    "C": 25,
+    "N": 125
+   },
+   "games_per_team_pre_ncaa": {
+    "min": 10,
+    "p10": 16,
+    "median": 26,
+    "max": 55
+   },
+   "record_diff_vs_wn": null,
+   "selection": "2015-05-10",
+   "source": null,
+   "membership_anchor": 2023,
+   "membership_inferred_changes": 166
+  },
+  "softball 2016": {
+   "di_teams": 290,
+   "games": 5720,
+   "game_types": {
+    "R": 5354,
+    "C": 234,
+    "N": 132
+   },
+   "games_per_team_pre_ncaa": {
+    "min": 15,
+    "p10": 31,
+    "median": 39,
+    "max": 56
+   },
+   "record_diff_vs_wn": null,
+   "selection": "2016-05-15",
+   "source": null,
+   "membership_anchor": 2023,
+   "membership_inferred_changes": 58
+  },
+  "softball 2017": {
+   "di_teams": 291,
+   "games": 7399,
+   "game_types": {
+    "R": 6975,
+    "C": 290,
+    "N": 134
+   },
+   "games_per_team_pre_ncaa": {
+    "min": 29,
+    "p10": 41,
+    "median": 51,
+    "max": 62
+   },
+   "record_diff_vs_wn": null,
+   "selection": "2017-05-14",
+   "source": null,
+   "membership_anchor": 2023,
+   "membership_inferred_changes": 51
+  },
+  "softball 2018": {
+   "di_teams": 296,
+   "games": 7668,
+   "game_types": {
+    "R": 7127,
+    "C": 408,
+    "N": 133
+   },
+   "games_per_team_pre_ncaa": {
+    "min": 25,
+    "p10": 43,
+    "median": 52,
+    "max": 60
+   },
+   "record_diff_vs_wn": null,
+   "selection": "2018-05-13",
+   "source": null,
+   "membership_anchor": 2023,
+   "membership_inferred_changes": 37
+  },
+  "softball 2019": {
+   "di_teams": 297,
+   "games": 7601,
+   "game_types": {
+    "R": 7113,
+    "C": 351,
+    "N": 137
+   },
+   "games_per_team_pre_ncaa": {
+    "min": 27,
+    "p10": 42,
+    "median": 51,
+    "max": 61
+   },
+   "record_diff_vs_wn": null,
+   "selection": "2019-05-12",
+   "source": null,
+   "membership_anchor": 2023,
+   "membership_inferred_changes": 32
+  },
+  "softball 2021": {
+   "di_teams": 288,
+   "games": 6065,
+   "game_types": {
+    "R": 5728,
+    "C": 201,
+    "N": 136
+   },
+   "games_per_team_pre_ncaa": {
+    "min": 19,
+    "p10": 29,
+    "median": 43,
+    "max": 126
+   },
+   "record_diff_vs_wn": null,
+   "selection": "2021-05-16",
+   "source": null,
+   "membership_anchor": 2023,
+   "membership_inferred_changes": 32
+  },
+  "softball 2022": {
+   "di_teams": 302,
+   "games": 7608,
+   "game_types": {
+    "R": 7413,
+    "C": 58,
+    "N": 137
+   },
+   "games_per_team_pre_ncaa": {
+    "min": 32,
+    "p10": 43,
+    "median": 49,
+    "max": 198
+   },
+   "record_diff_vs_wn": null,
+   "selection": "2022-05-15",
+   "source": null,
+   "membership_anchor": 2023,
+   "membership_inferred_changes": 24
+  },
+  "softball 2023": {
+   "di_teams": 306,
+   "games": 7858,
+   "game_types": {
+    "R": 7379,
+    "C": 346,
+    "N": 133
+   },
+   "games_per_team_pre_ncaa": {
+    "min": 25,
+    "p10": 44,
+    "median": 51,
+    "max": 61
+   },
+   "record_diff_vs_wn": {
+    "exact": 306,
+    "within_2": 306,
+    "n": 306,
+    "median": 0
+   },
+   "selection": "2023-05-14",
+   "source": "warrennolan schedules",
+   "membership_anchor": null,
+   "membership_inferred_changes": 0
+  },
+  "softball 2024": {
+   "di_teams": 307,
+   "games": 7929,
+   "game_types": {
+    "R": 7412,
+    "C": 382,
+    "N": 135
+   },
+   "games_per_team_pre_ncaa": {
+    "min": 31,
+    "p10": 45,
+    "median": 52,
+    "max": 60
+   },
+   "record_diff_vs_wn": {
+    "exact": 305,
+    "within_2": 307,
+    "n": 307,
+    "median": 0
+   },
+   "selection": "2024-05-12",
+   "source": "warrennolan schedules",
+   "membership_anchor": null,
+   "membership_inferred_changes": 0
+  },
+  "softball 2025": {
+   "di_teams": 309,
+   "games": 8047,
+   "game_types": {
+    "R": 7522,
+    "C": 388,
+    "N": 137
+   },
+   "games_per_team_pre_ncaa": {
+    "min": 31,
+    "p10": 45,
+    "median": 52,
+    "max": 62
+   },
+   "record_diff_vs_wn": {
+    "exact": 309,
+    "within_2": 309,
+    "n": 309,
+    "median": 0
+   },
+   "selection": "2025-05-11",
+   "source": "warrennolan schedules",
+   "membership_anchor": null,
+   "membership_inferred_changes": 0
+  },
+  "softball 2026": {
+   "di_teams": 308,
+   "games": 7824,
+   "game_types": {
+    "R": 7625,
+    "C": 66,
+    "N": 133
+   },
+   "games_per_team_pre_ncaa": {
+    "min": 18,
+    "p10": 43,
+    "median": 51,
+    "max": 60
+   },
+   "record_diff_vs_wn": null,
+   "selection": "2026-05-10",
+   "source": null,
+   "membership_anchor": 2025,
+   "membership_inferred_changes": 9
+  }
+ },
+ "rpi_vs_warren_nolan": {
+  "baseball 2021": {
+   "site_weighted": {
+    "teams": 291,
+    "median_abs_rank_diff": 2,
+    "top64_mean_abs_rank_diff": 1.78,
+    "top64_exact": 18
+   },
+   "unweighted": {
+    "teams": 291,
+    "median_abs_rank_diff": 6,
+    "top64_mean_abs_rank_diff": 4.86,
+    "top64_exact": 6
+   }
+  },
+  "baseball 2022": {
+   "site_weighted": {
+    "teams": 300,
+    "median_abs_rank_diff": 2.0,
+    "top64_mean_abs_rank_diff": 2.56,
+    "top64_exact": 9
+   },
+   "unweighted": {
+    "teams": 300,
+    "median_abs_rank_diff": 6.0,
+    "top64_mean_abs_rank_diff": 4.31,
+    "top64_exact": 5
+   }
+  },
+  "baseball 2023": {
+   "site_weighted": {
+    "teams": 305,
+    "median_abs_rank_diff": 1,
+    "top64_mean_abs_rank_diff": 1.11,
+    "top64_exact": 29
+   },
+   "unweighted": {
+    "teams": 305,
+    "median_abs_rank_diff": 5,
+    "top64_mean_abs_rank_diff": 3.95,
+    "top64_exact": 7
+   }
+  },
+  "baseball 2024": {
+   "site_weighted": {
+    "teams": 305,
+    "median_abs_rank_diff": 1,
+    "top64_mean_abs_rank_diff": 1.16,
+    "top64_exact": 27
+   },
+   "unweighted": {
+    "teams": 305,
+    "median_abs_rank_diff": 7,
+    "top64_mean_abs_rank_diff": 4.2,
+    "top64_exact": 13
+   }
+  },
+  "baseball 2025": {
+   "site_weighted": {
+    "teams": 307,
+    "median_abs_rank_diff": 1,
+    "top64_mean_abs_rank_diff": 1.53,
+    "top64_exact": 20
+   },
+   "unweighted": {
+    "teams": 307,
+    "median_abs_rank_diff": 6,
+    "top64_mean_abs_rank_diff": 4.3,
+    "top64_exact": 5
+   }
+  },
+  "baseball 2026": {
+   "site_weighted": {
+    "teams": 308,
+    "median_abs_rank_diff": 4.0,
+    "top64_mean_abs_rank_diff": 4.41,
+    "top64_exact": 11
+   },
+   "unweighted": {
+    "teams": 308,
+    "median_abs_rank_diff": 7.0,
+    "top64_mean_abs_rank_diff": 3.66,
+    "top64_exact": 8
+   }
+  },
+  "softball 2023": {
+   "site_weighted": {
+    "teams": 306,
+    "median_abs_rank_diff": 5.0,
+    "top64_mean_abs_rank_diff": 2.72,
+    "top64_exact": 11
+   },
+   "unweighted": {
+    "teams": 306,
+    "median_abs_rank_diff": 0.0,
+    "top64_mean_abs_rank_diff": 0.56,
+    "top64_exact": 47
+   }
+  },
+  "softball 2024": {
+   "site_weighted": {
+    "teams": 307,
+    "median_abs_rank_diff": 5,
+    "top64_mean_abs_rank_diff": 3.23,
+    "top64_exact": 11
+   },
+   "unweighted": {
+    "teams": 307,
+    "median_abs_rank_diff": 0,
+    "top64_mean_abs_rank_diff": 0.22,
+    "top64_exact": 54
+   }
+  },
+  "softball 2025": {
+   "site_weighted": {
+    "teams": 309,
+    "median_abs_rank_diff": 4,
+    "top64_mean_abs_rank_diff": 2.62,
+    "top64_exact": 10
+   },
+   "unweighted": {
+    "teams": 309,
+    "median_abs_rank_diff": 0,
+    "top64_mean_abs_rank_diff": 0.0,
+    "top64_exact": 64
+   }
+  }
+ }
+}

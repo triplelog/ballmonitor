@@ -1,0 +1,9 @@
+# Single race example: 5K predicting Half Marathon and full progression curve
+target = "half"
+age = 28
+gender = "F"
+
+[[races]]
+distance = "5k"
+time = "18:30"
+year = 2026

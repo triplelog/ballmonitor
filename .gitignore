@@ -1,0 +1,15 @@
+.venv/
+__pycache__/
+*.egg-info/
+.pytest_cache/
+build/
+/dist/
+ballmonitor/models/*/data/raw/
+ballmonitor/models/next_pitch/data/pitches/
+ballmonitor/models/next_pitch/data/research/
+ballmonitor/models/ncaaf_recruiting/data/research/
+exports/
+ballmonitor/games/*/data/raw/
+ballmonitor/games/*/places/data/raw/
+.DS_Store
+ballmonitor/new27K/.git-27k-history/

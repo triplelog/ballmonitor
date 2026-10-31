@@ -1,0 +1,6 @@
+# Ablation: ignore each reliever's recent usage rate (roles + situations + fatigue only).
+# Useful when you only know roles, not usage history. Scored in RESEARCH.md.
+description = "No usage term (usage_weight = 0): role, situation and fatigue only."
+
+[params]
+usage_weight = 0.0

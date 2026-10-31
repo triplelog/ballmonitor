@@ -1,0 +1,77 @@
+# 2024 Oklahoma Sooners College Softball (57-7, WCWS 4-Peat National Champions)
+# Evaluated against NCAA Softball National Seed standard (+3.60 runs/game)
+# PLACEHOLDER: margins are illustrative and not verified against real results;
+# opponent ratings partly from data/softball_2024_standings.csv. DRAFT, verify.
+team = "Oklahoma Sooners"
+sport = "softball"
+baseline = "national_seed"
+
+[[games]]
+opponent = "Texas Longhorns"
+opponent_rating = 5.76
+margin = 5
+location = "neutral"
+date = "2024-06-06"
+notes = "Women's College World Series Championship Finals Game 2"
+
+[[games]]
+opponent = "Texas Longhorns"
+opponent_rating = 5.76
+margin = 5
+location = "neutral"
+date = "2024-06-05"
+notes = "Women's College World Series Championship Finals Game 1"
+
+[[games]]
+opponent = "Florida Gators"
+opponent_rating = 4.20
+margin = 1
+location = "neutral"
+date = "2024-06-04"
+notes = "WCWS Semifinal Extra-Inning Walkoff"
+
+[[games]]
+opponent = "UCLA Bruins"
+opponent_rating = 3.90
+margin = 1
+location = "neutral"
+date = "2024-06-01"
+notes = "WCWS Winner's Bracket"
+
+[[games]]
+opponent = "Duke Blue Devils"
+opponent_rating = 4.50
+margin = 8
+location = "neutral"
+date = "2024-05-30"
+notes = "WCWS Opening Round"
+
+[[games]]
+opponent = "Florida State Seminoles"
+opponent_rating = 3.20
+margin = 7
+location = "home"
+date = "2024-05-24"
+notes = "NCAA Super Regional"
+
+[[games]]
+opponent = "Oklahoma State Cowgirls"
+opponent_rating = 3.55
+margin = 6
+location = "home"
+date = "2024-05-05"
+
+[[games]]
+opponent = "Texas Longhorns"
+opponent_rating = 5.76
+margin = -1
+location = "away"
+date = "2024-04-06"
+
+[[games]]
+opponent = "Tulsa Golden Hurricane"
+opponent_rating = -0.50
+margin = 8
+location = "home"
+date = "2024-04-16"
+notes = "Midweek non-conference game"

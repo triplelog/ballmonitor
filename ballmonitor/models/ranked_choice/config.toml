@@ -1,0 +1,108 @@
+[meta]
+title = "Ranked-choice re-rankings"
+version = "0.1.0"
+status = "draft"
+question = "Who would have won an award or been ranked where in a poll if the same published ballots were counted with a different ranked-choice method?"
+description = """
+Real voter-by-voter ballots (AP Top 25 football and basketball, BBWAA MLB awards, NBA media
+awards, PHWA NHL awards) are re-counted with a dozen ranked-ballot methods: the official
+points, Borda, plurality, instant runoff, Coombs, Baldwin, Bucklin, Copeland, Schulze,
+ranked pairs, minimax and Kemeny-Young. The output shows the chosen method's full ranking,
+each method's winner, where the methods disagree, the Condorcet winner (if any) and the most
+unusual ballots.
+"""
+assumptions = [
+  "The ballots are the ones the voters actually published; no ballot is imputed, re-weighted or invented.",
+  "Ballots are truncated (3 to 25 names). By default a candidate a voter left off is ranked below everyone on that ballot and tied with the other unranked candidates (param unranked).",
+  "Voters would have filled in the same ballot under any method. Real voters might rank differently (or strategically) if the counting rule changed.",
+  "Ties within a method are broken by official points, then first-place votes, then name - the same for every method.",
+  "Elimination methods (IRV, Coombs, Baldwin, Bucklin) rank places 2, 3, ... by removing the winner and re-running (param elimination_ordering).",
+  "Kemeny-Young is exact for up to kemeny_exact_max candidates; beyond that it is optimised exactly over the top places and by local search below (flagged as approximate).",
+]
+
+[web]
+hidden_params = []
+
+# When the scheduled site build (`ballmonitor update-and-build`) runs fetch.py: AP football polls
+# (preseason in August to the post-CFP final) and basketball polls (October to the post-Final
+# Four poll). Only new AP weeks are downloaded; award ballots are refreshed by hand.
+[fetch]
+auto = true
+season = ["08-01", "04-15"]
+
+# ------------------------------------------------------------------ what to show
+
+[params.method]
+value = "schulze"
+description = "The method whose full ranking is shown first (the 'Ranking' group). Every method in compare_methods is also counted."
+source = "Judgement: Schulze is a widely used Condorcet method (Schulze 2011) that handles truncated ballots and cycles."
+choices = ["official", "borda", "custom_points", "plurality", "irv", "coombs", "baldwin", "bucklin", "copeland", "schulze", "ranked_pairs", "minimax", "kemeny"]
+
+[params.compare_methods]
+value = ["official", "borda", "plurality", "irv", "coombs", "baldwin", "bucklin", "copeland", "schulze", "ranked_pairs", "minimax", "kemeny"]
+description = "Methods counted and compared (winner by method, where they disagree). Any of the choices of `method`."
+source = "Judgement: the common single-winner methods extended to full rankings."
+
+[params.show_places]
+value = 0
+description = "How many places the ranking and the disagreement table show; 0 = the contest's ballot length (25 for the AP poll, 10 for MLB MVP, ...)."
+unit = "places"
+source = "Judgement."
+range = [0, 60]
+
+[params.outlier_count]
+value = 5
+description = "How many of the most unusual ballots to list (largest footrule distance from the chosen method's ranking)."
+source = "Judgement."
+range = [0, 30]
+
+# ------------------------------------------------------------------ counting rules
+
+[params.unranked]
+value = "below"
+description = "Truncated ballots: 'below' = a candidate left off a ballot is beaten by every candidate on it (pairwise methods); 'ignore' = the ballot only counts pairs it ranks both of."
+source = "Judgement: 'below' is the usual reading of a top-k ballot (a voter who leaves a team off thinks it is not top-k); 'ignore' is the cautious alternative."
+choices = ["below", "ignore"]
+
+[params.pairwise_measure]
+value = "winning_votes"
+description = "How the strength of a pairwise win is measured in Schulze and ranked pairs: 'winning_votes' = ballots for the winner; 'margin' = winner's minus loser's ballots."
+source = "Schulze (2011) recommends winning votes; Tideman's ranked pairs is often stated with margins. Both are legitimate."
+choices = ["winning_votes", "margin"]
+
+[params.minimax_measure]
+value = "margin"
+description = "Minimax ranks by the strength of each candidate's worst pairwise defeat, measured as 'margin' or 'winning_votes'."
+source = "Judgement: margins are the textbook version (Simpson-Kramer)."
+choices = ["margin", "winning_votes"]
+
+[params.copeland_tie_score]
+value = 0.5
+description = "Copeland score for a pairwise tie (a win is 1, a loss 0)."
+source = "Judgement: 0.5 is the common convention (Copeland^0.5)."
+range = [0.0, 1.0]
+
+[params.elimination_ordering]
+value = "sequential"
+description = "How IRV, Coombs, Baldwin and Bucklin produce places 2, 3, ...: 'sequential' = remove the winner and run the method again for the next place; 'elimination_order' = one run, later-eliminated candidates rank higher."
+source = "Judgement: 'sequential' keeps each place a genuine winner among those left; 'elimination_order' is cheaper and common in IRV results reports."
+choices = ["sequential", "elimination_order"]
+
+[params.kemeny_exact_max]
+value = 10
+description = "Kemeny-Young is solved exactly (dynamic programming over subsets) for this many places at the top; with more candidates the rest is improved by local search and the result is flagged as approximate."
+unit = "candidates"
+source = "Judgement: exact Kemeny is NP-hard; 2^10 subsets is instant, 2^14 takes seconds in Python."
+range = [1, 14]
+
+# ------------------------------------------------------------------ positional formulas
+
+[formulas.borda_points]
+expr = "n_places + 1 - rank"
+description = "Borda points for a place on a ballot of length n_places (rank 1 = top). With 25 places this is the AP poll's own 25..1."
+variables = ["rank", "n_places"]
+
+[formulas.custom_points]
+expr = "1 / rank"
+description = "Points for method custom_points; the default 1, 1/2, 1/3, ... is the Dowdall (Nauru) system, which rewards top places more than Borda."
+variables = ["rank", "n_places"]

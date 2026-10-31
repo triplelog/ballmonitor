@@ -1,0 +1,229 @@
+{
+ "consts": {
+  "mbb": {
+   "seasons": 5,
+   "games": 26946,
+   "residual_sd": 10.58361089371335,
+   "home_advantage": 3.1617699600207825,
+   "total": 143.99695687671638
+  },
+  "wbb": {
+   "seasons": 5,
+   "games": 26041,
+   "residual_sd": 11.198813870699869,
+   "home_advantage": 2.855210398560889,
+   "total": 129.61664298606044
+  },
+  "nba": {
+   "seasons": 4,
+   "games": 4926,
+   "residual_sd": 12.366030932388494,
+   "home_advantage": 2.663938805865659,
+   "total": 213.04100690215185
+  },
+  "cfb": {
+   "seasons": 5,
+   "games": 3705,
+   "residual_sd": 14.452573013119945,
+   "home_advantage": 2.342636663986378,
+   "total": 56.58650472334683
+  },
+  "nfl": {
+   "seasons": 6,
+   "games": 1536,
+   "residual_sd": 12.297440528672839,
+   "home_advantage": 1.4432995606094279,
+   "total": 46.083984375
+  },
+  "mlb": {
+   "seasons": 5,
+   "games": 12129,
+   "residual_sd": 4.368892020966449,
+   "home_advantage": 0.13503776587414434,
+   "total": 9.065215598977657
+  },
+  "epl": {
+   "seasons": 5,
+   "games": 1900,
+   "residual_sd": 1.6050864758409218,
+   "home_advantage": 0.33789473684210525,
+   "total": 2.7442105263157894
+  },
+  "laliga": {
+   "seasons": 5,
+   "games": 1900,
+   "residual_sd": 1.5506835774101917,
+   "home_advantage": 0.39789473684210525,
+   "total": 2.6894736842105265
+  },
+  "bundesliga": {
+   "seasons": 5,
+   "games": 1530,
+   "residual_sd": 1.7571159455178338,
+   "home_advantage": 0.33398692810457514,
+   "total": 2.9758169934640524
+  },
+  "seriea": {
+   "seasons": 5,
+   "games": 1900,
+   "residual_sd": 1.526486575989596,
+   "home_advantage": 0.29157894736842105,
+   "total": 2.785263157894737
+  },
+  "ligue1": {
+   "seasons": 5,
+   "games": 1799,
+   "residual_sd": 1.5877116565047795,
+   "home_advantage": 0.3980838583342081,
+   "total": 2.5919955530850474
+  }
+ },
+ "overrides": {
+  "basketball_margin_sd": 10.6,
+  "home_advantage_basketball": 3.2,
+  "wbb_margin_sd": 11.2,
+  "home_advantage_wbb": 2.9,
+  "football_margin_sd": 13.8,
+  "home_advantage_football": 2.1,
+  "home_advantage_baseball": 0.14,
+  "mlb_total_runs": 9.1,
+  "home_advantage_soccer": 0.35,
+  "soccer_total_goals": 2.75
+ },
+ "chosen": "data_sd_cap2",
+ "dev_scores": {
+  "data_sd": 0.9897130006328517,
+  "data_sd_cap0.5": 0.9960444084141323,
+  "data_sd_cap1": 0.9839218755029523,
+  "data_sd_cap1.5": 0.9802357357719389,
+  "data_sd_cap2": 0.9798159553060296,
+  "data_sd_cap3": 0.980661968802936
+ },
+ "n_cases": 10960,
+ "n_test": 5855,
+ "n_dev": 5105,
+ "league_seasons_test": 63,
+ "extremes": {
+  "v0.5.0 defaults (no per-game cap), average baseline": 10.34935969654445,
+  "v0.5.0 constants, no cap, replacement baseline (v0.6.0 presets)": 14.03584785916505,
+  "data SD + per-game cap \u00b12\u03c3": 2.0,
+  "data SD + per-game cap \u00b12\u03c3, replacement baseline": 2.0
+ },
+ "presets": {
+  "mbb": {
+   "champion": {
+    "rank": 2,
+    "median": 23.900252671396483,
+    "n": 11
+   },
+   "top_4_seed": {
+    "rank": 16,
+    "median": 16.79121136672537,
+    "n": 11
+   },
+   "bubble": {
+    "rank": 45,
+    "median": 11.824017507673334,
+    "n": 11
+   },
+   "replacement": {
+    "rank": 300,
+    "median": -9.261947177158634,
+    "n": 11
+   }
+  },
+  "wbb": {
+   "champion": {
+    "rank": 2,
+    "median": 39.71190678567931,
+    "n": 11
+   },
+   "top_4_seed": {
+    "rank": 16,
+    "median": 23.559538167149203,
+    "n": 11
+   },
+   "bubble": {
+    "rank": 45,
+    "median": 15.863215754248769,
+    "n": 11
+   },
+   "replacement": {
+    "rank": 300,
+    "median": -13.390331409506478,
+    "n": 11
+   }
+  },
+  "cfb": {
+   "champion": {
+    "rank": 2,
+    "median": 30.679417895570786,
+    "n": 10
+   },
+   "top_4_seed": {
+    "rank": 4,
+    "median": 28.60780055026134,
+    "n": 10
+   },
+   "bubble": {
+    "rank": 12,
+    "median": 20.35738322740955,
+    "n": 10
+   },
+   "replacement": {
+    "rank": 120,
+    "median": -16.25005320262612,
+    "n": 10
+   }
+  },
+  "mlb": {
+   "champion": {
+    "rank": 2,
+    "median": 1.2659895114076836,
+    "n": 11
+   },
+   "top_4_seed": {
+    "rank": 6,
+    "median": 0.6838125994453167,
+    "n": 11
+   },
+   "bubble": {
+    "rank": 12,
+    "median": 0.2481323458769717,
+    "n": 11
+   },
+   "replacement": {
+    "rank": 30,
+    "median": -1.0826659310059328,
+    "n": 11
+   }
+  },
+  "soccer": {
+   "champion": {
+    "rank": 1,
+    "median": 1.5250000017060614,
+    "n": 55
+   },
+   "top_4_seed": {
+    "rank": 4,
+    "median": 0.5750000006432691,
+    "n": 55
+   },
+   "europa": {
+    "rank": 6,
+    "median": 0.30555555630019793,
+    "n": 55
+   },
+   "bubble": {
+    "rank": 17,
+    "median": -0.6250000006992055,
+    "n": 55
+   },
+   "replacement": {
+    "rank": 20,
+    "median": -1.1250000012585697,
+    "n": 41
+   }
+  }
+ }
+}

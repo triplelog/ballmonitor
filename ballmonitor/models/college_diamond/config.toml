@@ -1,0 +1,320 @@
+[meta]
+title = "College baseball & softball projections"
+version = "0.1.0"
+status = "calibrated"  # stub | draft | calibrated
+question = "From a date in an NCAA D-I baseball or softball season, how will a team finish, will it make the NCAA tournament, and how far will it go?"
+description = """
+Run-margin ridge ratings (compressed margins, last season as a prior, recency weights)
+drive a game-by-game Monte Carlo of the rest of the season: the actual remaining
+schedule, every conference tournament in its real format, an RPI-based committee proxy
+for the 64-team field, hosts and seeds, then regionals, super regionals and the College
+World Series. Every rule and tuned number is documented in MODEL.md and RESEARCH.md.
+"""
+assumptions = [
+  "Team strength is one number per team (runs per game vs an average D-I team on a neutral field); a per-team midweek offset is available but off by default because it did not improve out-of-sample predictions.",
+  "Ratings only change between simulations through their uncertainty draw; nothing inside one simulated season updates them (no hot streaks, injuries or pitching rotations).",
+  "The remaining schedule is the one that was actually played; for past seasons this means rainouts and cancellations are known (a small hindsight advantage). Neutral sites are known for baseball only.",
+  "The selection committee is approximated by RPI rank plus noise (fitted on 2015-2019 selections). The NCAA's unpublished RPI bonus/penalty, head-to-head, quadrant records and eye test are not modelled.",
+  "Regionals are filled on an S-curve with conference-mates kept apart; real committees place most teams by geography, which is not modelled.",
+  "A conference tournament that is under way at the as-of date is simulated from scratch; one already finished uses its real champion.",
+  "Reclassifying (ineligible) teams are treated as eligible; conference tournament formats come from data/conference_formats.json (a few are DRAFT approximations).",
+]
+
+# ── simulation ─────────────────────────────────────────────────────────────────
+[params.simulations]
+value = 500
+description = "Monte Carlo seasons per run."
+source = "Judgement (Monte Carlo error on a 50% probability is about 2 points at 500)."
+range = [20, 20000]
+
+[params.seed]
+value = 2026
+description = "Random seed (same seed and inputs give the same result)."
+source = "Convention."
+range = [0, 1000000000]
+
+[params.rating_uncertainty]
+value = 1.0
+description = "Multiplier on each team's rating-uncertainty draw per simulation (0 = ratings treated as exact)."
+source = "Judgement; sd = resid_sd / sqrt(games + ridge) is the ridge posterior sd. Checked in the backtest (RESEARCH.md)."
+range = [0.0, 3.0]
+
+[params.committee_noise]
+value = 1.0
+description = "Scale of the logistic noise added to selection and host scores (1 = the fitted logistic model's own uncertainty)."
+source = "RESEARCH.md selection study: scores are logistic-regression log-odds, so noise 1 reproduces their probabilities."
+range = [0.0, 5.0]
+
+[params.min_at_large_win_pct]
+value = 0.5
+description = "Minimum D-I winning percentage for an at-large bid."
+source = "NCAA D-I baseball pre-championship manual 2025-26 (at-large teams must be .500 or better vs D-I); assumed for softball (DRAFT, verify)."
+range = [0.0, 1.0]
+
+[params.field_size]
+value = 64
+description = "NCAA tournament field size."
+source = "NCAA pre-championship manuals (64 teams in both sports, 2015-2026)."
+range = [64, 64]
+
+[params.hosts]
+value = 16
+description = "Regional hosts (= the 16 national seeds in the model)."
+source = "NCAA manuals: 16 regionals; baseball seeds 16 nationally since 2018 (8 before), softball 16."
+range = [16, 16]
+
+[params.keep_conference_apart]
+value = true
+description = "Swap teams within a seed line so conference-mates are not in the same regional."
+source = "NCAA pre-championship manuals (conference-mates in different regionals where possible)."
+
+[params.conf_tourney_home]
+value = false
+description = "Give the top seed home-field edge in simulated conference tournament games."
+source = "Judgement (most tournaments are at one site; off = all neutral)."
+
+# ── RPI ────────────────────────────────────────────────────────────────────────
+[params.rpi_w_wp]
+value = 0.25
+description = "RPI weight on the team's winning percentage."
+source = "NCAA pre-championship manuals (25/50/25, both sports)."
+range = [0.0, 1.0]
+
+[params.rpi_w_owp]
+value = 0.5
+description = "RPI weight on opponents' winning percentage."
+source = "NCAA pre-championship manuals."
+range = [0.0, 1.0]
+
+[params.rpi_w_oowp]
+value = 0.25
+description = "RPI weight on opponents' opponents' winning percentage."
+source = "NCAA pre-championship manuals."
+range = [0.0, 1.0]
+
+[params.rpi_road_win]
+value = 1.3
+description = "Baseball RPI: weight of a road win (and of a home loss); home win / road loss count 2 - this."
+source = "NCAA baseball RPI since 2013 (ABCA 'Ground rules: understanding the new RPI'). Our RPI matches Warren Nolan's final baseball RPI ranks to ~1-4 places in the top 64 (RESEARCH.md)."
+range = [1.0, 2.0]
+
+[params.baseball_rpi_location]
+value = true
+description = "Baseball RPI weights wins/losses by site (road win 1.3, home win 0.7)."
+source = "NCAA baseball RPI since 2013."
+
+[params.softball_rpi_location]
+value = false
+description = "Softball RPI weights wins/losses by site."
+source = "No softball manual mentions site weighting; unweighted RPI matches Warren Nolan's 2023-24 softball ranks almost exactly (RESEARCH.md)."
+
+# ── baseball strength ──────────────────────────────────────────────────────────
+[params.baseball_margin_cap]
+value = 10.0
+description = "Baseball: run margins are capped at this many runs before the power transform."
+unit = "runs"
+source = "RESEARCH.md strength study (tuned on 2015-2019, walk-forward weekly log loss)."
+range = [1.0, 100.0]
+
+[params.baseball_margin_power]
+value = 0.7
+description = "Baseball: transformed margin = sign * min(|margin|, cap) ** power (compresses blowouts)."
+source = "RESEARCH.md strength study."
+range = [0.2, 1.0]
+
+[params.baseball_ridge]
+value = 8.0
+description = "Baseball: rating shrinkage toward the preseason prior, in phantom games."
+unit = "games"
+source = "RESEARCH.md strength study."
+range = [0.0, 100.0]
+
+[params.baseball_half_life_days]
+value = 120.0
+description = "Baseball: half-life of game weights by age (0 = all games equal)."
+unit = "days"
+source = "RESEARCH.md strength study (gain is small)."
+range = [0.0, 1000.0]
+
+[params.baseball_prior_carry]
+value = 1.0
+description = "Baseball: preseason prior = this times last season's final rating (centred)."
+source = "RESEARCH.md strength study (best value at the top of the searched grid 0-1)."
+range = [0.0, 1.5]
+
+[params.baseball_midweek_split]
+value = false
+description = "Baseball: fit a per-team midweek offset (Mon-Thu single games) on top of the weekend rating."
+source = "RESEARCH.md strength study: no out-of-sample gain, so off (variant 'midweek_split' turns it on)."
+
+[params.baseball_midweek_ridge]
+value = 25.0
+description = "Baseball: shrinkage of midweek offsets toward beta * rating, in phantom midweek games."
+unit = "games"
+source = "RESEARCH.md strength study (best when split is on)."
+range = [0.0, 1000.0]
+
+[params.baseball_midweek_beta]
+value = 0.0
+description = "Baseball: prior mean of a team's midweek offset per unit of its weekend rating."
+source = "RESEARCH.md strength study (searched -0.2..0.6)."
+range = [-1.0, 1.0]
+
+[params.baseball_midweek_weight]
+value = 1.0
+description = "Baseball: weight of midweek games in the rating fit."
+source = "RESEARCH.md strength study (down-weighting hurt weekend and postseason predictions)."
+range = [0.0, 1.0]
+
+[params.baseball_win_scale]
+value = 0.645
+description = "Baseball: P(win) = logistic(scale * rating difference incl. home edge)."
+source = "RESEARCH.md: maximum likelihood on 2015-2019 walk-forward predictions."
+range = [0.01, 5.0]
+
+[params.baseball_runs_per_unit]
+value = 1.807
+description = "Baseball: expected run margin per unit of rating difference (for display)."
+unit = "runs"
+source = "RESEARCH.md: least squares on 2015-2019 walk-forward predictions."
+range = [0.1, 10.0]
+
+[params.baseball_sel_rpi]
+value = 6.08
+description = "Baseball selection score: weight on -ln(RPI rank)."
+source = "RESEARCH.md selection study: logistic fit of at-large bids on 2015-2019 (RPI alone beat RPI + rating + win% out of sample)."
+range = [0.0, 30.0]
+
+[params.baseball_host_rpi]
+value = 6.45
+description = "Baseball host score: weight on -ln(RPI rank)."
+source = "RESEARCH.md selection study: logistic fit of hosts among the field, 2015-2019."
+range = [0.0, 30.0]
+
+# ── softball strength ──────────────────────────────────────────────────────────
+[params.softball_margin_cap]
+value = 100.0
+description = "Softball: run margins are capped at this many runs before the power transform."
+unit = "runs"
+source = "RESEARCH.md strength study (tuned on 2017-2019)."
+range = [1.0, 100.0]
+
+[params.softball_margin_power]
+value = 0.7
+description = "Softball: transformed margin = sign * min(|margin|, cap) ** power."
+source = "RESEARCH.md strength study."
+range = [0.2, 1.0]
+
+[params.softball_ridge]
+value = 8.0
+description = "Softball: rating shrinkage toward the preseason prior, in phantom games."
+unit = "games"
+source = "RESEARCH.md strength study."
+range = [0.0, 100.0]
+
+[params.softball_half_life_days]
+value = 60.0
+description = "Softball: half-life of game weights by age (0 = all games equal)."
+unit = "days"
+source = "RESEARCH.md strength study."
+range = [0.0, 1000.0]
+
+[params.softball_prior_carry]
+value = 1.0
+description = "Softball: preseason prior = this times last season's final rating (centred)."
+source = "RESEARCH.md strength study (top of the searched grid)."
+range = [0.0, 1.5]
+
+[params.softball_midweek_split]
+value = false
+description = "Softball: fit a per-team midweek offset on top of the weekend rating."
+source = "RESEARCH.md strength study: gain below 0.001 log loss on 2017-2019, worse on 2021-2026."
+
+[params.softball_midweek_ridge]
+value = 25.0
+description = "Softball: shrinkage of midweek offsets, in phantom midweek games."
+unit = "games"
+source = "RESEARCH.md strength study."
+range = [0.0, 1000.0]
+
+[params.softball_midweek_beta]
+value = 0.0
+description = "Softball: prior mean of a team's midweek offset per unit of its rating."
+source = "RESEARCH.md strength study."
+range = [-1.0, 1.0]
+
+[params.softball_midweek_weight]
+value = 1.0
+description = "Softball: weight of midweek games in the rating fit."
+source = "RESEARCH.md strength study."
+range = [0.0, 1.0]
+
+[params.softball_win_scale]
+value = 0.781
+description = "Softball: P(win) = logistic(scale * rating difference incl. home edge)."
+source = "RESEARCH.md: maximum likelihood on 2017-2019 walk-forward predictions."
+range = [0.01, 5.0]
+
+[params.softball_runs_per_unit]
+value = 1.776
+description = "Softball: expected run margin per unit of rating difference (for display)."
+unit = "runs"
+source = "RESEARCH.md: least squares on 2017-2019 walk-forward predictions."
+range = [0.1, 10.0]
+
+[params.softball_sel_rpi]
+value = 5.79
+description = "Softball selection score: weight on -ln(RPI rank)."
+source = "RESEARCH.md selection study: logistic fit of at-large bids on 2017-2019."
+range = [0.0, 30.0]
+
+[params.softball_host_rpi]
+value = 8.69
+description = "Softball host score: weight on -ln(RPI rank)."
+source = "RESEARCH.md selection study: logistic fit of hosts among the field, 2017-2019."
+range = [0.0, 30.0]
+
+# ── committee extras (both sports; 0 = RPI only) ───────────────────────────────
+[params.sel_rating]
+value = 0.0
+description = "Selection score: weight on -ln(rating rank) (committee 'eye test' proxy)."
+source = "RESEARCH.md selection study: adding it did not improve 2021-2026 predictions; kept for experiments."
+range = [-10.0, 30.0]
+
+[params.sel_wpct]
+value = 0.0
+description = "Selection score: weight on D-I winning percentage."
+source = "RESEARCH.md selection study (no out-of-sample gain)."
+range = [-30.0, 30.0]
+
+[params.host_rating]
+value = 0.0
+description = "Host score: weight on -ln(rating rank)."
+source = "RESEARCH.md selection study (mixed: better log loss, worse Brier for baseball)."
+range = [-10.0, 30.0]
+
+[params.host_wpct]
+value = 0.0
+description = "Host score: weight on D-I winning percentage."
+source = "RESEARCH.md selection study."
+range = [-30.0, 30.0]
+
+[formulas.win_probability]
+expr = "logistic(scale * diff)"
+description = "Chance the first team wins a game; diff = rating difference plus home edge (transformed-margin units); scale is the sport's win_scale."
+variables = ["diff", "scale"]
+
+[formulas.selection_score]
+expr = "-sel_rpi * log(rpi_rank) - sel_rating * log(rating_rank) + sel_wpct * win_pct"
+description = "Committee proxy for at-large selection and seed lines 2-4 (higher = better); logistic noise is added per simulation."
+variables = ["rpi_rank", "rating_rank", "win_pct", "sel_rpi"]
+
+[formulas.host_score]
+expr = "-host_rpi * log(rpi_rank) - host_rating * log(rating_rank) + host_wpct * win_pct"
+description = "Committee proxy for the 16 hosts / national seeds among the field (higher = better)."
+variables = ["rpi_rank", "rating_rank", "win_pct", "host_rpi"]
+
+[formulas.rating_sd]
+expr = "rating_uncertainty * resid_sd / sqrt(games + ridge)"
+description = "Standard deviation of a team's rating draw in each simulation."
+variables = ["resid_sd", "games", "ridge"]

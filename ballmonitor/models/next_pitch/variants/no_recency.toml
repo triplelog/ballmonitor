@@ -1,0 +1,4 @@
+description = "Context tree with all history weighted equally (no recency decay)."
+[params]
+method = "tree"
+half_life_days = 0.0

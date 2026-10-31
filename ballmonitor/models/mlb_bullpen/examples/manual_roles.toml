@@ -1,0 +1,59 @@
+# Hand-made example: New York Yankees (home) vs Los Angeles Dodgers (away)
+# PLACEHOLDER: names are real 2024 Yankees pitchers, but the lineup handedness and
+# the trailing pitch counts below are illustrative, not taken from a real game.
+# Roles are given explicitly here (no usage history), so the usage term is 0.
+starter_name = "Gerrit Cole"
+starter_hand = "R"
+starter_stamina = 95
+is_home = true
+
+# Opponent lineup batting order (handedness: "R", "L", "S")
+lineup = ["R", "L", "R", "L", "R", "R", "L", "R", "S"]
+
+[[relievers]]
+name = "Clay Holmes"
+hand = "R"
+role = "closer"
+pitches_days = [0, 14, 0, 18, 0]
+
+[[relievers]]
+name = "Luke Weaver"
+hand = "R"
+role = "setup"
+pitches_days = [15, 0, 12, 0, 0]
+
+[[relievers]]
+name = "Tommy Kahnle"
+hand = "R"
+role = "setup"
+pitches_days = [0, 0, 20, 0, 0]
+
+[[relievers]]
+name = "Ian Hamilton"
+hand = "R"
+role = "middle"
+pitches_days = [0, 0, 0, 18, 0]
+
+[[relievers]]
+name = "Tim Hill"
+hand = "L"
+role = "middle"
+pitches_days = [10, 0, 0, 0, 0]
+
+[[relievers]]
+name = "Tim Mayza"
+hand = "L"
+role = "middle"
+pitches_days = [0, 0, 0, 0, 0]
+
+[[relievers]]
+name = "Marcus Stroman"
+hand = "R"
+role = "long"
+pitches_days = [0, 0, 0, 0, 45]
+
+[[relievers]]
+name = "Jake Cousins"
+hand = "R"
+role = "middle"
+pitches_days = [28, 16, 0, 0, 0]

@@ -1,0 +1,176 @@
+.table_fullw {
+	width: 100%;
+}
+
+.sm_table {
+	font-size: .8rem;
+}
+
+.stats_table tbody tr:nth-of-type(2n+1).myTeam {
+	border: 2px solid red;
+}
+
+.stats_table tbody tr:nth-of-type(2n+0).myTeam {
+	border: 2px solid red;
+}
+
+.stats_table thead tr {
+	background: rgba(var(--red),var(--green),var(--blue),1);
+}
+
+.stats_table tbody tr:nth-of-type(2n+1) {
+	background: rgba(150,0,50,.1);
+	color: black;
+}
+
+.stats_table tbody tr:nth-of-type(2n+0) {
+	background: rgba(50,0,200,.2);
+	color: black;
+}
+
+
+.stats_table tbody td {
+	min-width: 2rem;
+}
+
+.stats_table.stats_table_sm tbody td {
+	min-width: 1rem;
+}
+
+.stats_table td {
+	border: 1px dotted rgba(50,0,200,.5);
+	border-width: 0px 1px 0px 1px;
+	text-align: right;
+	padding: 0rem .3rem 0rem .3rem;
+	
+}
+
+
+.stats_table thead tr {
+	border: 1px solid black;
+	text-align: center;
+}
+
+.stats_table {
+	border: 1px solid black;
+	--red: 78;
+	--green: 54;
+	--blue: 41;
+	color: white;
+	margin: 1rem;
+	
+}
+
+
+
+table.ANA_primary {
+	--red: 0;
+	--green: 50;
+	--blue: 99;
+	color: white;
+}
+
+table.ANA_secondary {
+	--red: 186;
+	--green: 0;
+	--blue: 33;
+	color: white;
+}
+
+table.CHN_primary {
+	--red: 14;
+	--green: 51;
+	--blue: 134;
+	color: white;
+}
+
+table.CHN_secondary {
+	--red: 204;
+	--green: 52;
+	--blue: 51;
+	color: white;
+}
+
+table.CHA_primary {
+	--red: 39;
+	--green: 37;
+	--blue: 31;
+	color: white;
+}
+
+table.CHA_secondary {
+	--red: 196;
+	--green: 206;
+	--blue: 212;
+	color: black;
+}
+
+table.BAL_primary {
+	--red: 223;
+	--green: 70;
+	--blue: 1;
+	color: white;
+}
+
+table.BAL_secondary {
+	--red: 39;
+	--green: 37;
+	--blue: 31;
+	color: white;
+}
+
+table.ARI_primary {
+	--red: 167;
+	--green: 25;
+	--blue: 48;
+	color: white;
+}
+
+table.ARI_secondary {
+	--red: 227;
+	--green: 212;
+	--blue: 173;
+	color: black;
+}
+
+table.ATL_primary {
+	--red: 206;
+	--green: 17;
+	--blue: 65;
+	color: white;
+}
+
+table.ATL_secondary {
+	--red: 19;
+	--green: 39;
+	--blue: 79;
+	color: white;
+}
+
+table.BOS_primary {
+	--red: 189;
+	--green: 48;
+	--blue: 57;
+	color: white;
+}
+
+table.BOS_secondary {
+	--red: 12;
+	--green: 35;
+	--blue: 64;
+	color: white;
+}
+
+table.CIN_primary {
+	--red: 198;
+	--green: 1;
+	--blue: 31;
+	color: white;
+}
+
+table.CIN_secondary {
+	--red: 0;
+	--green: 0;
+	--blue: 0;
+	color: white;
+}

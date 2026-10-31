@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Ball Monitor</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mini.css/3.0.1/mini-default.min.css">
+  <link rel="stylesheet" href="css/multirange.css">
+  <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>-->
+
+    
+
+</head>
+
+<body>
+	<template id="stats">
+		<style>
+			#career-location, #season-location {
+				flex: 1;
+				padding: 5px;
+				font-size: .8rem;
+				line-height: .8rem;
+				margin-left:auto; 
+				margin-right:auto;
+			}
+			#awayoff-location{
+				border-style: solid; border-width: 0px 1px 0px 0px;
+				
+			}
+			#away-info, #home-info {
+				flex: 1 0 25%;
+			}
+			#linescore-location {
+				flex: 2 0 50%;
+			}
+			#linescore-location table{
+				margin-left:auto; 
+				margin-right:auto;
+			}
+			
+			#statLeaders table {
+				border: 1px solid black;
+			}
+			#statsHead {
+				display: block;
+				border: 1px solid red;
+				text-align: center;
+			}
+			#statsEdit {
+				display: block;
+				border: 1px solid red;
+				text-align: center;
+			}
+			.tr1 td {border-style: dashed; border-width: 1px 0px 0px 0px;}
+			.tr2 td {border-style: dashed; border-width: 0px 0px 0px 0px;}
+			
+		</style>
+		<div id="container">
+		  <div id="statsHead">2018 Stat Leaders <button>Edit</button><button>Hide</button></div>
+		  <div id="statsEdit"></div>
+		  <div style="display: flex; flex-wrap: wrap; flex-direction: row;" id="statLeaders">
+			
+		  </div>
+
+		  <div style="display: flex;">
+			<div id="season-location">
+				<table>
+					<thead>
+						<tr>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+					<tfoot>
+						<tr>
+						</tr>
+					</tfoot>
+				</table>
+				<hr>
+				<div id="regular-extra">
+				</div>
+			</div>
+		  </div>
+		</div>
+	</template>
+	<template id="standings">
+		<style>
+			#container {
+				display: flex;
+				border: 1px solid black;
+			}
+			#container table {
+				border-collapse: collapse;
+			}
+			#container tr {
+				border: 0px solid black;
+				border-bottom: 1px solid rgb(200,200,200);
+			}
+			#container thead th {
+				text-align: right;
+			}
+			#container tbody tr:last-child {
+				border: 0px solid black;
+				border-bottom: 0px dotted black;
+			}
+			#standingsHead {
+				display: block;
+				border: 1px solid red;
+				text-align: center;
+			}
+			#standingsFoot {
+				display: block;
+				border: 1px solid red;
+			}
+			#NL, #AL {
+				flex: 1;
+				font-size: .9rem;
+				line-height: .9rem;
+			}
+			.division-div {
+				display: block;
+			}
+			.divName {
+				display: inline-block;
+				writing-mode: vertical-lr;
+				text-align: center;
+				transform: rotate(180deg);
+			}
+			.division-table {
+				display: inline-block;
+				border: 1px solid black;
+				width: 30rem;
+			}
+			.headButton {
+				margin-right: 0px;
+			}
+			#slider {
+				width: 500px;
+			}
+			@supports (--css: variables) {
+				input[type="range"].multirange {
+					padding: 0;
+					margin: 0;
+					display: inline-block;
+					vertical-align: top;
+				}
+
+				input[type="range"].multirange.original {
+					position: absolute;
+				}
+
+					input[type="range"].multirange.original::-webkit-slider-thumb {
+						position: relative;
+						z-index: 2;
+					}
+
+					input[type="range"].multirange.original::-moz-range-thumb {
+						transform: scale(1); /* FF doesn't apply position it seems */
+						z-index: 1;
+					}
+
+					input[type="range"].multirange::-moz-range-track {
+						border-color: transparent; /* needed to switch FF to "styleable" control */
+					}
+
+				input[type="range"].multirange.ghost {
+					position: relative;
+					background: var(--track-background);
+					--track-background: linear-gradient(to right,
+							transparent var(--low), var(--range-color) 0,
+							var(--range-color) var(--high), transparent 0
+						) no-repeat 0 45% / 100% 40%;
+					--range-color: hsl(190, 80%, 40%);
+				}
+
+					input[type="range"].multirange.ghost::-webkit-slider-runnable-track {
+						background: var(--track-background);
+					}
+
+					input[type="range"].multirange.ghost::-moz-range-track {
+						background: var(--track-background);
+					}
+
+			}
+
+		</style>
+		<div id="standingsHead">2018 Standings</div>
+		<div id="container">
+		  <div id="NL"></div>
+		  <div id="AL"></div>
+		</div>
+		<div id="standingsFoot"><input id="slider" type="range" multiple value="0,80" /><button class="headButton">Playoffs</button><button class="headButton">Wild Card</button></div>
+	</template>
+	<template id="sortableStats">
+		<style>
+			#container {
+				display: flex;
+				border: 1px solid black;
+			}
+			#standingsHead {
+				display: block;
+				border: 1px solid red;
+				text-align: center;
+			}
+			#standingsFoot {
+				display: block;
+				border: 1px solid red;
+			}
+			#NL, #AL {
+				flex: 1;
+				font-size: .9rem;
+				line-height: .9rem;
+			}
+			.headButton {
+				margin-right: 0px;
+			}
+			#slider {
+				width: 500px;
+			}
+			#statsHead {
+				display: block;
+				border: 1px solid red;
+				text-align: center;
+			}
+			#statsEdit {
+				display: block;
+				border: 1px solid red;
+				text-align: center;
+			}
+			.paginate { display: inline-block;}
+		    .paginate a {color: black; float: left; padding: 2px 4px;text-decoration: none;}
+			.paginate a.active {background-color: #4CAF50;color: white;}
+			.paginate a:hover:not(.active) {background-color: #ddd;}
+			.paginate a:hover {cursor: pointer;}
+			
+
+		</style>
+		<div id="statsHead">2018 Sortable Stats <button>Edit</button><button>Hide</button></div>
+
+	</template>
+	<!--<div>Standings</div>
+	<div>Stat leaders by ind and team</div>
+	<div>Sortable Stats</div>-->
+	<header style="border: 0px solid black; background: rgb(255,255,255); background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(102,204,204,1) 100%);">
+	  <a href="index.html" class="logo"><img src="img/logo.png" style="max-width: 150px; vertical-align:middle;"/></a>
+	  <a href="stats.html" class="button" style="background: rgba(245, 238, 236,0);">Stats</a>
+	  <a href="player.html" class="button" style="background: rgba(245, 238, 236,0);">Players</a>
+	  <a href="team.html" class="button" style="background: rgba(245, 238, 236,0);">Teams</a>
+	  <a href="season.html" class="button" style="background: rgba(245, 238, 236,0);">Seasons</a>
+	  <a href="boxscore.html" class="button" style="background: rgba(245, 238, 236,0);">Games</a>
+	  
+	</header>
+	<div id="content">
+		
+		<season-standings></season-standings>
+		<season-stats></season-stats>
+		<tabdn-season style="display: inline-block;" src="xl09p" autoload="true"></tabdn-season>
+	</div>
+	
+	  <script src="https://unpkg.com/popper.js@1"></script>
+	  <script src="https://unpkg.com/tippy.js@5"></script>
+	  <script src="js/multirange.js"></script>
+	  <script src="js/papaparse.min.js"></script>
+	  <script src="js/tabdnmain.js"></script>
+	  <script src="js/season.js"></script>
+	  
+
+	  
+	  
+
+	  
+	  
+
+
+</body>
+
+</html>

@@ -1,0 +1,9 @@
+description = "Benchmark: the regressed platoon Log5 baseline alone (no direct BvP history, archetype pool or micro-simulation)."
+
+[params]
+max_archetype_weight = 0.0
+microsim_weight = 0.0
+microsim_weight_rates = 0.0
+
+[formulas]
+bvp_weight = "0.0 * n_direct"

@@ -1,0 +1,285 @@
+[meta]
+title = "Race podium prediction"
+version = "0.8.0"
+status = "calibrated"
+question = "What times will place 1st through 5th in a given race division?"
+description = """
+Predicts division 1st-5th place times for a race edition from earlier editions of the same
+division: each edition's place times are shifted to the expected field size with normal
+order scores, weighted by recency and field size, and shrunk toward a cross-division prior
+(the race's gender-open winners times an age factor). Adds aging-in contenders, overall-award
+exclusion and weather adjustment. Interval widths are fitted walk-forward on real races.
+"""
+assumptions = [
+  "Finishing times within a division are roughly log-normal, so the k-th fastest of N sits at an expected normal order score.",
+  "A race's earlier editions are representative of the next one (same course, similar conditions); recency_decay can down-weight older ones.",
+  "Without a field_size, the division's field is the recency-weighted mean of earlier editions.",
+  "Top contenders from the prior edition return with probability repeat_runner_prob; runners aging into the bracket slow by the age curve.",
+  "Overall race podium finishers are excluded from age-group awards ('no double dipping').",
+  "Interval widths come from real races without weather inputs, so they already include ordinary weather variation.",
+]
+
+[params.time_spread]
+value = 0.09
+description = "Spread (log-SD) of finishing times in a division, used to shift an edition's k-th place time to a different field size via expected normal order scores."
+unit = "log-SD"
+source = "Walk-forward study, RESEARCH.md (v0.8): refitted on all 7,202 RunSignup division-years from 96 races; out-of-sample fits per test year 2022-2026 in the same report"
+range = [0.0, 0.40]
+
+[params.recency_decay]
+value = 0.7
+description = "Weight of an edition per year back (1.0 = all earlier editions equal; 0.7 = last year counts 1, two years ago 0.7, ...). Also weights the expected field size."
+unit = "per year"
+source = "Walk-forward study, RESEARCH.md (v0.8): refitted on all 7,202 RunSignup division-years from 96 races; out-of-sample fits per test year 2022-2026 in the same report"
+range = [0.0, 1.0]
+
+[params.edition_weight_half_n]
+value = 10.0
+description = "An edition of N division finishers gets weight N / (N + this): tiny divisions (often walkers) count little."
+unit = "finishers"
+source = "Walk-forward study, RESEARCH.md (v0.8): refitted on all 7,202 RunSignup division-years from 96 races; out-of-sample fits per test year 2022-2026 in the same report"
+range = [0.0, 500.0]
+
+[params.prior_weight]
+value = 0.5
+description = "Weight, in editions, of the cross-division prior (gender-open winners x age factor, shifted to this division's field) when shrinking the division's own history."
+unit = "editions"
+source = "Walk-forward study, RESEARCH.md (v0.8): refitted on all 7,202 RunSignup division-years from 96 races; out-of-sample fits per test year 2022-2026 in the same report"
+range = [0.0, 20.0]
+
+[params.order_score_alpha]
+value = 0.375
+description = "Plotting-position constant in the expected normal order score of the k-th fastest of N: Phi^-1((k - a) / (N + 1 - 2a))."
+unit = "constant"
+source = "Blom (1958), Statistical Estimates and Transformed Beta-Variables"
+range = [0.0, 0.5]
+
+[params.open_ended_age_cap]
+value = 85
+description = "Upper age used for the mid-age of an open-ended bracket (e.g. 75+ -> mid-age 80) when looking up its age factor."
+unit = "years"
+source = "Judgement"
+range = [60, 100]
+
+[params.sigma_year_pct]
+value = 5.18
+description = "Inter-edition 1-sigma (%) of a division place time (course, weather, who turns up). Fitted on races without weather inputs, so it already includes ordinary weather variation."
+unit = "pct"
+source = "Walk-forward study, RESEARCH.md (v0.8): refitted on all 7,202 RunSignup division-years from 96 races; out-of-sample fits per test year 2022-2026 in the same report"
+range = [0.0, 30.0]
+
+[params.sigma_field_pct]
+value = 2.47
+description = "Extra 1-sigma (%) at N = sigma_field_ref_n from the luck of a small field; scales as sqrt(sigma_field_ref_n / N)."
+unit = "pct"
+source = "Walk-forward study, RESEARCH.md (v0.8): refitted on all 7,202 RunSignup division-years from 96 races; out-of-sample fits per test year 2022-2026 in the same report"
+range = [0.0, 30.0]
+
+[params.sigma_field_ref_n]
+value = 100.0
+description = "Field size at which sigma_field_pct applies."
+unit = "finishers"
+source = "Definition (reference point for sigma_field_pct)"
+range = [1.0, 1000.0]
+
+[params.repeat_runner_prob]
+value = 0.40
+description = "Baseline probability that a top contender or aging-in runner from the previous year returns."
+unit = "probability"
+source = "DRAFT (Judgement) — verify from repeat finishers in data/runsignup/finishes.csv"
+range = [0.0, 1.0]
+
+[params.annual_aging_decline_pct]
+value = 0.75
+description = "Annual performance slowdown percentage applied to returning runners aging across the boundary."
+unit = "pct"
+source = "WMA / USATF master age-grading standards (~0.5% to 1.0% per year for ages 35-65)."
+range = [0.0, 5.0]
+
+[params.heat_penalty_per_deg]
+value = 0.05
+description = "Percentage slowdown per degree Fahrenheit of (Temp + Dew Point - 100)."
+unit = "pct"
+source = "DRAFT ('temp + dew point' rule of thumb; cf. Ely et al. 2007) — verify"
+range = [0.0, 0.20]
+
+[params.cold_penalty_per_deg]
+value = 0.08
+description = "Percentage slowdown per degree Fahrenheit below freezing (32°F)."
+unit = "pct"
+source = "DRAFT (Judgement) — verify"
+range = [0.0, 0.30]
+
+[params.weather_dist_exponent]
+value = 0.18
+description = "Distance scaling exponent for weather penalty: longer races incur compounding thermal drift."
+unit = "exponent"
+source = "DRAFT (Judgement) — verify"
+range = [0.0, 0.50]
+
+[params.overall_awards_count]
+value = 3
+description = "Number of overall male/female awards excluded from age-group divisions ('no double dipping')."
+unit = "count"
+source = "Standard USATF / RRCA road race rulebook."
+range = [0, 10]
+
+[params.interval_level]
+value = 0.80
+description = "Central confidence interval coverage for predicted finishing times."
+unit = "probability"
+source = "Standard project default."
+range = [0.50, 0.99]
+
+[params.min_tail_spread_sec]
+value = 2.0
+description = "Minimum time difference in seconds between consecutive podium positions."
+unit = "seconds"
+source = "Judgement"
+range = [0.5, 30.0]
+
+[params.no_history_sigma_pct]
+value = 15.0
+description = "1-sigma (%) of the rough judgement default used when there is no history and no open information at all."
+unit = "pct"
+source = "DRAFT (Judgement; the default pace is a guess) — verify"
+range = [0.1, 50.0]
+
+[params.min_aging_sigma_sec]
+value = 5.0
+description = "Floor on the sigma (s) used in aging_win_probability so a single edition cannot give certainty."
+unit = "seconds"
+source = "Judgement"
+range = [1.0, 120.0]
+
+[params.missing_rank_gap_sec]
+value = 30.0
+description = "Gap (s) added per missing place when fewer than 6 times are known for an edition."
+unit = "seconds"
+source = "Judgement"
+range = [1.0, 300.0]
+
+[params.overall_exclusion_prob_m40]
+value = 0.15
+description = "Chance an M 40-44 runner takes an overall award (removing them from the division) when results data cannot estimate it."
+unit = "probability"
+source = "DRAFT (Judgement) — verify from overall top-3 ages in finishes.csv"
+range = [0.0, 0.5]
+
+[params.overall_exclusion_prob_m35_45]
+value = 0.10
+description = "Same, for M 35-39 and M 45-49 divisions."
+unit = "probability"
+source = "DRAFT (Judgement) — verify from overall top-3 ages in finishes.csv"
+range = [0.0, 0.5]
+
+[params.overall_exclusion_prob_f35_40]
+value = 0.08
+description = "Same, for F 35-39 and F 40-44 divisions."
+unit = "probability"
+source = "DRAFT (Judgement) — verify from overall top-3 ages in finishes.csv"
+range = [0.0, 0.5]
+
+[params.max_overall_exclusion_prob]
+value = 0.40
+description = "Cap on the overall-award exclusion probability estimated from results data."
+unit = "probability"
+source = "Judgement"
+range = [0.0, 1.0]
+
+[params.default_gaps_sec]
+value = [25.0, 55.0, 90.0, 125.0, 160.0]
+description = "Gaps (s) from 1st to 2nd..6th place used when history does not provide them (summary-only, open-baseline or no-history modes); scaled by the age factor where one applies."
+unit = "seconds"
+source = "DRAFT (Judgement) — verify against top-5 gaps in finishes.csv"
+
+[params.default_field_size]
+value = 100
+description = "Division field size assumed when none is given and there is no history (also the default field_size of a history edition)."
+unit = "finishers"
+source = "Judgement"
+range = [1, 100000]
+
+[params.default_distance_m]
+value = 10000.0
+description = "Race distance (m) assumed when no distance is given."
+unit = "m"
+source = "Judgement"
+range = [1000.0, 100000.0]
+
+[params.max_history_years]
+value = 5
+description = "Earlier editions to look for when results_url is given."
+unit = "editions"
+source = "Judgement"
+range = [1, 20]
+
+[params.board_total_field_threshold]
+value = 150
+description = "In division boards (bracket_mode), a field_size above this is read as the whole race's size and split into divisions; at or below it, it is used as each division's size."
+unit = "finishers"
+source = "Judgement (was hard-coded in v0.7)"
+range = [1, 100000]
+
+[params.default_open_pace_m]
+value = 195.0
+description = "No-history fallback: open men's winning pace (s/km) at 1 km, scaled by km ** default_open_exponent."
+unit = "s/km"
+source = "DRAFT (Judgement; typical small-race winner) — verify"
+range = [150.0, 400.0]
+
+[params.default_open_pace_f]
+value = 220.0
+description = "No-history fallback: open women's winning pace (s/km) at 1 km, scaled by km ** default_open_exponent."
+unit = "s/km"
+source = "DRAFT (Judgement; typical small-race winner) — verify"
+range = [150.0, 450.0]
+
+[params.default_open_exponent]
+value = 1.06
+description = "No-history fallback: Riegel exponent for scaling the open winner's time with distance."
+unit = "exponent"
+source = "Riegel (1981)"
+range = [1.0, 1.2]
+
+# Formulas
+
+[formulas.order_score_shift]
+expr = "time_spread * (score_target - score_edition)"
+description = "Log-time shift moving an earlier edition's k-th place to the target field size (scores: expected normal order scores; bigger field -> more negative score -> faster)."
+variables = ["score_target", "score_edition"]
+
+[formulas.edition_weight]
+expr = "recency_decay ** years_back * n / (n + edition_weight_half_n)"
+description = "Weight of an earlier edition: recency times field-size reliability."
+variables = ["years_back", "n"]
+
+[formulas.shrunk_log_time]
+expr = "(own_weight * own + prior_weight * prior) / (own_weight + prior_weight)"
+description = "Shrinks the division's own log-time estimate toward the cross-division prior."
+variables = ["own", "own_weight", "prior"]
+
+[formulas.place_sigma_pct]
+expr = "sqrt((sigma_year_pct ** 2 + sigma_field_pct ** 2 * sigma_field_ref_n / max(n, 1)) * (1 + 1 / weight))"
+description = "1-sigma (%) of a place time: inter-edition + small-field noise, inflated when the estimate rests on little weight (few or tiny earlier editions)."
+variables = ["n", "weight"]
+
+[formulas.aged_time]
+expr = "prior_time * (1.0 + annual_aging_decline_pct / 100.0)"
+description = "Projects prior year runner time into the current year accounting for biological aging."
+variables = ["prior_time"]
+
+[formulas.aging_win_probability]
+expr = "repeat_runner_prob * normal_cdf((t_field - t_projected) / max(sigma, 1.0))"
+description = "Probability that an aging-in contender from the lower bracket wins 1st place."
+variables = ["t_field", "t_projected", "sigma"]
+
+[formulas.weather_penalty]
+expr = "(max(0.0, temp_f + dew_point_f - 100.0) * heat_penalty_per_deg + max(0.0, 32.0 - temp_f) * cold_penalty_per_deg) * ((distance_m / 5000.0) ** weather_dist_exponent)"
+description = "Percentage time penalty from heat/humidity (dew point) or extreme cold, scaled by distance."
+variables = ["temp_f", "dew_point_f", "distance_m"]
+
+[formulas.weather_adjusted_time]
+expr = "time_neutral * (1.0 + weather_penalty_pct / 100.0)"
+description = "Adjusts weather-neutral time for target race-day temperature and dew point conditions."
+variables = ["time_neutral", "weather_penalty_pct"]

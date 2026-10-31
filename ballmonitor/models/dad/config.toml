@@ -1,0 +1,714 @@
+[meta]
+title = "DAD (Deviations Above Default)"
+version = "0.7.0"
+status = "calibrated"
+question = "How many per-game standard deviations better than a chosen default team (bubble, champion, average, replacement) is a team, and how many wins above that default did its schedule produce?"
+description = """
+DAD compares a team with a chosen default team (bubble, top-4 seed, champion,
+average or replacement level) against the same schedule. Since v0.7.0 it keeps two
+questions apart. STRENGTH (primary): the team's opponent-adjusted margin per game
+(margin + opponent rating - home edge), shrunk toward average by a few phantom
+average games, minus the default team's rating, divided by the per-game margin
+SD -> "DAD per game" in sigma, plus the same gap in points/goals/runs and as a win
+chance vs the default. RESUME: Total DAD (sum over games of (margin - default's
+expected spread) / sigma) and WAD, wins above default (result minus the chance the
+default team would have won that game). The v0.6.0 probit DAD is kept as the
+v06_probit variant (dad_scale = probit). Supports basketball (men's and women's),
+football, soccer, MLB, college baseball and college softball.
+"""
+assumptions = [
+  "Opponent and baseline ratings are least-squares margin ratings (points/goals/runs per game vs an average team on a neutral field), as in data/team_ratings.csv; the model takes them as given.",
+  "A game's margin is the performance signal, uncapped: in RESEARCH_STRENGTH.md no cap, tanh/log compression or win bonus predicted future games better than the raw margin.",
+  "Strength shrinks toward the league average by prior_games phantom average games (tuned per sport family: basketball 1, football 2, MLB 32, soccer 4); all games count equally unless a half-life is set.",
+  "Deviations are measured in per-game margin SDs (10.6 pts MBB, 11.2 WBB, 13.8 football, 1.6 goals, 4.4 runs MLB); win chances vs the default use the normal CDF, Skellam (soccer) or Pythagorean (baseball).",
+  "Home advantage is one additive edge per sport (3.2 pts MBB/NBA, 2.9 WBB, 2.1 football, 0.35 goals, 0.14 runs).",
+  "WAD counts results only (win 1, draw 1/2, loss 0) against the chance the default team wins the same game; margins do not enter WAD.",
+  "Game weights (derbies, cups, college weekend/midweek/postseason) scale the résumé totals (Total DAD, WAD) but not the strength rating.",
+  "College baseball and softball constants are judgement values: no complete public game data to test them.",
+]
+
+[params.default_baseline]
+value = "bubble"
+description = "Default comparison baseline if not explicitly specified in input."
+source = "Judgement."
+choices = ["bubble", "champion", "top_4_seed", "average", "replacement"]
+
+[params.basketball_margin_sd]
+value = 10.6
+description = "Standard deviation of men's basketball margin of victory in points."
+source = "RESEARCH.md (dad v0.6.0 study): residual SD of margin around full-season least-squares ratings, NCAA men's D-I 2016-2020 (26,946 games). v0.5.0: 11.0."
+unit = "points"
+range = [5.0, 20.0]
+
+[params.wbb_margin_sd]
+value = 11.2
+description = "Standard deviation of women's basketball margin of victory in points."
+source = "RESEARCH.md (dad v0.6.0 study): residual SD, NCAA women's D-I 2016-2020 (26,041 games). v0.5.0: 12.5."
+unit = "points"
+range = [6.0, 22.0]
+
+[params.football_margin_sd]
+value = 13.8
+description = "Standard deviation of football margin of victory in points."
+source = "RESEARCH.md (dad v0.6.0 study): residual SD pooled FBS (14.45) + NFL (12.30), 2015-2020. Unchanged."
+unit = "points"
+range = [7.0, 25.0]
+
+[params.football_key_number_bump]
+value = 0.02
+description = "Win-strength step added (or, for losses, subtracted) for each football key number (3, 7) the margin reaches. Steps are cumulative so the mapping stays monotone."
+source = "DRAFT judgement for key-number clumping (Stern 1991); verify."
+unit = "prob"
+range = [0.0, 0.05]
+
+[params.mlb_total_runs]
+value = 9.1
+description = "Typical total runs scored per game in MLB."
+source = "RESEARCH.md (dad v0.6.0 study): mean runs per game, MLB 2015-2019. v0.5.0: 8.8."
+unit = "runs"
+range = [5.0, 14.0]
+
+[params.college_baseball_total_runs]
+value = 12.5
+description = "Typical total runs scored per game in NCAA College Baseball."
+source = "NCAA Division-I league average runs per game."
+unit = "runs"
+range = [7.0, 18.0]
+
+[params.softball_total_runs]
+value = 9.5
+description = "Typical total runs scored per game in NCAA College Softball."
+source = "NCAA Division-I softball average runs per game."
+unit = "runs"
+range = [5.0, 16.0]
+
+[params.soccer_total_goals]
+value = 2.75
+description = "Typical total goals scored per match in major professional soccer leagues."
+source = "RESEARCH.md (dad v0.6.0 study): mean goals per match, Big-5 leagues 2015-16 to 2019-20. v0.5.0: 2.70."
+unit = "goals"
+range = [2.0, 3.5]
+
+[params.soccer_draw_point_value]
+value = 0.50
+description = "Share value assigned to a draw relative to a win in soccer win-strength probability."
+source = "Symmetric point-share expectation under Skellam distribution."
+unit = "ratio"
+range = [0.25, 0.50]
+
+[params.xg_blend]
+value = 0.0
+description = "Blend factor for expected goals (0.0 = pure actual score, 0.5 = 50/50 blend, 1.0 = pure xG)."
+source = "Tunable analytical balance between results and chance creation."
+unit = "ratio"
+range = [0.0, 1.0]
+
+[params.mlb_exponent]
+value = 1.83
+description = "Pythagorean exponent for MLB run differential win expectancy."
+source = "Empirical MLB Pythagenpat exponent."
+unit = "exponent"
+range = [1.5, 2.3]
+
+[params.college_baseball_exponent]
+value = 2.05
+description = "Pythagorean exponent for NCAA College Baseball win expectancy."
+source = "Pythagenpat exponent calibrated for high-scoring college baseball."
+unit = "exponent"
+range = [1.6, 2.5]
+
+[params.softball_exponent]
+value = 1.95
+description = "Pythagorean exponent for NCAA College Softball win expectancy."
+source = "Pythagenpat exponent calibrated for NCAA softball scoring."
+unit = "exponent"
+range = [1.5, 2.4]
+
+[params.home_advantage_basketball]
+value = 3.2
+description = "Home court advantage in points for men's basketball."
+source = "RESEARCH.md (dad v0.6.0 study): fitted home edge, NCAA men's D-I 2016-2020 (3.16 pts). Unchanged."
+unit = "points"
+range = [0.0, 8.0]
+
+[params.home_advantage_wbb]
+value = 2.9
+description = "Home court advantage in points for women's basketball."
+source = "RESEARCH.md (dad v0.6.0 study): fitted home edge, NCAA women's D-I 2016-2020 (2.86 pts). v0.5.0: 3.0."
+unit = "points"
+range = [0.0, 8.0]
+
+[params.home_advantage_football]
+value = 2.1
+description = "Home field advantage in points for football."
+source = "RESEARCH.md (dad v0.6.0 study): fitted home edge pooled FBS (2.34) + NFL (1.44), 2015-2020. v0.5.0: 2.5."
+unit = "points"
+range = [0.0, 6.0]
+
+[params.home_advantage_soccer]
+value = 0.35
+description = "Home pitch advantage in goals for soccer."
+source = "RESEARCH.md (dad v0.6.0 study): fitted home edge pooled over EPL/La Liga/Bundesliga/Serie A/Ligue 1, 2015-16 to 2019-20. Unchanged."
+unit = "goals"
+range = [0.0, 1.5]
+
+[params.home_advantage_baseball]
+value = 0.14
+description = "Home field advantage in runs for MLB baseball."
+source = "RESEARCH.md (dad v0.6.0 study): fitted home edge on recorded margins, MLB 2015-2019 (home teams skip the bottom 9th when ahead, so smaller than the true scoring edge). v0.5.0: 0.30."
+unit = "runs"
+range = [0.0, 1.0]
+
+[params.mlb_division_weight]
+value = 1.15
+description = "Multiplier applied to in-division games in MLB."
+source = "MLB division rivalry schedule stakes."
+unit = "multiplier"
+range = [1.0, 2.0]
+
+[params.home_advantage_college_baseball]
+value = 0.45
+description = "Home field advantage in runs for NCAA College Baseball."
+source = "NCAA Division-I baseball home scoring advantage."
+unit = "runs"
+range = [0.0, 1.5]
+
+[params.home_advantage_softball]
+value = 0.40
+description = "Home field advantage in runs for NCAA College Softball."
+source = "NCAA Division-I softball home scoring advantage."
+unit = "runs"
+range = [0.0, 1.5]
+
+[params.college_baseball_conference_weight]
+value = 1.30
+description = "Multiplier applied to conference games in college baseball to reflect weekend rotation usage."
+source = "NCAA baseball rotation analysis (weekend conference vs midweek non-conference)."
+unit = "multiplier"
+range = [1.0, 2.5]
+
+[params.college_baseball_weekend_weight]
+value = 1.25
+description = "Multiplier applied to non-conference weekend games (Friday-Sunday rotation)."
+source = "NCAA baseball rotation analysis."
+unit = "multiplier"
+range = [1.0, 2.0]
+
+[params.college_baseball_midweek_weight]
+value = 0.75
+description = "Multiplier applied to midweek games (Tuesday/Wednesday bullpen committee games)."
+source = "NCAA baseball pitching staff allocation."
+unit = "multiplier"
+range = [0.25, 1.0]
+
+[params.college_baseball_postseason_weight]
+value = 1.50
+description = "Multiplier applied to postseason games (Conference Tournament and NCAA Tournament / Omaha)."
+source = "Postseason stakes and maximum ace utilization."
+unit = "multiplier"
+range = [1.0, 3.0]
+
+[params.softball_conference_weight]
+value = 1.30
+description = "Multiplier applied to conference games in college softball to reflect ace pitcher starts."
+source = "NCAA softball pitching rotation analysis."
+unit = "multiplier"
+range = [1.0, 2.5]
+
+[params.softball_weekend_weight]
+value = 1.25
+description = "Multiplier applied to non-conference weekend games in college softball."
+source = "NCAA softball weekend series stakes."
+unit = "multiplier"
+range = [1.0, 2.0]
+
+[params.softball_midweek_weight]
+value = 0.75
+description = "Multiplier applied to midweek games in college softball."
+source = "NCAA softball midweek pitching allocation."
+unit = "multiplier"
+range = [0.25, 1.0]
+
+[params.softball_postseason_weight]
+value = 1.50
+description = "Multiplier applied to postseason games in college softball (WCWS / Regionals)."
+source = "NCAA softball postseason ace usage."
+unit = "multiplier"
+range = [1.0, 3.0]
+
+[params.soccer_european_cup_weight]
+value = 1.35
+description = "Multiplier applied to continental European cup matches (UEFA Champions League, Europa League)."
+source = "UEFA Champions League competition stakes."
+unit = "multiplier"
+range = [1.0, 2.5]
+
+[params.soccer_derby_weight]
+value = 1.20
+description = "Multiplier applied to domestic derbies and fierce historic rivalry fixtures."
+source = "Local derby intensity and rivalry stakes."
+unit = "multiplier"
+range = [1.0, 2.0]
+
+[params.soccer_domestic_cup_weight]
+value = 1.10
+description = "Multiplier applied to domestic cup matches (FA Cup, Copa del Rey, DFB-Pokal)."
+source = "Domestic knockout tournament stakes."
+unit = "multiplier"
+range = [1.0, 2.0]
+
+[params.bubble_rating_ncaab]
+value = 11.8
+description = "Net rating (points per game vs an average D-I team, neutral floor) of a standard NCAA men's bubble team (~#45)."
+source = "RESEARCH.md (dad v0.6.0 study): median full-season least-squares margin rating of the team ranked #45 (at-large cutline), NCAA men's D-I 2016-2026. v0.5.0: 11.5."
+unit = "net_pts"
+range = [0.0, 25.0]
+
+[params.top4_seed_rating_ncaab]
+value = 16.8
+description = "Net rating (points per game) of the last top-4 seed in men's basketball (~#16)."
+source = "RESEARCH.md (dad v0.6.0 study): median full-season least-squares margin rating of the team ranked #16 (last 4-seed), NCAA men's D-I 2016-2026. v0.5.0: 21.0 (efficiency scale)."
+unit = "net_pts"
+range = [12.0, 30.0]
+
+[params.champion_rating_ncaab]
+value = 23.9
+description = "Net rating (points per game) of a men's national-title contender (~#2)."
+source = "RESEARCH.md (dad v0.6.0 study): median full-season least-squares margin rating of the team ranked #2, NCAA men's D-I 2016-2026. v0.5.0: 30.0 (efficiency scale)."
+unit = "net_pts"
+range = [20.0, 40.0]
+
+[params.average_rating_ncaab]
+value = 0.0
+description = "Net efficiency rating of an average Division-I men's basketball team."
+source = "Zero-centered NCAA Division-I average net efficiency."
+unit = "net_pts"
+range = [-10.0, 10.0]
+
+[params.replacement_rating_ncaab]
+value = -9.3
+description = "Net rating (points per game) of a replacement-level Division-I men's team (~#300)."
+source = "RESEARCH.md (dad v0.6.0 study): median full-season least-squares margin rating of the team ranked #300 of ~360, NCAA men's D-I 2016-2026. v0.5.0: -12.0."
+unit = "net_pts"
+range = [-25.0, 0.0]
+
+[params.wbb_bubble_rating]
+value = 15.9
+description = "Net rating (points per game vs an average D-I team) of a standard NCAA women's bubble team (~#45)."
+source = "RESEARCH.md (dad v0.6.0 study): median full-season least-squares margin rating of the team ranked #45, NCAA women's D-I 2016-2026. v0.5.0: 12.0."
+unit = "net_pts"
+range = [0.0, 25.0]
+
+[params.wbb_top4_seed_rating]
+value = 23.6
+description = "Net rating (points per game) of the last top-4 seed in women's basketball (~#16)."
+source = "RESEARCH.md (dad v0.6.0 study): median full-season least-squares margin rating of the team ranked #16, NCAA women's D-I 2016-2026. v0.5.0: 23.0."
+unit = "net_pts"
+range = [12.0, 32.0]
+
+[params.wbb_champion_rating]
+value = 39.7
+description = "Net rating (points per game) of a women's national-title contender (~#2)."
+source = "RESEARCH.md (dad v0.6.0 study): median full-season least-squares margin rating of the team ranked #2, NCAA women's D-I 2016-2026. v0.5.0: 36.0."
+unit = "net_pts"
+range = [25.0, 48.0]
+
+[params.wbb_average_rating]
+value = 0.0
+description = "Net efficiency rating of an average Division-I women's basketball team."
+source = "Zero-centered NCAA Division-I average net efficiency."
+unit = "net_pts"
+range = [-10.0, 10.0]
+
+[params.wbb_replacement_rating]
+value = -13.4
+description = "Net rating (points per game) of a replacement-level Division-I women's team (~#300)."
+source = "RESEARCH.md (dad v0.6.0 study): median full-season least-squares margin rating of the team ranked #300 of ~360, NCAA women's D-I 2016-2026. v0.5.0: -14.0."
+unit = "net_pts"
+range = [-30.0, 0.0]
+
+[params.mlb_wildcard_bubble_rating]
+value = 0.25
+description = "Net run differential per game of an MLB Wild Card playoff bubble team (~87 wins)."
+source = "RESEARCH.md (dad v0.6.0 study): median full-season least-squares margin rating of the team ranked #12 of 30 (last wild card), MLB 2015-2026. v0.5.0: 0.35."
+unit = "runs_per_game"
+range = [0.10, 0.60]
+
+[params.mlb_division_champ_rating]
+value = 0.68
+description = "Net run differential per game of an MLB division champion (~95 wins)."
+source = "RESEARCH.md (dad v0.6.0 study): median full-season least-squares margin rating of the team ranked #6 of 30, MLB 2015-2026. v0.5.0: 0.80."
+unit = "runs_per_game"
+range = [0.50, 1.20]
+
+[params.mlb_champion_rating]
+value = 1.27
+description = "Net run differential per game of a World Series contender (~100 wins)."
+source = "RESEARCH.md (dad v0.6.0 study): median full-season least-squares margin rating of the team ranked #2 of 30, MLB 2015-2026. v0.5.0: 1.25."
+unit = "runs_per_game"
+range = [0.90, 1.80]
+
+[params.mlb_average_rating]
+value = 0.0
+description = "Net run differential per game of an average MLB team (.500, 81-81)."
+source = "Zero-centered MLB average run differential."
+unit = "runs_per_game"
+range = [-0.30, 0.30]
+
+[params.mlb_replacement_rating]
+value = -1.08
+description = "Net run differential per game of a replacement-level MLB team (~47 wins, .294 pct)."
+source = "RESEARCH.md (dad v0.6.0 study): median full-season least-squares margin rating of the team ranked #30 (worst), MLB 2015-2026. v0.5.0: -1.50."
+unit = "runs_per_game"
+range = [-2.50, -0.80]
+
+[params.college_baseball_regional_bubble_rating]
+value = 1.20
+description = "Net run differential per game of an NCAA Regional tournament bubble team."
+source = "Historical NCAA 64-team field at-large cutline run differential."
+unit = "runs_per_game"
+range = [0.50, 2.50]
+
+[params.college_baseball_national_seed_rating]
+value = 3.50
+description = "Net run differential per game of an NCAA top-16 national seed host."
+source = "Historical Regional host top-16 seeds run differential."
+unit = "runs_per_game"
+range = [2.00, 4.50]
+
+[params.college_baseball_champion_rating]
+value = 5.00
+description = "Net run differential per game of an Omaha College World Series national champion."
+source = "Historical College World Series champions regular season run differential."
+unit = "runs_per_game"
+range = [3.50, 7.00]
+
+[params.college_baseball_average_rating]
+value = 0.0
+description = "Net run differential per game of an average Division-I baseball team."
+source = "Zero-centered NCAA Division-I average run differential."
+unit = "runs_per_game"
+range = [-1.00, 1.00]
+
+[params.college_baseball_replacement_rating]
+value = -2.50
+description = "Net run differential per game of a replacement-level Division-I baseball team."
+source = "Bottom-tier Division-I baseball conference baseline."
+unit = "runs_per_game"
+range = [-4.50, -1.00]
+
+[params.softball_regional_bubble_rating]
+value = 1.40
+description = "Net run differential per game of an NCAA Softball Regional tournament bubble team."
+source = "Historical NCAA 64-team softball field at-large cutline run differential."
+unit = "runs_per_game"
+range = [0.50, 3.00]
+
+[params.softball_national_seed_rating]
+value = 3.60
+description = "Net run differential per game of an NCAA Softball top-16 national seed host."
+source = "Historical Regional host top-16 softball seeds run differential."
+unit = "runs_per_game"
+range = [2.00, 5.00]
+
+[params.softball_champion_rating]
+value = 5.80
+description = "Net run differential per game of a Women's College World Series national champion."
+source = "Historical WCWS champions regular season run differential (Oklahoma dynasty)."
+unit = "runs_per_game"
+range = [4.00, 8.50]
+
+[params.softball_average_rating]
+value = 0.0
+description = "Net run differential per game of an average Division-I softball team."
+source = "Zero-centered NCAA Division-I softball average run differential."
+unit = "runs_per_game"
+range = [-1.00, 1.00]
+
+[params.softball_replacement_rating]
+value = -2.80
+description = "Net run differential per game of a replacement-level Division-I softball team."
+source = "Bottom-tier Division-I softball conference baseline."
+unit = "runs_per_game"
+range = [-5.00, -1.00]
+
+[params.soccer_champion_rating]
+value = 1.53
+description = "Net goal differential per match of a title-contending champion in top European leagues."
+source = "RESEARCH.md (dad v0.6.0 study): median full-season least-squares margin rating of the team ranked #1, Big-5 leagues 2015-16 to 2025-26 (55 league-seasons). v0.5.0: 1.40."
+unit = "goals_per_game"
+range = [0.80, 2.20]
+
+[params.soccer_ucl_rating]
+value = 0.58
+description = "Net goal differential per match of a Champions League top-4 qualification team."
+source = "RESEARCH.md (dad v0.6.0 study): median full-season least-squares margin rating of the team ranked #4, Big-5 leagues 2015-16 to 2025-26. v0.5.0: 0.70."
+unit = "goals_per_game"
+range = [0.30, 1.30]
+
+[params.soccer_europa_rating]
+value = 0.31
+description = "Net goal differential per match of a Europa / Conference League qualification team."
+source = "RESEARCH.md (dad v0.6.0 study): median full-season least-squares margin rating of the team ranked #6, Big-5 leagues 2015-16 to 2025-26. v0.5.0: 0.35."
+unit = "goals_per_game"
+range = [0.10, 0.80]
+
+[params.soccer_average_rating]
+value = 0.0
+description = "Net goal differential per match of a mid-table (10th place) team."
+source = "Zero-centered top division league average goal differential."
+unit = "goals_per_game"
+range = [-0.30, 0.30]
+
+[params.soccer_relegation_bubble_rating]
+value = -0.63
+description = "Net goal differential per match of a relegation survival bubble team (17th place safety line)."
+source = "RESEARCH.md (dad v0.6.0 study): median full-season least-squares margin rating of the team ranked #17, Big-5 leagues 2015-16 to 2025-26. v0.5.0: -0.65."
+unit = "goals_per_game"
+range = [-1.30, -0.20]
+
+[params.soccer_replacement_rating]
+value = -1.13
+description = "Net goal differential per match of a replacement-level 20th place stranded relegation team."
+source = "RESEARCH.md (dad v0.6.0 study): median full-season least-squares margin rating of the team ranked #20, 20-team Big-5 leagues 2015-16 to 2025-26 (41 league-seasons). v0.5.0: -1.35."
+unit = "goals_per_game"
+range = [-2.50, -0.70]
+
+[params.min_prob_clamp]
+value = 0.005
+description = "Minimum probability bound to prevent zero-variance division in extreme blowouts."
+source = "Judgement."
+unit = "prob"
+range = [0.0001, 0.05]
+
+[params.max_prob_clamp]
+value = 0.995
+description = "Maximum probability bound to prevent zero-variance division in extreme blowouts."
+source = "Judgement."
+unit = "prob"
+range = [0.95, 0.9999]
+
+[params.football_champion_rating]
+value = 30.7
+description = "Net rating (points per game vs an average FBS team, neutral field) of a national-title contender (~#2 FBS)."
+source = "RESEARCH.md (dad v0.6.0 study): median full-season least-squares margin rating of the team ranked #2, FBS 2015-2025 excl. 2020. NFL ratings are on a narrower scale: pass a number for NFL."
+unit = "net_pts"
+range = [15.0, 45.0]
+
+[params.football_top4_rating]
+value = 28.6
+description = "Net rating (points per game) of a top-4 FBS team (~#4, CFP bye standard)."
+source = "RESEARCH.md (dad v0.6.0 study): median full-season least-squares margin rating of the team ranked #4, FBS 2015-2025 excl. 2020. NFL ratings are on a narrower scale: pass a number for NFL."
+unit = "net_pts"
+range = [10.0, 40.0]
+
+[params.football_bubble_rating]
+value = 20.4
+description = "Net rating (points per game) of a 12-team-playoff bubble team (~#12 FBS)."
+source = "RESEARCH.md (dad v0.6.0 study): median full-season least-squares margin rating of the team ranked #12, FBS 2015-2025 excl. 2020. NFL ratings are on a narrower scale: pass a number for NFL."
+unit = "net_pts"
+range = [5.0, 35.0]
+
+[params.football_replacement_rating]
+value = -16.3
+description = "Net rating (points per game) of a replacement-level FBS team (~#120 of ~134)."
+source = "RESEARCH.md (dad v0.6.0 study): median full-season least-squares margin rating of the team ranked #120, FBS 2015-2025 excl. 2020. NFL ratings are on a narrower scale: pass a number for NFL."
+unit = "net_pts"
+range = [-35.0, 0.0]
+
+[params.football_average_rating]
+value = 0.0
+description = "Net rating of an average FBS team."
+source = "Definition: ratings are centred on the FBS mean."
+unit = "net_pts"
+range = [-10.0, 10.0]
+
+[params.game_dad_cap]
+value = 2.0
+description = "dad_scale = probit only (v0.6.0 DAD): largest deviation one game can contribute, in σ (before the game weight). Stops a single upset against an extreme baseline (e.g. replacement level) from dominating the total. 100 = effectively no cap."
+source = "RESEARCH.md (dad v0.6.0 study): chosen on development seasons (<=2020) from 0.5/1/1.5/2/3/none; on 2021+ test seasons the v0.6.0 config beats v0.5.0 slightly (RMSE x0.995-0.997) and the largest single game falls from 10-14 sigma to 2."
+unit = "sigma"
+range = [0.25, 100.0]
+
+[params.dad_scale]
+value = "margin"
+description = "How a game's deviation is measured. margin (v0.7.0): (performance - default team's expected spread) / sigma, in margin SDs; the primary output is the shrunk opponent-adjusted strength vs the default, in sigma per game. probit: the v0.6.0 win-strength z-score (P_actual - P_default) / sqrt(P_default(1 - P_default)) with game_dad_cap, primary output = total DAD."
+source = "RESEARCH_STRENGTH.md (dad v0.7.0 study): the margin-scale strength beats the v0.6.0 probit DAD out of sample in every sport family (game-level walk-forward and half-season test)."
+choices = ["margin", "probit"]
+
+[params.wad_mode]
+value = "result"
+description = "WAD definition. result (v0.7.0): actual result (win 1, draw 1/2, loss 0) minus the chance the default team wins that game, i.e. wins above default ('wins above bubble'). strength: v0.6.0 margin-based win strength minus the default's win strength."
+source = "Résumé definition (wins above bubble, as used for NCAA selection résumés); v0.6.0 behaviour kept as 'strength'."
+choices = ["result", "strength"]
+
+[params.margin_cap_sd]
+value = 100.0
+description = "Cap on a single game's margin, in margin SDs (sigma), applied in game_performance before rating/DAD. 100 = no cap."
+source = "RESEARCH_STRENGTH.md (dad v0.7.0 study): every cap tried (basketball 10-40 pts, football 14-45, baseball 2-8 runs, soccer 1-4 goals) predicted worse than the raw margin on development seasons, so the default is no cap."
+unit = "sigma"
+range = [0.5, 100.0]
+
+[params.win_bonus_sd]
+value = 0.0
+description = "Bonus added to a win's margin (subtracted for a loss), in margin SDs (sigma), in game_performance. 0 = margin only."
+source = "RESEARCH_STRENGTH.md (dad v0.7.0 study): win bonuses gained less than the 0.1% dev-score threshold over the raw margin, so the default is 0."
+unit = "sigma"
+range = [0.0, 1.0]
+
+[params.soccer_margin_sd]
+value = 1.6
+description = "Per-game goal-margin noise sigma in soccer (residual SD around least-squares ratings); the unit of soccer DAD."
+source = "RESEARCH.md (dad v0.6.0 study): residual SD, Big-5 leagues 2015-16 to 2019-20 (1.53-1.76, pooled ~1.6)."
+unit = "goals"
+range = [0.8, 3.0]
+
+[params.mlb_margin_sd]
+value = 4.4
+description = "Per-game run-margin noise sigma in MLB (residual SD around least-squares ratings); the unit of MLB DAD."
+source = "RESEARCH.md (dad v0.6.0 study): residual SD, MLB 2015-2019 (4.37 runs)."
+unit = "runs"
+range = [2.0, 8.0]
+
+[params.college_baseball_margin_sd]
+value = 6.0
+description = "Per-game run-margin noise sigma in college baseball; the unit of college-baseball DAD."
+source = "DRAFT judgement (higher scoring than MLB's 4.4; no complete public game data) - verify."
+unit = "runs"
+range = [2.0, 12.0]
+
+[params.softball_margin_sd]
+value = 5.0
+description = "Per-game run-margin noise sigma in college softball; the unit of softball DAD."
+source = "DRAFT judgement (no complete public game data) - verify."
+unit = "runs"
+range = [2.0, 12.0]
+
+[params.prior_games_basketball]
+value = 1.0
+description = "Strength shrinkage for NCAA M/W basketball and NBA: phantom games against an average team (rating 0) added to a team's schedule, so short schedules are pulled toward average."
+source = "RESEARCH_STRENGTH.md (dad v0.7.0 study): ridge chosen on development seasons (<=2020) from 0.1-256 by game-level walk-forward margin RMSE with the rating taken at face value (basketball family)."
+unit = "games"
+range = [0.0, 300.0]
+
+[params.half_life_days_basketball]
+value = 0.0
+description = "Recency weighting of the strength rating for NCAA M/W basketball and NBA: a game's weight halves every this many days before the latest game (or `as_of`). 0 = all games count equally. Needs game dates."
+source = "RESEARCH_STRENGTH.md (dad v0.7.0 study): half-lives of 30-240 days gained less than the 0.1% dev-score threshold over equal weights (basketball family), so recency is off by default."
+unit = "days"
+range = [0.0, 1000.0]
+
+[params.prior_games_football]
+value = 2.0
+description = "Strength shrinkage for FBS and NFL: phantom games against an average team (rating 0) added to a team's schedule, so short schedules are pulled toward average."
+source = "RESEARCH_STRENGTH.md (dad v0.7.0 study): ridge chosen on development seasons (<=2020) from 0.1-256 by game-level walk-forward margin RMSE with the rating taken at face value (football family)."
+unit = "games"
+range = [0.0, 300.0]
+
+[params.half_life_days_football]
+value = 0.0
+description = "Recency weighting of the strength rating for FBS and NFL: a game's weight halves every this many days before the latest game (or `as_of`). 0 = all games count equally. Needs game dates."
+source = "RESEARCH_STRENGTH.md (dad v0.7.0 study): half-lives of 30-240 days gained less than the 0.1% dev-score threshold over equal weights (football family), so recency is off by default."
+unit = "days"
+range = [0.0, 1000.0]
+
+[params.prior_games_baseball]
+value = 32.0
+description = "Strength shrinkage for MLB: phantom games against an average team (rating 0) added to a team's schedule, so short schedules are pulled toward average."
+source = "RESEARCH_STRENGTH.md (dad v0.7.0 study): ridge chosen on development seasons (<=2020) from 0.1-256 by game-level walk-forward margin RMSE with the rating taken at face value (baseball family)."
+unit = "games"
+range = [0.0, 300.0]
+
+[params.half_life_days_baseball]
+value = 0.0
+description = "Recency weighting of the strength rating for MLB: a game's weight halves every this many days before the latest game (or `as_of`). 0 = all games count equally. Needs game dates."
+source = "RESEARCH_STRENGTH.md (dad v0.7.0 study): half-lives of 30-240 days gained less than the 0.1% dev-score threshold over equal weights (baseball family), so recency is off by default."
+unit = "days"
+range = [0.0, 1000.0]
+
+[params.prior_games_soccer]
+value = 4.0
+description = "Strength shrinkage for Big-5 European soccer: phantom games against an average team (rating 0) added to a team's schedule, so short schedules are pulled toward average."
+source = "RESEARCH_STRENGTH.md (dad v0.7.0 study): ridge chosen on development seasons (<=2020) from 0.1-256 by game-level walk-forward margin RMSE with the rating taken at face value (soccer family)."
+unit = "games"
+range = [0.0, 300.0]
+
+[params.half_life_days_soccer]
+value = 0.0
+description = "Recency weighting of the strength rating for Big-5 European soccer: a game's weight halves every this many days before the latest game (or `as_of`). 0 = all games count equally. Needs game dates."
+source = "RESEARCH_STRENGTH.md (dad v0.7.0 study): half-lives of 30-240 days gained less than the 0.1% dev-score threshold over equal weights (soccer family), so recency is off by default."
+unit = "days"
+range = [0.0, 1000.0]
+
+[params.prior_games_college_baseball]
+value = 6.0
+description = "Strength shrinkage for NCAA college baseball: phantom games against an average team (rating 0) added to a team's schedule, so short schedules are pulled toward average."
+source = "DRAFT judgement - verify (untested: no complete public game data). Rule of thumb from the dad v0.7.0 study, where tuned values track (per-game sigma / SD of team ratings)^2: (6.0 / ~2.5)^2."
+unit = "games"
+range = [0.0, 300.0]
+
+[params.half_life_days_college_baseball]
+value = 0.0
+description = "Recency weighting of the strength rating for NCAA college baseball: a game's weight halves every this many days before the latest game (or `as_of`). 0 = all games count equally."
+source = "Off by default, as in every family tested in RESEARCH_STRENGTH.md (dad v0.7.0 study)."
+unit = "days"
+range = [0.0, 1000.0]
+
+[params.prior_games_softball]
+value = 3.0
+description = "Strength shrinkage for NCAA college softball: phantom games against an average team (rating 0) added to a team's schedule, so short schedules are pulled toward average."
+source = "DRAFT judgement - verify (untested: no complete public game data). Rule of thumb from the dad v0.7.0 study, where tuned values track (per-game sigma / SD of team ratings)^2: (5.0 / ~2.8)^2."
+unit = "games"
+range = [0.0, 300.0]
+
+[params.half_life_days_softball]
+value = 0.0
+description = "Recency weighting of the strength rating for NCAA college softball: a game's weight halves every this many days before the latest game (or `as_of`). 0 = all games count equally."
+source = "Off by default, as in every family tested in RESEARCH_STRENGTH.md (dad v0.7.0 study)."
+unit = "days"
+range = [0.0, 1000.0]
+
+[formulas.expected_spread]
+expr = "default_rating - opponent_rating + hca"
+description = "Expected point or run spread for the default team against the opponent."
+variables = ["default_rating", "opponent_rating", "hca"]
+
+[formulas.game_performance]
+expr = "clamp(margin, -margin_cap_sd * sigma, margin_cap_sd * sigma) + win_bonus_sd * sigma * (1 if margin > 0 else (-1 if margin < 0 else 0))"
+description = "Per-game performance used for DAD and strength: the margin, optionally capped (margin_cap_sd) and with a win bonus (win_bonus_sd). Defaults leave the margin unchanged (the study's winner)."
+variables = ["margin", "sigma"]
+
+[formulas.game_dad]
+expr = "weight * (performance - expected_spread) / sigma"
+description = "Deviations above default for one game (margin scale): how far the game's performance beat what the default team would be expected to do against that opponent at that venue, in per-game margin SDs, times the game weight."
+variables = ["performance", "expected_spread", "sigma", "weight"]
+
+[formulas.strength_rating]
+expr = "weighted_sum / (weight_total + prior_games)"
+description = "Strength rating: recency-weighted mean of opponent-adjusted performances (performance + opponent rating - home edge), shrunk toward the league average (0) by prior_games phantom average games."
+variables = ["weighted_sum", "weight_total", "prior_games"]
+
+[formulas.strength_dad]
+expr = "(strength - default_rating) / sigma"
+description = "DAD per game (primary): how many per-game margin SDs the team's strength is above the default team's rating."
+variables = ["strength", "default_rating", "sigma"]
+
+[formulas.recency_weight]
+expr = "0.5 ** (days_ago / half_life) if half_life > 0 else 1.0"
+description = "Weight of a game in the strength rating: halves every half_life days before the latest game; 1 when half_life is 0."
+variables = ["days_ago", "half_life"]
+
+[formulas.game_wad]
+expr = "weight * (result - p_default)"
+description = "Wins above default for one game: actual result (1 win, draw value, 0 loss) minus the chance the default team would win that game, times the game weight."
+variables = ["result", "p_default", "weight"]
+
+[formulas.game_dad_probit]
+expr = "weight * clamp((p_actual - p_default) / sqrt(p_default * (1.0 - p_default)), -game_dad_cap, game_dad_cap)"
+description = "v0.6.0 DAD (dad_scale = probit): win-strength deviation above default standardised by the binomial SD, capped at ±game_dad_cap, scaled by game weight."
+variables = ["p_actual", "p_default", "weight"]
+
+[formulas.game_wad_strength]
+expr = "weight * (p_actual - p_default)"
+description = "v0.6.0 WAD (wad_mode = strength): margin-based win strength minus the default team's win strength, scaled by game weight."
+variables = ["p_actual", "p_default", "weight"]

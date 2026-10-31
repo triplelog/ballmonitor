@@ -1,0 +1,14 @@
+# Default example: 5K + Half marathon predicting a Marathon
+target = "marathon"
+age = 38
+gender = "M"
+
+[[races]]
+distance = "5k"
+time = "20:00"
+year = 2025
+
+[[races]]
+distance = "half"
+time = "1:33:00"
+year = 2025

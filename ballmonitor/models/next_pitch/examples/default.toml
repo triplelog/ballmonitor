@@ -1,0 +1,11 @@
+# A hypothetical situation (not a real pitch): Tarik Skubal, 1-2 count to Aaron Judge after
+# fastball called strike, changeup ball, fastball foul. Pitch codes are Statcast's
+# (FF, SI, FC, SL, ST, CU, KC, CH, FS, ...); results: B ball, C called strike,
+# S swinging strike, F foul.
+pitcher = "Tarik Skubal"
+batter = "Aaron Judge"
+sequence = "FF:C CH:B FF:F"
+outs = 1
+bases = "1"
+inning = 4
+tto = 2

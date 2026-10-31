@@ -1,0 +1,5 @@
+description = "Higher weight (0.50) on the count micro-simulation for xwOBA, K% and BB% (RESEARCH.md: worse on 2025 for both)."
+
+[params]
+microsim_weight = 0.50
+microsim_weight_rates = 0.50

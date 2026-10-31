@@ -1,0 +1,5 @@
+description = "DAD exactly as in v0.6.0: per-game probit win-strength z-score (P_actual - P_default) / sqrt(P_default(1 - P_default)), capped at game_dad_cap, summed (primary = total DAD), and margin-based WAD. RESEARCH_STRENGTH.md: predicts worse than the v0.7.0 margin-scale DAD in every sport family."
+
+[params]
+dad_scale = "probit"
+wad_mode = "strength"

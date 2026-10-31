@@ -1,0 +1,19 @@
+# Three races: 5K, 10K, and Half marathon predicting Marathon
+target = "marathon"
+age = 35
+gender = "M"
+
+[[races]]
+distance = "5k"
+time = "19:15"
+year = 2025
+
+[[races]]
+distance = "10k"
+time = "40:00"
+year = 2025
+
+[[races]]
+distance = "half"
+time = "1:28:30"
+year = 2025

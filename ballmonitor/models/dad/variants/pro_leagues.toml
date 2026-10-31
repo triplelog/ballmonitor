@@ -1,0 +1,5 @@
+description = "Use for NBA / NFL inputs only (it also changes NCAA basketball / FBS, which want less shrinkage). prior_games 8 for basketball and 4 for football: the per-league optima for NBA and NFL in RESEARCH_STRENGTH.md (game-level walk-forward, development seasons). Unconfirmed: in the one-season half-season backtest it was worse for NBA 2026 (MAE 3.99 vs 3.81 pts, 30 teams) and equal for NFL 2025."
+
+[params]
+prior_games_basketball = 8.0
+prior_games_football = 4.0

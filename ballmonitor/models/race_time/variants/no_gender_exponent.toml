@@ -1,0 +1,7 @@
+# One exponent for everyone (the pooled train fit)
+[meta]
+description = "Same Riegel exponent (riegel_exponent = 1.07) for men and women: the gender offsets are set to 0. RESEARCH_BANDS.md: train MAPE 10.18% vs 10.13% with offsets, and larger median errors by gender x direction."
+
+[params]
+exponent_offset_male = 0.0
+exponent_offset_female = 0.0

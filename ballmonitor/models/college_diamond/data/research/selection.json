@@ -1,0 +1,225 @@
+{
+ "features": [
+  "neg_log_rpi_rank",
+  "neg_log_rating_rank",
+  "win_pct"
+ ],
+ "sports": {
+  "baseball": {
+   "at_large_coef": {
+    "intercept": 17.77845701412573,
+    "neg_log_rpi_rank": 5.8702062543821105,
+    "neg_log_rating_rank": -0.054493519649628376,
+    "win_pct": 6.5035532246393695
+   },
+   "host_coef": {
+    "intercept": 20.58053985259988,
+    "neg_log_rpi_rank": 5.4189597987731295,
+    "neg_log_rating_rank": 1.335869135257524,
+    "win_pct": -2.4834419876852256
+   },
+   "rpi_only_coef": [
+    22.801911311930965,
+    6.081433973888446
+   ],
+   "host_rpi_only_coef": [
+    17.85799283045112,
+    6.451660678848806
+   ],
+   "seasons": {
+    "2021": {
+     "at_large": 34,
+     "misses": 4,
+     "misses_rpi_rule": 3,
+     "host_hits": 12,
+     "host_hits_rpi_rule": 13,
+     "seed_line_mae": 0.28125,
+     "seed_line_mae_rpi_rule": 0.25
+    },
+    "2022": {
+     "at_large": 33,
+     "misses": 6,
+     "misses_rpi_rule": 5,
+     "host_hits": 13,
+     "host_hits_rpi_rule": 12,
+     "seed_line_mae": 0.25,
+     "seed_line_mae_rpi_rule": 0.25
+    },
+    "2023": {
+     "at_large": 34,
+     "misses": 2,
+     "misses_rpi_rule": 2,
+     "host_hits": 14,
+     "host_hits_rpi_rule": 14,
+     "seed_line_mae": 0.21875,
+     "seed_line_mae_rpi_rule": 0.1875
+    },
+    "2024": {
+     "at_large": 34,
+     "misses": 5,
+     "misses_rpi_rule": 5,
+     "host_hits": 13,
+     "host_hits_rpi_rule": 13,
+     "seed_line_mae": 0.125,
+     "seed_line_mae_rpi_rule": 0.15625
+    },
+    "2025": {
+     "at_large": 35,
+     "misses": 3,
+     "misses_rpi_rule": 3,
+     "host_hits": 14,
+     "host_hits_rpi_rule": 14,
+     "seed_line_mae": 0.125,
+     "seed_line_mae_rpi_rule": 0.125
+    },
+    "2026": {
+     "at_large": 35,
+     "misses": 5,
+     "misses_rpi_rule": 6,
+     "host_hits": 15,
+     "host_hits_rpi_rule": 15,
+     "seed_line_mae": 0.1875,
+     "seed_line_mae_rpi_rule": 0.15625
+    }
+   },
+   "test_at_large": {
+    "n": 775,
+    "log_loss": 0.12859193254912638,
+    "brier": 0.04027405081427587
+   },
+   "test_at_large_rpi_only": {
+    "n": 775,
+    "log_loss": 0.1260711949468552,
+    "brier": 0.03894277118247411
+   },
+   "test_host": {
+    "n": 384,
+    "log_loss": 0.22162797832327005,
+    "brier": 0.061729837809587136
+   },
+   "test_host_rpi_only": {
+    "n": 384,
+    "log_loss": 0.23647632418575673,
+    "brier": 0.05978932192299866
+   },
+   "totals": {
+    "misses": 25,
+    "misses_rpi": 24,
+    "at_large": 205,
+    "host_hits": 81,
+    "host_hits_rpi": 81,
+    "line_err": 0.19791666666666666,
+    "line_err_rpi": 0.1875
+   },
+   "n_test_seasons": 6
+  },
+  "softball": {
+   "at_large_coef": {
+    "intercept": 22.038866175644294,
+    "neg_log_rpi_rank": 1.8720277322939958,
+    "neg_log_rating_rank": 4.494691873320099,
+    "win_pct": 3.5653181152592865
+   },
+   "host_coef": {
+    "intercept": 44.15918297098116,
+    "neg_log_rpi_rank": 13.014346065709821,
+    "neg_log_rating_rank": -0.9054637092786867,
+    "win_pct": -14.26882557762559
+   },
+   "rpi_only_coef": [
+    21.980443450177884,
+    5.792560138260218
+   ],
+   "host_rpi_only_coef": [
+    24.177749619505626,
+    8.692113906904263
+   ],
+   "seasons": {
+    "2021": {
+     "at_large": 34,
+     "misses": 4,
+     "misses_rpi_rule": 4,
+     "host_hits": 14,
+     "host_hits_rpi_rule": 15,
+     "seed_line_mae": null,
+     "seed_line_mae_rpi_rule": null
+    },
+    "2022": {
+     "at_large": 33,
+     "misses": 4,
+     "misses_rpi_rule": 3,
+     "host_hits": 14,
+     "host_hits_rpi_rule": 14,
+     "seed_line_mae": null,
+     "seed_line_mae_rpi_rule": null
+    },
+    "2023": {
+     "at_large": 32,
+     "misses": 3,
+     "misses_rpi_rule": 2,
+     "host_hits": 14,
+     "host_hits_rpi_rule": 14,
+     "seed_line_mae": null,
+     "seed_line_mae_rpi_rule": null
+    },
+    "2024": {
+     "at_large": 32,
+     "misses": 2,
+     "misses_rpi_rule": 2,
+     "host_hits": 16,
+     "host_hits_rpi_rule": 16,
+     "seed_line_mae": null,
+     "seed_line_mae_rpi_rule": null
+    },
+    "2025": {
+     "at_large": 33,
+     "misses": 2,
+     "misses_rpi_rule": 1,
+     "host_hits": 14,
+     "host_hits_rpi_rule": 14,
+     "seed_line_mae": null,
+     "seed_line_mae_rpi_rule": null
+    },
+    "2026": {
+     "at_large": 34,
+     "misses": 4,
+     "misses_rpi_rule": 2,
+     "host_hits": 16,
+     "host_hits_rpi_rule": 16,
+     "seed_line_mae": null,
+     "seed_line_mae_rpi_rule": null
+    }
+   },
+   "test_at_large": {
+    "n": 740,
+    "log_loss": 0.13374929699680252,
+    "brier": 0.03660810305726144
+   },
+   "test_at_large_rpi_only": {
+    "n": 740,
+    "log_loss": 0.12305708870722014,
+    "brier": 0.03224339507962812
+   },
+   "test_host": {
+    "n": 384,
+    "log_loss": 0.13648230453864832,
+    "brier": 0.03378090930987033
+   },
+   "test_host_rpi_only": {
+    "n": 384,
+    "log_loss": 0.10360754803713267,
+    "brier": 0.027439412675433584
+   },
+   "totals": {
+    "misses": 19,
+    "misses_rpi": 14,
+    "at_large": 198,
+    "host_hits": 88,
+    "host_hits_rpi": 89,
+    "line_err": [],
+    "line_err_rpi": []
+   },
+   "n_test_seasons": 6
+  }
+ }
+}

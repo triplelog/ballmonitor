@@ -1,0 +1,40 @@
+[meta]
+title = "Template Model"
+version = "0.1.0"
+status = "draft"  # stub | draft | calibrated
+question = "One sentence: what does this model predict?"
+description = """
+Two or three sentences on the approach.
+"""
+assumptions = [
+  "Each assumption the user should know about, in plain language.",
+]
+
+# Optional, only with a fetch.py that works without the local data/raw/ cache: let the
+# scheduled site build refresh this model's data inside a season window (MM-DD, inclusive).
+# [fetch]
+# auto = true
+# season = ["03-20", "11-05"]
+
+# Every tunable number used by model.py must be declared here with a description,
+# a source (or "Judgement"), and a range where it makes sense.
+
+[params.midpoint]
+value = 50.0
+description = "Score at which the event is a coin flip."
+source = "Judgement."
+range = [0.0, 100.0]
+
+[params.scale]
+value = 10.0
+description = "Score points per unit of log-odds; bigger = flatter curve."
+source = "Judgement."
+range = [0.1, 100.0]
+
+# Formulas the user may want to swap out. Numeric params are available by name;
+# `variables` lists the extra names model.py passes in.
+
+[formulas.probability]
+expr = "logistic((score - midpoint) / scale)"
+description = "Probability that the event happens, given the score."
+variables = ["score"]

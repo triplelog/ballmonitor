@@ -1,0 +1,117 @@
+
+
+#away-info {
+	border: 1px solid black;
+	border-width: 1px 1px 0px 1px;
+}
+#linescore-location {
+    border: 1px solid black;
+}
+#home-info {
+	border: 1px solid black;
+	border-width: 1px 1px 0px 1px;
+}
+
+#awayoff-location {
+    border: 1px solid black;
+    border-width: 0px 1px 1px 1px;
+    border-bottom: 1px dotted black;
+}
+#homeoff-location {
+    border: 1px solid black;
+    border-width: 0px 1px 1px 1px;
+    border-bottom: 1px dotted black;
+}
+#awaypitcher-location {
+    border: 1px solid black;
+    border-width: 0px 1px 1px 1px;
+}
+#homepitcher-location {
+    border: 1px solid black;
+    border-width: 0px 1px 1px 1px;
+}
+#linescorePBP {
+	display: inline-block;
+	background: rgba(205,205,205,.95);
+	width: 600px;
+}
+#linescorePBP .col {
+	padding: 2px;
+}
+#linescorePBP table {
+	line-height: 1rem;
+}
+#basesSVG {
+	border: 1px solid red;
+	
+}
+#firstBase {
+	fill: white;
+}
+
+
+
+[x-arrow] {
+  position: absolute;
+  
+}
+
+.popover {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(255,170,170,.95);
+  width: 50%;
+  max-width: 50%;
+  
+}
+
+.popover[x-placement="bottom"] [x-arrow] {
+  top: -30px;
+  border-bottom: 30px solid rgba(255,0,0,.25);
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+  pointer-events: none;
+}
+
+.currentgame {
+	background-color: rgba(0,255,100,.15);
+	border: 1px dotted black;
+	font-size: .8rem;
+	line-height: 1rem;
+}
+.notme {
+	border: 1px dotted black;
+	font-size: .8rem;
+	line-height: 1rem;
+}
+.batstats > table, .pitchstats > table {
+	font-size: .8rem;
+	line-height: 1rem;
+	margin: 1rem 0rem 1rem 0rem;
+}
+
+.batstats tr {
+}
+
+.batstats td {
+	min-width: 30px;
+	text-align: right;
+	padding: .05rem .2rem .05rem .2rem;
+}
+.batstats th {
+	text-align: center;
+}
+
+
+.pitchstats tr {
+}
+
+.pitchstats td {
+	min-width: 30px;
+	text-align: right;
+	padding: .05rem .2rem .05rem .2rem;
+}
+.pitchstats th {
+	text-align: center;
+}
+

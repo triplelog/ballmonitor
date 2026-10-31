@@ -1,0 +1,10 @@
+description = "Benchmark: every matchup gets the league-average xwOBA, K% and BB%."
+
+[params]
+max_archetype_weight = 0.0
+microsim_weight = 0.0
+microsim_weight_rates = 0.0
+
+[formulas]
+bvp_weight = "0.0 * n_direct"
+log5 = "pl + 0.0 * (pb + pp)"

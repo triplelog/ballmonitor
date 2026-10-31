@@ -1,0 +1,28 @@
+# Hot and hilly race inputs with target environmental projection
+# Race 1: 5K run in 82°F heat and 70% humidity (normalizes to faster neutral time)
+# Race 2: Half Marathon run with 600ft climb and 600ft descent (normalizes to faster flat time)
+# Target: 10K course at altitude (5,280 ft / 1600m) with 400ft climb and 76°F temperature
+
+target = "10k"
+age = 36
+gender = "M"
+
+target_elevation_gain = "400ft"
+target_elevation_loss = "400ft"
+target_altitude = "5280ft"
+target_temp_f = 76.0
+target_humidity_pct = 55.0
+
+[[races]]
+distance = "5k"
+time = "21:15"
+year = 2025
+temp_f = 82.0
+humidity_pct = 70.0
+
+[[races]]
+distance = "half"
+time = "1:36:30"
+year = 2025
+elevation_gain = "600ft"
+elevation_loss = "600ft"

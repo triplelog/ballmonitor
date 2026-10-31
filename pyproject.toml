@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ballmonitor"
+version = "0.1.0"
+description = "A collection of simple, open, fully-tweakable probability models with a uniform output style."
+requires-python = ">=3.11"
+dependencies = []  # core is stdlib-only on purpose; add per-model deps sparingly
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+data = [  # `ballmonitor fetch` plus the models that run on numpy/pandas/parquet/scipy (bvp_similarity, next_pitch, ncaaf_recruiting; research scripts)
+  "xlrd>=2", "numpy>=2", "pandas>=2.2", "pyarrow>=17",
+  "scipy>=1.11",  # ncaaf_recruiting's Plackett-Luce fit
+  "pypdf>=4",  # ranked_choice: PHWA (NHL) ballot PDFs
+  "scikit-learn>=1.5",  # bvp_similarity (StandardScaler, nearest neighbours)
+]
+ml = ["lightgbm>=4.5"]
+ingest = [  # one-off data ingest scripts (and their tests); not needed to run models or build the site
+  "requests>=2", "beautifulsoup4>=4",  # race_podium/ingest.py, ncaaf_recruiting/ingest_class.py, triple_play places
+  "sportsdataverse>=0.0.39",  # ncaaf_recruiting 247Sports/On3 scrapers
+  "rdata>=0.11",  # triple_play build: CRAN Lahman .rda files
+]
+video = ["playwright>=1.45"]  # `ballmonitor export-replay` (cfb_replay -> MP4); also needs ffmpeg  # next_pitch method = "gbm" (the model falls back to its context tree without it)
+research = ["ballmonitor[data,ml]", "torch>=2.6"]  # next_pitch/research.py (sequence transformer)
+
+[project.scripts]
+ballmonitor = "ballmonitor.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["ballmonitor*"]
+
+[tool.setuptools.package-data]
+"*" = ["*.toml", "*.md", "*.csv", "*.html", "*.js", "*.css"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "ballmonitor/models"]

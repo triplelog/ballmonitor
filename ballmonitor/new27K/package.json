@@ -1,0 +1,14 @@
+{
+  "name": "new27k",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "serve": "node tools/serve.js",
+    "test": "node test/rules.js && node test/advice.js && node test/mp.js && node test/sim.js 300 1 && node test/challenges.js 40 && node test/season.js && node test/career.js 9",
+    "sim": "node test/sim.js",
+    "build": "node tools/build-static.js"
+  },
+  "devDependencies": {
+    "mathzetta": "file:../../mathzetta"
+  }
+}

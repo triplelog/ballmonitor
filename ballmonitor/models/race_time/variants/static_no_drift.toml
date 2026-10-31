@@ -1,0 +1,9 @@
+# Static baseline ignoring temporal fitness drift (curve method)
+[meta]
+description = "Curve method (v0.4.0) without temporal improvement transfer and time-based uncertainty inflation."
+
+[params]
+method = "curve"
+transfer_short_to_long = 0.0
+transfer_long_to_short = 0.0
+annual_fitness_drift_pct = 0.0

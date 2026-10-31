@@ -1,0 +1,206 @@
+[meta]
+title = "NCAAF bowl & CFP projections"
+version = "0.4.0"
+status = "draft"
+question = "Which bowl game or 12-team College Football Playoff seed will each FBS team earn, and what are their postseason win probabilities?"
+description = "Monte Carlo FBS season and postseason simulator for the current season: every remaining regular-season game (ESPN schedule), conference championship games, the 12-team College Football Playoff (2026 straight-seeding protocol: 5 automatic bids, 7 at-large, top 4 ranked teams get byes) and the 2026-27 conference bowl tie-ins."
+assumptions = [
+  "Records, the remaining schedule and conference alignment are the ESPN snapshot in data/meta.json (rebuild with `ballmonitor fetch ncaaf_bowls`); games after the snapshot are simulated.",
+  "Team strength is one fixed rating per team for the whole run (ESPN FPI by default, or a results-only rating), so injuries and in-season changes after the snapshot are ignored.",
+  "Each game's win probability depends on the rating difference plus home-field advantage via a normal CDF margin model (config formula win_probability); FCS opponents all share fcs_opponent_rating.",
+  "The CFP committee ranking is a hand-weighted resume score (win %, losses, rating, conference title, power-conference schedule), not a fitted model.",
+  "The CFP uses the 2026 format: automatic bids for the ACC, Big Ten, Big 12 and SEC champions plus the highest-ranked champion of the other six conferences, 7 at-large bids, straight seeding by ranking (byes for the top 4).",
+  "Non-CFP bowls are filled from data/bowls.json: each conference fills its tie-in slots in its pick order, legacy Pac-12 schools fill the Pac-12 legacy slots, then pooled and at-large slots; picks weigh wins, rating, brand, distance and repeat/rematch avoidance.",
+]
+
+# When the scheduled site build (`ballmonitor update-and-build`) runs fetch.py: game days from
+# week 0 to the CFP final. Outside it, refresh by hand with `ballmonitor fetch ncaaf_bowls`.
+[fetch]
+auto = true
+season = ["08-15", "01-25"]
+
+[params.home_field_points]
+value = 2.5
+unit = "points"
+description = "Home-field advantage added to the home team's rating margin."
+source = "DRAFT: common FBS spread rule of thumb (~2.5 pts) - verify against closing lines."
+range = [0.0, 6.0]
+
+[params.margin_sd]
+value = 14.0
+unit = "points"
+description = "Standard deviation of actual game scoring margin around the projected spread."
+source = "DRAFT: typical FBS margin-vs-spread SD (~14 pts) - verify."
+range = [5.0, 25.0]
+
+[params.simulations]
+value = 200
+description = "Number of Monte Carlo full-season + postseason simulations."
+source = "Judgement: keeps interactive runs well under a second; raise for stable tail probabilities (MC s.e. at p=0.5 is 3.5% with 200 sims)."
+range = [50, 10000]
+
+[params.random_seed]
+value = 42
+description = "Random seed for reproducible Monte Carlo runs."
+source = "Simulation reproducibility."
+range = [1, 999999]
+
+[params.bowl_eligible_wins]
+value = 6
+description = "Minimum wins for bowl eligibility (teams one win short fill leftover slots by APR)."
+source = "NCAA FBS postseason eligibility rule (6 wins; APR fallback for 5-7 teams)."
+range = [5, 7]
+
+[params.ratings_source]
+value = "fpi"
+choices = ["fpi", "results"]
+description = "Team ratings: 'fpi' = ESPN Football Power Index (data/ratings_fpi.csv); 'results' = results-only ridge fit on this season's scores (data/ratings_results.csv)."
+source = "ESPN FPI via sports.core.api.espn.com powerindex (snapshot in data/meta.json); results fit built by fetch.py."
+
+[params.fcs_opponent_rating]
+value = -21.7
+unit = "points"
+description = "Rating of every FCS opponent on the FBS rating scale (0 = average FBS team)."
+source = "Pooled FCS rating from the results-only fit of this season's FBS-vs-FCS games (data/meta.json fcs_pooled_results_rating)."
+range = [-50.0, 0.0]
+
+[params.rating_margin_cap]
+value = 28.0
+unit = "points"
+description = "Results-only rating (fetch.py): scoring margins are capped at +/- this many points before fitting."
+source = "Judgement: limits blowout influence, as in common margin-capped ratings."
+range = [7.0, 70.0]
+
+[params.rating_ridge]
+value = 2.0
+unit = "games"
+description = "Results-only rating (fetch.py): ridge shrinkage toward the average team, in pseudo-games at a 0 margin."
+source = "Judgement: with ~8 games per team, 2 pseudo-games keeps early ratings from overreacting."
+range = [0.0, 20.0]
+
+[params.resume_win_pct_weight]
+value = 65.0
+description = "CFP resume score: points per 1.0 of win percentage."
+source = "DRAFT judgement weight - verify against committee rankings."
+range = [0.0, 200.0]
+
+[params.resume_loss_penalty_scale]
+value = 3.5
+description = "CFP resume score: penalty multiplier on losses ** resume_loss_penalty_exponent."
+source = "DRAFT judgement weight - verify against committee rankings."
+range = [0.0, 20.0]
+
+[params.resume_loss_penalty_exponent]
+value = 1.5
+description = "CFP resume score: exponent on losses (>1 makes each extra loss hurt more)."
+source = "DRAFT judgement weight - verify against committee rankings."
+range = [1.0, 3.0]
+
+[params.resume_power_weight]
+value = 1.0
+description = "CFP resume score: points per point of power rating."
+source = "DRAFT judgement weight - verify against committee rankings."
+range = [0.0, 5.0]
+
+[params.resume_conf_champ_bonus]
+value = 8.0
+description = "CFP resume score: bonus for winning any conference title."
+source = "DRAFT judgement weight - verify against committee rankings."
+range = [0.0, 30.0]
+
+[params.resume_p4_champ_bonus]
+value = 3.0
+description = "CFP resume score: extra bonus for winning an SEC / Big Ten / Big 12 / ACC title."
+source = "DRAFT judgement weight - verify against committee rankings."
+range = [0.0, 20.0]
+
+[params.resume_power4_bonus]
+value = 4.0
+description = "CFP resume score: schedule-strength bonus for power-conference teams and Notre Dame."
+source = "DRAFT judgement weight - verify against committee rankings."
+range = [0.0, 20.0]
+
+[params.bowl_win_weight]
+value = 3.5
+description = "Bowl selection utility per team win."
+source = "DRAFT judgement weight - verify (historical_bowls_2014_2023.json, analysis.py)."
+range = [0.0, 10.0]
+
+[params.bowl_rating_weight]
+value = 0.4
+description = "Bowl selection utility per point of power rating."
+source = "DRAFT judgement weight - verify."
+range = [0.0, 5.0]
+
+[params.bowl_brand_weight]
+value = 1.4
+description = "Bowl selection utility per point of brand (1-10), scaled by bowl prestige."
+source = "Tuned in-sample to a ~1.6-win brand premium in historical_bowls_2014_2023.json (analysis.py)."
+range = [0.0, 5.0]
+
+[params.bowl_geo_weight]
+value = 1.8
+description = "Bowl selection utility for proximity: 10 x weight x (1 - distance / bowl_max_distance_miles)."
+source = "DRAFT judgement weight - verify."
+range = [0.0, 5.0]
+
+[params.bowl_max_distance_miles]
+value = 2500.0
+unit = "miles"
+description = "Distance at which the proximity utility reaches zero."
+source = "Judgement (roughly coast-to-coast)."
+range = [500.0, 5000.0]
+
+[params.bowl_drive_in_radius_miles]
+value = 400.0
+unit = "miles"
+description = "Radius inside which a team gets the drive-in bonus."
+source = "historical_bowls_2014_2023.json: 29.7% of bowl teams within 400 mi (analysis.py)."
+range = [0.0, 1500.0]
+
+[params.bowl_drive_in_bonus]
+value = 3.5
+description = "Maximum extra utility for a team inside the drive-in radius (linear to 0 at the edge)."
+source = "DRAFT judgement weight - verify."
+range = [0.0, 20.0]
+
+[params.bowl_regional_proximity_mult]
+value = 1.6
+description = "Multiplier on the drive-in bonus for regional drive-in bowls."
+source = "DRAFT judgement weight - verify."
+range = [1.0, 5.0]
+
+[params.bowl_repeat_penalty]
+value = 14.0
+description = "Utility penalty for sending a team to the same bowl as last season."
+source = "Tuned in-sample to 85.2% repeat suppression in historical_bowls_2014_2023.json (analysis.py)."
+range = [0.0, 50.0]
+
+[params.bowl_rematch_penalty]
+value = 25.0
+description = "Utility penalty for a regular-season rematch in a non-CFP bowl."
+source = "Judgement: bowls strongly avoid rematches."
+range = [0.0, 100.0]
+
+[params.bowl_temperature]
+value = 0.35
+description = "Gumbel noise scale on bowl utilities (0 = deterministic picks)."
+source = "DRAFT judgement - verify."
+range = [0.0, 5.0]
+
+[params.big_ten_max_conf_win_skip]
+value = 1
+description = "Big Ten rule: a bowl may not pass over a team with more than this many extra conference wins."
+source = "Big Ten bowl selection agreement (DRAFT - verify current contract)."
+range = [0, 5]
+
+[params.notre_dame_acc_win_tolerance]
+value = 1
+description = "Notre Dame may take an ACC bowl slot if within this many wins of the best available ACC team."
+source = "ACC-Notre Dame bowl agreement (DRAFT - verify current contract)."
+range = [0, 3]
+
+[formulas.win_probability]
+expr = "normal_cdf((rating_diff + home * home_field_points) / margin_sd)"
+description = "P(team A wins) from rating difference (A - B) and home indicator (+1 home, 0 neutral, -1 away). Used for every regular-season, title, CFP and bowl game."
+variables = ["rating_diff", "home"]

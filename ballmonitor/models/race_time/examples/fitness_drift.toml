@@ -1,0 +1,22 @@
+# Temporal fitness drift: historical 2024 marathon + 2024 5K, followed by a faster 2026 5K
+# The curve method (--variant curve_v04) detects the 5K speed gain and transfers it to the
+# marathon; the default weighted Riegel simply down-weights the 2024 races (half-life 1 year).
+target = "marathon"
+target_year = 2026
+age = 42
+gender = "M"
+
+[[races]]
+distance = "marathon"
+time = "3:30:00"
+year = 2024
+
+[[races]]
+distance = "5k"
+time = "22:00"
+year = 2024
+
+[[races]]
+distance = "5k"
+time = "19:30"
+year = 2026

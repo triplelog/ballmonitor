@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Triple Play · daily Venn puzzle</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <a class="back" href="../" title="Back to ballmonitor">← ballmonitor</a>
+    <h1>Triple Play</h1>
+    <nav class="packs" id="packs"></nav>
+    <div class="top-actions">
+      <button id="btn-archive" class="ghost">Archive</button>
+      <button id="btn-help" class="ghost">How to play</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="meta" id="meta"></div>
+    <section class="board-wrap">
+      <svg id="venn" viewBox="0 0 720 690" role="img" aria-label="Three-circle Venn diagram"></svg>
+    </section>
+    <section class="tray-wrap">
+      <div class="tray-head">
+        <span id="placed-count">0 / 17 placed</span>
+        <span class="hint" id="tray-hint">Tap a card, then tap a part of the diagram — or drag.</span>
+      </div>
+      <div id="tray" class="tray"></div>
+      <div class="actions">
+        <button id="btn-clear" class="ghost">Clear board</button>
+        <button id="btn-check" class="primary" disabled>Check (one try)</button>
+      </div>
+    </section>
+    <section id="result" class="result hidden"></section>
+  </main>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close" aria-label="Close">×</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+  <div id="toast" class="toast hidden"></div>
+  <script src="game.js"></script>
+</body>
+</html>

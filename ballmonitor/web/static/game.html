@@ -1,0 +1,1131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pitch Guesser — Player vs. AI Brier Score Challenge</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="static/style.css">
+  <style>
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .game-topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 24px;
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+    }
+    .game-topbar a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .game-topbar a:hover {
+      color: var(--text);
+    }
+    .game-title {
+      font-size: 16px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .game-container {
+      max-width: 1060px;
+      margin: 24px auto;
+      padding: 0 20px 60px;
+    }
+
+    /* Matchup & Situation Grid */
+    .recon-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    @media (max-width: 768px) {
+      .recon-grid { grid-template-columns: 1fr; }
+    }
+    .recon-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 18px 20px;
+      box-shadow: var(--shadow-sm);
+    }
+    .recon-title {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      margin-bottom: 12px;
+      font-weight: 700;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* Player details */
+    .player-row {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+    .player-name {
+      font-size: 18px;
+      font-weight: 700;
+    }
+    .player-meta {
+      font-size: 13px;
+      color: var(--text-secondary);
+      font-family: var(--mono);
+    }
+
+    /* Count & Diamond */
+    .state-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border-subtle);
+    }
+    .count-box {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .count-big {
+      font-size: 32px;
+      font-weight: 800;
+      font-family: var(--mono);
+      line-height: 1;
+    }
+    .count-dots {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-size: 11px;
+      color: var(--text-secondary);
+    }
+    .dot-group {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--surface-3);
+      display: inline-block;
+    }
+    .dot.ball-on { background: #10b981; }
+    .dot.strike-on { background: #ef4444; }
+    .dot.out-on { background: #f59e0b; }
+
+    /* Diamond diagram */
+    .diamond-wrap {
+      width: 44px;
+      height: 44px;
+      position: relative;
+    }
+    .base {
+      width: 11px;
+      height: 11px;
+      background: var(--surface-3);
+      border: 1px solid var(--border);
+      position: absolute;
+      transform: rotate(45deg);
+      border-radius: 2px;
+    }
+    .base.on { background: #f59e0b; border-color: #d97706; }
+    .base-2b { top: 2px; left: 16px; }
+    .base-3b { top: 16px; left: 2px; }
+    .base-1b { top: 16px; right: 2px; }
+    .base-hp { bottom: 2px; left: 16px; width: 10px; height: 10px; background: var(--text-secondary); }
+
+    /* Sequence trail */
+    .sequence-trail {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      max-height: 125px;
+      overflow-y: auto;
+    }
+    .seq-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 6px 10px;
+      background: var(--surface-2);
+      border-radius: var(--radius-sm);
+      font-size: 12px;
+    }
+    .seq-pitch {
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .seq-res {
+      color: var(--text-secondary);
+    }
+
+    /* Main Stage: Probability Equalizer */
+    .stage-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      box-shadow: var(--shadow);
+      margin-bottom: 24px;
+    }
+    .stage-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 18px;
+    }
+    .stage-instruction {
+      font-size: 13px;
+      color: var(--text-secondary);
+    }
+
+    /* Horizontal equalizer bars */
+    .equalizer-grid {
+      display: flex;
+      gap: 16px;
+      align-items: flex-end;
+      height: 280px;
+      padding: 20px 10px 10px;
+      background: var(--bg);
+      border-radius: var(--radius);
+      border: 1px solid var(--border);
+      user-select: none;
+      -webkit-user-select: none;
+      touch-action: none;
+    }
+    .pitch-col {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      position: relative;
+    }
+    .prob-badge {
+      font-size: 18px;
+      font-weight: 800;
+      font-family: var(--mono);
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+    .track-wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 90px;
+      flex: 1;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: ns-resize;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+    .track-wrapper:hover {
+      border-color: var(--accent);
+    }
+    .track-fill {
+      width: 100%;
+      background: linear-gradient(180deg, var(--accent) 0%, rgba(37, 99, 235, 0.75) 100%);
+      transition: height 0.05s ease-out;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      position: relative;
+    }
+    .drag-handle {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 16px;
+      background: rgba(255, 255, 255, 0.4);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 9px;
+      color: #fff;
+    }
+    .ai-marker {
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: #f59e0b;
+      z-index: 3;
+      pointer-events: none;
+    }
+    .ai-marker-label {
+      position: absolute;
+      right: 4px;
+      top: -14px;
+      font-size: 10px;
+      font-family: var(--mono);
+      color: #f59e0b;
+      font-weight: 700;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 1px 3px;
+      border-radius: 3px;
+    }
+
+    .pitch-meta {
+      margin-top: 10px;
+      text-align: center;
+    }
+    .pitch-code {
+      font-weight: 800;
+      font-size: 15px;
+    }
+    .pitch-name {
+      font-size: 11px;
+      color: var(--muted);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 90px;
+    }
+    .stepper-btns {
+      display: flex;
+      gap: 4px;
+      margin-top: 6px;
+    }
+    .step-btn {
+      width: 26px;
+      height: 24px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      color: var(--text);
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+    }
+    .step-btn:hover {
+      background: var(--surface-3);
+    }
+
+    /* Actions Bar */
+    .stage-actions {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+    .btn-submit {
+      background: var(--accent);
+      color: #fff;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 12px 28px;
+      border: none;
+      border-radius: var(--radius);
+      cursor: pointer;
+      box-shadow: var(--shadow);
+      transition: background 0.15s ease;
+    }
+    .btn-submit:hover {
+      background: var(--accent-hover);
+    }
+    .btn-reset {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 8px 16px;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      font-size: 13px;
+    }
+    .btn-reset:hover {
+      background: var(--surface-3);
+    }
+
+    /* Result Banner */
+    .result-box {
+      margin-top: 20px;
+      padding: 18px 22px;
+      border-radius: var(--radius-lg);
+      display: none;
+      animation: fadeIn 0.3s ease;
+    }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+    .result-box.win {
+      background: var(--ok-bg);
+      border: 1px solid var(--ok-border);
+      color: var(--ok);
+    }
+    .result-box.loss {
+      background: var(--error-bg);
+      border: 1px solid var(--error-border);
+      color: var(--error);
+    }
+    .result-box.tie {
+      background: var(--changed-bg);
+      border: 1px solid var(--changed-border);
+      color: var(--changed);
+    }
+    .result-heading {
+      font-size: 18px;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+    .result-details {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+      margin-top: 12px;
+      color: var(--text);
+      font-size: 14px;
+    }
+    .result-item {
+      background: rgba(255, 255, 255, 0.4);
+      padding: 8px 12px;
+      border-radius: var(--radius-sm);
+    }
+    .result-item strong {
+      font-family: var(--mono);
+    }
+    .btn-next {
+      background: var(--text);
+      color: var(--bg);
+      font-size: 15px;
+      font-weight: 700;
+      padding: 10px 22px;
+      border: none;
+      border-radius: var(--radius);
+      cursor: pointer;
+      margin-top: 14px;
+    }
+
+    /* Scoreboard & Chart Section */
+    .dashboard-grid {
+      display: grid;
+      grid-template-columns: 280px 1fr;
+      gap: 16px;
+    }
+    @media (max-width: 860px) {
+      .dashboard-grid { grid-template-columns: 1fr; }
+    }
+    .stats-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+    }
+    .stat-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+    .stat-val {
+      font-weight: 700;
+      font-family: var(--mono);
+    }
+    .chart-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+    .chart-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+    .chart-legend {
+      display: flex;
+      gap: 16px;
+      font-size: 12px;
+    }
+    .legend-tag {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .legend-line {
+      width: 14px;
+      height: 3px;
+      border-radius: 2px;
+    }
+    .svg-chart-container {
+      width: 100%;
+      height: 180px;
+      position: relative;
+    }
+    svg.brier-chart {
+      width: 100%;
+      height: 100%;
+      overflow: visible;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="game-topbar">
+    <a href="index.html"><span aria-hidden="true">&larr;</span> Back to ballmonitor models</a>
+    <div class="game-title">⚾ Pitch Guesser: Player vs. AI</div>
+    <div style="font-size: 13px; color: var(--muted);" id="session-count-label">Pitches: 0</div>
+  </header>
+
+  <div class="game-container">
+
+    <!-- Matchup & Situation -->
+    <div class="recon-grid">
+      <!-- Pitcher & Batter Card -->
+      <div class="recon-card">
+        <div class="recon-title">
+          <span>Matchup</span>
+          <span id="inning-label">Top 1st</span>
+        </div>
+        <div class="player-row">
+          <div class="player-name" id="pitcher-name">Loading Pitcher...</div>
+          <div class="player-meta" id="pitcher-hand">RHP</div>
+        </div>
+        <div class="player-row" style="margin-top: 10px;">
+          <div class="player-name" id="batter-name" style="font-size: 16px; font-weight: 600;">Loading Batter...</div>
+          <div class="player-meta" id="batter-meta">LHB · OPS --</div>
+        </div>
+
+        <div class="state-row">
+          <div class="count-box">
+            <div class="count-big" id="count-display">0-0</div>
+            <div class="count-dots">
+              <div class="dot-group">
+                <span>B:</span>
+                <span class="dot" id="b1"></span>
+                <span class="dot" id="b2"></span>
+                <span class="dot" id="b3"></span>
+              </div>
+              <div class="dot-group">
+                <span>S:</span>
+                <span class="dot" id="s1"></span>
+                <span class="dot" id="s2"></span>
+              </div>
+              <div class="dot-group">
+                <span>O:</span>
+                <span class="dot" id="o1"></span>
+                <span class="dot" id="o2"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Diamond -->
+          <div class="diamond-wrap" title="Baserunners">
+            <div class="base base-2b" id="base-2"></div>
+            <div class="base base-3b" id="base-3"></div>
+            <div class="base base-1b" id="base-1"></div>
+            <div class="base base-hp"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- At-Bat Sequence Trail -->
+      <div class="recon-card">
+        <div class="recon-title">
+          <span>This At-Bat Sequence</span>
+          <span id="seq-count-label">0 pitches</span>
+        </div>
+        <div class="sequence-trail" id="sequence-list">
+          <div class="seq-item" style="color: var(--muted);">First pitch of the at-bat.</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Probability Adjustment Stage -->
+    <div class="stage-card">
+      <div class="stage-header">
+        <div>
+          <h2 style="margin: 0 0 4px; font-size: 18px;">Tune Your Probabilities</h2>
+          <div class="stage-instruction">
+            <strong>Drag any bar up to increase its probability</strong>, or drag down to decrease it. Other pitches rebalance automatically to 100%.
+          </div>
+        </div>
+        <button class="btn-reset" id="btn-reset-ai" title="Reset probabilities to the AI's starting prediction">Reset to AI</button>
+      </div>
+
+      <!-- Equalizer Display -->
+      <div class="equalizer-grid" id="equalizer-grid"></div>
+
+      <!-- Actions -->
+      <div class="stage-actions">
+        <div style="font-size: 12px; color: var(--muted);">
+          Total probability: <strong id="total-prob-label" style="font-family: var(--mono); color: var(--text);">100%</strong>
+        </div>
+        <button class="btn-submit" id="btn-submit-guess">Lock In Prediction</button>
+      </div>
+
+      <!-- Result Reveal Box -->
+      <div class="result-box" id="result-box">
+        <div class="result-heading">
+          <span id="result-badge-text">Result</span>
+          <span id="actual-pitch-pill" style="font-family: var(--mono); font-size: 14px; background: rgba(0,0,0,0.1); padding: 4px 10px; border-radius: 4px;"></span>
+        </div>
+        <div class="result-details">
+          <div class="result-item">Your Brier Score: <strong id="res-player-brier">0.00</strong></div>
+          <div class="result-item">AI Brier Score: <strong id="res-ai-brier">0.00</strong></div>
+          <div class="result-item">Your % on actual: <strong id="res-player-pct">0%</strong></div>
+          <div class="result-item">AI % on actual: <strong id="res-ai-pct">0%</strong></div>
+        </div>
+        <button class="btn-next" id="btn-next-pitch">Next Pitch &rarr;</button>
+      </div>
+    </div>
+
+    <!-- Brier Score Over Time Dashboard -->
+    <div class="dashboard-grid">
+      <!-- Cumulative Scoreboard -->
+      <div class="stats-card">
+        <div class="recon-title">Performance vs AI</div>
+        <div class="stat-row">
+          <span>Pitches Evaluated:</span>
+          <span class="stat-val" id="stat-total">0</span>
+        </div>
+        <div class="stat-row">
+          <span>Record (W - L - T):</span>
+          <span class="stat-val" id="stat-record">0 - 0 - 0</span>
+        </div>
+        <div class="stat-row">
+          <span>Your Mean Brier:</span>
+          <span class="stat-val" id="stat-player-brier" style="color: var(--accent);">--</span>
+        </div>
+        <div class="stat-row">
+          <span>AI Mean Brier:</span>
+          <span class="stat-val" id="stat-ai-brier" style="color: #f59e0b;">--</span>
+        </div>
+        <div class="stat-row" style="margin-top: 14px; padding-top: 10px; border-top: 1px solid var(--border-subtle);">
+          <span>Standing:</span>
+          <span class="stat-val" id="stat-status" style="font-size: 13px;">--</span>
+        </div>
+        <button class="btn-reset" id="btn-clear-stats" style="width: 100%; margin-top: 14px;">Reset History</button>
+      </div>
+
+      <!-- Brier Score Trend Chart -->
+      <div class="chart-card">
+        <div class="chart-header">
+          <div class="recon-title" style="margin: 0;">Brier Score Over Time (Lower is Better)</div>
+          <div class="chart-legend">
+            <div class="legend-tag">
+              <span class="legend-line" style="background: var(--accent);"></span>
+              <span>You</span>
+            </div>
+            <div class="legend-tag">
+              <span class="legend-line" style="background: #f59e0b;"></span>
+              <span>AI</span>
+            </div>
+          </div>
+        </div>
+        <div class="svg-chart-container" id="chart-container">
+          <svg class="brier-chart" id="trend-svg" viewBox="0 0 500 160" preserveAspectRatio="none">
+            <line x1="40" y1="20" x2="40" y2="140" stroke="var(--border)" stroke-width="1"></line>
+            <line x1="40" y1="140" x2="480" y2="140" stroke="var(--border)" stroke-width="1"></line>
+            <text x="250" y="85" text-anchor="middle" fill="var(--muted)" font-size="12">Score 2+ pitches to see learning trend</text>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // State
+    let currentScenario = null;
+    let playerProbs = {};
+    let isDragging = false;
+    let activeDragCol = null;
+    let dragStartY = 0;
+    let dragStartProb = 0;
+
+    // Session History
+    let historyData = JSON.parse(localStorage.getItem("pitch_guesser_history") || "[]");
+
+    const FAMILY_COLORS = {
+      FF: "linear-gradient(180deg, #ef4444 0%, #b91c1c 100%)",
+      SI: "linear-gradient(180deg, #f97316 0%, #c2410c 100%)",
+      FC: "linear-gradient(180deg, #fb923c 0%, #ea580c 100%)",
+      SL: "linear-gradient(180deg, #3b82f6 0%, #1d4ed8 100%)",
+      ST: "linear-gradient(180deg, #60a5fa 0%, #2563eb 100%)",
+      SV: "linear-gradient(180deg, #6366f1 0%, #4338ca 100%)",
+      CU: "linear-gradient(180deg, #818cf8 0%, #4f46e5 100%)",
+      KC: "linear-gradient(180deg, #a855f7 0%, #7e22ce 100%)",
+      CH: "linear-gradient(180deg, #10b981 0%, #047857 100%)",
+      FS: "linear-gradient(180deg, #14b8a6 0%, #0f766e 100%)",
+      FO: "linear-gradient(180deg, #06b6d4 0%, #0e7490 100%)",
+      KN: "linear-gradient(180deg, #eab308 0%, #a16207 100%)"
+    };
+
+    let _cachedScenarios = null;
+    async function loadScenario(id = null) {
+      document.getElementById("result-box").style.display = "none";
+      document.getElementById("btn-submit-guess").style.display = "inline-block";
+      try {
+        const url = id !== null ? `/api/game/scenario?id=${id}` : "/api/game/scenario";
+        const res = await fetch(url);
+        if (!res.ok) throw new Error("API not available");
+        currentScenario = await res.json();
+      } catch (err) {
+        // Fallback to static scenario bundle
+        if (!_cachedScenarios) {
+          const res = await fetch("data/game_scenarios.json");
+          _cachedScenarios = await res.json();
+        }
+        const idx = id !== null && String(id).match(/^\d+$/)
+          ? parseInt(id, 10) % _cachedScenarios.length
+          : Math.floor(Math.random() * _cachedScenarios.length);
+        const sc = _cachedScenarios[idx];
+        currentScenario = {
+          id: sc.id ?? idx,
+          pitcher: sc.pitcher,
+          pitcher_hand: sc.pitcher_hand,
+          batter: sc.batter,
+          batter_stand: sc.batter_stand,
+          batter_ops: sc.batter_ops,
+          balls: sc.balls,
+          strikes: sc.strikes,
+          outs: sc.outs,
+          inning: sc.inning,
+          score_diff: sc.score_diff,
+          bases: sc.bases,
+          sequence: sc.sequence,
+          arsenal: sc.arsenal,
+          pitch_names: sc.pitch_names,
+          ai_probs: sc.ai_probs,
+          _actual: sc.actual,
+        };
+      }
+      renderScenario(currentScenario);
+    }
+
+    function renderScenario(sc) {
+      document.getElementById("pitcher-name").textContent = sc.pitcher;
+      document.getElementById("pitcher-hand").textContent = sc.pitcher_hand;
+      document.getElementById("batter-name").textContent = sc.batter;
+      document.getElementById("batter-meta").textContent = `${sc.batter_stand} · OPS ${sc.batter_ops || ".---"}`;
+      document.getElementById("inning-label").textContent = `Inning ${sc.inning} (${sc.score_diff > 0 ? '+' : ''}${sc.score_diff})`;
+
+      // Count
+      document.getElementById("count-display").textContent = `${sc.balls}-${sc.strikes}`;
+      document.getElementById("b1").className = "dot" + (sc.balls >= 1 ? " ball-on" : "");
+      document.getElementById("b2").className = "dot" + (sc.balls >= 2 ? " ball-on" : "");
+      document.getElementById("b3").className = "dot" + (sc.balls >= 3 ? " ball-on" : "");
+      document.getElementById("s1").className = "dot" + (sc.strikes >= 1 ? " strike-on" : "");
+      document.getElementById("s2").className = "dot" + (sc.strikes >= 2 ? " strike-on" : "");
+      document.getElementById("o1").className = "dot" + (sc.outs >= 1 ? " out-on" : "");
+      document.getElementById("o2").className = "dot" + (sc.outs >= 2 ? " out-on" : "");
+
+      // Bases
+      const bases = String(sc.bases || "");
+      document.getElementById("base-1").className = "base base-1b" + (bases.includes("1") ? " on" : "");
+      document.getElementById("base-2").className = "base base-2b" + (bases.includes("2") ? " on" : "");
+      document.getElementById("base-3").className = "base base-3b" + (bases.includes("3") ? " on" : "");
+
+      // Sequence
+      const seqList = document.getElementById("sequence-list");
+      seqList.innerHTML = "";
+      if (!sc.sequence || sc.sequence.length === 0) {
+        seqList.innerHTML = '<div class="seq-item" style="color: var(--muted);">First pitch of the at-bat.</div>';
+        document.getElementById("seq-count-label").textContent = "0 pitches";
+      } else {
+        document.getElementById("seq-count-label").textContent = `${sc.sequence.length} pitch${sc.sequence.length > 1 ? "es" : ""}`;
+        sc.sequence.forEach((item, idx) => {
+          const div = document.createElement("div");
+          div.className = "seq-item";
+          div.innerHTML = `
+            <div class="seq-pitch">
+              <span>#${idx + 1}</span>
+              <strong>${item.code}</strong>
+              <span style="color: var(--muted); font-size: 11px;">(${item.name})</span>
+            </div>
+            <div class="seq-res">${item.result}</div>
+          `;
+          seqList.appendChild(div);
+        });
+      }
+
+      // Initialize player probabilities with AI starting values
+      playerProbs = { ...sc.ai_probs };
+      renderEqualizer();
+    }
+
+    function renderEqualizer() {
+      const grid = document.getElementById("equalizer-grid");
+      grid.innerHTML = "";
+      const arsenal = currentScenario.arsenal;
+
+      arsenal.forEach(code => {
+        const prob = playerProbs[code] || 0;
+        const aiProb = currentScenario.ai_probs[code] || 0;
+        const name = currentScenario.pitch_names[code] || code;
+        const bgGrad = FAMILY_COLORS[code] || "linear-gradient(180deg, var(--accent) 0%, #1d4ed8 100%)";
+
+        const col = document.createElement("div");
+        col.className = "pitch-col";
+        col.dataset.code = code;
+
+        col.innerHTML = `
+          <div class="prob-badge" id="badge-${code}">${Math.round(prob * 100)}%</div>
+          <div class="track-wrapper" id="track-${code}">
+            <div class="ai-marker" style="bottom: ${aiProb * 100}%;">
+              <span class="ai-marker-label">AI ${Math.round(aiProb * 100)}%</span>
+            </div>
+            <div class="track-fill" id="fill-${code}" style="height: ${prob * 100}%; background: ${bgGrad};">
+              <div class="drag-handle">▲ ▼</div>
+            </div>
+          </div>
+          <div class="pitch-meta">
+            <div class="pitch-code">${code}</div>
+            <div class="pitch-name" title="${name}">${name}</div>
+            <div class="stepper-btns">
+              <button class="step-btn" data-step="-0.05" data-code="${code}" title="Decrease 5%">−</button>
+              <button class="step-btn" data-step="0.05" data-code="${code}" title="Increase 5%">+</button>
+            </div>
+          </div>
+        `;
+        grid.appendChild(col);
+      });
+
+      attachDragEvents();
+    }
+
+    function updateBars() {
+      currentScenario.arsenal.forEach(code => {
+        const prob = playerProbs[code] || 0;
+        const badge = document.getElementById(`badge-${code}`);
+        const fill = document.getElementById(`fill-${code}`);
+        if (badge) badge.textContent = `${Math.round(prob * 100)}%`;
+        if (fill) fill.style.height = `${prob * 100}%`;
+      });
+      const total = Object.values(playerProbs).reduce((a, b) => a + b, 0);
+      document.getElementById("total-prob-label").textContent = `${Math.round(total * 100)}%`;
+    }
+
+    function adjustProbability(targetCode, newProb) {
+      newProb = Math.max(0.01, Math.min(0.98, newProb));
+      const arsenal = currentScenario.arsenal;
+      const otherCodes = arsenal.filter(c => c !== targetCode);
+      const remainingProb = 1.0 - newProb;
+      const currentOtherSum = otherCodes.reduce((s, c) => s + (playerProbs[c] || 0), 0);
+
+      playerProbs[targetCode] = newProb;
+      if (currentOtherSum > 0.0001) {
+        otherCodes.forEach(c => {
+          playerProbs[c] = remainingProb * (playerProbs[c] / currentOtherSum);
+        });
+      } else {
+        const equalShare = remainingProb / otherCodes.length;
+        otherCodes.forEach(c => { playerProbs[c] = equalShare; });
+      }
+      updateBars();
+    }
+
+    function attachDragEvents() {
+      const tracks = document.querySelectorAll(".track-wrapper");
+      tracks.forEach(track => {
+        const code = track.parentElement.dataset.code;
+
+        const handlePointer = (e) => {
+          const rect = track.getBoundingClientRect();
+          const clickY = rect.bottom - e.clientY;
+          const ratio = clickY / rect.height;
+          adjustProbability(code, ratio);
+        };
+
+        track.addEventListener("pointerdown", (e) => {
+          isDragging = true;
+          activeDragCol = code;
+          track.setPointerCapture(e.pointerId);
+          handlePointer(e);
+        });
+
+        track.addEventListener("pointermove", (e) => {
+          if (!isDragging || activeDragCol !== code) return;
+          handlePointer(e);
+        });
+
+        const stopDrag = (e) => {
+          if (isDragging && activeDragCol === code) {
+            isDragging = false;
+            activeDragCol = null;
+          }
+        };
+        track.addEventListener("pointerup", stopDrag);
+        track.addEventListener("pointercancel", stopDrag);
+      });
+
+      // Step buttons (+ / -)
+      document.querySelectorAll(".step-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+          const code = btn.dataset.code;
+          const step = parseFloat(btn.dataset.step);
+          adjustProbability(code, (playerProbs[code] || 0) + step);
+        });
+      });
+    }
+
+    // Submit Guess
+    async function submitGuess() {
+      if (!currentScenario) return;
+      document.getElementById("btn-submit-guess").style.display = "none";
+
+      try {
+        const res = await fetch("/api/game/evaluate", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            id: currentScenario.id,
+            player_probs: playerProbs
+          })
+        });
+        if (!res.ok) throw new Error("API not available");
+        const outcome = await res.json();
+        displayResult(outcome);
+      } catch (err) {
+        // Static site: score client-side exactly like server.evaluate_game_guess
+        const actual = currentScenario._actual;
+        const ai_probs = currentScenario.ai_probs || {};
+        const arsenal = currentScenario.arsenal || Object.keys(ai_probs);
+        const pSum = arsenal.reduce((t, c) => t + (playerProbs[c] || 0), 0);
+        const norm = Object.fromEntries(arsenal.map((c) => [c, pSum > 0 ? (playerProbs[c] || 0) / pSum : 1 / arsenal.length]));
+        const brier = (probs) => arsenal.reduce((t, c) => t + ((probs[c] || 0) - (c === actual ? 1 : 0)) ** 2, 0);
+        const player_brier = brier(norm);
+        const ai_brier = brier(ai_probs);
+        const tie = Math.abs(player_brier - ai_brier) < 1e-4;
+        const round4 = (v) => Math.round(v * 10000) / 10000;
+
+        displayResult({
+          id: currentScenario.id,
+          actual,
+          actual_name: currentScenario.pitch_names?.[actual] || actual,
+          ai_probs,
+          player_probs: Object.fromEntries(arsenal.map((c) => [c, round4(norm[c])])),
+          player_brier: round4(player_brier),
+          ai_brier: round4(ai_brier),
+          delta_brier: round4(ai_brier - player_brier),
+          result: tie ? "tie" : player_brier < ai_brier ? "win" : "loss",
+        });
+      }
+    }
+
+    function displayResult(outcome) {
+      const box = document.getElementById("result-box");
+      box.style.display = "block";
+      box.className = `result-box ${outcome.result}`;
+
+      const actualName = outcome.actual_name;
+      const actualCode = outcome.actual;
+
+      const badgeText = document.getElementById("result-badge-text");
+      if (outcome.result === "win") {
+        badgeText.innerHTML = `🎉 You beat the AI! (+${outcome.delta_brier.toFixed(3)} Brier edge)`;
+      } else if (outcome.result === "loss") {
+        badgeText.innerHTML = `🤖 AI had a better Brier score (${outcome.ai_brier.toFixed(3)} vs ${outcome.player_brier.toFixed(3)})`;
+      } else {
+        badgeText.innerHTML = `🤝 Exact Tie with AI!`;
+      }
+
+      document.getElementById("actual-pitch-pill").textContent = `Actual: ${actualName} (${actualCode})`;
+      document.getElementById("res-player-brier").textContent = outcome.player_brier.toFixed(3);
+      document.getElementById("res-ai-brier").textContent = outcome.ai_brier.toFixed(3);
+      document.getElementById("res-player-pct").textContent = `${Math.round((outcome.player_probs[actualCode] || 0) * 100)}%`;
+      document.getElementById("res-ai-pct").textContent = `${Math.round((outcome.ai_probs[actualCode] || 0) * 100)}%`;
+
+      // Save to history
+      historyData.push({
+        id: outcome.id,
+        pitcher: currentScenario.pitcher,
+        actual: actualCode,
+        player_brier: outcome.player_brier,
+        ai_brier: outcome.ai_brier,
+        result: outcome.result
+      });
+      localStorage.setItem("pitch_guesser_history", JSON.stringify(historyData));
+      updateDashboard();
+    }
+
+    function updateDashboard() {
+      const n = historyData.length;
+      document.getElementById("session-count-label").textContent = `Pitches: ${n}`;
+      document.getElementById("stat-total").textContent = n;
+
+      if (n === 0) {
+        document.getElementById("stat-record").textContent = "0 - 0 - 0";
+        document.getElementById("stat-player-brier").textContent = "--";
+        document.getElementById("stat-ai-brier").textContent = "--";
+        document.getElementById("stat-status").textContent = "--";
+        renderTrendChart([]);
+        return;
+      }
+
+      let wins = 0, losses = 0, ties = 0;
+      let sumPlayer = 0, sumAI = 0;
+      const trendPoints = [];
+
+      historyData.forEach((item, idx) => {
+        if (item.result === "win") wins++;
+        else if (item.result === "loss") losses++;
+        else ties++;
+
+        sumPlayer += item.player_brier;
+        sumAI += item.ai_brier;
+
+        trendPoints.push({
+          idx: idx + 1,
+          playerMean: sumPlayer / (idx + 1),
+          aiMean: sumAI / (idx + 1)
+        });
+      });
+
+      const meanPlayer = sumPlayer / n;
+      const meanAI = sumAI / n;
+
+      document.getElementById("stat-record").textContent = `${wins}W - ${losses}L - ${ties}T`;
+      document.getElementById("stat-player-brier").textContent = meanPlayer.toFixed(3);
+      document.getElementById("stat-ai-brier").textContent = meanAI.toFixed(3);
+
+      const status = document.getElementById("stat-status");
+      const diff = meanAI - meanPlayer;
+      if (diff > 0.005) {
+        status.textContent = `Outperforming AI by -${diff.toFixed(3)} Brier points!`;
+        status.style.color = "var(--ok)";
+      } else if (diff < -0.005) {
+        status.textContent = `Trailing AI by +${Math.abs(diff).toFixed(3)} Brier points.`;
+        status.style.color = "var(--error)";
+      } else {
+        status.textContent = `Even with AI.`;
+        status.style.color = "var(--text)";
+      }
+
+      renderTrendChart(trendPoints);
+    }
+
+    function renderTrendChart(points) {
+      const svg = document.getElementById("trend-svg");
+      if (!points || points.length < 2) {
+        svg.innerHTML = `
+          <line x1="40" y1="20" x2="40" y2="140" stroke="var(--border)" stroke-width="1"></line>
+          <line x1="40" y1="140" x2="480" y2="140" stroke="var(--border)" stroke-width="1"></line>
+          <text x="260" y="85" text-anchor="middle" fill="var(--muted)" font-size="12">Score 2+ pitches to see learning trend</text>
+        `;
+        return;
+      }
+
+      const W = 500, H = 160;
+      const padLeft = 45, padRight = 20, padTop = 15, padBottom = 25;
+      const plotW = W - padLeft - padRight;
+      const plotH = H - padTop - padBottom;
+
+      // Find range
+      let maxVal = 0.9, minVal = 0.2;
+      points.forEach(p => {
+        maxVal = Math.max(maxVal, p.playerMean, p.aiMean);
+        minVal = Math.min(minVal, p.playerMean, p.aiMean);
+      });
+      maxVal = Math.min(1.5, Math.ceil(maxVal * 10) / 10 + 0.1);
+      minVal = Math.max(0.0, Math.floor(minVal * 10) / 10 - 0.05);
+
+      const xScale = i => padLeft + ((i - 1) / (points.length - 1)) * plotW;
+      const yScale = v => padTop + (1 - (v - minVal) / (maxVal - minVal)) * plotH;
+
+      let pPath = "", aiPath = "";
+      points.forEach((p, i) => {
+        const x = xScale(p.idx);
+        const yP = yScale(p.playerMean);
+        const yAI = yScale(p.aiMean);
+        if (i === 0) {
+          pPath = `M ${x} ${yP}`;
+          aiPath = `M ${x} ${yAI}`;
+        } else {
+          pPath += ` L ${x} ${yP}`;
+          aiPath += ` L ${x} ${yAI}`;
+        }
+      });
+
+      svg.innerHTML = `
+        <!-- Axes -->
+        <line x1="${padLeft}" y1="${padTop}" x2="${padLeft}" y2="${H - padBottom}" stroke="var(--border)" stroke-width="1"></line>
+        <line x1="${padLeft}" y1="${H - padBottom}" x2="${W - padRight}" y2="${H - padBottom}" stroke="var(--border)" stroke-width="1"></line>
+        
+        <!-- Y Grid lines -->
+        <text x="${padLeft - 6}" y="${yScale(maxVal)}" text-anchor="end" font-size="9" fill="var(--muted)" font-family="var(--mono)">${maxVal.toFixed(2)}</text>
+        <text x="${padLeft - 6}" y="${yScale((maxVal + minVal)/2)}" text-anchor="end" font-size="9" fill="var(--muted)" font-family="var(--mono)">${((maxVal+minVal)/2).toFixed(2)}</text>
+        <text x="${padLeft - 6}" y="${yScale(minVal)}" text-anchor="end" font-size="9" fill="var(--muted)" font-family="var(--mono)">${minVal.toFixed(2)}</text>
+
+        <!-- X ticks -->
+        <text x="${padLeft}" y="${H - 8}" text-anchor="middle" font-size="9" fill="var(--muted)">1</text>
+        <text x="${W - padRight}" y="${H - 8}" text-anchor="middle" font-size="9" fill="var(--muted)">${points.length}</text>
+
+        <!-- Trend Lines -->
+        <path d="${aiPath}" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="4 2"></path>
+        <path d="${pPath}" fill="none" stroke="var(--accent)" stroke-width="3"></path>
+
+        <!-- End dots -->
+        <circle cx="${xScale(points.length)}" cy="${yScale(points[points.length-1].playerMean)}" r="4.5" fill="var(--accent)"></circle>
+        <circle cx="${xScale(points.length)}" cy="${yScale(points[points.length-1].aiMean)}" r="4" fill="#f59e0b"></circle>
+      `;
+    }
+
+    // Event listeners
+    document.getElementById("btn-reset-ai").addEventListener("click", () => {
+      if (!currentScenario) return;
+      playerProbs = { ...currentScenario.ai_probs };
+      updateBars();
+    });
+
+    document.getElementById("btn-submit-guess").addEventListener("click", submitGuess);
+    document.getElementById("btn-next-pitch").addEventListener("click", () => loadScenario());
+    document.getElementById("btn-clear-stats").addEventListener("click", () => {
+      if (confirm("Reset tracking history?")) {
+        historyData = [];
+        localStorage.removeItem("pitch_guesser_history");
+        updateDashboard();
+      }
+    });
+
+    // Keyboard controls
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" && document.getElementById("btn-submit-guess").style.display !== "none") {
+        submitGuess();
+      } else if (e.key === " " && document.getElementById("result-box").style.display === "block") {
+        e.preventDefault();
+        loadScenario();
+      }
+    });
+
+    // Initial load
+    updateDashboard();
+    loadScenario();
+  </script>
+</body>
+</html>

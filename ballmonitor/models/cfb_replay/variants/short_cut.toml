@@ -1,0 +1,10 @@
+# The original 30-second cut: fewer held plays and a shorter floor
+description = "30 s video (v0.1.0 per-play pacing, structure = plays): up to 6 highlights, 0.05 s floor per play, 0.4 s per collapsed drive, 3.5 s cap."
+
+[params]
+structure = "plays"
+duration_sec = 30.0
+highlight_count = 6
+min_play_sec = 0.05
+min_drive_sec = 0.4
+max_play_sec = 3.5

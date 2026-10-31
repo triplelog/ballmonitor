@@ -1,0 +1,5 @@
+# v0.2.0 structure: every play paced on its own, quiet drives collapsed into one event
+description = "v0.2.0 pacing: no sections; every play paced by play_weight, quiet drives collapsed, up to 10 highlights."
+
+[params]
+structure = "plays"

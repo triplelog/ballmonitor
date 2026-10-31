@@ -1,0 +1,5 @@
+description = "Weekend/midweek split: each team gets a midweek offset (Mon-Thu single games) shrunk toward 0; postseason uses the weekend rating. Did not beat the default out of sample (RESEARCH.md)."
+
+[params]
+baseball_midweek_split = true
+softball_midweek_split = true

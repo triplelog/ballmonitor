@@ -1,0 +1,11 @@
+# Textbook example, not real ballots: the "Tennessee capital" election from Wikipedia's
+# voting-method articles (100 voters; 42 Memphis, 26 Nashville, 15 Chattanooga, 17 Knoxville).
+# Plurality picks Memphis, instant runoff Knoxville, every Condorcet method Nashville.
+title = "Tennessee capital (textbook example)"
+ballots = [
+  ["Memphis", "Nashville", "Chattanooga", "Knoxville"],
+  ["Nashville", "Chattanooga", "Knoxville", "Memphis"],
+  ["Chattanooga", "Knoxville", "Nashville", "Memphis"],
+  ["Knoxville", "Chattanooga", "Nashville", "Memphis"],
+]
+weights = [42, 26, 15, 17]

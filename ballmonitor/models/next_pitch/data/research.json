@@ -1,0 +1,8056 @@
+{
+ "generated": "2026-10-14",
+ "seasons": [
+  2021,
+  2022,
+  2023,
+  2024,
+  2025,
+  2026
+ ],
+ "valid": 2024,
+ "tests": [
+  2025,
+  2026
+ ],
+ "focus_min": 2000,
+ "n_pitches": 4268268,
+ "tree_fits": {
+  "control: count | hl=7": {
+   "chain": [
+    "all",
+    "count"
+   ],
+   "half_life": 7,
+   "strengths": [
+    1,
+    16
+   ],
+   "valid_loss": 1.3778927188892098
+  },
+  "count + batter side | hl=7": {
+   "chain": [
+    "all",
+    "count",
+    "count_stand"
+   ],
+   "half_life": 7,
+   "strengths": [
+    2,
+    32768,
+    4
+   ],
+   "valid_loss": 1.335036036332093
+  },
+  "+ previous pitch type | hl=7": {
+   "chain": [
+    "all",
+    "count",
+    "count_stand",
+    "count_stand_prev"
+   ],
+   "half_life": 7,
+   "strengths": [
+    2,
+    32768,
+    8.0,
+    32
+   ],
+   "valid_loss": 1.333518124187387
+  },
+  "+ previous pitch result | hl=7": {
+   "chain": [
+    "all",
+    "count",
+    "count_stand",
+    "count_stand_prev",
+    "count_stand_prev_res"
+   ],
+   "half_life": 7,
+   "strengths": [
+    1,
+    128,
+    8,
+    32768,
+    16
+   ],
+   "valid_loss": 1.3345269527561479
+  },
+  "+ pitch before that | hl=7": {
+   "chain": [
+    "all",
+    "count",
+    "count_stand",
+    "count_stand_prev",
+    "count_stand_prev_res",
+    "count_stand_prev2"
+   ],
+   "half_life": 7,
+   "strengths": [
+    1,
+    128,
+    8,
+    32768,
+    32768,
+    32
+   ],
+   "valid_loss": 1.334955517770045
+  },
+  "batter side first, then count, previous pitch | hl=7": {
+   "chain": [
+    "all",
+    "stand",
+    "count_stand",
+    "count_stand_prev"
+   ],
+   "half_life": 7,
+   "strengths": [
+    4,
+    8,
+    16,
+    32
+   ],
+   "valid_loss": 1.3146569313347658
+  },
+  "control: count | hl=15": {
+   "chain": [
+    "all",
+    "count"
+   ],
+   "half_life": 15,
+   "strengths": [
+    2,
+    16
+   ],
+   "valid_loss": 1.3758284900627962
+  },
+  "count + batter side | hl=15": {
+   "chain": [
+    "all",
+    "count",
+    "count_stand"
+   ],
+   "half_life": 15,
+   "strengths": [
+    2,
+    32768,
+    8.0
+   ],
+   "valid_loss": 1.3243845351455352
+  },
+  "+ previous pitch type | hl=15": {
+   "chain": [
+    "all",
+    "count",
+    "count_stand",
+    "count_stand_prev"
+   ],
+   "half_life": 15,
+   "strengths": [
+    2,
+    32768,
+    8.0,
+    32
+   ],
+   "valid_loss": 1.3217795615220294
+  },
+  "+ previous pitch result | hl=15": {
+   "chain": [
+    "all",
+    "count",
+    "count_stand",
+    "count_stand_prev",
+    "count_stand_prev_res"
+   ],
+   "half_life": 15,
+   "strengths": [
+    2,
+    128,
+    8,
+    32768,
+    16
+   ],
+   "valid_loss": 1.3227685300756744
+  },
+  "+ pitch before that | hl=15": {
+   "chain": [
+    "all",
+    "count",
+    "count_stand",
+    "count_stand_prev",
+    "count_stand_prev_res",
+    "count_stand_prev2"
+   ],
+   "half_life": 15,
+   "strengths": [
+    2,
+    64,
+    8,
+    128,
+    32768,
+    32
+   ],
+   "valid_loss": 1.3237640315279884
+  },
+  "batter side first, then count, previous pitch | hl=15": {
+   "chain": [
+    "all",
+    "stand",
+    "count_stand",
+    "count_stand_prev"
+   ],
+   "half_life": 15,
+   "strengths": [
+    8,
+    16,
+    16,
+    32
+   ],
+   "valid_loss": 1.3106725194808435,
+   "levels": [
+    "stand",
+    "count",
+    "prev_type"
+   ]
+  },
+  "control: count | hl=30": {
+   "chain": [
+    "all",
+    "count"
+   ],
+   "half_life": 30,
+   "strengths": [
+    2,
+    16
+   ],
+   "valid_loss": 1.3766042942397392
+  },
+  "count + batter side | hl=30": {
+   "chain": [
+    "all",
+    "count",
+    "count_stand"
+   ],
+   "half_life": 30,
+   "strengths": [
+    2,
+    32768,
+    8.0
+   ],
+   "valid_loss": 1.3207961086360525
+  },
+  "+ previous pitch type | hl=30": {
+   "chain": [
+    "all",
+    "count",
+    "count_stand",
+    "count_stand_prev"
+   ],
+   "half_life": 30,
+   "strengths": [
+    2,
+    8192,
+    8,
+    32
+   ],
+   "valid_loss": 1.3178603901224564
+  },
+  "+ previous pitch result | hl=30": {
+   "chain": [
+    "all",
+    "count",
+    "count_stand",
+    "count_stand_prev",
+    "count_stand_prev_res"
+   ],
+   "half_life": 30,
+   "strengths": [
+    1,
+    64,
+    16,
+    128,
+    32
+   ],
+   "valid_loss": 1.3202233801476966
+  },
+  "+ pitch before that | hl=30": {
+   "chain": [
+    "all",
+    "count",
+    "count_stand",
+    "count_stand_prev",
+    "count_stand_prev_res",
+    "count_stand_prev2"
+   ],
+   "half_life": 30,
+   "strengths": [
+    1,
+    64,
+    8,
+    32768,
+    32768,
+    32
+   ],
+   "valid_loss": 1.3204958643058118
+  },
+  "batter side first, then count, previous pitch | hl=30": {
+   "chain": [
+    "all",
+    "stand",
+    "count_stand",
+    "count_stand_prev"
+   ],
+   "half_life": 30,
+   "strengths": [
+    2,
+    32,
+    32,
+    32
+   ],
+   "valid_loss": 1.3115385864028481
+  },
+  "control: count | hl=60": {
+   "chain": [
+    "all",
+    "count"
+   ],
+   "half_life": 60,
+   "strengths": [
+    2,
+    16
+   ],
+   "valid_loss": 1.3812525691277764
+  },
+  "count + batter side | hl=60": {
+   "chain": [
+    "all",
+    "count",
+    "count_stand"
+   ],
+   "half_life": 60,
+   "strengths": [
+    4,
+    32768,
+    8.0
+   ],
+   "valid_loss": 1.3222114593692642
+  },
+  "+ previous pitch type | hl=60": {
+   "chain": [
+    "all",
+    "count",
+    "count_stand",
+    "count_stand_prev"
+   ],
+   "half_life": 60,
+   "strengths": [
+    2,
+    512,
+    8,
+    32
+   ],
+   "valid_loss": 1.3187067287375664
+  },
+  "+ previous pitch result | hl=60": {
+   "chain": [
+    "all",
+    "count",
+    "count_stand",
+    "count_stand_prev",
+    "count_stand_prev_res"
+   ],
+   "half_life": 60,
+   "strengths": [
+    2,
+    64,
+    16,
+    256,
+    32
+   ],
+   "valid_loss": 1.3201232589073792
+  },
+  "+ pitch before that | hl=60": {
+   "chain": [
+    "all",
+    "count",
+    "count_stand",
+    "count_stand_prev",
+    "count_stand_prev_res",
+    "count_stand_prev2"
+   ],
+   "half_life": 60,
+   "strengths": [
+    2,
+    64,
+    8,
+    256,
+    32768,
+    32
+   ],
+   "valid_loss": 1.3202841367165756
+  },
+  "batter side first, then count, previous pitch | hl=60": {
+   "chain": [
+    "all",
+    "stand",
+    "count_stand",
+    "count_stand_prev"
+   ],
+   "half_life": 60,
+   "strengths": [
+    8,
+    32,
+    32,
+    32
+   ],
+   "valid_loss": 1.3146902149600124
+  },
+  "control: count | hl=120": {
+   "chain": [
+    "all",
+    "count"
+   ],
+   "half_life": 120,
+   "strengths": [
+    8,
+    16
+   ],
+   "valid_loss": 1.394695693620992
+  },
+  "count + batter side | hl=120": {
+   "chain": [
+    "all",
+    "count",
+    "count_stand"
+   ],
+   "half_life": 120,
+   "strengths": [
+    8,
+    32768,
+    8.0
+   ],
+   "valid_loss": 1.334025767009721
+  },
+  "+ previous pitch type | hl=120": {
+   "chain": [
+    "all",
+    "count",
+    "count_stand",
+    "count_stand_prev"
+   ],
+   "half_life": 120,
+   "strengths": [
+    8,
+    32768,
+    8.0,
+    32
+   ],
+   "valid_loss": 1.3290367438074093
+  },
+  "+ previous pitch result | hl=120": {
+   "chain": [
+    "all",
+    "count",
+    "count_stand",
+    "count_stand_prev",
+    "count_stand_prev_res"
+   ],
+   "half_life": 120,
+   "strengths": [
+    8,
+    32768,
+    16,
+    512,
+    32
+   ],
+   "valid_loss": 1.3294125223934619
+  },
+  "+ pitch before that | hl=120": {
+   "chain": [
+    "all",
+    "count",
+    "count_stand",
+    "count_stand_prev",
+    "count_stand_prev_res",
+    "count_stand_prev2"
+   ],
+   "half_life": 120,
+   "strengths": [
+    4,
+    512,
+    8,
+    128,
+    32768,
+    32
+   ],
+   "valid_loss": 1.3291679254675572
+  },
+  "batter side first, then count, previous pitch | hl=120": {
+   "chain": [
+    "all",
+    "stand",
+    "count_stand",
+    "count_stand_prev"
+   ],
+   "half_life": 120,
+   "strengths": [
+    32,
+    64,
+    32,
+    32
+   ],
+   "valid_loss": 1.327384240933819
+  },
+  "control: count | hl=240": {
+   "chain": [
+    "all",
+    "count"
+   ],
+   "half_life": 240,
+   "strengths": [
+    8,
+    16
+   ],
+   "valid_loss": 1.418320737142578
+  },
+  "count + batter side | hl=240": {
+   "chain": [
+    "all",
+    "count",
+    "count_stand"
+   ],
+   "half_life": 240,
+   "strengths": [
+    256,
+    512,
+    8.0
+   ],
+   "valid_loss": 1.3608721747709354
+  },
+  "+ previous pitch type | hl=240": {
+   "chain": [
+    "all",
+    "count",
+    "count_stand",
+    "count_stand_prev"
+   ],
+   "half_life": 240,
+   "strengths": [
+    16,
+    32768,
+    16,
+    32
+   ],
+   "valid_loss": 1.3513153437513339
+  },
+  "+ previous pitch result | hl=240": {
+   "chain": [
+    "all",
+    "count",
+    "count_stand",
+    "count_stand_prev",
+    "count_stand_prev_res"
+   ],
+   "half_life": 240,
+   "strengths": [
+    32,
+    32768,
+    16,
+    32768,
+    32
+   ],
+   "valid_loss": 1.3518416245130362
+  },
+  "+ pitch before that | hl=240": {
+   "chain": [
+    "all",
+    "count",
+    "count_stand",
+    "count_stand_prev",
+    "count_stand_prev_res",
+    "count_stand_prev2"
+   ],
+   "half_life": 240,
+   "strengths": [
+    16,
+    32768,
+    16,
+    128,
+    32768,
+    32
+   ],
+   "valid_loss": 1.3513439212652463
+  },
+  "batter side first, then count, previous pitch | hl=240": {
+   "chain": [
+    "all",
+    "stand",
+    "count_stand",
+    "count_stand_prev"
+   ],
+   "half_life": 240,
+   "strengths": [
+    16,
+    256,
+    64,
+    32
+   ],
+   "valid_loss": 1.3513284938168695
+  },
+  "control: count | hl=480": {
+   "chain": [
+    "all",
+    "count"
+   ],
+   "half_life": 480,
+   "strengths": [
+    16,
+    16
+   ],
+   "valid_loss": 1.4446341484129637
+  },
+  "count + batter side | hl=480": {
+   "chain": [
+    "all",
+    "count",
+    "count_stand"
+   ],
+   "half_life": 480,
+   "strengths": [
+    512,
+    64,
+    16
+   ],
+   "valid_loss": 1.3899838310176114
+  },
+  "+ previous pitch type | hl=480": {
+   "chain": [
+    "all",
+    "count",
+    "count_stand",
+    "count_stand_prev"
+   ],
+   "half_life": 480,
+   "strengths": [
+    64,
+    32768,
+    32,
+    32
+   ],
+   "valid_loss": 1.3779090328175538
+  },
+  "+ previous pitch result | hl=480": {
+   "chain": [
+    "all",
+    "count",
+    "count_stand",
+    "count_stand_prev",
+    "count_stand_prev_res"
+   ],
+   "half_life": 480,
+   "strengths": [
+    16,
+    32768,
+    32,
+    32768,
+    32
+   ],
+   "valid_loss": 1.3784371673775255
+  },
+  "+ pitch before that | hl=480": {
+   "chain": [
+    "all",
+    "count",
+    "count_stand",
+    "count_stand_prev",
+    "count_stand_prev_res",
+    "count_stand_prev2"
+   ],
+   "half_life": 480,
+   "strengths": [
+    8,
+    32768,
+    32,
+    512,
+    32768,
+    32
+   ],
+   "valid_loss": 1.379485634655982
+  },
+  "batter side first, then count, previous pitch | hl=480": {
+   "chain": [
+    "all",
+    "stand",
+    "count_stand",
+    "count_stand_prev"
+   ],
+   "half_life": 480,
+   "strengths": [
+    16,
+    32768,
+    32,
+    32
+   ],
+   "valid_loss": 1.377377964668047
+  },
+  "control: count | hl=0": {
+   "chain": [
+    "all",
+    "count"
+   ],
+   "half_life": 0,
+   "strengths": [
+    16,
+    32
+   ],
+   "valid_loss": 1.4897810551722148
+  },
+  "count + batter side | hl=0": {
+   "chain": [
+    "all",
+    "count",
+    "count_stand"
+   ],
+   "half_life": 0,
+   "strengths": [
+    64,
+    32768,
+    16
+   ],
+   "valid_loss": 1.4364770283720019
+  },
+  "+ previous pitch type | hl=0": {
+   "chain": [
+    "all",
+    "count",
+    "count_stand",
+    "count_stand_prev"
+   ],
+   "half_life": 0,
+   "strengths": [
+    32,
+    32768,
+    64,
+    32
+   ],
+   "valid_loss": 1.4234261791969942
+  },
+  "+ previous pitch result | hl=0": {
+   "chain": [
+    "all",
+    "count",
+    "count_stand",
+    "count_stand_prev",
+    "count_stand_prev_res"
+   ],
+   "half_life": 0,
+   "strengths": [
+    8,
+    32768,
+    128,
+    32768,
+    32
+   ],
+   "valid_loss": 1.4270008429571548
+  },
+  "+ pitch before that | hl=0": {
+   "chain": [
+    "all",
+    "count",
+    "count_stand",
+    "count_stand_prev",
+    "count_stand_prev_res",
+    "count_stand_prev2"
+   ],
+   "half_life": 0,
+   "strengths": [
+    8,
+    512,
+    128,
+    32768,
+    128,
+    32
+   ],
+   "valid_loss": 1.4283506009621252
+  },
+  "batter side first, then count, previous pitch | hl=0": {
+   "chain": [
+    "all",
+    "stand",
+    "count_stand",
+    "count_stand_prev"
+   ],
+   "half_life": 0,
+   "strengths": [
+    16,
+    32768,
+    256,
+    32
+   ],
+   "valid_loss": 1.4245629832015694
+  }
+ },
+ "final_tree": {
+  "chain": [
+   "all",
+   "stand",
+   "count_stand",
+   "count_stand_prev"
+  ],
+  "half_life": 15,
+  "strengths": [
+   8,
+   16,
+   16,
+   32
+  ],
+  "valid_loss": 1.3106725194808435,
+  "levels": [
+   "stand",
+   "count",
+   "prev_type"
+  ]
+ },
+ "best_model": "Average of GBM and transformer",
+ "results": {
+  "by_season": {
+   "2025": {
+    "Control: pitcher x count": {
+     "n": 267722,
+     "log_loss": 1.5261645317077637,
+     "bits": 2.2017900943756104,
+     "accuracy": 0.3872748597425688,
+     "brier": 0.7335294485092163
+    },
+    "Control + recency weighting": {
+     "n": 267722,
+     "log_loss": 1.4113329648971558,
+     "bits": 2.036123037338257,
+     "accuracy": 0.4042999828179978,
+     "brier": 0.7120198607444763
+    },
+    "Context tree: count + batter side": {
+     "n": 267722,
+     "log_loss": 1.3483803272247314,
+     "bits": 1.9453016519546509,
+     "accuracy": 0.4197488439500676,
+     "brier": 0.6923831105232239
+    },
+    "Context tree: + previous pitch type": {
+     "n": 267722,
+     "log_loss": 1.3453174829483032,
+     "bits": 1.9408828020095825,
+     "accuracy": 0.42314415699867775,
+     "brier": 0.6906365156173706
+    },
+    "Context tree: + previous pitch result": {
+     "n": 267722,
+     "log_loss": 1.3465484380722046,
+     "bits": 1.94265878200531,
+     "accuracy": 0.42491091505367506,
+     "brier": 0.6892329454421997
+    },
+    "Context tree: + pitch before that": {
+     "n": 267722,
+     "log_loss": 1.3458014726638794,
+     "bits": 1.941581130027771,
+     "accuracy": 0.42456353979127603,
+     "brier": 0.6889908909797668
+    },
+    "Context tree: batter side first, then count, previous pitch": {
+     "n": 267722,
+     "log_loss": 1.3379998207092285,
+     "bits": 1.9303257465362549,
+     "accuracy": 0.4216986276809526,
+     "brier": 0.690509557723999
+    },
+    "Gradient boosting (LightGBM)": {
+     "n": 267722,
+     "log_loss": 1.2587230205535889,
+     "bits": 1.8159534931182861,
+     "accuracy": 0.45647724131748607,
+     "brier": 0.6564446091651917
+    },
+    "Sequence transformer": {
+     "n": 267722,
+     "log_loss": 1.2564064264297485,
+     "bits": 1.8126113414764404,
+     "accuracy": 0.4574932205795564,
+     "brier": 0.6548709869384766
+    },
+    "Average of GBM and transformer": {
+     "n": 267722,
+     "log_loss": 1.2501648664474487,
+     "bits": 1.803606629371643,
+     "accuracy": 0.46048139487976336,
+     "brier": 0.6527178287506104
+    }
+   },
+   "2026": {
+    "Control: pitcher x count": {
+     "n": 271276,
+     "log_loss": 1.5676449537277222,
+     "bits": 2.2616336345672607,
+     "accuracy": 0.35849098335274776,
+     "brier": 0.7516235113143921
+    },
+    "Control + recency weighting": {
+     "n": 271276,
+     "log_loss": 1.4697151184082031,
+     "bits": 2.1203505992889404,
+     "accuracy": 0.3731550155561126,
+     "brier": 0.7311619520187378
+    },
+    "Context tree: count + batter side": {
+     "n": 271276,
+     "log_loss": 1.4093443155288696,
+     "bits": 2.0332541465759277,
+     "accuracy": 0.3920177236467657,
+     "brier": 0.7122007608413696
+    },
+    "Context tree: + previous pitch type": {
+     "n": 271276,
+     "log_loss": 1.4067076444625854,
+     "bits": 2.0294501781463623,
+     "accuracy": 0.39543122133915276,
+     "brier": 0.7107375264167786
+    },
+    "Context tree: + previous pitch result": {
+     "n": 271276,
+     "log_loss": 1.4074089527130127,
+     "bits": 2.0304620265960693,
+     "accuracy": 0.3974513042067857,
+     "brier": 0.7091937065124512
+    },
+    "Context tree: + pitch before that": {
+     "n": 271276,
+     "log_loss": 1.4072544574737549,
+     "bits": 2.0302391052246094,
+     "accuracy": 0.39700895029416533,
+     "brier": 0.7092031240463257
+    },
+    "Context tree: batter side first, then count, previous pitch": {
+     "n": 271276,
+     "log_loss": 1.39995539188385,
+     "bits": 2.0197086334228516,
+     "accuracy": 0.3947824356006429,
+     "brier": 0.7105576992034912
+    },
+    "Gradient boosting (LightGBM)": {
+     "n": 271276,
+     "log_loss": 1.3176497220993042,
+     "bits": 1.900966763496399,
+     "accuracy": 0.4320212624780666,
+     "brier": 0.6764753460884094
+    },
+    "Sequence transformer": {
+     "n": 271276,
+     "log_loss": 1.31589674949646,
+     "bits": 1.898437738418579,
+     "accuracy": 0.43537209336616584,
+     "brier": 0.6746451258659363
+    },
+    "Average of GBM and transformer": {
+     "n": 271276,
+     "log_loss": 1.3092924356460571,
+     "bits": 1.8889096975326538,
+     "accuracy": 0.43693507719075775,
+     "brier": 0.6727095246315002
+    }
+   }
+  },
+  "pooled_focus": {
+   "Control: pitcher x count": {
+    "n": 538998,
+    "log_loss": 1.547041416168213,
+    "bits": 2.2319090366363525,
+    "accuracy": 0.3727880251874775,
+    "brier": 0.7426361441612244
+   },
+   "Control + recency weighting": {
+    "n": 538998,
+    "log_loss": 1.4407165050506592,
+    "bits": 2.078514575958252,
+    "accuracy": 0.3886248186449671,
+    "brier": 0.7216539978981018
+   },
+   "Context tree: count + batter side": {
+    "n": 538998,
+    "log_loss": 1.379063367843628,
+    "bits": 1.9895678758621216,
+    "accuracy": 0.40579185822581904,
+    "brier": 0.702357292175293
+   },
+   "Context tree: + previous pitch type": {
+    "n": 538998,
+    "log_loss": 1.3762149810791016,
+    "bits": 1.985458493232727,
+    "accuracy": 0.4091963235485104,
+    "brier": 0.7007532715797424
+   },
+   "Context tree: + previous pitch result": {
+    "n": 538998,
+    "log_loss": 1.3771793842315674,
+    "bits": 1.9868499040603638,
+    "accuracy": 0.4110905791858226,
+    "brier": 0.6992791295051575
+   },
+   "Context tree: + pitch before that": {
+    "n": 538998,
+    "log_loss": 1.3767305612564087,
+    "bits": 1.986202359199524,
+    "accuracy": 0.4106954014671669,
+    "brier": 0.6991636157035828
+   },
+   "Context tree: batter side first, then count, previous pitch": {
+    "n": 538998,
+    "log_loss": 1.3691819906234741,
+    "bits": 1.9753121137619019,
+    "accuracy": 0.4081517927710307,
+    "brier": 0.700599730014801
+   },
+   "Gradient boosting (LightGBM)": {
+    "n": 538998,
+    "log_loss": 1.288380742073059,
+    "bits": 1.8587404489517212,
+    "accuracy": 0.4441686240023154,
+    "brier": 0.6665260195732117
+   },
+   "Sequence transformer": {
+    "n": 538998,
+    "log_loss": 1.28634774684906,
+    "bits": 1.8558075428009033,
+    "accuracy": 0.44635972675223284,
+    "brier": 0.6648232340812683
+   },
+   "Average of GBM and transformer": {
+    "n": 538998,
+    "log_loss": 1.2799235582351685,
+    "bits": 1.8465393781661987,
+    "accuracy": 0.44863060716366293,
+    "brier": 0.6627795696258545
+   }
+  },
+  "pooled_all": {
+   "Control: pitcher x count": {
+    "n": 1423903,
+    "log_loss": 1.4401824474334717,
+    "bits": 2.0777440071105957,
+    "accuracy": 0.4081457795931324,
+    "brier": 0.7088342308998108
+   },
+   "Control + recency weighting": {
+    "n": 1423903,
+    "log_loss": 1.3336970806121826,
+    "bits": 1.924118161201477,
+    "accuracy": 0.42360680467700396,
+    "brier": 0.6869434118270874
+   },
+   "Context tree: count + batter side": {
+    "n": 1423903,
+    "log_loss": 1.2788041830062866,
+    "bits": 1.8449244499206543,
+    "accuracy": 0.44053913784857535,
+    "brier": 0.6685028076171875
+   },
+   "Context tree: + previous pitch type": {
+    "n": 1423903,
+    "log_loss": 1.2763464450836182,
+    "bits": 1.8413786888122559,
+    "accuracy": 0.4427064203109341,
+    "brier": 0.6672235131263733
+   },
+   "Context tree: + previous pitch result": {
+    "n": 1423903,
+    "log_loss": 1.2761722803115845,
+    "bits": 1.8411273956298828,
+    "accuracy": 0.44515953685047366,
+    "brier": 0.6655500531196594
+   },
+   "Context tree: + pitch before that": {
+    "n": 1423903,
+    "log_loss": 1.2745434045791626,
+    "bits": 1.8387774229049683,
+    "accuracy": 0.445205186027419,
+    "brier": 0.6649724245071411
+   },
+   "Context tree: batter side first, then count, previous pitch": {
+    "n": 1423903,
+    "log_loss": 1.267975091934204,
+    "bits": 1.829301357269287,
+    "accuracy": 0.44191072004202536,
+    "brier": 0.666179358959198
+   },
+   "Gradient boosting (LightGBM)": {
+    "n": 1423903,
+    "log_loss": 1.1823914051055908,
+    "bits": 1.7058302164077759,
+    "accuracy": 0.48084595650125045,
+    "brier": 0.6292086243629456
+   },
+   "Sequence transformer": {
+    "n": 1423903,
+    "log_loss": 1.1821883916854858,
+    "bits": 1.7055373191833496,
+    "accuracy": 0.48288752815325203,
+    "brier": 0.6274423599243164
+   },
+   "Average of GBM and transformer": {
+    "n": 1423903,
+    "log_loss": 1.1749695539474487,
+    "bits": 1.6951227188110352,
+    "accuracy": 0.4849894971778274,
+    "brier": 0.6253629326820374
+   }
+  },
+  "vs_control": {
+   "Control: pitcher x count": {
+    "bits": 0.0,
+    "bits_lo": 0.0,
+    "bits_hi": 0.0,
+    "acc": 0.0,
+    "acc_lo": 0.0,
+    "acc_hi": 0.0
+   },
+   "Control + recency weighting": {
+    "bits": -0.1533943574987605,
+    "bits_lo": -0.15906699545161684,
+    "bits_hi": -0.14799255961509178,
+    "acc": 0.015836793457489638,
+    "acc_lo": 0.014250971072399003,
+    "acc_hi": 0.01744342538572662
+   },
+   "Context tree: count + batter side": {
+    "bits": -0.2423410328025913,
+    "bits_lo": -0.24777355654359592,
+    "bits_hi": -0.23667659253873105,
+    "acc": 0.033003833038341514,
+    "acc_lo": 0.031187836197123966,
+    "acc_hi": 0.03493077855717219
+   },
+   "Context tree: + previous pitch type": {
+    "bits": -0.24645032176881318,
+    "bits_lo": -0.25185432073389585,
+    "bits_hi": -0.24066922618116707,
+    "acc": 0.03640829836103288,
+    "acc_lo": 0.034552254087669945,
+    "acc_hi": 0.03826652457324564
+   },
+   "Context tree: + previous pitch result": {
+    "bits": -0.24505893912767035,
+    "bits_lo": -0.2500884058423578,
+    "bits_hi": -0.2397195611289205,
+    "acc": 0.038302553998345076,
+    "acc_lo": 0.0364946480233539,
+    "acc_hi": 0.040041306224051054
+   },
+   "Context tree: + pitch before that": {
+    "bits": -0.24570649680383153,
+    "bits_lo": -0.25083351736736564,
+    "bits_hi": -0.24029156732963783,
+    "acc": 0.03790737627968935,
+    "acc_lo": 0.03593944928933976,
+    "acc_hi": 0.0398475029362229
+   },
+   "Context tree: batter side first, then count, previous pitch": {
+    "bits": -0.25659686821309174,
+    "bits_lo": -0.26264689408249897,
+    "bits_hi": -0.25059237806288537,
+    "acc": 0.03536376758355318,
+    "acc_lo": 0.03340311841525122,
+    "acc_hi": 0.03720522697226403
+   },
+   "Gradient boosting (LightGBM)": {
+    "bits": -0.3731685147857375,
+    "bits_lo": -0.37909231259108744,
+    "bits_hi": -0.3668574942293903,
+    "acc": 0.07138059881483791,
+    "acc_lo": 0.06928134203799229,
+    "acc_hi": 0.07340814609073039
+   },
+   "Sequence transformer": {
+    "bits": -0.3761013779265637,
+    "bits_lo": -0.3820857737441026,
+    "bits_hi": -0.36973239213800213,
+    "acc": 0.07357170156475534,
+    "acc_lo": 0.0714849492083639,
+    "acc_hi": 0.07555326159167164
+   },
+   "Average of GBM and transformer": {
+    "bits": -0.3853694799858977,
+    "bits_lo": -0.3912960083977867,
+    "bits_hi": -0.37912231700533017,
+    "acc": 0.07584258197618544,
+    "acc_lo": 0.07372339172113125,
+    "acc_hi": 0.07780937263176577
+   }
+  },
+  "by_count": {
+   "Control: pitcher x count": {
+    "0-0": {
+     "n": 139287,
+     "log_loss": 1.5567247867584229,
+     "bits": 2.2458791732788086,
+     "accuracy": 0.3863605361591534,
+     "brier": 0.7447455525398254
+    },
+    "0-1": {
+     "n": 70524,
+     "log_loss": 1.6380618810653687,
+     "bits": 2.3632237911224365,
+     "accuracy": 0.32339345471045317,
+     "brier": 0.7758967876434326
+    },
+    "0-2": {
+     "n": 36160,
+     "log_loss": 1.4947682619094849,
+     "bits": 2.1564948558807373,
+     "accuracy": 0.37884402654867255,
+     "brier": 0.728323757648468
+    },
+    "1-0": {
+     "n": 51773,
+     "log_loss": 1.5619196891784668,
+     "bits": 2.253373861312866,
+     "accuracy": 0.3657118575319182,
+     "brier": 0.7504090070724487
+    },
+    "1-1": {
+     "n": 54421,
+     "log_loss": 1.6278618574142456,
+     "bits": 2.34850811958313,
+     "accuracy": 0.3240477021737932,
+     "brier": 0.7723453044891357
+    },
+    "1-2": {
+     "n": 52655,
+     "log_loss": 1.540647268295288,
+     "bits": 2.222684144973755,
+     "accuracy": 0.36129522362548666,
+     "brier": 0.7444053292274475
+    },
+    "2-0": {
+     "n": 17171,
+     "log_loss": 1.4160034656524658,
+     "bits": 2.042861223220825,
+     "accuracy": 0.4380059402480927,
+     "brier": 0.693085253238678
+    },
+    "2-1": {
+     "n": 27897,
+     "log_loss": 1.5411189794540405,
+     "bits": 2.2233645915985107,
+     "accuracy": 0.36727963580313294,
+     "brier": 0.7428862452507019
+    },
+    "2-2": {
+     "n": 45522,
+     "log_loss": 1.5632474422454834,
+     "bits": 2.255289316177368,
+     "accuracy": 0.35576204911910725,
+     "brier": 0.7523834705352783
+    },
+    "3-0": {
+     "n": 5056,
+     "log_loss": 0.8310100436210632,
+     "bits": 1.1988940238952637,
+     "accuracy": 0.757120253164557,
+     "brier": 0.39440691471099854
+    },
+    "3-1": {
+     "n": 11148,
+     "log_loss": 1.3166842460632324,
+     "bits": 1.899573802947998,
+     "accuracy": 0.49748833871546466,
+     "brier": 0.6467244029045105
+    },
+    "3-2": {
+     "n": 27384,
+     "log_loss": 1.4431902170181274,
+     "bits": 2.0820834636688232,
+     "accuracy": 0.42659947414548643,
+     "brier": 0.7059606909751892
+    }
+   },
+   "Control + recency weighting": {
+    "0-0": {
+     "n": 139287,
+     "log_loss": 1.4416043758392334,
+     "bits": 2.0797953605651855,
+     "accuracy": 0.399254776109759,
+     "brier": 0.7206642627716064
+    },
+    "0-1": {
+     "n": 70524,
+     "log_loss": 1.5292162895202637,
+     "bits": 2.2061927318573,
+     "accuracy": 0.3389768022233566,
+     "brier": 0.7553138136863708
+    },
+    "0-2": {
+     "n": 36160,
+     "log_loss": 1.4103467464447021,
+     "bits": 2.0347001552581787,
+     "accuracy": 0.39629424778761063,
+     "brier": 0.712119460105896
+    },
+    "1-0": {
+     "n": 51773,
+     "log_loss": 1.4415279626846313,
+     "bits": 2.0796852111816406,
+     "accuracy": 0.3850848898074286,
+     "brier": 0.7242738604545593
+    },
+    "1-1": {
+     "n": 54421,
+     "log_loss": 1.5137404203414917,
+     "bits": 2.183865785598755,
+     "accuracy": 0.342478087502986,
+     "brier": 0.7511870265007019
+    },
+    "1-2": {
+     "n": 52655,
+     "log_loss": 1.435865879058838,
+     "bits": 2.071516513824463,
+     "accuracy": 0.378767448485424,
+     "brier": 0.7231560349464417
+    },
+    "2-0": {
+     "n": 17171,
+     "log_loss": 1.316361904144287,
+     "bits": 1.8991087675094604,
+     "accuracy": 0.46019451400617317,
+     "brier": 0.6675034165382385
+    },
+    "2-1": {
+     "n": 27897,
+     "log_loss": 1.422389268875122,
+     "bits": 2.0520739555358887,
+     "accuracy": 0.3919059397067785,
+     "brier": 0.7165690064430237
+    },
+    "2-2": {
+     "n": 45522,
+     "log_loss": 1.4565125703811646,
+     "bits": 2.1013033390045166,
+     "accuracy": 0.36599885769518037,
+     "brier": 0.7319850325584412
+    },
+    "3-0": {
+     "n": 5056,
+     "log_loss": 1.0602445602416992,
+     "bits": 1.5296095609664917,
+     "accuracy": 0.7312104430379747,
+     "brier": 0.5303463339805603
+    },
+    "3-1": {
+     "n": 11148,
+     "log_loss": 1.2628154754638672,
+     "bits": 1.8218575716018677,
+     "accuracy": 0.5189271618227485,
+     "brier": 0.6384435296058655
+    },
+    "3-2": {
+     "n": 27384,
+     "log_loss": 1.3241119384765625,
+     "bits": 1.9102897644042969,
+     "accuracy": 0.4427402862985685,
+     "brier": 0.6772165894508362
+    }
+   },
+   "Context tree: count + batter side": {
+    "0-0": {
+     "n": 139287,
+     "log_loss": 1.3690416812896729,
+     "bits": 1.9751096963882446,
+     "accuracy": 0.41521462878804194,
+     "brier": 0.6992521286010742
+    },
+    "0-1": {
+     "n": 70524,
+     "log_loss": 1.4258778095245361,
+     "bits": 2.0571067333221436,
+     "accuracy": 0.37434064999149225,
+     "brier": 0.7226630449295044
+    },
+    "0-2": {
+     "n": 36160,
+     "log_loss": 1.3505162000656128,
+     "bits": 1.9483829736709595,
+     "accuracy": 0.41933075221238936,
+     "brier": 0.6912257075309753
+    },
+    "1-0": {
+     "n": 51773,
+     "log_loss": 1.3807058334350586,
+     "bits": 1.9919373989105225,
+     "accuracy": 0.4016958646398702,
+     "brier": 0.7046471238136292
+    },
+    "1-1": {
+     "n": 54421,
+     "log_loss": 1.4337072372436523,
+     "bits": 2.0684022903442383,
+     "accuracy": 0.3676705683467779,
+     "brier": 0.7262130379676819
+    },
+    "1-2": {
+     "n": 52655,
+     "log_loss": 1.3893905878067017,
+     "bits": 2.004467010498047,
+     "accuracy": 0.3925173297882442,
+     "brier": 0.7091968059539795
+    },
+    "2-0": {
+     "n": 17171,
+     "log_loss": 1.2907925844192505,
+     "bits": 1.862220048904419,
+     "accuracy": 0.4685807466076524,
+     "brier": 0.6579689383506775
+    },
+    "2-1": {
+     "n": 27897,
+     "log_loss": 1.3885626792907715,
+     "bits": 2.003272533416748,
+     "accuracy": 0.4006523998996308,
+     "brier": 0.7062236070632935
+    },
+    "2-2": {
+     "n": 45522,
+     "log_loss": 1.429072380065918,
+     "bits": 2.061715602874756,
+     "accuracy": 0.3701287289662141,
+     "brier": 0.7245623469352722
+    },
+    "3-0": {
+     "n": 5056,
+     "log_loss": 0.9996576309204102,
+     "bits": 1.4422011375427246,
+     "accuracy": 0.7381329113924051,
+     "brier": 0.494573175907135
+    },
+    "3-1": {
+     "n": 11148,
+     "log_loss": 1.2402366399765015,
+     "bits": 1.789283275604248,
+     "accuracy": 0.5192859705776821,
+     "brier": 0.6286129951477051
+    },
+    "3-2": {
+     "n": 27384,
+     "log_loss": 1.3047184944152832,
+     "bits": 1.8823108673095703,
+     "accuracy": 0.4475971370143149,
+     "brier": 0.6710323691368103
+    }
+   },
+   "Context tree: + previous pitch type": {
+    "0-0": {
+     "n": 139287,
+     "log_loss": 1.3704569339752197,
+     "bits": 1.9771513938903809,
+     "accuracy": 0.4150782197907917,
+     "brier": 0.6996551156044006
+    },
+    "0-1": {
+     "n": 70524,
+     "log_loss": 1.4194072484970093,
+     "bits": 2.047771692276001,
+     "accuracy": 0.38212523396290626,
+     "brier": 0.7192005515098572
+    },
+    "0-2": {
+     "n": 36160,
+     "log_loss": 1.3460885286331177,
+     "bits": 1.9419952630996704,
+     "accuracy": 0.421875,
+     "brier": 0.6893218755722046
+    },
+    "1-0": {
+     "n": 51773,
+     "log_loss": 1.3726187944412231,
+     "bits": 1.980270266532898,
+     "accuracy": 0.40938326927162805,
+     "brier": 0.7005293965339661
+    },
+    "1-1": {
+     "n": 54421,
+     "log_loss": 1.430127501487732,
+     "bits": 2.0632379055023193,
+     "accuracy": 0.3736241524411532,
+     "brier": 0.7242385745048523
+    },
+    "1-2": {
+     "n": 52655,
+     "log_loss": 1.3861387968063354,
+     "bits": 1.9997755289077759,
+     "accuracy": 0.39549900294369006,
+     "brier": 0.7073569893836975
+    },
+    "2-0": {
+     "n": 17171,
+     "log_loss": 1.28712797164917,
+     "bits": 1.8569331169128418,
+     "accuracy": 0.4689301729660474,
+     "brier": 0.6563537120819092
+    },
+    "2-1": {
+     "n": 27897,
+     "log_loss": 1.3872466087341309,
+     "bits": 2.001373767852783,
+     "accuracy": 0.4024805534645302,
+     "brier": 0.7054924964904785
+    },
+    "2-2": {
+     "n": 45522,
+     "log_loss": 1.427025318145752,
+     "bits": 2.058762311935425,
+     "accuracy": 0.3754887746584069,
+     "brier": 0.7230132818222046
+    },
+    "3-0": {
+     "n": 5056,
+     "log_loss": 0.9863339066505432,
+     "bits": 1.4229789972305298,
+     "accuracy": 0.7399129746835443,
+     "brier": 0.4869050681591034
+    },
+    "3-1": {
+     "n": 11148,
+     "log_loss": 1.2353440523147583,
+     "bits": 1.7822247743606567,
+     "accuracy": 0.5214388231072838,
+     "brier": 0.6262487173080444
+    },
+    "3-2": {
+     "n": 27384,
+     "log_loss": 1.3041160106658936,
+     "bits": 1.8814417123794556,
+     "accuracy": 0.4475971370143149,
+     "brier": 0.6708007454872131
+    }
+   },
+   "Context tree: + previous pitch result": {
+    "0-0": {
+     "n": 139287,
+     "log_loss": 1.3742196559906006,
+     "bits": 1.9825798273086548,
+     "accuracy": 0.4147264281663041,
+     "brier": 0.6999529004096985
+    },
+    "0-1": {
+     "n": 70524,
+     "log_loss": 1.4244966506958008,
+     "bits": 2.055114269256592,
+     "accuracy": 0.38084907265611706,
+     "brier": 0.7191632986068726
+    },
+    "0-2": {
+     "n": 36160,
+     "log_loss": 1.3378818035125732,
+     "bits": 1.9301553964614868,
+     "accuracy": 0.4283185840707965,
+     "brier": 0.6842387914657593
+    },
+    "1-0": {
+     "n": 51773,
+     "log_loss": 1.3762117624282837,
+     "bits": 1.9854538440704346,
+     "accuracy": 0.4120101211055956,
+     "brier": 0.699708104133606
+    },
+    "1-1": {
+     "n": 54421,
+     "log_loss": 1.4350391626358032,
+     "bits": 2.070323944091797,
+     "accuracy": 0.37412028444901785,
+     "brier": 0.7238307595252991
+    },
+    "1-2": {
+     "n": 52655,
+     "log_loss": 1.3826817274093628,
+     "bits": 1.9947880506515503,
+     "accuracy": 0.40199411261988416,
+     "brier": 0.7036208510398865
+    },
+    "2-0": {
+     "n": 17171,
+     "log_loss": 1.283565878868103,
+     "bits": 1.8517941236495972,
+     "accuracy": 0.47085201793721976,
+     "brier": 0.6543542146682739
+    },
+    "2-1": {
+     "n": 27897,
+     "log_loss": 1.3899322748184204,
+     "bits": 2.0052483081817627,
+     "accuracy": 0.40423701473276696,
+     "brier": 0.7047781944274902
+    },
+    "2-2": {
+     "n": 45522,
+     "log_loss": 1.4243806600570679,
+     "bits": 2.0549468994140625,
+     "accuracy": 0.378893721716972,
+     "brier": 0.7198578119277954
+    },
+    "3-0": {
+     "n": 5056,
+     "log_loss": 0.9503017663955688,
+     "bits": 1.3709956407546997,
+     "accuracy": 0.7549446202531646,
+     "brier": 0.46561846137046814
+    },
+    "3-1": {
+     "n": 11148,
+     "log_loss": 1.2278815507888794,
+     "bits": 1.771458625793457,
+     "accuracy": 0.5261033369214209,
+     "brier": 0.6220349073410034
+    },
+    "3-2": {
+     "n": 27384,
+     "log_loss": 1.3053667545318604,
+     "bits": 1.8832461833953857,
+     "accuracy": 0.44967864446392053,
+     "brier": 0.6694984436035156
+    }
+   },
+   "Context tree: + pitch before that": {
+    "0-0": {
+     "n": 139287,
+     "log_loss": 1.3751713037490845,
+     "bits": 1.9839527606964111,
+     "accuracy": 0.41466899279904085,
+     "brier": 0.7000235319137573
+    },
+    "0-1": {
+     "n": 70524,
+     "log_loss": 1.4223568439483643,
+     "bits": 2.0520272254943848,
+     "accuracy": 0.38221031138335887,
+     "brier": 0.7185256481170654
+    },
+    "0-2": {
+     "n": 36160,
+     "log_loss": 1.3358834981918335,
+     "bits": 1.9272724390029907,
+     "accuracy": 0.4285674778761062,
+     "brier": 0.6840296983718872
+    },
+    "1-0": {
+     "n": 51773,
+     "log_loss": 1.3763208389282227,
+     "bits": 1.9856112003326416,
+     "accuracy": 0.4122419021497692,
+     "brier": 0.6997071504592896
+    },
+    "1-1": {
+     "n": 54421,
+     "log_loss": 1.4332553148269653,
+     "bits": 2.0677502155303955,
+     "accuracy": 0.37467154223553406,
+     "brier": 0.7233272194862366
+    },
+    "1-2": {
+     "n": 52655,
+     "log_loss": 1.3841882944107056,
+     "bits": 1.9969615936279297,
+     "accuracy": 0.40058873801158484,
+     "brier": 0.7046588063240051
+    },
+    "2-0": {
+     "n": 17171,
+     "log_loss": 1.2789336442947388,
+     "bits": 1.8451112508773804,
+     "accuracy": 0.47213324791800126,
+     "brier": 0.6528905630111694
+    },
+    "2-1": {
+     "n": 27897,
+     "log_loss": 1.3912464380264282,
+     "bits": 2.0071442127227783,
+     "accuracy": 0.4028748610961752,
+     "brier": 0.7057588696479797
+    },
+    "2-2": {
+     "n": 45522,
+     "log_loss": 1.4289557933807373,
+     "bits": 2.0615475177764893,
+     "accuracy": 0.3751153288519837,
+     "brier": 0.7218306660652161
+    },
+    "3-0": {
+     "n": 5056,
+     "log_loss": 0.9032807946205139,
+     "bits": 1.3031587600708008,
+     "accuracy": 0.7549446202531646,
+     "brier": 0.44042617082595825
+    },
+    "3-1": {
+     "n": 11148,
+     "log_loss": 1.2181230783462524,
+     "bits": 1.7573801279067993,
+     "accuracy": 0.5252063150340869,
+     "brier": 0.618598222732544
+    },
+    "3-2": {
+     "n": 27384,
+     "log_loss": 1.3068976402282715,
+     "bits": 1.885454773902893,
+     "accuracy": 0.4467572304995618,
+     "brier": 0.6704793572425842
+    }
+   },
+   "Context tree: batter side first, then count, previous pitch": {
+    "0-0": {
+     "n": 139287,
+     "log_loss": 1.3654392957687378,
+     "bits": 1.9699125289916992,
+     "accuracy": 0.41550180562435834,
+     "brier": 0.6986976265907288
+    },
+    "0-1": {
+     "n": 70524,
+     "log_loss": 1.408765196800232,
+     "bits": 2.0324184894561768,
+     "accuracy": 0.3807072769553627,
+     "brier": 0.7176234722137451
+    },
+    "0-2": {
+     "n": 36160,
+     "log_loss": 1.3623400926589966,
+     "bits": 1.965441346168518,
+     "accuracy": 0.4093196902654867,
+     "brier": 0.6978458166122437
+    },
+    "1-0": {
+     "n": 51773,
+     "log_loss": 1.3536767959594727,
+     "bits": 1.9529428482055664,
+     "accuracy": 0.4129758754563189,
+     "brier": 0.6963615417480469
+    },
+    "1-1": {
+     "n": 54421,
+     "log_loss": 1.4107341766357422,
+     "bits": 2.035259246826172,
+     "accuracy": 0.37412028444901785,
+     "brier": 0.7201027274131775
+    },
+    "1-2": {
+     "n": 52655,
+     "log_loss": 1.3894318342208862,
+     "bits": 2.004526376724243,
+     "accuracy": 0.38995347070553604,
+     "brier": 0.7108485698699951
+    },
+    "2-0": {
+     "n": 17171,
+     "log_loss": 1.285807728767395,
+     "bits": 1.8550283908843994,
+     "accuracy": 0.46811484479645915,
+     "brier": 0.6598865389823914
+    },
+    "2-1": {
+     "n": 27897,
+     "log_loss": 1.3568615913391113,
+     "bits": 1.9575375318527222,
+     "accuracy": 0.411370398250708,
+     "brier": 0.697056770324707
+    },
+    "2-2": {
+     "n": 45522,
+     "log_loss": 1.4187982082366943,
+     "bits": 2.0468931198120117,
+     "accuracy": 0.37469794824480473,
+     "brier": 0.7218677401542664
+    },
+    "3-0": {
+     "n": 5056,
+     "log_loss": 1.0802396535873413,
+     "bits": 1.5584564208984375,
+     "accuracy": 0.6855221518987342,
+     "brier": 0.5495442152023315
+    },
+    "3-1": {
+     "n": 11148,
+     "log_loss": 1.2480268478393555,
+     "bits": 1.8005220890045166,
+     "accuracy": 0.5189271618227485,
+     "brier": 0.6379371881484985
+    },
+    "3-2": {
+     "n": 27384,
+     "log_loss": 1.2881324291229248,
+     "bits": 1.858382225036621,
+     "accuracy": 0.4518331872626351,
+     "brier": 0.6667982339859009
+    }
+   },
+   "Gradient boosting (LightGBM)": {
+    "0-0": {
+     "n": 139287,
+     "log_loss": 1.2833482027053833,
+     "bits": 1.8514801263809204,
+     "accuracy": 0.44298462885983614,
+     "brier": 0.663906991481781
+    },
+    "0-1": {
+     "n": 70524,
+     "log_loss": 1.3530293703079224,
+     "bits": 1.9520087242126465,
+     "accuracy": 0.40988883217060856,
+     "brier": 0.695488452911377
+    },
+    "0-2": {
+     "n": 36160,
+     "log_loss": 1.2637046575546265,
+     "bits": 1.8231403827667236,
+     "accuracy": 0.4609513274336283,
+     "brier": 0.6552715301513672
+    },
+    "1-0": {
+     "n": 51773,
+     "log_loss": 1.286708116531372,
+     "bits": 1.8563274145126343,
+     "accuracy": 0.4426631641975547,
+     "brier": 0.6696659326553345
+    },
+    "1-1": {
+     "n": 54421,
+     "log_loss": 1.3484233617782593,
+     "bits": 1.9453636407852173,
+     "accuracy": 0.4098785395343709,
+     "brier": 0.6953519582748413
+    },
+    "1-2": {
+     "n": 52655,
+     "log_loss": 1.3152875900268555,
+     "bits": 1.8975589275360107,
+     "accuracy": 0.43638780742569555,
+     "brier": 0.6785643100738525
+    },
+    "2-0": {
+     "n": 17171,
+     "log_loss": 1.1663938760757446,
+     "bits": 1.6827507019042969,
+     "accuracy": 0.5128996563974142,
+     "brier": 0.6105543375015259
+    },
+    "2-1": {
+     "n": 27897,
+     "log_loss": 1.2834755182266235,
+     "bits": 1.8516637086868286,
+     "accuracy": 0.4490805462953006,
+     "brier": 0.66702800989151
+    },
+    "2-2": {
+     "n": 45522,
+     "log_loss": 1.3489435911178589,
+     "bits": 1.946114182472229,
+     "accuracy": 0.4184570097974606,
+     "brier": 0.6914446353912354
+    },
+    "3-0": {
+     "n": 5056,
+     "log_loss": 0.599936842918396,
+     "bits": 0.8655259013175964,
+     "accuracy": 0.7755142405063291,
+     "brier": 0.3168940246105194
+    },
+    "3-1": {
+     "n": 11148,
+     "log_loss": 1.0727863311767578,
+     "bits": 1.547703504562378,
+     "accuracy": 0.564226767133118,
+     "brier": 0.5637686848640442
+    },
+    "3-2": {
+     "n": 27384,
+     "log_loss": 1.2078557014465332,
+     "bits": 1.7425674200057983,
+     "accuracy": 0.4868536371603856,
+     "brier": 0.6332975029945374
+    }
+   },
+   "Sequence transformer": {
+    "0-0": {
+     "n": 139287,
+     "log_loss": 1.283871054649353,
+     "bits": 1.8522343635559082,
+     "accuracy": 0.4445856397223,
+     "brier": 0.6630826592445374
+    },
+    "0-1": {
+     "n": 70524,
+     "log_loss": 1.3540842533111572,
+     "bits": 1.9535306692123413,
+     "accuracy": 0.4108105042255119,
+     "brier": 0.695289671421051
+    },
+    "0-2": {
+     "n": 36160,
+     "log_loss": 1.2588541507720947,
+     "bits": 1.8161426782608032,
+     "accuracy": 0.4686946902654867,
+     "brier": 0.6518474817276001
+    },
+    "1-0": {
+     "n": 51773,
+     "log_loss": 1.2847900390625,
+     "bits": 1.853560209274292,
+     "accuracy": 0.44416974098468315,
+     "brier": 0.6682215332984924
+    },
+    "1-1": {
+     "n": 54421,
+     "log_loss": 1.3523151874542236,
+     "bits": 1.950978398323059,
+     "accuracy": 0.4080042630602157,
+     "brier": 0.6961964964866638
+    },
+    "1-2": {
+     "n": 52655,
+     "log_loss": 1.3119889497756958,
+     "bits": 1.892799973487854,
+     "accuracy": 0.43862881017947014,
+     "brier": 0.6761666536331177
+    },
+    "2-0": {
+     "n": 17171,
+     "log_loss": 1.163151502609253,
+     "bits": 1.6780729293823242,
+     "accuracy": 0.5133073204822084,
+     "brier": 0.6088376045227051
+    },
+    "2-1": {
+     "n": 27897,
+     "log_loss": 1.2803750038146973,
+     "bits": 1.8471906185150146,
+     "accuracy": 0.4488654694053124,
+     "brier": 0.6653033494949341
+    },
+    "2-2": {
+     "n": 45522,
+     "log_loss": 1.3446487188339233,
+     "bits": 1.939918041229248,
+     "accuracy": 0.42298229427529543,
+     "brier": 0.6888481378555298
+    },
+    "3-0": {
+     "n": 5056,
+     "log_loss": 0.5954018831253052,
+     "bits": 0.8589833378791809,
+     "accuracy": 0.7782832278481012,
+     "brier": 0.3167825937271118
+    },
+    "3-1": {
+     "n": 11148,
+     "log_loss": 1.0590678453445435,
+     "bits": 1.527911901473999,
+     "accuracy": 0.5659311087190527,
+     "brier": 0.5589226484298706
+    },
+    "3-2": {
+     "n": 27384,
+     "log_loss": 1.1898598670959473,
+     "bits": 1.7166049480438232,
+     "accuracy": 0.4970420683610868,
+     "brier": 0.623813807964325
+    }
+   },
+   "Average of GBM and transformer": {
+    "0-0": {
+     "n": 139287,
+     "log_loss": 1.2776150703430176,
+     "bits": 1.843208909034729,
+     "accuracy": 0.4460789592711452,
+     "brier": 0.6614617109298706
+    },
+    "0-1": {
+     "n": 70524,
+     "log_loss": 1.3472633361816406,
+     "bits": 1.9436901807785034,
+     "accuracy": 0.4141427031932392,
+     "brier": 0.6930527687072754
+    },
+    "0-2": {
+     "n": 36160,
+     "log_loss": 1.252891182899475,
+     "bits": 1.807539939880371,
+     "accuracy": 0.46706305309734514,
+     "brier": 0.6501310467720032
+    },
+    "1-0": {
+     "n": 51773,
+     "log_loss": 1.2794917821884155,
+     "bits": 1.8459163904190063,
+     "accuracy": 0.44536727637958007,
+     "brier": 0.6665247082710266
+    },
+    "1-1": {
+     "n": 54421,
+     "log_loss": 1.343866229057312,
+     "bits": 1.9387891292572021,
+     "accuracy": 0.4133882141085243,
+     "brier": 0.693276584148407
+    },
+    "1-2": {
+     "n": 52655,
+     "log_loss": 1.3053696155548096,
+     "bits": 1.8832502365112305,
+     "accuracy": 0.44153451713987274,
+     "brier": 0.6740269660949707
+    },
+    "2-0": {
+     "n": 17171,
+     "log_loss": 1.1548922061920166,
+     "bits": 1.6661572456359863,
+     "accuracy": 0.5146467881893891,
+     "brier": 0.6056201457977295
+    },
+    "2-1": {
+     "n": 27897,
+     "log_loss": 1.2733430862426758,
+     "bits": 1.8370457887649536,
+     "accuracy": 0.4542065455066853,
+     "brier": 0.6626101732254028
+    },
+    "2-2": {
+     "n": 45522,
+     "log_loss": 1.3377199172973633,
+     "bits": 1.9299218654632568,
+     "accuracy": 0.42592592592592593,
+     "brier": 0.6865604519844055
+    },
+    "3-0": {
+     "n": 5056,
+     "log_loss": 0.5885621309280396,
+     "bits": 0.8491156697273254,
+     "accuracy": 0.7776898734177216,
+     "brier": 0.3126831650733948
+    },
+    "3-1": {
+     "n": 11148,
+     "log_loss": 1.053403377532959,
+     "bits": 1.5197398662567139,
+     "accuracy": 0.5706853247219232,
+     "brier": 0.5557975769042969
+    },
+    "3-2": {
+     "n": 27384,
+     "log_loss": 1.187640905380249,
+     "bits": 1.713403582572937,
+     "accuracy": 0.49616564417177916,
+     "brier": 0.6235793828964233
+    }
+   }
+  },
+  "n_focus": {
+   "2025": {
+    "pitches": 267722,
+    "pitchers": 103
+   },
+   "2026": {
+    "pitches": 271276,
+    "pitchers": 106
+   }
+  },
+  "own_models": {
+   "own": {
+    "n": 384311,
+    "log_loss": 1.3588594198226929,
+    "bits": 1.960419774055481,
+    "accuracy": 0.4136961991720247,
+    "brier": 0.6936641931533813
+   },
+   "shared": {
+    "n": 384311,
+    "log_loss": 1.2979037761688232,
+    "bits": 1.8724793195724487,
+    "accuracy": 0.4405390425983123,
+    "brier": 0.6696907877922058
+   },
+   "control": {
+    "n": 384311,
+    "log_loss": 1.563689947128296,
+    "bits": 2.255927801132202,
+    "accuracy": 0.3641998277436763,
+    "brier": 0.7478945851325989
+   },
+   "pitchers": 108,
+   "own_minus_shared_bits": [
+    0.08794023283098167,
+    0.08542863802714663,
+    0.09063055620780058
+   ]
+  }
+ },
+ "pitchers": {
+  "table": [
+   {
+    "pitcher": 434378,
+    "name": "Justin Verlander",
+    "season": 2025,
+    "throws": "R",
+    "n": 2608,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.453,
+     "SL": 0.233,
+     "CU": 0.146,
+     "CH": 0.085,
+     "ST": 0.079
+    },
+    "mix_entropy": 2.034962928211009,
+    "best_bits": 1.8737051486968994,
+    "control_bits": 2.194948196411133,
+    "best_acc": 0.46587423312883436,
+    "control_acc": 0.4578220858895706,
+    "rv100": -0.002032208588957081,
+    "csw": 0.276840490797546,
+    "whiff": 0.2248427672955975,
+    "xwoba": 0.36693646073573577,
+    "explained": 0.07924359568352224,
+    "gain_vs_control": 0.3212430477142334
+   },
+   {
+    "pitcher": 450203,
+    "name": "Charlie Morton",
+    "season": 2025,
+    "throws": "R",
+    "n": 2548,
+    "pitch_types": 5,
+    "mix": {
+     "CU": 0.383,
+     "FF": 0.276,
+     "SI": 0.151,
+     "CH": 0.099,
+     "FC": 0.091
+    },
+    "mix_entropy": 2.1002973447988404,
+    "best_bits": 1.8373805284500122,
+    "control_bits": 2.0312557220458984,
+    "best_acc": 0.4305337519623234,
+    "control_acc": 0.3834379905808477,
+    "rv100": -1.0241365777080063,
+    "csw": 0.2802197802197802,
+    "whiff": 0.24979044425817268,
+    "xwoba": 0.37851141524251,
+    "explained": 0.12518075928625694,
+    "gain_vs_control": 0.19387519359588623
+   },
+   {
+    "pitcher": 500779,
+    "name": "Jose Quintana",
+    "season": 2025,
+    "throws": "L",
+    "n": 2174,
+    "pitch_types": 5,
+    "mix": {
+     "SI": 0.438,
+     "CH": 0.222,
+     "CU": 0.137,
+     "FF": 0.117,
+     "SV": 0.086
+    },
+    "mix_entropy": 2.0625054405968384,
+    "best_bits": 1.7197848558425903,
+    "control_bits": 2.2151966094970703,
+    "best_acc": 0.46274149034038636,
+    "control_acc": 0.34406623735050595,
+    "rv100": -0.046964121435142656,
+    "csw": 0.24839006439742412,
+    "whiff": 0.16063829787234044,
+    "xwoba": 0.3781587862927978,
+    "explained": 0.16616711791803718,
+    "gain_vs_control": 0.49541175365448
+   },
+   {
+    "pitcher": 518876,
+    "name": "Merrill Kelly",
+    "season": 2025,
+    "throws": "R",
+    "n": 2833,
+    "pitch_types": 6,
+    "mix": {
+     "CH": 0.271,
+     "FF": 0.232,
+     "FC": 0.202,
+     "SI": 0.129,
+     "CU": 0.097,
+     "SL": 0.07
+    },
+    "mix_entropy": 2.4404086717586977,
+    "best_bits": 2.1772913932800293,
+    "control_bits": 2.443222761154175,
+    "best_acc": 0.3593363925167667,
+    "control_acc": 0.28168019767031416,
+    "rv100": 0.3948817507942111,
+    "csw": 0.2707377338510413,
+    "whiff": 0.2163323782234957,
+    "xwoba": 0.3800752279031135,
+    "explained": 0.10781689211465188,
+    "gain_vs_control": 0.2659313678741455
+   },
+   {
+    "pitcher": 519242,
+    "name": "Chris Sale",
+    "season": 2025,
+    "throws": "L",
+    "n": 2031,
+    "pitch_types": 4,
+    "mix": {
+     "SL": 0.473,
+     "FF": 0.417,
+     "CH": 0.076,
+     "SI": 0.035
+    },
+    "mix_entropy": 1.4885797117528234,
+    "best_bits": 1.2777949571609497,
+    "control_bits": 1.4968305826187134,
+    "best_acc": 0.5873953717380601,
+    "control_acc": 0.5012309207287051,
+    "rv100": 1.0655342195962578,
+    "csw": 0.3126538650910881,
+    "whiff": 0.2729103726082578,
+    "xwoba": 0.3471742553255302,
+    "explained": 0.14160125448953736,
+    "gain_vs_control": 0.21903562545776367
+   },
+   {
+    "pitcher": 542881,
+    "name": "Tyler Anderson",
+    "season": 2025,
+    "throws": "L",
+    "n": 2339,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.381,
+     "CH": 0.34,
+     "FC": 0.205,
+     "SI": 0.036,
+     "SL": 0.035
+    },
+    "mix_entropy": 1.8923085378371636,
+    "best_bits": 1.5320295095443726,
+    "control_bits": 1.898525595664978,
+    "best_acc": 0.5258657545959812,
+    "control_acc": 0.404018811457888,
+    "rv100": -0.8761436511329627,
+    "csw": 0.2620778110303549,
+    "whiff": 0.22969432314410482,
+    "xwoba": 0.3827469777295955,
+    "explained": 0.19039127134340164,
+    "gain_vs_control": 0.36649608612060547
+   },
+   {
+    "pitcher": 543243,
+    "name": "Sonny Gray",
+    "season": 2025,
+    "throws": "R",
+    "n": 2718,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.217,
+     "ST": 0.192,
+     "CU": 0.184,
+     "SI": 0.18,
+     "FC": 0.126,
+     "CH": 0.084
+    },
+    "mix_entropy": 2.605477940239206,
+    "best_bits": 2.0069286823272705,
+    "control_bits": 2.3300468921661377,
+    "best_acc": 0.44186902133922,
+    "control_acc": 0.3686534216335541,
+    "rv100": 0.23583517292126577,
+    "csw": 0.31015452538631344,
+    "whiff": 0.2575640031031808,
+    "xwoba": 0.3956480180461617,
+    "explained": 0.22972724069848904,
+    "gain_vs_control": 0.3231182098388672
+   },
+   {
+    "pitcher": 543294,
+    "name": "Kyle Hendricks",
+    "season": 2025,
+    "throws": "R",
+    "n": 2571,
+    "pitch_types": 4,
+    "mix": {
+     "SI": 0.384,
+     "CH": 0.384,
+     "FF": 0.15,
+     "CU": 0.082
+    },
+    "mix_entropy": 1.7675665370571103,
+    "best_bits": 1.5944572687149048,
+    "control_bits": 1.7059077024459839,
+    "best_acc": 0.49630493971217426,
+    "control_acc": 0.47996888370283936,
+    "rv100": -0.2894982497082847,
+    "csw": 0.26721120186697783,
+    "whiff": 0.16761133603238867,
+    "xwoba": 0.3407414380680681,
+    "explained": 0.09793649331607161,
+    "gain_vs_control": 0.1114504337310791
+   },
+   {
+    "pitcher": 547179,
+    "name": "Michael Lorenzen",
+    "season": 2025,
+    "throws": "R",
+    "n": 2318,
+    "pitch_types": 7,
+    "mix": {
+     "FF": 0.22,
+     "SI": 0.18,
+     "CH": 0.173,
+     "SL": 0.119,
+     "CU": 0.113,
+     "FC": 0.108,
+     "ST": 0.086
+    },
+    "mix_entropy": 2.736817811486389,
+    "best_bits": 2.3624260425567627,
+    "control_bits": 2.7382588386535645,
+    "best_acc": 0.33261432269197583,
+    "control_acc": 0.23468507333908542,
+    "rv100": -0.5308455565142364,
+    "csw": 0.25970664365832613,
+    "whiff": 0.21543985637342908,
+    "xwoba": 0.3902604938860446,
+    "explained": 0.1367982067926878,
+    "gain_vs_control": 0.37583279609680176
+   },
+   {
+    "pitcher": 554430,
+    "name": "Zack Wheeler",
+    "season": 2025,
+    "throws": "R",
+    "n": 2394,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.409,
+     "SI": 0.171,
+     "ST": 0.149,
+     "CU": 0.097,
+     "FS": 0.089,
+     "FC": 0.086
+    },
+    "mix_entropy": 2.3124488958842,
+    "best_bits": 1.8627095222473145,
+    "control_bits": 2.440385341644287,
+    "best_acc": 0.467000835421888,
+    "control_acc": 0.4089390142021721,
+    "rv100": 1.0014202172096907,
+    "csw": 0.28863826232247286,
+    "whiff": 0.2879668049792531,
+    "xwoba": 0.3320221303805439,
+    "explained": 0.19448618926772904,
+    "gain_vs_control": 0.5776758193969727
+   },
+   {
+    "pitcher": 571510,
+    "name": "Matthew Boyd",
+    "season": 2025,
+    "throws": "L",
+    "n": 2746,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.471,
+     "CH": 0.237,
+     "SL": 0.149,
+     "CU": 0.113,
+     "SI": 0.03
+    },
+    "mix_entropy": 1.9207588077580373,
+    "best_bits": 1.5754600763320923,
+    "control_bits": 1.892463207244873,
+    "best_acc": 0.5193008011653314,
+    "control_acc": 0.4712308812818645,
+    "rv100": 0.6130735615440642,
+    "csw": 0.26438455935906774,
+    "whiff": 0.21004243281471005,
+    "xwoba": 0.35313934062119373,
+    "explained": 0.17977204114918896,
+    "gain_vs_control": 0.31700313091278076
+   },
+   {
+    "pitcher": 571578,
+    "name": "Patrick Corbin",
+    "season": 2025,
+    "throws": "L",
+    "n": 2588,
+    "pitch_types": 4,
+    "mix": {
+     "SL": 0.335,
+     "SI": 0.289,
+     "FC": 0.25,
+     "CH": 0.093
+    },
+    "mix_entropy": 2.047022359092638,
+    "best_bits": 1.8398007154464722,
+    "control_bits": 2.370604991912842,
+    "best_acc": 0.4250386398763524,
+    "control_acc": 0.34891808346213293,
+    "rv100": -0.18450540958268938,
+    "csw": 0.27704791344667695,
+    "whiff": 0.2518765638031693,
+    "xwoba": 0.3882555122054927,
+    "explained": 0.10123076708259247,
+    "gain_vs_control": 0.5308042764663696
+   },
+   {
+    "pitcher": 571760,
+    "name": "Andrew Heaney",
+    "season": 2025,
+    "throws": "L",
+    "n": 2082,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.437,
+     "CH": 0.173,
+     "SL": 0.166,
+     "SI": 0.112,
+     "CU": 0.111
+    },
+    "mix_entropy": 2.0977802750798533,
+    "best_bits": 1.8583945035934448,
+    "control_bits": 2.350992202758789,
+    "best_acc": 0.4745437079731028,
+    "control_acc": 0.4365994236311239,
+    "rv100": -1.1590297790585977,
+    "csw": 0.24687800192122958,
+    "whiff": 0.17611336032388664,
+    "xwoba": 0.3990455979782441,
+    "explained": 0.11411384420482079,
+    "gain_vs_control": 0.49259769916534424
+   },
+   {
+    "pitcher": 571945,
+    "name": "Miles Mikolas",
+    "season": 2025,
+    "throws": "R",
+    "n": 2480,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.277,
+     "SL": 0.234,
+     "CU": 0.176,
+     "SI": 0.17,
+     "CH": 0.115
+    },
+    "mix_entropy": 2.3839571234576766,
+    "best_bits": 2.130829095840454,
+    "control_bits": 2.3672800064086914,
+    "best_acc": 0.3580645161290323,
+    "control_acc": 0.2762096774193548,
+    "rv100": -0.8411693548387098,
+    "csw": 0.25161290322580643,
+    "whiff": 0.14693534844668346,
+    "xwoba": 0.39236974319269097,
+    "explained": 0.10617977359009176,
+    "gain_vs_control": 0.2364509105682373
+   },
+   {
+    "pitcher": 579328,
+    "name": "Yusei Kikuchi",
+    "season": 2025,
+    "throws": "L",
+    "n": 3094,
+    "pitch_types": 4,
+    "mix": {
+     "SL": 0.362,
+     "FF": 0.349,
+     "CU": 0.154,
+     "CH": 0.122
+    },
+    "mix_entropy": 1.9346909658581335,
+    "best_bits": 1.638228416442871,
+    "control_bits": 2.0248780250549316,
+    "best_acc": 0.504524886877828,
+    "control_acc": 0.4230769230769231,
+    "rv100": -0.1921137685843567,
+    "csw": 0.25953458306399485,
+    "whiff": 0.21619812583668005,
+    "xwoba": 0.3845811674191708,
+    "explained": 0.15323509265665394,
+    "gain_vs_control": 0.38664960861206055
+   },
+   {
+    "pitcher": 592332,
+    "name": "Kevin Gausman",
+    "season": 2025,
+    "throws": "R",
+    "n": 3030,
+    "pitch_types": 3,
+    "mix": {
+     "FF": 0.537,
+     "FS": 0.374,
+     "SL": 0.088
+    },
+    "mix_entropy": 1.3281483436460335,
+    "best_bits": 1.1843233108520508,
+    "control_bits": 1.3362473249435425,
+    "best_acc": 0.5798679867986799,
+    "control_acc": 0.5511551155115512,
+    "rv100": 0.852838283828383,
+    "csw": 0.2838283828382838,
+    "whiff": 0.2442455242966752,
+    "xwoba": 0.37036664660569685,
+    "explained": 0.1082898860523021,
+    "gain_vs_control": 0.1519240140914917
+   },
+   {
+    "pitcher": 592662,
+    "name": "Robbie Ray",
+    "season": 2025,
+    "throws": "L",
+    "n": 3069,
+    "pitch_types": 4,
+    "mix": {
+     "FF": 0.519,
+     "SL": 0.226,
+     "CH": 0.13,
+     "KC": 0.121
+    },
+    "mix_entropy": 1.7646165709900061,
+    "best_bits": 1.5924906730651855,
+    "control_bits": 2.0329480171203613,
+    "best_acc": 0.5317693059628543,
+    "control_acc": 0.5040729879439557,
+    "rv100": 0.11987618116650385,
+    "csw": 0.2697947214076246,
+    "whiff": 0.25462962962962965,
+    "xwoba": 0.352844396517469,
+    "explained": 0.09754294545032662,
+    "gain_vs_control": 0.4404573440551758
+   },
+   {
+    "pitcher": 592836,
+    "name": "Taijuan Walker",
+    "season": 2025,
+    "throws": "R",
+    "n": 2061,
+    "pitch_types": 6,
+    "mix": {
+     "FC": 0.301,
+     "FS": 0.225,
+     "SI": 0.202,
+     "SL": 0.113,
+     "FF": 0.095,
+     "CU": 0.065
+    },
+    "mix_entropy": 2.404086876880868,
+    "best_bits": 2.081902027130127,
+    "control_bits": 2.632533073425293,
+    "best_acc": 0.3964095099466278,
+    "control_acc": 0.2188258127122756,
+    "rv100": -0.6516739446870451,
+    "csw": 0.24939349830179525,
+    "whiff": 0.1668460710441335,
+    "xwoba": 0.3585333904661388,
+    "explained": 0.13401547708157407,
+    "gain_vs_control": 0.550631046295166
+   },
+   {
+    "pitcher": 593958,
+    "name": "Eduardo Rodriguez",
+    "season": 2025,
+    "throws": "L",
+    "n": 2588,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.466,
+     "CH": 0.205,
+     "FC": 0.156,
+     "SI": 0.088,
+     "CU": 0.047,
+     "SL": 0.038
+    },
+    "mix_entropy": 2.0945153947211654,
+    "best_bits": 1.7482753992080688,
+    "control_bits": 2.218909978866577,
+    "best_acc": 0.49265842349304484,
+    "control_acc": 0.4663833075734158,
+    "rv100": -0.74629057187017,
+    "csw": 0.25154559505409585,
+    "whiff": 0.20245901639344263,
+    "xwoba": 0.3802817351327604,
+    "explained": 0.16530792582653236,
+    "gain_vs_control": 0.4706345796585083
+   },
+   {
+    "pitcher": 594798,
+    "name": "Jacob deGrom",
+    "season": 2025,
+    "throws": "R",
+    "n": 2614,
+    "pitch_types": 4,
+    "mix": {
+     "FF": 0.46,
+     "SL": 0.376,
+     "CH": 0.113,
+     "CU": 0.051
+    },
+    "mix_entropy": 1.6196971274401217,
+    "best_bits": 1.4010746479034424,
+    "control_bits": 1.5966389179229736,
+    "best_acc": 0.5118592195868401,
+    "control_acc": 0.454858454475899,
+    "rv100": 1.2558148431522573,
+    "csw": 0.2888293802601377,
+    "whiff": 0.27588757396449703,
+    "xwoba": 0.3690349366139056,
+    "explained": 0.1349773830137027,
+    "gain_vs_control": 0.19556427001953125
+   },
+   {
+    "pitcher": 601713,
+    "name": "Nick Pivetta",
+    "season": 2025,
+    "throws": "R",
+    "n": 2851,
+    "pitch_types": 4,
+    "mix": {
+     "FF": 0.474,
+     "CU": 0.224,
+     "ST": 0.186,
+     "FC": 0.088
+    },
+    "mix_entropy": 1.9309337095561632,
+    "best_bits": 1.6005405187606812,
+    "control_bits": 2.3573570251464844,
+    "best_acc": 0.5250789196773062,
+    "control_acc": 0.4735180638372501,
+    "rv100": 1.2095405121010172,
+    "csw": 0.2862153630305156,
+    "whiff": 0.22058823529411764,
+    "xwoba": 0.3913160591132681,
+    "explained": 0.17110540313236589,
+    "gain_vs_control": 0.7568165063858032
+   },
+   {
+    "pitcher": 605135,
+    "name": "Chris Bassitt",
+    "season": 2025,
+    "throws": "R",
+    "n": 2829,
+    "pitch_types": 7,
+    "mix": {
+     "SI": 0.417,
+     "FC": 0.168,
+     "CU": 0.162,
+     "FF": 0.093,
+     "ST": 0.058,
+     "CH": 0.037,
+     "FS": 0.036
+    },
+    "mix_entropy": 2.4378517087237475,
+    "best_bits": 2.172271728515625,
+    "control_bits": 2.4394941329956055,
+    "best_acc": 0.4351360904913397,
+    "control_acc": 0.40721102863202546,
+    "rv100": -0.0926475786496996,
+    "csw": 0.27112053729232943,
+    "whiff": 0.21541950113378686,
+    "xwoba": 0.3711550254694686,
+    "explained": 0.1089401702563597,
+    "gain_vs_control": 0.26722240447998047
+   },
+   {
+    "pitcher": 605280,
+    "name": "Clay Holmes",
+    "season": 2025,
+    "throws": "R",
+    "n": 2764,
+    "pitch_types": 6,
+    "mix": {
+     "SI": 0.408,
+     "ST": 0.19,
+     "CH": 0.157,
+     "SL": 0.107,
+     "FC": 0.084,
+     "FF": 0.054
+    },
+    "mix_entropy": 2.273446364888671,
+    "best_bits": 1.9573291540145874,
+    "control_bits": 2.7222886085510254,
+    "best_acc": 0.4840810419681621,
+    "control_acc": 0.408465991316932,
+    "rv100": 0.3254703328509407,
+    "csw": 0.27206946454413894,
+    "whiff": 0.20581113801452786,
+    "xwoba": 0.34569403174012103,
+    "explained": 0.1390475780542831,
+    "gain_vs_control": 0.764959454536438
+   },
+   {
+    "pitcher": 605488,
+    "name": "Jeffrey Springs",
+    "season": 2025,
+    "throws": "L",
+    "n": 2847,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.425,
+     "CH": 0.253,
+     "SL": 0.202,
+     "ST": 0.061,
+     "FC": 0.059
+    },
+    "mix_entropy": 1.9787069173238279,
+    "best_bits": 1.6634087562561035,
+    "control_bits": 2.0233283042907715,
+    "best_acc": 0.4977168949771689,
+    "control_acc": 0.41166139796276785,
+    "rv100": -0.09680365296803643,
+    "csw": 0.27748507200561995,
+    "whiff": 0.23899848254931716,
+    "xwoba": 0.365440521516658,
+    "explained": 0.159345559621412,
+    "gain_vs_control": 0.35991954803466797
+   },
+   {
+    "pitcher": 607067,
+    "name": "Colin Rea",
+    "season": 2025,
+    "throws": "R",
+    "n": 2533,
+    "pitch_types": 7,
+    "mix": {
+     "FF": 0.415,
+     "CH": 0.121,
+     "SI": 0.106,
+     "SL": 0.1,
+     "ST": 0.093,
+     "CU": 0.092,
+     "FC": 0.073
+    },
+    "mix_entropy": 2.4819125543766054,
+    "best_bits": 2.0226285457611084,
+    "control_bits": 2.9033892154693604,
+    "best_acc": 0.451243584682195,
+    "control_acc": 0.18397157520726412,
+    "rv100": 0.09293328069482826,
+    "csw": 0.26648243189893406,
+    "whiff": 0.19469759734879868,
+    "xwoba": 0.37693112162430203,
+    "explained": 0.18505245392533892,
+    "gain_vs_control": 0.880760669708252
+   },
+   {
+    "pitcher": 607074,
+    "name": "Carlos Rod\u00f3n",
+    "season": 2025,
+    "throws": "L",
+    "n": 3212,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.418,
+     "SL": 0.284,
+     "CH": 0.162,
+     "SI": 0.097,
+     "CU": 0.038
+    },
+    "mix_entropy": 1.9869458064702359,
+    "best_bits": 1.6534504890441895,
+    "control_bits": 2.1452834606170654,
+    "best_acc": 0.49564134495641343,
+    "control_acc": 0.4613947696139477,
+    "rv100": 0.8675280199252802,
+    "csw": 0.2970112079701121,
+    "whiff": 0.2781954887218045,
+    "xwoba": 0.3342700137350317,
+    "explained": 0.16784318743876225,
+    "gain_vs_control": 0.491832971572876
+   },
+   {
+    "pitcher": 607200,
+    "name": "Erick Fedde",
+    "season": 2025,
+    "throws": "R",
+    "n": 2369,
+    "pitch_types": 4,
+    "mix": {
+     "SI": 0.333,
+     "FC": 0.28,
+     "ST": 0.26,
+     "CH": 0.119
+    },
+    "mix_entropy": 1.9728958825033056,
+    "best_bits": 1.7373244762420654,
+    "control_bits": 2.2147884368896484,
+    "best_acc": 0.4402701561840439,
+    "control_acc": 0.33516251582946394,
+    "rv100": -0.7861967074715069,
+    "csw": 0.23638666103841283,
+    "whiff": 0.16540642722117202,
+    "xwoba": 0.36824760661554545,
+    "explained": 0.11940387141075878,
+    "gain_vs_control": 0.477463960647583
+   },
+   {
+    "pitcher": 607259,
+    "name": "Nick Martinez",
+    "season": 2025,
+    "throws": "R",
+    "n": 2577,
+    "pitch_types": 6,
+    "mix": {
+     "FC": 0.21,
+     "FF": 0.21,
+     "CH": 0.198,
+     "SI": 0.169,
+     "CU": 0.11,
+     "SL": 0.104
+    },
+    "mix_entropy": 2.530556654614731,
+    "best_bits": 2.2137815952301025,
+    "control_bits": 2.550804853439331,
+    "best_acc": 0.3589445091191308,
+    "control_acc": 0.25417151726814124,
+    "rv100": -0.076639503298409,
+    "csw": 0.2619324796274738,
+    "whiff": 0.18106995884773663,
+    "xwoba": 0.347552316166049,
+    "explained": 0.1251799910533347,
+    "gain_vs_control": 0.3370232582092285
+   },
+   {
+    "pitcher": 607536,
+    "name": "Kyle Freeland",
+    "season": 2025,
+    "throws": "L",
+    "n": 2482,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.334,
+     "KC": 0.261,
+     "FC": 0.156,
+     "ST": 0.129,
+     "SI": 0.061,
+     "CH": 0.059
+    },
+    "mix_entropy": 2.3214100326957685,
+    "best_bits": 1.937524437904358,
+    "control_bits": 2.7376368045806885,
+    "best_acc": 0.43352135374697826,
+    "control_acc": 0.2715551974214343,
+    "rv100": -0.6447622884770347,
+    "csw": 0.26430298146655923,
+    "whiff": 0.1891679748822606,
+    "xwoba": 0.392908047303109,
+    "explained": 0.1653674229819789,
+    "gain_vs_control": 0.8001123666763306
+   },
+   {
+    "pitcher": 607625,
+    "name": "Seth Lugo",
+    "season": 2025,
+    "throws": "R",
+    "n": 2380,
+    "pitch_types": 7,
+    "mix": {
+     "CU": 0.23,
+     "FF": 0.211,
+     "SI": 0.146,
+     "FC": 0.141,
+     "CH": 0.096,
+     "SV": 0.094,
+     "SL": 0.056
+    },
+    "mix_entropy": 2.7993037307271367,
+    "best_bits": 2.5912392139434814,
+    "control_bits": 2.8810296058654785,
+    "best_acc": 0.31554621848739495,
+    "control_acc": 0.25504201680672267,
+    "rv100": -0.61390756302521,
+    "csw": 0.26974789915966385,
+    "whiff": 0.18486590038314177,
+    "xwoba": 0.40261858562571506,
+    "explained": 0.0743272387700527,
+    "gain_vs_control": 0.28979039192199707
+   },
+   {
+    "pitcher": 608331,
+    "name": "Max Fried",
+    "season": 2025,
+    "throws": "L",
+    "n": 3109,
+    "pitch_types": 6,
+    "mix": {
+     "FC": 0.286,
+     "SI": 0.177,
+     "CU": 0.173,
+     "FF": 0.122,
+     "ST": 0.116,
+     "CH": 0.109
+    },
+    "mix_entropy": 2.575126217872408,
+    "best_bits": 2.3086819648742676,
+    "control_bits": 3.17388916015625,
+    "best_acc": 0.3592795110968157,
+    "control_acc": 0.12833708587970408,
+    "rv100": 0.670119009327758,
+    "csw": 0.27951109681569636,
+    "whiff": 0.2421124828532236,
+    "xwoba": 0.3401049956220983,
+    "explained": 0.10346842463445506,
+    "gain_vs_control": 0.8652071952819824
+   },
+   {
+    "pitcher": 608337,
+    "name": "Lucas Giolito",
+    "season": 2025,
+    "throws": "R",
+    "n": 2367,
+    "pitch_types": 4,
+    "mix": {
+     "FF": 0.484,
+     "SL": 0.256,
+     "CH": 0.226,
+     "CU": 0.035
+    },
+    "mix_entropy": 1.6627559755671133,
+    "best_bits": 1.479069471359253,
+    "control_bits": 1.6320301294326782,
+    "best_acc": 0.5179552175749894,
+    "control_acc": 0.4807773553020701,
+    "rv100": 0.21073088297422896,
+    "csw": 0.26320236586396284,
+    "whiff": 0.21000893655049152,
+    "xwoba": 0.3955965197897304,
+    "explained": 0.1104711135650622,
+    "gain_vs_control": 0.1529606580734253
+   },
+   {
+    "pitcher": 608372,
+    "name": "Tomoyuki Sugano",
+    "season": 2025,
+    "throws": "R",
+    "n": 2565,
+    "pitch_types": 6,
+    "mix": {
+     "FS": 0.235,
+     "ST": 0.198,
+     "FF": 0.189,
+     "SI": 0.161,
+     "FC": 0.12,
+     "CU": 0.097
+    },
+    "mix_entropy": 2.525731230431467,
+    "best_bits": 2.1546802520751953,
+    "control_bits": 2.491089105606079,
+    "best_acc": 0.3847953216374269,
+    "control_acc": 0.26354775828460036,
+    "rv100": -0.519493177387914,
+    "csw": 0.2409356725146199,
+    "whiff": 0.16846473029045644,
+    "xwoba": 0.41309674755613324,
+    "explained": 0.14690833841924097,
+    "gain_vs_control": 0.3364088535308838
+   },
+   {
+    "pitcher": 608379,
+    "name": "Michael Wacha",
+    "season": 2025,
+    "throws": "R",
+    "n": 2665,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.27,
+     "CH": 0.254,
+     "FC": 0.15,
+     "SI": 0.127,
+     "SL": 0.122,
+     "CU": 0.077
+    },
+    "mix_entropy": 2.4562055919346095,
+    "best_bits": 2.1399638652801514,
+    "control_bits": 2.4725418090820312,
+    "best_acc": 0.3677298311444653,
+    "control_acc": 0.31444652908067544,
+    "rv100": 0.4222889305816134,
+    "csw": 0.249906191369606,
+    "whiff": 0.19583023082650783,
+    "xwoba": 0.3562047157170167,
+    "explained": 0.12875214016810907,
+    "gain_vs_control": 0.3325779438018799
+   },
+   {
+    "pitcher": 608566,
+    "name": "Germ\u00e1n M\u00e1rquez",
+    "season": 2025,
+    "throws": "R",
+    "n": 2085,
+    "pitch_types": 4,
+    "mix": {
+     "FF": 0.353,
+     "KC": 0.319,
+     "SI": 0.198,
+     "SL": 0.106
+    },
+    "mix_entropy": 1.9884389055954177,
+    "best_bits": 1.657428503036499,
+    "control_bits": 1.9668797254562378,
+    "best_acc": 0.49976019184652276,
+    "control_acc": 0.4023980815347722,
+    "rv100": -1.9999520383693044,
+    "csw": 0.22973621103117506,
+    "whiff": 0.174,
+    "xwoba": 0.39443560305918346,
+    "explained": 0.16646747437271703,
+    "gain_vs_control": 0.30945122241973877
+   },
+   {
+    "pitcher": 615698,
+    "name": "Cal Quantrill",
+    "season": 2025,
+    "throws": "R",
+    "n": 2004,
+    "pitch_types": 6,
+    "mix": {
+     "SI": 0.221,
+     "FC": 0.216,
+     "FS": 0.209,
+     "FF": 0.15,
+     "CU": 0.118,
+     "SL": 0.084
+    },
+    "mix_entropy": 2.5294279647067435,
+    "best_bits": 2.16312837600708,
+    "control_bits": 2.700906276702881,
+    "best_acc": 0.38323353293413176,
+    "control_acc": 0.22554890219560877,
+    "rv100": -0.8994510978043913,
+    "csw": 0.2465069860279441,
+    "whiff": 0.18502673796791444,
+    "xwoba": 0.4120441925414252,
+    "explained": 0.14481518897183987,
+    "gain_vs_control": 0.5377779006958008
+   },
+   {
+    "pitcher": 621111,
+    "name": "Walker Buehler",
+    "season": 2025,
+    "throws": "R",
+    "n": 2189,
+    "pitch_types": 7,
+    "mix": {
+     "FF": 0.253,
+     "FC": 0.169,
+     "SI": 0.164,
+     "SL": 0.148,
+     "KC": 0.129,
+     "ST": 0.069,
+     "CH": 0.069
+    },
+    "mix_entropy": 2.682275810821043,
+    "best_bits": 2.195124626159668,
+    "control_bits": 2.907282590866089,
+    "best_acc": 0.35587026039287345,
+    "control_acc": 0.25308359981726813,
+    "rv100": -0.5770671539515763,
+    "csw": 0.24805847418912746,
+    "whiff": 0.1750255885363357,
+    "xwoba": 0.37576358546496996,
+    "explained": 0.1816186026418582,
+    "gain_vs_control": 0.7121579647064209
+   },
+   {
+    "pitcher": 621244,
+    "name": "Jos\u00e9 Berr\u00edos",
+    "season": 2025,
+    "throws": "R",
+    "n": 2583,
+    "pitch_types": 5,
+    "mix": {
+     "SI": 0.336,
+     "SV": 0.259,
+     "FF": 0.179,
+     "CH": 0.168,
+     "FC": 0.058
+    },
+    "mix_entropy": 2.1479298600135377,
+    "best_bits": 1.930972933769226,
+    "control_bits": 2.1645073890686035,
+    "best_acc": 0.40185830429732866,
+    "control_acc": 0.3604336043360434,
+    "rv100": -0.22388695315524595,
+    "csw": 0.26519550909794815,
+    "whiff": 0.1991596638655462,
+    "xwoba": 0.38655448303607737,
+    "explained": 0.10100745386674043,
+    "gain_vs_control": 0.23353445529937744
+   },
+   {
+    "pitcher": 622491,
+    "name": "Luis Castillo",
+    "season": 2025,
+    "throws": "R",
+    "n": 2988,
+    "pitch_types": 4,
+    "mix": {
+     "FF": 0.463,
+     "SI": 0.22,
+     "SL": 0.204,
+     "CH": 0.114
+    },
+    "mix_entropy": 1.8191185710314155,
+    "best_bits": 1.6336100101470947,
+    "control_bits": 1.81981360912323,
+    "best_acc": 0.47757697456492637,
+    "control_acc": 0.46285140562248994,
+    "rv100": 0.2880187416331997,
+    "csw": 0.25100401606425704,
+    "whiff": 0.2225827384815055,
+    "xwoba": 0.36941007412723703,
+    "explained": 0.10197716841466796,
+    "gain_vs_control": 0.18620359897613525
+   },
+   {
+    "pitcher": 622608,
+    "name": "Antonio Senzatela",
+    "season": 2025,
+    "throws": "R",
+    "n": 2284,
+    "pitch_types": 4,
+    "mix": {
+     "FF": 0.569,
+     "SL": 0.18,
+     "CU": 0.148,
+     "CH": 0.079
+    },
+    "mix_entropy": 1.7519135480273755,
+    "best_bits": 1.4707951545715332,
+    "control_bits": 1.836803913116455,
+    "best_acc": 0.5875656742556917,
+    "control_acc": 0.568739054290718,
+    "rv100": -1.7936514886164627,
+    "csw": 0.22416812609457093,
+    "whiff": 0.16322701688555347,
+    "xwoba": 0.42131599138353054,
+    "explained": 0.16046362206193154,
+    "gain_vs_control": 0.3660087585449219
+   },
+   {
+    "pitcher": 622663,
+    "name": "Luis Severino",
+    "season": 2025,
+    "throws": "R",
+    "n": 2731,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.28,
+     "ST": 0.248,
+     "SI": 0.202,
+     "FC": 0.176,
+     "CH": 0.054,
+     "SL": 0.04
+    },
+    "mix_entropy": 2.3327760764941337,
+    "best_bits": 2.082176685333252,
+    "control_bits": 2.5382070541381836,
+    "best_acc": 0.38191138777004763,
+    "control_acc": 0.28011717319663126,
+    "rv100": -0.06298059318930807,
+    "csw": 0.23288172830465032,
+    "whiff": 0.1541440743609605,
+    "xwoba": 0.36419124525371194,
+    "explained": 0.10742539487009005,
+    "gain_vs_control": 0.45603036880493164
+   },
+   {
+    "pitcher": 624133,
+    "name": "Ranger Suarez",
+    "season": 2025,
+    "throws": "L",
+    "n": 2430,
+    "pitch_types": 6,
+    "mix": {
+     "SI": 0.286,
+     "CH": 0.191,
+     "FC": 0.176,
+     "CU": 0.161,
+     "FF": 0.145,
+     "SL": 0.041
+    },
+    "mix_entropy": 2.4308667325701663,
+    "best_bits": 2.0440094470977783,
+    "control_bits": 2.406949758529663,
+    "best_acc": 0.3897119341563786,
+    "control_acc": 0.302880658436214,
+    "rv100": 0.68320987654321,
+    "csw": 0.27283950617283953,
+    "whiff": 0.2,
+    "xwoba": 0.32937165694018156,
+    "explained": 0.1591437655915271,
+    "gain_vs_control": 0.36294031143188477
+   },
+   {
+    "pitcher": 641793,
+    "name": "Zack Littell",
+    "season": 2025,
+    "throws": "R",
+    "n": 2788,
+    "pitch_types": 5,
+    "mix": {
+     "SL": 0.275,
+     "FS": 0.273,
+     "FF": 0.239,
+     "SI": 0.158,
+     "ST": 0.054
+    },
+    "mix_entropy": 2.165170413899583,
+    "best_bits": 1.9133472442626953,
+    "control_bits": 2.1410984992980957,
+    "best_acc": 0.4185796269727403,
+    "control_acc": 0.3127690100430416,
+    "rv100": -0.03332137733142047,
+    "csw": 0.2460545193687231,
+    "whiff": 0.18213296398891968,
+    "xwoba": 0.36991705141013037,
+    "explained": 0.11630639695622902,
+    "gain_vs_control": 0.2277512550354004
+   },
+   {
+    "pitcher": 641927,
+    "name": "Bailey Ober",
+    "season": 2025,
+    "throws": "R",
+    "n": 2356,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.359,
+     "CH": 0.289,
+     "SL": 0.177,
+     "ST": 0.107,
+     "CU": 0.035,
+     "SI": 0.032
+    },
+    "mix_entropy": 2.164839923672501,
+    "best_bits": 1.9697332382202148,
+    "control_bits": 2.217423677444458,
+    "best_acc": 0.40704584040747027,
+    "control_acc": 0.35908319185059423,
+    "rv100": -0.7058998302207131,
+    "csw": 0.26867572156196945,
+    "whiff": 0.2280557834290402,
+    "xwoba": 0.37675056774919724,
+    "explained": 0.09012522511193395,
+    "gain_vs_control": 0.24769043922424316
+   },
+   {
+    "pitcher": 642547,
+    "name": "Freddy Peralta",
+    "season": 2025,
+    "throws": "R",
+    "n": 3086,
+    "pitch_types": 4,
+    "mix": {
+     "FF": 0.535,
+     "CH": 0.212,
+     "CU": 0.151,
+     "SL": 0.091
+    },
+    "mix_entropy": 1.7542821458989306,
+    "best_bits": 1.558465600013733,
+    "control_bits": 1.8736506700515747,
+    "best_acc": 0.5401814646791964,
+    "control_acc": 0.5349967595593,
+    "rv100": 0.8455605962410888,
+    "csw": 0.27738172391445237,
+    "whiff": 0.2766251728907331,
+    "xwoba": 0.353081271812379,
+    "explained": 0.11162203659369584,
+    "gain_vs_control": 0.3151850700378418
+   },
+   {
+    "pitcher": 645261,
+    "name": "Sandy Alcantara",
+    "season": 2025,
+    "throws": "R",
+    "n": 2891,
+    "pitch_types": 5,
+    "mix": {
+     "SI": 0.258,
+     "CH": 0.232,
+     "FF": 0.171,
+     "SL": 0.171,
+     "FC": 0.167
+    },
+    "mix_entropy": 2.2965537695472564,
+    "best_bits": 2.081657648086548,
+    "control_bits": 2.4511477947235107,
+    "best_acc": 0.37668626772742997,
+    "control_acc": 0.32099619508820476,
+    "rv100": 0.09266689726738152,
+    "csw": 0.2580421999308198,
+    "whiff": 0.1892458100558659,
+    "xwoba": 0.3749688681491655,
+    "explained": 0.09357330288115714,
+    "gain_vs_control": 0.3694901466369629
+   },
+   {
+    "pitcher": 650911,
+    "name": "Cristopher S\u00e1nchez",
+    "season": 2025,
+    "throws": "L",
+    "n": 2896,
+    "pitch_types": 3,
+    "mix": {
+     "SI": 0.46,
+     "CH": 0.374,
+     "SL": 0.166
+    },
+    "mix_entropy": 1.4757819949358963,
+    "best_bits": 1.2809091806411743,
+    "control_bits": 1.4011268615722656,
+    "best_acc": 0.5683701657458563,
+    "control_acc": 0.5459254143646409,
+    "rv100": 1.2852900552486188,
+    "csw": 0.3159530386740331,
+    "whiff": 0.2847173761339846,
+    "xwoba": 0.339720511696705,
+    "explained": 0.13204715531387598,
+    "gain_vs_control": 0.12021768093109131
+   },
+   {
+    "pitcher": 656302,
+    "name": "Dylan Cease",
+    "season": 2025,
+    "throws": "R",
+    "n": 3044,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.421,
+     "SL": 0.408,
+     "KC": 0.083,
+     "SI": 0.039,
+     "ST": 0.035
+    },
+    "mix_entropy": 1.7834068084966763,
+    "best_bits": 1.5182697772979736,
+    "control_bits": 1.8611397743225098,
+    "best_acc": 0.5400788436268068,
+    "control_acc": 0.44218134034165574,
+    "rv100": 0.056340341655716136,
+    "csw": 0.2959921156373193,
+    "whiff": 0.3170894526034713,
+    "xwoba": 0.36628248412170356,
+    "explained": 0.1486688454566348,
+    "gain_vs_control": 0.34286999702453613
+   },
+   {
+    "pitcher": 656427,
+    "name": "Jack Flaherty",
+    "season": 2025,
+    "throws": "R",
+    "n": 2831,
+    "pitch_types": 3,
+    "mix": {
+     "FF": 0.469,
+     "KC": 0.254,
+     "SL": 0.236
+    },
+    "mix_entropy": 1.7359006070498597,
+    "best_bits": 1.6345417499542236,
+    "control_bits": 1.7434217929840088,
+    "best_acc": 0.48534086895090073,
+    "control_acc": 0.468738961497704,
+    "rv100": -0.058883786647827535,
+    "csw": 0.29424231720240196,
+    "whiff": 0.25077399380804954,
+    "xwoba": 0.3892843017976149,
+    "explained": 0.058389781467899894,
+    "gain_vs_control": 0.10888004302978516
+   },
+   {
+    "pitcher": 656605,
+    "name": "Mitch Keller",
+    "season": 2025,
+    "throws": "R",
+    "n": 2870,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.348,
+     "ST": 0.191,
+     "SI": 0.178,
+     "SL": 0.14,
+     "CU": 0.073,
+     "CH": 0.07
+    },
+    "mix_entropy": 2.379578065338106,
+    "best_bits": 2.03872013092041,
+    "control_bits": 2.6282858848571777,
+    "best_acc": 0.41846689895470385,
+    "control_acc": 0.3480836236933798,
+    "rv100": 0.051567944250871044,
+    "csw": 0.25749128919860625,
+    "whiff": 0.18318965517241378,
+    "xwoba": 0.37482744121097056,
+    "explained": 0.1432430141220286,
+    "gain_vs_control": 0.5895657539367676
+   },
+   {
+    "pitcher": 656849,
+    "name": "David Peterson",
+    "season": 2025,
+    "throws": "L",
+    "n": 2699,
+    "pitch_types": 5,
+    "mix": {
+     "SI": 0.296,
+     "FF": 0.223,
+     "SL": 0.191,
+     "CH": 0.153,
+     "CU": 0.137
+    },
+    "mix_entropy": 2.266132700440507,
+    "best_bits": 1.995208740234375,
+    "control_bits": 2.219463586807251,
+    "best_acc": 0.4138569840681734,
+    "control_acc": 0.3379029270100037,
+    "rv100": 0.22889959244164498,
+    "csw": 0.2793627269359022,
+    "whiff": 0.22345483359746435,
+    "xwoba": 0.3788420660355952,
+    "explained": 0.11955344016414751,
+    "gain_vs_control": 0.22425484657287598
+   },
+   {
+    "pitcher": 656876,
+    "name": "Drew Rasmussen",
+    "season": 2025,
+    "throws": "R",
+    "n": 2316,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.352,
+     "FC": 0.314,
+     "SI": 0.229,
+     "ST": 0.047,
+     "CU": 0.043
+    },
+    "mix_entropy": 2.0403119442193693,
+    "best_bits": 1.705302119255066,
+    "control_bits": 2.2059295177459717,
+    "best_acc": 0.48229706390328153,
+    "control_acc": 0.36139896373056996,
+    "rv100": 1.0596286701208983,
+    "csw": 0.26338514680483593,
+    "whiff": 0.19449378330373002,
+    "xwoba": 0.33988834070622154,
+    "explained": 0.16419539468631567,
+    "gain_vs_control": 0.5006273984909058
+   },
+   {
+    "pitcher": 657277,
+    "name": "Logan Webb",
+    "season": 2025,
+    "throws": "R",
+    "n": 3282,
+    "pitch_types": 5,
+    "mix": {
+     "SI": 0.336,
+     "ST": 0.266,
+     "CH": 0.241,
+     "FF": 0.079,
+     "FC": 0.078
+    },
+    "mix_entropy": 2.1066890057888927,
+    "best_bits": 1.8414310216903687,
+    "control_bits": 2.117121458053589,
+    "best_acc": 0.4357099329677026,
+    "control_acc": 0.33942717854966487,
+    "rv100": 0.374558196221816,
+    "csw": 0.30408287629494213,
+    "whiff": 0.23071852340145024,
+    "xwoba": 0.37423205749810445,
+    "explained": 0.12591226487138418,
+    "gain_vs_control": 0.2756904363632202
+   },
+   {
+    "pitcher": 657746,
+    "name": "Joe Ryan",
+    "season": 2025,
+    "throws": "R",
+    "n": 2794,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.503,
+     "ST": 0.131,
+     "SI": 0.124,
+     "FS": 0.111,
+     "SL": 0.092,
+     "KC": 0.039
+    },
+    "mix_entropy": 2.1086050034057884,
+    "best_bits": 1.8736708164215088,
+    "control_bits": 2.368513345718384,
+    "best_acc": 0.5078740157480315,
+    "control_acc": 0.5025053686471009,
+    "rv100": 0.2739441660701502,
+    "csw": 0.27487473156764497,
+    "whiff": 0.2339812814974802,
+    "xwoba": 0.3683619882296882,
+    "explained": 0.11141687827014414,
+    "gain_vs_control": 0.494842529296875
+   },
+   {
+    "pitcher": 663436,
+    "name": "Davis Martin",
+    "season": 2025,
+    "throws": "R",
+    "n": 2307,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.327,
+     "CH": 0.244,
+     "SL": 0.215,
+     "SI": 0.105,
+     "CU": 0.048,
+     "ST": 0.042
+    },
+    "mix_entropy": 2.3498242817103066,
+    "best_bits": 1.9170031547546387,
+    "control_bits": 2.496361017227173,
+    "best_acc": 0.4312960554833117,
+    "control_acc": 0.3242306025140876,
+    "rv100": -0.3853489380147376,
+    "csw": 0.235370611183355,
+    "whiff": 0.19281332164767748,
+    "xwoba": 0.3872811265496022,
+    "explained": 0.18419297575759214,
+    "gain_vs_control": 0.5793578624725342
+   },
+   {
+    "pitcher": 663554,
+    "name": "Casey Mize",
+    "season": 2025,
+    "throws": "R",
+    "n": 2353,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.336,
+     "FS": 0.242,
+     "SL": 0.163,
+     "SV": 0.133,
+     "SI": 0.126
+    },
+    "mix_entropy": 2.214729149832018,
+    "best_bits": 1.8751639127731323,
+    "control_bits": 2.4501333236694336,
+    "best_acc": 0.3960900977475563,
+    "control_acc": 0.3263918402039949,
+    "rv100": -0.42396940076498085,
+    "csw": 0.27156821079473015,
+    "whiff": 0.21936589545844046,
+    "xwoba": 0.3567542972002721,
+    "explained": 0.15332133822532698,
+    "gain_vs_control": 0.5749694108963013
+   },
+   {
+    "pitcher": 663623,
+    "name": "Jake Irvin",
+    "season": 2025,
+    "throws": "R",
+    "n": 2944,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.32,
+     "CU": 0.296,
+     "SI": 0.221,
+     "CH": 0.077,
+     "FC": 0.044,
+     "SL": 0.041
+    },
+    "mix_entropy": 2.201425206395488,
+    "best_bits": 1.9014443159103394,
+    "control_bits": 2.245565176010132,
+    "best_acc": 0.45108695652173914,
+    "control_acc": 0.32235054347826086,
+    "rv100": -1.001766304347826,
+    "csw": 0.2554347826086957,
+    "whiff": 0.1655773420479303,
+    "xwoba": 0.39655690960841106,
+    "explained": 0.1362666737955289,
+    "gain_vs_control": 0.3441208600997925
+   },
+   {
+    "pitcher": 663903,
+    "name": "Brady Singer",
+    "season": 2025,
+    "throws": "R",
+    "n": 2850,
+    "pitch_types": 5,
+    "mix": {
+     "SI": 0.406,
+     "SL": 0.284,
+     "ST": 0.111,
+     "FF": 0.107,
+     "FC": 0.093
+    },
+    "mix_entropy": 2.05785015533783,
+    "best_bits": 1.8987959623336792,
+    "control_bits": 2.4627604484558105,
+    "best_acc": 0.4192982456140351,
+    "control_acc": 0.4129824561403509,
+    "rv100": -0.011929824561403379,
+    "csw": 0.27614035087719296,
+    "whiff": 0.2175632911392405,
+    "xwoba": 0.37047047393188093,
+    "explained": 0.07729143572071182,
+    "gain_vs_control": 0.5639644861221313
+   },
+   {
+    "pitcher": 663978,
+    "name": "Chris Paddack",
+    "season": 2025,
+    "throws": "R",
+    "n": 2565,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.432,
+     "CH": 0.235,
+     "FC": 0.139,
+     "CU": 0.119,
+     "SI": 0.052
+    },
+    "mix_entropy": 2.1199295235291222,
+    "best_bits": 1.8886357545852661,
+    "control_bits": 2.393911838531494,
+    "best_acc": 0.4401559454191033,
+    "control_acc": 0.4323586744639376,
+    "rv100": -0.5072124756335282,
+    "csw": 0.23079922027290448,
+    "whiff": 0.18161094224924013,
+    "xwoba": 0.3912412753497677,
+    "explained": 0.10910446143455427,
+    "gain_vs_control": 0.505276083946228
+   },
+   {
+    "pitcher": 664285,
+    "name": "Framber Valdez",
+    "season": 2025,
+    "throws": "L",
+    "n": 2891,
+    "pitch_types": 4,
+    "mix": {
+     "SI": 0.457,
+     "CU": 0.331,
+     "CH": 0.179,
+     "SL": 0.031
+    },
+    "mix_entropy": 1.661311590521143,
+    "best_bits": 1.4189393520355225,
+    "control_bits": 1.596894383430481,
+    "best_acc": 0.5620892424766517,
+    "control_acc": 0.5364925631269457,
+    "rv100": 0.2570044967139399,
+    "csw": 0.28709789000345903,
+    "whiff": 0.2452415812591508,
+    "xwoba": 0.35348126052831674,
+    "explained": 0.1458921010775528,
+    "gain_vs_control": 0.1779550313949585
+   },
+   {
+    "pitcher": 665152,
+    "name": "Dean Kremer",
+    "season": 2025,
+    "throws": "R",
+    "n": 2692,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.265,
+     "FS": 0.211,
+     "SL": 0.203,
+     "SI": 0.194,
+     "CU": 0.128
+    },
+    "mix_entropy": 2.286010153307948,
+    "best_bits": 1.8875999450683594,
+    "control_bits": 2.5240700244903564,
+    "best_acc": 0.4323922734026746,
+    "control_acc": 0.26448736998514116,
+    "rv100": 0.148922734026746,
+    "csw": 0.2659732540861813,
+    "whiff": 0.21255673222390317,
+    "xwoba": 0.3531265934800175,
+    "explained": 0.17428190669366594,
+    "gain_vs_control": 0.6364700794219971
+   },
+   {
+    "pitcher": 665795,
+    "name": "Edward Cabrera",
+    "season": 2025,
+    "throws": "R",
+    "n": 2252,
+    "pitch_types": 5,
+    "mix": {
+     "CH": 0.258,
+     "CU": 0.236,
+     "SI": 0.204,
+     "SL": 0.173,
+     "FF": 0.13
+    },
+    "mix_entropy": 2.2833384699786867,
+    "best_bits": 2.095151424407959,
+    "control_bits": 2.3408145904541016,
+    "best_acc": 0.35968028419182946,
+    "control_acc": 0.2508880994671403,
+    "rv100": 0.10239786856127894,
+    "csw": 0.30683836589698044,
+    "whiff": 0.2788177339901478,
+    "xwoba": 0.37820785904935467,
+    "explained": 0.08241749878303602,
+    "gain_vs_control": 0.24566316604614258
+   },
+   {
+    "pitcher": 666157,
+    "name": "Nick Lodolo",
+    "season": 2025,
+    "throws": "L",
+    "n": 2478,
+    "pitch_types": 4,
+    "mix": {
+     "CU": 0.287,
+     "FF": 0.278,
+     "SI": 0.218,
+     "CH": 0.217
+    },
+    "mix_entropy": 1.9876835873804832,
+    "best_bits": 1.7471790313720703,
+    "control_bits": 1.9499775171279907,
+    "best_acc": 0.4132364810330912,
+    "control_acc": 0.341000807102502,
+    "rv100": 0.20742534301856336,
+    "csw": 0.2845036319612591,
+    "whiff": 0.24838709677419354,
+    "xwoba": 0.35557389271610035,
+    "explained": 0.12099740498706217,
+    "gain_vs_control": 0.2027984857559204
+   },
+   {
+    "pitcher": 666200,
+    "name": "Jes\u00fas Luzardo",
+    "season": 2025,
+    "throws": "L",
+    "n": 3013,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.333,
+     "ST": 0.321,
+     "CH": 0.173,
+     "SI": 0.108,
+     "SL": 0.065
+    },
+    "mix_entropy": 2.096114784704966,
+    "best_bits": 1.7408194541931152,
+    "control_bits": 2.7824130058288574,
+    "best_acc": 0.46564885496183206,
+    "control_acc": 0.3016926651178228,
+    "rv100": 0.5956189844009292,
+    "csw": 0.30667109193494857,
+    "whiff": 0.28402777777777777,
+    "xwoba": 0.36224380346790286,
+    "explained": 0.16950184842184562,
+    "gain_vs_control": 1.0415935516357422
+   },
+   {
+    "pitcher": 667755,
+    "name": "Jos\u00e9 Soriano",
+    "season": 2025,
+    "throws": "R",
+    "n": 2784,
+    "pitch_types": 5,
+    "mix": {
+     "SI": 0.491,
+     "KC": 0.267,
+     "FS": 0.092,
+     "FF": 0.086,
+     "SL": 0.06
+    },
+    "mix_entropy": 1.9065888668806283,
+    "best_bits": 1.6148513555526733,
+    "control_bits": 1.8431119918823242,
+    "best_acc": 0.5222701149425287,
+    "control_acc": 0.4892241379310345,
+    "rv100": 0.027837643678160818,
+    "csw": 0.27873563218390807,
+    "whiff": 0.2536115569823435,
+    "xwoba": 0.3440826204449411,
+    "explained": 0.15301542791722422,
+    "gain_vs_control": 0.22826063632965088
+   },
+   {
+    "pitcher": 668678,
+    "name": "Zac Gallen",
+    "season": 2025,
+    "throws": "R",
+    "n": 3134,
+    "pitch_types": 4,
+    "mix": {
+     "FF": 0.45,
+     "KC": 0.235,
+     "CH": 0.16,
+     "SL": 0.13
+    },
+    "mix_entropy": 1.9547420026967623,
+    "best_bits": 1.723221778869629,
+    "control_bits": 2.150193452835083,
+    "best_acc": 0.4738353541799617,
+    "control_acc": 0.4406509253350351,
+    "rv100": -0.17332482450542436,
+    "csw": 0.2763241863433312,
+    "whiff": 0.21179815209665956,
+    "xwoba": 0.3739511796333735,
+    "explained": 0.11844029724011051,
+    "gain_vs_control": 0.4269716739654541
+   },
+   {
+    "pitcher": 668909,
+    "name": "Gavin Williams",
+    "season": 2025,
+    "throws": "R",
+    "n": 2925,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.373,
+     "KC": 0.22,
+     "ST": 0.199,
+     "FC": 0.141,
+     "SI": 0.066
+    },
+    "mix_entropy": 2.138570125288341,
+    "best_bits": 1.7059504985809326,
+    "control_bits": 2.528425931930542,
+    "best_acc": 0.46803418803418806,
+    "control_acc": 0.37333333333333335,
+    "rv100": 0.2708717948717948,
+    "csw": 0.27623931623931625,
+    "whiff": 0.25654450261780104,
+    "xwoba": 0.37378053431513414,
+    "explained": 0.2022938699048173,
+    "gain_vs_control": 0.8224754333496094
+   },
+   {
+    "pitcher": 669022,
+    "name": "MacKenzie Gore",
+    "season": 2025,
+    "throws": "L",
+    "n": 2818,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.493,
+     "CU": 0.24,
+     "SL": 0.12,
+     "CH": 0.103,
+     "FC": 0.045
+    },
+    "mix_entropy": 1.9035907951233408,
+    "best_bits": 1.5277814865112305,
+    "control_bits": 1.8797532320022583,
+    "best_acc": 0.5195173882185947,
+    "control_acc": 0.49254790631653655,
+    "rv100": 0.013697657913413777,
+    "csw": 0.27146912704045423,
+    "whiff": 0.27462257368799425,
+    "xwoba": 0.40286032310365305,
+    "explained": 0.1974212680450371,
+    "gain_vs_control": 0.35197174549102783
+   },
+   {
+    "pitcher": 669160,
+    "name": "Dustin May",
+    "season": 2025,
+    "throws": "R",
+    "n": 2169,
+    "pitch_types": 4,
+    "mix": {
+     "ST": 0.393,
+     "SI": 0.335,
+     "FF": 0.166,
+     "FC": 0.097
+    },
+    "mix_entropy": 1.8721505660926694,
+    "best_bits": 1.5849169492721558,
+    "control_bits": 1.9702609777450562,
+    "best_acc": 0.5062240663900415,
+    "control_acc": 0.42784693407100044,
+    "rv100": -0.45712309820193636,
+    "csw": 0.2669432918395574,
+    "whiff": 0.18126272912423624,
+    "xwoba": 0.40038137596337176,
+    "explained": 0.15342442110304919,
+    "gain_vs_control": 0.3853440284729004
+   },
+   {
+    "pitcher": 669194,
+    "name": "Ryne Nelson",
+    "season": 2025,
+    "throws": "R",
+    "n": 2466,
+    "pitch_types": 4,
+    "mix": {
+     "FF": 0.619,
+     "SL": 0.143,
+     "CU": 0.109,
+     "FC": 0.101
+    },
+    "mix_entropy": 1.6577336999243133,
+    "best_bits": 1.423927664756775,
+    "control_bits": 1.7501800060272217,
+    "best_acc": 0.6115166261151662,
+    "control_acc": 0.6188158961881589,
+    "rv100": 0.7777777777777778,
+    "csw": 0.24493106244931062,
+    "whiff": 0.18760064412238325,
+    "xwoba": 0.3606548611634865,
+    "explained": 0.14103956213124774,
+    "gain_vs_control": 0.3262523412704468
+   },
+   {
+    "pitcher": 669302,
+    "name": "Logan Gilbert",
+    "season": 2025,
+    "throws": "R",
+    "n": 2156,
+    "pitch_types": 4,
+    "mix": {
+     "FF": 0.369,
+     "SL": 0.353,
+     "FS": 0.196,
+     "ST": 0.075
+    },
+    "mix_entropy": 1.8566095087796466,
+    "best_bits": 1.4883267879486084,
+    "control_bits": 1.9564836025238037,
+    "best_acc": 0.5426716141001855,
+    "control_acc": 0.3807977736549165,
+    "rv100": 0.4378478664192951,
+    "csw": 0.3079777365491651,
+    "whiff": 0.30517711171662126,
+    "xwoba": 0.3723851789622453,
+    "explained": 0.19836304785119366,
+    "gain_vs_control": 0.4681568145751953
+   },
+   {
+    "pitcher": 669358,
+    "name": "Shane Baz",
+    "season": 2025,
+    "throws": "R",
+    "n": 2718,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.439,
+     "KC": 0.269,
+     "FC": 0.147,
+     "CH": 0.114,
+     "SL": 0.03
+    },
+    "mix_entropy": 1.9479576490710708,
+    "best_bits": 1.5399569272994995,
+    "control_bits": 2.135697364807129,
+    "best_acc": 0.49852832965415744,
+    "control_acc": 0.4392935982339956,
+    "rv100": -0.3144223693892568,
+    "csw": 0.27704194260485654,
+    "whiff": 0.23802395209580837,
+    "xwoba": 0.3605335065422636,
+    "explained": 0.20945050934045512,
+    "gain_vs_control": 0.5957404375076294
+   },
+   {
+    "pitcher": 669373,
+    "name": "Tarik Skubal",
+    "season": 2025,
+    "throws": "L",
+    "n": 2849,
+    "pitch_types": 4,
+    "mix": {
+     "CH": 0.314,
+     "FF": 0.293,
+     "SI": 0.239,
+     "SL": 0.125
+    },
+    "mix_entropy": 2.0660266876889293,
+    "best_bits": 1.8785592317581177,
+    "control_bits": 2.1137261390686035,
+    "best_acc": 0.4282204282204282,
+    "control_acc": 0.30256230256230254,
+    "rv100": 1.8012285012285014,
+    "csw": 0.32151632151632153,
+    "whiff": 0.3036515054452274,
+    "xwoba": 0.3557417552692525,
+    "explained": 0.09073815795695936,
+    "gain_vs_control": 0.23516690731048584
+   },
+   {
+    "pitcher": 669461,
+    "name": "Matthew Liberatore",
+    "season": 2025,
+    "throws": "L",
+    "n": 2386,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.287,
+     "SL": 0.212,
+     "CU": 0.158,
+     "CH": 0.122,
+     "SI": 0.118,
+     "FC": 0.104
+    },
+    "mix_entropy": 2.4844418302298457,
+    "best_bits": 2.158487558364868,
+    "control_bits": 2.4271435737609863,
+    "best_acc": 0.38725901089689857,
+    "control_acc": 0.29798826487845764,
+    "rv100": -0.1359597652975692,
+    "csw": 0.2585917854149204,
+    "whiff": 0.18592528236316247,
+    "xwoba": 0.39310878779822706,
+    "explained": 0.13119819023286294,
+    "gain_vs_control": 0.26865601539611816
+   },
+   {
+    "pitcher": 669467,
+    "name": "Andre Pallante",
+    "season": 2025,
+    "throws": "R",
+    "n": 2720,
+    "pitch_types": 4,
+    "mix": {
+     "FF": 0.441,
+     "SL": 0.285,
+     "KC": 0.14,
+     "SI": 0.133
+    },
+    "mix_entropy": 1.832712408108656,
+    "best_bits": 1.512357473373413,
+    "control_bits": 1.9145175218582153,
+    "best_acc": 0.5213235294117647,
+    "control_acc": 0.44080882352941175,
+    "rv100": -0.3645588235294117,
+    "csw": 0.24558823529411763,
+    "whiff": 0.20896717373899118,
+    "xwoba": 0.3409317836542473,
+    "explained": 0.17479825711762745,
+    "gain_vs_control": 0.40216004848480225
+   },
+   {
+    "pitcher": 669923,
+    "name": "George Kirby",
+    "season": 2025,
+    "throws": "R",
+    "n": 2086,
+    "pitch_types": 4,
+    "mix": {
+     "FF": 0.288,
+     "ST": 0.282,
+     "SI": 0.268,
+     "KC": 0.113
+    },
+    "mix_entropy": 2.157919342469679,
+    "best_bits": 1.8611129522323608,
+    "control_bits": 2.2166454792022705,
+    "best_acc": 0.41083413231064236,
+    "control_acc": 0.2914669223394056,
+    "rv100": 0.2917545541706615,
+    "csw": 0.2799616490891659,
+    "whiff": 0.24144672531769307,
+    "xwoba": 0.38562727114315065,
+    "explained": 0.1375428563968621,
+    "gain_vs_control": 0.35553252696990967
+   },
+   {
+    "pitcher": 671096,
+    "name": "Andrew Abbott",
+    "season": 2025,
+    "throws": "L",
+    "n": 2677,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.472,
+     "CH": 0.196,
+     "ST": 0.174,
+     "CU": 0.115,
+     "FC": 0.043
+    },
+    "mix_entropy": 1.9652167502033775,
+    "best_bits": 1.6516542434692383,
+    "control_bits": 1.9898693561553955,
+    "best_acc": 0.5102726933134105,
+    "control_acc": 0.4717967874486365,
+    "rv100": 0.6342547627941726,
+    "csw": 0.27269331341053415,
+    "whiff": 0.2210604929051531,
+    "xwoba": 0.3465915010077323,
+    "explained": 0.15955619485824607,
+    "gain_vs_control": 0.3382151126861572
+   },
+   {
+    "pitcher": 671106,
+    "name": "Logan Allen",
+    "season": 2025,
+    "throws": "L",
+    "n": 2709,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.332,
+     "ST": 0.235,
+     "CH": 0.183,
+     "SI": 0.135,
+     "FC": 0.113
+    },
+    "mix_entropy": 2.227249673776562,
+    "best_bits": 1.9320355653762817,
+    "control_bits": 2.2345688343048096,
+    "best_acc": 0.40014765596160945,
+    "control_acc": 0.3303802141011443,
+    "rv100": -0.487153931339978,
+    "csw": 0.2528608342561831,
+    "whiff": 0.18,
+    "xwoba": 0.35677128083898146,
+    "explained": 0.1325464818228979,
+    "gain_vs_control": 0.30253326892852783
+   },
+   {
+    "pitcher": 671737,
+    "name": "Taj Bradley",
+    "season": 2025,
+    "throws": "R",
+    "n": 2272,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.386,
+     "FC": 0.226,
+     "FS": 0.151,
+     "CU": 0.147,
+     "SI": 0.089
+    },
+    "mix_entropy": 2.145168610057636,
+    "best_bits": 1.7563449144363403,
+    "control_bits": 2.2037384510040283,
+    "best_acc": 0.4920774647887324,
+    "control_acc": 0.3829225352112676,
+    "rv100": -0.17737676056338028,
+    "csw": 0.24867957746478872,
+    "whiff": 0.21559633027522937,
+    "xwoba": 0.3559297792303668,
+    "explained": 0.1812555403795736,
+    "gain_vs_control": 0.447393536567688
+   },
+   {
+    "pitcher": 675911,
+    "name": "Spencer Strider",
+    "season": 2025,
+    "throws": "R",
+    "n": 2110,
+    "pitch_types": 4,
+    "mix": {
+     "FF": 0.512,
+     "SL": 0.353,
+     "CU": 0.089,
+     "CH": 0.046
+    },
+    "mix_entropy": 1.53967684357887,
+    "best_bits": 1.3150516748428345,
+    "control_bits": 1.6506662368774414,
+    "best_acc": 0.5919431279620853,
+    "control_acc": 0.5123222748815166,
+    "rv100": -0.5590047393364929,
+    "csw": 0.27440758293838863,
+    "whiff": 0.29253731343283584,
+    "xwoba": 0.4084111455050917,
+    "explained": 0.1458911132377039,
+    "gain_vs_control": 0.33561456203460693
+   },
+   {
+    "pitcher": 676440,
+    "name": "Tanner Bibee",
+    "season": 2025,
+    "throws": "R",
+    "n": 2969,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.279,
+     "FC": 0.207,
+     "ST": 0.16,
+     "SI": 0.152,
+     "CH": 0.152,
+     "CU": 0.051
+    },
+    "mix_entropy": 2.451763600060936,
+    "best_bits": 2.1154801845550537,
+    "control_bits": 2.7595458030700684,
+    "best_acc": 0.3785786460087572,
+    "control_acc": 0.2785449646345571,
+    "rv100": 0.06018861569552036,
+    "csw": 0.27753452340855506,
+    "whiff": 0.21511627906976744,
+    "xwoba": 0.3397190993814932,
+    "explained": 0.1371598042721266,
+    "gain_vs_control": 0.6440656185150146
+   },
+   {
+    "pitcher": 676664,
+    "name": "JP Sears",
+    "season": 2025,
+    "throws": "L",
+    "n": 2366,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.401,
+     "ST": 0.27,
+     "CH": 0.15,
+     "SL": 0.068,
+     "SI": 0.068,
+     "CU": 0.036
+    },
+    "mix_entropy": 2.198144744724768,
+    "best_bits": 1.814178705215454,
+    "control_bits": 2.179520606994629,
+    "best_acc": 0.46491969568892644,
+    "control_acc": 0.4010989010989011,
+    "rv100": -0.6608199492814878,
+    "csw": 0.25359256128486896,
+    "whiff": 0.1851520572450805,
+    "xwoba": 0.369423896667111,
+    "explained": 0.17467732297009897,
+    "gain_vs_control": 0.3653419017791748
+   },
+   {
+    "pitcher": 676979,
+    "name": "Garrett Crochet",
+    "season": 2025,
+    "throws": "L",
+    "n": 3150,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.359,
+     "FC": 0.277,
+     "SI": 0.16,
+     "ST": 0.16,
+     "CH": 0.043
+    },
+    "mix_entropy": 2.087672479337407,
+    "best_bits": 1.7675483226776123,
+    "control_bits": 2.139899253845215,
+    "best_acc": 0.45206349206349206,
+    "control_acc": 0.3593650793650794,
+    "rv100": 1.0854285714285716,
+    "csw": 0.2914285714285714,
+    "whiff": 0.26670754138565295,
+    "xwoba": 0.35775354747875254,
+    "explained": 0.15334021970792897,
+    "gain_vs_control": 0.37235093116760254
+   },
+   {
+    "pitcher": 677944,
+    "name": "Slade Cecconi",
+    "season": 2025,
+    "throws": "R",
+    "n": 2063,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.436,
+     "SL": 0.182,
+     "CU": 0.165,
+     "SI": 0.11,
+     "CH": 0.075,
+     "FC": 0.031
+    },
+    "mix_entropy": 2.1991590324959356,
+    "best_bits": 1.8954670429229736,
+    "control_bits": 2.337632656097412,
+    "best_acc": 0.4629180804653417,
+    "control_acc": 0.4362578768783325,
+    "rv100": -0.26456616577799347,
+    "csw": 0.27290353853611243,
+    "whiff": 0.20520833333333333,
+    "xwoba": 0.40695238258183425,
+    "explained": 0.1380946012022999,
+    "gain_vs_control": 0.4421656131744385
+   },
+   {
+    "pitcher": 678394,
+    "name": "Brayan Bello",
+    "season": 2025,
+    "throws": "R",
+    "n": 2697,
+    "pitch_types": 5,
+    "mix": {
+     "SI": 0.35,
+     "ST": 0.19,
+     "FC": 0.157,
+     "CH": 0.152,
+     "FF": 0.151
+    },
+    "mix_entropy": 2.2300132552106215,
+    "best_bits": 1.8396174907684326,
+    "control_bits": 2.5220391750335693,
+    "best_acc": 0.45309603262884685,
+    "control_acc": 0.3559510567296997,
+    "rv100": 0.1414905450500556,
+    "csw": 0.24879495736002966,
+    "whiff": 0.18770226537216828,
+    "xwoba": 0.35463859846062723,
+    "explained": 0.17506432463125274,
+    "gain_vs_control": 0.6824216842651367
+   },
+   {
+    "pitcher": 680730,
+    "name": "Mitchell Parker",
+    "season": 2025,
+    "throws": "L",
+    "n": 2705,
+    "pitch_types": 4,
+    "mix": {
+     "FF": 0.555,
+     "CU": 0.22,
+     "SL": 0.121,
+     "FS": 0.105
+    },
+    "mix_entropy": 1.6610678810554091,
+    "best_bits": 1.347586989402771,
+    "control_bits": 1.6290651559829712,
+    "best_acc": 0.589279112754159,
+    "control_acc": 0.5548983364140481,
+    "rv100": -0.7258780036968576,
+    "csw": 0.24103512014787432,
+    "whiff": 0.18398268398268397,
+    "xwoba": 0.40202136629628465,
+    "explained": 0.1887225050992249,
+    "gain_vs_control": 0.2814781665802002
+   },
+   {
+    "pitcher": 680732,
+    "name": "Sean Burke",
+    "season": 2025,
+    "throws": "R",
+    "n": 2376,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.431,
+     "KC": 0.237,
+     "SL": 0.219,
+     "CH": 0.065,
+     "SI": 0.048
+    },
+    "mix_entropy": 1.963752661549273,
+    "best_bits": 1.675977110862732,
+    "control_bits": 1.952332615852356,
+    "best_acc": 0.4692760942760943,
+    "control_acc": 0.42676767676767674,
+    "rv100": -0.5909511784511784,
+    "csw": 0.2601010101010101,
+    "whiff": 0.22621184919210055,
+    "xwoba": 0.39632419876831915,
+    "explained": 0.14654368461021205,
+    "gain_vs_control": 0.276355504989624
+   },
+   {
+    "pitcher": 681190,
+    "name": "Randy V\u00e1squez",
+    "season": 2025,
+    "throws": "R",
+    "n": 2148,
+    "pitch_types": 6,
+    "mix": {
+     "FC": 0.249,
+     "FF": 0.21,
+     "SI": 0.19,
+     "ST": 0.131,
+     "CU": 0.128,
+     "CH": 0.069
+    },
+    "mix_entropy": 2.5782893619916827,
+    "best_bits": 2.093172073364258,
+    "control_bits": 2.5943188667297363,
+    "best_acc": 0.39059590316573556,
+    "control_acc": 0.21973929236499068,
+    "rv100": -0.05237430167597758,
+    "csw": 0.23743016759776536,
+    "whiff": 0.14543630892678033,
+    "xwoba": 0.3721633271549431,
+    "explained": 0.1881547105530003,
+    "gain_vs_control": 0.5011467933654785
+   },
+   {
+    "pitcher": 681343,
+    "name": "Shane Smith",
+    "season": 2025,
+    "throws": "R",
+    "n": 2419,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.45,
+     "CH": 0.168,
+     "CU": 0.146,
+     "SI": 0.124,
+     "SL": 0.111
+    },
+    "mix_entropy": 2.092798081760731,
+    "best_bits": 1.793289303779602,
+    "control_bits": 2.0824639797210693,
+    "best_acc": 0.4667217858619264,
+    "control_acc": 0.45018602728400164,
+    "rv100": 0.2487391484084332,
+    "csw": 0.270773046713518,
+    "whiff": 0.25,
+    "xwoba": 0.3559312886724766,
+    "explained": 0.14311403502871306,
+    "gain_vs_control": 0.2891746759414673
+   },
+   {
+    "pitcher": 682990,
+    "name": "Quinn Priester",
+    "season": 2025,
+    "throws": "R",
+    "n": 2468,
+    "pitch_types": 4,
+    "mix": {
+     "SI": 0.417,
+     "SL": 0.269,
+     "FC": 0.206,
+     "CU": 0.093
+    },
+    "mix_entropy": 1.9151066033090658,
+    "best_bits": 1.727818250656128,
+    "control_bits": 2.2346298694610596,
+    "best_acc": 0.4497568881685575,
+    "control_acc": 0.42098865478119935,
+    "rv100": 0.22216369529983787,
+    "csw": 0.2698541329011345,
+    "whiff": 0.2247585601404741,
+    "xwoba": 0.33490919700948213,
+    "explained": 0.0977952623260381,
+    "gain_vs_control": 0.5068116188049316
+   },
+   {
+    "pitcher": 683004,
+    "name": "Jack Leiter",
+    "season": 2025,
+    "throws": "R",
+    "n": 2583,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.388,
+     "SL": 0.233,
+     "CH": 0.165,
+     "SI": 0.12,
+     "CU": 0.094
+    },
+    "mix_entropy": 2.1371868236965,
+    "best_bits": 1.8198397159576416,
+    "control_bits": 2.156376600265503,
+    "best_acc": 0.4634146341463415,
+    "control_acc": 0.3859852884243128,
+    "rv100": 0.2751451800232288,
+    "csw": 0.25551684088269455,
+    "whiff": 0.22168284789644013,
+    "xwoba": 0.3774560281751624,
+    "explained": 0.14848823894111968,
+    "gain_vs_control": 0.33653688430786133
+   },
+   {
+    "pitcher": 684007,
+    "name": "Shota Imanaga",
+    "season": 2025,
+    "throws": "L",
+    "n": 2176,
+    "pitch_types": 3,
+    "mix": {
+     "FF": 0.487,
+     "FS": 0.314,
+     "ST": 0.165
+    },
+    "mix_entropy": 1.6773629549967712,
+    "best_bits": 1.4207850694656372,
+    "control_bits": 1.7146214246749878,
+    "best_acc": 0.5257352941176471,
+    "control_acc": 0.48483455882352944,
+    "rv100": 0.2616727941176472,
+    "csw": 0.25827205882352944,
+    "whiff": 0.2228864218616567,
+    "xwoba": 0.3757390638511519,
+    "explained": 0.1529650364381798,
+    "gain_vs_control": 0.2938363552093506
+   },
+   {
+    "pitcher": 686613,
+    "name": "Hunter Brown",
+    "season": 2025,
+    "throws": "R",
+    "n": 2962,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.375,
+     "SI": 0.227,
+     "KC": 0.179,
+     "CH": 0.12,
+     "SL": 0.085
+    },
+    "mix_entropy": 2.217260783427795,
+    "best_bits": 1.8578180074691772,
+    "control_bits": 2.4400815963745117,
+    "best_acc": 0.44294395678595544,
+    "control_acc": 0.37474679270763,
+    "rv100": 1.0079338284942607,
+    "csw": 0.2832545577312627,
+    "whiff": 0.2526395173453997,
+    "xwoba": 0.3446249510375198,
+    "explained": 0.16211118630932259,
+    "gain_vs_control": 0.5822635889053345
+   },
+   {
+    "pitcher": 686752,
+    "name": "Ryan Pepiot",
+    "season": 2025,
+    "throws": "R",
+    "n": 2698,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.45,
+     "CH": 0.251,
+     "SL": 0.178,
+     "FC": 0.063,
+     "CU": 0.033
+    },
+    "mix_entropy": 2.012867330641666,
+    "best_bits": 1.6798465251922607,
+    "control_bits": 1.9683936834335327,
+    "best_acc": 0.5103780578206079,
+    "control_acc": 0.449592290585619,
+    "rv100": 0.02601927353595264,
+    "csw": 0.259822090437361,
+    "whiff": 0.23372781065088757,
+    "xwoba": 0.3695621754988631,
+    "explained": 0.16544597866926689,
+    "gain_vs_control": 0.288547158241272
+   },
+   {
+    "pitcher": 693433,
+    "name": "Bryan Woo",
+    "season": 2025,
+    "throws": "R",
+    "n": 2714,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.473,
+     "SI": 0.255,
+     "SL": 0.11,
+     "ST": 0.09,
+     "CH": 0.071
+    },
+    "mix_entropy": 1.9487350113143114,
+    "best_bits": 1.6680115461349487,
+    "control_bits": 1.902517557144165,
+    "best_acc": 0.5250552689756817,
+    "control_acc": 0.47310243183493,
+    "rv100": 1.0404568901989681,
+    "csw": 0.26897568165070007,
+    "whiff": 0.23391003460207613,
+    "xwoba": 0.3509172240063829,
+    "explained": 0.1440542010840307,
+    "gain_vs_control": 0.2345060110092163
+   },
+   {
+    "pitcher": 693821,
+    "name": "Bryce Elder",
+    "season": 2025,
+    "throws": "R",
+    "n": 2514,
+    "pitch_types": 4,
+    "mix": {
+     "SI": 0.421,
+     "SL": 0.351,
+     "FF": 0.123,
+     "CH": 0.105
+    },
+    "mix_entropy": 1.768027705073727,
+    "best_bits": 1.54794180393219,
+    "control_bits": 1.7231398820877075,
+    "best_acc": 0.5083532219570406,
+    "control_acc": 0.44630071599045346,
+    "rv100": -0.584128878281623,
+    "csw": 0.25855210819411295,
+    "whiff": 0.2034334763948498,
+    "xwoba": 0.38325657122725154,
+    "explained": 0.12448102510495412,
+    "gain_vs_control": 0.17519807815551758
+   },
+   {
+    "pitcher": 694297,
+    "name": "Brandon Pfaadt",
+    "season": 2025,
+    "throws": "R",
+    "n": 2918,
+    "pitch_types": 6,
+    "mix": {
+     "SI": 0.235,
+     "FF": 0.234,
+     "ST": 0.186,
+     "CH": 0.157,
+     "CU": 0.098,
+     "FC": 0.092
+    },
+    "mix_entropy": 2.494418815986413,
+    "best_bits": 2.0565032958984375,
+    "control_bits": 2.656874895095825,
+    "best_acc": 0.39513365318711446,
+    "control_acc": 0.2443454420836189,
+    "rv100": -0.5127827278958191,
+    "csw": 0.2539410555174777,
+    "whiff": 0.1926286509040334,
+    "xwoba": 0.41371319836483456,
+    "explained": 0.17555813694213288,
+    "gain_vs_control": 0.6003715991973877
+   },
+   {
+    "pitcher": 694477,
+    "name": "Chad Patrick",
+    "season": 2025,
+    "throws": "R",
+    "n": 2010,
+    "pitch_types": 5,
+    "mix": {
+     "FC": 0.412,
+     "SI": 0.23,
+     "FF": 0.222,
+     "CH": 0.067,
+     "SL": 0.053
+    },
+    "mix_entropy": 2.0763059567338633,
+    "best_bits": 1.8340976238250732,
+    "control_bits": 2.073012113571167,
+    "best_acc": 0.4407960199004975,
+    "control_acc": 0.4079601990049751,
+    "rv100": 0.3693034825870647,
+    "csw": 0.24925373134328357,
+    "whiff": 0.20953326713008938,
+    "xwoba": 0.37362234440740205,
+    "explained": 0.11665348843375488,
+    "gain_vs_control": 0.23891448974609375
+   },
+   {
+    "pitcher": 694973,
+    "name": "Paul Skenes",
+    "season": 2025,
+    "throws": "R",
+    "n": 2997,
+    "pitch_types": 7,
+    "mix": {
+     "FF": 0.389,
+     "ST": 0.158,
+     "FS": 0.135,
+     "CH": 0.109,
+     "SI": 0.104,
+     "SL": 0.056,
+     "CU": 0.048
+    },
+    "mix_entropy": 2.4726233653885483,
+    "best_bits": 2.1688129901885986,
+    "control_bits": 2.5780043601989746,
+    "best_acc": 0.4087420754087421,
+    "control_acc": 0.37971304637971304,
+    "rv100": 1.3929929929929927,
+    "csw": 0.2932932932932933,
+    "whiff": 0.27889784946236557,
+    "xwoba": 0.32794654333328643,
+    "explained": 0.12286965311929296,
+    "gain_vs_control": 0.409191370010376
+   },
+   {
+    "pitcher": 695418,
+    "name": "Brad Lord",
+    "season": 2025,
+    "throws": "R",
+    "n": 2127,
+    "pitch_types": 4,
+    "mix": {
+     "FF": 0.485,
+     "SL": 0.202,
+     "SI": 0.181,
+     "CH": 0.131
+    },
+    "mix_entropy": 1.8154150565989002,
+    "best_bits": 1.5107662677764893,
+    "control_bits": 1.8093156814575195,
+    "best_acc": 0.5397273154677951,
+    "control_acc": 0.4847202632816173,
+    "rv100": -0.2679360601786552,
+    "csw": 0.2393041842971321,
+    "whiff": 0.18438381937911572,
+    "xwoba": 0.38567020845613104,
+    "explained": 0.16781219683897355,
+    "gain_vs_control": 0.2985494136810303
+   },
+   {
+    "pitcher": 701542,
+    "name": "Will Warren",
+    "season": 2025,
+    "throws": "R",
+    "n": 2802,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.416,
+     "SI": 0.21,
+     "ST": 0.206,
+     "CH": 0.098,
+     "CU": 0.07
+    },
+    "mix_entropy": 2.0660082821599133,
+    "best_bits": 1.7290537357330322,
+    "control_bits": 2.0704197883605957,
+    "best_acc": 0.4685938615274804,
+    "control_acc": 0.40007137758743755,
+    "rv100": -0.1779443254817988,
+    "csw": 0.2865810135617416,
+    "whiff": 0.22370617696160267,
+    "xwoba": 0.39723363152269314,
+    "explained": 0.1630944799866006,
+    "gain_vs_control": 0.3413660526275635
+   },
+   {
+    "pitcher": 702070,
+    "name": "Noah Cameron",
+    "season": 2025,
+    "throws": "L",
+    "n": 2164,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.264,
+     "FC": 0.216,
+     "CU": 0.193,
+     "CH": 0.186,
+     "SL": 0.141
+    },
+    "mix_entropy": 2.29289188239358,
+    "best_bits": 2.039916515350342,
+    "control_bits": 2.243062973022461,
+    "best_acc": 0.37292051756007394,
+    "control_acc": 0.30406654343807765,
+    "rv100": 0.44269870609981504,
+    "csw": 0.2694085027726433,
+    "whiff": 0.2446183953033268,
+    "xwoba": 0.3599082583502257,
+    "explained": 0.11033026414623348,
+    "gain_vs_control": 0.20314645767211914
+   },
+   {
+    "pitcher": 808967,
+    "name": "Yoshinobu Yamamoto",
+    "season": 2025,
+    "throws": "R",
+    "n": 2789,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.352,
+     "FS": 0.255,
+     "CU": 0.176,
+     "FC": 0.112,
+     "SI": 0.078
+    },
+    "mix_entropy": 2.2605166308287887,
+    "best_bits": 1.971587896347046,
+    "control_bits": 2.1698410511016846,
+    "best_acc": 0.4352814628899247,
+    "control_acc": 0.39870921477231985,
+    "rv100": 1.4931516672642522,
+    "csw": 0.3008246683399068,
+    "whiff": 0.2724481964696853,
+    "xwoba": 0.3182534456468997,
+    "explained": 0.1278153544819579,
+    "gain_vs_control": 0.19825315475463867
+   },
+   {
+    "pitcher": 518876,
+    "name": "Merrill Kelly",
+    "season": 2026,
+    "throws": "R",
+    "n": 2616,
+    "pitch_types": 6,
+    "mix": {
+     "CH": 0.277,
+     "FF": 0.275,
+     "FC": 0.138,
+     "CU": 0.114,
+     "SL": 0.102,
+     "SI": 0.094
+    },
+    "mix_entropy": 2.4334738528878304,
+    "best_bits": 2.124988555908203,
+    "control_bits": 2.4341111183166504,
+    "best_acc": 0.3937308868501529,
+    "control_acc": 0.3172782874617737,
+    "rv100": -0.6553134556574923,
+    "csw": 0.23509174311926606,
+    "whiff": 0.1955177743431221,
+    "xwoba": 0.4152612085769981,
+    "explained": 0.12676745904359907,
+    "gain_vs_control": 0.30912256240844727
+   },
+   {
+    "pitcher": 519242,
+    "name": "Chris Sale",
+    "season": 2026,
+    "throws": "L",
+    "n": 2574,
+    "pitch_types": 4,
+    "mix": {
+     "FF": 0.414,
+     "SL": 0.399,
+     "CH": 0.103,
+     "SI": 0.084
+    },
+    "mix_entropy": 1.6941630559560568,
+    "best_bits": 1.3517686128616333,
+    "control_bits": 1.6430025100708008,
+    "best_acc": 0.5345765345765345,
+    "control_acc": 0.4522144522144522,
+    "rv100": 1.3468531468531468,
+    "csw": 0.3142968142968143,
+    "whiff": 0.276840490797546,
+    "xwoba": 0.3494713216957606,
+    "explained": 0.20210241386783287,
+    "gain_vs_control": 0.2912338972091675
+   },
+   {
+    "pitcher": 527048,
+    "name": "Mart\u00edn P\u00e9rez",
+    "season": 2026,
+    "throws": "L",
+    "n": 2244,
+    "pitch_types": 5,
+    "mix": {
+     "SI": 0.354,
+     "CH": 0.31,
+     "FC": 0.22,
+     "CU": 0.072,
+     "FF": 0.044
+    },
+    "mix_entropy": 2.0058865785964692,
+    "best_bits": 1.7301732301712036,
+    "control_bits": 1.9413468837738037,
+    "best_acc": 0.48663101604278075,
+    "control_acc": 0.41532976827094475,
+    "rv100": 0.41813725490196085,
+    "csw": 0.2642602495543672,
+    "whiff": 0.1970954356846473,
+    "xwoba": 0.3472206572769953,
+    "explained": 0.13745211287977405,
+    "gain_vs_control": 0.2111736536026001
+   },
+   {
+    "pitcher": 543135,
+    "name": "Nathan Eovaldi",
+    "season": 2026,
+    "throws": "R",
+    "n": 2220,
+    "pitch_types": 5,
+    "mix": {
+     "FS": 0.374,
+     "CU": 0.222,
+     "FC": 0.19,
+     "FF": 0.138,
+     "SI": 0.068
+    },
+    "mix_entropy": 2.180040504563828,
+    "best_bits": 1.9275178909301758,
+    "control_bits": 2.437744379043579,
+    "best_acc": 0.4207207207207207,
+    "control_acc": 0.23468468468468467,
+    "rv100": 0.09554054054054076,
+    "csw": 0.29234234234234235,
+    "whiff": 0.27217391304347827,
+    "xwoba": 0.3858270142180095,
+    "explained": 0.11583390909710449,
+    "gain_vs_control": 0.5102264881134033
+   },
+   {
+    "pitcher": 543243,
+    "name": "Sonny Gray",
+    "season": 2026,
+    "throws": "R",
+    "n": 2474,
+    "pitch_types": 6,
+    "mix": {
+     "SI": 0.217,
+     "ST": 0.205,
+     "FC": 0.188,
+     "FF": 0.173,
+     "CU": 0.16,
+     "CH": 0.057
+    },
+    "mix_entropy": 2.4973614481540327,
+    "best_bits": 1.9890639781951904,
+    "control_bits": 2.312300443649292,
+    "best_acc": 0.41996766370250604,
+    "control_acc": 0.32093775262732416,
+    "rv100": 0.6715440582053356,
+    "csw": 0.26798706548100243,
+    "whiff": 0.2119148936170213,
+    "xwoba": 0.35467016806722684,
+    "explained": 0.2035338017788971,
+    "gain_vs_control": 0.32323646545410156
+   },
+   {
+    "pitcher": 547179,
+    "name": "Michael Lorenzen",
+    "season": 2026,
+    "throws": "R",
+    "n": 2399,
+    "pitch_types": 7,
+    "mix": {
+     "CH": 0.204,
+     "SI": 0.203,
+     "FF": 0.189,
+     "FC": 0.144,
+     "CU": 0.105,
+     "ST": 0.08,
+     "SL": 0.075
+    },
+    "mix_entropy": 2.705359383746457,
+    "best_bits": 2.365983486175537,
+    "control_bits": 2.6743133068084717,
+    "best_acc": 0.3526469362234264,
+    "control_acc": 0.2551062942892872,
+    "rv100": -1.9797415589829095,
+    "csw": 0.24676948728636933,
+    "whiff": 0.17057169634489222,
+    "xwoba": 0.4016402569593148,
+    "explained": 0.12544577242116448,
+    "gain_vs_control": 0.30832982063293457
+   },
+   {
+    "pitcher": 554430,
+    "name": "Zack Wheeler",
+    "season": 2026,
+    "throws": "R",
+    "n": 2649,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.357,
+     "FS": 0.163,
+     "SI": 0.155,
+     "ST": 0.134,
+     "FC": 0.105,
+     "CU": 0.086
+    },
+    "mix_entropy": 2.409248102168858,
+    "best_bits": 1.962841272354126,
+    "control_bits": 2.57588791847229,
+    "best_acc": 0.41487353718384296,
+    "control_acc": 0.3567383918459796,
+    "rv100": 0.9363533408833522,
+    "csw": 0.27746319365798416,
+    "whiff": 0.27831957989497375,
+    "xwoba": 0.33365750000000005,
+    "explained": 0.18528885813497867,
+    "gain_vs_control": 0.6130466461181641
+   },
+   {
+    "pitcher": 592332,
+    "name": "Kevin Gausman",
+    "season": 2026,
+    "throws": "R",
+    "n": 3003,
+    "pitch_types": 3,
+    "mix": {
+     "FF": 0.506,
+     "FS": 0.392,
+     "SL": 0.081
+    },
+    "mix_entropy": 1.4551233394641445,
+    "best_bits": 1.2609714269638062,
+    "control_bits": 1.4649738073349,
+    "best_acc": 0.5854145854145855,
+    "control_acc": 0.5218115218115218,
+    "rv100": 0.08941058941058952,
+    "csw": 0.2867132867132867,
+    "whiff": 0.25613802256138024,
+    "xwoba": 0.38401174168297453,
+    "explained": 0.13342643007281818,
+    "gain_vs_control": 0.20400238037109375
+   },
+   {
+    "pitcher": 592662,
+    "name": "Robbie Ray",
+    "season": 2026,
+    "throws": "L",
+    "n": 2854,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.313,
+     "SL": 0.234,
+     "CH": 0.186,
+     "SI": 0.152,
+     "KC": 0.116
+    },
+    "mix_entropy": 2.2387711754378548,
+    "best_bits": 1.808911919593811,
+    "control_bits": 2.4087512493133545,
+    "best_acc": 0.4583041345480028,
+    "control_acc": 0.31289418360196214,
+    "rv100": 0.2618780658724597,
+    "csw": 0.23896285914505958,
+    "whiff": 0.22365428354814254,
+    "xwoba": 0.36760509554140125,
+    "explained": 0.19200678504357313,
+    "gain_vs_control": 0.5998393297195435
+   },
+   {
+    "pitcher": 593958,
+    "name": "Eduardo Rodriguez",
+    "season": 2026,
+    "throws": "L",
+    "n": 3066,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.4,
+     "CH": 0.265,
+     "FC": 0.134,
+     "CU": 0.122,
+     "SI": 0.08
+    },
+    "mix_entropy": 2.0863071014198318,
+    "best_bits": 1.8384944200515747,
+    "control_bits": 2.320328712463379,
+    "best_acc": 0.4334637964774951,
+    "control_acc": 0.3995433789954338,
+    "rv100": 0.589204174820613,
+    "csw": 0.2455968688845401,
+    "whiff": 0.19466666666666665,
+    "xwoba": 0.3546903114186852,
+    "explained": 0.1187805386846494,
+    "gain_vs_control": 0.4818342924118042
+   },
+   {
+    "pitcher": 594798,
+    "name": "Jacob deGrom",
+    "season": 2026,
+    "throws": "R",
+    "n": 2735,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.421,
+     "SL": 0.343,
+     "CH": 0.136,
+     "CU": 0.067,
+     "SI": 0.033
+    },
+    "mix_entropy": 1.8703753498270306,
+    "best_bits": 1.571891188621521,
+    "control_bits": 1.8856054544448853,
+    "best_acc": 0.5100548446069469,
+    "control_acc": 0.45557586837294334,
+    "rv100": 0.6031444241316272,
+    "csw": 0.293235831809872,
+    "whiff": 0.30812720848056535,
+    "xwoba": 0.3828461538461539,
+    "explained": 0.15958516627858302,
+    "gain_vs_control": 0.31371426582336426
+   },
+   {
+    "pitcher": 605400,
+    "name": "Aaron Nola",
+    "season": 2026,
+    "throws": "R",
+    "n": 2946,
+    "pitch_types": 5,
+    "mix": {
+     "KC": 0.333,
+     "FF": 0.24,
+     "SI": 0.182,
+     "CH": 0.163,
+     "FC": 0.076
+    },
+    "mix_entropy": 2.228693896605674,
+    "best_bits": 2.022334098815918,
+    "control_bits": 2.234990119934082,
+    "best_acc": 0.40801086218601496,
+    "control_acc": 0.3424983027834352,
+    "rv100": -0.7521045485403937,
+    "csw": 0.2898845892735913,
+    "whiff": 0.25146627565982405,
+    "xwoba": 0.37975000000000003,
+    "explained": 0.09259225688374896,
+    "gain_vs_control": 0.21265602111816406
+   },
+   {
+    "pitcher": 605488,
+    "name": "Jeffrey Springs",
+    "season": 2026,
+    "throws": "L",
+    "n": 2464,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.433,
+     "CH": 0.25,
+     "SL": 0.218,
+     "ST": 0.058,
+     "FC": 0.042
+    },
+    "mix_entropy": 1.931576935849938,
+    "best_bits": 1.6015492677688599,
+    "control_bits": 1.87147855758667,
+    "best_acc": 0.5008116883116883,
+    "control_acc": 0.4301948051948052,
+    "rv100": -1.3143262987012987,
+    "csw": 0.25811688311688313,
+    "whiff": 0.20647419072615922,
+    "xwoba": 0.3732588495575222,
+    "explained": 0.17085918865347105,
+    "gain_vs_control": 0.26992928981781006
+   },
+   {
+    "pitcher": 607067,
+    "name": "Colin Rea",
+    "season": 2026,
+    "throws": "R",
+    "n": 2226,
+    "pitch_types": 7,
+    "mix": {
+     "FF": 0.421,
+     "CH": 0.185,
+     "SL": 0.109,
+     "ST": 0.088,
+     "SI": 0.081,
+     "FC": 0.06,
+     "CU": 0.056
+    },
+    "mix_entropy": 2.4025740767446035,
+    "best_bits": 1.9150704145431519,
+    "control_bits": 2.6114342212677,
+    "best_acc": 0.45956873315363883,
+    "control_acc": 0.3903863432165319,
+    "rv100": -0.01509433962264129,
+    "csw": 0.25202156334231807,
+    "whiff": 0.17833173537871524,
+    "xwoba": 0.3894009324009324,
+    "explained": 0.2029088996340128,
+    "gain_vs_control": 0.6963638067245483
+   },
+   {
+    "pitcher": 607200,
+    "name": "Erick Fedde",
+    "season": 2026,
+    "throws": "R",
+    "n": 2413,
+    "pitch_types": 4,
+    "mix": {
+     "ST": 0.383,
+     "SI": 0.309,
+     "FC": 0.174,
+     "CH": 0.113
+    },
+    "mix_entropy": 1.9630881334409847,
+    "best_bits": 1.7593225240707397,
+    "control_bits": 2.2827088832855225,
+    "best_acc": 0.4359718193120597,
+    "control_acc": 0.30542892664732696,
+    "rv100": -0.18582677165354317,
+    "csw": 0.25279734769995854,
+    "whiff": 0.17302052785923755,
+    "xwoba": 0.36399107142857146,
+    "explained": 0.10379850292970588,
+    "gain_vs_control": 0.5233863592147827
+   },
+   {
+    "pitcher": 607259,
+    "name": "Nick Martinez",
+    "season": 2026,
+    "throws": "R",
+    "n": 2522,
+    "pitch_types": 6,
+    "mix": {
+     "SI": 0.317,
+     "CH": 0.258,
+     "FC": 0.22,
+     "FF": 0.126,
+     "CU": 0.041,
+     "SL": 0.038
+    },
+    "mix_entropy": 2.2544184931114484,
+    "best_bits": 2.039710283279419,
+    "control_bits": 2.331594944000244,
+    "best_acc": 0.3929421094369548,
+    "control_acc": 0.3009516256938937,
+    "rv100": 0.7204996034892942,
+    "csw": 0.2549563838223632,
+    "whiff": 0.16043613707165108,
+    "xwoba": 0.3451153184165232,
+    "explained": 0.09523884340378111,
+    "gain_vs_control": 0.2918846607208252
+   },
+   {
+    "pitcher": 607536,
+    "name": "Kyle Freeland",
+    "season": 2026,
+    "throws": "L",
+    "n": 2187,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.235,
+     "KC": 0.222,
+     "FC": 0.21,
+     "CH": 0.135,
+     "ST": 0.099,
+     "SI": 0.098
+    },
+    "mix_entropy": 2.49586147115318,
+    "best_bits": 2.212653160095215,
+    "control_bits": 2.5928940773010254,
+    "best_acc": 0.34613625971650663,
+    "control_acc": 0.23502514860539553,
+    "rv100": -1.284087791495199,
+    "csw": 0.2638317329675354,
+    "whiff": 0.20483005366726298,
+    "xwoba": 0.4119594017094017,
+    "explained": 0.11347116590053077,
+    "gain_vs_control": 0.38024091720581055
+   },
+   {
+    "pitcher": 607625,
+    "name": "Seth Lugo",
+    "season": 2026,
+    "throws": "R",
+    "n": 2858,
+    "pitch_types": 7,
+    "mix": {
+     "SI": 0.195,
+     "CU": 0.173,
+     "FF": 0.164,
+     "FC": 0.159,
+     "ST": 0.114,
+     "SL": 0.092,
+     "CH": 0.09
+    },
+    "mix_entropy": 2.813930455487277,
+    "best_bits": 2.621854066848755,
+    "control_bits": 2.977674961090088,
+    "best_acc": 0.2631210636808957,
+    "control_acc": 0.2358292512246326,
+    "rv100": -1.005633310006998,
+    "csw": 0.2568229531140658,
+    "whiff": 0.16666666666666666,
+    "xwoba": 0.38577777777777783,
+    "explained": 0.06825911005155273,
+    "gain_vs_control": 0.355820894241333
+   },
+   {
+    "pitcher": 608372,
+    "name": "Tomoyuki Sugano",
+    "season": 2026,
+    "throws": "R",
+    "n": 2522,
+    "pitch_types": 7,
+    "mix": {
+     "FS": 0.211,
+     "FF": 0.205,
+     "SI": 0.19,
+     "ST": 0.112,
+     "FC": 0.107,
+     "SL": 0.093,
+     "CU": 0.081
+    },
+    "mix_entropy": 2.710659119133621,
+    "best_bits": 2.5027925968170166,
+    "control_bits": 2.7898616790771484,
+    "best_acc": 0.323949246629659,
+    "control_acc": 0.23195876288659795,
+    "rv100": -0.861300555114988,
+    "csw": 0.22878667724028548,
+    "whiff": 0.17809364548494983,
+    "xwoba": 0.42409055876685936,
+    "explained": 0.07668486267762155,
+    "gain_vs_control": 0.28706908226013184
+   },
+   {
+    "pitcher": 608379,
+    "name": "Michael Wacha",
+    "season": 2026,
+    "throws": "R",
+    "n": 3028,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.277,
+     "CH": 0.252,
+     "FC": 0.148,
+     "SI": 0.136,
+     "CU": 0.099,
+     "SL": 0.087
+    },
+    "mix_entropy": 2.4516803899880415,
+    "best_bits": 2.1075196266174316,
+    "control_bits": 2.384845495223999,
+    "best_acc": 0.3966314398943197,
+    "control_acc": 0.32397622192866576,
+    "rv100": 0.2696169088507266,
+    "csw": 0.2552840158520476,
+    "whiff": 0.19070080862533692,
+    "xwoba": 0.3501150592216582,
+    "explained": 0.1403774997654929,
+    "gain_vs_control": 0.2773258686065674
+   },
+   {
+    "pitcher": 621111,
+    "name": "Walker Buehler",
+    "season": 2026,
+    "throws": "R",
+    "n": 2608,
+    "pitch_types": 7,
+    "mix": {
+     "FC": 0.244,
+     "FF": 0.202,
+     "SI": 0.199,
+     "SL": 0.106,
+     "CH": 0.095,
+     "KC": 0.084,
+     "ST": 0.071
+    },
+    "mix_entropy": 2.6609971458790485,
+    "best_bits": 2.3249123096466064,
+    "control_bits": 2.7106311321258545,
+    "best_acc": 0.34892638036809814,
+    "control_acc": 0.21088957055214724,
+    "rv100": -0.11276840490797548,
+    "csw": 0.25651840490797545,
+    "whiff": 0.18181818181818182,
+    "xwoba": 0.3569118942731277,
+    "explained": 0.12630033698191656,
+    "gain_vs_control": 0.38571882247924805
+   },
+   {
+    "pitcher": 622491,
+    "name": "Luis Castillo",
+    "season": 2026,
+    "throws": "R",
+    "n": 2366,
+    "pitch_types": 4,
+    "mix": {
+     "FF": 0.424,
+     "SL": 0.246,
+     "SI": 0.183,
+     "CH": 0.146
+    },
+    "mix_entropy": 1.8815502984501498,
+    "best_bits": 1.675893783569336,
+    "control_bits": 1.8702114820480347,
+    "best_acc": 0.45857988165680474,
+    "control_acc": 0.4239222316145393,
+    "rv100": -0.9751479289940828,
+    "csw": 0.24260355029585798,
+    "whiff": 0.21306122448979592,
+    "xwoba": 0.38986288416075654,
+    "explained": 0.10930163017710182,
+    "gain_vs_control": 0.19431769847869873
+   },
+   {
+    "pitcher": 624133,
+    "name": "Ranger Suarez",
+    "season": 2026,
+    "throws": "L",
+    "n": 2384,
+    "pitch_types": 6,
+    "mix": {
+     "SI": 0.245,
+     "FF": 0.227,
+     "FC": 0.186,
+     "CU": 0.168,
+     "CH": 0.122,
+     "SL": 0.052
+    },
+    "mix_entropy": 2.4595310566195665,
+    "best_bits": 2.140394449234009,
+    "control_bits": 2.4824488162994385,
+    "best_acc": 0.34731543624161076,
+    "control_acc": 0.2462248322147651,
+    "rv100": 0.8445469798657719,
+    "csw": 0.2726510067114094,
+    "whiff": 0.20074349442379183,
+    "xwoba": 0.34038277511961723,
+    "explained": 0.12975506307457896,
+    "gain_vs_control": 0.3420543670654297
+   },
+   {
+    "pitcher": 640455,
+    "name": "Sean Manaea",
+    "season": 2026,
+    "throws": "L",
+    "n": 2493,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.386,
+     "ST": 0.302,
+     "SI": 0.19,
+     "FC": 0.079,
+     "CH": 0.043
+    },
+    "mix_entropy": 1.9916508897486829,
+    "best_bits": 1.7267136573791504,
+    "control_bits": 2.447909355163574,
+    "best_acc": 0.4721219414360209,
+    "control_acc": 0.27557160048134777,
+    "rv100": -0.673004412354593,
+    "csw": 0.26594464500601683,
+    "whiff": 0.20461783439490447,
+    "xwoba": 0.38982696629213487,
+    "explained": 0.13302393192160483,
+    "gain_vs_control": 0.7211956977844238
+   },
+   {
+    "pitcher": 641743,
+    "name": "Anthony Kay",
+    "season": 2026,
+    "throws": "L",
+    "n": 2788,
+    "pitch_types": 6,
+    "mix": {
+     "ST": 0.237,
+     "FF": 0.216,
+     "SI": 0.18,
+     "FC": 0.163,
+     "CH": 0.143,
+     "SL": 0.061
+    },
+    "mix_entropy": 2.4891900259589623,
+    "best_bits": 2.1155943870544434,
+    "control_bits": 2.700918197631836,
+    "best_acc": 0.3755380200860832,
+    "control_acc": 0.2184361549497848,
+    "rv100": -0.4498565279770445,
+    "csw": 0.2568149210903874,
+    "whiff": 0.22078907435508346,
+    "xwoba": 0.3717438524590164,
+    "explained": 0.1500872311910341,
+    "gain_vs_control": 0.5853238105773926
+   },
+   {
+    "pitcher": 641816,
+    "name": "Tyler Mahle",
+    "season": 2026,
+    "throws": "R",
+    "n": 2402,
+    "pitch_types": 4,
+    "mix": {
+     "FF": 0.483,
+     "FS": 0.297,
+     "FC": 0.149,
+     "SL": 0.064
+    },
+    "mix_entropy": 1.7399985078583193,
+    "best_bits": 1.518601417541504,
+    "control_bits": 1.8175076246261597,
+    "best_acc": 0.5116569525395503,
+    "control_acc": 0.4833472106577852,
+    "rv100": 0.15537052456286443,
+    "csw": 0.2722731057452123,
+    "whiff": 0.21278538812785389,
+    "xwoba": 0.3581674528301887,
+    "explained": 0.1272398161934762,
+    "gain_vs_control": 0.29890620708465576
+   },
+   {
+    "pitcher": 641927,
+    "name": "Bailey Ober",
+    "season": 2026,
+    "throws": "R",
+    "n": 2099,
+    "pitch_types": 5,
+    "mix": {
+     "CH": 0.332,
+     "FF": 0.314,
+     "SL": 0.181,
+     "ST": 0.128,
+     "SI": 0.032
+    },
+    "mix_entropy": 2.121900390004946,
+    "best_bits": 1.9269089698791504,
+    "control_bits": 2.165937900543213,
+    "best_acc": 0.42162934730824203,
+    "control_acc": 0.3144354454502144,
+    "rv100": -0.12234397332062893,
+    "csw": 0.25202477370176274,
+    "whiff": 0.18895348837209303,
+    "xwoba": 0.3709787735849057,
+    "explained": 0.0918947095934795,
+    "gain_vs_control": 0.2390289306640625
+   },
+   {
+    "pitcher": 642547,
+    "name": "Freddy Peralta",
+    "season": 2026,
+    "throws": "R",
+    "n": 2959,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.53,
+     "CH": 0.234,
+     "CU": 0.139,
+     "ST": 0.057,
+     "SL": 0.04
+    },
+    "mix_entropy": 1.792767109709199,
+    "best_bits": 1.5520533323287964,
+    "control_bits": 1.8390090465545654,
+    "best_acc": 0.5339641770868536,
+    "control_acc": 0.5299087529570801,
+    "rv100": 0.016796214937478855,
+    "csw": 0.24400135180804325,
+    "whiff": 0.23185341789992953,
+    "xwoba": 0.3387570281124498,
+    "explained": 0.1342694073740835,
+    "gain_vs_control": 0.28695571422576904
+   },
+   {
+    "pitcher": 645261,
+    "name": "Sandy Alcantara",
+    "season": 2026,
+    "throws": "R",
+    "n": 3293,
+    "pitch_types": 7,
+    "mix": {
+     "SI": 0.263,
+     "CH": 0.207,
+     "FF": 0.18,
+     "FC": 0.15,
+     "ST": 0.088,
+     "SL": 0.07,
+     "CU": 0.043
+    },
+    "mix_entropy": 2.6037305248587312,
+    "best_bits": 2.4777448177337646,
+    "control_bits": 2.945282220840454,
+    "best_acc": 0.29274218038262984,
+    "control_acc": 0.25630124506529,
+    "rv100": 0.4132098390525358,
+    "csw": 0.2505314303067112,
+    "whiff": 0.18491921005385997,
+    "xwoba": 0.32949850299401195,
+    "explained": 0.048386615251515754,
+    "gain_vs_control": 0.46753740310668945
+   },
+   {
+    "pitcher": 650633,
+    "name": "Michael King",
+    "season": 2026,
+    "throws": "R",
+    "n": 2981,
+    "pitch_types": 5,
+    "mix": {
+     "SI": 0.279,
+     "CH": 0.264,
+     "FF": 0.203,
+     "ST": 0.188,
+     "SL": 0.066
+    },
+    "mix_entropy": 2.2003150317776274,
+    "best_bits": 2.0071182250976562,
+    "control_bits": 2.23055362701416,
+    "best_acc": 0.4022140221402214,
+    "control_acc": 0.2952029520295203,
+    "rv100": 0.6280778262328077,
+    "csw": 0.27037906742703793,
+    "whiff": 0.22093862815884477,
+    "xwoba": 0.3601417322834646,
+    "explained": 0.08780415708194662,
+    "gain_vs_control": 0.2234354019165039
+   },
+   {
+    "pitcher": 650911,
+    "name": "Cristopher S\u00e1nchez",
+    "season": 2026,
+    "throws": "L",
+    "n": 3158,
+    "pitch_types": 3,
+    "mix": {
+     "SI": 0.444,
+     "CH": 0.371,
+     "SL": 0.185
+    },
+    "mix_entropy": 1.501427842657192,
+    "best_bits": 1.3232260942459106,
+    "control_bits": 1.4675776958465576,
+    "best_acc": 0.5468651044965168,
+    "control_acc": 0.49651678277390754,
+    "rv100": 0.5522799240025333,
+    "csw": 0.30873970867637746,
+    "whiff": 0.29234629861982436,
+    "xwoba": 0.36382363315696653,
+    "explained": 0.11868818690341065,
+    "gain_vs_control": 0.14435160160064697
+   },
+   {
+    "pitcher": 656302,
+    "name": "Dylan Cease",
+    "season": 2026,
+    "throws": "R",
+    "n": 2895,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.37,
+     "SL": 0.301,
+     "CH": 0.115,
+     "KC": 0.101,
+     "SI": 0.079,
+     "ST": 0.035
+    },
+    "mix_entropy": 2.2018324944224466,
+    "best_bits": 1.950212001800537,
+    "control_bits": 2.354339838027954,
+    "best_acc": 0.41208981001727113,
+    "control_acc": 0.3626943005181347,
+    "rv100": 1.238272884283247,
+    "csw": 0.29844559585492225,
+    "whiff": 0.3036925395629239,
+    "xwoba": 0.3433425414364641,
+    "explained": 0.11427776329911551,
+    "gain_vs_control": 0.404127836227417
+   },
+   {
+    "pitcher": 656492,
+    "name": "Foster Griffin",
+    "season": 2026,
+    "throws": "L",
+    "n": 2833,
+    "pitch_types": 7,
+    "mix": {
+     "FC": 0.325,
+     "FF": 0.161,
+     "ST": 0.15,
+     "CH": 0.115,
+     "SI": 0.103,
+     "CU": 0.089,
+     "FS": 0.056
+    },
+    "mix_entropy": 2.6035546581565066,
+    "best_bits": 2.1959447860717773,
+    "control_bits": 2.473803758621216,
+    "best_acc": 0.38439816448994,
+    "control_acc": 0.3332156724320508,
+    "rv100": 0.08256265442993299,
+    "csw": 0.27497352629721145,
+    "whiff": 0.20437956204379562,
+    "xwoba": 0.3781292246520875,
+    "explained": 0.1565589840058686,
+    "gain_vs_control": 0.2778589725494385
+   },
+   {
+    "pitcher": 656550,
+    "name": "Grant Holmes",
+    "season": 2026,
+    "throws": "R",
+    "n": 2382,
+    "pitch_types": 6,
+    "mix": {
+     "SL": 0.361,
+     "FF": 0.282,
+     "SI": 0.125,
+     "FC": 0.082,
+     "CU": 0.078,
+     "CH": 0.073
+    },
+    "mix_entropy": 2.2778025667677593,
+    "best_bits": 1.8845200538635254,
+    "control_bits": 2.399697780609131,
+    "best_acc": 0.4727120067170445,
+    "control_acc": 0.3614609571788413,
+    "rv100": 0.14513014273719566,
+    "csw": 0.26406381192275397,
+    "whiff": 0.2553925798101812,
+    "xwoba": 0.37769565217391304,
+    "explained": 0.17265873638131354,
+    "gain_vs_control": 0.5151777267456055
+   },
+   {
+    "pitcher": 656849,
+    "name": "David Peterson",
+    "season": 2026,
+    "throws": "L",
+    "n": 2476,
+    "pitch_types": 5,
+    "mix": {
+     "SI": 0.295,
+     "FF": 0.252,
+     "SL": 0.219,
+     "CH": 0.13,
+     "CU": 0.104
+    },
+    "mix_entropy": 2.2229995453084195,
+    "best_bits": 1.9191511869430542,
+    "control_bits": 2.144479274749756,
+    "best_acc": 0.42609046849757676,
+    "control_acc": 0.36268174474959614,
+    "rv100": -0.4586429725363491,
+    "csw": 0.26453957996768984,
+    "whiff": 0.2094240837696335,
+    "xwoba": 0.3772544247787611,
+    "explained": 0.13668394984903576,
+    "gain_vs_control": 0.22532808780670166
+   },
+   {
+    "pitcher": 656876,
+    "name": "Drew Rasmussen",
+    "season": 2026,
+    "throws": "R",
+    "n": 2660,
+    "pitch_types": 5,
+    "mix": {
+     "FC": 0.289,
+     "FF": 0.28,
+     "SI": 0.238,
+     "CH": 0.133,
+     "CU": 0.035
+    },
+    "mix_entropy": 2.214897460355081,
+    "best_bits": 1.9362798929214478,
+    "control_bits": 2.478994846343994,
+    "best_acc": 0.40714285714285714,
+    "control_acc": 0.29586466165413533,
+    "rv100": 1.5438721804511282,
+    "csw": 0.2804511278195489,
+    "whiff": 0.22672672672672672,
+    "xwoba": 0.3372631578947368,
+    "explained": 0.12579253551040984,
+    "gain_vs_control": 0.5427149534225464
+   },
+   {
+    "pitcher": 657277,
+    "name": "Logan Webb",
+    "season": 2026,
+    "throws": "R",
+    "n": 2488,
+    "pitch_types": 5,
+    "mix": {
+     "SI": 0.294,
+     "CH": 0.24,
+     "ST": 0.201,
+     "FF": 0.135,
+     "FC": 0.131
+    },
+    "mix_entropy": 2.2514738156234997,
+    "best_bits": 2.055410385131836,
+    "control_bits": 2.3696610927581787,
+    "best_acc": 0.40514469453376206,
+    "control_acc": 0.3444533762057878,
+    "rv100": 0.7166398713826366,
+    "csw": 0.2692926045016077,
+    "whiff": 0.19341216216216217,
+    "xwoba": 0.3546519916142557,
+    "explained": 0.08708226101993018,
+    "gain_vs_control": 0.3142507076263428
+   },
+   {
+    "pitcher": 657746,
+    "name": "Joe Ryan",
+    "season": 2026,
+    "throws": "R",
+    "n": 2441,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.443,
+     "ST": 0.163,
+     "FS": 0.12,
+     "KC": 0.112,
+     "SI": 0.094,
+     "SL": 0.068
+    },
+    "mix_entropy": 2.252966574535712,
+    "best_bits": 1.9486932754516602,
+    "control_bits": 2.457773447036743,
+    "best_acc": 0.4592380172060631,
+    "control_acc": 0.44285129045473165,
+    "rv100": 0.16145022531749284,
+    "csw": 0.2863580499795166,
+    "whiff": 0.23133716160787532,
+    "xwoba": 0.3685790754257907,
+    "explained": 0.13505451102698057,
+    "gain_vs_control": 0.509080171585083
+   },
+   {
+    "pitcher": 663372,
+    "name": "Ryan Feltner",
+    "season": 2026,
+    "throws": "R",
+    "n": 2049,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.284,
+     "SL": 0.231,
+     "CH": 0.185,
+     "SI": 0.141,
+     "ST": 0.109,
+     "CU": 0.05
+    },
+    "mix_entropy": 2.4174178667130777,
+    "best_bits": 2.1130573749542236,
+    "control_bits": 2.421083927154541,
+    "best_acc": 0.36749633967789164,
+    "control_acc": 0.29428989751098095,
+    "rv100": -0.8296242069302098,
+    "csw": 0.25231820400195215,
+    "whiff": 0.21769383697813122,
+    "xwoba": 0.36490750000000005,
+    "explained": 0.12590313654489857,
+    "gain_vs_control": 0.3080265522003174
+   },
+   {
+    "pitcher": 663436,
+    "name": "Davis Martin",
+    "season": 2026,
+    "throws": "R",
+    "n": 2317,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.266,
+     "SI": 0.186,
+     "CH": 0.148,
+     "CU": 0.145,
+     "SL": 0.128,
+     "FC": 0.127
+    },
+    "mix_entropy": 2.5289066737474495,
+    "best_bits": 2.2136542797088623,
+    "control_bits": 2.801602363586426,
+    "best_acc": 0.3672852826931377,
+    "control_acc": 0.26629261976694,
+    "rv100": 0.19227449287872228,
+    "csw": 0.25636599050496334,
+    "whiff": 0.21052631578947367,
+    "xwoba": 0.37418372093023256,
+    "explained": 0.12465956031957152,
+    "gain_vs_control": 0.5879480838775635
+   },
+   {
+    "pitcher": 663554,
+    "name": "Casey Mize",
+    "season": 2026,
+    "throws": "R",
+    "n": 2083,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.349,
+     "SL": 0.277,
+     "FS": 0.236,
+     "SI": 0.096,
+     "SV": 0.042
+    },
+    "mix_entropy": 2.0520418635738924,
+    "best_bits": 1.7570887804031372,
+    "control_bits": 2.0567784309387207,
+    "best_acc": 0.4195871339414306,
+    "control_acc": 0.35381661065770525,
+    "rv100": -0.45799327892462804,
+    "csw": 0.26548247719635143,
+    "whiff": 0.2145748987854251,
+    "xwoba": 0.34634683544303796,
+    "explained": 0.1437363868673989,
+    "gain_vs_control": 0.2996896505355835
+   },
+   {
+    "pitcher": 663567,
+    "name": "Peter Lambert",
+    "season": 2026,
+    "throws": "R",
+    "n": 2642,
+    "pitch_types": 7,
+    "mix": {
+     "FF": 0.315,
+     "CH": 0.237,
+     "SL": 0.11,
+     "SI": 0.102,
+     "FC": 0.102,
+     "ST": 0.078,
+     "SV": 0.053
+    },
+    "mix_entropy": 2.5784280281226737,
+    "best_bits": 2.2042930126190186,
+    "control_bits": 2.775486469268799,
+    "best_acc": 0.3841786525359576,
+    "control_acc": 0.31491294473883424,
+    "rv100": -0.006131718395155224,
+    "csw": 0.26230128690386073,
+    "whiff": 0.22187742435996896,
+    "xwoba": 0.3363770114942529,
+    "explained": 0.1451019812936407,
+    "gain_vs_control": 0.5711934566497803
+   },
+   {
+    "pitcher": 663903,
+    "name": "Brady Singer",
+    "season": 2026,
+    "throws": "R",
+    "n": 2801,
+    "pitch_types": 4,
+    "mix": {
+     "SI": 0.506,
+     "SL": 0.275,
+     "ST": 0.131,
+     "FC": 0.069
+    },
+    "mix_entropy": 1.7701058962592922,
+    "best_bits": 1.5477765798568726,
+    "control_bits": 1.9205070734024048,
+    "best_acc": 0.5365940735451624,
+    "control_acc": 0.4741163870046412,
+    "rv100": -1.3738307747233136,
+    "csw": 0.2738307747233131,
+    "whiff": 0.22465531224655313,
+    "xwoba": 0.4083149606299213,
+    "explained": 0.12560226869604862,
+    "gain_vs_control": 0.3727304935455322
+   },
+   {
+    "pitcher": 663969,
+    "name": "Tyler Phillips",
+    "season": 2026,
+    "throws": "R",
+    "n": 2037,
+    "pitch_types": 5,
+    "mix": {
+     "SI": 0.256,
+     "ST": 0.237,
+     "FS": 0.233,
+     "CU": 0.174,
+     "FF": 0.084
+    },
+    "mix_entropy": 2.31870930664083,
+    "best_bits": 2.2575953006744385,
+    "control_bits": 2.3637123107910156,
+    "best_acc": 0.3176239567992145,
+    "control_acc": 0.2660775650466372,
+    "rv100": 0.004516445753559178,
+    "csw": 0.29504172803141876,
+    "whiff": 0.24866023579849947,
+    "xwoba": 0.36278457446808504,
+    "explained": 0.026356907177350765,
+    "gain_vs_control": 0.10611701011657715
+   },
+   {
+    "pitcher": 664285,
+    "name": "Framber Valdez",
+    "season": 2026,
+    "throws": "L",
+    "n": 2768,
+    "pitch_types": 5,
+    "mix": {
+     "SI": 0.439,
+     "CU": 0.298,
+     "CH": 0.179,
+     "SL": 0.046,
+     "FF": 0.038
+    },
+    "mix_entropy": 1.871408385670979,
+    "best_bits": 1.5793883800506592,
+    "control_bits": 1.8139961957931519,
+    "best_acc": 0.5242052023121387,
+    "control_acc": 0.49277456647398843,
+    "rv100": 0.16022398843930635,
+    "csw": 0.26192196531791906,
+    "whiff": 0.18764478764478765,
+    "xwoba": 0.3435427509293681,
+    "explained": 0.15604290750018104,
+    "gain_vs_control": 0.23460781574249268
+   },
+   {
+    "pitcher": 666200,
+    "name": "Jes\u00fas Luzardo",
+    "season": 2026,
+    "throws": "L",
+    "n": 2864,
+    "pitch_types": 4,
+    "mix": {
+     "ST": 0.382,
+     "FF": 0.262,
+     "CH": 0.182,
+     "SI": 0.175
+    },
+    "mix_entropy": 1.9236364503035306,
+    "best_bits": 1.6093368530273438,
+    "control_bits": 2.383528470993042,
+    "best_acc": 0.48393854748603354,
+    "control_acc": 0.22451117318435754,
+    "rv100": 1.0799231843575419,
+    "csw": 0.32053072625698326,
+    "whiff": 0.29766390354182365,
+    "xwoba": 0.32939863325740315,
+    "explained": 0.16338825209232935,
+    "gain_vs_control": 0.7741916179656982
+   },
+   {
+    "pitcher": 667755,
+    "name": "Jos\u00e9 Soriano",
+    "season": 2026,
+    "throws": "R",
+    "n": 2916,
+    "pitch_types": 5,
+    "mix": {
+     "SI": 0.299,
+     "KC": 0.256,
+     "FF": 0.209,
+     "FS": 0.188,
+     "SL": 0.048
+    },
+    "mix_entropy": 2.1600645416686657,
+    "best_bits": 1.940962791442871,
+    "control_bits": 2.1850578784942627,
+    "best_acc": 0.3936899862825789,
+    "control_acc": 0.3326474622770919,
+    "rv100": 0.4246913580246915,
+    "csw": 0.2842935528120713,
+    "whiff": 0.2591508052708638,
+    "xwoba": 0.37183640081799585,
+    "explained": 0.10143296461712986,
+    "gain_vs_control": 0.2440950870513916
+   },
+   {
+    "pitcher": 668909,
+    "name": "Gavin Williams",
+    "season": 2026,
+    "throws": "R",
+    "n": 2960,
+    "pitch_types": 5,
+    "mix": {
+     "ST": 0.288,
+     "FF": 0.273,
+     "KC": 0.224,
+     "SI": 0.156,
+     "FC": 0.059
+    },
+    "mix_entropy": 2.1704953795574515,
+    "best_bits": 1.8902541399002075,
+    "control_bits": 2.4616827964782715,
+    "best_acc": 0.4077702702702703,
+    "control_acc": 0.2722972972972973,
+    "rv100": 0.3417229729729731,
+    "csw": 0.3219594594594595,
+    "whiff": 0.30461750516884906,
+    "xwoba": 0.4127909738717339,
+    "explained": 0.12911395356869323,
+    "gain_vs_control": 0.571428656578064
+   },
+   {
+    "pitcher": 669022,
+    "name": "MacKenzie Gore",
+    "season": 2026,
+    "throws": "L",
+    "n": 2962,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.474,
+     "CU": 0.18,
+     "CH": 0.131,
+     "SL": 0.1,
+     "FC": 0.062,
+     "SI": 0.053
+    },
+    "mix_entropy": 2.1443065263514036,
+    "best_bits": 1.616791009902954,
+    "control_bits": 2.2422118186950684,
+    "best_acc": 0.513504388926401,
+    "control_acc": 0.47434166103983794,
+    "rv100": 0.24196488858879134,
+    "csw": 0.25354490209318026,
+    "whiff": 0.23013130615065652,
+    "xwoba": 0.3642620967741936,
+    "explained": 0.2460075133689173,
+    "gain_vs_control": 0.6254208087921143
+   },
+   {
+    "pitcher": 669160,
+    "name": "Dustin May",
+    "season": 2026,
+    "throws": "R",
+    "n": 2398,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.248,
+     "FC": 0.237,
+     "SI": 0.201,
+     "ST": 0.177,
+     "CU": 0.076,
+     "CH": 0.061
+    },
+    "mix_entropy": 2.4268586321171677,
+    "best_bits": 2.064846992492676,
+    "control_bits": 2.6082401275634766,
+    "best_acc": 0.3894912427022519,
+    "control_acc": 0.24103419516263552,
+    "rv100": -0.11405337781484556,
+    "csw": 0.27397831526271893,
+    "whiff": 0.2119089316987741,
+    "xwoba": 0.3794136253041363,
+    "explained": 0.1491688204799455,
+    "gain_vs_control": 0.5433931350708008
+   },
+   {
+    "pitcher": 669302,
+    "name": "Logan Gilbert",
+    "season": 2026,
+    "throws": "R",
+    "n": 2982,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.398,
+     "SL": 0.25,
+     "FS": 0.15,
+     "CH": 0.072,
+     "ST": 0.072,
+     "FC": 0.051
+    },
+    "mix_entropy": 2.2591883080723685,
+    "best_bits": 1.8324815034866333,
+    "control_bits": 2.2296624183654785,
+    "best_acc": 0.4751844399731724,
+    "control_acc": 0.4124748490945674,
+    "rv100": 0.440543259557344,
+    "csw": 0.2880617035546613,
+    "whiff": 0.2813333333333333,
+    "xwoba": 0.37309297520661155,
+    "explained": 0.18887615656519524,
+    "gain_vs_control": 0.3971809148788452
+   },
+   {
+    "pitcher": 669358,
+    "name": "Shane Baz",
+    "season": 2026,
+    "throws": "R",
+    "n": 2911,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.341,
+     "KC": 0.329,
+     "FC": 0.149,
+     "CH": 0.092,
+     "SI": 0.088
+    },
+    "mix_entropy": 2.0919231039820225,
+    "best_bits": 1.7078404426574707,
+    "control_bits": 2.344967842102051,
+    "best_acc": 0.4527653727241498,
+    "control_acc": 0.3634489866025421,
+    "rv100": 0.04194434902095499,
+    "csw": 0.2524905530745448,
+    "whiff": 0.19329529243937232,
+    "xwoba": 0.3604225092250922,
+    "explained": 0.1836026671312353,
+    "gain_vs_control": 0.6371273994445801
+   },
+   {
+    "pitcher": 669372,
+    "name": "J.T. Ginn",
+    "season": 2026,
+    "throws": "R",
+    "n": 2185,
+    "pitch_types": 5,
+    "mix": {
+     "SI": 0.368,
+     "CH": 0.2,
+     "FC": 0.162,
+     "SL": 0.128,
+     "FF": 0.113
+    },
+    "mix_entropy": 2.3044580955193945,
+    "best_bits": 1.8834035396575928,
+    "control_bits": 2.4163172245025635,
+    "best_acc": 0.4700228832951945,
+    "control_acc": 0.37940503432494277,
+    "rv100": 0.31029748283752867,
+    "csw": 0.2631578947368421,
+    "whiff": 0.24724724724724725,
+    "xwoba": 0.34419023136246785,
+    "explained": 0.18271304506706665,
+    "gain_vs_control": 0.5329136848449707
+   },
+   {
+    "pitcher": 669373,
+    "name": "Tarik Skubal",
+    "season": 2026,
+    "throws": "L",
+    "n": 2356,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.38,
+     "CH": 0.256,
+     "SI": 0.175,
+     "SL": 0.139,
+     "CU": 0.05
+    },
+    "mix_entropy": 2.085325998345987,
+    "best_bits": 1.8838578462600708,
+    "control_bits": 2.0727696418762207,
+    "best_acc": 0.4630730050933786,
+    "control_acc": 0.3654499151103565,
+    "rv100": 1.0996604414261462,
+    "csw": 0.3068760611205433,
+    "whiff": 0.29411764705882354,
+    "xwoba": 0.35562373737373737,
+    "explained": 0.09661230534013103,
+    "gain_vs_control": 0.1889117956161499
+   },
+   {
+    "pitcher": 669387,
+    "name": "Carmen Mlodzinski",
+    "season": 2026,
+    "throws": "R",
+    "n": 2080,
+    "pitch_types": 7,
+    "mix": {
+     "FF": 0.258,
+     "FS": 0.251,
+     "SI": 0.184,
+     "CU": 0.118,
+     "ST": 0.103,
+     "FC": 0.05,
+     "SL": 0.035
+    },
+    "mix_entropy": 2.5433815542614098,
+    "best_bits": 2.1881346702575684,
+    "control_bits": 2.7812790870666504,
+    "best_acc": 0.3870192307692308,
+    "control_acc": 0.25817307692307695,
+    "rv100": 0.03596153846153833,
+    "csw": 0.26778846153846153,
+    "whiff": 0.1891025641025641,
+    "xwoba": 0.3773017902813299,
+    "explained": 0.13967502571866533,
+    "gain_vs_control": 0.593144416809082
+   },
+   {
+    "pitcher": 669432,
+    "name": "Trevor Rogers",
+    "season": 2026,
+    "throws": "L",
+    "n": 2689,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.469,
+     "CH": 0.205,
+     "ST": 0.141,
+     "SI": 0.101,
+     "FC": 0.084
+    },
+    "mix_entropy": 2.012879299937143,
+    "best_bits": 1.8283392190933228,
+    "control_bits": 2.048130989074707,
+    "best_acc": 0.47973224246931945,
+    "control_acc": 0.46931944960952027,
+    "rv100": 0.2236147266641874,
+    "csw": 0.2785422089996281,
+    "whiff": 0.22136871508379888,
+    "xwoba": 0.35160887096774196,
+    "explained": 0.09167965553105094,
+    "gain_vs_control": 0.21979176998138428
+   },
+   {
+    "pitcher": 669461,
+    "name": "Matthew Liberatore",
+    "season": 2026,
+    "throws": "L",
+    "n": 2609,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.301,
+     "SL": 0.264,
+     "CU": 0.181,
+     "CH": 0.125,
+     "SI": 0.081,
+     "FC": 0.038
+    },
+    "mix_entropy": 2.3958169882959464,
+    "best_bits": 2.0742292404174805,
+    "control_bits": 2.3844010829925537,
+    "best_acc": 0.395170563434266,
+    "control_acc": 0.318512840168647,
+    "rv100": -0.6922958988118053,
+    "csw": 0.2794174013031813,
+    "whiff": 0.22470978441127695,
+    "xwoba": 0.40809803921568627,
+    "explained": 0.1342288452955662,
+    "gain_vs_control": 0.31017184257507324
+   },
+   {
+    "pitcher": 669467,
+    "name": "Andre Pallante",
+    "season": 2026,
+    "throws": "R",
+    "n": 2642,
+    "pitch_types": 4,
+    "mix": {
+     "FF": 0.341,
+     "SL": 0.292,
+     "KC": 0.171,
+     "SI": 0.167
+    },
+    "mix_entropy": 2.0620214156733647,
+    "best_bits": 1.6320521831512451,
+    "control_bits": 2.1900293827056885,
+    "best_acc": 0.49167297501892504,
+    "control_acc": 0.35087055261165784,
+    "rv100": 0.4000757002271007,
+    "csw": 0.2600302800908403,
+    "whiff": 0.1936026936026936,
+    "xwoba": 0.3383037475345168,
+    "explained": 0.20851831569446175,
+    "gain_vs_control": 0.5579771995544434
+   },
+   {
+    "pitcher": 669923,
+    "name": "George Kirby",
+    "season": 2026,
+    "throws": "R",
+    "n": 2758,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.284,
+     "ST": 0.283,
+     "SI": 0.209,
+     "KC": 0.102,
+     "CH": 0.051,
+     "FC": 0.042
+    },
+    "mix_entropy": 2.398130414423214,
+    "best_bits": 1.9998953342437744,
+    "control_bits": 2.3973963260650635,
+    "best_acc": 0.4071791153009427,
+    "control_acc": 0.2958665699782451,
+    "rv100": -0.4216461203770849,
+    "csw": 0.25815808556925307,
+    "whiff": 0.21174004192872117,
+    "xwoba": 0.3664,
+    "explained": 0.1660606436515343,
+    "gain_vs_control": 0.39750099182128906
+   },
+   {
+    "pitcher": 671096,
+    "name": "Andrew Abbott",
+    "season": 2026,
+    "throws": "L",
+    "n": 2858,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.446,
+     "ST": 0.195,
+     "CH": 0.195,
+     "CU": 0.131,
+     "FC": 0.033
+    },
+    "mix_entropy": 1.9860736280089868,
+    "best_bits": 1.6319712400436401,
+    "control_bits": 1.8952264785766602,
+    "best_acc": 0.5003498950314905,
+    "control_acc": 0.4461161651504549,
+    "rv100": -0.46896431070678796,
+    "csw": 0.2568229531140658,
+    "whiff": 0.19847908745247148,
+    "xwoba": 0.37097830374753454,
+    "explained": 0.1782926790686656,
+    "gain_vs_control": 0.26325523853302
+   },
+   {
+    "pitcher": 671737,
+    "name": "Taj Bradley",
+    "season": 2026,
+    "throws": "R",
+    "n": 2997,
+    "pitch_types": 4,
+    "mix": {
+     "FF": 0.466,
+     "FC": 0.245,
+     "FS": 0.196,
+     "CU": 0.093
+    },
+    "mix_entropy": 1.7891583458594154,
+    "best_bits": 1.5924410820007324,
+    "control_bits": 1.77643883228302,
+    "best_acc": 0.4984984984984985,
+    "control_acc": 0.46646646646646645,
+    "rv100": 0.2815148481815148,
+    "csw": 0.2746079412746079,
+    "whiff": 0.24186704384724186,
+    "xwoba": 0.375646420824295,
+    "explained": 0.10994961084016884,
+    "gain_vs_control": 0.1839977502822876
+   },
+   {
+    "pitcher": 672282,
+    "name": "Reid Detmers",
+    "season": 2026,
+    "throws": "L",
+    "n": 2957,
+    "pitch_types": 4,
+    "mix": {
+     "FF": 0.459,
+     "SL": 0.328,
+     "CU": 0.11,
+     "CH": 0.093
+    },
+    "mix_entropy": 1.7781789992714048,
+    "best_bits": 1.5591222047805786,
+    "control_bits": 1.7944400310516357,
+    "best_acc": 0.5160635779506256,
+    "control_acc": 0.45924923909367604,
+    "rv100": 0.929286438958404,
+    "csw": 0.2942171119377748,
+    "whiff": 0.25718194254445964,
+    "xwoba": 0.3594427966101695,
+    "explained": 0.12319164413739168,
+    "gain_vs_control": 0.23531782627105713
+   },
+   {
+    "pitcher": 672456,
+    "name": "Keider Montero",
+    "season": 2026,
+    "throws": "R",
+    "n": 2304,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.3,
+     "SI": 0.23,
+     "SL": 0.196,
+     "KC": 0.138,
+     "CH": 0.136
+    },
+    "mix_entropy": 2.2558450727497132,
+    "best_bits": 2.001591205596924,
+    "control_bits": 2.247272491455078,
+    "best_acc": 0.4184027777777778,
+    "control_acc": 0.2999131944444444,
+    "rv100": 0.9654947916666666,
+    "csw": 0.2556423611111111,
+    "whiff": 0.16454545454545455,
+    "xwoba": 0.3203659574468085,
+    "explained": 0.11270892235647734,
+    "gain_vs_control": 0.2456812858581543
+   },
+   {
+    "pitcher": 675660,
+    "name": "Shane Drohan",
+    "season": 2026,
+    "throws": "L",
+    "n": 2001,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.267,
+     "SI": 0.219,
+     "SL": 0.216,
+     "CU": 0.129,
+     "FC": 0.117,
+     "CH": 0.05
+    },
+    "mix_entropy": 2.427513283858209,
+    "best_bits": 2.091848134994507,
+    "control_bits": 2.370638847351074,
+    "best_acc": 0.3933033483258371,
+    "control_acc": 0.28785607196401797,
+    "rv100": -0.07236381809095462,
+    "csw": 0.2818590704647676,
+    "whiff": 0.24324324324324326,
+    "xwoba": 0.35282857142857144,
+    "explained": 0.1382753087679122,
+    "gain_vs_control": 0.2787907123565674
+   },
+   {
+    "pitcher": 676106,
+    "name": "Emerson Hancock",
+    "season": 2026,
+    "throws": "R",
+    "n": 2171,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.395,
+     "SI": 0.234,
+     "ST": 0.161,
+     "FC": 0.116,
+     "CH": 0.05,
+     "CU": 0.045
+    },
+    "mix_entropy": 2.2199530625591213,
+    "best_bits": 1.7878572940826416,
+    "control_bits": 2.5260422229766846,
+    "best_acc": 0.4767388300322432,
+    "control_acc": 0.3933671119299862,
+    "rv100": 0.48180561953017054,
+    "csw": 0.24320589590050667,
+    "whiff": 0.20763087843833186,
+    "xwoba": 0.36806265664160404,
+    "explained": 0.19464184885889776,
+    "gain_vs_control": 0.738184928894043
+   },
+   {
+    "pitcher": 676282,
+    "name": "Joey Cantillo",
+    "season": 2026,
+    "throws": "L",
+    "n": 2747,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.328,
+     "CU": 0.307,
+     "CH": 0.244,
+     "FC": 0.082,
+     "SL": 0.04
+    },
+    "mix_entropy": 2.0286585019981676,
+    "best_bits": 1.6823606491088867,
+    "control_bits": 2.0788931846618652,
+    "best_acc": 0.46705496905715327,
+    "control_acc": 0.33964324717874045,
+    "rv100": -0.2139788860575173,
+    "csw": 0.2999635966508919,
+    "whiff": 0.2786885245901639,
+    "xwoba": 0.35031058823529415,
+    "explained": 0.17070288200216444,
+    "gain_vs_control": 0.3965325355529785
+   },
+   {
+    "pitcher": 676440,
+    "name": "Tanner Bibee",
+    "season": 2026,
+    "throws": "R",
+    "n": 2968,
+    "pitch_types": 6,
+    "mix": {
+     "FC": 0.242,
+     "FF": 0.235,
+     "SI": 0.208,
+     "CH": 0.154,
+     "CU": 0.11,
+     "ST": 0.052
+    },
+    "mix_entropy": 2.445043303654739,
+    "best_bits": 2.200489044189453,
+    "control_bits": 2.578829765319824,
+    "best_acc": 0.3588274932614555,
+    "control_acc": 0.23450134770889489,
+    "rv100": 0.034838274932614564,
+    "csw": 0.2685309973045822,
+    "whiff": 0.21556031406138473,
+    "xwoba": 0.3613409893992933,
+    "explained": 0.10002042053804835,
+    "gain_vs_control": 0.3783407211303711
+   },
+   {
+    "pitcher": 676917,
+    "name": "Cade Cavalli",
+    "season": 2026,
+    "throws": "R",
+    "n": 2776,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.325,
+     "KC": 0.267,
+     "ST": 0.143,
+     "SI": 0.125,
+     "CH": 0.076,
+     "FC": 0.063
+    },
+    "mix_entropy": 2.35156528398847,
+    "best_bits": 2.1063106060028076,
+    "control_bits": 2.401899814605713,
+    "best_acc": 0.3703170028818444,
+    "control_acc": 0.30331412103746397,
+    "rv100": 0.43930115273775217,
+    "csw": 0.29719020172910665,
+    "whiff": 0.24640967498110355,
+    "xwoba": 0.3705730593607306,
+    "explained": 0.10429422464074141,
+    "gain_vs_control": 0.2955892086029053
+   },
+   {
+    "pitcher": 677944,
+    "name": "Slade Cecconi",
+    "season": 2026,
+    "throws": "R",
+    "n": 2003,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.269,
+     "FC": 0.256,
+     "SI": 0.201,
+     "CU": 0.148,
+     "ST": 0.059,
+     "SL": 0.046
+    },
+    "mix_entropy": 2.455372276578506,
+    "best_bits": 2.0929038524627686,
+    "control_bits": 3.0510318279266357,
+    "best_acc": 0.3709435846230654,
+    "control_acc": 0.26859710434348477,
+    "rv100": -0.41807289066400405,
+    "csw": 0.2581128307538692,
+    "whiff": 0.18463180362860193,
+    "xwoba": 0.38008311688311686,
+    "explained": 0.1476225937603349,
+    "gain_vs_control": 0.9581279754638672
+   },
+   {
+    "pitcher": 677952,
+    "name": "Braxton Ashcraft",
+    "season": 2026,
+    "throws": "R",
+    "n": 2413,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.306,
+     "CU": 0.264,
+     "SL": 0.222,
+     "SI": 0.166,
+     "FS": 0.041
+    },
+    "mix_entropy": 2.1325465855996217,
+    "best_bits": 1.920123815536499,
+    "control_bits": 2.1621248722076416,
+    "best_acc": 0.41856610029009533,
+    "control_acc": 0.33443845835060093,
+    "rv100": 0.5894736842105264,
+    "csw": 0.2996270203066722,
+    "whiff": 0.2342629482071713,
+    "xwoba": 0.3581785714285714,
+    "explained": 0.09960990840600767,
+    "gain_vs_control": 0.24200105667114258
+   },
+   {
+    "pitcher": 677958,
+    "name": "Kumar Rocker",
+    "season": 2026,
+    "throws": "R",
+    "n": 2496,
+    "pitch_types": 5,
+    "mix": {
+     "SL": 0.376,
+     "SI": 0.295,
+     "FF": 0.147,
+     "FC": 0.141,
+     "CH": 0.032
+    },
+    "mix_entropy": 2.0721385061917488,
+    "best_bits": 1.74785578250885,
+    "control_bits": 2.10332989692688,
+    "best_acc": 0.47716346153846156,
+    "control_acc": 0.41225961538461536,
+    "rv100": -0.22483974358974365,
+    "csw": 0.25801282051282054,
+    "whiff": 0.24518828451882846,
+    "xwoba": 0.37073469387755104,
+    "explained": 0.15649664475319133,
+    "gain_vs_control": 0.3554741144180298
+   },
+   {
+    "pitcher": 677960,
+    "name": "Ryan Weathers",
+    "season": 2026,
+    "throws": "L",
+    "n": 2280,
+    "pitch_types": 5,
+    "mix": {
+     "CH": 0.253,
+     "FF": 0.222,
+     "SI": 0.208,
+     "ST": 0.201,
+     "SL": 0.117
+    },
+    "mix_entropy": 2.2813109544926373,
+    "best_bits": 1.9462850093841553,
+    "control_bits": 2.4090139865875244,
+    "best_acc": 0.41710526315789476,
+    "control_acc": 0.2219298245614035,
+    "rv100": 0.052149122807017737,
+    "csw": 0.2995614035087719,
+    "whiff": 0.25048923679060664,
+    "xwoba": 0.3981732283464567,
+    "explained": 0.14685676428665187,
+    "gain_vs_control": 0.46272897720336914
+   },
+   {
+    "pitcher": 678022,
+    "name": "Jack Perkins",
+    "season": 2026,
+    "throws": "R",
+    "n": 2065,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.294,
+     "ST": 0.284,
+     "CH": 0.188,
+     "FC": 0.153,
+     "SI": 0.055
+    },
+    "mix_entropy": 2.2930342084292574,
+    "best_bits": 1.9404499530792236,
+    "control_bits": 2.2505979537963867,
+    "best_acc": 0.4159806295399516,
+    "control_acc": 0.30072639225181597,
+    "rv100": -0.712590799031477,
+    "csw": 0.28861985472154966,
+    "whiff": 0.2600401606425703,
+    "xwoba": 0.37397910447761196,
+    "explained": 0.15376319029778285,
+    "gain_vs_control": 0.3101480007171631
+   },
+   {
+    "pitcher": 680694,
+    "name": "Kyle Bradish",
+    "season": 2026,
+    "throws": "R",
+    "n": 2629,
+    "pitch_types": 4,
+    "mix": {
+     "SI": 0.366,
+     "SL": 0.242,
+     "CU": 0.218,
+     "FF": 0.17
+    },
+    "mix_entropy": 1.9791993026032397,
+    "best_bits": 1.658808946609497,
+    "control_bits": 2.0774662494659424,
+    "best_acc": 0.45302396348421453,
+    "control_acc": 0.25370863446177255,
+    "rv100": -0.3894256371243816,
+    "csw": 0.26588056295169266,
+    "whiff": 0.2226855713094245,
+    "xwoba": 0.3659799107142857,
+    "explained": 0.1618787736901147,
+    "gain_vs_control": 0.4186573028564453
+   },
+   {
+    "pitcher": 680732,
+    "name": "Sean Burke",
+    "season": 2026,
+    "throws": "R",
+    "n": 2878,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.371,
+     "KC": 0.201,
+     "SL": 0.167,
+     "SI": 0.138,
+     "FC": 0.104
+    },
+    "mix_entropy": 2.267471723120621,
+    "best_bits": 2.013622760772705,
+    "control_bits": 2.390101432800293,
+    "best_acc": 0.4027102154273801,
+    "control_acc": 0.37387074357192496,
+    "rv100": 0.39391938846421126,
+    "csw": 0.2828353022932592,
+    "whiff": 0.22804532577903683,
+    "xwoba": 0.3595460526315789,
+    "explained": 0.11195242690769037,
+    "gain_vs_control": 0.3764786720275879
+   },
+   {
+    "pitcher": 680736,
+    "name": "Justin Wrobleski",
+    "season": 2026,
+    "throws": "L",
+    "n": 2137,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.491,
+     "SL": 0.281,
+     "SI": 0.083,
+     "CH": 0.05,
+     "CU": 0.046,
+     "ST": 0.034
+    },
+    "mix_entropy": 1.9975000885789043,
+    "best_bits": 1.718769907951355,
+    "control_bits": 2.0172932147979736,
+    "best_acc": 0.5063172671970051,
+    "control_acc": 0.48759943846513804,
+    "rv100": 0.1673841834347217,
+    "csw": 0.271408516612073,
+    "whiff": 0.1893158388003749,
+    "xwoba": 0.3848554502369668,
+    "explained": 0.1395395085192954,
+    "gain_vs_control": 0.29852330684661865
+   },
+   {
+    "pitcher": 681190,
+    "name": "Randy V\u00e1squez",
+    "season": 2026,
+    "throws": "R",
+    "n": 2226,
+    "pitch_types": 7,
+    "mix": {
+     "FF": 0.318,
+     "FC": 0.242,
+     "SI": 0.166,
+     "CH": 0.087,
+     "CU": 0.077,
+     "SL": 0.061,
+     "ST": 0.05
+    },
+    "mix_entropy": 2.503817305241019,
+    "best_bits": 2.1514759063720703,
+    "control_bits": 2.5579395294189453,
+    "best_acc": 0.37601078167115903,
+    "control_acc": 0.33692722371967654,
+    "rv100": -0.03692722371967654,
+    "csw": 0.2394429469901168,
+    "whiff": 0.16740478299379982,
+    "xwoba": 0.3932844638949672,
+    "explained": 0.14072168849197725,
+    "gain_vs_control": 0.406463623046875
+   },
+   {
+    "pitcher": 681517,
+    "name": "Kyle Leahy",
+    "season": 2026,
+    "throws": "R",
+    "n": 2327,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.26,
+     "CU": 0.164,
+     "SL": 0.163,
+     "CH": 0.146,
+     "ST": 0.136,
+     "SI": 0.132
+    },
+    "mix_entropy": 2.540691419420985,
+    "best_bits": 2.200734853744507,
+    "control_bits": 2.5184643268585205,
+    "best_acc": 0.3523850451224753,
+    "control_acc": 0.26686721100128924,
+    "rv100": 0.10017189514396234,
+    "csw": 0.26428878384185645,
+    "whiff": 0.2020389249304912,
+    "xwoba": 0.4032939759036145,
+    "explained": 0.13380474428254377,
+    "gain_vs_control": 0.31772947311401367
+   },
+   {
+    "pitcher": 682052,
+    "name": "Jacob Lopez",
+    "season": 2026,
+    "throws": "L",
+    "n": 2226,
+    "pitch_types": 4,
+    "mix": {
+     "FF": 0.345,
+     "SL": 0.34,
+     "FC": 0.2,
+     "CH": 0.087
+    },
+    "mix_entropy": 1.974592193589968,
+    "best_bits": 1.6878516674041748,
+    "control_bits": 1.9298263788223267,
+    "best_acc": 0.4667565139263252,
+    "control_acc": 0.3692722371967655,
+    "rv100": -0.5195417789757414,
+    "csw": 0.261455525606469,
+    "whiff": 0.22189638318670576,
+    "xwoba": 0.31597580645161294,
+    "explained": 0.14521506117396105,
+    "gain_vs_control": 0.24197471141815186
+   },
+   {
+    "pitcher": 684007,
+    "name": "Shota Imanaga",
+    "season": 2026,
+    "throws": "L",
+    "n": 2810,
+    "pitch_types": 4,
+    "mix": {
+     "FF": 0.401,
+     "FS": 0.345,
+     "ST": 0.146,
+     "SI": 0.059
+    },
+    "mix_entropy": 1.9620986395512285,
+    "best_bits": 1.6376405954360962,
+    "control_bits": 1.982393741607666,
+    "best_acc": 0.5274021352313167,
+    "control_acc": 0.42419928825622777,
+    "rv100": 0.21451957295373664,
+    "csw": 0.2807829181494662,
+    "whiff": 0.2797250859106529,
+    "xwoba": 0.37223613963039015,
+    "explained": 0.16536275882100526,
+    "gain_vs_control": 0.3447531461715698
+   },
+   {
+    "pitcher": 687064,
+    "name": "Brandon Young",
+    "season": 2026,
+    "throws": "R",
+    "n": 2530,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.401,
+     "FS": 0.189,
+     "SL": 0.155,
+     "SI": 0.138,
+     "CU": 0.117
+    },
+    "mix_entropy": 2.1565762929424808,
+    "best_bits": 1.6784958839416504,
+    "control_bits": 2.2753872871398926,
+    "best_acc": 0.48023715415019763,
+    "control_acc": 0.4007905138339921,
+    "rv100": -0.10501976284584971,
+    "csw": 0.2592885375494071,
+    "whiff": 0.225,
+    "xwoba": 0.3568943965517241,
+    "explained": 0.22168490424631665,
+    "gain_vs_control": 0.5968914031982422
+   },
+   {
+    "pitcher": 687570,
+    "name": "Connor Prielipp",
+    "season": 2026,
+    "throws": "L",
+    "n": 2067,
+    "pitch_types": 5,
+    "mix": {
+     "SL": 0.297,
+     "FF": 0.264,
+     "CU": 0.186,
+     "SI": 0.153,
+     "CH": 0.1
+    },
+    "mix_entropy": 2.2256740663087644,
+    "best_bits": 1.9553805589675903,
+    "control_bits": 2.176680326461792,
+    "best_acc": 0.3841315916787615,
+    "control_acc": 0.3173681664247702,
+    "rv100": -0.08016448959845189,
+    "csw": 0.26995645863570394,
+    "whiff": 0.21153846153846154,
+    "xwoba": 0.36049002849002854,
+    "explained": 0.1214434365897296,
+    "gain_vs_control": 0.22129976749420166
+   },
+   {
+    "pitcher": 690986,
+    "name": "Kyle Harrison",
+    "season": 2026,
+    "throws": "L",
+    "n": 2106,
+    "pitch_types": 3,
+    "mix": {
+     "FF": 0.57,
+     "SV": 0.322,
+     "CH": 0.089
+    },
+    "mix_entropy": 1.4094139352160493,
+    "best_bits": 1.2799562215805054,
+    "control_bits": 1.443698763847351,
+    "best_acc": 0.5897435897435898,
+    "control_acc": 0.570275403608737,
+    "rv100": -0.35498575498575485,
+    "csw": 0.2972459639126306,
+    "whiff": 0.25638506876227896,
+    "xwoba": 0.391584375,
+    "explained": 0.0918521595401278,
+    "gain_vs_control": 0.1637425422668457
+   },
+   {
+    "pitcher": 690997,
+    "name": "Nolan McLean",
+    "season": 2026,
+    "throws": "R",
+    "n": 2914,
+    "pitch_types": 7,
+    "mix": {
+     "SI": 0.347,
+     "FF": 0.194,
+     "CU": 0.146,
+     "ST": 0.107,
+     "FC": 0.105,
+     "CH": 0.062,
+     "SL": 0.039
+    },
+    "mix_entropy": 2.5126820849718583,
+    "best_bits": 2.167815685272217,
+    "control_bits": 2.4120497703552246,
+    "best_acc": 0.4008236101578586,
+    "control_acc": 0.377831159917639,
+    "rv100": 0.5942690459849004,
+    "csw": 0.2834591626630062,
+    "whiff": 0.2161115414407436,
+    "xwoba": 0.3419913043478261,
+    "explained": 0.1372503118330244,
+    "gain_vs_control": 0.2442340850830078
+   },
+   {
+    "pitcher": 691587,
+    "name": "Eury P\u00e9rez",
+    "season": 2026,
+    "throws": "R",
+    "n": 2673,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.37,
+     "SI": 0.177,
+     "SL": 0.173,
+     "ST": 0.131,
+     "CH": 0.086,
+     "CU": 0.063
+    },
+    "mix_entropy": 2.3515357061077484,
+    "best_bits": 2.0647025108337402,
+    "control_bits": 2.537400722503662,
+    "best_acc": 0.41488963711185933,
+    "control_acc": 0.36962214739992516,
+    "rv100": 0.24814814814814812,
+    "csw": 0.25738870183314627,
+    "whiff": 0.2647702407002188,
+    "xwoba": 0.36425242718446604,
+    "explained": 0.12197696787210313,
+    "gain_vs_control": 0.4726982116699219
+   },
+   {
+    "pitcher": 691725,
+    "name": "Andrew Painter",
+    "season": 2026,
+    "throws": "R",
+    "n": 2126,
+    "pitch_types": 7,
+    "mix": {
+     "FF": 0.328,
+     "SL": 0.176,
+     "ST": 0.166,
+     "CH": 0.108,
+     "SI": 0.086,
+     "FS": 0.077,
+     "CU": 0.059
+    },
+    "mix_entropy": 2.576035423071689,
+    "best_bits": 2.052910327911377,
+    "control_bits": 2.5656938552856445,
+    "best_acc": 0.39087488240827845,
+    "control_acc": 0.3254938852304798,
+    "rv100": -0.3278927563499529,
+    "csw": 0.2681091251175917,
+    "whiff": 0.2304015296367113,
+    "xwoba": 0.3675236842105263,
+    "explained": 0.20307371959059967,
+    "gain_vs_control": 0.5127835273742676
+   },
+   {
+    "pitcher": 693433,
+    "name": "Bryan Woo",
+    "season": 2026,
+    "throws": "R",
+    "n": 2667,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.472,
+     "SI": 0.191,
+     "SL": 0.133,
+     "ST": 0.116,
+     "CH": 0.063
+    },
+    "mix_entropy": 2.1000503813204845,
+    "best_bits": 1.741692066192627,
+    "control_bits": 2.1099085807800293,
+    "best_acc": 0.5001874765654293,
+    "control_acc": 0.47206599175103114,
+    "rv100": 0.7130108736407949,
+    "csw": 0.260217472815898,
+    "whiff": 0.2208892025405787,
+    "xwoba": 0.3637330595482546,
+    "explained": 0.1706427228200718,
+    "gain_vs_control": 0.36821651458740234
+   },
+   {
+    "pitcher": 693645,
+    "name": "Cam Schlittler",
+    "season": 2026,
+    "throws": "R",
+    "n": 3040,
+    "pitch_types": 4,
+    "mix": {
+     "FF": 0.445,
+     "FC": 0.256,
+     "SI": 0.193,
+     "CU": 0.098
+    },
+    "mix_entropy": 1.8708585248331908,
+    "best_bits": 1.6742197275161743,
+    "control_bits": 1.9057849645614624,
+    "best_acc": 0.49078947368421055,
+    "control_acc": 0.4430921052631579,
+    "rv100": 1.334375,
+    "csw": 0.2891447368421053,
+    "whiff": 0.26962025316455696,
+    "xwoba": 0.345322440087146,
+    "explained": 0.10510618237931657,
+    "gain_vs_control": 0.23156523704528809
+   },
+   {
+    "pitcher": 693821,
+    "name": "Bryce Elder",
+    "season": 2026,
+    "throws": "R",
+    "n": 2245,
+    "pitch_types": 5,
+    "mix": {
+     "SI": 0.279,
+     "FF": 0.224,
+     "SL": 0.224,
+     "FC": 0.15,
+     "CH": 0.123
+    },
+    "mix_entropy": 2.262868988684829,
+    "best_bits": 1.917305827140808,
+    "control_bits": 2.6009035110473633,
+    "best_acc": 0.43518930957683744,
+    "control_acc": 0.30155902004454344,
+    "rv100": 0.08481069042316253,
+    "csw": 0.2556792873051225,
+    "whiff": 0.1944177093358999,
+    "xwoba": 0.3522241758241758,
+    "explained": 0.15271019368419605,
+    "gain_vs_control": 0.6835976839065552
+   },
+   {
+    "pitcher": 693855,
+    "name": "Ian Seymour",
+    "season": 2026,
+    "throws": "L",
+    "n": 2123,
+    "pitch_types": 5,
+    "mix": {
+     "CH": 0.288,
+     "FF": 0.275,
+     "ST": 0.196,
+     "SI": 0.164,
+     "SL": 0.065
+    },
+    "mix_entropy": 2.261996219420248,
+    "best_bits": 1.9731886386871338,
+    "control_bits": 2.3938164710998535,
+    "best_acc": 0.4027319830428639,
+    "control_acc": 0.3344324069712671,
+    "rv100": 0.27159679698539796,
+    "csw": 0.30146019783325484,
+    "whiff": 0.2634457611668186,
+    "xwoba": 0.37984813753581664,
+    "explained": 0.1276781889614015,
+    "gain_vs_control": 0.4206278324127197
+   },
+   {
+    "pitcher": 694297,
+    "name": "Brandon Pfaadt",
+    "season": 2026,
+    "throws": "R",
+    "n": 2032,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.271,
+     "SI": 0.165,
+     "CH": 0.159,
+     "CU": 0.146,
+     "ST": 0.143,
+     "FC": 0.116
+    },
+    "mix_entropy": 2.5283803205030893,
+    "best_bits": 2.1143431663513184,
+    "control_bits": 2.5873985290527344,
+    "best_acc": 0.3823818897637795,
+    "control_acc": 0.25393700787401574,
+    "rv100": 0.6489665354330709,
+    "csw": 0.25836614173228345,
+    "whiff": 0.19722497522299307,
+    "xwoba": 0.33704662004662,
+    "explained": 0.1637558838732723,
+    "gain_vs_control": 0.473055362701416
+   },
+   {
+    "pitcher": 694738,
+    "name": "Landen Roupp",
+    "season": 2026,
+    "throws": "R",
+    "n": 2712,
+    "pitch_types": 5,
+    "mix": {
+     "SI": 0.343,
+     "CU": 0.256,
+     "CH": 0.204,
+     "FC": 0.14,
+     "FF": 0.058
+    },
+    "mix_entropy": 2.1346990789195956,
+    "best_bits": 1.8536405563354492,
+    "control_bits": 2.1212005615234375,
+    "best_acc": 0.4443215339233038,
+    "control_acc": 0.38458702064896755,
+    "rv100": 0.4792404129793512,
+    "csw": 0.2665929203539823,
+    "whiff": 0.22307039864291772,
+    "xwoba": 0.32887441860465116,
+    "explained": 0.13166189340672527,
+    "gain_vs_control": 0.2675600051879883
+   },
+   {
+    "pitcher": 694819,
+    "name": "Jacob Misiorowski",
+    "season": 2026,
+    "throws": "R",
+    "n": 2647,
+    "pitch_types": 4,
+    "mix": {
+     "FF": 0.634,
+     "FC": 0.139,
+     "SL": 0.112,
+     "CU": 0.103
+    },
+    "mix_entropy": 1.5860696296380437,
+    "best_bits": 1.3573222160339355,
+    "control_bits": 1.6728472709655762,
+    "best_acc": 0.6365697015489233,
+    "control_acc": 0.6335474121647148,
+    "rv100": 1.9684548545523233,
+    "csw": 0.33962976955043445,
+    "whiff": 0.344141488577745,
+    "xwoba": 0.31404201680672267,
+    "explained": 0.14422280669752846,
+    "gain_vs_control": 0.3155250549316406
+   },
+   {
+    "pitcher": 694973,
+    "name": "Paul Skenes",
+    "season": 2026,
+    "throws": "R",
+    "n": 2890,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.408,
+     "ST": 0.159,
+     "CH": 0.125,
+     "SI": 0.118,
+     "FS": 0.101,
+     "SL": 0.086
+    },
+    "mix_entropy": 2.3537264786219128,
+    "best_bits": 2.042853832244873,
+    "control_bits": 2.44478440284729,
+    "best_acc": 0.4328719723183391,
+    "control_acc": 0.4083044982698962,
+    "rv100": 0.3655709342560555,
+    "csw": 0.2667820069204152,
+    "whiff": 0.25848032564450474,
+    "xwoba": 0.3493950892857143,
+    "explained": 0.13207679362941654,
+    "gain_vs_control": 0.401930570602417
+   },
+   {
+    "pitcher": 695076,
+    "name": "Rhett Lowder",
+    "season": 2026,
+    "throws": "R",
+    "n": 2296,
+    "pitch_types": 4,
+    "mix": {
+     "SI": 0.302,
+     "SL": 0.266,
+     "FF": 0.201,
+     "CH": 0.201
+    },
+    "mix_entropy": 2.1179562873391116,
+    "best_bits": 1.841651201248169,
+    "control_bits": 2.086998224258423,
+    "best_acc": 0.4324912891986063,
+    "control_acc": 0.34277003484320556,
+    "rv100": -0.7374999999999998,
+    "csw": 0.2547909407665505,
+    "whiff": 0.16979269496544916,
+    "xwoba": 0.3896197183098592,
+    "explained": 0.1304583516395788,
+    "gain_vs_control": 0.2453470230102539
+   },
+   {
+    "pitcher": 695505,
+    "name": "Chase Burns",
+    "season": 2026,
+    "throws": "R",
+    "n": 2569,
+    "pitch_types": 3,
+    "mix": {
+     "FF": 0.554,
+     "SL": 0.389,
+     "CH": 0.052
+    },
+    "mix_entropy": 1.2649945372399016,
+    "best_bits": 1.0973827838897705,
+    "control_bits": 1.248867392539978,
+    "best_acc": 0.6107434799532893,
+    "control_acc": 0.5581938497469833,
+    "rv100": 0.46722460101206703,
+    "csw": 0.2857142857142857,
+    "whiff": 0.2945859872611465,
+    "xwoba": 0.3520026455026455,
+    "explained": 0.13249998194920598,
+    "gain_vs_control": 0.15148460865020752
+   },
+   {
+    "pitcher": 696149,
+    "name": "Bubba Chandler",
+    "season": 2026,
+    "throws": "R",
+    "n": 2685,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.484,
+     "SL": 0.206,
+     "CH": 0.143,
+     "SI": 0.081,
+     "CU": 0.046,
+     "ST": 0.04
+    },
+    "mix_entropy": 2.062524447954024,
+    "best_bits": 1.8273597955703735,
+    "control_bits": 2.100170612335205,
+    "best_acc": 0.48156424581005586,
+    "control_acc": 0.48379888268156424,
+    "rv100": -0.2000372439478585,
+    "csw": 0.25400372439478586,
+    "whiff": 0.2025518341307815,
+    "xwoba": 0.343638202247191,
+    "explained": 0.11401787388116937,
+    "gain_vs_control": 0.27281081676483154
+   },
+   {
+    "pitcher": 700241,
+    "name": "Michael McGreevy",
+    "season": 2026,
+    "throws": "R",
+    "n": 2774,
+    "pitch_types": 7,
+    "mix": {
+     "FF": 0.246,
+     "CH": 0.204,
+     "SI": 0.162,
+     "CU": 0.126,
+     "FC": 0.112,
+     "ST": 0.106,
+     "SL": 0.044
+    },
+    "mix_entropy": 2.662071280503826,
+    "best_bits": 2.19291353225708,
+    "control_bits": 2.6902811527252197,
+    "best_acc": 0.36553713049747655,
+    "control_acc": 0.21377072819033885,
+    "rv100": 0.042862292718096606,
+    "csw": 0.24585436193222782,
+    "whiff": 0.18108326596604687,
+    "xwoba": 0.3947541899441341,
+    "explained": 0.17623786097791969,
+    "gain_vs_control": 0.49736762046813965
+   },
+   {
+    "pitcher": 700712,
+    "name": "Walbert Ure\u00f1a",
+    "season": 2026,
+    "throws": "R",
+    "n": 2480,
+    "pitch_types": 4,
+    "mix": {
+     "CH": 0.343,
+     "SI": 0.331,
+     "FF": 0.185,
+     "ST": 0.141
+    },
+    "mix_entropy": 1.9060584260813187,
+    "best_bits": 1.6590336561203003,
+    "control_bits": 1.8645944595336914,
+    "best_acc": 0.4798387096774194,
+    "control_acc": 0.40725806451612906,
+    "rv100": 0.6076209677419355,
+    "csw": 0.27903225806451615,
+    "whiff": 0.2607573149741824,
+    "xwoba": 0.3018044554455446,
+    "explained": 0.12959978906254133,
+    "gain_vs_control": 0.2055608034133911
+   },
+   {
+    "pitcher": 701542,
+    "name": "Will Warren",
+    "season": 2026,
+    "throws": "R",
+    "n": 2642,
+    "pitch_types": 5,
+    "mix": {
+     "FF": 0.354,
+     "SI": 0.247,
+     "ST": 0.201,
+     "CH": 0.138,
+     "CU": 0.056
+    },
+    "mix_entropy": 2.15691729922666,
+    "best_bits": 1.9030205011367798,
+    "control_bits": 2.1245810985565186,
+    "best_acc": 0.406888720666162,
+    "control_acc": 0.3535200605601817,
+    "rv100": -0.5132475397426192,
+    "csw": 0.28122634367903104,
+    "whiff": 0.2109777015437393,
+    "xwoba": 0.38312253829321663,
+    "explained": 0.1177128108624805,
+    "gain_vs_control": 0.22156059741973877
+   },
+   {
+    "pitcher": 702070,
+    "name": "Noah Cameron",
+    "season": 2026,
+    "throws": "L",
+    "n": 2893,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.24,
+     "FC": 0.211,
+     "CH": 0.2,
+     "CU": 0.163,
+     "SL": 0.135,
+     "SI": 0.051
+    },
+    "mix_entropy": 2.471107987045807,
+    "best_bits": 2.17085337638855,
+    "control_bits": 2.420868158340454,
+    "best_acc": 0.3508468717594193,
+    "control_acc": 0.2855167646042171,
+    "rv100": 0.14127203594884205,
+    "csw": 0.26097476667818875,
+    "whiff": 0.2335243553008596,
+    "xwoba": 0.3606807692307693,
+    "explained": 0.12150606619834911,
+    "gain_vs_control": 0.2500147819519043
+   },
+   {
+    "pitcher": 800048,
+    "name": "Parker Messick",
+    "season": 2026,
+    "throws": "L",
+    "n": 2948,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.418,
+     "CH": 0.236,
+     "SI": 0.15,
+     "CU": 0.084,
+     "SL": 0.065,
+     "FC": 0.047
+    },
+    "mix_entropy": 2.1932150254835308,
+    "best_bits": 1.8037856817245483,
+    "control_bits": 2.145927906036377,
+    "best_acc": 0.4643826322930801,
+    "control_acc": 0.41010854816824965,
+    "rv100": 0.9845318860244232,
+    "csw": 0.2669606512890095,
+    "whiff": 0.22958827634333567,
+    "xwoba": 0.3374265593561368,
+    "explained": 0.1775609501275992,
+    "gain_vs_control": 0.3421422243118286
+   },
+   {
+    "pitcher": 801139,
+    "name": "Payton Tolle",
+    "season": 2026,
+    "throws": "L",
+    "n": 2282,
+    "pitch_types": 4,
+    "mix": {
+     "FF": 0.446,
+     "SI": 0.241,
+     "FC": 0.192,
+     "CU": 0.093
+    },
+    "mix_entropy": 1.9362985629507317,
+    "best_bits": 1.7339674234390259,
+    "control_bits": 1.9616756439208984,
+    "best_acc": 0.48115687992988604,
+    "control_acc": 0.44566170026292723,
+    "rv100": 0.6590271691498686,
+    "csw": 0.2773882559158633,
+    "whiff": 0.24900556881463803,
+    "xwoba": 0.31626439790575916,
+    "explained": 0.10449377145814367,
+    "gain_vs_control": 0.22770822048187256
+   },
+   {
+    "pitcher": 805673,
+    "name": "Zebby Matthews",
+    "season": 2026,
+    "throws": "R",
+    "n": 2117,
+    "pitch_types": 6,
+    "mix": {
+     "FF": 0.358,
+     "SL": 0.228,
+     "CH": 0.132,
+     "FC": 0.124,
+     "CU": 0.111,
+     "SI": 0.047
+    },
+    "mix_entropy": 2.3354042169003626,
+    "best_bits": 2.040374755859375,
+    "control_bits": 2.2673513889312744,
+    "best_acc": 0.3963155408597071,
+    "control_acc": 0.37600377893245157,
+    "rv100": -0.13221539914974018,
+    "csw": 0.2569674067076051,
+    "whiff": 0.20576540755467196,
+    "xwoba": 0.3752649350649351,
+    "explained": 0.12632907781273167,
+    "gain_vs_control": 0.22697663307189941
+   },
+   {
+    "pitcher": 808963,
+    "name": "Roki Sasaki",
+    "season": 2026,
+    "throws": "R",
+    "n": 2100,
+    "pitch_types": 4,
+    "mix": {
+     "FF": 0.42,
+     "FS": 0.292,
+     "SL": 0.216,
+     "FO": 0.072
+    },
+    "mix_entropy": 1.7961821658988022,
+    "best_bits": 1.6140623092651367,
+    "control_bits": 2.132962226867676,
+    "best_acc": 0.47904761904761906,
+    "control_acc": 0.4042857142857143,
+    "rv100": -0.4636666666666666,
+    "csw": 0.2776190476190476,
+    "whiff": 0.2709125475285171,
+    "xwoba": 0.37327325581395343,
+    "explained": 0.1013927540821192,
+    "gain_vs_control": 0.5188999176025391
+   },
+   {
+    "pitcher": 808967,
+    "name": "Yoshinobu Yamamoto",
+    "season": 2026,
+    "throws": "R",
+    "n": 2734,
+    "pitch_types": 6,
+    "mix": {
+     "FS": 0.266,
+     "FF": 0.262,
+     "FC": 0.149,
+     "CU": 0.132,
+     "SI": 0.131,
+     "SL": 0.061
+    },
+    "mix_entropy": 2.4377402176185266,
+    "best_bits": 2.2681186199188232,
+    "control_bits": 2.479419708251953,
+    "best_acc": 0.33869787856620337,
+    "control_acc": 0.31199707388441844,
+    "rv100": 1.5964155084125824,
+    "csw": 0.288222384784199,
+    "whiff": 0.24870848708487084,
+    "xwoba": 0.32365052631578956,
+    "explained": 0.06958149046144457,
+    "gain_vs_control": 0.21130108833312988
+   }
+  ],
+  "correlations": {
+   "rv100": {
+    "best_bits": [
+     -0.11935958778064042,
+     -0.2436956080515655,
+     0.016945238434961516
+    ],
+    "mix_entropy": [
+     -0.12028892160471108,
+     -0.23360843586296656,
+     0.013481837497962976
+    ],
+    "explained": [
+     -0.014522319785477682,
+     -0.1570643895909352,
+     0.11687650338972606
+    ]
+   },
+   "csw": {
+    "best_bits": [
+     -0.18292963054368677,
+     -0.3049920647633058,
+     -0.04723898499548994
+    ],
+    "mix_entropy": [
+     -0.2359588556045581,
+     -0.365255905564575,
+     -0.10404336897120449
+    ],
+    "explained": [
+     -0.14443061689318595,
+     -0.285760462846383,
+     -0.012074509747369172
+    ]
+   },
+   "whiff": {
+    "best_bits": [
+     -0.33553814606446186,
+     -0.4471285376376485,
+     -0.20624484316606592
+    ],
+    "mix_entropy": [
+     -0.34357353173142646,
+     -0.46254483271425856,
+     -0.21191180083981687
+    ],
+    "explained": [
+     0.00026026604973973397,
+     -0.1477718304839933,
+     0.14270814752475372
+    ]
+   },
+   "xwoba": {
+    "best_bits": [
+     0.07863978127136022,
+     -0.06317101488406034,
+     0.21720900396472187
+    ],
+    "mix_entropy": [
+     0.08825648036174352,
+     -0.056804189926403924,
+     0.23550860944368227
+    ],
+    "explained": [
+     0.002096587622903412,
+     -0.120164223523547,
+     0.14246121542828183
+    ]
+   }
+  },
+  "n_pitcher_seasons": 209,
+  "n_pitchers": 151
+ },
+ "surprise": {
+  "slopes": {
+   "pitcher, season, pitch type, count": {
+    "rv100": {
+     "slope": 0.1175638525699051,
+     "lo": 0.03884408240172875,
+     "hi": 0.18837464635888582,
+     "n": 538998,
+     "mean": 0.10460651059929722,
+     "sd_within_x": 0.694003701210022
+    },
+    "csw": {
+     "slope": 0.005261250362454767,
+     "lo": 0.003716526342983013,
+     "hi": 0.007108097212058925,
+     "n": 538998,
+     "mean": 0.2702718748492573,
+     "sd_within_x": 0.694003701210022
+    },
+    "whiff": {
+     "slope": 0.005217921390637666,
+     "lo": 0.0029511682333837794,
+     "hi": 0.007620872074068951,
+     "n": 259245,
+     "mean": 0.22514223996605529,
+     "sd_within_x": 0.6616644263267517
+    },
+    "xwoba": {
+     "slope": -0.0033355507738531006,
+     "lo": -0.007075661803313213,
+     "hi": 0.0005863269648786556,
+     "n": 95651,
+     "mean": 0.36745617048150986,
+     "sd_within_x": 0.6265361309051514
+    }
+   },
+   "... + location (zone 1-14)": {
+    "rv100": {
+     "slope": 0.14666897396478584,
+     "lo": 0.06284229282138924,
+     "hi": 0.22664192561578353,
+     "n": 538998,
+     "mean": 0.10460651059929722,
+     "sd_within_x": 0.5966892838478088
+    },
+    "csw": {
+     "slope": 0.006155279905553626,
+     "lo": 0.004640313459040181,
+     "hi": 0.00785639760650947,
+     "n": 538998,
+     "mean": 0.2702718748492573,
+     "sd_within_x": 0.5966892838478088
+    },
+    "whiff": {
+     "slope": 0.007283782463934016,
+     "lo": 0.0047480077401121,
+     "hi": 0.0096389846378239,
+     "n": 259245,
+     "mean": 0.22514223996605529,
+     "sd_within_x": 0.5258424282073975
+    },
+    "xwoba": {
+     "slope": -0.006383977343850107,
+     "lo": -0.010905034802912276,
+     "hi": -0.0017294891872403615,
+     "n": 95651,
+     "mean": 0.36745617048150986,
+     "sd_within_x": 0.41727006435394287
+    }
+   }
+  },
+  "quintiles": {
+   "rv100": {
+    "overall_mean": 0.10460651059929722,
+    "rows": [
+     {
+      "quintile": 1,
+      "surprise_bits": 1.0618704557418823,
+      "n": 99399,
+      "vs_stratum_mean": -0.07250926524053229
+     },
+     {
+      "quintile": 2,
+      "surprise_bits": 1.4233663082122803,
+      "n": 105318,
+      "vs_stratum_mean": -0.15852437764366414
+     },
+     {
+      "quintile": 3,
+      "surprise_bits": 1.690595030784607,
+      "n": 105385,
+      "vs_stratum_mean": -0.01855287745458064
+     },
+     {
+      "quintile": 4,
+      "surprise_bits": 2.009209394454956,
+      "n": 105318,
+      "vs_stratum_mean": -0.004034167043386861
+     },
+     {
+      "quintile": 5,
+      "surprise_bits": 2.7612953186035156,
+      "n": 111428,
+      "vs_stratum_mean": 0.23587324779719168
+     }
+    ]
+   },
+   "csw": {
+    "overall_mean": 0.2702718748492573,
+    "rows": [
+     {
+      "quintile": 1,
+      "surprise_bits": 1.0618704557418823,
+      "n": 99399,
+      "vs_stratum_mean": -0.0016919895761919124
+     },
+     {
+      "quintile": 2,
+      "surprise_bits": 1.4233663082122803,
+      "n": 105318,
+      "vs_stratum_mean": -0.0039251824483259425
+     },
+     {
+      "quintile": 3,
+      "surprise_bits": 1.690595030784607,
+      "n": 105385,
+      "vs_stratum_mean": -0.002199776394866045
+     },
+     {
+      "quintile": 4,
+      "surprise_bits": 2.009209394454956,
+      "n": 105318,
+      "vs_stratum_mean": -0.0005069633404811302
+     },
+     {
+      "quintile": 5,
+      "surprise_bits": 2.7612953186035156,
+      "n": 111428,
+      "vs_stratum_mean": 0.007778926638209806
+     }
+    ]
+   },
+   "whiff": {
+    "overall_mean": 0.22514223996605529,
+    "rows": [
+     {
+      "quintile": 1,
+      "surprise_bits": 1.0589500665664673,
+      "n": 48409,
+      "vs_stratum_mean": 0.0007080788838734181
+     },
+     {
+      "quintile": 2,
+      "surprise_bits": 1.4094749689102173,
+      "n": 51381,
+      "vs_stratum_mean": -0.00439075052504943
+     },
+     {
+      "quintile": 3,
+      "surprise_bits": 1.6760550737380981,
+      "n": 50882,
+      "vs_stratum_mean": -0.0036772003224866063
+     },
+     {
+      "quintile": 4,
+      "surprise_bits": 1.9901437759399414,
+      "n": 50477,
+      "vs_stratum_mean": -0.002505335736802683
+     },
+     {
+      "quintile": 5,
+      "surprise_bits": 2.7200210094451904,
+      "n": 52399,
+      "vs_stratum_mean": 0.009635468250033197
+     }
+    ]
+   },
+   "xwoba": {
+    "overall_mean": 0.36745617048150986,
+    "rows": [
+     {
+      "quintile": 1,
+      "surprise_bits": 1.071946144104004,
+      "n": 18132,
+      "vs_stratum_mean": 0.0028129619517575804
+     },
+     {
+      "quintile": 2,
+      "surprise_bits": 1.4144891500473022,
+      "n": 19291,
+      "vs_stratum_mean": 0.0021794529243035652
+     },
+     {
+      "quintile": 3,
+      "surprise_bits": 1.682970404624939,
+      "n": 19047,
+      "vs_stratum_mean": -0.0008537685792711333
+     },
+     {
+      "quintile": 4,
+      "surprise_bits": 1.9960318803787231,
+      "n": 18571,
+      "vs_stratum_mean": -0.0010991541721913146
+     },
+     {
+      "quintile": 5,
+      "surprise_bits": 2.7289137840270996,
+      "n": 18390,
+      "vs_stratum_mean": -0.003065488320329869
+     }
+    ]
+   }
+  },
+  "surprise_mean": 1.8465394973754883
+ },
+ "importance": {
+  "importance_2025": [
+   [
+    "strikes",
+    0.028714002959106547
+   ],
+   [
+    "balls",
+    0.024889052819849933
+   ],
+   [
+    "prev_t",
+    0.023072560304592368
+   ],
+   [
+    "prev_r",
+    0.0207003164056569
+   ],
+   [
+    "game_prev_r",
+    0.020619602797793894
+   ],
+   [
+    "count",
+    0.01985995704914376
+   ],
+   [
+    "prev2_t",
+    0.01827265704817617
+   ],
+   [
+    "bat_seen_os",
+    0.017570930887904408
+   ],
+   [
+    "bat_seen_fb",
+    0.014559817582221005
+   ],
+   [
+    "game_prev_t",
+    0.014374867945658044
+   ],
+   [
+    "batter_logn",
+    0.013678622559803495
+   ],
+   [
+    "tree_logp_FF",
+    0.013170626398854374
+   ],
+   [
+    "game_share_FF",
+    0.012542949830365538
+   ],
+   [
+    "batter_share_FF",
+    0.012440661806320636
+   ],
+   [
+    "prev2_r",
+    0.012275011531395132
+   ],
+   [
+    "bat_seen_br",
+    0.011646460695269924
+   ],
+   [
+    "game_logn",
+    0.01155150363354617
+   ],
+   [
+    "ab_idx",
+    0.011281280956092394
+   ],
+   [
+    "prev_res_share_FF",
+    0.011277956055570332
+   ],
+   [
+    "prev_z",
+    0.010839063219450358
+   ],
+   [
+    "inning",
+    0.010813271404758034
+   ],
+   [
+    "prev_speed",
+    0.010677821067282331
+   ],
+   [
+    "bat_slg",
+    0.010529069068858747
+   ],
+   [
+    "batter_share_SI",
+    0.010377292816951296
+   ],
+   [
+    "all_share_SI",
+    0.009564391366226645
+   ]
+  ],
+  "importance_2026": [
+   [
+    "strikes",
+    0.031880250769504015
+   ],
+   [
+    "balls",
+    0.026659586552760295
+   ],
+   [
+    "prev_t",
+    0.022792373039575528
+   ],
+   [
+    "prev_r",
+    0.02214527780124258
+   ],
+   [
+    "game_prev_r",
+    0.021621688237896546
+   ],
+   [
+    "count",
+    0.02088454317440252
+   ],
+   [
+    "prev2_t",
+    0.019456617288576006
+   ],
+   [
+    "bat_seen_os",
+    0.017585033054093747
+   ],
+   [
+    "game_prev_t",
+    0.01584847575790266
+   ],
+   [
+    "bat_seen_fb",
+    0.015200130352231894
+   ],
+   [
+    "batter_logn",
+    0.014394886302715303
+   ],
+   [
+    "prev2_r",
+    0.01364646443647232
+   ],
+   [
+    "game_share_FF",
+    0.013107899697407116
+   ],
+   [
+    "tree_logp_FF",
+    0.012720099510400646
+   ],
+   [
+    "batter_share_FF",
+    0.012198178500671756
+   ],
+   [
+    "bat_seen_br",
+    0.012092498878080817
+   ],
+   [
+    "ab_idx",
+    0.0117767408064899
+   ],
+   [
+    "inning",
+    0.01157882361400065
+   ],
+   [
+    "prev_res_share_FF",
+    0.011117091919416901
+   ],
+   [
+    "game_logn",
+    0.010955212264999015
+   ],
+   [
+    "batter_share_SI",
+    0.010566115894526124
+   ],
+   [
+    "prev_z",
+    0.01032601765450144
+   ],
+   [
+    "bat_slg",
+    0.010154036881547767
+   ],
+   [
+    "prev_speed",
+    0.010048562565244395
+   ],
+   [
+    "tree_logp_SL",
+    0.009692781500140364
+   ]
+  ]
+ }
+}

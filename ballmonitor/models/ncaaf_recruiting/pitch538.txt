@@ -1,0 +1,54 @@
+Background:
+I have a degree in Economics from Brown where I played baseball. I was working on a Ph.D. in math and got involved with cryptography. I was part of the team that factored RSA-230 and decided to get more involved in writing code. 
+
+
+Thesis(1-3 sen):
+Team recruiting rankings can be accurate with just information about which schools have made offers.
+
+
+
+News Peg(1-3 sen):
+Many fan bases believe their recruits are underappreciated
+
+
+
+Evidence in hand(1 para):
+Strong correlation (r^2>.6?) between automated rankings and star-based rankings. Correlation between rankings and future results are about the same as with star-based rankings.
+
+
+
+Analysis completed(1-3 sen):
+I have scraped offer database from Rivals (could be ESPN). Use ELO via python scripts to rank them. 
+
+
+
+Expected length:
+1000-1500 words. Could be longer: historical rankings, correlation to on-field performance
+
+
+
+Visuals:
+Table of top teams. Comparison to star-based rankings. Can produce maps of where recruits come from/go. Line graphs of historic rec ranks.
+
+
+
+
+I am working on a relatively simple algorithm that ranks the recruiting classes of college football teams by using the data of which schools make offers. These rankings have similar performance to the standard star-based rankings with less opportunity for biased evaluations. Many fan bases believe their recruits are perpetually under appreciated, and this article would give a good idea of which schools really are favored by recruiting analysts.
+
+I have scraped the offer database from Rivals (but this could easily be replaced with ESPN's database with presumably similar results). Then I treat each recruit's commitment as a victory over the other schools that made offers. I use a multi-competitor version of ELO to determine which schools are harder to beat. Then each recruit gets a score based on the quality of the losing schools. These scores are added up for all the commitments for a given school and the school with the most points is ranked number 1.
+
+My current process is a bit janky so I am open to modifications, but the rankings seem to be pretty good so far. You can see a spreadsheet at ... with the last 10 years of my rankings, Rivals rankings, and on-field performance. I can also send you my Python code once I clean it up a bit.
+
+I expect to write about 1000 words to explain the algorithm and talk about the results for the class of 2021.  The only visual I would need to include is a table of the top teams in the rankings. I'd probably also include a fancier chart that visualizes which teams moved up/down compared to the recruiting experts. If you want, I can write more words about past years and how those results correlate to on-field performance with scatter plots.
+
+
+
+
+
+
+
+
+
+
+
+

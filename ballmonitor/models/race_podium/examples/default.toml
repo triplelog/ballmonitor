@@ -1,0 +1,34 @@
+# PLACEHOLDER: illustrative inputs — race history, runner names and times are invented, not real results.
+race_name = "Cherry Blossom 10 Mile"
+distance = "10mi"
+gender = "M"
+age_min = 40
+age_max = 44
+field_size = 140
+
+[[history]]
+year = 2021
+field_size = 110
+times = ["54:40", "55:25", "56:05", "56:50", "57:35"]
+
+[[history]]
+year = 2022
+field_size = 135
+times = ["54:10", "54:55", "55:40", "56:20", "57:05"]
+
+[[history]]
+year = 2023
+field_size = 125
+times = ["54:25", "55:10", "55:50", "56:35", "57:15"]
+
+[[prior_runners]]
+name = "Marcus Vance"
+gender = "M"
+age = 39
+time = "53:35"
+
+[[prior_runners]]
+name = "Brian Miller"
+gender = "M"
+age = 42
+time = "54:45"

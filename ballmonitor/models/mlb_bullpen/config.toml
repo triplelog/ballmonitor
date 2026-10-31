@@ -1,0 +1,898 @@
+[meta]
+title = "MLB bullpen usage"
+version = "0.6.0"
+status = "calibrated"
+question = "Which relievers will pitch out of the bullpen in today's game?"
+assumptions = [
+  "Bullpen calls follow a softmax over score = role base + situation bonus + recent usage + platoon - fatigue, with weights fitted on 2025 calls.",
+  "Roles not given are inferred from recent saves, holds and outs per outing.",
+  "Relievers who pitched max_consecutive_days days in a row, max_pitches_yesterday+ yesterday or max_pitches_3d+ over 3 days are unavailable.",
+  "Plate appearances use league-average event rates with a simple platoon split; pitcher, batter and team quality are ignored.",
+  "Starters are hooked by pitch count vs stamina, times through the order, late innings and jams; relievers usually pitch one inning.",
+  "The MLB 3-batter minimum rule is enforced before a reliever can be removed mid-inning.",
+  "Reported P(appear) blends the recalibrated simulation with a direct logistic model on pre-game features, plus a team bullpen-usage tendency term; P(first) blends the simulation with a direct first-reliever model. All weights were fitted on 2025.",
+  "Relievers marked active = false (IL, optioned, DFA) cannot pitch; the pool should be today's active roster.",
+  "Bullpen runs: each reliever's runs on the mound per out over earlier relief outings, shrunk heavily toward a prior; expected outs from the usage model; the bullpen sum is scaled by runs_scale (fitted on 2025). Inherited runners count against the pitcher on the mound; park, defence and opponent are not modelled. Per-game bullpen runs are very noisy: the predictable part is a few tenths of a run.",
+]
+
+[params.starter_stamina_default]
+value = 90.0
+description = "Default expected pitch limit for starting pitcher before hook probability spikes."
+source = "Modern MLB starter averages (Statcast 2021-2024)."
+range = [50.0, 115.0]
+
+[params.penalty_pitched_yesterday]
+value = 0.81
+description = "Score penalty if reliever pitched yesterday (1 day rest penalty)."
+source = "Fitted: conditional logit on 30k 2025 bullpen calls (train only); RESEARCH.md section 2."
+range = [0.0, 10.0]
+
+[params.penalty_back_to_back]
+value = 1.98
+description = "Score penalty if reliever pitched on both of the last two days."
+source = "Fitted: conditional logit on 30k 2025 bullpen calls (train only); RESEARCH.md section 2."
+range = [0.0, 10.0]
+
+[params.penalty_three_straight]
+value = -0.0
+description = "Extreme penalty if reliever pitched on 3 consecutive days."
+source = "Not identifiable: 3 straight days is a hard rule (max_consecutive_days = 3), so the fit has no such candidates. Raise only if you relax that rule."
+range = [0.0, 25.0]
+
+[params.penalty_per_10_pitches_3d]
+value = 0.26
+description = "Score penalty per 10 pitches thrown over trailing 3 days."
+source = "Fitted: conditional logit on 30k 2025 bullpen calls (train only); RESEARCH.md section 2."
+range = [0.0, 5.0]
+
+[params.penalty_high_workload_yesterday]
+value = 1.08
+description = "Score penalty if reliever threw 25+ pitches yesterday."
+source = "Fitted: conditional logit on 30k 2025 bullpen calls (train only); RESEARCH.md section 2."
+range = [0.0, 10.0]
+
+[params.li_extreme_threshold]
+value = 2.8
+description = "Leverage Index (LI) threshold for extreme/fireman jam situations."
+source = "Tom Tango LI convention."
+range = [1.5, 6.0]
+
+[params.off_day_tomorrow_discount]
+value = 1.0
+description = "Workload fatigue penalty discount if team has a scheduled off-day tomorrow."
+source = "Fitted: grid on 2025 calls (train log-likelihood); RESEARCH.md section 2."
+range = [0.0, 1.0]
+
+[params.platoon_bonus]
+value = 0.63
+description = "Score bonus when reliever hand matches platoon advantage vs upcoming 3 batters."
+source = "Fitted: conditional logit on 30k 2025 bullpen calls (train only); RESEARCH.md section 2."
+range = [0.0, 3.0]
+
+[params.temperature]
+value = 1.0
+description = "Softmax temperature over reliever scores (1 = as fitted; higher = less predictable choices)."
+source = "1 = the fitted logit coefficients as-is (RESEARCH.md section 2); raise for less predictable managers."
+range = [0.1, 5.0]
+
+[params.num_simulations]
+value = 500
+description = "Number of Monte Carlo game simulations to run."
+source = "Computational efficiency tradeoff."
+range = [50, 5000]
+
+[params.seed]
+value = 42
+description = "Random seed for the Monte Carlo simulation (same seed = same result)."
+source = "Reproducibility convention."
+range = [0, 1000000000]
+
+# --- Availability (hard rest rules) ---------------------------------------
+
+[params.max_consecutive_days]
+value = 3
+description = "Reliever is unavailable today after pitching on this many consecutive days (up to yesterday)."
+unit = "days"
+source = "RESEARCH.md section 3: 2025 relief appearance rate by workload (train only); rate above the threshold <= 2%."
+range = [2, 5]
+
+[params.max_pitches_yesterday]
+value = 35
+description = "Reliever is unavailable today after throwing this many pitches or more yesterday."
+unit = "pitches"
+source = "RESEARCH.md section 3: 2025 relief appearance rate by workload (train only); rate above the threshold <= 2%."
+range = [15, 80]
+
+[params.max_pitches_3d]
+value = 70
+description = "Reliever is unavailable today after this many pitches or more over the last 3 days."
+unit = "pitches"
+source = "RESEARCH.md section 3: 2025 relief appearance rate by workload (train only); rate above the threshold <= 2%."
+range = [25, 120]
+
+[params.high_workload_pitches]
+value = 25
+description = "Pitches yesterday at or above which `high_workload` = 1 in the fatigue_penalty formula."
+unit = "pitches"
+source = "Judgement."
+range = [10, 60]
+
+# --- Game engine ---------------------------------------------------------
+
+[params.pa_rates_batter_edge]
+value = [0.2, 0.1, 0.16, 0.055, 0.035]
+description = "Plate-appearance probabilities [strikeout, walk/HBP, single, double, home run] when the batter has the platoon edge (opposite hand or switch hitter); the rest are outs in play."
+source = "Set so simulated runs per team-game (both sides) are about the 2025 average of 4.46 (train data; RESEARCH.md engine check); platoon split by judgement."
+
+[params.pa_rates_pitcher_edge]
+value = [0.245, 0.08, 0.145, 0.045, 0.028]
+description = "Plate-appearance probabilities [strikeout, walk/HBP, single, double, home run] when the pitcher has the platoon edge (same hand)."
+source = "Set so simulated runs per team-game (both sides) are about the 2025 average of 4.46 (train data; RESEARCH.md engine check); platoon split by judgement."
+
+[params.offense_runs_cdf]
+value = [0.73, 0.87, 0.945, 0.982]
+description = "Our team's runs per half-inning as a cumulative distribution [P(0), P(<=1), P(<=2), P(<=3)]; 4+ runs = 4-6."
+source = "Set so simulated runs per team-game (both sides) are about the 2025 average of 4.46 (train data; RESEARCH.md engine check); platoon split by judgement."
+
+[params.pitches_per_pa]
+value = 3.65
+description = "Mean pitches per plate appearance in the simulated game (drives pitch-count hooks)."
+unit = "pitches"
+source = "Engine grid on a home/away-balanced 2025 train sample (v0.5.0): matches pool relievers per game and starter outs; RESEARCH.md section 2.2."
+range = [3.0, 5.0]
+
+[params.pitches_per_pa_sd]
+value = 1.25
+description = "Standard deviation of pitches per plate appearance (rounded normal, clipped to 1..12)."
+unit = "pitches"
+source = "Judgement (carried over from v0.3)."
+range = [0.5, 3.0]
+
+# --- Starter hook ---------------------------------------------------------
+
+[params.hook_force_ratio]
+value = 1.15
+description = "Starter is always pulled between innings once pitches / stamina reaches this ratio."
+source = "Engine grid, re-run in v0.5.0 on a home/away-balanced 2025 train sample (value unchanged): matches pool relievers per game and starter outs; RESEARCH.md section 2.2."
+range = [0.8, 1.5]
+
+[params.hook_soft_ratio]
+value = 1.05
+description = "Pitches / stamina ratio at which the starter may be pulled between innings (with hook_soft_prob)."
+source = "Engine grid, re-run in v0.5.0 on a home/away-balanced 2025 train sample (value unchanged): matches pool relievers per game and starter outs; RESEARCH.md section 2.2."
+range = [0.5, 1.2]
+
+[params.hook_soft_prob]
+value = 0.70
+description = "Probability the starter is pulled between innings once past hook_soft_ratio."
+source = "Judgement."
+range = [0.0, 1.0]
+
+[params.tto_batters]
+value = 21
+description = "Batters faced by the starter after which the times-through-the-order hook can fire between innings."
+unit = "batters"
+source = "Judgement; 3rd time through the order begins at batter 19 (Tango et al., The Book)."
+range = [9, 36]
+
+[params.tto_hook_prob]
+value = 0.1
+description = "Probability of the times-through-the-order hook between innings once past tto_batters."
+source = "Engine grid, re-run in v0.5.0 on a home/away-balanced 2025 train sample (value unchanged): matches pool relievers per game and starter outs; RESEARCH.md section 2.2."
+range = [0.0, 1.0]
+
+[params.late_hook_inning]
+value = 6
+description = "From this inning on, the starter may be pulled between innings regardless of pitch count (with late_hook_prob)."
+unit = "inning"
+source = "Judgement."
+range = [3, 9]
+
+[params.late_hook_prob]
+value = 0.1
+description = "Per-inning probability of the late-inning starter hook."
+source = "Engine grid, re-run in v0.5.0 on a home/away-balanced 2025 train sample (value unchanged): matches pool relievers per game and starter outs; RESEARCH.md section 2.2."
+range = [0.0, 1.0]
+
+[params.starter_max_over]
+value = 10
+description = "Starter is pulled mid-inning once pitches exceed stamina by this many."
+unit = "pitches"
+source = "Judgement."
+range = [0, 40]
+
+[params.jam_hook_ratio]
+value = 0.85
+description = "Pitches / stamina ratio from which a mid-inning jam (RISP or 2+ runs in) can trigger a starter hook."
+source = "Judgement."
+range = [0.3, 1.2]
+
+[params.jam_tto_batters]
+value = 18
+description = "Batters faced after which the stronger jam hook probability (jam_hook_prob_tto) applies."
+unit = "batters"
+source = "Judgement."
+range = [9, 36]
+
+[params.jam_hook_prob_tto]
+value = 0.4
+description = "Probability of a mid-inning starter hook in a jam once past jam_tto_batters."
+source = "Engine grid, re-run in v0.5.0 on a home/away-balanced 2025 train sample (value unchanged): matches pool relievers per game and starter outs; RESEARCH.md section 2.2."
+range = [0.0, 1.0]
+
+[params.jam_hook_prob]
+value = 0.2
+description = "Probability of a mid-inning starter hook in a jam before jam_tto_batters."
+source = "Engine grid, re-run in v0.5.0 on a home/away-balanced 2025 train sample (value unchanged): matches pool relievers per game and starter outs; RESEARCH.md section 2.2."
+range = [0.0, 1.0]
+
+[params.blowup_runs]
+value = 4
+description = "Runs allowed in one half-inning that force a mid-inning starter hook."
+unit = "runs"
+source = "Judgement."
+range = [2, 10]
+
+# --- Reliever hook --------------------------------------------------------
+
+[params.reliever_max_outs]
+value = 3
+description = "Closer/setup/middle relievers are pulled between innings after recording this many outs."
+unit = "outs"
+source = "Modern one-inning reliever convention."
+range = [1, 9]
+
+[params.reliever_extend_prob]
+value = 0.35
+description = "Probability a closer/setup/middle reliever who has reached reliever_max_outs is sent back out for one more inning."
+source = "Engine grid, re-run in v0.5.0 on a home/away-balanced 2025 train sample (value unchanged): matches pool relievers per game and starter outs; RESEARCH.md section 2.2."
+range = [0.0, 1.0]
+
+[params.reliever_max_pitches]
+value = 20
+description = "Closer/setup/middle relievers are pulled between innings after this many pitches."
+unit = "pitches"
+source = "Judgement."
+range = [5, 60]
+
+[params.long_max_outs]
+value = 6
+description = "Long relievers are pulled between innings after recording this many outs."
+unit = "outs"
+source = "Judgement."
+range = [3, 15]
+
+[params.long_max_pitches]
+value = 35
+description = "Long relievers are pulled between innings after this many pitches."
+unit = "pitches"
+source = "Judgement."
+range = [15, 90]
+
+[params.long_hook_prob]
+value = 0.25
+description = "Per-inning probability a long reliever is pulled early between innings."
+source = "Judgement."
+range = [0.0, 1.0]
+
+[params.reliever_mid_max_pitches]
+value = 35
+description = "After the 3-batter minimum, a reliever is pulled mid-inning at this many pitches."
+unit = "pitches"
+source = "Engine grid, re-run in v0.5.0 on a home/away-balanced 2025 train sample (value unchanged): matches pool relievers per game and starter outs; RESEARCH.md section 2.2."
+range = [10, 60]
+
+[params.reliever_mid_max_runs]
+value = 3
+description = "After the 3-batter minimum, a reliever is pulled mid-inning once this many runs score in the half."
+unit = "runs"
+source = "Engine grid, re-run in v0.5.0 on a home/away-balanced 2025 train sample (value unchanged): matches pool relievers per game and starter outs; RESEARCH.md section 2.2."
+range = [1, 10]
+
+[params.reliever_traffic_pitches]
+value = 20
+description = "With runners on and this many pitches, a reliever may be pulled mid-inning (reliever_traffic_hook_prob)."
+unit = "pitches"
+source = "Judgement."
+range = [5, 60]
+
+[params.reliever_traffic_hook_prob]
+value = 0.3
+description = "Probability of pulling a tiring reliever with runners on (see reliever_traffic_pitches)."
+source = "Engine grid, re-run in v0.5.0 on a home/away-balanced 2025 train sample (value unchanged): matches pool relievers per game and starter outs; RESEARCH.md section 2.2."
+range = [0.0, 1.0]
+
+# --- Situational choice adjustments ---------------------------------------
+
+[params.close_game_inning]
+value = 7
+description = "From this inning on, a close game (see close_lead_max / close_deficit_max) counts as high leverage."
+unit = "inning"
+source = "'Close and late' convention (7th inning or later)."
+range = [1, 9]
+
+[params.close_lead_max]
+value = 2
+description = "Largest lead that still counts as a close game late."
+unit = "runs"
+source = "Judgement."
+range = [0, 5]
+
+[params.close_deficit_max]
+value = 1
+description = "Largest deficit that still counts as a close game late (trailing by 1 late -> setup arms)."
+unit = "runs"
+source = "Judgement."
+range = [0, 5]
+
+[params.blowout_margin]
+value = 5
+description = "Score margin (either way) at or above which the situation is a blowout."
+unit = "runs"
+source = "Judgement."
+range = [2, 15]
+
+[params.early_exit_inning]
+value = 4
+description = "If the starter leaves in or before this inning, long relievers get early_exit_long_boost."
+unit = "inning"
+source = "Judgement."
+range = [1, 9]
+
+[params.platoon_min_batters]
+value = 2
+description = "Same-handed batters needed among the next 3 for a reliever to get platoon_bonus."
+unit = "batters"
+source = "Judgement."
+range = [1, 3]
+
+# --- Reliever choice score ------------------------------------------------
+# score = role base + situation bonus + usage term + platoon - fatigue, softmax / temperature.
+# Middle relievers and the "middle" situation (innings early_exit_inning+1 ..
+# close_game_inning-1, not a blowout) are the reference: their base/bonus is 0.
+
+[params.role_closer]
+value = -2.19
+description = "Base score of the closer in the reference (middle-innings) situation, relative to a middle reliever (0)."
+source = "Fitted: conditional logit on 30k 2025 bullpen calls (train only); RESEARCH.md section 2."
+range = [-10.0, 10.0]
+
+[params.role_setup]
+value = 0.06
+description = "Base score of a setup man in the reference (middle-innings) situation, relative to a middle reliever (0)."
+source = "Fitted: conditional logit on 30k 2025 bullpen calls (train only); RESEARCH.md section 2."
+range = [-10.0, 10.0]
+
+[params.role_long]
+value = -0.05
+description = "Base score of a long reliever in the reference (middle-innings) situation, relative to a middle reliever (0)."
+source = "Fitted: conditional logit on 30k 2025 bullpen calls (train only); RESEARCH.md section 2."
+range = [-10.0, 10.0]
+
+[params.sit_early_closer]
+value = -1.36
+description = "Score bonus for a closer reliever in the 'early' situation (starter out by inning early_exit_inning (not a blowout)); middle relievers get 0."
+source = "Fitted: conditional logit on 30k 2025 bullpen calls (train only); RESEARCH.md section 2."
+range = [-10.0, 10.0]
+
+[params.sit_early_setup]
+value = -1.06
+description = "Score bonus for a setup reliever in the 'early' situation (starter out by inning early_exit_inning (not a blowout)); middle relievers get 0."
+source = "Fitted: conditional logit on 30k 2025 bullpen calls (train only); RESEARCH.md section 2."
+range = [-10.0, 10.0]
+
+[params.sit_early_long]
+value = 0.42
+description = "Score bonus for a long reliever in the 'early' situation (starter out by inning early_exit_inning (not a blowout)); middle relievers get 0."
+source = "Fitted: conditional logit on 30k 2025 bullpen calls (train only); RESEARCH.md section 2."
+range = [-10.0, 10.0]
+
+[params.sit_late_other_closer]
+value = 1.51
+description = "Score bonus for a closer reliever in the 'late_other' situation (inning >= close_game_inning, neither close nor a blowout); middle relievers get 0."
+source = "Fitted: conditional logit on 30k 2025 bullpen calls (train only); RESEARCH.md section 2."
+range = [-10.0, 10.0]
+
+[params.sit_late_other_setup]
+value = -0.07
+description = "Score bonus for a setup reliever in the 'late_other' situation (inning >= close_game_inning, neither close nor a blowout); middle relievers get 0."
+source = "Fitted: conditional logit on 30k 2025 bullpen calls (train only); RESEARCH.md section 2."
+range = [-10.0, 10.0]
+
+[params.sit_late_other_long]
+value = -0.32
+description = "Score bonus for a long reliever in the 'late_other' situation (inning >= close_game_inning, neither close nor a blowout); middle relievers get 0."
+source = "Fitted: conditional logit on 30k 2025 bullpen calls (train only); RESEARCH.md section 2."
+range = [-10.0, 10.0]
+
+[params.sit_late_close_closer]
+value = 1.58
+description = "Score bonus for a closer reliever in the 'late_close' situation (inning >= close_game_inning (before the 9th), close game); middle relievers get 0."
+source = "Fitted: conditional logit on 30k 2025 bullpen calls (train only); RESEARCH.md section 2."
+range = [-10.0, 10.0]
+
+[params.sit_late_close_setup]
+value = 1.03
+description = "Score bonus for a setup reliever in the 'late_close' situation (inning >= close_game_inning (before the 9th), close game); middle relievers get 0."
+source = "Fitted: conditional logit on 30k 2025 bullpen calls (train only); RESEARCH.md section 2."
+range = [-10.0, 10.0]
+
+[params.sit_late_close_long]
+value = -0.62
+description = "Score bonus for a long reliever in the 'late_close' situation (inning >= close_game_inning (before the 9th), close game); middle relievers get 0."
+source = "Fitted: conditional logit on 30k 2025 bullpen calls (train only); RESEARCH.md section 2."
+range = [-10.0, 10.0]
+
+[params.sit_fireman_closer]
+value = 2.2
+description = "Score bonus for a closer reliever in the 'fireman' situation (inning >= close_game_inning (before the 9th), close game and LI >= li_extreme_threshold); middle relievers get 0."
+source = "Fitted: conditional logit on 30k 2025 bullpen calls (train only); RESEARCH.md section 2."
+range = [-10.0, 10.0]
+
+[params.sit_fireman_setup]
+value = 1.04
+description = "Score bonus for a setup reliever in the 'fireman' situation (inning >= close_game_inning (before the 9th), close game and LI >= li_extreme_threshold); middle relievers get 0."
+source = "Fitted: conditional logit on 30k 2025 bullpen calls (train only); RESEARCH.md section 2."
+range = [-10.0, 10.0]
+
+[params.sit_fireman_long]
+value = -0.57
+description = "Score bonus for a long reliever in the 'fireman' situation (inning >= close_game_inning (before the 9th), close game and LI >= li_extreme_threshold); middle relievers get 0."
+source = "Fitted: conditional logit on 30k 2025 bullpen calls (train only); RESEARCH.md section 2."
+range = [-10.0, 10.0]
+
+[params.sit_save_closer]
+value = 6.37
+description = "Score bonus for a closer reliever in the 'save' situation (inning >= 9 with a lead of 1..save_lead_max); middle relievers get 0."
+source = "Fitted: conditional logit on 30k 2025 bullpen calls (train only); RESEARCH.md section 2."
+range = [-10.0, 10.0]
+
+[params.sit_save_setup]
+value = 1.42
+description = "Score bonus for a setup reliever in the 'save' situation (inning >= 9 with a lead of 1..save_lead_max); middle relievers get 0."
+source = "Fitted: conditional logit on 30k 2025 bullpen calls (train only); RESEARCH.md section 2."
+range = [-10.0, 10.0]
+
+[params.sit_save_long]
+value = -0.58
+description = "Score bonus for a long reliever in the 'save' situation (inning >= 9 with a lead of 1..save_lead_max); middle relievers get 0."
+source = "Fitted: conditional logit on 30k 2025 bullpen calls (train only); RESEARCH.md section 2."
+range = [-10.0, 10.0]
+
+[params.sit_late_tie_closer]
+value = 4.08
+description = "Score bonus for a closer reliever in the 'late_tie' situation (inning >= 9, tied or trailing by <= close_deficit_max); middle relievers get 0."
+source = "Fitted: conditional logit on 30k 2025 bullpen calls (train only); RESEARCH.md section 2."
+range = [-10.0, 10.0]
+
+[params.sit_late_tie_setup]
+value = 0.81
+description = "Score bonus for a setup reliever in the 'late_tie' situation (inning >= 9, tied or trailing by <= close_deficit_max); middle relievers get 0."
+source = "Fitted: conditional logit on 30k 2025 bullpen calls (train only); RESEARCH.md section 2."
+range = [-10.0, 10.0]
+
+[params.sit_late_tie_long]
+value = -0.44
+description = "Score bonus for a long reliever in the 'late_tie' situation (inning >= 9, tied or trailing by <= close_deficit_max); middle relievers get 0."
+source = "Fitted: conditional logit on 30k 2025 bullpen calls (train only); RESEARCH.md section 2."
+range = [-10.0, 10.0]
+
+[params.sit_blowout_closer]
+value = 0.44
+description = "Score bonus for a closer reliever in the 'blowout' situation (margin >= blowout_margin either way); middle relievers get 0."
+source = "Fitted: conditional logit on 30k 2025 bullpen calls (train only); RESEARCH.md section 2."
+range = [-10.0, 10.0]
+
+[params.sit_blowout_setup]
+value = -0.98
+description = "Score bonus for a setup reliever in the 'blowout' situation (margin >= blowout_margin either way); middle relievers get 0."
+source = "Fitted: conditional logit on 30k 2025 bullpen calls (train only); RESEARCH.md section 2."
+range = [-10.0, 10.0]
+
+[params.sit_blowout_long]
+value = 0.13
+description = "Score bonus for a long reliever in the 'blowout' situation (margin >= blowout_margin either way); middle relievers get 0."
+source = "Fitted: conditional logit on 30k 2025 bullpen calls (train only); RESEARCH.md section 2."
+range = [-10.0, 10.0]
+
+[params.save_lead_max]
+value = 3
+description = "Largest lead in the 9th inning or later that counts as a save situation."
+unit = "runs"
+source = "MLB Rule 9.19 (lead of 3 or fewer)."
+range = [1, 5]
+
+# --- Usage propensity (who the manager actually uses) ------------------------
+
+[params.usage_weight]
+value = 0.58
+description = "Weight of the usage term usage_weight * ln(rate / usage_prior_rate); rate = shrunk share of recent roster-games the reliever pitched in."
+source = "Fitted: conditional logit on 30k 2025 bullpen calls (train only); RESEARCH.md section 2."
+range = [0.0, 5.0]
+
+[params.usage_prior_games]
+value = 1
+description = "Pseudo-games of shrinkage toward usage_prior_rate when computing a reliever's appearance rate (more = trust history less)."
+unit = "games"
+source = "Fitted: grid on 2025 calls (train log-likelihood); RESEARCH.md section 2."
+range = [0, 60]
+
+[params.usage_prior_rate]
+value = 0.387
+description = "Prior (league-average) relief appearance rate per roster-game; arms with no history get this rate (usage term 0)."
+source = "2025 average relief appearance rate per roster-game (train); RESEARCH.md."
+range = [0.05, 0.9]
+
+# --- Role inference from usage history (when a reliever's role is not given) ---
+
+[params.closer_min_saves]
+value = 2
+description = "Closer = reliever with the most saves in his recent history, if at least this many."
+unit = "saves"
+source = "Fitted: grid on 2025 calls (train log-likelihood); RESEARCH.md section 2."
+range = [1, 20]
+
+[params.setup_count]
+value = 4
+description = "Number of setup men inferred: the top relievers by holds (after the closer)."
+source = "Fitted: grid on 2025 calls (train log-likelihood); RESEARCH.md section 2."
+range = [0, 5]
+
+[params.setup_min_holds]
+value = 2
+description = "Minimum holds in recent history to be inferred a setup man."
+unit = "holds"
+source = "Fitted: grid on 2025 calls (train log-likelihood); RESEARCH.md section 2."
+range = [1, 20]
+
+[params.long_min_outs_per_app]
+value = 4.5
+description = "Long reliever = averages at least this many outs per relief outing (4.5 = 1.5 IP)."
+unit = "outs"
+source = "Fitted: grid on 2025 calls (train log-likelihood); RESEARCH.md section 2."
+range = [3.0, 12.0]
+
+[params.role_min_apps]
+value = 3
+description = "Relief outings needed before the long-reliever rule applies."
+unit = "appearances"
+source = "Judgement."
+range = [1, 20]
+
+# --- v0.5: post-simulation calibration, team tendency, direct model -----------
+# Reported P(appear) = logistic(formula appear_logit); see calibration.py and MODEL.md.
+
+[params.calib_intercept_closer]
+value = 0.065
+description = "Recalibration intercept (log-odds) for closers in formula appear_logit."
+source = "Fitted (v0.5.0): logistic blend on 2025 reliever-games with out-of-fold direct predictions (train only); RESEARCH.md section 2.4."
+range = [-5.0, 5.0]
+
+[params.calib_intercept_setup]
+value = 0.017
+description = "Recalibration intercept (log-odds) for setup men in formula appear_logit."
+source = "Fitted (v0.5.0): logistic blend on 2025 reliever-games with out-of-fold direct predictions (train only); RESEARCH.md section 2.4."
+range = [-5.0, 5.0]
+
+[params.calib_intercept_middle]
+value = 0.039
+description = "Recalibration intercept (log-odds) for middle relievers in formula appear_logit."
+source = "Fitted (v0.5.0): logistic blend on 2025 reliever-games with out-of-fold direct predictions (train only); RESEARCH.md section 2.4."
+range = [-5.0, 5.0]
+
+[params.calib_intercept_long]
+value = 0.006
+description = "Recalibration intercept (log-odds) for long relievers in formula appear_logit."
+source = "Fitted (v0.5.0): logistic blend on 2025 reliever-games with out-of-fold direct predictions (train only); RESEARCH.md section 2.4."
+range = [-5.0, 5.0]
+
+[params.calib_slope]
+value = 0.441
+description = "Recalibration slope on logit(P_sim) in formula appear_logit (< 1 shrinks over-confident simulated probabilities toward the middle)."
+source = "Fitted (v0.5.0): logistic blend on 2025 reliever-games with out-of-fold direct predictions (train only); RESEARCH.md section 2.4."
+range = [0.0, 3.0]
+
+[params.tendency_weight]
+value = 0.5
+description = "Weight of the team bullpen-usage log ratio in formula appear_logit (1 ~ appearance odds scale with the team's relievers per game)."
+source = "Fitted (v0.5.0): logistic blend on 2025 reliever-games with out-of-fold direct predictions (train only); RESEARCH.md section 2.4."
+range = [-5.0, 5.0]
+
+[params.tendency_prior_games]
+value = 40.0
+description = "Pseudo-games of shrinkage of a team's recent relievers per game toward the recent league average (empirical Bayes)."
+unit = "games"
+source = "Grid on 2025 train log-likelihood (v0.5.0, window 80 team-games); RESEARCH.md section 2.2."
+range = [0.0, 500.0]
+
+[params.bullpen_baseline_relievers]
+value = 3.26
+description = "Pool relievers used per team-game in 2025 (the level the hook settings are tuned to); the tendency ratio is relative to it."
+unit = "relievers"
+source = "2025 average pool relievers used per team-game (train); RESEARCH.md section 1."
+range = [1.0, 6.0]
+
+[params.blend_weight_direct]
+value = 0.63
+description = "Weight of logit(P_direct) (direct logistic model) in formula appear_logit; 0 = simulation only."
+source = "Fitted (v0.5.0): logistic blend on 2025 reliever-games with out-of-fold direct predictions (train only); RESEARCH.md section 2.4."
+range = [0.0, 3.0]
+
+[params.first_weight_sim]
+value = 0.225
+description = "Weight of ln P_sim(first) in the first-reliever softmax (1 with first_weight_direct = 0: the simulation as-is; 1/weight acts as a temperature)."
+source = "Fitted (v0.5.0): first-reliever blend on 2025 games with out-of-fold direct scores (train only); RESEARCH.md section 2.4."
+range = [0.0, 3.0]
+
+[params.first_weight_direct]
+value = 0.849
+description = "Weight of the first-reliever direct score (sum of first_direct_<feature> x feature) in the first-reliever softmax."
+source = "Fitted (v0.5.0): first-reliever blend on 2025 games with out-of-fold direct scores (train only); RESEARCH.md section 2.4."
+range = [0.0, 3.0]
+
+[params.first_prior_rate]
+value = 0.118
+description = "League rate of being first out of the pen per roster-game; prior of the shrunk first-out rate in the first-reliever direct model."
+source = "2025 average first-out-of-the-pen rate per roster-game (train); RESEARCH.md."
+range = [0.01, 0.5]
+
+[params.first_prior_games]
+value = 10.0
+description = "Pseudo-games of shrinkage toward first_prior_rate in the first-reliever direct model."
+unit = "games"
+source = "Judgement (same shrinkage as the usage-frequency benchmark)."
+range = [0.0, 100.0]
+
+[params.first_direct_first_rate]
+value = 0.711
+description = "First-reliever direct weight on ln(shrunk first-out-of-the-pen rate / first_prior_rate)."
+source = "Fitted (v0.5.0): conditional logit for the first reliever on 2025 games (train only, ridge 1); RESEARCH.md section 2.4."
+range = [-20.0, 20.0]
+
+[params.first_direct_role_closer]
+value = -1.203
+description = "First-reliever direct weight: (inferred) closer."
+source = "Fitted (v0.5.0): conditional logit for the first reliever on 2025 games (train only, ridge 1); RESEARCH.md section 2.4."
+range = [-20.0, 20.0]
+
+[params.first_direct_role_setup]
+value = 0.109
+description = "First-reliever direct weight: (inferred) setup man."
+source = "Fitted (v0.5.0): conditional logit for the first reliever on 2025 games (train only, ridge 1); RESEARCH.md section 2.4."
+range = [-20.0, 20.0]
+
+[params.first_direct_role_long]
+value = -0.155
+description = "First-reliever direct weight: (inferred) long man."
+source = "Fitted (v0.5.0): conditional logit for the first reliever on 2025 games (train only, ridge 1); RESEARCH.md section 2.4."
+range = [-20.0, 20.0]
+
+[params.first_direct_yesterday]
+value = -0.893
+description = "First-reliever direct weight: pitched yesterday."
+source = "Fitted (v0.5.0): conditional logit for the first reliever on 2025 games (train only, ridge 1); RESEARCH.md section 2.4."
+range = [-20.0, 20.0]
+
+[params.first_direct_back_to_back]
+value = -1.712
+description = "First-reliever direct weight: pitched yesterday and the day before."
+source = "Fitted (v0.5.0): conditional logit for the first reliever on 2025 games (train only, ridge 1); RESEARCH.md section 2.4."
+range = [-20.0, 20.0]
+
+[params.first_direct_pitches_3d]
+value = -0.247
+description = "First-reliever direct weight per 10 pitches over the last 3 days."
+source = "Fitted (v0.5.0): conditional logit for the first reliever on 2025 games (train only, ridge 1); RESEARCH.md section 2.4."
+range = [-20.0, 20.0]
+
+[params.first_direct_high_workload]
+value = -1.505
+description = "First-reliever direct weight: high_workload_pitches+ pitches yesterday."
+source = "Fitted (v0.5.0): conditional logit for the first reliever on 2025 games (train only, ridge 1); RESEARCH.md section 2.4."
+range = [-20.0, 20.0]
+
+[params.first_direct_unavailable]
+value = -1.405
+description = "First-reliever direct weight: ruled out by the hard rest rules."
+source = "Fitted (v0.5.0): conditional logit for the first reliever on 2025 games (train only, ridge 1); RESEARCH.md section 2.4."
+range = [-20.0, 20.0]
+
+[params.first_direct_long_x_starter]
+value = -0.758
+description = "First-reliever direct weight on role_long x ln(starter_stamina / starter_stamina_default)."
+source = "Fitted (v0.5.0): conditional logit for the first reliever on 2025 games (train only, ridge 1); RESEARCH.md section 2.4."
+range = [-20.0, 20.0]
+
+[params.first_direct_setup_x_starter]
+value = 1.091
+description = "First-reliever direct weight on role_setup x ln(starter_stamina / starter_stamina_default)."
+source = "Fitted (v0.5.0): conditional logit for the first reliever on 2025 games (train only, ridge 1); RESEARCH.md section 2.4."
+range = [-20.0, 20.0]
+
+[params.first_direct_new_arrival]
+value = -0.187
+description = "First-reliever direct weight: joined the active roster today."
+source = "Fitted (v0.5.0): conditional logit for the first reliever on 2025 games (train only, ridge 1); RESEARCH.md section 2.4."
+range = [-20.0, 20.0]
+
+[params.direct_intercept]
+value = 2.53
+description = "Intercept (log-odds) of the direct model."
+source = "Fitted (v0.5.0): direct logistic regression on 2025 reliever-games (train only, ridge 1); RESEARCH.md section 2.4."
+range = [-20.0, 20.0]
+
+[params.direct_role_closer]
+value = 0.007
+description = "Direct-model weight: reliever is the (inferred) closer."
+source = "Fitted (v0.5.0): direct logistic regression on 2025 reliever-games (train only, ridge 1); RESEARCH.md section 2.4."
+range = [-20.0, 20.0]
+
+[params.direct_role_setup]
+value = 0.098
+description = "Direct-model weight: reliever is an (inferred) setup man."
+source = "Fitted (v0.5.0): direct logistic regression on 2025 reliever-games (train only, ridge 1); RESEARCH.md section 2.4."
+range = [-20.0, 20.0]
+
+[params.direct_role_long]
+value = -0.296
+description = "Direct-model weight: reliever is an (inferred) long man."
+source = "Fitted (v0.5.0): direct logistic regression on 2025 reliever-games (train only, ridge 1); RESEARCH.md section 2.4."
+range = [-20.0, 20.0]
+
+[params.direct_usage]
+value = 0.714
+description = "Direct-model weight on ln(shrunk recent appearance rate / usage_prior_rate)."
+source = "Fitted (v0.5.0): direct logistic regression on 2025 reliever-games (train only, ridge 1); RESEARCH.md section 2.4."
+range = [-20.0, 20.0]
+
+[params.direct_yesterday]
+value = -0.973
+description = "Direct-model weight: pitched yesterday."
+source = "Fitted (v0.5.0): direct logistic regression on 2025 reliever-games (train only, ridge 1); RESEARCH.md section 2.4."
+range = [-20.0, 20.0]
+
+[params.direct_back_to_back]
+value = -1.698
+description = "Direct-model weight: pitched yesterday and the day before."
+source = "Fitted (v0.5.0): direct logistic regression on 2025 reliever-games (train only, ridge 1); RESEARCH.md section 2.4."
+range = [-20.0, 20.0]
+
+[params.direct_two_days_ago]
+value = -0.328
+description = "Direct-model weight: pitched 2 days ago but not yesterday."
+source = "Fitted (v0.5.0): direct logistic regression on 2025 reliever-games (train only, ridge 1); RESEARCH.md section 2.4."
+range = [-20.0, 20.0]
+
+[params.direct_pitches_3d]
+value = -0.24
+description = "Direct-model weight per 10 pitches over the last 3 days."
+source = "Fitted (v0.5.0): direct logistic regression on 2025 reliever-games (train only, ridge 1); RESEARCH.md section 2.4."
+range = [-20.0, 20.0]
+
+[params.direct_high_workload]
+value = -1.054
+description = "Direct-model weight: high_workload_pitches+ pitches yesterday."
+source = "Fitted (v0.5.0): direct logistic regression on 2025 reliever-games (train only, ridge 1); RESEARCH.md section 2.4."
+range = [-20.0, 20.0]
+
+[params.direct_unavailable]
+value = -1.515
+description = "Direct-model weight: ruled out by the hard rest rules."
+source = "Fitted (v0.5.0): direct logistic regression on 2025 reliever-games (train only, ridge 1); RESEARCH.md section 2.4."
+range = [-20.0, 20.0]
+
+[params.direct_starter_length]
+value = -0.373
+description = "Direct-model weight on ln(starter_stamina / starter_stamina_default) (short starter < 0)."
+source = "Fitted (v0.5.0): direct logistic regression on 2025 reliever-games (train only, ridge 1); RESEARCH.md section 2.4."
+range = [-20.0, 20.0]
+
+[params.direct_long_x_starter]
+value = -0.194
+description = "Direct-model weight on role_long x ln(starter_stamina / starter_stamina_default)."
+source = "Fitted (v0.5.0): direct logistic regression on 2025 reliever-games (train only, ridge 1); RESEARCH.md section 2.4."
+range = [-20.0, 20.0]
+
+[params.direct_off_day_tomorrow]
+value = 0.28
+description = "Direct-model weight: team is off tomorrow."
+source = "Fitted (v0.5.0): direct logistic regression on 2025 reliever-games (train only, ridge 1); RESEARCH.md section 2.4."
+range = [-20.0, 20.0]
+
+[params.direct_is_home]
+value = 0.156
+description = "Direct-model weight: home team."
+source = "Fitted (v0.5.0): direct logistic regression on 2025 reliever-games (train only, ridge 1); RESEARCH.md section 2.4."
+range = [-20.0, 20.0]
+
+[params.direct_log_available]
+value = -1.056
+description = "Direct-model weight on ln(number of available arms in the pool)."
+source = "Fitted (v0.5.0): direct logistic regression on 2025 reliever-games (train only, ridge 1); RESEARCH.md section 2.4."
+range = [-20.0, 20.0]
+
+[params.direct_tendency]
+value = 1.0
+description = "Direct-model weight on the team bullpen-usage log ratio (see tendency_prior_games)."
+source = "Fitted (v0.5.0): direct logistic regression on 2025 reliever-games (train only, ridge 1); RESEARCH.md section 2.4."
+range = [-20.0, 20.0]
+
+[params.direct_new_arrival]
+value = -0.38
+description = "Direct-model weight: joined the active roster today."
+source = "Fitted (v0.5.0): direct logistic regression on 2025 reliever-games (train only, ridge 1); RESEARCH.md section 2.4."
+range = [-20.0, 20.0]
+
+[params.runs_prior_outs]
+value = 300.0
+description = "Bullpen runs: pseudo-outs of the prior in each reliever's rating (runs per out). Larger = ratings closer to runs_prior_rate."
+unit = "outs"
+source = "Fitted on 2025 (train), checked on 2026; RESEARCH_RUNS.md section 1 (monthly prediction of 2025 relief runs per out; flat between 200 and 600)."
+range = [0.0, 5000.0]
+
+[params.runs_prior_rate]
+value = 0.19
+description = "Bullpen runs: prior runs per out a reliever's rating is shrunk toward; also the rating of an arm with no relief history."
+unit = "runs/out"
+source = "Fitted on 2025 (train), checked on 2026; RESEARCH_RUNS.md section 1 (slightly above the 2025 league reliever rate: arms without history ran at 0.190)."
+range = [0.05, 0.5]
+
+[params.runs_league_rate]
+value = 0.1841
+description = "Bullpen runs: league-average reliever runs on the mound per out; the 'vs average' baseline."
+unit = "runs/out"
+source = "2025 MLB relief appearances, runs scored while on the mound / outs (MLB Stats API play-by-play); RESEARCH_RUNS.md section 1."
+range = [0.05, 0.5]
+
+[params.runs_outs_source]
+value = "reported"
+description = "Bullpen runs: expected outs per reliever = 'reported' (P(appear) x simulated outs per simulated appearance) or 'simulated' (simulated outs per game)."
+source = "Fitted on 2025 (train), checked on 2026; RESEARCH_RUNS.md section 1 (reported: 2025 R2 0.0176 vs 0.0105)."
+choices = ["reported", "simulated"]
+
+[params.runs_default_outs_per_app]
+value = 3.35
+description = "Bullpen runs: outs per appearance assumed for an arm that never appeared in the simulation (only used with runs_outs_source = 'reported')."
+unit = "outs"
+source = "2025 MLB mean outs per relief appearance (16,010 appearances, MLB Stats API box scores)."
+range = [0.0, 27.0]
+
+[params.runs_scale]
+value = 1.92
+description = "Bullpen runs: multiplier on the summed rating differences. Individually shrunk ratings miss what a team's relievers share (park, defence), so a raw run is worth about two."
+source = "Fitted on 2025 (train), checked on 2026; RESEARCH_RUNS.md section 5 (2025 slope of bullpen runs on the raw 'vs average' sum given the workload, 1.92 +- 0.53 team-clustered; 2026 out of sample 1.93 +- 0.46). 1 = raw sums."
+range = [0.0, 5.0]
+
+[params.runs_interval_halfwidth]
+value = 0.67
+description = "Bullpen runs: interval half-width per square root of expected bullpen outs (interval = estimate +- this x sqrt(outs), floored at zero bullpen runs)."
+unit = "runs/sqrt(out)"
+source = "Fitted on 2025 (train), checked on 2026; RESEARCH_RUNS.md section 5 (80th percentile of |actual - expected| / sqrt(outs) on 2025; 2026 coverage 80.0%)."
+range = [0.0, 5.0]
+
+[params.runs_interval_level]
+value = 0.8
+description = "Bullpen runs: coverage the interval half-width was fitted for (display only; refit runs_interval_halfwidth to change it)."
+source = "Fitted on 2025 (train), checked on 2026; RESEARCH_RUNS.md section 5."
+range = [0.5, 0.99]
+
+[formulas.fatigue_penalty]
+expr = "penalty_pitched_yesterday * yesterday + penalty_back_to_back * back_to_back + penalty_three_straight * three_straight + penalty_per_10_pitches_3d * pitches_3d / 10 + penalty_high_workload_yesterday * high_workload"
+description = "Total rest and workload penalty; components evaluated against trailing workload ledger."
+variables = ["yesterday", "back_to_back", "three_straight", "pitches_3d", "high_workload"]
+
+[formulas.appear_logit]
+expr = "role_intercept + calib_slope * logit_sim + tendency_weight * log_ratio + blend_weight_direct * logit_direct"
+description = "Log-odds of the reported appearance probability: recalibrated simulation frequency (role_intercept = calib_intercept_<role>) + team usage tendency + optional direct-model blend."
+variables = ["logit_sim", "role_intercept", "log_ratio", "logit_direct"]
+
+
+[formulas.reliever_rating]
+expr = "(ra_runs + runs_prior_outs * runs_prior_rate) / (ra_outs + runs_prior_outs)"
+description = "Reliever run-prevention rating (runs per out): runs on the mound over earlier relief outings, shrunk toward runs_prior_rate with runs_prior_outs pseudo-outs."
+variables = ["ra_runs", "ra_outs"]
+
+[formulas.bullpen_runs_vs]
+expr = "runs_scale * (expected_runs - expected_outs * baseline_rate)"
+description = "Bullpen runs vs a baseline: expected_runs = sum of expected outs x rating, expected_outs = their sum, baseline_rate = runs_league_rate ('vs average') or the usual-mix rating ('vs usual')."
+variables = ["expected_runs", "expected_outs", "baseline_rate"]

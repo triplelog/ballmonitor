@@ -1,0 +1,6 @@
+description = "Margin SDs 1.5x the measured game noise (less blowout compression). In RESEARCH.md this predicted second-half schedule-adjusted margin better than the defaults on the 2021+ test seasons, but it was not chosen on the development seasons — treat as a hindsight lead, not a validated default."
+
+[params]
+basketball_margin_sd = 15.9
+wbb_margin_sd = 16.8
+football_margin_sd = 20.7

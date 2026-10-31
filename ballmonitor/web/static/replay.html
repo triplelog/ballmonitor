@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ballmonitor replay renderer</title>
+  <style>html, body { margin: 0; background: #0b1020; } canvas { display: block; }</style>
+</head>
+<body>
+  <!-- Frame renderer used by `ballmonitor export-replay`: loadReplay(extras), then renderAt(t)
+       returns one JPEG frame (data URL). The website player uses the same replay.js. -->
+  <canvas id="frame" width="1080" height="1920"></canvas>
+  <script src="replay.js"></script>
+  <script>
+    let renderer = null;
+    const canvas = document.getElementById("frame");
+    const ctx = canvas.getContext("2d");
+    window.loadReplay = (extras) => { renderer = new ReplayRenderer(extras); return renderer.duration; };
+    window.renderAt = (t, quality) => {
+      renderer.draw(ctx, t);
+      return canvas.toDataURL("image/jpeg", quality || 0.92);
+    };
+  </script>
+</body>
+</html>

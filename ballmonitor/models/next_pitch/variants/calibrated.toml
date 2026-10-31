@@ -1,0 +1,5 @@
+description = "Boosted model with residual scaling gbm_weight = 0.95 and temperature = 1.05. Chosen by looking at data/backtest.csv (43.2% top pick vs 42.9%; log loss unchanged), so the gain is in-sample, not out-of-sample evidence."
+
+[params]
+gbm_weight = 0.95
+temperature = 1.05

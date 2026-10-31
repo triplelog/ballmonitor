@@ -1,0 +1,135 @@
+# REAL pre-game inputs: NYY vs TB, 2026-09-23 (MLB game_pk 823492),
+# built by fetch.py from MLB Stats API box scores (only information known before first pitch).
+# Roles are not given, so the model infers them from each reliever's usage history
+# (games/apps/... = his last 30 roster-games). Add role = "closer" etc. to override.
+# The pool is the game-day active roster; add active = false for an arm who is unavailable
+# (IL, optioned) and new_arrival = true for one who joined the roster today.
+# Run prevention (v0.6.0): ra_outs / ra_runs = each reliever's outs and runs on the mound over
+# all his earlier relief outings in the data (from 2025 opening day).
+# What happened (not an input): bullpen allowed 0 runs in 10 outs; relievers used in order = Brent Headrick, John Schreiber, Tim Hill, Paul Blackburn, David Bednar.
+starter_name = "Gerrit Cole"
+starter_hand = "R"
+starter_stamina = 84
+is_home = true
+off_day_tomorrow = false
+
+# Team bullpen-usage tendency (pre-game, earlier dates only): pool relievers used per game
+# over the team's last 80 games, and the league average over the previous 30 days.
+team_recent_games = 80
+team_recent_relievers = 3.3
+league_recent_relievers = 3.346
+
+# Opponent batting order handedness (R, L, S = switch)
+lineup = ["L", "L", "R", "L", "R", "L", "R", "L", "R"]
+
+[[relievers]]
+name = "Paul Blackburn"
+hand = "R"
+pitches_days = [0, 0, 0, 24, 0]  # yesterday ... 5 days ago
+games = 30
+apps = 12
+firsts = 3
+saves = 0
+holds = 4
+finishes = 1
+outs = 39
+ra_outs = 314  # relief outs before today (all earlier outings, any team)
+ra_runs = 44  # runs scored while he was on the mound in them
+
+[[relievers]]
+name = "Ryan Yarbrough"
+hand = "L"
+pitches_days = [23, 0, 0, 0, 26]  # yesterday ... 5 days ago
+games = 30
+apps = 7
+firsts = 3
+saves = 0
+holds = 2
+finishes = 2
+outs = 38
+ra_outs = 247  # relief outs before today (all earlier outings, any team)
+ra_runs = 44  # runs scored while he was on the mound in them
+
+[[relievers]]
+name = "Tim Hill"
+hand = "L"
+pitches_days = [0, 0, 7, 0, 0]  # yesterday ... 5 days ago
+games = 30
+apps = 8
+firsts = 1
+saves = 0
+holds = 1
+finishes = 3
+outs = 25
+ra_outs = 373  # relief outs before today (all earlier outings, any team)
+ra_runs = 61  # runs scored while he was on the mound in them
+
+[[relievers]]
+name = "Brent Headrick"
+hand = "L"
+pitches_days = [0, 0, 16, 7, 0]  # yesterday ... 5 days ago
+games = 30
+apps = 14
+firsts = 7
+saves = 0
+holds = 9
+finishes = 1
+outs = 39
+ra_outs = 300  # relief outs before today (all earlier outings, any team)
+ra_runs = 36  # runs scored while he was on the mound in them
+
+[[relievers]]
+name = "Luis Gil"
+hand = "R"
+pitches_days = [0, 0, 15, 0, 23]  # yesterday ... 5 days ago
+games = 30
+apps = 4
+firsts = 0
+saves = 0
+holds = 0
+finishes = 3
+outs = 18
+ra_outs = 18  # relief outs before today (all earlier outings, any team)
+ra_runs = 2  # runs scored while he was on the mound in them
+
+[[relievers]]
+name = "Michael Fulmer"
+hand = "R"
+pitches_days = [17, 0, 0, 16, 8]  # yesterday ... 5 days ago
+games = 30
+apps = 13
+firsts = 6
+saves = 0
+holds = 2
+finishes = 4
+outs = 32
+ra_outs = 54  # relief outs before today (all earlier outings, any team)
+ra_runs = 14  # runs scored while he was on the mound in them
+
+[[relievers]]
+name = "David Bednar"
+hand = "R"
+pitches_days = [11, 0, 0, 0, 0]  # yesterday ... 5 days ago
+games = 30
+apps = 10
+firsts = 2
+saves = 6
+holds = 0
+finishes = 7
+outs = 33
+ra_outs = 390  # relief outs before today (all earlier outings, any team)
+ra_runs = 47  # runs scored while he was on the mound in them
+
+[[relievers]]
+name = "John Schreiber"
+hand = "R"
+pitches_days = [15, 0, 18, 0, 0]  # yesterday ... 5 days ago
+games = 30
+apps = 14
+firsts = 4
+saves = 1
+holds = 2
+finishes = 4
+outs = 42
+ra_outs = 369  # relief outs before today (all earlier outings, any team)
+ra_runs = 74  # runs scored while he was on the mound in them

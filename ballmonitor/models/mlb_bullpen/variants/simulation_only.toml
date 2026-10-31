@@ -1,0 +1,15 @@
+# The Monte Carlo simulation as-is: no recalibration, no tendency term, no direct-model
+# blend (what v0.4.0 reported, with the v0.5.0 engine settings). Scored in RESEARCH.md
+# ("2a. engine refit" row).
+description = "Raw simulated frequencies: calibration, tendency and direct-model blend switched off."
+
+[params]
+calib_intercept_closer = 0.0
+calib_intercept_setup = 0.0
+calib_intercept_middle = 0.0
+calib_intercept_long = 0.0
+calib_slope = 1.0
+tendency_weight = 0.0
+blend_weight_direct = 0.0
+first_weight_sim = 1.0
+first_weight_direct = 0.0

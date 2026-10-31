@@ -1,0 +1,10 @@
+# Classic Riegel: one exponent (1.06) for everyone, every race weighted equally
+[meta]
+description = "Pete Riegel's T = t * (D/d) ** 1.06 for everyone (no gender offset), every race weighted (almost) equally: distance scale and half-life set to 100. Same fitted bands as the default."
+
+[params]
+riegel_exponent = 1.06
+exponent_offset_male = 0.0
+exponent_offset_female = 0.0
+race_weight_distance_scale = 100.0
+race_weight_half_life_years = 100.0

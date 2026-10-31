@@ -1,0 +1,144 @@
+[meta]
+title = "Next pitch type"
+version = "0.1.1"
+status = "calibrated"  # stub | draft | calibrated
+question = "What type of pitch will this pitcher throw next, given the count, the batter and the at-bat so far?"
+description = """
+Each pitcher gets their own probabilities, built from every pitch they have thrown since 2021
+(Statcast). The context tree starts from the pitcher's recency-weighted mix and refines it by
+count, batter side and the previous pitch, shrinking thin contexts toward broader ones (the
+Aaronson-oracle idea with smoothing). The default 'gbm' method then applies a gradient-boosted
+correction trained on all pitchers, which also uses the situation and batter stats.
+Defaults were chosen by the study in RESEARCH.md.
+"""
+assumptions = [
+  "Pitch types are Statcast's labels; a pitcher's new or relabelled pitch looks rare until history builds up.",
+  "Older pitches count less (recency half-life), so arsenal changes are picked up within weeks.",
+  "Within a game only this at-bat's pitches use full context; earlier pitches in the game (earlier_in_game) feed only the boosted model's 'today's mix' feature.",
+  "Batter stats are recency-weighted rates from the data (league average when no batter is given).",
+  "Pitchers mix pitches on purpose: even the best model is right on roughly half of pitches; treat the output as probabilities, not a call.",
+]
+
+# ── method ───────────────────────────────────────────────────────────────────
+
+[params.method]
+value = "gbm"
+choices = ["gbm", "tree"]
+description = "'tree' = the context tree alone (stdlib, fully transparent); 'gbm' = context tree + gradient-boosted correction (needs lightgbm and data/gbm_model.txt)."
+source = "RESEARCH.md §1: the boosted model had the best out-of-sample log loss and accuracy."
+
+[params.gbm_weight]
+value = 1.0
+description = "Multiplier on the boosted model's correction to the tree's log-probabilities (0 = the boosted model's own tree baseline, 1 = as trained)."
+source = "1.0 = as trained (RESEARCH.md)."
+range = [0.0, 2.0]
+
+[params.temperature]
+value = 1.0
+description = "Divides the final log-probabilities: >1 flattens (less confident), <1 sharpens."
+source = "Judgement; 1.0 = as fitted."
+range = [0.25, 4.0]
+
+# ── context tree ─────────────────────────────────────────────────────────────
+
+[params.chain]
+value = ["stand", "count", "prev_type"]
+description = "Context levels, broad to narrow, each refining the one before. Choose from: count, stand, prev_type, prev_result, prev2_type, outs, runners, tto."
+source = "RESEARCH.md §2: best 2024 validation log loss among the chains, half-lives (7–480 days, none) and strength grid tested."
+
+[params.half_life_days]
+value = 15.0
+unit = "days"
+description = "Recency half-life: a pitch this many days old counts half as much as one thrown today (0 = no decay)."
+source = "RESEARCH.md §2: 7–30 days were nearly tied on 2024 (15 best); 120+ days and no decay were clearly worse."
+range = [0.0, 3650.0]
+
+[params.max_history_days]
+value = 0
+unit = "days"
+description = "Ignore pitches older than this (0 = use all history)."
+source = "Judgement; the study used all history."
+range = [0, 3650]
+
+[params.strength_overall]
+value = 8.0
+unit = "pitches"
+description = "Pseudo-pitches of league mix (for the pitcher's hand) mixed into the pitcher's overall mix; lets a never-seen pitch keep a small probability."
+source = "RESEARCH.md §2: best 2024 validation log loss among the chains, half-lives (7–480 days, none) and strength grid tested."
+range = [0.0, 100000.0]
+
+[params.strength_count]
+value = 16.0
+unit = "pitches"
+description = "How strongly the count-level mix is pulled toward the level above it (bigger = trust the count split less)."
+source = "RESEARCH.md §2: best 2024 validation log loss among the chains, half-lives (7–480 days, none) and strength grid tested."
+range = [0.0, 100000.0]
+
+[params.strength_stand]
+value = 16.0
+unit = "pitches"
+description = "Shrinkage strength for the batter-side level."
+source = "RESEARCH.md §2: best 2024 validation log loss among the chains, half-lives (7–480 days, none) and strength grid tested."
+range = [0.0, 100000.0]
+
+[params.strength_prev_type]
+value = 32.0
+unit = "pitches"
+description = "Shrinkage strength for the previous-pitch-type level."
+source = "RESEARCH.md §2: best 2024 validation log loss among the chains, half-lives (7–480 days, none) and strength grid tested."
+range = [0.0, 100000.0]
+
+[params.strength_prev_result]
+value = 32.0
+unit = "pitches"
+description = "Shrinkage strength for the previous-pitch-result level (ball, called/swinging strike, foul)."
+source = "Judgement (not in the default chain; RESEARCH.md §2 found adding it did not help)."
+range = [0.0, 100000.0]
+
+[params.strength_prev2_type]
+value = 32.0
+unit = "pitches"
+description = "Shrinkage strength for the level using the pitch two back in the at-bat."
+source = "Judgement (not in the default chain)."
+range = [0.0, 100000.0]
+
+[params.strength_outs]
+value = 64.0
+unit = "pitches"
+description = "Shrinkage strength for an outs level, if added to the chain."
+source = "Judgement (not in the default chain)."
+range = [0.0, 100000.0]
+
+[params.strength_runners]
+value = 64.0
+unit = "pitches"
+description = "Shrinkage strength for a runners-on level, if added to the chain."
+source = "Judgement (not in the default chain)."
+range = [0.0, 100000.0]
+
+[params.strength_tto]
+value = 64.0
+unit = "pitches"
+description = "Shrinkage strength for a times-through-the-order level, if added to the chain."
+source = "Judgement (not in the default chain)."
+range = [0.0, 100000.0]
+
+# ── display ──────────────────────────────────────────────────────────────────
+
+[params.min_display_prob]
+value = 0.01
+description = "Pitch types below this probability are grouped as 'Other / new pitch'."
+source = "Judgement (display only)."
+range = [0.0, 0.2]
+
+# ── formulas ─────────────────────────────────────────────────────────────────
+
+[formulas.recency_weight]
+expr = "0.5 ** (age_days / half_life_days) if half_life_days > 0 else 1.0"
+description = "Weight of a historical pitch thrown age_days before the prediction date."
+variables = ["age_days"]
+
+[formulas.shrink]
+expr = "(n + strength * parent) / (total + strength)"
+description = "Probability of a pitch type at one context level: weighted count n of that type in this context (total = all types), pulled toward the parent level's probability by `strength` pseudo-pitches."
+variables = ["n", "total", "strength", "parent"]

@@ -1,0 +1,5 @@
+description = "Higher weight on the peer archetype pool (cap 0.70, M0 = 150 PA)."
+
+[params]
+max_archetype_weight = 0.70
+archetype_shrinkage_m0 = 150.0

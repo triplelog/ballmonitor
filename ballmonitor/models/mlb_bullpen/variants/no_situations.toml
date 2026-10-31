@@ -1,0 +1,26 @@
+# Ablation: no situation logic (every sit_* bonus = 0). Base role, usage, fatigue and
+# platoon only, so the closer is as likely in the 5th as in a 9th-inning save. Scored in RESEARCH.md.
+description = "No situation bonuses (all sit_* = 0): no leverage / save logic."
+
+[params]
+sit_early_closer = 0.0
+sit_early_setup = 0.0
+sit_early_long = 0.0
+sit_late_other_closer = 0.0
+sit_late_other_setup = 0.0
+sit_late_other_long = 0.0
+sit_late_close_closer = 0.0
+sit_late_close_setup = 0.0
+sit_late_close_long = 0.0
+sit_fireman_closer = 0.0
+sit_fireman_setup = 0.0
+sit_fireman_long = 0.0
+sit_save_closer = 0.0
+sit_save_setup = 0.0
+sit_save_long = 0.0
+sit_late_tie_closer = 0.0
+sit_late_tie_setup = 0.0
+sit_late_tie_long = 0.0
+sit_blowout_closer = 0.0
+sit_blowout_setup = 0.0
+sit_blowout_long = 0.0

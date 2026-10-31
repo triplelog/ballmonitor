@@ -1,0 +1,4 @@
+description = "Trust direct BvP history more (N0 = 30 PA)."
+
+[params]
+bvp_shrinkage_n0 = 30.0

@@ -1,0 +1,5 @@
+description = "The control: the pitcher's historical pitch mix in this count (all history, equal weight). No batter side, sequence or learned correction."
+[params]
+method = "tree"
+chain = ["count"]
+half_life_days = 0.0

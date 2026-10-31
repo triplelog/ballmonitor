@@ -1,0 +1,4320 @@
+{
+  "_about": "NCAA Division I baseball tournament history 2015-2026 (no 2020 tournament). Compiled 2026-10-27. The bracket data (national seeds, regional seeds 1-4, regional and super-regional winners, MCWS teams, finalists, champion, automatic qualifiers) was parsed from the raw wikitext of the Wikipedia pages '<YEAR> NCAA Division I baseball tournament' (8TeamBracket templates and bid tables). Checks: 64 unique teams per year, 16 regionals, champion among the CWS teams, national seeds = hosts from 2018, automatic qualifiers all appear in the field. Super-regional 'national_seeds' are the bracket seed labels (null = unseeded); 'series' is games won by teams[0]-teams[1], counted from game scores. Regional 'site' is the Wikipedia regional name (2026 Morgantown regional was actually in Granville, WV). Team names are Wikipedia short names with ' State' converted to ' St.' (NC State kept), plus a few aliases (Connecticut->UConn, Southern Miss->Southern Miss., Louisiana-Lafayette->Louisiana, LIU Brooklyn/Long Island->LIU). Conference names are shortened (SEC, ACC, CAA, CUSA, MAAC, MAC, SoCon, SWAC, WAC, MEAC, ASUN). Rules come from the NCAA 2025-26 and 2024-25 Division I Baseball Pre-Championship Manuals, NCAA.com (16-seed change, Oct 2017), the ABCA/collegebaseballdaily coverage of the 2013 RPI change, and Baseball America (Jan 2024 selection changes).",
+  "_sources": [
+    "https://en.wikipedia.org/wiki/2015_NCAA_Division_I_baseball_tournament (and same title pattern for 2016-2019, 2021-2026)",
+    "https://ncaaorg.s3.amazonaws.com/championships/sports/baseball/d1/2025-26D1MBA_PreChampsManual.pdf",
+    "https://ncaaorg.s3.amazonaws.com/championships/sports/baseball/d1/2024-25D1MBA_PreChampsManual.pdf",
+    "https://www.ncaa.com/news/baseball/article/2017-10-06/di-baseball-championship-moves-16-seeds",
+    "https://collegebaseballdaily.com/2017/10/06/d1-baseball-championship-moving-to-16-seeds",
+    "https://www.abca.org/magazine/2013-1-Winter/Ground_Rules_Understanding_the_new_RPI.aspx",
+    "https://collegebaseballdaily.com/2011/08/01/new-rpi-rules-college-baseball-for-2013-season",
+    "https://baseballamerica.com/?p=1343695",
+    "https://abc7.com/post/ucla-bruins-top-the-no-1-seeds-for-ncaa-baseball-tournament/740788/",
+    "https://abc7.com/post/gators-one-of-record-four-sec-teams-among-eight-national-seeds/1362590/",
+    "https://www.oxfordeagle.com/?p=70324"
+  ],
+  "rules": {
+    "field": "64 teams in every year 2015-2026. Automatic bids (conference champions) by year: 31 in 2015-2019 and 2022; 30 in 2021 (Ivy League did not compete), 2023 and 2024 (MEAC no longer sponsored baseball); 29 in 2025 and 2026 (Pac-12 lost its automatic bid after realignment). At-large = 64 - automatic: 33 (2015-2019, 2022), 34 (2021, 2023, 2024), 35 (2025, 2026). Counts derived from the Wikipedia automatic-bid tables; the 2026 NCAA pre-championship manual states 29 automatic qualifiers.",
+    "national_seeds_by_year": {
+      "2015": 8,
+      "2016": 8,
+      "2017": 8,
+      "2018": 16,
+      "2019": 16,
+      "2021": 16,
+      "2022": 16,
+      "2023": 16,
+      "2024": 16,
+      "2025": 16,
+      "2026": 16
+    },
+    "national_seeds_change": "The NCAA Division I Competition Oversight Committee approved moving from 8 to 16 seeded teams starting with the 2018 championship (announced Oct. 6, 2017). Before that, teams 9-16 were not seeded, so the No. 1 seed could meet the 9th-best team in a super regional. From 2018, super regionals are set up so that seed 1 meets seed 16 if both advance, 2 meets 15, and so on.",
+    "regional_format": "16 four-team double-elimination regionals over Friday-Monday, starting the Friday after Memorial Day. Day 1: G1 No.1 vs No.4, G2 No.2 vs No.3. Day 2: G3 loser G1 vs loser G2 (elimination), G4 winner G1 vs winner G2. Day 3: G5 winner G3 vs loser G4, G6 winner G4 vs winner G5. Day 4: G7 if necessary (same teams as G6). The bracket pairings cannot be changed once the tournament starts. The No. 1 seed in each regional is its host, with exceptions when a team's park does not meet NCAA requirements (2015 UCSB at Lake Elsinore; 2019 Oklahoma St. at Oklahoma City because of flooding; 2021 Old Dominion's regional played at South Carolina).",
+    "super_regional_format": "8 best-of-three series between pairs of regional champions, played Friday-Sunday or Saturday-Monday (four supers start each day). The higher national seed hosts if it submitted an acceptable bid; otherwise the lower seed hosts if its bid is acceptable. If neither team is a national seed (equal seeding), the committee picks the host from the bids based on facility, revenue and similar factors. Before 2018 only the 8 national seeds were guaranteed to host a super if they advanced (e.g., 2015 Missouri St. could not host because of a venue conflict).",
+    "cws_format": "Eight teams at Omaha (Charles Schwab Field, formerly TD Ameritrade Park). Two four-team double-elimination brackets; the two bracket winners play a best-of-three final (MCWS Finals). This format was unchanged in 2015-2026. The 2026 manual schedules the finals as single games Saturday, Sunday and Monday (if necessary), June 20-22, with the MCWS beginning the Friday after super regionals.",
+    "super_regional_pairing": "2018-2026 (16 seeds): the 64-team bracket is set so that if all 16 No. 1 regional seeds advance, the super regionals would be 1 vs 16, 2 vs 15, 3 vs 14, 4 vs 13, 5 vs 12, 6 vs 11, 7 vs 10 and 8 vs 9 (2026 pre-championship manual). Each super pairs the two regionals in that slot regardless of who wins them. 2015-2017 (8 seeds): each national seed's regional was paired with one unseeded host's regional; pairings were mainly geographic/committee choice with no published 9-16 order. These supers fed the MCWS as 1 vs 8, 4 vs 5 (one bracket) and 2 vs 7, 3 vs 6 (other bracket), as seen in the 2015-2017 brackets (observed pattern, not a written rule found).",
+    "cws_bracket_pairing": "The MCWS brackets follow the two halves of the 64-team bracket. One bracket gets the winners of the supers in the 1/16, 8/9, 4/13 and 5/12 slots, and the other gets 2/15, 7/10, 3/14 and 6/11. Opening games are the 1/16 winner vs the 8/9 winner, 4/13 vs 5/12, 2/15 vs 7/10 and 3/14 vs 6/11. Every 2018-2026 bracket on Wikipedia matches this. Wikipedia's 'Bracket 1'/'Bracket 2' labels do not always follow it: in 2023 the 1/16 half (Wake Forest) is labeled Bracket 2. In the 8-seed era the halves were national seeds 1, 8, 4, 5 and 2, 7, 3, 6.",
+    "regional_placement": "From the 2026 pre-championship manual (the 2025 manual has the same wording): half of the field (32 teams) is seeded in four groups of 1-8. The committee picks the top 32 teams; the top 16 are ranked in order and become the regional No. 1 seeds/hosts, and teams 17-32 are the regional No. 2 seeds. Once seeds are set they do not change during bracketing. Apart from the 32 seeded teams, regionals are filled by closest geography to the sites whenever possible. Teams may be moved out of their region to balance the bracket, or when an out-of-region opponent is about as close and would make a better competitive matchup. Teams from the same conference are placed in different regionals. The committee does not reseed after the bracket is set. Regional host criteria: on-campus or approved site; national balance (preferably at least one regional in each of the five D-I baseball regions); minimum financial guarantee of $75,000 (75% of estimated net receipts); lights highly recommended; permanent restrooms; past crowd behavior considered. Seeded teams may host if they meet requirements and bid by the deadline (Bylaw 31.1.3.2.5). Since 2018 the 16 regional hosts are the 16 national seeds (exception: 2021 Old Dominion). In 2015-2017 the 8 national seeds plus 8 other committee-chosen hosts held the 16 regionals. The manual does not say how No. 2 seeds (17-32) are matched to specific No. 1 seeds; this is largely geographic in practice.",
+    "selection_criteria": "Bylaw 31.3.3 general criteria: won-lost record; strength of schedule; eligibility and availability of student-athletes. Baseball-specific factors (2025/2026 manuals, 'not necessarily in priority order'): overall record; Division I record; overall RPI rank; nonconference record and RPI rank; conference regular-season record and conference tournament results; road record and RPI; record in four RPI quadrants by game location (Q1: home vs RPI 1-25, neutral 1-40, away 1-60; Q2: home 26-50, neutral 41-80, away 61-120; Q3: home 51-100, neutral 81-160, away 121-240; Q4: home 101+, neutral 161+, away 241+); last 15 games; head-to-head; common opponents; input from regional advisory committees. Quadrants and the KPI were added for the 2024 selections (Baseball America, Jan. 2024); earlier years used results vs RPI top 25/50/100-style tiers. At-large teams must be better than .500 against Division I opponents. Only countable games vs four-year varsity teams count, and the RPI uses Division I games. RPI formula: 25% the team's winning percentage + 50% opponents' winning percentage + 25% opponents' opponents' winning percentage. Since the 2013 season the team's own winning percentage is weighted by location: road win = 1.3, neutral win = 1.0, home win = 0.7; road loss = 0.7, neutral loss = 1.0, home loss = 1.3. This is based on home teams winning about 62% of D-I games. The NCAA also uses an 'adjusted RPI' with a bonus/penalty structure, mainly for notable nonconference wins and losses; the values are not published. Other metrics: the Kevin Pauga Index (KPI) has been a resource since 2024, explicitly 'not a selection criteria'. NEW for 2026: Diamond Sports Rankings (DSR), a predictive metric, was added to the team sheets as a resource (approved by the Baseball Oversight Committee). As of the 2026 manual the RPI formula itself is unchanged. No NET-style replacement of the RPI had been adopted for baseball by 2026.",
+    "selection_dates": {
+      "2015": "2015-05-25",
+      "2016": "2016-05-30",
+      "2017": "2017-05-29",
+      "2018": "2018-05-28",
+      "2019": "2019-05-27",
+      "2021": "2021-05-31",
+      "2022": "2022-05-30",
+      "2023": "2023-05-29",
+      "2024": "2024-05-27",
+      "2025": "2025-05-26",
+      "2026": "2026-05-25"
+    },
+    "selection_dates_note": "Selection Monday (Memorial Day). The bracket show is at noon ET (2026 on ESPN2); regional hosts are announced the day before. Dates for 2018-2026 come from Wikipedia ('announced on the Selection Show on ...'); 2015 is from ABC/AP news, 2016-2017 from AP and Oxford Eagle; 2026 is from the 2026 pre-championship manual."
+  },
+  "seasons": {
+    "2026": {
+      "national_seeds": [
+        "UCLA",
+        "Georgia Tech",
+        "Georgia",
+        "Auburn",
+        "North Carolina",
+        "Texas",
+        "Alabama",
+        "Florida",
+        "Southern Miss.",
+        "Florida St.",
+        "Oregon",
+        "Texas A&M",
+        "Nebraska",
+        "Mississippi St.",
+        "Kansas",
+        "West Virginia"
+      ],
+      "hosts": [
+        "UCLA",
+        "West Virginia",
+        "Florida",
+        "Southern Miss.",
+        "North Carolina",
+        "Texas A&M",
+        "Auburn",
+        "Nebraska",
+        "Georgia Tech",
+        "Kansas",
+        "Alabama",
+        "Florida St.",
+        "Texas",
+        "Oregon",
+        "Mississippi St.",
+        "Georgia"
+      ],
+      "regionals": [
+        {
+          "site": "Los Angeles",
+          "host": "UCLA",
+          "teams": {
+            "1": "UCLA",
+            "2": "Virginia Tech",
+            "3": "Cal Poly",
+            "4": "Saint Mary's (CA)"
+          },
+          "winner": "Cal Poly",
+          "super_regional": "Morgantown"
+        },
+        {
+          "site": "Morgantown",
+          "host": "West Virginia",
+          "teams": {
+            "1": "West Virginia",
+            "2": "Wake Forest",
+            "3": "Kentucky",
+            "4": "Binghamton"
+          },
+          "winner": "West Virginia",
+          "super_regional": "Morgantown"
+        },
+        {
+          "site": "Gainesville",
+          "host": "Florida",
+          "teams": {
+            "1": "Florida",
+            "2": "Miami (FL)",
+            "3": "Troy",
+            "4": "Rider"
+          },
+          "winner": "Troy",
+          "super_regional": "Troy"
+        },
+        {
+          "site": "Hattiesburg",
+          "host": "Southern Miss.",
+          "teams": {
+            "1": "Southern Miss.",
+            "2": "Virginia",
+            "3": "Jacksonville St.",
+            "4": "Little Rock"
+          },
+          "winner": "Little Rock",
+          "super_regional": "Troy"
+        },
+        {
+          "site": "Chapel Hill",
+          "host": "North Carolina",
+          "teams": {
+            "1": "North Carolina",
+            "2": "Tennessee",
+            "3": "East Carolina",
+            "4": "VCU"
+          },
+          "winner": "North Carolina",
+          "super_regional": "Chapel Hill"
+        },
+        {
+          "site": "College Station",
+          "host": "Texas A&M",
+          "teams": {
+            "1": "Texas A&M",
+            "2": "USC",
+            "3": "Texas St.",
+            "4": "Lamar"
+          },
+          "winner": "USC",
+          "super_regional": "Chapel Hill"
+        },
+        {
+          "site": "Auburn",
+          "host": "Auburn",
+          "teams": {
+            "1": "Auburn",
+            "2": "UCF",
+            "3": "NC State",
+            "4": "Milwaukee"
+          },
+          "winner": "Auburn",
+          "super_regional": "Auburn"
+        },
+        {
+          "site": "Lincoln",
+          "host": "Nebraska",
+          "teams": {
+            "1": "Nebraska",
+            "2": "Ole Miss",
+            "3": "Arizona St.",
+            "4": "South Dakota St."
+          },
+          "winner": "Ole Miss",
+          "super_regional": "Auburn"
+        },
+        {
+          "site": "Atlanta",
+          "host": "Georgia Tech",
+          "teams": {
+            "1": "Georgia Tech",
+            "2": "Oklahoma",
+            "3": "The Citadel",
+            "4": "UIC"
+          },
+          "winner": "Oklahoma",
+          "super_regional": "Lawrence"
+        },
+        {
+          "site": "Lawrence",
+          "host": "Kansas",
+          "teams": {
+            "1": "Kansas",
+            "2": "Arkansas",
+            "3": "Missouri St.",
+            "4": "Northeastern"
+          },
+          "winner": "Kansas",
+          "super_regional": "Lawrence"
+        },
+        {
+          "site": "Tuscaloosa",
+          "host": "Alabama",
+          "teams": {
+            "1": "Alabama",
+            "2": "Oklahoma St.",
+            "3": "USC Upstate",
+            "4": "Alabama St."
+          },
+          "winner": "Alabama",
+          "super_regional": "Tuscaloosa"
+        },
+        {
+          "site": "Tallahassee",
+          "host": "Florida St.",
+          "teams": {
+            "1": "Florida St.",
+            "2": "Coastal Carolina",
+            "3": "Northern Illinois",
+            "4": "St. John's"
+          },
+          "winner": "St. John's",
+          "super_regional": "Tuscaloosa"
+        },
+        {
+          "site": "Austin",
+          "host": "Texas",
+          "teams": {
+            "1": "Texas",
+            "2": "UC Santa Barbara",
+            "3": "Tarleton St.",
+            "4": "Holy Cross"
+          },
+          "winner": "Texas",
+          "super_regional": "Austin"
+        },
+        {
+          "site": "Eugene",
+          "host": "Oregon",
+          "teams": {
+            "1": "Oregon",
+            "2": "Oregon St.",
+            "3": "Washington St.",
+            "4": "Yale"
+          },
+          "winner": "Oregon",
+          "super_regional": "Austin"
+        },
+        {
+          "site": "Starkville",
+          "host": "Mississippi St.",
+          "teams": {
+            "1": "Mississippi St.",
+            "2": "Cincinnati",
+            "3": "Louisiana",
+            "4": "Lipscomb"
+          },
+          "winner": "Mississippi St.",
+          "super_regional": "Athens"
+        },
+        {
+          "site": "Athens",
+          "host": "Georgia",
+          "teams": {
+            "1": "Georgia",
+            "2": "Boston College",
+            "3": "Liberty",
+            "4": "LIU"
+          },
+          "winner": "Georgia",
+          "super_regional": "Athens"
+        }
+      ],
+      "super_regionals": [
+        {
+          "site": "Morgantown",
+          "teams": [
+            "Cal Poly",
+            "West Virginia"
+          ],
+          "national_seeds": [
+            null,
+            16
+          ],
+          "series": "0-2",
+          "winner": "West Virginia"
+        },
+        {
+          "site": "Troy",
+          "teams": [
+            "Troy",
+            "Little Rock"
+          ],
+          "national_seeds": [
+            null,
+            null
+          ],
+          "series": "2-0",
+          "winner": "Troy"
+        },
+        {
+          "site": "Chapel Hill",
+          "teams": [
+            "North Carolina",
+            "USC"
+          ],
+          "national_seeds": [
+            5,
+            null
+          ],
+          "series": "2-1",
+          "winner": "North Carolina"
+        },
+        {
+          "site": "Auburn",
+          "teams": [
+            "Auburn",
+            "Ole Miss"
+          ],
+          "national_seeds": [
+            4,
+            null
+          ],
+          "series": "0-2",
+          "winner": "Ole Miss"
+        },
+        {
+          "site": "Lawrence",
+          "teams": [
+            "Oklahoma",
+            "Kansas"
+          ],
+          "national_seeds": [
+            null,
+            15
+          ],
+          "series": "2-0",
+          "winner": "Oklahoma"
+        },
+        {
+          "site": "Tuscaloosa",
+          "teams": [
+            "Alabama",
+            "St. John's"
+          ],
+          "national_seeds": [
+            7,
+            null
+          ],
+          "series": "2-0",
+          "winner": "Alabama"
+        },
+        {
+          "site": "Austin",
+          "teams": [
+            "Texas",
+            "Oregon"
+          ],
+          "national_seeds": [
+            6,
+            11
+          ],
+          "series": "2-0",
+          "winner": "Texas"
+        },
+        {
+          "site": "Athens",
+          "teams": [
+            "Mississippi St.",
+            "Georgia"
+          ],
+          "national_seeds": [
+            14,
+            3
+          ],
+          "series": "0-2",
+          "winner": "Georgia"
+        }
+      ],
+      "cws_teams": [
+        "West Virginia",
+        "Troy",
+        "North Carolina",
+        "Ole Miss",
+        "Oklahoma",
+        "Alabama",
+        "Texas",
+        "Georgia"
+      ],
+      "finalists": [
+        "Oklahoma",
+        "North Carolina"
+      ],
+      "champion": "Oklahoma",
+      "automatic_qualifiers": {
+        "America East": "Binghamton",
+        "American": "East Carolina",
+        "ASUN": "Lipscomb",
+        "ACC": "Georgia Tech",
+        "Atlantic 10": "VCU",
+        "Big 12": "Kansas",
+        "Big East": "St. John's",
+        "Big South": "USC Upstate",
+        "Big Ten": "UCLA",
+        "Big West": "Cal Poly",
+        "CAA": "Northeastern",
+        "CUSA": "Jacksonville St.",
+        "Horizon": "Milwaukee",
+        "Ivy League": "Yale",
+        "MAAC": "Rider",
+        "MAC": "Northern Illinois",
+        "Missouri Valley": "UIC",
+        "Mountain West": "Washington St.",
+        "Northeast": "LIU",
+        "Ohio Valley": "Little Rock",
+        "Patriot": "Holy Cross",
+        "SEC": "Georgia",
+        "SoCon": "The Citadel",
+        "Southland": "Lamar",
+        "SWAC": "Alabama St.",
+        "Summit": "South Dakota St.",
+        "Sun Belt": "Southern Miss.",
+        "West Coast": "Saint Mary's (CA)",
+        "WAC": "Tarleton St."
+      },
+      "source": "https://en.wikipedia.org/wiki/2026_NCAA_Division_I_baseball_tournament",
+      "n_automatic": 29,
+      "n_at_large": 35,
+      "selection_date": "2026-05-25"
+    },
+    "2025": {
+      "national_seeds": [
+        "Vanderbilt",
+        "Texas",
+        "Arkansas",
+        "Auburn",
+        "North Carolina",
+        "LSU",
+        "Georgia",
+        "Oregon St.",
+        "Florida St.",
+        "Ole Miss",
+        "Clemson",
+        "Oregon",
+        "Coastal Carolina",
+        "Tennessee",
+        "UCLA",
+        "Southern Miss."
+      ],
+      "hosts": [
+        "Auburn",
+        "Coastal Carolina",
+        "North Carolina",
+        "Oregon",
+        "Oregon St.",
+        "Florida St.",
+        "Vanderbilt",
+        "Southern Miss.",
+        "Texas",
+        "UCLA",
+        "Georgia",
+        "Ole Miss",
+        "Arkansas",
+        "Tennessee",
+        "LSU",
+        "Clemson"
+      ],
+      "regionals": [
+        {
+          "site": "Auburn",
+          "host": "Auburn",
+          "teams": {
+            "1": "Auburn",
+            "2": "NC State",
+            "3": "Stetson",
+            "4": "Central Connecticut"
+          },
+          "winner": "Auburn",
+          "super_regional": "Auburn"
+        },
+        {
+          "site": "Conway",
+          "host": "Coastal Carolina",
+          "teams": {
+            "1": "Coastal Carolina",
+            "2": "Florida",
+            "3": "East Carolina",
+            "4": "Fairfield"
+          },
+          "winner": "Coastal Carolina",
+          "super_regional": "Auburn"
+        },
+        {
+          "site": "Chapel Hill",
+          "host": "North Carolina",
+          "teams": {
+            "1": "North Carolina",
+            "2": "Oklahoma",
+            "3": "Nebraska",
+            "4": "Holy Cross"
+          },
+          "winner": "North Carolina",
+          "super_regional": "Chapel Hill"
+        },
+        {
+          "site": "Eugene",
+          "host": "Oregon",
+          "teams": {
+            "1": "Oregon",
+            "2": "Arizona",
+            "3": "Cal Poly",
+            "4": "Utah Valley"
+          },
+          "winner": "Arizona",
+          "super_regional": "Chapel Hill"
+        },
+        {
+          "site": "Corvallis",
+          "host": "Oregon St.",
+          "teams": {
+            "1": "Oregon St.",
+            "2": "TCU",
+            "3": "USC",
+            "4": "Saint Mary's (CA)"
+          },
+          "winner": "Oregon St.",
+          "super_regional": "Corvallis"
+        },
+        {
+          "site": "Tallahassee",
+          "host": "Florida St.",
+          "teams": {
+            "1": "Florida St.",
+            "2": "Northeastern",
+            "3": "Mississippi St.",
+            "4": "Bethune-Cookman"
+          },
+          "winner": "Florida St.",
+          "super_regional": "Corvallis"
+        },
+        {
+          "site": "Nashville",
+          "host": "Vanderbilt",
+          "teams": {
+            "1": "Vanderbilt",
+            "2": "Louisville",
+            "3": "East Tennessee St.",
+            "4": "Wright St."
+          },
+          "winner": "Louisville",
+          "super_regional": "Louisville"
+        },
+        {
+          "site": "Hattiesburg",
+          "host": "Southern Miss.",
+          "teams": {
+            "1": "Southern Miss.",
+            "2": "Alabama",
+            "3": "Miami (FL)",
+            "4": "Columbia"
+          },
+          "winner": "Miami (FL)",
+          "super_regional": "Louisville"
+        },
+        {
+          "site": "Austin",
+          "host": "Texas",
+          "teams": {
+            "1": "Texas",
+            "2": "UTSA",
+            "3": "Kansas St.",
+            "4": "Houston Christian"
+          },
+          "winner": "UTSA",
+          "super_regional": "Los Angeles"
+        },
+        {
+          "site": "Los Angeles",
+          "host": "UCLA",
+          "teams": {
+            "1": "UCLA",
+            "2": "UC Irvine",
+            "3": "Arizona St.",
+            "4": "Fresno St."
+          },
+          "winner": "UCLA",
+          "super_regional": "Los Angeles"
+        },
+        {
+          "site": "Athens",
+          "host": "Georgia",
+          "teams": {
+            "1": "Georgia",
+            "2": "Duke",
+            "3": "Oklahoma St.",
+            "4": "Binghamton"
+          },
+          "winner": "Duke",
+          "super_regional": "Durham"
+        },
+        {
+          "site": "Oxford",
+          "host": "Ole Miss",
+          "teams": {
+            "1": "Ole Miss",
+            "2": "Georgia Tech",
+            "3": "Western Kentucky",
+            "4": "Murray St."
+          },
+          "winner": "Murray St.",
+          "super_regional": "Durham"
+        },
+        {
+          "site": "Fayetteville",
+          "host": "Arkansas",
+          "teams": {
+            "1": "Arkansas",
+            "2": "Kansas",
+            "3": "Creighton",
+            "4": "North Dakota St."
+          },
+          "winner": "Arkansas",
+          "super_regional": "Fayetteville"
+        },
+        {
+          "site": "Knoxville",
+          "host": "Tennessee",
+          "teams": {
+            "1": "Tennessee",
+            "2": "Wake Forest",
+            "3": "Cincinnati",
+            "4": "Miami (OH)"
+          },
+          "winner": "Tennessee",
+          "super_regional": "Fayetteville"
+        },
+        {
+          "site": "Baton Rouge",
+          "host": "LSU",
+          "teams": {
+            "1": "LSU",
+            "2": "Dallas Baptist",
+            "3": "Rhode Island",
+            "4": "Little Rock"
+          },
+          "winner": "LSU",
+          "super_regional": "Baton Rouge"
+        },
+        {
+          "site": "Clemson",
+          "host": "Clemson",
+          "teams": {
+            "1": "Clemson",
+            "2": "West Virginia",
+            "3": "Kentucky",
+            "4": "USC Upstate"
+          },
+          "winner": "West Virginia",
+          "super_regional": "Baton Rouge"
+        }
+      ],
+      "super_regionals": [
+        {
+          "site": "Auburn",
+          "teams": [
+            "Auburn",
+            "Coastal Carolina"
+          ],
+          "national_seeds": [
+            4,
+            13
+          ],
+          "series": "0-2",
+          "winner": "Coastal Carolina"
+        },
+        {
+          "site": "Chapel Hill",
+          "teams": [
+            "North Carolina",
+            "Arizona"
+          ],
+          "national_seeds": [
+            5,
+            null
+          ],
+          "series": "1-2",
+          "winner": "Arizona"
+        },
+        {
+          "site": "Corvallis",
+          "teams": [
+            "Oregon St.",
+            "Florida St."
+          ],
+          "national_seeds": [
+            8,
+            9
+          ],
+          "series": "2-1",
+          "winner": "Oregon St."
+        },
+        {
+          "site": "Louisville",
+          "teams": [
+            "Louisville",
+            "Miami (FL)"
+          ],
+          "national_seeds": [
+            null,
+            null
+          ],
+          "series": "2-1",
+          "winner": "Louisville"
+        },
+        {
+          "site": "Los Angeles",
+          "teams": [
+            "UTSA",
+            "UCLA"
+          ],
+          "national_seeds": [
+            null,
+            15
+          ],
+          "series": "0-2",
+          "winner": "UCLA"
+        },
+        {
+          "site": "Durham",
+          "teams": [
+            "Duke",
+            "Murray St."
+          ],
+          "national_seeds": [
+            null,
+            null
+          ],
+          "series": "1-2",
+          "winner": "Murray St."
+        },
+        {
+          "site": "Fayetteville",
+          "teams": [
+            "Arkansas",
+            "Tennessee"
+          ],
+          "national_seeds": [
+            3,
+            14
+          ],
+          "series": "2-0",
+          "winner": "Arkansas"
+        },
+        {
+          "site": "Baton Rouge",
+          "teams": [
+            "LSU",
+            "West Virginia"
+          ],
+          "national_seeds": [
+            6,
+            null
+          ],
+          "series": "2-0",
+          "winner": "LSU"
+        }
+      ],
+      "cws_teams": [
+        "Coastal Carolina",
+        "Arizona",
+        "Oregon St.",
+        "Louisville",
+        "UCLA",
+        "Murray St.",
+        "Arkansas",
+        "LSU"
+      ],
+      "finalists": [
+        "LSU",
+        "Coastal Carolina"
+      ],
+      "champion": "LSU",
+      "automatic_qualifiers": {
+        "America East": "Binghamton",
+        "American": "East Carolina",
+        "ASUN": "Stetson",
+        "ACC": "North Carolina",
+        "Atlantic 10": "Rhode Island",
+        "Big 12": "Arizona",
+        "Big East": "Creighton",
+        "Big South": "USC Upstate",
+        "Big Ten": "Nebraska",
+        "Big West": "Cal Poly",
+        "CAA": "Northeastern",
+        "CUSA": "Western Kentucky",
+        "Horizon": "Wright St.",
+        "Ivy League": "Columbia",
+        "MAAC": "Fairfield",
+        "MAC": "Miami (OH)",
+        "Missouri Valley": "Murray St.",
+        "Mountain West": "Fresno St.",
+        "Northeast": "Central Connecticut",
+        "Ohio Valley": "Little Rock",
+        "Patriot": "Holy Cross",
+        "SEC": "Vanderbilt",
+        "SoCon": "East Tennessee St.",
+        "Southland": "Houston Christian",
+        "SWAC": "Bethune-Cookman",
+        "Summit": "North Dakota St.",
+        "Sun Belt": "Coastal Carolina",
+        "West Coast": "Saint Mary's (CA)",
+        "WAC": "Utah Valley"
+      },
+      "source": "https://en.wikipedia.org/wiki/2025_NCAA_Division_I_baseball_tournament",
+      "n_automatic": 29,
+      "n_at_large": 35,
+      "selection_date": "2025-05-26"
+    },
+    "2024": {
+      "national_seeds": [
+        "Tennessee",
+        "Kentucky",
+        "Texas A&M",
+        "North Carolina",
+        "Arkansas",
+        "Clemson",
+        "Georgia",
+        "Florida St.",
+        "Oklahoma",
+        "NC State",
+        "Oklahoma St.",
+        "Virginia",
+        "Arizona",
+        "UC Santa Barbara",
+        "Oregon St.",
+        "East Carolina"
+      ],
+      "hosts": [
+        "Arizona",
+        "North Carolina",
+        "Arkansas",
+        "Virginia",
+        "Tennessee",
+        "East Carolina",
+        "Oklahoma",
+        "Florida St.",
+        "Kentucky",
+        "Oregon St.",
+        "NC State",
+        "Georgia",
+        "UC Santa Barbara",
+        "Texas A&M",
+        "Clemson",
+        "Oklahoma St."
+      ],
+      "regionals": [
+        {
+          "site": "Tucson",
+          "host": "Arizona",
+          "teams": {
+            "1": "Arizona",
+            "2": "Dallas Baptist",
+            "3": "West Virginia",
+            "4": "Grand Canyon"
+          },
+          "winner": "West Virginia",
+          "super_regional": "Chapel Hill"
+        },
+        {
+          "site": "Chapel Hill",
+          "host": "North Carolina",
+          "teams": {
+            "1": "North Carolina",
+            "2": "LSU",
+            "3": "Wofford",
+            "4": "LIU"
+          },
+          "winner": "North Carolina",
+          "super_regional": "Chapel Hill"
+        },
+        {
+          "site": "Fayetteville",
+          "host": "Arkansas",
+          "teams": {
+            "1": "Arkansas",
+            "2": "Louisiana Tech",
+            "3": "Kansas St.",
+            "4": "Southeast Missouri St."
+          },
+          "winner": "Kansas St.",
+          "super_regional": "Charlottesville"
+        },
+        {
+          "site": "Charlottesville",
+          "host": "Virginia",
+          "teams": {
+            "1": "Virginia",
+            "2": "Mississippi St.",
+            "3": "St. John's",
+            "4": "Penn"
+          },
+          "winner": "Virginia",
+          "super_regional": "Charlottesville"
+        },
+        {
+          "site": "Knoxville",
+          "host": "Tennessee",
+          "teams": {
+            "1": "Tennessee",
+            "2": "Southern Miss.",
+            "3": "Indiana",
+            "4": "Northern Kentucky"
+          },
+          "winner": "Tennessee",
+          "super_regional": "Knoxville"
+        },
+        {
+          "site": "Greenville",
+          "host": "East Carolina",
+          "teams": {
+            "1": "East Carolina",
+            "2": "Wake Forest",
+            "3": "VCU",
+            "4": "Evansville"
+          },
+          "winner": "Evansville",
+          "super_regional": "Knoxville"
+        },
+        {
+          "site": "Norman",
+          "host": "Oklahoma",
+          "teams": {
+            "1": "Oklahoma",
+            "2": "Duke",
+            "3": "UConn",
+            "4": "Oral Roberts"
+          },
+          "winner": "UConn",
+          "super_regional": "Tallahassee"
+        },
+        {
+          "site": "Tallahassee",
+          "host": "Florida St.",
+          "teams": {
+            "1": "Florida St.",
+            "2": "Alabama",
+            "3": "UCF",
+            "4": "Stetson"
+          },
+          "winner": "Florida St.",
+          "super_regional": "Tallahassee"
+        },
+        {
+          "site": "Lexington",
+          "host": "Kentucky",
+          "teams": {
+            "1": "Kentucky",
+            "2": "Indiana St.",
+            "3": "Illinois",
+            "4": "Western Michigan"
+          },
+          "winner": "Kentucky",
+          "super_regional": "Lexington"
+        },
+        {
+          "site": "Corvallis",
+          "host": "Oregon St.",
+          "teams": {
+            "1": "Oregon St.",
+            "2": "UC Irvine",
+            "3": "Nicholls",
+            "4": "Tulane"
+          },
+          "winner": "Oregon St.",
+          "super_regional": "Lexington"
+        },
+        {
+          "site": "Raleigh",
+          "host": "NC State",
+          "teams": {
+            "1": "NC State",
+            "2": "South Carolina",
+            "3": "James Madison",
+            "4": "Bryant"
+          },
+          "winner": "NC State",
+          "super_regional": "Athens"
+        },
+        {
+          "site": "Athens",
+          "host": "Georgia",
+          "teams": {
+            "1": "Georgia",
+            "2": "UNC Wilmington",
+            "3": "Georgia Tech",
+            "4": "Army"
+          },
+          "winner": "Georgia",
+          "super_regional": "Athens"
+        },
+        {
+          "site": "Santa Barbara",
+          "host": "UC Santa Barbara",
+          "teams": {
+            "1": "UC Santa Barbara",
+            "2": "San Diego",
+            "3": "Oregon",
+            "4": "Fresno St."
+          },
+          "winner": "Oregon",
+          "super_regional": "Bryan-College Station"
+        },
+        {
+          "site": "Bryan-College Station",
+          "host": "Texas A&M",
+          "teams": {
+            "1": "Texas A&M",
+            "2": "Louisiana",
+            "3": "Texas",
+            "4": "Grambling St."
+          },
+          "winner": "Texas A&M",
+          "super_regional": "Bryan-College Station"
+        },
+        {
+          "site": "Clemson",
+          "host": "Clemson",
+          "teams": {
+            "1": "Clemson",
+            "2": "Vanderbilt",
+            "3": "Coastal Carolina",
+            "4": "High Point"
+          },
+          "winner": "Clemson",
+          "super_regional": "Clemson"
+        },
+        {
+          "site": "Stillwater",
+          "host": "Oklahoma St.",
+          "teams": {
+            "1": "Oklahoma St.",
+            "2": "Nebraska",
+            "3": "Florida",
+            "4": "Niagara"
+          },
+          "winner": "Florida",
+          "super_regional": "Clemson"
+        }
+      ],
+      "super_regionals": [
+        {
+          "site": "Chapel Hill",
+          "teams": [
+            "West Virginia",
+            "North Carolina"
+          ],
+          "national_seeds": [
+            null,
+            4
+          ],
+          "series": "0-2",
+          "winner": "North Carolina"
+        },
+        {
+          "site": "Charlottesville",
+          "teams": [
+            "Kansas St.",
+            "Virginia"
+          ],
+          "national_seeds": [
+            null,
+            12
+          ],
+          "series": "0-2",
+          "winner": "Virginia"
+        },
+        {
+          "site": "Knoxville",
+          "teams": [
+            "Tennessee",
+            "Evansville"
+          ],
+          "national_seeds": [
+            1,
+            null
+          ],
+          "series": "2-1",
+          "winner": "Tennessee"
+        },
+        {
+          "site": "Tallahassee",
+          "teams": [
+            "UConn",
+            "Florida St."
+          ],
+          "national_seeds": [
+            null,
+            8
+          ],
+          "series": "0-2",
+          "winner": "Florida St."
+        },
+        {
+          "site": "Lexington",
+          "teams": [
+            "Kentucky",
+            "Oregon St."
+          ],
+          "national_seeds": [
+            2,
+            15
+          ],
+          "series": "2-0",
+          "winner": "Kentucky"
+        },
+        {
+          "site": "Athens",
+          "teams": [
+            "NC State",
+            "Georgia"
+          ],
+          "national_seeds": [
+            10,
+            7
+          ],
+          "series": "2-1",
+          "winner": "NC State"
+        },
+        {
+          "site": "Bryan-College Station",
+          "teams": [
+            "Oregon",
+            "Texas A&M"
+          ],
+          "national_seeds": [
+            null,
+            3
+          ],
+          "series": "0-2",
+          "winner": "Texas A&M"
+        },
+        {
+          "site": "Clemson",
+          "teams": [
+            "Clemson",
+            "Florida"
+          ],
+          "national_seeds": [
+            6,
+            null
+          ],
+          "series": "0-2",
+          "winner": "Florida"
+        }
+      ],
+      "cws_teams": [
+        "North Carolina",
+        "Virginia",
+        "Tennessee",
+        "Florida St.",
+        "Kentucky",
+        "NC State",
+        "Texas A&M",
+        "Florida"
+      ],
+      "finalists": [
+        "Tennessee",
+        "Texas A&M"
+      ],
+      "champion": "Tennessee",
+      "automatic_qualifiers": {
+        "America East": "Bryant",
+        "American": "Tulane",
+        "ASUN": "Stetson",
+        "ACC": "Duke",
+        "Atlantic 10": "VCU",
+        "Big 12": "Oklahoma St.",
+        "Big East": "St. John's",
+        "Big South": "High Point",
+        "Big Ten": "Nebraska",
+        "Big West": "UC Santa Barbara",
+        "CAA": "UNC Wilmington",
+        "CUSA": "Dallas Baptist",
+        "Horizon": "Northern Kentucky",
+        "Ivy League": "Penn",
+        "MAAC": "Niagara",
+        "MAC": "Western Michigan",
+        "Missouri Valley": "Evansville",
+        "Mountain West": "Fresno St.",
+        "Northeast": "LIU",
+        "Ohio Valley": "Southeast Missouri St.",
+        "Pac-12": "Arizona",
+        "Patriot": "Army",
+        "SEC": "Tennessee",
+        "SoCon": "Wofford",
+        "Southland": "Nicholls",
+        "SWAC": "Grambling St.",
+        "Summit": "Oral Roberts",
+        "Sun Belt": "Southern Miss.",
+        "West Coast": "San Diego",
+        "WAC": "Grand Canyon"
+      },
+      "source": "https://en.wikipedia.org/wiki/2024_NCAA_Division_I_baseball_tournament",
+      "n_automatic": 30,
+      "n_at_large": 34,
+      "selection_date": "2024-05-27"
+    },
+    "2023": {
+      "national_seeds": [
+        "Wake Forest",
+        "Florida",
+        "Arkansas",
+        "Clemson",
+        "LSU",
+        "Vanderbilt",
+        "Virginia",
+        "Stanford",
+        "Miami (FL)",
+        "Coastal Carolina",
+        "Oklahoma St.",
+        "Kentucky",
+        "Auburn",
+        "Indiana St.",
+        "South Carolina",
+        "Alabama"
+      ],
+      "hosts": [
+        "Vanderbilt",
+        "Oklahoma St.",
+        "Arkansas",
+        "Indiana St.",
+        "Virginia",
+        "Coastal Carolina",
+        "Florida",
+        "South Carolina",
+        "Wake Forest",
+        "Alabama",
+        "Stanford",
+        "Miami (FL)",
+        "LSU",
+        "Kentucky",
+        "Clemson",
+        "Auburn"
+      ],
+      "regionals": [
+        {
+          "site": "Nashville",
+          "host": "Vanderbilt",
+          "teams": {
+            "1": "Vanderbilt",
+            "2": "Oregon",
+            "3": "Xavier",
+            "4": "Eastern Illinois"
+          },
+          "winner": "Oregon",
+          "super_regional": "Eugene"
+        },
+        {
+          "site": "Stillwater",
+          "host": "Oklahoma St.",
+          "teams": {
+            "1": "Oklahoma St.",
+            "2": "Dallas Baptist",
+            "3": "Washington",
+            "4": "Oral Roberts"
+          },
+          "winner": "Oral Roberts",
+          "super_regional": "Eugene"
+        },
+        {
+          "site": "Fayetteville",
+          "host": "Arkansas",
+          "teams": {
+            "1": "Arkansas",
+            "2": "TCU",
+            "3": "Arizona",
+            "4": "Santa Clara"
+          },
+          "winner": "TCU",
+          "super_regional": "Fort Worth"
+        },
+        {
+          "site": "Terre Haute",
+          "host": "Indiana St.",
+          "teams": {
+            "1": "Indiana St.",
+            "2": "Iowa",
+            "3": "North Carolina",
+            "4": "Wright St."
+          },
+          "winner": "Indiana St.",
+          "super_regional": "Fort Worth"
+        },
+        {
+          "site": "Charlottesville",
+          "host": "Virginia",
+          "teams": {
+            "1": "Virginia",
+            "2": "East Carolina",
+            "3": "Oklahoma",
+            "4": "Army"
+          },
+          "winner": "Virginia",
+          "super_regional": "Charlottesville"
+        },
+        {
+          "site": "Conway",
+          "host": "Coastal Carolina",
+          "teams": {
+            "1": "Coastal Carolina",
+            "2": "Duke",
+            "3": "UNC Wilmington",
+            "4": "Rider"
+          },
+          "winner": "Duke",
+          "super_regional": "Charlottesville"
+        },
+        {
+          "site": "Gainesville",
+          "host": "Florida",
+          "teams": {
+            "1": "Florida",
+            "2": "UConn",
+            "3": "Texas Tech",
+            "4": "Florida A&M"
+          },
+          "winner": "Florida",
+          "super_regional": "Gainesville"
+        },
+        {
+          "site": "Columbia",
+          "host": "South Carolina",
+          "teams": {
+            "1": "South Carolina",
+            "2": "Campbell",
+            "3": "NC State",
+            "4": "Central Connecticut"
+          },
+          "winner": "South Carolina",
+          "super_regional": "Gainesville"
+        },
+        {
+          "site": "Winston-Salem",
+          "host": "Wake Forest",
+          "teams": {
+            "1": "Wake Forest",
+            "2": "Maryland",
+            "3": "Northeastern",
+            "4": "George Mason"
+          },
+          "winner": "Wake Forest",
+          "super_regional": "Winston-Salem"
+        },
+        {
+          "site": "Tuscaloosa",
+          "host": "Alabama",
+          "teams": {
+            "1": "Alabama",
+            "2": "Boston College",
+            "3": "Troy",
+            "4": "Nicholls"
+          },
+          "winner": "Alabama",
+          "super_regional": "Winston-Salem"
+        },
+        {
+          "site": "Stanford",
+          "host": "Stanford",
+          "teams": {
+            "1": "Stanford",
+            "2": "Texas A&M",
+            "3": "Cal State Fullerton",
+            "4": "San Jose St."
+          },
+          "winner": "Stanford",
+          "super_regional": "Stanford"
+        },
+        {
+          "site": "Coral Gables",
+          "host": "Miami (FL)",
+          "teams": {
+            "1": "Miami (FL)",
+            "2": "Texas",
+            "3": "Louisiana",
+            "4": "Maine"
+          },
+          "winner": "Texas",
+          "super_regional": "Stanford"
+        },
+        {
+          "site": "Baton Rouge",
+          "host": "LSU",
+          "teams": {
+            "1": "LSU",
+            "2": "Oregon St.",
+            "3": "Sam Houston St.",
+            "4": "Tulane"
+          },
+          "winner": "LSU",
+          "super_regional": "Baton Rouge"
+        },
+        {
+          "site": "Lexington",
+          "host": "Kentucky",
+          "teams": {
+            "1": "Kentucky",
+            "2": "West Virginia",
+            "3": "Indiana",
+            "4": "Ball St."
+          },
+          "winner": "Kentucky",
+          "super_regional": "Baton Rouge"
+        },
+        {
+          "site": "Clemson",
+          "host": "Clemson",
+          "teams": {
+            "1": "Clemson",
+            "2": "Tennessee",
+            "3": "Charlotte",
+            "4": "Lipscomb"
+          },
+          "winner": "Tennessee",
+          "super_regional": "Hattiesburg"
+        },
+        {
+          "site": "Auburn",
+          "host": "Auburn",
+          "teams": {
+            "1": "Auburn",
+            "2": "Southern Miss.",
+            "3": "Samford",
+            "4": "Penn"
+          },
+          "winner": "Southern Miss.",
+          "super_regional": "Hattiesburg"
+        }
+      ],
+      "super_regionals": [
+        {
+          "site": "Eugene",
+          "teams": [
+            "Oregon",
+            "Oral Roberts"
+          ],
+          "national_seeds": [
+            null,
+            null
+          ],
+          "series": "1-2",
+          "winner": "Oral Roberts"
+        },
+        {
+          "site": "Fort Worth",
+          "teams": [
+            "TCU",
+            "Indiana St."
+          ],
+          "national_seeds": [
+            null,
+            14
+          ],
+          "series": "2-0",
+          "winner": "TCU"
+        },
+        {
+          "site": "Charlottesville",
+          "teams": [
+            "Virginia",
+            "Duke"
+          ],
+          "national_seeds": [
+            7,
+            null
+          ],
+          "series": "2-1",
+          "winner": "Virginia"
+        },
+        {
+          "site": "Gainesville",
+          "teams": [
+            "Florida",
+            "South Carolina"
+          ],
+          "national_seeds": [
+            2,
+            15
+          ],
+          "series": "2-0",
+          "winner": "Florida"
+        },
+        {
+          "site": "Winston-Salem",
+          "teams": [
+            "Wake Forest",
+            "Alabama"
+          ],
+          "national_seeds": [
+            1,
+            16
+          ],
+          "series": "2-0",
+          "winner": "Wake Forest"
+        },
+        {
+          "site": "Stanford",
+          "teams": [
+            "Stanford",
+            "Texas"
+          ],
+          "national_seeds": [
+            8,
+            null
+          ],
+          "series": "2-1",
+          "winner": "Stanford"
+        },
+        {
+          "site": "Baton Rouge",
+          "teams": [
+            "LSU",
+            "Kentucky"
+          ],
+          "national_seeds": [
+            5,
+            12
+          ],
+          "series": "2-0",
+          "winner": "LSU"
+        },
+        {
+          "site": "Hattiesburg",
+          "teams": [
+            "Tennessee",
+            "Southern Miss."
+          ],
+          "national_seeds": [
+            null,
+            null
+          ],
+          "series": "2-1",
+          "winner": "Tennessee"
+        }
+      ],
+      "cws_teams": [
+        "Oral Roberts",
+        "TCU",
+        "Virginia",
+        "Florida",
+        "Wake Forest",
+        "Stanford",
+        "LSU",
+        "Tennessee"
+      ],
+      "finalists": [
+        "LSU",
+        "Florida"
+      ],
+      "champion": "LSU",
+      "automatic_qualifiers": {
+        "America East": "Maine",
+        "American": "Tulane",
+        "ASUN": "Lipscomb",
+        "ACC": "Clemson",
+        "Atlantic 10": "George Mason",
+        "Big 12": "TCU",
+        "Big East": "Xavier",
+        "Big South": "Campbell",
+        "Big Ten": "Maryland",
+        "Big West": "Cal State Fullerton",
+        "CAA": "UNC Wilmington",
+        "CUSA": "Charlotte",
+        "Horizon": "Wright St.",
+        "Ivy League": "Penn",
+        "MAAC": "Rider",
+        "MAC": "Ball St.",
+        "Missouri Valley": "Indiana St.",
+        "Mountain West": "San Jose St.",
+        "Northeast": "Central Connecticut",
+        "Ohio Valley": "Eastern Illinois",
+        "Pac-12": "Oregon",
+        "Patriot": "Army",
+        "SEC": "Vanderbilt",
+        "SoCon": "Samford",
+        "Southland": "Nicholls",
+        "SWAC": "Florida A&M",
+        "Summit": "Oral Roberts",
+        "Sun Belt": "Southern Miss.",
+        "West Coast": "Santa Clara",
+        "WAC": "Sam Houston St."
+      },
+      "source": "https://en.wikipedia.org/wiki/2023_NCAA_Division_I_baseball_tournament",
+      "n_automatic": 30,
+      "n_at_large": 34,
+      "selection_date": "2023-05-29"
+    },
+    "2022": {
+      "national_seeds": [
+        "Tennessee",
+        "Stanford",
+        "Oregon St.",
+        "Virginia Tech",
+        "Texas A&M",
+        "Miami (FL)",
+        "Oklahoma St.",
+        "East Carolina",
+        "Texas",
+        "North Carolina",
+        "Southern Miss.",
+        "Louisville",
+        "Florida",
+        "Auburn",
+        "Maryland",
+        "Georgia Southern"
+      ],
+      "hosts": [
+        "Tennessee",
+        "Georgia Southern",
+        "East Carolina",
+        "Texas",
+        "Texas A&M",
+        "Louisville",
+        "Virginia Tech",
+        "Florida",
+        "Oregon St.",
+        "Auburn",
+        "Miami (FL)",
+        "Southern Miss.",
+        "Oklahoma St.",
+        "North Carolina",
+        "Stanford",
+        "Maryland"
+      ],
+      "regionals": [
+        {
+          "site": "Knoxville",
+          "host": "Tennessee",
+          "teams": {
+            "1": "Tennessee",
+            "2": "Georgia Tech",
+            "3": "Campbell",
+            "4": "Alabama St."
+          },
+          "winner": "Tennessee",
+          "super_regional": "Knoxville"
+        },
+        {
+          "site": "Statesboro",
+          "host": "Georgia Southern",
+          "teams": {
+            "1": "Georgia Southern",
+            "2": "Notre Dame",
+            "3": "Texas Tech",
+            "4": "UNC Greensboro"
+          },
+          "winner": "Notre Dame",
+          "super_regional": "Knoxville"
+        },
+        {
+          "site": "Greenville",
+          "host": "East Carolina",
+          "teams": {
+            "1": "East Carolina",
+            "2": "Virginia",
+            "3": "Coastal Carolina",
+            "4": "Coppin St."
+          },
+          "winner": "East Carolina",
+          "super_regional": "Greenville"
+        },
+        {
+          "site": "Austin",
+          "host": "Texas",
+          "teams": {
+            "1": "Texas",
+            "2": "Louisiana Tech",
+            "3": "Dallas Baptist",
+            "4": "Air Force"
+          },
+          "winner": "Texas",
+          "super_regional": "Greenville"
+        },
+        {
+          "site": "College Station",
+          "host": "Texas A&M",
+          "teams": {
+            "1": "Texas A&M",
+            "2": "TCU",
+            "3": "Louisiana",
+            "4": "Oral Roberts"
+          },
+          "winner": "Texas A&M",
+          "super_regional": "College Station"
+        },
+        {
+          "site": "Louisville",
+          "host": "Louisville",
+          "teams": {
+            "1": "Louisville",
+            "2": "Oregon",
+            "3": "Michigan",
+            "4": "Southeast Missouri St."
+          },
+          "winner": "Louisville",
+          "super_regional": "College Station"
+        },
+        {
+          "site": "Blacksburg",
+          "host": "Virginia Tech",
+          "teams": {
+            "1": "Virginia Tech",
+            "2": "Gonzaga",
+            "3": "Columbia",
+            "4": "Wright St."
+          },
+          "winner": "Virginia Tech",
+          "super_regional": "Blacksburg"
+        },
+        {
+          "site": "Gainesville",
+          "host": "Florida",
+          "teams": {
+            "1": "Florida",
+            "2": "Oklahoma",
+            "3": "Liberty",
+            "4": "Central Michigan"
+          },
+          "winner": "Oklahoma",
+          "super_regional": "Blacksburg"
+        },
+        {
+          "site": "Corvallis",
+          "host": "Oregon St.",
+          "teams": {
+            "1": "Oregon St.",
+            "2": "Vanderbilt",
+            "3": "San Diego",
+            "4": "New Mexico St."
+          },
+          "winner": "Oregon St.",
+          "super_regional": "Corvallis"
+        },
+        {
+          "site": "Auburn",
+          "host": "Auburn",
+          "teams": {
+            "1": "Auburn",
+            "2": "UCLA",
+            "3": "Florida St.",
+            "4": "Southeastern Louisiana"
+          },
+          "winner": "Auburn",
+          "super_regional": "Corvallis"
+        },
+        {
+          "site": "Coral Gables",
+          "host": "Miami (FL)",
+          "teams": {
+            "1": "Miami (FL)",
+            "2": "Arizona",
+            "3": "Ole Miss",
+            "4": "Canisius"
+          },
+          "winner": "Ole Miss",
+          "super_regional": "Hattiesburg"
+        },
+        {
+          "site": "Hattiesburg",
+          "host": "Southern Miss.",
+          "teams": {
+            "1": "Southern Miss.",
+            "2": "LSU",
+            "3": "Kennesaw St.",
+            "4": "Army"
+          },
+          "winner": "Southern Miss.",
+          "super_regional": "Hattiesburg"
+        },
+        {
+          "site": "Stillwater",
+          "host": "Oklahoma St.",
+          "teams": {
+            "1": "Oklahoma St.",
+            "2": "Arkansas",
+            "3": "Grand Canyon",
+            "4": "Missouri St."
+          },
+          "winner": "Arkansas",
+          "super_regional": "Chapel Hill"
+        },
+        {
+          "site": "Chapel Hill",
+          "host": "North Carolina",
+          "teams": {
+            "1": "North Carolina",
+            "2": "Georgia",
+            "3": "VCU",
+            "4": "Hofstra"
+          },
+          "winner": "North Carolina",
+          "super_regional": "Chapel Hill"
+        },
+        {
+          "site": "Stanford",
+          "host": "Stanford",
+          "teams": {
+            "1": "Stanford",
+            "2": "Texas St.",
+            "3": "UC Santa Barbara",
+            "4": "Binghamton"
+          },
+          "winner": "Stanford",
+          "super_regional": "Stanford"
+        },
+        {
+          "site": "College Park",
+          "host": "Maryland",
+          "teams": {
+            "1": "Maryland",
+            "2": "Wake Forest",
+            "3": "UConn",
+            "4": "LIU"
+          },
+          "winner": "UConn",
+          "super_regional": "Stanford"
+        }
+      ],
+      "super_regionals": [
+        {
+          "site": "Knoxville",
+          "teams": [
+            "Tennessee",
+            "Notre Dame"
+          ],
+          "national_seeds": [
+            1,
+            null
+          ],
+          "series": "1-2",
+          "winner": "Notre Dame"
+        },
+        {
+          "site": "Greenville",
+          "teams": [
+            "East Carolina",
+            "Texas"
+          ],
+          "national_seeds": [
+            8,
+            9
+          ],
+          "series": "1-2",
+          "winner": "Texas"
+        },
+        {
+          "site": "College Station",
+          "teams": [
+            "Texas A&M",
+            "Louisville"
+          ],
+          "national_seeds": [
+            5,
+            12
+          ],
+          "series": "2-0",
+          "winner": "Texas A&M"
+        },
+        {
+          "site": "Blacksburg",
+          "teams": [
+            "Virginia Tech",
+            "Oklahoma"
+          ],
+          "national_seeds": [
+            4,
+            null
+          ],
+          "series": "1-2",
+          "winner": "Oklahoma"
+        },
+        {
+          "site": "Corvallis",
+          "teams": [
+            "Oregon St.",
+            "Auburn"
+          ],
+          "national_seeds": [
+            3,
+            14
+          ],
+          "series": "1-2",
+          "winner": "Auburn"
+        },
+        {
+          "site": "Hattiesburg",
+          "teams": [
+            "Ole Miss",
+            "Southern Miss."
+          ],
+          "national_seeds": [
+            null,
+            11
+          ],
+          "series": "2-0",
+          "winner": "Ole Miss"
+        },
+        {
+          "site": "Chapel Hill",
+          "teams": [
+            "Arkansas",
+            "North Carolina"
+          ],
+          "national_seeds": [
+            null,
+            10
+          ],
+          "series": "2-0",
+          "winner": "Arkansas"
+        },
+        {
+          "site": "Stanford",
+          "teams": [
+            "Stanford",
+            "UConn"
+          ],
+          "national_seeds": [
+            2,
+            null
+          ],
+          "series": "2-1",
+          "winner": "Stanford"
+        }
+      ],
+      "cws_teams": [
+        "Notre Dame",
+        "Texas",
+        "Texas A&M",
+        "Oklahoma",
+        "Auburn",
+        "Ole Miss",
+        "Arkansas",
+        "Stanford"
+      ],
+      "finalists": [
+        "Ole Miss",
+        "Oklahoma"
+      ],
+      "champion": "Ole Miss",
+      "automatic_qualifiers": {
+        "America East": "Binghamton",
+        "American": "East Carolina",
+        "ASUN": "Kennesaw St.",
+        "ACC": "North Carolina",
+        "Atlantic 10": "VCU",
+        "Big 12": "Oklahoma",
+        "Big East": "UConn",
+        "Big South": "Campbell",
+        "Big Ten": "Michigan",
+        "Big West": "UC Santa Barbara",
+        "CAA": "Hofstra",
+        "CUSA": "Louisiana Tech",
+        "Horizon": "Wright St.",
+        "Ivy League": "Columbia",
+        "MAAC": "Canisius",
+        "MAC": "Central Michigan",
+        "MEAC": "Coppin St.",
+        "Missouri Valley": "Missouri St.",
+        "Mountain West": "Air Force",
+        "Northeast": "LIU",
+        "Ohio Valley": "Southeast Missouri St.",
+        "Pac-12": "Stanford",
+        "Patriot": "Army",
+        "SEC": "Tennessee",
+        "SoCon": "UNC Greensboro",
+        "Southland": "Southeastern Louisiana",
+        "SWAC": "Alabama St.",
+        "Summit": "Oral Roberts",
+        "Sun Belt": "Louisiana",
+        "West Coast": "San Diego",
+        "WAC": "New Mexico St."
+      },
+      "source": "https://en.wikipedia.org/wiki/2022_NCAA_Division_I_baseball_tournament",
+      "n_automatic": 31,
+      "n_at_large": 33,
+      "selection_date": "2022-05-30"
+    },
+    "2021": {
+      "national_seeds": [
+        "Arkansas",
+        "Texas",
+        "Tennessee",
+        "Vanderbilt",
+        "Arizona",
+        "TCU",
+        "Mississippi St.",
+        "Texas Tech",
+        "Stanford",
+        "Notre Dame",
+        "Old Dominion",
+        "Ole Miss",
+        "East Carolina",
+        "Oregon",
+        "Florida",
+        "Louisiana Tech"
+      ],
+      "hosts": [
+        "Arkansas",
+        "Louisiana Tech",
+        "Texas Tech",
+        "Stanford",
+        "Arizona",
+        "Ole Miss",
+        "Vanderbilt",
+        "East Carolina",
+        "Tennessee",
+        "Oregon",
+        "TCU",
+        "South Carolina",
+        "Mississippi St.",
+        "Notre Dame",
+        "Texas",
+        "Florida"
+      ],
+      "regionals": [
+        {
+          "site": "Fayetteville",
+          "host": "Arkansas",
+          "teams": {
+            "1": "Arkansas",
+            "2": "Nebraska",
+            "3": "Northeastern",
+            "4": "NJIT"
+          },
+          "winner": "Arkansas",
+          "super_regional": "Fayetteville"
+        },
+        {
+          "site": "Ruston",
+          "host": "Louisiana Tech",
+          "teams": {
+            "1": "Louisiana Tech",
+            "2": "NC State",
+            "3": "Alabama",
+            "4": "Rider"
+          },
+          "winner": "NC State",
+          "super_regional": "Fayetteville"
+        },
+        {
+          "site": "Lubbock",
+          "host": "Texas Tech",
+          "teams": {
+            "1": "Texas Tech",
+            "2": "UCLA",
+            "3": "North Carolina",
+            "4": "Army"
+          },
+          "winner": "Texas Tech",
+          "super_regional": "Lubbock"
+        },
+        {
+          "site": "Stanford",
+          "host": "Stanford",
+          "teams": {
+            "1": "Stanford",
+            "2": "UC Irvine",
+            "3": "Nevada",
+            "4": "North Dakota St."
+          },
+          "winner": "Stanford",
+          "super_regional": "Lubbock"
+        },
+        {
+          "site": "Tucson",
+          "host": "Arizona",
+          "teams": {
+            "1": "Arizona",
+            "2": "Oklahoma St.",
+            "3": "UC Santa Barbara",
+            "4": "Grand Canyon"
+          },
+          "winner": "Arizona",
+          "super_regional": "Tucson"
+        },
+        {
+          "site": "Oxford",
+          "host": "Ole Miss",
+          "teams": {
+            "1": "Ole Miss",
+            "2": "Southern Miss.",
+            "3": "Florida St.",
+            "4": "Southeast Missouri St."
+          },
+          "winner": "Ole Miss",
+          "super_regional": "Tucson"
+        },
+        {
+          "site": "Nashville",
+          "host": "Vanderbilt",
+          "teams": {
+            "1": "Vanderbilt",
+            "2": "Georgia Tech",
+            "3": "Indiana St.",
+            "4": "Presbyterian"
+          },
+          "winner": "Vanderbilt",
+          "super_regional": "Nashville"
+        },
+        {
+          "site": "Greenville",
+          "host": "East Carolina",
+          "teams": {
+            "1": "East Carolina",
+            "2": "Charlotte",
+            "3": "Maryland",
+            "4": "Norfolk St."
+          },
+          "winner": "East Carolina",
+          "super_regional": "Nashville"
+        },
+        {
+          "site": "Knoxville",
+          "host": "Tennessee",
+          "teams": {
+            "1": "Tennessee",
+            "2": "Duke",
+            "3": "Liberty",
+            "4": "Wright St."
+          },
+          "winner": "Tennessee",
+          "super_regional": "Knoxville"
+        },
+        {
+          "site": "Eugene",
+          "host": "Oregon",
+          "teams": {
+            "1": "Oregon",
+            "2": "Gonzaga",
+            "3": "LSU",
+            "4": "Central Connecticut"
+          },
+          "winner": "LSU",
+          "super_regional": "Knoxville"
+        },
+        {
+          "site": "Fort Worth",
+          "host": "TCU",
+          "teams": {
+            "1": "TCU",
+            "2": "Oregon St.",
+            "3": "Dallas Baptist",
+            "4": "McNeese St."
+          },
+          "winner": "Dallas Baptist",
+          "super_regional": "Columbia"
+        },
+        {
+          "site": "Columbia",
+          "host": "South Carolina",
+          "teams": {
+            "1": "Old Dominion",
+            "2": "South Carolina",
+            "3": "Virginia",
+            "4": "Jacksonville"
+          },
+          "winner": "Virginia",
+          "super_regional": "Columbia",
+          "note": "Old Dominion was the No. 1 seed but could not host at its own park (facility did not meet NCAA requirements); regional played at South Carolina's Founders Park with South Carolina as host institution."
+        },
+        {
+          "site": "Starkville",
+          "host": "Mississippi St.",
+          "teams": {
+            "1": "Mississippi St.",
+            "2": "VCU",
+            "3": "Campbell",
+            "4": "Samford"
+          },
+          "winner": "Mississippi St.",
+          "super_regional": "Starkville"
+        },
+        {
+          "site": "South Bend",
+          "host": "Notre Dame",
+          "teams": {
+            "1": "Notre Dame",
+            "2": "UConn",
+            "3": "Michigan",
+            "4": "Central Michigan"
+          },
+          "winner": "Notre Dame",
+          "super_regional": "Starkville"
+        },
+        {
+          "site": "Austin",
+          "host": "Texas",
+          "teams": {
+            "1": "Texas",
+            "2": "Arizona St.",
+            "3": "Fairfield",
+            "4": "Southern"
+          },
+          "winner": "Texas",
+          "super_regional": "Austin"
+        },
+        {
+          "site": "Gainesville",
+          "host": "Florida",
+          "teams": {
+            "1": "Florida",
+            "2": "Miami (FL)",
+            "3": "South Alabama",
+            "4": "South Florida"
+          },
+          "winner": "South Florida",
+          "super_regional": "Austin"
+        }
+      ],
+      "super_regionals": [
+        {
+          "site": "Fayetteville",
+          "teams": [
+            "Arkansas",
+            "NC State"
+          ],
+          "national_seeds": [
+            1,
+            null
+          ],
+          "series": "1-2",
+          "winner": "NC State"
+        },
+        {
+          "site": "Lubbock",
+          "teams": [
+            "Texas Tech",
+            "Stanford"
+          ],
+          "national_seeds": [
+            8,
+            9
+          ],
+          "series": "0-2",
+          "winner": "Stanford"
+        },
+        {
+          "site": "Tucson",
+          "teams": [
+            "Arizona",
+            "Ole Miss"
+          ],
+          "national_seeds": [
+            5,
+            12
+          ],
+          "series": "2-1",
+          "winner": "Arizona"
+        },
+        {
+          "site": "Nashville",
+          "teams": [
+            "Vanderbilt",
+            "East Carolina"
+          ],
+          "national_seeds": [
+            4,
+            13
+          ],
+          "series": "2-0",
+          "winner": "Vanderbilt"
+        },
+        {
+          "site": "Knoxville",
+          "teams": [
+            "Tennessee",
+            "LSU"
+          ],
+          "national_seeds": [
+            3,
+            null
+          ],
+          "series": "2-0",
+          "winner": "Tennessee"
+        },
+        {
+          "site": "Columbia",
+          "teams": [
+            "Dallas Baptist",
+            "Virginia"
+          ],
+          "national_seeds": [
+            null,
+            null
+          ],
+          "series": "1-2",
+          "winner": "Virginia"
+        },
+        {
+          "site": "Starkville",
+          "teams": [
+            "Mississippi St.",
+            "Notre Dame"
+          ],
+          "national_seeds": [
+            7,
+            10
+          ],
+          "series": "2-1",
+          "winner": "Mississippi St."
+        },
+        {
+          "site": "Austin",
+          "teams": [
+            "Texas",
+            "South Florida"
+          ],
+          "national_seeds": [
+            2,
+            null
+          ],
+          "series": "2-0",
+          "winner": "Texas"
+        }
+      ],
+      "cws_teams": [
+        "NC State",
+        "Stanford",
+        "Arizona",
+        "Vanderbilt",
+        "Tennessee",
+        "Virginia",
+        "Mississippi St.",
+        "Texas"
+      ],
+      "finalists": [
+        "Mississippi St.",
+        "Vanderbilt"
+      ],
+      "champion": "Mississippi St.",
+      "automatic_qualifiers": {
+        "Pac-12": "Arizona",
+        "SEC": "Arkansas",
+        "Patriot": "Army",
+        "Northeast": "Central Connecticut",
+        "MAC": "Central Michigan",
+        "Missouri Valley": "Dallas Baptist",
+        "ACC": "Duke",
+        "West Coast": "Gonzaga",
+        "WAC": "Grand Canyon",
+        "ASUN": "Jacksonville",
+        "Southland": "McNeese St.",
+        "Big Ten": "Nebraska",
+        "Mountain West": "Nevada",
+        "America East": "NJIT",
+        "MEAC": "Norfolk St.",
+        "Summit": "North Dakota St.",
+        "CAA": "Northeastern",
+        "CUSA": "Old Dominion",
+        "Big South": "Presbyterian",
+        "MAAC": "Rider",
+        "SoCon": "Samford",
+        "Sun Belt": "South Alabama",
+        "American": "South Florida",
+        "Ohio Valley": "Southeast Missouri St.",
+        "SWAC": "Southern",
+        "Big 12": "TCU",
+        "Big West": "UC Irvine",
+        "Big East": "UConn",
+        "Atlantic 10": "VCU",
+        "Horizon": "Wright St."
+      },
+      "source": "https://en.wikipedia.org/wiki/2021_NCAA_Division_I_baseball_tournament",
+      "n_automatic": 30,
+      "n_at_large": 34,
+      "selection_date": "2021-05-31",
+      "note": "No 2020 tournament (COVID-19). Ivy League did not play in 2021, so 30 automatic bids. Old Dominion (No. 11 national seed) played its regional at South Carolina. One MCWS game (Vanderbilt vs NC State) declared a no-contest and NC State eliminated under COVID-19 protocols."
+    },
+    "2019": {
+      "national_seeds": [
+        "UCLA",
+        "Vanderbilt",
+        "Georgia Tech",
+        "Georgia",
+        "Arkansas",
+        "Mississippi St.",
+        "Louisville",
+        "Texas Tech",
+        "Oklahoma St.",
+        "East Carolina",
+        "Stanford",
+        "Ole Miss",
+        "LSU",
+        "North Carolina",
+        "West Virginia",
+        "Oregon St."
+      ],
+      "hosts": [
+        "UCLA",
+        "Oregon St.",
+        "Texas Tech",
+        "Oklahoma St.",
+        "Arkansas",
+        "Ole Miss",
+        "Georgia",
+        "LSU",
+        "Georgia Tech",
+        "North Carolina",
+        "Mississippi St.",
+        "Stanford",
+        "Louisville",
+        "East Carolina",
+        "Vanderbilt",
+        "West Virginia"
+      ],
+      "regionals": [
+        {
+          "site": "Los Angeles",
+          "host": "UCLA",
+          "teams": {
+            "1": "UCLA",
+            "2": "Baylor",
+            "3": "Loyola Marymount",
+            "4": "Omaha"
+          },
+          "winner": "UCLA",
+          "super_regional": "Los Angeles"
+        },
+        {
+          "site": "Corvallis",
+          "host": "Oregon St.",
+          "teams": {
+            "1": "Oregon St.",
+            "2": "Creighton",
+            "3": "Michigan",
+            "4": "Cincinnati"
+          },
+          "winner": "Michigan",
+          "super_regional": "Los Angeles"
+        },
+        {
+          "site": "Lubbock",
+          "host": "Texas Tech",
+          "teams": {
+            "1": "Texas Tech",
+            "2": "Dallas Baptist",
+            "3": "Florida",
+            "4": "Army"
+          },
+          "winner": "Texas Tech",
+          "super_regional": "Lubbock"
+        },
+        {
+          "site": "Oklahoma City",
+          "host": "Oklahoma St.",
+          "teams": {
+            "1": "Oklahoma St.",
+            "2": "UConn",
+            "3": "Nebraska",
+            "4": "Harvard"
+          },
+          "winner": "Oklahoma St.",
+          "super_regional": "Lubbock",
+          "note": "Oklahoma State hosted at Chickasaw Bricktown Ballpark in Oklahoma City due to flooding in Stillwater."
+        },
+        {
+          "site": "Fayetteville",
+          "host": "Arkansas",
+          "teams": {
+            "1": "Arkansas",
+            "2": "California",
+            "3": "TCU",
+            "4": "Central Connecticut"
+          },
+          "winner": "Arkansas",
+          "super_regional": "Fayetteville"
+        },
+        {
+          "site": "Oxford",
+          "host": "Ole Miss",
+          "teams": {
+            "1": "Ole Miss",
+            "2": "Illinois",
+            "3": "Clemson",
+            "4": "Jacksonville St."
+          },
+          "winner": "Ole Miss",
+          "super_regional": "Fayetteville"
+        },
+        {
+          "site": "Athens",
+          "host": "Georgia",
+          "teams": {
+            "1": "Georgia",
+            "2": "Florida Atlantic",
+            "3": "Florida St.",
+            "4": "Mercer"
+          },
+          "winner": "Florida St.",
+          "super_regional": "Baton Rouge"
+        },
+        {
+          "site": "Baton Rouge",
+          "host": "LSU",
+          "teams": {
+            "1": "LSU",
+            "2": "Arizona St.",
+            "3": "Southern Miss.",
+            "4": "Stony Brook"
+          },
+          "winner": "LSU",
+          "super_regional": "Baton Rouge"
+        },
+        {
+          "site": "Atlanta",
+          "host": "Georgia Tech",
+          "teams": {
+            "1": "Georgia Tech",
+            "2": "Auburn",
+            "3": "Coastal Carolina",
+            "4": "Florida A&M"
+          },
+          "winner": "Auburn",
+          "super_regional": "Chapel Hill"
+        },
+        {
+          "site": "Chapel Hill",
+          "host": "North Carolina",
+          "teams": {
+            "1": "North Carolina",
+            "2": "Tennessee",
+            "3": "Liberty",
+            "4": "UNC Wilmington"
+          },
+          "winner": "North Carolina",
+          "super_regional": "Chapel Hill"
+        },
+        {
+          "site": "Starkville",
+          "host": "Mississippi St.",
+          "teams": {
+            "1": "Mississippi St.",
+            "2": "Miami (FL)",
+            "3": "Central Michigan",
+            "4": "Southern"
+          },
+          "winner": "Mississippi St.",
+          "super_regional": "Starkville"
+        },
+        {
+          "site": "Stanford",
+          "host": "Stanford",
+          "teams": {
+            "1": "Stanford",
+            "2": "UC Santa Barbara",
+            "3": "Fresno St.",
+            "4": "Sacramento St."
+          },
+          "winner": "Stanford",
+          "super_regional": "Starkville"
+        },
+        {
+          "site": "Louisville",
+          "host": "Louisville",
+          "teams": {
+            "1": "Louisville",
+            "2": "Indiana",
+            "3": "Illinois St.",
+            "4": "UIC"
+          },
+          "winner": "Louisville",
+          "super_regional": "Louisville"
+        },
+        {
+          "site": "Greenville",
+          "host": "East Carolina",
+          "teams": {
+            "1": "East Carolina",
+            "2": "NC State",
+            "3": "Campbell",
+            "4": "Quinnipiac"
+          },
+          "winner": "East Carolina",
+          "super_regional": "Louisville"
+        },
+        {
+          "site": "Nashville",
+          "host": "Vanderbilt",
+          "teams": {
+            "1": "Vanderbilt",
+            "2": "Indiana St.",
+            "3": "McNeese St.",
+            "4": "Ohio St."
+          },
+          "winner": "Vanderbilt",
+          "super_regional": "Nashville"
+        },
+        {
+          "site": "Morgantown",
+          "host": "West Virginia",
+          "teams": {
+            "1": "West Virginia",
+            "2": "Texas A&M",
+            "3": "Duke",
+            "4": "Fordham"
+          },
+          "winner": "Duke",
+          "super_regional": "Nashville"
+        }
+      ],
+      "super_regionals": [
+        {
+          "site": "Los Angeles",
+          "teams": [
+            "UCLA",
+            "Michigan"
+          ],
+          "national_seeds": [
+            1,
+            null
+          ],
+          "series": "1-2",
+          "winner": "Michigan"
+        },
+        {
+          "site": "Lubbock",
+          "teams": [
+            "Texas Tech",
+            "Oklahoma St."
+          ],
+          "national_seeds": [
+            8,
+            9
+          ],
+          "series": "2-1",
+          "winner": "Texas Tech"
+        },
+        {
+          "site": "Fayetteville",
+          "teams": [
+            "Arkansas",
+            "Ole Miss"
+          ],
+          "national_seeds": [
+            5,
+            12
+          ],
+          "series": "2-1",
+          "winner": "Arkansas"
+        },
+        {
+          "site": "Baton Rouge",
+          "teams": [
+            "Florida St.",
+            "LSU"
+          ],
+          "national_seeds": [
+            null,
+            13
+          ],
+          "series": "2-0",
+          "winner": "Florida St."
+        },
+        {
+          "site": "Chapel Hill",
+          "teams": [
+            "Auburn",
+            "North Carolina"
+          ],
+          "national_seeds": [
+            null,
+            14
+          ],
+          "series": "2-1",
+          "winner": "Auburn"
+        },
+        {
+          "site": "Starkville",
+          "teams": [
+            "Mississippi St.",
+            "Stanford"
+          ],
+          "national_seeds": [
+            6,
+            11
+          ],
+          "series": "2-0",
+          "winner": "Mississippi St."
+        },
+        {
+          "site": "Louisville",
+          "teams": [
+            "Louisville",
+            "East Carolina"
+          ],
+          "national_seeds": [
+            7,
+            10
+          ],
+          "series": "2-0",
+          "winner": "Louisville"
+        },
+        {
+          "site": "Nashville",
+          "teams": [
+            "Vanderbilt",
+            "Duke"
+          ],
+          "national_seeds": [
+            2,
+            null
+          ],
+          "series": "2-1",
+          "winner": "Vanderbilt"
+        }
+      ],
+      "cws_teams": [
+        "Michigan",
+        "Texas Tech",
+        "Arkansas",
+        "Florida St.",
+        "Auburn",
+        "Mississippi St.",
+        "Louisville",
+        "Vanderbilt"
+      ],
+      "finalists": [
+        "Vanderbilt",
+        "Michigan"
+      ],
+      "champion": "Vanderbilt",
+      "automatic_qualifiers": {
+        "America East": "Stony Brook",
+        "American": "Cincinnati",
+        "ACC": "North Carolina",
+        "ASUN": "Liberty",
+        "Atlantic 10": "Fordham",
+        "Big East": "Creighton",
+        "Big South": "Campbell",
+        "Big Ten": "Ohio St.",
+        "Big 12": "Oklahoma St.",
+        "Big West": "UC Santa Barbara",
+        "CAA": "UNC Wilmington",
+        "CUSA": "Southern Miss.",
+        "Horizon": "UIC",
+        "Ivy League": "Harvard",
+        "MAAC": "Quinnipiac",
+        "MAC": "Central Michigan",
+        "MEAC": "Florida A&M",
+        "Missouri Valley": "Indiana St.",
+        "Mountain West": "Fresno St.",
+        "Northeast": "Central Connecticut",
+        "Ohio Valley": "Jacksonville St.",
+        "Pac-12": "UCLA",
+        "Patriot": "Army",
+        "SEC": "Vanderbilt",
+        "SoCon": "Mercer",
+        "Southland": "McNeese St.",
+        "SWAC": "Southern",
+        "Summit": "Omaha",
+        "Sun Belt": "Coastal Carolina",
+        "West Coast": "Loyola Marymount",
+        "WAC": "Sacramento St."
+      },
+      "source": "https://en.wikipedia.org/wiki/2019_NCAA_Division_I_baseball_tournament",
+      "n_automatic": 31,
+      "n_at_large": 33,
+      "selection_date": "2019-05-27"
+    },
+    "2018": {
+      "national_seeds": [
+        "Florida",
+        "Stanford",
+        "Oregon St.",
+        "Ole Miss",
+        "Arkansas",
+        "North Carolina",
+        "Florida St.",
+        "Georgia",
+        "Texas Tech",
+        "Clemson",
+        "Stetson",
+        "East Carolina",
+        "Texas",
+        "Minnesota",
+        "Coastal Carolina",
+        "NC State"
+      ],
+      "hosts": [
+        "Florida",
+        "NC State",
+        "Georgia",
+        "Texas Tech",
+        "Arkansas",
+        "East Carolina",
+        "Ole Miss",
+        "Texas",
+        "Oregon St.",
+        "Minnesota",
+        "North Carolina",
+        "Stetson",
+        "Florida St.",
+        "Clemson",
+        "Stanford",
+        "Coastal Carolina"
+      ],
+      "regionals": [
+        {
+          "site": "Gainesville",
+          "host": "Florida",
+          "teams": {
+            "1": "Florida",
+            "2": "Jacksonville",
+            "3": "Florida Atlantic",
+            "4": "Columbia"
+          },
+          "winner": "Florida",
+          "super_regional": "Gainesville"
+        },
+        {
+          "site": "Raleigh",
+          "host": "NC State",
+          "teams": {
+            "1": "NC State",
+            "2": "Auburn",
+            "3": "Northeastern",
+            "4": "Army"
+          },
+          "winner": "Auburn",
+          "super_regional": "Gainesville"
+        },
+        {
+          "site": "Athens",
+          "host": "Georgia",
+          "teams": {
+            "1": "Georgia",
+            "2": "Duke",
+            "3": "Troy",
+            "4": "Campbell"
+          },
+          "winner": "Duke",
+          "super_regional": "Lubbock"
+        },
+        {
+          "site": "Lubbock",
+          "host": "Texas Tech",
+          "teams": {
+            "1": "Texas Tech",
+            "2": "Louisville",
+            "3": "Kent St.",
+            "4": "New Mexico St."
+          },
+          "winner": "Texas Tech",
+          "super_regional": "Lubbock"
+        },
+        {
+          "site": "Fayetteville",
+          "host": "Arkansas",
+          "teams": {
+            "1": "Arkansas",
+            "2": "Southern Miss.",
+            "3": "Dallas Baptist",
+            "4": "Oral Roberts"
+          },
+          "winner": "Arkansas",
+          "super_regional": "Fayetteville"
+        },
+        {
+          "site": "Greenville",
+          "host": "East Carolina",
+          "teams": {
+            "1": "East Carolina",
+            "2": "South Carolina",
+            "3": "Ohio St.",
+            "4": "UNC Wilmington"
+          },
+          "winner": "South Carolina",
+          "super_regional": "Fayetteville"
+        },
+        {
+          "site": "Oxford",
+          "host": "Ole Miss",
+          "teams": {
+            "1": "Ole Miss",
+            "2": "Tennessee Tech",
+            "3": "Missouri St.",
+            "4": "Saint Louis"
+          },
+          "winner": "Tennessee Tech",
+          "super_regional": "Austin"
+        },
+        {
+          "site": "Austin",
+          "host": "Texas",
+          "teams": {
+            "1": "Texas",
+            "2": "Indiana",
+            "3": "Texas A&M",
+            "4": "Texas Southern"
+          },
+          "winner": "Texas",
+          "super_regional": "Austin"
+        },
+        {
+          "site": "Corvallis",
+          "host": "Oregon St.",
+          "teams": {
+            "1": "Oregon St.",
+            "2": "LSU",
+            "3": "San Diego St.",
+            "4": "Northwestern St."
+          },
+          "winner": "Oregon St.",
+          "super_regional": "Corvallis"
+        },
+        {
+          "site": "Minneapolis",
+          "host": "Minnesota",
+          "teams": {
+            "1": "Minnesota",
+            "2": "UCLA",
+            "3": "Gonzaga",
+            "4": "Canisius"
+          },
+          "winner": "Minnesota",
+          "super_regional": "Corvallis"
+        },
+        {
+          "site": "Chapel Hill",
+          "host": "North Carolina",
+          "teams": {
+            "1": "North Carolina",
+            "2": "Purdue",
+            "3": "Houston",
+            "4": "North Carolina A&T"
+          },
+          "winner": "North Carolina",
+          "super_regional": "Chapel Hill"
+        },
+        {
+          "site": "DeLand",
+          "host": "Stetson",
+          "teams": {
+            "1": "Stetson",
+            "2": "South Florida",
+            "3": "Oklahoma St.",
+            "4": "Hartford"
+          },
+          "winner": "Stetson",
+          "super_regional": "Chapel Hill"
+        },
+        {
+          "site": "Tallahassee",
+          "host": "Florida St.",
+          "teams": {
+            "1": "Florida St.",
+            "2": "Mississippi St.",
+            "3": "Oklahoma",
+            "4": "Samford"
+          },
+          "winner": "Mississippi St.",
+          "super_regional": "Nashville"
+        },
+        {
+          "site": "Clemson",
+          "host": "Clemson",
+          "teams": {
+            "1": "Clemson",
+            "2": "Vanderbilt",
+            "3": "St. John's",
+            "4": "Morehead St."
+          },
+          "winner": "Vanderbilt",
+          "super_regional": "Nashville"
+        },
+        {
+          "site": "Stanford",
+          "host": "Stanford",
+          "teams": {
+            "1": "Stanford",
+            "2": "Baylor",
+            "3": "Cal State Fullerton",
+            "4": "Wright St."
+          },
+          "winner": "Cal State Fullerton",
+          "super_regional": "Fullerton"
+        },
+        {
+          "site": "Conway",
+          "host": "Coastal Carolina",
+          "teams": {
+            "1": "Coastal Carolina",
+            "2": "UConn",
+            "3": "Washington",
+            "4": "LIU"
+          },
+          "winner": "Washington",
+          "super_regional": "Fullerton"
+        }
+      ],
+      "super_regionals": [
+        {
+          "site": "Gainesville",
+          "teams": [
+            "Florida",
+            "Auburn"
+          ],
+          "national_seeds": [
+            1,
+            null
+          ],
+          "series": "2-1",
+          "winner": "Florida"
+        },
+        {
+          "site": "Lubbock",
+          "teams": [
+            "Duke",
+            "Texas Tech"
+          ],
+          "national_seeds": [
+            null,
+            9
+          ],
+          "series": "1-2",
+          "winner": "Texas Tech"
+        },
+        {
+          "site": "Fayetteville",
+          "teams": [
+            "Arkansas",
+            "South Carolina"
+          ],
+          "national_seeds": [
+            5,
+            null
+          ],
+          "series": "2-1",
+          "winner": "Arkansas"
+        },
+        {
+          "site": "Austin",
+          "teams": [
+            "Tennessee Tech",
+            "Texas"
+          ],
+          "national_seeds": [
+            null,
+            13
+          ],
+          "series": "1-2",
+          "winner": "Texas"
+        },
+        {
+          "site": "Corvallis",
+          "teams": [
+            "Oregon St.",
+            "Minnesota"
+          ],
+          "national_seeds": [
+            3,
+            14
+          ],
+          "series": "2-0",
+          "winner": "Oregon St."
+        },
+        {
+          "site": "Chapel Hill",
+          "teams": [
+            "North Carolina",
+            "Stetson"
+          ],
+          "national_seeds": [
+            6,
+            11
+          ],
+          "series": "2-0",
+          "winner": "North Carolina"
+        },
+        {
+          "site": "Nashville",
+          "teams": [
+            "Mississippi St.",
+            "Vanderbilt"
+          ],
+          "national_seeds": [
+            null,
+            null
+          ],
+          "series": "2-1",
+          "winner": "Mississippi St."
+        },
+        {
+          "site": "Fullerton",
+          "teams": [
+            "Cal State Fullerton",
+            "Washington"
+          ],
+          "national_seeds": [
+            null,
+            null
+          ],
+          "series": "1-2",
+          "winner": "Washington"
+        }
+      ],
+      "cws_teams": [
+        "Florida",
+        "Texas Tech",
+        "Arkansas",
+        "Texas",
+        "Oregon St.",
+        "North Carolina",
+        "Mississippi St.",
+        "Washington"
+      ],
+      "finalists": [
+        "Oregon St.",
+        "Arkansas"
+      ],
+      "champion": "Oregon St.",
+      "automatic_qualifiers": {
+        "America East": "Hartford",
+        "American": "East Carolina",
+        "ACC": "Florida St.",
+        "ASUN": "Stetson",
+        "Atlantic 10": "Saint Louis",
+        "Big 12": "Baylor",
+        "Big East": "St. John's",
+        "Big South": "Campbell",
+        "Big Ten": "Minnesota",
+        "Big West": "Cal State Fullerton",
+        "CAA": "UNC Wilmington",
+        "CUSA": "Southern Miss.",
+        "Horizon": "Wright St.",
+        "Ivy League": "Columbia",
+        "MAAC": "Canisius",
+        "MAC": "Kent St.",
+        "MEAC": "North Carolina A&T",
+        "Missouri Valley": "Missouri St.",
+        "Mountain West": "San Diego St.",
+        "Northeast": "LIU",
+        "Ohio Valley": "Morehead St.",
+        "Pac-12": "Stanford",
+        "Patriot": "Army",
+        "SEC": "Ole Miss",
+        "SoCon": "Samford",
+        "Southland": "Northwestern St.",
+        "SWAC": "Texas Southern",
+        "Summit": "Oral Roberts",
+        "Sun Belt": "Coastal Carolina",
+        "West Coast": "Gonzaga",
+        "WAC": "New Mexico St."
+      },
+      "source": "https://en.wikipedia.org/wiki/2018_NCAA_Division_I_baseball_tournament",
+      "n_automatic": 31,
+      "n_at_large": 33,
+      "selection_date": "2018-05-28"
+    },
+    "2017": {
+      "national_seeds": [
+        "Oregon St.",
+        "North Carolina",
+        "Florida",
+        "LSU",
+        "Texas Tech",
+        "TCU",
+        "Louisville",
+        "Stanford"
+      ],
+      "hosts": [
+        "Oregon St.",
+        "Clemson",
+        "Stanford",
+        "Long Beach St.",
+        "Texas Tech",
+        "Florida St.",
+        "LSU",
+        "Southern Miss.",
+        "Florida",
+        "Wake Forest",
+        "TCU",
+        "Arkansas",
+        "Louisville",
+        "Kentucky",
+        "North Carolina",
+        "Houston"
+      ],
+      "regionals": [
+        {
+          "site": "Corvallis",
+          "host": "Oregon St.",
+          "teams": {
+            "1": "Oregon St.",
+            "2": "Nebraska",
+            "3": "Yale",
+            "4": "Holy Cross"
+          },
+          "winner": "Oregon St.",
+          "super_regional": "Corvallis"
+        },
+        {
+          "site": "Clemson",
+          "host": "Clemson",
+          "teams": {
+            "1": "Clemson",
+            "2": "Vanderbilt",
+            "3": "St. John's",
+            "4": "UNC Greensboro"
+          },
+          "winner": "Vanderbilt",
+          "super_regional": "Corvallis"
+        },
+        {
+          "site": "Stanford",
+          "host": "Stanford",
+          "teams": {
+            "1": "Stanford",
+            "2": "Cal State Fullerton",
+            "3": "BYU",
+            "4": "Sacramento St."
+          },
+          "winner": "Cal State Fullerton",
+          "super_regional": "Long Beach"
+        },
+        {
+          "site": "Long Beach",
+          "host": "Long Beach St.",
+          "teams": {
+            "1": "Long Beach St.",
+            "2": "Texas",
+            "3": "UCLA",
+            "4": "San Diego St."
+          },
+          "winner": "Long Beach St.",
+          "super_regional": "Long Beach"
+        },
+        {
+          "site": "Lubbock",
+          "host": "Texas Tech",
+          "teams": {
+            "1": "Texas Tech",
+            "2": "Arizona",
+            "3": "Sam Houston St.",
+            "4": "Delaware"
+          },
+          "winner": "Sam Houston St.",
+          "super_regional": "Tallahassee"
+        },
+        {
+          "site": "Tallahassee",
+          "host": "Florida St.",
+          "teams": {
+            "1": "Florida St.",
+            "2": "UCF",
+            "3": "Auburn",
+            "4": "Tennessee Tech"
+          },
+          "winner": "Florida St.",
+          "super_regional": "Tallahassee"
+        },
+        {
+          "site": "Baton Rouge",
+          "host": "LSU",
+          "teams": {
+            "1": "LSU",
+            "2": "Southeastern Louisiana",
+            "3": "Rice",
+            "4": "Texas Southern"
+          },
+          "winner": "LSU",
+          "super_regional": "Baton Rouge"
+        },
+        {
+          "site": "Hattiesburg",
+          "host": "Southern Miss.",
+          "teams": {
+            "1": "Southern Miss.",
+            "2": "Mississippi St.",
+            "3": "South Alabama",
+            "4": "UIC"
+          },
+          "winner": "Mississippi St.",
+          "super_regional": "Baton Rouge"
+        },
+        {
+          "site": "Gainesville",
+          "host": "Florida",
+          "teams": {
+            "1": "Florida",
+            "2": "South Florida",
+            "3": "Bethune-Cookman",
+            "4": "Marist"
+          },
+          "winner": "Florida",
+          "super_regional": "Gainesville"
+        },
+        {
+          "site": "Winston-Salem",
+          "host": "Wake Forest",
+          "teams": {
+            "1": "Wake Forest",
+            "2": "West Virginia",
+            "3": "Maryland",
+            "4": "UMBC"
+          },
+          "winner": "Wake Forest",
+          "super_regional": "Gainesville"
+        },
+        {
+          "site": "Fort Worth",
+          "host": "TCU",
+          "teams": {
+            "1": "TCU",
+            "2": "Virginia",
+            "3": "Dallas Baptist",
+            "4": "Central Connecticut St."
+          },
+          "winner": "TCU",
+          "super_regional": "Fort Worth"
+        },
+        {
+          "site": "Fayetteville",
+          "host": "Arkansas",
+          "teams": {
+            "1": "Arkansas",
+            "2": "Missouri St.",
+            "3": "Oklahoma St.",
+            "4": "Oral Roberts"
+          },
+          "winner": "Missouri St.",
+          "super_regional": "Fort Worth"
+        },
+        {
+          "site": "Louisville",
+          "host": "Louisville",
+          "teams": {
+            "1": "Louisville",
+            "2": "Oklahoma",
+            "3": "Xavier",
+            "4": "Radford"
+          },
+          "winner": "Louisville",
+          "super_regional": "Louisville"
+        },
+        {
+          "site": "Lexington",
+          "host": "Kentucky",
+          "teams": {
+            "1": "Kentucky",
+            "2": "Indiana",
+            "3": "NC State",
+            "4": "Ohio"
+          },
+          "winner": "Kentucky",
+          "super_regional": "Louisville"
+        },
+        {
+          "site": "Chapel Hill",
+          "host": "North Carolina",
+          "teams": {
+            "1": "North Carolina",
+            "2": "Florida Gulf Coast",
+            "3": "Michigan",
+            "4": "Davidson"
+          },
+          "winner": "Davidson",
+          "super_regional": "College Station"
+        },
+        {
+          "site": "Houston",
+          "host": "Houston",
+          "teams": {
+            "1": "Houston",
+            "2": "Baylor",
+            "3": "Texas A&M",
+            "4": "Iowa"
+          },
+          "winner": "Texas A&M",
+          "super_regional": "College Station"
+        }
+      ],
+      "super_regionals": [
+        {
+          "site": "Corvallis",
+          "teams": [
+            "Oregon St.",
+            "Vanderbilt"
+          ],
+          "national_seeds": [
+            1,
+            null
+          ],
+          "series": "2-0",
+          "winner": "Oregon St."
+        },
+        {
+          "site": "Long Beach",
+          "teams": [
+            "Cal State Fullerton",
+            "Long Beach St."
+          ],
+          "national_seeds": [
+            null,
+            null
+          ],
+          "series": "2-1",
+          "winner": "Cal State Fullerton"
+        },
+        {
+          "site": "Tallahassee",
+          "teams": [
+            "Sam Houston St.",
+            "Florida St."
+          ],
+          "national_seeds": [
+            null,
+            null
+          ],
+          "series": "0-2",
+          "winner": "Florida St."
+        },
+        {
+          "site": "Baton Rouge",
+          "teams": [
+            "LSU",
+            "Mississippi St."
+          ],
+          "national_seeds": [
+            4,
+            null
+          ],
+          "series": "2-0",
+          "winner": "LSU"
+        },
+        {
+          "site": "Gainesville",
+          "teams": [
+            "Florida",
+            "Wake Forest"
+          ],
+          "national_seeds": [
+            3,
+            null
+          ],
+          "series": "2-1",
+          "winner": "Florida"
+        },
+        {
+          "site": "Fort Worth",
+          "teams": [
+            "TCU",
+            "Missouri St."
+          ],
+          "national_seeds": [
+            6,
+            null
+          ],
+          "series": "2-0",
+          "winner": "TCU"
+        },
+        {
+          "site": "Louisville",
+          "teams": [
+            "Louisville",
+            "Kentucky"
+          ],
+          "national_seeds": [
+            7,
+            null
+          ],
+          "series": "2-0",
+          "winner": "Louisville"
+        },
+        {
+          "site": "College Station",
+          "teams": [
+            "Davidson",
+            "Texas A&M"
+          ],
+          "national_seeds": [
+            null,
+            null
+          ],
+          "series": "0-2",
+          "winner": "Texas A&M"
+        }
+      ],
+      "cws_teams": [
+        "Oregon St.",
+        "Cal State Fullerton",
+        "Florida St.",
+        "LSU",
+        "Florida",
+        "TCU",
+        "Louisville",
+        "Texas A&M"
+      ],
+      "finalists": [
+        "Florida",
+        "LSU"
+      ],
+      "champion": "Florida",
+      "automatic_qualifiers": {
+        "America East": "UMBC",
+        "American": "Houston",
+        "ACC": "Florida St.",
+        "ASUN": "Florida Gulf Coast",
+        "Atlantic 10": "Davidson",
+        "Big 12": "Oklahoma St.",
+        "Big East": "Xavier",
+        "Big South": "Radford",
+        "Big Ten": "Iowa",
+        "Big West": "Long Beach St.",
+        "CAA": "Delaware",
+        "CUSA": "Rice",
+        "Horizon": "UIC",
+        "Ivy League": "Yale",
+        "MAAC": "Marist",
+        "MAC": "Ohio",
+        "MEAC": "Bethune-Cookman",
+        "Missouri Valley": "Dallas Baptist",
+        "Mountain West": "San Diego St.",
+        "Northeast": "Central Connecticut",
+        "Ohio Valley": "Tennessee Tech",
+        "Pac-12": "Oregon St.",
+        "Patriot": "Holy Cross",
+        "SEC": "LSU",
+        "SoCon": "UNC Greensboro",
+        "Southland": "Sam Houston St.",
+        "SWAC": "Texas Southern",
+        "Summit": "Oral Roberts",
+        "Sun Belt": "South Alabama",
+        "West Coast": "BYU",
+        "WAC": "Sacramento St."
+      },
+      "source": "https://en.wikipedia.org/wiki/2017_NCAA_Division_I_baseball_tournament",
+      "n_automatic": 31,
+      "n_at_large": 33,
+      "selection_date": "2017-05-29"
+    },
+    "2016": {
+      "national_seeds": [
+        "Florida",
+        "Louisville",
+        "Miami (FL)",
+        "Texas A&M",
+        "Texas Tech",
+        "Mississippi St.",
+        "Clemson",
+        "LSU"
+      ],
+      "hosts": [
+        "Florida",
+        "Florida St.",
+        "LSU",
+        "NC State",
+        "Texas A&M",
+        "TCU",
+        "Texas Tech",
+        "Virginia",
+        "Miami (FL)",
+        "Ole Miss",
+        "Mississippi St.",
+        "Louisiana",
+        "Louisville",
+        "Vanderbilt",
+        "Clemson",
+        "South Carolina"
+      ],
+      "regionals": [
+        {
+          "site": "Gainesville",
+          "host": "Florida",
+          "teams": {
+            "1": "Florida",
+            "2": "Georgia Tech",
+            "3": "UConn",
+            "4": "Bethune-Cookman"
+          },
+          "winner": "Florida",
+          "super_regional": "Gainesville"
+        },
+        {
+          "site": "Tallahassee",
+          "host": "Florida St.",
+          "teams": {
+            "1": "Florida St.",
+            "2": "Southern Miss.",
+            "3": "South Alabama",
+            "4": "Alabama St."
+          },
+          "winner": "Florida St.",
+          "super_regional": "Gainesville"
+        },
+        {
+          "site": "Baton Rouge",
+          "host": "LSU",
+          "teams": {
+            "1": "LSU",
+            "2": "Rice",
+            "3": "Southeastern Louisiana",
+            "4": "Utah Valley"
+          },
+          "winner": "LSU",
+          "super_regional": "Baton Rouge"
+        },
+        {
+          "site": "Raleigh",
+          "host": "NC State",
+          "teams": {
+            "1": "NC State",
+            "2": "Coastal Carolina",
+            "3": "Saint Mary's (CA)",
+            "4": "Navy"
+          },
+          "winner": "Coastal Carolina",
+          "super_regional": "Baton Rouge"
+        },
+        {
+          "site": "College Station",
+          "host": "Texas A&M",
+          "teams": {
+            "1": "Texas A&M",
+            "2": "Minnesota",
+            "3": "Wake Forest",
+            "4": "Binghamton"
+          },
+          "winner": "Texas A&M",
+          "super_regional": "College Station"
+        },
+        {
+          "site": "Fort Worth",
+          "host": "TCU",
+          "teams": {
+            "1": "TCU",
+            "2": "Arizona St.",
+            "3": "Gonzaga",
+            "4": "Oral Roberts"
+          },
+          "winner": "TCU",
+          "super_regional": "College Station"
+        },
+        {
+          "site": "Lubbock",
+          "host": "Texas Tech",
+          "teams": {
+            "1": "Texas Tech",
+            "2": "Dallas Baptist",
+            "3": "New Mexico",
+            "4": "Fairfield"
+          },
+          "winner": "Texas Tech",
+          "super_regional": "Lubbock"
+        },
+        {
+          "site": "Charlottesville",
+          "host": "Virginia",
+          "teams": {
+            "1": "Virginia",
+            "2": "Bryant",
+            "3": "East Carolina",
+            "4": "William & Mary"
+          },
+          "winner": "East Carolina",
+          "super_regional": "Lubbock"
+        },
+        {
+          "site": "Coral Gables",
+          "host": "Miami (FL)",
+          "teams": {
+            "1": "Miami (FL)",
+            "2": "Florida Atlantic",
+            "3": "Long Beach St.",
+            "4": "Stetson"
+          },
+          "winner": "Miami (FL)",
+          "super_regional": "Coral Gables"
+        },
+        {
+          "site": "Oxford",
+          "host": "Ole Miss",
+          "teams": {
+            "1": "Ole Miss",
+            "2": "Tulane",
+            "3": "Boston College",
+            "4": "Utah"
+          },
+          "winner": "Boston College",
+          "super_regional": "Coral Gables"
+        },
+        {
+          "site": "Starkville",
+          "host": "Mississippi St.",
+          "teams": {
+            "1": "Mississippi St.",
+            "2": "Cal State Fullerton",
+            "3": "Louisiana Tech",
+            "4": "Southeast Missouri St."
+          },
+          "winner": "Mississippi St.",
+          "super_regional": "Starkville"
+        },
+        {
+          "site": "Lafayette",
+          "host": "Louisiana",
+          "teams": {
+            "1": "Louisiana",
+            "2": "Arizona",
+            "3": "Sam Houston St.",
+            "4": "Princeton"
+          },
+          "winner": "Arizona",
+          "super_regional": "Starkville"
+        },
+        {
+          "site": "Louisville",
+          "host": "Louisville",
+          "teams": {
+            "1": "Louisville",
+            "2": "Ohio St.",
+            "3": "Wright St.",
+            "4": "Western Michigan"
+          },
+          "winner": "Louisville",
+          "super_regional": "Louisville"
+        },
+        {
+          "site": "Nashville",
+          "host": "Vanderbilt",
+          "teams": {
+            "1": "Vanderbilt",
+            "2": "UC Santa Barbara",
+            "3": "Washington",
+            "4": "Xavier"
+          },
+          "winner": "UC Santa Barbara",
+          "super_regional": "Louisville"
+        },
+        {
+          "site": "Clemson",
+          "host": "Clemson",
+          "teams": {
+            "1": "Clemson",
+            "2": "Oklahoma St.",
+            "3": "Nebraska",
+            "4": "Western Carolina"
+          },
+          "winner": "Oklahoma St.",
+          "super_regional": "Columbia"
+        },
+        {
+          "site": "Columbia",
+          "host": "South Carolina",
+          "teams": {
+            "1": "South Carolina",
+            "2": "UNC Wilmington",
+            "3": "Duke",
+            "4": "Rhode Island"
+          },
+          "winner": "South Carolina",
+          "super_regional": "Columbia"
+        }
+      ],
+      "super_regionals": [
+        {
+          "site": "Gainesville",
+          "teams": [
+            "Florida",
+            "Florida St."
+          ],
+          "national_seeds": [
+            1,
+            null
+          ],
+          "series": "2-1",
+          "winner": "Florida"
+        },
+        {
+          "site": "Baton Rouge",
+          "teams": [
+            "LSU",
+            "Coastal Carolina"
+          ],
+          "national_seeds": [
+            8,
+            null
+          ],
+          "series": "0-2",
+          "winner": "Coastal Carolina"
+        },
+        {
+          "site": "College Station",
+          "teams": [
+            "Texas A&M",
+            "TCU"
+          ],
+          "national_seeds": [
+            4,
+            null
+          ],
+          "series": "1-2",
+          "winner": "TCU"
+        },
+        {
+          "site": "Lubbock",
+          "teams": [
+            "Texas Tech",
+            "East Carolina"
+          ],
+          "national_seeds": [
+            5,
+            null
+          ],
+          "series": "2-1",
+          "winner": "Texas Tech"
+        },
+        {
+          "site": "Coral Gables",
+          "teams": [
+            "Miami (FL)",
+            "Boston College"
+          ],
+          "national_seeds": [
+            3,
+            null
+          ],
+          "series": "2-1",
+          "winner": "Miami (FL)"
+        },
+        {
+          "site": "Starkville",
+          "teams": [
+            "Mississippi St.",
+            "Arizona"
+          ],
+          "national_seeds": [
+            6,
+            null
+          ],
+          "series": "0-2",
+          "winner": "Arizona"
+        },
+        {
+          "site": "Louisville",
+          "teams": [
+            "Louisville",
+            "UC Santa Barbara"
+          ],
+          "national_seeds": [
+            2,
+            null
+          ],
+          "series": "0-2",
+          "winner": "UC Santa Barbara"
+        },
+        {
+          "site": "Columbia",
+          "teams": [
+            "Oklahoma St.",
+            "South Carolina"
+          ],
+          "national_seeds": [
+            null,
+            null
+          ],
+          "series": "2-0",
+          "winner": "Oklahoma St."
+        }
+      ],
+      "cws_teams": [
+        "Florida",
+        "Coastal Carolina",
+        "TCU",
+        "Texas Tech",
+        "Miami (FL)",
+        "Arizona",
+        "UC Santa Barbara",
+        "Oklahoma St."
+      ],
+      "finalists": [
+        "Coastal Carolina",
+        "Arizona"
+      ],
+      "champion": "Coastal Carolina",
+      "automatic_qualifiers": {
+        "America East": "Binghamton",
+        "American": "UConn",
+        "ACC": "Clemson",
+        "ASUN": "Stetson",
+        "Atlantic 10": "Rhode Island",
+        "Big 12": "TCU",
+        "Big East": "Xavier",
+        "Big South": "Coastal Carolina",
+        "Big Ten": "Ohio St.",
+        "Big West": "Cal State Fullerton",
+        "CAA": "William & Mary",
+        "CUSA": "Southern Miss.",
+        "Horizon": "Wright St.",
+        "Ivy League": "Princeton",
+        "MAAC": "Fairfield",
+        "MAC": "Western Michigan",
+        "MEAC": "Bethune-Cookman",
+        "Missouri Valley": "Dallas Baptist",
+        "Mountain West": "New Mexico",
+        "Northeast": "Bryant",
+        "Ohio Valley": "Southeast Missouri St.",
+        "Pac-12": "Utah",
+        "Patriot": "Navy",
+        "SEC": "Texas A&M",
+        "SoCon": "Western Carolina",
+        "Southland": "Sam Houston St.",
+        "SWAC": "Alabama St.",
+        "Summit": "Oral Roberts",
+        "Sun Belt": "Louisiana",
+        "West Coast": "Saint Mary's (CA)",
+        "WAC": "Utah Valley"
+      },
+      "source": "https://en.wikipedia.org/wiki/2016_NCAA_Division_I_baseball_tournament",
+      "n_automatic": 31,
+      "n_at_large": 33,
+      "selection_date": "2016-05-30"
+    },
+    "2015": {
+      "national_seeds": [
+        "UCLA",
+        "LSU",
+        "Louisville",
+        "Florida",
+        "Miami (FL)",
+        "Illinois",
+        "TCU",
+        "Missouri St."
+      ],
+      "hosts": [
+        "UCLA",
+        "UC Santa Barbara",
+        "Missouri St.",
+        "Oklahoma St.",
+        "Florida",
+        "Florida St.",
+        "Miami (FL)",
+        "Dallas Baptist",
+        "LSU",
+        "Houston",
+        "TCU",
+        "Texas A&M",
+        "Louisville",
+        "Cal State Fullerton",
+        "Illinois",
+        "Vanderbilt"
+      ],
+      "regionals": [
+        {
+          "site": "Los Angeles",
+          "host": "UCLA",
+          "teams": {
+            "1": "UCLA",
+            "2": "Ole Miss",
+            "3": "Maryland",
+            "4": "Cal State Bakersfield"
+          },
+          "winner": "Maryland",
+          "super_regional": "Charlottesville"
+        },
+        {
+          "site": "Lake Elsinore",
+          "host": "UC Santa Barbara",
+          "teams": {
+            "1": "UC Santa Barbara",
+            "2": "USC",
+            "3": "Virginia",
+            "4": "San Diego St."
+          },
+          "winner": "Virginia",
+          "super_regional": "Charlottesville",
+          "note": "UCSB was the host/No. 1 seed but its home stadium did not meet requirements; played at neutral Lake Elsinore Diamond."
+        },
+        {
+          "site": "Springfield",
+          "host": "Missouri St.",
+          "teams": {
+            "1": "Missouri St.",
+            "2": "Iowa",
+            "3": "Oregon",
+            "4": "Canisius"
+          },
+          "winner": "Missouri St.",
+          "super_regional": "Fayetteville"
+        },
+        {
+          "site": "Stillwater",
+          "host": "Oklahoma St.",
+          "teams": {
+            "1": "Oklahoma St.",
+            "2": "Arkansas",
+            "3": "Oral Roberts",
+            "4": "St. John's"
+          },
+          "winner": "Arkansas",
+          "super_regional": "Fayetteville"
+        },
+        {
+          "site": "Gainesville",
+          "host": "Florida",
+          "teams": {
+            "1": "Florida",
+            "2": "Florida Atlantic",
+            "3": "South Florida",
+            "4": "Florida A&M"
+          },
+          "winner": "Florida",
+          "super_regional": "Gainesville"
+        },
+        {
+          "site": "Tallahassee",
+          "host": "Florida St.",
+          "teams": {
+            "1": "Florida St.",
+            "2": "College of Charleston",
+            "3": "Auburn",
+            "4": "Mercer"
+          },
+          "winner": "Florida St.",
+          "super_regional": "Gainesville"
+        },
+        {
+          "site": "Coral Gables",
+          "host": "Miami (FL)",
+          "teams": {
+            "1": "Miami (FL)",
+            "2": "East Carolina",
+            "3": "Columbia",
+            "4": "FIU"
+          },
+          "winner": "Miami (FL)",
+          "super_regional": "Coral Gables"
+        },
+        {
+          "site": "Dallas",
+          "host": "Dallas Baptist",
+          "teams": {
+            "1": "Dallas Baptist",
+            "2": "Oregon St.",
+            "3": "Texas",
+            "4": "VCU"
+          },
+          "winner": "VCU",
+          "super_regional": "Coral Gables"
+        },
+        {
+          "site": "Baton Rouge",
+          "host": "LSU",
+          "teams": {
+            "1": "LSU",
+            "2": "UNC Wilmington",
+            "3": "Tulane",
+            "4": "Lehigh"
+          },
+          "winner": "LSU",
+          "super_regional": "Baton Rouge"
+        },
+        {
+          "site": "Houston",
+          "host": "Houston",
+          "teams": {
+            "1": "Houston",
+            "2": "Rice",
+            "3": "Louisiana",
+            "4": "Houston Baptist"
+          },
+          "winner": "Louisiana",
+          "super_regional": "Baton Rouge"
+        },
+        {
+          "site": "Fort Worth",
+          "host": "TCU",
+          "teams": {
+            "1": "TCU",
+            "2": "NC State",
+            "3": "Stony Brook",
+            "4": "Sacred Heart"
+          },
+          "winner": "TCU",
+          "super_regional": "Fort Worth"
+        },
+        {
+          "site": "College Station",
+          "host": "Texas A&M",
+          "teams": {
+            "1": "Texas A&M",
+            "2": "Coastal Carolina",
+            "3": "California",
+            "4": "Texas Southern"
+          },
+          "winner": "Texas A&M",
+          "super_regional": "Fort Worth"
+        },
+        {
+          "site": "Louisville",
+          "host": "Louisville",
+          "teams": {
+            "1": "Louisville",
+            "2": "Bradley",
+            "3": "Michigan",
+            "4": "Morehead St."
+          },
+          "winner": "Louisville",
+          "super_regional": "Louisville"
+        },
+        {
+          "site": "Fullerton",
+          "host": "Cal State Fullerton",
+          "teams": {
+            "1": "Cal State Fullerton",
+            "2": "Arizona St.",
+            "3": "Clemson",
+            "4": "Pepperdine"
+          },
+          "winner": "Cal State Fullerton",
+          "super_regional": "Louisville"
+        },
+        {
+          "site": "Champaign",
+          "host": "Illinois",
+          "teams": {
+            "1": "Illinois",
+            "2": "Notre Dame",
+            "3": "Wright St.",
+            "4": "Ohio"
+          },
+          "winner": "Illinois",
+          "super_regional": "Champaign"
+        },
+        {
+          "site": "Nashville",
+          "host": "Vanderbilt",
+          "teams": {
+            "1": "Vanderbilt",
+            "2": "Radford",
+            "3": "Indiana",
+            "4": "Lipscomb"
+          },
+          "winner": "Vanderbilt",
+          "super_regional": "Champaign"
+        }
+      ],
+      "super_regionals": [
+        {
+          "site": "Charlottesville",
+          "teams": [
+            "Maryland",
+            "Virginia"
+          ],
+          "national_seeds": [
+            null,
+            null
+          ],
+          "series": "0-2",
+          "winner": "Virginia"
+        },
+        {
+          "site": "Fayetteville",
+          "teams": [
+            "Missouri St.",
+            "Arkansas"
+          ],
+          "national_seeds": [
+            8,
+            null
+          ],
+          "series": "1-2",
+          "winner": "Arkansas"
+        },
+        {
+          "site": "Gainesville",
+          "teams": [
+            "Florida",
+            "Florida St."
+          ],
+          "national_seeds": [
+            4,
+            null
+          ],
+          "series": "2-0",
+          "winner": "Florida"
+        },
+        {
+          "site": "Coral Gables",
+          "teams": [
+            "Miami (FL)",
+            "VCU"
+          ],
+          "national_seeds": [
+            5,
+            null
+          ],
+          "series": "2-0",
+          "winner": "Miami (FL)"
+        },
+        {
+          "site": "Baton Rouge",
+          "teams": [
+            "LSU",
+            "Louisiana"
+          ],
+          "national_seeds": [
+            2,
+            null
+          ],
+          "series": "2-0",
+          "winner": "LSU"
+        },
+        {
+          "site": "Fort Worth",
+          "teams": [
+            "TCU",
+            "Texas A&M"
+          ],
+          "national_seeds": [
+            7,
+            null
+          ],
+          "series": "2-1",
+          "winner": "TCU"
+        },
+        {
+          "site": "Louisville",
+          "teams": [
+            "Louisville",
+            "Cal State Fullerton"
+          ],
+          "national_seeds": [
+            3,
+            null
+          ],
+          "series": "1-2",
+          "winner": "Cal State Fullerton"
+        },
+        {
+          "site": "Champaign",
+          "teams": [
+            "Illinois",
+            "Vanderbilt"
+          ],
+          "national_seeds": [
+            6,
+            null
+          ],
+          "series": "0-2",
+          "winner": "Vanderbilt"
+        }
+      ],
+      "cws_teams": [
+        "Virginia",
+        "Arkansas",
+        "Florida",
+        "Miami (FL)",
+        "LSU",
+        "TCU",
+        "Cal State Fullerton",
+        "Vanderbilt"
+      ],
+      "finalists": [
+        "Virginia",
+        "Vanderbilt"
+      ],
+      "champion": "Virginia",
+      "automatic_qualifiers": {
+        "America East": "Stony Brook",
+        "American": "East Carolina",
+        "ACC": "Florida St.",
+        "ASUN": "Lipscomb",
+        "Atlantic 10": "VCU",
+        "Big 12": "Texas",
+        "Big East": "St. John's",
+        "Big South": "Radford",
+        "Big Ten": "Michigan",
+        "Big West": "Cal State Fullerton",
+        "CAA": "UNC Wilmington",
+        "CUSA": "FIU",
+        "Horizon": "Wright St.",
+        "Ivy League": "Columbia",
+        "MAAC": "Canisius",
+        "MAC": "Ohio",
+        "MEAC": "Florida A&M",
+        "Missouri Valley": "Missouri St.",
+        "Mountain West": "San Diego St.",
+        "Northeast": "Sacred Heart",
+        "Ohio Valley": "Morehead St.",
+        "Pac-12": "UCLA",
+        "Patriot": "Lehigh",
+        "SEC": "Florida",
+        "SoCon": "Mercer",
+        "Southland": "Houston Baptist",
+        "SWAC": "Texas Southern",
+        "Summit": "Oral Roberts",
+        "Sun Belt": "Louisiana",
+        "West Coast": "Pepperdine",
+        "WAC": "Cal State Bakersfield"
+      },
+      "source": "https://en.wikipedia.org/wiki/2015_NCAA_Division_I_baseball_tournament",
+      "n_automatic": 31,
+      "n_at_large": 33,
+      "selection_date": "2015-05-25",
+      "note": "8 national seeds; Missouri St. (No. 8) could not host a super regional because of a venue conflict (its super was played at Arkansas). UC Santa Barbara hosted its regional at Lake Elsinore."
+    }
+  }
+}

@@ -1,0 +1,1158 @@
+[
+ {
+  "id": "fiesta_bowl",
+  "name": "Vrbo Fiesta Bowl",
+  "espn_name": "Fiesta Bowl",
+  "former_names": [],
+  "city": "Glendale",
+  "state": "AZ",
+  "lat": 33.53,
+  "lon": -112.26,
+  "is_cfp": true,
+  "cfp_round": "quarterfinal",
+  "prestige": 10,
+  "payout": 6000000,
+  "source": "CFP 2026-27 rotation (collegefootballplayoff.com via National Football Post 2026-10-23)"
+ },
+ {
+  "id": "cotton_bowl",
+  "name": "Goodyear Cotton Bowl Classic",
+  "espn_name": "Cotton Bowl",
+  "former_names": [],
+  "city": "Arlington",
+  "state": "TX",
+  "lat": 32.75,
+  "lon": -97.09,
+  "is_cfp": true,
+  "cfp_round": "quarterfinal",
+  "prestige": 10,
+  "payout": 6000000,
+  "source": "CFP 2026-27 rotation (collegefootballplayoff.com via National Football Post 2026-10-23)"
+ },
+ {
+  "id": "peach_bowl",
+  "name": "Chick-fil-A Peach Bowl",
+  "espn_name": "Peach Bowl",
+  "former_names": [],
+  "city": "Atlanta",
+  "state": "GA",
+  "lat": 33.76,
+  "lon": -84.4,
+  "is_cfp": true,
+  "cfp_round": "quarterfinal",
+  "prestige": 10,
+  "payout": 6000000,
+  "source": "CFP 2026-27 rotation (collegefootballplayoff.com via National Football Post 2026-10-23)"
+ },
+ {
+  "id": "rose_bowl",
+  "name": "Rose Bowl Game",
+  "espn_name": "Rose Bowl",
+  "former_names": [],
+  "city": "Pasadena",
+  "state": "CA",
+  "lat": 34.16,
+  "lon": -118.17,
+  "is_cfp": true,
+  "cfp_round": "quarterfinal",
+  "prestige": 10,
+  "payout": 6000000,
+  "source": "CFP 2026-27 rotation (collegefootballplayoff.com via National Football Post 2026-10-23)"
+ },
+ {
+  "id": "orange_bowl",
+  "name": "Capital One Orange Bowl",
+  "espn_name": "Orange Bowl",
+  "former_names": [],
+  "city": "Miami Gardens",
+  "state": "FL",
+  "lat": 25.96,
+  "lon": -80.24,
+  "is_cfp": true,
+  "cfp_round": "semifinal",
+  "prestige": 10,
+  "payout": 6000000,
+  "source": "CFP 2026-27 rotation (collegefootballplayoff.com via National Football Post 2026-10-23)"
+ },
+ {
+  "id": "sugar_bowl",
+  "name": "Allstate Sugar Bowl",
+  "espn_name": "Sugar Bowl",
+  "former_names": [],
+  "city": "New Orleans",
+  "state": "LA",
+  "lat": 29.95,
+  "lon": -90.08,
+  "is_cfp": true,
+  "cfp_round": "semifinal",
+  "prestige": 10,
+  "payout": 6000000,
+  "source": "CFP 2026-27 rotation (collegefootballplayoff.com via National Football Post 2026-10-23)"
+ },
+ {
+  "id": "citrus_bowl",
+  "name": "Cheez-It Citrus Bowl",
+  "espn_name": "Citrus Bowl",
+  "former_names": [],
+  "city": "Orlando",
+  "state": "FL",
+  "lat": 28.54,
+  "lon": -81.4,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 9,
+  "payout": 8225000,
+  "slots": [
+   {
+    "confs": [
+     "SEC"
+    ],
+    "order": 1
+   },
+   {
+    "confs": [
+     "Big Ten"
+    ],
+    "order": 1
+   }
+  ],
+  "source": "2026-27 tie-ins = 2025 affiliations retained (Bowl Season, via Yahoo Sports/FanSided 2026)"
+ },
+ {
+  "id": "alamo_bowl",
+  "name": "Valero Alamo Bowl",
+  "espn_name": "Alamo Bowl",
+  "former_names": [],
+  "city": "San Antonio",
+  "state": "TX",
+  "lat": 29.42,
+  "lon": -98.48,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 9,
+  "payout": 8250000,
+  "slots": [
+   {
+    "confs": [
+     "Big 12"
+    ],
+    "order": 1
+   },
+   {
+    "confs": [
+     "Pac-12 legacy"
+    ],
+    "order": 1
+   }
+  ],
+  "source": "2026-27 tie-ins = 2025 affiliations retained (Bowl Season, via Yahoo Sports/FanSided 2026); Pac-12 legacy order per Press Democrat 2026-08-16"
+ },
+ {
+  "id": "pop_tarts_bowl",
+  "name": "Pop-Tarts Bowl",
+  "espn_name": "Pop-Tarts Bowl",
+  "former_names": [],
+  "city": "Orlando",
+  "state": "FL",
+  "lat": 28.54,
+  "lon": -81.4,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 8,
+  "payout": 6000000,
+  "slots": [
+   {
+    "confs": [
+     "ACC"
+    ],
+    "order": 1
+   },
+   {
+    "confs": [
+     "Big 12"
+    ],
+    "order": 2
+   }
+  ],
+  "source": "2026-27 tie-ins = 2025 affiliations retained (Bowl Season, via Yahoo Sports/FanSided 2026)"
+ },
+ {
+  "id": "reliaquest_bowl",
+  "name": "ReliaQuest Bowl",
+  "espn_name": "ReliaQuest Bowl",
+  "former_names": [],
+  "city": "Tampa",
+  "state": "FL",
+  "lat": 27.98,
+  "lon": -82.5,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 8,
+  "payout": 6400000,
+  "slots": [
+   {
+    "confs": [
+     "SEC"
+    ],
+    "order": 2
+   },
+   {
+    "confs": [
+     "Big Ten"
+    ],
+    "order": 2
+   }
+  ],
+  "source": "2026-27 tie-ins = 2025 affiliations retained (Bowl Season, via Yahoo Sports/FanSided 2026)"
+ },
+ {
+  "id": "gator_bowl",
+  "name": "TaxSlayer Gator Bowl",
+  "espn_name": "Gator Bowl",
+  "former_names": [],
+  "city": "Jacksonville",
+  "state": "FL",
+  "lat": 30.32,
+  "lon": -81.64,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 8,
+  "payout": 5350000,
+  "slots": [
+   {
+    "confs": [
+     "ACC"
+    ],
+    "order": 2
+   },
+   {
+    "confs": [
+     "SEC"
+    ],
+    "order": 2
+   }
+  ],
+  "source": "2026-27 tie-ins = 2025 affiliations retained (Bowl Season, via Yahoo Sports/FanSided 2026)"
+ },
+ {
+  "id": "holiday_bowl",
+  "name": "DIRECTV Holiday Bowl",
+  "espn_name": "Holiday Bowl",
+  "former_names": [],
+  "city": "San Diego",
+  "state": "CA",
+  "lat": 32.78,
+  "lon": -117.12,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 8,
+  "payout": 6500000,
+  "slots": [
+   {
+    "confs": [
+     "ACC"
+    ],
+    "order": 3
+   },
+   {
+    "confs": [
+     "Pac-12 legacy"
+    ],
+    "order": 3
+   }
+  ],
+  "source": "2026-27 tie-ins = 2025 affiliations retained (Bowl Season, via Yahoo Sports/FanSided 2026); Pac-12 legacy order per Press Democrat 2026-08-16"
+ },
+ {
+  "id": "music_city_bowl",
+  "name": "TransPerfect Music City Bowl",
+  "espn_name": "Music City Bowl",
+  "former_names": [],
+  "city": "Nashville",
+  "state": "TN",
+  "lat": 36.17,
+  "lon": -86.77,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 8,
+  "payout": 5700000,
+  "slots": [
+   {
+    "confs": [
+     "SEC"
+    ],
+    "order": 2
+   },
+   {
+    "confs": [
+     "Big Ten"
+    ],
+    "order": 3
+   }
+  ],
+  "source": "2026-27 tie-ins = 2025 affiliations retained (Bowl Season, via Yahoo Sports/FanSided 2026)"
+ },
+ {
+  "id": "texas_bowl",
+  "name": "Kinder's Texas Bowl",
+  "espn_name": "Texas Bowl",
+  "former_names": [],
+  "city": "Houston",
+  "state": "TX",
+  "lat": 29.68,
+  "lon": -95.41,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 8,
+  "payout": 6400000,
+  "slots": [
+   {
+    "confs": [
+     "Big 12"
+    ],
+    "order": 3
+   },
+   {
+    "confs": [
+     "SEC"
+    ],
+    "order": 2
+   }
+  ],
+  "source": "2026-27 tie-ins = 2025 affiliations retained (Bowl Season, via Yahoo Sports/FanSided 2026)"
+ },
+ {
+  "id": "las_vegas_bowl",
+  "name": "SRS Distribution Las Vegas Bowl",
+  "espn_name": "Las Vegas Bowl",
+  "former_names": [],
+  "city": "Paradise",
+  "state": "NV",
+  "lat": 36.09,
+  "lon": -115.18,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 7,
+  "payout": 2900000,
+  "slots": [
+   {
+    "confs": [
+     "Big Ten"
+    ],
+    "order": 4
+   },
+   {
+    "confs": [
+     "Pac-12 legacy"
+    ],
+    "order": 2
+   }
+  ],
+  "source": "2026-27 tie-ins = 2025 affiliations retained (Bowl Season, via Yahoo Sports/FanSided 2026); Pac-12 legacy order per Press Democrat 2026-08-16"
+ },
+ {
+  "id": "sun_bowl",
+  "name": "Tony the Tiger Sun Bowl",
+  "espn_name": "Sun Bowl",
+  "former_names": [],
+  "city": "El Paso",
+  "state": "TX",
+  "lat": 31.77,
+  "lon": -106.51,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 7,
+  "payout": 4550000,
+  "slots": [
+   {
+    "confs": [
+     "ACC"
+    ],
+    "order": 4
+   },
+   {
+    "confs": [
+     "Pac-12 legacy"
+    ],
+    "order": 4
+   }
+  ],
+  "source": "2026-27 tie-ins = 2025 affiliations retained (Bowl Season, via Yahoo Sports/FanSided 2026); Pac-12 legacy order per Press Democrat 2026-08-16"
+ },
+ {
+  "id": "liberty_bowl",
+  "name": "AutoZone Liberty Bowl",
+  "espn_name": "Liberty Bowl",
+  "former_names": [],
+  "city": "Memphis",
+  "state": "TN",
+  "lat": 35.12,
+  "lon": -89.98,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 7,
+  "payout": 4700000,
+  "slots": [
+   {
+    "confs": [
+     "Big 12"
+    ],
+    "order": 4
+   },
+   {
+    "confs": [
+     "SEC"
+    ],
+    "order": 2
+   }
+  ],
+  "source": "2026-27 tie-ins = 2025 affiliations retained (Bowl Season, via Yahoo Sports/FanSided 2026)"
+ },
+ {
+  "id": "dukes_mayo_bowl",
+  "name": "Duke's Mayo Bowl",
+  "espn_name": "Mayo Bowl",
+  "former_names": [],
+  "city": "Charlotte",
+  "state": "NC",
+  "lat": 35.23,
+  "lon": -80.85,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 7,
+  "payout": 4780000,
+  "slots": [
+   {
+    "confs": [
+     "ACC"
+    ],
+    "order": 5
+   },
+   {
+    "confs": [
+     "SEC"
+    ],
+    "order": 2
+   }
+  ],
+  "source": "2026-27 tie-ins = 2025 affiliations retained (Bowl Season, via Yahoo Sports/FanSided 2026)"
+ },
+ {
+  "id": "pinstripe_bowl",
+  "name": "Bad Boy Mowers Pinstripe Bowl",
+  "espn_name": "Pinstripe Bowl",
+  "former_names": [],
+  "city": "Bronx",
+  "state": "NY",
+  "lat": 40.83,
+  "lon": -73.93,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 7,
+  "payout": 4400000,
+  "slots": [
+   {
+    "confs": [
+     "ACC"
+    ],
+    "order": 6
+   },
+   {
+    "confs": [
+     "Big Ten"
+    ],
+    "order": 5
+   }
+  ],
+  "source": "2026-27 tie-ins = 2025 affiliations retained (Bowl Season, via Yahoo Sports/FanSided 2026)"
+ },
+ {
+  "id": "cactus_bowl",
+  "name": "Cactus Bowl",
+  "espn_name": "Cactus Bowl",
+  "former_names": [
+   "Rate Bowl",
+   "Guaranteed Rate Bowl"
+  ],
+  "city": "Tempe",
+  "state": "AZ",
+  "lat": 33.43,
+  "lon": -111.93,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 6,
+  "slots": [
+   {
+    "confs": [
+     "Big 12"
+    ],
+    "order": 5
+   },
+   {
+    "confs": [
+     "Big Ten"
+    ],
+    "order": 6
+   }
+  ],
+  "source": "2026-27 tie-ins = 2025 affiliations retained (Bowl Season, via Yahoo Sports/FanSided 2026); renamed from Rate Bowl, moved to Tempe (azfamily.com 2026-06-03)"
+ },
+ {
+  "id": "independence_bowl",
+  "name": "Radiance Technologies Independence Bowl",
+  "espn_name": "Independence Bowl",
+  "former_names": [],
+  "city": "Shreveport",
+  "state": "LA",
+  "lat": 32.48,
+  "lon": -93.79,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 5,
+  "payout": 2200000,
+  "slots": [
+   {
+    "confs": [
+     "Big 12"
+    ],
+    "order": 6
+   },
+   {
+    "confs": [
+     "Pac-12 legacy"
+    ],
+    "order": 6
+   }
+  ],
+  "source": "2026-27 tie-ins = 2025 affiliations retained (Bowl Season, via Yahoo Sports/FanSided 2026); Pac-12 legacy order per Press Democrat 2026-08-16"
+ },
+ {
+  "id": "poinsettia_bowl",
+  "name": "Poinsettia Bowl",
+  "espn_name": "Poinsettia Bowl",
+  "former_names": [],
+  "city": "San Diego",
+  "state": "CA",
+  "lat": 32.78,
+  "lon": -117.12,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 5,
+  "slots": [
+   {
+    "confs": [
+     "Pac-12"
+    ],
+    "order": 1
+   },
+   {
+    "confs": [
+     "Pac-12 legacy"
+    ],
+    "order": 5
+   }
+  ],
+  "source": "Pac-12 legacy order per Press Democrat 2026-08-16 (new Pac-12 champion if not in the CFP vs a legacy Pac-12 team); returns in 2026"
+ },
+ {
+  "id": "fenway_bowl",
+  "name": "Wasabi Fenway Bowl",
+  "espn_name": "Fenway Bowl",
+  "former_names": [],
+  "city": "Boston",
+  "state": "MA",
+  "lat": 42.35,
+  "lon": -71.1,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 6,
+  "payout": 1500000,
+  "slots": [
+   {
+    "confs": [
+     "ACC"
+    ],
+    "order": 7
+   },
+   {
+    "confs": [
+     "AAC"
+    ],
+    "order": 1
+   }
+  ],
+  "source": "2026-27 tie-ins = 2025 affiliations retained (Bowl Season, via Yahoo Sports/FanSided 2026)"
+ },
+ {
+  "id": "military_bowl",
+  "name": "Go Bowling Military Bowl",
+  "espn_name": "Military Bowl",
+  "former_names": [],
+  "city": "Annapolis",
+  "state": "MD",
+  "lat": 38.98,
+  "lon": -76.49,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 6,
+  "payout": 2060000,
+  "slots": [
+   {
+    "confs": [
+     "ACC"
+    ],
+    "order": 8
+   },
+   {
+    "confs": [
+     "AAC"
+    ],
+    "order": 2
+   }
+  ],
+  "source": "2026-27 tie-ins = 2025 affiliations retained (Bowl Season, via Yahoo Sports/FanSided 2026)"
+ },
+ {
+  "id": "gasparilla_bowl",
+  "name": "Gasparilla Bowl",
+  "espn_name": "Gasparilla Bowl",
+  "former_names": [],
+  "city": "Tampa",
+  "state": "FL",
+  "lat": 27.98,
+  "lon": -82.5,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 5,
+  "payout": 1125000,
+  "slots": [
+   {
+    "confs": [
+     "AAC",
+     "ACC",
+     "SEC"
+    ]
+   },
+   {
+    "confs": [
+     "AAC",
+     "CUSA",
+     "MAC",
+     "MWC",
+     "Pac-12",
+     "Sun Belt"
+    ]
+   }
+  ],
+  "source": "2026-27 tie-ins = 2025 affiliations retained (Bowl Season, via Yahoo Sports/FanSided 2026); second slot: ESPN Group-of-6 pool (approximation)"
+ },
+ {
+  "id": "birmingham_bowl",
+  "name": "Birmingham Bowl",
+  "espn_name": "Birmingham Bowl",
+  "former_names": [],
+  "city": "Birmingham",
+  "state": "AL",
+  "lat": 33.52,
+  "lon": -86.81,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 5,
+  "payout": 1375000,
+  "slots": [
+   {
+    "confs": [
+     "ACC",
+     "SEC",
+     "AAC"
+    ]
+   },
+   {
+    "confs": [
+     "AAC",
+     "CUSA",
+     "MAC",
+     "MWC",
+     "Pac-12",
+     "Sun Belt"
+    ]
+   }
+  ],
+  "source": "2026-27 tie-ins = 2025 affiliations retained (Bowl Season, via Yahoo Sports/FanSided 2026); second slot: ESPN Group-of-6 pool (approximation)"
+ },
+ {
+  "id": "first_responder_bowl",
+  "name": "Scooter's Coffee First Responder Bowl",
+  "espn_name": "First Responder Bowl",
+  "former_names": [],
+  "city": "University Park",
+  "state": "TX",
+  "lat": 32.84,
+  "lon": -96.78,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 5,
+  "payout": 825000,
+  "slots": [
+   {
+    "confs": [
+     "AAC",
+     "ACC",
+     "Big 12"
+    ]
+   },
+   {
+    "confs": [
+     "AAC",
+     "CUSA",
+     "MAC",
+     "MWC",
+     "Pac-12",
+     "Sun Belt"
+    ]
+   }
+  ],
+  "source": "2026-27 tie-ins = 2025 affiliations retained (Bowl Season, via Yahoo Sports/FanSided 2026); second slot: ESPN Group-of-6 pool (approximation)"
+ },
+ {
+  "id": "armed_forces_bowl",
+  "name": "Lockheed Martin Armed Forces Bowl",
+  "espn_name": "Armed Forces Bowl",
+  "former_names": [],
+  "city": "Fort Worth",
+  "state": "TX",
+  "lat": 32.71,
+  "lon": -97.37,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 5,
+  "payout": 1350000,
+  "slots": [
+   {
+    "confs": [
+     "AAC"
+    ],
+    "order": 3
+   },
+   {
+    "confs": [
+     "CUSA"
+    ],
+    "order": 1
+   }
+  ],
+  "source": "2026-27 tie-ins = 2025 affiliations retained (Bowl Season, via Yahoo Sports/FanSided 2026)"
+ },
+ {
+  "id": "new_orleans_bowl",
+  "name": "R+L Carriers New Orleans Bowl",
+  "espn_name": "New Orleans Bowl",
+  "former_names": [],
+  "city": "New Orleans",
+  "state": "LA",
+  "lat": 29.95,
+  "lon": -90.08,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 5,
+  "payout": 825000,
+  "slots": [
+   {
+    "confs": [
+     "CUSA"
+    ],
+    "order": 2
+   },
+   {
+    "confs": [
+     "Sun Belt"
+    ],
+    "order": 1
+   }
+  ],
+  "source": "2026-27 tie-ins = 2025 affiliations retained (Bowl Season, via Yahoo Sports/FanSided 2026)"
+ },
+ {
+  "id": "new_mexico_bowl",
+  "name": "Isleta New Mexico Bowl",
+  "espn_name": "New Mexico Bowl",
+  "former_names": [],
+  "city": "Albuquerque",
+  "state": "NM",
+  "lat": 35.07,
+  "lon": -106.63,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 4,
+  "payout": 1050000,
+  "slots": [
+   {
+    "confs": [
+     "MWC"
+    ],
+    "order": 1
+   },
+   {
+    "confs": [
+     "CUSA",
+     "AAC",
+     "Sun Belt",
+     "MAC"
+    ]
+   }
+  ],
+  "source": "2026-27 tie-ins = 2025 affiliations retained (Bowl Season, via Yahoo Sports/FanSided 2026)"
+ },
+ {
+  "id": "arizona_bowl",
+  "name": "Snoop Dogg Arizona Bowl",
+  "espn_name": "Arizona Bowl",
+  "former_names": [],
+  "city": "Tucson",
+  "state": "AZ",
+  "lat": 32.23,
+  "lon": -110.95,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 4,
+  "payout": 350000,
+  "slots": [
+   {
+    "confs": [
+     "MWC"
+    ],
+    "order": 2
+   },
+   {
+    "confs": [
+     "MAC"
+    ],
+    "order": 1
+   }
+  ],
+  "source": "2026-27 tie-ins = 2025 affiliations retained (Bowl Season, via Yahoo Sports/FanSided 2026)"
+ },
+ {
+  "id": "potato_bowl",
+  "name": "Famous Idaho Potato Bowl",
+  "espn_name": "Potato Bowl",
+  "former_names": [],
+  "city": "Boise",
+  "state": "ID",
+  "lat": 43.6,
+  "lon": -116.2,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 4,
+  "payout": 800000,
+  "slots": [
+   {
+    "confs": [
+     "MAC"
+    ],
+    "order": 2
+   },
+   {
+    "confs": [
+     "MWC"
+    ],
+    "order": 3
+   }
+  ],
+  "source": "2026-27 tie-ins = 2025 affiliations retained (Bowl Season, via Yahoo Sports/FanSided 2026)"
+ },
+ {
+  "id": "hawaii_bowl",
+  "name": "Hawai'i Bowl",
+  "espn_name": "Hawai'i Bowl",
+  "former_names": [
+   "Hawaii Bowl",
+   "Hawaiʻi Bowl"
+  ],
+  "city": "Honolulu",
+  "state": "HI",
+  "lat": 21.3,
+  "lon": -157.82,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 4,
+  "payout": 1200000,
+  "slots": [
+   {
+    "confs": [
+     "MWC"
+    ],
+    "order": 4
+   },
+   {
+    "confs": [
+     "Pac-12",
+     "CUSA"
+    ]
+   }
+  ],
+  "source": "2026-27 tie-ins = 2025 affiliations retained (Bowl Season, via Yahoo Sports/FanSided 2026) (MWC vs CUSA); Press Democrat 2026-08-16 says one new Pac-12 team is selected for Hawai'i — both allowed"
+ },
+ {
+  "id": "frisco_bowl",
+  "name": "Frisco Bowl",
+  "espn_name": "Frisco Bowl",
+  "former_names": [],
+  "city": "Frisco",
+  "state": "TX",
+  "lat": 33.11,
+  "lon": -96.83,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 4,
+  "payout": 650000,
+  "slots": [
+   {
+    "confs": [
+     "AAC",
+     "CUSA",
+     "MAC",
+     "MWC",
+     "Pac-12",
+     "Sun Belt"
+    ]
+   },
+   {
+    "confs": [
+     "AAC",
+     "CUSA",
+     "MAC",
+     "MWC",
+     "Pac-12",
+     "Sun Belt"
+    ]
+   }
+  ],
+  "source": "2026-27 tie-ins = 2025 affiliations retained (Bowl Season, via Yahoo Sports/FanSided 2026)"
+ },
+ {
+  "id": "xbox_bowl",
+  "name": "Xbox Bowl",
+  "espn_name": "Xbox Bowl",
+  "former_names": [],
+  "city": "Frisco",
+  "state": "TX",
+  "lat": 33.11,
+  "lon": -96.83,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 4,
+  "slots": [
+   {
+    "confs": [
+     "Sun Belt"
+    ],
+    "order": 2
+   },
+   {
+    "confs": [
+     "CUSA"
+    ],
+    "order": 3
+   }
+  ],
+  "source": "2026-27 tie-ins = 2025 affiliations retained (Bowl Season, via Yahoo Sports/FanSided 2026); DRAFT verify: Wikipedia lists a 'Frisco Football Classic' instead"
+ },
+ {
+  "id": "boca_raton_bowl",
+  "name": "Boca Raton Bowl",
+  "espn_name": "Boca Raton Bowl",
+  "former_names": [],
+  "city": "Boca Raton",
+  "state": "FL",
+  "lat": 26.37,
+  "lon": -80.1,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 4,
+  "payout": 900000,
+  "slots": [
+   {
+    "confs": [
+     "AAC",
+     "Sun Belt",
+     "CUSA",
+     "MAC"
+    ]
+   },
+   {
+    "confs": [
+     "AAC",
+     "Sun Belt",
+     "CUSA",
+     "MAC"
+    ]
+   }
+  ],
+  "source": "2026-27 tie-ins = 2025 affiliations retained (Bowl Season, via Yahoo Sports/FanSided 2026)"
+ },
+ {
+  "id": "myrtle_beach_bowl",
+  "name": "Myrtle Beach Bowl",
+  "espn_name": "Myrtle Beach Bowl",
+  "former_names": [],
+  "city": "Conway",
+  "state": "SC",
+  "lat": 33.84,
+  "lon": -79.05,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 4,
+  "payout": 550000,
+  "slots": [
+   {
+    "confs": [
+     "AAC",
+     "MAC",
+     "Sun Belt"
+    ]
+   },
+   {
+    "confs": [
+     "AAC",
+     "CUSA",
+     "MAC",
+     "MWC",
+     "Pac-12",
+     "Sun Belt"
+    ]
+   }
+  ],
+  "source": "2026-27 tie-ins = 2025 affiliations retained (Bowl Season, via Yahoo Sports/FanSided 2026); second slot: ESPN Group-of-6 pool (approximation)"
+ },
+ {
+  "id": "ventures_bowl",
+  "name": "68 Ventures Bowl",
+  "espn_name": "68 Ventures Bowl",
+  "former_names": [],
+  "city": "Mobile",
+  "state": "AL",
+  "lat": 30.69,
+  "lon": -88.04,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 4,
+  "payout": 900000,
+  "slots": [
+   {
+    "confs": [
+     "CUSA",
+     "MAC",
+     "Sun Belt"
+    ]
+   },
+   {
+    "confs": [
+     "CUSA",
+     "MAC",
+     "Sun Belt"
+    ]
+   }
+  ],
+  "source": "2026-27 tie-ins = 2025 affiliations retained (Bowl Season, via Yahoo Sports/FanSided 2026)"
+ },
+ {
+  "id": "cure_bowl",
+  "name": "StaffDNA Cure Bowl",
+  "espn_name": "Cure Bowl",
+  "former_names": [],
+  "city": "Orlando",
+  "state": "FL",
+  "lat": 28.54,
+  "lon": -81.4,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 4,
+  "payout": 575000,
+  "slots": [
+   {
+    "confs": [
+     "AAC",
+     "CUSA",
+     "MAC",
+     "MWC",
+     "Pac-12",
+     "Sun Belt"
+    ]
+   },
+   {
+    "confs": [
+     "AAC",
+     "CUSA",
+     "MAC",
+     "MWC",
+     "Pac-12",
+     "Sun Belt"
+    ]
+   }
+  ],
+  "source": "2026-27 tie-ins = 2025 affiliations retained (Bowl Season, via Yahoo Sports/FanSided 2026)"
+ },
+ {
+  "id": "salute_to_veterans_bowl",
+  "name": "Salute to Veterans Bowl",
+  "espn_name": "Salute to Veterans Bowl",
+  "former_names": [
+   "Camellia Bowl"
+  ],
+  "city": "Montgomery",
+  "state": "AL",
+  "lat": 32.38,
+  "lon": -86.3,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 4,
+  "slots": [
+   {
+    "confs": [
+     "MAC"
+    ],
+    "order": 3
+   },
+   {
+    "confs": [
+     "Sun Belt"
+    ],
+    "order": 3
+   }
+  ],
+  "source": "2026-27 tie-ins = 2025 affiliations retained (Bowl Season, via Yahoo Sports/FanSided 2026)"
+ },
+ {
+  "id": "puerto_rico_bowl",
+  "name": "Puerto Rico Bowl",
+  "espn_name": "Puerto Rico Bowl",
+  "former_names": [],
+  "city": "Bayamón",
+  "state": "PR",
+  "lat": 18.4,
+  "lon": -66.16,
+  "is_cfp": false,
+  "cfp_round": null,
+  "prestige": 3,
+  "slots": [
+   {
+    "confs": [
+     "MAC"
+    ],
+    "order": 4
+   },
+   {
+    "confs": [
+     "AAC",
+     "CUSA",
+     "MAC",
+     "MWC",
+     "Pac-12",
+     "Sun Belt"
+    ]
+   }
+  ],
+  "source": "New in 2026; MAC tie-in (Wikipedia 'Puerto Rico Bowl'); second slot: ESPN Group-of-6 pool (approximation)"
+ }
+]

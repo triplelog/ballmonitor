@@ -1,0 +1,4 @@
+description = "Treat ratings as exact (no per-simulation rating-uncertainty draw); probabilities become more extreme."
+
+[params]
+rating_uncertainty = 0.0

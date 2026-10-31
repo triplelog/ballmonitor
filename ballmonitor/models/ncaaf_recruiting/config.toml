@@ -1,0 +1,143 @@
+[meta]
+title = "College recruiting rankings"
+version = "0.6.0"
+status = "calibrated"  # football: data/backtest.csv + RESEARCH.md; MBB evaluated in RESEARCH_MBB.md (no projection, no backtest rows); WBB untested
+question = "How strong is a program's football recruiting class, judged from head-to-head scholarship offer battles?"
+description = "Global Plackett-Luce choice model inferring program recruiting prestige from competitive scholarship offer networks, with diminishing roster depth decay and positional unit splits. Basketball (MBB/WBB) classes remain available from the CLI for research only (RESEARCH_MBB*.md, RESEARCH_WBB.md)."
+assumptions = [
+  "A recruit choosing program A over offering programs {B, C, ...} is a multinomial Plackett-Luce contest among offering schools.",
+  "A recruit's caliber is determined by the collective latent prestige of the programs that offered them and lost; recruits with no competing offers score 0 (football) or 1 (basketball).",
+  "Class strength aggregates committed recruit scores with diminishing returns (rank_decay for football 85-man rosters; rotation_decay for basketball rotations).",
+  "Offer lists come from on3.com profile scrapes and are incomplete for lower-ranked recruits; basketball files cover only roughly the top 80-410 recruits.",
+  "Men's basketball (RESEARCH_MBB.md): the class score ranks programs' next-season strength (rho ~0.43-0.47) below the On3 consensus (~0.53-0.57) and far below last season's strength (~0.73); per recruit, offers add nothing beyond the industry rating.",
+  "Football only: the projected 4-season SRS is a straight line in ln(national class rank) fitted on 2012-2018 classes; it ignores the rest of the roster, transfers and coaching.",
+  "Classes marked in progress (2027) contain only the commitments known when the data was fetched.",
+]
+
+# Website only: basketball recruiting is kept for research (CLI, data, studies) but not shown.
+[web]
+hidden_examples = ["mbb_2025", "mbb_2026", "wbb_2026"]
+hidden_params = ["rotation_decay", "bball_quality_power", "bball_l2_reg", "cornerstone_weight",
+                 "bball_seed_beta", "bball_commit_weight", "bball_aggregate", "min_offer_coverage"]
+
+[params.rank_decay]
+value = 0.95
+description = "Within-class rank discount factor for football (recruit #k receives weight rank_decay^(k-1))."
+source = "RESEARCH.md (research.py): best mean Spearman vs 4-season SRS on 2012-2018 classes; holdout 2019-2022 rho 0.724 (flat for 0.85-0.95)."
+range = [0.5, 1.0]
+
+[params.rotation_decay]
+value = 0.75
+description = "Within-class rank discount factor for basketball (MBB/WBB) compact rotations."
+source = "Judgement (7-8 player rotations); RESEARCH_MBB.md (research_mbb.py, MBB 2014-2019 dev classes): no setting 0.5-1.0 beats it by 0.01 rho vs 2-season adj. EM; WBB untested."
+range = [0.5, 1.0]
+
+[params.quality_power]
+value = 0.50
+description = "Football: concave compression exponent applied to the sum of losing-offer prestige weights."
+source = "RESEARCH.md (research.py): best on 2012-2018 classes; 0.25 is clearly worse, 0.5-1.0 within noise on 2019-2022 holdout."
+range = [0.1, 1.0]
+
+[params.bball_quality_power]
+value = 0.60
+description = "Basketball (MBB/WBB): compression exponent applied to the sum of losing-offer prestige weights."
+source = "RESEARCH_MBB.md (research_mbb.py): MBB 2014-2019 dev classes, 0.25-1.0 within 0.01 rho of each other vs 2-season adj. EM, so 0.6 kept; WBB untested."
+range = [0.1, 1.0]
+
+[params.l2_reg]
+value = 0.50
+description = "Football: L2 Gaussian prior strength on program log-worth in the Plackett-Luce MAP fit."
+source = "Judgement (strict convexity, shrinks small-sample programs toward base_elo); RESEARCH.md: 0.1-0.5 equivalent, 2.0 slightly worse."
+range = [0.01, 5.0]
+
+[params.bball_l2_reg]
+value = 0.05
+description = "Basketball (MBB/WBB): L2 prior strength on program log-worth (smaller files, weaker shrinkage)."
+source = "RESEARCH_MBB.md (research_mbb.py): MBB 0.01-0.2 equivalent on 2014-2019 dev classes, 1.0 slightly worse; 0.05 kept; WBB untested."
+range = [0.01, 5.0]
+
+[params.bball_seed_beta]
+value = 0.0
+unit = "log-worth per 10 adj. EM"
+description = "MBB only: start each program's strength at bball_seed_beta x (mean barttorvik adj. EM over the two seasons before the class's junior year) / 10 instead of 0; offer battles then move it (shrinkage bball_l2_reg). 0 = off."
+source = "RESEARCH_MBB_SEED.md (research_mbb_seed.py): seeding lifts class-score rho with next-season adj. EM (0.48 -> 0.61) but mostly echoes past program strength; no gain for player-driven outcomes (pts, minutes, draft). Off by default."
+range = [0.0, 5.0]
+
+[params.bball_commit_weight]
+value = 0.0
+description = "Basketball: also count the committed school's strength (times this weight) in a recruit's score; 0 = only the schools he turned down (original). Recruits listing no other school score 0 without it."
+source = "RESEARCH_MBB_SEED.md: helps only together with a seed; off by default."
+range = [0.0, 10.0]
+
+[params.bball_aggregate]
+value = "sum"
+choices = ["sum", "max"]
+description = "Basketball: combine the schools' strengths by sum (rewards offer count) or max (strongest school only)."
+source = "RESEARCH_MBB_SEED.md: max was best with a seed when choosing on freshman BPM (a team-influenced stat); no gain on pts/minutes/draft."
+
+[params.cornerstone_weight]
+value = 0.25
+description = "Basketball only: class score is multiplied by (top-2 recruit average / median recruit score) ^ cornerstone_weight."
+source = "Judgement (rewards elite 2-player classes over volume); RESEARCH_MBB.md: 0, 0.25 and 0.5 within 0.002 rho on MBB 2014-2019 dev classes; WBB untested."
+range = [0.0, 1.0]
+
+[params.volume_discount]
+value = 0.0
+description = "Optional penalty discounting programs that send high-volume unselective offers."
+source = "Ablation parameter (0.0 = unweighted)."
+range = [0.0, 1.0]
+
+[params.prestige_years]
+value = 1
+description = "Football: number of class years whose offer battles fit program prestige (1 = this class only; 2 = also the previous class, which is known at signing). Only this class is scored."
+source = "RESEARCH.md (research.py): 1, 2 and 3 are within 0.003 rho on 2012-2018 and 2019-2022; 1 kept as the simplest."
+range = [1, 3]
+
+[params.proj_intercept]
+value = 25.62
+description = "Football projected 4-season SRS at national class rank 1 (points per game vs an average FBS team)."
+unit = "points/game"
+source = "RESEARCH.md (research.py): OLS of mean SRS (seasons Y..Y+3) on ln(rank), 2012-2018 classes; holdout 2019-2022 MAE 4.84."
+range = [0.0, 50.0]
+
+[params.proj_slope]
+value = -6.56
+description = "Football change in projected 4-season SRS per unit of ln(national class rank)."
+unit = "points/game"
+source = "RESEARCH.md (research.py): same fit as proj_intercept."
+range = [-20.0, 0.0]
+
+[params.projection_sd]
+value = 6.53
+description = "Football residual standard deviation of the projection (sets the range around projected SRS)."
+unit = "points/game"
+source = "RESEARCH.md (research.py): residual sd on 2012-2018; 80% range covered 84% of 2019-2022 holdout cases."
+range = [0.0, 20.0]
+
+[params.projection_level]
+value = 0.8
+description = "Central probability of the range shown around the projected SRS."
+source = "Convention."
+range = [0.5, 0.99]
+
+[params.base_elo]
+value = 1500.0
+description = "Baseline Elo rating corresponding to zero log-worth (gamma = 0)."
+source = "Standard Elo convention."
+range = [1000.0, 2000.0]
+
+[params.min_offer_coverage]
+value = 0.5
+description = "Refuse to rank a data file unless at least this share of committed recruits list a competing offer."
+source = "Judgement: football files have 65-91% coverage, basketball 58-88%; the ESPN WBB 2024 file has 4% (no offer lists)."
+range = [0.0, 1.0]
+
+[formulas.recruit_points]
+expr = "rating * (decay ** (rank - 1))"
+description = "Class points of a recruit with score `rating` at within-class rank `rank` (1 = best); decay is rank_decay (football) or rotation_decay (basketball). Summed to give the class score (Plackett-Luce method)."
+variables = ["rating", "rank", "decay"]
+
+[formulas.projected_srs]
+expr = "proj_intercept + proj_slope * log(rank)"
+description = "Football: expected mean SRS (points/game vs average FBS) over the class's four seasons, from its national class rank."
+variables = ["rank"]

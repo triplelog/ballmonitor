@@ -1,0 +1,1001 @@
+[
+ {
+  "id": "rose_bowl",
+  "name": "Rose Bowl Game",
+  "city": "Pasadena",
+  "state": "CA",
+  "lat": 34.16,
+  "lon": -118.17,
+  "is_cfp": true,
+  "cfp_round": "quarterfinal",
+  "payout": 6000000,
+  "prestige": 10,
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "sugar_bowl",
+  "name": "Allstate Sugar Bowl",
+  "city": "New Orleans",
+  "state": "LA",
+  "lat": 29.95,
+  "lon": -90.08,
+  "is_cfp": true,
+  "cfp_round": "quarterfinal",
+  "payout": 6000000,
+  "prestige": 10,
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "fiesta_bowl",
+  "name": "Vrbo Fiesta Bowl",
+  "city": "Glendale",
+  "state": "AZ",
+  "lat": 33.53,
+  "lon": -112.26,
+  "is_cfp": true,
+  "cfp_round": "quarterfinal",
+  "payout": 6000000,
+  "prestige": 10,
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "peach_bowl",
+  "name": "Chick-fil-A Peach Bowl",
+  "city": "Atlanta",
+  "state": "GA",
+  "lat": 33.76,
+  "lon": -84.4,
+  "is_cfp": true,
+  "cfp_round": "quarterfinal",
+  "payout": 6000000,
+  "prestige": 10,
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "orange_bowl",
+  "name": "Capital One Orange Bowl",
+  "city": "Miami Gardens",
+  "state": "FL",
+  "lat": 25.96,
+  "lon": -80.24,
+  "is_cfp": true,
+  "cfp_round": "semifinal",
+  "payout": 6000000,
+  "prestige": 10,
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "cotton_bowl",
+  "name": "Goodyear Cotton Bowl Classic",
+  "city": "Arlington",
+  "state": "TX",
+  "lat": 32.75,
+  "lon": -97.09,
+  "is_cfp": true,
+  "cfp_round": "semifinal",
+  "payout": 6000000,
+  "prestige": 10,
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "citrus_bowl",
+  "name": "Cheez-It Citrus Bowl",
+  "city": "Orlando",
+  "state": "FL",
+  "lat": 28.54,
+  "lon": -81.4,
+  "is_cfp": false,
+  "payout": 8225000,
+  "prestige": 9,
+  "slots": [
+   {
+    "confs": [
+     "SEC"
+    ],
+    "order": 1
+   },
+   {
+    "confs": [
+     "Big Ten"
+    ],
+    "order": 1
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "alamo_bowl",
+  "name": "Valero Alamo Bowl",
+  "city": "San Antonio",
+  "state": "TX",
+  "lat": 29.42,
+  "lon": -98.48,
+  "is_cfp": false,
+  "payout": 8250000,
+  "prestige": 9,
+  "slots": [
+   {
+    "confs": [
+     "Big 12"
+    ],
+    "order": 1
+   },
+   {
+    "confs": [
+     "Pac-12"
+    ],
+    "order": 1
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "pop_tarts_bowl",
+  "name": "Pop-Tarts Bowl",
+  "city": "Orlando",
+  "state": "FL",
+  "lat": 28.54,
+  "lon": -81.4,
+  "is_cfp": false,
+  "payout": 6000000,
+  "prestige": 8,
+  "slots": [
+   {
+    "confs": [
+     "ACC"
+    ],
+    "order": 1
+   },
+   {
+    "confs": [
+     "Big 12"
+    ],
+    "order": 2
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "reliaquest_bowl",
+  "name": "ReliaQuest Bowl",
+  "city": "Tampa",
+  "state": "FL",
+  "lat": 27.98,
+  "lon": -82.5,
+  "is_cfp": false,
+  "payout": 6400000,
+  "prestige": 8,
+  "slots": [
+   {
+    "confs": [
+     "SEC"
+    ],
+    "order": 2
+   },
+   {
+    "confs": [
+     "Big Ten"
+    ],
+    "order": 2
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "gator_bowl",
+  "name": "TaxSlayer Gator Bowl",
+  "city": "Jacksonville",
+  "state": "FL",
+  "lat": 30.32,
+  "lon": -81.64,
+  "is_cfp": false,
+  "payout": 5350000,
+  "prestige": 8,
+  "slots": [
+   {
+    "confs": [
+     "SEC"
+    ],
+    "order": 2
+   },
+   {
+    "confs": [
+     "ACC"
+    ],
+    "order": 2
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "holiday_bowl",
+  "name": "DIRECTV Holiday Bowl",
+  "city": "San Diego",
+  "state": "CA",
+  "lat": 32.76,
+  "lon": -117.12,
+  "is_cfp": false,
+  "payout": 6500000,
+  "prestige": 8,
+  "slots": [
+   {
+    "confs": [
+     "ACC"
+    ],
+    "order": 2
+   },
+   {
+    "confs": [
+     "Pac-12"
+    ],
+    "order": 2
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "music_city_bowl",
+  "name": "TransPerfect Music City Bowl",
+  "city": "Nashville",
+  "state": "TN",
+  "lat": 36.17,
+  "lon": -86.77,
+  "is_cfp": false,
+  "payout": 5700000,
+  "prestige": 8,
+  "slots": [
+   {
+    "confs": [
+     "SEC"
+    ],
+    "order": 2
+   },
+   {
+    "confs": [
+     "Big Ten"
+    ],
+    "order": 2
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "texas_bowl",
+  "name": "TaxAct Texas Bowl",
+  "city": "Houston",
+  "state": "TX",
+  "lat": 29.68,
+  "lon": -95.41,
+  "is_cfp": false,
+  "payout": 6400000,
+  "prestige": 8,
+  "slots": [
+   {
+    "confs": [
+     "Big 12"
+    ],
+    "order": 3
+   },
+   {
+    "confs": [
+     "SEC"
+    ],
+    "order": 2
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "las_vegas_bowl",
+  "name": "SRS Distribution Las Vegas Bowl",
+  "city": "Las Vegas",
+  "state": "NV",
+  "lat": 36.09,
+  "lon": -115.18,
+  "is_cfp": false,
+  "payout": 2900000,
+  "prestige": 7,
+  "slots": [
+   {
+    "confs": [
+     "SEC"
+    ],
+    "order": 2
+   },
+   {
+    "confs": [
+     "Pac-12"
+    ],
+    "order": 3
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "sun_bowl",
+  "name": "Tony the Tiger Sun Bowl",
+  "city": "El Paso",
+  "state": "TX",
+  "lat": 31.77,
+  "lon": -106.51,
+  "is_cfp": false,
+  "payout": 4550000,
+  "prestige": 7,
+  "slots": [
+   {
+    "confs": [
+     "ACC"
+    ],
+    "order": 2
+   },
+   {
+    "confs": [
+     "Pac-12"
+    ],
+    "order": 4
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "liberty_bowl",
+  "name": "AutoZone Liberty Bowl",
+  "city": "Memphis",
+  "state": "TN",
+  "lat": 35.12,
+  "lon": -89.98,
+  "is_cfp": false,
+  "payout": 4700000,
+  "prestige": 7,
+  "slots": [
+   {
+    "confs": [
+     "Big 12"
+    ],
+    "order": 4
+   },
+   {
+    "confs": [
+     "SEC"
+    ],
+    "order": 2
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "dukes_mayo_bowl",
+  "name": "Duke's Mayo Bowl",
+  "city": "Charlotte",
+  "state": "NC",
+  "lat": 35.23,
+  "lon": -80.85,
+  "is_cfp": false,
+  "payout": 4780000,
+  "prestige": 7,
+  "slots": [
+   {
+    "confs": [
+     "ACC"
+    ],
+    "order": 2
+   },
+   {
+    "confs": [
+     "Big Ten"
+    ],
+    "order": 2
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "pinstripe_bowl",
+  "name": "Bad Boy Mowers Pinstripe Bowl",
+  "city": "Bronx",
+  "state": "NY",
+  "lat": 40.83,
+  "lon": -73.93,
+  "is_cfp": false,
+  "payout": 4400000,
+  "prestige": 7,
+  "slots": [
+   {
+    "confs": [
+     "ACC"
+    ],
+    "order": 2
+   },
+   {
+    "confs": [
+     "Big Ten"
+    ],
+    "order": 2
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "guaranteed_rate_bowl",
+  "name": "Rate Bowl",
+  "city": "Phoenix",
+  "state": "AZ",
+  "lat": 33.45,
+  "lon": -112.07,
+  "is_cfp": false,
+  "payout": 1625000,
+  "prestige": 6,
+  "slots": [
+   {
+    "confs": [
+     "Big 12"
+    ],
+    "order": 5
+   },
+   {
+    "confs": [
+     "Big Ten"
+    ],
+    "order": 7
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "la_bowl",
+  "name": "LA Bowl Hosted by Gronk",
+  "city": "Inglewood",
+  "state": "CA",
+  "lat": 33.95,
+  "lon": -118.34,
+  "is_cfp": false,
+  "payout": 3000000,
+  "prestige": 6,
+  "slots": [
+   {
+    "confs": [
+     "MWC"
+    ],
+    "order": 1
+   },
+   {
+    "confs": [
+     "Pac-12"
+    ],
+    "order": 5
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "fenway_bowl",
+  "name": "Wasabi Fenway Bowl",
+  "city": "Boston",
+  "state": "MA",
+  "lat": 42.35,
+  "lon": -71.1,
+  "is_cfp": false,
+  "payout": 1500000,
+  "prestige": 6,
+  "slots": [
+   {
+    "confs": [
+     "ACC"
+    ],
+    "order": 7
+   },
+   {
+    "confs": [
+     "AAC"
+    ],
+    "order": 2
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "military_bowl",
+  "name": "Military Bowl",
+  "city": "Annapolis",
+  "state": "MD",
+  "lat": 38.98,
+  "lon": -76.51,
+  "is_cfp": false,
+  "payout": 2060000,
+  "prestige": 6,
+  "slots": [
+   {
+    "confs": [
+     "ACC"
+    ],
+    "order": 7
+   },
+   {
+    "confs": [
+     "AAC"
+    ],
+    "order": 2
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "gasparilla_bowl",
+  "name": "Union Home Mortgage Gasparilla Bowl",
+  "city": "Tampa",
+  "state": "FL",
+  "lat": 27.98,
+  "lon": -82.5,
+  "is_cfp": false,
+  "payout": 1125000,
+  "prestige": 5,
+  "slots": [
+   {
+    "confs": [
+     "SEC"
+    ],
+    "order": 7
+   },
+   {
+    "confs": [
+     "ACC"
+    ],
+    "order": 7
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "birmingham_bowl",
+  "name": "Birmingham Bowl",
+  "city": "Birmingham",
+  "state": "AL",
+  "lat": 33.52,
+  "lon": -86.81,
+  "is_cfp": false,
+  "payout": 1375000,
+  "prestige": 5,
+  "slots": [
+   {
+    "confs": [
+     "SEC"
+    ],
+    "order": 7
+   },
+   {
+    "confs": [
+     "AAC"
+    ],
+    "order": 7
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "first_responder_bowl",
+  "name": "SERVPRO First Responder Bowl",
+  "city": "Dallas",
+  "state": "TX",
+  "lat": 32.78,
+  "lon": -96.76,
+  "is_cfp": false,
+  "payout": 825000,
+  "prestige": 5,
+  "slots": [
+   {
+    "confs": [
+     "Big 12"
+    ],
+    "order": 7
+   },
+   {
+    "confs": [
+     "AAC"
+    ],
+    "order": 7
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "armed_forces_bowl",
+  "name": "Lockheed Martin Armed Forces Bowl",
+  "city": "Fort Worth",
+  "state": "TX",
+  "lat": 32.71,
+  "lon": -97.36,
+  "is_cfp": false,
+  "payout": 1350000,
+  "prestige": 5,
+  "slots": [
+   {
+    "confs": [
+     "Big 12"
+    ],
+    "order": 7
+   },
+   {
+    "confs": [
+     "AAC"
+    ],
+    "order": 7
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "independence_bowl",
+  "name": "Radiance Technologies Independence Bowl",
+  "city": "Shreveport",
+  "state": "LA",
+  "lat": 32.47,
+  "lon": -93.8,
+  "is_cfp": false,
+  "payout": 2200000,
+  "prestige": 5,
+  "slots": [
+   {
+    "confs": [
+     "Independent"
+    ]
+   },
+   {
+    "confs": [
+     "Pac-12"
+    ],
+    "order": 6
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "gameabove_sports_bowl",
+  "name": "GameAbove Sports Bowl",
+  "city": "Detroit",
+  "state": "MI",
+  "lat": 42.34,
+  "lon": -83.05,
+  "is_cfp": false,
+  "payout": 1150000,
+  "prestige": 5,
+  "slots": [
+   {
+    "confs": [
+     "Big Ten"
+    ],
+    "order": 7
+   },
+   {
+    "confs": [
+     "MAC"
+    ],
+    "order": 2
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "potato_bowl",
+  "name": "Famous Idaho Potato Bowl",
+  "city": "Boise",
+  "state": "ID",
+  "lat": 43.6,
+  "lon": -116.2,
+  "is_cfp": false,
+  "payout": 800000,
+  "prestige": 4,
+  "slots": [
+   {
+    "confs": [
+     "MWC"
+    ],
+    "order": 7
+   },
+   {
+    "confs": [
+     "MAC"
+    ],
+    "order": 2
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "arizona_bowl",
+  "name": "Snoop Dogg Arizona Bowl",
+  "city": "Tucson",
+  "state": "AZ",
+  "lat": 32.23,
+  "lon": -110.95,
+  "is_cfp": false,
+  "payout": 350000,
+  "prestige": 4,
+  "slots": [
+   {
+    "confs": [
+     "MWC"
+    ],
+    "order": 7
+   },
+   {
+    "confs": [
+     "MAC"
+    ],
+    "order": 2
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "new_mexico_bowl",
+  "name": "Isleta New Mexico Bowl",
+  "city": "Albuquerque",
+  "state": "NM",
+  "lat": 35.07,
+  "lon": -106.63,
+  "is_cfp": false,
+  "payout": 1050000,
+  "prestige": 4,
+  "slots": [
+   {
+    "confs": [
+     "MWC"
+    ],
+    "order": 7
+   },
+   {
+    "confs": [
+     "CUSA"
+    ],
+    "order": 2
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "hawaii_bowl",
+  "name": "EasyPost Hawaii Bowl",
+  "city": "Honolulu",
+  "state": "HI",
+  "lat": 21.37,
+  "lon": -157.93,
+  "is_cfp": false,
+  "payout": 1200000,
+  "prestige": 4,
+  "slots": [
+   {
+    "confs": [
+     "MWC"
+    ],
+    "order": 7
+   },
+   {
+    "confs": [
+     "AAC"
+    ],
+    "order": 7
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "new_orleans_bowl",
+  "name": "R+L Carriers New Orleans Bowl",
+  "city": "New Orleans",
+  "state": "LA",
+  "lat": 29.95,
+  "lon": -90.08,
+  "is_cfp": false,
+  "payout": 825000,
+  "prestige": 5,
+  "slots": [
+   {
+    "confs": [
+     "Sun Belt"
+    ],
+    "order": 1
+   },
+   {
+    "confs": [
+     "CUSA"
+    ],
+    "order": 2
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "camellia_bowl",
+  "name": "Camellia Bowl",
+  "city": "Montgomery",
+  "state": "AL",
+  "lat": 32.36,
+  "lon": -86.28,
+  "is_cfp": false,
+  "payout": 300000,
+  "prestige": 4,
+  "slots": [
+   {
+    "confs": [
+     "Sun Belt"
+    ],
+    "order": 7
+   },
+   {
+    "confs": [
+     "MAC"
+    ],
+    "order": 7
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "ventures_bowl",
+  "name": "68 Ventures Bowl",
+  "city": "Mobile",
+  "state": "AL",
+  "lat": 30.69,
+  "lon": -88.08,
+  "is_cfp": false,
+  "payout": 900000,
+  "prestige": 4,
+  "slots": [
+   {
+    "confs": [
+     "Sun Belt"
+    ],
+    "order": 7
+   },
+   {
+    "confs": [
+     "MAC"
+    ],
+    "order": 7
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "frisco_bowl",
+  "name": "Scooter's Coffee Frisco Bowl",
+  "city": "Frisco",
+  "state": "TX",
+  "lat": 33.15,
+  "lon": -96.84,
+  "is_cfp": false,
+  "payout": 650000,
+  "prestige": 4,
+  "slots": [
+   {
+    "confs": [
+     "AAC",
+     "CUSA",
+     "MAC",
+     "MWC",
+     "Sun Belt"
+    ]
+   },
+   {
+    "confs": [
+     "AAC",
+     "CUSA",
+     "MAC",
+     "MWC",
+     "Sun Belt"
+    ]
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "boca_raton_bowl",
+  "name": "RoofClaim.com Boca Raton Bowl",
+  "city": "Boca Raton",
+  "state": "FL",
+  "lat": 26.37,
+  "lon": -80.1,
+  "is_cfp": false,
+  "payout": 900000,
+  "prestige": 4,
+  "slots": [
+   {
+    "confs": [
+     "AAC",
+     "CUSA",
+     "MAC",
+     "MWC",
+     "Sun Belt"
+    ]
+   },
+   {
+    "confs": [
+     "AAC",
+     "CUSA",
+     "MAC",
+     "MWC",
+     "Sun Belt"
+    ]
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "myrtle_beach_bowl",
+  "name": "Myrtle Beach Bowl",
+  "city": "Conway",
+  "state": "SC",
+  "lat": 33.79,
+  "lon": -79.01,
+  "is_cfp": false,
+  "payout": 550000,
+  "prestige": 4,
+  "slots": [
+   {
+    "confs": [
+     "Sun Belt"
+    ],
+    "order": 7
+   },
+   {
+    "confs": [
+     "MAC"
+    ],
+    "order": 7
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "cure_bowl",
+  "name": "StaffDNA Cure Bowl",
+  "city": "Orlando",
+  "state": "FL",
+  "lat": 28.54,
+  "lon": -81.4,
+  "is_cfp": false,
+  "payout": 575000,
+  "prestige": 4,
+  "slots": [
+   {
+    "confs": [
+     "Sun Belt"
+    ],
+    "order": 7
+   },
+   {
+    "confs": [
+     "AAC"
+    ],
+    "order": 7
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ },
+ {
+  "id": "bahamas_bowl",
+  "name": "Bahamas Bowl",
+  "city": "Nassau",
+  "state": "Bahamas",
+  "lat": 25.04,
+  "lon": -77.36,
+  "is_cfp": false,
+  "payout": 225000,
+  "prestige": 3,
+  "slots": [
+   {
+    "confs": [
+     "MAC"
+    ],
+    "order": 7
+   },
+   {
+    "confs": [
+     "CUSA"
+    ],
+    "order": 7
+   }
+  ],
+  "source": "2024-25 lineup and tie-ins (pre-2026 model data), used only for the 2023 backtest"
+ }
+]
