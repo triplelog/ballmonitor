@@ -167,3 +167,16 @@ def test_microsim_params_move_results():
     assert no_offset["ms_xwoba"] == pytest.approx(base["ms_xwoba"] - offset, abs=1e-3)
     no_ms = run(inputs, microsim_weight=0.0)
     assert no_ms.extras["w_microsim"] == 0.0
+
+
+def test_site_page_is_valid():
+    from ballmonitor.core import views
+    from ballmonitor.models.bvp_similarity import site
+
+    model = registry.load_model("bvp_similarity", None, {"site_hitters": 5, "site_pitchers": 5})
+    page = site.page(model)
+    assert views.check(page) == []
+    picker = page["views"][0]
+    assert len(picker["options"]) == 5
+    for row in picker["options"][0]["views"][0]["rows"]:
+        assert 0 < row["k"] < 1 and 0 < row["bb"] < 1 and 40 < row["quality"] < 200

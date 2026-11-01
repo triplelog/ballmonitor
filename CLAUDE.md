@@ -25,7 +25,7 @@ ballmonitor/
   cli.py                  `ballmonitor` command (list, params, run, compare, backtest, new, serve)
   web/
     server.py             browser UI backend: stdlib http.server + JSON API (127.0.0.1:8765)
-    static/               index.html, app.js, style.css — vanilla JS, no build step
+    static/               site.html/site.js/site.css = public page; index.html/app.js/style.css = editor (vanilla JS)
   core/
     config.py             load config.toml → apply variant → apply --set overrides
     params.py             ParamSpec / FormulaSpec / Params (attribute access + p.formula())
@@ -35,6 +35,7 @@ ballmonitor/
     model.py              BaseModel: predict(), backtest_case(), score(), prediction() helper
     backtest.py           score a model against data/backtest.csv
     registry.py           discover/load models, examples, variants; scaffold new models
+    views.py              public-site page format: page/table/col/bar/line/picker + check()
     stats.py, units.py    shared helpers (normal CDF, softmax, fits; time/distance parsing)
   models/
     _template/            copied by `ballmonitor new <name>`
@@ -45,6 +46,7 @@ ballmonitor/
       examples/*.toml     input sets; `default.toml` is used when none is given
       variants/*.toml     named parameter/formula tweaks
       data/backtest.csv   historical cases (optional; columns documented in MODEL.md)
+      site.py             optional: `page(model)` → the public page's pre-generated tables/charts (core/views.py)
       fetch.py            optional: `fetch(model_dir, offline)` downloads/builds data → `ballmonitor fetch <name>`
       research.py         optional: reproducible study → RESEARCH.md (generated, never hand-edited)
       test_model.py       model-specific tests
@@ -73,6 +75,7 @@ ballmonitor backtest race_time --variant curve_v04 [--data other.csv]
 ballmonitor new nfl_win_totals --title "NFL win totals"
 ballmonitor serve                                  # browser UI at http://127.0.0.1:8765 (27K game at /27k/)
 ballmonitor build-site --out dist                   # static bundle (GitHub Pages); CI runs update-and-build daily
+ballmonitor views ncaaf_bowls [--out x.json]       # build + check one model's public page
 ballmonitor update-and-build [--models ncaaf_bowls]  # fetch the models that are due ([fetch]), rebuild the whole site
 ballmonitor fetch mlb_bullpen [--offline]          # download/rebuild a model's data
 ballmonitor export-replay --game 401858275 --out x.mp4   # cfb_replay → vertical MP4 (needs `pip install -e '.[video]'` + ffmpeg)
@@ -140,6 +143,20 @@ pytest ballmonitor/models/race_time                # one model
   add it to `pyproject.toml` and note it in that model's MODEL.md.
 - Model directories are snake_case; the model class is the CamelCase name + `Model`.
 - Run `pytest` after any change; the contract tests catch missing docs and output drift.
+
+## Public site (ballmonitor.com)
+
+- Made for fans, not analysts: each model's page is a few **pre-generated** tables/charts from its
+  `site.py` (`page(model)` built with `core/views.py`), written to `data/views/<name>.json` by
+  `build-site`; `site.js` only displays them (search, sort, "show all", bars, line charts,
+  dropdown pickers). Nothing is computed in the browser. Home index: `data/site.json`.
+- In `dist/`, `index.html` is the public page and `editor.html` the (read-only) editor below,
+  linked from each page's "How this works".
+- Page rules: plain words (no internal stat names), ≤ ~8 table columns, real committed data only
+  (CI has no `data/raw/`), off-season pages labelled as final, no private people's names,
+  ≤ 60 s and ≤ ~1.5 MB per page. Page-only tunables are `site_*` params in config.toml.
+  `views.check` runs on every build and in tests; a failing page fails the build.
+- Preview: `ballmonitor build-site --out /tmp/site && python3 -m http.server -d /tmp/site 8790`.
 
 ## Browser UI (`ballmonitor serve`)
 

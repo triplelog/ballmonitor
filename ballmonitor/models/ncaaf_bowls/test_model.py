@@ -95,3 +95,18 @@ def test_fcs_games_count_and_respect_scenarios():
     s = sim.simulate_season(random.Random(1), scenario=Scenario(loses_out={"a"}))["a"]
     assert (s.wins, s.losses) == (4, 7)
 
+
+
+def test_site_page_is_valid_and_covers_every_team():
+    import json
+
+    from ballmonitor.core import registry, views
+    from ballmonitor.models.ncaaf_bowls import site
+
+    model = registry.load_model("ncaaf_bowls", overrides={"site_simulations": 200})
+    p = views.clean(site.page(model))
+    assert views.check(p) == []
+    teams = p["views"][0]["rows"]
+    assert len(teams) == len(json.loads((model.dir / "data" / "teams.json").read_text()))
+    assert all(0 <= r["cfp"] <= 1 and 0 <= r["title"] <= r["cfp"] + 1e-9 for r in teams)
+    assert abs(sum(r["title"] for r in teams) - 1) < 0.01  # exactly one champion per season

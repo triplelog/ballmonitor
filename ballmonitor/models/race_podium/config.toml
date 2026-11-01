@@ -1,6 +1,6 @@
 [meta]
 title = "Race podium prediction"
-version = "0.8.0"
+version = "0.8.1"
 status = "calibrated"
 question = "What times will place 1st through 5th in a given race division?"
 description = """
@@ -130,6 +130,20 @@ description = "Central confidence interval coverage for predicted finishing time
 unit = "probability"
 source = "Standard project default."
 range = [0.50, 0.99]
+
+[params.site_min_editions]
+value = 4
+description = "Public site only: a race (at one distance) is shown when its results cover at least this many years."
+unit = "years"
+source = "Judgement: with fewer editions the division predictions lean mostly on the prior"
+range = [2, 11]
+
+[params.site_max_years_since]
+value = 2
+description = "Public site only: a race is shown when its latest results are at most this many years older than the newest results in data/division_panel.csv (drops races that seem to have stopped)."
+unit = "years"
+source = "Judgement"
+range = [0, 10]
 
 [params.min_tail_spread_sec]
 value = 2.0

@@ -339,7 +339,7 @@ class Simulator:
                           key=lambda t: -sel[t])
             if len(pool) < n_at_large:  # not enough eligible teams: relax the win % rule
                 pool += sorted((t for t in teams if t not in aq_set and t not in pool), key=lambda t: -sel[t])
-            field_ = list(aq_set) + pool[:n_at_large]
+            field_ = sorted(aq_set) + pool[:n_at_large]  # sorted: set order varies by hash seed
             hsc = {t: sp.host_score(rk.get(t, 999), rr[t], wpct[t]) + noise[t] for t in field_}
             hosts = sorted(field_, key=lambda t: -hsc[t])[:sp.hosts]
             others = sorted((t for t in field_ if t not in hosts), key=lambda t: -sel[t])

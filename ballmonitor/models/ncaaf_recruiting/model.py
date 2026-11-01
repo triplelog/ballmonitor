@@ -65,22 +65,11 @@ class NcaafRecruitingModel(BaseModel):
         lo, hi = proj["interval"]
         return {"abs_error": abs(err), "bias": err, "in_interval": float(lo <= actual <= hi)}
 
-    def predict(self, inputs: dict[str, Any]) -> Prediction:
-        p = self.params
-        sport = str(inputs.get("sport", "ncaaf")).strip().lower()
-        if sport not in SPORT_LABELS:
-            raise ValueError(f"unknown sport {sport!r}; use one of {', '.join(SPORT_LABELS)}")
-        try:
-            year = int(inputs.get("year", 2024))
-        except (TypeError, ValueError):
-            raise ValueError(f"year must be an integer class year, got {inputs.get('year')!r}") from None
-        team_input = str(inputs.get("team", "Georgia")).strip()
-        method_str = str(inputs.get("method", "plackett_luce")).strip().lower()
-        methods = {m.value: m for m in RankingMethod}
-        if method_str not in methods:
-            raise ValueError(f"unknown method {method_str!r}; use one of {', '.join(methods)}")
-        method = methods[method_str]
+    def rank_class(self, sport: str, year: int, method: RankingMethod = RankingMethod.PLACKETT_LUCE) -> dict[str, Any]:
+        """Rank every program for one sport-year (used by predict() and the public page).
 
+        Returns the engine result (all teams and scored recruits) plus the settings used."""
+        p = self.params
         is_bball = sport in ("mbb", "wbb")
         decay = float(p.rotation_decay) if is_bball else float(p.rank_decay)
         q_power = float(p.bball_quality_power) if is_bball else float(p.quality_power)
@@ -142,6 +131,31 @@ class NcaafRecruitingModel(BaseModel):
             points_fn=points,
         )
         result = engine.run(year, recruits, fit_recruits=fit_recruits)
+        return {"recruits": recruits, "coverage": coverage, "history": history,
+                "prestige_years": prestige_years, "status": status, "result": result,
+                "decay": decay, "q_power": q_power, "l2_reg": l2_reg, "c_weight": c_weight}
+
+    def predict(self, inputs: dict[str, Any]) -> Prediction:
+        p = self.params
+        sport = str(inputs.get("sport", "ncaaf")).strip().lower()
+        if sport not in SPORT_LABELS:
+            raise ValueError(f"unknown sport {sport!r}; use one of {', '.join(SPORT_LABELS)}")
+        try:
+            year = int(inputs.get("year", 2024))
+        except (TypeError, ValueError):
+            raise ValueError(f"year must be an integer class year, got {inputs.get('year')!r}") from None
+        team_input = str(inputs.get("team", "Georgia")).strip()
+        method_str = str(inputs.get("method", "plackett_luce")).strip().lower()
+        methods = {m.value: m for m in RankingMethod}
+        if method_str not in methods:
+            raise ValueError(f"unknown method {method_str!r}; use one of {', '.join(methods)}")
+        method = methods[method_str]
+
+        run = self.rank_class(sport, year, method)
+        recruits, coverage, history = run["recruits"], run["coverage"], run["history"]
+        prestige_years, status, result = run["prestige_years"], run["status"], run["result"]
+        decay, q_power, l2_reg, c_weight = run["decay"], run["q_power"], run["l2_reg"], run["c_weight"]
+        is_bball = sport in ("mbb", "wbb")
         if not result.teams:
             raise ValueError(f"no rankable programs in {SPORT_LABELS[sport]} {year} data")
 

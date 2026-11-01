@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ball Monitor</title>
+  <meta name="description" content="Sports odds and forecasts in plain tables and charts: college football playoff chances, polls re-counted, race times, baseball and more. Updated daily.">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="static/site.css">
+</head>
+<body>
+  <!-- Public page: shows only pre-generated numbers (data/site.json, data/views/<model>.json,
+       written by `ballmonitor build-site`). Nothing is computed in the browser. -->
+  <header class="bar">
+    <a class="brand" href="#/">Ball Monitor</a>
+    <nav>
+      <a href="#/">Forecasts</a>
+      <a href="triple/">Triple Play</a>
+      <a href="27k/">27K</a>
+      <a href="game.html">Pitch Guesser</a>
+    </nav>
+  </header>
+  <main id="app"><p class="loading">Loading…</p></main>
+  <footer class="foot">
+    <span id="built"></span>
+    <span>Numbers come from simple, open models; see each page's “How this works”.</span>
+  </footer>
+  <script src="static/site.js"></script>
+</body>
+</html>

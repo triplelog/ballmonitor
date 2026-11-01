@@ -120,3 +120,32 @@ def test_distance_parsing():
     assert parse_distance("10 mi") == pytest.approx(16093.44)
     assert parse_distance("3000m") == 3000
     assert parse_distance(400) == 400
+
+
+# ── public-site pages (core/views.py) ──────────────────────────────────────────
+
+def test_views_check_accepts_a_well_formed_page():
+    from ballmonitor.core import views as V
+    t = V.table("t", "Teams", [V.col("team", "Team"), V.col("p", "Chance", "pct", bar=True)],
+                [{"team": "A", "p": 0.4}, {"team": "B", "p": None}], search=True, page_size=1, sort="p")
+    b = V.bar("b", "Bars", [{"label": "A", "value": 0.4}])
+    ln = V.line("l", "Line", [V.series("A", [(0, 1), (1, 2)], band=[(0, 0.5, 1.5)])], x_fmt="time")
+    pk = V.picker("p", "Pick", "Team", [V.option("A", [t]), V.option("B", [b])])
+    p = V.clean(V.page("Title", "Summary.", "Running", [t, b, ln, pk]))
+    assert V.check(p) == []
+
+
+def test_views_check_reports_problems():
+    from ballmonitor.core import views as V
+    bad = V.page("T", "S", "Curling", [
+        V.table("t", "T", [V.col("a", "A", "percent")], [{"b": 1}], sort="zzz"),
+        V.bar("t", "Dup id", [{"label": "x"}]),
+        V.line("l", "L", [V.series("s", [])]),
+        V.picker("p", "P", "X", []),
+    ])
+    errs = " | ".join(V.check(bad))
+    for expect in ("sport must be", "fmt 'percent'", "missing ['a']", "sort key", "duplicate id",
+                   "numeric value", "needs points", "no options"):
+        assert expect in errs, expect
+    assert any("JSON" in e for e in V.check(V.page("T", "S", "Running", [V.bar("b", "B", [{"label": "x", "value": float("nan")}])])))
+    assert V.check(V.clean(V.page("T", "S", "Running", [V.bar("b", "B", [{"label": "x", "value": 1.0}])]))) == []

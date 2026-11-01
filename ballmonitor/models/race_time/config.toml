@@ -1,6 +1,6 @@
 [meta]
 title = "Race time prediction"
-version = "0.5.0"
+version = "0.5.1"
 status = "calibrated"
 question = "What finish time will this runner achieve at any target distance, and how wide is the realistic range around it?"
 description = "Weighted Riegel: each of your races is projected to the target with Riegel's power law (gender-specific exponent) and the projections are averaged, giving more weight to races near the target distance and to recent races. The bands (50/80/95%) are quantiles of the real errors of 2,560 linked Ohio RunSignup runners, widening with distance extrapolation and old races and narrowing with more races; checked on 2,440 other runners. Course and weather adjustments (DRAFT) scale the median and bands. The v0.4.0 curve method stays available (method = curve)."
@@ -340,6 +340,34 @@ description = "(curve method) 1-sigma uncertainty added per doubling of distance
 unit = "%/doubling"
 source = "RESEARCH.md (research.py): chosen on 2,560 train runners, checked on 2,440 test runners; fit by minimising the 80% interval score on train"
 range = [0.0, 10.0]
+
+[params.site_5k_fastest_sec]
+value = 900
+description = "Public site only: fastest 5K time in the equivalent-times table and chart (900 s = 15:00)."
+unit = "seconds"
+source = "Judgement: covers fast club runners to beginners"
+range = [600, 1800]
+
+[params.site_5k_slowest_sec]
+value = 2400
+description = "Public site only: slowest 5K time in the equivalent-times table and chart (2400 s = 40:00)."
+unit = "seconds"
+source = "Judgement"
+range = [1200, 3600]
+
+[params.site_5k_step_sec]
+value = 30
+description = "Public site only: step between rows of the equivalent-times table."
+unit = "seconds"
+source = "Judgement"
+range = [10, 120]
+
+[params.site_example_5k_sec]
+value = 1500
+description = "Public site only: the 5K time used in the 'how sure is it' table (1500 s = 25:00)."
+unit = "seconds"
+source = "Judgement: a typical recreational 5K"
+range = [600, 3600]
 
 [params.interval_level]
 value = 0.80

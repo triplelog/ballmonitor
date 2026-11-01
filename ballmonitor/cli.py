@@ -102,6 +102,11 @@ def _parser() -> argparse.ArgumentParser:
     p.add_argument("--fps", type=int, help="frames per second (default from the model, 30)")
     p.set_defaults(handler=cmd_export_replay)
 
+    p = sub.add_parser("views", help="build one model's public page (site.py) and summarise it")
+    p.add_argument("model")
+    p.add_argument("--out", type=Path, help="also write the page JSON here")
+    p.set_defaults(handler=cmd_views)
+
     p = sub.add_parser("update-and-build",
                        help="fetch the models that are due (config.toml [fetch]) and rebuild the whole static site")
     p.add_argument("--out", type=Path, default=Path("dist"), help="output directory (default: dist)")
@@ -278,6 +283,36 @@ def cmd_build_site(args: argparse.Namespace) -> int:
     models = [m.strip() for m in args.models.split(",")] if args.models else None
     out = build_static_site(args.out, models=models)
     print(f"Static site successfully built at: {out}")
+    return 0
+
+
+def cmd_views(args: argparse.Namespace) -> int:
+    import time
+
+    from ballmonitor.web.builder import site_page
+
+    started = time.perf_counter()
+    p = site_page(args.model)
+    if p is None:
+        raise ValueError(f"model '{args.model}' has no site.py")
+    print(f"{p['title']}  [{p['sport']}]  built in {time.perf_counter() - started:.1f}s")
+    print(f"  {p['summary']}")
+    if p.get("updated"):
+        print(f"  updated: {p['updated']}")
+
+    def show(vs, indent="  "):
+        for v in vs:
+            size = {"table": lambda: f"{len(v['rows'])} rows x {len(v['columns'])} cols",
+                    "bar": lambda: f"{len(v['items'])} bars",
+                    "line": lambda: f"{len(v['series'])} lines, {sum(len(s['points']) for s in v['series'])} points",
+                    "picker": lambda: f"{len(v['options'])} options"}[v["kind"]]()
+            print(f"{indent}- {v['kind']:<6} {v['title']}  ({size})")
+            if v["kind"] == "picker":
+                show(v["options"][0]["views"], indent + "    ")
+    show(p["views"])
+    if args.out:
+        args.out.write_text(json.dumps(p, indent=1), encoding="utf-8")
+        print(f"wrote {args.out} ({args.out.stat().st_size // 1024} KB)")
     return 0
 
 

@@ -146,6 +146,9 @@ From `ballmonitor/models/ncaaf_bowls/`: `python cli.py team Texas`, `python cli.
 
 ## Changelog
 
+- 0.4.1 — `site.py`: the public page (every FBS team's playoff, title and bowl odds, title
+  chances, bowl matchups) from one `site_simulations` run of `engine()`, the season engine
+  now shared by `predict()`. No change to predictions.
 - 0.4.0 — **Real current-season data.** New `fetch.py` builds teams, the complete
   remaining schedule (incl. FCS opponents and the Pac-12 flex week), results and ratings
   from ESPN; records match ESPN exactly. Default ratings are ESPN FPI (`ratings_source`),

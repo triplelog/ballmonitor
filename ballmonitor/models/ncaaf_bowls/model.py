@@ -14,16 +14,12 @@ _DEFAULTS = SimConfig()
 
 
 class NcaafBowlsModel(BaseModel):
-    def predict(self, inputs: dict[str, Any]) -> Prediction:
+    def engine(self, simulations: int | None = None) -> BowlEngine:
+        """The season engine with every tunable taken from config.toml (shared by predict()
+        and site.py, which reads all teams from one run). `simulations` overrides the param."""
         p = self.params
-        team_input = str(inputs.get("team", "Georgia")).strip()
-        if not team_input:
-            raise ValueError("input 'team' must be a non-empty FBS team name")
-        sims = int(p.simulations)
+        sims = int(simulations or p.simulations)
         seed = int(p.random_seed)
-        home_points = float(p.home_field_points)
-        margin_sd = float(p.margin_sd)
-        bowl_wins = int(p.bowl_eligible_wins)
 
         # Ratings are fixed within a run, so the same (diff, home) pairs recur
         # thousands of times; cache the formula evaluation.
@@ -49,9 +45,23 @@ class NcaafBowlsModel(BaseModel):
             if f.name in p.specs and f.name != "win_prob_fn"
         }
         cfg = SimConfig(**{**overrides, "simulations": sims, "random_seed": seed, "win_prob_fn": win_prob})
+        return BowlEngine(config=cfg, ratings_source=str(p.ratings_source))
+
+    def predict(self, inputs: dict[str, Any]) -> Prediction:
+        p = self.params
+        team_input = str(inputs.get("team", "Georgia")).strip()
+        if not team_input:
+            raise ValueError("input 'team' must be a non-empty FBS team name")
+        sims = int(p.simulations)
+        seed = int(p.random_seed)
+        home_points = float(p.home_field_points)
+        margin_sd = float(p.margin_sd)
+        bowl_wins = int(p.bowl_eligible_wins)
+
+        sample_wp = float(p.formula("win_probability", rating_diff=7.0, home=1))
 
         # Look up the requested team before running the simulation.
-        engine = BowlEngine(config=cfg, ratings_source=str(p.ratings_source))
+        engine = self.engine()
         meta = json.loads((DATA_DIR / "meta.json").read_text())
         key = team_input.lower()
         match = next(
@@ -160,7 +170,7 @@ class NcaafBowlsModel(BaseModel):
             f"Loaded {len(engine.teams)} FBS teams, {meta['completed_games']} completed and "
             f"{len(engine.schedule)} remaining regular-season games, {len(engine.bowls)} bowls "
             f"(ESPN snapshot {meta['snapshot_utc']} UTC, {meta['season']} season)",
-            f"Ratings: {p.ratings_source} (FCS opponents {cfg.fcs_opponent_rating:+.1f})",
+            f"Ratings: {p.ratings_source} (FCS opponents {engine.config.fcs_opponent_rating:+.1f})",
             f"Win probability: {p.expr('win_probability')} "
             f"(home={home_points:.1f}, sd={margin_sd:.1f}; P(win | +7, home) = {sample_wp:.1%})",
             f"Ran {sims} Monte Carlo seasons (seed={seed}): regular season, conference title games",

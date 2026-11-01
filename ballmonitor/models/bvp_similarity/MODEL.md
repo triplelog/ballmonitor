@@ -204,6 +204,7 @@ PA-ending batted balls as balls in play: Aaron Judge has 1,807 BIP in 3,071 PA a
 
 ## Changelog
 
+- 0.3.1 — public site page (`site.py`) and its `site_*` params (who is listed); predictions unchanged.
 - 0.3.0 — Model change, chosen walk-forward (tune 2025, test 2026; RESEARCH.md).
   - Data rebuilt with the batted-ball fix (BIP no longer includes fouls).
   - Player rates are now regressed to league, and splits to the player's overall rate, before

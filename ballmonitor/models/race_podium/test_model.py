@@ -695,3 +695,17 @@ def test_board_threshold_is_a_parameter():
     # 120 > 100: read as the race total and split; 120 <= 150: used as each division's size
     assert high["divisions"][0]["field_size"] == 120
     assert low["divisions"][0]["field_size"] < 120
+
+
+def test_site_page(model):
+    from ballmonitor.core import views
+    from ballmonitor.models.race_podium import site
+
+    pg = site.page(model)
+    assert views.check(pg) == []
+    picker, index = pg["views"]
+    assert len(picker["options"]) == len(index["rows"]) > 10
+    for opt in picker["options"]:
+        for row in opt["views"][0]["rows"]:
+            assert row["t1"] > 0
+            assert row["t2"] is None or row["t2"] >= row["t1"]

@@ -404,3 +404,19 @@ def test_curve_dates_give_fractional_recency():
 def test_bad_inputs_raise_value_error(model, inputs):
     with pytest.raises(ValueError):
         model.predict(inputs)
+
+
+def test_site_page(model):
+    from ballmonitor.core import views
+    from ballmonitor.models.race_time import site
+
+    pg = site.page(model)
+    assert views.check(pg) == []
+    picker, chart = pg["views"]
+    for opt in picker["options"]:
+        rows = opt["views"][0]["rows"]
+        # Slower 5K -> slower marathon, and the marathon is always slower than the half.
+        assert all(a["marathon"] < b["marathon"] for a, b in zip(rows, rows[1:]))
+        assert all(r["half"] < r["marathon"] for r in rows)
+    for s in chart["series"]:
+        assert all(lo <= y <= hi for (_, y), (_, lo, hi) in zip(s["points"], s["band"]))

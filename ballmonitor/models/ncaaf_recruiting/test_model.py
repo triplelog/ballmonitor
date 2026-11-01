@@ -141,3 +141,19 @@ def test_mbb_seed_reorders_toward_strong_programs():
     blue = {"Duke", "North Carolina", "Kentucky", "Villanova", "Kansas", "Gonzaga"}
     top = lambda rk: sum(1 for t in rk[:5] if t["team"] in blue)  # noqa: E731
     assert top(on) > top(off)
+
+
+def test_site_page_is_valid_and_ranks_programs():
+    from ballmonitor.core import views
+    from ballmonitor.models.ncaaf_recruiting import site
+
+    model = _model()
+    p = views.clean(site.page(model))
+    assert views.check(p) == []
+    options = p["views"][0]["options"]
+    assert options[0]["label"].startswith("2027")  # newest class first
+    rows = options[1]["views"][0]["rows"]  # 2026, every program with a commit
+    assert len(rows) > 130 and all(r["commits"] > 0 for r in rows)
+    assert [r["rank"] for r in rows] == sorted(r["rank"] for r in rows)
+    top = model.predict({"sport": "ncaaf", "year": 2026, "team": rows[0]["team"]})
+    assert top.extras["rank"] == 1 and top.extras["score"] == rows[0]["score"]

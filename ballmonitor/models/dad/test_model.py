@@ -539,3 +539,19 @@ def test_research_transforms_match_model_formula():
                                               "win_bonus_sd": 2 / 10.6})
     perf = m.predict(_one(25)).extras["game_records"][0]["performance"]
     assert perf == pytest.approx(transform(("capbonus", (10, 2)), np.array([25.0]))[0])
+
+
+def test_site_page_is_valid_and_ranks_by_strength():
+    from ballmonitor.core import registry, views
+    from ballmonitor.models.dad import site
+
+    model = registry.load_model("dad")
+    p = views.clean(site.page(model))
+    assert views.check(p) == []
+    options = {o["label"]: o["views"][0]["rows"] for o in p["views"][0]["options"]}
+    assert len(options) == len(site.LEAGUES)
+    nba = next(rows for label, rows in options.items() if label.startswith("NBA"))
+    assert len(nba) == 30  # All-Star sides are left out
+    for rows in options.values():
+        assert [r["strength"] for r in rows] == sorted((r["strength"] for r in rows), reverse=True)
+        assert all(0 < r["beat"] < 1 for r in rows)

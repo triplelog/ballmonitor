@@ -580,3 +580,20 @@ def test_chart_outcomes(cpred):
     group = [o for o in cpred.outcomes if o.group == "Annotated plays"]
     assert len(group) == len(cpred.extras["annotations"])
     assert any("Structure = chart" in st for st in cpred.steps)
+
+
+def test_site_page_is_valid_and_covers_every_bundled_game():
+    from ballmonitor.core import registry, views
+    from ballmonitor.models.cfb_replay import site
+
+    model = registry.load_model("cfb_replay")
+    p = views.clean(site.page(model))
+    assert views.check(p) == []
+    options = p["views"][0]["options"]
+    assert len(options) == len(registry.example_names("cfb_replay"))
+    for o in options:
+        chart, swings = o["views"]
+        xs = [x for x, _ in chart["series"][0]["points"]]
+        assert xs == sorted(xs) and xs[0] == 0 and xs[-1] <= 60 + site.OT_WIDTH
+        assert all(0 <= y <= 1 for _, y in chart["series"][0]["points"])
+        assert [r["swing"] for r in swings["rows"]] == sorted((r["swing"] for r in swings["rows"]), reverse=True)

@@ -260,6 +260,22 @@ class CollegeDiamondModel(BaseModel):
         summary = {t: self._summary(t, tally) for t in teams}
         return steps, summary, ratings, now_rpi, n, n_nat, tour, n_formats, done
 
+    def final_ratings(self, sport: str, season: int) -> dict[str, float]:
+        """End-of-season ratings in runs vs an average D-I team (neutral site): every game
+        of the season, NCAA tournament included, fitted as preseason_prior fits a finished
+        season (no recency weighting), centred on the D-I mean. Used by site.py; predict() is unchanged."""
+        p = self.params
+        teams = D.load_teams(sport)[season]
+        games = D.season_games(sport, season)
+        end = max(g.day for g in games) + dt.timedelta(days=1)
+        rp = rating_params(p, sport)
+        prior = preseason_prior(sport, season, rp)
+        final = fit(games, RatingParams(**{**rp.__dict__, "half_life_days": 0.0}), end, prior)
+        scale = float(p[f"{sport}_runs_per_unit"])
+        raw = {t: final.weekend.get(t, prior.get(t, 0.0)) for t in teams}
+        mean = sum(raw.values()) / len(raw)
+        return {t: (v - mean) * scale for t, v in raw.items()}
+
     # --- backtest (data/backtest.csv, written by research.py backtest) -------------
     def backtest_case(self, row: dict[str, str]) -> tuple[dict[str, Any], Any]:
         as_of = "selection" if row["snapshot"] == "selection" else row["as_of"]

@@ -170,6 +170,7 @@ through `sequence` and `earlier_in_game`. Per-count results are in RESEARCH.md Â
 
 ## Changelog
 
+- 0.1.2: public site page (`site.py`) and its `site_method`, `site_pitchers` and `site_mix_min_pitches` params; predictions unchanged.
 - 0.1.1: input checks only (no change to defaults or results): sequence pitches must have a known
   result code, and X/H can't appear in `sequence`; `outs` must be 0â€“2 and `tto` at least 1; `chain` is checked
   against the tree levels (it used to fail on `batter`/`game` with an unknown-parameter error); a

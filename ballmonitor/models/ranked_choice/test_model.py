@@ -218,3 +218,13 @@ def test_norris_2022_condorcet_winner_is_josi():
     ex = run({"contest": "nhl-2021-22-norris"}).extras
     assert ex["orders"]["official"][0] == "cale-makar"
     assert ex["condorcet_winner"] == "roman-josi"
+
+
+def test_site_page_builds_cleanly():
+    from ballmonitor.core import views
+    from ballmonitor.models.ranked_choice import site
+
+    page = site.page(registry.load_model("ranked_choice"))
+    assert views.check(page) == []
+    flips = next(v for v in page["views"] if v["id"] == "award_flips")
+    assert any(r["award"] == "NBA Defensive Player of the Year" and r["season"] == "2014-15" for r in flips["rows"])

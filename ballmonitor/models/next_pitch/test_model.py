@@ -177,3 +177,17 @@ def test_control_variant_ignores_batter_side():
     inputs = registry.load_example("next_pitch", "first_pitch")
     m = registry.load_model("next_pitch", "control")
     assert m.predict({**inputs, "stand": "L"}).extras["probs"] == m.predict({**inputs, "stand": "R"}).extras["probs"]
+
+
+@needs_data
+def test_site_page_is_valid():
+    from ballmonitor.core import views
+    from ballmonitor.models.next_pitch import site
+
+    model = registry.load_model("next_pitch", None, {"site_pitchers": 5, "site_mix_min_pitches": 2500})
+    page = site.page(model)
+    assert views.check(page) == []
+    picker = page["views"][0]
+    assert len(picker["options"]) == 5
+    for row in picker["options"][0]["views"][1]["rows"]:
+        assert 0.5 < sum(v for k, v in row.items() if k != "count") <= 1.0 + 1e-6

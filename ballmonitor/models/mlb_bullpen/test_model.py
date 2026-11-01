@@ -666,3 +666,12 @@ def test_rating_inputs_use_earlier_games_only():
             assert rel["ra_runs"] == sum(int(ln["runs"]) for ln in prior)
             checked += 1
     assert checked > 20
+
+
+def test_site_page_builds():
+    from ballmonitor.core import views
+    from ballmonitor.models.mlb_bullpen import site
+
+    p = site.page(registry.load_model("mlb_bullpen"))
+    assert views.check(p) == []
+    assert len(p["views"][0]["options"]) == 30

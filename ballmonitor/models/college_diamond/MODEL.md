@@ -242,5 +242,9 @@ Test seasons 2021-2026 (6 per sport; every D-I team, ~300 per season-snapshot):
 
 ## Changelog
 
+- 0.1.1 — public site page (`site.py`): new `site_trend_simulations` and `site_trend_dates`
+  params (site only) and `final_ratings()` helper (end-of-season ratings). Fix: the simulated
+  field no longer depends on Python's set order (results were not reproducible across
+  processes despite the fixed seed); same method, same distributions, different random draws.
 - 0.1.0 — initial version: data pipeline, strength study, committee proxy, season and
   postseason simulation, backtest.

@@ -1,6 +1,6 @@
 [meta]
 title = "Next pitch type"
-version = "0.1.1"
+version = "0.1.2"
 status = "calibrated"  # stub | draft | calibrated
 question = "What type of pitch will this pitcher throw next, given the count, the batter and the at-bat so far?"
 description = """
@@ -130,6 +130,28 @@ value = 0.01
 description = "Pitch types below this probability are grouped as 'Other / new pitch'."
 source = "Judgement (display only)."
 range = [0.0, 0.2]
+
+# ── public site page (site.py only; does not change predictions) ─────────────
+
+[params.site_method]
+value = "tree"
+choices = ["gbm", "tree"]
+description = "Method used for the public site's count tables. The tree needs no optional dependency and gives believable mixes when no batter or at-bat sequence is given."
+source = "Judgement: with no batter or sequence the boosted model's answers drift from the pitcher's real usage (e.g. Skubal 0-0 vs RHB: 90% four-seam vs about 50% in his 2026 pitches)."
+
+[params.site_pitchers]
+value = 100
+unit = "pitchers"
+description = "The site's pitcher picker lists this many pitchers: those who threw the most pitches in the latest season."
+source = "Judgement (page size and build time)."
+range = [5, 400]
+
+[params.site_mix_min_pitches]
+value = 1000
+unit = "pitches"
+description = "The site's pitch-mix table lists every pitcher with at least this many pitches in the latest season."
+source = "Judgement (about a full season as a starter or busy reliever)."
+range = [100, 4000]
 
 # ── formulas ─────────────────────────────────────────────────────────────────
 

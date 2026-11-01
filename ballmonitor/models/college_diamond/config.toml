@@ -1,6 +1,6 @@
 [meta]
 title = "College baseball & softball projections"
-version = "0.1.0"
+version = "0.1.1"
 status = "calibrated"  # stub | draft | calibrated
 question = "From a date in an NCAA D-I baseball or softball season, how will a team finish, will it make the NCAA tournament, and how far will it go?"
 description = """
@@ -32,6 +32,17 @@ value = 2026
 description = "Random seed (same seed and inputs give the same result)."
 source = "Convention."
 range = [0, 1000000000]
+
+[params.site_trend_simulations]
+value = 200
+description = "Public site only: simulated seasons per date for the 'title chances over the season' chart (fewer than `simulations` to keep the site build fast)."
+source = "Judgement: about 2.5 points of Monte Carlo error on a 15% title chance; the chart shows trends, not exact values."
+range = [20, 5000]
+
+[params.site_trend_dates]
+value = ["03-01", "03-22", "04-12", "05-03"]
+description = "Public site only: dates (MM-DD, in the season's year) projected for the 'title chances over the season' chart; Selection eve is always added as the last point."
+source = "Judgement: roughly every three weeks from early March to the end of the regular season."
 
 [params.rating_uncertainty]
 value = 1.0

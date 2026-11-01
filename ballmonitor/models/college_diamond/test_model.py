@@ -222,3 +222,20 @@ def test_bad_inputs():
         run({"sport": "cricket", "season": 2024})
     with pytest.raises(ValueError):
         run({"sport": "baseball", "season": 2020})
+
+
+def test_site_views_build():
+    """The public page's per-sport views (fewer simulations and one trend date: the full
+    page takes ~30 s)."""
+    from ballmonitor.core import views
+    from ballmonitor.models.college_diamond import site
+
+    model = registry.load_model("college_diamond", None, {**FAST, "site_trend_dates": ["04-01"]})
+    vs, _ = site._sport_views(model, model, "softball")
+    p = views.page(title="t", summary="s", sport="College baseball & softball", views=vs)
+    assert views.check(p) == []
+    tourney, power, trend = vs
+    assert len(tourney["rows"]) == 64
+    assert [r["rank"] for r in power["rows"][:3]] == [1, 2, 3]
+    assert abs(sum(r["rating"] for r in power["rows"]) / len(power["rows"])) < 1e-6  # centred
+    assert all(len(s["points"]) == 2 for s in trend["series"])

@@ -1,6 +1,6 @@
 [meta]
 title = "Batter vs. Pitcher Similarity Matchup"
-version = "0.3.0"
+version = "0.3.1"
 status = "calibrated"
 question = "What is the expected performance (xwOBA, K%, BB%) when this batter faces this pitcher?"
 description = """
@@ -354,6 +354,44 @@ value = 0.35
 description = "Highest walk probability the model will report."
 source = "Judgement (plausibility clamp)."
 range = [0.1, 1.0]
+
+
+# public site page (site.py only; does not change predictions)
+
+[params.site_hitters]
+value = 30
+unit = "hitters"
+description = "The site's hitter picker lists this many hitters: the best by wOBA over the latest year (next_pitch's data/batters.csv) among those with site_min_pa plate appearances, or the most career PA if that file is missing."
+source = "Judgement (page size and build time)."
+range = [5, 200]
+
+[params.site_pitchers]
+value = 40
+unit = "pitchers"
+description = "Each hitter on the site is matched against this many pitchers: among those with site_min_pitches pitches in the latest season (next_pitch's data/pitchers.csv) and site_min_profile_pa career PA, the lowest career xwOBA allowed (most career PA if that file is missing)."
+source = "Judgement (page size and build time)."
+range = [5, 200]
+
+[params.site_min_pa]
+value = 250
+unit = "PA"
+description = "Plate appearances in the latest year a hitter needs to be listed on the site."
+source = "Judgement (keeps stars who missed part of the season, e.g. Aaron Judge, 293 PA)."
+range = [50, 700]
+
+[params.site_min_pitches]
+value = 2000
+unit = "pitches"
+description = "Pitches in the latest season a pitcher needs to be listed on the site (about a regular starter's workload)."
+source = "Judgement."
+range = [200, 3500]
+
+[params.site_min_profile_pa]
+value = 300
+unit = "PA"
+description = "Career PA (training seasons) a pitcher needs to be listed on the site, so his ranking isn't driven by a handful of games."
+source = "Judgement."
+range = [0, 3000]
 
 [formulas.regress]
 expr = "(x * n + prior * n0) / (n + n0)"
