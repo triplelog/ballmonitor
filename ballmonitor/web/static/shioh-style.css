@@ -1,0 +1,301 @@
+/*
+ * Shioh style ("style B"): pastel cells over a patterned background, sidebar + one main column.
+ * Framework-agnostic: plain CSS custom properties and `ss-` classes, safe to drop into any project.
+ *
+ * Fonts (add to <head>, or self-host):
+ *   <link rel="preconnect" href="https://fonts.googleapis.com">
+ *   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+ *
+ * Per project: copy this file, then set the "Project theme" block below (colours, background
+ * pattern, logo). Everything else reads from those variables. Defaults: plain black background
+ * (until the site has its own pattern) and a Montserrat wordmark (until it has its own logo).
+ */
+
+:root {
+	/* ===== Project theme: change these per project ===================================== */
+	/* The five cell colours (defaults: the Shioh pastels). Cells rotate through them and each
+	   app section owns one. Keep them light enough for #222 text (check-contrast.mjs). */
+	--ss-p1: #a4b6dd; /* periwinkle */
+	--ss-p2: #d09292; /* dusty rose */
+	--ss-p3: #c094cc; /* lilac */
+	--ss-p4: #a2d0c0; /* mint */
+	--ss-p5: #c37892; /* raspberry */
+
+	/* Ink and accents */
+	--ss-accent: #000080; /* primary buttons and focus rings (default navy) */
+	--ss-ink: #222;
+	--ss-muted: #333; /* passes 4.5:1 on light cells; on the darkest cell use --ss-ink for small text */
+	--ss-navy: var(--ss-accent); /* alias */
+	--ss-red: #800; /* emphasis, warnings, kickers */
+	--ss-link: #008;
+
+	/* Surfaces inside a cell (work on every pastel) */
+	--ss-band: rgb(255 255 255 / 0.25); /* heading bands */
+	--ss-panel: rgb(255 255 255 / 0.4); /* rows, tiles, list items */
+	--ss-panel-strong: rgb(255 255 255 / 0.65); /* hovers, active nav */
+	--ss-rule: rgb(34 34 34 / 0.25);
+	--ss-border: rgb(0 0 0 / 0.35);
+
+	/* Page background. Default: plain black. When the site has its own pattern tile, set
+	   --ss-pattern: url('/pattern.png'); and --ss-pattern-size to the tile size (e.g. 240px 48px). */
+	--ss-bg: #000;
+	--ss-pattern: none;
+	--ss-pattern-size: auto;
+	--ss-overlay: rgb(0 0 0 / 0.5);
+
+	/* Shape and spacing */
+	--ss-radius: 12px;
+	--ss-gap: 12px;
+	--ss-pad-y: 1.1rem;
+	--ss-pad-x: 1.25rem;
+	--ss-sidebar: 260px;
+	--ss-max: 1240px;
+
+	/* Type */
+	--ss-font-head: 'Montserrat', 'Open Sans', system-ui, sans-serif;
+	--ss-font-body: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+	--ss-font-mono: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+/* ---------- Page ---------- */
+.ss-page,
+body.ss {
+	margin: 0;
+	min-height: 100vh;
+	color: var(--ss-ink);
+	font-family: var(--ss-font-body);
+	font-size: 15px;
+	line-height: 1.55;
+	-webkit-font-smoothing: antialiased;
+	background-color: var(--ss-bg);
+	background-image: linear-gradient(var(--ss-overlay), var(--ss-overlay)), var(--ss-pattern);
+	background-repeat: repeat;
+	background-size: auto, var(--ss-pattern-size);
+	background-attachment: fixed;
+}
+.ss-page h1,
+.ss-page h2,
+.ss-page h3,
+body.ss h1,
+body.ss h2,
+body.ss h3 {
+	font-family: var(--ss-font-head);
+}
+
+/* ---------- Layout: sidebar + main column ---------- */
+.ss-shell {
+	display: grid;
+	grid-template-columns: var(--ss-sidebar) minmax(0, 1fr);
+	gap: var(--ss-gap);
+	max-width: var(--ss-max);
+	margin: 0 auto;
+	padding: var(--ss-gap);
+	align-items: start;
+}
+.ss-sidebar {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ss-gap);
+	position: sticky;
+	top: var(--ss-gap);
+}
+.ss-main {
+	display: flex;
+	flex-direction: column;
+	gap: var(--ss-gap);
+	min-width: 0;
+}
+.ss-pair {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: var(--ss-gap);
+	align-items: start;
+}
+.ss-solo {
+	max-width: 760px;
+	margin: 0 auto;
+	padding: 3rem var(--ss-gap) 4rem;
+}
+@media (max-width: 860px) {
+	.ss-shell,
+	.ss-pair {
+		grid-template-columns: 1fr;
+	}
+	.ss-sidebar {
+		position: static;
+	}
+}
+
+/* ---------- Cells ---------- */
+.ss-cell {
+	background: var(--ss-cell, var(--ss-p1));
+	color: var(--ss-ink);
+	border: 1px solid var(--ss-border);
+	border-radius: var(--ss-radius);
+	box-shadow: 0 2px 12px rgb(0 0 0 / 0.28);
+	padding: var(--ss-pad-y) var(--ss-pad-x) 1.35rem;
+	min-width: 0;
+}
+.ss-p1 { --ss-cell: var(--ss-p1); }
+.ss-p2 { --ss-cell: var(--ss-p2); }
+.ss-p3 { --ss-cell: var(--ss-p3); }
+.ss-p4 { --ss-cell: var(--ss-p4); }
+.ss-p5 { --ss-cell: var(--ss-p5); }
+/* Heading band flush with the top of a cell. */
+.ss-band {
+	margin: calc(-1 * var(--ss-pad-y)) calc(-1 * var(--ss-pad-x)) var(--ss-pad-y);
+	padding: 0.6rem var(--ss-pad-x);
+	background: var(--ss-band);
+	border-radius: var(--ss-radius) var(--ss-radius) 0 0;
+	text-align: center;
+	font-family: var(--ss-font-head);
+	font-weight: 700;
+	font-size: 1.3rem;
+	position: relative;
+}
+.ss-band .ss-band-action {
+	position: absolute;
+	right: var(--ss-pad-x);
+	top: 50%;
+	transform: translateY(-50%);
+	font-family: var(--ss-font-body);
+	font-weight: 400;
+	font-size: 0.85rem;
+}
+/* Section heading inside a cell (a smaller band). */
+.ss-section {
+	font-family: var(--ss-font-head);
+	font-size: 1.05rem;
+	font-weight: 700;
+	margin: 1.4rem 0 0.6rem;
+	padding: 0.35rem 0.7rem;
+	background: var(--ss-band);
+	border-radius: 6px;
+}
+.ss-title {
+	font-family: var(--ss-font-head);
+	font-size: 1.6rem;
+	font-weight: 700;
+	line-height: 1.25;
+	margin: 0 0 1rem;
+	padding-bottom: 0.35rem;
+	border-bottom: 2px solid var(--ss-rule);
+}
+.ss-kicker {
+	color: var(--ss-red);
+	font-weight: 600;
+	font-size: 0.8rem;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+/* ---------- Sidebar pieces ---------- */
+/* The logo: a Montserrat wordmark by default (put the site name as text inside .ss-logo); swap in
+   an <img> once the site has a logo. */
+.ss-logo {
+	display: block;
+	margin: calc(-1 * var(--ss-pad-y)) calc(-1 * var(--ss-pad-x)) 0.5rem;
+	padding: 0.7rem;
+	background: var(--ss-band);
+	border-radius: var(--ss-radius) var(--ss-radius) 0 0;
+	text-align: center;
+	font-family: var(--ss-font-head);
+	font-weight: 800;
+	font-size: 1.6rem;
+	color: var(--ss-ink);
+	text-decoration: none;
+}
+.ss-logo img {
+	width: 100%;
+	max-width: 170px;
+	height: auto;
+}
+.ss-nav {
+	display: flex;
+	flex-direction: column;
+	gap: 1px;
+}
+.ss-nav a {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	padding: 0.4rem 0.6rem;
+	border-radius: 6px;
+	color: var(--ss-ink);
+	text-decoration: none;
+}
+.ss-nav a:hover { background: rgb(255 255 255 / 0.3); }
+.ss-nav a[aria-current='page'],
+.ss-nav a.active { background: var(--ss-panel-strong); font-weight: 600; }
+.ss-nav hr { border: 0; border-top: 1px solid var(--ss-rule); margin: 0.4rem 0; }
+.ss-avatar {
+	display: inline-grid;
+	place-items: center;
+	width: 2.2rem;
+	height: 2.2rem;
+	border-radius: 50%;
+	font-weight: 700;
+	border: 1px solid rgb(0 0 0 / 0.3);
+	background: repeating-linear-gradient(45deg, var(--ss-p1) 0 6px, var(--ss-p2) 6px 12px, var(--ss-p3) 12px 18px, var(--ss-p4) 18px 24px);
+	flex-shrink: 0;
+}
+
+/* ---------- Content inside cells ---------- */
+.ss-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.5rem; }
+.ss-row { display: flex; align-items: center; gap: 0.7rem; background: var(--ss-panel); border-radius: 8px; padding: 0.55rem 0.75rem; }
+.ss-row:hover { background: var(--ss-panel-strong); }
+.ss-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0.7rem; }
+.ss-stat { display: flex; flex-direction: column; background: var(--ss-panel); border: 1px solid var(--ss-rule); border-radius: 8px; padding: 0.7rem 0.9rem; }
+.ss-stat b { font-size: 1.5rem; line-height: 1.1; }
+.ss-stat span { font-size: 0.8rem; color: var(--ss-muted); }
+.ss-bar { height: 6px; border-radius: 99px; background: rgb(255 255 255 / 0.5); overflow: hidden; margin-top: 4px; }
+.ss-bar > span { display: block; height: 100%; border-radius: 99px; background: var(--ss-accent); }
+.ss-muted { color: var(--ss-muted); }
+.ss-chip { display: inline-block; background: var(--ss-panel-strong); border-radius: 999px; padding: 0.1rem 0.6rem; font-size: 0.8rem; }
+.ss-cell a:not(.ss-btn):not(.ss-logo) { color: inherit; text-underline-offset: 3px; }
+.ss-link { color: var(--ss-link) !important; }
+
+/* ---------- Controls ---------- */
+.ss-btn {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	font: inherit;
+	font-size: 0.95rem;
+	padding: 0.5rem 1rem;
+	border-radius: 6px;
+	border: 1px solid #222;
+	background: #fff;
+	color: var(--ss-ink);
+	cursor: pointer;
+	text-decoration: none;
+}
+.ss-btn:hover { background: #f3f1f7; }
+.ss-btn-primary { background: var(--ss-accent); border-color: var(--ss-accent); color: #fff; font-weight: 600; }
+.ss-btn-primary:hover { background: var(--ss-accent); opacity: 0.9; }
+.ss-btn:disabled { opacity: 0.5; cursor: default; }
+.ss-input,
+.ss-cell input:not([type='checkbox']):not([type='radio']):not([type='range']),
+.ss-cell select,
+.ss-cell textarea {
+	background: #fff;
+	color: var(--ss-ink);
+	border: 1px solid rgb(34 34 34 / 0.35);
+	border-radius: 6px;
+	padding: 0.5rem;
+	font: inherit;
+}
+.ss-cell textarea { font-family: var(--ss-font-mono); font-size: 0.9rem; }
+.ss-cell input:focus,
+.ss-cell select:focus,
+.ss-cell textarea:focus { outline: 2px solid var(--ss-accent); outline-offset: 1px; }
+.ss-label { display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.9rem; color: var(--ss-muted); }
+.ss-notice { padding: 0.6rem 0.9rem; border-radius: 6px; margin-bottom: 1rem; }
+.ss-notice.ok { background: #e7f3e8; color: #1d5c2a; }
+.ss-notice.err { background: #fbe9e7; color: #8a1c10; }
+.ss-tabs { display: flex; flex-wrap: wrap; gap: 0.25rem; padding: 0.25rem; background: rgb(255 255 255 / 0.3); border-radius: 8px; margin: 0 0 1.25rem; }
+.ss-tabs a { padding: 0.35rem 0.8rem; border-radius: 6px; color: var(--ss-ink); text-decoration: none; }
+.ss-tabs a[aria-current='page'], .ss-tabs a.active { background: rgb(255 255 255 / 0.8); font-weight: 600; }
+.ss-table { width: 100%; border-collapse: collapse; }
+.ss-table th { text-align: left; font-weight: 700; border-bottom: 2px solid var(--ss-rule); padding: 0.4rem; }
+.ss-table td { border-bottom: 1px solid var(--ss-rule); padding: 0.4rem; }

@@ -31,6 +31,9 @@ from ballmonitor.core.config import read_toml
 from ballmonitor.web import server
 
 STATIC_DIR = Path(__file__).resolve().parent / "static"
+SITE_URL = "https://ballmonitor.com"  # canonical address (robots.txt, sitemap.xml)
+# Real pages for crawlers; the forecast pages are #/<model> routes on the home page.
+SITEMAP_PATHS = ["/", "/triple/", "/27k/", "/game.html"]
 
 
 def extract_entities() -> dict[str, Any]:
@@ -188,7 +191,8 @@ def build_static_site(out_dir: Path | str = "dist", models: list[str] | None = N
 
     # 1. Copy web assets to dist root and dist/static. The public page is index.html; the
     #    editor (index.html in the source, the live `serve` page) becomes editor.html.
-    for name in ("game.html", "style.css", "app.js", "replay.js", "replay.html", "site.js", "site.css"):
+    for name in ("game.html", "style.css", "app.js", "replay.js", "replay.html", "site.js", "site.css",
+                 "shioh-style.css", "404.html"):
         src = STATIC_DIR / name
         if src.exists():
             shutil.copy2(src, target / name)
@@ -196,6 +200,14 @@ def build_static_site(out_dir: Path | str = "dist", models: list[str] | None = N
                 shutil.copy2(src, static_dest / name)
     shutil.copy2(STATIC_DIR / "index.html", target / "editor.html")
     shutil.copy2(STATIC_DIR / "site.html", target / "index.html")
+    (target / "robots.txt").write_text(
+        f"User-agent: *\nAllow: /\nDisallow: /editor.html\nDisallow: /replay.html\n\nSitemap: {SITE_URL}/sitemap.xml\n",
+        encoding="utf-8")
+    today = datetime.date.today().isoformat()
+    (target / "sitemap.xml").write_text(
+        '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + "".join(f"  <url><loc>{SITE_URL}{path}</loc><lastmod>{today}</lastmod></url>\n" for path in SITEMAP_PATHS)
+        + "</urlset>\n", encoding="utf-8")
 
     # 1b. 27K pitching game (its own static build) -> dist/27k/
     if server.GAME_27K.is_dir():

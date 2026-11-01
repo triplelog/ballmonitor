@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Page not found · Ball Monitor</title>
+<!--
+  One not-found page for every site in the Shioh style: self-contained (no stylesheet, script or font
+  to load — Montserrat and Open Sans are used if the visitor already has them, else system fonts).
+  Below the message, a small invitation: three words that rhyme and two that rhyme, and five lines to
+  write a limerick with them. Serve it with a real 404 status (static hosts: 404.html at the root;
+  SvelteKit +error.svelte, Next.js not-found.tsx, Astro 404.astro: paste the parts in).
+
+  Per site: replace Ball Monitor (three places) and fill the SITE block in the script — logo (or ''
+  for the name as a wordmark), home, a few links, the limerick on or off — and the theme block in the
+  style (the site's cell colours, accent and background). Addresses should be absolute ("/", "/help/"):
+  the page is shown at any depth.
+-->
+<style>
+	:root {
+		/* ===== the site's theme: the same values as its shioh-style.css Project theme ===== */
+		--p1: #a4b6dd; --p2: #d09292; --p3: #c094cc; --p4: #a2d0c0; --p5: #c37892;
+		--accent: #000080;
+		--bg: #000; --pattern: none; --pattern-size: auto;
+		/* ==================================================================================== */
+		--ink: #222; --muted: #333; --band: rgb(255 255 255 / .25); --panel: rgb(255 255 255 / .45);
+		--panel-strong: rgb(255 255 255 / .7); --border: rgb(0 0 0 / .35); --radius: 12px;
+		--head: 'Montserrat', 'Open Sans', system-ui, sans-serif;
+		--body: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+	}
+	* { box-sizing: border-box; }
+	body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 16px; color: var(--ink); font: 15px/1.55 var(--body);
+		background: linear-gradient(rgb(0 0 0 / .5), rgb(0 0 0 / .5)), var(--pattern) var(--bg); background-size: auto, var(--pattern-size); background-attachment: fixed; }
+	main { width: min(100%, 560px); display: flex; flex-direction: column; gap: 12px; }
+	.cell { background: var(--c, var(--p1)); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: 0 2px 12px rgb(0 0 0 / .28); padding: 1.1rem 1.25rem 1.3rem; }
+	.band { margin: -1.1rem -1.25rem 1rem; padding: .7rem 1.25rem; background: var(--band); border-radius: var(--radius) var(--radius) 0 0; text-align: center; }
+	.logo { display: inline-flex; align-items: center; gap: .5rem; font: 800 1.5rem var(--head); color: var(--accent); text-decoration: none; }
+	.logo img { max-height: 40px; max-width: 220px; display: block; }
+	h1, h2 { font-family: var(--head); margin: 0 0 .4rem; }
+	h1 { font-size: 1.45rem; }
+	h2 { font-size: .8rem; text-transform: uppercase; letter-spacing: .07em; text-align: center; }
+	.code { display: flex; justify-content: center; gap: .35rem; margin: .2rem 0 .8rem; }
+	.code span { font: 800 3.2rem/1 var(--head); width: 4.2rem; padding: .35rem 0; text-align: center; border-radius: 10px; background: var(--panel); border: 1px solid var(--border); }
+	.code span:nth-child(2) { transform: rotate(-8deg) translateY(4px); background: var(--panel-strong); }
+	p { margin: .3rem 0; }
+	.where { font-family: ui-monospace, Menlo, monospace; font-size: .85rem; background: var(--panel); padding: 0 .3rem; border-radius: 4px; overflow-wrap: anywhere; }
+	.actions { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: 1rem; }
+	.poem-cell .actions { justify-content: center; }
+	.btn { font: 600 .95rem var(--body); padding: .5rem 1rem; border-radius: 6px; border: 1px solid #222; background: #fff; color: #222; text-decoration: none; cursor: pointer; }
+	.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+	.btn:hover { filter: brightness(.95); }
+	:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+	.links { display: flex; flex-wrap: wrap; gap: .3rem .9rem; margin-top: .8rem; font-size: .9rem; }
+	.links:empty { display: none; }
+	.links a { color: var(--ink); text-underline-offset: 3px; }
+	.poem-cell { --c: var(--p4); }
+	.poem-cell[hidden] { display: none; }
+	.status { min-height: 1.5em; text-align: center; font-weight: 600; margin-top: .6rem; }
+	.foot { text-align: center; font-size: .8rem; color: #ddd; margin: 0; }
+	.foot a { color: #fff; }
+	/* the limerick */
+	.small { font-size: .85rem; text-align: center; color: var(--muted); }
+	.rhymes { display: flex; flex-wrap: wrap; justify-content: center; gap: .4rem; margin: .5rem 0; }
+	.rhymes span { font: 700 1rem var(--head); padding: .25rem .7rem; border-radius: 999px; border: 1px solid var(--border); }
+	.rhymes .a { background: var(--p1); } .rhymes .b { background: var(--p3); }
+	.poem { display: grid; gap: 5px; margin-top: .6rem; }
+	.poem[hidden], .btn[hidden] { display: none; }
+	.poem label { display: flex; align-items: center; gap: .4rem; }
+	.poem label.short { padding-left: 1.6rem; }
+	.poem input { flex: 1; min-width: 0; font: .95rem var(--body); padding: .4rem .55rem; border: 1px solid var(--border); border-radius: 6px; background: #fff; color: var(--ink); }
+	.poem b { width: 1.2rem; text-align: center; font-family: var(--head); }
+	@media (prefers-reduced-motion: reduce) { .code span:nth-child(2) { transform: none; } }
+</style>
+</head>
+<body>
+<main>
+	<section class="cell">
+		<div class="band"><a class="logo" id="logo" href="/">Ball Monitor</a></div>
+		<div class="code" aria-hidden="true"><span>4</span><span>0</span><span>4</span></div>
+		<h1>Something went wrong</h1>
+		<p>We couldn't find <span class="where" id="where">this page</span>. It may have moved, or the link might be mistyped.</p>
+		<div class="actions">
+			<a class="btn primary" id="home" href="/">Go to the home page</a>
+			<button class="btn" id="back" type="button">Go back</button>
+		</div>
+		<nav class="links" id="links" aria-label="Elsewhere on the site"></nav>
+	</section>
+
+	<section class="cell poem-cell" id="poem-cell" aria-labelledby="poem-title" hidden>
+		<h2 id="poem-title">Fancy writing a limerick?</h2>
+		<div id="poem-body"></div>
+		<p class="status" id="poem-status" role="status" aria-live="polite"></p>
+	</section>
+
+	<p class="foot">Error 404 · <a id="foot-home" href="/">Ball Monitor</a></p>
+</main>
+
+<script>
+	// ===== the site ======================================================================
+	const SITE = {
+		name: 'Ball Monitor',
+		logo: '',                          // an image address ('/logo.svg'), or '' for the name as a wordmark
+		home: '/',                         // absolute: this page appears at any depth
+		links: [                           // a few useful places, or none
+			['All forecasts', '/'], ['Triple Play', '/triple/'], ['27K', '/27k/'],
+		],
+		poem: true,                        // the limerick prompt below the message (false: just the message)
+	};
+	// =====================================================================================
+
+	const $ = (id) => document.getElementById(id);
+	if (SITE.logo) $('logo').replaceChildren(Object.assign(document.createElement('img'), { src: SITE.logo, alt: SITE.name }));
+	for (const id of ['logo', 'home', 'foot-home']) $(id).href = SITE.home;
+	try { $('where').textContent = decodeURIComponent(location.pathname + location.search); } catch { /* keep "this page" */ }
+	if (history.length > 1) $('back').onclick = () => history.back(); else $('back').hidden = true;
+	for (const [text, href] of SITE.links) $('links').append(Object.assign(document.createElement('a'), { textContent: text, href }));
+
+	const status = (t) => { $('poem-status').textContent = t; };
+	const el = (tag, props = {}, kids = []) => { const e = Object.assign(document.createElement(tag), props); e.append(...kids); return e; };
+	const shuffle = (a) => { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+
+	// ---- the limerick: three words that rhyme for lines 1, 2 and 5, two for lines 3 and 4 ----------
+	// 80 rhyme families (463 words, 2.5 KB; 1.1 KB gzipped): about 1.9 million different prompts.
+	// A family is words that rhyme with each other; no word is in two. Add families freely.
+	function limerick() {
+			const FAMILIES = 'cat hat mat bat sat flat chat,day way play stay grey say tray,night light bright kite height flight sight,cake lake bake make shake snake wake,tree sea free key bee knee tea,moon soon spoon noon tune dune balloon,cold gold bold told old fold hold,rain train brain plain chain lane cane,car star far jar guitar bar,cheese peas breeze keys please trees sneeze,dog fog log frog jog bog,fish dish wish swish,bed red head bread said thread sled,boat coat goat float note throat vote,cloud loud proud crowd allowed,mouse house blouse,bear chair hair pair stair air share,ball hall tall wall small fall call,king ring sing wing spring thing string,snow know glow slow grow toe crow,feet street sweet treat seat meet,pie sky fly tie sigh why guy,bun fun run sun done one,pen ten hen when again then,pig dig wig big fig jig twig,socks box fox rocks clocks locks,hill will still spill chill grill mill,nose rose toes goes knows hose clothes,cook book look hook nook brook,pool cool school fool tool rule mule,mail tail sail whale snail pail trail,duck luck truck stuck pluck,moose goose loose juice spruce,sand band hand land grand stand,honey money funny bunny sunny,hop top stop shop drop mop pop,bug hug mug rug jug plug snug,pants ants plants chants,dream cream team stream beam scream steam,queen green bean screen seen machine,bell well shell spell smell yell tell,bark park shark dark spark,skate plate late gate eight great wait,ghost toast most coast post host,lime time rhyme climb chime dime,pole hole goal bowl roll mole,round ground sound found hound,bone phone stone cone alone throne,bike hike like strike spike,jam ham clam ram,nap cap map tap clap lap snap,road toad load code showed,cheek beak peak week seek squeak,door floor more four shore snore roar,rock clock sock knock block dock,fan van can pan man plan,seed bead need feed read speed weed,beach peach teach reach each,lunch bunch crunch munch punch,heart art cart part smart start,tent bent sent went spent,nest best rest test west guest,egg leg peg beg,gnome home dome foam roam comb,dance chance prance glance,crown down town frown clown brown gown,cheer deer ear near year clear,jelly belly telly smelly,noodle poodle doodle,ice nice mice rice price slice dice,cow how now wow,flute boot fruit suit root hoot,gift lift drift shift swift,rocket pocket socket locket,butter mutter flutter clutter,puddle cuddle muddle huddle,giggle wiggle jiggle,bubble trouble double rubble,pickle tickle nickel,kettle petal settle nettle'.split(',').map((f) => f.split(' '));
+			const pickFamily = (not) => { let f; do f = FAMILIES[Math.floor(Math.random() * FAMILIES.length)]; while (f === not); return f; };
+			const A = pickFamily(), B = pickFamily(A);
+			const a = shuffle(A.slice()).slice(0, 3), b = shuffle(B.slice()).slice(0, 2);
+			const body = $('poem-body');
+			body.textContent = '';
+			body.append(el('p', { className: 'small', textContent: 'The page got lost, but the rhymes turned up. Lines 1, 2 and 5 end with one set, lines 3 and 4 with the other.' }));
+			const chips = el('div', { className: 'rhymes' }, [...a.map((w) => el('span', { className: 'a', textContent: w })), ...b.map((w) => el('span', { className: 'b', textContent: w }))]);
+			body.append(chips);
+			const poem = el('div', { className: 'poem', hidden: true });
+			const ends = [A, A, B, B, A];
+			const hints = [`There once was a … ${a[0]}`, `… ${a[1]}`, `… ${b[0]}`, `… ${b[1]}`, `… ${a[2]}`];
+			const inputs = ends.map((family, i) => {
+				const input = el('input', { type: 'text', placeholder: hints[i], autocomplete: 'off', spellcheck: true });
+				input.setAttribute('aria-label', `line ${i + 1}, ending in a word like “${family === A ? a[0] : b[0]}”`);
+				const mark = el('b', { textContent: '' });
+				mark.setAttribute('aria-hidden', 'true');
+				input.oninput = () => {
+					const last = (input.value.toLowerCase().match(/[a-z']+(?=[^a-z']*$)/) || [''])[0];
+					mark.textContent = family.includes(last) ? '✓' : '';
+					const done = inputs.filter((x) => x.done()).length;
+					status(done === 5 ? 'That\'s a limerick! 🎉' : done ? `${done} of 5 lines rhyme where they should` : '');
+					copy.hidden = done < 5;
+				};
+				input.done = () => family.includes((input.value.toLowerCase().match(/[a-z']+(?=[^a-z']*$)/) || [''])[0]);
+				poem.append(el('label', { className: i === 2 || i === 3 ? 'short' : '' }, [input, mark]));
+				return input;
+			});
+			const copy = el('button', { className: 'btn', type: 'button', textContent: 'Copy it', hidden: true, onclick: async () => {
+				try { await navigator.clipboard.writeText(inputs.map((x) => x.value.trim()).join('\n')); status('Copied — share it with someone.'); } catch { status('Select the lines to copy them.'); }
+			} });
+			const write = el('button', { className: 'btn primary', type: 'button', textContent: 'Write one', onclick: () => { poem.hidden = false; write.hidden = true; inputs[0].focus(); } });
+			const other = el('button', { className: 'btn', type: 'button', textContent: 'Other words', onclick: limerick });
+			body.append(poem, el('div', { className: 'actions' }, [write, other, copy]));
+			status('');
+	}
+
+	if (SITE.poem) { $('poem-cell').hidden = false; limerick(); }
+</script>
+</body>
+</html>

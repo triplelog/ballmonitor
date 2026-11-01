@@ -157,6 +157,11 @@ pytest ballmonitor/models/race_time                # one model
   ≤ 60 s and ≤ ~1.5 MB per page. Page-only tunables are `site_*` params in config.toml.
   `views.check` runs on every build and in tests; a failing page fails the build.
 - Preview: `ballmonitor build-site --out /tmp/site && python3 -m http.server -d /tmp/site 8790`.
+- Look: **Shioh style** (`static/shioh-style.css`, theme block at its top; page-specific pieces
+  in `site.css`): pastel cells on black, sidebar + main column, Montserrat/Open Sans. Each sport
+  owns one cell colour (`SPORT_CELL` in site.js). The build also writes `robots.txt`,
+  `sitemap.xml` (`SITEMAP_PATHS` in builder.py) and copies the Shioh `404.html`. The editor and
+  the games keep their own styles.
 
 ## Browser UI (`ballmonitor serve`)
 

@@ -82,10 +82,13 @@ def format_seconds_to_time(sec: float) -> str:
     return f"{m}:{s:04.1f}" if s % 1 else f"{m}:{int(s):02d}"
 
 
+DEFAULT_DB = Path(__file__).parent / "data" / "races.db"  # tests point this at a temp file (conftest.py)
+
+
 class RaceResultsIngester:
     def __init__(self, db_path: Path | str | None = None):
         if db_path is None:
-            db_path = Path(__file__).parent / "data" / "races.db"
+            db_path = DEFAULT_DB
         self.db_path = Path(db_path)
         self.db_path.parent.mkdir(parents=True, exist_ok=True)
         self._init_db()

@@ -15,6 +15,11 @@ RANGE_ROWS = ("Mile", "10K", "15K", "10 Mile", "Half Marathon", "Marathon")
 NICE = {"Half Marathon": "Half marathon", "10 Mile": "10 miles"}
 
 
+def _to_minute(sec: float) -> float:
+    """Marathon times are shown to the minute: the seconds aren't meaningful at that distance."""
+    return round(sec / 60) * 60
+
+
 def _bench(model, gender: str, five_k_sec: float) -> dict[str, dict]:
     pred = model.predict({"target": "marathon", "gender": gender,
                           "races": [{"distance": "5k", "time": five_k_sec}]})
@@ -35,6 +40,7 @@ def page(model) -> dict:
             row = {"five_k": t}
             for key, label in COLUMNS:
                 row[key] = round(b[label]["p50_sec"], 1)
+            row["marathon"] = _to_minute(row["marathon"])
             row["pace"] = b["Marathon"]["pace_per_mile_sec"]
             rows.append(row)
             m = b["Marathon"]
@@ -53,11 +59,12 @@ def page(model) -> dict:
                  "The marathon is the hardest to predict: many runners finish slower than this.")
 
         b = _bench(model, g, example)
-        sure_rows = [{
-            "distance": NICE.get(lbl, lbl),
-            "fast": b[lbl]["p10_sec"], "low": b[lbl]["p25_sec"], "mid": b[lbl]["p50_sec"],
-            "high": b[lbl]["p75_sec"], "slow": b[lbl]["p90_sec"],
-        } for lbl in RANGE_ROWS]
+        sure_rows = []
+        for lbl in RANGE_ROWS:
+            r = (_to_minute if lbl == "Marathon" else (lambda x: x))
+            sure_rows.append({"distance": NICE.get(lbl, lbl),
+                              **{k: r(b[lbl][f"{q}_sec"]) for k, q in
+                                 (("fast", "p10"), ("low", "p25"), ("mid", "p50"), ("high", "p75"), ("slow", "p90"))}})
         ex = f"{int(example // 60)}:{int(example % 60):02d}"
         sure = V.table(
             f"range_{g}", f"How sure is it? A {ex} 5K ({g_name.lower()})",

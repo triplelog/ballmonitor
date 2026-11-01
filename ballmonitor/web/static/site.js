@@ -70,6 +70,29 @@ function fmt(v, kind = "text", decimals, zeroDash = true) {
   }
 }
 
+// ── Shioh cells: each sport owns one cell colour ─────────────────────────────
+const SPORT_CELL = {
+  "College football": "ss-p1",
+  "Baseball": "ss-p4",
+  "College baseball & softball": "ss-p2",
+  "Running": "ss-p3",
+  "Polls & awards": "ss-p5",
+  "More sports": "ss-p1",
+};
+const cellClass = (sport) => SPORT_CELL[sport] || "ss-p1";
+const cell = (cls, ...kids) => el("section", { class: `ss-cell ${cls}` }, ...kids);
+
+// sidebar: one link per forecast page, grouped like the home page
+async function renderNav(active) {
+  const site = await getJSON("data/site.json");
+  const nav = document.getElementById("nav-models");
+  if (!nav.childElementCount) nav.append(...site.models.map((m) => el("a", { href: `#/${m.name}`, "data-route": m.name }, m.title)));
+  for (const a of document.querySelectorAll(".ss-nav a[data-route]")) {
+    if (a.dataset.route === active) a.setAttribute("aria-current", "page");
+    else a.removeAttribute("aria-current");
+  }
+}
+
 // ── home ──────────────────────────────────────────────────────────────────────
 async function renderHome() {
   const site = await getJSON("data/site.json");
@@ -77,24 +100,25 @@ async function renderHome() {
   const groups = {};
   for (const m of site.models) (groups[m.sport] = groups[m.sport] || []).push(m);
   app.replaceChildren(
-    el("section", { class: "hero" },
-      el("h1", {}, "Sports odds and forecasts, in plain numbers"),
-      el("p", {}, "Playoff chances, polls re-counted, race-time predictions and more. Every page is a table or a chart, refreshed from the latest data.")),
+    cell("ss-p1",
+      el("h1", { class: "ss-title" }, "Sports odds and forecasts, in plain numbers"),
+      el("p", { class: "home-intro" }, "Playoff chances, polls re-counted, race-time predictions and more. Every page is a table or a chart, refreshed from the latest data.")),
     ...Object.entries(groups).map(([sport, models]) =>
-      el("section", { class: "group" },
-        el("h2", {}, sport),
-        el("div", { class: "cards" }, models.map((m) =>
-          el("a", { class: "card", href: `#/${m.name}` },
-            el("h3", {}, m.title),
+      cell(cellClass(sport),
+        el("div", { class: "ss-band" }, sport),
+        el("ul", { class: "model-list" }, models.map((m) =>
+          el("li", {}, el("a", { class: "model-link", href: `#/${m.name}` },
+            el("b", {}, m.title),
             el("p", {}, m.summary),
-            m.updated ? el("span", { class: "updated" }, m.updated) : null))))),
-    el("section", { class: "group" },
-      el("h2", {}, "Games"),
-      el("div", { class: "cards" },
-        el("a", { class: "card", href: "triple/" }, el("h3", {}, "Triple Play"), el("p", {}, "A daily puzzle: put each player (or city) in the right part of three circles.")),
-        el("a", { class: "card", href: "27k/" }, el("h3", {}, "27K"), el("p", {}, "A pitching game: get 27 outs.")),
-        el("a", { class: "card", href: "game.html" }, el("h3", {}, "Pitch Guesser"), el("p", {}, "Guess the next pitch in real big-league situations and beat the model.")))),
+            m.updated ? el("span", { class: "ss-chip" }, m.updated) : null)))))),
+    cell("ss-p3",
+      el("div", { class: "ss-band" }, "Games"),
+      el("ul", { class: "model-list" },
+        el("li", {}, el("a", { class: "model-link", href: "triple/" }, el("b", {}, "Triple Play"), el("p", {}, "A daily puzzle: put each player (or city) in the right part of three circles."))),
+        el("li", {}, el("a", { class: "model-link", href: "27k/" }, el("b", {}, "27K"), el("p", {}, "A pitching game: get 27 outs."))),
+        el("li", {}, el("a", { class: "model-link", href: "game.html" }, el("b", {}, "Pitch Guesser"), el("p", {}, "Guess the next pitch in real big-league situations and beat the model."))))),
   );
+  renderNav("");
   window.scrollTo(0, 0);
 }
 
@@ -104,40 +128,48 @@ async function renderModel(name) {
   try {
     page = await getJSON(`data/views/${name}.json`);
   } catch (e) {
-    app.replaceChildren(el("p", { class: "loading" }, "That page doesn't exist. "), el("a", { href: "#/" }, "Back to all forecasts"));
+    app.replaceChildren(cell("ss-p2", el("div", { class: "ss-band" }, "Page not found"),
+      el("p", {}, "That forecast doesn't exist. ", el("a", { href: "#/" }, "See all forecasts"))));
     return;
   }
   document.title = `${page.title} · Ball Monitor`;
+  const cls = cellClass(page.sport);
   app.replaceChildren(
-    el("a", { class: "back", href: "#/" }, "← All forecasts"),
-    el("header", { class: "page-head" },
-      el("p", { class: "kicker" }, page.sport),
-      el("h1", {}, page.title),
+    cell(`${cls} page-head`,
+      el("a", { class: "back", href: "#/" }, "← All forecasts"),
+      el("div", { class: "ss-kicker" }, page.sport),
+      el("h1", { class: "ss-title" }, page.title),
       el("p", { class: "summary" }, page.summary),
-      page.updated ? el("span", { class: "updated" }, page.updated) : null),
-    ...page.views.map(renderView),
-    page.how ? el("section", { class: "how" },
-      el("h2", {}, "How this works"),
+      page.updated ? el("span", { class: "ss-chip" }, page.updated) : null),
+    ...page.views.map((v) => renderView(v, cls, false)),
+    page.how ? cell(`${cls} how`,
+      el("div", { class: "ss-band" }, "How this works"),
       el("p", {}, page.how),
       el("p", { class: "small" }, el("a", { href: `editor.html?model=${encodeURIComponent(name)}` }, "Full method, settings and assumptions →"))) : null,
   );
+  renderNav(name);
   window.scrollTo(0, 0);
 }
 
-function viewShell(v, body) {
-  return el("section", { class: `view view-${v.kind}`, id: `v-${v.id}` },
-    el("h2", {}, v.title),
+// A top-level view is its own cell with a heading band; a view inside a picker is a
+// section band within the picker's cell.
+function viewShell(v, body, cls, nested) {
+  const kids = [
+    nested ? el("h3", { class: "ss-section" }, v.title) : el("div", { class: "ss-band" }, v.title),
     v.subtitle ? el("p", { class: "subtitle" }, v.subtitle) : null,
     body,
-    v.note ? el("p", { class: "note" }, v.note) : null);
+    v.note ? el("p", { class: "note" }, v.note) : null,
+  ];
+  return nested ? el("div", { class: `view view-${v.kind}`, id: `v-${v.id}` }, ...kids)
+    : el("section", { class: `ss-cell ${cls} view view-${v.kind}`, id: `v-${v.id}` }, ...kids);
 }
 
-function renderView(v) {
+function renderView(v, cls, nested) {
   switch (v.kind) {
-    case "table": return viewShell(v, renderTable(v));
-    case "bar": return viewShell(v, renderBars(v));
-    case "line": return viewShell(v, renderLine(v));
-    case "picker": return renderPicker(v);
+    case "table": return viewShell(v, renderTable(v), cls, nested);
+    case "bar": return viewShell(v, renderBars(v), cls, nested);
+    case "line": return viewShell(v, renderLine(v), cls, nested);
+    case "picker": return renderPicker(v, cls);
     default: return el("p", {}, `Unknown view ${v.kind}`);
   }
 }
@@ -155,7 +187,7 @@ function renderTable(v) {
   const wrap = el("div", { class: "table-wrap" });
   const search = v.search ? el("input", { class: "search", type: "search", placeholder: "Search…", "aria-label": `Search ${v.title}`,
     oninput: (e) => { state.q = e.target.value.trim().toLowerCase(); draw(); } }) : null;
-  const more = el("button", { class: "more", onclick: () => { state.all = true; draw(); } });
+  const more = el("button", { class: "ss-btn more", onclick: () => { state.all = true; draw(); } });
 
   function rows() {
     let rs = v.rows;
@@ -194,8 +226,8 @@ function renderTable(v) {
         return el("td", { class: `${align} barcell` }, el("span", { class: "cellbar", style: `width:${w}%` }), el("span", { class: "cellval" }, text));
       }
       if (c.heat && typeof val === "number" && val > 0) {
-        const a = Math.round(Math.min(1, val / heatMax) * 70);
-        return el("td", { class: `${align} heat`, style: `background: color-mix(in srgb, var(--c1) ${a}%, transparent)` }, text);
+        const a = Math.round(Math.min(1, val / heatMax) * 80);
+        return el("td", { class: `${align} heat${a > 42 ? " dark" : ""}`, style: `background: color-mix(in srgb, var(--ss-accent) ${a}%, transparent)` }, text);
       }
       return el("td", { class: [align, text.length > 36 ? "long" : ""].join(" ").trim() || null }, text);
     })));
@@ -288,13 +320,13 @@ function renderLine(v) {
 }
 
 // ── picker (dropdown that swaps groups of views) ──────────────────────────────
-function renderPicker(v) {
+function renderPicker(v, cls) {
   const body = el("div", { class: "picked" });
   const select = el("select", { "aria-label": v.label, onchange: (e) => show(+e.target.value) },
     v.options.map((o, i) => el("option", { value: i }, o.label)));
   function show(i) {
     select.value = String(i);
-    body.replaceChildren(...v.options[i].views.map(renderView));
+    body.replaceChildren(...v.options[i].views.map((w) => renderView(w, cls, true)));
   }
   show(v.default || 0);
   // Long lists also get a type-to-find box (matches anywhere in the option's name).
@@ -313,8 +345,8 @@ function renderPicker(v) {
         } }),
       el("datalist", { id: listId }, v.options.map((o) => el("option", { value: o.label }))));
   }
-  return el("section", { class: "view view-picker", id: `v-${v.id}` },
-    el("h2", {}, v.title),
+  return el("section", { class: `ss-cell ${cls} view view-picker`, id: `v-${v.id}` },
+    el("div", { class: "ss-band" }, v.title),
     v.subtitle ? el("p", { class: "subtitle" }, v.subtitle) : null,
     el("div", { class: "pick-row" }, el("label", { class: "pick" }, `${v.label}: `, select), find),
     v.note ? el("p", { class: "note" }, v.note) : null,

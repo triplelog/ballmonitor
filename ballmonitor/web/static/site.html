@@ -5,26 +5,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ball Monitor</title>
   <meta name="description" content="Sports odds and forecasts in plain tables and charts: college football playoff chances, polls re-counted, race times, baseball and more. Updated daily.">
-  <link rel="icon" href="data:,">
+  <link rel="canonical" href="https://ballmonitor.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ball Monitor">
+  <meta property="og:description" content="Sports odds and forecasts in plain tables and charts, updated daily.">
+  <meta property="og:url" content="https://ballmonitor.com/">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23a4b6dd'/%3E%3Ctext x='16' y='23' font-family='Montserrat,Arial,sans-serif' font-weight='800' font-size='20' text-anchor='middle' fill='%23222'%3EB%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="static/shioh-style.css">
   <link rel="stylesheet" href="static/site.css">
 </head>
-<body>
+<body class="ss">
   <!-- Public page: shows only pre-generated numbers (data/site.json, data/views/<model>.json,
-       written by `ballmonitor build-site`). Nothing is computed in the browser. -->
-  <header class="bar">
-    <a class="brand" href="#/">Ball Monitor</a>
-    <nav>
-      <a href="#/">Forecasts</a>
-      <a href="triple/">Triple Play</a>
-      <a href="27k/">27K</a>
-      <a href="game.html">Pitch Guesser</a>
-    </nav>
-  </header>
-  <main id="app"><p class="loading">Loading…</p></main>
-  <footer class="foot">
-    <span id="built"></span>
-    <span>Numbers come from simple, open models; see each page's “How this works”.</span>
-  </footer>
+       written by `ballmonitor build-site`). Nothing is computed in the browser.
+       Look: Shioh style (static/shioh-style.css); each sport owns one cell colour (site.js SPORT_CELL). -->
+  <div class="ss-shell">
+    <aside class="ss-sidebar">
+      <section class="ss-cell ss-p1">
+        <a class="ss-logo" href="#/">Ball Monitor</a>
+        <nav class="ss-nav" aria-label="Pages">
+          <a href="#/" data-route="">All forecasts</a>
+          <div id="nav-models" class="nav-models"></div>
+          <hr>
+          <a href="triple/">Triple Play</a>
+          <a href="27k/">27K</a>
+          <a href="game.html">Pitch Guesser</a>
+        </nav>
+      </section>
+      <section class="ss-cell ss-p4 side-about">
+        <p><b>Sports odds in plain numbers.</b> Every page is a table or a chart, worked out ahead of time from the latest data.</p>
+        <p class="ss-muted small" id="built"></p>
+      </section>
+    </aside>
+    <main class="ss-main" id="app">
+      <section class="ss-cell ss-p1"><p>Loading…</p></section>
+    </main>
+  </div>
   <script src="static/site.js"></script>
 </body>
 </html>
