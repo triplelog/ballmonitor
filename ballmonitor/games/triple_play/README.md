@@ -12,7 +12,8 @@ scored out of 17. Archive of past days; progress kept in the browser (localStora
   of puzzles using it, a near-miss score for the outside player, and the fact shown on the
   answer card.
 - `generate.py` — one puzzle per date, seeded by the date (rebuilding reproduces it).
-  Difficulty by weekday (Mon/Tue easy, Wed-Fri medium, weekend hard) via a fame floor
+  Difficulty by weekday (Tue easy, Wed/Thu medium, Fri/Sat hard; since 2026-10-31 even
+  "hard" uses well-known players and avoids close calls) via a fame floor
   (All-Star selections, Hall of Fame, awards, career totals; pre-1946 careers discounted).
   Rejects near-duplicate circles, pitcher-only + hitter-only mixes, repeats of the same
   three circles within 120 days and any circle used the day before.
@@ -24,7 +25,8 @@ Wednesday/Thursday (medium), Friday/Saturday (hard), and Sunday's big puzzle: 25
 to a circle's line (`Category.close`: 405 HR for "400 career home runs", 60 games for a team,
 a switch-hitter for "batted left-handed"); each card is drawn with weight
 fame x exp(CLOSE_BETA[level] x closeness), so easy days are clear-cut and hard days full of
-close calls. The outside card is a near miss on medium/hard days.
+close calls. Since 2026-10-31 every level avoids close calls (negative CLOSE_BETA) and the
+outside card is always a clear non-member, never a near miss.
 
 ## Cities & States pack (`places/`)
 

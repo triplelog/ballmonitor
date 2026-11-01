@@ -29,10 +29,11 @@ from ballmonitor.games.triple_play.categories import CATEGORIES, Category
 
 NEED = {"ABC": 1, "AB": 2, "AC": 2, "BC": 2, "A": 3, "B": 3, "C": 3, "": 1}             # 17 cards
 NEED_BIG = {"ABC": 2, "AB": 3, "AC": 3, "BC": 3, "A": 4, "B": 4, "C": 4, "": 2}         # 25 cards (Sunday)
-FAME_FLOOR = {"easy": 55.0, "medium": 32.0, "hard": 24.0, "big": 30.0}
+FAME_FLOOR = {"easy": 80.0, "medium": 62.0, "hard": 50.0, "big": 55.0}  # 2026-10-31: raised (was 55/32/24/30)
 # how strongly each level favours close calls (closeness = how near a player is to a circle's
-# line, Category.close): easy avoids them, hard seeks them
-CLOSE_BETA = {"easy": -2.5, "medium": 0.6, "hard": 1.8, "big": 0.8}
+# line, Category.close): negative avoids them. Every level avoids them since 2026-10-31
+# (was easy -2.5, medium 0.6, hard 1.8, big 0.8); harder days only allow a few more.
+CLOSE_BETA = {"easy": -3.0, "medium": -2.0, "hard": -1.2, "big": -1.6}
 # Mon = cities & states (MLB's traditional off day); Sunday = the big 25-card puzzle
 WEEKDAY_LEVEL = ["medium", "easy", "medium", "medium", "hard", "hard", "big"]  # Mon..Sun
 REPEAT_DAYS = 120
@@ -136,11 +137,8 @@ def build_puzzle(rng: random.Random, base: list[dict], pick, ok_triple, level: s
         outside = [p for p in regions[""] if p["name"] not in used]
         if not outside:
             continue
-        # outside: a famous non-member; on medium/hard days a near miss (e.g. 380 HR for "400 HR")
-        if level == "easy":
-            scored = sorted(outside, key=lambda p: -p["fame"] * math.exp(-2 * max(c.near(p) for c in cats)))[:8]
-        else:
-            scored = sorted(outside, key=lambda p: -p["fame"] * (0.25 + max(c.near(p) for c in cats)))[:8]
+        # outside: a famous, clear non-member (never a near miss like 380 HR for "400 HR")
+        scored = sorted(outside, key=lambda p: -p["fame"] * math.exp(-2 * max(c.near(p) for c in cats)))[:8]
         picks[""] = rng.sample(scored, min(need[""], len(scored)))
         if len(picks[""]) < need[""]:
             continue

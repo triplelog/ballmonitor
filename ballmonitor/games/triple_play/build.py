@@ -68,6 +68,8 @@ def main(argv=None) -> int:
     ap.add_argument("--lahman", type=Path, help="SABR CSV zip or CRAN Lahman tarball to unpack first")
     ap.add_argument("--start", type=dt.date.fromisoformat, default=FIRST_DAY)
     ap.add_argument("--end", type=dt.date.fromisoformat, default=dt.date(2027, 12, 31))
+    ap.add_argument("--keep-through", type=dt.date.fromisoformat,
+                    help="keep the already-published puzzles up to this date unchanged")
     args = ap.parse_args(argv)
     if args.lahman:
         unpack(args.lahman)
@@ -76,6 +78,13 @@ def main(argv=None) -> int:
     from ballmonitor.games.triple_play.places import model as places
     entities = places.load()
     puzzles = generate.generate(players, args.start, args.end, places=places.maker(entities) if entities else None)
+    if args.keep_through:
+        old = {}
+        for f in (OUT / "daily").glob("????-??.json"):
+            old.update({p["date"]: p for p in json.loads(f.read_text(encoding="utf-8"))})
+        keep = args.keep_through.isoformat()
+        puzzles = [old[p["date"]] if p["date"] <= keep and p["date"] in old else p for p in puzzles]
+        print(f"kept published puzzles through {keep}")
     write("daily", puzzles, f"Lahman Baseball Database (stats through {last}); places: Wikipedia lists (2026 season)")
     print(f"wrote {len(puzzles)} puzzles to {OUT / 'daily'} (stats through {last})")
     return 0

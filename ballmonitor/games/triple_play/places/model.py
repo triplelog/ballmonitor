@@ -293,7 +293,7 @@ def maker(entities: dict[str, dict]):
 
     def make(day: dt.date, level, recent, yesterday):
         rng = random.Random(f"triple-play-places-{day.isoformat()}")
-        puzzle = G.build_puzzle(rng, base, pick, ok, "medium", recent, yesterday,
+        puzzle = G.build_puzzle(rng, base, pick, ok, "easy", recent, yesterday,  # easy: clear outside card
                                 card_extra=lambda e: {"sub": e["sub"]}, beta=0.0, choose="random")
         if not puzzle:
             raise RuntimeError(f"no valid places puzzle for {day}")
