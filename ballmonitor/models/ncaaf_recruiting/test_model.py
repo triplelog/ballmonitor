@@ -157,3 +157,17 @@ def test_site_page_is_valid_and_ranks_programs():
     assert [r["rank"] for r in rows] == sorted(r["rank"] for r in rows)
     top = model.predict({"sport": "ncaaf", "year": 2026, "team": rows[0]["team"]})
     assert top.extras["rank"] == 1 and top.extras["score"] == rows[0]["score"]
+    # conference ranks run 1..n within each conference, in overall order; independents have none
+    by_conf: dict = {}
+    for r in rows:
+        if r["conf"] and r["conf"] != "Independent":
+            by_conf.setdefault(r["conf"], []).append(r["conf_rank"])
+        else:
+            assert r["conf_rank"] is None
+    assert len(by_conf) >= 9 and all(v == list(range(1, len(v) + 1)) for v in by_conf.values())
+    assert all(r["industry"] for r in rows[:50])  # the industry consensus covers every top program
+    units = options[1]["views"][1]["rows"]
+    assert len(units) == len(rows) and units[0]["team"] == rows[0]["team"]
+    for k in ("off", "def", "run_o", "pass_o", "run_d", "pass_d"):
+        ranks = sorted(u[k] for u in units if u[k] is not None)
+        assert ranks[0] == 1 and len(ranks) > 100, k

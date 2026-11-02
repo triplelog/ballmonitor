@@ -5,6 +5,9 @@
 
 const app = document.getElementById("app");
 const cache = {};
+// The open model page and its pickers: #/<model>/<picker id>/<option slug> selects an option.
+let current = { model: null, pickers: {} };
+const slugify = (t) => String(t).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
 
 function el(tag, attrs = {}, ...kids) {
   const n = document.createElement(tag);
@@ -123,7 +126,11 @@ async function renderHome() {
 }
 
 // ── model page ───────────────────────────────────────────────────────────────
-async function renderModel(name) {
+async function renderModel(name, pick) {
+  if (current.model === name && pick && current.pickers[pick.id]) {  // same page: just switch the picker
+    current.pickers[pick.id](pick.slug, true);
+    return;
+  }
   let page;
   try {
     page = await getJSON(`data/views/${name}.json`);
@@ -134,6 +141,8 @@ async function renderModel(name) {
   }
   document.title = `${page.title} · Ball Monitor`;
   const cls = cellClass(page.sport);
+  current = { model: name, pickers: {} };
+  pending = pick || null;
   app.replaceChildren(
     cell(`${cls} page-head`,
       el("a", { class: "back", href: "#/" }, "← All forecasts"),
@@ -148,8 +157,10 @@ async function renderModel(name) {
       el("p", { class: "small" }, el("a", { href: `editor.html?model=${encodeURIComponent(name)}` }, "Full method, settings and assumptions →"))) : null,
   );
   renderNav(name);
-  window.scrollTo(0, 0);
+  if (pick && current.pickers[pick.id]) current.pickers[pick.id](pick.slug, true);
+  else window.scrollTo(0, 0);
 }
+let pending = null;
 
 // A top-level view is its own cell with a heading band; a view inside a picker is a
 // section band within the picker's cell.
@@ -213,7 +224,7 @@ function renderTable(v) {
       title: "Sort",
       onclick: () => {
         if (state.sort === c.key) state.desc = !state.desc;
-        else { state.sort = c.key; state.desc = numeric(c); }
+        else { state.sort = c.key; state.desc = numeric(c) && !c.low_first; }
         draw();
       },
     }, c.label)));
@@ -229,7 +240,8 @@ function renderTable(v) {
         const a = Math.round(Math.min(1, val / heatMax) * 80);
         return el("td", { class: `${align} heat${a > 42 ? " dark" : ""}`, style: `background: color-mix(in srgb, var(--ss-accent) ${a}%, transparent)` }, text);
       }
-      return el("td", { class: [align, text.length > 36 ? "long" : ""].join(" ").trim() || null }, text);
+      const content = c.link && text ? el("a", { href: `#/${current.model}/${c.link}/${slugify(val)}` }, text) : text;
+      return el("td", { class: [align, text.length > 36 ? "long" : ""].join(" ").trim() || null }, content);
     })));
     wrap.replaceChildren(el("table", {}, el("thead", {}, head), el("tbody", {}, body)));
     const hidden = rs.length - shown.length;
@@ -322,13 +334,22 @@ function renderLine(v) {
 // ── picker (dropdown that swaps groups of views) ──────────────────────────────
 function renderPicker(v, cls) {
   const body = el("div", { class: "picked" });
-  const select = el("select", { "aria-label": v.label, onchange: (e) => show(+e.target.value) },
+  const select = el("select", { "aria-label": v.label, onchange: (e) => show(+e.target.value, true) },
     v.options.map((o, i) => el("option", { value: i }, o.label)));
-  function show(i) {
+  // `remember`: put this option in the address bar (#/<model>/<picker>/<slug>) so it can be shared
+  function show(i, remember) {
     select.value = String(i);
-    body.replaceChildren(...v.options[i].views.map((w) => renderView(w, cls, true)));
+    const o = v.options[i];
+    body.replaceChildren(o.intro ? el("p", { class: "intro" }, o.intro) : "", ...o.views.map((w) => renderView(w, cls, true)));
+    if (remember && current.model) history.replaceState(null, "", `#/${current.model}/${v.id}/${o.slug || slugify(o.label)}`);
   }
-  show(v.default || 0);
+  const fromAddress = pending && pending.id === v.id ? v.options.findIndex((o) => (o.slug || slugify(o.label)) === pending.slug) : -1;
+  show(fromAddress >= 0 ? fromAddress : v.default || 0);
+  current.pickers[v.id] = (slug, scroll) => {
+    const i = v.options.findIndex((o) => (o.slug || slugify(o.label)) === slug);
+    if (i >= 0) show(i, true);
+    if (scroll) document.getElementById(`v-${v.id}`)?.scrollIntoView({ block: "start" });
+  };
   // Long lists also get a type-to-find box (matches anywhere in the option's name).
   let find = null;
   if (v.options.length > 12) {
@@ -341,7 +362,7 @@ function renderPicker(v, cls) {
           if (!q) return;
           const exact = v.options.findIndex((o) => o.label.toLowerCase() === q);
           const i = exact >= 0 ? exact : v.options.findIndex((o) => o.label.toLowerCase().includes(q));
-          if (i >= 0 && String(i) !== select.value) show(i);
+          if (i >= 0 && String(i) !== select.value) show(i, true);
         } }),
       el("datalist", { id: listId }, v.options.map((o) => el("option", { value: o.label }))));
   }
@@ -355,8 +376,9 @@ function renderPicker(v, cls) {
 
 // ── routing: #/ (home) and #/<model> ─────────────────────────────────────────
 function route() {
-  const m = location.hash.match(/^#\/([a-z0-9_]+)/);
-  (m ? renderModel(m[1]) : renderHome()).catch((e) => {
+  const m = location.hash.match(/^#\/([a-z0-9_]+)(?:\/([a-z0-9_]+)\/([a-z0-9-]+))?/);
+  if (!m) current = { model: null, pickers: {} };
+  (m ? renderModel(m[1], m[2] ? { id: m[2], slug: m[3] } : null) : renderHome()).catch((e) => {
     app.replaceChildren(el("p", { class: "loading" }, `Something went wrong loading this page (${e.message}).`));
   });
 }

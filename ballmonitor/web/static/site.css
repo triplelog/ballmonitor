@@ -120,3 +120,6 @@ td.heat.dark { color: #fff; }
   .barrow { grid-template-columns: minmax(90px, 140px) 1fr 54px; }
   .search { width: 100%; }
 }
+
+.picked .intro { margin: 0.9rem 0 0; font-weight: 600; }
+td a { color: var(--ss-ink); font-weight: 600; }

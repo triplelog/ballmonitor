@@ -110,3 +110,19 @@ def test_site_page_is_valid_and_covers_every_team():
     assert len(teams) == len(json.loads((model.dir / "data" / "teams.json").read_text()))
     assert all(0 <= r["cfp"] <= 1 and 0 <= r["title"] <= r["cfp"] + 1e-9 for r in teams)
     assert abs(sum(r["title"] for r in teams) - 1) < 0.01  # exactly one champion per season
+
+
+def test_playoff_rounds_and_win_distribution_add_up():
+    from ballmonitor.core import registry
+
+    res = registry.load_model("ncaaf_bowls").engine(200).run(num_sims=200)
+    teams = res.team_summaries.values()
+    # every simulated season has 8 quarterfinalists, 4 semifinalists, 2 finalists, 1 champion
+    for field, n in (("p_cfp_quarterfinal", 8), ("p_cfp_semifinal", 4), ("p_cfp_final", 2), ("national_champ_prob", 1)):
+        assert abs(sum(getattr(t, field) for t in teams) - n) < 1e-9, field
+    for t in teams:
+        assert t.p_cfp + 1e-9 >= t.p_cfp_quarterfinal >= t.p_cfp_semifinal >= t.p_cfp_final >= t.national_champ_prob - 1e-9
+        assert t.p_cfp_quarterfinal + 1e-9 >= t.p_cfp_bye
+        assert abs(sum(t.record_dist.values()) - 1) < 1e-9
+        assert abs(sum(w * p for (w, _), p in t.record_dist.items()) - t.record_mean_wins) < 1e-9
+        assert abs(sum(lo * p for (_, lo), p in t.record_dist.items()) - t.record_mean_losses) < 1e-9

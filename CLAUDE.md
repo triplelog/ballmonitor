@@ -156,6 +156,8 @@ pytest ballmonitor/models/race_time                # one model
   (CI has no `data/raw/`), off-season pages labelled as final, no private people's names,
   ≤ 60 s and ≤ ~1.5 MB per page. Page-only tunables are `site_*` params in config.toml.
   `views.check` runs on every build and in tests; a failing page fails the build.
+- Pickers double as sub-pages: each option has an address `#/<model>/<picker id>/<slug>` (e.g.
+  `#/ncaaf_bowls/team/georgia`), and a table column with `link="<picker id>"` links its cells there.
 - Preview: `ballmonitor build-site --out /tmp/site && python3 -m http.server -d /tmp/site 8790`.
 - Look: **Shioh style** (`static/shioh-style.css`, theme block at its top; page-specific pieces
   in `site.css`): pastel cells on black, sidebar + main column, Montserrat/Open Sans. Each sport

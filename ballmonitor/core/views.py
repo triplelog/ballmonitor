@@ -18,6 +18,7 @@ from __future__ import annotations
 
 import json
 import math
+import re
 from typing import Any
 
 FORMATS = ("text", "int", "number", "pct", "time", "signed")
@@ -34,10 +35,18 @@ def page(title: str, summary: str, sport: str, views: list[dict], updated: str =
             "order": order, "views": views}
 
 
+def slug(text: str) -> str:
+    """URL-safe name for a picker option ("Miami (FL)" -> "miami-fl"); site.js uses the same rule."""
+    return re.sub(r"[^a-z0-9]+", "-", str(text).lower()).strip("-")
+
+
 def col(key: str, label: str, fmt: str = "text", decimals: int | None = None, bar: bool = False,
-        align: str | None = None, heat: bool = False) -> dict:
+        align: str | None = None, heat: bool = False, link: str | None = None, low_first: bool = False) -> dict:
     """A table column. `bar`: draw a small bar behind a pct/number cell (scaled to the column max).
-    `heat`: shade the cell by its value (0 to the largest value in any heat column of the table)."""
+    `heat`: shade the cell by its value (0 to the largest value in any heat column of the table).
+    `link`: id of a picker on the same page; the cell links to the option whose slug matches the
+    cell text (e.g. a team name opens that team's view). `low_first`: clicking the header sorts
+    smallest first (ranks: No. 1 at the top)."""
     c = {"key": key, "label": label, "fmt": fmt}
     if decimals is not None:
         c["decimals"] = decimals
@@ -45,6 +54,10 @@ def col(key: str, label: str, fmt: str = "text", decimals: int | None = None, ba
         c["bar"] = True
     if heat:
         c["heat"] = True
+    if link:
+        c["link"] = link
+    if low_first:
+        c["low_first"] = True
     if align:
         c["align"] = align
     return c
@@ -94,8 +107,13 @@ def line(id: str, title: str, lines: list[dict], x_label: str = "", y_label: str
     return v
 
 
-def option(label: str, views: list[dict]) -> dict:
-    return {"label": label, "views": views}
+def option(label: str, views: list[dict], intro: str = "") -> dict:
+    """One choice in a picker; it gets its own address #/<model>/<picker id>/<slug(label)>.
+    `intro`: a short line shown above its views (e.g. a team's record and conference)."""
+    o = {"label": label, "slug": slug(label), "views": views}
+    if intro:
+        o["intro"] = intro
+    return o
 
 
 def picker(id: str, title: str, label: str, options: list[dict], subtitle: str = "", note: str = "",
@@ -186,6 +204,16 @@ def check(p: dict) -> list[str]:
                     walk(o["views"], at)
 
     walk(p.get("views") or [], "")
+    pickers = {v["id"]: v for v in p.get("views") or [] if v.get("kind") == "picker"}
+    for v in p.get("views") or []:
+        for opt_views in ([v] if v.get("kind") != "picker" else [w for o in v.get("options", []) for w in o.get("views", [])]):
+            for c in opt_views.get("columns", []) if opt_views.get("kind") == "table" else []:
+                if c.get("link") and c["link"] not in pickers:
+                    errs.append(f"{v.get('id')}: column {c['key']} links to {c['link']!r}, not a top-level picker")
+    for pid, pk in pickers.items():
+        slugs = [o.get("slug") for o in pk.get("options", [])]
+        if len(slugs) != len(set(slugs)):
+            errs.append(f"{pid}: option labels must give unique slugs")
     try:
         json.dumps(p, allow_nan=False)
     except (TypeError, ValueError) as exc:

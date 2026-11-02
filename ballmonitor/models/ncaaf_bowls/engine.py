@@ -74,6 +74,12 @@ class TeamSummary:
     all_bowls: dict[str, float]
     conf_rank_probs: dict[int, float] = field(default_factory=dict)
     expected_non_playoff_rank: float | None = None
+    # how far into the 12-team playoff (byes count as reaching the quarterfinal)
+    p_cfp_quarterfinal: float = 0.0
+    p_cfp_semifinal: float = 0.0
+    p_cfp_final: float = 0.0
+    # record before bowls, incl. any conference title game: (wins, losses) -> probability
+    record_dist: dict[tuple[int, int], float] = field(default_factory=dict)
 
 @dataclass
 class BowlSummary:
@@ -239,6 +245,8 @@ class BowlEngine:
         team_bye_count = defaultdict(int)
         team_national_champ_count = defaultdict(int)
         team_seed_counts: dict[str, dict[int, int]] = defaultdict(lambda: defaultdict(int))
+        team_record_hist: dict[str, dict[tuple[int, int], int]] = defaultdict(lambda: defaultdict(int))
+        team_cfp_reach: dict[str, list[int]] = defaultdict(lambda: [0, 0, 0])  # quarterfinal, semifinal, final
         team_bowl_counts: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
 
         # Bowl specific & win tracking
@@ -300,6 +308,15 @@ class BowlEngine:
                 for t_id in team_ids:
                     team_bowl_counts[t_id][b_id] += 1
                     bowl_team_counts[b_id][t_id] += 1
+
+            # How far each playoff team got: a bye plus each win moves it one round on
+            cfp_wins: dict[str, int] = defaultdict(int)
+            for game in cfp_res.played_games:
+                cfp_wins[game.winner.id] += 1
+            for seed in cfp_res.seeds:
+                steps = cfp_wins[seed.id] + (1 if seed.cfp_bye else 0)
+                for r in range(min(steps, 3)):
+                    team_cfp_reach[seed.id][r] += 1
 
             # Record CFP Games, Opponents & Wins
             for game in cfp_res.played_games:
@@ -371,6 +388,7 @@ class BowlEngine:
             for t_id, s in states.items():
                 team_wins[t_id] += s.wins
                 team_losses[t_id] += s.losses
+                team_record_hist[t_id][(s.wins, s.losses)] += 1
                 if s.wins >= self.config.bowl_eligible_wins:
                     team_eligible_count[t_id] += 1
                 if s.is_conf_champ:
@@ -507,7 +525,11 @@ class BowlEngine:
                 bowls_detail=bowls_detail,
                 all_bowls=all_b_probs,
                 conf_rank_probs=conf_rank_probs,
-                expected_non_playoff_rank=exp_rank
+                expected_non_playoff_rank=exp_rank,
+                p_cfp_quarterfinal=team_cfp_reach[t_id][0] / n_sims,
+                p_cfp_semifinal=team_cfp_reach[t_id][1] / n_sims,
+                p_cfp_final=team_cfp_reach[t_id][2] / n_sims,
+                record_dist={wl: c / n_sims for wl, c in sorted(team_record_hist[t_id].items(), key=lambda x: (-x[0][0], x[0][1]))},
             )
 
         # Aggregate Bowl Summaries

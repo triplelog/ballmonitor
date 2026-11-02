@@ -146,6 +146,10 @@ From `ballmonitor/models/ncaaf_bowls/`: `python cli.py team Texas`, `python cli.
 
 ## Changelog
 
+- 0.4.2 — The engine also tallies how far each team gets in the playoff (quarterfinal,
+  semifinal, final) and its distribution of records before the bowls, incl. any conference
+  title game (`TeamSummary.p_cfp_*`, `record_dist`), for the site's team pages; the site adds a page per team and per bowl. No
+  change to predictions.
 - 0.4.1 — `site.py`: the public page (every FBS team's playoff, title and bowl odds, title
   chances, bowl matchups) from one `site_simulations` run of `engine()`, the season engine
   now shared by `predict()`. No change to predictions.
