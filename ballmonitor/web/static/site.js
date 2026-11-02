@@ -97,6 +97,9 @@ async function renderNav(active) {
 }
 
 // ── home ──────────────────────────────────────────────────────────────────────
+// Home page text lives in <template>s in index.html (edited from Claude UI's Content page).
+const copy = (id) => document.getElementById(id).content.cloneNode(true);
+
 async function renderHome() {
   const site = await getJSON("data/site.json");
   document.title = "Ball Monitor";
@@ -104,8 +107,8 @@ async function renderHome() {
   for (const m of site.models) (groups[m.sport] = groups[m.sport] || []).push(m);
   app.replaceChildren(
     cell("ss-p1",
-      el("h1", { class: "ss-title" }, "Sports odds and forecasts, in plain numbers"),
-      el("p", { class: "home-intro" }, "Playoff chances, polls re-counted, race-time predictions and more. Every page is a table or a chart, refreshed from the latest data.")),
+      el("h1", { class: "ss-title" }, copy("home-title").textContent.trim()),
+      el("div", { class: "home-intro" }, ...copy("home-intro").childNodes)),
     ...Object.entries(groups).map(([sport, models]) =>
       cell(cellClass(sport),
         el("div", { class: "ss-band" }, sport),
@@ -116,10 +119,8 @@ async function renderHome() {
             m.updated ? el("span", { class: "ss-chip" }, m.updated) : null)))))),
     cell("ss-p3",
       el("div", { class: "ss-band" }, "Games"),
-      el("ul", { class: "model-list" },
-        el("li", {}, el("a", { class: "model-link", href: "triple/" }, el("b", {}, "Triple Play"), el("p", {}, "A daily puzzle: put each player (or city) in the right part of three circles."))),
-        el("li", {}, el("a", { class: "model-link", href: "27k/" }, el("b", {}, "27K"), el("p", {}, "A pitching game: get 27 outs."))),
-        el("li", {}, el("a", { class: "model-link", href: "game.html" }, el("b", {}, "Pitch Guesser"), el("p", {}, "Guess the next pitch in real big-league situations and beat the model."))))),
+      el("ul", { class: "model-list" }, [...copy("home-games").querySelectorAll("li")].map((li) =>
+        el("li", {}, el("a", { class: "model-link", href: li.dataset.href || "#/" }, ...li.childNodes))))),
   );
   renderNav("");
   window.scrollTo(0, 0);

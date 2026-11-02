@@ -150,6 +150,7 @@ def page(model) -> dict:
         title="College football recruiting rankings",
         summary="Every football program's recruiting class ranked overall, within its conference and by "
                 f"side of the ball, {years[-1]} to {newest}.",
+        fill={"first_year": years[-1], "last_year": newest},
         sport="College football",
         order=20,
         updated=updated,

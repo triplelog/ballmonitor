@@ -156,6 +156,10 @@ pytest ballmonitor/models/race_time                # one model
   (CI has no `data/raw/`), off-season pages labelled as final, no private people's names,
   ≤ 60 s and ≤ ~1.5 MB per page. Page-only tunables are `site_*` params in config.toml.
   `views.check` runs on every build and in tests; a failing page fails the build.
+- Page text the owner edits lives outside code: each model's `site.md` (marked `title`/`summary`/
+  `how` sections, overriding site.py; `{placeholders}` come from `page(fill=...)`) and the home page
+  / sidebar `<template>`s and meta tags in `site.html`. These are registered on Claude UI's
+  Content page (project "ballmonitor"); when adding a model page, add its site.md and register it.
 - Pickers double as sub-pages: each option has an address `#/<model>/<picker id>/<slug>` (e.g.
   `#/ncaaf_bowls/team/georgia`), and a table column with `link="<picker id>"` links its cells there.
 - Preview: `ballmonitor build-site --out /tmp/site && python3 -m http.server -d /tmp/site 8790`.

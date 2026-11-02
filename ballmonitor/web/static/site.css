@@ -123,3 +123,5 @@ td.heat.dark { color: #fff; }
 
 .picked .intro { margin: 0.9rem 0 0; font-weight: 600; }
 td a { color: var(--ss-ink); font-weight: 600; }
+.home-intro p { margin: 0 0 0.5rem; font-size: 1.05rem; }
+.home-intro p:last-child { margin-bottom: 0; }

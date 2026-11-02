@@ -147,6 +147,7 @@ def site_page(name: str) -> dict | None:
         return None
     module = importlib.import_module(f"ballmonitor.models.{name}.site")
     p = views.clean(module.page(registry.load_model(name)))
+    views.apply_text(p, views.read_text_file(registry.model_dir(name) / "site.md"))
     problems = views.check(p)
     if problems:
         raise ValueError(f"{name}/site.py: " + "; ".join(problems[:8]))

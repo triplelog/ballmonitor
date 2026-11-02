@@ -157,6 +157,7 @@ def page(model) -> dict:
         title="Race age-group award times",
         summary=(f"What it will probably take to win or place in your age group at {len(options)} "
                  "local road races, based on their past results."),
+        fill={"races": len(options)},
         sport="Running",
         updated=f"Race results through {latest_year}",
         how=("For each age group we look at the top finishing times in earlier years of the same race, "

@@ -48,6 +48,18 @@ def test_fetch_policy_is_well_formed(name):
     registry.fetch_due(name)
 
 
+@pytest.mark.parametrize("name", ALL)
+def test_site_text_file_is_well_formed(name):
+    from ballmonitor.core import views
+    path = registry.model_dir(name) / "site.md"
+    if not path.exists():
+        return
+    assert (registry.model_dir(name) / "site.py").exists(), "site.md needs a site.py"
+    text = views.read_text_file(path)
+    assert set(text) <= set(views.TEXT_KEYS), f"unknown sections: {set(text) - set(views.TEXT_KEYS)}"
+    assert text.get("title") and text.get("summary"), "site.md needs a title and a summary"
+
+
 @pytest.mark.parametrize("name", RUNNABLE)
 def test_runnable_model_has_default_example(name):
     assert "default" in registry.example_names(name), "add examples/default.toml"

@@ -135,6 +135,7 @@ def page(model) -> dict:
     return V.page(
         title="What pitch is coming next?",
         summary=f"For {len(options)} MLB pitchers: the chance of a fastball, slider, changeup and more in every count.",
+        fill={"pitchers": len(options)},
         sport="Baseball",
         updated=f"{season} season, final (pitches through {_day(meta['last_date'])})",
         how=("Every pitch a pitcher has thrown since 2021 is counted by count and by the hitter's side, with "

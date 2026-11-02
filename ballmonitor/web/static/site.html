@@ -36,7 +36,9 @@
         </nav>
       </section>
       <section class="ss-cell ss-p4 side-about">
+        <!-- claude-ui:begin sidebar-about -->
         <p><b>Sports odds in plain numbers.</b> Every page is a table or a chart, worked out ahead of time from the latest data.</p>
+        <!-- claude-ui:end sidebar-about -->
         <p class="ss-muted small" id="built"></p>
       </section>
     </aside>
@@ -44,6 +46,25 @@
       <section class="ss-cell ss-p1"><p>Loading…</p></section>
     </main>
   </div>
+  <!-- Home page text (site.js copies these in). Edit the words; keep the tags.
+       The Games list: one <li> per game, data-href is the link. -->
+  <template id="home-title">
+    <!-- claude-ui:begin home-title -->
+    Sports odds and forecasts, in plain numbers
+    <!-- claude-ui:end home-title -->
+  </template>
+  <template id="home-intro">
+    <!-- claude-ui:begin home-intro -->
+    <p>Playoff chances, polls re-counted, race-time predictions and more. Every page is a table or a chart, refreshed from the latest data.</p>
+    <!-- claude-ui:end home-intro -->
+  </template>
+  <template id="home-games">
+    <!-- claude-ui:begin home-games -->
+    <li data-href="triple/"><b>Triple Play</b><p>A daily puzzle: put each player (or city) in the right part of three circles.</p></li>
+    <li data-href="27k/"><b>27K</b><p>A pitching game: get 27 outs.</p></li>
+    <li data-href="game.html"><b>Pitch Guesser</b><p>Guess the next pitch in real big-league situations and beat the model.</p></li>
+    <!-- claude-ui:end home-games -->
+  </template>
   <script src="static/site.js"></script>
 </body>
 </html>

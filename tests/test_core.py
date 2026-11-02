@@ -149,3 +149,20 @@ def test_views_check_reports_problems():
         assert expect in errs, expect
     assert any("JSON" in e for e in V.check(V.page("T", "S", "Running", [V.bar("b", "B", [{"label": "x", "value": float("nan")}])])))
     assert V.check(V.clean(V.page("T", "S", "Running", [V.bar("b", "B", [{"label": "x", "value": 1.0}])]))) == []
+
+
+def test_site_md_text_overrides_page_text(tmp_path):
+    from ballmonitor.core import views as V
+    md = tmp_path / "site.md"
+    md.write_text("<!-- note -->\n<!-- claude-ui:begin title -->\n  New title\n<!-- claude-ui:end title -->\n"
+                  "<!-- claude-ui:begin summary -->\nAt {races}\nraces.\n<!-- claude-ui:end summary -->\n"
+                  "<!-- claude-ui:begin how -->\n\n<!-- claude-ui:end how -->\n")
+    text = V.read_text_file(md)
+    assert text == {"title": "New title", "summary": "At {races} races."}  # empty section: keep site.py's
+    p = V.page("Old", "Old summary", "Running", [V.bar("b", "B", [{"label": "x", "value": 1.0}])], how="Old how",
+               fill={"races": 85})
+    V.apply_text(p, text)
+    assert (p["title"], p["summary"], p["how"]) == ("New title", "At 85 races.", "Old how")
+    assert V.check(p) == []
+    p2 = V.apply_text(V.page("T", "S", "Running", p["views"]), {"summary": "At {nope}"})
+    assert any("unknown placeholder" in e for e in V.check(p2))
