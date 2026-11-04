@@ -140,6 +140,16 @@ def extract_entities() -> dict[str, Any]:
     }
 
 
+def missing_import_targets(html_path: Path) -> list[str]:
+    """Local files named by a page's <script type="importmap"> and stylesheet links that don't exist."""
+    import re
+
+    html = html_path.read_text(encoding="utf-8")
+    refs = re.findall(r'"(\./[^"]+\.js)"', "".join(re.findall(r'<script type="importmap">(.*?)</script>', html, re.S)))
+    refs += [h for h in re.findall(r'<link[^>]+href="([^"]+)"', html) if not h.startswith(("http:", "https:", "data:"))]
+    return [r for r in refs if not (html_path.parent / r).is_file()]
+
+
 def site_page(name: str) -> dict | None:
     """The pre-generated public page for one model (models/<name>/site.py `page(model)`), checked
     with core.views.check; None when the model has no site.py."""
@@ -216,6 +226,9 @@ def build_static_site(out_dir: Path | str = "dist", models: list[str] | None = N
         if dest_27k.exists():
             shutil.rmtree(dest_27k)
         shutil.copytree(server.GAME_27K, dest_27k)
+        missing = missing_import_targets(dest_27k / "index.html")
+        if missing:  # e.g. a library folder that never got committed: fail rather than deploy a dead game
+            raise RuntimeError("27K import map points at missing files: " + ", ".join(missing))
     # 1c. Triple Play (daily Venn puzzle; puzzles prebuilt by games/triple_play/build.py) -> dist/triple/
     if server.GAME_TRIPLE.is_dir():
         shutil.copytree(server.GAME_TRIPLE, target / "triple", dirs_exist_ok=True)
