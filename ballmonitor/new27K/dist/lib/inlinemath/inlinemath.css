@@ -1,0 +1,127 @@
+/*
+ * Inline Math stylesheet. Everything is under .mv; colours are left to the page.
+ *
+ * The numbers marked "metric" must match the constants at the top of
+ * src/layout.js (line-height 1, bar 0.06em, gap 0.1em); everything else can
+ * be changed freely.
+ *
+ * Handy hooks:
+ *   .mv-n[data-node="4"]       one node (ids from MathZetta)
+ *   .mv-var .mv-num .mv-word   variables, numbers, function names
+ *   .mv-op-frac .mv-op-pow …   a kind of operation
+ *   .mv-hl                     the class highlight() adds
+ *   --mv-hl                    highlight colour
+ */
+
+.mv {
+    display: inline-block;
+    font-family: "Inline Math Roman", "Latin Modern Roman", "STIX Two Text", "Cambria", "Times New Roman", serif;
+    font-size: 1.2em;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;            /* metric */
+    white-space: nowrap;
+    text-indent: 0;
+    text-align: left;
+    letter-spacing: 0;
+}
+.mv-display { display: block; text-align: center; margin: 0.6em 0; }
+.mv span, .mv svg { line-height: 1; }
+.mv-n { display: inline-block; border-radius: 0.12em; }
+
+/* ---- letters and signs -------------------------------------------------- */
+.mv-var { font-style: italic; padding-right: 0.03em; }
+.mv-num, .mv-word, .mv-name, .mv-ord, .mv-text, .mv-d { font-style: normal; }
+.mv-prime { margin-left: 0.04em; }
+.mv-bin { margin: 0 0.22em; }
+.mv-rel { margin: 0 0.28em; }
+.mv-punct { margin-right: 0.17em; }
+.mv-sign { margin-right: 0.04em; }
+.mv-times { display: inline-block; width: 0.06em; }
+.mv-callgap { display: inline-block; width: 0.05em; }
+.mv-fnspace { display: inline-block; width: 0.17em; }
+.mv-space { display: inline-block; width: 0.33em; }
+.mv-dx { display: inline-block; margin-left: 0.17em; }
+.mv-text { margin: 0 0.25em; }
+/* Tighter spacing in limits and exponents: n=1, x→0. */
+.mv-script .mv-rel, .mv-sup .mv-rel, .mv-sub .mv-rel { margin: 0 0.12em; }
+.mv-script .mv-bin, .mv-sup .mv-bin, .mv-sub .mv-bin { margin: 0 0.1em; }
+
+/* ---- fractions (metric: padding and border) ------------------------------ */
+.mv-frac { display: inline-flex; flex-direction: column; align-items: stretch; margin: 0 0.12em; }
+.mv-numer, .mv-denom { display: block; text-align: center; padding: 0 0.1em; }
+.mv-numer { padding-bottom: 0.1em; }
+.mv-denom { padding-top: 0.1em; border-top: 0.06em solid currentColor; }
+.mv-frac-nobar > .mv-denom { border-top: 0; }
+.mv-scaled { display: inline-block; }
+
+/* ---- scripts ----------------------------------------------------------------- */
+.mv-sup, .mv-sub { display: inline-block; margin-left: 0.04em; }
+.mv-subsup, .mv-limits { display: inline-flex; flex-direction: column; justify-content: space-between; align-items: flex-start; margin-left: 0.04em; }
+.mv-limits { margin-left: 0.02em; margin-right: 0.12em; }
+.mv-limits > .mv-lower { margin-left: -0.3em; }
+.mv-script { display: block; }
+.mv-under { display: inline-flex; flex-direction: column; align-items: center; margin-right: 0.15em; }
+.mv-under > .mv-script { margin-top: 0.05em; }
+.mv-bigop { display: inline-flex; flex-direction: column; align-items: center; margin: 0 0.12em; }
+.mv-bigop > .mv-script { display: block; margin: 0.08em 0; }
+.mv-bigop > svg { display: block; }
+
+/* ---- radicals (metric: border and padding-top) ----------------------------- */
+.mv-sqrt { display: inline-block; white-space: nowrap; }
+.mv-hook { display: inline-block; overflow: visible; margin-left: 0.05em; }
+.mv-radicand { display: inline-block; border-top: 0.06em solid currentColor; padding: 0.1em 0.1em 0 0.06em; }
+.mv-rootindex { display: inline-block; margin: 0 -0.32em 0 0.12em; }
+
+/* ---- delimiters: drawn at the full height of what they enclose -------------- */
+.mv-fence { display: inline-block; position: relative; }
+.mv-delim { position: absolute; top: 0; bottom: 0; height: 100%; }
+.mv-delim-l { left: 0.03em; }
+.mv-delim-r { right: 0.03em; }
+span.mv-delim { width: 0.16em; border: 0 solid currentColor; box-sizing: border-box; }
+.mv-delim.mv-lbrack { border-width: 0.06em 0 0.06em 0.06em; left: 0.06em; }
+.mv-delim.mv-rbrack { border-width: 0.06em 0.06em 0.06em 0; right: 0.06em; }
+.mv-delim.mv-vert { border-left-width: 0.06em; width: 0; left: 0.07em; }
+.mv-delim.mv-vert.mv-delim-r { left: auto; right: 0.07em; }
+.mv-delim.mv-lfloor { border-width: 0 0 0.06em 0.06em; }
+.mv-delim.mv-rfloor { border-width: 0 0.06em 0.06em 0; }
+.mv-delim.mv-lceil { border-width: 0.06em 0 0 0.06em; }
+.mv-delim.mv-rceil { border-width: 0.06em 0.06em 0 0; }
+
+/* ---- shapes ----------------------------------------------------------------- */
+.mv svg { overflow: visible; }
+.mv svg path[stroke] { stroke-width: 0.065em; stroke-linecap: round; stroke-linejoin: round; }
+.mv-intsign path[stroke] { stroke-width: 0.075em; }
+.mv-bigsign { display: inline-block; margin: 0 0.06em; }
+.mv-intsign { margin-right: 0.12em; }
+
+/* ---- piecewise ------------------------------------------------------------- */
+.mv-cases { display: inline-grid; grid-template-columns: auto auto; column-gap: 1em; row-gap: 0.25em; align-items: baseline; text-align: left; margin: 0 0.1em; }
+.mv-case-value, .mv-case-cond { display: block; }
+
+/* ---- decorations: \boxed \cancel \overline \vec … --------------------------- */
+.mv-boxed { display: inline-block; border: 0.06em solid currentColor; padding: 0.16em 0.2em; }
+.mv-over { display: inline-block; border-top: 0.06em solid currentColor; padding-top: 0.08em; }
+.mv-underline { display: inline-block; border-bottom: 0.06em solid currentColor; padding-bottom: 0.06em; }
+.mv-cancel { display: inline-block; background: linear-gradient(to top right, transparent calc(50% - 0.04em), currentColor calc(50% - 0.03em), currentColor calc(50% + 0.03em), transparent calc(50% + 0.04em)); }
+.mv-accent { display: inline-block; position: relative; padding-top: 0.3em; }
+.mv-accent-mark { position: absolute; top: 0; left: 0; right: 0; text-align: center; font-size: 0.7em; line-height: 0.6; }
+
+/* ---- interaction -------------------------------------------------------------- */
+.mv-hl { background: var(--mv-hl, rgba(255, 200, 0, 0.35)); box-shadow: 0 0 0 0.08em var(--mv-hl, rgba(255, 200, 0, 0.35)); }
+.mv-clickable .mv-n { cursor: pointer; }
+.mv-clickable .mv-n:hover { outline: 1px dashed rgba(0, 0, 0, 0.25); }
+
+/* ---- steps (stepsHTML from '@mathzetta/inlinemath/cas') ---------------------------------------- */
+.mv-steps { margin: 0; padding-left: 1.6em; }
+.mv-step { margin: 0.5em 0 0.9em; }
+.mv-step-name { display: block; font-size: 0.85em; font-weight: 600; color: #555; }
+.mv-step-maths { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4em 0.8em; margin: 0.15em 0; }
+.mv-step-arrow { color: #888; }
+.mv-step-why { margin: 0.1em 0 0; font-size: 0.9em; color: #444; }
+
+/* ---- Markdown with maths (markdownToHTML from '@mathzetta/inlinemath/markdown') ------------------- */
+.mv-md-math { display: inline-block; vertical-align: middle; }
+.mv-md-display { display: block; text-align: center; margin: 0.6em 0; overflow-x: auto; }
+.mv-md-block { margin: 0.8em 0; }
+.mv-md-error code { background: rgba(200, 60, 0, 0.08); color: #a33; border-bottom: 1px dotted #a33; }

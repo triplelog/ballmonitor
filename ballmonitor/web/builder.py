@@ -212,7 +212,10 @@ def build_static_site(out_dir: Path | str = "dist", models: list[str] | None = N
 
     # 1b. 27K pitching game (its own static build) -> dist/27k/
     if server.GAME_27K.is_dir():
-        shutil.copytree(server.GAME_27K, target / "27k", dirs_exist_ok=True)
+        dest_27k = target / "27k"
+        if dest_27k.exists():
+            shutil.rmtree(dest_27k)
+        shutil.copytree(server.GAME_27K, dest_27k)
     # 1c. Triple Play (daily Venn puzzle; puzzles prebuilt by games/triple_play/build.py) -> dist/triple/
     if server.GAME_TRIPLE.is_dir():
         shutil.copytree(server.GAME_TRIPLE, target / "triple", dirs_exist_ok=True)

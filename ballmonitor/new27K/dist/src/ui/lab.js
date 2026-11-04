@@ -5,7 +5,7 @@
 
 import { parse } from 'mathzetta';
 import { evaluate } from 'mathzetta/evaluate';
-import { toHTML, HTML_STYLES } from 'mathzetta/html';
+import { toHTML } from '@mathzetta/inlinemath';
 import { toSpeech } from 'mathzetta/speech';
 import {
     FORMULAS, FORMULA_BY_ID, VARIABLES, VARIABLE_NAMES, SAMPLE_SCOPE, PRESETS,
@@ -28,7 +28,6 @@ const lab = {
 };
 
 export function renderLab(app) {
-    ensureMathStyles();
     const F = app.F;
     let simRun = null;
 
@@ -642,13 +641,6 @@ export function renderLab(app) {
     };
 }
 
-function ensureMathStyles() {
-    if (document.getElementById('mz-styles')) return;
-    const style = document.createElement('style');
-    style.id = 'mz-styles';
-    style.textContent = HTML_STYLES;
-    document.head.appendChild(style);
-}
 
 function niceNum(v) {
     if (Math.abs(v) >= 100) return v.toFixed(0);

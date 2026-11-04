@@ -8,7 +8,8 @@
     "sim": "node test/sim.js",
     "build": "node tools/build-static.js"
   },
-  "devDependencies": {
-    "mathzetta": "file:../../mathzetta"
+  "dependencies": {
+    "mathzetta": "1.0.0",
+    "@mathzetta/inlinemath": "0.1.0"
   }
 }

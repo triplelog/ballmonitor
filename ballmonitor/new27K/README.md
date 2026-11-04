@@ -15,7 +15,7 @@ npm run build      # static copy of the game in dist/ (see Static hosting)
 
 ### Static hosting
 
-With Multiplayer switched off, the game needs no server: everything runs in the browser and saves to localStorage and IndexedDB. `npm run build` (after `npm install`; `tools/build-static.js`) writes `dist/`: the page, styles and sources, plus only the MathZetta files the game loads (it follows the imports from the import map's entry points, about 23 files and 180 KB, into `lib/mathzetta/`) with the import map pointed there. Upload `dist/` as-is to any static host (GitHub Pages, Netlify, Cloudflare Pages, a plain web server), at the root of a domain or in a subfolder; the addresses are relative. It has to be served over http(s), not opened as a file. Saves belong to the address, so games from `localhost:8027` don't carry over. Multiplayer, when it returns, needs `tools/serve.js` (or the Dockerfile).
+With Multiplayer switched off, the game needs no server: everything runs in the browser and saves to localStorage and IndexedDB. `npm run build` (after `npm install`; `tools/build-static.js`) writes `dist/`: the page, styles and sources, plus the published browser builds of MathZetta and InlineMath (`mathzetta@1.0.0` and `@mathzetta/inlinemath@0.1.0`, pinned exactly in `package.json`) copied from `node_modules` into `lib/` (about 420 KB), with the import map pointed there. Nothing loads from a CDN, so the game keeps working offline once loaded and where a CDN is blocked. Upload `dist/` as-is to any static host (GitHub Pages, Netlify, Cloudflare Pages, a plain web server), at the root of a domain or in a subfolder; the addresses are relative. It has to be served over http(s), not opened as a file. Saves belong to the address, so games from `localhost:8027` don't carry over. Multiplayer, when it returns, needs `tools/serve.js` (or the Dockerfile).
 
 No dependencies. Plain ES modules, canvas and localStorage.
 
@@ -48,7 +48,7 @@ Quick Game and Challenges & Achievements are open. Season, Career and Multiplaye
 | `src/engine/zone.js` | The wandering strike zone. |
 | `src/engine/league.js`, `data.js` | Teams, players, ratings, heat maps, pitch types. |
 | `src/ui/` | Screens (menu, setup, lineup, game) and the canvas view. |
-| `node_modules/mathzetta` | MathZetta, linked from `../../mathzetta` by `npm install` (the page maps it with an import map). |
+| `node_modules/mathzetta`, `node_modules/@mathzetta/inlinemath` | MathZetta (parse, evaluate, speech) and InlineMath (formula rendering, split out of MathZetta in 1.0), from npm. `index.html` maps them with an import map; `npm run build` copies their browser builds into `dist/lib/`. To upgrade, change both exact versions in `package.json`, `npm install`, rebuild and run `npm test`. |
 | `src/engine/tracker.js`, `achievements.js`, `challenges.js` | Your pitching stats per game/inning/at-bat, the achievements read from them, and challenge setups and goals. |
 | `src/engine/levels.js`, `season.js`, `competition.js`, `regions.js` | Levels of play; seasons (rest, stats, leaders); the stage engine and the four formats (pools, leagues, brackets, series); places and name pools. |
 | `src/engine/simStats.js` | Headless computer-vs-computer games and league stats (used by the sim and the lab). |

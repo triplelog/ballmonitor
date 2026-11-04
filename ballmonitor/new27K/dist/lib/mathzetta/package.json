@@ -1,0 +1,148 @@
+{
+  "name": "mathzetta",
+  "version": "1.0.0",
+  "description": "Parse maths written almost any way into standard postfix; add outputters for LaTeX, MathML, speech, JavaScript, Python, SQL, GLSL, text, and exact or numeric evaluation.",
+  "author": {
+    "name": "Robert Wilcox",
+    "email": "rwilcox@mathzetta.com",
+    "url": "https://mathzetta.com"
+  },
+  "homepage": "https://mathzetta.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/triplelog/mathzetta.git",
+    "directory": "packages/mathzetta"
+  },
+  "bugs": {
+    "url": "https://github.com/triplelog/mathzetta/issues",
+    "email": "rwilcox@mathzetta.com"
+  },
+  "type": "module",
+  "main": "build/mathzetta.cjs",
+  "module": "src/index.js",
+  "unpkg": "build/mathzetta.min.js",
+  "jsdelivr": "build/mathzetta.min.js",
+  "types": "src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.js",
+      "require": "./build/mathzetta.cjs"
+    },
+    "./all": {
+      "types": "./src/all.d.ts",
+      "import": "./src/all.js",
+      "require": "./build/mathzetta.cjs"
+    },
+    "./plain": {
+      "types": "./src/index.d.ts",
+      "import": "./build/mathzetta.plain.esm.min.js",
+      "require": "./build/mathzetta.plain.cjs"
+    },
+    "./latex": {
+      "types": "./src/latex.d.ts",
+      "import": "./src/latex.js",
+      "require": "./build/cjs/latex.cjs"
+    },
+    "./mathml": {
+      "types": "./src/mathml.d.ts",
+      "import": "./src/mathml.js",
+      "require": "./build/cjs/mathml.cjs"
+    },
+    "./text": {
+      "types": "./src/text.d.ts",
+      "import": "./src/text.js",
+      "require": "./build/cjs/text.cjs"
+    },
+    "./speech": {
+      "types": "./src/speech.d.ts",
+      "import": "./src/speech.js",
+      "require": "./build/cjs/speech.cjs"
+    },
+    "./javascript": {
+      "types": "./src/javascript.d.ts",
+      "import": "./src/javascript.js",
+      "require": "./build/cjs/javascript.cjs"
+    },
+    "./python": {
+      "types": "./src/python.d.ts",
+      "import": "./src/python.js",
+      "require": "./build/cjs/python.cjs"
+    },
+    "./excel": {
+      "types": "./src/excel.d.ts",
+      "import": "./src/excel.js",
+      "require": "./build/cjs/excel.cjs"
+    },
+    "./sql": {
+      "types": "./src/sql.d.ts",
+      "import": "./src/sql.js",
+      "require": "./build/cjs/sql.cjs"
+    },
+    "./glsl": {
+      "types": "./src/glsl.d.ts",
+      "import": "./src/glsl.js",
+      "require": "./build/cjs/glsl.cjs"
+    },
+    "./evaluate": {
+      "types": "./src/evaluate.d.ts",
+      "import": "./src/evaluate.js",
+      "require": "./build/cjs/evaluate.cjs"
+    },
+    "./calculate": {
+      "types": "./src/calculate.d.ts",
+      "import": "./src/calculate.js",
+      "require": "./build/cjs/calculate.cjs"
+    },
+    "./formulas": {
+      "types": "./src/formulas.d.ts",
+      "import": "./src/formulas.js",
+      "require": "./build/cjs/formulas.cjs"
+    },
+    "./build/*": "./build/*",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "mathzetta-python": "tools/python-template.js"
+  },
+  "files": [
+    "src/",
+    "build/",
+    "docs/",
+    "examples/",
+    "tools/python-template.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node test/run.js",
+    "build": "rollup -c && node tools/cdn.js --sizes",
+    "cdn": "node tools/cdn.js",
+    "prepublishOnly": "npm test && npm run build",
+    "coverage": "node tools/test-coverage.js"
+  },
+  "keywords": [
+    "math",
+    "parser",
+    "postfix",
+    "latex",
+    "mathml",
+    "expression",
+    "speech",
+    "sql",
+    "python",
+    "glsl",
+    "cas"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "rollup": "^4.9.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

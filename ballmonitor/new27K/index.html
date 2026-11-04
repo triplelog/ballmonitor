@@ -5,16 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>27K: a pitching game</title>
     <link rel="stylesheet" href="css/style.css">
+    <link id="mz-styles" rel="stylesheet" href="node_modules/@mathzetta/inlinemath/inlinemath.css">
 </head>
 <body>
     <main id="app"></main>
     <script type="importmap">
-    { "imports": {
-        "mathzetta": "./node_modules/mathzetta/src/index.js",
-        "mathzetta/evaluate": "./node_modules/mathzetta/src/evaluate.js",
-        "mathzetta/html": "./node_modules/mathzetta/src/html.js",
-        "mathzetta/speech": "./node_modules/mathzetta/src/speech.js"
-    } }
+    {
+      "imports": {
+        "mathzetta": "./node_modules/mathzetta/build/esm/core.js",
+        "mathzetta/evaluate": "./node_modules/mathzetta/build/esm/evaluate.js",
+        "mathzetta/speech": "./node_modules/mathzetta/build/esm/speech.js",
+        "mathzetta/calculate": "./node_modules/mathzetta/build/esm/calculate.js",
+        "@mathzetta/inlinemath": "./node_modules/@mathzetta/inlinemath/dist/inlinemath.external.js"
+      }
+    }
     </script>
     <script type="module" src="src/ui/app.js"></script>
 </body>

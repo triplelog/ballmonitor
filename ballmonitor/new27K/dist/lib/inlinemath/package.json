@@ -1,0 +1,97 @@
+{
+  "name": "@mathzetta/inlinemath",
+  "version": "0.1.0",
+  "description": "Draw calculus-level maths as HTML and CSS from anything MathZetta reads, with every part addressable.",
+  "type": "module",
+  "main": "src/index.js",
+  "types": "src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    },
+    "./lite": {
+      "types": "./src/lite.d.ts",
+      "default": "./src/lite.js"
+    },
+    "./lite-calc": {
+      "types": "./src/lite-calc.d.ts",
+      "default": "./src/lite-calc.js"
+    },
+    "./cas": {
+      "types": "./src/cas.d.ts",
+      "default": "./src/cas.js"
+    },
+    "./markdown": {
+      "types": "./src/markdown.d.ts",
+      "default": "./src/markdown.js"
+    },
+    "./inlinemath.css": "./inlinemath.css",
+    "./fonts/fonts.css": "./fonts/fonts.css",
+    "./fonts/*": "./fonts/*",
+    "./dist/*": "./dist/*",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src/",
+    "dist/",
+    "fonts/",
+    "inlinemath.css",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node test/run.js",
+    "build": "node tools/build.mjs",
+    "prepublishOnly": "npm test && npm run build"
+  },
+  "peerDependencies": {
+    "@mathzetta/cas": "^0.1.0",
+    "mathzetta": "^1.0.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-terser": "^0.4.4",
+    "@mathzetta/cas": "^0.1.0",
+    "mathzetta": "^1.0.0",
+    "rollup": "^4.65.0"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "peerDependenciesMeta": {
+    "@mathzetta/cas": {
+      "optional": true
+    }
+  },
+  "homepage": "https://inlinemath.com",
+  "unpkg": "dist/inlinemath.global.min.js",
+  "jsdelivr": "dist/inlinemath.global.min.js",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "math",
+    "mathml",
+    "html",
+    "calculus",
+    "render",
+    "mathzetta",
+    "inline",
+    "markdown"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/triplelog/mathzetta.git",
+    "directory": "packages/inlinemath"
+  },
+  "author": {
+    "name": "Robert Wilcox",
+    "email": "rwilcox@mathzetta.com",
+    "url": "https://mathzetta.com"
+  },
+  "bugs": {
+    "url": "https://github.com/triplelog/mathzetta/issues",
+    "email": "rwilcox@mathzetta.com"
+  }
+}
