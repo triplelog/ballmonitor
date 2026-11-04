@@ -62,7 +62,7 @@ def _team_games(games, team: str, ratings: dict[str, float]) -> list[dict]:
 
 
 def _league(model, league: str, label: str, style: str, baseline: str, vs: str, unit: str,
-            all_ratings) -> tuple[str, list[dict], str] | None:
+            all_ratings) -> tuple[str, list[dict], str, str, str] | None:
     path = model.dir / "data" / f"games_{league}.csv"
     if not path.exists():
         return None
@@ -103,16 +103,25 @@ def _league(model, league: str, label: str, style: str, baseline: str, vs: str, 
               "Regular season only, from ESPN's scoreboards (a few games may be missing). ")
              + ("A draw counts as half a win." if soccer else ""),
         search=True, page_size=25 if len(rows) > 40 else 0)
-    return f"{label} ({season_name})", [table], season_name
+    best, worst = rows[0], rows[-1]
+    per = 1 if unit == "points" else 2
+    intro = (f"Best: {best['team']} ({best['record']}), {best['strength']:+.{per}f} {unit} a game; "
+             f"worst: {worst['team']} ({worst['record']}), {worst['strength']:+.{per}f}.")
+    # "College football" -> "college football" mid-sentence; league names keep their capitals
+    name = label[0].lower() + label[1:] if label.split()[0] in ("College", "Men's", "Women's") else label
+    answer = (f"Top of {name} ({season_name}): {best['team']}, about {best['strength']:.{per}f} {unit} "
+              f"better per game than an average team.")
+    return f"{label} ({season_name})", [table], season_name, intro, answer
 
 
 def page(model) -> dict:
     all_ratings = _ratings(model.dir / "data" / "team_ratings.csv")
-    options, seasons = [], {}
+    options, seasons, answers = [], {}, []
     for spec in LEAGUES:
         out = _league(model, *spec, all_ratings)
         if out:
-            options.append(V.option(out[0], out[1]))
+            options.append(V.option(out[0], out[1], intro=out[3]))
+            answers.append(out[4])
             seasons.setdefault(out[2], []).append(spec[1])
     by_league = V.picker(
         "by_league", "Team strength by league", "League", options,
@@ -122,6 +131,7 @@ def page(model) -> dict:
         summary="Every team in eleven leagues ranked by schedule-adjusted strength for the latest finished season.",
         sport="More sports",
         order=50,
+        headline=answers[0],
         updated="Latest finished regular seasons (" + ", ".join(seasons) + ")",
         how=("We start from each game's final margin, then adjust for how strong the opponent was and where "
              "the game was played, and pull small samples a little toward average. Comparing that with a "

@@ -125,3 +125,25 @@ td.heat.dark { color: #fff; }
 td a { color: var(--ss-ink); font-weight: 600; }
 .home-intro p { margin: 0 0 0.5rem; font-size: 1.05rem; }
 .home-intro p:last-child { margin-bottom: 0; }
+
+/* one-line answer under a page's summary, and above a picked option's views */
+.page-head .headline,
+.picked .intro {
+  margin: 0.2rem 0 0.7rem;
+  padding: 0.55rem 0.8rem;
+  background: var(--ss-panel-strong);
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.02rem;
+}
+.picked .intro { margin-top: 1rem; }
+
+/* the name column stays put when a wide table scrolls sideways */
+th.stick, td.stick {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  background: color-mix(in srgb, var(--ss-cell) 58%, white);
+  box-shadow: 1px 0 0 var(--ss-rule);
+}
+.copy-link { padding: 0.35rem 0.8rem; font-size: 0.88rem; }

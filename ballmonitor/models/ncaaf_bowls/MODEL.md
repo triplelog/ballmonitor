@@ -146,6 +146,9 @@ From `ballmonitor/models/ncaaf_bowls/`: `python cli.py team Texas`, `python cli.
 
 ## Changelog
 
+- 0.4.3 — Site page: a headline, a one-line answer on each team page, a playoff bubble watch
+  (`site_bubble_cuts`) and a projected 12-team bracket (the 12 likeliest playoff teams by
+  expected seed, favorites advancing, win chances from `win_probability`). No change to predictions.
 - 0.4.2 — The engine also tallies how far each team gets in the playoff (quarterfinal,
   semifinal, final) and its distribution of records before the bowls, incl. any conference
   title game (`TeamSummary.p_cfp_*`, `record_dist`), for the site's team pages; the site adds a page per team and per bowl. No

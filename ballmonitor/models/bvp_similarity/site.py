@@ -74,6 +74,8 @@ def page(model) -> dict:
 
     # matchups: every star hitter against every top pitcher
     similar: dict[str, list[str]] = {}
+    allowed: dict[str, list[int]] = {}  # pitcher -> hitting quality of each star hitter vs him
+    top_match = None  # (hitter, pitcher, quality): the best matchup on the page
     options = []
     for b in top_b:
         rows = []
@@ -87,7 +89,14 @@ def page(model) -> dict:
         rows.sort(key=lambda r: -r["quality"])
         b["_sort"] = _by_last_name(b["name"])
         label = f"{b['name']} ({BATS.get(b['bats'], b['bats'])})"
-        options.append(V.option(label, [V.table(
+        best, worst = rows[0], rows[-1]
+        intro = (f"Best matchup: vs {best['pitcher']} (hitting quality {best['quality']}); "
+                 f"toughest: vs {worst['pitcher']} ({worst['quality']}).")
+        for r in rows:
+            allowed.setdefault(r["pitcher"], []).append(r["quality"])
+            if top_match is None or r["quality"] > top_match[2]:
+                top_match = (b["name"], r["pitcher"], r["quality"])
+        options.append(V.option(label, intro=intro, views=[V.table(
             f"vs_{b['batter']}", f"{b['name']} against {len(top_p)} top starters",
             [V.col("pitcher", "Pitcher"), V.col("hand", "Throws"),
              V.col("quality", "Hitting quality", "int", bar=True),
@@ -126,8 +135,14 @@ def page(model) -> dict:
                   f"quality allowed in {seasons}. Hitting quality allowed: 100 is average, lower is better for "
                   "the pitcher. Similar pitchers have the closest mix of pitches, speed and results."))
 
+    toughest = min(allowed, key=lambda n: sum(allowed[n]) / len(allowed[n]))
+    headline = (f"Toughest starter for these hitters: {toughest} (average hitting quality "
+                f"{sum(allowed[toughest]) / len(allowed[toughest]):.0f} against him; 100 is average). "
+                f"Best matchup on the page: {top_match[0]} vs {top_match[1]} (hitting quality {top_match[2]}).")
+
     return V.page(
         title="Batter vs. pitcher matchups",
+        headline=headline,
         summary="How baseball's best hitters would fare against the top starting pitchers: strikeouts, walks and damage.",
         sport="Baseball",
         updated=f"{test_season} season, final (players chosen on {test_season}; ratings from {seasons} pitches)",

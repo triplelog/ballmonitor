@@ -126,3 +126,25 @@ def test_playoff_rounds_and_win_distribution_add_up():
         assert abs(sum(t.record_dist.values()) - 1) < 1e-9
         assert abs(sum(w * p for (w, _), p in t.record_dist.items()) - t.record_mean_wins) < 1e-9
         assert abs(sum(lo * p for (_, lo), p in t.record_dist.items()) - t.record_mean_losses) < 1e-9
+
+
+def test_site_bubble_field_and_bracket_agree():
+    from ballmonitor.core import registry, views
+    from ballmonitor.models.ncaaf_bowls import site
+
+    model = registry.load_model("ncaaf_bowls", overrides={"site_simulations": 200})
+    p = views.clean(site.page(model))
+    v = {x["id"]: x for x in p["views"]}
+    field = v["field"]["rows"]
+    assert [r["seed"] for r in field] == list(range(1, 13)) and len({r["team"] for r in field}) == 12
+    seed_of = {r["team"]: r["seed"] for r in field}
+    games = v["bracket"]["rows"]
+    assert [g["round"] for g in games].count("First round") == 4 and games[-1]["round"] == "Championship"
+    assert len(games) == 11 and all(0.5 <= g["p"] <= 1 for g in games)
+    # first round: 5v12, 6v11, 7v10, 8v9 at the higher seed
+    assert [g["matchup"].split(" vs ")[0].split()[1] for g in games[:4]] == ["5", "6", "7", "8"]
+    for r in v["bubble"]["rows"]:  # one projection everywhere
+        assert r["seed"] == seed_of.get(r["team"])
+    cuts = model.params.site_bubble_cuts
+    assert all(r["cfp"] >= cuts[-1] for r in v["bubble"]["rows"])
+    assert p["headline"] and "title favorite" in p["headline"]

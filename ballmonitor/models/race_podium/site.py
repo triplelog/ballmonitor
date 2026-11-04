@@ -80,6 +80,7 @@ def page(model) -> dict:
         picked.append(((race_id, dist), race, years))
 
     options, index_rows = [], []
+    sizes = []  # (usual finishers, race name) for the headline
     for (race_id, dist), race, years in picked:
         last = years[-1]
         target_year = last + 1
@@ -88,7 +89,7 @@ def page(model) -> dict:
         dist_lbl = distance_label(meters)
         open_hist = {g: _history(race["divisions"][f"{g} Open"]) for g in ("M", "F")}
 
-        rows, winners = [], {}
+        rows, winners, open_field = [], {}, {}
         divs = [d for d in race["divisions"].values() if any(e["year"] == last for e in d["editions"])]
         divs.sort(key=lambda d: (d["gender"] != "F", d["age_min"] > 0 or d["age_max"] < 90, d["age_min"]))
         for d in divs:
@@ -106,6 +107,7 @@ def page(model) -> dict:
             field = int(pred.inputs["Expected field size"])
             if is_open:
                 winners[d["gender"]] = t[0]
+                open_field[d["gender"]] = field
             rows.append({
                 "division": _division_label(d["gender"], d["age_min"], d["age_max"]),
                 "field": field,
@@ -117,7 +119,12 @@ def page(model) -> dict:
             })
 
         label = f"{name} ({dist_lbl}{', ' + race['state'] if race['state'] else ''})"
-        options.append((_sort_key(label), len(years), V.option(label, [V.table(
+        finishers = sum(open_field.values())
+        won = [f"{_GENDER[g].lower()}'s" + (" winner around " if i == 0 else " ") + format_time(winners[g])
+               for i, g in enumerate(g for g in ("M", "F") if g in winners)]
+        intro = f"Usually about {finishers:,} finishers" + (f"; {', '.join(won)}." if won else ".")
+        sizes.append((finishers, name))
+        options.append((_sort_key(label), len(years), V.option(label, intro=intro, views=[V.table(
             f"board_{race_id}_{dist}", f"{name}: {target_year} predictions",
             [V.col("division", "Age group"), V.col("field", "Usual runners", "int"),
              V.col("t1", "1st", "time"), V.col("t2", "2nd", "time"), V.col("t3", "3rd", "time"),
@@ -153,8 +160,13 @@ def page(model) -> dict:
         "by_race", "Age-group times by race", "Race", [o for _, _, o in options], default=most_years,
         subtitle="Pick a race to see the times likely to win 1st, 2nd and 3rd in every age group next time.")
 
+    biggest = max(sizes)
+    headline = (f"Award times for {len(options)} races, from small 5Ks to the {biggest[1]} "
+                f"(about {biggest[0]:,} finishers a year). Pick yours below.")
+
     return V.page(
         title="Race age-group award times",
+        headline=headline,
         summary=(f"What it will probably take to win or place in your age group at {len(options)} "
                  "local road races, based on their past results."),
         fill={"races": len(options)},

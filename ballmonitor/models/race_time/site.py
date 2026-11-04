@@ -20,6 +20,19 @@ def _to_minute(sec: float) -> float:
     return round(sec / 60) * 60
 
 
+def _clock(sec: float) -> str:
+    """5025 -> "1:23:45"; under an hour -> "25:00"."""
+    sec = int(round(sec))
+    h, m, s = sec // 3600, sec // 60 % 60, sec % 60
+    return f"{h}:{m:02d}:{s:02d}" if h else f"{m}:{s:02d}"
+
+
+def _hm(sec: float) -> str:
+    """Long-race time to the minute: 15000 -> "4:10"."""
+    m = int(round(sec / 60))
+    return f"{m // 60}:{m % 60:02d}"
+
+
 def _bench(model, gender: str, five_k_sec: float) -> dict[str, dict]:
     pred = model.predict({"target": "marathon", "gender": gender,
                           "races": [{"distance": "5k", "time": five_k_sec}]})
@@ -32,7 +45,7 @@ def page(model) -> dict:
     grid = list(range(fast, slow + 1, step))
     example = float(p.site_example_5k_sec)
 
-    options, lines = [], []
+    options, lines, answers = [], [], {}
     for g, g_name in GENDERS:
         rows, points, band = [], [], []
         for t in grid:
@@ -75,15 +88,26 @@ def page(model) -> dict:
             subtitle=(f"Runners with the same {ex} 5K don't all run the same marathon. Half land in the "
                       "middle range; 8 in 10 land between the fast and slow ends."),
             note="The ranges come from how real runners' later races compared with their 5K times.")
-        options.append(V.option(g_name, [equiv, sure]))
+        half, mara = b["Half Marathon"]["p50_sec"], _to_minute(b["Marathon"]["p50_sec"])
+        answers[g] = (half, mara)
+        intro = (f"A {ex} 5K: about {_hm(half)} for the half marathon and {_hm(mara)} for the marathon; "
+                 f"8 in 10 finish the marathon between {_hm(_to_minute(b['Marathon']['p10_sec']))} and "
+                 f"{_hm(_to_minute(b['Marathon']['p90_sec']))}.")
+        options.append(V.option(g_name, [equiv, sure], intro=intro))
 
     chart = V.line(
         "marathon_vs_5k", "Marathon time from your 5K", lines,
         x_label="5K time", y_label="Marathon time", x_fmt="time", y_fmt="time",
         subtitle="The line is the most likely marathon time; the shaded area is where 8 in 10 runners finish.")
 
+    ex = _clock(example)
+    (mh, mm), (fh, fm) = answers["M"], answers["F"]
+    headline = (f"A {ex} 5K points to about a {_hm(mh)} half marathon and a {_hm(mm)} marathon for men "
+                f"({_hm(fh)} and {_hm(fm)} for women).")
+
     return V.page(
         title="Race time calculator",
+        headline=headline,
         summary="What your 5K time says you could run for a mile, 10K, half marathon or marathon.",
         sport="Running",
         updated="Ranges checked against 2018-2025 race results",

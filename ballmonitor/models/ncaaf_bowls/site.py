@@ -31,9 +31,102 @@ def _tie_ins(bowl: dict) -> str:
     return " vs ".join(slots)
 
 
-def _team_option(s, team: dict, bowls: dict, bowl_names: dict) -> dict:
-    intro = (f"{s.team_name} ({s.conf}) is {team.get('wins', 0)}-{team.get('losses', 0)} and projected to "
-             f"go about {s.record_mean_wins:.1f}-{s.record_mean_losses:.1f} before the bowls.")
+def _pct(p: float) -> str:
+    return "under 1%" if 0 < p < 0.005 else f"{p:.0%}"
+
+
+def projected_field(summaries) -> dict[str, int]:
+    """team_id -> projected seed: the 12 likeliest playoff teams, ordered by their average seed
+    when they make it. One projection used everywhere on the page (bracket, bubble, team pages)."""
+    field = sorted(summaries, key=lambda s: -s.p_cfp)[:12]
+    avg = {s.team_id: sum(k * p for k, p in s.top_seeds.items()) / s.p_cfp if s.p_cfp > 0 else 99 for s in field}
+    return {s.team_id: i for i, s in enumerate(sorted(field, key=lambda s: avg[s.team_id]), 1)}
+
+
+def _answer(s, team: dict, bowl_names: dict, proj: dict[str, int]) -> str:
+    """The one line a fan wants first, e.g. "Georgia (6-1, SEC): 89% to make the playoff,
+    projected as the No. 6 seed; projected 10.7-2.2 before the bowls"."""
+    head = f"{s.team_name} ({team.get('wins', 0)}-{team.get('losses', 0)}, {s.conf})"
+    rec = f"{s.record_mean_wins:.1f}-{s.record_mean_losses:.1f} expected before the bowls"
+    if s.p_cfp >= 0.25:
+        where = (f", projected as the No. {proj[s.team_id]} seed" if s.team_id in proj
+                 else ", just outside the projected 12-team field")
+        return f"{head}: {_pct(s.p_cfp)} to make the playoff{where}; {rec}."
+    bowl = s.top_bowls[0] if s.top_bowls else None
+    if s.p_eligible >= 0.5 and bowl:
+        return (f"{head}: {_pct(s.p_eligible)} to be bowl eligible; most likely bowl: "
+                f"{bowl_names.get(bowl[0], bowl[1])} ({_pct(bowl[2])}); {rec}.")
+    return f"{head}: {_pct(s.p_eligible)} to reach six wins and a bowl; {rec}."
+
+
+def _bubble(summaries, cuts: list[float], teams: dict, proj: dict[str, int]) -> dict:
+    names = ["Locks", "Should be in", "On the bubble", "Work to do"]
+    rows = []
+    for s in summaries:
+        tier = next((i for i, c in enumerate(cuts) if s.p_cfp >= c), None)
+        if tier is None:
+            continue
+        t = teams.get(s.team_id, {})
+        rows.append({"tier": names[tier], "team": s.team_name, "conf": s.conf,
+                     "record": f"{t.get('wins', 0)}-{t.get('losses', 0)}", "cfp": s.p_cfp,
+                     "conf_title": s.p_conf_champ, "seed": proj.get(s.team_id), "_t": tier})
+    rows.sort(key=lambda r: (r["_t"], -r["cfp"]))
+    cut_txt = ", ".join(f"{n}: {lo:.0%}{'+' if i == 0 else f'-{cuts[i - 1]:.0%}'}" for i, (n, lo) in enumerate(zip(names, cuts)))
+    return V.table(
+        "bubble", "Playoff bubble watch",
+        [V.col("tier", "Status"), V.col("team", "Team", link="team"), V.col("conf", "Conf"), V.col("record", "Record"),
+         V.col("cfp", "Playoff", "pct", bar=True), V.col("conf_title", "Conf. title", "pct"),
+         V.col("seed", "Projected seed", "int", low_first=True)],
+        [{k: v for k, v in r.items() if k != "_t"} for r in rows],
+        subtitle="Every team with a real shot at the 12-team playoff, grouped by its chance.",
+        note=f"Playoff chance: {cut_txt}.")
+
+
+def _bracket(model, summaries, proj: dict[str, int]) -> list[dict]:
+    """The projected field (projected_field) with the favorite advancing in every game (win
+    chances from the config formula win_probability)."""
+    by_id = {s.team_id: s for s in summaries}
+    seeded = {seed: by_id[tid] for tid, seed in proj.items()}
+
+    def win(a, b, home: int) -> float:
+        return float(model.params.formula("win_probability", rating_diff=a.rating - b.rating, home=home))
+
+    def label(i: int) -> str:
+        return f"No. {i} {seeded[i].team_name}"
+
+    rows = []
+
+    def game(rnd: str, i: int, j: int, home: int, where: str) -> int:
+        p = win(seeded[i], seeded[j], home)
+        w = i if p >= 0.5 else j
+        rows.append({"round": rnd, "matchup": f"{label(i)} vs {label(j)}", "where": where,
+                     "fav": seeded[w].team_name, "p": max(p, 1 - p)})
+        return w
+
+    first = {i: game("First round", i, 17 - i, 1, f"at {seeded[i].team_name}") for i in (5, 6, 7, 8)}
+    qf = {top: game("Quarterfinal", top, first[low], 0, "bowl game") for top, low in ((1, 8), (2, 7), (3, 6), (4, 5))}
+    sf1 = game("Semifinal", qf[1], qf[4], 0, "bowl game")
+    sf2 = game("Semifinal", qf[2], qf[3], 0, "bowl game")
+    champ = game("Championship", sf1, sf2, 0, "national championship")
+
+    seeds_table = V.table(
+        "field", "Projected playoff field",
+        [V.col("seed", "Seed", "int", low_first=True), V.col("team", "Team", link="team"), V.col("conf", "Conf"),
+         V.col("cfp", "Playoff chance", "pct", bar=True), V.col("bye", "Bye chance", "pct")],
+        [{"seed": i, "team": s.team_name, "conf": s.conf, "cfp": s.p_cfp, "bye": s.p_cfp_bye} for i, s in seeded.items()],
+        subtitle="The 12 teams most likely to make it, in the order they're most likely to be seeded. Seeds 1-4 get a bye.",
+        note="The real field also needs the five highest-ranked conference champions, so it can differ.")
+    bracket = V.table(
+        "bracket", "Projected bracket",
+        [V.col("round", "Round"), V.col("matchup", "Game"), V.col("where", "Where"),
+         V.col("fav", "Favorite"), V.col("p", "Win chance", "pct", bar=True)],
+        rows, subtitle=f"If every favorite wins, {seeded[champ].team_name} takes the title.",
+        note="Win chance for one game between the two teams (first-round games at the higher seed).")
+    return [seeds_table, bracket]
+
+
+def _team_option(s, team: dict, bowls: dict, bowl_names: dict, proj: dict[str, int]) -> dict:
+    intro = _answer(s, team, bowl_names, proj)
 
     steps = [
         ("Bowl eligible (6+ wins)", s.p_eligible),
@@ -149,10 +242,22 @@ def page(model) -> dict:
         [{"label": s.team_name, "sub": s.conf, "value": s.national_champ_prob} for s in contenders[:16]],
         fmt="pct", decimals=1, subtitle="The teams with the best chance to win the College Football Playoff.")
 
+    proj = projected_field(summaries)
+    bubble = _bubble(summaries, [float(c) for c in model.params.site_bubble_cuts], teams, proj)
+    field_views = _bracket(model, summaries, proj)
+    fav = contenders[:2]
+    if len(fav) == 2 and abs(fav[0].national_champ_prob - fav[1].national_champ_prob) < 0.015:
+        headline = (f"{fav[0].team_name} and {fav[1].team_name} are the title favorites, about "
+                    f"{_pct((fav[0].national_champ_prob + fav[1].national_champ_prob) / 2)} each.")
+    else:
+        headline = f"{fav[0].team_name} is the title favorite at {_pct(fav[0].national_champ_prob)}."
+    locks = sum(1 for s in summaries if s.p_cfp >= float(model.params.site_bubble_cuts[0]))
+    headline += f" {locks} teams are {float(model.params.site_bubble_cuts[0]):.0%}+ to make the playoff."
+
     by_name = sorted(summaries, key=lambda s: s.team_name)
     team_picker = V.picker(
         "team", "Team by team", "Team",
-        [_team_option(s, teams.get(s.team_id, {}), bowls, bowl_names) for s in by_name],
+        [_team_option(s, teams.get(s.team_id, {}), bowls, bowl_names, proj) for s in by_name],
         subtitle="Every outcome for one team: playoff path, record and bowl destinations.",
         default=by_name.index(summaries[0]))
 
@@ -193,5 +298,6 @@ def page(model) -> dict:
         how=("We play out the rest of the season thousands of times using ESPN's team ratings (FPI) and "
              "the real remaining schedule, then pick the conference champions, the 12-team playoff and every "
              "bowl the way the committees do. A team's chance is how often that happened."),
-        views=[every_team, title_bars, team_picker, bowl_table, bowl_picker],
+        headline=headline,
+        views=[every_team, bubble, *field_views, title_bars, team_picker, bowl_table, bowl_picker],
     )

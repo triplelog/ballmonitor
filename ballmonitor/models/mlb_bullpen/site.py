@@ -80,7 +80,12 @@ def page(model) -> dict:
         rows.sort(key=lambda r: (-r["appear"], r["name"]))
         where = "vs" if g["is_home"] in ("1", "true", "True") else "at"
         opp = TEAMS.get(g["opponent"], g["opponent"])
-        options.append(V.option(TEAMS.get(abbr, abbr), [V.table(
+        first = max(rows, key=lambda r: r["first"])
+        closer = max(rows, key=lambda r: r["save"])
+        intro = f"Most likely first out of the pen: {first['name']} ({first['first']:.0%})."
+        if closer["save"] > 0 and closer["name"] != first["name"]:
+            intro += f" Likeliest to get a save: {closer['name']} ({closer['save']:.0%})."
+        options.append(V.option(TEAMS.get(abbr, abbr), intro=intro, views=[V.table(
             f"pen_{abbr.lower()}", f"{TEAMS.get(abbr, abbr)} bullpen",
             [V.col("name", "Reliever"), V.col("appear", "Chance he pitches", "pct", bar=True),
              V.col("first", "First out of the pen", "pct"), V.col("save", "Chance of a save", "pct"),
@@ -118,8 +123,16 @@ def page(model) -> dict:
         note=("Runs allowed count every run scored while a reliever was on the mound, earned or not "
               "(including runners left on base by the pitcher before him)."))
 
+    busiest = max(team_rows, key=lambda r: r["ip"])
+    lightest = min(team_rows, key=lambda r: r["ip"])
+    stingiest = min((r for r in team_rows if r["ip"]), key=lambda r: r["ra9"])
+    headline = (f"Busiest 2026 bullpen: {busiest['team']} ({busiest['ip']:,.0f} relief innings); lightest: "
+                f"{lightest['team']} ({lightest['ip']:,.0f}). Fewest runs allowed: {stingiest['team']} "
+                f"({stingiest['ra9']:.2f} runs per 9 innings).")
+
     last_day = max(g["game_date"] for g in games)
     return V.page(
+        headline=headline,
         title="MLB bullpens: who pitches in relief",
         summary="Every team's relievers ranked by their chance to pitch, and how hard each bullpen worked in 2026.",
         sport="Baseball",

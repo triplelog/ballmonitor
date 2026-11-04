@@ -28,13 +28,15 @@ MAX_ROWS = 2500  # per table; keeps pages light enough for a phone
 
 
 def page(title: str, summary: str, sport: str, views: list[dict], updated: str = "",
-         how: str = "", order: int = 50, fill: dict | None = None) -> dict:
+         how: str = "", order: int = 50, fill: dict | None = None, headline: str = "") -> dict:
     """`summary`: one plain sentence. `updated`: what the numbers are as of (e.g. "ESPN data
     through Oct 30, 2026"). `how`: two or three plain sentences on how the numbers are made.
     The model's site.md (edited in Claude UI) overrides title/summary/how; `fill` holds the
-    values its {placeholders} can use (e.g. {"races": 85})."""
+    values its {placeholders} can use (e.g. {"races": 85}). `headline`: the one answer a fan
+    wants first, from the numbers (e.g. "Miami (FL) and Ohio State are the title favorites, 22%
+    each"); shown in bold under the summary."""
     return {"title": title, "summary": summary, "sport": sport, "updated": updated, "how": how,
-            "order": order, "views": views, "fill": fill or {}}
+            "order": order, "views": views, "fill": fill or {}, "headline": headline}
 
 
 TEXT_KEYS = ("title", "summary", "how")
@@ -73,12 +75,14 @@ def slug(text: str) -> str:
 
 
 def col(key: str, label: str, fmt: str = "text", decimals: int | None = None, bar: bool = False,
-        align: str | None = None, heat: bool = False, link: str | None = None, low_first: bool = False) -> dict:
+        align: str | None = None, heat: bool = False, link: str | None = None, low_first: bool = False,
+        sticky: bool = False) -> dict:
     """A table column. `bar`: draw a small bar behind a pct/number cell (scaled to the column max).
     `heat`: shade the cell by its value (0 to the largest value in any heat column of the table).
     `link`: id of a picker on the same page; the cell links to the option whose slug matches the
     cell text (e.g. a team name opens that team's view). `low_first`: clicking the header sorts
-    smallest first (ranks: No. 1 at the top)."""
+    smallest first (ranks: No. 1 at the top). `sticky`: this column stays put when the table
+    scrolls sideways (default: the first linked column, else the first text column)."""
     c = {"key": key, "label": label, "fmt": fmt}
     if decimals is not None:
         c["decimals"] = decimals
@@ -90,6 +94,8 @@ def col(key: str, label: str, fmt: str = "text", decimals: int | None = None, ba
         c["link"] = link
     if low_first:
         c["low_first"] = True
+    if sticky:
+        c["sticky"] = True
     if align:
         c["align"] = align
     return c

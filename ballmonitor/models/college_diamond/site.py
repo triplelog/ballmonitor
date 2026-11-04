@@ -36,7 +36,21 @@ def _records(sport: str) -> dict[str, str]:
     return {t: f"{a}-{b}" + (f"-{c}" if c else "") for t, (a, b, c) in w.items()}
 
 
-def _sport_views(model, trend_model, sport: str) -> tuple[list[dict], dt.date]:
+def _odds_phrase(rank: int, p: float) -> str:
+    """How the champion looked on Selection eve, in plain words."""
+    if rank == 1:
+        return f"as the favorite ({p:.0%} on Selection Day eve)"
+    if p < 0.01:
+        return "as a long shot (under 1% on Selection Day eve)"
+    if rank <= 8:
+        return f"as the No. {rank} favorite ({p:.0%})"
+    return f"as a long shot ({p:.0%} on Selection Day eve)"
+
+
+def _sport_views(model, trend_model, sport: str, story: dict | None = None) -> tuple[list[dict], dt.date]:
+    """The sport's views and Selection Day; `story` (if given) is filled with the favorite, the
+    champion and its rank in title chances, and the top-rated team, for the headline/intro."""
+    story = {} if story is None else story
     sel = selection_date(sport, SEASON)
     ex = model.predict({"sport": sport, "season": SEASON, "as_of": "selection"}).extras
     info, odds = ex["team_info"], ex["teams"]
@@ -60,6 +74,8 @@ def _sport_views(model, trend_model, sport: str) -> tuple[list[dict], dt.date]:
             "result": STAGE[min(f["reached"], 5)].format(ws=ws),
         })
     rows.sort(key=lambda r: (-r["title"], -r["super"], r["team"]))
+    champ = next((i for i, r in enumerate(rows) if r["result"] == STAGE[5]), None)
+    story.update(favorite=rows[0], champ=rows[champ] if champ is not None else None, champ_rank=(champ or 0) + 1)
     tourney = V.table(
         f"{sport}_tourney", f"2026 NCAA {sport} tournament: the odds vs what happened",
         [V.col("team", "Team"), V.col("conf", "Conference"), V.col("nseed", seed_label, "int"),
@@ -110,17 +126,30 @@ def _sport_views(model, trend_model, sport: str) -> tuple[list[dict], dt.date]:
                   f"Selection Day ({_day(sel - dt.timedelta(days=1))}); "
                   + ", ".join(f"{round((d - sel).days / 7)} = {d:%b} {d.day}" for d in dates) + "."),
         note=f"Earlier dates use {int(trend_model.params.site_trend_simulations):,} simulated seasons, so small wiggles are noise.")
+    story["top_rated"] = info[order[0]]["name"]
     return [tourney, power, trend], sel
 
 
 def page(model) -> dict:
     trend_model = registry.load_model(
         "college_diamond", overrides={"simulations": int(model.params.site_trend_simulations)})
-    options, last = [], []
+    options, last, stories = [], [], {}
     for sport in ("baseball", "softball"):
-        vs, sel = _sport_views(model, trend_model, sport)
-        options.append(V.option(NAMES[sport], vs))
+        story: dict = {}
+        vs, sel = _sport_views(model, trend_model, sport, story)
+        fav = story["favorite"]
+        intro = (f"Selection Day favorite: {fav['team']} ({fav['title']:.0%}), "
+                 f"{fav['result'][0].lower() + fav['result'][1:]}. Top-rated team at season's end: {story['top_rated']}.")
+        options.append(V.option(NAMES[sport], vs, intro=intro))
+        stories[sport] = story
         last.append(max(g.day for g in D.season_games(sport, SEASON)))
+    parts = []
+    for sport, won in (("baseball", "won the 2026 College World Series"), ("softball", "in softball, {} won")):
+        st = stories[sport]
+        if st["champ"]:
+            team, phrase = st["champ"]["team"], _odds_phrase(st["champ_rank"], st["champ"]["title"])
+            parts.append(f"{won.format(team)} {phrase}" if "{}" in won else f"{team} {won} {phrase}")
+    headline = "; ".join(parts) + "." if parts else ""
     pick = V.picker("sport", "2026 NCAA baseball & softball", "Sport", options,
                     subtitle="Pick a sport: the tournament odds, the final power ratings and the title race.")
     return V.page(
@@ -132,5 +161,6 @@ def page(model) -> dict:
              "We then play out the rest of the season thousands of times: conference tournaments, a "
              "selection committee that leans on the RPI, and the NCAA bracket. A team's chance is how "
              "often it got that far."),
+        headline=headline,
         views=[pick],
     )

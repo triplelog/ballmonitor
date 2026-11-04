@@ -102,22 +102,47 @@ def _game(model, example: str) -> tuple[str, list[dict], dict]:
          V.col("swing", "Swing", "pct", bar=True), V.col("after", f"{hs} chance after", "pct"),
          V.col("score", "Score after")],
         rows, subtitle="Swing: how much one play moved the win chance, toward the team it helped.")
-    return label, [chart, swings], {**g, "biggest": plays[biggest[0]]["abs_swing"]}
+    # the winner's lowest chance during the game (a comeback when it was small)
+    won_home = winner == hs
+    chance = [pl["wp_home_after"] if won_home else 1 - pl["wp_home_after"] for pl in plays]
+    low = min(range(len(plays)), key=lambda k: (chance[k], k))
+    loser = as_ if won_home else hs
+    where = f"at {hs}" if not won_home else f"at home against {as_}"
+    top = plays[biggest[0]]
+    facts = {"winner": winner, "loser": loser, "where": where, "score": score, "ot": ot,
+             "low": chance[low], "low_when": _when(plays[low]), "low_q": plays[low]["quarter"],
+             "top_label": _label(top, (hs, as_)), "top_when": _when(top), "top_swing": top["abs_swing"]}
+    play = facts["top_label"][:1].lower() + facts["top_label"][1:]
+    intro = (f"{winner} never dropped below a {chance[low]:.0%} chance. " if chance[low] >= 0.5 else
+             f"{winner}'s chance fell as low as {chance[low]:.0%} ({_when(plays[low])}). ") \
+        + f"Biggest play: {play} ({_when(top)}), a {top['abs_swing']:.0%} swing."
+    return label, [chart, swings], {**g, "biggest": top["abs_swing"], "facts": facts, "intro": intro}
 
 
 def page(model) -> dict:
     examples = registry.example_names(model.dir.name)
     games = [(ex, *_game(model, ex)) for ex in examples]
     games.sort(key=lambda t: -t[3]["biggest"])  # most dramatic finish first
+    f = min((t[3]["facts"] for t in games), key=lambda f: f["low"])  # biggest comeback
+    quarter = {1: "first quarter", 2: "second quarter", 3: "third quarter", 4: "fourth quarter"}.get(
+        f["low_q"], "overtime")
+    if f["low"] < 0.5:
+        headline = (f"Biggest comeback: {f['winner']} won {f['where']} {f['score']}{f['ot']} after having "
+                    f"a {f['low']:.0%} chance in the {quarter}.")
+    else:  # no comeback among the bundled games: lead with the biggest swing instead
+        f = max((t[3]["facts"] for t in games), key=lambda f: f["top_swing"])
+        headline = (f"Biggest swing: {f['winner']} won {f['where']} {f['score']}{f['ot']}; one play moved "
+                    f"the chance to win by {f['top_swing']:.0%}.")
     days = sorted({_day(t[3]["date"]) for t in games})
     by_game = V.picker(
-        "by_game", "Replay a game", "Game", [V.option(t[1], t[2]) for t in games],
+        "by_game", "Replay a game", "Game", [V.option(t[1], t[2], intro=t[3]["intro"]) for t in games],
         subtitle="Pick a game to see how each play changed the home team's chance to win.")
     return V.page(
         title="College football game replays",
         summary="How each play changed the chance to win in a few finished games, from nail-biters to a blowout.",
         sport="College football",
         order=40,
+        headline=headline,
         updated=f"Finished games of {', '.join(days)}",
         how=("This is a look back, not a prediction. The line is ESPN's own win probability after every "
              "play of a finished game; we read it from ESPN's play-by-play and pick out the plays that "

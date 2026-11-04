@@ -120,17 +120,28 @@ def _year_views(model, year: int, conf_of: dict[str, str]) -> tuple[list[dict], 
         note="Each recruit counts toward the units his position plays in: a quarterback or receiver mostly "
              "toward the passing game, a running back or offensive lineman toward both, and so on.",
         search=True, page_size=25)
-    return [overall_table, sides_table], {"label": label, "status": status}
+    top = sorted(teams, key=lambda t: t.rank)
+    leaders = [t.name for t in top[:3]]
+    counts: dict[str, int] = {}
+    for t in top[:25]:
+        if conf_of.get(t.name) and conf_of[t.name] != "Independent":
+            counts[conf_of[t.name]] = counts.get(conf_of[t.name], 0) + 1
+    by_conf = sorted(counts.items(), key=lambda kv: (-kv[1], kv[0]))
+    intro = (f"No. 1: {leaders[0]}, then {leaders[1]} and {leaders[2]}. Top-25 classes: "
+             + ", ".join(f"{c} {n}" for c, n in by_conf[:4]) + ".")
+    return [overall_table, sides_table], {"label": label, "status": status, "leaders": leaders,
+                                           "in_progress": in_progress, "intro": intro}
 
 
 def page(model) -> dict:
     data = model.dir / "data"
     years = sorted(available_years(data, "ncaaf"), reverse=True)
     conf_of = conferences()
-    options, fetched = [], ""
+    options, fetched, infos = [], "", {}
     for year in years:
         group, info = _year_views(model, year, conf_of)
-        options.append(V.option(info["label"], group))
+        infos[year] = info
+        options.append(V.option(info["label"], group, intro=info["intro"]))
         if info["status"].get("status") == "in_progress" and info["status"].get("fetched"):
             fetched = fetched or info["status"]["fetched"]
 
@@ -140,6 +151,11 @@ def page(model) -> dict:
         updated = f"{newest} commitments as of {_day(fetched)}; {years[1]} and earlier classes are final"
     else:
         updated = f"Classes {years[-1]}-{newest}, final"
+
+    lead = infos[newest]["leaders"]
+    headline = (f"{lead[0]} has the No. 1 {newest} class"
+                + (" so far" if infos[newest]["in_progress"] else "")
+                + f"; {lead[1]} and {lead[2]} are next.")
 
     by_year = V.picker(
         "by_year", "Recruiting classes by year", "Class", options,
@@ -154,6 +170,7 @@ def page(model) -> dict:
         sport="College football",
         order=20,
         updated=updated,
+        headline=headline,
         how=("Coaches are the best talent scouts, so a recruit's score comes from the schools that "
              "offered him a scholarship and lost: the more offers, and the stronger those schools, the "
              "higher the score. School strength is worked out from every recruiting battle in the class "

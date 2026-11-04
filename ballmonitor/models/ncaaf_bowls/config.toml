@@ -1,6 +1,6 @@
 [meta]
 title = "NCAAF bowl & CFP projections"
-version = "0.4.2"
+version = "0.4.3"
 status = "draft"
 question = "Which bowl game or 12-team College Football Playoff seed will each FBS team earn, and what are their postseason win probabilities?"
 description = "Monte Carlo FBS season and postseason simulator for the current season: every remaining regular-season game (ESPN schedule), conference championship games, the 12-team College Football Playoff (2026 straight-seeding protocol: 5 automatic bids, 7 at-large, top 4 ranked teams get byes) and the 2026-27 conference bowl tie-ins."
@@ -44,6 +44,11 @@ value = 5000
 description = "Simulations for the public site's all-teams tables (site.py), run once at build time."
 source = "Judgement: MC s.e. at p=0.5 is 0.7% with 5000 sims; ~7 s per build."
 range = [200, 20000]
+
+[params.site_bubble_cuts]
+value = [0.9, 0.6, 0.25, 0.05]
+description = "Playoff-chance cut-offs for the site's bubble watch: Locks, Should be in, On the bubble, Work to do (below the last: not listed)."
+source = "Judgement (bracketology-style tiers)."
 
 [params.random_seed]
 value = 42

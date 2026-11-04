@@ -61,6 +61,10 @@ def _by_last_name(name: str) -> str:
     return (parts[-1] if parts else name) + " " + name
 
 
+def _last(name: str) -> str:
+    return _by_last_name(name).split(" ")[0]
+
+
 def page(model) -> dict:
     p = model.params
     data = model.dir / "data"
@@ -99,6 +103,7 @@ def page(model) -> dict:
     # model: likely next pitch in every count, for the busiest pitchers
     m = _site_model(model)
     options = []
+    busiest = []  # (name, season family shares, 0-2 probs vs R/L) for the headline
     for r in pitchers[: int(p.site_pitchers)]:
         grid = {}
         for stand in ("R", "L"):
@@ -123,7 +128,22 @@ def page(model) -> dict:
                 [V.col("count", "Count (balls-strikes)")] + [V.col(t, PLAIN[t], "pct", heat=True) for t in shown],
                 rows, subtitle="Chance of each pitch in each count, not knowing what he threw the pitch before."))
         label = f"{r['name']} ({hand.get(r['throws'], r['throws'])})"
-        options.append((_by_last_name(r["name"]), V.option(label, views)))
+        go_to, go_n = mix.most_common(1)[0]
+        two = []
+        for stand in ("R", "L"):
+            k2 = [grid[stand, b, s] for b, s in COUNTS if s == 2]
+            avg2 = {t: sum(g[t] for g in k2) / len(k2) for t in VOCAB}
+            top = max(avg2, key=avg2.get)
+            two.append((PLAIN[top].lower(), avg2[top]))
+        if two[0][0] == two[1][0]:
+            with_two = f"{two[0][0]} ({two[0][1]:.0%} vs righties, {two[1][1]:.0%} vs lefties)"
+        else:
+            with_two = f"{two[0][0]} vs righties ({two[0][1]:.0%}), {two[1][0]} vs lefties ({two[1][1]:.0%})"
+        intro = (f"{_last(r['name'])}'s go-to: {PLAIN[go_to].lower()} ({go_n / total:.0%}). "
+                 f"With two strikes: {with_two}.")
+        fam = {key: sum(mix[c] for c in codes) / total for key, _, codes in FAMILIES}
+        busiest.append((r["name"], fam, (grid["R", 0, 2], grid["L", 0, 2])))
+        options.append((_by_last_name(r["name"]), V.option(label, views, intro=intro)))
     options.sort(key=lambda o: o[0])
     picker = V.picker(
         "by_pitcher", "What will he throw next?", "Pitcher", [o for _, o in options],
@@ -132,8 +152,19 @@ def page(model) -> dict:
         note="Pitches he throws less than 2% of the time are left out, so a row can add up to a bit under 100%.",
         default=next((i for i, (_, o) in enumerate(options) if o["label"].startswith("Tarik Skubal")), 0))
 
+    heavy = max(busiest, key=lambda b: b[1]["fastball"])
+
+    def change_02(b) -> float:
+        return sum(probs[t] for probs in b[2] for t in ("CH", "FS")) / 2
+
+    change = max(busiest, key=change_02)
+    headline = (f"Most fastball-heavy of the {len(busiest)} busiest pitchers: {heavy[0]} ({heavy[1]['fastball']:.0%} "
+                f"fastballs or sinkers); most likely to throw a changeup or splitter on 0-2: "
+                f"{change[0]} ({change_02(change):.0%}).")
+
     return V.page(
         title="What pitch is coming next?",
+        headline=headline,
         summary=f"For {len(options)} MLB pitchers: the chance of a fastball, slider, changeup and more in every count.",
         fill={"pitchers": len(options)},
         sport="Baseball",

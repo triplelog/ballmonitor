@@ -150,6 +150,7 @@ async function renderModel(name, pick) {
       el("div", { class: "ss-kicker" }, page.sport),
       el("h1", { class: "ss-title" }, page.title),
       el("p", { class: "summary" }, page.summary),
+      page.headline ? el("p", { class: "headline" }, page.headline) : null,
       page.updated ? el("span", { class: "ss-chip" }, page.updated) : null),
     ...page.views.map((v) => renderView(v, cls, false)),
     page.how ? cell(`${cls} how`,
@@ -196,6 +197,9 @@ function renderTable(v) {
   const heatCols = v.columns.filter((c) => c.heat);
   const heatMax = Math.max(1e-9, ...v.rows.flatMap((r) => heatCols.map((c) => (typeof r[c.key] === "number" ? r[c.key] : 0))));
   const numeric = (c) => c.fmt !== "text";
+  // the column that stays put when the table scrolls sideways: an explicit `sticky` column, else
+  // the first linked one (team names), else the first text column
+  const stickKey = (v.columns.find((c) => c.sticky) || v.columns.find((c) => c.link) || v.columns.find((c) => !numeric(c)) || {}).key;
   const wrap = el("div", { class: "table-wrap" });
   const search = v.search ? el("input", { class: "search", type: "search", placeholder: "Search…", "aria-label": `Search ${v.title}`,
     oninput: (e) => { state.q = e.target.value.trim().toLowerCase(); draw(); } }) : null;
@@ -221,7 +225,7 @@ function renderTable(v) {
     const rs = rows();
     const shown = state.all || state.q ? rs : rs.slice(0, v.page_size);
     const head = el("tr", {}, v.columns.map((c) => el("th", {
-      class: [numeric(c) ? "num" : "", state.sort === c.key ? (state.desc ? "sorted desc" : "sorted asc") : ""].join(" ").trim() || null,
+      class: [numeric(c) ? "num" : "", c.key === stickKey ? "stick" : "", state.sort === c.key ? (state.desc ? "sorted desc" : "sorted asc") : ""].join(" ").trim() || null,
       title: "Sort",
       onclick: () => {
         if (state.sort === c.key) state.desc = !state.desc;
@@ -242,7 +246,7 @@ function renderTable(v) {
         return el("td", { class: `${align} heat${a > 42 ? " dark" : ""}`, style: `background: color-mix(in srgb, var(--ss-accent) ${a}%, transparent)` }, text);
       }
       const content = c.link && text ? el("a", { href: `#/${current.model}/${c.link}/${slugify(val)}` }, text) : text;
-      return el("td", { class: [align, text.length > 36 ? "long" : ""].join(" ").trim() || null }, content);
+      return el("td", { class: [align, text.length > 36 ? "long" : "", c.key === stickKey ? "stick" : ""].join(" ").trim() || null }, content);
     })));
     wrap.replaceChildren(el("table", {}, el("thead", {}, head), el("tbody", {}, body)));
     const hidden = rs.length - shown.length;
@@ -370,9 +374,27 @@ function renderPicker(v, cls) {
   return el("section", { class: `ss-cell ${cls} view view-picker`, id: `v-${v.id}` },
     el("div", { class: "ss-band" }, v.title),
     v.subtitle ? el("p", { class: "subtitle" }, v.subtitle) : null,
-    el("div", { class: "pick-row" }, el("label", { class: "pick" }, `${v.label}: `, select), find),
+    el("div", { class: "pick-row" }, el("label", { class: "pick" }, `${v.label}: `, select), find, copyLink(() => {
+      const o = v.options[+select.value];
+      return `${location.href.split("#")[0]}#/${current.model}/${v.id}/${o.slug || slugify(o.label)}`;
+    })),
     v.note ? el("p", { class: "note" }, v.note) : null,
     body);
+}
+
+// "Copy link": the address already names the picked option (#/<model>/<picker>/<slug>).
+function copyLink(url) {
+  const btn = el("button", { class: "ss-btn copy-link", type: "button", onclick: async () => {
+    const href = url();
+    try {
+      await navigator.clipboard.writeText(href);
+      btn.textContent = "Link copied";
+    } catch {
+      window.prompt("Copy this link:", href);
+    }
+    setTimeout(() => { btn.textContent = "Copy link"; }, 1800);
+  } }, "Copy link");
+  return btn;
 }
 
 // ── routing: #/ (home) and #/<model> ─────────────────────────────────────────

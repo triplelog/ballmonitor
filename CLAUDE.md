@@ -160,6 +160,9 @@ pytest ballmonitor/models/race_time                # one model
   `how` sections, overriding site.py; `{placeholders}` come from `page(fill=...)`) and the home page
   / sidebar `<template>`s and meta tags in `site.html`. These are registered on Claude UI's
   Content page (project "ballmonitor"); when adding a model page, add its site.md and register it.
+- Every page leads with a data-driven `headline` (`page(headline=...)`), and picker options with an
+  `intro` one-liner: the one answer a fan wants first. Tables keep their name column in place when
+  scrolled sideways (`col(sticky=True)`, default: first linked, else first text column).
 - Pickers double as sub-pages: each option has an address `#/<model>/<picker id>/<slug>` (e.g.
   `#/ncaaf_bowls/team/georgia`), and a table column with `link="<picker id>"` links its cells there.
 - Preview: `ballmonitor build-site --out /tmp/site && python3 -m http.server -d /tmp/site 8790`.

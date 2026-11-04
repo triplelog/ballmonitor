@@ -40,7 +40,7 @@ def _counter(model):
     return type(model)(cfg, model.dir)
 
 
-def _poll_table(model, contest: dict, label: str) -> dict:
+def _poll_table(model, contest: dict, label: str) -> tuple[dict, dict]:
     e = model.predict({"contest": contest["contest_id"]}).extras
     orders, cands = e["orders"], e["candidates"]
     places = int(e["n_places"])
@@ -54,6 +54,11 @@ def _poll_table(model, contest: dict, label: str) -> dict:
                      "moved": "Yes" if len({min(off, places + 1), min(h2h, places + 1),
                                             min(irv, places + 1)}) > 1 else ""})
     others = len(rows) - places
+    cap = lambda r, k: min(r[k], places + 1)  # noqa: E731
+    stats = {"top": rows[0]["team"], "h2h_top": cands[orders["schulze"][0]]["name"],
+             "irv_top": cands[orders["irv"][0]]["name"],
+             "h2h_moves": sum(1 for r in rows if cap(r, "h2h") != cap(r, "official")),
+             "irv_moves": sum(1 for r in rows if cap(r, "irv") != cap(r, "official"))}
     return V.table(
         f"poll_{contest['contest_id']}", label,
         [V.col("official", "Official rank", "int"), V.col("team", "Team"),
@@ -65,12 +70,28 @@ def _poll_table(model, contest: dict, label: str) -> dict:
                   f"25-24-...-1 points."),
         note=(f"Ranks past {places} are teams that only made the top {places} under another count. "
               if others > 0 else "") + HOW_METHODS,
-        search=True, page_size=25)
+        search=True, page_size=25), stats
+
+
+def _teams(n: int) -> str:
+    return "1 team" if n == 1 else f"{n} teams"
+
+
+def _poll_intro(st: dict) -> str:
+    """e.g. "Head-to-head moves 9 teams, instant runoff 6. No. 1 Miami (FL) stays No. 1 both ways." """
+    text = f"Head-to-head moves {_teams(st['h2h_moves'])}, instant runoff {_teams(st['irv_moves'])}."
+    keeps = [m for m, k in (("head-to-head", "h2h_top"), ("instant runoff", "irv_top")) if st[k] == st["top"]]
+    if len(keeps) == 2:
+        return text + f" No. 1 {st['top']} stays No. 1 both ways."
+    flips = [f"{st[k]} under {m}" for m, k in (("head-to-head", "h2h_top"), ("instant runoff", "irv_top"))
+             if st[k] != st["top"]]
+    return text + " No. 1 would be " + " and ".join(flips) + f", not {st['top']}."
 
 
 def _polls(model) -> tuple[dict, str]:
     d = model.dir / "data" / "ballots"
     options, newest = [], ""
+    stats: dict[str, tuple[str, dict]] = {}
     for source, sport in POLL_SOURCES:
         rows = sorted(data.contests(d, source), key=data.week_key)
         if not rows:
@@ -81,18 +102,30 @@ def _polls(model) -> tuple[dict, str]:
         newest = max(newest, rows[-1]["date"])
         for r in reversed(current):
             label = f"{sport} {season}, {_week(r)}"
-            options.append((r["date"], V.option(label, [_poll_table(model, r, f"AP Top 25: {label}")])))
+            tbl, st = _poll_table(model, r, f"AP Top 25: {label}")
+            stats[label] = (f"{sport.lower()}, {_week(r)}", st)
+            options.append((r["date"], V.option(label, [tbl], intro=_poll_intro(st))))
         if prior:
             r = prior[-1]
             label = f"{sport} {r['season']}, {_week(r)}"
-            options.append(("", V.option(label, [_poll_table(model, r, f"AP Top 25: {label}")])))
+            tbl, st = _poll_table(model, r, f"AP Top 25: {label}")
+            options.append(("", V.option(label, [tbl], intro=_poll_intro(st))))
     # newest poll of either sport first, then the rest of each sport newest first
     first = max(range(len(options)), key=lambda i: options[i][0])
     ordered = [options[first][1]] + [o for i, (_, o) in enumerate(options) if i != first]
+    lead_label = ordered[0]["label"]
+    which, lead = stats[lead_label]
+    if lead["h2h_top"] == lead["top"]:
+        headline = (f"This week's AP Top 25 ({which}): a head-to-head count "
+                    f"would move {_teams(lead['h2h_moves'])}, but not No. 1 {lead['top']}.")
+    else:
+        headline = (f"This week's AP Top 25 ({which}): a head-to-head count "
+                    f"would move {_teams(lead['h2h_moves'])} and make {lead['h2h_top']} No. 1 instead of "
+                    f"{lead['top']}.")
     return V.picker(
         "polls", "This week's AP Top 25, re-counted", "Poll", ordered,
         subtitle=("The same voters' ballots counted three ways. Most of the poll holds up; "
-                  "look for the rows marked \"Yes\".")), newest
+                  "look for the rows marked \"Yes\".")), newest, headline
 
 
 def _awards(model) -> tuple[dict, dict, str]:
@@ -131,12 +164,13 @@ def _awards(model) -> tuple[dict, dict, str]:
 
 def page(model) -> dict:
     m = _counter(model)
-    polls, newest = _polls(m)
+    polls, newest, headline = _polls(m)
     flips, every, span = _awards(m)
     return V.page(
         title="Polls and awards, re-counted",
         summary="What the AP Top 25 and the big MLB, NBA and NHL awards would look like if the same ballots were counted another way.",
         sport="Polls & awards",
+        headline=headline,
         updated=f"AP polls through {_day(newest)}; award ballots from {span}",
         how=("We take every voter's published ballot and count it three ways: the official points, "
              "head-to-head (who more voters ranked higher in each pair) and instant runoff (drop the "
