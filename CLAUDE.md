@@ -2,7 +2,7 @@
 
 A collection of **simple, open, fully-tweakable models** that predict probabilities and
 estimates for sports events (college and pro football, baseball, basketball, running races,
-awards and polls), plus the sports games on the same site. Split out of `../modelstuff` on
+awards and polls), plus the sports games on the same site. Split out of `~/Desktop/projects/modelstuff` on
 2026-10-30, which keeps the non-sports and retired models. Three promises
 drive every decision:
 
@@ -236,7 +236,7 @@ Games: `new27K/` (27K, at `/27k/`), `web/static/game.html` (Pitch Guesser) and
 Lahman database, cities & states on Monday from Wikipedia lists; puzzles prebuilt by
 `python -m ballmonitor.games.triple_play.build`; see its README).
 
-Retired and non-sports models live in `../modelstuff` (`archived_models/`: ncaab_seeding,
+Retired and non-sports models live in `~/Desktop/projects/modelstuff` (`archived_models/`: ncaab_seeding,
 race_elevation, race_time_v0, sp500, polls, …).
 
 See `ROADMAP.md` for more model ideas.

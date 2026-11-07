@@ -52,6 +52,8 @@ DEFAULT_INTERVAL = 5          # seconds; the server says requestInterval = 5
 WAIT_CHECK_EVERY = 600        # while waiting for the start, query every 10 minutes
 PAGE_EVERY = 300              # page snapshot every 5 minutes while active
 STILL_RUNNING_WINDOW = 600    # keep going past the end while updates are newer than this (s)
+STALE_WARN_AFTER = 120        # live but no new data from the watch for this long: say so (s)
+STALE_WARN_EVERY = 300        # ...and repeat the warning this often (s)
 PATH_KEYS = re.compile(r"(path|url|file|src|dir)", re.I)
 
 
@@ -278,6 +280,8 @@ class Watcher:
 
         self.log("recording")
         last_page = 0.0
+        last_upd, last_upd_seen, last_warn = 0, time.time(), 0.0
+        got_data = False
         while time.time() < hard_stop:
             tick = time.time()
             data = self.guard(self.query_once)
@@ -288,6 +292,18 @@ class Watcher:
                 last_page = tick
             trip = ((data or {}).get("data") or {}).get("sportLiveTrip") or {}
             upd = int(trip.get("updateTimestamp") or 0)
+            # COROS bumps updateTimestamp whenever the phone uploads; live but frozen = no data arriving
+            if upd != last_upd:
+                if last_upd and trip.get("status") == 1 and (not got_data or last_warn):
+                    self.log("data arriving from the watch" + (" again" if got_data else ""))
+                    got_data, last_warn = True, 0.0
+                last_upd, last_upd_seen = upd, time.time()
+            elif (trip.get("status") == 1 and time.time() - last_upd_seen > STALE_WARN_AFTER
+                  and time.time() - last_warn > STALE_WARN_EVERY):
+                mins = (time.time() - last_upd_seen) / 60
+                self.log(f"WARNING: live but no new data from the watch for {mins:.0f} min "
+                         "(is the phone connected to the watch, with the COROS app open?)")
+                last_warn = time.time()
             if time.time() >= stop_at and not (upd and time.time() - upd < STILL_RUNNING_WINDOW):
                 break
             interval = (data or {}).get("data", {}).get("requestInterval") if isinstance(data, dict) else None

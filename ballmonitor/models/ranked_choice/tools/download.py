@@ -18,7 +18,7 @@ stops at the first sign of rate limiting.
 
 Run from the project folder (the one with pyproject.toml) after activating the venv:
 
-    cd ~/Desktop/projects/ballmonitor && source .venv/bin/activate
+    cd ~/Desktop/portfolio/other/ballmonitor && source .venv/bin/activate
 
 Re-running picks up where it stopped (files already downloaded are skipped). Afterwards
 rebuild the ballot files from what you downloaded:

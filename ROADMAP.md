@@ -5,9 +5,9 @@
 - `mlb_season_sim`: Weibull run-scoring season simulator -> win totals and playoff odds
   (from the 2019 Ball Monitor season simulator; see attic/ballmonitor-2019/NOTES.md).
 - `ncaab_seeding`: NCAA tournament seed-line probabilities (a stub is archived in
-  `../modelstuff/archived_models/`).
+  `~/Desktop/projects/modelstuff/archived_models/`).
 - `race_elevation`: elevation and altitude adjustment feeding `race_time` (stub archived in
-  `../modelstuff/archived_models/`).
+  `~/Desktop/projects/modelstuff/archived_models/`).
 
 ## Ideas (simple models that fit the same pattern)
 

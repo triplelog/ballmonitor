@@ -14,3 +14,6 @@ ballmonitor/games/*/data/raw/
 ballmonitor/games/*/places/data/raw/
 .DS_Store
 ballmonitor/new27K/.git-27k-history/
+# COROS live-tracking recordings (scripts/coros_watch.py)
+trip-*.tar.gz
+coros-watch/
