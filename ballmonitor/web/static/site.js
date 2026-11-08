@@ -388,11 +388,10 @@ function copyLink(url) {
     const href = url();
     try {
       await navigator.clipboard.writeText(href);
-      btn.textContent = "Link copied";
+      window.ssToast ? ssToast("Link copied") : (btn.textContent = "Link copied");
     } catch {
       window.prompt("Copy this link:", href);
     }
-    setTimeout(() => { btn.textContent = "Copy link"; }, 1800);
   } }, "Copy link");
   return btn;
 }

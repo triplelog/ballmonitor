@@ -15,8 +15,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <script>document.documentElement.classList.add('ss-js')</script>
   <link rel="stylesheet" href="static/shioh-style.css">
   <link rel="stylesheet" href="static/site.css">
+  <script src="static/shioh.js" defer></script>
 </head>
 <body class="ss">
   <!-- Public page: shows only pre-generated numbers (data/site.json, data/views/<model>.json,
@@ -24,9 +26,10 @@
        Look: Shioh style (static/shioh-style.css); each sport owns one cell colour (site.js SPORT_CELL). -->
   <div class="ss-shell">
     <aside class="ss-sidebar">
-      <section class="ss-cell ss-p1">
+      <section class="ss-cell ss-p1 ss-navcell">
         <a class="ss-logo" href="#/">Ball Monitor</a>
-        <nav class="ss-nav" aria-label="Pages">
+        <button class="ss-btn ss-menu-btn" type="button" aria-controls="site-nav">Menu</button>
+        <nav class="ss-nav" id="site-nav" aria-label="Pages">
           <a href="#/" data-route="">All forecasts</a>
           <div id="nav-models" class="nav-models"></div>
           <hr>
@@ -35,7 +38,7 @@
           <a href="game.html">Pitch Guesser</a>
         </nav>
       </section>
-      <section class="ss-cell ss-p4 side-about">
+      <section class="ss-cell ss-p4 side-about ss-desktop-only">
         <!-- claude-ui:begin sidebar-about -->
         <p><b>Sports odds in plain numbers.</b> Every page is a table or a chart, worked out ahead of time from the latest data.</p>
         <!-- claude-ui:end sidebar-about -->

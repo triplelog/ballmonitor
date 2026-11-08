@@ -166,8 +166,8 @@ pytest ballmonitor/models/race_time                # one model
 - Pickers double as sub-pages: each option has an address `#/<model>/<picker id>/<slug>` (e.g.
   `#/ncaaf_bowls/team/georgia`), and a table column with `link="<picker id>"` links its cells there.
 - Preview: `ballmonitor build-site --out /tmp/site && python3 -m http.server -d /tmp/site 8790`.
-- Look: **Shioh style** (`static/shioh-style.css`, theme block at its top; page-specific pieces
-  in `site.css`): pastel cells on black, sidebar + main column, Montserrat/Open Sans. Each sport
+- Look: **Shioh style** (`static/shioh-style.css` is the unchanged Shioh base, update it by replacing
+  the file; theme overrides and page-specific pieces in `site.css`; phone menu/toasts in `shioh.js`): pastel cells on black, sidebar + main column, Montserrat/Open Sans. Each sport
   owns one cell colour (`SPORT_CELL` in site.js). The build also writes `robots.txt`,
   `sitemap.xml` (`SITEMAP_PATHS` in builder.py) and copies the Shioh `404.html`. The editor and
   the games keep their own styles.

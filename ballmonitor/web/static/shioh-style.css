@@ -6,8 +6,10 @@
  *   <link rel="preconnect" href="https://fonts.googleapis.com">
  *   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
  *
- * Per project: copy this file, then set the "Project theme" block below (colours, background
- * pattern, logo). Everything else reads from those variables. Defaults: plain black background
+ * Per project: copy this file UNCHANGED (it can then be updated by replacing it), and put the site's
+ * own values and rules in a second file loaded after it, e.g. site-theme.css (see
+ * site-theme.example.css): override the variables in the "Project theme" block there, add section
+ * colours, logo tweaks and page rules. Everything here reads from those variables. Defaults: plain black background
  * (until the site has its own pattern) and a Montserrat wordmark (until it has its own logo).
  */
 
@@ -21,6 +23,9 @@
 	--ss-p4: #a2d0c0; /* mint */
 	--ss-p5: #c37892; /* raspberry */
 
+	/* A page (or <body>) may set --ss-section to its section's colour; cells without their own
+	   colour class use it. */
+
 	/* Ink and accents */
 	--ss-accent: #000080; /* primary buttons and focus rings (default navy) */
 	--ss-ink: #222;
@@ -31,6 +36,9 @@
 
 	/* Surfaces inside a cell (work on every pastel) */
 	--ss-band: rgb(255 255 255 / 0.25); /* heading bands */
+	/* Subtle texture on title bands (cell titles, the logo band, section headings), layered over
+	   --ss-band. Default: soft diagonal stripes. A project may set its own (keep it faint). */
+	--ss-band-pattern: repeating-linear-gradient(135deg, rgb(255 255 255 / 0.2) 0 6px, transparent 6px 14px);
 	--ss-panel: rgb(255 255 255 / 0.4); /* rows, tiles, list items */
 	--ss-panel-strong: rgb(255 255 255 / 0.65); /* hovers, active nav */
 	--ss-rule: rgb(34 34 34 / 0.25);
@@ -44,8 +52,13 @@
 	--ss-overlay: rgb(0 0 0 / 0.5);
 
 	/* Shape and spacing */
-	--ss-radius: 12px;
-	--ss-gap: 12px;
+	--ss-radius: 0; /* cells and their title bands: square corners */
+	--ss-radius-sm: 3px; /* buttons, inputs, rows, tiles, tabs, chips/pills: only slightly rounded */
+	--ss-chip-radius: 5px; /* link chips / pills */
+	--ss-chip-border: 1px solid #000; /* thin black outline on chips */
+	--ss-gap: 20px; /* space between cells (and around the page) on wide screens */
+	--ss-gap-phone: 8px; /* space between cells on phones */
+	--ss-page-pad-phone: 4px; /* phones: cells run almost edge to edge */
 	--ss-pad-y: 1.1rem;
 	--ss-pad-x: 1.25rem;
 	--ss-sidebar: 260px;
@@ -98,6 +111,13 @@ body.ss h3 {
 	gap: var(--ss-gap);
 	position: sticky;
 	top: var(--ss-gap);
+	/* Never taller than the screen: when the sidebar's cells don't fit, the column scrolls on its
+	   own, so every part of it stays reachable while the page is scrolled anywhere. */
+	max-height: calc(100vh - 2 * var(--ss-gap));
+	max-height: calc(100dvh - 2 * var(--ss-gap));
+	overflow-y: auto;
+	overscroll-behavior: contain;
+	scrollbar-width: thin;
 }
 .ss-main {
 	display: flex;
@@ -111,24 +131,43 @@ body.ss h3 {
 	gap: var(--ss-gap);
 	align-items: start;
 }
+/* A grid of equal cards (home pages, galleries); one column on phones. */
+.ss-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+	gap: var(--ss-gap);
+	align-items: start;
+}
 .ss-solo {
 	max-width: 760px;
 	margin: 0 auto;
 	padding: 3rem var(--ss-gap) 4rem;
 }
 @media (max-width: 860px) {
+	:root {
+		--ss-gap: var(--ss-gap-phone);
+		--ss-pad-y: 0.7rem;
+		--ss-pad-x: 0.7rem;
+	}
+	/* Phones: always a single column of cells. */
 	.ss-shell,
-	.ss-pair {
+	.ss-pair,
+	.ss-cards {
 		grid-template-columns: 1fr;
+	}
+	.ss-shell {
+		padding: var(--ss-page-pad-phone);
 	}
 	.ss-sidebar {
 		position: static;
+		max-height: none;
+		overflow: visible;
 	}
 }
 
 /* ---------- Cells ---------- */
 .ss-cell {
-	background: var(--ss-cell, var(--ss-p1));
+	background: var(--ss-cell, var(--ss-section, var(--ss-p1)));
 	color: var(--ss-ink);
 	border: 1px solid var(--ss-border);
 	border-radius: var(--ss-radius);
@@ -145,7 +184,7 @@ body.ss h3 {
 .ss-band {
 	margin: calc(-1 * var(--ss-pad-y)) calc(-1 * var(--ss-pad-x)) var(--ss-pad-y);
 	padding: 0.6rem var(--ss-pad-x);
-	background: var(--ss-band);
+	background: var(--ss-band-pattern), var(--ss-band);
 	border-radius: var(--ss-radius) var(--ss-radius) 0 0;
 	text-align: center;
 	font-family: var(--ss-font-head);
@@ -169,8 +208,8 @@ body.ss h3 {
 	font-weight: 700;
 	margin: 1.4rem 0 0.6rem;
 	padding: 0.35rem 0.7rem;
-	background: var(--ss-band);
-	border-radius: 6px;
+	background: var(--ss-band-pattern), var(--ss-band);
+	border-radius: var(--ss-radius-sm);
 }
 .ss-title {
 	font-family: var(--ss-font-head);
@@ -196,7 +235,7 @@ body.ss h3 {
 	display: block;
 	margin: calc(-1 * var(--ss-pad-y)) calc(-1 * var(--ss-pad-x)) 0.5rem;
 	padding: 0.7rem;
-	background: var(--ss-band);
+	background: var(--ss-band-pattern), var(--ss-band);
 	border-radius: var(--ss-radius) var(--ss-radius) 0 0;
 	text-align: center;
 	font-family: var(--ss-font-head);
@@ -220,7 +259,7 @@ body.ss h3 {
 	align-items: center;
 	gap: 0.5rem;
 	padding: 0.4rem 0.6rem;
-	border-radius: 6px;
+	border-radius: var(--ss-radius-sm);
 	color: var(--ss-ink);
 	text-decoration: none;
 }
@@ -242,17 +281,17 @@ body.ss h3 {
 
 /* ---------- Content inside cells ---------- */
 .ss-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.5rem; }
-.ss-row { display: flex; align-items: center; gap: 0.7rem; background: var(--ss-panel); border-radius: 8px; padding: 0.55rem 0.75rem; }
+.ss-row { display: flex; align-items: center; gap: 0.7rem; background: var(--ss-panel); border-radius: var(--ss-radius-sm); padding: 0.55rem 0.75rem; }
 .ss-row:hover { background: var(--ss-panel-strong); }
 .ss-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 0.7rem; }
-.ss-stat { display: flex; flex-direction: column; background: var(--ss-panel); border: 1px solid var(--ss-rule); border-radius: 8px; padding: 0.7rem 0.9rem; }
+.ss-stat { display: flex; flex-direction: column; background: var(--ss-panel); border: 1px solid var(--ss-rule); border-radius: var(--ss-radius-sm); padding: 0.7rem 0.9rem; }
 .ss-stat b { font-size: 1.5rem; line-height: 1.1; }
 .ss-stat span { font-size: 0.8rem; color: var(--ss-muted); }
 .ss-bar { height: 6px; border-radius: 99px; background: rgb(255 255 255 / 0.5); overflow: hidden; margin-top: 4px; }
 .ss-bar > span { display: block; height: 100%; border-radius: 99px; background: var(--ss-accent); }
 .ss-muted { color: var(--ss-muted); }
-.ss-chip { display: inline-block; background: var(--ss-panel-strong); border-radius: 999px; padding: 0.1rem 0.6rem; font-size: 0.8rem; }
-.ss-cell a:not(.ss-btn):not(.ss-logo) { color: inherit; text-underline-offset: 3px; }
+.ss-chip { display: inline-block; background: var(--ss-panel-strong); border-radius: var(--ss-chip-radius); border: var(--ss-chip-border); padding: 0.1rem 0.6rem; font-size: 0.8rem; }
+:where(.ss-cell) a:where(:not(.ss-btn):not(.ss-logo)) { color: inherit; text-underline-offset: 3px; }
 .ss-link { color: var(--ss-link) !important; }
 
 /* ---------- Controls ---------- */
@@ -263,7 +302,7 @@ body.ss h3 {
 	font: inherit;
 	font-size: 0.95rem;
 	padding: 0.5rem 1rem;
-	border-radius: 6px;
+	border-radius: var(--ss-radius-sm);
 	border: 1px solid #222;
 	background: #fff;
 	color: var(--ss-ink);
@@ -275,27 +314,259 @@ body.ss h3 {
 .ss-btn-primary:hover { background: var(--ss-accent); opacity: 0.9; }
 .ss-btn:disabled { opacity: 0.5; cursor: default; }
 .ss-input,
-.ss-cell input:not([type='checkbox']):not([type='radio']):not([type='range']),
-.ss-cell select,
-.ss-cell textarea {
+:where(.ss-cell) input:where(:not([type='checkbox']):not([type='radio']):not([type='range']):not([type='color'])),
+:where(.ss-cell) select,
+:where(.ss-cell) textarea {
 	background: #fff;
 	color: var(--ss-ink);
 	border: 1px solid rgb(34 34 34 / 0.35);
-	border-radius: 6px;
+	border-radius: var(--ss-radius-sm);
 	padding: 0.5rem;
 	font: inherit;
 }
-.ss-cell textarea { font-family: var(--ss-font-mono); font-size: 0.9rem; }
-.ss-cell input:focus,
-.ss-cell select:focus,
-.ss-cell textarea:focus { outline: 2px solid var(--ss-accent); outline-offset: 1px; }
+:where(.ss-cell) textarea { font-family: var(--ss-font-mono); font-size: 0.9rem; }
+:where(.ss-cell) input:focus,
+:where(.ss-cell) select:focus,
+:where(.ss-cell) textarea:focus { outline: 2px solid var(--ss-accent); outline-offset: 1px; }
 .ss-label { display: flex; flex-direction: column; gap: 0.35rem; font-size: 0.9rem; color: var(--ss-muted); }
-.ss-notice { padding: 0.6rem 0.9rem; border-radius: 6px; margin-bottom: 1rem; }
+.ss-notice { padding: 0.6rem 0.9rem; border-radius: var(--ss-radius-sm); margin-bottom: 1rem; }
 .ss-notice.ok { background: #e7f3e8; color: #1d5c2a; }
 .ss-notice.err { background: #fbe9e7; color: #8a1c10; }
-.ss-tabs { display: flex; flex-wrap: wrap; gap: 0.25rem; padding: 0.25rem; background: rgb(255 255 255 / 0.3); border-radius: 8px; margin: 0 0 1.25rem; }
-.ss-tabs a { padding: 0.35rem 0.8rem; border-radius: 6px; color: var(--ss-ink); text-decoration: none; }
+.ss-tabs { display: flex; flex-wrap: wrap; gap: 0.25rem; padding: 0.25rem; background: rgb(255 255 255 / 0.3); border-radius: var(--ss-radius-sm); margin: 0 0 1.25rem; }
+.ss-tabs a { padding: 0.35rem 0.8rem; border-radius: var(--ss-radius-sm); color: var(--ss-ink); text-decoration: none; }
 .ss-tabs a[aria-current='page'], .ss-tabs a.active { background: rgb(255 255 255 / 0.8); font-weight: 600; }
 .ss-table { width: 100%; border-collapse: collapse; }
 .ss-table th { text-align: left; font-weight: 700; border-bottom: 2px solid var(--ss-rule); padding: 0.4rem; }
 .ss-table td { border-bottom: 1px solid var(--ss-rule); padding: 0.4rem; }
+
+/* ---------- White surface inside a cell ----------
+   For things that need a plain white background: game boards, editors, tables, previews, code.
+   Rows and tiles inside it use a faint grey instead of translucent white. */
+.ss-surface {
+	--ss-panel: rgb(0 0 0 / 0.04);
+	--ss-panel-strong: rgb(0 0 0 / 0.08);
+	background: #fff;
+	color: var(--ss-ink);
+	border: 1px solid var(--ss-border);
+	border-radius: var(--ss-radius-sm);
+	padding: 0.75rem;
+	min-width: 0;
+}
+.ss-surface-flush { padding: 0; overflow: hidden; }
+
+/* ---------- Keyboard focus ----------
+   Every interactive element shows a ring when reached by keyboard (not on mouse click). */
+:where(.ss-page, body.ss) :where(a, button, summary, select, input, textarea, [tabindex]):focus-visible {
+	outline: 2px solid var(--ss-focus, var(--ss-accent));
+	outline-offset: 2px;
+}
+
+/* ---------- Phone menu ----------
+   Mark the sidebar's logo + nav cell with .ss-navcell and add a menu button after the logo:
+     <button class="ss-btn ss-menu-btn" type="button" aria-controls="site-nav">Menu</button>
+   and give the .ss-nav id="site-nav". On phones the cell becomes a slim bar (logo + Menu) and the
+   nav opens below it, so page content stays near the top. Needs assets/shioh.js, and this in
+   <head> before the stylesheet so there is no flash of the open nav:
+     <script>document.documentElement.classList.add('ss-js')</script>
+   Without JavaScript the nav simply stays open. Other sidebar cells: add .ss-desktop-only to hide
+   them on phones (repeat what matters in a footer cell marked .ss-phone-only). */
+.ss-menu-btn,
+.ss-phone-only {
+	display: none;
+}
+.ss-logo small {
+	display: block;
+	font-family: var(--ss-font-body);
+	font-weight: 600;
+	font-size: 0.75rem;
+	letter-spacing: 0.04em;
+	color: var(--ss-muted);
+}
+@media (max-width: 860px) {
+	.ss-navcell {
+		display: grid;
+		grid-template-columns: 1fr auto;
+		align-items: center;
+		padding: 0;
+	}
+	.ss-navcell .ss-logo {
+		margin: 0;
+		padding: 0.45rem 0.8rem;
+		text-align: left;
+		background: none;
+		font-size: 1.2rem;
+	}
+	.ss-navcell .ss-logo small {
+		display: none;
+	}
+	.ss-js .ss-menu-btn {
+		display: block;
+		margin: 0 0.6rem;
+		padding: 0.3rem 0.8rem;
+		font-weight: 600;
+	}
+	.ss-navcell .ss-nav {
+		grid-column: 1 / -1;
+		padding: 0.25rem 0.5rem 0.6rem;
+		border-top: 1px solid var(--ss-rule);
+	}
+	.ss-js .ss-navcell:not(.open) .ss-nav {
+		display: none;
+	}
+	.ss-desktop-only {
+		display: none;
+	}
+	.ss-phone-only {
+		display: block;
+	}
+}
+
+/* ---------- Dialogs ----------
+   A dialog is a cell like any other: <dialog class="ss-cell ss-dialog"> with an .ss-band title,
+   the body, and an .ss-dialog-actions row (primary button last). It takes the page's section
+   colour unless given its own (ss-p1…). ssConfirm() in shioh.js builds one for you. */
+.ss-dialog {
+	width: min(92vw, 520px);
+	max-height: 85vh;
+	overflow: auto;
+	margin: auto;
+	padding: var(--ss-pad-y) var(--ss-pad-x) 1.1rem;
+	box-shadow: 0 10px 40px rgb(0 0 0 / 0.5);
+}
+.ss-dialog::backdrop {
+	background: rgb(0 0 0 / 0.55);
+}
+.ss-dialog p {
+	margin: 0 0 0.9rem;
+}
+.ss-dialog-actions {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	gap: 0.5rem;
+	margin-top: 1rem;
+}
+
+/* ---------- Toasts ----------
+   Short confirmations ("Copied", "Saved") as white chips stacked in the bottom-right corner
+   (bottom-centre on phones). They don't take focus and go away on their own. Use ssToast() from
+   shioh.js; it adds the .ss-toasts container (an aria-live region) on first use. */
+.ss-toasts {
+	position: fixed;
+	right: var(--ss-gap);
+	bottom: var(--ss-gap);
+	z-index: 1000;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	gap: 0.5rem;
+	pointer-events: none;
+}
+/* The stack is a manual popover (top layer); undo the browser's default popover box. */
+.ss-toasts[popover] {
+	inset: auto var(--ss-gap) var(--ss-gap) auto;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	background: none;
+	overflow: visible;
+	color: inherit;
+}
+.ss-toast {
+	pointer-events: auto;
+	max-width: min(90vw, 380px);
+	padding: 0.45rem 0.85rem;
+	background: #fff;
+	color: var(--ss-ink);
+	border: var(--ss-chip-border);
+	border-radius: var(--ss-chip-radius);
+	box-shadow: 0 3px 14px rgb(0 0 0 / 0.35);
+	font-size: 0.92rem;
+	line-height: 1.4;
+	animation: ss-toast-in 0.18s ease-out;
+}
+.ss-toast.ss-toast-error {
+	border-color: var(--ss-red);
+	color: var(--ss-red);
+	font-weight: 600;
+}
+.ss-toast.ss-toast-out {
+	opacity: 0;
+	transform: translateY(6px);
+	transition: opacity 0.2s, transform 0.2s;
+}
+@keyframes ss-toast-in {
+	from { opacity: 0; transform: translateY(8px); }
+}
+@media (prefers-reduced-motion: reduce) {
+	.ss-toast { animation: none; }
+	.ss-toast.ss-toast-out { transition: none; }
+}
+@media (max-width: 860px) {
+	.ss-toasts,
+	.ss-toasts[popover] {
+		left: auto;
+		top: auto;
+		right: 50%;
+		bottom: calc(12px + env(safe-area-inset-bottom, 0px));
+		transform: translateX(50%);
+		align-items: center;
+	}
+	.ss-dialog {
+		width: calc(100vw - 2 * var(--ss-page-pad-phone) - 4px);
+	}
+}
+
+/* ---------- Print ----------
+   Ink-friendly by default: no dark background, white cells with a thin rule, no sidebar, no
+   buttons. Mark extra things to drop with .ss-noprint and print-only notes with .ss-print-only.
+   Put .ss-print-colour on a cell to keep its colour when printed. */
+.ss-print-only {
+	display: none;
+}
+@media print {
+	.ss-page,
+	body.ss {
+		background: #fff !important;
+		color: #000;
+		font-size: 11pt;
+	}
+	.ss-sidebar,
+	.ss-menu-btn,
+	.ss-btn,
+	.ss-toasts,
+	.ss-noprint {
+		display: none !important;
+	}
+	.ss-print-only {
+		display: block;
+	}
+	.ss-shell {
+		display: block;
+		max-width: none;
+		padding: 0;
+	}
+	.ss-main,
+	.ss-pair,
+	.ss-cards {
+		display: block;
+	}
+	.ss-cell {
+		background: #fff;
+		border: 1px solid #999;
+		box-shadow: none;
+		margin: 0 0 12pt;
+		break-inside: avoid;
+	}
+	.ss-print-colour {
+		background: var(--ss-cell, var(--ss-section, var(--ss-p1)));
+		print-color-adjust: exact;
+		-webkit-print-color-adjust: exact;
+	}
+	.ss-band,
+	.ss-logo,
+	.ss-section {
+		background: none;
+		border-bottom: 1px solid #999;
+	}
+}

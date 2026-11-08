@@ -1,5 +1,6 @@
-/* Ball Monitor public page, on top of shioh-style.css (cells, bands, nav, controls). Only the
-   pieces Shioh doesn't cover: tables, bar and line charts, pickers, the home list. */
+/* Ball Monitor public page: the site's own theme file, loaded after shioh-style.css (which is the
+   unchanged Shioh base; update the look by replacing that file). Only the pieces Shioh doesn't
+   cover: tables, bar and line charts, pickers, the home list. */
 
 :root {
   /* chart line colours: dark enough to read on every pastel cell */
@@ -28,7 +29,7 @@
 .model-link {
   display: block;
   background: var(--ss-panel);
-  border-radius: 8px;
+  border-radius: var(--ss-radius-sm);
   padding: 0.7rem 0.9rem;
   color: var(--ss-ink) !important;
   text-decoration: none;
@@ -59,7 +60,7 @@
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   background: var(--ss-panel);
-  border-radius: 8px;
+  border-radius: var(--ss-radius-sm);
 }
 table { border-collapse: collapse; width: 100%; font-size: 0.92rem; font-variant-numeric: tabular-nums; }
 th, td { padding: 0.45rem 0.6rem; border-bottom: 1px solid var(--ss-rule); text-align: left; white-space: nowrap; }
@@ -91,7 +92,7 @@ td.heat.dark { color: #fff; }
 .more { margin-top: 0.7rem; }
 
 /* ---------- horizontal bars ---------- */
-.bars { display: grid; gap: 0.45rem; background: var(--ss-panel); border-radius: 8px; padding: 0.8rem; }
+.bars { display: grid; gap: 0.45rem; background: var(--ss-panel); border-radius: var(--ss-radius-sm); padding: 0.8rem; }
 .barrow { display: grid; grid-template-columns: minmax(110px, 220px) 1fr 64px; align-items: center; gap: 0.6rem; font-size: 0.92rem; }
 .barlabel { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .barlabel small { color: var(--ss-muted); }
@@ -100,7 +101,7 @@ td.heat.dark { color: #fff; }
 .barval { text-align: right; font-variant-numeric: tabular-nums; font-weight: 700; }
 
 /* ---------- line charts ---------- */
-.chart-wrap { background: var(--ss-panel); border-radius: 8px; padding: 0.4rem; }
+.chart-wrap { background: var(--ss-panel); border-radius: var(--ss-radius-sm); padding: 0.4rem; }
 .chart { width: 100%; height: auto; display: block; }
 .chart .grid { stroke: var(--ss-rule); }
 .chart .tick { fill: var(--ss-ink); font-size: 12px; }
@@ -112,11 +113,6 @@ td.heat.dark { color: #fff; }
 /* ---------- phones ---------- */
 @media (max-width: 860px) {
   .nav-models { display: none; }  /* the home page lists every forecast */
-  .side-about { display: none; }
-  .ss-sidebar { gap: 0; }
-  .ss-sidebar .ss-cell { padding-bottom: 0.6rem; }
-  .ss-nav { flex-direction: row; flex-wrap: wrap; gap: 0.2rem; }
-  .ss-nav hr { display: none; }
   .barrow { grid-template-columns: minmax(90px, 140px) 1fr 54px; }
   .search { width: 100%; }
 }
@@ -132,7 +128,7 @@ td a { color: var(--ss-ink); font-weight: 600; }
   margin: 0.2rem 0 0.7rem;
   padding: 0.55rem 0.8rem;
   background: var(--ss-panel-strong);
-  border-radius: 8px;
+  border-radius: var(--ss-radius-sm);
   font-weight: 700;
   font-size: 1.02rem;
 }

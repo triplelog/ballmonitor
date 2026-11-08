@@ -203,7 +203,7 @@ def build_static_site(out_dir: Path | str = "dist", models: list[str] | None = N
     # 1. Copy web assets to dist root and dist/static. The public page is index.html; the
     #    editor (index.html in the source, the live `serve` page) becomes editor.html.
     for name in ("game.html", "style.css", "app.js", "replay.js", "replay.html", "site.js", "site.css",
-                 "shioh-style.css", "404.html"):
+                 "shioh-style.css", "shioh.js", "404.html"):
         src = STATIC_DIR / name
         if src.exists():
             shutil.copy2(src, target / name)
