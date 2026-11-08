@@ -580,3 +580,7 @@ variables = ["abs_swing", "scoring", "turnover", "long_play"]
 expr = "1 + chart_reveal_k * importance + chart_large_bonus * large"
 description = "structure = chart: relative time on a card before scaling to the body and clamping to [chart_min_reveal_sec, chart_max_reveal_sec]. large is 0 or 1."
 variables = ["importance", "scoring", "large"]
+
+# Off the published site for now (2026-11-08): kept in the CLI, `serve` and the tests.
+[web]
+public = false

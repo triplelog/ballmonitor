@@ -712,3 +712,7 @@ variables = ["p_actual", "p_default", "weight"]
 expr = "weight * (p_actual - p_default)"
 description = "v0.6.0 WAD (wad_mode = strength): margin-based win strength minus the default team's win strength, scaled by game weight."
 variables = ["p_actual", "p_default", "weight"]
+
+# Off the published site for now (2026-11-08): kept in the CLI, `serve` and the tests.
+[web]
+public = false

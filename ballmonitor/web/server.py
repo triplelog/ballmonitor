@@ -59,6 +59,12 @@ def list_models() -> list[dict[str, Any]]:
     return out
 
 
+def is_public(name: str) -> bool:
+    """On the published site? config.toml [web] public = false keeps a model out of the static
+    build (no public page, not in the editor); it stays in the CLI, `serve` and the tests."""
+    return bool(registry.config_for(name).extra.get("web", {}).get("public", True))
+
+
 def web_examples(name: str) -> list[str]:
     """Examples shown on the website: all of them minus config.toml [web] hidden_examples."""
     hidden = set(registry.config_for(name).extra.get("web", {}).get("hidden_examples", []))

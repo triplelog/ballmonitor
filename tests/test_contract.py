@@ -51,13 +51,14 @@ def test_fetch_policy_is_well_formed(name):
 @pytest.mark.parametrize("name", ALL)
 def test_site_text_file_is_well_formed(name):
     from ballmonitor.core import views
-    path = registry.model_dir(name) / "site.md"
-    if not path.exists():
-        return
-    assert (registry.model_dir(name) / "site.py").exists(), "site.md needs a site.py"
-    text = views.read_text_file(path)
-    assert set(text) <= set(views.TEXT_KEYS), f"unknown sections: {set(text) - set(views.TEXT_KEYS)}"
-    assert text.get("title") and text.get("summary"), "site.md needs a title and a summary"
+    directory = registry.model_dir(name)
+    for path in [directory / "site.md", *sorted(directory.glob("site_*.md"))]:  # site_<page>.md: multi-page
+        if not path.exists():
+            continue
+        assert (directory / "site.py").exists(), f"{path.name} needs a site.py"
+        text = views.read_text_file(path)
+        assert set(text) <= set(views.TEXT_KEYS), f"{path.name}: unknown sections {set(text) - set(views.TEXT_KEYS)}"
+        assert text.get("title") and text.get("summary"), f"{path.name} needs a title and a summary"
 
 
 @pytest.mark.parametrize("name", RUNNABLE)

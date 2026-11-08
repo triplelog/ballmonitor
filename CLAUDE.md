@@ -46,7 +46,7 @@ ballmonitor/
       examples/*.toml     input sets; `default.toml` is used when none is given
       variants/*.toml     named parameter/formula tweaks
       data/backtest.csv   historical cases (optional; columns documented in MODEL.md)
-      site.py             optional: `page(model)` → the public page's pre-generated tables/charts (core/views.py)
+      site.py             optional: `page(model)` (or `pages(model)`) → the public page's pre-generated tables/charts (core/views.py)
       fetch.py            optional: `fetch(model_dir, offline)` downloads/builds data → `ballmonitor fetch <name>`
       research.py         optional: reproducible study → RESEARCH.md (generated, never hand-edited)
       test_model.py       model-specific tests
@@ -150,6 +150,14 @@ pytest ballmonitor/models/race_time                # one model
   `site.py` (`page(model)` built with `core/views.py`), written to `data/views/<name>.json` by
   `build-site`; `site.js` only displays them (search, sort, "show all", bars, line charts,
   dropdown pickers). Nothing is computed in the browser. Home index: `data/site.json`.
+- One model can feed several pages: `site.py` defines `pages(model) -> {address: page}` instead
+  of `page(model)` (e.g. `college_diamond` → `#/college_baseball` and `#/college_softball`), with
+  text in `site_<address>.md`; old addresses go in the module's `REDIRECTS` (`site.js` follows them).
+- **Which models are on the site:** `[web] public = false` in a model's config.toml keeps it off
+  the static build (no page, not in the editor; still in the CLI, `serve` and tests). Off for now
+  (2026-11-08, owner's call): the MLB models (`next_pitch`, `bvp_similarity`, `mlb_bullpen`),
+  `cfb_replay` (until there's a YouTube Shorts account), `race_podium` and `dad`. The Pitch Guesser
+  game is off too (not copied into `dist/`, no links; still at `/game` under `serve`).
 - In `dist/`, `index.html` is the public page and `editor.html` the (read-only) editor below,
   linked from each page's "How this works".
 - Page rules: plain words (no internal stat names), ≤ ~8 table columns, real committed data only
@@ -157,7 +165,8 @@ pytest ballmonitor/models/race_time                # one model
   ≤ 60 s and ≤ ~1.5 MB per page. Page-only tunables are `site_*` params in config.toml.
   `views.check` runs on every build and in tests; a failing page fails the build.
 - Page text the owner edits lives outside code: each model's `site.md` (marked `title`/`summary`/
-  `how` sections, overriding site.py; `{placeholders}` come from `page(fill=...)`) and the home page
+  `how` sections, overriding site.py; `{placeholders}` come from `page(fill=...)`; `site_<address>.md`
+  for multi-page models) and the home page
   / sidebar `<template>`s and meta tags in `site.html`. These are registered on Claude UI's
   Content page (project "ballmonitor"); when adding a model page, add its site.md and register it.
 - Every page leads with a data-driven `headline` (`page(headline=...)`), and picker options with an
@@ -189,7 +198,8 @@ pytest ballmonitor/models/race_time                # one model
   need a server restart.
 - Keep it stdlib + vanilla JS (no frameworks, no build step).
 - A model's `config.toml` may have a `[web]` table with `hidden_examples` / `hidden_params`:
-  research-only pieces that stay in the CLI, data and tests but are not shown on the site.
+  research-only pieces that stay in the CLI, data and tests but are not shown on the site, and
+  `public = false` to keep the whole model off the published site.
 - The same page also runs as a **static site** (`build-site` → `dist/`): it uses live mode only when
   `/api/models` answers, otherwise it shows the precomputed result for each example and makes every
   editor read-only. Never fake a model client-side. The build fails if any example can't be computed.
@@ -231,8 +241,8 @@ the draft values, implement `predict`, add examples, flip status to `draft`.
 | `cfb_replay` | draft | ESPN play-by-play + ESPN win probability → 60 s vertical replay: WP chart down the left, ~14 annotated plays (every score + biggest swings) revealed one by one on the right, time axis warped to fit them (variants: `chapters`, `plays_only`); rendered by web/static/replay.js; `ballmonitor export-replay` → MP4 |
 | `ranked_choice` | draft | published ranked ballots (AP Top 25 football/men's basketball since 2014, BBWAA MLB awards since 2012, NBA 2014-15–2022-23 and PHWA NHL awards since 2017-18 from PDFs the user downloads with `tools/download.py`) re-counted with 13 methods (official points, Borda, plurality, IRV, Coombs, Baldwin, Bucklin, Copeland, Schulze, ranked pairs, minimax, Kemeny); `fetch.py` adds new AP weeks daily |
 
-Games: `new27K/` (27K, at `/27k/`), `web/static/game.html` (Pitch Guesser) and
-`ballmonitor/games/triple_play/` (Triple Play daily Venn puzzle at `/triple/`: baseball Tue-Sun (Sunday = 25 cards) from the
+Games: `new27K/` (27K, at `/27k/`), `web/static/game.html` (Pitch Guesser, local only for now) and
+`ballmonitor/games/triple_play/` (Triple Play daily Venn puzzle at `/triple/`: 17 spots and 25 cards, a spare per part; baseball Tue-Sun (Sunday = 25 spots, 33 cards) from the
 Lahman database, cities & states on Monday from Wikipedia lists; puzzles prebuilt by
 `python -m ballmonitor.games.triple_play.build`; see its README).
 

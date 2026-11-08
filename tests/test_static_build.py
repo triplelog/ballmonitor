@@ -7,10 +7,11 @@ import pytest
 
 from ballmonitor.cli import main
 from ballmonitor.core import registry, views
-from ballmonitor.web import builder
+from ballmonitor.web import builder, server
 from ballmonitor.web.builder import build_static_site, extract_entities
 
-SITE_MODELS = [m for m in registry.model_names() if registry.config_for(m).status != "stub"]
+SITE_MODELS = [m for m in registry.model_names()
+               if registry.config_for(m).status != "stub" and server.is_public(m)]
 WITH_PAGES = [m for m in SITE_MODELS if (registry.model_dir(m) / "site.py").exists()]
 
 
@@ -41,7 +42,7 @@ def test_build_static_site(site):
     # The public page is index.html; the editor is editor.html
     assert "static/site.js" in (site / "index.html").read_text()
     assert "static/app.js" in (site / "editor.html").read_text()
-    assert (site / "game.html").exists()
+    assert not (site / "game.html").exists()  # Pitch Guesser is off the site for now
     for name in ("app.js", "style.css", "site.js", "site.css"):
         assert (site / "static" / name).exists()
 
@@ -64,10 +65,24 @@ def test_build_static_site(site):
 
 def test_public_pages_are_built_and_valid(site):
     index = json.loads((site / "data" / "site.json").read_text(encoding="utf-8"))
-    assert {m["name"] for m in index["models"]} == set(WITH_PAGES)
-    for m in WITH_PAGES:
-        page = json.loads((site / "data" / "views" / f"{m}.json").read_text(encoding="utf-8"))
-        assert views.check(page) == [], m
+    addresses = {m["name"] for m in index["models"]}
+    assert {json.loads((site / "data" / "views" / f"{a}.json").read_text(encoding="utf-8"))["model"]
+            for a in addresses} == set(WITH_PAGES)
+    for a in addresses:
+        page = json.loads((site / "data" / "views" / f"{a}.json").read_text(encoding="utf-8"))
+        assert views.check(page) == [], a
+    # baseball and softball are separate pages; the old shared address still leads somewhere
+    assert {"college_baseball", "college_softball"} <= addresses
+    assert index["redirects"]["college_diamond/sport/softball"] == "college_softball"
+    assert set(index["redirects"].values()) <= addresses
+
+
+def test_private_models_stay_off_the_site(site):
+    hidden = [m for m in registry.model_names() if not server.is_public(m)]
+    assert hidden, "expected some [web] public = false models"
+    for m in hidden:
+        assert not (site / "data" / "models" / f"{m}.json").exists(), m
+        assert not (site / "data" / "views" / f"{m}.json").exists(), m
 
 
 def test_static_server_serves_bundle(site):
@@ -88,7 +103,7 @@ def test_static_server_serves_bundle(site):
             content = res.read().decode("utf-8")
             assert "ballmonitor" in content
             assert 'data-tab="backtest"' not in content  # Backtest tab removed
-        for path in ("/game.html", "/data/site.json", "/static/site.js"):
+        for path in ("/triple/", "/data/site.json", "/static/site.js"):
             with urllib.request.urlopen(base_url + path) as res:
                 assert res.status == 200, path
         with urllib.request.urlopen(f"{base_url}/data/manifest.json") as res:

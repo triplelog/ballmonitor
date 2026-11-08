@@ -1,15 +1,15 @@
-<!-- Public page text for ballmonitor.com/#/college_diamond (edit in Claude UI's Content page, or here).
+<!-- Public page text for ballmonitor.com/#/college_baseball (edit in Claude UI's Content page, or here).
      Only the words between the markers are used; an empty section falls back to site.py.
      Line breaks are joined into one paragraph. -->
 
 ## Title
 <!-- claude-ui:begin title -->
-College baseball & softball: 2026 tournament odds and ratings
+College baseball: 2026 tournament odds and ratings
 <!-- claude-ui:end title -->
 
 ## Summary (one sentence, shown under the title and on the home page)
 <!-- claude-ui:begin summary -->
-How likely each team was to reach Omaha or Oklahoma City and win it all, next to what really happened.
+How likely each team was to reach Omaha and win it all, next to what really happened.
 <!-- claude-ui:end summary -->
 
 ## How this works (two or three plain sentences at the bottom of the page)

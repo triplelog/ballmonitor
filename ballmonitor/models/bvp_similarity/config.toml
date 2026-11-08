@@ -427,3 +427,7 @@ variables = ["w_ms", "y_archetype_blend", "y_microsim"]
 expr = "z * sqrt(interval_talent_sd ** 2 + per_pa_xwoba_sd ** 2 / n_pa)"
 description = "Half-width of the range for the xwOBA observed over n_pa PAs: talent uncertainty plus per-PA sampling noise, z from interval_level."
 variables = ["z", "n_pa"]
+
+# Off the published site for now (2026-11-08): kept in the CLI, `serve` and the tests.
+[web]
+public = false

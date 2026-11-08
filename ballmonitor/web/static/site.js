@@ -136,6 +136,10 @@ async function renderModel(name, pick) {
   try {
     page = await getJSON(`data/views/${name}.json`);
   } catch (e) {
+    // an old address (e.g. a page that was split in two): data/site.json maps it to the new one
+    const redirects = (await getJSON("data/site.json").catch(() => ({}))).redirects || {};
+    const to = (pick && redirects[`${name}/${pick.id}/${pick.slug}`]) || redirects[name];
+    if (to) { location.replace(`#/${to}`); return; }
     app.replaceChildren(cell("ss-p2", el("div", { class: "ss-band" }, "Page not found"),
       el("p", {}, "That forecast doesn't exist. ", el("a", { href: "#/" }, "See all forecasts"))));
     return;
@@ -156,7 +160,7 @@ async function renderModel(name, pick) {
     page.how ? cell(`${cls} how`,
       el("div", { class: "ss-band" }, "How this works"),
       el("p", {}, page.how),
-      el("p", { class: "small" }, el("a", { href: `editor.html?model=${encodeURIComponent(name)}` }, "Full method, settings and assumptions →"))) : null,
+      el("p", { class: "small" }, el("a", { href: `editor.html?model=${encodeURIComponent(page.model || name)}` }, "Full method, settings and assumptions →"))) : null,
   );
   renderNav(name);
   if (pick && current.pickers[pick.id]) current.pickers[pick.id](pick.slug, true);

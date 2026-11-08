@@ -164,3 +164,7 @@ variables = ["age_days"]
 expr = "(n + strength * parent) / (total + strength)"
 description = "Probability of a pitch type at one context level: weighted count n of that type in this context (total = all types), pulled toward the parent level's probability by `strength` pseudo-pitches."
 variables = ["n", "total", "strength", "parent"]
+
+# Off the published site for now (2026-11-08): kept in the CLI, `serve` and the tests.
+[web]
+public = false

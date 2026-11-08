@@ -289,16 +289,13 @@ def cmd_build_site(args: argparse.Namespace) -> int:
 def cmd_views(args: argparse.Namespace) -> int:
     import time
 
-    from ballmonitor.web.builder import site_page
+    from ballmonitor.web.builder import site_pages
 
     started = time.perf_counter()
-    p = site_page(args.model)
-    if p is None:
+    pages = site_pages(args.model)
+    if not pages:
         raise ValueError(f"model '{args.model}' has no site.py")
-    print(f"{p['title']}  [{p['sport']}]  built in {time.perf_counter() - started:.1f}s")
-    print(f"  {p['summary']}")
-    if p.get("updated"):
-        print(f"  updated: {p['updated']}")
+    print(f"{args.model}: {len(pages)} page(s) built in {time.perf_counter() - started:.1f}s")
 
     def show(vs, indent="  "):
         for v in vs:
@@ -309,9 +306,16 @@ def cmd_views(args: argparse.Namespace) -> int:
             print(f"{indent}- {v['kind']:<6} {v['title']}  ({size})")
             if v["kind"] == "picker":
                 show(v["options"][0]["views"], indent + "    ")
-    show(p["views"])
+
+    for address, p in pages.items():
+        print(f"#/{address}  {p['title']}  [{p['sport']}]")
+        print(f"  {p['summary']}")
+        if p.get("updated"):
+            print(f"  updated: {p['updated']}")
+        show(p["views"])
     if args.out:
-        args.out.write_text(json.dumps(p, indent=1), encoding="utf-8")
+        data = next(iter(pages.values())) if len(pages) == 1 else pages
+        args.out.write_text(json.dumps(data, indent=1), encoding="utf-8")
         print(f"wrote {args.out} ({args.out.stat().st_size // 1024} KB)")
     return 0
 

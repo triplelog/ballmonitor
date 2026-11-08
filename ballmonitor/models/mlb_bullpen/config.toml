@@ -896,3 +896,7 @@ variables = ["ra_runs", "ra_outs"]
 expr = "runs_scale * (expected_runs - expected_outs * baseline_rate)"
 description = "Bullpen runs vs a baseline: expected_runs = sum of expected outs x rating, expected_outs = their sum, baseline_rate = runs_league_rate ('vs average') or the usual-mix rating ('vs usual')."
 variables = ["expected_runs", "expected_outs", "baseline_rate"]
+
+# Off the published site for now (2026-11-08): kept in the CLI, `serve` and the tests.
+[web]
+public = false

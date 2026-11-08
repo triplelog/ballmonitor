@@ -4,13 +4,12 @@ Generates a standalone static distribution directory (default: `dist/`) containi
 - index.html: the public page (site.html + site.js/site.css), which only shows data/views/*.json
 - editor.html: the model editor (index.html + app.js), read-only on the static site
 - data/site.json + data/views/<name>.json: pre-generated tables/charts from models/<name>/site.py
-- game.html, replay assets (app.js, style.css)
+- replay assets, the editor's app.js/style.css (Pitch Guesser's game.html is off the site for now)
 - data/manifest.json (build timestamp, model registry index)
 - data/models.json (all model descriptions and metadata)
 - data/models/<name>.json (parameters, formulas, variants, examples, docs)
 - data/models/<name>/examples/<example>.json (pre-computed model outputs)
 - data/entities.json (static autocomplete dictionaries for pitchers, batters, teams, races)
-- data/game_scenarios.json (offline scenarios for the Pitch Guesser game)
 
 Runs via CLI:
     ballmonitor build-site [--out dist]
@@ -33,7 +32,7 @@ from ballmonitor.web import server
 STATIC_DIR = Path(__file__).resolve().parent / "static"
 SITE_URL = "https://ballmonitor.com"  # canonical address (robots.txt, sitemap.xml)
 # Real pages for crawlers; the forecast pages are #/<model> routes on the home page.
-SITEMAP_PATHS = ["/", "/triple/", "/27k/", "/game.html"]
+SITEMAP_PATHS = ["/", "/triple/", "/27k/"]
 
 
 def extract_entities() -> dict[str, Any]:
@@ -150,41 +149,70 @@ def missing_import_targets(html_path: Path) -> list[str]:
     return [r for r in refs if not (html_path.parent / r).is_file()]
 
 
-def site_page(name: str) -> dict | None:
-    """The pre-generated public page for one model (models/<name>/site.py `page(model)`), checked
-    with core.views.check; None when the model has no site.py."""
-    if not (registry.model_dir(name) / "site.py").exists():
-        return None
+def site_pages(name: str) -> dict[str, dict]:
+    """The pre-generated public pages of one model, {address: page}, each checked with
+    core.views.check; {} when the model has no site.py. A site.py defines `page(model)` (one page
+    at #/<model>, text from site.md) or `pages(model) -> {address: page}` (several pages, e.g. one
+    per sport; text from site_<address>.md). Every page records its `model` for the editor link."""
+    directory = registry.model_dir(name)
+    if not (directory / "site.py").exists():
+        return {}
     module = importlib.import_module(f"ballmonitor.models.{name}.site")
-    p = views.clean(module.page(registry.load_model(name)))
-    views.apply_text(p, views.read_text_file(registry.model_dir(name) / "site.md"))
-    problems = views.check(p)
-    if problems:
-        raise ValueError(f"{name}/site.py: " + "; ".join(problems[:8]))
-    return p
+    model = registry.load_model(name)
+    if hasattr(module, "pages"):
+        built = {address: (p, directory / f"site_{address}.md") for address, p in module.pages(model).items()}
+    else:
+        built = {name: (module.page(model), directory / "site.md")}
+    out = {}
+    for address, (p, text_file) in built.items():
+        p = views.clean(p)
+        views.apply_text(p, views.read_text_file(text_file))
+        problems = views.check(p)
+        if problems:
+            raise ValueError(f"{name}/site.py ({address}): " + "; ".join(problems[:8]))
+        out[address] = {**p, "model": name}
+    return out
+
+
+def site_redirects(name: str) -> dict[str, str]:
+    """Old page addresses -> new ones, from site.py REDIRECTS (e.g. after splitting a page in two)."""
+    if not (registry.model_dir(name) / "site.py").exists():
+        return {}
+    return dict(getattr(importlib.import_module(f"ballmonitor.models.{name}.site"), "REDIRECTS", {}))
+
+
+def site_page(name: str) -> dict | None:
+    """The single public page of a one-page model (None when it has no site.py)."""
+    pages = site_pages(name)
+    if len(pages) > 1:
+        raise ValueError(f"{name} has several pages ({', '.join(pages)}): use site_pages")
+    return next(iter(pages.values()), None)
 
 
 def build_views(data_dir: Path, names: list[str], log=print) -> list[str]:
-    """data/views/<name>.json for every model with a site.py, plus data/site.json (the home page
-    index). Returns failures (a model whose page can't be built must not deploy half-done)."""
+    """data/views/<address>.json for every page of every model with a site.py, plus
+    data/site.json (the home page index and old-address redirects). Returns failures (a model
+    whose page can't be built must not deploy half-done)."""
     out = data_dir / "views"
     out.mkdir(parents=True, exist_ok=True)
-    index, failures = [], []
+    index, redirects, failures = [], {}, []
     for name in names:
         started = time.perf_counter()
         try:
-            p = site_page(name)
+            pages = site_pages(name)
+            redirects.update(site_redirects(name))
         except Exception as exc:  # noqa: BLE001 - reported, then the build fails
             failures.append(f"{name}/site.py: {type(exc).__name__}: {exc}")
             continue
-        if p is None:
-            continue
-        (out / f"{name}.json").write_text(json.dumps(p, separators=(",", ":"), allow_nan=False), encoding="utf-8")
-        index.append({"name": name, **{k: p[k] for k in ("title", "summary", "sport", "updated", "order")}})
-        log(f"   views {name}: {len(p['views'])} views in {time.perf_counter() - started:.1f}s")
+        for address, p in pages.items():
+            (out / f"{address}.json").write_text(json.dumps(p, separators=(",", ":"), allow_nan=False), encoding="utf-8")
+            index.append({"name": address, **{k: p[k] for k in ("title", "summary", "sport", "updated", "order")}})
+        if pages:
+            shown = ", ".join(f"{a} ({len(p['views'])} views)" for a, p in pages.items())
+            log(f"   views {name}: {shown} in {time.perf_counter() - started:.1f}s")
     order = {s: i for i, s in enumerate(views.SPORTS)}
     index.sort(key=lambda m: (order.get(m["sport"], 99), m["order"], m["title"]))
-    (data_dir / "site.json").write_text(json.dumps({"models": index}, indent=1), encoding="utf-8")
+    (data_dir / "site.json").write_text(json.dumps({"models": index, "redirects": redirects}, indent=1), encoding="utf-8")
     return failures
 
 
@@ -202,7 +230,7 @@ def build_static_site(out_dir: Path | str = "dist", models: list[str] | None = N
 
     # 1. Copy web assets to dist root and dist/static. The public page is index.html; the
     #    editor (index.html in the source, the live `serve` page) becomes editor.html.
-    for name in ("game.html", "style.css", "app.js", "replay.js", "replay.html", "site.js", "site.css",
+    for name in ("style.css", "app.js", "replay.js", "replay.html", "site.js", "site.css",
                  "shioh-style.css", "shioh.js", "404.html"):
         src = STATIC_DIR / name
         if src.exists():
@@ -233,17 +261,16 @@ def build_static_site(out_dir: Path | str = "dist", models: list[str] | None = N
     if server.GAME_TRIPLE.is_dir():
         shutil.copytree(server.GAME_TRIPLE, target / "triple", dirs_exist_ok=True)
 
-    # 2. Copy game scenarios for Pitch Guesser
-    scenarios_src = registry.MODELS_DIR / "next_pitch" / "data" / "game_scenarios.json"
-    if scenarios_src.exists():
-        shutil.copy2(scenarios_src, data_dir / "game_scenarios.json")
+    # 2. (Pitch Guesser, game.html + data/game_scenarios.json, is off the site since 2026-11-08;
+    #    it still runs locally at /game under `ballmonitor serve`.)
 
     # 3. Export static entity autocomplete dictionaries
     entities = extract_entities()
     (data_dir / "entities.json").write_text(json.dumps(entities, indent=2), encoding="utf-8")
 
-    # 4. Filter model list (stubs have nothing to run yet)
-    available_models = [m for m in registry.model_names() if registry.config_for(m).status != "stub"]
+    # 4. Filter model list (stubs have nothing to run yet; [web] public = false stays off the site)
+    available_models = [m for m in registry.model_names()
+                        if registry.config_for(m).status != "stub" and server.is_public(m)]
     target_models = [m for m in (models or available_models) if m in available_models]
 
     # 5. Export models.json (model index list)

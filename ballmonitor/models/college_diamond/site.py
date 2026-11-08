@@ -1,5 +1,6 @@
-"""Public page: the 2026 NCAA baseball and softball tournaments (Selection-eve odds vs what
-happened), final 2026 power ratings and how title chances moved during the season.
+"""Public pages, one per sport (#/college_baseball, #/college_softball): the 2026 NCAA
+tournament (Selection-eve odds vs what happened), final 2026 power ratings and how title chances
+moved during the season. Page text: site_college_baseball.md and site_college_softball.md.
 
 Built at site-build time (`ballmonitor build-site`, `ballmonitor views college_diamond`); the
 page only displays these numbers.
@@ -21,6 +22,12 @@ WS_SHORT = {"baseball": "Omaha", "softball": "the WCWS"}
 STAGE = {1: "Lost in a regional", 2: "Lost in a super regional", 3: "Lost at {ws}",
          4: "Lost in the finals", 5: "Won the title"}
 TREND_TEAMS = 6
+PAGES = {"baseball": "college_baseball", "softball": "college_softball"}  # sport -> page address
+WS_CITY = {"baseball": "Omaha", "softball": "Oklahoma City"}
+CHAMPION = {"baseball": "won the 2026 College World Series", "softball": "won the 2026 Women's College World Series"}
+# The two sports shared one page (with a sport picker) until 2026-11-08.
+REDIRECTS = {"college_diamond": "college_baseball",
+             **{f"college_diamond/sport/{s}": a for s, a in PAGES.items()}}
 
 
 def _day(d: dt.date) -> str:
@@ -130,37 +137,34 @@ def _sport_views(model, trend_model, sport: str, story: dict | None = None) -> t
     return [tourney, power, trend], sel
 
 
-def page(model) -> dict:
+def pages(model) -> dict[str, dict]:
     trend_model = registry.load_model(
         "college_diamond", overrides={"simulations": int(model.params.site_trend_simulations)})
-    options, last, stories = [], [], {}
-    for sport in ("baseball", "softball"):
+    out = {}
+    for order, (sport, address) in enumerate(PAGES.items()):
         story: dict = {}
         vs, sel = _sport_views(model, trend_model, sport, story)
-        fav = story["favorite"]
-        intro = (f"Selection Day favorite: {fav['team']} ({fav['title']:.0%}), "
-                 f"{fav['result'][0].lower() + fav['result'][1:]}. Top-rated team at season's end: {story['top_rated']}.")
-        options.append(V.option(NAMES[sport], vs, intro=intro))
-        stories[sport] = story
-        last.append(max(g.day for g in D.season_games(sport, SEASON)))
-    parts = []
-    for sport, won in (("baseball", "won the 2026 College World Series"), ("softball", "in softball, {} won")):
-        st = stories[sport]
-        if st["champ"]:
-            team, phrase = st["champ"]["team"], _odds_phrase(st["champ_rank"], st["champ"]["title"])
-            parts.append(f"{won.format(team)} {phrase}" if "{}" in won else f"{team} {won} {phrase}")
-    headline = "; ".join(parts) + "." if parts else ""
-    pick = V.picker("sport", "2026 NCAA baseball & softball", "Sport", options,
-                    subtitle="Pick a sport: the tournament odds, the final power ratings and the title race.")
-    return V.page(
-        title="College baseball & softball: 2026 tournament odds and ratings",
-        summary="How likely each team was to reach Omaha or Oklahoma City and win it all, next to what really happened.",
-        sport="College baseball & softball",
-        updated=f"2026 season, final (games through {_day(max(last))})",
-        how=("Every Division I team gets a rating from its scores, adjusted for who it played and where. "
-             "We then play out the rest of the season thousands of times: conference tournaments, a "
-             "selection committee that leans on the RPI, and the NCAA bracket. A team's chance is how "
-             "often it got that far."),
-        headline=headline,
-        views=[pick],
-    )
+        fav, champ = story["favorite"], story["champ"]
+        parts = []
+        if champ:
+            parts.append(f"{champ['team']} {CHAMPION[sport]} {_odds_phrase(story['champ_rank'], champ['title'])}.")
+        if not champ or fav["team"] != champ["team"]:
+            parts.append(f"The Selection Day favorite, {fav['team']} ({fav['title']:.0%}), "
+                         f"{fav['result'][0].lower() + fav['result'][1:]}.")
+        parts.append(f"Top-rated team at season's end: {story['top_rated']}.")
+        last = max(g.day for g in D.season_games(sport, SEASON))
+        out[address] = V.page(
+            title=f"College {sport}: 2026 tournament odds and ratings",
+            summary=(f"How likely each team was to reach {WS_CITY[sport]} and win it all, "
+                     "next to what really happened."),
+            sport="College baseball & softball",
+            updated=f"2026 season, final (games through {_day(last)})",
+            how=("Every Division I team gets a rating from its scores, adjusted for who it played and where. "
+                 "We then play out the rest of the season thousands of times: conference tournaments, a "
+                 "selection committee that leans on the RPI, and the NCAA bracket. A team's chance is how "
+                 "often it got that far."),
+            headline=" ".join(parts),
+            order=50 + order,
+            views=vs,
+        )
+    return out
