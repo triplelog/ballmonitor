@@ -2,7 +2,7 @@
 
     python -m ballmonitor.games.triple_play.build                       # from data/raw/lahman_csv
     python -m ballmonitor.games.triple_play.build --lahman ~/Downloads/lahman_1871-2025_csv.zip
-    python -m ballmonitor.games.triple_play.build --start 2026-10-27 --end 2027-12-31
+    python -m ballmonitor.games.triple_play.build --start 2026-11-09 --end 2027-12-31
 
 --lahman accepts SABR's comma-delimited zip (sabr.org/lahman-database, download it in a
 browser) or the CRAN `Lahman_*.tar.gz` (needs `pip install rdata`); its tables are unpacked
@@ -25,7 +25,7 @@ HERE = Path(__file__).parent
 OUT = HERE / "web" / "puzzles"
 TABLES = ["People", "Batting", "Pitching", "Fielding", "Appearances", "AwardsPlayers", "AllstarFull",
           "HallOfFame", "Teams", "TeamsFranchises", "SeriesPost"]
-FIRST_DAY = dt.date(2026, 10, 27)
+FIRST_DAY = dt.date(2026, 11, 9)  # puzzle #1 (the Oct 27-Nov 8 puzzles without spares were removed)
 
 
 def unpack(src: Path) -> None:

@@ -35,8 +35,11 @@ def test_every_puzzle_has_the_right_shape():
         assert len(p["categories"]) == 3 and len({c["id"] for c in p["categories"]}) == 3
         need = generate.NEED_BIG if p["level"] == "big" else generate.NEED
         assert p["need"] == need
-        assert len(p["cards"]) == sum(need.values()) == (25 if p["level"] == "big" else 17)
-        assert Counter(c["region"] for c in p["cards"]) == Counter({k: v for k, v in need.items()})
+        assert sum(need.values()) == (25 if p["level"] == "big" else 17)
+        # one spare card per region (25 cards for 17 spots; Sunday 33 for 25)
+        spare = generate.SPARE
+        assert Counter(c["region"] for c in p["cards"]) == Counter({k: v + spare for k, v in need.items()}), p["date"]
+        assert len(p["cards"]) == sum(need.values()) + spare * len(need)
         names = [c["name"] for c in p["cards"]]
         assert len(set(names)) == len(names), p["date"]
         assert all(len(c["facts"]) == 3 for c in p["cards"])

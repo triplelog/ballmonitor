@@ -52,6 +52,7 @@ main { max-width: 1180px; margin: 0 auto; padding: 14px 18px 40px; display: grid
 .pchip.sel rect { stroke: var(--accent); stroke-width: 3; }
 .pchip.ok rect { fill: var(--ok-bg); stroke: var(--ok); stroke-width: 2.5; }
 .pchip.bad rect { fill: var(--bad-bg); stroke: var(--bad); stroke-width: 2.5; }
+.pchip.spare rect { fill: #f1f5f9; stroke: #94a3b8; stroke-dasharray: 4 3; }
 .outside-label { font-size: 13px; font-weight: 600; fill: var(--muted); }
 
 .result { grid-column: 2; grid-row: 2; max-height: calc(100vh - 40px); overflow: auto; position: sticky; top: 10px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 16px 18px; }
@@ -63,6 +64,8 @@ main { max-width: 1180px; margin: 0 auto; padding: 14px 18px 40px; display: grid
 .ans { border: 1px solid var(--border); border-radius: 8px; padding: 9px 11px; font-size: 13px; }
 .ans.ok { border-left: 5px solid var(--ok); }
 .ans.bad { border-left: 5px solid var(--bad); }
+.ans.spare { border-left: 5px solid #cbd5e1; opacity: 0.75; }
+.hint.full { flex-basis: 100%; font-weight: 600; color: var(--ok); }
 .ans .who { font-weight: 700; font-size: 14px; }
 .ans .where { color: var(--muted); margin: 2px 0 5px; }
 .ans ul { margin: 0; padding-left: 16px; color: #334155; }

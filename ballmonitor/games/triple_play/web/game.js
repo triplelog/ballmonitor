@@ -1,4 +1,6 @@
-// Triple Play: place 17 cards (25 on Sunday) in a three-circle Venn diagram. One check, one point per card.
+// Triple Play: fill 17 spots (25 on Sunday) in a three-circle Venn diagram. One check, one point per card.
+// Each part of the diagram has one spare card (25 cards for 17 spots): any card that fits
+// scores, and the leftover cards don't count.
 // Puzzles come from puzzles/<pack>/index.json + one file per month (built by
 // `python -m ballmonitor.games.triple_play.build`). Progress is kept in localStorage.
 (function () {
@@ -14,7 +16,8 @@
   const COLORS = { A: "var(--a)", B: "var(--b)", C: "var(--c)" };
   let CHIP_W = 124, CHIP_H = 28;     // 108 x 24 on the 25-card board
   const OUTSIDE_SLOT = [86, 652];
-  const total = () => Object.values(NEED).reduce((a, b) => a + b, 0);
+  const total = () => Object.values(NEED).reduce((a, b) => a + b, 0);          // spots on the board
+  const spareCount = () => state.puzzle.cards.length - total();                  // cards left over
   const SVGNS = "http://www.w3.org/2000/svg";
 
   const $ = (s) => document.querySelector(s);
@@ -116,7 +119,7 @@
       el("strong", {}, `#${p.number}`),
       el("span", {}, d.toLocaleDateString(undefined, { weekday: "long", month: "long", day: "numeric", year: "numeric" })),
       el("span", { class: `level pack-${p.pack}` }, PACKS[p.pack] || p.pack),
-      p.pack === "places" ? null : el("span", { class: "level" }, p.level === "big" ? "Big Sunday · 25 cards" : p.level[0].toUpperCase() + p.level.slice(1)),
+      p.pack === "places" ? null : el("span", { class: "level" }, p.level === "big" ? `Big Sunday · ${total()} spots` : p.level[0].toUpperCase() + p.level.slice(1)),
       p.date !== available().at(-1)?.date ? el("span", {}, "· from the archive") : null,
     ].filter(Boolean));
     drawBoard();
@@ -180,7 +183,10 @@
     const by = Object.fromEntries(REGIONS.map((r) => [r, []]));
     const cards = state.puzzle.cards;
     if (state.checked && state.showAnswers) {
-      cards.forEach((c, i) => by[c.region].push(i));
+      const right = (i) => (state.place[i] === cards[i].region ? 0 : 1);
+      cards.map((c, i) => i).sort((a, b) => right(a) - right(b)).forEach((i) => {
+        if (by[cards[i].region].length < NEED[cards[i].region]) by[cards[i].region].push(i);
+      });
     } else {
       for (const [idx, code] of Object.entries(state.place)) by[code].push(Number(idx));
     }
@@ -191,7 +197,7 @@
     const c = state.puzzle.cards[idx];
     const g = sv("g", { class: "pchip", transform: `translate(${x - CHIP_W / 2},${y - CHIP_H / 2})` });
     if (state.sel === idx) g.classList.add("sel");
-    if (state.checked) g.classList.add(state.place[idx] === c.region ? "ok" : "bad");
+    if (state.checked) g.classList.add(state.place[idx] === c.region ? "ok" : state.place[idx] === undefined ? "spare" : "bad");
     g.append(sv("rect", { width: CHIP_W, height: CHIP_H, rx: CHIP_H / 2 }));
     const small = $("#venn").getBoundingClientRect().width < 560;   // phone: last names, bigger text
     const t = sv("text", { x: CHIP_W / 2, y: CHIP_H / 2 + (small ? 6 : 4), "text-anchor": "middle" });
@@ -235,9 +241,11 @@
       if (!state.checked) chip.addEventListener("pointerdown", (e) => startDrag(e, i));
       tray.append(chip);
     }
-    if (!unplaced.length) tray.append(el("div", { class: "hint" }, state.checked ? "" : `All ${total()} placed — check when you're ready.`));
     const n = Object.keys(state.place).length;
-    $("#placed-count").textContent = `${n} / ${total()} placed`;
+    if (!state.checked && n === total()) tray.prepend(el("div", { class: "hint full" }, spareCount()
+      ? `Board full — check when you're ready. The ${spareCount()} cards left over don't count.`
+      : `All ${total()} placed — check when you're ready.`));
+    $("#placed-count").textContent = `${n} / ${total()} spots filled`;
     $("#btn-check").disabled = state.checked || n !== total();
     $("#btn-check").textContent = state.checked ? "Checked" : "Check (one try)";
     $("#btn-clear").disabled = state.checked;
@@ -253,7 +261,8 @@
     const score = p.cards.filter((c, i) => state.place[i] === c.region).length;
     const name = (code) => code === "" ? "None of the three" :
       code.split("").map((k) => p.categories["ABC".indexOf(k)].label).join(" + ") + (code.length === 1 ? " only" : "");
-    const order = (c, i) => (state.place[i] === c.region ? 100 : 0) + REGIONS.indexOf(c.region);   // misses first
+    // misses first, then right answers, then the spare cards that weren't used
+    const order = (c, i) => (state.place[i] === undefined ? 200 : state.place[i] === c.region ? 100 : 0) + REGIONS.indexOf(c.region);
     const toggle = el("button", { class: "ghost", onclick: () => { state.showAnswers = !state.showAnswers; drawBoard(); toggle.textContent = state.showAnswers ? "Show my board" : "Show correct spots"; } },
       state.showAnswers ? "Show my board" : "Show correct spots");
     box.replaceChildren(
@@ -262,10 +271,10 @@
         el("span", {}, verdict(score / total())),
         el("div", { class: "result-actions" }, toggle, el("button", { class: "primary", onclick: share }, "Share"))),
       el("div", { class: "answers" }, ...p.cards.map((c, i) => [c, i]).sort((a, b) => order(a[0], a[1]) - order(b[0], b[1])).map(([c, i]) => {
-        const ok = state.place[i] === c.region;
-        return el("div", { class: `ans ${ok ? "ok" : "bad"}` },
-          el("div", { class: "who" }, `${ok ? "✓" : "✗"} ${c.name} `, el("span", { class: "hint" }, c.sub)),
-          el("div", { class: "where" }, ok ? name(c.region) : `${name(c.region)} — you had: ${name(state.place[i])}`),
+        const ok = state.place[i] === c.region, unused = state.place[i] === undefined;
+        return el("div", { class: `ans ${ok ? "ok" : unused ? "spare" : "bad"}` },
+          el("div", { class: "who" }, `${ok ? "✓" : unused ? "–" : "✗"} ${c.name} `, el("span", { class: "hint" }, c.sub)),
+          el("div", { class: "where" }, ok ? name(c.region) : unused ? `${name(c.region)} (not used)` : `${name(c.region)} — you had: ${name(state.place[i])}`),
           el("ul", {}, ...c.facts.map((f, k) => el("li", {}, `${"ABC"[k]}: ${f}`))));
       })));
   }
@@ -356,7 +365,7 @@
     const p = state.puzzle;
     const sq = (i) => (state.place[i] === p.cards[i].region ? "🟩" : "🟥");
     const by = Object.fromEntries(REGIONS.map((r) => [r, []]));
-    p.cards.forEach((c, i) => by[c.region].push(sq(i)));
+    for (const [i, code] of Object.entries(state.place)) by[code].push(sq(Number(i)));
     const score = p.cards.filter((c, i) => state.place[i] === c.region).length;
     const text = [`Triple Play ${PACKS[p.pack] || ""} #${p.number} — ${score}/${total()}`,
       `◎ ${by.ABC.join("")}  ⧉ ${by.AB.join("")} ${by.AC.join("")} ${by.BC.join("")}`,
@@ -381,15 +390,16 @@
   }
   function showHelp() {
     modal(el("h2", {}, "How to play"),
-      el("p", {}, "Three circles, 17 cards. Put every card in the one part of the diagram that fits it:"),
+      el("p", {}, "Three circles, 17 spots to fill. Put a card in each spot, in the one part of the diagram that fits it:"),
       el("ul", {},
         el("li", {}, "1 in the middle (all three circles)"),
         el("li", {}, "2 in each overlap of exactly two circles"),
         el("li", {}, "3 in each part that belongs to only one circle"),
         el("li", {}, "1 outside all three")),
-      el("p", {}, "Sunday is the big one: 25 cards (2 in the middle, 3 in each overlap, 4 in each single circle, 2 outside)."),
+      el("p", {}, "There's a spare for every part: 25 cards for the 17 spots. Leave out the ones you're least sure of; cards left over don't count."),
+      el("p", {}, "Sunday is the big one: 25 spots (2 in the middle, 3 in each overlap, 4 in each single circle, 2 outside) and 33 cards."),
       el("p", {}, "Tap a card and then a part of the diagram, or drag it there. Tap a placed card twice to send it back."),
-      el("p", {}, "You get one check. Your score is how many cards are in the right place."),
+      el("p", {}, "You get one check. Your score is how many of the spots you filled correctly."),
       el("p", {}, "A new puzzle every day: cities & states on Monday (MLB's traditional off day), baseball players the rest of the week — Tuesday easiest, Friday and Saturday hardest (more players close to a circle's line), and the big puzzle on Sunday."),
       el("p", { class: "hint" }, "Tap a circle's label for its exact rule (e.g. what counts as \"played shortstop\")."),
       el("p", { class: "hint" }, `Data: ${state.index?.source || "Lahman Baseball Database"}.`));
@@ -414,7 +424,7 @@
           s = "played";
           const m = months[q.date.slice(0, 7)];
           const pz = m && m.find((x) => x.date === q.date);
-          if (pz) s = `${pz.cards.filter((c, i) => saved.place[i] === c.region).length}/${pz.cards.length}`;
+          if (pz) s = `${pz.cards.filter((c, i) => saved.place[i] === c.region).length}/${Object.values(pz.need || NEED_17).reduce((a, b) => a + b, 0)}`;
         } else if (saved && Object.keys(saved.place || {}).length) s = "in progress";
         const d = new Date(q.date + "T12:00:00");
         return el("button", { class: saved?.checked ? "done" : "", onclick: () => { $("#modal").classList.add("hidden"); location.hash = q.date; } },

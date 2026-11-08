@@ -1,8 +1,12 @@
 # Triple Play
 
-A daily puzzle: three circles, 17 cards, one correct spot for each (1 in the middle,
-2 in each two-circle overlap, 3 in each one-circle-only part, 1 outside). One check,
-scored out of 17. Archive of past days; progress kept in the browser (localStorage).
+A daily puzzle: three circles, 17 spots (1 in the middle, 2 in each two-circle overlap,
+3 in each one-circle-only part, 1 outside) and 25 cards: each part has one spare
+(`SPARE` in generate.py). Puzzle #1 is 2026-11-09; the first 13 puzzles (Oct 27-Nov 8, no
+spares) were removed and the numbering restarted. The
+player fills the 17 spots; any card that fits a part scores and the leftover cards don't
+count. One check, scored out of 17. Archive of past days; progress kept in the browser
+(localStorage).
 
 - `web/` — the game (vanilla JS, no build step). Served at `/triple/` by `ballmonitor serve`
   and copied to `dist/triple/` by `ballmonitor build-site`.
@@ -20,8 +24,8 @@ scored out of 17. Archive of past days; progress kept in the browser (localStora
 - `build.py` — writes `web/puzzles/daily/index.json` + one JSON per month.
 
 Schedule: cities & states on Monday (MLB's traditional off day); baseball Tuesday (easy),
-Wednesday/Thursday (medium), Friday/Saturday (hard), and Sunday's big puzzle: 25 cards
-(2 in the middle, 3 per overlap, 4 per single circle, 2 outside; `NEED_BIG`). Difficulty = how famous the players are (fame floor) and how close they sit
+Wednesday/Thursday (medium), Friday/Saturday (hard), and Sunday's big puzzle: 25 spots
+(2 in the middle, 3 per overlap, 4 per single circle, 2 outside; `NEED_BIG`) and 33 cards. Difficulty = how famous the players are (fame floor) and how close they sit
 to a circle's line (`Category.close`: 405 HR for "400 career home runs", 60 games for a team,
 a switch-hitter for "batted left-handed"); each card is drawn with weight
 fame x exp(CLOSE_BETA[level] x closeness), so easy days are clear-cut and hard days full of
@@ -55,7 +59,9 @@ calls in `places/data/NOTES*.md`. Facts are for the 2026 season; titles through 
 Rebuild (e.g. after a new Lahman release):
 
     python -m ballmonitor.games.triple_play.build --lahman ~/Downloads/lahman_1871-2025_csv.zip
-    python -m ballmonitor.games.triple_play.build --start 2026-10-27 --end 2027-12-31
+    python -m ballmonitor.games.triple_play.build --start 2026-11-09 --end 2027-12-31
+
+Add `--keep-through <today>` when rebuilding so puzzles people have already played stay as they were.
 
 `--lahman` takes SABR's comma-delimited zip (sabr.org/lahman-database; its Box download
 needs a browser) or the CRAN `Lahman_*.tar.gz` (needs `pip install rdata`). The current
