@@ -2,7 +2,7 @@
 
 Built at site-build time (`ballmonitor build-site`, `ballmonitor views ranked_choice`); the page
 only displays these numbers. Every ranking comes from the model's own predict(); the page only
-counts the three methods it shows (Kemeny-Young and the other slower methods are skipped).
+counts the four methods it shows (Kemeny-Young and the other slower methods are skipped).
 """
 
 from __future__ import annotations
@@ -12,14 +12,18 @@ import datetime as dt
 from ballmonitor.core import views as V
 from ballmonitor.core.config import load_config
 from ballmonitor.models.ranked_choice import ballots as data
+from ballmonitor.models.ranked_choice import voting as v
 
 # The methods the page shows, in column order. "schulze" always picks the head-to-head
-# (Condorcet) winner when there is one, so it is labelled "Head-to-head" for fans.
-METHODS = ["official", "schulze", "irv"]
+# (Condorcet) winner when there is one, so it is labelled "Head-to-head" for fans. "fptp"
+# (first past the post) is shown from the first-place counts, with ties kept as ties.
+METHODS = ["official", "fptp", "schulze", "irv"]
 AWARD_SOURCES = ["mlb", "nba", "nhl"]
 POLL_SOURCES = [("ap_cfb", "Football"), ("ap_mbb", "Men's basketball")]
 
-HOW_METHODS = ("Head-to-head: a team ranks above another if more voters put it higher, the way a "
+HOW_METHODS = ("First past the post: only first-place votes count; teams with the same number are "
+               "tied, and a team with none gets no rank. "
+               "Head-to-head: a team ranks above another if more voters put it higher, the way a "
                "round-robin works. Instant runoff: the team with the fewest first-place votes is "
                "dropped and those ballots move to their next choice, until one team has a majority.")
 
@@ -34,6 +38,14 @@ def _week(c: dict) -> str:
     return {"pre": "Preseason", "final": "Final"}.get(w, f"Week {w}" if w.isdigit() else w)
 
 
+def _fptp_winner(e: dict) -> str:
+    """Most first-place votes; "A / B (tied)" when several share the most."""
+    firsts = {c: x["first"] for c, x in e["candidates"].items()}
+    best = max(firsts.values())
+    top = [e["candidates"][c]["name"] for c in e["orders"]["fptp"] if firsts[c] == best]
+    return top[0] if len(top) == 1 else " / ".join(top) + " (tied)"
+
+
 def _counter(model):
     """The same model, counting only the methods this page shows (keeps the build fast)."""
     cfg = load_config(model.dir, None, {"compare_methods": METHODS, "outlier_count": 0})
@@ -46,30 +58,34 @@ def _poll_table(model, contest: dict, label: str) -> tuple[dict, dict]:
     places = int(e["n_places"])
     pos = {m: {c: i + 1 for i, c in enumerate(orders[m])} for m in METHODS}
     shown = {c for m in METHODS for c in orders[m][:places]}
+    voted = {c: float(x["first"]) for c, x in cands.items() if x["first"] > 0}
+    fptp = v.tied_ranks(voted)          # first past the post: only teams with a first-place vote
     rows = []
     for c in sorted(shown, key=lambda c: pos["official"][c]):
         off, h2h, irv = pos["official"][c], pos["schulze"][c], pos["irv"][c]
         rows.append({"team": cands[c]["name"], "official": off, "points": cands[c]["official_points"],
-                     "first": cands[c]["first"], "h2h": h2h, "irv": irv,
+                     "first": cands[c]["first"], "fptp": fptp.get(c), "h2h": h2h, "irv": irv,
                      "moved": "Yes" if len({min(off, places + 1), min(h2h, places + 1),
                                             min(irv, places + 1)}) > 1 else ""})
     others = len(rows) - places
     cap = lambda r, k: min(r[k], places + 1)  # noqa: E731
     stats = {"top": rows[0]["team"], "h2h_top": cands[orders["schulze"][0]]["name"],
-             "irv_top": cands[orders["irv"][0]]["name"],
+             "irv_top": cands[orders["irv"][0]]["name"], "fptp_top": _fptp_winner(e),
              "h2h_moves": sum(1 for r in rows if cap(r, "h2h") != cap(r, "official")),
              "irv_moves": sum(1 for r in rows if cap(r, "irv") != cap(r, "official"))}
     return V.table(
         f"poll_{contest['contest_id']}", label,
         [V.col("official", "Official rank", "int"), V.col("team", "Team"),
          V.col("points", "Points", "int"), V.col("first", "First-place votes", "int"),
+         V.col("fptp", "First-past-the-post rank", "int"),
          V.col("h2h", "Head-to-head rank", "int"), V.col("irv", "Instant-runoff rank", "int"),
          V.col("moved", "Count changes it?")],
         rows,
         subtitle=(f"{e['n_ballots']} voters, released {_day(contest['date'])}. Official rank uses the AP's "
                   f"25-24-...-1 points."),
         note=(f"Ranks past {places} are teams that only made the top {places} under another count. "
-              if others > 0 else "") + HOW_METHODS,
+              if others > 0 else "") + "\"Count changes it?\" compares head-to-head and instant runoff "
+             "with the official rank. " + HOW_METHODS,
         search=True, page_size=25), stats
 
 
@@ -82,10 +98,14 @@ def _poll_intro(st: dict) -> str:
     text = f"Head-to-head moves {_teams(st['h2h_moves'])}, instant runoff {_teams(st['irv_moves'])}."
     keeps = [m for m, k in (("head-to-head", "h2h_top"), ("instant runoff", "irv_top")) if st[k] == st["top"]]
     if len(keeps) == 2:
-        return text + f" No. 1 {st['top']} stays No. 1 both ways."
-    flips = [f"{st[k]} under {m}" for m, k in (("head-to-head", "h2h_top"), ("instant runoff", "irv_top"))
-             if st[k] != st["top"]]
-    return text + " No. 1 would be " + " and ".join(flips) + f", not {st['top']}."
+        text += f" No. 1 {st['top']} stays No. 1 both ways."
+    else:
+        flips = [f"{st[k]} under {m}" for m, k in (("head-to-head", "h2h_top"), ("instant runoff", "irv_top"))
+                 if st[k] != st["top"]]
+        text += " No. 1 would be " + " and ".join(flips) + f", not {st['top']}."
+    if st["fptp_top"] != st["top"]:
+        text += f" Most first-place votes: {st['fptp_top']}."
+    return text
 
 
 def _polls(model) -> tuple[dict, str]:
@@ -124,7 +144,7 @@ def _polls(model) -> tuple[dict, str]:
                     f"{lead['top']}.")
     return V.picker(
         "polls", "This week's AP Top 25, re-counted", "Poll", ordered,
-        subtitle=("The same voters' ballots counted three ways. Most of the poll holds up; "
+        subtitle=("The same voters' ballots counted four ways. Most of the poll holds up; "
                   "look for the rows marked \"Yes\".")), newest, headline
 
 
@@ -135,27 +155,27 @@ def _awards(model) -> tuple[dict, dict, str]:
         for c in data.contests(d, source):
             e = model.predict({"contest": c["contest_id"]}).extras
             name = lambda m: e["candidates"][e["orders"][m][0]]["name"]  # noqa: E731
-            off, h2h, irv = name("official"), name("schulze"), name("irv")
+            off, h2h, irv, fptp = name("official"), name("schulze"), name("irv"), _fptp_winner(e)
             rows.append({"award": f"{c['league']} {c['award']}", "season": c["season"],
-                         "official": off, "h2h": h2h, "irv": irv,
+                         "official": off, "fptp": fptp, "h2h": h2h, "irv": irv,
                          "clear": "Yes" if e["condorcet_winner"] else "No",
-                         "voters": e["n_ballots"], "changed": len({off, h2h, irv}) > 1})
+                         "voters": e["n_ballots"], "changed": len({off, h2h, irv, fptp}) > 1})
     rows.sort(key=lambda r: (r["season"], r["award"]), reverse=True)
     seasons = sorted({r["season"][:4] for r in rows})
     cols = [V.col("award", "Award"), V.col("season", "Season"), V.col("official", "Official winner"),
-            V.col("h2h", "Head-to-head winner"), V.col("irv", "Instant-runoff winner")]
+            V.col("fptp", "Most first-place votes"), V.col("h2h", "Head-to-head winner"), V.col("irv", "Instant-runoff winner")]
     strip = lambda r, keys: {k: r[k] for k in keys}  # noqa: E731
     changed = [r for r in rows if r["changed"]]
     flips = V.table(
         "award_flips", "Awards a different count would have changed",
-        cols, [strip(r, ("award", "season", "official", "h2h", "irv")) for r in changed],
+        cols, [strip(r, ("award", "season", "official", "fptp", "h2h", "irv")) for r in changed],
         subtitle=(f"Out of {len(rows)} MLB, NBA and NHL awards with public ballots, these are the ones "
                   f"where the same ballots crown a different winner under another count."),
         note=HOW_METHODS.replace("team", "candidate"))
     every = V.table(
         "awards", "Every award, re-counted",
         cols + [V.col("clear", "Beat everyone head-to-head?"), V.col("voters", "Voters", "int")],
-        [strip(r, ("award", "season", "official", "h2h", "irv", "clear", "voters")) for r in rows],
+        [strip(r, ("award", "season", "official", "fptp", "h2h", "irv", "clear", "voters")) for r in rows],
         subtitle=("\"Beat everyone head-to-head?\" is Yes when one candidate was ranked above each rival "
                   "on more ballots than not. When it is No, the voters went in a circle."),
         search=True, page_size=20)
@@ -172,8 +192,8 @@ def page(model) -> dict:
         sport="Polls & awards",
         headline=headline,
         updated=f"AP polls through {_day(newest)}; award ballots from {span}",
-        how=("We take every voter's published ballot and count it three ways: the official points, "
-             "head-to-head (who more voters ranked higher in each pair) and instant runoff (drop the "
+        how=("We take every voter's published ballot and count it four ways: the official points, "
+             "first past the post (first-place votes only), head-to-head (who more voters ranked higher in each pair) and instant runoff (drop the "
              "candidate with the fewest first-place votes and move those ballots on, round by round). "
              "Nothing about the ballots changes, only the counting."),
         views=[polls, flips, every],

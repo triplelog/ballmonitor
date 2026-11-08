@@ -41,6 +41,9 @@ would move a team; which voters' ballots are furthest from the consensus.
      official count).
    - `custom_points` — formula `custom_points` (default `1 / rank`, the Dowdall system).
    - `plurality` — first-place votes, ties broken by second-place votes, then third, …
+   - `fptp` (first past the post) — first-place votes only; equal counts stay tied (the
+     list order among tied candidates follows the shared tie-break, but the public page
+     shows them as tied, and candidates with no first-place votes get no rank there).
    - `irv` (instant runoff) — repeatedly drop the candidate with the fewest first choices
      among those left until one has a majority of the active ballots.
    - `coombs` — like IRV but drop the candidate with the most last places; a ballot's
@@ -148,6 +151,9 @@ None — there is no "actual" to score a re-count against.
 
 ## Changelog
 
+- 0.2.0 — new method `fptp` (first past the post: first-place votes only, ties stay tied),
+  added to `compare_methods` and to the public page (a rank column for the polls, a
+  "Most first-place votes" winner for the awards).
 - 0.1.0 (addition) — NHL ballots parsed from user-downloaded PHWA PDFs (`parse_phwa_pdf`).
 - 0.1.0 (addition) — NBA ballots parsed from user-downloaded PDFs (`sources/nba_pdf.py`); `tools/download.py`.
 - 0.1.0 — first version: 13 methods, AP/MLB/NHL/NBA ballot sources, place-by-method table.

@@ -220,6 +220,25 @@ def test_norris_2022_condorcet_winner_is_josi():
     assert ex["condorcet_winner"] == "roman-josi"
 
 
+def test_fptp_counts_only_first_places_and_keeps_ties():
+    assert v.fptp(TENNESSEE, CANDS, {}).order[0] == M          # 42 first places
+    assert v.fptp(TENNESSEE, CANDS, {}).scores == {M: 42.0, N: 26.0, C: 15.0, K: 17.0}
+    # A and B tie on first places; B has more seconds. Plurality uses the seconds, FPTP doesn't.
+    ballots = [["A", "C"], ["A", "C"], ["B", "C"], ["B", "C"], ["C", "B"]]
+    cands = ["A", "B", "C"]
+    assert v.plurality(ballots, cands, {}).order[0] == "B"
+    assert v.fptp(ballots, cands, {"A": (1,), "B": (0,)}).order[0] == "A"   # shared tie-break only
+    assert v.tied_ranks(v.fptp(ballots, cands, {}).scores) == {"A": 1, "B": 1, "C": 3}
+
+
+def test_fptp_on_the_site_page():
+    from ballmonitor.models.ranked_choice import site
+
+    ex = run({"contest": "mlb-2023-nl-moy"}, compare_methods=site.METHODS).extras
+    # 2023 NL Manager of the Year: Schumaker won on points; he and Snitker had 8 first places each
+    assert site._fptp_winner(ex) == "Skip Schumaker / Brian Snitker (tied)"
+
+
 def test_site_page_builds_cleanly():
     from ballmonitor.core import views
     from ballmonitor.models.ranked_choice import site

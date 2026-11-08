@@ -10,10 +10,10 @@ from ballmonitor.models.ranked_choice import ballots as data
 from ballmonitor.models.ranked_choice import voting as v
 
 LABELS = {"official": "Official points", "borda": "Borda", "custom_points": "Custom points",
-          "plurality": "Plurality", "irv": "Instant runoff", "coombs": "Coombs", "baldwin": "Baldwin",
+          "plurality": "Plurality", "fptp": "First past the post", "irv": "Instant runoff", "coombs": "Coombs", "baldwin": "Baldwin",
           "bucklin": "Bucklin", "copeland": "Copeland", "schulze": "Schulze", "ranked_pairs": "Ranked pairs",
           "minimax": "Minimax", "kemeny": "Kemeny-Young"}
-SHORT = {"official": "Off", "borda": "Borda", "custom_points": "Cust", "plurality": "Plur", "irv": "IRV",
+SHORT = {"official": "Off", "borda": "Borda", "custom_points": "Cust", "plurality": "Plur", "fptp": "FPTP", "irv": "IRV",
          "coombs": "Coombs", "baldwin": "Bald", "bucklin": "Buck", "copeland": "Cope", "schulze": "Schu",
          "ranked_pairs": "RP", "minimax": "Mmax", "kemeny": "Kem"}
 
@@ -232,6 +232,8 @@ class RankedChoiceModel(BaseModel):
                                 tiebreak, "custom points")
         if m == "plurality":
             return v.plurality(ballots, cands, tiebreak)
+        if m == "fptp":
+            return v.fptp(ballots, cands, tiebreak)
         if m in ("irv", "coombs", "baldwin", "bucklin"):
             return v.elimination(m, ballots, cands, tiebreak, str(p.elimination_ordering), positions)
         if m == "copeland":

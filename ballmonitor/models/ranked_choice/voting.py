@@ -69,6 +69,21 @@ def plurality(ballots: list[Ballot], cands: list[str], tiebreak: dict[str, tuple
                   {c: float(counts[c][0]) for c in cands}, "first-place votes")
 
 
+def fptp(ballots: list[Ballot], cands: list[str], tiebreak: dict[str, tuple]) -> Result:
+    """First past the post: first-place votes only. Unlike `plurality`, later places never
+    break a tie; candidates with equal first-place votes are tied (the order among them only
+    follows the shared `tiebreak` so the list is complete; `scores` shows the tie)."""
+    counts = place_counts(ballots, cands, 1)
+    return Result(_sorted(cands, lambda c: (counts[c][0],), tiebreak),
+                  {c: float(counts[c][0]) for c in cands}, "first-place votes")
+
+
+def tied_ranks(scores: dict[str, float]) -> dict[str, int]:
+    """Standard competition ranks (1, 2, 2, 4) by score, higher first; equal scores share a rank."""
+    ordered = sorted(scores.values(), reverse=True)
+    return {c: ordered.index(s) + 1 for c, s in scores.items()}
+
+
 # ---- elimination methods -----------------------------------------------------------------
 
 def _top(ballot: Ballot, alive: set[str]) -> str | None:
@@ -398,6 +413,6 @@ def disagreements(orders: dict[str, list[str]], depth: int) -> dict[str, dict[st
     return {c: {m: o.index(c) + 1 for m, o in orders.items()} for c in names}
 
 
-__all__ = ["Result", "candidates_of", "positional", "plurality", "elimination", "pairwise", "copeland",
+__all__ = ["Result", "candidates_of", "positional", "plurality", "fptp", "tied_ranks", "elimination", "pairwise", "copeland",
            "schulze", "ranked_pairs", "minimax", "kemeny", "condorcet_winner", "condorcet_loser",
            "smith_set", "footrule", "head_to_head", "disagreements", "place_counts"]

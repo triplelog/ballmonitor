@@ -1,12 +1,12 @@
 [meta]
 title = "Ranked-choice re-rankings"
-version = "0.1.0"
+version = "0.2.0"
 status = "draft"
 question = "Who would have won an award or been ranked where in a poll if the same published ballots were counted with a different ranked-choice method?"
 description = """
 Real voter-by-voter ballots (AP Top 25 football and basketball, BBWAA MLB awards, NBA media
 awards, PHWA NHL awards) are re-counted with a dozen ranked-ballot methods: the official
-points, Borda, plurality, instant runoff, Coombs, Baldwin, Bucklin, Copeland, Schulze,
+points, Borda, plurality, first past the post, instant runoff, Coombs, Baldwin, Bucklin, Copeland, Schulze,
 ranked pairs, minimax and Kemeny-Young. The output shows the chosen method's full ranking,
 each method's winner, where the methods disagree, the Condorcet winner (if any) and the most
 unusual ballots.
@@ -36,10 +36,10 @@ season = ["08-01", "04-15"]
 value = "schulze"
 description = "The method whose full ranking is shown first (the 'Ranking' group). Every method in compare_methods is also counted."
 source = "Judgement: Schulze is a widely used Condorcet method (Schulze 2011) that handles truncated ballots and cycles."
-choices = ["official", "borda", "custom_points", "plurality", "irv", "coombs", "baldwin", "bucklin", "copeland", "schulze", "ranked_pairs", "minimax", "kemeny"]
+choices = ["official", "borda", "custom_points", "plurality", "fptp", "irv", "coombs", "baldwin", "bucklin", "copeland", "schulze", "ranked_pairs", "minimax", "kemeny"]
 
 [params.compare_methods]
-value = ["official", "borda", "plurality", "irv", "coombs", "baldwin", "bucklin", "copeland", "schulze", "ranked_pairs", "minimax", "kemeny"]
+value = ["official", "borda", "plurality", "fptp", "irv", "coombs", "baldwin", "bucklin", "copeland", "schulze", "ranked_pairs", "minimax", "kemeny"]
 description = "Methods counted and compared (winner by method, where they disagree). Any of the choices of `method`."
 source = "Judgement: the common single-winner methods extended to full rankings."
 
