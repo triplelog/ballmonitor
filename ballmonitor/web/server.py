@@ -29,6 +29,7 @@ STATIC = Path(__file__).resolve().parent / "static"
 # 27K pitching game: its own static build (run `npm run build` in ballmonitor/new27K to refresh)
 GAME_27K = Path(__file__).resolve().parent.parent / "new27K" / "dist"
 GAME_TRIPLE = Path(__file__).resolve().parent.parent / "games" / "triple_play" / "web"
+GAME_LINEUP = Path(__file__).resolve().parent.parent / "games" / "lineup" / "web"
 CONTENT_TYPES = {".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".json": "application/json"}
 NAME_RE = re.compile(r"[a-z0-9][a-z0-9_\-]*")
 USER_ERRORS = (ConfigError, FormulaError, KeyError, ValueError, TypeError,
@@ -295,6 +296,10 @@ class Handler(BaseHTTPRequestHandler):
             if len(parts) == 1 and not url.path.endswith("/"):
                 return self._redirect("/triple/")
             return self._game_dir(GAME_TRIPLE, parts[1:] or ["index.html"])
+        if parts and parts[0] == "lineup":
+            if len(parts) == 1 and not url.path.endswith("/"):
+                return self._redirect("/lineup/")
+            return self._game_dir(GAME_LINEUP, parts[1:] or ["index.html"])
         if parts[0] == "static" and len(parts) == 2:
             return self._static(parts[1])
         if parts in (["api", "entities"], ["data", "entities.json"]):

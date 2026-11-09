@@ -1,0 +1,31 @@
+# Lineup: the baserunning rules used to turn each hitter's rates into expected runs.
+# Every runner advances by these fixed league-average rates, whoever is batting or running.
+# Change a value and rebuild the puzzles (`python -m ballmonitor.games.lineup.build`);
+# web/game.js reads the same numbers from each puzzle file, so the page always agrees.
+
+[advance]
+# Single
+first_to_third_on_single = 0.28   # runner on 1st reaches 3rd (else stops at 2nd)
+second_scores_on_single = 0.60    # runner on 2nd scores (else stops at 3rd)
+# Double
+first_scores_on_double = 0.42     # runner on 1st scores (else stops at 3rd)
+# Out in play (not a strikeout), fewer than 2 outs before the play
+double_play = 0.15                # with a runner on 1st: batter and that runner are out, others hold
+third_scores_on_out = 0.50        # runner on 3rd scores (sac fly, ground ball)
+second_to_third_on_out = 0.30     # runner on 2nd moves up (only if 3rd is open)
+first_to_second_on_out = 0.25     # runner on 1st moves up (only if 2nd is open)
+
+[sources]
+note = """
+DRAFT, verify: rounded league-average rates from memory of Baseball-Reference's baserunning
+splits (extra bases taken: about 28% first-to-third on a single, about 60% scoring from 2nd
+on a single, about 40% scoring from 1st on a double) and typical GIDP rates (roughly 11% of
+double-play chances; 15% of in-play outs here because strikeouts are counted apart). The
+out-in-play advances are judgement. The model ignores steals, errors, wild pitches and
+pinch hitters, so it scores a little less than real teams (see README, Calibration).
+"""
+
+[game]
+innings = 9
+season_games = 162
+max_batters_per_inning = 30       # the chain is cut after this many batters (the mass left is < 1e-6)

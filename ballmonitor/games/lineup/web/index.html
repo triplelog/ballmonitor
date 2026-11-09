@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lineup · daily batting-order puzzle</title>
+  <meta name="description" content="Nine real hitters from baseball history. Put them in the batting order that scores the most runs.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="top">
+    <a class="back" href="../" title="Back to Ball Monitor">← Ball Monitor</a>
+    <h1>Lineup</h1>
+    <div class="top-actions">
+      <button id="btn-archive" class="ghost">Archive</button>
+      <button id="btn-help" class="ghost">How to play</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="meta" id="meta"></div>
+    <section class="card-wrap">
+      <div class="lineup-head">
+        <span>Batting order</span>
+        <span class="hint" id="lineup-hint">Tap a hitter, then another to swap them — or use the arrows.</span>
+      </div>
+      <ol id="lineup" class="lineup"></ol>
+      <div class="actions">
+        <button id="btn-reset" class="ghost">Reset</button>
+        <button id="btn-play" class="primary">Play ball (one try)</button>
+      </div>
+    </section>
+    <section id="result" class="result hidden"></section>
+  </main>
+
+  <div id="modal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-card">
+      <button class="modal-close" id="modal-close" aria-label="Close">×</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+  <div id="toast" class="toast hidden"></div>
+  <script src="chain.js"></script>
+  <script src="game.js"></script>
+</body>
+</html>

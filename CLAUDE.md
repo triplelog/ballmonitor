@@ -241,7 +241,10 @@ the draft values, implement `predict`, add examples, flip status to `draft`.
 | `cfb_replay` | draft | ESPN play-by-play + ESPN win probability → 60 s vertical replay: WP chart down the left, ~14 annotated plays (every score + biggest swings) revealed one by one on the right, time axis warped to fit them (variants: `chapters`, `plays_only`); rendered by web/static/replay.js; `ballmonitor export-replay` → MP4 |
 | `ranked_choice` | draft | published ranked ballots (AP Top 25 football/men's basketball since 2014, BBWAA MLB awards since 2012, NBA 2014-15–2022-23 and PHWA NHL awards since 2017-18 from PDFs the user downloads with `tools/download.py`) re-counted with 14 methods (official points, Borda, plurality, first past the post, IRV, Coombs, Baldwin, Bucklin, Copeland, Schulze, ranked pairs, minimax, Kemeny); `fetch.py` adds new AP weeks daily |
 
-Games: `new27K/` (27K, at `/27k/`), `web/static/game.html` (Pitch Guesser, local only for now) and
+Games: `new27K/` (27K, at `/27k/`), `ballmonitor/games/lineup/` (Lineup daily batting-order puzzle at
+`/lineup/`: nine real player-seasons since 1955, graded by exact expected runs (Markov chain,
+`rules.toml` baserunning rates) against all 9! orders; puzzles prebuilt by `python -m ballmonitor.games.lineup.build`,
+needs numpy and the Lahman CSVs from Triple Play; see its README), `web/static/game.html` (Pitch Guesser, local only for now) and
 `ballmonitor/games/triple_play/` (Triple Play daily Venn puzzle at `/triple/`: 17 spots and 25 cards, a spare per part; baseball Tue-Sun (Sunday = 25 spots, 33 cards) from the
 Lahman database, cities & states on Monday from Wikipedia lists; puzzles prebuilt by
 `python -m ballmonitor.games.triple_play.build`; see its README).

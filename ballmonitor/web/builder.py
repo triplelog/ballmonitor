@@ -32,7 +32,7 @@ from ballmonitor.web import server
 STATIC_DIR = Path(__file__).resolve().parent / "static"
 SITE_URL = "https://ballmonitor.com"  # canonical address (robots.txt, sitemap.xml)
 # Real pages for crawlers; the forecast pages are #/<model> routes on the home page.
-SITEMAP_PATHS = ["/", "/triple/", "/27k/"]
+SITEMAP_PATHS = ["/", "/triple/", "/lineup/", "/27k/"]
 
 
 def extract_entities() -> dict[str, Any]:
@@ -260,6 +260,9 @@ def build_static_site(out_dir: Path | str = "dist", models: list[str] | None = N
     # 1c. Triple Play (daily Venn puzzle; puzzles prebuilt by games/triple_play/build.py) -> dist/triple/
     if server.GAME_TRIPLE.is_dir():
         shutil.copytree(server.GAME_TRIPLE, target / "triple", dirs_exist_ok=True)
+    # 1d. Lineup (daily batting-order puzzle; prebuilt by games/lineup/build.py) -> dist/lineup/
+    if server.GAME_LINEUP.is_dir():
+        shutil.copytree(server.GAME_LINEUP, target / "lineup", dirs_exist_ok=True)
 
     # 2. (Pitch Guesser, game.html + data/game_scenarios.json, is off the site since 2026-11-08;
     #    it still runs locally at /game under `ballmonitor serve`.)
