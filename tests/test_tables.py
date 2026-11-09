@@ -83,3 +83,15 @@ def test_sqldn_meta_column_names():
                        {"name": "Batting", "columns": [{"name": "HR"}]}]}
     assert tables.column_names(meta, "Batting") == {"HR"}
     assert tables.column_names(meta) == {"nameFirst", "HR"}
+
+
+def test_site_js_function_names_are_unique():
+    """Two top-level functions with one name: the later silently replaces the earlier (this once
+    broke every forecast table when the data-table page reused the name renderTable)."""
+    import re
+    from collections import Counter
+    from pathlib import Path
+
+    js = (Path(tables.__file__).parent / "static" / "site.js").read_text(encoding="utf-8")
+    names = Counter(re.findall(r"^(?:async\s+)?function\s+(\w+)\s*\(", js, re.M))
+    assert not [n for n, c in names.items() if c > 1], names.most_common(3)

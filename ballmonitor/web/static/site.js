@@ -422,7 +422,7 @@ function loadEmbed(server) {
   });
 }
 
-async function renderTable(id) {
+async function renderDataTable(id) {
   const site = await getJSON("data/site.json");
   const t = (site.tables || []).find((x) => x.id === id);
   current = { model: null, pickers: {} };
@@ -467,7 +467,7 @@ async function renderTable(id) {
 // ── routing: #/ (home), #/<model> and #/data/<table> ─────────────────────────
 function route() {
   const d = location.hash.match(/^#\/data\/([a-z0-9-]+)/);
-  if (d) return renderTable(d[1]).catch((e) => {
+  if (d) return renderDataTable(d[1]).catch((e) => {
     app.replaceChildren(el("p", { class: "loading" }, `Something went wrong loading this page (${e.message}).`));
   });
   const m = location.hash.match(/^#\/([a-z0-9_]+)(?:\/([a-z0-9_]+)\/([a-z0-9-]+))?/);
