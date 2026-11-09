@@ -143,3 +143,13 @@ th.stick, td.stick {
   box-shadow: 1px 0 0 var(--ss-rule);
 }
 .copy-link { padding: 0.35rem 0.8rem; font-size: 0.88rem; }
+
+/* ---------- live data tables (tabdn servers) ---------- */
+.examples { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; margin: 0.4rem 0 0.6rem; }
+.examples .ss-btn { padding: 0.3rem 0.7rem; font-size: 0.88rem; }
+.column-key summary { cursor: pointer; font-weight: 600; font-size: 0.9rem; }
+.column-key dl { display: grid; grid-template-columns: max-content 1fr; gap: 0.15rem 0.8rem; margin: 0.5rem 0 0; font-size: 0.88rem; }
+.column-key dt { font-family: var(--ss-font-mono); font-weight: 700; }
+.column-key dd { margin: 0; }
+.live-cell { padding: 0.5rem; }
+.live-table { --tv-max-height: 75vh; min-height: 200px; }

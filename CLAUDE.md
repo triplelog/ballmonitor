@@ -76,6 +76,7 @@ ballmonitor new nfl_win_totals --title "NFL win totals"
 ballmonitor serve                                  # browser UI at http://127.0.0.1:8765 (27K game at /27k/)
 ballmonitor build-site --out dist                   # static bundle (GitHub Pages); CI runs update-and-build daily
 ballmonitor views ncaaf_bowls [--out x.json]       # build + check one model's public page
+ballmonitor tables [--check]                        # live data tables (web/tables.toml); --check asks their servers
 ballmonitor update-and-build [--models ncaaf_bowls]  # fetch the models that are due ([fetch]), rebuild the whole site
 ballmonitor fetch mlb_bullpen [--offline]          # download/rebuild a model's data
 ballmonitor export-replay --game 401858275 --out x.mp4   # cfb_replay → vertical MP4 (needs `pip install -e '.[video]'` + ffmpeg)
@@ -158,6 +159,12 @@ pytest ballmonitor/models/race_time                # one model
   (2026-11-08, owner's call): the MLB models (`next_pitch`, `bvp_similarity`, `mlb_bullpen`),
   `cfb_replay` (until there's a YouTube Shorts account), `race_podium` and `dad`. The Pitch Guesser
   game is off too (not copied into `dist/`, no links; still at `/game` under `serve`).
+- **Live data tables** (`web/tables.toml`, `web/tables.py`): big CSVs served by tabdn table servers
+  (tabc/sqldn, ~/Desktop/portfolio/mathzetta/tabdn) get a page at `#/data/<id>` with a live
+  filter/sort table. The one exception to "nothing computed in the browser": the *server* filters
+  and sorts; `site.js` loads tabview's embed from `<server><path>web/vendor/tabview-embed.js` and
+  mounts it. A table whose `[servers]` address is blank stays off the site. `ballmonitor tables
+  [--check]` lists them and asks each server for its columns (and flags names in the config it lacks).
 - In `dist/`, `index.html` is the public page and `editor.html` the (read-only) editor below,
   linked from each page's "How this works".
 - Page rules: plain words (no internal stat names), ≤ ~8 table columns, real committed data only

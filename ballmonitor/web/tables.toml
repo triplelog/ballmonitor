@@ -1,0 +1,91 @@
+# Live data tables on the public site: big CSVs served by tabdn table servers (tabc or sqldn,
+# ~/Desktop/portfolio/mathzetta/tabdn). Each [[table]] becomes a page at #/data/<id> with a
+# filterable, sortable table; every query goes to the server, nothing is downloaded whole.
+# The page loads tabview's embed script from the server itself (<server><path>web/vendor/tabview-embed.js).
+#
+# A table whose server address is blank is left off the site, so tables can be listed here before
+# their server runs. Check them with `ballmonitor tables --check` (asks each server for its columns).
+
+[servers]
+# tabc.com --tables DIR serving Retrosheet's batting.com and pitching.com (tabdn
+# examples/retrosheet, uploaded with tools/deploy/upload-table.sh). Address with a trailing slash:
+# "https://data.tabdn.com/" once both tables are there.
+# `order` is the columns the page shows, in that order; the rest can be ticked on in the table.
+retrosheet = "https://data.tabdn.com/"
+
+[[table]]
+id = "batting-games"
+title = "Every batting line in every game"
+summary = "Each player's line in each big-league game since 1897: 5.7 million rows to filter and sort."
+sport = "Baseball"
+server = "retrosheet"
+path = "batting/"
+backend = "tabc"
+filter = "hr >= 3"
+sort = { column = "date", desc = true }
+order = ["date", "player", "team", "opp", "ab", "r", "h", "d", "t", "hr", "rbi", "w", "k", "sb"]
+limit = 100
+how = "Box scores from Retrosheet (retrosheet.org), one row per player per game. Type a filter such as hr >= 3 and team = \"NYA\", click a column to sort, or add your own column like h / ab."
+examples = [
+  { label = "Three-homer games", filter = "hr >= 3", sort = { column = "date", desc = true } },
+  { label = "Most hits in a game", filter = "ab > 0", sort = { column = "h", desc = true } },
+  { label = "A hit every time up (5+ at-bats)", filter = "ab >= 5 and h = ab", sort = { column = "ab", desc = true } },
+  { label = "10+ RBI games", filter = "rbi >= 10", sort = { column = "rbi", desc = true } },
+  { label = "World Series lines, newest first", filter = "gametype = \"worldseries\"", sort = { column = "date", desc = true } },
+]
+[table.columns]
+date = "game date"
+gametype = "regular season, world series, all-star …"
+vishome = "v = away, h = home"
+lp = "batting order spot"
+pa = "plate appearances"
+ab = "at-bats"
+r = "runs"
+h = "hits"
+d = "doubles"
+t = "triples"
+hr = "home runs"
+rbi = "runs batted in"
+w = "walks"
+iw = "intentional walks"
+k = "strikeouts"
+hbp = "hit by pitch"
+sh = "sacrifice bunts"
+sf = "sacrifice flies"
+sb = "stolen bases"
+cs = "caught stealing"
+gdp = "grounded into double plays"
+roe = "reached on error"
+
+[[table]]
+id = "pitching-games"
+title = "Every pitching line in every game"
+summary = "Each pitcher's line in each big-league game since 1897: no-hitters, 15-strikeout games, marathon starts."
+sport = "Baseball"
+server = "retrosheet"
+path = "pitching/"
+backend = "tabc"
+filter = "k >= 15"
+sort = { column = "date", desc = true }
+order = ["date", "player", "team", "opp", "ipouts", "h", "r", "er", "w", "k", "hr", "bfp", "decision"]
+limit = 100
+how = "Box scores from Retrosheet (retrosheet.org), one row per pitcher per game. ipouts counts outs recorded (27 = nine innings)."
+examples = [
+  { label = "No-hitters", filter = "h = 0 and ipouts >= 27 and bfp > 0", sort = { column = "date", desc = true } },
+  { label = "18+ strikeouts", filter = "k >= 18", sort = { column = "k", desc = true } },
+  { label = "Complete-game shutouts since 1990", filter = "cg = 1 and r = 0 and year >= 1990", sort = { column = "k", desc = true } },
+  { label = "Longest outings", filter = "ipouts >= 45", sort = { column = "ipouts", desc = true } },
+]
+[table.columns]
+date = "game date"
+ipouts = "outs recorded (3 per inning)"
+bfp = "batters faced"
+h = "hits allowed"
+r = "runs allowed"
+er = "earned runs"
+w = "walks"
+k = "strikeouts"
+hr = "home runs allowed"
+gs = "started (1/0)"
+cg = "complete game (1/0)"
+decision = "W, L, S or blank"

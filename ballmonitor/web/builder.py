@@ -27,7 +27,7 @@ from typing import Any
 
 from ballmonitor.core import registry, render, views
 from ballmonitor.core.config import read_toml
-from ballmonitor.web import server
+from ballmonitor.web import server, tables
 
 STATIC_DIR = Path(__file__).resolve().parent / "static"
 SITE_URL = "https://ballmonitor.com"  # canonical address (robots.txt, sitemap.xml)
@@ -212,7 +212,11 @@ def build_views(data_dir: Path, names: list[str], log=print) -> list[str]:
             log(f"   views {name}: {shown} in {time.perf_counter() - started:.1f}s")
     order = {s: i for i, s in enumerate(views.SPORTS)}
     index.sort(key=lambda m: (order.get(m["sport"], 99), m["order"], m["title"]))
-    (data_dir / "site.json").write_text(json.dumps({"models": index, "redirects": redirects}, indent=1), encoding="utf-8")
+    live = tables.public()   # live data tables (web/tables.toml) whose server has an address
+    if live:
+        log(f"   tables: {', '.join(t['id'] for t in live)}")
+    (data_dir / "site.json").write_text(json.dumps({"models": index, "redirects": redirects, "tables": live}, indent=1),
+                                        encoding="utf-8")
     return failures
 
 

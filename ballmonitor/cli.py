@@ -107,6 +107,10 @@ def _parser() -> argparse.ArgumentParser:
     p.add_argument("--out", type=Path, help="also write the page JSON here")
     p.set_defaults(handler=cmd_views)
 
+    p = sub.add_parser("tables", help="list the live data tables (web/tables.toml) and optionally check their servers")
+    p.add_argument("--check", action="store_true", help="ask each table server for its columns")
+    p.set_defaults(handler=cmd_tables)
+
     p = sub.add_parser("update-and-build",
                        help="fetch the models that are due (config.toml [fetch]) and rebuild the whole static site")
     p.add_argument("--out", type=Path, default=Path("dist"), help="output directory (default: dist)")
@@ -318,6 +322,22 @@ def cmd_views(args: argparse.Namespace) -> int:
         args.out.write_text(json.dumps(data, indent=1), encoding="utf-8")
         print(f"wrote {args.out} ({args.out.stat().st_size // 1024} KB)")
     return 0
+
+
+def cmd_tables(args: argparse.Namespace) -> int:
+    from ballmonitor.web import tables
+
+    cfg = tables.load()
+    for t in cfg.get("table", []):
+        url = tables.address(cfg, t)
+        print(f"{t['id']:<20} {'on the site' if url else 'off (no server address)':<24} {url or t['server'] + ' + ' + t['path']}")
+    if not args.check:
+        return 0
+    failed = 0
+    for tid, ok, msg in tables.check(cfg):
+        print(f"  {'ok ' if ok else 'BAD'} {tid}: {msg}")
+        failed += not ok
+    return 1 if failed else 0
 
 
 def cmd_update_and_build(args: argparse.Namespace) -> int:

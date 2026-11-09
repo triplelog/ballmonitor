@@ -89,7 +89,10 @@ const cell = (cls, ...kids) => el("section", { class: `ss-cell ${cls}` }, ...kid
 async function renderNav(active) {
   const site = await getJSON("data/site.json");
   const nav = document.getElementById("nav-models");
-  if (!nav.childElementCount) nav.append(...site.models.map((m) => el("a", { href: `#/${m.name}`, "data-route": m.name }, m.title)));
+  if (!nav.childElementCount) {
+    nav.append(...site.models.map((m) => el("a", { href: `#/${m.name}`, "data-route": m.name }, m.title)));
+    nav.append(...(site.tables || []).map((t) => el("a", { href: `#/data/${t.id}`, "data-route": `data/${t.id}` }, t.title)));
+  }
   for (const a of document.querySelectorAll(".ss-nav a[data-route]")) {
     if (a.dataset.route === active) a.setAttribute("aria-current", "page");
     else a.removeAttribute("aria-current");
@@ -117,6 +120,11 @@ async function renderHome() {
             el("b", {}, m.title),
             el("p", {}, m.summary),
             m.updated ? el("span", { class: "ss-chip" }, m.updated) : null)))))),
+    (site.tables || []).length ? cell("ss-p4",
+      el("div", { class: "ss-band" }, "Data tables"),
+      el("ul", { class: "model-list" }, site.tables.map((t) =>
+        el("li", {}, el("a", { class: "model-link", href: `#/data/${t.id}` },
+          el("b", {}, t.title), el("p", {}, t.summary)))))) : null,
     cell("ss-p3",
       el("div", { class: "ss-band" }, "Games"),
       el("ul", { class: "model-list" }, [...copy("home-games").querySelectorAll("li")].map((li) =>
@@ -400,8 +408,68 @@ function copyLink(url) {
   return btn;
 }
 
-// ── routing: #/ (home) and #/<model> ─────────────────────────────────────────
+// ── live data tables (web/tables.toml): queries go to a tabdn table server ──────
+// The embed script comes from the server itself (one per server address), so the table always
+// matches the server's version. Nothing is computed here: the server filters and sorts.
+const embedScripts = {};
+function loadEmbed(server) {
+  const src = `${server}web/vendor/tabview-embed.js`;
+  return embedScripts[src] = embedScripts[src] || new Promise((resolve, reject) => {
+    const s = el("script", { src, defer: "" });
+    s.onload = () => (window.Tabview ? resolve(window.Tabview) : reject(new Error("no Tabview in the script")));
+    s.onerror = () => { delete embedScripts[src]; reject(new Error(`could not load ${src}`)); };
+    document.head.append(s);
+  });
+}
+
+async function renderTable(id) {
+  const site = await getJSON("data/site.json");
+  const t = (site.tables || []).find((x) => x.id === id);
+  current = { model: null, pickers: {} };
+  if (!t) {
+    app.replaceChildren(cell("ss-p2", el("div", { class: "ss-band" }, "Page not found"),
+      el("p", {}, "That table isn't on the site. ", el("a", { href: "#/" }, "See everything"))));
+    return;
+  }
+  document.title = `${t.title} · Ball Monitor`;
+  const cls = cellClass(t.sport);
+  const host = el("div", { class: "live-table" }, el("p", { class: "loading" }, "Loading the table…"));
+  const show = async (options) => {
+    try {
+      const Tabview = await loadEmbed(t.server);
+      Tabview.mount(host, { server: t.server, backend: t.backend, theme: "light", ...t.options, ...options });
+    } catch (e) {
+      host.replaceChildren(el("p", {}, "The table server isn't answering right now. Try again in a little while."));
+      console.error(e);
+    }
+  };
+  const examples = t.examples.length ? el("div", { class: "examples" },
+    el("span", { class: "small" }, "Try: "),
+    ...t.examples.map((x) => el("button", { class: "ss-btn small", type: "button",
+      onclick: () => show({ filter: x.filter || "", sort: x.sort || null }) }, x.label))) : null;
+  const key = Object.keys(t.columns).length ? el("details", { class: "column-key" },
+    el("summary", {}, "What the columns mean"),
+    el("dl", {}, ...Object.entries(t.columns).flatMap(([k, v]) => [el("dt", {}, k), el("dd", {}, v)]))) : null;
+  app.replaceChildren(
+    cell(`${cls} page-head`,
+      el("a", { class: "back", href: "#/" }, "← All forecasts"),
+      el("div", { class: "ss-kicker" }, `${t.sport ? t.sport + " · " : ""}Data table`),
+      el("h1", { class: "ss-title" }, t.title),
+      el("p", { class: "summary" }, t.summary),
+      examples, key),
+    cell(`${cls} live-cell`, host),
+    t.how ? cell(`${cls} how`, el("div", { class: "ss-band" }, "How this works"), el("p", {}, t.how)) : null);
+  renderNav(`data/${id}`);
+  window.scrollTo(0, 0);
+  show({});
+}
+
+// ── routing: #/ (home), #/<model> and #/data/<table> ─────────────────────────
 function route() {
+  const d = location.hash.match(/^#\/data\/([a-z0-9-]+)/);
+  if (d) return renderTable(d[1]).catch((e) => {
+    app.replaceChildren(el("p", { class: "loading" }, `Something went wrong loading this page (${e.message}).`));
+  });
   const m = location.hash.match(/^#\/([a-z0-9_]+)(?:\/([a-z0-9_]+)\/([a-z0-9-]+))?/);
   if (!m) current = { model: null, pickers: {} };
   (m ? renderModel(m[1], m[2] ? { id: m[2], slug: m[3] } : null) : renderHome()).catch((e) => {
