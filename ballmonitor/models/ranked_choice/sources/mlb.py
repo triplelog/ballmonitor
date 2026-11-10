@@ -322,7 +322,12 @@ class _Matcher:
 
     def match(self, cell: str) -> list[str]:
         self.how = "exact"
-        c = _norm(re.sub(r"\(.*?\)|\*", "", cell))
+        bare = re.sub(r"\(.*?\)|\*", "", cell)
+        # "Bolte, H" / "Ewing, A" (surname, initial; 2026 ROY ballots) -> "H Bolte"
+        sur, comma, first = bare.partition(",")
+        if comma and first.strip() and _norm(first) not in SUFFIXES:
+            bare = f"{first} {sur}"
+        c = _norm(bare)
         if not c:
             return []
         if c in self.full:

@@ -27,6 +27,7 @@ def site(tmp_path_factory):
 def no_pages(monkeypatch):
     """CLI tests check the command wiring only; the pages are covered by `site`."""
     monkeypatch.setattr(builder, "build_views", lambda data_dir, names, log=print: [])
+    monkeypatch.setattr(builder, "build_pages", lambda target, data_dir: [])
 
 
 def test_extract_entities():
@@ -40,7 +41,7 @@ def test_extract_entities():
 
 def test_build_static_site(site):
     # The public page is index.html; the editor is editor.html
-    assert "static/site.js" in (site / "index.html").read_text()
+    assert "/static/site.js" in (site / "index.html").read_text()
     assert "static/app.js" in (site / "editor.html").read_text()
     assert not (site / "game.html").exists()  # Pitch Guesser is off the site for now
     for name in ("app.js", "style.css", "site.js", "site.css"):
@@ -69,12 +70,67 @@ def test_public_pages_are_built_and_valid(site):
     assert {json.loads((site / "data" / "views" / f"{a}.json").read_text(encoding="utf-8"))["model"]
             for a in addresses} == set(WITH_PAGES)
     for a in addresses:
-        page = json.loads((site / "data" / "views" / f"{a}.json").read_text(encoding="utf-8"))
+        page = builder.load_page(site / "data" / "views", a)   # split options' views read back
         assert views.check(page) == [], a
+        assert (site / "data" / "views" / f"{a}.json").stat().st_size < 400_000, f"{a}: page data too big"
+    # a big page's dropdown options load one at a time
+    bowls = json.loads((site / "data" / "views" / "ncaaf_bowls.json").read_text(encoding="utf-8"))
+    team = next(v for v in bowls["views"] if v["kind"] == "picker" and v["id"] == "team")
+    georgia = next(o for o in team["options"] if o["slug"] == "georgia")
+    assert georgia["views"] == [] and georgia["src"] == "/data/views/ncaaf_bowls/team/georgia.json"
+    assert json.loads((site / georgia["src"].lstrip("/")).read_text(encoding="utf-8"))["views"]
     # baseball and softball are separate pages; the old shared address still leads somewhere
     assert {"college_baseball", "college_softball"} <= addresses
     assert index["redirects"]["college_diamond/sport/softball"] == "college_softball"
     assert set(index["redirects"].values()) <= addresses
+
+
+def test_every_address_is_a_real_page_in_the_sitemap(site):
+    """Search engines see every page: a file per address, each with its own title, description and
+    canonical link, all listed in sitemap.xml (pages built by web/pages.py)."""
+    import re
+    index = json.loads((site / "data" / "site.json").read_text(encoding="utf-8"))
+    sitemap = re.findall(r"<loc>https://ballmonitor\.com(/[^<]*)</loc>", (site / "sitemap.xml").read_text())
+    assert len(sitemap) == len(set(sitemap))
+    expected = {"/", "/about/", "/privacy/", "/terms/", "/charts/", "/triple/", "/lineup/", "/27k/",
+                "/ncaaf_bowls/team/georgia/", *(f"/{m['name']}/" for m in index["models"]),
+                *(f"/tables/{t['id']}/" for t in index["tables"]), *(f"/charts/{c['id']}/" for c in index["charts"])}
+    assert expected <= set(sitemap)
+    titles = set()
+    for path in sitemap:
+        if path in builder.GAME_PATHS:
+            continue
+        text = (site / path.strip("/") / "index.html" if path != "/" else site / "index.html").read_text()
+        title = re.search(r"<title>([^<]*)</title>", text).group(1)
+        assert title not in titles, f"{path}: title {title!r} used twice"
+        titles.add(title)
+        assert f'<link rel="canonical" href="https://ballmonitor.com{path}">' in text, path
+        assert f'<meta property="og:url" content="https://ballmonitor.com{path}">' in text, path
+        assert re.search(r'<meta name="description" content="[^"]{20,}">', text), path
+        assert re.search(r'src="/static/site\.js\?v=[0-9a-f]{10}"', text) and "{{" not in text, path  # cache-busted
+    georgia = (site / "ncaaf_bowls" / "team" / "georgia" / "index.html").read_text()
+    assert "<title>Georgia: " in georgia and 'class="intro"' in georgia
+    # the words are in the page before any script runs; the text pages are left alone by site.js
+    bowls = (site / "ncaaf_bowls" / "index.html").read_text()
+    assert 'href="/ncaaf_bowls/team/georgia/"' in bowls and "How this works" in bowls
+    assert 'id="app" data-static' in (site / "privacy" / "index.html").read_text()
+    # a missing option's address (a past poll week) is forwarded to its page by the 404 page
+    assert "/data/views/" in (site / "404.html").read_text() and "location.replace" in (site / "404.html").read_text()
+    # an old address is a stub that forwards to the new one and isn't indexed
+    old = (site / "college_diamond" / "index.html").read_text()
+    assert "/college_baseball/" in old and 'content="noindex"' in old
+    assert "/college_diamond/" not in sitemap
+
+
+def test_page_addresses_cannot_take_the_sites_own_folders(site, tmp_path):
+    data = tmp_path / "data"
+    (data / "views").mkdir(parents=True)
+    page = {"title": "T", "summary": "S", "sport": "Running", "views": [], "updated": "", "order": 1}
+    (data / "views" / "tables.json").write_text(json.dumps(page))
+    (data / "site.json").write_text(json.dumps({"models": [{"name": "tables", **page}], "redirects": {},
+                                                "tables": [], "charts": []}))
+    with pytest.raises(ValueError, match="used by the site itself"):
+        builder.build_pages(tmp_path, data)
 
 
 def test_private_models_stay_off_the_site(site):

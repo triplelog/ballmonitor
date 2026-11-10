@@ -2,7 +2,7 @@
 
 `build.py` downloads public sports data and writes slim CSVs (short plain column names, only
 the columns worth filtering on) for the live data tables on ballmonitor.com
-(`web/tables.toml`, pages at `#/data/<id>`).
+(`web/tables.toml`, pages at `/tables/<id>/`).
 
 ```bash
 python -m ballmonitor.data_tables.build                  # all tables

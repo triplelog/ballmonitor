@@ -211,9 +211,10 @@ def _cached_weeks(raw: Path, sport: str, season: int) -> dict[str, Path]:
     return {p.stem: p for p in d.glob("*.html") if not p.stem.startswith("rankings_")}
 
 
-def _known_weeks(raw: Path, sport: str, season: int) -> set[str]:
-    """Union of the week <option>s on every cached grid page of the season."""
-    weeks = set()
+def _known_weeks(raw: Path, sport: str, season: int, extra=()) -> set[str]:
+    """Union of the week <option>s on every cached grid page of the season (+ `extra`,
+    e.g. the week list of the latest rankings page)."""
+    weeks = set(extra)
     for p in _cached_weeks(raw, sport, season).values():
         page = p.read_text(encoding="utf-8")
         weeks.update(parse_selects(page).get("week", ([], ""))[0])
@@ -224,11 +225,12 @@ def _known_weeks(raw: Path, sport: str, season: int) -> set[str]:
 def _fetch_grid(raw, sport, season, week, log) -> bool:
     status, loc, body = _get(_grid_url(sport, season, week), log)
     if status != 200 or '<div class="gridRow">' not in body:
-        log(f"  ! no ballots at {sport} {season} {week} (status {status}); not cached")
+        log(f"{sport}: no ballots posted yet for {season} {week} (status {status}); not cached")
         return False
     p = raw / sport / str(season) / f"{week}.html"
     p.parent.mkdir(parents=True, exist_ok=True)
     p.write_text(body, encoding="utf-8")
+    log(f"{sport}: downloaded ballots for {season} {week}")
     return True
 
 
@@ -254,8 +256,13 @@ def _download_sport(raw: Path, sport: str, log, have: set[str] = frozenset()) ->
     cur_season, cur_week = int(m.group(1)), m.group(2)
     log(f"{sport}: latest released poll is {cur_season} {cur_week}")
     sel = parse_selects(body)
-    if (sel.get("year", ([], ""))[1] == str(cur_season)
-            and sel.get("week", ([], ""))[1] == cur_week and parse_rankings(body)):
+    is_cur = (sel.get("year", ([], ""))[1] == str(cur_season)
+              and sel.get("week", ([], ""))[1] == cur_week)
+    # The rankings page lists every released week of the season. Use it to find new weeks:
+    # the latest week's grid page (the other place that lists them) often has no ballots for
+    # a day or so after the poll comes out, and then the weeks before it were never found.
+    released = sel.get("week", ([], ""))[0] if is_cur else []
+    if is_cur and parse_rankings(body):
         rp = raw / sport / str(cur_season) / f"rankings_{cur_week}.html"
         if not rp.exists():
             rp.parent.mkdir(parents=True, exist_ok=True)
@@ -274,7 +281,7 @@ def _download_sport(raw: Path, sport: str, log, have: set[str] = frozenset()) ->
             # past season never seen complete: its final page lists every week
             if "final-rankings" not in cached:
                 _fetch_grid(raw, sport, season, "final-rankings", log)
-        known = _known_weeks(raw, sport, season)
+        known = _known_weeks(raw, sport, season, released if season == cur_season else ())
         cached = _cached_weeks(raw, sport, season)
         missing = sorted((w for w in known if w not in cached and not done(season, w)), key=week_sort)
         if season == cur_season:

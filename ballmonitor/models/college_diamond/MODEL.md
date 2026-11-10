@@ -243,8 +243,8 @@ Test seasons 2021-2026 (6 per sport; every D-I team, ~300 per season-snapshot):
 ## Changelog
 
 - Site only (2026-11-08, no model change): the public page is split into two pages,
-  `#/college_baseball` and `#/college_softball` (`site.py` `pages()`, text in `site_college_*.md`);
-  the old `#/college_diamond` addresses redirect.
+  `/college_baseball/` and `/college_softball/` (`site.py` `pages()`, text in `site_college_*.md`);
+  the old `/college_diamond/` addresses redirect.
 - 0.1.1 — public site page (`site.py`): new `site_trend_simulations` and `site_trend_dates`
   params (site only) and `final_ratings()` helper (end-of-season ratings). Fix: the simulated
   field no longer depends on Python's set order (results were not reproducible across

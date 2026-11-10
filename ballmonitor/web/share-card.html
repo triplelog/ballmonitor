@@ -1,0 +1,20 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@600&display=block" rel="stylesheet">
+<style>
+html,body{margin:0;width:1200px;height:630px;background:#111;font-family:'Open Sans',sans-serif;overflow:hidden}
+.wrap{position:absolute;inset:36px;display:grid;grid-template-columns:1.35fr 1fr;gap:24px}
+.cell{background:#a4b6dd;padding:44px 48px;display:flex;flex-direction:column;justify-content:center}
+h1{font-family:Montserrat;font-weight:800;font-size:92px;line-height:1;margin:0 0 26px;color:#1d1d1d}
+p{font-size:34px;line-height:1.3;margin:0;color:#222;font-weight:600}
+.stack{display:grid;gap:18px;grid-template-rows:repeat(4,1fr)}
+.s{display:flex;align-items:center;padding:0 30px;font-family:Montserrat;font-weight:700;font-size:30px;color:#1d1d1d}
+.bar{flex:1;height:16px;margin-left:22px;background:rgba(255,255,255,.6);border-radius:99px;overflow:hidden}
+.bar i{display:block;height:100%;background:#000080;border-radius:99px}
+</style></head><body><div class="wrap">
+<div class="cell"><h1>Ball<br>Monitor</h1><p>Sports odds and forecasts,<br>in plain numbers</p></div>
+<div class="stack">
+<div class="s" style="background:#a4b6dd">Playoffs<span class="bar"><i style="width:82%"></i></span></div>
+<div class="s" style="background:#d09292">Brackets<span class="bar"><i style="width:58%"></i></span></div>
+<div class="s" style="background:#c094cc">Races<span class="bar"><i style="width:70%"></i></span></div>
+<div class="s" style="background:#c37892">Polls<span class="bar"><i style="width:44%"></i></span></div>
+</div></div></body></html>

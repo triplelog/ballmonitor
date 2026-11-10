@@ -152,8 +152,26 @@ pytest ballmonitor/models/race_time                # one model
   `site.py` (`page(model)` built with `core/views.py`), written to `data/views/<name>.json` by
   `build-site`; `site.js` only displays them (search, sort, "show all", bars, line charts,
   dropdown pickers). Nothing is computed in the browser. Home index: `data/site.json`.
+- **Addresses are real paths** (`/ncaaf_bowls/`, `/ncaaf_bowls/team/georgia/`, `/tables/<id>/`,
+  `/charts/<id>/`, `/about/`), not `#/` routes, so search engines see every page: `build_pages`
+  (`web/pages.py`) writes a copy of site.html at each one with its own title, description, canonical and
+  share tags and the page's words (headline, option links, "How this works") already in `<main>`;
+  `site.js` then draws the page and follows links between pages without reloading (History API).
+  Old `#/` links are turned into paths on arrival; `REDIRECTS` get stub pages. `sitemap.xml` lists every
+  address. Page addresses may not use the site's own first parts (`pages.RESERVED`).
+- **Page weight:** a page whose JSON is over 150 KB (`builder.SPLIT_BYTES`) has each top-level picker
+  option's views written to `data/views/<address>/<picker>/<slug>.json` (`src` on the option); `site.js`
+  fetches one when it's shown. `builder.load_page` reads a split page back whole (tests).
+- **Head and assets:** every page shares `static/share.png` (1200×630; source `web/share-card.html`, render
+  it with headless Chrome) as its link-preview image; the games' copied pages get the same tags at build
+  time (`GAME_META`, their sources untouched). Fonts are self-hosted (`static/fonts.css` + `static/fonts/`,
+  Latin + Latin Extended, OFL), no Google Fonts. `/static/*.css|js` links in the built pages carry
+  `?v=<content hash>`. `editor.html` is titled "Model editor" and `noindex`.
+- **Text pages** `/about/`, `/privacy/`, `/terms/`: HTML fragments in `web/pages/*.html` (claude-ui
+  markers, on Claude UI's Content page), linked from the footer on every page. Keep `privacy.html`
+  true to what the site sends where (hosts, fonts, table server, jsDelivr, local storage).
 - One model can feed several pages: `site.py` defines `pages(model) -> {address: page}` instead
-  of `page(model)` (e.g. `college_diamond` → `#/college_baseball` and `#/college_softball`), with
+  of `page(model)` (e.g. `college_diamond` → `/college_baseball/` and `/college_softball/`), with
   text in `site_<address>.md`; old addresses go in the module's `REDIRECTS` (`site.js` follows them).
 - **Which models are on the site:** `[web] public = false` in a model's config.toml keeps it off
   the static build (no page, not in the editor; still in the CLI, `serve` and tests). Off for now
@@ -161,14 +179,15 @@ pytest ballmonitor/models/race_time                # one model
   `cfb_replay` (until there's a YouTube Shorts account), `race_podium` and `dad`. The Pitch Guesser
   game is off too (not copied into `dist/`, no links; still at `/game` under `serve`).
 - **Live data tables** (`web/tables.toml`, `web/tables.py`): big CSVs served by tabdn table servers
-  (tabc/sqldn, ~/Desktop/portfolio/mathzetta/tabdn) get a page at `#/data/<id>` with a live
+  (tabc/sqldn, ~/Desktop/portfolio/mathzetta/tabdn) get a page at `/tables/<id>/` with a live
   filter/sort table. The one exception to "nothing computed in the browser": the *server* filters
   and sorts; `site.js` loads tabview's embed from `<server><path>web/vendor/tabview-embed.js` and
-  mounts it. A table whose `[servers]` address is blank stays off the site. `ballmonitor tables
+  mounts it with the advanced controls hidden (adding columns, stats, groups) and `[table.labels]`
+  as the headers (`labels`/`timing` need tabview from 2026-11-10 on the server). A table whose `[servers]` address is blank stays off the site. `ballmonitor tables
   [--check]` lists them and asks each server for its columns (and flags names in the config it lacks).
   `ballmonitor/data_tables/build.py` makes the CSVs for the QB, NBA and WNBA tables (nflverse,
   SportsDataverse/ESPN; see its README for licenses and the upload steps).
-- **Baseball charts** (`#/charts`, `#/charts/<template>`): pyslots' embeddable form (Python chart
+- **Baseball charts** (`/charts/`, `/charts/<id>/`): pyslots' embeddable form (Python chart
   templates with formula slots, ~/Desktop/portfolio/mathzetta/pyslots) and its chart templates and Lahman
   data, copied into `ballmonitor/charts/` by `scripts/sync-charts.sh` (committed, so CI needs nothing
   outside this repo; never edit them here) and to `dist/charts/` by the build. The second exception to
@@ -176,7 +195,7 @@ pytest ballmonitor/models/race_time                # one model
   browser (Pyodide, from jsDelivr on the first run, a few seconds). `tests/test_charts.py` checks every
   listed template has its data and its title/axis slots. Which charts the page offers is `web/charts.toml` (`web/charts.py`): a
   plain name, an intro and starting formulas per chart, so one template gives several charts; grouped
-  buttons at `#/charts/<id>`; checked by `tests/test_chart_pages.py`; on Claude UI's Content page. MathZetta's home links this page (mathzetta-sites'
+  buttons at `/charts/<id>/`; checked by `tests/test_chart_pages.py`; on Claude UI's Content page. MathZetta's home links this page (mathzetta-sites'
   registry, `external`).
 - In `dist/`, `index.html` is the public page and `editor.html` the (read-only) editor below,
   linked from each page's "How this works".
@@ -192,13 +211,13 @@ pytest ballmonitor/models/race_time                # one model
 - Every page leads with a data-driven `headline` (`page(headline=...)`), and picker options with an
   `intro` one-liner: the one answer a fan wants first. Tables keep their name column in place when
   scrolled sideways (`col(sticky=True)`, default: first linked, else first text column).
-- Pickers double as sub-pages: each option has an address `#/<model>/<picker id>/<slug>` (e.g.
-  `#/ncaaf_bowls/team/georgia`), and a table column with `link="<picker id>"` links its cells there.
+- Pickers double as sub-pages: each option has an address `/<model>/<picker id>/<slug>/` (e.g.
+  `/ncaaf_bowls/team/georgia/`), and a table column with `link="<picker id>"` links its cells there.
 - Preview: `ballmonitor build-site --out /tmp/site && python3 -m http.server -d /tmp/site 8790`.
 - Look: **Shioh style** (`static/shioh-style.css` is the unchanged Shioh base, update it by replacing
   the file; theme overrides and page-specific pieces in `site.css`; phone menu/toasts in `shioh.js`): pastel cells on black, sidebar + main column, Montserrat/Open Sans. Each sport
-  owns one cell colour (`SPORT_CELL` in site.js). The build also writes `robots.txt`,
-  `sitemap.xml` (`SITEMAP_PATHS` in builder.py) and copies the Shioh `404.html`. The editor and
+  owns one cell colour (`SPORT_CELL` in core/views.py, sent to site.js in data/site.json). The build also writes `robots.txt`,
+  `sitemap.xml` (every page address + `GAME_PATHS` in builder.py) and copies the Shioh `404.html`. The editor and
   the games keep their own styles.
 
 ## Browser UI (`ballmonitor serve`)

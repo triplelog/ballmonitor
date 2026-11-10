@@ -72,8 +72,6 @@ th {
   text-transform: uppercase;
   letter-spacing: 0.03em;
   border-bottom: 2px solid var(--ss-rule);
-  cursor: pointer;
-  user-select: none;
   white-space: normal;
   vertical-align: bottom;
   min-width: 56px;
@@ -112,8 +110,8 @@ td.heat.dark { color: #fff; }
 
 /* ---------- phones ---------- */
 @media (max-width: 860px) {
-  .nav-models { display: none; }  /* the home page lists every forecast */
-  .barrow { grid-template-columns: minmax(90px, 140px) 1fr 54px; }
+  .barrow { grid-template-columns: minmax(0, 1.3fr) minmax(60px, 1fr) 50px; }
+  .barlabel { white-space: normal; overflow-wrap: anywhere; line-height: 1.25; }
   .search { width: 100%; }
 }
 
@@ -153,7 +151,7 @@ th.stick, td.stick {
 .column-key dd { margin: 0; }
 .live-cell { padding: 0.5rem; }
 .live-table { --tv-max-height: 75vh; min-height: 200px; }
-/* the baseball charts (#/charts): pyslots' form on a white surface (Shioh: editors go on white),
+/* the baseball charts (/charts/): pyslots' form on a white surface (Shioh: editors go on white),
    the cell's band and intro replace the form's own heading and its developer description */
 .live-chart { min-height: 200px; }
 .live-chart .pse { font-family: var(--ss-font-body); border: 1px solid var(--ss-border); border-radius: var(--ss-radius-sm);
@@ -182,3 +180,29 @@ th.stick, td.stick {
 .col-chooser summary::after { content: " ▾"; font-size: 0.75rem; }
 .col-list { position: absolute; z-index: 5; margin-top: 4px; background: #fff; border: 1px solid var(--ss-border); border-radius: var(--ss-radius-sm); box-shadow: 0 6px 18px rgb(0 0 0 / 0.18); padding: 0.5rem 0.8rem; display: grid; gap: 0.25rem; min-width: 220px; max-height: 60vh; overflow: auto; }
 .col-list label { display: flex; align-items: center; gap: 0.4rem; font-size: 0.9rem; white-space: nowrap; }
+
+/* ---------- footer (every page): text pages, disclaimer, build date ---------- */
+.site-foot { font-size: 0.9rem; }
+.site-foot nav a { font-weight: 600; }
+.site-foot p { margin: 0.35rem 0 0; }
+
+/* ---------- pre-written page words (web/pages.py), shown until site.js draws the page ---------- */
+.option-links { columns: 14rem auto; margin: 0; padding-left: 1.1rem; }
+.option-links li { break-inside: avoid; margin: 0 0 0.2rem; }
+
+/* ---------- text pages (/about/, /privacy/, /terms/) ---------- */
+.text-page h2 { font-family: var(--ss-font-head); font-size: 1.1rem; margin: 1.2rem 0 0.4rem; }
+.text-page p, .text-page li { max-width: 46rem; }
+.text-page ul { padding-left: 1.2rem; }
+
+/* sortable headers: the whole header is a button (keyboard + screen readers) */
+th button.sort {
+  all: unset;
+  display: inline;
+  cursor: pointer;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+}
+th button.sort:focus-visible { outline: 2px solid var(--ss-ink); outline-offset: 2px; }
+h1[tabindex="-1"]:focus { outline: none; }

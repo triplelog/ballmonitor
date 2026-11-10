@@ -47,8 +47,13 @@ not cached. Request plan per sport per run:
 1. `/<sport>/` (1 request) → latest season/week.
 2. Past seasons whose cached pages don't list `final-rankings`: fetch the
    `final-rankings` grid (it lists every week), then every uncached week.
-3. Current season: fetch the latest week's grid if uncached (it carries the current week
-   list), then any other uncached week up to it.
+3. Current season: fetch the latest week's grid if uncached, then any other uncached week
+   up to it. The week list comes from the step-1 rankings page (plus cached grid pages),
+   because the latest week's grid often has no ballots for a while after the poll is
+   released; it is then not cached and retried on the next run, while the weeks before
+   it are still fetched. (Before 2026-11-10 the list came only from grid pages, so such a
+   run found no new weeks at all: on CI, with no cache, the site fell back to the
+   committed CSV's last week.)
 4. One rankings page per season for validation (the `final-rankings` week, else the
    earliest cached week); the latest-week rankings page from step 1 is kept for free.
 

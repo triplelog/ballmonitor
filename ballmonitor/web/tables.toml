@@ -1,5 +1,5 @@
 # Live data tables on the public site: big CSVs served by tabdn's tabc table server
-# (~/Desktop/portfolio/mathzetta/tabdn). Each [[table]] becomes a page at #/data/<id> with a
+# (~/Desktop/portfolio/mathzetta/tabdn). Each [[table]] becomes a page at /tables/<id>/ with a
 # filterable, sortable table; every query goes to the server, nothing is downloaded whole.
 # The page loads tabview's embed script from the server itself (<server><path>web/vendor/tabview-embed.js).
 #
@@ -11,6 +11,8 @@
 # examples/retrosheet, uploaded with tools/deploy/upload-table.sh). Address with a trailing slash:
 # "https://data.tabdn.com/" once both tables are there.
 # `order` is the columns the page shows, in that order; the rest can be ticked on in the table.
+# `[table.labels]`: the column headers fans see (filters still use the names; the page's "What the
+# columns mean" lists both). `[table.columns]`: what each name means.
 retrosheet = "https://data.tabdn.com/"
 # The tables built by `python -m ballmonitor.data_tables.build`: qb_games.com. (The NBA and WNBA
 # tables were removed on 2026-11-10: their box scores are ESPN's / NBA.com's, whose terms don't allow
@@ -29,7 +31,7 @@ filter = "hr >= 3"
 sort = { column = "date", desc = true }
 order = ["date", "player", "team", "opp", "ab", "r", "h", "d", "t", "hr", "rbi", "w", "k", "sb"]
 limit = 100
-how = "Box scores from Retrosheet (retrosheet.org), one row per player per game. Type a filter such as hr >= 3 and team = \"NYA\", click a column to sort, or add your own column like h / ab."
+how = "Box scores from Retrosheet (retrosheet.org), one row per player per game. Type a filter such as hr >= 3 and team = \"NYA\" (filters use the short names under \"What the columns mean\"), or click a column to sort."
 examples = [
   { label = "Three-homer games", filter = "hr >= 3", sort = { column = "date", desc = true } },
   { label = "Most hits in a game", filter = "ab > 0", sort = { column = "h", desc = true } },
@@ -37,6 +39,31 @@ examples = [
   { label = "10+ RBI games", filter = "rbi >= 10", sort = { column = "rbi", desc = true } },
   { label = "World Series lines, newest first", filter = "gametype = \"worldseries\"", sort = { column = "date", desc = true } },
 ]
+[table.labels]
+date = "Date"
+player = "Player"
+team = "Team"
+opp = "Opp"
+gametype = "Game"
+lp = "Bat spot"
+pa = "PA"
+ab = "AB"
+r = "R"
+h = "H"
+d = "2B"
+t = "3B"
+hr = "HR"
+rbi = "RBI"
+w = "BB"
+iw = "IBB"
+k = "SO"
+hbp = "HBP"
+sh = "SH"
+sf = "SF"
+sb = "SB"
+cs = "CS"
+gdp = "GDP"
+roe = "ROE"
 [table.columns]
 date = "game date"
 gametype = "regular season, world series, all-star …"
@@ -73,13 +100,29 @@ filter = "k >= 15"
 sort = { column = "date", desc = true }
 order = ["date", "player", "team", "opp", "ipouts", "h", "r", "er", "w", "k", "hr", "bfp", "decision"]
 limit = 100
-how = "Box scores from Retrosheet (retrosheet.org), one row per pitcher per game. ipouts counts outs recorded (27 = nine innings)."
+how = "Box scores from Retrosheet (retrosheet.org), one row per pitcher per game. Outs counts outs recorded (27 = nine innings); in a filter it's ipouts, as in ipouts >= 27. Filters use the short names under \"What the columns mean\"."
 examples = [
   { label = "No-hitters", filter = "h = 0 and ipouts >= 27 and bfp > 0", sort = { column = "date", desc = true } },
   { label = "18+ strikeouts", filter = "k >= 18", sort = { column = "k", desc = true } },
   { label = "Complete-game shutouts since 1990", filter = "cg = 1 and r = 0 and year >= 1990", sort = { column = "k", desc = true } },
   { label = "Longest outings", filter = "ipouts >= 45", sort = { column = "ipouts", desc = true } },
 ]
+[table.labels]
+date = "Date"
+player = "Player"
+team = "Team"
+opp = "Opp"
+ipouts = "Outs"
+bfp = "Batters"
+h = "H"
+r = "R"
+er = "ER"
+w = "BB"
+k = "SO"
+hr = "HR"
+gs = "Start"
+cg = "Complete"
+decision = "Decision"
 [table.columns]
 date = "game date"
 ipouts = "outs recorded (3 per inning)"
@@ -106,7 +149,7 @@ filter = "yds >= 400"
 sort = { column = "season", desc = true }
 order = ["season", "week", "type", "player", "team", "opp", "cmp", "att", "yds", "td", "int", "rating", "sacks", "epa", "rush_yds"]
 limit = 100
-how = "NFL weekly player stats from nflverse (nflverse.com, CC BY 4.0), one row per player per game with a pass thrown. Rating is the official NFL passer rating, worked out from each game's line."
+how = "NFL weekly player stats from nflverse (nflverse.com, CC BY 4.0), one row per player per game with a pass thrown. Rating is the official NFL passer rating, worked out from each game's line. Filters use the short names under \"What the columns mean\", as in yds >= 400 and td >= 4."
 examples = [
   { label = "400-yard games", filter = "yds >= 400", sort = { column = "yds", desc = true } },
   { label = "Perfect passer rating (20+ attempts)", filter = "rating >= 158.3 and att >= 20", sort = { column = "season", desc = true } },
@@ -115,6 +158,32 @@ examples = [
   { label = "Playoff games", filter = "type = \"POST\"", sort = { column = "epa", desc = true } },
   { label = "100 rushing yards by a QB", filter = "rush_yds >= 100 and pos = \"QB\"", sort = { column = "rush_yds", desc = true } },
 ]
+[table.labels]
+season = "Season"
+week = "Week"
+type = "Game"
+player = "Player"
+team = "Team"
+opp = "Opp"
+pos = "Pos"
+cmp = "Comp"
+att = "Att"
+yds = "Yards"
+td = "TD"
+int = "INT"
+rating = "Rating"
+ypa = "Yds/att"
+sacks = "Sacked"
+sack_yds = "Sack yds"
+air_yds = "Air yds"
+first_downs = "1st downs"
+epa = "Pts added"
+cpoe = "Comp % +/-"
+rush = "Rushes"
+rush_yds = "Rush yds"
+rush_td = "Rush TD"
+fumbles_lost = "Fumbles lost"
+fantasy = "Fantasy pts"
 [table.columns]
 type = "REG = regular season, POST = playoffs"
 pos = "position (non-quarterbacks who threw a pass are in too)"

@@ -1,11 +1,14 @@
 // Ball Monitor public page. Shows the tables and charts that `ballmonitor build-site` wrote to
 // data/site.json and data/views/<model>.json (from each model's site.py). It never runs a
 // model: every number on the page was computed at build time.
+// Addresses are real paths (/ncaaf_bowls/, /ncaaf_bowls/team/georgia/, /tables/<id>/, /charts/<id>/):
+// the build writes a copy of this page at each one (web/pages.py), and links between them are
+// followed here without reloading. Old #/ addresses are turned into paths on arrival.
 "use strict";
 
 const app = document.getElementById("app");
 const cache = {};
-// The open model page and its pickers: #/<model>/<picker id>/<option slug> selects an option.
+// The open model page and its pickers: /<model>/<picker id>/<option slug>/ selects an option.
 let current = { model: null, pickers: {} };
 const slugify = (t) => String(t).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
 
@@ -74,27 +77,19 @@ function fmt(v, kind = "text", decimals, zeroDash = true) {
 }
 
 // ── Shioh cells: each sport owns one cell colour ─────────────────────────────
-const SPORT_CELL = {
-  "College football": "ss-p1",
-  "Baseball": "ss-p4",
-  "College baseball & softball": "ss-p2",
-  "Running": "ss-p3",
-  "Polls & awards": "ss-p5",
-  "More sports": "ss-p1",
-  "Pro football": "ss-p1",       // data tables
-  "Basketball": "ss-p3",
-};
+// (the map is core/views.py SPORT_CELL, sent in data/site.json as `cells`)
+let SPORT_CELL = {};
 const cellClass = (sport) => SPORT_CELL[sport] || "ss-p1";
 const cell = (cls, ...kids) => el("section", { class: `ss-cell ${cls}` }, ...kids);
 
 // sidebar: one link per forecast page, grouped like the home page
 async function renderNav(active) {
-  const site = await getJSON("data/site.json");
+  const site = await getJSON("/data/site.json");
   const nav = document.getElementById("nav-models");
   if (!nav.childElementCount) {
-    nav.append(...site.models.map((m) => el("a", { href: `#/${m.name}`, "data-route": m.name }, m.title)));
-    nav.append(...(site.tables || []).map((t) => el("a", { href: `#/data/${t.id}`, "data-route": `data/${t.id}` }, t.title)));
-    nav.append(el("a", { href: "#/charts", "data-route": "charts" }, "Baseball charts"));
+    nav.append(...site.models.map((m) => el("a", { href: `/${m.name}/`, "data-route": m.name }, m.title)));
+    nav.append(...(site.tables || []).map((t) => el("a", { href: `/tables/${t.id}/`, "data-route": `tables/${t.id}` }, t.title)));
+    if ((site.charts || []).length) nav.append(el("a", { href: "/charts/", "data-route": "charts" }, "Baseball charts"));
   }
   for (const a of document.querySelectorAll(".ss-nav a[data-route]")) {
     if (a.dataset.route === active) a.setAttribute("aria-current", "page");
@@ -107,8 +102,8 @@ async function renderNav(active) {
 const copy = (id) => document.getElementById(id).content.cloneNode(true);
 
 async function renderHome() {
-  const site = await getJSON("data/site.json");
-  document.title = "Ball Monitor";
+  const site = await getJSON("/data/site.json");
+  setHead("Ball Monitor", null, "/");
   const groups = {};
   for (const m of site.models) (groups[m.sport] = groups[m.sport] || []).push(m);
   app.replaceChildren(
@@ -119,24 +114,24 @@ async function renderHome() {
       cell(cellClass(sport),
         el("div", { class: "ss-band" }, sport),
         el("ul", { class: "model-list" }, models.map((m) =>
-          el("li", {}, el("a", { class: "model-link", href: `#/${m.name}` },
+          el("li", {}, el("a", { class: "model-link", href: `/${m.name}/` },
             el("b", {}, m.title),
             el("p", {}, m.summary),
             m.updated ? el("span", { class: "ss-chip" }, m.updated) : null)))))),
     (site.tables || []).length ? cell("ss-p4",
       el("div", { class: "ss-band" }, "Data tables"),
       el("ul", { class: "model-list" }, site.tables.map((t) =>
-        el("li", {}, el("a", { class: "model-link", href: `#/data/${t.id}` },
+        el("li", {}, el("a", { class: "model-link", href: `/tables/${t.id}/` },
           el("b", {}, t.title), el("p", {}, t.summary)))))) : null,
     (site.charts || []).length ? cell(cellClass("Baseball"),
       el("div", { class: "ss-band" }, "Charts"),
-      el("ul", { class: "model-list" }, el("li", {}, el("a", { class: "model-link", href: "#/charts" },
+      el("ul", { class: "model-list" }, el("li", {}, el("a", { class: "model-link", href: "/charts/" },
         el("b", {}, "Baseball charts"),
         el("p", {}, `${site.charts.length} charts of every season since 1871 (how hitters age, power by decade, the best seasons), and you can change any of them.`))))) : null,
     cell("ss-p3",
       el("div", { class: "ss-band" }, "Games"),
       el("ul", { class: "model-list" }, [...copy("home-games").querySelectorAll("li")].map((li) =>
-        el("li", {}, el("a", { class: "model-link", href: li.dataset.href || "#/" }, ...li.childNodes))))),
+        el("li", {}, el("a", { class: "model-link", href: li.dataset.href || "/" }, ...li.childNodes))))),
   );
   renderNav("");
   window.scrollTo(0, 0);
@@ -150,23 +145,22 @@ async function renderModel(name, pick) {
   }
   let page;
   try {
-    page = await getJSON(`data/views/${name}.json`);
+    page = await getJSON(`/data/views/${name}.json`);
   } catch (e) {
     // an old address (e.g. a page that was split in two): data/site.json maps it to the new one
-    const redirects = (await getJSON("data/site.json").catch(() => ({}))).redirects || {};
+    const redirects = (await getJSON("/data/site.json").catch(() => ({}))).redirects || {};
     const to = (pick && redirects[`${name}/${pick.id}/${pick.slug}`]) || redirects[name];
-    if (to) { location.replace(`#/${to}`); return; }
-    app.replaceChildren(cell("ss-p2", el("div", { class: "ss-band" }, "Page not found"),
-      el("p", {}, "That forecast doesn't exist. ", el("a", { href: "#/" }, "See all forecasts"))));
+    if (to) { location.replace(`/${to}/`); return; }
+    notFound("That forecast doesn't exist.");
     return;
   }
-  document.title = `${page.title} · Ball Monitor`;
+  setHead(page.title, page.summary, `/${name}/`);
   const cls = cellClass(page.sport);
-  current = { model: name, pickers: {} };
+  current = { model: name, title: page.title, pickers: {} };
   pending = pick || null;
   app.replaceChildren(
     cell(`${cls} page-head`,
-      el("a", { class: "back", href: "#/" }, "← All forecasts"),
+      el("a", { class: "back", href: "/" }, "← Home"),
       el("div", { class: "ss-kicker" }, page.sport),
       el("h1", { class: "ss-title" }, page.title),
       el("p", { class: "summary" }, page.summary),
@@ -176,7 +170,7 @@ async function renderModel(name, pick) {
     page.how ? cell(`${cls} how`,
       el("div", { class: "ss-band" }, "How this works"),
       el("p", {}, page.how),
-      el("p", { class: "small" }, el("a", { href: `editor.html?model=${encodeURIComponent(page.model || name)}` }, "Full method, settings and assumptions →"))) : null,
+      el("p", { class: "small" }, el("a", { href: `/editor.html?model=${encodeURIComponent(page.model || name)}` }, "Full method, settings and assumptions →"))) : null,
   );
   renderNav(name);
   if (pick && current.pickers[pick.id]) current.pickers[pick.id](pick.slug, true);
@@ -261,15 +255,18 @@ function renderTable(v) {
   function draw() {
     const rs = rows();
     const shown = state.all || state.q ? rs : rs.slice(0, v.page_size);
+    // each header is a button (keyboard and screen readers can sort); aria-sort says which is sorted
     const head = el("tr", {}, shownCols().map((c) => el("th", {
       class: [numeric(c) ? "num" : "", c.key === stickKey ? "stick" : "", state.sort === c.key ? (state.desc ? "sorted desc" : "sorted asc") : ""].join(" ").trim() || null,
-      title: "Sort",
+      scope: "col",
+      "aria-sort": state.sort === c.key ? (state.desc ? "descending" : "ascending") : null,
+    }, el("button", { type: "button", class: "sort", title: `Sort by ${c.label}`,
       onclick: () => {
         if (state.sort === c.key) state.desc = !state.desc;
         else { state.sort = c.key; state.desc = numeric(c) && !c.low_first; }
         draw();
-      },
-    }, c.label)));
+        wrap.querySelector(`th[aria-sort] button`)?.focus();
+      } }, c.label))));
     const body = shown.map((r) => el("tr", {}, shownCols().map((c) => {
       const val = r[c.key];
       const text = fmt(val, c.fmt, c.decimals);
@@ -282,7 +279,7 @@ function renderTable(v) {
         const a = Math.round(Math.min(1, val / heatMax) * 80);
         return el("td", { class: `${align} heat${a > 42 ? " dark" : ""}`, style: `background: color-mix(in srgb, var(--ss-accent) ${a}%, transparent)` }, text);
       }
-      const content = c.link && text ? el("a", { href: `#/${current.model}/${c.link}/${slugify(val)}` }, text) : text;
+      const content = c.link && text ? el("a", { href: `/${current.model}/${c.link}/${slugify(val)}/` }, text) : text;
       return el("td", { class: [align, text.length > 36 ? "long" : "", c.key === stickKey ? "stick" : ""].join(" ").trim() || null }, content);
     })));
     wrap.replaceChildren(el("table", {}, el("thead", {}, head), el("tbody", {}, body)));
@@ -378,12 +375,28 @@ function renderPicker(v, cls) {
   const body = el("div", { class: "picked" });
   const select = el("select", { "aria-label": v.label, onchange: (e) => show(+e.target.value, true) },
     v.options.map((o, i) => el("option", { value: i }, o.label)));
-  // `remember`: put this option in the address bar (#/<model>/<picker>/<slug>) so it can be shared
-  function show(i, remember) {
+  // `remember`: put this option in the address bar (/<model>/<picker>/<slug>/) so it can be shared.
+  // A big page's options carry `src` instead of views (builder.split_options): fetched when shown.
+  async function show(i, remember) {
     select.value = String(i);
     const o = v.options[i];
+    if (o.src && !o.views.length) {
+      body.replaceChildren(o.intro ? el("p", { class: "intro" }, o.intro) : "", el("p", { class: "loading" }, "Loading…"));
+      try {
+        o.views = (await getJSON(o.src)).views;
+      } catch (e) {
+        body.replaceChildren(el("p", {}, "This part of the page didn't load. Try again in a moment."));
+        console.error(e);
+        return;
+      }
+      if (select.value !== String(i)) return;   // another option was picked meanwhile
+    }
     body.replaceChildren(o.intro ? el("p", { class: "intro" }, o.intro) : "", ...o.views.map((w) => renderView(w, cls, true)));
-    if (remember && current.model) history.replaceState(null, "", `#/${current.model}/${v.id}/${o.slug || slugify(o.label)}`);
+    if (remember && current.model) {
+      const path = `/${current.model}/${v.id}/${o.slug || slugify(o.label)}/`;
+      history.replaceState(null, "", path);
+      setHead(`${o.label}: ${current.title}`, o.intro || null, path);
+    }
   }
   const fromAddress = pending && pending.id === v.id ? v.options.findIndex((o) => (o.slug || slugify(o.label)) === pending.slug) : -1;
   show(fromAddress >= 0 ? fromAddress : v.default || 0);
@@ -399,12 +412,21 @@ function renderPicker(v, cls) {
     find = el("span", { class: "pick-find" },
       el("input", { class: "search", type: "search", list: listId, placeholder: `Find a ${v.label.toLowerCase()}…`,
         "aria-label": `Find a ${v.label.toLowerCase()}`,
+        // switch only on a whole name (typed, or picked from the list) or on Enter (the first
+        // name containing what was typed), not on every letter
         oninput: (e) => {
           const q = e.target.value.trim().toLowerCase();
-          if (!q) return;
-          const exact = v.options.findIndex((o) => o.label.toLowerCase() === q);
-          const i = exact >= 0 ? exact : v.options.findIndex((o) => o.label.toLowerCase().includes(q));
-          if (i >= 0 && String(i) !== select.value) show(i, true);
+          const i = v.options.findIndex((o) => o.label.toLowerCase() === q);
+          if (q && i >= 0 && String(i) !== select.value) show(i, true);
+        },
+        onkeydown: (e) => {
+          if (e.key !== "Enter") return;
+          const q = e.target.value.trim().toLowerCase();
+          // best match: the name starts with it, then a word in it does, then it's anywhere in the name
+          const names = v.options.map((o) => o.label.toLowerCase());
+          const i = !q ? -1 : [(n) => n.startsWith(q), (n) => n.split(/[\s(-]+/).some((w) => w.startsWith(q)), (n) => n.includes(q)]
+            .map((test) => names.findIndex(test)).find((k) => k >= 0) ?? -1;
+          if (i >= 0) { e.preventDefault(); show(i, true); }
         } }),
       el("datalist", { id: listId }, v.options.map((o) => el("option", { value: o.label }))));
   }
@@ -413,13 +435,13 @@ function renderPicker(v, cls) {
     v.subtitle ? el("p", { class: "subtitle" }, v.subtitle) : null,
     el("div", { class: "pick-row" }, el("label", { class: "pick" }, `${v.label}: `, select), find, copyLink(() => {
       const o = v.options[+select.value];
-      return `${location.href.split("#")[0]}#/${current.model}/${v.id}/${o.slug || slugify(o.label)}`;
+      return `${location.origin}/${current.model}/${v.id}/${o.slug || slugify(o.label)}/`;
     })),
     v.note ? el("p", { class: "note" }, v.note) : null,
     body);
 }
 
-// "Copy link": the address already names the picked option (#/<model>/<picker>/<slug>).
+// "Copy link": the address already names the picked option (/<model>/<picker>/<slug>/).
 function copyLink(url) {
   const btn = el("button", { class: "ss-btn copy-link", type: "button", onclick: async () => {
     const href = url();
@@ -433,7 +455,7 @@ function copyLink(url) {
   return btn;
 }
 
-// ── live data tables (web/tables.toml): queries go to a tabdn table server ──────
+// ── live data tables (web/tables.toml) at /tables/<id>/: queries go to a tabdn table server ──
 // The embed script comes from the server itself (one per server address), so the table always
 // matches the server's version. Nothing is computed here: the server filters and sorts.
 const embedScripts = {};
@@ -448,21 +470,21 @@ function loadEmbed(server) {
 }
 
 async function renderDataTable(id) {
-  const site = await getJSON("data/site.json");
+  const site = await getJSON("/data/site.json");
   const t = (site.tables || []).find((x) => x.id === id);
   current = { model: null, pickers: {} };
-  if (!t) {
-    app.replaceChildren(cell("ss-p2", el("div", { class: "ss-band" }, "Page not found"),
-      el("p", {}, "That table isn't on the site. ", el("a", { href: "#/" }, "See everything"))));
-    return;
-  }
-  document.title = `${t.title} · Ball Monitor`;
+  if (!t) return notFound("That table isn't on the site.");
+  setHead(t.title, t.summary, `/tables/${id}/`);
   const cls = cellClass(t.sport);
   const host = el("div", { class: "live-table" }, el("p", { class: "loading" }, "Loading the table…"));
   const show = async (options) => {
     try {
       const Tabview = await loadEmbed(t.server);
-      Tabview.mount(host, { server: t.server, backend: t.backend, theme: "light", ...t.options, ...options });
+      // fans get the filter, the Try buttons, sorting, the column list and downloads; adding columns,
+      // stats and groups stay on tabdn.com. `labels` and `timing` need tabview 2026-11-10 or later
+      // (an older embed ignores them).
+      Tabview.mount(host, { server: t.server, backend: t.backend, theme: "light", timing: false,
+        hide: ["compiled", "helper", "computed", "stats", "group"], ...t.options, ...options });
     } catch (e) {
       host.replaceChildren(el("p", {}, "The table server isn't answering right now. Try again in a little while."));
       console.error(e);
@@ -472,19 +494,22 @@ async function renderDataTable(id) {
     el("span", { class: "small" }, "Try: "),
     ...t.examples.map((x) => el("button", { class: "ss-btn small", type: "button",
       onclick: () => show({ filter: x.filter || "", sort: x.sort || null }) }, x.label))) : null;
+  // the name a filter uses, then the header it has on the page and what it means
+  const labels = t.labels || {};
   const key = Object.keys(t.columns).length ? el("details", { class: "column-key" },
     el("summary", {}, "What the columns mean"),
-    el("dl", {}, ...Object.entries(t.columns).flatMap(([k, v]) => [el("dt", {}, k), el("dd", {}, v)]))) : null;
+    el("dl", {}, ...Object.entries(t.columns).flatMap(([k, v]) => [el("dt", {}, k),
+      el("dd", {}, labels[k] && labels[k].toLowerCase() !== k ? `${labels[k]}: ${v}` : v)]))) : null;
   app.replaceChildren(
     cell(`${cls} page-head`,
-      el("a", { class: "back", href: "#/" }, "← All forecasts"),
+      el("a", { class: "back", href: "/" }, "← Home"),
       el("div", { class: "ss-kicker" }, `${t.sport ? t.sport + " · " : ""}Data table`),
       el("h1", { class: "ss-title" }, t.title),
       el("p", { class: "summary" }, t.summary),
       examples, key),
     cell(`${cls} live-cell`, host),
     t.how ? cell(`${cls} how`, el("div", { class: "ss-band" }, "How this works"), el("p", {}, t.how)) : null);
-  renderNav(`data/${id}`);
+  renderNav(`tables/${id}`);
   window.scrollTo(0, 0);
   show({});
 }
@@ -492,7 +517,7 @@ async function renderDataTable(id) {
 // ── baseball charts (charts/: pyslots' form and templates, scripts/sync-charts.sh) ──
 // The other exception to "nothing computed in the browser": the visitor's formulas fill a Python
 // (matplotlib) template, which runs in their browser (Pyodide, loaded from jsDelivr on the first run).
-const CHARTS = "charts/";
+const CHARTS = "/charts/";
 let pyslotsScript = null;
 function loadPyslots() {
   return pyslotsScript = pyslotsScript || new Promise((resolve, reject) => {
@@ -505,32 +530,28 @@ function loadPyslots() {
 const chartSlug = (file) => file.replace(/^charts\//, "").replace(/\.py$/, "");
 
 // The charts come from web/charts.toml (data/site.json): a name, an intro and starting formulas for
-// one of the templates. An old address naming a template (#/charts/scatter) opens its first chart.
+// one of the templates. An old address naming a template (/charts/scatter/) opens its first chart.
 async function renderCharts(slug) {
-  const site = await getJSON("data/site.json");
+  const site = await getJSON("/data/site.json");
   const charts = site.charts || [];
   current = { model: null, pickers: {} };
   const t = charts.find((x) => x.id === slug) || charts.find((x) => chartSlug(x.template) === slug) || charts[0];
-  if (!t) {
-    app.replaceChildren(cell("ss-p2", el("div", { class: "ss-band" }, "Page not found"),
-      el("p", {}, "There are no charts yet. ", el("a", { href: "#/" }, "See everything"))));
-    return;
-  }
-  document.title = `${t.title} · Baseball charts · Ball Monitor`;
+  if (!t) return notFound("There are no charts yet.");
+  setHead(slug ? `${t.title}: Baseball charts` : "Baseball charts", t.intro, slug ? `/charts/${t.id}/` : "/charts/");
   const cls = cellClass("Baseball");
   const groups = {};
   for (const x of charts) (groups[x.group] = groups[x.group] || []).push(x);
   const host = el("div", { class: "live-chart" }, el("p", { class: "loading" }, "Loading the chart…"));
   app.replaceChildren(
     cell(`${cls} page-head`,
-      el("a", { class: "back", href: "#/" }, "← All forecasts"),
+      el("a", { class: "back", href: "/" }, "← Home"),
       el("div", { class: "ss-kicker" }, "Baseball · Charts"),
       el("h1", { class: "ss-title" }, "Baseball charts"),
       el("p", { class: "summary" }, "Every big-league season from 1871 to 2024, charted. Pick a chart, or change any of its boxes and draw it again."),
       el("nav", { class: "chart-picks", "aria-label": "Charts" },
         ...Object.entries(groups).map(([g, xs]) => el("div", { class: "chart-group" },
           el("span", { class: "chart-group-name" }, g),
-          el("div", { class: "chart-group-buttons" }, ...xs.map((x) => el("a", { class: "ss-btn small", href: `#/charts/${x.id}`,
+          el("div", { class: "chart-group-buttons" }, ...xs.map((x) => el("a", { class: "ss-btn small", href: `/charts/${x.id}/`,
             ...(x === t ? { "aria-current": "page" } : {}) }, x.title))))))),
     cell(`${cls} chart-cell`,
       el("div", { class: "ss-band" }, t.title),
@@ -539,39 +560,113 @@ async function renderCharts(slug) {
     cell(`${cls} how`, el("div", { class: "ss-band" }, "How this works"),
       el("p", {}, "Each box is a formula over a season's numbers (HR, AB, BB…). What you type is read by ",
         el("a", { href: "https://mathzetta.com/" }, "MathZetta"),
-        ", shown as maths, and the chart is drawn by a short Python program right in your browser. The first chart takes a few seconds while Python loads; nothing you type is sent anywhere."),
+        ", shown as maths, and the chart is drawn by a short Python program right in your browser. The first chart downloads Python into your browser (a few seconds, and a sizeable download on a phone plan; afterwards it's cached); nothing you type is sent anywhere."),
       el("p", { class: "small" }, "Data: the Lahman Baseball Database (SABR, CC BY-SA 3.0): hitters with 400+ at-bats and pitchers with 100+ innings in a season.")));
   renderNav("charts");
   window.scrollTo(0, 0);
   try {
     const Pyslots = await loadPyslots();
+    // the first chart downloads Python (Pyodide); readers in data-saver mode press Run themselves
+    const saveData = !!(navigator.connection && navigator.connection.saveData);
     await Pyslots.mount(host, { site: new URL(CHARTS, location.href).href, template: t.template, title: t.title,
-      formulas: t.formulas || {} });
+      formulas: t.formulas || {}, autoRun: !saveData });
   } catch (e) {
     host.replaceChildren(el("p", {}, "The chart couldn't load. Try again in a little while."));
     console.error(e);
   }
 }
 
-// ── routing: #/ (home), #/<model> and #/data/<table> ─────────────────────────
-function route() {
-  const c = location.hash.match(/^#\/charts(?:\/([a-z0-9-]+))?\/?$/);
-  if (c) return renderCharts(c[1] || "").catch((e) => {
-    app.replaceChildren(el("p", { class: "loading" }, `Something went wrong loading this page (${e.message}).`));
-  });
-  const d = location.hash.match(/^#\/data\/([a-z0-9-]+)/);
-  if (d) return renderDataTable(d[1]).catch((e) => {
-    app.replaceChildren(el("p", { class: "loading" }, `Something went wrong loading this page (${e.message}).`));
-  });
-  const m = location.hash.match(/^#\/([a-z0-9_]+)(?:\/([a-z0-9_]+)\/([a-z0-9-]+))?/);
-  if (!m) current = { model: null, pickers: {} };
-  (m ? renderModel(m[1], m[2] ? { id: m[2], slug: m[3] } : null) : renderHome()).catch((e) => {
-    app.replaceChildren(el("p", { class: "loading" }, `Something went wrong loading this page (${e.message}).`));
-  });
+// ── page head: title, description and canonical address follow the page shown ──
+const HOME_DESCRIPTION = document.querySelector('meta[name="description"]')?.content || "";
+function setHead(title, description, path) {
+  const full = title === "Ball Monitor" ? title : `${title} · Ball Monitor`;
+  document.title = full;
+  const url = `${location.origin}${path}`;
+  const set = (sel, attr, value) => { const n = document.querySelector(sel); if (n && value) n.setAttribute(attr, value); };
+  set('meta[name="description"]', "content", description || HOME_DESCRIPTION);
+  set('meta[property="og:description"]', "content", description || HOME_DESCRIPTION);
+  set('meta[property="og:title"]', "content", full);
+  set('link[rel="canonical"]', "href", url);
+  set('meta[property="og:url"]', "content", url);
 }
 
-window.addEventListener("hashchange", route);
-getJSON("data/manifest.json").then((m) => {
-  document.getElementById("built").textContent = `Updated ${m.build_date}.`;
+function notFound(message) {
+  setHead("Page not found", null, location.pathname);
+  app.replaceChildren(cell("ss-p2", el("div", { class: "ss-band" }, "Page not found"),
+    el("p", {}, `${message} `, el("a", { href: "/" }, "See everything"))));
+}
+
+function failed(e) {
+  app.replaceChildren(cell("ss-p2", el("div", { class: "ss-band" }, "Something went wrong"),
+    el("p", {}, `This page didn't load (${e.message}). Try again in a moment, or `, el("a", { href: "/" }, "go to the home page"), ".")));
+  console.error(e);
+}
+
+// ── routing: / (home), /<page>/[<picker>/<option>/], /tables/<id>/, /charts/[<id>/] ──
+// The text pages (/about/ ...) are plain HTML: <main data-static> is left as it is.
+const parts = (path) => path.split("/").filter(Boolean).map(decodeURIComponent);
+
+function route() {
+  const p = parts(location.pathname);
+  if (p[p.length - 1] === "index.html") p.pop();
+  if (app.hasAttribute("data-static")) { renderNav(p.join("/")).catch(() => {}); return; }
+  if (p[0] === "charts") return renderCharts(p[1] || "").catch(failed);
+  if (p[0] === "tables") return renderDataTable(p[1] || "").catch(failed);
+  if (!p.length) current = { model: null, pickers: {} };
+  return (p.length ? renderModel(p[0], p.length >= 3 ? { id: p[1], slug: p[2] } : null) : renderHome()).catch(failed);
+}
+
+// Links to pages this script draws are followed without reloading; the rest (games, text pages,
+// the editor, other sites) load normally.
+function drawnHere(url) {
+  if (url.origin !== location.origin || url.hash) return false;
+  const p = parts(url.pathname);
+  if (!p.length) return true;
+  if (p[0] === "charts" || p[0] === "tables") return true;
+  return siteData ? siteData.models.some((m) => m.name === p[0]) || p[0] in (siteData.redirects || {}) : false;
+}
+
+document.addEventListener("click", (e) => {
+  if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+  const a = e.target.closest("a[href]");
+  if (!a || a.target || a.hasAttribute("download") || app.hasAttribute("data-static")) return;
+  const url = new URL(a.href, location.href);
+  if (!drawnHere(url)) return;
+  e.preventDefault();
+  if (url.pathname + url.search !== location.pathname + location.search) history.pushState(null, "", url.pathname + url.search);
+  focusAfter(route());
+});
+
+// After in-site navigation, move keyboard and screen-reader focus to the new page's heading
+// (a picker link focuses the picker instead, which the page scrolls to).
+function focusAfter(done) {
+  Promise.resolve(done).then(() => {
+    const target = parts(location.pathname).length >= 3 && !["charts", "tables"].includes(parts(location.pathname)[0])
+      ? app.querySelector(".view-picker select") : app.querySelector("h1");
+    if (!target) return;
+    if (target.tagName === "H1") target.setAttribute("tabindex", "-1");
+    target.focus({ preventScroll: target.tagName !== "H1" ? true : false });
+  }).catch(() => {});
+}
+
+window.addEventListener("popstate", () => {
+  if (app.hasAttribute("data-static") || !drawnHere(new URL(location.href))) location.reload();
+  else focusAfter(route());
+});
+
+// An old #/ address (shared before the site used paths): #/data/<id> is now /tables/<id>/.
+function fromHash() {
+  const m = location.hash.match(/^#\/(.*?)\/?$/);
+  if (!m) return false;
+  const rest = m[1].replace(/^data\//, "tables/");
+  history.replaceState(null, "", rest ? `/${rest}/` : "/");
+  return true;
+}
+
+let siteData = null;
+const sitePromise = getJSON("/data/site.json").then((s) => { siteData = s; SPORT_CELL = s.cells || {}; return s; });
+getJSON("/data/manifest.json").then((m) => {
+  for (const n of document.querySelectorAll(".built")) n.textContent = `Updated ${m.build_date}.`;
 }).catch(() => {});
-route();
+if (fromHash() && app.hasAttribute("data-static")) location.reload();
+sitePromise.catch(() => {}).finally(route);

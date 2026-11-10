@@ -63,12 +63,13 @@ def public(cfg: dict | None = None) -> list[dict]:
         url = address(cfg, t)
         if not url:
             continue
-        options = {k: t[k] for k in ("filter", "sort", "hidden", "limit", "computed", "stats", "table") if k in t}
+        options = {k: t[k] for k in ("filter", "sort", "hidden", "limit", "computed", "stats", "table", "labels") if k in t}
         if t.get("order"):
             options["show"] = t["order"]   # tabview: only these columns, in this order (the rest can be ticked on)
         out.append({"id": t["id"], "title": t["title"], "summary": t["summary"], "sport": t.get("sport", ""),
                     "how": t.get("how", ""), "server": url, "backend": t["backend"], "options": options,
-                    "examples": t.get("examples", []), "columns": t.get("columns", {})})
+                    "examples": t.get("examples", []), "columns": t.get("columns", {}),
+                    "labels": t.get("labels", {})})
     return out
 
 
@@ -90,7 +91,8 @@ def check(cfg: dict | None = None, timeout: float = 10.0) -> list[tuple[str, boo
             out.append((t["id"], False, f"{url}{meta}: {exc}"))
             continue
         have = column_names(info, t.get("table"))
-        named = set(t.get("order", [])) | set(t.get("columns", {})) | ({t["sort"]["column"]} if t.get("sort") else set())
+        named = (set(t.get("order", [])) | set(t.get("columns", {})) | set(t.get("labels", {}))
+                 | ({t["sort"]["column"]} if t.get("sort") else set()))
         missing = sorted(named - have) if have else []
         out.append((t["id"], not missing, f"{len(have)} columns" + (f"; not on the server: {', '.join(missing)}" if missing else "")))
     return out

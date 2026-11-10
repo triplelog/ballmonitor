@@ -1,4 +1,4 @@
-<!-- Public page text for ballmonitor.com/#/dad (edit in Claude UI's Content page, or here).
+<!-- Public page text for ballmonitor.com/dad/ (edit in Claude UI's Content page, or here).
      Only the words between the markers are used; an empty section falls back to site.py.
      Line breaks are joined into one paragraph. -->
 

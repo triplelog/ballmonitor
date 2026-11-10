@@ -1,9 +1,9 @@
-# The baseball charts page (#/charts): which charts it offers, in plain words. Each [[chart]] is
+# The baseball charts page (/charts/): which charts it offers, in plain words. Each [[chart]] is
 # one of pyslots' templates (ballmonitor/charts/examples/charts/*.py, copied by
 # scripts/sync-charts.sh) with a name, a one-line intro and, optionally, starting formulas for its
 # slots, so one template can give several charts. Visitors can still change every formula.
 #
-#   id        the address: #/charts/<id>
+#   id        the address: /charts/<id>/
 #   template  charts/<file>.py from ballmonitor/charts/examples/index.json
 #   group     the heading its button sits under
 #   formulas  slot = formula (MathZetta), over the template's data columns; text in "quotes"

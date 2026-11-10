@@ -34,7 +34,7 @@ ballmonitor = "ballmonitor.cli:main"
 include = ["ballmonitor*"]
 
 [tool.setuptools.package-data]
-"*" = ["*.toml", "*.md", "*.csv", "*.html", "*.js", "*.css"]
+"*" = ["*.toml", "*.md", "*.csv", "*.html", "*.js", "*.css", "*.woff2", "*.png"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests", "ballmonitor/models"]

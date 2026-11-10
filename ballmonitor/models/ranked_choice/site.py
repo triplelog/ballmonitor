@@ -36,6 +36,14 @@ def _day(iso: str) -> str:
     return f"{d:%b} {d.day}, {d.year}"
 
 
+def _current(date: str, which: str, today: dt.date | None = None) -> bool:
+    """Is a poll released on `date` (YYYY-MM-DD) still this week's? Not a final poll, and out at most
+    8 days before `today` (the build date)."""
+    if not date or "final" in which.lower():
+        return False
+    return ((today or dt.date.today()) - dt.date.fromisoformat(date)).days <= 8
+
+
 def _week(c: dict) -> str:
     w = c.get("week", "")
     return {"pre": "Preseason", "final": "Final"}.get(w, f"Week {w}" if w.isdigit() else w)
@@ -140,15 +148,17 @@ def _polls(model) -> tuple[dict, str]:
     ordered = [options[first][1]] + [o for i, (_, o) in enumerate(options) if i != first]
     lead_label = ordered[0]["label"]
     which, lead = stats[lead_label]
+    # "This week's" only while the newest poll is current (in season, out within the last 8 days)
+    when = "This week's" if _current(options[first][0], which) else "The latest"
     if lead["h2h_top"] == lead["top"]:
-        headline = (f"This week's AP Top 25 ({which}): a head-to-head count "
+        headline = (f"{when} AP Top 25 ({which}): a head-to-head count "
                     f"would move {_teams(lead['h2h_moves'])}, but not No. 1 {lead['top']}.")
     else:
-        headline = (f"This week's AP Top 25 ({which}): a head-to-head count "
+        headline = (f"{when} AP Top 25 ({which}): a head-to-head count "
                     f"would move {_teams(lead['h2h_moves'])} and make {lead['h2h_top']} No. 1 instead of "
                     f"{lead['top']}.")
     return V.picker(
-        "polls", "This week's AP Top 25, re-counted", "Poll", ordered,
+        "polls", f"{when} AP Top 25, re-counted", "Poll", ordered,
         subtitle=("The same voters' ballots counted five ways. Most of the poll holds up; "
                   "look for the rows marked \"Yes\".")), newest, headline
 

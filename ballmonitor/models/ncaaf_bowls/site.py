@@ -1,5 +1,5 @@
 """Public page: every FBS team's playoff, title and bowl odds from one season simulation, with a
-page per team (#/ncaaf_bowls/team/<team>) and per bowl (#/ncaaf_bowls/bowl/<bowl>).
+page per team (/ncaaf_bowls/team/<team>/) and per bowl (/ncaaf_bowls/bowl/<bowl>/).
 
 Built at site-build time (`ballmonitor build-site`, `ballmonitor views ncaaf_bowls`); the page
 only displays these numbers.

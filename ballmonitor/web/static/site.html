@@ -10,44 +10,57 @@
   <meta property="og:title" content="Ball Monitor">
   <meta property="og:description" content="Sports odds and forecasts in plain tables and charts, updated daily.">
   <meta property="og:url" content="https://ballmonitor.com/">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:site_name" content="Ball Monitor">
+  <meta property="og:image" content="https://ballmonitor.com/static/share.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Ball Monitor: sports odds and forecasts, in plain numbers">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23a4b6dd'/%3E%3Ctext x='16' y='23' font-family='Montserrat,Arial,sans-serif' font-weight='800' font-size='20' text-anchor='middle' fill='%23222'%3EB%3C/text%3E%3C/svg%3E">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- fonts served from this site (static/fonts.css), not Google Fonts -->
+  <link rel="preload" href="/static/fonts/open-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/static/fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/static/fonts.css">
   <script>document.documentElement.classList.add('ss-js')</script>
-  <link rel="stylesheet" href="static/shioh-style.css">
-  <link rel="stylesheet" href="static/site.css">
-  <script src="static/shioh.js" defer></script>
+  <link rel="stylesheet" href="/static/shioh-style.css">
+  <link rel="stylesheet" href="/static/site.css">
+  <script src="/static/shioh.js" defer></script>
 </head>
 <body class="ss">
   <!-- Public page: shows only pre-generated numbers (data/site.json, data/views/<model>.json,
-       written by `ballmonitor build-site`). Nothing is computed in the browser.
+       written by `ballmonitor build-site`). Nothing is computed in the browser. The build writes a
+       copy of this file at every address (web/pages.py) with that page's head tags and words in <main>.
        Look: Shioh style (static/shioh-style.css); each sport owns one cell colour (site.js SPORT_CELL). -->
   <div class="ss-shell">
     <aside class="ss-sidebar">
       <section class="ss-cell ss-p1 ss-navcell">
-        <a class="ss-logo" href="#/">Ball Monitor</a>
+        <a class="ss-logo" href="/">Ball Monitor</a>
         <button class="ss-btn ss-menu-btn" type="button" aria-controls="site-nav">Menu</button>
         <nav class="ss-nav" id="site-nav" aria-label="Pages">
-          <a href="#/" data-route="">All forecasts</a>
+          <a href="/" data-route="">Home</a>
           <div id="nav-models" class="nav-models"></div>
           <hr>
-          <a href="triple/">Triple Play</a>
-          <a href="lineup/">Lineup</a>
-          <a href="27k/">27K</a>
+          <a href="/triple/">Triple Play</a>
+          <a href="/lineup/">Lineup</a>
+          <a href="/27k/">27K</a>
         </nav>
       </section>
       <section class="ss-cell ss-p4 side-about ss-desktop-only">
         <!-- claude-ui:begin sidebar-about -->
         <p><b>Sports odds in plain numbers.</b> Every page is a table or a chart, worked out ahead of time from the latest data.</p>
         <!-- claude-ui:end sidebar-about -->
-        <p class="ss-muted small" id="built"></p>
+        <p class="ss-muted small built"></p>
       </section>
     </aside>
+    <div class="ss-main">
     <main class="ss-main" id="app">
       <section class="ss-cell ss-p1"><p>Loading…</p></section>
     </main>
+    <footer class="ss-cell ss-p4 site-foot">
+      <nav aria-label="About this site"><a href="/about/">About</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></nav>
+      <p class="small">For fun and curiosity: these are estimates, not betting advice. <span class="built"></span></p>
+    </footer>
+    </div>
   </div>
   <!-- Home page text (site.js copies these in). Edit the words; keep the tags.
        The Games list: one <li> per game, data-href is the link. -->
@@ -63,11 +76,11 @@
   </template>
   <template id="home-games">
     <!-- claude-ui:begin home-games -->
-    <li data-href="triple/"><b>Triple Play</b><p>A daily puzzle: put each player (or city) in the right part of three circles.</p></li>
-    <li data-href="lineup/"><b>Lineup</b><p>A daily puzzle: nine real hitters from baseball history. Find the batting order that scores the most runs.</p></li>
-    <li data-href="27k/"><b>27K</b><p>A pitching game: get 27 outs.</p></li>
+    <li data-href="/triple/"><b>Triple Play</b><p>A daily puzzle: put each player (or city) in the right part of three circles.</p></li>
+    <li data-href="/lineup/"><b>Lineup</b><p>A daily puzzle: nine real hitters from baseball history. Find the batting order that scores the most runs.</p></li>
+    <li data-href="/27k/"><b>27K</b><p>A pitching game: get 27 outs.</p></li>
     <!-- claude-ui:end home-games -->
   </template>
-  <script src="static/site.js"></script>
+  <script src="/static/site.js"></script>
 </body>
 </html>

@@ -262,3 +262,66 @@ def test_site_page_builds_cleanly():
     assert views.check(page) == []
     flips = next(v for v in page["views"] if v["id"] == "award_flips")
     assert any(r["award"] == "NBA Defensive Player of the Year" and r["season"] == "2014-15" for r in flips["rows"])
+
+
+# ---- AP fetch: new weeks are found even when the latest week's ballots are not posted yet ---
+
+def test_ap_fetch_finds_weeks_before_an_unposted_latest_week(tmp_path, monkeypatch):
+    """CI case: no raw cache, built CSV ends at week 8, the site's latest poll is week 10 but
+    its grid has no ballots yet. Week 9 (listed on the rankings page) must still be fetched."""
+    from ballmonitor.models.ranked_choice.sources import ap_polls as ap
+
+    def opts(name, vals, sel):
+        mark = {sel: ' selected="selected"'}
+        o = "".join(f'<option value="{v}"{mark.get(v, "")}>{v}</option>' for v in vals)
+        return f'<select name="{name}">{o}</select>'
+
+    weeks = ["week-10", "week-9", "week-8", "pre-season"]
+    rankings = opts("year", ["2026"], "2026") + opts("week", weeks, "week-10")
+    grid9 = opts("year", ["2026"], "2026") + opts("week", weeks, "week-9") + '<div class="gridRow">'
+    calls = []
+
+    def fake_get(url, log=print):
+        calls.append(url)
+        if url == f"{ap.BASE}/football/":
+            return 302, f"{ap.BASE}/football/2026/week-10", rankings
+        if url.endswith("/grid/2026/week-9"):
+            return 200, "", grid9
+        if url.endswith("/grid/2026/week-10"):
+            return 200, "", "<html>ballots coming soon</html>"
+        return 404, "", ""
+
+    monkeypatch.setattr(ap, "_get", fake_get)
+    have = {ap.contest_id("football", 2026, w) for w in ("pre-season", "week-8")}
+    lines = []
+    ap._download_sport(tmp_path, "football", lines.append, have)
+    assert (tmp_path / "football" / "2026" / "week-9.html").exists()
+    assert not (tmp_path / "football" / "2026" / "week-10.html").exists()
+    assert not any(u.endswith("/grid/2026/week-8") for u in calls)  # already built
+    assert any("no ballots posted yet" in s for s in lines)
+
+
+def test_fetch_passes_on_top_level_source_lines(tmp_path, monkeypatch):
+    from ballmonitor.models.ranked_choice import fetch as f
+    from ballmonitor.models.ranked_choice.sources import ap_polls as ap
+
+    def fake(model_dir, offline=False, log=print):
+        log("STOPPED: answered 429")
+        log("  GET detail")
+        return ["x.csv.gz"]
+
+    monkeypatch.setattr(ap, "fetch", fake)
+    monkeypatch.setattr(f, "SOURCES", ["ap_polls"])
+    out = list(f.fetch(tmp_path))
+    assert out == ["ap_polls: STOPPED: answered 429", "ap_polls: x.csv.gz"]
+
+
+def test_poll_headline_says_this_week_only_while_the_poll_is_current():
+    import datetime as dt
+
+    from ballmonitor.models.ranked_choice import site
+    today = dt.date(2026, 11, 10)
+    assert site._current("2026-11-08", "college football, Week 10", today)
+    assert not site._current("2026-10-25", "college football, Week 8", today)       # stale data
+    assert not site._current("2026-11-08", "college football, Final", today)        # off-season
+    assert not site._current("", "men's basketball, Week 1", today)

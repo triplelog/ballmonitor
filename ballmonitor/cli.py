@@ -312,7 +312,7 @@ def cmd_views(args: argparse.Namespace) -> int:
                 show(v["options"][0]["views"], indent + "    ")
 
     for address, p in pages.items():
-        print(f"#/{address}  {p['title']}  [{p['sport']}]")
+        print(f"/{address}/  {p['title']}  [{p['sport']}]")
         print(f"  {p['summary']}")
         if p.get("updated"):
             print(f"  updated: {p['updated']}")

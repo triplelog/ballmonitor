@@ -24,6 +24,15 @@ from typing import Any
 FORMATS = ("text", "int", "number", "pct", "time", "signed")
 KINDS = ("table", "bar", "line", "picker")
 SPORTS = ("College football", "Baseball", "College baseball & softball", "Running", "Polls & awards", "More sports")
+# Shioh cell colour per sport (site.html's .ss-p1-5): the pages, their pre-written HTML and site.js
+# all use this map (site.js reads it from data/site.json). The data tables add their own sports.
+SPORT_CELL = {"College football": "ss-p1", "Baseball": "ss-p4", "College baseball & softball": "ss-p2",
+              "Running": "ss-p3", "Polls & awards": "ss-p5", "More sports": "ss-p1", "Pro football": "ss-p1",
+              "Basketball": "ss-p3"}
+
+
+def cell_class(sport: str) -> str:
+    return SPORT_CELL.get(sport, "ss-p1")
 MAX_ROWS = 2500  # per table; keeps pages light enough for a phone
 
 
@@ -149,7 +158,7 @@ def line(id: str, title: str, lines: list[dict], x_label: str = "", y_label: str
 
 
 def option(label: str, views: list[dict], intro: str = "") -> dict:
-    """One choice in a picker; it gets its own address #/<model>/<picker id>/<slug(label)>.
+    """One choice in a picker; it gets its own address /<model>/<picker id>/<slug(label)>/.
     `intro`: a short line shown above its views (e.g. a team's record and conference)."""
     o = {"label": label, "slug": slug(label), "views": views}
     if intro:

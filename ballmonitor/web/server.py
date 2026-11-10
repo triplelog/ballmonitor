@@ -30,7 +30,7 @@ STATIC = Path(__file__).resolve().parent / "static"
 GAME_27K = Path(__file__).resolve().parent.parent / "new27K" / "dist"
 GAME_TRIPLE = Path(__file__).resolve().parent.parent / "games" / "triple_play" / "web"
 GAME_LINEUP = Path(__file__).resolve().parent.parent / "games" / "lineup" / "web"
-# the baseball charts: pyslots' embeddable form and templates (scripts/sync-charts.sh), shown at #/charts
+# the baseball charts: pyslots' embeddable form and templates (scripts/sync-charts.sh), shown at /charts/
 CHARTS = Path(__file__).resolve().parent.parent / "charts"
 CONTENT_TYPES = {".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".json": "application/json",
                  ".py": "text/x-python", ".csv": "text/csv", ".woff2": "font/woff2", ".md": "text/markdown"}

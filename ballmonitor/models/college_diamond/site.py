@@ -1,4 +1,4 @@
-"""Public pages, one per sport (#/college_baseball, #/college_softball): the 2026 NCAA
+"""Public pages, one per sport (/college_baseball/, /college_softball/): the 2026 NCAA
 tournament (Selection-eve odds vs what happened), final 2026 power ratings and how title chances
 moved during the season. Page text: site_college_baseball.md and site_college_softball.md.
 
