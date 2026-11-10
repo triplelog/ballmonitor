@@ -220,15 +220,30 @@ def test_norris_2022_condorcet_winner_is_josi():
     assert ex["condorcet_winner"] == "roman-josi"
 
 
-def test_fptp_counts_only_first_places_and_keeps_ties():
-    assert v.fptp(TENNESSEE, CANDS, {}).order[0] == M          # 42 first places
-    assert v.fptp(TENNESSEE, CANDS, {}).scores == {M: 42.0, N: 26.0, C: 15.0, K: 17.0}
-    # A and B tie on first places; B has more seconds. Plurality uses the seconds, FPTP doesn't.
+def test_fptp_place_by_place_and_ties_kept():
+    """Tennessee: Memphis has the most first places (42); without Memphis its ballots go to
+    Nashville (42 + 26 = 68); then Chattanooga (83); Knoxville last."""
+    r = v.fptp(TENNESSEE, CANDS, {})
+    assert r.order == [M, N, C, K] and r.ranks == {M: 1, N: 2, C: 3, K: 4}
+    assert r.scores == {M: 42.0, N: 68.0, C: 83.0, K: 100.0}
+    # A and B tie on first places (2 each); B has a second place, A none. Plurality uses the
+    # second places, FPTP doesn't: they share 1st and leave together, C is 3rd.
     ballots = [["A", "C"], ["A", "C"], ["B", "C"], ["B", "C"], ["C", "B"]]
     cands = ["A", "B", "C"]
     assert v.plurality(ballots, cands, {}).order[0] == "B"
-    assert v.fptp(ballots, cands, {"A": (1,), "B": (0,)}).order[0] == "A"   # shared tie-break only
-    assert v.tied_ranks(v.fptp(ballots, cands, {}).scores) == {"A": 1, "B": 1, "C": 3}
+    f = v.fptp(ballots, cands, {"A": (1,), "B": (0,)})
+    assert f.ranks == {"A": 1, "B": 1, "C": 3} and f.order[0] == "A"   # list order: shared tie-break
+
+
+def test_top_two_runoff_place_by_place():
+    """Tennessee: Memphis (42) and Nashville (26) meet; Nashville wins 58-42. Then Memphis (42)
+    vs Chattanooga (41): Chattanooga 58-42; then Knoxville beats Memphis; Memphis last."""
+    d = v.pairwise(TENNESSEE, CANDS)
+    r = v.top_two(TENNESSEE, CANDS, d, {})
+    assert r.order == [N, C, K, M]
+    assert r.scores[N] == 58.0
+    # one candidate: no runoff
+    assert v.top_two([["A"]], ["A"], v.pairwise([["A"]], ["A"]), {}).order == ["A"]
 
 
 def test_fptp_on_the_site_page():

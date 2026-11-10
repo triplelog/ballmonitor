@@ -81,6 +81,8 @@ const SPORT_CELL = {
   "Running": "ss-p3",
   "Polls & awards": "ss-p5",
   "More sports": "ss-p1",
+  "Pro football": "ss-p1",       // data tables
+  "Basketball": "ss-p3",
 };
 const cellClass = (sport) => SPORT_CELL[sport] || "ss-p1";
 const cell = (cls, ...kids) => el("section", { class: `ss-cell ${cls}` }, ...kids);
@@ -217,6 +219,23 @@ function renderTable(v) {
     oninput: (e) => { state.q = e.target.value.trim().toLowerCase(); draw(); } }) : null;
   const more = el("button", { class: "ss-btn more", onclick: () => { state.all = true; draw(); } });
 
+  // Columns menu: the reader picks which columns to show (remembered per table in this browser);
+  // columns marked `hidden` start off. The name column that stays put can't be hidden.
+  const colsKey = `ballmonitor:cols:${current.model}:${v.id}`;
+  let saved = null;
+  try { saved = JSON.parse(localStorage.getItem(colsKey) || "null"); } catch { /* private mode */ }
+  state.hide = new Set(Array.isArray(saved) ? saved.filter((k) => k !== stickKey) : v.columns.filter((c) => c.hidden).map((c) => c.key));
+  const shownCols = () => v.columns.filter((c) => !state.hide.has(c.key));
+  const chooser = v.columns.length >= 4 ? el("details", { class: "col-chooser" },
+    el("summary", {}, "Columns"),
+    el("div", { class: "col-list" }, v.columns.map((c) => el("label", {},
+      el("input", { type: "checkbox", ...(state.hide.has(c.key) ? {} : { checked: "" }), ...(c.key === stickKey ? { disabled: "" } : {}),
+        onchange: (e) => {
+          if (e.target.checked) state.hide.delete(c.key); else state.hide.add(c.key);
+          try { localStorage.setItem(colsKey, JSON.stringify([...state.hide])); } catch { /* private mode */ }
+          draw();
+        } }), ` ${c.label}`)))) : null;
+
   function rows() {
     let rs = v.rows;
     if (state.q) rs = rs.filter((r) => v.columns.some((c) => String(r[c.key] ?? "").toLowerCase().includes(state.q)));
@@ -236,7 +255,7 @@ function renderTable(v) {
   function draw() {
     const rs = rows();
     const shown = state.all || state.q ? rs : rs.slice(0, v.page_size);
-    const head = el("tr", {}, v.columns.map((c) => el("th", {
+    const head = el("tr", {}, shownCols().map((c) => el("th", {
       class: [numeric(c) ? "num" : "", c.key === stickKey ? "stick" : "", state.sort === c.key ? (state.desc ? "sorted desc" : "sorted asc") : ""].join(" ").trim() || null,
       title: "Sort",
       onclick: () => {
@@ -245,7 +264,7 @@ function renderTable(v) {
         draw();
       },
     }, c.label)));
-    const body = shown.map((r) => el("tr", {}, v.columns.map((c) => {
+    const body = shown.map((r) => el("tr", {}, shownCols().map((c) => {
       const val = r[c.key];
       const text = fmt(val, c.fmt, c.decimals);
       const align = c.align || (numeric(c) ? "num" : "");
@@ -267,7 +286,7 @@ function renderTable(v) {
     if (state.q && !rs.length) wrap.append(el("p", { class: "note" }, "No matches."));
   }
   draw();
-  return el("div", {}, search, wrap, more);
+  return el("div", {}, (search || chooser) ? el("div", { class: "table-tools" }, search, chooser) : null, wrap, more);
 }
 
 // ── horizontal bars ───────────────────────────────────────────────────────────

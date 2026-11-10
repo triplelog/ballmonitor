@@ -41,9 +41,13 @@ would move a team; which voters' ballots are furthest from the consensus.
      official count).
    - `custom_points` — formula `custom_points` (default `1 / rank`, the Dowdall system).
    - `plurality` — first-place votes, ties broken by second-place votes, then third, …
-   - `fptp` (first past the post) — first-place votes only; equal counts stay tied (the
-     list order among tied candidates follows the shared tie-break, but the public page
-     shows them as tied, and candidates with no first-place votes get no rank there).
+   - `fptp` (first past the post) — place by place on first-place votes only: 1st = most
+     first-place votes; take it out, count each ballot's top remaining name as its first-place
+     vote, 2nd = the most of those; and so on. Candidates tied at a step share the place
+     (`ranks`, e.g. 1, 2, 2, 4) and leave together.
+   - `top_two` (top-two runoff) — the two with the most first-place votes meet head to head
+     (pairwise matrix d); the winner takes the place. Take it out, recount first places
+     among the rest, repeat. Ties go to the shared tie-break.
    - `irv` (instant runoff) — repeatedly drop the candidate with the fewest first choices
      among those left until one has a majority of the active ballots.
    - `coombs` — like IRV but drop the candidate with the most last places; a ballot's
@@ -151,6 +155,9 @@ None — there is no "actual" to score a re-count against.
 
 ## Changelog
 
+- 0.3.0 — `fptp` now ranks place by place (take the winner out, recount first places), so
+  every candidate gets a place; ties kept in `extras.ranks`. New method `top_two` (top-two
+  runoff, place by place), added to `compare_methods` and the public page.
 - 0.2.0 — new method `fptp` (first past the post: first-place votes only, ties stay tied),
   added to `compare_methods` and to the public page (a rank column for the polls, a
   "Most first-place votes" winner for the awards).

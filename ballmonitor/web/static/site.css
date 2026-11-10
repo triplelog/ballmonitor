@@ -153,3 +153,13 @@ th.stick, td.stick {
 .column-key dd { margin: 0; }
 .live-cell { padding: 0.5rem; }
 .live-table { --tv-max-height: 75vh; min-height: 200px; }
+
+/* ---------- table tools: search + Columns menu ---------- */
+.table-tools { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 0.5rem 0.8rem; margin: 0 0 0.7rem; }
+.table-tools .search { margin: 0; }
+.col-chooser { position: relative; }
+.col-chooser summary { cursor: pointer; list-style: none; padding: 0.4rem 0.8rem; background: #fff; border: var(--ss-chip-border); border-radius: var(--ss-radius-sm); font-weight: 600; font-size: 0.9rem; }
+.col-chooser summary::-webkit-details-marker { display: none; }
+.col-chooser summary::after { content: " ▾"; font-size: 0.75rem; }
+.col-list { position: absolute; z-index: 5; margin-top: 4px; background: #fff; border: 1px solid var(--ss-border); border-radius: var(--ss-radius-sm); box-shadow: 0 6px 18px rgb(0 0 0 / 0.18); padding: 0.5rem 0.8rem; display: grid; gap: 0.25rem; min-width: 220px; max-height: 60vh; overflow: auto; }
+.col-list label { display: flex; align-items: center; gap: 0.4rem; font-size: 0.9rem; white-space: nowrap; }

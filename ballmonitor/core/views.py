@@ -76,13 +76,14 @@ def slug(text: str) -> str:
 
 def col(key: str, label: str, fmt: str = "text", decimals: int | None = None, bar: bool = False,
         align: str | None = None, heat: bool = False, link: str | None = None, low_first: bool = False,
-        sticky: bool = False) -> dict:
+        sticky: bool = False, hidden: bool = False) -> dict:
     """A table column. `bar`: draw a small bar behind a pct/number cell (scaled to the column max).
     `heat`: shade the cell by its value (0 to the largest value in any heat column of the table).
     `link`: id of a picker on the same page; the cell links to the option whose slug matches the
     cell text (e.g. a team name opens that team's view). `low_first`: clicking the header sorts
     smallest first (ranks: No. 1 at the top). `sticky`: this column stays put when the table
-    scrolls sideways (default: the first linked column, else the first text column)."""
+    scrolls sideways (default: the first linked column, else the first text column). `hidden`:
+    starts hidden; every table has a Columns menu where the reader can show or hide columns."""
     c = {"key": key, "label": label, "fmt": fmt}
     if decimals is not None:
         c["decimals"] = decimals
@@ -98,6 +99,8 @@ def col(key: str, label: str, fmt: str = "text", decimals: int | None = None, ba
         c["sticky"] = True
     if align:
         c["align"] = align
+    if hidden:
+        c["hidden"] = True
     return c
 
 

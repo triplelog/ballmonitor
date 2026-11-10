@@ -10,10 +10,10 @@ from ballmonitor.models.ranked_choice import ballots as data
 from ballmonitor.models.ranked_choice import voting as v
 
 LABELS = {"official": "Official points", "borda": "Borda", "custom_points": "Custom points",
-          "plurality": "Plurality", "fptp": "First past the post", "irv": "Instant runoff", "coombs": "Coombs", "baldwin": "Baldwin",
+          "plurality": "Plurality", "fptp": "First past the post", "top_two": "Top-two runoff", "irv": "Instant runoff", "coombs": "Coombs", "baldwin": "Baldwin",
           "bucklin": "Bucklin", "copeland": "Copeland", "schulze": "Schulze", "ranked_pairs": "Ranked pairs",
           "minimax": "Minimax", "kemeny": "Kemeny-Young"}
-SHORT = {"official": "Off", "borda": "Borda", "custom_points": "Cust", "plurality": "Plur", "fptp": "FPTP", "irv": "IRV",
+SHORT = {"official": "Off", "borda": "Borda", "custom_points": "Cust", "plurality": "Plur", "fptp": "FPTP", "top_two": "Top2", "irv": "IRV",
          "coombs": "Coombs", "baldwin": "Bald", "bucklin": "Buck", "copeland": "Cope", "schulze": "Schu",
          "ranked_pairs": "RP", "minimax": "Mmax", "kemeny": "Kem"}
 
@@ -154,6 +154,7 @@ class RankedChoiceModel(BaseModel):
             "orders": {m: results[m].order for m in methods},
             "scores": {m: results[m].scores for m in methods},
             "exact": {m: results[m].exact for m in methods},
+            "ranks": {m: results[m].ranks for m in methods if results[m].ranks},   # places with ties kept
             "condorcet_winner": cw, "condorcet_loser": cl, "smith_set": smith,
             "pairwise_top": {"candidates": top_pair, "matrix": [[d[x][y] if x != y else None for y in top_pair]
                                                                 for x in top_pair]},
@@ -234,6 +235,8 @@ class RankedChoiceModel(BaseModel):
             return v.plurality(ballots, cands, tiebreak)
         if m == "fptp":
             return v.fptp(ballots, cands, tiebreak)
+        if m == "top_two":
+            return v.top_two(ballots, cands, d, tiebreak)
         if m in ("irv", "coombs", "baldwin", "bucklin"):
             return v.elimination(m, ballots, cands, tiebreak, str(p.elimination_ordering), positions)
         if m == "copeland":

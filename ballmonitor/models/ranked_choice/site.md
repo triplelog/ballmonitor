@@ -14,5 +14,5 @@ What the AP Top 25 and the big MLB, NBA and NHL awards would look like if the sa
 
 ## How this works (two or three plain sentences at the bottom of the page)
 <!-- claude-ui:begin how -->
-We take every voter's published ballot and count it four ways: the official points, first past the post (first-place votes only), head-to-head (who more voters ranked higher in each pair) and instant runoff (drop the candidate with the fewest first-place votes and move those ballots on, round by round). Nothing about the ballots changes, only the counting.
+We take every voter's published ballot and count it five ways: the official points, first past the post (first-place votes only, place by place), a top-two runoff, head-to-head (who more voters ranked higher in each pair) and instant runoff (drop the candidate with the fewest first-place votes and move those ballots on, round by round). Nothing about the ballots changes, only the counting.
 <!-- claude-ui:end how -->

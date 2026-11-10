@@ -25,6 +25,7 @@ class Result:
     score_label: str
     log: list[str] = field(default_factory=list)   # round-by-round notes for the steps
     exact: bool = True                     # False if a heuristic was used (Kemeny local search)
+    ranks: dict[str, int] | None = None    # places with ties kept (1, 2, 2, 4), for methods that tie
 
 
 def candidates_of(ballots: list[Ballot]) -> list[str]:
@@ -69,13 +70,59 @@ def plurality(ballots: list[Ballot], cands: list[str], tiebreak: dict[str, tuple
                   {c: float(counts[c][0]) for c in cands}, "first-place votes")
 
 
+def _firsts(ballots: list[Ballot], alive: set[str]) -> dict[str, int]:
+    """First-place votes among the candidates still in: each ballot's top remaining name."""
+    n = {c: 0 for c in alive}
+    for b in ballots:
+        top = next((c for c in b if c in alive), None)
+        if top is not None:
+            n[top] += 1
+    return n
+
+
 def fptp(ballots: list[Ballot], cands: list[str], tiebreak: dict[str, tuple]) -> Result:
-    """First past the post: first-place votes only. Unlike `plurality`, later places never
-    break a tie; candidates with equal first-place votes are tied (the order among them only
-    follows the shared `tiebreak` so the list is complete; `scores` shows the tie)."""
-    counts = place_counts(ballots, cands, 1)
-    return Result(_sorted(cands, lambda c: (counts[c][0],), tiebreak),
-                  {c: float(counts[c][0]) for c in cands}, "first-place votes")
+    """First past the post, place by place: 1st = most first-place votes; take that candidate
+    out, count each ballot's top remaining name as its first-place vote, and 2nd = the most of
+    those; and so on. Only first places ever count (unlike `plurality`, later places never break
+    a tie): candidates tied at a step share the place and leave together (`ranks`: 1, 2, 2, 4).
+    The list order inside a tie follows the shared `tiebreak`; `scores` = votes when placed."""
+    alive, order, ranks, scores, log = set(cands), [], {}, {}, []
+    while alive:
+        n = _firsts(ballots, alive)
+        best = max(n.values())
+        group = _sorted([c for c in alive if n[c] == best], lambda c: (), tiebreak)
+        place = len(order) + 1
+        for c in group:
+            ranks[c], scores[c] = place, float(best)
+        order += group
+        alive -= set(group)
+        if len(log) < 30:
+            log.append(f"place {place}: {', '.join(group)} with {best} first-place votes" + (" (tied)" if len(group) > 1 else ""))
+    return Result(order, scores, "first-place votes when placed", log, ranks=ranks)
+
+
+def top_two(ballots: list[Ballot], cands: list[str], d: dict[str, dict[str, int]],
+            tiebreak: dict[str, tuple]) -> Result:
+    """Top-two runoff, place by place: the two candidates with the most first-place votes meet
+    head to head (d: ballots ranking one above the other) and the winner takes the place; take
+    it out, recount first places among the rest, and repeat. Ties (for the second spot or in
+    the runoff) follow the shared `tiebreak`. `scores` = the winner's runoff votes."""
+    alive, order, scores, log = set(cands), [], {}, []
+    while alive:
+        if len(alive) == 1:
+            (c,) = alive
+            order.append(c)
+            scores[c] = 0.0
+            break
+        n = _firsts(ballots, alive)
+        a, b = _sorted(list(alive), lambda c: (n[c],), tiebreak)[:2]
+        win, lose = (a, b) if (d[a][b], tiebreak.get(a, ())) >= (d[b][a], tiebreak.get(b, ())) else (b, a)
+        order.append(win)
+        scores[win] = float(d[win][lose])
+        alive.discard(win)
+        if len(log) < 30:
+            log.append(f"place {len(order)}: {a} ({n[a]}) vs {b} ({n[b]}) -> {win}, {d[win][lose]}-{d[lose][win]}")
+    return Result(order, scores, "runoff votes", log)
 
 
 def tied_ranks(scores: dict[str, float]) -> dict[str, int]:
@@ -413,6 +460,6 @@ def disagreements(orders: dict[str, list[str]], depth: int) -> dict[str, dict[st
     return {c: {m: o.index(c) + 1 for m, o in orders.items()} for c in names}
 
 
-__all__ = ["Result", "candidates_of", "positional", "plurality", "fptp", "tied_ranks", "elimination", "pairwise", "copeland",
+__all__ = ["Result", "candidates_of", "positional", "plurality", "fptp", "top_two", "tied_ranks", "elimination", "pairwise", "copeland",
            "schulze", "ranked_pairs", "minimax", "kemeny", "condorcet_winner", "condorcet_loser",
            "smith_set", "footrule", "head_to_head", "disagreements", "place_counts"]
