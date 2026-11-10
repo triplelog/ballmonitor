@@ -16,11 +16,16 @@ def test_passer_rating_hand_calculated():
 
 @pytest.mark.parametrize("table_id, columns", [
     ("qb-games", build.NFL_QB_COLUMNS),
-    ("nba-games", build.BASKETBALL_COLUMNS),
-    ("wnba-games", build.BASKETBALL_COLUMNS),
 ])
 def test_tables_toml_names_only_columns_the_csv_has(table_id, columns):
     t = next(x for x in tables.load()["table"] if x["id"] == table_id)
     named = set(t["order"]) | set(t.get("columns", {})) | {t["sort"]["column"]}
     assert named <= set(columns), named - set(columns)
     assert t["path"] in ("qb_games/", "nba_games/", "wnba_games/")
+
+
+def test_no_nba_or_wnba_table_on_the_site():
+    # removed 2026-11-10: NBA.com's and ESPN's terms don't allow republishing their statistics as a
+    # database; put them back only with permission or an openly licensed source (data_tables/README.md)
+    paths = {t["path"] for t in tables.load()["table"]}
+    assert not paths & {"nba_games/", "wnba_games/"}

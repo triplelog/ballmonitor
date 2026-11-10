@@ -1,0 +1,131 @@
+# The baseball charts page (#/charts): which charts it offers, in plain words. Each [[chart]] is
+# one of pyslots' templates (ballmonitor/charts/examples/charts/*.py, copied by
+# scripts/sync-charts.sh) with a name, a one-line intro and, optionally, starting formulas for its
+# slots, so one template can give several charts. Visitors can still change every formula.
+#
+#   id        the address: #/charts/<id>
+#   template  charts/<file>.py from ballmonitor/charts/examples/index.json
+#   group     the heading its button sits under
+#   formulas  slot = formula (MathZetta), over the template's data columns; text in "quotes"
+#
+# tests/test_chart_pages.py checks every template exists and every slot named here is one of its slots.
+
+[[chart]]
+id = "power-average"
+group = "Hitters"
+title = "Home runs and batting average"
+intro = "Every 400-at-bat season since 1990: home runs across, batting average up, newer seasons in yellow."
+template = "charts/scatter.py"
+formulas = { title = "\"Home runs and batting average\"", x_label = "\"Home runs\"", y_label = "\"Batting average\"" }
+
+[[chart]]
+id = "obp-slugging"
+group = "Hitters"
+title = "On-base vs slugging"
+intro = "Getting on base against hitting for power, every 400-at-bat season since 1954."
+template = "charts/scatter.py"
+formulas = { title = "\"On-base vs slugging\"", keep = "year >= 1954", x = "(H + BB + HBP) / (AB + BB + HBP + SF)", y = "(H + 2B + 2*3B + 3 HR) / AB", x_range = "[0.25, 1.02 max(x(data))]", x_label = "\"On-base percentage\"", y_label = "\"Slugging percentage\"" }
+
+[[chart]]
+id = "speed-power"
+group = "Hitters"
+title = "Speed and power"
+intro = "Stolen bases against home runs since 1901: the rare players in the top right did both."
+template = "charts/scatter.py"
+formulas = { title = "\"Speed and power\"", keep = "year >= 1901", x = "SB", y = "HR", x_label = "\"Stolen bases\"", y_label = "\"Home runs\"" }
+
+[[chart]]
+id = "batting-average-spread"
+group = "Hitters"
+title = "How batting averages spread out"
+intro = "Every 500-at-bat season's average, with the line at all those seasons together."
+template = "charts/histogram.py"
+formulas = { title = "\"How batting averages spread out\"", x_label = "\"Batting average\"", y_label = "\"Seasons\"" }
+
+[[chart]]
+id = "best-seasons-power-speed"
+group = "Leaders"
+title = "Best power-and-speed seasons"
+intro = "Ranked by the smaller of home runs and stolen bases, so a season needs plenty of both."
+template = "charts/top.py"
+formulas = { title = "\"Best power-and-speed seasons\"", x_label = "\"The smaller of HR and SB\"" }
+
+[[chart]]
+id = "best-seasons-total-bases"
+group = "Leaders"
+title = "Most total bases in a season"
+intro = "Singles count 1, doubles 2, triples 3, home runs 4."
+template = "charts/top.py"
+formulas = { title = "\"Most total bases in a season\"", score = "H + 2B + 2*3B + 3 HR", x_label = "\"Total bases\"" }
+
+[[chart]]
+id = "best-seasons-on-base"
+group = "Leaders"
+title = "Best on-base seasons"
+intro = "The highest on-base percentages since 1954 (when sacrifice flies were first counted)."
+template = "charts/top.py"
+formulas = { title = "\"Best on-base seasons\"", keep = "year >= 1954", score = "(H + BB + HBP) / (AB + BB + HBP + SF)", x_label = "\"On-base percentage\"" }
+
+[[chart]]
+id = "aging-on-base"
+group = "Careers"
+title = "How hitters age: on-base percentage"
+intro = "All seasons since 1954 at each age put together, with how many seasons there were underneath."
+template = "charts/aging.py"
+formulas = { title = "\"How hitters age: on-base percentage\"", x_label = "\"Age\"", y_label = "\"On-base percentage\"" }
+
+[[chart]]
+id = "aging-power"
+group = "Careers"
+title = "How hitters age: home run rate"
+intro = "Home runs per at-bat at each age, all seasons since 1954 put together."
+template = "charts/aging.py"
+formulas = { title = "\"How hitters age: home run rate\"", per_age = "sum(HR) / sum(AB)", x_label = "\"Age\"", y_label = "\"Home runs per at-bat\"" }
+
+[[chart]]
+id = "power-by-decade"
+group = "Eras"
+title = "Home run rate by decade"
+intro = "Each season's home runs per at-bat, grouped by decade since the 1920s."
+template = "charts/boxplot.py"
+formulas = { title = "\"Home run rate by decade\"", x_label = "\"Decade\"", y_label = "\"Home runs per at-bat\"" }
+
+[[chart]]
+id = "strikeouts-by-decade"
+group = "Eras"
+title = "Strikeout rate by decade"
+intro = "Each season's strikeouts per at-bat, grouped by decade since the 1920s."
+template = "charts/boxplot.py"
+formulas = { title = "\"Strikeout rate by decade\"", value = "SO / AB", x_label = "\"Decade\"", y_label = "\"Strikeouts per at-bat\"" }
+
+[[chart]]
+id = "league-hr-strikeouts"
+group = "Eras"
+title = "Home runs and strikeouts, year by year"
+intro = "Per 1,000 at-bats across the American and National Leagues, from every team's totals."
+template = "charts/trend.py"
+formulas = { title = "\"Home runs and strikeouts, year by year\"", x_label = "\"Season\"", y_label = "\"Per 1,000 at-bats\"" }
+
+[[chart]]
+id = "league-steals-walks"
+group = "Eras"
+title = "Stolen bases and walks, year by year"
+intro = "Per 1,000 at-bats across the American and National Leagues, from 1886 (when steals were first counted)."
+template = "charts/trend.py"
+formulas = { title = "\"Stolen bases and walks, year by year\"", keep = "year >= 1886 and (league = \"AL\" or league = \"NL\")", per_year = "1000 sum(SB) / sum(AB)", second = "1000 sum(BB) / sum(AB)", x_label = "\"Season\"", y_label = "\"Per 1,000 at-bats\"" }
+
+[[chart]]
+id = "pitchers-strikeouts-era"
+group = "Pitchers"
+title = "Strikeouts and ERA"
+intro = "Every 100-inning season since 1990: strikeouts per nine innings across, ERA up. Darker = more seasons."
+template = "charts/pitchers.py"
+formulas = { title = "\"Strikeouts and ERA\"", x_label = "\"Strikeouts per 9 innings\"", y_label = "\"ERA\"" }
+
+[[chart]]
+id = "pitchers-control"
+group = "Pitchers"
+title = "Walks and strikeouts"
+intro = "Walks per nine innings against strikeouts per nine, every 100-inning season since 1990."
+template = "charts/pitchers.py"
+formulas = { title = "\"Walks and strikeouts\"", x = "27 BB / IPouts", y = "27 SO / IPouts", x_label = "\"Walks per 9 innings\"", y_label = "\"Strikeouts per 9 innings\"" }

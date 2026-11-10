@@ -30,7 +30,10 @@ STATIC = Path(__file__).resolve().parent / "static"
 GAME_27K = Path(__file__).resolve().parent.parent / "new27K" / "dist"
 GAME_TRIPLE = Path(__file__).resolve().parent.parent / "games" / "triple_play" / "web"
 GAME_LINEUP = Path(__file__).resolve().parent.parent / "games" / "lineup" / "web"
-CONTENT_TYPES = {".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".json": "application/json"}
+# the baseball charts: pyslots' embeddable form and templates (scripts/sync-charts.sh), shown at #/charts
+CHARTS = Path(__file__).resolve().parent.parent / "charts"
+CONTENT_TYPES = {".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".json": "application/json",
+                 ".py": "text/x-python", ".csv": "text/csv", ".woff2": "font/woff2", ".md": "text/markdown"}
 NAME_RE = re.compile(r"[a-z0-9][a-z0-9_\-]*")
 USER_ERRORS = (ConfigError, FormulaError, KeyError, ValueError, TypeError,
                registry.ModelNotReady, NotImplementedError, tomllib.TOMLDecodeError)
@@ -296,6 +299,8 @@ class Handler(BaseHTTPRequestHandler):
             if len(parts) == 1 and not url.path.endswith("/"):
                 return self._redirect("/triple/")
             return self._game_dir(GAME_TRIPLE, parts[1:] or ["index.html"])
+        if parts and parts[0] == "charts" and len(parts) > 1:
+            return self._game_dir(CHARTS, parts[1:])
         if parts and parts[0] == "lineup":
             if len(parts) == 1 and not url.path.endswith("/"):
                 return self._redirect("/lineup/")

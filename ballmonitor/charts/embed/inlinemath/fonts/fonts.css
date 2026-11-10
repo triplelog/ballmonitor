@@ -1,0 +1,17 @@
+/*
+ * Optional: Latin Modern Roman (the TeX look), about 95 kB for both files.
+ * Link this before inlinemath.css; without it Inline Math uses the system serif.
+ * Licence: GUST Font License, see GUST-FONT-LICENSE.txt.
+ */
+@font-face {
+    font-family: "Inline Math Roman";
+    src: url("lmroman12-regular.woff2") format("woff2");
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Inline Math Roman";
+    src: url("lmroman12-italic.woff2") format("woff2");
+    font-style: italic;
+    font-display: swap;
+}

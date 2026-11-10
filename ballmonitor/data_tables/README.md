@@ -18,6 +18,13 @@ Downloads are kept gzipped in `raw/` and the CSVs written to `csv/` (both gitign
 | `nba` | `nba_games` (`nba_player_games.csv`) | every player-game played, 1994 on (~869k) | ESPN box scores via the SportsDataverse | collection MIT; the box scores are ESPN's |
 | `wnba` | `wnba_games` (`wnba_player_games.csv`) | every player-game played, 2003 on (~108k) | same | same |
 
+**The NBA and WNBA tables are off the site** (removed from data.tabdn.com and `web/tables.toml` on
+2026-11-10). Their box scores are ESPN's, ultimately the leagues', and NBA.com's terms allow statistics
+only for news or private non-commercial use and forbid offering "a database … of comprehensive,
+regularly updated statistics" without consent; ESPN's terms are similar. The SportsDataverse's MIT
+licence covers its code, not that data. `build.py` still makes the CSVs; put a table back only with the
+league's permission or an openly licensed source.
+
 Notes:
 
 - **QB:** `rating` is the NFL passer rating worked out from each game's line (`passer_rating`);

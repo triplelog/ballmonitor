@@ -1,5 +1,5 @@
-# Live data tables on the public site: big CSVs served by tabdn table servers (tabc or sqldn,
-# ~/Desktop/portfolio/mathzetta/tabdn). Each [[table]] becomes a page at #/data/<id> with a
+# Live data tables on the public site: big CSVs served by tabdn's tabc table server
+# (~/Desktop/portfolio/mathzetta/tabdn). Each [[table]] becomes a page at #/data/<id> with a
 # filterable, sortable table; every query goes to the server, nothing is downloaded whole.
 # The page loads tabview's embed script from the server itself (<server><path>web/vendor/tabview-embed.js).
 #
@@ -12,8 +12,9 @@
 # "https://data.tabdn.com/" once both tables are there.
 # `order` is the columns the page shows, in that order; the rest can be ticked on in the table.
 retrosheet = "https://data.tabdn.com/"
-# The tables built by `python -m ballmonitor.data_tables.build` (qb_games.com, nba_games.com,
-# wnba_games.com). Set to "https://data.tabdn.com/" once they are uploaded there.
+# The tables built by `python -m ballmonitor.data_tables.build`: qb_games.com. (The NBA and WNBA
+# tables were removed on 2026-11-10: their box scores are ESPN's / NBA.com's, whose terms don't allow
+# republishing a statistics database; data_tables/README.md. build.py can still make them.)
 sports = "https://data.tabdn.com/"
 
 [[table]]
@@ -135,77 +136,3 @@ rush_yds = "rushing yards"
 rush_td = "rushing touchdowns"
 fumbles_lost = "fumbles lost"
 fantasy = "fantasy points (standard)"
-
-[[table]]
-id = "nba-games"
-title = "Every NBA player game since 1994"
-summary = "Each player's box score in each NBA game, regular season, play-in and playoffs: 50-point nights, triple-doubles, perfect shooting."
-sport = "Basketball"
-server = "sports"
-path = "nba_games/"
-backend = "tabc"
-filter = "pts >= 50"
-sort = { column = "date", desc = true }
-order = ["date", "type", "player", "team", "opp", "result", "min", "pts", "reb", "ast", "stl", "blk", "fgm", "fga", "fg3m", "ftm"]
-limit = 100
-how = "ESPN box scores collected by the SportsDataverse (sportsdataverse.org), one row per player per game played."
-examples = [
-  { label = "50-point games", filter = "pts >= 50", sort = { column = "pts", desc = true } },
-  { label = "Triple-doubles", filter = "pts >= 10 and reb >= 10 and ast >= 10", sort = { column = "date", desc = true } },
-  { label = "10+ threes", filter = "fg3m >= 10", sort = { column = "fg3m", desc = true } },
-  { label = "Perfect shooting (10+ shots)", filter = "fga >= 10 and fgm = fga", sort = { column = "fga", desc = true } },
-  { label = "20+ rebounds and 20+ points", filter = "reb >= 20 and pts >= 20", sort = { column = "reb", desc = true } },
-  { label = "Playoff 40-point games", filter = "type = \"playoffs\" and pts >= 40", sort = { column = "date", desc = true } },
-]
-[table.columns]
-type = "regular, play-in or playoffs"
-home = "home or away"
-result = "W or L"
-team_pts = "team's points"
-opp_pts = "opponent's points"
-start = "started (1/0)"
-min = "minutes"
-pts = "points"
-reb = "rebounds"
-ast = "assists"
-stl = "steals"
-blk = "blocks"
-tov = "turnovers"
-pf = "personal fouls"
-fgm = "field goals made"
-fga = "field goals attempted"
-fg3m = "threes made"
-fg3a = "threes attempted"
-ftm = "free throws made"
-fta = "free throws attempted"
-oreb = "offensive rebounds"
-dreb = "defensive rebounds"
-pm = "plus-minus"
-
-[[table]]
-id = "wnba-games"
-title = "Every WNBA player game since 2003"
-summary = "Each player's box score in each WNBA game, regular season and playoffs."
-sport = "Basketball"
-server = "sports"
-path = "wnba_games/"
-backend = "tabc"
-filter = "pts >= 35"
-sort = { column = "date", desc = true }
-order = ["date", "type", "player", "team", "opp", "result", "min", "pts", "reb", "ast", "stl", "blk", "fgm", "fga", "fg3m", "ftm"]
-limit = 100
-how = "ESPN box scores collected by the SportsDataverse (sportsdataverse.org), one row per player per game played."
-examples = [
-  { label = "35-point games", filter = "pts >= 35", sort = { column = "pts", desc = true } },
-  { label = "Triple-doubles", filter = "pts >= 10 and reb >= 10 and ast >= 10", sort = { column = "date", desc = true } },
-  { label = "Playoff 30-point games", filter = "type = \"playoffs\" and pts >= 30", sort = { column = "date", desc = true } },
-]
-[table.columns]
-type = "regular or playoffs"
-result = "W or L"
-min = "minutes"
-pts = "points"
-reb = "rebounds"
-ast = "assists"
-fg3m = "threes made"
-pm = "plus-minus"

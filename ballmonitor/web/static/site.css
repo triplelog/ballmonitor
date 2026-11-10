@@ -153,6 +153,25 @@ th.stick, td.stick {
 .column-key dd { margin: 0; }
 .live-cell { padding: 0.5rem; }
 .live-table { --tv-max-height: 75vh; min-height: 200px; }
+/* the baseball charts (#/charts): pyslots' form on a white surface (Shioh: editors go on white),
+   the cell's band and intro replace the form's own heading and its developer description */
+.live-chart { min-height: 200px; }
+.live-chart .pse { font-family: var(--ss-font-body); border: 1px solid var(--ss-border); border-radius: var(--ss-radius-sm);
+  background: #fff; padding: 0.4rem 0.9rem 0.8rem; }
+.live-chart .pse h3, .live-chart .pse .pse-about { display: none; }
+.live-chart .pse .pse-slot:first-of-type { border-top: 0; }
+.live-chart .pse button { font-weight: 600; padding: 0.45rem 1.2rem; border-radius: var(--ss-radius-sm);
+  border: 1px solid var(--ss-accent); background: var(--ss-accent); color: #fff; }
+.live-chart .pse-out img { width: 100%; height: auto; background: #fff; }
+.chart-intro { margin: 0 0 0.8rem; font-size: 1.02rem; }
+.chart-picks { display: grid; gap: 0.45rem; margin-top: 0.6rem; }
+.chart-group { display: grid; grid-template-columns: 5.5rem 1fr; align-items: start; gap: 0.4rem; }
+.chart-group-name { font-family: var(--ss-font-head); font-weight: 700; font-size: 0.8rem; text-transform: uppercase;
+  letter-spacing: 0.04em; padding-top: 0.4rem; }
+.chart-group-buttons { display: flex; flex-wrap: wrap; gap: 0.4rem; }
+@media (max-width: 860px) { .chart-group { grid-template-columns: 1fr; gap: 0.25rem; } .chart-group-name { padding-top: 0; } }
+.chart-picks .ss-btn { padding: 0.3rem 0.7rem; font-size: 0.88rem; }
+.chart-picks a[aria-current="page"] { background: var(--ss-ink); color: #fff; }
 
 /* ---------- table tools: search + Columns menu ---------- */
 .table-tools { display: flex; flex-wrap: wrap; align-items: flex-start; gap: 0.5rem 0.8rem; margin: 0 0 0.7rem; }

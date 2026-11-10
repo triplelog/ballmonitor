@@ -168,6 +168,16 @@ pytest ballmonitor/models/race_time                # one model
   [--check]` lists them and asks each server for its columns (and flags names in the config it lacks).
   `ballmonitor/data_tables/build.py` makes the CSVs for the QB, NBA and WNBA tables (nflverse,
   SportsDataverse/ESPN; see its README for licenses and the upload steps).
+- **Baseball charts** (`#/charts`, `#/charts/<template>`): pyslots' embeddable form (Python chart
+  templates with formula slots, ~/Desktop/portfolio/mathzetta/pyslots) and its chart templates and Lahman
+  data, copied into `ballmonitor/charts/` by `scripts/sync-charts.sh` (committed, so CI needs nothing
+  outside this repo; never edit them here) and to `dist/charts/` by the build. The second exception to
+  "nothing computed in the browser": the visitor's formulas fill a matplotlib program that runs in their
+  browser (Pyodide, from jsDelivr on the first run, a few seconds). `tests/test_charts.py` checks every
+  listed template has its data and its title/axis slots. Which charts the page offers is `web/charts.toml` (`web/charts.py`): a
+  plain name, an intro and starting formulas per chart, so one template gives several charts; grouped
+  buttons at `#/charts/<id>`; checked by `tests/test_chart_pages.py`; on Claude UI's Content page. MathZetta's home links this page (mathzetta-sites'
+  registry, `external`).
 - In `dist/`, `index.html` is the public page and `editor.html` the (read-only) editor below,
   linked from each page's "How this works".
 - Page rules: plain words (no internal stat names), ≤ ~8 table columns, real committed data only

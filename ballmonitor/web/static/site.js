@@ -94,6 +94,7 @@ async function renderNav(active) {
   if (!nav.childElementCount) {
     nav.append(...site.models.map((m) => el("a", { href: `#/${m.name}`, "data-route": m.name }, m.title)));
     nav.append(...(site.tables || []).map((t) => el("a", { href: `#/data/${t.id}`, "data-route": `data/${t.id}` }, t.title)));
+    nav.append(el("a", { href: "#/charts", "data-route": "charts" }, "Baseball charts"));
   }
   for (const a of document.querySelectorAll(".ss-nav a[data-route]")) {
     if (a.dataset.route === active) a.setAttribute("aria-current", "page");
@@ -127,6 +128,11 @@ async function renderHome() {
       el("ul", { class: "model-list" }, site.tables.map((t) =>
         el("li", {}, el("a", { class: "model-link", href: `#/data/${t.id}` },
           el("b", {}, t.title), el("p", {}, t.summary)))))) : null,
+    (site.charts || []).length ? cell(cellClass("Baseball"),
+      el("div", { class: "ss-band" }, "Charts"),
+      el("ul", { class: "model-list" }, el("li", {}, el("a", { class: "model-link", href: "#/charts" },
+        el("b", {}, "Baseball charts"),
+        el("p", {}, `${site.charts.length} charts of every season since 1871 (how hitters age, power by decade, the best seasons), and you can change any of them.`))))) : null,
     cell("ss-p3",
       el("div", { class: "ss-band" }, "Games"),
       el("ul", { class: "model-list" }, [...copy("home-games").querySelectorAll("li")].map((li) =>
@@ -483,8 +489,76 @@ async function renderDataTable(id) {
   show({});
 }
 
+// ── baseball charts (charts/: pyslots' form and templates, scripts/sync-charts.sh) ──
+// The other exception to "nothing computed in the browser": the visitor's formulas fill a Python
+// (matplotlib) template, which runs in their browser (Pyodide, loaded from jsDelivr on the first run).
+const CHARTS = "charts/";
+let pyslotsScript = null;
+function loadPyslots() {
+  return pyslotsScript = pyslotsScript || new Promise((resolve, reject) => {
+    const s = el("script", { src: `${CHARTS}embed/pyslots-embed.js`, defer: "" });
+    s.onload = () => (window.Pyslots ? resolve(window.Pyslots) : reject(new Error("no Pyslots in the script")));
+    s.onerror = () => { pyslotsScript = null; reject(new Error("could not load the charts script")); };
+    document.head.append(s);
+  });
+}
+const chartSlug = (file) => file.replace(/^charts\//, "").replace(/\.py$/, "");
+
+// The charts come from web/charts.toml (data/site.json): a name, an intro and starting formulas for
+// one of the templates. An old address naming a template (#/charts/scatter) opens its first chart.
+async function renderCharts(slug) {
+  const site = await getJSON("data/site.json");
+  const charts = site.charts || [];
+  current = { model: null, pickers: {} };
+  const t = charts.find((x) => x.id === slug) || charts.find((x) => chartSlug(x.template) === slug) || charts[0];
+  if (!t) {
+    app.replaceChildren(cell("ss-p2", el("div", { class: "ss-band" }, "Page not found"),
+      el("p", {}, "There are no charts yet. ", el("a", { href: "#/" }, "See everything"))));
+    return;
+  }
+  document.title = `${t.title} · Baseball charts · Ball Monitor`;
+  const cls = cellClass("Baseball");
+  const groups = {};
+  for (const x of charts) (groups[x.group] = groups[x.group] || []).push(x);
+  const host = el("div", { class: "live-chart" }, el("p", { class: "loading" }, "Loading the chart…"));
+  app.replaceChildren(
+    cell(`${cls} page-head`,
+      el("a", { class: "back", href: "#/" }, "← All forecasts"),
+      el("div", { class: "ss-kicker" }, "Baseball · Charts"),
+      el("h1", { class: "ss-title" }, "Baseball charts"),
+      el("p", { class: "summary" }, "Every big-league season from 1871 to 2024, charted. Pick a chart, or change any of its boxes and draw it again."),
+      el("nav", { class: "chart-picks", "aria-label": "Charts" },
+        ...Object.entries(groups).map(([g, xs]) => el("div", { class: "chart-group" },
+          el("span", { class: "chart-group-name" }, g),
+          el("div", { class: "chart-group-buttons" }, ...xs.map((x) => el("a", { class: "ss-btn small", href: `#/charts/${x.id}`,
+            ...(x === t ? { "aria-current": "page" } : {}) }, x.title))))))),
+    cell(`${cls} chart-cell`,
+      el("div", { class: "ss-band" }, t.title),
+      el("p", { class: "chart-intro" }, t.intro),
+      host),
+    cell(`${cls} how`, el("div", { class: "ss-band" }, "How this works"),
+      el("p", {}, "Each box is a formula over a season's numbers (HR, AB, BB…). What you type is read by ",
+        el("a", { href: "https://mathzetta.com/" }, "MathZetta"),
+        ", shown as maths, and the chart is drawn by a short Python program right in your browser. The first chart takes a few seconds while Python loads; nothing you type is sent anywhere."),
+      el("p", { class: "small" }, "Data: the Lahman Baseball Database (SABR, CC BY-SA 3.0): hitters with 400+ at-bats and pitchers with 100+ innings in a season.")));
+  renderNav("charts");
+  window.scrollTo(0, 0);
+  try {
+    const Pyslots = await loadPyslots();
+    await Pyslots.mount(host, { site: new URL(CHARTS, location.href).href, template: t.template, title: t.title,
+      formulas: t.formulas || {} });
+  } catch (e) {
+    host.replaceChildren(el("p", {}, "The chart couldn't load. Try again in a little while."));
+    console.error(e);
+  }
+}
+
 // ── routing: #/ (home), #/<model> and #/data/<table> ─────────────────────────
 function route() {
+  const c = location.hash.match(/^#\/charts(?:\/([a-z0-9-]+))?\/?$/);
+  if (c) return renderCharts(c[1] || "").catch((e) => {
+    app.replaceChildren(el("p", { class: "loading" }, `Something went wrong loading this page (${e.message}).`));
+  });
   const d = location.hash.match(/^#\/data\/([a-z0-9-]+)/);
   if (d) return renderDataTable(d[1]).catch((e) => {
     app.replaceChildren(el("p", { class: "loading" }, `Something went wrong loading this page (${e.message}).`));

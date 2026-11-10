@@ -27,7 +27,7 @@ from typing import Any
 
 from ballmonitor.core import registry, render, views
 from ballmonitor.core.config import read_toml
-from ballmonitor.web import server, tables
+from ballmonitor.web import charts, server, tables
 
 STATIC_DIR = Path(__file__).resolve().parent / "static"
 SITE_URL = "https://ballmonitor.com"  # canonical address (robots.txt, sitemap.xml)
@@ -215,8 +215,9 @@ def build_views(data_dir: Path, names: list[str], log=print) -> list[str]:
     live = tables.public()   # live data tables (web/tables.toml) whose server has an address
     if live:
         log(f"   tables: {', '.join(t['id'] for t in live)}")
-    (data_dir / "site.json").write_text(json.dumps({"models": index, "redirects": redirects, "tables": live}, indent=1),
-                                        encoding="utf-8")
+    chart_list = charts.public()   # the baseball charts page's list (web/charts.toml)
+    (data_dir / "site.json").write_text(json.dumps({"models": index, "redirects": redirects, "tables": live,
+                                                    "charts": chart_list}, indent=1), encoding="utf-8")
     return failures
 
 
@@ -267,6 +268,10 @@ def build_static_site(out_dir: Path | str = "dist", models: list[str] | None = N
     # 1d. Lineup (daily batting-order puzzle; prebuilt by games/lineup/build.py) -> dist/lineup/
     if server.GAME_LINEUP.is_dir():
         shutil.copytree(server.GAME_LINEUP, target / "lineup", dirs_exist_ok=True)
+
+    # 1e. the baseball charts (pyslots' form and templates, scripts/sync-charts.sh) -> dist/charts/
+    if server.CHARTS.is_dir():
+        shutil.copytree(server.CHARTS, target / "charts", dirs_exist_ok=True)
 
     # 2. (Pitch Guesser, game.html + data/game_scenarios.json, is off the site since 2026-11-08;
     #    it still runs locally at /game under `ballmonitor serve`.)
