@@ -77,6 +77,7 @@ ballmonitor serve                                  # browser UI at http://127.0.
 ballmonitor build-site --out dist                   # static bundle (GitHub Pages); CI runs update-and-build daily
 ballmonitor views ncaaf_bowls [--out x.json]       # build + check one model's public page
 ballmonitor tables [--check]                        # live data tables (web/tables.toml); --check asks their servers
+python -m ballmonitor.data_tables.build [--only nba]  # CSVs for the QB / NBA / WNBA data tables (raw/ + csv/ gitignored)
 ballmonitor update-and-build [--models ncaaf_bowls]  # fetch the models that are due ([fetch]), rebuild the whole site
 ballmonitor fetch mlb_bullpen [--offline]          # download/rebuild a model's data
 ballmonitor export-replay --game 401858275 --out x.mp4   # cfb_replay → vertical MP4 (needs `pip install -e '.[video]'` + ffmpeg)
@@ -165,6 +166,8 @@ pytest ballmonitor/models/race_time                # one model
   and sorts; `site.js` loads tabview's embed from `<server><path>web/vendor/tabview-embed.js` and
   mounts it. A table whose `[servers]` address is blank stays off the site. `ballmonitor tables
   [--check]` lists them and asks each server for its columns (and flags names in the config it lacks).
+  `ballmonitor/data_tables/build.py` makes the CSVs for the QB, NBA and WNBA tables (nflverse,
+  SportsDataverse/ESPN; see its README for licenses and the upload steps).
 - In `dist/`, `index.html` is the public page and `editor.html` the (read-only) editor below,
   linked from each page's "How this works".
 - Page rules: plain words (no internal stat names), ≤ ~8 table columns, real committed data only
@@ -246,7 +249,7 @@ the draft values, implement `predict`, add examples, flip status to `draft`.
 | `dad` | calibrated | opponent-adjusted margin strength vs a chosen default team in σ (shrunk) + result-based wins above default (WAD); real ESPN/football-data seasons; see RESEARCH_STRENGTH.md |
 | `college_diamond` | calibrated | D-I baseball & softball: run-margin ridge ratings (compressed margins, last-season prior) → rest-of-season + conference-tournament + RPI-committee + NCAA bracket Monte Carlo; see RESEARCH.md |
 | `cfb_replay` | draft | ESPN play-by-play + ESPN win probability → 60 s vertical replay: WP chart down the left, ~14 annotated plays (every score + biggest swings) revealed one by one on the right, time axis warped to fit them (variants: `chapters`, `plays_only`); rendered by web/static/replay.js; `ballmonitor export-replay` → MP4 |
-| `ranked_choice` | draft | published ranked ballots (AP Top 25 football/men's basketball since 2014, BBWAA MLB awards since 2012, NBA 2014-15–2022-23 and PHWA NHL awards since 2017-18 from PDFs the user downloads with `tools/download.py`) re-counted with 14 methods (official points, Borda, plurality, first past the post, IRV, Coombs, Baldwin, Bucklin, Copeland, Schulze, ranked pairs, minimax, Kemeny); `fetch.py` adds new AP weeks daily |
+| `ranked_choice` | draft | published ranked ballots (AP Top 25 football/men's basketball since 2014, BBWAA MLB awards since 2012, NBA 2014-15–2022-23 and PHWA NHL awards since 2017-18 from PDFs the user downloads with `tools/download.py`) re-counted with 15 methods (official points, Borda, plurality, first past the post, top-two runoff, IRV, Coombs, Baldwin, Bucklin, Copeland, Schulze, ranked pairs, minimax, Kemeny); `fetch.py` adds new AP weeks daily |
 
 Games: `new27K/` (27K, at `/27k/`), `ballmonitor/games/lineup/` (Lineup daily batting-order puzzle at
 `/lineup/`: nine real player-seasons since 1955, graded by exact expected runs (Markov chain,
