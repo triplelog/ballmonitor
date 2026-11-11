@@ -206,3 +206,19 @@ th button.sort {
 }
 th button.sort:focus-visible { outline: 2px solid var(--ss-ink); outline-offset: 2px; }
 h1[tabindex="-1"]:focus { outline: none; }
+
+/* ---------- apps: the race time calculator (static/apps/race_time.js) ---------- */
+.rc-form { display: grid; gap: 0.6rem; margin-bottom: 0.9rem; }
+.rc-races { display: grid; gap: 0.5rem; }
+.rc-race { display: flex; flex-wrap: wrap; align-items: end; gap: 0.5rem 0.8rem; padding: 0.55rem 0.7rem;
+  background: var(--ss-panel); border-radius: var(--ss-radius-sm); }
+.rc-race label { display: grid; gap: 0.15rem; font-weight: 600; font-size: 0.9rem; }
+.rc-lbl { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.03em; font-family: var(--ss-font-head); }
+.rc-race input { width: 9rem; font-variant-numeric: tabular-nums; }
+.rc-x { padding: 0.3rem 0.7rem; font-size: 0.85rem; }
+.rc-form > .ss-btn { justify-self: start; }
+.rc-own { margin: 0 0 0.7rem; padding: 0.55rem 0.8rem; background: var(--ss-panel-strong); border-radius: var(--ss-radius-sm); font-weight: 600; }
+.rc-chart { margin-top: 0.9rem; }
+@media (max-width: 860px) {
+  .app-race_time th:last-child, .app-race_time td:last-child { white-space: normal; min-width: 5.5rem; }
+}

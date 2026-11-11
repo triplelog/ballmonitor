@@ -64,7 +64,10 @@ def test_projection_matches_formula_and_falls_with_rank():
     e = pred.extras
     import math
     p = m.params
-    expected = float(p.proj_intercept) + float(p.proj_slope) * math.log(e["rank"])
+    # Georgia's 2023 SRS in data/outcomes/fbs_team_srs.csv (the season before the class)
+    assert e["projection"]["prior_seasons"] == [2023]
+    expected = (float(p.proj_intercept) + float(p.proj_slope) * math.log(e["rank"])
+                + float(p.proj_prior_weight) * e["projection"]["prior_srs"])
     assert e["projection"]["estimate"] == pytest.approx(expected, abs=0.06)
     lo, hi = e["projection"]["interval"]
     assert lo < e["projection"]["estimate"] < hi
@@ -73,6 +76,48 @@ def test_projection_matches_formula_and_falls_with_rank():
     weak = m.predict({"year": 2024, "team": "Kansas"}).extras
     assert weak["rank"] > e["rank"]
     assert weak["projection"]["estimate"] < e["projection"]["estimate"]
+
+
+def test_prior_strength_moves_projection():
+    inputs = {"year": 2024, "team": "Georgia"}  # a strong program: prior SRS well above 0
+    base = _model().predict(inputs).extras["projection"]
+    assert base["prior_srs"] > 10
+    more = _model(proj_prior_weight=0.6).predict(inputs).extras["projection"]
+    none = _model(proj_prior_weight=0.0).predict(inputs).extras["projection"]
+    assert none["estimate"] < base["estimate"] < more["estimate"]
+    # hand calculation: rank 1 -> ln(1) = 0, so the estimate is intercept + weight * prior
+    p = _model().params
+    assert base["estimate"] == pytest.approx(
+        float(p.proj_intercept) + float(p.proj_prior_weight) * base["prior_srs"], abs=0.06)
+    # a longer window averages more seasons
+    three = _model(proj_prior_seasons=3).predict(inputs).extras["projection"]
+    assert three["prior_seasons"] == [2021, 2022, 2023]
+
+
+def test_prior_strength_edge_cases():
+    m = _model()
+    # no season before 2012 in the data: no projection, and the steps say why
+    old = m.predict({"year": 2012, "team": "Alabama"})
+    assert old.extras["projection"] is None and "No projected SRS" in " ".join(old.steps)
+    # ... but the rank-only variant still projects
+    rank_only = registry.load_model("ncaaf_recruiting", variant="class_rank_only")
+    e = rank_only.predict({"year": 2012, "team": "Alabama"}).extras
+    assert e["projection"]["estimate"] == pytest.approx(25.62 - 6.56 * math.log(e["rank"]), abs=0.06)
+    # a class newer than the game data uses the latest season there is
+    new = m.predict({"year": 2027, "team": "Texas A&M"})
+    assert new.extras["projection"]["prior_seasons"] == [2025]
+    assert "not in it yet" in " ".join(new.steps)
+    # a program with no FBS season before the class gets proj_prior_default
+    jmu = m.predict({"year": 2022, "team": "James Madison"}).extras["projection"]
+    assert jmu["prior_seasons"] == [] and jmu["prior_srs"] == pytest.approx(float(m.params.proj_prior_default))
+
+
+def test_roster_classes_average_the_class_ranks():
+    one = _model().predict({"year": 2024, "team": "Kansas"}).extras
+    four = _model(proj_roster_classes=4).predict({"year": 2024, "team": "Kansas"}).extras
+    assert one["projection"]["rank"] == one["rank"] == four["rank"]  # the class rank itself is unchanged
+    assert four["projection"]["rank_classes"] == [2024, 2023, 2022, 2021]
+    assert four["projection"]["rank"] != one["projection"]["rank"]
 
 
 def test_wider_projection_sd_widens_range():

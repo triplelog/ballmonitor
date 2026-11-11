@@ -23,17 +23,17 @@ schedules (2023-2025). 'WN exact' = teams whose built W-L equals Warren Nolan's 
 | baseball 2024 | 305 | 8377 | 7889 / 355 / 133 | 49 / 55 | 292/305 / 305/305 |
 | baseball 2025 | 307 | 8409 | 7960 / 313 / 136 | 49 / 55 | 296/307 / 303/307 |
 | baseball 2026 | 308 | 8437 | 8002 / 302 / 133 | 48 / 55 | 307/308 / 308/308 |
-| softball 2015 | 217 | 3093 | 2943 / 25 / 125 | 16 / 26 | - |
-| softball 2016 | 290 | 5720 | 5354 / 234 / 132 | 31 / 39 | - |
-| softball 2017 | 291 | 7399 | 6975 / 290 / 134 | 41 / 51 | - |
-| softball 2018 | 296 | 7668 | 7127 / 408 / 133 | 43 / 52 | - |
+| softball 2015 | 217 | 3093 | 2830 / 138 / 125 | 16 / 26 | - |
+| softball 2016 | 290 | 5720 | 5286 / 302 / 132 | 31 / 39 | - |
+| softball 2017 | 291 | 7399 | 6911 / 354 / 134 | 41 / 51 | - |
+| softball 2018 | 296 | 7668 | 7122 / 413 / 133 | 43 / 52 | - |
 | softball 2019 | 297 | 7601 | 7113 / 351 / 137 | 42 / 51 | - |
-| softball 2021 | 288 | 6065 | 5728 / 201 / 136 | 29 / 43 | - |
-| softball 2022 | 302 | 7608 | 7413 / 58 / 137 | 43 / 49 | - |
+| softball 2021 | 287 | 5939 | 5592 / 211 / 136 | 28 / 42 | - |
+| softball 2022 | 301 | 7410 | 7215 / 58 / 137 | 42 / 49 | - |
 | softball 2023 | 306 | 7858 | 7379 / 346 / 133 | 44 / 51 | 306/306 / 306/306 |
 | softball 2024 | 307 | 7929 | 7412 / 382 / 135 | 45 / 52 | 305/307 / 307/307 |
 | softball 2025 | 309 | 8047 | 7522 / 388 / 137 | 45 / 52 | 309/309 / 309/309 |
-| softball 2026 | 308 | 7824 | 7625 / 66 / 133 | 43 / 51 | - |
+| softball 2026 | 308 | 7824 | 7626 / 65 / 133 | 43 / 51 | - |
 
 RPI check (our rpi.py vs Warren Nolan's final RPI ranks; mean |rank difference| among WN's top 64):
 
@@ -44,7 +44,7 @@ RPI check (our rpi.py vs Warren Nolan's final RPI ranks; mean |rank difference| 
 | baseball 2023 | 1.11 (29 exact) | 3.95 (7 exact) |
 | baseball 2024 | 1.16 (27 exact) | 4.2 (13 exact) |
 | baseball 2025 | 1.53 (20 exact) | 4.3 (5 exact) |
-| baseball 2026 | 4.41 (11 exact) | 3.66 (8 exact) |
+| baseball 2026 | 1.34 (15 exact) | 3.66 (8 exact) |
 | softball 2023 | 2.72 (11 exact) | 0.56 (47 exact) |
 | softball 2024 | 3.23 (11 exact) | 0.22 (54 exact) |
 | softball 2025 | 2.62 (10 exact) | 0.0 (64 exact) |
@@ -62,11 +62,11 @@ the end of the World Series). Log loss / Brier on the home team winning, RMSE on
 
 | configuration | dev log loss | test log loss | test Brier | test RMSE runs | weekend | midweek | postseason | first 4 weeks |
 |---|---|---|---|---|---|---|---|---|
-| baseline (raw margin ridge) | 0.6298 | 0.6279 | 0.2194 | 5.869 | 0.6376 | 0.5847 | 0.6143 | 0.6287 |
-| + margin compression / prior / recency (no midweek split) | 0.6219 | 0.6181 | 0.2153 | 5.778 | 0.6282 | 0.5733 | 0.6047 | 0.6099 |
-| + per-team midweek offset | 0.6220 | 0.6184 | 0.2154 | 5.780 | 0.6282 | 0.5752 | 0.6049 | 0.6101 |
-| midweek split, no preseason prior | 0.6311 | 0.6300 | 0.2203 | 5.926 | 0.6382 | 0.5922 | 0.6295 | 0.6329 |
-| midweek split, no margin compression | 0.6233 | 0.6201 | 0.2161 | 5.773 | 0.6302 | 0.5754 | 0.6055 | 0.6107 |
+| baseline (raw margin ridge) | 0.6298 | 0.6278 | 0.2194 | 5.869 | 0.6376 | 0.5845 | 0.6141 | 0.6286 |
+| + margin compression / prior / recency (no midweek split) | 0.6219 | 0.6181 | 0.2152 | 5.778 | 0.6282 | 0.5733 | 0.6045 | 0.6098 |
+| + per-team midweek offset | 0.6220 | 0.6184 | 0.2154 | 5.780 | 0.6282 | 0.5751 | 0.6047 | 0.6100 |
+| midweek split, no preseason prior | 0.6311 | 0.6300 | 0.2203 | 5.926 | 0.6383 | 0.5920 | 0.6292 | 0.6330 |
+| midweek split, no margin compression | 0.6233 | 0.6200 | 0.2161 | 5.772 | 0.6302 | 0.5753 | 0.6054 | 0.6106 |
 
 Shipped (no midweek split): margin cap 10, power 0.7, ridge 8, prior carry 1, half-life 120 days, midweek weight 1. Separate win-probability scales fitted on dev: midweek 0.680 vs weekend 0.634 per rating unit (midweek games are slightly MORE predictable from the same ratings).
 
@@ -74,16 +74,16 @@ Shipped (no midweek split): margin cap 10, power 0.7, ridge 8, prior carry 1, ha
 
 | configuration | dev log loss | test log loss | test Brier | test RMSE runs | weekend | midweek | postseason | first 4 weeks |
 |---|---|---|---|---|---|---|---|---|
-| baseline (raw margin ridge) | 0.5668 | 0.5694 | 0.1936 | 4.636 | 0.5805 | 0.4899 | 0.5167 | 0.5609 |
-| + margin compression / prior / recency (no midweek split) | 0.5539 | 0.5535 | 0.1875 | 4.525 | 0.5649 | 0.4704 | 0.5047 | 0.5358 |
-| + per-team midweek offset | 0.5538 | 0.5536 | 0.1875 | 4.525 | 0.5649 | 0.4708 | 0.5043 | 0.5359 |
-| midweek split, no preseason prior | 0.5722 | 0.5756 | 0.1966 | 4.720 | 0.5856 | 0.4984 | 0.5463 | 0.5741 |
-| midweek split, no margin compression | 0.5551 | 0.5549 | 0.1881 | 4.522 | 0.5662 | 0.4721 | 0.5067 | 0.5370 |
+| baseline (raw margin ridge) | 0.5668 | 0.5629 | 0.1918 | 4.605 | 0.5747 | 0.4744 | 0.5151 | 0.5611 |
+| + margin compression / prior / recency (no midweek split) | 0.5539 | 0.5486 | 0.1859 | 4.508 | 0.5604 | 0.4591 | 0.5033 | 0.5360 |
+| + per-team midweek offset | 0.5538 | 0.5487 | 0.1859 | 4.508 | 0.5605 | 0.4597 | 0.5029 | 0.5361 |
+| midweek split, no preseason prior | 0.5722 | 0.5711 | 0.1951 | 4.704 | 0.5816 | 0.4883 | 0.5456 | 0.5743 |
+| midweek split, no margin compression | 0.5551 | 0.5501 | 0.1865 | 4.505 | 0.5619 | 0.4613 | 0.5050 | 0.5372 |
 
-Shipped (no midweek split): margin cap 100, power 0.7, ridge 8, prior carry 1, half-life 60 days, midweek weight 1. Separate win-probability scales fitted on dev: midweek 0.854 vs weekend 0.771 per rating unit (midweek games are slightly MORE predictable from the same ratings).
+Shipped (no midweek split): margin cap 100, power 0.7, ridge 8, prior carry 1, half-life 60 days, midweek weight 1. Separate win-probability scales fitted on dev: midweek 0.853 vs weekend 0.771 per rating unit (midweek games are slightly MORE predictable from the same ratings).
 
 **Weekend vs midweek.** A per-team midweek offset (shrunk toward beta x rating; tuned on dev)
-compared with the same ratings without it — baseball: split minus no-split log loss dev +0.0001, test +0.0003 (weekend +0.0000, midweek +0.0019, postseason +0.0002); softball: split minus no-split log loss dev -0.0001, test +0.0001 (weekend +0.0000, midweek +0.0004, postseason -0.0004). Negative = the split helps.
+compared with the same ratings without it — baseball: split minus no-split log loss dev +0.0001, test +0.0003 (weekend +0.0000, midweek +0.0019, postseason +0.0002); softball: split minus no-split log loss dev -0.0001, test +0.0001 (weekend +0.0001, midweek +0.0006, postseason -0.0004). Negative = the split helps.
 The split is shipped only if it gains at least 0.001 dev log loss (see 'Shipped' above);
 down-weighting midweek games was also in the search (`midweek_weight`). Variant
 `midweek_split` turns the offset model on.
@@ -96,9 +96,9 @@ seasons scored once. 'misses' = at-large picks by the rule that were not in the 
 ### baseball
 
 - RPI-only at-large model: P = logistic(22.80 - 6.08 ln(RPI rank)); host model: logistic(17.86 - 6.45 ln(RPI rank)).
-- Test at-large log loss: RPI only 0.1261 vs RPI + rating + win% 0.1286 (n = 775 eligible non-AQ teams).
-- Test host log loss: RPI only 0.2365 vs full 0.2216.
-- Test at-large misses (picking the top N): full model 25 vs pure RPI order 24 of 205 at-large bids over 6 seasons; hosts correct 81 vs 81 of 96.
+- Test at-large log loss: RPI only 0.1156 vs RPI + rating + win% 0.1198 (n = 775 eligible non-AQ teams).
+- Test host log loss: RPI only 0.2357 vs full 0.2207.
+- Test at-large misses (picking the top N): full model 23 vs pure RPI order 20 of 205 at-large bids over 6 seasons; hosts correct 81 vs 81 of 96.
 
 | season | at-large | misses (model / RPI order) | hosts right (model / RPI) | seed-line MAE (model / RPI) |
 |---|---|---|---|---|
@@ -107,23 +107,23 @@ seasons scored once. 'misses' = at-large picks by the rule that were not in the 
 | 2023 | 34 | 2 / 2 | 14 / 14 | 0.22 / 0.19 |
 | 2024 | 34 | 5 / 5 | 13 / 13 | 0.12 / 0.16 |
 | 2025 | 35 | 3 / 3 | 14 / 14 | 0.12 / 0.12 |
-| 2026 | 35 | 5 / 6 | 15 / 15 | 0.19 / 0.16 |
+| 2026 | 35 | 3 / 2 | 15 / 15 | 0.22 / 0.19 |
 
 ### softball
 
-- RPI-only at-large model: P = logistic(21.98 - 5.79 ln(RPI rank)); host model: logistic(24.18 - 8.69 ln(RPI rank)).
-- Test at-large log loss: RPI only 0.1231 vs RPI + rating + win% 0.1337 (n = 740 eligible non-AQ teams).
-- Test host log loss: RPI only 0.1036 vs full 0.1365.
-- Test at-large misses (picking the top N): full model 19 vs pure RPI order 14 of 198 at-large bids over 6 seasons; hosts correct 88 vs 89 of 96.
+- RPI-only at-large model: P = logistic(30.41 - 8.02 ln(RPI rank)); host model: logistic(24.18 - 8.69 ln(RPI rank)).
+- Test at-large log loss: RPI only 0.0922 vs RPI + rating + win% 0.0874 (n = 736 eligible non-AQ teams).
+- Test host log loss: RPI only 0.1014 vs full 0.1340.
+- Test at-large misses (picking the top N): full model 12 vs pure RPI order 12 of 195 at-large bids over 6 seasons; hosts correct 88 vs 89 of 96.
 
 | season | at-large | misses (model / RPI order) | hosts right (model / RPI) | seed-line MAE (model / RPI) |
 |---|---|---|---|---|
-| 2021 | 34 | 4 / 4 | 14 / 15 | - / - |
-| 2022 | 33 | 4 / 3 | 14 / 14 | - / - |
-| 2023 | 32 | 3 / 2 | 14 / 14 | - / - |
-| 2024 | 32 | 2 / 2 | 16 / 16 | - / - |
+| 2021 | 33 | 3 / 3 | 14 / 15 | - / - |
+| 2022 | 32 | 2 / 2 | 14 / 14 | - / - |
+| 2023 | 32 | 2 / 2 | 14 / 14 | - / - |
+| 2024 | 32 | 1 / 2 | 16 / 16 | - / - |
 | 2025 | 33 | 2 / 1 | 14 / 14 | - / - |
-| 2026 | 34 | 4 / 2 | 16 / 16 | - / - |
+| 2026 | 33 | 2 / 2 | 16 / 16 | - / - |
 
 The committee is close to 'RPI order': adding our rating or win % did not help out of
 sample, so the shipped selection and host scores use RPI rank only.
@@ -138,49 +138,49 @@ bucket frequencies from dev seasons), `chalk` (rating-only, deterministic field)
 
 | sport snapshot split | teams | bid Brier (model / rpi_now / chalk / base) | bid log loss (model / rpi_now / base) | host Brier (model / rpi_now / chalk) | stage log loss (model / rpi bucket) | wins MAE | wins in 80% | seed-line MAE |
 |---|---|---|---|---|---|---|---|---|
-| baseball 04-01 dev | 1496 | 0.104 / 0.134 / 0.164 / 0.168 | 0.342 / 0.675 / 0.519 | 0.023 / 0.036 / 0.035 | 0.495 / 0.546 | 3.16 | 0.82 | 0.43 |
-| baseball 04-01 test | 1817 | 0.092 / 0.121 / 0.152 / 0.167 | 0.300 / 0.602 / 0.516 | 0.025 / 0.036 / 0.039 | 0.455 / 0.529 | 3.14 | 0.82 | 0.44 |
-| baseball 05-01 dev | 1496 | 0.085 / 0.105 / 0.139 / 0.168 | 0.277 / 0.525 / 0.519 | 0.015 / 0.021 / 0.028 | 0.425 / 0.486 | 1.93 | 0.87 | 0.34 |
-| baseball 05-01 test | 1817 | 0.078 / 0.098 / 0.136 / 0.167 | 0.257 / 0.486 / 0.516 | 0.020 / 0.023 / 0.035 | 0.406 / 0.485 | 1.93 | 0.84 | 0.37 |
+| baseball 04-01 dev | 1496 | 0.103 / 0.134 / 0.164 / 0.168 | 0.340 / 0.675 / 0.519 | 0.023 / 0.036 / 0.035 | 0.494 / 0.546 | 3.15 | 0.82 | 0.43 |
+| baseball 04-01 test | 1817 | 0.090 / 0.120 / 0.151 / 0.167 | 0.297 / 0.598 / 0.516 | 0.025 / 0.037 / 0.039 | 0.453 / 0.529 | 3.13 | 0.81 | 0.43 |
+| baseball 05-01 dev | 1496 | 0.085 / 0.105 / 0.139 / 0.168 | 0.277 / 0.525 / 0.519 | 0.015 / 0.021 / 0.028 | 0.426 / 0.486 | 1.93 | 0.86 | 0.34 |
+| baseball 05-01 test | 1817 | 0.077 / 0.096 / 0.136 / 0.167 | 0.254 / 0.480 / 0.516 | 0.020 / 0.023 / 0.035 | 0.403 / 0.482 | 1.92 | 0.83 | 0.36 |
 | baseball selection dev | 1496 | 0.017 / 0.081 / 0.118 / 0.168 | 0.058 / 0.407 / 0.519 | 0.009 / 0.009 / 0.023 | 0.203 / 0.426 | 0.32 | 0.98 | 0.27 |
-| baseball selection test | 1817 | 0.018 / 0.080 / 0.106 / 0.167 | 0.059 / 0.393 / 0.516 | 0.013 / 0.013 / 0.032 | 0.207 / 0.426 | 0.31 | 0.98 | 0.27 |
-| softball 04-01 dev | 884 | 0.064 / 0.083 / 0.095 / 0.170 | 0.231 / 0.421 / 0.523 | 0.009 / 0.010 / 0.020 | 0.326 / 0.403 | 2.27 | 0.82 | - |
-| softball 04-01 test | 1820 | 0.068 / 0.090 / 0.105 / 0.166 | 0.228 / 0.440 / 0.515 | 0.011 / 0.019 / 0.018 | 0.337 / 0.457 | 2.42 | 0.81 | - |
-| softball 05-01 dev | 884 | 0.055 / 0.077 / 0.084 / 0.170 | 0.200 / 0.384 / 0.523 | 0.004 / 0.004 / 0.016 | 0.286 / 0.349 | 1.19 | 0.87 | - |
-| softball 05-01 test | 1820 | 0.059 / 0.080 / 0.096 / 0.166 | 0.197 / 0.396 / 0.515 | 0.007 / 0.008 / 0.013 | 0.304 / 0.428 | 1.34 | 0.86 | - |
-| softball selection dev | 884 | 0.030 / 0.070 / 0.070 / 0.170 | 0.155 / 0.350 / 0.523 | 0.006 / 0.006 / 0.020 | 0.238 / 0.337 | 0.26 | 0.99 | - |
-| softball selection test | 1820 | 0.038 / 0.077 / 0.090 / 0.166 | 0.171 / 0.372 / 0.515 | 0.006 / 0.006 / 0.013 | 0.276 / 0.403 | 0.41 | 0.96 | - |
+| baseball selection test | 1817 | 0.016 / 0.079 / 0.106 / 0.167 | 0.055 / 0.388 / 0.516 | 0.013 / 0.013 / 0.032 | 0.204 / 0.423 | 0.31 | 0.98 | 0.27 |
+| softball 04-01 dev | 884 | 0.060 / 0.086 / 0.093 / 0.170 | 0.205 / 0.454 / 0.523 | 0.009 / 0.010 / 0.020 | 0.299 / 0.403 | 2.30 | 0.83 | - |
+| softball 04-01 test | 1818 | 0.068 / 0.093 / 0.103 / 0.167 | 0.218 / 0.485 / 0.515 | 0.011 / 0.019 / 0.018 | 0.325 / 0.457 | 2.36 | 0.81 | - |
+| softball 05-01 dev | 884 | 0.053 / 0.079 / 0.081 / 0.170 | 0.176 / 0.419 / 0.523 | 0.004 / 0.004 / 0.018 | 0.261 / 0.349 | 1.18 | 0.86 | - |
+| softball 05-01 test | 1818 | 0.057 / 0.082 / 0.097 / 0.167 | 0.187 / 0.442 / 0.515 | 0.007 / 0.008 / 0.013 | 0.292 / 0.428 | 1.28 | 0.86 | - |
+| softball selection dev | 884 | 0.027 / 0.071 / 0.066 / 0.170 | 0.128 / 0.386 / 0.523 | 0.006 / 0.006 / 0.020 | 0.212 / 0.337 | 0.26 | 0.99 | - |
+| softball selection test | 1818 | 0.036 / 0.077 / 0.087 / 0.167 | 0.164 / 0.417 / 0.515 | 0.006 / 0.006 / 0.012 | 0.270 / 0.405 | 0.42 | 0.96 | - |
 
 Selection-eve benchmark that knows the automatic qualifiers (`rpi_aq`: AQ = 0.999, others
 RPI-only logistic) — bid Brier / log loss:
 
 - baseball selection dev: model 0.017 / 0.058 vs rpi_aq 0.018 / 0.064
-- baseball selection test: model 0.018 / 0.059 vs rpi_aq 0.017 / 0.056
-- softball selection dev: model 0.030 / 0.155 vs rpi_aq 0.037 / 0.198
-- softball selection test: model 0.038 / 0.171 vs rpi_aq 0.051 / 0.255
+- baseball selection test: model 0.016 / 0.055 vs rpi_aq 0.015 / 0.051
+- softball selection dev: model 0.027 / 0.128 vs rpi_aq 0.035 / 0.189
+- softball selection test: model 0.036 / 0.164 vs rpi_aq 0.050 / 0.270
 
 Reliability of P(bid), test seasons, all snapshots pooled:
 
 | sport | bin | teams | mean P | share in field |
 |---|---|---|---|---|
-| baseball | 0.00-0.05 | 2931 | 0.008 | 0.011 |
-| baseball | 0.05-0.20 | 936 | 0.110 | 0.113 |
-| baseball | 0.20-0.40 | 485 | 0.286 | 0.278 |
-| baseball | 0.40-0.60 | 254 | 0.486 | 0.476 |
-| baseball | 0.60-0.80 | 184 | 0.695 | 0.679 |
-| baseball | 0.80-0.95 | 178 | 0.882 | 0.865 |
-| baseball | 0.95-1.00 | 483 | 0.993 | 0.994 |
-| softball | 0.00-0.05 | 3139 | 0.007 | 0.012 |
-| softball | 0.05-0.20 | 772 | 0.107 | 0.101 |
-| softball | 0.20-0.40 | 410 | 0.285 | 0.237 |
-| softball | 0.40-0.60 | 255 | 0.488 | 0.525 |
-| softball | 0.60-0.80 | 181 | 0.700 | 0.696 |
-| softball | 0.80-0.95 | 164 | 0.884 | 0.951 |
-| softball | 0.95-1.00 | 539 | 0.994 | 0.972 |
+| baseball | 0.00-0.05 | 2921 | 0.007 | 0.010 |
+| baseball | 0.05-0.20 | 947 | 0.110 | 0.108 |
+| baseball | 0.20-0.40 | 492 | 0.289 | 0.272 |
+| baseball | 0.40-0.60 | 251 | 0.492 | 0.498 |
+| baseball | 0.60-0.80 | 185 | 0.699 | 0.676 |
+| baseball | 0.80-0.95 | 172 | 0.881 | 0.901 |
+| baseball | 0.95-1.00 | 483 | 0.993 | 0.998 |
+| softball | 0.00-0.05 | 3166 | 0.006 | 0.009 |
+| softball | 0.05-0.20 | 778 | 0.106 | 0.122 |
+| softball | 0.20-0.40 | 382 | 0.289 | 0.233 |
+| softball | 0.40-0.60 | 237 | 0.489 | 0.527 |
+| softball | 0.60-0.80 | 161 | 0.701 | 0.683 |
+| softball | 0.80-0.95 | 134 | 0.880 | 0.918 |
+| softball | 0.95-1.00 | 596 | 0.995 | 0.977 |
 
 Notes: `rpi_now` ignores automatic bids before selection eve, so it is weak for small-
 conference champions; `chalk` is 0/1 (log loss clipped at 1%). Seed-line MAE is baseball
 only (softball 2-4 seeds are not in the data). Wins = final D-I wins incl. postseason.
 
-18051 team-snapshot rows are in data/backtest.csv (`ballmonitor backtest college_diamond`).
+18045 team-snapshot rows are in data/backtest.csv (`ballmonitor backtest college_diamond`).
 

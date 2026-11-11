@@ -325,3 +325,35 @@ def test_poll_headline_says_this_week_only_while_the_poll_is_current():
     assert not site._current("2026-10-25", "college football, Week 8", today)       # stale data
     assert not site._current("2026-11-08", "college football, Final", today)        # off-season
     assert not site._current("", "men's basketball, Week 1", today)
+
+
+def test_mlb_fetch_without_saved_pages_keeps_built_awards_and_asks_only_for_new_ones(tmp_path, monkeypatch):
+    """The daily CI build has no data/raw: in November it reads the two sitemaps, keeps every award
+    already built and would ask only for a new award's pages; in other months it asks for nothing."""
+    import datetime as dt
+    import gzip
+    import shutil
+
+    from ballmonitor.models.ranked_choice.sources import mlb
+    src = Path(__file__).parent / "data" / "ballots"
+    if not (src / "mlb.csv.gz").exists():
+        pytest.skip("no built MLB ballots")
+    out = tmp_path / "data" / "ballots"
+    out.mkdir(parents=True)
+    for name in ("mlb.csv.gz", "mlb_contests.csv.gz"):
+        shutil.copy2(src / name, out / name)
+    before = {n: gzip.open(out / n).read() for n in ("mlb.csv.gz", "mlb_contests.csv.gz")}
+    asked = []
+
+    def get(self, slug, fname, refresh=False):
+        asked.append(slug)
+        if slug.endswith(".xml"):   # the sitemap lists one award that is already built
+            return "https://bbwaa.com/24-al-mvp/ https://bbwaa.com/24-al-mvp-ballots/" if slug.startswith("post") else ""
+        raise AssertionError(f"asked for a page of an award that is already built: {slug}")
+
+    monkeypatch.setattr(mlb._Fetcher, "get", get)
+    monkeypatch.setattr(mlb, "SLUG_OVERRIDES", {})
+    assert mlb.fetch(tmp_path, log=lambda *_: None, today=dt.date(2026, 6, 1)) == [] and asked == []
+    written = mlb.fetch(tmp_path, log=lambda *_: None, today=dt.date(2026, 11, 12))
+    assert sorted(asked) == ["page-sitemap.xml", "post-sitemap.xml"] and len(written) == 2
+    assert {n: gzip.open(out / n).read() for n in before} == before   # nothing lost, nothing reordered

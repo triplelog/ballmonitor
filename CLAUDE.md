@@ -151,7 +151,11 @@ pytest ballmonitor/models/race_time                # one model
 - Made for fans, not analysts: each model's page is a few **pre-generated** tables/charts from its
   `site.py` (`page(model)` built with `core/views.py`), written to `data/views/<name>.json` by
   `build-site`; `site.js` only displays them (search, sort, "show all", bars, line charts,
-  dropdown pickers). Nothing is computed in the browser. Home index: `data/site.json`.
+  dropdown pickers). Home index: `data/site.json`.
+- **Computing in the browser is fine when it's lightweight** (owner's rule, 2026-11-11): small
+  formulas, a calculator, filtering a table already on the page. What to avoid is shipping large
+  data or large models to the visitor; those stay pre-generated (big tables computed at build time),
+  served by a server (the live data tables) or loaded only on demand (the charts' Pyodide).
 - **Addresses are real paths** (`/ncaaf_bowls/`, `/ncaaf_bowls/team/georgia/`, `/tables/<id>/`,
   `/charts/<id>/`, `/about/`), not `#/` routes, so search engines see every page: `build_pages`
   (`web/pages.py`) writes a copy of site.html at each one with its own title, description, canonical and
@@ -159,6 +163,12 @@ pytest ballmonitor/models/race_time                # one model
   `site.js` then draws the page and follows links between pages without reloading (History API).
   Old `#/` links are turned into paths on arrival; `REDIRECTS` get stub pages. `sitemap.xml` lists every
   address. Page addresses may not use the site's own first parts (`pages.RESERVED`).
+- **Interactive tools (`views.app`)**: a page can include a lightweight tool that computes in the browser. A view
+  `V.app(id, title, name, data)` is drawn by `web/static/apps/<name>.js` (`window.BM_APPS[name].mount`),
+  loaded the first time it's shown and versioned by content hash (`assets` in data/site.json). An app
+  must be a faithful copy of its model's formulas, fed the model's parameters through `data` at build
+  time, with a test that runs it under node against the Python model (`tests/test_race_calc.py` for
+  the race time calculator, the only app so far). A model change that breaks the copy fails that test.
 - **Page weight:** a page whose JSON is over 150 KB (`builder.SPLIT_BYTES`) has each top-level picker
   option's views written to `data/views/<address>/<picker>/<slug>.json` (`src` on the option); `site.js`
   fetches one when it's shown. `builder.load_page` reads a split page back whole (tests).
@@ -180,7 +190,7 @@ pytest ballmonitor/models/race_time                # one model
   game is off too (not copied into `dist/`, no links; still at `/game` under `serve`).
 - **Live data tables** (`web/tables.toml`, `web/tables.py`): big CSVs served by tabdn table servers
   (tabc/sqldn, ~/Desktop/portfolio/mathzetta/tabdn) get a page at `/tables/<id>/` with a live
-  filter/sort table. The one exception to "nothing computed in the browser": the *server* filters
+  filter/sort table. The data is too big to send to the browser, so the *server* filters
   and sorts; `site.js` loads tabview's embed from `<server><path>web/vendor/tabview-embed.js` and
   mounts it with the advanced controls hidden (adding columns, stats, groups) and `[table.labels]`
   as the headers (`labels`/`timing` need tabview from 2026-11-10 on the server). A table whose `[servers]` address is blank stays off the site. `ballmonitor tables
@@ -190,8 +200,8 @@ pytest ballmonitor/models/race_time                # one model
 - **Baseball charts** (`/charts/`, `/charts/<id>/`): pyslots' embeddable form (Python chart
   templates with formula slots, ~/Desktop/portfolio/mathzetta/pyslots) and its chart templates and Lahman
   data, copied into `ballmonitor/charts/` by `scripts/sync-charts.sh` (committed, so CI needs nothing
-  outside this repo; never edit them here) and to `dist/charts/` by the build. The second exception to
-  "nothing computed in the browser": the visitor's formulas fill a matplotlib program that runs in their
+  outside this repo; never edit them here) and to `dist/charts/` by the build. The visitor's formulas
+  fill a matplotlib program that runs in their
   browser (Pyodide, from jsDelivr on the first run, a few seconds). `tests/test_charts.py` checks every
   listed template has its data and its title/axis slots. Which charts the page offers is `web/charts.toml` (`web/charts.py`): a
   plain name, an intro and starting formulas per chart, so one template gives several charts; grouped
@@ -268,13 +278,13 @@ the draft values, implement `predict`, add examples, flip status to `draft`.
 
 | model | status | approach |
 |---|---|---|
-| `race_time` | calibrated | weighted average of Riegel predictions from all the runner's races (b 1.09 M / 1.06 F) + empirical 50/80/95% bands from 2,560 runners' real errors; old curve method as variant `curve_v04`; see RESEARCH_BANDS.md |
+| `race_time` | calibrated | weighted average of Riegel predictions from all the runner's races (b 1.09 M / 1.06 F) + empirical 50/80/95% bands from 2,560 runners' real errors; old curve method as variant `curve_v04`; see RESEARCH_BANDS.md; the public page's calculator is a tested JS copy (`web/static/apps/race_time.js`) |
 | `race_podium` | calibrated | recency/field-weighted prior editions shifted to expected field size + cross-division prior + per-place fitted sigma; walk-forward on 397 editions; see RESEARCH.md |
 | `next_pitch` | calibrated | per-pitcher recency-weighted context tree (Aaronson-style) + shared LightGBM correction; see RESEARCH.md |
 | `bvp_similarity` | calibrated | regressed log5 platoon baseline + similar-player pool + count micro-sim, empirical-Bayes blend; tuned on 2025, tested on 2026; see RESEARCH.md |
 | `mlb_bullpen` | calibrated | Monte Carlo game sim (conditional-logit reliever choice fitted on 2025 calls), recalibrated and blended with a direct per-reliever logistic model, plus expected bullpen runs vs average; trained 2025, tested 2026; see RESEARCH*.md |
-| `ncaaf_bowls` | draft | ESPN FPI + full live schedule (`fetch.py`) → season Monte Carlo → 2026 12-team CFP + 2026-27 bowl tie-ins |
-| `ncaaf_recruiting` | calibrated (football) | Plackett-Luce offer Elo → rank-decayed class scores + projected 4-season SRS; walk-forward vs consensus rankings; basketball unvalidated |
+| `ncaaf_bowls` | draft | ESPN FPI + full live schedule (`fetch.py`) → season Monte Carlo (each run draws a rating error per team) → 2026 12-team CFP (committee weights fitted to the 2016-2025 final rankings) + 2026-27 bowl tie-ins; game backtest on 6,699 games; see RESEARCH.md |
+| `ncaaf_recruiting` | calibrated (football) | Plackett-Luce offer Elo → rank-decayed class scores + projected 4-season SRS (class rank + the program's prior-season SRS); walk-forward vs consensus rankings; negative results in RESEARCH_VARIANTS.md; basketball unvalidated |
 | `dad` | calibrated | opponent-adjusted margin strength vs a chosen default team in σ (shrunk) + result-based wins above default (WAD); real ESPN/football-data seasons; see RESEARCH_STRENGTH.md |
 | `college_diamond` | calibrated | D-I baseball & softball: run-margin ridge ratings (compressed margins, last-season prior) → rest-of-season + conference-tournament + RPI-committee + NCAA bracket Monte Carlo; see RESEARCH.md |
 | `cfb_replay` | draft | ESPN play-by-play + ESPN win probability → 60 s vertical replay: WP chart down the left, ~14 annotated plays (every score + biggest swings) revealed one by one on the right, time axis warped to fit them (variants: `chapters`, `plays_only`); rendered by web/static/replay.js; `ballmonitor export-replay` → MP4 |

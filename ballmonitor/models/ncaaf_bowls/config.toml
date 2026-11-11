@@ -1,14 +1,14 @@
 [meta]
 title = "NCAAF bowl & CFP projections"
-version = "0.4.3"
+version = "0.5.0"
 status = "draft"
 question = "Which bowl game or 12-team College Football Playoff seed will each FBS team earn, and what are their postseason win probabilities?"
 description = "Monte Carlo FBS season and postseason simulator for the current season: every remaining regular-season game (ESPN schedule), conference championship games, the 12-team College Football Playoff (2026 straight-seeding protocol: 5 automatic bids, 7 at-large, top 4 ranked teams get byes) and the 2026-27 conference bowl tie-ins."
 assumptions = [
   "Records, the remaining schedule and conference alignment are the ESPN snapshot in data/meta.json (rebuild with `ballmonitor fetch ncaaf_bowls`); games after the snapshot are simulated.",
-  "Team strength is one fixed rating per team for the whole run (ESPN FPI by default, or a results-only rating), so injuries and in-season changes after the snapshot are ignored.",
+  "Team strength is the snapshot's rating (ESPN FPI by default, or a results-only rating) plus, in each simulated season, one error per team drawn from Normal(0, rating_uncertainty_points) and kept for all its games; injuries and in-season changes after the snapshot are otherwise ignored.",
   "Each game's win probability depends on the rating difference plus home-field advantage via a normal CDF margin model (config formula win_probability); FCS opponents all share fcs_opponent_rating.",
-  "The CFP committee ranking is a hand-weighted resume score (win %, losses, rating, conference title, power-conference schedule), not a fitted model.",
+  "The CFP committee ranking is a resume score (win %, losses, rating, conference title, power conference) with weights fitted to the committee's final top 25 of 2016-2025, plus random noise (resume_noise_points); it has no head-to-head, schedule-strength or injury terms.",
   "The CFP uses the 2026 format: automatic bids for the ACC, Big Ten, Big 12 and SEC champions plus the highest-ranked champion of the other six conferences, 7 at-large bids, straight seeding by ranking (byes for the top 4).",
   "Non-CFP bowls are filled from data/bowls.json: each conference fills its tie-in slots in its pick order, legacy Pac-12 schools fill the Pac-12 legacy slots, then pooled and at-large slots; picks weigh wins, rating, brand, distance and repeat/rematch avoidance.",
 ]
@@ -23,15 +23,22 @@ season = ["08-15", "01-25"]
 value = 2.5
 unit = "points"
 description = "Home-field advantage added to the home team's rating margin."
-source = "DRAFT: common FBS spread rule of thumb (~2.5 pts) - verify against closing lines."
+source = "Kept after testing: RESEARCH.md part 1 (6,699 FBS games, 2016-2025, FPI published before each game) fits 2.3, and refitting it each season on earlier seasons did not beat 2.5 (2019-2025)."
 range = [0.0, 6.0]
 
 [params.margin_sd]
 value = 14.0
 unit = "points"
 description = "Standard deviation of actual game scoring margin around the projected spread."
-source = "DRAFT: typical FBS margin-vs-spread SD (~14 pts) - verify."
+source = "Kept after testing: RESEARCH.md part 1 (6,699 FBS games, 2016-2025). The best-fitting value is 14.8 (the margin itself misses by 16.0), but walk-forward 2019-2025 the refitted value beat 14.0 in only 4 of 7 seasons, by under 0.001 log loss."
 range = [5.0, 25.0]
+
+[params.rating_uncertainty_points]
+value = 5.0
+unit = "points"
+description = "How wrong today's ratings may be. Each simulated season shifts every team's rating by its own draw from Normal(0, this), and the team keeps that shift in all its remaining games, the title game and the postseason. 0 = ratings are exact (every game independent). The committee and the bowls still see the published rating."
+source = "RESEARCH.md part 2: best log score for teams' remaining wins, 2016-2025 without 2020 (9 seasons, 11 dates each); walk-forward 2019-2025 it was picked as 5 or 6 every time and beat 0 in every test season. New in 0.5.0 (0 before)."
+range = [0.0, 8.0]
 
 [params.simulations]
 value = 200
@@ -40,7 +47,7 @@ source = "Judgement: keeps interactive runs well under a second; raise for stabl
 range = [50, 10000]
 
 [params.site_simulations]
-value = 5000
+value = 20000
 description = "Simulations for the public site's all-teams tables (site.py), run once at build time."
 source = "Judgement: MC s.e. at p=0.5 is 0.7% with 5000 sims; ~7 s per build."
 range = [200, 20000]
@@ -49,6 +56,37 @@ range = [200, 20000]
 value = [0.9, 0.6, 0.25, 0.05]
 description = "Playoff-chance cut-offs for the site's bubble watch: Locks, Should be in, On the bubble, Work to do (below the last: not listed)."
 source = "Judgement (bracketology-style tiers)."
+
+[params.site_root_min_chance]
+value = 0.01
+range = [0.0, 0.5]
+description = "Who to root for (site.py): a team's table uses its playoff chance when that is at least this, else its conference-title chance when that is; below both, no table."
+source = "Judgement"
+
+[params.site_root_min_swing]
+value = 0.01
+range = [0.0, 0.2]
+unit = "probability"
+description = "Who to root for: a game the team isn't in is listed only if the result moves its chance by at least this much (and more than the simulation noise, site_root_z)."
+source = "Judgement (1 point)"
+
+[params.site_root_z]
+value = 3.5
+range = [0.0, 6.0]
+description = "Who to root for: a game the team isn't in is listed only if the difference is this many standard errors of the simulation (two proportions from the same run). Without it, games on the other side of the country look like they matter by chance."
+source = "Judgement: the page checks about 8,000 team-game pairs a week; at 3.5 standard errors about 4 noise-only differences pass page-wide (at 2.5, about 100)"
+
+[params.site_root_rows]
+value = 8
+range = [1, 30]
+description = "Who to root for: most games listed on a team's page."
+source = "Judgement"
+
+[params.site_big_games_rows]
+value = 10
+range = [1, 40]
+description = "Rows in the page's 'This week's biggest games' table."
+source = "Judgement"
 
 [params.random_seed]
 value = 42
@@ -90,46 +128,52 @@ source = "Judgement: with ~8 games per team, 2 pseudo-games keeps early ratings 
 range = [0.0, 20.0]
 
 [params.resume_win_pct_weight]
-value = 65.0
+value = 67.0
 description = "CFP resume score: points per 1.0 of win percentage."
-source = "DRAFT judgement weight - verify against committee rankings."
+source = "RESEARCH.md part 3: Plackett-Luce fit to the committee's final top 25 of 2016-2025 (10 seasons, 250 ranked teams), rounded. Walk-forward 2019-2025 this fit put 77 of the committee's 84 top-12 teams in its own top 12; the 0.4.3 weights 66. Was 65."
 range = [0.0, 200.0]
 
 [params.resume_loss_penalty_scale]
-value = 3.5
+value = 1.4
 description = "CFP resume score: penalty multiplier on losses ** resume_loss_penalty_exponent."
-source = "DRAFT judgement weight - verify against committee rankings."
+source = "RESEARCH.md part 3: Plackett-Luce fit to the committee's final top 25 of 2016-2025 (10 seasons, 250 ranked teams), rounded. Walk-forward 2019-2025 this fit put 77 of the committee's 84 top-12 teams in its own top 12; the 0.4.3 weights 66. Was 3.5, which pushed two- and three-loss power-conference teams too far down."
 range = [0.0, 20.0]
 
 [params.resume_loss_penalty_exponent]
 value = 1.5
 description = "CFP resume score: exponent on losses (>1 makes each extra loss hurt more)."
-source = "DRAFT judgement weight - verify against committee rankings."
+source = "Judgement (kept; the fit in RESEARCH.md part 3 used this exponent and found the term small)."
 range = [1.0, 3.0]
 
 [params.resume_power_weight]
 value = 1.0
 description = "CFP resume score: points per point of power rating."
-source = "DRAFT judgement weight - verify against committee rankings."
+source = "The unit of the resume score: the other resume_* weights were fitted relative to this one (RESEARCH.md part 3)."
 range = [0.0, 5.0]
 
 [params.resume_conf_champ_bonus]
-value = 8.0
+value = 0.0
 description = "CFP resume score: bonus for winning any conference title."
-source = "DRAFT judgement weight - verify against committee rankings."
+source = "RESEARCH.md part 3: Plackett-Luce fit to the committee's final top 25 of 2016-2025 (10 seasons, 250 ranked teams), rounded. Walk-forward 2019-2025 this fit put 77 of the committee's 84 top-12 teams in its own top 12; the 0.4.3 weights 66. Was 8; the fit finds no bonus beyond the win the title game adds (the fitted value was -0.02)."
 range = [0.0, 30.0]
 
 [params.resume_p4_champ_bonus]
-value = 3.0
+value = 4.5
 description = "CFP resume score: extra bonus for winning an SEC / Big Ten / Big 12 / ACC title."
-source = "DRAFT judgement weight - verify against committee rankings."
+source = "RESEARCH.md part 3: Plackett-Luce fit to the committee's final top 25 of 2016-2025 (10 seasons, 250 ranked teams), rounded. Walk-forward 2019-2025 this fit put 77 of the committee's 84 top-12 teams in its own top 12; the 0.4.3 weights 66. Was 3."
 range = [0.0, 20.0]
 
 [params.resume_power4_bonus]
-value = 4.0
+value = 14.0
 description = "CFP resume score: schedule-strength bonus for power-conference teams and Notre Dame."
-source = "DRAFT judgement weight - verify against committee rankings."
+source = "RESEARCH.md part 3: Plackett-Luce fit to the committee's final top 25 of 2016-2025 (10 seasons, 250 ranked teams), rounded. Walk-forward 2019-2025 this fit put 77 of the committee's 84 top-12 teams in its own top 12; the 0.4.3 weights 66. Was 4: the committee rates a power-conference record far above the same record elsewhere."
 range = [0.0, 20.0]
+
+[params.resume_noise_points]
+value = 3.7
+description = "CFP resume score: how unpredictable the committee is. Gumbel noise of this scale is added to every team's score in every simulated season (0 = the committee always follows the score)."
+source = "RESEARCH.md part 3: 0.75 x the fitted Plackett-Luce noise scale (4.95). Walk-forward, with the multiplier picked on earlier seasons only (2021-2025), the summed squared error of 'in the committee's top 12' fell from 8.0 to 7.4 and of 'top 4' from 10.0 to 6.5; better in 3 of 5 seasons, a modest gain. New in 0.5.0 (0 before)."
+range = [0.0, 15.0]
 
 [params.bowl_win_weight]
 value = 3.5
@@ -215,3 +259,8 @@ range = [0, 3]
 expr = "normal_cdf((rating_diff + home * home_field_points) / margin_sd)"
 description = "P(team A wins) from rating difference (A - B) and home indicator (+1 home, 0 neutral, -1 away). Used for every regular-season, title, CFP and bowl game."
 variables = ["rating_diff", "home"]
+
+[formulas.simulated_game_sd]
+expr = "sqrt(max(margin_sd ** 2 - 2 * rating_uncertainty_points ** 2, 1))"
+description = "Margin SD of one simulated game once both teams' rating errors (rating_uncertainty_points) have been drawn. Inside the simulation it replaces margin_sd in win_probability, so a single game seen from the published ratings keeps the SD margin_sd: margin_sd^2 = this^2 + 2 * rating_uncertainty_points^2."
+variables = []

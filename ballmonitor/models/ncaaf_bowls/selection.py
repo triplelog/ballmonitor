@@ -113,7 +113,7 @@ class BowlSelector:
             # Wins bonus
             u += candidate.wins * cfg.bowl_win_weight
             # Power rating bonus
-            u += candidate.rating * cfg.bowl_rating_weight
+            u += candidate.seen_rating * cfg.bowl_rating_weight
 
             # Brand appeal calibrated to empirical +1.6 win premium
             # Prestige-scaled: Top-tier bowls (Citrus, Alamo, Pop-Tarts, ReliaQuest) place higher premium on national brands
@@ -286,7 +286,7 @@ class BowlSelector:
                 if cfg.win_prob_fn is not None:
                     p_t1 = cfg.win_prob_fn(t1.rating - t2.rating, 0)
                 else:
-                    z = (t1.rating - t2.rating) / cfg.margin_sd
+                    z = (t1.rating - t2.rating) / cfg.game_sd()
                     p_t1 = 0.5 * (1.0 + math.erf(z / 1.4142135623730951))
                 if rng.random() < p_t1:
                     winner, loser = t1, t2

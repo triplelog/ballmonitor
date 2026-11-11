@@ -46,8 +46,20 @@ holds every team's probabilities (used by tests and the backtest).
 - **Conference membership** (`teams_<sport>.csv`): Warren Nolan's season RPI tables
   (baseball 2021-2026, softball 2023-2025); other seasons start from the nearest such season
   and re-assign each team to the conference whose members it played most on weekends
-  from March 1 (plurality of 9+ games, iterated). NCAA.com's own conference field is the
-  *current* conference, so it is used only as a fallback.
+  from March 1 (plurality of 9+ games, iterated; a team with no clear plurality keeps the
+  nearest season's conference if that is still the one it played most, else it is
+  independent). Softball 2026 uses the conference column of Warren Nolan's 2026 table (its
+  records had been reset, so nothing else from it). NCAA.com's own conference field is the
+  *current* conference, so it is used only as a fallback. Check: hiding a season's Warren
+  Nolan table and inferring it from a neighbouring season gets 114 of 5,462 baseball and
+  58 of 1,844 softball team-seasons wrong (nearly all in the 2023-2025 realignment years),
+  10 of them wrongly independent (84 and 49 before 0.2.0).
+- **Sites:** baseball's source names the home team or "@neutral" (2015-2016, 2023-2024,
+  regular season 2025); other seasons list a designated home team even at neutral sites.
+  The 2026 file spells the site as an NCAA short name ("LSU", "UConn"); both spellings are
+  looked up. Softball sites are known for 2023-2025 only.
+- **Unknown opponents:** NCAA.com rows whose opponent was never filled in ("TBA", 324
+  softball conference-tournament games in 2021-2022) are dropped.
 - **Game types:** N = NCAA championship games. C = intra-conference games from the first
   day a team plays a different conference opponent than the day before (tournament
   pattern) within 21 days of selection, or a final title series. Check: the winner of
@@ -88,7 +100,8 @@ Weighted ridge regression on transformed run margins, solved by Gauss-Seidel (st
   **The weekend/midweek split did not help** (test log loss +0.0003 baseball, +0.0001
   softball; weekend games unchanged, postseason within ±0.0004), nor did down-weighting midweek
   games. Margin compression, ridge shrinkage and especially the preseason prior did help
-  (baseball test log loss 0.6279 → 0.6181; softball 0.5694 → 0.5535).
+  (baseball test log loss 0.6278 → 0.6181; softball 0.5629 → 0.5486; softball's numbers
+  are on real games only since 0.2.0, the 324 unpredictable 'TBA' games no longer count).
 
 ### 3. Rest of the regular season (sim.py)
 Each simulation draws every team's rating once: r_t + N(0, `rating_sd`), formula
@@ -168,8 +181,8 @@ teams were seeded and the unseeded regionals' pairings were set by the committee
 - Ratings are one number per team; pitching rotations, injuries and midseason form are
   not modelled. Data show no usable weekend/midweek difference beyond that number.
 - The committee proxy is RPI order plus noise. Pure RPI order picks all but ~4 of ~34
-  baseball at-large teams per year (24 misses in 205, 2021-2026) and all but ~2 in softball
-  (14 in 198); real committees also use quadrants, head-to-head and the eye test.
+  baseball at-large teams per year (20 misses in 205, 2021-2026) and all but ~2 in softball
+  (12 in 195); real committees also use quadrants, head-to-head and the eye test.
   The NCAA's RPI bonus/penalty is not reproduced.
 - Probabilities may be slightly overconfident: in the test seasons games were a little
   less predictable than in development (fitted win scale for weekend games 0.58 vs 0.63 in
@@ -212,20 +225,25 @@ Test seasons 2021-2026 (6 per sport; every D-I team, ~300 per season-snapshot):
 
 | sport | snapshot | P(bid) Brier: model / RPI-now / chalk / base | P(bid) log loss: model / RPI-now | P(host) Brier: model / RPI-now | stage log loss: model / RPI bucket | final wins MAE (80% cover) | seed-line MAE |
 |---|---|---|---|---|---|---|---|
-| baseball | 04-01 | 0.092 / 0.121 / 0.152 / 0.167 | 0.300 / 0.602 | 0.025 / 0.036 | 0.455 / 0.529 | 3.14 (0.82) | 0.436 |
-| baseball | 05-01 | 0.078 / 0.098 / 0.136 / 0.167 | 0.257 / 0.486 | 0.020 / 0.023 | 0.406 / 0.485 | 1.93 (0.84) | 0.365 |
-| baseball | selection | 0.018 / 0.080 / 0.106 / 0.167 | 0.059 / 0.393 | 0.013 / 0.013 | 0.207 / 0.426 | 0.31 (0.98) | 0.269 |
-| softball | 04-01 | 0.068 / 0.090 / 0.105 / 0.166 | 0.228 / 0.440 | 0.011 / 0.019 | 0.337 / 0.457 | 2.42 (0.81) | - |
-| softball | 05-01 | 0.059 / 0.080 / 0.096 / 0.166 | 0.197 / 0.396 | 0.007 / 0.008 | 0.304 / 0.428 | 1.34 (0.86) | - |
-| softball | selection | 0.038 / 0.077 / 0.090 / 0.166 | 0.171 / 0.372 | 0.006 / 0.006 | 0.276 / 0.403 | 0.41 (0.96) | - |
+| baseball | 04-01 | 0.090 / 0.120 / 0.151 / 0.167 | 0.297 / 0.598 | 0.025 / 0.037 | 0.453 / 0.529 | 3.13 (0.81) | 0.433 |
+| baseball | 05-01 | 0.077 / 0.096 / 0.136 / 0.167 | 0.254 / 0.480 | 0.020 / 0.023 | 0.403 / 0.482 | 1.92 (0.83) | 0.362 |
+| baseball | selection | 0.016 / 0.079 / 0.106 / 0.167 | 0.055 / 0.388 | 0.013 / 0.013 | 0.204 / 0.423 | 0.31 (0.98) | 0.268 |
+| softball | 04-01 | 0.068 / 0.093 / 0.103 / 0.167 | 0.218 / 0.485 | 0.011 / 0.019 | 0.325 / 0.457 | 2.36 (0.81) | - |
+| softball | 05-01 | 0.057 / 0.082 / 0.097 / 0.167 | 0.187 / 0.442 | 0.007 / 0.008 | 0.292 / 0.428 | 1.28 (0.86) | - |
+| softball | selection | 0.036 / 0.077 / 0.087 / 0.167 | 0.164 / 0.417 | 0.006 / 0.006 | 0.270 / 0.405 | 0.42 (0.96) | - |
 
 - The model beats every benchmark at April 1 and May 1. On selection eve, against a
   benchmark that knows the automatic qualifiers (RPI logistic + AQ), it ties in baseball
-  (Brier 0.018 vs 0.017, log loss 0.059 vs 0.056) and wins in softball (0.038 vs 0.051).
+  (Brier 0.016 vs 0.015, log loss 0.055 vs 0.051) and wins in softball (0.036 vs 0.050).
   Hosts on selection eve are no better than RPI order (the committee follows RPI).
-- P(bid) is well calibrated in baseball (e.g. 0.29 predicted -> 0.28 observed, 0.88 ->
-  0.87); softball's extremes are slightly off (0.99 -> 0.97, partly missing conference-
+- P(bid) is well calibrated in baseball (e.g. 0.29 predicted -> 0.27 observed, 0.88 ->
+  0.90); softball's extremes are slightly off (0.99 -> 0.98, partly missing conference-
   tournament data on selection eve).
+- Selection eve, picking the most likely teams: baseball 185 of 205 at-large teams and 363
+  of 384 field places right over 2021-2026 (pure RPI order 184 at-large); softball 342 of
+  384 field places (softball automatic qualifiers are not recorded, and its conference
+  tournaments are missing in 2021, 2022 and 2026: 54-56 of 64 in those years, 59-61 in
+  2023-2025). Hosts: 81 of 96 baseball, 89 of 96 softball.
 - Final-win 80% ranges cover 81-86% before selection; seed-line error ~0.3-0.4 lines.
 - Benchmarks: RPI-now = RPI-only logistic models on the snapshot's RPI (ignores automatic
   bids, so it is weak for small-conference champions before selection); stage benchmark =
@@ -245,6 +263,21 @@ Test seasons 2021-2026 (6 per sport; every D-I team, ~300 per season-snapshot):
 - Site only (2026-11-08, no model change): the public page is split into two pages,
   `/college_baseball/` and `/college_softball/` (`site.py` `pages()`, text in `site_college_*.md`);
   the old `/college_diamond/` addresses redirect.
+- 0.2.0 (2026-11-11) — data fixes and one refit; method unchanged. (1) Baseball 2026: 849
+  home games of 30+ teams whose site was spelled differently from the team (LSU, TCU, UCF,
+  UConn, ...) were marked neutral with the winner as home; now read correctly. Our 2026
+  RPI now matches Warren Nolan's final top 64 within 1.3 places on average (was 4.4), and
+  on selection eve 2026 the model has 33 of 35 at-large teams (was 29). (2) Softball
+  2021-2022: 324 games against a placeholder team "TBA" removed (it was counted as a D-I
+  team). (3) Conference membership: softball leagues that had dissolved into independents
+  (NEC, America East, Horizon, MEAC, WAC in 2016-2018; CAA in 2021; America East in 2022;
+  two Big Sky teams and UMBC in 2026) are restored, so their automatic bids are simulated.
+  (4) `softball_sel_rpi` 5.79 -> 8.02: the same 2017-2019 fit on the corrected data;
+  2021-2026 at-large log loss 0.095 vs 0.106, better in 5 of 6 seasons. Tried and not
+  adopted (no out-of-sample gain above 0.0005 log loss): prior carry above 1, other ridge /
+  margin power / cap / half-life values, postseason game weight, a separate midweek win
+  scale, re-fitting the win scale each season, treating conference-tournament games as
+  neutral. RESEARCH.md and data/backtest.csv regenerated.
 - 0.1.1 — public site page (`site.py`): new `site_trend_simulations` and `site_trend_dates`
   params (site only) and `final_ratings()` helper (end-of-season ratings). Fix: the simulated
   field no longer depends on Python's set order (results were not reproducible across

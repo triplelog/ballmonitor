@@ -12,6 +12,7 @@ results table of the same contest (see `sources/mlb.md`). Stdlib only.
 from __future__ import annotations
 
 import csv
+import datetime as dt
 import difflib
 import gzip
 import html
@@ -508,18 +509,54 @@ def _write_gz(path: Path, cols, rows):
         f.write(buf.getvalue().encode("utf-8"))
 
 
-def fetch(model_dir: Path, offline: bool = False, log=print) -> list[str]:
+AWARD_MONTHS = (11,)   # the BBWAA announces its awards in mid-November
+
+
+def _built(out: Path) -> tuple[dict[str, dict], dict[str, list[dict]]]:
+    """The contests and ballot rows already in the built CSVs, by contest id."""
+    cpath, bpath = out / "mlb_contests.csv.gz", out / "mlb.csv.gz"
+    if not (cpath.exists() and bpath.exists()):
+        return {}, {}
+    with gzip.open(cpath, "rt", encoding="utf-8", newline="") as f:
+        contests = {r["contest_id"]: r for r in csv.DictReader(f)}
+    rows: dict[str, list[dict]] = {}
+    with gzip.open(bpath, "rt", encoding="utf-8", newline="") as f:
+        for r in csv.DictReader(f):
+            rows.setdefault(r["contest_id"], []).append(r)
+    return contests, rows
+
+
+def fetch(model_dir: Path, offline: bool = False, log=print, today: dt.date | None = None) -> list[str]:
+    """Rebuild the MLB ballots. A contest whose pages are saved in data/raw is parsed from them. On a
+    machine without those pages (the daily CI build) a contest already in the built CSVs is kept as
+    it is, so a run asks only for the two sitemaps and the pages of awards that are new; outside
+    the awards month such a machine asks for nothing."""
     model_dir = Path(model_dir)
     raw = model_dir / "data" / "raw" / "mlb"
     out = model_dir / "data" / "ballots"
-    raw.mkdir(parents=True, exist_ok=True)
     out.mkdir(parents=True, exist_ok=True)
+    built_contests, built_rows = _built(out)
+    cached = raw.is_dir() and any(raw.glob("*.html"))
+    if not cached and built_contests and (today or dt.date.today()).month not in AWARD_MONTHS:
+        log("mlb: no saved pages here and not the awards month - nothing asked for (built CSVs kept)")
+        return []
+    raw.mkdir(parents=True, exist_ok=True)
     fetcher = _Fetcher(raw, offline, log)
     found = _discover(fetcher)
+    if not found and built_contests:   # the sitemaps didn't answer: never write an empty file over the data
+        log("mlb: no contests found in the sitemaps - built CSVs kept")
+        return []
     contests, ballots, issues = [], [], []
     n_ok = n_val = 0
     for (season, lg, code) in sorted(found):
         slugs = found[(season, lg, code)]
+        cid = f"mlb-{season}-{lg}-{AWARD_SLUG[code]}"
+        if cid in built_contests and not any((raw / f"{s}.html").exists() for s in slugs.values()):
+            contests.append(dict(built_contests[cid]))      # already built, pages not saved here: keep
+            ballots.extend(dict(r) for r in built_rows.get(cid, []))
+            continue
+        if cid not in built_contests:
+            log(f"mlb: new award page(s) for {cid}")
         post = fetcher.get(slugs["post"], slugs["post"] + ".html") if "post" in slugs else None
         bal = fetcher.get(slugs["ballots"], slugs["ballots"] + ".html") if "ballots" in slugs else None
         urls = [f"{BASE}/{s}/" for k, s in sorted(slugs.items()) if k in ("post", "ballots")]
@@ -535,6 +572,15 @@ def fetch(model_dir: Path, offline: bool = False, log=print) -> list[str]:
             n_ok += ok
         contests.append(contest)
         ballots.extend(rows)
+    if not cached:   # nothing saved here: a built contest the sitemaps no longer list stays too
+        seen = {c["contest_id"] for c in contests}
+        for cid, c in built_contests.items():
+            if cid not in seen:
+                contests.append(dict(c))
+                ballots.extend(dict(r) for r in built_rows.get(cid, []))
+        contests.sort(key=lambda c: (str(c["season"]), c["contest_id"]))
+        order = {c["contest_id"]: i for i, c in enumerate(contests)}
+        ballots.sort(key=lambda r: order[r["contest_id"]])   # stable: rows keep their order within a contest
     for (s, lg) in sorted({(k[0], k[1]) for k in found}):
         for code in AWARDS:
             if (s, lg, code) not in found:

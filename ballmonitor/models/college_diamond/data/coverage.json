@@ -450,7 +450,7 @@
   }
  },
  "baseball 2021": {
-  "ncaa_scored_games": 7241,
+  "ncaa_scored_games": 7114,
   "boyds_games": 7226,
   "boyds_kept": 7186,
   "boyds_names_mapped": 294,
@@ -546,7 +546,7 @@
   }
  },
  "baseball 2022": {
-  "ncaa_scored_games": 8638,
+  "ncaa_scored_games": 8455,
   "boyds_games": 8310,
   "boyds_kept": 8256,
   "boyds_names_mapped": 304,
@@ -643,7 +643,7 @@
   }
  },
  "baseball 2023": {
-  "ncaa_scored_games": 7924,
+  "ncaa_scored_games": 7872,
   "boyds_games": 8471,
   "boyds_kept": 8388,
   "boyds_names_mapped": 309,
@@ -739,7 +739,7 @@
   }
  },
  "baseball 2024": {
-  "ncaa_scored_games": 8530,
+  "ncaa_scored_games": 8413,
   "boyds_games": 8453,
   "boyds_kept": 8387,
   "boyds_names_mapped": 308,
@@ -1027,21 +1027,38 @@
  "softball 2015": {
   "ncaa_scored_games": 4121,
   "membership_anchor": 2023,
-  "membership_inferred_changes": 166,
+  "membership_inferred_changes": 47,
   "selection": "2015-05-10",
   "di_teams": 217,
   "games": 3093,
   "game_types": {
-   "R": 2943,
-   "C": 25,
+   "R": 2830,
+   "C": 138,
    "N": 125
   },
   "conf_tourney_start": {
-   "Big 12": "2015-05-06",
+   "ACC": "2015-05-07",
+   "ASUN": "2015-05-06",
+   "American": "2015-05-07",
+   "Big 12": "2015-05-09",
+   "Big East": "2015-05-08",
+   "Big Sky": "2015-05-07",
+   "Big South": "2015-05-07",
    "Big Ten": "2015-05-07",
+   "Big West": "2015-05-10",
+   "Coastal Athletic": "2015-05-10",
+   "Conference USA": "2015-05-07",
+   "Mid-American": "2015-04-24",
+   "Missouri Valley": "2015-05-07",
    "Mountain West": "2015-05-10",
    "Pac-12": "2015-05-10",
-   "SEC": "2015-05-06"
+   "SEC": "2015-05-06",
+   "SWAC": "2015-05-07",
+   "Southern": "2015-05-06",
+   "Southland": "2015-05-06",
+   "Summit League": "2015-05-07",
+   "Sun Belt": "2015-05-06",
+   "West Coast": "2015-05-09"
   },
   "games_per_team_pre_ncaa": {
    "min": 10,
@@ -1053,18 +1070,19 @@
  "softball 2016": {
   "ncaa_scored_games": 6289,
   "membership_anchor": 2023,
-  "membership_inferred_changes": 58,
+  "membership_inferred_changes": 38,
   "selection": "2016-05-15",
   "di_teams": 290,
   "games": 5720,
   "game_types": {
-   "R": 5354,
-   "C": 234,
+   "R": 5286,
+   "C": 302,
    "N": 132
   },
   "conf_tourney_start": {
    "ACC": "2016-05-12",
    "ASUN": "2016-05-11",
+   "America East": "2016-05-11",
    "American": "2016-05-12",
    "Atlantic 10": "2016-05-12",
    "Big 12": "2016-05-15",
@@ -1075,12 +1093,14 @@
    "Big West": "2016-05-15",
    "Coastal Athletic": "2016-05-10",
    "Conference USA": "2016-05-11",
+   "Horizon League": "2016-05-11",
    "Ivy League": "2016-05-07",
-   "MAAC": "2016-04-30",
+   "MAAC": "2016-04-26",
    "MEAC": "2016-05-12",
    "Mid-American": "2016-05-11",
    "Missouri Valley": "2016-05-12",
    "Mountain West": "2016-05-15",
+   "NEC": "2016-04-30",
    "Ohio Valley": "2016-05-11",
    "Pac-12": "2016-05-15",
    "Patriot League": "2016-05-12",
@@ -1090,7 +1110,8 @@
    "Southland": "2016-05-11",
    "Summit League": "2016-05-11",
    "Sun Belt": "2016-05-11",
-   "West Coast": "2016-05-15"
+   "West Coast": "2016-05-15",
+   "Western Athletic": "2016-05-12"
   },
   "games_per_team_pre_ncaa": {
    "min": 15,
@@ -1102,18 +1123,19 @@
  "softball 2017": {
   "ncaa_scored_games": 8358,
   "membership_anchor": 2023,
-  "membership_inferred_changes": 51,
+  "membership_inferred_changes": 37,
   "selection": "2017-05-14",
   "di_teams": 291,
   "games": 7399,
   "game_types": {
-   "R": 6975,
-   "C": 290,
+   "R": 6911,
+   "C": 354,
    "N": 134
   },
   "conf_tourney_start": {
    "ACC": "2017-05-11",
    "ASUN": "2017-05-10",
+   "America East": "2017-05-10",
    "American": "2017-05-10",
    "Atlantic 10": "2017-05-12",
    "Big 12": "2017-05-12",
@@ -1131,6 +1153,7 @@
    "Mid-American": "2017-05-10",
    "Missouri Valley": "2017-05-11",
    "Mountain West": "2017-05-14",
+   "NEC": "2017-04-23",
    "Ohio Valley": "2017-04-23",
    "Pac-12": "2017-05-13",
    "Patriot League": "2017-05-11",
@@ -1140,7 +1163,8 @@
    "Southland": "2017-05-10",
    "Summit League": "2017-05-10",
    "Sun Belt": "2017-05-10",
-   "West Coast": "2017-05-14"
+   "West Coast": "2017-05-14",
+   "Western Athletic": "2017-05-11"
   },
   "games_per_team_pre_ncaa": {
    "min": 29,
@@ -1152,13 +1176,13 @@
  "softball 2018": {
   "ncaa_scored_games": 8625,
   "membership_anchor": 2023,
-  "membership_inferred_changes": 37,
+  "membership_inferred_changes": 35,
   "selection": "2018-05-13",
   "di_teams": 296,
   "games": 7668,
   "game_types": {
-   "R": 7127,
-   "C": 408,
+   "R": 7122,
+   "C": 413,
    "N": 133
   },
   "conf_tourney_start": {
@@ -1178,7 +1202,7 @@
    "Horizon League": "2018-04-24",
    "Ivy League": "2018-05-12",
    "MAAC": "2018-04-28",
-   "MEAC": "2018-05-13",
+   "MEAC": "2018-05-09",
    "Mid-American": "2018-05-09",
    "Missouri Valley": "2018-05-10",
    "Mountain West": "2018-05-13",
@@ -1256,21 +1280,21 @@
   }
  },
  "softball 2021": {
-  "ncaa_scored_games": 6536,
+  "ncaa_scored_games": 6410,
   "membership_anchor": 2023,
-  "membership_inferred_changes": 32,
+  "membership_inferred_changes": 23,
   "selection": "2021-05-16",
-  "di_teams": 288,
-  "games": 6065,
+  "di_teams": 287,
+  "games": 5939,
   "game_types": {
-   "R": 5728,
-   "C": 201,
+   "R": 5592,
+   "C": 211,
    "N": 136
   },
   "conf_tourney_start": {
    "ACC": "2021-05-12",
    "ASUN": "2021-04-30",
-   "America East": "2021-05-13",
+   "America East": "2021-05-16",
    "American": "2021-05-16",
    "Atlantic 10": "2021-05-15",
    "Big 12": "2021-05-14",
@@ -1292,7 +1316,7 @@
    "Pac-12": "2021-05-16",
    "Patriot League": "2021-05-01",
    "SEC": "2021-05-11",
-   "SWAC": "2021-05-16",
+   "SWAC": "2021-05-04",
    "Southern": "2021-05-16",
    "Southland": "2021-05-15",
    "Summit League": "2021-05-15",
@@ -1302,26 +1326,27 @@
   },
   "games_per_team_pre_ncaa": {
    "min": 19,
-   "p10": 29,
-   "median": 43,
-   "max": 126
+   "p10": 28,
+   "median": 42,
+   "max": 56
   }
  },
  "softball 2022": {
-  "ncaa_scored_games": 8117,
+  "ncaa_scored_games": 7904,
   "membership_anchor": 2023,
-  "membership_inferred_changes": 24,
+  "membership_inferred_changes": 18,
   "selection": "2022-05-15",
-  "di_teams": 302,
-  "games": 7608,
+  "di_teams": 301,
+  "games": 7410,
   "game_types": {
-   "R": 7413,
+   "R": 7215,
    "C": 58,
    "N": 137
   },
   "conf_tourney_start": {
    "ACC": "2022-05-15",
    "ASUN": "2022-05-15",
+   "America East": "2022-05-15",
    "American": "2022-05-15",
    "Atlantic 10": "2022-05-14",
    "Big 12": "2022-05-15",
@@ -1354,13 +1379,13 @@
   },
   "games_per_team_pre_ncaa": {
    "min": 32,
-   "p10": 43,
+   "p10": 42,
    "median": 49,
-   "max": 198
+   "max": 58
   }
  },
  "softball 2023": {
-  "ncaa_scored_games": 7174,
+  "ncaa_scored_games": 7117,
   "wn_schedule_pages": 306,
   "wn_names_mapped": 306,
   "source": "warrennolan schedules",
@@ -1423,7 +1448,7 @@
   }
  },
  "softball 2024": {
-  "ncaa_scored_games": 2505,
+  "ncaa_scored_games": 2373,
   "wn_schedule_pages": 307,
   "wn_names_mapped": 307,
   "source": "warrennolan schedules",
@@ -1548,15 +1573,15 @@
   }
  },
  "softball 2026": {
-  "ncaa_scored_games": 7977,
-  "membership_anchor": 2025,
-  "membership_inferred_changes": 9,
+  "ncaa_scored_games": 7976,
+  "membership_anchor": 2026,
+  "membership_inferred_changes": 0,
   "selection": "2026-05-10",
   "di_teams": 308,
   "games": 7824,
   "game_types": {
-   "R": 7625,
-   "C": 66,
+   "R": 7626,
+   "C": 65,
    "N": 133
   },
   "conf_tourney_start": {
@@ -1567,7 +1592,7 @@
    "Atlantic 10": "2026-05-10",
    "Big 12": "2026-05-07",
    "Big East": "2026-05-07",
-   "Big Sky": "2026-05-04",
+   "Big Sky": "2026-05-10",
    "Big South": "2026-05-10",
    "Big Ten": "2026-05-08",
    "Big West": "2026-05-08",

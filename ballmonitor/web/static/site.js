@@ -197,6 +197,7 @@ function renderView(v, cls, nested) {
     case "bar": return viewShell(v, renderBars(v), cls, nested);
     case "line": return viewShell(v, renderLine(v), cls, nested);
     case "picker": return renderPicker(v, cls);
+    case "app": return viewShell(v, renderApp(v), cls, nested);
     default: return el("p", {}, `Unknown view ${v.kind}`);
   }
 }
@@ -292,6 +293,29 @@ function renderTable(v) {
   return el("div", {}, (search || chooser) ? el("div", { class: "table-tools" }, search, chooser) : null, wrap, more);
 }
 
+// ── apps: interactive tools (static/apps/<name>.js, views.app) ─────────────────
+// A lightweight tool that computes in the browser: a copy of its model's formulas, checked against
+// the Python model by a test. Its script loads the first time it's shown.
+const appScripts = {};
+function loadApp(name) {
+  const version = (siteData && siteData.assets && siteData.assets[`apps/${name}.js`]) || "";
+  return appScripts[name] = appScripts[name] || new Promise((resolve, reject) => {
+    const s = el("script", { src: `/static/apps/${name}.js${version ? `?v=${version}` : ""}`, defer: "" });
+    s.onload = () => (window.BM_APPS && window.BM_APPS[name] ? resolve(window.BM_APPS[name]) : reject(new Error(`no app ${name}`)));
+    s.onerror = () => { delete appScripts[name]; reject(new Error(`could not load the ${name} app`)); };
+    document.head.append(s);
+  });
+}
+
+function renderApp(v) {
+  const host = el("div", { class: `app app-${v.app}` }, el("p", { class: "loading" }, "Loading…"));
+  loadApp(v.app).then((app) => app.mount(host, v.data, { el, svg, fmt, renderLine })).catch((e) => {
+    host.replaceChildren(el("p", {}, "This part of the page didn't load. Try again in a moment."));
+    console.error(e);
+  });
+  return host;
+}
+
 // ── horizontal bars ───────────────────────────────────────────────────────────
 function renderBars(v) {
   const max = Math.max(...v.items.map((i) => Math.abs(i.value)), 1e-9);
@@ -342,7 +366,9 @@ function renderLine(v) {
   if (v.x_ticks) {
     for (const [t, label] of v.x_ticks) {
       g.append(svg("line", { x1: X(t), x2: X(t), y1: T, y2: H - B, class: "grid" }));
-      g.append(svg("text", { x: X(t), y: H - B + 18, class: "tick", "text-anchor": "middle" }, label));
+      // a label at either edge of the plot lines up with the edge instead of running off it
+      const anchor = X(t) > W - R - 30 ? "end" : X(t) < L + 30 ? "start" : "middle";
+      g.append(svg("text", { x: X(t), y: H - B + 18, class: "tick", "text-anchor": anchor }, label));
     }
   } else {
     for (const t of xt) {
@@ -515,7 +541,7 @@ async function renderDataTable(id) {
 }
 
 // ── baseball charts (charts/: pyslots' form and templates, scripts/sync-charts.sh) ──
-// The other exception to "nothing computed in the browser": the visitor's formulas fill a Python
+// The visitor's formulas fill a Python
 // (matplotlib) template, which runs in their browser (Pyodide, loaded from jsDelivr on the first run).
 const CHARTS = "/charts/";
 let pyslotsScript = null;

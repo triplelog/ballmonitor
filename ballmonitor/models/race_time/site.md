@@ -9,7 +9,7 @@ Race time calculator
 
 ## Summary (one sentence, shown under the title and on the home page)
 <!-- claude-ui:begin summary -->
-What your 5K time says you could run for a mile, 10K, half marathon or marathon.
+Enter your recent races and see what they say you could run at every distance, from the mile to the marathon.
 <!-- claude-ui:end summary -->
 
 ## How this works (two or three plain sentences at the bottom of the page)

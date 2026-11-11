@@ -1,6 +1,6 @@
 [meta]
 title = "College baseball & softball projections"
-version = "0.1.1"
+version = "0.2.0"
 status = "calibrated"  # stub | draft | calibrated
 question = "From a date in an NCAA D-I baseball or softball season, how will a team finish, will it make the NCAA tournament, and how far will it go?"
 description = """
@@ -274,9 +274,9 @@ source = "RESEARCH.md: least squares on 2017-2019 walk-forward predictions."
 range = [0.1, 10.0]
 
 [params.softball_sel_rpi]
-value = 5.79
+value = 8.02
 description = "Softball selection score: weight on -ln(RPI rank)."
-source = "RESEARCH.md selection study: logistic fit of at-large bids on 2017-2019."
+source = "RESEARCH.md selection study (section 3): logistic fit of at-large bids on 2017-2019, refitted in 0.2.0 after the conference-membership fix (was 5.79, fitted when three 2017-2018 leagues were wrongly independent). Out of sample 2021-2026: at-large log loss 0.095 vs 0.106 with 5.79, better in 5 of 6 seasons."
 range = [0.0, 30.0]
 
 [params.softball_host_rpi]

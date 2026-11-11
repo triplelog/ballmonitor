@@ -4,7 +4,9 @@ from __future__ import annotations
 
 import csv
 import difflib
+import math
 import sys
+from functools import lru_cache
 from pathlib import Path
 from statistics import NormalDist
 from typing import Any
@@ -44,6 +46,19 @@ def class_status(data_dir: Path, sport: str, year: int) -> dict[str, str]:
                 if row["sport"] == sport and row["year"] == str(year):
                     return row
     return {}
+
+
+@lru_cache(maxsize=4)
+def load_srs(data_dir: Path) -> dict[int, dict[str, float]]:
+    """data/outcomes/fbs_team_srs.csv (written by research.py): season -> program -> SRS,
+    points per game against an average FBS team. Empty if the file is missing."""
+    out: dict[int, dict[str, float]] = {}
+    path = data_dir / "outcomes" / "fbs_team_srs.csv"
+    if path.exists():
+        with open(path, newline="") as fh:
+            for row in csv.DictReader(fh):
+                out.setdefault(int(row["season"]), {})[row["team"]] = float(row["srs"])
+    return out
 
 
 class NcaafRecruitingModel(BaseModel):
@@ -135,6 +150,44 @@ class NcaafRecruitingModel(BaseModel):
                 "prestige_years": prestige_years, "status": status, "result": result,
                 "decay": decay, "q_power": q_power, "l2_reg": l2_reg, "c_weight": c_weight}
 
+    def roster_rank(self, year: int, team: str, rank: int, classes: int) -> tuple[float, list[int]]:
+        """Geometric mean of the program's national class rank over this class and the
+        `classes - 1` before it (those with a recruit file); a class in which the program
+        signed nobody counts as one place below last. Returns (rank, class years used)."""
+        if not hasattr(self, "_class_ranks"):
+            self._class_ranks: dict[int, tuple[dict[str, int], int]] = {}
+        logs, used = [math.log(rank)], [year]
+        for back in range(1, classes):
+            y = year - back
+            if y not in self._class_ranks:
+                try:
+                    teams = self.rank_class("ncaaf", y)["result"].teams
+                except ValueError:
+                    teams = []
+                self._class_ranks[y] = ({t.name.lower(): t.rank for t in teams}, len(teams))
+            ranks, n = self._class_ranks[y]
+            if n:
+                logs.append(math.log(ranks.get(team.lower(), n + 1)))
+                used.append(y)
+        return math.exp(sum(logs) / len(logs)), used
+
+    def prior_strength(self, year: int, team: str) -> dict[str, Any] | None:
+        """The program's mean SRS over the last `proj_prior_seasons` seasons in the data
+        before the class year (normally ending with season year - 1, which is over when
+        the class signs; an older season when the data stops earlier). None when the data
+        has no earlier season; a program without a rating in them (new to FBS) gets
+        `proj_prior_default`."""
+        p = self.params
+        srs = load_srs(MODEL_DIR / "data")
+        window = sorted(s for s in srs if s < year)[-int(p.proj_prior_seasons):]
+        if not window:
+            return None
+        values = [srs[s][team] for s in window if team in srs[s]]
+        if not values:
+            return {"value": float(p.proj_prior_default), "seasons": [], "window": window}
+        return {"value": sum(values) / len(values),
+                "seasons": [s for s in window if team in srs[s]], "window": window}
+
     def predict(self, inputs: dict[str, Any]) -> Prediction:
         p = self.params
         sport = str(inputs.get("sport", "ncaaf")).strip().lower()
@@ -209,21 +262,53 @@ class NcaafRecruitingModel(BaseModel):
             ),
         ]
 
-        # Football: translate the national class rank into an expected team strength
-        # (mean SRS over the class's four seasons), fitted in research.py.
+        # Football: turn the national class rank and the program's own recent strength
+        # into an expected team strength (mean SRS over the class's four seasons); the
+        # line is fitted in research.py.
         projection = None
+        proj_note = ""
         if sport == "ncaaf" and method is RankingMethod.PLACKETT_LUCE:
-            est = float(p.formula("projected_srs", rank=target.rank))
-            half = NormalDist().inv_cdf(0.5 + float(p.projection_level) / 2) * float(p.projection_sd)
-            projection = {"estimate": round(est, 1), "interval": [round(est - half, 1), round(est + half, 1)]}
-            outcomes.insert(1, Outcome(
-                label="Projected 4-season SRS",
-                estimate=round(est, 1),
-                interval=(round(est - half, 1), round(est + half, 1)),
-                fmt="number",
-                group="Class Summary",
-                note="pts/game vs avg FBS, seasons Y..Y+3",
-            ))
+            prior = self.prior_strength(year, t_name)
+            uses_prior = float(p.proj_prior_weight) != 0.0
+            if prior is None and uses_prior:
+                proj_note = (f"No projected SRS: the data has no season before {year}, so the program's "
+                             "prior strength is unknown (variant class_rank_only projects from the rank alone)")
+            else:
+                roster_classes = int(p.proj_roster_classes)
+                proj_rank, rank_years = self.roster_rank(year, t_name, target.rank, roster_classes)
+                prior_srs = prior["value"] if prior else 0.0
+                est = float(p.formula("projected_srs", rank=proj_rank, prior_srs=prior_srs))
+                half = NormalDist().inv_cdf(0.5 + float(p.projection_level) / 2) * float(p.projection_sd)
+                projection = {"estimate": round(est, 1), "interval": [round(est - half, 1), round(est + half, 1)],
+                              "rank": round(proj_rank, 2), "rank_classes": rank_years,
+                              "prior_srs": round(prior_srs, 2) if prior else None,
+                              "prior_seasons": prior["seasons"] if prior else []}
+                rank_text = (f"rank {target.rank}" if len(rank_years) == 1 else
+                             f"rank {proj_rank:.1f} (geometric mean of the class ranks {rank_years[-1]}-{rank_years[0]})")
+                if not uses_prior:
+                    prior_text = "prior strength not used (proj_prior_weight = 0)"
+                elif prior["seasons"]:
+                    stale = prior["window"][-1] < year - 1
+                    prior_text = (f"prior SRS {prior_srs:+.1f} (mean of season"
+                                  + ("s " if len(prior["seasons"]) > 1 else " ")
+                                  + ", ".join(str(s_) for s_ in prior["seasons"])
+                                  + (f", the latest in the data; season {year - 1} is not in it yet" if stale else "")
+                                  + ")")
+                else:
+                    prior_text = (f"prior SRS {prior_srs:+.1f} (no rated FBS season in "
+                                  + "-".join(str(s_) for s_ in sorted({prior["window"][0], prior["window"][-1]}))
+                                  + ": proj_prior_default)")
+                proj_note = (f"Projected SRS = {p.expr('projected_srs')} at {rank_text}, {prior_text} = "
+                             f"{est:+.1f}; {float(p.projection_level):.0%} range +/- {half:.1f} "
+                             f"(projection_sd = {float(p.projection_sd):g})")
+                outcomes.insert(1, Outcome(
+                    label="Projected 4-season SRS",
+                    estimate=round(est, 1),
+                    interval=(round(est - half, 1), round(est + half, 1)),
+                    fmt="number",
+                    group="Class Summary",
+                    note="pts/game vs avg FBS, seasons Y..Y+3",
+                ))
 
         # Positional unit breakdown for NCAAF (needs per-recruit Plackett-Luce scores)
         unit_breakdown = None
@@ -287,12 +372,8 @@ class NcaafRecruitingModel(BaseModel):
                 f"{t_name}: #{target.rank} of {len(result.teams)}, {target.total_score:.1f} points "
                 f"from {target.commits_count} commits",
             ]
-            if projection:
-                steps.append(
-                    f"Projected SRS = {p.expr('projected_srs')} at rank {target.rank} = "
-                    f"{projection['estimate']:+.1f}; {float(p.projection_level):.0%} range "
-                    f"+/- {half:.1f} (projection_sd = {float(p.projection_sd):g})"
-                )
+            if proj_note:
+                steps.append(proj_note)
         else:
             steps = [
                 f"Loaded {len(recruits)} committed {sport_label} recruits for {year}",

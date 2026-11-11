@@ -1,0 +1,10 @@
+# Marginal gain in RESEARCH.md; not the default
+[meta]
+description = "Projection from the program's average (geometric mean) national class rank over the four classes on the roster (this class and the three before it) instead of this class alone, plus prior SRS; coefficients refitted on 2013-2018 classes. Holdout 2019-2022 MAE 4.29 vs 4.44 for the default; walk-forward gain 0.13 points/game (95% interval 0.01 to 0.24), below the 0.2 adoption margin (RESEARCH.md)."
+
+[params]
+proj_roster_classes = 4
+proj_intercept = 17.65
+proj_slope = -4.51
+proj_prior_weight = 0.34
+projection_sd = 5.69

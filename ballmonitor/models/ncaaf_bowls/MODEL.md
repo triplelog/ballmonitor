@@ -35,6 +35,8 @@ they only break ties among 5–7 teams when there aren't enough 6-win teams.
 |---|---|---|
 | `team` | FBS team name or id from `data/teams.json` (case-insensitive). Unknown names raise an error. | `"Ohio State"`, `"boise_state"` |
 
+| `home_rating`, `away_rating`, `site` | single-game mode instead of `team`: two ratings and `site` = `home` or `neutral` (optional `home`, `away` names) → the `win_probability` formula alone. This is what `data/backtest.csv` scores. | `10.6`, `4.5`, `"home"` |
+
 Everything else (simulation count, seed, all weights) is a parameter — see
 `ballmonitor params ncaaf_bowls`.
 
@@ -44,6 +46,13 @@ Everything else (simulation count, seed, all weights) is a parameter — see
    Each listed remaining game is decided with config formula **`win_probability`**:
    `normal_cdf((rating_diff + home * home_field_points) / margin_sd)`, where
    `home` is +1 / 0 / −1. The same formula decides title, CFP and bowl games.
+   **Rating uncertainty:** at the start of each simulated season every team's rating gets
+   its own error drawn from Normal(0, `rating_uncertainty_points`), kept for all its games
+   that season (regular season, title game, playoff, bowl). Inside the simulation the
+   formula's `margin_sd` is replaced by config formula **`simulated_game_sd`**
+   (`sqrt(margin_sd² − 2·rating_uncertainty_points²)`), so a single game seen from the
+   published ratings still has SD `margin_sd`. The committee, tie-breaks and bowl picks use
+   the published rating.
 2. **FCS opponents** are all rated `fcs_opponent_rating` (default: the pooled FCS rating
    from the results-only fit, −21.7). Ratings come from `ratings_source` (`fpi` or `results`).
 3. **Conference title games** for all ten conferences (incl. the 2026 Pac-12): top two by conference win
@@ -51,7 +60,9 @@ Everything else (simulation count, seed, all weights) is a parameter — see
 4. **CFP resume score** (committee proxy):
    `resume_win_pct_weight·win% − resume_loss_penalty_scale·losses^resume_loss_penalty_exponent
    + resume_power_weight·rating + resume_conf_champ_bonus·[champ] + resume_p4_champ_bonus·[P4 champ]
-   + resume_power4_bonus·[P4 or Notre Dame]`.
+   + resume_power4_bonus·[P4 or Notre Dame] + resume_noise_points·Gumbel noise`.
+   The weights are a Plackett-Luce fit to the committee's final top 25 of 2016-2025; the
+   noise is the committee's unpredictability under that fit (RESEARCH.md part 3).
 5. **12-team CFP (2026-27 protocol).** Automatic bids for the ACC, Big Ten, Big 12 and
    SEC champions and the highest-ranked champion of the American, CUSA, MAC, Mountain
    West, Pac-12 and Sun Belt; seven at-large bids. **Straight seeding** by the resume
@@ -79,11 +90,17 @@ Everything else (simulation count, seed, all weights) is a parameter — see
 
 ## Assumptions & known weaknesses
 
-- One fixed rating per team for the whole run; no injuries or in-season updating after
-  the snapshot. Re-fetch to update.
-- The committee ranking is a hand-weighted resume score (DRAFT weights). Compared with
-  ESPN's own FPI simulation it under-rates multi-loss SEC teams (e.g. Texas, Kentucky,
-  Ole Miss) — see Validation.
+- A team's rating is the snapshot's, off by one drawn error per simulated season; ratings
+  do not learn from simulated results, and there are no injuries. Re-fetch to update.
+- The committee ranking is a fitted resume score with no head-to-head, schedule-strength or
+  "eye test" terms. It matches the committee's final top 12 better than the 0.4.3 weights
+  (RESEARCH.md part 3) but did **not** give better playoff-field odds in the two 12-team
+  seasons (part 4); ESPN's own published odds scored better than this model in both.
+- **Bowls and playoff games are predicted worse than regular-season games**: in
+  `data/backtest.csv` the favourite won 60% of 400 postseason games against 73% in the
+  regular season (opt-outs, coaching changes, a month off). "Wins it" figures for bowls are
+  therefore overconfident; no postseason discount is modelled yet.
+- Not validated: which bowl a team goes to, and seeding.
 - Bowl pick orders beyond the published tie-ins are approximations: within a conference,
   slots without a known `order` go by bowl prestige; several 2026 second slots
   ("ESPN Group-of-6 pool") and the Xbox Bowl are flagged in their `source` as DRAFT /
@@ -98,6 +115,8 @@ Everything else (simulation count, seed, all weights) is a parameter — see
 
 ## Validation against ESPN (2026-10-26 snapshot)
 
+_Measured with the 0.4.3 parameters; not rerun for 0.5.0 (the committee weights changed)._
+
 ESPN publishes its own FPI-based season simulation. Run with the same FPI ratings and
 3,000 simulations, this model's per-team figures across all 138 teams differ from ESPN's
 by (mean absolute difference): projected wins **0.035**, conference-title probability
@@ -107,13 +126,41 @@ consistency check, not a test of predictive accuracy.
 
 ## Variants
 
-None yet. Try e.g. `--set margin_sd=16` or
-`--set 'formulas.win_probability=normal_cdf(rating_diff / margin_sd)'` (no home field).
+- `fixed_ratings`: no rating uncertainty (every game independent, as in 0.4.3).
+- `committee_v043`: the hand-set committee weights of 0.4.3, no committee noise.
+
+`ballmonitor run ncaaf_bowls --variant committee_v043 --example ohio_state` (`compare` stops
+when two runs list different bowls for the team; `compare --backtest` works). Also try
+`--set margin_sd=16` or `--set 'formulas.win_probability=normal_cdf(rating_diff / margin_sd)'`
+(no home field).
 
 ## Backtest
 
-There is no `data/backtest.csv`, so `ballmonitor backtest ncaaf_bowls` is unavailable and
-the model is `draft`. A standalone check exists: `python cli.py backtest 2023` (or
+Status stays `draft`: the single-game engine, the spread of season records and the committee
+ranking are now tested on real seasons, but the headline playoff odds were only checked on two
+seasons (no gain shown) and bowl destinations not at all. Full tables: **RESEARCH.md**
+(generated by `research.py` from ESPN data 2016-2025, `research_data.py`; walk-forward).
+
+**`data/backtest.csv`** (`ballmonitor backtest ncaaf_bowls`): 6,699 games between two
+FBS teams, 10 seasons 2016-2025, week 3 on, with the FPI ESPN published before the game.
+Columns: `season`, `week`, `kind` (regular season / title game / postseason; reported as
+groups), `home`, `away`, `home_rating`, `away_rating` (FPI after the previous week), `site`
+(`home` / `neutral`), `winner` (`home` / `away`). It scores the `win_probability` formula
+(single-game mode). Defaults (home field 2.5, SD 14): Brier 0.1806 per game (the CLI
+prints the two-outcome sum, twice that), log loss 0.5348, favourite won
+72.2%; well calibrated in every probability band.
+
+| what was tested (RESEARCH.md part) | sample | result | decision |
+|---|---|---|---|
+| home field and margin SD (1) | 6,699 games, 10 seasons; walk-forward on 7 | refit (2.1-2.5, 14.2-15.0) beats 2.5 / 14 in 4 of 7 seasons, by < 0.002 log loss | kept 2.5 / 14 |
+| results-only rating, FPI blends (1) | 5,826 games, 10 seasons | 15% results share: log loss −0.0002, better in 6 of 10 seasons; more is worse | kept FPI alone |
+| margin SD growing with weeks ahead (1) | same games from older ratings | from week 8 on the best SD is 14.5-15.1 at 1-4 weeks ahead | not added |
+| rating uncertainty (2) | 12,992 team-dates, 9 seasons; walk-forward on 6 | squared miss of remaining wins was 1.39x the predicted spread, now ~1.0x; log score better in 6 of 6 test seasons | **promoted, 5 points** |
+| committee weights (3) | final top 25, 10 seasons; walk-forward on 7 | committee top-12 teams matched: 77 of 84 (0.4.3: 66), at least as good every season | **promoted** |
+| committee noise (3) | same; nested walk-forward on 5 | squared error of top-12 membership 8.0 → 7.4, top-4 10.0 → 6.5; better in 3 of 5 seasons | **promoted, 3.7** (modest) |
+| all of it inside the season simulator (4) | 2024 and 2025, 4 dates each | playoff field squared error 39.00 → 39.14 (rating uncertainty alone 38.79), log loss 134.6 → 130.8; conference champions 59.77 → 58.74; ESPN 37.26 / 58.04 | no end-to-end gain shown for the weights |
+
+**Older bowl-destination check** (before 0.5.0, not rerun). A standalone check exists: `python cli.py backtest 2023` (or
 `Backtester(2023)`) runs the engine on a week-11 2023 snapshot of 44 teams
 (`data/historical/2023/`) and scores the actual bowl of 42 of them. With 500 sims
 (v0.4.0, 2024-25 bowl lineup in `data/historical/bowls_2024_lineup.json`): top-1 26.2%,
@@ -121,7 +168,7 @@ top-3 52.4%, top-5 71.4%, multinomial Brier 0.989 (v0.3.0: 23.8% / 54.8% / 76.2%
 Caveats: one season and a small team subset (not independent evidence); it applies the
 2026 12-team CFP rules and the 2024-25 tie-ins to 2023 (which used a 4-team CFP), so
 NY6/CFP slots are structurally mis-specified; selection weights were tuned on data that
-includes 2023. A future `backtest.csv` would need one row per team-season with the
+includes 2023. A bowl-destination backtest would need one row per team-season with the
 pre-bowl snapshot inputs and the actual bowl id.
 
 ## CLI usage (standalone)
@@ -145,6 +192,27 @@ From `ballmonitor/models/ncaaf_bowls/`: `python cli.py team Texas`, `python cli.
 - Conference bowl agreements (Big Ten, SEC, ACC/Notre Dame, Big 12) — DRAFT, verify.
 
 ## Changelog
+
+- 0.5.0 (site) — "Who to root for this week" on every team's page and "This week's biggest games" on
+  the main page (`site.py`). `BowlEngine.run(track_games=...)` tallies, for each of the next week's
+  FBS games (`site.this_week`), the home team's wins and each team's playoff bids and conference titles
+  in those seasons (`GameTally`); a team's chance if each side wins is read from the same simulated
+  seasons. A team's table uses its playoff chance (its conference-title chance when the playoff is out
+  of reach, `site_root_min_chance`); someone else's game is listed only if it moves that chance by
+  `site_root_min_swing` and by `site_root_z` = 3.5 standard errors of the simulation (about 8,000
+  team-game pairs are checked a week). `site_simulations` 5,000 → 20,000 so smaller swings clear the
+  noise (page build about 33 s). Conference championship games are not in the schedule (they are
+  simulated), so championship week has no tracked games yet. Model defaults unchanged.
+- 0.5.0 — **First accuracy study on real past seasons** (RESEARCH.md; ESPN 2016-2025).
+  New `rating_uncertainty_points` = 5 (was effectively 0) with formula `simulated_game_sd`:
+  each simulated season draws one rating error per team, which widens the range of records
+  to match what happened. Committee weights refitted to the real final rankings:
+  `resume_win_pct_weight` 65 → 67, `resume_loss_penalty_scale` 3.5 → 1.4,
+  `resume_conf_champ_bonus` 8 → 0, `resume_p4_champ_bonus` 3 → 4.5, `resume_power4_bonus`
+  4 → 14; new `resume_noise_points` = 3.7. `home_field_points` and `margin_sd` tested and
+  kept. Added `data/backtest.csv` (6,699 games), single-game mode, `backtest_case`,
+  variants `fixed_ratings` and `committee_v043`, `research.py` / `research_data.py`.
+  Multi-loss power-conference teams move up, unbeaten or one-loss Group-of-6 teams down.
 
 - 0.4.3 — Site page: a headline, a one-line answer on each team page, a playoff bubble watch
   (`site_bubble_cuts`) and a projected 12-team bracket (the 12 likeliest playoff teams by

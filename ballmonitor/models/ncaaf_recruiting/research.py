@@ -23,6 +23,12 @@ Walk-forward
     2017, so the out-of-sample years are 2017-2022 (6 class years; consecutive targets
     share 3 of their 4 seasons, so they are not independent outcomes either).
 
+Projection (v0.7.0)
+    The model's projected SRS is a line in ln(class rank) and the program's mean SRS over
+    the seasons before the class. Its coefficients are fitted on the development classes
+    and also scored strictly walk-forward (class Y from classes <= Y-4). The season
+    ratings are written to data/outcomes/fbs_team_srs.csv, which the model reads.
+
 Benchmarks (no parameters, so they are out-of-sample in every year)
     consensus  On3 industry-consensus team ranking (blends On3, 247Sports, Rivals, ESPN).
                For classes before On3 existed (pre-2021) On3 rebuilt it from the services'
@@ -72,6 +78,13 @@ GRID = {
     "prestige_years": [1, 2, 3],
 }
 DEFAULTS_V030 = {"rank_decay": 0.95, "quality_power": 0.5, "l2_reg": 0.5, "prestige_years": 1}
+# Projection study (v0.7.0): program strength before the class signed, and the other classes
+# on the roster, next to the class rank.
+PRIOR_SEASONS = [1, 2, 3, 4]  # candidate windows: mean SRS of the k seasons before the class
+ROSTER_CLASSES = [2, 3, 4]  # candidate roster windows: this class plus the n-1 before it
+PROJ_ADOPT_MARGIN = 0.2  # points/game of leave-one-class-out MAE on the development classes
+BOOT_N = 2000  # program-clustered bootstrap resamples for MAE differences
+BOOT_SEED = 0
 LOG: list[str] = []
 
 
@@ -354,6 +367,170 @@ def main() -> None:
                         **holdout_err(lambda y, t: 0.0, mean_target, 0.0)}
     log(f"projection on dev: {proj['model']}")
 
+    # ---- v0.7.0: add the program's own recent strength (and the rest of the roster) ----
+    # Spec = (ranking, k, n): ranking "model" | "consensus" | "none"; k = seasons of prior
+    # SRS averaged (0 = not used); n = classes whose ln(rank) is averaged (this one and
+    # the n-1 before it). Everything is known when class Y signs (season Y-1 is over).
+    def ln_rank(y, t, n=1):
+        cls = [c for c in range(y - n + 1, y + 1) if c in model_rank]
+        return float(np.mean([math.log(model_rank[c].get(t, worst_rank[c])) for c in cls]))
+
+    def prior_strength(y, t, k):
+        v = [ratings[s][t] for s in range(y - k, y) if s in ratings and t in ratings[s]]
+        return float(np.mean(v)) if v else None
+
+    def newcomer_default(last_season):
+        """Mean first-season SRS of programs new to FBS, seasons <= last_season: the prior
+        strength given to a program with no rated season in the window."""
+        v = [ratings[s][t] for s in sorted(ratings) if s - 1 in ratings and s <= last_season
+             for t in ratings[s] if t not in ratings[s - 1]]
+        return (float(np.mean(v)) if v else 0.0), len(v)
+
+    def design(spec, classes, default=None):
+        kind, k, n = spec
+        X, Z, keys = [], [], []
+        for y in classes:
+            for t in teams_by_year[y]:
+                x = [1.0]
+                if kind == "model":
+                    x.append(ln_rank(y, t, n))
+                elif kind == "consensus":
+                    x.append(math.log(cons_rank[y][t]))
+                if k:
+                    pr = prior_strength(y, t, k)
+                    if pr is None:
+                        if default is None:
+                            continue  # fits skip programs with no rated season
+                        pr = default
+                    x.append(pr)
+                X.append(x)
+                Z.append(targets[y][t])
+                keys.append((y, t))
+        return np.array(X), np.array(Z), keys
+
+    def fit_spec(spec, classes):
+        X, Z, _ = design(spec, classes)
+        beta = np.linalg.lstsq(X, Z, rcond=None)[0]
+        sd = float(np.std(Z - X @ beta, ddof=X.shape[1]))
+        return beta, sd
+
+    def spec_errors(spec, beta, classes, default):
+        X, Z, keys = design(spec, classes, default)
+        return dict(zip(keys, (X @ beta - Z).tolist()))
+
+    def loco(spec, classes):
+        """Leave-one-class-out MAE: fit on the other classes, score the one left out."""
+        errs = []
+        for y in classes:
+            beta, _ = fit_spec(spec, [c for c in classes if c != y])
+            errs += list(spec_errors(spec, beta, [y], newcomer_default(max(classes))[0]).values())
+        return float(np.mean(np.abs(errs)))
+
+    def summarise(errs, sds=None):
+        e = np.array(list(errs.values()))
+        out = {"mae": float(np.mean(np.abs(e))), "rmse": float(np.sqrt(np.mean(e ** 2))),
+               "bias": float(np.mean(e)), "n": len(e),
+               "by_year": {y: float(np.mean([abs(v) for (c, _), v in errs.items() if c == y]))
+                           for y in sorted({c for c, _ in errs})}}
+        if sds:
+            out["in_80"] = float(np.mean([abs(v) <= Z80 * sds[c] for (c, _), v in errs.items()]))
+        return out
+
+    def boot_diff(ea, eb):
+        """Mean |error| difference a - b with a program-clustered bootstrap 95% interval."""
+        keys = sorted(set(ea) & set(eb))
+        progs = sorted({t for _, t in keys})
+        d = {t: [abs(ea[k]) - abs(eb[k]) for k in keys if k[1] == t] for t in progs}
+        rng = np.random.default_rng(BOOT_SEED)
+        means = []
+        for _ in range(BOOT_N):
+            pick = rng.integers(0, len(progs), len(progs))
+            means.append(np.mean([v for i in pick for v in d[progs[i]]]))
+        return {"diff": float(np.mean([abs(ea[k]) - abs(eb[k]) for k in keys])),
+                "lo": float(np.percentile(means, 2.5)), "hi": float(np.percentile(means, 97.5)),
+                "n": len(keys), "programs": len(progs),
+                "years_better": sum(1 for y in sorted({c for c, _ in keys})
+                                    if np.mean([abs(ea[k]) - abs(eb[k]) for k in keys if k[0] == y]) < 0)}
+
+    proj_years = [y for y in years if y - 1 in ratings]  # classes with an earlier season in the data
+    proj_dev = [y for y in proj_years if y <= DEV_LAST]
+    proj_tests = [y for y in proj_years if len([c for c in proj_years if c <= y - LAG]) >= MIN_TRAIN]
+
+    # Development classes only: how many prior seasons, and is the gain big enough to adopt?
+    rank_only = ("model", 0, 1)
+    dev_loco = {rank_only: loco(rank_only, proj_dev)}
+    for k in PRIOR_SEASONS:
+        dev_loco[("model", k, 1)] = loco(("model", k, 1), proj_dev)
+    k_best = min(PRIOR_SEASONS, key=lambda k: dev_loco[("model", k, 1)])
+    adopt_prior = dev_loco[rank_only] - dev_loco[("model", k_best, 1)] >= PROJ_ADOPT_MARGIN
+    for n in ROSTER_CLASSES:
+        dev_loco[("model", k_best, n)] = loco(("model", k_best, n), proj_dev)
+    n_best = min(ROSTER_CLASSES, key=lambda n: dev_loco[("model", k_best, n)])
+    adopt_roster = (adopt_prior and dev_loco[("model", k_best, 1)] - dev_loco[("model", k_best, n_best)]
+                    >= PROJ_ADOPT_MARGIN)
+    final_spec = ("model", k_best if adopt_prior else 0, n_best if adopt_roster else 1)
+    log(f"projection: dev leave-one-class-out picks {k_best} prior seasons (adopt {adopt_prior}), "
+        f"roster {n_best} classes (adopt {adopt_roster})")
+
+    # Strict walk-forward: coefficients for class Y come from classes <= Y - LAG only.
+    specs = {"rank_only": rank_only}
+    specs.update({f"prior_{k}": ("model", k, 1) for k in PRIOR_SEASONS})
+    specs.update({f"roster_{n}": ("model", k_best, n) for n in ROSTER_CLASSES})
+    specs.update({"prior_only": ("none", k_best, 1), "consensus": ("consensus", 0, 1),
+                  "consensus_prior": ("consensus", k_best, 1), "constant": ("none", 0, 1)})
+    wf_err = {name: {} for name in specs}
+    wf_sd = {name: {} for name in specs}
+    wf_err["nested"], wf_sd["nested"], nested_k = {}, {}, {}
+    for y in proj_tests:
+        train = [c for c in proj_years if c <= y - LAG]
+        default = newcomer_default(y - 1)[0]
+        for name, spec in specs.items():
+            beta, sd = fit_spec(spec, train)
+            wf_err[name].update(spec_errors(spec, beta, [y], default))
+            wf_sd[name][y] = sd
+        # the window length itself chosen on the training classes (no dev-period knowledge)
+        nested_k[y] = min(PRIOR_SEASONS, key=lambda k: loco(("model", k, 1), train))
+        wf_err["nested"].update({kk: v for kk, v in wf_err[f"prior_{nested_k[y]}"].items() if kk[0] == y})
+        wf_sd["nested"][y] = wf_sd[f"prior_{nested_k[y]}"][y]
+    wf_proj = {name: summarise(wf_err[name], wf_sd[name]) for name in wf_err}
+    chosen_name = f"prior_{k_best}"
+    wf_boot = {
+        "prior_vs_rank": boot_diff(wf_err[chosen_name], wf_err["rank_only"]),
+        "nested_vs_rank": boot_diff(wf_err["nested"], wf_err["rank_only"]),
+        "roster_vs_prior": boot_diff(wf_err[f"roster_{n_best}"], wf_err[chosen_name]),
+        "prior_vs_consensus_prior": boot_diff(wf_err[chosen_name], wf_err["consensus_prior"]),
+    }
+    log(f"projection walk-forward {proj_tests[0]}-{proj_tests[-1]}: rank only MAE {wf_proj['rank_only']['mae']:.2f}, "
+        f"+ {k_best}-season prior {wf_proj[chosen_name]['mae']:.2f}, roster {n_best} {wf_proj[f'roster_{n_best}']['mae']:.2f}")
+
+    # Config line: fitted on the development classes, scored on the holdout (= backtest.csv).
+    default_dev, n_new = newcomer_default(DEV_LAST)
+    dev_fit = {}
+    for name, spec in {"final": final_spec, "prior": ("model", k_best, 1), "rank_only": rank_only,
+                       "roster": ("model", k_best, n_best), "consensus_prior": ("consensus", k_best, 1),
+                       "prior_only": ("none", k_best, 1)}.items():
+        beta, sd = fit_spec(spec, proj_dev)
+        errs = spec_errors(spec, beta, holdout, default_dev)
+        dev_fit[name] = {"spec": list(spec), "beta": [float(b) for b in beta], "sd": sd,
+                         **summarise(errs, {y: sd for y in holdout})}
+    proj2 = {
+        "proj_years": proj_years, "proj_dev": proj_dev, "proj_tests": proj_tests,
+        "dev_loco": {f"{s[0]}|{s[1]}|{s[2]}": v for s, v in dev_loco.items()},
+        "k_best": k_best, "n_best": n_best, "adopt_prior": adopt_prior, "adopt_roster": adopt_roster,
+        "final_spec": list(final_spec), "walk_forward": wf_proj, "nested_k": nested_k, "boot": wf_boot,
+        "dev_fit": dev_fit, "newcomer_default": default_dev, "newcomers": n_new,
+        "programs": len({t for y in proj_tests for t in teams_by_year[y]}),
+    }
+
+    # data/outcomes/fbs_team_srs.csv: the season ratings the model reads for prior strength
+    with open(DATA / "outcomes" / "fbs_team_srs.csv", "w", newline="") as fh:
+        w = csv.writer(fh)
+        w.writerow(["season", "team", "srs"])
+        for s_ in sorted(ratings):
+            for t in sorted(ratings[s_]):
+                w.writerow([s_, t, round(ratings[s_][t], 2)])
+    log(f"wrote data/outcomes/fbs_team_srs.csv (seasons {min(ratings)}-{max(ratings)})")
+
     # data/backtest.csv: the holdout classes only
     with open(DATA / "backtest.csv", "w", newline="") as fh:
         w = csv.writer(fh)
@@ -374,7 +551,7 @@ def main() -> None:
         "dev_best_rho": grid_rho[dev_best], "adopted_dev_best": adopt,
         "final_best_rho": grid_rho[final_best], "final_best_resid": grid_resid[final_best],
         "hindsight": dict(zip(keys, hindsight)), "hindsight_rho": grid_rho[hindsight],
-        "sensitivity": sens, "projection": proj,
+        "sensitivity": sens, "projection": proj, "projection_v07": proj2,
         "srs_top_2025": sorted(ratings[max(ratings)].items(), key=lambda kv: -kv[1])[:5],
     }
     out = DATA / "research"
@@ -494,7 +671,7 @@ def render(r: dict) -> str:
     m = pj["model"]
     lines += [
         "",
-        "## Projected 4-season SRS (the model's `projected_srs` outcome)",
+        "## Projected 4-season SRS from the class rank alone (the v0.4.0-v0.6.0 line)",
         "",
         "Each ranking is turned into a points-per-game forecast by a straight line fitted on the",
         "development classes (rank-based rankings use ln(rank)); scored on the holdout classes.",
@@ -515,9 +692,13 @@ def render(r: dict) -> str:
         "",
         "(Prior-season SRS is not fitted here: there are no 2011 game scores for the 2012 class.)",
         "",
-        f"The model's line becomes config: `proj_intercept = {m['a']:.2f}`, `proj_slope = {m['b']:.2f}`,",
-        f"`projection_sd = {m['sd']:.2f}` ({m['n']} holdout program-classes).",
+        "That class-rank-only line (v0.4.0-v0.6.0 defaults: "
+        f"`proj_intercept = {m['a']:.2f}`, `proj_slope = {m['b']:.2f}`, `projection_sd = {m['sd']:.2f}`)",
+        "is kept as variant `class_rank_only`. The default since v0.7.0 is the line below.",
         "",
+    ]
+    lines += render_projection(r)
+    lines += [
         "## Caveats",
         "",
         f"- Only {len(tests)} walk-forward test years and {len(hold)} holdout years, with overlapping",
@@ -530,6 +711,10 @@ def render(r: dict) -> str:
         "- Stars come from the model's recruit files (Rivals stars for legacy years, On3",
         "  consensus stars for 2022+).",
         "- SRS is a simple margin rating, not SP+/FEI; the 2020 season was short (COVID).",
+        "- The projection knows nothing about transfers (the repo has no transfer-portal data), coaching",
+        "  changes or returning starters; the prior SRS stands in for all of them.",
+        "- Recruit-scoring ideas (committed-school credit, top offers only, stars, position weights,",
+        "  class size) are tested in RESEARCH_VARIANTS.md (research_variants.py); none was adopted.",
         "- Basketball is not part of this study: men's basketball is evaluated in RESEARCH_MBB.md",
         "  (research_mbb.py); women's basketball is untested.",
         "",
@@ -541,6 +726,125 @@ def render(r: dict) -> str:
         "",
     ]
     return "\n".join(lines)
+
+
+def render_projection(r: dict) -> list[str]:
+    """Section: class rank plus the program's own recent strength (v0.7.0 default)."""
+    q = r["projection_v07"]
+    wf, bt, df = q["walk_forward"], q["boot"], q["dev_fit"]
+    tests, dev, hold = q["proj_tests"], q["proj_dev"], r["holdout"]
+    k, n = q["k_best"], q["n_best"]
+    seasons = lambda j: f"{j} season" + ("s" if j > 1 else "")  # noqa: E731
+    loco = lambda kk, nn: q["dev_loco"][f"model|{kk}|{nn}"]  # noqa: E731
+
+    def row(label, name):
+        w = wf[name]
+        per = " | ".join(f"{w['by_year'][y]:.2f}" for y in tests)
+        return f"| {label} | {w['mae']:.2f} | {w['rmse']:.2f} | {w['bias']:+.2f} | {w['in_80']:.2f} | {per} |"
+
+    def ci(d):
+        return (f"{d['diff']:+.2f} points/game (95% interval {d['lo']:+.2f} to {d['hi']:+.2f}, bootstrap over "
+                f"{d['programs']} programs; better in {d['years_better']} of {len(tests)} class years)")
+
+    f = df["final"]
+    names = ["proj_intercept", "proj_slope", "proj_prior_weight"]
+    out = [
+        "## Projection with the program's own recent strength (v0.7.0)",
+        "",
+        "A recruiting class joins a roster and a program that already exist. This section adds what",
+        "was known on signing day about both: the program's mean SRS over the seasons just before",
+        "the class (season Y-1 is over when class Y signs), and the class ranks of the classes",
+        "already on the roster. Forecast: `a + b*ln(rank) + c*prior SRS`, where `rank` may be the",
+        "geometric mean of the program's national class ranks over several classes.",
+        "",
+        f"**Sample.** Classes {q['proj_years'][0]}-{q['proj_years'][-1]} ({len(q['proj_years'])} class years; "
+        f"{r['years'][0]} has no earlier season in the data). Programs with no rated season in the",
+        "window (new to FBS) are left out of the fits and, when forecast, given the mean first-season",
+        "SRS of earlier FBS newcomers.",
+        "",
+        f"**Strict walk-forward.** For test class Y the coefficients are fitted on classes <= Y-{LAG} only",
+        f"(their four seasons were over before class Y signed). Test classes {tests[0]}-{tests[-1]}: "
+        f"**{len(tests)} class years, {wf['rank_only']['n']} program-classes, {q['programs']} programs**. "
+        f"Their targets span seasons {tests[0]}-{tests[-1] + WINDOW - 1}, about "
+        f"{(tests[-1] + WINDOW - tests[0]) / WINDOW:.0f} non-overlapping four-season periods, so the class",
+        "years are not independent outcomes.",
+        "",
+        "| forecast (walk-forward) | MAE | RMSE | bias | 80% range coverage | "
+        + " | ".join(str(y) for y in tests) + " |",
+        "|---|---:|---:|---:|---:|" + "---:|" * len(tests),
+        row("offer-model class rank only (v0.6.0 form)", "rank_only"),
+    ]
+    for j in PRIOR_SEASONS:
+        label = f"class rank + prior SRS, {seasons(j)}"
+        out.append(row(f"**{label}**" if j == k and q["adopt_prior"] else label, f"prior_{j}"))
+    out.append(row("class rank + prior SRS, window chosen on the training classes", "nested"))
+    for j in ROSTER_CLASSES:
+        out.append(row(f"roster rank ({j} classes) + prior SRS, {seasons(k)}", f"roster_{j}"))
+    out += [
+        row(f"_prior SRS only, {seasons(k)} (no recruiting)_", "prior_only"),
+        row("_consensus class rank only_", "consensus"),
+        row(f"_consensus class rank + prior SRS, {seasons(k)}_", "consensus_prior"),
+        row("_training-period mean (no information)_", "constant"),
+        "",
+        f"(The right-hand columns are the MAE of each test class year. The window chosen on the training",
+        "classes was " + ", ".join(f"{y}: {v}" for y, v in q["nested_k"].items()) + " seasons.)",
+        "",
+        f"- Adding the prior SRS ({seasons(k)}) changes the MAE by {ci(bt['prior_vs_rank'])}.",
+        f"- With the window chosen on the training classes instead: {ci(bt['nested_vs_rank'])}.",
+        f"- Averaging the class rank over {n} classes on top of that: {ci(bt['roster_vs_prior'])}.",
+        f"- Offer-model rank + prior against consensus rank + prior: {ci(bt['prior_vs_consensus_prior'])}",
+        "  (no real difference: with the program's strength known, the two rankings forecast alike).",
+        "",
+        "**Decision rule (development classes only).** Leave-one-class-out MAE on classes "
+        f"{dev[0]}-{dev[-1]}; a change is adopted if it gains at least {PROJ_ADOPT_MARGIN} points/game.",
+        "",
+        "| forecast | leave-one-class-out MAE, development classes |",
+        "|---|---:|",
+        f"| class rank only | {loco(0, 1):.2f} |",
+    ]
+    out += [f"| class rank + prior SRS, {seasons(j)} | {loco(j, 1):.2f} |" for j in PRIOR_SEASONS]
+    out += [f"| roster rank ({j} classes) + prior SRS, {seasons(k)} | {loco(k, j):.2f} |" for j in ROSTER_CLASSES]
+    out += [
+        "",
+        f"- Prior SRS: best window {seasons(k)} (the windows are within "
+        f"{max(loco(j, 1) for j in PRIOR_SEASONS) - min(loco(j, 1) for j in PRIOR_SEASONS):.2f} of each other), gain "
+        f"{loco(0, 1) - loco(k, 1):.2f}: " + ("**adopted**." if q["adopt_prior"] else "not adopted."),
+        f"- Roster rank: best {n} classes, further gain {loco(k, 1) - loco(k, n):.2f}: "
+        + ("**adopted**." if q["adopt_roster"] else
+           "below the margin, **not adopted** as the default; kept as variant `roster_four_classes`."),
+        "",
+        f"**Config line** (fitted on classes {dev[0]}-{dev[-1]}, scored on the holdout classes "
+        f"{hold[0]}-{hold[-1]} = `data/backtest.csv`, which did not influence the choice; this fit is not",
+        f"strictly walk-forward for the holdout, because the {dev[-1]} class's target ends in {dev[-1] + WINDOW - 1}, "
+        "so the walk-forward table above is the headline):",
+        "",
+        "| forecast (fitted on development classes) | coefficients | sd | holdout MAE | bias | 80% range coverage |",
+        "|---|---|---:|---:|---:|---:|",
+    ]
+    labels = {"final": "**default**", "rank_only": "class rank only", "roster": f"roster rank ({n} classes) + prior",
+              "consensus_prior": "_consensus rank + prior_", "prior_only": "_prior SRS only_"}
+    for key, label in labels.items():
+        d = df[key]
+        coef = ", ".join(f"{b:+.2f}" for b in d["beta"])
+        out.append(f"| {label} | {coef} | {d['sd']:.2f} | {d['mae']:.2f} | {d['bias']:+.2f} | {d['in_80']:.2f} |")
+    out += [
+        "",
+        "(Coefficients in order: intercept, ln(rank) if used, prior SRS if used.)",
+        "",
+        "Config: " + ", ".join(f"`{nm} = {b:.2f}`" for nm, b in zip(names, f["beta"]))
+        + f", `projection_sd = {f['sd']:.2f}`, `proj_prior_seasons = {f['spec'][1]}`, "
+        f"`proj_roster_classes = {f['spec'][2]}`, `proj_prior_default = {q['newcomer_default']:.1f}` "
+        f"(mean first-season SRS of {q['newcomers']} programs new to FBS through {dev[-1]}). "
+        f"Holdout: {f['n']} program-classes, MAE {f['mae']:.2f} by class year "
+        + " / ".join(f"{v:.2f}" for v in f["by_year"].values()) + ".",
+        "Variant `roster_four_classes`: " + ", ".join(f"`{nm} = {b:.2f}`" for nm, b in zip(names, df["roster"]["beta"]))
+        + f", `projection_sd = {df['roster']['sd']:.2f}`, `proj_roster_classes = {df['roster']['spec'][2]}`.",
+        "",
+        "Hindsight note: on the test and holdout classes a 3- or 4-season window did slightly better than",
+        "the one chosen; that was not known on the development classes and is not used.",
+        "",
+    ]
+    return out
 
 
 if __name__ == "__main__":

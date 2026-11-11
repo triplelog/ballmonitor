@@ -61,15 +61,22 @@ class SeasonSimulator:
     def simulate_season(
         self,
         rng: random.Random,
-        scenario: Scenario | None = None
+        scenario: Scenario | None = None,
+        outcomes: dict[int, bool] | None = None,
     ) -> dict[str, TeamSimState]:
-        """Simulates all remaining schedule games and conference championships for one season."""
+        """Simulates all remaining schedule games and conference championships for one season.
+        `outcomes`, when given, is filled with {schedule index: home team won} for every
+        FBS-vs-FBS regular-season game (the engine's "who to root for" tallies)."""
         # Initialize simulated states from baseline records and applied ratings
         states: dict[str, TeamSimState] = {}
+        rating_sd = self.config.rating_uncertainty_points
         for t in self.teams:
             rating = self.custom_ratings.get(t.id, t.rating)
             if scenario and t.id in scenario.rating_overrides:
                 rating = scenario.rating_overrides[t.id]
+            published = rating
+            if rating_sd > 0:
+                rating += rng.gauss(0.0, rating_sd)
 
             # Create team copy with active rating
             team_with_rating = Team(
@@ -96,14 +103,15 @@ class SeasonSimulator:
                 wins=t.wins,
                 losses=t.losses,
                 conf_wins=t.conf_wins,
-                conf_losses=t.conf_losses
+                conf_losses=t.conf_losses,
+                published_rating=published,
             )
 
         # Track head-to-head outcomes for tiebreakers
         h2h: dict[tuple[str, str], str] = {}
 
         # 1. Simulate remaining regular season games
-        for game in self.schedule:
+        for index, game in enumerate(self.schedule):
             home_state = states.get(game.home)
             away_state = states.get(game.away)
             if not game.opponents_are_fbs:
@@ -125,6 +133,8 @@ class SeasonSimulator:
                 )
                 home_won = rng.random() < p_home
 
+            if outcomes is not None:
+                outcomes[index] = home_won
             winner = home_state if home_won else away_state
             loser = away_state if home_won else home_state
 
@@ -143,7 +153,7 @@ class SeasonSimulator:
         self._simulate_conference_championships(states, h2h, rng, scenario)
 
         # 3. Calculate Resume Scores for CFP ranking
-        self._calculate_resume_scores(states)
+        self._calculate_resume_scores(states, rng)
 
         return states
 
@@ -153,7 +163,7 @@ class SeasonSimulator:
             return self.config.win_prob_fn(rating_a - rating_b, home)
         return win_probability(
             rating_a, rating_b, self.config.home_field_points * home,
-            self.config.margin_sd, is_neutral=False,
+            self.config.game_sd(), is_neutral=False,
         )
 
     def _simulate_fcs_game(self, s: TeamSimState | None, fbs_home: bool, game: Game,
@@ -195,7 +205,7 @@ class SeasonSimulator:
                     s.conf_win_pct,
                     s.conf_wins,
                     s.win_pct,
-                    s.rating + rng.uniform(-0.01, 0.01)
+                    s.seen_rating + rng.uniform(-0.01, 0.01)
                 )
 
             ranked = sorted(conf_teams, key=conf_sort_key, reverse=True)
@@ -243,11 +253,17 @@ class SeasonSimulator:
             runner_up.losses += 1
             runner_up.conf_runner_up = True
 
-    def _calculate_resume_scores(self, states: dict[str, TeamSimState]) -> None:
+    def _calculate_resume_scores(self, states: dict[str, TeamSimState],
+                                 rng: random.Random | None = None) -> None:
         """Calculates CFP committee resume scores for all teams."""
+        noise = self.config.resume_noise_points if rng is not None else 0.0
         for s in states.values():
             cfg = self.config
             score = 0.0
+            if noise > 0:
+                # Gumbel noise: ranking by score + Gumbel is the Plackett-Luce ranking model
+                # the weights were fitted with (research.py, part `committee`).
+                score -= noise * math.log(-math.log(max(1e-12, min(1.0 - 1e-12, rng.random()))))
 
             # Win percentage (base driver)
             score += s.win_pct * cfg.resume_win_pct_weight
@@ -257,7 +273,7 @@ class SeasonSimulator:
                 score -= (s.losses ** cfg.resume_loss_penalty_exponent) * cfg.resume_loss_penalty_scale
 
             # Power rating (underlying strength)
-            score += s.rating * cfg.resume_power_weight
+            score += s.seen_rating * cfg.resume_power_weight
 
             # Conference Champion bonus
             if s.is_conf_champ:

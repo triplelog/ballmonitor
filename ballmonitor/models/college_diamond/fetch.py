@@ -45,6 +45,7 @@ UA = {"User-Agent": "Mozilla/5.0 (ballmonitor college_diamond research; polite, 
 SPORT_CODE = {"baseball": "MBA", "softball": "WSB"}
 SEASONS = [2015, 2016, 2017, 2018, 2019, 2021, 2022, 2023, 2024, 2025, 2026]  # 2020 cancelled
 WINDOW = ((2, 1), (6, 30))
+PLACEHOLDER_TEAM = "tba"   # NCAA.com's id for an opponent "to be announced"
 
 
 def _get(url: str, tries: int = 5) -> bytes:
@@ -126,10 +127,14 @@ def download(raw: Path, offline: bool, sports=("baseball", "softball"), seasons=
 # https://www.warrennolan.com/<sport>/<season>/rpi-live : one page per sport-season with
 # every D-I team's conference, conference record, D-I record, home/road/neutral records
 # and final RPI rank. Available for baseball 2021+ and softball 2023-2025 (older pages are
-# empty; the softball 2026 page had been reset to a 5-game table when fetched). Used to (a) anchor season-by-season conference membership and (b) verify the
+# empty; the softball 2026 page had been reset to a 5-game table when fetched, so only its
+# conference column is used: WN_MEMBERSHIP_ONLY). Used to (a) anchor season-by-season conference membership and (b) verify the
 # game data's coverage. Cached in data/raw/warrennolan/.
 WN_URL = "https://www.warrennolan.com/{sport}/{season}/rpi-live"
 WN_SEASONS = {"baseball": [2021, 2022, 2023, 2024, 2025, 2026], "softball": [2023, 2024, 2025]}
+# Pages whose records are unusable (reset early in the season) but whose conference column
+# is the season's membership: used for conference labels only, no record check.
+WN_MEMBERSHIP_ONLY = {"softball": [2026]}
 WN_CONF = {"American Athletic": "American", "Colonial Athletic": "Coastal Athletic",
            "Northeast": "NEC", "The Summit League": "Summit League"}
 
@@ -317,6 +322,8 @@ def _parse_day(rows: list[dict]) -> list[dict]:
             continue
         if not home.get("id") or not away.get("id"):
             continue
+        if PLACEHOLDER_TEAM in (home["id"], away["id"]):
+            continue  # opponent never filled in (some conference-tournament rows): not a known game
         m = re.search(r"\((\d+)\)", g.get("period") or "")
         mm, dd, yy = (int(x) for x in g["date"].split("/"))
         out.append({"id": g["id"], "date": dt.date(yy, mm, dd).isoformat(), "home": home["id"],
@@ -398,7 +405,7 @@ def _all_names(raw: Path, sport: str, season: int, min_rows: int = 1) -> dict[st
     for day in season_days(season):
         for g in download_day(raw, sport, day, True) or []:
             for t in g.get("teams", []):
-                if t.get("id") and t["id"] != "tba":
+                if t.get("id") and t["id"] != PLACEHOLDER_TEAM:
                     out[t["id"]] = t.get("name") or t["id"]
                     n[t["id"]] += 1
     return {i: v for i, v in out.items() if n[i] >= min_rows}
@@ -466,6 +473,10 @@ def _baseball_from_boyds(raw: Path, season: int, ncaa: list[dict], offline: bool
         else:
             bmap[bname] = re.sub(r"[^a-z0-9]+", "-", bname.lower()).strip("-")
         names.setdefault(bmap[bname], all_names.get(bmap[bname], bname))
+    # The site column is a team in boydsworld's own spelling (2015-2025) or its NCAA short
+    # name (2026: "LSU" for "Louisiana State", "UConn" for "Connecticut"); both are looked up.
+    ncaa_id = {n.lower(): i for i, n in all_names.items()}
+    site_id = lambda s: bmap.get(s) or ncaa_id.get(s.lower())  # noqa: E731
     # innings / NCAA round from the matched NCAA game
     out, unmapped = [], Counter()
     for b in boyds:
@@ -474,14 +485,15 @@ def _baseball_from_boyds(raw: Path, season: int, ncaa: list[dict], offline: bool
             unmapped[b["t1"] if not t1 else b["t2"]] += 1
             continue
         site = b["site"]
+        sid = site_id(site)
         if site == "neutral":
             home, away, hs, as_, neutral = t1, t2, b["s1"], b["s2"], True
-        elif bmap.get(site) == t2 or (site not in bmap and similarity(name_tokens(site), name_tokens(b["t2"])) >
-                                       similarity(name_tokens(site), name_tokens(b["t1"]))):
+        elif sid == t2 or (sid is None and similarity(name_tokens(site), name_tokens(b["t2"])) >
+                           similarity(name_tokens(site), name_tokens(b["t1"]))):
             home, away, hs, as_, neutral = t2, t1, b["s2"], b["s1"], False
         else:
             home, away, hs, as_, neutral = t1, t2, b["s1"], b["s2"], False
-        if site != "neutral" and bmap.get(site) not in (t1, t2) and site not in (b["t1"], b["t2"]):
+        if site != "neutral" and sid not in (t1, t2) and site not in (b["t1"], b["t2"]):
             # site names a third team or a city: treat as neutral
             neutral = similarity(name_tokens(site), name_tokens(b["t1"])) == 0 and \
                 similarity(name_tokens(site), name_tokens(b["t2"])) == 0
@@ -560,7 +572,8 @@ def _softball_from_wn(raw: Path, season: int, offline: bool) -> tuple[list[dict]
 def _infer_conferences(games: list[dict], di: set[str], start: dict[str, str], fixed: set[str],
                        selection: dt.date) -> dict[str, str]:
     """Plurality of opponents' conferences in weekend (Thu-Sun) games from March 1 to
-    selection, iterated; teams in `fixed` keep their label (Warren Nolan seasons)."""
+    selection, iterated; teams in `fixed` keep their label (Warren Nolan seasons); a team
+    without a clear plurality keeps its starting label if that is the conference it played most."""
     labels = {t: start.get(t, "Independent") for t in di}
     lo = dt.date(selection.year, 3, 1).isoformat()
     hi = selection.isoformat()
@@ -581,7 +594,10 @@ def _infer_conferences(games: list[dict], di: set[str], start: dict[str, str], f
             if top and top[0][1] >= MIN_CONF_GAMES and (len(top) == 1 or top[0][1] >= 1.5 * top[1][1]):
                 lab = top[0][0]
             else:
-                lab = "Independent"
+                # no clear plurality: keep the anchor season's conference if it is still the
+                # one the team played most (a small league that plays few league games must
+                # not dissolve into independents)
+                lab = start[t] if top and start.get(t) == top[0][0] else "Independent"
             if lab != labels[t]:
                 changed += 1
             new[t] = lab
@@ -634,7 +650,8 @@ def _tourney_start(conf_games: list[dict], selection: dt.date, n_teams: int) -> 
 
 
 def build_season(raw: Path, sport: str, season: int, offline: bool, history: dict,
-                 wn_by_season: dict[int, list[dict]]) -> tuple[list, list[dict], dict]:
+                 wn_by_season: dict[int, list[dict]],
+                 membership: dict[int, list[dict]] | None = None) -> tuple[list, list[dict], dict]:
     from ballmonitor.models.college_diamond.data import Game
     ncaa = _season_ncaa(raw, sport, season, offline)
     info: dict = {"ncaa_scored_games": len(ncaa)}
@@ -683,10 +700,11 @@ def build_season(raw: Path, sport: str, season: int, offline: bool, history: dic
         info["record_diff_vs_wn"] = {"exact": sum(d == 0 for d in diffs), "within_2": sum(d <= 2 for d in diffs),
                                      "n": len(diffs), "median": sorted(diffs)[len(diffs) // 2] if diffs else None}
     else:
+        own = (membership or {}).get(season)   # this season's own conference column, if any
         near = min(wn_by_season, key=lambda y: abs(y - season)) if wn_by_season else None
-        if near is not None:
-            info["membership_anchor"] = near
-            anchor = wn_by_season[near]
+        if own or near is not None:
+            info["membership_anchor"] = season if own else near
+            anchor = own or wn_by_season[near]
             prev_names = {w["wn_slug"]: w for w in anchor}
             m = _match_names([(w["wn_slug"], name_tokens(w["name"]) | name_tokens(w["wn_slug"].replace("-", " ")),
                                (0, 0)) for w in anchor],
@@ -696,6 +714,9 @@ def build_season(raw: Path, sport: str, season: int, offline: bool, history: dic
                 if similarity(name_tokens(prev_names[slug]["name"]) | name_tokens(slug.replace("-", " ")),
                               name_tokens(names[i]) | name_tokens(i.replace("-", " "))) > 0 or slug in WN_ALIASES:
                     start[i] = prev_names[slug]["conference"]
+                    if own:
+                        fixed.add(i)
+                        src[i] = "warrennolan"
     labels = _infer_conferences(games, di, start, fixed, sel)
     changed = sum(1 for t in di if t not in fixed and labels[t] != start.get(t))
     info["membership_inferred_changes"] = changed
@@ -965,9 +986,10 @@ def build(model_dir: Path, offline: bool, sports=("baseball", "softball")) -> di
         history = json.loads(hist_path.read_text()) if hist_path.exists() else {"seasons": {}}
         wn_by = {y: warren_nolan(raw, sport, y, offline) for y in WN_SEASONS[sport]}
         wn_by = {y: v for y, v in wn_by.items() if v}
+        members = {y: warren_nolan(raw, sport, y, offline) for y in WN_MEMBERSHIP_ONLY.get(sport, [])}
         all_games, all_teams = [], []
         for season in SEASONS:
-            games, teams, info = build_season(raw, sport, season, offline, history, wn_by)
+            games, teams, info = build_season(raw, sport, season, offline, history, wn_by, members)
             all_games += games
             all_teams += teams
             coverage[f"{sport} {season}"] = info

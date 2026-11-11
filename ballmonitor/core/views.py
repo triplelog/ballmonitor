@@ -19,10 +19,12 @@ from __future__ import annotations
 import json
 import math
 import re
+from pathlib import Path
 from typing import Any
 
 FORMATS = ("text", "int", "number", "pct", "time", "signed")
-KINDS = ("table", "bar", "line", "picker")
+KINDS = ("table", "bar", "line", "picker", "app")
+APPS_DIR = Path(__file__).resolve().parent.parent / "web" / "static" / "apps"
 SPORTS = ("College football", "Baseball", "College baseball & softball", "Running", "Polls & awards", "More sports")
 # Shioh cell colour per sport (site.html's .ss-p1-5): the pages, their pre-written HTML and site.js
 # all use this map (site.js reads it from data/site.json). The data tables add their own sports.
@@ -166,6 +168,14 @@ def option(label: str, views: list[dict], intro: str = "") -> dict:
     return o
 
 
+def app(id: str, title: str, name: str, data: dict, subtitle: str = "", note: str = "") -> dict:
+    """An interactive tool: web/static/apps/<name>.js draws it from `data` (everything it needs,
+    written at build time). Keep it lightweight (no large data or models shipped to the browser);
+    an app that copies a model's formulas must be checked against the Python model by a test
+    (e.g. tests/test_race_calc.py)."""
+    return {"kind": "app", "id": id, "title": title, "subtitle": subtitle, "note": note, "app": name, "data": data}
+
+
 def picker(id: str, title: str, label: str, options: list[dict], subtitle: str = "", note: str = "",
            default: int = 0) -> dict:
     """A dropdown ("Race", "Team", "League") that swaps between groups of views."""
@@ -232,6 +242,12 @@ def check(p: dict) -> list[str]:
                         break
                 if v.get("sort") and v["sort"] not in keys:
                     errs.append(f"{at}: sort key {v['sort']!r} is not a column")
+            elif kind == "app":
+                name = str(v.get("app") or "")
+                if not re.fullmatch(r"[a-z0-9_]+", name) or not (APPS_DIR / f"{name}.js").is_file():
+                    errs.append(f"{at}: app {name!r} has no web/static/apps/{name}.js")
+                if not isinstance(v.get("data"), dict):
+                    errs.append(f"{at}: app data must be a dict")
             elif kind == "bar":
                 if not v.get("items"):
                     errs.append(f"{at}: no items")

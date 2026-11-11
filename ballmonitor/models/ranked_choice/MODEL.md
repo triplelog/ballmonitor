@@ -109,7 +109,7 @@ so the daily site build keeps the polls up to date.
 |---|---|---|---|
 | AP Top 25 football (`ap_cfb`) | 207 polls (2014 – 2026 wk 10) / 12,878 | 25 | College Poll Tracker grid pages (robots allow), 4 s between requests. One rankings page per season validated: 20 of 26 checked weeks match exactly; the rest trace to a ballot missing on the site. `sources/ap_polls.md` |
 | AP Top 25 men's basketball (`ap_mbb`) | 234 polls (2014-15 – 2026-27 wk 1) / 14,729 | 25 | as above |
-| MLB BBWAA (`mlb`) | 114 (2012–2025 MVP/Cy Young/ROY/MOY × AL/NL, 2026 ROY) / 3,420 | 10 / 5 / 3 | bbwaa.com; 110 of 114 match the published totals; in 4 MVP races BBWAA's ballot page and results table disagree (kept as printed). `sources/mlb.md` |
+| MLB BBWAA (`mlb`) | 116 (2012–2025 MVP/Cy Young/ROY/MOY × AL/NL, 2026 ROY and MOY) / 3,480 | 10 / 5 / 3 | bbwaa.com; 112 of 116 match the published totals; in 4 MVP races BBWAA's ballot page and results table disagree (kept as printed). `sources/mlb.md` |
 | NHL PHWA (`nhl`) | 45 (2017-18 – 2025-26: Hart, Norris, Calder, Selke, Lady Byng) / 7,895 | 5 (10-7-5-3-1) | PDFs from the PHWA's Google Drive links, saved by `tools/download.py nhl` (you run it; Drive's robots.txt disallows downloads). Parsed by `sources/nhl.py` `parse_phwa_pdf`. The PDFs have no totals; every published tally checked matches exactly (2017-18 and 2024-25/2025-26 Hart, 2021-22 Norris; tests). |
 | NBA media (`nba`) | 53 (2014-15 – 2022-23 so far) / 5,667 | 5 (MVP) / 3 | award PDFs saved by `tools/download.py nba` (you run it; the PDF folder is disallowed in NBA's robots.txt). Parsed by `sources/nba_pdf.py`; all 37 contests with a totals table match exactly. 2016-17 – 2019-20 include the NBA's one 'fan vote' ballot, as officially counted. Re-run the download for 2022-23 COY/6MOY and 2023-24 onward. |
 | AP women's basketball (`ap_wbb`) | — | 25 | only on apnews.com, whose robots.txt blocks Claude agents; parser stub only. |
@@ -155,6 +155,9 @@ None — there is no "actual" to score a re-count against.
 
 ## Changelog
 
+- 0.3.0 (data fix) — the MLB source updates on a machine without saved pages (the daily build): in
+  November it reads BBWAA's two sitemaps, keeps every award already in the built CSVs and downloads
+  only new awards' pages; other months it asks for nothing. 2026 Manager of the Year ballots added.
 - 0.3.0 (data fix) — AP fetch finds new weeks from the latest rankings page's week list, so
   weeks before a poll whose ballots are not posted yet are no longer skipped (CI has no raw
   cache and lost every week since the committed CSV); `ballmonitor fetch` now prints each

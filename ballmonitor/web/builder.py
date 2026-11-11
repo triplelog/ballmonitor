@@ -242,6 +242,13 @@ def site_page(name: str) -> dict | None:
 SPLIT_BYTES = 150_000   # a page's JSON above this has its dropdown options' views moved to their own files
 
 
+def app_versions() -> dict[str, str]:
+    """apps/<name>.js -> content hash: site.js loads an app as /static/apps/<name>.js?v=<hash>, so a
+    new build never runs a browser's cached old copy of a model's formulas."""
+    return {f"apps/{f.name}": hashlib.sha1(f.read_bytes()).hexdigest()[:10]
+            for f in sorted((STATIC_DIR / "apps").glob("*.js"))}
+
+
 def split_options(page: dict, address: str, out: Path) -> dict:
     """A copy of `page` whose top-level picker options keep label/slug/intro and a `src`
     (/data/views/<address>/<picker>/<slug>.json, holding {"views": [...]}) instead of their views,
@@ -306,7 +313,8 @@ def build_views(data_dir: Path, names: list[str], log=print) -> list[str]:
         log(f"   tables: {', '.join(t['id'] for t in live)}")
     chart_list = charts.public()   # the baseball charts page's list (web/charts.toml)
     (data_dir / "site.json").write_text(json.dumps({"models": index, "redirects": redirects, "tables": live,
-                                                    "charts": chart_list, "cells": views.SPORT_CELL},
+                                                    "charts": chart_list, "cells": views.SPORT_CELL,
+                                                    "assets": app_versions()},
                                                    indent=1), encoding="utf-8")
     return failures
 
@@ -331,6 +339,7 @@ def build_static_site(out_dir: Path | str = "dist", models: list[str] | None = N
                  "fonts.css", "share.png"):
         shutil.copy2(STATIC_DIR / name, static_dest / name)
     shutil.copytree(STATIC_DIR / "fonts", static_dest / "fonts", dirs_exist_ok=True)
+    shutil.copytree(STATIC_DIR / "apps", static_dest / "apps", dirs_exist_ok=True)   # views.app tools
     for name in ("replay.js", "replay.html"):
         shutil.copy2(STATIC_DIR / name, target / name)
     # the 404 page (the Shioh template, unchanged) + one script: an option that is no longer on its

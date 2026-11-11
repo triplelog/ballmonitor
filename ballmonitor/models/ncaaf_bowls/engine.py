@@ -92,6 +92,25 @@ class BowlSummary:
     top_matchups: list[tuple[str, str, float]]        # [(team1, team2, prob)]
 
 @dataclass
+class GameTally:
+    """One tracked game's results over a run: home wins, and per team the playoff bids and
+    conference titles in the seasons where the home team won."""
+    home: str
+    away: str
+    home_wins: int = 0
+    cfp_if_home: dict[str, int] = field(default_factory=lambda: defaultdict(int))
+    conf_if_home: dict[str, int] = field(default_factory=lambda: defaultdict(int))
+
+    def split(self, hits_if_home: int, hits_total: int, n_sims: int) -> tuple[float, float, int, int] | None:
+        """(chance if home wins, chance if away wins, seasons home won, seasons away won) for an
+        outcome seen `hits_total` times in `n_sims` seasons; None when one side never won."""
+        n_home, n_away = self.home_wins, n_sims - self.home_wins
+        if n_home == 0 or n_away == 0:
+            return None
+        return hits_if_home / n_home, (hits_total - hits_if_home) / n_away, n_home, n_away
+
+
+@dataclass
 class SimulationResults:
     total_simulations: int
     team_summaries: dict[str, TeamSummary]
@@ -100,6 +119,7 @@ class SimulationResults:
     conference_pecking_orders: dict[str, list[dict[str, Any]]] = field(default_factory=dict)
     active_ratings_source: str = "default"
     active_scenario: str | None = None
+    game_tallies: dict[int, GameTally] = field(default_factory=dict)   # run(track_games=...)
 
     def to_dict(self) -> dict[str, Any]:
         return {
@@ -230,9 +250,15 @@ class BowlEngine:
     def run(
         self,
         num_sims: int | None = None,
-        scenario: Scenario | None = None
+        scenario: Scenario | None = None,
+        track_games: list[int] | None = None,
     ) -> SimulationResults:
-        """Runs N Monte Carlo season simulations and aggregates results."""
+        """Runs N Monte Carlo season simulations and aggregates results.
+
+        `track_games`: schedule indices of games to tally outcomes by (e.g. this week's games):
+        for each, how often the home team won, and how often each team made the playoff or won
+        its conference in the seasons where the home team won. SimulationResults.game_tallies
+        holds them; GameTally.split() turns them into "if home wins / if away wins" chances."""
         n_sims = num_sims or self.config.simulations
         rng = random.Random(self.config.random_seed)
 
@@ -273,20 +299,26 @@ class BowlEngine:
         bowl_matchup_counts: dict[str, dict[tuple[str, str], int]] = defaultdict(lambda: defaultdict(int))
         conf_cfp_bids_total: dict[str, int] = defaultdict(int)
 
+        tracked = list(track_games or [])
+        tallies = {g: GameTally(self.schedule[g].home, self.schedule[g].away) for g in tracked}
+        outcomes: dict[int, bool] | None = {} if tracked else None
+
         for _ in range(n_sims):
             # Track postseason participation & wins in this specific simulation run
             teams_played_postseason_this_sim: set[str] = set()
             teams_won_postseason_this_sim: set[str] = set()
 
             # 1. Simulate Season (respecting What-If scenario)
-            states = self.simulator.simulate_season(rng, scenario=scenario)
+            if outcomes is not None:
+                outcomes.clear()
+            states = self.simulator.simulate_season(rng, scenario=scenario, outcomes=outcomes)
 
             # 2. Select, Seed & Simulate CFP
             cfp_res = self.cfp_selector.select_and_seed(
                 states,
                 simulate_games=True,
                 rng=rng,
-                margin_sd=self.config.margin_sd,
+                margin_sd=self.config.game_sd(),
                 home_field_points=self.config.home_field_points,
                 win_prob_fn=self.config.win_prob_fn,
             )
@@ -377,6 +409,17 @@ class BowlEngine:
                     # Normalized matchup pair for bowl summary
                     pair = tuple(sorted([t1.name, t2.name]))
                     bowl_matchup_counts[m.bowl_id][pair] += 1
+
+            # "Who to root for": playoff teams and conference champions by each tracked result
+            if tallies:
+                champs = [t_id for t_id, s in states.items() if s.is_conf_champ]
+                for g, tally in tallies.items():
+                    if outcomes.get(g):
+                        tally.home_wins += 1
+                        for seed in cfp_res.seeds:
+                            tally.cfp_if_home[seed.id] += 1
+                        for t_id in champs:
+                            tally.conf_if_home[t_id] += 1
 
             # Update sim-level tallies
             for t_id in teams_played_postseason_this_sim:
@@ -621,5 +664,6 @@ class BowlEngine:
             conf_cfp_bids_mean=conf_cfp_bids_mean,
             conference_pecking_orders=conference_pecking_orders,
             active_ratings_source=str(self.ratings_source),
-            active_scenario=str(scenario) if scenario else None
+            active_scenario=str(scenario) if scenario else None,
+            game_tallies=tallies,
         )

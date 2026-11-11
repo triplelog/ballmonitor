@@ -18,7 +18,7 @@ from pathlib import Path
 
 SOURCES = ["ap_polls", "mlb", "nba", "nhl"]
 RAW = {"ap_polls": "ap", "mlb": "mlb", "nba": "nba", "nhl": "nhl"}
-INCREMENTAL = {"ap_polls"}  # can update from the built CSVs alone
+INCREMENTAL = {"ap_polls", "mlb"}  # can update from the built CSVs alone (mlb: in the awards month)
 
 
 def fetch(model_dir: Path, offline: bool = False):

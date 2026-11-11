@@ -362,6 +362,26 @@ unit = "seconds"
 source = "Judgement"
 range = [10, 120]
 
+[params.site_calc_fastest_pace_sec]
+value = 210
+range = [120, 400]
+unit = "seconds per mile"
+description = "Calculator: a race entered faster than this pace (3:30 per mile) is taken for a typo and left out, with a message."
+source = "Judgement: a little faster than the fastest pace in the backtest data (3:45 per mile, MODEL.md Backtest)"
+
+[params.site_calc_slowest_pace_sec]
+value = 1200
+range = [600, 2400]
+unit = "seconds per mile"
+description = "Calculator: a race entered slower than this pace (20:00 per mile) is taken for a typo and left out, with a message."
+source = "Judgement: slower than the slowest pace in the backtest data (16:00 per mile, MODEL.md Backtest)"
+
+[params.site_own_curve_margin]
+value = 0.02
+range = [0.0, 0.2]
+description = "Calculator (site.py): a curve through the runner's own races whose exponent is more than this below (or above) the typical one is described as strong endurance (or strong speed). Description only; the times never use it."
+source = "Judgement (about the spread between the men's and women's exponents, 0.03)"
+
 [params.site_example_5k_sec]
 value = 1500
 description = "Public site only: the 5K time used in the 'how sure is it' table (1500 s = 25:00)."

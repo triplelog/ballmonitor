@@ -1,0 +1,378 @@
+{
+ "seasons": [
+  2016,
+  2017,
+  2018,
+  2019,
+  2020,
+  2021,
+  2022,
+  2023,
+  2024,
+  2025
+ ],
+ "test_seasons": [
+  2019,
+  2020,
+  2021,
+  2022,
+  2023,
+  2024,
+  2025
+ ],
+ "old_all": {
+  "top12": 95,
+  "top4": 34,
+  "top25": 210,
+  "pair_order": 0.833,
+  "rank_error_top12": 2.3,
+  "per_season_top12": [
+   8,
+   12,
+   9,
+   8,
+   9,
+   9,
+   11,
+   10,
+   10,
+   9
+  ]
+ },
+ "old_test": {
+  "top12": 66,
+  "top4": 23,
+  "top25": 152,
+  "pair_order": 0.8295238095238094,
+  "rank_error_top12": 2.4047619047619047,
+  "per_season_top12": [
+   8,
+   9,
+   9,
+   11,
+   10,
+   10,
+   9
+  ]
+ },
+ "fpi_only_test": {
+  "top12": 66,
+  "top4": 16,
+  "top25": 130,
+  "pair_order": 0.8195238095238094,
+  "rank_error_top12": 3.75,
+  "per_season_top12": [
+   10,
+   9,
+   9,
+   10,
+   9,
+   9,
+   10
+  ]
+ },
+ "walk_forward_test": {
+  "top12": 77,
+  "top4": 22,
+  "top25": 159,
+  "pair_order": 0.8895238095238095,
+  "rank_error_top12": 1.6309523809523812,
+  "per_season_top12": [
+   10,
+   11,
+   11,
+   12,
+   12,
+   11,
+   10
+  ]
+ },
+ "walk_forward_weights": [
+  {
+   "season": 2019,
+   "winpct": 112.83,
+   "losspow": -1.19,
+   "rating": 1.0,
+   "champ": -0.97,
+   "p4champ": 6.21,
+   "p4": 10.07,
+   "noise_scale": 3.73
+  },
+  {
+   "season": 2020,
+   "winpct": 128.11,
+   "losspow": -1.15,
+   "rating": 1.0,
+   "champ": -0.53,
+   "p4champ": 7.1,
+   "p4": 12.85,
+   "noise_scale": 4.42
+  },
+  {
+   "season": 2021,
+   "winpct": 55.95,
+   "losspow": 0.66,
+   "rating": 1.0,
+   "champ": 1.5,
+   "p4champ": 0.71,
+   "p4": 10.07,
+   "noise_scale": 4.28
+  },
+  {
+   "season": 2022,
+   "winpct": 61.92,
+   "losspow": 0.78,
+   "rating": 1.0,
+   "champ": 0.14,
+   "p4champ": 2.62,
+   "p4": 10.34,
+   "noise_scale": 4.63
+  },
+  {
+   "season": 2023,
+   "winpct": 60.07,
+   "losspow": 1.11,
+   "rating": 1.0,
+   "champ": 1.06,
+   "p4champ": 2.33,
+   "p4": 11.58,
+   "noise_scale": 4.7
+  },
+  {
+   "season": 2024,
+   "winpct": 65.95,
+   "losspow": 1.14,
+   "rating": 1.0,
+   "champ": 1.04,
+   "p4champ": 3.08,
+   "p4": 13.85,
+   "noise_scale": 4.94
+  },
+  {
+   "season": 2025,
+   "winpct": 63.02,
+   "losspow": 1.28,
+   "rating": 1.0,
+   "champ": 0.53,
+   "p4champ": 3.78,
+   "p4": 12.89,
+   "noise_scale": 4.85
+  }
+ ],
+ "noise": [
+  {
+   "mult": 0.0,
+   "top12_brier_sum": 14.0,
+   "top4_brier_sum": 12.0,
+   "per_season_top12": [
+    4.0,
+    2.0,
+    2.0,
+    0.0,
+    0.0,
+    2.0,
+    4.0
+   ]
+  },
+  {
+   "mult": 0.25,
+   "top12_brier_sum": 12.213131125,
+   "top4_brier_sum": 9.830659625,
+   "per_season_top12": [
+    3.51,
+    1.76,
+    1.71,
+    0.07,
+    0.13,
+    1.99,
+    3.03
+   ]
+  },
+  {
+   "mult": 0.5,
+   "top12_brier_sum": 12.083962625,
+   "top4_brier_sum": 8.656114250000002,
+   "per_season_top12": [
+    3.3,
+    1.81,
+    1.71,
+    0.3,
+    0.46,
+    1.99,
+    2.51
+   ]
+  },
+  {
+   "mult": 0.75,
+   "top12_brier_sum": 12.066025999999999,
+   "top4_brier_sum": 8.061846375,
+   "per_season_top12": [
+    3.0,
+    2.0,
+    1.82,
+    0.53,
+    0.63,
+    1.95,
+    2.12
+   ]
+  },
+  {
+   "mult": 1.0,
+   "top12_brier_sum": 12.436503250000001,
+   "top4_brier_sum": 7.770277125,
+   "per_season_top12": [
+    2.84,
+    2.21,
+    1.9,
+    0.75,
+    0.81,
+    1.93,
+    2.0
+   ]
+  }
+ ],
+ "noise_nested": [
+  {
+   "season": 2021,
+   "mult": 1.0,
+   "top12_old": 2.0,
+   "top12_new": 1.8990182499999997,
+   "top4_old": 2.0,
+   "top4_new": 1.119614125
+  },
+  {
+   "season": 2022,
+   "mult": 1.0,
+   "top12_old": 0.0,
+   "top12_new": 0.75460025,
+   "top4_old": 2.0,
+   "top4_new": 0.887098375
+  },
+  {
+   "season": 2023,
+   "mult": 0.75,
+   "top12_old": 0.0,
+   "top12_new": 0.6343383749999999,
+   "top4_old": 4.0,
+   "top4_new": 1.5921405000000002
+  },
+  {
+   "season": 2024,
+   "mult": 0.75,
+   "top12_old": 2.0,
+   "top12_new": 1.9477147499999998,
+   "top4_old": 2.0,
+   "top4_new": 2.4728968750000004
+  },
+  {
+   "season": 2025,
+   "mult": 0.75,
+   "top12_old": 4.0,
+   "top12_new": 2.12405375,
+   "top4_old": 0.0,
+   "top4_new": 0.47366874999999997
+  }
+ ],
+ "final_fit": {
+  "winpct": 66.9,
+  "losspow": 1.36,
+  "rating": 1.0,
+  "champ": -0.02,
+  "p4champ": 4.48,
+  "p4": 13.74,
+  "noise_scale": 4.95,
+  "noise_mult": 0.75
+ },
+ "config_weights": {
+  "home_field_points": 2.5,
+  "margin_sd": 14.0,
+  "rating_uncertainty_points": 5.0,
+  "simulations": 200,
+  "site_simulations": 5000,
+  "random_seed": 42,
+  "bowl_eligible_wins": 6,
+  "fcs_opponent_rating": -21.7,
+  "rating_margin_cap": 28.0,
+  "rating_ridge": 2.0,
+  "resume_win_pct_weight": 67.0,
+  "resume_loss_penalty_scale": 1.4,
+  "resume_loss_penalty_exponent": 1.5,
+  "resume_power_weight": 1.0,
+  "resume_conf_champ_bonus": 0.0,
+  "resume_p4_champ_bonus": 4.5,
+  "resume_power4_bonus": 14.0,
+  "resume_noise_points": 3.7,
+  "bowl_win_weight": 3.5,
+  "bowl_rating_weight": 0.4,
+  "bowl_brand_weight": 1.4,
+  "bowl_geo_weight": 1.8,
+  "bowl_max_distance_miles": 2500.0,
+  "bowl_drive_in_radius_miles": 400.0,
+  "bowl_drive_in_bonus": 3.5,
+  "bowl_regional_proximity_mult": 1.6,
+  "bowl_repeat_penalty": 14.0,
+  "bowl_rematch_penalty": 25.0,
+  "bowl_temperature": 0.35,
+  "big_ten_max_conf_win_skip": 1,
+  "notre_dame_acc_win_tolerance": 1
+ },
+ "config_all_in_sample": {
+  "top12": 109,
+  "top4": 35,
+  "top25": 225,
+  "pair_order": 0.8913333333333334,
+  "rank_error_top12": 1.525,
+  "per_season_top12": [
+   9,
+   12,
+   11,
+   10,
+   11,
+   11,
+   12,
+   12,
+   11,
+   10
+  ]
+ },
+ "misses": [
+  {
+   "season": 2024,
+   "old_missed": [
+    "SMU",
+    "Alabama"
+   ],
+   "old_instead": [
+    "Army",
+    "Miami"
+   ],
+   "new_missed": [
+    "Boise State"
+   ],
+   "new_instead": [
+    "Miami"
+   ]
+  },
+  {
+   "season": 2025,
+   "old_missed": [
+    "Oklahoma",
+    "Alabama",
+    "BYU"
+   ],
+   "old_instead": [
+    "James Madison",
+    "Utah",
+    "Vanderbilt"
+   ],
+   "new_missed": [
+    "Alabama",
+    "BYU"
+   ],
+   "new_instead": [
+    "Utah",
+    "Vanderbilt"
+   ]
+  }
+ ]
+}

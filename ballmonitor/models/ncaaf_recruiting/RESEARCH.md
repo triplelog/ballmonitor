@@ -76,7 +76,7 @@ Sensitivity (dev / holdout mean ρ when one parameter is changed from the defaul
 - `l2_reg`: 0.1 → 0.731 / 0.725; 0.5 → 0.731 / 0.724; 2.0 → 0.729 / 0.717
 - `prestige_years`: 1 → 0.731 / 0.724; 2 → 0.730 / 0.727; 3 → 0.730 / 0.726
 
-## Projected 4-season SRS (the model's `projected_srs` outcome)
+## Projected 4-season SRS from the class rank alone (the v0.4.0-v0.6.0 line)
 
 Each ranking is turned into a points-per-game forecast by a straight line fitted on the
 development classes (rank-based rankings use ln(rank)); scored on the holdout classes.
@@ -89,8 +89,84 @@ development classes (rank-based rankings use ln(rank)); scored on the holdout cl
 
 (Prior-season SRS is not fitted here: there are no 2011 game scores for the 2012 class.)
 
-The model's line becomes config: `proj_intercept = 25.62`, `proj_slope = -6.56`,
-`projection_sd = 6.53` (513 holdout program-classes).
+That class-rank-only line (v0.4.0-v0.6.0 defaults: `proj_intercept = 25.62`, `proj_slope = -6.56`, `projection_sd = 6.53`)
+is kept as variant `class_rank_only`. The default since v0.7.0 is the line below.
+
+## Projection with the program's own recent strength (v0.7.0)
+
+A recruiting class joins a roster and a program that already exist. This section adds what
+was known on signing day about both: the program's mean SRS over the seasons just before
+the class (season Y-1 is over when class Y signs), and the class ranks of the classes
+already on the roster. Forecast: `a + b*ln(rank) + c*prior SRS`, where `rank` may be the
+geometric mean of the program's national class ranks over several classes.
+
+**Sample.** Classes 2013-2022 (10 class years; 2012 has no earlier season in the data). Programs with no rated season in the
+window (new to FBS) are left out of the fits and, when forecast, given the mean first-season
+SRS of earlier FBS newcomers.
+
+**Strict walk-forward.** For test class Y the coefficients are fitted on classes <= Y-4 only
+(their four seasons were over before class Y signed). Test classes 2018-2022: **5 class years, 640 program-classes, 131 programs**. Their targets span seasons 2018-2025, about 2 non-overlapping four-season periods, so the class
+years are not independent outcomes.
+
+| forecast (walk-forward) | MAE | RMSE | bias | 80% range coverage | 2018 | 2019 | 2020 | 2021 | 2022 |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| offer-model class rank only (v0.6.0 form) | 4.96 | 6.13 | -0.15 | 0.82 | 5.40 | 5.09 | 4.86 | 4.43 | 5.05 |
+| **class rank + prior SRS, 1 season** | 4.48 | 5.62 | -0.04 | 0.80 | 4.66 | 4.76 | 3.92 | 4.48 | 4.60 |
+| class rank + prior SRS, 2 seasons | 4.47 | 5.56 | -0.04 | 0.82 | 4.67 | 4.67 | 4.09 | 4.01 | 4.90 |
+| class rank + prior SRS, 3 seasons | 4.41 | 5.49 | -0.04 | 0.81 | 4.72 | 4.49 | 4.19 | 3.89 | 4.79 |
+| class rank + prior SRS, 4 seasons | 4.42 | 5.48 | -0.04 | 0.81 | 4.78 | 4.49 | 4.17 | 3.91 | 4.75 |
+| class rank + prior SRS, window chosen on the training classes | 4.48 | 5.63 | -0.05 | 0.80 | 4.67 | 4.49 | 4.17 | 4.48 | 4.60 |
+| roster rank (2 classes) + prior SRS, 1 season | 4.39 | 5.43 | -0.05 | 0.80 | 4.58 | 4.69 | 3.82 | 4.37 | 4.46 |
+| roster rank (3 classes) + prior SRS, 1 season | 4.37 | 5.41 | -0.05 | 0.80 | 4.58 | 4.62 | 3.86 | 4.34 | 4.44 |
+| roster rank (4 classes) + prior SRS, 1 season | 4.36 | 5.40 | -0.05 | 0.80 | 4.58 | 4.64 | 3.80 | 4.29 | 4.47 |
+| _prior SRS only, 1 season (no recruiting)_ | 5.16 | 6.47 | +0.09 | 0.80 | 4.95 | 5.26 | 4.21 | 5.75 | 5.64 |
+| _consensus class rank only_ | 4.81 | 5.90 | -0.11 | 0.83 | 5.24 | 4.93 | 4.70 | 4.36 | 4.83 |
+| _consensus class rank + prior SRS, 1 season_ | 4.46 | 5.51 | -0.01 | 0.80 | 4.64 | 4.68 | 3.85 | 4.50 | 4.63 |
+| _training-period mean (no information)_ | 6.67 | 8.51 | -0.03 | 0.82 | 6.59 | 6.61 | 6.49 | 6.67 | 6.96 |
+
+(The right-hand columns are the MAE of each test class year. The window chosen on the training
+classes was 2018: 2, 2019: 3, 2020: 4, 2021: 1, 2022: 1 seasons.)
+
+- Adding the prior SRS (1 season) changes the MAE by -0.48 points/game (95% interval -0.75 to -0.22, bootstrap over 131 programs; better in 4 of 5 class years).
+- With the window chosen on the training classes instead: -0.48 points/game (95% interval -0.75 to -0.23, bootstrap over 131 programs; better in 4 of 5 class years).
+- Averaging the class rank over 4 classes on top of that: -0.13 points/game (95% interval -0.24 to -0.01, bootstrap over 131 programs; better in 5 of 5 class years).
+- Offer-model rank + prior against consensus rank + prior: +0.02 points/game (95% interval -0.06 to +0.12, bootstrap over 131 programs; better in 2 of 5 class years)
+  (no real difference: with the program's strength known, the two rankings forecast alike).
+
+**Decision rule (development classes only).** Leave-one-class-out MAE on classes 2013-2018; a change is adopted if it gains at least 0.2 points/game.
+
+| forecast | leave-one-class-out MAE, development classes |
+|---|---:|
+| class rank only | 5.32 |
+| class rank + prior SRS, 1 season | 4.74 |
+| class rank + prior SRS, 2 seasons | 4.75 |
+| class rank + prior SRS, 3 seasons | 4.75 |
+| class rank + prior SRS, 4 seasons | 4.76 |
+| roster rank (2 classes) + prior SRS, 1 season | 4.65 |
+| roster rank (3 classes) + prior SRS, 1 season | 4.62 |
+| roster rank (4 classes) + prior SRS, 1 season | 4.61 |
+
+- Prior SRS: best window 1 season (the windows are within 0.02 of each other), gain 0.59: **adopted**.
+- Roster rank: best 4 classes, further gain 0.12: below the margin, **not adopted** as the default; kept as variant `roster_four_classes`.
+
+**Config line** (fitted on classes 2013-2018, scored on the holdout classes 2019-2022 = `data/backtest.csv`, which did not influence the choice; this fit is not
+strictly walk-forward for the holdout, because the 2018 class's target ends in 2021, so the walk-forward table above is the headline):
+
+| forecast (fitted on development classes) | coefficients | sd | holdout MAE | bias | 80% range coverage |
+|---|---|---:|---:|---:|---:|
+| **default** | +15.35, -3.91, +0.36 | 5.80 | 4.44 | -0.01 | 0.81 |
+| class rank only | +25.52, -6.53 | 6.49 | 4.84 | -0.08 | 0.83 |
+| roster rank (4 classes) + prior | +17.65, -4.51, +0.34 | 5.69 | 4.29 | -0.01 | 0.82 |
+| _consensus rank + prior_ | +17.13, -4.37, +0.32 | 5.69 | 4.41 | +0.03 | 0.81 |
+| _prior SRS only_ | +0.16, +0.58 | 6.45 | 5.21 | +0.09 | 0.79 |
+
+(Coefficients in order: intercept, ln(rank) if used, prior SRS if used.)
+
+Config: `proj_intercept = 15.35`, `proj_slope = -3.91`, `proj_prior_weight = 0.36`, `projection_sd = 5.80`, `proj_prior_seasons = 1`, `proj_roster_classes = 1`, `proj_prior_default = -11.3` (mean first-season SRS of 8 programs new to FBS through 2018). Holdout: 513 program-classes, MAE 4.44 by class year 4.74 / 3.90 / 4.50 / 4.60.
+Variant `roster_four_classes`: `proj_intercept = 17.65`, `proj_slope = -4.51`, `proj_prior_weight = 0.34`, `projection_sd = 5.69`, `proj_roster_classes = 4`.
+
+Hindsight note: on the test and holdout classes a 3- or 4-season window did slightly better than
+the one chosen; that was not known on the development classes and is not used.
 
 ## Caveats
 
@@ -104,17 +180,24 @@ The model's line becomes config: `proj_intercept = 25.62`, `proj_slope = -6.56`,
 - Stars come from the model's recruit files (Rivals stars for legacy years, On3
   consensus stars for 2022+).
 - SRS is a simple margin rating, not SP+/FEI; the 2020 season was short (COVID).
+- The projection knows nothing about transfers (the repo has no transfer-portal data), coaching
+  changes or returning starters; the prior SRS stands in for all of them.
+- Recruit-scoring ideas (committed-school credit, top offers only, stars, position weights,
+  class size) are tested in RESEARCH_VARIANTS.md (research_variants.py); none was adopted.
 - Basketball is not part of this study: men's basketball is evaluated in RESEARCH_MBB.md
   (research_mbb.py); women's basketball is untested.
 
 ## Run log
 
 ```
-[19:20:41] targets for classes 2012-2022; games 12075
-[19:20:41] benchmarks done
-[19:20:41] reused 252 grid points from data/research/grid.json
-[19:20:41] defaults chosen on 2012-2018: {'rank_decay': 0.95, 'quality_power': 0.5, 'l2_reg': 0.5, 'prestige_years': 1}
-[19:20:48] projection on dev: {'a': 25.6248757331267, 'b': -6.557114206566784, 'sd': 6.530118976223277, 'mae': 4.844626034346514, 'bias': -0.09807332981890432, 'n': 513, 'in_80': 0.8382066276803118}
-[19:20:48] wrote data/backtest.csv (513 rows, classes 2019-2022)
-[19:20:48] finished in 6s
+[10:13:27] targets for classes 2012-2022; games 12075
+[10:13:27] benchmarks done
+[10:13:27] reused 252 grid points from data/research/grid.json
+[10:13:27] defaults chosen on 2012-2018: {'rank_decay': 0.95, 'quality_power': 0.5, 'l2_reg': 0.5, 'prestige_years': 1}
+[10:13:33] projection on dev: {'a': 25.6248757331267, 'b': -6.557114206566784, 'sd': 6.530118976223277, 'mae': 4.844626034346514, 'bias': -0.09807332981890432, 'n': 513, 'in_80': 0.8382066276803118}
+[10:13:34] projection: dev leave-one-class-out picks 1 prior seasons (adopt True), roster 4 classes (adopt False)
+[10:13:34] projection walk-forward 2018-2022: rank only MAE 4.96, + 1-season prior 4.48, roster 4 4.36
+[10:13:34] wrote data/outcomes/fbs_team_srs.csv (seasons 2012-2025)
+[10:13:34] wrote data/backtest.csv (513 rows, classes 2019-2022)
+[10:13:34] finished in 7s
 ```

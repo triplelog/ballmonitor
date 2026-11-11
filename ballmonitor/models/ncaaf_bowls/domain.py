@@ -128,6 +128,9 @@ class TeamSimState:
     cfp_seed: int | None = None
     cfp_bye: bool = False
     assigned_bowl: str | None = None
+    # The rating everyone can see (the data's). `team.rating` is the strength this simulated
+    # season plays with: the published rating plus this season's drawn rating error.
+    published_rating: float | None = None
 
     @property
     def id(self) -> str:
@@ -144,6 +147,11 @@ class TeamSimState:
     @property
     def rating(self) -> float:
         return self.team.rating
+
+    @property
+    def seen_rating(self) -> float:
+        """What the committee and the bowls go by: the published rating."""
+        return self.team.rating if self.published_rating is None else self.published_rating
 
     @property
     def total_games(self) -> int:

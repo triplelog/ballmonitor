@@ -44,7 +44,9 @@ Cade Cunningham 2021 (20.2 pts). On3 school names are matched to barttorvik name
 `src/mbb_names.py` (99.2% of commits; the rest are G League / pro / non-D-I schools).
 
 Evaluation data (football): `data/outcomes/fbs_games.csv` (12,075 completed games
-involving FBS teams, 2012–2025, ESPN scoreboard API) and
+involving FBS teams, 2012–2025, ESPN scoreboard API), `data/outcomes/fbs_team_srs.csv`
+(columns `season, team, srs`: each FBS program's SRS for seasons 2012–2025, written by
+`research.py` from those games; the model reads it for the projection's prior strength) and
 `data/benchmarks/consensus_team_rankings.csv` (On3 industry-consensus team class ranks,
 football 2012–2027, MBB 2014–2027; blends On3, 247Sports, Rivals and ESPN; pre-2021
 classes were compiled by On3 after the fact). Rivals top-100
@@ -89,11 +91,22 @@ Instead of relying on subjective human recruiting analysts who may have regional
    score. The weight table lives in `src/position_model.py` (judgement, not in config).
 
 6. **Projected team strength (football):** config formula **`projected_srs`**
-   (`proj_intercept + proj_slope * log(rank)`) turns the national class rank into the
-   expected mean SRS (points per game vs an average FBS team) over the class's four
-   seasons, with a `projection_level` range of ± z · `projection_sd`. The line was fitted
-   on 2012–2018 classes in `research.py`. `prestige_years` > 1 also fits prestige on the
-   previous classes' offer battles (known at signing); only this class is scored.
+   (`proj_intercept + proj_slope * log(rank) + proj_prior_weight * prior_srs`) turns the
+   national class rank and the program's own recent strength into the expected mean SRS
+   (points per game vs an average FBS team) over the class's four seasons, with a
+   `projection_level` range of ± z · `projection_sd`.
+   - `prior_srs` is the program's mean SRS over the last `proj_prior_seasons` seasons before
+     the class (default 1: season Y−1, which is over when class Y signs), read from
+     `data/outcomes/fbs_team_srs.csv`. A class newer than the game data (2027) uses the
+     latest season there is and says so in the steps; a program with no rated FBS season in
+     the window gets `proj_prior_default`; a class with no earlier season in the data at all
+     (2012) gets no projection.
+   - `rank` is this class's national rank, or with `proj_roster_classes` > 1 the geometric
+     mean of the program's class ranks over this class and the ones before it (the classes
+     on the roster; a class with no commits counts as one place below last).
+   - The line was fitted on 2013–2018 classes in `research.py`.
+   `prestige_years` > 1 also fits prestige on the previous classes' offer battles (known at
+   signing); only this class is scored.
 
 7. **Signing Day Forecasting & What-If Scenario Overrides:**
    (Standalone `forecast.py` only; not in `ballmonitor run`.) Prior to signing day, predicts the destination of uncommitted prospects and forecasts final class standings:
@@ -115,9 +128,27 @@ opponent-adjusted margin rating from ESPN scores, margins capped at ±28, comput
 model reads `year`, `team`, `future_srs`) holds the 513 FBS program-classes of the
 **holdout classes 2019–2022**. No default and no projection coefficient was chosen with
 them. `ballmonitor backtest ncaaf_recruiting` scores the projected SRS (`score()` is
-overridden): MAE 4.84 points/game (per year 5.06 / 4.84 / 4.43 / 5.05), bias −0.1,
-80% range covers 84%. Benchmarks on the same rows (RESEARCH.md): industry consensus rank
-4.69, mean commit stars 5.41, no-information mean 6.68.
+overridden):
+
+| projection | MAE, points/game | by class year 2019 / 20 / 21 / 22 | bias | 80% range covers |
+|---|---:|---|---:|---:|
+| **default (v0.7.0): class rank + prior-season SRS** | **4.44** | 4.74 / 3.90 / 4.51 / 4.60 | 0.0 | 81% |
+| variant `class_rank_only` (the v0.4.0–v0.6.0 default) | 4.84 | 5.06 / 4.84 / 4.43 / 5.05 | −0.1 | 84% |
+| variant `roster_four_classes` | 4.30 | 4.63 / 3.77 / 4.32 / 4.46 | 0.0 | 82% |
+| consensus rank + prior-season SRS (benchmark, RESEARCH.md) | 4.41 | | | |
+| prior-season SRS alone (no recruiting) | 5.21 | | | |
+| no-information mean | 6.68 | | | |
+
+Those coefficients were fitted on classes 2013–2018, whose targets run to the 2021 season,
+so the holdout is not strictly walk-forward. The strict version (coefficients for class Y
+fitted on classes ≤ Y−4 only; test classes 2018–2022 = **5 class years, 640
+program-classes, 131 programs, about 2 non-overlapping four-season periods**): class rank
+only 4.96 → with prior-season SRS **4.48** (−0.48, 95% interval −0.75 to −0.22 from a
+bootstrap over programs; better in 4 of 5 class years, slightly worse for 2021) → with the
+four-class roster rank 4.36 (a further −0.13, interval −0.24 to −0.01, 5 of 5 years; below
+the 0.2 adoption margin set on the development classes, so it stays a variant). Prior SRS
+alone scores 5.16 and the consensus rank + prior 4.46: once the program's strength is
+known, the offer model and the consensus forecast equally well.
 
 Ranking agreement (Spearman ρ within each class year, vs 4-season SRS; walk-forward
 where params for class Y are chosen on classes ≤ Y−4; test classes 2017–2022 =
@@ -136,7 +167,11 @@ Honest summary: offers alone rank programs about as well as star averages and be
 than Rivals' top-100 list, but **below the industry consensus in all 6 test years** (by
 ~0.02 ρ, about one standard error). The parameter surface is flat: no grid point beat
 the v0.3.0 defaults by the 0.01 ρ adoption margin on the development classes, so they
-were kept. The old `evaluate.py` FEI study (in-sample, r = −0.661 on 2012–2017) is
+were kept. Structural changes are flat too (**RESEARCH_VARIANTS.md**,
+`research_variants.py`, v0.7.0): crediting the committed school, counting only a recruit's
+strongest offers, a star blend, quarterback or line weights, counting only the best N
+commits and blending in the class average each moved the walk-forward ρ by −0.004 to
++0.003 (the star blend was the +0.003), so the class ranking is unchanged in v0.7.0. The old `evaluate.py` FEI study (in-sample, r = −0.661 on 2012–2017) is
 superseded. Men's basketball is evaluated separately (below and RESEARCH_MBB.md).
 
 ## Men's basketball evaluation (v0.5.0)
@@ -267,15 +302,28 @@ WBB therefore stays unvalidated for the offer model; use ESPN grades for class s
   later and the commit is where the player enrolled (Enrolled > Signed > Committed),
   which was not always known on signing day. Transfer-portal era (2021+ classes) and
   the COVID 2020-21 season weaken the link between a class and team strength.
-- The projection uses only the class rank; it ignores the existing roster, transfers
-  and coaching, and the 2022+ files (On3-ranked recruits only) may shift ranks of
+- The projection uses the class rank and the program's SRS in the season before; it
+  ignores transfers (no transfer-portal data in the repo), coaching changes, returning
+  starters and, by default, the other classes on the roster (variant
+  `roster_four_classes`). Because it leans on last season, it is slow for programs that
+  change quickly. Classes 2026 and 2027 are projected with a line fitted on 2013–2018
+  classes, before the transfer-portal era. The 2027 class uses the 2025 season as prior
+  strength until 2026 scores are fetched and `research.py` is re-run. The 2022+ files (On3-ranked recruits only) may shift ranks of
   programs that sign many unranked players (service academies).
 - The sequential Elo method ignores `rank_decay`, `quality_power` and `recruit_points`
   and has its own hard-coded k-factor / benchmark tiers (`src/elo_engine.py`).
 
 ## Variants
 
-None yet (RESEARCH.md shows no tested setting is better out of sample). Try `--set rank_decay=0.9` or `--set 'formulas.recruit_points=rating'` (no decay).
+- `class_rank_only` — the v0.4.0–v0.6.0 projection: class rank alone, no prior strength
+  (holdout MAE 4.84 vs 4.44). Also the only way to get a projection for the 2012 class.
+- `roster_four_classes` — the projection uses the program's average class rank over the
+  four classes on the roster (holdout MAE 4.30; walk-forward gain 0.13 points/game, below
+  the adoption margin, so not the default).
+
+Both change only the projected SRS, not the class ranking. For the ranking, RESEARCH.md
+and RESEARCH_VARIANTS.md show no tested setting is better out of sample; try
+`--set rank_decay=0.9` or `--set 'formulas.recruit_points=rating'` (no decay).
 
 ## CLI Usage
 
@@ -314,6 +362,17 @@ python evaluate.py --start 2012 --end 2017
 - Rivals team rankings (`data/teams/football{year}.csv`, 2012–2022).
 
 ## Changelog
+
+- 0.7.0 — The projected 4-season SRS now also uses the program's own strength before the
+  class: formula `projected_srs` gains `+ proj_prior_weight * prior_srs` (new params
+  `proj_prior_weight` 0.36, `proj_prior_seasons` 1, `proj_prior_default` −11.3,
+  `proj_roster_classes` 1; refitted `proj_intercept` 25.62 → 15.35, `proj_slope` −6.56 →
+  −3.91, `projection_sd` 6.53 → 5.80). Holdout 2019–2022 MAE 4.84 → 4.44; strict
+  walk-forward 2018–2022 4.96 → 4.48 (RESEARCH.md). New data file
+  `data/outcomes/fbs_team_srs.csv`; new variants `class_rank_only` (the old line) and
+  `roster_four_classes`. The 2012 class has no projection by default (no 2011 scores).
+  Class scores and rankings are unchanged: new study `research_variants.py` →
+  RESEARCH_VARIANTS.md found no better way to score recruits or add up a class.
 
 - 0.6.0 (later addition, no default changes) — Women's basketball evaluation:
   `fetch.py build_wbb_espn` (ESPN classes 2012-2025) and `research_wbb.py` → RESEARCH_WBB.md.

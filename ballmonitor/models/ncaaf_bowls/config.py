@@ -23,16 +23,25 @@ class SimConfig:
     # When None the built-in normal-CDF margin model is used. model.py passes
     # the config.toml `win_probability` formula here so it drives every game.
     win_prob_fn: Callable[[float, int], float] | None = None
+    # Each simulated season gives every team's rating one shared error drawn from
+    # Normal(0, rating_uncertainty_points): today's rating is an estimate, and a team that is
+    # better (or worse) than rated is so in all of its remaining games. 0 = ratings are exact.
+    rating_uncertainty_points: float = 5.0
+    # SD of one game's margin once both teams' rating errors are drawn. model.py sets it from
+    # the config formula `simulated_game_sd`; None = derive it here the same way.
+    simulated_game_sd: float | None = None
 
     # --- CFP Selection Committee Proxy Weights ---
     # Committee ranks teams based on resume: record, power rating, conf championship, SOS
-    resume_win_pct_weight: float = 65.0      # Primary driver: 12-0 vs 11-1 vs 10-2
+    resume_win_pct_weight: float = 67.0      # Primary driver: 12-0 vs 11-1 vs 10-2
     resume_power_weight: float = 1.0         # Team strength (SP+/FPI margin)
-    resume_conf_champ_bonus: float = 8.0     # Bonus for winning a conference championship
-    resume_power4_bonus: float = 4.0         # Schedule strength advantage for P4 teams
+    resume_conf_champ_bonus: float = 0.0     # Bonus for winning a conference championship
+    resume_power4_bonus: float = 14.0         # Schedule strength advantage for P4 teams
     resume_loss_penalty_exponent: float = 1.5 # Progressive penalty for 3+ losses
-    resume_loss_penalty_scale: float = 3.5   # Points per (losses ** exponent)
-    resume_p4_champ_bonus: float = 3.0       # Extra bonus for a power-conference title
+    resume_loss_penalty_scale: float = 1.4   # Points per (losses ** exponent)
+    resume_p4_champ_bonus: float = 4.5       # Extra bonus for a power-conference title
+    # Committee unpredictability: Gumbel noise of this scale added to every resume score.
+    resume_noise_points: float = 3.7
 
     # --- Bowl Utility & Selection Preferences ---
     # Bowls pick available teams to maximize game attractiveness
@@ -55,5 +64,13 @@ class SimConfig:
     # --- Notre Dame ACC Clause ---
     # Notre Dame can take an ACC bowl slot if within 1 win of the best available ACC team
     notre_dame_acc_win_tolerance: int = 1
+
+    def game_sd(self) -> float:
+        """SD of a simulated game's margin given the drawn ratings, chosen so that one game
+        seen from the published ratings still has SD `margin_sd` (two rating errors per game)."""
+        if self.simulated_game_sd is not None:
+            return self.simulated_game_sd
+        return max(self.margin_sd ** 2 - 2.0 * self.rating_uncertainty_points ** 2, 1.0) ** 0.5
+
 
 DEFAULT_CONFIG = SimConfig()

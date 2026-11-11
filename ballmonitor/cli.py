@@ -306,7 +306,8 @@ def cmd_views(args: argparse.Namespace) -> int:
             size = {"table": lambda: f"{len(v['rows'])} rows x {len(v['columns'])} cols",
                     "bar": lambda: f"{len(v['items'])} bars",
                     "line": lambda: f"{len(v['series'])} lines, {sum(len(s['points']) for s in v['series'])} points",
-                    "picker": lambda: f"{len(v['options'])} options"}[v["kind"]]()
+                    "picker": lambda: f"{len(v['options'])} options",
+                    "app": lambda: f"interactive: static/apps/{v['app']}.js"}[v["kind"]]()
             print(f"{indent}- {v['kind']:<6} {v['title']}  ({size})")
             if v["kind"] == "picker":
                 show(v["options"][0]["views"], indent + "    ")

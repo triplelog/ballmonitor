@@ -412,7 +412,8 @@ def test_site_page(model):
 
     pg = site.page(model)
     assert views.check(pg) == []
-    picker, chart = pg["views"]
+    calculator, picker, chart = pg["views"]
+    assert calculator["kind"] == "app" and calculator["app"] == "race_time"   # tests/test_race_calc.py checks its numbers
     for opt in picker["options"]:
         rows = opt["views"][0]["rows"]
         # Slower 5K -> slower marathon, and the marathon is always slower than the half.

@@ -11,6 +11,13 @@ from ballmonitor.models.ncaaf_bowls.config import DATA_DIR, SimConfig
 from ballmonitor.models.ncaaf_bowls.engine import BowlEngine
 
 _DEFAULTS = SimConfig()
+# Numerical resolution of the cached win probabilities (rating points); 0.01 points moves a
+# win probability by less than 0.0005. Not a model parameter.
+WP_CACHE_STEP = 0.01
+# Single-game mode (inputs home_rating / away_rating): the `home` value passed to the
+# win_probability formula for each `site`, and the two outcome labels.
+GAME_SITES = {"home": 1, "neutral": 0}
+HOME_WINS, AWAY_WINS = "Home team wins", "Away team wins"
 
 
 class NcaafBowlsModel(BaseModel):
@@ -21,14 +28,22 @@ class NcaafBowlsModel(BaseModel):
         sims = int(simulations or p.simulations)
         seed = int(p.random_seed)
 
-        # Ratings are fixed within a run, so the same (diff, home) pairs recur
-        # thousands of times; cache the formula evaluation.
-        wp_cache: dict[tuple[float, int], float] = {}
+        # Inside the simulation each team's rating carries a drawn error
+        # (rating_uncertainty_points), so the game itself is a little less random: the same
+        # win_probability formula is evaluated with margin_sd replaced by simulated_game_sd.
+        game_sd = float(p.formula("simulated_game_sd"))
+        if not game_sd > 0:
+            raise ValueError(f"formula simulated_game_sd returned {game_sd!r}; it must be positive")
+
+        # The same (diff, home) pairs recur thousands of times; cache the formula on a
+        # WP_CACHE_STEP-point grid of rating differences.
+        wp_cache: dict[tuple[int, int], float] = {}
 
         def win_prob(rating_diff: float, home: int) -> float:
-            k = (rating_diff, home)
+            k = (round(rating_diff / WP_CACHE_STEP), home)
             if k not in wp_cache:
-                wp_cache[k] = float(p.formula("win_probability", rating_diff=rating_diff, home=home))
+                wp_cache[k] = float(p.formula(
+                    "win_probability", rating_diff=k[0] * WP_CACHE_STEP, home=home, margin_sd=game_sd))
             return wp_cache[k]
 
         sample_wp = win_prob(7.0, 1)
@@ -44,10 +59,50 @@ class NcaafBowlsModel(BaseModel):
             for f in fields(SimConfig)
             if f.name in p.specs and f.name != "win_prob_fn"
         }
-        cfg = SimConfig(**{**overrides, "simulations": sims, "random_seed": seed, "win_prob_fn": win_prob})
+        cfg = SimConfig(**{**overrides, "simulations": sims, "random_seed": seed,
+                           "win_prob_fn": win_prob, "simulated_game_sd": game_sd})
         return BowlEngine(config=cfg, ratings_source=str(p.ratings_source))
 
+    def _predict_game(self, inputs: dict[str, Any]) -> Prediction:
+        """One game from two published ratings (inputs home_rating, away_rating, site): the
+        win_probability formula on its own. This is what data/backtest.csv scores."""
+        p = self.params
+        site = str(inputs.get("site", "home")).strip().lower()
+        if site not in GAME_SITES:
+            raise ValueError(f"input 'site' must be one of {sorted(GAME_SITES)}, not {site!r}")
+        home_name = str(inputs.get("home", "Home team"))
+        away_name = str(inputs.get("away", "Away team"))
+        diff = float(inputs["home_rating"]) - float(inputs["away_rating"])
+        p_home = float(p.formula("win_probability", rating_diff=diff, home=GAME_SITES[site]))
+        if not 0.0 <= p_home <= 1.0:
+            raise ValueError(f"formula win_probability returned {p_home!r}; it must give a probability in [0, 1]")
+        return self.prediction(
+            inputs={"Game": f"{away_name} at {home_name}" + (" (neutral site)" if site == "neutral" else ""),
+                    "Ratings": f"{float(inputs['home_rating']):+.1f} / {float(inputs['away_rating']):+.1f}"},
+            outcomes=[
+                Outcome(label=HOME_WINS, probability=p_home, fmt="pct", group="Game", note=home_name),
+                Outcome(label=AWAY_WINS, probability=1.0 - p_home, fmt="pct", group="Game", note=away_name),
+            ],
+            steps=[
+                f"Rating gap (home - away): {diff:+.1f} points; site: {site}",
+                f"Win probability: {p.expr('win_probability')} (home={float(p.home_field_points):.1f}, "
+                f"sd={float(p.margin_sd):.1f}) = {p_home:.1%}",
+            ],
+            extras={"rating_diff": round(diff, 3), "p_home": round(p_home, 4)},
+        )
+
+    def backtest_case(self, row: dict[str, str]) -> tuple[dict[str, Any], Any]:
+        """data/backtest.csv: one past game with the FPI published before it (RESEARCH.md)."""
+        inputs = {"home": row["home"], "away": row["away"], "home_rating": float(row["home_rating"]),
+                  "away_rating": float(row["away_rating"]), "site": row["site"]}
+        return inputs, HOME_WINS if row["winner"] == "home" else AWAY_WINS
+
+    def backtest_group(self, row: dict[str, str]) -> str | None:
+        return row.get("kind") or None
+
     def predict(self, inputs: dict[str, Any]) -> Prediction:
+        if "home_rating" in inputs or "away_rating" in inputs:
+            return self._predict_game(inputs)
         p = self.params
         team_input = str(inputs.get("team", "Georgia")).strip()
         if not team_input:
@@ -173,7 +228,11 @@ class NcaafBowlsModel(BaseModel):
             f"Ratings: {p.ratings_source} (FCS opponents {engine.config.fcs_opponent_rating:+.1f})",
             f"Win probability: {p.expr('win_probability')} "
             f"(home={home_points:.1f}, sd={margin_sd:.1f}; P(win | +7, home) = {sample_wp:.1%})",
+            f"Rating uncertainty: each season shifts every team's rating by Normal(0, "
+            f"{float(p.rating_uncertainty_points):.1f}) for all its games; game SD inside the simulation "
+            f"{p.expr('simulated_game_sd')} = {engine.config.game_sd():.1f}",
             f"Ran {sims} Monte Carlo seasons (seed={seed}): regular season, conference title games",
+            f"Committee ranking: resume score + Gumbel noise of scale {float(p.resume_noise_points):.1f}",
             "Applied 12-team CFP selection (P4 champions + best Group-of-6 champion + 7 at-large; "
             "straight seeding, top 4 ranked get byes)",
             f"Ran conference bowl tie-in selection across {len(res.bowl_summaries)} bowls and simulated every game",

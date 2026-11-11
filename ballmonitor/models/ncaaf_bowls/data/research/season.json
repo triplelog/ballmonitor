@@ -1,0 +1,469 @@
+{
+ "sims": 3000,
+ "rows": [
+  {
+   "season": 2024,
+   "after_week": 4,
+   "teams": 134,
+   "games_left": 559,
+   "field": 12,
+   "champions": 9,
+   "old": {
+    "field": {
+     "brier_sum": 7.204946444444444,
+     "log_loss_sum": 25.507575211357445
+    },
+    "champ": {
+     "brier_sum": 9.094156888888888,
+     "log_loss_sum": 32.189260038950145
+    }
+   },
+   "sigma_only": {
+    "field": {
+     "brier_sum": 7.015010888888889,
+     "log_loss_sum": 24.32451658720511
+    },
+    "champ": {
+     "brier_sum": 8.679827777777778,
+     "log_loss_sum": 30.71505871489699
+    }
+   },
+   "weights_only": {
+    "field": {
+     "brier_sum": 7.169462666666667,
+     "log_loss_sum": 26.400013332253806
+    },
+    "champ": {
+     "brier_sum": 9.094156888888888,
+     "log_loss_sum": 32.189260038950145
+    }
+   },
+   "new": {
+    "field": {
+     "brier_sum": 6.984040666666666,
+     "log_loss_sum": 24.20354387676811
+    },
+    "champ": {
+     "brier_sum": 8.722511333333333,
+     "log_loss_sum": 31.200564087277026
+    }
+   },
+   "espn": {
+    "field": {
+     "brier_sum": 6.987392,
+     "log_loss_sum": 23.78087494786609
+    },
+    "champ": {
+     "brier_sum": 8.479632,
+     "log_loss_sum": 30.127670621198885
+    }
+   }
+  },
+  {
+   "season": 2024,
+   "after_week": 7,
+   "teams": 134,
+   "games_left": 403,
+   "field": 12,
+   "champions": 9,
+   "old": {
+    "field": {
+     "brier_sum": 4.785106444444445,
+     "log_loss_sum": 16.08998319676134
+    },
+    "champ": {
+     "brier_sum": 7.922515111111111,
+     "log_loss_sum": 26.866253059269894
+    }
+   },
+   "sigma_only": {
+    "field": {
+     "brier_sum": 4.647251777777778,
+     "log_loss_sum": 15.355136625975684
+    },
+    "champ": {
+     "brier_sum": 7.650121111111112,
+     "log_loss_sum": 25.56617232604418
+    }
+   },
+   "weights_only": {
+    "field": {
+     "brier_sum": 4.7575431111111115,
+     "log_loss_sum": 15.879308546715485
+    },
+    "champ": {
+     "brier_sum": 7.922515111111111,
+     "log_loss_sum": 26.866253059269894
+    }
+   },
+   "new": {
+    "field": {
+     "brier_sum": 4.6770640000000006,
+     "log_loss_sum": 15.163645653103117
+    },
+    "champ": {
+     "brier_sum": 7.644589333333333,
+     "log_loss_sum": 25.5605589516561
+    }
+   },
+   "espn": {
+    "field": {
+     "brier_sum": 4.919614,
+     "log_loss_sum": 16.154362363191748
+    },
+    "champ": {
+     "brier_sum": 7.455902,
+     "log_loss_sum": 25.36981956063287
+    }
+   }
+  },
+  {
+   "season": 2024,
+   "after_week": 10,
+   "teams": 134,
+   "games_left": 238,
+   "field": 12,
+   "champions": 9,
+   "old": {
+    "field": {
+     "brier_sum": 4.131117777777778,
+     "log_loss_sum": 15.861251883485371
+    },
+    "champ": {
+     "brier_sum": 7.458262222222222,
+     "log_loss_sum": 24.0878833771804
+    }
+   },
+   "sigma_only": {
+    "field": {
+     "brier_sum": 4.1146024444444445,
+     "log_loss_sum": 14.886039880415158
+    },
+    "champ": {
+     "brier_sum": 7.286236000000001,
+     "log_loss_sum": 23.010399068993085
+    }
+   },
+   "weights_only": {
+    "field": {
+     "brier_sum": 4.383342888888889,
+     "log_loss_sum": 16.191697059795967
+    },
+    "champ": {
+     "brier_sum": 7.458262222222222,
+     "log_loss_sum": 24.0878833771804
+    }
+   },
+   "new": {
+    "field": {
+     "brier_sum": 4.215901111111111,
+     "log_loss_sum": 14.587578322032675
+    },
+    "champ": {
+     "brier_sum": 7.350765333333333,
+     "log_loss_sum": 23.097893469019027
+    }
+   },
+   "espn": {
+    "field": {
+     "brier_sum": 4.474095,
+     "log_loss_sum": 16.00924792561032
+    },
+    "champ": {
+     "brier_sum": 7.666088,
+     "log_loss_sum": 25.575761451992516
+    }
+   }
+  },
+  {
+   "season": 2024,
+   "after_week": 12,
+   "teams": 134,
+   "games_left": 133,
+   "field": 12,
+   "champions": 9,
+   "old": {
+    "field": {
+     "brier_sum": 3.7552135555555557,
+     "log_loss_sum": 11.009766490427346
+    },
+    "champ": {
+     "brier_sum": 7.215530666666667,
+     "log_loss_sum": 21.323268744090903
+    }
+   },
+   "sigma_only": {
+    "field": {
+     "brier_sum": 3.785636888888889,
+     "log_loss_sum": 11.055129013731682
+    },
+    "champ": {
+     "brier_sum": 7.320703333333333,
+     "log_loss_sum": 21.61547348381357
+    }
+   },
+   "weights_only": {
+    "field": {
+     "brier_sum": 3.9042802222222224,
+     "log_loss_sum": 11.123743856139143
+    },
+    "champ": {
+     "brier_sum": 7.215530666666667,
+     "log_loss_sum": 21.323268744090903
+    }
+   },
+   "new": {
+    "field": {
+     "brier_sum": 4.075586444444444,
+     "log_loss_sum": 11.631679769701563
+    },
+    "champ": {
+     "brier_sum": 7.283028,
+     "log_loss_sum": 21.484328451964604
+    }
+   },
+   "espn": {
+    "field": {
+     "brier_sum": 3.637015,
+     "log_loss_sum": 10.665946930211762
+    },
+    "champ": {
+     "brier_sum": 7.146633,
+     "log_loss_sum": 20.63720709365749
+    }
+   }
+  },
+  {
+   "season": 2025,
+   "after_week": 4,
+   "teams": 136,
+   "games_left": 568,
+   "field": 12,
+   "champions": 9,
+   "old": {
+    "field": {
+     "brier_sum": 6.032561555555556,
+     "log_loss_sum": 20.35962092422526
+    },
+    "champ": {
+     "brier_sum": 8.478609111111112,
+     "log_loss_sum": 31.287241659707735
+    }
+   },
+   "sigma_only": {
+    "field": {
+     "brier_sum": 6.049138444444445,
+     "log_loss_sum": 20.049298140624263
+    },
+    "champ": {
+     "brier_sum": 8.278437777777778,
+     "log_loss_sum": 30.17171503219368
+    }
+   },
+   "weights_only": {
+    "field": {
+     "brier_sum": 5.911142444444445,
+     "log_loss_sum": 20.445518130458993
+    },
+    "champ": {
+     "brier_sum": 8.478609111111112,
+     "log_loss_sum": 31.287241659707735
+    }
+   },
+   "new": {
+    "field": {
+     "brier_sum": 5.998804666666667,
+     "log_loss_sum": 20.378885582939386
+    },
+    "champ": {
+     "brier_sum": 8.174785333333334,
+     "log_loss_sum": 29.677501715658817
+    }
+   },
+   "espn": {
+    "field": {
+     "brier_sum": 5.5860330000000005,
+     "log_loss_sum": 19.881563947871914
+    },
+    "champ": {
+     "brier_sum": 8.42225,
+     "log_loss_sum": 29.779792098268448
+    }
+   }
+  },
+  {
+   "season": 2025,
+   "after_week": 7,
+   "teams": 136,
+   "games_left": 408,
+   "field": 12,
+   "champions": 9,
+   "old": {
+    "field": {
+     "brier_sum": 4.758472888888889,
+     "log_loss_sum": 16.726517716137195
+    },
+    "champ": {
+     "brier_sum": 6.8845773333333335,
+     "log_loss_sum": 21.00600923564954
+    }
+   },
+   "sigma_only": {
+    "field": {
+     "brier_sum": 4.7471177777777775,
+     "log_loss_sum": 16.17468040621644
+    },
+    "champ": {
+     "brier_sum": 6.7984395555555555,
+     "log_loss_sum": 21.0331438200489
+    }
+   },
+   "weights_only": {
+    "field": {
+     "brier_sum": 4.7222,
+     "log_loss_sum": 17.991742928794153
+    },
+    "champ": {
+     "brier_sum": 6.8845773333333335,
+     "log_loss_sum": 21.00600923564954
+    }
+   },
+   "new": {
+    "field": {
+     "brier_sum": 4.823318222222222,
+     "log_loss_sum": 17.08423754294627
+    },
+    "champ": {
+     "brier_sum": 6.841843111111111,
+     "log_loss_sum": 21.164466808752373
+    }
+   },
+   "espn": {
+    "field": {
+     "brier_sum": 4.062926,
+     "log_loss_sum": 15.482926821839879
+    },
+    "champ": {
+     "brier_sum": 6.445506,
+     "log_loss_sum": 19.565673450772653
+    }
+   }
+  },
+  {
+   "season": 2025,
+   "after_week": 10,
+   "teams": 136,
+   "games_left": 243,
+   "field": 12,
+   "champions": 9,
+   "old": {
+    "field": {
+     "brier_sum": 4.224390888888889,
+     "log_loss_sum": 15.601603073786093
+    },
+    "champ": {
+     "brier_sum": 6.331771111111111,
+     "log_loss_sum": 21.111947869953845
+    }
+   },
+   "sigma_only": {
+    "field": {
+     "brier_sum": 4.265512444444444,
+     "log_loss_sum": 15.424948071173866
+    },
+    "champ": {
+     "brier_sum": 6.325934222222222,
+     "log_loss_sum": 21.051071938907413
+    }
+   },
+   "weights_only": {
+    "field": {
+     "brier_sum": 4.377567111111111,
+     "log_loss_sum": 15.788720712079465
+    },
+    "champ": {
+     "brier_sum": 6.331771111111111,
+     "log_loss_sum": 21.111947869953845
+    }
+   },
+   "new": {
+    "field": {
+     "brier_sum": 4.422029111111111,
+     "log_loss_sum": 15.71380039593273
+    },
+    "champ": {
+     "brier_sum": 6.2990288888888895,
+     "log_loss_sum": 20.74211909338391
+    }
+   },
+   "espn": {
+    "field": {
+     "brier_sum": 4.435048,
+     "log_loss_sum": 14.608223954823965
+    },
+    "champ": {
+     "brier_sum": 6.085508,
+     "log_loss_sum": 19.320536940555602
+    }
+   }
+  },
+  {
+   "season": 2025,
+   "after_week": 12,
+   "teams": 136,
+   "games_left": 132,
+   "field": 12,
+   "champions": 9,
+   "old": {
+    "field": {
+     "brier_sum": 4.111092666666667,
+     "log_loss_sum": 13.485158325278725
+    },
+    "champ": {
+     "brier_sum": 6.386649333333334,
+     "log_loss_sum": 22.16153100923637
+    }
+   },
+   "sigma_only": {
+    "field": {
+     "brier_sum": 4.170461777777778,
+     "log_loss_sum": 13.962430381313617
+    },
+    "champ": {
+     "brier_sum": 6.3791722222222225,
+     "log_loss_sum": 22.43383442977554
+    }
+   },
+   "weights_only": {
+    "field": {
+     "brier_sum": 4.057091333333333,
+     "log_loss_sum": 13.401013927716686
+    },
+    "champ": {
+     "brier_sum": 6.386649333333334,
+     "log_loss_sum": 22.16153100923637
+    }
+   },
+   "new": {
+    "field": {
+     "brier_sum": 3.9440306666666665,
+     "log_loss_sum": 12.085095604050618
+    },
+    "champ": {
+     "brier_sum": 6.424486222222223,
+     "log_loss_sum": 22.466858544566943
+    }
+   },
+   "espn": {
+    "field": {
+     "brier_sum": 3.155769,
+     "log_loss_sum": 9.891499204813814
+    },
+    "champ": {
+     "brier_sum": 6.333581000000001,
+     "log_loss_sum": 19.699211070907094
+    }
+   }
+  }
+ ]
+}

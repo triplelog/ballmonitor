@@ -148,3 +148,132 @@ def test_site_bubble_field_and_bracket_agree():
     cuts = model.params.site_bubble_cuts
     assert all(r["cfp"] >= cuts[-1] for r in v["bubble"]["rows"])
     assert p["headline"] and "title favorite" in p["headline"]
+
+
+def test_single_game_mode_hand_check_and_backtest_rows():
+    m = _model()
+    # +7 on a neutral field, SD 14: Phi(0.5) = 0.6915; at home (+2.5): Phi(9.5 / 14) = 0.7513
+    neutral = m.predict({"home_rating": 10.0, "away_rating": 3.0, "site": "neutral"})
+    assert neutral.primary.probability == pytest.approx(0.6915, abs=1e-3)
+    home = m.predict({"home_rating": 10.0, "away_rating": 3.0})
+    assert home.primary.probability == pytest.approx(0.7513, abs=1e-3)
+    assert sum(o.probability for o in home.outcomes) == pytest.approx(1.0)
+    with pytest.raises(ValueError, match="site"):
+        m.predict({"home_rating": 1.0, "away_rating": 0.0, "site": "moon"})
+    inputs, actual = m.backtest_case({"home": "A", "away": "B", "home_rating": "4.5", "away_rating": "10.6",
+                                      "site": "home", "winner": "away", "kind": "regular season"})
+    assert actual in {o.label for o in m.predict(inputs).outcomes}
+
+
+def test_simulated_game_sd_keeps_single_game_spread():
+    # margin_sd^2 = simulated_game_sd^2 + 2 * rating_uncertainty_points^2: 14^2 - 2 * 5^2 = 146
+    p = _model(margin_sd=14.0, rating_uncertainty_points=5.0).params
+    assert p.formula("simulated_game_sd") == pytest.approx(146 ** 0.5)
+    assert _model(rating_uncertainty_points=0.0).params.formula("simulated_game_sd") == pytest.approx(
+        _model().params.margin_sd)
+
+
+def test_rating_uncertainty_widens_the_range_of_records():
+    def spread(sigma):
+        res = registry.load_model(
+            "ncaaf_bowls", overrides={"rating_uncertainty_points": sigma, "resume_noise_points": 0.0}
+        ).engine(400).run(num_sims=400)
+        out = []
+        for t in res.team_summaries.values():
+            mean = sum(w * pr for (w, _), pr in t.record_dist.items())
+            out.append(sum((w - mean) ** 2 * pr for (w, _), pr in t.record_dist.items()))
+        return sum(out) / len(out)
+    assert spread(6.0) > spread(0.0) * 1.05
+
+
+def test_committee_sees_published_rating_and_noise_reorders():
+    teams = [Team(f"t{i}", f"T{i}", "SEC", 10.0 + i, 990, 8, "X", "ST", 30.0, -85.0, 8, 2, 5, 2) for i in range(6)]
+    exact = SimConfig(rating_uncertainty_points=6.0, resume_noise_points=0.0)
+    states = SeasonSimulator(teams, [], exact).simulate_season(random.Random(3))
+    non_champs = [s for s in states.values() if not s.is_conf_champ and not s.conf_runner_up]
+    # same record, no noise: ranked by the published rating whatever was drawn for the games
+    assert sorted(non_champs, key=lambda s: s.resume_score) == sorted(non_champs, key=lambda s: s.published_rating)
+    assert any(abs(s.rating - s.published_rating) > 0.5 for s in states.values())
+    noisy = SimConfig(rating_uncertainty_points=0.0, resume_noise_points=10.0)
+    orders = set()
+    for seed in range(8):
+        st = SeasonSimulator(teams, [], noisy).simulate_season(random.Random(seed))
+        orders.add(tuple(sorted(st, key=lambda k: st[k].resume_score)))
+    assert len(orders) > 1
+
+
+# ── who to root for this week (site.py) ─────────────────────────────────────────
+
+def test_this_week_is_the_next_week_with_games_still_to_play():
+    import datetime as dt
+
+    from ballmonitor.models.ncaaf_bowls import site
+    sched = [
+        {"home": "a", "away": "b", "week": 10, "date": "2026-11-08"},    # last week, not in the results yet
+        {"home": "c", "away": "d", "week": 11, "date": "2026-11-14"},
+        {"home": "e", "away": "fcs_x", "week": 11, "date": "2026-11-14"},  # FCS opponent: not tracked
+        {"home": "f", "away": "g", "week": 11, "date": "2026-11-15"},
+        {"home": "h", "away": "i", "week": 12, "date": "2026-11-21"},
+    ]
+    games, when = site.this_week(sched, today=dt.date(2026, 11, 11))
+    assert games == [1, 3] and when == "Nov 14-15"
+    assert site.this_week(sched, today=dt.date(2026, 12, 31)) == ([], "")
+
+
+def test_tracked_games_split_each_teams_chances_consistently():
+    """The overall chance is the mix of the two conditional chances, and a contender's own game
+    moves its playoff chance the right way."""
+    import json
+
+    from ballmonitor.models.ncaaf_bowls import site
+    model = registry.load_model("ncaaf_bowls")
+    schedule = json.loads((model.dir / "data" / "schedule.json").read_text())
+    fbs = [i for i, g in enumerate(schedule) if not (g["home"].startswith("fcs_") or g["away"].startswith("fcs_"))]
+    games = fbs[:6]
+    n = 600
+    res = model.engine(n).run(num_sims=n, track_games=games)
+    assert set(res.game_tallies) == set(games)
+    for g in games:
+        tally = res.game_tallies[g]
+        assert 0 < tally.home_wins < n
+        for team_id, s in res.team_summaries.items():
+            total = round(s.p_cfp * n)
+            p_home, p_away, n_home, n_away = tally.split(tally.cfp_if_home[team_id], total, n)
+            assert p_home * n_home + p_away * n_away == pytest.approx(total)
+        home = res.team_summaries[tally.home]
+        if 0.05 < home.p_cfp < 0.95:   # a contender is likelier to make it when it wins
+            p_home, p_away, *_ = tally.split(tally.cfp_if_home[tally.home], round(home.p_cfp * n), n)
+            assert p_home > p_away
+
+
+def test_root_for_lists_the_teams_own_game_first_and_skips_noise():
+    import json
+
+    from ballmonitor.models.ncaaf_bowls import site
+    model = registry.load_model("ncaaf_bowls")
+    schedule = json.loads((model.dir / "data" / "schedule.json").read_text())
+    games, _ = site.this_week(schedule, today=__import__("datetime").date.fromisoformat(
+        min(g["date"] for g in schedule)))
+    if not games:
+        pytest.skip("no games left in the schedule")
+    res = model.engine(2000).run(num_sims=2000, track_games=games)
+    names = {t["id"]: t["name"] for t in json.loads((model.dir / "data" / "teams.json").read_text())}
+    p = model.params
+    shown = 0
+    for team_id, s in res.team_summaries.items():
+        what, rows = site.root_for(team_id, s, res, schedule, games, names, p)
+        if not rows:
+            continue
+        shown += 1
+        assert what in ("playoff", "conference title") and len(rows) <= int(p.site_root_rows)
+        plays = [g for g in games if team_id in (schedule[g]["home"], schedule[g]["away"])]
+        if plays:   # its own game first, rooting for itself
+            assert rows[0]["root"] == s.team_name
+        for r in rows[1 if plays else 0:]:   # someone else's game: listed only for the side that helps
+            assert r["if_win"] >= r["if_lose"] and r["diff"] == pytest.approx(r["if_win"] - r["if_lose"])
+    assert shown > 0
+    # a team with no realistic chance at the playoff or its conference gets no table
+    hopeless = next((t for t, s in res.team_summaries.items()
+                     if s.p_cfp < float(p.site_root_min_chance) and s.p_conf_champ < float(p.site_root_min_chance)), None)
+    if hopeless:
+        assert site.root_for(hopeless, res.team_summaries[hopeless], res, schedule, games, names, p) == ("", [])

@@ -1,6 +1,6 @@
 [meta]
 title = "College recruiting rankings"
-version = "0.6.0"
+version = "0.7.0"
 status = "calibrated"  # football: data/backtest.csv + RESEARCH.md; MBB evaluated in RESEARCH_MBB.md (no projection, no backtest rows); WBB untested
 question = "How strong is a program's football recruiting class, judged from head-to-head scholarship offer battles?"
 description = "Global Plackett-Luce choice model inferring program recruiting prestige from competitive scholarship offer networks, with diminishing roster depth decay and positional unit splits. Basketball (MBB/WBB) classes remain available from the CLI for research only (RESEARCH_MBB*.md, RESEARCH_WBB.md)."
@@ -10,7 +10,8 @@ assumptions = [
   "Class strength aggregates committed recruit scores with diminishing returns (rank_decay for football 85-man rosters; rotation_decay for basketball rotations).",
   "Offer lists come from on3.com profile scrapes and are incomplete for lower-ranked recruits; basketball files cover only roughly the top 80-410 recruits.",
   "Men's basketball (RESEARCH_MBB.md): the class score ranks programs' next-season strength (rho ~0.43-0.47) below the On3 consensus (~0.53-0.57) and far below last season's strength (~0.73); per recruit, offers add nothing beyond the industry rating.",
-  "Football only: the projected 4-season SRS is a straight line in ln(national class rank) fitted on 2012-2018 classes; it ignores the rest of the roster, transfers and coaching.",
+  "Football only: the projected 4-season SRS is a straight line in ln(national class rank) and the program's SRS in the season before the class, fitted on 2013-2018 classes; it ignores transfers, coaching changes and (by default) the other classes on the roster.",
+  "A class signed after the last season in the data (2027) uses the latest earlier season available as the program's prior strength.",
   "Classes marked in progress (2027) contain only the commitments known when the data was fetched.",
 ]
 
@@ -94,24 +95,52 @@ source = "RESEARCH.md (research.py): 1, 2 and 3 are within 0.003 rho on 2012-201
 range = [1, 3]
 
 [params.proj_intercept]
-value = 25.62
-description = "Football projected 4-season SRS at national class rank 1 (points per game vs an average FBS team)."
+value = 15.35
+description = "Football projected 4-season SRS for the national No. 1 class at a program whose prior SRS is 0 (points per game vs an average FBS team)."
 unit = "points/game"
-source = "RESEARCH.md (research.py): OLS of mean SRS (seasons Y..Y+3) on ln(rank), 2012-2018 classes; holdout 2019-2022 MAE 4.84."
+source = "RESEARCH.md (research.py), v0.7.0: OLS of mean SRS (seasons Y..Y+3) on ln(rank) and prior SRS, 2013-2018 classes; holdout 2019-2022 MAE 4.44 (class rank only: 4.84); strict walk-forward 2018-2022 MAE 4.48 vs 4.96."
 range = [0.0, 50.0]
 
 [params.proj_slope]
-value = -6.56
+value = -3.91
 description = "Football change in projected 4-season SRS per unit of ln(national class rank)."
 unit = "points/game"
-source = "RESEARCH.md (research.py): same fit as proj_intercept."
+source = "RESEARCH.md (research.py), v0.7.0: same fit as proj_intercept (was -6.56 when the rank was the only input)."
 range = [-20.0, 0.0]
 
+[params.proj_prior_weight]
+value = 0.36
+description = "Football: points of projected 4-season SRS per point of the program's prior SRS (its mean SRS over the proj_prior_seasons seasons before the class). 0 = project from the class rank alone."
+unit = "points per point"
+source = "RESEARCH.md (research.py), v0.7.0: same fit as proj_intercept. Walk-forward on 640 program-classes (2018-2022), adding it cut MAE by 0.48 points/game (95% interval 0.22 to 0.75; better in 4 of 5 class years)."
+range = [0.0, 1.0]
+
+[params.proj_prior_seasons]
+value = 1
+description = "Football: how many seasons before the class are averaged into the program's prior SRS (seasons missing from the data are skipped)."
+unit = "seasons"
+source = "RESEARCH.md (research.py), v0.7.0: best leave-one-class-out MAE on 2013-2018 classes; 1-4 seasons are within 0.03 points/game there (3-4 were about 0.07 better on later classes, seen only in hindsight)."
+range = [1, 4]
+
+[params.proj_prior_default]
+value = -11.3
+description = "Football: prior SRS assumed for a program with no rated FBS season in the window (new to FBS)."
+unit = "points/game"
+source = "RESEARCH.md (research.py), v0.7.0: mean first-season SRS of the 8 programs that joined FBS in 2013-2018."
+range = [-30.0, 10.0]
+
+[params.proj_roster_classes]
+value = 1
+description = "Football: classes whose national ranks are averaged (geometric mean) for the projection: 1 = this class only; 4 = this class and the three before it, the classes on the roster. Changing it needs refitted coefficients (variant roster_four_classes)."
+unit = "classes"
+source = "RESEARCH.md (research.py), v0.7.0: 4 classes cut walk-forward MAE by a further 0.13 points/game (95% interval 0.01 to 0.24), below the 0.2 adoption margin on 2013-2018 classes, so 1 is kept."
+range = [1, 4]
+
 [params.projection_sd]
-value = 6.53
+value = 5.80
 description = "Football residual standard deviation of the projection (sets the range around projected SRS)."
 unit = "points/game"
-source = "RESEARCH.md (research.py): residual sd on 2012-2018; 80% range covered 84% of 2019-2022 holdout cases."
+source = "RESEARCH.md (research.py), v0.7.0: residual sd on 2013-2018 classes; the 80% range covered 81% of 2019-2022 holdout cases."
 range = [0.0, 20.0]
 
 [params.projection_level]
@@ -138,6 +167,6 @@ description = "Class points of a recruit with score `rating` at within-class ran
 variables = ["rating", "rank", "decay"]
 
 [formulas.projected_srs]
-expr = "proj_intercept + proj_slope * log(rank)"
-description = "Football: expected mean SRS (points/game vs average FBS) over the class's four seasons, from its national class rank."
-variables = ["rank"]
+expr = "proj_intercept + proj_slope * log(rank) + proj_prior_weight * prior_srs"
+description = "Football: expected mean SRS (points/game vs average FBS) over the class's four seasons, from its national class rank (averaged over proj_roster_classes classes) and the program's prior SRS (mean of the proj_prior_seasons seasons before the class; 0 when unknown and proj_prior_weight = 0)."
+variables = ["rank", "prior_srs"]

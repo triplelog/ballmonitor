@@ -74,51 +74,51 @@
     },
     "2026": {
      "at_large": 35,
-     "misses": 5,
-     "misses_rpi_rule": 6,
+     "misses": 3,
+     "misses_rpi_rule": 2,
      "host_hits": 15,
      "host_hits_rpi_rule": 15,
-     "seed_line_mae": 0.1875,
-     "seed_line_mae_rpi_rule": 0.15625
+     "seed_line_mae": 0.21875,
+     "seed_line_mae_rpi_rule": 0.1875
     }
    },
    "test_at_large": {
     "n": 775,
-    "log_loss": 0.12859193254912638,
-    "brier": 0.04027405081427587
+    "log_loss": 0.11984408907235627,
+    "brier": 0.036727080047032123
    },
    "test_at_large_rpi_only": {
     "n": 775,
-    "log_loss": 0.1260711949468552,
-    "brier": 0.03894277118247411
+    "log_loss": 0.11555681000551173,
+    "brier": 0.034790151774680006
    },
    "test_host": {
     "n": 384,
-    "log_loss": 0.22162797832327005,
-    "brier": 0.061729837809587136
+    "log_loss": 0.2206981561149646,
+    "brier": 0.06123875506577491
    },
    "test_host_rpi_only": {
     "n": 384,
-    "log_loss": 0.23647632418575673,
-    "brier": 0.05978932192299866
+    "log_loss": 0.23572439651158486,
+    "brier": 0.059433448453636205
    },
    "totals": {
-    "misses": 25,
-    "misses_rpi": 24,
+    "misses": 23,
+    "misses_rpi": 20,
     "at_large": 205,
     "host_hits": 81,
     "host_hits_rpi": 81,
-    "line_err": 0.19791666666666666,
-    "line_err_rpi": 0.1875
+    "line_err": 0.203125,
+    "line_err_rpi": 0.19270833333333334
    },
    "n_test_seasons": 6
   },
   "softball": {
    "at_large_coef": {
-    "intercept": 22.038866175644294,
-    "neg_log_rpi_rank": 1.8720277322939958,
-    "neg_log_rating_rank": 4.494691873320099,
-    "win_pct": 3.5653181152592865
+    "intercept": 36.27926864318824,
+    "neg_log_rpi_rank": 4.606427774017255,
+    "neg_log_rating_rank": 4.800814691300834,
+    "win_pct": -0.658082394259408
    },
    "host_coef": {
     "intercept": 44.15918297098116,
@@ -127,8 +127,8 @@
     "win_pct": -14.26882557762559
    },
    "rpi_only_coef": [
-    21.980443450177884,
-    5.792560138260218
+    30.41199244392304,
+    8.022192656213251
    ],
    "host_rpi_only_coef": [
     24.177749619505626,
@@ -136,18 +136,18 @@
    ],
    "seasons": {
     "2021": {
-     "at_large": 34,
-     "misses": 4,
-     "misses_rpi_rule": 4,
+     "at_large": 33,
+     "misses": 3,
+     "misses_rpi_rule": 3,
      "host_hits": 14,
      "host_hits_rpi_rule": 15,
      "seed_line_mae": null,
      "seed_line_mae_rpi_rule": null
     },
     "2022": {
-     "at_large": 33,
-     "misses": 4,
-     "misses_rpi_rule": 3,
+     "at_large": 32,
+     "misses": 2,
+     "misses_rpi_rule": 2,
      "host_hits": 14,
      "host_hits_rpi_rule": 14,
      "seed_line_mae": null,
@@ -155,7 +155,7 @@
     },
     "2023": {
      "at_large": 32,
-     "misses": 3,
+     "misses": 2,
      "misses_rpi_rule": 2,
      "host_hits": 14,
      "host_hits_rpi_rule": 14,
@@ -164,7 +164,7 @@
     },
     "2024": {
      "at_large": 32,
-     "misses": 2,
+     "misses": 1,
      "misses_rpi_rule": 2,
      "host_hits": 16,
      "host_hits_rpi_rule": 16,
@@ -181,8 +181,8 @@
      "seed_line_mae_rpi_rule": null
     },
     "2026": {
-     "at_large": 34,
-     "misses": 4,
+     "at_large": 33,
+     "misses": 2,
      "misses_rpi_rule": 2,
      "host_hits": 16,
      "host_hits_rpi_rule": 16,
@@ -191,29 +191,29 @@
     }
    },
    "test_at_large": {
-    "n": 740,
-    "log_loss": 0.13374929699680252,
-    "brier": 0.03660810305726144
+    "n": 736,
+    "log_loss": 0.087385722856564,
+    "brier": 0.026306390579253488
    },
    "test_at_large_rpi_only": {
-    "n": 740,
-    "log_loss": 0.12305708870722014,
-    "brier": 0.03224339507962812
+    "n": 736,
+    "log_loss": 0.09221115718750043,
+    "brier": 0.026133417711720258
    },
    "test_host": {
     "n": 384,
-    "log_loss": 0.13648230453864832,
-    "brier": 0.03378090930987033
+    "log_loss": 0.1339931153594519,
+    "brier": 0.03343811616428658
    },
    "test_host_rpi_only": {
     "n": 384,
-    "log_loss": 0.10360754803713267,
-    "brier": 0.027439412675433584
+    "log_loss": 0.10137574847849228,
+    "brier": 0.02682930292795761
    },
    "totals": {
-    "misses": 19,
-    "misses_rpi": 14,
-    "at_large": 198,
+    "misses": 12,
+    "misses_rpi": 12,
+    "at_large": 195,
     "host_hits": 88,
     "host_hits_rpi": 89,
     "line_err": [],

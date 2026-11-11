@@ -1,0 +1,10 @@
+[meta]
+description = "The hand-set committee weights of 0.4.3 (heavier loss penalty, small power-conference bonus, no committee noise). Rating uncertainty stays on. See RESEARCH.md parts 3 and 4."
+
+[params]
+resume_win_pct_weight = 65.0
+resume_loss_penalty_scale = 3.5
+resume_conf_champ_bonus = 8.0
+resume_p4_champ_bonus = 3.0
+resume_power4_bonus = 4.0
+resume_noise_points = 0.0

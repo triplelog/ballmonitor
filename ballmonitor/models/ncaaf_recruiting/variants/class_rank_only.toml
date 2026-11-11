@@ -1,0 +1,9 @@
+# The v0.4.0-v0.6.0 projection, kept for comparison
+[meta]
+description = "Projected SRS from the national class rank alone (the default line of v0.4.0-v0.6.0, fitted on 2012-2018 classes): no prior program strength. Holdout 2019-2022 MAE 4.84 vs 4.44 for the default (RESEARCH.md)."
+
+[params]
+proj_intercept = 25.62
+proj_slope = -6.56
+proj_prior_weight = 0.0
+projection_sd = 6.53

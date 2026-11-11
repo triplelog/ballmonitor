@@ -212,6 +212,16 @@ variation, which no input here captures. No defaults changed.
 
 ## Changelog
 
+- 0.5.1 (site) — Public page: a calculator (`web/static/apps/race_time.js`): enter up to six races
+  (distance, time, how long ago) and get the most likely time, pace and 8-in-10 range at every
+  benchmark distance, plus a pace chart. It is a JavaScript copy of the default `weighted_riegel`
+  method fed this config's parameters (`site.calculator_data`); `tests/test_race_calc.py` checks it
+  against `predict` on seven runners at every distance and quantile (to the 0.1 s the benchmarks are
+  rounded to). It also describes a straight line through the runner's own races (log time vs log
+  distance) against the typical exponent, as text only: the times never use it, because a personal
+  exponent was not more accurate (RESEARCH_SIMPLE.md, method D). New site-only params
+  `site_own_curve_margin`, `site_calc_fastest_pace_sec`, `site_calc_slowest_pace_sec` (races outside
+  those paces are taken for typos and left out); model defaults unchanged.
 - 0.5.1 — Public site page (`site.py`): equivalent times at common distances for a range of 5K times (one predict() per 5K time and gender), a marathon-vs-5K chart and the likely range for one example 5K. New site-only params `site_5k_fastest_sec`, `site_5k_slowest_sec`, `site_5k_step_sec`, `site_example_5k_sec`; model defaults unchanged.
 - 0.5.0 — New default method `weighted_riegel`: Riegel projections of every race (exponent 1.09 men / 1.06 women / 1.07 unknown, fitted on train), combined by a weighted geometric mean (distance scale 1, half-life 1 year, from RESEARCH_SIMPLE.md), with empirical 50/80/95% bands from a linear quantile regression of the log error on distance gap, years since the last race and 1/races (2,560 train runners; `research_bands.py` → RESEARCH_BANDS.md). Test: MAPE 9.63% → 9.55% (tie), coverage 59/82/92% → 52/81/96%. New params `method`, `riegel_exponent`, `exponent_offset_male`, `exponent_offset_female`, `race_weight_distance_scale`, `race_weight_half_life_years`, `race_combination`, 28 `band_*` coefficients, `band_max_years`, `band_max_races`, `band_scale`; new formulas `exponent`, `race_weight`, `band_log_quantile`, `median_time`, `band_time`. The v0.4.0 method stays available (`method = "curve"`, variant `curve_v04`); `trust_fit` / `static_no_drift` now select it; `pure_riegel` and new `no_gender_exponent` are weighted-Riegel variants. New output contract: 7 quantiles for every curve point and benchmark (60 points 800 m – 50 km; 15K added to benchmarks), target 50%/95% ranges, "Common distances" outcomes, `races_used`; the backtest reports 50/80/95% band coverage. `research.py` / `research_simple.py` pin `method = "curve"` for their v0.4.0 comparisons.
 - 0.4.0 (later addition, no default changes) — `research_simple.py` → RESEARCH_SIMPLE.md: simple Riegel variants (weighted races, personal exponent, age/gender exponent).
