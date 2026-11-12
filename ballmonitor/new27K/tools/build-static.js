@@ -54,9 +54,10 @@ if (html.includes('node_modules/')) {
 writeFileSync(join(out, 'index.html'), html);
 
 // Where this build finds the multiplayer server and sends invite links
-// (src/config.js; both empty by default).
-const mpServer = process.env.MP_SERVER ?? '';
-const invitePage = process.env.INVITE_PAGE ?? '';
+// (src/config.js). Release builds (ballmonitor.com/27k/, itch.io) use the
+// live server; MP_SERVER= (empty) makes a build without multiplayer.
+const mpServer = process.env.MP_SERVER ?? 'https://27k.ballmonitor.com';
+const invitePage = process.env.INVITE_PAGE ?? 'https://ballmonitor.com/27k/';
 if (mpServer || invitePage) {
     for (const [name, v] of [['MP_SERVER', mpServer], ['INVITE_PAGE', invitePage]]) {
         if (v && !/^https?:\/\/[^\s'"\\]+$/.test(v)) {

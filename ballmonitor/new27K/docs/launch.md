@@ -38,9 +38,9 @@ Nothing that makes you a better pitcher is ever sold.
    lets listed sites use it (`ALLOW_ORIGINS`), Multiplayer appears on the
    menu only when a server answers, and games untouched for a month are
    deleted. See hosting.md, *One server, several copies of the game*.
-   **Still to do (needs the owner):** rent the small server, point a name
-   at it (e.g. `27k.ballmonitor.com`), run it behind HTTPS (hosting.md,
-   option 2), then rebuild the static copies with `MP_SERVER` set.
+   It runs at **27k.ballmonitor.com** on the shared Vultr box (hosting.md,
+   *The live server*; `deploy/deploy.sh`), and release builds point at it
+   by default.
 3. **Accounts and the unlock.** "Log in with itch.io" (OAuth with PKCE) as
    the player account in place of the per-browser id; the server asks
    itch whether that account owns 27K Premium
@@ -50,7 +50,7 @@ Nothing that makes you a better pitcher is ever sold.
    notifications first, then email), and a list of recent opponents with
    "challenge again". itch has no friends list to borrow.
 5. **Daily challenge.** The same hitters and the same dice for everyone
-   each day, with a leaderboard. Free. Next after the server is online.
+   each day, with a leaderboard. Free. *On hold for now.*
 6. **Style options, free for everyone:** team name, colours and cap logo;
    your pitcher's name and number; field themes.
 7. **Leagues and tournaments** (hosting one needs Premium). *On hold for
@@ -77,9 +77,11 @@ Nothing that makes you a better pitcher is ever sold.
    also plays sideways).
 4. Pricing: **No payments** to start, or **$0 or donate** for the Support
    27K link.
-5. Cover, screenshots and description: candidates and advice are in
-   [store/](store/README.md). Needed from the owner: the itch account and
-   page address, and the final choice of each.
+5. Cover `store/cover-a.png`; screenshots in the order listed in
+   [store/README.md](store/README.md) (`02-strikeout`, `01-aiming`,
+   `03-catchers-visit`, `06-season`, `05-formula-lab`, `04-challenges`);
+   short description *A baseball pitching game: pick your pitch, read the
+   moving zone, paint the corners.* (chosen 2026-11-12).
 
 After the page exists, add its address as the *Support 27K* link on the
 menu (`src/ui/screens.js`).

@@ -15,6 +15,35 @@ keeps multiplayer games as JSON files, so hosting it is small.
 | `ALLOW_ORIGINS` | none | Other sites whose copy of the game may use this server's multiplayer, comma-separated: `https://ballmonitor.com,https://html-classic.itch.zone`. See *One server, several copies of the game*. |
 | `ADMIN_TOKEN` | off | Enables `GET /api/mp/admin/games/<id>/pitches?token=…`, every pitch's inputs, for looking into a game. |
 
+## The live server: 27k.ballmonitor.com
+
+It runs on the shared Vultr box (64.177.56.111, with rnbqkbnr, gifsaw,
+csshole and the digitizer.fun games server), behind that box's shared Caddy.
+
+| | |
+| --- | --- |
+| Code | `/srv/ballmonitor-27k` (the game folder minus `dist/`, `docs/`, `test/`), owned by rwilcox |
+| Runs as | system user `ballmonitor-27k`, unit `ballmonitor-27k.service`, `127.0.0.1:3004` |
+| Games | `/var/lib/ballmonitor-27k/*.json` (back up with `scp`) |
+| Caddy | `/etc/caddy/sites/27k.caddy` (`deploy/27k.caddy`): `/api/mp/*` to the server, anything else redirected to ballmonitor.com/27k/ |
+| Allowed sites | `ALLOW_ORIGINS` in `deploy/ballmonitor-27k.service`: ballmonitor.com and itch.io's game frames |
+| Secrets | optional `/etc/ballmonitor-27k.env` (`ADMIN_TOKEN=…`) |
+
+**Deploy** from your computer, in a terminal (sudo asks for the password):
+`deploy/deploy.sh`. The first run creates the folder, user and unit and
+installs the Caddy site (`deploy/install.sh`); later runs copy the code,
+`npm ci`, restart, and reload Caddy only if `27k.caddy` changed and the whole
+config validates (otherwise the old file is put back, so the other sites keep
+working). Never replace the shared `/etc/caddy/Caddyfile` or change ufw from
+here.
+
+**Check:** `curl https://27k.ballmonitor.com/api/mp/ping` gives `{"ok":true}`.
+Status `systemctl status ballmonitor-27k`, errors `journalctl -u ballmonitor-27k -e`.
+
+**Take it down:** `sudo systemctl disable --now ballmonitor-27k`,
+`sudo rm /etc/caddy/sites/27k.caddy`,
+`sudo caddy validate --config /etc/caddy/Caddyfile && sudo systemctl reload caddy`.
+
 ## Option 1: friends only, from your own computer (easiest)
 
 - **Same network**: run `npm run serve`; share the "on your network" address it prints.
@@ -76,10 +105,13 @@ files and restart; games in progress carry on.
 The game can live on static hosts (ballmonitor.com/27k/, itch.io) and use
 one multiplayer server somewhere else.
 
-1. **Tell each static copy where the server is** when you build it:
+1. **Tell each static copy where the server is** when you build it. The
+   defaults are the live ones (`https://27k.ballmonitor.com`, invites to
+   `https://ballmonitor.com/27k/`), so `npm run build` and `npm run itch`
+   need nothing; to point a build elsewhere:
 
    ```bash
-   MP_SERVER=https://27k.example.com INVITE_PAGE=https://ballmonitor.com/27k/ npm run build   # or: npm run itch
+   MP_SERVER=https://27k.example.com INVITE_PAGE=https://example.com/27k/ npm run build   # MP_SERVER= for none
    ```
 
    `MP_SERVER` is the server's address. `INVITE_PAGE` is the page invite

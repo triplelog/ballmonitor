@@ -1,0 +1,23 @@
+# Caddy site file for the 27K multiplayer server on the shared box (64.177.56.111, with gifsaw,
+# rnbqkbnr, csshole and the digitizer.fun games server). Installed to /etc/caddy/sites/27k.caddy by
+# caddy-site.sh. The box's main /etc/caddy/Caddyfile only holds global options and
+# `import /etc/caddy/sites/*.caddy`; never replace it from here.
+#
+# The game itself is played at ballmonitor.com/27k/ (and on itch.io); this name only answers the
+# multiplayer API. Anything else is sent to the game. Automatic HTTPS: keep 27k.ballmonitor.com's
+# DNS records DNS only (grey cloud) if the zone is on Cloudflare, so Caddy's HTTP challenge works.
+#
+# Caddy replaces X-Forwarded-For with the visitor's address (it trusts no incoming one), which the
+# server's rate limit reads (TRUST_PROXY=1 in the unit).
+# No per-site `log` file (`caddy validate` would create it owned by root); errors go to journalctl -u caddy.
+
+27k.ballmonitor.com {
+	@api path /api/mp/*
+	handle @api {
+		encode zstd gzip
+		reverse_proxy 127.0.0.1:3004
+	}
+	handle {
+		redir https://ballmonitor.com/27k/ 302
+	}
+}

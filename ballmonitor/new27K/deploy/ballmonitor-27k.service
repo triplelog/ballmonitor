@@ -1,0 +1,32 @@
+# systemd unit for the 27K multiplayer server on the shared box. Installed to
+# /etc/systemd/system/ballmonitor-27k.service by install.sh.
+# Code: /srv/ballmonitor-27k (owned by rwilcox, readable by everyone).
+# State: /var/lib/ballmonitor-27k (one JSON file per game; games untouched for a month are deleted).
+# Optional secrets: /etc/ballmonitor-27k.env (ADMIN_TOKEN=…, for the pitch-log route; see docs/hosting.md).
+[Unit]
+Description=27K multiplayer server (27k.ballmonitor.com)
+After=network.target
+
+[Service]
+User=ballmonitor-27k
+Group=ballmonitor-27k
+WorkingDirectory=/srv/ballmonitor-27k
+Environment=NODE_ENV=production
+Environment=PORT=3004
+Environment=HOST=127.0.0.1
+Environment=TRUST_PROXY=1
+Environment=MP_DATA_DIR=/var/lib/ballmonitor-27k
+# The copies of the game allowed to use this server: ballmonitor.com/27k/ and itch.io's game frames.
+Environment=ALLOW_ORIGINS=https://ballmonitor.com,https://html-classic.itch.zone,https://html.itch.zone
+EnvironmentFile=-/etc/ballmonitor-27k.env
+ExecStart=/usr/bin/env node tools/serve.js
+Restart=on-failure
+RestartSec=2
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+ReadWritePaths=/var/lib/ballmonitor-27k
+
+[Install]
+WantedBy=multi-user.target
