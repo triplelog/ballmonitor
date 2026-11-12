@@ -1,5 +1,9 @@
 // Talking to the multiplayer server, and who this browser is.
 
+import { CONFIG } from '../config.js';
+
+const SERVER = CONFIG.mpServer.replace(/\/+$/, '');
+
 export class MpRequestError extends Error {
     constructor(status, message, record) {
         super(message);
@@ -16,7 +20,7 @@ export const setMpPlayer = (id) => { currentPlayer = id; };
 async function call(method, path, body) {
     let res;
     try {
-        res = await fetch(`/api/mp${path}`, {
+        res = await fetch(`${SERVER}/api/mp${path}`, {
             method,
             headers: { 'X-Player-Id': currentPlayer, ...(body ? { 'Content-Type': 'application/json' } : {}) },
             body: body ? JSON.stringify(body) : undefined,
@@ -54,7 +58,7 @@ export function mpIdentity(app) {
 }
 
 export function inviteLink(code) {
-    return `${location.origin}${location.pathname}#join=${code}`;
+    return `${CONFIG.invitePage || location.origin + location.pathname}#join=${code}`;
 }
 
 export function timeLeft(deadline, now = Date.now()) {

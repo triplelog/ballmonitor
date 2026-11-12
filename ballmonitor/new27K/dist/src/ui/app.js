@@ -18,13 +18,15 @@ import { recordGame, SEASON_VERSION } from '../engine/season.js';
 import { renderMultiplayer, renderMpGame } from './mpScreens.js';
 import { renderCareers, renderCareerHub } from './careerScreens.js';
 import { careerStore } from './idb.js';
+import { mpApi } from './mpClient.js';
 import { recordCareerGame, CAREER_VERSION } from '../engine/career.js';
 
 const LEAGUE_VERSION = 1;
 
-// Modes that are built but not open yet (multiplayer waits for its
-// server). Their screens go back to the menu.
-const COMING_LATER = new Set(['multiplayer', 'mpGame']);
+// Multiplayer needs its server (src/config.js says where). It is asked once
+// whether it is there; until it answers yes, the multiplayer screens go back
+// to the menu and the menu shows the mode as coming later.
+const NEEDS_SERVER = new Set(['multiplayer', 'mpGame']);
 
 const DEFAULT_PREFS = {
     userTeamId: 0, oppTeamId: 1, userHome: true, innings: 9, difficulty: 2,
@@ -58,6 +60,8 @@ function newLeague() {
 
 const app = {
     root: document.getElementById('app'),
+    mpOn: false,
+    mpCheck: null,      // a promise: is the multiplayer server there?
     league: loadLeague(),
     F,
     prefs: { ...DEFAULT_PREFS, ...store.load('prefs', {}) },
@@ -127,7 +131,7 @@ const app = {
     clearGame() { store.remove('game'); },
 
     go(screen, args) {
-        if (COMING_LATER.has(screen)) screen = 'menu';
+        if (NEEDS_SERVER.has(screen) && !this.mpOn) screen = 'menu';
         if (this.cleanup) this.cleanup();
         this.cleanup = null;
         this.root.innerHTML = '';
@@ -202,9 +206,14 @@ function openInvite() {
     const m = location.hash.match(/join=([A-Za-z0-9]+)/);
     if (!m) return false;
     history.replaceState(null, '', location.pathname);
-    app.go('multiplayer', { code: m[1].toUpperCase() });
+    app.go('menu');
+    app.mpCheck.then((on) => {
+        if (on) app.go('multiplayer', { code: m[1].toUpperCase() });
+        else alert('Multiplayer isn’t available on this copy of 27K.');
+    });
     return true;
 }
+app.mpCheck = mpApi.ping().then((r) => { app.mpOn = r?.ok === true; return app.mpOn; }, () => false);
 window.addEventListener('hashchange', () => importSharedLink() || openInvite());
 if (!importSharedLink() && !openInvite()) app.go('menu');
 window.app27k = app;   // handy from the console

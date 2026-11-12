@@ -8,7 +8,7 @@ It is a rewrite of the 2018 iOS prototype in `../27K`, with no code shared.
 
 ```bash
 npm run serve      # http://localhost:8027/ (ES modules need http); also the multiplayer server
-npm test           # rules, pitch movement and the catcher's advice, multiplayer, a 300-game sim, every challenge, a season in each format, nine career seasons
+npm test           # rules, pitch movement and the catcher's advice, multiplayer, the server, a 300-game sim, every challenge, a season in each format, nine career seasons
 npm run sim -- 500 7 my-formulas.json   # games, seed, optional formula overrides
 npm run build      # static copy of the game in dist/ (see Static hosting)
 npm run itch       # the same, zipped as 27k-itch.zip for itch.io (see docs/launch.md)
@@ -16,13 +16,13 @@ npm run itch       # the same, zipped as 27k-itch.zip for itch.io (see docs/laun
 
 ### Static hosting
 
-With Multiplayer switched off, the game needs no server: everything runs in the browser and saves to localStorage and IndexedDB. `npm run build` (after `npm install`; `tools/build-static.js`) writes `dist/`: the page, styles and sources, plus the published browser builds of MathZetta and InlineMath (`mathzetta@1.0.0` and `@mathzetta/inlinemath@0.1.0`, pinned exactly in `package.json`) copied from `node_modules` into `lib/` (about 420 KB), with the import map pointed there. Nothing loads from a CDN, so the game keeps working offline once loaded and where a CDN is blocked. Upload `dist/` as-is to any static host (GitHub Pages, Netlify, Cloudflare Pages, a plain web server), at the root of a domain or in a subfolder; the addresses are relative. It has to be served over http(s), not opened as a file. Saves belong to the address, so games from `localhost:8027` don't carry over. Multiplayer, when it returns, needs `tools/serve.js` (or the Dockerfile).
+With Multiplayer switched off, the game needs no server: everything runs in the browser and saves to localStorage and IndexedDB. `npm run build` (after `npm install`; `tools/build-static.js`) writes `dist/`: the page, styles and sources, plus the published browser builds of MathZetta and InlineMath (`mathzetta@1.0.0` and `@mathzetta/inlinemath@0.1.0`, pinned exactly in `package.json`) copied from `node_modules` into `lib/` (about 420 KB), with the import map pointed there. Nothing loads from a CDN, so the game keeps working offline once loaded and where a CDN is blocked. Upload `dist/` as-is to any static host (GitHub Pages, Netlify, Cloudflare Pages, a plain web server), at the root of a domain or in a subfolder; the addresses are relative. It has to be served over http(s), not opened as a file. Saves belong to the address, so games from `localhost:8027` don't carry over. Multiplayer needs `tools/serve.js` (or the Dockerfile) running somewhere, and the build told where: `MP_SERVER=https://… INVITE_PAGE=https://… npm run build` (docs/hosting.md).
 
 No dependencies. Plain ES modules, canvas and localStorage.
 
 ## Playing
 
-Quick Game, Challenges & Achievements, Season and Career are open. Multiplayer is built (and still tested) but shows as *coming later* on the menu until its server is online ([docs/launch.md](docs/launch.md)): its screens go back to the menu.
+Quick Game, Challenges & Achievements, Season and Career are open. Multiplayer appears on the menu when its server answers: always under `npm run serve`, and in a static build only if it was built with a server address ([docs/hosting.md](docs/hosting.md)); otherwise it shows as *coming later*.
 
 - **Quick Game:** pick your team, opponent, home/away, innings and difficulty, set your lineup card (batting order, bench swaps, starting pitcher), and play.
 - **Pitching:** use 1–9 or the buttons to pick a pitch and set the velocity and movement effort sliders, then press Space to start the zone moving and click to throw. The zone first jumps to a new spot (at least half its drift range away, in a random direction), so you can't throw before it has moved. Before you press Space, the dashed guide shows how the pitch will break from the pointer (or the middle of the zone), with a ring for one standard deviation of scatter. The **break guide** setting keeps it while the zone moves (*always shown*) or takes it away once the zone starts moving (*hidden*), so you have to remember the break.
@@ -94,7 +94,7 @@ Menu → **Career**. One pitcher, from 12 years old to retirement; you control o
 
 ## Multiplayer
 
-*Coming later (not on the menu yet).* Menu → **Multiplayer**. Two people play one game and take turns: the home player pitches the top of every inning, the away player the bottom, and each side's hitters bat against the other player's pitching.
+Menu → **Multiplayer** (when a server is there). Two people play one game and take turns: the home player pitches the top of every inning, the away player the bottom, and each side's hitters bat against the other player's pitching.
 
 - **Start a game**: choose the level, innings, a **time limit per half** (none, 2 minutes up to 3 days), your side, and standard or your custom formulas. You get a six-letter code and an invite link (`#join=CODE`); the game starts when someone joins. Tick *Both players on this device* to take turns at one screen.
 - **Your games** in the lobby shows every game you're in: score, inning, whose turn it is and how long is left, refreshed every few seconds. The menu shows how many games are waiting on you, the tab title shows *(n) Your turn*, and you can turn on a browser notification for when your turn comes.

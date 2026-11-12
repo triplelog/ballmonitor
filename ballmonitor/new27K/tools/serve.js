@@ -7,6 +7,9 @@
 //   MP_DATA_DIR   where multiplayer games are kept (default data/mp)
 //   ADMIN_TOKEN   enables GET /api/mp/admin/games/<id>/pitches?token=…
 //   TRUST_PROXY   set to 1 behind a reverse proxy (rate limits by X-Forwarded-For)
+//   ALLOW_ORIGINS other sites whose copy of the game may use this server's
+//                 multiplayer, comma-separated, e.g.
+//                 https://ballmonitor.com,https://html-classic.itch.zone
 // See docs/hosting.md.
 
 import { createServer } from 'node:http';
@@ -64,9 +67,25 @@ async function readBody(req) {
     }
 }
 
+// A copy of the game on another site (ballmonitor.com, itch.io's game
+// frame) may call the API only if its address is listed in ALLOW_ORIGINS.
+// Browsers enforce this; the player id travels in a header, never a cookie.
+const allowOrigins = new Set((process.env.ALLOW_ORIGINS ?? '').split(',').map((s) => s.trim().replace(/\/+$/, '')).filter(Boolean));
+function cors(req, res) {
+    const origin = req.headers.origin;
+    res.setHeader('Vary', 'Origin');
+    if (!origin || !allowOrigins.has(origin)) return;
+    res.setHeader('Access-Control-Allow-Origin', origin);
+    res.setHeader('Access-Control-Allow-Headers', 'Content-Type, X-Player-Id');
+    res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
+    res.setHeader('Access-Control-Max-Age', '86400');
+}
+
 async function api(req, res, url) {
     const parts = url.pathname.split('/').filter(Boolean).slice(2);   // after /api/mp
     const method = req.method;
+    cors(req, res);
+    if (method === 'OPTIONS') { res.writeHead(204).end(); return; }   // the browser asking permission first
     try {
         if (!allowed(req)) throw new MpError(429, 'Too many requests; slow down.');
         if (parts[0] === 'ping') return sendJSON(res, 200, { ok: true });

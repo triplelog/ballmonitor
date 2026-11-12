@@ -1,0 +1,98 @@
+<!doctype html>
+<!-- Cover images for store pages (itch.io: 630 × 500). Three versions: cover.html?v=a, ?v=b, ?v=c.
+     Serve the game folder (python3 -m http.server 8131) and screenshot
+     http://localhost:8131/docs/store/cover.html?v=a at 630 × 500, device scale 2. -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>27K cover</title>
+<style>
+    html, body { margin: 0; background: #0b1410; }
+    #card { position: relative; width: 630px; height: 500px; overflow: hidden; background: #0b1410; font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; }
+    canvas { position: absolute; left: 0; width: 630px; }
+    .shade { position: absolute; inset: 0; }
+    .logo { position: absolute; font-weight: 900; letter-spacing: -0.04em; line-height: 1; color: #ffd166; text-shadow: 0 6px 0 #7a5532, 0 14px 30px rgba(0, 0, 0, 0.6); }
+    .tag { position: absolute; color: #f4f1ea; font-weight: 700; text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8); }
+    .sub { position: absolute; color: #cfd8d3; font-weight: 600; text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8); }
+    .banner { position: absolute; left: 0; right: 0; text-align: center; font-weight: 900; color: #3dd68c; -webkit-text-stroke: 2px rgba(0, 0, 0, 0.55); paint-order: stroke fill; }
+
+    /* a: the ballpark, logo top left */
+    .a canvas { top: -38px; }
+    .a .shade { background: linear-gradient(180deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0) 34%, rgba(0,0,0,0) 62%, rgba(0,0,0,0.78) 100%); }
+    .a .logo { left: 30px; top: 22px; font-size: 128px; }
+    .a .tag { left: 32px; bottom: 44px; font-size: 27px; }
+    .a .sub { left: 32px; bottom: 20px; font-size: 16px; }
+
+    /* b: the moment: a strikeout on the corner, logo at the bottom */
+    .b canvas { top: -118px; left: -60px; width: 750px; }
+    .b .shade { background: linear-gradient(180deg, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 30%, rgba(0,0,0,0) 55%, rgba(0,0,0,0.85) 100%); }
+    .b .banner { top: 18px; font-size: 60px; }
+    .b .logo { left: 28px; bottom: 22px; font-size: 96px; }
+    .b .tag { left: 250px; bottom: 50px; font-size: 22px; }
+    .b .sub { left: 250px; bottom: 26px; font-size: 15px; }
+
+    /* c: plain: the logo and a strike zone */
+    .c canvas { display: none; }
+    .c #card, #card.c { background: radial-gradient(circle at 50% 40%, #1a2b23 0%, #0b1410 70%); }
+    .c .logo { left: 0; right: 0; top: 70px; text-align: center; font-size: 200px; }
+    .c .tag { left: 0; right: 0; bottom: 104px; text-align: center; font-size: 28px; }
+    .c .sub { left: 0; right: 0; bottom: 74px; text-align: center; font-size: 17px; }
+    .c .zone { position: absolute; inset: 22px; border: 3px solid rgba(255, 255, 255, 0.16); border-radius: 4px; }
+    .dots { position: absolute; left: 0; right: 0; bottom: 42px; display: flex; gap: 8px; justify-content: center; }
+    .dots i { width: 12px; height: 12px; border-radius: 50%; background: #ffd166; }
+</style>
+</head>
+<body>
+<div id="card">
+    <canvas id="plate"></canvas>
+    <div class="shade"></div>
+    <div class="zone"></div>
+    <div class="banner"></div>
+    <div class="logo">27K</div>
+    <div class="tag"></div>
+    <div class="sub"></div>
+    <div class="dots"></div>
+</div>
+<script type="module">
+import { PlateView } from '../../src/ui/plate.js';
+
+const v = new URLSearchParams(location.search).get('v') || 'a';
+const card = document.getElementById('card');
+card.className = v;
+document.body.className = v;
+const text = {
+    a: ['Read the zone. Paint the corners.', 'A baseball pitching game · 27 outs to get'],
+    b: ['Every pitch is yours to throw.', 'A baseball pitching game'],
+    c: ['A pitching game', 'Pick a pitch · read the moving zone · paint the corners'],
+}[v];
+document.querySelector('.tag').textContent = text[0];
+document.querySelector('.sub').textContent = text[1];
+if (v !== 'c') document.querySelector('.zone').remove();
+if (v === 'b') document.querySelector('.banner').textContent = 'STRIKEOUT!';
+if (v === 'c') document.querySelector('.dots').innerHTML = '<i></i>'.repeat(27);
+
+if (v !== 'c') {
+    const plate = new PlateView(document.getElementById('plate'));
+    const red = '#e5484d', purple = '#8e4ec6', blue = '#3e63dd';
+    const scenes = {
+        a: {
+            zone: { x: -4, y: 0 },
+            batter: { side: 'L', color: '#c2410c', number: 27, skin: '#c68b59', time: 0.6, swing: null },
+            pitches: [{ x: -6.5, y: 8.5, color: red, call: 'called' }, { x: 7.6, y: -9.6, color: purple, call: 'swinging' }],
+            aim: { x: 1.5, y: 7.5 }, guide: { dx: 7.5, dy: -13, scatter: 2.2, color: blue, label: 'CU 78' },
+            zoneColor: '#ffffff',
+        },
+        b: {
+            zone: { x: -3, y: 3 },
+            batter: { side: 'L', color: '#1d4ed8', number: 9, skin: '#a8704a', time: 0, swing: 0.7 },
+            pitches: [{ x: 5, y: 7, color: red, call: 'called' }, { x: -6.5, y: 9.5, color: red, call: 'foul' }, { x: -8.3, y: -3.5, color: purple, call: 'swinging' }],
+            impact: { x: -11.3, y: -0.5, t: 0.5, color: purple },
+            zoneColor: '#ffffff',
+        },
+    };
+    plate.draw(scenes[v]);
+}
+document.title = 'ready';
+</script>
+</body>
+</html>

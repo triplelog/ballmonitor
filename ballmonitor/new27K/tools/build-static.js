@@ -53,5 +53,24 @@ if (html.includes('node_modules/')) {
 }
 writeFileSync(join(out, 'index.html'), html);
 
+// Where this build finds the multiplayer server and sends invite links
+// (src/config.js; both empty by default).
+const mpServer = process.env.MP_SERVER ?? '';
+const invitePage = process.env.INVITE_PAGE ?? '';
+if (mpServer || invitePage) {
+    for (const [name, v] of [['MP_SERVER', mpServer], ['INVITE_PAGE', invitePage]]) {
+        if (v && !/^https?:\/\/[^\s'"\\]+$/.test(v)) {
+            console.error(`${name} must be an http(s) address, got: ${v}`);
+            process.exit(1);
+        }
+    }
+    const file = join(out, 'src', 'config.js');
+    const src = readFileSync(file, 'utf8')
+        .replace("mpServer: ''", `mpServer: '${mpServer}'`)
+        .replace("invitePage: ''", `invitePage: '${invitePage}'`);
+    writeFileSync(file, src);
+    console.log(`Multiplayer server: ${mpServer || '(same address)'}; invite links: ${invitePage || '(this page)'}`);
+}
+
 console.log(`Built ${relative(root, out) || out}/ with ${versions.join(', ')} in lib/.`);
 console.log('Upload the folder as-is; serve it over http(s), e.g. python3 -m http.server -d dist');

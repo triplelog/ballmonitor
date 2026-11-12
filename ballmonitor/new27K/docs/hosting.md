@@ -12,6 +12,7 @@ keeps multiplayer games as JSON files, so hosting it is small.
 | `HOST` | every interface | Use `127.0.0.1` when a reverse proxy sits in front. |
 | `MP_DATA_DIR` | `data/mp` | Where games are kept: put it on a disk that's backed up. |
 | `TRUST_PROXY` | off | Set to `1` behind a proxy so rate limits see real addresses. |
+| `ALLOW_ORIGINS` | none | Other sites whose copy of the game may use this server's multiplayer, comma-separated: `https://ballmonitor.com,https://html-classic.itch.zone`. See *One server, several copies of the game*. |
 | `ADMIN_TOKEN` | off | Enables `GET /api/mp/admin/games/<id>/pitches?token=…`, every pitch's inputs, for looking into a game. |
 
 ## Option 1: friends only, from your own computer (easiest)
@@ -69,6 +70,34 @@ HTTP would let anyone on the same Wi-Fi read it.
 Games nobody has touched for a month (finished, never joined, or abandoned)
 are deleted, at start-up and every hour. Back up `MP_DATA_DIR` (a nightly copy is enough). To update, replace the
 files and restart; games in progress carry on.
+
+## One server, several copies of the game
+
+The game can live on static hosts (ballmonitor.com/27k/, itch.io) and use
+one multiplayer server somewhere else.
+
+1. **Tell each static copy where the server is** when you build it:
+
+   ```bash
+   MP_SERVER=https://27k.example.com INVITE_PAGE=https://ballmonitor.com/27k/ npm run build   # or: npm run itch
+   ```
+
+   `MP_SERVER` is the server's address. `INVITE_PAGE` is the page invite
+   links open; set it to a page anyone can open (itch runs the game in a
+   frame whose own address is no use to a friend). Both are written into
+   `dist/src/config.js`. Without `MP_SERVER`, a static copy has no
+   multiplayer and the menu shows it as *coming later*.
+2. **Tell the server which sites may use it:**
+   `ALLOW_ORIGINS=https://ballmonitor.com,https://html-classic.itch.zone`.
+   Use the address of the page the game actually runs on: for itch that is
+   the game frame's address (open the game on itch, look at the frame's
+   address in the browser's developer tools), not `itch.io` itself.
+3. The game asks the server once whether it is there (`/api/mp/ping`); if
+   it answers, Multiplayer appears on the menu.
+
+`node test/serve.js` checks the permissions; a whole game was played
+between two browsers on a static copy at one address and the server at
+another (2026-11-12).
 
 ## Cheating: what's handled, what isn't
 

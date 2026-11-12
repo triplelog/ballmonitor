@@ -49,7 +49,7 @@ export function renderMenu(app) {
             <button data-go="lab">Formula Lab</button>
             <button data-go="season">Season</button>
             <button data-go="careers">Career</button>
-            <button disabled title="Coming later">Multiplayer <span class="soon">coming later</span></button>
+            <button ${app.mpOn ? 'data-go="multiplayer"' : 'disabled title="Coming later"'} id="menu-mp">Multiplayer${app.mpOn ? '' : ' <span class="soon">coming later</span>'}</button>
         </div>
         <div class="panel howto">
             <h3>How to pitch</h3>
@@ -59,6 +59,15 @@ export function renderMenu(app) {
         </div>
         <p class="credit">Every rule of the game is a formula, read by <a href="https://mathzetta.com/" target="_blank" rel="noopener">MathZetta</a> — change them in the Formula Lab.</p>
     </div>`;
+    // Multiplayer opens once its server has answered.
+    if (!app.mpOn) app.mpCheck?.then((on) => {
+        const btn = document.getElementById('menu-mp');
+        if (!on || !btn) return;
+        btn.disabled = false;
+        btn.removeAttribute('title');
+        btn.dataset.go = 'multiplayer';
+        btn.textContent = 'Multiplayer';
+    });
     app.root.querySelector('.menu').addEventListener('click', (e) => {
         const btn = e.target.closest('button');
         if (!btn) return;

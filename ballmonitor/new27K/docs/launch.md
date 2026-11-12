@@ -31,18 +31,16 @@ Nothing that makes you a better pitcher is ever sold.
 ## Steps
 
 1. **Single-player on itch.io.** Ready to upload; see the checklist below.
-2. **The multiplayer server online, for friends.** `server/mp.js` already
-   plays two-player games by alternating half-innings, with the server as
-   referee. Still to do before it can be reached from itch or
-   ballmonitor.com:
-   - a configurable server address (`src/ui/mpClient.js` calls `/api/mp` on
-     its own address, which on itch is itch's file host);
-   - let the server answer pages on other addresses (CORS for the itch and
-     ballmonitor origins and the `X-Player-Id` header, in `tools/serve.js`);
-   - invite links that point at one fixed page (`inviteLink()` uses the
-     page's own address, which inside itch's frame is not a page anyone can
-     open);
-   - put it on a small server behind HTTPS (hosting.md, option 2).
+2. **The multiplayer server online, for friends.** `server/mp.js` plays
+   two-player games by alternating half-innings, with the server as
+   referee. Done (2026-11-12): the server's address and the invite page
+   are settings of each build (`MP_SERVER`, `INVITE_PAGE`), the server
+   lets listed sites use it (`ALLOW_ORIGINS`), Multiplayer appears on the
+   menu only when a server answers, and games untouched for a month are
+   deleted. See hosting.md, *One server, several copies of the game*.
+   **Still to do (needs the owner):** rent the small server, point a name
+   at it (e.g. `27k.ballmonitor.com`), run it behind HTTPS (hosting.md,
+   option 2), then rebuild the static copies with `MP_SERVER` set.
 3. **Accounts and the unlock.** "Log in with itch.io" (OAuth with PKCE) as
    the player account in place of the per-browser id; the server asks
    itch whether that account owns 27K Premium
@@ -79,9 +77,9 @@ Nothing that makes you a better pitcher is ever sold.
    also plays sideways).
 4. Pricing: **No payments** to start, or **$0 or donate** for the Support
    27K link.
-5. Needed from the owner: the itch account and page address, a cover
-   image (630 × 500), three or four screenshots, and the page's short
-   description.
+5. Cover, screenshots and description: candidates and advice are in
+   [store/](store/README.md). Needed from the owner: the itch account and
+   page address, and the final choice of each.
 
 After the page exists, add its address as the *Support 27K* link on the
 menu (`src/ui/screens.js`).
