@@ -48,11 +48,13 @@ export function track(t, r) {
     const inn = t.inning;
     if (b.bases.every(Boolean) && b.outs === 0) inn.loadedNoOuts = true;
     if (b.balls === 3 && b.strikes === 0) t.pa.wasThreeOh = true;
-    t.pa.pitches += 1;
-    if (!t.pa.types.includes(r.pitch.name)) t.pa.types.push(r.pitch.name);
+    // A clock violation is a ball, but no pitch was thrown.
+    const thrown = r.call !== 'clock';
+    if (thrown) t.pa.pitches += 1;
+    if (thrown && !t.pa.types.includes(r.pitch.name)) t.pa.types.push(r.pitch.name);
 
     for (const agg of [t.game, inn]) {
-        agg.pitches += 1;
+        if (thrown) agg.pitches += 1;
         if (STRIKES.includes(r.call)) agg.strikes += 1;
         if (r.call === 'swinging') agg.swinging += 1;
         if (r.call === 'clock') agg.clock += 1;

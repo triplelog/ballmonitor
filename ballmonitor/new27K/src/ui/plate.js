@@ -6,6 +6,8 @@ import { ZONE, HEAT } from '../engine/data.js';
 
 const VIEW = { left: -30, right: 30, top: 29, bottom: -32 };
 const GROUND = -28;
+// Where the pieces of the ballpark sit on the screen (inches, like VIEW).
+const FIELD = { standsTop: 20.5, wallTop: 11.2, wallBottom: 8.4, mound: -6.2, dirtTop: GROUND + 7 };
 
 export class PlateView {
     constructor(canvas) {
@@ -23,6 +25,12 @@ export class PlateView {
         this.canvas.width = Math.round(w * dpr);
         this.canvas.height = Math.round(h * dpr);
         this.scale = this.canvas.width / (VIEW.right - VIEW.left);
+        // The ballpark never changes, so it is painted once per size and
+        // copied in each frame.
+        this.field = document.createElement('canvas');
+        this.field.width = this.canvas.width;
+        this.field.height = this.canvas.height;
+        this.drawField(this.field.getContext('2d'));
     }
 
     px(x) { return (x - VIEW.left) * this.scale; }
@@ -48,21 +56,7 @@ export class PlateView {
         const H = this.canvas.height;
         c.clearRect(0, 0, W, H);
 
-        // Backstop and dirt.
-        const sky = c.createLinearGradient(0, 0, 0, H);
-        sky.addColorStop(0, '#0d2a1c');
-        sky.addColorStop(1, '#174a31');
-        c.fillStyle = sky;
-        c.fillRect(0, 0, W, H);
-        // The dirt around the plate, reaching back far enough for the
-        // batter's back foot.
-        const dirtTop = this.py(GROUND + 6.5);
-        const dirt = c.createLinearGradient(0, dirtTop, 0, H);
-        dirt.addColorStop(0, '#5f4128');
-        dirt.addColorStop(1, '#7f5934');
-        c.fillStyle = dirt;
-        c.fillRect(0, dirtTop, W, H - dirtTop);
-        this.drawPlate();
+        c.drawImage(this.field, 0, 0);
         this.drawBatter(v.batter ?? (v.side ? { side: v.side, time: 0 } : null));
 
         const zx = v.zone.x;
@@ -78,6 +72,7 @@ export class PlateView {
         if (v.plan) this.drawPlan(v.plan);
         if (v.aim) this.drawAim(v.aim, v.guide);
         if (v.flight) this.drawFlight(v.flight);
+        if (v.impact) this.drawImpact(v.impact);
         if (v.clock) this.drawClock(v.clock, v.side);
         if (v.dim) {
             c.fillStyle = 'rgba(0,0,0,0.35)';
@@ -86,8 +81,184 @@ export class PlateView {
         if (v.banner) this.drawBanner(v.banner);
     }
 
-    drawPlate() {
-        const c = this.ctx;
+    // The ballpark at night, seen from behind the plate: sky and lights, the
+    // stands, the outfield wall, mowed grass, the mound with the pitcher on
+    // it, and the dirt around home with its chalk. Kept dark and soft so the
+    // zone, the ball and the markers stand out.
+    drawField(c) {
+        const W = this.canvas.width;
+        const H = this.canvas.height;
+        const X = (x) => this.px(x);
+        const Y = (y) => this.py(y);
+        const L = (d) => this.len(d);
+        const rnd = seeded(27);
+        const ellipse = (x, y, rx, ry, fill) => {
+            c.fillStyle = fill;
+            c.beginPath();
+            c.ellipse(X(x), Y(y), L(rx), L(ry), 0, 0, Math.PI * 2);
+            c.fill();
+        };
+
+        // Sky, with the glow of two light towers.
+        const sky = c.createLinearGradient(0, 0, 0, Y(FIELD.standsTop));
+        sky.addColorStop(0, '#060b17');
+        sky.addColorStop(1, '#13233b');
+        c.fillStyle = sky;
+        c.fillRect(0, 0, W, Y(FIELD.standsTop) + 1);
+        for (const x of [-21, 21]) {
+            const glow = c.createRadialGradient(X(x), Y(26.5), 0, X(x), Y(26.5), L(13));
+            glow.addColorStop(0, 'rgba(255, 244, 214, 0.5)');
+            glow.addColorStop(0.25, 'rgba(255, 244, 214, 0.14)');
+            glow.addColorStop(1, 'rgba(255, 244, 214, 0)');
+            c.fillStyle = glow;
+            c.fillRect(X(x) - L(13), 0, L(26), L(16));
+            // the tower: a pole and a bank of lamps
+            c.fillStyle = '#0b1220';
+            c.fillRect(X(x) - L(0.25), Y(26), L(0.5), Y(FIELD.standsTop) - Y(26));
+            c.fillStyle = '#1b2638';
+            c.fillRect(X(x) - L(3), Y(27.6), L(6), L(2.2));
+            c.fillStyle = '#fff6dc';
+            for (let r = 0; r < 2; r++) for (let k = 0; k < 6; k++) {
+                c.beginPath();
+                c.arc(X(x) - L(2.5) + L(k), Y(27.1 - r * 0.95), L(0.3), 0, Math.PI * 2);
+                c.fill();
+            }
+        }
+
+        // The stands: tiers of seats and a crowd of dots.
+        const stands = c.createLinearGradient(0, Y(FIELD.standsTop), 0, Y(FIELD.wallTop));
+        stands.addColorStop(0, '#141d2c');
+        stands.addColorStop(1, '#1d2a3d');
+        c.fillStyle = stands;
+        c.fillRect(0, Y(FIELD.standsTop), W, Y(FIELD.wallTop) - Y(FIELD.standsTop) + 1);
+        const crowd = ['#c9d2e0', '#e8c170', '#d76a5c', '#7fa7d9', '#9aa5b5', '#f1ede4'];
+        const rows = 9;
+        for (let r = 0; r < rows; r++) {
+            const y = FIELD.standsTop - 0.6 - r * (FIELD.standsTop - FIELD.wallTop - 0.8) / rows;
+            for (let x = VIEW.left + rnd() * 0.8; x < VIEW.right; x += 0.75 + rnd() * 0.5) {
+                if (rnd() < 0.18) continue;     // an empty seat
+                c.globalAlpha = 0.22 + rnd() * 0.3;
+                c.fillStyle = crowd[Math.floor(rnd() * crowd.length)];
+                c.beginPath();
+                c.arc(X(x), Y(y + rnd() * 0.3), L(0.26), 0, Math.PI * 2);
+                c.fill();
+            }
+        }
+        c.globalAlpha = 1;
+        c.fillStyle = 'rgba(8, 12, 22, 0.35)';      // aisles
+        for (const x of [-20, -7, 7, 20]) c.fillRect(X(x) - L(0.3), Y(FIELD.standsTop), L(0.6), Y(FIELD.wallTop) - Y(FIELD.standsTop));
+
+        // The outfield wall, with its yellow line and the distance to centre.
+        const wall = c.createLinearGradient(0, Y(FIELD.wallTop), 0, Y(FIELD.wallBottom));
+        wall.addColorStop(0, '#12382a');
+        wall.addColorStop(1, '#0d2a20');
+        c.fillStyle = wall;
+        c.fillRect(0, Y(FIELD.wallTop), W, Y(FIELD.wallBottom) - Y(FIELD.wallTop) + 1);
+        c.fillStyle = '#d9b54a';
+        c.fillRect(0, Y(FIELD.wallTop), W, Math.max(1, L(0.22)));
+        c.fillStyle = 'rgba(255, 255, 255, 0.5)';
+        c.font = `700 ${Math.round(L(1.5))}px system-ui, sans-serif`;
+        c.textAlign = 'center';
+        c.textBaseline = 'middle';
+        c.fillText('400', X(0), Y((FIELD.wallTop + FIELD.wallBottom) / 2 - 0.1));
+
+        // Grass, mowed in bands that widen toward you.
+        const top = FIELD.wallBottom;
+        const span = top - VIEW.bottom;
+        const bands = 11;
+        const edge = (k) => top - span * Math.pow(k / bands, 1.7);
+        for (let k = 0; k < bands; k++) {
+            const depth = k / (bands - 1);
+            const light = k % 2 === 0;
+            c.fillStyle = mixColor(light ? '#1c5233' : '#184a2d', light ? '#236440' : '#1f5a39', depth);
+            c.fillRect(0, Y(edge(k)), W, Y(edge(k + 1)) - Y(edge(k)) + 1);
+        }
+        // The far edge of the infield dirt, and the mound.
+        ellipse(0, FIELD.mound + 3.6, 44, 1.5, 'rgba(122, 86, 52, 0.55)');
+        ellipse(0, FIELD.mound - 0.6, 8.5, 1.7, '#6f4d2f');
+        ellipse(0, FIELD.mound - 0.3, 7.6, 1.25, '#80593a');
+        c.fillStyle = '#efece3';
+        c.fillRect(X(-0.9), Y(FIELD.mound - 0.1), L(1.8), Math.max(1, L(0.3)));
+        this.drawPitcher(c);
+
+        // The dirt around home plate, and the chalk of the batter's boxes.
+        const dirt = c.createLinearGradient(0, Y(FIELD.dirtTop), 0, H);
+        dirt.addColorStop(0, '#6b4a2d');
+        dirt.addColorStop(1, '#86603a');
+        c.fillStyle = dirt;
+        c.beginPath();
+        c.ellipse(X(0), Y(VIEW.bottom - 2), L(47), L(FIELD.dirtTop - VIEW.bottom + 2), 0, 0, Math.PI * 2);
+        c.fill();
+        // a few scuffs so the dirt isn't flat
+        for (let i = 0; i < 70; i++) {
+            const x = VIEW.left + rnd() * (VIEW.right - VIEW.left);
+            const y = VIEW.bottom + rnd() * (FIELD.dirtTop - VIEW.bottom - 2.5);
+            c.fillStyle = rnd() < 0.5 ? 'rgba(0, 0, 0, 0.08)' : 'rgba(255, 235, 200, 0.06)';
+            c.beginPath();
+            c.ellipse(X(x), Y(y), L(0.6 + rnd() * 1.6), L(0.15 + rnd() * 0.25), 0, 0, Math.PI * 2);
+            c.fill();
+        }
+        c.strokeStyle = 'rgba(244, 241, 234, 0.55)';
+        c.lineWidth = Math.max(1, L(0.3));
+        c.lineJoin = 'round';
+        for (const d of [-1, 1]) {
+            c.beginPath();
+            c.moveTo(X(d * 12.5), Y(VIEW.bottom - 1));
+            c.lineTo(X(d * 11), Y(GROUND + 5));
+            c.lineTo(X(d * 27), Y(GROUND + 5));
+            c.lineTo(X(d * 31.5), Y(VIEW.bottom - 1));
+            c.stroke();
+        }
+
+        // Darker toward the corners, so the eye stays on the zone.
+        const vig = c.createRadialGradient(W / 2, H * 0.46, H * 0.3, W / 2, H * 0.46, H * 0.85);
+        vig.addColorStop(0, 'rgba(0, 0, 0, 0)');
+        vig.addColorStop(1, 'rgba(0, 0, 0, 0.42)');
+        c.fillStyle = vig;
+        c.fillRect(0, 0, W, H);
+        this.drawPlate(c);
+    }
+
+    // The pitcher, far away on the mound: a small grey figure at the set.
+    drawPitcher(c) {
+        const X = (x) => this.px(x);
+        const Y = (y) => this.py(y);
+        const L = (d) => this.len(d);
+        const y0 = FIELD.mound;
+        const line = (pts, w, color) => {
+            c.strokeStyle = color;
+            c.lineWidth = L(w);
+            c.lineCap = 'round';
+            c.lineJoin = 'round';
+            c.beginPath();
+            pts.forEach(([x, y], i) => (i ? c.lineTo(X(x), Y(y0 + y)) : c.moveTo(X(x), Y(y0 + y))));
+            c.stroke();
+        };
+        c.fillStyle = 'rgba(0, 0, 0, 0.25)';
+        c.beginPath();
+        c.ellipse(X(0.3), Y(y0 - 0.05), L(1.5), L(0.3), 0, 0, Math.PI * 2);
+        c.fill();
+        line([[-0.45, 0.1], [-0.35, 2.3]], 0.6, '#c9ccd1');      // legs
+        line([[0.45, 0.1], [0.35, 2.3]], 0.6, '#c9ccd1');
+        line([[0, 2.2], [0, 4.1]], 1.35, '#b9bdc4');            // jersey
+        line([[-0.7, 3.9], [-0.9, 3], [-0.1, 3.1]], 0.5, '#b9bdc4');   // glove arm, hands together
+        line([[0.7, 3.9], [0.9, 3], [0.1, 3.1]], 0.5, '#b9bdc4');
+        c.fillStyle = '#7a5a3c';                                // glove
+        c.beginPath();
+        c.arc(X(0), Y(y0 + 3.1), L(0.42), 0, Math.PI * 2);
+        c.fill();
+        c.fillStyle = '#c99873';                                // head and cap
+        c.beginPath();
+        c.arc(X(0), Y(y0 + 4.95), L(0.55), 0, Math.PI * 2);
+        c.fill();
+        c.fillStyle = '#28303d';
+        c.beginPath();
+        c.arc(X(0), Y(y0 + 5.05), L(0.58), Math.PI, 0);
+        c.fill();
+        c.fillRect(X(-0.75), Y(y0 + 5.08), L(1.5), Math.max(1, L(0.14)));
+    }
+
+    drawPlate(c = this.ctx) {
         const y = GROUND + 1.5;
         c.fillStyle = '#f4f1ea';
         c.beginPath();
@@ -98,6 +269,9 @@ export class PlateView {
         c.lineTo(this.px(-8.5), this.py(y - 1.5));
         c.closePath();
         c.fill();
+        c.strokeStyle = 'rgba(0, 0, 0, 0.35)';
+        c.lineWidth = Math.max(1, this.len(0.2));
+        c.stroke();
     }
 
     // The batter, seen from behind the plate (where this view is: a
@@ -289,6 +463,8 @@ export class PlateView {
         const w = this.len(2 * ZONE.halfW);
         const h = this.len(2 * ZONE.halfH);
         c.save();
+        c.fillStyle = 'rgba(4, 12, 9, 0.3)';
+        c.fillRect(x, y, w, h);
         c.strokeStyle = 'rgba(255,255,255,0.25)';
         c.lineWidth = Math.max(1, this.len(0.15));
         c.beginPath();
@@ -435,12 +611,41 @@ export class PlateView {
             if (i === 0) c.moveTo(this.px(tx), this.py(ty)); else c.lineTo(this.px(tx), this.py(ty));
         }
         c.stroke();
+        const bx = this.px(x);
+        const by = this.py(y);
+        const ball = c.createRadialGradient(bx - r * 0.35, by - r * 0.35, r * 0.1, bx, by, r);
+        ball.addColorStop(0, '#ffffff');
+        ball.addColorStop(1, '#d9d6cc');
         c.beginPath();
-        c.arc(this.px(x), this.py(y), r, 0, Math.PI * 2);
-        c.fillStyle = '#fbfbf8';
+        c.arc(bx, by, r, 0, Math.PI * 2);
+        c.fillStyle = ball;
         c.fill();
         c.strokeStyle = f.color;
         c.lineWidth = Math.max(1, r * 0.25);
+        c.stroke();
+        // seams, turning as it comes
+        if (r > 4) {
+            const spin = p * 9;
+            c.strokeStyle = '#c0392b';
+            c.lineWidth = Math.max(1, r * 0.12);
+            for (const s of [-1, 1]) {
+                c.beginPath();
+                c.arc(bx + Math.cos(spin) * r * 1.05 * s, by + Math.sin(spin) * r * 1.05 * s, r * 0.85, spin + (s > 0 ? Math.PI * 0.72 : -Math.PI * 0.28), spin + (s > 0 ? Math.PI * 1.28 : Math.PI * 0.28));
+                c.stroke();
+            }
+        }
+        c.restore();
+    }
+
+    // A ring that spreads from where the pitch landed. t: 0–1.
+    drawImpact({ x, y, t, color }) {
+        const c = this.ctx;
+        c.save();
+        c.globalAlpha = Math.max(0, 1 - t) * 0.9;
+        c.strokeStyle = color || '#fff';
+        c.lineWidth = Math.max(1, this.len(0.35) * (1 - t * 0.6));
+        c.beginPath();
+        c.arc(this.px(x), this.py(y), this.len(ZONE.ballR * (1 + 1.6 * t)), 0, Math.PI * 2);
         c.stroke();
         c.restore();
     }
@@ -520,6 +725,26 @@ export function drawHeatThumb(canvas, heat, mirror) {
     c.strokeStyle = '#fff';
     c.lineWidth = 1.5 * dpr;
     c.strokeRect(cw, ch, cw * 3, ch * 3);
+}
+
+// A small repeatable random-number stream (so the crowd doesn't change
+// between sizes).
+function seeded(seed) {
+    let a = seed >>> 0;
+    return () => {
+        a = (a + 0x6D2B79F5) >>> 0;
+        let t = Math.imul(a ^ (a >>> 15), 1 | a);
+        t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+        return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+    };
+}
+
+// Blend two #rrggbb colours (t = 0 gives a, 1 gives b).
+function mixColor(a, b, t) {
+    const x = parseInt(a.slice(1), 16);
+    const y = parseInt(b.slice(1), 16);
+    const ch = (s) => Math.round(((x >> s) & 255) + (((y >> s) & 255) - ((x >> s) & 255)) * t);
+    return `rgb(${ch(16)}, ${ch(8)}, ${ch(0)})`;
 }
 
 // Lighten (amount > 0) or darken a #rrggbb colour.

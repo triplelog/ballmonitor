@@ -231,25 +231,32 @@ export class Game {
             }
         }
 
-        // Fatigue and the pitch count.
-        const status = this.pitcherStatus();
-        // Capped so an exhausted pitcher is bad, not absurd.
-        status.fatigue = Math.min(1.5, status.fatigue + F.eval('fatigueGain', s));
-        status.pitches += 1;
-        const pbox = this.pitchBox(pitcher.id);
-        pbox.pitches += 1;
-        if (['called', 'swinging', 'foul', 'inplay'].includes(result.call)) pbox.strikes += 1;
+        // A clock violation is a ball with no pitch thrown: nothing for the
+        // pitch count, his arm, the batter's memory or the scouting record.
+        const thrown = !opts.clockViolation;
+        if (thrown) {
+            // Fatigue and the pitch count.
+            const status = this.pitcherStatus();
+            // Capped so an exhausted pitcher is bad, not absurd.
+            status.fatigue = Math.min(1.5, status.fatigue + F.eval('fatigueGain', s));
+            status.pitches += 1;
+            const pbox = this.pitchBox(pitcher.id);
+            pbox.pitches += 1;
+            if (['called', 'swinging', 'foul', 'inplay'].includes(result.call)) pbox.strikes += 1;
 
-        seen.push({
-            type: shape.name, abbr: shape.abbr, kind: shape.kind, color: shape.color,
-            velocity: shape.velocity, call: result.call,
-            ...(result.loc ? { x: result.loc.x, y: result.loc.y } : {}),
-        });
+            seen.push({
+                type: shape.name, abbr: shape.abbr, kind: shape.kind, color: shape.color,
+                velocity: shape.velocity, call: result.call,
+                ...(result.loc ? { x: result.loc.x, y: result.loc.y } : {}),
+            });
+        }
 
         this.applyCall(result, s);
         result.after ??= this.snapshot();
-        seen[seen.length - 1].call = result.call;
-        recordPitch(this.league, batter.id, shape.name, result);
+        if (thrown) {
+            seen[seen.length - 1].call = result.call;
+            recordPitch(this.league, batter.id, shape.name, result);
+        }
         st.rngState = this.rng.seed;
         return result;
     }
@@ -334,12 +341,17 @@ export class Game {
         // recorded before runners move.
         const score = (entry, countsRbi = true) => {
             if (st.outs >= 3) return;
+            // A walk-off ends the game as the winning run scores; only a
+            // home run lets the runners behind it score too.
+            if (play !== 'HR' && st.half === 'bottom' && st.inning >= st.settings.innings && st.score.home > st.score.away) return;
             st.score[bk] += 1;
             st.line[bk][st.line[bk].length - 1] += 1;
             this.batBox(entry.id).r += 1;
             const rp = this.pitchBox(entry.resp);
             rp.r += 1;
-            if (!entry.unearned) rp.er += 1;
+            // Unearned: he reached or scored on an error, or the inning
+            // would already be over without this half's errors.
+            if (!entry.unearned && st.outs + (st.halfErrors ?? 0) < 3) rp.er += 1;
             if (countsRbi) rbi += 1;
             scored.push(entry.id);
         };
@@ -422,7 +434,8 @@ export class Game {
             case 'E':
                 bbox.ab += 1;
                 st.errors[this.fieldingKey] += 1;
-                if (b[2]) score(b[2], false);
+                st.halfErrors = (st.halfErrors ?? 0) + 1;
+                if (b[2]) score({ ...b[2], unearned: true }, false);
                 b[2] = b[1]; b[1] = b[0];
                 b[0] = { ...runnerEntry, unearned: true };
                 text = `${name} reached on an error.`;
@@ -518,6 +531,7 @@ export class Game {
     endHalf() {
         const st = this.state;
         const { innings } = st.settings;
+        st.halfErrors = 0;
         if (st.half === 'top' && st.inning >= innings && st.score.home > st.score.away) return this.finish();
         if (st.half === 'bottom' && st.inning >= innings && st.score.home !== st.score.away) return this.finish();
         const mercy = st.settings.mercy;

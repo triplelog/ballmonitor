@@ -15,17 +15,20 @@
 // letting the computer finish an expired half. Player ids are secrets:
 // they are never sent to anyone else.
 
-import { mkdirSync, readdirSync, readFileSync, writeFileSync, renameSync } from 'node:fs';
+import { mkdirSync, readdirSync, readFileSync, writeFileSync, renameSync, rmSync } from 'node:fs';
 import { join } from 'node:path';
 import { randomBytes } from 'node:crypto';
 import { generateLeague } from '../src/engine/league.js';
-import { createFormulas } from '../src/engine/formulas.js';
+import { createFormulas, FORMULA_BY_ID } from '../src/engine/formulas.js';
 import { LEVELS, levelGameOptions } from '../src/engine/levels.js';
 import { seedHistory } from '../src/engine/pitchStats.js';
 import { Game } from '../src/engine/game.js';
 
 const CODE_CHARS = 'ABCDEFGHJKLMNPQRSTUVWXYZ23456789';
 const PITCH_LOG_MAX = 2000;
+const FORMULA_MAX = 2000;       // characters in one custom formula
+const EXPIRE_MS = 30 * 24 * 3600 * 1000;   // a game nobody has touched for a month is deleted
+const MAX_OPEN_GAMES = 100;     // unfinished games one player can be in
 
 export class MpError extends Error {
     constructor(status, message, extra = {}) {
@@ -146,6 +149,23 @@ export function createMpStore({ dir, now = () => Date.now() } = {}) {
         for (const rec of games.values()) if (enforceDeadline(rec)) save(rec);
     }
 
+    // Delete games (finished, waiting or abandoned) that nobody has touched
+    // for a month. Turn deadlines are settled first, so a game still being
+    // played on a clock counts as touched. Returns how many went.
+    function expire() {
+        checkAll();
+        let n = 0;
+        for (const rec of [...games.values()]) {
+            if (now() - (rec.updatedAt ?? rec.createdAt ?? 0) < EXPIRE_MS) continue;
+            games.delete(rec.id);
+            formulas.delete(rec.id);
+            rmSync(join(dir, `${rec.id}.json`), { force: true });
+            n += 1;
+        }
+        return n;
+    }
+    expire();
+
     function requireTurn(rec, body, phase) {
         if (enforceDeadline(rec)) {
             save(rec);
@@ -192,15 +212,27 @@ export function createMpStore({ dir, now = () => Date.now() } = {}) {
     }
 
     return {
+        expire,
+
         // body: { playerId, name, level, innings, timeLimit (seconds or null),
         //         side ('home' | 'away' | 'random'), both (both seats),
         //         manage (lineup/substitution turns, default on), formulas, difficulty }
         create(body) {
             const playerId = String(body.playerId ?? '');
             if (playerId.length < 8) throw new MpError(400, 'Missing player id.');
-            const level = LEVELS[body.level] ? body.level : 'pro';
+            const level = Object.hasOwn(LEVELS, String(body.level)) ? String(body.level) : 'pro';
             const L = LEVELS[level];
-            const rules = body.formulas && typeof body.formulas === 'object' ? body.formulas : {};
+            // Each player can have only so many unfinished games (each one
+            // costs a simulated league and a file).
+            const open = [...games.values()].filter((g) => g.status !== 'done' && seatsOf(g, playerId).length).length;
+            if (open >= MAX_OPEN_GAMES) throw new MpError(429, `You already have ${open} games going. Finish or resign one first.`);
+            // Custom rules: only real formulas, as text of a sensible length.
+            const rules = {};
+            if (body.formulas && typeof body.formulas === 'object') {
+                for (const [id, text] of Object.entries(body.formulas)) {
+                    if (Object.hasOwn(FORMULA_BY_ID, id) && typeof text === 'string' && text.length <= FORMULA_MAX) rules[id] = text;
+                }
+            }
             const F = createFormulas(rules);
             const seed = randomBytes(4).readUInt32LE(0);
             const full = generateLeague(seed, { level });

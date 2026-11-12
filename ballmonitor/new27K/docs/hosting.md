@@ -66,7 +66,8 @@ Put [Caddy](https://caddyserver.com) in front for HTTPS (it gets certificates by
 Use HTTPS: the player id each browser sends is its password, and plain
 HTTP would let anyone on the same Wi-Fi read it.
 
-Back up `MP_DATA_DIR` (a nightly copy is enough). To update, replace the
+Games nobody has touched for a month (finished, never joined, or abandoned)
+are deleted, at start-up and every hour. Back up `MP_DATA_DIR` (a nightly copy is enough). To update, replace the
 files and restart; games in progress carry on.
 
 ## Cheating: what's handled, what isn't

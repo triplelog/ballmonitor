@@ -6,6 +6,7 @@ import { defaultLineup, playerName, teamName } from '../engine/league.js';
 import { esc } from './storage.js';
 import { bestWorst } from './scouting.js';
 import { CHALLENGE_BY_ID } from '../engine/challenges.js';
+import { HOW_TO_STEPS } from './help.js';
 
 export const rating = (v) => `<span class="rating ${v >= 65 ? 'hi' : v <= 40 ? 'lo' : ''}">${v}</span>`;
 
@@ -46,18 +47,14 @@ export function renderMenu(app) {
             <button class="${saved ? '' : 'primary'}" data-go="quick">Quick Game</button>
             <button data-go="challenges">Challenges & Achievements</button>
             <button data-go="lab">Formula Lab</button>
-            <button disabled title="Coming later">Season <span class="soon">coming later</span></button>
-            <button disabled title="Coming later">Career <span class="soon">coming later</span></button>
+            <button data-go="season">Season</button>
+            <button data-go="careers">Career</button>
             <button disabled title="Coming later">Multiplayer <span class="soon">coming later</span></button>
         </div>
         <div class="panel howto">
             <h3>How to pitch</h3>
             <ol>
-                <li>Choose a pitch and set your velocity and movement effort. More effort means more speed or break, but less control and more fatigue. The dashed line shows how the pitch will break.</li>
-                <li>Press <b>Pitch</b> (or Space). The strike zone jumps to a new spot and starts to wander. In hidden-guide mode the break line disappears now, so remember it.</li>
-                <li>Click where to aim. The ball breaks from there and scatters by your control.</li>
-                <li>Beat the pitch clock (20 seconds unless you change it; it appears for the last 10). Run out of time and it's a ball.</li>
-                <li>Stuck? Once an inning, call a <b>catcher’s visit</b>: it stops and resets the clock, and he’ll tell you what to throw this hitter.</li>
+                ${HOW_TO_STEPS}
             </ol>
         </div>
         <p class="credit">Every rule of the game is a formula, read by <a href="https://mathzetta.com/" target="_blank" rel="noopener">MathZetta</a> — change them in the Formula Lab.</p>
@@ -204,7 +201,7 @@ export function renderLineup(app, ctx = null) {
                     </table>
                     <h3 style="margin-top:16px">Bench</h3>
                     <table class="grid">
-                        <tr><th>Pos</th>${head}<th>Start in place of</th></tr>
+                        <tr><th>Pos</th>${head}<th>Swap in for</th></tr>
                         ${bench.map((id) => {
                             const b = league.players[id];
                             return `<tr><td><span class="pos">${b.pos}</span></td>${batterRow(b, `
@@ -291,6 +288,7 @@ function quickGameLineup(app) {
 }
 
 function startQuickGame(app, team, lineup, starterId) {
+    if (app.savedGame() && !confirm('You have a game in progress. Starting a new one replaces it. Go ahead?')) return;
     const { league } = app;
     const p = app.prefs;
     const opp = league.teams[p.oppTeamId];

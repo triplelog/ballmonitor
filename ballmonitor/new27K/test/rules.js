@@ -103,7 +103,48 @@ function play(game, playCode) {
     g.state.strikes = 2;
     const before = g.state.pa.pitches.length;
     const r = g.throwPitch({ pitchIdx: 0, effort: 50, moveEffort: 50, clockViolation: true });
-    check('pitch clock violation is a ball', r.call === 'clock' && g.state.balls === 1 && g.state.pa.pitches.length === before + 1);
+    check('pitch clock violation is a ball', r.call === 'clock' && g.state.balls === 1);
+    // ...but not a pitch: nothing thrown, so no pitch count, fatigue or pitch for the batter to remember.
+    check('pitch clock violation is not a pitch', g.state.pa.pitches.length === before && g.pitcherStatus().pitches === 0 && g.pitcherStatus().fatigue === 0 && g.pitchBox(g.pitcher().id).pitches === 0);
+}
+{
+    // Walk-off: bottom of the 9th, tied, bases loaded. A double ends it as the winning run scores...
+    const g = setup();
+    Object.assign(g.state, { inning: 9, half: 'bottom', outs: 1 });
+    g.state.score = { away: 3, home: 3 };
+    g.state.line.home[8] = 0;
+    bases(g, [true, true, true]);
+    play(g, '2B');
+    check('walk-off double: only the winning run counts', g.state.over && g.state.score.home === 4, `home ${g.state.score.home}`);
+}
+{
+    // ...but on a home run everybody scores.
+    const g = setup();
+    Object.assign(g.state, { inning: 9, half: 'bottom', outs: 1 });
+    g.state.score = { away: 3, home: 3 };
+    g.state.line.home[8] = 0;
+    bases(g, [true, true, true]);
+    play(g, 'HR');
+    check('walk-off grand slam: all four score', g.state.over && g.state.score.home === 7, `home ${g.state.score.home}`);
+}
+{
+    // Two outs, an error, then a home run: the inning should have been over, so neither run is earned.
+    const g = setup();
+    g.state.outs = 2;
+    const pid = g.pitcher().id;
+    play(g, 'E');
+    play(g, 'HR');
+    const box = g.pitchBox(pid);
+    check('runs after a two-out error are unearned', box.r === 2 && box.er === 0, `R ${box.r} ER ${box.er}`);
+}
+{
+    // With nobody out, an error then a home run: the batter who reached on the error is unearned, the homer is earned.
+    const g = setup();
+    const pid = g.pitcher().id;
+    play(g, 'E');
+    play(g, 'HR');
+    const box = g.pitchBox(pid);
+    check('after an error with no outs, only his run is unearned', box.r === 2 && box.er === 1, `R ${box.r} ER ${box.er}`);
 }
 {
     // A pitch well outside never gets a swing or a strike call with these formulas.

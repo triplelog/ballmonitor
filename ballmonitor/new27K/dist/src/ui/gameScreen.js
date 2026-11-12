@@ -23,6 +23,8 @@ import { PID } from '../engine/career.js';
 import { aiPickReliever } from '../engine/ai.js';
 import { catcherAdvice, callPitch } from '../engine/advice.js';
 import { ZONE } from '../engine/data.js';
+import { helpHTML } from './help.js';
+import { sfx, setSound } from './sound.js';
 
 const PLAY_BANNERS = {
     K: ['STRIKEOUT!', '#3dd68c'], KL: ['STRIKEOUT LOOKING!', '#3dd68c'],
@@ -65,7 +67,9 @@ export function renderGame(app, args) {
     const clockSeconds = () => clockSecondsOf(prefs);
     const autoBat = () => prefs.autoBat ?? true;
     const catcherCalls = () => !!prefs.catcherCalls && !mp;
+    setSound(prefs.sound ?? true);
 
+    const looks = new Map();    // batter id → colours and number, worked out once
     const ui = {
         mode: 'ready',          // ready | aiming | playback
         pitchIdx: 0,
@@ -100,6 +104,8 @@ export function renderGame(app, args) {
                 <label class="toggle"><input type="checkbox" id="t-heat" ${prefs.showHeat ? 'checked' : ''}> Heat map</label>
                 <label class="toggle"><input type="checkbox" id="t-odds" ${prefs.showOdds ? 'checked' : ''}> Odds</label>
                 <label class="toggle"><input type="checkbox" id="t-calls" ${prefs.catcherCalls ? 'checked' : ''}> Catcher calls pitches</label>
+                <label class="toggle" title="When your team bats: sim the whole half-inning, or manage each batter yourself"><input type="checkbox" id="t-autobat" ${autoBat() ? 'checked' : ''}> Auto-bat</label>
+                <label class="toggle"><input type="checkbox" id="t-sound" ${(prefs.sound ?? true) ? 'checked' : ''}> Sound</label>
                 <label class="toggle">Pitch clock <select id="t-clock">
                     <option value="press" ${(prefs.clockMode ?? 'press') === 'press' ? 'selected' : ''}>starts at Pitch</option>
                     <option value="continuous" ${prefs.clockMode === 'continuous' ? 'selected' : ''}>runs between pitches</option>
@@ -115,6 +121,7 @@ export function renderGame(app, args) {
         <div class="g-right"></div>
         <div class="g-log panel"><h3>Play-by-play</h3><div class="log"></div></div>
         <div id="overlay"></div>
+        <div id="help-layer"></div>
         <div class="toasts"></div>
     </div>`;
 
@@ -143,7 +150,10 @@ export function renderGame(app, args) {
         const b = st.over ? [null, null, null] : st.bases;
         const [balls, strikes, outs] = st.over ? [0, 0, 0] : [st.balls, st.strikes, st.outs];
         $('.g-top').innerHTML = `
-            <button class="menu-btn" data-act="menu" title="Menu">☰<span class="lbl"> Menu</span></button>
+            <div class="top-btns">
+                <button class="menu-btn" data-act="menu" title="Menu">☰<span class="lbl"> Menu</span></button>
+                <button class="menu-btn" data-act="help" title="How to play (?)" aria-label="How to play">?<span class="lbl"> Help</span></button>
+            </div>
             <div class="panel linescore"><table>
                 <tr><th></th>${Array.from({ length: cols }, (_, i) => `<th class="inn">${i + 1}</th>`).join('')}<th class="rhe">R</th><th class="rhe">H</th><th class="rhe">E</th></tr>
                 ${row('away', away)}${row('home', home)}
@@ -177,7 +187,7 @@ export function renderGame(app, args) {
             <div class="panel pitcher-card">
                 <div class="card-head"><span class="name">${esc(playerName(pitcher))}</span><span class="muted">${pitcher.throws}HP · ${pitcher.role}</span></div>
                 <div class="energy ${energy < 0.25 ? 'low' : energy < 0.5 ? 'mid' : ''}"><div style="width:${Math.round(energy * 100)}%"></div></div>
-                <div class="muted num" style="font-size:12px">Energy ${Math.round(energy * 100)}% · ${status.pitches} pitches · ${ipText(box.outs)} IP, ${box.h} H, ${box.r} R, ${box.bb} BB, ${box.k} K</div>
+                <div class="muted num pc-line"><span>Energy ${Math.round(energy * 100)}% · ${status.pitches} pitch${status.pitches === 1 ? '' : 'es'}</span><span>${ipText(box.outs)} IP · ${box.h} H · ${box.r} R · ${box.bb} BB · ${box.k} K</span></div>
             </div>
             <div class="panel pitch-panel">
                 ${callCard()}
@@ -249,10 +259,9 @@ export function renderGame(app, args) {
                     </div>` : '<div class="muted">Bench is empty.</div>'}
                 </div>
                 <div class="actions">
-                    <button class="primary" data-act="sim-pa" ${busy ? 'disabled' : ''}>Sim batter</button>
+                    <button class="primary" data-act="sim-pa" ${busy ? 'disabled' : ''}>Sim batter<span class="no-touch"> (Space)</span></button>
                     <button data-act="sim-half" ${busy ? 'disabled' : ''}>Sim rest of inning</button>
                 </div>
-                <label class="toggle"><input type="checkbox" id="t-autobat" ${autoBat() ? 'checked' : ''}> Sim our half-innings automatically</label>
             </div>`;
     }
 
@@ -365,7 +374,8 @@ export function renderGame(app, args) {
     function bullpenTable() {
         if (!userKey) return '';
         const side = game.side(userKey);
-        const canChange = game.isUserPitching() && ui.mode === 'ready' && !career;
+        // Challenges built around one pitcher ("no help is coming") have no bullpen.
+        const canChange = game.isUserPitching() && ui.mode === 'ready' && !career && !challenge?.pitcher;
         const rows = game.team(userKey).pitchers.map((id) => {
             const p = league.players[id];
             const resting = (side.unavailable ?? []).includes(id);
@@ -456,6 +466,22 @@ export function renderGame(app, args) {
         else if (ui.mode === 'ready' && game.isUserPitching() && game.mustChangePitcher(userKey)) showForcedChange();
         maybeStartClock();
         maybeCall();
+        if (!prefs.seenHelp && !mp && !game.state.over && game.isUserPitching() && ui.mode === 'ready' && !$('#overlay').innerHTML) showHelp(true);
+    }
+
+    // ---------- help ----------
+    // Its own layer, so it can open over anything and close without
+    // disturbing what was underneath. The clock waits while it is open.
+    function showHelp(first = false) {
+        if (ui.mode === 'aiming' || ui.mode === 'sending') return;   // not once the zone is moving
+        ui.help = true;
+        if (!prefs.seenHelp) { prefs.seenHelp = true; app.savePrefs(); }
+        $('#help-layer').innerHTML = helpHTML({ first });
+        $('#help-layer button.primary')?.focus({ preventScroll: true });
+    }
+    function closeHelp() {
+        ui.help = false;
+        $('#help-layer').innerHTML = '';
     }
 
     function showFinal() {
@@ -492,7 +518,17 @@ export function renderGame(app, args) {
                 if (res) settleChallenge(res);
             }
         }
-        // The game can also end while your team bats (a walk-off).
+        // The game can also end while your team bats (a walk-off, or the
+        // last out of a game you finished pitching a half-inning ago):
+        // check the whole-game feats once more.
+        if (game.state.over && userKey && !ui.endChecked) {
+            ui.endChecked = true;
+            const r = { gameOver: true, pitcherId: game.side(userKey).pitcherId };
+            for (const id of checkAchievements(tracker, r, game, earned)) {
+                earned.push(id);
+                showToast({ id, first: recordAchievement(id) });
+            }
+        }
         if (challenge && !ui.challengeResult && game.state.over) settleChallenge(evaluateChallengeAtEnd(challenge, tracker, game));
     }
 
@@ -853,7 +889,6 @@ export function renderGame(app, args) {
             refreshAll();
             const rs = game.simHalfInning();
             play(rs.filter((r) => r.paEnded), 'fast', [], rs);
-            renderOffensePanel();
             $('.g-left').classList.add('busy');
             return 'played';
         }
@@ -907,7 +942,7 @@ export function renderGame(app, args) {
     function startAiming() {
         if (ui.mode !== 'ready' || !game.isUserPitching() || ui.challengeResult || ui.mpStale) return;
         if (mp && !mp.myTurn) return;
-        if (ui.visit) return;
+        if (ui.visit || ui.help) return;
         if (career && (careerOut() || $('#overlay').innerHTML)) return;
         if (!career && game.mustChangePitcher(userKey)) { showForcedChange(); return; }
         const scope = game.situationScope();
@@ -934,7 +969,7 @@ export function renderGame(app, args) {
     function maybeStartClock() {
         if (clockMode() === 'continuous' && !ui.clock && ui.mode === 'ready' && game.isUserPitching() && !ui.challengeResult) ui.clock = startClock();
     }
-    const clockPaused = () => !!$('#overlay').innerHTML || !game.isUserPitching() || ui.challengeResult;
+    const clockPaused = () => !!$('#overlay').innerHTML || ui.help || !game.isUserPitching() || ui.challengeResult;
 
     function release(pt) {
         if (ui.mode !== 'aiming' && !(ui.mode === 'ready' && !pt)) return;
@@ -965,6 +1000,9 @@ export function renderGame(app, args) {
         ui.current = null;
         ui.mode = 'playback';
         $('.g-left').classList.add('busy');
+        // The button said "Click the zone to throw" while you aimed.
+        const pitchBtn = $('.pitch-btn');
+        if (pitchBtn) { pitchBtn.disabled = true; pitchBtn.textContent = 'Pitch'; }
         renderHint();
     }
 
@@ -988,7 +1026,7 @@ export function renderGame(app, args) {
         ui.side = battingSide(batter, league.players[r.pitcherId]);
         ui.heat = batter.heat;
         const z = r.zone || { x: 0, y: 0 };
-        const dur = r.loc ? (fast ? 0.32 : 0.55) * Math.pow(95 / r.pitch.velocity, 1.5) : 0;
+        const dur = r.loc ? (fast ? 0.32 : 0.55) * Math.pow(95 / Math.max(30, r.pitch.velocity || 30), 1.5) : 0;
         ui.current = {
             result: r, t: 0, dur,
             hold: fast ? (r.paEnded ? 1.0 : 0.45) : (r.paEnded ? 1.6 : 0.9),
@@ -996,6 +1034,7 @@ export function renderGame(app, args) {
             to: r.loc ? { x: z.x + r.loc.x, y: z.y + r.loc.y } : null,
             zone: z,
             landed: false,
+            fast,
         };
         ui.lastResult = r;
     }
@@ -1006,10 +1045,22 @@ export function renderGame(app, args) {
         const r = c.result;
         ui.markers = ui.markers || [];
         if (r.loc) ui.markers.push({ x: r.loc.x, y: r.loc.y, color: r.pitch.color, call: r.call });
+        playSound(r, c.fast);
         if (r.after) renderTop(r.after);
         renderOdds(r);
         for (const t of ui.toasts.filter((x) => x.result === r)) showToast(t);
         ui.toasts = ui.toasts.filter((x) => x.result !== r);
+    }
+
+    // Glove or bat, then the crowd if it mattered (cheering for your side).
+    function playSound(r, quiet) {
+        if (!r.loc) return;
+        if (r.call === 'foul' || r.call === 'inplay') sfx.crack(quiet); else sfx.pop(quiet);
+        if (!r.paEnded || !userKey) return;
+        const userPitching = game.team(userKey).pitchers.includes(r.pitcherId);
+        const goodForPitcher = ['K', 'KL', 'DP'].includes(r.play);
+        const badForPitcher = r.runs > 0 || r.play === 'HR';
+        if (goodForPitcher || badForPitcher) sfx.crowd(goodForPitcher === userPitching);
     }
 
     function bannerFor(r) {
@@ -1034,7 +1085,9 @@ export function renderGame(app, args) {
         last = now;
 
         if (ui.clock && (ui.mode === 'aiming' || ui.mode === 'ready') && !clockPaused()) {
+            const before = ui.clock.left;
             ui.clock.left -= dt;
+            if (before <= 3 && ui.clock.left > 0 && Math.ceil(before) !== Math.ceil(ui.clock.left)) sfx.tick();
             if (ui.clock.left <= 0) release(null);
         }
         if (ui.mode === 'aiming') {
@@ -1048,7 +1101,7 @@ export function renderGame(app, args) {
                 if (c.t >= c.dur + c.hold) {
                     if (c.result.paEnded) ui.markers = [];
                     // Refresh panels after each pitch so the count keeps up.
-                    if (ui.queue.length) { renderTop(); renderLog(); }
+                    if (ui.queue.length) renderTop(c.result.after);
                     ui.current = null;
                     if (!ui.queue.length) nextInQueue();
                 }
@@ -1076,10 +1129,7 @@ export function renderGame(app, args) {
             // Timed so the bat meets the ball as it arrives.
             swing = Math.max(0, Math.min(1, (c.t - (c.dur - 0.15)) / 0.3));
         }
-        const batterPic = side && shownId ? {
-            side, swing, time: performance.now() / 1000,
-            color: batterLook(shownId).color, number: batterLook(shownId).number, skin: batterLook(shownId).skin,
-        } : null;
+        const batterPic = side && shownId ? { side, swing, time: performance.now() / 1000, ...batterLook(shownId) } : null;
         const heat = ui.mode === 'playback' && ui.heat ? ui.heat : batter?.heat;
 
         // The break guide: before you press Pitch it always shows how the
@@ -1107,6 +1157,7 @@ export function renderGame(app, args) {
             guide,
             plan: ui.plan && userPitching && ui.mode !== 'playback' ? { x: zonePos.x + ui.plan.target.x, y: zonePos.y + ui.plan.target.y, color: ui.plan.color, label: ui.plan.label } : null,
             flight,
+            impact: c && c.landed && c.to && c.t - c.dur < 0.35 ? { x: c.to.x, y: c.to.y, t: (c.t - c.dur) / 0.35, color: c.result.pitch.color } : null,
             // Like a stadium clock, it only shows for the last ten seconds.
             clock: ui.clock && game.isUserPitching() && ui.mode !== 'playback' && ui.clock.left <= 10 ? { left: Math.max(0, ui.clock.left), total: Math.min(10, ui.clock.total) } : null,
             banner: c && c.landed ? bannerFor(c.result) : null,
@@ -1117,6 +1168,7 @@ export function renderGame(app, args) {
     // ---------- events ----------
     const onClick = (e) => {
         const btn = e.target.closest('button');
+        if (!btn && ui.help && e.target.matches('#help-layer .overlay')) { closeHelp(); return; }
         if (!btn) return;
         if (btn.dataset.pitch !== undefined) {
             selectPitch(Number(btn.dataset.pitch));
@@ -1140,6 +1192,8 @@ export function renderGame(app, args) {
         } else {
             switch (btn.dataset.act) {
                 case 'menu': app.go('menu'); break;
+                case 'help': showHelp(); break;
+                case 'help-close': closeHelp(); break;
                 case 'again': app.go('lineup'); break;
                 case 'retry': playChallenge(app, challenge.id); break;
                 case 'challenges': app.go('challenges'); break;
@@ -1186,7 +1240,13 @@ export function renderGame(app, args) {
     };
     const onChange = (e) => {
         const map = { 't-heat': 'showHeat', 't-odds': 'showOdds' };
-        if (e.target.id === 't-calls') {
+        if (e.target.id === 't-sound') {
+            prefs.sound = e.target.checked;
+            app.savePrefs();
+            setSound(prefs.sound);
+            e.target.blur();
+            if (prefs.sound) sfx.pop(true);
+        } else if (e.target.id === 't-calls') {
             prefs.catcherCalls = e.target.checked;
             app.savePrefs();
             e.target.blur();
@@ -1245,16 +1305,22 @@ export function renderGame(app, args) {
     };
     const onKey = (e) => {
         if (e.target.tagName === 'SELECT' || (e.target.tagName === 'INPUT' && !['range', 'checkbox'].includes(e.target.type))) return;
+        if (ui.help) {
+            if (e.code === 'Escape' || e.code === 'Space' || e.code === 'Enter') { e.preventDefault(); closeHelp(); }
+            return;
+        }
         if (ui.visit) {
             if (e.code === 'Escape' || e.code === 'Space') { e.preventDefault(); endVisit(); }
             return;
         }
+        if (e.key === '?') { e.preventDefault(); showHelp(); return; }
         if (e.code === 'Space') {
             // Space always pitches, even if a button or checkbox has focus.
             e.preventDefault();
             if (e.target.blur) e.target.blur();
-            if (ui.mode === 'ready') startAiming();
-            else if (ui.mode === 'playback') skip();
+            if (ui.mode === 'playback') skip();
+            else if (ui.mode === 'ready' && game.isUserBatting() && !game.state.over && !ui.challengeResult && !mp && !$('#overlay').innerHTML) $('[data-act=sim-pa]')?.click();
+            else if (ui.mode === 'ready') startAiming();
         } else if (ui.mode !== 'playback' && game.isUserPitching() && !e.metaKey && !e.ctrlKey && !e.altKey) {
             // Each pitch has a letter (shown on its button) and a number.
             const pitches = game.pitcher().pitches;
@@ -1313,8 +1379,11 @@ export function renderGame(app, args) {
     // ---------- helpers ----------
     // Team colours, a jersey number and a look for each batter.
     function batterLook(id) {
-        const team = league.teams.find((t) => t.batters.includes(id));
-        return { color: team?.color ?? '#2a4b8d', number: (id * 37) % 98 + 1, skin: SKINS[(id * 13) % SKINS.length] };
+        if (!looks.has(id)) {
+            const team = league.teams.find((t) => t.batters.includes(id));
+            looks.set(id, { color: team?.color ?? '#2a4b8d', number: (id * 37) % 98 + 1, skin: SKINS[(id * 13) % SKINS.length] });
+        }
+        return looks.get(id);
     }
 
     function todayLine(id) {

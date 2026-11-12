@@ -120,7 +120,7 @@ const ALL = Object.keys(STAGES);
 
 export const FORMULAS = [
     // Pitch shape
-    { id: 'velocity', group: 'Pitch', label: 'Pitch velocity (mph)', kind: 'value', stages: BEFORE_SHAPE,
+    { id: 'velocity', group: 'Pitch', label: 'Pitch velocity (mph)', kind: 'value', min: 20, stages: BEFORE_SHAPE,
       desc: 'How fast the pitch is thrown. Starts from the typical pro speed of the pitch type plus levelVelo (slower at lower levels), adjusted by the pitcher’s rating for it, the velocity-effort slider and fatigue.',
       expr: 'baseVelo + levelVelo + (velo - 60)/8 + (effort - 50)/12 - 4*fatigue' },
     { id: 'movementMult', group: 'Pitch', label: 'Break multiplier', kind: 'value', min: 0, stages: BEFORE_SHAPE,
@@ -130,7 +130,7 @@ export const FORMULAS = [
       desc: 'How far a pitch misses where you aimed: the standard deviation, in inches, of a random miss in each direction. Shown as the ring around the break guide.',
       expr: 'wobble + max(0.75, 2.4 + (60 - control)/12 + (effort - 50)/30 + (moveEffort - 50)/45 + 3*fatigue)' },
     { id: 'fatigueGain', group: 'Pitch', label: 'Fatigue added per pitch', kind: 'value', min: 0, stages: ALL,
-      desc: 'Added to the pitcher’s fatigue after every pitch. Fatigue starts at 0; at 1 the pitcher is spent (energy bar empty). Location variables are 0 on a pitch-clock violation.',
+      desc: 'Added to the pitcher’s fatigue after every pitch. Fatigue starts at 0; at 1 the pitcher is spent (energy bar empty).',
       expr: '(1 + (effort - 50)/50 + (moveEffort - 50)/80 + 0.25*runners + (if balls = 3 then 0.3 else 0)) / stamina' },
 
     // The moving strike zone

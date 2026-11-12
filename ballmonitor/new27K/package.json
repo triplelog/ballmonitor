@@ -6,7 +6,8 @@
     "serve": "node tools/serve.js",
     "test": "node test/rules.js && node test/advice.js && node test/mp.js && node test/sim.js 300 1 && node test/challenges.js 40 && node test/season.js && node test/career.js 9",
     "sim": "node test/sim.js",
-    "build": "node tools/build-static.js"
+    "build": "node tools/build-static.js",
+    "itch": "node tools/build-static.js && rm -f 27k-itch.zip && cd dist && zip -qr ../27k-itch.zip . -x '.*' && echo 'Wrote 27k-itch.zip (upload to itch.io as an HTML game)'"
   },
   "dependencies": {
     "mathzetta": "1.0.0",

@@ -22,7 +22,13 @@ export const store = {
         }
     },
     remove(key) {
-        localStorage.removeItem(PREFIX + key);
+        // Storage can be blocked outright (a game frame with third-party
+        // storage turned off): the game still has to carry on.
+        try {
+            localStorage.removeItem(PREFIX + key);
+        } catch (e) {
+            console.warn('Could not remove', key, e);
+        }
     },
 };
 

@@ -11,6 +11,7 @@ npm run serve      # http://localhost:8027/ (ES modules need http); also the mul
 npm test           # rules, pitch movement and the catcher's advice, multiplayer, a 300-game sim, every challenge, a season in each format, nine career seasons
 npm run sim -- 500 7 my-formulas.json   # games, seed, optional formula overrides
 npm run build      # static copy of the game in dist/ (see Static hosting)
+npm run itch       # the same, zipped as 27k-itch.zip for itch.io (see docs/launch.md)
 ```
 
 ### Static hosting
@@ -21,7 +22,7 @@ No dependencies. Plain ES modules, canvas and localStorage.
 
 ## Playing
 
-Quick Game and Challenges & Achievements are open. Season, Career and Multiplayer are built (and still tested) but show as *coming later* on the menu: their screens go back to the menu, and a saved season or career game isn't offered under Continue.
+Quick Game, Challenges & Achievements, Season and Career are open. Multiplayer is built (and still tested) but shows as *coming later* on the menu until its server is online ([docs/launch.md](docs/launch.md)): its screens go back to the menu.
 
 - **Quick Game:** pick your team, opponent, home/away, innings and difficulty, set your lineup card (batting order, bench swaps, starting pitcher), and play.
 - **Pitching:** use 1–9 or the buttons to pick a pitch and set the velocity and movement effort sliders, then press Space to start the zone moving and click to throw. The zone first jumps to a new spot (at least half its drift range away, in a random direction), so you can't throw before it has moved. Before you press Space, the dashed guide shows how the pitch will break from the pointer (or the middle of the zone), with a ring for one standard deviation of scatter. The **break guide** setting keeps it while the zone moves (*always shown*) or takes it away once the zone starts moving (*hidden*), so you have to remember the break.
@@ -32,8 +33,11 @@ Quick Game and Challenges & Achievements are open. Season, Career and Multiplaye
 - **Catcher calls pitches** (*Pitch calling* in setup, or *Catcher calls pitches* under the field; off by default): before each pitch the catcher (`callPitch` in `src/engine/advice.js`) picks the pitch and a spot from the same run-value scores as the mound visit, so the batter, the count and what he has already seen this at-bat (the formulas' `pitchSeen`, `sameAsLast`, `veloDiff`, `locDiff`) all count. He mixes it up rather than always calling the single best option. The pitch is selected for you and the spot is ringed on the zone, labelled with the pitch; your job is to hit it (the break guide shows where it will end up). *Shake off* asks for a different pitch; picking a pitch yourself has him set up a spot for it. After the pitch, the banner says how far it ended from the spot.
 - **Catcher's visit** (once an inning, button under Pitch): calls time, stops the clock and resets it (and the zone) for when he goes back. The catcher (`src/engine/advice.js`) scores every pitch you have at every spot with the game's own formulas (swing, umpire, contact, hits), averaged over your scatter plus a little aiming error, in runs for the current count. He gives his two best plans (pitch, spot, strike/whiff/ball/hit chances, why it works, where to aim so it breaks into the spot), the mistake to avoid, and notes on the hitter: hot and cold zones, pitch types, eye, power, platoon, what he has seen this at-bat, and your fatigue. *Throw it* selects that pitch and marks the spot on the zone for the next pitch.
 - **Scouting:** the batter card shows how he has hit each pitch type (PA, AVG, OPS, K%, whiff rate) against the league, with the pitcher's own pitches first. Every league starts with a simulated past season, and every game adds to it. Batters have their own strengths against particular pitch types (`typeSkill`, added to `vsPitch`). The Lineup tab shows each hitter's ratings and best and worst pitch; click one for his full report.
-- **Your offense** is simmed. By default the whole half-inning runs automatically, showing each batter's last pitch, with the count, outs, runners and score updating after each one. Turn off *Sim our half-innings automatically* (on the batting panel, or *When you bat* in setup) to manage each batter: pinch hit, sim one batter (shown pitch by pitch), or sim the rest of the inning.
+- **Your offense** is simmed. By default the whole half-inning runs automatically, showing each batter's last pitch, with the count, outs, runners and score updating after each one. Turn off *Auto-bat* (under the field, or *When you bat* in setup) to manage each batter: pinch hit, sim one batter (shown pitch by pitch), or sim the rest of the inning.
 - **Bullpen:** bring in a reliever between pitches. Fatigue lowers velocity and break and raises scatter and zone speed.
+- **Help:** the **?** button by the menu button (or the `?` key) opens *How to play*: the five steps, how to read the field, and the keys. It opens by itself the first time you take the mound. The pitch clock waits while it is open; it can't be opened once the zone is moving. The words live in `src/ui/help.js` (the menu's *How to pitch* uses the same steps).
+- **Sound** (checkbox under the field, on by default): the ball in the glove, the crack of the bat, the crowd after a strikeout or a run, and ticks for the pitch clock's last three seconds. All of it is made with Web Audio in `src/ui/sound.js`; there are no sound files.
+- **Space** does the next thing: start the zone, skip ahead while a result is showing, or (when you manage your own hitters) sim the batter.
 - The game saves after every pitch; **Continue** on the menu resumes it.
 
 ## Layout
@@ -47,7 +51,7 @@ Quick Game and Challenges & Achievements are open. Season, Career and Multiplaye
 | `src/engine/advice.js` | The catcher's visit: every pitch and spot scored in runs with the formulas, plus scouting notes. |
 | `src/engine/zone.js` | The wandering strike zone. |
 | `src/engine/league.js`, `data.js` | Teams, players, ratings, heat maps, pitch types. |
-| `src/ui/` | Screens (menu, setup, lineup, game) and the canvas view. |
+| `src/ui/` | Screens (menu, setup, lineup, game) and the canvas view. `plate.js` draws the field: the ballpark behind it (night sky, lights, stands, wall, mowed grass, mound and pitcher, the dirt and chalk around home) is painted once per canvas size and copied in each frame; the batter, zone, ball and markers are drawn on top. `help.js` is the how-to-play text, `sound.js` the sound effects. |
 | `node_modules/mathzetta`, `node_modules/@mathzetta/inlinemath` | MathZetta (parse, evaluate, speech) and InlineMath (formula rendering, split out of MathZetta in 1.0), from npm. `index.html` maps them with an import map; `npm run build` copies their browser builds into `dist/lib/`. To upgrade, change both exact versions in `package.json`, `npm install`, rebuild and run `npm test`. |
 | `src/engine/tracker.js`, `achievements.js`, `challenges.js` | Your pitching stats per game/inning/at-bat, the achievements read from them, and challenge setups and goals. |
 | `src/engine/levels.js`, `season.js`, `competition.js`, `regions.js` | Levels of play; seasons (rest, stats, leaders); the stage engine and the four formats (pools, leagues, brackets, series); places and name pools. |
@@ -62,7 +66,7 @@ The field is seen from behind the plate: a right-handed batter on the left, pitc
 
 ## Seasons
 
-*Coming later (not on the menu yet).* Menu → **Season**. Each level has its own format (`src/engine/competition.js`):
+Menu → **Season**. Each level has its own format (`src/engine/competition.js`):
 
 | Level | Format |
 | --- | --- |
@@ -77,7 +81,7 @@ Ratings are relative to the level (about 50 is average there), and pitches are s
 
 ## Career
 
-*Coming later (not on the menu yet).* Menu → **Career**. One pitcher, from 12 years old to retirement; you control only him.
+Menu → **Career**. One pitcher, from 12 years old to retirement; you control only him.
 
 - **Create him**: name, hand, a style (power, finesse or movement: starting ratings and first two pitches), and a hometown (any of the 16 biggest cities in a state). At 12 he pitches for his region in the Youth World Tournament, then four seasons for his hometown high school.
 - **Each season** sims until his turn in the rotation. Choose how many starts you pitch yourself: every start, every other one (plus the postseason), key starts (the opener, every 4th, and the postseason), or none. Change it any time; the rest are simmed. Between starts: *Sim to his next start*, *Sim to the next start you pitch*, *Sim the rest of the season*.

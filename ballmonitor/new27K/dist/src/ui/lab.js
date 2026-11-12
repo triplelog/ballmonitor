@@ -418,8 +418,11 @@ export function renderLab(app) {
         if (mineOverrides[id] === FORMULA_BY_ID[id].expr) delete mineOverrides[id];
         const key = `${games}`;
         const seed = 11;
-        const defSim = lab.simCache[key] ? null : createSim(app.league, createFormulas({}), { games, seed });
-        const mySim = createSim(app.league, createFormulas(mineOverrides), { games, seed });
+        // The sims get their own scouting record, so thousands of test
+        // games (half of them under draft rules) don't flood the league's.
+        const simLeague = () => ({ ...app.league, pitchStats: {} });
+        const defSim = lab.simCache[key] ? null : createSim(simLeague(), createFormulas({}), { games, seed });
+        const mySim = createSim(simLeague(), createFormulas(mineOverrides), { games, seed });
         const changed = Object.keys(mineOverrides);
         simRun = true;
         $('[data-act="sim"]').disabled = true;

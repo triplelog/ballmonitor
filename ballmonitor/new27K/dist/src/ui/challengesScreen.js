@@ -84,8 +84,14 @@ export function renderChallenges(app, args = {}) {
     return () => app.root.removeEventListener('click', onClick);
 }
 
+// One game is saved at a time: ask before a new one replaces it.
+export function confirmReplace(app) {
+    return !app.savedGame() || confirm('You have a game in progress. Starting a new one replaces it. Go ahead?');
+}
+
 export function playChallenge(app, id) {
     const ch = CHALLENGES.find((c) => c.id === id);
+    if (!confirmReplace(app)) return;
     const { game } = startChallenge(app.league, ch, app.prefs.userTeamId);
     recordChallenge(id, null);
     app.go('game', { game, challenge: ch, tracker: createTracker(), earned: [] });

@@ -22,9 +22,9 @@ import { recordCareerGame, CAREER_VERSION } from '../engine/career.js';
 
 const LEAGUE_VERSION = 1;
 
-// Modes that are built but not open yet: Quick Game and Challenges come
-// first. Their screens go back to the menu and their saves wait.
-const COMING_LATER = new Set(['season', 'seasonSetup', 'seasonLineup', 'multiplayer', 'mpGame', 'careers', 'careerHub']);
+// Modes that are built but not open yet (multiplayer waits for its
+// server). Their screens go back to the menu.
+const COMING_LATER = new Set(['multiplayer', 'mpGame']);
 
 const DEFAULT_PREFS = {
     userTeamId: 0, oppTeamId: 1, userHome: true, innings: 9, difficulty: 2,
@@ -119,7 +119,6 @@ const app = {
     savedGame() {
         const saved = store.load('game');
         if (!saved || !saved.state || saved.state.over) return null;
-        if (saved.careerId || saved.seasonGameId !== undefined) return null;   // coming later
         return saved;
     },
     // extra: { tracker, earned } kept with the game so achievements and

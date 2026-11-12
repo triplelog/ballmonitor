@@ -32,6 +32,7 @@ rmSync(out, { recursive: true, force: true });
 mkdirSync(out, { recursive: true });
 cpSync(join(root, 'css'), join(out, 'css'), { recursive: true });
 cpSync(join(root, 'src'), join(out, 'src'), { recursive: true });
+cpSync(join(root, 'favicon.svg'), join(out, 'favicon.svg'));
 
 const versions = [];
 for (const [pkg, items, dest] of LIBS) {

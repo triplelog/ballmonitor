@@ -24,6 +24,8 @@ const types = {
     '.json': 'application/json', '.png': 'image/png', '.svg': 'image/svg+xml', '.ico': 'image/x-icon',
 };
 const mp = createMpStore({ dir: process.env.MP_DATA_DIR || join(root, 'data', 'mp') });
+// Month-old games are cleared at start-up and every hour after.
+setInterval(() => mp.expire(), 3600 * 1000).unref();
 
 // A simple per-address rate limit on the API: a bucket of 60 requests
 // refilling at 20 a second.
@@ -94,13 +96,28 @@ async function api(req, res, url) {
     }
 }
 
+// Only the game's own files are served: the page, its styles and sources,
+// and the two libraries it loads. Everything else in the folder (saved
+// multiplayer games in data/, the server's code, git history) is not.
+// Names are matched exactly, so "/Data/…" on a case-blind disk gets nothing.
+const PUBLIC = [/^\/index\.html$/, /^\/favicon\.svg$/, /^\/css\//, /^\/src\//, /^\/node_modules\/mathzetta\//, /^\/node_modules\/@mathzetta\/inlinemath\//];
+
 createServer(async (req, res) => {
-    const url = new URL(req.url, 'http://x');
+    let url;
+    let path;
+    try {
+        url = new URL(req.url, 'http://x');
+        path = decodeURIComponent(url.pathname);
+    } catch {
+        res.writeHead(400).end('Bad request');     // a malformed address
+        return;
+    }
     if (url.pathname.startsWith('/api/mp/')) return api(req, res, url);
-    const path = decodeURIComponent(url.pathname);
-    const file = normalize(join(root, path.endsWith('/') ? path + 'index.html' : path));
-    if (!file.startsWith(root) || file.startsWith(join(root, 'data'))) {
-        res.writeHead(403).end();
+    if (path.endsWith('/')) path += 'index.html';
+    const file = normalize(join(root, path));
+    const rel = '/' + file.slice(root.length).replace(/^[\\/]+/, '').replaceAll('\\', '/');
+    if (!file.startsWith(root) || path.includes('\0') || !PUBLIC.some((re) => re.test(rel))) {
+        res.writeHead(404).end('Not found');
         return;
     }
     try {

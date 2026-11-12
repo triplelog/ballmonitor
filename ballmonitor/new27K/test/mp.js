@@ -4,7 +4,7 @@
 // resigning ends the game.
 //   node test/mp.js
 
-import { mkdtempSync, rmSync } from 'node:fs';
+import { existsSync, mkdtempSync, rmSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { createMpStore } from '../server/mp.js';
@@ -118,6 +118,16 @@ check('same player pitches the next half', store.list(a).find((g) => g.id === so
 const duel = store.join(store.create({ playerId: a, name: 'Ann' }).id, { playerId: b, name: 'Ben' });
 const resigned = store.resign(duel.id, { playerId: b });
 check('resigning gives the game to the other side', resigned.status === 'done' && resigned.result.winner === (duel.seats.home.mine ? 'away' : 'home'));
+
+// Games nobody has touched for a month are deleted (file and all).
+const kept = store.create({ playerId: a, name: 'Ann' });
+clock += 29 * 24 * 3600 * 1000;
+check('a game untouched for 29 days is kept', store.expire() === 0 && store.list(a).some((g) => g.id === kept.id));
+const fresh = store.create({ playerId: a, name: 'Ann' });
+clock += 2 * 24 * 3600 * 1000;
+const gone = store.expire();
+check('games untouched for a month expire; newer ones stay', gone >= 1 && !store.list(a).some((g) => g.id === kept.id) && store.list(a).some((g) => g.id === fresh.id) && !existsSync(join(dir, `${kept.id}.json`)), `expired ${gone}`);
+check('an expired game can’t be opened', errorStatus(() => store.get(kept.id, a)) === 404);
 
 rmSync(dir, { recursive: true, force: true });
 console.log(failures ? `\n${failures} failed` : '\nall multiplayer checks passed');
