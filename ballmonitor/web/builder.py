@@ -465,7 +465,9 @@ def build_pages(target: Path, data_dir: Path) -> list[str]:
     for t in site.get("tables", []):
         out[f"/tables/{t['id']}/"] = pages.table_page(t, cell(t.get("sport", "")))
     if site.get("charts"):
-        taken = {p.name for p in (target / "charts").iterdir()} if (target / "charts").is_dir() else set()
+        # the chart files copied in (embed/, examples/...), not the output folder, which holds the
+        # chart pages of an earlier build when building into the same folder again
+        taken = {p.name for p in server.CHARTS.iterdir()} if server.CHARTS.is_dir() else set()
         clash = [c["id"] for c in site["charts"] if c["id"] in taken]
         if clash:
             raise ValueError(f"chart ids clash with files in charts/: {clash}")

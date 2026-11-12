@@ -180,3 +180,10 @@ def test_cli_update_and_build(tmp_path, no_pages):
     assert main(["update-and-build", "--offline", "--models", "dad,race_podium", "--out", str(target)]) == 0
     assert (target / "index.html").exists()
     assert (target / "data" / "manifest.json").exists()
+
+
+def test_building_again_into_the_same_folder_works(site):
+    """A second build into a folder that already holds a build (its chart pages included) must not
+    mistake those pages for chart files the ids clash with."""
+    assert (site / "charts").is_dir() and any((site / "charts" / d).is_dir() for d in ("aging-power", "power-average"))
+    assert builder.build_pages(site, site / "data")
