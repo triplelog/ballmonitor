@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About · Ball Monitor</title>
+  <meta name="description" content="What Ball Monitor is, who makes it, where its numbers come from, and how to send a correction.">
+  <link rel="canonical" href="https://ballmonitor.com/about/">
+  <meta property="og:title" content="About · Ball Monitor">
+  <meta property="og:description" content="What Ball Monitor is, who makes it, where its numbers come from, and how to send a correction.">
+  <meta property="og:url" content="https://ballmonitor.com/about/">
+  <!-- shell:head -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ball Monitor">
+  <meta property="og:image" content="https://ballmonitor.com/static/share.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Ball Monitor: sports odds and forecasts, in plain numbers">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <!-- fonts served from this site (static/fonts.css), not Google Fonts -->
+  <link rel="preload" href="/static/fonts/open-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/static/fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/static/fonts.css">
+  <script>document.documentElement.classList.add('ss-js')</script>
+  <link rel="stylesheet" href="/static/shioh-style.css">
+  <link rel="stylesheet" href="/static/site.css">
+  <script src="/static/shioh.js" defer></script>
+  <!-- /shell:head -->
+</head>
+<body class="ss">
+  <!-- Ball Monitor (/about/). Edit this page in Claude UI's Editor (or here). The words are yours;
+       site.js fills the parts marked data-slot / data-fill with the numbers (data/views/*.json).
+       The blocks between shell:* markers are the same on every page: the build takes them from
+       index.html (`python -m ballmonitor.web.pages sync` copies them to the other files). -->
+  <div class="ss-shell">
+    <!-- shell:sidebar -->
+    <aside class="ss-sidebar">
+      <section class="ss-cell ss-p1 ss-navcell">
+        <a class="ss-logo" href="/"><img src="/static/logo.png" alt="Ball Monitor" width="870" height="147"></a>
+        <button class="ss-btn ss-menu-btn" type="button" aria-controls="site-nav">Menu</button>
+        <nav class="ss-nav" id="site-nav" aria-label="Pages">
+          <a href="/" data-route="">Home</a>
+          <div id="nav-models" class="nav-models"></div>
+          <hr>
+          <a href="/triple/">Triple Play</a>
+          <a href="/lineup/">Lineup</a>
+          <a href="/27k/">27K</a>
+        </nav>
+      </section>
+      <section class="ss-cell ss-p4 side-about ss-desktop-only">
+        <!-- claude-ui:begin sidebar-about -->
+        <p class="side-title">Sports odds and forecasts, in plain numbers</p>
+        <p>Every page is a table or a chart, worked out ahead of time from the latest data.</p>
+        <!-- claude-ui:end sidebar-about -->
+        <p class="ss-muted small built"></p>
+      </section>
+    </aside>
+    <!-- /shell:sidebar -->
+    <div class="ss-main">
+    <main class="ss-main" id="app" data-page="about" data-static>
+      <section class="ss-cell ss-p1 text-page">
+        <h1 class="ss-title">About Ball Monitor</h1>
+        <!-- claude-ui:begin about -->
+        <p>Ball Monitor turns sports data into plain tables and charts: college football playoff and bowl chances, recruiting rankings, college baseball and softball tournament odds, race-time predictions, and polls and awards re-counted with other voting methods. There are also a few daily baseball puzzles.</p>
+
+        <h2>How the numbers are made</h2>
+        <p>Every forecast comes from a small, open model: a few formulas and settings you can read and change. Each page ends with "How this works" in a few sentences, and links to the full method, every setting and its source, and the model's known weaknesses.</p>
+        <p>The numbers are worked out ahead of time, when the site is rebuilt (once a day during each sport's season), not in your browser. The date of the last rebuild is at the bottom of every page.</p>
+
+        <h2>Where the data comes from</h2>
+        <p>Some of the main sources:</p>
+        <ul>
+          <li>College football ratings (FPI) and schedules: ESPN. Recruiting offer lists: On3.</li>
+          <li>AP poll ballots: collegepolltracker.com. Award ballots: the BBWAA, NBA and PHWA.</li>
+          <li>Big-league box scores: Retrosheet. Season statistics: the Lahman Baseball Database (SABR, CC BY-SA 3.0).</li>
+          <li>NFL quarterback games: nflverse (CC BY 4.0).</li>
+        </ul>
+        <p>Each page's "How this works" and each data table name their own sources.</p>
+
+        <h2>Not betting advice</h2>
+        <p>These are estimates from simple models, for fun and curiosity. They can be wrong, and they are not betting, financial or any other advice.</p>
+
+        <h2>Corrections and questions</h2>
+        <p>Ball Monitor is made by Robert Wilcox. To report a mistake or ask a question, email <a href="mailto:rwilcox@triplelog.com">rwilcox@triplelog.com</a>. The code and the models are open on <a href="https://github.com/triplelog/ballmonitor">GitHub</a>, where you can also open an issue.</p>
+        <!-- claude-ui:end about -->
+      </section>
+    </main>
+    <!-- shell:footer -->
+    <footer class="ss-cell ss-p4 site-foot">
+      <nav aria-label="About this site"><a href="/about/">About</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></nav>
+      <p class="small">For fun and curiosity: these are estimates, not betting advice. <span class="built"></span></p>
+    </footer>
+    <!-- /shell:footer -->
+    </div>
+  </div>
+  <script src="/static/site.js"></script>
+</body>
+</html>

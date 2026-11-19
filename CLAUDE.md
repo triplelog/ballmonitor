@@ -25,7 +25,9 @@ ballmonitor/
   cli.py                  `ballmonitor` command (list, params, run, compare, backtest, new, serve)
   web/
     server.py             browser UI backend: stdlib http.server + JSON API (127.0.0.1:8765)
-    static/               site.html/site.js/site.css = public page; index.html/app.js/style.css = editor (vanilla JS)
+    site/                 public page sources: one whole HTML file per page (index.html, <address>/index.html, 404.html)
+    static/               site.js/site.css = public page; index.html/app.js/style.css = editor (vanilla JS)
+    pages.py, preview.py  build pages from site/; `ballmonitor preview` serves them live (127.0.0.1:8790)
   core/
     config.py             load config.toml → apply variant → apply --set overrides
     params.py             ParamSpec / FormulaSpec / Params (attribute access + p.formula())
@@ -75,6 +77,8 @@ ballmonitor backtest race_time --variant curve_v04 [--data other.csv]
 ballmonitor new nfl_win_totals --title "NFL win totals"
 ballmonitor serve                                  # browser UI at http://127.0.0.1:8765 (27K game at /27k/)
 ballmonitor build-site --out dist                   # static bundle (GitHub Pages); CI runs update-and-build daily
+ballmonitor preview [--rebuild]                     # public site from its sources at :8790 (data from dist/)
+python -m ballmonitor.web.pages sync                # copy index.html's sidebar/footer/head blocks to every page
 ballmonitor views ncaaf_bowls [--out x.json]       # build + check one model's public page
 ballmonitor tables [--check]                        # live data tables (web/tables.toml); --check asks their servers
 python -m ballmonitor.data_tables.build [--only nba]  # CSVs for the QB / NBA / WNBA data tables (raw/ + csv/ gitignored)
@@ -156,11 +160,23 @@ pytest ballmonitor/models/race_time                # one model
   formulas, a calculator, filtering a table already on the page. What to avoid is shipping large
   data or large models to the visitor; those stay pre-generated (big tables computed at build time),
   served by a server (the live data tables) or loaded only on demand (the charts' Pyodide).
+- **Every page is a real HTML file** in `web/site/` at its own address (`index.html`, `<address>/index.html`
+  per forecast page, `charts/`, `tables/` = template of every `/tables/<id>/`, `about/`, `privacy/`, `terms/`,
+  `404.html`), editable as it is in Claude UI's Editor (and on the Content page via its claude-ui markers).
+  The words are plain HTML in the file (`data-text="title|summary|how"` elements are read into the page's
+  JSON for the menu, home cards and link previews); the numbers go in marked elements: `data-slot` (a forecast
+  page's `headline` and `views`, home `models`, charts `chart-picks`/`chart`, tables `table`) and
+  `<span data-fill="key">` (a value from `page(fill=...)` inside a sentence). The `shell:head`, `shell:sidebar`
+  and `shell:footer` blocks are the same on every page; the build takes them from `index.html`
+  (`python -m ballmonitor.web.pages sync` copies them to the other files). A new forecast page needs its
+  file (copy another page's; `tests/test_contract.py` and the build check it).
 - **Addresses are real paths** (`/ncaaf_bowls/`, `/ncaaf_bowls/team/georgia/`, `/tables/<id>/`,
   `/charts/<id>/`, `/about/`), not `#/` routes, so search engines see every page: `build_pages`
-  (`web/pages.py`) writes a copy of site.html at each one with its own title, description, canonical and
-  share tags and the page's words (headline, option links, "How this works") already in `<main>`;
-  `site.js` then draws the page and follows links between pages without reloading (History API).
+  (`web/pages.py`) writes each address from its source file (a forecast page's file also at each of its
+  options, the charts file at every chart) with its own title, description, canonical and share tags and
+  the slots already filled with the page's words and links; `site.js` then fills the slots with the full
+  tables and charts, leaving the authored HTML alone, and follows links between pages without reloading
+  (fetches the new page and swaps its `<main>` in; not inside Claude UI's Editor, where pages load normally).
   Old `#/` links are turned into paths on arrival; `REDIRECTS` get stub pages. `sitemap.xml` lists every
   address. Page addresses may not use the site's own first parts (`pages.RESERVED`).
 - **Interactive tools (`views.app`)**: a page can include a lightweight tool that computes in the browser. A view
@@ -174,15 +190,18 @@ pytest ballmonitor/models/race_time                # one model
   fetches one when it's shown. `builder.load_page` reads a split page back whole (tests).
 - **Head and assets:** every page shares `static/share.png` (1200×630; source `web/share-card.html`, render
   it with headless Chrome) as its link-preview image; the games' copied pages get the same tags at build
-  time (`GAME_META`, their sources untouched). Fonts are self-hosted (`static/fonts.css` + `static/fonts/`,
+  time (`GAME_META`, their sources untouched). Logo and icons come from `~/Desktop/portfolio/branding/final/ballmonitor/`
+  (apply-branding skill; don't edit the copies): `static/logo.png` in the sidebar and 404, `favicon.ico`/`.svg` +
+  `apple-touch-icon.png` in `static/`, copied to the dist root (`ROOT_ICONS`) and added to Triple Play/Lineup at
+  build time (27K keeps its own icon). Fonts are self-hosted (`static/fonts.css` + `static/fonts/`,
   Latin + Latin Extended, OFL), no Google Fonts. `/static/*.css|js` links in the built pages carry
   `?v=<content hash>`. `editor.html` is titled "Model editor" and `noindex`.
-- **Text pages** `/about/`, `/privacy/`, `/terms/`: HTML fragments in `web/pages/*.html` (claude-ui
-  markers, on Claude UI's Content page), linked from the footer on every page. Keep `privacy.html`
+- **Text pages** `/about/`, `/privacy/`, `/terms/`: `web/site/<name>/index.html` (`data-static`: site.js leaves
+  them alone; claude-ui markers, on Claude UI's Content page), linked from the footer on every page. Keep the privacy page
   true to what the site sends where (hosts, fonts, table server, jsDelivr, local storage).
 - One model can feed several pages: `site.py` defines `pages(model) -> {address: page}` instead
-  of `page(model)` (e.g. `college_diamond` → `/college_baseball/` and `/college_softball/`), with
-  text in `site_<address>.md`; old addresses go in the module's `REDIRECTS` (`site.js` follows them).
+  of `page(model)` (e.g. `college_diamond` → `/college_baseball/` and `/college_softball/`), each with
+  its own `web/site/<address>/index.html`; old addresses go in the module's `REDIRECTS` (`site.js` follows them).
 - **Which models are on the site:** `[web] public = false` in a model's config.toml keeps it off
   the static build (no page, not in the editor; still in the CLI, `serve` and tests). Off for now
   (2026-11-08, owner's call): the MLB models (`next_pitch`, `bvp_similarity`, `mlb_bullpen`),
@@ -213,21 +232,29 @@ pytest ballmonitor/models/race_time                # one model
   (CI has no `data/raw/`), off-season pages labelled as final, no private people's names,
   ≤ 60 s and ≤ ~1.5 MB per page. Page-only tunables are `site_*` params in config.toml.
   `views.check` runs on every build and in tests; a failing page fails the build.
-- Page text the owner edits lives outside code: each model's `site.md` (marked `title`/`summary`/
-  `how` sections, overriding site.py; `{placeholders}` come from `page(fill=...)`; `site_<address>.md`
-  for multi-page models) and the home page
-  / sidebar `<template>`s and meta tags in `site.html`. These are registered on Claude UI's
-  Content page (project "ballmonitor"); when adding a model page, add its site.md and register it.
+- Page text the owner edits lives outside code, in the page files in `web/site/` (a forecast page's
+  title/summary/how override site.py's). They are on Claude UI's Editor page (site "Ball Monitor") and
+  their claude-ui marked sections on its Content page (project "ballmonitor"); when adding a page, add it
+  to both.
+- **Text edits from the Editor** (owner's request, 2026-11-18): the owner edits wording by eye in Claude UI's
+  Editor. Text written in a page file saves itself. Text drawn by `site.js` (home cards, menu links, view titles,
+  notes, headlines, table and chart words) carries `data-src="<file>#<key>"` (also in the pre-written HTML,
+  `pages.page_src`/`table_src`/`chart_src`): when the owner selects or edits such an element, change the words
+  in that file (a view key is `<view id>.<field>` in `models/<model>/site.py`), never in the built output, rebuild
+  `dist/` so the preview shows it, and add a line to `web/EDITS.md`'s log. Text with no `data-src` is in `site.js`.
+  Keep `data-src` on any new script-drawn text.
 - Every page leads with a data-driven `headline` (`page(headline=...)`), and picker options with an
   `intro` one-liner: the one answer a fan wants first. Tables keep their name column in place when
   scrolled sideways (`col(sticky=True)`, default: first linked, else first text column).
 - Pickers double as sub-pages: each option has an address `/<model>/<picker id>/<slug>/` (e.g.
   `/ncaaf_bowls/team/georgia/`), and a table column with `link="<picker id>"` links its cells there.
-- Preview: `ballmonitor build-site --out /tmp/site && python3 -m http.server -d /tmp/site 8790`.
+- Preview: `ballmonitor preview` (pages and /static straight from the sources, data from `dist/`;
+  `--rebuild` rebuilds it in the background), or the built site itself: `ballmonitor build-site --out /tmp/site
+  && python3 -m http.server -d /tmp/site 8791`.
 - Look: **Shioh style** (`static/shioh-style.css` is the unchanged Shioh base, update it by replacing
   the file; theme overrides and page-specific pieces in `site.css`; phone menu/toasts in `shioh.js`): pastel cells on black, sidebar + main column, Montserrat/Open Sans. Each sport
   owns one cell colour (`SPORT_CELL` in core/views.py, sent to site.js in data/site.json). The build also writes `robots.txt`,
-  `sitemap.xml` (every page address + `GAME_PATHS` in builder.py) and copies the Shioh `404.html`. The editor and
+  `sitemap.xml` (every page address + `GAME_PATHS` in builder.py) and copies the Shioh `404.html` (`web/site/404.html`). The editor and
   the games keep their own styles.
 
 ## Browser UI (`ballmonitor serve`)
@@ -256,7 +283,9 @@ pytest ballmonitor/models/race_time                # one model
 ## Dev servers
 
 This machine runs Claude UI at http://127.0.0.1:3131, which keeps a Servers page. The UI
-server is registered there as "ballmonitor · model editor" (port 8765). When you add,
+server is registered there as "ballmonitor · model editor" (port 8765), and `ballmonitor preview --rebuild`
+as "ballmonitor · public site preview" (port 8790), which the Editor page's "Ball Monitor" site (root
+`ballmonitor/web/site`, theme `site.css`, shell blocks shared) uses as its proxy. When you add,
 rename or change how a server in this project starts, register it: fetch
 http://127.0.0.1:3131/docs/agent-instructions.md and follow it (POST /api/servers/register).
 

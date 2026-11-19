@@ -83,6 +83,13 @@ def _parser() -> argparse.ArgumentParser:
     p.add_argument("--port", type=int, default=8765)
     p.set_defaults(handler=cmd_serve)
 
+    p = sub.add_parser("preview", help="serve the public site from its sources (pages, CSS, JS live; data from a build)")
+    p.add_argument("--host", default="127.0.0.1")
+    p.add_argument("--port", type=int, default=8790)
+    p.add_argument("--out", type=Path, default=Path("dist"), help="built site for the data (default: dist)")
+    p.add_argument("--rebuild", action="store_true", help="rebuild the data in the background on start")
+    p.set_defaults(handler=cmd_preview)
+
     p = sub.add_parser("new", help="scaffold a new model from the template")
     p.add_argument("name", help="snake_case model name")
     p.add_argument("--title")
@@ -243,6 +250,13 @@ def cmd_serve(args: argparse.Namespace) -> int:
     from ballmonitor.web.server import serve
 
     serve(args.host, args.port)
+    return 0
+
+
+def cmd_preview(args: argparse.Namespace) -> int:
+    from ballmonitor.web.preview import serve
+
+    serve(args.host, args.port, args.out, args.rebuild)
     return 0
 
 

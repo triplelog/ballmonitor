@@ -2,8 +2,11 @@
 // data/site.json and data/views/<model>.json (from each model's site.py). It never runs a
 // model: every number on the page was computed at build time.
 // Addresses are real paths (/ncaaf_bowls/, /ncaaf_bowls/team/georgia/, /tables/<id>/, /charts/<id>/):
-// the build writes a copy of this page at each one (web/pages.py), and links between them are
-// followed here without reloading. Old #/ addresses are turned into paths on arrival.
+// each page has a source file in web/site/ holding its words as plain HTML, and the build writes it
+// at every address it serves (web/pages.py). This script leaves those words alone and fills only the
+// parts marked data-slot (tables, charts, headline) and data-fill (a number in a sentence). Links
+// between pages are followed without reloading: the new page's <main> is fetched and swapped in.
+// Old #/ addresses are turned into paths on arrival.
 "use strict";
 
 const app = document.getElementById("app");
@@ -76,6 +79,19 @@ function fmt(v, kind = "text", decimals, zeroDash = true) {
   }
 }
 
+// Where a piece of script-drawn text is written, as a data-src attribute ("<file>#<key>", repo-relative),
+// so a change made by eye in Claude UI's Editor can be put in its source (CLAUDE.md, "Text edits").
+const SITE_SRC = "ballmonitor/web/site";
+const src = (file, key) => ({ "data-src": key ? `${file}#${key}` : file });
+const pageSrc = (address, key) => src(`${SITE_SRC}/${address}/index.html`, key);
+const tableSrc = (t, key) => src("ballmonitor/web/tables.toml", `${t.id}.${key}`);
+const chartSrc = (c, key) => src("ballmonitor/web/charts.toml", `${c.id}.${key}`);
+// a forecast page's tables, charts, headline and dropdown intros come from its model's site.py
+let viewFile = "";
+const viewSrc = (key) => src(viewFile, key);
+// the charts page's name and summary, as written in web/site/charts/index.html
+const chartsTitle = (site) => (site.charts_text || {}).title || "Baseball charts";
+
 // ── Shioh cells: each sport owns one cell colour ─────────────────────────────
 // (the map is core/views.py SPORT_CELL, sent in data/site.json as `cells`)
 let SPORT_CELL = {};
@@ -87,9 +103,9 @@ async function renderNav(active) {
   const site = await getJSON("/data/site.json");
   const nav = document.getElementById("nav-models");
   if (!nav.childElementCount) {
-    nav.append(...site.models.map((m) => el("a", { href: `/${m.name}/`, "data-route": m.name }, m.title)));
-    nav.append(...(site.tables || []).map((t) => el("a", { href: `/tables/${t.id}/`, "data-route": `tables/${t.id}` }, t.title)));
-    if ((site.charts || []).length) nav.append(el("a", { href: "/charts/", "data-route": "charts" }, "Baseball charts"));
+    nav.append(...site.models.map((m) => el("a", { href: `/${m.name}/`, "data-route": m.name, ...pageSrc(m.name, "title") }, m.title)));
+    nav.append(...(site.tables || []).map((t) => el("a", { href: `/tables/${t.id}/`, "data-route": `tables/${t.id}`, ...tableSrc(t, "title") }, t.title)));
+    if ((site.charts || []).length) nav.append(el("a", { href: "/charts/", "data-route": "charts", ...pageSrc("charts", "title") }, chartsTitle(site)));
   }
   for (const a of document.querySelectorAll(".ss-nav a[data-route]")) {
     if (a.dataset.route === active) a.setAttribute("aria-current", "page");
@@ -97,41 +113,77 @@ async function renderNav(active) {
   }
 }
 
-// ── home ──────────────────────────────────────────────────────────────────────
-// Home page text lives in <template>s in index.html (edited from Claude UI's Content page).
-const copy = (id) => document.getElementById(id).content.cloneNode(true);
+// ── the page's own HTML (web/site/<address>/index.html) ─────────────────────────
+// <main data-page="<key>"> says which page's words are on screen. Going to another page fetches
+// that address and swaps its <main> in (its words, its empty slots); then the slots are filled.
+async function ensurePage(key) {
+  if (app.dataset.page === key) return true;
+  try {
+    const r = await fetch(location.pathname);
+    if (!r.ok) throw new Error(`${location.pathname}: ${r.status}`);
+    const main = new DOMParser().parseFromString(await r.text(), "text/html").getElementById("app");
+    if (!main) throw new Error(`${location.pathname}: no <main id="app">`);
+    for (const a of [...app.attributes]) if (a.name !== "id") app.removeAttribute(a.name);
+    for (const a of main.attributes) if (a.name !== "id") app.setAttribute(a.name, a.value);
+    app.replaceChildren(...[...main.childNodes].map((n) => document.importNode(n, true)));
+    return true;
+  } catch (e) {
+    console.error(e);
+    location.reload();   // let the browser load it the ordinary way
+    return false;
+  }
+}
 
+// Fill a slot (an element marked data-slot="<name>"); a page whose slot was removed gets the
+// content at the end of <main> instead, so no numbers go missing.
+function fillSlot(name, ...kids) {
+  const slot = app.querySelector(`[data-slot="${name}"]`);
+  if (slot) slot.replaceChildren(...kids.flat().filter(Boolean));
+  else app.append(...kids.flat().filter(Boolean));
+}
+
+// A value in a sentence (<span data-fill="first_year">), from the page's `fill` (site.py).
+function fillSpans(fill) {
+  for (const n of app.querySelectorAll("[data-fill]")) {
+    if (fill && fill[n.dataset.fill] !== undefined) n.textContent = String(fill[n.dataset.fill]);
+  }
+}
+
+// A page with no source of its own (not found, an error): drawn whole into <main>.
+function drawWhole(...kids) {
+  for (const a of [...app.attributes]) if (a.name !== "id" && a.name !== "class") app.removeAttribute(a.name);
+  app.dataset.page = "!";
+  app.replaceChildren(...kids);
+}
+
+// ── home ──────────────────────────────────────────────────────────────────────
+// The headline, intro and games list are written in web/site/index.html; the forecast pages,
+// tables and charts come from data/site.json.
 async function renderHome() {
   const site = await getJSON("/data/site.json");
+  if (!(await ensurePage(""))) return;
   setHead("Ball Monitor", null, "/");
   const groups = {};
   for (const m of site.models) (groups[m.sport] = groups[m.sport] || []).push(m);
-  app.replaceChildren(
-    cell("ss-p1",
-      el("h1", { class: "ss-title" }, copy("home-title").textContent.trim()),
-      el("div", { class: "home-intro" }, ...copy("home-intro").childNodes)),
+  fillSlot("models",
+    (site.tables || []).length ? cell("ss-p4",
+      el("div", { class: "ss-band" }, "Data tables"),
+      el("ul", { class: "model-list" }, site.tables.map((t) =>
+        el("li", {}, el("a", { class: "model-link", href: `/tables/${t.id}/` },
+          el("b", tableSrc(t, "title"), t.title), el("p", tableSrc(t, "summary"), t.summary)))))) : null,
     ...Object.entries(groups).map(([sport, models]) =>
       cell(cellClass(sport),
         el("div", { class: "ss-band" }, sport),
         el("ul", { class: "model-list" }, models.map((m) =>
           el("li", {}, el("a", { class: "model-link", href: `/${m.name}/` },
-            el("b", {}, m.title),
-            el("p", {}, m.summary),
+            el("b", pageSrc(m.name, "title"), m.title),
+            el("p", pageSrc(m.name, "summary"), m.summary),
             m.updated ? el("span", { class: "ss-chip" }, m.updated) : null)))))),
-    (site.tables || []).length ? cell("ss-p4",
-      el("div", { class: "ss-band" }, "Data tables"),
-      el("ul", { class: "model-list" }, site.tables.map((t) =>
-        el("li", {}, el("a", { class: "model-link", href: `/tables/${t.id}/` },
-          el("b", {}, t.title), el("p", {}, t.summary)))))) : null,
     (site.charts || []).length ? cell(cellClass("Baseball"),
       el("div", { class: "ss-band" }, "Charts"),
       el("ul", { class: "model-list" }, el("li", {}, el("a", { class: "model-link", href: "/charts/" },
-        el("b", {}, "Baseball charts"),
-        el("p", {}, `${site.charts.length} charts of every season since 1871 (how hitters age, power by decade, the best seasons), and you can change any of them.`))))) : null,
-    cell("ss-p3",
-      el("div", { class: "ss-band" }, "Games"),
-      el("ul", { class: "model-list" }, [...copy("home-games").querySelectorAll("li")].map((li) =>
-        el("li", {}, el("a", { class: "model-link", href: li.dataset.href || "/" }, ...li.childNodes))))),
+        el("b", pageSrc("charts", "title"), chartsTitle(site)),
+        el("p", pageSrc("charts", "summary"), (site.charts_text || {}).summary || ""))))) : null,
   );
   renderNav("");
   window.scrollTo(0, 0);
@@ -154,24 +206,18 @@ async function renderModel(name, pick) {
     notFound("That forecast doesn't exist.");
     return;
   }
+  if (!(await ensurePage(name))) return;
   setHead(page.title, page.summary, `/${name}/`);
   const cls = cellClass(page.sport);
   current = { model: name, title: page.title, pickers: {} };
+  viewFile = `ballmonitor/models/${page.model}/site.py`;
   pending = pick || null;
-  app.replaceChildren(
-    cell(`${cls} page-head`,
-      el("a", { class: "back", href: "/" }, "← Home"),
-      el("div", { class: "ss-kicker" }, page.sport),
-      el("h1", { class: "ss-title" }, page.title),
-      el("p", { class: "summary" }, page.summary),
-      page.headline ? el("p", { class: "headline" }, page.headline) : null,
-      page.updated ? el("span", { class: "ss-chip" }, page.updated) : null),
-    ...page.views.map((v) => renderView(v, cls, false)),
-    page.how ? cell(`${cls} how`,
-      el("div", { class: "ss-band" }, "How this works"),
-      el("p", {}, page.how),
-      el("p", { class: "small" }, el("a", { href: `/editor.html?model=${encodeURIComponent(page.model || name)}` }, "Full method, settings and assumptions →"))) : null,
-  );
+  // the title, summary and "How this works" are the page's own HTML; the rest is filled in here
+  fillSpans(page.fill);
+  fillSlot("headline",
+    page.headline ? el("p", { class: "headline", ...viewSrc("headline") }, page.headline) : null,
+    page.updated ? el("span", { class: "ss-chip" }, page.updated) : null);
+  fillSlot("views", ...page.views.map((v) => renderView(v, cls, false)));
   renderNav(name);
   if (pick && current.pickers[pick.id]) current.pickers[pick.id](pick.slug, true);
   else window.scrollTo(0, 0);
@@ -182,10 +228,11 @@ let pending = null;
 // section band within the picker's cell.
 function viewShell(v, body, cls, nested) {
   const kids = [
-    nested ? el("h3", { class: "ss-section" }, v.title) : el("div", { class: "ss-band" }, v.title),
-    v.subtitle ? el("p", { class: "subtitle" }, v.subtitle) : null,
+    nested ? el("h3", { class: "ss-section", ...viewSrc(`${v.id}.title`) }, v.title)
+      : el("div", { class: "ss-band", ...viewSrc(`${v.id}.title`) }, v.title),
+    v.subtitle ? el("p", { class: "subtitle", ...viewSrc(`${v.id}.subtitle`) }, v.subtitle) : null,
     body,
-    v.note ? el("p", { class: "note" }, v.note) : null,
+    v.note ? el("p", { class: "note", ...viewSrc(`${v.id}.note`) }, v.note) : null,
   ];
   return nested ? el("div", { class: `view view-${v.kind}`, id: `v-${v.id}` }, ...kids)
     : el("section", { class: `ss-cell ${cls} view view-${v.kind}`, id: `v-${v.id}` }, ...kids);
@@ -407,7 +454,7 @@ function renderPicker(v, cls) {
     select.value = String(i);
     const o = v.options[i];
     if (o.src && !o.views.length) {
-      body.replaceChildren(o.intro ? el("p", { class: "intro" }, o.intro) : "", el("p", { class: "loading" }, "Loading…"));
+      body.replaceChildren(o.intro ? el("p", { class: "intro", ...viewSrc(`${v.id}.intro`) }, o.intro) : "", el("p", { class: "loading" }, "Loading…"));
       try {
         o.views = (await getJSON(o.src)).views;
       } catch (e) {
@@ -417,7 +464,7 @@ function renderPicker(v, cls) {
       }
       if (select.value !== String(i)) return;   // another option was picked meanwhile
     }
-    body.replaceChildren(o.intro ? el("p", { class: "intro" }, o.intro) : "", ...o.views.map((w) => renderView(w, cls, true)));
+    body.replaceChildren(o.intro ? el("p", { class: "intro", ...viewSrc(`${v.id}.intro`) }, o.intro) : "", ...o.views.map((w) => renderView(w, cls, true)));
     if (remember && current.model) {
       const path = `/${current.model}/${v.id}/${o.slug || slugify(o.label)}/`;
       history.replaceState(null, "", path);
@@ -497,10 +544,12 @@ function loadEmbed(server) {
 
 async function renderDataTable(id) {
   const site = await getJSON("/data/site.json");
-  const t = (site.tables || []).find((x) => x.id === id);
+  // /tables/ alone (the template's own address, e.g. in Claude UI's Editor) shows the first table
+  const t = (site.tables || []).find((x) => x.id === id) || (id ? null : (site.tables || [])[0]);
   current = { model: null, pickers: {} };
   if (!t) return notFound("That table isn't on the site.");
-  setHead(t.title, t.summary, `/tables/${id}/`);
+  if (!(await ensurePage("tables"))) return;
+  setHead(t.title, t.summary, `/tables/${t.id}/`);
   const cls = cellClass(t.sport);
   const host = el("div", { class: "live-table" }, el("p", { class: "loading" }, "Loading the table…"));
   const show = async (options) => {
@@ -526,16 +575,16 @@ async function renderDataTable(id) {
     el("summary", {}, "What the columns mean"),
     el("dl", {}, ...Object.entries(t.columns).flatMap(([k, v]) => [el("dt", {}, k),
       el("dd", {}, labels[k] && labels[k].toLowerCase() !== k ? `${labels[k]}: ${v}` : v)]))) : null;
-  app.replaceChildren(
+  fillSlot("table",
     cell(`${cls} page-head`,
       el("a", { class: "back", href: "/" }, "← Home"),
       el("div", { class: "ss-kicker" }, `${t.sport ? t.sport + " · " : ""}Data table`),
-      el("h1", { class: "ss-title" }, t.title),
-      el("p", { class: "summary" }, t.summary),
+      el("h1", { class: "ss-title", ...tableSrc(t, "title") }, t.title),
+      el("p", { class: "summary", ...tableSrc(t, "summary") }, t.summary),
       examples, key),
     cell(`${cls} live-cell`, host),
-    t.how ? cell(`${cls} how`, el("div", { class: "ss-band" }, "How this works"), el("p", {}, t.how)) : null);
-  renderNav(`tables/${id}`);
+    t.how ? cell(`${cls} how`, el("div", { class: "ss-band" }, "How this works"), el("p", tableSrc(t, "how"), t.how)) : null);
+  renderNav(`tables/${t.id}`);
   window.scrollTo(0, 0);
   show({});
 }
@@ -563,31 +612,22 @@ async function renderCharts(slug) {
   current = { model: null, pickers: {} };
   const t = charts.find((x) => x.id === slug) || charts.find((x) => chartSlug(x.template) === slug) || charts[0];
   if (!t) return notFound("There are no charts yet.");
-  setHead(slug ? `${t.title}: Baseball charts` : "Baseball charts", t.intro, slug ? `/charts/${t.id}/` : "/charts/");
-  const cls = cellClass("Baseball");
+  if (!(await ensurePage("charts"))) return;
+  // the page's title, summary and "How this works" are in web/site/charts/index.html
+  const pageTitle = app.querySelector("h1")?.textContent.trim() || "Baseball charts";
+  setHead(slug ? `${t.title}: ${pageTitle}` : pageTitle, t.intro, slug ? `/charts/${t.id}/` : "/charts/");
   const groups = {};
   for (const x of charts) (groups[x.group] = groups[x.group] || []).push(x);
   const host = el("div", { class: "live-chart" }, el("p", { class: "loading" }, "Loading the chart…"));
-  app.replaceChildren(
-    cell(`${cls} page-head`,
-      el("a", { class: "back", href: "/" }, "← Home"),
-      el("div", { class: "ss-kicker" }, "Baseball · Charts"),
-      el("h1", { class: "ss-title" }, "Baseball charts"),
-      el("p", { class: "summary" }, "Every big-league season from 1871 to 2024, charted. Pick a chart, or change any of its boxes and draw it again."),
-      el("nav", { class: "chart-picks", "aria-label": "Charts" },
-        ...Object.entries(groups).map(([g, xs]) => el("div", { class: "chart-group" },
-          el("span", { class: "chart-group-name" }, g),
-          el("div", { class: "chart-group-buttons" }, ...xs.map((x) => el("a", { class: "ss-btn small", href: `/charts/${x.id}/`,
-            ...(x === t ? { "aria-current": "page" } : {}) }, x.title))))))),
-    cell(`${cls} chart-cell`,
-      el("div", { class: "ss-band" }, t.title),
-      el("p", { class: "chart-intro" }, t.intro),
-      host),
-    cell(`${cls} how`, el("div", { class: "ss-band" }, "How this works"),
-      el("p", {}, "Each box is a formula over a season's numbers (HR, AB, BB…). What you type is read by ",
-        el("a", { href: "https://mathzetta.com/" }, "MathZetta"),
-        ", shown as maths, and the chart is drawn by a short Python program right in your browser. The first chart downloads Python into your browser (a few seconds, and a sizeable download on a phone plan; afterwards it's cached); nothing you type is sent anywhere."),
-      el("p", { class: "small" }, "Data: the Lahman Baseball Database (SABR, CC BY-SA 3.0): hitters with 400+ at-bats and pitchers with 100+ innings in a season.")));
+  fillSlot("chart-picks",
+    ...Object.entries(groups).map(([g, xs]) => el("div", { class: "chart-group" },
+      el("span", { class: "chart-group-name" }, g),
+      el("div", { class: "chart-group-buttons" }, ...xs.map((x) => el("a", { class: "ss-btn small", href: `/charts/${x.id}/`, ...chartSrc(x, "title"),
+        ...(x === t ? { "aria-current": "page" } : {}) }, x.title))))));
+  fillSlot("chart",
+    el("div", { class: "ss-band", ...chartSrc(t, "title") }, t.title),
+    el("p", { class: "chart-intro", ...chartSrc(t, "intro") }, t.intro),
+    host);
   renderNav("charts");
   window.scrollTo(0, 0);
   try {
@@ -618,12 +658,12 @@ function setHead(title, description, path) {
 
 function notFound(message) {
   setHead("Page not found", null, location.pathname);
-  app.replaceChildren(cell("ss-p2", el("div", { class: "ss-band" }, "Page not found"),
+  drawWhole(cell("ss-p2", el("div", { class: "ss-band" }, "Page not found"),
     el("p", {}, `${message} `, el("a", { href: "/" }, "See everything"))));
 }
 
 function failed(e) {
-  app.replaceChildren(cell("ss-p2", el("div", { class: "ss-band" }, "Something went wrong"),
+  drawWhole(cell("ss-p2", el("div", { class: "ss-band" }, "Something went wrong"),
     el("p", {}, `This page didn't load (${e.message}). Try again in a moment, or `, el("a", { href: "/" }, "go to the home page"), ".")));
   console.error(e);
 }
@@ -656,6 +696,7 @@ document.addEventListener("click", (e) => {
   if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
   const a = e.target.closest("a[href]");
   if (!a || a.target || a.hasAttribute("download") || app.hasAttribute("data-static")) return;
+  if (EDITOR) return;   // in Claude UI's Editor every page loads from its own file
   const url = new URL(a.href, location.href);
   if (!drawnHere(url)) return;
   e.preventDefault();
@@ -688,6 +729,10 @@ function fromHash() {
   history.replaceState(null, "", rest ? `/${rest}/` : "/");
   return true;
 }
+
+// Claude UI's Editor marks every element of the file it shows (data-cui): there, links load pages
+// the ordinary way, so what is on screen is always the file being edited.
+const EDITOR = !!document.querySelector("[data-cui]");
 
 let siteData = null;
 const sitePromise = getJSON("/data/site.json").then((s) => { siteData = s; SPORT_CELL = s.cells || {}; return s; });

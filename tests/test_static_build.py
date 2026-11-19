@@ -113,7 +113,12 @@ def test_every_address_is_a_real_page_in_the_sitemap(site):
     # the words are in the page before any script runs; the text pages are left alone by site.js
     bowls = (site / "ncaaf_bowls" / "index.html").read_text()
     assert 'href="/ncaaf_bowls/team/georgia/"' in bowls and "How this works" in bowls
-    assert 'id="app" data-static' in (site / "privacy" / "index.html").read_text()
+    assert re.search(r'id="app"[^>]* data-static', (site / "privacy" / "index.html").read_text())
+    # the words written in the page sources (web/site/) are in the built pages, slots filled
+    assert 'data-text="title"' in bowls and 'class="headline"' in bowls
+    recruiting = (site / "ncaaf_recruiting" / "index.html").read_text()
+    newest = json.loads((site / "data" / "views" / "ncaaf_recruiting.json").read_text())["fill"]["last_year"]
+    assert f'<span data-fill="last_year">{newest}</span>' in recruiting
     # a missing option's address (a past poll week) is forwarded to its page by the 404 page
     assert "/data/views/" in (site / "404.html").read_text() and "location.replace" in (site / "404.html").read_text()
     # an old address is a stub that forwards to the new one and isn't indexed
@@ -171,14 +176,14 @@ def test_static_server_serves_bundle(site):
 def test_cli_build_site(tmp_path, no_pages):
     target = tmp_path / "cli_dist"
     assert main(["build-site", "--out", str(target)]) == 0
-    assert (target / "index.html").exists() and (target / "editor.html").exists()
+    assert (target / "editor.html").exists() and (target / "404.html").exists()   # (pages: stubbed out)
     assert (target / "data" / "manifest.json").exists()
 
 
 def test_cli_update_and_build(tmp_path, no_pages):
     target = tmp_path / "update_dist"
     assert main(["update-and-build", "--offline", "--models", "dad,race_podium", "--out", str(target)]) == 0
-    assert (target / "index.html").exists()
+    assert (target / "editor.html").exists()
     assert (target / "data" / "manifest.json").exists()
 
 

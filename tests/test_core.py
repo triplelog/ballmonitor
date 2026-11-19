@@ -151,18 +151,40 @@ def test_views_check_reports_problems():
     assert V.check(V.clean(V.page("T", "S", "Running", [V.bar("b", "B", [{"label": "x", "value": 1.0}])]))) == []
 
 
-def test_site_md_text_overrides_page_text(tmp_path):
+def test_page_source_text_overrides_page_text(tmp_path):
     from ballmonitor.core import views as V
-    md = tmp_path / "site.md"
-    md.write_text("<!-- note -->\n<!-- claude-ui:begin title -->\n  New title\n<!-- claude-ui:end title -->\n"
-                  "<!-- claude-ui:begin summary -->\nAt {races}\nraces.\n<!-- claude-ui:end summary -->\n"
-                  "<!-- claude-ui:begin how -->\n\n<!-- claude-ui:end how -->\n")
-    text = V.read_text_file(md)
-    assert text == {"title": "New title", "summary": "At {races} races."}  # empty section: keep site.py's
+    from ballmonitor.web import pages
+    src = tmp_path / "index.html"
+    src.write_text('<h1 class="ss-title" data-text="title">\n  <!-- claude-ui:begin title -->\n  New &amp; title\n'
+                   '  <!-- claude-ui:end title -->\n</h1>\n'
+                   '<p class="summary" data-text="summary">At <span data-fill="races">85</span>\n<b>races</b>.</p>\n'
+                   '<p data-text="how"><!-- claude-ui:begin how --><!-- claude-ui:end how --></p>\n')
+    text = pages.read_text(src)
+    assert text == {"title": "New & title", "summary": "At {races} races."}  # empty how: keep site.py's
+    assert pages.read_text(tmp_path / "missing.html") == {}
     p = V.page("Old", "Old summary", "Running", [V.bar("b", "B", [{"label": "x", "value": 1.0}])], how="Old how",
                fill={"races": 85})
     V.apply_text(p, text)
-    assert (p["title"], p["summary"], p["how"]) == ("New title", "At 85 races.", "Old how")
+    assert (p["title"], p["summary"], p["how"]) == ("New & title", "At 85 races.", "Old how")
     assert V.check(p) == []
     p2 = V.apply_text(V.page("T", "S", "Running", p["views"]), {"summary": "At {nope}"})
     assert any("unknown placeholder" in e for e in V.check(p2))
+
+
+def test_page_source_slots_spans_and_shell(tmp_path):
+    from ballmonitor.web import pages
+    master = ('<head><title>Ball Monitor</title><meta name="description" content="d"><link rel="canonical" href="x">'
+              '<meta property="og:title" content="t"><meta property="og:description" content="d">'
+              '<meta property="og:url" content="u"><!-- shell:head --><link rel="icon" href="/new.ico">'
+              '<!-- /shell:head --></head><!-- shell:sidebar -->NEW SIDE<!-- /shell:sidebar -->'
+              '<!-- shell:footer -->F<!-- /shell:footer -->')
+    page = (master.replace("/new.ico", "/old.ico").replace("NEW SIDE", "old side")
+            + '<p>In <span data-fill="year">2000</span></p><div class="slot" data-slot="views"><p>Loading</p></div>')
+    out = pages.shell(page, site_url="https://x.com", path="/m/", title="M & co", description="About M",
+                      slots={"views": "<table></table>"}, fill={"year": 2027}, master=master)
+    assert "<title>M &amp; co · Ball Monitor</title>" in out and 'href="https://x.com/m/"' in out
+    assert '<div class="slot" data-slot="views"><table></table></div>' in out and "Loading" not in out
+    assert '<span data-fill="year">2027</span>' in out
+    assert "NEW SIDE" in out and "/new.ico" in out and "old side" not in out   # index.html's shell wins
+    with pytest.raises(ValueError, match="data-slot"):
+        pages.shell(page, site_url="", path="/", title="T", description="D", slots={"nope": ""})

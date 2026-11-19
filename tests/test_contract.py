@@ -49,16 +49,23 @@ def test_fetch_policy_is_well_formed(name):
 
 
 @pytest.mark.parametrize("name", ALL)
-def test_site_text_file_is_well_formed(name):
-    from ballmonitor.core import views
+def test_site_page_has_a_source_file(name):
+    """A one-page model's words (title, summary, how) are in web/site/<name>/index.html (multi-page
+    models: one file per address, checked by the static build)."""
+    import importlib
+
+    from ballmonitor.web import pages
     directory = registry.model_dir(name)
-    for path in [directory / "site.md", *sorted(directory.glob("site_*.md"))]:  # site_<page>.md: multi-page
-        if not path.exists():
-            continue
-        assert (directory / "site.py").exists(), f"{path.name} needs a site.py"
-        text = views.read_text_file(path)
-        assert set(text) <= set(views.TEXT_KEYS), f"{path.name}: unknown sections {set(text) - set(views.TEXT_KEYS)}"
-        assert text.get("title") and text.get("summary"), f"{path.name} needs a title and a summary"
+    if not (directory / "site.py").exists():
+        return
+    module = importlib.import_module(f"ballmonitor.models.{name}.site")
+    if hasattr(module, "pages"):
+        return
+    source = pages.address_file(name)
+    assert source.is_file(), f"add web/site/{name}/index.html (copy another page's file)"
+    text = pages.read_text(source)
+    assert text.get("title") and text.get("summary"), f"{source}: needs data-text title and summary"
+    assert 'data-slot="views"' in source.read_text(encoding="utf-8"), f"{source}: needs a data-slot=\"views\""
 
 
 @pytest.mark.parametrize("name", RUNNABLE)

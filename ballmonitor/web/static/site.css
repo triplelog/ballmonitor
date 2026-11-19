@@ -16,18 +16,35 @@
 .ss-p5 { --ss-muted: var(--ss-ink); }
 .ss-p5 .ss-kicker { color: var(--ss-ink); }
 
+/* The logo (static/logo.png, from portfolio/branding; made for the periwinkle band): wider than
+   Shioh's 170px default in the sidebar, smaller in the phone menu bar. */
+.ss-logo img { display: block; max-width: 220px; margin: 0 auto; }
+@media (max-width: 860px) { .ss-navcell .ss-logo img { max-width: 170px; margin: 0; } }
+
+/* A data-slot wrapper (web/site/*.html: where site.js puts the tables and charts) takes no room
+   of its own: the cells inside it sit in the page's column like any other cell. */
+.slot { display: contents; }
+
 /* Shioh's buttons set display, which would override the hidden attribute. */
 [hidden] { display: none !important; }
 
 .small { font-size: 0.85rem; }
 .side-about p { margin: 0 0 0.5rem; }
 .side-about p:last-child { margin: 0; }
+/* the site's one-line heading: the home page's <h1>, a <p> on the other pages (web/pages.py) */
+.side-about .side-title { font-family: var(--ss-font-head); font-size: 1.15rem; font-weight: 700;
+  line-height: 1.25; margin: 0 0 0.5rem; }
 
 /* ---------- home ---------- */
 .home-intro { margin: 0; font-size: 1.05rem; }
-.model-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem; }
+/* the cards in each home cell sit side by side in one row (stacked on phones) */
+.model-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.5rem;
+  grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); }
+@media (max-width: 860px) { .model-list { grid-auto-flow: row; } }
+.model-list li { display: flex; }
 .model-link {
   display: block;
+  flex: 1;
   background: var(--ss-panel);
   border-radius: var(--ss-radius-sm);
   padding: 0.7rem 0.9rem;

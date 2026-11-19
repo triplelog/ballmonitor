@@ -1,7 +1,8 @@
 """Static site builder for ballmonitor.
 
 Generates a standalone static distribution directory (default: `dist/`) containing:
-- index.html: the public page (site.html + site.js/site.css), which only shows data/views/*.json
+- index.html and a page at every public address: web/site/ sources (web/pages.py) + site.js/site.css,
+  which only show data/views/*.json
 - editor.html: the model editor (index.html + app.js), read-only on the static site
 - data/site.json + data/views/<name>.json: pre-generated tables/charts from models/<name>/site.py
 - replay assets, the editor's app.js/style.css (Pitch Guesser's game.html is off the site for now)
@@ -58,8 +59,15 @@ GONE_OPTION_SCRIPT = """<script>
 """
 
 
+ROOT_ICONS = ("favicon.ico", "favicon.svg", "apple-touch-icon.png")   # from portfolio/branding/final
+ICON_TAGS = ('<link rel="icon" href="/favicon.ico" sizes="32x32">\n'
+             '  <link rel="icon" href="/favicon.svg" type="image/svg+xml">\n'
+             '  <link rel="apple-touch-icon" href="/apple-touch-icon.png">')
+
+
 def game_head(html: str, path: str, title: str, description: str) -> str:
-    """A game page with a description, canonical link and share tags (those it lacks) before </head>."""
+    """A game page with a description, canonical link, share tags and the site's icons (those it
+    lacks) before </head>."""
     from html import escape
     url = SITE_URL + path
     tags = {
@@ -72,6 +80,8 @@ def game_head(html: str, path: str, title: str, description: str) -> str:
         'property="og:image"': f'<meta property="og:image" content="{SITE_URL}/static/share.png">',
         'name="twitter:card"': '<meta name="twitter:card" content="summary_large_image">',
     }
+    if 'rel="icon"' not in html:   # a game with its own icon (27K) keeps it
+        tags['rel="icon"'] = ICON_TAGS
     add = "".join(f"  {tag}\n" for key, tag in tags.items() if key not in html)
     return html.replace("</head>", add + "</head>", 1) if add else html
 
@@ -202,21 +212,22 @@ def missing_import_targets(html_path: Path) -> list[str]:
 def site_pages(name: str) -> dict[str, dict]:
     """The pre-generated public pages of one model, {address: page}, each checked with
     core.views.check; {} when the model has no site.py. A site.py defines `page(model)` (one page
-    at /<model>/, text from site.md) or `pages(model) -> {address: page}` (several pages, e.g. one
-    per sport; text from site_<address>.md). Every page records its `model` for the editor link."""
+    at /<model>/) or `pages(model) -> {address: page}` (several pages, e.g. one per sport). The
+    words (title, summary, how) come from each address's source file, web/site/<address>/index.html
+    (web/pages.py). Every page records its `model` for the editor link."""
     directory = registry.model_dir(name)
     if not (directory / "site.py").exists():
         return {}
     module = importlib.import_module(f"ballmonitor.models.{name}.site")
     model = registry.load_model(name)
     if hasattr(module, "pages"):
-        built = {address: (p, directory / f"site_{address}.md") for address, p in module.pages(model).items()}
+        built = module.pages(model)
     else:
-        built = {name: (module.page(model), directory / "site.md")}
+        built = {name: module.page(model)}
     out = {}
-    for address, (p, text_file) in built.items():
+    for address, p in built.items():
         p = views.clean(p)
-        views.apply_text(p, views.read_text_file(text_file))
+        views.apply_text(p, pages.read_text(pages.address_file(address)))
         problems = views.check(p)
         if problems:
             raise ValueError(f"{name}/site.py ({address}): " + "; ".join(problems[:8]))
@@ -292,19 +303,19 @@ def build_views(data_dir: Path, names: list[str], log=print) -> list[str]:
     for name in names:
         started = time.perf_counter()
         try:
-            pages = site_pages(name)
+            built = site_pages(name)
             redirects.update(site_redirects(name))
         except Exception as exc:  # noqa: BLE001 - reported, then the build fails
             failures.append(f"{name}/site.py: {type(exc).__name__}: {exc}")
             continue
-        for address, p in pages.items():
+        for address, p in built.items():
             text = json.dumps(p, separators=(",", ":"), allow_nan=False)
             if len(text) > SPLIT_BYTES:   # a big page: each dropdown option's tables load when it's picked
                 text = json.dumps(split_options(p, address, out), separators=(",", ":"), allow_nan=False)
             (out / f"{address}.json").write_text(text, encoding="utf-8")
             index.append({"name": address, **{k: p[k] for k in ("title", "summary", "sport", "updated", "order")}})
-        if pages:
-            shown = ", ".join(f"{a} ({len(p['views'])} views)" for a, p in pages.items())
+        if built:
+            shown = ", ".join(f"{a} ({len(p['views'])} views)" for a, p in built.items())
             log(f"   views {name}: {shown} in {time.perf_counter() - started:.1f}s")
     order = {s: i for i, s in enumerate(views.SPORTS)}
     index.sort(key=lambda m: (order.get(m["sport"], 99), m["order"], m["title"]))
@@ -314,6 +325,8 @@ def build_views(data_dir: Path, names: list[str], log=print) -> list[str]:
     chart_list = charts.public()   # the baseball charts page's list (web/charts.toml)
     (data_dir / "site.json").write_text(json.dumps({"models": index, "redirects": redirects, "tables": live,
                                                     "charts": chart_list, "cells": views.SPORT_CELL,
+                                                    # the charts page's own words (title, summary) for its home card
+                                                    "charts_text": pages.charts_text(),
                                                     "assets": app_versions()},
                                                    indent=1), encoding="utf-8")
     return failures
@@ -336,21 +349,20 @@ def build_static_site(out_dir: Path | str = "dist", models: list[str] | None = N
     #    page is index.html; the editor (index.html in the source, the live `serve` page) becomes
     #    editor.html, titled and kept out of search engines.
     for name in ("style.css", "app.js", "replay.js", "site.js", "site.css", "shioh-style.css", "shioh.js",
-                 "fonts.css", "share.png"):
+                 "fonts.css", "share.png", "logo.png"):
         shutil.copy2(STATIC_DIR / name, static_dest / name)
     shutil.copytree(STATIC_DIR / "fonts", static_dest / "fonts", dirs_exist_ok=True)
     shutil.copytree(STATIC_DIR / "apps", static_dest / "apps", dirs_exist_ok=True)   # views.app tools
-    for name in ("replay.js", "replay.html"):
+    for name in ("replay.js", "replay.html", *ROOT_ICONS):   # the icons live at the root (/favicon.ico)
         shutil.copy2(STATIC_DIR / name, target / name)
     # the 404 page (the Shioh template, unchanged) + one script: an option that is no longer on its
     # page (a past poll week, a team that left the table) forwards to the page it belonged to
-    (target / "404.html").write_text((STATIC_DIR / "404.html").read_text(encoding="utf-8").replace(
+    (target / "404.html").write_text((pages.SITE_DIR / "404.html").read_text(encoding="utf-8").replace(
         "</body>", GONE_OPTION_SCRIPT + "</body>", 1), encoding="utf-8")
     editor = (STATIC_DIR / "index.html").read_text(encoding="utf-8")
     editor = re.sub(r"<title>[^<]*</title>", '<title>Model editor · Ball Monitor</title>\n  <meta name="robots" content="noindex">',
                     editor, count=1)
     (target / "editor.html").write_text(editor, encoding="utf-8")
-    shutil.copy2(STATIC_DIR / "site.html", target / "index.html")   # build_pages rewrites it with the home page's words
     (target / "robots.txt").write_text(
         f"User-agent: *\nAllow: /\nDisallow: /editor.html\nDisallow: /replay.html\n\nSitemap: {SITE_URL}/sitemap.xml\n",
         encoding="utf-8")
@@ -449,19 +461,23 @@ def build_static_site(out_dir: Path | str = "dist", models: list[str] | None = N
 
 
 def build_pages(target: Path, data_dir: Path) -> list[str]:
-    """Write a copy of site.html at every public address (web/pages.py), stubs at old addresses,
-    and sitemap.xml listing them all. Reads what build_views wrote (data/site.json, data/views/).
-    Returns the addresses written."""
-    template = versioned((STATIC_DIR / "site.html").read_text(encoding="utf-8"), STATIC_DIR)
+    """Write a page at every public address from its source file in web/site/ (web/pages.py), stubs
+    at old addresses, and sitemap.xml listing them all. Reads what build_views wrote (data/site.json,
+    data/views/). Returns the addresses written."""
     site = json.loads((data_dir / "site.json").read_text(encoding="utf-8"))
     cell = views.cell_class
-    out: dict[str, tuple[str, str, str]] = {
-        "/": (pages.SITE_NAME, _meta_content(template, "description"), pages.home_page(site))}
+    master = pages.address_file("").read_text(encoding="utf-8")
+    out: dict[str, tuple[str, str, dict]] = {"/": (pages.SITE_NAME, pages.head_description(master), pages.home_page(site))}
+    fills: dict[str, dict] = {}
     for m in site["models"]:
         if m["name"] in pages.RESERVED:
             raise ValueError(f"page address {m['name']!r} is used by the site itself")
+        if not pages.address_file(m["name"]).is_file():
+            raise ValueError(f"page {m['name']!r} has no source file: add web/site/{m['name']}/index.html")
         page = json.loads((data_dir / "views" / f"{m['name']}.json").read_text(encoding="utf-8"))
-        out.update(pages.model_pages(m["name"], page, cell(page.get("sport", ""))))
+        made = pages.model_pages(m["name"], page, cell(page.get("sport", "")))
+        out.update(made)
+        fills.update({path: page.get("fill") or {} for path in made})
     for t in site.get("tables", []):
         out[f"/tables/{t['id']}/"] = pages.table_page(t, cell(t.get("sport", "")))
     if site.get("charts"):
@@ -471,11 +487,16 @@ def build_pages(target: Path, data_dir: Path) -> list[str]:
         clash = [c["id"] for c in site["charts"] if c["id"] in taken]
         if clash:
             raise ValueError(f"chart ids clash with files in charts/: {clash}")
-        out.update(pages.chart_pages(site["charts"], cell("Baseball")))
+        out.update(pages.chart_pages(site["charts"]))
     text = {f"/{name}/": pages.text_page(name) for name in pages.TEXT_PAGES}
-    for path, (title, description, body) in {**out, **text}.items():
-        pages.write(target, path, pages.shell(template, site_url=SITE_URL, path=path, title=title,
-                                              description=description, body=body, static=path in text))
+    sources: dict[Path, str] = {}
+    for path, (title, description, slots) in {**out, **text}.items():
+        source = pages.source_file(path)
+        if source not in sources:
+            sources[source] = versioned(source.read_text(encoding="utf-8"), STATIC_DIR)
+        pages.write(target, path, pages.shell(sources[source], site_url=SITE_URL, path=path, title=title,
+                                              description=description, slots=slots, fill=fills.get(path),
+                                              master=master))
     for old, new in site.get("redirects", {}).items():
         if f"/{old}/" not in out:
             pages.write(target, f"/{old}/", pages.redirect_page(SITE_URL, f"/{new}/"))
@@ -486,10 +507,3 @@ def build_pages(target: Path, data_dir: Path) -> list[str]:
         + "".join(f"  <url><loc>{SITE_URL}{path}</loc><lastmod>{today}</lastmod></url>\n" for path in listed)
         + "</urlset>\n", encoding="utf-8")
     return listed
-
-
-def _meta_content(template: str, name: str) -> str:
-    import re
-    m = re.search(rf'<meta name="{name}" content="([^"]*)">', template)
-    return m.group(1) if m else ""
-

@@ -42,8 +42,8 @@ def page(title: str, summary: str, sport: str, views: list[dict], updated: str =
          how: str = "", order: int = 50, fill: dict | None = None, headline: str = "") -> dict:
     """`summary`: one plain sentence. `updated`: what the numbers are as of (e.g. "ESPN data
     through Oct 30, 2026"). `how`: two or three plain sentences on how the numbers are made.
-    The model's site.md (edited in Claude UI) overrides title/summary/how; `fill` holds the
-    values its {placeholders} can use (e.g. {"races": 85}). `headline`: the one answer a fan
+    The page's source file (web/site/<address>/index.html, edited in Claude UI) overrides
+    title/summary/how; `fill` holds the values its data-fill spans show (e.g. {"races": 85}). `headline`: the one answer a fan
     wants first, from the numbers (e.g. "Miami (FL) and Ohio State are the title favorites, 22%
     each"); shown in bold under the summary."""
     return {"title": title, "summary": summary, "sport": sport, "updated": updated, "how": how,
@@ -51,28 +51,12 @@ def page(title: str, summary: str, sport: str, views: list[dict], updated: str =
 
 
 TEXT_KEYS = ("title", "summary", "how")
-_REGION = re.compile(r"<!--\s*claude-ui:begin\s+([a-z0-9-]+)\s*-->\n?(.*?)\n?\s*<!--\s*claude-ui:end\s+\1\s*-->", re.S)
-
-
-def read_text_file(path) -> dict[str, str]:
-    """Sections of a model's site.md: {"title": ..., "summary": ..., "how": ...} (whitespace
-    collapsed to single spaces; empty sections are left out)."""
-    from pathlib import Path
-
-    path = Path(path)
-    if not path.exists():
-        return {}
-    out = {}
-    for key, body in _REGION.findall(path.read_text(encoding="utf-8")):
-        text = " ".join(body.split())
-        if text:
-            out[key] = text
-    return out
 
 
 def apply_text(p: dict, text: dict[str, str]) -> dict:
-    """Override the page's title/summary/how with site.md text, filling {placeholders} from
-    p["fill"] (an unknown placeholder is left as written so the check below reports it)."""
+    """Override the page's title/summary/how with its source file's words (web/pages.read_text),
+    filling {placeholders} from p["fill"] (an unknown placeholder is left as written so the check
+    below reports it)."""
     fill = p.get("fill") or {}
     for key in TEXT_KEYS:
         if key in text:
@@ -205,7 +189,7 @@ def check(p: dict) -> list[str]:
     for key in TEXT_KEYS:
         left = re.findall(r"\{\w+\}", str(p.get(key) or ""))
         if left:
-            errs.append(f"{key}: unknown placeholder(s) {left} (site.md); known: {sorted(p.get('fill') or {})}")
+            errs.append(f"{key}: unknown placeholder(s) {left} (data-fill spans in the page's web/site file); known: {sorted(p.get('fill') or {})}")
     if p.get("sport") and p["sport"] not in SPORTS:
         errs.append(f"sport must be one of {SPORTS}, got {p['sport']!r}")
     ids: set[str] = set()

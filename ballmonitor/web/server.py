@@ -33,7 +33,8 @@ GAME_LINEUP = Path(__file__).resolve().parent.parent / "games" / "lineup" / "web
 # the baseball charts: pyslots' embeddable form and templates (scripts/sync-charts.sh), shown at /charts/
 CHARTS = Path(__file__).resolve().parent.parent / "charts"
 CONTENT_TYPES = {".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".json": "application/json",
-                 ".py": "text/x-python", ".csv": "text/csv", ".woff2": "font/woff2", ".md": "text/markdown"}
+                 ".py": "text/x-python", ".csv": "text/csv", ".woff2": "font/woff2", ".md": "text/markdown",
+                 ".png": "image/png", ".svg": "image/svg+xml", ".ico": "image/x-icon"}
 NAME_RE = re.compile(r"[a-z0-9][a-z0-9_\-]*")
 USER_ERRORS = (ConfigError, FormulaError, KeyError, ValueError, TypeError,
                registry.ModelNotReady, NotImplementedError, tomllib.TOMLDecodeError)
@@ -289,6 +290,8 @@ class Handler(BaseHTTPRequestHandler):
         query = {k: v[0] for k, v in parse_qs(url.query).items()}
         if not parts or parts == ["index.html"]:
             return self._static("index.html")
+        if parts in (["favicon.ico"], ["favicon.svg"], ["apple-touch-icon.png"]):
+            return self._static(parts[0])
         if parts in (["game"], ["play"], ["game.html"]):
             return self._static("game.html")
         if parts and parts[0] == "27k":
