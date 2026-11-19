@@ -186,8 +186,19 @@ cutoff; the target session is chosen by date).
   meta-analysis. *Sports Med* 48(5):1207-1220.
 - Epley B (1985). Poundage chart. Boyd Epley Workout, Lincoln, NE.
 
+## Public page
+
+`site.py` builds `/strength_progress/`: a training log kept only in the visitor's browser
+(localStorage key `bm.log.strength_progress.v1`; imports Hevy and Strong CSV exports, a
+generic CSV, and its own JSON/CSV exports) with a forecast computed in the browser by
+`web/static/apps/strength_progress.js`, a copy of this model's default method that
+`tests/test_strength_progress_app.py` checks against `model.predict`; plus a "typical
+progress" table (`model.predict` on placeholder weekly logs). The build stops if a copied
+formula is changed in config.toml (update the JS copy first).
+
 ## Changelog
 
 - 0.1.0 (2026-11-18): first version: saturating curve in weeks + empirical bands, fitted on
   fit20 (fold A train), tested on other members 2015-07..2016-12; variants no_gain,
   recent_trend, linear_log, consistency.
+- 2026-11-19: public page (`[web] public = true`), browser log tool; no model change.

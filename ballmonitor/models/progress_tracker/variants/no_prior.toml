@@ -1,0 +1,6 @@
+# Adherence without shrinkage
+[meta]
+description = "prior_weight = 0: the share of planned progress made is the raw least-squares ratio, so one or two early entries can swing the prediction a lot."
+
+[params]
+prior_weight = 0.0

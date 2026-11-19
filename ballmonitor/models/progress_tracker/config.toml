@@ -1,0 +1,153 @@
+[meta]
+title = "Progress tracker"
+version = "0.3.0"
+status = "draft"
+question = "Given a goal, a plan to reach it (even, faster early or faster late) and a log of one measure, is the person ahead of or behind the plan, what will they reach by the goal date at the rate they are keeping, and what do they need each week from here to still make it?"
+description = """
+The plan runs from a start value on a start date to the goal on the goal date, shaped like a race \
+pacing strategy: even, faster early (positive split, P(t) = 1 - (1 - t)^k) or faster late (negative \
+split, P(t) = t^k), on the value or, for measures that improve in percent (lifts, pace, race times), \
+on its logarithm. Adherence f is the least-squares ratio of the progress made to the progress planned \
+at each entry, shrunk toward 1 by prior_weight; the predicted final result is start + f x (goal - \
+start). Motivational and untested: the walk-forward study in RESEARCH.md found that short-term pace \
+does not persist and that real progress is mostly front-loaded."""
+assumptions = [
+  "You keep making the same share of your planned progress until the goal date (so a plan that asks for most of its progress later expects it later too).",
+  "Progress is counted in % for lifts, pace and race times (log scale) and in units for ratings, body weight and body fat %.",
+  "Untested: there is no data yet of people's own plans and logs. RESEARCH.md (v0.1.0 study on Lichess, fit20 and Strava logs) found that a few weeks of pace say little about the next months, and that newcomers made about 90% of their first year's gain in the first six months.",
+  "The range around the predicted result comes from how far your entries scatter around your adjusted plan; it is not checked against real outcomes.",
+  "How often you train is not used.",
+]
+
+[web]
+public = true
+
+# ── the plan ───────────────────────────────────────────────────────────────
+
+[params.split_strength]
+value = 1.6
+description = "k in the plan shapes: faster early P(t) = 1 - (1 - t)^k, faster late P(t) = t^k (t = share of the plan period gone). 1 = even; bigger = more lopsided. With 1.6, faster early plans 67% of the progress by half-time."
+source = "Judgement (the coordinator's suggested default). RESEARCH.md: newcomers made about 90% of a year's change in the first 26 weeks (lifts, chess), which is closer to k = 3; 1.6 is a milder, easier-to-follow plan."
+range = [1.0, 5.0]
+
+[params.max_plan_weeks]
+value = 260.0
+description = "Longest plan: the goal date at most this many weeks after the start date."
+unit = "weeks"
+source = "Judgement (five years)."
+range = [4.0, 520.0]
+
+# ── adherence (share of the planned progress made so far) ─────────────────
+
+[params.prior_weight]
+value = 1.0
+description = "Shrinks adherence toward 1 (on plan) as if this many extra entries had been exactly on plan at the plan's half-way point: f = (sum w x y + prior_weight m) / (sum w x^2 + prior_weight m), m = (planned progress at half-time)^2. Early entries, when little progress is planned, count little. 0 = no shrinkage."
+unit = "entries"
+source = "Judgement: one half-way entry's worth keeps the first few entries from swinging the prediction wildly (an even plan's first 8 weekly entries of a 34-week plan are shrunk about 60% toward 1); it fades as entries accumulate (about 14% by half-time with weekly entries)."
+range = [0.0, 50.0]
+
+[params.recency_half_life_weeks]
+value = 0.0
+description = "Weight of an entry in adherence halves every this-many weeks of age (formula recency_weight); 0 = all entries count equally."
+unit = "weeks"
+source = "Judgement: equal weights are the simplest; RESEARCH.md found recency weighting made little difference to the rolling line."
+range = [0.0, 104.0]
+
+[params.max_adherence]
+value = 3.0
+description = "Adherence is kept within -this..+this (3 = three times the planned progress), so a fast start doesn't predict a fantasy result."
+source = "Judgement."
+range = [1.0, 10.0]
+
+[params.interval_level]
+value = 0.8
+description = "Coverage of the (untested) range around the predicted result."
+source = "Judgement: '8 in 10', the level the site uses everywhere."
+range = [0.5, 0.99]
+
+# ── next week's goal ─────────────────────────────────────────────────────
+
+[params.catch_up_share]
+value = 0.25
+description = "When behind, next week's goal is one plan-week of progress plus this share of the gap to the plan (formula next_goal_behind); it is then capped at the plan's own waypoint and raised to at least the re-planned value."
+source = "Judgement (owner's request: more than the plan's step but not all the way back to the waypoint): a quarter of the gap a week closes it gradually without an unrealistic jump. At 1 the goal is the waypoint itself; above 1 the waypoint cap applies."
+range = [0.0, 2.0]
+
+[params.on_track_tolerance]
+value = 0.1
+description = "Counted as on plan if behind by no more than this share of the plan's step for the coming week (then next week's goal is the plan's own waypoint)."
+source = "Judgement: a tenth of a week's planned progress is within the noise of one entry."
+range = [0.0, 2.0]
+
+# ── kinds of measure (which scale) ───────────────────────────────────────
+
+[params.scale_chess]
+value = "linear"
+description = "Chess ratings progress in points."
+source = "Owner's design (ratings are on an additive scale)."
+choices = ["linear", "log"]
+
+[params.scale_strength]
+value = "log"
+description = "Lifts progress in % (the plan is interpolated in ln(weight))."
+source = "Owner's design; strength gains are usually reported in % (Steele et al. 2022)."
+choices = ["linear", "log"]
+
+[params.scale_running]
+value = "log"
+description = "Running pace and race times progress in %."
+source = "Owner's design; a 1% faster pace is 1% faster at any level."
+choices = ["linear", "log"]
+
+[params.scale_body]
+value = "linear"
+description = "Body weight and body fat % progress in kg (lb, points)."
+source = "Owner's design; weekly weight change is usually stated in kg per week."
+choices = ["linear", "log"]
+
+# ── formulas ──────────────────────────────────────────────────────────────
+
+[formulas.share_even]
+expr = "t"
+description = "Even plan: share of the planned progress due at time share t."
+variables = ["t"]
+
+[formulas.share_faster_early]
+expr = "1 - (1 - t) ** split_strength"
+description = "Faster early (positive split): most of the progress comes early."
+variables = ["t"]
+
+[formulas.share_faster_late]
+expr = "t ** split_strength"
+description = "Faster late (negative split): most of the progress comes late."
+variables = ["t"]
+
+[formulas.planned]
+expr = "start + share * (goal - start)"
+description = "Planned value (on the log scale for % measures)."
+variables = ["start", "share", "goal"]
+
+[formulas.recency_weight]
+expr = "1 if recency_half_life_weeks <= 0 else 0.5 ** (age_weeks / recency_half_life_weeks)"
+description = "Weight of one entry in adherence, by its age in weeks."
+variables = ["age_weeks"]
+
+[formulas.adherence]
+expr = "clamp((sxy + prior_weight * m) / (sxx + prior_weight * m), -max_adherence, max_adherence)"
+description = "Share of the planned progress made: least-squares ratio of progress made (y) to progress planned (x) at the entries since the start, shrunk toward 1."
+variables = ["sxy", "sxx", "m"]
+
+[formulas.predicted]
+expr = "start + f * (goal - start)"
+description = "Predicted result on the goal date at the current adherence (if f > 0; otherwise the latest entry)."
+variables = ["start", "f", "goal"]
+
+[formulas.spread]
+expr = "sqrt(resid_var + (goal - start) ** 2 * f_var)"
+description = "Standard deviation of the predicted result: the scatter of entries around f x plan plus the uncertainty of f (untested)."
+variables = ["resid_var", "goal", "start", "f_var"]
+
+[formulas.next_goal_behind]
+expr = "latest + step + catch_up_share * gap"
+description = "Next week's goal when behind: the latest entry, plus the plan's step for that week, plus a share of the gap (gap = plan at the latest entry's date - latest entry), on the log scale for % measures."
+variables = ["latest", "step", "gap"]

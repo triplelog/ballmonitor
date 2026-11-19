@@ -1,6 +1,6 @@
 [meta]
 title = "Running progress"
-version = "0.1.0"
+version = "0.1.1"
 status = "calibrated"  # stub | draft | calibrated
 question = "Given a runner's training log up to today, what will their average pace and weekly distance be in the four weeks before a chosen future date, and will they still be training?"
 description = """
@@ -23,7 +23,7 @@ assumptions = [
 ]
 
 [web]
-public = false
+public = true
 
 # ── reading the log ────────────────────────────────────────────────────────
 
@@ -372,6 +372,29 @@ description = "Slowest marathon (minutes) in Tanda's 2011 sample."
 unit = "min"
 source = "Tanda G, Knechtle B (2013), Open Access J Sports Med 4:141-149, doi:10.2147/OAJSM.S44945."
 range = [60.0, 600.0]
+
+# ── public page only (site.py) ─────────────────────────────────────────────
+
+[params.site_example_pace_sec]
+value = 330.0
+description = "Page only: average pace of the steady example runner in the page's tables and headline."
+unit = "s/km"
+source = "Judgement: 5:30/km, close to ref_pace (the median 12-week pace of the BMClab train cases, 5:32/km)."
+range = [180.0, 600.0]
+
+[params.site_example_km_per_week]
+value = 30.0
+description = "Page only: weekly km of the steady example runner."
+unit = "km/week"
+source = "Judgement: close to ref_km (28.4 km/week, median of the BMClab train cases)."
+range = [5.0, 150.0]
+
+[params.site_default_weeks_ahead]
+value = 12
+description = "Page only: the log tool's starting forecast horizon."
+unit = "weeks"
+source = "Judgement (a typical training block)."
+range = [4, 26]
 
 # ── fitted band shapes and seasonal curves (written by research.py) ────────
 

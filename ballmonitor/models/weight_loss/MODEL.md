@@ -6,7 +6,7 @@ will they weigh on a chosen future date, and how wide is the realistic range?
 **Status:** draft. **Not backtested.** The physiology is Hall et al.'s published, validated
 model, but the *ranges* rest on DRAFT literature values and judgement: there is no open dataset
 of individual dated weigh-ins to calibrate them against (see [Data that would calibrate
-it](#data-that-would-calibrate-it)). Not on the public site (`[web] public = false`).
+it](#data-that-would-calibrate-it)).
 
 **Licensing note.** This is the model behind the NIH Body Weight Planner
 (bwsimulator.niddk.nih.gov), which NIDDK lists as a licensable technology (NIH tech transfer
@@ -169,7 +169,20 @@ Candidate sources (none are open downloads):
   own linearisation was chosen as the simple variant because it shares all constants with the
   full model.
 
+## Public page
+
+`/weight_loss/` (`site.py`, page words in `web/site/weight_loss/index.html`): an in-browser weigh-in
+log and planner (`web/static/apps/weight_loss.js`, a line-by-line copy of this model's hall2011
+method, fit, bands and goal search, checked against `model.predict` under node by
+`tests/test_weight_loss_app.py`), plus a table of what a steady 250/500/750 kcal/day cut does for
+two illustrative (made-up) adults. The log is kept only in the visitor's browser (localStorage
+`bm.log.weight_loss.v1`, shared progress-log format: `settings` + `entries` of
+`{date, weight, unit}`); weigh-ins before the start date are kept but not used. `site_*` params
+are page-only input limits and the default horizon. The page says it is not medical advice and
+not backtested.
+
 ## Changelog
 
+- 0.1.1 — public page with an in-browser weigh-in log and planner (site.py, web/static/apps/weight_loss.js); page-only `site_*` params; no change to the model.
 - 0.1.0 — initial version: Hall 2011 dynamic model, linear variant, adherence fit to weigh-ins,
   DRAFT uncertainty bands.

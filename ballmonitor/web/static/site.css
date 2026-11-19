@@ -239,3 +239,67 @@ h1[tabindex="-1"]:focus { outline: none; }
 @media (max-width: 860px) {
   .app-race_time th:last-child, .app-race_time td:last-child { white-space: normal; min-width: 5.5rem; }
 }
+
+/* ---------- apps: the strength progress log (static/apps/strength_progress.js) ---------- */
+.app-strength_progress .sp-h { margin: 1.2rem 0 0.4rem; font-family: var(--ss-font-head); font-size: 1rem; }
+.app-strength_progress .sp-form { display: flex; flex-wrap: wrap; align-items: end; gap: 0.5rem 0.8rem; padding: 0.55rem 0.7rem;
+  background: var(--ss-panel); border-radius: var(--ss-radius-sm); }
+.app-strength_progress .sp-form label { display: grid; gap: 0.15rem; font-weight: 600; font-size: 0.9rem; }
+.app-strength_progress .sp-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.8rem; margin: 0.5rem 0; }
+.app-strength_progress .sp-file input[type="file"] { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.app-strength_progress .sp-file { position: relative; cursor: pointer; }
+.app-strength_progress .sp-file:focus-within { outline: 2px solid var(--ss-ink); outline-offset: 2px; }
+.app-strength_progress .sp-rowbtns { white-space: nowrap; }
+.app-strength_progress .sp-rowbtns .ss-btn + .ss-btn { margin-left: 0.3rem; }
+
+/* ── weight_loss app (web/static/apps/weight_loss.js): weigh-in log + planner ── */
+.app-weight_loss .wl-h { margin: 1rem 0 0.4rem; font-family: var(--ss-font-head); font-size: 1rem; }
+.app-weight_loss .wl-h:first-child { margin-top: 0; }
+.wl-form { display: grid; grid-template-columns: repeat(auto-fill, minmax(9.5rem, 1fr)); gap: 0.6rem 0.9rem; margin-bottom: 0.6rem; }
+.wl-field { display: grid; gap: 0.15rem; font-weight: 600; font-size: 0.9rem; align-content: start; }
+.wl-field small { font-weight: 400; opacity: 0.75; }
+.wl-short { width: 6.5rem; font-variant-numeric: tabular-nums; }
+.wl-pair { display: flex; align-items: center; gap: 0.3rem; white-space: nowrap; }
+.wl-pair .wl-short { width: 3.6rem; }
+.wl-add { display: flex; flex-wrap: wrap; align-items: end; gap: 0.5rem 0.8rem; margin-bottom: 0.6rem; }
+.wl-msg { font-size: 0.85rem; }
+.wl-logtable { max-height: 18rem; overflow-y: auto; }
+.wl-unused td { opacity: 0.55; }
+.wl-tools { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.6rem 0; }
+.wl-head { font-size: 1.05rem; margin: 0 0 0.6rem; }
+.app-weight_loss .wl-k { font-weight: 600; white-space: normal; }
+.wl-weekly summary { cursor: pointer; font-weight: 600; margin: 0.6rem 0; }
+.wl-warn { font-weight: 600; }
+.wl-private { font-weight: 600; }
+
+/* ---------- apps: the Lichess rating log and forecast (static/apps/lichess_rating.js) ---------- */
+.app-lichess_rating .lr-h { font-family: var(--ss-font-head); font-size: 1.05rem; margin: 1.1rem 0 0.5rem; }
+.app-lichess_rating .rc-race { margin: 0.5rem 0; }
+.app-lichess_rating .lr-stats input { width: 11.5rem; }
+.app-lichess_rating .lr-check { display: flex; align-items: center; gap: 0.4rem; }
+.app-lichess_rating .lr-actions { white-space: nowrap; }
+.app-lichess_rating .lr-tools { display: flex; flex-wrap: wrap; gap: 0.5rem; margin: 0.4rem 0; }
+.app-lichess_rating .lr-ask { margin: 0; flex-basis: 100%; }
+.app-lichess_rating .lr-status:empty { display: none; }
+
+/* ---------- apps: the progress tracker (static/apps/progress_tracker.js) ---------- */
+.app-progress_tracker .pt-h { margin: 1.2rem 0 0.4rem; font-family: var(--ss-font-head); font-size: 1rem; }
+.app-progress_tracker .pt-form { display: flex; flex-wrap: wrap; align-items: end; gap: 0.5rem 0.8rem; padding: 0.55rem 0.7rem; margin: 0.4rem 0;
+  background: var(--ss-panel); border-radius: var(--ss-radius-sm); }
+.app-progress_tracker .pt-form label { display: grid; gap: 0.15rem; font-weight: 600; font-size: 0.9rem; }
+.app-progress_tracker .pt-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.8rem; margin: 0.5rem 0; }
+.app-progress_tracker .pt-file input[type="file"] { position: absolute; width: 1px; height: 1px; opacity: 0; }
+.app-progress_tracker .pt-file { position: relative; cursor: pointer; }
+.app-progress_tracker .pt-file:focus-within { outline: 2px solid var(--ss-ink); outline-offset: 2px; }
+.app-progress_tracker .pt-num { width: 6.5rem; font-variant-numeric: tabular-nums; }
+.app-progress_tracker .pt-settings input[type="number"] { width: 4rem; }
+.app-progress_tracker .pt-rowbtns { white-space: nowrap; }
+.app-progress_tracker .pt-rowbtns .ss-btn + .ss-btn { margin-left: 0.3rem; }
+.app-progress_tracker .pt-weeks summary { cursor: pointer; font-weight: 600; margin: 0.6rem 0; }
+.app-progress_tracker .pt-status:empty { display: none; }
+.app-progress_tracker .pt-headline { margin: 0 0 0.8rem; padding: 0.8rem 1rem; background: var(--ss-panel); border-radius: var(--ss-radius-sm); }
+.app-progress_tracker .pt-headline p { margin: 0.2rem 0; }
+.app-progress_tracker .pt-big { font-family: var(--ss-font-head); font-size: 1.45rem; font-weight: 700; line-height: 1.25; }
+.app-progress_tracker .pt-next { margin-top: 0.6rem; padding-top: 0.5rem; border-top: 1px solid rgba(0, 0, 0, 0.15); }
+.app-progress_tracker .pt-next p { margin: 0.15rem 0; }
+.app-progress_tracker .pt-next b { font-size: 1.1rem; }

@@ -1,0 +1,41 @@
+# PLACEHOLDER: made-up weekly weigh-ins (not anyone's data) with an even plan from 92.4 to 85 kg.
+metric = "body_weight"
+unit = "kg"
+today = 2026-02-23
+shape = "even"
+start_date = 2026-01-05
+start_value = 92.4
+goal_value = 85
+goal_date = 2026-06-01
+
+[[entries]]
+date = 2026-01-05
+value = 92.4
+
+[[entries]]
+date = 2026-01-12
+value = 91.8
+
+[[entries]]
+date = 2026-01-19
+value = 91.9
+
+[[entries]]
+date = 2026-01-26
+value = 91.1
+
+[[entries]]
+date = 2026-02-02
+value = 90.6
+
+[[entries]]
+date = 2026-02-09
+value = 90.8
+
+[[entries]]
+date = 2026-02-16
+value = 90
+
+[[entries]]
+date = 2026-02-23
+value = 89.7

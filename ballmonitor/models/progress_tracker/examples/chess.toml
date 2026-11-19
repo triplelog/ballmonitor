@@ -1,0 +1,44 @@
+# A Lichess blitz player's rating (after the day's last game), with an even plan to 1800.
+# Real player from the lichess_rating model's 1-in-4 sample of the Lichess open database (CC0);
+# name withheld; the goal is made up. What happened: 1662 on 2016-10-21, 1655 on 2016-11-30.
+metric = "chess_rating"
+today = 2016-06-01
+shape = "even"
+goal_value = 1800
+goal_date = 2016-12-01
+
+[[entries]]
+date = 2016-04-07
+value = 1720
+
+[[entries]]
+date = 2016-04-15
+value = 1747
+
+[[entries]]
+date = 2016-04-21
+value = 1697
+
+[[entries]]
+date = 2016-04-28
+value = 1714
+
+[[entries]]
+date = 2016-05-04
+value = 1703
+
+[[entries]]
+date = 2016-05-13
+value = 1716
+
+[[entries]]
+date = 2016-05-20
+value = 1730
+
+[[entries]]
+date = 2016-05-26
+value = 1804
+
+[[entries]]
+date = 2016-05-30
+value = 1691

@@ -1,0 +1,30 @@
+# Default: a new fit20 member's leg press, four weeks into a "faster early" plan to 80 kg.
+# Real, anonymised fit20 member 5.801259e+15, leg press (id as published; OSF jn6ay, CC BY 4.0,
+# Steele et al. 2022): one slow set to failure per session, weight in kg. The goal is made up.
+# What happened: 63.2 kg on 2015-11-04, 89.6 kg on 2016-03-23.
+metric = "lift"
+unit = "kg"
+today = 2015-09-01
+shape = "faster_early"
+goal_value = 80
+goal_date = 2016-03-01
+
+[[entries]]
+date = 2015-08-05
+value = 44
+
+[[entries]]
+date = 2015-08-12
+value = 44
+
+[[entries]]
+date = 2015-08-19
+value = 46.4
+
+[[entries]]
+date = 2015-08-26
+value = 48.8
+
+[[entries]]
+date = 2015-09-01
+value = 53.6

@@ -5,7 +5,8 @@ weekly distance be in the four weeks before a chosen future date, and will they 
 training?
 
 **Status:** calibrated (fitted on 2019, tested on other athletes in Jan to early Mar 2020;
-see [RESEARCH.md](RESEARCH.md)). Not on the public site (`[web] public = false`).
+see [RESEARCH.md](RESEARCH.md)). Public page at /running_progress/: an in-browser training log and forecast (`site.py`,
+`web/static/apps/running_progress.js`, checked against `model.py` by `tests/test_running_progress_app.py`).
 
 The owner's aim: predict running progress from current ability and training consistency,
 then refine it with logs people enter on the site. This version is the baseline for that:
@@ -157,6 +158,9 @@ in the inputs is known at the cutoff. `score()` reports pace `abs_pct_error`, `b
 - Koenker R, Bassett G (1978). Regression quantiles. Econometrica 46:33-50.
 
 ## Changelog
+
+- 0.1.1 — public page: `site_*` params for its example tables; `[web] public = true`. No change
+  to predictions.
 
 - 0.1.0 — initial version: location-scale forecasts of 4-week pace and weekly km, logistic
   still-training model, empirical bands; fitted on BMClab 2019, tested Jan-Mar 2020.

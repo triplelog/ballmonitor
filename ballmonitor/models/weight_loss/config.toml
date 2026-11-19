@@ -1,6 +1,6 @@
 [meta]
 title = "Weight loss"
-version = "0.1.0"
+version = "0.1.1"
 status = "draft"  # stub | draft | calibrated
 question = "Given a person's body today and a planned change of diet and/or activity, what will they weigh on a chosen future date, and how wide is the realistic range?"
 description = """
@@ -24,7 +24,7 @@ assumptions = [
 ]
 
 [web]
-public = false
+public = true
 
 # --- Method ---------------------------------------------------------------------------
 
@@ -272,6 +272,29 @@ description = "Most rows in the trajectory table; longer projections show every 
 unit = "rows"
 source = "Judgement (display only)"
 range = [5, 1000]
+
+# --- Public page only (site.py, web/static/apps/weight_loss.js) --------------------------
+
+[params.site_min_weight_kg]
+value = 25.0
+description = "Lightest weight the page's log and settings accept (typos below are rejected)."
+unit = "kg"
+source = "Judgement (input check on the public page only)"
+range = [1.0, 100.0]
+
+[params.site_max_weight_kg]
+value = 350.0
+description = "Heaviest weight the page's log and settings accept (typos above are rejected)."
+unit = "kg"
+source = "Judgement (input check on the public page only)"
+range = [100.0, 1000.0]
+
+[params.site_default_weeks]
+value = 26
+description = "When a visitor has not set a target date, the page projects this many weeks past the start date."
+unit = "weeks"
+source = "Judgement (public page only)"
+range = [1, 520]
 
 # --- Formulas ------------------------------------------------------------------------------
 

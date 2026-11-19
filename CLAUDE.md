@@ -184,7 +184,10 @@ pytest ballmonitor/models/race_time                # one model
   loaded the first time it's shown and versioned by content hash (`assets` in data/site.json). An app
   must be a faithful copy of its model's formulas, fed the model's parameters through `data` at build
   time, with a test that runs it under node against the Python model (`tests/test_race_calc.py` for
-  the race time calculator, the only app so far). A model change that breaks the copy fails that test.
+  the race time calculator; `tests/test_<model>_app.py` for the progress pages). The progress pages
+  (`progress_tracker`, `lichess_rating`, `running_progress`, `strength_progress`, `weight_loss`) keep the
+  visitor's log only in localStorage (`bm.log.<model>.v1`: `{model, version, updated, settings, entries}`,
+  JSON/CSV export and import) — the format a future upload-for-training feature will accept. A model change that breaks the copy fails that test.
 - **Page weight:** a page whose JSON is over 150 KB (`builder.SPLIT_BYTES`) has each top-level picker
   option's views written to `data/views/<address>/<picker>/<slug>.json` (`src` on the option); `site.js`
   fetches one when it's shown. `builder.load_page` reads a split page back whole (tests).
@@ -322,6 +325,7 @@ the draft values, implement `predict`, add examples, flip status to `draft`.
 | `running_progress` | calibrated | runner's 4-week average pace + weekly km at a date 4–26 weeks ahead, chance still training, Tanda (2011) implied marathon (unvalidated); BMClab 2019–2020 weekly logs (36k runners), walk-forward on 2020; see RESEARCH.md |
 | `strength_progress` | calibrated | load on an exercise at a future date from a dated workout log: saturating gain curve in weeks trained + quantile-regression bands (newness, irregular training, gaps); fit20 cohort 2010–2016 (22k members), two walk-forward folds; see RESEARCH.md |
 | `weight_loss` | draft | NIH Body Weight Planner equations (Hall et al. 2011 appendix, own code) simulated daily; optional weigh-ins fit the person's effective intake change (adherence); bands from DRAFT adherence/weigh-in assumptions; not backtested (no open weigh-in data) |
+| `progress_tracker` | draft | goal tracker for any measure a person logs (chess rating, lifts, pace, body weight, custom): start → goal by a date with a plan shape (even / faster early / faster late, `split_strength`), ahead/behind the plan, next week's goal (plan waypoint when on track; when behind, the normal step + `catch_up_share` of the gap, capped at the waypoint, at least the re-planned value; from max(latest entry, today) + 7 days), and the predicted final result = start + share of planned progress made so far × planned change (shrunk toward the plan by `prior_weight`); motivational, not backtested; RESEARCH.md keeps the walk-forward study showing 8-week trends barely persist on Lichess/fit20/BMClab |
 
 Games: `new27K/` (27K, at `/27k/`), `ballmonitor/games/lineup/` (Lineup daily batting-order puzzle at
 `/lineup/`: nine real player-seasons since 1955, graded by exact expected runs (Markov chain,

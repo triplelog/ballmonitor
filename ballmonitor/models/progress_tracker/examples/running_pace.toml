@@ -1,0 +1,42 @@
+# A marathoner's weekly average pace (min/km) with a "faster late" plan to 4:30/km.
+# Real, anonymised BMClab athlete 19177 (Afonseca et al. 2022, figshare 16620238, CC BY 4.0):
+# each entry is one week's total time / total distance. The goal is made up. This runner got
+# slower in the summer (adherence below 0). What happened: 4:21/km in late January 2020.
+metric = "running_pace"
+unit = "min/km"
+today = 2019-08-01
+shape = "faster_late"
+goal_value = "4:30"
+goal_date = 2020-01-30
+
+[[entries]]
+date = 2019-06-10
+value = "4:39"
+
+[[entries]]
+date = 2019-06-17
+value = "4:46"
+
+[[entries]]
+date = 2019-06-24
+value = "4:34"
+
+[[entries]]
+date = 2019-07-01
+value = "4:58"
+
+[[entries]]
+date = 2019-07-08
+value = "4:54"
+
+[[entries]]
+date = 2019-07-15
+value = "4:41"
+
+[[entries]]
+date = 2019-07-22
+value = "5:00"
+
+[[entries]]
+date = 2019-07-29
+value = "5:06"
