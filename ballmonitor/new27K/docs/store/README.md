@@ -1,7 +1,13 @@
 # Store page material
 
 Candidates for the itch.io page (and any other store). Made from the game
-itself on 2026-11-12; retake them when the look changes.
+itself on 2026-11-12; retake them when the look changes. What goes in each
+field of the itch form: [itch-page.md](itch-page.md).
+
+`node docs/store/shoot.mjs career` retakes `07-career.png` and
+`node docs/store/shoot.mjs gif` records `at-bat.gif`, `at-bat-cover.gif`
+and `at-bat.mp4` (headless Chrome driving the real game; the GIF needs
+ffmpeg). The other screenshots were taken by hand.
 
 ## Cover (itch.io: 630 × 500; these are 1260 × 1000)
 
@@ -27,10 +33,17 @@ In the order to show them (itch shows the first three or four without scrolling)
 4. `06-season.png`: a college season's bracket (there is a long game here).
 5. `05-formula-lab.png`: every rule is a formula you can change (what no other baseball game has).
 6. `04-challenges.png`: challenges and achievements.
-7. `07-career.png`: the career screen. The weakest of the set: it's a 12-year-old's first season. Retake it from a career a few seasons in.
+7. `07-career.png`: the career screen, three seasons into college: a 6-1 junior with four pitches and a full outings list (retaken 2026-11-18 with `shoot.mjs career`).
 
-A short GIF or video of one at-bat (pick, aim, throw, strikeout) would do
-more than any still; itch plays a GIF as the cover when you hover.
+## The at-bat GIF (2026-11-18)
+
+One five-pitch at-bat ending in a strikeout looking and the *Punch-out*
+achievement, recorded from the real game (`shoot.mjs gif`; each run plays
+until a batter strikes out on three or more pitches, so it differs every time):
+
+- `at-bat-cover.gif`: 630 × 500, the pitch panel and the field: itch's hover cover.
+- `at-bat.gif`: the whole screen at 800 wide: for the page description.
+- `at-bat.mp4`: 1280 × 800, for a YouTube/Vimeo upload (itch's trailer field takes only a link).
 
 ## Short description
 

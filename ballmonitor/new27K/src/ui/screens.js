@@ -7,6 +7,10 @@ import { esc } from './storage.js';
 import { bestWorst } from './scouting.js';
 import { CHALLENGE_BY_ID } from '../engine/challenges.js';
 import { HOW_TO_STEPS } from './help.js';
+import { CONFIG } from '../config.js';
+
+// Inside itch.io's game frame the player is already on the itch page: no "support" link there.
+const ON_ITCH = /(^|\.)itch\.zone$/.test(location.hostname);
 
 export const rating = (v) => `<span class="rating ${v >= 65 ? 'hi' : v <= 40 ? 'lo' : ''}">${v}</span>`;
 
@@ -58,6 +62,7 @@ export function renderMenu(app) {
             </ol>
         </div>
         <p class="credit">Every rule of the game is a formula, read by <a href="https://mathzetta.com/" target="_blank" rel="noopener">MathZetta</a> — change them in the Formula Lab.</p>
+        ${CONFIG.supportPage && !ON_ITCH ? `<p class="credit support">27K is free. If you enjoy it, <a href="${esc(CONFIG.supportPage)}" target="_blank" rel="noopener">support 27K on itch.io</a> (pay what you want).</p>` : ''}
     </div>`;
     // Multiplayer opens once its server has answered.
     if (!app.mpOn) app.mpCheck?.then((on) => {

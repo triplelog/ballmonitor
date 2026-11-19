@@ -1,0 +1,10 @@
+# Copies the 27K multiplayer games to /var/backups/ballmonitor-27k (deploy/backup.sh).
+# Started nightly by ballmonitor-27k-backup.timer; run it now with
+#   sudo systemctl start ballmonitor-27k-backup
+[Unit]
+Description=Back up the 27K multiplayer games
+
+[Service]
+Type=oneshot
+ExecStart=/srv/ballmonitor-27k/deploy/backup.sh
+Nice=10

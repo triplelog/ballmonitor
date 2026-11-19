@@ -128,6 +128,12 @@ export function renderGame(app, args) {
     const $ = (sel) => app.root.querySelector(sel);
     const canvas = $('#plate');
     const plate = new PlateView(canvas);
+    // Read-only handle for the console and docs/store/shoot.mjs (store GIF): the game, the moving
+    // zone (inches) and the canvas's inches → page pixels.
+    app.screen = { game, ui, zone, toPage: (x, y) => {
+        const r = canvas.getBoundingClientRect();
+        return { x: r.left + plate.px(x) * r.width / canvas.width, y: r.top + plate.py(y) * r.height / canvas.height };
+    } };
 
     // ---------- panels ----------
     // view: a scoreboard snapshot (result.after) while results play back;

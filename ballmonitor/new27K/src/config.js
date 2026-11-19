@@ -13,4 +13,7 @@ export const CONFIG = {
     // Empty: this page. Set it when the game runs inside another site's
     // frame (itch.io), whose own address nobody can open.
     invitePage: '',
+    // 27K's itch.io page: the menu's "Support 27K" link (pay what you
+    // want there). Empty: no link.
+    supportPage: 'https://robmwilc.itch.io/27-strikeouts',
 };

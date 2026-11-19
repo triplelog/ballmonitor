@@ -30,7 +30,8 @@ Nothing that makes you a better pitcher is ever sold.
 
 ## Steps
 
-1. **Single-player on itch.io.** Ready to upload; see the checklist below.
+1. **On itch.io.** The page exists (robmwilc.itch.io/27-strikeouts); fill and
+   check it with [store/itch-page.md](store/itch-page.md).
 2. **The multiplayer server online, for friends.** `server/mp.js` plays
    two-player games by alternating half-innings, with the server as
    referee. Done (2026-11-12): the server's address and the invite page
@@ -66,25 +67,12 @@ Nothing that makes you a better pitcher is ever sold.
 
 ## itch.io checklist (step 1)
 
-1. `npm install`, `npm test`, then `npm run itch` → `27k-itch.zip`
-   (`index.html` at the top of the zip, about 80 files, under 1 MB).
-2. On itch: *Create new project* → Kind of project **HTML** → upload the
-   zip → tick **This file will be played in the browser**.
-3. Embed options: **Click to launch in fullscreen** (the three-column
-   layout wants about 1280 × 800; smaller frames fall back to the
-   one-column phone layout, which works but hides the side panels below
-   the field). Tick **Mobile friendly**, orientation **Portrait** (it
-   also plays sideways).
-4. Pricing: **No payments** to start, or **$0 or donate** for the Support
-   27K link.
-5. Cover `store/cover-a.png`; screenshots in the order listed in
-   [store/README.md](store/README.md) (`02-strikeout`, `01-aiming`,
-   `03-catchers-visit`, `06-season`, `05-formula-lab`, `04-challenges`);
-   short description *A baseball pitching game: pick your pitch, read the
-   moving zone, paint the corners.* (chosen 2026-11-12).
+The page exists: **https://robmwilc.itch.io/27-strikeouts** (2026-11-18).
+Every field of itch's form, what to type in it, which file to upload where,
+and the checks before making it public: [store/itch-page.md](store/itch-page.md).
 
-After the page exists, add its address as the *Support 27K* link on the
-menu (`src/ui/screens.js`).
+The menu's *Support 27K* link points there (`supportPage` in
+`src/config.js`); it is hidden inside itch's own frame.
 
 ## Before each release
 

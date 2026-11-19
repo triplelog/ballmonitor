@@ -23,6 +23,7 @@ ssh -t "$SERVER" "set -e; cd $REMOTE; chmod -R a+rX $REMOTE
 		sudo install -m 644 deploy/ballmonitor-27k.service /etc/systemd/system/ballmonitor-27k.service && sudo systemctl daemon-reload
 	fi
 	sudo systemctl restart ballmonitor-27k
+	deploy/backup-units.sh
 	deploy/caddy-site.sh
 	sleep 1
 	systemctl is-active ballmonitor-27k caddy

@@ -37,6 +37,9 @@ sudo systemctl restart ballmonitor-27k.service
 sleep 1
 curl -fsS http://127.0.0.1:3004/api/mp/ping && echo "  ← 27K answers on 127.0.0.1:3004"
 
+echo "==> Nightly backup of the games"
+deploy/backup-units.sh
+
 echo "==> Caddy site"
 deploy/caddy-site.sh
 

@@ -24,7 +24,8 @@ csshole and the digitizer.fun games server), behind that box's shared Caddy.
 | --- | --- |
 | Code | `/srv/ballmonitor-27k` (the game folder minus `dist/`, `docs/`, `test/`), owned by rwilcox |
 | Runs as | system user `ballmonitor-27k`, unit `ballmonitor-27k.service`, `127.0.0.1:3004` |
-| Games | `/var/lib/ballmonitor-27k/*.json` (back up with `scp`) |
+| Games | `/var/lib/ballmonitor-27k/*.json` |
+| Backups | nightly at 04:30 (`ballmonitor-27k-backup.timer`, `deploy/backup.sh`) to `/var/backups/ballmonitor-27k/27k-games-<date>.tar.gz`, the newest 14 kept; `deploy/pull-backups.sh` copies them to `~/Backups/ballmonitor-27k/` on your computer |
 | Caddy | `/etc/caddy/sites/27k.caddy` (`deploy/27k.caddy`): `/api/mp/*` to the server, anything else redirected to ballmonitor.com/27k/ |
 | Allowed sites | `ALLOW_ORIGINS` in `deploy/ballmonitor-27k.service`: ballmonitor.com and itch.io's game frames |
 | Secrets | optional `/etc/ballmonitor-27k.env` (`ADMIN_TOKEN=…`) |
@@ -38,6 +39,10 @@ working). Never replace the shared `/etc/caddy/Caddyfile` or change ufw from
 here.
 
 **Check:** `curl https://27k.ballmonitor.com/api/mp/ping` gives `{"ok":true}`.
+Backups: `systemctl list-timers ballmonitor-27k-backup.timer` (next run),
+`ls -l /var/backups/ballmonitor-27k`, or take one now with
+`sudo systemctl start ballmonitor-27k-backup`. To restore, stop the service,
+`sudo tar -xzf <backup> -C /var/lib`, and start it again.
 Status `systemctl status ballmonitor-27k`, errors `journalctl -u ballmonitor-27k -e`.
 
 **Take it down:** `sudo systemctl disable --now ballmonitor-27k`,

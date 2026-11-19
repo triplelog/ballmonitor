@@ -81,6 +81,7 @@ h3 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em; color: 
 .howto { text-align: left; margin-top: 28px; line-height: 1.5; }
 .menu .credit { color: var(--muted); font-size: 13px; margin-top: 18px; }
 .menu .credit a { color: var(--blue); }
+.menu .credit.support { margin-top: 6px; }
 .howto ol { padding-left: 20px; margin: 6px 0 0; }
 
 /* ---------- setup / lineup ---------- */
