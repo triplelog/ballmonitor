@@ -1,0 +1,40 @@
+# PLACEHOLDER person and weigh-ins (invented, not a real individual): a lightly
+# active 35-year-old woman, 5 ft 5 in, 180 lb, planning 400 kcal/day less and
+# 20% more activity, aiming for 160 lb by summer. Her first eight weeks of
+# weigh-ins run a little behind the plan, so the fit lowers the effective change.
+sex = "F"
+age = 35
+height_in = 65
+weight = 180
+units = "lb"
+activity = "sedentary"
+intake_change = -400
+activity_change_pct = 20
+start_date = 2026-01-05
+target_date = 2026-07-06
+goal_weight = 160
+
+[[weighins]]
+date = 2026-01-12
+weight = 178.4
+[[weighins]]
+date = 2026-01-19
+weight = 178.0
+[[weighins]]
+date = 2026-01-26
+weight = 177.6
+[[weighins]]
+date = 2026-02-02
+weight = 177.5
+[[weighins]]
+date = 2026-02-09
+weight = 176.6
+[[weighins]]
+date = 2026-02-16
+weight = 176.9
+[[weighins]]
+date = 2026-02-23
+weight = 176.0
+[[weighins]]
+date = 2026-03-02
+weight = 175.8

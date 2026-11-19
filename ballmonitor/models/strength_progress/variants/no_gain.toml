@@ -1,0 +1,6 @@
+# Naive baseline 1: the load stays where it is today
+[meta]
+description = "Baseline: no change from today's load (gain_max = 0). Same fitted bands. Used in RESEARCH.md to check that the curve beats doing nothing."
+
+[params]
+gain_max = 0.0

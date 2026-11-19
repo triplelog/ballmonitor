@@ -25,14 +25,19 @@ METRIC_NOTES = {
     "in_95": "share inside the 95% range (target 0.95)",
     "log_score": "log score (−log density of actual)",
     "abs_log_error_annual": "mean |annualised log error|",
+    "abs_log_error_pct": "mean |log error| x 100",
+    "bias_pct": "mean log error x 100, + = over-predicts",
+    "brier_running": "Brier score of 'still training'",
+    "log_loss_running": "log loss of 'still training'",
+    "km_in_80": "share of weekly km inside the 80% range (target 0.80)",
     "bias_annual": "mean annualised log error, + = over-predicts",
     "top_3_recall": "recall among top 3 picks",
     "brier_first": "first reliever Brier score",
     "log_loss_appear": "appearance log loss",
 }
 HIGHER_IS_BETTER = {"in_interval", "top_pick_correct", "top_3_recall"}
-CLOSER_TO_ZERO = {"bias", "bias_annual"}
-TARGETS = {"in_50": 0.5, "in_80": 0.8, "in_95": 0.95}
+CLOSER_TO_ZERO = {"bias", "bias_annual", "bias_pct"}
+TARGETS = {"in_50": 0.5, "in_80": 0.8, "in_95": 0.95, "km_in_80": 0.8}
 
 
 @dataclass

@@ -1,0 +1,139 @@
+# A runner returning after a patchy summer (about 11 km/week at 6:50/km), 8 weeks ahead
+# Real anonymised athlete 227 of the BMClab dataset (Afonseca, Watanabe & Duarte 2022,
+# doi:10.6084/m9.figshare.16620238.v5, CC BY 4.0): weekly totals, one entry per week
+# (dated on the week's first day). Distance in km, time in minutes.
+today = 2019-12-03
+weeks_ahead = 8
+gender = "F"
+age_group = "35 - 54"
+country = "Singapore"
+
+[[log]]
+date = 2019-06-04
+km = 25.92
+minutes = 175.5
+
+[[log]]
+date = 2019-06-11
+km = 20.76
+minutes = 142.0
+
+[[log]]
+date = 2019-06-18
+km = 7.83
+minutes = 45.0
+
+[[log]]
+date = 2019-06-25
+km = 24.83
+minutes = 165.3
+
+[[log]]
+date = 2019-07-02
+km = 0.0
+minutes = 0.0
+
+[[log]]
+date = 2019-07-09
+km = 15.65
+minutes = 169.0
+
+[[log]]
+date = 2019-07-16
+km = 0.0
+minutes = 0.0
+
+[[log]]
+date = 2019-07-23
+km = 0.0
+minutes = 0.0
+
+[[log]]
+date = 2019-07-30
+km = 7.06
+minutes = 46.3
+
+[[log]]
+date = 2019-08-06
+km = 0.0
+minutes = 0.0
+
+[[log]]
+date = 2019-08-13
+km = 0.0
+minutes = 0.0
+
+[[log]]
+date = 2019-08-20
+km = 0.0
+minutes = 0.0
+
+[[log]]
+date = 2019-08-27
+km = 0.0
+minutes = 0.0
+
+[[log]]
+date = 2019-09-03
+km = 3.84
+minutes = 26.4
+
+[[log]]
+date = 2019-09-10
+km = 0.0
+minutes = 0.0
+
+[[log]]
+date = 2019-09-17
+km = 0.0
+minutes = 0.0
+
+[[log]]
+date = 2019-09-24
+km = 14.09
+minutes = 88.3
+
+[[log]]
+date = 2019-10-01
+km = 10.9
+minutes = 74.8
+
+[[log]]
+date = 2019-10-08
+km = 7.04
+minutes = 43.1
+
+[[log]]
+date = 2019-10-15
+km = 15.37
+minutes = 107.1
+
+[[log]]
+date = 2019-10-22
+km = 19.8
+minutes = 143.0
+
+[[log]]
+date = 2019-10-29
+km = 10.03
+minutes = 59.5
+
+[[log]]
+date = 2019-11-05
+km = 22.93
+minutes = 144.2
+
+[[log]]
+date = 2019-11-12
+km = 24.33
+minutes = 164.8
+
+[[log]]
+date = 2019-11-19
+km = 18.62
+minutes = 116.3
+
+[[log]]
+date = 2019-11-26
+km = 29.26
+minutes = 184.4

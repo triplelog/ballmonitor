@@ -1,0 +1,6 @@
+# Closed-form one-compartment approximation from the same appendix
+[meta]
+description = "Hall et al. 2011 web appendix eq. 14: BW(t) = BW0 + dBW_ss (1 - exp(-t / tau)), with tau (eq. 15) and dBW_ss (eq. 17) from the initial body fat. No glycogen/fluid early drop and instant adaptive thermogenesis, so it loses less in the first weeks; within ~1 kg of the full model over a year for a 500 kcal/day cut."
+
+[params]
+method = "linear"

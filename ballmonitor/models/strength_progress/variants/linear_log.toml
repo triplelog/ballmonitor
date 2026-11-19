@@ -1,0 +1,6 @@
+# The fit20 paper's growth-model form
+[meta]
+description = "Steele et al. (2022) form: gain = b ln((weeks + h + 1) / (weeks + 1)), b = linlog_slope fitted on the same train cases. Never fully plateaus. Same fitted bands."
+
+[formulas]
+expected_gain = "linlog_slope * log((weeks + h + 1) / (weeks + 1))"

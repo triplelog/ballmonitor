@@ -1,0 +1,76 @@
+# Default: a new member seven weeks in, predicting 26 weeks ahead
+# Real, anonymised fit20 member 5.208429e+15 (id as published) (OSF jn6ay, CC BY 4.0; Steele et al. 2022):
+# one slow set to failure per machine; weight in kg, duration = seconds the set lasted.
+# What happened: Leg press 104 kg on 2016-03-02.
+# What happened: Chest press 42.5 kg on 2016-03-02.
+# What happened: Pulldown 57.5 kg on 2016-03-02.
+today = 2015-09-01
+target_date = 2016-03-01
+exercise = "Leg press"
+sex = "M"
+
+[[log]]
+date = 2015-07-15
+exercise = "Chest press"
+weight = 42.5
+duration = 121
+
+[[log]]
+date = 2015-07-15
+exercise = "Pulldown"
+weight = 47.5
+duration = 121
+
+[[log]]
+date = 2015-08-11
+exercise = "Leg press"
+weight = 92
+duration = 123
+
+[[log]]
+date = 2015-08-11
+exercise = "Chest press"
+weight = 42.5
+duration = 123
+
+[[log]]
+date = 2015-08-11
+exercise = "Pulldown"
+weight = 47.5
+duration = 121
+
+[[log]]
+date = 2015-08-19
+exercise = "Leg press"
+weight = 94.4
+duration = 123
+
+[[log]]
+date = 2015-08-19
+exercise = "Chest press"
+weight = 42.5
+duration = 123
+
+[[log]]
+date = 2015-08-19
+exercise = "Pulldown"
+weight = 47.5
+duration = 121
+
+[[log]]
+date = 2015-08-26
+exercise = "Leg press"
+weight = 94.4
+duration = 136
+
+[[log]]
+date = 2015-08-26
+exercise = "Chest press"
+weight = 42.5
+duration = 126
+
+[[log]]
+date = 2015-08-26
+exercise = "Pulldown"
+weight = 50
+duration = 111

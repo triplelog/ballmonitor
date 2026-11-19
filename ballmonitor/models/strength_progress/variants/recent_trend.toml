@@ -1,0 +1,6 @@
+# Naive baseline 2: keep the recent trend going
+[meta]
+description = "Baseline: extend the least-squares trend of ln(strength) over the last trend_window_weeks for the whole horizon (slope * h). Same fitted bands."
+
+[formulas]
+expected_gain = "slope * h"

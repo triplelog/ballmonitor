@@ -1,0 +1,684 @@
+[meta]
+title = "Running progress"
+version = "0.1.0"
+status = "calibrated"  # stub | draft | calibrated
+question = "Given a runner's training log up to today, what will their average pace and weekly distance be in the four weeks before a chosen future date, and will they still be training?"
+description = """
+Location-scale forecasts from a few log features. The median 4-week pace is the 12-week pace \
+moved by the recent trend (last 4 vs 12 weeks), the longer trend (12 vs up to 26 weeks), the \
+season and a pull towards the typical runner; weekly distance works the same way; the chance \
+of still running is a small logistic regression. The 50/80/95% bands are the empirical \
+quantiles of the errors of BMClab/Strava marathon runners (2019), scaled by a fitted spread \
+that grows with the horizon. Implied marathon times use Tanda's (2011) formula and are NOT \
+validated on this data.
+"""
+assumptions = [
+    "Your log looks like those of the 36,412 Strava users in the BMClab dataset: people who had run a World Marathon Major, mostly men (76%) aged 35-54, mostly in the US and UK.",
+    "Average pace = total time / total distance over 4 weeks. It mixes easy runs, workouts and races, so it tracks fitness only loosely; a change of training mix moves it as much as a change of fitness.",
+    "Weeks with an average pace outside 3:00-15:00 min/km or more than 300 km are treated as missing (probably cycling or GPS errors).",
+    "Seasonality is the 2019 pattern of these runners (marathon cycles: most volume in September, least in December); southern-hemisphere countries use the same curve shifted six months.",
+    "'Still training' means at least one run logged in the 4 weeks before the target date; stopping logging looks the same as stopping running.",
+    "The bands were fitted on 2019 and checked on Jan-Mar 2020 (before COVID-19 lockdowns) for other runners; 2020 after March is shown separately in RESEARCH.md because lockdowns changed training.",
+    "The implied marathon times come from Tanda (2011), fitted on 22 runners whose marathons took 2:47-3:36; they were not checked on this data (it has no race results).",
+]
+
+[web]
+public = false
+
+# ── reading the log ────────────────────────────────────────────────────────
+
+[params.min_pace_min_per_km]
+value = 3.0
+description = "A week whose average pace is faster than this is treated as missing (probably cycling or a GPS error)."
+unit = "min/km"
+source = "Judgement: 3:00/km for a whole week is elite-marathoner training pace; 0.1% of BMClab run weeks are faster. See RESEARCH.md (cleaning)."
+range = [1.5, 6.0]
+
+[params.max_pace_min_per_km]
+value = 15.0
+description = "A week whose average pace is slower than this is treated as missing (walking, or a watch left running)."
+unit = "min/km"
+source = "Judgement: 15:00/km is a slow walk; 0.3% of BMClab run weeks are slower. See RESEARCH.md (cleaning)."
+range = [8.0, 30.0]
+
+[params.max_week_km]
+value = 300.0
+description = "A week with more than this many km is treated as missing."
+unit = "km"
+source = "Judgement: above the 99.99th percentile (261 km) of BMClab weeks."
+range = [100.0, 1000.0]
+
+[params.recent_weeks]
+value = 4
+description = "Weeks in the 'recent' window (pace and distance trend). The bands were fitted with 4."
+unit = "weeks"
+source = "Choice of research.py (4 = the outcome window); changing it invalidates the fitted coefficients."
+range = [2, 8]
+
+[params.base_weeks]
+value = 12
+description = "Weeks in the 'base' window: the starting point for every forecast. The bands were fitted with 12."
+unit = "weeks"
+source = "research.py: the 12-week pace has a smaller error as a forecast than the 4-week pace at every horizon (RESEARCH.md, baselines); changing it invalidates the fitted coefficients."
+range = [6, 26]
+
+[params.lookback_weeks]
+value = 26
+description = "Longest history used ('long' window). Older log entries are ignored. Fitted with up to 26 (shorter for early-2019 cutoffs)."
+unit = "weeks"
+source = "Choice of research.py (half a year, within the 2-year dataset)."
+range = [12, 52]
+
+[params.target_weeks]
+value = 4
+description = "The outcome window: the forecast is for the 4 weeks ending on the target date. Fitted with 4 only."
+unit = "weeks"
+source = "Choice of research.py (a month smooths single runs and races)."
+choices = [4]
+
+[params.min_run_weeks]
+value = 3
+description = "At least this many of the last base_weeks weeks must contain a run, else the model refuses (no current pace to start from)."
+unit = "weeks"
+source = "Case selection of research.py (the bands are only valid for such runners)."
+range = [1, 12]
+
+[params.km_offset]
+value = 1.0
+description = "Added to weekly km before taking logs, so rest weeks (0 km) stay finite."
+unit = "km"
+source = "Judgement (1 km/week is negligible training)."
+range = [0.1, 10.0]
+
+[params.min_horizon_weeks]
+value = 4
+description = "Shortest horizon: the target window must lie entirely after today. Horizons are measured as log(h / min_horizon_weeks) in the formulas."
+unit = "weeks"
+source = "Definition (target_weeks)."
+range = [4, 4]
+
+[params.max_horizon_weeks]
+value = 26
+description = "Longest horizon the model accepts; the fit used 4-26 weeks."
+unit = "weeks"
+source = "Range of research.py's cases."
+range = [4, 52]
+
+[params.interval_level]
+value = 0.8
+description = "Which band is shown in the result table's range column (the notes always show 50% and 95%)."
+unit = "level"
+source = "Convention of race_time."
+choices = [0.5, 0.8, 0.95]
+
+# ── reference runner (the pull towards the typical runner) ─────────────────
+
+[params.ref_pace]
+value = 332.0
+description = "Typical 12-week average pace of the training runners (median), used as 'rel' = ln(base pace / ref_pace)."
+unit = "s/km"
+source = "research.py: median base pace of the train cases; see RESEARCH.md."
+range = [180.0, 600.0]
+
+[params.ref_km]
+value = 28.4
+description = "Typical 12-week mean weekly km of the training runners (median), used as ln((base km + km_offset) / (ref_km + km_offset))."
+unit = "km/week"
+source = "research.py: median base km/week of the train cases; see RESEARCH.md."
+range = [1.0, 200.0]
+
+# ── pace: location (median) and scale ──────────────────────────────────────
+
+[params.pace_loc_a]
+value = -0.006
+description = "Intercept of the log change from the 12-week pace (formula pace_location)."
+unit = "log"
+source = "Fitted by research.py (median regression, 2019 train targets); see RESEARCH.md"
+range = [-1.0, 1.0]
+
+[params.pace_loc_recent]
+value = 0.234
+description = "Weight of the recent trend tr_recent = ln(4-week pace / 12-week pace)."
+unit = "per log"
+source = "Fitted by research.py (median regression, 2019 train targets); see RESEARCH.md"
+range = [-2.0, 2.0]
+
+[params.pace_loc_long]
+value = -0.671
+description = "Weight of the long trend tr_long = ln(12-week pace / 26-week pace); negative = drifts back towards the 26-week pace."
+unit = "per log"
+source = "Fitted by research.py (median regression, 2019 train targets); see RESEARCH.md"
+range = [-2.0, 2.0]
+
+[params.pace_loc_season]
+value = 0.6656
+description = "Weight of the seasonal change (season_pace of the target weeks minus that of the base weeks)."
+unit = "per log"
+source = "Fitted by research.py (median regression, 2019 train targets); see RESEARCH.md"
+range = [-3.0, 3.0]
+
+[params.pace_loc_rel]
+value = -0.0637
+description = "Weight of rel = ln(12-week pace / ref_pace); negative = slow runners speed up, fast ones slow down (regression to the mean)."
+unit = "per log"
+source = "Fitted by research.py (median regression, 2019 train targets); see RESEARCH.md"
+range = [-1.0, 1.0]
+
+[params.pace_scale_a]
+value = -3.1062
+description = "Intercept of ln(scale) of the pace error (formula pace_scale)."
+unit = "log"
+source = "Fitted by research.py (median regression of ln|residual|); see RESEARCH.md"
+range = [-10.0, 2.0]
+
+[params.pace_scale_h]
+value = 0.1113
+description = "How fast the pace bands widen with the horizon, per unit of ln(h / 4 weeks)."
+unit = "per log week"
+source = "Fitted by research.py (median regression of ln|residual|); see RESEARCH.md"
+range = [-2.0, 2.0]
+
+[params.pace_scale_share]
+value = -0.4718
+description = "Change of ln(scale) per unit of share (share of the last 12 weeks with a run); negative = consistent runners get narrower bands."
+unit = "per share"
+source = "Fitted by research.py (median regression of ln|residual|); see RESEARCH.md"
+range = [-5.0, 5.0]
+
+[params.pace_scale_rel]
+value = 1.4087
+description = "Change of ln(scale) per unit of rel = ln(12-week pace / ref_pace)."
+unit = "per log"
+source = "Fitted by research.py (median regression of ln|residual|); see RESEARCH.md"
+range = [-5.0, 5.0]
+
+[params.pace_scale_trend]
+value = 4.2112
+description = "Change of ln(scale) per unit of |tr_recent| (a pace that just changed is less predictable)."
+unit = "per log"
+source = "Fitted by research.py (median regression of ln|residual|); see RESEARCH.md"
+range = [-20.0, 20.0]
+
+# ── weekly distance: location and scale ────────────────────────────────────
+
+[params.km_loc_a]
+value = 0.6847
+description = "Intercept of the change of ln(km/week + km_offset) from the 12-week level (formula km_location)."
+unit = "log"
+source = "Fitted by research.py (median regression, 2019 train targets); see RESEARCH.md"
+range = [-3.0, 3.0]
+
+[params.km_loc_recent]
+value = 0.3417
+description = "Weight of the recent distance trend ktr_recent = ln((4-week km/wk + off) / (12-week km/wk + off))."
+unit = "per log"
+source = "Fitted by research.py (median regression, 2019 train targets); see RESEARCH.md"
+range = [-2.0, 2.0]
+
+[params.km_loc_long]
+value = -0.3267
+description = "Weight of the long distance trend ktr_long = ln((12-week km/wk + off) / (26-week km/wk + off))."
+unit = "per log"
+source = "Fitted by research.py (median regression, 2019 train targets); see RESEARCH.md"
+range = [-2.0, 2.0]
+
+[params.km_loc_season]
+value = 0.6326
+description = "Weight of the seasonal change (season_km of the target weeks minus that of the base weeks)."
+unit = "per log"
+source = "Fitted by research.py (median regression, 2019 train targets); see RESEARCH.md"
+range = [-3.0, 3.0]
+
+[params.km_loc_share]
+value = -0.7084
+description = "Weight of share (share of the last 12 weeks with a run)."
+unit = "per share"
+source = "Fitted by research.py (median regression, 2019 train targets); see RESEARCH.md"
+range = [-3.0, 3.0]
+
+[params.km_loc_rel]
+value = -0.0648
+description = "Weight of krel = ln((12-week km/wk + off) / (ref_km + off)); negative = big-volume runners tend to drop, small-volume ones to build."
+unit = "per log"
+source = "Fitted by research.py (median regression, 2019 train targets); see RESEARCH.md"
+range = [-2.0, 2.0]
+
+[params.km_scale_a]
+value = -1.1446
+description = "Intercept of ln(scale) of the weekly-distance error (formula km_scale)."
+unit = "log"
+source = "Fitted by research.py (median regression of ln|residual|); see RESEARCH.md"
+range = [-10.0, 3.0]
+
+[params.km_scale_h]
+value = 0.1671
+description = "How fast the distance bands widen per unit of ln(h / 4 weeks)."
+unit = "per log week"
+source = "Fitted by research.py (median regression of ln|residual|); see RESEARCH.md"
+range = [-2.0, 2.0]
+
+[params.km_scale_share]
+value = -0.1947
+description = "Change of ln(scale) per unit of share."
+unit = "per share"
+source = "Fitted by research.py (median regression of ln|residual|); see RESEARCH.md"
+range = [-5.0, 5.0]
+
+[params.km_scale_rel]
+value = -0.2584
+description = "Change of ln(scale) per unit of krel = ln((12-week km/wk + off) / (ref_km + off))."
+unit = "per log"
+source = "Fitted by research.py (median regression of ln|residual|); see RESEARCH.md"
+range = [-5.0, 5.0]
+
+[params.km_scale_trend]
+value = 0.3242
+description = "Change of ln(scale) per unit of |ktr_recent|."
+unit = "per log"
+source = "Fitted by research.py (median regression of ln|residual|); see RESEARCH.md"
+range = [-10.0, 10.0]
+
+# ── still training ─────────────────────────────────────────────────────────
+
+[params.run_a]
+value = 1.6644
+description = "Intercept of the log-odds of still training (formula p_running)."
+unit = "log-odds"
+source = "Fitted by research.py (logistic regression, 2019 train targets); see RESEARCH.md"
+range = [-10.0, 10.0]
+
+[params.run_share]
+value = 2.1485
+description = "Log-odds per unit of share (share of the last 12 weeks with a run)."
+unit = "per share"
+source = "Fitted by research.py (logistic regression, 2019 train targets); see RESEARCH.md"
+range = [-10.0, 10.0]
+
+[params.run_since]
+value = -0.2765
+description = "Log-odds per week since the last run week."
+unit = "per week"
+source = "Fitted by research.py (logistic regression, 2019 train targets); see RESEARCH.md"
+range = [-5.0, 5.0]
+
+[params.run_level]
+value = 0.4191
+description = "Log-odds per unit of krel = ln((12-week km/wk + off) / (ref_km + off))."
+unit = "per log"
+source = "Fitted by research.py (logistic regression, 2019 train targets); see RESEARCH.md"
+range = [-5.0, 5.0]
+
+[params.run_h]
+value = -0.3368
+description = "Log-odds per unit of ln(h / 4 weeks)."
+unit = "per log week"
+source = "Fitted by research.py (logistic regression, 2019 train targets); see RESEARCH.md"
+range = [-5.0, 5.0]
+
+# ── Tanda (2011) implied marathon time (literature; NOT validated here) ───
+
+[params.marathon_km]
+value = 42.195
+description = "Marathon distance."
+unit = "km"
+source = "Definition (World Athletics)."
+range = [42.195, 42.195]
+
+[params.tanda_weeks]
+value = 8
+description = "Weeks of training Tanda's K (mean weekly km) and P (mean pace) are averaged over."
+unit = "weeks"
+source = "Tanda G (2011), J Hum Sport Exerc 6(3):511-520, doi:10.4100/jhse.2011.63.05: the 8 weeks before the race."
+range = [4, 12]
+
+[params.tanda_a]
+value = 17.1
+description = "Constant of Tanda's marathon pace Pm = a + b exp(-k K) + c P (s/km)."
+unit = "s/km"
+source = "Tanda G (2011), J Hum Sport Exerc 6(3):511-520, doi:10.4100/jhse.2011.63.05 (22 runners, 46 marathons)."
+range = [-200.0, 200.0]
+
+[params.tanda_b]
+value = 140.0
+description = "Volume term size b in Tanda's formula (s/km added at zero weekly km)."
+unit = "s/km"
+source = "Tanda G (2011), J Hum Sport Exerc 6(3):511-520, doi:10.4100/jhse.2011.63.05."
+range = [0.0, 500.0]
+
+[params.tanda_k]
+value = 0.0053
+description = "Decay k of the volume term per weekly km in Tanda's formula."
+unit = "per km/week"
+source = "Tanda G (2011), J Hum Sport Exerc 6(3):511-520, doi:10.4100/jhse.2011.63.05."
+range = [0.0, 0.1]
+
+[params.tanda_c]
+value = 0.55
+description = "Weight c of the mean training pace P (s/km) in Tanda's formula."
+unit = "ratio"
+source = "Tanda G (2011), J Hum Sport Exerc 6(3):511-520, doi:10.4100/jhse.2011.63.05."
+range = [0.0, 2.0]
+
+[params.tanda_valid_lo]
+value = 167.0
+description = "Fastest marathon (minutes) in Tanda's 2011 sample; outside [lo, hi] the note warns."
+unit = "min"
+source = "Tanda G, Knechtle B (2013), Open Access J Sports Med 4:141-149, doi:10.2147/OAJSM.S44945 (validity range 167-216 min of the 2011 equation; SEE 28 min on 126 recreational runners)."
+range = [60.0, 400.0]
+
+[params.tanda_valid_hi]
+value = 216.0
+description = "Slowest marathon (minutes) in Tanda's 2011 sample."
+unit = "min"
+source = "Tanda G, Knechtle B (2013), Open Access J Sports Med 4:141-149, doi:10.2147/OAJSM.S44945."
+range = [60.0, 600.0]
+
+# ── fitted band shapes and seasonal curves (written by research.py) ────────
+
+[params.pace_z_p025]
+value = -3.1968
+description = "2.5% quantile of the standardised pace residual (ln pace error / predicted scale), formula pace_quantile."
+unit = "scale units"
+source = "Fitted by research.py on 2019 targets of train athletes (60% hash split); see RESEARCH.md (empirical quantile of train residuals)."
+range = [-20.0, 20.0]
+
+[params.pace_z_p10]
+value = -1.8597
+description = "10% quantile of the standardised pace residual (ln pace error / predicted scale), formula pace_quantile."
+unit = "scale units"
+source = "Fitted by research.py on 2019 targets of train athletes (60% hash split); see RESEARCH.md (empirical quantile of train residuals)."
+range = [-20.0, 20.0]
+
+[params.pace_z_p25]
+value = -0.9275
+description = "25% quantile of the standardised pace residual (ln pace error / predicted scale), formula pace_quantile."
+unit = "scale units"
+source = "Fitted by research.py on 2019 targets of train athletes (60% hash split); see RESEARCH.md (empirical quantile of train residuals)."
+range = [-20.0, 20.0]
+
+[params.pace_z_p50]
+value = 0.0125
+description = "50% quantile of the standardised pace residual (ln pace error / predicted scale), formula pace_quantile."
+unit = "scale units"
+source = "Fitted by research.py on 2019 targets of train athletes (60% hash split); see RESEARCH.md (empirical quantile of train residuals)."
+range = [-20.0, 20.0]
+
+[params.pace_z_p75]
+value = 1.0995
+description = "75% quantile of the standardised pace residual (ln pace error / predicted scale), formula pace_quantile."
+unit = "scale units"
+source = "Fitted by research.py on 2019 targets of train athletes (60% hash split); see RESEARCH.md (empirical quantile of train residuals)."
+range = [-20.0, 20.0]
+
+[params.pace_z_p90]
+value = 2.6518
+description = "90% quantile of the standardised pace residual (ln pace error / predicted scale), formula pace_quantile."
+unit = "scale units"
+source = "Fitted by research.py on 2019 targets of train athletes (60% hash split); see RESEARCH.md (empirical quantile of train residuals)."
+range = [-20.0, 20.0]
+
+[params.pace_z_p975]
+value = 6.2335
+description = "97.5% quantile of the standardised pace residual (ln pace error / predicted scale), formula pace_quantile."
+unit = "scale units"
+source = "Fitted by research.py on 2019 targets of train athletes (60% hash split); see RESEARCH.md (empirical quantile of train residuals)."
+range = [-20.0, 20.0]
+
+[params.km_z_p025]
+value = -5.2189
+description = "2.5% quantile of the standardised km residual (ln(km/week + km_offset) error / predicted scale), formula km_quantile."
+unit = "scale units"
+source = "Fitted by research.py on 2019 targets of train athletes (60% hash split); see RESEARCH.md (empirical quantile of train residuals)."
+range = [-20.0, 20.0]
+
+[params.km_z_p10]
+value = -2.7064
+description = "10% quantile of the standardised km residual (ln(km/week + km_offset) error / predicted scale), formula km_quantile."
+unit = "scale units"
+source = "Fitted by research.py on 2019 targets of train athletes (60% hash split); see RESEARCH.md (empirical quantile of train residuals)."
+range = [-20.0, 20.0]
+
+[params.km_z_p25]
+value = -1.183
+description = "25% quantile of the standardised km residual (ln(km/week + km_offset) error / predicted scale), formula km_quantile."
+unit = "scale units"
+source = "Fitted by research.py on 2019 targets of train athletes (60% hash split); see RESEARCH.md (empirical quantile of train residuals)."
+range = [-20.0, 20.0]
+
+[params.km_z_p50]
+value = -0.0037
+description = "50% quantile of the standardised km residual (ln(km/week + km_offset) error / predicted scale), formula km_quantile."
+unit = "scale units"
+source = "Fitted by research.py on 2019 targets of train athletes (60% hash split); see RESEARCH.md (empirical quantile of train residuals)."
+range = [-20.0, 20.0]
+
+[params.km_z_p75]
+value = 0.8937
+description = "75% quantile of the standardised km residual (ln(km/week + km_offset) error / predicted scale), formula km_quantile."
+unit = "scale units"
+source = "Fitted by research.py on 2019 targets of train athletes (60% hash split); see RESEARCH.md (empirical quantile of train residuals)."
+range = [-20.0, 20.0]
+
+[params.km_z_p90]
+value = 1.5837
+description = "90% quantile of the standardised km residual (ln(km/week + km_offset) error / predicted scale), formula km_quantile."
+unit = "scale units"
+source = "Fitted by research.py on 2019 targets of train athletes (60% hash split); see RESEARCH.md (empirical quantile of train residuals)."
+range = [-20.0, 20.0]
+
+[params.km_z_p975]
+value = 2.3185
+description = "97.5% quantile of the standardised km residual (ln(km/week + km_offset) error / predicted scale), formula km_quantile."
+unit = "scale units"
+source = "Fitted by research.py on 2019 targets of train athletes (60% hash split); see RESEARCH.md (empirical quantile of train residuals)."
+range = [-20.0, 20.0]
+
+[params.season_pace_m01]
+value = -0.0045
+description = "Seasonal offset of ln weekly pace in Jan (northern hemisphere; southern runners use the month 6 away), centred to mean 0."
+unit = "log"
+source = "research.py: within-athlete mean by month, 2019 train athletes outside the southern hemisphere; see RESEARCH.md."
+range = [-1.0, 1.0]
+
+[params.season_pace_m02]
+value = -0.0082
+description = "Seasonal offset of ln weekly pace in Feb (northern hemisphere; southern runners use the month 6 away), centred to mean 0."
+unit = "log"
+source = "research.py: within-athlete mean by month, 2019 train athletes outside the southern hemisphere; see RESEARCH.md."
+range = [-1.0, 1.0]
+
+[params.season_pace_m03]
+value = -0.0131
+description = "Seasonal offset of ln weekly pace in Mar (northern hemisphere; southern runners use the month 6 away), centred to mean 0."
+unit = "log"
+source = "research.py: within-athlete mean by month, 2019 train athletes outside the southern hemisphere; see RESEARCH.md."
+range = [-1.0, 1.0]
+
+[params.season_pace_m04]
+value = -0.007
+description = "Seasonal offset of ln weekly pace in Apr (northern hemisphere; southern runners use the month 6 away), centred to mean 0."
+unit = "log"
+source = "research.py: within-athlete mean by month, 2019 train athletes outside the southern hemisphere; see RESEARCH.md."
+range = [-1.0, 1.0]
+
+[params.season_pace_m05]
+value = 0.0001
+description = "Seasonal offset of ln weekly pace in May (northern hemisphere; southern runners use the month 6 away), centred to mean 0."
+unit = "log"
+source = "research.py: within-athlete mean by month, 2019 train athletes outside the southern hemisphere; see RESEARCH.md."
+range = [-1.0, 1.0]
+
+[params.season_pace_m06]
+value = 0.0094
+description = "Seasonal offset of ln weekly pace in Jun (northern hemisphere; southern runners use the month 6 away), centred to mean 0."
+unit = "log"
+source = "research.py: within-athlete mean by month, 2019 train athletes outside the southern hemisphere; see RESEARCH.md."
+range = [-1.0, 1.0]
+
+[params.season_pace_m07]
+value = 0.0167
+description = "Seasonal offset of ln weekly pace in Jul (northern hemisphere; southern runners use the month 6 away), centred to mean 0."
+unit = "log"
+source = "research.py: within-athlete mean by month, 2019 train athletes outside the southern hemisphere; see RESEARCH.md."
+range = [-1.0, 1.0]
+
+[params.season_pace_m08]
+value = 0.0115
+description = "Seasonal offset of ln weekly pace in Aug (northern hemisphere; southern runners use the month 6 away), centred to mean 0."
+unit = "log"
+source = "research.py: within-athlete mean by month, 2019 train athletes outside the southern hemisphere; see RESEARCH.md."
+range = [-1.0, 1.0]
+
+[params.season_pace_m09]
+value = -0.0008
+description = "Seasonal offset of ln weekly pace in Sep (northern hemisphere; southern runners use the month 6 away), centred to mean 0."
+unit = "log"
+source = "research.py: within-athlete mean by month, 2019 train athletes outside the southern hemisphere; see RESEARCH.md."
+range = [-1.0, 1.0]
+
+[params.season_pace_m10]
+value = -0.0028
+description = "Seasonal offset of ln weekly pace in Oct (northern hemisphere; southern runners use the month 6 away), centred to mean 0."
+unit = "log"
+source = "research.py: within-athlete mean by month, 2019 train athletes outside the southern hemisphere; see RESEARCH.md."
+range = [-1.0, 1.0]
+
+[params.season_pace_m11]
+value = -0.0018
+description = "Seasonal offset of ln weekly pace in Nov (northern hemisphere; southern runners use the month 6 away), centred to mean 0."
+unit = "log"
+source = "research.py: within-athlete mean by month, 2019 train athletes outside the southern hemisphere; see RESEARCH.md."
+range = [-1.0, 1.0]
+
+[params.season_pace_m12]
+value = 0.0004
+description = "Seasonal offset of ln weekly pace in Dec (northern hemisphere; southern runners use the month 6 away), centred to mean 0."
+unit = "log"
+source = "research.py: within-athlete mean by month, 2019 train athletes outside the southern hemisphere; see RESEARCH.md."
+range = [-1.0, 1.0]
+
+[params.season_km_m01]
+value = -0.0002
+description = "Seasonal offset of ln(weekly km + km_offset) in Jan (northern hemisphere; southern runners use the month 6 away), centred to mean 0."
+unit = "log"
+source = "research.py: within-athlete mean by month, 2019 train athletes outside the southern hemisphere; see RESEARCH.md."
+range = [-1.0, 1.0]
+
+[params.season_km_m02]
+value = 0.0251
+description = "Seasonal offset of ln(weekly km + km_offset) in Feb (northern hemisphere; southern runners use the month 6 away), centred to mean 0."
+unit = "log"
+source = "research.py: within-athlete mean by month, 2019 train athletes outside the southern hemisphere; see RESEARCH.md."
+range = [-1.0, 1.0]
+
+[params.season_km_m03]
+value = 0.1112
+description = "Seasonal offset of ln(weekly km + km_offset) in Mar (northern hemisphere; southern runners use the month 6 away), centred to mean 0."
+unit = "log"
+source = "research.py: within-athlete mean by month, 2019 train athletes outside the southern hemisphere; see RESEARCH.md."
+range = [-1.0, 1.0]
+
+[params.season_km_m04]
+value = 0.0517
+description = "Seasonal offset of ln(weekly km + km_offset) in Apr (northern hemisphere; southern runners use the month 6 away), centred to mean 0."
+unit = "log"
+source = "research.py: within-athlete mean by month, 2019 train athletes outside the southern hemisphere; see RESEARCH.md."
+range = [-1.0, 1.0]
+
+[params.season_km_m05]
+value = -0.0658
+description = "Seasonal offset of ln(weekly km + km_offset) in May (northern hemisphere; southern runners use the month 6 away), centred to mean 0."
+unit = "log"
+source = "research.py: within-athlete mean by month, 2019 train athletes outside the southern hemisphere; see RESEARCH.md."
+range = [-1.0, 1.0]
+
+[params.season_km_m06]
+value = -0.0219
+description = "Seasonal offset of ln(weekly km + km_offset) in Jun (northern hemisphere; southern runners use the month 6 away), centred to mean 0."
+unit = "log"
+source = "research.py: within-athlete mean by month, 2019 train athletes outside the southern hemisphere; see RESEARCH.md."
+range = [-1.0, 1.0]
+
+[params.season_km_m07]
+value = 0.0573
+description = "Seasonal offset of ln(weekly km + km_offset) in Jul (northern hemisphere; southern runners use the month 6 away), centred to mean 0."
+unit = "log"
+source = "research.py: within-athlete mean by month, 2019 train athletes outside the southern hemisphere; see RESEARCH.md."
+range = [-1.0, 1.0]
+
+[params.season_km_m08]
+value = 0.1822
+description = "Seasonal offset of ln(weekly km + km_offset) in Aug (northern hemisphere; southern runners use the month 6 away), centred to mean 0."
+unit = "log"
+source = "research.py: within-athlete mean by month, 2019 train athletes outside the southern hemisphere; see RESEARCH.md."
+range = [-1.0, 1.0]
+
+[params.season_km_m09]
+value = 0.2382
+description = "Seasonal offset of ln(weekly km + km_offset) in Sep (northern hemisphere; southern runners use the month 6 away), centred to mean 0."
+unit = "log"
+source = "research.py: within-athlete mean by month, 2019 train athletes outside the southern hemisphere; see RESEARCH.md."
+range = [-1.0, 1.0]
+
+[params.season_km_m10]
+value = -0.041
+description = "Seasonal offset of ln(weekly km + km_offset) in Oct (northern hemisphere; southern runners use the month 6 away), centred to mean 0."
+unit = "log"
+source = "research.py: within-athlete mean by month, 2019 train athletes outside the southern hemisphere; see RESEARCH.md."
+range = [-1.0, 1.0]
+
+[params.season_km_m11]
+value = -0.2199
+description = "Seasonal offset of ln(weekly km + km_offset) in Nov (northern hemisphere; southern runners use the month 6 away), centred to mean 0."
+unit = "log"
+source = "research.py: within-athlete mean by month, 2019 train athletes outside the southern hemisphere; see RESEARCH.md."
+range = [-1.0, 1.0]
+
+[params.season_km_m12]
+value = -0.317
+description = "Seasonal offset of ln(weekly km + km_offset) in Dec (northern hemisphere; southern runners use the month 6 away), centred to mean 0."
+unit = "log"
+source = "research.py: within-athlete mean by month, 2019 train athletes outside the southern hemisphere; see RESEARCH.md."
+range = [-1.0, 1.0]
+
+# ── formulas ───────────────────────────────────────────────────────────────
+
+[formulas.pace_location]
+expr = "lp_base + pace_loc_a + pace_loc_recent * tr_recent + pace_loc_long * tr_long + pace_loc_season * season + pace_loc_rel * (lp_base - log(ref_pace))"
+description = "Location of ln(4-week pace at the target, s/km): the 12-week pace moved by the trends, the season and the pull towards ref_pace."
+variables = ["lp_base", "tr_recent", "tr_long", "season"]
+
+[formulas.pace_scale]
+expr = "exp(pace_scale_a + pace_scale_h * log(h / min_horizon_weeks) + pace_scale_share * share + pace_scale_rel * (lp_base - log(ref_pace)) + pace_scale_trend * abs(tr_recent))"
+description = "Scale of the ln-pace error: widens with the horizon h (weeks), shrinks or grows with consistency, pace level and a recent change."
+variables = ["h", "share", "lp_base", "tr_recent"]
+
+[formulas.pace_quantile]
+expr = "exp(loc + scale * z)"
+description = "Pace (s/km) at a quantile: location + scale x the standardised error quantile z (pace_z_*)."
+variables = ["loc", "scale", "z"]
+
+[formulas.km_location]
+expr = "lk_base + km_loc_a + km_loc_recent * ktr_recent + km_loc_long * ktr_long + km_loc_season * season + km_loc_share * share + km_loc_rel * (lk_base - log(ref_km + km_offset))"
+description = "Location of ln(km/week + km_offset) over the 4 weeks before the target, given still training."
+variables = ["lk_base", "ktr_recent", "ktr_long", "season", "share"]
+
+[formulas.km_scale]
+expr = "exp(km_scale_a + km_scale_h * log(h / min_horizon_weeks) + km_scale_share * share + km_scale_rel * (lk_base - log(ref_km + km_offset)) + km_scale_trend * abs(ktr_recent))"
+description = "Scale of the ln(km/week + km_offset) error."
+variables = ["h", "share", "lk_base", "ktr_recent"]
+
+[formulas.km_quantile]
+expr = "max(exp(loc + scale * z) - km_offset, 0)"
+description = "Weekly km at a quantile, given still training."
+variables = ["loc", "scale", "z"]
+
+[formulas.p_running]
+expr = "logistic(run_a + run_share * share + run_since * since + run_level * (lk_base - log(ref_km + km_offset)) + run_h * log(h / min_horizon_weeks))"
+description = "Chance of at least one run in the 4 weeks before the target date."
+variables = ["share", "since", "lk_base", "h"]
+
+[formulas.tanda_marathon]
+expr = "marathon_km * (tanda_a + tanda_b * exp(-tanda_k * K) + tanda_c * P)"
+description = "Tanda (2011) marathon time (s) from mean weekly km K and mean training pace P (s/km) over 8 weeks. Literature formula, not validated on this data."
+variables = ["K", "P"]

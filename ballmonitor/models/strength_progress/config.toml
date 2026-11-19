@@ -1,0 +1,412 @@
+[meta]
+title = "Strength progress"
+version = "0.1.0"
+status = "calibrated"
+question = "Given a lifter's training log up to today, how much will they lift on one exercise at a chosen future date, and how wide is the realistic range?"
+description = "Your current load on the exercise is moved along a saturating training curve: the median gain still to come falls off exponentially with the weeks you have trained (big early, near zero after about a year). The 50/80/95% bands are quantiles of the real errors of fit20 members (one slow set to failure per machine, about weekly), widening with the horizon, for beginners, for irregular training and after a long break. Fitted on 2011-2015 members and checked on other members in 2015-2016."
+assumptions = [
+  "You keep training as you have been until the target date (the data only show people who were still training then).",
+  "Progress follows one saturating curve in weeks since your first session on this exercise: most of the gain comes in the first ~6 months, then the median change is about zero.",
+  "Your sets are comparable over time (same exercise, equipment and technique); a set of several reps is turned into one strength number with Epley's formula.",
+  "Curve and bands were fitted on fit20 studio members (Netherlands/Germany, 2011-2016): one slow set to failure per machine, about weekly, on leg press, chest press and pulldown machines. Other programs (more sets, more days, free weights, powerlifting) were not in the data.",
+  "Training less than once a week or a long break widens the range but does not move the median (no detectable effect on the median in the data).",
+  "Sex, age and bodyweight are shown but not used: they changed the median by about 1% or less in the data.",
+]
+
+[web]
+public = false
+
+# ── turning a set into one strength number ─────────────────────────────────
+
+[params.rep_divisor]
+value = 30.0
+description = "Epley divisor: a set of w x r counts as w * (1 + r / this) (formula rep_index)."
+unit = "reps"
+source = "Epley B (1985), Poundage chart, Boyd Epley Workout, Lincoln NE: 1RM = w (1 + r/30). Not fitted here (fit20 records durations, not reps)."
+range = [5.0, 100.0]
+
+# ── features of the log ─────────────────────────────────────────────────────
+
+[params.consistency_window_weeks]
+value = 8.0
+description = "Sessions per week is counted over this many most recent weeks (or since the first session, if shorter)."
+unit = "weeks"
+source = "Judgement (two months); the bands were fitted with 8."
+range = [1.0, 52.0]
+
+[params.consistency_ref_per_week]
+value = 1.0
+description = "Sessions per week that count as fully regular: irregular = clamp(1 - sessions per week / this, 0, 1); also the reference of formula pace."
+unit = "sessions/week"
+source = "fit20 protocol: one session a week (Steele et al. 2022); the bands were fitted with 1."
+range = [0.1, 7.0]
+
+[params.trend_window_weeks]
+value = 12.0
+description = "Recent trend = least-squares slope of ln(strength) per week over this many weeks (used only by the recent_trend variant)."
+unit = "weeks"
+source = "Judgement; data/backtest.csv rows carry 12 weeks of log."
+range = [2.0, 52.0]
+
+[params.trend_min_sessions]
+value = 3
+description = "Fewer sessions than this in the trend window -> trend = 0."
+unit = "sessions"
+source = "Judgement."
+range = [2, 50]
+
+[params.trend_min_span_weeks]
+value = 3.0
+description = "Sessions in the trend window spanning less than this -> trend = 0."
+unit = "weeks"
+source = "Judgement."
+range = [0.0, 52.0]
+
+# ── the training curve (point prediction) ───────────────────────────────────
+
+[params.gain_max]
+value = 0.3442
+description = "A: total median log gain from the first session onward (exp(A) - 1 = 41% heavier)."
+unit = "log ratio"
+source = "RESEARCH.md (research.py): least absolute deviation on fold A train (fit20; tau on a grid)"
+range = [0.0, 2.0]
+
+[params.gain_tau_weeks]
+value = 10.0
+description = "tau: weeks of training after which 63% of the total gain is in; also sets novice = exp(-weeks / tau) in the bands."
+unit = "weeks"
+source = "RESEARCH.md (research.py): grid 4-40 weeks, best train MAE on fold A"
+range = [1.0, 520.0]
+
+[params.consistency_exponent]
+value = 0.0
+description = "How strongly sessions per week speeds up the training clock (formula pace): 0 = not at all (default), 1 = in proportion."
+unit = "exponent"
+source = "RESEARCH.md (research.py): 0.5 and 1 made the test median worse in both folds (variant consistency)"
+range = [0.0, 2.0]
+
+[params.pace_min]
+value = 0.25
+description = "Lower clamp of sessions per week / consistency_ref_per_week in formula pace."
+unit = "ratio"
+source = "Judgement."
+range = [0.0, 1.0]
+
+[params.pace_max]
+value = 2.0
+description = "Upper clamp of sessions per week / consistency_ref_per_week in formula pace."
+unit = "ratio"
+source = "Judgement (fit20 has few members above 1 session a week, so higher pace is extrapolation)."
+range = [1.0, 7.0]
+
+[params.linlog_slope]
+value = 0.0890
+description = "b of the paper's linear-log form b ln((w + h + 1) / (w + 1)) (used only by the linear_log variant)."
+unit = "log ratio"
+source = "RESEARCH.md (research.py): least absolute deviation on fold A train; form from Steele et al. (2022)"
+range = [0.0, 1.0]
+
+[params.max_horizon_weeks]
+value = 54.0
+description = "Longest horizon allowed (the backtest's 52 weeks plus its 14-day matching window)."
+unit = "weeks"
+source = "RESEARCH.md: horizons 4-52 weeks, actual session within 14 days of the target"
+range = [1.0, 104.0]
+
+# ── bands ───────────────────────────────────────────────────────────────────
+
+[params.band_gap_cap_days]
+value = 56.0
+description = "gap feature = min(days since last session, this) / this; the backtest only has cases with a session in the last 56 days."
+unit = "days"
+source = "RESEARCH.md (research.py): case filter and band feature"
+range = [1.0, 365.0]
+
+[params.band_scale]
+value = 1.0
+description = "Multiplies every band's distance from the median (1 = as fitted; 1.2 = 20% wider)."
+unit = "x"
+source = "Judgement (1 = the fitted quantiles)."
+range = [0.1, 5.0]
+
+[params.band_p025_base]
+value = -0.0486
+description = "Intercept a of the 2.5% quantile of the log error (formula band_log_quantile)."
+unit = "log error"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+[params.band_p025_horizon]
+value = -0.3813
+description = "Slope on sqrt(horizon weeks / 52) of the 2.5% quantile of the log error (formula band_log_quantile)."
+unit = "per unit"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+[params.band_p025_novice]
+value = -0.0759
+description = "Slope on novice = exp(-weeks / gain_tau_weeks) of the 2.5% quantile of the log error (formula band_log_quantile)."
+unit = "per unit"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+[params.band_p025_irregular]
+value = 0.0410
+description = "Slope on irregular = clamp(1 - sessions per week, 0, 1) of the 2.5% quantile of the log error (formula band_log_quantile)."
+unit = "per unit"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+[params.band_p025_gap]
+value = -0.3718
+description = "Slope on gap = days since last session / band_gap_cap_days of the 2.5% quantile of the log error (formula band_log_quantile)."
+unit = "per unit"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+[params.band_p10_base]
+value = 0.0663
+description = "Intercept a of the 10% quantile of the log error (formula band_log_quantile)."
+unit = "log error"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+[params.band_p10_horizon]
+value = -0.2846
+description = "Slope on sqrt(horizon weeks / 52) of the 10% quantile of the log error (formula band_log_quantile)."
+unit = "per unit"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+[params.band_p10_novice]
+value = -0.0900
+description = "Slope on novice = exp(-weeks / gain_tau_weeks) of the 10% quantile of the log error (formula band_log_quantile)."
+unit = "per unit"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+[params.band_p10_irregular]
+value = 0.0179
+description = "Slope on irregular = clamp(1 - sessions per week, 0, 1) of the 10% quantile of the log error (formula band_log_quantile)."
+unit = "per unit"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+[params.band_p10_gap]
+value = -0.1985
+description = "Slope on gap = days since last session / band_gap_cap_days of the 10% quantile of the log error (formula band_log_quantile)."
+unit = "per unit"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+[params.band_p25_base]
+value = 0.0267
+description = "Intercept a of the 25% quantile of the log error (formula band_log_quantile)."
+unit = "log error"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+[params.band_p25_horizon]
+value = -0.0924
+description = "Slope on sqrt(horizon weeks / 52) of the 25% quantile of the log error (formula band_log_quantile)."
+unit = "per unit"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+[params.band_p25_novice]
+value = -0.0958
+description = "Slope on novice = exp(-weeks / gain_tau_weeks) of the 25% quantile of the log error (formula band_log_quantile)."
+unit = "per unit"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+[params.band_p25_irregular]
+value = 0.0054
+description = "Slope on irregular = clamp(1 - sessions per week, 0, 1) of the 25% quantile of the log error (formula band_log_quantile)."
+unit = "per unit"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+[params.band_p25_gap]
+value = -0.0435
+description = "Slope on gap = days since last session / band_gap_cap_days of the 25% quantile of the log error (formula band_log_quantile)."
+unit = "per unit"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+[params.band_p50_base]
+value = -0.0000
+description = "Intercept a of the 50% quantile of the log error (formula band_log_quantile)."
+unit = "log error"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+[params.band_p50_horizon]
+value = 0.0000
+description = "Slope on sqrt(horizon weeks / 52) of the 50% quantile of the log error (formula band_log_quantile)."
+unit = "per unit"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+[params.band_p50_novice]
+value = 0.0000
+description = "Slope on novice = exp(-weeks / gain_tau_weeks) of the 50% quantile of the log error (formula band_log_quantile)."
+unit = "per unit"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+[params.band_p50_irregular]
+value = 0.0000
+description = "Slope on irregular = clamp(1 - sessions per week, 0, 1) of the 50% quantile of the log error (formula band_log_quantile)."
+unit = "per unit"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+[params.band_p50_gap]
+value = 0.0000
+description = "Slope on gap = days since last session / band_gap_cap_days of the 50% quantile of the log error (formula band_log_quantile)."
+unit = "per unit"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+[params.band_p75_base]
+value = -0.0095
+description = "Intercept a of the 75% quantile of the log error (formula band_log_quantile)."
+unit = "log error"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+[params.band_p75_horizon]
+value = 0.0957
+description = "Slope on sqrt(horizon weeks / 52) of the 75% quantile of the log error (formula band_log_quantile)."
+unit = "per unit"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+[params.band_p75_novice]
+value = 0.0901
+description = "Slope on novice = exp(-weeks / gain_tau_weeks) of the 75% quantile of the log error (formula band_log_quantile)."
+unit = "per unit"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+[params.band_p75_irregular]
+value = 0.0576
+description = "Slope on irregular = clamp(1 - sessions per week, 0, 1) of the 75% quantile of the log error (formula band_log_quantile)."
+unit = "per unit"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+[params.band_p75_gap]
+value = -0.0734
+description = "Slope on gap = days since last session / band_gap_cap_days of the 75% quantile of the log error (formula band_log_quantile)."
+unit = "per unit"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+[params.band_p90_base]
+value = -0.0052
+description = "Intercept a of the 90% quantile of the log error (formula band_log_quantile)."
+unit = "log error"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+[params.band_p90_horizon]
+value = 0.1715
+description = "Slope on sqrt(horizon weeks / 52) of the 90% quantile of the log error (formula band_log_quantile)."
+unit = "per unit"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+[params.band_p90_novice]
+value = 0.1706
+description = "Slope on novice = exp(-weeks / gain_tau_weeks) of the 90% quantile of the log error (formula band_log_quantile)."
+unit = "per unit"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+[params.band_p90_irregular]
+value = 0.1039
+description = "Slope on irregular = clamp(1 - sessions per week, 0, 1) of the 90% quantile of the log error (formula band_log_quantile)."
+unit = "per unit"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+[params.band_p90_gap]
+value = -0.0891
+description = "Slope on gap = days since last session / band_gap_cap_days of the 90% quantile of the log error (formula band_log_quantile)."
+unit = "per unit"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+[params.band_p975_base]
+value = 0.0106
+description = "Intercept a of the 97.5% quantile of the log error (formula band_log_quantile)."
+unit = "log error"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+[params.band_p975_horizon]
+value = 0.2782
+description = "Slope on sqrt(horizon weeks / 52) of the 97.5% quantile of the log error (formula band_log_quantile)."
+unit = "per unit"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+[params.band_p975_novice]
+value = 0.3027
+description = "Slope on novice = exp(-weeks / gain_tau_weeks) of the 97.5% quantile of the log error (formula band_log_quantile)."
+unit = "per unit"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+[params.band_p975_irregular]
+value = 0.2242
+description = "Slope on irregular = clamp(1 - sessions per week, 0, 1) of the 97.5% quantile of the log error (formula band_log_quantile)."
+unit = "per unit"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+[params.band_p975_gap]
+value = -0.1508
+description = "Slope on gap = days since last session / band_gap_cap_days of the 97.5% quantile of the log error (formula band_log_quantile)."
+unit = "per unit"
+source = "RESEARCH.md (research.py): linear quantile regression on fold A train (fit20, train members, targets before 2015-07-01)"
+range = [-2.0, 2.0]
+
+# ── formulas ────────────────────────────────────────────────────────────────
+
+[formulas.rep_index]
+expr = "weight * (1 + reps / rep_divisor)"
+description = "Strength number of a set given in reps (Epley's one-rep max). Must be weight times a factor of reps (the output divides by it)."
+variables = ["weight", "reps"]
+
+[formulas.duration_index]
+expr = "weight"
+description = "Strength number of a set given as a duration in seconds (fit20 style): the load itself, as in Steele et al. (2022). Must be weight times a factor of duration."
+variables = ["weight", "duration"]
+
+[formulas.pace]
+expr = "clamp(freq / consistency_ref_per_week, pace_min, pace_max) ** consistency_exponent"
+description = "Training-clock speed from sessions per week (1 with the default exponent 0)."
+variables = ["freq"]
+
+[formulas.expected_gain]
+expr = "gain_max * (exp(-weeks / gain_tau_weeks) - exp(-(weeks + h * pace) / gain_tau_weeks))"
+description = "Median log gain from today to the target: the part of the saturating curve A (1 - exp(-t / tau)) between weeks trained now and at the target. Also available: slope (recent trend per week), sessions (logged sessions)."
+variables = ["weeks", "h", "pace", "slope", "sessions"]
+
+[formulas.band_log_quantile]
+expr = "a + b_h * horizon + b_nov * novice + b_irr * irregular + b_gap * gap"
+description = "One quantile of the log error ln(actual / (current * exp(gain))); a, b_* are the band_<level>_* params."
+variables = ["a", "b_h", "b_nov", "b_irr", "b_gap", "horizon", "novice", "irregular", "gap"]
+
+[formulas.median_value]
+expr = "current * exp(gain + q50)"
+description = "Median strength number at the target date."
+variables = ["current", "gain", "q50"]
+
+[formulas.band_value]
+expr = "median * exp(band_scale * (q - q50))"
+description = "Strength number at one quantile level, from the median and the fitted log quantiles."
+variables = ["median", "q", "q50"]

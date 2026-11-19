@@ -1,0 +1,182 @@
+# PLACEHOLDER (not a real person): a made-up barbell log in reps, to show the input format.
+# A lifter 10 weeks into squatting twice a week; the curve and bands come from fit20
+# machine training (see MODEL.md), so treat the result as a rough guide for barbell lifts.
+today = 2026-03-16
+target_date = 2026-09-14
+exercise = "Squat"
+unit = "kg"
+training_since = 2026-01-05
+
+[[log]]
+date = 2026-01-05
+exercise = "Squat"
+weight = 60
+reps = 8
+
+[[log]]
+date = 2026-01-08
+exercise = "Squat"
+weight = 62.5
+reps = 8
+
+[[log]]
+date = 2026-01-12
+exercise = "Squat"
+weight = 65
+reps = 8
+
+[[log]]
+date = 2026-01-15
+exercise = "Squat"
+weight = 67.5
+reps = 7
+
+[[log]]
+date = 2026-01-19
+exercise = "Squat"
+weight = 67.5
+reps = 8
+
+[[log]]
+date = 2026-01-22
+exercise = "Squat"
+weight = 70
+reps = 7
+
+[[log]]
+date = 2026-01-26
+exercise = "Squat"
+weight = 72.5
+reps = 6
+
+[[log]]
+date = 2026-01-29
+exercise = "Squat"
+weight = 72.5
+reps = 7
+
+[[log]]
+date = 2026-02-02
+exercise = "Squat"
+weight = 75
+reps = 6
+
+[[log]]
+date = 2026-02-05
+exercise = "Squat"
+weight = 75
+reps = 6
+
+[[log]]
+date = 2026-02-16
+exercise = "Squat"
+weight = 77.5
+reps = 6
+
+[[log]]
+date = 2026-02-19
+exercise = "Squat"
+weight = 80
+reps = 5
+
+[[log]]
+date = 2026-02-23
+exercise = "Squat"
+weight = 80
+reps = 5
+
+[[log]]
+date = 2026-02-26
+exercise = "Squat"
+weight = 82.5
+reps = 5
+
+[[log]]
+date = 2026-03-02
+exercise = "Squat"
+weight = 82.5
+reps = 5
+
+[[log]]
+date = 2026-03-05
+exercise = "Squat"
+weight = 85
+reps = 5
+
+[[log]]
+date = 2026-03-09
+exercise = "Squat"
+weight = 85
+reps = 5
+
+[[log]]
+date = 2026-03-12
+exercise = "Squat"
+weight = 87.5
+reps = 4
+
+[[log]]
+date = 2026-03-16
+exercise = "Squat"
+weight = 87.5
+reps = 5
+
+[[log]]
+date = 2026-01-05
+exercise = "Bench press"
+weight = 40
+reps = 8
+
+[[log]]
+date = 2026-01-12
+exercise = "Bench press"
+weight = 42.5
+reps = 8
+
+[[log]]
+date = 2026-01-19
+exercise = "Bench press"
+weight = 45
+reps = 7
+
+[[log]]
+date = 2026-01-26
+exercise = "Bench press"
+weight = 45
+reps = 8
+
+[[log]]
+date = 2026-02-02
+exercise = "Bench press"
+weight = 47.5
+reps = 7
+
+[[log]]
+date = 2026-02-16
+exercise = "Bench press"
+weight = 50
+reps = 6
+
+[[log]]
+date = 2026-02-23
+exercise = "Bench press"
+weight = 50
+reps = 7
+
+[[log]]
+date = 2026-03-02
+exercise = "Bench press"
+weight = 52.5
+reps = 6
+
+[[log]]
+date = 2026-03-09
+exercise = "Bench press"
+weight = 52.5
+reps = 6
+
+[[log]]
+date = 2026-03-16
+exercise = "Bench press"
+weight = 55
+reps = 5

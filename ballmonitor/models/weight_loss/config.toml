@@ -1,0 +1,301 @@
+[meta]
+title = "Weight loss"
+version = "0.1.0"
+status = "draft"  # stub | draft | calibrated
+question = "Given a person's body today and a planned change of diet and/or activity, what will they weigh on a chosen future date, and how wide is the realistic range?"
+description = """
+The dynamic adult body-weight model of Hall et al. (Lancet 2011, web appendix; the model
+behind the NIH Body Weight Planner), re-implemented from the published equations: fat and
+lean mass (Forbes partitioning), glycogen with its water, extracellular fluid, energy
+expenditure with thermic effect of food, adaptive thermogenesis and a body-weight-proportional
+activity term, integrated day by day. The range comes from uncertainty about the energy
+intake change the person really achieves (adherence) plus day-to-day weigh-in noise. Dated
+weigh-ins, if given, are used to estimate that effective intake change (1-D least squares
+with a prior toward the plan). Not backtested: the bands rest on DRAFT literature values.
+"""
+assumptions = [
+    "Your body follows the average adult in Hall et al.'s 2011 model: the energy densities, metabolic rates and adaptation constants are population values, not yours.",
+    "Your weight today is stable: your current intake equals your current expenditure, estimated as activity level (PAL) x Mifflin-St Jeor resting rate.",
+    "The intake and activity change start on the start date and stay constant until the target date (one effective intake change for the whole period).",
+    "How well people stick to a plan varies widely; the range assumes your effective intake change is normally spread around the plan (spread from the CALERIE trial, DRAFT).",
+    "Weigh-ins scatter around your true weight by about 0.7 kg from day to day (water, food, scale; DRAFT), independently from day to day.",
+    "Without a measured body-fat %, body fat is estimated from BMI, age and sex (Jackson et al. 2002 equations as used by Hall et al.).",
+    "Not backtested: no open dataset of individual weigh-ins was available, so the ranges are documented assumptions, not measured errors.",
+]
+
+[web]
+public = false
+
+# --- Method ---------------------------------------------------------------------------
+
+[params.method]
+value = "hall2011"
+description = "hall2011: the full dynamic model integrated day by day (fat, lean, glycogen, fluid, adaptive thermogenesis). linear: the appendix's closed-form one-compartment approximation (eq. 14), BW(t) = BW0 + dBW_ss (1 - exp(-t/tau))."
+unit = "choice"
+source = "Hall et al. 2011 Lancet web appendix, eqs. 1-9 (hall2011) and eqs. 10-17 (linear)"
+choices = ["hall2011", "linear"]
+
+[params.steps_per_day]
+value = 1
+description = "Integration steps per day (classical Runge-Kutta 4). 1 is accurate for daily output; the fastest dynamics (glycogen, fluid) have time constants of about 1 day."
+unit = "steps/day"
+source = "Judgement (numerical setting; results change < 0.01 kg between 1 and 8 steps/day)"
+range = [1, 24]
+
+# --- Energy densities (Hall 2011 appendix, converted from MJ/kg at 4.184 kJ/kcal) ------
+
+[params.rho_fat]
+value = 9441.0
+description = "Energy content per kg of body fat change, rho_F."
+unit = "kcal/kg"
+source = "Hall et al. 2011 web appendix: rho_F = 39.5 MJ/kg (Hall 2008, Int J Obes 32:573), / 4.184"
+range = [8000.0, 10000.0]
+
+[params.rho_lean]
+value = 1816.0
+description = "Energy content per kg of lean tissue change, rho_L."
+unit = "kcal/kg"
+source = "Hall et al. 2011 web appendix: rho_L = 7.6 MJ/kg (Hall 2008, Int J Obes 32:573), / 4.184"
+range = [1000.0, 2500.0]
+
+[params.rho_glycogen]
+value = 4206.0
+description = "Energy density of glycogen, rho_G."
+unit = "kcal/kg"
+source = "Hall et al. 2011 web appendix, eq. 1: rho_G = 17.6 MJ/kg, / 4.184"
+range = [3500.0, 4500.0]
+
+# --- Energy expenditure (eq. 5-8) -------------------------------------------------------
+
+[params.gamma_fat]
+value = 3.107
+description = "Resting metabolic rate per kg of body fat, gamma_F."
+unit = "kcal/kg/day"
+source = "Hall et al. 2011 web appendix: gamma_F = 13 kJ/kg/day (Nelson et al. 1992, Am J Clin Nutr 56:848), / 4.184"
+range = [0.0, 10.0]
+
+[params.gamma_lean]
+value = 21.99
+description = "Resting metabolic rate per kg of lean tissue, gamma_L."
+unit = "kcal/kg/day"
+source = "Hall et al. 2011 web appendix: gamma_L = 92 kJ/kg/day (Nelson et al. 1992), / 4.184"
+range = [10.0, 40.0]
+
+[params.eta_fat]
+value = 179.3
+description = "Biochemical cost of depositing (saved when losing) 1 kg of fat, eta_F."
+unit = "kcal/kg"
+source = "Hall et al. 2011 web appendix: eta_F = 750 kJ/kg (Hall 2010, Br J Nutr 104:4), / 4.184"
+range = [0.0, 500.0]
+
+[params.eta_lean]
+value = 229.4
+description = "Biochemical cost of depositing (saved when losing) 1 kg of lean tissue, eta_L."
+unit = "kcal/kg"
+source = "Hall et al. 2011 web appendix: eta_L = 960 kJ/kg (Hall 2010, Br J Nutr 104:4), / 4.184"
+range = [0.0, 600.0]
+
+[params.beta_tef]
+value = 0.1
+description = "Thermic effect of food: fraction of an intake change that immediately changes expenditure (TEF = beta_TEF x dEI)."
+unit = "fraction"
+source = "Hall et al. 2011 web appendix, eq. 6 (Blaxter 1989)"
+range = [0.0, 0.3]
+
+[params.beta_at]
+value = 0.14
+description = "Adaptive thermogenesis: steady-state extra change of expenditure per unit intake change, beyond body-composition effects."
+unit = "fraction"
+source = "Hall et al. 2011 web appendix, eq. 7 (Hall & Jordan 2008, Am J Clin Nutr 88:1495)"
+range = [0.0, 0.5]
+
+[params.tau_at_days]
+value = 14.0
+description = "Time scale on which adaptive thermogenesis approaches its steady state."
+unit = "days"
+source = "Hall et al. 2011 web appendix, eq. 7"
+range = [1.0, 100.0]
+
+# --- Body composition --------------------------------------------------------------------
+
+[params.forbes_c_kg]
+value = 10.4
+description = "Forbes constant: dLean/dFat = forbes_c_kg / Fat, so lean people lose relatively more lean tissue."
+unit = "kg"
+source = "Hall et al. 2011 web appendix (Forbes 1987, Nutr Rev 45:225; Hall 2007, Br J Nutr 97:1059)"
+range = [1.0, 30.0]
+
+[params.glycogen_init_kg]
+value = 0.5
+description = "Body glycogen at baseline, G_init."
+unit = "kg"
+source = "Hall et al. 2011 web appendix (\"~500 g of glycogen\")"
+range = [0.1, 1.5]
+
+[params.glycogen_water_ratio]
+value = 2.7
+description = "Grams of water stored with each gram of glycogen (counted in body weight)."
+unit = "g/g"
+source = "Hall et al. 2011 web appendix (McBride et al. 1941, J Biol Chem 139:943)"
+range = [0.0, 5.0]
+
+[params.baseline_carb_fraction]
+value = 0.5
+description = "Share of baseline energy intake from carbohydrate (sets baseline carbohydrate intake CI_b; also the default after the change)."
+unit = "fraction"
+source = "DRAFT: judgement, typical adult diet ~50% carbohydrate energy; the Planner's own default not verified - verify"
+range = [0.05, 0.9]
+
+# --- Extracellular fluid (eq. 2) ---------------------------------------------------------
+
+[params.sodium_conc]
+value = 3220.0
+description = "Extracellular sodium concentration [Na]."
+unit = "mg/L"
+source = "Hall et al. 2011 web appendix, eq. 2: [Na] = 3.22 mg/ml"
+range = [2500.0, 4000.0]
+
+[params.xi_na]
+value = 3000.0
+description = "Renal sodium excretion per litre of extra extracellular fluid, xi_Na."
+unit = "mg/L/day"
+source = "Hall et al. 2011 web appendix, eq. 2 (Hall 2010, Am J Physiol 298:E449)"
+range = [100.0, 10000.0]
+
+[params.xi_ci]
+value = 4000.0
+description = "Effect of a carbohydrate intake change on renal sodium excretion, xi_CI."
+unit = "mg/day"
+source = "Hall et al. 2011 web appendix, eq. 2 (Hall 2010, Am J Physiol 298:E449)"
+range = [0.0, 10000.0]
+
+# --- Activity level (PAL = total / resting expenditure) ----------------------------------
+
+[params.pal_sedentary]
+value = 1.5
+description = "Physical activity level for activity = \"sedentary\"."
+unit = "PAL"
+source = "Hall et al. 2011 web appendix (sedentary PAL of 1.5 used to set delta, eq. 8)"
+range = [1.2, 2.5]
+
+[params.pal_active]
+value = 1.85
+description = "Physical activity level for activity = \"active\"."
+unit = "PAL"
+source = "DRAFT: midpoint of FAO/WHO/UNU 2004 'active or moderately active' PAL 1.70-1.99 - verify"
+range = [1.2, 2.5]
+
+[params.pal_vigorous]
+value = 2.2
+description = "Physical activity level for activity = \"vigorous\"."
+unit = "PAL"
+source = "DRAFT: midpoint of FAO/WHO/UNU 2004 'vigorous or vigorously active' PAL 2.00-2.40 - verify"
+range = [1.2, 2.5]
+
+# --- Uncertainty (not calibrated: no open weigh-in data) ---------------------------------
+
+[params.adherence_mean]
+value = 1.0
+description = "Expected share of the planned energy change (diet + activity) actually achieved. 1 = the plan is followed on average, as the Body Weight Planner assumes."
+unit = "fraction"
+source = "Judgement (Planner convention); see variant trial_adherence for the CALERIE value"
+range = [0.0, 1.5]
+
+[params.adherence_sd]
+value = 0.30
+description = "Spread (SD) across people of the achieved share of the planned energy change."
+unit = "fraction"
+source = "DRAFT: CALERIE 2 (Ravussin et al. 2015, J Gerontol A 70:1097) achieved 11.7 +/- 0.7 (SE) % restriction vs 25% prescribed; SD ~ 0.7 x sqrt(~117 completers) = ~7.6 points = 0.30 of the prescription - verify n and SD"
+range = [0.0, 1.0]
+
+[params.intake_sd_floor]
+value = 100.0
+description = "Minimum SD of the effective intake change, also when no change is planned (drift of habits, error of the model's energy terms)."
+unit = "kcal/day"
+source = "DRAFT: judgement (about +/- 4-5 kg of eventual weight at 1 SD) - verify"
+range = [0.0, 500.0]
+
+[params.weighin_sd_kg]
+value = 0.7
+description = "Day-to-day scatter (SD) of a single weigh-in around the true weight (water, gut contents, clothing, scale). Weighs the weigh-ins in the fit and widens the bands."
+unit = "kg"
+source = "DRAFT: judgement from reports of ~0.5-1 kg day-to-day weight fluctuation in self-weighing adults - verify"
+range = [0.05, 3.0]
+
+# --- Search and display ------------------------------------------------------------------
+
+[params.fit_iterations]
+value = 6
+description = "Gauss-Newton iterations when fitting the effective intake change to weigh-ins."
+unit = "count"
+source = "Judgement (the model is nearly linear in intake; converges in 2-3)"
+range = [1, 50]
+
+[params.fit_step_kcal]
+value = 10.0
+description = "Finite-difference step for the sensitivity of weight to the intake change."
+unit = "kcal/day"
+source = "Judgement (numerical setting)"
+range = [0.1, 100.0]
+
+[params.goal_iterations]
+value = 30
+description = "Secant/bisection iterations when solving for the intake that reaches the goal weight."
+unit = "count"
+source = "Judgement (numerical setting)"
+range = [5, 100]
+
+[params.goal_tolerance_kg]
+value = 0.01
+description = "Stop the goal-intake search when the projected target weight is this close to the goal."
+unit = "kg"
+source = "Judgement (numerical setting)"
+range = [0.0001, 1.0]
+
+[params.max_horizon_days]
+value = 3650
+description = "Longest allowed projection (start date to target date)."
+unit = "days"
+source = "Judgement (the model was validated over months to a few years)"
+range = [7, 36500]
+
+[params.min_age]
+value = 18
+description = "Youngest allowed age: the adult equations (Mifflin-St Jeor, Jackson) do not apply to children."
+unit = "years"
+source = "Hall et al. 2011 (adult model; a separate child model exists, Hall et al. 2013 Lancet Diabetes Endocrinol)"
+range = [0, 30]
+
+[params.trajectory_max_rows]
+value = 30
+description = "Most rows in the trajectory table; longer projections show every 2nd, 3rd, ... week."
+unit = "rows"
+source = "Judgement (display only)"
+range = [5, 1000]
+
+# --- Formulas ------------------------------------------------------------------------------
+
+[formulas.rmr]
+expr = "9.99 * weight + 6.25 * height_cm - 4.92 * age + (5 if male else -161)"
+description = "Resting metabolic rate (kcal/day), Mifflin-St Jeor (Mifflin et al. 1990, Am J Clin Nutr 51:241), as in the Hall appendix."
+variables = ["weight", "height_cm", "age", "male"]
+
+[formulas.initial_fat]
+expr = "weight / 100 * (0.14 * age + (37.31 * log(weight / height_m ** 2) - 103.94 if male else 39.96 * log(weight / height_m ** 2) - 102.01))"
+description = "Initial fat mass (kg) when body-fat % is not given: Hall 2011 appendix eq. 4 (from Jackson et al. 2002, Int J Obes 26:789)."
+variables = ["weight", "height_m", "age", "male"]
+
+[formulas.energy_partition]
+expr = "forbes_c_kg * rho_lean / rho_fat / (forbes_c_kg * rho_lean / rho_fat + fat)"
+description = "p: share of the energy imbalance that goes to lean tissue, p = C / (C + F), C = 10.4 kg x rho_L / rho_F (appendix eq. 3)."
+variables = ["fat"]
+
+[formulas.activity_coefficient]
+expr = "((1 - beta_tef) * pal - 1) * rmr / weight"
+description = "delta: activity energy per kg body weight per day (kcal/kg/day), appendix eq. 8."
+variables = ["pal", "rmr", "weight"]
+
+[formulas.linear_weight]
+expr = "weight0 + dbw_ss * (1 - exp(-t / tau))"
+description = "Weight after t days in the linear method (appendix eq. 14 solved for a step change)."
+variables = ["weight0", "dbw_ss", "t", "tau"]

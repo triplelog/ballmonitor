@@ -1,0 +1,14 @@
+# PLACEHOLDER person (not a real individual): the Planner-style question "how much
+# should I eat to reach my goal by a date?". A 55-year-old woman, 165 cm, 82 kg,
+# with 38% measured body fat, adding 150 kcal/day of walking, goal 75 kg in 6 months.
+sex = "F"
+age = 55
+height_cm = 165
+weight = 82
+units = "kg"
+body_fat_pct = 38
+activity = "sedentary"
+exercise_kcal = 150
+start_date = 2026-03-01
+target_date = 2026-09-01
+goal_weight = 75

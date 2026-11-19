@@ -1,0 +1,389 @@
+[meta]
+title = "Lichess rating progress"
+version = "0.1.0"
+status = "calibrated"  # stub | draft | calibrated
+question = "What will this player's Lichess rating be on a chosen future date?"
+description = """
+Two parts, both fitted on real Lichess players (open database, 2014-2017, walk-forward):
+the chance the player plays again in this speed before the target date (if not, the rating
+stays where it is), and the range of the change if they do, from a quantile regression on
+current rating, experience, recent activity, distance below their peak, 3-month trend and
+recent results.
+"""
+assumptions = [
+  "The player keeps playing about as before; 'keep_playing = true' assumes at least one more rated game.",
+  "Fitted on Lichess blitz players from 2014-2017; today's rating pool and other speeds may behave differently.",
+  "Experience counts the games given; the backtest only saw games from 2014 on.",
+  "A rating only changes when you play rated games, so stopping means no change.",
+  "Cheating bans, rating refunds and new accounts after a long break are not modelled.",
+]
+
+[web]
+public = false
+
+# ---- Feature limits (how far each input can push the prediction) ----
+
+[params.cap_games]
+value = 5000.0
+description = "Experience counts at most this many rated games (more games change little)."
+unit = "games"
+source = "Judgement (few players in the data have more; keeps ln(1 + games) in the fitted range)."
+range = [100.0, 100000.0]
+
+[params.cap_below_peak]
+value = 4.0
+description = "Distance below the player's peak rating counts up to this many hundred points."
+unit = "x100 points"
+source = "Judgement (beyond 400 points the peak is usually from a different era of the account)."
+range = [0.5, 10.0]
+
+[params.cap_trend]
+value = 3.0
+description = "3-month rating trend counts up to +- this many hundred points."
+unit = "x100 points"
+source = "Judgement."
+range = [0.5, 10.0]
+
+[params.cap_form]
+value = 4.0
+description = "Recent performance minus rating counts up to +- this many hundred points."
+unit = "x100 points"
+source = "Judgement."
+range = [0.5, 10.0]
+
+# ---- Output ----
+
+[params.band_scale]
+value = 1.0
+description = "Multiplies the spread of the change-if-playing quantiles around their median (1 = as fitted)."
+source = "Judgement; 1 = the fit in RESEARCH.md."
+range = [0.25, 3.0]
+
+[params.interval_level]
+value = 0.8
+description = "Interval shown with the primary estimate."
+choices = [0.5, 0.8, 0.95]
+source = "Convention."
+
+[params.milestone_step]
+value = 100.0
+description = "Rating milestones shown as 'chance to reach' rows are multiples of this above today's rating."
+unit = "points"
+source = "Judgement (Lichess fans think in hundreds)."
+range = [25.0, 500.0]
+
+[formulas.p_active]
+expr = "logistic(active_intercept + active_activity * activity + active_idle * idle + active_experience * experience + active_log_horizon * log_horizon)"
+description = "Chance of playing at least one more rated game in this speed before the target date."
+variables = ["activity", "idle", "experience", "log_horizon"]
+
+# Coefficients fitted by research.py (pinball-loss quantile regression and a logistic
+# regression); see RESEARCH.md. Refit with:
+#   python -m ballmonitor.models.lichess_rating.research --write-config
+# ---- BEGIN FITTED (research.py --write-config; do not edit by hand) ----
+[params.active_intercept]
+value = 0.7992
+description = "Keeps playing (logistic): coefficient on intercept."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.active_activity]
+value = 0.0281
+description = "Keeps playing (logistic): coefficient on activity."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.active_idle]
+value = -1.0477
+description = "Keeps playing (logistic): coefficient on idle."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.active_experience]
+value = 0.5293
+description = "Keeps playing (logistic): coefficient on experience."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.active_log_horizon]
+value = 0.3645
+description = "Keeps playing (logistic): coefficient on log_horizon."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q025_intercept]
+value = -275.76
+description = "Change if playing, 2.5% quantile: rating points per unit of intercept."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q025_activity]
+value = -3.11
+description = "Change if playing, 2.5% quantile: rating points per unit of activity."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q025_experience]
+value = 25.86
+description = "Change if playing, 2.5% quantile: rating points per unit of experience."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q025_below_peak]
+value = 15.72
+description = "Change if playing, 2.5% quantile: rating points per unit of below_peak."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q025_trend]
+value = -7.19
+description = "Change if playing, 2.5% quantile: rating points per unit of trend."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q025_level]
+value = -7.59
+description = "Change if playing, 2.5% quantile: rating points per unit of level."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q025_form]
+value = 12.32
+description = "Change if playing, 2.5% quantile: rating points per unit of form."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q025_log_horizon]
+value = 2.84
+description = "Change if playing, 2.5% quantile: rating points per unit of log_horizon."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q10_intercept]
+value = -160.34
+description = "Change if playing, 10% quantile: rating points per unit of intercept."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q10_activity]
+value = -2.44
+description = "Change if playing, 10% quantile: rating points per unit of activity."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q10_experience]
+value = 16.16
+description = "Change if playing, 10% quantile: rating points per unit of experience."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q10_below_peak]
+value = 11.07
+description = "Change if playing, 10% quantile: rating points per unit of below_peak."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q10_trend]
+value = -3.36
+description = "Change if playing, 10% quantile: rating points per unit of trend."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q10_level]
+value = -4.99
+description = "Change if playing, 10% quantile: rating points per unit of level."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q10_form]
+value = 11.57
+description = "Change if playing, 10% quantile: rating points per unit of form."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q10_log_horizon]
+value = 5.37
+description = "Change if playing, 10% quantile: rating points per unit of log_horizon."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q25_intercept]
+value = -85.05
+description = "Change if playing, 25% quantile: rating points per unit of intercept."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q25_activity]
+value = -0.88
+description = "Change if playing, 25% quantile: rating points per unit of activity."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q25_experience]
+value = 9.95
+description = "Change if playing, 25% quantile: rating points per unit of experience."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q25_below_peak]
+value = 8.49
+description = "Change if playing, 25% quantile: rating points per unit of below_peak."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q25_trend]
+value = -2.21
+description = "Change if playing, 25% quantile: rating points per unit of trend."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q25_level]
+value = -2.39
+description = "Change if playing, 25% quantile: rating points per unit of level."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q25_form]
+value = 7.63
+description = "Change if playing, 25% quantile: rating points per unit of form."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q25_log_horizon]
+value = 7.93
+description = "Change if playing, 25% quantile: rating points per unit of log_horizon."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q50_intercept]
+value = -26.50
+description = "Change if playing, 50% quantile: rating points per unit of intercept."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q50_activity]
+value = 3.93
+description = "Change if playing, 50% quantile: rating points per unit of activity."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q50_experience]
+value = 3.86
+description = "Change if playing, 50% quantile: rating points per unit of experience."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q50_below_peak]
+value = 9.60
+description = "Change if playing, 50% quantile: rating points per unit of below_peak."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q50_trend]
+value = -2.31
+description = "Change if playing, 50% quantile: rating points per unit of trend."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q50_level]
+value = -0.95
+description = "Change if playing, 50% quantile: rating points per unit of level."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q50_form]
+value = 6.98
+description = "Change if playing, 50% quantile: rating points per unit of form."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q50_log_horizon]
+value = 15.30
+description = "Change if playing, 50% quantile: rating points per unit of log_horizon."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q75_intercept]
+value = 52.46
+description = "Change if playing, 75% quantile: rating points per unit of intercept."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q75_activity]
+value = 8.14
+description = "Change if playing, 75% quantile: rating points per unit of activity."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q75_experience]
+value = -4.11
+description = "Change if playing, 75% quantile: rating points per unit of experience."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q75_below_peak]
+value = 12.18
+description = "Change if playing, 75% quantile: rating points per unit of below_peak."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q75_trend]
+value = -4.88
+description = "Change if playing, 75% quantile: rating points per unit of trend."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q75_level]
+value = -1.63
+description = "Change if playing, 75% quantile: rating points per unit of level."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q75_form]
+value = 9.24
+description = "Change if playing, 75% quantile: rating points per unit of form."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q75_log_horizon]
+value = 30.81
+description = "Change if playing, 75% quantile: rating points per unit of log_horizon."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q90_intercept]
+value = 153.29
+description = "Change if playing, 90% quantile: rating points per unit of intercept."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q90_activity]
+value = 8.62
+description = "Change if playing, 90% quantile: rating points per unit of activity."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q90_experience]
+value = -12.21
+description = "Change if playing, 90% quantile: rating points per unit of experience."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q90_below_peak]
+value = 15.39
+description = "Change if playing, 90% quantile: rating points per unit of below_peak."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q90_trend]
+value = -7.29
+description = "Change if playing, 90% quantile: rating points per unit of trend."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q90_level]
+value = -2.88
+description = "Change if playing, 90% quantile: rating points per unit of level."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q90_form]
+value = 12.19
+description = "Change if playing, 90% quantile: rating points per unit of form."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q90_log_horizon]
+value = 43.93
+description = "Change if playing, 90% quantile: rating points per unit of log_horizon."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q975_intercept]
+value = 309.28
+description = "Change if playing, 97.5% quantile: rating points per unit of intercept."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q975_activity]
+value = 7.99
+description = "Change if playing, 97.5% quantile: rating points per unit of activity."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q975_experience]
+value = -25.59
+description = "Change if playing, 97.5% quantile: rating points per unit of experience."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q975_below_peak]
+value = 18.29
+description = "Change if playing, 97.5% quantile: rating points per unit of below_peak."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q975_trend]
+value = -8.88
+description = "Change if playing, 97.5% quantile: rating points per unit of trend."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q975_level]
+value = -4.30
+description = "Change if playing, 97.5% quantile: rating points per unit of level."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q975_form]
+value = 15.22
+description = "Change if playing, 97.5% quantile: rating points per unit of form."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+[params.change_q975_log_horizon]
+value = 57.58
+description = "Change if playing, 97.5% quantile: rating points per unit of log_horizon."
+source = "research.py (RESEARCH.md): fitted on blitz train players, targets before 2016-04-01."
+
+# ---- END FITTED ----

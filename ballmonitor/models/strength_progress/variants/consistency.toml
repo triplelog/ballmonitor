@@ -1,0 +1,6 @@
+# Training less often slows the training clock
+[meta]
+description = "Sessions per week speeds or slows the curve's clock: pace = clamp(freq / 1, 0.25, 2) ** 0.5, so training every second week moves along the curve 0.71x as fast. Same A and tau as the default; RESEARCH.md: a refitted version was slightly worse on test."
+
+[params]
+consistency_exponent = 0.5

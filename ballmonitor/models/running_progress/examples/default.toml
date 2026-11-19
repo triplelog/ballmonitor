@@ -1,0 +1,139 @@
+# Default: a regular runner (about 36 km/week at 5:40/km) on 3 December 2019, 13 weeks ahead
+# Real anonymised athlete 269 of the BMClab dataset (Afonseca, Watanabe & Duarte 2022,
+# doi:10.6084/m9.figshare.16620238.v5, CC BY 4.0): weekly totals, one entry per week
+# (dated on the week's first day). Distance in km, time in minutes.
+today = 2019-12-03
+weeks_ahead = 13
+gender = "M"
+age_group = "35 - 54"
+country = "United States"
+
+[[log]]
+date = 2019-06-04
+km = 31.75
+minutes = 173.4
+
+[[log]]
+date = 2019-06-11
+km = 39.35
+minutes = 238.1
+
+[[log]]
+date = 2019-06-18
+km = 24.41
+minutes = 192.1
+
+[[log]]
+date = 2019-06-25
+km = 7.24
+minutes = 40.2
+
+[[log]]
+date = 2019-07-02
+km = 40.27
+minutes = 247.6
+
+[[log]]
+date = 2019-07-09
+km = 38.65
+minutes = 231.5
+
+[[log]]
+date = 2019-07-16
+km = 38.67
+minutes = 205.9
+
+[[log]]
+date = 2019-07-23
+km = 20.95
+minutes = 107.1
+
+[[log]]
+date = 2019-07-30
+km = 30.6
+minutes = 164.4
+
+[[log]]
+date = 2019-08-06
+km = 26.98
+minutes = 153.6
+
+[[log]]
+date = 2019-08-13
+km = 34.97
+minutes = 206.6
+
+[[log]]
+date = 2019-08-20
+km = 27.72
+minutes = 167.5
+
+[[log]]
+date = 2019-08-27
+km = 32.59
+minutes = 195.9
+
+[[log]]
+date = 2019-09-03
+km = 33.01
+minutes = 211.7
+
+[[log]]
+date = 2019-09-10
+km = 29.03
+minutes = 168.7
+
+[[log]]
+date = 2019-09-17
+km = 57.13
+minutes = 316.3
+
+[[log]]
+date = 2019-09-24
+km = 48.29
+minutes = 257.9
+
+[[log]]
+date = 2019-10-01
+km = 70.85
+minutes = 379.6
+
+[[log]]
+date = 2019-10-08
+km = 19.58
+minutes = 107.6
+
+[[log]]
+date = 2019-10-15
+km = 44.27
+minutes = 235.1
+
+[[log]]
+date = 2019-10-22
+km = 41.43
+minutes = 234.0
+
+[[log]]
+date = 2019-10-29
+km = 52.8
+minutes = 265.4
+
+[[log]]
+date = 2019-11-05
+km = 62.78
+minutes = 337.3
+
+[[log]]
+date = 2019-11-12
+km = 57.96
+minutes = 346.1
+
+[[log]]
+date = 2019-11-19
+km = 20.91
+minutes = 124.0
+
+[[log]]
+date = 2019-11-26
+km = 16.11
+minutes = 89.8

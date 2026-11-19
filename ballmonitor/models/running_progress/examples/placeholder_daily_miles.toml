@@ -1,0 +1,286 @@
+# PLACEHOLDER: an invented runner (not real data), to show a daily log in miles with
+# h:mm:ss times and a target date. Four runs a week for 14 weeks, slowly building
+# (2% more miles and 0.3% faster each week).
+today = 2026-11-18
+target_date = 2027-03-01
+hemisphere = "north"
+
+[[log]]
+date = 2026-08-18
+miles = 4.0
+time = "0:38:24"
+
+[[log]]
+date = 2026-08-16
+miles = 5.0
+time = "0:46:30"
+
+[[log]]
+date = 2026-08-15
+miles = 3.0
+time = "0:28:30"
+
+[[log]]
+date = 2026-08-13
+miles = 8.0
+time = "1:18:24"
+
+[[log]]
+date = 2026-08-25
+miles = 4.1
+time = "0:39:15"
+
+[[log]]
+date = 2026-08-23
+miles = 5.1
+time = "0:47:17"
+
+[[log]]
+date = 2026-08-22
+miles = 3.1
+time = "0:29:22"
+
+[[log]]
+date = 2026-08-20
+miles = 8.2
+time = "1:20:07"
+
+[[log]]
+date = 2026-09-01
+miles = 4.2
+time = "0:40:05"
+
+[[log]]
+date = 2026-08-30
+miles = 5.2
+time = "0:48:04"
+
+[[log]]
+date = 2026-08-29
+miles = 3.1
+time = "0:29:16"
+
+[[log]]
+date = 2026-08-27
+miles = 8.3
+time = "1:20:51"
+
+[[log]]
+date = 2026-09-08
+miles = 4.2
+time = "0:39:57"
+
+[[log]]
+date = 2026-09-06
+miles = 5.3
+time = "0:48:51"
+
+[[log]]
+date = 2026-09-05
+miles = 3.2
+time = "0:30:08"
+
+[[log]]
+date = 2026-09-03
+miles = 8.5
+time = "1:22:33"
+
+[[log]]
+date = 2026-09-15
+miles = 4.3
+time = "0:40:47"
+
+[[log]]
+date = 2026-09-13
+miles = 5.4
+time = "0:49:37"
+
+[[log]]
+date = 2026-09-12
+miles = 3.2
+time = "0:30:02"
+
+[[log]]
+date = 2026-09-10
+miles = 8.6
+time = "1:23:16"
+
+[[log]]
+date = 2026-09-22
+miles = 4.4
+time = "0:41:37"
+
+[[log]]
+date = 2026-09-20
+miles = 5.5
+time = "0:50:23"
+
+[[log]]
+date = 2026-09-19
+miles = 3.3
+time = "0:30:53"
+
+[[log]]
+date = 2026-09-17
+miles = 8.8
+time = "1:24:57"
+
+[[log]]
+date = 2026-09-29
+miles = 4.5
+time = "0:42:26"
+
+[[log]]
+date = 2026-09-27
+miles = 5.6
+time = "0:51:09"
+
+[[log]]
+date = 2026-09-26
+miles = 3.4
+time = "0:31:43"
+
+[[log]]
+date = 2026-09-24
+miles = 9.0
+time = "1:26:37"
+
+[[log]]
+date = 2026-10-06
+miles = 4.6
+time = "0:43:14"
+
+[[log]]
+date = 2026-10-04
+miles = 5.7
+time = "0:51:54"
+
+[[log]]
+date = 2026-10-03
+miles = 3.4
+time = "0:31:38"
+
+[[log]]
+date = 2026-10-01
+miles = 9.1
+time = "1:27:19"
+
+[[log]]
+date = 2026-10-13
+miles = 4.6
+time = "0:43:07"
+
+[[log]]
+date = 2026-10-11
+miles = 5.8
+time = "0:52:40"
+
+[[log]]
+date = 2026-10-10
+miles = 3.5
+time = "0:32:28"
+
+[[log]]
+date = 2026-10-08
+miles = 9.3
+time = "1:28:59"
+
+[[log]]
+date = 2026-10-20
+miles = 4.7
+time = "0:43:55"
+
+[[log]]
+date = 2026-10-18
+miles = 5.9
+time = "0:53:24"
+
+[[log]]
+date = 2026-10-17
+miles = 3.5
+time = "0:32:22"
+
+[[log]]
+date = 2026-10-15
+miles = 9.4
+time = "1:29:40"
+
+[[log]]
+date = 2026-10-27
+miles = 4.8
+time = "0:44:43"
+
+[[log]]
+date = 2026-10-25
+miles = 6.0
+time = "0:54:09"
+
+[[log]]
+date = 2026-10-24
+miles = 3.6
+time = "0:33:11"
+
+[[log]]
+date = 2026-10-22
+miles = 9.6
+time = "1:31:18"
+
+[[log]]
+date = 2026-11-03
+miles = 4.9
+time = "0:45:31"
+
+[[log]]
+date = 2026-11-01
+miles = 6.1
+time = "0:54:53"
+
+[[log]]
+date = 2026-10-31
+miles = 3.7
+time = "0:34:00"
+
+[[log]]
+date = 2026-10-29
+miles = 9.8
+time = "1:32:55"
+
+[[log]]
+date = 2026-11-10
+miles = 5.0
+time = "0:46:18"
+
+[[log]]
+date = 2026-11-08
+miles = 6.2
+time = "0:55:37"
+
+[[log]]
+date = 2026-11-07
+miles = 3.7
+time = "0:33:54"
+
+[[log]]
+date = 2026-11-05
+miles = 9.9
+time = "1:33:35"
+
+[[log]]
+date = 2026-11-17
+miles = 5.0
+time = "0:46:10"
+
+[[log]]
+date = 2026-11-15
+miles = 6.3
+time = "0:56:21"
+
+[[log]]
+date = 2026-11-14
+miles = 3.8
+time = "0:34:43"
+
+[[log]]
+date = 2026-11-12
+miles = 10.1
+time = "1:35:11"
