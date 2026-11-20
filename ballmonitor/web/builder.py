@@ -253,11 +253,23 @@ def site_page(name: str) -> dict | None:
 SPLIT_BYTES = 150_000   # a page's JSON above this has its dropdown options' views moved to their own files
 
 
-def app_versions() -> dict[str, str]:
+def app_versions(used: set[str] | None = None) -> dict[str, str]:
     """apps/<name>.js -> content hash: site.js loads an app as /static/apps/<name>.js?v=<hash>, so a
-    new build never runs a browser's cached old copy of a model's formulas."""
+    new build never runs a browser's cached old copy of a model's formulas. `used` (app names) limits
+    it to the apps the built pages show, so an off-site model's tool isn't published."""
     return {f"apps/{f.name}": hashlib.sha1(f.read_bytes()).hexdigest()[:10]
-            for f in sorted((STATIC_DIR / "apps").glob("*.js"))}
+            for f in sorted((STATIC_DIR / "apps").glob("*.js")) if used is None or f.stem in used}
+
+
+def apps_in(views_list: list) -> set[str]:
+    """Names of the views.app tools anywhere in a page's views (inside pickers too)."""
+    found: set[str] = set()
+    for v in views_list:
+        if v.get("kind") == "app":
+            found.add(v["app"])
+        for option in v.get("options", []) if v.get("kind") == "picker" else []:
+            found |= apps_in(option.get("views", []))
+    return found
 
 
 def split_options(page: dict, address: str, out: Path) -> dict:
@@ -299,7 +311,7 @@ def build_views(data_dir: Path, names: list[str], log=print) -> list[str]:
     whose page can't be built must not deploy half-done)."""
     out = data_dir / "views"
     out.mkdir(parents=True, exist_ok=True)
-    index, redirects, failures = [], {}, []
+    index, redirects, failures, used_apps = [], {}, [], set()
     for name in names:
         started = time.perf_counter()
         try:
@@ -309,6 +321,7 @@ def build_views(data_dir: Path, names: list[str], log=print) -> list[str]:
             failures.append(f"{name}/site.py: {type(exc).__name__}: {exc}")
             continue
         for address, p in built.items():
+            used_apps |= apps_in(p["views"])
             text = json.dumps(p, separators=(",", ":"), allow_nan=False)
             if len(text) > SPLIT_BYTES:   # a big page: each dropdown option's tables load when it's picked
                 text = json.dumps(split_options(p, address, out), separators=(",", ":"), allow_nan=False)
@@ -327,7 +340,7 @@ def build_views(data_dir: Path, names: list[str], log=print) -> list[str]:
                                                     "charts": chart_list, "cells": views.SPORT_CELL,
                                                     # the charts page's own words (title, summary) for its home card
                                                     "charts_text": pages.charts_text(),
-                                                    "assets": app_versions()},
+                                                    "assets": app_versions(used_apps)},
                                                    indent=1), encoding="utf-8")
     return failures
 
@@ -437,6 +450,13 @@ def build_static_site(out_dir: Path | str = "dist", models: list[str] | None = N
 
     # 6b. Pre-generated public pages
     failures += build_views(data_dir, target_models, log=log)
+    # only the tools the built pages use are published (an off-site model's app stays in the repo)
+    site_json = data_dir / "site.json"
+    if site_json.exists():
+        published = json.loads(site_json.read_text(encoding="utf-8")).get("assets", {})
+        for app_file in (static_dest / "apps").glob("*.js"):
+            if f"apps/{app_file.name}" not in published:
+                app_file.unlink()
 
     # A page with a missing result is a broken page: fail so CI never deploys it.
     if failures:

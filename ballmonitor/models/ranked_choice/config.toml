@@ -21,6 +21,7 @@ assumptions = [
 ]
 
 [web]
+public = false  # archived 2026-11-20 (launch keeps only the best pages)
 hidden_params = []
 
 # When the scheduled site build (`ballmonitor update-and-build`) runs fetch.py: AP football polls

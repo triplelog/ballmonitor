@@ -329,3 +329,6 @@ variables = ["rpi_rank", "rating_rank", "win_pct", "host_rpi"]
 expr = "rating_uncertainty * resid_sd / sqrt(games + ridge)"
 description = "Standard deviation of a team's rating draw in each simulation."
 variables = ["resid_sd", "games", "ridge"]
+
+[web]
+public = false  # archived 2026-11-20 (launch keeps only the best pages)

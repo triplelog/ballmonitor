@@ -210,6 +210,13 @@ pytest ballmonitor/models/race_time                # one model
   (2026-11-08, owner's call): the MLB models (`next_pitch`, `bvp_similarity`, `mlb_bullpen`),
   `cfb_replay` (until there's a YouTube Shorts account), `race_podium` and `dad`. The Pitch Guesser
   game is off too (not copied into `dist/`, no links; still at `/game` under `serve`).
+  **Launch set (2026-11-20, owner's call): only the best pages** — `ncaaf_bowls`, `ncaaf_recruiting`,
+  the three data tables (batting, pitching, QB games), the baseball charts and the three games
+  (Triple Play, Lineup, 27K). Archived with no mention on the site (public = false; code, page files,
+  tests kept): `race_time`, `college_diamond` (college baseball/softball), `ranked_choice` and the
+  progress pages (`progress_tracker`, `lichess_rating`, `running_progress`, `strength_progress`,
+  `weight_loss`). The build publishes only the `static/apps/*.js` the built pages use. Bringing a
+  page back: set public = true and restore its mentions (home description, About, Terms, share card).
 - **Live data tables** (`web/tables.toml`, `web/tables.py`): big CSVs served by tabdn table servers
   (tabc/sqldn, ~/Desktop/portfolio/mathzetta/tabdn) get a page at `/tables/<id>/` with a live
   filter/sort table. The data is too big to send to the browser, so the *server* filters

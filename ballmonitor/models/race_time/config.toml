@@ -580,3 +580,6 @@ variables = ["temp_f", "dew_point_f", "distance_m"]
 expr = "neutral_time * total_multiplier"
 description = "Projects course finish time from neutral baseline and combined environmental multipliers."
 variables = ["neutral_time", "total_multiplier"]
+
+[web]
+public = false  # archived 2026-11-20 (launch keeps only the best pages)

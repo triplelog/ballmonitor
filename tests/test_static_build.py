@@ -79,9 +79,8 @@ def test_public_pages_are_built_and_valid(site):
     georgia = next(o for o in team["options"] if o["slug"] == "georgia")
     assert georgia["views"] == [] and georgia["src"] == "/data/views/ncaaf_bowls/team/georgia.json"
     assert json.loads((site / georgia["src"].lstrip("/")).read_text(encoding="utf-8"))["views"]
-    # baseball and softball are separate pages; the old shared address still leads somewhere
-    assert {"college_baseball", "college_softball"} <= addresses
-    assert index["redirects"]["college_diamond/sport/softball"] == "college_softball"
+    # every old address (a model's REDIRECTS) leads to a page that is on the site
+    # (college_diamond's baseball/softball split is archived since 2026-11-20, so this may be empty)
     assert set(index["redirects"].values()) <= addresses
 
 
@@ -122,9 +121,12 @@ def test_every_address_is_a_real_page_in_the_sitemap(site):
     # a missing option's address (a past poll week) is forwarded to its page by the 404 page
     assert "/data/views/" in (site / "404.html").read_text() and "location.replace" in (site / "404.html").read_text()
     # an old address is a stub that forwards to the new one and isn't indexed
-    old = (site / "college_diamond" / "index.html").read_text()
-    assert "/college_baseball/" in old and 'content="noindex"' in old
-    assert "/college_diamond/" not in sitemap
+    for old_address, new in index["redirects"].items():
+        if "/" in old_address:   # an old option address: forwarded by the 404 page, not a stub
+            continue
+        old = (site / old_address / "index.html").read_text()
+        assert f"/{new}/" in old and 'content="noindex"' in old
+        assert f"/{old_address}/" not in sitemap
 
 
 def test_page_addresses_cannot_take_the_sites_own_folders(site, tmp_path):
@@ -192,3 +194,20 @@ def test_building_again_into_the_same_folder_works(site):
     mistake those pages for chart files the ids clash with."""
     assert (site / "charts").is_dir() and any((site / "charts" / d).is_dir() for d in ("aging-power", "power-average"))
     assert builder.build_pages(site, site / "data")
+
+
+def test_off_site_models_leave_no_trace(site):
+    """A model with [web] public = false (archived) has no page, no sitemap entry, no published app
+    and no home/menu entry (the launch set, 2026-11-20)."""
+    off = [m for m in registry.model_names() if not server.is_public(m)]
+    assert {"race_time", "college_diamond", "ranked_choice", "progress_tracker", "lichess_rating",
+            "running_progress", "strength_progress", "weight_loss"} <= set(off)
+    index = json.loads((site / "data" / "site.json").read_text(encoding="utf-8"))
+    shown = {json.loads((site / "data" / "views" / f"{m['name']}.json").read_text(encoding="utf-8"))["model"]
+             for m in index["models"]}
+    sitemap = (site / "sitemap.xml").read_text()
+    for m in off:
+        assert m not in shown, m
+        assert f"/{m}/" not in sitemap, m
+        assert not (site / "static" / "apps" / f"{m}.js").exists(), m
+        assert f"apps/{m}.js" not in index["assets"], m
