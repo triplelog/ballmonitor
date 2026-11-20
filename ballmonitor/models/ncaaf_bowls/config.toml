@@ -57,6 +57,12 @@ value = [0.9, 0.6, 0.25, 0.05]
 description = "Playoff-chance cut-offs for the site's bubble watch: Locks, Should be in, On the bubble, Work to do (below the last: not listed)."
 source = "Judgement (bracketology-style tiers)."
 
+[params.site_tossup_margin]
+value = 0.005
+description = "Site only: a game whose home win chance is within this of 50% is shown as 'Toss-up' instead of naming a favourite."
+source = "Judgement (a 50.4% favourite reads as a coin flip)."
+range = [0.0, 0.1]
+
 [params.site_root_min_chance]
 value = 0.01
 range = [0.0, 0.5]

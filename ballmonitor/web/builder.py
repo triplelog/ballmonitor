@@ -349,6 +349,8 @@ def build_static_site(out_dir: Path | str = "dist", models: list[str] | None = N
     """Build the full static site into `out_dir`."""
     target = Path(out_dir).resolve()
     target.mkdir(parents=True, exist_ok=True)
+    started = time.time()
+    previous = _sitemap_folders(target)   # pages of the last build here (removed below if now gone)
 
     data_dir = target / "data"
     data_dir.mkdir(parents=True, exist_ok=True)
@@ -464,6 +466,7 @@ def build_static_site(out_dir: Path | str = "dist", models: list[str] | None = N
 
     # 6c. one HTML file per address (index.html too) + sitemap.xml
     build_pages(target, data_dir)
+    _remove_stale(target, data_dir, previous, started, log)
 
     # 7. Write manifest.json with build metadata
     now_utc = datetime.datetime.now(datetime.timezone.utc)
@@ -478,6 +481,41 @@ def build_static_site(out_dir: Path | str = "dist", models: list[str] | None = N
     (data_dir / "manifest.json").write_text(json.dumps(manifest, indent=2), encoding="utf-8")
 
     return target
+
+
+def _sitemap_folders(target: Path) -> set[str]:
+    """First path parts of the addresses in target/sitemap.xml (empty if there is none)."""
+    sitemap = target / "sitemap.xml"
+    if not sitemap.exists():
+        return set()
+    paths = re.findall(r"<loc>https?://[^/<]+(/[^<]*)</loc>", sitemap.read_text(encoding="utf-8"))
+    return {p.strip("/").split("/")[0] for p in paths if p.strip("/")}
+
+
+def _remove_stale(target: Path, data_dir: Path, previous: set[str], started: float, log=print) -> None:
+    """Rebuilding into an existing folder (a local dist/) leaves pages a model no longer has (an
+    archived model's page). Remove the folders the last build's sitemap listed that this build's
+    doesn't, unless written during this build (an old address now holding a forwarding stub), and
+    page data for addresses that are no longer on the site. CI builds from scratch, so this only
+    matters locally."""
+    keep = {"data", "static", "charts", "tables", "about", "privacy", "terms", "triple", "lineup", "27k"}
+    # forwarding stubs (noindex pages at old addresses) not rewritten by this build are stale too
+    stubs = {f.parent.name for f in target.glob("*/index.html")
+             if f.stat().st_mtime < started and 'content="noindex"' in f.read_text(encoding="utf-8")}
+    for name in sorted((previous - _sitemap_folders(target) | stubs) - keep):
+        folder = target / name
+        page = folder / "index.html"
+        if folder.is_dir() and page.exists() and page.stat().st_mtime < started:
+            shutil.rmtree(folder)
+            log(f"   removed stale page folder /{name}/")
+    if not (data_dir / "site.json").exists():   # no pages built (tests that skip them)
+        return
+    site = json.loads((data_dir / "site.json").read_text(encoding="utf-8"))
+    live = {m["name"] for m in site["models"]}
+    views_dir = data_dir / "views"
+    for item in views_dir.iterdir() if views_dir.exists() else []:
+        if item.name.removesuffix(".json") not in live and item.stat().st_mtime < started:
+            shutil.rmtree(item) if item.is_dir() else item.unlink()
 
 
 def build_pages(target: Path, data_dir: Path) -> list[str]:

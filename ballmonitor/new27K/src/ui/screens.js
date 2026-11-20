@@ -9,7 +9,8 @@ import { CHALLENGE_BY_ID } from '../engine/challenges.js';
 import { HOW_TO_STEPS } from './help.js';
 import { CONFIG } from '../config.js';
 
-// Inside itch.io's game frame the player is already on the itch page: no "support" link there.
+// Inside itch.io's game frame the player is already on the itch page: no "support" link
+// there, and no link back to ballmonitor.com (the game's home on the site is /27k/).
 const ON_ITCH = /(^|\.)itch\.zone$/.test(location.hostname);
 
 export const rating = (v) => `<span class="rating ${v >= 65 ? 'hi' : v <= 40 ? 'lo' : ''}">${v}</span>`;
@@ -44,6 +45,7 @@ export function renderMenu(app) {
     }
     app.root.innerHTML = `
     <div class="menu">
+        ${ON_ITCH ? '' : '<a class="back-site" href="../" title="Back to Ball Monitor">← Ball Monitor</a>'}
         <div class="logo">27K</div>
         <p class="tag">Pick a pitch, read the moving zone, and paint the corners.</p>
         <div class="menu-buttons">

@@ -148,7 +148,7 @@ def page(model) -> dict:
     newest = years[0]
     status = class_status(data, "ncaaf", newest)
     if status.get("status") == "in_progress" and fetched:
-        updated = f"{newest} commitments as of {_day(fetched)}; {years[1]} and earlier classes are final"
+        updated = f"{newest} class as of {_day(fetched)}"   # short: it's a chip on the home card
     else:
         updated = f"Classes {years[-1]}-{newest}, final"
 
@@ -160,7 +160,9 @@ def page(model) -> dict:
     by_year = V.picker(
         "by_year", "Recruiting classes by year", "Class", options,
         subtitle="Pick a class year: every program's overall, conference and industry rank, then its "
-                 "offense, defense, run and pass ranks.")
+                 "offense, defense, run and pass ranks."
+                 + (f" The {newest} class is still being signed; {years[1]} and earlier classes are final."
+                    if status.get("status") == "in_progress" else ""))
 
     return V.page(
         title="College football recruiting rankings",

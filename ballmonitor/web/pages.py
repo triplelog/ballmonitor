@@ -285,7 +285,7 @@ def table_page(t: dict, cls: str) -> tuple[str, str, dict]:
               f'<p class="summary" data-src="{table_src(t, "summary")}">{esc(t["summary"])}</p>'),
         _cell(f"{cls} live-cell", '<p class="loading">Loading the table…</p>'),
         _cell(f"{cls} how", '<div class="ss-band">How this works</div>', f'<p data-src="{table_src(t, "how")}">{esc(t["how"])}</p>',
-              f'<details class="column-key"><summary>What the columns mean</summary><dl>{key}</dl></details>'
+              f'<details class="column-key"><summary>What the columns mean</summary><p class="key-hint">{esc(next(("Type a filter with these short names, like " + x["filter"] + "." for x in t.get("examples", []) if x.get("filter")), "Type a filter with these short names."))}</p><dl>{key}</dl></details>'
               if key else "") if t.get("how") else ""])
     return t["title"], t["summary"], {"table": body}
 

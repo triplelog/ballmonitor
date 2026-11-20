@@ -75,6 +75,8 @@ h3 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em; color: 
     text-shadow: 0 4px 0 #7a5532;
 }
 .menu .tag { color: var(--muted); margin: 6px 0 28px; }
+.menu .back-site { display: block; text-align: left; color: var(--muted); text-decoration: none; font-size: 13px; margin: -4vh 0 3vh; }
+.menu .back-site:hover { color: var(--text); }
 .menu-buttons { display: grid; gap: 10px; }
 .menu-buttons button { padding: 13px; font-size: 16px; }
 .menu-buttons .soon { font-size: 11px; color: var(--muted); margin-left: 6px; }
@@ -283,7 +285,7 @@ table.grid td select { width: 104px; }
     position: fixed; inset: 0; background: rgba(0, 0, 0, 0.6);
     display: flex; align-items: center; justify-content: center; z-index: 10; padding: 16px;
 }
-.overlay .panel { max-width: 860px; width: 100%; max-height: 90vh; overflow: auto; }
+.overlay .panel { max-width: 860px; width: 100%; max-height: 90vh; max-height: 90dvh; overflow: auto; }
 .final-score { font-size: 28px; font-weight: 800; margin: 4px 0 12px; }
 
 /* help */
@@ -297,6 +299,11 @@ table.grid td select { width: 104px; }
 .help-keys td { white-space: normal; font-size: 13px; }
 .help-keys td:first-child { white-space: nowrap; }
 .help .row-actions { justify-content: space-between; align-items: center; }
+/* The help's last row (Play ball / Back to the game) stays in sight while the words scroll. */
+.overlay .panel.help > .row-actions {
+    position: sticky; bottom: -12px; margin: 16px -12px -12px; padding: 10px 12px 12px;
+    background: var(--panel); border-top: 1px solid var(--line);
+}
 @media (max-width: 760px) { .help-cols { grid-template-columns: 1fr; } }
 #help-layer .overlay { z-index: 20; }
 
@@ -598,7 +605,8 @@ select { max-width: 100%; }
     .pitch-btn { padding: 11px; font-size: 17px; }
 
     .overlay { padding: 6px; align-items: flex-start; }
-    .overlay .panel { max-height: calc(100vh - 12px); }
+    .overlay .panel { max-height: calc(100vh - 12px); max-height: calc(100dvh - 12px); }
+    .overlay .panel.help > .row-actions { bottom: -10px; margin: 12px -10px -10px; padding: 8px 10px 10px; }
     .visit-quote { font-size: 16px; }
     .visit-zone { width: 170px; justify-self: center; }
     .visit-opt .card-head { align-items: flex-start; }

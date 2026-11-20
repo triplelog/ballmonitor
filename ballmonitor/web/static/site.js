@@ -121,8 +121,10 @@ async function ensurePage(key) {
   try {
     const r = await fetch(location.pathname);
     if (!r.ok) throw new Error(`${location.pathname}: ${r.status}`);
-    const main = new DOMParser().parseFromString(await r.text(), "text/html").getElementById("app");
+    const doc = new DOMParser().parseFromString(await r.text(), "text/html");
+    const main = doc.getElementById("app");
     if (!main) throw new Error(`${location.pathname}: no <main id="app">`);
+    if (key === "") homeDescription = metaDescription(doc) || homeDescription;
     for (const a of [...app.attributes]) if (a.name !== "id") app.removeAttribute(a.name);
     for (const a of main.attributes) if (a.name !== "id") app.setAttribute(a.name, a.value);
     app.replaceChildren(...[...main.childNodes].map((n) => document.importNode(n, true)));
@@ -162,7 +164,7 @@ function drawWhole(...kids) {
 async function renderHome() {
   const site = await getJSON("/data/site.json");
   if (!(await ensurePage(""))) return;
-  setHead("Ball Monitor", null, "/");
+  setHead("Ball Monitor", homeDescription, "/");
   const groups = {};
   for (const m of site.models) (groups[m.sport] = groups[m.sport] || []).push(m);
   fillSlot("models",
@@ -192,7 +194,7 @@ async function renderHome() {
 // ── model page ───────────────────────────────────────────────────────────────
 async function renderModel(name, pick) {
   if (current.model === name && pick && current.pickers[pick.id]) {  // same page: just switch the picker
-    current.pickers[pick.id](pick.slug, true);
+    current.pickers[pick.id].go(pick.slug, { scroll: true, remember: true });
     return;
   }
   let page;
@@ -209,20 +211,59 @@ async function renderModel(name, pick) {
   if (!(await ensurePage(name))) return;
   setHead(page.title, page.summary, `/${name}/`);
   const cls = cellClass(page.sport);
-  current = { model: name, title: page.title, pickers: {} };
+  current = { model: name, title: page.title, summary: page.summary, pickers: {} };
   viewFile = `ballmonitor/models/${page.model}/site.py`;
   pending = pick || null;
   // the title, summary and "How this works" are the page's own HTML; the rest is filled in here
   fillSpans(page.fill);
   fillSlot("headline",
     page.headline ? el("p", { class: "headline", ...viewSrc("headline") }, page.headline) : null,
-    page.updated ? el("span", { class: "ss-chip" }, page.updated) : null);
+    page.updated ? el("span", { class: "ss-chip" }, page.updated) : null,
+    jumpBar(page.views));
   fillSlot("views", ...page.views.map((v) => renderView(v, cls, false)));
   renderNav(name);
-  if (pick && current.pickers[pick.id]) current.pickers[pick.id](pick.slug, true);
+  if (pick && current.pickers[pick.id]) current.pickers[pick.id].go(pick.slug, { scroll: true, remember: true });
   else window.scrollTo(0, 0);
 }
 let pending = null;
+
+// Back/Forward between addresses of the page on screen (/ncaaf_bowls/ ⇄ /ncaaf_bowls/team/georgia/):
+// switch the pickers back instead of drawing the page again, so searches, sorting and the scroll
+// position stay. `saved` is what the click handler stored in that history entry before leaving it.
+// Returns false when the page on screen isn't that one (then it's drawn as usual).
+function samePage(p, saved) {
+  if (!current.model || p[0] !== current.model || app.dataset.page !== current.model) return false;
+  const pick = p.length >= 3 ? { id: p[1], slug: p[2] } : null;
+  if (pick && !current.pickers[pick.id]) return false;
+  const picks = { ...((saved && saved.picks) || {}) };
+  if (pick) picks[pick.id] = pick.slug;
+  for (const [id, slug] of Object.entries(picks)) current.pickers[id]?.go(slug, { remember: false });
+  if (pick) {
+    const o = current.pickers[pick.id].option();
+    setHead(`${o.label}: ${current.title}`, o.intro || current.summary, location.pathname);
+  } else setHead(current.title, current.summary, `/${current.model}/`);
+  if (saved && typeof saved.scroll === "number") window.scrollTo(0, saved.scroll);
+  return true;
+}
+// what the pickers on screen show, kept in the history entry being left
+const shownPicks = () => Object.fromEntries(Object.entries(current.pickers).map(([id, pk]) => [id, pk.slug()]));
+
+// "On this page": a line of links to the page's sections, under the headline, when it has 4 or more.
+// Each link has the words (and the data-src) of its section's title.
+function jumpBar(views) {
+  if (views.length < 4) return null;
+  return el("nav", { class: "jump-bar", "aria-label": "On this page" },
+    el("span", { class: "jump-label" }, "On this page:"),
+    views.map((v) => el("a", { href: `#v-${v.id}`, ...viewSrc(`${v.id}.title`), onclick: (e) => {
+      // scrolled here rather than by the address bar's #, which would count as leaving the page
+      const to = document.getElementById(`v-${v.id}`);
+      if (!to) return;
+      e.preventDefault();
+      to.setAttribute("tabindex", "-1");
+      to.scrollIntoView({ block: "start" });
+      to.focus({ preventScroll: true });
+    } }, v.title)));
+}
 
 // A top-level view is its own cell with a heading band; a view inside a picker is a
 // section band within the picker's cell.
@@ -250,6 +291,25 @@ function renderView(v, cls, nested) {
 }
 
 // ── table ─────────────────────────────────────────────────────────────────────
+// A won-lost record ("10-2", "9-3-1"; a hyphen or an en dash): sorts by share of games won (a tie
+// counts half), then by wins, instead of as text ("9-1" after "10-0", not before it). At most three
+// digits a part, so a date (2026-11-20) isn't taken for one.
+const RECORD = /^\s*(\d{1,3})\s*[-–]\s*(\d{1,3})(?:\s*[-–]\s*(\d{1,3}))?\s*$/;
+function recordKey(s) {
+  const m = typeof s === "string" && s.match(RECORD);
+  if (!m) return null;
+  const w = +m[1], l = +m[2], t = +(m[3] || 0), g = w + l + t;
+  return [g ? (w + t / 2) / g : 0, w];
+}
+function compareValues(x, y) {
+  if (typeof x === "number" && typeof y === "number") return x - y;
+  const rx = recordKey(x), ry = recordKey(y);
+  if (rx && ry) return rx[0] - ry[0] || rx[1] - ry[1];
+  return String(x).localeCompare(String(y));
+}
+// a column of records sorts best-first on its first click, like a number column
+const recordColumn = (rows, key) => rows.some((r) => recordKey(r[key])) && rows.every((r) => r[key] === null || r[key] === undefined || r[key] === "" || recordKey(r[key]));
+
 function renderTable(v) {
   const state = { q: "", sort: v.sort || null, desc: v.sort_desc !== false, all: !v.page_size };
   const max = {};
@@ -294,7 +354,7 @@ function renderTable(v) {
         if (x === y) return 0;
         if (x === null || x === undefined || x === "") return 1;
         if (y === null || y === undefined || y === "") return -1;
-        return (typeof x === "number" && typeof y === "number" ? x - y : String(x).localeCompare(String(y))) * dir;
+        return compareValues(x, y) * dir;
       });
     }
     return rs;
@@ -311,7 +371,7 @@ function renderTable(v) {
     }, el("button", { type: "button", class: "sort", title: `Sort by ${c.label}`,
       onclick: () => {
         if (state.sort === c.key) state.desc = !state.desc;
-        else { state.sort = c.key; state.desc = numeric(c) && !c.low_first; }
+        else { state.sort = c.key; state.desc = (numeric(c) || recordColumn(v.rows, c.key)) && !c.low_first; }
         draw();
         wrap.querySelector(`th[aria-sort] button`)?.focus();
       } }, c.label))));
@@ -450,8 +510,12 @@ function renderPicker(v, cls) {
     v.options.map((o, i) => el("option", { value: i }, o.label)));
   // `remember`: put this option in the address bar (/<model>/<picker>/<slug>/) so it can be shared.
   // A big page's options carry `src` instead of views (builder.split_options): fetched when shown.
+  let findInput = null;
   async function show(i, remember) {
     select.value = String(i);
+    // the name is in the dropdown now: don't leave old typing in the find box (unless it's being typed
+    // in: a whole name switches as it's typed, and "Georgia" may be on its way to "Georgia Tech")
+    if (findInput && document.activeElement !== findInput) findInput.value = "";
     const o = v.options[i];
     if (o.src && !o.views.length) {
       body.replaceChildren(o.intro ? el("p", { class: "intro", ...viewSrc(`${v.id}.intro`) }, o.intro) : "", el("p", { class: "loading" }, "Loading…"));
@@ -467,23 +531,29 @@ function renderPicker(v, cls) {
     body.replaceChildren(o.intro ? el("p", { class: "intro", ...viewSrc(`${v.id}.intro`) }, o.intro) : "", ...o.views.map((w) => renderView(w, cls, true)));
     if (remember && current.model) {
       const path = `/${current.model}/${v.id}/${o.slug || slugify(o.label)}/`;
-      history.replaceState(null, "", path);
-      setHead(`${o.label}: ${current.title}`, o.intro || null, path);
+      history.replaceState(history.state, "", path);
+      setHead(`${o.label}: ${current.title}`, o.intro || current.summary, path);
     }
   }
   const fromAddress = pending && pending.id === v.id ? v.options.findIndex((o) => (o.slug || slugify(o.label)) === pending.slug) : -1;
   show(fromAddress >= 0 ? fromAddress : v.default || 0);
-  current.pickers[v.id] = (slug, scroll) => {
-    const i = v.options.findIndex((o) => (o.slug || slugify(o.label)) === slug);
-    if (i >= 0) show(i, true);
-    if (scroll) document.getElementById(`v-${v.id}`)?.scrollIntoView({ block: "start" });
+  const slugOf = (o) => o.slug || slugify(o.label);
+  current.pickers[v.id] = {
+    // show the option with this slug; `remember` puts it in the address bar, `scroll` brings the picker into view
+    go(slug, { scroll = false, remember = false } = {}) {
+      const i = v.options.findIndex((o) => slugOf(o) === slug);
+      if (i >= 0 && (remember || String(i) !== select.value)) show(i, remember);
+      if (scroll) document.getElementById(`v-${v.id}`)?.scrollIntoView({ block: "start" });
+    },
+    option: () => v.options[+select.value],
+    slug: () => slugOf(v.options[+select.value]),
   };
   // Long lists also get a type-to-find box (matches anywhere in the option's name).
   let find = null;
   if (v.options.length > 12) {
     const listId = `dl-${v.id}`;
     find = el("span", { class: "pick-find" },
-      el("input", { class: "search", type: "search", list: listId, placeholder: `Find a ${v.label.toLowerCase()}…`,
+      findInput = el("input", { class: "search", type: "search", list: listId, placeholder: `Find a ${v.label.toLowerCase()}…`,
         "aria-label": `Find a ${v.label.toLowerCase()}`,
         // switch only on a whole name (typed, or picked from the list) or on Enter (the first
         // name containing what was typed), not on every letter
@@ -499,18 +569,18 @@ function renderPicker(v, cls) {
           const names = v.options.map((o) => o.label.toLowerCase());
           const i = !q ? -1 : [(n) => n.startsWith(q), (n) => n.split(/[\s(-]+/).some((w) => w.startsWith(q)), (n) => n.includes(q)]
             .map((test) => names.findIndex(test)).find((k) => k >= 0) ?? -1;
-          if (i >= 0) { e.preventDefault(); show(i, true); }
+          if (i >= 0) { e.preventDefault(); e.target.value = ""; show(i, true); }
         } }),
       el("datalist", { id: listId }, v.options.map((o) => el("option", { value: o.label }))));
   }
   return el("section", { class: `ss-cell ${cls} view view-picker`, id: `v-${v.id}` },
-    el("div", { class: "ss-band" }, v.title),
-    v.subtitle ? el("p", { class: "subtitle" }, v.subtitle) : null,
+    el("div", { class: "ss-band", ...viewSrc(`${v.id}.title`) }, v.title),
+    v.subtitle ? el("p", { class: "subtitle", ...viewSrc(`${v.id}.subtitle`) }, v.subtitle) : null,
     el("div", { class: "pick-row" }, el("label", { class: "pick" }, `${v.label}: `, select), find, copyLink(() => {
       const o = v.options[+select.value];
       return `${location.origin}/${current.model}/${v.id}/${o.slug || slugify(o.label)}/`;
     })),
-    v.note ? el("p", { class: "note" }, v.note) : null,
+    v.note ? el("p", { class: "note", ...viewSrc(`${v.id}.note`) }, v.note) : null,
     body);
 }
 
@@ -571,8 +641,11 @@ async function renderDataTable(id) {
       onclick: () => show({ filter: x.filter || "", sort: x.sort || null }) }, x.label))) : null;
   // the name a filter uses, then the header it has on the page and what it means
   const labels = t.labels || {};
+  // how to use the names, with the first Try example's filter (web/pages.py writes the same line)
+  const sample = (t.examples.find((x) => x.filter) || {}).filter;
   const key = Object.keys(t.columns).length ? el("details", { class: "column-key" },
     el("summary", {}, "What the columns mean"),
+    el("p", { class: "key-hint" }, sample ? `Type a filter with these short names, like ${sample}.` : "Type a filter with these short names."),
     el("dl", {}, ...Object.entries(t.columns).flatMap(([k, v]) => [el("dt", {}, k),
       el("dd", {}, labels[k] && labels[k].toLowerCase() !== k ? `${labels[k]}: ${v}` : v)]))) : null;
   fillSlot("table",
@@ -643,14 +716,17 @@ async function renderCharts(slug) {
 }
 
 // ── page head: title, description and canonical address follow the page shown ──
-const HOME_DESCRIPTION = document.querySelector('meta[name="description"]')?.content || "";
+// The home page's description, as written in its own file (web/site/index.html): the one in this
+// document if the visit started at home, else read from the home page when it's fetched (ensurePage).
+const metaDescription = (doc) => doc.querySelector('meta[name="description"]')?.getAttribute("content") || "";
+let homeDescription = app.dataset.page === "" && !app.hasAttribute("data-static") ? metaDescription(document) : "";
 function setHead(title, description, path) {
   const full = title === "Ball Monitor" ? title : `${title} · Ball Monitor`;
   document.title = full;
   const url = `${location.origin}${path}`;
   const set = (sel, attr, value) => { const n = document.querySelector(sel); if (n && value) n.setAttribute(attr, value); };
-  set('meta[name="description"]', "content", description || HOME_DESCRIPTION);
-  set('meta[property="og:description"]', "content", description || HOME_DESCRIPTION);
+  set('meta[name="description"]', "content", description || homeDescription);
+  set('meta[property="og:description"]', "content", description || homeDescription);
   set('meta[property="og:title"]', "content", full);
   set('link[rel="canonical"]', "href", url);
   set('meta[property="og:url"]', "content", url);
@@ -672,7 +748,9 @@ function failed(e) {
 // The text pages (/about/ ...) are plain HTML: <main data-static> is left as it is.
 const parts = (path) => path.split("/").filter(Boolean).map(decodeURIComponent);
 
+let routedPath = null;   // the address last drawn (a change of only the # part draws nothing)
 function route() {
+  routedPath = location.pathname + location.search;
   const p = parts(location.pathname);
   if (p[p.length - 1] === "index.html") p.pop();
   if (app.hasAttribute("data-static")) { renderNav(p.join("/")).catch(() => {}); return; }
@@ -700,25 +778,50 @@ document.addEventListener("click", (e) => {
   const url = new URL(a.href, location.href);
   if (!drawnHere(url)) return;
   e.preventDefault();
-  if (url.pathname + url.search !== location.pathname + location.search) history.pushState(null, "", url.pathname + url.search);
+  if (url.pathname + url.search !== location.pathname + location.search) {
+    // remember where this page was scrolled and what its pickers showed, for Back (samePage)
+    history.replaceState({ ...(history.state || {}), scroll: window.scrollY, picks: shownPicks() }, "");
+    history.pushState(null, "", url.pathname + url.search);
+  }
   focusAfter(route());
+});
+
+// An open Columns menu closes on a click outside it, or on Escape (focus goes back to its button).
+document.addEventListener("click", (e) => {
+  for (const d of document.querySelectorAll("details.col-chooser[open]")) if (!d.contains(e.target)) d.open = false;
+});
+document.addEventListener("keydown", (e) => {
+  if (e.key !== "Escape") return;
+  for (const d of document.querySelectorAll("details.col-chooser[open]")) {
+    d.open = false;
+    if (d.contains(document.activeElement)) d.querySelector("summary")?.focus();
+  }
 });
 
 // After in-site navigation, move keyboard and screen-reader focus to the new page's heading
 // (a picker link focuses the picker instead, which the page scrolls to).
-function focusAfter(done) {
+function focusAfter(done, keepScroll) {
   Promise.resolve(done).then(() => {
-    const target = parts(location.pathname).length >= 3 && !["charts", "tables"].includes(parts(location.pathname)[0])
-      ? app.querySelector(".view-picker select") : app.querySelector("h1");
+    const p = parts(location.pathname);
+    // /<page>/<picker id>/<option>/: that picker's dropdown (a page can have several pickers)
+    const target = p.length >= 3 && !["charts", "tables"].includes(p[0])
+      ? app.querySelector(`#v-${CSS.escape(p[1])} select`) : app.querySelector("h1");
     if (!target) return;
     if (target.tagName === "H1") target.setAttribute("tabindex", "-1");
-    target.focus({ preventScroll: target.tagName !== "H1" ? true : false });
+    target.focus({ preventScroll: keepScroll || target.tagName !== "H1" });
   }).catch(() => {});
 }
 
-window.addEventListener("popstate", () => {
-  if (app.hasAttribute("data-static") || !drawnHere(new URL(location.href))) location.reload();
-  else focusAfter(route());
+window.addEventListener("popstate", (e) => {
+  if (location.pathname + location.search === routedPath) return;   // only the # changed
+  if (app.hasAttribute("data-static") || !drawnHere(new URL(location.href))) { location.reload(); return; }
+  const p = parts(location.pathname);
+  if (p[p.length - 1] === "index.html") p.pop();
+  if (samePage(p, e.state)) { routedPath = location.pathname + location.search; focusAfter(null, true); return; }
+  const saved = e.state;
+  focusAfter(Promise.resolve(route()).then(() => {
+    if (saved && typeof saved.scroll === "number") window.scrollTo(0, saved.scroll);
+  }), !!saved);
 });
 
 // An old #/ address (shared before the site used paths): #/data/<id> is now /tables/<id>/.

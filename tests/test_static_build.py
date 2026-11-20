@@ -1,4 +1,5 @@
 import json
+import os
 import threading
 import urllib.request
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
@@ -211,3 +212,33 @@ def test_off_site_models_leave_no_trace(site):
         assert f"/{m}/" not in sitemap, m
         assert not (site / "static" / "apps" / f"{m}.js").exists(), m
         assert f"apps/{m}.js" not in index["assets"], m
+
+
+def test_rebuild_removes_pages_that_left_the_site(tmp_path):
+    """Rebuilding into an old dist/ drops an archived model's page folder, an old forwarding stub and
+    their page data, but keeps the site's own folders and anything written during this build."""
+    import time
+    old = time.time() - 60
+    for name, html in {"gone": "<html>page</html>", "stub": '<meta name="robots" content="noindex">',
+                       "about": "<html>about</html>"}.items():
+        (tmp_path / name).mkdir()
+        page = tmp_path / name / "index.html"
+        page.write_text(html)
+        os.utime(page, (old, old))
+    (tmp_path / "sitemap.xml").write_text("<loc>https://ballmonitor.com/gone/</loc><loc>https://ballmonitor.com/about/</loc>")
+    previous = builder._sitemap_folders(tmp_path)
+    assert previous == {"gone", "about"}
+    data = tmp_path / "data"
+    (data / "views").mkdir(parents=True)
+    (data / "site.json").write_text(json.dumps({"models": [{"name": "kept"}]}))
+    for f in ("gone.json", "kept.json"):
+        (data / "views" / f).write_text("{}")
+        os.utime(data / "views" / f, (old, old))
+    started = time.time()
+    (tmp_path / "fresh").mkdir()
+    (tmp_path / "fresh" / "index.html").write_text('<meta name="robots" content="noindex">')   # written now
+    (tmp_path / "sitemap.xml").write_text("<loc>https://ballmonitor.com/about/</loc>")
+    builder._remove_stale(tmp_path, data, previous, started, log=lambda *_: None)
+    assert not (tmp_path / "gone").exists() and not (tmp_path / "stub").exists()
+    assert (tmp_path / "about").exists() and (tmp_path / "fresh").exists()
+    assert not (data / "views" / "gone.json").exists() and (data / "views" / "kept.json").exists()

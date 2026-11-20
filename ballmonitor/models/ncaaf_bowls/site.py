@@ -174,7 +174,8 @@ def biggest_games(res, schedule: list[dict], games: list[int], names: dict[str, 
         p_home = tally.home_wins / n
         fav = tally.home if p_home >= 0.5 else tally.away
         rows.append({"game": _game_label(schedule[g], names), "stake": stake,
-                     "fav": f"{names.get(fav, fav)} ({max(p_home, 1 - p_home):.0%})",
+                     "fav": ("Toss-up" if abs(p_home - 0.5) < p.site_tossup_margin
+                             else f"{names.get(fav, fav)} ({max(p_home, 1 - p_home):.0%})"),
                      "teams": ", ".join(name for _, name, _ in moved[:4])})
     if not rows:
         return None
@@ -305,7 +306,7 @@ def _team_option(s, team: dict, bowls: dict, bowl_names: dict, proj: dict[str, i
     if rows:
         out.append(V.table(
             f"bowls_{s.team_id}", "Where they could play",
-            [V.col("bowl", "Game", link="bowl"), V.col("kind", "Type"), V.col("p", "Chance", "pct", bar=True),
+            [V.col("bowl", "Bowl", link="bowl"), V.col("kind", "Type"), V.col("p", "Chance", "pct", bar=True),
              V.col("win", "Win chance there", "pct"), V.col("opp", "Most likely opponent"),
              V.col("opp_p", "Opp. chance", "pct")],
             rows, subtitle="Playoff first-round games are on campus, so they aren't listed here.",
@@ -422,12 +423,12 @@ def page(model) -> dict:
     bowl_rows.sort(key=lambda r: r["_order"])
     bowl_table = V.table(
         "bowls", "Bowl projections",
-        [V.col("bowl", "Game", link="bowl"), V.col("where", "Where"), V.col("matchup", "Most likely matchup"),
+        [V.col("bowl", "Bowl", link="bowl"), V.col("where", "Where"), V.col("matchup", "Most likely matchup"),
          V.col("p", "Chance", "pct"), V.col("teams", "Most likely teams")],
         [{k: v for k, v in r.items() if k != "_order"} for r in bowl_rows],
         subtitle="Playoff games first. Click a game for its own page.", search=True, page_size=20)
     bowl_picker = V.picker(
-        "bowl", "Bowl by bowl", "Game", [o for _, o in sorted(bowl_opts, key=lambda t: t[0])],
+        "bowl", "Bowl by bowl", "Bowl", [o for _, o in sorted(bowl_opts, key=lambda t: t[0])],
         subtitle="The likeliest teams and matchups for one game.")
 
     return V.page(

@@ -84,8 +84,14 @@
 
   // ── storage ──────────────────────────────────────────────────────────────
   const key = (date) => `triple-play:daily:${date}`;
-  const save = () => localStorage.setItem(key(state.puzzle.date), JSON.stringify({ place: state.place, checked: state.checked }));
-  const loadSaved = (date) => { try { return JSON.parse(localStorage.getItem(key(date)) || "null"); } catch { return null; } };
+  // Storage can be blocked (Safari private mode, strict settings): then even reading
+  // `localStorage` throws, and the puzzle still works, just without saving.
+  const store = {
+    get: (k) => { try { return localStorage.getItem(k); } catch { return null; } },
+    set: (k, v) => { try { localStorage.setItem(k, v); } catch { /* not saved */ } },
+  };
+  const save = () => store.set(key(state.puzzle.date), JSON.stringify({ place: state.place, checked: state.checked }));
+  const loadSaved = (date) => { try { return JSON.parse(store.get(key(date)) || "null"); } catch { return null; } };
 
   // ── data ─────────────────────────────────────────────────────────────────
   const todayISO = () => {
@@ -384,9 +390,19 @@
   }
 
   // ── modals ───────────────────────────────────────────────────────────────
+  let modalReturn = null;   // what had focus before the modal opened
   function modal(...content) {
     $("#modal-body").replaceChildren(...content);
+    if ($("#modal").classList.contains("hidden")) modalReturn = document.activeElement;
     $("#modal").classList.remove("hidden");
+    $("#modal-close").focus();
+  }
+  function closeModal(refocus = true) {
+    if ($("#modal").classList.contains("hidden")) return;
+    $("#modal").classList.add("hidden");
+    const back = modalReturn;
+    modalReturn = null;
+    if (refocus && back && back !== document.body && document.contains(back)) back.focus();
   }
   function showHelp() {
     modal(el("h2", {}, "How to play"),
@@ -427,7 +443,7 @@
           if (pz) s = `${pz.cards.filter((c, i) => saved.place[i] === c.region).length}/${Object.values(pz.need || NEED_17).reduce((a, b) => a + b, 0)}`;
         } else if (saved && Object.keys(saved.place || {}).length) s = "in progress";
         const d = new Date(q.date + "T12:00:00");
-        return el("button", { class: saved?.checked ? "done" : "", onclick: () => { $("#modal").classList.add("hidden"); location.hash = q.date; } },
+        return el("button", { class: saved?.checked ? "done" : "", onclick: () => { closeModal(false); location.hash = q.date; } },
           `#${q.number} · ${d.toLocaleDateString(undefined, { month: "short", day: "numeric" })}`,
           el("span", { class: "s" }, `${q.pack === "places" ? "cities & states" : q.level === "big" ? "big Sunday" : q.level} · ${s}`));
       })));
@@ -450,10 +466,11 @@
     $("#btn-clear").addEventListener("click", () => { state.place = {}; state.sel = null; save(); drawBoard(); drawTray(); });
     $("#btn-help").addEventListener("click", showHelp);
     $("#btn-archive").addEventListener("click", showArchive);
-    $("#modal-close").addEventListener("click", () => $("#modal").classList.add("hidden"));
-    $("#modal").addEventListener("click", (e) => { if (e.target.id === "modal") $("#modal").classList.add("hidden"); });
+    $("#modal-close").addEventListener("click", () => closeModal());
+    $("#modal").addEventListener("click", (e) => { if (e.target.id === "modal") closeModal(); });
+    document.addEventListener("keydown", (e) => { if (e.key === "Escape" && !$("#modal").classList.contains("hidden")) { e.preventDefault(); closeModal(); } });
     go();
-    if (!localStorage.getItem("triple-play:seen-help")) { localStorage.setItem("triple-play:seen-help", "1"); showHelp(); }
+    if (!store.get("triple-play:seen-help")) { store.set("triple-play:seen-help", "1"); showHelp(); }
   }
   boot().catch((err) => { document.body.prepend(el("p", { style: "color:#b91c1c;padding:12px" }, `Could not load the puzzle: ${err.message}`)); });
 })();

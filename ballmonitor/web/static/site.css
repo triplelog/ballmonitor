@@ -303,3 +303,25 @@ h1[tabindex="-1"]:focus { outline: none; }
 .app-progress_tracker .pt-next { margin-top: 0.6rem; padding-top: 0.5rem; border-top: 1px solid rgba(0, 0, 0, 0.15); }
 .app-progress_tracker .pt-next p { margin: 0.15rem 0; }
 .app-progress_tracker .pt-next b { font-size: 1.1rem; }
+
+/* ---------- front-end fixes (2026-11-20) ---------- */
+/* Phones: Shioh's one-column shell is `1fr`, whose minimum is the widest content; minmax(0, 1fr)
+   keeps a wide table or chart from widening the page (they scroll inside their own box instead). */
+@media (max-width: 860px) {
+  .ss-shell { grid-template-columns: minmax(0, 1fr); }
+}
+.live-chart img { max-width: 100%; }
+
+/* "On this page": a line of links to a long page's sections, under its headline */
+.jump-bar { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem 0.9rem; margin: 0.6rem 0 0; font-size: 0.9rem; }
+.jump-label { font-family: var(--ss-font-head); font-weight: 700; font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; }
+.jump-bar a { color: var(--ss-ink); font-weight: 600; }
+.view[tabindex="-1"]:focus { outline: none; }
+.view { scroll-margin-top: var(--ss-gap); }
+
+/* data tables: the line above "What the columns mean"'s list */
+.column-key .key-hint { margin: 0.5rem 0 0; font-size: 0.88rem; }
+/* phones: the jump bar stays one line and scrolls sideways */
+@media (max-width: 860px) {
+  .jump-bar { flex-wrap: nowrap; overflow-x: auto; white-space: nowrap; padding-bottom: 0.3rem; scrollbar-width: thin; }
+}

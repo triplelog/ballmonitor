@@ -28,8 +28,9 @@
 			cell.addEventListener('keydown', function (e) {
 				if (e.key === 'Escape' && cell.classList.contains('open')) { set(false); btn.focus(); }
 			});
-			cell.querySelectorAll('.ss-nav a').forEach(function (a) {
-				a.addEventListener('click', function () { set(false); });
+			// delegated, so links a script adds to the menu later (Ball Monitor's #nav-models) close it too
+			cell.addEventListener('click', function (e) {
+				if (e.target.closest && e.target.closest('.ss-nav a')) set(false);
 			});
 		});
 	}
