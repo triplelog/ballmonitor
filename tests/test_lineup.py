@@ -2,6 +2,7 @@
 
 import itertools
 import json
+import math
 import random
 import shutil
 import subprocess
@@ -77,6 +78,50 @@ def test_chain_agrees_with_random_seasons():
     assert total / games == pytest.approx(exact, abs=4 * 3.2 / games ** 0.5)   # ~3.2 runs sd per game
 
 
+def test_run_distribution_hand_calculated():
+    """Home run (chance h) or strikeout: a game's runs are negative binomial, C(R+26, 26) h^R (1-h)^27."""
+    h = 0.1
+    dist = chain.run_distribution(list(range(9)), [r(1 - h, 0, 0, 0, 0, h)] * 9, RULES)
+    for runs in range(8):
+        assert dist[runs] == pytest.approx(math.comb(runs + 26, 26) * h ** runs * (1 - h) ** 27, rel=1e-9)
+    assert chain.run_distribution(list(range(9)), [r(1, 0, 0, 0, 0, 0)] * 9, RULES)[0] == 1
+
+
+def test_run_distribution_adds_up_to_expected_runs():
+    for order in (list(range(9)), [4, 2, 7, 0, 8, 1, 3, 6, 5]):
+        dist = chain.run_distribution(order, UNEVEN, RULES)
+        assert sum(dist) == pytest.approx(1, abs=1e-6)
+        assert sum(i * x for i, x in enumerate(dist)) == pytest.approx(chain.expected_runs(order, UNEVEN, RULES), abs=1e-4)
+        assert dist[-1] < 1e-6                    # the lumped "30 or more" cell is negligible
+
+
+def test_clone_runs():
+    assert chain.clone_runs(UNEVEN[0], RULES) == pytest.approx(chain.expected_runs([0] * 9, [UNEVEN[0]] * 9, RULES))
+    assert chain.clone_runs(UNEVEN[0], RULES) > chain.clone_runs(UNEVEN[7], RULES)   # the better hitter
+
+
+def node_eval(expr: str):
+    """Run chain.js under Node and return JSON.stringify(expr)."""
+    script = ("globalThis.window = globalThis;" + (WEB / "chain.js").read_text(encoding="utf-8") +
+              f"console.log(JSON.stringify({expr}));")
+    return json.loads(subprocess.run(["node", "-e", script], capture_output=True, text=True, check=True).stdout)
+
+
+@pytest.mark.skipif(not shutil.which("node"), reason="node not installed")
+def test_javascript_distribution_and_clones_match_python():
+    rules = json.dumps({"advance": RULES["advance"], "game": RULES["game"]})
+    cases = [(UNEVEN, list(range(9))), (UNEVEN, [4, 2, 7, 0, 8, 1, 3, 6, 5])]
+    for p in (built() if (PUZZLES / "index.json").exists() else [])[::97]:
+        rates = [c["rates"] for c in p["players"]]
+        cases += [(rates, p["best"]["order"]), (rates, p["worst"]["order"])]
+    js = node_eval(f"{json.dumps(cases)}.map(([rates, o]) => [LineupChain.runDistribution(o, rates, {rules}), "
+                   f"LineupChain.expectedRuns(o, rates, {rules}).runs, rates.map((x) => LineupChain.cloneRuns(x, {rules}))])")
+    for (rates, order), (dist, runs, clones) in zip(cases, js):
+        assert dist == pytest.approx(chain.run_distribution(order, rates, RULES), abs=1e-12)
+        assert runs == pytest.approx(chain.expected_runs(order, rates, RULES), abs=1e-9)
+        assert clones == pytest.approx([chain.clone_runs(x, RULES) for x in rates], abs=1e-9)
+
+
 @pytest.mark.skipif(not shutil.which("node"), reason="node not installed")
 def test_javascript_chain_matches_python():
     orders = [list(range(9)), [4, 2, 7, 0, 8, 1, 3, 6, 5]]
@@ -124,3 +169,33 @@ def test_stored_best_order_is_what_the_chain_says():
         rates = [c["rates"] for c in p["players"]]
         assert chain.expected_runs(p["best"]["order"], rates, RULES) == pytest.approx(p["best"]["runs"], abs=1e-6)
         assert chain.expected_runs(p["worst"]["order"], rates, RULES) == pytest.approx(p["worst"]["runs"], abs=1e-6)
+
+
+def test_stored_page_extras():
+    """OPS and nine-clone runs on every card (no real plate appearances); the near-best orders and
+    the hitter-by-slot grid agree with the chain."""
+    puzzles = built()
+    for p in puzzles:
+        top = p["top"]
+        assert top[0] == ["".join(map(str, p["best"]["order"])), p["best"]["runs"]], p["date"]
+        assert [t[1] for t in top] == sorted((t[1] for t in top), reverse=True) and len(top) == generate.TOP_ORDERS
+        assert len({t[0] for t in top}) == len(top)
+        for h, row in enumerate(p["grid"]):
+            assert len(row) == 9 and all(code[slot] == str(h) for slot, (_, code) in enumerate(row))
+            assert max(runs for runs, _ in row) == p["best"]["runs"]
+            assert row[p["best"]["order"].index(h)][0] == p["best"]["runs"]
+        for c in p["players"]:
+            assert "pa" not in c and c["ops"] == pytest.approx(c["obp"] + c["slg"], abs=0.0011)
+    for p in puzzles[::45]:
+        rates = [c["rates"] for c in p["players"]]
+        for c in p["players"]:
+            assert c["clones"] == pytest.approx(chain.clone_runs(c["rates"], RULES), abs=6e-4)
+        for code, runs in p["top"][1::6]:
+            assert chain.expected_runs([int(x) for x in code], rates, RULES) == pytest.approx(runs, abs=1e-6)
+        runs, code = p["grid"][3][5]
+        assert chain.expected_runs([int(x) for x in code], rates, RULES) == pytest.approx(runs, abs=1e-6)
+
+
+def test_puzzle_files_stay_small():
+    for f in PUZZLES.glob("20*.json"):
+        assert f.stat().st_size < 250_000, f.name     # one month, fetched whole by the page

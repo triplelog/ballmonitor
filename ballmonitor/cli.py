@@ -18,6 +18,7 @@ from __future__ import annotations
 import argparse
 import json
 import importlib
+import inspect
 import sys
 from pathlib import Path
 from typing import Any
@@ -76,6 +77,8 @@ def _parser() -> argparse.ArgumentParser:
     p = sub.add_parser("fetch", help="download and rebuild a model's data (models with a fetch.py)")
     p.add_argument("model")
     p.add_argument("--offline", action="store_true", help="rebuild from cached raw downloads only")
+    p.add_argument("--scheduled", action="store_true",
+                   help="the light update the scheduled CI build runs (models whose fetch() takes `scheduled`)")
     p.set_defaults(handler=cmd_fetch)
 
     p = sub.add_parser("serve", help="start the browser UI for editing and running models")
@@ -241,9 +244,17 @@ def cmd_fetch(args: argparse.Namespace) -> int:
     if not (directory / "fetch.py").exists():
         raise ValueError(f"model '{args.model}' has no fetch.py")
     module = importlib.import_module(f"ballmonitor.models.{args.model}.fetch")
-    for line in module.fetch(directory, offline=args.offline):
+    for line in _run_fetch(module, directory, args.offline, args.scheduled):
         print(line)
     return 0
+
+
+def _run_fetch(module, directory: Path, offline: bool, scheduled: bool) -> list[str]:
+    """Call a model's fetch(); `scheduled=True` (update-and-build) only reaches a fetch()
+    that accepts it: that model then does a light update instead of its full rebuild."""
+    if scheduled and "scheduled" in inspect.signature(module.fetch).parameters:
+        return module.fetch(directory, offline=offline, scheduled=True)
+    return module.fetch(directory, offline=offline)
 
 
 def cmd_serve(args: argparse.Namespace) -> int:
@@ -378,7 +389,7 @@ def cmd_update_and_build(args: argparse.Namespace) -> int:
         print(f"-> Updating data for {name}...", flush=True)
         try:
             module = importlib.import_module(f"ballmonitor.models.{name}.fetch")
-            for line in module.fetch(registry.model_dir(name), offline=args.offline):
+            for line in _run_fetch(module, registry.model_dir(name), args.offline, scheduled=True):
                 print(f"   {line}", flush=True)
         except Exception as exc:
             print(f"   warning: {name} fetch failed ({exc}); building with its existing data")

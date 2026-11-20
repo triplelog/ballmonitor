@@ -2,6 +2,8 @@
 
     ballmonitor fetch ncaaf_recruiting            # download what is missing, then rebuild
     ballmonitor fetch ncaaf_recruiting --offline  # rebuild from data/raw/ only
+    ballmonitor fetch ncaaf_recruiting --scheduled  # the light daily CI update of the
+                                                    # 2027 football class (scheduled_update)
 
 Writes (built, documented CSVs; raw JSON is cached in data/raw/, which is gitignored):
     data/recruits/football2027done.csv      2027 football class (in progress: includes
@@ -570,8 +572,342 @@ def build_wbb_espn(model_dir: Path, offline: bool) -> str:
     return f"wbb ESPN classes {WBB_ESPN_YEARS[0]}-{WBB_ESPN_YEARS[-1]}: {len(rows)} recruits -> {out.relative_to(model_dir)}"
 
 
-def fetch(model_dir: Path, offline: bool = False) -> list[str]:
+# ------------------------------------------------------------- scheduled (daily) update
+#
+# `update-and-build` (the daily CI build) calls fetch(..., scheduled=True). CI has no
+# data/raw/ cache, so instead of the full rebuild above it refreshes only the class being
+# signed (football 2027, the one the public page shows as in progress) and its On3
+# consensus team ranks, politely: the player list pages (new recruits, stars), the
+# consensus ranking pages (a program whose commit count moved has a commit, decommit or
+# flip), then team-targets only for new recruits, recruits whose program's count moved,
+# uncommitted recruits when some count rose, and the stalest of the rest, so each offer
+# list is re-read about every `refresh_days` days. Recruits not re-read keep the offers of
+# the newer of the committed CSV and data/raw/scheduled/ (kept between CI runs by
+# actions/cache). Options: config.toml [fetch.scheduled].
+
+SCHEDULED_CLASS = ("ncaaf", 2027)
+SCHEDULED_DEFAULTS = {
+    "max_requests": 600,    # hard cap on On3 requests per run (list + ranking + target pages)
+    "refresh_days": 14,     # every offer list re-read about this often
+    "delay_seconds": 0.5,   # pause before each request (sequential, one at a time)
+    "min_keep": 0.9,        # refuse to write a list shorter than this share of the old one
+    "max_failures": 5,      # consecutive failed target requests before giving up for the run
+}
+
+
+def scheduled_options(model_dir: Path) -> dict:
+    import tomllib
+
+    try:
+        cfg = tomllib.loads((Path(model_dir) / "config.toml").read_text())
+    except (OSError, ValueError):
+        cfg = {}
+    opts = dict(SCHEDULED_DEFAULTS)
+    opts.update((cfg.get("fetch") or {}).get("scheduled") or {})
+    return opts
+
+
+class RequestCap(Exception):
+    """The run used its On3 request budget."""
+
+
+class PoliteGetter:
+    """Sequential GETs with a pause before each request, retries with backoff and a hard
+    cap on the number of requests. `opener(url)` returns parsed JSON or None (404) and
+    raises on other failures; tests pass a fake one."""
+
+    def __init__(self, max_requests: int, delay: float = 0.0, opener=None, tries: int = 3,
+                 sleep=time.sleep):
+        self.max_requests, self.delay, self.tries, self.sleep = max_requests, delay, tries, sleep
+        self.opener = opener or self._open
+        self.used = 0
+
+    @staticmethod
+    def _open(url: str):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=40) as res:
+                return json.loads(res.read())
+        except urllib.error.HTTPError as exc:
+            if exc.code in (400, 404):
+                return None
+            raise
+
+    def __call__(self, url: str):
+        for attempt in range(self.tries):
+            if self.used >= self.max_requests:
+                raise RequestCap(url)
+            self.used += 1
+            if self.delay:
+                self.sleep(self.delay * (2 ** attempt))  # 1x, then 2x, 4x on retries
+            try:
+                return self.opener(url)
+            except Exception:
+                if attempt == self.tries - 1:
+                    raise
+        return None
+
+
+def _key_from_url(url: str) -> int | None:
+    tail = url.rstrip("/").rsplit("/", 1)[-1].rsplit("-", 1)[-1]
+    return int(tail) if tail.isdigit() else None
+
+
+def _read_class_csv(path: Path) -> dict[int, dict]:
+    """On3 key -> {committed, offers} from a built recruit file (football{year}done.csv)."""
+    out: dict[int, dict] = {}
+    if not path.exists():
+        return out
+    with open(path, newline="", encoding="utf-8") as fh:
+        for row in csv.reader(fh):
+            key = _key_from_url(row[0]) if row else None
+            if key is not None and len(row) >= 7:
+                out[key] = {"committed": row[6], "offers": [t for t in row[7:] if t]}
+    return out
+
+
+def _manifest_rows(model_dir: Path) -> list[dict]:
+    path = model_dir / "data" / "recruits" / "manifest.csv"
+    if not path.exists():
+        return []
+    with open(path, newline="") as fh:
+        return list(csv.DictReader(fh))
+
+
+def known_records(csv_rows: dict[int, dict], csv_date: str, state: dict) -> dict[int, dict]:
+    """Each recruit's latest known commit + offers with the day they were read: the
+    committed CSV (as of the manifest's fetched date) unless data/raw/scheduled/ has a read
+    from that day or later."""
+    known = {k: {**v, "date": csv_date} for k, v in csv_rows.items()}
+    for k, rec in (state.get("recruits") or {}).items():
+        k = int(k)
+        if k not in known or rec.get("date", "") >= known[k]["date"]:
+            known[k] = rec
+    return known
+
+
+def select_targets(list_keys: list[int], known: dict[int, dict], changed_teams: set[str],
+                   commits_rose: bool, today: str, refresh_days: int) -> list[tuple[int, str]]:
+    """Recruits whose team-targets to re-read, most needed first, as (key, reason). Keys
+    already read today are skipped (several CI runs a day cost no more than one). The
+    request cap is applied by the caller, so the order matters: new recruits, then
+    recruits committed to a program whose commit count moved, then (if some count rose)
+    uncommitted recruits, then the stalest of the rest up to a daily quota of
+    len(list) / refresh_days (ties in a random-looking order that changes daily)."""
+    import zlib
+
+    picked: list[tuple[int, str]] = []
+    seen: set[int] = set()
+
+    def add(key: int, reason: str) -> None:
+        if key not in seen:
+            seen.add(key)
+            picked.append((key, reason))
+
+    fresh = [k for k in list_keys if k in known and known[k].get("date") != today]
+    for k in list_keys:
+        if k not in known:
+            add(k, "new")
+    for k in fresh:
+        if known[k].get("committed") in changed_teams:
+            add(k, "program's commit count moved")
+    if commits_rose:
+        for k in fresh:
+            if not known[k].get("committed"):
+                add(k, "uncommitted")
+    read_today = sum(1 for k in list_keys if k in known and known[k].get("date") == today)
+    quota = -(-len(list_keys) // max(1, refresh_days)) - read_today - len(picked)
+    rest = sorted((k for k in fresh if k not in seen),
+                  key=lambda k: (known[k].get("date", ""), zlib.crc32(f"{k}:{today}".encode())))
+    for k in rest[:max(0, quota)]:
+        add(k, "rotation")
+    return picked
+
+
+def _save_raw(path: Path, data) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(data))
+
+
+def _write_csv_atomic(path: Path, rows: list, header: list | None = None) -> None:
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    with open(tmp, "w", newline="", encoding="utf-8") as fh:
+        w = csv.writer(fh)
+        if header:
+            w.writerow(header)
+        w.writerows(rows)
+    tmp.replace(path)
+
+
+def _scheduled_rankings(model_dir: Path, sport: str, year: int, get) -> tuple[list | None, str]:
+    """Fresh On3 consensus team ranks for one class -> rows for consensus_team_rankings.csv."""
+    items, page, pages = [], 1, 1
+    while page <= pages:
+        data = get(f"{ON3}/team-ranking/{SPORT_SLUGS[sport]}-{year}/consensus-team-rankings?page={page}")
+        if not data:
+            break
+        pages = (data.get("pagination") or {}).get("pageCount", 0) or 0
+        items.extend(data.get("list", []))
+        _save_raw(model_dir / "data" / "raw" / "on3_team_rankings" / f"{sport}_{year}_p{page}.json", data)
+        page += 1
+    rows = [[sport, year, int(it["overallConsensusRank"]), _on3_team(it.get("organization")),
+             round(float(it.get("appliedTotalConsensusRating") or 0.0), 3), it.get("commits") or 0,
+             it.get("consensusFiveStars") or 0, it.get("consensusFourStars") or 0]
+            for it in items if it.get("overallConsensusRank") is not None]
+    return (rows or None), f"{page - 1} ranking pages"
+
+
+def scheduled_update(model_dir: Path, get=None, today: str | None = None) -> list[str]:
+    """The light daily update of the in-progress football class (see the comment above).
+    Never leaves a half-written or shrunken file: if On3's player list fails, every built
+    file stays as it was."""
     model_dir = Path(model_dir)
+    sport, year = SCHEDULED_CLASS
+    opts = scheduled_options(model_dir)
+    today = today or date.today().isoformat()
+    get = get or PoliteGetter(int(opts["max_requests"]), float(opts["delay_seconds"]))
+    state_path = model_dir / "data" / "raw" / "scheduled" / f"on3_{sport}_{year}.json"
+    state = json.loads(state_path.read_text()) if state_path.exists() else {}
+    out_path = _recruit_path(model_dir, sport, year)
+    manifest = _manifest_rows(model_dir)
+    mrow = next((r for r in manifest if r["sport"] == sport and r["year"] == str(year)), None)
+    csv_date = (mrow or {}).get("fetched", "") or ""
+    lines = [f"{sport} {year}: scheduled update ({'warm' if state else 'cold'} cache, "
+             f"committed file as of {csv_date or 'unknown'})"]
+
+    # 1. the player list (every page, fresh). Any failure: keep everything as it is.
+    players, pages_read, page, pages = [], [], 1, 1
+    try:
+        while page <= pages:
+            data = get(f"{ON3}/players/industry-comparision?sportKey={SPORT_KEYS[sport]}&year={year}&page={page}")
+            if not data or not data.get("list"):
+                raise ValueError(f"empty player list page {page}")
+            pages = (data.get("pagination") or {}).get("pageCount", 1) or 1
+            players.extend(data["list"])
+            pages_read.append(data)
+            page += 1
+    except Exception as exc:  # incl. RequestCap
+        return lines + [f"  On3 player list failed ({exc!r}); kept the committed files"]
+    seen, unique = set(), []
+    for p in players:
+        key = (p.get("person") or {}).get("key")
+        if key and key not in seen:
+            seen.add(key)
+            unique.append(p)
+    players = unique
+    csv_rows = _read_class_csv(out_path)
+    raw = model_dir / "data" / "raw" / "on3"
+    if len(players) < float(opts["min_keep"]) * len(csv_rows):
+        return lines + [f"  On3 lists {len(players)} recruits vs {len(csv_rows)} in the file; kept the committed files"]
+    lines.append(f"  player list: {pages} pages, {len(players)} recruits")
+    for pg, data in enumerate(pages_read, 1):
+        _save_raw(raw / "players" / f"{sport}_{year}_p{pg}.json", data)
+
+    # 2. consensus team ranks: which programs' commit counts moved since the last read.
+    bench = model_dir / "data" / "benchmarks" / "consensus_team_rankings.csv"
+    old_counts = {}
+    if bench.exists():
+        with open(bench, newline="") as fh:
+            old_counts = {r["team"]: int(r["commits"]) for r in csv.DictReader(fh)
+                          if r["sport"] == sport and r["year"] == str(year)}
+    if state.get("team_commits_date", "") >= csv_date and state.get("team_commits"):
+        old_counts = state["team_commits"]
+    changed, rose = set(), False
+    try:
+        rank_rows, msg = _scheduled_rankings(model_dir, sport, year, get)
+    except Exception as exc:
+        rank_rows, msg = None, f"failed ({exc!r})"
+    if rank_rows:
+        new_counts = {r[3]: int(r[5]) for r in rank_rows}
+        for team in set(old_counts) | set(new_counts):
+            if old_counts.get(team, 0) != new_counts.get(team, 0):
+                changed.add(team)
+                rose = rose or new_counts.get(team, 0) > old_counts.get(team, 0)
+        with open(bench, newline="") as fh:
+            reader = csv.reader(fh)
+            header = next(reader)
+            keep = [r for r in reader if not (r[0] == sport and r[1] == str(year))]
+        merged = keep + [[str(x) for x in r] for r in rank_rows]
+        merged.sort(key=lambda r: (r[0], int(r[1]), int(r[2])))
+        _write_csv_atomic(bench, merged, header)
+        state["team_commits"], state["team_commits_date"] = new_counts, today
+        lines.append(f"  consensus ranks: {len(rank_rows)} programs ({msg}), "
+                     f"{len(changed)} with a different commit count")
+    else:
+        lines.append(f"  consensus ranks: none read ({msg}); kept the old ones")
+
+    # 3. team-targets for the recruits most in need, within the request cap.
+    known = known_records(csv_rows, csv_date, state)
+    list_keys = [p["person"]["key"] for p in players]
+    todo = select_targets(list_keys, known, changed, rose, today, int(opts["refresh_days"]))
+    recs = state.setdefault("recruits", {})
+    done, failures, reasons = 0, 0, {}
+    for key, reason in todo:
+        try:
+            first = get(f"{ON3}/player/{key}/team-targets")
+            items = list((first or {}).get("list", []))
+            got = [first]
+            tpages = ((first or {}).get("pagination") or {}).get("pageCount") or 1
+            for pg in range(2, tpages + 1):
+                got.append(get(f"{ON3}/player/{key}/team-targets?page={pg}"))
+                items.extend((got[-1] or {}).get("list", []))
+        except RequestCap:
+            lines.append(f"  request cap ({opts['max_requests']}) reached")
+            break
+        except Exception:
+            failures += 1
+            if failures >= int(opts["max_failures"]):
+                lines.append(f"  {failures} target requests failed in a row; stopped")
+                break
+            continue
+        failures = 0
+        if first is None:
+            continue
+        for pg, data in enumerate(got, 1):  # refresh the full fetch's raw cache too
+            if data is not None:
+                _save_raw(raw / "targets" / f"{key}_{pg}.json", data)
+        committed, _, offers = _commit_and_offers(items)
+        known[key] = recs[str(key)] = {"committed": committed, "offers": offers, "date": today}
+        done += 1
+        reasons[reason] = reasons.get(reason, 0) + 1
+    lines.append(f"  team-targets re-read for {done} of {len(todo)} picked recruits "
+                 f"({', '.join(f'{n} {r}' for r, n in reasons.items()) or 'none'})")
+
+    # 4. rebuild the class file from the list + latest known offers; manifest row.
+    rows = []
+    for p in players:
+        person = p["person"]
+        rec = known.get(person["key"], {"committed": "", "offers": []})
+        rows.append([
+            f"https://www.on3.com/db/{person.get('slug', '')}/", year,
+            str(person.get("name", "")).strip().upper(), person.get("positionAbbreviation") or "",
+            person.get("homeTownName") or "", _stars(p.get("ratings")), rec["committed"], *rec["offers"],
+        ])
+    rows.sort(key=lambda r: (-r[5], r[2]))
+    _write_csv_atomic(out_path, rows)
+    commits = [r for r in rows if r[6]]
+    with_offers = sum(1 for r in commits if r[7:])
+    if mrow is not None:
+        mrow.update(fetched=today, rows=str(len(rows)), commits=str(len(commits)),
+                    offer_coverage=str(round(with_offers / len(commits), 3) if commits else 0.0))
+        _write_csv_atomic(model_dir / "data" / "recruits" / "manifest.csv",
+                          [list(r.values()) for r in manifest], list(manifest[0].keys()))
+    missing = sum(1 for p in players if p["person"]["key"] not in known)
+    lines.append(f"  {len(rows)} recruits, {len(commits)} commits -> {out_path.relative_to(model_dir)}"
+                 + (f" ({missing} new recruits without offers yet)" if missing else ""))
+    state_path.parent.mkdir(parents=True, exist_ok=True)
+    state_path.write_text(json.dumps(state))
+    used = getattr(get, "used", None)
+    if used is not None:
+        lines.append(f"  On3 requests this run: {used}")
+    return lines
+
+
+def fetch(model_dir: Path, offline: bool = False, scheduled: bool = False) -> list[str]:
+    """Full rebuild (`ballmonitor fetch ncaaf_recruiting`), or with scheduled=True (what
+    `update-and-build` passes) the light daily update of the in-progress football class."""
+    model_dir = Path(model_dir)
+    if scheduled and not offline:
+        return scheduled_update(model_dir)
     lines = []
     for sport, year in CLASSES:
         lines.append(build_class(model_dir, sport, year, offline))

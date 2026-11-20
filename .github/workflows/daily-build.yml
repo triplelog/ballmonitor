@@ -59,6 +59,17 @@ jobs:
           python -m pip install --upgrade pip
           pip install -e '.[data,ml]'
 
+      # Scheduled fetches that keep state between runs (data/raw/scheduled/, e.g. which
+      # recruits' On3 offer lists were last read when) get it back here; saved after the job
+      # under a new key each run, restored from the newest one. A miss is fine: the model
+      # starts again from its committed data.
+      - name: Restore scheduled-fetch state
+        uses: actions/cache@v4
+        with:
+          path: ballmonitor/models/*/data/raw/scheduled
+          key: scheduled-fetch-${{ github.run_id }}
+          restore-keys: scheduled-fetch-
+
       - name: Fetch fresh data and build static site
         env:
           MODELS: ${{ inputs.models }}

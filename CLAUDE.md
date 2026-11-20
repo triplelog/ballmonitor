@@ -106,7 +106,11 @@ pytest ballmonitor/models/race_time                # one model
     (inclusive, may wrap the new year) makes the scheduled CI build (`update-and-build`) run
     fetch.py inside that window. Leave it out when fetch.py needs the local `data/raw/` cache
     (CI has none, so it would re-download everything) or the data is historical; those models
-    are refreshed by hand (`ballmonitor fetch <name>`) and their built data committed.
+    are refreshed by hand (`ballmonitor fetch <name>`) and their built data committed. Or give
+    `fetch()` a `scheduled` argument: `update-and-build` passes `scheduled=True` (by hand:
+    `fetch --scheduled`) for a light update that starts from the committed data; state it keeps in
+    `data/raw/scheduled/` survives between CI runs (actions/cache), options in `[fetch.scheduled]`
+    (e.g. `ncaaf_recruiting`).
 - **model.py**
   - Read every tunable number from `self.params` (`p.fit_weight`). **No magic numbers.**
     Physical/definitional constants (meters per mile) are fine in `core/units.py`.
@@ -336,7 +340,9 @@ the draft values, implement `predict`, add examples, flip status to `draft`.
 
 Games: `new27K/` (27K, at `/27k/`), `ballmonitor/games/lineup/` (Lineup daily batting-order puzzle at
 `/lineup/`: nine real player-seasons since 1955, graded by exact expected runs (Markov chain,
-`rules.toml` baserunning rates) against all 9! orders; puzzles prebuilt by `python -m ballmonitor.games.lineup.build`,
+`rules.toml` baserunning rates) against all 9! orders; after playing: live re-scoring and the exact run
+distribution in the browser (`web/chain.js`, tested against chain.py under node), plus the 20 best orders and a
+hitter-by-slot grid prebuilt into each puzzle; puzzles prebuilt by `python -m ballmonitor.games.lineup.build`,
 needs numpy and the Lahman CSVs from Triple Play; see its README), `web/static/game.html` (Pitch Guesser, local only for now) and
 `ballmonitor/games/triple_play/` (Triple Play daily Venn puzzle at `/triple/`: 17 spots and 25 cards, a spare per part; baseball Tue-Sun (Sunday = 25 spots, 33 cards) from the
 Lahman database, cities & states on Monday from Wikipedia lists; puzzles prebuilt by

@@ -38,7 +38,10 @@ def test_fetch_policy_is_well_formed(name):
     if policy is None:
         return
     assert (registry.model_dir(name) / "fetch.py").exists(), "[fetch] needs a fetch.py"
-    assert set(policy) <= {"auto", "season"}, f"unknown [fetch] keys: {set(policy) - {'auto', 'season'}}"
+    # `scheduled`: options of the model's own light scheduled update (read by its fetch.py)
+    known = {"auto", "season", "scheduled"}
+    assert set(policy) <= known, f"unknown [fetch] keys: {set(policy) - known}"
+    assert isinstance(policy.get("scheduled", {}), dict)
     assert isinstance(policy.get("auto", False), bool)
     if "season" in policy:
         season = policy["season"]

@@ -5,13 +5,25 @@ A daily puzzle: nine real hitters, each from one season since 1955, one at every
 they hit like a real team, not an all-star team. Put them in the batting order that scores the most runs.
 One try. The score is exact, not one lucky season: your order's expected runs per game,
 placed between the worst and the best of all 9! = 362,880 orders (100% = the best order).
-After playing you can "play out a season" (random, 162 games) to see how much one season
-swings. Archive of past days; progress kept in the browser (localStorage).
+Each card shows the hitter's batting line and OPS (not his real plate appearances) and how many
+runs a game a team of nine of him would score under the same rules (`clones`). Hitters are
+moved by dragging (mouse: the row; touch: the ⠿ handle; the page scrolls at the edges), by
+tapping two to swap them, or with the arrows (Alt+↑/↓ on a focused row).
+
+After playing (nothing about runs is shown before): the order can still be changed and is
+scored live in the browser (runs a game, vs your order and vs the best, share of orders beaten)
+with the chance of each score in a game as a bar chart; the 20 best orders, each described as
+its change from the best; and a grid (hitter x slot) of the best order with that hitter in that
+slot, as runs a season given up against the best order (★ = his slot in the best order, which is
+always the row's best cell; a box = where you had him). Any of these can be loaded into the
+lineup. "Play out a season" (random, 162 games) shows how much one season swings. Archive of
+past days; progress kept in the browser (localStorage).
 
 - `rules.toml`: the baserunning rates (league averages, the same for every runner) and game
   settings. Every puzzle file carries a copy, so the page and the build always agree.
 - `chain.py`: expected runs for a batting order (below). `all_orders` scores all 362,880
-  orders at once with numpy (~2.5 s).
+  orders at once with numpy (~2.5 s). `run_distribution`: the chance of each total of runs in a
+  game, exact (below). `clone_runs`: nine copies of one hitter.
 - `players.py`: Lahman -> player-seasons since 1955 with at least 450 plate appearances and
   60% of games at one position; rates per plate appearance.
 - `generate.py`: one puzzle per date, seeded by the date. Hitter types (`kinds`: star, walk
@@ -24,8 +36,12 @@ swings. Archive of past days; progress kept in the browser (localStorage).
   hitters, then the closest to a median team. No player twice within 30 days. A day is
   redrawn when the best order beats the worst by less than 0.13 runs a game.
 - `build.py`: writes `web/puzzles/daily/index.json` + one JSON per month (committed).
-- `web/`: the game (vanilla JS). `chain.js` repeats chain.py's arithmetic step for step;
-  `tests/test_lineup.py` runs both on the same lineups (with Node) and checks they match.
+- `web/`: the game (vanilla JS). `chain.js` repeats chain.py's arithmetic step for step
+  (expected runs, run distribution, clones); `tests/test_lineup.py` runs both on the same
+  lineups and on built puzzles (with Node) and checks they match.
+- Each puzzle (about 6 KB) also stores `top` (the 20 best orders as digit strings, with runs)
+  and `grid[hitter][slot]` ([runs, order] of the best order with that hitter in that slot),
+  which need all 9! orders and so are built here, not in the browser.
 
 ## The model
 
@@ -44,7 +60,14 @@ SF; sacrifice bunts are left out). Runners move by fixed league-average rates (`
 
 An inning is followed through all 24 base-out states until three outs (cut at 30 batters;
 the chance left is below one in a million), which gives its expected runs and who leads off the
-next inning. Nine innings make a game; a season is 162 games. No steals, caught stealing,
+next inning. Nine innings make a game; a season is 162 games.
+
+The run distribution is exact in the same way: the inning chain also carries the runs scored so
+far (0-30, the last cell meaning "30 or more"), which gives, for each leadoff slot, the chance
+that the inning scores r runs and slot j leads off the next. Nine innings are then chained over
+(leadoff slot, runs so far), so who leads off each inning depends on how the last one went.
+Innings cut at 30 batters are dropped, so the chances add up to 1 within one in a million and
+their average matches the expected runs. About 7 ms in the browser. No steals, caught stealing,
 errors, wild pitches, bunts, pinch hitters, extra innings or skipped bottom of the 9th.
 
 The baserunning rates are rounded league averages marked "DRAFT, verify" in `rules.toml`.

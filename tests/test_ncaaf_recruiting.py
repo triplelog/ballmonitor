@@ -355,3 +355,151 @@ def test_research_mbb_partial_correlation_helpers():
     assert R._partial(w + 0 * z, w + z, z) > 0.5  # independent information is kept
     pct = R.pct_within([1.0, 2.0, 3.0, 10.0, 20.0], [1, 1, 1, 2, 2])
     assert list(pct) == pytest.approx([1 / 3, 2 / 3, 1.0, 0.5, 1.0])
+
+
+# ------------------------------------------------------------ scheduled (daily CI) update
+
+def _fake_on3(tmp_path, n=14, csv_keys=range(1, 14), counts=None, list_fails=False, cfg=""):
+    """A model dir with a committed 2027 file + manifest + benchmark, and a fake On3 that
+    lists recruits 1..n (2 per page) and answers team-targets. No network."""
+    import csv as _csv
+
+    from ballmonitor.models.ncaaf_recruiting import fetch
+
+    rec = tmp_path / "data" / "recruits"
+    bench = tmp_path / "data" / "benchmarks"
+    rec.mkdir(parents=True)
+    bench.mkdir(parents=True)
+    (tmp_path / "config.toml").write_text(cfg)
+    teams = {k: ("Alabama" if k % 3 == 0 else "" if k % 5 == 0 else "Georgia") for k in range(1, 30)}
+    with open(rec / "football2027done.csv", "w", newline="") as fh:
+        for k in csv_keys:
+            _csv.writer(fh).writerow([f"https://www.on3.com/db/p-{k}/", 2027, f"P{k}", "QB", "X", 3,
+                                      teams[k], "Old U"])
+    with open(rec / "manifest.csv", "w", newline="") as fh:
+        w = _csv.writer(fh)
+        w.writerow(["sport", "year", "file", "source", "status", "fetched", "rows", "commits", "offer_coverage"])
+        w.writerow(["ncaaf", 2027, "football2027done.csv", "On3", "in_progress", "2026-11-01", 13, 10, 1.0])
+        w.writerow(["mbb", 2027, "recruits_mbb_2027.csv", "On3", "in_progress", "2026-11-01", 5, 5, 1.0])
+    old = counts or {"Alabama": 4, "Georgia": 7}
+    with open(bench / "consensus_team_rankings.csv", "w", newline="") as fh:
+        w = _csv.writer(fh)
+        w.writerow(["sport", "year", "rank", "team", "consensus_points", "commits", "five_stars", "four_stars"])
+        w.writerow(["ncaaf", 2026, 1, "Texas", 90.0, 25, 1, 1])
+        for i, (t, c) in enumerate(old.items(), 1):
+            w.writerow(["ncaaf", 2027, i, t, 90.0, c, 0, 0])
+    calls = []
+
+    def opener(url):
+        calls.append(url)
+        if "industry-comparision" in url:
+            if list_fails:
+                raise OSError("On3 down")
+            page = int(url.rsplit("page=", 1)[1])
+            keys = [k for k in range(2 * page - 1, 2 * page + 1) if k <= n]
+            return {"pagination": {"pageCount": -(-n // 2)},
+                    "list": [{"person": {"key": k, "name": f"P{k}", "slug": f"p-{k}"}, "ratings": []} for k in keys]}
+        if "consensus-team-rankings" in url:
+            return {"pagination": {"pageCount": 1}, "list": [
+                {"overallConsensusRank": 1, "organization": {"name": "Alabama"}, "commits": 5},
+                {"overallConsensusRank": 2, "organization": {"name": "Georgia"}, "commits": 7}]}
+        key = int(url.split("/player/")[1].split("/")[0])
+        return {"pagination": {"pageCount": 1}, "list": [
+            {"status": "Committed", "team": {"name": "Alabama"}}, {"status": "Offered", "team": {"name": "New U"}}]}
+
+    return fetch, opener, calls
+
+
+def _class_rows(tmp_path):
+    import csv as _csv
+
+    with open(tmp_path / "data" / "recruits" / "football2027done.csv", newline="") as fh:
+        return {int(r[0].rstrip("/").rsplit("-", 1)[1]): r for r in _csv.reader(fh)}
+
+
+def test_scheduled_selection_order_quota_and_today():
+    from ballmonitor.models.ncaaf_recruiting.fetch import select_targets
+
+    known = {1: {"committed": "A", "date": "2026-11-01"}, 2: {"committed": "", "date": "2026-11-01"},
+             3: {"committed": "B", "date": "2026-11-10"}, 4: {"committed": "B", "date": "2026-11-05"},
+             5: {"committed": "A", "date": "2026-11-20"}, **{k: {"committed": "C", "date": "2026-11-15"}
+                                                              for k in range(6, 15)}}
+    keys = list(range(1, 16))  # 15 is new
+    picked = select_targets(keys, known, {"A"}, True, "2026-11-20", refresh_days=5)
+    assert picked[:3] == [(15, "new"), (1, "program's commit count moved"), (2, "uncommitted")]
+    assert 5 not in [k for k, _ in picked]  # read today already (A changed, still skipped)
+    # quota ceil(15/5) = 3, minus 1 read today, minus 3 picked: no rotation today
+    assert [r for _, r in picked].count("rotation") == 0
+    picked = select_targets(keys, known, set(), False, "2026-11-20", refresh_days=1)
+    assert picked[0] == (15, "new")
+    rotation = [k for k, r in picked if r == "rotation"]
+    # stalest first (1 and 2 tie on 11-01, then 4, then 3), everyone but 5 (read today)
+    assert set(rotation[:2]) == {1, 2} and rotation[2:4] == [4, 3] and len(rotation) == 13
+
+
+def test_scheduled_update_cold_cache_cap_and_second_run(tmp_path):
+    import json
+
+    fetch, opener, calls = _fake_on3(tmp_path)
+    # 7 list pages + 1 ranking page + 4 target reads
+    get = fetch.PoliteGetter(12, opener=opener)
+    lines = fetch.scheduled_update(tmp_path, get=get, today="2026-11-20")
+    assert get.used == 12 and len(calls) == 12, lines
+    targets = [int(u.split("/player/")[1].split("/")[0]) for u in calls if "/player/" in u]
+    # new recruit first, then recruits committed to Alabama (its count moved 4 -> 5)
+    assert targets == [14, 3, 6, 9]
+    rows = _class_rows(tmp_path)
+    assert len(rows) == 14
+    assert rows[14][6:] == ["Alabama", "New U"] and rows[3][6:] == ["Alabama", "New U"]
+    assert rows[1][6:] == ["Georgia", "Old U"] and rows[12][6:] == ["Alabama", "Old U"]  # kept from the CSV
+    manifest = (tmp_path / "data" / "recruits" / "manifest.csv").read_text().splitlines()
+    assert manifest[1].startswith("ncaaf,2027,football2027done.csv,On3,in_progress,2026-11-20,14,")
+    assert manifest[2].endswith("2026-11-01,5,5,1.0")  # other rows untouched
+    bench = (tmp_path / "data" / "benchmarks" / "consensus_team_rankings.csv").read_text()
+    assert "ncaaf,2027,1,Alabama,0.0,5,0,0" in bench and "ncaaf,2026,1,Texas" in bench
+    state = json.loads((tmp_path / "data" / "raw" / "scheduled" / "on3_ncaaf_2027.json").read_text())
+    assert set(state["recruits"]) == {"14", "3", "6", "9"} and state["team_commits"]["Alabama"] == 5
+
+    # warm cache, same day: counts match the state now, recruits read today are skipped,
+    # and the daily quota (ceil(14 / refresh_days 14) = 1) is used up: only the list + ranking pages.
+    calls.clear()
+    fetch.scheduled_update(tmp_path, get=fetch.PoliteGetter(600, opener=opener), today="2026-11-20")
+    assert not [u for u in calls if "/player/" in u]
+    # next day: rotation picks the stalest 1 (from the CSV), never the ones read yesterday
+    calls.clear()
+    fetch.scheduled_update(tmp_path, get=fetch.PoliteGetter(600, opener=opener), today="2026-11-21")
+    targets = [int(u.split("/player/")[1].split("/")[0]) for u in calls if "/player/" in u]
+    assert len(targets) == 1 and not set(targets) & {14, 3, 6, 9}
+
+
+def test_scheduled_update_keeps_files_when_on3_fails(tmp_path):
+    fetch, opener, _ = _fake_on3(tmp_path, list_fails=True)
+    path = tmp_path / "data" / "recruits" / "football2027done.csv"
+    before = path.read_text(), (tmp_path / "data" / "recruits" / "manifest.csv").read_text()
+    lines = fetch.scheduled_update(tmp_path, get=fetch.PoliteGetter(600, opener=opener, tries=2),
+                                   today="2026-11-20")
+    assert "kept the committed files" in lines[-1]
+    assert (path.read_text(), (tmp_path / "data" / "recruits" / "manifest.csv").read_text()) == before
+    # a list much shorter than the file (On3 half-answering) is refused too
+    fetch, opener, _ = _fake_on3(tmp_path / "short", n=6, csv_keys=range(1, 14))
+    lines = fetch.scheduled_update(tmp_path / "short", get=fetch.PoliteGetter(600, opener=opener),
+                                   today="2026-11-20")
+    assert "kept the committed files" in lines[-1]
+
+
+def test_update_and_build_passes_scheduled_only_to_fetches_that_take_it():
+    from ballmonitor import cli
+
+    class Full:
+        @staticmethod
+        def fetch(d, offline=False):
+            return ["full"]
+
+    class Light:
+        @staticmethod
+        def fetch(d, offline=False, scheduled=False):
+            return ["light" if scheduled else "full"]
+
+    assert cli._run_fetch(Full, Path("."), False, True) == ["full"]
+    assert cli._run_fetch(Light, Path("."), False, True) == ["light"]
+    assert cli._run_fetch(Light, Path("."), False, False) == ["full"]

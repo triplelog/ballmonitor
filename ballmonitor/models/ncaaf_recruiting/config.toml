@@ -15,6 +15,20 @@ assumptions = [
   "Classes marked in progress (2027) contain only the commitments known when the data was fetched.",
 ]
 
+# The daily CI build (update-and-build) refreshes the in-progress football class while it is
+# being signed. It runs fetch.py's light scheduled update, not the full rebuild (see MODEL.md, Data).
+[fetch]
+auto = true
+season = ["08-15", "01-25"]
+
+# Options of that scheduled update (fetch.py scheduled_update; defaults SCHEDULED_DEFAULTS).
+[fetch.scheduled]
+max_requests = 600   # hard cap on On3 requests per run: ~56 list + ~5 ranking pages + team-targets
+refresh_days = 14    # each recruit's offer list is re-read about this often (1/14 of the class a day; owner 2026-11-20: offers change little after a commitment and matter little before)
+delay_seconds = 0.5  # pause before each request; requests go one at a time (doubles on each retry)
+min_keep = 0.9       # if On3 lists fewer recruits than this share of the file, keep the old file
+max_failures = 5     # stop reading offer lists after this many failed requests in a row
+
 # Website only: basketball recruiting is kept for research (CLI, data, studies) but not shown.
 [web]
 hidden_examples = ["mbb_2025", "mbb_2026", "wbb_2026"]

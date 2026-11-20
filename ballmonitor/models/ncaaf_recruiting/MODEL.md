@@ -19,6 +19,23 @@ Rebuild / extend with `ballmonitor fetch ncaaf_recruiting` (`fetch.py`; raw JSON
 `data/raw/`, gitignored). `data/recruits/manifest.csv` lists every file with its source,
 status (`complete` / `in_progress`), row and commit counts and offer coverage.
 
+**Daily update (CI).** From Aug 15 to Jan 25 (`[fetch]` in config.toml) the scheduled build
+(`update-and-build`, or by hand `ballmonitor fetch ncaaf_recruiting --scheduled`) runs a light
+update of the class being signed (football 2027) instead of the full rebuild above: it re-reads
+On3's player list (~57 pages: new recruits, stars) and the class's consensus team ranks (~5
+pages; rewrites only the 2027 football rows of `consensus_team_rankings.csv`), then team-targets
+(offer lists) for new recruits, recruits committed to a program whose consensus commit count
+moved, uncommitted recruits when some count rose, and the stalest of the rest, so each offer
+list is re-read about every two weeks (`refresh_days` = 14). Requests go one at a time with a pause, retries
+back off, and a run stops at `max_requests` (600; a normal day uses ~450-550). Recruits not
+re-read keep the newer of their committed-file row and the state in `data/raw/scheduled/`,
+which CI keeps between runs with actions/cache; with no state (cold cache) the committed
+`football2027done.csv` supplies every offer list, so a cold run costs no more than a warm one.
+If the player list fails or comes back shorter than `min_keep` of the file, nothing is
+written. The CI output goes into the deployed site only (nothing is committed back); the
+other classes, basketball, barttorvik and the ESPN games (completed seasons; the page doesn't
+use them) are refreshed only by the full fetch. Options: `[fetch.scheduled]` in config.toml.
+
 | sport | files | years | notes |
 |---|---|---|---|
 | ncaaf | `data/recruits/football{year}done.csv` | 2012–2027 | 2012–21 legacy Rivals/On3 profile scrapes (~3,500 recruits, 65–86% of commits list competing offers); 2022–27 On3 recruit-database API (On3-ranked recruits only, 83–96%). **2027 is in progress** (fetched 2026-10-26; uncommitted recruits have an empty school). |
@@ -362,6 +379,10 @@ python evaluate.py --start 2012 --end 2017
 - Rivals team rankings (`data/teams/football{year}.csv`, 2012–2022).
 
 ## Changelog
+
+- 0.7.0 (later addition, no default changes) — Daily CI update of the 2027 football class:
+  `fetch.py scheduled_update` (see Data), options `[fetch.scheduled]`; `[fetch]` auto, Aug 15 –
+  Jan 25. The full `ballmonitor fetch ncaaf_recruiting` is unchanged.
 
 - 0.7.0 — The projected 4-season SRS now also uses the program's own strength before the
   class: formula `projected_srs` gains `+ proj_prior_weight * prior_srs` (new params

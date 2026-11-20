@@ -146,6 +146,80 @@ def expected_runs(order: list[int], rates: list[list[float]], rules: dict | None
     return total
 
 
+def clone_runs(rates: list[float], rules: dict | None = None) -> float:
+    """Expected runs per game for a team of nine copies of one hitter."""
+    return expected_runs([0] * 9, [rates], rules)
+
+
+def batter_moves(rates: list[float], trans) -> list[list[tuple[float, int, int]]]:
+    """One hitter's moves per state: [(probability, new state or -1 = inning over, runs)], same pairs merged."""
+    out = []
+    for outs in range(3):
+        for bases in range(8):
+            acc: dict[tuple[int, int], float] = {}
+            for o, p in zip(OUTCOMES, rates):
+                for q, no, nb, runs in trans[(outs, bases, o)]:
+                    k = (-1 if no >= 3 else no * 8 + nb, runs)
+                    acc[k] = acc.get(k, 0.0) + p * q
+            out.append([(pq, ns, runs) for (ns, runs), pq in acc.items() if pq > 0])
+    return out
+
+
+def run_distribution(order: list[int], rates: list[list[float]], rules: dict | None = None,
+                     max_runs: int = 30) -> list[float]:
+    """Chance of each total of runs in a game (index = runs; the last cell holds max_runs or more).
+
+    Exact, like expected_runs: an inning led off by slot s is followed state by state with the
+    runs scored so far as part of the state, giving P(the inning scores r and slot j leads off
+    the next). Nine innings are then chained over (leadoff slot, runs so far). Innings still
+    going after max_batters_per_inning batters are dropped (under one in a million), so the
+    chances add up to just under 1. web/chain.js `runDistribution` does the same steps."""
+    rules = rules or load_rules()
+    trans = transitions(rules["advance"])
+    moves = [batter_moves(r, trans) for r in rates]
+    innings, depth = rules["game"]["innings"], rules["game"]["max_batters_per_inning"]
+    n, top = len(order), max_runs
+    inning = []                    # per leadoff slot: P[j][r] = next leadoff j, r runs this inning
+    for s in range(n):
+        v = [[0.0] * (top + 1) for _ in range(N_STATES)]
+        v[0][0] = 1.0
+        P = [[0.0] * (top + 1) for _ in range(n)]
+        for k in range(depth):
+            mv = moves[order[(s + k) % n]]
+            j = (s + k + 1) % n
+            w = [[0.0] * (top + 1) for _ in range(N_STATES)]
+            for i in range(N_STATES):
+                row = v[i]
+                for r in range(top + 1):
+                    a = row[r]
+                    if a == 0.0:
+                        continue
+                    for pq, ns, runs in mv[i]:
+                        rr = min(r + runs, top)
+                        if ns < 0:
+                            P[j][rr] += a * pq
+                        else:
+                            w[ns][rr] += a * pq
+            v = w
+        inning.append(P)
+    lead = [[0.0] * (top + 1) for _ in range(n)]   # lead[s][r]: slot s leads off, r runs so far
+    lead[0][0] = 1.0
+    for _ in range(innings):
+        new = [[0.0] * (top + 1) for _ in range(n)]
+        for s in range(n):
+            for r in range(top + 1):
+                a = lead[s][r]
+                if a == 0.0:
+                    continue
+                for j in range(n):
+                    pj = inning[s][j]
+                    for x in range(top + 1):
+                        if pj[x]:
+                            new[j][min(r + x, top)] += a * pj[x]
+        lead = new
+    return [sum(lead[s][r] for s in range(n)) for r in range(top + 1)]
+
+
 def _lehmer_rank(seqs):
     """Index of each permutation (rows of `seqs`) in itertools.permutations(range(n)) order."""
     import numpy as np

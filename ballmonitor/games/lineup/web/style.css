@@ -26,7 +26,12 @@ main { max-width: 1180px; margin: 0 auto; padding: 14px 18px 40px; display: grid
 .hint { color: var(--muted); font-weight: 400; }
 
 .lineup { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
-.slot { display: grid; grid-template-columns: 34px 1fr auto; align-items: center; gap: 10px; padding: 8px 10px; border: 1.5px solid var(--border); border-radius: 8px; cursor: pointer; user-select: none; }
+.slot { display: grid; grid-template-columns: 30px 18px 1fr auto; align-items: center; gap: 8px; padding: 8px 10px; border: 1.5px solid var(--border); border-radius: 8px; cursor: pointer; user-select: none; -webkit-user-select: none; background: var(--surface); position: relative; transition: transform 0.15s ease; }
+.grip { color: #94a3b8; font-size: 20px; line-height: 1; text-align: center; cursor: grab; touch-action: none; padding: 10px 0; margin: -10px 0; }
+.lineup.drag-on .slot { cursor: grabbing; }
+.slot.dragging { transition: none; z-index: 5; border-color: var(--accent); box-shadow: 0 8px 22px rgba(15, 23, 42, 0.18); }
+.who .stats .clones { color: #0f766e; font-weight: 600; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .slot:hover { border-color: #cbd5e1; }
 .slot.sel { border-color: var(--accent); background: var(--sel); }
 .num { font-size: 22px; font-weight: 800; color: var(--muted); text-align: center; }
@@ -52,6 +57,34 @@ table.best tr.same td { background: var(--ok-bg); }
 .result-actions { display: flex; gap: 8px; margin-top: 14px; justify-content: flex-end; }
 .hidden { display: none !important; }
 
+.live { margin-top: 12px; padding-top: 12px; border-top: 1px solid var(--border); font-size: 14px; }
+.live-runs strong { font-size: 18px; }
+.live-vs { display: flex; flex-wrap: wrap; gap: 4px 14px; margin-top: 4px; font-variant-numeric: tabular-nums; }
+.live-vs .up { color: var(--ok); }
+.live-vs .down { color: #b91c1c; }
+.dist { margin: 12px 0 0; }
+.dist figcaption { font-size: 13px; font-weight: 600; margin-bottom: 6px; }
+.dist .bars { display: grid; grid-template-columns: repeat(16, 1fr); gap: 3px; height: 110px; align-items: end; padding-bottom: 18px; }
+.dist .bar { position: relative; height: 100%; display: flex; align-items: flex-end; }
+.dist .fill { display: block; width: 100%; background: var(--accent); border-radius: 3px 3px 0 0; min-height: 1px; }
+.dist .x { position: absolute; bottom: -17px; left: 0; right: 0; text-align: center; font-size: 11px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.dist .hint { font-size: 12px; margin: 6px 0 0; }
+
+details.more { margin-top: 16px; border-top: 1px solid var(--border); padding-top: 10px; }
+details.more summary { cursor: pointer; font-weight: 700; font-size: 15px; }
+details.more .hint { font-size: 12px; }
+.scroll { overflow-x: auto; }
+table.top td:nth-child(2) { font-size: 13px; }
+table.top th:nth-child(3), table.top th:nth-child(4) { text-align: right; }
+button.mini { padding: 2px 8px; font-size: 12px; }
+table.grid { border-collapse: separate; border-spacing: 2px; font-size: 12px; font-variant-numeric: tabular-nums; width: 100%; }
+table.grid th { font-size: 11px; color: var(--muted); font-weight: 600; text-align: left; padding: 2px 4px; white-space: nowrap; }
+table.grid th.n { text-align: center; }
+table.grid td.cell { text-align: center; padding: 5px 2px; border-radius: 4px; cursor: pointer; background: rgba(185, 28, 28, var(--heat, 0.08)); min-width: 26px; }
+table.grid td.cell.top { background: var(--ok-bg); color: var(--ok); font-weight: 800; }
+table.grid td.cell.yours { outline: 2px solid var(--text); outline-offset: -2px; }
+table.grid td.cell:hover { outline: 2px solid var(--accent); outline-offset: -2px; }
+
 .modal { position: fixed; inset: 0; background: rgba(15, 23, 42, 0.45); display: flex; align-items: center; justify-content: center; z-index: 60; padding: 16px; }
 .modal-card { background: var(--surface); border-radius: 12px; max-width: 620px; width: 100%; max-height: 85vh; overflow: auto; padding: 20px 22px; position: relative; }
 .modal-close { position: absolute; top: 8px; right: 10px; border: none; font-size: 24px; background: none; }
@@ -67,4 +100,7 @@ table.best tr.same td { background: var(--ok-bg); }
   .result { position: static; max-height: none; }
   .top-actions { margin-left: 0; }
   .who .stats { font-size: 12px; gap: 2px 9px; }
+  .slot { grid-template-columns: 24px 18px 1fr auto; gap: 6px; padding: 7px 8px; }
+  .num { font-size: 18px; }
+  .grip { font-size: 22px; }
 }

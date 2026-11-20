@@ -21,14 +21,17 @@
     <div class="meta" id="meta"></div>
     <section class="card-wrap">
       <div class="lineup-head">
-        <span>Batting order</span>
-        <span class="hint" id="lineup-hint">Tap a hitter, then another to swap them — or use the arrows.</span>
+        <span id="lineup-title">Batting order</span>
+        <span class="hint" id="lineup-hint">Drag a hitter to a new spot, tap two hitters to swap them, or use the arrows.</span>
       </div>
       <ol id="lineup" class="lineup"></ol>
       <div class="actions">
         <button id="btn-reset" class="ghost">Reset</button>
+        <button id="btn-best" class="ghost hidden">Best order</button>
         <button id="btn-play" class="primary">Play ball (one try)</button>
       </div>
+      <div id="live" class="live hidden"></div>
+      <div id="announce" class="sr-only" aria-live="assertive"></div>
     </section>
     <section id="result" class="result hidden"></section>
   </main>

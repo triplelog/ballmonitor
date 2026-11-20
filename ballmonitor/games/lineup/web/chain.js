@@ -1,5 +1,6 @@
 // Lineup: expected runs for a batting order, the same steps as chain.py `expected_runs`
-// (a Markov chain over bases and outs), plus a random season for the "play it out" view.
+// (a Markov chain over bases and outs), the game's run distribution (`run_distribution`),
+// plus a random season for the "play it out" view.
 // Rates per plate appearance, in OUTCOMES order; rules come from the puzzle file.
 (function () {
   "use strict";
@@ -126,6 +127,79 @@
     return { runs: total, pa };
   }
 
+  // A team of nine copies of one hitter: expected runs per game (chain.py `clone_runs`).
+  const cloneRuns = (rates, rules) => expectedRuns(new Array(9).fill(0), [rates], rules).runs;
+
+  // One hitter's moves per state: [[probability, new state or -1 = inning over, runs]], same pairs merged.
+  function batterMoves(rates, trans) {
+    const out = [];
+    for (let outs = 0; outs < 3; outs++) {
+      for (let bases = 0; bases < 8; bases++) {
+        const acc = new Map();
+        OUTCOMES.forEach((o, i) => {
+          for (const [q, no, nb, runs] of trans[`${outs},${bases},${o}`]) {
+            const k = `${no >= 3 ? -1 : no * 8 + nb},${runs}`;
+            acc.set(k, (acc.get(k) || 0) + rates[i] * q);
+          }
+        });
+        const list = [];
+        for (const [k, pq] of acc) { const [ns, runs] = k.split(",").map(Number); if (pq > 0) list.push([pq, ns, runs]); }
+        out.push(list);
+      }
+    }
+    return out;
+  }
+
+  // Chance of each total of runs in a game (index = runs; the last cell holds maxRuns or more),
+  // exactly as chain.py `run_distribution`: each inning followed with the runs so far as part of
+  // the state -> P(inning scores r, slot j leads off next); nine innings chained over (leadoff, runs).
+  function runDistribution(order, ratesList, rules, maxRuns = 30) {
+    const trans = transitions(rules.advance);
+    const moves = ratesList.map((r) => batterMoves(r, trans));
+    const n = order.length, depth = rules.game.max_batters_per_inning, top = maxRuns;
+    const grid = (rows) => Array.from({ length: rows }, () => new Array(top + 1).fill(0));
+    const inning = [];
+    for (let s = 0; s < n; s++) {
+      let v = grid(N); v[0][0] = 1;
+      const P = grid(n);
+      for (let k = 0; k < depth; k++) {
+        const mv = moves[order[(s + k) % n]], j = (s + k + 1) % n;
+        const w = grid(N);
+        for (let i = 0; i < N; i++) {
+          const row = v[i];
+          for (let r = 0; r <= top; r++) {
+            const a = row[r];
+            if (a === 0) continue;
+            for (const [pq, ns, runs] of mv[i]) {
+              const rr = Math.min(r + runs, top);
+              if (ns < 0) P[j][rr] += a * pq; else w[ns][rr] += a * pq;
+            }
+          }
+        }
+        v = w;
+      }
+      inning.push(P);
+    }
+    let lead = grid(n); lead[0][0] = 1;
+    for (let g = 0; g < rules.game.innings; g++) {
+      const next = grid(n);
+      for (let s = 0; s < n; s++) {
+        for (let r = 0; r <= top; r++) {
+          const a = lead[s][r];
+          if (a === 0) continue;
+          for (let j = 0; j < n; j++) {
+            const pj = inning[s][j];
+            for (let x = 0; x <= top; x++) if (pj[x]) next[j][Math.min(r + x, top)] += a * pj[x];
+          }
+        }
+      }
+      lead = next;
+    }
+    const out = new Array(top + 1).fill(0);
+    for (let r = 0; r <= top; r++) for (let s = 0; s < n; s++) out[r] += lead[s][r];
+    return out;
+  }
+
   // A random season (seeded): runs and plate appearances per slot. For show: one season is mostly luck.
   function rng(seed) {
     let a = seed >>> 0;
@@ -156,5 +230,5 @@
     return { runs, pa, byGame };
   }
 
-  window.LineupChain = { OUTCOMES, transitions, expectedRuns, simulateSeason };
+  window.LineupChain = { OUTCOMES, transitions, expectedRuns, cloneRuns, runDistribution, simulateSeason };
 })();

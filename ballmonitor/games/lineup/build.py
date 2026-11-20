@@ -34,6 +34,17 @@ def write(puzzles: list[dict], source: str) -> None:
     (OUT / "index.json").write_text(json.dumps(index, separators=(",", ":")), encoding="utf-8")
 
 
+def upgrade(p: dict, rules: dict) -> dict:
+    """A kept puzzle from an older build, with the fields the page now uses added (same nine hitters)."""
+    if "grid" in p:
+        return p
+    for c in p["players"]:
+        c.pop("pa", None)
+        c.setdefault("ops", round(c["obp"] + c["slg"], 3))
+        c["clones"] = round(chain.clone_runs(c["rates"], rules), 3)
+    return {**p, **generate.score(p["players"], rules)}
+
+
 def main(argv=None) -> int:
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("--start", type=dt.date.fromisoformat, default=FIRST_DAY)
@@ -45,13 +56,14 @@ def main(argv=None) -> int:
 
     fame = {pid: p["fame"] for pid, p in facts.load().items()}
     seasons = players.load()
-    puzzles = generate.generate(seasons, fame, args.start, args.end, chain.load_rules())
+    rules = chain.load_rules()
+    puzzles = generate.generate(seasons, fame, args.start, args.end, rules)
     if args.keep_through:
         old = {}
         for f in OUT.glob("????-??.json"):
             old.update({p["date"]: p for p in json.loads(f.read_text(encoding="utf-8"))})
         keep = args.keep_through.isoformat()
-        puzzles = [old[p["date"]] if p["date"] <= keep and p["date"] in old else p for p in puzzles]
+        puzzles = [upgrade(old[p["date"]], rules) if p["date"] <= keep and p["date"] in old else p for p in puzzles]
     last = max(s["year"] for s in seasons)
     write(puzzles, f"Lahman Baseball Database (seasons {players.MIN_YEAR}-{last})")
     gaps = sorted(p["best"]["runs"] - p["worst"]["runs"] for p in puzzles)

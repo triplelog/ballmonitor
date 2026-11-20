@@ -34,15 +34,24 @@ def test_engine_runs_and_aggregates_with_opponents_and_win_odds():
             assert 0.0 <= opp_wr <= 1.0
 
 def test_engine_with_win_out_scenario():
+    """Winning out fixes a team's record: no losses beyond the ones already taken. Uses a team that
+    still has games in the committed schedule (a fixed team, e.g. Michigan, goes stale once its
+    season is over)."""
     config = SimConfig(simulations=30, random_seed=42)
     engine = BowlEngine(config=config)
-    scenario = Scenario(wins_out={"michigan"})
-    results = engine.run(scenario=scenario)
+    if not engine.schedule:
+        pytest.skip("no games left in the committed schedule")
+    team = engine.schedule[0].home
+    base = engine.run().team_summaries[team]
+    won_out = BowlEngine(config=config).run(scenario=Scenario(wins_out={team})).team_summaries[team]
+    assert len(won_out.record_dist) == 1   # one possible record
+    (wins, losses), = won_out.record_dist
+    assert all(losses <= l for _, l in base.record_dist)   # never more losses than any simulation
+    assert wins >= max(w for w, _ in base.record_dist)
+    assert won_out.record_mean_wins == wins
+    if wins >= 6:
+        assert won_out.p_eligible == 1.0
 
-    michigan = results.team_summaries["michigan"]
-    # With wins out, Michigan must be bowl eligible
-    assert michigan.p_eligible == 1.0
-    assert michigan.record_mean_wins >= 8.0
 
 def test_conference_pecking_order():
     config = SimConfig(simulations=50, random_seed=42)

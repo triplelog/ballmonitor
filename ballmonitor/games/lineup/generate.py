@@ -12,8 +12,9 @@ For each date (seeded by the date, so a rebuild reproduces it):
    one; never the same player twice in a day);
 3. all 9! orders are scored exactly (chain.all_orders); if the best order beats the worst by
    less than MIN_GAP runs per game the day is redrawn (up to TRIES times, keeping the widest);
-4. the puzzle stores the nine hitters and their rates, the rules, the best and worst orders
-   and the spread of all orders (percentiles), so the page can grade any order without a server.
+4. the puzzle stores the nine hitters and their rates, the rules, the best and worst orders,
+   the spread of all orders (percentiles), the TOP_ORDERS best orders and the best order with
+   each hitter in each slot (`grid`), so the page can grade any order without a server.
 """
 
 from __future__ import annotations
@@ -30,6 +31,7 @@ REPEAT_DAYS = 30
 MIN_GAP = 0.13          # runs per game between the best and worst order (about 21 a season)
 TRIES = 3
 DEALS = 300             # deals tried per draw (cheap); the most realistic, most varied one is scored
+TOP_ORDERS = 20         # near-best orders stored for the page (shown after playing)
 ROUND = 5               # decimals kept for the rates (the page and the build use the same numbers)
 POS_ORDER = ["C", "1B", "2B", "3B", "SS", "LF", "CF", "RF", "DH"]
 TARGET = ["star", "eye", "slugger", "slugger", "contact", "singles", "weak", "weak", "any"]
@@ -107,22 +109,46 @@ def off_median(nine: list[dict]) -> float:
     return sum(abs(sum(s[k] for s in nine) / len(nine) - m) for k, m in MEDIAN_TEAM.items())
 
 
-def card(s: dict) -> dict:
+def card(s: dict, rules: dict) -> dict:
+    """What the page shows for one hitter (no real plate appearances: the page shows rates, not
+    playing time). `clones`: runs a game for a team of nine of him under the same rules."""
     kind = s["kind"] if s["kind"] != "any" else next(iter(kinds(s)), "")   # label what the season is
     plays = s["pos"] if s["slot"] == "DH" and s["pos"] != "DH" else ""     # a fielder batting DH
+    rates = rounded_rates(s["rates"])
     return {"id": s["id"], "name": s["name"], "year": s["year"], "team": s["team"], "pos": s["slot"], "plays": plays,
-            "type": KIND_LABEL.get(kind, ""), "pa": s["pa"],
+            "type": KIND_LABEL.get(kind, ""),
             "avg": round(s["avg"], 3), "obp": round(s["obp"], 3), "slg": round(s["slg"], 3),
-            "hr": s["hr"], "bb": s["bb"], "so": s["so"], "rates": rounded_rates(s["rates"])}
+            "ops": round(s["obp"] + s["slg"], 3),
+            "hr": s["hr"], "bb": s["bb"], "so": s["so"], "rates": rates,
+            "clones": round(chain.clone_runs(rates, rules), 3)}
+
+
+def order_code(order) -> str:
+    """An order as nine digits (hitter indexes, slot 1 first): "203654718"."""
+    return "".join(str(int(i)) for i in order)
 
 
 def score(cards: list[dict], rules: dict) -> dict:
+    """Grade data for the page: best and worst orders, percentiles of all 9! orders, the TOP_ORDERS
+    best orders (`top`: [code, runs]) and `grid` (grid[hitter][slot] = [runs, code] of the best order
+    with that hitter batting in that slot)."""
     orders, runs = chain.all_orders([c["rates"] for c in cards], rules)
     best, worst = int(runs.argmax()), int(runs.argmin())
+    top = np.argsort(-runs, kind="stable")[:TOP_ORDERS]
+    grid = []
+    for h in range(len(cards)):
+        row = []
+        for slot in range(len(cards)):
+            rows = np.flatnonzero(orders[:, slot] == h)
+            i = int(rows[runs[rows].argmax()])
+            row.append([round(float(runs[i]), 6), order_code(orders[i])])
+        grid.append(row)
     return {"best": {"order": [int(i) for i in orders[best]], "runs": round(float(runs[best]), 6)},
             "worst": {"order": [int(i) for i in orders[worst]], "runs": round(float(runs[worst]), 6)},
             "percentiles": [round(float(x), 6) for x in np.percentile(runs, range(101))],
-            "orders": len(runs)}
+            "orders": len(runs),
+            "top": [[order_code(orders[i]), round(float(runs[i]), 6)] for i in top],
+            "grid": grid}
 
 
 def generate(seasons: list[dict], fame: dict[str, float], start: dt.date, end: dt.date,
@@ -150,7 +176,7 @@ def generate(seasons: list[dict], fame: dict[str, float], start: dt.date, end: d
             if not deals:
                 continue
             nine = min(deals, key=lambda d: (off_realistic(d), -sum(1 for s in d if kinds(s)), off_median(d)))
-            cards = [card(s) for s in nine]
+            cards = [card(s, rules) for s in nine]
             sc = score(cards, rules)
             gap = sc["best"]["runs"] - sc["worst"]["runs"]
             if best is None or gap > best[0]:
