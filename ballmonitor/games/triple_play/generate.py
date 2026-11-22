@@ -1,14 +1,16 @@
-"""Daily Triple Play puzzles: 3 categories, 17 spots, one correct region per card.
+"""Daily Triple Play puzzles: 3 categories, one correct region per card.
 
-Regions (A, B, C = the three circles): ABC 1, AB/AC/BC 2 each, A/B/C-only 3 each,
-outside 1 -> 17 spots. Every region also gets SPARE extra cards (25 cards for 17 spots): the
-player fills the board and the leftover cards don't count.
+Regions (A, B, C = the three circles). Cities & states (Monday): ABC 1, AB/AC/BC 2 each,
+A/B/C-only 3 each, outside 1 -> 17 spots, and every region gets SPARE extra cards (25 cards):
+the player fills the board and the leftover cards don't count. Baseball (from RULES_SINCE):
+11 spots (NEED_BASEBALL; Sunday 14, NEED_BASEBALL_BIG), no spares.
 
 For each date (seeded by the date, so a rebuild reproduces the same puzzles):
 1. difficulty from the weekday (FAME_FLOOR: who is famous enough to appear);
-2. try random category triples (one team-type, one stat-type, one "trait" most of the time),
-   rejecting pairs that are nearly the same set, pitcher-only + hitter-only mixes, triples
-   used in the last REPEAT_DAYS days, or categories used yesterday;
+2. try random category triples (always one team, one position and one stat / honor / other
+   circle that suits the position; with "Pitcher" one that fits batters too), rejecting pairs
+   that are nearly the same set, triples used in the last REPEAT_DAYS days, or categories
+   used yesterday;
 3. the pool: players above the fame floor, active in 1910 or later, and not
    borderline for any of the three categories (Category.clear);
 4. every region must have enough players; players are drawn by weight without
@@ -34,6 +36,12 @@ NEED_BIG = {"ABC": 2, "AB": 3, "AC": 3, "BC": 3, "A": 4, "B": 4, "C": 4, "": 2} 
 # the right region scores, so the spare makes every day easier. (Since 2026-11-09, when the
 # puzzles without spares were removed and numbering restarted at #1.)
 SPARE = 1
+# Baseball since RULES_SINCE: team + position + stat circles with only clear-cut players leave
+# too few well-known players for 17 spots, so a smaller board and no spare cards (owner's
+# choice, 2026-11-22): 11 spots, Sunday 14.
+NEED_BASEBALL = {"ABC": 1, "AB": 1, "AC": 1, "BC": 1, "A": 2, "B": 2, "C": 2, "": 1}       # 11 cards
+NEED_BASEBALL_BIG = {"ABC": 1, "AB": 1, "AC": 1, "BC": 1, "A": 3, "B": 3, "C": 3, "": 1}   # 14 cards (Sunday)
+SPARE_BASEBALL = 0
 FAME_FLOOR = {"easy": 80.0, "medium": 62.0, "hard": 50.0, "big": 55.0}  # 2026-10-31: raised (was 55/32/24/30)
 # how strongly each level favours close calls (closeness = how near a player is to a circle's
 # line, Category.close): negative avoids them. Every level avoids them since 2026-10-31
@@ -44,8 +52,11 @@ WEEKDAY_LEVEL = ["medium", "easy", "medium", "medium", "hard", "hard", "big"]  #
 REPEAT_DAYS = 120
 ATTEMPTS = 400
 KEEP_BEST_OF = 6
-STAT_KINDS = ("career", "season", "award")
-TRAIT_KINDS = ("position", "bio", "award")
+# Every baseball puzzle (from RULES_SINCE): one team circle, one position circle and one
+# stat / honor / other circle (owner's rule, 2026-11-22). With "Pitcher" the third circle must
+# fit batters too (All-Stars, Hall of Fame, birthplace...), so pitching stats are never used.
+STAT_KINDS = ("career", "season", "award", "bio")
+RULES_SINCE = dt.date(2026, 11, 23)  # puzzles before this used the older, looser rules (kept as published)
 
 
 def region_of(p: dict, cats: list[Category]) -> str:
@@ -53,10 +64,13 @@ def region_of(p: dict, cats: list[Category]) -> str:
 
 
 def compatible(cats: list[Category], members: dict[str, set]) -> bool:
-    flags = {c.hitters for c in cats if c.hitters is not None}
-    if len(flags) > 1:
+    if sorted(c.kind for c in cats if c.kind in ("team", "position")) != ["position", "team"]:
         return False
-    if sum(c.kind == "team" for c in cats) > 2 or sum(c.kind == "position" for c in cats) > 1:
+    pos = next(c for c in cats if c.kind == "position")
+    stat = next(c for c in cats if c.kind not in ("team", "position"))
+    if pos.hitters is False and stat.hitters is not None:   # pitcher: the stat must fit batters too
+        return False
+    if pos.hitters and stat.hitters is False:               # a fielding position: no pitching stats
         return False
     for a, b in combinations(cats, 2):
         sa, sb = members[a.id], members[b.id]
@@ -72,19 +86,11 @@ def compatible(cats: list[Category], members: dict[str, set]) -> bool:
 
 
 def pick_triple(rng: random.Random, by_kind: dict[str, list[Category]]) -> list[Category]:
-    r = rng.random()
-    if r < 0.55:      # team + stat + trait
-        kinds = ["team", rng.choice(STAT_KINDS), rng.choice(TRAIT_KINDS)]
-    elif r < 0.70:    # two teams + stat/trait
-        kinds = ["team", "team", rng.choice(STAT_KINDS + TRAIT_KINDS)]
-    elif r < 0.90:    # no team: stat + stat + trait
-        kinds = [rng.choice(STAT_KINDS), rng.choice(STAT_KINDS), rng.choice(TRAIT_KINDS)]
-    else:             # team + trait + trait
-        kinds = ["team", rng.choice(TRAIT_KINDS), rng.choice(TRAIT_KINDS)]
-    out: list[Category] = []
-    for k in kinds:
-        options = [c for c in by_kind[k] if c not in out]
-        out.append(rng.choice(options))
+    """A team, a position, and a stat / honor / other circle that suits the position."""
+    pos = rng.choice(by_kind["position"])
+    stats = [c for k in STAT_KINDS for c in by_kind.get(k, [])
+             if (c.hitters is None) or (pos.hitters is not False and c.hitters)]
+    out = [rng.choice(by_kind["team"]), pos, rng.choice(stats)]
     rng.shuffle(out)
     return out
 
@@ -177,12 +183,12 @@ def baseball_maker(players: dict[str, dict]):
 
     def make(day, level, recent, yesterday):
         rng = random.Random(f"triple-play-baseball-{day.isoformat()}")
-        need = NEED_BIG if level == "big" else NEED
+        need = NEED_BASEBALL_BIG if level == "big" else NEED_BASEBALL
         for lv in dict.fromkeys((level, "medium", "hard")):   # fall back to a bigger pool if needed
             puzzle = build_puzzle(rng, bases[lv], lambda r: pick_triple(r, by_kind),
                                   lambda cats: compatible(cats, members), lv, recent, yesterday,
                                   card_extra=lambda p: {"sub": f"{p['first']}–{p['last']}"}, need=need,
-                                  spare=SPARE)
+                                  spare=SPARE_BASEBALL)
             if puzzle:
                 puzzle["pack"] = "baseball"
                 return puzzle
@@ -191,9 +197,11 @@ def baseball_maker(players: dict[str, dict]):
 
 
 def generate(players: dict[str, dict], start: dt.date, end: dt.date, log=print,
-             places=None, places_weekday: int = 0) -> list[dict]:
+             places=None, places_weekday: int = 0, fixed: dict[str, dict] | None = None) -> list[dict]:
     """The daily schedule: baseball every day, except `places_weekday` (0 = Monday, MLB's
-    traditional off day) when a places maker is given. One numbering across both packs."""
+    traditional off day) when a places maker is given. One numbering across both packs.
+    `fixed`: date -> an already-published puzzle, used as is (and as the history that later
+    days must not repeat)."""
     makers = {"baseball": baseball_maker(players)}
     if places is not None:
         makers["places"] = places
@@ -205,7 +213,10 @@ def generate(players: dict[str, dict], start: dt.date, end: dt.date, log=print,
         hist = history[pack]
         recent = [h for d, h in hist if (day - d).days <= REPEAT_DAYS * (1 if pack == "baseball" else 3)]
         yesterday = hist[-1][1] if hist else set()
-        puzzle = makers[pack](day, level, recent, yesterday)
+        if fixed and day.isoformat() in fixed:
+            puzzle = dict(fixed[day.isoformat()])
+        else:
+            puzzle = makers[pack](day, level, recent, yesterday)
         puzzle.update(date=day.isoformat(), number=number)
         out.append(puzzle)
         hist.append((day, {c["id"] for c in puzzle["categories"]}))

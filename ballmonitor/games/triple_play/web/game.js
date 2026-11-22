@@ -1,6 +1,7 @@
-// Triple Play: fill 17 spots (25 on Sunday) in a three-circle Venn diagram. One check, one point per card.
-// Each part of the diagram has one spare card (25 cards for 17 spots): any card that fits
-// scores, and the leftover cards don't count.
+// Triple Play: fill the spots in a three-circle Venn diagram. One check, one point per card.
+// Baseball days: 11 spots (14 on Sunday), one card per spot. Cities & states (Monday): 17 spots
+// and a spare card for each part (25 cards): any card that fits scores, leftovers don't count.
+// The board's shape comes from each puzzle (`need`).
 // Puzzles come from puzzles/<pack>/index.json + one file per month (built by
 // `python -m ballmonitor.games.triple_play.build`). Progress is kept in localStorage.
 (function () {
@@ -406,18 +407,18 @@
   }
   function showHelp() {
     modal(el("h2", {}, "How to play"),
-      el("p", {}, "Three circles, 17 spots to fill. Put a card in each spot, in the one part of the diagram that fits it:"),
+      el("p", {}, "Three circles and a card for every spot. Put each card in the one part of the diagram that fits it. Baseball days have 11 spots:"),
       el("ul", {},
         el("li", {}, "1 in the middle (all three circles)"),
-        el("li", {}, "2 in each overlap of exactly two circles"),
-        el("li", {}, "3 in each part that belongs to only one circle"),
+        el("li", {}, "1 in each overlap of exactly two circles"),
+        el("li", {}, "2 in each part that belongs to only one circle (3 on Sunday)"),
         el("li", {}, "1 outside all three")),
-      el("p", {}, "There's a spare for every part: 25 cards for the 17 spots. Leave out the ones you're least sure of; cards left over don't count."),
-      el("p", {}, "Sunday is the big one: 25 spots (2 in the middle, 3 in each overlap, 4 in each single circle, 2 outside) and 33 cards."),
+      el("p", {}, "Every baseball puzzle has a team, a position and one more circle (a stat, an honor or where a player was born), and only players who are clearly in or clearly out of each circle."),
+      el("p", {}, "Monday's cities & states puzzle is bigger: 17 spots (2 in each overlap, 3 in each single circle) with a spare card for every part, 25 cards in all. Cards left over don't count."),
       el("p", {}, "Tap a card and then a part of the diagram, or drag it there. Tap a placed card twice to send it back."),
       el("p", {}, "You get one check. Your score is how many of the spots you filled correctly."),
-      el("p", {}, "A new puzzle every day: cities & states on Monday (MLB's traditional off day), baseball players the rest of the week — Tuesday easiest, Friday and Saturday hardest (more players close to a circle's line), and the big puzzle on Sunday."),
-      el("p", { class: "hint" }, "Tap a circle's label for its exact rule (e.g. what counts as \"played shortstop\")."),
+      el("p", {}, "A new puzzle every day: cities & states on Monday (MLB's traditional off day), baseball players the rest of the week — Tuesday easiest (the most famous players), Friday and Saturday hardest, and a bigger board on Sunday."),
+      el("p", { class: "hint" }, "Tap a circle's label for its exact rule (e.g. what counts as a shortstop: at least 75% of his games there)."),
       el("p", { class: "hint" }, `Data: ${state.index?.source || "Lahman Baseball Database"}.`));
   }
   function showRules() {
@@ -427,7 +428,7 @@
         el("li", {}, el("strong", { style: `color:${COLORS["ABC"[i]]}` }, c.label), " — ", c.rule))),
       el("p", { class: "hint" }, p.pack === "places"
         ? "Teams and facts are for the 2026 season; a metro counts teams in its suburbs (the Giants and Jets are New York). A state counts every team and school inside it."
-        : "Stats are regular-season totals from the Lahman Baseball Database. A player only appears in a puzzle if he isn't a borderline case for its circles (e.g. a handful of games for a team)."));
+        : "Stats are regular-season totals from the Lahman Baseball Database. A player only appears in a puzzle if he is clearly in or clearly out of each circle: no games for the team or at least 3 seasons and a quarter of his games there, at least 78% of his games at the position or hardly any (under 50 games), and nowhere near a stat's line."));
   }
   async function showArchive() {
     const list = [...available()].reverse();

@@ -30,14 +30,23 @@ def test_index_matches_files():
     assert [p["number"] for p in puzzles] == list(range(1, len(puzzles) + 1))
 
 
+def new_rules(p) -> bool:
+    """Baseball puzzles built with the team + position + stat rules (earlier ones kept as published)."""
+    return p["pack"] == "baseball" and dt.date.fromisoformat(p["date"]) >= generate.RULES_SINCE
+
+
 def test_every_puzzle_has_the_right_shape():
     for p in built():
         assert len(p["categories"]) == 3 and len({c["id"] for c in p["categories"]}) == 3
-        need = generate.NEED_BIG if p["level"] == "big" else generate.NEED
-        assert p["need"] == need
-        assert sum(need.values()) == (25 if p["level"] == "big" else 17)
-        # one spare card per region (25 cards for 17 spots; Sunday 33 for 25)
-        spare = generate.SPARE
+        if new_rules(p):   # baseball: 11 spots (Sunday 14), no spare cards
+            need = generate.NEED_BASEBALL_BIG if p["level"] == "big" else generate.NEED_BASEBALL
+            spare = generate.SPARE_BASEBALL
+            assert sum(need.values()) == (14 if p["level"] == "big" else 11)
+        else:              # cities & states, and baseball before RULES_SINCE: 17 (Sunday 25) + a spare per part
+            need = generate.NEED_BIG if p["level"] == "big" else generate.NEED
+            spare = generate.SPARE
+            assert sum(need.values()) == (25 if p["level"] == "big" else 17)
+        assert p["need"] == need, p["date"]
         assert Counter(c["region"] for c in p["cards"]) == Counter({k: v + spare for k, v in need.items()}), p["date"]
         assert len(p["cards"]) == sum(need.values()) + spare * len(need)
         names = [c["name"] for c in p["cards"]]
@@ -63,7 +72,7 @@ def players():
 
 
 def test_regions_agree_with_category_rules(players):
-    for p in [q for q in built() if q["pack"] == "baseball"][:80]:
+    for p in [q for q in built() if new_rules(q)][:120]:
         cats = [CATEGORIES[c["id"]] for c in p["categories"]]
         for card in p["cards"]:
             pl = players[card["id"]]
@@ -87,7 +96,7 @@ def test_schedule_monday_places_sunday_big():
 def test_harder_days_have_closer_calls(players):
     import statistics
     by = {}
-    for p in [q for q in built() if q["pack"] == "baseball" and q["level"] != "big"][:150]:
+    for p in [q for q in built() if new_rules(q) and q["level"] != "big"][:150]:
         cats = [CATEGORIES[c["id"]] for c in p["categories"]]
         by.setdefault(p["level"], []).append(statistics.mean(generate.closeness(players[c["id"]], cats) for c in p["cards"]))
     assert statistics.mean(by["easy"]) < statistics.mean(by["medium"]) < statistics.mean(by["hard"])
@@ -133,8 +142,32 @@ def test_known_facts(players):
     bonds = players["bondsba01"]
     assert not CATEGORIES["hof"].test(bonds) and CATEGORIES["hof"].near(bonds) > 0   # on the ballot, not in
     assert CATEGORIES["s_hr50"].test(bonds) and CATEGORIES["s_3030"].test(bonds)
-    # a cup of coffee is "not clear": Mays had 135 games as a Met (clear), not borderline
-    assert CATEGORIES["team_nym"].clear(players["mayswi01"])
+    # a fan ties Mays to the Giants, not to his two late seasons as a Met: never used with the Mets
+    mays = players["mayswi01"]
+    assert CATEGORIES["team_sfg"].clear(mays) and not CATEGORIES["team_nym"].clear(mays)
+    assert CATEGORIES["pos_of"].test(mays) and CATEGORIES["pos_of"].clear(mays)
+    # positions: 75% of games; split careers are left out
+    assert CATEGORIES["pos_ss"].test(jeter) and not CATEGORIES["pos_ss"].test(players["rodrial01"])
+    assert not CATEGORIES["pos_ss"].clear(players["rodrial01"])          # A-Rod: SS then 3B
+    assert CATEGORIES["pos_p"].test(players["maddugr01"]) and CATEGORIES["pos_p"].clear(players["maddugr01"])
+    assert not CATEGORIES["pos_p"].clear(players["ruthba01"])            # 163 games pitched: arguable
+    assert not CATEGORIES["pos_p"].clear(players["ohtansh01"])
+    assert CATEGORIES["pos_c"].test(players["benchjo01"]) and CATEGORIES["pos_c"].clear(players["benchjo01"])
+    # stats: nobody near the line (Jeter's 260 HR is far from 400; 380 would be left out)
+    assert CATEGORIES["hr400"].clear(jeter) and not CATEGORIES["hr400"].clear({**jeter, "bat": {**jeter["bat"], "HR": 380}})
+
+
+def test_team_position_and_stat_every_baseball_day(players):
+    for p in [q for q in built() if new_rules(q)]:
+        cats = [CATEGORIES[c["id"]] for c in p["categories"]]
+        kinds = sorted("team" if c.kind == "team" else "position" if c.kind == "position" else "stat" for c in cats)
+        assert kinds == ["position", "stat", "team"], p["date"]
+        pos = next(c for c in cats if c.kind == "position")
+        stat = next(c for c in cats if c.kind not in ("team", "position"))
+        if pos.id == "pos_p":
+            assert stat.hitters is None, (p["date"], stat.id)     # works for batters too
+        else:
+            assert stat.hitters is not False, (p["date"], stat.id)
 
 
 def test_web_files_present():

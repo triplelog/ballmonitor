@@ -345,7 +345,7 @@ Games: `new27K/` (27K, at `/27k/`), `ballmonitor/games/lineup/` (Lineup daily ba
 distribution in the browser (`web/chain.js`, tested against chain.py under node), plus the 20 best orders and a
 hitter-by-slot grid prebuilt into each puzzle; puzzles prebuilt by `python -m ballmonitor.games.lineup.build`,
 needs numpy and the Lahman CSVs from Triple Play; see its README), `web/static/game.html` (Pitch Guesser, local only for now) and
-`ballmonitor/games/triple_play/` (Triple Play daily Venn puzzle at `/triple/`: 17 spots and 25 cards, a spare per part; baseball Tue-Sun (Sunday = 25 spots, 33 cards) from the
+`ballmonitor/games/triple_play/` (Triple Play daily Venn puzzle at `/triple/`: baseball Tue-Sun since 2026-11-23 always a team + a position (75% of games) + a stat/honor circle with only clear-cut players, 11 spots (Sunday 14), no spares; cities & states 17 spots and 25 cards, a spare per part; baseball from the
 Lahman database, cities & states on Monday from Wikipedia lists; puzzles prebuilt by
 `python -m ballmonitor.games.triple_play.build`; see its README).
 

@@ -77,14 +77,15 @@ def main(argv=None) -> int:
     last = max(p["last"] for p in players.values())
     from ballmonitor.games.triple_play.places import model as places
     entities = places.load()
-    puzzles = generate.generate(players, args.start, args.end, places=places.maker(entities) if entities else None)
+    fixed = {}
     if args.keep_through:
-        old = {}
-        for f in (OUT / "daily").glob("????-??.json"):
-            old.update({p["date"]: p for p in json.loads(f.read_text(encoding="utf-8"))})
         keep = args.keep_through.isoformat()
-        puzzles = [old[p["date"]] if p["date"] <= keep and p["date"] in old else p for p in puzzles]
-        print(f"kept published puzzles through {keep}")
+        for f in (OUT / "daily").glob("????-??.json"):
+            fixed.update({p["date"]: p for p in json.loads(f.read_text(encoding="utf-8")) if p["date"] <= keep})
+        print(f"keeping {len(fixed)} published puzzles through {keep}")
+    # published puzzles are used as they are, and later days are checked against them for repeats
+    puzzles = generate.generate(players, args.start, args.end, places=places.maker(entities) if entities else None,
+                                fixed=fixed)
     write("daily", puzzles, f"Lahman Baseball Database (stats through {last}); places: Wikipedia lists (2026 season)")
     print(f"wrote {len(puzzles)} puzzles to {OUT / 'daily'} (stats through {last})")
     return 0

@@ -3,8 +3,9 @@
 Every category has
   test(p)   -> bool    is the player in the circle (the published rule)
   clear(p)  -> bool    False for borderline players a fan couldn't be expected to know
-                       (3 games for a team, 60 games at a position); they are never used
-                       in a puzzle that has this category
+                       (a season or two with a team, a utility man at a position, 380 or 420
+                       homers for "400 career home runs"); they are never used in a puzzle
+                       that has this category
   near(p)   -> float   0-1, how close a non-member comes (for the "outside" near miss)
   close(p)  -> float   0-1, how close to the line from either side: barely in (405 HR for
                        "400 career home runs", 60 games for a team) or barely out; hard days
@@ -47,32 +48,58 @@ def _ramp(v, lo, hi) -> float:
     return 0.0 if v < lo or v >= hi else (v - lo) / (hi - lo)
 
 
+# A team circle only uses players a fan would tie to the team: none at all, or at least
+# TEAM_MIN_SEASONS seasons there making up at least TEAM_MIN_SHARE of his career games.
+TEAM_MIN_SEASONS = 3
+TEAM_MIN_SHARE = 0.25
+
+
+def known_for(p: dict, fid: str) -> bool:
+    g = p["franch"].get(fid, 0)
+    return len(p["franch_years"].get(fid, ())) >= TEAM_MIN_SEASONS and p["g"] > 0 and g / p["g"] >= TEAM_MIN_SHARE
+
+
 def team(fid: str, name: str) -> Category:
     return Category(
         f"team_{fid.lower()}", f"Played for the {name}",
-        f"Played at least one regular-season game for the {name} franchise (earlier names count).",
+        f"Played at least one regular-season game for the {name} franchise (earlier names count). "
+        f"Only players with no games for them, or at least {TEAM_MIN_SEASONS} seasons and "
+        f"{TEAM_MIN_SHARE:.0%} of their games there, appear.",
         "team", lambda p: p["franch"].get(fid, 0) > 0,
-        clear=lambda p: p["franch"].get(fid, 0) == 0 or p["franch"].get(fid, 0) >= 30,
+        clear=lambda p: p["franch"].get(fid, 0) == 0 or known_for(p, fid),
         close=lambda p: (lambda g: 1.0 if 30 <= g < 80 else 0.5 if 80 <= g < 200 else 0.0)(p["franch"].get(fid, 0)),
         fact=lambda p: f"{name}: {_fmt(p['franch'].get(fid, 0))} G" if p["franch"].get(fid, 0) else f"never a {name[:-1] if name.endswith('s') else name}")
 
 
-POS_SHORT = {"c": "catcher", "1b": "1B", "2b": "2B", "3b": "3B", "ss": "shortstop", "of": "outfield", "p": "pitcher"}
+POS_SHORT = {"c": "C", "1b": "1B", "2b": "2B", "3b": "3B", "ss": "SS", "of": "OF", "p": "P"}
+POS_NAME = {"c": "catcher", "1b": "first base", "2b": "second base", "3b": "third base", "ss": "shortstop",
+            "of": "the outfield (left, center and right combined)", "p": "pitcher"}
+# A position circle: at least POS_SHARE of a player's games there. Players between POS_OUT
+# and POS_CLEAR (a utility man, a catcher who moved to first) never appear with it.
+POS_SHARE = 0.75
+POS_CLEAR = 0.78   # famous catchers sit at 80-81% (pinch-hit and DH games count): Bench, Berra, Posey
+POS_OUT = 0.25
+POS_OUT_GAMES = 50    # ...and clearly out means fewer than this many games there too (Ruth pitched 163, Ohtani 72)
+
+
+def pos_share(p: dict, key: str) -> float:
+    return p["pos"].get(key, 0) / p["g"] if p["g"] else 0.0
 
 
 def position(key: str, label: str, hitters: bool = True) -> Category:
-    def g(p):
-        return p["pos"].get(key, 0)
-
     def test(p):
-        return g(p) >= 100 or (g(p) >= 20 and g(p) * 3 >= p["g"])
+        return pos_share(p, key) >= POS_SHARE
+
+    def clear(p):
+        s = pos_share(p, key)
+        return s >= POS_CLEAR or (s <= POS_OUT and p["pos"].get(key, 0) < POS_OUT_GAMES)
 
     return Category(
         f"pos_{key}", label,
-        "At least 100 games at the position, or at least a third of his games (min. 20).",
-        "position", test, clear=lambda p: test(p) or g(p) < 10,
-        close=lambda p: 1.0 if test(p) and g(p) < 100 else 0.6 if 100 <= g(p) < 250 else 0.0,
-        fact=lambda p: f"{POS_SHORT[key]}: {_fmt(g(p))} G", hitters=hitters)
+        f"At least {POS_SHARE:.0%} of his games at {POS_NAME[key]}. Players who split their time "
+        f"(between a quarter and {POS_CLEAR:.0%} there, or {POS_OUT_GAMES}+ games there) never appear with this circle.",
+        "position", test, clear=clear, close=lambda p: 0.0,
+        fact=lambda p: f"{POS_SHORT[key]}: {pos_share(p, key):.0%} of {_fmt(p['g'])} G", hitters=hitters)
 
 
 def career(id_, label, rule, get, thr, near_lo, fmt=_fmt, hitters=None, extra=lambda p: True, short="") -> Category:
@@ -84,8 +111,9 @@ def career(id_, label, rule, get, thr, near_lo, fmt=_fmt, hitters=None, extra=la
         v = get(p)
         return max(0.0, 1 - (v - thr) / band) if v >= thr else _ramp(v, near_lo, thr)
 
+    # clear-cut only: nobody within `band` of the line on either side (340-459 HR for "400 HR")
     return Category(id_, label, rule, "career", lambda p: extra(p) and get(p) >= thr,
-                    clear=lambda p: True, near=lambda p: _ramp(get(p), near_lo, thr) if extra(p) else 0.0, close=close,
+                    clear=lambda p: close(p) == 0.0, near=lambda p: _ramp(get(p), near_lo, thr) if extra(p) else 0.0, close=close,
                     fact=lambda p: f"{short}: {fmt(get(p))}",
                     hitters=hitters)
 
@@ -112,7 +140,7 @@ def season(id_, label, rule, key, thr, near_lo, fmt=_fmt, hitters=None, lower_be
             return max(0.0, 1 - abs(v - thr) / band)
         return near(p)
 
-    return Category(id_, label, rule, "season", test, near=near, close=close,
+    return Category(id_, label, rule, "season", test, near=near, close=close, clear=lambda p: close(p) == 0.0,
                     fact=lambda p: f"best season {SEASON_SHORT[key]}: {fmt(p['season_max'].get(key, 0))}"
                     if p["season_max"].get(key) else f"best season {SEASON_SHORT[key]}: -", hitters=hitters)
 
@@ -123,14 +151,9 @@ def _ba(x):
 
 def build() -> list[Category]:
     cats = [team(fid, name) for fid, name in FRANCHISES.items()]
-    cats += [position("c", "Played catcher"), position("1b", "Played first base"),
-             position("2b", "Played second base"), position("3b", "Played third base"),
-             position("ss", "Played shortstop"), position("of", "Played outfield"),
-             position("p", "Pitched in 100+ games", hitters=False)]
-    cats[-1].test = lambda p: p["pos"].get("p", 0) >= 100
-    cats[-1].clear = lambda p: p["pos"].get("p", 0) >= 100 or p["pos"].get("p", 0) < 10
-    cats[-1].rule = "At least 100 games as a pitcher."
-    cats[-1].fact = lambda p: f"pitched: {_fmt(p['pos'].get('p', 0))} G"
+    cats += [position("c", "Catcher"), position("1b", "First baseman"), position("2b", "Second baseman"),
+             position("3b", "Third baseman"), position("ss", "Shortstop"), position("of", "Outfielder"),
+             position("p", "Pitcher", hitters=False)]
 
     hb = lambda k: (lambda p: p["bat"][k])  # noqa: E731
     pb = lambda k: (lambda p: p["pit"][k])  # noqa: E731
@@ -164,22 +187,24 @@ def build() -> list[Category]:
     ]
     aw = lambda k: (lambda p: p["awards"][k] > 0)  # noqa: E731
     one = lambda k: (lambda p: 0.5 if p["awards"][k] == 1 else 0.0)  # noqa: E731
+    many = lambda k: (lambda p: p["awards"][k] == 0 or p["awards"][k] >= 3)  # noqa: E731  one or two: easy to forget
     awf = lambda k, n: (lambda p: f"{n}: {p['awards'][k]}×" if p["awards"][k] else f"no {n}")  # noqa: E731
     cats += [
         Category("mvp", "Won an MVP", "Won a regular-season Most Valuable Player award.", "award", aw("mvp"), close=one("mvp"), fact=awf("mvp", "MVP")),
         Category("cy", "Won a Cy Young", "Won a Cy Young Award.", "award", aw("cy"), close=one("cy"), fact=awf("cy", "Cy Young"), hitters=False),
         Category("roy", "Rookie of the Year", "Won a Rookie of the Year award.", "award", aw("roy"), close=one("roy"), fact=awf("roy", "ROY")),
-        Category("gg", "Won a Gold Glove", "Won at least one Gold Glove.", "award", aw("gg"), close=one("gg"), fact=awf("gg", "Gold Gloves")),
-        Category("silver", "Won a Silver Slugger", "Won at least one Silver Slugger.", "award", aw("ss"), close=one("ss"), fact=awf("ss", "Silver Sluggers"), hitters=True),
+        Category("gg", "Won a Gold Glove", "Won at least one Gold Glove.", "award", aw("gg"), close=one("gg"), clear=many("gg"), fact=awf("gg", "Gold Gloves")),
+        Category("silver", "Won a Silver Slugger", "Won at least one Silver Slugger.", "award", aw("ss"), close=one("ss"), clear=many("ss"), fact=awf("ss", "Silver Sluggers"), hitters=True),
         Category("as10", "10+ All-Star selections", "Named to at least 10 MLB All-Star teams (seasons with two games count once).", "award",
                  lambda p: p["n_allstar"] >= 10, near=lambda p: _ramp(p["n_allstar"], 7, 10),
+                 clear=lambda p: p["n_allstar"] <= 6 or p["n_allstar"] >= 12,
                  close=lambda p: 0.7 if 10 <= p["n_allstar"] <= 11 else _ramp(p["n_allstar"], 7, 10), fact=lambda p: f"All-Star: {p['n_allstar']}×"),
         Category("hof", "Hall of Famer", "Inducted into the Hall of Fame as a player.", "award", lambda p: p["hof"],
                  near=lambda p: 0.8 if p["hof_ballot"] and not p["hof"] else 0.0,
                  fact=lambda p: "Hall of Famer" if p["hof"] else "not in the Hall"),
         Category("ws", "Won a World Series", "Played for a World Series champion during its title season (1903 on).", "award",
                  lambda p: bool(p["ws_titles"]),
-                 clear=lambda p: not p["ws_titles"] or any(g >= 20 for _, g in p["ws_titles"]),
+                 clear=lambda p: not p["ws_titles"] or all(g >= 30 for _, g in p["ws_titles"]),
                  close=lambda p: 0.6 if p["ws_titles"] and max(g for _, g in p["ws_titles"]) < 60 else 0.0,
                  fact=lambda p: ("won the WS: " + ", ".join(str(y) for y, _ in p["ws_titles"][:4])) if p["ws_titles"] else "no WS title"),
     ]
@@ -194,7 +219,7 @@ def build() -> list[Category]:
                  lambda p: p["birth_country"] == "USA" and p["birth_state"] == "CA", clear=lambda p: p["birth_country"] != "",
                  fact=lambda p: f"born in {p['birth_state'] if p['birth_country'] == 'USA' else p['birth_country']}"),
         Category("lefty_bat", "Batted left-handed", "Listed as batting left-handed (switch-hitters don't count).", "bio",
-                 lambda p: p["bats"] == "L", clear=lambda p: p["bats"] in ("L", "R", "B"),
+                 lambda p: p["bats"] == "L", clear=lambda p: p["bats"] in ("L", "R"),
                  close=lambda p: 0.7 if p["bats"] == "B" else 0.0,
                  fact=lambda p: {"L": "bats left", "R": "bats right", "B": "switch-hitter"}.get(p["bats"], "?"), hitters=True),
         Category("switch", "Switch-hitter", "Listed as a switch-hitter.", "bio", lambda p: p["bats"] == "B",
@@ -204,17 +229,21 @@ def build() -> list[Category]:
                  clear=lambda p: p["throws"] in ("L", "R"), fact=lambda p: f"throws {'left' if p['throws'] == 'L' else 'right'}"),
         Category("seasons20", "Played 20+ seasons", "Appeared in the majors in at least 20 different seasons.", "bio",
                  lambda p: p["seasons"] >= 20, near=lambda p: _ramp(p["seasons"], 17, 20),
+                 clear=lambda p: p["seasons"] <= 17 or p["seasons"] >= 21,
                  close=lambda p: 0.7 if 20 <= p["seasons"] <= 21 else _ramp(p["seasons"], 17, 20), fact=lambda p: f"{p['seasons']} seasons"),
         Category("franch5", "Played for 5+ franchises", "Appeared for at least 5 different franchises.", "bio",
                  lambda p: p["n_franch"] >= 5, near=lambda p: 0.7 if p["n_franch"] == 4 else 0.0,
+                 clear=lambda p: p["n_franch"] <= 3 or p["n_franch"] >= 6,
                  close=lambda p: 0.7 if p["n_franch"] in (4, 5) else 0.0,
                  fact=lambda p: f"{p['n_franch']} franchises"),
         Category("pre1970", "Debuted before 1970", "First major-league game before 1970.", "bio",
                  lambda p: p["first"] < 1970, near=lambda p: _ramp(-p["first"], -1975, -1969),
+                 clear=lambda p: abs(p["first"] - 1969.5) >= 3,
                  close=lambda p: max(0.0, 1 - abs(p["first"] - 1969.5) / 5),
                  fact=lambda p: f"debut {p['first']}"),
         Category("post2000", "Debuted in 2000 or later", "First major-league game in 2000 or later.", "bio",
                  lambda p: p["first"] >= 2000, near=lambda p: _ramp(p["first"], 1995, 2000),
+                 clear=lambda p: abs(p["first"] - 1999.5) >= 3,
                  close=lambda p: max(0.0, 1 - abs(p["first"] - 1999.5) / 5), fact=lambda p: f"debut {p['first']}"),
     ]
     return cats

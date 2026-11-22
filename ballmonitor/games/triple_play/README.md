@@ -1,12 +1,26 @@
 # Triple Play
 
-A daily puzzle: three circles, 17 spots (1 in the middle, 2 in each two-circle overlap,
-3 in each one-circle-only part, 1 outside) and 25 cards: each part has one spare
-(`SPARE` in generate.py). Puzzle #1 is 2026-11-09; the first 13 puzzles (Oct 27-Nov 8, no
-spares) were removed and the numbering restarted. The
-player fills the 17 spots; any card that fits a part scores and the leftover cards don't
-count. One check, scored out of 17. Archive of past days; progress kept in the browser
-(localStorage).
+A daily puzzle: three circles and cards to place in the one part of the diagram that fits.
+Puzzle #1 is 2026-11-09; the first 13 puzzles (Oct 27-Nov 8, no spares) were removed and the
+numbering restarted. One check, one point per spot. Archive of past days; progress kept in the
+browser (localStorage).
+
+- **Baseball** (from 2026-11-23, `RULES_SINCE`; owner's rules): every puzzle has one team
+  circle, one position circle (C, 1B, 2B, 3B, SS, OF = left/center/right combined, P) and one
+  stat / honor / other circle; with "Pitcher" the third circle must fit batters too (All-Stars,
+  Hall of Fame, MVP, Gold Glove, birthplace, throws left, debut era...), so pitching stats are
+  never used. A position means at least 75% of a player's games there (`POS_SHARE`). Only
+  clear-cut players appear: for the team, no games or at least 3 seasons and 25% of his games
+  there (`TEAM_MIN_SEASONS`, `TEAM_MIN_SHARE`); for the position, at least 78% there or under 25%
+  and fewer than 50 games (`POS_CLEAR`, `POS_OUT`, `POS_OUT_GAMES`; Ruth's 163 games pitched keep
+  him out of pitcher puzzles); for a stat, nobody near its line (340-459 HR for "400 career home
+  runs"; one or two Gold Gloves; 7-11 All-Star picks). That leaves too few well-known players
+  for the old board, so baseball uses 11 spots (1 middle, 1 per overlap, 2 per single circle,
+  1 outside; `NEED_BASEBALL`), Sunday 14 (3 per single circle; `NEED_BASEBALL_BIG`), and no
+  spare cards. Puzzles through 2026-11-22 keep the older rules and the 17-spot board.
+- **Cities & states** (Monday): 17 spots (1 in the middle, 2 in each two-circle overlap, 3 in
+  each one-circle-only part, 1 outside) and 25 cards: each part has one spare (`SPARE`); any
+  card that fits a part scores and the leftover cards don't count.
 
 - `web/` — the game (vanilla JS, no build step). Served at `/triple/` by `ballmonitor serve`
   and copied to `dist/triple/` by `ballmonitor build-site`.
@@ -24,8 +38,8 @@ count. One check, scored out of 17. Archive of past days; progress kept in the b
 - `build.py` — writes `web/puzzles/daily/index.json` + one JSON per month.
 
 Schedule: cities & states on Monday (MLB's traditional off day); baseball Tuesday (easy),
-Wednesday/Thursday (medium), Friday/Saturday (hard), and Sunday's big puzzle: 25 spots
-(2 in the middle, 3 per overlap, 4 per single circle, 2 outside; `NEED_BIG`) and 33 cards. Difficulty = how famous the players are (fame floor) and how close they sit
+Wednesday/Thursday (medium), Friday/Saturday (hard), and Sunday's bigger board (before
+2026-11-23: 25 spots and 33 cards, `NEED_BIG`). Difficulty = how famous the players are (fame floor) and how close they sit
 to a circle's line (`Category.close`: 405 HR for "400 career home runs", 60 games for a team,
 a switch-hitter for "batted left-handed"); each card is drawn with weight
 fame x exp(CLOSE_BETA[level] x closeness), so easy days are clear-cut and hard days full of
@@ -61,7 +75,8 @@ Rebuild (e.g. after a new Lahman release):
     python -m ballmonitor.games.triple_play.build --lahman ~/Downloads/lahman_1871-2025_csv.zip
     python -m ballmonitor.games.triple_play.build --start 2026-11-09 --end 2027-12-31
 
-Add `--keep-through <today>` when rebuilding so puzzles people have already played stay as they were.
+Add `--keep-through <today>` when rebuilding so puzzles people have already played stay as they were
+(they are also the history later days are checked against for repeats).
 
 `--lahman` takes SABR's comma-delimited zip (sabr.org/lahman-database; its Box download
 needs a browser) or the CRAN `Lahman_*.tar.gz` (needs `pip install rdata`). The current

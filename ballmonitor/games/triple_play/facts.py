@@ -53,7 +53,7 @@ def load() -> dict[str, dict]:
             "id": r["playerID"], "name": f"{r['nameFirst']} {r['nameLast']}".strip(),
             "birth_country": r["birthCountry"], "birth_state": r["birthState"],
             "bats": r["bats"], "throws": r["throws"],
-            "franch": defaultdict(int), "pos": defaultdict(int), "g": 0, "years": set(),
+            "franch": defaultdict(int), "franch_years": defaultdict(set), "pos": defaultdict(int), "g": 0, "years": set(),
             "ws_titles": [], "bat": defaultdict(int), "pit": defaultdict(int),
             "season_max": defaultdict(float), "awards": defaultdict(int), "allstar": set(),
             "hof": False, "hof_ballot": False,
@@ -70,6 +70,8 @@ def load() -> dict[str, dict]:
         fr = team_franch.get((r["yearID"], r["teamID"]))
         if fr:
             p["franch"][fr] += g
+            if g > 0:
+                p["franch_years"][fr].add(_i(r["yearID"]))
         for key, col in POSITIONS.items():
             p["pos"][key] += _i(r.get(col))
         team_year_games[(r["playerID"], r["yearID"], r["teamID"])] += g
