@@ -82,8 +82,19 @@ def test_variants_load(name):
         registry.load_model(name, variant)
 
 
+def _local_data_missing(name):
+    """A model computed from local, uncommitted data ([local] requires = [paths]) can't run where
+    that data isn't (a fresh clone, CI)."""
+    from ballmonitor.core.model import REPO_ROOT
+    need = registry.config_for(name).extra.get("local", {}).get("requires", [])
+    return [p for p in need if not (REPO_ROOT / p).exists()]
+
+
 @pytest.mark.parametrize("name,example", EXAMPLES)
 def test_example_produces_standard_prediction(name, example):
+    missing = _local_data_missing(name)
+    if missing:
+        pytest.skip(f"needs local data: {missing}")
     pred = registry.load_model(name).predict(registry.load_example(name, example))
     assert pred.outcomes, "a prediction needs at least one outcome"
     assert pred.steps, "record calculation steps so the output shows its work"

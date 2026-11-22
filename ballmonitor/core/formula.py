@@ -96,6 +96,13 @@ def check(expr: str, allowed_names: set[str]) -> None:
                 )
 
 
+def names(expr: str) -> set[str]:
+    """Variable names used in `expr` (not function names)."""
+    tree = _parse(expr)
+    funcs = {id(n.func) for n in ast.walk(tree) if isinstance(n, ast.Call)}
+    return {n.id for n in ast.walk(tree) if isinstance(n, ast.Name) and id(n) not in funcs}
+
+
 def evaluate(expr: str, variables: dict[str, float]) -> float:
     tree = _parse(expr)
     return _eval(tree.body, {**CONSTANTS, **variables}, expr)

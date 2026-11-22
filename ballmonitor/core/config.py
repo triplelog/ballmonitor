@@ -153,6 +153,7 @@ def _formula_spec(name: str, raw: Any) -> FormulaSpec:
         description=raw.get("description", ""),
         variables=list(raw.get("variables", [])),
         default=raw["expr"],
+        variable_pattern=str(raw.get("variable_pattern", "")),
     )
 
 

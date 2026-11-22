@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import re
+
 from dataclasses import dataclass, field
 from typing import Any
 
@@ -44,6 +46,7 @@ class FormulaSpec:
     description: str = ""
     variables: list[str] = field(default_factory=list)  # names the model supplies at call time
     default: str = ""
+    variable_pattern: str = ""  # regex: further names the model supplies (e.g. HR_1910); "" = none
 
     @property
     def overridden(self) -> bool:
@@ -105,7 +108,11 @@ class Params:
             spec.validate()
         allowed = set(self.numeric_values())
         for spec in self._formulas.values():
+            extra = set()
+            if spec.variable_pattern:   # names the model builds itself (one per decade, ...)
+                pattern = re.compile(spec.variable_pattern)
+                extra = {n for n in formula_engine.names(spec.expr) if pattern.fullmatch(n)}
             try:
-                formula_engine.check(spec.expr, allowed | set(spec.variables))
+                formula_engine.check(spec.expr, allowed | set(spec.variables) | extra)
             except formula_engine.FormulaError as exc:
                 raise ConfigError(f"formula '{spec.name}': {exc}") from None

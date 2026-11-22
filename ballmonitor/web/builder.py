@@ -235,6 +235,24 @@ def site_pages(name: str) -> dict[str, dict]:
     return out
 
 
+def site_files(name: str) -> dict[str, bytes]:
+    """Extra data files a page loads on demand (e.g. a map's grid for one decade), from site.py
+    `files(model) -> {relative path: bytes}`; written to data/files/<model>/<path> and fetched by the
+    page's app from /data/files/<model>/<path>. {} when the model has none."""
+    if not (registry.model_dir(name) / "site.py").exists():
+        return {}
+    module = importlib.import_module(f"ballmonitor.models.{name}.site")
+    if not hasattr(module, "files"):
+        return {}
+    out = {}
+    for rel, blob in module.files(registry.load_model(name)).items():
+        rel = str(rel).lstrip("/")
+        if ".." in Path(rel).parts or not re.fullmatch(r"[\w./-]+", rel):
+            raise ValueError(f"{name}/site.py files(): bad path {rel!r}")
+        out[rel] = blob if isinstance(blob, bytes) else str(blob).encode("utf-8")
+    return out
+
+
 def site_redirects(name: str) -> dict[str, str]:
     """Old page addresses -> new ones, from site.py REDIRECTS (e.g. after splitting a page in two)."""
     if not (registry.model_dir(name) / "site.py").exists():
@@ -327,8 +345,21 @@ def build_views(data_dir: Path, names: list[str], log=print) -> list[str]:
                 text = json.dumps(split_options(p, address, out), separators=(",", ":"), allow_nan=False)
             (out / f"{address}.json").write_text(text, encoding="utf-8")
             index.append({"name": address, **{k: p[k] for k in ("title", "summary", "sport", "updated", "order")}})
+        try:
+            extra = site_files(name)
+        except Exception as exc:  # noqa: BLE001 - reported, then the build fails
+            failures.append(f"{name}/site.py files(): {type(exc).__name__}: {exc}")
+            extra = {}
+        files_dir = data_dir / "files" / name
+        if files_dir.exists():
+            shutil.rmtree(files_dir)
+        for rel, blob in extra.items():
+            (files_dir / rel).parent.mkdir(parents=True, exist_ok=True)
+            (files_dir / rel).write_bytes(blob)
         if built:
             shown = ", ".join(f"{a} ({len(p['views'])} views)" for a, p in built.items())
+            if extra:
+                shown += f", {len(extra)} data files ({sum(len(b) for b in extra.values()) // 1024} KB)"
             log(f"   views {name}: {shown} in {time.perf_counter() - started:.1f}s")
     order = {s: i for i, s in enumerate(views.SPORTS)}
     index.sort(key=lambda m: (order.get(m["sport"], 99), m["order"], m["title"]))
