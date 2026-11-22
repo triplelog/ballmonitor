@@ -4,7 +4,8 @@
 #
 # members: Lahman birthState codes (USA) or birthCountry names; "CA-S"/"CA-N" split California at
 # 35.8°N and "PA-E"/"PA-W" split Pennsylvania at 77.5°W (from the birthplace map's geocoding).
-# x, y: position on the map. land: land borders; sea: sea lanes (drawn dashed).
+# x, y: position on the map. land: land borders; sea: sea lanes (drawn dashed). bend: { neighbour = px }
+# draws that border curved below the straight line (so it doesn't cross other territories).
 # 8 regions, each connected (owner, 2026-11-22; was 12 regions, two of them in pieces).
 
 [regions]
@@ -143,6 +144,7 @@ y = 600
 land = ["socal", "southwest", "texas", "venezuela"]
 sea = ["cuba"]
 
+bend = { venezuela = 70 }
 [territories.wisconsin]
 name = "Wisconsin"
 region = "great_lakes"
@@ -156,8 +158,8 @@ sea = []
 name = "Illinois"
 region = "great_lakes"
 members = ["IL"]
-x = 590
-y = 265
+x = 583
+y = 272
 land = ["iowa", "missouri", "wisconsin", "indiana", "kentucky"]
 sea = []
 
@@ -174,8 +176,8 @@ sea = []
 name = "Indiana"
 region = "great_lakes"
 members = ["IN"]
-x = 650
-y = 260
+x = 656
+y = 262
 land = ["illinois", "michigan", "ohio", "kentucky"]
 sea = []
 
@@ -183,8 +185,8 @@ sea = []
 name = "Ohio"
 region = "great_lakes"
 members = ["OH"]
-x = 720
-y = 240
+x = 712
+y = 248
 land = ["indiana", "michigan", "kentucky", "pa_west", "virginia"]
 sea = []
 
@@ -219,8 +221,8 @@ sea = []
 name = "Pittsburgh"
 region = "northeast"
 members = ["PA-W"]
-x = 770
-y = 215
+x = 785
+y = 206
 land = ["ohio", "pa_east", "new_york", "maryland", "virginia"]
 sea = []
 

@@ -141,3 +141,54 @@ def test_season_stats():
     out = node("""console.log(JSON.stringify([E.seasonStats([[1, 2.0], [2, -0.5], [3, 6.1], [4, 3.0]]), E.seasonStats([[1, 1.5]]), E.seasonStats([])]));""")
     assert out[0] == {"n": 4, "median": 2.5, "total": 10.6, "best": 6.1, "worst": -0.5}
     assert out[1]["median"] == 1.5 and out[2]["n"] == 0 and out[2]["median"] is None
+
+
+SETUP = """
+const st = E.newGame(data, { seed: 'fix', humanSeats: [0] });
+while (st.phase === 'draft') E.aiDraft(st, data);
+while (st.phase === 'deploy') E.aiPlace(st, data);
+E.skipPlacement(st, data);   // straight to battles
+const seat = st.turn;
+let from = null, to = null;
+for (const t of data.territories) if (st.owner[t.id] === seat) for (const n of [...t.land, ...t.sea]) if (!from && st.owner[n] !== seat) { from = t.id; to = n; }
+const make = (tid, seasons) => { const sid = E.callup(st, data, tid) || null; st.soldiers[sid].seasons = seasons; return sid; };
+"""
+
+
+@pytest.mark.skipif(NODE is None, reason="node is not installed")
+def test_exact_ties_go_to_the_defender():
+    out = node("""
+const pairs = [[0.1, -0.4], [-0.3, -0.8], [-0.6, -1.1], [-1.7, -2.2], [-3.9, -4.4], [5.5, 5.0]];
+console.log(JSON.stringify(pairs.map(([a, d]) => [E.beats(a, d, 0.5), E.winProb({ seasons: [[1, a]] }, { seasons: [[1, d]] }, 0.5)])));""")
+    assert all(b is False and p == 0 for b, p in out)
+
+
+@pytest.mark.skipif(NODE is None, reason="node is not installed")
+def test_last_defender_retiring_is_not_a_capture_and_empty_land_can_be_walked_into():
+    out = node(SETUP + """
+st.stacks[from] = []; st.stacks[to] = [];
+const a1 = make(from, [[1999, 1.0]]), a2 = make(from, [[1998, 0.5], [1997, 0.4]]), a3 = make(from, [[1996, 2.0]]);
+const d1 = make(to, [[2000, 5.0]]);
+const defender = st.owner[to];
+st.bench[to] = data.rosters[to].length;   // nobody left to call up there
+const r = E.battle(st, data, from, to, a1, d1);
+const after = { attackerWins: r.attackerWins, captured: !!r.captured, owner: st.owner[to] === defender, empty: st.stacks[to].length === 0 };
+const canWalk = E.canOccupy(st, data, from, to);
+E.occupy(st, data, from, to);
+const capturing = !!st.capture;
+E.moveIn(st, data, [a2]);
+console.log(JSON.stringify({ after, canWalk, capturing, nowMine: st.owner[to] === seat, moved: st.stacks[to].includes(a2),
+  stayed: st.stacks[from].length, prunedLoser: st.soldiers[a1].seasons.length === 0 && st.soldiers[a1].name.length > 0,
+  log: st.log.slice(-3).map((l) => l.text) }));""")
+    assert out["after"] == {"attackerWins": False, "captured": False, "owner": True, "empty": True}
+    assert out["canWalk"] and out["capturing"] and out["nowMine"] and out["moved"] and out["stayed"] == 1
+    assert out["prunedLoser"]
+
+
+@pytest.mark.skipif(NODE is None, reason="node is not installed")
+def test_managers_names_take_the_right_verb():
+    out = node(SETUP + """
+console.log(JSON.stringify([E.act(st, 0, 'attacks'), E.act(st, 1, 'attacks'), E.act(st, 0, 'is picking'), E.act(st, 0, 'calls up'),
+  E.act(st, 0, 'captures'), E.act(st, 0, 'releases'), E.act(st, 0, 'wins'), st.seats[1].name]));""")
+    assert out[0] == "You attack" and out[1] == f"{out[7]} attacks"
+    assert out[2:7] == ["You are picking", "You call up", "You capture", "You release", "You win"]

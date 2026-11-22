@@ -10,7 +10,8 @@ button:disabled { opacity: 0.45; cursor: default; }
 .top .status { flex: 1 1 18rem; margin: 0; font-weight: 600; }
 .top .tools { display: flex; gap: 0.4rem; }
 .layout { display: grid; grid-template-columns: minmax(0, 1fr) 24rem; gap: 0.8rem; padding: 0.8rem; }
-@media (max-width: 1000px) { .layout { grid-template-columns: 1fr; } }
+@media (max-width: 1000px) { .layout { grid-template-columns: minmax(0, 1fr); } }
+.board, .side, .side > * { min-width: 0; }
 .board { background: #dbe7ef; border-radius: 10px; padding: 0.4rem; }
 #map { width: 100%; height: auto; display: block; }
 .edge { stroke: #6b7280; stroke-width: 2; }
@@ -19,7 +20,9 @@ button:disabled { opacity: 0.45; cursor: default; }
 .terr circle.body { stroke-width: 5; }
 .terr .count { fill: #fff; font-weight: 800; font-size: 16px; text-anchor: middle; dominant-baseline: central; pointer-events: none; }
 .terr .count.dark { fill: #111827; }
-.terr .label { font-size: 11px; text-anchor: middle; fill: #111827; font-weight: 600; pointer-events: none; paint-order: stroke; stroke: #dbe7ef; stroke-width: 3px; }
+.label { font-size: 11px; text-anchor: middle; fill: #111827; font-weight: 600; pointer-events: none; paint-order: stroke; stroke: #e6eef4; stroke-width: 5px; stroke-linejoin: round; }
+.terr .badge { font-size: 10px; font-weight: 700; fill: #111827; text-anchor: start; pointer-events: none; paint-order: stroke; stroke: #fff; stroke-width: 3px; }
+path.edge { fill: none; }
 .terr .ring { fill: none; stroke: #111827; stroke-width: 3; }
 .terr .target { fill: none; stroke: #f59e0b; stroke-width: 4; stroke-dasharray: 5 4; }
 .terr.flash circle.body { filter: drop-shadow(0 0 6px #f59e0b); }
@@ -54,3 +57,14 @@ button:disabled { opacity: 0.45; cursor: default; }
 .modal-box { background: #fff; border-radius: 12px; padding: 1rem 1.2rem; max-width: 36rem; width: 100%; max-height: 90vh; overflow: auto; }
 .modal-box label { display: block; margin: 0.4rem 0; }
 .pct { font-variant-numeric: tabular-nums; }
+
+/* tables scroll inside their panel or dialog; on phones the less essential columns hide */
+.tw { overflow-x: auto; max-width: 100%; }
+@media (max-width: 560px) {
+  .roster .opt { display: none; }
+  .modal { padding: 0.4rem; }
+  .modal-box { padding: 0.8rem 0.9rem; }
+}
+.modal-box .actions.sticky { position: sticky; bottom: -1rem; background: #fff; padding: 0.5rem 0 0.4rem; margin-bottom: 0; }
+.lengths { display: grid; grid-template-columns: max-content 1fr; gap: 0.5rem 0.8rem; align-items: center; margin: 0.6rem 0; }
+.modal-box label { display: block; margin: 0.35rem 0; }

@@ -115,7 +115,8 @@ def build() -> dict:
         rosters[tid].sort(key=lambda r: -r["war"])
         rosters[tid] = [compact(r) for r in rosters[tid][: rules["roster_depth"]]]
     territories = [{"id": tid, "name": t["name"], "region": t["region"], "x": t["x"], "y": t["y"],
-                    "land": t.get("land", []), "sea": t.get("sea", []), "members": t["members"]}
+                    "land": t.get("land", []), "sea": t.get("sea", []), "members": t["members"],
+                    **({"bend": t["bend"]} if t.get("bend") else {})}
                    for tid, t in m["territories"].items()]
     game = {"version": 2, "rules": rules, "regions": m["regions"], "territories": territories, "rosters": rosters,
             "source": "Open WAR (models/open_war) from the Lahman Baseball Database (CC BY-SA 3.0)"}

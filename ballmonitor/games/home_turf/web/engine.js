@@ -85,16 +85,25 @@
     state.stacks[tid].push(sid);
     return sid;
   }
+  // a soldier leaves the game: keep his name (battle cards, logs) but drop his seasons, so long games
+  // and saved copies stay small
   function removeSoldier(state, tid, sid) {
     state.stacks[tid] = state.stacks[tid].filter((x) => x !== sid);
-    state.soldiers[sid].out = true;
+    const s = state.soldiers[sid];
+    s.out = true;
+    s.seasons = [];
+    s.used = [];
   }
 
   // P(attacker's drawn season > defender's drawn season + home), every pair of remaining seasons equally likely
+  // does the attacker's season beat the defender's plus home field? Compared in whole tenths of WAR
+  // (seasons are stored to 0.1), so float sums like -0.4 + 0.5 can't turn an exact tie into a win.
+  const tenths = (x) => Math.round(x * 10);
+  const beats = (a, d, home) => tenths(a) > tenths(d) + tenths(home);
   function winProb(a, d, home) {
     if (!a.seasons.length || !d.seasons.length) return a.seasons.length ? 1 : 0;
     let wins = 0;
-    for (const x of a.seasons) for (const y of d.seasons) if (x[1] > y[1] + home) wins++;
+    for (const x of a.seasons) for (const y of d.seasons) if (beats(x[1], y[1], home)) wins++;
     return wins / (a.seasons.length * d.seasons.length);
   }
 
@@ -129,6 +138,16 @@
     return state;
   }
   function log(state, text, extra = {}) { state.log.push({ round: state.round, text, ...extra }); }
+  // "The Scout attacks" / "You attack": a manager's name with the verb in the right form
+  function act(state, seat, verb) {
+    const name = state.seats[seat].name;
+    if (name !== "You") return `${name} ${verb}`;
+    const [first, ...rest] = verb.split(" ");
+    const base = { is: "are", has: "have" }[first]
+      || (/(ch|sh|x|ss)es$/.test(first) ? first.slice(0, -2) : /[^aeiou]ies$/.test(first) ? first.slice(0, -3) + "y" : first.replace(/s$/, ""));
+    return ["You", base, ...rest].join(" ");
+  }
+  const whom = (state, seat) => (state.seats[seat].name === "You" ? "you" : state.seats[seat].name);
 
   // ── draft and deployment ────────────────────────────────────────────────────
   function draft(state, data, tid) {
@@ -136,7 +155,7 @@
     const seat = state.draftOrder[state.draftAt];
     state.owner[tid] = seat;
     const sid = callup(state, data, tid);
-    log(state, `${state.seats[seat].name} drafts ${index(data).byId[tid].name}` + (sid ? ` (${state.soldiers[sid].name})` : ""));
+    log(state, `${act(state, seat, "drafts")} ${index(data).byId[tid].name}` + (sid ? ` (${state.soldiers[sid].name})` : ""));
     state.draftAt++;
     if (state.draftAt >= state.draftOrder.length) {
       state.phase = "deploy";
@@ -163,7 +182,7 @@
     const sid = callup(state, data, tid);
     if (!sid) throw new Error(`${index(data).byId[tid].name} has no players left`);
     state.pending--;
-    log(state, `${state.seats[state.turn].name} calls up ${state.soldiers[sid].name} in ${index(data).byId[tid].name}`);
+    log(state, `${act(state, state.turn, "calls up")} ${state.soldiers[sid].name} in ${index(data).byId[tid].name}`);
     if (state.phase === "deploy" && state.pending === 0) {
       state.deployLeft[state.turn] = 0;
       const next = state.seats.findIndex((_, k) => state.deployLeft[k] > 0);
@@ -234,37 +253,58 @@
     const A = state.soldiers[sa], D = state.soldiers[sd], home = R(state, data).home_field;
     const p = winProb(A, D, home);
     const a = drawSeason(state, A), d = drawSeason(state, D);
-    const attackerWins = a[1] > d[1] + home;
+    const attackerWins = beats(a[1], d[1], home);
     const [wTid, wSid, lTid, lSid] = attackerWins ? [from, sa, to, sd] : [to, sd, from, sa];
     removeSoldier(state, lTid, lSid);
-    const att = state.seats[state.turn].name, def = state.seats[state.owner[to]].name;
-    const result = { from, to, attacker: sa, defender: sd, aSeason: a, dSeason: d, attackerWins, p, round: state.round,
+    const attackerSeat = state.turn, defenderSeat = state.owner[to];
+    const result = { from, to, attacker: sa, defender: sd, attackerSeat, defenderSeat, aSeason: a, dSeason: d, attackerWins, p,
+      round: state.round,
       text: `${A.name} (${a[0]}, ${fmt(a[1])} WAR) ${attackerWins ? "beats" : "loses to"} ${D.name} (${d[0]}, ${fmt(d[1])} + ${home} home)` };
-    log(state, `${att} attacks ${index(data).byId[to].name} from ${index(data).byId[from].name}: ${result.text}; ${state.soldiers[lSid].name} is out`, { battle: true });
+    log(state, `${act(state, attackerSeat, "attacks")} ${index(data).byId[to].name} from ${index(data).byId[from].name}: ${result.text}; ${state.soldiers[lSid].name} is out`, { battle: true });
     retireIfDone(state, data, wTid, wSid);
     state.lastBattle = result;
-    if (!state.stacks[to].length) {   // captured
-      const loser = state.owner[to];
-      state.owner[to] = state.turn;
-      state.capture = { from, to };
-      log(state, `${att} captures ${index(data).byId[to].name} from ${def}`);
-      checkOut(state, data, loser);
-      result.captured = true;
-      if (state.stacks[from].length < 2) {   // nobody can move in: the territory's own bench sends a call-up
-        const sid = callup(state, data, to);
-        state.capture = null;
-        if (sid) log(state, `${state.soldiers[sid].name} is called up to hold ${index(data).byId[to].name}`);
-      }
-      if (owned(state, state.turn).length === data.territories.length) finish(state, data);
-    }
+    // only the attacker winning takes the territory (a defender who wins on his last season with an
+    // empty bench leaves it empty but still his: a neighbour can walk in, see occupy)
+    if (attackerWins && !state.stacks[to].length) result.captured = capture(state, data, from, to);
     return result;
   }
-  function moveIn(state, data, count) {
+  function capture(state, data, from, to) {
+    const loser = state.owner[to];
+    state.owner[to] = state.turn;
+    state.capture = { from, to };
+    log(state, `${act(state, state.turn, "captures")} ${index(data).byId[to].name} from ${whom(state, loser)}`);
+    checkOut(state, data, loser);
+    if (state.stacks[from].length < 2) {   // nobody can move in: the territory's own bench sends a call-up
+      const sid = callup(state, data, to);
+      state.capture = null;
+      if (sid) log(state, `${state.soldiers[sid].name} is called up to hold ${index(data).byId[to].name}`);
+    }
+    if (owned(state, state.turn).length === data.territories.length) finish(state, data);
+    return true;
+  }
+  // an enemy territory left with no soldiers (its last one retired with an empty bench) is taken
+  // without a battle by a neighbour with 2+ soldiers
+  function canOccupy(state, data, from, to) {
+    return state.phase === "turn" && !state.capture && state.owner[from] === state.turn && state.owner[to] !== state.turn
+      && state.owner[to] !== null && adjacent(data, from, to) && state.stacks[from].length >= 2 && state.stacks[to].length === 0;
+  }
+  function occupy(state, data, from, to) {
+    if (!canOccupy(state, data, from, to)) throw new Error("can't walk in there");
+    return capture(state, data, from, to);
+  }
+  // after a capture: move in `what` = a number (strongest first) or a list of soldier ids from the attacking territory
+  function moveIn(state, data, what) {
     const c = state.capture;
     if (!c) throw new Error("nothing to move");
     const stack = state.stacks[c.from];
-    count = Math.max(1, Math.min(count, stack.length - 1));
-    const moving = [...stack].sort((x, y) => mean(state.soldiers[y]) - mean(state.soldiers[x])).slice(0, count);
+    let moving;
+    if (Array.isArray(what)) {
+      moving = what.filter((s) => stack.includes(s));
+      if (!moving.length || moving.length >= stack.length) throw new Error("move at least one and leave at least one");
+    } else {
+      const count = Math.max(1, Math.min(what, stack.length - 1));
+      moving = [...stack].sort((x, y) => mean(state.soldiers[y]) - mean(state.soldiers[x])).slice(0, count);
+    }
     state.stacks[c.from] = stack.filter((s) => !moving.includes(s));
     state.stacks[c.to].push(...moving);
     state.capture = null;
@@ -273,7 +313,7 @@
   function checkOut(state, data, seat) {
     if (seat === null || owned(state, seat).length) return;
     state.seats[seat].alive = false;
-    log(state, `${state.seats[seat].name} is out of the game`);
+    log(state, `${act(state, seat, "is")} out of the game`);
     if (state.seats.filter((s) => s.alive).length === 1) finish(state, data);
   }
 
@@ -288,8 +328,17 @@
     const name = state.soldiers[sid].name;
     removeSoldier(state, tid, sid);
     const rep = callup(state, data, tid);
-    log(state, `${state.seats[state.turn].name} releases ${name}; ${state.soldiers[rep].name} is called up in ${index(data).byId[tid].name}`);
+    log(state, `${act(state, state.turn, "releases")} ${name}; ${state.soldiers[rep].name} is called up in ${index(data).byId[tid].name}`);
     return rep;
+  }
+  function reachable(state, data, from) {   // every territory the mover owns that `from` connects to
+    const seat = state.owner[from], seen = new Set([from]), queue = [from];
+    while (queue.length) {
+      const t = queue.shift();
+      for (const n of neighbours(data, t)) if (!seen.has(n) && state.owner[n] === seat) { seen.add(n); queue.push(n); }
+    }
+    seen.delete(from);
+    return seen;
   }
   function connected(state, data, from, to) {   // through territories the mover owns
     const seat = state.owner[from], seen = new Set([from]), queue = [from];
@@ -307,7 +356,7 @@
     state.stacks[from] = state.stacks[from].filter((s) => !sids.includes(s));
     state.stacks[to].push(...sids);
     state.fortified = true;
-    log(state, `${state.seats[state.turn].name} moves ${sids.length} from ${index(data).byId[from].name} to ${index(data).byId[to].name}`);
+    log(state, `${act(state, state.turn, "moves")} ${sids.length} from ${index(data).byId[from].name} to ${index(data).byId[to].name}`);
   }
 
   // ── the end ─────────────────────────────────────────────────────────────────
@@ -325,7 +374,7 @@
       .sort((a, b) => b[1].total - a[1].total || b[1].war - a[1].war);
     state.winner = ranked[0][0];
     state.standings = ranked.map(([k, sc]) => ({ seat: k, ...sc }));
-    log(state, `Game over: ${state.seats[state.winner].name} wins with ${ranked[0][1].total} points`);
+    log(state, `Game over: ${act(state, state.winner, "wins")} with ${ranked[0][1].total} points`);
   }
 
   // ── picking soldiers (the AI and "autorank") ─────────────────────────────────
@@ -392,11 +441,17 @@
     aiPlace(state, data);
     if (state.phase !== "turn" || state.turn !== seat) return;
     for (const t of owned(state, seat)) for (const sid of [...state.stacks[t]]) {
-      if (canRelease(state, data, t, sid) && state.stacks[t].length > 1) release(state, data, t, sid);
+      if (canRelease(state, data, t, sid)) release(state, data, t, sid);
     }
   }
   function aiNextAttack(state, data) {
     const seat = state.turn;
+    // first walk into any empty enemy territory next door
+    for (const from of owned(state, seat)) {
+      for (const to of neighbours(data, from)) {
+        if (state.phase === "turn" && canOccupy(state, data, from, to)) { occupy(state, data, from, to); aiAfterBattle(state, data); }
+      }
+    }
     if (state.phase !== "turn" || state.aiAttacks >= R(state, data).ai.max_attacks) return null;
     let pick = null, bestR = R(state, data).ai.aggression;
     for (const from of owned(state, seat)) {
@@ -442,7 +497,7 @@
   }
 
   const fmt = (x) => (Math.round(x * 10) / 10).toFixed(1);
-  const api = { seasonStats, prepare, R, rand, seedOf, index, neighbours, adjacent, owned, mean, best, benchNext, callup, winProb, newGame, draft, regionsHeld,
+  const api = { seasonStats, prepare, R, beats, act, canOccupy, occupy, reachable, rand, seedOf, index, neighbours, adjacent, owned, mean, best, benchNext, callup, winProb, newGame, draft, regionsHeld,
     callupsFor, place, canPlace, skipPlacement, startTurn, endTurn, canAttack, battle, moveIn, canRelease, release, connected,
     fortify, score, finish, pickSoldier, strength, threat, aiDraft, aiPlace, aiStart, aiNextAttack, aiAfterBattle, aiTurn, aiFortify, fmt };
   if (typeof window !== "undefined") window.HomeTurf = api;
