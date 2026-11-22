@@ -1,0 +1,8 @@
+# Today's rating as the prior (the v0.1.0 method; hindsight when backtesting)
+[meta]
+description = "Prior from each player's current SPINDEX rating instead of the rating they had at the time. Fine for today's forecasts, but a backtest with it is hindsight: RESEARCH.md §4 shows how much it flatters."
+
+[params]
+rating_source = "current"
+rating_center = 2630.0
+rating_points_per_logit = 840.0

@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Major League Table Tennis · Ball Monitor</title>
+  <meta name="description" content="MLTT with the luck taken out: expected points, schedule strength, Final Four chances and every player&#x27;s value.">
+  <link rel="canonical" href="https://ballmonitor.com/mltt/">
+  <meta property="og:title" content="Major League Table Tennis · Ball Monitor">
+  <meta property="og:description" content="MLTT with the luck taken out: expected points, schedule strength, Final Four chances and every player&#x27;s value.">
+  <meta property="og:url" content="https://ballmonitor.com/mltt/">
+  <!-- shell:head -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Ball Monitor">
+  <meta property="og:image" content="https://ballmonitor.com/static/share.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Ball Monitor: sports odds and forecasts, in plain numbers">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <!-- fonts served from this site (static/fonts.css), not Google Fonts -->
+  <link rel="preload" href="/static/fonts/open-sans-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/static/fonts/montserrat-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/static/fonts.css">
+  <script>document.documentElement.classList.add('ss-js')</script>
+  <link rel="stylesheet" href="/static/shioh-style.css">
+  <link rel="stylesheet" href="/static/site.css">
+  <script src="/static/shioh.js" defer></script>
+  <!-- /shell:head -->
+</head>
+<body class="ss">
+  <!-- Ball Monitor (/mltt/). Edit this page in Claude UI's Editor (or here). The words are yours;
+       site.js fills the parts marked data-slot / data-fill with the numbers (data/views/*.json).
+       The blocks between shell:* markers are the same on every page: the build takes them from
+       index.html (`python -m ballmonitor.web.pages sync` copies them to the other files). -->
+  <div class="ss-shell">
+    <!-- shell:sidebar -->
+    <aside class="ss-sidebar">
+      <section class="ss-cell ss-p1 ss-navcell">
+        <a class="ss-logo" href="/"><img src="/static/logo.png" alt="Ball Monitor" width="870" height="147"></a>
+        <button class="ss-btn ss-menu-btn" type="button" aria-controls="site-nav">Menu</button>
+        <nav class="ss-nav" id="site-nav" aria-label="Pages">
+          <a href="/" data-route="">Home</a>
+          <div id="nav-models" class="nav-models"></div>
+          <hr>
+          <a href="/triple/">Triple Play</a>
+          <a href="/lineup/">Lineup</a>
+          <a href="/27k/">27K</a>
+        </nav>
+      </section>
+      <section class="ss-cell ss-p4 side-about ss-desktop-only">
+        <!-- claude-ui:begin sidebar-about -->
+        <p class="side-title">Sports odds and forecasts, in plain numbers</p>
+        <p>College football forecasts, table tennis standings with the luck taken out, more than a century of box scores to search, baseball charts you draw yourself, and three baseball games.</p>
+        <!-- claude-ui:end sidebar-about -->
+        <p class="ss-muted small built"></p>
+      </section>
+    </aside>
+    <!-- /shell:sidebar -->
+    <div class="ss-main">
+    <main class="ss-main" id="app" data-page="mltt">
+      <section class="ss-cell ss-p1 page-head">
+        <a class="back" href="/">← Home</a>
+        <div class="ss-kicker">More sports</div>
+        <h1 class="ss-title" data-text="title">
+          <!-- claude-ui:begin title -->
+          Major League Table Tennis
+          <!-- claude-ui:end title -->
+        </h1>
+        <p class="summary" data-text="summary">
+          <!-- claude-ui:begin summary -->
+          Season <span data-fill="season">4</span> of MLTT with the luck taken out: expected points, schedule strength, Final Four chances and every player's value, from <span data-fill="played">34</span> matches played so far.
+          <!-- claude-ui:end summary -->
+        </p>
+        <!-- the headline (the one answer from the numbers) and the date they are as of -->
+        <div class="slot" data-slot="headline"></div>
+      </section>
+      <!-- the tables, charts and dropdowns (from data/views/mltt.json) -->
+      <div class="slot" data-slot="views"><section class="ss-cell ss-p1"><p class="loading">Loading the numbers…</p></section></div>
+      <section class="ss-cell ss-p1 how">
+        <div class="ss-band">How this works</div>
+        <p data-text="how">
+          <!-- claude-ui:begin how -->
+          Every player gets one number: their chance of winning a rally against an average MLTT player, worked out from every rally since 2024 and pulled toward the MLTT rating they had at the time. MLTT's own rules (games to 11 with a golden point at 10-10, the Golden Game race to 21 and its head start) turn those numbers into the chance of winning each game and each match, exactly. Luck is the points a team won beyond what its rallies were worth. The rest of the season is then played out thousands of times. MLTT matches are hard to call: in past seasons the favorite won about 60% of the time, so treat the chances as rough. Results and ratings come from MLTT's results site and its SPINDEX ratings.
+          <!-- claude-ui:end how -->
+        </p>
+        <p class="small"><a href="/editor.html?model=mltt">Full method, settings and assumptions →</a></p>
+      </section>
+    </main>
+    <!-- shell:footer -->
+    <footer class="ss-cell ss-p4 site-foot">
+      <nav aria-label="About this site"><a href="/about/">About</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></nav>
+      <p class="small">For fun and curiosity: these are estimates, not betting advice. <span class="built"></span></p>
+    </footer>
+    <!-- /shell:footer -->
+    </div>
+  </div>
+  <script src="/static/site.js"></script>
+</body>
+</html>

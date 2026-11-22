@@ -1,0 +1,165 @@
+[meta]
+title = "Major League Table Tennis"
+version = "0.2.0"
+status = "calibrated"  # data/backtest.csv + results in MODEL.md (weak skill, stated)
+question = "Who wins an MLTT match, which teams have been lucky, which players add the most, and who makes the Final Four?"
+description = """
+Every player gets one number, their edge in a single rally against an average MLTT player, fitted
+to every Stage One rally since 2024 and pulled toward the MLTT (SPINDEX) rating the player had at the time. The
+league's rules turn rally edges into game, Golden Game and match chances exactly, which gives
+expected points (and luck), points above average, win probability added, and a Monte Carlo of
+the rest of the season and the Final Four.
+"""
+assumptions = [
+  "Rallies are independent coin flips weighted by the two players' edges: no serve advantage, momentum, or fatigue.",
+  "A doubles pair's edge is the average of its two players' edges; doubles rallies count for less (game_weight).",
+  "A player's prior is the SPINDEX (MLTT) rating they had before the day being forecast, from their dated rating history; players with no history start at average.",
+  "Match and Final Four chances are only a little better than coin flips: in the Season 4 test so far, pre-match forecasts did no better than 50-50 (RESEARCH.md).",
+  "Future lineups repeat the season so far: each slot gets the games-weighted average edge of the players the team used there.",
+  "The Golden Game is played at the average of a team's five slot edges.",
+  "Win probability added uses a table for evenly matched teams (like baseball's WPA), so it measures how much a game mattered, not how hard it was.",
+  "Season 4 playoffs: the top two by points % in each division reach the Final Four (cross-division semifinals, one match each).",
+]
+
+[fetch]
+auto = true
+season = ["09-01", "04-30"]
+
+[web]
+public = true  # added to the site 2026-11-22 (owner's request)
+
+# ------------------------------------------------------------------ the league's rules
+[params.game_to]
+value = 11
+description = "Points to win a Stage One game; at one less each, the next rally wins (golden point, no deuce)."
+unit = "points"
+source = "mltt.com/format (fetched 2026-11-22): 'Win the Golden Point, win the game 11-10.'"
+range = [5, 21]
+
+[params.games_per_matchup]
+value = 3
+description = "Games in each of the five Stage One matchups; all are played, each worth one team point."
+unit = "games"
+source = "mltt.com/format: five matchups, 3 games to 11, all games played."
+range = [1, 5]
+
+[params.golden_to]
+value = 21
+description = "The Golden Game is a race to this many rallies; at one less each, one rally decides."
+unit = "points"
+source = "mltt.com/format: race to 21, 'one Ultimate Golden Point decides it'."
+range = [5, 41]
+
+[params.golden_worth]
+value = 6
+description = "Team points the Golden Game is worth."
+unit = "points"
+source = "mltt.com/format: '21 team points' = 15 Stage One games + 6."
+range = [0, 15]
+
+[params.max_head_start]
+value = 5
+description = "The Stage One leader starts the Golden Game ahead by its lead, up to this many points."
+unit = "points"
+source = "mltt.com/format: 'MAXIMUM STARTING ADVANTAGE IS 5 POINTS'."
+range = [0, 15]
+
+[params.playoff_rule]
+value = "division_top2"
+description = "Who reaches the Final Four: division_top2 = top two by points % in each division (semis 1st v other division's 2nd); overall_top4 = best four overall (1v4, 2v3)."
+source = "MLTT 2025-26 schedule announcement ('top two teams from each division'); Season 3 data agrees. Season 2 (8 teams) took the top four overall."
+choices = ["division_top2", "overall_top4"]
+
+# ----------------------------------------------------------------------------- ratings
+[params.use_rating_prior]
+value = true
+description = "Pull each player's edge toward the value implied by their MLTT (SPINDEX) rating instead of toward average."
+source = "Judgement: early-season MLTT samples are small; the rating sums up a player's other results."
+
+[params.rating_source]
+value = "dated"
+description = "Which MLTT rating sets the prior: dated = the SPINDEX rating the player had before the day being forecast (from their rating history); current = today's rating (hindsight when looking back)."
+source = "spindex.mltt.com rating histories (public API); RESEARCH.md compares both."
+choices = ["dated", "current"]
+
+[params.rating_center]
+value = 2620.0
+description = "MLTT rating of an average MLTT player (edge 0)."
+unit = "rating points"
+source = "RESEARCH.md §1: 209 player-seasons, results-only edge vs the SPINDEX rating held before the season (no hindsight)."
+range = [2000.0, 3200.0]
+
+[params.rating_points_per_logit]
+value = 1180.0
+description = "MLTT rating points per unit of rally edge (log-odds of one rally); bigger = the rating matters less."
+unit = "rating points"
+source = "RESEARCH.md §1: 1176 rating points per unit of rally edge (correlation 0.54, dated ratings)."
+range = [50.0, 5000.0]
+
+[params.prior_rallies]
+value = 800.0
+description = "How many rallies the prior is worth: a player with this many rallies is rated half from results, half from the prior."
+unit = "rallies"
+source = "RESEARCH.md §2: best game log loss on Seasons 2-3 walk-forward with dated ratings (400-800 nearly equal)."
+range = [0.0, 1000000.0]
+
+[params.season_decay]
+value = 0.25
+description = "Weight of a rally from one season earlier (two seasons: squared)."
+source = "RESEARCH.md §2: best of 0.25/0.5/1 on Seasons 2-3 walk-forward (differences tiny)."
+range = [0.0, 1.0]
+
+[params.doubles_weight]
+value = 0.5
+description = "Weight of a doubles rally relative to a singles rally when fitting edges."
+source = "RESEARCH.md §2: best of 0.25/0.5/1 on Seasons 2-3 walk-forward (differences tiny)."
+range = [0.0, 1.0]
+
+[params.fit_iterations]
+value = 60
+description = "Maximum Newton sweeps over all players when fitting edges (stops earlier once settled)."
+source = "Judgement: converges in ~15 sweeps on the 2024-2026 data."
+range = [1, 500]
+
+# -------------------------------------------------------------------------- simulation
+[params.team_rating_sd]
+value = 0.05
+description = "Spread of each team's unknown true edge around its fitted edge, drawn once per simulated season."
+unit = "rally log-odds"
+source = "RESEARCH.md §3: match log loss nearly flat from 0 to 0.05 on Seasons 2-3 (0.6555 vs 0.6562); 0.05 by judgement because the Season 4 test match forecasts were overconfident (§4)."
+range = [0.0, 0.5]
+
+[params.sim_grid_step]
+value = 0.01
+description = "Simulated rating errors are rounded to this step so each match's exact points distribution is computed once."
+unit = "rally log-odds"
+source = "Judgement: well below one point of rally %."
+range = [0.001, 0.1]
+
+[params.simulations]
+value = 10000
+description = "Simulated seasons."
+source = "Judgement: playoff chances to about +/-0.5%."
+range = [100, 200000]
+
+[params.seed]
+value = 2026
+description = "Random seed (same seed, same result)."
+source = "Judgement."
+range = [0, 1000000000]
+
+# ---------------------------------------------------------------------------- formulas
+[formulas.rally_prob]
+expr = "logistic(diff)"
+description = "Chance of winning one rally from the edge difference (own minus opponent's). The fit assumes this logistic link."
+variables = ["diff"]
+
+[formulas.prior_mean]
+expr = "(rating - rating_center) / rating_points_per_logit"
+description = "A player's prior edge from their MLTT rating."
+variables = ["rating"]
+
+[formulas.game_weight]
+expr = "season_decay ** age * (doubles_weight if doubles else 1)"
+description = "Weight of one game's rallies in the fit; age = seasons before the one being rated, doubles = 1 for doubles."
+variables = ["age", "doubles"]

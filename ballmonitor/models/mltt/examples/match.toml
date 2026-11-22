@@ -1,0 +1,5 @@
+# One match forecast: two current teams, from all games played so far (real teams; the lineup
+# is the model's guess from the season so far).
+kind = "match"
+team_a = "Carolina Gold Rush"
+team_b = "Bay Area Blasters"

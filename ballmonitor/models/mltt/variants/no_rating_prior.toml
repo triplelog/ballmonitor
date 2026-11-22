@@ -1,0 +1,6 @@
+# Results only (the hindsight-free model)
+[meta]
+description = "Results only: every player's edge is pulled toward an average MLTT player instead of toward their MLTT rating, so no hindsight from today's ratings."
+
+[params]
+use_rating_prior = false
