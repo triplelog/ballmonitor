@@ -1,0 +1,160 @@
+[meta]
+title = "Where baseball players come from"
+version = "0.1.0"
+status = "draft"  # descriptive maps: nothing to backtest
+question = "Per million people, how many big-leaguers (and how many home runs, hits, wins...) were born around each place, decade by decade?"
+description = """
+Every player in the Lahman database is placed at his birthplace (GeoNames). For each 20 km map cell
+and each birth decade, the smallest circle around the cell holding one million people is found from
+the historical population grid (ISIMIP/HYDE, 5 arc-minutes, the decade's middle year); the cell shows
+a formula over the career totals of the players born inside that circle in that decade, so every
+value is per million people.
+"""
+assumptions = [
+  "A player counts where he was born (Lahman's birth city, matched to GeoNames); players with no recorded birthplace or birth year, or a place that matches nothing (under 1%), are left off.",
+  "Each decade is compared with the population in its middle year (the 1920s with 1925); the 1840s use 1850, the first year in the population grid.",
+  "Historical population grids are estimates (HYDE 3.2 spread within countries, scaled to national totals); small towns before 1950 are the least certain.",
+  "A circle is measured in its frame's equal-area projection (main map, Alaska, Hawaii): distances are within a few percent of true. Circles under about 10 km are approximate (the population grid is about 9 km).",
+  "Career totals count everything a player did in the majors, whenever and wherever he played; a decade is his birth decade.",
+  "Cells with no circle of one million people within max_radius_km (Alaska and Hawaii in early decades) are left blank.",
+]
+
+[web]
+public = true
+
+# ---------------------------------------------------------------------------- circles
+[params.people]
+value = 1000000
+description = "People inside each cell's circle: every map value is per this many people (sums are divided by the population actually inside the stored circle, so exactly per this many). Changing it (or any circle or decade setting) takes a rebuild of the grids: ballmonitor fetch baseball_birthplaces."
+unit = "people"
+source = "Owner's spec (2026-11-22): the smallest circle containing 1 million people."
+range = [10000, 100000000]
+
+[params.cell_km]
+value = 20.0
+description = "Map cell size (each cell gets its own circle)."
+unit = "km"
+source = "Judgement: fine enough to show cities, small enough to ship one decade in about 100 KB."
+range = [5.0, 100.0]
+
+[params.pop_cell_km]
+value = 10.0
+description = "Grid the population is gathered into (in each frame's projection) before measuring circles; must divide cell_km."
+unit = "km"
+source = "Judgement: about the population grid's own resolution (5 arc-minutes, 7-9 km)."
+range = [2.0, 50.0]
+
+[params.min_radius_km]
+value = 3.0
+description = "Smallest circle tried."
+unit = "km"
+source = "Judgement: below the population grid's resolution."
+range = [0.5, 50.0]
+
+[params.max_radius_km]
+value = 1200.0
+description = "Largest circle tried; a cell with fewer people within this distance is left blank."
+unit = "km"
+source = "Judgement: covers the Great Plains and Canadian Prairies in the 1800s; Alaska and Hawaii stay blank until they reach a million within reach."
+range = [50.0, 3000.0]
+
+[params.radius_step]
+value = 0.06
+description = "Each circle tried is this much bigger than the last (6%); the radius is interpolated between the two around one million."
+source = "Judgement: well within the population data's own uncertainty."
+range = [0.01, 0.5]
+
+[params.exact_iterations]
+value = 16
+description = "Halvings of the bracket between two tried radii: the circle then holds `people` to within about 0.01%."
+source = "Judgement: 6% / 2^16 is far below the population data's own accuracy."
+range = [0, 40]
+
+[params.first_decade]
+value = 1840
+description = "First birth decade mapped (the oldest players were born in the 1830s-40s)."
+unit = "year"
+source = "Lahman: about 300 players born before 1850."
+range = [1800, 2000]
+
+[params.last_decade]
+value = 2000
+description = "Last birth decade mapped."
+unit = "year"
+source = "Lahman 2025: players born up to 2005."
+range = [1900, 2020]
+
+[params.pop_first_year]
+value = 1850
+description = "First year in the population grid; earlier decades use it."
+unit = "year"
+source = "ISIMIP3a histsoc population starts in 1850."
+range = [1850, 2021]
+
+[params.pop_last_year]
+value = 2021
+description = "Last year in the population grid; later decades use it."
+unit = "year"
+source = "ISIMIP3a histsoc population ends in 2021."
+range = [1850, 2021]
+
+# -------------------------------------------------------------------- birthplace size
+[params.city_density]
+value = 3000.0
+description = "People per square km assumed for a birthplace city: a player born in a city of P people is spread evenly over a disk of P / city_density square km."
+unit = "people per km²"
+source = "DRAFT: a typical U.S. city density (Census urbanized areas 1,000-4,000/km², big cores higher); verify"
+range = [100.0, 50000.0]
+
+[params.max_spread_km]
+value = 30.0
+description = "Largest birthplace disk (a player from a huge city is spread at most this far)."
+unit = "km"
+source = "Judgement: about a big metro's core."
+range = [0.0, 200.0]
+
+# ------------------------------------------------------------------------------ frames
+# [lat0, lon0, lat_min, lat_max, lon_min, lon_max]: projection centre and the lat/lon box shown
+[params.frame_main]
+value = [33.0, -88.0, 9.5, 56.0, -126.0, -52.0]
+description = "Main map: lower 48, southern Canada, northern Mexico, the Caribbean and the Venezuelan coast."
+source = "Owner's spec (2026-11-22): continental U.S., Puerto Rico, the Caribbean, parts of Canada."
+
+[params.frame_alaska]
+value = [62.0, -152.0, 54.0, 71.5, -169.0, -130.0]
+description = "Alaska inset."
+source = "Owner's spec."
+
+[params.frame_hawaii]
+value = [20.5, -157.3, 18.8, 22.4, -160.4, -154.6]
+description = "Hawaii inset."
+source = "Owner's spec."
+
+# -------------------------------------------------------------------------------- page
+[params.site_default_formula]
+value = "players"
+description = "The map the page opens with (formula `value`)."
+source = "Judgement: big-leaguers per million people is the plainest map."
+
+[params.site_colors]
+value = "sunset"
+description = "Colour scale the page opens with."
+source = "Judgement."
+choices = ["sunset", "viridis", "magma", "blues", "greens", "red-blue"]
+
+# ---------------------------------------------------------------------------- formulas
+[formulas.spread]
+expr = "min(sqrt(place_pop / (pi * city_density)), max_spread_km)"
+description = "Radius (km) of the disk a player's birth is spread over, from his birthplace's population (GeoNames, today's): towns stay points, big cities spread their players over the city."
+variables = ["place_pop"]
+
+[formulas.include]
+expr = "1"
+description = "Which players count (1 = yes), from one player's career numbers, e.g. G >= 100 or HOF."
+variables = ["G", "AB", "R", "H", "doubles", "triples", "HR", "RBI", "SB", "BB", "SO", "W", "L", "GS", "SV", "IP", "ER", "K", "AS", "HOF", "MVP", "CY", "seasons", "debut", "born"]
+
+[formulas.value]
+expr = "players"
+description = "The value of a cell from the sums of those numbers over the players born in its circle (per million people), plus `players` = how many, e.g. HR, H / AB, AS / players. Add _<decade> for another birth decade's numbers in that decade's own circle, e.g. HR_1980 / HR_1910."
+variables = ["players", "G", "AB", "R", "H", "doubles", "triples", "HR", "RBI", "SB", "BB", "SO", "W", "L", "GS", "SV", "IP", "ER", "K", "AS", "HOF", "MVP", "CY", "seasons", "debut", "born"]
+variable_pattern = "(players|G|AB|R|H|doubles|triples|HR|RBI|SB|BB|SO|W|L|GS|SV|IP|ER|K|AS|HOF|MVP|CY|seasons|debut|born)_[12][0-9]{2}0"

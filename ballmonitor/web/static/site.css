@@ -373,3 +373,40 @@ h1[tabindex="-1"]:focus { outline: none; }
   .ss-nav a { padding-top: 0.22rem; padding-bottom: 0.22rem; line-height: 1.3; }
   .ss-navcell { padding-bottom: 0.9rem; }
 }
+
+/* birthplace maps (apps/birthplace_map.js) */
+.app-birthplace_map .bm-controls { display: flex; flex-wrap: wrap; align-items: end; gap: 0.5rem 0.9rem; margin: 0.4rem 0; }
+.app-birthplace_map .bm-controls label { display: grid; gap: 0.15rem; font-weight: 600; font-size: 0.9rem; }
+.app-birthplace_map .bm-controls input[type="text"] { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+.app-birthplace_map .bm-slider { flex: 1 1 18rem; }
+.app-birthplace_map .bm-slider input { width: 100%; }
+.app-birthplace_map .bm-decade { font-family: var(--ss-font-head); font-size: 1.3rem; font-weight: 700; }
+.app-birthplace_map .bm-msg { min-height: 1.4em; margin: 0.3rem 0; font-size: 0.92rem; }
+.app-birthplace_map .bm-maps { display: grid; gap: 0.5rem; }
+.app-birthplace_map canvas.bm-map { width: 100%; height: auto; display: block; cursor: crosshair; background: #d6e2ee; }
+.app-birthplace_map .bm-insets { display: flex; gap: 0.6rem; align-items: flex-start; }
+.app-birthplace_map .bm-insets figure { margin: 0; }
+.app-birthplace_map .bm-insets .bm-alaska { width: min(20rem, 55vw); }
+.app-birthplace_map .bm-insets .bm-hawaii { width: min(9rem, 28vw); }
+.app-birthplace_map .bm-insets figcaption { font-size: 0.8rem; font-weight: 600; }
+.app-birthplace_map .bm-legend { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 0.6rem; margin: 0.5rem 0; font-size: 0.9rem; }
+.app-birthplace_map .bm-bar { flex: 1 1 12rem; height: 0.9rem; border: 1px solid rgba(0, 0, 0, 0.3); }
+.app-birthplace_map .bm-key { font-size: 0.82rem; }
+.app-birthplace_map .bm-sw { display: inline-block; width: 0.9rem; height: 0.9rem; vertical-align: -0.15rem; border: 1px solid rgba(0, 0, 0, 0.3); }
+.app-birthplace_map .bm-sw.none { background: #ececE8; }
+.app-birthplace_map .bm-details { margin: 0.6rem 0; padding: 0.5rem 0.7rem; background: rgba(255, 255, 255, 0.45); }
+.app-birthplace_map .bm-players { columns: 2 16rem; margin: 0.3rem 0; padding-left: 1.1rem; font-size: 0.9rem; }
+.app-birthplace_map .bm-names { columns: 2 14rem; padding-left: 1.1rem; }
+.app-birthplace_map .bm-help summary { cursor: pointer; font-weight: 600; }
+.app-birthplace_map canvas.bm-map.bm-drawing { cursor: copy; outline: 3px dashed rgba(0, 0, 0, 0.45); outline-offset: -3px; }
+.app-birthplace_map .bm-draw { align-items: center; }
+.app-birthplace_map .bm-draw-hint { flex: 1 1 16rem; }
+.app-birthplace_map .bm-h { margin: 1rem 0 0.4rem; font-family: var(--ss-font-head); font-size: 1.05rem; }
+.app-birthplace_map .bm-rwrap { overflow-x: auto; }
+.app-birthplace_map .bm-rtable { border-collapse: collapse; font-size: 0.9rem; min-width: 100%; }
+.app-birthplace_map .bm-rtable th, .app-birthplace_map .bm-rtable td { padding: 0.3rem 0.45rem; border-bottom: 1px solid rgba(0, 0, 0, 0.15); text-align: right; white-space: nowrap; }
+.app-birthplace_map .bm-rtable th:first-child, .app-birthplace_map .bm-rtable td:first-child,
+.app-birthplace_map .bm-rtable td:nth-child(8) { text-align: left; }
+.app-birthplace_map .bm-rtable input { width: 7.5rem; }
+.app-birthplace_map .bm-rchart { margin: 0.6rem 0; }
+.app-birthplace_map .bm-rplayers summary { cursor: pointer; font-weight: 600; margin: 0.3rem 0; }

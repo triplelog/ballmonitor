@@ -24,6 +24,7 @@ ingest = [  # one-off data ingest scripts (and their tests); not needed to run m
   "sportsdataverse>=0.0.39",  # ncaaf_recruiting 247Sports/On3 scrapers
   "rdata>=0.11",  # triple_play build: CRAN Lahman .rda files
 ]
+maps = ["h5py>=3.10"]  # baseball_birthplaces/fetch.py: reads the ISIMIP population grids (NetCDF4); not needed to build the site
 video = ["playwright>=1.45"]  # `ballmonitor export-replay` (cfb_replay -> MP4); also needs ffmpeg  # next_pitch method = "gbm" (the model falls back to its context tree without it)
 research = ["ballmonitor[data,ml]", "torch>=2.6"]  # next_pitch/research.py (sequence transformer)
 
