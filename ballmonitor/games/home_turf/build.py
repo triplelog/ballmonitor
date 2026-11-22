@@ -38,6 +38,21 @@ def load_map() -> dict:
                     problems.append(f"{tid}: unknown neighbour {n}")
                 elif tid not in terr[n].get(kind, []):
                     problems.append(f"{tid} -> {n} ({kind}) is not mutual")
+    for rid in m["regions"]:   # every region must be one connected piece (land or sea)
+        mem = {tid for tid, t in terr.items() if t["region"] == rid}
+        if not mem:
+            problems.append(f"region {rid} has no territories")
+            continue
+        start = next(iter(mem))
+        reach, todo = {start}, [start]
+        while todo:
+            t = todo.pop()
+            for n in terr[t].get("land", []) + terr[t].get("sea", []):
+                if n in mem and n not in reach:
+                    reach.add(n)
+                    todo.append(n)
+        if reach != mem:
+            problems.append(f"region {rid} is not connected: {sorted(mem - reach)} cut off")
     seen = {}
     for tid, t in terr.items():
         for mem in t["members"]:

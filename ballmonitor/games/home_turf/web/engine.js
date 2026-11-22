@@ -63,6 +63,13 @@
 
   // ── soldiers ────────────────────────────────────────────────────────────────
   const mean = (s) => (s.seasons.length ? s.seasons.reduce((a, x) => a + x[1], 0) / s.seasons.length : -9);
+  // the seasons a soldier has left: how many, median, total, best, worst
+  function seasonStats(seasons) {
+    const w = seasons.map((x) => x[1]).sort((a, b) => a - b), n = w.length;
+    if (!n) return { n: 0, median: null, total: 0, best: null, worst: null };
+    const median = n % 2 ? w[(n - 1) / 2] : (w[n / 2 - 1] + w[n / 2]) / 2;
+    return { n, median, total: Math.round(w.reduce((a, x) => a + x, 0) * 10) / 10, best: w[n - 1], worst: w[0] };
+  }
   const best = (s) => (s.seasons.length ? Math.max(...s.seasons.map((x) => x[1])) : -9);
   function benchNext(state, data, tid) {
     const roster = data.rosters[tid] || [];
@@ -351,7 +358,11 @@
       const reg = members[regionOf[t.id]];
       const mine = reg.filter((x) => state.owner[x] === seat).length, theirs = reg.filter((x) => state.owner[x] !== null && state.owner[x] !== seat).length;
       const near = neighbours(data, t.id).filter((n) => state.owner[n] === seat).length;
-      const v = depth(data, t.id) / 100 + (theirs ? 0 : 2.5 * (mine + 1) / reg.length * data.regions[regionOf[t.id]].bonus)
+      const bonus = data.regions[regionOf[t.id]].bonus;
+      // block: a region one rival is filling up alone is worth breaking into
+      const rivals = [...new Set(reg.map((x) => state.owner[x]).filter((o) => o !== null && o !== seat))];
+      const block = rivals.length === 1 && !mine ? R(state, data).ai.draft_block * (theirs / reg.length) * bonus : 0;
+      const v = depth(data, t.id) / 100 + (theirs ? 0 : 2.5 * (mine + 1) / reg.length * bonus) + block
         + 0.8 * near + rand(state) * 0.8;
       if (v > bestV) { bestV = v; bestT = t.id; }
     }
@@ -431,7 +442,7 @@
   }
 
   const fmt = (x) => (Math.round(x * 10) / 10).toFixed(1);
-  const api = { prepare, R, rand, seedOf, index, neighbours, adjacent, owned, mean, best, benchNext, callup, winProb, newGame, draft, regionsHeld,
+  const api = { seasonStats, prepare, R, rand, seedOf, index, neighbours, adjacent, owned, mean, best, benchNext, callup, winProb, newGame, draft, regionsHeld,
     callupsFor, place, canPlace, skipPlacement, startTurn, endTurn, canAttack, battle, moveIn, canRelease, release, connected,
     fortify, score, finish, pickSoldier, strength, threat, aiDraft, aiPlace, aiStart, aiNextAttack, aiAfterBattle, aiTurn, aiFortify, fmt };
   if (typeof window !== "undefined") window.HomeTurf = api;

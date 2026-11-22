@@ -20,7 +20,7 @@ assumptions = [
 ]
 
 [web]
-public = true
+public = false  # off the site for now (owner, 2026-11-22); code, data, page file and tests kept
 
 # ---------------------------------------------------------------------------- circles
 [params.people]

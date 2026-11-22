@@ -128,3 +128,16 @@ console.log(JSON.stringify({ innings: play('innings', 99), standard: play('stand
     assert out["innings"]["callupsMin"] == 4 and out["innings"]["aiAttacks"] == 9          # the 9-inning pacing
     assert out["standard"]["round"] == 16 and out["standard"]["callupsMin"] == 3
     assert out["unlimited"]["maxRounds"] == 0 and out["unlimited"]["round"] > 16           # still going after 20 rounds
+
+
+def test_regions_are_connected_and_few():
+    m = build.load_map()   # load_map also raises if a region is in pieces
+    assert len(m["regions"]) <= 8
+    assert {"north_carolina", "south_carolina"} <= set(m["territories"]) and "carolinas" not in m["territories"]
+
+
+@pytest.mark.skipif(NODE is None, reason="node is not installed")
+def test_season_stats():
+    out = node("""console.log(JSON.stringify([E.seasonStats([[1, 2.0], [2, -0.5], [3, 6.1], [4, 3.0]]), E.seasonStats([[1, 1.5]]), E.seasonStats([])]));""")
+    assert out[0] == {"n": 4, "median": 2.5, "total": 10.6, "best": 6.1, "worst": -0.5}
+    assert out[1]["median"] == 1.5 and out[2]["n"] == 0 and out[2]["median"] is None

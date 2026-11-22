@@ -1,7 +1,7 @@
 # Home Turf (play-test version)
 
 A strategy game on a map of where big-leaguers were born. Four managers (you and three AI) snake-draft
-42 territories. Each territory's soldiers are real players born there, called up best first. Battles
+43 territories in 8 regions. Each territory's soldiers are real players born there, called up best first. Battles
 are fought with their real seasons. On the site at ballmonitor.com/hometurf/ (the build copies `web/`);
 locally `ballmonitor serve`, then `/hometurf/`.
 
@@ -31,6 +31,8 @@ locally `ballmonitor serve`, then `/hometurf/`.
   At the end: 1 point per territory plus held regions' bonuses. Ties are broken by the remaining
   strength on the board. "End game now" scores any game. Games save as you play; "Save a copy"
   keeps up to 8 named copies (Saves to load).
+- **What you see.** Each manager's territories, region points and players on the board. For every
+  soldier and bench player: seasons left, and the median, total, best and worst WAR of those seasons.
 - **Autorank.** Settings let the game pick your defender (by default) and/or your attacker.
   - *Smart*: the cheapest player who is at least even against the other side's stack.
   - *Best*: your strongest.
@@ -40,9 +42,20 @@ locally `ballmonitor serve`, then `/hometurf/`.
 
 ## Files
 
-- `territories.toml`: the map. Each territory lists its birthplaces (Lahman states and countries;
-  California split at 35.8°N, Pennsylvania at 77.5°W), its region, land borders and sea lanes, and
-  its map position. Regions have bonuses. Edit freely; the build checks it.
+- `territories.toml`: the map. 43 territories; each lists its birthplaces (Lahman states and
+  countries; California split at 35.8°N, Pennsylvania at 77.5°W), its region, land borders and sea
+  lanes, and its map position. North and South Carolina are separate. 8 regions with bonuses:
+  - Pacific West +3
+  - Plains & Prairies +4
+  - Southwest +2
+  - Great Lakes +4
+  - Northeast +5
+  - Upper South +3
+  - Deep South +4
+  - Caribbean +2
+
+  Each region is drawn as a shaded area on the map. Edit freely; the build checks the map,
+  including that every region is one connected piece.
 - `rules.toml`: every rule number.
 - `build.py` (`python -m ballmonitor.games.home_turf.build`) writes `web/data/game.json`. It holds
   rosters of the 60 best natives per territory by career Open WAR (`models/open_war`), with every
@@ -66,7 +79,13 @@ locally `ballmonitor serve`, then `/hometurf/`.
 - With thin opening stacks the game snowballed; the current numbers fixed most of that.
 - Soldiers rarely run out of seasons before they lose, so retirement call-ups are rare. Releases
   happen a few times a game.
-- First pick won 20 of 60 games (25% would be even). Not clearly unfair yet; worth watching.
+- First pick won 20 of 60 games on the old 12-region map. With the 8 connected regions, the third
+  pick won 98 of 200 games and the fourth 17. The third pick always opened with New York and took
+  the whole Northeast (+5), because the AI never broke into a region a rival had started. The AI
+  draft now blocks: a territory in a region one rival is filling up alone is worth
+  `ai.draft_block` (6) × the rival's share × the bonus. Over 400 games the four draft positions
+  then won 112, 95, 82 and 111 (blocking 3: 75% more wins for the third pick; 5 and 8 were less
+  even).
 
 Game lengths (60 AI-only games each, current rules):
 

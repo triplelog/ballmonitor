@@ -226,7 +226,7 @@ pytest ballmonitor/models/race_time                # one model
   (Triple Play, Lineup, 27K; Home Turf added 2026-11-22). Archived with no mention on the site (public = false; code, page files,
   tests kept): `race_time`, `college_diamond` (college baseball/softball), `ranked_choice` and the
   progress pages (`progress_tracker`, `lichess_rating`, `running_progress`, `strength_progress`,
-  `weight_loss`). The build publishes only the `static/apps/*.js` the built pages use. Bringing a
+  `weight_loss`). The build publishes only the `static/apps/*.js` the built pages use. Also off since 2026-11-22: `baseball_birthplaces` (the birthplace maps). Bringing a
   page back: set public = true and restore its mentions (home description, About, Terms, share card).
 - **Live data tables** (`web/tables.toml`, `web/tables.py`): big CSVs served by tabdn table servers
   (tabc/sqldn, ~/Desktop/portfolio/mathzetta/tabdn) get a page at `/tables/<id>/` with a live
@@ -354,7 +354,7 @@ Games: `new27K/` (27K, at `/27k/`), `ballmonitor/games/lineup/` (Lineup daily ba
 distribution in the browser (`web/chain.js`, tested against chain.py under node), plus the 20 best orders and a
 hitter-by-slot grid prebuilt into each puzzle; puzzles prebuilt by `python -m ballmonitor.games.lineup.build`,
 needs numpy and the Lahman CSVs from Triple Play; see its README), `web/static/game.html` (Pitch Guesser, local only for now) and
-`ballmonitor/games/home_turf/` (Home Turf: 4-manager strategy game, you vs 3 AI, 15 rounds / 9 innings / no limit with save slots, on a 42-territory birthplace map; soldiers are natives called up best-first, battles draw one real Open WAR season each (used up), defender +0.5; at `/hometurf/` (copied by the build like the other games); see its README), `ballmonitor/games/triple_play/` (Triple Play daily Venn puzzle at `/triple/`: baseball Tue-Sun since 2026-11-23 always a team + a position (75% of games) + a stat/honor circle with only clear-cut players, 11 spots (Sunday 14), no spares; cities & states 17 spots and 25 cards, a spare per part; baseball from the
+`ballmonitor/games/home_turf/` (Home Turf: 4-manager strategy game, you vs 3 AI, 15 rounds / 9 innings / no limit with save slots, on a 43-territory, 8-region birthplace map; soldiers are natives called up best-first, battles draw one real Open WAR season each (used up), defender +0.5; at `/hometurf/` (copied by the build like the other games); see its README), `ballmonitor/games/triple_play/` (Triple Play daily Venn puzzle at `/triple/`: baseball Tue-Sun since 2026-11-23 always a team + a position (75% of games) + a stat/honor circle with only clear-cut players, 11 spots (Sunday 14), no spares; cities & states 17 spots and 25 cards, a spare per part; baseball from the
 Lahman database, cities & states on Monday from Wikipedia lists; puzzles prebuilt by
 `python -m ballmonitor.games.triple_play.build`; see its README).
 

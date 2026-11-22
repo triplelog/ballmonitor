@@ -42,6 +42,19 @@
   function drawMap() {
     const svg = $("#map");
     svg.replaceChildren();
+    // each region's area: its territories and the links between them as one soft shape (the group's
+    // opacity keeps overlaps from darkening)
+    for (const [rid, r] of Object.entries(data.regions)) {
+      const mem = data.territories.filter((t) => t.region === rid), ids = new Set(mem.map((t) => t.id));
+      const g = sv("g", { class: "region", opacity: 0.2, fill: r.color, stroke: r.color });
+      for (const t of mem) {
+        for (const n of [...t.land, ...t.sea]) {
+          if (ids.has(n) && t.id < n) { const o = ix.byId[n]; g.append(sv("line", { x1: t.x, y1: t.y, x2: o.x, y2: o.y, "stroke-width": 64, "stroke-linecap": "round" })); }
+        }
+        g.append(sv("circle", { cx: t.x, cy: t.y, r: 46, stroke: "none" }));
+      }
+      svg.append(g);
+    }
     const drawn = new Set();
     for (const t of data.territories) {
       for (const [kind, list] of [["land", t.land], ["sea", t.sea]]) {
@@ -89,7 +102,8 @@
       const sc = E.score(state, data, k);
       return el("div", { class: `seat${k === state.turn && state.phase !== "over" ? " now" : ""}${s.alive ? "" : " out"}` },
         el("i", { class: "dot", style: `background:${s.color}` }), s.name,
-        state.phase === "draft" ? "" : ` · ${sc.territories} territories${sc.regions ? ` + ${sc.regions} region pts` : ""}`);
+        ` · ${sc.territories} territories${sc.regions ? ` + ${sc.regions} region pts` : ""} · `
+          + `${E.owned(state, k).reduce((a, t) => a + state.stacks[t].length, 0)} players`);
     }));
   }
   function status() {
@@ -147,13 +161,13 @@
   function soldierRows(tid, opts = {}) {
     const rows = state.stacks[tid].map((sid) => {
       const s = state.soldiers[sid];
-      return { sid, s, mean: E.mean(s), best: E.best(s) };
+      return { sid, s, st: E.seasonStats(s.seasons), mean: E.mean(s) };
     }).sort((a, b) => b.mean - a.mean);
     return el("table", { class: "roster" },
-      el("tr", {}, ["Player", "Seasons left", "Avg", "Best", opts.vs ? "Win %" : "", ""].map((h) => el("th", {}, h))),
-      rows.map(({ sid, s, mean, best }) => el("tr", { class: opts.pick ? "pick" : "", onclick: opts.pick ? () => opts.pick(sid) : null },
+      el("tr", {}, ["Player", "Seasons", "Median", "Total", "Best", "Worst", opts.vs ? "Win %" : "", ""].map((h) => el("th", {}, h))),
+      rows.map(({ sid, s, st }) => el("tr", { class: opts.pick ? "pick" : "", onclick: opts.pick ? () => opts.pick(sid) : null },
         el("td", {}, s.name, s.home !== tid ? el("span", { class: "small" }, ` (${tname(s.home)})`) : ""),
-        el("td", {}, s.seasons.length), el("td", {}, f1(mean)), el("td", {}, f1(best)),
+        el("td", {}, st.n), el("td", {}, f1(st.median ?? -9)), el("td", {}, f1(st.total)), el("td", {}, f1(st.best ?? -9)), el("td", {}, f1(st.worst ?? -9)),
         el("td", { class: "pct" }, opts.vs ? pct(opts.vs(s)) : ""),
         el("td", {}, opts.release && E.canRelease(state, data, tid, sid) && myTurn() && state.step === "attack"
           ? el("button", { onclick: (e) => { e.stopPropagation(); E.release(state, data, tid, sid); save(); render(); } }, "Release") : ""))));
@@ -169,8 +183,9 @@
       el("p", { class: "small" }, `${data.regions[t.region].name} · ${owner === null ? "open" : state.seats[owner].name} · born here: ${t.members.join(", ")}`),
       state.stacks[tid].length ? soldierRows(tid, { release: true }) : el("p", { class: "small" }, "No soldiers."),
       el("h3", {}, "Next call-ups here"),
-      bench.length ? el("table", { class: "roster" }, el("tr", {}, ["Player", "Born", "Career WAR", "Seasons"].map((h) => el("th", {}, h))),
-        bench.map((p) => el("tr", {}, el("td", {}, p.name), el("td", {}, p.born), el("td", {}, f1(p.war)), el("td", {}, p.seasons.length))))
+      bench.length ? el("table", { class: "roster" }, el("tr", {}, ["Player", "Born", "Seasons", "Median", "Total", "Best", "Worst"].map((h) => el("th", {}, h))),
+        bench.map((p) => { const st = E.seasonStats(p.seasons); return el("tr", {}, el("td", {}, p.name), el("td", {}, p.born), el("td", {}, st.n),
+          el("td", {}, f1(st.median)), el("td", {}, f1(st.total)), el("td", {}, f1(st.best)), el("td", {}, f1(st.worst))); }))
         : el("p", { class: "small" }, "The bench is empty."));
   }
   function renderLog() {
@@ -240,7 +255,7 @@
     const rows = state.stacks[from].map((sid) => {
       const s = state.soldiers[sid];
       return el("label", {}, el("input", { type: "checkbox", onchange: (e) => { e.target.checked ? picked.add(sid) : picked.delete(sid); } }),
-        ` ${s.name}: ${s.seasons.length} seasons, avg ${f1(E.mean(s))}`);
+        ` ${s.name}: ${s.seasons.length} seasons left, median ${f1(E.seasonStats(s.seasons).median ?? -9)}, total ${f1(E.seasonStats(s.seasons).total)}`);
     });
     modal(el("h2", {}, `Move from ${tname(from)} to ${tname(to)}`), el("p", { class: "small" }, "One move per turn. Leave at least one soldier."), ...rows,
       el("div", { class: "actions" }, el("button", { class: "primary", onclick: () => {
@@ -368,7 +383,7 @@
       el("div", { class: "actions" }, el("button", { class: "primary", onclick: () => { closeModal(); render(); } }, "Done")));
   });
   $("#btn-help").addEventListener("click", () => modal(el("h2", {}, "How to play"),
-    el("p", {}, "Four managers (you and three AIs) snake-draft the 42 territories. Every territory's soldiers are real big-leaguers born there, called up best first (by career Open WAR)."),
+    el("p", {}, `Four managers (you and three AIs) snake-draft the ${data.territories.length} territories, grouped in ${Object.keys(data.regions).length} regions (the shaded areas). Every territory's soldiers are real big-leaguers born there, called up best first (by career Open WAR).`),
     el("p", {}, `After the draft each manager places ${data.rules.start_callups} call-ups. Each turn: call-ups (one per ${data.rules.territories_per_callup} territories, at least ${data.rules.callups_min}, plus the bonus of every region you hold whole), then battles, then one move of soldiers between your connected territories.`),
     el("p", {}, `A battle: you pick one of your soldiers, the defender picks one at the same time. Each plays one of his real seasons at random, and that season is used up. The defender adds ${data.rules.home_field} WAR for home field; the higher season wins and the loser is out of the game. Take a territory's last soldier and it's yours, with its bench of natives.`),
     el("p", {}, `A soldier who runs out of seasons retires and his territory calls up a replacement; one whose best remaining season is under ${data.rules.release_below} WAR can be released for a call-up.`),

@@ -39,3 +39,4 @@ region_bonus = true         # plus each held region's bonus
 [ai]
 aggression = 1.6            # attack when my strength is this many times the defender's
 max_attacks = 6             # battles per AI turn at most
+draft_block = 6.0           # in the draft, value of breaking into a region one rival is filling up (x its share x bonus)
