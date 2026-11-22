@@ -39,17 +39,18 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  build-and-deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  # Build and deploy are separate jobs (GitHub's own Pages templates do this): the deploy job starts
+  # only after the build job and its artifact upload have finished. In one job, deploy-pages twice
+  # asked for the artifact a second or two after the upload and GitHub didn't list it yet ("No
+  # artifacts named github-pages were found", 2026-11-19 and 2026-11-22); the data and site were fine.
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v7
         with:
           python-version: '3.12'
           cache: 'pip'
@@ -64,7 +65,7 @@ jobs:
       # under a new key each run, restored from the newest one. A miss is fine: the model
       # starts again from its committed data.
       - name: Restore scheduled-fetch state
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: ballmonitor/models/*/data/raw/scheduled
           key: scheduled-fetch-${{ github.run_id }}
@@ -81,13 +82,31 @@ jobs:
           fi
 
       - name: Setup Pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v5
         with:
           path: 'dist'
 
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url || steps.deployment_retry.outputs.page_url }}
+    steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        continue-on-error: true
+        uses: actions/deploy-pages@v5
+
+      # one more try after a pause if GitHub was slow to list the artifact (or had a hiccup)
+      - name: Wait before retrying
+        if: steps.deployment.outcome == 'failure'
+        run: sleep 30
+
+      - name: Retry deploy
+        id: deployment_retry
+        if: steps.deployment.outcome == 'failure'
+        uses: actions/deploy-pages@v5
