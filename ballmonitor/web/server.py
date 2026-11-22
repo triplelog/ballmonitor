@@ -30,7 +30,7 @@ STATIC = Path(__file__).resolve().parent / "static"
 GAME_27K = Path(__file__).resolve().parent.parent / "new27K" / "dist"
 GAME_TRIPLE = Path(__file__).resolve().parent.parent / "games" / "triple_play" / "web"
 GAME_LINEUP = Path(__file__).resolve().parent.parent / "games" / "lineup" / "web"
-GAME_HOME_TURF = Path(__file__).resolve().parent.parent / "games" / "home_turf" / "web"   # local only for now (not built)
+GAME_HOME_TURF = Path(__file__).resolve().parent.parent / "games" / "home_turf" / "web"   # at /hometurf/
 # the baseball charts: pyslots' embeddable form and templates (scripts/sync-charts.sh), shown at /charts/
 CHARTS = Path(__file__).resolve().parent.parent / "charts"
 CONTENT_TYPES = {".html": "text/html", ".js": "text/javascript", ".css": "text/css", ".json": "application/json",
@@ -309,9 +309,11 @@ class Handler(BaseHTTPRequestHandler):
             if len(parts) == 1 and not url.path.endswith("/"):
                 return self._redirect("/lineup/")
             return self._game_dir(GAME_LINEUP, parts[1:] or ["index.html"])
-        if parts and parts[0] == "home_turf":   # Home Turf (local play-test; not on the public site yet)
+        if parts and parts[0] == "home_turf":   # the play-test address
+            return self._redirect("/hometurf/")
+        if parts and parts[0] == "hometurf":   # Home Turf
             if len(parts) == 1 and not url.path.endswith("/"):
-                return self._redirect("/home_turf/")
+                return self._redirect("/hometurf/")
             return self._game_dir(GAME_HOME_TURF, parts[1:] or ["index.html"])
         if parts[0] == "static" and len(parts) == 2:
             return self._static(parts[1])

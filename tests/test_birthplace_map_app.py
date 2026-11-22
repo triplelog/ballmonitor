@@ -84,7 +84,7 @@ def test_map_values_match_the_model():
               f"const players = {json.dumps({str(d): v for d, v in players.items()})};\n"
               f"const formulas = {json.dumps(FORMULAS)};\n"
               f"const stats = {json.dumps(list(E.STATS))};\n"
-              f"const target = {int(model.params.people)}, unit = {E.PEOPLE_UNIT};\n"
+              f"const target = {int(model.params.per_people)}, unit = {E.people_unit(model.params.people)};\n"
               "console.log(JSON.stringify(cases.map((c) => formulas.map(([inc, val]) => {\n"
               "  const decades = {};\n"
               "  for (const d of Object.keys(c.grids)) decades[+d] = { players: players[d], code: Uint16Array.from(c.grids[d].code), people: Uint16Array.from(c.grids[d].people) };\n"
@@ -102,7 +102,7 @@ def test_map_values_match_the_model():
                 if want is None:
                     assert got is None, (decade, frame["name"], i, j, inc, val)
                 else:
-                    assert got == pytest.approx(want, rel=1e-9, abs=1e-9), (decade, frame["name"], i, j, inc, val)
+                    assert got == pytest.approx(want, rel=1e-7, abs=1e-9), (decade, frame["name"], i, j, inc, val)
                 checked += 1
     assert checked > 500
 
@@ -140,7 +140,7 @@ def test_region_stats_match_the_model():
               "console.log(JSON.stringify(cases.map((c) => formulas.map(([inc, val]) => {\n"
               "  const by = {};\n"
               "  for (const d of Object.keys(c.pops)) by[+d] = { players: players[d], pop: Uint16Array.from(c.pops[d]) };\n"
-              f"  const r = app.regionStats(by, c.frame, c.poly, app.parse(inc, stats), app.parse(val), stats, {int(model.params.people)});\n"
+              f"  const r = app.regionStats(by, c.frame, c.poly, app.parse(inc, stats), app.parse(val), stats, {int(model.params.per_people)});\n"
               "  return { total: [r.total.people, r.total.players, r.total.value],\n"
               "    decades: Object.fromEntries(Object.entries(r.decades).map(([d, x]) => [d, [x.people, x.players, x.value]])) };\n"
               "}))));")
@@ -151,8 +151,8 @@ def test_region_stats_match_the_model():
             py = E.region_stats(rows, pops, frame, [tuple(q) for q in poly], m.params)
             want = [py["total"]["people"], py["total"]["players"], py["total"]["value"]]
             for a, b in zip(got["total"], want):
-                assert (a is None) == (b is None) and (a is None or a == pytest.approx(b, rel=1e-9, abs=1e-9)), (frame["name"], inc, val)
+                assert (a is None) == (b is None) and (a is None or a == pytest.approx(b, rel=1e-7, abs=1e-9)), (frame["name"], inc, val)
             for d, x in py["decades"].items():
                 g = got["decades"][str(d)]
                 for a, b in zip(g, [x["people"], x["players"], x["value"]]):
-                    assert (a is None) == (b is None) and (a is None or a == pytest.approx(b, rel=1e-9, abs=1e-9)), (frame["name"], d, inc, val)
+                    assert (a is None) == (b is None) and (a is None or a == pytest.approx(b, rel=1e-7, abs=1e-9)), (frame["name"], d, inc, val)

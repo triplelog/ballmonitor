@@ -1,6 +1,6 @@
 // Birthplace maps (the baseball_birthplaces page's "app" view): for each map cell and birth decade,
 // a formula over the career totals of the players born within the smallest circle around the
-// cell that holds a million people. The circles (one PNG per decade and frame) and the players
+// cell that holds data.circle_people people (values per data.people). The circles (one PNG per decade and frame) and the players
 // (one JSON per decade) are built by the model's fetch.py and loaded when a decade is shown.
 //
 // laea(), parse()/evaluate() (Python's formula rules: core/formula.py) and compute() are copies of
@@ -200,8 +200,12 @@
       xs.push(x); ys.push(y); ss.push(players.spread[p]);
       used.forEach((k, j) => vals[j].push(players[k][p]));
     }
-    const B = 50, bx0 = frame.x0 - 1500, by0 = frame.y0 - 1500;   // buckets so a circle looks only near itself
-    const bnx = Math.ceil((frame.nx * frame.cell + 3000) / B), bny = Math.ceil((frame.ny * frame.cell + 3000) / B);
+    // buckets so a circle looks only near itself; the margin covers the largest circle plus a birthplace disk
+    let rmax = 0;
+    for (let q = 0; q < code.length; q++) if (code[q] !== NONE_WITHIN && code[q] > rmax) rmax = code[q];
+    const margin = rmax / 10 + ss.reduce((a, b) => Math.max(a, b), 0) + 50;
+    const B = 50, bx0 = frame.x0 - margin, by0 = frame.y0 - margin;
+    const bnx = Math.ceil((frame.nx * frame.cell + 2 * margin) / B), bny = Math.ceil((frame.ny * frame.cell + 2 * margin) / B);
     const buckets = new Map();
     xs.forEach((x, p) => {
       const bi = Math.floor((x - bx0) / B), bj = Math.floor((ys[p] - by0) / B);
@@ -535,7 +539,7 @@
       regionsBox,
       el("details", { class: "bm-help" }, el("summary", {}, "Formula names"),
         el("p", { class: "small" }, "Each name is the total per million people for the players born in a place's circle; ", el("code", {}, "players"),
-          " is how many. Add a decade for another decade's numbers, each in that decade's own million-person circle: ",
+          " is how many. Add a decade for another decade's numbers, each in that decade's own circle: ",
           el("code", {}, "HR_1980 / HR_1910"), ", ", el("code", {}, "players_1990 - players_1950"),
           ". Use + − * / ** ( ), comparisons, and, or, not, ", el("code", {}, "a if test else b"),
           ", and min, max, abs, round, log, sqrt."),
@@ -808,7 +812,7 @@
       const bar = el("div", { class: "bm-bar", style: `background: linear-gradient(to right, ${stops.join(", ")})` });
       legend.replaceChildren(el("span", {}, fmtNum(sc.lo)), bar,
         el("span", {}, (state.scale === "rank" ? "highest" : fmtNum(sc.hi)) + (clipped ? "+" : "")),
-        el("span", { class: "bm-key" }, el("i", { class: "bm-sw none" }), " no circle of a million people, or no value"));
+        el("span", { class: "bm-key" }, el("i", { class: "bm-sw none" }), ` no circle of ${data.circle_label || "a million"} people, or no value`));
     }
 
     function showCell(fi, ev) {
@@ -819,7 +823,7 @@
       const c = current.codes[fi][j * f.nx + i];
       if (c === OCEAN || c === undefined) { details.replaceChildren(el("p", { class: "small" }, "That's water.")); return; }
       if (c === NONE_WITHIN) {
-        details.replaceChildren(el("p", { class: "small" }, `Fewer than a million people lived within ${data.max_radius_km.toLocaleString()} km of here in ${data.pop_year[state.decade]}.`));
+        details.replaceChildren(el("p", { class: "small" }, `Fewer than ${data.circle_label || "a million"} people lived within ${data.max_radius_km.toLocaleString()} km of here in ${data.pop_year[state.decade]}.`));
         return;
       }
       const r = c / 10, P = current.players;

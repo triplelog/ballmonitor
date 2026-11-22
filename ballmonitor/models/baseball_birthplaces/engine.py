@@ -22,7 +22,12 @@ from pathlib import Path
 R_EARTH = 6371.0088  # km, mean radius (definitional)
 NONE_WITHIN = 65535   # radius code: no circle up to max_radius_km holds enough people
 OCEAN = 0             # radius code: not land (not drawn)
-PEOPLE_UNIT = 50      # the people grid stores the population inside each circle in units of 50
+PEOPLE_UNIT = 50      # people grid units per million people in a circle (50 for 1 million, 500 for 10 million)
+
+
+def people_unit(people: float) -> int:
+    """The people grid's unit for circles of `people`: 1/20,000 of it (16-bit codes reach 3.3 x people)."""
+    return max(1, round(PEOPLE_UNIT * float(people) / 1e6))
 DECADE_NAME = re.compile(r"([A-Za-z]\w*?)_(\d{4})$")   # HR_1910: a number for another birth decade
 
 # Career numbers each player carries; formulas use these names. (label, description)
@@ -233,7 +238,7 @@ def radius_grid(pop_lat, pop_lon, pop, frame: Frame, p):
         if ok.any():
             held = people_within(prefix, grid, rr[ok], cc[ok], stored[ok] / 10 / pc, n_max)
             pf = people_out[found]
-            pf[ok] = np.clip(np.round(held / PEOPLE_UNIT), 1, 65535)
+            pf[ok] = np.clip(np.round(held / people_unit(people)), 1, 65535)
             people_out[found] = pf
     # land: any pop cell whose centre lies in the display cell
     k = int(round(frame.cell / pc))
@@ -318,7 +323,7 @@ def decade_for(born, p) -> int | None:
     return min(max(d, int(p.first_decade)), int(p.last_decade))
 
 
-def count_grid(players: list[dict], code, frame: dict, people=None, per: float = 1.0):
+def count_grid(players: list[dict], code, frame: dict, people=None, per: float = 1.0, unit: int = PEOPLE_UNIT):
     """How many of `players` were born within each cell's circle (numpy; NaN where not drawn);
     with the people grid, per `per` people (count x per / population in the circle)."""
     import numpy as np
@@ -338,7 +343,7 @@ def count_grid(players: list[dict], code, frame: dict, people=None, per: float =
     for q, idx in enumerate(near):
         out[jj[q], ii[q]] = sum(overlap(math.hypot(pts[k, 0] - cx[q], pts[k, 1] - cy[q]), rad[q], spread[k]) for k in idx)
     if people is not None:
-        pg = np.asarray(people, dtype=float) * PEOPLE_UNIT
+        pg = np.asarray(people, dtype=float) * unit
         out = np.where(pg > 0, out * per / np.maximum(pg, 1), np.nan)
     return out
 
@@ -426,9 +431,9 @@ def check_names(expr: str, decades: list[int]) -> None:
 
 
 def cell_sums(players: list[dict], code, people, frame: dict, p, cells) -> dict:
-    """{(i, j): (players, {stat: sum})} per million people (`people`) for one decade: the included
+    """{(i, j): (players, {stat: sum})} per `per_people` people for one decade: the included
     players (formula `include`) born within each cell's circle, each counted by the share of his
-    birthplace disk (radius `spread`) inside it, scaled by people / (population in the circle).
+    birthplace disk (radius `spread`) inside it, scaled by per_people / (population in the circle).
     Cells with no circle are left out."""
     pts = []
     for r in players:
@@ -441,7 +446,7 @@ def cell_sums(players: list[dict], code, people, frame: dict, p, cells) -> dict:
         if c in (OCEAN, NONE_WITHIN):
             continue
         rad = c / 10
-        scale = float(p.people) / (people[j][i] * PEOPLE_UNIT) if people is not None else 1.0
+        scale = float(p.per_people) / (people[j][i] * people_unit(p.people)) if people is not None else 1.0
         cx = frame["x0"] + (i + 0.5) * frame["cell"]
         cy = frame["y0"] + (frame["ny"] - j - 0.5) * frame["cell"]
         sums = {k: 0.0 for k in STATS}
@@ -595,7 +600,7 @@ def region_stats(by_decade: dict, pops: dict, frame: dict, poly, p) -> dict:
     sums scaled per `people` people (all decades: per `people` people per decade, i.e. divided by
     the sum of each decade's population). Suffixed names (HR_1910) are that decade's scaled sums."""
     decades = sorted(pops)
-    per = float(p.people)
+    per = float(p.per_people)
     rows = {}
     for d in decades:
         players = [r for r in by_decade.get(d, [])

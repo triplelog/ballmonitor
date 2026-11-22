@@ -92,7 +92,7 @@ def test_every_address_is_a_real_page_in_the_sitemap(site):
     index = json.loads((site / "data" / "site.json").read_text(encoding="utf-8"))
     sitemap = re.findall(r"<loc>https://ballmonitor\.com(/[^<]*)</loc>", (site / "sitemap.xml").read_text())
     assert len(sitemap) == len(set(sitemap))
-    expected = {"/", "/about/", "/privacy/", "/terms/", "/charts/", "/triple/", "/lineup/", "/27k/",
+    expected = {"/", "/about/", "/privacy/", "/terms/", "/charts/", "/triple/", "/lineup/", "/27k/", "/hometurf/",
                 "/ncaaf_bowls/team/georgia/", *(f"/{m['name']}/" for m in index["models"]),
                 *(f"/tables/{t['id']}/" for t in index["tables"]), *(f"/charts/{c['id']}/" for c in index["charts"])}
     assert expected <= set(sitemap)

@@ -41,7 +41,7 @@ SITE_NAME = "Ball Monitor"
 # The text pages (web/site/<name>/index.html), linked from every page's footer.
 TEXT_PAGES = ("about", "privacy", "terms")
 # First parts of addresses the site itself uses; a page address may not be one of these.
-RESERVED = {"static", "data", "charts", "tables", "triple", "lineup", "27k", "editor.html", "replay.html",
+RESERVED = {"static", "data", "charts", "tables", "triple", "lineup", "27k", "hometurf", "editor.html", "replay.html",
             "index.html", "404.html", "robots.txt", "sitemap.xml", *TEXT_PAGES}
 SHARED = ("shell:head", "shell:sidebar", "shell:footer")   # identical on every page; index.html's win
 

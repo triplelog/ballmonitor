@@ -35,6 +35,12 @@ PRESETS = [
 ]
 
 
+def millions(n) -> str:
+    """10000000 -> "10 million", 1000000 -> "a million"."""
+    m = float(n) / 1e6
+    return "a million" if m == 1 else f"{m:g} million" if m >= 1 else f"{int(n):,}"
+
+
 def _by_decade(model) -> dict[int, list[dict]]:
     out: dict[int, list[dict]] = {}
     for r in E.load_players(model.dir / "data", model.params):
@@ -72,7 +78,8 @@ def _top_places(model, meta, by) -> list[dict]:
         best = None
         for f in meta["frames"]:
             code = E.load_grid(model.dir / "data", d, f["name"])
-            counts = E.count_grid(players, code, f, E.load_people(model.dir / "data", d, f["name"]), float(model.params.people))
+            counts = E.count_grid(players, code, f, E.load_people(model.dir / "data", d, f["name"]),
+                                  float(model.params.per_people), E.people_unit(model.params.people))
             import numpy as np
             if np.isnan(counts).all():
                 continue
@@ -100,26 +107,28 @@ def page(model) -> dict:
     by = _by_decade(model)
     top = _top_places(model, meta, by)
     decades = meta["decades"]
+    circle = millions(p.people)
     default = decades[-2] if len(decades) > 1 else decades[-1]   # the last full decade
     app = V.app(
         "map", "Big-leaguers per million people, by birthplace", "birthplace_map",
         {"files": "/data/files/baseball_birthplaces/", "frames": meta["frames"], "decades": decades,
-         "people": int(p.people), "people_unit": E.PEOPLE_UNIT,
+         "people": int(p.per_people), "people_unit": E.people_unit(p.people), "circle_people": int(p.people),
+         "circle_label": circle,
          "pop_year": {int(k): v for k, v in meta["pop_year"].items()}, "players": meta["players"],
          "max_radius_km": meta["max_radius_km"], "default_decade": default,
          "include": p.expr("include"), "value": p.expr("value"), "palette": p.site_colors,
          "stats": E.STATS, "statNames": list(E.STATS),
          "presets": [{"label": a, "include": b, "value": c} for a, b, c in PRESETS]},
-        subtitle="Every spot on the map gets the smallest circle around it holding a million people at the time; "
-                 "the colour is how many big-leaguers were born in that circle in the decade you pick. Pick another "
+        subtitle=f"Every spot on the map gets the smallest circle around it holding {circle} people at the time; "
+                 "the colour is how many big-leaguers were born in that circle in the decade you pick, per million people. Pick another "
                  "map, write your own formula, or draw your own areas on the map to compare them decade by decade.",
-        note="Blank land: fewer than a million people within "
-             f"{int(meta['max_radius_km']):,} km at the time (Alaska and Hawaii until the mid-1900s).")
+        note=f"Blank land: fewer than {circle} people within "
+             f"{int(meta['max_radius_km']):,} km at the time (Hawaii always; Alaska and the far North for most decades).")
     table = V.table(
         "top", "The biggest hotbed of each decade",
         [V.col("decade", "Born in"), V.col("place", "Around"), V.col("per_million", "Big-leaguers per million", "number", decimals=1, bar=True),
          V.col("radius", "Circle (km)", "int"), V.col("year", "Population of"), V.col("players", "Big-leaguers born", "int")],
-        top, subtitle="The spot whose million-person circle produced the most big-leaguers, named after the most common birthplace in it.")
+        top, subtitle=f"The spot whose {circle}-person circle produced the most big-leaguers per million people, named after the most common birthplace in it.")
     hot = top[-2] if len(top) > 1 else top[-1]
     headline = (f"Born in the {hot['decade']}: around {hot['place']}, {hot['per_million']:.0f} big-leaguers per million people, "
                 "more than anywhere else on the map")
@@ -127,7 +136,7 @@ def page(model) -> dict:
         title="Where baseball players come from", sport="Baseball",
         summary="Maps of where big-leaguers were born, per million people, decade by decade since the 1840s.",
         how="Each player is placed at his birthplace from the Lahman database. For every spot on the map, the smallest circle "
-            "around it that held a million people in the decade (from historical population estimates) is found, and the map "
+            f"around it that held {circle} people in the decade (from historical population estimates) is found, and the map "
             "adds up the careers of the players born inside it, so every number is per million people. You can change what is "
             "added up and how it is coloured.",
         updated=f"Careers through {int(max(r['debut'] + r['seasons'] - 1 for rs in by.values() for r in rs))}; population estimates 1850-2021",

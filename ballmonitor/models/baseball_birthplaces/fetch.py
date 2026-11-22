@@ -191,7 +191,7 @@ def build_grids(raw: Path, data: Path, p, players: list[dict], log=print) -> dic
         log(f"  {d}s: population {year}, {counts.get(d, 0)} players")
     meta = {"frames": [f.to_json() for f in frames], "decades": decades,
             "pop_year": {str(d): pop_year(d, p) for d in decades}, "players": {str(d): counts.get(d, 0) for d in decades},
-            "people": int(p.people), "radius_unit_km": 0.1, "people_unit": E.PEOPLE_UNIT, "ocean": E.OCEAN, "none_within": E.NONE_WITHIN,
+            "people": int(p.people), "radius_unit_km": 0.1, "people_unit": E.people_unit(p.people), "per_people": int(p.per_people), "ocean": E.OCEAN, "none_within": E.NONE_WITHIN,
             "max_radius_km": float(p.max_radius_km),
             "built_with": {k: float(getattr(p, k)) for k in GRID_PARAMS}}
     (data / "grid" / "meta.json").write_text(json.dumps(meta, indent=1) + "\n")

@@ -38,22 +38,31 @@ browser (`web/static/apps/birthplace_map.js`).
    Venezuelan coast), Alaska and Hawaii each have their own spherical Lambert azimuthal
    equal-area projection (`frame_*`: centre plus a lat/lon box). Distances inside a frame are
    within a few percent of true. Map cells are `cell_km` = 20 km.
-4. **Circles, exactly one million.** The population grid is gathered into `pop_cell_km` = 10 km
+4. **Circles of exactly `people` (10 million), values per million.** The population grid is gathered into `pop_cell_km` = 10 km
    cells in the frame's projection, placed so every map cell's centre is a population cell's
    centre, with a margin of `max_radius_km`.
    1. A ladder of radii (`min_radius_km` to `max_radius_km`, each `radius_step` = 6% bigger) is
       tried with a disk convolution. This brackets the radius where the circle reaches `people` =
-      1,000,000.
+      10,000,000.
    2. Bisection (`exact_iterations` = 16) narrows the radius. It counts people with chord sums row
       by row (partial cells by the fraction covered), the same count that is stored.
    3. The population inside the stored circle is saved too (`grid/<decade>_<frame>_people.png`, in
-      units of 50). Every sum is multiplied by 1,000,000 / that population, so map values are
-      exactly per million even when a dense 10 km population cell makes the count jump past one
-      million at some radius.
+      units of `people` / 20,000, i.e. 500). Every sum is multiplied by `per_people` (1,000,000) /
+      that population, so map values are exactly per million people.
 
-   With bisection, 98% of circles hold 0.997-1.002 million people (1920s) and 0.988-1.006 million
-   (1990s); the scaling corrects the rest. A cell with fewer people within `max_radius_km` = 1,200
-   km gets no circle (blank). These are Alaska and Hawaii in early decades.
+   98% of circles hold 99.8–100.1% of 10 million people. Circles are wide:
+
+   | decade | median radius |
+   |---|---|
+   | 1850s | 1,455 km |
+   | 1920s | 1,007 km |
+   | 1990s | 519 km |
+
+   So the map shows regions rather than towns. A cell with fewer than 10 million people within
+   `max_radius_km` = 2,500 km gets no circle and is blank:
+   - Hawaii, always.
+   - Alaska, until the later decades (55% of its land by the 1990s).
+   - The far West in the 1850s (84% of the main map has a circle).
 5. **Spread of a birthplace.** A player is spread evenly over a disk of radius `spread` =
    `min(sqrt(place_pop / (pi * city_density)), max_spread_km)`. Here `place_pop` is the
    birthplace's GeoNames population. He counts in a circle by the share of that disk inside it
@@ -150,4 +159,8 @@ None: descriptive.
 
 ## Changelog
 
+- 0.2.0 (2026-11-22): circles of 10 million people instead of 1 million (owner's request; smoother,
+  regional maps), with values still per million (`per_people`). `max_radius_km` 1,200 → 2,500 and
+  `min_radius_km` 3 → 10; the people grid's unit scales with `people`. The browser's player buckets
+  now reach the largest circle (they stopped at 1,500 km; caught by the JS-vs-Python test).
 - 0.1.0 (2026-11-22): first version.

@@ -1,7 +1,7 @@
 """Where baseball players come from. See MODEL.md.
 
 predict(): one place and one birth decade -> the map's value there (formula `value`), how many
-big-leaguers were born within the place's million-person circle, the circle's size, and who they
+big-leaguers per million were born within the place's circle (`people`, 10 million), its size, and who they
 were. The public page's map (web/static/apps/birthplace_map.js) computes the same for every cell.
 """
 
@@ -70,12 +70,12 @@ class BaseballBirthplacesModel(BaseModel):
         everyone = E.load_players(data, p)
         by = {d: [r for r in everyone if E.decade_for(r["born"], p) == d] for d in {decade, *others}}
         grids = {d: (E.load_grid(data, d, f["name"]), E.load_people(data, d, f["name"])) for d in {decade, *others}}
-        held = grids[decade][1][j][i] * E.PEOPLE_UNIT
-        steps.append(f"People inside the stored circle: {held:,} (sums are scaled by {int(p.people):,} / {held:,} "
-                     "so they are exactly per million).")
+        held = grids[decade][1][j][i] * E.people_unit(p.people)
+        steps.append(f"People inside the stored circle: {held:,} (sums are scaled by {int(p.per_people):,} / {held:,} "
+                     f"so they are exactly per {int(p.per_people):,} people).")
         if others:
             steps.append("The value formula also uses " + ", ".join(f"the {d}s (circle {grids[d][0][j][i] / 10:.1f} km)" for d in others)
-                         + ", each in its own decade's million-person circle.")
+                         + f", each in its own decade's {int(p.people):,}-person circle.")
         val = E.cell_values(by, grids, f, p, decade, cells=[(i, j)]).get((i, j))
         x0, y0 = f["x0"] + (i + 0.5) * f["cell"], f["y0"] + (f["ny"] - j - 0.5) * f["cell"]
         inside = []
@@ -86,7 +86,7 @@ class BaseballBirthplacesModel(BaseModel):
             w = E.overlap(math.hypot(x - x0, y - y0), r, q["spread"])
             if w > 0:
                 inside.append((w, q))
-        n = sum(w for w, _ in inside) * float(p.people) / held
+        n = sum(w for w, _ in inside) * float(p.per_people) / held
         steps.append(f"Included players (formula include: {p.expr('include')}) per million people: {n:.2f}; "
                      f"value = {p.expr('value')} = {'none' if val is None else f'{val:.4g}'}.")
         inside.sort(key=lambda t: -t[1]["G"])
@@ -95,7 +95,7 @@ class BaseballBirthplacesModel(BaseModel):
         return self.prediction(
             inputs={"place": label, "lat, lon": f"{lat:.3f}, {lon:.3f}", "decade": f"{decade}s",
                     "population year": year},
-            outcomes=[Outcome(f"Value ({p.expr('value')}) per {int(p.people):,} people", estimate=val if val is not None else 0.0,
+            outcomes=[Outcome(f"Value ({p.expr('value')}) per {int(p.per_people):,} people", estimate=val if val is not None else 0.0,
                               note="" if val is not None else "not computable here"),
                       Outcome("Big-leaguers per million (this decade)", estimate=n, group="Circle"),
                       Outcome("Circle radius (km)", estimate=r, group="Circle")],
@@ -122,7 +122,7 @@ class BaseballBirthplacesModel(BaseModel):
         by = {d: [r for r in everyone if E.decade_for(r["born"], p) == d] for d in meta["decades"]}
         pops = {d: E.load_pop(data, d, f["name"]) for d in meta["decades"]}
         res = E.region_stats(by, pops, f, poly, p)
-        per = float(p.people)
+        per = float(p.per_people)
         steps = [f"{name}: a {len(corners)}-corner area in the {f['label']} frame (equal-area projection centred on "
                  f"{f['lat0']}, {f['lon0']}).",
                  f"Population per decade: each {f['cell']:g} km map cell's people (ISIMIP/HYDE, the decade's middle year) "

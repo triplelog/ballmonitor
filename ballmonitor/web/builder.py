@@ -35,7 +35,7 @@ from ballmonitor.web import charts, pages, server, tables
 STATIC_DIR = Path(__file__).resolve().parent / "static"
 SITE_URL = "https://ballmonitor.com"  # canonical address (robots.txt, sitemap.xml)
 # The games' own pages; every forecast, table, chart and text page is added by build_pages.
-GAME_PATHS = ["/triple/", "/lineup/", "/27k/"]
+GAME_PATHS = ["/triple/", "/lineup/", "/27k/", "/hometurf/"]
 # Share tags the build adds to the games' pages: path -> (title, description)
 GAME_META = {
     "/triple/": ("Triple Play: a daily baseball Venn puzzle",
@@ -43,6 +43,8 @@ GAME_META = {
     "/lineup/": ("Lineup: a daily batting-order puzzle",
                  "Nine real hitters from baseball history. Put them in the batting order that scores the most runs."),
     "/27k/": ("27K: a pitching game", "A baseball pitching game: get 27 outs."),
+    "/hometurf/": ("Home Turf: a strategy game of baseball birthplaces",
+                   "Draft territories, call up the big-leaguers born there and battle three AI managers with their real seasons."),
 }
 
 
@@ -428,6 +430,9 @@ def build_static_site(out_dir: Path | str = "dist", models: list[str] | None = N
     # 1d. Lineup (daily batting-order puzzle; prebuilt by games/lineup/build.py) -> dist/lineup/
     if server.GAME_LINEUP.is_dir():
         shutil.copytree(server.GAME_LINEUP, target / "lineup", dirs_exist_ok=True)
+    # 1d'. Home Turf (strategy game; data prebuilt by games/home_turf/build.py) -> dist/hometurf/
+    if server.GAME_HOME_TURF.is_dir():
+        shutil.copytree(server.GAME_HOME_TURF, target / "hometurf", dirs_exist_ok=True)
 
     # 1d'. the games' own pages get the site's share tags (their sources stay as they are)
     for path, (title, description) in GAME_META.items():
@@ -529,7 +534,7 @@ def _remove_stale(target: Path, data_dir: Path, previous: set[str], started: flo
     doesn't, unless written during this build (an old address now holding a forwarding stub), and
     page data for addresses that are no longer on the site. CI builds from scratch, so this only
     matters locally."""
-    keep = {"data", "static", "charts", "tables", "about", "privacy", "terms", "triple", "lineup", "27k"}
+    keep = {"data", "static", "charts", "tables", "about", "privacy", "terms", "triple", "lineup", "27k", "hometurf"}
     # forwarding stubs (noindex pages at old addresses) not rewritten by this build are stale too
     stubs = {f.parent.name for f in target.glob("*/index.html")
              if f.stat().st_mtime < started and 'content="noindex"' in f.read_text(encoding="utf-8")}

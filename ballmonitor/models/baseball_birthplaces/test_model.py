@@ -58,7 +58,7 @@ def test_decades():
 def test_default_example_san_pedro_1980s():
     pred = run()
     assert pred.extras["frame"] == "main"
-    assert 20 < pred.extras["radius_km"] < 120           # a million people around San Pedro de Macorís
+    assert 60 < pred.extras["radius_km"] < 400           # 10 million people around San Pedro de Macorís
     assert pred.extras["players"] > 20                    # a famous hotbed
     assert pred.extras["value"] == pytest.approx(pred.extras["players"])   # value = players
 
@@ -74,16 +74,19 @@ def test_formulas_move_the_value():
 
 
 def test_spread_dilutes_big_cities():
-    pinned = run("home_runs_la_1950s", max_spread_km=0.0)
-    spread = run("home_runs_la_1950s")
-    assert spread.extras["players"] < pinned.extras["players"]   # LA births no longer all downtown
+    # a small box around downtown Los Angeles: pinned to one point, every LA birth is inside it;
+    # spread over the city (about 20 km), only part of them
+    box = {"name": "downtown LA", "region": [[34.10, -118.30], [34.10, -118.19], [34.00, -118.19], [34.00, -118.30]]}
+    pinned = load(max_spread_km=0.0).predict(box)
+    spread = load().predict(box)
+    assert spread.extras["total"]["players"] < 0.5 * pinned.extras["total"]["players"]
 
 
 def test_exactly_per_million():
     pred = run()
     held = pred.extras["people_in_circle"]
-    assert abs(held / 1_000_000 - 1) < 0.02           # the circle holds about a million...
-    # ...and the count is scaled to exactly per million by the people actually in it
+    assert abs(held / load().params.people - 1) < 0.02   # the circle holds about `people` (10 million)...
+    # ...and the count is scaled to exactly per million (per_people) by the people actually in it
     assert pred.extras["players"] == pytest.approx(pred.extras["value"])
 
 

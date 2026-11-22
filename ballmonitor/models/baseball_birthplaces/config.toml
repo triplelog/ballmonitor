@@ -1,6 +1,6 @@
 [meta]
 title = "Where baseball players come from"
-version = "0.1.0"
+version = "0.2.0"
 status = "draft"  # descriptive maps: nothing to backtest
 question = "Per million people, how many big-leaguers (and how many home runs, hits, wins...) were born around each place, decade by decade?"
 description = """
@@ -16,7 +16,7 @@ assumptions = [
   "Historical population grids are estimates (HYDE 3.2 spread within countries, scaled to national totals); small towns before 1950 are the least certain.",
   "A circle is measured in its frame's equal-area projection (main map, Alaska, Hawaii): distances are within a few percent of true. Circles under about 10 km are approximate (the population grid is about 9 km).",
   "Career totals count everything a player did in the majors, whenever and wherever he played; a decade is his birth decade.",
-  "Cells with no circle of one million people within max_radius_km (Alaska and Hawaii in early decades) are left blank.",
+  "Each circle holds 10 million people (`people`); values are per million (`per_people`). Cells with no such circle within max_radius_km (Hawaii; Alaska and the far North for most decades) are left blank.",
 ]
 
 [web]
@@ -24,11 +24,18 @@ public = true
 
 # ---------------------------------------------------------------------------- circles
 [params.people]
-value = 1000000
-description = "People inside each cell's circle: every map value is per this many people (sums are divided by the population actually inside the stored circle, so exactly per this many). Changing it (or any circle or decade setting) takes a rebuild of the grids: ballmonitor fetch baseball_birthplaces."
+value = 10000000
+description = "People inside each cell's circle (sums are divided by the population actually inside the stored circle, then reported per per_people). Changing it (or any circle or decade setting) takes a rebuild of the grids: ballmonitor fetch baseball_birthplaces."
 unit = "people"
-source = "Owner's spec (2026-11-22): the smallest circle containing 1 million people."
+source = "Owner's spec (2026-11-22): 1 million at first, then 10 million (smoother maps; small places no longer stand alone)."
 range = [10000, 100000000]
+
+[params.per_people]
+value = 1000000
+description = "Map values are per this many people (each circle's sums times per_people / the people in it)."
+unit = "people"
+source = "Judgement: 'per million people' reads naturally whatever the circle size."
+range = [1000, 100000000]
 
 [params.cell_km]
 value = 20.0
@@ -45,17 +52,17 @@ source = "Judgement: about the population grid's own resolution (5 arc-minutes, 
 range = [2.0, 50.0]
 
 [params.min_radius_km]
-value = 3.0
+value = 10.0
 description = "Smallest circle tried."
 unit = "km"
-source = "Judgement: below the population grid's resolution."
+source = "Judgement: 10 million people never fit within 10 km on a 5' grid."
 range = [0.5, 50.0]
 
 [params.max_radius_km]
-value = 1200.0
+value = 2500.0
 description = "Largest circle tried; a cell with fewer people within this distance is left blank."
 unit = "km"
-source = "Judgement: covers the Great Plains and Canadian Prairies in the 1800s; Alaska and Hawaii stay blank until they reach a million within reach."
+source = "Judgement: with 10-million circles, reaches across the Great Plains and Prairies in the 1800s; Hawaii (1.4 million, 3,900 km from California) stays blank."
 range = [50.0, 3000.0]
 
 [params.radius_step]

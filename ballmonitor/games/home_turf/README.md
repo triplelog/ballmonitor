@@ -2,8 +2,8 @@
 
 A strategy game on a map of where big-leaguers were born. Four managers (you and three AI) snake-draft
 42 territories. Each territory's soldiers are real players born there, called up best first. Battles
-are fought with their real seasons. Local only for now: `ballmonitor serve`, then open `/home_turf/`.
-It is not in the public build.
+are fought with their real seasons. On the site at ballmonitor.com/hometurf/ (the build copies `web/`);
+locally `ballmonitor serve`, then `/hometurf/`.
 
 ## Rules (rules.toml has every number)
 
