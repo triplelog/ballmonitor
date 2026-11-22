@@ -1,0 +1,41 @@
+# Home Turf's rules: every number the game uses (build.py copies them into web/data/game.json).
+
+players = 4                 # you + 3 AI managers
+max_rounds = 15             # the game ends after this many rounds (or when one manager holds every territory)
+home_field = 0.5            # WAR added to the defender's season in every battle
+start_callups = 16          # call-ups each manager places after the draft (8 made games snowball: README, play-test)
+callups_min = 3             # call-ups per turn at least ...
+territories_per_callup = 3  # ... or one per this many territories held, if more; plus region bonuses
+release_below = 1.0         # a soldier whose best remaining season is under this can be released (replaced by a call-up)
+roster_depth = 60           # players per territory in the game data (its bench for call-ups)
+min_seasons = 1             # seasons a player needs to be on a bench (any season counts)
+
+# Game lengths offered at the start (each overrides the numbers above; max_rounds = 0: no limit,
+# the game runs until one manager holds the map or you end it).
+[lengths.standard]
+label = "15 rounds"
+note = "About 45 minutes."
+
+[lengths.innings]
+label = "9 innings"
+note = "A shorter game: more call-ups and battles every inning, about as much action as 15 rounds."
+max_rounds = 9
+callups_min = 4             # 9-inning play-test (README): as many battles and captures as 15 rounds,
+territories_per_callup = 2  # winner holds about half the map, a third of games within 5 points
+
+[lengths.innings.ai]
+max_attacks = 9
+aggression = 1.45
+
+[lengths.unlimited]
+label = "No limit"
+note = "Until one manager holds every territory, or you end it. Saved as you go."
+max_rounds = 0
+
+[score]
+per_territory = 1           # end-of-game points per territory held
+region_bonus = true         # plus each held region's bonus
+
+[ai]
+aggression = 1.6            # attack when my strength is this many times the defender's
+max_attacks = 6             # battles per AI turn at most

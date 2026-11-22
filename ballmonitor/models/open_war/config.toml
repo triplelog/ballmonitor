@@ -1,0 +1,183 @@
+[meta]
+title = "Open WAR"
+version = "0.2.0"
+status = "draft"
+question = "How many wins above a replacement player was each big-leaguer worth, season by season?"
+description = """
+A simple, open wins-above-replacement from the Lahman database: linear-weight batting runs against
+the league that year, a position adjustment and replacement runs for hitters; runs allowed against
+the league average plus replacement runs for pitchers; both park-adjusted and turned into wins with a
+runs-per-win formula. Every weight is here to change.
+"""
+assumptions = [
+  "No fielding runs: a great or poor defender is valued only by his position's adjustment.",
+  "Pitchers are judged by runs allowed (RA9), so their fielders' and park's help is only partly removed (park factors yes, defence no).",
+  "League averages are the same league and year (all players, including pitchers' batting).",
+  "Replacement levels are set so a 30-team season holds about 1,000 WAR, 57% batting and 43% pitching (the levels Baseball-Reference and FanGraphs adopted together in 2013); older seasons get the same per-PA and per-inning levels.",
+  "Players who were mostly pitchers in a season don't get batting value (pitcher_batting = false).",
+  "Caught stealing is missing for many early seasons (counted as 0).",
+]
+
+# Computed from the Lahman CSVs, which live only in Triple Play's local raw folder (not in git):
+# kept off the site build (CI has no copy), and its examples are skipped where they're missing.
+[web]
+public = false
+
+[local]
+requires = ["ballmonitor/games/triple_play/data/raw/lahman_csv/People.csv"]
+
+[params.w_single]
+value = 0.47
+description = "Runs added by a single (linear weights)."
+unit = "runs"
+source = "Linear weights, about 1960-2010 averages (Tango, Lichtman & Dolphin, The Book, 2007); DRAFT verify per era"
+range = [0.0, 2.0]
+
+[params.w_double]
+value = 0.78
+description = "Runs added by a double."
+unit = "runs"
+source = "The Book (2007) linear weights; DRAFT verify"
+range = [0.0, 2.0]
+
+[params.w_triple]
+value = 1.07
+description = "Runs added by a triple."
+unit = "runs"
+source = "The Book (2007) linear weights; DRAFT verify"
+range = [0.0, 3.0]
+
+[params.w_hr]
+value = 1.40
+description = "Runs added by a home run."
+unit = "runs"
+source = "The Book (2007) linear weights; DRAFT verify"
+range = [0.0, 3.0]
+
+[params.w_bb]
+value = 0.31
+description = "Runs added by a walk or hit-by-pitch."
+unit = "runs"
+source = "The Book (2007) linear weights; DRAFT verify"
+range = [0.0, 1.0]
+
+[params.w_sb]
+value = 0.2
+description = "Runs added by a stolen base."
+unit = "runs"
+source = "The Book (2007)"
+range = [0.0, 1.0]
+
+[params.w_cs]
+value = -0.41
+description = "Runs added by a caught stealing (negative)."
+unit = "runs"
+source = "The Book (2007)"
+range = [-1.5, 0.0]
+
+[params.pos_c]
+value = 12.5
+description = "Position adjustment: runs per 162 games at catcher."
+unit = "runs"
+source = "FanGraphs positional adjustments (WAR documentation)"
+range = [-30.0, 30.0]
+
+[params.pos_1b]
+value = -12.5
+description = "Position adjustment per 162 games at first base."
+unit = "runs"
+source = "FanGraphs positional adjustments"
+range = [-30.0, 30.0]
+
+[params.pos_2b]
+value = 2.5
+description = "Position adjustment per 162 games at second base."
+unit = "runs"
+source = "FanGraphs positional adjustments"
+range = [-30.0, 30.0]
+
+[params.pos_3b]
+value = 2.5
+description = "Position adjustment per 162 games at third base."
+unit = "runs"
+source = "FanGraphs positional adjustments"
+range = [-30.0, 30.0]
+
+[params.pos_ss]
+value = 7.5
+description = "Position adjustment per 162 games at shortstop."
+unit = "runs"
+source = "FanGraphs positional adjustments"
+range = [-30.0, 30.0]
+
+[params.pos_lf]
+value = -7.5
+description = "Position adjustment per 162 games in left field."
+unit = "runs"
+source = "FanGraphs positional adjustments"
+range = [-30.0, 30.0]
+
+[params.pos_cf]
+value = 2.5
+description = "Position adjustment per 162 games in center field."
+unit = "runs"
+source = "FanGraphs positional adjustments"
+range = [-30.0, 30.0]
+
+[params.pos_rf]
+value = -7.5
+description = "Position adjustment per 162 games in right field."
+unit = "runs"
+source = "FanGraphs positional adjustments"
+range = [-30.0, 30.0]
+
+[params.pos_dh]
+value = -17.5
+description = "Position adjustment per 162 games at designated hitter."
+unit = "runs"
+source = "FanGraphs positional adjustments"
+range = [-30.0, 30.0]
+
+[params.batting_replacement_runs]
+value = 18.44
+description = "Runs a replacement hitter is below average per 600 plate appearances."
+unit = "runs per 600 PA"
+source = "RESEARCH.md: solved so 2000-2024 seasons average 570 batting WAR per 30 teams (the 2013 Baseball-Reference/FanGraphs replacement level)"
+range = [0.0, 60.0]
+
+[params.pitching_replacement_runs_per_9]
+value = 0.894
+description = "Runs a replacement pitcher allows above average per 9 innings."
+unit = "runs per 9 IP"
+source = "RESEARCH.md: solved so 2000-2024 seasons average 430 pitching WAR per 30 teams"
+range = [0.0, 5.0]
+
+[params.use_run_environment]
+value = true
+description = "Value outs by each league-year's run environment: the out value makes the league's linear-weight runs equal the runs it scored, so getting on base is worth more when runs are scarce relative to outs, and every era's runs add up."
+source = "Custom linear weights (Tango, Lichtman & Dolphin, The Book, 2007): the out value balances league runs."
+
+[params.use_park_factors]
+value = true
+description = "Adjust batting and pitching runs for the team's park (Lahman BPF/PPF)."
+source = "Lahman Teams table (3-year park factors)."
+
+[params.pitcher_batting]
+value = false
+description = "Count batting value for players who were mostly pitchers that season."
+source = "Judgement: keeps the game's 'one player, one value' simple; Baseball-Reference does count it."
+
+[formulas.linear_weights]
+expr = "w_single * singles + w_double * doubles + w_triple * triples + w_hr * HR + w_bb * (BB + HBP) + w_sb * SB + w_cs * CS"
+description = "Runs from a batting line's positive events; outs get the league-year's out value (formula out_value), then the league's runs per PA are subtracted."
+variables = ["singles", "doubles", "triples", "HR", "BB", "HBP", "SB", "CS"]
+
+[formulas.out_value]
+expr = "(league_runs - league_lw) / league_outs"
+description = "Runs per out (negative) for a league-year: the runs the league scored minus its linear-weight runs, per out made."
+variables = ["league_runs", "league_lw", "league_outs"]
+
+[formulas.runs_per_win]
+expr = "1.5 * runs_per_game + 3"
+description = "Runs that make one win, from the league's runs per team per game (more scoring, more runs per win)."
+variables = ["runs_per_game"]

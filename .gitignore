@@ -20,3 +20,5 @@ coros-watch/
 ballmonitor/data_tables/raw/
 ballmonitor/data_tables/csv/
 ballmonitor/data_tables/com/
+# Open WAR seasons: rebuilt by hand from the local Lahman CSVs (ballmonitor fetch open_war)
+ballmonitor/models/open_war/data/seasons.csv

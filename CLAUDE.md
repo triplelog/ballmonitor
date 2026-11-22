@@ -100,6 +100,10 @@ pytest ballmonitor/models/race_time                # one model
     Range/choices/type are enforced on every override.
   - `[formulas.<name>]`: `expr`, `description`, `variables` (names model.py passes in).
     All numeric params are automatically available in every formula by name.
+    A model computed from local, uncommitted data lists it in `[local] requires = [paths]`: its examples are
+  skipped where those files are missing (e.g. `open_war`, from the Lahman CSVs).
+  Optional `variable_pattern` (a regex): further names the model supplies itself, e.g.
+    `HR_1910` for one per decade (`baseball_birthplaces`).
     Allowed syntax: arithmetic, comparisons, `a if c else b`, and the functions in
     `core/formula.py` `FUNCTIONS`. Add a function there if a model genuinely needs one.
   - `[fetch]` (optional, needs `fetch.py`): `auto = true` + `season = ["MM-DD", "MM-DD"]`
@@ -195,6 +199,9 @@ pytest ballmonitor/models/race_time                # one model
 - **Page weight:** a page whose JSON is over 150 KB (`builder.SPLIT_BYTES`) has each top-level picker
   option's views written to `data/views/<address>/<picker>/<slug>.json` (`src` on the option); `site.js`
   fetches one when it's shown. `builder.load_page` reads a split page back whole (tests).
+- **Data files for an app:** a site.py may define `files(model) -> {relative path: bytes}`; the build writes them to
+  `data/files/<model>/` and the page's app fetches only what it shows (e.g. `baseball_birthplaces`: one decade's grid PNGs
+  and players JSON at a time).
 - **Head and assets:** every page shares `static/share.png` (1200×630; source `web/share-card.html`, render
   it with headless Chrome) as its link-preview image; the games' copied pages get the same tags at build
   time (`GAME_META`, their sources untouched). Logo and icons come from `~/Desktop/portfolio/branding/final/ballmonitor/`
@@ -333,6 +340,8 @@ the draft values, implement `predict`, add examples, flip status to `draft`.
 | `cfb_replay` | draft | ESPN play-by-play + ESPN win probability → 60 s vertical replay: WP chart down the left, ~14 annotated plays (every score + biggest swings) revealed one by one on the right, time axis warped to fit them (variants: `chapters`, `plays_only`); rendered by web/static/replay.js; `ballmonitor export-replay` → MP4 |
 | `ranked_choice` | draft | published ranked ballots (AP Top 25 football/men's basketball since 2014, BBWAA MLB awards since 2012, NBA 2014-15–2022-23 and PHWA NHL awards since 2017-18 from PDFs the user downloads with `tools/download.py`) re-counted with 15 methods (official points, Borda, plurality, first past the post, top-two runoff, IRV, Coombs, Baldwin, Bucklin, Copeland, Schulze, ranked pairs, minimax, Kemeny); `fetch.py` adds new AP weeks daily |
 | `mltt` | calibrated | Major League Table Tennis: one rally edge per player (logistic fit to every Stage One rally since 2024 from MLTT's results API, `fetch.py`, pulled toward the SPINDEX rating the player had at the time, from dated rating histories) → exact game (to 11, golden point) / Golden Game (race to 21, head start) / match arithmetic → standings plus (expected points from rally shares, luck, 11-10 record, schedule strength), points above average and WPA (even-teams table), season + Final Four Monte Carlo; hindsight-free walk-forward on 204 matches (favourite wins ~60%); see RESEARCH.md |
+| `baseball_birthplaces` | draft | maps of where big-leaguers were born per million people, by birth decade 1840s-2000s: Lahman birthplaces geocoded with GeoNames (`geocode.py`), for each 20 km cell the smallest circle holding 1M people from ISIMIP/HYDE historical population (`fetch.py`, by hand, ~2.6 GB raw, `pip install -e '.[maps]'`), players spread over their birth city's disk; the page's map computes any formula in the browser (`web/static/apps/birthplace_map.js`, tested against the Python model); its per-decade files ship through site.py `files()` (builder `site_files` -> `/data/files/<model>/`) |
+| `open_war` | draft | season wins above replacement from Lahman: linear-weight batting runs vs the league-year (outs valued by the league-year's run environment), FanGraphs positional adjustments, RA9-based pitching runs, park factors, runs-per-win formula; replacement levels solved so 2000-2024 average 570/430 WAR per 30 teams (RESEARCH.md); every weight in config.toml; seasons feed Home Turf |
 | `lichess_rating` | calibrated | Lichess rating on a future date: chance of playing again (logistic) × change if playing (quantile regression on rating, experience, activity, below-peak, trend, recent form; per-quarter pool drift fitted, typical quarter used); open database 2014-01–2017-08, 1-in-4 players streamed to daily totals (`download.py`, no big files kept), walk-forward from 2016-04; see RESEARCH.md |
 | `running_progress` | calibrated | runner's 4-week average pace + weekly km at a date 4–26 weeks ahead, chance still training, Tanda (2011) implied marathon (unvalidated); BMClab 2019–2020 weekly logs (36k runners), walk-forward on 2020; see RESEARCH.md |
 | `strength_progress` | calibrated | load on an exercise at a future date from a dated workout log: saturating gain curve in weeks trained + quantile-regression bands (newness, irregular training, gaps); fit20 cohort 2010–2016 (22k members), two walk-forward folds; see RESEARCH.md |
@@ -345,7 +354,7 @@ Games: `new27K/` (27K, at `/27k/`), `ballmonitor/games/lineup/` (Lineup daily ba
 distribution in the browser (`web/chain.js`, tested against chain.py under node), plus the 20 best orders and a
 hitter-by-slot grid prebuilt into each puzzle; puzzles prebuilt by `python -m ballmonitor.games.lineup.build`,
 needs numpy and the Lahman CSVs from Triple Play; see its README), `web/static/game.html` (Pitch Guesser, local only for now) and
-`ballmonitor/games/triple_play/` (Triple Play daily Venn puzzle at `/triple/`: baseball Tue-Sun since 2026-11-23 always a team + a position (75% of games) + a stat/honor circle with only clear-cut players, 11 spots (Sunday 14), no spares; cities & states 17 spots and 25 cards, a spare per part; baseball from the
+`ballmonitor/games/home_turf/` (Home Turf: 4-manager strategy game, you vs 3 AI, 15 rounds / 9 innings / no limit with save slots, on a 42-territory birthplace map; soldiers are natives called up best-first, battles draw one real Open WAR season each (used up), defender +0.5; local only at `/home_turf/` under `serve`; see its README), `ballmonitor/games/triple_play/` (Triple Play daily Venn puzzle at `/triple/`: baseball Tue-Sun since 2026-11-23 always a team + a position (75% of games) + a stat/honor circle with only clear-cut players, 11 spots (Sunday 14), no spares; cities & states 17 spots and 25 cards, a spare per part; baseball from the
 Lahman database, cities & states on Monday from Wikipedia lists; puzzles prebuilt by
 `python -m ballmonitor.games.triple_play.build`; see its README).
 

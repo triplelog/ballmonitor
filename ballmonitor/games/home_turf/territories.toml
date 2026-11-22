@@ -1,0 +1,399 @@
+# Home Turf's map: territories (birthplaces grouped so each has a real bench), the regions that give
+# bonus call-ups, and who borders whom. Edit freely; build.py checks that every birthplace lands in
+# one territory and that borders go both ways.
+#
+# members: Lahman birthState codes (USA) or birthCountry names; "CA-S"/"CA-N" split California at
+# 35.8°N and "PA-E"/"PA-W" split Pennsylvania at 77.5°W (from the birthplace map's geocoding).
+# x, y: position on the 1000 x 700 map. land: land borders; sea: sea lanes (drawn dashed).
+
+[regions]
+pacific_coast = { name = "Pacific Coast", bonus = 3, color = "#3b7dd8" }
+north_country = { name = "North Country", bonus = 2, color = "#6a8caf" }
+southwest = { name = "Southwest", bonus = 2, color = "#d9822b" }
+heartland = { name = "Heartland", bonus = 2, color = "#b5892e" }
+great_lakes = { name = "Great Lakes", bonus = 4, color = "#2f9e8f" }
+northeast = { name = "Northeast", bonus = 4, color = "#8e44ad" }
+new_england = { name = "New England", bonus = 2, color = "#c0392b" }
+upper_south = { name = "Upper South", bonus = 2, color = "#7d9d3c" }
+atlantic_coast = { name = "Atlantic Coast", bonus = 2, color = "#16a085" }
+gulf_coast = { name = "Gulf Coast", bonus = 3, color = "#e67e22" }
+caribbean = { name = "Caribbean", bonus = 3, color = "#d35400" }
+overseas = { name = "Overseas", bonus = 1, color = "#7f8c8d" }
+
+[territories.socal]
+name = "Southern California"
+region = "pacific_coast"
+members = ["CA-S"]
+x = 120
+y = 420
+land = ["norcal", "mountain_west", "southwest", "central_america"]
+sea = ["pacific_rim"]
+
+[territories.norcal]
+name = "Northern California"
+region = "pacific_coast"
+members = ["CA-N", "CA"]
+x = 95
+y = 300
+land = ["socal", "northwest", "mountain_west"]
+sea = ["pacific_rim"]
+
+[territories.northwest]
+name = "Pacific Northwest"
+region = "pacific_coast"
+members = ["WA", "OR"]
+x = 130
+y = 165
+land = ["norcal", "mountain_west", "canada"]
+sea = []
+
+[territories.canada]
+name = "Canada"
+region = "north_country"
+members = ["CAN"]
+x = 540
+y = 55
+land = ["northwest", "mountain_west", "northern_plains", "michigan", "new_york", "northern_new_england"]
+sea = []
+
+[territories.mountain_west]
+name = "Mountain West"
+region = "north_country"
+members = ["ID", "MT", "WY", "UT", "NV"]
+x = 255
+y = 235
+land = ["northwest", "norcal", "socal", "southwest", "northern_plains", "canada"]
+sea = []
+
+[territories.northern_plains]
+name = "Northern Plains"
+region = "north_country"
+members = ["ND", "SD", "NE", "MN"]
+x = 420
+y = 170
+land = ["canada", "mountain_west", "southwest", "kansas", "iowa", "missouri", "wisconsin"]
+sea = []
+
+[territories.southwest]
+name = "Desert Southwest"
+region = "southwest"
+members = ["AZ", "NM", "CO"]
+x = 270
+y = 370
+land = ["socal", "mountain_west", "northern_plains", "kansas", "oklahoma", "texas", "central_america"]
+sea = []
+
+[territories.oklahoma]
+name = "Oklahoma"
+region = "southwest"
+members = ["OK"]
+x = 420
+y = 375
+land = ["southwest", "kansas", "missouri", "arkansas", "texas"]
+sea = []
+
+[territories.texas]
+name = "Texas"
+region = "southwest"
+members = ["TX"]
+x = 390
+y = 480
+land = ["southwest", "oklahoma", "arkansas", "louisiana", "central_america"]
+sea = []
+
+[territories.kansas]
+name = "Kansas"
+region = "heartland"
+members = ["KS"]
+x = 405
+y = 290
+land = ["southwest", "northern_plains", "missouri", "oklahoma"]
+sea = []
+
+[territories.iowa]
+name = "Iowa"
+region = "heartland"
+members = ["IA"]
+x = 505
+y = 230
+land = ["northern_plains", "wisconsin", "illinois", "missouri"]
+sea = []
+
+[territories.missouri]
+name = "Missouri"
+region = "heartland"
+members = ["MO"]
+x = 510
+y = 315
+land = ["northern_plains", "kansas", "oklahoma", "arkansas", "iowa", "illinois", "kentucky", "tennessee"]
+sea = []
+
+[territories.arkansas]
+name = "Arkansas"
+region = "heartland"
+members = ["AR"]
+x = 500
+y = 410
+land = ["missouri", "oklahoma", "texas", "louisiana", "mississippi", "tennessee"]
+sea = []
+
+[territories.illinois]
+name = "Illinois"
+region = "great_lakes"
+members = ["IL"]
+x = 590
+y = 265
+land = ["iowa", "missouri", "wisconsin", "indiana", "kentucky"]
+sea = []
+
+[territories.wisconsin]
+name = "Wisconsin"
+region = "great_lakes"
+members = ["WI"]
+x = 570
+y = 165
+land = ["northern_plains", "iowa", "illinois", "michigan"]
+sea = []
+
+[territories.michigan]
+name = "Michigan"
+region = "great_lakes"
+members = ["MI"]
+x = 660
+y = 160
+land = ["wisconsin", "indiana", "ohio", "canada"]
+sea = []
+
+[territories.indiana]
+name = "Indiana"
+region = "great_lakes"
+members = ["IN"]
+x = 650
+y = 260
+land = ["illinois", "michigan", "ohio", "kentucky"]
+sea = []
+
+[territories.ohio]
+name = "Ohio"
+region = "great_lakes"
+members = ["OH"]
+x = 720
+y = 240
+land = ["indiana", "michigan", "kentucky", "pa_west", "virginia"]
+sea = []
+
+[territories.pa_west]
+name = "Pittsburgh"
+region = "northeast"
+members = ["PA-W"]
+x = 770
+y = 215
+land = ["ohio", "pa_east", "new_york", "maryland", "virginia"]
+sea = []
+
+[territories.pa_east]
+name = "Philadelphia"
+region = "northeast"
+members = ["PA-E", "PA"]
+x = 850
+y = 250
+land = ["pa_west", "new_york", "new_jersey", "maryland"]
+sea = []
+
+[territories.new_york]
+name = "New York"
+region = "northeast"
+members = ["NY"]
+x = 845
+y = 150
+land = ["pa_west", "pa_east", "new_jersey", "canada", "northern_new_england", "massachusetts", "southern_new_england"]
+sea = ["old_world"]
+
+[territories.new_jersey]
+name = "New Jersey"
+region = "northeast"
+members = ["NJ"]
+x = 925
+y = 290
+land = ["new_york", "pa_east", "maryland"]
+sea = []
+
+[territories.massachusetts]
+name = "Massachusetts"
+region = "new_england"
+members = ["MA"]
+x = 965
+y = 160
+land = ["new_york", "northern_new_england", "southern_new_england"]
+sea = ["old_world"]
+
+[territories.northern_new_england]
+name = "N. New England"
+region = "new_england"
+members = ["ME", "NH", "VT"]
+x = 905
+y = 70
+land = ["canada", "new_york", "massachusetts"]
+sea = []
+
+[territories.southern_new_england]
+name = "Conn. & R.I."
+region = "new_england"
+members = ["CT", "RI"]
+x = 955
+y = 228
+land = ["new_york", "massachusetts"]
+sea = []
+
+[territories.maryland]
+name = "Maryland & DC"
+region = "atlantic_coast"
+members = ["MD", "DE", "DC"]
+x = 850
+y = 335
+land = ["pa_east", "pa_west", "new_jersey", "virginia"]
+sea = []
+
+[territories.virginia]
+name = "Virginias"
+region = "upper_south"
+members = ["VA", "WV"]
+x = 765
+y = 350
+land = ["maryland", "pa_west", "ohio", "kentucky", "tennessee", "carolinas"]
+sea = []
+
+[territories.kentucky]
+name = "Kentucky"
+region = "upper_south"
+members = ["KY"]
+x = 675
+y = 330
+land = ["illinois", "indiana", "ohio", "virginia", "tennessee", "missouri"]
+sea = []
+
+[territories.tennessee]
+name = "Tennessee"
+region = "upper_south"
+members = ["TN"]
+x = 650
+y = 395
+land = ["kentucky", "virginia", "carolinas", "georgia", "alabama", "mississippi", "arkansas", "missouri"]
+sea = []
+
+[territories.carolinas]
+name = "Carolinas"
+region = "atlantic_coast"
+members = ["NC", "SC"]
+x = 800
+y = 425
+land = ["virginia", "tennessee", "georgia"]
+sea = []
+
+[territories.georgia]
+name = "Georgia"
+region = "atlantic_coast"
+members = ["GA", "Ga"]
+x = 735
+y = 470
+land = ["carolinas", "tennessee", "alabama", "florida"]
+sea = []
+
+[territories.alabama]
+name = "Alabama"
+region = "gulf_coast"
+members = ["AL"]
+x = 660
+y = 470
+land = ["tennessee", "georgia", "florida", "mississippi"]
+sea = []
+
+[territories.mississippi]
+name = "Mississippi"
+region = "gulf_coast"
+members = ["MS"]
+x = 585
+y = 465
+land = ["tennessee", "alabama", "louisiana", "arkansas"]
+sea = []
+
+[territories.louisiana]
+name = "Louisiana"
+region = "gulf_coast"
+members = ["LA"]
+x = 520
+y = 515
+land = ["mississippi", "arkansas", "texas"]
+sea = []
+
+[territories.florida]
+name = "Florida"
+region = "gulf_coast"
+members = ["FL"]
+x = 770
+y = 545
+land = ["georgia", "alabama"]
+sea = ["cuba"]
+
+[territories.cuba]
+name = "Cuba & Bahamas"
+region = "caribbean"
+members = ["Cuba", "Bahamas", "Jamaica"]
+x = 715
+y = 625
+land = []
+sea = ["florida", "dominican", "central_america"]
+
+[territories.dominican]
+name = "Dominican Rep."
+region = "caribbean"
+members = ["D.R."]
+x = 830
+y = 650
+land = []
+sea = ["cuba", "puerto_rico", "venezuela"]
+
+[territories.puerto_rico]
+name = "Puerto Rico"
+region = "caribbean"
+members = ["P.R.", "U.S. Virgin Islands"]
+x = 950
+y = 625
+land = []
+sea = ["dominican", "venezuela"]
+
+[territories.venezuela]
+name = "Venezuela"
+region = "caribbean"
+members = ["Venezuela", "Curaçao", "Aruba", "Colombia", "Brazil", "Peru"]
+x = 905
+y = 705
+land = ["central_america"]
+sea = ["dominican", "puerto_rico"]
+
+[territories.central_america]
+name = "Mexico & C. America"
+region = "caribbean"
+members = ["México", "Panama", "CZ", "Nicaragua", "Honduras", "British Honduras"]
+x = 330
+y = 600
+land = ["socal", "southwest", "texas", "venezuela"]
+sea = ["cuba"]
+
+[territories.pacific_rim]
+name = "Pacific Rim"
+region = "overseas"
+members = ["AK", "HI", "Japan", "South Korea", "Taiwan", "Australia", "Guam", "American Samoa", "Philippines", "China", "Singapore", "Indonesia", "South Vietnam", "Saudi Arabia", "Afghanistan"]
+x = 45
+y = 560
+land = []
+sea = ["socal", "norcal"]
+
+[territories.old_world]
+name = "Old World"
+region = "overseas"
+members = ["Ireland", "England", "Scotland", "Wales", "Northern Ireland", "Germany", "West Germany", "Netherlands", "Norway", "Sweden", "Denmark", "Finland", "France", "Belgium", "Switzerland", "Austria", "Austria-Hungary", "Czechoslovakia", "Bohemia", "Poland", "Prussia", "Russia", "Soviet Union", "Latvia", "Lithuania", "Italy", "Spain", "Portugal", "Greece", "South Africa", "At Sea"]
+x = 995
+y = 390
+land = []
+sea = ["new_york", "massachusetts"]
