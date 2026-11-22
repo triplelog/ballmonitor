@@ -146,6 +146,10 @@ class NcaafRecruitingModel(BaseModel):
             points_fn=points,
         )
         result = engine.run(year, recruits, fit_recruits=fit_recruits)
+        if sport == "ncaaf":
+            unit_decay = float(p.unit_rank_decay)
+            result.unit_points = lambda contrib, rank: float(
+                p.formula("recruit_points", rating=contrib, rank=rank, decay=unit_decay))
         return {"recruits": recruits, "coverage": coverage, "history": history,
                 "prestige_years": prestige_years, "status": status, "result": result,
                 "decay": decay, "q_power": q_power, "l2_reg": l2_reg, "c_weight": c_weight}
@@ -330,7 +334,7 @@ class NcaafRecruitingModel(BaseModel):
                         label="Offense Class Score",
                         estimate=round(float(pos_team.offense_score), 1),
                         fmt="number",
-                        group="Positional breakdown (undiscounted sums)",
+                        group="Positional breakdown",
                         note=f"pass {pos_team.pass_offense_score:.1f}, run {pos_team.run_offense_score:.1f}",
                     )
                 )
@@ -339,7 +343,7 @@ class NcaafRecruitingModel(BaseModel):
                         label="Defense Class Score",
                         estimate=round(float(pos_team.defense_score), 1),
                         fmt="number",
-                        group="Positional breakdown (undiscounted sums)",
+                        group="Positional breakdown",
                         note=f"pass {pos_team.pass_defense_score:.1f}, run {pos_team.run_defense_score:.1f}",
                     )
                 )
@@ -374,6 +378,12 @@ class NcaafRecruitingModel(BaseModel):
             ]
             if proj_note:
                 steps.append(proj_note)
+            if unit_breakdown:
+                steps.append(
+                    f"Unit scores: each recruit's score split by position into offense / defense and run / "
+                    f"pass shares; each side sorted best first and summed with {p.expr('recruit_points')} "
+                    f"(decay = unit_rank_decay {float(p.unit_rank_decay):g}): offense "
+                    f"{unit_breakdown['offense_score']:.1f}, defense {unit_breakdown['defense_score']:.1f}")
         else:
             steps = [
                 f"Loaded {len(recruits)} committed {sport_label} recruits for {year}",

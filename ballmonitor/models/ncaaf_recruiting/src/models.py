@@ -1,6 +1,6 @@
 from dataclasses import dataclass, field
 from enum import Enum
-from typing import Dict, List, Optional, Tuple
+from typing import Callable, Dict, List, Optional, Tuple
 
 
 class RankingMethod(str, Enum):
@@ -81,6 +81,9 @@ class RankingResult:
     teams: List[TeamRating]
     recruits: List[Recruit]
     method: RankingMethod = RankingMethod.PLACKETT_LUCE
+    # Optional f(contribution, rank) -> unit points for the positional breakdown (rank 1 =
+    # the side's best); None = undiscounted sums. Set by the model from unit_rank_decay.
+    unit_points: Optional[Callable[[float, int], float]] = None
 
     @property
     def by_name(self) -> Dict[str, TeamRating]:

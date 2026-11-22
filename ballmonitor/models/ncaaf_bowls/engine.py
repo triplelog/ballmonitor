@@ -220,6 +220,7 @@ class BowlEngine:
         self.teams = self._load_teams()
         self.bowls = self._load_bowls()
         self.schedule = self._load_schedule()
+        self.results = self._load_results()
 
         self.team_dict = {t.id: t for t in self.teams}
         self.bowl_dict = {b.id: b for b in self.bowls}
@@ -228,7 +229,8 @@ class BowlEngine:
         self.ratings_source = ratings_source or "default"
         self.active_ratings = RatingManager.load_ratings(self.ratings_source, self.teams)
 
-        self.simulator = SeasonSimulator(self.teams, self.schedule, self.config, self.active_ratings)
+        self.simulator = SeasonSimulator(self.teams, self.schedule, self.config, self.active_ratings,
+                                         results=self.results)
         self.cfp_selector = CFPSelector({b.id: b for b in self.bowls if b.is_cfp})
         self.bowl_selector = BowlSelector(self.bowls, self.teams, self.config, schedule=self.schedule)
 
@@ -243,6 +245,12 @@ class BowlEngine:
 
     def _load_bowls(self) -> list[Bowl]:
         return [Bowl.from_dict(d) for d in _load_json_cached(str((self.data_dir / "bowls.json").resolve()))]
+
+    def _load_results(self) -> list[dict[str, Any]]:
+        """Completed games (results.json; [] if a data folder has none): the tiebreakers
+        need who beat whom in conference play."""
+        path = self.data_dir / "results.json"
+        return _load_json_cached(str(path.resolve())) if path.exists() else []
 
     def _load_schedule(self) -> list[Game]:
         return [Game.from_dict(d) for d in _load_json_cached(str((self.data_dir / "schedule.json").resolve()))]

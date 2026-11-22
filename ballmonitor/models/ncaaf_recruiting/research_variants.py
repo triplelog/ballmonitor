@@ -12,6 +12,10 @@ variant; only the recruit score or the class sum changes, one idea at a time.
 
 The ideas are scored here, in this file, and are NOT options of the model: none of them
 was adopted (see the report), so the engine was left alone.
+
+Unit scores (v0.8.0): the offense / defense breakdown is checked separately against each
+program's opponent-adjusted points scored and allowed over seasons Y..Y+3, for several
+`unit_rank_decay` settings (1 = the undiscounted sums used before v0.8.0).
 """
 
 from __future__ import annotations
@@ -30,6 +34,7 @@ if str(MODEL_DIR) not in sys.path:
 
 import research as R  # noqa: E402
 from src.elo_engine import _solve_plackett_luce_cached  # noqa: E402
+from src.position_model import PositionalRankingEngine  # noqa: E402
 
 DEFAULTS = R.DEFAULTS_V030  # rank_decay 0.95, quality_power 0.5, l2_reg 0.5 (the config defaults)
 STAR_REFERENCE = 3.0  # star blend: score x (stars / 3) ^ star_power
@@ -61,6 +66,8 @@ FAMILIES = {
                 "quality, ignoring class size)",
         "values": [0.0, 0.25, 0.5, 0.75, 1.0]},
 }
+UNIT_DECAYS = [1.0, 0.98, 0.95, 0.9, 0.85]  # unit_rank_decay settings; 1 = undiscounted (pre-v0.8.0)
+POINTS_RIDGE = 0.01  # offense/defense points rating: tiny ridge for identifiability
 LOG: list[str] = []
 
 
@@ -127,6 +134,86 @@ def win_pct_targets(games: dict, teams_by_year: dict) -> dict[int, dict[str, flo
     return out
 
 
+def points_ratings(games: list, fbs: set[str]) -> dict[str, tuple[float, float]]:
+    """Least-squares points rating per season: points = mean + off[attacker] - def[defender]
+    + home edge. Returns (offense, defense) per FBS team, both centred on the FBS mean and
+    both "higher = better" (defense = points per game kept off the board vs average).
+    Non-FBS opponents share one pooled 'FCS' offense and defense."""
+    teams = sorted(fbs) + ["FCS"]
+    idx = {t: i for i, t in enumerate(teams)}
+    n = len(teams)
+    rows, y = [], []
+    for home, away, hp, ap, neutral in games:
+        h, a = idx.get(home, idx["FCS"]), idx.get(away, idx["FCS"])
+        if h == a:
+            continue
+        for att, dfn, pts, side in ((h, a, hp, 1.0), (a, h, ap, -1.0)):
+            x = np.zeros(2 * n + 2)
+            x[att], x[n + dfn], x[-2], x[-1] = 1.0, -1.0, 1.0, 0.0 if neutral else side
+            rows.append(x)
+            y.append(pts)
+    X, Y = np.array(rows), np.array(y, dtype=float)
+    beta = np.linalg.solve(X.T @ X + POINTS_RIDGE * np.eye(X.shape[1]), X.T @ Y)
+    off, dfn = beta[:n - 1], beta[n:2 * n - 1]
+    return {t: (float(off[i] - off.mean()), float(dfn[i] - dfn.mean())) for t, i in idx.items() if t != "FCS"}
+
+
+def unit_study(games: dict, years: list[int], tests: list[int], teams_by_year: dict) -> dict:
+    """Spearman rho of the offense (defense) unit score with the program's mean offense
+    (defense) points rating over seasons Y..Y+3, per unit_rank_decay setting; plus the
+    overall class score as a reference and a balance check (log offense/defense unit score
+    vs offense minus defense rating)."""
+    fbs = R.fbs_sets(games)
+    pr = {s: points_ratings(games[s], fbs[s]) for s in sorted(games)}
+    results = {y: R.model_result(y, DEFAULTS) for y in years}
+    tgt, teams_of = {}, {}
+    for y in years:
+        teams = [t for t in teams_by_year[y] if all(t in pr[s] for s in range(y, y + R.WINDOW))]
+        teams_of[y] = teams
+        tgt[y] = {k: {t: float(np.mean([pr[s][t][k] for s in range(y, y + R.WINDOW)])) for t in teams}
+                  for k in (0, 1)}
+    out = {"runs": {}, "n_rows": sum(len(teams_of[y]) for y in tests)}
+
+    def spear(x, yv):
+        return float(R.spearmanr(x, yv).statistic)
+
+    for d in UNIT_DECAYS:
+        off, dfn, bal = {}, {}, {}
+        for y in years:
+            u = {t.name: t for t in PositionalRankingEngine(rank_decay=d).evaluate(results[y]).teams}
+            teams = teams_of[y]
+            off[y] = spear([u[t].offense_score if t in u else -1.0 for t in teams], [tgt[y][0][t] for t in teams])
+            dfn[y] = spear([u[t].defense_score if t in u else -1.0 for t in teams], [tgt[y][1][t] for t in teams])
+            both = [t for t in teams if t in u and u[t].offense_score > 0 and u[t].defense_score > 0]
+            bal[y] = spear([math.log(u[t].offense_score / u[t].defense_score) for t in both],
+                           [tgt[y][0][t] - tgt[y][1][t] for t in both])
+        out["runs"][d] = {"off": off, "def": dfn, "bal": bal,
+                          "both": {y: (off[y] + dfn[y]) / 2 for y in years}}
+    ref_off, ref_def = {}, {}
+    for y in years:
+        s = {t.name: t.total_score for t in results[y].teams if t.commits_count > 0}
+        teams = teams_of[y]
+        ref_off[y] = spear([s.get(t, -1.0) for t in teams], [tgt[y][0][t] for t in teams])
+        ref_def[y] = spear([s.get(t, -1.0) for t in teams], [tgt[y][1][t] for t in teams])
+    out["overall"] = {"off": ref_off, "def": ref_def}
+    chosen, wf = {}, {}
+    for y in tests:
+        train = [t for t in years if t <= y - R.LAG]
+        chosen[y] = max(UNIT_DECAYS, key=lambda d: R._m(out["runs"][d]["both"], train))
+        wf[y] = out["runs"][chosen[y]]["both"][y]
+    old = out["runs"][1.0]["both"]
+    shared = out["runs"][DEFAULTS["rank_decay"]]["both"]
+    out.update(chosen=chosen, wf=wf)
+    for name, series in (("wf", wf), ("shared", shared)):
+        diff = [series[y] - old[y] for y in tests]
+        out[name + "_diff"] = float(np.mean(diff))
+        out[name + "_se"] = float(np.std(diff, ddof=1) / math.sqrt(len(diff)))
+        out[name + "_better"] = sum(x > 0 for x in diff)
+    log(f"unit scores: walk-forward {R._m(wf, tests):.3f}, shared decay {R._m(shared, tests):.3f}, "
+        f"undiscounted {R._m(old, tests):.3f}")
+    return out
+
+
 def main() -> None:
     t0 = time.time()
     games = R.load_games()
@@ -176,12 +263,73 @@ def main() -> None:
                           "se": float(np.std(diff, ddof=1) / math.sqrt(len(diff))),
                           "better": sum(d > 0 for d in diff)}
         log(f"{name}: walk-forward {R._m(wf, tests):.3f} vs default {R._m(base['rho'], tests):.3f}")
+    units = unit_study(games, years, tests, teams_by_year)
     log(f"finished in {time.time() - t0:.0f}s")
     (MODEL_DIR / "RESEARCH_VARIANTS.md").write_text(
-        render(years, dev, hold, tests, teams_by_year, base, bench, families))
+        render(years, dev, hold, tests, teams_by_year, base, bench, families, units))
 
 
-def render(years, dev, hold, tests, teams_by_year, base, bench, families) -> str:
+def render_units(years, dev, hold, tests, u) -> list[str]:
+    m = R._m
+    shared = DEFAULTS["rank_decay"]
+    lines = [
+        "## Unit scores: rank decay on offense and defense",
+        "",
+        "**Question.** The class score discounts a class's k-th best recruit by rank_decay^(k-1);",
+        "before v0.8.0 the offense / defense / run / pass unit scores were plain sums, so a big class",
+        "of middling defenders could out-rank a small class of top ones on Defense while trailing",
+        "overall. Does discounting each side of the ball the same way rank units better?",
+        "",
+        "**Method.** Outcome per program and class Y: mean over seasons Y..Y+3 of an opponent-adjusted",
+        "points rating fitted on the same FBS scores as the SRS (points = mean + offense of the team",
+        "with the ball − defense of the other + home edge; both higher = better). Spearman ρ within",
+        "a class year between the offense unit score and the offense rating, and between the defense",
+        "unit score and the defense rating. Walk-forward: for test class Y the setting with the best",
+        f"mean of the two on classes ≤ Y−{R.LAG} is used. Test classes {tests[0]}–{tests[-1]}: **{len(tests)} class years**",
+        f"({u['n_rows']} program-classes, overlapping targets, about {len(tests) / R.WINDOW:.1f} non-overlapping periods).",
+        "\"Balance\" is ρ between log(offense unit / defense unit) and offense minus defense rating:",
+        "whether a class tilted to one side predicts a team better on that side. Run / pass units",
+        "cannot be checked: the scores file has points only, no rushing or passing splits.",
+        "",
+        f"| unit_rank_decay | offense ρ dev {dev[0]}–{dev[-1]} | offense ρ holdout | defense ρ dev | defense ρ holdout | "
+        f"mean of both (test {tests[0]}–{tests[-1]}) | balance (test) |",
+        "|---:|---:|---:|---:|---:|---:|---:|",
+    ]
+    for d, e in u["runs"].items():
+        label = f"{d:g}" + (" (undiscounted, before v0.8.0)" if d == 1.0 else "") + (
+            " (= rank_decay)" if d == shared else "")
+        lines.append(f"| {label} | {m(e['off'], dev):.3f} | {m(e['off'], hold):.3f} | {m(e['def'], dev):.3f} | "
+                     f"{m(e['def'], hold):.3f} | {m(e['both'], tests):.3f} | {m(e['bal'], tests):.3f} |")
+    o = u["overall"]
+    lines += [
+        f"| overall class score (reference) | {m(o['off'], dev):.3f} | {m(o['off'], hold):.3f} | "
+        f"{m(o['def'], dev):.3f} | {m(o['def'], hold):.3f} | "
+        f"{m({y: (o['off'][y] + o['def'][y]) / 2 for y in years}, tests):.3f} | – |",
+        "",
+        f"Walk-forward choice: {', '.join(f'{v:g}' for v in u['chosen'].values())}; minus undiscounted "
+        f"{u['wf_diff']:+.3f} ± {u['wf_se']:.3f} ({u['wf_better']}/{len(tests)} years better). "
+        f"Decay {shared:g} (shared with rank_decay) minus undiscounted {u['shared_diff']:+.3f} ± "
+        f"{u['shared_se']:.3f} ({u['shared_better']}/{len(tests)} years better).",
+        "",
+        "**Verdict.** "
+        + (f"Discounting beats plain sums in every test year, by {u['shared_diff']:+.3f} ρ at {shared:g} "
+           f"(below the {R.ADOPT_MARGIN} tuning margin) and {u['wf_diff']:+.3f} with the walk-forward pick. "
+           "But the overall class score ranks both units better than any unit score, and the balance "
+           "column is about zero with or without decay: the unit split says next to nothing about which "
+           "side of the ball a team will be better on, so stronger decay helps mostly by making the unit "
+           "scores more like the overall score. So the choice rests on consistency, not on the larger "
+           f"walk-forward gain: v0.8.0 adds `unit_rank_decay` = {shared:g}, the same discount as the class "
+           "score, and keeps the plain sums as variant "
+           "`undiscounted_units`."
+           if u["shared_diff"] >= 0 else
+           "Discounting is worse than plain sums here; the undiscounted sums stay the default.")
+        ,
+        "",
+    ]
+    return lines
+
+
+def render(years, dev, hold, tests, teams_by_year, base, bench, families, units) -> str:
     m = R._m
     n_rows = sum(len(teams_by_year[y]) for y in tests)
     lines = [
@@ -251,6 +399,7 @@ def render(years, dev, hold, tests, teams_by_year, base, bench, families) -> str
             lines.append(f"| {v:g} | {m(e['rho'], dev):.3f} | {m(e['rho'], hold):.3f} | {m(e['rho'], tests):.3f} | "
                          f"{m(e['resid'], tests):.3f} | {m(e['win'], tests):.3f} |")
         lines.append("")
+    lines += render_units(years, dev, hold, tests, units)
     lines += [
         "## Not testable with the data in this repo",
         "",

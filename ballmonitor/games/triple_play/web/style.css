@@ -79,6 +79,7 @@ main { max-width: 1180px; margin: 0 auto; padding: 14px 18px 40px; display: grid
 .arch button { text-align: left; padding: 8px 10px; }
 .arch .s { display: block; font-size: 12px; color: var(--muted); }
 .arch .done { border-color: var(--ok); }
+.arch-sum { font-size: 14px; font-weight: 600; margin: -4px 0 12px; }
 .rule-list li { margin-bottom: 8px; }
 .toast { position: fixed; bottom: 20px; left: 50%; transform: translateX(-50%); background: var(--text); color: #fff; padding: 9px 16px; border-radius: 99px; font-size: 14px; z-index: 70; }
 

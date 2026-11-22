@@ -67,6 +67,12 @@ export function renderGame(app, args) {
     const clockSeconds = () => clockSecondsOf(prefs);
     const autoBat = () => prefs.autoBat ?? true;
     const catcherCalls = () => !!prefs.catcherCalls && !mp;
+    // Settings this game ignores aren't offered: multiplayer has no catcher's
+    // calls and its server sims your hitters (they're set in your managing
+    // turn); careers and some challenges sim your team's at-bats in one go;
+    // Pitch Clock Panic always has its clock.
+    const autoBatFixed = !!(mp || career || challenge?.autoOffense);
+    const clockRequired = challenge?.id === 'clock';
     setSound(prefs.sound ?? true);
 
     const looks = new Map();    // batter id → colours and number, worked out once
@@ -103,13 +109,13 @@ export function renderGame(app, args) {
                 </select></label>
                 <label class="toggle"><input type="checkbox" id="t-heat" ${prefs.showHeat ? 'checked' : ''}> Heat map</label>
                 <label class="toggle"><input type="checkbox" id="t-odds" ${prefs.showOdds ? 'checked' : ''}> Odds</label>
-                <label class="toggle"><input type="checkbox" id="t-calls" ${prefs.catcherCalls ? 'checked' : ''}> Catcher calls pitches</label>
-                <label class="toggle" title="When your team bats: sim the whole half-inning, or manage each batter yourself"><input type="checkbox" id="t-autobat" ${autoBat() ? 'checked' : ''}> Auto-bat</label>
+                ${mp ? '' : `<label class="toggle"><input type="checkbox" id="t-calls" ${prefs.catcherCalls ? 'checked' : ''}> Catcher calls pitches</label>`}
+                ${autoBatFixed ? '' : `<label class="toggle" title="When your team bats: sim the whole half-inning, or manage each batter yourself"><input type="checkbox" id="t-autobat" ${autoBat() ? 'checked' : ''}> Auto-bat</label>`}
                 <label class="toggle"><input type="checkbox" id="t-sound" ${(prefs.sound ?? true) ? 'checked' : ''}> Sound</label>
                 <label class="toggle">Pitch clock <select id="t-clock">
-                    <option value="press" ${(prefs.clockMode ?? 'press') === 'press' ? 'selected' : ''}>starts at Pitch</option>
-                    <option value="continuous" ${prefs.clockMode === 'continuous' ? 'selected' : ''}>runs between pitches</option>
-                    <option value="off" ${prefs.clockMode === 'off' ? 'selected' : ''}>off</option>
+                    <option value="press" ${clockMode() === 'press' ? 'selected' : ''}>starts at Pitch</option>
+                    <option value="continuous" ${clockMode() === 'continuous' ? 'selected' : ''}>runs between pitches</option>
+                    <option value="off" ${clockMode() === 'off' ? 'selected' : ''} ${clockRequired ? 'disabled' : ''}>${clockRequired ? 'off (not in Pitch Clock Panic)' : 'off'}</option>
                 </select> <select id="t-clock-secs" title="Seconds on the pitch clock">
                     ${CLOCK_SECONDS.map((n) => `<option value="${n}" ${n === clockSeconds() ? 'selected' : ''}>${n} s</option>`).join('')}
                 </select></label>
@@ -327,8 +333,17 @@ export function renderGame(app, args) {
 
     // How this batter has hit each pitch type (the pitcher's own pitches
     // first), judged against the league.
+    // The league line sums every batter's record, so it is worked out once a
+    // half-inning (a few more plate appearances barely move it).
+    let leagueLine = null;
+    function leagueTypes() {
+        const key = `${game.state.inning}${game.state.half}`;
+        if (leagueLine?.key !== key) leagueLine = { key, byType: leagueByType(league) };
+        return leagueLine.byType;
+    }
+
     function scoutingTable(b, pitcher) {
-        const leagueTypeCache = leagueByType(league);
+        const leagueTypeCache = leagueTypes();
         const mine = league.pitchStats?.[b.id] ?? {};
         const arsenal = pitcher.pitches.map((p) => p.type);
         const keys = game.isUserPitching() ? pitchKeys(pitcher.pitches) : [];
@@ -557,7 +572,7 @@ export function renderGame(app, args) {
         if (career) {
             if (game.state.over) {
                 app.finishCareerGame(game, seasonGameId);
-                app.clearGame();
+                app.clearGame('career');
             } else {
                 app.saveGame(game, { careerId: career.id, seasonGameId, tracker, earned });
             }
@@ -565,7 +580,7 @@ export function renderGame(app, args) {
         }
         if (game.state.over) saveLeagueData();
         if (game.state.over && inSeason) app.finishSeasonGame(game, seasonGameId);
-        if (ui.challengeResult || game.state.over) app.clearGame();
+        if (ui.challengeResult || game.state.over) app.clearGame(inSeason ? 'season' : 'quick');
         else app.saveGame(game, { tracker, earned, ...(inSeason ? { seasonGameId } : {}) });
     }
 
@@ -592,8 +607,12 @@ export function renderGame(app, args) {
         ui.hookKey = key;
         const v = game.mustChangePitcher(userKey) ? 1 : F.eval('careerHook', { ...game.situationScope(), runsAllowed: b.r });
         if (uiRng.chance(v)) {
+            // With nobody left in the bullpen he stays in.
             const id = aiPickReliever(game, userKey);
-            if (id) game.changePitcher(userKey, id);
+            if (!id) return;
+            game.changePitcher(userKey, id);
+            // Saved now, so a reload can't undo the hook (and re-roll it).
+            saveNow();
             renderPitcherPanel();
             const line = game.pitchBox(PID);
             $('#overlay').innerHTML = `
@@ -643,12 +662,19 @@ export function renderGame(app, args) {
     }
 
     async function mpChangePitcher(id) {
+        // One change at a time: a second click while the first is on its way
+        // would be refused as out of date.
+        if (ui.mpChanging) return;
+        ui.mpChanging = true;
+        for (const b of app.root.querySelectorAll('[data-relieve]')) b.disabled = true;
         try {
             adoptView(await mpApi.action(mp.record.id, { version: mp.record.version, action: { type: 'changePitcher', pitcherId: id } }));
+            ui.mpChanging = false;
             ui.pitchIdx = 0;
             $('#overlay').innerHTML = '';
             refreshAll();
         } catch (e) {
+            ui.mpChanging = false;
             ui.mpStale = e;
             showMpStale(e);
         }
@@ -660,6 +686,7 @@ export function renderGame(app, args) {
             // A move the server refused: say why and carry on.
             ui.mpStale = null;
             alert(e.message);
+            refreshAll();   // the Pitch button and hint come back
             return;
         }
         $('#overlay').innerHTML = `
@@ -1398,7 +1425,7 @@ export function renderGame(app, args) {
         const extras = [];
         if (b.hr) extras.push(b.hr > 1 ? `${b.hr} HR` : 'HR');
         if (b.d) extras.push(b.d > 1 ? `${b.d} 2B` : '2B');
-        if (b.t) extras.push('3B');
+        if (b.t) extras.push(b.t > 1 ? `${b.t} 3B` : '3B');
         if (b.bb) extras.push(b.bb > 1 ? `${b.bb} BB` : 'BB');
         if (b.k) extras.push(b.k > 1 ? `${b.k} K` : 'K');
         return `${b.h}-${b.ab}${extras.length ? ', ' + extras.join(', ') : ''}`;

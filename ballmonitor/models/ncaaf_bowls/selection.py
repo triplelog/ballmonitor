@@ -282,11 +282,11 @@ class BowlSelector:
             winner: TeamSimState | None = None
             loser: TeamSimState | None = None
             if t1 and t2:
-                # Simulate non-CFP neutral bowl game
-                if cfg.win_prob_fn is not None:
-                    p_t1 = cfg.win_prob_fn(t1.rating - t2.rating, 0)
+                # Simulate non-CFP neutral bowl game (with the bowl margin SD, bowl_margin_sd)
+                if cfg.bowl_win_prob_fn is not None:
+                    p_t1 = cfg.bowl_win_prob_fn(t1.rating - t2.rating, 0)
                 else:
-                    z = (t1.rating - t2.rating) / cfg.game_sd()
+                    z = (t1.rating - t2.rating) / cfg.bowl_game_sd()
                     p_t1 = 0.5 * (1.0 + math.erf(z / 1.4142135623730951))
                 if rng.random() < p_t1:
                     winner, loser = t1, t2

@@ -16,8 +16,11 @@ with the chance of each score in a game as a bar chart; the 20 best orders, each
 its change from the best; and a grid (hitter x slot) of the best order with that hitter in that
 slot, as runs a season given up against the best order (★ = his slot in the best order, which is
 always the row's best cell; a box = where you had him). Any of these can be loaded into the
-lineup. "Play out a season" (random, 162 games) shows how much one season swings. Archive of
-past days; progress kept in the browser (localStorage).
+lineup (grid squares are buttons, so the keyboard works). "Play out a season with this order"
+(random, 162 games, the order on screen next to the best one) shows how much one season swings;
+the score stays the played order's. Archive of past days, headed by a one-line summary of the
+days played on this device (from what is already saved); progress kept in the browser
+(localStorage).
 
 - `rules.toml`: the baserunning rates (league averages, the same for every runner) and game
   settings. Every puzzle file carries a copy, so the page and the build always agree.

@@ -162,7 +162,8 @@ def _season(s: dict) -> list[str]:
         "rule (five best-ranked champions + seven at-large). Scores are squared error summed over every FBS "
         "team (lower is better); `ESPN` is ESPN's own published chance from the same day. **Two seasons: a "
         "check that the changes hold up inside the simulator, not proof on its own.** \"New\" uses weights "
-        "fitted on seasons that include 2024 and 2025 (part 3 has the out-of-sample test).", "",
+        "fitted on seasons that include 2024 and 2025 (part 3 has the out-of-sample test). Run with model "
+        "0.5.0 (its title-game tiebreak, no played games in the tiebreak; part 6 compares the 0.6.0 rules).", "",
     ]
     out += _table(["season", "after week", "games left", "playoff field: 0.4.3", "new", "ESPN",
                    "conference champions: 0.4.3", "new", "ESPN"],
@@ -190,20 +191,120 @@ def _season(s: dict) -> list[str]:
     return out
 
 
+def _postseason(p: dict) -> list[str]:
+    k = {r["kind"]: r for r in p["by_kind"]}
+    wf = p["walk_forward"]
+    b, pl, both = wf["bowl"], wf["playoff"], wf["bowl + playoff"]
+    out = [
+        "## 5. Bowls and playoff games", "",
+        f"**Data.** The postseason games of part 1 split by ESPN's game note: {k['bowl']['n']} bowls and "
+        f"{k['playoff']['n']} playoff games (4-team semifinals and finals 2016-2023, 12-team playoffs 2024-2025), "
+        f"{k['bowl']['seasons']} seasons, each from the FPI published after the title games. "
+        "With the defaults (home field 2.5, SD 14):", "",
+    ]
+    out += _table(["games", "n", "favourite's predicted chance", "favourite won", "Brier", "log loss",
+                   "best SD (all seasons)", "margin per point of rating gap"],
+                  [[r["kind"], r["n"], f"{r['predicted_fav']:.1%}", f"{r['accuracy']:.1%}", f"{r['brier']:.4f}",
+                    f"{r['log_loss']:.4f}", r["best_sd"], f"{r['margin_slope']:.2f}"] for r in p["by_kind"]])
+    out += [f"Bowl favourites won {k['bowl']['accuracy']:.1%} against a predicted {k['bowl']['predicted_fav']:.1%}, "
+            f"and bowl log loss ({k['bowl']['log_loss']:.3f}) is no better than a coin flip (0.693): a point of "
+            f"rating gap is worth only {k['bowl']['margin_slope']:.2f} points of bowl margin. (Their lower raw "
+            "win rate is partly by design: bowls pair teams of similar strength, so the favourite's predicted "
+            "chance is lower too.) Playoff favourites did the opposite and won more often than predicted.", "",
+            "**Walk-forward** (SD refitted on the seasons before each test season; 'pull' = the alternative of "
+            "pulling the SD-14 probability toward 50% by a fitted factor):", ""]
+    for name, w in (("Bowls", b), ("Playoff games", pl)):
+        out += [f"_{name}_", ""]
+        out += _table(["test season", "games", "fitted SD", "fitted pull", "log loss, SD 14", "log loss, fitted SD",
+                       "log loss, pull", "Brier, SD 14", "Brier, fitted SD"],
+                      [[r["season"], r["n"], r["fit_sd"], r["fit_shrink"], f"{r['default']['log_loss']:.4f}",
+                        f"{r['sd']['log_loss']:.4f}", f"{r['shrink']['log_loss']:.4f}", f"{r['default']['brier']:.4f}",
+                        f"{r['sd']['brier']:.4f}"] for r in w["rows"]])
+        t = w["total"]
+        out += [f"All test games: log loss {t['default']['log_loss']:.4f} -> {t['sd']['log_loss']:.4f} (pull "
+                f"{t['shrink']['log_loss']:.4f}), Brier {t['default']['brier']:.4f} -> {t['sd']['brier']:.4f}; the "
+                f"fitted SD is better in {w['better_sd']} of {len(w['rows'])} seasons.", ""]
+    out += [f"Bowls and playoff games pooled under one SD: log loss {both['total']['default']['log_loss']:.4f} -> "
+            f"{both['total']['sd']['log_loss']:.4f}, better in {both['better_sd']} of {len(both['rows'])}: worse than "
+            "treating them apart, because the two go opposite ways.", "",
+            "Bowl log loss by SD, all bowls (2016-2020 and 2021-2025 apart):", ""]
+    out += _table(["SD", "log loss", "Brier", "2016-2020", "2021-2025"],
+                  [[c["sd"], f"{c['log_loss']:.4f}", f"{c['brier']:.4f}", f"{c['early']:.4f}", f"{c['late']:.4f}"]
+                   for c in p["bowl_curve"]])
+    cal = lambda rows: [[f"{c['lo']:.0%}-{min(c['hi'], 1):.0%}", c["n"],  # noqa: E731
+                         "-" if c["predicted"] is None else f"{c['predicted']:.1%}",
+                         "-" if c["actual"] is None else f"{c['actual']:.1%}"] for c in rows]
+    out += ["Bowls get harder to call in the later seasons (the best SD grows), as opt-outs and the transfer "
+            "portal would suggest; the walk-forward fit follows that with a lag.", "",
+            "Bowl calibration (all seasons; with the fitted SD most bowls become near toss-ups):", ""]
+    out += _table(["favourite's chance", "bowls (SD 14)", "predicted", "won"], cal(p["calibration_bowl"]["default"]))
+    out += _table(["favourite's chance", f"bowls (SD {b['fit_all']})", "predicted", "won"],
+                  cal(p["calibration_bowl"]["fit"]))
+    out += [f"**Promoted: `bowl_margin_sd` = {b['fit_all']}** (the fit on all ten seasons, so in-sample; the "
+            "out-of-sample evidence is the walk-forward table, 7 independent seasons). **Playoff games: not "
+            f"changed.** Their best SD ({pl['fit_all']}) sits near the bottom of the search range and rests on "
+            f"{pl['n_all']} games (3 a season before 2024), while their margins miss the rating gap by as much as "
+            "other games do; the walk-forward gain is favourites winning "
+            "a few more of 37 test games than predicted. Title games "
+            "(favourites won fewer than predicted, but the best SD is smaller, not larger) are left alone too.", ""]
+    return out
+
+
+def _tiebreak(t: dict) -> list[str]:
+    f = t["final"]
+    multi = [r for r in f if r["tied"] >= 3]
+    out = [
+        "## 6. Conference title-game spots: tiebreakers", "",
+        "**Rule check, final standings.** Every conference-season 2016-2025 whose title game was the top two of "
+        f"one table (no divisions; {len(f)} conference-seasons, list in `research.py`), with the real "
+        "regular-season results and the FPI from before title week. 0.5.0 = conference win %, conference wins, "
+        "overall win %, rating, then a two-team head-to-head swap; 0.6.0 = `tiebreak.py` (head-to-head, "
+        "combined among 3+ tied teams, common opponents, rating). No fitting, so no walk-forward needed.", "",
+        f"Real title-game pair picked: 0.5.0 **{sum(r['old_right'] for r in f)} of {len(f)}**, 0.6.0 "
+        f"**{sum(r['new_right'] for r in f)} of {len(f)}**; with three or more teams tied for first or second: "
+        f"{sum(r['old_right'] for r in multi)} and {sum(r['new_right'] for r in multi)} of {len(multi)}.", "",
+    ]
+    out += _table(["season", "conference", "real title game", "0.5.0 rule", "0.6.0 rule", "teams tied"],
+                  [[r["season"], r["conf"], ", ".join(r["actual"]), ", ".join(r["old"]) + ("" if r["old_right"] else " (x)"),
+                    ", ".join(r["new"]) + ("" if r["new_right"] else " (x)"), r["tied"]]
+                   for r in f if not (r["old_right"] and r["new_right"])])
+    out += ["(Only the conference-seasons where a rule missed; x = wrong pair.) The remaining misses are ties "
+            "the conferences broke with steps the simulator doesn't have (opponents' records, computer-ranking "
+            "composites); adding the opponents' combined conference win % fixed one (2025 ACC) and broke another "
+            "(2025 AAC), so it was left out. The one tie the new rules get wrong and the old got right (2023 "
+            "MWC, a three-way tie with no round robin) the conference broke by computer rankings.", "",
+            f"**Inside the simulator, 2024 and 2025.** Part 4's eight runs ({t['sims']:,} seasons each, the current "
+            "defaults, games already played feeding the tiebreakers): squared error summed over all teams, lower "
+            "is better. Two seasons, so a consistency check; the Sun Belt's divisions are missed by both rules.", ""]
+    out += _table(["season", "after week", "plays in title game: 0.5.0", "0.6.0", "conference champion: 0.5.0", "0.6.0"],
+                  [[r["season"], r["after_week"], f"{r['old']['title_game']['brier_sum']:.2f}",
+                    f"{r['new']['title_game']['brier_sum']:.2f}", f"{r['old']['champ']['brier_sum']:.2f}",
+                    f"{r['new']['champ']['brier_sum']:.2f}"] for r in t["runs"]])
+    tot = lambda lab, k, m: sum(r[lab][k][m] for r in t["runs"])  # noqa: E731
+    better = sum(r["new"]["title_game"]["brier_sum"] < r["old"]["title_game"]["brier_sum"] for r in t["runs"])
+    out += [f"Totals: title-game spots {tot('old', 'title_game', 'brier_sum'):.2f} -> "
+            f"{tot('new', 'title_game', 'brier_sum'):.2f} (log loss {tot('old', 'title_game', 'log_loss_sum'):.1f} -> "
+            f"{tot('new', 'title_game', 'log_loss_sum'):.1f}), better in {better} of {len(t['runs'])} runs; "
+            f"conference champions {tot('old', 'champ', 'brier_sum'):.2f} -> {tot('new', 'champ', 'brier_sum'):.2f}. "
+            "**Adopted** (a rules fix, not a tunable).", ""]
+    return out
+
+
 def write_report(path: Path, parts: dict[str, dict | None]) -> None:
     out = [
         "# ncaaf_bowls: accuracy study", "",
         "_Generated by `python -m ballmonitor.models.ncaaf_bowls.research`; do not edit by hand._", "",
         "Real past seasons only (ESPN, 2016-2025; `research_data.py`). Every fitted number is tested "
         "walk-forward: fitted on the seasons before the test season. What is **not** tested here: which bowl "
-        "a team goes to (the tie-in and bowl-pick part of the model), seeding, and the playoff games "
-        "themselves beyond part 1's single-game check.", "",
+        "a team goes to (the tie-in and bowl-pick part of the model) and seeding. Bowls and playoff games "
+        "are scored on their own in part 5.", "",
         "**Hindsight guard.** ESPN keeps one FPI snapshot per week. The snapshot labelled week N is the one "
         "after week N's games (the title-game week moves only the teams that played; 2023-2025 timestamps "
         "agree), so games of week N are predicted from snapshot N-1. The `last_updated` stamps of 2016-2022 "
         "are stale and are not used; 'week 1' snapshots (recomputed in December in some seasons) are dropped.", "",
     ]
-    for name, fn in (("games", _games), ("wins", _wins), ("committee", _committee), ("season", _season)):
+    for name, fn in (("games", _games), ("wins", _wins), ("committee", _committee), ("season", _season),
+                     ("postseason", _postseason), ("tiebreak", _tiebreak)):
         if parts.get(name):
             out += fn(parts[name])
     path.write_text("\n".join(out).rstrip() + "\n")

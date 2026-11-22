@@ -31,3 +31,7 @@ export const careerStore = {
     put: (career) => run('readwrite', (s) => s.put(career)),
     remove: (id) => run('readwrite', (s) => s.delete(id)),
 };
+
+// What to tell the player when IndexedDB is blocked (private windows in some
+// browsers, blocked site data, a game frame without storage).
+export const CAREER_STORAGE_ERROR = 'Careers are saved in this browser’s storage (IndexedDB), and this browser won’t allow it here: private browsing or blocked site data can do that.';

@@ -119,6 +119,14 @@ const duel = store.join(store.create({ playerId: a, name: 'Ann' }).id, { playerI
 const resigned = store.resign(duel.id, { playerId: b });
 check('resigning gives the game to the other side', resigned.status === 'done' && resigned.result.winner === (duel.seats.home.mine ? 'away' : 'home'));
 
+// Custom rules that don't parse can't break a game: each broken formula
+// falls back to its default (createFormulas never throws), so creating the
+// game still works rather than failing with a server error.
+const broken = errorStatus(() => store.create({ playerId: a, name: 'Ann', level: 'youth', formulas: { velocity: '((( +', scatter: '1/0', zoneSpeed: 'nope(' } }));
+check('custom rules that don’t parse still make a game (no 500)', broken === null);
+const brokenGame = store.list(a).at(-1);
+check('...a playable one', brokenGame?.status === 'waiting');
+
 // Games nobody has touched for a month are deleted (file and all).
 const kept = store.create({ playerId: a, name: 'Ann' });
 clock += 29 * 24 * 3600 * 1000;

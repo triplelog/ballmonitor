@@ -1,6 +1,7 @@
 """Public page: every football program's recruiting class, one class year at a time: overall rank,
 rank within its conference, the industry (star-rating) consensus rank, and offense / defense /
-run / pass unit ranks.
+run / pass unit ranks; and a page per FBS program (/ncaaf_recruiting/team/<team>/) with its class
+rank in every year.
 
 Football only (basketball is research-only, see config.toml [web]). Built at site-build time
 from the committed recruit files; the page only displays these numbers.
@@ -22,6 +23,8 @@ from .src.position_model import PositionalRankingEngine
 # recruit files spell differently.
 ALIASES = {"Hawaii": "Hawai'i", "Middle Tennessee": "Middle Tennessee State", "Pittsburgh": "Pitt",
            "Sam Houston": "Sam Houston State", "UConn": "Connecticut", "UMass": "Massachusetts"}
+# the quick-filter buttons above a class table: these conferences first, then the rest by name
+CONF_ORDER = ("SEC", "Big Ten", "Big 12", "ACC")
 
 
 def _day(iso: str) -> str:
@@ -46,6 +49,11 @@ def consensus(data_dir, year: int) -> dict[str, int]:
     with path.open(newline="") as fh:
         return {ALIASES.get(r["team"], r["team"]): int(r["rank"])
                 for r in csv.DictReader(fh) if r["sport"] == "ncaaf" and int(r["year"]) == year}
+
+
+def _conf_buttons(rows: list[dict]) -> list[str]:
+    present = {r["conf"] for r in rows if r["conf"]}
+    return [c for c in CONF_ORDER if c in present] + sorted(present - set(CONF_ORDER))
 
 
 def _year_views(model, year: int, conf_of: dict[str, str]) -> tuple[list[dict], dict]:
@@ -98,27 +106,29 @@ def _year_views(model, year: int, conf_of: dict[str, str]) -> tuple[list[dict], 
 
     overall_table = V.table(
         f"programs_{year}", f"{year} class rankings",
-        [rank("rank", "Rank"), V.col("team", "Team"), V.col("conf", "Conference"),
+        [rank("rank", "Rank"), V.col("team", "Team", link="team"), V.col("conf", "Conference"),
          rank("conf_rank", "Rank in conf."), rank("industry", "Industry rank"),
          V.col("commits", "Commits", "int"), V.col("blue", "4-5 star commits", "int"),
          V.col("score", "Class score", "number", decimals=1, bar=True)],
         overall,
         subtitle=("Commitments so far; this class is still being signed. " if in_progress else "")
         + "Rank: our ranking. Industry rank: the recruiting services' consensus, based on star ratings. "
-          "Search for a team or a conference.",
+          "Pick a conference or search for a team; click a team for its classes in every year.",
         note="Conferences are 2026 FBS conferences (blank for FCS and other schools), also for older classes. "
              "Class score adds up the recruit scores of a school's commits, with each extra commit counting "
              "a little less than the one before.",
-        search=True, page_size=25)
+        search=True, page_size=25, quick_filters=("conf", _conf_buttons(overall)))
     sides_table = V.table(
         f"units_{year}", f"{year} class by side of the ball",
-        [rank("rank", "Overall"), V.col("team", "Team"), rank("off", "Offense"), rank("def", "Defense"),
+        [rank("rank", "Overall"), V.col("team", "Team", link="team"), rank("off", "Offense"), rank("def", "Defense"),
          rank("run_o", "Run offense"), rank("pass_o", "Pass offense"), rank("run_d", "Run defense"),
          rank("pass_d", "Pass defense")],
         sides,
         subtitle="Where each class ranks for offense and defense, and for the running and passing game on each side.",
         note="Each recruit counts toward the units his position plays in: a quarterback or receiver mostly "
-             "toward the passing game, a running back or offensive lineman toward both, and so on.",
+             "toward the passing game, a running back or offensive lineman toward both, and so on. Each side of the "
+             "ball adds up its recruits the same way as the class score, best first, each one counting a little "
+             "less than the one before.",
         search=True, page_size=25)
     top = sorted(teams, key=lambda t: t.rank)
     leaders = [t.name for t in top[:3]]
@@ -130,7 +140,45 @@ def _year_views(model, year: int, conf_of: dict[str, str]) -> tuple[list[dict], 
     intro = (f"No. 1: {leaders[0]}, then {leaders[1]} and {leaders[2]}. Top-25 classes: "
              + ", ".join(f"{c} {n}" for c, n in by_conf[:4]) + ".")
     return [overall_table, sides_table], {"label": label, "status": status, "leaders": leaders,
-                                           "in_progress": in_progress, "intro": intro}
+                                           "in_progress": in_progress, "intro": intro, "rows": overall}
+
+
+def _team_option(name: str, conf: str, history: list[tuple[int, dict, bool]]) -> dict:
+    """One program's classes, newest first: our rank, its rank in the conference, the industry
+    rank and how far apart the two are, as a table and a line chart (No. 1 at the top)."""
+    rows = []
+    for year, r, in_progress in history:
+        gap = r["industry"] - r["rank"] if r["industry"] else None
+        rows.append({"year": f"{year}" + (" (still signing)" if in_progress else ""), "rank": r["rank"],
+                     "conf_rank": r["conf_rank"], "industry": r["industry"], "gap": gap, "commits": r["commits"],
+                     "blue": r["blue"]})
+    table = V.table(
+        f"classes_{V.slug(name)}", "Class rank by year",
+        [V.col("year", "Class"), V.col("rank", "Rank", "int", low_first=True),
+         V.col("conf_rank", "Rank in conf.", "int", low_first=True),
+         V.col("industry", "Industry rank", "int", low_first=True),
+         V.col("gap", "Ours vs industry", "signed", decimals=0), V.col("commits", "Commits", "int"),
+         V.col("blue", "4-5 star commits", "int")],
+        rows,
+        subtitle="Ours vs industry: how many places higher we rank the class than the recruiting services do "
+                 "(negative: lower).",
+        note="Rank in conference uses the 2026 conferences for every year.")
+    old = sorted(history)   # oldest first, for the chart
+    ours = [(y, r["rank"]) for y, r, _ in old]
+    industry = [(y, r["industry"]) for y, r, _ in old if r["industry"]]
+    worst = max([rk for _, rk in ours] + [rk for _, rk in industry])
+    chart = V.line(
+        f"trend_{V.slug(name)}", "Class rank over the years",
+        [V.series("Our rank", ours)] + ([V.series("Industry rank", industry)] if industry else []),
+        x_label="Class", y_label="Rank (No. 1 at the top)", y_fmt="int", y_min=1, y_max=max(worst, 10), y_reverse=True,
+        x_ticks=[(y, str(y)) for y, _ in ours if y % 2 == old[-1][0] % 2])
+    newest_year, newest, newest_open = history[0]
+    best = min(history, key=lambda h: (h[1]["rank"], -h[0]))
+    avg = sum(r["rank"] for _, r, _ in history) / len(history)
+    intro = (f"{name}{f' ({conf})' if conf else ''}: No. {newest['rank']} in {newest_year}"
+             + (" so far" if newest_open else "")
+             + f"; best class No. {best[1]['rank']} ({best[0]}); average rank {avg:.0f} over {len(history)} classes.")
+    return V.option(name, [chart, table], intro=intro)
 
 
 def page(model) -> dict:
@@ -138,9 +186,13 @@ def page(model) -> dict:
     years = sorted(available_years(data, "ncaaf"), reverse=True)
     conf_of = conferences()
     options, fetched, infos = [], "", {}
+    history: dict[str, list[tuple[int, dict, bool]]] = {}   # FBS program -> its classes, newest first
     for year in years:
         group, info = _year_views(model, year, conf_of)
         infos[year] = info
+        for r in info["rows"]:
+            if r["conf"]:
+                history.setdefault(r["team"], []).append((year, r, info["in_progress"]))
         options.append(V.option(info["label"], group, intro=info["intro"]))
         if info["status"].get("status") == "in_progress" and info["status"].get("fetched"):
             fetched = fetched or info["status"]["fetched"]
@@ -164,6 +216,12 @@ def page(model) -> dict:
                  + (f" The {newest} class is still being signed; {years[1]} and earlier classes are final."
                     if status.get("status") == "in_progress" else ""))
 
+    team_picker = V.picker(
+        "team", "Team by team", "Team",
+        [_team_option(name, conf_of.get(name, ""), h) for name, h in sorted(history.items())],
+        subtitle="One FBS program's class rank in every year, next to the recruiting services' rank.",
+        default=sorted(history).index(lead[0]) if lead[0] in history else 0)
+
     return V.page(
         title="College football recruiting rankings",
         summary="Every football program's recruiting class ranked overall, within its conference and by "
@@ -177,6 +235,7 @@ def page(model) -> dict:
              "offered him a scholarship and lost: the more offers, and the stronger those schools, the "
              "higher the score. School strength is worked out from every recruiting battle in the class "
              "at once. Offer lists come from On3 and are incomplete for lower-rated recruits. The industry "
-             "rank is On3's consensus of the four recruiting services' star ratings, for comparison."),
-        views=[by_year],
+             "rank is On3's consensus of the four recruiting services' star ratings, for comparison. "
+             "These are high-school classes only, not players added from the transfer portal."),
+        views=[by_year, team_picker],
     )

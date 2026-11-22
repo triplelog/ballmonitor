@@ -47,6 +47,8 @@ try {
     const made = await fetch(`${base}/api/mp/games`, { method: 'POST', headers: { Origin: GOOD, 'Content-Type': 'application/json', 'X-Player-Id': player }, body: JSON.stringify({ name: 'Ann', level: 'youth' }) });
     const body = await made.json();
     check('a game can be created from a listed site', made.status === 200 && /^[A-Z2-9]{6}$/.test(body.game?.code ?? ''), JSON.stringify(body).slice(0, 120));
+    const bad = await fetch(`${base}/api/mp/games`, { method: 'POST', headers: { 'Content-Type': 'application/json', 'X-Player-Id': player }, body: JSON.stringify({ name: 'Ann', level: 'youth', formulas: { velocity: '((( +', scatter: '1/0' } }) });
+    check('custom rules that don’t parse don’t make a server error', bad.status === 200, String(bad.status));
 } finally {
     server.kill();
     rmSync(dir, { recursive: true, force: true });

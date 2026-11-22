@@ -13,7 +13,7 @@ import {
     seasonLine, trainCost, train, learnable, learnPitch, pitchCost, choose, careerTotals, hallOfFame, upcoming,
     pitcherAt, STYLES, PLAY_MODES, PID, youthRegion, prospectScore,
 } from '../engine/career.js';
-import { careerStore } from './idb.js';
+import { careerStore, CAREER_STORAGE_ERROR } from './idb.js';
 import { esc } from './storage.js';
 
 const LEVEL_NAMES = { youth: 'Youth', hs: 'High school', college: 'College', pro: 'Pro' };
@@ -24,6 +24,7 @@ const era = (v) => (Number.isFinite(v) ? v.toFixed(2) : '–');
 // ---------- the list, and a new career ----------
 export function renderCareers(app) {
     let careers = null;
+    let storageBlocked = false;
     const rng = createRng(Date.now() >>> 0);
     const form = {
         first: rng.pick(FIRST_NAMES), last: rng.pick(LAST_NAMES), throws: 'R', style: 'power',
@@ -38,7 +39,7 @@ export function renderCareers(app) {
                 <div><b>${esc(careerName(c))}</b> <span class="muted">${c.throws}HP · ${STYLES[c.style]?.name ?? ''} · from ${esc(c.city)}, ${esc(STATES[c.state][0])}</span>
                 <div class="muted" style="font-size:12px">${c.retired ? `Retired at ${c.age} · Hall of Fame score ${hallOfFame(c)}` : `Age ${c.age} · ${stageText(c)}`} · ${c.history.length} season${c.history.length === 1 ? '' : 's'}</div></div>
                 <div class="mp-actions"><button class="primary" data-open="${c.id}">${c.retired ? 'View' : 'Continue'}</button><button class="small" data-delete="${c.id}">Delete</button></div>
-            </div>`).join('') : '<div class="muted">No careers yet.</div>';
+            </div>`).join('') : storageBlocked ? `<div class="muted">${esc(CAREER_STORAGE_ERROR)} You can still start one, but it won’t be kept after you leave this page.</div>` : '<div class="muted">No careers yet.</div>';
         app.root.innerHTML = `
         <div class="page wide">
             <div class="page-head"><button data-act="back">← Menu</button><h1>Career</h1></div>
@@ -46,9 +47,9 @@ export function renderCareers(app) {
                 <div class="panel"><h3>Your careers</h3><div class="career-list">${list}</div></div>
                 <div class="panel">
                     <h3>A new pitcher</h3>
-                    <div class="form-grid" style="grid-template-columns: 110px 1fr">
+                    <div class="form-grid" style="--label-w: 110px">
                         <label>Name</label>
-                        <div style="display:flex;gap:6px"><input id="c-first" value="${esc(form.first)}" style="flex:1"><input id="c-last" value="${esc(form.last)}" style="flex:1"></div>
+                        <div style="display:flex;gap:6px"><input id="c-first" value="${esc(form.first)}" style="flex:1;min-width:0"><input id="c-last" value="${esc(form.last)}" style="flex:1;min-width:0"></div>
                         <label>Throws</label>
                         <select id="c-throws"><option value="R" ${form.throws === 'R' ? 'selected' : ''}>Right</option><option value="L" ${form.throws === 'L' ? 'selected' : ''}>Left</option></select>
                         <label>Style</label>
@@ -56,8 +57,8 @@ export function renderCareers(app) {
                             <span><b>${s.name}</b> <span class="muted" style="font-size:12px">${esc(s.desc)} Starts with ${s.pitches.join(' and ')}.</span></span></label>`).join('')}</div>
                         <label>Hometown</label>
                         <div style="display:flex;gap:6px">
-                            <select id="c-state">${Object.entries(STATES).sort((a, b) => a[1][0].localeCompare(b[1][0])).map(([abbr, [name]]) => `<option value="${abbr}" ${abbr === form.state ? 'selected' : ''}>${name}</option>`).join('')}</select>
-                            <select id="c-city" style="flex:1">${cities.map((c) => `<option ${c === form.city ? 'selected' : ''}>${esc(c)}</option>`).join('')}</select>
+                            <select id="c-state" style="flex:1;min-width:0">${Object.entries(STATES).sort((a, b) => a[1][0].localeCompare(b[1][0])).map(([abbr, [name]]) => `<option value="${abbr}" ${abbr === form.state ? 'selected' : ''}>${name}</option>`).join('')}</select>
+                            <select id="c-city" style="flex:1;min-width:0">${cities.map((c) => `<option ${c === form.city ? 'selected' : ''}>${esc(c)}</option>`).join('')}</select>
                         </div>
                         <div class="hint">At 12 he pitches for ${esc(youthRegion(form.state, form.city))} in the Youth World Tournament, then for ${esc(form.city)} High.</div>
                         <label>Your starts</label>
@@ -89,9 +90,13 @@ export function renderCareers(app) {
         if (btn.dataset.open) return app.go('careerHub', { id: btn.dataset.open });
         if (btn.dataset.delete) {
             if (!confirm('Delete this career for good?')) return;
-            await careerStore.remove(btn.dataset.delete);
+            try {
+                await careerStore.remove(btn.dataset.delete);
+                careers = await careerStore.list();
+            } catch (err) {
+                alert(`Couldn’t delete it. ${CAREER_STORAGE_ERROR}`);
+            }
             if (app.career?.id === btn.dataset.delete) app.career = null;
-            careers = await careerStore.list();
             draw();
             return;
         }
@@ -114,7 +119,7 @@ export function renderCareers(app) {
     // When the list arrives, keep whatever has been typed into the form.
     const redraw = () => { if (app.root.querySelector('#c-first')) read(); draw(); };
     careerStore.list().then((list) => { careers = list.sort((a, b) => (b.updatedAt ?? 0) - (a.updatedAt ?? 0)); redraw(); })
-        .catch(() => { careers = []; redraw(); });
+        .catch(() => { careers = []; storageBlocked = true; redraw(); });
     return () => {
         app.root.removeEventListener('click', onClick);
         app.root.removeEventListener('change', onChange);
@@ -144,7 +149,7 @@ export function renderCareerHub(app, args) {
         if (cancelled) return;
         if (!career) { app.go('careers'); return; }
         cleanup = hub(app, career, args);
-    });
+    }).catch((e) => { if (!cancelled) app.storageProblem(e, 'careers'); });
     return () => { cancelled = true; if (cleanup) cleanup(); };
 }
 
@@ -213,7 +218,7 @@ function hub(app, career, args) {
             next = `<div class="next-game"><div class="muted"><b class="playoff-tag">${esc(gameLabel(g))}</b> · Day ${g.day + 1}</div>
                 <h2>Your start: ${g.home === me ? 'vs' : 'at'} <span style="color:${opp.color}">${esc(teamName(opp))}</span> <span class="muted" style="font-size:14px">(${teamRecord(season, opp.id).w}-${teamRecord(season, opp.id).l})</span></h2>
                 <div class="row-actions" style="justify-content:flex-start;flex-wrap:wrap">
-                    <button class="primary big" data-act="pitch">${app.savedGame()?.careerId === career.id ? 'Resume the game' : 'Pitch it'}</button>
+                    <button class="primary big" data-act="pitch">${app.savedGame('career')?.careerId === career.id ? 'Resume the game' : 'Pitch it'}</button>
                     <button data-act="sim-start">Sim this start</button>
                     <button data-act="sim-end">Sim the rest of the season</button>
                 </div></div>`;
@@ -234,7 +239,7 @@ function hub(app, career, args) {
             <div class="muted">${esc(season.title)}${career.stage === 'youth' ? '' : ` · ${esc(stageText(career))}`} · team ${rec.w}-${rec.l}</div>
             <div class="c-line">${[['GS', line.gs], ['W-L', `${line.w}-${line.l}`], ['ERA', era(line.era)], ['IP', ipText(line.outs)], ['K', line.k], ['BB', line.bb]].map(([k, v]) => `<div><b>${v}</b><span>${k}</span></div>`).join('')}</div>
             ${next}
-            <div class="form-grid" style="grid-template-columns: 100px 1fr;margin-top:10px">
+            <div class="form-grid" style="--label-w: 100px;margin-top:10px">
                 <label>Your starts</label><select id="c-play">${Object.entries(PLAY_MODES).map(([k, v]) => `<option value="${k}" ${k === career.settings.play ? 'selected' : ''}>${v}</option>`).join('')}</select>
                 <label>Difficulty</label><select id="c-diff">${[1, 2, 3, 4, 5].map((d) => `<option value="${d}" ${d === career.settings.difficulty ? 'selected' : ''}>${DIFF_NAMES[d]}</option>`).join('')}</select>
             </div>
@@ -390,8 +395,10 @@ function hub(app, career, args) {
                 break;
             }
             case 'pitch': {
-                const saved = app.savedGame();
-                if (saved?.careerId === career.id) return app.go('continue');
+                const saved = app.savedGame('career');
+                if (saved?.careerId === career.id) return app.go('continue', { kind: 'career' });
+                // One career start is kept at a time.
+                if (saved && !confirm('Another career has a start in progress. Pitching this one replaces that saved game (it will start over). Go ahead?')) return;
                 const g = s().schedule[career.pendingStart];
                 const game = careerGame(career, F, g);
                 app.saveGame(game, { careerId: career.id, seasonGameId: g.id });

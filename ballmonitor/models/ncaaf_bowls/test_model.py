@@ -138,11 +138,17 @@ def test_site_bubble_field_and_bracket_agree():
     field = v["field"]["rows"]
     assert [r["seed"] for r in field] == list(range(1, 13)) and len({r["team"] for r in field}) == 12
     seed_of = {r["team"]: r["seed"] for r in field}
-    games = v["bracket"]["rows"]
-    assert [g["round"] for g in games].count("First round") == 4 and games[-1]["round"] == "Championship"
-    assert len(games) == 11 and all(0.5 <= g["p"] <= 1 for g in games)
-    # first round: 5v12, 6v11, 7v10, 8v9 at the higher seed
-    assert [g["matchup"].split(" vs ")[0].split()[1] for g in games[:4]] == ["5", "6", "7", "8"]
+    rounds = {r["name"]: r["games"] for r in v["bracket"]["rounds"]}
+    assert list(rounds) == ["First round", "Quarterfinals", "Semifinals", "Championship"]
+    assert [len(g) for g in rounds.values()] == [4, 4, 2, 1]
+    for g in (g for games in rounds.values() for g in games):
+        a, b = g["teams"]
+        assert abs(a["p"] + b["p"] - 1) < 1e-9 and g["teams"][g["winner"]]["p"] >= 0.5
+    # first round: 8v9, 5v12, 7v10, 6v11 (bracket order) at the higher seed; seeds 1-4 start in the quarterfinals
+    assert [(g["teams"][0]["seed"], g["teams"][1]["seed"]) for g in rounds["First round"]] == [(8, 9), (5, 12), (7, 10), (6, 11)]
+    assert [g["teams"][0]["seed"] for g in rounds["Quarterfinals"]] == [1, 4, 2, 3]
+    final = rounds["Championship"][0]
+    assert v["bracket"]["champion"] == final["teams"][final["winner"]]["name"]
     for r in v["bubble"]["rows"]:  # one projection everywhere
         assert r["seed"] == seed_of.get(r["team"])
     cuts = model.params.site_bubble_cuts
@@ -277,3 +283,27 @@ def test_root_for_lists_the_teams_own_game_first_and_skips_noise():
                      if s.p_cfp < float(p.site_root_min_chance) and s.p_conf_champ < float(p.site_root_min_chance)), None)
     if hopeless:
         assert site.root_for(hopeless, res.team_summaries[hopeless], res, schedule, games, names, p) == ("", [])
+
+
+def test_bowls_use_bowl_margin_sd_playoff_keeps_margin_sd():
+    m = _model()
+    # +7 neutral: Phi(7 / 27.5) = Phi(0.2545) = 0.6005 in a bowl; Phi(0.5) = 0.6915 in the playoff
+    bowl = m.predict({"home_rating": 10.0, "away_rating": 3.0, "site": "neutral", "kind": "bowl"})
+    assert bowl.primary.probability == pytest.approx(0.6005, abs=1e-3)
+    playoff = m.predict({"home_rating": 10.0, "away_rating": 3.0, "site": "neutral", "kind": "playoff"})
+    assert playoff.primary.probability == pytest.approx(0.6915, abs=1e-3)
+    with pytest.raises(ValueError, match="kind"):
+        m.predict({"home_rating": 1.0, "away_rating": 0.0, "kind": "spring game"})
+    inputs, _ = m.backtest_case({"home": "A", "away": "B", "home_rating": "4.5", "away_rating": "10.6",
+                                 "site": "neutral", "winner": "away", "kind": "bowl"})
+    assert inputs["kind"] == "bowl"
+    # inside the simulation: sqrt(27.5^2 - 2 * 5^2) for bowls, sqrt(14^2 - 2 * 5^2) for other games
+    cfg = m.engine(10).config
+    assert cfg.bowl_game_sd() == pytest.approx((27.5 ** 2 - 50) ** 0.5)
+    assert cfg.game_sd() == pytest.approx(146 ** 0.5)
+    assert cfg.bowl_win_prob_fn(7.0, 0) == pytest.approx(0.5 + 0.5 * __import__("math").erf(
+        7.0 / cfg.bowl_game_sd() / 2 ** 0.5), abs=1e-3)
+    # a wider bowl SD pulls bowl results toward 50%, and leaves the playoff alone
+    flat = _model(bowl_margin_sd=60.0).engine(10).config
+    assert 0.5 < flat.bowl_win_prob_fn(7.0, 0) < cfg.bowl_win_prob_fn(7.0, 0)
+    assert flat.win_prob_fn(7.0, 0) == pytest.approx(cfg.win_prob_fn(7.0, 0))

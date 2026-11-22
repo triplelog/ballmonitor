@@ -28,29 +28,27 @@ export const clockSecondsOf = (prefs) => prefs.clockSeconds ?? 20;
 export const guideModeOf = (prefs) => prefs.guideMode ?? (prefs.showGuide === false ? 'hidden' : 'show');
 
 export function renderMenu(app) {
-    const saved = app.savedGame();
-    let savedLabel = '';
-    if (saved) {
+    // One Continue button per mode with a game in progress.
+    const saved = app.savedGames();
+    const savedLabel = ({ kind, saved: sv }) => {
         // Career and season games use their own leagues, so name the kind of
         // game rather than looking up teams in the quick-game league.
-        const st = saved.state;
+        const st = sv.state;
         const where = `${st.half === 'top' ? 'top' : 'bottom'} ${st.inning}`;
-        if (saved.careerId) savedLabel = `Career start, ${where}`;
-        else if (saved.seasonGameId !== undefined) savedLabel = `Season game, ${where}`;
-        else {
-            const a = app.league.teams[st.sides.away.teamId];
-            const h = app.league.teams[st.sides.home.teamId];
-            savedLabel = `${st.challengeId ? `${CHALLENGE_BY_ID[st.challengeId]?.name}: ` : ''}${a?.abbr ?? 'Away'} ${st.score.away} – ${h?.abbr ?? 'Home'} ${st.score.home}, ${where}`;
-        }
-    }
+        if (kind === 'career') return `Career start, ${where}`;
+        if (kind === 'season') return `Season game, ${where}`;
+        const a = app.league.teams[st.sides.away.teamId];
+        const h = app.league.teams[st.sides.home.teamId];
+        return `${st.challengeId ? `${CHALLENGE_BY_ID[st.challengeId]?.name}: ` : ''}${a?.abbr ?? 'Away'} ${st.score.away} – ${h?.abbr ?? 'Home'} ${st.score.home}, ${where}`;
+    };
     app.root.innerHTML = `
     <div class="menu">
         ${ON_ITCH ? '' : '<a class="back-site" href="../" title="Back to Ball Monitor">← Ball Monitor</a>'}
         <div class="logo">27K</div>
         <p class="tag">Pick a pitch, read the moving zone, and paint the corners.</p>
         <div class="menu-buttons">
-            ${saved ? `<button class="primary" data-go="continue">Continue game <span class="soon">${esc(savedLabel)}</span></button>` : ''}
-            <button class="${saved ? '' : 'primary'}" data-go="quick">Quick Game</button>
+            ${saved.map((sv, i) => `<button class="${i ? '' : 'primary'}" data-go="continue" data-kind="${sv.kind}">Continue game <span class="soon">${esc(savedLabel(sv))}</span></button>`).join('')}
+            <button class="${saved.length ? '' : 'primary'}" data-go="quick">Quick Game</button>
             <button data-go="challenges">Challenges & Achievements</button>
             <button data-go="lab">Formula Lab</button>
             <button data-go="season">Season</button>
@@ -78,7 +76,7 @@ export function renderMenu(app) {
     app.root.querySelector('.menu').addEventListener('click', (e) => {
         const btn = e.target.closest('button');
         if (!btn) return;
-        if (btn.dataset.go) app.go(btn.dataset.go);
+        if (btn.dataset.go) app.go(btn.dataset.go, btn.dataset.kind ? { kind: btn.dataset.kind } : undefined);
         // (No button for this right now; kept for later.)
         if (btn.dataset.act === 'new-league') {
             if (confirm('Generate a new league? Your current teams and any game in progress will be replaced.')) {
@@ -201,9 +199,9 @@ export function renderLineup(app, ctx = null) {
         const starters = ctx.pitchers ?? [];
 
         app.root.innerHTML = `
-        <div class="page">
+        <div class="page wide lineup-page">
             <div class="page-head"><button data-act="back">← Back</button><h1>${esc(ctx.title ?? `${teamName(team)}: lineup card`)}</h1></div>
-            <div class="cols-2">
+            <div class="cols-2 lineup-cols">
                 <div class="panel">
                     <h3>Batting order</h3>
                     <table class="grid">
@@ -304,7 +302,7 @@ function quickGameLineup(app) {
 }
 
 function startQuickGame(app, team, lineup, starterId) {
-    if (app.savedGame() && !confirm('You have a game in progress. Starting a new one replaces it. Go ahead?')) return;
+    if (app.savedGame('quick') && !confirm('You have a Quick Game or challenge in progress. Starting a new one replaces it. Go ahead?')) return;
     const { league } = app;
     const p = app.prefs;
     const opp = league.teams[p.oppTeamId];

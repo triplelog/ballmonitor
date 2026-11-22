@@ -27,6 +27,8 @@ class Team:
     legacy_pac12: bool = False
     acc_bowl_eligible: bool = False
     last_bowl: str | None = None
+    # division within the conference (teams.json, from ESPN); None = the conference has none
+    division: str | None = None
 
     @classmethod
     def from_dict(cls, data: dict[str, Any]) -> Team:
@@ -47,7 +49,8 @@ class Team:
             conf_losses=int(data.get("conf_losses", 0)),
             legacy_pac12=bool(data.get("legacy_pac12", False)),
             acc_bowl_eligible=bool(data.get("acc_bowl_eligible", False)),
-            last_bowl=data.get("last_bowl")
+            last_bowl=data.get("last_bowl"),
+            division=data.get("division") or None,
         )
 
 @dataclass

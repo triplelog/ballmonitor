@@ -82,9 +82,10 @@ def this_week(schedule: list[dict], today: dt.date | None = None) -> tuple[list[
     return games, when
 
 
-def _game_label(g: dict, names: dict[str, str]) -> str:
-    sep = " vs " if g.get("neutral") else " at "
-    return f"{names.get(g['away'], g['away'])}{sep}{names.get(g['home'], g['home'])}"
+def _game_label(g: dict, names: dict[str, str]) -> list[str]:
+    """["Texas", "at", "Georgia"] ("vs" on a neutral field): a list cell (views.col sep=" "),
+    so each team name links to its own page."""
+    return [names.get(g["away"], g["away"]), "vs" if g.get("neutral") else "at", names.get(g["home"], g["home"])]
 
 
 def _swing(tally, hits_if_home: int, hits_total: int, n: int, z: float):
@@ -138,7 +139,7 @@ def root_for(team_id: str, summary, res, schedule: list[dict], games: list[int],
 def root_view(team_id: str, team_name: str, what: str, rows: list[dict], when: str) -> dict:
     return V.table(
         f"root_{team_id}", f"Who to root for this week ({when})",
-        [V.col("game", "Game"), V.col("root", "Root for"),
+        [V.col("game", "Game", link="team", sep=" "), V.col("root", "Root for", link="team"),
          V.col("if_win", f"{what.capitalize()} chance if they win", "pct"),
          V.col("if_lose", "If they lose", "pct"), V.col("diff", "Difference", "pct", bar=True)],
         rows,
@@ -176,14 +177,15 @@ def biggest_games(res, schedule: list[dict], games: list[int], names: dict[str, 
         rows.append({"game": _game_label(schedule[g], names), "stake": stake,
                      "fav": ("Toss-up" if abs(p_home - 0.5) < p.site_tossup_margin
                              else f"{names.get(fav, fav)} ({max(p_home, 1 - p_home):.0%})"),
-                     "teams": ", ".join(name for _, name, _ in moved[:4])})
+                     "teams": [name for _, name, _ in moved[:4]]})
     if not rows:
         return None
     rows.sort(key=lambda r: -r["stake"])
     return V.table(
         "big_games", f"This week's biggest games ({when})",
-        [V.col("game", "Game"), V.col("stake", "Playoff places at stake", "number", decimals=2, bar=True),
-         V.col("fav", "Favorite"), V.col("teams", "Whose playoff chances move most")],
+        [V.col("game", "Game", link="team", sep=" "),
+         V.col("stake", "Playoff places at stake", "number", decimals=2, bar=True),
+         V.col("fav", "Favorite"), V.col("teams", "Whose playoff chances move most", link="team")],
         rows[:int(p.site_big_games_rows)],
         subtitle="The games that move the playoff race most, whoever wins. A team's own page shows "
                  "who it should root for.",
@@ -216,29 +218,27 @@ def _bubble(summaries, cuts: list[float], teams: dict, proj: dict[str, int]) -> 
 
 def _bracket(model, summaries, proj: dict[str, int]) -> list[dict]:
     """The projected field (projected_field) with the favorite advancing in every game (win
-    chances from the config formula win_probability)."""
+    chances from the config formula win_probability), drawn as a bracket (views.bracket)."""
     by_id = {s.team_id: s for s in summaries}
     seeded = {seed: by_id[tid] for tid, seed in proj.items()}
 
     def win(a, b, home: int) -> float:
         return float(model.params.formula("win_probability", rating_diff=a.rating - b.rating, home=home))
 
-    def label(i: int) -> str:
-        return f"No. {i} {seeded[i].team_name}"
-
-    rows = []
+    rounds: dict[str, list[dict]] = {}
 
     def game(rnd: str, i: int, j: int, home: int, where: str) -> int:
         p = win(seeded[i], seeded[j], home)
         w = i if p >= 0.5 else j
-        rows.append({"round": rnd, "matchup": f"{label(i)} vs {label(j)}", "where": where,
-                     "fav": seeded[w].team_name, "p": max(p, 1 - p)})
+        rounds.setdefault(rnd, []).append(V.match(V.team(seeded[i].team_name, i, p), V.team(seeded[j].team_name, j, 1 - p),
+                                                  where=where, winner=0 if w == i else 1))
         return w
 
-    first = {i: game("First round", i, 17 - i, 1, f"at {seeded[i].team_name}") for i in (5, 6, 7, 8)}
-    qf = {top: game("Quarterfinal", top, first[low], 0, "bowl game") for top, low in ((1, 8), (2, 7), (3, 6), (4, 5))}
-    sf1 = game("Semifinal", qf[1], qf[4], 0, "bowl game")
-    sf2 = game("Semifinal", qf[2], qf[3], 0, "bowl game")
+    # in bracket order, top to bottom: 1/8-9 and 4/5-12 meet in one semifinal, 2/7-10 and 3/6-11 in the other
+    first = {i: game("First round", i, 17 - i, 1, f"at {seeded[i].team_name}") for i in (8, 5, 7, 6)}
+    qf = {top: game("Quarterfinals", top, first[low], 0, "bowl game") for top, low in ((1, 8), (4, 5), (2, 7), (3, 6))}
+    sf1 = game("Semifinals", qf[1], qf[4], 0, "bowl game")
+    sf2 = game("Semifinals", qf[2], qf[3], 0, "bowl game")
     champ = game("Championship", sf1, sf2, 0, "national championship")
 
     seeds_table = V.table(
@@ -248,12 +248,13 @@ def _bracket(model, summaries, proj: dict[str, int]) -> list[dict]:
         [{"seed": i, "team": s.team_name, "conf": s.conf, "cfp": s.p_cfp, "bye": s.p_cfp_bye} for i, s in seeded.items()],
         subtitle="The 12 teams most likely to make it, in the order they're most likely to be seeded. Seeds 1-4 get a bye.",
         note="The real field also needs the five highest-ranked conference champions, so it can differ.")
-    bracket = V.table(
-        "bracket", "Projected bracket",
-        [V.col("round", "Round"), V.col("matchup", "Game"), V.col("where", "Where"),
-         V.col("fav", "Favorite"), V.col("p", "Win chance", "pct", bar=True)],
-        rows, subtitle=f"If every favorite wins, {seeded[champ].team_name} takes the title.",
-        note="Win chance for one game between the two teams (first-round games at the higher seed).")
+    bracket = V.bracket(
+        "bracket", "Projected bracket", [V.round_(name, games) for name, games in rounds.items()],
+        subtitle=f"If every favorite wins, {seeded[champ].team_name} takes the title. Seeds 1-4 start in the "
+                 "quarterfinals. The favorite of each game is in bold and goes on to the next round.",
+        note="Each percentage is that team's chance to win that one game against that opponent "
+             "(first-round games are at the higher seed's stadium).",
+        link="team", champion=seeded[champ].team_name)
     return [seeds_table, bracket]
 
 

@@ -23,6 +23,10 @@ try:
     from .scenarios import Scenario
 except (ImportError, ValueError):
     from scenarios import Scenario
+try:
+    from .tiebreak import rank_standings
+except (ImportError, ValueError):
+    from tiebreak import rank_standings
 
 # Every FBS conference holds a title game in 2026 (ESPN lists all ten for Dec 4-6).
 CONFERENCES_WITH_TITLE_GAME = [
@@ -50,13 +54,25 @@ class SeasonSimulator:
         teams: list[Team],
         schedule: list[Game],
         config: SimConfig,
-        custom_ratings: dict[str, float] | None = None
+        custom_ratings: dict[str, float] | None = None,
+        results: list[dict] | None = None,
     ):
+        """`results`: the completed games (data/results.json rows: home, away, conf,
+        home_score, away_score); their conference games feed the title-game tiebreakers."""
         self.teams = teams
         self.team_dict = {t.id: t for t in teams}
         self.schedule = schedule
         self.config = config
         self.custom_ratings = custom_ratings or {t.id: t.rating for t in teams}
+        # (winner, loser) -> conference wins, from the games already played
+        self.base_beat: dict[tuple[str, str], int] = {}
+        for g in results or []:
+            h, a = self.team_dict.get(g["home"]), self.team_dict.get(g["away"])
+            if (not h or not a or not g.get("conf", True) or h.conf != a.conf
+                    or g["home_score"] == g["away_score"]):
+                continue
+            key = (h.id, a.id) if g["home_score"] > g["away_score"] else (a.id, h.id)
+            self.base_beat[key] = self.base_beat.get(key, 0) + 1
 
     def simulate_season(
         self,
@@ -96,7 +112,8 @@ class SeasonSimulator:
                 conf_losses=t.conf_losses,
                 legacy_pac12=t.legacy_pac12,
                 acc_bowl_eligible=t.acc_bowl_eligible,
-                last_bowl=t.last_bowl
+                last_bowl=t.last_bowl,
+                division=t.division,
             )
             states[t.id] = TeamSimState(
                 team=team_with_rating,
@@ -107,8 +124,8 @@ class SeasonSimulator:
                 published_rating=published,
             )
 
-        # Track head-to-head outcomes for tiebreakers
-        h2h: dict[tuple[str, str], str] = {}
+        # Conference results for the tiebreakers: (winner, loser) -> wins, played + simulated
+        beat = dict(self.base_beat)
 
         # 1. Simulate remaining regular season games
         for index, game in enumerate(self.schedule):
@@ -144,13 +161,10 @@ class SeasonSimulator:
             if game.conf and home_state.conf == away_state.conf:
                 winner.conf_wins += 1
                 loser.conf_losses += 1
-
-            # Save H2H
-            h2h[(winner.id, loser.id)] = winner.id
-            h2h[(loser.id, winner.id)] = winner.id
+                beat[(winner.id, loser.id)] = beat.get((winner.id, loser.id), 0) + 1
 
         # 2. Simulate Conference Championship Games
-        self._simulate_conference_championships(states, h2h, rng, scenario)
+        self._simulate_conference_championships(states, beat, rng, scenario)
 
         # 3. Calculate Resume Scores for CFP ranking
         self._calculate_resume_scores(states, rng)
@@ -186,39 +200,31 @@ class SeasonSimulator:
     def _simulate_conference_championships(
         self,
         states: dict[str, TeamSimState],
-        h2h: dict[tuple[str, str], str],
+        beat: dict[tuple[str, str], int],
         rng: random.Random,
         scenario: Scenario | None = None
     ) -> None:
-        """Determines top 2 teams in each conference and simulates the championship game."""
+        """The top two of each conference's standings (tiebreak.rank_standings: conference
+        win %, then head-to-head, common opponents, published rating) play for the title. A
+        conference whose teams are split into exactly two divisions (teams.json `division`)
+        sends each division's winner instead (the same tiebreaks within the division, common
+        opponents from the whole conference)."""
         for conf_name in CONFERENCES_WITH_TITLE_GAME:
             conf_teams = [s for s in states.values() if s.conf == conf_name]
             if len(conf_teams) < 2:
                 continue
-
-            # Sort teams within conference for championship game berths:
-            # 1. Conference win percentage
-            # 2. Total wins
-            # 3. Power rating + random tiebreaker jitter
-            def conf_sort_key(s: TeamSimState):
-                return (
-                    s.conf_win_pct,
-                    s.conf_wins,
-                    s.win_pct,
-                    s.seen_rating + rng.uniform(-0.01, 0.01)
-                )
-
-            ranked = sorted(conf_teams, key=conf_sort_key, reverse=True)
-
-            team1 = ranked[0]
-            team2 = ranked[1]
-
-            # 2-way H2H tiebreak check if records identical
-            if len(ranked) >= 2:
-                if (ranked[0].conf_win_pct == ranked[1].conf_win_pct and
-                    (ranked[0].id, ranked[1].id) in h2h):
-                    if h2h[(ranked[0].id, ranked[1].id)] == ranked[1].id:
-                        team1, team2 = ranked[1], ranked[0]
+            ids = [s.id for s in conf_teams]
+            pct = {s.id: s.conf_win_pct for s in conf_teams}
+            rating = {s.id: s.seen_rating for s in conf_teams}
+            divs: dict[str | None, list[str]] = {}
+            for s in conf_teams:
+                divs.setdefault(s.team.division, []).append(s.id)
+            if len(divs) == 2 and None not in divs:
+                top = [rank_standings(members, pct, beat, rating, rng=rng, places=1, opponents=ids)[0]
+                       for _, members in sorted(divs.items())]
+            else:
+                top = rank_standings(ids, pct, beat, rating, rng=rng, places=2)
+            team1, team2 = states[top[0]], states[top[1]]
 
             # Check if conference champion is forced by scenario
             if scenario and conf_name in scenario.forced_conf_champs:

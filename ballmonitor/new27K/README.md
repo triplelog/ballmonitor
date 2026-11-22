@@ -8,7 +8,7 @@ It is a rewrite of the 2018 iOS prototype in `../27K`, with no code shared.
 
 ```bash
 npm run serve      # http://localhost:8027/ (ES modules need http); also the multiplayer server
-npm test           # rules, pitch movement and the catcher's advice, multiplayer, the server, a 300-game sim, every challenge, a season in each format, nine career seasons
+npm test           # rules, pitch movement and the catcher's advice, multiplayer, the server, save slots, a 300-game sim, every challenge, a season in each format, nine career seasons
 npm run sim -- 500 7 my-formulas.json   # games, seed, optional formula overrides
 npm run build      # static copy of the game in dist/ (see Static hosting)
 npm run itch       # the same, zipped as 27k-itch.zip for itch.io (see docs/launch.md)
@@ -38,7 +38,7 @@ Quick Game, Challenges & Achievements, Season and Career are open. Multiplayer a
 - **Help:** the **?** button by the menu button (or the `?` key) opens *How to play*: the five steps, how to read the field, and the keys. It opens by itself the first time you take the mound. The pitch clock waits while it is open; it can't be opened once the zone is moving. The words live in `src/ui/help.js` (the menu's *How to pitch* uses the same steps).
 - **Sound** (checkbox under the field, on by default): the ball in the glove, the crack of the bat, the crowd after a strikeout or a run, and ticks for the pitch clock's last three seconds. All of it is made with Web Audio in `src/ui/sound.js`; there are no sound files.
 - **Space** does the next thing: start the zone, skip ahead while a result is showing, or (when you manage your own hitters) sim the batter.
-- The game saves after every pitch; **Continue** on the menu resumes it.
+- The game saves after every pitch; **Continue** on the menu resumes it. Quick Game (with challenges), Season and Career each keep their own game in progress (`src/ui/saveSlots.js`), so starting one never replaces another; the menu has a Continue button for each.
 
 ## Layout
 

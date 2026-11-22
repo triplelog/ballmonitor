@@ -126,6 +126,37 @@ What it does: class score = sum ^ (1 - w) x mean recruit score ^ w (w = 1 ranks 
 | 0.75 | 0.734 | 0.724 | 0.695 | 0.376 | 0.351 |
 | 1 | 0.733 | 0.717 | 0.690 | 0.374 | 0.350 |
 
+## Unit scores: rank decay on offense and defense
+
+**Question.** The class score discounts a class's k-th best recruit by rank_decay^(k-1);
+before v0.8.0 the offense / defense / run / pass unit scores were plain sums, so a big class
+of middling defenders could out-rank a small class of top ones on Defense while trailing
+overall. Does discounting each side of the ball the same way rank units better?
+
+**Method.** Outcome per program and class Y: mean over seasons Y..Y+3 of an opponent-adjusted
+points rating fitted on the same FBS scores as the SRS (points = mean + offense of the team
+with the ball − defense of the other + home edge; both higher = better). Spearman ρ within
+a class year between the offense unit score and the offense rating, and between the defense
+unit score and the defense rating. Walk-forward: for test class Y the setting with the best
+mean of the two on classes ≤ Y−4 is used. Test classes 2017–2022: **6 class years**
+(766 program-classes, overlapping targets, about 1.5 non-overlapping periods).
+"Balance" is ρ between log(offense unit / defense unit) and offense minus defense rating:
+whether a class tilted to one side predicts a team better on that side. Run / pass units
+cannot be checked: the scores file has points only, no rushing or passing splits.
+
+| unit_rank_decay | offense ρ dev 2012–2018 | offense ρ holdout | defense ρ dev | defense ρ holdout | mean of both (test 2017–2022) | balance (test) |
+|---:|---:|---:|---:|---:|---:|---:|
+| 1 (undiscounted, before v0.8.0) | 0.654 | 0.639 | 0.626 | 0.675 | 0.634 | -0.009 |
+| 0.98 | 0.657 | 0.645 | 0.629 | 0.676 | 0.637 | -0.010 |
+| 0.95 (= rank_decay) | 0.659 | 0.654 | 0.633 | 0.676 | 0.641 | -0.011 |
+| 0.9 | 0.663 | 0.663 | 0.637 | 0.674 | 0.646 | -0.015 |
+| 0.85 | 0.663 | 0.668 | 0.637 | 0.673 | 0.648 | -0.015 |
+| overall class score (reference) | 0.674 | 0.688 | 0.664 | 0.700 | 0.665 | – |
+
+Walk-forward choice: 0.85, 0.85, 0.85, 0.9, 0.85, 0.85; minus undiscounted +0.015 ± 0.002 (6/6 years better). Decay 0.95 (shared with rank_decay) minus undiscounted +0.008 ± 0.001 (6/6 years better).
+
+**Verdict.** Discounting beats plain sums in every test year, by +0.008 ρ at 0.95 (below the 0.01 tuning margin) and +0.015 with the walk-forward pick. But the overall class score ranks both units better than any unit score, and the balance column is about zero with or without decay: the unit split says next to nothing about which side of the ball a team will be better on, so stronger decay helps mostly by making the unit scores more like the overall score. So the choice rests on consistency, not on the larger walk-forward gain: v0.8.0 adds `unit_rank_decay` = 0.95, the same discount as the class score, and keeps the plain sums as variant `undiscounted_units`.
+
 ## Not testable with the data in this repo
 
 - **Offer timing, visits, how serious an offer was.** The recruit files hold one flat list of
@@ -148,13 +179,14 @@ What it does: class score = sum ^ (1 - w) x mean recruit score ^ w (w = 1 ranks 
 ## Run log
 
 ```
-[07:02:41] fitted default program strengths for classes 2012-2022
-[07:02:42] commit_weight: walk-forward 0.695 vs default 0.696
-[07:02:43] top_offers: walk-forward 0.696 vs default 0.696
-[07:02:44] star_power: walk-forward 0.699 vs default 0.696
-[07:02:44] qb_weight: walk-forward 0.695 vs default 0.696
-[07:02:45] line_weight: walk-forward 0.692 vs default 0.696
-[07:02:45] top_commits: walk-forward 0.695 vs default 0.696
-[07:02:46] average_blend: walk-forward 0.694 vs default 0.696
-[07:02:46] finished in 10s
+[22:27:57] fitted default program strengths for classes 2012-2022
+[22:27:57] commit_weight: walk-forward 0.695 vs default 0.696
+[22:27:58] top_offers: walk-forward 0.696 vs default 0.696
+[22:27:59] star_power: walk-forward 0.699 vs default 0.696
+[22:27:59] qb_weight: walk-forward 0.695 vs default 0.696
+[22:28:00] line_weight: walk-forward 0.692 vs default 0.696
+[22:28:00] top_commits: walk-forward 0.695 vs default 0.696
+[22:28:01] average_blend: walk-forward 0.694 vs default 0.696
+[22:28:02] unit scores: walk-forward 0.649, shared decay 0.641, undiscounted 0.634
+[22:28:02] finished in 10s
 ```

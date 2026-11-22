@@ -12,6 +12,7 @@ import { PITCH_TYPES } from '../engine/data.js';
 import { playerName, shortName, teamName } from '../engine/league.js';
 import { rates, statObj } from '../engine/pitchStats.js';
 import { esc } from './storage.js';
+import { CONFIG } from '../config.js';
 
 const TIME_LIMITS = [
     [0, 'No limit'], [120, '2 minutes'], [300, '5 minutes'], [900, '15 minutes'],
@@ -19,6 +20,7 @@ const TIME_LIMITS = [
 ];
 
 let lastMyTurn = new Set();   // for "your turn" notifications across visits
+const PAGE_TITLE = document.title;   // the lobby shows "(n) Your turn" in its place
 
 export function renderMultiplayer(app, args = {}) {
     mpIdentity(app);   // makes sure this browser has a player id
@@ -29,6 +31,9 @@ export function renderMultiplayer(app, args = {}) {
     let timer = 0;
     let ticker = 0;
 
+    const errorHTML = () => (error ? `<div class="panel mp-error">${esc(error)}</div>` : '');
+    const gamesHTML = () => (games === null ? '<div class="muted">Loading…</div>' : games.length ? games.map(gameCard).join('') : '<div class="muted">No games yet. Start one, or join with a code.</div>');
+
     const draw = () => {
         const name = app.prefs.mpName ?? '';
         const L = LEVELS[level];
@@ -37,12 +42,12 @@ export function renderMultiplayer(app, args = {}) {
         <div class="page wide mp">
             <div class="page-head"><button data-act="back">← Menu</button><h1>Multiplayer</h1>
                 ${'Notification' in window && Notification.permission === 'default' ? '<button class="small" data-act="notify">Notify me when it’s my turn</button>' : ''}</div>
-            ${error ? `<div class="panel mp-error">${esc(error)}</div>` : ''}
+            <div class="mp-error-slot">${errorHTML()}</div>
             <div class="cols-2">
                 <div>
                     <div class="panel">
                         <div class="card-head"><h3>Your games</h3><span class="muted" style="font-size:12px">updates every few seconds</span></div>
-                        <div class="mp-games">${games === null ? '<div class="muted">Loading…</div>' : games.length ? games.map(gameCard).join('') : '<div class="muted">No games yet. Start one, or join with a code.</div>'}</div>
+                        <div class="mp-games">${gamesHTML()}</div>
                     </div>
                 </div>
                 <div>
@@ -56,7 +61,7 @@ export function renderMultiplayer(app, args = {}) {
                     </div>
                     <div class="panel" style="margin-top:10px">
                         <h3>New game</h3>
-                        <div class="form-grid" style="grid-template-columns: 120px 1fr">
+                        <div class="form-grid" style="--label-w: 120px">
                             <label>Level</label>
                             <select id="mp-level">${LEVEL_ORDER.map((id) => `<option value="${id}" ${id === level ? 'selected' : ''}>${LEVELS[id].icon} ${LEVELS[id].name}</option>`).join('')}</select>
                             <label>Innings</label>
@@ -75,7 +80,7 @@ export function renderMultiplayer(app, args = {}) {
                         </div>
                         <div class="row-actions"><button class="primary big" data-act="create" ${busy ? 'disabled' : ''}>${busy ? 'Setting up…' : 'Create game'}</button></div>
                     </div>
-                    <p class="muted" style="font-size:12px;line-height:1.5">Both players need to reach this same 27K server: on your network, share the address the server prints when it starts (not “localhost”). The home player pitches the top of every inning and the away player the bottom; each side's hitters bat against the other player's pitching.</p>
+                    <p class="muted" style="font-size:12px;line-height:1.5">${CONFIG.mpServer ? 'Send your opponent the invite link (or the code): it opens this page, ready to join.' : 'Both players need to reach this same 27K server: on your network, share the address the server prints when it starts (not “localhost”).'} The home player pitches the top of every inning and the away player the bottom; each side's hitters bat against the other player's pitching.</p>
                 </div>
             </div>
         </div>`;
@@ -126,16 +131,18 @@ export function renderMultiplayer(app, args = {}) {
                 }
             }
             lastMyTurn = nowMine;
-            document.title = nowMine.size ? `(${nowMine.size}) Your turn · 27K` : '27K: a pitching game';
+            document.title = nowMine.size ? `(${nowMine.size}) Your turn · 27K` : PAGE_TITLE;
         } catch (e) {
             error = e.message;
             games = games ?? [];
         }
-        const focus = document.activeElement?.id;
-        const vals = Object.fromEntries(['mp-name', 'mp-code'].map((id) => [id, app.root.querySelector('#' + id)?.value]));
-        draw();
-        for (const [id, v] of Object.entries(vals)) if (v !== undefined) app.root.querySelector('#' + id).value = v;
-        if (focus) app.root.querySelector('#' + focus)?.focus();
+        // Only the games list and the error banner change: redrawing the
+        // whole screen would reset the New game form (and close an open
+        // dropdown) every few seconds.
+        const list = app.root.querySelector('.mp-games');
+        const banner = app.root.querySelector('.mp-error-slot');
+        if (list) list.innerHTML = gamesHTML();
+        if (banner) banner.innerHTML = errorHTML();
         timer = setTimeout(refresh, 4000);
     }
 
@@ -240,6 +247,8 @@ export function renderMultiplayer(app, args = {}) {
         clearInterval(ticker);
         app.root.removeEventListener('click', onClick);
         app.root.removeEventListener('change', onChange);
+        // The "(n) Your turn" title belongs to the lobby.
+        document.title = PAGE_TITLE;
     };
 }
 

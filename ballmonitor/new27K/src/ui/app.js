@@ -6,7 +6,8 @@ import { generateLeague, ensureTypeSkills } from '../engine/league.js';
 import { seedHistory } from '../engine/pitchStats.js';
 import { createFormulas } from '../engine/formulas.js';
 import { Game } from '../engine/game.js';
-import { store } from './storage.js';
+import { store, esc } from './storage.js';
+import { createSaveSlots } from './saveSlots.js';
 import { renderMenu, renderQuickSetup, renderLineup } from './screens.js';
 import { renderGame } from './gameScreen.js';
 import { renderLab, readShared } from './lab.js';
@@ -17,7 +18,7 @@ import { renderSeason, renderSeasonSetup, renderSeasonLineup } from './seasonScr
 import { recordGame, SEASON_VERSION } from '../engine/season.js';
 import { renderMultiplayer, renderMpGame } from './mpScreens.js';
 import { renderCareers, renderCareerHub } from './careerScreens.js';
-import { careerStore } from './idb.js';
+import { careerStore, CAREER_STORAGE_ERROR } from './idb.js';
 import { mpApi } from './mpClient.js';
 import { recordCareerGame, CAREER_VERSION } from '../engine/career.js';
 
@@ -34,6 +35,9 @@ const DEFAULT_PREFS = {
 };
 
 const F = createFormulas(store.load('formulas', {}));
+// One saved game per mode (Quick Game and challenges, Season, Career).
+const slots = createSaveSlots(store);
+slots.migrate();
 
 // Every league starts with a simulated past (for batters' records against
 // each pitch type).
@@ -101,7 +105,12 @@ const app = {
     saveCareer() {
         if (!this.career) return Promise.resolve();
         this.career.updatedAt = Date.now();
-        return careerStore.put(this.career).catch((e) => alert(`Couldn’t save the career: ${e?.message ?? e}`));
+        return careerStore.put(this.career).catch((e) => {
+            // Once is enough: with storage blocked every save fails.
+            if (this.warnedCareer) return;
+            this.warnedCareer = true;
+            alert(`Couldn’t save the career, so it will be lost when you leave this page. ${CAREER_STORAGE_ERROR} (${e?.message ?? e})`);
+        });
     },
     // A start the user pitched has ended: fold it into the career.
     finishCareerGame(game, gameId) {
@@ -113,22 +122,32 @@ const app = {
         this.saveCareer();
     },
 
+    // IndexedDB refused: say so instead of leaving a blank "Loading…" page.
+    storageProblem(e, back = 'menu') {
+        this.root.innerHTML = `<div class="page"><div class="panel">
+            <h3>Couldn’t open your careers</h3>
+            <p>${esc(CAREER_STORAGE_ERROR)}</p>
+            <p class="muted" style="font-size:12px">${esc(e?.message ?? String(e))}</p>
+            <div class="row-actions" style="justify-content:flex-start"><button class="primary" data-act="storage-back">${back === 'careers' ? 'Back to careers' : 'Back to the menu'}</button></div>
+        </div></div>`;
+        this.root.querySelector('[data-act="storage-back"]').onclick = () => this.go(back);
+    },
+
     savePrefs() { store.save('prefs', this.prefs); },
     saveLeague() { store.save('league', this.league); },
     newLeague() {
         this.league = newLeague();
-        store.remove('game');
+        slots.clear('quick');   // quick games use this league; seasons and careers have their own
     },
 
-    savedGame() {
-        const saved = store.load('game');
-        if (!saved || !saved.state || saved.state.over) return null;
-        return saved;
-    },
+    // kind: 'quick' (Quick Game and challenges), 'season' or 'career'.
+    savedGame(kind = 'quick') { return slots.load(kind); },
+    savedGames() { return slots.all(); },
     // extra: { tracker, earned } kept with the game so achievements and
-    // challenges carry on after a reload.
-    saveGame(game, extra = {}) { store.save('game', { state: game.toJSON(), ...extra }); },
-    clearGame() { store.remove('game'); },
+    // challenges carry on after a reload; { seasonGameId } or { careerId,
+    // seasonGameId } put it in the Season or Career slot.
+    saveGame(game, extra = {}) { slots.save(game.toJSON(), extra); },
+    clearGame(kind) { slots.clear(kind); },
 
     go(screen, args) {
         if (NEEDS_SERVER.has(screen) && !this.mpOn) screen = 'menu';
@@ -151,7 +170,7 @@ const app = {
             careers: () => renderCareers(this),
             careerHub: () => renderCareerHub(this, args),
             continue: () => {
-                const saved = this.savedGame();
+                const saved = this.savedGame(args?.kind ?? 'quick');
                 if (!saved) return renderMenu(this);
                 if (saved.careerId) {
                     // Load the career, then pick the start back up.
@@ -159,10 +178,10 @@ const app = {
                     let gone = false;
                     this.loadCareer(saved.careerId).then((career) => {
                         if (gone) return;
-                        if (!career?.season) { this.clearGame(); this.go('careers'); return; }
+                        if (!career?.season) { this.clearGame('career'); this.go('careers'); return; }
                         const game = new Game(career.season.league, this.F, saved.state);
                         cleanup = renderGame(this, { game, career, seasonGameId: saved.seasonGameId, tracker: saved.tracker, earned: saved.earned });
-                    });
+                    }).catch((e) => { if (!gone) this.storageProblem(e, 'menu'); });
                     return () => { gone = true; if (cleanup) cleanup(); };
                 }
                 const ch = CHALLENGE_BY_ID[saved.state.challengeId];
@@ -173,7 +192,12 @@ const app = {
                     const game = new Game(league, challengeFormulas(ch), saved.state);
                     return renderGame(this, { game, challenge: ch, tracker, earned });
                 }
-                if (saved.seasonGameId !== undefined && this.season) {
+                if (saved.seasonGameId !== undefined && !this.season) {
+                    // Its season is gone (abandoned, or from an old version).
+                    this.clearGame('season');
+                    return renderMenu(this);
+                }
+                if (saved.seasonGameId !== undefined) {
                     const game = new Game(this.season.league, this.F, saved.state);
                     return renderGame(this, { game, tracker, earned, seasonGameId: saved.seasonGameId });
                 }

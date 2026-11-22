@@ -11,6 +11,7 @@ words for a fan, not an analyst.
         bar("title_odds", "Title chances", [{"label": "Georgia", "value": 0.21}], fmt="pct"),
         line("curve", "Marathon vs 5K", [series("Men", [(900, 10500), ...])], x_label=..., x_fmt="time"),
         picker("by_race", "Award times by race", "Race", [option("Cherry Blossom", [table(...)]), ...]),
+        bracket("bracket", "Projected bracket", [round_("Final", [match(team("A", 1, 0.6), team("B", 2, 0.4))])]),
     ])
 """
 
@@ -23,7 +24,7 @@ from pathlib import Path
 from typing import Any
 
 FORMATS = ("text", "int", "number", "pct", "time", "signed")
-KINDS = ("table", "bar", "line", "picker", "app")
+KINDS = ("table", "bar", "line", "picker", "app", "bracket")
 APPS_DIR = Path(__file__).resolve().parent.parent / "web" / "static" / "apps"
 SPORTS = ("College football", "Baseball", "College baseball & softball", "Running", "Polls & awards", "More sports")
 # Shioh cell colour per sport (site.html's .ss-p1-5): the pages, their pre-written HTML and site.js
@@ -71,14 +72,18 @@ def slug(text: str) -> str:
 
 def col(key: str, label: str, fmt: str = "text", decimals: int | None = None, bar: bool = False,
         align: str | None = None, heat: bool = False, link: str | None = None, low_first: bool = False,
-        sticky: bool = False, hidden: bool = False) -> dict:
+        sticky: bool = False, hidden: bool = False, sep: str | None = None) -> dict:
     """A table column. `bar`: draw a small bar behind a pct/number cell (scaled to the column max).
     `heat`: shade the cell by its value (0 to the largest value in any heat column of the table).
     `link`: id of a picker on the same page; the cell links to the option whose slug matches the
     cell text (e.g. a team name opens that team's view). `low_first`: clicking the header sorts
     smallest first (ranks: No. 1 at the top). `sticky`: this column stays put when the table
     scrolls sideways (default: the first linked column, else the first text column). `hidden`:
-    starts hidden; every table has a Columns menu where the reader can show or hide columns."""
+    starts hidden; every table has a Columns menu where the reader can show or hide columns.
+    A text cell may hold a list of strings (several teams in one cell): they are shown joined by
+    `sep` (default ", "), and with `link` each one that names an option of the picker is its own
+    link (a part that names no option, like "at" in ["Texas", "at", "Georgia"] with sep=" ", stays text).
+    With `link`, a cell (or part) is only linked when the picker has an option with its slug."""
     c = {"key": key, "label": label, "fmt": fmt}
     if decimals is not None:
         c["decimals"] = decimals
@@ -96,17 +101,25 @@ def col(key: str, label: str, fmt: str = "text", decimals: int | None = None, ba
         c["align"] = align
     if hidden:
         c["hidden"] = True
+    if sep is not None:
+        c["sep"] = sep
     return c
 
 
 def table(id: str, title: str, columns: list[dict], rows: list[dict], subtitle: str = "", note: str = "",
-          search: bool = False, page_size: int = 0, sort: str | None = None, sort_desc: bool = True) -> dict:
+          search: bool = False, page_size: int = 0, sort: str | None = None, sort_desc: bool = True,
+          quick_filters: tuple[str, list[str]] | None = None) -> dict:
     """`page_size`: show this many rows, then a "Show all" button (0 = all). `sort`: default
-    sort column key (rows are shown in the given order when omitted)."""
+    sort column key (rows are shown in the given order when omitted). `quick_filters`:
+    (column key, [values]): a row of buttons above the table, "All" then one per value, each
+    showing only the rows whose cell is exactly that value (works together with the search box)."""
     v = {"kind": "table", "id": id, "title": title, "subtitle": subtitle, "note": note,
          "columns": columns, "rows": rows, "search": search, "page_size": page_size}
     if sort:
         v["sort"], v["sort_desc"] = sort, sort_desc
+    if quick_filters:
+        key, values = quick_filters
+        v["quick_filters"] = {"key": key, "values": [str(x) for x in values]}
     return v
 
 
@@ -129,9 +142,11 @@ def series(name: str, points: list[tuple[float, float]], band: list[tuple[float,
 
 def line(id: str, title: str, lines: list[dict], x_label: str = "", y_label: str = "", x_fmt: str = "number",
          y_fmt: str = "number", subtitle: str = "", note: str = "", markers: list[dict] | None = None,
-         y_min: float | None = None, y_max: float | None = None, x_ticks: list[tuple[float, str]] | None = None) -> dict:
+         y_min: float | None = None, y_max: float | None = None, x_ticks: list[tuple[float, str]] | None = None,
+         y_reverse: bool = False) -> dict:
     """A line chart. `markers`: [{"x", "y", "label"}] dots with a short label (e.g. key plays).
-    `x_ticks`: [(x, "Q2"), ...] named x-axis ticks instead of numbers."""
+    `x_ticks`: [(x, "Q2"), ...] named x-axis ticks instead of numbers. `y_reverse`: smallest y at
+    the top (ranks: No. 1 highest)."""
     v = {"kind": "line", "id": id, "title": title, "subtitle": subtitle, "note": note, "series": lines,
          "x_label": x_label, "y_label": y_label, "x_fmt": x_fmt, "y_fmt": y_fmt, "markers": markers or []}
     if x_ticks:
@@ -140,6 +155,8 @@ def line(id: str, title: str, lines: list[dict], x_label: str = "", y_label: str
         v["y_min"] = y_min
     if y_max is not None:
         v["y_max"] = y_max
+    if y_reverse:
+        v["y_reverse"] = True
     return v
 
 
@@ -158,6 +175,47 @@ def app(id: str, title: str, name: str, data: dict, subtitle: str = "", note: st
     an app that copies a model's formulas must be checked against the Python model by a test
     (e.g. tests/test_race_calc.py)."""
     return {"kind": "app", "id": id, "title": title, "subtitle": subtitle, "note": note, "app": name, "data": data}
+
+
+def team(name: str, seed: int | None = None, p: float | None = None) -> dict:
+    """One side of a bracket game: the name (linked like a table cell when the bracket has
+    `link`), an optional seed and its chance to win this game (0-1)."""
+    t: dict = {"name": name}
+    if seed is not None:
+        t["seed"] = seed
+    if p is not None:
+        t["p"] = p
+    return t
+
+
+def match(a: dict, b: dict | None = None, where: str = "", winner: int | None = None) -> dict:
+    """A bracket game between team() a and b (b None: a's opponent isn't known yet). `winner`:
+    0 or 1, the side shown going through (e.g. the favorite); `where`: a short place line."""
+    g: dict = {"teams": [a] if b is None else [a, b]}
+    if where:
+        g["where"] = where
+    if winner is not None:
+        g["winner"] = winner
+    return g
+
+
+def round_(name: str, games: list[dict]) -> dict:
+    """A bracket column ("First round"): its games top to bottom, in bracket order (so a game
+    sits level with the one it feeds in the next round)."""
+    return {"name": name, "games": games}
+
+
+def bracket(id: str, title: str, rounds: list[dict], subtitle: str = "", note: str = "",
+            link: str | None = None, champion: str = "") -> dict:
+    """A knockout bracket drawn as one column per round (they scroll sideways on a phone).
+    `link`: a picker id; team names that are its options link there. `champion`: the name shown
+    at the end."""
+    v = {"kind": "bracket", "id": id, "title": title, "subtitle": subtitle, "note": note, "rounds": rounds}
+    if link:
+        v["link"] = link
+    if champion:
+        v["champion"] = champion
+    return v
 
 
 def picker(id: str, title: str, label: str, options: list[dict], subtitle: str = "", note: str = "",
@@ -226,6 +284,37 @@ def check(p: dict) -> list[str]:
                         break
                 if v.get("sort") and v["sort"] not in keys:
                     errs.append(f"{at}: sort key {v['sort']!r} is not a column")
+                for c in cols:
+                    if any(isinstance(r.get(c.get("key")), list) and not all(isinstance(x, str) for x in r[c["key"]])
+                           for r in rows[:MAX_ROWS]):
+                        errs.append(f"{at}: column {c.get('key')}: a list cell may only hold strings")
+                qf = v.get("quick_filters")
+                if qf is not None:
+                    if not isinstance(qf, dict) or qf.get("key") not in keys:
+                        errs.append(f"{at}: quick_filters key {(qf or {}).get('key')!r} is not a column")
+                    elif not qf.get("values") or not all(isinstance(x, str) and x for x in qf["values"]):
+                        errs.append(f"{at}: quick_filters needs a list of values")
+            elif kind == "bracket":
+                rounds = v.get("rounds") or []
+                if not rounds:
+                    errs.append(f"{at}: no rounds")
+                for rd in rounds:
+                    games = rd.get("games") or []
+                    if not rd.get("name") or not games:
+                        errs.append(f"{at}: every round needs a name and games")
+                        break
+                    for g in games:
+                        ts = g.get("teams") or []
+                        if not 1 <= len(ts) <= 2 or not all(isinstance(t, dict) and t.get("name") for t in ts):
+                            errs.append(f"{at}: {rd['name']}: every game needs one or two teams with a name")
+                            break
+                        if any(t.get("p") is not None and not (isinstance(t["p"], (int, float)) and 0 <= t["p"] <= 1)
+                               for t in ts):
+                            errs.append(f"{at}: {rd['name']}: a team's chance must be between 0 and 1")
+                            break
+                        if g.get("winner") is not None and g["winner"] not in range(len(ts)):
+                            errs.append(f"{at}: {rd['name']}: winner must be 0 or 1")
+                            break
             elif kind == "app":
                 name = str(v.get("app") or "")
                 if not re.fullmatch(r"[a-z0-9_]+", name) or not (APPS_DIR / f"{name}.js").is_file():
@@ -264,6 +353,8 @@ def check(p: dict) -> list[str]:
             for c in opt_views.get("columns", []) if opt_views.get("kind") == "table" else []:
                 if c.get("link") and c["link"] not in pickers:
                     errs.append(f"{v.get('id')}: column {c['key']} links to {c['link']!r}, not a top-level picker")
+            if opt_views.get("kind") == "bracket" and opt_views.get("link") and opt_views["link"] not in pickers:
+                errs.append(f"{opt_views.get('id')}: bracket links to {opt_views['link']!r}, not a top-level picker")
     for pid, pk in pickers.items():
         slugs = [o.get("slug") for o in pk.get("options", [])]
         if len(slugs) != len(set(slugs)):

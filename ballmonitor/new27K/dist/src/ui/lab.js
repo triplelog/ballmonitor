@@ -85,14 +85,14 @@ export function renderLab(app) {
         const groups = GROUP_ORDER.map((g) => {
             const items = FORMULAS.filter((f) => f.group === g).map((f) => {
                 const custom = F.isCustom(f.id);
-                const marks = `${isDirty(f.id) ? '<span class="mark draft" title="Unsaved changes">✎</span>' : ''}${custom ? '<span class="mark custom" title="Customised">●</span>' : ''}${F.errors[f.id] ? '<span class="mark err" title="Error during play">⚠</span>' : ''}`;
+                const marks = `${isDirty(f.id) ? '<span class="mark draft" title="Unsaved changes">✎</span>' : ''}${custom ? '<span class="mark custom" title="Customized">●</span>' : ''}${F.errors[f.id] ? '<span class="mark err" title="Error during play">⚠</span>' : ''}`;
                 return `<button data-f="${f.id}" class="${f.id === lab.selected ? 'sel' : ''}">${esc(f.label)}${marks}</button>`;
             }).join('');
             return `<h3>${g}</h3>${items}`;
         }).join('');
         const customCount = Object.keys(F.overrides()).length;
         $('.lab-list').innerHTML = `${groups}
-            <div class="lab-list-foot">${customCount ? `${customCount} customised` : 'All defaults'}
+            <div class="lab-list-foot">${customCount ? `${customCount} customized` : 'All defaults'}
             ${customCount ? '<button class="small" data-act="reset-all">Reset all</button>' : ''}</div>`;
     }
 
@@ -497,7 +497,7 @@ export function renderLab(app) {
         const link = shareLink(data.formulas);
         showModal(`
             <h2>Export your rules</h2>
-            <p class="muted">${Object.keys(data.formulas).length} customised formula(s). Share the link, or save the JSON.</p>
+            <p class="muted">${Object.keys(data.formulas).length} customized formula(s). Share the link, or save the JSON.</p>
             <h3>Link</h3>
             <div style="display:flex;gap:6px"><input id="share-link" readonly value="${esc(link)}" style="flex:1"><button data-act="copy-link">Copy</button></div>
             <h3 style="margin-top:12px">JSON</h3>

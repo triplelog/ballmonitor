@@ -17,6 +17,8 @@ WP_CACHE_STEP = 0.01
 # Single-game mode (inputs home_rating / away_rating): the `home` value passed to the
 # win_probability formula for each `site`, and the two outcome labels.
 GAME_SITES = {"home": 1, "neutral": 0}
+# ... and its `kind` (data/backtest.csv's column): a non-playoff bowl uses bowl_margin_sd.
+GAME_KINDS = ("regular season", "title game", "bowl", "playoff")
 HOME_WINS, AWAY_WINS = "Home team wins", "Away team wins"
 
 
@@ -31,21 +33,27 @@ class NcaafBowlsModel(BaseModel):
         # Inside the simulation each team's rating carries a drawn error
         # (rating_uncertainty_points), so the game itself is a little less random: the same
         # win_probability formula is evaluated with margin_sd replaced by simulated_game_sd.
+        # Non-playoff bowls do the same with bowl_margin_sd in place of margin_sd.
         game_sd = float(p.formula("simulated_game_sd"))
-        if not game_sd > 0:
-            raise ValueError(f"formula simulated_game_sd returned {game_sd!r}; it must be positive")
+        bowl_sd = float(p.formula("simulated_game_sd", margin_sd=float(p.bowl_margin_sd)))
+        for name, sd in (("simulated_game_sd", game_sd), ("simulated_game_sd (bowls)", bowl_sd)):
+            if not sd > 0:
+                raise ValueError(f"formula {name} returned {sd!r}; it must be positive")
 
-        # The same (diff, home) pairs recur thousands of times; cache the formula on a
-        # WP_CACHE_STEP-point grid of rating differences.
-        wp_cache: dict[tuple[int, int], float] = {}
+        def cached_win_prob(sd: float):
+            # The same (diff, home) pairs recur thousands of times; cache the formula on a
+            # WP_CACHE_STEP-point grid of rating differences.
+            cache: dict[tuple[int, int], float] = {}
 
-        def win_prob(rating_diff: float, home: int) -> float:
-            k = (round(rating_diff / WP_CACHE_STEP), home)
-            if k not in wp_cache:
-                wp_cache[k] = float(p.formula(
-                    "win_probability", rating_diff=k[0] * WP_CACHE_STEP, home=home, margin_sd=game_sd))
-            return wp_cache[k]
+            def win_prob(rating_diff: float, home: int) -> float:
+                k = (round(rating_diff / WP_CACHE_STEP), home)
+                if k not in cache:
+                    cache[k] = float(p.formula(
+                        "win_probability", rating_diff=k[0] * WP_CACHE_STEP, home=home, margin_sd=sd))
+                return cache[k]
+            return win_prob
 
+        win_prob, bowl_win_prob = cached_win_prob(game_sd), cached_win_prob(bowl_sd)
         sample_wp = win_prob(7.0, 1)
         if not 0.0 <= sample_wp <= 1.0:
             raise ValueError(
@@ -57,10 +65,11 @@ class NcaafBowlsModel(BaseModel):
         overrides = {
             f.name: type(getattr(_DEFAULTS, f.name))(p[f.name])
             for f in fields(SimConfig)
-            if f.name in p.specs and f.name != "win_prob_fn"
+            if f.name in p.specs and f.name not in ("win_prob_fn", "bowl_win_prob_fn")
         }
         cfg = SimConfig(**{**overrides, "simulations": sims, "random_seed": seed,
-                           "win_prob_fn": win_prob, "simulated_game_sd": game_sd})
+                           "win_prob_fn": win_prob, "simulated_game_sd": game_sd,
+                           "bowl_win_prob_fn": bowl_win_prob, "simulated_bowl_sd": bowl_sd})
         return BowlEngine(config=cfg, ratings_source=str(p.ratings_source))
 
     def _predict_game(self, inputs: dict[str, Any]) -> Prediction:
@@ -70,31 +79,37 @@ class NcaafBowlsModel(BaseModel):
         site = str(inputs.get("site", "home")).strip().lower()
         if site not in GAME_SITES:
             raise ValueError(f"input 'site' must be one of {sorted(GAME_SITES)}, not {site!r}")
+        kind = str(inputs.get("kind", "regular season")).strip().lower()
+        if kind not in GAME_KINDS:
+            raise ValueError(f"input 'kind' must be one of {list(GAME_KINDS)}, not {kind!r}")
+        sd = float(p.bowl_margin_sd if kind == "bowl" else p.margin_sd)
         home_name = str(inputs.get("home", "Home team"))
         away_name = str(inputs.get("away", "Away team"))
         diff = float(inputs["home_rating"]) - float(inputs["away_rating"])
-        p_home = float(p.formula("win_probability", rating_diff=diff, home=GAME_SITES[site]))
+        p_home = float(p.formula("win_probability", rating_diff=diff, home=GAME_SITES[site], margin_sd=sd))
         if not 0.0 <= p_home <= 1.0:
             raise ValueError(f"formula win_probability returned {p_home!r}; it must give a probability in [0, 1]")
         return self.prediction(
             inputs={"Game": f"{away_name} at {home_name}" + (" (neutral site)" if site == "neutral" else ""),
+                    "Kind": kind,
                     "Ratings": f"{float(inputs['home_rating']):+.1f} / {float(inputs['away_rating']):+.1f}"},
             outcomes=[
                 Outcome(label=HOME_WINS, probability=p_home, fmt="pct", group="Game", note=home_name),
                 Outcome(label=AWAY_WINS, probability=1.0 - p_home, fmt="pct", group="Game", note=away_name),
             ],
             steps=[
-                f"Rating gap (home - away): {diff:+.1f} points; site: {site}",
+                f"Rating gap (home - away): {diff:+.1f} points; site: {site}; kind: {kind}",
                 f"Win probability: {p.expr('win_probability')} (home={float(p.home_field_points):.1f}, "
-                f"sd={float(p.margin_sd):.1f}) = {p_home:.1%}",
+                f"sd={sd:.1f}{' = bowl_margin_sd' if kind == 'bowl' else ''}) = {p_home:.1%}",
             ],
-            extras={"rating_diff": round(diff, 3), "p_home": round(p_home, 4)},
+            extras={"rating_diff": round(diff, 3), "p_home": round(p_home, 4), "margin_sd": sd},
         )
 
     def backtest_case(self, row: dict[str, str]) -> tuple[dict[str, Any], Any]:
         """data/backtest.csv: one past game with the FPI published before it (RESEARCH.md)."""
         inputs = {"home": row["home"], "away": row["away"], "home_rating": float(row["home_rating"]),
-                  "away_rating": float(row["away_rating"]), "site": row["site"]}
+                  "away_rating": float(row["away_rating"]), "site": row["site"],
+                  "kind": row.get("kind") or "regular season"}
         return inputs, HOME_WINS if row["winner"] == "home" else AWAY_WINS
 
     def backtest_group(self, row: dict[str, str]) -> str | None:
@@ -231,6 +246,8 @@ class NcaafBowlsModel(BaseModel):
             f"Rating uncertainty: each season shifts every team's rating by Normal(0, "
             f"{float(p.rating_uncertainty_points):.1f}) for all its games; game SD inside the simulation "
             f"{p.expr('simulated_game_sd')} = {engine.config.game_sd():.1f}",
+            f"Non-playoff bowls: margin SD bowl_margin_sd = {float(p.bowl_margin_sd):.1f} "
+            f"(simulated {engine.config.bowl_game_sd():.1f}); playoff games keep {margin_sd:.1f}",
             f"Ran {sims} Monte Carlo seasons (seed={seed}): regular season, conference title games",
             f"Committee ranking: resume score + Gumbel noise of scale {float(p.resume_noise_points):.1f}",
             "Applied 12-team CFP selection (P4 champions + best Group-of-6 champion + 7 at-large; "

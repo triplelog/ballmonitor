@@ -332,7 +332,8 @@ def cmd_views(args: argparse.Namespace) -> int:
                     "bar": lambda: f"{len(v['items'])} bars",
                     "line": lambda: f"{len(v['series'])} lines, {sum(len(s['points']) for s in v['series'])} points",
                     "picker": lambda: f"{len(v['options'])} options",
-                    "app": lambda: f"interactive: static/apps/{v['app']}.js"}[v["kind"]]()
+                    "app": lambda: f"interactive: static/apps/{v['app']}.js",
+                    "bracket": lambda: f"{len(v['rounds'])} rounds, {sum(len(r['games']) for r in v['rounds'])} games"}[v["kind"]]()
             print(f"{indent}- {v['kind']:<6} {v['title']}  ({size})")
             if v["kind"] == "picker":
                 show(v["options"][0]["views"], indent + "    ")

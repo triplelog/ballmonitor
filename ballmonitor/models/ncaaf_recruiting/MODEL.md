@@ -100,12 +100,25 @@ Instead of relying on subjective human recruiting analysts who may have regional
    Calculates average recruit distance from campus and national recruit share (% commits $>500$ miles away) using geolocated recruit hometowns and campus coordinates.
 
 5. **Positional Allocation & Run/Pass Sub-Phases:**
-   Decomposes recruiting classes into Offense vs. Defense and Run vs. Pass:
-   $$\text{Run Offense} = \sum_{r \in \text{Off}} q_r \cdot w_{\text{run}}(pos_r), \quad \text{Pass Offense} = \sum_{r \in \text{Off}} q_r \cdot w_{\text{pass}}(pos_r)$$
-   $$\text{Run Defense} = \sum_{r \in \text{Def}} q_r \cdot w_{\text{run}}(pos_r), \quad \text{Pass Defense} = \sum_{r \in \text{Def}} q_r \cdot w_{\text{pass}}(pos_r)$$
-   Positions are weighted by functional contribution (e.g., RB: 80% run / 20% pass, WR: 10% run / 90% pass, DT: 75% run / 25% pass, EDGE: 30% run / 70% pass).
-   These are **undiscounted** sums (no rank decay), so offense + defense exceeds the class
-   score. The weight table lives in `src/position_model.py` (judgement, not in config).
+   Decomposes recruiting classes into Offense vs. Defense and Run vs. Pass. Each recruit's
+   score goes to his side(s) of the ball ($q_r \cdot s_{\text{side}}(pos_r)$; an ATH is half
+   offense, half defense); each side's contributions are sorted best first and summed through
+   **`recruit_points`** with decay $\delta_u$ = `unit_rank_decay` (0.95, the same as
+   `rank_decay`), like the class score:
+   $$\text{Offense} = \sum_{k=1}^{M_{\text{off}}} c_{(k)} \, \delta_u^{k-1}, \quad \text{Run Offense} = \sum_k c_{(k)} \, \delta_u^{k-1} \, w_{\text{run}}(pos_{(k)}), \quad \text{Pass Offense} = \sum_k c_{(k)} \, \delta_u^{k-1} \, w_{\text{pass}}(pos_{(k)})$$
+   and the same for Defense, Run Defense and Pass Defense. Positions are weighted by
+   functional contribution (e.g., RB: 80% run / 20% pass, WR: 10% run / 90% pass, DT: 75% run
+   / 25% pass, EDGE: 30% run / 70% pass). Because each side restarts the discount at its own
+   best recruit, offense + defense is somewhat above the class score. Before v0.8.0 the units
+   were undiscounted sums, so a big class of middling defenders could out-rank a small class
+   of top ones on Defense while trailing overall (variant `undiscounted_units`). The weight
+   table lives in `src/position_model.py` (judgement, not in config). Evidence
+   (RESEARCH_VARIANTS.md, unit scores): against opponent-adjusted points scored / allowed over
+   seasons Y..Y+3 the discount is slightly better (+0.008 ρ, every test year), but the overall
+   class score ranks both units better still, and a class tilted to offense or defense does
+   not predict which side the team is better on (ρ ≈ 0). Read the unit ranks as "where this
+   class's talent went", not as forecasts of offense vs defense; run/pass are untested (no
+   rushing/passing data).
 
 6. **Projected team strength (football):** config formula **`projected_srs`**
    (`proj_intercept + proj_slope * log(rank) + proj_prior_weight * prior_srs`) turns the
@@ -338,7 +351,10 @@ WBB therefore stays unvalidated for the offer model; use ESPN grades for class s
   four classes on the roster (holdout MAE 4.30; walk-forward gain 0.13 points/game, below
   the adoption margin, so not the default).
 
-Both change only the projected SRS, not the class ranking. For the ranking, RESEARCH.md
+- `undiscounted_units` — the unit scores before v0.8.0: plain sums of the recruits' shares
+  (`unit_rank_decay` = 1), 0.008 ρ worse vs points scored / allowed (RESEARCH_VARIANTS.md).
+
+The first two change only the projected SRS, the third only the unit scores; none changes the class ranking. For the ranking, RESEARCH.md
 and RESEARCH_VARIANTS.md show no tested setting is better out of sample; try
 `--set rank_decay=0.9` or `--set 'formulas.recruit_points=rating'` (no decay).
 
@@ -379,6 +395,14 @@ python evaluate.py --start 2012 --end 2017
 - Rivals team rankings (`data/teams/football{year}.csv`, 2012–2022).
 
 ## Changelog
+
+- 0.8.0 — Unit scores (offense / defense / run / pass) are now rank-discounted like the class
+  score: each side's recruits sorted best first through `recruit_points` with new param
+  `unit_rank_decay` 0.95 (was undiscounted sums, now variant `undiscounted_units`). Study in
+  `research_variants.py` → RESEARCH_VARIANTS.md "Unit scores": vs opponent-adjusted points
+  scored / allowed over seasons Y..Y+3, +0.008 ρ in 6/6 test classes 2017–2022 (below the 0.01
+  tuning margin; adopted for consistency with the class score). Class scores, rankings and the
+  projection are unchanged.
 
 - 0.7.0 (later addition, no default changes) — Daily CI update of the 2027 football class:
   `fetch.py scheduled_update` (see Data), options `[fetch.scheduled]`; `[fetch]` auto, Aug 15 –

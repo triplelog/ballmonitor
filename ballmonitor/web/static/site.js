@@ -211,7 +211,9 @@ async function renderModel(name, pick) {
   if (!(await ensurePage(name))) return;
   setHead(page.title, page.summary, `/${name}/`);
   const cls = cellClass(page.sport);
-  current = { model: name, title: page.title, summary: page.summary, pickers: {} };
+  current = { model: name, title: page.title, summary: page.summary, pickers: {},
+    // each picker's option slugs: a table cell or bracket name links only to an option that exists
+    slugs: Object.fromEntries(page.views.filter((v) => v.kind === "picker").map((v) => [v.id, new Set(v.options.map((o) => o.slug || slugify(o.label)))])) };
   viewFile = `ballmonitor/models/${page.model}/site.py`;
   pending = pick || null;
   // the title, summary and "How this works" are the page's own HTML; the rest is filled in here
@@ -286,6 +288,7 @@ function renderView(v, cls, nested) {
     case "line": return viewShell(v, renderLine(v), cls, nested);
     case "picker": return renderPicker(v, cls);
     case "app": return viewShell(v, renderApp(v), cls, nested);
+    case "bracket": return viewShell(v, renderBracket(v), cls, nested);
     default: return el("p", {}, `Unknown view ${v.kind}`);
   }
 }
@@ -310,8 +313,28 @@ function compareValues(x, y) {
 // a column of records sorts best-first on its first click, like a number column
 const recordColumn = (rows, key) => rows.some((r) => recordKey(r[key])) && rows.every((r) => r[key] === null || r[key] === undefined || r[key] === "" || recordKey(r[key]));
 
+// The address of a picker option named `text` on the page on screen (/<model>/<picker>/<slug>/),
+// or null when the picker has no such option (no link to a page that doesn't exist).
+function optionHref(picker, text) {
+  if (!picker || !current.model || text === null || text === undefined || text === "") return null;
+  const slug = slugify(text), have = current.slugs && current.slugs[picker];
+  return !have || have.has(slug) ? `/${current.model}/${picker}/${slug}/` : null;
+}
+// A cell holding a list of names (views.col `sep`): its text, and its parts, each linked if it can be.
+const cellSep = (c) => (c.sep ?? ", ");
+const cellString = (c, val) => (Array.isArray(val) ? val.join(cellSep(c)) : val);
+function linkedParts(c, val) {
+  const out = [];
+  val.forEach((part, i) => {
+    if (i) out.push(cellSep(c));
+    const href = c.link ? optionHref(c.link, part) : null;
+    out.push(href ? el("a", { href }, part) : part);
+  });
+  return out;
+}
+
 function renderTable(v) {
-  const state = { q: "", sort: v.sort || null, desc: v.sort_desc !== false, all: !v.page_size };
+  const state = { q: "", sort: v.sort || null, desc: v.sort_desc !== false, all: !v.page_size, qf: null };
   const max = {};
   for (const c of v.columns) {
     if (c.bar) max[c.key] = Math.max(...v.rows.map((r) => (typeof r[c.key] === "number" ? Math.abs(r[c.key]) : 0)), 1e-9);
@@ -344,13 +367,26 @@ function renderTable(v) {
           draw();
         } }), ` ${c.label}`)))) : null;
 
+  // Quick filters (views.table quick_filters): "All" and one button per value of one column.
+  const qf = v.quick_filters;
+  const qfButtons = qf ? [null, ...qf.values].map((value) => el("button", { type: "button", class: "ss-btn small",
+    "aria-pressed": value === null ? "true" : "false", "data-value": value ?? "",
+    onclick: (e) => {
+      state.qf = value;
+      for (const b of e.currentTarget.parentNode.querySelectorAll("button")) b.setAttribute("aria-pressed", String(b === e.currentTarget));
+      draw();
+    } }, value === null ? "All" : value)) : null;
+  const quick = qf ? el("div", { class: "quick-filters", role: "group", "aria-label": `Show only one ${(v.columns.find((c) => c.key === qf.key) || {}).label || qf.key}` }, qfButtons) : null;
+
   function rows() {
     let rs = v.rows;
-    if (state.q) rs = rs.filter((r) => v.columns.some((c) => String(r[c.key] ?? "").toLowerCase().includes(state.q)));
+    if (state.qf !== null) rs = rs.filter((r) => String(r[qf.key] ?? "") === state.qf);
+    if (state.q) rs = rs.filter((r) => v.columns.some((c) => String(cellString(c, r[c.key]) ?? "").toLowerCase().includes(state.q)));
     if (state.sort) {
       const k = state.sort, dir = state.desc ? -1 : 1;
+      const col = v.columns.find((c) => c.key === k) || {};
       rs = [...rs].sort((a, b) => {
-        const x = a[k], y = b[k];
+        const x = cellString(col, a[k]), y = cellString(col, b[k]);
         if (x === y) return 0;
         if (x === null || x === undefined || x === "") return 1;
         if (y === null || y === undefined || y === "") return -1;
@@ -362,7 +398,7 @@ function renderTable(v) {
 
   function draw() {
     const rs = rows();
-    const shown = state.all || state.q ? rs : rs.slice(0, v.page_size);
+    const shown = state.all || state.q || state.qf !== null ? rs : rs.slice(0, v.page_size);
     // each header is a button (keyboard and screen readers can sort); aria-sort says which is sorted
     const head = el("tr", {}, shownCols().map((c) => el("th", {
       class: [numeric(c) ? "num" : "", c.key === stickKey ? "stick" : "", state.sort === c.key ? (state.desc ? "sorted desc" : "sorted asc") : ""].join(" ").trim() || null,
@@ -377,7 +413,7 @@ function renderTable(v) {
       } }, c.label))));
     const body = shown.map((r) => el("tr", {}, shownCols().map((c) => {
       const val = r[c.key];
-      const text = fmt(val, c.fmt, c.decimals);
+      const text = Array.isArray(val) ? val.join(cellSep(c)) : fmt(val, c.fmt, c.decimals);
       const align = c.align || (numeric(c) ? "num" : "");
       if (c.bar && typeof val === "number") {
         const w = Math.max(0, Math.min(100, (Math.abs(val) / max[c.key]) * 100));
@@ -387,17 +423,18 @@ function renderTable(v) {
         const a = Math.round(Math.min(1, val / heatMax) * 80);
         return el("td", { class: `${align} heat${a > 42 ? " dark" : ""}`, style: `background: color-mix(in srgb, var(--ss-accent) ${a}%, transparent)` }, text);
       }
-      const content = c.link && text ? el("a", { href: `/${current.model}/${c.link}/${slugify(val)}/` }, text) : text;
+      const href = c.link && text && !Array.isArray(val) ? optionHref(c.link, val) : null;
+      const content = Array.isArray(val) ? linkedParts(c, val) : href ? el("a", { href }, text) : text;
       return el("td", { class: [align, text.length > 36 ? "long" : "", c.key === stickKey ? "stick" : ""].join(" ").trim() || null }, content);
     })));
     wrap.replaceChildren(el("table", {}, el("thead", {}, head), el("tbody", {}, body)));
     const hidden = rs.length - shown.length;
     more.textContent = `Show all ${rs.length}`;
     more.hidden = hidden <= 0;
-    if (state.q && !rs.length) wrap.append(el("p", { class: "note" }, "No matches."));
+    if ((state.q || state.qf !== null) && !rs.length) wrap.append(el("p", { class: "note" }, "No matches."));
   }
   draw();
-  return el("div", {}, (search || chooser) ? el("div", { class: "table-tools" }, search, chooser) : null, wrap, more);
+  return el("div", {}, quick, (search || chooser) ? el("div", { class: "table-tools" }, search, chooser) : null, wrap, more);
 }
 
 // ── apps: interactive tools (static/apps/<name>.js, views.app) ─────────────────
@@ -433,6 +470,27 @@ function renderBars(v) {
       el("span", { class: "barval" }, fmt(i.value, v.fmt, v.decimals)))));
 }
 
+// ── bracket (views.bracket): one column per round, scrolling sideways on a phone ──
+// web/pages.py writes the same markup into the page before this script runs (bracket_html).
+function renderBracket(v) {
+  const name = (t) => {
+    const href = v.link ? optionHref(v.link, t.name) : null;
+    return href ? el("a", { href }, t.name) : t.name;
+  };
+  const side = (t, won) => el("li", { class: `bk-team${won ? " won" : ""}` },
+    el("span", { class: "bk-seed" }, t.seed ?? ""),
+    el("span", { class: "bk-name" }, name(t)),
+    el("span", { class: "bk-p" }, typeof t.p === "number" ? fmt(t.p, "pct") : ""));
+  // the champion (if given) sits under the last round's game
+  const rounds = v.rounds.map((rd, r) => el("div", { class: "bk-round" },
+    el("h4", { class: "bk-round-name", ...viewSrc(`${v.id}.rounds`) }, rd.name),
+    el("div", { class: "bk-games" }, rd.games.map((g) => el("div", { class: "bk-game" },
+      el("ul", {}, g.teams.map((t, i) => side(t, g.winner === i))),
+      g.where ? el("p", { class: "bk-where" }, g.where) : null)),
+      v.champion && r === v.rounds.length - 1 ? el("p", { class: "bk-champ" }, el("span", {}, "Champion"), name({ name: v.champion })) : null)));
+  return el("div", { class: "bracket", tabindex: "0", role: "group", "aria-label": v.title }, rounds);
+}
+
 // ── line chart ────────────────────────────────────────────────────────────────
 const COLORS = ["var(--c1)", "var(--c2)", "var(--c3)", "var(--c4)", "var(--c5)", "var(--c6)"];
 
@@ -462,7 +520,7 @@ function renderLine(v) {
   if (v.y_min === undefined && v.y_max === undefined) { const pad = (y1 - y0) * 0.06 || 1; y0 -= pad; y1 += pad; }
   if (x1 === x0) x1 = x0 + 1;
   const X = (x) => L + ((x - x0) / (x1 - x0)) * (W - L - R);
-  const Y = (y) => T + (1 - (y - y0) / (y1 - y0)) * (H - T - B);
+  const Y = (y) => T + (v.y_reverse ? (y - y0) / (y1 - y0) : 1 - (y - y0) / (y1 - y0)) * (H - T - B);
   const yt = v.y_fmt === "time" ? timeTicks(y0, y1) : niceTicks(y0, y1);
   const xt = v.x_fmt === "time" ? timeTicks(x0, x1) : niceTicks(x0, x1, 6);
   const g = svg("svg", { viewBox: `0 0 ${W} ${H}`, class: "chart", role: "img", "aria-label": v.title });
@@ -622,23 +680,31 @@ async function renderDataTable(id) {
   setHead(t.title, t.summary, `/tables/${t.id}/`);
   const cls = cellClass(t.sport);
   const host = el("div", { class: "live-table" }, el("p", { class: "loading" }, "Loading the table…"));
+  let shownTable = null;
   const show = async (options) => {
     try {
       const Tabview = await loadEmbed(t.server);
+      try { shownTable?.destroy?.(); } catch { /* an older embed */ }
       // fans get the filter, the Try buttons, sorting, the column list and downloads; adding columns,
       // stats and groups stay on tabdn.com. `labels` and `timing` need tabview 2026-11-10 or later
       // (an older embed ignores them).
-      Tabview.mount(host, { server: t.server, backend: t.backend, theme: "light", timing: false,
+      shownTable = Tabview.mount(host, { server: t.server, backend: t.backend, theme: "light", timing: false,
         hide: ["compiled", "helper", "computed", "stats", "group"], ...t.options, ...options });
     } catch (e) {
       host.replaceChildren(el("p", {}, "The table server isn't answering right now. Try again in a little while."));
       console.error(e);
     }
   };
+  // The Try button whose filter and sort are on screen is pressed (aria-pressed); the table's own
+  // filter and sort (t.options) count as the one that matches them. Typing a filter un-presses it.
+  const sameSort = (a, b) => (a || null) === (b || null) || (a && b && a.column === b.column && !!a.desc === !!b.desc);
+  const press = (btn) => { for (const b of examples?.querySelectorAll("button") || []) b.setAttribute("aria-pressed", String(b === btn)); };
   const examples = t.examples.length ? el("div", { class: "examples" },
     el("span", { class: "small" }, "Try: "),
     ...t.examples.map((x) => el("button", { class: "ss-btn small", type: "button",
-      onclick: () => show({ filter: x.filter || "", sort: x.sort || null }) }, x.label))) : null;
+      "aria-pressed": String((x.filter || "") === (t.options.filter || "") && sameSort(x.sort, t.options.sort)),
+      onclick: (e) => { press(e.currentTarget); show({ filter: x.filter || "", sort: x.sort || null }); } }, x.label))) : null;
+  host.addEventListener("input", () => press(null));
   // the name a filter uses, then the header it has on the page and what it means
   const labels = t.labels || {};
   // how to use the names, with the first Try example's filter (web/pages.py writes the same line)
@@ -676,6 +742,36 @@ function loadPyslots() {
   });
 }
 const chartSlug = (file) => file.replace(/^charts\//, "").replace(/\.py$/, "");
+// Python (Pyodide, from jsDelivr) is loaded once per visit, on the first chart drawn. A visitor who
+// hasn't drawn a chart yet gets a "Draw the chart" button instead of a download they didn't ask for;
+// once they have (this visit, or before: remembered in this browser), charts draw as soon as they open.
+// The form itself is mounted only then: pyslots' embed runs its first chart even with autoRun: false.
+const DRAWN_KEY = "ballmonitor:charts:drawn";
+let chartDrawn = false;
+const drewBefore = () => { try { return localStorage.getItem(DRAWN_KEY) === "1"; } catch { return false; } };
+
+// The buttons under a chart: Reset formulas (mount the form again with the chart's starting
+// formulas) and Download PNG (the picture pyslots drew, an <img> in its .pse-out). Both work from
+// outside the form, through Pyslots.mount and the page, so charts/ (a copy of pyslots) stays as it is.
+function chartTools(host, t, mount) {
+  const note = el("p", { class: "chart-first", role: "status" }, chartDrawn ? null : "Loading Python for your first chart (a few seconds)…");
+  note.hidden = chartDrawn;
+  const reset = el("button", { type: "button", class: "ss-btn small", onclick: () => mount() }, "Reset formulas");
+  const download = el("a", { class: "ss-btn small", download: `${t.id}.png`, "aria-disabled": "true", href: null }, "Download PNG");
+  const watch = () => {
+    const img = host.querySelector(".pse-out img");
+    const ready = img && img.src && !host.querySelector(".pse-out.stale");
+    if (img && !chartDrawn) {
+      chartDrawn = true;
+      try { localStorage.setItem(DRAWN_KEY, "1"); } catch { /* private mode */ }
+    }
+    if (img) note.hidden = true;
+    if (ready) { download.href = img.src; download.removeAttribute("aria-disabled"); }
+    else { download.removeAttribute("href"); download.setAttribute("aria-disabled", "true"); }
+  };
+  new MutationObserver(watch).observe(host, { childList: true, subtree: true, attributes: true, attributeFilter: ["src", "class"] });
+  return { note, bar: el("div", { class: "chart-tools" }, reset, download) };
+}
 
 // The charts come from web/charts.toml (data/site.json): a name, an intro and starting formulas for
 // one of the templates. An old address naming a template (/charts/scatter/) opens its first chart.
@@ -692,6 +788,32 @@ async function renderCharts(slug) {
   const groups = {};
   for (const x of charts) (groups[x.group] = groups[x.group] || []).push(x);
   const host = el("div", { class: "live-chart" }, el("p", { class: "loading" }, "Loading the chart…"));
+  let Pyslots = null;
+  const saveData = !!(navigator.connection && navigator.connection.saveData);
+  const mount = () => Pyslots.mount(host, { site: new URL(CHARTS, location.href).href, template: t.template, title: t.title,
+    formulas: t.formulas || {} });
+  const tools = chartTools(host, t, () => Pyslots && mount().catch((e) => console.error(e)));
+  const draw = async () => {
+    tools.note.hidden = chartDrawn;
+    tools.bar.hidden = false;
+    host.replaceChildren(el("p", { class: "loading" }, "Loading the chart…"));
+    try {
+      Pyslots = await loadPyslots();
+      await mount();
+    } catch (e) {
+      tools.note.hidden = true;
+      host.replaceChildren(el("p", {}, "The chart couldn't load. Try again in a little while."));
+      console.error(e);
+    }
+  };
+  // readers in data-saver mode always press the button themselves
+  const atOnce = (chartDrawn || drewBefore()) && !saveData;
+  if (!atOnce) {
+    tools.note.hidden = tools.bar.hidden = true;
+    host.replaceChildren(el("div", { class: "chart-ask" },
+      el("button", { type: "button", class: "ss-btn", onclick: draw }, "Draw the chart"),
+      el("span", { class: "small" }, "The first chart loads Python into your browser (a few seconds); later ones draw at once.")));
+  }
   fillSlot("chart-picks",
     ...Object.entries(groups).map(([g, xs]) => el("div", { class: "chart-group" },
       el("span", { class: "chart-group-name" }, g),
@@ -700,19 +822,10 @@ async function renderCharts(slug) {
   fillSlot("chart",
     el("div", { class: "ss-band", ...chartSrc(t, "title") }, t.title),
     el("p", { class: "chart-intro", ...chartSrc(t, "intro") }, t.intro),
-    host);
+    tools.note, host, tools.bar);
   renderNav("charts");
   window.scrollTo(0, 0);
-  try {
-    const Pyslots = await loadPyslots();
-    // the first chart downloads Python (Pyodide); readers in data-saver mode press Run themselves
-    const saveData = !!(navigator.connection && navigator.connection.saveData);
-    await Pyslots.mount(host, { site: new URL(CHARTS, location.href).href, template: t.template, title: t.title,
-      formulas: t.formulas || {}, autoRun: !saveData });
-  } catch (e) {
-    host.replaceChildren(el("p", {}, "The chart couldn't load. Try again in a little while."));
-    console.error(e);
-  }
+  if (atOnce) await draw();
 }
 
 // ── page head: title, description and canonical address follow the page shown ──

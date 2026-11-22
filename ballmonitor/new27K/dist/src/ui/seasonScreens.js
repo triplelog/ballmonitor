@@ -88,7 +88,7 @@ export function renderSeasonSetup(app) {
                 </div>
                 <div class="panel">
                     <h3>${esc(FORMATS[st.level].title({ formatOpts: formatOpts() }))}</h3>
-                    <div class="form-grid" style="grid-template-columns: 110px 1fr">
+                    <div class="form-grid" style="--label-w: 110px">
                         ${st.level === 'pro' ? `<label>Games</label>
                         <select id="s-len">${L.lengths.map((n) => `<option ${n === (st.length ?? L.defaultLength) ? 'selected' : ''}>${n}</option>`).join('')}</select>` : ''}
                         <label>Difficulty</label>
@@ -130,7 +130,7 @@ export function renderSeasonSetup(app) {
             // Smaller leagues get a simulated past for the scouting reports.
             if (league.teams.length <= 16) seedHistory(league, app.F, league.teams.length * 10);
             app.season = createSeason({ level: st.level, seed: st.seed, league, userTeamId: st.team, difficulty: st.difficulty, formatOpts: formatOpts() });
-            app.clearGame();
+            app.clearGame('season');
             app.saveSeason();
             app.go('season');
         }
@@ -186,8 +186,7 @@ export function renderSeason(app, args = {}) {
         return `${team(wa > wb ? m.a : m.b).abbr} leads the series ${Math.max(wa, wb)}-${Math.min(wa, wb)}`;
     };
     const savedHere = () => {
-        const saved = app.savedGame();
-        return saved && saved.seasonGameId !== undefined ? saved : null;
+        return app.savedGame('season');
     };
 
     function nextPanel() {
@@ -377,7 +376,7 @@ export function renderSeason(app, args = {}) {
     // Run a sim in small chunks so the page stays responsive.
     function runSim(stop, label) {
         if (savedHere() && !confirm('Your game in progress will be simmed from the start. Continue?')) return;
-        if (savedHere()) app.clearGame();
+        if (savedHere()) app.clearGame('season');
         const startDay = season.day;
         const total = Math.max(1, season.schedule.filter((g) => !g.result).length);
         simming = { label, done: 0, total };
@@ -413,13 +412,13 @@ export function renderSeason(app, args = {}) {
                 if (confirm('Abandon this season? It can’t be recovered.')) {
                     app.season = null;
                     app.saveSeason();
-                    if (savedHere()) app.clearGame();
+                    if (savedHere()) app.clearGame('season');
                     app.go('menu');
                 }
                 break;
             case 'stop': cancelled = true; break;
             case 'play': app.go('seasonLineup'); break;
-            case 'resume': app.go('continue'); break;
+            case 'resume': app.go('continue', { kind: 'season' }); break;
             case 'sim-game': runSim(1, 'Simming today’s games…'); break;
             case 'sim-to-game': runSim('userGame', 'Simming to your next game…'); break;
             case 'sim-week': runSim(7, 'Simming 7 days…'); break;

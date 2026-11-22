@@ -112,7 +112,7 @@ date = "Date"
 player = "Player"
 team = "Team"
 opp = "Opp"
-ipouts = "Outs"
+ipouts = "Outs (27 = 9 inn.)"
 bfp = "Batters"
 h = "H"
 r = "R"
@@ -125,7 +125,7 @@ cg = "Complete"
 decision = "Decision"
 [table.columns]
 date = "game date"
-ipouts = "outs recorded (3 per inning)"
+ipouts = "outs recorded, 3 per inning: 27 is nine innings, 18 is six"
 bfp = "batters faced"
 h = "hits allowed"
 r = "runs allowed"
@@ -149,13 +149,14 @@ filter = "yds >= 400"
 sort = { column = "season", desc = true }
 order = ["season", "week", "type", "player", "team", "opp", "cmp", "att", "yds", "td", "int", "rating", "sacks", "epa", "rush_yds"]
 limit = 100
-how = "NFL weekly player stats from nflverse (nflverse.com, CC BY 4.0), one row per player per game with a pass thrown. Rating is the official NFL passer rating, worked out from each game's line. Filters use the short names under \"What the columns mean\", as in yds >= 400 and td >= 4."
+how = "NFL weekly player stats from nflverse (nflverse.com, CC BY 4.0), one row per player per game with a pass thrown. Rating is the official NFL passer rating, worked out from each game's line. Sorting by Rating or Yds/att? Add a minimum such as att >= 15 to the filter, or a receiver's one trick-play pass tops the list. Filters use the short names under \"What the columns mean\", as in yds >= 400 and td >= 4."
 examples = [
   { label = "400-yard games", filter = "yds >= 400", sort = { column = "yds", desc = true } },
   { label = "Perfect passer rating (20+ attempts)", filter = "rating >= 158.3 and att >= 20", sort = { column = "season", desc = true } },
+  { label = "Best passer ratings (15+ attempts)", filter = "att >= 15", sort = { column = "rating", desc = true } },
   { label = "5+ touchdown passes", filter = "td >= 5", sort = { column = "td", desc = true } },
   { label = "4+ interceptions", filter = "int >= 4", sort = { column = "int", desc = true } },
-  { label = "Playoff games", filter = "type = \"POST\"", sort = { column = "epa", desc = true } },
+  { label = "Best playoff games (15+ attempts)", filter = "type = \"POST\" and att >= 15", sort = { column = "epa", desc = true } },
   { label = "100 rushing yards by a QB", filter = "rush_yds >= 100 and pos = \"QB\"", sort = { column = "rush_yds", desc = true } },
 ]
 [table.labels]
@@ -192,7 +193,7 @@ att = "pass attempts"
 yds = "passing yards"
 td = "touchdown passes"
 int = "interceptions"
-rating = "NFL passer rating (0 to 158.3)"
+rating = "NFL passer rating (0 to 158.3); filter on att >= 15 to leave out trick-play passes"
 ypa = "yards per attempt"
 sacks = "times sacked"
 sack_yds = "yards lost to sacks"

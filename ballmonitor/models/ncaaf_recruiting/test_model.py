@@ -26,6 +26,44 @@ def test_decay_lowers_class_score():
     assert steep < base < flat
 
 
+def test_unit_scores_are_rank_discounted():
+    # Hand case: Big signs 4 defenders scoring 1.0, Small 2 defenders scoring 1.8 (+ a QB).
+    from ballmonitor.models.ncaaf_recruiting.src.models import RankingResult, Recruit, TeamRating
+    from ballmonitor.models.ncaaf_recruiting.src.position_model import PositionalRankingEngine
+
+    def rec(team, pos, score):
+        return Recruit(url="", year=2024, name="x", position=pos, hometown="", stars=3,
+                       committed_team=team, score=score)
+    recs = [rec("Big", "LB", 1.0) for _ in range(4)] + [rec("Small", "CB", 1.8), rec("Small", "S", 1.8),
+                                                         rec("Small", "QB", 2.0)]
+    res = RankingResult(year=2024, teams=[TeamRating(name="Big"), TeamRating(name="Small")], recruits=recs)
+    flat = PositionalRankingEngine(rank_decay=1.0).evaluate(res).by_name
+    assert flat["big"].defense_score == pytest.approx(4.0)
+    assert flat["big"].defense_rank == 1  # plain sum: four 1.0s beat two 1.8s
+    dec = PositionalRankingEngine(rank_decay=0.5).evaluate(res).by_name
+    assert dec["big"].defense_score == pytest.approx(1 + 0.5 + 0.25 + 0.125)
+    assert dec["small"].defense_score == pytest.approx(1.8 + 0.9)
+    assert dec["small"].defense_rank == 1
+    # run/pass parts share the side's weights: LB 60/40 run/pass
+    assert dec["big"].run_defense_score == pytest.approx(0.6 * 1.875)
+    # each side restarts at its own best recruit
+    assert dec["small"].offense_score == pytest.approx(2.0)
+    # without an explicit decay the result's unit_points (set by the model) is used
+    res.unit_points = lambda c, k: c * 0.5 ** (k - 1)
+    assert PositionalRankingEngine().evaluate(res).by_name["big"].defense_score == pytest.approx(1.875)
+
+
+def test_unit_rank_decay_moves_unit_scores():
+    g = {"year": 2024, "team": "Georgia"}
+    base = _model().predict(g).extras["unit_breakdown"]
+    flat = registry.load_model("ncaaf_recruiting", variant="undiscounted_units").predict(g).extras["unit_breakdown"]
+    steep = _model(unit_rank_decay=0.8).predict(g).extras["unit_breakdown"]
+    for k in ("offense_score", "defense_score"):
+        assert steep[k] < base[k] < flat[k]
+    # class score untouched by the unit decay
+    assert _model(unit_rank_decay=0.8).predict(g).extras["score"] == _model().predict(g).extras["score"]
+
+
 def test_basketball_uses_basketball_params():
     m = _model(bball_quality_power=0.4)
     a = m.predict({"sport": "mbb", "year": 2025, "team": "Duke"}).extras["score"]

@@ -429,24 +429,37 @@
         ? "Teams and facts are for the 2026 season; a metro counts teams in its suburbs (the Giants and Jets are New York). A state counts every team and school inside it."
         : "Stats are regular-season totals from the Lahman Baseball Database. A player only appears in a puzzle if he isn't a borderline case for its circles (e.g. a handful of games for a team)."));
   }
-  function showArchive() {
+  async function showArchive() {
     const list = [...available()].reverse();
-    modal(el("h2", {}, "Archive"),
-      el("div", { class: "arch" }, ...list.map((q) => {
-        const saved = loadSaved(q.date);
-        let s = "not played";
-        if (saved?.checked) {
-          // score needs the puzzle; show it when its month is loaded
-          s = "played";
-          const m = months[q.date.slice(0, 7)];
-          const pz = m && m.find((x) => x.date === q.date);
-          if (pz) s = `${pz.cards.filter((c, i) => saved.place[i] === c.region).length}/${Object.values(pz.need || NEED_17).reduce((a, b) => a + b, 0)}`;
-        } else if (saved && Object.keys(saved.place || {}).length) s = "in progress";
-        const d = new Date(q.date + "T12:00:00");
-        return el("button", { class: saved?.checked ? "done" : "", onclick: () => { closeModal(false); location.hash = q.date; } },
-          `#${q.number} · ${d.toLocaleDateString(undefined, { month: "short", day: "numeric" })}`,
-          el("span", { class: "s" }, `${q.pack === "places" ? "cities & states" : q.level === "big" ? "big Sunday" : q.level} · ${s}`));
-      })));
+    const saves = new Map(list.map((q) => [q.date, loadSaved(q.date)]));
+    // load the months of played days to score them (from what's already saved; nothing new is stored)
+    const need = new Set(list.filter((q) => saves.get(q.date)?.checked).map((q) => q.date.slice(0, 7)));
+    await Promise.all([...need].filter((m) => !months[m]).map((m) =>
+      fetch(`puzzles/daily/${m}.json`).then((r) => r.json()).then((d) => { months[m] = d; }).catch(() => null)));
+    let right = 0, spots = 0, perfect = 0, n = 0;
+    const items = list.map((q) => {
+      const saved = saves.get(q.date);
+      let s = "not played";
+      if (saved?.checked) {
+        s = "played";
+        const m = months[q.date.slice(0, 7)];
+        const pz = m && m.find((x) => x.date === q.date);
+        if (pz) {
+          const got = pz.cards.filter((c, i) => saved.place?.[i] === c.region).length;
+          const of = Object.values(pz.need || NEED_17).reduce((a, b) => a + b, 0);
+          s = `${got}/${of}`;
+          right += got; spots += of; n++; if (got === of) perfect++;
+        }
+      } else if (saved && Object.keys(saved.place || {}).length) s = "in progress";
+      const d = new Date(q.date + "T12:00:00");
+      return el("button", { class: saved?.checked ? "done" : "", onclick: () => { closeModal(false); location.hash = q.date; } },
+        `#${q.number} · ${d.toLocaleDateString(undefined, { month: "short", day: "numeric" })}`,
+        el("span", { class: "s" }, `${q.pack === "places" ? "cities & states" : q.level === "big" ? "big Sunday" : q.level} · ${s}`));
+    });
+    const summary = n
+      ? `${n} played · ${right} of ${spots} spots right (${Math.round(100 * right / spots)}%) · ${perfect} perfect`
+      : "None played yet on this device.";
+    modal(el("h2", {}, "Archive"), el("p", { class: "arch-sum" }, summary), el("div", { class: "arch" }, ...items));
   }
 
   // ── boot ─────────────────────────────────────────────────────────────────

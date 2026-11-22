@@ -1,6 +1,6 @@
 [meta]
 title = "College recruiting rankings"
-version = "0.7.0"
+version = "0.8.0"
 status = "calibrated"  # football: data/backtest.csv + RESEARCH.md; MBB evaluated in RESEARCH_MBB.md (no projection, no backtest rows); WBB untested
 question = "How strong is a program's football recruiting class, judged from head-to-head scholarship offer battles?"
 description = "Global Plackett-Luce choice model inferring program recruiting prestige from competitive scholarship offer networks, with diminishing roster depth decay and positional unit splits. Basketball (MBB/WBB) classes remain available from the CLI for research only (RESEARCH_MBB*.md, RESEARCH_WBB.md)."
@@ -39,6 +39,12 @@ hidden_params = ["rotation_decay", "bball_quality_power", "bball_l2_reg", "corne
 value = 0.95
 description = "Within-class rank discount factor for football (recruit #k receives weight rank_decay^(k-1))."
 source = "RESEARCH.md (research.py): best mean Spearman vs 4-season SRS on 2012-2018 classes; holdout 2019-2022 rho 0.724 (flat for 0.85-0.95)."
+range = [0.5, 1.0]
+
+[params.unit_rank_decay]
+value = 0.95
+description = "Football offense / defense / run / pass unit scores: each side's recruits are sorted best first and the k-th counts unit_rank_decay^(k-1) through recruit_points (run/pass parts share that weight). 1 = undiscounted sums (before v0.8.0)."
+source = "RESEARCH_VARIANTS.md (research_variants.py, unit scores): vs opponent-adjusted points scored/allowed over seasons Y..Y+3, 0.95 beats undiscounted by +0.008 rho in 6/6 test classes 2017-2022; 0.85 does better (+0.015) but only by tracking overall strength, so set equal to rank_decay for consistency (judgement)."
 range = [0.5, 1.0]
 
 [params.rotation_decay]

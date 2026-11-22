@@ -301,7 +301,7 @@ def main():
 
     # Positional evaluation if requested
     if args.breakdown or args.unit != "all":
-        pos_engine = PositionalRankingEngine()
+        pos_engine = PositionalRankingEngine(rank_decay=args.decay)  # units discounted like the class
         pos_result = pos_engine.evaluate(result)
         output = render_positional_table(pos_result, args.unit, args.top, args.format)
     else:

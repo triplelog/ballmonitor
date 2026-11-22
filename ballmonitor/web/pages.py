@@ -215,12 +215,57 @@ def headline(page: dict) -> str:
             + (f'<span class="ss-chip">{esc(page["updated"])}</span>' if page.get("updated") else ""))
 
 
+def _pct(p: float) -> str:
+    """A 0-1 chance as site.js's fmt(p, "pct") writes it (whole percents)."""
+    if p == 0:
+        return "–"
+    if 0 < p * 100 < 0.5:
+        return "<1%"
+    if 99.5 < p * 100 < 100:
+        return ">99%"
+    return f"{p * 100:.0f}%"
+
+
+def bracket_html(v: dict, address: str, slugs: dict[str, set[str]], model: str = "") -> str:
+    """A views.bracket as HTML, the same markup site.js's renderBracket draws (one column per
+    round; team names link to their picker option when it exists)."""
+    def name(text: str) -> str:
+        link = v.get("link")
+        if link and views.slug(text) in slugs.get(link, set()):
+            return f'<a href="/{address}/{link}/{views.slug(text)}/">{esc(text)}</a>'
+        return esc(text)
+
+    def side(t: dict, won: bool) -> str:
+        p = t.get("p")
+        return (f'<li class="bk-team{" won" if won else ""}"><span class="bk-seed">{esc(str(t.get("seed", "")))}</span>'
+                f'<span class="bk-name">{name(t["name"])}</span>'
+                f'<span class="bk-p">{_pct(p) if isinstance(p, (int, float)) else ""}</span></li>')
+
+    src = f' data-src="ballmonitor/models/{esc(model)}/site.py#{esc(v["id"])}.rounds"' if model else ""
+    cols = []
+    for r, rd in enumerate(v["rounds"]):
+        games = "".join(
+            '<div class="bk-game"><ul>' + "".join(side(t, g.get("winner") == i) for i, t in enumerate(g["teams"])) + "</ul>"
+            + (f'<p class="bk-where">{esc(g["where"])}</p>' if g.get("where") else "") + "</div>"
+            for g in rd["games"])
+        if v.get("champion") and r == len(v["rounds"]) - 1:   # the champion, under the last game
+            games += f'<p class="bk-champ"><span>Champion</span>{name(v["champion"])}</p>'
+        cols.append(f'<div class="bk-round"><h4 class="bk-round-name"{src}>{esc(rd["name"])}</h4><div class="bk-games">{games}</div></div>')
+    return f'<div class="bracket" tabindex="0" role="group" aria-label="{esc(v["title"])}">{"".join(cols)}</div>'
+
+
 def model_pages(address: str, page: dict, cls: str) -> dict[str, tuple[str, str, dict]]:
     """{path: (title, description, slots)} for a forecast page and each of its picker options."""
     out = {}
     sections = []
+    slugs = {v["id"]: {option_slug(o) for o in v["options"]} for v in _pickers(page["views"])}
     for v in page["views"]:
-        if v.get("kind") == "picker":
+        if v.get("kind") == "bracket":   # drawn whole: it reads without the script
+            sections.append(_cell(cls, f'<div class="ss-band">{esc(v["title"])}</div>',
+                                  f'<p class="subtitle">{esc(v["subtitle"])}</p>' if v.get("subtitle") else "",
+                                  bracket_html(v, address, slugs, page.get("model", "")),
+                                  f'<p class="note">{esc(v["note"])}</p>' if v.get("note") else ""))
+        elif v.get("kind") == "picker":
             links = "".join(f'<li><a href="/{address}/{v["id"]}/{option_slug(o)}/">{esc(o["label"])}</a></li>'
                             for o in v["options"])
             sections.append(_cell(cls, f'<div class="ss-band">{esc(v["title"])}</div>',

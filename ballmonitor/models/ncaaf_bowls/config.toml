@@ -1,13 +1,14 @@
 [meta]
 title = "NCAAF bowl & CFP projections"
-version = "0.5.0"
+version = "0.6.1"
 status = "draft"
 question = "Which bowl game or 12-team College Football Playoff seed will each FBS team earn, and what are their postseason win probabilities?"
 description = "Monte Carlo FBS season and postseason simulator for the current season: every remaining regular-season game (ESPN schedule), conference championship games, the 12-team College Football Playoff (2026 straight-seeding protocol: 5 automatic bids, 7 at-large, top 4 ranked teams get byes) and the 2026-27 conference bowl tie-ins."
 assumptions = [
   "Records, the remaining schedule and conference alignment are the ESPN snapshot in data/meta.json (rebuild with `ballmonitor fetch ncaaf_bowls`); games after the snapshot are simulated.",
   "Team strength is the snapshot's rating (ESPN FPI by default, or a results-only rating) plus, in each simulated season, one error per team drawn from Normal(0, rating_uncertainty_points) and kept for all its games; injuries and in-season changes after the snapshot are otherwise ignored.",
-  "Each game's win probability depends on the rating difference plus home-field advantage via a normal CDF margin model (config formula win_probability); FCS opponents all share fcs_opponent_rating.",
+  "Each game's win probability depends on the rating difference plus home-field advantage via a normal CDF margin model (config formula win_probability); non-playoff bowls use the wider bowl_margin_sd (opt-outs, coaching changes, layoffs), playoff games the regular margin_sd; FCS opponents all share fcs_opponent_rating.",
+  "Conference title-game spots go by conference win percentage, then head-to-head (combined among 3+ tied teams), record against common conference opponents, then the published rating (tiebreak.py); a conference with two divisions (data/teams.json, from ESPN; in 2026 only the Sun Belt) sends each division's winner.",
   "The CFP committee ranking is a resume score (win %, losses, rating, conference title, power conference) with weights fitted to the committee's final top 25 of 2016-2025, plus random noise (resume_noise_points); it has no head-to-head, schedule-strength or injury terms.",
   "The CFP uses the 2026 format: automatic bids for the ACC, Big Ten, Big 12 and SEC champions plus the highest-ranked champion of the other six conferences, 7 at-large bids, straight seeding by ranking (byes for the top 4).",
   "Non-CFP bowls are filled from data/bowls.json: each conference fills its tie-in slots in its pick order, legacy Pac-12 schools fill the Pac-12 legacy slots, then pooled and at-large slots; picks weigh wins, rating, brand, distance and repeat/rematch avoidance.",
@@ -32,6 +33,13 @@ unit = "points"
 description = "Standard deviation of actual game scoring margin around the projected spread."
 source = "Kept after testing: RESEARCH.md part 1 (6,699 FBS games, 2016-2025). The best-fitting value is 14.8 (the margin itself misses by 16.0), but walk-forward 2019-2025 the refitted value beat 14.0 in only 4 of 7 seasons, by under 0.001 log loss."
 range = [5.0, 25.0]
+
+[params.bowl_margin_sd]
+value = 27.5
+unit = "points"
+description = "Margin SD for non-playoff bowl games (used in place of margin_sd in win_probability; playoff games keep margin_sd). Bowls are much harder to call than other games: opt-outs, coaching changes, a month off."
+source = "RESEARCH.md part 5: best fit on 354 bowls of 2016-2025 (in-sample; 22-32 score within 0.002 log loss). Walk-forward 2019-2025 (7 seasons, 243 bowls, SD refitted on earlier seasons: 19-27) log loss 0.692 -> 0.676 and Brier 0.249 -> 0.242 vs 14, better in 5 of 7 seasons. New in 0.6.0 (bowls used margin_sd = 14 before)."
+range = [5.0, 60.0]
 
 [params.rating_uncertainty_points]
 value = 5.0

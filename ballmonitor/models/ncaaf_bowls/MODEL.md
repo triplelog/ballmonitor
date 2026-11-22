@@ -11,7 +11,7 @@ CFP berth, and specific postseason bowl destinations?
 
 | file | contents | source |
 |---|---|---|
-| `teams.json` | 138 FBS teams: 2026 conference, record and conference record to date, rating (FPI), last season's bowl, legacy-Pac-12 flag, location/brand/APR | ESPN conferences, scoreboard, FPI; `team_profiles.csv` |
+| `teams.json` | 138 FBS teams: 2026 conference, `division` (ESPN's conference group children, e.g. Sun Belt groups 167 "Sun Belt - East" / 168 "- West"; `null` for the nine conferences without divisions), record and conference record to date, rating (FPI), last season's bowl, legacy-Pac-12 flag, location/brand/APR | ESPN conferences, scoreboard, FPI; `team_profiles.csv` |
 | `schedule.json` | **every** remaining regular-season game of every FBS team, incl. FCS opponents (`fcs_*`) and Army–Navy; conference title games excluded (simulated) | ESPN scoreboard, weeks 1–15 |
 | `results.json` | every completed game with scores (records in `teams.json` are built from these and match ESPN's team records exactly) | ESPN scoreboard |
 | `ratings_fpi.csv` | ESPN Football Power Index: expected margin vs an average FBS team, neutral field | ESPN `powerindex` |
@@ -35,7 +35,7 @@ they only break ties among 5–7 teams when there aren't enough 6-win teams.
 |---|---|---|
 | `team` | FBS team name or id from `data/teams.json` (case-insensitive). Unknown names raise an error. | `"Ohio State"`, `"boise_state"` |
 
-| `home_rating`, `away_rating`, `site` | single-game mode instead of `team`: two ratings and `site` = `home` or `neutral` (optional `home`, `away` names) → the `win_probability` formula alone. This is what `data/backtest.csv` scores. | `10.6`, `4.5`, `"home"` |
+| `home_rating`, `away_rating`, `site`, `kind` | single-game mode instead of `team`: two ratings, `site` = `home` or `neutral`, optional `kind` = `regular season` (default) / `title game` / `bowl` / `playoff` (a `bowl` uses `bowl_margin_sd`), optional `home`, `away` names → the `win_probability` formula alone. This is what `data/backtest.csv` scores. | `10.6`, `4.5`, `"home"`, `"bowl"` |
 
 Everything else (simulation count, seed, all weights) is a parameter — see
 `ballmonitor params ncaaf_bowls`.
@@ -53,10 +53,26 @@ Everything else (simulation count, seed, all weights) is a parameter — see
    (`sqrt(margin_sd² − 2·rating_uncertainty_points²)`), so a single game seen from the
    published ratings still has SD `margin_sd`. The committee, tie-breaks and bowl picks use
    the published rating.
+   **Non-playoff bowls** use the same formula with `margin_sd` replaced by **`bowl_margin_sd`**
+   (27.5; inside the simulation `simulated_game_sd` of it, 26.6): bowls are much harder to call
+   than other games (opt-outs, coaching changes, a month off; RESEARCH.md part 5). Playoff and
+   title games keep `margin_sd`.
 2. **FCS opponents** are all rated `fcs_opponent_rating` (default: the pooled FCS rating
    from the results-only fit, −21.7). Ratings come from `ratings_source` (`fpi` or `results`).
-3. **Conference title games** for all ten conferences (incl. the 2026 Pac-12): top two by conference win
-   %, conference wins, overall win %, then rating; two-way head-to-head tiebreak.
+3. **Conference title games** for all ten conferences (incl. the 2026 Pac-12): the top two of the
+   standings by conference win %, ties broken by `tiebreak.py` (the common FBS procedure; the
+   games already played, from `results.json`, count as well as the simulated ones):
+   - two teams: head-to-head, then record against common conference opponents, then the
+     published rating (standing in for the conferences' later steps: record against the next-best
+     common opponent, opponents' records, computer-ranking composites), then a coin flip;
+   - three or more: combined head-to-head among the tied teams if they all played each other
+     (if not, a team that beat all the others goes first and one that lost to all the others drops
+     out), then record against the opponents they all played, then the rating;
+   - whenever a step narrows the tie, the smaller group starts again from the first step (two-team
+     rules when two are left), and once the top team is set the rest start again.
+   **Divisions:** a conference whose teams are split into two divisions in `teams.json` (2026:
+   the Sun Belt, East and West) sends each division's winner instead, ranked by the same rules
+   within the division (cross-division opponents count as common opponents).
 4. **CFP resume score** (committee proxy):
    `resume_win_pct_weight·win% − resume_loss_penalty_scale·losses^resume_loss_penalty_exponent
    + resume_power_weight·rating + resume_conf_champ_bonus·[champ] + resume_p4_champ_bonus·[P4 champ]
@@ -96,10 +112,15 @@ Everything else (simulation count, seed, all weights) is a parameter — see
   "eye test" terms. It matches the committee's final top 12 better than the 0.4.3 weights
   (RESEARCH.md part 3) but did **not** give better playoff-field odds in the two 12-team
   seasons (part 4); ESPN's own published odds scored better than this model in both.
-- **Bowls and playoff games are predicted worse than regular-season games**: in
-  `data/backtest.csv` the favourite won 60% of 400 postseason games against 73% in the
-  regular season (opt-outs, coaching changes, a month off). "Wins it" figures for bowls are
-  therefore overconfident; no postseason discount is modelled yet.
+- **Bowls are close to coin flips.** In `data/backtest.csv` bowl favourites won 58% of 354
+  bowls against a predicted 65% (SD 14); a point of rating gap was worth 0.7 points of bowl
+  margin. `bowl_margin_sd` = 27.5 fixes the calibration (RESEARCH.md part 5) but cannot say
+  *which* bowls will be upsets: opt-outs are announced after the snapshot and are not modelled.
+  Playoff favourites won 74% of 46 games against a predicted 66%; too few games to act on, so
+  playoff games keep `margin_sd`. Title-game favourites won 62% of 94 against 68%, also left.
+- The tiebreak's last step is the published rating, not the conferences' own final steps
+  (opponents' records, computer-ranking composites, the CFP ranking); on the real 2016-2025
+  standings it picks 27 of 31 title-game pairs right (RESEARCH.md part 6).
 - Not validated: which bowl a team goes to, and seeding.
 - Bowl pick orders beyond the published tie-ins are approximations: within a conference,
   slots without a known `order` go by bowl prestige; several 2026 second slots
@@ -128,6 +149,7 @@ consistency check, not a test of predictive accuracy.
 
 - `fixed_ratings`: no rating uncertainty (every game independent, as in 0.4.3).
 - `committee_v043`: the hand-set committee weights of 0.4.3, no committee noise.
+- `no_bowl_discount`: bowls called like any other game (`bowl_margin_sd` = 14), as before 0.6.0.
 
 `ballmonitor run ncaaf_bowls --variant committee_v043 --example ohio_state` (`compare` stops
 when two runs list different bowls for the team; `compare --backtest` works). Also try
@@ -143,12 +165,12 @@ seasons (no gain shown) and bowl destinations not at all. Full tables: **RESEARC
 
 **`data/backtest.csv`** (`ballmonitor backtest ncaaf_bowls`): 6,699 games between two
 FBS teams, 10 seasons 2016-2025, week 3 on, with the FPI ESPN published before the game.
-Columns: `season`, `week`, `kind` (regular season / title game / postseason; reported as
-groups), `home`, `away`, `home_rating`, `away_rating` (FPI after the previous week), `site`
+Columns: `season`, `week`, `kind` (regular season / title game / bowl / playoff, from ESPN's
+game note; reported as groups), `home`, `away`, `home_rating`, `away_rating` (FPI after the previous week), `site`
 (`home` / `neutral`), `winner` (`home` / `away`). It scores the `win_probability` formula
-(single-game mode). Defaults (home field 2.5, SD 14): Brier 0.1806 per game (the CLI
-prints the two-outcome sum, twice that), log loss 0.5348, favourite won
-72.2%; well calibrated in every probability band.
+(single-game mode). Defaults (home field 2.5, SD 14, bowls 27.5): Brier 0.1801 per game (the
+CLI prints the two-outcome sum, twice that), log loss 0.5339, favourite won 72.2%; well
+calibrated in every probability band (0.1806 / 0.5348 with bowls at SD 14).
 
 | what was tested (RESEARCH.md part) | sample | result | decision |
 |---|---|---|---|
@@ -158,6 +180,9 @@ prints the two-outcome sum, twice that), log loss 0.5348, favourite won
 | rating uncertainty (2) | 12,992 team-dates, 9 seasons; walk-forward on 6 | squared miss of remaining wins was 1.39x the predicted spread, now ~1.0x; log score better in 6 of 6 test seasons | **promoted, 5 points** |
 | committee weights (3) | final top 25, 10 seasons; walk-forward on 7 | committee top-12 teams matched: 77 of 84 (0.4.3: 66), at least as good every season | **promoted** |
 | committee noise (3) | same; nested walk-forward on 5 | squared error of top-12 membership 8.0 → 7.4, top-4 10.0 → 6.5; better in 3 of 5 seasons | **promoted, 3.7** (modest) |
+| bowl margin SD (5) | 354 bowls, 10 seasons; walk-forward on 7 (243 bowls) | refit SD (19-27): log loss 0.692 → 0.676, Brier 0.249 → 0.242, better in 5 of 7 seasons; fit on all seasons 27.5 (in-sample) | **promoted, 27.5** |
+| playoff margin SD (5) | 46 games, 10 seasons; walk-forward on 7 (37 games) | best SD 8-9 (bottom of the range), log loss 0.510 → 0.479, better in 4 of 7; driven by a few games | not added |
+| title-game tiebreakers (6) | 31 division-less conference-seasons 2016-2025 (rule check, nothing fitted); 2024-2025 simulator runs | real title-game pair: 0.5.0 rule 23 of 31, `tiebreak.py` 27 of 31 (3+ team ties: 3 → 4 of 8); simulator: title-game spots squared error 81.0 → 75.7, better in 7 of 8 runs; champions 58.7 → 56.8 | **adopted** |
 | all of it inside the season simulator (4) | 2024 and 2025, 4 dates each | playoff field squared error 39.00 → 39.14 (rating uncertainty alone 38.79), log loss 134.6 → 130.8; conference champions 59.77 → 58.74; ESPN 37.26 / 58.04 | no end-to-end gain shown for the weights |
 
 **Older bowl-destination check** (before 0.5.0, not rerun). A standalone check exists: `python cli.py backtest 2023` (or
@@ -192,6 +217,31 @@ From `ballmonitor/models/ncaaf_bowls/`: `python cli.py team Texas`, `python cli.
 - Conference bowl agreements (Big Ten, SEC, ACC/Notre Dame, Big 12) — DRAFT, verify.
 
 ## Changelog
+
+- 0.6.1 — **Divisions.** `fetch.py` reads each conference's ESPN group children (3 extra
+  requests for the Sun Belt, 1 for each other conference) and writes `division` into
+  `teams.json`; the simulator sends each division's winner to the title game when a conference
+  has two divisions. Before, the Sun Belt's top two overall played, often two East teams. Effect
+  on the 2026-11-20 snapshot (20,000 seasons): Louisiana Tech (West) title game 97% → 100%,
+  James Madison (East) 38% → 55%, Georgia Southern (East) 59% → 45%, Louisiana (West) 6% → 0%;
+  Sun Belt titles: JMU 20% → 30%, Georgia Southern 28% → 23%, Louisiana Tech 50% → 48%. No other
+  conference has divisions; other teams move only by simulation noise.
+
+- 0.6.0 — **Bowl margin SD and real conference tiebreakers** (RESEARCH.md parts 5 and 6).
+  New `bowl_margin_sd` = 27.5 (was effectively `margin_sd` = 14): non-playoff bowls are near
+  coin flips; walk-forward over 7 seasons it lowers bowl log loss 0.692 → 0.676. Playoff games
+  keep 14 (46 games point the other way, too few to act on). New `tiebreak.py`: title-game spots
+  by conference win %, then head-to-head (combined among 3+ tied teams, round-robin or
+  sweep/swept rule), common opponents, published rating, coin flip; completed conference games
+  (`results.json`) now count in head-to-head (before, only simulated games did, and overall win %
+  came before head-to-head). `data/backtest.csv` `kind` splits postseason into bowl / playoff;
+  single-game mode takes `kind`. Variant `no_bowl_discount`. Effect on the 2026-11-20 snapshot
+  (20,000 seasons): title-game chances move by up to 47 points (Alabama 91% → 44%, Texas 8% →
+  44% in the SEC: Texas holds the common-opponent edge; Texas Tech 94% → 67%, BYU 6% → 33%;
+  Memphis 82% → 53%, North Texas 56% → 77%; Oregon 0% → 19%, Ohio State 1% → 14%, Indiana 99% →
+  82%); conference-title chances up to 20 points; playoff chances at most 6 points (Texas 89% →
+  83%, Tennessee 54% → 48%, Texas Tech 69% → 74%, Oregon 25% → 30%); bowl-win chances move
+  toward 50% (up to 12 points).
 
 - 0.5.0 (site) — "Who to root for this week" on every team's page and "This week's biggest games" on
   the main page (`site.py`). `BowlEngine.run(track_games=...)` tallies, for each of the next week's

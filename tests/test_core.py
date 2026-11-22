@@ -188,3 +188,34 @@ def test_page_source_slots_spans_and_shell(tmp_path):
     assert "NEW SIDE" in out and "/new.ico" in out and "old side" not in out   # index.html's shell wins
     with pytest.raises(ValueError, match="data-slot"):
         pages.shell(page, site_url="", path="/", title="T", description="D", slots={"nope": ""})
+
+
+def test_views_bracket_quick_filters_and_list_cells():
+    from ballmonitor.core import views as V
+    from ballmonitor.web import pages
+    t = V.table("t", "Games", [V.col("game", "Game", link="team", sep=" "), V.col("conf", "Conf")],
+                [{"game": ["A", "at", "B"], "conf": "SEC"}], quick_filters=("conf", ["SEC", "ACC"]))
+    assert t["quick_filters"] == {"key": "conf", "values": ["SEC", "ACC"]} and t["columns"][0]["sep"] == " "
+    bk = V.bracket("bk", "Bracket", [
+        V.round_("Semifinals", [V.match(V.team("A", 1, 0.7), V.team("B", 4, 0.3), where="bowl", winner=0),
+                                V.match(V.team("C", 2, 0.4), V.team("D", 3, 0.6), winner=1)]),
+        V.round_("Final", [V.match(V.team("A", 1, 0.55), V.team("D", 3, 0.45), winner=0)])], link="team", champion="A")
+    pk = V.picker("team", "Teams", "Team", [V.option(x, [V.bar(f"b{x}", "B", [{"label": "x", "value": 1.0}])]) for x in "ABC"])
+    ln = V.line("l", "Rank", [V.series("A", [(2020, 3), (2021, 1)])], y_reverse=True)
+    assert ln["y_reverse"] is True and "y_reverse" not in V.line("l2", "L", [V.series("A", [(0, 1)])])
+    p = V.clean(V.page("T", "S", "Running", [t, bk, ln, pk]))
+    assert V.check(p) == []
+    # problems are reported
+    bad = V.page("T", "S", "Running", [
+        V.table("t", "T", [V.col("a", "A")], [{"a": ["x", 1]}], quick_filters=("zzz", ["x"])),
+        V.bracket("bk", "B", [V.round_("R", [V.match(V.team("A", p=1.5))]), V.round_("S", [V.match(V.team("A"), winner=1)])],
+                  link="nope"),
+        V.bracket("bk2", "B", [])])
+    errs = " | ".join(V.check(bad))
+    for expect in ("list cell", "quick_filters key", "between 0 and 1", "winner must be", "not a top-level picker", "no rounds"):
+        assert expect in errs, expect
+    # the pre-written HTML: every team linked only when its option exists (D has none), the champion last
+    html = pages.bracket_html(p["views"][1], "m", {"team": {"a", "b", "c"}}, "m")
+    assert '<a href="/m/team/a/">A</a>' in html and ">D<" in html and "/m/team/d/" not in html
+    assert html.count('class="bk-round"') == 2 and '<p class="bk-champ"><span>Champion</span>' in html
+    assert 'data-src="ballmonitor/models/m/site.py#bk.rounds"' in html and '<li class="bk-team won">' in html

@@ -139,8 +139,13 @@ class PositionalRankingResult:
 class PositionalRankingEngine:
     """Evaluates and ranks recruiting classes by position, unit, and run/pass phase."""
 
-    def __init__(self, weights: Optional[Dict[str, PositionWeight]] = None):
+    def __init__(self, weights: Optional[Dict[str, PositionWeight]] = None, rank_decay: Optional[float] = None):
+        """Each side of the ball is summed like the class score: a team's offense (defense)
+        contributions are sorted best first and the k-th counts `rank_decay`^(k-1); its run/pass
+        parts share that weight. `rank_decay` None = use the ranking result's `unit_points`
+        (the model's unit_rank_decay through recruit_points), or undiscounted sums without it."""
         self.weights = dict(weights) if weights else dict(DEFAULT_POSITION_WEIGHTS)
+        self.rank_decay = rank_decay
 
     def evaluate(self, ranking_result: RankingResult) -> PositionalRankingResult:
         """
@@ -157,7 +162,8 @@ class PositionalRankingEngine:
                 commits_count=tr.commits_count,
             )
 
-        # Aggregate per recruit
+        # Collect each committed recruit's contributions per side of the ball
+        sides: Dict[str, Dict[str, list]] = {}
         for r in ranking_result.recruits:
             if not r.committed_team or r.committed_team == "0":
                 continue
@@ -179,21 +185,36 @@ class PositionalRankingEngine:
             t_stat.position_counts[pos] = t_stat.position_counts.get(pos, 0) + 1
             t_stat.position_scores[pos] = t_stat.position_scores.get(pos, 0.0) + score
 
-            # Offense allocation
+            team_sides = sides.setdefault(t_name, {"off": [], "def": []})
             if weight.offense_share > 0.0:
-                off_contrib = score * weight.offense_share
-                t_stat.offense_score += off_contrib
                 t_stat.offense_commits += weight.offense_share
-                t_stat.run_offense_score += off_contrib * weight.run_pct
-                t_stat.pass_offense_score += off_contrib * weight.pass_pct
-
-            # Defense allocation
+                team_sides["off"].append((score * weight.offense_share, weight.run_pct, weight.pass_pct))
             if weight.defense_share > 0.0:
-                def_contrib = score * weight.defense_share
-                t_stat.defense_score += def_contrib
                 t_stat.defense_commits += weight.defense_share
-                t_stat.run_defense_score += def_contrib * weight.run_pct
-                t_stat.pass_defense_score += def_contrib * weight.pass_pct
+                team_sides["def"].append((score * weight.defense_share, weight.run_pct, weight.pass_pct))
+
+        # Sum each side best first, the k-th contribution discounted by its rank
+        if self.rank_decay is not None:
+            decay = float(self.rank_decay)
+
+            def points(contrib: float, rank: int) -> float:
+                return contrib * decay ** (rank - 1)
+        else:
+            points = ranking_result.unit_points or (lambda contrib, rank: contrib)
+        for t_name, team_sides in sides.items():
+            t_stat = team_pos_map[t_name]
+            for side, items in team_sides.items():
+                items.sort(key=lambda c: c[0], reverse=True)
+                total = run = pas = 0.0
+                for k, (contrib, run_pct, pass_pct) in enumerate(items, 1):
+                    w = points(contrib, k)
+                    total += w
+                    run += w * run_pct
+                    pas += w * pass_pct
+                if side == "off":
+                    t_stat.offense_score, t_stat.run_offense_score, t_stat.pass_offense_score = total, run, pas
+                else:
+                    t_stat.defense_score, t_stat.run_defense_score, t_stat.pass_defense_score = total, run, pas
 
         teams_list = list(team_pos_map.values())
 

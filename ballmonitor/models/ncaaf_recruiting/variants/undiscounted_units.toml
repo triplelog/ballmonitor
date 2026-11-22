@@ -1,0 +1,6 @@
+# The unit scores before v0.8.0, kept for comparison
+[meta]
+description = "Offense / defense / run / pass unit scores as plain sums of the recruits' shares (no rank decay), as before v0.8.0. Vs opponent-adjusted points scored/allowed over seasons Y..Y+3, 0.008 rho worse than the default 0.95 in each of the 6 test classes 2017-2022 (RESEARCH_VARIANTS.md, unit scores)."
+
+[params]
+unit_rank_decay = 1.0

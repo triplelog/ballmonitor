@@ -70,9 +70,8 @@
 
   // ── scoring ──────────────────────────────────────────────────────────────
   const rates = () => state.puzzle.players.map((c) => c.rates);
-  function grade(order) {
-    const p = state.puzzle;
-    const { runs, pa } = C.expectedRuns(order, rates(), p.rules);
+  function grade(order, p = state.puzzle) {
+    const { runs, pa } = C.expectedRuns(order, p.players.map((c) => c.rates), p.rules);
     const best = p.best.runs, worst = p.worst.runs;
     const share = Math.max(0, Math.min(1, (runs - worst) / (best - worst)));
     // share of all orders that score less (interpolated between stored percentiles)
@@ -350,7 +349,7 @@
         el("tbody", {}, ...rows)),
       el("p", { class: "hint" }, "PA = expected plate appearances over a season from that slot: each step down the order loses about 17."),
       el("div", { class: "result-actions" },
-        el("button", { class: "ghost", onclick: playSeason }, "Play out a season"),
+        el("button", { class: "ghost", onclick: playSeason, title: "A random 162-game season with the order now in the lineup, next to the best order" }, "Play out a season with this order"),
         el("button", { class: "primary", onclick: share }, "Share")),
       el("div", { id: "season" }),
       p.top ? nearBest(p) : null,
@@ -397,12 +396,15 @@
         ...row.map(([runs, code], slot) => {
           const gap = p.best.runs - runs, lost = Math.round(gap * games);
           const top = runs === bestHere;
+          const words = top ? "the best order" : lost ? `${lost} run${lost === 1 ? "" : "s"} a season worse than the best`
+            : "less than 1 run a season worse than the best";
           return el("td", {
             class: "n cell" + (top ? " top" : "") + (slot === yours ? " yours" : ""),
-            style: top ? "" : `--heat:${(0.08 + 0.6 * gap / worstGap).toFixed(3)}`,
-            title: `${p.players[h].name} batting ${ordinal(slot + 1)}: the best order like that scores ${runs.toFixed(3)} a game` +
-              (lost ? ` (${lost} a season fewer than the best order)` : " (the best order)") + ". Click to try it.",
-            onclick: () => setWork(decode(code)) }, top ? "★" : lost ? `−${lost}` : "0");
+            style: top ? "" : `--heat:${(0.08 + 0.6 * gap / worstGap).toFixed(3)}`},
+            el("button", { type: "button", class: "cellbtn",
+              "aria-label": `${lastName(p.players[h])} batting ${ordinal(slot + 1)}: ${words}` + (slot === yours ? " (where you had him)" : "") + ". Try this order",
+              title: `${p.players[h].name} batting ${ordinal(slot + 1)}: the best order like that scores ${runs.toFixed(3)} a game (${words}). Click to try it.`,
+              onclick: () => setWork(decode(code)) }, top ? "★" : lost ? `−${lost}` : "0"));
         }));
     });
     return el("details", { class: "more" },
@@ -416,15 +418,17 @@
   function playSeason() {
     const p = state.puzzle;
     const seed = Number(p.date.replaceAll("-", "")) + Math.floor(Math.random() * 1e6);
-    const mine = C.simulateSeason(state.order, rates(), p.rules, seed);
+    const order = cur().slice();                 // the order now in the lineup (your played one unless you moved hitters)
+    const mine = C.simulateSeason(order, rates(), p.rules, seed);
     const best = C.simulateSeason(p.best.order, rates(), p.rules, seed + 1);
-    const g = grade(state.order);
+    const g = grade(order);
+    const who = sameOrder(order, state.order) ? "The order you played" : "The order in the lineup now (not the one you played)";
     $("#season").replaceChildren(
       el("h3", {}, "One season, played out"),
-      el("p", {}, `Your lineup scored ${mine.runs} runs in ${p.rules.game.season_games} games (expected ${Math.round(seasonRuns(g.runs))}). `,
+      el("p", {}, `${who} scored ${mine.runs} runs in ${p.rules.game.season_games} games (expected ${Math.round(seasonRuns(g.runs))}). `,
         `The best order scored ${best.runs} (expected ${Math.round(seasonRuns(p.best.runs))}).`),
       el("p", { class: "hint" }, mine.runs >= best.runs
-        ? "Your lineup won this season — one season is mostly luck, which is why the score uses expected runs. Press again for another season."
+        ? "This order won this season — one season is mostly luck, which is why the score uses expected runs. Press again for another season."
         : "One season swings by dozens of runs either way, which is why the score uses expected runs. Press again for another season."));
   }
 
@@ -488,24 +492,34 @@
   }
   async function showArchive() {
     const list = [...available()].reverse();
-    const items = [];
+    const saves = new Map(list.map((q) => [q.date, loadSaved(q.date)]));
+    // the months of played days, to score them (from what's already saved; nothing new is stored)
+    const need = new Set(list.filter((q) => saves.get(q.date)?.done).map((q) => q.date.slice(0, 7)));
+    await Promise.all([...need].map((m) => monthOf(`${m}-01`).catch(() => null)));
+    const items = [], played = [];
     for (const q of list) {
-      const saved = loadSaved(q.date);
+      const saved = saves.get(q.date);
       let s = "not played";
       if (saved?.done) {
         s = "played";
         const m = months[q.date.slice(0, 7)];
         const pz = m && m.find((x) => x.date === q.date);
-        if (pz) {
-          const runs = C.expectedRuns(saved.order, pz.players.map((c) => c.rates), pz.rules).runs;
-          s = pct(Math.max(0, (runs - pz.worst.runs) / (pz.best.runs - pz.worst.runs)));
+        if (pz && saved.order?.length === 9) {
+          const g = grade(saved.order, pz);
+          played.push(g);
+          s = g.perfect ? "100%" : pct(g.share);
         }
       } else if (saved) s = "in progress";
       const d = new Date(q.date + "T12:00:00");
       items.push(el("button", { class: saved?.done ? "done" : "", onclick: () => { closeModal(false); location.hash = q.date; } },
         `#${q.number} · ${d.toLocaleDateString(undefined, { month: "short", day: "numeric" })}`, el("span", { class: "s" }, s)));
     }
-    modal(el("h2", {}, "Archive"), el("div", { class: "arch" }, ...items));
+    const avg = (f) => played.reduce((a, g) => a + f(g), 0) / played.length;
+    const summary = played.length
+      ? `${played.length} played · average score ${pct(avg((g) => g.share))} (beats ${pct(avg((g) => g.below))} of orders) · best ${played.some((g) => g.perfect) ? "100%" : pct(Math.max(...played.map((g) => g.share)))}` +
+        (played.some((g) => g.perfect) ? ` · ${played.filter((g) => g.perfect).length} perfect` : "")
+      : "None played yet on this device.";
+    modal(el("h2", {}, "Archive"), el("p", { class: "arch-sum" }, summary), el("div", { class: "arch" }, ...items));
   }
 
   // ── boot ─────────────────────────────────────────────────────────────────

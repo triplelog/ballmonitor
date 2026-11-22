@@ -30,6 +30,13 @@ class SimConfig:
     # SD of one game's margin once both teams' rating errors are drawn. model.py sets it from
     # the config formula `simulated_game_sd`; None = derive it here the same way.
     simulated_game_sd: float | None = None
+    # Non-playoff bowls are much harder to call than other games (opt-outs, coaching changes,
+    # a month off): their single-game margin SD. The playoff keeps margin_sd.
+    bowl_margin_sd: float = 27.5
+    # The same for a simulated bowl (rating errors drawn) and its win probability; model.py
+    # sets both from config.toml, None = derive them here.
+    simulated_bowl_sd: float | None = None
+    bowl_win_prob_fn: Callable[[float, int], float] | None = None
 
     # --- CFP Selection Committee Proxy Weights ---
     # Committee ranks teams based on resume: record, power rating, conf championship, SOS
@@ -71,6 +78,12 @@ class SimConfig:
         if self.simulated_game_sd is not None:
             return self.simulated_game_sd
         return max(self.margin_sd ** 2 - 2.0 * self.rating_uncertainty_points ** 2, 1.0) ** 0.5
+
+    def bowl_game_sd(self) -> float:
+        """game_sd() for a non-playoff bowl: the same split of bowl_margin_sd."""
+        if self.simulated_bowl_sd is not None:
+            return self.simulated_bowl_sd
+        return max(self.bowl_margin_sd ** 2 - 2.0 * self.rating_uncertainty_points ** 2, 1.0) ** 0.5
 
 
 DEFAULT_CONFIG = SimConfig()

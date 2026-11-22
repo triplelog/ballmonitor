@@ -325,3 +325,51 @@ h1[tabindex="-1"]:focus { outline: none; }
 @media (max-width: 860px) {
   .jump-bar { flex-wrap: nowrap; overflow-x: auto; white-space: nowrap; padding-bottom: 0.3rem; scrollbar-width: thin; }
 }
+
+/* ---------- front-end additions (2026-11-21): quick filters, bracket, Try buttons, charts, sidebar ---------- */
+/* buttons that stay pressed (aria-pressed): a table's quick filters, a data table's "Try:" presets */
+.quick-filters { display: flex; flex-wrap: wrap; gap: 0.35rem; margin: 0 0 0.6rem; }
+.quick-filters .ss-btn { padding: 0.25rem 0.7rem; font-size: 0.88rem; }
+.quick-filters .ss-btn[aria-pressed="true"],
+.examples .ss-btn[aria-pressed="true"] { background: var(--ss-ink); border-color: var(--ss-ink); color: #fff; font-weight: 600; }
+
+/* a knockout bracket (views.bracket): one column per round, scrolling sideways when it doesn't fit */
+.bracket { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(11.5rem, 1fr); gap: 0.8rem;
+  overflow-x: auto; -webkit-overflow-scrolling: touch; padding: 0.6rem; background: var(--ss-panel);
+  border-radius: var(--ss-radius-sm); scrollbar-width: thin; }
+.bracket:focus-visible { outline: 2px solid var(--ss-ink); outline-offset: 2px; }
+.bk-round { display: flex; flex-direction: column; min-width: 0; }
+.bk-round-name { margin: 0 0 0.4rem; font-family: var(--ss-font-head); font-size: 0.78rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 0.04em; }
+.bk-games { flex: 1; display: flex; flex-direction: column; justify-content: space-around; gap: 0.6rem; }
+.bk-game { background: #fff; border: 1px solid var(--ss-rule); border-radius: var(--ss-radius-sm); padding: 0.25rem 0; }
+.bk-game ul { list-style: none; margin: 0; padding: 0; }
+.bk-team { display: grid; grid-template-columns: 1.6rem minmax(0, 1fr) auto; gap: 0.35rem; align-items: baseline;
+  padding: 0.2rem 0.55rem; font-size: 0.9rem; font-variant-numeric: tabular-nums; }
+.bk-team + .bk-team { border-top: 1px solid var(--ss-rule); }
+.bk-seed { color: var(--ss-muted); font-size: 0.8rem; text-align: right; }
+.bk-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.bk-team.won { font-weight: 700; }
+.bk-p { font-size: 0.85rem; }
+.bk-where { margin: 0.1rem 0.55rem 0; font-size: 0.75rem; color: var(--ss-muted); }
+.bk-games:has(.bk-champ) { justify-content: center; }
+.bk-champ { margin: 0; padding: 0.45rem 0.6rem; background: var(--ss-panel-strong); border: 1px solid var(--ss-ink);
+  border-radius: var(--ss-radius-sm); font-family: var(--ss-font-head); font-weight: 700; font-size: 1.05rem; }
+.bk-champ span { display: block; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.04em; }
+
+/* the charts page: a first-load note, and Reset / Download under the chart */
+.chart-first { margin: 0 0 0.6rem; padding: 0.45rem 0.8rem; background: var(--ss-panel-strong);
+  border-radius: var(--ss-radius-sm); font-weight: 600; }
+.chart-ask { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.9rem; padding: 1rem;
+  background: var(--ss-panel); border-radius: var(--ss-radius-sm); }
+.chart-tools { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.6rem; }
+.chart-tools .ss-btn { padding: 0.3rem 0.8rem; font-size: 0.88rem; }
+.chart-tools a[aria-disabled="true"] { opacity: 0.5; pointer-events: none; }
+
+/* sidebar on a laptop screen (1280x800): less space between and inside the menu links (several
+   wrap to two lines), so the menu and the description cell below it fit without scrolling
+   (828px of sidebar in a 760px column before, 746px after) */
+@media (min-width: 861px) {
+  .ss-nav a { padding-top: 0.22rem; padding-bottom: 0.22rem; line-height: 1.3; }
+  .ss-navcell { padding-bottom: 0.9rem; }
+}

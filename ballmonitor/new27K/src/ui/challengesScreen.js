@@ -84,9 +84,10 @@ export function renderChallenges(app, args = {}) {
     return () => app.root.removeEventListener('click', onClick);
 }
 
-// One game is saved at a time: ask before a new one replaces it.
+// One Quick Game or challenge is saved at a time (seasons and careers have
+// their own slots): ask before a new one replaces it.
 export function confirmReplace(app) {
-    return !app.savedGame() || confirm('You have a game in progress. Starting a new one replaces it. Go ahead?');
+    return !app.savedGame('quick') || confirm('You have a Quick Game or challenge in progress. Starting a new one replaces it. Go ahead?');
 }
 
 export function playChallenge(app, id) {

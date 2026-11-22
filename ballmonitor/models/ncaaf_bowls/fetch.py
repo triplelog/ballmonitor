@@ -3,7 +3,8 @@
     ballmonitor fetch ncaaf_bowls [--offline]
 
 Writes (all in data/):
-  teams.json          every FBS team: ESPN conference, record to date, conference record,
+  teams.json          every FBS team: ESPN conference and division (null when the conference
+                      has none; ESPN's conference group children), record to date, conference record,
                       FPI rating, last season's bowl, location/brand/APR carried from
                       data/team_profiles.csv
   schedule.json       every remaining regular-season game involving an FBS team (FCS
@@ -100,6 +101,21 @@ def _https(ref: str) -> str:
     return ref.replace("http://", "https://")
 
 
+def divisions(f: Fetcher, season: int, gid: int) -> dict[str, str]:
+    """{ESPN team id: division} for one conference: its ESPN group's children ("Sun Belt - East"
+    -> "East"). Conferences without divisions have no children -> {}. 1 request, +2 per division."""
+    out: dict[str, str] = {}
+    kids = f.get(f"{CORE}/seasons/{season}/types/2/groups/{gid}/children?limit=50", f"conf_{gid}_divisions")
+    for item in kids.get("items", []):
+        did = int(_https(item["$ref"]).split("/groups/")[1].split("?")[0])
+        name = f.get(f"{CORE}/seasons/{season}/types/2/groups/{did}", f"division_{did}")["name"]
+        name = name.split(" - ", 1)[-1].strip()
+        members = f.get(f"{CORE}/seasons/{season}/types/2/groups/{did}/teams?limit=50", f"division_{did}_teams")
+        for m in members["items"]:
+            out[_https(m["$ref"]).split("/teams/")[1].split("?")[0]] = name
+    return out
+
+
 def fetch(model_dir: Path, offline: bool = False) -> list[str]:
     data_dir = Path(model_dir) / "data"
     meta_in = json.loads((data_dir / "meta.json").read_text()) if (data_dir / "meta.json").exists() else {}
@@ -109,6 +125,7 @@ def fetch(model_dir: Path, offline: bool = False) -> list[str]:
 
     # 1. Conferences and members (this season's alignment)
     conf_of: dict[str, str] = {}
+    division_of: dict[str, str] = {}
     confs = f.get(f"{CORE}/seasons/{season}/types/2/groups/{FBS_GROUP}/children?limit=50", "conferences")
     for item in confs["items"]:
         gid = int(_https(item["$ref"]).split("/groups/")[1].split("?")[0])
@@ -117,7 +134,9 @@ def fetch(model_dir: Path, offline: bool = False) -> list[str]:
         members = f.get(f"{CORE}/seasons/{season}/types/2/groups/{gid}/teams?limit=50", f"conf_{gid}_teams")
         for m in members["items"]:
             conf_of[_https(m["$ref"]).split("/teams/")[1].split("?")[0]] = CONFERENCES[gid]
-    log.append(f"{len(conf_of)} FBS teams in {len(confs['items'])} conferences ({season})")
+        division_of.update(divisions(f, season, gid))
+    log.append(f"{len(conf_of)} FBS teams in {len(confs['items'])} conferences ({season}), "
+               f"{len(set(division_of.values()))} division names for {len(division_of)} teams")
 
     # 2. Team names
     listing = f.get(f"{SITE}/teams?groups={FBS_GROUP}&limit=300", "teams")
@@ -243,7 +262,7 @@ def fetch(model_dir: Path, offline: bool = False) -> list[str]:
             prof = {}
         teams.append({
             "id": team_id, "name": prof.get("name") or espn_name[tid], "espn_id": tid,
-            "conf": conf_of[tid], "rating": fpi[team_id],
+            "conf": conf_of[tid], "division": division_of.get(tid), "rating": fpi[team_id],
             "apr": int(prof["apr"]) if prof.get("apr") else 980,
             "brand": int(prof["brand"]) if prof.get("brand") else 4,
             "city": prof.get("city", ""), "state": prof.get("state", ""),

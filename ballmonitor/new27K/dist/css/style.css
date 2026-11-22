@@ -90,11 +90,16 @@ h3 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.06em; color: 
 .page { max-width: 980px; margin: 24px auto; padding: 0 16px; }
 .page-head { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
 .page-head h1 { margin: 0; flex: 1; }
-.form-grid { display: grid; grid-template-columns: 160px 1fr; gap: 12px 16px; align-items: center; }
+/* The label column's width can be set per form with --label-w. */
+.form-grid { display: grid; grid-template-columns: var(--label-w, 160px) minmax(0, 1fr); gap: 12px 16px; align-items: center; }
 .form-grid .hint { grid-column: 2; color: var(--muted); font-size: 12px; margin-top: -8px; }
 .row-actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 16px; }
-.cols-2 { display: grid; grid-template-columns: 3fr 2fr; gap: 16px; }
-@media (max-width: 860px) { .cols-2 { grid-template-columns: 1fr; } }
+.cols-2 { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: 16px; }
+/* The lineup card: the order and bench tables get the room, the starters a narrow column. */
+.lineup-page { max-width: 1100px; }
+.lineup-cols { grid-template-columns: minmax(0, 1fr) minmax(220px, 300px); }
+@media (max-width: 1100px) { .lineup-cols { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 860px) { .cols-2 { grid-template-columns: minmax(0, 1fr); } }
 .cols-2 > *, .lab-grid > *, .lab-main > *, .lab-cols > *, .c-grid > * { min-width: 0; }
 
 table.grid { width: 100%; border-collapse: collapse; }
@@ -543,7 +548,7 @@ select { max-width: 100%; }
     .menu { margin: 4vh auto; }
     .menu .logo { font-size: 72px; }
 
-    .form-grid { grid-template-columns: 1fr; gap: 4px; }
+    .form-grid { grid-template-columns: minmax(0, 1fr); gap: 4px; }
     .form-grid > label:not(.toggle) { margin-top: 10px; font-weight: 600; font-size: 13px; color: var(--muted); }
     .form-grid .hint { grid-column: 1; margin-top: 2px; }
     .form-grid .toggle { font-size: 14px; }
@@ -554,9 +559,9 @@ select { max-width: 100%; }
     table.grid { display: block; overflow-x: auto; }
     table.grid th, table.grid td { padding: 5px 4px; }
     table.grid .opt { display: none; }
-    table.grid td.pname { white-space: normal; min-width: 110px; }
+    table.grid td.pname { white-space: normal; min-width: 100px; }
     table.grid td.order { white-space: nowrap; }
-    table.grid td select { max-width: 110px; }
+    table.grid td select { max-width: 88px; }
 
     /* The game: score bar, field, then the pitch picker right under it. */
     .game { display: flex; flex-direction: column; gap: 8px; padding: 10px 6px; }

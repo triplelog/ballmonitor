@@ -64,3 +64,30 @@ def test_jump_bar_and_columns_menu_and_back():
     assert re.search(r'"jump-bar".*?viewSrc\(`\$\{v\.id\}\.title`\)', SITE_JS, re.S)   # data-src on each link
     assert 'details.col-chooser[open]' in SITE_JS and '"Escape"' in SITE_JS
     assert "function samePage(" in SITE_JS and "HOME_DESCRIPTION" not in SITE_JS
+
+
+def test_bracket_quick_filters_links_and_try_buttons():
+    # the bracket is drawn with the same markup web/pages.py writes (bracket_html)
+    body = SITE_JS[SITE_JS.index("function renderBracket("):]
+    for cls in ('"bracket"', '"bk-round"', '"bk-round-name"', '"bk-games"', '"bk-game"', '"bk-where"', '"bk-champ"',
+                '"bk-seed"', '"bk-name"', '"bk-p"', 'bk-team${won ? " won" : ""}'):
+        assert cls in body[:2500], cls
+    assert 'case "bracket": return viewShell(v, renderBracket(v)' in SITE_JS
+    # links only go to picker options that exist; list cells link each part
+    assert "function optionHref(" in SITE_JS and "current.slugs" in SITE_JS and "function linkedParts(" in SITE_JS
+    # quick filters and Try presets are toggle buttons
+    assert '"quick-filters"' in SITE_JS and SITE_JS.count('"aria-pressed"') >= 2
+    assert "v.y_reverse" in SITE_JS
+    # charts: reset, download and the first-load note, done from outside pyslots' form
+    for text in ("Reset formulas", "Download PNG", "Loading Python for your first chart"):
+        assert text in SITE_JS, text
+
+
+def test_charts_wait_for_the_visitor_before_loading_python():
+    # pyslots' embed runs its first chart as soon as it is mounted (even with autoRun: false), so the
+    # charts page mounts it only after "Draw the chart", or at once for a visitor who drew one before
+    body = SITE_JS[SITE_JS.index("async function renderCharts("):]
+    body = body[:body.index("\n}\n")]
+    assert '"Draw the chart"' in body and "drewBefore()" in body and "if (atOnce) await draw();" in body
+    assert body.index("loadPyslots()") > body.index("const draw = async")   # the embed loads only inside draw()
+    assert body.count("loadPyslots()") == 1

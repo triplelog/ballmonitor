@@ -14,6 +14,10 @@ Parts (each saves data/research/<part>.json):
              and resume_noise_points
   season     the season simulator itself on 2024 and 2025 from four dates each: playoff field
              and conference champions, old defaults vs. new vs. ESPN's own numbers
+  postseason bowls and playoff games on their own: is one game's SD right there? fits
+             bowl_margin_sd (and checks a playoff SD)
+  tiebreak   conference title-game spots: the tiebreak rules (tiebreak.py) against the real
+             title games, and old vs. new rules inside the simulator on 2024 and 2025
 
 Every fitted number is tested walk-forward: fitted on the seasons before the test season only.
 Needs numpy and scipy (`pip install -e '.[data]'`).
@@ -26,6 +30,7 @@ import csv
 import json
 import math
 import random
+import re
 import sys
 import time
 from pathlib import Path
@@ -37,7 +42,7 @@ from scipy.special import ndtr
 MODEL_DIR = Path(__file__).resolve().parent
 HIST = MODEL_DIR / "data" / "historical"
 OUT = MODEL_DIR / "data" / "research"
-PARTS = ("games", "wins", "committee", "season")
+PARTS = ("games", "wins", "committee", "season", "postseason", "tiebreak")
 
 SEASONS = list(range(2016, 2026))
 FIRST_TEST = 2019            # walk-forward tests start here (three seasons to fit on)
@@ -207,6 +212,18 @@ def _blend(d: Data) -> dict:
     return out
 
 
+# ESPN's notes name a playoff game "CFP Semifinal", "CFB Semifinal" (2017 Rose Bowl),
+# "CFP National Championship" or "College Football Playoff ..."; every other postseason game is a bowl.
+PLAYOFF_NOTE = re.compile(r"CFP|CFB Semifinal|College Football Playoff")
+KINDS = ("regular season", "title game", "bowl", "playoff")
+
+
+def game_kind(g: dict) -> str:
+    if g["season_type"] == 3:
+        return "playoff" if PLAYOFF_NOTE.search(g["note"]) else "bowl"
+    return "title game" if g["title_game"] else "regular season"
+
+
 def _write_backtest_csv(d: Data, a: np.ndarray) -> None:
     path = MODEL_DIR / "data" / "backtest.csv"
     with path.open("w", newline="") as fh:
@@ -216,7 +233,7 @@ def _write_backtest_csv(d: Data, a: np.ndarray) -> None:
             g = d.games[int(row[5])]
             wk = d.game_week(g)
             f = d.snap[(g["season"], wk - 1)]
-            kind = "postseason" if g["season_type"] == 3 else ("title game" if g["title_game"] else "regular season")
+            kind = game_kind(g)
             w.writerow([g["season"], wk, kind, g["home"], g["away"], f[g["home_id"]], f[g["away_id"]],
                         "neutral" if g["neutral"] else "home", "home" if row[4] > 0 else "away"])
 
@@ -590,6 +607,205 @@ def part_season(d: Data) -> dict:
         print(f"  {s} after week {w}: field brier old {row['old']['field']['brier_sum']:.2f} "
               f"new {row['new']['field']['brier_sum']:.2f} espn {row['espn']['field']['brier_sum']:.2f}")
     return {"sims": SEASON_SIMS, "rows": rows}
+
+
+# ----------------------------------------------------------------------------- part: postseason
+
+POST_SD_GRID = np.arange(8.0, 60.01, 0.5)
+SHRINK_GRID = np.arange(0.0, 1.0001, 0.02)
+
+
+def _post_metrics(a: np.ndarray, sd: float, shrink: float = 1.0) -> dict:
+    """game_metrics at home field 2.5 (the default) with SD `sd`, the probability optionally
+    pulled toward 50% (p -> 0.5 + shrink * (p - 0.5))."""
+    p = ndtr((a[:, 2] + OLD["home_field_points"] * a[:, 3]) / sd)
+    p = np.clip(0.5 + shrink * (p - 0.5), 1e-9, 1 - 1e-9)
+    y = a[:, 4] > 0
+    return {"n": int(len(a)), "brier": float(np.mean((p - y) ** 2)),
+            "log_loss": float(-np.mean(np.where(y, np.log(p), np.log(1 - p)))),
+            "accuracy": float(np.mean((p > 0.5) == y))}
+
+
+def _best_sd(a: np.ndarray) -> float:
+    return float(min(POST_SD_GRID, key=lambda s: _post_metrics(a, s)["log_loss"]))
+
+
+def _calibration(a: np.ndarray, sd: float) -> list[dict]:
+    p = ndtr((a[:, 2] + OLD["home_field_points"] * a[:, 3]) / sd)
+    fav = np.maximum(p, 1 - p)
+    won = np.where(p >= 0.5, a[:, 4] > 0, a[:, 4] < 0)
+    return [{"lo": lo, "hi": hi, "n": int(m.sum()), "predicted": float(fav[m].mean()) if m.any() else None,
+             "actual": float(won[m].mean()) if m.any() else None}
+            for lo, hi in ((.5, .6), (.6, .7), (.7, .8), (.8, 1.001)) for m in [(fav >= lo) & (fav < hi)]]
+
+
+def part_postseason(d: Data) -> dict:
+    """Bowls and playoff games are judged apart from the regular season: the favourite's
+    predicted vs actual win rate, the SD that fits them, and that SD walk-forward."""
+    a = d.game_table(1)
+    kind = np.array([game_kind(d.games[int(i)]) for i in a[:, 5]])
+    sd0 = OLD["margin_sd"]
+    res: dict = {"by_kind": [], "walk_forward": {}}
+    for k in KINDS:
+        t = a[kind == k]
+        p = ndtr((t[:, 2] + OLD["home_field_points"] * t[:, 3]) / sd0)
+        res["by_kind"].append({"kind": k, "seasons": len(set(t[:, 0])), **_post_metrics(t, sd0),
+                               "predicted_fav": float(np.maximum(p, 1 - p).mean()), "best_sd": _best_sd(t),
+                               "margin_slope": float(np.polyfit(t[:, 2] + OLD["home_field_points"] * t[:, 3], t[:, 4], 1)[0])})
+    groups = {"bowl": ("bowl",), "playoff": ("playoff",), "bowl + playoff": ("bowl", "playoff")}
+    for name, ks in groups.items():
+        t = a[np.isin(kind, ks)]
+        rows = []
+        for s in SEASONS:
+            if s < FIRST_TEST:
+                continue
+            train, test = t[t[:, 0] < s], t[t[:, 0] == s]
+            sd = _best_sd(train)
+            k = float(min(SHRINK_GRID, key=lambda x: _post_metrics(train, sd0, x)["log_loss"]))
+            rows.append({"season": s, "n": int(len(test)), "fit_sd": sd, "fit_shrink": k,
+                         "default": _post_metrics(test, sd0), "sd": _post_metrics(test, sd),
+                         "shrink": _post_metrics(test, sd0, k)})
+        tot = lambda key, m: sum(r[key][m] * r["n"] for r in rows) / sum(r["n"] for r in rows)  # noqa: E731
+        res["walk_forward"][name] = {
+            "rows": rows, "fit_all": _best_sd(t), "n_all": int(len(t)),
+            "total": {key: {m: tot(key, m) for m in ("brier", "log_loss")} for key in ("default", "sd", "shrink")},
+            "better_sd": sum(r["sd"]["log_loss"] < r["default"]["log_loss"] for r in rows),
+            "better_shrink": sum(r["shrink"]["log_loss"] < r["default"]["log_loss"] for r in rows)}
+    bowls = a[kind == "bowl"]
+    fit = res["walk_forward"]["bowl"]["fit_all"]
+    res["bowl_curve"] = [{"sd": sd, **_post_metrics(bowls, sd),
+                          "early": _post_metrics(bowls[bowls[:, 0] <= 2020], sd)["log_loss"],
+                          "late": _post_metrics(bowls[bowls[:, 0] > 2020], sd)["log_loss"]}
+                         for sd in (14.0, 18.0, 22.0, 25.0, 28.0, 32.0, 40.0)]
+    res["calibration_bowl"] = {"default": _calibration(bowls, sd0), "fit": _calibration(bowls, fit)}
+    return res
+
+
+# ----------------------------------------------------------------------------- part: tiebreak
+
+# Conference-seasons without divisions (the title game is the top two of one table), 2016-2025.
+# From the conferences' announcements: Big 12 since its title game returned (2017), the AAC from
+# 2021, Pac-12 2022-2023, ACC, MWC and CUSA from 2023, MAC, SEC and Big Ten from 2024. The Sun
+# Belt kept divisions; 2020 (shortened, rescheduled) is left out.
+NO_DIVISIONS = {"Big 12": range(2017, 2026), "AAC": range(2021, 2026), "Pac-12": (2022, 2023),
+                "ACC": range(2023, 2026), "MWC": range(2023, 2026), "CUSA": range(2023, 2026),
+                "MAC": (2024, 2025), "SEC": (2024, 2025), "Big Ten": (2024, 2025)}
+TIEBREAK_SIMS = 3000
+
+
+def _old_title_pair(members: list[str], cw: dict, cl: dict, w: dict, lo: dict, beat: dict,
+                    rating: dict, rng: random.Random | None = None) -> list[str]:
+    """The 0.5.0 rule: sort by conference win %, conference wins, overall win %, rating (+ a
+    0.01-point jitter); then swap the top two if they are level and #2 beat #1."""
+    jitter = (lambda: rng.uniform(-0.01, 0.01)) if rng else (lambda: 0.0)
+    key = {t: (cw[t] / max(cw[t] + cl[t], 1), cw[t], w[t] / max(w[t] + lo[t], 1), rating.get(t, 0.0) + jitter())
+           for t in members}
+    a, b = sorted(members, key=key.get, reverse=True)[:2]
+    if key[a][0] == key[b][0] and beat.get((b, a), 0) > beat.get((a, b), 0):
+        a, b = b, a
+    return [a, b]
+
+
+def _final_standings(d: Data) -> list[dict]:
+    """Every division-less conference-season: the real title-game pair against the old and new
+    rules applied to the final regular-season standings (rating: FPI before title week)."""
+    from ballmonitor.models.ncaaf_bowls.tiebreak import rank_standings
+    out = []
+    for s in SEASONS:
+        for conf, years in NO_DIVISIONS.items():
+            if s not in years:
+                continue
+            tg = [g for g in d.games if g["season"] == s and g["title_game"] and g["home_conf"] == conf]
+            if len(tg) != 1:
+                continue
+            tg = tg[0]
+            rating = d.snap[(s, tg["week"] - 1)]
+            w, lo, cw, cl = (collections.Counter() for _ in range(4))
+            beat: collections.Counter = collections.Counter()
+            for g in d.games:
+                if g["season"] != s or g["season_type"] != 2 or g["title_game"] or g["home_score"] == g["away_score"]:
+                    continue
+                hw = g["home_score"] > g["away_score"]
+                win, lose = (g["home_id"], g["away_id"]) if hw else (g["away_id"], g["home_id"])
+                wc, lc = (g["home_conf"], g["away_conf"]) if hw else (g["away_conf"], g["home_conf"])
+                w[win] += wc == conf
+                lo[lose] += lc == conf
+                if g["conf_game"] and wc == lc == conf:
+                    cw[win] += 1
+                    cl[lose] += 1
+                    beat[(win, lose)] += 1
+            members = sorted(t for t in set(cw) | set(cl))
+            pct = {t: cw[t] / (cw[t] + cl[t]) for t in members}
+            new = rank_standings(members, pct, beat, rating, places=2)
+            old = _old_title_pair(members, cw, cl, w, lo, beat, rating)
+            first, second = sorted(pct.values(), reverse=True)[:2]
+            tied = max(sum(v == first for v in pct.values()), sum(v == second for v in pct.values()))
+            actual = {tg["home_id"], tg["away_id"]}
+            out.append({"season": s, "conf": conf, "actual": sorted(d.name[t] for t in actual),
+                        "old": [d.name[t] for t in old], "new": [d.name[t] for t in new],
+                        "old_right": set(old) == actual, "new_right": set(new) == actual, "tied": tied})
+    return out
+
+
+def _season_results(d: Data, s: int, w: int) -> list[dict]:
+    """Completed regular-season games through week w, in results.json form (for the tiebreakers)."""
+    ref = lambda t: "notre_dame" if t == NOTRE_DAME else t  # noqa: E731
+    return [{"home": ref(g["home_id"]), "away": ref(g["away_id"]), "conf": g["conf_game"],
+             "home_score": g["home_score"], "away_score": g["away_score"]}
+            for g in d.games if g["season"] == s and g["season_type"] == 2 and not g["title_game"] and g["week"] <= w]
+
+
+def _simulate_titles(teams, schedule, results, values: dict, sims: int, old: bool) -> tuple[dict, dict]:
+    """P(plays in the title game), P(conference champion) per team; `old` = the 0.5.0 rule."""
+    from ballmonitor.models.ncaaf_bowls.config import SimConfig
+    from ballmonitor.models.ncaaf_bowls.simulator import CONFERENCES_WITH_TITLE_GAME, SeasonSimulator
+
+    class OldRule(SeasonSimulator):
+        def _simulate_conference_championships(self, states, beat, rng, scenario=None):
+            for conf in CONFERENCES_WITH_TITLE_GAME:
+                ms = [x for x in states.values() if x.conf == conf]
+                if len(ms) < 2:
+                    continue
+                ids = [x.id for x in ms]
+                pair = _old_title_pair(ids, {x.id: x.conf_wins for x in ms}, {x.id: x.conf_losses for x in ms},
+                                       {x.id: x.wins for x in ms}, {x.id: x.losses for x in ms}, beat,
+                                       {x.id: x.seen_rating for x in ms}, rng)
+                a, b = states[pair[0]], states[pair[1]]
+                champ, runner = (a, b) if rng.random() < self._win_prob(a.rating, b.rating, 0) else (b, a)
+                champ.wins += 1
+                champ.is_conf_champ = True
+                runner.losses += 1
+                runner.conf_runner_up = True
+
+    names = set(SimConfig.__dataclass_fields__)
+    cfg = SimConfig(**{k: v for k, v in values.items() if k in names and k not in ("simulations", "random_seed")})
+    sim = (OldRule if old else SeasonSimulator)(teams, schedule, cfg, results=results)
+    rng = random.Random(7)
+    plays: dict = collections.Counter()
+    champ: dict = collections.Counter()
+    for _ in range(sims):
+        st = sim.simulate_season(rng)
+        plays.update(t for t, x in st.items() if x.is_conf_champ or x.conf_runner_up)
+        champ.update(t for t, x in st.items() if x.is_conf_champ)
+    return ({t.id: plays[t.id] / sims for t in teams}, {t.id: champ[t.id] / sims for t in teams})
+
+
+def part_tiebreak(d: Data) -> dict:
+    res: dict = {"final": _final_standings(d), "sims": TIEBREAK_SIMS, "runs": []}
+    values = _config_weights()
+    for s, w in SEASON_TESTS:
+        teams, schedule, _, champs = _season_inputs(d, s, w)
+        results = _season_results(d, s, w)
+        fix = lambda t: "notre_dame" if t == NOTRE_DAME else t  # noqa: E731
+        title = {fix(t) for g in d.games if g["season"] == s and g["title_game"] for t in (g["home_id"], g["away_id"])}
+        row = {"season": s, "after_week": w}
+        for label, old in (("old", True), ("new", False)):
+            p_title, p_champ = _simulate_titles(teams, schedule, results, values, TIEBREAK_SIMS, old)
+            row[label] = {"title_game": _prob_scores(p_title, title), "champ": _prob_scores(p_champ, champs)}
+        res["runs"].append(row)
+        print(f"  {s} after week {w}: title-game brier old {row['old']['title_game']['brier_sum']:.2f} "
+              f"new {row['new']['title_game']['brier_sum']:.2f}")
+    return res
 
 
 # ----------------------------------------------------------------------------- driver
