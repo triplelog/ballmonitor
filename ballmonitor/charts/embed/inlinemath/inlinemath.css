@@ -1,5 +1,5 @@
 /*
- * Inline Math stylesheet. Everything is under .mv; colours are left to the page.
+ * Inline Math stylesheet. Everything is under .mv; colors are left to the page.
  *
  * The numbers marked "metric" must match the constants at the top of
  * src/layout.js (line-height 1, bar 0.06em, gap 0.1em); everything else can
@@ -10,7 +10,7 @@
  *   .mv-var .mv-num .mv-word   variables, numbers, function names
  *   .mv-op-frac .mv-op-pow …   a kind of operation
  *   .mv-hl                     the class highlight() adds
- *   --mv-hl                    highlight colour
+ *   --mv-hl                    highlight color
  */
 
 .mv {
@@ -31,10 +31,11 @@
 
 /* ---- letters and signs -------------------------------------------------- */
 .mv-var { font-style: italic; padding-right: 0.03em; }
-.mv-num, .mv-word, .mv-name, .mv-ord, .mv-text, .mv-d { font-style: normal; }
+.mv-num, .mv-word, .mv-name, .mv-ord, .mv-text, .mv-d, .mv-conj { font-style: normal; }
 .mv-prime { margin-left: 0.04em; }
 .mv-bin { margin: 0 0.22em; }
 .mv-rel { margin: 0 0.28em; }
+.mv-conj { margin: 0 0.6em; }   /* x = 2 or x = 3 */
 .mv-punct { margin-right: 0.17em; }
 .mv-sign { margin-right: 0.04em; }
 .mv-times { display: inline-block; width: 0.06em; }
@@ -69,8 +70,10 @@
 
 /* ---- radicals (metric: border and padding-top) ----------------------------- */
 .mv-sqrt { display: inline-block; white-space: nowrap; }
-.mv-hook { display: inline-block; overflow: visible; margin-left: 0.05em; }
-.mv-radicand { display: inline-block; border-top: 0.06em solid currentColor; padding: 0.1em 0.1em 0 0.06em; }
+.mv-radicand { display: inline-block; position: relative; border-top: 0.06em solid currentColor; padding: 0.1em 0.1em 0 0.06em; }
+/* the hook, in the radicand's left margin (layout.js sets its width and that margin): from the bar's center
+   (just below the middle of the 0.06em border above the box) to the bottom of what it holds, so the tip always meets the bar */
+.mv-hook { position: absolute; top: -0.02em; height: calc(100% + 0.02em); overflow: visible; }   /* a hair below the center: never above the bar */
 .mv-rootindex { display: inline-block; margin: 0 -0.32em 0 0.12em; }
 
 /* ---- delimiters: drawn at the full height of what they enclose -------------- */
@@ -104,16 +107,25 @@ span.mv-delim { width: 0.16em; border: 0 solid currentColor; box-sizing: border-
 
 /* ---- decorations: \boxed \cancel \overline \vec … --------------------------- */
 .mv-boxed { display: inline-block; border: 0.06em solid currentColor; padding: 0.16em 0.2em; }
-.mv-over { display: inline-block; border-top: 0.06em solid currentColor; padding-top: 0.08em; }
+.mv-over { display: inline-block; position: relative; padding-top: 0.14em; }
+.mv-over::before { content: ''; position: absolute; left: 0; right: 0; top: 0.21em; border-top: 0.06em solid currentColor; }   /* metric */
+.mv-over-low::before { top: 0.48em; }
 .mv-underline { display: inline-block; border-bottom: 0.06em solid currentColor; padding-bottom: 0.06em; }
 .mv-cancel { display: inline-block; position: relative; }
 .mv-cancel-line { position: absolute; left: 0; top: 0; width: 100%; height: 100%; overflow: visible; pointer-events: none; }
 .mv-accent { display: inline-block; position: relative; padding-top: 0.3em; }
-.mv-accent-mark { position: absolute; top: 0; left: 0; right: 0; text-align: center; font-size: 0.7em; line-height: 0.6; }
+.mv-accent-mark { position: absolute; top: -0.27em; left: 0; right: 0; text-align: center; font-size: 0.7em; line-height: 0.6; }   /* metric: measured over F, h, A */
+/* ˆ ˜ ˙ ¨ are spacing marks that sit high in their em: full size, pulled down onto the letter */
+.mv-accent-hat, .mv-accent-widehat, .mv-accent-tilde, .mv-accent-dot, .mv-accent-ddot { font-size: 1em; line-height: 1; top: 0.02em; }
+/* over an italic letter the mark leans with it, right of the box's center */
+.mv-accent:has(> .mv-var) > .mv-accent-mark { transform: translateX(0.1em); }
+/* a letter with no ascender (x, u, α; layout.js adds -low): the mark comes down to its top */
+.mv-accent-low > .mv-accent-mark { top: 0.08em; }
+.mv-accent-low > .mv-accent-hat, .mv-accent-low > .mv-accent-widehat, .mv-accent-low > .mv-accent-tilde, .mv-accent-low > .mv-accent-dot, .mv-accent-low > .mv-accent-ddot { top: 0.31em; }
 
 /* ---- interaction -------------------------------------------------------------- */
 .mv-hl { background: var(--mv-hl, rgba(255, 200, 0, 0.35)); box-shadow: 0 0 0 0.08em var(--mv-hl, rgba(255, 200, 0, 0.35)); }
-/* Windows high contrast (and other forced colours) drops backgrounds and shadows: outline a highlight instead */
+/* Windows high contrast (and other forced colors) drops backgrounds and shadows: outline a highlight instead */
 @media (forced-colors: active) {
   .mv-hl { outline: 0.08em solid Highlight; outline-offset: 0.04em; }
 }
@@ -143,7 +155,7 @@ span.mv-delim { width: 0.16em; border: 0 solid currentColor; box-sizing: border-
 .mv-step-arrow { color: #888; }
 .mv-step-why { margin: 0.1em 0 0; font-size: 0.9em; color: #444; }
 
-/* ---- Markdown with maths (markdownToHTML from '@mathzetta/inlinemath/markdown') ------------------- */
+/* ---- Markdown with math (markdownToHTML from '@mathzetta/inlinemath/markdown') ------------------- */
 .mv-md-math { display: inline-block; vertical-align: middle; }
 .mv-md-display { display: block; text-align: center; margin: 0.6em 0; overflow-x: auto; }
 .mv-md-block { margin: 0.8em 0; }
