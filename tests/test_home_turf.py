@@ -123,11 +123,31 @@ const play = (length, cap) => {
   }
   return { phase: st.phase, round: st.round, maxRounds: E.R(st, data).max_rounds, callupsMin: E.R(st, data).callups_min, aiAttacks: E.R(st, data).ai.max_attacks };
 };
-console.log(JSON.stringify({ innings: play('innings', 99), standard: play('standard', 99), unlimited: play('unlimited', 20) }));""")
+console.log(JSON.stringify({ innings: play('innings', 99), doubleheader: play('doubleheader', 99), standard: play('standard', 99),
+  unlimited: play('unlimited', 20), offered: Object.keys(data.rules.lengths) }));""")
     assert out["innings"]["phase"] == "over" and out["innings"]["round"] == 10 and out["innings"]["maxRounds"] == 9
     assert out["innings"]["callupsMin"] == 4 and out["innings"]["aiAttacks"] == 9          # the 9-inning pacing
-    assert out["standard"]["round"] == 16 and out["standard"]["callupsMin"] == 3
+    assert out["doubleheader"]["phase"] == "over" and out["doubleheader"]["round"] == 19 and out["doubleheader"]["maxRounds"] == 18
+    assert out["offered"] == ["innings", "doubleheader", "unlimited"]
+    assert out["standard"]["round"] == 16 and out["standard"]["callupsMin"] == 3            # an old save: the base rules
     assert out["unlimited"]["maxRounds"] == 0 and out["unlimited"]["round"] > 16           # still going after 20 rounds
+
+
+@pytest.mark.skipif(NODE is None, reason="node is not installed")
+def test_ai_levels():
+    out = node("""
+const st = (level) => E.newGame(data, { seed: 'lv', humanSeats: [0], level });
+const pick = (s) => s.seats.map((x) => [x.ai, x.strategy, x.ai_over || null]);
+const rookie = st('rookie'), hof = st('hof'), dflt = st(undefined), old = st(undefined); delete old.level;
+old.seats.forEach((x) => { delete x.ai_over; });
+console.log(JSON.stringify({ levels: Object.keys(data.rules.levels), rookie: pick(rookie), hof: pick(hof), dflt: dflt.level,
+  block: [E.aiP(rookie, data, 1, 'draft_block'), E.aiP(hof, data, 1, 'draft_block'), E.aiP(old, data, 1, 'draft_block')],
+  attacks: [E.aiP(rookie, data, 1, 'max_attacks'), E.aiP(dflt, data, 1, 'max_attacks')] }));""")
+    assert out["levels"] == ["rookie", "pro", "allstar", "hof"] and out["dflt"] == "allstar"
+    assert out["rookie"][0][0] is False and out["rookie"][0][2] is None    # the human seat is untouched
+    assert all(s[1] == "random" for s in out["rookie"][1:]) and all(s[1] == "smart" for s in out["hof"][1:])
+    assert out["block"][1] == 0 and out["block"][0] == out["block"][2] > 0   # HoF drafts greedily; old saves keep the defaults
+    assert out["attacks"][0] == 3 and out["attacks"][1] == 9                # Rookie attacks rarely; the 9-inning pace otherwise
 
 
 def test_regions_are_connected_and_few():
@@ -192,3 +212,18 @@ console.log(JSON.stringify([E.act(st, 0, 'attacks'), E.act(st, 1, 'attacks'), E.
   E.act(st, 0, 'captures'), E.act(st, 0, 'releases'), E.act(st, 0, 'wins'), st.seats[1].name]));""")
     assert out[0] == "You attack" and out[1] == f"{out[7]} attacks"
     assert out[2:7] == ["You are picking", "You call up", "You capture", "You release", "You win"]
+
+
+@pytest.mark.skipif(NODE is None, reason="node is not installed")
+def test_region_stake():
+    out = node("""
+const st = E.newGame(data, { seed: 'stake', humanSeats: [] });
+for (const t of data.territories) st.owner[t.id] = 1;               // seat 1 holds everything ...
+const sw = data.territories.filter((t) => t.region === 'southwest').map((t) => t.id);
+sw.forEach((t, k) => { st.owner[t] = k === 0 ? 1 : 0; });           // ... except the Southwest, where seat 0 lacks one
+const bonus = data.regions.southwest.bonus;
+console.log(JSON.stringify({ completes: E.regionStake(st, data, 0, sw[0]), bonus,
+  holdWhole: E.regionStake(st, data, 1, 'texas' === sw[0] ? sw[1] : 'new_york'),
+  plainsWhole: E.regionStake(st, data, 0, 'kansas') }));""")
+    assert out["completes"] == out["bonus"]              # the one missing territory: completing is worth the bonus
+    assert out["plainsWhole"] == pytest.approx(0.5 * 3)  # breaking a rival's whole region (Plains +3) counts half

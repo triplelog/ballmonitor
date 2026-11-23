@@ -116,7 +116,7 @@
       rng: seedOf(opts.seed ?? "home-turf"), seed: String(opts.seed ?? "home-turf"),
       round: 1, phase: "draft", turn: 0, step: null, pending: 0, fortified: false, capture: null,
       seats: [], owner: {}, stacks: {}, bench: {}, soldiers: {}, nextSid: 1, log: [], draftOrder: [], draftAt: 0,
-      lastBattle: null, winner: null, length: opts.length || "standard", lengthRules: null,
+      lastBattle: null, winner: null, length: opts.length || data.rules.default_length || "innings", lengthRules: null,
     };
     const L = (data.rules.lengths || {})[state.length];
     if (L) { const { label, note, ...over } = L; state.lengthRules = over; }
@@ -125,6 +125,10 @@
       state.seats.push({ name: human ? (opts.name || "You") : AI_NAMES[(k - 1 + AI_NAMES.length) % AI_NAMES.length],
         color: COLORS[k], ai: !human, alive: true, strategy: opts.strategies?.[k] || "smart" });
     }
+    // the AI managers' ability (rules.toml [levels.*]): their pick strategy and AI-setting overrides
+    state.level = opts.level || data.rules.default_level || null;
+    const lv = (data.rules.levels || {})[state.level];
+    if (lv) for (const seat of state.seats) if (seat.ai) { seat.strategy = opts.strategies?.[state.seats.indexOf(seat)] || lv.strategy || seat.strategy; seat.ai_over = { ...(lv.ai || {}) }; }
     for (const t of data.territories) { state.owner[t.id] = null; state.stacks[t.id] = []; state.bench[t.id] = 0; }
     // snake draft in a random seat order: 1 2 3 4 4 3 2 1 ...
     const order = [...Array(n).keys()];
@@ -173,7 +177,8 @@
   function callupsFor(state, data, seat) {
     const n = owned(state, seat).length;
     const bonus = regionsHeld(state, data, seat).reduce((a, r) => a + data.regions[r].bonus, 0);
-    return Math.max(R(state, data).callups_min, Math.floor(n / R(state, data).territories_per_callup)) + bonus;
+    const extra = state.seats[seat].ai ? aiP(state, data, seat, "extra_callups") : 0;
+    return Math.max(R(state, data).callups_min, Math.floor(n / R(state, data).territories_per_callup)) + bonus + extra;
   }
   // place one call-up (deploy phase or the turn's call-ups) in an owned territory
   function place(state, data, tid) {
@@ -380,15 +385,46 @@
   // ── picking soldiers (the AI and "autorank") ─────────────────────────────────
   // best: strongest by average remaining season; weakest: send the weakest; smart: the cheapest
   // soldier who is at least even against the opponent's stack on average, else the strongest.
+  // Smart: the cheapest soldier who is at least even against the other side. "The other side" is a
+  // model (rules ai.smart_model, or "smart-<model>" as the strategy): average = every soldier of theirs
+  // equally likely; weighted = their stronger soldiers likelier (weight exp(mean / smart_tau));
+  // predict = the soldier they would send by the average rule against my stack.
   function pickSoldier(state, data, mine, theirs, role, strategy) {
     const home = R(state, data).home_field;
     const S = mine.map((sid) => state.soldiers[sid]);
     if (strategy === "weakest") return mine[S.reduce((k, s, j) => (mean(s) < mean(S[k]) ? j : k), 0)];
+    if (strategy === "random") return mine[Math.floor(rand(state) * mine.length)];
     const byStrength = mine.map((sid, j) => [sid, mean(S[j])]).sort((a, b) => b[1] - a[1]);
     if (strategy === "best" || !theirs.length) return byStrength[0][0];
-    const vsAll = (s) => theirs.reduce((a, o) => a + (role === "attack" ? winProb(s, state.soldiers[o], home) : 1 - winProb(state.soldiers[o], s, home)), 0) / theirs.length;
-    const ok = byStrength.filter(([sid]) => vsAll(state.soldiers[sid]) >= 0.5);
+    const model = strategy && strategy.startsWith("smart-") ? strategy.slice(6) : (R(state, data).ai.smart_model || "average");
+    let weights = theirs.map(() => 1);
+    if (model === "weighted") {
+      const tau = R(state, data).ai.smart_tau || 1.5;
+      weights = theirs.map((o) => Math.exp(Math.max(-3, mean(state.soldiers[o])) / tau));
+    } else if (model === "predict") {
+      const guess = pickSoldier(state, data, theirs, mine, role === "attack" ? "defend" : "attack", "smart-average");
+      weights = theirs.map((o) => (o === guess ? 1 : 0));
+    }
+    const total = weights.reduce((a, w) => a + w, 0);
+    const chance = (s) => theirs.reduce((a, o, k) => a + weights[k] * (role === "attack" ? winProb(s, state.soldiers[o], home)
+      : 1 - winProb(state.soldiers[o], s, home)), 0) / total;
+    const ok = byStrength.filter(([sid]) => chance(state.soldiers[sid]) >= 0.5);
     return ok.length ? ok[ok.length - 1][0] : byStrength[0][0];
+  }
+  // an AI setting for one seat: the seat's own override (tournaments) or the rules
+  const aiP = (state, data, seat, key) => {
+    const o = state.seats[seat].ai_over;
+    return o && o[key] !== undefined ? o[key] : (R(state, data).ai[key] ?? 0);
+  };
+  // how much a territory matters for regions, to `seat`: completing one of mine (the fewer missing,
+  // the more), holding one I have whole, or breaking a rival's whole region
+  function regionStake(state, data, seat, tid) {
+    const { members, regionOf } = index(data), rid = regionOf[tid], reg = members[rid], bonus = data.regions[rid].bonus;
+    const owner = state.owner[tid];
+    const missing = reg.filter((x) => state.owner[x] !== seat).length;
+    if (owner === seat) return missing === 0 ? bonus : 0;                  // holding a whole region
+    const rivalWhole = owner !== null && reg.every((x) => state.owner[x] === owner);
+    return (missing <= 2 ? bonus / missing : 0) + (rivalWhole ? 0.5 * bonus : 0);   // completing mine / breaking theirs
   }
 
   // ── AI managers ─────────────────────────────────────────────────────────────
@@ -410,9 +446,9 @@
       const bonus = data.regions[regionOf[t.id]].bonus;
       // block: a region one rival is filling up alone is worth breaking into
       const rivals = [...new Set(reg.map((x) => state.owner[x]).filter((o) => o !== null && o !== seat))];
-      const block = rivals.length === 1 && !mine ? R(state, data).ai.draft_block * (theirs / reg.length) * bonus : 0;
+      const block = rivals.length === 1 && !mine ? aiP(state, data, seat, "draft_block") * (theirs / reg.length) * bonus : 0;
       const v = depth(data, t.id) / 100 + (theirs ? 0 : 2.5 * (mine + 1) / reg.length * bonus) + block
-        + 0.8 * near + rand(state) * 0.8;
+        + 0.8 * near + rand(state) * aiP(state, data, seat, "draft_noise");
       if (v > bestV) { bestV = v; bestT = t.id; }
     }
     draft(state, data, bestT);
@@ -425,7 +461,12 @@
       let bestT = options[0], bestV = -Infinity;
       for (const t of options) {
         const nxt = benchNext(state, data, t);
-        const v = threat(state, data, t) - 0.7 * strength(state, t) + 0.15 * nxt.war / Math.max(nxt.seasons.length, 1) * 3 + rand(state) * 0.3;
+        const pr = aiP(state, data, seat, "place_region");
+        // region-minded: a territory holding my whole region, or next to the territories that would complete one
+        const stake = pr && state.phase === "turn" ? (threat(state, data, t) > 0 ? regionStake(state, data, seat, t) : 0)
+          + Math.max(0, ...neighbours(data, t).filter((n) => state.owner[n] !== seat).map((n) => regionStake(state, data, seat, n))) : 0;
+        const v = threat(state, data, t) - 0.7 * strength(state, t) + 0.15 * nxt.war / Math.max(nxt.seasons.length, 1) * 3
+          + pr * stake + rand(state) * aiP(state, data, seat, "place_noise");
         if (v > bestV) { bestV = v; bestT = t; }
       }
       place(state, data, bestT);
@@ -452,13 +493,15 @@
         if (state.phase === "turn" && canOccupy(state, data, from, to)) { occupy(state, data, from, to); aiAfterBattle(state, data); }
       }
     }
-    if (state.phase !== "turn" || state.aiAttacks >= R(state, data).ai.max_attacks) return null;
-    let pick = null, bestR = R(state, data).ai.aggression;
+    if (state.phase !== "turn" || state.aiAttacks >= aiP(state, data, seat, "max_attacks")) return null;
+    let pick = null, bestR = aiP(state, data, seat, "aggression");
     for (const from of owned(state, seat)) {
       if (state.stacks[from].length < 2) continue;
       for (const to of neighbours(data, from)) {
         if (!canAttack(state, data, from, to)) continue;
-        const r = (strength(state, from) - 0.6) / (strength(state, to) + R(state, data).home_field);
+        const ar = aiP(state, data, seat, "attack_region");
+        const r = (strength(state, from) - 0.6) / (strength(state, to) + R(state, data).home_field)
+          * (1 + ar * regionStake(state, data, seat, to) / 10);
         if (r > bestR) { bestR = r; pick = [from, to]; }
       }
     }
@@ -497,7 +540,7 @@
   }
 
   const fmt = (x) => (Math.round(x * 10) / 10).toFixed(1);
-  const api = { seasonStats, prepare, R, beats, act, canOccupy, occupy, reachable, rand, seedOf, index, neighbours, adjacent, owned, mean, best, benchNext, callup, winProb, newGame, draft, regionsHeld,
+  const api = { regionStake, aiP, seasonStats, prepare, R, beats, act, canOccupy, occupy, reachable, rand, seedOf, index, neighbours, adjacent, owned, mean, best, benchNext, callup, winProb, newGame, draft, regionsHeld,
     callupsFor, place, canPlace, skipPlacement, startTurn, endTurn, canAttack, battle, moveIn, canRelease, release, connected,
     fortify, score, finish, pickSoldier, strength, threat, aiDraft, aiPlace, aiStart, aiNextAttack, aiAfterBattle, aiTurn, aiFortify, fmt };
   if (typeof window !== "undefined") window.HomeTurf = api;

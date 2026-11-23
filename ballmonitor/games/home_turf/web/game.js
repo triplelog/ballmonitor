@@ -149,14 +149,17 @@
         ` · ${plural(sc.territories, "territory", "territories")}${sc.regions ? ` + ${sc.regions} region pts` : ""} · ${plural(players, "player")}`);
     }));
   }
+  // a game whose length is counted in innings (9 innings, doubleheader)
+  const inningsUnit = () => state.length === "innings" || state.length === "doubleheader";
+  const levelLabel = () => { const L = (data.rules.levels || {})[state.level]; return L ? ` · AI: ${L.label}` : ""; };
   function status() {
     if (!state) return "Start a new game.";
     if (state.phase === "over") return `Game over: ${E.act(state, state.winner, "wins")}.`;
     if (state.phase === "draft") return `Draft: pick ${state.draftAt + 1} of ${state.draftOrder.length} · ${E.act(state, state.turn, "is picking")}`;
     const who = state.seats[state.turn];
     if (state.phase === "deploy") return `Opening call-ups · ${who.name}: ${state.pending} to place`;
-    const maxR = rules().max_rounds, unit = state.length === "innings" ? "Inning" : "Round";
-    return `${unit} ${state.round}${maxR ? ` of ${maxR}` : ""} · ${who.name}: ${state.step === "callups" ? `call-ups (${state.pending} left)` : ui.mode === "fortify" ? "move soldiers" : "battles"}`;
+    const maxR = rules().max_rounds, unit = inningsUnit() ? "Inning" : "Round";
+    return `${unit} ${state.round}${maxR ? ` of ${maxR}` : ""} · ${who.name}: ${state.step === "callups" ? `call-ups (${state.pending} left)` : ui.mode === "fortify" ? "move soldiers" : "battles"}${levelLabel()}`;
   }
   function renderPanel() {
     const p = $("#panel");
@@ -257,7 +260,7 @@
   let dismissible = true;
   function modal(kids, opts = {}) {
     dismissible = opts.dismiss !== false;
-    $("#modal-box").replaceChildren(...kids);
+    $("#modal-box").replaceChildren(...kids.flat(Infinity).filter((k) => k !== null && k !== undefined && k !== false));
     $("#modal").classList.remove("hidden");
     const first = $("#modal-box").querySelector("button, input, select");
     if (first) first.focus();
@@ -448,18 +451,25 @@
     advance();
   }
   function chooseLength() {
-    const lengths = data.rules.lengths || { standard: { label: `${data.rules.max_rounds} rounds` } };
-    modal([el("h2", {}, "New game"), el("p", {}, "You against three AI managers. How long a game?"),
-      el("div", { class: "lengths" }, Object.entries(lengths).map(([id, L]) => [
-        el("button", { class: id === "innings" ? "primary" : "", onclick: () => { closeModal(); startGame(id); } }, L.label),
-        el("span", { class: "small" }, L.note || "")]).flat()),
+    const lengths = data.rules.lengths || {}, levels = data.rules.levels || {};
+    let length = lengths[prefs.length] ? prefs.length : data.rules.default_length;
+    let level = levels[prefs.level] ? prefs.level : data.rules.default_level;
+    const group = (name, items, get, set) => el("div", { class: "lengths", role: "radiogroup", "aria-label": name }, Object.entries(items).map(([id, L]) => {
+      const b = el("button", { class: id === get() ? "primary" : "", "aria-pressed": String(id === get()), onclick: () => {
+        set(id); for (const o of b.parentNode.querySelectorAll("button")) { o.classList.toggle("primary", o === b); o.setAttribute("aria-pressed", String(o === b)); } } }, L.label);
+      return [b, el("span", { class: "small" }, L.note || "")];
+    }).flat());
+    modal([el("h2", {}, "New game"), el("p", {}, "You against three AI managers."),
+      el("h3", {}, "How long?"), group("Game length", lengths, () => length, (v) => { length = v; }),
+      Object.keys(levels).length ? [el("h3", {}, "How good are the AI managers?"), group("AI ability", levels, () => level, (v) => { level = v; })] : null,
       el("p", { class: "small" }, "Every game is saved in this browser as you play; come back any time to carry on. Use \"Save a copy\" to keep several."),
-      el("div", { class: "actions" }, el("button", { onclick: () => closeModal() }, "Cancel"))]);
+      el("div", { class: "actions" }, el("button", { class: "primary", onclick: () => { prefs.length = length; prefs.level = level; closeModal(); startGame(length, level); } }, "Start"),
+        el("button", { onclick: () => closeModal() }, "Cancel"))]);
   }
   // named copies of games (the current game is always saved on its own)
   const slots = () => lsGet(SLOTS, []);
   function saveSlot() {
-    const unit = state.length === "innings" ? "inning" : "round";
+    const unit = inningsUnit() ? "inning" : "round";
     const name = prompt("Name this save:", `${rules().max_rounds ? "" : "No limit, "}${unit} ${state.round}, ${new Date().toLocaleDateString()}`);
     if (!name) return;
     const list = slots().filter((s) => s.name !== name);
@@ -478,8 +488,8 @@
       el("div", { class: "actions" }, state && state.phase !== "over" ? el("button", { onclick: () => { closeModal(); saveSlot(); } }, "Save the current game") : null,
         el("button", { class: "primary", onclick: () => closeModal() }, "Close"))]);
   }
-  function startGame(length = "standard") {
-    switchTo(E.newGame(data, { seed: `${new Date().toISOString()}-${Math.random()}`, name: "You", length }));
+  function startGame(length, level) {
+    switchTo(E.newGame(data, { seed: `${new Date().toISOString()}-${Math.random()}`, name: "You", length, level }));
   }
 
   // ── settings and help ─────────────────────────────────────────────────────
@@ -504,7 +514,7 @@
       el("p", {}, `After the draft each manager places ${r.start_callups} call-ups. Each turn: call-ups (one per ${r.territories_per_callup} territories, at least ${r.callups_min}, plus the bonus of every region you hold whole), then battles, then one move of soldiers between your connected territories.`),
       el("p", {}, `A battle: you pick one of your soldiers, the defender picks one at the same time. Each plays one of his real seasons at random, and that season is used up. The defender adds ${r.home_field} WAR for home field; the higher season wins (a tie goes to the defender) and the loser is out of the game. Take a territory's last soldier and it's yours, with its bench of natives; you choose who moves in.`),
       el("p", {}, `A soldier who runs out of seasons retires and his territory calls up a replacement; one whose best remaining season is under ${r.release_below} WAR can be released for a call-up. A territory left with no soldiers can be walked into from next door.`),
-      el("p", {}, `Choose the length when you start: ${Object.values(data.rules.lengths || {}).map((L) => L.label).join(", ")}. At the end: 1 point per territory plus the bonus of every region you hold (or hold every territory to win outright). "End game now" scores it at any time. Settings let the game pick your players for you.`),
+      el("p", {}, `Choose the length when you start (${Object.values(data.rules.lengths || {}).map((L) => L.label).join(", ")}) and how good the AI managers are (${Object.values(data.rules.levels || {}).map((L) => L.label).join(", ")}). At the end: 1 point per territory plus the bonus of every region you hold (or hold every territory to win outright). "End game now" scores it at any time. Settings let the game pick your players for you.`),
       el("p", { class: "small" }, `Seasons: ${data.source}.`),
       el("div", { class: "actions sticky" }, el("button", { class: "primary", onclick: () => closeModal() }, "Got it"))]);
   });

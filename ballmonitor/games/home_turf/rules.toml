@@ -1,7 +1,7 @@
 # Home Turf's rules: every number the game uses (build.py copies them into web/data/game.json).
 
 players = 4                 # you + 3 AI managers
-max_rounds = 15             # the game ends after this many rounds (or when one manager holds every territory)
+max_rounds = 15             # rounds when a game has no length (old saves); each length sets its own
 home_field = 0.5            # WAR added to the defender's season in every battle
 start_callups = 16          # call-ups each manager places after the draft (8 made games snowball: README, play-test)
 callups_min = 3             # call-ups per turn at least ...
@@ -11,14 +11,12 @@ roster_depth = 60           # players per territory in the game data (its bench 
 min_seasons = 1             # seasons a player needs to be on a bench (any season counts)
 
 # Game lengths offered at the start (each overrides the numbers above; max_rounds = 0: no limit,
-# the game runs until one manager holds the map or you end it).
-[lengths.standard]
-label = "15 rounds"
-note = "About 45 minutes."
-
+# the game runs until one manager holds the map or you end it). Order = the order offered.
+default_length = "innings"   # the length and AI ability a new game starts with
+default_level = "allstar"
 [lengths.innings]
 label = "9 innings"
-note = "A shorter game: more call-ups and battles every inning, about as much action as 15 rounds."
+note = "About half an hour: more call-ups and battles every inning."
 max_rounds = 9
 callups_min = 4             # 9-inning play-test (README): as many battles and captures as 15 rounds,
 territories_per_callup = 2  # winner holds about half the map, a third of games within 5 points
@@ -26,6 +24,11 @@ territories_per_callup = 2  # winner holds about half the map, a third of games 
 [lengths.innings.ai]
 max_attacks = 9
 aggression = 1.45
+
+[lengths.doubleheader]
+label = "Doubleheader (18 innings)"
+note = "Twice as long: more time to build up and come back."
+max_rounds = 18             # base pacing (README): ~320 battles, the round-3 leader wins about half
 
 [lengths.unlimited]
 label = "No limit"
@@ -36,7 +39,40 @@ max_rounds = 0
 per_territory = 1           # end-of-game points per territory held
 region_bonus = true         # plus each held region's bonus
 
+# The AI managers' ability, chosen at the start: the pick strategy of every AI seat and overrides of
+# the [ai] settings below (README: tournaments measure each level against All-Star).
+[levels.rookie]
+label = "Rookie"
+note = "Attacks rarely, sends a random player, ignores regions, drafts and places call-ups loosely."
+strategy = "random"
+ai = { attack_region = 0.0, place_region = 0.0, draft_noise = 4.0, place_noise = 3.0, max_attacks = 3, aggression = 2.5 }
+
+[levels.pro]
+label = "Pro"
+note = "Picks players well; doesn't play for regions."
+strategy = "smart"
+ai = { attack_region = 0.0, place_region = 0.0 }
+
+[levels.allstar]
+label = "All-Star"
+note = "Picks players well and fights for regions."
+strategy = "smart"
+ai = {}
+
+[levels.hof]
+label = "Hall of Fame"
+note = "All-Star, and drafts greedily for itself instead of blocking rivals' regions."
+strategy = "smart"
+ai = { draft_block = 0.0 }
+
 [ai]
 aggression = 1.6            # attack when my strength is this many times the defender's
 max_attacks = 6             # battles per AI turn at most
+smart_model = "average"     # what "Smart" assumes the other side sends: average | weighted | predict (README: tournaments)
+smart_tau = 1.5             # weighted: how much likelier their stronger soldiers are (exp(mean WAR / tau))
+place_region = 1.0          # call-ups: weight on completing or holding a region (README: tournaments; 0 = ignore)
+attack_region = 8.0         # attacks: weight on completing my region or breaking a rival's (README: tournaments; 0 = ignore)
+draft_noise = 0.8           # randomness in the AI's draft picks
+place_noise = 0.3           # randomness in where the AI places call-ups
+extra_callups = 0           # call-ups an AI gets each turn on top of the rules (the Hall of Fame level: 1)
 draft_block = 6.0           # in the draft, value of breaking into a region one rival is filling up (x its share x bonus)

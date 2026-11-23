@@ -6,12 +6,13 @@
 # 35.8°N and "PA-E"/"PA-W" split Pennsylvania at 77.5°W (from the birthplace map's geocoding).
 # x, y: position on the map. land: land borders; sea: sea lanes (drawn dashed). bend: { neighbour = px }
 # draws that border curved below the straight line (so it doesn't cross other territories).
-# 8 regions, each connected (owner, 2026-11-22; was 12 regions, two of them in pieces).
+# 8 regions, each connected (owner, 2026-11-22; was 12 regions, two of them in pieces). Oklahoma is in the
+# Southwest and both are +3: with a 3-territory Southwest the snake draft's end picks won far more often.
 
 [regions]
 pacific_west = { name = "Pacific West", bonus = 3, color = "#2e86de" }
-plains = { name = "Plains & Prairies", bonus = 4, color = "#b8a92b" }
-southwest = { name = "Southwest", bonus = 2, color = "#e67e22" }
+plains = { name = "Plains & Prairies", bonus = 3, color = "#b8a92b" }
+southwest = { name = "Southwest", bonus = 3, color = "#e67e22" }
 great_lakes = { name = "Great Lakes", bonus = 4, color = "#16a085" }
 northeast = { name = "Northeast", bonus = 5, color = "#8e44ad" }
 upper_south = { name = "Upper South", bonus = 3, color = "#6ab04c" }
@@ -110,7 +111,7 @@ sea = []
 
 [territories.oklahoma]
 name = "Oklahoma"
-region = "plains"
+region = "southwest"
 members = ["OK"]
 x = 420
 y = 375

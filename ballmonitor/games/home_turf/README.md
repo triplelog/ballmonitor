@@ -27,10 +27,18 @@ locally `ballmonitor serve`, then `/hometurf/`.
   replacement. One whose best remaining season is under `release_below` (1.0 WAR) can be released
   for a call-up.
 - **The end.** You choose the length at the start (`[lengths.*]` in rules.toml):
-  - **15 rounds.**
-  - **9 innings:** at least 4 call-ups or 1 per 2 territories, and AI managers fight up to 9
-    battles per turn, so there's about as much action as 15 rounds.
+  - **9 innings** (the default): at least 4 call-ups or 1 per 2 territories, and AI managers fight
+    up to 9 battles per turn, so there's about as much action as the old 15 rounds.
+  - **Doubleheader (18 innings):** the base pacing (at least 3 call-ups, up to 6 AI battles).
   - **No limit:** until one manager holds every territory.
+
+  Saves from before these lengths keep their 15 rounds (`max_rounds` in rules.toml).
+- **AI ability.** Also chosen at the start (`[levels.*]`: a pick strategy and `[ai]` overrides
+  for the AI seats):
+  - **Rookie:** attacks rarely, sends a random player, ignores regions, drafts loosely.
+  - **Pro:** picks players well but doesn't play for regions.
+  - **All-Star** (the default): the AI below.
+  - **Hall of Fame:** All-Star without the draft blocking.
 
   At the end: 1 point per territory plus held regions' bonuses. Ties are broken by the remaining
   strength on the board. "End game now" scores any game. Games save as you play; "Save a copy"
@@ -50,8 +58,8 @@ locally `ballmonitor serve`, then `/hometurf/`.
   countries; California split at 35.8°N, Pennsylvania at 77.5°W), its region, land borders and sea
   lanes, and its map position. North and South Carolina are separate. 8 regions with bonuses:
   - Pacific West +3
-  - Plains & Prairies +4
-  - Southwest +2
+  - Plains & Prairies +3
+  - Southwest +3 (with Oklahoma)
   - Great Lakes +4
   - Northeast +5
   - Upper South +3
@@ -139,8 +147,84 @@ Improvements:
   buttons stay pinned at the bottom.
 - **Smaller saves.** Players knocked out keep only their name.
 
-Not done (it changes the balance, so it needs its own simulation round): weighting the "Smart"
-pick toward the opponent's likelier soldiers, and AI call-ups that aim at region bonuses.
+## AI tournaments (2026-11-22)
+
+Each candidate behavior played in 2 of the 4 seats against the current AI in the other 2, over the
+same game seeds (seats rotating). 50% means no better; the ± is the 95% margin.
+
+| behavior (rules.toml `[ai]`) | its seats won |
+|---|---|
+| control | 50.2% ± 4.9 (400 games) |
+| "Smart" assumes their stronger soldiers likelier (`smart_model = "weighted"`) | 46.5% ± 4.9 |
+| "Smart" predicts their pick (`"predict"`) | 47.8% ± 4.9 |
+| call-ups aim at regions (`place_region` 1 / 3) | 52.3% / 51.2% ± 4.9 |
+| attacks aim at regions (`attack_region` 3 / 5 / 8 / 12) | 55.5% / 55.0% / 55.9% / 57.4% ± 3.4 (800) |
+| attacks 8 + call-ups 1 | 57.6% ± 2.4 (1,600) |
+
+**Adopted:** `attack_region = 8` and `place_region = 1`. A territory's region value (`regionStake`)
+counts:
+- completing one of my regions: bonus ÷ territories still missing, if 2 or fewer are missing
+- breaking a rival's whole region: half its bonus
+- holding a whole region of mine: its bonus
+
+Attacks multiply their odds by 1 + 8 × value ÷ 10. Call-ups add it for threatened territories in a
+held region, and next to the territories that would complete one.
+
+"Smart" stays `average`; the smarter guesses were no better.
+
+**Fairness.** With the stronger AI in every seat, the snake draft's end picks won far more:
+116/75/74/135 of 400. The 3-territory Southwest was the culprit: easy to take whole and hold.
+Oklahoma moved to the Southwest, with Southwest and Plains both +3. That gives 205/205/171/219 of
+800 (chi² 6.3, within chance).
+
+**The old AI against the new**, same map: 43.8% ± 2.8 (1,200 games).
+
+**Pacing**, current rules, 60 games each:
+
+| length | battles | captures | winner's share of the map | within 5 points | round-3 leader won |
+|---|---|---|---|---|---|
+| 15 rounds | 274 | 90 | 49% | 14 | 32 |
+| 9 innings | 242 | 85 | 47% | 13 | 42 |
+
+**Doubleheader pacing**, 60 games each:
+
+| 18 innings with | battles | captures | winner's share | within 5 points | round-3 leader won |
+|---|---|---|---|---|---|
+| **the base pacing (adopted)** | 320 | 105 | 52% | 18 | 32 |
+| the 9-inning pacing | 441 | 150 | 63% | 8 | 33 |
+| the 9-inning call-ups only | 385 | 86 | 47% | 18 | 37 |
+
+The base pacing gives the most comebacks and close games; the 9-inning pacing snowballs.
+
+## AI levels (2026-11-22)
+
+Each level played in 2 seats against All-Star in the other 2 (9 innings, rotating seats, same
+seeds, 600–800 games; ± is the 95% margin):
+
+| level | its seats won |
+|---|---|
+| Rookie | 39.2% ± 3.9 |
+| Pro | 43.4% ± 3.4 |
+| All-Star | 48.1% ± 3.5 |
+| Hall of Fame | 71.0% ± 3.1 |
+
+Which of All-Star's parts matter (each swapped into 2 seats, 600 games):
+
+| change | won |
+|---|---|
+| random picks | 45.5% |
+| always the best player | 49.0% |
+| always the weakest | 49.7% |
+| no region play | 43.2% |
+| **no draft blocking** | **71.0%** |
+| noisy draft and call-ups | 45.5% |
+
+Draft blocking (`draft_block`, which took territories a rival needed for a region) was added to
+even out the draft positions. Head to head, it costs a manager a lot: one who drafts for himself
+wins 71% against two who block. So Hall of Fame drops it. All-Star keeps it, so the draft
+positions stay even. A first Rookie (random picks, no regions, loose draft, *no* blocking) beat
+All-Star 53.5%. The present Rookie keeps the blocking and attacks rarely (`max_attacks` 3,
+`aggression` 2.5).
 
 ## Ideas not done yet
 
