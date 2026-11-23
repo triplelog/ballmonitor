@@ -38,7 +38,11 @@
     try { localStorage.setItem(key, JSON.stringify(value)); return true; } catch (e) { storageOk = false; return false; }
   }
   const prefs = Object.assign({ defend: "auto", defendStrategy: "smart", attackPick: "ask", attackStrategy: "smart", speed: 450 }, lsGet(PREFS, {}));
+  // a game saved on an older map (other territories) can't be carried on
+  const fitsMap = (st) => !!st && !!st.owner && Object.keys(st.owner).length === data.territories.length && data.territories.every((t) => t.id in st.owner);
   let state = lsGet(SAVE, null);
+  const oldMap = state && !fitsMap(state);
+  if (oldMap) state = null;
   // ui.run changes whenever a different game starts or loads: an AI loop from the old game stops
   const ui = { sel: null, from: null, mode: null, busy: false, flash: null, run: 0 };
   const save = () => { lsSet(SAVE, state); lsSet(PREFS, prefs); };
@@ -136,7 +140,7 @@
       const holder = holders[rid];
       return el("span", { class: "chip" }, el("i", { class: "sw", style: `border-color:${r.color};${holder !== undefined ? `background:${state.seats[holder].color}` : ""}` }),
         `${r.name} +${r.bonus}`, holder !== undefined ? ` (${state.seats[holder].name})` : "");
-    }), el("span", { class: "chip small" }, "— land border  - - sea lane · small number: the soldiers' combined median WAR"));
+    }), el("span", { class: "chip small" }, "lines: borders (by land or sea) · small number: the soldiers' combined median WAR"));
   }
 
   // ── panels ────────────────────────────────────────────────────────────────
@@ -467,7 +471,7 @@
         el("button", { onclick: () => closeModal() }, "Cancel"))]);
   }
   // named copies of games (the current game is always saved on its own)
-  const slots = () => lsGet(SLOTS, []);
+  const slots = () => lsGet(SLOTS, []).filter((s) => fitsMap(s.state));
   function saveSlot() {
     const unit = inningsUnit() ? "inning" : "round";
     const name = prompt("Name this save:", `${rules().max_rounds ? "" : "No limit, "}${unit} ${state.round}, ${new Date().toLocaleDateString()}`);
@@ -510,7 +514,7 @@
   $("#btn-help").addEventListener("click", () => {
     const r = rules();
     modal([el("h2", {}, "How to play"),
-      el("p", {}, `Four managers (you and three AIs) snake-draft the ${data.territories.length} territories, grouped in ${Object.keys(data.regions).length} regions (the shaded areas). Every territory's soldiers are real big-leaguers born there, called up best first (by career Open WAR). Click a territory to see its soldiers and bench before you draft or call up.`),
+      el("p", {}, `Four managers (you and three AIs) draft the ${data.territories.length} territories (the order rotates each round), grouped in ${Object.keys(data.regions).length} regions (the shaded areas). Every territory's soldiers are real big-leaguers born there, called up best first (by career Open WAR). Click a territory to see its soldiers and bench before you draft or call up.`),
       el("p", {}, `After the draft each manager places ${r.start_callups} call-ups. Each turn: call-ups (one per ${r.territories_per_callup} territories, at least ${r.callups_min}, plus the bonus of every region you hold whole), then battles, then one move of soldiers between your connected territories.`),
       el("p", {}, `A battle: you pick one of your soldiers, the defender picks one at the same time. Each plays one of his real seasons at random, and that season is used up. The defender adds ${r.home_field} WAR for home field; the higher season wins (a tie goes to the defender) and the loser is out of the game. Take a territory's last soldier and it's yours, with its bench of natives; you choose who moves in.`),
       el("p", {}, `A soldier who runs out of seasons retires and his territory calls up a replacement; one whose best remaining season is under ${r.release_below} WAR can be released for a call-up. A territory left with no soldiers can be walked into from next door.`),
@@ -520,6 +524,8 @@
   });
 
   render();
+  if (oldMap) modal([el("h2", {}, "A new map"), el("p", {}, "Home Turf's map has changed (one California, one Pennsylvania, seven regions, a new draft), so a game saved on the old map can't be carried on. Start a new one."),
+    el("div", { class: "actions" }, el("button", { class: "primary", onclick: () => { closeModal(); chooseLength(); } }, "New game"))]);
   if (state && state.phase !== "over") {
     if (myTurn() && state.capture) askMoveIn();   // reloaded in the middle of moving into a capture
     advance();

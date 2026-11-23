@@ -130,15 +130,16 @@
     const lv = (data.rules.levels || {})[state.level];
     if (lv) for (const seat of state.seats) if (seat.ai) { seat.strategy = opts.strategies?.[state.seats.indexOf(seat)] || lv.strategy || seat.strategy; seat.ai_over = { ...(lv.ai || {}) }; }
     for (const t of data.territories) { state.owner[t.id] = null; state.stacks[t.id] = []; state.bench[t.id] = 0; }
-    // snake draft in a random seat order: 1 2 3 4 4 3 2 1 ...
+    // rotating draft in a random seat order: 1 2 3 4, 2 3 4 1, 3 4 1 2, 4 1 2 3, ... (no back-to-back
+    // picks: in a snake draft the ends' double picks won far more often; README, fairness)
     const order = [...Array(n).keys()];
     for (let k = n - 1; k > 0; k--) { const j = Math.floor(rand(state) * (k + 1)); [order[k], order[j]] = [order[j], order[k]]; }
     for (let r = 0; state.draftOrder.length < data.territories.length; r++) {
-      state.draftOrder.push(...(r % 2 ? [...order].reverse() : order));
+      state.draftOrder.push(...order.slice(r % n), ...order.slice(0, r % n));
     }
     state.draftOrder.length = data.territories.length;
     state.turn = state.draftOrder[0];
-    log(state, `Draft order: ${order.map((k) => state.seats[k].name).join(", ")} (snake).`);
+    log(state, `Draft order: ${order.map((k) => state.seats[k].name).join(", ")} then rotating (the next one starts each round).`);
     return state;
   }
   function log(state, text, extra = {}) { state.log.push({ round: state.round, text, ...extra }); }

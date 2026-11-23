@@ -2,11 +2,11 @@
 
     python -m ballmonitor.games.home_turf.build
 
-Reads territories.toml (map), rules.toml (rules), Open WAR's seasons (models/open_war/data/seasons.csv),
-the Lahman People table (names, birthplaces; Triple Play's raw copy) and the birthplace map's geocoding
-(models/baseball_birthplaces/data/players.csv, to split California and Pennsylvania). Each territory's
-roster is its natives with at least `min_seasons` seasons, best career Open WAR first, `roster_depth` deep,
-written compactly (compact(); about half the size of plain records, same players and seasons).
+Reads territories.toml (map), rules.toml (rules), Open WAR's seasons (models/open_war/data/seasons.csv)
+and the Lahman People table (names, birthplaces; Triple Play's raw copy). Only seasons from `min_year` on
+count (a player with none isn't in the game). Each territory's roster is its natives with at least
+`min_seasons` such seasons, best Open WAR over them first, `roster_depth` deep, written compactly
+(compact(); about half the size of plain records, same players and seasons).
 """
 
 from __future__ import annotations
@@ -21,7 +21,6 @@ HERE = Path(__file__).resolve().parent
 ROOT = HERE.parents[1]
 LAHMAN = ROOT / "games" / "triple_play" / "data" / "raw" / "lahman_csv"
 SEASONS = ROOT / "models" / "open_war" / "data" / "seasons.csv"
-GEO = ROOT / "models" / "baseball_birthplaces" / "data" / "players.csv"
 OUT = HERE / "web" / "data" / "game.json"
 
 
@@ -32,12 +31,14 @@ def load_map() -> dict:
     for tid, t in terr.items():
         if t["region"] not in m["regions"]:
             problems.append(f"{tid}: unknown region {t['region']}")
-        for kind in ("land", "sea"):
-            for n in t.get(kind, []):
-                if n not in terr:
-                    problems.append(f"{tid}: unknown neighbour {n}")
-                elif tid not in terr[n].get(kind, []):
-                    problems.append(f"{tid} -> {n} ({kind}) is not mutual")
+        for n in t.get("links", []):
+            if n not in terr:
+                problems.append(f"{tid}: unknown neighbour {n}")
+            elif tid not in terr[n].get("links", []):
+                problems.append(f"{tid} -> {n} is not mutual")
+        for n in t.get("bend", {}):
+            if n not in t.get("links", []):
+                problems.append(f"{tid}: bend to {n}, which it doesn't border")
     for rid in m["regions"]:   # every region must be one connected piece (land or sea)
         mem = {tid for tid, t in terr.items() if t["region"] == rid}
         if not mem:
@@ -47,7 +48,7 @@ def load_map() -> dict:
         reach, todo = {start}, [start]
         while todo:
             t = todo.pop()
-            for n in terr[t].get("land", []) + terr[t].get("sea", []):
+            for n in terr[t].get("links", []):
                 if n in mem and n not in reach:
                     reach.add(n)
                     todo.append(n)
@@ -75,15 +76,8 @@ def compact(r: dict) -> dict:
     return {"n": r["name"], "b": int(r["born"]) if str(r["born"]).isdigit() else 0, "s": flat}
 
 
-def member_of(person: dict, geo: dict) -> str:
-    c, s = person["birthCountry"], person["birthState"]
-    if c != "USA":
-        return c
-    if s == "CA" and geo:
-        return "CA-S" if float(geo["lat"]) < 35.8 else "CA-N"
-    if s == "PA" and geo:
-        return "PA-W" if float(geo["lon"]) < -77.5 else "PA-E"
-    return s
+def member_of(person: dict) -> str:
+    return person["birthState"] if person["birthCountry"] == "USA" else person["birthCountry"]
 
 
 def build() -> dict:
@@ -93,9 +87,8 @@ def build() -> dict:
     seasons = defaultdict(list)
     with SEASONS.open(newline="") as fh:
         for r in csv.DictReader(fh):
-            seasons[r["playerID"]].append((int(r["yearID"]), round(float(r["WAR"]), 1)))
-    with GEO.open(newline="") as fh:
-        geo = {r["playerID"]: r for r in csv.DictReader(fh)}
+            if int(r["yearID"]) >= rules["min_year"]:
+                seasons[r["playerID"]].append((int(r["yearID"]), round(float(r["WAR"]), 1)))
     rosters = defaultdict(list)
     unplaced = defaultdict(int)
     with (LAHMAN / "People.csv").open(newline="", encoding="utf-8-sig") as fh:
@@ -103,7 +96,7 @@ def build() -> dict:
             ss = sorted(seasons.get(p["playerID"], []))
             if len(ss) < rules["min_seasons"]:
                 continue
-            mem = member_of(p, geo.get(p["playerID"]))
+            mem = member_of(p)
             tid = where.get(mem)
             if tid is None:
                 unplaced[mem or "(no birthplace)"] += 1
@@ -115,7 +108,7 @@ def build() -> dict:
         rosters[tid].sort(key=lambda r: -r["war"])
         rosters[tid] = [compact(r) for r in rosters[tid][: rules["roster_depth"]]]
     territories = [{"id": tid, "name": t["name"], "region": t["region"], "x": t["x"], "y": t["y"],
-                    "land": t.get("land", []), "sea": t.get("sea", []), "members": t["members"],
+                    "land": t.get("links", []), "sea": [], "members": t["members"],
                     **({"bend": t["bend"]} if t.get("bend") else {})}
                    for tid, t in m["territories"].items()]
     game = {"version": 2, "rules": rules, "regions": m["regions"], "territories": territories, "rosters": rosters,

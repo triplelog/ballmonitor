@@ -8,7 +8,8 @@ callups_min = 3             # call-ups per turn at least ...
 territories_per_callup = 3  # ... or one per this many territories held, if more; plus region bonuses
 release_below = 1.0         # a soldier whose best remaining season is under this can be released (replaced by a call-up)
 roster_depth = 60           # players per territory in the game data (its bench for call-ups)
-min_seasons = 1             # seasons a player needs to be on a bench (any season counts)
+min_seasons = 1             # seasons a player needs to be on a bench (any season counts) ...
+min_year = 1901             # ... from this year on; earlier seasons are left out (owner, 2026-11-22: the modern era)
 
 # Game lengths offered at the start (each overrides the numbers above; max_rounds = 0: no limit,
 # the game runs until one manager holds the map or you end it). Order = the order offered.
@@ -41,29 +42,29 @@ region_bonus = true         # plus each held region's bonus
 
 # The AI managers' ability, chosen at the start: the pick strategy of every AI seat and overrides of
 # the [ai] settings below (README: tournaments measure each level against All-Star).
-[levels.rookie]
+[levels.rookie]                 # vs All-Star in 2 of 4 seats, 9 innings, 800 games (README): 35%
 label = "Rookie"
-note = "Attacks rarely, sends a random player, ignores regions, drafts and places call-ups loosely."
+note = "Attacks recklessly with a random player, ignores regions, drafts and places call-ups loosely."
 strategy = "random"
-ai = { attack_region = 0.0, place_region = 0.0, draft_noise = 4.0, place_noise = 3.0, max_attacks = 3, aggression = 2.5 }
+ai = { attack_region = 0.0, place_region = 0.0, draft_noise = 10.0, place_noise = 3.0, max_attacks = 12, aggression = 1.2 }
 
-[levels.pro]
+[levels.pro]                    # 42.5%
 label = "Pro"
-note = "Picks players well; doesn't play for regions."
+note = "Picks players well; doesn't play for regions, drafts and places call-ups loosely."
 strategy = "smart"
-ai = { attack_region = 0.0, place_region = 0.0 }
+ai = { attack_region = 0.0, place_region = 0.0, draft_noise = 10.0, place_noise = 3.0 }
 
-[levels.allstar]
+[levels.allstar]                # 50%
 label = "All-Star"
 note = "Picks players well and fights for regions."
 strategy = "smart"
 ai = {}
 
-[levels.hof]
+[levels.hof]                    # 69%
 label = "Hall of Fame"
-note = "All-Star, and drafts greedily for itself instead of blocking rivals' regions."
+note = "All-Star, but picks its battles (5 a turn, only good odds) and drafts for itself instead of blocking rivals."
 strategy = "smart"
-ai = { draft_block = 0.0 }
+ai = { draft_block = 0.0, max_attacks = 5, aggression = 2.0 }
 
 [ai]
 aggression = 1.6            # attack when my strength is this many times the defender's
@@ -72,7 +73,8 @@ smart_model = "average"     # what "Smart" assumes the other side sends: average
 smart_tau = 1.5             # weighted: how much likelier their stronger soldiers are (exp(mean WAR / tau))
 place_region = 1.0          # call-ups: weight on completing or holding a region (README: tournaments; 0 = ignore)
 attack_region = 8.0         # attacks: weight on completing my region or breaking a rival's (README: tournaments; 0 = ignore)
-draft_noise = 0.8           # randomness in the AI's draft picks
+draft_noise = 4.0           # randomness in the AI's draft: varied drafts, and every draft position wins about as often
+                            # (0.8 drafted Texas, Alabama, California ... every game, and position 2 won a third); README
 place_noise = 0.3           # randomness in where the AI places call-ups
 extra_callups = 0           # call-ups an AI gets each turn on top of the rules (the Hall of Fame level: 1)
 draft_block = 6.0           # in the draft, value of breaking into a region one rival is filling up (x its share x bonus)

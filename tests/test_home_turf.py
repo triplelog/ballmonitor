@@ -34,7 +34,7 @@ def test_map_is_valid_and_connected():
     seen, todo = {"texas"}, ["texas"]
     while todo:
         t = todo.pop()
-        for n in terr[t].get("land", []) + terr[t].get("sea", []):
+        for n in terr[t]["links"]:
             if n not in seen:
                 seen.add(n)
                 todo.append(n)
@@ -147,13 +147,34 @@ console.log(JSON.stringify({ levels: Object.keys(data.rules.levels), rookie: pic
     assert out["rookie"][0][0] is False and out["rookie"][0][2] is None    # the human seat is untouched
     assert all(s[1] == "random" for s in out["rookie"][1:]) and all(s[1] == "smart" for s in out["hof"][1:])
     assert out["block"][1] == 0 and out["block"][0] == out["block"][2] > 0   # HoF drafts greedily; old saves keep the defaults
-    assert out["attacks"][0] == 3 and out["attacks"][1] == 9                # Rookie attacks rarely; the 9-inning pace otherwise
+    assert out["attacks"][0] == 12 and out["attacks"][1] == 9               # Rookie attacks recklessly; the 9-inning pace otherwise
 
 
 def test_regions_are_connected_and_few():
     m = build.load_map()   # load_map also raises if a region is in pieces
-    assert len(m["regions"]) <= 8
+    assert len(m["regions"]) == 7
     assert {"north_carolina", "south_carolina"} <= set(m["territories"]) and "carolinas" not in m["territories"]
+    t = m["territories"]
+    assert {"california", "pennsylvania", "northern_new_england", "southern_new_england", "northern_plains"} <= set(t)
+    assert not {"socal", "pa_east", "massachusetts", "minnesota"} & set(t) and len(t) % 4 == 0   # 10 each in the draft
+    assert t["southern_new_england"]["members"] == ["MA", "CT", "RI"] and m["regions"]["south"]["bonus"] == 6
+    assert (t["southwest"]["region"], t["texas"]["region"], t["oklahoma"]["region"], t["central_america"]["region"]) \
+        == ("west", "south", t["kansas"]["region"], "latin_america")
+    assert all("sea" not in x for x in t.values())   # every border is one kind, drawn solid
+
+
+@pytest.mark.skipif(NODE is None, reason="node is not installed")
+def test_even_rotating_draft_and_modern_seasons():
+    out = node("""
+const st = E.newGame(data, { seed: 'draft', humanSeats: [] });
+const o = st.draftOrder, n = st.seats.length;
+const counts = st.seats.map((_, k) => o.filter((x) => x === k).length);
+const doubles = o.filter((x, i) => i > 0 && x === o[i - 1]).length;
+const first = Math.min(...Object.values(data.rosters).flat().map((p) => p.seasons[0][0]));
+console.log(JSON.stringify({ counts, doubles, round2: o.slice(n, 2 * n).join(), expect2: [...o.slice(1, n), o[0]].join(), first, minYear: data.rules.min_year }));""")
+    assert len(set(out["counts"])) == 1 and out["doubles"] == 0     # 10 each, never two picks in a row
+    assert out["round2"] == out["expect2"]                          # the order rotates by one each round
+    assert out["first"] >= out["minYear"] == 1901
 
 
 @pytest.mark.skipif(NODE is None, reason="node is not installed")
@@ -219,11 +240,11 @@ def test_region_stake():
     out = node("""
 const st = E.newGame(data, { seed: 'stake', humanSeats: [] });
 for (const t of data.territories) st.owner[t.id] = 1;               // seat 1 holds everything ...
-const sw = data.territories.filter((t) => t.region === 'southwest').map((t) => t.id);
-sw.forEach((t, k) => { st.owner[t] = k === 0 ? 1 : 0; });           // ... except the Southwest, where seat 0 lacks one
-const bonus = data.regions.southwest.bonus;
+const sw = data.territories.filter((t) => t.region === 'west').map((t) => t.id);
+sw.forEach((t, k) => { st.owner[t] = k === 0 ? 1 : 0; });           // ... except the West, where seat 0 lacks one
+const bonus = data.regions.west.bonus;
 console.log(JSON.stringify({ completes: E.regionStake(st, data, 0, sw[0]), bonus,
   holdWhole: E.regionStake(st, data, 1, 'texas' === sw[0] ? sw[1] : 'new_york'),
-  plainsWhole: E.regionStake(st, data, 0, 'kansas') }));""")
+  plainsWhole: E.regionStake(st, data, 0, 'kansas'), plainsBonus: data.regions.plains.bonus }));""")
     assert out["completes"] == out["bonus"]              # the one missing territory: completing is worth the bonus
-    assert out["plainsWhole"] == pytest.approx(0.5 * 3)  # breaking a rival's whole region (Plains +3) counts half
+    assert out["plainsWhole"] == pytest.approx(0.5 * out["plainsBonus"])  # breaking a rival's whole region counts half

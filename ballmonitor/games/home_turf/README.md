@@ -1,14 +1,15 @@
 # Home Turf (play-test version)
 
-A strategy game on a map of where big-leaguers were born. Four managers (you and three AI) snake-draft
-43 territories in 8 regions. Each territory's soldiers are real players born there, called up best first. Battles
+A strategy game on a map of where big-leaguers were born. Four managers (you and three AI) draft
+40 territories in 7 regions. Each territory's soldiers are real players born there, called up best first,
+with their seasons from 1901 on (`min_year`). Battles
 are fought with their real seasons. On the site at ballmonitor.com/hometurf/ (the build copies `web/`);
 locally `ballmonitor serve`, then `/hometurf/`.
 
 ## Rules (rules.toml has every number)
 
-- **Draft.** The managers snake-draft every territory in random seat order. Each territory comes with
-  its best native.
+- **Draft.** The managers draft every territory, 10 each. The order is random, then rotates: 1 2 3 4,
+  2 3 4 1, 3 4 1 2, 4 1 2 3, ... (no back-to-back picks). Each territory comes with its best native.
 - **Opening call-ups.** Each manager places `start_callups` (16). A call-up is the best remaining
   native of one of your territories.
 - **Each turn:** call-ups (one per `territories_per_callup` = 3 territories held, at least
@@ -35,10 +36,11 @@ locally `ballmonitor serve`, then `/hometurf/`.
   Saves from before these lengths keep their 15 rounds (`max_rounds` in rules.toml).
 - **AI ability.** Also chosen at the start (`[levels.*]`: a pick strategy and `[ai]` overrides
   for the AI seats):
-  - **Rookie:** attacks rarely, sends a random player, ignores regions, drafts loosely.
-  - **Pro:** picks players well but doesn't play for regions.
+  - **Rookie:** attacks recklessly with a random player, ignores regions, drafts loosely.
+  - **Pro:** picks players well but doesn't play for regions, drafts loosely.
   - **All-Star** (the default): the AI below.
-  - **Hall of Fame:** All-Star without the draft blocking.
+  - **Hall of Fame:** All-Star, but picks its battles (5 a turn, at better odds) and drafts for
+    itself instead of blocking rivals.
 
   At the end: 1 point per territory plus held regions' bonuses. Ties are broken by the remaining
   strength on the board. "End game now" scores any game. Games save as you play; "Save a copy"
@@ -54,17 +56,18 @@ locally `ballmonitor serve`, then `/hometurf/`.
 
 ## Files
 
-- `territories.toml`: the map. 43 territories; each lists its birthplaces (Lahman states and
-  countries; California split at 35.8°N, Pennsylvania at 77.5°W), its region, land borders and sea
-  lanes, and its map position. North and South Carolina are separate. 8 regions with bonuses:
-  - Pacific West +3
-  - Plains & Prairies +3
-  - Southwest +3 (with Oklahoma)
-  - Great Lakes +4
-  - Northeast +5
+- `territories.toml`: the map. 40 territories; each lists its birthplaces (Lahman states and
+  countries), its region, the territories it borders (land or sea, all drawn as solid lines) and its
+  map position. One California, one Pennsylvania; Massachusetts with Connecticut and Rhode Island
+  (S. New England); North and South Carolina are
+  separate. 7 regions with bonuses:
+  - West +3 (with the Desert Southwest and the Pacific Rim)
+  - Plains & Prairies +4 (with Canada and Oklahoma)
+  - Great Lakes +3
+  - Northeast +3 (with the Old World)
   - Upper South +3
-  - Deep South +4
-  - Caribbean +2
+  - South +6 (with Texas)
+  - Latin America +3 (Mexico & Central America, the Caribbean, Venezuela)
 
   Each region is drawn as a shaded area on the map. Edit freely; the build checks the map,
   including that every region is one connected piece.
@@ -177,6 +180,40 @@ held region, and next to the territories that would complete one.
 Oklahoma moved to the Southwest, with Southwest and Plains both +3. That gives 205/205/171/219 of
 800 (chi² 6.3, within chance).
 
+**The 40-territory map (2026-11-22).** One California and one Pennsylvania; Massachusetts,
+Connecticut and Rhode Island as S. New England; Desert Southwest to the West, Texas to the South
+(+6), Oklahoma to the Plains, Mexico to Latin America; seasons from 1901 on. Wins by draft
+position, AI in every seat, 9 innings, 800 games each:
+
+| map, draft and AI | wins by draft position | chi² |
+|---|---|---|
+| 39 territories (one New England), snake | 136 / 164 / 200 / 300 | 77 |
+| 39, rotating draft | 103 / 291 / 193 / 213 | 90 |
+| 40, snake | 158 / 155 / 210 / 277 | 49 |
+| 40, rotating draft | 155 / 264 / 167 / 214 | 37 |
+| 40, rotating, AI draft noise 2 / 3 | 149 / 269 / 196 / 186, 162 / 262 / 197 / 179 | 38, 29 |
+| **40, rotating, AI draft noise 4 (adopted)**, three seed sets | 175 / 219 / 222 / 184, 147 / 236 / 231 / 186, 168 / 233 / 215 / 184 | 8.6, 26, 13 |
+| 40, snake, AI draft noise 4, three seed sets | 182 / 189 / 206 / 223, 163 / 168 / 220 / 249, 165 / 191 / 208 / 236 | 5.1, 26, 13 |
+
+- With 39 territories one manager drafts 9 and the rest 10.
+- In a snake draft the ends (positions 1 and 4) get two picks in a row and can take two of a
+  region before anyone blocks. The rotating draft (1234, 2341, 3412, 4123, ...) has none.
+- Balanced-looking orders were worse. With 1234 3412 ... every position's picks add up to the
+  same, but position 3 gets picks 3 and 5 and won 43%; others 22–56%. Whoever has pick 5 soon
+  after an early pick does best.
+- The deeper cause was the AI's draft. With `draft_noise` 0.8 it drafted Texas, Alabama, California,
+  Pennsylvania, New York in that order every game, so one draft pattern decided the positions. At 4
+  the drafts vary and both orders are much fairer. The AI loses almost nothing: noise 2 / 3 / 4 in
+  two seats against 0.8 won 49.4% / 48.0% / 47.0% (± 3.5).
+- Draft position still matters some: 18–29% instead of 25%. Doubleheader: 83/115/110/92 of 400
+  (chi² 6.8).
+- Also tried and dropped: letting the last drafter lead off each round, and extra opening call-ups
+  for the manager who drafts fewer.
+
+Regions held at the end (800 games): Great Lakes 143, West 123, Upper South 125, Northeast 121,
+Latin America 83, Plains 79, South 44. The two big regions (7 and 8 territories) are the hardest to
+hold whole.
+
 **The old AI against the new**, same map: 43.8% ± 2.8 (1,200 games).
 
 **Pacing**, current rules, 60 games each:
@@ -199,32 +236,31 @@ The base pacing gives the most comebacks and close games; the 9-inning pacing sn
 ## AI levels (2026-11-22)
 
 Each level played in 2 seats against All-Star in the other 2 (9 innings, rotating seats, same
-seeds, 600–800 games; ± is the 95% margin):
+seeds, 800 games, 40-territory map; ± is the 95% margin):
 
 | level | its seats won |
 |---|---|
-| Rookie | 39.2% ± 3.9 |
-| Pro | 43.4% ± 3.4 |
-| All-Star | 48.1% ± 3.5 |
-| Hall of Fame | 71.0% ± 3.1 |
+| Rookie | 35.0% ± 3.3 |
+| Pro | 42.5% ± 3.4 |
+| All-Star | 49.6% ± 3.5 |
+| Hall of Fame | 68.8% ± 3.2 |
 
-Which of All-Star's parts matter (each swapped into 2 seats, 600 games):
+What moves the needle (each change in 2 seats against All-Star):
 
 | change | won |
 |---|---|
-| random picks | 45.5% |
-| always the best player | 49.0% |
-| always the weakest | 49.7% |
-| no region play | 43.2% |
-| **no draft blocking** | **71.0%** |
-| noisy draft and call-ups | 45.5% |
+| no draft blocking (first map) | 71.0% |
+| fewer battles: at most 5 a turn, attack at 2.0× the defender (not 9 at 1.45×) | 60.9% |
+| the same, without region play | 60.6% |
+| no region play, loose draft and call-ups | 42.5–47.3% |
+| reckless: up to 12 battles at 1.2× | 32.9% (smart picks), 35.0% (random) |
+| random picks (first map) | 45.5% |
 
-Draft blocking (`draft_block`, which took territories a rival needed for a region) was added to
-even out the draft positions. Head to head, it costs a manager a lot: one who drafts for himself
-wins 71% against two who block. So Hall of Fame drops it. All-Star keeps it, so the draft
-positions stay even. A first Rookie (random picks, no regions, loose draft, *no* blocking) beat
-All-Star 53.5%. The present Rookie keeps the blocking and attacks rarely (`max_attacks` 3,
-`aggression` 2.5).
+- **Draft blocking** (`draft_block`) takes territories a rival needs for a region. It was added to
+  even out the draft positions, but head to head it costs a lot. Hall of Fame drops it.
+- **The 9-inning pacing** (up to 9 battles a turn at 1.45×) keeps games lively, but it makes the AI
+  overextend. A manager who picks his battles beats it. Hall of Fame does that; Rookie goes the
+  other way.
 
 ## Ideas not done yet
 
