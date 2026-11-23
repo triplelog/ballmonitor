@@ -211,8 +211,9 @@ def option_slug(o: dict) -> str:
 
 
 def headline(page: dict) -> str:
-    return ((f'<p class="headline">{esc(page["headline"])}</p>' if page.get("headline") else "")
-            + (f'<span class="ss-chip">{esc(page["updated"])}</span>' if page.get("updated") else ""))
+    # just the date the numbers are as of: forecast pages show only their tables and charts
+    # (site.js likewise leaves out the headline, subtitles, notes and dropdown intros)
+    return f'<span class="ss-chip">{esc(page["updated"])}</span>' if page.get("updated") else ""
 
 
 def _pct(p: float) -> str:
@@ -262,18 +263,14 @@ def model_pages(address: str, page: dict, cls: str) -> dict[str, tuple[str, str,
     for v in page["views"]:
         if v.get("kind") == "bracket":   # drawn whole: it reads without the script
             sections.append(_cell(cls, f'<div class="ss-band">{esc(v["title"])}</div>',
-                                  f'<p class="subtitle">{esc(v["subtitle"])}</p>' if v.get("subtitle") else "",
-                                  bracket_html(v, address, slugs, page.get("model", "")),
-                                  f'<p class="note">{esc(v["note"])}</p>' if v.get("note") else ""))
+                                  bracket_html(v, address, slugs, page.get("model", ""))))
         elif v.get("kind") == "picker":
             links = "".join(f'<li><a href="/{address}/{v["id"]}/{option_slug(o)}/">{esc(o["label"])}</a></li>'
                             for o in v["options"])
             sections.append(_cell(cls, f'<div class="ss-band">{esc(v["title"])}</div>',
-                                  f'<p class="subtitle">{esc(v["subtitle"])}</p>' if v.get("subtitle") else "",
                                   f'<ul class="option-links">{links}</ul>'))
         else:
             sections.append(_cell(cls, f'<div class="ss-band">{esc(v["title"])}</div>',
-                                  f'<p class="subtitle">{esc(v["subtitle"])}</p>' if v.get("subtitle") else "",
                                   '<p class="loading">Loading the numbers…</p>'))
     out[f"/{address}/"] = (page["title"], " ".join(filter(None, [page.get("summary"), page.get("headline")])),
                            {"headline": headline(page), "views": "".join(sections)})
@@ -281,7 +278,6 @@ def model_pages(address: str, page: dict, cls: str) -> dict[str, tuple[str, str,
         for o in v["options"]:
             intro = o.get("intro", "")
             option = _cell(cls, f'<div class="ss-band">{esc(v["title"])}: {esc(o["label"])}</div>',
-                           f'<p class="intro">{esc(intro)}</p>' if intro else "",
                            f'<p><a href="/{address}/">All of {esc(page["title"])}</a></p>')
             title = f"{o['label']}: {page['title']}"
             out[f"/{address}/{v['id']}/{option_slug(o)}/"] = (title, intro or page.get("summary", ""),
@@ -290,14 +286,21 @@ def model_pages(address: str, page: dict, cls: str) -> dict[str, tuple[str, str,
 
 
 def home_page(site: dict) -> dict[str, str]:
-    """The home page's links, grouped by sport (site.js redraws them from the same data/site.json)."""
+    """The home page's links (site.js redraws them from the same data/site.json): slot "models" holds
+    the data tables and one card per sport, before the Games card; slot "more" holds the "More sports"
+    pages and the charts in one card after it."""
     groups: dict[str, list[dict]] = {}
     for m in site["models"]:
-        groups.setdefault(m["sport"], []).append(m)
+        if m["sport"] != MORE_SPORT:
+            groups.setdefault(m["sport"], []).append(m)
+    more = [m for m in site["models"] if m["sport"] == MORE_SPORT]
 
     def item(href: str, title: str, summary: str, srcs: tuple[str, str]) -> str:
         return (f'<li><a class="model-link" href="{href}"><b data-src="{srcs[0]}">{esc(title)}</b>'
                 f'<p data-src="{srcs[1]}">{esc(summary)}</p></a></li>')
+
+    def model_item(m: dict) -> str:
+        return item(f"/{m['name']}/", m["title"], m["summary"], (page_src(m["name"], "title"), page_src(m["name"], "summary")))
 
     def card_list(items: list[str]) -> str:
         return '<ul class="model-list">' + "".join(items) + "</ul>"
@@ -308,15 +311,18 @@ def home_page(site: dict) -> dict[str, str]:
             [item(f"/tables/{t['id']}/", t["title"], t["summary"], (table_src(t, "title"), table_src(t, "summary")))
              for t in site["tables"]])))
     cells += [_cell(views.cell_class(sport), f'<div class="ss-band">{esc(sport)}</div>', card_list(
-                  [item(f"/{m['name']}/", m["title"], m["summary"],
-                        (page_src(m["name"], "title"), page_src(m["name"], "summary"))) for m in ms]))
+                  [model_item(m) for m in ms]))
               for sport, ms in groups.items()]
+    items = [model_item(m) for m in more]
     if site.get("charts"):
         words = charts_text()
-        cells.append(_cell(views.cell_class("Baseball"), '<div class="ss-band">Charts</div>', card_list(
-            [item("/charts/", words.get("title", "Baseball charts"), words.get("summary", ""),
-                  (page_src("charts", "title"), page_src("charts", "summary")))])))
-    return {"models": "".join(cells)}
+        items.append(item("/charts/", words.get("title", "Baseball charts"), words.get("summary", ""),
+                          (page_src("charts", "title"), page_src("charts", "summary"))))
+    more_cell = _cell("ss-p2", '<div class="ss-band">More tables and charts</div>', card_list(items)) if items else ""
+    return {"models": "".join(cells), "more": more_cell}
+
+
+MORE_SPORT = "More sports"   # its pages go in the home page's "More tables and charts" card
 
 
 def table_page(t: dict, cls: str) -> tuple[str, str, dict]:

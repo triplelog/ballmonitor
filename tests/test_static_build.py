@@ -109,13 +109,13 @@ def test_every_address_is_a_real_page_in_the_sitemap(site):
         assert re.search(r'<meta name="description" content="[^"]{20,}">', text), path
         assert re.search(r'src="/static/site\.js\?v=[0-9a-f]{10}"', text) and "{{" not in text, path  # cache-busted
     georgia = (site / "ncaaf_bowls" / "team" / "georgia" / "index.html").read_text()
-    assert "<title>Georgia: " in georgia and 'class="intro"' in georgia
+    assert "<title>Georgia: " in georgia and 'class="intro"' not in georgia   # forecast pages: tables only
     # the words are in the page before any script runs; the text pages are left alone by site.js
     bowls = (site / "ncaaf_bowls" / "index.html").read_text()
     assert 'href="/ncaaf_bowls/team/georgia/"' in bowls and "How this works" in bowls
     assert re.search(r'id="app"[^>]* data-static', (site / "privacy" / "index.html").read_text())
     # the words written in the page sources (web/site/) are in the built pages, slots filled
-    assert 'data-text="title"' in bowls and 'class="headline"' in bowls
+    assert 'data-text="title"' in bowls and 'class="headline"' not in bowls and 'class="subtitle"' not in bowls
     recruiting = (site / "ncaaf_recruiting" / "index.html").read_text()
     newest = json.loads((site / "data" / "views" / "ncaaf_recruiting.json").read_text())["fill"]["last_year"]
     assert f'<span data-fill="last_year">{newest}</span>' in recruiting

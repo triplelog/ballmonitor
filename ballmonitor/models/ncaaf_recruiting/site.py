@@ -224,7 +224,7 @@ def page(model) -> dict:
                 "and by offense and defense.",
         fill={"first_year": years[-1], "last_year": newest},
         sport="College football",
-        order=20,
+        order=1,
         updated=updated,
         headline=headline,
         how=("Instead of relying on star ratings, we look at which coaches wanted each player. A recruit's score is "

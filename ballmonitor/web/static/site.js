@@ -90,6 +90,7 @@ const chartSrc = (c, key) => src("ballmonitor/web/charts.toml", `${c.id}.${key}`
 let viewFile = "";
 const viewSrc = (key) => src(viewFile, key);
 // the charts page's name and summary, as written in web/site/charts/index.html
+const MORE_SPORT = "More sports";   // its pages go in the home page's "More tables and charts" card
 const chartsTitle = (site) => (site.charts_text || {}).title || "Baseball charts";
 
 // ── Shioh cells: each sport owns one cell colour ─────────────────────────────
@@ -103,8 +104,8 @@ async function renderNav(active) {
   const site = await getJSON("/data/site.json");
   const nav = document.getElementById("nav-models");
   if (!nav.childElementCount) {
-    nav.append(...site.models.map((m) => el("a", { href: `/${m.name}/`, "data-route": m.name, ...pageSrc(m.name, "title") }, m.title)));
     nav.append(...(site.tables || []).map((t) => el("a", { href: `/tables/${t.id}/`, "data-route": `tables/${t.id}`, ...tableSrc(t, "title") }, t.title)));
+    nav.append(...site.models.map((m) => el("a", { href: `/${m.name}/`, "data-route": m.name, ...pageSrc(m.name, "title") }, m.title)));
     if ((site.charts || []).length) nav.append(el("a", { href: "/charts/", "data-route": "charts", ...pageSrc("charts", "title") }, chartsTitle(site)));
   }
   for (const a of document.querySelectorAll(".ss-nav a[data-route]")) {
@@ -165,8 +166,15 @@ async function renderHome() {
   const site = await getJSON("/data/site.json");
   if (!(await ensurePage(""))) return;
   setHead("Ball Monitor", homeDescription, "/");
+  // Sport cards before the Games card (web/site/index.html); the "More sports" pages and the
+  // charts share one card after it (slot "more"), like pages.home_page.
   const groups = {};
-  for (const m of site.models) (groups[m.sport] = groups[m.sport] || []).push(m);
+  for (const m of site.models) if (m.sport !== MORE_SPORT) (groups[m.sport] = groups[m.sport] || []).push(m);
+  const more = site.models.filter((m) => m.sport === MORE_SPORT);
+  const modelItem = (m) => el("li", {}, el("a", { class: "model-link", href: `/${m.name}/` },
+    el("b", pageSrc(m.name, "title"), m.title),
+    el("p", pageSrc(m.name, "summary"), m.summary),
+    m.updated ? el("span", { class: "ss-chip" }, m.updated) : null));
   fillSlot("models",
     (site.tables || []).length ? cell("ss-p4",
       el("div", { class: "ss-band" }, "Data tables"),
@@ -176,17 +184,15 @@ async function renderHome() {
     ...Object.entries(groups).map(([sport, models]) =>
       cell(cellClass(sport),
         el("div", { class: "ss-band" }, sport),
-        el("ul", { class: "model-list" }, models.map((m) =>
-          el("li", {}, el("a", { class: "model-link", href: `/${m.name}/` },
-            el("b", pageSrc(m.name, "title"), m.title),
-            el("p", pageSrc(m.name, "summary"), m.summary),
-            m.updated ? el("span", { class: "ss-chip" }, m.updated) : null)))))),
-    (site.charts || []).length ? cell(cellClass("Baseball"),
-      el("div", { class: "ss-band" }, "Charts"),
-      el("ul", { class: "model-list" }, el("li", {}, el("a", { class: "model-link", href: "/charts/" },
-        el("b", pageSrc("charts", "title"), chartsTitle(site)),
-        el("p", pageSrc("charts", "summary"), (site.charts_text || {}).summary || ""))))) : null,
+        el("ul", { class: "model-list" }, models.map(modelItem)))),
   );
+  const charts = (site.charts || []).length;
+  fillSlot("more", more.length || charts ? cell("ss-p2",
+    el("div", { class: "ss-band" }, "More tables and charts"),
+    el("ul", { class: "model-list" }, more.map(modelItem),
+      charts ? el("li", {}, el("a", { class: "model-link", href: "/charts/" },
+        el("b", pageSrc("charts", "title"), chartsTitle(site)),
+        el("p", pageSrc("charts", "summary"), (site.charts_text || {}).summary || ""))) : null)) : null);
   renderNav("");
   window.scrollTo(0, 0);
 }
@@ -218,8 +224,9 @@ async function renderModel(name, pick) {
   pending = pick || null;
   // the title, summary and "How this works" are the page's own HTML; the rest is filled in here
   fillSpans(page.fill);
+  // Forecast pages show just the tables and charts (owner's call, 2026-11-23): no headline, no
+  // subtitles, notes or dropdown intros (still in site.py, for link previews and the editor).
   fillSlot("headline",
-    page.headline ? el("p", { class: "headline", ...viewSrc("headline") }, page.headline) : null,
     page.updated ? el("span", { class: "ss-chip" }, page.updated) : null,
     jumpBar(page.views));
   fillSlot("views", ...page.views.map((v) => renderView(v, cls, false)));
@@ -273,9 +280,7 @@ function viewShell(v, body, cls, nested) {
   const kids = [
     nested ? el("h3", { class: "ss-section", ...viewSrc(`${v.id}.title`) }, v.title)
       : el("div", { class: "ss-band", ...viewSrc(`${v.id}.title`) }, v.title),
-    v.subtitle ? el("p", { class: "subtitle", ...viewSrc(`${v.id}.subtitle`) }, v.subtitle) : null,
     body,
-    v.note ? el("p", { class: "note", ...viewSrc(`${v.id}.note`) }, v.note) : null,
   ];
   return nested ? el("div", { class: `view view-${v.kind}`, id: `v-${v.id}` }, ...kids)
     : el("section", { class: `ss-cell ${cls} view view-${v.kind}`, id: `v-${v.id}` }, ...kids);
@@ -576,7 +581,7 @@ function renderPicker(v, cls) {
     if (findInput && document.activeElement !== findInput) findInput.value = "";
     const o = v.options[i];
     if (o.src && !o.views.length) {
-      body.replaceChildren(o.intro ? el("p", { class: "intro", ...viewSrc(`${v.id}.intro`) }, o.intro) : "", el("p", { class: "loading" }, "Loading…"));
+      body.replaceChildren(el("p", { class: "loading" }, "Loading…"));
       try {
         o.views = (await getJSON(o.src)).views;
       } catch (e) {
@@ -586,7 +591,7 @@ function renderPicker(v, cls) {
       }
       if (select.value !== String(i)) return;   // another option was picked meanwhile
     }
-    body.replaceChildren(o.intro ? el("p", { class: "intro", ...viewSrc(`${v.id}.intro`) }, o.intro) : "", ...o.views.map((w) => renderView(w, cls, true)));
+    body.replaceChildren(...o.views.map((w) => renderView(w, cls, true)));
     if (remember && current.model) {
       const path = `/${current.model}/${v.id}/${o.slug || slugify(o.label)}/`;
       history.replaceState(history.state, "", path);
@@ -633,12 +638,10 @@ function renderPicker(v, cls) {
   }
   return el("section", { class: `ss-cell ${cls} view view-picker`, id: `v-${v.id}` },
     el("div", { class: "ss-band", ...viewSrc(`${v.id}.title`) }, v.title),
-    v.subtitle ? el("p", { class: "subtitle", ...viewSrc(`${v.id}.subtitle`) }, v.subtitle) : null,
     el("div", { class: "pick-row" }, el("label", { class: "pick" }, `${v.label}: `, select), find, copyLink(() => {
       const o = v.options[+select.value];
       return `${location.origin}/${current.model}/${v.id}/${o.slug || slugify(o.label)}/`;
     })),
-    v.note ? el("p", { class: "note", ...viewSrc(`${v.id}.note`) }, v.note) : null,
     body);
 }
 

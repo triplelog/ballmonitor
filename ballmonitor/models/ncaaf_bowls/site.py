@@ -432,7 +432,7 @@ def page(model) -> dict:
         title="College football playoff & bowl odds",
         summary="Every FBS team's chances to make the 12-team playoff, win the national championship, and reach each bowl game.",
         sport="College football",
-        order=1,
+        order=20,
         updated=f"Games through {_day(meta['last_completed_game'])}",
         how=("We simulate the rest of the season thousands of times using ESPN's FPI team ratings and the "
              "remaining schedule. In each simulation, we crown the conference champions, pick the 12-team "

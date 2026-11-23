@@ -264,8 +264,10 @@ pytest ballmonitor/models/race_time                # one model
   in that file (a view key is `<view id>.<field>` in `models/<model>/site.py`), never in the built output, rebuild
   `dist/` so the preview shows it, and add a line to `web/EDITS.md`'s log. Text with no `data-src` is in `site.js`.
   Keep `data-src` on any new script-drawn text.
-- Every page leads with a data-driven `headline` (`page(headline=...)`), and picker options with an
-  `intro` one-liner: the one answer a fan wants first. Tables keep their name column in place when
+- **Forecast pages show only their tables and charts** (owner's call, 2026-11-23): the page's title, the
+  "as of" chip and the views (titles, tables, charts, dropdowns and their controls). The `headline`, view
+  `subtitle`/`note`, picker `intro`, and the page file's summary and "How this works" (`hidden`) are still
+  written (link previews, home cards, editor) but not shown. Tables keep their name column in place when
   scrolled sideways (`col(sticky=True)`, default: first linked, else first text column).
 - Pickers double as sub-pages: each option has an address `/<model>/<picker id>/<slug>/` (e.g.
   `/ncaaf_bowls/team/georgia/`), and a table column with `link="<picker id>"` links its cells there.

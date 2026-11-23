@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>College football recruiting rankings · Ball Monitor</title>
+  <title>NCAAF recruiting rankings · Ball Monitor</title>
   <meta name="description" content="Every college football recruiting class from 2012 to 2027, ranked overall, by conference, and by offense and defense.">
   <link rel="canonical" href="https://ballmonitor.com/ncaaf_recruiting/">
-  <meta property="og:title" content="College football recruiting rankings · Ball Monitor">
+  <meta property="og:title" content="NCAAF recruiting rankings · Ball Monitor">
   <meta property="og:description" content="Every college football recruiting class from 2012 to 2027, ranked overall, by conference, and by offense and defense.">
   <meta property="og:url" content="https://ballmonitor.com/ncaaf_recruiting/">
   <!-- shell:head -->
@@ -67,10 +67,11 @@
         <div class="ss-kicker">College football</div>
         <h1 class="ss-title" data-text="title">
           <!-- claude-ui:begin title -->
-          College football recruiting rankings
+          NCAAF recruiting rankings
           <!-- claude-ui:end title -->
         </h1>
-        <p class="summary" data-text="summary">
+        <!-- the summary and "How this works" stay hidden (home card, link previews, editor) -->
+        <p class="summary" data-text="summary" hidden>
           <!-- claude-ui:begin summary -->
           Every college football recruiting class from <span data-fill="first_year">2012</span> to <span data-fill="last_year">2027</span>, ranked overall, by conference, and by offense and defense.
           <!-- claude-ui:end summary -->
@@ -80,7 +81,7 @@
       </section>
       <!-- the tables, charts and dropdowns (from data/views/ncaaf_recruiting.json) -->
       <div class="slot" data-slot="views"><section class="ss-cell ss-p1"><p class="loading">Loading the numbers…</p></section></div>
-      <section class="ss-cell ss-p1 how">
+      <section class="ss-cell ss-p1 how" hidden>
         <div class="ss-band">How this works</div>
         <p data-text="how">
           <!-- claude-ui:begin how -->

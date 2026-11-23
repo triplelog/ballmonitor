@@ -23,3 +23,5 @@ Every piece of text drawn by the script carries `data-src="<file>#<key>"` naming
 
 | date | page | change | written to |
 |---|---|---|---|
+| 2026-11-23 | menu, home cards | "Big-league batting/pitching game logs" → "MLB batting/pitching game logs"; "NFL quarterback game logs" → "NFL QB game logs" | `web/tables.toml` (`batting-games`, `pitching-games`, `qb-games` titles) |
+| 2026-11-23 | menu | "College football playoff & bowl odds" → "NCAAF playoff & bowl odds"; "College football recruiting rankings" → "NCAAF recruiting rankings" (also the pages' headings and title tags) | `web/site/ncaaf_bowls/index.html`, `web/site/ncaaf_recruiting/index.html` (`data-text="title"`) |

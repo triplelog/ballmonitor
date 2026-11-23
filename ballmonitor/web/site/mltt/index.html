@@ -70,7 +70,8 @@
           Major League Table Tennis
           <!-- claude-ui:end title -->
         </h1>
-        <p class="summary" data-text="summary">
+        <!-- the summary and "How this works" stay hidden (home card, link previews, editor) -->
+        <p class="summary" data-text="summary" hidden>
           <!-- claude-ui:begin summary -->
           Season <span data-fill="season">4</span> of Major League Table Tennis, adjusted for luck—expected points, schedule strength, Final Four odds, and player values across <span data-fill="played">34</span> matches so far.
           <!-- claude-ui:end summary -->
@@ -80,7 +81,7 @@
       </section>
       <!-- the tables, charts and dropdowns (from data/views/mltt.json) -->
       <div class="slot" data-slot="views"><section class="ss-cell ss-p1"><p class="loading">Loading the numbers…</p></section></div>
-      <section class="ss-cell ss-p1 how">
+      <section class="ss-cell ss-p1 how" hidden>
         <div class="ss-band">How this works</div>
         <p data-text="how">
           <!-- claude-ui:begin how -->

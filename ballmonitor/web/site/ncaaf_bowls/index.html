@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>College football playoff & bowl odds · Ball Monitor</title>
+  <title>NCAAF playoff & bowl odds · Ball Monitor</title>
   <meta name="description" content="Every FBS team's chances to make the 12-team playoff, win the national championship, and reach each bowl game.">
   <link rel="canonical" href="https://ballmonitor.com/ncaaf_bowls/">
-  <meta property="og:title" content="College football playoff &amp; bowl odds · Ball Monitor">
+  <meta property="og:title" content="NCAAF playoff &amp; bowl odds · Ball Monitor">
   <meta property="og:description" content="Every FBS team's chances to make the 12-team playoff, win the national championship, and reach each bowl game.">
   <meta property="og:url" content="https://ballmonitor.com/ncaaf_bowls/">
   <!-- shell:head -->
@@ -67,10 +67,11 @@
         <div class="ss-kicker">College football</div>
         <h1 class="ss-title" data-text="title">
           <!-- claude-ui:begin title -->
-          College football playoff & bowl odds
+          NCAAF playoff & bowl odds
           <!-- claude-ui:end title -->
         </h1>
-        <p class="summary" data-text="summary">
+        <!-- the summary and "How this works" stay hidden (home card, link previews, editor) -->
+        <p class="summary" data-text="summary" hidden>
           <!-- claude-ui:begin summary -->
           Every FBS team's chances to make the 12-team playoff, win the national championship, and reach each bowl game.
           <!-- claude-ui:end summary -->
@@ -80,7 +81,7 @@
       </section>
       <!-- the tables, charts and dropdowns (from data/views/ncaaf_bowls.json) -->
       <div class="slot" data-slot="views"><section class="ss-cell ss-p1"><p class="loading">Loading the numbers…</p></section></div>
-      <section class="ss-cell ss-p1 how">
+      <section class="ss-cell ss-p1 how" hidden>
         <div class="ss-band">How this works</div>
         <p data-text="how">
           <!-- claude-ui:begin how -->

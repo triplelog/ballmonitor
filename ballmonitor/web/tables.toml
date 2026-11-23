@@ -21,7 +21,7 @@ sports = "https://data.tabdn.com/"
 
 [[table]]
 id = "batting-games"
-title = "Big-league batting game logs"
+title = "MLB batting game logs"
 summary = "Every player's batting line in every big-league game since 1897—5.7 million rows you can filter and sort."
 sport = "Baseball"
 server = "retrosheet"
@@ -90,7 +90,7 @@ roe = "reached on error"
 
 [[table]]
 id = "pitching-games"
-title = "Big-league pitching game logs"
+title = "MLB pitching game logs"
 summary = "Every pitcher's line in every big-league game since 1897—no-hitters, 15-strikeout gems, and marathon outings."
 sport = "Baseball"
 server = "retrosheet"
@@ -139,7 +139,7 @@ decision = "W, L, S or blank"
 
 [[table]]
 id = "qb-games"
-title = "NFL quarterback game logs"
+title = "NFL QB game logs"
 summary = "Every NFL passer's regular-season and playoff game since 1999—400-yard outbursts, perfect passer ratings, and rough days."
 sport = "Pro football"
 server = "sports"
