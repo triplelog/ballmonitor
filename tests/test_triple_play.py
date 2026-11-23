@@ -38,7 +38,10 @@ def new_rules(p) -> bool:
 def test_every_puzzle_has_the_right_shape():
     for p in built():
         assert len(p["categories"]) == 3 and len({c["id"] for c in p["categories"]}) == 3
-        if new_rules(p):   # baseball: 11 spots (Sunday 14), no spare cards
+        if p["pack"] == "players":   # Monday's three players: one card per part, no spares
+            need, spare = generate.NEED_PLAYERS, 0
+            assert sum(need.values()) == 8
+        elif new_rules(p):   # baseball: 11 spots (Sunday 14), no spare cards
             need = generate.NEED_BASEBALL_BIG if p["level"] == "big" else generate.NEED_BASEBALL
             spare = generate.SPARE_BASEBALL
             assert sum(need.values()) == (14 if p["level"] == "big" else 11)
@@ -89,17 +92,20 @@ def test_generation_is_deterministic(players):
 def test_schedule_monday_places_sunday_big():
     for p in built():
         day = dt.date.fromisoformat(p["date"])
-        assert p["pack"] == ("places" if day.weekday() == 0 else "baseball"), p["date"]
+        monday = "players" if day >= generate.PLAYERS_SINCE else "places"
+        assert p["pack"] == (monday if day.weekday() == 0 else "baseball"), p["date"]
         assert (p["level"] == "big") == (day.weekday() == 6), p["date"]
 
 
 def test_harder_days_have_closer_calls(players):
     import statistics
     by = {}
-    for p in [q for q in built() if new_rules(q) and q["level"] != "big"][:150]:
+    # Every level avoids close calls (clear-cut players only), so the averages are all near 0 and
+    # easy vs medium is noise; what holds is that hard days allow the most (over every day built).
+    for p in [q for q in built() if new_rules(q) and q["level"] != "big"]:
         cats = [CATEGORIES[c["id"]] for c in p["categories"]]
         by.setdefault(p["level"], []).append(statistics.mean(generate.closeness(players[c["id"]], cats) for c in p["cards"]))
-    assert statistics.mean(by["easy"]) < statistics.mean(by["medium"]) < statistics.mean(by["hard"])
+    assert statistics.mean(by["hard"]) > max(statistics.mean(by["easy"]), statistics.mean(by["medium"]))
 
 
 def test_places_regions_agree_with_rules():
@@ -173,3 +179,24 @@ def test_team_position_and_stat_every_baseball_day(players):
 def test_web_files_present():
     for name in ("index.html", "game.js", "style.css"):
         assert (WEB / name).is_file()
+
+
+def test_three_players_cards_are_true_and_clear_cut(players):
+    """Monday's three players: every card sits where it's true of exactly those players, is
+    clear-cut for all three, and each puzzle has a team, a position and another card."""
+    days = [p for p in built() if p["pack"] == "players"]
+    assert days
+    seen = {}
+    for p in days:
+        trio = [players[c["id"]] for c in p["categories"]]
+        kinds = set()
+        for card in p["cards"]:
+            cat = CATEGORIES[card["id"]]
+            assert all(cat.clear(x) for x in trio), (p["date"], card["name"])
+            assert "".join(l for l, x in zip("ABC", trio) if cat.test(x)) == card["region"], (p["date"], card["name"])
+            kinds.add(cat.kind if cat.kind in ("team", "position") else "other")
+        assert kinds == {"team", "position", "other"}, p["date"]
+        day = dt.date.fromisoformat(p["date"])
+        for c in p["categories"]:   # no player twice within the repeat window
+            assert c["id"] not in seen or (day - seen[c["id"]]).days > generate.REPEAT_DAYS * 3, (p["date"], c["label"])
+            seen[c["id"]] = day

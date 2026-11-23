@@ -80,7 +80,7 @@ def compatible(cats: list[Category], members: dict[str, set]) -> bool:
         if inter / min(len(sa), len(sb)) > 0.85 or inter / len(sa | sb) > 0.45:
             return False                     # nearly the same circle twice
         if {a.id, b.id} in ({"hr500", "hr400"}, {"w300", "w200"}, {"s_hr50", "s_hr40"},
-                            {"born_dr", "born_intl"}, {"lefty_bat", "switch"}):
+                            {"born_dr", "born_intl"}, {"lefty_bat", "switch"}, {"lg_nl", "lg_al"}):
             return False
     return True
 
@@ -196,19 +196,104 @@ def baseball_maker(players: dict[str, dict]):
     return make
 
 
+# Monday "Three players" (owner's design, 2026-11-23; replaced cities & states from PLAYERS_SINCE):
+# the three circles are three players and the cards are teams, positions and stats / honors, one
+# card per part of the diagram (8 in all, no spares). A card belongs where it's true of exactly
+# those players, by the same rules and clear-cut filters as the baseball circles (Category.clear
+# for all three players), so nobody is a borderline case for any card.
+NEED_PLAYERS = {"ABC": 1, "AB": 1, "AC": 1, "BC": 1, "A": 1, "B": 1, "C": 1, "": 1}
+PLAYERS_SINCE = dt.date(2026, 11, 23)
+PLAYERS_FAME = FAME_FLOOR["medium"]     # well-known players: a fan must know their teams and numbers
+PLAYERS_ATTEMPTS = 4000
+CARD_KIND = {"team": "team", "position": "position", "career": "career stat", "season": "season stat",
+             "award": "honor", "bio": "bio"}
+CARD_WEIGHT = {"team": 1.0, "position": 1.0, "career": 0.9, "season": 0.8, "award": 0.9, "bio": 0.5}
+CARD_ID_WEIGHT = {"hof": 0.3, "lg_nl": 1.0, "lg_al": 1.0}   # most famous trios are all Hall of Famers: a rarer pick, so it isn't always the middle
+SAME_IDEA = ({"hr500", "hr400"}, {"w300", "w200"}, {"s_hr50", "s_hr40"}, {"born_dr", "born_intl"}, {"lefty_bat", "switch"}, {"lg_nl", "lg_al"})
+
+
+def card_label(c: Category) -> str:
+    """The card's short text: the team's name, the position, or the stat's label."""
+    return c.label.removeprefix("Played for the ") if c.kind == "team" else c.label
+
+
+def players_maker(players: dict[str, dict]):
+    """(day, level, recent, yesterday) -> puzzle, for Monday's three-players pack. `recent`: the
+    player ids of recent Monday puzzles (no player twice within the repeat window)."""
+    cats = list(CATEGORIES.values())
+    base = [p for p in players.values() if p["fame"] >= PLAYERS_FAME and p["last"] >= 1910]
+    regions = ("ABC", "AB", "AC", "BC", "A", "B", "C", "")
+
+    def assign(rng, by_region):
+        """One card per region: every kind of card (team, position, other) at least once, no two
+        cards of the same idea, a varied mix. Best of a few random draws."""
+        best = None
+        for _ in range(40):
+            chosen = {}
+            for k in regions:
+                opts = [c for c in by_region[k] if not any({c.id, d.id} in SAME_IDEA for d in chosen.values())]
+                if not opts:
+                    break
+                chosen[k] = rng.choices(opts, weights=[CARD_ID_WEIGHT.get(c.id, CARD_WEIGHT[c.kind]) for c in opts])[0]
+            if len(chosen) < len(regions):
+                continue
+            kinds = [("team" if c.kind == "team" else "position" if c.kind == "position" else "other") for c in chosen.values()]
+            if not {"team", "position", "other"} <= set(kinds):
+                continue
+            score = -sum(max(0, kinds.count(k) - 3) for k in set(kinds)) + 0.3 * len({c.kind for c in chosen.values()}) \
+                + 0.01 * rng.random()
+            if best is None or score > best[0]:
+                best = (score, chosen)
+        return best
+
+    def make(day, level, recent, yesterday):
+        rng = random.Random(f"triple-play-players-{day.isoformat()}")
+        used = set().union(*recent) if recent else set()
+        pool = [p for p in base if p["id"] not in used]
+        candidates = []
+        for _ in range(PLAYERS_ATTEMPTS):
+            trio = draw(rng, pool, 3, set(), lambda p: p["fame"])
+            if trio is None:
+                break
+            by_region = {k: [] for k in regions}
+            for c in cats:
+                if all(c.clear(p) for p in trio):
+                    by_region["".join(l for l, p in zip("ABC", trio) if c.test(p))].append(c)
+            if any(not by_region[k] for k in regions):
+                continue
+            got = assign(rng, by_region)
+            if got:
+                candidates.append((got[0] + 0.002 * sum(p["fame"] for p in trio), trio, got[1]))
+                if len(candidates) >= KEEP_BEST_OF:
+                    break
+        if not candidates:
+            raise RuntimeError(f"no valid three-players puzzle for {day}")
+        _, trio, chosen = max(candidates, key=lambda t: t[0])
+        cards = [{"id": c.id, "name": card_label(c), "sub": CARD_KIND[c.kind], "rule": c.rule, "region": k,
+                  "facts": [c.fact(p) for p in trio]} for k, c in chosen.items()]
+        rng.shuffle(cards)
+        return {"pack": "players", "level": level, "need": NEED_PLAYERS,
+                "categories": [{"id": p["id"], "label": p["name"], "rule": f"{p['name']}, {p['first']}–{p['last']}."}
+                               for p in trio],
+                "cards": cards}
+    return make
+
+
 def generate(players: dict[str, dict], start: dt.date, end: dt.date, log=print,
              places=None, places_weekday: int = 0, fixed: dict[str, dict] | None = None) -> list[dict]:
     """The daily schedule: baseball every day, except `places_weekday` (0 = Monday, MLB's
-    traditional off day) when a places maker is given. One numbering across both packs.
+    traditional off day): three players from PLAYERS_SINCE, before that cities & states when a
+    places maker is given. One numbering across the packs.
     `fixed`: date -> an already-published puzzle, used as is (and as the history that later
     days must not repeat)."""
-    makers = {"baseball": baseball_maker(players)}
+    makers = {"baseball": baseball_maker(players), "players": players_maker(players)}
     if places is not None:
         makers["places"] = places
     out, history = [], {k: [] for k in makers}
     day, number = start, 1
     while day <= end:
-        pack = "places" if "places" in makers and day.weekday() == places_weekday else "baseball"
+        pack = ("baseball" if day.weekday() != places_weekday else "players" if day >= PLAYERS_SINCE
+                else "places" if "places" in makers else "baseball")
         level = WEEKDAY_LEVEL[day.weekday()]
         hist = history[pack]
         recent = [h for d, h in hist if (day - d).days <= REPEAT_DAYS * (1 if pack == "baseball" else 3)]

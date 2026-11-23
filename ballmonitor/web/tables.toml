@@ -147,7 +147,7 @@ path = "qb_games/"
 backend = "tabc"
 filter = "yds >= 400"
 sort = { column = "season", desc = true }
-order = ["season", "week", "type", "player", "team", "opp", "cmp", "att", "yds", "td", "int", "rating", "sacks", "epa", "rush_yds"]
+order = ["season", "week", "player", "team", "opp", "cmp", "att", "yds", "td", "int", "rating", "rush_yds"]
 limit = 100
 how = "Weekly NFL passing stats from nflverse (nflverse.com, CC BY 4.0), with one row for every player who threw a pass in a game. Rating is the official NFL passer rating for that game. Tip: if you sort by Rating or Yds/att, add att >= 15 to the filter so one-pass trick plays don't clog the top. Use the short names under \"What the columns mean\", like yds >= 400 and td >= 4."
 examples = [

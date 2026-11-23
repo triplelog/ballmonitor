@@ -685,11 +685,12 @@ async function renderDataTable(id) {
     try {
       const Tabview = await loadEmbed(t.server);
       try { shownTable?.destroy?.(); } catch { /* an older embed */ }
-      // fans get the filter, the Try buttons, sorting, the column list and downloads; adding columns,
-      // stats and groups stay on tabdn.com. `labels` and `timing` need tabview 2026-11-10 or later
-      // (an older embed ignores them).
+      // fans get the filter (its numbers draggable), the Try buttons, sorting, the column list, downloads
+      // and the full page button; adding columns, variables, stats, groups and cards stay on tabdn.com.
+      // `labels` and `timing` need tabview 2026-11-10 or later, `variables`/`cards` 2026-11-22 (an older
+      // embed ignores them).
       shownTable = Tabview.mount(host, { server: t.server, backend: t.backend, theme: "light", timing: false,
-        hide: ["compiled", "helper", "computed", "stats", "group"], ...t.options, ...options });
+        hide: ["compiled", "helper", "computed", "stats", "group", "variables", "cards"], ...t.options, ...options });
     } catch (e) {
       host.replaceChildren(el("p", {}, "The table server isn't responding right now. Please try again in a bit."));
       console.error(e);

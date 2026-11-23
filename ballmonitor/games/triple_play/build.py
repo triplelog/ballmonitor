@@ -25,7 +25,8 @@ HERE = Path(__file__).parent
 OUT = HERE / "web" / "puzzles"
 TABLES = ["People", "Batting", "Pitching", "Fielding", "Appearances", "AwardsPlayers", "AllstarFull",
           "HallOfFame", "Teams", "TeamsFranchises", "SeriesPost"]
-FIRST_DAY = dt.date(2026, 11, 9)  # puzzle #1 (the Oct 27-Nov 8 puzzles without spares were removed)
+FIRST_DAY = dt.date(2026, 11, 23)  # puzzle #1. 2026-11-23 (owner): the puzzles made by older rules
+# (Nov 9-22 baseball, the cities & states Mondays) were removed and the numbering restarted
 
 
 def unpack(src: Path) -> None:
@@ -75,8 +76,6 @@ def main(argv=None) -> int:
         unpack(args.lahman)
     players = facts.load()
     last = max(p["last"] for p in players.values())
-    from ballmonitor.games.triple_play.places import model as places
-    entities = places.load()
     fixed = {}
     if args.keep_through:
         keep = args.keep_through.isoformat()
@@ -84,9 +83,9 @@ def main(argv=None) -> int:
             fixed.update({p["date"]: p for p in json.loads(f.read_text(encoding="utf-8")) if p["date"] <= keep})
         print(f"keeping {len(fixed)} published puzzles through {keep}")
     # published puzzles are used as they are, and later days are checked against them for repeats
-    puzzles = generate.generate(players, args.start, args.end, places=places.maker(entities) if entities else None,
+    puzzles = generate.generate(players, args.start, args.end,
                                 fixed=fixed)
-    write("daily", puzzles, f"Lahman Baseball Database (stats through {last}); places: Wikipedia lists (2026 season)")
+    write("daily", puzzles, f"Lahman Baseball Database (stats through {last})")
     print(f"wrote {len(puzzles)} puzzles to {OUT / 'daily'} (stats through {last})")
     return 0
 

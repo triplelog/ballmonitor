@@ -59,6 +59,12 @@ def known_for(p: dict, fid: str) -> bool:
     return len(p["franch_years"].get(fid, ())) >= TEAM_MIN_SEASONS and p["g"] > 0 and g / p["g"] >= TEAM_MIN_SHARE
 
 
+def _never(name: str) -> str:
+    """"never a Cub", "never an Astro", "never a Red Sox player"."""
+    one = f"{name} player" if name.endswith("Sox") else name[:-1] if name.endswith("s") else name
+    return f"never {'an' if one[0] in 'AEIOU' else 'a'} {one}"
+
+
 def team(fid: str, name: str) -> Category:
     return Category(
         f"team_{fid.lower()}", f"Played for the {name}",
@@ -68,7 +74,28 @@ def team(fid: str, name: str) -> Category:
         "team", lambda p: p["franch"].get(fid, 0) > 0,
         clear=lambda p: p["franch"].get(fid, 0) == 0 or known_for(p, fid),
         close=lambda p: (lambda g: 1.0 if 30 <= g < 80 else 0.5 if 80 <= g < 200 else 0.0)(p["franch"].get(fid, 0)),
-        fact=lambda p: f"{name}: {_fmt(p['franch'].get(fid, 0))} G" if p["franch"].get(fid, 0) else f"never a {name[:-1] if name.endswith('s') else name}")
+        fact=lambda p: f"{name}: {_fmt(p['franch'].get(fid, 0))} G" if p["franch"].get(fid, 0) else _never(name))
+
+
+def league(lg: str, name: str) -> Category:
+    """Always played in one league. Clear-cut like a team: his whole career there, or at least
+    TEAM_MIN_SEASONS seasons and TEAM_MIN_SHARE of his games in other leagues (a late cup of coffee
+    in the other league never appears)."""
+    def other(p):
+        return p["g"] - p["lg"].get(lg, 0)
+
+    def clear(p):
+        seasons = {y for k, ys in p["lg_years"].items() if k != lg for y in ys}
+        return other(p) == 0 or (len(seasons) >= TEAM_MIN_SEASONS and other(p) / p["g"] >= TEAM_MIN_SHARE)
+
+    return Category(
+        f"lg_{lg.lower()}", f"Always played in the {lg}",
+        f"Every game of his career was for a {name} team. Only players with no games elsewhere, or at least "
+        f"{TEAM_MIN_SEASONS} seasons and {TEAM_MIN_SHARE:.0%} of their games in other leagues, appear.",
+        "bio", lambda p: p["g"] > 0 and other(p) == 0, clear=clear,
+        close=lambda p: 0.7 if 0 < other(p) < TEAM_MIN_SHARE * p["g"] else 0.0,
+        fact=lambda p: f"all {_fmt(p['g'])} G in the {lg}" if other(p) == 0
+        else f"{lg}: {_fmt(p['lg'].get(lg, 0))} of {_fmt(p['g'])} G")
 
 
 POS_SHORT = {"c": "C", "1b": "1B", "2b": "2B", "3b": "3B", "ss": "SS", "of": "OF", "p": "P"}
@@ -151,6 +178,7 @@ def _ba(x):
 
 def build() -> list[Category]:
     cats = [team(fid, name) for fid, name in FRANCHISES.items()]
+    cats += [league("NL", "National League"), league("AL", "American League")]
     cats += [position("c", "Catcher"), position("1b", "First baseman"), position("2b", "Second baseman"),
              position("3b", "Third baseman"), position("ss", "Shortstop"), position("of", "Outfielder"),
              position("p", "Pitcher", hitters=False)]

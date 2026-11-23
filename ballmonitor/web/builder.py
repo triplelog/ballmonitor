@@ -39,7 +39,7 @@ GAME_PATHS = ["/triple/", "/lineup/", "/27k/", "/hometurf/"]
 # Share tags the build adds to the games' pages: path -> (title, description)
 GAME_META = {
     "/triple/": ("Triple Play · Daily baseball Venn puzzle",
-                 "Sort baseball players (or cities and states on Mondays) into three overlapping circles."),
+                 "Sort baseball players into three overlapping circles—or, on Mondays, teams, positions and stats among three players."),
     "/lineup/": ("Lineup · Daily batting-order puzzle",
                  "Arrange nine real hitters from baseball history into the batting order that scores the most runs."),
     "/27k/": ("27K · Baseball pitching game",

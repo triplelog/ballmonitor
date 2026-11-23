@@ -1,13 +1,14 @@
 // Triple Play: fill the spots in a three-circle Venn diagram. One check, one point per card.
-// Baseball days: 11 spots (14 on Sunday), one card per spot. Cities & states (Monday): 17 spots
-// and a spare card for each part (25 cards): any card that fits scores, leftovers don't count.
+// Baseball days: 11 spots (14 on Sunday), one card per spot. Monday (from 2026-11-30): three
+// players are the circles and the cards are teams, positions and stats, one per part (8 spots).
+// Cities & states (Mondays before that): 17 spots and a spare card for each part (25 cards).
 // The board's shape comes from each puzzle (`need`).
 // Puzzles come from puzzles/<pack>/index.json + one file per month (built by
 // `python -m ballmonitor.games.triple_play.build`). Progress is kept in localStorage.
 (function () {
   "use strict";
 
-  const PACKS = { baseball: "⚾ Baseball", places: "🏙️ Cities & States" };
+  const PACKS = { baseball: "⚾ Baseball", players: "🧢 Three Players", places: "🏙️ Cities & States" };
   const NEED_17 = { ABC: 1, AB: 2, AC: 2, BC: 2, A: 3, B: 3, C: 3, "": 1 };
   let NEED = NEED_17;                // set per puzzle (Sunday's big puzzle has 25 cards)
   const REGIONS = ["ABC", "AB", "AC", "BC", "A", "B", "C", ""];
@@ -84,7 +85,9 @@
   let SLOTS = computeSlots();
 
   // ── storage ──────────────────────────────────────────────────────────────
-  const key = (date) => `triple-play:daily:${date}`;
+  // v2 since 2026-11-23, when the archive restarted at #1 with new puzzles (a save from the
+  // earlier puzzle of the same date would point at the wrong cards)
+  const key = (date) => `triple-play:v2:${date}`;
   // Storage can be blocked (Safari private mode, strict settings): then even reading
   // `localStorage` throws, and the puzzle still works, just without saving.
   const store = {
@@ -126,7 +129,7 @@
       el("strong", {}, `#${p.number}`),
       el("span", {}, d.toLocaleDateString(undefined, { weekday: "long", month: "long", day: "numeric", year: "numeric" })),
       el("span", { class: `level pack-${p.pack}` }, PACKS[p.pack] || p.pack),
-      p.pack === "places" ? null : el("span", { class: "level" }, p.level === "big" ? `Big Sunday · ${total()} spots` : p.level[0].toUpperCase() + p.level.slice(1)),
+      p.pack !== "baseball" ? null : el("span", { class: "level" }, p.level === "big" ? `Big Sunday · ${total()} spots` : p.level[0].toUpperCase() + p.level.slice(1)),
       p.date !== available().at(-1)?.date ? el("span", {}, "· from the archive") : null,
     ].filter(Boolean));
     drawBoard();
@@ -213,7 +216,7 @@
     else if (total() > 17) t.style.fontSize = "11.5px";
     g.append(t);
     const tip = sv("title");
-    tip.textContent = `${c.name} (${c.sub})`;
+    tip.textContent = c.rule ? `${c.name}: ${c.rule}` : `${c.name} (${c.sub})`;
     g.append(tip);
     requestAnimationFrame(() => {
       if (t.getComputedTextLength && t.getComputedTextLength() > CHIP_W - 10) {
@@ -243,7 +246,7 @@
     const unplaced = cards.map((c, i) => i).filter((i) => state.place[i] === undefined);
     for (const i of unplaced) {
       const c = cards[i];
-      const chip = el("div", { class: "chip" + (state.sel === i ? " sel" : ""), title: `${c.name} (${c.sub})` },
+      const chip = el("div", { class: "chip" + (state.sel === i ? " sel" : ""), title: c.rule ? `${c.name}: ${c.rule}` : `${c.name} (${c.sub})` },
         c.name, el("small", {}, c.sub));
       if (!state.checked) chip.addEventListener("pointerdown", (e) => startDrag(e, i));
       tray.append(chip);
@@ -282,7 +285,7 @@
         return el("div", { class: `ans ${ok ? "ok" : unused ? "spare" : "bad"}` },
           el("div", { class: "who" }, `${ok ? "✓" : unused ? "–" : "✗"} ${c.name} `, el("span", { class: "hint" }, c.sub)),
           el("div", { class: "where" }, ok ? name(c.region) : unused ? `${name(c.region)} (not used)` : `${name(c.region)} — you had: ${name(state.place[i])}`),
-          el("ul", {}, ...c.facts.map((f, k) => el("li", {}, `${"ABC"[k]}: ${f}`))));
+          el("ul", {}, ...c.facts.map((f, k) => el("li", {}, `${p.pack === "players" ? p.categories[k].label : "ABC"[k]}: ${f}`))));
       })));
   }
 
@@ -393,7 +396,7 @@
   // ── modals ───────────────────────────────────────────────────────────────
   let modalReturn = null;   // what had focus before the modal opened
   function modal(...content) {
-    $("#modal-body").replaceChildren(...content);
+    $("#modal-body").replaceChildren(...content.filter((x) => x !== null && x !== undefined));
     if ($("#modal").classList.contains("hidden")) modalReturn = document.activeElement;
     $("#modal").classList.remove("hidden");
     $("#modal-close").focus();
@@ -414,10 +417,10 @@
         el("li", {}, "2 in each single-circle section (3 on Sundays)"),
         el("li", {}, "1 outside all three circles")),
       el("p", {}, "Every baseball puzzle pairs a team, a position, and a third category (a stat milestone, an award, or birthplace). We only include players who clearly fit—or clearly don't fit—each circle."),
-      el("p", {}, "Mondays feature a larger Cities & States puzzle with 17 spots (2 per overlap, 3 per single circle) and 25 cards, giving you an extra option for every section. Leftover cards aren't scored."),
+      el("p", {}, "Mondays flip it around: the three circles are three players, and the 8 cards are teams, positions and stats or honors. Each card goes where it's true of exactly those players (the center if all three, outside if none), one card per section, by the same clear-cut rules."),
       el("p", {}, "Drag a card onto the diagram, or tap a card and then tap where you want it. Tap a placed card twice to move it back to the tray."),
       el("p", {}, "You only get one check, and you score a point for every card in the right spot."),
-      el("p", {}, "A fresh puzzle drops every day: Cities & States on Monday (MLB's traditional off day), and baseball players Tuesday through Sunday—Tuesday easiest (the most famous players), Friday and Saturday hardest, with a bigger board on Sunday."),
+      el("p", {}, "A fresh puzzle drops every day: Three Players on Monday (MLB's traditional off day), and baseball players Tuesday through Sunday—Tuesday easiest (the most famous players), Friday and Saturday hardest, with a bigger board on Sunday."),
       el("p", { class: "hint" }, "Tip: tap any circle label to see its exact cutoff rules."),
       el("p", { class: "hint" }, `Data: ${state.index?.source || "Lahman Baseball Database"}.`));
   }
@@ -426,8 +429,11 @@
     modal(el("h2", {}, "Today's rules"),
       el("ul", { class: "rule-list" }, ...p.categories.map((c, i) =>
         el("li", {}, el("strong", { style: `color:${COLORS["ABC"[i]]}` }, c.label), " — ", c.rule))),
+      p.pack === "players" ? el("ul", { class: "rule-list" }, ...p.cards.map((c) => el("li", {}, el("strong", {}, c.name), " — ", c.rule))) : null,
       el("p", { class: "hint" }, p.pack === "places"
         ? "Teams and facts reflect the 2026 season. Metro areas include suburban teams (so the Giants and Jets count for New York), and states include every team and school inside their borders."
+        : p.pack === "players"
+        ? "Stats are regular-season totals from the Lahman Baseball Database. Every card is a clear yes or clear no for each player: a team he played at least 3 seasons and 25% of his games for (or never played for); a position where he played 78%+ of his games (or under 50 games); and no stat where he's anywhere near the cutoff."
         : "Stats are regular-season totals from the Lahman Baseball Database. Every player is a clear yes or clear no for each circle: either zero games with a team or at least 3 seasons and 25% of their games there; either 78%+ of games at a position or under 50 games there; and nobody anywhere near a stat's cutoff."));
   }
   async function showArchive() {
@@ -455,7 +461,7 @@
       const d = new Date(q.date + "T12:00:00");
       return el("button", { class: saved?.checked ? "done" : "", onclick: () => { closeModal(false); location.hash = q.date; } },
         `#${q.number} · ${d.toLocaleDateString(undefined, { month: "short", day: "numeric" })}`,
-        el("span", { class: "s" }, `${q.pack === "places" ? "cities & states" : q.level === "big" ? "big Sunday" : q.level} · ${s}`));
+        el("span", { class: "s" }, `${q.pack === "places" ? "cities & states" : q.pack === "players" ? "three players" : q.level === "big" ? "big Sunday" : q.level} · ${s}`));
     });
     const summary = n
       ? `${n} played · ${right} of ${spots} spots right (${Math.round(100 * right / spots)}%) · ${perfect} perfect`

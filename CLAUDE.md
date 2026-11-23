@@ -232,7 +232,7 @@ pytest ballmonitor/models/race_time                # one model
   (tabc/sqldn, ~/Desktop/portfolio/mathzetta/tabdn) get a page at `/tables/<id>/` with a live
   filter/sort table. The data is too big to send to the browser, so the *server* filters
   and sorts; `site.js` loads tabview's embed from `<server><path>web/vendor/tabview-embed.js` and
-  mounts it with the advanced controls hidden (adding columns, stats, groups) and `[table.labels]`
+  mounts it with the advanced controls hidden (adding columns, variables, stats, groups, cards) and `[table.labels]`
   as the headers (`labels`/`timing` need tabview from 2026-11-10 on the server). A table whose `[servers]` address is blank stays off the site. `ballmonitor tables
   [--check]` lists them and asks each server for its columns (and flags names in the config it lacks).
   `ballmonitor/data_tables/build.py` makes the CSVs for the QB, NBA and WNBA tables (nflverse,
@@ -354,8 +354,8 @@ Games: `new27K/` (27K, at `/27k/`), `ballmonitor/games/lineup/` (Lineup daily ba
 distribution in the browser (`web/chain.js`, tested against chain.py under node), plus the 20 best orders and a
 hitter-by-slot grid prebuilt into each puzzle; puzzles prebuilt by `python -m ballmonitor.games.lineup.build`,
 needs numpy and the Lahman CSVs from Triple Play; see its README), `web/static/game.html` (Pitch Guesser, local only for now) and
-`ballmonitor/games/home_turf/` (Home Turf: 4-manager strategy game, you vs 3 AI (Rookie / Pro / All-Star / Hall of Fame), 9 innings / doubleheader (18) / no limit with save slots, on a 40-territory, 7-region birthplace map with a rotating draft; soldiers are natives called up best-first, battles draw one real Open WAR season (1901 on) each (used up), defender +0.5; at `/hometurf/` (copied by the build like the other games); see its README), `ballmonitor/games/triple_play/` (Triple Play daily Venn puzzle at `/triple/`: baseball Tue-Sun since 2026-11-23 always a team + a position (75% of games) + a stat/honor circle with only clear-cut players, 11 spots (Sunday 14), no spares; cities & states 17 spots and 25 cards, a spare per part; baseball from the
-Lahman database, cities & states on Monday from Wikipedia lists; puzzles prebuilt by
+`ballmonitor/games/home_turf/` (Home Turf: 4-manager strategy game, you vs 3 AI (Rookie / Pro / All-Star / Hall of Fame), 9 innings / doubleheader (18) / no limit with save slots, on a 40-territory, 7-region birthplace map with a rotating draft; soldiers are natives called up best-first, battles draw one real Open WAR season (1901 on) each (used up), defender +0.5; at `/hometurf/` (copied by the build like the other games); see its README), `ballmonitor/games/triple_play/` (Triple Play daily Venn puzzle at `/triple/`: baseball Tue-Sun since 2026-11-23 always a team + a position (75% of games) + a stat/honor circle with only clear-cut players, 11 spots (Sunday 14), no spares; Monday "Three Players": the circles are three players and the 8 cards (one per part, no spares) are teams, positions and stats/honors, by the same clear-cut rules (incl. "Always played in the NL/AL"); #1 = 2026-11-23 (older-rules puzzles and the cities & states Mondays removed); all from the
+Lahman database; puzzles prebuilt by
 `python -m ballmonitor.games.triple_play.build`; see its README).
 
 Retired and non-sports models live in `~/Desktop/projects/modelstuff` (`archived_models/`: ncaab_seeding,

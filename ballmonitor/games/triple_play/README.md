@@ -1,8 +1,10 @@
 # Triple Play
 
 A daily puzzle: three circles and cards to place in the one part of the diagram that fits.
-Puzzle #1 is 2026-11-09; the first 13 puzzles (Oct 27-Nov 8, no spares) were removed and the
-numbering restarted. One check, one point per spot. Archive of past days; progress kept in the
+Puzzle #1 is 2026-11-23: the puzzles made by older rules (Oct 27-Nov 22: the baseball days before
+the team + position + stat rules, and the cities & states Mondays) were removed from the site and
+the numbering restarted (owner, 2026-11-23). Saves use a new key (`triple-play:v2:<date>`) so an
+old save never lands on the new puzzle of the same date. One check, one point per spot. Archive of past days; progress kept in the
 browser (localStorage).
 
 - **Baseball** (from 2026-11-23, `RULES_SINCE`; owner's rules): every puzzle has one team
@@ -18,9 +20,26 @@ browser (localStorage).
   for the old board, so baseball uses 11 spots (1 middle, 1 per overlap, 2 per single circle,
   1 outside; `NEED_BASEBALL`), Sunday 14 (3 per single circle; `NEED_BASEBALL_BIG`), and no
   spare cards. Puzzles through 2026-11-22 keep the older rules and the 17-spot board.
-- **Cities & states** (Monday): 17 spots (1 in the middle, 2 in each two-circle overlap, 3 in
-  each one-circle-only part, 1 outside) and 25 cards: each part has one spare (`SPARE`); any
-  card that fits a part scores and the leftover cards don't count.
+- **League circles/cards** "Always played in the NL" / "Always played in the AL": every game of
+  his career in that league. Clear-cut like a team: no games elsewhere, or at least 3 seasons and
+  25% of his games in other leagues (Lahman counts the Negro Leagues, so Mays' 13 games for the
+  1948 Birmingham Black Barons keep him out of "Always played in the NL"; so do Aaron's two AL
+  seasons).
+- **Three Players** (Monday, from 2026-11-23, `PLAYERS_SINCE`; owner's design): the three
+  circles are three well-known players (fame at least the medium floor, `PLAYERS_FAME`) and the
+  cards are things about them: teams, positions, and stats / honors / bio (the baseball
+  categories). Exactly one card per part, 8 in all (`NEED_PLAYERS`), no spares. A card goes
+  where it's true of exactly those players, by the same rules, and only cards that are clear-cut
+  for all three players are used (`Category.clear`: a team he played 3+ seasons and 25% of his
+  games for, or never; 78%+ of his games at a position, or under 25% and 50 games; nowhere near
+  a stat's cutoff). Every puzzle has at least one team, one position and one other card, no two
+  cards of the same idea (400 and 500 HR), and "Hall of Famer" is a rarer pick (most famous
+  trios are all in the Hall). No player appears twice within 360 days. The answers list each
+  player's number for every card (`fact`).
+- **Cities & states** (retired 2026-11-23; no longer on the site): 17 spots (1 in the
+  middle, 2 in each two-circle overlap, 3 in each one-circle-only part, 1 outside) and 25
+  cards: each part has one spare (`SPARE`); any card that fits a part scores and the leftover
+  cards don't count. The `places/` pack below is kept but no longer wired into the build.
 
 - `web/` — the game (vanilla JS, no build step). Served at `/triple/` by `ballmonitor serve`
   and copied to `dist/triple/` by `ballmonitor build-site`.
@@ -37,7 +56,7 @@ browser (localStorage).
   three circles within 120 days and any circle used the day before.
 - `build.py` — writes `web/puzzles/daily/index.json` + one JSON per month.
 
-Schedule: cities & states on Monday (MLB's traditional off day); baseball Tuesday (easy),
+Schedule: Three Players on Monday (MLB's traditional off day); baseball Tuesday (easy),
 Wednesday/Thursday (medium), Friday/Saturday (hard), and Sunday's bigger board (before
 2026-11-23: 25 spots and 33 cards, `NEED_BIG`). Difficulty = how famous the players are (fame floor) and how close they sit
 to a circle's line (`Category.close`: 405 HR for "400 career home runs", 60 games for a team,
