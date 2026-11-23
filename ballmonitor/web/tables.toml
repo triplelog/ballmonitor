@@ -21,8 +21,8 @@ sports = "https://data.tabdn.com/"
 
 [[table]]
 id = "batting-games"
-title = "Every batting line in every game"
-summary = "Each player's line in each big-league game since 1897: 5.7 million rows to filter and sort."
+title = "Big-league batting game logs"
+summary = "Every player's batting line in every big-league game since 1897—5.7 million rows you can filter and sort."
 sport = "Baseball"
 server = "retrosheet"
 path = "batting/"
@@ -31,7 +31,7 @@ filter = "hr >= 3"
 sort = { column = "date", desc = true }
 order = ["date", "player", "team", "opp", "ab", "r", "h", "d", "t", "hr", "rbi", "w", "k", "sb"]
 limit = 100
-how = "Box scores from Retrosheet (retrosheet.org), one row per player per game. Type a filter such as hr >= 3 and team = \"NYA\" (filters use the short names under \"What the columns mean\"), or click a column to sort."
+how = "Box scores from Retrosheet (retrosheet.org), with one row per player per game. Type a filter like hr >= 3 and team = \"NYA\" using the short column names listed under \"What the columns mean\", or click any column header to sort."
 examples = [
   { label = "Three-homer games", filter = "hr >= 3", sort = { column = "date", desc = true } },
   { label = "Most hits in a game", filter = "ab > 0", sort = { column = "h", desc = true } },
@@ -90,8 +90,8 @@ roe = "reached on error"
 
 [[table]]
 id = "pitching-games"
-title = "Every pitching line in every game"
-summary = "Each pitcher's line in each big-league game since 1897: no-hitters, 15-strikeout games, marathon starts."
+title = "Big-league pitching game logs"
+summary = "Every pitcher's line in every big-league game since 1897—no-hitters, 15-strikeout gems, and marathon outings."
 sport = "Baseball"
 server = "retrosheet"
 path = "pitching/"
@@ -100,7 +100,7 @@ filter = "k >= 15"
 sort = { column = "date", desc = true }
 order = ["date", "player", "team", "opp", "ipouts", "h", "r", "er", "w", "k", "hr", "bfp", "decision"]
 limit = 100
-how = "Box scores from Retrosheet (retrosheet.org), one row per pitcher per game. Outs counts outs recorded (27 = nine innings); in a filter it's ipouts, as in ipouts >= 27. Filters use the short names under \"What the columns mean\"."
+how = "Box scores from Retrosheet (retrosheet.org), with one row per pitcher per game. The Outs column counts outs recorded (27 = nine innings); in a filter it's ipouts, as in ipouts >= 27. Use the short names under \"What the columns mean\" when writing filters."
 examples = [
   { label = "No-hitters", filter = "h = 0 and ipouts >= 27 and bfp > 0", sort = { column = "date", desc = true } },
   { label = "18+ strikeouts", filter = "k >= 18", sort = { column = "k", desc = true } },
@@ -139,8 +139,8 @@ decision = "W, L, S or blank"
 
 [[table]]
 id = "qb-games"
-title = "Every quarterback game since 1999"
-summary = "Each NFL passer's line in each game, regular season and playoffs: 400-yard days, perfect ratings, five-interception disasters."
+title = "NFL quarterback game logs"
+summary = "Every NFL passer's regular-season and playoff game since 1999—400-yard outbursts, perfect passer ratings, and rough days."
 sport = "Pro football"
 server = "sports"
 path = "qb_games/"
@@ -149,7 +149,7 @@ filter = "yds >= 400"
 sort = { column = "season", desc = true }
 order = ["season", "week", "type", "player", "team", "opp", "cmp", "att", "yds", "td", "int", "rating", "sacks", "epa", "rush_yds"]
 limit = 100
-how = "NFL weekly player stats from nflverse (nflverse.com, CC BY 4.0), one row per player per game with a pass thrown. Rating is the official NFL passer rating, worked out from each game's line. Sorting by Rating or Yds/att? Add a minimum such as att >= 15 to the filter, or a receiver's one trick-play pass tops the list. Filters use the short names under \"What the columns mean\", as in yds >= 400 and td >= 4."
+how = "Weekly NFL passing stats from nflverse (nflverse.com, CC BY 4.0), with one row for every player who threw a pass in a game. Rating is the official NFL passer rating for that game. Tip: if you sort by Rating or Yds/att, add att >= 15 to the filter so one-pass trick plays don't clog the top. Use the short names under \"What the columns mean\", like yds >= 400 and td >= 4."
 examples = [
   { label = "400-yard games", filter = "yds >= 400", sort = { column = "yds", desc = true } },
   { label = "Perfect passer rating (20+ attempts)", filter = "rating >= 158.3 and att >= 20", sort = { column = "season", desc = true } },

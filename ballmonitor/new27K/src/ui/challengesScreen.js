@@ -29,8 +29,8 @@ export function renderChallenges(app, args = {}) {
 
         let body;
         if (tab === 'challenges') {
-            body = `<p class="muted">You pitch for the ${esc(teamName(app.league.teams[app.prefs.userTeamId]))} (change your team in Quick Game) against the league’s best lineup, the ${esc(teamName(opp))}.
-                Challenges use the standard formulas, plus any rules the challenge changes.</p>`
+            body = `<p class="muted">You’re pitching for the ${esc(teamName(app.league.teams[app.prefs.userTeamId]))} (switch teams in Quick Game) against the league’s toughest lineup, the ${esc(teamName(opp))}.
+                Challenges always use the standard formulas plus any special rules for that challenge.</p>`
             + TIERS.map(([tier, sub]) => {
                 const list = CHALLENGES.filter((c) => c.tier === tier);
                 return `<h2 class="ch-tier">${tier} <span class="muted" style="font-size:13px;font-weight:400">${sub}</span></h2>
@@ -49,7 +49,7 @@ export function renderChallenges(app, args = {}) {
             }).join('');
         } else {
             const tiers = ['At-bat', 'Inning', 'Game'];
-            body = `<p class="muted">Earned in any game you pitch: quick games, challenges and (soon) the season.</p>`
+            body = `<p class="muted">Unlock achievements in any game you pitch—quick games, challenges, seasons, or careers.</p>`
             + tiers.map((tier) => `<h2 class="ch-tier">${tier}</h2><div class="ach-grid">${ACHIEVEMENTS.filter((a) => a.tier === tier).map((a) => {
                 const got = ach[a.id];
                 return `<div class="panel ach ${got ? 'got' : ''}">

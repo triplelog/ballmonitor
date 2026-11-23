@@ -112,8 +112,8 @@
         el("span", { title: "Batting average / on-base percentage / slugging" }, `${f3(c.avg)} / ${f3(c.obp)} / ${f3(c.slg)}`),
         el("span", { title: "On-base percentage plus slugging" }, el("b", {}, `${f3(ops)} OPS`)),
         el("span", {}, `${c.hr} HR`), el("span", {}, `${c.bb} BB`), el("span", {}, `${c.so} SO`),
-        el("span", { class: "clones", title: `A team of nine ${c.name}s would score ${clones.toFixed(2)} runs a game with this game's rules` },
-          `Nine of him: ${clones.toFixed(2)} runs a game`)));
+        el("span", { class: "clones", title: `A lineup of nine ${c.name}s would score ${clones.toFixed(2)} runs per game under these rules` },
+          `Team of 9: ${clones.toFixed(2)} R/G`)));
   }
 
   function drawLineup() {
@@ -147,10 +147,10 @@
     $("#btn-play").disabled = state.done;
     $("#btn-reset").textContent = state.done ? "Back to my order" : "Reset";
     $("#btn-best").classList.toggle("hidden", !state.done);
-    $("#lineup-title").textContent = state.done ? "Try other orders" : "Batting order";
+    $("#lineup-title").textContent = state.done ? "Experiment with other orders" : "Batting order";
     $("#lineup-hint").textContent = state.done
-      ? "Your score is kept. Move hitters to see how the runs change."
-      : "Drag a hitter to a new spot, tap two hitters to swap them, or use the arrows.";
+      ? "Your official score is locked in. Move hitters around to see how the expected runs change."
+      : "Drag a hitter to move them, tap two hitters to swap, or use the arrows.";
     drawLive();
   }
 
@@ -316,8 +316,8 @@
           el("span", { class: "fill", style: `height:${(100 * b / top).toFixed(1)}%` }),
           el("span", { class: "x" }, label(i))))),
       el("p", { class: "hint" },
-        `Shut out in ${pct(dist[0])} of games, 10 or more runs in ${pct(tenPlus)}; half the games score ${median} or fewer. ` +
-        `Average ${mean.toFixed(2)}. Worked out exactly from the same rules, not from random games.`));
+        `Shut out ${pct(dist[0])} of the time, 10+ runs ${pct(tenPlus)} of the time; median game is ${median} runs, average ${mean.toFixed(2)}. ` +
+        `Calculated directly from the rules—no random simulation.`));
   }
 
   function drawResult() {
@@ -339,17 +339,17 @@
         el("span", { class: "big" }, g.perfect ? "100%" : pct(g.share)),
         el("span", {}, verdict(g))),
       el("p", { class: "explain" },
-        `Your order scores ${g.runs.toFixed(3)} runs a game (${Math.round(seasonRuns(g.runs))} a season). `,
-        `The best of all ${p.orders.toLocaleString()} orders scores ${p.best.runs.toFixed(3)} (${Math.round(seasonRuns(p.best.runs))}), the worst ${p.worst.runs.toFixed(3)} (${Math.round(seasonRuns(p.worst.runs))}). `,
-        g.perfect ? "" : `You left about ${lost < 1 ? "less than 1 run" : `${Math.round(lost)} runs`} a season on the table; your order beats ${pct(g.below)} of all orders.`),
-      el("p", { class: "hint" }, "Score = how far your order got from the worst order to the best one, in expected runs."),
-      el("h3", {}, "The best order"),
+        `Your lineup averages ${g.runs.toFixed(3)} runs per game (${Math.round(seasonRuns(g.runs))} over a full season). `,
+        `Across all ${p.orders.toLocaleString()} possible orders, the best scores ${p.best.runs.toFixed(3)} (${Math.round(seasonRuns(p.best.runs))}) and the worst scores ${p.worst.runs.toFixed(3)} (${Math.round(seasonRuns(p.worst.runs))}). `,
+        g.perfect ? "" : `You left ${lost < 1 ? "less than 1 run" : `about ${Math.round(lost)} runs`} a season on the table, beating ${pct(g.below)} of all orders.`),
+      el("p", { class: "hint" }, "Your score shows where your lineup lands between the worst possible order (0%) and the best (100%), measured in expected runs."),
+      el("h3", {}, "Optimal batting order"),
       el("table", { class: "best" },
-        el("thead", {}, el("tr", {}, el("th", {}, "#"), el("th", {}, "Hitter"), el("th", {}, "You had"), el("th", { title: "Expected plate appearances in a season in this slot" }, "PA"))),
+        el("thead", {}, el("tr", {}, el("th", {}, "#"), el("th", {}, "Hitter"), el("th", {}, "You had"), el("th", { title: "Expected plate appearances in a season from this spot" }, "PA"))),
         el("tbody", {}, ...rows)),
-      el("p", { class: "hint" }, "PA = expected plate appearances over a season from that slot: each step down the order loses about 17."),
+      el("p", { class: "hint" }, "PA = expected plate appearances over a season. Moving down one spot costs roughly 17 trips to the plate."),
       el("div", { class: "result-actions" },
-        el("button", { class: "ghost", onclick: playSeason, title: "A random 162-game season with the order now in the lineup, next to the best order" }, "Play out a season with this order"),
+        el("button", { class: "ghost", onclick: playSeason, title: `Simulate a random ${p.rules.game.season_games}-game season with the lineup above versus the optimal order` }, `Simulate a ${p.rules.game.season_games}-game season`),
         el("button", { class: "primary", onclick: share }, "Share")),
       el("div", { id: "season" }),
       p.top ? nearBest(p) : null,
@@ -408,10 +408,10 @@
         }));
     });
     return el("details", { class: "more" },
-      el("summary", {}, "Where each hitter fits"),
-      el("p", { class: "hint" }, "Each square: put that hitter in that spot and set the other eight as well as they can be. " +
-        "The number is how many runs a season that gives up against the best order; ★ is his spot in the best order. " +
-        "A box marks where you had him. Tap a square to try that order."),
+      el("summary", {}, "Where each hitter fits best"),
+      el("p", { class: "hint" }, "Each cell locks that hitter into that spot and optimizes the other eight around him. " +
+        "The number shows how many runs per season that costs compared to the optimal lineup (★ marks his optimal spot; " +
+        "the box marks where you put him). Tap any cell to load that lineup."),
       el("div", { class: "scroll" }, el("table", { class: "grid" }, el("thead", {}, head), el("tbody", {}, ...rows))));
   }
 
@@ -422,14 +422,14 @@
     const mine = C.simulateSeason(order, rates(), p.rules, seed);
     const best = C.simulateSeason(p.best.order, rates(), p.rules, seed + 1);
     const g = grade(order);
-    const who = sameOrder(order, state.order) ? "The order you played" : "The order in the lineup now (not the one you played)";
+    const who = sameOrder(order, state.order) ? "Your submitted lineup" : "The lineup on screen now (not the one you submitted)";
     $("#season").replaceChildren(
-      el("h3", {}, "One season, played out"),
+      el("h3", {}, `Simulated ${p.rules.game.season_games}-game season`),
       el("p", {}, `${who} scored ${mine.runs} runs in ${p.rules.game.season_games} games (expected ${Math.round(seasonRuns(g.runs))}). `,
-        `The best order scored ${best.runs} (expected ${Math.round(seasonRuns(p.best.runs))}).`),
+        `The optimal order scored ${best.runs} (expected ${Math.round(seasonRuns(p.best.runs))}).`),
       el("p", { class: "hint" }, mine.runs >= best.runs
-        ? "This order won this season — one season is mostly luck, which is why the score uses expected runs. Press again for another season."
-        : "One season swings by dozens of runs either way, which is why the score uses expected runs. Press again for another season."));
+        ? "This order matched or beat the optimal order this season! A single season has lots of randomness, which is why we grade on exact expected runs. Click again to sim another."
+        : "A single season can swing by dozens of runs on luck alone, which is why we grade on exact expected runs. Click again to sim another."));
   }
 
   function share() {
@@ -479,15 +479,15 @@
   function showHelp() {
     const a = state.puzzle?.rules.advance;
     modal(el("h2", {}, "How to play"),
-      el("p", {}, "Nine real hitters, each from one season in baseball history, one at every position. Put them in the batting order that scores the most runs."),
-      el("p", {}, "Drag a hitter to a new spot (on a phone, by the ⠿ handle), tap a hitter and then another to swap them, or use the arrows. When you're happy, press Play ball. You get one try."),
-      el("p", {}, "Under each hitter: his real batting line that season (average / on-base / slugging, OPS, home runs, walks, strikeouts) and how many runs a team of nine of him would score a game with these rules."),
-      el("p", {}, "After you play, you can keep moving hitters to see how the runs change, the chance of each score, the best orders and where each hitter fits best."),
-      el("p", {}, "Every plate appearance is played with the hitter's real rates that season: strikeouts, walks (and hit by pitch), singles, doubles, triples, home runs and other outs. Runners move up at league-average rates" +
-        (a ? ` (a runner on 2nd scores on a single ${Math.round(100 * a.second_scores_on_single)}% of the time, a runner on 1st reaches 3rd ${Math.round(100 * a.first_to_third_on_single)}%, an out in play with a runner on 1st is a double play ${Math.round(100 * a.double_play)}%).` : ".")),
-      el("p", {}, "Your score is worked out exactly, not from one lucky season: the expected runs of your order, compared with the best and the worst of all 362,880 possible orders."),
-      el("p", {}, "Things to think about: the top of the order bats about 17 more times a season per step than the next slot; walks are worth most in front of power; outs are worth least with nobody on."),
-      el("p", { class: "hint" }, "No steals, errors, bunts or pinch hitters, so every lineup scores a little less than a real team would. A new puzzle every day."),
+      el("p", {}, "You get nine real hitters from baseball history, one at each position. Put them in the batting order that scores the most runs."),
+      el("p", {}, "Drag hitters into place (on mobile, grab the ⠿ handle), tap two hitters to swap them, or use the arrow buttons. When you're ready, hit Play ball. You get one try."),
+      el("p", {}, "Each card shows the hitter's real stats from that season (AVG / OBP / SLG, OPS, HR, BB, SO) plus Team of 9—how many runs per game a lineup of nine clones of that hitter would score."),
+      el("p", {}, "Once you submit, you can keep tweaking the lineup to see how the expected runs shift, inspect the run-scoring chart, explore the top orders, and see where each hitter fits best."),
+      el("p", {}, "Every plate appearance uses that hitter's real outcome rates (strikeouts, walks/HBP, singles, doubles, triples, home runs, and outs in play), with runners advancing at league-average rates" +
+        (a ? ` (a runner on 2nd scores on a single ${Math.round(100 * a.second_scores_on_single)}% of the time, 1st-to-3rd on a single happens ${Math.round(100 * a.first_to_third_on_single)}% of the time, and outs in play with a runner on 1st turn into double plays ${Math.round(100 * a.double_play)}% of the time).` : ".")),
+      el("p", {}, "Your score is calculated exactly rather than simulated—comparing your lineup's expected runs against the best and worst of all 362,880 possible batting orders."),
+      el("p", {}, "Quick strategy tips: moving up one spot adds about 17 plate appearances over a season, walks are most valuable ahead of power hitters, and outs hurt least when the bases are empty."),
+      el("p", { class: "hint" }, "There are no steals, errors, bunts, or pinch hitters, so run totals run a bit lower than real MLB games. A new puzzle drops every day."),
       el("p", { class: "hint" }, `Data: ${state.index?.source || "Lahman Baseball Database"}.`));
   }
   async function showArchive() {

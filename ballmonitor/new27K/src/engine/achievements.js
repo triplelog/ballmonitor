@@ -67,7 +67,7 @@ export const ACHIEVEMENTS = [
       check: (t, r, g) => fullGame(t, r, g) && t.game.runs === 0 && t.game.pitches < 100 },
     { id: 'nohitter', tier: 'Game', icon: '🫥', name: 'No-Hitter', desc: 'Complete game without allowing a hit.',
       check: (t, r, g) => fullGame(t, r, g) && t.game.hits === 0 },
-    { id: 'perfect', tier: 'Game', icon: '💎', name: 'Perfect Game', desc: '27 up, 27 down: nobody reaches base.',
+    { id: 'perfect', tier: 'Game', icon: '💎', name: 'Perfect Game', desc: '27 up, 27 down—nobody reaches base.',
       check: (t, r, g) => fullGame(t, r, g) && t.game.baserunners === 0 && t.game.outs >= 27 },
     { id: 'k27', tier: 'Game', icon: '👑', name: '27K', desc: 'Every out of a nine-inning complete game is a strikeout.',
       check: (t, r, g) => fullGame(t, r, g) && t.game.outs >= 27 && t.game.nonKOuts === 0 },

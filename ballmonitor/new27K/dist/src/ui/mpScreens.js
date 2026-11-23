@@ -74,13 +74,13 @@ export function renderMultiplayer(app, args = {}) {
                             <label>Rules</label>
                             <select id="mp-rules"><option value="default">Standard formulas</option>${customCount ? `<option value="mine">My custom formulas (${customCount})</option>` : ''}</select>
                             <label></label>
-                            <label class="toggle"><input type="checkbox" id="mp-manage" checked> Lineups and pinch hitters: before your team bats, set your lineup card or make substitutions</label>
+                            <label class="toggle"><input type="checkbox" id="mp-manage" checked> Manage lineups and pinch hitters before your team bats</label>
                             <label></label>
-                            <label class="toggle"><input type="checkbox" id="mp-both"> Both players on this device (take turns at one screen)</label>
+                            <label class="toggle"><input type="checkbox" id="mp-both"> Pass-and-play (take turns on this device)</label>
                         </div>
                         <div class="row-actions"><button class="primary big" data-act="create" ${busy ? 'disabled' : ''}>${busy ? 'Setting up…' : 'Create game'}</button></div>
                     </div>
-                    <p class="muted" style="font-size:12px;line-height:1.5">${CONFIG.mpServer ? 'Send your opponent the invite link (or the code): it opens this page, ready to join.' : 'Both players need to reach this same 27K server: on your network, share the address the server prints when it starts (not “localhost”).'} The home player pitches the top of every inning and the away player the bottom; each side's hitters bat against the other player's pitching.</p>
+                    <p class="muted" style="font-size:12px;line-height:1.5">${CONFIG.mpServer ? 'Share the invite link or game code with a friend so they can jump straight in.' : 'Both players need access to this same 27K server—share the network address printed when the server started (not “localhost”).'} The home player pitches the top of each inning and the away player pitches the bottom, while each side’s lineup bats against the other.</p>
                 </div>
             </div>
         </div>`;

@@ -95,7 +95,7 @@ export function renderSeasonSetup(app) {
                         <div><input id="s-diff" type="range" min="1" max="5" value="${st.difficulty}"> <b id="s-diff-name">${DIFF_NAMES[st.difficulty]}</b></div>
                     </div>
                     <p class="muted" style="font-size:12px;line-height:1.5">${esc(FORMATS[st.level].describe)}
-                    Play any of your games on the mound or sim them. Pitchers need rest after they throw${L.n <= 2 ? `, and there’s a ${L.n === 1 ? 85 : 105}-pitch limit` : ''}.</p>
+                    Pitch any game yourself or sim ahead. Pitchers need rest between appearances${L.n <= 2 ? `, and there’s a ${L.n === 1 ? 85 : 105}-pitch limit` : ''}.</p>
                     <div class="row-actions"><button class="primary big" data-act="start">Start season</button></div>
                 </div>
             </div>
@@ -285,7 +285,7 @@ export function renderSeason(app, args = {}) {
     }
 
     function postseasonNote() {
-        return { hs: 'The top eight go to the state tournament.', college: 'Conference champions (best conference record) and the 24 best other records make the regionals.', pro: 'The top four make the playoffs.' }[season.level] ?? '';
+        return { hs: 'The top eight teams advance to the state tournament.', college: 'Conference champions (best conference record) and the next 24 best records advance to regionals.', pro: 'The top four teams make the playoffs.' }[season.level] ?? '';
     }
 
     function poolsHTML(stage) {
@@ -296,7 +296,7 @@ export function renderSeason(app, args = {}) {
                 ${rows.map((r, i) => `<tr class="${r.teamId === me ? 'current' : ''} ${i < stage.advance && stage.status === 'done' ? 'adv' : ''}">
                     <td>${teamCell(r.teamId)}</td><td class="r">${r.w}-${r.l}</td><td class="r">${r.rs - r.ra > 0 ? '+' : ''}${r.rs - r.ra}</td></tr>`).join('')}
             </table></div>`;
-        }).join('')}</div><p class="muted" style="font-size:12px">Each pool plays a round robin; the winner advances (ties: run difference, then fewest runs allowed).</p>`;
+        }).join('')}</div><p class="muted" style="font-size:12px">Each pool plays a round robin and the winner advances (tiebreakers: run differential, then fewest runs allowed).</p>`;
     }
 
     function bracketHTML(stage) {

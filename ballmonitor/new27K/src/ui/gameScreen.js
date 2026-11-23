@@ -370,7 +370,7 @@ export function renderGame(app, args) {
                 ${arsenal.map((type, i) => row(type, i)).join('')}
                 ${others.length ? `<tr><td colspan="6" class="muted" style="font-size:11px">Other pitches</td></tr>${others.map((type) => row(type)).join('')}` : ''}
             </table>
-            <div class="muted" style="font-size:11px;margin-top:4px">All games in this league, by the pitch that ended each plate appearance (Whiff = misses per swing, every pitch). <span class="hot">Red</span> = he hits it well, <span class="cold">blue</span> = he struggles; faded rows are small samples.</div>`;
+            <div class="muted" style="font-size:11px;margin-top:4px">His results in all games in this league, by the pitch that ended each plate appearance (Whiff = misses per swing, every pitch). <span class="hot">Red</span> means he hits it well, <span class="cold">blue</span> means he struggles; faded rows are small samples.</div>`;
     }
 
     function lineupTable(key) {
@@ -455,11 +455,11 @@ export function renderGame(app, args) {
         else if (game.state.over) text = 'Game over';
         else if (game.isUserPitching()) {
             text = ui.mode === 'aiming' && ui.touch
-                ? `Touch the field to aim, drag to adjust, lift to throw${guideMode() === 'hidden' ? ' (guide hidden: remember the break)' : ''}.`
+                ? `Press and drag to aim, then lift your finger to throw${guideMode() === 'hidden' ? ' (guide hidden)' : ''}.`
                 : ui.mode === 'aiming'
-                ? `Click to release. The ball breaks from where you click${guideMode() === 'hidden' ? ' (guide hidden: remember the break)' : ''}.`
-                : 'The dashed line shows how this pitch will break. Press Space or Pitch to start.';
-        } else text = 'Your team is batting';
+                ? `Click to throw—the ball breaks from where you click${guideMode() === 'hidden' ? ' (guide hidden)' : ''}.`
+                : 'The dashed line shows how this pitch will break. Press Space or Pitch when ready.';
+        } else text = 'Your team is up to bat';
         $('#hint').textContent = text;
     }
 
@@ -895,8 +895,8 @@ export function renderGame(app, args) {
             <h3>On ${esc(shortName(batter))}</h3>
             <ul class="visit-notes">${a.notes.map((n) => `<li>${esc(n)}</li>`).join('')}</ul>
             <div class="row-actions">
-                <span class="muted" style="font-size:12px">The clock starts over when he goes back. Pick a plan to mark its spot on the zone.</span>
-                <button data-act="visit-done">Back to work</button>
+                <span class="muted" style="font-size:12px">The pitch clock resets when he heads back. Pick a plan to mark its target on the zone.</span>
+                <button data-act="visit-done">Back to mound</button>
             </div>
         </div></div>`;
     }

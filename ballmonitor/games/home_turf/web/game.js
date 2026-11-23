@@ -140,7 +140,7 @@
       const holder = holders[rid];
       return el("span", { class: "chip" }, el("i", { class: "sw", style: `border-color:${r.color};${holder !== undefined ? `background:${state.seats[holder].color}` : ""}` }),
         `${r.name} +${r.bonus}`, holder !== undefined ? ` (${state.seats[holder].name})` : "");
-    }), el("span", { class: "chip small" }, "lines: borders (by land or sea) · small number: the soldiers' combined median WAR"));
+    }), el("span", { class: "chip small" }, "Lines show land/sea borders · Small corner numbers show total median WAR"));
   }
 
   // ── panels ────────────────────────────────────────────────────────────────
@@ -168,46 +168,46 @@
   function renderPanel() {
     const p = $("#panel");
     if (!state) {
-      p.replaceChildren(el("h2", {}, "Home Turf"), el("p", {}, "Claim territories, call up the big-leaguers born there, and battle your neighbors with their real seasons."),
-        el("div", { class: "actions" }, el("button", { class: "primary", onclick: () => chooseLength() }, "Start a game against 3 AI managers")));
+      p.replaceChildren(el("h2", {}, "Home Turf"), el("p", {}, "Draft territories, call up the MLB players born there, and battle neighboring managers using their real seasons."),
+        el("div", { class: "actions" }, el("button", { class: "primary", onclick: () => chooseLength() }, "Start a game (vs. 3 AI managers)")));
       return;
     }
     const kids = [el("h2", {}, status()), seatsList()];
-    if (!storageOk) kids.push(el("p", { class: "small" }, "This browser isn't saving the game (storage is off or full)."));
+    if (!storageOk) kids.push(el("p", { class: "small" }, "Your browser isn't saving progress (local storage is disabled or full)."));
     const sel = ui.sel;
     if (state.phase === "over") {
       kids.push(wrap(el("table", { class: "roster" }, el("tr", {}, ["Manager", "Territories", "Region pts", "Total"].map((h) => el("th", {}, h))),
         state.standings.map((s) => el("tr", {}, el("td", {}, state.seats[s.seat].name), el("td", {}, s.territories), el("td", {}, s.regions), el("td", {}, s.total))))),
       el("div", { class: "actions" }, el("button", { class: "primary", onclick: () => chooseLength() }, "Play again")));
     } else if (!myTurn()) {
-      kids.push(el("p", { class: "small" }, ui.busy ? "The AI managers are playing…" : ""));
+      kids.push(el("p", { class: "small" }, ui.busy ? "AI managers are taking their turns…" : ""));
     } else if (state.capture) {
-      kids.push(el("p", {}, `You captured ${tname(state.capture.to)}: choose who moves in.`),
+      kids.push(el("p", {}, `You captured ${tname(state.capture.to)}! Choose who moves in.`),
         el("div", { class: "actions" }, el("button", { class: "primary", onclick: () => askMoveIn() }, `Move into ${tname(state.capture.to)}`)));
     } else if (state.phase === "draft") {
       const open = sel && state.owner[sel] === null;
-      kids.push(el("p", {}, "Your pick: click an open territory (+) to see its bench, then draft it (or click it again). Deep benches mean better call-ups all game; whole regions earn bonus call-ups every turn."),
+      kids.push(el("p", {}, "Your pick: click any open territory (+) to preview its player pool, then click Draft (or click the territory again). Deep talent pools pay off all game, and owning a full region earns bonus call-ups every turn."),
         open ? el("div", { class: "actions" }, el("button", { class: "primary", onclick: () => draftSel() }, `Draft ${tname(sel)}`)) : null);
     } else if (state.phase === "deploy" || state.step === "callups") {
       const mine = sel && state.owner[sel] === state.turn, next = mine ? E.benchNext(state, data, sel) : null;
-      kids.push(el("p", {}, `Click one of your territories to see who's next on its bench, then call him up (or click it again). ${state.pending} left.`),
+      kids.push(el("p", {}, `Click one of your territories to preview the next player on its bench, then call him up (or click it again). ${state.pending} left to place.`),
         el("div", { class: "actions" },
           mine ? el("button", { class: "primary", disabled: !next, onclick: () => placeSel() }, next ? `Call up ${next.name} in ${tname(sel)}` : `${tname(sel)}'s bench is empty`) : null,
-          el("button", { onclick: () => autoPlace() }, "Place them for me")));
+          el("button", { onclick: () => autoPlace() }, "Auto-place remaining")));
     } else if (ui.mode === "fortify") {
-      kids.push(el("p", {}, ui.from ? `Move from ${tname(ui.from)}: click one of your connected territories.` : "One move: click a territory to move soldiers from, then where to."),
+      kids.push(el("p", {}, ui.from ? `Moving from ${tname(ui.from)}: click any connected territory you own.` : "You get one move per turn. Click a territory to move players from, then pick a connected destination."),
         el("div", { class: "actions" }, el("button", { onclick: () => { ui.mode = "attack"; ui.from = null; render(); } }, "Back to battles"),
           el("button", { class: "primary", onclick: () => endTurn() }, "End turn")));
     } else {
-      kids.push(el("p", {}, ui.from ? `Attack from ${tname(ui.from)}: click a highlighted neighbor.` : "Battle: click your territory (2+ soldiers), then an enemy neighbor. Or move soldiers and end your turn."),
+      kids.push(el("p", {}, ui.from ? `Attacking from ${tname(ui.from)}: click a highlighted neighbor.` : "Click one of your territories (with 2+ players), then click a bordering enemy to battle—or move players and end your turn."),
         state.lastBattle && state.lastBattle.round === state.round ? battleCard(state.lastBattle) : null,
         el("div", { class: "actions" },
-          el("button", { disabled: state.fortified, onclick: () => { ui.mode = "fortify"; ui.from = null; render(); } }, state.fortified ? "Moved this turn" : "Move soldiers"),
-          el("button", { onclick: () => autoTurn() }, "Play my turn for me"),
+          el("button", { disabled: state.fortified, onclick: () => { ui.mode = "fortify"; ui.from = null; render(); } }, state.fortified ? "Moved this turn" : "Move players"),
+          el("button", { onclick: () => autoTurn() }, "Auto-play my turn"),
           el("button", { class: "primary", onclick: () => endTurn() }, "End turn")),
         el("div", { class: "actions" },
           el("button", { onclick: () => saveSlot() }, "Save a copy"),
-          el("button", { onclick: () => { if (confirm("End the game now and score it?")) { E.finish(state, data); save(); render(); } } }, "End game now")));
+          el("button", { onclick: () => { if (confirm("End the game now and tally final scores?")) { E.finish(state, data); save(); render(); } } }, "End game now")));
     }
     p.replaceChildren(...kids);
   }
@@ -323,9 +323,9 @@
     const home = rules().home_field;
     const vs = (s) => theirs.reduce((a, o) => a + E.winProb(s, state.soldiers[o], home), 0) / theirs.length;
     modal([el("h2", {}, `${tname(from)} attacks ${tname(to)}`),
-      el("p", { class: "small" }, `Pick your hitter or pitcher. ${state.seats[state.owner[to]].name} picks a defender at the same time without seeing yours. Each plays one random remaining season (it's used up); the defender adds ${home}. Win %: your chance against their average soldier.`),
-      el("h3", {}, "Their soldiers"), soldierRows(to),
-      el("h3", {}, "Yours: click one"), soldierRows(from, { pick: go, vs }),
+      el("p", { class: "small" }, `Choose who to send in. ${state.seats[state.owner[to]].name} picks a defender secretly at the same time. Both players draw one random remaining season (which gets used up), and the defender gets +${home} WAR for home field. Win % is your chance averaged over all their players.`),
+      el("h3", {}, "Their roster"), soldierRows(to),
+      el("h3", {}, "Your roster (click to send)"), soldierRows(from, { pick: go, vs }),
       el("div", { class: "actions sticky" },
         el("button", { onclick: () => go(E.pickSoldier(state, data, state.stacks[from], theirs, "attack", prefs.attackStrategy)) }, "Pick for me"),
         el("button", { onclick: () => closeModal() }, "Cancel"))]);
@@ -398,9 +398,9 @@
       const home = rules().home_field;
       const vs = (s) => state.stacks[from].reduce((a, o) => a + (1 - E.winProb(state.soldiers[o], s, home)), 0) / state.stacks[from].length;
       modal([el("h2", {}, `${E.act(state, state.turn, "attacks")} ${tname(to)} from ${tname(from)}`),
-        el("p", { class: "small" }, `Pick your defender (you get +${home}). They have already picked their attacker.`),
-        el("h3", {}, "Their soldiers"), soldierRows(from),
-        el("h3", {}, "Yours: click one"), soldierRows(to, { pick: (sid) => { closeModal(); resolve(sid); }, vs }),
+        el("p", { class: "small" }, `Choose your defender (you get +${home} WAR for home field). Their attacker is already locked in.`),
+        el("h3", {}, "Their roster"), soldierRows(from),
+        el("h3", {}, "Your roster (click to defend)"), soldierRows(to, { pick: (sid) => { closeModal(); resolve(sid); }, vs }),
         el("div", { class: "actions sticky" }, el("button", { onclick: () => { closeModal(); resolve(E.pickSoldier(state, data, mine, state.stacks[from], "defend", prefs.defendStrategy)); } }, "Pick for me"))],
       { dismiss: false });
     });
@@ -463,11 +463,11 @@
         set(id); for (const o of b.parentNode.querySelectorAll("button")) { o.classList.toggle("primary", o === b); o.setAttribute("aria-pressed", String(o === b)); } } }, L.label);
       return [b, el("span", { class: "small" }, L.note || "")];
     }).flat());
-    modal([el("h2", {}, "New game"), el("p", {}, "You against three AI managers."),
-      el("h3", {}, "How long?"), group("Game length", lengths, () => length, (v) => { length = v; }),
-      Object.keys(levels).length ? [el("h3", {}, "How good are the AI managers?"), group("AI ability", levels, () => level, (v) => { level = v; })] : null,
-      el("p", { class: "small" }, "Every game is saved in this browser as you play; come back any time to carry on. Use \"Save a copy\" to keep several."),
-      el("div", { class: "actions" }, el("button", { class: "primary", onclick: () => { prefs.length = length; prefs.level = level; closeModal(); startGame(length, level); } }, "Start"),
+    modal([el("h2", {}, "New game"), el("p", {}, "Play against three AI managers."),
+      el("h3", {}, "Game length"), group("Game length", lengths, () => length, (v) => { length = v; }),
+      Object.keys(levels).length ? [el("h3", {}, "AI difficulty"), group("AI difficulty", levels, () => level, (v) => { level = v; })] : null,
+      el("p", { class: "small" }, "Your game auto-saves in this browser as you play, so you can pick it back up anytime. Use \"Save a copy\" to keep multiple saves."),
+      el("div", { class: "actions" }, el("button", { class: "primary", onclick: () => { prefs.length = length; prefs.level = level; closeModal(); startGame(length, level); } }, "Start game"),
         el("button", { onclick: () => closeModal() }, "Cancel"))]);
   }
   // named copies of games (the current game is always saved on its own)
@@ -502,29 +502,29 @@
   $("#btn-settings").addEventListener("click", () => {
     const sel = (key, options) => el("select", { onchange: (e) => { prefs[key] = isNaN(+e.target.value) ? e.target.value : +e.target.value; save(); } },
       options.map(([v, label]) => el("option", { value: v, selected: String(prefs[key]) === String(v) }, label)));
-    const strategies = [["smart", "Smart: the cheapest player who is at least even"], ["best", "Best: my strongest"], ["weakest", "Weakest: save my stars"]];
+    const strategies = [["smart", "Smart (weakest player with 50%+ odds, else your strongest)"], ["best", "Best (always send strongest)"], ["weakest", "Weakest (save your stars)"]];
     modal([el("h2", {}, "Settings"),
-      el("label", {}, "When I'm attacked: ", sel("defend", [["auto", "pick my defender automatically"], ["ask", "ask me (if I have a choice)"]])),
-      el("label", {}, "Automatic defender: ", sel("defendStrategy", strategies)),
-      el("label", {}, "When I attack: ", sel("attackPick", [["ask", "let me pick my player"], ["auto", "pick automatically"]])),
-      el("label", {}, "Automatic attacker: ", sel("attackStrategy", strategies)),
-      el("label", {}, "AI speed: ", sel("speed", [[150, "fast"], [450, "normal"], [900, "slow"]])),
+      el("label", {}, "When attacked: ", sel("defend", [["auto", "pick defender automatically"], ["ask", "let me choose (when I have options)"]])),
+      el("label", {}, "Auto-defender style: ", sel("defendStrategy", strategies)),
+      el("label", {}, "When attacking: ", sel("attackPick", [["ask", "let me choose my player"], ["auto", "pick automatically"]])),
+      el("label", {}, "Auto-attacker style: ", sel("attackStrategy", strategies)),
+      el("label", {}, "AI turn speed: ", sel("speed", [[150, "Fast"], [450, "Normal"], [900, "Slow"]])),
       el("div", { class: "actions" }, el("button", { class: "primary", onclick: () => { closeModal(); render(); } }, "Done"))]);
   });
   $("#btn-help").addEventListener("click", () => {
     const r = rules();
     modal([el("h2", {}, "How to play"),
-      el("p", {}, `Four managers (you and three AIs) draft the ${data.territories.length} territories (the order rotates each round), grouped in ${Object.keys(data.regions).length} regions (the shaded areas). Every territory's soldiers are real big-leaguers born there, called up best first (by career Open WAR). Click a territory to see its soldiers and bench before you draft or call up.`),
-      el("p", {}, `After the draft each manager places ${r.start_callups} call-ups. Each turn: call-ups (one per ${r.territories_per_callup} territories, at least ${r.callups_min}, plus the bonus of every region you hold whole), then battles, then one move of soldiers between your connected territories.`),
-      el("p", {}, `A battle: you pick one of your soldiers, the defender picks one at the same time. Each plays one of his real seasons at random, and that season is used up. The defender adds ${r.home_field} WAR for home field; the higher season wins (a tie goes to the defender) and the loser is out of the game. Take a territory's last soldier and it's yours, with its bench of natives; you choose who moves in.`),
-      el("p", {}, `A soldier who runs out of seasons retires and his territory calls up a replacement; one whose best remaining season is under ${r.release_below} WAR can be released for a call-up. A territory left with no soldiers can be walked into from next door.`),
-      el("p", {}, `Choose the length when you start (${Object.values(data.rules.lengths || {}).map((L) => L.label).join(", ")}) and how good the AI managers are (${Object.values(data.rules.levels || {}).map((L) => L.label).join(", ")}). At the end: 1 point per territory plus the bonus of every region you hold (or hold every territory to win outright). "End game now" scores it at any time. Settings let the game pick your players for you.`),
-      el("p", { class: "small" }, `Seasons: ${data.source}.`),
+      el("p", {}, `You and three AI managers take turns drafting ${data.territories.length} territories across ${Object.keys(data.regions).length} shaded regions (draft order rotates every round). Every territory's roster is made up of real MLB players born there, called up from highest career Open WAR on down. Click any territory to inspect its players and bench before drafting or calling someone up.`),
+      el("p", {}, `After the draft, each manager places ${r.start_callups} opening call-ups. On each turn you get fresh call-ups (1 for every ${r.territories_per_callup} territories you own, minimum ${r.callups_min}, plus bonus call-ups for any complete regions you control), attack neighbors as much as you want, and finish with one move of players (as many as you like) between connected territories.`),
+      el("p", {}, `In a battle, both managers pick a player secretly at the same time. Each player draws one random remaining season from his career (which is then used up). The defender gets +${r.home_field} WAR for home field, higher WAR wins (ties go to the defender), and the loser is eliminated. Clear out a territory's last player to capture it—along with its remaining bench—and choose who moves in.`),
+      el("p", {}, `When a player runs out of seasons, he retires and his territory automatically calls up a replacement. You can also release any player whose best remaining season is under ${r.release_below} WAR to bring up someone new. Any empty enemy territory can be claimed from next door without a fight.`),
+      el("p", {}, `Pick a game length (${Object.values(data.rules.lengths || {}).map((L) => L.label).join(", ")}) and AI difficulty (${Object.values(data.rules.levels || {}).map((L) => L.label).join(", ")}) when starting. Final scoring is 1 point per territory plus region bonuses—or win outright by conquering the whole map. You can also click "End game now" to score a game early, or adjust automatic battle picks in Settings.`),
+      el("p", { class: "small" }, `Data: ${data.source}.`),
       el("div", { class: "actions sticky" }, el("button", { class: "primary", onclick: () => closeModal() }, "Got it"))]);
   });
 
   render();
-  if (oldMap) modal([el("h2", {}, "A new map"), el("p", {}, "Home Turf's map has changed (one California, one Pennsylvania, seven regions, a new draft), so a game saved on the old map can't be carried on. Start a new one."),
+  if (oldMap) modal([el("h2", {}, "Map updated"), el("p", {}, "Home Turf now has a new map (one California, one Pennsylvania, seven regions, and a rotating draft), so saves from the older map can't be loaded. Start a fresh game to try it out."),
     el("div", { class: "actions" }, el("button", { class: "primary", onclick: () => { closeModal(); chooseLength(); } }, "New game"))]);
   if (state && state.phase !== "over") {
     if (myTurn() && state.capture) askMoveIn();   // reloaded in the middle of moving into a capture

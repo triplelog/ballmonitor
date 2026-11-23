@@ -47,30 +47,30 @@ def page(model) -> dict:
                           "sos": sos[t], "sos_left": sos_left[t]})
     divisions = sorted({d["div"] for d in standings if d["div"]})
     standings_table = V.table(
-        "standings", "Standings, with luck taken out",
+        "standings", "Standings, adjusted for luck",
         [V.col("team", "Team", link="team"), V.col("div", "Division", hidden=True), V.col("wl", "W-L"),
          V.col("pct", "Points won", "pct", decimals=1), V.col("xpct", "Expected", "pct", decimals=1),
-         V.col("luck", "Luck (points)", "signed", decimals=1), V.col("rally", "Rallies won", "pct", decimals=1, hidden=True),
+         V.col("luck", "Luck (pts)", "signed", decimals=1), V.col("rally", "Rallies won", "pct", decimals=1, hidden=True),
          V.col("close", "11-10 games", hidden=True),
          V.col("sos", "Schedule so far", "int", low_first=True), V.col("sos_left", "Schedule left", "int", low_first=True)],
         standings, sort="pct",
-        subtitle="Teams are ranked by the share of team points they have won. Expected: the share their rallies "
-                 "were worth, game by game. Luck: points won minus expected.",
-        note="Schedule: 1 = the strongest opponents. 11-10 games are close to coin flips.",
+        subtitle="Ranked by share of team points won. Expected shows what each team's rallies were worth game by game, "
+                 "and Luck is the gap between actual and expected points.",
+        note="Schedule rank 1 is the toughest set of opponents. 11-10 games are basically coin flips.",
         quick_filters=("div", divisions) if divisions else None)
 
     odds = [{"team": t, "div": teams.get(t, {}).get("division", ""), "proj": s["pct"], "ff": s["playoff"],
              "final": s["final"], "champ": s["champ"]} for t, s in sim.items()]
     odds_table = V.table(
-        "odds", "Final Four chances" if not final else "Final Four chances (regular season over)",
+        "odds", "Final Four odds" if not final else "Final Four odds (regular season complete)",
         [V.col("team", "Team", link="team"), V.col("div", "Division"),
          V.col("proj", "Projected points won", "pct", decimals=1), V.col("ff", "Final Four", "pct", bar=True),
          V.col("final", "Reach the final", "pct"), V.col("champ", "Win the MLTT Cup", "pct", bar=True)],
         odds, sort="champ",
-        subtitle=f"From {int(p.simulations):,} simulations of the {left} regular-season matches left. The top two "
-                 "in each division reach the Final Four.",
-        note="Each simulated season also draws how much better or worse each team really is than its results. "
-             "MLTT matches are hard to call: in past seasons the favorite won about 60% of the time.")
+        subtitle=f"Based on {int(p.simulations):,} simulations of the {left} remaining regular-season matches. "
+                 "The top two teams in each division make the Final Four.",
+        note="Each simulation accounts for uncertainty in true team strength. MLTT matches are unpredictable—historically, "
+             "the favorite wins about 60% of the time.")
 
     prow = []
     for d in players.values():
@@ -80,28 +80,28 @@ def page(model) -> dict:
                      "rally": d["rallies_won"] / d["rallies"] if d["rallies"] else None, "vs": d["game_vs_avg"],
                      "paa": d["paa"], "wpa": d["wpa"]})
     players_table = V.table(
-        "players", "Who adds the most",
+        "players", "Player value",
         [V.col("name", "Player"), V.col("team", "Team", link="team"), V.col("games", "Games", "int"),
          V.col("win", "Games won", "pct"), V.col("rally", "Rallies won", "pct", decimals=1, hidden=True),
-         V.col("vs", "Beats an average player", "pct"),
+         V.col("vs", "Win vs. average player", "pct"),
          V.col("paa", "Points above average", "signed", decimals=1, bar=True),
          V.col("wpa", "Match wins added", "signed", decimals=2)],
         prow, sort="wpa", search=True, page_size=25,
-        subtitle="Points above average: team points a player won beyond what an average MLTT player would have won "
-                 "against the same opponents. Match wins added: how much each game they won or lost moved their "
-                 "team's chance of winning the match, summed (doubles split in two; the Golden Game shared by the five).",
-        note="Beats an average player: the chance to win one game against an average MLTT player, from every rally "
-             "since 2024 and the player's MLTT rating at the time.")
+        subtitle="Points above average measures how many team points a player won compared to an average MLTT player "
+                 "facing the same opponents. Match wins added totals how much each game shifted their team's odds of "
+                 "winning the match (split in doubles, and shared across all five players in the Golden Game).",
+        note="Win vs. average player is the estimated chance to win a single game against an average MLTT player, based on "
+             "every rally since 2024 and the SPINDEX rating they had at the time.")
 
     # the possible head starts: Stage One leads have the parity of its game count (15 games: 1, 3, 5)
     n = r.stage_one_games
     starts = sorted({min(lead, r.max_head_start) for lead in range(n % 2, n + 1, 2)})
-    head = V.bar("head_start", "What a Golden Game head start is worth",
-                 [{"label": f"{h} point{'s' if h != 1 else ''} ahead" if h else "Level",
+    head = V.bar("head_start", "Value of a Golden Game head start",
+                 [{"label": f"{h} point{'s' if h != 1 else ''} ahead" if h else "Tied",
                    "value": E.race_win(h, 0, 0.5, r.golden_to)} for h in starts],
-                 subtitle=f"Chance the Stage One leader wins the race to {r.golden_to}, if the teams are even.",
-                 note=f"The leader starts ahead by its Stage One lead, up to {r.max_head_start} points. With "
-                      f"{n} Stage One games there is always a leader.")
+                 subtitle=f"Win odds for the Stage One leader in the race to {r.golden_to}, assuming evenly matched teams.",
+                 note=f"The Stage One leader starts up by their margin, capped at {r.max_head_start} points. With "
+                      f"{n} Stage One games, one team always enters ahead.")
 
     team_opts = []
     for t in sorted(teams):
@@ -121,37 +121,37 @@ def page(model) -> dict:
                 rows.append({"date": m.date, "opp": opp, "score": "", "result": "", "chance": win})
         mt = V.table(f"matches_{V.slug(t)}", "Matches",
                      [V.col("date", "Date"), V.col("opp", "Opponent", link="team"), V.col("score", "Points"),
-                      V.col("result", "Result"), V.col("chance", "Chance to win", "pct")], rows,
-                     note="Chance to win: for matches still to play, from the lineup the team has used so far.")
+                      V.col("result", "Result"), V.col("chance", "Win odds", "pct")], rows,
+                     note="Win odds for upcoming matches are based on the lineups each team has used so far.")
         roster = [x for x in prow if x["team"] == t]
         rt = V.table(f"players_{V.slug(t)}", "Players",
                      [V.col("name", "Player"), V.col("games", "Games", "int"), V.col("win", "Games won", "pct"),
-                      V.col("vs", "Beats an average player", "pct"),
+                      V.col("vs", "Win vs. average player", "pct"),
                       V.col("paa", "Points above average", "signed", decimals=1),
                       V.col("wpa", "Match wins added", "signed", decimals=2)], roster or
                      [{"name": "No games yet", "games": 0, "win": None, "vs": None, "paa": None, "wpa": None}],
                      sort="paa")
         s = sim.get(t, {})
         intro = (f"{d['w']}-{d['l']}, {d['pct']:.1%} of points won ({d['division']}). "
-                 f"Final Four chance {s.get('playoff', 0):.0%}." if d["pct"] is not None else f"{d['division']}.")
+                 f"Final Four odds: {s.get('playoff', 0):.0%}." if d["pct"] is not None else f"{d['division']}.")
         team_opts.append(V.option(t, [mt, rt], intro=intro))
     team_picker = V.picker("team", "Team by team", "Team", team_opts)
 
     fav = max(sim.items(), key=lambda kv: kv[1]["champ"])
     lucky = max(teams.values(), key=lambda d: d["luck"])
     unlucky = min(teams.values(), key=lambda d: d["luck"])
-    headline = (f"{fav[0]} are the title favorites ({fav[1]['champ']:.0%}); {lucky['team']} have won "
-                f"{lucky['luck']:.0f} points more than their rallies were worth, {unlucky['team']} "
-                f"{-unlucky['luck']:.0f} fewer")
+    headline = (f"{fav[0]} are the current title favorites ({fav[1]['champ']:.0%}). {lucky['team']} have won "
+                f"{lucky['luck']:.0f} more points than their rallies were worth, while {unlucky['team']} have won "
+                f"{-unlucky['luck']:.0f} fewer.")
     last = data.meta.get("last_result", "")
     return V.page(
         title="Major League Table Tennis", sport="More sports",
-        summary="Standings with luck taken out, Final Four chances and every player's value in MLTT.",
-        how="Every player gets one number: their chance of winning a rally against an average MLTT player, from every "
-            "rally since 2024 and their MLTT rating at the time. MLTT's rules (games to 11, the Golden Game and its head start) "
-            "turn that into the chance of winning each game and match; the rest of the season is simulated "
-            f"{int(p.simulations):,} times.",
-        updated=f"MLTT results through {_day(last)}" + (" (final)" if final else "") if last else "",
+        summary="MLTT standings adjusted for luck, schedule strength, Final Four odds, and player value ratings.",
+        how="Each player gets a single rating: their chance of winning a rally against an average MLTT opponent, "
+            "estimated from every rally since 2024 and anchored by their SPINDEX rating at the time. Using MLTT's "
+            "exact rules—games to 11, the Golden Game, and its head start—we turn those ratings into game and match "
+            f"odds, then simulate the rest of the season {int(p.simulations):,} times.",
+        updated=f"Results through {_day(last)}" + (" (final)" if final else "") if last else "",
         headline=headline, fill={"season": season, "played": played},
         views=[V.clean(standings_table), V.clean(odds_table), V.clean(players_table), head, V.clean(team_picker)])
 

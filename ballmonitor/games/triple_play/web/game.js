@@ -250,11 +250,11 @@
     }
     const n = Object.keys(state.place).length;
     if (!state.checked && n === total()) tray.prepend(el("div", { class: "hint full" }, spareCount()
-      ? `Board full — check when you're ready. The ${spareCount()} cards left over don't count.`
-      : `All ${total()} placed — check when you're ready.`));
+      ? `Board full! Check your answers whenever you're ready. The ${spareCount()} leftover cards don't count.`
+      : `All ${total()} spots filled! Check your answers whenever you're ready.`));
     $("#placed-count").textContent = `${n} / ${total()} spots filled`;
     $("#btn-check").disabled = state.checked || n !== total();
-    $("#btn-check").textContent = state.checked ? "Checked" : "Check (one try)";
+    $("#btn-check").textContent = state.checked ? "Checked" : "Check answers (one try)";
     $("#btn-clear").disabled = state.checked;
     $("#tray-hint").classList.toggle("hidden", state.checked);
   }
@@ -302,7 +302,7 @@
     const code = regionAt(x, y);
     const inRegion = Object.entries(state.place).filter(([i, c]) => c === code && Number(i) !== idx).length;
     if (inRegion >= NEED[code]) {
-      toast(code === "" ? "Only one player goes outside all three circles" : `That part only holds ${NEED[code]}`);
+      toast(code === "" ? "Only one card goes outside all three circles." : `That section only holds ${NEED[code]}.`);
       return false;
     }
     state.place[idx] = code;
@@ -407,18 +407,18 @@
   }
   function showHelp() {
     modal(el("h2", {}, "How to play"),
-      el("p", {}, "Three circles and a card for every spot. Put each card in the one part of the diagram that fits it. Baseball days have 11 spots:"),
+      el("p", {}, "Place each card into the one section of the three-circle Venn diagram where it belongs. Standard baseball puzzles have 11 spots:"),
       el("ul", {},
-        el("li", {}, "1 in the middle (all three circles)"),
-        el("li", {}, "1 in each overlap of exactly two circles"),
-        el("li", {}, "2 in each part that belongs to only one circle (3 on Sunday)"),
-        el("li", {}, "1 outside all three")),
-      el("p", {}, "Every baseball puzzle has a team, a position and one more circle (a stat, an honor or where a player was born), and only players who are clearly in or clearly out of each circle."),
-      el("p", {}, "Monday's cities & states puzzle is bigger: 17 spots (2 in each overlap, 3 in each single circle) with a spare card for every part, 25 cards in all. Cards left over don't count."),
-      el("p", {}, "Tap a card and then a part of the diagram, or drag it there. Tap a placed card twice to send it back."),
-      el("p", {}, "You get one check. Your score is how many of the spots you filled correctly."),
-      el("p", {}, "A new puzzle every day: cities & states on Monday (MLB's traditional off day), baseball players the rest of the week — Tuesday easiest (the most famous players), Friday and Saturday hardest, and a bigger board on Sunday."),
-      el("p", { class: "hint" }, "Tap a circle's label for its exact rule (e.g. what counts as a shortstop: at least 75% of his games there)."),
+        el("li", {}, "1 in the center (fits all three circles)"),
+        el("li", {}, "1 in each two-circle overlap"),
+        el("li", {}, "2 in each single-circle section (3 on Sundays)"),
+        el("li", {}, "1 outside all three circles")),
+      el("p", {}, "Every baseball puzzle pairs a team, a position, and a third category (a stat milestone, an award, or birthplace). We only include players who clearly fit—or clearly don't fit—each circle."),
+      el("p", {}, "Mondays feature a larger Cities & States puzzle with 17 spots (2 per overlap, 3 per single circle) and 25 cards, giving you an extra option for every section. Leftover cards aren't scored."),
+      el("p", {}, "Drag a card onto the diagram, or tap a card and then tap where you want it. Tap a placed card twice to move it back to the tray."),
+      el("p", {}, "You only get one check, and you score a point for every card in the right spot."),
+      el("p", {}, "A fresh puzzle drops every day: Cities & States on Monday (MLB's traditional off day), and baseball players Tuesday through Sunday—Tuesday easiest (the most famous players), Friday and Saturday hardest, with a bigger board on Sunday."),
+      el("p", { class: "hint" }, "Tip: tap any circle label to see its exact cutoff rules."),
       el("p", { class: "hint" }, `Data: ${state.index?.source || "Lahman Baseball Database"}.`));
   }
   function showRules() {
@@ -427,8 +427,8 @@
       el("ul", { class: "rule-list" }, ...p.categories.map((c, i) =>
         el("li", {}, el("strong", { style: `color:${COLORS["ABC"[i]]}` }, c.label), " — ", c.rule))),
       el("p", { class: "hint" }, p.pack === "places"
-        ? "Teams and facts are for the 2026 season; a metro counts teams in its suburbs (the Giants and Jets are New York). A state counts every team and school inside it."
-        : "Stats are regular-season totals from the Lahman Baseball Database. A player only appears in a puzzle if he is clearly in or clearly out of each circle: no games for the team or at least 3 seasons and a quarter of his games there, at least 78% of his games at the position or hardly any (under 50 games), and nowhere near a stat's line."));
+        ? "Teams and facts reflect the 2026 season. Metro areas include suburban teams (so the Giants and Jets count for New York), and states include every team and school inside their borders."
+        : "Stats are regular-season totals from the Lahman Baseball Database. Every player is a clear yes or clear no for each circle: either zero games with a team or at least 3 seasons and 25% of their games there; either 78%+ of games at a position or under 50 games there; and nobody anywhere near a stat's cutoff."));
   }
   async function showArchive() {
     const list = [...available()].reverse();

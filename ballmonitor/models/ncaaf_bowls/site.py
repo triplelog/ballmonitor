@@ -45,19 +45,18 @@ def projected_field(summaries) -> dict[str, int]:
 
 
 def _answer(s, team: dict, bowl_names: dict, proj: dict[str, int]) -> str:
-    """The one line a fan wants first, e.g. "Georgia (6-1, SEC): 89% to make the playoff,
-    projected as the No. 6 seed; projected 10.7-2.2 before the bowls"."""
+    """The one line a fan wants first, e.g. "Georgia (6-1, SEC) has an 89% chance to make the playoff..."."""
     head = f"{s.team_name} ({team.get('wins', 0)}-{team.get('losses', 0)}, {s.conf})"
-    rec = f"{s.record_mean_wins:.1f}-{s.record_mean_losses:.1f} expected before the bowls"
+    rec = f"projected to finish {s.record_mean_wins:.1f}-{s.record_mean_losses:.1f} before bowl season"
     if s.p_cfp >= 0.25:
-        where = (f", projected as the No. {proj[s.team_id]} seed" if s.team_id in proj
-                 else ", just outside the projected 12-team field")
-        return f"{head}: {_pct(s.p_cfp)} to make the playoff{where}; {rec}."
+        where = (f" (projected No. {proj[s.team_id]} seed)" if s.team_id in proj
+                 else " (just outside the projected 12-team field)")
+        return f"{head}: {_pct(s.p_cfp)} chance to make the playoff{where}, {rec}."
     bowl = s.top_bowls[0] if s.top_bowls else None
     if s.p_eligible >= 0.5 and bowl:
-        return (f"{head}: {_pct(s.p_eligible)} to be bowl eligible; most likely bowl: "
-                f"{bowl_names.get(bowl[0], bowl[1])} ({_pct(bowl[2])}); {rec}.")
-    return f"{head}: {_pct(s.p_eligible)} to reach six wins and a bowl; {rec}."
+        return (f"{head}: {_pct(s.p_eligible)} chance to reach bowl eligibility, most likely headed to the "
+                f"{bowl_names.get(bowl[0], bowl[1])} ({_pct(bowl[2])}), {rec}.")
+    return f"{head}: {_pct(s.p_eligible)} chance to reach six wins and a bowl, {rec}."
 
 
 # ── who to root for this week ─────────────────────────────────────────────────
@@ -140,14 +139,13 @@ def root_view(team_id: str, team_name: str, what: str, rows: list[dict], when: s
     return V.table(
         f"root_{team_id}", f"Who to root for this week ({when})",
         [V.col("game", "Game", link="team", sep=" "), V.col("root", "Root for", link="team"),
-         V.col("if_win", f"{what.capitalize()} chance if they win", "pct"),
-         V.col("if_lose", "If they lose", "pct"), V.col("diff", "Difference", "pct", bar=True)],
+         V.col("if_win", f"{what.capitalize()} odds if they win", "pct"),
+         V.col("if_lose", "If they lose", "pct"), V.col("diff", "Swing", "pct", bar=True)],
         rows,
-        subtitle=f"{team_name}'s {what} chance depending on how each game this week goes. "
-                 f"Their own game comes first; games that barely matter are left out.",
-        note=f"From the same simulated seasons: the {what} chance in the seasons where that team won "
-             "the game versus the ones where it lost. Differences smaller than the simulation's own "
-             "noise are left out.")
+        subtitle=f"How each game this week shifts {team_name}'s {what} odds. "
+                 f"Their own game is listed first; games with little impact are left out.",
+        note=f"Compares {team_name}'s {what} odds in simulated seasons where that team won versus where they lost. "
+             "Swings too small to separate from simulation noise are hidden.")
 
 
 def biggest_games(res, schedule: list[dict], games: list[int], names: dict[str, str], summaries,
@@ -184,13 +182,13 @@ def biggest_games(res, schedule: list[dict], games: list[int], names: dict[str, 
     return V.table(
         "big_games", f"This week's biggest games ({when})",
         [V.col("game", "Game", link="team", sep=" "),
-         V.col("stake", "Playoff places at stake", "number", decimals=2, bar=True),
-         V.col("fav", "Favorite"), V.col("teams", "Whose playoff chances move most", link="team")],
+         V.col("stake", "Playoff spots at stake", "number", decimals=2, bar=True),
+         V.col("fav", "Favorite"), V.col("teams", "Most affected teams", link="team")],
         rows[:int(p.site_big_games_rows)],
-        subtitle="The games that move the playoff race most, whoever wins. A team's own page shows "
-                 "who it should root for.",
-        note="Playoff places at stake: how much playoff chance changes hands between the two results, "
-             "added up over every team it clearly moves (1.00 = one whole playoff spot).")
+        subtitle="The games with the biggest impact on the playoff race. A team's page shows who it should root for, "
+                 "when this week's games matter to it.",
+        note="Playoff spots at stake totals how much playoff probability shifts between the two outcomes across every "
+             "team it clearly moves (1.00 equals one full playoff spot).")
 
 
 def _bubble(summaries, cuts: list[float], teams: dict, proj: dict[str, int]) -> dict:
@@ -244,16 +242,15 @@ def _bracket(model, summaries, proj: dict[str, int]) -> list[dict]:
     seeds_table = V.table(
         "field", "Projected playoff field",
         [V.col("seed", "Seed", "int", low_first=True), V.col("team", "Team", link="team"), V.col("conf", "Conf"),
-         V.col("cfp", "Playoff chance", "pct", bar=True), V.col("bye", "Bye chance", "pct")],
+         V.col("cfp", "Playoff odds", "pct", bar=True), V.col("bye", "Bye odds", "pct")],
         [{"seed": i, "team": s.team_name, "conf": s.conf, "cfp": s.p_cfp, "bye": s.p_cfp_bye} for i, s in seeded.items()],
-        subtitle="The 12 teams most likely to make it, in the order they're most likely to be seeded. Seeds 1-4 get a bye.",
-        note="The real field also needs the five highest-ranked conference champions, so it can differ.")
+        subtitle="The 12 teams most likely to make the playoff, ordered by average seed. Seeds 1-4 get a first-round bye.",
+        note="The actual field guarantees spots to the five highest-ranked conference champions, so it can differ.")
     bracket = V.bracket(
         "bracket", "Projected bracket", [V.round_(name, games) for name, games in rounds.items()],
-        subtitle=f"If every favorite wins, {seeded[champ].team_name} takes the title. Seeds 1-4 start in the "
-                 "quarterfinals. The favorite of each game is in bold and goes on to the next round.",
-        note="Each percentage is that team's chance to win that one game against that opponent "
-             "(first-round games are at the higher seed's stadium).",
+        subtitle=f"If the favorite wins every game, {seeded[champ].team_name} wins the title. Seeds 1-4 start in the "
+                 "quarterfinals. Bold teams are favored to advance.",
+        note="Percentages show head-to-head win odds for each matchup (first-round games are played on campus at the higher seed).",
         link="team", champion=seeded[champ].team_name)
     return [seeds_table, bracket]
 
@@ -367,17 +364,16 @@ def page(model) -> dict:
          V.col("wins", "Proj. wins", "number"),
          V.col("cfp", "Playoff", "pct", bar=True), V.col("conf_title", "Conf. title", "pct"),
          V.col("title", "National title", "pct", decimals=1), V.col("bowl", "Most likely bowl", link="bowl")],
-        rows, subtitle="Chances for the rest of the 2026 season. Click a team or bowl for its own page; "
-                       "click a column to sort.",
+        rows, subtitle="Odds for the rest of the 2026 season. Click any team or bowl for details, or click a column header to sort.",
         search=True, page_size=25,
-        note=f"Projected wins: wins so far plus expected wins in the rest of the season, including a conference "
-             f"title game if they play in one. Based on {sims:,} simulated seasons.")
+        note=f"Projected wins include games already played plus expected wins the rest of the way (including conference "
+             f"title games). Based on {sims:,} simulated seasons.")
 
     contenders = sorted((s for s in summaries if s.national_champ_prob >= SHOW_MIN), key=lambda s: -s.national_champ_prob)
     title_bars = V.bar(
-        "title_odds", "Who wins the national title?",
+        "title_odds", "National championship odds",
         [{"label": s.team_name, "sub": s.conf, "value": s.national_champ_prob} for s in contenders[:16]],
-        fmt="pct", decimals=1, subtitle="The teams with the best chance to win the College Football Playoff.")
+        fmt="pct", decimals=1, subtitle="Teams with the strongest shot at winning the College Football Playoff.")
 
     proj = projected_field(summaries)
     bubble = _bubble(summaries, [float(c) for c in model.params.site_bubble_cuts], teams, proj)
@@ -434,13 +430,14 @@ def page(model) -> dict:
 
     return V.page(
         title="College football playoff & bowl odds",
-        summary="Every FBS team's chances to make the 12-team playoff, win the national title and land in each bowl.",
+        summary="Every FBS team's chances to make the 12-team playoff, win the national championship, and reach each bowl game.",
         sport="College football",
         order=1,
         updated=f"Games through {_day(meta['last_completed_game'])}",
-        how=("We play out the rest of the season thousands of times using ESPN's team ratings (FPI) and "
-             "the real remaining schedule, then pick the conference champions, the 12-team playoff and every "
-             "bowl the way the committees do. A team's chance is how often that happened."),
+        how=("We simulate the rest of the season thousands of times using ESPN's FPI team ratings and the "
+             "remaining schedule. In each simulation, we crown the conference champions, pick the 12-team "
+             "playoff the way the committee has in past seasons, and fill every bowl by its tie-ins. A team's odds are simply how "
+             "often each outcome happens."),
         headline=headline,
         views=[every_team, bubble, *([big] if big else []), *field_views, title_bars, team_picker, bowl_table,
                bowl_picker],

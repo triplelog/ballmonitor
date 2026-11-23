@@ -38,13 +38,14 @@ SITE_URL = "https://ballmonitor.com"  # canonical address (robots.txt, sitemap.x
 GAME_PATHS = ["/triple/", "/lineup/", "/27k/", "/hometurf/"]
 # Share tags the build adds to the games' pages: path -> (title, description)
 GAME_META = {
-    "/triple/": ("Triple Play: a daily baseball Venn puzzle",
-                 "A daily puzzle: put each player (or city) in the right part of three circles."),
-    "/lineup/": ("Lineup: a daily batting-order puzzle",
-                 "Nine real hitters from baseball history. Put them in the batting order that scores the most runs."),
-    "/27k/": ("27K: a pitching game", "A baseball pitching game: get 27 outs."),
-    "/hometurf/": ("Home Turf: a strategy game of baseball birthplaces",
-                   "Draft territories, call up the big-leaguers born there and battle three AI managers with their real seasons."),
+    "/triple/": ("Triple Play · Daily baseball Venn puzzle",
+                 "Sort baseball players (or cities and states on Mondays) into three overlapping circles."),
+    "/lineup/": ("Lineup · Daily batting-order puzzle",
+                 "Arrange nine real hitters from baseball history into the batting order that scores the most runs."),
+    "/27k/": ("27K · Baseball pitching game",
+              "Pick your pitches, track the moving strike zone, and try to get 27 outs."),
+    "/hometurf/": ("Home Turf · Baseball birthplace strategy game",
+                   "Draft territories, call up the MLB players born there, and battle three AI managers using their real seasons."),
 }
 
 

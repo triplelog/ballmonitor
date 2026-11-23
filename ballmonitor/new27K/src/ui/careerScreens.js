@@ -179,15 +179,15 @@ function hub(app, career, args) {
         const cost = pitchCost(career, F);
         return `<div class="panel">
             <div class="card-head"><h2>${esc(careerName(career))}</h2><span class="muted">${career.throws}HP · age ${career.age} · ${STYLES[career.style].name}</span></div>
-            <div class="muted" style="font-size:12px;margin-bottom:8px">Ratings on the pro scale (the smaller number is how he rates at the ${LEVEL_NAMES[level].toLowerCase()} level).</div>
+            <div class="muted" style="font-size:12px;margin-bottom:8px">Ratings use the pro scale (the muted number shows how he compares at the ${LEVEL_NAMES[level].toLowerCase()} level).</div>
             ${bar('Velocity', p.velo, here.velo)}${bar('Control', p.control, here.control)}${bar('Movement', p.move, here.move)}${bar('Stamina', p.stamina, '', 'stamina')}
-            <div class="xp"><b>${career.xp}</b> XP to spend <span class="muted">(${career.xpEarned} earned)</span></div>
+            <div class="xp"><b>${career.xp}</b> XP available <span class="muted">(${career.xpEarned} total earned)</span></div>
             <h3 style="margin-top:10px">Pitches</h3>
             <table class="grid c-pitches"><tr><th>Pitch</th><th class="r">Velo</th><th class="r">Move</th><th class="r">Ctrl</th></tr>
             ${p.pitches.map((x, i) => `<tr><td><span class="swatch" style="background:${PITCH_TYPES[x.type].color}"></span>${esc(x.type)}</td>
                 ${['velo', 'move', 'control'].map((f) => { const c = trainCost(career, F, { field: f, pitch: i }); return `<td class="r">${x[f]} <button class="small" data-train='${JSON.stringify({ field: f, pitch: i })}' ${career.xp < c ? 'disabled' : ''} title="${c} XP">+</button></td>`; }).join('')}</tr>`).join('')}
             </table>
-            <div class="muted" style="font-size:11px">Each + costs ${trainCost(career, F, { field: 'velo', pitch: 0 })}–ish XP (more for higher ratings; see the Career formulas).</div>
+            <div class="muted" style="font-size:11px">Each upgrade costs about ${trainCost(career, F, { field: 'velo', pitch: 0 })} XP, more at higher ratings (see the Career formulas).</div>
             <div style="display:flex;gap:6px;margin-top:8px;align-items:center">
                 ${learn.length && p.pitches.length < 6 ? `<select id="c-learn">${learn.map((t) => `<option>${t}</option>`).join('')}</select>
                 <button data-act="learn" ${career.xp < cost ? 'disabled' : ''}>Learn it · ${cost} XP</button>` : `<span class="muted" style="font-size:12px">${p.pitches.length >= 6 ? 'Six pitches is plenty.' : 'No new pitches until he’s older.'}</span>`}
@@ -267,7 +267,7 @@ function hub(app, career, args) {
         return `<div class="panel c-summary"><h2>${summary.year} season: ${esc(summary.team)}</h2>
             <p>${summary.line.gs} starts, ${summary.line.w}-${summary.line.l}, ${era(summary.line.era)} ERA, ${summary.line.ip} IP, ${summary.line.k} K. Team: ${summary.teamRecord}, ${esc(summary.finish)}.</p>
             ${summary.awards.length ? `<p>🏅 ${esc(summary.awards.join(' · '))}</p>` : ''}
-            <p class="muted">+${summary.xp} XP this season. He’s now ${career.age}${summary.level === 'youth' ? ' (two years on, ready for high school)' : ''}, and a year older means ${career.age < 28 ? 'a bit stronger' : career.age < 32 ? 'about the same' : 'a step slower'}.</p>
+            <p class="muted">+${summary.xp} XP earned this season. He’s now ${career.age}${summary.level === 'youth' ? ' (two years later and ready for high school)' : ''}, and another year older leaves him ${career.age < 28 ? 'a little stronger' : career.age < 32 ? 'about the same' : 'a step slower'}.</p>
             <div class="row-actions"><button class="small" data-act="dismiss">OK</button></div></div>`;
     }
 

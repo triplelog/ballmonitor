@@ -45,7 +45,7 @@ export function renderMenu(app) {
     <div class="menu">
         ${ON_ITCH ? '' : '<a class="back-site" href="../" title="Back to Ball Monitor">← Ball Monitor</a>'}
         <div class="logo">27K</div>
-        <p class="tag">Pick a pitch, read the moving zone, and paint the corners.</p>
+        <p class="tag">Pick your pitches, track the moving strike zone, and paint the corners.</p>
         <div class="menu-buttons">
             ${saved.map((sv, i) => `<button class="${i ? '' : 'primary'}" data-go="continue" data-kind="${sv.kind}">Continue game <span class="soon">${esc(savedLabel(sv))}</span></button>`).join('')}
             <button class="${saved.length ? '' : 'primary'}" data-go="quick">Quick Game</button>
@@ -53,7 +53,7 @@ export function renderMenu(app) {
             <button data-go="lab">Formula Lab</button>
             <button data-go="season">Season</button>
             <button data-go="careers">Career</button>
-            <button ${app.mpOn ? 'data-go="multiplayer"' : 'disabled title="Coming later"'} id="menu-mp">Multiplayer${app.mpOn ? '' : ' <span class="soon">coming later</span>'}</button>
+            <button ${app.mpOn ? 'data-go="multiplayer"' : 'disabled title="Server offline"'} id="menu-mp">Multiplayer${app.mpOn ? '' : ' <span class="soon">offline</span>'}</button>
         </div>
         <div class="panel howto">
             <h3>How to pitch</h3>
@@ -61,8 +61,8 @@ export function renderMenu(app) {
                 ${HOW_TO_STEPS}
             </ol>
         </div>
-        <p class="credit">Every rule of the game is a formula, read by <a href="https://mathzetta.com/" target="_blank" rel="noopener">MathZetta</a> — change them in the Formula Lab.</p>
-        ${CONFIG.supportPage && !ON_ITCH ? `<p class="credit support">27K is free. If you enjoy it, <a href="${esc(CONFIG.supportPage)}" target="_blank" rel="noopener">support 27K on itch.io</a> (pay what you want).</p>` : ''}
+        <p class="credit">Every rule in the game runs on a live formula powered by <a href="https://mathzetta.com/" target="_blank" rel="noopener">MathZetta</a>—tweak them anytime in the Formula Lab.</p>
+        ${CONFIG.supportPage && !ON_ITCH ? `<p class="credit support">27K is free to play. If you’re having fun, you can <a href="${esc(CONFIG.supportPage)}" target="_blank" rel="noopener">support it on itch.io</a> (pay what you want).</p>` : ''}
     </div>`;
     // Multiplayer opens once its server has answered.
     if (!app.mpOn) app.mpCheck?.then((on) => {
@@ -110,34 +110,34 @@ export function renderQuickSetup(app) {
                 <select id="q-inn">${[1, 3, 5, 7, 9].map((n) => `<option ${n === p.innings ? 'selected' : ''}>${n}</option>`).join('')}</select>
                 <label for="q-diff">Difficulty</label>
                 <div><input id="q-diff" type="range" min="1" max="5" step="1" value="${p.difficulty}"> <b id="q-diff-name">${diffNames[p.difficulty]}</b></div>
-                <div class="hint">Higher difficulty makes the zone faster and more erratic (see the Zone formulas).</div>
+                <div class="hint">Higher difficulty makes the strike zone move faster, turn more sharply and drift farther (see the Zone formulas).</div>
                 <label for="q-clock">Pitch clock</label>
                 <select id="q-clock">
                     <option value="press" ${(p.clockMode ?? 'press') === 'press' ? 'selected' : ''}>Starts when you press Pitch</option>
-                    <option value="continuous" ${p.clockMode === 'continuous' ? 'selected' : ''}>Runs from the end of the last pitch</option>
+                    <option value="continuous" ${p.clockMode === 'continuous' ? 'selected' : ''}>Runs continuously between pitches</option>
                     <option value="off" ${p.clockMode === 'off' ? 'selected' : ''}>Off</option>
                 </select>
                 <label for="q-clock-secs">Clock length</label>
                 <select id="q-clock-secs">${CLOCK_SECONDS.map((n) => `<option value="${n}" ${n === clockSecondsOf(p) ? 'selected' : ''}>${n} seconds</option>`).join('')}</select>
-                <div class="hint">The clock shows on the field only for its last 10 seconds. You can change both during a game, under the field.</div>
+                <div class="hint">The clock pops up on the field for its last 10 seconds. You can change both anytime below the field.</div>
                 <label for="q-guide">Break guide</label>
                 <select id="q-guide">
                     <option value="show" ${guideModeOf(p) === 'show' ? 'selected' : ''}>Always shown</option>
-                    <option value="hidden" ${guideModeOf(p) === 'hidden' ? 'selected' : ''}>Hidden once the zone moves (shown before you press Pitch)</option>
+                    <option value="hidden" ${guideModeOf(p) === 'hidden' ? 'selected' : ''}>Hide once the zone starts moving (shown before you press Pitch)</option>
                 </select>
                 <label for="q-calls">Pitch calling</label>
                 <select id="q-calls">
-                    <option value="me" ${p.catcherCalls ? '' : 'selected'}>You pick every pitch</option>
-                    <option value="catcher" ${p.catcherCalls ? 'selected' : ''}>The catcher calls them (pitch and spot; shake him off any time)</option>
+                    <option value="me" ${p.catcherCalls ? '' : 'selected'}>Call your own pitches</option>
+                    <option value="catcher" ${p.catcherCalls ? 'selected' : ''}>Catcher calls pitches and spots (shake off anytime)</option>
                 </select>
                 <label for="q-autobat">When you bat</label>
                 <select id="q-autobat">
-                    <option value="auto" ${(p.autoBat ?? true) ? 'selected' : ''}>Sim the whole half-inning automatically</option>
+                    <option value="auto" ${(p.autoBat ?? true) ? 'selected' : ''}>Auto-sim your half-innings</option>
                     <option value="manage" ${(p.autoBat ?? true) ? '' : 'selected'}>Manage each batter (pinch hit, sim one at a time)</option>
                 </select>
-                <label>Aiming help</label>
+                <label>Extra info</label>
                 <div>
-                    <label class="toggle"><input type="checkbox" id="q-odds" ${p.showOdds ? 'checked' : ''}> Show odds after each pitch</label>
+                    <label class="toggle"><input type="checkbox" id="q-odds" ${p.showOdds ? 'checked' : ''}> Show outcome odds after each pitch</label>
                 </div>
             </div>
             <div class="row-actions"><button class="primary big" data-act="next">Set lineup →</button></div>

@@ -139,7 +139,7 @@
     }
     state.draftOrder.length = data.territories.length;
     state.turn = state.draftOrder[0];
-    log(state, `Draft order: ${order.map((k) => state.seats[k].name).join(", ")} then rotating (the next one starts each round).`);
+    log(state, `Draft order: ${order.map((k) => state.seats[k].name).join(", ")} (rotates each round).`);
     return state;
   }
   function log(state, text, extra = {}) { state.log.push({ round: state.round, text, ...extra }); }

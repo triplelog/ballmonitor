@@ -691,7 +691,7 @@ async function renderDataTable(id) {
       shownTable = Tabview.mount(host, { server: t.server, backend: t.backend, theme: "light", timing: false,
         hide: ["compiled", "helper", "computed", "stats", "group"], ...t.options, ...options });
     } catch (e) {
-      host.replaceChildren(el("p", {}, "The table server isn't answering right now. Try again in a little while."));
+      host.replaceChildren(el("p", {}, "The table server isn't responding right now. Please try again in a bit."));
       console.error(e);
     }
   };
@@ -754,7 +754,7 @@ const drewBefore = () => { try { return localStorage.getItem(DRAWN_KEY) === "1";
 // formulas) and Download PNG (the picture pyslots drew, an <img> in its .pse-out). Both work from
 // outside the form, through Pyslots.mount and the page, so charts/ (a copy of pyslots) stays as it is.
 function chartTools(host, t, mount) {
-  const note = el("p", { class: "chart-first", role: "status" }, chartDrawn ? null : "Loading Python for your first chart (a few seconds)…");
+  const note = el("p", { class: "chart-first", role: "status" }, chartDrawn ? null : "Loading Python for your first chart (takes a few seconds)…");
   note.hidden = chartDrawn;
   const reset = el("button", { type: "button", class: "ss-btn small", onclick: () => mount() }, "Reset formulas");
   const download = el("a", { class: "ss-btn small", download: `${t.id}.png`, "aria-disabled": "true", href: null }, "Download PNG");
@@ -802,7 +802,7 @@ async function renderCharts(slug) {
       await mount();
     } catch (e) {
       tools.note.hidden = true;
-      host.replaceChildren(el("p", {}, "The chart couldn't load. Try again in a little while."));
+      host.replaceChildren(el("p", {}, "Couldn't load the chart right now. Please try again in a bit."));
       console.error(e);
     }
   };
@@ -812,7 +812,7 @@ async function renderCharts(slug) {
     tools.note.hidden = tools.bar.hidden = true;
     host.replaceChildren(el("div", { class: "chart-ask" },
       el("button", { type: "button", class: "ss-btn", onclick: draw }, "Draw the chart"),
-      el("span", { class: "small" }, "The first chart loads Python into your browser (a few seconds); later ones draw at once.")));
+      el("span", { class: "small" }, "Your first chart loads Python in your browser (a few seconds). After that, charts draw automatically.")));
   }
   fillSlot("chart-picks",
     ...Object.entries(groups).map(([g, xs]) => el("div", { class: "chart-group" },

@@ -17,7 +17,7 @@ default_length = "innings"   # the length and AI ability a new game starts with
 default_level = "allstar"
 [lengths.innings]
 label = "9 innings"
-note = "About half an hour: more call-ups and battles every inning."
+note = "About 30 minutes—more call-ups and more battles each inning."
 max_rounds = 9
 callups_min = 4             # 9-inning play-test (README): as many battles and captures as 15 rounds,
 territories_per_callup = 2  # winner holds about half the map, a third of games within 5 points
@@ -28,12 +28,12 @@ aggression = 1.45
 
 [lengths.doubleheader]
 label = "Doubleheader (18 innings)"
-note = "Twice as long: more time to build up and come back."
+note = "Twice as long, with more time to build rosters and mount a comeback."
 max_rounds = 18             # base pacing (README): ~320 battles, the round-3 leader wins about half
 
 [lengths.unlimited]
 label = "No limit"
-note = "Until one manager holds every territory, or you end it. Saved as you go."
+note = "Play until someone takes the whole map, or end it whenever you want. Auto-saves as you go."
 max_rounds = 0
 
 [score]
@@ -44,25 +44,25 @@ region_bonus = true         # plus each held region's bonus
 # the [ai] settings below (README: tournaments measure each level against All-Star).
 [levels.rookie]                 # vs All-Star in 2 of 4 seats, 9 innings, 800 games (README): 35%
 label = "Rookie"
-note = "Attacks recklessly with a random player, ignores regions, drafts and places call-ups loosely."
+note = "Attacks recklessly with random players, ignores region bonuses, and drafts loosely."
 strategy = "random"
 ai = { attack_region = 0.0, place_region = 0.0, draft_noise = 10.0, place_noise = 3.0, max_attacks = 12, aggression = 1.2 }
 
 [levels.pro]                    # 42.5%
 label = "Pro"
-note = "Picks players well; doesn't play for regions, drafts and places call-ups loosely."
+note = "Chooses smart matchups, but doesn't chase regions and drafts loosely."
 strategy = "smart"
 ai = { attack_region = 0.0, place_region = 0.0, draft_noise = 10.0, place_noise = 3.0 }
 
 [levels.allstar]                # 50%
 label = "All-Star"
-note = "Picks players well and fights for regions."
+note = "Chooses smart matchups and actively fights for region bonuses."
 strategy = "smart"
 ai = {}
 
 [levels.hof]                    # 69%
 label = "Hall of Fame"
-note = "All-Star, but picks its battles (5 a turn, only good odds) and drafts for itself instead of blocking rivals."
+note = "Patient and selective—only attacks with strong odds (up to 5 per turn) and drafts for its own regions."
 strategy = "smart"
 ai = { draft_block = 0.0, max_attacks = 5, aggression = 2.0 }
 

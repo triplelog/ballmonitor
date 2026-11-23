@@ -1,48 +1,48 @@
 // How to play: the same words on the menu and in the game's Help window.
 
 export const HOW_TO_STEPS = `
-    <li><b>Choose a pitch</b> and set your velocity and movement effort. More effort means more speed or break, but less control and more fatigue. The dashed line shows how the pitch will break, and the ring at its end how far it may scatter.</li>
-    <li><b>Press Pitch</b> (or Space, or the field). The strike zone jumps to a new spot and starts to wander. With the break guide set to hidden, the line disappears now, so remember it.</li>
-    <li><b>Click where to aim.</b> On a touch screen, put a finger down, drag to adjust, and lift to throw. The ball comes in on that spot, breaks from there and scatters by your control.</li>
-    <li><b>Beat the pitch clock</b> (20 seconds unless you change it; it appears for the last 10). Run out of time and it’s a ball.</li>
-    <li><b>Stuck?</b> Once an inning, call a <b>catcher’s visit</b>: it stops and resets the clock, and he’ll tell you what to throw this hitter.</li>`;
+    <li><b>Pick a pitch</b> and dial in your velocity and movement effort. Pushing harder adds speed or break, but widens your scatter and drains energy faster. The dashed line shows the break path, and the ring shows how much the pitch might miss by.</li>
+    <li><b>Hit Pitch</b> (or press Space, or tap the field). The strike zone jumps and starts moving. If you hide the break guide, the dashed line disappears once the zone starts moving—so memorize the break first.</li>
+    <li><b>Click to throw.</b> On a touchscreen, press and drag to aim, then lift your finger to release. The ball heads for your aim point, breaks from there, and scatters based on your control.</li>
+    <li><b>Beat the pitch clock</b> (20 seconds by default; it pops up for the final 10). Let it hit zero and it’s an automatic ball.</li>
+    <li><b>Need a plan?</b> Call a <b>catcher’s visit</b> (once per inning) to pause and reset the clock while your catcher recommends what to throw.</li>`;
 
 export function helpHTML({ first = false } = {}) {
     return `<div class="overlay" data-act="help-close"><div class="panel help" role="dialog" aria-label="How to play">
         <h2>${first ? 'Welcome to 27K' : 'How to play'}</h2>
-        <p class="muted">You are the pitcher. Get 27 outs before they score more than your hitters do.</p>
+        <p class="muted">You’re on the mound. Record 27 outs and keep the other team from outscoring yours.</p>
         <ol class="help-steps">${HOW_TO_STEPS}</ol>
         <div class="help-cols">
             <div>
                 <h3>Reading the field</h3>
                 <ul>
-                    <li><b>White box:</b> the strike zone. Pitches on its edges are the hardest to hit, and the umpire doesn’t always give them.</li>
-                    <li><b>Numbered dots:</b> this at-bat’s pitches, in each pitch’s colour. Solid ones were strikes; a white rim means he swung.</li>
-                    <li><b>Energy bar:</b> a tired pitcher throws slower and wilder, and the zone moves faster. The Bullpen tab brings in a reliever.</li>
-                    <li><b>Batter tab:</b> his ratings, his hot (red) and cold (blue) spots, and how he hits each pitch type.</li>
-                    <li><b>Mixing it up:</b> a hitter does worse against a pitch he hasn’t seen this at-bat, and after a change of speed or location.</li>
+                    <li><b>White box:</b> the strike zone. Pitches on its edges and corners are hardest to hit, though the umpire won’t call every borderline pitch.</li>
+                    <li><b>Numbered dots:</b> pitches from this at-bat, color-coded by pitch type. Solid dots were strikes; a white ring means the batter swung.</li>
+                    <li><b>Energy bar:</b> as your pitcher tires, velocity drops, scatter widens, and the zone moves faster. Open the Bullpen tab to bring in a reliever.</li>
+                    <li><b>Batter tab:</b> check his ratings, hot (red) and cold (blue) zones, and how he’s fared against each pitch type.</li>
+                    <li><b>Mix your pitches:</b> batters adjust when they see the same pitch repeatedly—changing speeds and locations keeps them off balance.</li>
                 </ul>
             </div>
             <div>
-                <h3 class="no-touch">Keys</h3>
+                <h3 class="no-touch">Shortcuts</h3>
                 <table class="grid help-keys no-touch">
-                    <tr><td><span class="kbd">Space</span></td><td>Pitch · skip ahead · sim your batter</td></tr>
-                    <tr><td><span class="kbd">1</span>–<span class="kbd">9</span></td><td>Choose a pitch</td></tr>
-                    <tr><td><span class="kbd">F</span> <span class="kbd">S</span> <span class="kbd">C</span> …</td><td>Each pitch’s own letter (on its button)</td></tr>
-                    <tr><td><span class="kbd">?</span></td><td>This help</td></tr>
+                    <tr><td><span class="kbd">Space</span></td><td>Pitch · skip animation · sim batter</td></tr>
+                    <tr><td><span class="kbd">1</span>–<span class="kbd">9</span></td><td>Select a pitch</td></tr>
+                    <tr><td><span class="kbd">F</span> <span class="kbd">S</span> <span class="kbd">C</span> …</td><td>Pitch shortcut letter (shown on each button)</td></tr>
+                    <tr><td><span class="kbd">?</span></td><td>Open this help window</td></tr>
                     <tr><td><span class="kbd">Esc</span></td><td>Close a window</td></tr>
                 </table>
-                <h3>Under the field</h3>
+                <h3>Options below the field</h3>
                 <ul>
-                    <li><b>Heat map</b> paints his hot and cold spots on the zone.</li>
-                    <li><b>Odds</b> shows the chances behind each pitch after it lands.</li>
-                    <li><b>Catcher calls pitches</b> has him pick the pitch and the spot; your job is to hit it.</li>
+                    <li><b>Heat map</b> overlays the batter’s hot and cold zones on the plate.</li>
+                    <li><b>Odds</b> displays the underlying probabilities after each pitch lands.</li>
+                    <li><b>Catcher calls pitches</b> lets your catcher suggest each pitch and target—just hit his spot (or shake him off).</li>
                 </ul>
             </div>
         </div>
         <div class="row-actions">
-            <span class="muted" style="font-size:12px">Every rule here is a formula you can change in the Formula Lab.</span>
-            <button class="primary" data-act="help-close">${first ? 'Play ball' : 'Back to the game'}</button>
+            <span class="muted" style="font-size:12px">Every rule under the hood is a formula you can edit in the Formula Lab.</span>
+            <button class="primary" data-act="help-close">${first ? 'Play ball' : 'Back to game'}</button>
         </div>
     </div></div>`;
 }

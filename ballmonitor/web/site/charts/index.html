@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Baseball charts · Ball Monitor</title>
-  <meta name="description" content="Every big-league season from 1871 to 2024, charted. Pick a chart, or change any of its boxes and draw it again.">
+  <meta name="description" content="Explore big-league seasons from 1871 to 2024 with interactive charts. Pick a preset or edit the formulas to make your own.">
   <link rel="canonical" href="https://ballmonitor.com/charts/">
   <meta property="og:title" content="Baseball charts · Ball Monitor">
-  <meta property="og:description" content="Every big-league season from 1871 to 2024, charted. Pick a chart, or change any of its boxes and draw it again.">
+  <meta property="og:description" content="Explore big-league seasons from 1871 to 2024 with interactive charts. Pick a preset or edit the formulas to make your own.">
   <meta property="og:url" content="https://ballmonitor.com/charts/">
   <!-- shell:head -->
   <meta property="og:type" content="website">
@@ -15,7 +15,7 @@
   <meta property="og:image" content="https://ballmonitor.com/static/share.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Ball Monitor: sports odds and forecasts, in plain numbers">
+  <meta property="og:image:alt" content="Ball Monitor — sports numbers, charts, and games">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="/favicon.ico" sizes="32x32">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -53,8 +53,8 @@
       </section>
       <section class="ss-cell ss-p4 side-about ss-desktop-only">
         <!-- claude-ui:begin sidebar-about -->
-        <p class="side-title">Sports odds and forecasts, in plain numbers</p>
-        <p>College football forecasts, table tennis standings with the luck taken out, more than a century of box scores to search, baseball charts you draw yourself, and four baseball games.</p>
+        <p class="side-title">Sports forecasts, box scores, and games</p>
+        <p>College football playoff odds and recruiting rankings, Major League Table Tennis numbers, searchable baseball box scores and NFL quarterback games, custom baseball charts, and four baseball games.</p>
         <!-- claude-ui:end sidebar-about -->
         <p class="ss-muted small built"></p>
       </section>
@@ -66,7 +66,7 @@
         <a class="back" href="/">← Home</a>
         <div class="ss-kicker">Baseball · Charts</div>
         <h1 class="ss-title" data-text="title">Baseball charts</h1>
-        <p class="summary" data-text="summary">Every big-league season from 1871 to 2024, charted. Pick a chart, or change any of its boxes and draw it again.</p>
+        <p class="summary" data-text="summary">Explore big-league seasons from 1871 to 2024 with interactive charts. Pick a preset below, or edit any formula to build your own.</p>
         <!-- one button per chart, grouped (from web/charts.toml) -->
         <nav class="chart-picks" aria-label="Charts" data-slot="chart-picks"></nav>
       </section>
@@ -74,14 +74,14 @@
       <section class="ss-cell ss-p4 chart-cell" data-slot="chart"><p class="loading">Loading the chart…</p></section>
       <section class="ss-cell ss-p4 how">
         <div class="ss-band">How this works</div>
-        <p>Each box is a formula over a season's numbers (HR, AB, BB…). What you type is read by <a href="https://mathzetta.com/">MathZetta</a>, shown as math, and the chart is drawn by a short Python program right in your browser. The first chart downloads Python into your browser (a few seconds, and a sizeable download on a phone plan; afterwards it's cached); nothing you type is sent anywhere.</p>
-        <p class="small">Data: the Lahman Baseball Database (SABR, CC BY-SA 3.0): hitters with 400+ at-bats and pitchers with 100+ innings in a season.</p>
+        <p>Each input box takes a formula using season stats like HR, AB, or BB. <a href="https://mathzetta.com/">MathZetta</a> formats your formula as math, and Python draws the chart right inside your browser. The first chart takes a few seconds to download Python (and uses a noticeable chunk of mobile data, though it's cached afterward). Nothing you type leaves your device.</p>
+        <p class="small">Data from the Lahman Baseball Database (SABR, CC BY-SA 3.0), covering hitters with 400+ at-bats and pitchers with 100+ innings in a season.</p>
       </section>
     </main>
     <!-- shell:footer -->
     <footer class="ss-cell ss-p4 site-foot">
       <nav aria-label="About this site"><a href="/about/">About</a> · <a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a></nav>
-      <p class="small">For fun and curiosity: these are estimates, not betting advice. <span class="built"></span></p>
+      <p class="small">Just for fun — these are estimates, not betting advice. <span class="built"></span></p>
     </footer>
     <!-- /shell:footer -->
     </div>

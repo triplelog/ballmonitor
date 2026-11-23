@@ -242,7 +242,7 @@ export const CHALLENGES = [
     // ---- Epic ----
     {
         id: 'k27', tier: 'Epic', icon: '👑', name: '27 Strikeouts',
-        desc: 'The big one. Only strikeouts make outs: a ball caught by a fielder is just another strike, even strike three. Every out is a K; win the game.',
+        desc: 'The ultimate test. Only strikeouts count as outs—even a ball caught in the field just counts as a strike, even on strike three. Record all 27 outs via K and win the game.',
         autoOffense: true, kOnly: true,
         stars: ['Win the game', '3 runs or fewer', 'Shutout'],
         check(t, r, g) {

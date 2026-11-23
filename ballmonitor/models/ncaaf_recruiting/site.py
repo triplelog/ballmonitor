@@ -111,12 +111,11 @@ def _year_views(model, year: int, conf_of: dict[str, str]) -> tuple[list[dict], 
          V.col("commits", "Commits", "int"), V.col("blue", "4-5 star commits", "int"),
          V.col("score", "Class score", "number", decimals=1, bar=True)],
         overall,
-        subtitle=("Commitments so far; this class is still being signed. " if in_progress else "")
-        + "Rank: our ranking. Industry rank: the recruiting services' consensus, based on star ratings. "
-          "Pick a conference or search for a team; click a team for its classes in every year.",
-        note="Conferences are 2026 FBS conferences (blank for FCS and other schools), also for older classes. "
-             "Class score adds up the recruit scores of a school's commits, with each extra commit counting "
-             "a little less than the one before.",
+        subtitle=("Commitments so far (this class is still signing). " if in_progress else "")
+        + "Our rank is based on scholarship offers; Industry rank is the recruiting services' star-rating consensus. "
+          "Filter by conference or click any team to see its year-by-year history.",
+        note="Conferences reflect 2026 FBS alignment (blank for FCS and other schools), even for earlier classes. "
+             "Class score totals a school's commits, best first, with each extra commit counting a little less.",
         search=True, page_size=25, quick_filters=("conf", _conf_buttons(overall)))
     sides_table = V.table(
         f"units_{year}", f"{year} class by side of the ball",
@@ -124,11 +123,9 @@ def _year_views(model, year: int, conf_of: dict[str, str]) -> tuple[list[dict], 
          rank("run_o", "Run offense"), rank("pass_o", "Pass offense"), rank("run_d", "Run defense"),
          rank("pass_d", "Pass defense")],
         sides,
-        subtitle="Where each class ranks for offense and defense, and for the running and passing game on each side.",
-        note="Each recruit counts toward the units his position plays in: a quarterback or receiver mostly "
-             "toward the passing game, a running back or offensive lineman toward both, and so on. Each side of the "
-             "ball adds up its recruits the same way as the class score, best first, each one counting a little "
-             "less than the one before.",
+        subtitle="How each class stacks up on offense, defense, and the run and pass games.",
+        note="Each recruit contributes to the units tied to his position—quarterbacks and receivers mostly to the "
+             "passing game, running backs and linemen to both, and so on—using the same diminishing-weight sum as the overall class score.",
         search=True, page_size=25)
     top = sorted(teams, key=lambda t: t.rank)
     leaders = [t.name for t in top[:3]]
@@ -157,12 +154,12 @@ def _team_option(name: str, conf: str, history: list[tuple[int, dict, bool]]) ->
         [V.col("year", "Class"), V.col("rank", "Rank", "int", low_first=True),
          V.col("conf_rank", "Rank in conf.", "int", low_first=True),
          V.col("industry", "Industry rank", "int", low_first=True),
-         V.col("gap", "Ours vs industry", "signed", decimals=0), V.col("commits", "Commits", "int"),
+         V.col("gap", "Ours vs. industry", "signed", decimals=0), V.col("commits", "Commits", "int"),
          V.col("blue", "4-5 star commits", "int")],
         rows,
-        subtitle="Ours vs industry: how many places higher we rank the class than the recruiting services do "
-                 "(negative: lower).",
-        note="Rank in conference uses the 2026 conferences for every year.")
+        subtitle="Ours vs. industry: how many places higher we rank the class than the star-rating consensus does; "
+                 "negative means lower.",
+        note="Conference ranks use 2026 conference alignment across every year.")
     old = sorted(history)   # oldest first, for the chart
     ours = [(y, r["rank"]) for y, r, _ in old]
     industry = [(y, r["industry"]) for y, r, _ in old if r["industry"]]
@@ -211,31 +208,30 @@ def page(model) -> dict:
 
     by_year = V.picker(
         "by_year", "Recruiting classes by year", "Class", options,
-        subtitle="Pick a class year: every program's overall, conference and industry rank, then its "
-                 "offense, defense, run and pass ranks."
-                 + (f" The {newest} class is still being signed; {years[1]} and earlier classes are final."
+        subtitle="Choose a class year to see overall, conference, and industry rankings, plus offense and defense breakdowns."
+                 + (f" The {newest} class is still signing; {years[1]} and earlier are final."
                     if status.get("status") == "in_progress" else ""))
 
     team_picker = V.picker(
         "team", "Team by team", "Team",
         [_team_option(name, conf_of.get(name, ""), h) for name, h in sorted(history.items())],
-        subtitle="One FBS program's class rank in every year, next to the recruiting services' rank.",
+        subtitle="See how one FBS program's classes have ranked over time compared to the industry consensus.",
         default=sorted(history).index(lead[0]) if lead[0] in history else 0)
 
     return V.page(
         title="College football recruiting rankings",
-        summary="Every football program's recruiting class ranked overall, within its conference and by "
-                f"side of the ball, {years[-1]} to {newest}.",
+        summary=f"Every college football recruiting class from {years[-1]} to {newest}, ranked overall, by conference, "
+                "and by offense and defense.",
         fill={"first_year": years[-1], "last_year": newest},
         sport="College football",
         order=20,
         updated=updated,
         headline=headline,
-        how=("Coaches are the best talent scouts, so a recruit's score comes from the schools that "
-             "offered him a scholarship and lost: the more offers, and the stronger those schools, the "
-             "higher the score. School strength is worked out from every recruiting battle in the class "
-             "at once. Offer lists come from On3 and are incomplete for lower-rated recruits. The industry "
-             "rank is On3's consensus of the four recruiting services' star ratings, for comparison. "
-             "These are high-school classes only, not players added from the transfer portal."),
+        how=("Instead of relying on star ratings, we look at which coaches wanted each player. A recruit's score is "
+             "based on the schools that offered him a scholarship and didn't land him—the more offers, and the "
+             "stronger those programs, the higher his value. Program strength is solved across every recruiting "
+             "battle in the class at the same time. Offer lists come from On3 (and can be incomplete for lower-rated "
+             "players). We show On3's consensus industry rank alongside ours for comparison. These cover high school "
+             "recruiting classes only, not transfer portal additions."),
         views=[by_year, team_picker],
     )

@@ -115,7 +115,7 @@ export function renderLab(app) {
                     <button class="small" data-act="use-default">Use default</button>
                 </div>
                 <div class="row-actions">
-                    <span class="muted" style="margin-right:auto;font-size:12px">Saved formulas apply right away, including to a game in progress. Ctrl/⌘-S saves.</span>
+                    <span class="muted" style="margin-right:auto;font-size:12px">Saved formulas take effect immediately, even in a game in progress. Press Ctrl/⌘-S to save.</span>
                     <button data-act="discard">Discard changes</button>
                     <button class="primary" data-act="save">Save formula</button>
                 </div>
@@ -136,20 +136,20 @@ export function renderLab(app) {
                     <span><select id="sim-games">${[100, 300, 1000].map((n) => `<option ${n === lab.simGames ? 'selected' : ''} value="${n}">${n} games</option>`).join('')}</select>
                     <button class="primary" data-act="sim">Simulate</button></span>
                 </div>
-                <p class="muted" style="margin:4px 0 8px;font-size:12px">Plays computer-vs-computer games with your saved formulas plus this draft, and compares them with the defaults and real MLB averages.</p>
+                <p class="muted" style="margin:4px 0 8px;font-size:12px">Simulates AI-vs-AI games using your saved formulas plus this draft, then compares the results against the defaults and real MLB averages.</p>
                 <div id="sim"></div>
             </div>
             <div class="panel">
                 <h3>Variables</h3>
-                <p class="muted" style="margin:0 0 8px;font-size:12px">Click to insert. Dimmed ones aren't known yet when this formula runs.</p>
+                <p class="muted" style="margin:0 0 8px;font-size:12px">Click any variable to insert it. Dimmed ones aren’t calculated yet when this formula runs.</p>
                 <div id="vars"></div>
             </div>
             <div class="panel lab-syntax">
-                <h3>Writing formulas</h3>
-                <div>Arithmetic <code>+ - * / ^</code> and brackets; functions <code>min(a, b, …)</code> <code>max</code> <code>abs</code> <code>sqrt</code> <code>exp</code> <code>ln</code> <code>log</code> <code>floor</code> <code>ceil</code> <code>round</code> <code>sin</code> <code>cos</code> <code>random()</code>;
-                comparisons <code>&lt; &gt; &lt;= &gt;= =</code> joined with <code>and</code> / <code>or</code>; choices <code>if edge &gt; 0 then 1 else -1</code> (nest them for more cases).
-                <a href="https://mathzetta.com/" target="_blank" rel="noopener">MathZetta</a> also reads LaTeX, so <code>\\frac{1}{1 + e^{-x}}</code> works too.</div>
-                <div class="muted" style="margin-top:6px">Logistic curves are handy for chances: <code>1/(1 + 10^(-(edge + 2)/2.5))</code> rises from 0 to 1 around edge = −2, with 2.5 setting how gradual it is.</div>
+                <h3>Formula syntax</h3>
+                <div>Standard math <code>+ - * / ^</code> and parentheses; functions like <code>min(a, b, …)</code> <code>max</code> <code>abs</code> <code>sqrt</code> <code>exp</code> <code>ln</code> <code>log</code> <code>floor</code> <code>ceil</code> <code>round</code> <code>sin</code> <code>cos</code> <code>random()</code>;
+                comparisons <code>&lt; &gt; &lt;= &gt;= =</code> with <code>and</code> / <code>or</code>; conditionals like <code>if edge &gt; 0 then 1 else -1</code> (which can be nested).
+                <a href="https://mathzetta.com/" target="_blank" rel="noopener">MathZetta</a> also supports LaTeX, so <code>\\frac{1}{1 + e^{-x}}</code> works too.</div>
+                <div class="muted" style="margin-top:6px">Tip: logistic curves are great for smooth probabilities—for example, <code>1/(1 + 10^(-(edge + 2)/2.5))</code> climbs from 0 to 1 around edge = −2, with 2.5 controlling the steepness.</div>
             </div>`;
         renderVars();
         renderGraphSelect();
