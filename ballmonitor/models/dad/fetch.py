@@ -276,8 +276,8 @@ EXAMPLES = [
      "2024-25 men's Final Four teams, full seasons, ranked by DAD"),
     ("wbb_south_carolina_2024", "wbb", 2024, ["South Carolina Gamecocks"], "top4_seed",
      "2023-24 South Carolina Gamecocks women's basketball (38-0 champions)"),
-    ("cfb_season", "cfb", 2024, ["Ohio State Buckeyes"], "bubble",
-     "2024 Ohio State Buckeyes football (CFP champions), FBS games only"),
+    ("cfb_season", "cfb", 2024, ["South Carolina Gamecocks"], "bubble",   # the default college football team (owner)
+     "2024 South Carolina Gamecocks football, FBS games only"),
     ("mlb_dodgers_2024", "mlb", 2024, ["Los Angeles Dodgers"], "bubble",
      "2024 Los Angeles Dodgers (World Series champions), regular season + postseason"),
     ("mlb_al_east_race", "mlb", 2024,

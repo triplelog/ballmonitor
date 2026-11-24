@@ -91,7 +91,9 @@ def test_football_and_soccer_sports(model):
     cfb_inputs = registry.load_example("dad", "cfb_season")
     cfb_pred = model.predict(cfb_inputs)
     assert cfb_pred.primary.estimate is not None
-    assert cfb_pred.primary.estimate > 0
+    # 2024 South Carolina (9-4, the default college football team) sits just below the 12-team
+    # playoff bubble: about -0.2 deviations per game
+    assert -1 < cfb_pred.primary.estimate < 0.5
 
     # Soccer
     soccer_inputs = {

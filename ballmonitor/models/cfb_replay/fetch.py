@@ -17,7 +17,8 @@ from ballmonitor.models.cfb_replay import espn
 
 # Games bundled with the model (see MODEL.md "Example games" for why each was chosen).
 BUNDLED = {
-    "401858274": "Pittsburgh at Miami, 2026-10-24 (default example; lopsided)",
+    "401858274": "Pittsburgh at Miami, 2026-10-24 (lopsided)",
+    "401856731": "Tennessee at South Carolina, 2026-10-24 (default example; 27-24, 11 WP lead changes)",
     "401858275": "Syracuse at North Carolina, 2026-10-24 (OT, lead changes, walk-off TD)",
     "401856834": "Baylor at Kansas, 2026-10-24 (25-24, blocked FG in final minute)",
 }

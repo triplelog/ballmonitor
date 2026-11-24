@@ -399,6 +399,9 @@ python evaluate.py --start 2012 --end 2017
 
 ## Changelog
 
+- 0.8.1 — South Carolina is the default team (owner): `examples/default.toml`, `examples/ncaaf_2027.toml`
+  and new param `site_default_team` (the page's Team by team dropdown starts there). Industry ranks on
+  the page link to On3's class pages (`data/reference/on3_team_slugs.csv`).
 - 0.8.0 — Unit scores (offense / defense / run / pass) are now rank-discounted like the class
   score: each side's recruits sorted best first through `recruit_points` with new param
   `unit_rank_decay` 0.95 (was undiscounted sums, now variant `undiscounted_units`). Study in

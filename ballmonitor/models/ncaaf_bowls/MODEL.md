@@ -218,6 +218,8 @@ From `ballmonitor/models/ncaaf_bowls/`: `python cli.py team Texas`, `python cli.
 
 ## Changelog
 
+- 0.6.2 — South Carolina is the default team (owner): `examples/default.toml` and new param
+  `site_default_team` (the page's Team by team dropdown starts there). Team by team is the page's first section.
 - 0.6.1 — **Divisions.** `fetch.py` reads each conference's ESPN group children (3 extra
   requests for the Sun Belt, 1 for each other conference) and writes `division` into
   `teams.json`; the simulator sends each division's winner to the title game when a conference

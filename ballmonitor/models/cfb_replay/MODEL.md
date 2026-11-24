@@ -49,7 +49,8 @@ v0.2.0 per-play pacing. A separate canvas renderer draws the video from `extras`
 
 | example | game | why |
 |---|---|---|
-| `default` | 401858275 Syracuse at North Carolina (31-30 OT), 2026-10-24 | six WP lead changes, OT trade of touchdowns, walk-off 4th-down TD (75.6-point swing) |
+| `default` | 401856731 Tennessee at South Carolina (27-24), 2026-10-24 | South Carolina is the default college football team (owner, 2026-11-24): 11 WP lead changes, go-ahead TD at 1:17, strip-sack at 0:33, walk-off 48-yard FG (24.6-point swing) |
+| `syracuse_unc` | 401858275 Syracuse at North Carolina (31-30 OT), 2026-10-24 | six WP lead changes, OT trade of touchdowns, walk-off 4th-down TD (75.6-point swing) |
 | `pitt_miami` | 401858274 Pittsburgh at Miami (52-23), 2026-10-24 | a lopsided game: shows how pacing behaves when no play moves WP much (biggest swing 3.6%) |
 | `baylor_kansas` | 401856834 Baylor at Kansas (25-24), 2026-10-24 | nine lead changes, pick-six, go-ahead TD at 1:13 and a blocked 45-yard FG at 0:18 (54.1-point swing); also exercises lookup by team names + date |
 
@@ -316,6 +317,8 @@ None. This is a presentation model (there is no "actual" to score against).
 
 ## Changelog
 
+- Examples (2026-11-24): the default is now Tennessee at South Carolina (401856731, bundled); Syracuse at
+  North Carolina moved to `syracuse_unc`. No parameter changes.
 - 0.4.0 — new default `structure = "chart"` (`chart.py`): vertical WP chart with up to
   `chart_cards` annotated plays revealed one at a time, warped time axis (`chart_large_cards`,
   `chart_large_units`, `chart_margin_units`), reveal pauses by formula `chart_reveal_weight`

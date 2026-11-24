@@ -233,7 +233,9 @@ def page(model) -> dict:
         "team", "Team by team", "Team",
         [_team_option(name, conf_of.get(name, ""), h) for name, h in sorted(history.items())],
         subtitle="See how one FBS program's classes have ranked over time compared to the industry consensus.",
-        default=sorted(history).index(lead[0]) if lead[0] in history else 0)
+        # starts on site_default_team (South Carolina), else the newest class's leader
+        default=sorted(history).index(model.params.site_default_team) if model.params.site_default_team in history
+        else sorted(history).index(lead[0]) if lead[0] in history else 0)
 
     return V.page(
         title="College football recruiting rankings",

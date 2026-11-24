@@ -398,7 +398,9 @@ def page(model) -> dict:
         "team", "Team by team", "Team",
         [_team_option(s, teams.get(s.team_id, {}), bowls, bowl_names, proj, root(s)) for s in by_name],
         subtitle="Every outcome for one team: who to root for this week, playoff path, record and bowl destinations.",
-        default=by_name.index(summaries[0]))
+        # starts on site_default_team (South Carolina), else the top contender
+        default=next((i for i, s in enumerate(by_name) if s.team_name == model.params.site_default_team),
+                     by_name.index(summaries[0])))
 
     bowl_rows, bowl_opts = [], []
     for b in res.bowl_summaries.values():

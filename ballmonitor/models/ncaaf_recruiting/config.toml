@@ -1,6 +1,6 @@
 [meta]
 title = "College recruiting rankings"
-version = "0.8.0"
+version = "0.8.1"
 status = "calibrated"  # football: data/backtest.csv + RESEARCH.md; MBB evaluated in RESEARCH_MBB.md (no projection, no backtest rows); WBB untested
 question = "How strong is a program's football recruiting class, judged from head-to-head scholarship offer battles?"
 description = "Global Plackett-Luce choice model inferring program recruiting prestige from competitive scholarship offer networks, with diminishing roster depth decay and positional unit splits. Basketball (MBB/WBB) classes remain available from the CLI for research only (RESEARCH_MBB*.md, RESEARCH_WBB.md)."
@@ -190,3 +190,8 @@ variables = ["rating", "rank", "decay"]
 expr = "proj_intercept + proj_slope * log(rank) + proj_prior_weight * prior_srs"
 description = "Football: expected mean SRS (points/game vs average FBS) over the class's four seasons, from its national class rank (averaged over proj_roster_classes classes) and the program's prior SRS (mean of the proj_prior_seasons seasons before the class; 0 when unknown and proj_prior_weight = 0)."
 variables = ["rank", "prior_srs"]
+
+[params.site_default_team]
+value = "South Carolina"
+description = "Site only: the team the public page's Team by team dropdown starts on (a name not on the list falls back to the first class leader)."
+source = "Owner's choice (2026-11-24): the default college football team for examples and default selections."
