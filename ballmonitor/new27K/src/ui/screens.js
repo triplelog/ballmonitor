@@ -113,7 +113,7 @@ export function renderQuickSetup(app) {
                 <div class="hint">Higher difficulty makes the strike zone move faster, turn more sharply and drift farther (see the Zone formulas).</div>
                 <label for="q-clock">Pitch clock</label>
                 <select id="q-clock">
-                    <option value="press" ${(p.clockMode ?? 'press') === 'press' ? 'selected' : ''}>Starts when you press Pitch</option>
+                    <option value="press" ${(p.clockMode ?? 'press') === 'press' ? 'selected' : ''}>Starts with each pitch</option>
                     <option value="continuous" ${p.clockMode === 'continuous' ? 'selected' : ''}>Runs continuously between pitches</option>
                     <option value="off" ${p.clockMode === 'off' ? 'selected' : ''}>Off</option>
                 </select>
@@ -123,7 +123,7 @@ export function renderQuickSetup(app) {
                 <label for="q-guide">Break guide</label>
                 <select id="q-guide">
                     <option value="show" ${guideModeOf(p) === 'show' ? 'selected' : ''}>Always shown</option>
-                    <option value="hidden" ${guideModeOf(p) === 'hidden' ? 'selected' : ''}>Hide once the zone starts moving (shown before you press Pitch)</option>
+                    <option value="hidden" ${guideModeOf(p) === 'hidden' ? 'selected' : ''}>Hidden (no dashed line: know your break)</option>
                 </select>
                 <label for="q-calls">Pitch calling</label>
                 <select id="q-calls">

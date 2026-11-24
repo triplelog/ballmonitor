@@ -106,7 +106,8 @@ def test_site_page_is_valid_and_covers_every_team():
     model = registry.load_model("ncaaf_bowls", overrides={"site_simulations": 200})
     p = views.clean(site.page(model))
     assert views.check(p) == []
-    teams = p["views"][0]["rows"]
+    assert p["views"][0]["id"] == "team"   # team by team leads the page (owner, 2026-11-23)
+    teams = next(v for v in p["views"] if v["id"] == "teams")["rows"]
     assert len(teams) == len(json.loads((model.dir / "data" / "teams.json").read_text()))
     assert all(0 <= r["cfp"] <= 1 and 0 <= r["title"] <= r["cfp"] + 1e-9 for r in teams)
     assert abs(sum(r["title"] for r in teams) - 1) < 0.01  # exactly one champion per season

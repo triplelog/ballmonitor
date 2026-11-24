@@ -2,7 +2,7 @@
 
 export const HOW_TO_STEPS = `
     <li><b>Pick a pitch</b> and dial in your velocity and movement effort. Pushing harder adds speed or break, but widens your scatter and drains energy faster. The dashed line shows the break path, and the ring shows how much the pitch might miss by.</li>
-    <li><b>Hit Pitch</b> (or press Space, or tap the field). The strike zone jumps and starts moving. If you hide the break guide, the dashed line disappears once the zone starts moving—so memorize the break first.</li>
+    <li><b>Watch the zone.</b> When it's your pitch, the strike zone jumps to a new spot and keeps moving; there's nothing to press. If you hide the break guide, there's no dashed line—so know your break.</li>
     <li><b>Click to throw.</b> On a touchscreen, press and drag to aim, then lift your finger to release. The ball heads for your aim point, breaks from there, and scatters based on your control.</li>
     <li><b>Beat the pitch clock</b> (20 seconds by default; it pops up for the final 10). Let it hit zero and it’s an automatic ball.</li>
     <li><b>Need a plan?</b> Call a <b>catcher’s visit</b> (once per inning) to pause and reset the clock while your catcher recommends what to throw.</li>`;
@@ -26,7 +26,7 @@ export function helpHTML({ first = false } = {}) {
             <div>
                 <h3 class="no-touch">Shortcuts</h3>
                 <table class="grid help-keys no-touch">
-                    <tr><td><span class="kbd">Space</span></td><td>Pitch · skip animation · sim batter</td></tr>
+                    <tr><td><span class="kbd">Space</span></td><td>Skip animation · sim batter</td></tr>
                     <tr><td><span class="kbd">1</span>–<span class="kbd">9</span></td><td>Select a pitch</td></tr>
                     <tr><td><span class="kbd">F</span> <span class="kbd">S</span> <span class="kbd">C</span> …</td><td>Pitch shortcut letter (shown on each button)</td></tr>
                     <tr><td><span class="kbd">?</span></td><td>Open this help window</td></tr>

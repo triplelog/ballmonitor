@@ -439,6 +439,7 @@ def page(model) -> dict:
              "playoff the way the committee has in past seasons, and fill every bowl by its tie-ins. A team's odds are simply how "
              "often each outcome happens."),
         headline=headline,
-        views=[every_team, bubble, *([big] if big else []), *field_views, title_bars, team_picker, bowl_table,
+        # team by team first (owner, 2026-11-23): most fans come for one team
+        views=[team_picker, every_team, bubble, *([big] if big else []), *field_views, title_bars, bowl_table,
                bowl_picker],
     )

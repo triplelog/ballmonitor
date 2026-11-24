@@ -277,13 +277,14 @@ function jumpBar(views) {
 // A top-level view is its own cell with a heading band; a view inside a picker is a
 // section band within the picker's cell.
 function viewShell(v, body, cls, nested) {
-  const kids = [
-    nested ? el("h3", { class: "ss-section", ...viewSrc(`${v.id}.title`) }, v.title)
-      : el("div", { class: "ss-band", ...viewSrc(`${v.id}.title`) }, v.title),
-    body,
-  ];
-  return nested ? el("div", { class: `view view-${v.kind}`, id: `v-${v.id}` }, ...kids)
-    : el("section", { class: `ss-cell ${cls} view view-${v.kind}`, id: `v-${v.id}` }, ...kids);
+  // `show_title: false`: no heading (the title still labels the view for screen readers)
+  const head = v.show_title === false ? null
+    : nested ? el("h3", { class: "ss-section", ...viewSrc(`${v.id}.title`) }, v.title)
+      : el("div", { class: "ss-band", ...viewSrc(`${v.id}.title`) }, v.title);
+  const kids = [head, body].filter(Boolean);
+  const label = head ? null : v.title;
+  return nested ? el("div", { class: `view view-${v.kind}`, id: `v-${v.id}`, role: label && "region", "aria-label": label }, ...kids)
+    : el("section", { class: `ss-cell ${cls} view view-${v.kind}`, id: `v-${v.id}`, "aria-label": label }, ...kids);
 }
 
 function renderView(v, cls, nested) {
@@ -429,7 +430,9 @@ function renderTable(v) {
         return el("td", { class: `${align} heat${a > 42 ? " dark" : ""}`, style: `background: color-mix(in srgb, var(--ss-accent) ${a}%, transparent)` }, text);
       }
       const href = c.link && text && !Array.isArray(val) ? optionHref(c.link, val) : null;
-      const content = Array.isArray(val) ? linkedParts(c, val) : href ? el("a", { href }, text) : text;
+      const out = c.url && text && /^https:\/\//.test(r[c.url] || "") ? r[c.url] : null;   // an outside page (new tab)
+      const content = Array.isArray(val) ? linkedParts(c, val) : href ? el("a", { href }, text)
+        : out ? el("a", { href: out, target: "_blank", rel: "noopener", title: "Opens in a new tab" }, text) : text;
       return el("td", { class: [align, text.length > 36 ? "long" : "", c.key === stickKey ? "stick" : ""].join(" ").trim() || null }, content);
     })));
     wrap.replaceChildren(el("table", {}, el("thead", {}, head), el("tbody", {}, body)));
@@ -613,7 +616,7 @@ function renderPicker(v, cls) {
   };
   // Long lists also get a type-to-find box (matches anywhere in the option's name).
   let find = null;
-  if (v.options.length > 12) {
+  if (v.options.length > 12 && v.find !== false) {
     const listId = `dl-${v.id}`;
     find = el("span", { class: "pick-find" },
       findInput = el("input", { class: "search", type: "search", list: listId, placeholder: `Find a ${v.label.toLowerCase()}…`,
@@ -673,6 +676,17 @@ function loadEmbed(server) {
   });
 }
 
+const TABLE_HIDE = ["compiled", "helper", "computed", "stats", "group", "variables", "cards"];
+// A Try button may also bring named formulas (`defs`), added columns (`computed`) and, with
+// `variables = true`, the variables box where the visitor edits those formulas (web/tables.toml).
+function exampleExtras(x, t) {
+  if (!x.defs && !x.computed) return {};
+  // added columns join the columns shown (by formula, as tabview's `show` names them)
+  const added = (Array.isArray(x.computed) ? x.computed : []).map((c) => c.formula).filter(Boolean);
+  return { defs: x.defs || {}, computed: x.computed || "", hide: TABLE_HIDE.filter((p) => !(x.variables && p === "variables")),
+    ...(t.options.show ? { show: [...t.options.show, ...added] } : {}) };
+}
+
 async function renderDataTable(id) {
   const site = await getJSON("/data/site.json");
   // /tables/ alone (the template's own address, e.g. in Claude UI's Editor) shows the first table
@@ -693,7 +707,7 @@ async function renderDataTable(id) {
       // `labels` and `timing` need tabview 2026-11-10 or later, `variables`/`cards` 2026-11-22 (an older
       // embed ignores them).
       shownTable = Tabview.mount(host, { server: t.server, backend: t.backend, theme: "light", timing: false,
-        hide: ["compiled", "helper", "computed", "stats", "group", "variables", "cards"], ...t.options, ...options });
+        hide: TABLE_HIDE, ...t.options, ...options });
     } catch (e) {
       host.replaceChildren(el("p", {}, "The table server isn't responding right now. Please try again in a bit."));
       console.error(e);
@@ -707,7 +721,7 @@ async function renderDataTable(id) {
     el("span", { class: "small" }, "Try: "),
     ...t.examples.map((x) => el("button", { class: "ss-btn small", type: "button",
       "aria-pressed": String((x.filter || "") === (t.options.filter || "") && sameSort(x.sort, t.options.sort)),
-      onclick: (e) => { press(e.currentTarget); show({ filter: x.filter || "", sort: x.sort || null }); } }, x.label))) : null;
+      onclick: (e) => { press(e.currentTarget); show({ filter: x.filter || "", sort: x.sort || null, ...exampleExtras(x, t) }); } }, x.label))) : null;
   host.addEventListener("input", () => press(null));
   // the name a filter uses, then the header it has on the page and what it means
   const labels = t.labels || {};

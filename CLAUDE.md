@@ -233,7 +233,9 @@ pytest ballmonitor/models/race_time                # one model
   filter/sort table. The data is too big to send to the browser, so the *server* filters
   and sorts; `site.js` loads tabview's embed from `<server><path>web/vendor/tabview-embed.js` and
   mounts it with the advanced controls hidden (adding columns, variables, stats, groups, cards) and `[table.labels]`
-  as the headers (`labels`/`timing` need tabview from 2026-11-10 on the server). A table whose `[servers]` address is blank stays off the site. `ballmonitor tables
+  as the headers (`labels`/`timing` need tabview from 2026-11-10 on the server). A Try example may also
+  carry `defs` (named formulas), `computed` (added columns) and `variables = true` (the variables box shown so the
+  visitor edits them): the QB table's "Custom QB rating" (NFL passer-rating formula, `myrating`). A table whose `[servers]` address is blank stays off the site. `ballmonitor tables
   [--check]` lists them and asks each server for its columns (and flags names in the config it lacks).
   `ballmonitor/data_tables/build.py` makes the CSVs for the QB, NBA and WNBA tables (nflverse,
   SportsDataverse/ESPN; see its README for licenses and the upload steps).

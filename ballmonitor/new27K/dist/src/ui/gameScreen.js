@@ -105,7 +105,7 @@ export function renderGame(app, args) {
             <div class="plate-bar">
                 <label class="toggle">Break guide <select id="t-guide">
                     <option value="show" ${guideMode() === 'show' ? 'selected' : ''}>always shown</option>
-                    <option value="hidden" ${guideMode() === 'hidden' ? 'selected' : ''}>hidden once the zone moves</option>
+                    <option value="hidden" ${guideMode() === 'hidden' ? 'selected' : ''}>hidden (know your break)</option>
                 </select></label>
                 <label class="toggle"><input type="checkbox" id="t-heat" ${prefs.showHeat ? 'checked' : ''}> Heat map</label>
                 <label class="toggle"><input type="checkbox" id="t-odds" ${prefs.showOdds ? 'checked' : ''}> Odds</label>
@@ -458,7 +458,7 @@ export function renderGame(app, args) {
                 ? `Press and drag to aim, then lift your finger to throw${guideMode() === 'hidden' ? ' (guide hidden)' : ''}.`
                 : ui.mode === 'aiming'
                 ? `Click to throw—the ball breaks from where you click${guideMode() === 'hidden' ? ' (guide hidden)' : ''}.`
-                : 'The dashed line shows how this pitch will break. Press Space or Pitch when ready.';
+                : 'The dashed line shows how this pitch will break.';
         } else text = 'Your team is up to bat';
         $('#hint').textContent = text;
     }
@@ -494,7 +494,8 @@ export function renderGame(app, args) {
     // Its own layer, so it can open over anything and close without
     // disturbing what was underneath. The clock waits while it is open.
     function showHelp(first = false) {
-        if (ui.mode === 'aiming' || ui.mode === 'sending') return;   // not once the zone is moving
+        if (ui.mode === 'sending') return;
+        if (ui.mode === 'aiming') ui.mode = 'ready';   // the zone stops; it starts again when help closes
         ui.help = true;
         if (!prefs.seenHelp) { prefs.seenHelp = true; app.savePrefs(); }
         $('#help-layer').innerHTML = helpHTML({ first });
@@ -972,6 +973,11 @@ export function renderGame(app, args) {
     }
 
     // ---------- actions ----------
+    function zoneCanStart() {
+        return game.isUserPitching() && !game.state.over && !ui.challengeResult && !ui.mpStale && !(mp && !mp.myTurn)
+            && !ui.visit && !ui.help && !$('#overlay').innerHTML && !(career && careerOut())
+            && !(!career && game.mustChangePitcher(userKey));
+    }
     function startAiming() {
         if (ui.mode !== 'ready' || !game.isUserPitching() || ui.challengeResult || ui.mpStale) return;
         if (mp && !mp.myTurn) return;
@@ -980,7 +986,7 @@ export function renderGame(app, args) {
         if (!career && game.mustChangePitcher(userKey)) { showForcedChange(); return; }
         const scope = game.situationScope();
         zone.start(scope);
-        if (clockMode() === 'press') ui.clock = startClock();
+        if (clockMode() === 'press' && !ui.clock) ui.clock = startClock();
         ui.mode = 'aiming';
         ui.markers = null;
         renderPitcherPanel();
@@ -1123,6 +1129,9 @@ export function renderGame(app, args) {
             if (before <= 3 && ui.clock.left > 0 && Math.ceil(before) !== Math.ceil(ui.clock.left)) sfx.tick();
             if (ui.clock.left <= 0) release(null);
         }
+        // The zone is always moving when it's your pitch: it starts by itself as soon as nothing
+        // is in the way (a window, the catcher's visit, a forced pitching change, the game over).
+        if (ui.mode === 'ready' && zoneCanStart()) startAiming();
         if (ui.mode === 'aiming') {
             zone.update(dt);
         } else if (ui.mode === 'playback') {

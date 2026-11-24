@@ -69,6 +69,9 @@ football 2012–2027, MBB 2014–2027; blends On3, 247Sports, Rivals and ESPN; p
 classes were compiled by On3 after the fact). Rivals top-100
 team ranks for 2012–2022 are in `data/teams/`. Team names are normalised across sources
 in `src/data_loader.py` (`SCHOOL_ALIASES`, e.g. USF → South Florida, FIU, UTSA).
+`data/reference/on3_team_slugs.csv` (On3's slug for each program, saved by `fetch.merge_slugs`): the
+public page links every industry rank to that team's class page,
+`on3.com/college/<slug>/football/<year>/industry-comparison-commits/`.
 
 ## Method
 

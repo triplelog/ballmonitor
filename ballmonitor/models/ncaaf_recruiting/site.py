@@ -51,6 +51,19 @@ def consensus(data_dir, year: int) -> dict[str, int]:
                 for r in csv.DictReader(fh) if r["sport"] == "ncaaf" and int(r["year"]) == year}
 
 
+def on3_slugs(data_dir) -> dict[str, str]:
+    """Program -> On3's team slug (fetch.merge_slugs), for links to its class page there."""
+    path = data_dir / "reference" / "on3_team_slugs.csv"
+    if not path.exists():
+        return {}
+    with path.open(newline="") as fh:
+        return {ALIASES.get(r["team"], r["team"]): r["slug"] for r in csv.DictReader(fh) if r["sport"] == "ncaaf"}
+
+
+def on3_class_url(slug: str | None, year: int) -> str | None:
+    return f"https://www.on3.com/college/{slug}/football/{year}/industry-comparison-commits/" if slug else None
+
+
 def _conf_buttons(rows: list[dict]) -> list[str]:
     present = {r["conf"] for r in rows if r["conf"]}
     return [c for c in CONF_ORDER if c in present] + sorted(present - set(CONF_ORDER))
@@ -62,6 +75,7 @@ def _year_views(model, year: int, conf_of: dict[str, str]) -> tuple[list[dict], 
     in_progress = status.get("status") == "in_progress"
     units = PositionalRankingEngine().evaluate(res).by_name
     industry = consensus(model.dir / "data", year)
+    slugs = on3_slugs(model.dir / "data")
 
     teams = [t for t in res.teams if t.commits_count > 0]  # offered recruits but signed none: skip
     stars: dict[str, int] = {}
@@ -84,6 +98,7 @@ def _year_views(model, year: int, conf_of: dict[str, str]) -> tuple[list[dict], 
             "conf": conf_of.get(t.name, ""),
             "conf_rank": conf_rank.get(t.name),
             "industry": industry.get(t.name),
+            "industry_url": on3_class_url(slugs.get(t.name), year) if industry.get(t.name) else None,
             "commits": t.commits_count,
             "blue": stars.get(t.name, 0),
             "score": round(float(t.total_score), 1),
@@ -107,7 +122,7 @@ def _year_views(model, year: int, conf_of: dict[str, str]) -> tuple[list[dict], 
     overall_table = V.table(
         f"programs_{year}", f"{year} class rankings",
         [rank("rank", "Rank"), V.col("team", "Team", link="team"), V.col("conf", "Conference"),
-         rank("conf_rank", "Rank in conf."), rank("industry", "Industry rank"),
+         rank("conf_rank", "Rank in conf."), V.col("industry", "Industry rank", "int", low_first=True, url="industry_url"),
          V.col("commits", "Commits", "int"), V.col("blue", "4-5 star commits", "int"),
          V.col("score", "Class score", "number", decimals=1, bar=True)],
         overall,
@@ -116,7 +131,8 @@ def _year_views(model, year: int, conf_of: dict[str, str]) -> tuple[list[dict], 
           "Filter by conference or click any team to see its year-by-year history.",
         note="Conferences reflect 2026 FBS alignment (blank for FCS and other schools), even for earlier classes. "
              "Class score totals a school's commits, best first, with each extra commit counting a little less.",
-        search=True, page_size=25, quick_filters=("conf", _conf_buttons(overall)))
+        search=True, page_size=25, quick_filters=("conf", _conf_buttons(overall)),
+        show_title=False)   # the class dropdown right above says which year (owner, 2026-11-23)
     sides_table = V.table(
         f"units_{year}", f"{year} class by side of the ball",
         [rank("rank", "Overall"), V.col("team", "Team", link="team"), rank("off", "Offense"), rank("def", "Defense"),
@@ -147,13 +163,14 @@ def _team_option(name: str, conf: str, history: list[tuple[int, dict, bool]]) ->
     for year, r, in_progress in history:
         gap = r["industry"] - r["rank"] if r["industry"] else None
         rows.append({"year": f"{year}" + (" (still signing)" if in_progress else ""), "rank": r["rank"],
-                     "conf_rank": r["conf_rank"], "industry": r["industry"], "gap": gap, "commits": r["commits"],
+                     "conf_rank": r["conf_rank"], "industry": r["industry"], "industry_url": r.get("industry_url"),
+                     "gap": gap, "commits": r["commits"],
                      "blue": r["blue"]})
     table = V.table(
         f"classes_{V.slug(name)}", "Class rank by year",
         [V.col("year", "Class"), V.col("rank", "Rank", "int", low_first=True),
          V.col("conf_rank", "Rank in conf.", "int", low_first=True),
-         V.col("industry", "Industry rank", "int", low_first=True),
+         V.col("industry", "Industry rank", "int", low_first=True, url="industry_url"),
          V.col("gap", "Ours vs. industry", "signed", decimals=0), V.col("commits", "Commits", "int"),
          V.col("blue", "4-5 star commits", "int")],
         rows,
@@ -207,7 +224,7 @@ def page(model) -> dict:
                 + f"; {lead[1]} and {lead[2]} are next.")
 
     by_year = V.picker(
-        "by_year", "Recruiting classes by year", "Class", options,
+        "by_year", "Recruiting classes by year", "Class", options, find=False,
         subtitle="Choose a class year to see overall, conference, and industry rankings, plus offense and defense breakdowns."
                  + (f" The {newest} class is still signing; {years[1]} and earlier are final."
                     if status.get("status") == "in_progress" else ""))

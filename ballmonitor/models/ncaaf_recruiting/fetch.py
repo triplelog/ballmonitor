@@ -23,6 +23,8 @@ Writes (built, documented CSVs; raw JSON is cached in data/raw/, which is gitign
     data/benchmarks/consensus_team_rankings.csv
                                             On3 industry-consensus team class rankings
                                             (averages On3, 247Sports, Rivals and ESPN)
+    data/reference/on3_team_slugs.csv       program -> On3's team slug (the page links each
+                                            industry rank to that class's page on on3.com)
 
 Sources (free, no key):
     On3 recruit database API   https://api.on3.com/public/rdb/v1/  (players/industry-
@@ -478,6 +480,29 @@ def build_games(model_dir: Path, offline: bool) -> str:
     return f"games: {len(rows)} completed FBS games {SCORE_SEASONS.start}-{SCORE_SEASONS.stop - 1} -> {out.relative_to(model_dir)}"
 
 
+SLUGS = Path("data") / "reference" / "on3_team_slugs.csv"   # program -> On3's team slug (links to its class page)
+
+
+def merge_slugs(model_dir: Path, sport: str, items: list) -> None:
+    """Add On3's team slugs (organization.slug, e.g. "georgia-bulldogs") from ranking items to
+    data/reference/on3_team_slugs.csv: the public page links each industry rank to
+    on3.com/college/<slug>/football/<year>/industry-comparison-commits/."""
+    path = model_dir / SLUGS
+    slugs = {}
+    if path.exists():
+        with open(path, newline="") as fh:
+            slugs = {(r["sport"], r["team"]): r["slug"] for r in csv.DictReader(fh)}
+    for it in items:
+        org = it.get("organization") or {}
+        if org.get("slug"):
+            slugs[(sport, _on3_team(org))] = org["slug"]
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, "w", newline="") as fh:
+        w = csv.writer(fh)
+        w.writerow(["sport", "team", "slug"])
+        w.writerows([k[0], k[1], v] for k, v in sorted(slugs.items()))
+
+
 def build_rankings(model_dir: Path, offline: bool) -> str:
     raw = model_dir / "data" / "raw" / "on3_team_rankings"
     rows = []
@@ -492,6 +517,7 @@ def build_rankings(model_dir: Path, offline: bool) -> str:
                 pages = (data.get("pagination") or {}).get("pageCount", 0) or 0
                 items.extend(data.get("list", []))
                 page += 1
+            merge_slugs(model_dir, sport, items)
             for it in items:
                 rank = it.get("overallConsensusRank")
                 if rank is None:
@@ -749,6 +775,7 @@ def _scheduled_rankings(model_dir: Path, sport: str, year: int, get) -> tuple[li
         items.extend(data.get("list", []))
         _save_raw(model_dir / "data" / "raw" / "on3_team_rankings" / f"{sport}_{year}_p{page}.json", data)
         page += 1
+    merge_slugs(model_dir, sport, items)
     rows = [[sport, year, int(it["overallConsensusRank"]), _on3_team(it.get("organization")),
              round(float(it.get("appliedTotalConsensusRating") or 0.0), 3), it.get("commits") or 0,
              it.get("consensusFiveStars") or 0, it.get("consensusFourStars") or 0]

@@ -149,7 +149,7 @@ filter = "yds >= 400"
 sort = { column = "season", desc = true }
 order = ["season", "week", "player", "team", "opp", "cmp", "att", "yds", "td", "int", "rating", "rush_yds"]
 limit = 100
-how = "Weekly NFL passing stats from nflverse (nflverse.com, CC BY 4.0), with one row for every player who threw a pass in a game. Rating is the official NFL passer rating for that game. Tip: if you sort by Rating or Yds/att, add att >= 15 to the filter so one-pass trick plays don't clog the top. Use the short names under \"What the columns mean\", like yds >= 400 and td >= 4."
+how = "Weekly NFL passing stats from nflverse (nflverse.com, CC BY 4.0), with one row for every player who threw a pass in a game. Rating is the official NFL passer rating for that game. Tip: if you sort by Rating or Yds/att, add att >= 15 to the filter so one-pass trick plays don't clog the top. Use the short names under \"What the columns mean\", like yds >= 400 and td >= 4. Custom QB rating adds a My rating column, ranked by it: rewrite its formula (myrating) in the variables box to weigh what you like."
 examples = [
   { label = "400-yard games", filter = "yds >= 400", sort = { column = "yds", desc = true } },
   { label = "Perfect passer rating (20+ attempts)", filter = "rating >= 158.3 and att >= 20", sort = { column = "season", desc = true } },
@@ -158,6 +158,11 @@ examples = [
   { label = "4+ interceptions", filter = "int >= 4", sort = { column = "int", desc = true } },
   { label = "Best playoff games (15+ attempts)", filter = "type = \"POST\" and att >= 15", sort = { column = "epa", desc = true } },
   { label = "100 rushing yards by a QB", filter = "rush_yds >= 100 and pos = \"QB\"", sort = { column = "rush_yds", desc = true } },
+  # owner, 2026-11-23: a passer rating the visitor can rewrite. It starts as the NFL formula (each
+  # part held between 0 and 2.375), so "My rating" matches Rating until the formula is edited.
+  # Sorted by My rating (needs tabview c2f8401, 2026-11-23, on the table server: a sort on an
+  # added column follows it when its formula is edited; older embeds say "no column My rating").
+  { label = "Custom QB rating", filter = "att >= 20", sort = { column = "My rating", desc = true }, variables = true, defs = { myrating = "(max(0, min(2.375, (cmp / att - 0.3) * 5)) + max(0, min(2.375, (yds / att - 3) * 0.25)) + max(0, min(2.375, td / att * 20)) + max(0, min(2.375, 2.375 - int / att * 25))) / 6 * 100" }, computed = [{ name = "My rating", formula = "myrating" }] },
 ]
 [table.labels]
 season = "Season"

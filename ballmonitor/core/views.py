@@ -72,7 +72,7 @@ def slug(text: str) -> str:
 
 def col(key: str, label: str, fmt: str = "text", decimals: int | None = None, bar: bool = False,
         align: str | None = None, heat: bool = False, link: str | None = None, low_first: bool = False,
-        sticky: bool = False, hidden: bool = False, sep: str | None = None) -> dict:
+        sticky: bool = False, hidden: bool = False, sep: str | None = None, url: str | None = None) -> dict:
     """A table column. `bar`: draw a small bar behind a pct/number cell (scaled to the column max).
     `heat`: shade the cell by its value (0 to the largest value in any heat column of the table).
     `link`: id of a picker on the same page; the cell links to the option whose slug matches the
@@ -83,7 +83,9 @@ def col(key: str, label: str, fmt: str = "text", decimals: int | None = None, ba
     A text cell may hold a list of strings (several teams in one cell): they are shown joined by
     `sep` (default ", "), and with `link` each one that names an option of the picker is its own
     link (a part that names no option, like "at" in ["Texas", "at", "Georgia"] with sep=" ", stays text).
-    With `link`, a cell (or part) is only linked when the picker has an option with its slug."""
+    With `link`, a cell (or part) is only linked when the picker has an option with its slug.
+    `url`: the key of a row field holding an outside address; the cell links there (new tab) when
+    the row has one (e.g. an industry rank linking to that team's page on the source's site)."""
     c = {"key": key, "label": label, "fmt": fmt}
     if decimals is not None:
         c["decimals"] = decimals
@@ -93,6 +95,8 @@ def col(key: str, label: str, fmt: str = "text", decimals: int | None = None, ba
         c["heat"] = True
     if link:
         c["link"] = link
+    if url:
+        c["url"] = url
     if low_first:
         c["low_first"] = True
     if sticky:
@@ -108,13 +112,16 @@ def col(key: str, label: str, fmt: str = "text", decimals: int | None = None, ba
 
 def table(id: str, title: str, columns: list[dict], rows: list[dict], subtitle: str = "", note: str = "",
           search: bool = False, page_size: int = 0, sort: str | None = None, sort_desc: bool = True,
-          quick_filters: tuple[str, list[str]] | None = None) -> dict:
-    """`page_size`: show this many rows, then a "Show all" button (0 = all). `sort`: default
+          quick_filters: tuple[str, list[str]] | None = None, show_title: bool = True) -> dict:
+    """`page_size`: show this many rows, then a "Show all" button (0 = all). `show_title=False`:
+    no heading band (the title still names it for screen readers and links). `sort`: default
     sort column key (rows are shown in the given order when omitted). `quick_filters`:
     (column key, [values]): a row of buttons above the table, "All" then one per value, each
     showing only the rows whose cell is exactly that value (works together with the search box)."""
     v = {"kind": "table", "id": id, "title": title, "subtitle": subtitle, "note": note,
          "columns": columns, "rows": rows, "search": search, "page_size": page_size}
+    if not show_title:
+        v["show_title"] = False
     if sort:
         v["sort"], v["sort_desc"] = sort, sort_desc
     if quick_filters:
@@ -219,10 +226,14 @@ def bracket(id: str, title: str, rounds: list[dict], subtitle: str = "", note: s
 
 
 def picker(id: str, title: str, label: str, options: list[dict], subtitle: str = "", note: str = "",
-           default: int = 0) -> dict:
-    """A dropdown ("Race", "Team", "League") that swaps between groups of views."""
-    return {"kind": "picker", "id": id, "title": title, "subtitle": subtitle, "note": note, "label": label,
-            "options": options, "default": default}
+           default: int = 0, find: bool = True) -> dict:
+    """A dropdown ("Race", "Team", "League") that swaps between groups of views. `find=False`: no
+    type-to-find box beside it (long lists get one otherwise)."""
+    v = {"kind": "picker", "id": id, "title": title, "subtitle": subtitle, "note": note, "label": label,
+         "options": options, "default": default}
+    if not find:
+        v["find"] = False
+    return v
 
 
 def clean(value: Any) -> Any:
